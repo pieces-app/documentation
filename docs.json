@@ -4,7 +4,13 @@
     "sidebar": [
       ["Home", "/"],
       ["Overview", "/overview"],
-      ["Installation and Getting Started", "/installation-and-getting-started"],
+      ["Installation and Getting Started", [
+        ["What am I Installing?", "/what-am-i-installing"],
+        ["What am I Installing?", "/installation-getting-started/macos"],
+        ["Windows", "/windows"],
+        ["MacOS", "/macos"],
+        ["Linux", "/linux"]
+      ]],
       ["Product Highlights & Benefits", [
        ["Save Developer Materials", "/product-highlights-and-benefits"],
         ["Context Awareness Engine", "/context-awareness-engine"],
