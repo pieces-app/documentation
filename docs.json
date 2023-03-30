@@ -10,9 +10,7 @@
        ["Save Developer Materials", "/product-highlights-and-benefits"],
         ["Context Awareness Engine", "/context-awareness-engine"],
         ["Global Search", "/global-search"],
-        ["Personalized Link Sharing", [
-          ["added" ,"/personalized-link-sharing"]
-        ]]
+        ["Personalized Link Sharing", "/personalized-link-sharing"]
       ]
     ],
       ["Additional Features and Settings", [
