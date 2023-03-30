@@ -5,8 +5,16 @@
       ["Home", "/"],
       ["Overview", "/overview"],
       ["Use Cases", "/use-cases"],
+      ["Installation and Getting Started", "/installation-and-getting-started"],
       ["Product Highlights & Benefits", [
-       ["Save Developer Materials", "/product-highlights-and-benefits"]
+       ["Save Developer Materials", "/product-highlights-and-benefits"],
+        ["Context Awareness Engine", "/context-awareness-engine"],
+        ["Global Search", "/global-search"],
+        ["Personalized Link Sharing", "/personalized-link-sharing"]
+      ]
+    ],
+      ["Additional Features and Settings", [
+        ["Editing Saved Code Snippets", "/additional-features-and-settings"]
+      ]
       ]]
-    ]
   }
