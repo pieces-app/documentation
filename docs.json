@@ -5,7 +5,6 @@
       ["Home", "/"],
       ["Overview", "/overview"],
       ["Installation and Getting Started", [
-        ["What am I Installing?", "/what-am-i-installing"],
         ["What am I Installing?", "/installation-getting-started/macos"],
         ["Windows", "/windows"],
         ["MacOS", "/macos"],
