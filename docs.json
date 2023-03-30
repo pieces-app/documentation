@@ -6,7 +6,7 @@
       ["Overview", "/overview"],
       ["Frequently Asked Questions", "/faq"],
       ["Installation and Getting Started", [
-        ["What am I Installing?", "/installation-getting-started/macos"],
+        ["What am I Installing?", "/installation-getting-started/what-am-i-installing"],
         ["Windows", "/installation-getting-started/windows"],
         ["MacOS", "/installation-getting-started/macos"],
         ["Linux", "/installation-getting-started/linux"]
