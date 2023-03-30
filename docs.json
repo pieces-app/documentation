@@ -4,6 +4,7 @@
     "sidebar": [
       ["Home", "/"],
       ["Overview", "/overview"],
+      ["Frequently Asked Questions", "/faq"],
       ["Installation and Getting Started", [
         ["What am I Installing?", "/installation-getting-started/macos"],
         ["Windows", "/installation-getting-started/windows"],
@@ -24,7 +25,6 @@
     ["Our Community", [
       ["Help Us Shape the Vision", "/our-community"]
     ]],
-      ["Frequently Asked Questions", "/faq"],
       ["Use Cases", [
         ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
         ["Onboard New Developers", "/use-cases/onboard-new-developers"],
