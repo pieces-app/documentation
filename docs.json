@@ -10,7 +10,8 @@
         ["Windows", "/installation-getting-started/windows"],
         ["MacOS", "/installation-getting-started/macos"],
         ["Linux", "/installation-getting-started/linux"]
-      ]],
+      ]
+      ],
       ["Product Highlights & Benefits", [
        ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
         ["Saving Screenshots & OCR", "/product-highlights-and-benefits/saving-screenshots"],
@@ -18,6 +19,15 @@
         ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"]
       ]
     ],
+      ["Context Awareness Engine and Useful Metadata", [
+        ["Origin Details", "/context-awareness-engine/origin-details"],
+        ["AI Generated Smart Descriptions", "/context-awareness-engine/ai-smart-descriptions"],
+        ["Related Links and External Resources", "/context-awareness-engine/related-links-external-resources"],
+        ["AI Smart Labels and User Added Tags ", "/context-awareness-engine/origin-details"],
+        ["Related People", "/context-awareness-engine/related-people"],
+        ["Smart Warnings and Sensitive Info", "/context-awareness-engine/smart-warnings"]
+      ]
+      ],
       ["Additional Features and Settings", [
         ["Editing Saved Code Snippets", "/additional-features-and-settings"]
       ]
@@ -33,3 +43,4 @@
       ]]
     ]
   }
+
