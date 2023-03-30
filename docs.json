@@ -90,6 +90,11 @@
           "twitter": "https://twitter.com/getpieces",
           "linkedin": "https://www.linkedin.com/company/getpieces/",
           "support_email": "mailto:support@pieces.app"
+        },
+        "internal": {
+          "product_highlights": {
+            "save": "/product-highlights-and-benefits/saving-useful-developer-materials"
+          }
         }
       }
     }
