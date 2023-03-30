@@ -6,9 +6,9 @@
       ["Overview", "/overview"],
       ["Installation and Getting Started", [
         ["What am I Installing?", "/installation-getting-started/macos"],
-        ["Windows", "/windows"],
-        ["MacOS", "/macos"],
-        ["Linux", "/linux"]
+        ["Windows", "/installation-getting-started/windows"],
+        ["MacOS", "/installation-getting-started/macos"],
+        ["Linux", "/installation-getting-started/linux"]
       ]],
       ["Product Highlights & Benefits", [
        ["Save Developer Materials", "/product-highlights-and-benefits"],
