@@ -4,7 +4,7 @@
     "sidebar": [
       ["Home", "/"],
       ["Overview", "/overview"],
-      ["Use Cases", "/use-cases"],
+      ["Use Cases", "/use-cases/use-cases"],
       ["Installation and Getting Started", "/installation-and-getting-started"],
       ["Product Highlights & Benefits", [
        ["Save Developer Materials", "/product-highlights-and-benefits"],
