@@ -33,13 +33,14 @@
         ["Saving a Shared Material for Offline", "/personalized-link-sharing/saving-for-offline"],
         ["Share via GitHub Gist", "/personalized-link-sharing/share-via-github-gist"]
       ]],
-      ["Additional Features and Settings", [
-        ["Editing Saved Code Snippets", "/additional-features-and-settings"]
-      ]
-      ],
-    ["Our Community", [
-      ["Help Us Shape the Vision", "/our-community"]
-    ]],
+      ["Global Search, Sort via Suggestions, and Referencing Saved Materials", [
+        ["Global Search", "/global-search-suggestions-reuse/global-search"],
+        ["Adjusting Settings for Optimal Search Results", "/global-search-suggestions-reuse/adjusting-settings-for-search"],
+        ["Sorting with Realtime and Scope Relevant Suggestions", "/global-search-suggestions-reuse/sort-scope-relevant"],
+        ["Workflow Activity Stream", "/global-search-suggestions-reuse/workflow-activity0stream"]
+      ]],
+      ["Additional Features and Settings", "/additional-features-and-settings"],
+    ["Our Community", "Help Us Shape the Vision", "/our-community"],
       ["Use Cases", [
         ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
         ["Onboard New Developers", "/use-cases/onboard-new-developers"],
