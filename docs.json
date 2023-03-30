@@ -44,11 +44,26 @@
         "linkedin": "https://www.linkedin.com/company/getpieces/",
         "support_email": "mailto:support@pieces.app"
       },
-      "internal": {
+      "internal_sections": {
+        "installation_getting_started": {
+          "macos": "https://docs.page/pieces-app/documentation/installation-getting-started/macos",
+          "windows": "https://docs.page/pieces-app/documentation/installation-getting-started/windows",
+          "linux": "https://docs.page/pieces-app/documentation/installation-getting-started/linux"
+        },
         "product_highlights": {
-          "save": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials"
+          "save_materials": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials",
+          "save_screenshots": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-screenshots",
+          "in_project_snippet_discovery": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/in-project-snippet-discovery",
+          "import_gists": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/import-gists-from-github"
+        },
+        "context_awareness_engine": {
+          "origin_details": "https://docs.page/pieces-app/documentation/context-awareness-engine/origin-details",
+          "ai_smart_descriptions": "https://docs.page/pieces-app/documentation/context-awareness-engine/ai-smart-descriptions",
+          "related_links_resources": "https://docs.page/pieces-app/documentation/related-links-external-resources",
+          "related_people": "https://docs.page/pieces-app/documentation/context-awareness-engine/related-people",
+          "smart_warnings": "https://docs.page/pieces-app/documentations/context_awareness-engine/smart-warnings"
         }
-      }
+    }
     }
   },
     "sidebar": [
