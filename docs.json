@@ -4,7 +4,12 @@
     "sidebar": [
       ["Home", "/"],
       ["Overview", "/overview"],
-      ["Use Cases", "/use-cases/use-cases"],
+      ["Use Cases", [
+        ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
+        ["Onboard New Developers", "/use-cases/onboard-new-developers"],
+        ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"],
+        ["Take Back Your Time", "/use-cases/take-back-your-time"]
+      ]],
       ["Installation and Getting Started", "/installation-and-getting-started"],
       ["Product Highlights & Benefits", [
        ["Save Developer Materials", "/product-highlights-and-benefits"],
