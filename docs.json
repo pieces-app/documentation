@@ -1,6 +1,56 @@
 {
     "name": "docs.page",
     "theme": "#36B9B9",
+    "variables": {
+    "links": {
+      "website": {
+        "home": "https://code.pieces.app",
+        "pfd_desktop_install": "https://code.pieces.app/install",
+        "pfd_linux_install": "https://code.pieces.app/desktop/getting-started/linux",
+        "release_notes": "https://code.pieces.app/updates",
+        "blog": "https://code.pieces.app/blog"
+      },
+      "extensions": {
+        "chrome": "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
+        "jetbrains": "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
+        "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode"
+      },
+      "snippets": {
+        "python": {
+          "snippet": "https://python.pieces.cloud/?p=8711459369",
+          "collection": "https://code.pieces.app/collections/python"
+        }
+      },
+      "external": {
+        "forms": {
+          "feedback": "https://getpieces.typeform.com/to/mCjBSIjF?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca",
+          "join_beta": "https://getpieces.typeform.com/to/XGGlUqEI?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca"
+        }
+      },
+      "installation": {
+        "macos_catalina": "https://support.apple.com/kb/DL2039?locale=en_US",
+        "pieces_pkg": "https://builds.pieces.app/stages/production/macos_packaging/pkg/download",
+        "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
+        "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
+        "ubuntu_versions": "https://releases.ubuntu.com/18.04/"
+      },
+      "videos": {
+        "getting_started_desktop": "https://youtu.be/bczfW9wk8Bo",
+        "youtube_channel": "https://www.youtube.com/@getpieces",
+        "snippet_discovery": "https://youtu.be/G6vb1USw-30"
+      },
+      "socials": {
+        "twitter": "https://twitter.com/getpieces",
+        "linkedin": "https://www.linkedin.com/company/getpieces/",
+        "support_email": "mailto:support@pieces.app"
+      },
+      "internal": {
+        "product_highlights": {
+          "save": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials"
+        }
+      }
+    }
+  },
     "sidebar": [
       ["Home", "/"],
       ["Overview", "/overview"],
@@ -47,56 +97,6 @@
         ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"],
         ["Take Back Your Time", "/use-cases/take-back-your-time"]
       ]]
-    ],
-    "variables": {
-      "links": {
-        "website": {
-          "home": "https://code.pieces.app",
-          "pfd_desktop_install": "https://code.pieces.app/install",
-          "pfd_linux_install": "https://code.pieces.app/desktop/getting-started/linux",
-          "release_notes": "https://code.pieces.app/updates",
-          "blog": "https://code.pieces.app/blog"
-        },
-        "extensions": {
-          "chrome": "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
-          "jetbrains": "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
-          "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode"
-        },
-        "snippets": {
-          "python": {
-            "snippet": "https://python.pieces.cloud/?p=8711459369",
-            "collection": "https://code.pieces.app/collections/python"
-          }
-        },
-        "external": {
-          "forms": {
-            "feedback": "https://getpieces.typeform.com/to/mCjBSIjF?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca",
-            "join_beta": "https://getpieces.typeform.com/to/XGGlUqEI?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca"
-          }
-        },
-        "installation": {
-          "macos_catalina": "https://support.apple.com/kb/DL2039?locale=en_US",
-          "pieces_pkg": "https://builds.pieces.app/stages/production/macos_packaging/pkg/download",
-          "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
-          "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
-          "ubuntu_versions": "https://releases.ubuntu.com/18.04/"
-        },
-        "videos": {
-          "getting_started_desktop": "https://youtu.be/bczfW9wk8Bo",
-          "youtube_channel": "https://www.youtube.com/@getpieces",
-          "snippet_discovery": "https://youtu.be/G6vb1USw-30"
-        },
-        "socials": {
-          "twitter": "https://twitter.com/getpieces",
-          "linkedin": "https://www.linkedin.com/company/getpieces/",
-          "support_email": "mailto:support@pieces.app"
-        },
-        "internal": {
-          "product_highlights": {
-            "save": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials"
-          }
-        }
-      }
-    }
+    ]
   }
 
