@@ -28,6 +28,11 @@
         ["Smart Warnings and Sensitive Info", "/context-awareness-engine/smart-warnings"]
       ]
       ],
+      ["Personalized Link Sharing with Context Metadata", [
+        ["Single Click Link Sharing", "/personalized-link-sharing/single-click-link-sharing"],
+        ["Saving a Shared Material for Offline", "/personalized-link-sharing/saving-for-offline"],
+        ["Share via GitHub Gist", "/personalized-link-sharing/share-via-github-gist"]
+      ]],
       ["Additional Features and Settings", [
         ["Editing Saved Code Snippets", "/additional-features-and-settings"]
       ]
