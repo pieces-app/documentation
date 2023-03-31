@@ -45,7 +45,7 @@
         "linkedin": "https://www.linkedin.com/company/getpieces/",
         "support_email": "mailto:support@pieces.app"
       },
-      "internal_sections": {
+      "internal": {
         "installation_getting_started": {
           "macos": "https://docs.page/pieces-app/documentation/installation-getting-started/macos",
           "windows": "https://docs.page/pieces-app/documentation/installation-getting-started/windows",
@@ -64,9 +64,20 @@
           "related_people": "https://docs.page/pieces-app/documentation/context-awareness-engine/related-people",
           "smart_warnings": "https://docs.page/pieces-app/documentations/context_awareness-engine/smart-warnings"
         },
-        "global_search": {
-          "search_settings": "https://docs.page/pieces-app/documentation/"
-        }
+        "global_search_suggestion_reuse": {
+          "global_search": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/global_search",
+          "search_settings": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/adjusting-settings-for-search",
+          "sort_scope_relevant": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/sort-scope-relevant",
+          "workflow_activity_stream": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/workflow-activity-stream"
+        },
+        "personalized_link_sharing": {
+          "single_click_link_sharing": "https://docs.page/pieces-app/documentation/personalized-link-sharing/single-click-link-sharing",
+          "save_for_offline": "https://docs.page/pieces-app/documentation/personalized-link-sharing/save-for-offline",
+          "share_via_github_gist": "https://docs.page/pieces-app/documentation/personalized-link-sharing/share-via-github-gist"
+        },
+        "additional_features_and_settings": "https://docs.page/pieces-app/documentation/additional-features-and-settings",
+        "join_our_community": "https://docs.page/pieces-app/documentation/join-our-community",
+        "faqs": "https://docs.page/pieces-app/documentation/frequently-asked-questions"
     }
     }
   },
@@ -103,10 +114,10 @@
         ["Share via GitHub Gist", "/personalized-link-sharing/share-via-github-gist"]
       ]],
       ["Global Search, Sort via Suggestions, and Referencing Saved Materials", [
-        ["Global Search", "/global-search-suggestions-reuse/global-search"],
-        ["Adjusting Settings for Optimal Search Results", "/global-search-suggestions-reuse/adjusting-settings-for-search"],
-        ["Sorting with Realtime and Scope Relevant Suggestions", "/global-search-suggestions-reuse/sort-scope-relevant"],
-        ["Workflow Activity Stream", "/global-search-suggestions-reuse/workflow-activity0stream"]
+        ["Global Search", "/global-search-suggestion-reuse/global-search"],
+        ["Adjusting Settings for Optimal Search Results", "/global-search-suggestion-reuse/adjusting-settings-for-search"],
+        ["Sorting with Realtime and Scope Relevant Suggestions", "/global-search-suggestion-reuse/sort-scope-relevant"],
+        ["Workflow Activity Stream", "/global-search-suggestion-reuse/workflow-activity0stream"]
       ]],
       ["Additional Features and Settings", "/additional-features-and-settings"],
     ["Our Community", "/our-community"],
