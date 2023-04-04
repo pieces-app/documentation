@@ -1,4 +1,8 @@
-# Overview
+# Pieces for Developers Documentation Center
+
+Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
+
+## Some Quick Background Context
 
 In 2022, our team set out on a journey to build **_the most advanced code snippet management and workflow context platform_** yet.
 
@@ -15,10 +19,6 @@ From students and indie developers, to startups and open source teams, to enterp
 
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**.
 
-
-# Pieces for Developers Documentation Center
-
-Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 
 ## [Start Here to Install Pieces for Developers](https://docs.page/pieces-app/documentation/installation-getting-started/windows)
 
