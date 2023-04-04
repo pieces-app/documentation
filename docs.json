@@ -93,9 +93,9 @@
       ["Home", "/"],
       ["Overview", "/overview"],
       ["Frequently Asked Questions", "/faq"],
-      ["Extensions & Plugins Support",
+      ["Extensions & Plugins Support", [
         ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"]
-      ],
+      ]],
       ["Installation and Getting Started", [
         ["What am I Installing?", "/installation-getting-started/what-am-i-installing"],
         ["Windows", "/installation-getting-started/windows"],
