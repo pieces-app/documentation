@@ -1,6 +1,13 @@
 {
     "name": "Pieces for Developers",
     "theme": "#36B9B9",
+  "anchors": [
+    {
+      "title": "Pieces Chrome Support",
+      "icon": "chrome",
+      "link": "#"
+    }
+  ],
   "variables": {
     "links": {
       "website": {
