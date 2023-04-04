@@ -14,3 +14,29 @@ From students and indie developers, to startups and open source teams, to enterp
 > We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.
 
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**.
+
+
+# Pieces for Developers Documentation Center
+
+Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
+
+## [Start Here to Install Pieces for Developers](https://docs.page/pieces-app/documentation/installation-getting-started/windows)
+
+Choose a topic from the list below to get started with Pieces:
+
+* [Save a Snippet](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials)
+* [Share a Snippet](https://docs.page/pieces-app/documentation/personalized-link-sharing/single-click-link-sharing)
+* [Import Snippets from GitHub](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/import-gists-from-github)
+* [Local Snippet Discovery](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/in-project-snippet-discovery)
+* [FAQs](https://docs.page/pieces-app/documentation/faq)
+
+## Try all of our products:
+* Download the [Pieces for Developers | Desktop App](https://code.pieces.app/install)
+* Download the [Pieces for Developers | Chrome Extension](https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm)
+* Download the [Pieces for Developers | JetBrains Plugin](https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets)
+* Download the [Pieces for Developers | Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode)
+
+## Other Resources:
+* [Youtube Channel](https://www.youtube.com/@getpieces)
+* [Website](https://code.pieces.app)
+* [Release Notes](https://code.pieces.app/updates)
