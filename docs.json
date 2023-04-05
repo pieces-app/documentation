@@ -7,15 +7,20 @@
       "title": "Pieces Chrome Support",
       "icon": "chrome",
       "link": "/extensions-plugins-support/troubleshooting-chrome"
+    },
+    {
+      "title": "Homepage",
+      "icon": "home",
+      "link": "https://pieces.app"
     }
   ],
   "variables": {
     "links": {
       "website": {
-        "home": "https://code.pieces.app",
-        "pfd_desktop_install": "https://code.pieces.app/install",
-        "pfd_linux_install": "https://code.pieces.app/desktop/getting-started/linux",
-        "release_notes": "https://code.pieces.app/updates",
+        "home": "https://pieces.app",
+        "pfd_desktop_install": "https://pieces.app",
+        "pfd_linux_install": "https://pieces.app/getting-started/linux/",
+        "release_notes": "https://pieces.app/updates",
         "blog": "https://code.pieces.app/blog"
       },
       "extensions": {
@@ -55,38 +60,38 @@
       },
       "internal": {
         "installation_getting_started": {
-          "macos": "https://docs.page/pieces-app/documentation/installation-getting-started/macos",
-          "windows": "https://docs.page/pieces-app/documentation/installation-getting-started/windows",
-          "linux": "https://docs.page/pieces-app/documentation/installation-getting-started/linux"
+          "macos": "https://docs.pieces.app/i3nstallation-getting-started/macos",
+          "windows": "https://docs.pieces.app/installation-getting-started/windows",
+          "linux": "https://docs.pieces.app/installation-getting-started/linux"
         },
         "product_highlights": {
-          "save_materials": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials",
-          "save_screenshots": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-screenshots",
-          "in_project_snippet_discovery": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/in-project-snippet-discovery",
-          "import_gists": "https://docs.page/pieces-app/documentation/product-highlights-and-benefits/import-gists-from-github"
+          "save_materials": "https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials",
+          "save_screenshots": "https://docs.pieces.app/product-highlights-and-benefits/saving-screenshots",
+          "in_project_snippet_discovery": "https://docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery",
+          "import_gists": "https://docs.pieces.app/product-highlights-and-benefits/import-gists-from-github"
         },
         "context_awareness_engine": {
-          "origin_details": "https://docs.page/pieces-app/documentation/context-awareness-engine/origin-details",
-          "ai_smart_descriptions": "https://docs.page/pieces-app/documentation/context-awareness-engine/ai-smart-descriptions",
-          "related_links_resources": "https://docs.page/pieces-app/documentation/context-awareness-engine/related-links-external-resources",
-          "ai_generated_labels": "https://docs.page/pieces-app/documentation/context-awareness-engine/ai-generated-labels",
-          "related_people": "https://docs.page/pieces-app/documentation/context-awareness-engine/related-people",
-          "smart_warnings": "https://docs.page/pieces-app/documentations/context_awareness-engine/smart-warnings"
+          "origin_details": "https://docs.pieces.app/context-awareness-engine/origin-details",
+          "ai_smart_descriptions": "https://docs.pieces.app/context-awareness-engine/ai-smart-descriptions",
+          "related_links_resources": "https://docs.pieces.app/context-awareness-engine/related-links-external-resources",
+          "ai_generated_labels": "https://docs.pieces.app/context-awareness-engine/ai-generated-labels",
+          "related_people": "https://docs.pieces.app/context-awareness-engine/related-people",
+          "smart_warnings": "https://docs.pieces.apps/context_awareness-engine/smart-warnings"
         },
         "global_search_suggestion_reuse": {
-          "global_search": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/global_search",
-          "search_settings": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/adjusting-settings-for-search",
-          "sort_scope_relevant": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/sort-scope-relevant",
-          "workflow_activity_stream": "https://docs.page/pieces-app/documentation/global-search-suggestion-reuse/workflow-activity-stream"
+          "global_search": "https://docs.pieces.app/global-search-suggestion-reuse/global_search",
+          "search_settings": "https://docs.pieces.app/global-search-suggestion-reuse/adjusting-settings-for-search",
+          "sort_scope_relevant": "https://docs.pieces.app/global-search-suggestion-reuse/sort-scope-relevant",
+          "workflow_activity_stream": "https://docs.pieces.app/global-search-suggestion-reuse/workflow-activity-stream"
         },
         "personalized_link_sharing": {
-          "single_click_link_sharing": "https://docs.page/pieces-app/documentation/personalized-link-sharing/single-click-link-sharing",
-          "save_for_offline": "https://docs.page/pieces-app/documentation/personalized-link-sharing/save-for-offline",
-          "share_via_github_gist": "https://docs.page/pieces-app/documentation/personalized-link-sharing/share-via-github-gist"
+          "single_click_link_sharing": "https://docs.pieces.app/personalized-link-sharing/single-click-link-sharing",
+          "save_for_offline": "https://docs.pieces.app/personalized-link-sharing/save-for-offline",
+          "share_via_github_gist": "https://docs.pieces.app/personalized-link-sharing/share-via-github-gist"
         },
-        "additional_features_and_settings": "https://docs.page/pieces-app/documentation/additional-features-and-settings",
-        "join_our_community": "https://docs.page/pieces-app/documentation/join-our-community",
-        "faqs": "https://docs.page/pieces-app/documentation/frequently-asked-questions"
+        "additional_features_and_settings": "https://docs.pieces.app/additional-features-and-settings",
+        "join_our_community": "https://docs.pieces.app/join-our-community",
+        "faqs": "https://docs.pieces.app/frequently-asked-questions"
     }
     }
   },
