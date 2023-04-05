@@ -26,7 +26,8 @@
       "extensions": {
         "chrome": "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
         "jetbrains": "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
-        "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode"
+        "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
+        "edge": "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim"
       },
       "snippets": {
         "python": {
