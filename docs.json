@@ -4,14 +4,14 @@
     "googleTagManager": "GTM-K8C6QWB",
   "anchors": [
     {
-      "title": "Pieces Chrome Support",
-      "icon": "chrome",
-      "link": "/extensions-plugins-support/troubleshooting-chrome"
-    },
-    {
       "title": "Homepage",
       "icon": "home",
       "link": "https://pieces.app"
+    },
+    {
+      "title": "Pieces Chrome Support",
+      "icon": "chrome",
+      "link": "/extensions-plugins-support/troubleshooting-chrome"
     }
   ],
   "variables": {
