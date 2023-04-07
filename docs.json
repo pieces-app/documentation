@@ -1,8 +1,10 @@
 {
-    "name": "Pieces for Developers",
-    "theme": "#36B9B9",
-    "googleTagManager": "GTM-K8C6QWB",
-    "twitter": "getpieces",
+  "name": "Pieces for Developers",
+  "theme": "#36B9B9",
+  "googleTagManager": "GTM-K8C6QWB",
+  "twitter": "getpieces",
+  "logo": "/assets/pieces_light.png",
+  "logo": "/assets/pieces_dark.png",
   "anchors": [
     {
       "title": "Website Home",
