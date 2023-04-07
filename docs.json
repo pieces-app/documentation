@@ -102,7 +102,6 @@
   },
     "sidebar": [
       ["Home", "/"],
-      ["Overview", "/overview"],
       ["Frequently Asked Questions", "/faq"],
       ["Extensions & Plugins Support", [
         ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"]
