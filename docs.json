@@ -40,8 +40,6 @@
       ["Workflow Activity", "/features/workflow-activity"],
       ["Manage Saved Materials", "/features/managing-saved-materials"]
     ]],
-    ["Frequently Asked Questions", "/faq"],
-    ["Our Community", "/our-community"],
     ["Extensions & Plugins Support", [
       ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
       ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
@@ -53,7 +51,9 @@
       ["Onboard New Developers", "/use-cases/onboard-new-developers"],
       ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"],
       ["Take Back Your Time", "/use-cases/take-back-your-time"]
-    ]]
+    ]],
+    ["Frequently Asked Questions", "/faq"],
+    ["Our Community", "/our-community"]
   ],
   "variables": {
     "links": {
