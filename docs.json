@@ -120,7 +120,6 @@
         ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
         ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"]
       ]],
-      ["Product Features", "#"],
       ["Auto Enrichment", [
         ["AI Generated Smart Descriptions", "/context-awareness-engine/ai-smart-descriptions"],
         ["Related Links and External Resources", "/context-awareness-engine/related-links-external-resources"],
