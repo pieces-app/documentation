@@ -39,9 +39,7 @@
       ["Global Search", "/features/global-search"],
       ["Workflow Activity", "/features/workflow-activity"],
       ["Manage Saved Materials", "/features/managing-saved-materials"]
-
     ]],
-    ["Additional Features and Settings", "/additional-features-and-settings"],
     ["Frequently Asked Questions", "/faq"],
     ["Our Community", "/our-community"],
     ["Extensions & Plugins Support", [
@@ -134,7 +132,7 @@
           "save_for_offline": "https://docs.pieces.app/features/one-click-snippet-sharing#saving-a-shared-material",
           "share_via_github_gist": "https://docs.pieces.app/one-click-snippet-sharing#share-via-github-gist"
         },
-        "additional_features_and_settings": "https://docs.pieces.app/additional-features-and-settings",
+        "additional_features_and_settings": "https://docs.pieces.app/one-click-snippet-sharing",
         "join_our_community": "https://docs.pieces.app/join-our-community",
         "faqs": "https://docs.pieces.app/frequently-asked-questions"
     }
