@@ -33,21 +33,23 @@
       ["Linux", "/installation-getting-started/linux"]
     ]
     ],
+    ["Product Features", [
+      ["Auto Enrichment", "/features/auto-enrichment"],
+      ["Single Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Global Search", "/features/global-search"],
+      ["Workflow Activity", "/features/workflow-activity"],
+      ["Manage Saved Materials", "/features/managing-saved-materials"]
+
+    ]],
+    ["Additional Features and Settings", "/additional-features-and-settings"],
+    ["Frequently Asked Questions", "/faq"],
+    ["Our Community", "/our-community"],
     ["Extensions & Plugins Support", [
       ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
       ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
       ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
       ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"]
     ]],
-    ["Product Features", [
-      ["Auto Enrichment", "/features/auto-enrichment"],
-      ["Single Click Sharing", "/features/one-click-snippet-sharing"],
-      ["Global Search", "/features/global-search"],
-      ["Workflow Activity", "/features/workflow-activity"]
-    ]],
-    ["Additional Features and Settings", "/additional-features-and-settings"],
-    ["Frequently Asked Questions", "/faq"],
-    ["Our Community", "/our-community"],
     ["Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
       ["Onboard New Developers", "/use-cases/onboard-new-developers"],
