@@ -11,6 +11,11 @@
       "title": "Website Home",
       "icon": "home",
       "link": "https://pieces.app"
+    },
+    {
+      "title": "Release Notes",
+      "icon": "pencil",
+      "link": "https://pieces.app/updates"
     }
   ],
   "variables": {
