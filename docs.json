@@ -16,6 +16,11 @@
       "title": "What's New at Pieces?",
       "icon": "pencil",
       "link": "https://pieces.app/updates"
+    },
+    {
+      "title": "YouTube Channel",
+      "icon": "youtube",
+      "link": "https://pieces.app/@getpieces"
     }
   ],
   "sidebar": [
