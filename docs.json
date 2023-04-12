@@ -38,7 +38,8 @@
       ["Single Click Sharing", "/features/one-click-snippet-sharing"],
       ["Global Search", "/features/global-search"],
       ["Workflow Activity", "/features/workflow-activity"],
-      ["Manage Saved Materials", "/features/managing-saved-materials"]
+      ["Manage Saved Materials", "/features/managing-saved-materials"],
+      ["Creation & Generation", "/features/creation-and-generation"]
     ]],
     ["Extensions & Plugins Support", [
       ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
