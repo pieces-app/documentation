@@ -11,6 +11,20 @@ export const ReleasePill = props => {
     </a>
 }
 
+export const QuoteCallout = props => {
+    return <div style={{ padding: "10px", border: "1px solid #f3f4f5" }}>
+        <p><i>{ props.children }</i></p>
+    </div>
+}
+
+export const InstallButton = props => {
+    return <a style={{ textDecoration: "none" }} href={"https://pieces.app"}>
+        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #000000", fontWeight: "bold", backgroundColor: "#000000" }}>{ props.children }</p>
+        </div>
+    </a>
+}
+
 # Pieces for Developers
 **Documentation Center**
 
@@ -33,7 +47,8 @@ The debut release of our <a href="{{ links.website.home }}">Flagship Desktop App
 ## Trusted by the World's Best Developers
 ![Logos of the companies where some of our users work.](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/TRUSTED_BY_SOME_OF_THE_WORLDS_BEST_DEVELOPERS_LEFT_ALIGNED)
 From students and indie developers, to startups and open source teams, to enterprise organizations and beyond, <a href="{{ links.website.home }}">Pieces for Developers</a> is purpose-built as a cohesive layer and a **_"tool between tools"_** that **_boosts productivity_** in three major workflow processes: researching and problem-solving **_in the browser_**, working with colleagues **_in collaborative environments_**, and lastly, writing, reviewing, referencing, and reusing code **_in the IDE_**.
-> We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.
+
+<QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.</QuoteCallout>
 
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**.
 
