@@ -20,7 +20,7 @@ export const QuoteCallout = props => {
 export const InstallButton = props => {
     return <a style={{ textDecoration: "none", marginRight: "10px" }} href={"https://pieces.app"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "#f3f4f5", color: "black", fontWeight: "500" }}>{ props.children }</p>
+            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500" }}>{ props.children }</p>
         </div>
     </a>
 }
@@ -38,7 +38,7 @@ export const PillsFlexRow = props => {
 };
 
 export const GridFlexRow = props => {
-    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: "wrap" }}>{props.children}</div>;
+    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
 };
 
 export const Subtitle = props => {
@@ -51,10 +51,9 @@ export const Subtitle = props => {
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
 
-<PillsFlexRow>
-    <InstallButton>Install Pieces for Developers 💾</InstallButton>
-    <ReleasePill>Latest Release Details 🎉</ReleasePill>
-</PillsFlexRow>
+
+<InstallButton>Install Pieces for Developers</InstallButton>
+<ReleasePill>Latest Release Details 🎉</ReleasePill>
 
 ## Some Quick Background Context
 
