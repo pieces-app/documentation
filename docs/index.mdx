@@ -3,6 +3,16 @@ title: Pieces for Developers Documentation Center
 description: Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 ---
 
+
+export const HeaderImage = props => {
+    return <picture>
+        <source srcSet="assets/robot_global_search_dark.png" media="(prefers-color-scheme:dark)"  />
+        <img src="assets/robot_global_search_light.png" />
+    </picture>
+
+
+}
+
 export const ReleasePill = props => {
     return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
