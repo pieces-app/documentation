@@ -34,15 +34,19 @@ export const JumpButtons = props => {
 }
 
 export const PillsFlexRow = props => {
-    return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
+    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
 };
 
 export const GridFlexRow = props => {
-    return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: "wrap" }}>{props.children}</div>;
+    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', flexWrap: "wrap" }}>{props.children}</div>;
 };
 
+export const Subtitle = props => {
+    return <p>{ props.children }</p>
+}
+
 # Pieces for Developers
-Documentation Center
+<Subtitle>Documentation Center</Subtitle>
 
 ![](/assets/robot_global_search.png)
 
