@@ -3,22 +3,82 @@ title: Pieces for Developers Documentation Center
 description: Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 ---
 
-# Pieces for Developers Documentation Center
 
-Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
+export const ReleasePill = props => {
+    return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
+        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "#f3f4f5", color: "black", fontWeight: "500", marginTop: "8px", marginBottom: "15px" }}>{ props.children }</p>
+        </div>
+    </a>
+}
+
+export const QuoteCallout = props => {
+    return <div style={{ padding: "5px 30px", borderRadius: "20px" }}>
+        <p><strong>" </strong><i>{ props.children }</i><strong> "</strong></p>
+    </div>
+}
+
+export const InstallButton = props => {
+    return <a style={{ textDecoration: "none"}} href={"https://pieces.app"}>
+        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px", marginTop: "25px"}}>{ props.children }</p>
+        </div>
+    </a>
+}
+
+export const JumpButtons = props => {
+    return <a style={{ textDecoration: "none", marginRight: "18px" }} href={ props.src }>
+        <div style={{ maxWidth: "275px", minWidth: "150px", textAlign: "center" }}>
+            <p style={{ backgroundColor: "#f3f4f5", color: "black", marginTop: "20px", marginBottom: "15px", padding: "5px 20px", borderRadius: "20px", border: "1px solid #636363", fontWeight: "500" }}>{ props.children }</p>
+        </div>
+    </a>
+}
+
+export const PillsFlexColumn = props => {
+    return <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
+};
+
+export const GridFlexRow = props => {
+    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
+};
+
+export const Spacer = props => {
+    return <div style={{ height: "5px"}}></div>
+}
+
+# Wiki & Documentation Center
+
+export const HeaderImage = props => {
+    return <picture>
+        <source srcSet={ props.srcset } media="(prefers-color-scheme: dark)"  />
+        <img src={ props.src } />
+    </picture>
+}
+
+<HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png" srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
+
+Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
+
+<PillsFlexColumn>
+    <InstallButton>Get Pieces for Developers</InstallButton>
+    <Spacer></Spacer>
+    <ReleasePill>Latest Release Details 🎉</ReleasePill>
+</PillsFlexColumn>
 
 ## Some Quick Background Context
 
-In 2022, our team set out on a journey to build **_the most advanced code snippet management and workflow context platform_** yet.
+In 2022, our team set out on a journey to build _the most advanced code snippet management and workflow context platform_ yet.
 
 The debut release of our <a href="{{ links.website.home }}">Flagship Desktop App</a> aimed to take developer _productivity to the next level_ by incorporating key capabilities and our users' _favorite features directly into their IDE_.
 
-**Effortlessly save, enrich, search, share, reference, and reuse code snippets, workflow context, and other useful developer resources.**
+Effortlessly **save**, **enrich**, **search**, **share**, **reference**, and **reuse** code snippets, workflow context, and other useful developer resources.
 
 ![Saving an enriched snippet with Pieces for VS Code and the Pieces for Developers Desktop App.](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/HERO_GIF_SAVE_ENRICHED_SNIPPET_DESKTOP_APP_AND_VISUAL_STUDIO_CODE_EXTENSION)
 
+
 ## Trusted by the World's Best Developers
 ![Logos of the companies where some of our users work.](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/TRUSTED_BY_SOME_OF_THE_WORLDS_BEST_DEVELOPERS_LEFT_ALIGNED)
+
 From students and indie developers, to startups and open source teams, to enterprise organizations and beyond, <a href="{{ links.website.home }}">Pieces for Developers</a> is purpose-built as a cohesive layer and a **_"tool between tools"_** that **_boosts productivity_** in three major workflow processes: researching and problem-solving **_in the browser_**, working with colleagues **_in collaborative environments_**, and lastly, writing, reviewing, referencing, and reusing code **_in the IDE_**.
 
 We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.
@@ -26,15 +86,18 @@ We are a venture-backed company supported by some of the world's best investors.
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**.
 
 
-## <a href="{{ links.internal.installation_getting_started.what }}">Start Here to Install Pieces for Developers</a>
 
-Choose a topic from the list below to get started with Pieces:
+<QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.</QuoteCallout>
 
-* <a href="{{ links.internal.product_highlights.save_materials }}">Save a Snippet</a>
-* <a href="{{ links.internal.personalized_link_sharing.single_click_link_sharing }}">Share a Snippet</a>
-* <a href="{{ links.internal.product_highlights.import_gists }}">Import Snippets from GitHub</a>
-* <a href="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Local Snippet Discovery</a>
-* <a href="https://docs.pieces.app/faq">FAQs</a>
+Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**. Choose a topic from the list below to get started with Pieces:
+
+<GridFlexRow>
+    <JumpButtons src="{{ links.internal.product_highlights.save_materials }}">Save a Snippet</JumpButtons>
+    <JumpButtons src="{{ links.internal.personalized_link_sharing.single_click_link_sharing }}">Share a Snippet</JumpButtons>
+    <JumpButtons src="{{ links.internal.product_highlights.import_gists }}">Import Snippets from GitHub</JumpButtons>
+    <JumpButtons src="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Local Snippet Discovery</JumpButtons>
+    <JumpButtons src="{{ links.internal.faqs }}">Frequently Asked Questions</JumpButtons>
+</GridFlexRow>
 
 ## Try all of our products:
 * Download the <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Desktop App</a>
