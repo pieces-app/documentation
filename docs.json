@@ -6,7 +6,7 @@
   "logo": "/assets/pieces_dark.png",
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
-  "favicon": "/assets/pieces_light.png",
+  "favicon": "/assets/pieces_dark.png",
   "anchors": [
     {
       "title": "Website Home",
