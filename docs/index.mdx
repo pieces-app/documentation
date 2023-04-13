@@ -41,8 +41,8 @@ export const GridFlexRow = props => {
     return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
 };
 
-export const Subtitle = props => {
-    return <p>{ props.children }</p>
+export const Spacer = props => {
+    return <div style={{ height: "5px"}}></div>
 }
 
 # Wiki & Documentation Center
@@ -53,6 +53,7 @@ Learn how to best use and optimize your workflow with Pieces for Developers! Rea
 
 <PillsFlexColumn>
     <InstallButton>Get Pieces for Developers</InstallButton>
+    <Spacer></Spacer>
     <ReleasePill>Latest Release Details 🎉</ReleasePill>
 </PillsFlexColumn>
 
