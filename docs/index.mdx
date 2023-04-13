@@ -18,9 +18,9 @@ export const QuoteCallout = props => {
 }
 
 export const InstallButton = props => {
-    return <a style={{ textDecoration: "none", marginRight: "10px" }} href={"https://pieces.app"}>
+    return <a style={{ textDecoration: "none"}} href={"https://pieces.app"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500" }}>{ props.children }</p>
+            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px" }}>{ props.children }</p>
         </div>
     </a>
 }
@@ -51,11 +51,11 @@ export const Subtitle = props => {
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
 
-
 <PillsFlexColumn>
-    <InstallButton>Install Pieces for Developers</InstallButton>
+    <InstallButton>Click to Get Pieces for Developers Install</InstallButton>
     <ReleasePill>Latest Release Details 🎉</ReleasePill>
 </PillsFlexColumn>
+
 ## Some Quick Background Context
 
 In 2022, our team set out on a journey to build _the most advanced code snippet management and workflow context platform_ yet.
