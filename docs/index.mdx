@@ -28,13 +28,13 @@ export const InstallButton = props => {
 export const JumpButtons = props => {
     return <a style={{ textDecoration: "none" }} href={ props.src }>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "10px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", fontWeight: "500" }}>{ props.children }</p>
+            <p style={{ padding: "10px 20px", borderRadius: "20px", border: "1px solid #636363", fontWeight: "500" }}>{ props.children }</p>
         </div>
     </a>
 }
 
 export const FlexRow = props => {
-    return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'start'}}>{props.children}</div>;
+    return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
 };
 
 # Pieces for Developers
