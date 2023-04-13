@@ -4,15 +4,6 @@ description: Learn how to best use and optimize your workflow with Pieces for De
 ---
 
 
-export const HeaderImage = props => {
-    return <picture>
-        <source srcset="assets/robot_global_search_dark.png" media="(prefers-color-scheme: dark)"  />
-        <img src="assets/robot_global_search_light.png" />
-    </picture>
-
-
-}
-
 export const ReleasePill = props => {
     return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
@@ -38,7 +29,7 @@ export const InstallButton = props => {
 export const JumpButtons = props => {
     return <a style={{ textDecoration: "none", marginRight: "18px" }} href={ props.src }>
         <div style={{ maxWidth: "275px", minWidth: "150px", textAlign: "center" }}>
-            <p style={{ marginTop: "20px", marginBottom: "15px", padding: "5px 20px", borderRadius: "20px", border: "1px solid #636363", fontWeight: "500" }}>{ props.children }</p>
+            <p style={{ backgroundColor: "#f3f4f5", color: "black", marginTop: "20px", marginBottom: "15px", padding: "5px 20px", borderRadius: "20px", border: "1px solid #636363", fontWeight: "500" }}>{ props.children }</p>
         </div>
     </a>
 }
@@ -57,7 +48,7 @@ export const Spacer = props => {
 
 # Wiki & Documentation Center
 
-<HeaderImage></HeaderImage>
+![](/assets/robots_global_search_light.png)
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
 
