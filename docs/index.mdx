@@ -6,13 +6,13 @@ description: Learn how to best use and optimize your workflow with Pieces for De
 export const ReleasePill = props => {
     return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "#f3f4f5", color: "black", fontWeight: "500", marginTop: "8px" }}>{ props.children }</p>
+            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "#f3f4f5", color: "black", fontWeight: "500", marginTop: "8px", marginBottom: "15px" }}>{ props.children }</p>
         </div>
     </a>
 }
 
 export const QuoteCallout = props => {
-    return <div style={{ padding: "5px 10px", borderRadius: "20px" }}>
+    return <div style={{ padding: "5px 30px", borderRadius: "20px" }}>
         <p><strong>" </strong><i>{ props.children }</i><strong> "</strong></p>
     </div>
 }
@@ -20,7 +20,7 @@ export const QuoteCallout = props => {
 export const InstallButton = props => {
     return <a style={{ textDecoration: "none"}} href={"https://pieces.app"}>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px" }}>{ props.children }</p>
+            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px", marginTop: "25px"}}>{ props.children }</p>
         </div>
     </a>
 }
