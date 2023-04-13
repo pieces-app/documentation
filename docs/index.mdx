@@ -25,12 +25,20 @@ export const InstallButton = props => {
     </a>
 }
 
+export const JumpButtons = props => {
+    return <a style={{ textDecoration: "none" }} href={ props.src }>
+        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{ padding: "10px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", fontWeight: "500" }}>{ props.children }</p>
+        </div>
+    </a>
+}
+
 export const FlexRow = props => {
     return <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'start'}}>{props.children}</div>;
 };
 
 # Pieces for Developers
-**Documentation Center**
+## Documentation Center
 
 ![](/assets/robot_global_search.png)
 
@@ -55,6 +63,9 @@ From students and indie developers, to startups and open source teams, to enterp
 <QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.</QuoteCallout>
 
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**. Choose a topic from the list below to get started with Pieces:
+
+
+<JumpButtons>Save a Snippet</JumpButtons>
 
 * <a href="{{ links.internal.product_highlights.save_materials }}">Save a Snippet</a>
 * <a href="{{ links.internal.personalized_link_sharing.single_click_link_sharing }}">Share a Snippet</a>
