@@ -1,0 +1,70 @@
+---
+title: Privacy & Security
+description:  Let's jump in and touch on a bit of things regarding privacy, data, cloud-based features, and our ML models!
+---
+
+# Privacy & Security
+From Day-1 of engineering on Pieces we had a first principle that everything is local first and built with speed, privacy, security, and offline-productivity in mind. We also knew that our partners operate in highly secure and sensitive environments and we needed to be prepared on a compliance side of things to also operate in such environments i.e. HIPPA, SOC2, FERPA/COPA, etc…. That said I can't tell you how happy I am that we have stayed true to this philosophy for cases just like yours!
+
+## Where snippets are stored
+Completely local on your device and the following is a path + photo of what it looks like for my installation on MacOS:
+
+##### [IMAGE HERE]
+
+/Users/tsavo/Library/com.pieces.os/production/Pieces/assets.db
+- This is great because you can easily copy this directory to a flash drive and bring it to another computer ✅
+
+## Our Machine Learning Models:
+The following models are completely local and offline (i.e. shipped within the applications binary & require no internet):
+- Code VS Text
+- Coding Language Classification
+- Image 2 Text (i.e. OCR)
+- Tag Generation of the Code Snippets
+- Title Generation of the Code Snippets
+- v1 ML enhanced Search
+- Suggested Tags from other Tags
+- Code Similarity
+- Suggested Save
+- Snippet Discovery
+
+The only ML Model that is cloud powered at the moment is the Code Description Model…however the great news is that:
+- 1.9.2 (shipping in 2 weeks) the model will ship and run locally with the app 🎉
+- Before 1.9.2 Code Description can easily be disabled by the user 😌
+
+An additional thing to note about our ML models is that they are not continuous meaning that the models do not train on your data as you as you use the product!
+
+## Saving code snippets in the cloud:
+The pieces cloud is entirely opt-in:
+- Authentication is managed by our enterprise-ready authentication partners at Auth0 (Now owned by Okta)
+
+Even when a user signs in they still do not have a cloud until they specifically connect it in settings:
+
+If a user opts into the cloud, the data is only uploaded when something is shared:
+- i.e. When I click the "Share" icon and create a sharable link, only then is the "Piece" uploaded & accessible.
+
+Lastly - A note on cloud architecture for the things that are backed up:
+- There is no centralized Database. i.e. each user has their own micro-database
+- There is no centralized or shared servers
+  > i.e. each user has their own Cloud Run instance, with their own unique subdomain & their own micro load balancer
+
+Every user's cloud scales up and down completely independent of other users & the cloud is only running available when a "Piece" is being access or backed up/updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed!
+
+## Telemetry & Crash Data:
+Most important thing is that all data collection is opt-out & we give all the control to our users
+Further: The data that we do collect is completely anonymous & highly secure (we take data very serious)
+Why do we collect data? Long story short is that we are a Series A stage startup and the data helps us to report growth and hopefully more funding 😅
+Here are some screenshot of Telemetry Opt-Outs from the Pieces products:
+
+Pieces for Developers Desktop App
+- SCREENSHOT INSIDE OF PFD
+
+Pieces for IntelliJ
+- SCREENSHOT INSIDE OF INTELLIJ
+
+Pieces for VSCode
+- SCREENSHOT INSIDE OF VSCODE
+
+Pieces for Chrome
+- SCREENSHOT INSIDE OF CHROME
+
+I know that was a lot 😄 but wanted to be detailed and hopefully answer your questions beyond expectations. We want to be super responsive and make this as easy for you as possible.
