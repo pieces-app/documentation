@@ -3,6 +3,10 @@ title: Pieces for Developers Documentation Center
 description: Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 ---
 
+export const Meta = props => {
+    return <meta name="robots" content="noindex, nofollow" />
+    ;
+}
 
 export const ReleasePill = props => {
     return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
@@ -54,6 +58,7 @@ export const HeaderImage = props => {
         <img src={ props.src } />
     </picture>
 }
+<Meta></Meta>
 
 <HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png" srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
 
