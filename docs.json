@@ -9,9 +9,9 @@
   "favicon": "/assets/pieces_dark.png",
   "anchors": [
     {
-      "title": "Website Home",
+      "title": "visit pieces.app",
       "icon": "home",
-      "link": "https://pieces.app"
+      "link": "https://docs.pieces.app"
     },
     {
       "title": "Product Updates",
