@@ -15,23 +15,32 @@ Completely local on your device and the following is a path + photo of what it l
 - This is great because you can easily copy this directory to a flash drive and bring it to another computer ✅
 
 ## Our Machine Learning Models:
-The following models are completely local and offline (i.e. shipped within the applications binary & require no internet):
-- Code VS Text
-- Coding Language Classification
-- Image 2 Text (i.e. OCR)
-- Tag Generation of the Code Snippets
-- Title Generation of the Code Snippets
-- v1 ML enhanced Search
-- Suggested Tags from other Tags
-- Code Similarity
-- Suggested Save
-- Snippet Discovery
+All of our models can be completely local and offline (i.e. shipped within the applications binary & require no
+internet) as long as you opt out of blended processing. If you have not opted out of blended processing then some of the
+models will offload computation to the cloud. A few of our models are **only** available in the cloud but we are working
+on bringing them local. This table shows which models are available locally, and which will use cloud compute unless
+processing is set to local.
+| **Model**                      	| **Local** 	| **Blended** 	|
+|--------------------------------	|-----------	|-------------	|
+| Code vs Text                   	|      ✅    	|       ✅     	|
+| Coding language classification 	|      ✅     	|       ✅     	|
+| Code Similarity                	|      ✅     	|       ❌     	|
+| Description Generation         	|      ✅     	|       ✅      |
+| Framework Detection            	|      ✅     	|       ✅      |
+| Image to text (OCR)            	|      ✅     	|       ✅     	|
+| Link Extraction                	|      ✅     	|       ❌     	|
+| Neural Code Search             	|      ✅     	|       ❌      |
+| Related Links                  	|      🚧    	|       ✅      |
+| Suggested tags from tags       	|      ✅    	|       ❌     	|
+| Suggested Save                 	|      ✅    	|       ❌     	|
+| Snippet Discovery              	|      ✅    	|       ❌     	|
+| Secret Detection               	|      ✅    	|       ✅     	|
+| Search Queries                  	|      🚧    	|       ✅     	|
+| Tag Generation                 	|      ✅     	|       ✅      |
+| Title Generation               	|      ✅     	|       ✅      |
 
-The only ML Model that is cloud powered at the moment is the Code Description Model…however the great news is that:
-- 1.9.2 (shipping in 2 weeks) the model will ship and run locally with the app 🎉
-- Before 1.9.2 Code Description can easily be disabled by the user 😌
 
-An additional thing to note about our ML models is that they are not continuous meaning that the models do not train on your data as you as you use the product!
+Our ML models are not trained continuously meaning that they do not train on your data as you as you use the product!
 
 ## Saving code snippets in the cloud:
 The pieces cloud is entirely opt-in:
