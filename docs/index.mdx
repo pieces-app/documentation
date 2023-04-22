@@ -57,7 +57,7 @@ export const HeaderImage = props => {
 }
 
 export const StickyBar = props => {
-    return <div style={{ justifyContent: "center", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-35px" }}>
+    return <div style={{ paddingTop: "8px", justifyContent: "center", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-35px" }}>
         { props.children }
     </div>
 }
@@ -71,7 +71,8 @@ export const ClickThrough = props => {
 }
 
 <StickyBar>
-    <ClickThrough src="https://pieces.app">Get Pieces for Developers</ClickThrough>
+    <p>Pieces for Developers 1.13.0 & POS 4.2.1 Out Now! 🎉</p>
+    <ClickThrough src="https://pieces.app">Get it Here</ClickThrough>
 </StickyBar>
 
 <StickySpacer></StickySpacer>
@@ -80,13 +81,7 @@ export const ClickThrough = props => {
 
 <HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png" srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
 
-Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
-
-<PillsFlexColumn>
-    <InstallButton>Get Pieces for Developers</InstallButton>
-    <Spacer></Spacer>
-    <ReleasePill>Latest Release Details 🎉</ReleasePill>
-</PillsFlexColumn>
+Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 
 ## Some Quick Background Context
 
