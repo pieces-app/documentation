@@ -45,6 +45,10 @@ export const Spacer = props => {
     return <div style={{ height: "5px"}}></div>
 }
 
+export const StickySpacer = props => {
+    return <div style={{ height: "50px"}}></div>
+}
+
 export const HeaderImage = props => {
     return <picture>
         <source srcSet={ props.srcset } media="(prefers-color-scheme: dark)"  />
@@ -60,6 +64,7 @@ export const StickyBar = props => {
 
 <StickyBar></StickyBar>
 
+<StickySpacer></StickySpacer>
 
 # Wiki & Documentation Center
 
