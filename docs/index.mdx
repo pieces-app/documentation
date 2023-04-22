@@ -46,7 +46,7 @@ export const Spacer = props => {
 }
 
 export const StickySpacer = props => {
-    return <div style={{ height: "50px"}}></div>
+    return <div style={{ height: "40px"}}></div>
 }
 
 export const HeaderImage = props => {
@@ -57,7 +57,7 @@ export const HeaderImage = props => {
 }
 
 export const StickyBar = props => {
-    return <div style={{ border: "2px solid red", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed" }}>
+    return <div style={{ border: "2px solid red", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-35px" }}>
         { props.children }
     </div>
 }
