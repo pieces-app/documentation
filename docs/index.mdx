@@ -46,7 +46,7 @@ export const Spacer = props => {
 }
 
 export const StickySpacer = props => {
-    return <div style={{ height: "40px"}}></div>
+    return <div style={{ height: "60px"}}></div>
 }
 
 export const HeaderImage = props => {
@@ -65,7 +65,7 @@ export const StickyBar = props => {
 export const ClickThrough = props => {
     return <a style={{ textDecoration: "none"}} href={ props.src }>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "2px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginTop: "0px" }}>{ props.children }</p>
+            <p style={{ padding: "2px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginTop: "4px" }}>{ props.children }</p>
         </div>
     </a>
 }
