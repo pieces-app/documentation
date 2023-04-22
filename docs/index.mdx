@@ -57,7 +57,7 @@ export const HeaderImage = props => {
 }
 
 export const StickyBar = props => {
-    return <div style={{ border: "2px solid red", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-35px" }}>
+    return <div style={{ border: "2px solid red", justifyContent: "center", width: "-webkit-fill-available", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-35px" }}>
         { props.children }
     </div>
 }
@@ -65,7 +65,7 @@ export const StickyBar = props => {
 export const ClickThrough = props => {
     return <a style={{ textDecoration: "none"}} href={ props.src }>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px", marginTop: "30px"}}>{ props.children }</p>
+            <p style={{ padding: "2px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500"}}>{ props.children }</p>
         </div>
     </a>
 }
