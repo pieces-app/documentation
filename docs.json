@@ -65,8 +65,10 @@
       ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"],
       ["Take Back Your Time", "/use-cases/take-back-your-time"]
     ]],
-    ["Frequently Asked Questions", "/faq"],
-    ["Our Community", "/our-community"]
+    ["Community & More", [
+      ["Frequently Asked Questions", "/faq"],
+      ["Our Community", "/our-community"]
+    ]]
   ],
   "variables": {
     "links": {
