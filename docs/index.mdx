@@ -57,8 +57,10 @@ export const HeaderImage = props => {
 }
 
 export const StickyBar = props => {
-    return <div className={ "dark:bg-zinc-900 bg-white" } style={{ paddingTop: "8px", justifyContent: "center", height: "50px", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-40px", flexWrap: "wrap", display: "flex", width: "100%" }}>
-        { props.children }
+    return <div className={ "dark:bg-zinc-900 bg-white" } style={{ paddingTop: "8px", justifyContent: "space-around", height: "50px", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-40px", flexWrap: "wrap", display: "flex", width: "100%", maxWidth: "-webkit-fill-available" }}>
+        <div>
+            { props.children }
+        </div>
     </div>
 }
 
