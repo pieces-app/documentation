@@ -58,7 +58,7 @@ export const HeaderImage = props => {
 
 export const StickyBar = props => {
     return <div className={ "dark:bg-zinc-900 bg-white" } style={{ paddingTop: "8px", justifyContent: "space-around", height: "50px", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-40px", flexWrap: "wrap", display: "flex", width: "100%", maxWidth: "-webkit-fill-available" }}>
-        <div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
             { props.children }
         </div>
     </div>
