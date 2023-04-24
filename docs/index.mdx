@@ -57,7 +57,7 @@ export const HeaderImage = props => {
 }
 
 export const StickyBar = props => {
-    return <div className={ "dark:bg-zinc-900 bg-white" } style={{ paddingTop: "8px", justifyContent: "center", width: "100%", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-40px", maxWidth: "850px", flexWrap: "wrap" }}>
+    return <div className={ "dark:bg-zinc-900 bg-white sm:hidden" } style={{ paddingTop: "8px", justifyContent: "center", width: "100%", height: "50px", display: "flex", flexDirection: "row", marginRight: "6rem", zIndex: "10", position: "fixed", marginTop: "-40px", maxWidth: "850px", flexWrap: "wrap" }}>
         { props.children }
     </div>
 }
@@ -65,7 +65,7 @@ export const StickyBar = props => {
 export const ClickThrough = props => {
     return <a style={{ textDecoration: "none"}} href={ props.src }>
         <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ fontSize: "12px", padding: "2px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginTop: "4px" }}>{ props.children }</p>
+            <p style={{ fontSize: "12px", padding: "2px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "bold", marginTop: "4px" }}>{ props.children }</p>
         </div>
     </a>
 }
