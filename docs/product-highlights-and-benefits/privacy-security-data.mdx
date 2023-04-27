@@ -4,25 +4,23 @@ description:  Let's jump in and touch on a bit of things regarding privacy, data
 ---
 
 # Privacy, Security, & Your Data
-From Day-1 of engineering on Pieces we had a first principle that everything is local first and built with speed, privacy, security, and offline-productivity in mind.
+From Day 1 of engineering Pieces, we've had a first principle that everything is local first and built with speed, privacy, security, and offline-productivity in mind.
 
-We also knew that our partners **operate in highly secure and sensitive environments**, and we needed to be prepared on the compliance side of things to also operate in such environments i.e. HIPPA, SOC2, FERPA/COPA, etc…. That being said - we can't tell you how happy we are that we have stayed true to this philosophy for cases just like yours!
+We also know that our partners **operate in highly secure and sensitive environments**, and we want to be prepared to operate in such environments, e.g., HIPPA, SOC 2, FERPA/COPA, etc. That being said - we can't tell you how happy we are that we have stayed true to this philosophy for cases just like yours!
 
 ## Where Snippets are Stored
-Completely local on your device and the following is a path + photo of what it looks like for my installation on MacOS:
-
+Your snippets are stored completely locally on your device. This is what the path looks like for an installation on MacOS:
 
 ```/Users/[YOUR-USERNAME]/Library/com.pieces.os/production/Pieces/assets.db```
 
-This is great because you can easily copy this directory to a flash drive and bring it to another computer ✅
+You can easily copy this directory to a flash drive and bring it to another computer. ✅
 
 ## Our Machine Learning Models
-All of our models can be completely local and offline (i.e. shipped within the applications binary & require no internet) as long as you opt out of blended processing.
+All of our ML models can be completely local and offline (i.e., they're shipped within the application's binary & require no internet) as long as you opt out of blended processing.
 
-If you have **not opted out of blended processing** then some of the models will offload computation to the cloud. A few of our models are **only** available in the cloud, but we are working on bringing them local.
+If you have **not opted out of blended processing,** then some of the models will offload computation to the cloud. A few of our models are **only** available in the cloud, but we are working on making them local.
 
-This table shows which models are available locally, and which will use cloud compute unless
-processing is set to local.
+This table shows which models are available locally and which will use cloud compute unless processing is set to local.
 | **Model**                      	| **Local** 	| **Blended** 	|
 |--------------------------------	|-----------	|-------------	|
 | Code vs Text                   	|      ✅    	|       ✅     	|
@@ -43,35 +41,34 @@ processing is set to local.
 | Title Generation               	|      ✅     	|       ✅      |
 
 
-Our ML models are not trained continuously meaning that they do not train on your data as you use the product!
+Our ML models are not trained continuously. They do not train on your data as you use the product!
 
 ## Saving Code Snippets in the Cloud
-The pieces cloud is entirely opt-in:
-- Authentication is managed by our enterprise-ready authentication partners at Auth0 (Now owned by Okta)
+The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (Now owned by Okta)
 
-Even when a user signs in they still do not have a cloud until they specifically connect it in settings:
+Even when a user signs in, they do not have a cloud until they specifically connect it in Settings.
 
-- If a user opts into the cloud, the data is only uploaded when something is shared:
-    > When you click the "Share" icon and create a sharable link, only then is the "Piece" uploaded & accessible.
+If a user opts into the cloud, the data is only uploaded when something is shared.
 
-Lastly - A note on cloud architecture for the things that are backed up:
-- There is no centralized Database. i.e. each user has their own micro-database
-- There is no centralized or shared servers
-  > Each user has their own Cloud Run instance, with their own unique subdomain & their own micro load balancer
+When you click the "Share" icon and create a sharable link, only then is the "Piece" uploaded & accessible.
 
-Every user's cloud scales up and down completely independent of other users & the cloud is only running available when a "Piece" is being access or backed up/updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed!
+Finally— A note on cloud architecture for the things that are backed up:
+- There is no centralized Database; each user has their own micro-database
+- There are no centralized or shared servers
+- Each user has their own Cloud Run instance, with their own unique subdomain & their own micro load balancer
+
+Every user's cloud scales up and down completely independent of other users. The cloud is only running when a "Piece" is being accessed, backed up, or updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed.
 
 ## Telemetry & Crash Data
-Most important thing is that all data collection is opt-out & we give all the control to our users.
+Most importantly, all data collection is opt-out & we give all the control to our users.
 
-Further - The data that we do collect is completely anonymous & highly secure (we take data very serious).
+The data that we do collect is completely anonymous & highly secure (we take data very seriously).
 
-You may ask
-> Why do we collect data?
+### Why do we collect data?
 
-Long story short is that we are a Series A stage startup and the data helps us to report growth and hopefully more funding 😅
+Long story short, we're a Series A stage startup and the data helps us to report growth and hopefully earn more funding.
 
-Here are some screenshot of Telemetry Opt-Outs from the Pieces products:
+Here are some screenshots of Telemetry Opt-Outs from the Pieces products:
 
 #### Pieces for Developers Desktop App
 
@@ -81,7 +78,7 @@ Here are some screenshot of Telemetry Opt-Outs from the Pieces products:
 
 ![](/assets/intellij_telemetry.png)
 
-#### Pieces for VSCode
+#### Pieces for VS Code
 
 ![](/assets/vscode_telemetry.png)
 
@@ -89,4 +86,4 @@ Here are some screenshot of Telemetry Opt-Outs from the Pieces products:
 
 ![](/assets/chrome_telemetry.png)
 
-We know that was a lot 😄 but wanted to be detailed and hopefully answer your questions beyond expectations. We want to be super responsive and make this as easy for you as possible.
+If you have any other questions, please reach out! We want to be make choosing Pieces as easy for you as possible.
