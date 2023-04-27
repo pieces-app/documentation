@@ -79,6 +79,15 @@ export const GridFlexRow = props => {
     }}>{props.children}</div>;
 };
 
+export const GridFlexSpaceEvenlyRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
 export const Spacer = props => {
     return <div style={{height: "5px"}}></div>
 }
@@ -142,10 +151,10 @@ Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> p
 </GridFlexRow>
 
 ## Try all of our products
-<GridFlexRow>
+<GridFlexSpaceEvenlyRow>
     <a href="{{ links.website.pfd_desktop_install }}"><Image width="50%" src="/assets/pfd_logo.png" /></a>
     <a href="{{ links.extensions.chrome }}"><Image width="50%" src="/assets/chrome_logo.png" /></a>
     <a href="{{ links.extensions.jetbrains }}"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
     <a href="{{ links.extensions.vscode }}"><Image width="50%" src="/assets/vscode_logo.png" /></a>
     <a href="{{ links.extensions.edge }}"><Image width="50%" src="/assets/edge_logo.png" /></a>
-</GridFlexRow>
+</GridFlexSpaceEvenlyRow>
