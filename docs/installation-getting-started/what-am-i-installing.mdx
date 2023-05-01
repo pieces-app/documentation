@@ -3,12 +3,48 @@ title: Installation & Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
 ---
 
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} href={"https://pieces.app"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "black",
+                color: "white",
+                fontWeight: "500",
+                marginBottom: "8px",
+                marginTop: "25px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+<link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
+
 # What am I installing?
+
+![](/assets/what_am_installing.png)
+
 When you download Pieces for Developers from our website, you'll get two applications: Pieces for Developers | OS Server and the Pieces for Developers | Flagship Desktop App. 
 
-<a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | OS Server</a> is our background service that runs offline and on-device. It's required to enable:
+### <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | OS Server</a>
+
+is our background service that runs offline and on-device. It's required to enable:
 - Individual products in the Pieces for Developers Suite to communicate
 - Local, Private, and Secure Machine Learning Models
 - Real-Time Search and Suggestions
 
-## <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> is the _core Pieces for Developers experience_, fully loaded with 50+ features.
+### <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Desktop App</a>
+
+is our flagship desktop application. It's a visual GUI that gives you **the best** experience with your snippets allowing you to:
+- Navigate snippets visually through the carousel
+- Transform snippets from one language to another
+- Sort Snippets by suggestions
+- Describe a snippet to get a solution to an answer
+- Manage your custom cloud domain
+- and so much more!
+
+<InstallButton>Install Pieces for Developers</InstallButton>
+
+#### <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> is the _core Pieces for Developers experience_, fully loaded with 50+ features.
