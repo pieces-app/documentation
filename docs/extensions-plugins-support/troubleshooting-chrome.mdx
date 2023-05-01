@@ -50,13 +50,14 @@ export const GridFlexRow = props => {
 
 <Heading type="h1">Pieces Chrome Extension</Heading>
 
-<ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
+<GridFlexRow>
+    <InstallButton>Get the Chrome Extension</InstallButton>
+    <ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
+</GridFlexRow>
 
 Using the Pieces Chrome Extension in combination with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
 
 <Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-5_1_2023.GIF" />
-
-<InstallButton>Get the Chrome Extension</InstallButton>
 
 ## Where are my saved snippets stored?
 _The <a href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Chrome Extension in order for the extension to work properly._
