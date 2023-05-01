@@ -3,9 +3,30 @@ title: Troubleshooting the Pieces Chrome Extension
 description: Troubleshoot issues that you are having, or reach out to Pieces support to get assistance with the Pieces for Developers Chrome Extension.
 ---
 
-# Troubleshooting & Using the Pieces Chrome Extension
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} href={ "links.extensions.chrome" }>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "black",
+                color: "white",
+                fontWeight: "500",
+                marginBottom: "8px",
+                marginTop: "25px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
 
+# Pieces Chrome Extension
 Using the Pieces Chrome Extension in combination with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
+
+<Image zoom src="/assets/chrome_extension" />
+
+<InstallButton>Get the Chrome Extension</InstallButton>
+
 
 ## Where are my saved snippets stored?
 _The <a href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Chrome Extension in order for the extension to work properly._
@@ -16,6 +37,9 @@ _The <a href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be 
 To view and reuse your snippets, just open the Pieces desktop app and scroll through the carousel.
 
 ## What does the share button do?
+
+![Pieces Chrome Plugin inside of Chrome shows these share buttons to send a sharable link.](/assets/chrome_share_button.png)
+
 When you click the Share button below a code block, Pieces generates a link that is specifically designed to share useful code with its context— it's automatically copied to your clipboard once it's generated.
 
 This means that instead of copying code and pasting it into a message, you can create a Pieces link that shares the code and maintains formatting, syntax highlighting and relevant tags. The recipient will also get the title, description, related links and other context about the snippet.
