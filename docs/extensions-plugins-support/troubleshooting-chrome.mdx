@@ -37,6 +37,7 @@ export const ReleasePill = props => {
         </div>
     </a>
 }
+
 export const GridFlexRow = props => {
     return <div style={{
         display: 'flex',
@@ -46,10 +47,8 @@ export const GridFlexRow = props => {
     }}>{props.children}</div>;
 };
 
-<GridFlexRow>
-    <Image src="/assets/chrome_logo.png" />
-    <Heading type="h1">Pieces Chrome Extension</Heading>
-</GridFlexRow>
+
+<Heading type="h1">Pieces Chrome Extension</Heading>
 
 <ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
 
