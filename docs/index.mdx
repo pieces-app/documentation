@@ -4,45 +4,92 @@ description: Learn how to best use and optimize your workflow with Pieces for De
 ---
 
 export const ReleasePill = props => {
-    return <a style={{ textDecoration: "none" }} href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
-        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "2px 20px", borderRadius: "20px", border: "1px solid #f3f5f6", backgroundColor: "#f3f4f5", color: "black", fontWeight: "500", marginTop: "8px", marginBottom: "15px" }}>{ props.children }</p>
+    return <a style={{textDecoration: "none"}}
+              href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "2px 20px",
+                borderRadius: "20px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "#f3f4f5",
+                color: "black",
+                fontWeight: "500",
+                marginTop: "8px",
+                marginBottom: "15px"
+            }}>{props.children}</p>
         </div>
     </a>
 }
 
 export const QuoteCallout = props => {
-    return <div style={{ padding: "5px 30px", borderRadius: "20px" }}>
-        <p><strong>" </strong><i>{ props.children }</i><strong> "</strong></p>
+    return <div style={{padding: "5px 30px", borderRadius: "20px"}}>
+        <p><strong>" </strong><i>{props.children}</i><strong> "</strong></p>
     </div>
 }
 
 export const InstallButton = props => {
-    return <a style={{ textDecoration: "none"}} href={"https://pieces.app"}>
-        <div style={{ maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{ padding: "8px 20px", borderRadius: "8px", border: "1px solid #f3f5f6", backgroundColor: "black", color: "white", fontWeight: "500", marginBottom: "8px", marginTop: "25px"}}>{ props.children }</p>
+    return <a style={{textDecoration: "none"}} href={"https://pieces.app"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "black",
+                color: "white",
+                fontWeight: "500",
+                marginBottom: "8px",
+                marginTop: "25px"
+            }}>{props.children}</p>
         </div>
     </a>
 }
 
 export const JumpButtons = props => {
-    return <a style={{ textDecoration: "none", marginRight: "18px" }} href={ props.src }>
-        <div style={{ maxWidth: "275px", minWidth: "150px", textAlign: "center" }}>
-            <p style={{ backgroundColor: "#f3f4f5", color: "black", marginTop: "20px", marginBottom: "15px", padding: "5px 20px", borderRadius: "20px", border: "1px solid #636363", fontWeight: "500" }}>{ props.children }</p>
+    return <a style={{textDecoration: "none", marginRight: "18px"}} href={props.src}>
+        <div style={{maxWidth: "275px", minWidth: "150px", textAlign: "center"}}>
+            <p style={{
+                backgroundColor: "#f3f4f5",
+                color: "black",
+                marginTop: "20px",
+                marginBottom: "15px",
+                padding: "5px 20px",
+                borderRadius: "20px",
+                border: "1px solid #636363",
+                fontWeight: "500"
+            }}>{props.children}</p>
         </div>
     </a>
 }
 
 export const PillsFlexColumn = props => {
-    return <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
 };
 
 export const GridFlexRow = props => {
-    return <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', flexWrap: "wrap" }}>{props.children}</div>;
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const GridFlexSpaceEvenlyRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
 };
 
 export const Spacer = props => {
-    return <div style={{ height: "5px"}}></div>
+    return <div style={{height: "5px"}}></div>
 }
 
 export const StickySpacer = props => {
@@ -51,8 +98,8 @@ export const StickySpacer = props => {
 
 export const HeaderImage = props => {
     return <picture>
-        <source srcSet={ props.srcset } media="(prefers-color-scheme: dark)"  />
-        <img src={ props.src } />
+        <source srcSet={props.srcset} media="(prefers-color-scheme: dark)"/>
+        <img src={props.src}/>
     </picture>
 }
 
@@ -81,7 +128,8 @@ export const ClickThrough = props => {
 
 # Wiki & Documentation Center
 
-<HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png" srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
+<HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png"
+             srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 
@@ -107,26 +155,26 @@ Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> p
 
 
 
-<QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.</QuoteCallout>
+<QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company
+    are secure and continuing to grow.</QuoteCallout>
 
 Our <a href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a> provides users a first-in-kind feature set that ambitiously **_augments your development workflows_**. Choose a topic from the list below to get started with Pieces:
 
 <GridFlexRow>
     <JumpButtons src="{{ links.internal.product_highlights.save_materials }}">Save a Snippet</JumpButtons>
-    <JumpButtons src="{{ links.internal.personalized_link_sharing.single_click_link_sharing }}">Share a Snippet</JumpButtons>
+    <JumpButtons src="{{ links.internal.personalized_link_sharing.single_click_link_sharing }}">Share a
+        Snippet</JumpButtons>
     <JumpButtons src="{{ links.internal.product_highlights.import_gists }}">Import Snippets from GitHub</JumpButtons>
-    <JumpButtons src="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Local Snippet Discovery</JumpButtons>
+    <JumpButtons src="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Local Snippet
+        Discovery</JumpButtons>
     <JumpButtons src="{{ links.internal.faqs }}">Frequently Asked Questions</JumpButtons>
 </GridFlexRow>
 
 ## Try all of our products
-* Download the <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Desktop App</a>
-* Download the <a href="{{ links.extensions.chrome }}">Pieces for Developers | Chrome Extension</a>
-* Download the <a href="{{ links.extensions.jetbrains }}">Pieces for Developers | JetBrains Plugin</a>
-* Download the <a href="{{ links.extensions.vscode }}">Pieces for Developers | Visual Studio Code Extension</a>
-* Download the <a href="{{ links.extensions.edge }}">Pieces for Developers | Edge Addon</a>
-
-## Other Resources
-* <a href="{{ links.videos.youtube_channel }}">Youtube Channel</a>
-* <a href="{{ links.website.home }}">Website Home</a>
-* <a href="{{ links.website.release_notes }}">Release Notes</a>
+<GridFlexSpaceEvenlyRow>
+    <a href="{{ links.website.pfd_desktop_install }}"><Image width="50%" src="/assets/pfd_logo.png" /></a>
+    <a href="{{ links.extensions.chrome }}"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="{{ links.extensions.jetbrains }}"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="{{ links.extensions.vscode }}"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="{{ links.extensions.edge }}"><Image width="50%" src="/assets/edge_logo.png" /></a>
+</GridFlexSpaceEvenlyRow>
