@@ -72,7 +72,7 @@
     ]]
   ],
   "variables": {
-    "version": {
+    "versions": {
       "pfd": "v1.13.5",
       "chrome": "v2.6.0",
       "jetbrains": "v5.2.0",
