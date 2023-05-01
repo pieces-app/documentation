@@ -49,16 +49,17 @@ export const ReleasePill = props => {
 export const JumpButtons = props => {
     return <a style={{textDecoration: "none", marginRight: "18px"}} href={props.src}>
         <div style={{maxWidth: "275px", minWidth: "150px", textAlign: "center"}}>
-            <p style={{
-                backgroundColor: "#f3f4f5",
-                color: "black",
-                marginTop: "20px",
-                marginBottom: "15px",
-                padding: "5px 20px",
-                borderRadius: "20px",
-                border: "1px solid #636363",
-                fontWeight: "500"
-            }}>{props.children}</p>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
         </div>
     </a>
 }
