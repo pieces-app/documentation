@@ -3,24 +3,6 @@ title: Pieces for Developers | Wiki & Docs
 description: Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
 ---
 
-export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}}
-              href={"https://code.pieces.app/updates/pieces-developers-ai-transformations"}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "2px 20px",
-                borderRadius: "20px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "#f3f4f5",
-                color: "black",
-                fontWeight: "500",
-                marginTop: "8px",
-                marginBottom: "15px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
 export const QuoteCallout = props => {
     return <div style={{padding: "5px 30px", borderRadius: "20px"}}>
         <p><strong>" </strong><i>{props.children}</i><strong> "</strong></p>
@@ -28,18 +10,38 @@ export const QuoteCallout = props => {
 }
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} href={"https://pieces.app"}>
+    return <a style={{textDecoration: "none"}} href="{{ links.extensions.chrome }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
                 borderRadius: "8px",
                 border: "1px solid #f3f5f6",
-                backgroundColor: "black",
                 color: "white",
                 fontWeight: "500",
+                background: "black",
                 marginBottom: "8px",
-                marginTop: "25px"
+                marginTop: "3px",
+                marginRight: "16px"
             }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}}
+              href={"https://code.pieces.app/updates"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
         </div>
     </a>
 }
