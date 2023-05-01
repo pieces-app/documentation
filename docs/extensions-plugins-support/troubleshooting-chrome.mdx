@@ -48,8 +48,14 @@ export const GridFlexRow = props => {
     }}>{props.children}</div>;
 };
 
+<Image marginLeft="0px" height="30%" marginRight="12px" src="/assets/chrome_logo.png" />
+
+export const HeaderLogoImage = props => {
+    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ props.src }/>
+}
+
 <GridFlexRow>
-    <Image marginLeft="0px" height="30%" marginRight="12px" src="/assets/chrome_logo.png" />
+    <HeaderLogoImage src="/assets/chrome_logo.png"></HeaderLogoImage>
     <h1>Pieces Chrome Extension</h1>
 </GridFlexRow>
 
