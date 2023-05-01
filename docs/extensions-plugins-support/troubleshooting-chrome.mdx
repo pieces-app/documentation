@@ -20,7 +20,28 @@ export const InstallButton = props => {
     </a>
 }
 
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}}
+              href={"code.pieces.app/updates"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "2px 20px",
+                borderRadius: "20px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "#f3f4f5",
+                color: "black",
+                fontWeight: "500",
+                marginTop: "8px",
+                marginBottom: "15px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
 # Pieces Chrome Extension
+
+<ReleasePill children="{{ versions.chrome }}"></ReleasePill>
+
 Using the Pieces Chrome Extension in combination with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
 
 <Image zoom src="/assets/chrome_extension.png" />
@@ -48,7 +69,7 @@ This means that instead of copying code and pasting it into a message, you can c
 There are a few reasons why the Pieces buttons may not be appearing:
 
 1. **Pieces OS isn't running.**
-    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on MacOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
+    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
     - If you need to download and install Pieces OS, please <a href="{{ links.website.home }}">visit this link</a>.
 
 2. **You disabled the Pieces buttons on that website.**
@@ -59,7 +80,7 @@ There are a few reasons why the Pieces buttons may not be appearing:
 3. **This website doesn't have detectable code**
     - The code on this site might be embedded in an iframe, or it might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-If none of the above fix your issue, please <a href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
+    If none of the above fix your issue, please <a href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
 
 ## How do I remove the Pieces buttons from a site?
 If you don't want the Pieces buttons to appear on a certain website, you can disable the Pieces buttons for that site in the extension settings.

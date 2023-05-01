@@ -72,6 +72,13 @@
     ]]
   ],
   "variables": {
+    "version": {
+      "pfd": "v1.13.5",
+      "chrome": "v2.6.0",
+      "jetbrains": "v5.2.0",
+      "vscode": "v0.6.0",
+      "pieces_os": "v4.2.2"
+    },
     "links": {
       "website": {
         "home": "https://pieces.app",
