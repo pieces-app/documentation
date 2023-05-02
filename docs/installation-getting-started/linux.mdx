@@ -3,31 +3,53 @@ title: Getting Started with Pieces for Developers on Linux
 description: Learn how to install Pieces for Developers via Snapcraft or by using Shell/Bash commands on your Linux distro.
 ---
 
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}}
+              href={"links.installation.ubuntu_versions"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "2px 20px",
+                borderRadius: "20px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "#f3f4f5",
+                color: "black",
+                fontWeight: "500",
+                marginTop: "8px",
+                marginBottom: "15px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+<link rel="canonical" href="https://docs.pieces.app/installation-getting-started/linux" />
+
 # Getting Started with Pieces for Developers on Linux
-> Compatible with <a href="{{ links.installation.ubuntu_versions }}">Ubuntu 18 or higher</a> and currently in Beta
+<ReleasePill>Compatible with Ubuntu 18 or higher and currently in Beta</ReleasePill>
 
 ## Steps to Install
 
 1. From the Snapcraft Store, install the Pieces for Developers | OS Server Snap Package, or run the following in your terminal:
-```shell
-$ sudo snap install pieces-os
-```
+    ```shell
+    $ sudo snap install pieces-os
+    ```
 
 2. Enable Offline and On-Device Local Machine Learning by running the following command in the terminal:
-```shell
-$ sudo snap connect pieces-os:dotnet-runtime-aspnetcore
-```
-_This command sets up and configures local application interfaces to properly load our Sandboxed and Secure Machine Learning Models_
+    ```shell
+    $ sudo snap connect pieces-os:dotnet-runtime-aspnetcore
+    ```
+
+    - This command sets up and configures local application interfaces to properly load our Sand-boxed and Secure Machine Learning Models.
 
 3. Launch Pieces for Developers | OS Server by running the following command in your terminal:
-```shell
-$ pieces-os
-```
+    ```shell
+    $ pieces-os
+    ```
 
 4. Launch the <a href="{{ links.website.home }}">Pieces for Developers | Flagship Desktop App</a> by running the following command in your terminal:
-```shell
-$ pieces-for-developers
-```
+    ```shell
+    $ pieces-for-developers
+    ```
 
-### Watch our <a href="{{ links.videos.getting_started_desktop }}">Getting Started with Pieces for Developers | Desktop App</a> video on YouTube
+#### Watch our <a href="{{ links.videos.getting_started_desktop }}">Getting Started with Pieces for Developers | Desktop App</a> video on YouTube
+
 [![Getting Started ⎸ Pieces for Developers | Desktop App](https://storage.googleapis.com/pieces_static_resources/pfd_wiki/MEET_PIECES.png)](https://youtu.be/bczfW9wk8Bo)
