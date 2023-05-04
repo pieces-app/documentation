@@ -4,7 +4,7 @@ description: Troubleshoot issues or reach out to Pieces Support for assistance w
 ---
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} href="{{ links.extensions.vscode }}">
+    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.vscode }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -22,7 +22,7 @@ export const InstallButton = props => {
 }
 
 export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}}
+    return <a style={{textDecoration: "none"}} target="_blank"
               href={"https://code.pieces.app/updates"}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
