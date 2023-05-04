@@ -3,20 +3,61 @@ title: Getting Started with Pieces for Developers on macOS
 description: Learn how to download, install, and confirm your connected applications on macOS to start using Pieces for Developers
 ---
 
+export const ReleasePill = props => {
+    return <a style={{ textDecoration: "none" }}
+              href="{{ links.installation.macos_catalina }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "2px 20px",
+                borderRadius: "20px",
+                border: "1px solid #f3f5f6",
+                backgroundColor: "#f3f4f5",
+                color: "black",
+                fontWeight: "500",
+                marginTop: "8px",
+                marginBottom: "15px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} href="{{ links.installation.pieces_pkg }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                color: "white",
+                fontWeight: "500",
+                background: "black",
+                marginBottom: "8px",
+                marginTop: "3px",
+                marginRight: "16px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+<link rel="canonical" href="https://docs.pieces.app/installation-getting-started/macos" />
+
 # Getting Started with Pieces for Developers on macOS
-> Compatible with <a href="{{ links.installation.macos_catalina }}">macOS 10.15 Catalina or higher</a>
+<ReleasePill>Compatible with macOS 10.15 Catalina or higher</ReleasePill>
+
+<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/INSTALL_MACOS" />
+
+<InstallButton>Download Pieces Package</InstallButton>
 
 ## Steps to Install
 1. Download the Pieces for Developers Package Installer and proceed with the installation.
-
-This will install the <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> as well as **Pieces for Developers | OS Server**.
-
-![Installing Pieces for Developers from the Pieces website.](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/INSTALL_MACOS)
+    - This will install the <a href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> as well as **Pieces for Developers | OS Server**.
 
 2. Make sure **Pieces for Developers | OS Server** is running in the background.
+    - Following the installation, ensure that the Pieces logo appears in your menu bar.
+
 3. Launch the <a href="{{ links.installation.localhost }}">Pieces for Developers | Desktop App</a>
+    - If you've already installed the <a href="{{ links.website.home }}">Pieces for Developers | Desktop App</a> and it's having trouble connecting to Pieces for Developers | OS Server, try these quick <a href="{{ links.internal.faqs }}">Troubleshooting Solutions</a>.
 
-If you've already installed the <a href="{{ links.website.home }}">Pieces for Developers | Desktop App</a> and it's having trouble connecting to Pieces for Developers | OS Server, try these quick <a href="{{ links.internal.faqs }}">Troubleshooting Solutions</a>.
+#### Watch our <a href="{{ links.videos.getting_started_desktop }}">Getting Started with Pieces for Developers | Desktop App</a> video on YouTube
 
-### Watch our <a href="{{ links.videos.getting_started_desktop }}">Getting Started with Pieces for Developers | Desktop App</a> video on YouTube
 [![Getting Started ⎸ Pieces for Developers | Desktop App](https://storage.googleapis.com/pieces_static_resources/pfd_wiki/MEET_PIECES.png)](https://youtu.be/bczfW9wk8Bo)

@@ -63,8 +63,7 @@
     ["Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
       ["Onboard New Developers", "/use-cases/onboard-new-developers"],
-      ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"],
-      ["Take Back Your Time", "/use-cases/take-back-your-time"]
+      ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"]
     ]],
     ["Community & More", [
       ["Frequently Asked Questions", "/faq"],
@@ -72,6 +71,14 @@
     ]]
   ],
   "variables": {
+    "versions": {
+      "pfd": "v1.13.5",
+      "chrome": "v2.6.0",
+      "jetbrains": "v5.2.0",
+      "vscode": "v0.6.0",
+      "pieces_os": "v4.2.2",
+      "edge": "v2.5.3"
+    },
     "links": {
       "website": {
         "home": "https://pieces.app",
