@@ -2,8 +2,64 @@
 title: Troubleshooting the Pieces Edge Addon
 description: Troubleshoot issues that you are having, or reach out to Pieces support to get assistance with the Pieces for Developers Chrome Extension.
 ---
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} href="{{ links.extensions.edge }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                color: "white",
+                fontWeight: "500",
+                background: "black",
+                marginBottom: "8px",
+                marginTop: "3px",
+                marginRight: "16px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
 
-# Troubleshooting & Using the Pieces Edge Addon
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}}
+              href={"https://code.pieces.app/updates"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const GridFlexRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const HeaderLogoImage = props => {
+    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/edge_logo.png" }/>
+}
+
+<GridFlexRow>
+    <h1>Pieces Edge Addon</h1>
+</GridFlexRow>
+
+<GridFlexRow>
+    <InstallButton>Get the Edge Addon</InstallButton>
+    <ReleasePill children="Current Version: {{ versions.edge }}"></ReleasePill>
+</GridFlexRow>
 
 Using the Pieces Edge Addon in combination with the Pieces Desktop App makes saving code easy from any location you interact with code on the web.
 
