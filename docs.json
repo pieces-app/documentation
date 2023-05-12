@@ -52,7 +52,8 @@
       ["Workflow Activity", "/features/workflow-activity"],
       ["Manage Saved Materials", "/features/managing-saved-materials"],
       ["Creation & Generation", "/features/creation-and-generation"],
-      ["Transforming Snippets", "/features/transforming-snippets"]
+      ["Transforming Snippets", "/features/transforming-snippets"],
+      ["Code Completion", "/features/code-completion"]
     ]],
     ["Extensions & Plugins Support", [
       ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
