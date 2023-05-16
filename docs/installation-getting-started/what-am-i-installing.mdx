@@ -26,7 +26,31 @@ export const InstallButton = props => {
 
 ![](/assets/what_am_installing.png)
 
-<InstallButton>Install Pieces for Developers</InstallButton>
+<Tabs
+    defaultValue={"windows"}
+    values={[
+        {label: 'MacOS', value: 'macos'},
+        {label: 'Windows', value: 'windows'},
+        {label: 'Linux', value: 'linux'}
+    ]}
+>
+    <TabItem value="macos">
+        <p>Compatible with macOS 10.15 (Catalina) and higher</p>
+        <InstallButton
+            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for macOS</InstallButton>
+    </TabItem>
+    <TabItem value="windows">
+        <p>Compatible with Windows 10 version 1809 and higher</p>
+        <InstallButton
+            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for Windows</InstallButton>
+    </TabItem>
+    <TabItem value="linux">
+        <p>Get it on the Snap Store below</p>
+        <InstallButton src="https://snapcraft.io/pieces-for-developers">Download Pieces for Developers</InstallButton>
+        <InstallButton src="https://snapcraft.io/pieces-os">Download Pieces OS</InstallButton>
+    </TabItem>
+</Tabs>
+
 
 When you download Pieces for Developers from our website, you'll get two applications: Pieces for Developers | OS Server and the Pieces for Developers | Flagship Desktop App. 
 
