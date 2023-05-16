@@ -53,6 +53,10 @@ export const HeaderLogoImage = props => {
     return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/edge_logo.png" }/>
 }
 
+export const Spacer = props => {
+    return <div style={{ height: "100px"}}></div>
+};
+
 
 <GridFlexRow>
     <h1>Pieces Microsoft Teams App</h1>
@@ -90,7 +94,7 @@ If you have any questions or need further assistance, please reach out to our de
 
 ![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/MICROSOFT_TEAMS/WINDOWS/SHARE_TO_TEAMS/16X9/PIECES_FOR_DEVELOPERS-MICROSOFT_TEAMS-SHARE_TO_TEAMS-WINDOWS-16X9-5_15_2023.GIF)
 
-## Features
+<Spacer></Spacer>
 
 Please make sure your Pieces OS is updated to the latest version; you need to be on version 4.2.3 or newer to access all of these capabilities in Teams. Remember: Make sure you’re signed in to Teams and Pieces using the same email to connect the two apps.
 
@@ -104,6 +108,10 @@ Real-time synchronization occurs when logged in to Pieces with the same email us
 
 Want to enable the bot in multiple Chats and Teams? Simply return to the app store listing and add Pieces to the desired Chat or Team to enable the bot.
 
+<Spacer></Spacer>
+
+## Features
+
 ### @Pieces Save
 
 Saving a snippet to Pieces can be done in two easy ways:
@@ -113,11 +121,15 @@ Saving a snippet to Pieces can be done in two easy ways:
 
 Both actions save the message or code attachments to Pieces for Developers where they are automatically enriched with valuable metadata.
 
+<Spacer></Spacer>
+
 ### @Pieces Discover
 
 ![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/DESKTOP/MACOS/SNIPPET_DISCOVERY/16X9/PIECES_FOR_DEVELOPERS-DESKTOP-SNIPPET_DISCOVERY-MACOS-16X9-5_15_2023.GIF)
 
 Have you tried Snippet Discovery in the Pieces Desktop App? Try this message command to experience that magic in Teams. Pieces will comb through your desired chat or team, identify messages with code, and save them to the Pieces Desktop App.
+
+<Spacer></Spacer>
 
 ### @Pieces Enrich
 
@@ -125,17 +137,23 @@ Have you tried Snippet Discovery in the Pieces Desktop App? Try this message com
 
 This command will select the previous message (assuming it’s a code snippet) and enrich it with AI-powered metadata, like related links, related people, titles, language classifications, and more! It’s a simple way to learn more about your code without leaving Teams.
 
+<Spacer></Spacer>
+
 ### @Pieces Extract
 
 ![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/DESKTOP/MACOS/OCR/16X9/PIECES_FOR_DEVELOPERS-DESKTOP-OCR-MACOS-16X9-5_15_2023.GIF)
 
 If you’ve just sent an image that contains code, this command is for you. It will select the previous message, extract code from the image with our code-specific OCR, and enrich the extracted code with the same AI-powered metadata as above. While this command only works with image files, it’s still an incredibly powerful function in Teams.
 
+<Spacer></Spacer>
+
 ### @Pieces Unfurl
 
 ![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/MICROSOFT_TEAMS/WINDOWS/LINK_SHARING/16X9/PIECES_FOR_DEVELOPERS-MICROSOFT_TEAMS-LINK_SHARING-WINDOWS-16X9-5_15_2023.GIF)
 
 If you’ve sent a Pieces-generated shareable link, this command will unfurl it and display the code within a chat or channel with a convenient save button that will capture additional Microsoft Teams context.
+
+<Spacer></Spacer>
 
 ### @Pieces Help & @Pieces Hi
 
@@ -145,6 +163,8 @@ Need a little help with Pieces for Microsoft Teams? Both the ‘Help” & ‘Hi�
 
 **Note: All message commands skip messages that include @Pieces commands and messages from the Pieces bot. This enables you to retry a message command if a failure occurs.**
 
+<Spacer></Spacer>
+
 ### Where are my saved snippets stored?
 
 _The <a href="{{ links.installation.pieces_suite_manager }}">Pieces Suite</a> must be downloaded and installed separately from the Microsoft Teams App in order for the extension to work properly._
@@ -153,6 +173,8 @@ When you save code snippets with Pieces, they are stored locally in the Pieces d
 When you save a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a title, a description, and more.
 
 To view and reuse your snippets, just open the Pieces Desktop App!
+
+<Spacer></Spacer>
 
 ### Help & Support
 
