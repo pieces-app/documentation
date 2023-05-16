@@ -20,6 +20,15 @@ export const InstallButton = props => {
     </a>
 }
 
+export const GridFlexRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
 
 # What am I installing?
@@ -29,7 +38,7 @@ export const InstallButton = props => {
 <Tabs
     defaultValue={"windows"}
     values={[
-        {label: 'MacOS', value: 'macos'},
+        {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
         {label: 'Linux', value: 'linux'}
     ]}
@@ -46,8 +55,10 @@ export const InstallButton = props => {
     </TabItem>
     <TabItem value="linux">
         <p>Get it on the Snap Store below</p>
-        <InstallButton src="https://snapcraft.io/pieces-for-developers">Download Pieces for Developers</InstallButton>
-        <InstallButton src="https://snapcraft.io/pieces-os">Download Pieces OS</InstallButton>
+        <GridFlexRow>
+            <InstallButton src="https://snapcraft.io/pieces-for-developers">Download Pieces for Developers</InstallButton>
+            <InstallButton src="https://snapcraft.io/pieces-os">Download Pieces OS</InstallButton>
+        </GridFlexRow>
     </TabItem>
 </Tabs>
 
