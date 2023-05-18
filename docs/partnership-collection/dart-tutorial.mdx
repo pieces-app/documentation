@@ -10,9 +10,9 @@ For each corresponding page. **As you approach a divider**, that indicates a new
 
 ## Links Under Snippets
 
-<Accordion defaultOpen title="Convert String to Int in Dart">
+<Accordion title="Convert String to Int in Dart | /dart-how-to/convert-string-to-int-in-dart/">
 
-    [Convert String to Int](https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/)
+    Link to Page: [Convert String to Int](https://dart-tutorial.com/dart-how-to/convert-string-to-int-in-dart/)
 
     ```dart title="Convert String to Int in Dart"
     int.parse("String");
@@ -79,6 +79,657 @@ For each corresponding page. **As you approach a divider**, that indicates a new
     [Sharable Link for Code](#)
 
 </Accordion>
+
+<Accordion title="Generate Random Number in Dart | /dart-how-to/generate-random-number-in-dart/">
+
+    Link to Page: [Convert String to Int](https://dart-tutorial.com/dart-how-to/generate-random-number-in-dart/)
+
+    ```dart title="How To Generate Random Numbers In Dart"
+    import 'dart:math';
+    void main()
+    {
+        Random random = new Random();
+        int randomNumber = random.nextInt(10); // from 0 to 9 included
+        print("Generated Random Number Between 0 to 9: $randomNumber");
+
+        int randomNumber2 = random.nextInt(10)+1; // from 1 to 10 included
+        print("Generated Random Number Between 1 to 10: $randomNumber2");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Generate Random Number Between Any Number"
+    min + Random().nextInt((max + 1) - min);
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example: Random Number In Dart Between 10 - 20."
+    import 'dart:math';
+    void main()
+    {
+
+        int min = 10;
+        int max = 20;
+
+        int randomnum = min + Random().nextInt((max + 1) - min);
+
+        print("Generated Random number between $min and $max is: $randomnum");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+</Accordion>
+
+<Accordion title="DateTime in Dart | /useful-information/date-time-in-dart/">
+
+    Link to Page: [Convert String to Int](https://dart-tutorial.com/useful-information/date-time-in-dart/)
+
+    ```dart title="How To Get Date And Time"
+    void main() {
+    print(DateTime.now());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Get Year, Month, Day Of Datetime In Dart"
+    void main() {
+        DateTime datetime = DateTime.now();
+        print("Year is " + datetime.year.toString());
+        print("Month is " + datetime.month.toString());
+        print("Day is ${datetime.day}"); // If you don't want to use .toString
+        print("Hour is " + datetime.hour.toString());
+        print("Minutes is " + datetime.minute.toString());
+        print("Second is " + datetime.second.toString());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="How To Convert Datetime To String In Dart"
+    void main() {
+    String datetime = DateTime.now().toString();
+    print(datetime);
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="How To Convert String To DateTime"
+    void main() {
+        String myDateInString = "2022-05-01";
+        DateTime myConvertedDate = DateTime.parse(myDateInString);
+        print("Year is " + myConvertedDate.year.toString());
+        print("Month is " + myConvertedDate.month.toString());
+        print("Day is " + myConvertedDate.day.toString());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example Add Date In Dart"
+    void main() {
+    DateTime myBirthday = DateTime.parse("1997-05-14");
+    myBirthday = myBirthday.add(Duration(days: 1));
+    print("Year is " + myBirthday.year.toString());
+    print("Month is " + myBirthday.month.toString());
+    print("Day is " + myBirthday.day.toString());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example Subtract Date In Dart"
+    void main() {
+    DateTime myBirthday = DateTime.parse("1997-05-14");
+    myBirthday = myBirthday.subtract(Duration(days: 1));
+    print("Year is " + myBirthday.year.toString());
+    print("Month is " + myBirthday.month.toString());
+    print("Day is " + myBirthday.day.toString());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Find Difference Between Two Dates In Dart"
+    void main() {
+    DateTime myBirthday = DateTime.parse("1997-05-14");
+    DateTime today = DateTime.now();
+    Duration diff = today.difference(myBirthday);
+    print("Difference in days: " + diff.inDays.toString());
+    print("Difference in hours: " + diff.inHours.toString());
+    print("Difference in minutes: " + diff.inMinutes.toString());
+    print("Difference in seconds: " + diff.inSeconds.toString());
+    print("Difference in milliseconds: " + diff.inMilliseconds.toString());
+    print("Difference in microseconds: " + diff.inMicroseconds.toString());
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="DateTime Comparison Methods"
+    void main() {
+    DateTime myBirthday = DateTime.parse("1997-05-14");
+    DateTime today = DateTime.now();
+
+    if (myBirthday.isBefore(today)) {
+        print("My Birthday is before today.");
+    } else if (myBirthday.isAfter(today)) {
+        print("My Birthday is after today.");
+    } else if (myBirthday.isAtSameMomentAs(today)) {
+        print("My Birthday date and today's date is same.");
+    }
+    }
+    ```
+
+    **You have a typo in the word _comparison_ on this page**
+
+    [Sharable Link for Code](#)
+
+</Accordion>
+
+<Accordion title="Switch Case in Dart | /conditions-and-loops/switch-case-in-dart/">
+
+    Link to Page: [Switch Case In Dart](https://dart-tutorial.com/conditions-and-loops/switch-case-in-dart/)
+
+    ```dart title="Switch Case in Dart"
+    switch(expression) {
+        case value1:
+            // statements
+            break;
+        case value2:
+            // statements
+            break;
+        case value3:
+            // statements
+            break;
+        default:
+            // default statements
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example Using If Else If"
+    void main(){
+    var dayOfWeek = 5;
+    if (dayOfWeek == 1) {
+        print("Day is Sunday.");
+    }
+    else if (dayOfWeek == 2) {
+        print("Day is Monday.");
+    }
+    else if (dayOfWeek == 3) {
+        print("Day is Tuesday.");
+    }
+    else if (dayOfWeek == 4) {
+        print("Day is Wednesday.");
+    }
+    else if (dayOfWeek == 5) {
+        print("Day is Thursday.");
+    }
+    else if (dayOfWeek == 6) {
+        print("Day is Friday.");
+    }
+    else if (dayOfWeek == 7) {
+        print("Day is Saturday.");
+    } else{
+        print("Invalid Weekday.");
+      }
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example Of Switch Statement"
+    void main() {
+    var dayOfWeek = 5;
+    switch (dayOfWeek) {
+        case 1:
+            print("Day is Sunday.");
+            break;
+        case 2:
+            print("Day is Monday.");
+            break;
+        case 3:
+            print("Day is Tuesday.");
+            break;
+        case 4:
+            print("Day is Wednesday.");
+            break;
+        case 5:
+            print("Day is Thursday.");
+            break;
+        case 6:
+            print("Day is Friday.");
+            break;
+        case 7:
+            print("Day is Saturday.");
+            break;
+        default:
+            print("Invalid Weekday.");
+        break;
+        }
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Switch Case On Strings"
+    void main() {
+    const weather = "cloudy";
+
+    switch (weather) {
+        case "sunny":
+            print("Its a sunny day. Put sunscreen.");
+            break;
+        case "snowy":
+            print("Get your skis.");
+            break;
+        case "cloudy":
+        case "rainy":
+            print("Please bring umbrella.");
+            break;
+        default:
+            print("Sorry I am not familiar with such weather.");
+            break;
+        }
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Switch Case On Enum"
+    enum enum_name {
+    constant_value1,
+    constant_value2,
+    constant_value3
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example of Switch Using Enum In Dart"
+    // define enum outside main function
+    enum Weather{ sunny, snowy, cloudy, rainy}
+    // main method
+    void main() {
+    const weather = Weather.cloudy;
+
+    switch (weather) {
+    case Weather.sunny:
+            print("Its a sunny day. Put sunscreen.");
+            break;
+        case Weather.snowy:
+            print("Get your skis.");
+            break;
+        case Weather.rainy:
+        case Weather.cloudy:
+            print("Please bring umbrella.");
+            break;
+        default:
+            print("Sorry I am not familiar with such weather.");
+            break;
+        }
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+</Accordion>
+
+<Accordion title="Factory Constructor in Dart | /object-oriented-programming/factory-constructor-in-dart/">
+
+    Link to Page: [Switch Case In Dart](https://dart-tutorial.com/object-oriented-programming/factory-constructor-in-dart/)
+
+    ```dart title="Factory Constructor in Dart"
+    class ClassName {
+    factory ClassName() {
+        // TODO: return ClassName instance
+    }
+
+    factory ClassName.namedConstructor() {
+        // TODO: return ClassName instance
+        }
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 1: Without Factory Constructor"
+    class Area {
+    final int length;
+    final int breadth;
+    final int area;
+
+    // Initializer list
+    const Area(this.length, this.breadth) : area = length * breadth;
+    }
+
+    void main() {
+        Area area = Area(10, 20);
+        print("Area is: ${area.area}");
+
+    // notice that here is a negative value
+        Area area2 = Area(-10, 20);
+        print("Area is: ${area2.area}");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 2: With Factory Constructor"
+    class Area {
+    final int length;
+    final int breadth;
+    final int area;
+
+    // private constructor
+    const Area._internal(this.length, this.breadth) : area = length * breadth;
+
+    // Factory constructor
+    factory Area(int length, int breadth) {
+    if (length < 0 || breadth < 0) {
+        throw Exception("Length and breadth must be positive");
+    }
+    // redirect to private constructor
+        return Area._internal(length, breadth);
+        }
+    }
+
+    void main() {
+        // This works
+        Area area = Area(10, 20);
+        print("Area is: ${area.area}");
+
+        // notice that here is negative value
+        Area area2 = Area(-10, 20);
+        print("Area is: ${area2.area}");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 3: Factory Constructor In Dart"
+    class Person {
+    String firstName;
+    String lastName;
+
+    // constructor
+    Person(this.firstName, this.lastName);
+
+    // factory constructor Person.fromMap
+    factory Person.fromMap(Map<String, Object> map) {
+        final firstName = map['firstName'] as String;
+        final lastName = map['lastName'] as String;
+        return Person(firstName, lastName);
+      }
+    }
+
+    void main() {
+        // create a person object
+        final person = Person('John', 'Doe');
+
+        // create a person object from map
+        final person2 = Person.fromMap({'firstName': 'Harry', 'lastName': 'Potter'});
+
+        // print first and last name
+        print("From normal constructor: ${person.firstName} ${person.lastName}");
+        print("From factory constructor: ${person2.firstName} ${person2.lastName}");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 4: Factory Constructor In Dart"
+    // enum ShapeType
+    enum ShapeType { circle, rectangle }
+
+    // abstract class Shape
+    abstract class Shape {
+    // factory constructor
+    factory Shape(ShapeType type) {
+    switch (type) {
+        case ShapeType.circle:
+        return Circle();
+    case ShapeType.rectangle:
+        return Rectangle();
+    default:
+        throw 'Invalid shape type';
+      }
+    }
+        // method
+        void draw();
+    }
+
+    class Circle implements Shape {
+    // implement draw method
+    @override
+    void draw() {
+        print('Drawing circle');
+      }
+    }
+
+    class Rectangle implements Shape {
+    // implement draw method
+    @override
+    void draw() {
+        print('Drawing rectangle');
+      }
+    }
+
+    void main() {
+        // create Shape object
+        Shape shape = Shape(ShapeType.circle);
+        Shape shape2 = Shape(ShapeType.rectangle);
+        shape.draw();
+        shape2.draw();
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 5: Factory Constructor In Dart"
+    class Person {
+    // final fields
+    final String name;
+
+    // private constructor
+    Person._internal(this.name);
+
+    // static _cache field
+    static final Map<String, Person> _cache = <String, Person>{};
+
+    // factory constructor
+    factory Person(String name) {
+    if (_cache.containsKey(name)) {
+        return _cache[name]!;
+    } else {
+        final person = Person._internal(name);
+        _cache[name] = person;
+        return person;
+        }
+      }
+    }
+
+    void main() {
+        final person1 = Person('John');
+        final person2 = Person('Harry');
+        final person3 = Person('John');
+
+        // hashcode of person1 and person3 are same
+        print("Person1 name is : ${person1.name} with hashcode ${person1.hashCode}");
+        print("Person2 name is : ${person2.name} with hashcode ${person2.hashCode}");
+        print("Person3 name is : ${person3.name} with hashcode ${person3.hashCode}");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 6: Singleton Using Factory Constructor"
+    // Singleton using dart factory
+    class Singleton {
+    // static variable
+        static final Singleton _instance = Singleton._internal();
+
+    // factory constructor
+        factory Singleton() {
+            return _instance;
+        }
+    // private constructor
+      Singleton._internal();
+    }
+
+    void main() {
+        Singleton obj1 = Singleton();
+        Singleton obj2 = Singleton();
+        print(obj1.hashCode);
+        print(obj2.hashCode);
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+</Accordion>
+
+<Accordion title="Late Keyword in Dart | /null-safety/late-keyword-in-dart/">
+
+    Link to Page: [Switch Case In Dart](https://dart-tutorial.com/null-safety/late-keyword-in-dart/)
+
+    ```dart title="Example 1: Late Keyword In Dart"
+    // late variable
+    late String name;
+
+    void main() {
+        // assigning value to late variable
+        name = "John";
+        print(name);
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 2: Late Keyword In Dart"
+    class Person {
+        // late variable
+        late String name;
+
+        void greet() {
+            print("Hello $name");
+        }
+    }
+
+    void main() {
+        Person person = Person();
+        // late variable is initialized here
+        person.name = "John";
+        person.greet();
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 3: Late Keyword In Dart"
+    // function
+    String provideCountry() {
+        print("Function is called");
+        return "USA";
+    }
+
+    void main() {
+        print("Starting");
+        // late variable
+        late String value = provideCountry();
+        print("End");
+        print(value);
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 4: Late Keyword In Class"
+    // Person class
+    class Person {
+    final int age;
+    final String name;
+    late String description = heavyComputation();
+
+    // constructor
+    Person(this.age, this.name) {
+        print("Constructor is called");
+    }
+    // method
+    String heavyComputation() {
+        print("heavyComputation is called");
+        return "Heavy Computation";
+      }
+    }
+
+    void main() {
+        // object of Person class
+        Person person = Person(10, "John");
+        print(person.name);
+        print(person.description);
+    }
+
+    // in this case, **heavyComputation** is called when we use **person.description**.
+    ```
+
+    **looks like some of your markdown leaked in up here ^**
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 5: Late Keyword In Class"
+    class Person {
+        // declaring late variables
+        late String fullName = _getFullName();
+        late String firstName = fullName.split(" ").first;
+        late String lastName = fullName.split(" ").last;
+
+        // method
+        String _getFullName() {
+            print("_getFullName is called");
+            return "John Doe";
+        }
+    }
+    // main method
+    void main() {
+        print("Start");
+        Person person = Person();
+        print("First Name: ${person.firstName}");
+        print("Last Name: ${person.lastName}");
+        print("Full Name: ${person.fullName}");
+        print("End");
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+    ```dart title="Example 6: Late Final Keyword In Dart"
+    // Student class
+    class Student {
+        // late final variable
+        late final String name;
+
+        // constructor
+        Student(this.name);
+    }
+
+    void main() {
+        // object of Student class
+        Student student = Student("John");
+        print(student.name);
+        student.name = "Doe"; // Error
+    }
+    ```
+
+    [Sharable Link for Code](#)
+
+</Accordion>
+
 
 
 
