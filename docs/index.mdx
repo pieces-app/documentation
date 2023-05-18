@@ -13,25 +13,25 @@ export const InstallButtonWindows = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
             { props.children }
-            <p>Get Pieces for Windows</p>
+            <p style={{marginLeft: "8px"}}>Get Pieces for Windows</p>
         </div>
     </a>
 }
 
 export const InstallButtonMac = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "wrap"}}>
             { props.children }
-            <p>Get Pieces for macOS</p>
+            <p style={{marginLeft: "8px"}}>Get Pieces for macOS</p>
         </div>
     </a>
 };
 
 export const InstallButtonLinux = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap", alignItems: "center" }}>
             { props.children }
-            <p>Get Pieces for Linux</p>
+            <p style={{marginLeft: "8px"}}>Get Pieces for Linux</p>
         </div>
     </a>
 }
