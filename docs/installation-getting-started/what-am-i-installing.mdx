@@ -4,7 +4,7 @@ description: Learn what is included in the installation files and find the right
 ---
 
 export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={"https://pieces.app"}>
+    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -46,17 +46,15 @@ export const GridFlexRow = props => {
     <TabItem value="macos">
         <p>Compatible with macOS 10.15 (Catalina) and higher</p>
         <InstallButton
-            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for macOS</InstallButton>
+            src="https://pieces.app/getting-started/macos" target="_blank">Download on macOS</InstallButton>
     </TabItem>
     <TabItem value="windows">
         <p>Compatible with Windows 10 version 1809 and higher</p>
         <InstallButton
-            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for Windows</InstallButton>
+            src="https://pieces.app/getting-started/windows" target="_blank">Download on Windows</InstallButton>
     </TabItem>
     <TabItem value="linux">
-        <p>Get it on the Snap Store below:</p>
-            <InstallButton src="https://snapcraft.io/pieces-for-developers">Download Pieces for Developers</InstallButton>
-            <InstallButton src="https://snapcraft.io/pieces-os">Download Pieces OS</InstallButton>
+            <InstallButton src="https://pieces.app/getting-started/linux" target="_blank">Download on Linux</InstallButton>
     </TabItem>
 </Tabs>
 

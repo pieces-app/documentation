@@ -10,7 +10,7 @@ export const QuoteCallout = props => {
 }
 
 export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href="{{ links.website.home }}">
+    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -91,7 +91,7 @@ export const GridFlexSpaceEvenlyRow = props => {
 };
 
 export const Spacer = props => {
-    return <div style={{height: "5px"}}></div>
+    return <div style={{height: "16px"}}></div>
 }
 
 export const HeaderImage = props => {
@@ -107,11 +107,14 @@ export const HeaderImage = props => {
 <HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_LM.png"
              srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WIKI_HEADER_DM.png"></HeaderImage>
 
-Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
+## Download Pieces for Developers Desktop App:
+
+<Spacer></Spacer>
 
 <GridFlexRow>
-    <InstallButton>Get Pieces for Developers</InstallButton>
-    <ReleasePill>Latest Release Details 🎉</ReleasePill>
+    <InstallButton src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
+    <InstallButton src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
+    <InstallButton src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
 </GridFlexRow>
 
 ## Some Quick Background Context
@@ -122,7 +125,7 @@ The debut release of our <a href="{{ links.website.home }}">Flagship Desktop App
 
 Effortlessly **save**, **enrich**, **search**, **share**, **reference**, and **reuse** code snippets, workflow context, and other useful developer resources.
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/HERO_GIF_SAVE_ENRICHED_SNIPPET_DESKTOP_APP_AND_VISUAL_STUDIO_CODE_EXTENSION" />
+<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/RIGHT-CLICK_SAVE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RIGHT-CLICK_SAVE-MACOS-16X9-5_18_2023.GIF" />
 
 
 ## Trusted by the World's Best Developers
