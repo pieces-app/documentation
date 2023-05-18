@@ -4,7 +4,7 @@ description: Learn what is included in the installation files and find the right
 ---
 
 export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={"https://pieces.app"}>
+    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
