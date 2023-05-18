@@ -30,6 +30,13 @@
     }
   ],
   "sidebar": [
+    ["Extensions & Plugins Support", [
+      ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
+      ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
+      ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
+      ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"],
+      ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
+    ]],
     ["Product Highlights & Benefits", [
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
       ["Saving Screenshots & OCR", "/product-highlights-and-benefits/saving-screenshots"],
@@ -54,13 +61,6 @@
       ["Creation & Generation", "/features/creation-and-generation"],
       ["Transforming Snippets", "/features/transforming-snippets"],
       ["Code Completion", "/features/code-completion"]
-    ]],
-    ["Extensions & Plugins Support", [
-      ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"],
-      ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
