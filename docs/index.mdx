@@ -11,7 +11,7 @@ export const QuoteCallout = props => {
 
 export const InstallButtonWindows = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center"}}>
             { props.children }
             <p style={{marginLeft: "8px"}}>Get Pieces for Windows</p>
         </div>
@@ -20,7 +20,7 @@ export const InstallButtonWindows = props => {
 
 export const InstallButtonMac = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "wrap"}}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center"}}>
             { props.children }
             <p style={{marginLeft: "8px"}}>Get Pieces for macOS</p>
         </div>
@@ -29,7 +29,7 @@ export const InstallButtonMac = props => {
 
 export const InstallButtonLinux = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap", alignItems: "center" }}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center" }}>
             { props.children }
             <p style={{marginLeft: "8px"}}>Get Pieces for Linux</p>
         </div>
