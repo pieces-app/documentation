@@ -11,18 +11,9 @@ export const QuoteCallout = props => {
 
 export const InstallButton = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "8px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+            <Image src={ props.image } />
+            <p>{props.children}</p>
         </div>
     </a>
 }
@@ -112,9 +103,9 @@ export const HeaderImage = props => {
 <Spacer></Spacer>
 
 <GridFlexRow>
-    <InstallButton src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
-    <InstallButton src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
-    <InstallButton src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
+    <InstallButton image="/assets/windows_logo_old.png" src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
+    <InstallButton image="/assets/mac_logo.png" src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
+    <InstallButton image="/assets/linux_logo.png" src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
 </GridFlexRow>
 
 ## Some Quick Background Context
