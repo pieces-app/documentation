@@ -10,7 +10,7 @@ export const QuoteCallout = props => {
 }
 
 export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href="{{ links.website.home }}">
+    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -91,7 +91,7 @@ export const GridFlexSpaceEvenlyRow = props => {
 };
 
 export const Spacer = props => {
-    return <div style={{height: "5px"}}></div>
+    return <div style={{height: "16px"}}></div>
 }
 
 export const HeaderImage = props => {
@@ -109,9 +109,15 @@ export const HeaderImage = props => {
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need:
 
+
+## Download Pieces for Developers Desktop App:
+
+<Spacer></Spacer>
+
 <GridFlexRow>
-    <InstallButton>Get Pieces for Developers</InstallButton>
-    <ReleasePill>Latest Release Details 🎉</ReleasePill>
+    <InstallButton src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
+    <InstallButton src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
+    <InstallButton src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
 </GridFlexRow>
 
 ## Some Quick Background Context
