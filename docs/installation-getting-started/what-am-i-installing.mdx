@@ -46,12 +46,12 @@ export const GridFlexRow = props => {
     <TabItem value="macos">
         <p>Compatible with macOS 10.15 (Catalina) and higher</p>
         <InstallButton
-            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for macOS</InstallButton>
+            src="{{ links.installation.pieces_pkg }}">Download for macOS</InstallButton>
     </TabItem>
     <TabItem value="windows">
         <p>Compatible with Windows 10 version 1809 and higher</p>
         <InstallButton
-            src="https://builds.pieces.app/stages/production/macos_packaging/pkg/download">Download for Windows</InstallButton>
+            src="{{ links.installation.pieces_suite_manager }}">Download for Windows</InstallButton>
     </TabItem>
     <TabItem value="linux">
         <p>Get it on the Snap Store below:</p>
