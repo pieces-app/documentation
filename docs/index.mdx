@@ -9,11 +9,29 @@ export const QuoteCallout = props => {
     </div>
 }
 
-export const InstallButton = props => {
+export const InstallButtonWindows = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
-            <img src={ props.image } />
-            <p>{props.children}</p>
+            { props.children }
+            <p>Get Pieces for Windows</p>
+        </div>
+    </a>
+}
+
+export const InstallButtonMac = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+            { props.children }
+            <p>Get Pieces for macOS</p>
+        </div>
+    </a>
+};
+
+export const InstallButtonLinux = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", wrap: "nowrap"}}>
+            { props.children }
+            <p>Get Pieces for Linux</p>
         </div>
     </a>
 }
@@ -103,9 +121,15 @@ export const HeaderImage = props => {
 <Spacer></Spacer>
 
 <GridFlexRow>
-    <InstallButton image="/assets/windows_logo_old.png" src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
-    <InstallButton image="/assets/mac_logo.png" src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
-    <InstallButton image="/assets/linux_logo.png" src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
+    <InstallButtonWindows src="/installation-getting-started/windows">
+        <Image src={"/assets/windows_logo_old.png"} />
+    </InstallButtonWindows>
+    <InstallButtonLinux src="/installation-getting-started/linux">
+        <Image src={"/assets/linux_logo.png"} />
+    </InstallButtonLinux>
+    <InstallButtonMac src="/installation-getting-started/macos">
+        <Image src={"/assets/mac_os_logo.png"} />
+    </InstallButtonMac>
 </GridFlexRow>
 
 ## Some Quick Background Context
