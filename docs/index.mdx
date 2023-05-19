@@ -9,20 +9,29 @@ export const QuoteCallout = props => {
     </div>
 }
 
-export const InstallButton = props => {
+export const InstallButtonWindows = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "8px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
+        <div style={{backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for Windows</p>
+        </div>
+    </a>
+}
+
+export const InstallButtonMac = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for macOS</p>
+        </div>
+    </a>
+};
+
+export const InstallButtonLinux = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{ backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
+            { props.children }
+            <p style={{color: "white", marginLeft: "8px"}}>Get Pieces for Linux</p>
         </div>
     </a>
 }
@@ -112,9 +121,15 @@ export const HeaderImage = props => {
 <Spacer></Spacer>
 
 <GridFlexRow>
-    <InstallButton src="/installation-getting-started/windows">Get Pieces for Windows</InstallButton>
-    <InstallButton src="/installation-getting-started/macos">Get Pieces for Mac</InstallButton>
-    <InstallButton src="/installation-getting-started/linux">Get Pieces for Linux</InstallButton>
+    <InstallButtonWindows src="/installation-getting-started/windows">
+        <Image width="25px" src={"/assets/windows_logo_old.png"} />
+    </InstallButtonWindows>
+    <InstallButtonLinux src="/installation-getting-started/linux">
+        <Image width="25px"src={"/assets/linux_logo.png"} />
+    </InstallButtonLinux>
+    <InstallButtonMac src="/installation-getting-started/macos">
+        <Image width="25px" src={"/assets/mac_os.png"} />
+    </InstallButtonMac>
 </GridFlexRow>
 
 ## Some Quick Background Context
