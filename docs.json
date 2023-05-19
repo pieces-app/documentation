@@ -14,6 +14,11 @@
       "link": "https://pieces.app"
     },
     {
+      "title": "Coding Blog",
+      "icon": "newspaper",
+      "link": "https://code.pieces.app/blog"
+    },
+    {
       "title": "Product Updates",
       "icon": "pencil",
       "link": "https://pieces.app/updates"
