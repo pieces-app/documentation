@@ -35,6 +35,13 @@
     }
   ],
   "sidebar": [
+    ["Installation & Getting Started", [
+      ["Overview", "/installation-getting-started/what-am-i-installing"],
+      ["Windows", "/installation-getting-started/windows"],
+      ["MacOS", "/installation-getting-started/macos"],
+      ["Linux", "/installation-getting-started/linux"]
+    ]
+    ],
     ["Extensions & Plugins Support", [
       ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
       ["Pieces Edge Addon", "/extensions-plugins/edge"],
@@ -48,13 +55,6 @@
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
-    ]
-    ],
-    ["Installation & Getting Started", [
-      ["Overview", "/installation-getting-started/what-am-i-installing"],
-      ["Windows", "/installation-getting-started/windows"],
-      ["MacOS", "/installation-getting-started/macos"],
-      ["Linux", "/installation-getting-started/linux"]
     ]
     ],
     ["Product Features", [
