@@ -1,0 +1,125 @@
+---
+title: Pieces for Developers Chrome Extension
+description: Troubleshoot issues that you are having, or reach out to Pieces support to get assistance with the Pieces for Developers Chrome Extension.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/extensions-plugins/chrome" />
+
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.chrome }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                color: "white",
+                fontWeight: "500",
+                background: "black",
+                marginBottom: "8px",
+                marginTop: "3px",
+                marginRight: "16px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}} target="_blank"
+              href={"https://code.pieces.app/updates"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const GridFlexRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const HeaderLogoImage = props => {
+    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/chrome_logo.png" }/>
+}
+
+<GridFlexRow>
+    <h1>Pieces Chrome Extension</h1>
+</GridFlexRow>
+
+
+<GridFlexRow>
+    <InstallButton>Get the Chrome Extension</InstallButton>
+    <ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
+</GridFlexRow>
+
+Using the Pieces Chrome Extension with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
+
+<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-5_1_2023.GIF" />
+
+## Where are my Saved Snippets Stored?
+_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Chrome Extension in order for the extension to work properly._
+
+- When you save code snippets with Pieces, they are stored locally in the Pieces desktop app.
+- When you save a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a title, a description and more.
+
+To view and reuse your snippets, just open the Pieces desktop app and scroll through the carousel.
+
+## What Does the Share Button Do?
+
+![The Pieces Chrome Extension shows the button that creates a sharable link.](/assets/chrome_share_button.png)
+
+When you click the Share button below a code block, Pieces generates a link that is specifically designed to share useful code with its context— it's automatically copied to your clipboard once it's generated.
+
+This means that instead of copying code and pasting it into a message, you can create a Pieces link that shares the code and maintains formatting, syntax highlighting, and relevant tags. The recipient will also get the title, description, related links, and other context about the snippet.
+
+## Troubleshooting the Pieces Buttons
+There are a few reasons why the Pieces buttons may not be appearing:
+
+1. **Pieces OS isn't running.**
+ - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
+ - If you need to download and install Pieces OS, please <a target="_blank" href="{{ links.website.home }}">visit this link</a>.
+
+2. **You disabled the Pieces buttons on that website.**
+ - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the extension settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
+
+<Image zoom src="/assets/settings_for_chrome.png" />
+
+3. **This website doesn't have detectable code.**
+ - The code on this site might be embedded in an iframe, or it might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
+
+If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
+
+## How do I Remove the Pieces Buttons from a Site?
+If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the extension settings.
+
+1. Right-click the Pieces icon in the top right corner of your browser and choose “Options.”
+2. Toggle the "Disable Pieces buttons" option. The page will automatically refresh and the Pieces buttons will disappear.
+
+## Can I Customize the Pieces Extension?
+**Definitely!**
+To customize your Pieces Chrome extension experience, click on the Pieces icon in the upper right corner of your browser.
+
+Hit the Settings icon in the top right and set your preferences.
+
+<Image zoom src="/assets/theme_for_chrome.png" />
+
+You can adjust the following Settings for the Pieces Chrome Extension:
+1. The placement of the Pieces buttons
+2. Toggle between dark mode and light mode
+3. Decide if you'd like Pieces buttons to be enabled or disabled on a webpage by default
+4. Manage your website blacklist
+5. Adjust the minimum number of characters necessary to recognize a code block
+6. Adjust the functionality of the Copy & Save Button
