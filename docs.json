@@ -36,10 +36,10 @@
   ],
   "sidebar": [
     ["Extensions & Plugins Support", [
-      ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"],
+      ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
+      ["Pieces Edge Addon", "/extensions-plugins/edge"],
+      ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
+      ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
       ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["Product Highlights & Benefits", [
