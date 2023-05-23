@@ -7,6 +7,7 @@
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
   "favicon": "/assets/pieces_dark.png",
+  "zoomImages": true,
   "anchors": [
     {
       "title": "Visit pieces.app",
