@@ -20,7 +20,7 @@ export const InstallButton = props => {
             }}>{props.children}</p>
         </div>
     </a>
-}
+};
 
 export const GridFlexRow = props => {
     return <div style={{
@@ -29,6 +29,14 @@ export const GridFlexRow = props => {
         justifyContent: 'start',
         flexWrap: "wrap"
     }}>{props.children}</div>;
+};
+
+export const Spacer = props => {
+    return <div style={{ height: "100px"}}></div>
+};
+
+export const MiniSpacer = props => {
+    return <div style={{ height: "16px"}}></div>
 };
 
 # What am I installing?
@@ -61,7 +69,7 @@ export const GridFlexRow = props => {
 </Tabs>
 
 
-When you download Pieces for Developers, you'll get two applications: **Pieces for Developers | OS Server** and the **Pieces for Developers | Flagship Desktop App**.
+When you download Pieces for Developers, you'll get two applications: **Pieces for Developers | OS Server** and the **Pieces for Developers | Flagship Desktop App**. Click on each below to find out more about what you are installing:
 
 <Accordion title={"Pieces for Developers | Pieces OS"}>
     **Pieces OS** is our background service that runs offline and on-device. It's **required** to enable:
@@ -69,6 +77,8 @@ When you download Pieces for Developers, you'll get two applications: **Pieces f
         - Local, Private, and Secure Machine Learning Models
         - Real-Time Search and Suggestions
 </Accordion>
+
+<MiniSpacer></MiniSpacer>
 
 <Accordion title={"Pieces for Developers | Desktop Application"}>
     **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you **the best** experience with your snippets allowing you to:
@@ -80,9 +90,11 @@ When you download Pieces for Developers, you'll get two applications: **Pieces f
     - and so much more!
 </Accordion>
 
-#### <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> is the _core Pieces for Developers experience_, fully loaded with 50+ features.
+<MiniSpacer></MiniSpacer>
 
 ---
+
+<MiniSpacer></MiniSpacer>
 
 <Tabs
     defaultValue={"quickly_save"}
@@ -90,7 +102,7 @@ When you download Pieces for Developers, you'll get two applications: **Pieces f
         {label: 'Quickly Save Snippets', value: 'quickly_save'},
         {label: 'View & Edit Snippets', value: 'view_edit'},
         {label: 'Manage Snippet Context', value: 'manage'},
-        {label: 'See Capabilities', value: 'watch_demo'}
+        {label: 'Watch Demo', value: 'watch_demo_1'}
     ]}
 >
     <TabItem value="quickly_save">
@@ -115,3 +127,94 @@ When you download Pieces for Developers, you'll get two applications: **Pieces f
     </TabItem>
 </Tabs>
 
+<MiniSpacer></MiniSpacer>
+
+<Heading type={"h3"}>Offline Deep Search</Heading>
+Pieces for Developers ships with a first-in-kind search engine designed specifically to project Natural Language Queries onto a Technical Language Vector Space, completely offline and on-device.
+
+What that means for you is Pieces returns search results based on code similarities, recent activity, tags, descriptions, people, related links and more.
+
+<MiniSpacer></MiniSpacer>
+
+<Heading type={"h3"}>Maximize Your Time</Heading>
+Automatically discover commonly used snippets in your workflow or extract code from a screenshot. Pieces Desktop is loaded with next-gen features that make your life as a developer a little easier.
+
+<MiniSpacer></MiniSpacer>
+
+---
+
+<MiniSpacer></MiniSpacer>
+
+<Tabs
+    defaultValue={"single_click"}
+    values={[
+        {label: 'Single-Click Sharing', value: 'single_click'},
+        {label: 'Extract Code from Screenshots', value: 'extract'},
+        {label: 'Discover In-Project Snippets', value: 'in_project'},
+        {label: 'Watch Demo', value: 'watch_demo_2'}
+    ]}
+>
+    <TabItem value="quickly_save">
+        Simply copy a snippet from your IDE or the web and paste it anywhere in Pieces to save it. Or, you can drag and drop a code file or image.
+
+        <a href={"https://docs.pieces.app/features/one-click-snippet-sharing"}>Read More</a>
+    </TabItem>
+    <TabItem value="extract">
+        Drag & drop a code screenshot from a YouTube video and in seconds all of the code is available to use.
+        <a href="{{ links.internal.product_highlights.save_materials }}">Read More</a>
+    </TabItem>
+    <TabItem value="in_project">
+        Scan an entire code base and return hyper-specific, highly reusable code snippets.
+        <a href="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Read More</a>
+    </TabItem>
+    <TabItem value="watch_demo_2">
+        Pieces for Developers is the smartest and most powerful place to save, search, share and reuse your developer materials.
+        <a href={"https://youtube.com/@getpieces"}>Visit our Youtube Channel</a>
+    </TabItem>
+</Tabs>
+
+<MiniSpacer></MiniSpacer>
+
+<Heading type={"h3"}>No-brainer security</Heading>
+Use Pieces connected to the cloud or not - it’s up to you! All Pieces data is stored locally on your device and you can use almost all features without even being connected to the Internet!
+
+<MiniSpacer></MiniSpacer>
+
+<Heading type={"h3"}>Don’t forget the essentials</Heading>
+Everything in the Pieces Desktop App was designed for ultimate productivity. From keyboard shortcuts to responsive layouts, it’s these little things that help it fit right into your flow.
+
+<MiniSpacer></MiniSpacer>
+
+---
+
+<MiniSpacer></MiniSpacer>
+
+### Don't Forget The Essentials
+
+<Tabs
+    defaultValue={"single_click"}
+    values={[
+        {label: 'Single-Click Sharing', value: 'single_click'},
+        {label: 'Extract Code from Screenshots', value: 'extract'},
+        {label: 'Discover In-Project Snippets', value: 'in_project'},
+        {label: 'Watch Demo', value: 'watch_demo_2'}
+    ]}
+>
+    <TabItem value="quickly_save">
+        Simply copy a snippet from your IDE or the web and paste it anywhere in Pieces to save it. Or, you can drag and drop a code file or image.
+
+        <a href={"https://docs.pieces.app/features/one-click-snippet-sharing"}>Read More</a>
+    </TabItem>
+    <TabItem value="extract">
+        Drag & drop a code screenshot from a YouTube video and in seconds all of the code is available to use.
+        <a href="{{ links.internal.product_highlights.save_materials }}">Read More</a>
+    </TabItem>
+    <TabItem value="in_project">
+        Scan an entire code base and return hyper-specific, highly reusable code snippets.
+        <a href="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Read More</a>
+    </TabItem>
+    <TabItem value="watch_demo_2">
+        Pieces for Developers is the smartest and most powerful place to save, search, share and reuse your developer materials.
+        <a href={"https://youtube.com/@getpieces"}>Visit our Youtube Channel</a>
+    </TabItem>
+</Tabs>
