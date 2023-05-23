@@ -56,28 +56,62 @@ export const GridFlexRow = props => {
             src="https://pieces.app/getting-started/windows" target="_blank">Download on Windows</InstallButton>
     </TabItem>
     <TabItem value="linux">
-            <InstallButton src="https://pieces.app/getting-started/linux" target="_blank">Download on Linux</InstallButton>
+        <InstallButton src="https://pieces.app/getting-started/linux" target="_blank">Download on Linux</InstallButton>
     </TabItem>
 </Tabs>
 
 
-When you download Pieces for Developers from our website, you'll get two applications: Pieces for Developers | OS Server and the Pieces for Developers | Flagship Desktop App. 
+When you download Pieces for Developers, you'll get two applications: **Pieces for Developers | OS Server** and the **Pieces for Developers | Flagship Desktop App**.
 
-### <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | OS Server</a>
+<Accordion title={"Pieces for Developers | Pieces OS"}>
+    **Pieces OS** is our background service that runs offline and on-device. It's **required** to enable:
+        - Individual products in the Pieces for Developers Suite to communicate
+        - Local, Private, and Secure Machine Learning Models
+        - Real-Time Search and Suggestions
+</Accordion>
 
-is our background service that runs offline and on-device. It's required to enable:
-- Individual products in the Pieces for Developers Suite to communicate
-- Local, Private, and Secure Machine Learning Models
-- Real-Time Search and Suggestions
-
-### <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Desktop App</a>
-
-is our flagship desktop application. It's a visual GUI that gives you **the best** experience with your snippets allowing you to:
-- Navigate snippets visually through the carousel
-- Transform snippets from one language to another
-- Sort Snippets by suggestions
-- Describe a snippet to get a solution to an answer
-- Manage your custom cloud domain
-- and so much more!
+<Accordion title={"Pieces for Developers | Desktop Application"}>
+    **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you **the best** experience with your snippets allowing you to:
+    - Navigate snippets visually through the carousel
+    - Transform snippets from one language to another
+    - Sort Snippets by suggestions
+    - Describe a snippet to get a solution to an answer
+    - Manage your custom cloud domain
+    - and so much more!
+</Accordion>
 
 #### <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces for Developers | Flagship Desktop App</a> is the _core Pieces for Developers experience_, fully loaded with 50+ features.
+
+---
+
+<Tabs
+    defaultValue={"manage"}
+    values={[
+        {label: 'Quickly Save Snippets', value: 'quickly_save'},
+        {label: 'View & Edit Snippets', value: 'view_edit'},
+        {label: 'Manage Snippet Context', value: 'manage'},
+        {label: 'See Capabilities', value: 'watch_demo'}
+    ]}
+>
+    <TabItem value="quickly_save">
+        ![Dragging a file into Pieces Desktop App](https://storage.googleapis.com/pieces_static_resources/pfd_wiki/DROP_A_FILE.gif)
+
+        Simply copy a snippet from your IDE or the web and paste it anywhere in Pieces to save it. Or, you can drag and drop a code file or image.
+
+        <a href="{{ links.internal.product_highlights.save_materials }}">Read More</a>
+    </TabItem>
+    <TabItem value="view_edit">
+        Navigate the carousel to view and edit your snippets with your left and right arrow keys.
+        There are a few ways:
+            - Using ```<-- arrow``` or ```--> arrow``` keys you can navigate the carousel. Note that if you are in **list view** this will change to ```Up`` and ```Down```
+    </TabItem>
+    <TabItem value="manage">
+        Add or edit information about a snippet such as Related Links, Tags, Related People, Sensitives, and more.
+        <a href="https://docs.pieces.app/features/managing-saved-materials">Read More</a>
+    </TabItem>
+    <TabItem value="watch_demo">
+        Pieces for Developers is the smartest and most powerful place to save, search, share and reuse your developer materials.
+
+    </TabItem>
+</Tabs>
+
