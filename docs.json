@@ -7,6 +7,7 @@
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
   "favicon": "/assets/pieces_dark.png",
+  "zoomImages": true,
   "anchors": [
     {
       "title": "Visit pieces.app",
@@ -35,11 +36,18 @@
     }
   ],
   "sidebar": [
+    ["Installation & Getting Started", [
+      ["Overview", "/installation-getting-started/what-am-i-installing"],
+      ["Windows", "/installation-getting-started/windows"],
+      ["MacOS", "/installation-getting-started/macos"],
+      ["Linux", "/installation-getting-started/linux"]
+    ]
+    ],
     ["Extensions & Plugins Support", [
-      ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"],
+      ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
+      ["Pieces Edge Addon", "/extensions-plugins/edge"],
+      ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
+      ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
       ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["Product Highlights & Benefits", [
@@ -48,13 +56,6 @@
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
-    ]
-    ],
-    ["Installation & Getting Started", [
-      ["Overview", "/installation-getting-started/what-am-i-installing"],
-      ["Windows", "/installation-getting-started/windows"],
-      ["MacOS", "/installation-getting-started/macos"],
-      ["Linux", "/installation-getting-started/linux"]
     ]
     ],
     ["Product Features", [
@@ -79,7 +80,7 @@
   ],
   "variables": {
     "versions": {
-      "pfd": "v2.0.1",
+      "pfd": "v2.0.2",
       "chrome": "v2.6.0",
       "jetbrains": "v5.2.0",
       "vscode": "v0.6.0",
