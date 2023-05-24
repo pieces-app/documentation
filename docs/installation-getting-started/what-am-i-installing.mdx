@@ -50,6 +50,7 @@ export const CallToAction = props => {
         flexDirection: "column",
         justifyContent: "start"
     }}>
+        {props.children}
         <h3>{props.heading}</h3>
         {props.text}
     </div>
@@ -140,15 +141,9 @@ Ditch the hundreds of .txt files and siloed tooled and organize your snippets in
     </TabItem>
 </Tabs>
 
-<MiniSpacer></MiniSpacer>
-
----
-
-<CallToAction heading={"Offline Deep Search"} text={"Pieces for Developers ships with a first-in-kind search engine designed specifically to project Natural Language Queries onto a Technical Language Vector Space, completely offline and on-device."}></CallToAction>
-
----
-
-<MiniSpacer></MiniSpacer>
+<CallToAction heading={"Offline Deep Search"} text={"Pieces for Developers ships with a first-in-kind search engine designed specifically to project Natural Language Queries onto a Technical Language Vector Space, completely offline and on-device."}>
+    <Image width="100" src={"/assets/magnifying_glass.png"} />
+</CallToAction>
 
 ### Maximize your time
 Automatically discover commonly used snippets in your workflow or extract code from a screenshot. Pieces Desktop is loaded with next-gen features that make your life as a developer a little easier.
@@ -178,15 +173,7 @@ Automatically discover commonly used snippets in your workflow or extract code f
     </TabItem>
 </Tabs>
 
-<MiniSpacer></MiniSpacer>
-
----
-
 <CallToAction heading={"No-brainer security"} text={"Use Pieces connected to the cloud or not - it’s up to you! All Pieces data is stored locally on your device and you can use almost all features without even being connected to the Internet!"}></CallToAction>
-
----
-
-<MiniSpacer></MiniSpacer>
 
 ### Don't Forget The Essentials
 Everything in the Pieces Desktop App was designed for ultimate productivity. From keyboard shortcuts to responsive layouts, it’s these little things that help it fit right into your flow.
