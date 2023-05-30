@@ -1,0 +1,81 @@
+---
+title: Pieces for Developers Obsidian Plugin
+description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers Obsidian Plugin
+---
+
+<link rel="canonical" href="https://docs.pieces.app/extensions-plugins/obsidian" />
+
+export const InstallButton = props => {
+    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.obsidian }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                color: "white",
+                fontWeight: "500",
+                background: "black",
+                marginBottom: "8px",
+                marginTop: "3px",
+                marginRight: "16px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const ReleasePill = props => {
+    return <a style={{textDecoration: "none"}} target="_blank"
+              href={"https://code.pieces.app/updates"}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const GridFlexRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const HeaderLogoImage = props => {
+    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/jetbrains_logo.png" }/>
+}
+
+<GridFlexRow>
+    <h1>Pieces Obsidian Plugin</h1>
+</GridFlexRow>
+
+<GridFlexRow>
+    <InstallButton>Get the Obsidian Plugin</InstallButton>
+    <ReleasePill children="Current Version: {{ versions.obsidian }}"></ReleasePill>
+</GridFlexRow>
+
+## Having Trouble with Pieces for Obsidian?
+
+If the Obsidian plugin isn't working for you, please make sure you have the following:
+
+- The latest version of Pieces for Obsidian
+- Pieces OS version 1.9.2 or higher
+After installing or updating your software, please restart Obsidian. If there is still a problem, check out the frequently asked questions below.
+
+## Search for snippets in Obsidian
+NEED TO UPDATE IMAGE
+<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/SEARCH_AND_REUSE_VS_CODE" />
+To search for a snippet:
+
+1. Open the Pieces Snippets view
+2. Type keywords into the search bar, and when you hit enter, the snippet list will be filtered by your search term(s)
