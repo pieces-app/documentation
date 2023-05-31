@@ -155,10 +155,10 @@
           "smart_warnings": "https://docs.pieces.apps/features/auto-enrichment#smart-warnings"
         },
         "global_search_suggestion_reuse": {
-          "global_search": "https://docs.pieces.app/global-search-suggestion-reuse/global_search",
-          "search_settings": "https://docs.pieces.app/global-search-suggestion-reuse/adjusting-settings-for-search",
-          "sort_scope_relevant": "https://docs.pieces.app/global-search-suggestion-reuse/sort-scope-relevant",
-          "workflow_activity_stream": "https://docs.pieces.app/global-search-suggestion-reuse/workflow-activity"
+          "global_search": "https://docs.pieces.app/features/global_search",
+          "search_settings": "https://docs.pieces.app/features/global-search#adjusting-settings-for-optimal-search-results",
+          "sort_scope_relevant": "https://docs.pieces.app/features/global-search#sorting-by-realtime-or-scope-relevant-suggestions",
+          "workflow_activity_stream": "https://docs.pieces.app/features/workflow-activity"
         },
         "personalized_link_sharing": {
           "single_click_link_sharing": "https://docs.pieces.app/features/one-click-link-sharing",
