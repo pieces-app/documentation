@@ -52,21 +52,21 @@
     ]],
     ["Product Highlights & Benefits", [
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
-      ["Saving Screenshots & OCR", "/product-highlights-and-benefits/saving-screenshots"],
-      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
+      ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
       ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
+      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
     ]
     ],
     ["Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
-      ["Single Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Code Completion", "/features/code-completion"],
+      ["Code Generation", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
-      ["Workflow Activity", "/features/workflow-activity"],
-      ["Manage Saved Materials", "/features/managing-saved-materials"],
-      ["Creation & Generation", "/features/creation-and-generation"],
-      ["Transforming Snippets", "/features/transforming-snippets"],
-      ["Code Completion", "/features/code-completion"]
+      ["Material Storage & Management", "/features/managing-saved-materials"],
+      ["One Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Snippet Transformations", "/features/transforming-snippets"],
+      ["Workflow Activity", "/features/workflow-activity"]
     ]],
     ["Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
