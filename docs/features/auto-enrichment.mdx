@@ -8,7 +8,9 @@ description: Learn how Pieces for Developers uses ML and AI with ChatGPT to enri
 # Auto-Enrichment
 Pieces for Developers enriches your content as you save snippets and makes it easy to get back to where you originally saved your code.
 
-## How to View Metadata & Enrichment Details
+<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
+
+## How to View Metadata & Enrichment Details ` cmd + i ` | ` ctrl + i `
 All background processing that goes into Pieces gives you the ability to access more data around your resources and code snippets. You can view the information by:
 - Press ```cmd + i``` or ```ctrl + i``` to access the Context View
 - [In List View] pressing the _view all context_ button on the top right of the context preview
@@ -22,24 +24,24 @@ Once you enter the Context view, you will see data added both [automatically via
 
 Whether you are in List or Gallery View, you will have access to the same set of sections.
 
-### Description `cmd + shift + n` or `ctrl + shift + n`
-You can press the entire _description_ box to open the "Edit Description Drawer" or use the `cmd/ctrl + shift + n` shortcut to edit the contents of the description context field.
+### Description: ` cmd + shift + n ` | ` ctrl + shift + n `
+You can press the entire _description_ box to open the "Edit Description Drawer" or use the ` cmd/ctrl + shift + n ` shortcut to edit the contents of the description context field.
 
 This section will by default be filled out, and you can reference the following example:
 
-``` text
-📝 Custom Description:
-Write a custom description here.
+```text
+  📝 Custom Description:
+  Write a custom description here.
 
-💡 Smart Description:
-The article explains how to use the Snipping Tool feature in Windows to capture screenshots.
+  💡 Smart Description:
+  The article explains how to use the Snipping Tool feature in Windows to capture screenshots.
 
-🔎 Suggested Searches:
-Windows screenshot tool
-How to capture screenshots on Windows
-Microsoft support screenshot guide
-Windows snipping tool tutorial
-Windows screenshot shortcut
+  🔎 Suggested Searches:
+  Windows screenshot tool
+  How to capture screenshots on Windows
+  Microsoft support screenshot guide
+  Windows snipping tool tutorial
+  Windows screenshot shortcut
 ```
 
 A few things to note about this format:
@@ -49,11 +51,11 @@ A few things to note about this format:
     - We auto generate this description and is used for search-ability, reading through your list of snippets, and is a description of what the snippet does.
         - [you can use this feature to identify what a code snippet can do when you aren't sure](#)
 **Suggested Searches**
-    - These are great search terms that you can use to find snippets that are similar to the resource they are attached to. These are good examples that you can compare to the examples found on the [Global Search Page]() and try them in the app.
+    - These are great search terms that you can use to find snippets that are similar to the resource they are attached to. These are good examples that you can compare to the examples found on the [Global Search Page](#) and try them in the app.
 
 ---
 
-### Tags `cmd + t` or `ctrl + t`
+### Tags: `cmd + t` | `ctrl + t`
 Open the Tags drawer by clicking anywhere overtop of the tags section, or by pressing the ` cmd/ctrl + t ` shortcut. This will bring pull up a list of tags that have already been [added when you saved the resource](#), along with suggested snippets that you can click to quickly add to the snippet.
 
 To create a custom tag, you can start typing once the drawer opens and add any tag you like directly into the preexisting tags list.
@@ -81,7 +83,7 @@ To remove a tag:
 
 ---
 
-### Related Links `cmd + k` or `ctrl + k`
+### Related Links: `cmd + k` | `ctrl + k`
 Related links can be opened by clicking on the _background_ of the related links section, or via the ` cmd/ctrl + k ` shortcut - clicking any of the individual links directly will cause them to open in your browser when you press them.
 
 Note: In the header of related links, you can see the _total number_ of related links that you have.
@@ -94,11 +96,13 @@ From inside the Related Links drawer, you can add new links by typing them direc
 **You can quickly copy any related link from inside the Related Links Drawer by pressing the copy button on the right side of the Related link pill**
 
 | screenshot of an auto generated related link |
+
 **Auto Generated**
 - links that are added the moment you save a resource to Pieces, and contain a `sparkle` icon proceeding the tag name
 - also will include the favicon of the website it has come from inside the related link pill
 
 | screenshot of a custom related link |
+
 **Custom Links**:
 - links that you can write yourself and add to your code, that will not contain the sparkle icon
 - will still include the favicon of the website
@@ -113,14 +117,16 @@ To remove a specific link from the resource it is attached to, inside the Relate
 
 ---
 
-### Sharable Links `cmd + l` or `ctrl + l`
+### Sharable Links: `cmd + l` | `ctrl + l`
 Sharable links are accessible from this view, and can be opened using the `cmd/ctrl + l` shortcut or by clicking on the section inside the Context View. This will open the Sharable Link Drawer where you can manage the sharable link for a specific resource.
 
 **Note that all Resources have their own unique sharable link, and each have to be generated on their own.**
 
 Read about all the ins and outs of sharable links on the [One Click Snippet Sharing Page](#).
 
-### Related People `cmd + p` or `ctrl + p`
+---
+
+### Related People: `cmd + p` | `ctrl + p`
 To facilitate communication among and between teams, Pieces for Developers attaches Related People to your saved snippets. Related People include content authors, open-source maintainers, GitHub collaborators, and others who are part of a snippet’s context.
 
 To access related People, you can click the Related People section or press the ```cmd/ctrl + p``` shortcut.
@@ -142,21 +148,15 @@ It requires two fields:
 
 If a related person is added to your list of People and you wish to remove it, you can do so by clicking the 'edit' pencil icon when you hover the Related Person in the Related People Drawer. Once you are in the edit drawer, you can click "Delete" next to the "Save" Button on the bottom of the drawer and the Related Person will be removed.
 
-### Smart Warnings and Sensitive Information Detection
-Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials.
-
 ---
 
 ### Security Practices
-
 <Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
 
 <a target="_blank" href="https://pieces.app">Pieces for Developers</a> facilitates security and programming best practices by detecting sensitive information and warning against accidental uploads or sharing.
 
-#### Protecting Context
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
+#### Smart Warnings and Sensitive Information Detection
+Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials.
 
-In an effort to maintain this invaluable context, Pieces for Developers automatically extracts and associates useful origin details every time you save a resource.
 
-> Project Name, Source File, Line Numbers, Collaborators, Solution Publishers, Application Source, etc.
 
