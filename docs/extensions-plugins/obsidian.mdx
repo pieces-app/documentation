@@ -83,7 +83,7 @@ export const HeaderLogoImage = (props) => {
   return (
     <img
       style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }}
-      src={"/assets/obsidian.png"}
+      src={"/assets/obsidian_logo.png"}
     />
   );
 };
@@ -91,8 +91,6 @@ export const HeaderLogoImage = (props) => {
 <GridFlexRow>
   <h1>Pieces Obsidian Plugin</h1>
 </GridFlexRow>
-
-<br></br>
 
 <GridFlexRow>
   <InstallButton>Get the Obsidian Plugin</InstallButton>
@@ -107,6 +105,16 @@ _Pieces for Obsidian Pieces captures **NO identifiable user data**. Our **Local 
 
 _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Obsidian Plugin in order for the Plugin to work properly._
 
+## Install Instructions
+
+Download instructions for the latest Pieces for Obsidian
+release: https://github.com/pieces-app/obsidian-pieces#install-instructions
+
+- Download and unzip the latest `obsidian-pieces-X.X.X` zip file
+- Put that folder in your `Documents/Obsidian Vault/.obsidian/plugins` directory
+- Go to `Obsidian > Settings > Community plugins`
+- Enable the `Pieces For Obsidian` plugin under `Installed plugins`
+
 ## Save your Snippets
 
 - To save a snippet, highlight the text, right-click, and select "Save to Pieces."
@@ -116,16 +124,16 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 - Highlight the desired code and use our dedicated keyboard shortcut
   `Ctrl+Shift+P` (\[⌘⇧P\] on macOS)
 
-<Image zoom src="./assets/obsidian/OBSIDIAN_RIGHTCLICK.gif" />
+<Image zoom src="./assets/obsidian/OBSIDIAN_RIGHTCLICK.gif" alt="Example of saving a snippet using the obsidian Pieces plugin." />
 
 ## Find your Snippets
 
 Open the Pieces View from the Ribbon Menu.
 
-- View by **Recent** and by **Language**
+- View by **recent** and by **language**
 - Search your snippets to save time searching through your markdown.
 
-<Image zoom src="./assets/obsidian/OBSIDIAN_SEARCH.gif" />
+<Image zoom src="./assets/obsidian/OBSIDIAN_SEARCH.gif" alt="Example of searching for snippets using the obsidian Pieces plugin." />
 
 ## Use your Snippets
 
@@ -133,7 +141,7 @@ Open the Pieces View from the Ribbon Menu.
 - You can expand your code snippets to view more meta-data that Pieces automatically generates for you!
 - View your snippets with syntax highlighting
 
-<Image zoom src="./assets/obsidian/OBSIDIAN_VIEWPIECE.gif" />
+<Image zoom src="./assets/obsidian/OBSIDIAN_VIEWPIECE.gif" alt="Example of using a snippet that's been saved to Pieces." />
 
 ## Share your Snippets
 
@@ -142,27 +150,27 @@ Open the Pieces View from the Ribbon Menu.
 - Click the Pieces Share button within any code block / in the Pieces View.
   **OR**
 - Highlight the desired code and use our dedicated keyboard shortcut
-  `Ctrl+Shift+L` (\[⌘⇧L\] on macOS)
+  `Ctrl + Shift + L` (\[⌘⇧L\] on macOS)
 
-<Image zoom src="./assets/obsidian/OBSIDIAN_SHARE.gif" />
+<Image zoom src="./assets/obsidian/OBSIDIAN_SHARE.gif" alt="Example of sharing a snippet using the obsidian Pieces plugin." />
 
 _Pieces offers hosting for all your snippets for seamless sharing!_
 
 ## Embedded Buttons
 
-Pieces adds **Embedded Buttons** into your markdown to help you save, copy, & share your code snippets.
+Pieces adds **embedded buttons** into your markdown to help you save, copy, & share your code snippets.
 
-<Image zoom src="./assets/obsidian/OBSIDIAN_SAVE.gif" />
+<Image zoom src="./assets/obsidian/OBSIDIAN_SAVE.gif" alt="Example of using the embedded buttons added by the obsidian pieces plugin." />
 
 ## Having Trouble with Pieces for Obsidian?
 
 - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
 - If you need to download and install Pieces OS, please <a target="_blank" href="https://docs.pieces.app/overview">visit this link</a>.
 
-If the Obsidian plugin still isn't working for you, please make sure you have the following:
+<h3>If the Obsidian plugin still isn't working for you, please make sure you have the following:</h3>
 
 - The latest version of Pieces for Obsidian
-- Pieces OS version 5.0.0 or higher
+- Pieces OS version {{ versions.pieces_os }} or higher
 - After installing or updating your software, please restart Obsidian.
 
 _If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/to/mCjBSIjF#os=xxxxx&page=docs-obsidian">submit this form</a> and we'll get back to you!_
