@@ -41,7 +41,7 @@ export const ReleasePill = (props) => {
     <a
       style={{ textDecoration: "none" }}
       target="_blank"
-      href={"https://code.pieces.app/updates"}
+      href={ props.src }
     >
       <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
         <p
@@ -94,7 +94,7 @@ export const HeaderLogoImage = (props) => {
 
 <GridFlexRow>
   <InstallButton>Get the Obsidian Plugin</InstallButton>
-  <ReleasePill children="Current Version: {{ versions.obsidian }}"></ReleasePill>
+  <ReleasePill src="https://github.com/pieces-app/obsidian-pieces" children="Current Version: {{ versions.obsidian }}"></ReleasePill>
 </GridFlexRow>
 
 <br></br>
@@ -121,7 +121,7 @@ release: [Installation Instructions](https://github.com/pieces-app/obsidian-piec
 
 - Highlight the text, right-click, and select "Save to Pieces."
 - Click the Pieces button within any code block.
-- Highlight the desired code and use our dedicated keyboard shortcut ` Ctrl + Shift + P ` (` ⌘ + ⇧ + P ` on macOS)
+- Highlight the desired code and use our dedicated keyboard shortcut `Ctrl + Shift + P` (`⌘ + ⇧ + P` on macOS)
 
 <Image
   zoom
@@ -161,7 +161,7 @@ Open the Pieces View from the Ribbon Menu.
 - Highlight the text, right-click, and select "Share via Pieces Link."
 - Click the Pieces Share button within any code block / in the Pieces View.
 - Highlight the desired code and use our dedicated keyboard shortcut
-  ` Ctrl + Shift + L ` (` ⌘ + ⇧ + L ` on macOS)
+  `Ctrl + Shift + L` (`⌘ + ⇧ + L` on macOS)
 
 <Image
   zoom
@@ -186,7 +186,11 @@ Pieces adds **embedded buttons** into your markdown to help you save, copy, & sh
 - To double-check that Pieces OS is running, make sure that the Pieces' logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
 - If you need to download and install Pieces OS, please <a target="_blank" href="https://docs.pieces.app/overview">visit this link</a>.
 
-<h3> If the Obsidian plugin still isn't working for you, please make sure you have the following: </h3>
+<h3>
+  {" "}
+  If the Obsidian plugin still isn't working for you, please make sure you have the
+  following:{" "}
+</h3>
 
 - The latest version of Pieces for Developers Obsidian Plugin
 - Pieces OS version 5.0.0 or higher
