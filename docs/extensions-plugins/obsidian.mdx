@@ -41,35 +41,7 @@ export const ReleasePill = (props) => {
     <a
       style={{ textDecoration: "none" }}
       target="_blank"
-      href={"https://code.pieces.app/updates"}
-    >
-      <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
-        <p
-          class="dark:text-white text-black"
-          style={{
-            padding: "8px 20px",
-            borderRadius: "8px",
-            border: "1px solid #f3f5f6",
-            backgroundColor: "transparent",
-            fontWeight: "500",
-            marginBottom: "8px",
-            marginTop: "3px",
-            marginRight: "16px",
-          }}
-        >
-          {props.children}
-        </p>
-      </div>
-    </a>
-  );
-};
-
-export const GitHubPill = (props) => {
-  return (
-    <a
-      style={{ textDecoration: "none" }}
-      target="_blank"
-      href={"https://github.com/pieces-app/obsidian-pieces"}
+      href={ props.src }
     >
       <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
         <p
@@ -122,7 +94,7 @@ export const HeaderLogoImage = (props) => {
 
 <GridFlexRow>
   <InstallButton>Get the Obsidian Plugin</InstallButton>
-  <GitHubPill children="GitHub Link"></GitHubPill>
+  <ReleasePill src="https://github.com/pieces-app/obsidian-pieces" children="GitHub Link"></ReleasePill>
 </GridFlexRow>
 
 <br></br>
