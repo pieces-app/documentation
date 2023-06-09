@@ -7,32 +7,103 @@ description: Once you save a material you can edit, rename, reclassify and modif
 
 # Managing Saved Materials
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/EDIT_SNIPPET_PFD.gif" />
+<Image alt={"Editing a snippet in the Pieces desktop app."} zoom src={"https://storage.googleapis.com/pieces_static_resources/pfd_wiki/EDIT_SNIPPET_PFD.gif"} />
 
-Once you save a material you can edit, rename, reclassify and modify metadata to adjust it over time.
+## Learning How to Update and Edit
+Once you save a material you can edit the snippets visible features - its title, and the contents of the resource itself. Access these features by clicking the ` pencil icon ` that is at the top of the Quick Action Menu on the right side of your Pieces Desktop window.
 
-## Editing saved Code Snippets and Text Notes
+You can do one of two things here:
+- By clicking in where the code is in the center of the screen, you can edit the snippet directly
+- You can access transformations that can create boilerplate code and add comments for you. [Read about Snippet Transformations to know more](/features/transforming-snippets)
 
-As we progress deeper into our projects, frameworks and dependencies often change, which means we might need to adjust a saved snippet to comply with breaking changes or conform to new standards. Click on the pencil in the upper-right corner of the Pieces Desktop App to quickly and easily edit a saved snippet so your code can stay relevant and up-to-date.
+### Editing saved Code Snippets and Text Notes Directly
+Once you select the code in the center of Pieces Desktop you have freedom to manipulate the text/code however you see fit with functionality similar to that of your IDE.
+
+- Your code syntax highlighting will update as you edit to ensure you are using valid syntax while making adjustments
+- You can right-click to cut, copy, paste, and select all
+
+To Exit edit mode, you can press ` esc ` or select the 'Exit Edit Mode' pill, and you will be taken back to the **list** or **gallery** view.
 
 ## Renaming Saved Materials
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RENAME_SNIPPET.gif" />
+<Image alt={"Renaming a snippet in the Pieces desktop app."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RENAME_SNIPPET.gif" />
 
-We're on a mission to make it as frictionless as possible for our users to save snippets without disrupting their flow. The AI in Pieces for Developers will attempt to add a relevant name for your snippets automatically, so you don't have to. Don't worry, you can rename your snippets anytime to a convention that works best for you. All you need to do is right-click a snippet in the List View and select "Rename".
+Before working with renaming snippets, be sure to read about our [AI title generation](/features/auto-enrichment) to get an idea of how title generation takes place.
+
+To rename a snippet quickly, press ` cmd/ctrl + r ` to toggle the title's ` Edit Mode `. You'll notice the title becomes highlighted, and you can begin typing immediately.
 
 ## Reclassifying a Code Snippet's Language Association
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RECLASSIFY_IN_PFD.gif" />
+<Image alt={"Reclassifying a snippet in the Pieces desktop app."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RECLASSIFY_IN_PFD.gif" />
 
-When you save a material to Pieces for Developers, our AI works hard to understand what you saved so that we can successfully add as much helpful metadata - tags, related links & websites, related people, etc. - as possible.
+Each snippet that is added to Pieces passes through our language models to **classify the snippet for you if you do not already know the language**. Our classifier is not 100% accurate as it learns about each user. Some things to note before diving in:
 
-One of our fundamental capabilities is Instant Language Detection, which automatically detects the language of your snippet and supports over 40 programming languages, including Typescript, Javascript, Python, Dart, C++, C#, and many more. Unfortunately, we don't always get it right, so we made it as easy as possible to reclassify a snippet to the proper language. Simply right-click a snippet in the List View and select "Reclassify".
+1. The classifier learns based on the code you save to Pieces, so if you only save Javascript Snippets this will increase the bias of Pieces to support that language.
+2. Inside the [Reclassification Drawer](/features/managing-saved-materials#reclassifying-a-code-snippets-language-association) you can see the classification confidence, which is a guide to help you select the relevant language for the code snippet when it is pasted. By reclassifying code when it is auto-classified as the wrong language to the correct language, tells your local model to _note_ the change that you made for the future, making it more likely to classify it correctly next time.
+
+[//]: # ([Learn more about impacting your AI profile here]&#40;#&#41;)
+
+### Instant Language Detection Support
+One of our fundamental capabilities is Instant Language Detection, which automatically detects the language of your snippet and supports over 40 programming languages:
+
+<Accordion title="Supported Languages">
+    - Batchfile
+    - C
+    - Clojure
+    - C#
+    - C++
+    - CoffeeScript
+    - CSS
+    - Dart
+    - Erlang
+    - Emacs Lisp
+    - Elixir
+    - Go
+    - Groovy
+    - Haskell
+    - HTML
+    - Java
+    - JavaScript
+    - JSON
+    - Kotlin
+    - Lua
+    - Markdown
+    - Matlab
+    - Objective-C
+    - Perl
+    - PHP
+    - PowerShell
+    - Python
+    - R
+    - Ruby
+    - Rust
+    - Scala
+    - Shell
+    - SQL
+    - Swift
+    - TeX
+    - Text
+    - TOML
+    - TypeScript
+    - XML
+    - YAML
+</Accordion>
 
 ## Deleting a Saved Material
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/DELETE_SNIPPET.gif" />
+<Image alt={"Deleting a snippet in the Pieces desktop app."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/DELETE_SNIPPET.gif" />
 
-Since we made it so simple to save snippets from the <a target="_blank" href="{{ links.extensions.chrome }}">browser</a>, your IDE, or with our <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Flagship Desktop App</a>, users are saving hundreds of snippets throughout their time researching, coding, and collaborating. For some, this can get a little chaotic. If you find yourself looking to do a little spring cleaning, you can delete snippets by hitting your delete key.
+Just as quickly as you add, you can remove snippets as well. To delete a resource you can simply press ` delete `, or you can follow these steps:
+
+In list View:
+- Select the Snippet that you would like to delete
+- Select the ` ... ` on the bottom of the Quick Action Menu
+- Scroll to the bottom of the Context Menu, and once you get to the bottom of the drawer, you will see a section labeled "Danger Zone"
+- Select the "Delete Piece" Icon (you can also press ` delete ` from here as well)
+- A new drawer will confirm your choice to delete the resource
+- You can click ` delete ` or press ` enter ` to confirm
+    - Please keep in mind that at this time, Pieces cannot retrieve a deleted resource
+    - You can also choose “Don’t ask me again” to turn off the confirmation window
+
 
 

@@ -7,22 +7,55 @@ description:  Drag images, files, and more directly into the Pieces for Develope
 
 # Save Useful Developer Materials
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/DROP_A_FILE.gif" />
+<Image alt={"Saving a snippet to the Pieces desktop app."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/DROP_A_FILE.gif" />
 
-Pieces for Developers was built from the ground up to serve as a centralized place to save all types of materials and resources related to a developer's work-in-progress journey.
-Code snippets, scratch files, screenshots, UML diagrams, links, and more. Paste something from your clipboard, drag & drop, or save it directly in IDE via our plugins.
+You can **save** a number of developer materials into Pieces for Developers, all by dragging, via right click, file picker, and even cool features like auto-save.
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/MATERIAL_TYPES" />
+Here's our list of Supported Materials:
+- Images (.png, .jpeg, .jpg, .gif)
+    - [Learn more about Importing Screenshots](/product-highlights-and-benefits/saving-screenshots)
+- Raw Text or Code
+- Whole Files
+    - (if you want to import a directory and use Snippet Discovery, Pieces will discover Materials for you)
+- GitHub Gists, imported through Snippet Discovery
+- Are there More?
+
+## Ways to Add Materials to Pieces
+When using Pieces for Developers - whether it be inside the Desktop App or one of our Plugins (See an example with our [Microsoft Teams App](/extensions-plugins/teams)) - there are lots of ways to save Developer Materials. They can be seperated into _Universal_ and _Specific_ as follows:
+
+### Universal:
+- Right click and select "Save to Pieces" in your context menu, the snippet will be added with metadata to Pieces Desktop
+- Press Paste (` cmd/ctrl + v `) after clicking anywhere inside the application window
+
+### Specific:
+
+#### Pieces Desktop:
+- Drag & Drop a file or Image over top of Pieces Desktop to save the contents as a new resource
+- Open the file picker with ` cmd/ctrl + u `, then select the file that you would like to add
+- Via [Snippet Discovery](/product-highlights-and-benefits/in-project-snippet-discovery)
+
+#### Jetbrains Plugin:
+- Drag Code Directly into Pieces for JetBrains in the sidebar and a resource will be created
+- Use ``` option + shift + P ``` or ``` alt + shift + P ``` with code selected to save a new resource
+
+[Learn more about Saving in the JetBrains Plugin](/extensions-plugins/jetbrains)
+
+#### VSCode Extension:
+- Use ``` command + shift + V ``` or ``` windowskey + shift + V ``` with code selected to save a new resource
+
+[Learn more about saving in the Pieces VSCode extension](/extensions-plugins/vscode)
+
+#### Chrome Extension:
+- Press the **Copy & Save** button that appears when you hover any code block
+    - Our code block detection inside of Pieces Chrome Extension depends on the html style of the codeblocks on the page. We detect ``` <pre> ``` tags and ``` <code> ``` tags to capture code and insert buttons to save and share
+    - Learn more about [Sharing and the Share button](/features/one-click-snippet-sharing) that appears next to 'Copy & Save'
+- Use ``` cmd/ctrl + shift + S ``` to save text or code from a website
+
+[Learn more about Saving in the Chrome Extension](/extensions-plugins/chrome)
 
 ## Stay in Flow with Effortless Save
 We are making a continuous effort to provide our users with frictionless ways to save key workflow materials. Stay in flow with our <a target="_blank" href="https://docs.pieces.app/overview">Flagship Desktop App</a> and simply copy a code snippet or other resource and paste it into Pieces. You can also drag images, files, and more directly into the desktop app. Save all types of resources. It's better to have a resource and not need it than to need it and not have it!
 
 > Boilerplate/Reference Snippets, Common Bash/Powershell Commands, CI/CD Configurations, HTTP Requests, Screenshots, Architecture/UML Diagrams, Text Notes, and so much more.
 
-### Images & Screenshots
-To save an image or screenshot, you can either drag the image directly into the <a target="_blank" href="https://docs.pieces.app/overview">Flagship Desktop App</a> window, or you can _upload a file_ by clicking the "Add +" button above the icons in the carousel.
 
-### Files & Folders
-Any file type that Pieces for Developers supports can be dragged or copied into the desktop app. Simply drag the file over the Pieces Desktop App and a green plus will appear. Drop the file into the application window; it will be added to the repo immediately.
-
-If your file is too large, you can compress the image via the notification that appears when you release your mouse click.

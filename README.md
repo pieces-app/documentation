@@ -25,7 +25,7 @@ Our <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Flagship D
 Choose a topic from the list below to get started with Pieces:
 
 * [Save a Snippet](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials)
-* [Share a Snippet](https://docs.page/pieces-app/documentation/personalized-link-sharing/single-click-link-sharing)
+* [Share a Snippet](https://docs.page/pieces-app/documentation/personalized-link-sharing/one-click-snippet-sharing)
 * [Import Snippets from GitHub](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/import-gists-from-github)
 * [Local Snippet Discovery](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/in-project-snippet-discovery)
 * [FAQs](https://docs.page/pieces-app/documentation/faq)
