@@ -1,73 +1,75 @@
 ---
-title: One Click Snippet Sharing
-description: Developers, Technical Writers, Instructors, and many others in the space constantly share code snippets, error logs, configuration files, boilerplate, sample code, and other developer materials with their colleagues, readers, students, open-source maintainers, customers, and so on.
+title: One-Click Snippet Sharing | Pieces
+description: Developers, Technical Writers, Instructors, and many others constantly share developer materials, but adding in relevant context makes this engagement much more impactful.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/features/one-click-snippet-sharing" />
 
-# One-click Snippet Sharing
-Pieces snippet sharing allows you to send someone a code snippet and its context connected to a link that you generate inside of Pieces Desktop or one of our extensions.
+# One-Click Snippet Sharing
+Snippet Sharing allows you to send someone a code snippet and its context connected to a link that you generate inside of the Pieces Desktop App or one of our extensions.
 
 Effortlessly share code snippets, screenshots, and other resources with a personalized access link (e.g., _YOUR_USERNAME.pieces.cloud_), in just a few steps.
 
-## Getting Started with Sharable Links
+## Getting Started with Shareable Links
 _Before getting started with snippet sharing, you will need to make sure that you are **signed in** that way we can create space for your private cloud._
 
 <Image zoom alt={"Generating a shareable link in the Pieces desktop app"} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SHAREABLE_LINK.gif" />
 
 1. After signing in and ensuring that you are **connected to the cloud**, go to any snippet inside the desktop application
-2. Once you have the snippet selected, press the "Sharable Link" icon on the Action menu nested on the right side of your screen.
-    - [Learn how to generate a sharable link from inside our Extensions and Plugins](/features/one-click-snippet-sharing)
-3. This will open up the "Shareable Link Drawer" that will have a few different possibilities:
-    - The link should already be present if you are connect to the cloud, or a spinner will be there with a message reading "Generating your sharable link"
-        - This process is normally only about 10 seconds (maximum)
+2. Once you have the snippet selected, press the "Shareable Link" icon on the Action menu nested on the right side of your screen.
+3. This will open up the "Shareable Link drawer" that will have a few different possibilities:
+    - The link should already be present if you are connected to the cloud, or a spinner will be there with a message reading "Generating your shareable link"
+        - This process normally only takes about 10 seconds
     - "Connect to cloud" will be present if your cloud connection did not complete automatically, but you can click the cloud icon to connect
     - if you are _still_ not signed in, you can do this from here and the text box will read "Connect your Account"
 
 ### Sharing as a GitHub Gist
-Sharing as a Gist is a great alternative for sharable links if you want to post the code to your [public gists,](/product-highlights-and-benefits/import-gists-from-github) so they are accessible to more people without having to send them all a link individually.
+Sharing as a Gist is a great alternative for Shareable Links if you want to post the code to your [public gists,](/product-highlights-and-benefits/import-gists-from-github) so they are accessible to more people without having to send them all a link individually.
 
 <Image zoom alt={"Sharing a snippet via GitHub Gist in the Pieces desktop app"} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SHARING_GISTS.gif" />
 
-To do this, navigate to the Sharable Link Drawer mentioned above, then:
+To do this, navigate to the Shareable Link drawer mentioned above, then:
 
-1. **Select the GitHub logo** to the right of your sharable link inside the input
+1. **Select the GitHub logo** to the right of your shareable link inside the input
     - _If you have not authenticated with GitHub **you will have to** in order to generate a Gist_
 2. (optional) **Create a title and a description**
     - you can create a title and a description from here, or you can skip this step and a generated title will be created for you
-3. **Press "Generate" and you'll get the link to the Gist**, and it can be found on your public gists on your GitHub account
+3. **Press "Generate" and you'll get the link to the Gist**, where it can be found on your public gists on your GitHub account
 
 #### Bundled Metadata Preview
-Every Gist has a _Markdown Preview_ built using our <a target="_blank" href="{{ links.internal.context_awareness_engine.origin_details }}">Context Awareness Engine and Origin Details</a> which include relevant and related information to the snippet's context.
+Every Gist has a _Markdown Preview_ built using our <a target="_blank" href="{{ links.internal.context_awareness_engine.origin_details }}">Context Awareness Engine and Origin Details</a> which includes relevant and related information to the snippet's context.
 
 ### Claiming a Custom Domain
 <Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/CUSTOM_SUBDOMAIN.gif" />
 
-Claiming your custom domain can be done from Pieces Desktop **only** - so be sure to [get the app](/installtion-getting-started/what-am-i-installing) if you want to claim your unique domain.
+Claiming your custom domain can be done from the Pieces Desktop App **only** - so be sure to [get the app](/installtion-getting-started/what-am-i-installing) if you want to claim your unique domain.
 
 To claim your custom personal domain:
 1. Open up your settings by pressing ` , ` or by click your user icon (if you aren't signed in via Google you may not have one here)
-2. Find "Claim your Domain" in the text box followed by .pieces.cloud
-3. Input the new unique name that you want (this will be on all of your sharable links)
+
+2. Find "Claim your Domain" in the text box followed by _.pieces.cloud_
+3. Input the new unique name that you want (this will be on all of your shareable links)
+
     - No special characters, no uppercase letters
     - example: ` powersnippets.pieces.cloud `
 
 **Important Note:** Updating your personal cloud domain can take up to 15 minutes. Don't worry, we'll notify you when this is complete.
 
-## Sending a Saved Material
-In order to send someone a link to your shared resource, simply take the url from inside the Sharable Link Drawer and paste it into places like:
-- GChat
-- Microsoft Teams ([we have an app for that](/extensions-plugins/teams))
-- Text Message via IOS Messenger or Android Messenger
 
-Each link that you generate and send looks slightly different, but all will be marked by your Custom Sharable link, just like in this example from our friends at [dart-tutorial](https://dart-tutorial.com):
+## Sending Someone a Saved Material
+In order to send someone a link to your shared resource, simply take the URL from inside the Shareable Link drawer and paste it into places like:
+- Google Chat
+- Microsoft Teams ([we have an app for that](/extensions-plugins/teams))
+- Text Message via iOS Messenger or Android Messenger
+
+Each link that you generate and send looks slightly different, but all will be marked by your Custom Shareable link, just like in this example from our friends at [dart-tutorial](https://dart-tutorial.com):
 
 `https://snippets.pieces.cloud/` + `?p=111d45b730`
 
 ## Saving a Shared Material you Received
 <Image zoom alt={"Saving a snippet from the Pieces Share Web App"} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/SAVE_FROM_WEB" />
 
-When you receive a sharable link from someone, you can start by ` cmd ` or ` ctrl ` clicking the link that you received or pasting it into your browser, which will open up our **Share Web App** that allows you to view the shared material before saving it.
+When you receive a shareable link from someone, you can start by clicking the link that you received or pasting it into your browser, which will open up our **Share Web App** that allows you to view the shared material before saving it.
 
 Once on this page, you can save the snippet to Pieces by pressing the ` Save to Pieces ` button at the top of the page.
 
@@ -76,7 +78,7 @@ You can now access and reuse the locally saved resource in the **Desktop App** o
 Try it out with this [python snippet](https://python.pieces.cloud/?p=8711459369)
 
 ## Updating Access or Data attached to Shared Snippets
-If you edit the resource or add additional context metadata, <a target="_blank" href="https://docs.pieces.app/overview">Pieces for Developers</a> will either recommend that you update the link or automatically update it for you. This happens in the background without generating a new access link, meaning previous recipients can stay up-to-date and you don't have to re-share.
+If you edit the resource or add additional context metadata, Pieces will either recommend that you update the link or have us automatically update it for you. This happens in the background without generating a new access link, meaning previous recipients can stay up-to-date and you don't have to re-share.
 
 Lastly, we know that accidental shares happen and permission levels can change. With that, you can always revoke a shareable link at any time.
 
