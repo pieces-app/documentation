@@ -1,14 +1,14 @@
 ---
-title: Auto Enrichment
-description: Learn how Pieces for Developers uses ML and AI with ChatGPT to enrich your code snippets.
+title: Auto Enrichment of Developer Materials | Pieces
+description: Learn how Pieces for Developers uses ML and AI with ChatGPT to enrich your code snippets with relevant context and metadata.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/features/auto-enrichment" />
 
 # Auto-Enrichment
-Pieces for Developers enriches your content as you save snippets and makes it easy to get back to where you originally saved your code.
+Pieces for Developers enriches your content as you save snippets, and makes it easy to get back to where you originally saved your code.
 
-[To learn how to Manage and Update Snippets and their metadata, click this](/features/managing-saved-materials)
+[Learn how to Manage and Update Snippets and their metadata](/features/managing-saved-materials)
 
 <Image alt={"Viewing automatically captured metadata in Pieces for Developers."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
 
@@ -16,16 +16,14 @@ Pieces for Developers enriches your content as you save snippets and makes it ea
 
 Shortcut: ` cmd/ctrl + i `
 
-All background processing that goes into Pieces gives you the ability to access more data around your resources and code snippets. You can view the information by:
+Pieces processes your saved materials completely in the background, giving you the ability to access more data around your resources and code snippets. You can view the information by:
 - Press ` cmd + i ` or ` ctrl + i ` to access the Context View
 - [In List View] pressing the _view all context_ button on the top right of the context preview
-- [In Gallery View] press the _manage context_ on the overlay when hovering the 'view all context' button or press the 'view all context' icon itself
-    - when hovering this icon you can also click the 'gear' icon to manage how often the overlay appears.
+- [In Gallery View] click _manage context_ on the overlay when hovering the 'view all context' button or press the 'view all context' icon itself
+    - when hovering this icon you can also click the 'gear' icon to manage how often the overlay appears
 
-[//]: # ([Read more about managing settings here]&#40;#&#41;)
-
-### Saving a Snippets Context
-Saving a snippet’s original context is helpful for organization and future use. Pieces automatically extracts the following contextual information:
+### Saving a Snippet's Origin Information
+Saving a snippet’s original context is helpful for organization and future use. Pieces automatically extracts and saves the following contextual information:
 - Project Name
 - Source File
 - Line Numbers
@@ -36,17 +34,17 @@ Saving a snippet’s original context is helpful for organization and future use
 ---
 
 ## Inside the Context View
-Once you enter the Context view, you will see data added both automatically via Pieces AI & GPT4, and also that you have [added manually](/features/managing-saved-materials).
+Once you enter the Context View, you will see data added both automatically via Pieces' AI & GPT-4, as well as any enrichments that you have [added manually](/features/managing-saved-materials).
 
-Whether you are in List or Gallery View, you will have access to the same set of sections.
+Whether you are in List or Gallery View, you will have access to the same set of enrichments.
 
 ### Description
 
 Shortcuts: ` cmd/ctrl + shift + N `
 
-You can press the entire _description_ box to open the "Edit Description Drawer" or use the ` cmd/ctrl + shift + N ` shortcut to edit the contents of the description context field.
+You can press the entire _description_ box, or use the ` cmd/ctrl + shift + N ` shortcut to edit the contents of the description context field.
 
-This section will by default be filled out, and you can reference the following example:
+This section will, by default, be filled out, and you can reference the following example:
 
 ```text
   📝 Custom Description:
@@ -64,15 +62,16 @@ This section will by default be filled out, and you can reference the following 
 ```
 
 A few things to note about this format:
+
 **Custom Description**
     - Comes default filled out as "Write a custom description" and is used as a space for you to write your own description
-**Smart Description**
-    - We auto generate this description and is used for search-ability, reading through your list of snippets, and is a description of what the snippet does.
 
-[//]: # (        - [you can use this feature to identify what a code snippet can do when you aren't sure]&#40;#&#41;)
+**Smart Description**
+    - We auto-generate this description of the saved snippet with AI to empower search-ability, reference of your list of snippets, and general organization
+        - This feature becomes very helpful to identify what a code snippet's purpose is if you lose track of the purpose
 
 **Suggested Searches**
-    - These are great search terms that you can use to find snippets that are similar to the resource they are attached to. These are good examples that you can compare to the examples found on the [Global Search Page](/features/global-search) and try them in the app.
+    - These are accurate search terms that you can use to find snippets that are similar to the resource they are attached to. These are pre-generated examples comparable to the examples found on the [Global Search](/features/global-search) feature in the Desktop App.
 
 ---
 
@@ -80,20 +79,20 @@ A few things to note about this format:
 
 Shortcut: ` cmd/ctrl + t `
 
-Open the Tags drawer by clicking anywhere overtop of the tags section, or by pressing the ` cmd/ctrl + t ` shortcut. This will bring pull up a list of tags that have already been [added when you saved the resource](/product-highlights-and-benefits/in-project-snippet-discovery), along with suggested snippets that you can click to quickly add to the snippet.
+Open the Tags drawer by clicking anywhere overtop of the tags section, or by pressing the ` cmd/ctrl + t ` shortcut. This will bring pull up a list of tags that have already been added when you saved the resource, along with suggested tags that you can click on to quickly add to the snippet.
 
-To create a custom tag, you can start typing once the drawer opens and add any tag you like directly into the preexisting tags list.
+To create a custom tag, you can start typing once the drawer opens and add any tag you'd like directly into the pre-existing tags list.
 
 Example Tags:
 ``` HTTP Request ```, ``` Flutter Framework ```, ``` Dart Project ```, ``` Conditional For Loop ```
 
 #### Types of Tags
-| screenshot of an auto generated tag |
-**Auto Generated**: tags that are added the moment you save a resource to Pieces, and contain a `sparkle` icon proceeding the tag name
+
+**Auto Generated**: tags that are added the moment you save a resource to Pieces, and contain a `sparkle` icon proceeding the tag name.
 
 <Image alt={"AI smart context example inside of Pieces Desktop."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/AI_GENERATED_SMART_CONTEXT.gif" />
 
-**Custom Tags**: tags that you can write yourself and add to your code, that will not contain the sparkle icon
+**Custom Tags**: tags that you can write yourself and add to your code, that will not contain the sparkle icon.
 
 #### Removing Tags
 To remove a tag:
@@ -101,7 +100,7 @@ To remove a tag:
 - A dialog will open up, and you can press "Delete" to confirm the removal of the tag
     - You can also press ` enter ` or ` return `
 - To cancel the deletion, press ` esc ` to go back to the tags drawer
-- (optional) you can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
+- (Optional) you can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions
 
 [//]: # ([Read more about managing your settings]&#40;#&#41;)
 
@@ -118,15 +117,15 @@ Note: In the header of related links, you can see the _total number_ of related 
 <Image alt={"Saving a snippet from Stack Overflow with the Pieces web extension"} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_LINKS_EXTERNAL_RESOURCES.gif" />
 
 #### Managing Related Links
-From inside the Related Links drawer, you can add new links by typing them directly into the text box at the top. Not all text input will be accepted, so it is important to add **a full http url** such as the following: [https://pieces.app/blog]()
+From inside the Related Links drawer, you can add new links by typing them directly into the text box at the top. Not all text input will be accepted, so it is important to add **a full http url** such as the following: [https://docs.pieces.app/]()
 
-**You can quickly copy any related link from inside the Related Links Drawer by pressing the copy button on the right side of the Related link pill**
+You can quickly copy any related link from inside the Related Links drawer by pressing the copy button on the right side of the Related Link pill.
 
-**Auto Generated**
+##### Auto-Generated Links:
 - links that are added the moment you save a resource to Pieces, and contain a ` sparkle ` icon proceeding the tag name
 - also will include the favicon of the website it has come from inside the related link pill
 
-**Custom Links**:
+##### Custom Links:
 - links that you can write yourself and add to your code, that will not contain the sparkle icon
 - will still include the favicon of the website
 
@@ -136,19 +135,19 @@ To remove a specific link from the resource it is attached to, inside the Relate
 - A confirmation drawer will open up, where you can confirm the removal by pressing ` Delete ` button
     - You can also press ` enter ` or ` return `
 - To cancel the deletion, press ` esc ` to go back to the Related Links drawer
-- (optional) you can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
+- (optional) you can press "Do not ask me again" to quickly delete a number of links from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
 
 ---
 
-### Sharable Links
+### Shareable Links
 
 Shortcut: ` cmd/ctrl + l `
 
-Sharable links are accessible from this view, and can be opened using the ` cmd/ctrl + l ` shortcut or by clicking on the section inside the Context View. This will open the Sharable Link Drawer where you can manage the sharable link for a specific resource.
+Shareable links are accessible from this view, and can be opened using the ` cmd/ctrl + l ` shortcut or by clicking on the section inside the Context View. This will open the Shareable Link drawer where you can manage the shareable link for a specific resource.
 
-**Note that all Resources have their own unique sharable link, and each have to be generated on their own.**
+**Note that all code snippets and resources have their own unique shareable link, and each have to be generated on their own.**
 
-Read about all the ins and outs of sharable links on the [One Click Snippet Sharing Page](/features/one-click-snippet-sharing).
+Read about all the [ins-and-outs of shareable links](/features/one-click-snippet-sharing).
 
 ---
 
@@ -160,7 +159,7 @@ To facilitate communication among and between teams, Pieces for Developers attac
 
 To access related People, you can click the Related People section or press the ` cmd/ctrl + p ` shortcut.
 
-<Image alt={"Showing related people on a snippet with a sharable link."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
+<Image alt={"Showing related people on a snippet with a shareable link."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
 
 #### Managing Related People
 If a snippet is saved from a location locally that has no crossover with other users, it is likely that when you save a snippet it will have the following message:
@@ -173,20 +172,20 @@ If a snippet is saved from a location locally that has no crossover with other u
 You can add related people manually with their name and email to any resource. When you share that resource, the information that you have attached will be included.
 
 It requires two fields:
-1. A name for the user to display in the related people section
-2. An email for the user that is related to the snippet.
+1. A name for the user to display in the Related People section
+2. An email for the user that is related to the snippet
 
-If a related person is added to your list of People and you wish to remove it, you can do so by clicking the ` edit ` pencil icon when you hover the Related Person in the Related People Drawer. Once you are in the edit drawer, you can click ` delete ` next to the ` save ` Button on the bottom of the drawer and the Related Person will be removed.
+If a related person is added to your list of People and you wish to remove it, you can do so by clicking the ` edit ` pencil icon when you hover over the related person in the Related People drawer. Once you are in the edit drawer, you can click ` delete ` next to the ` save ` Button on the bottom of the drawer and the person will be removed.
 
 ---
 
 ### Security Practices
 <Image alt={"Protecting Sensitive information from being shared."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
 
-<a target="_blank" href="https://pieces.app">Pieces for Developers</a> facilitates security and programming best practices by detecting sensitive information and warning against accidental uploads or sharing.
+Pieces for Developers facilitates security and programming best-practices by detecting sensitive information and warning against accidental uploads or sharing.
 
 #### Smart Warnings and Sensitive Information Detection
-Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials.
+Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials. Pieces will auto-detect this sensitive information, and warn you before sharing a snippet with a shareable link.
 
 
 
