@@ -1,5 +1,5 @@
 ---
-title: Import Gists from GitHub
+title: Import Gists from GitHub | Pieces
 description: When you import Gists, Pieces attaches metadata from the original repo along with PRs, related people, and additional context.
 ---
 
@@ -9,10 +9,32 @@ description: When you import Gists, Pieces attaches metadata from the original r
 
 <Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/IMPORT_GIST.gif" />
 
-Import saved code from GitHub with the <a target="_blank" href="{{ links.website.home }}">Pieces for Developers | Desktop App</a>. When you import Gists, Pieces attaches metadata from the original repo along with PRs, related people, and additional context.
+Import saved code from GitHub with the <a target="_blank" href="https://docs.pieces.app/overview">Pieces for Developers | Desktop App</a>. When you import Gists, Pieces attaches metadata from the original repo along with PRs, related people, and additional context.
 
-## Gist Metadata
-Each code snippet that you save as a Gist is packed full of metadata and information about the repository you saved it from. Traditionally when you save a Gist, its origin can be lost unless you take a lot of extra steps or click through dozens of pull requests and commits.
+## How to Import Gists into Pieces Desktop
+Before proceeding to import Gists from GitHub into Pieces, make sure that you are signed in, and
+_if you are signed in to Google and GitHub, be sure that the **primary emails on both accounts match**._
 
-But when you import the Gists you've already created to Pieces, metadata that was previously hidden can be found in the Information View of Pieces for Developers.
+To import the Gists and upgrade them:
+1. **Press 'Add Snippets' > 'Import Gists'**
+2. The Snippet Discovery window will open, as we use our Snippet Discovery feature to [enrich your snippets](/features/auto-enrichment) as you import them from GitHub, so they do not lose their context. 
+3. Once you press "Select Gists" - in a similar way as [Snippet Discovery](/product-highlights-and-benefits/in-project-snippet-discovery), you will be presented with a list of Snippets that have been discovered from your GitHub account.
+    - if you are not seeing your Gists, make sure they are set to **public** otherwise they will not be detected
+4. Select the Gists that you want to save by pressing the checkbox to select each one individually, or by pressing "save all" in the top right.
+5. You will be brought back to your default view where you can see all of the snippets that you just discovered inside your Gists.
+
+
+### Gist Metadata
+Each code snippet that you save as a Gist is packed full of metadata and information about the repository you saved it from. Traditionally, when you save a Gist, it's origin woould be lost unless you take extra steps to click through dozens of pull requests and commits.
+
+Some of the metadata that you may get when importing Gists into the Pieces Desktop App are:
+- related links to URLs about the repo the code came from
+- commit history included inside the description of the snippet
+- resource documentation links for packages used in the config files
+- other users that are included in the comments or pull request
+
+### Where can I see this newly uncovered data?
+If you toggle to the **Context View** you can [find all the metadata that came through from GitHub](/features/auto-enrichment), and edit it as you'd like.
+
+[Learn more about managing enrichments and saved materials](/features/managing-saved-materials)
 

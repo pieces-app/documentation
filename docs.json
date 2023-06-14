@@ -14,6 +14,11 @@
       "link": "https://pieces.app"
     },
     {
+      "title": "Coding Blog",
+      "icon": "newspaper",
+      "link": "https://code.pieces.app/blog"
+    },
+    {
       "title": "Product Updates",
       "icon": "pencil",
       "link": "https://pieces.app/updates"
@@ -30,14 +35,6 @@
     }
   ],
   "sidebar": [
-    ["Product Highlights & Benefits", [
-      ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
-      ["Saving Screenshots & OCR", "/product-highlights-and-benefits/saving-screenshots"],
-      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
-      ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
-      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
-    ]
-    ],
     ["Installation & Getting Started", [
       ["Overview", "/installation-getting-started/what-am-i-installing"],
       ["Windows", "/installation-getting-started/windows"],
@@ -45,20 +42,32 @@
       ["Linux", "/installation-getting-started/linux"]
     ]
     ],
+    ["Apps, Extensions & Plugins", [
+      ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
+      ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
+      ["Pieces Edge Addon", "/extensions-plugins/edge"],
+      ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
+      ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
+      ["Pieces Obsidian Plugin", "/extensions-plugins/obsidian"],
+      ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
+    ]],
+    ["Product Highlights & Benefits", [
+      ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
+      ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
+      ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
+      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
+      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
+    ]
+    ],
     ["Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
-      ["Single Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Code Completion", "/features/code-completion"],
+      ["Creating & Generating Code", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
-      ["Workflow Activity", "/features/workflow-activity"],
-      ["Manage Saved Materials", "/features/managing-saved-materials"],
-      ["Creation & Generation", "/features/creation-and-generation"],
-      ["Transforming Snippets", "/features/transforming-snippets"]
-    ]],
-    ["Extensions & Plugins Support", [
-      ["Pieces Chrome Extension", "/extensions-plugins-support/troubleshooting-chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins-support/troubleshooting-edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins-support/troubleshooting-jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins-support/troubleshooting-vscode"]
+      ["Material Storage & Management", "/features/managing-saved-materials"],
+      ["One Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Snippet Transformations", "/features/transforming-snippets"],
+      ["Workflow Activity", "/features/workflow-activity"]
     ]],
     ["Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
@@ -72,12 +81,14 @@
   ],
   "variables": {
     "versions": {
-      "pfd": "v1.13.5",
+      "pfd": "v2.0.2",
       "chrome": "v2.6.0",
       "jetbrains": "v5.2.0",
       "vscode": "v0.6.0",
-      "pieces_os": "v4.2.2",
-      "edge": "v2.5.3"
+      "obsidian": "v0.1.0",
+      "pieces_os": "v5.0.0",
+      "edge": "v2.5.3",
+      "teams": "v1.1.0"
     },
     "links": {
       "website": {
@@ -91,7 +102,9 @@
         "chrome": "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
         "jetbrains": "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
         "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
-        "edge": "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim"
+        "obsidian": "https://obsidian.md/plugins?id=obsidian-pieces",
+        "edge": "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim",
+        "teams": "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fapp%2F789f23b3-d882-45ca-b3a3-de7f850656ea%3Fsource%3Dapp-details-dialog&type=app&deeplinkId=a5fe0a60-b3a1-42a2-9a57-a5ec71696573&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
       },
       "snippets": {
         "python": {
@@ -145,13 +158,13 @@
           "smart_warnings": "https://docs.pieces.apps/features/auto-enrichment#smart-warnings"
         },
         "global_search_suggestion_reuse": {
-          "global_search": "https://docs.pieces.app/global-search-suggestion-reuse/global_search",
-          "search_settings": "https://docs.pieces.app/global-search-suggestion-reuse/adjusting-settings-for-search",
-          "sort_scope_relevant": "https://docs.pieces.app/global-search-suggestion-reuse/sort-scope-relevant",
-          "workflow_activity_stream": "https://docs.pieces.app/global-search-suggestion-reuse/workflow-activity"
+          "global_search": "https://docs.pieces.app/features/global_search",
+          "search_settings": "https://docs.pieces.app/features/global-search#adjusting-settings-for-optimal-search-results",
+          "sort_scope_relevant": "https://docs.pieces.app/features/global-search#sorting-by-realtime-or-scope-relevant-suggestions",
+          "workflow_activity_stream": "https://docs.pieces.app/features/workflow-activity"
         },
         "personalized_link_sharing": {
-          "single_click_link_sharing": "https://docs.pieces.app/single-click-link-sharing",
+          "single_click_snippet_sharing": "https://docs.pieces.app/features/one-click-snippet-sharing",
           "save_for_offline": "https://docs.pieces.app/features/one-click-snippet-sharing#saving-a-shared-material",
           "share_via_github_gist": "https://docs.pieces.app/one-click-snippet-sharing#share-via-github-gist"
         },

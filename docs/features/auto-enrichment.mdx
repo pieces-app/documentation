@@ -1,94 +1,197 @@
 ---
-title: Auto Enrichment
-description: Learn how Pieces for Developers uses ML and AI with ChatGPT to enrich your code snippets.
+title: Auto Enrichment of Developer Materials | Pieces
+description: Learn how Pieces for Developers uses ML and AI with ChatGPT to enrich your code snippets with relevant context and metadata.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/features/auto-enrichment" />
 
 # Auto-Enrichment
-Pieces for Developers enriches your content as you save snippets and makes it easy to get back to where you originally saved your code.
+Pieces for Developers enriches your content as you save snippets, and makes it easy to get back to where you originally saved your code.
 
-## Origin Details
-When you save something to <a target="_blank" href="{{ links.website.home }}">Pieces for Developers</a>, it not only saves the material itself; but further, our Context Awareness Engine and Origin Details automatically attach related context & metadata, enabling powerful organization, search, and suggestion capabilities.
+[Learn how to Manage and Update Snippets and their metadata](/features/managing-saved-materials)
 
-**Reference code is everywhere these days. Whether it's a solution that you're adapting from Stack Overflow or doc-site boilerplate sent over Slack or Microsoft Teams, all code comes from somewhere.**
+<Image alt={"Viewing automatically captured metadata in Pieces for Developers."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
 
-Where a code snippet came from and the larger context it was taken out of is often lost when saving or sharing reference materials, making it incredibly difficult to find, share, or reuse it later on.
+## View Metadata & Enrichment Details
 
-## Protecting Context
+Shortcut: ` cmd/ctrl + i `
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
+Pieces processes your saved materials completely in the background, giving you the ability to access more data around your resources and code snippets. You can view the information by:
+- Press ` cmd + i ` or ` ctrl + i ` to access the Context View
+- [In List View] pressing the _view all context_ button on the top right of the context preview
+- [In Gallery View] click _manage context_ on the overlay when hovering the 'view all context' button or press the 'view all context' icon itself
+    - when hovering this icon you can also click the 'gear' icon to manage how often the overlay appears
 
-In an effort to maintain this invaluable context, Pieces for Developers automatically extracts and associates useful origin details every time you save a resource.
-
-> Project Name, Source File, Line Numbers, Collaborators, Solution Publishers, Application Source, etc.
-
-## AI-Generated Smart Labels
-Doubling down on our efforts to make search and suggestion world-class, Pieces for Developers ships with an offline and on-device ML Material Labeling model that automatically generates smart labels for everything you save.
-
-> “HTTP Request”, “Flutter Framework”, "Dart Project", "Conditional For Loop"
-
-
-## User Added Tags
-
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/AI_GENERATED_SMART_CONTEXT.gif" />
-
-In addition to our auto-generated smart labels, our Context Awareness Engine automatically layers in tags that correspond to origin details and related links.
-
-You can easily add your own tags as a manual way to further organize your saved resources while driving a more personalized search and suggestion experience.
-
-> Our users are saving more than ever. That said, a large part of our material enrichment efforts are allocated toward making searches and suggestions first-class.
-
-
-## AI-Generated Smart Descriptions
-With these goals in mind, Pieces for Developers ships with an offline and on-device ML Material Description model that generates a smart description for everything you save.
-
-> e.g., What the code snippet or resource is, what it does, how to use it, and how it might be used in the future.
+### Saving a Snippet's Origin Information
+Saving a snippet’s original context is helpful for organization and future use. Pieces automatically extracts and saves the following contextual information:
+- Project Name
+- Source File
+- Line Numbers
+- Collaborators
+- Application Source (Chrome, Edge, VS Code, etc.)
+- Solution Publishers
 
 ---
 
-## Associated Commit Messages
+## Inside the Context View
+Once you enter the Context View, you will see data added both automatically via Pieces' AI & GPT-4, as well as any enrichments that you have [added manually](/features/managing-saved-materials).
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/SMART_DESCRIPTION.gif" />
+Whether you are in List or Gallery View, you will have access to the same set of enrichments.
 
-These smart descriptions, coupled with relevant commit messages extracted via our Context Awareness Engine, enable awesome reference and reuse experiences later on in a user's workflow.
+### Description
 
+Shortcuts: ` cmd/ctrl + shift + N `
 
+You can press the entire _description_ box, or use the ` cmd/ctrl + shift + N ` shortcut to edit the contents of the description context field.
 
-## Related People
-These days, technical work is more people-centric than ever. Writing and reviewing code, upskilling on ever-evolving best practices, migrating to new framework versions, and onboarding new developers— it all builds on the work of others.
+This section will, by default, be filled out, and you can reference the following example:
 
-It's a challenge simply to know who to reach out to for additional context, who to add as a reviewer on pull requests, or who might provide a different perspective to save some serious time and prevent major headaches.
+```text
+  📝 Custom Description:
+  Write a custom description here.
+
+  💡 Smart Description:
+  The article explains how to use the Snipping Tool feature in Windows to capture screenshots.
+
+  🔎 Suggested Searches:
+  Windows screenshot tool
+  How to capture screenshots on Windows
+  Microsoft support screenshot guide
+  Windows snipping tool tutorial
+  Windows screenshot shortcut
+```
+
+A few things to note about this format:
+
+**Custom Description**
+    - Comes default filled out as "Write a custom description" and is used as a space for you to write your own description
+
+**Smart Description**
+    - We auto-generate this description of the saved snippet with AI to empower search-ability, reference of your list of snippets, and general organization
+        - This feature becomes very helpful to identify what a code snippet's purpose is if you lose track of the purpose
+
+**Suggested Searches**
+    - These are accurate search terms that you can use to find snippets that are similar to the resource they are attached to. These are pre-generated examples comparable to the examples found on the [Global Search](/features/global-search) feature in the Desktop App.
 
 ---
 
-## What problem does this solve?
+### Tags
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
+Shortcut: ` cmd/ctrl + t `
 
-To help solve this dilemma, our Context Awareness Engine automatically associates Relevant Collaborators, Maintainers, and Content Authors with the resources you save.
+Open the Tags drawer by clicking anywhere overtop of the tags section, or by pressing the ` cmd/ctrl + t ` shortcut. This will bring pull up a list of tags that have already been added when you saved the resource, along with suggested tags that you can click on to quickly add to the snippet.
+
+To create a custom tag, you can start typing once the drawer opens and add any tag you'd like directly into the pre-existing tags list.
+
+Example Tags:
+``` HTTP Request ```, ``` Flutter Framework ```, ``` Dart Project ```, ``` Conditional For Loop ```
+
+#### Types of Tags
 
 
-## Related Links, External Resources, & Reference Materials
-More and more developer resources live online nowadays. Saving the links you found while researching or problem-solving in the browser, code, or documentation has never been easier.
+**Auto Generated**
+- tags that are added the moment you save a resource to Pieces, and contain a `sparkle` icon proceeding the tag name.
+
+<Image alt={"AI smart context example inside of Pieces Desktop."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/AI_GENERATED_SMART_CONTEXT.gif" />
+
+**Custom Tags**
+- tags that you can write yourself and add to your code, that will not contain the sparkle icon.
+
+
+#### Removing Tags
+To remove a tag:
+- Press the ` X ` icon to the right of a tag's title
+- A dialog will open up, and you can press "Delete" to confirm the removal of the tag
+    - You can also press ` enter ` or ` return `
+- To cancel the deletion, press ` esc ` to go back to the tags drawer
+
+- (Optional) you can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions
+
+[//]: # ([Read more about managing your settings]&#40;#&#41;)
 
 ---
 
-## What type of Links?
+### Related Links
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_LINKS_EXTERNAL_RESOURCES.gif" />
+Shortcut: ` cmd/ctrl + k `
 
-With <a target="_blank" href="{{ links.website.home }}">Pieces for Developers</a>, you can quickly associate URLs to external resources like Documentation Pages, Wiki Links, Jira Tickets, Pull Requests, and <a target="_blank" href="{{ links.internal.personalized_link_sharing.share_via_github_gist }}">GitHub Issues </a>with your saved materials.
+Related links can be opened by clicking on the _background_ of the related links section, or via the ` cmd/ctrl + k ` shortcut - clicking any of the individual links directly will cause them to open in your browser when you press them.
+
+Note: In the header of related links, you can see the _total number_ of related links that you have.
+
+<Image alt={"Saving a snippet from Stack Overflow with the Pieces web extension"} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_LINKS_EXTERNAL_RESOURCES.gif" />
+
+#### Managing Related Links
+From inside the Related Links drawer, you can add new links by typing them directly into the text box at the top. Not all text input will be accepted, so it is important to add **a full http url** such as the following: [https://docs.pieces.app/]()
 
 
-## Smart Warnings and Sensitive Information Detection
-Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials.
+You can quickly copy any related link from inside the Related Links drawer by pressing the copy button on the right side of the Related Link pill.
+
+##### Auto-Generated Links:
+- links that are added the moment you save a resource to Pieces, and contain a ` sparkle ` icon proceeding the tag name
+- also will include the favicon of the website it has come from inside the related link pill
+
+##### Custom Links:
+- links that you can write yourself and add to your code, that will not contain the sparkle icon
+- will still include the favicon of the website
+
+#### Deleting Related Links
+To remove a specific link from the resource it is attached to, inside the Related Links drawer:
+- Press the ` trashcan ` icon next to the ` copy ` icon on the right side of the related link
+- A confirmation drawer will open up, where you can confirm the removal by pressing the ` delete ` key
+    - You can also press ` enter ` or ` return `
+- To cancel the deletion, press ` esc ` to go back to the Related Links drawer
+- (optional) you can press "Do not ask me again" to quickly delete a number of links from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
 
 ---
 
-## Security Practices
+### Shareable Links
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
+Shortcut: ` cmd/ctrl + l `
 
-<a target="_blank" href="https://pieces.app">Pieces for Developers</a> facilitates security and programming best practices by detecting sensitive information and warning against accidental uploads or sharing.
+Shareable links are accessible from this view, and can be opened using the ` cmd/ctrl + l ` shortcut or by clicking on the section inside the Context View. This will open the Shareable Link drawer where you can manage the shareable link for a specific resource.
+
+**Note that all code snippets and resources have their own unique shareable link, and each have to be generated on their own.**
+
+Read about all the [ins-and-outs of shareable links](/features/one-click-snippet-sharing).
+
+---
+
+### Related People
+
+Shortcut: ` cmd/ctrl + p `
+
+To facilitate communication among and between teams, Pieces for Developers attaches Related People to your saved snippets. Related People include content authors, open-source maintainers, GitHub collaborators, and others who are part of a snippet’s context.
+
+To access related People, you can click the Related People section or press the ` cmd/ctrl + p ` shortcut.
+
+<Image alt={"Showing related people on a snippet with a shareable link."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
+
+#### Managing Related People
+If a snippet is saved from a location locally that has no crossover with other users, it is likely that when you save a snippet it will have the following message:
+-  "No People Detected"
+    - The advantage to saving snippets by [importing them from GitHub gists](/product-highlights-and-benefits/import-gists-from-github) is other users who have commented on the PR, contributed to the repo, or any other involvement will show up here under related users.
+
+[//]: # ([Learn more about Migrating from GitHub to Pieces Desktop]&#40;#&#41;)
+
+#### Adding Related People Manually
+You can add related people manually with their name and email to any resource. When you share that resource, the information that you have attached will be included.
+
+It requires two fields:
+1. A name for the user to display in the Related People section
+2. An email for the user that is related to the snippet
+
+If a related person is added to your list of People and you wish to remove it, you can do so by clicking the ` edit ` pencil icon when you hover over the related person in the Related People drawer. Once you are in the edit drawer, you can click ` delete ` next to the ` save ` Button on the bottom of the drawer and the person will be removed.
+
+---
+
+### Security Practices
+<Image alt={"Protecting Sensitive information from being shared."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
+
+Pieces for Developers facilitates security and programming best-practices by detecting sensitive information and warning against accidental uploads or sharing.
+
+#### Smart Warnings and Sensitive Information Detection
+Some of the most commonly saved snippets are Powershell and Command Line instructions, boilerplate for unit tests, .env variables, HTTP requests, and CI/CD build configs. These often contain sensitive data like API keys, auth tokens, usernames, passwords, or service account credentials. Pieces will auto-detect this sensitive information, and warn you before sharing a snippet with a shareable link.
+
+
 
