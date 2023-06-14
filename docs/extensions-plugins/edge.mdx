@@ -1,6 +1,6 @@
 ---
 title: Pieces for Developers Edge Addon
-description: Troubleshoot issues that you are having, or reach out to Pieces support to get assistance with the Pieces for Developers Chrome Extension.
+description: Troubleshoot issues before reaching out to Pieces support to get assistance with the Pieces for Developers Edge Addon.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/edge" />
@@ -66,6 +66,13 @@ export const HeaderLogoImage = props => {
 
 Using the Pieces Edge Addon with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
 
+## Installing the Extension
+**Note:** In order to save code with the Pieces Edge Addon, you must have <a target="blank" href="{{ links.website.pfd_desktop_intall }}">Pieces OS and Pieces for Developers.</a> 
+
+To add the extension to Microsoft Edge, visit our listing on <a target="blank" href="https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim"> the Microsoft Edge Marketplace.</a>
+
+Once you've added it to Edge, refresh your browser and you'll see the Pieces buttons appear below code blocks on the web.
+
 ## Where are my Saved Snippets Stored?
 _The <a target="_blank" href="{{ links.installation.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Edge Addon in order for the extension to work properly._
 
@@ -84,17 +91,39 @@ This means that instead of copying code and pasting it into a message, you can c
 
 The recipient will also get the title, description, related links, and other context about the snippet.
 
-
-## Troubleshooting the Pieces Buttons
+## Why aren't the Pieces Buttons appearing?
 There are a few reasons why the Pieces buttons may not be appearing:
-1. Pieces OS isn't running.
+
+1. **Pieces OS isn't running.**
  - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on MacOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking on Pieces OS in your Applications folder.
  - If you need to download and install Pieces OS, please visit our homepage.
 
-2. You've disabled the Pieces buttons for this website.
+2. **You've disabled the Pieces buttons for this website.**
  - Double-check that you haven't disabled the Pieces buttons for this site by navigating to the Edge Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
 
-3. This website doesn't have detectable code.
+3. **This website doesn't have detectable code.**
 The code on this site might be embedded in an iframe, or it might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-**If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!**
+If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
+
+## How do I remove the Pieces Buttons from a site?
+If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the extension settings.
+
+1. Right-click the Pieces icon in the top right corner of your browser and choose “Settings.”
+2. Toggle the "Disable Pieces buttons" option. The page will automatically refresh and the Pieces buttons will disappear.
+
+## Can I Customize the Pieces Addon?
+**Definitely!**
+To customize your Pieces Edge Addon experience, click on the Pieces icon in the upper right corner of your browser.
+
+Hit the Settings icon in the top right and set your preferences.
+
+<Image zoom src="/assets/theme_for_chrome.png" />
+
+You can adjust the following Settings for the Pieces Edge Addon:
+1. The placement of the Pieces buttons
+2. Toggle between dark mode and light mode
+3. Decide if you'd like Pieces buttons to be enabled or disabled on a webpage by default
+4. Manage your website blacklist
+5. Adjust the minimum number of characters necessary to recognize a code block
+6. Adjust the functionality of the Copy & Save Button
