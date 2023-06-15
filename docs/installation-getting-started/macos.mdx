@@ -59,6 +59,10 @@ export const InstallButtonSilicon = props => {
     </a>
 }
 
+export const Spacer = props => {
+    return <div style={{ height: "25px" }}></div>
+}
+
 # Getting Started with Pieces for Developers on macOS
 <ReleasePill>Compatible with macOS 10.15 Catalina or higher</ReleasePill>
 
@@ -66,6 +70,8 @@ export const InstallButtonSilicon = props => {
 
 <InstallButtonIntel>Download Pieces Package (Intel)</InstallButtonIntel>
 <InstallButtonSilicon>Download Pieces Package (Apple Silicon)</InstallButtonSilicon>
+
+<Spacer></Spacer>
 
 <Accordion title={"Alternative Installation Methods"}>
     If you aren't sure which of these you need, click "Download Pieces Package" above - it will install both applications and manage them as updates are released.
