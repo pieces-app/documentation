@@ -23,8 +23,26 @@ export const ReleasePill = props => {
     </a>
 }
 
-export const InstallButton = props => {
+export const InstallButtonIntel = props => {
     return <a target="_blank" style={{textDecoration: "none"}} href="{{ links.installation.pieces_pkg }}">
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p style={{
+                padding: "8px 20px",
+                borderRadius: "8px",
+                border: "1px solid #f3f5f6",
+                color: "white",
+                fontWeight: "500",
+                background: "black",
+                marginBottom: "8px",
+                marginTop: "3px",
+                marginRight: "16px"
+            }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const InstallButtonSilica = props => {
+    return <a target="_blank" style={{textDecoration: "none"}} href="#">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -46,7 +64,23 @@ export const InstallButton = props => {
 
 ![](/assets/installation/robots_macos.png)
 
-<InstallButton>Download Pieces Package</InstallButton>
+<InstallButtonIntel>Download Pieces Package (Intel)</InstallButtonIntel>
+<InstallButtonSilica>Download Pieces Package (Apple Silica)</InstallButtonSilica>
+
+<Accordion title={"Alternative Installation Methods"}>
+    If you aren't sure which of these you need, click "Download Pieces Package" above - it will install both applications and manage them as updates are released.
+
+    If this isn't your first rodeo, here is the list of downloadable files for macOS:
+
+    **Pieces OS DMG (Standalone Mac)** | [Download Here](https://builds.pieces.app/stages/production/os_server/dmg/download)
+
+    **Pieces for Developers DMG (Standalone Mac)** | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/dmg/download)
+
+    **Pieces OS DMG ARM64 (Standalone Mac)** | [Download Here](https://builds.pieces.app/stages/production/os_server/dmg-arm64/download)
+
+    **Pieces for Developers DMG ARM64 (Standalone Mac)** | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/dmg-arm64/download)
+
+</Accordion>
 
 ## Steps to Install
 1. Download the Pieces for Developers Package Installer and proceed with the installation.
