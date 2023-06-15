@@ -2,7 +2,6 @@
   "name": "Pieces for Developers",
   "theme": "#BFC5EA",
   "googleTagManager": "GTM-K8C6QWB",
-  "twitter": "getpieces",
   "logo": "/assets/pieces_dark.png",
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
@@ -32,6 +31,16 @@
       "title": "YouTube Channel",
       "icon": "youtube",
       "link": "https://youtube.com/@getpieces"
+    },
+    {
+      "title": "Discord",
+      "icon": "discord",
+      "link": "https://discord.gg/getpieces"
+    },
+    {
+      "title": "Contact Support",
+      "icon": "headset",
+      "link": "https://getpieces.typeform.com/to/mCjBSIjF"
     }
   ],
   "sidebar": [
