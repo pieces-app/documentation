@@ -65,7 +65,13 @@ export const HeaderLogoImage = props => {
     return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/chrome_logo.png" }/>
 }
 
+export const Spacer = props => {
+    return <div style={{ width: "8px"}}></div>
+};
+
 <GridFlexRowBaseline>
+    <Image width={"50%"} src={"/assets/chrome/pfdxchrome.png"} />
+    <Spacer></Spacer>
     <h1>Pieces Chrome Extension</h1>
 </GridFlexRowBaseline>
 
