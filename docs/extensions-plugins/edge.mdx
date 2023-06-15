@@ -55,6 +55,10 @@ export const HeaderLogoImage = props => {
     return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/edge_logo.png" }/>
 }
 
+export const Spacer = props => {
+    return <div style={{ width: "8px"}}></div>
+};
+
 <GridFlexRow>
     <h1>Pieces Edge Addon</h1>
 </GridFlexRow>
@@ -85,7 +89,7 @@ To view and reuse your snippets, just open the Pieces desktop app and scroll thr
 
 <GridFlexRow>
     ![The Pieces Edge Extension shows the button that copies and saves a snippet.](/assets/chrome/copy_and_save.png)
-
+    <Spacer></Spacer>
     ![The Pieces Edge Extension shows the button that creates a sharable link.](/assets/chrome/share.png)
 </GridFlexRow>
 
