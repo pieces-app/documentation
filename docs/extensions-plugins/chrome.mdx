@@ -51,14 +51,25 @@ export const GridFlexRow = props => {
     }}>{props.children}</div>;
 };
 
+export const GridFlexRowBaseline = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap",
+        alignItems: "baseline"
+    }}>{props.children}</div>;
+};
+
 export const HeaderLogoImage = props => {
     return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/chrome_logo.png" }/>
 }
 
-<GridFlexRow>
+<GridFlexRowBaseline>
     <Image width="25%" src="/assets/chrome_logo.png" />
+    <div style={"width: 8px"}></div>
     <h1>Pieces Chrome Extension</h1>
-</GridFlexRow>
+</GridFlexRowBaseline>
 
 
 <GridFlexRow>
