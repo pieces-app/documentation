@@ -1,0 +1,263 @@
+---
+title: Pieces for Developers JupyterLab Plugin
+description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers Obsidian Plugin.
+---
+
+<link
+  rel="canonical"
+  href="https://docs.pieces.app/extensions-plugins/jupyterlab"
+/>
+
+export const InstallButton = (props) => {
+  return (
+    <a
+      style={{ textDecoration: "none" }}
+      target="_blank"
+      href="{{ links.extensions.jupyterlab }}"
+    >
+      <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
+        <p
+          style={{
+            padding: "8px 20px",
+            borderRadius: "8px",
+            border: "1px solid #f3f5f6",
+            color: "white",
+            fontWeight: "500",
+            background: "black",
+            marginBottom: "8px",
+            marginTop: "3px",
+            marginRight: "16px",
+          }}
+        >
+          {props.children}
+        </p>
+      </div>
+    </a>
+  );
+};
+
+export const ReleasePill = (props) => {
+  return (
+    <a
+      style={{ textDecoration: "none" }}
+      target="_blank"
+      href={ props.src }
+    >
+      <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
+        <p
+          class="dark:text-white text-black"
+          style={{
+            padding: "8px 20px",
+            borderRadius: "8px",
+            border: "1px solid #f3f5f6",
+            backgroundColor: "transparent",
+            fontWeight: "500",
+            marginBottom: "8px",
+            marginTop: "3px",
+            marginRight: "16px",
+          }}
+        >
+          {props.children}
+        </p>
+      </div>
+    </a>
+  );
+};
+
+export const GridFlexRow = (props) => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "start",
+        flexWrap: "wrap",
+      }}
+    >
+      {props.children}
+    </div>
+  );
+};
+
+export const HeaderLogoImage = (props) => {
+  return (
+    <img
+      style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }}
+      src={"/assets/obsidian_logo.png"}
+    />
+  );
+};
+
+<GridFlexRow>
+  <h1>Pieces Obsidian Plugin</h1>
+</GridFlexRow>
+
+<GridFlexRow>
+  <InstallButton>Get the Obsidian Plugin</InstallButton>
+  <ReleasePill src="https://github.com/pieces-app/obsidian-pieces" children="Current Version: {{ versions.obsidian }}"></ReleasePill>
+</GridFlexRow>
+
+<br></br>
+
+# Your Guide to Getting Started with the Pieces For Developers Obsidian Plugin
+
+_Pieces For Developers captures **NO identifiable user data**. Our **Local only** architecture means your notes never have to leave your device!_
+
+_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Obsidian Plugin in order for the Plugin to work properly._
+
+## Install Instructions
+
+[Installation Instructions](https://github.com/pieces-app/obsidian-pieces#install-instructions) for the latest Pieces for Obsidian
+release:
+
+1. Install `Obsidian42 - BRAT` from the Community Plugins in Obsidian
+2. Go to the `Obsidian42 - BRAT` plugin settings
+3. Click `Add Beta Plugin`
+4. Enter `https://github.com/pieces-app/obsidian-pieces` into the input
+5. Click `Add Plugin`
+6. Enable `Auto-update plugins at startup` in the BRAT plugin settings
+7. Go back to Community Plugins and enable the `Pieces For Developers` plugin
+
+
+## Save your Snippets
+
+**To save a Snippet, try one of these:**
+
+- Highlight the text, right-click, and select "Save to Pieces."
+- Click the Pieces button within any code block.
+- Highlight the desired code and use a dedicated keyboard shortcut.
+
+<Image
+  zoom
+  src="/assets/obsidian/obsidian_screenshot.png"
+  alt="Example of saving a snippet using the obsidian Pieces plugin"
+/>
+
+## Find your Snippets
+
+Open the Pieces View from the Ribbon Menu.
+
+- Sort by **recent** or by **language**
+- Search your snippets to save time leafing through your markdown files.
+
+<Image
+  zoom
+  src="/assets/obsidian/OBSIDIAN_SEARCH.gif"
+  alt="Example of searching for snippets using the obsidian Pieces plugin."
+/>
+
+## Use your Snippets
+
+- Copy and share your snippets from the Pieces View
+- You can expand your code snippets to view automatically generated metadata
+- View your snippets with syntax highlighting
+
+<Image
+  zoom
+  src="/assets/obsidian/OBSIDIAN_VIEWPIECE.gif"
+  alt="Example of using a snippet that's been saved to Pieces."
+/>
+
+## Share your Snippets
+
+**To share a snippet:**
+
+1. Highlight the text, right-click, and select "Share via Pieces Link."
+2. Click the Pieces Share button within any code block/in the Pieces View.
+3. Highlight the desired code and use a dedicated keyboard shortcut.
+
+<Image
+  zoom
+  src="/assets/obsidian/OBSIDIAN_SHARE.gif"
+  alt="Example of sharing a snippet using the obsidian Pieces plugin."
+/>
+
+_Pieces hosts all of your snippets for seamless sharing!_
+
+## Embedded Buttons
+
+Pieces adds **embedded buttons** into your markdown files to help you save, copy, & share your code snippets.
+
+<Image
+  zoom
+  src="/assets/obsidian/OBSIDIAN_SAVE.gif"
+  alt="Example of using the embedded buttons added by the obsidian pieces plugin."
+/>
+
+---
+
+## Data Privacy, Security, and Offline-First Approach
+
+In **Pieces for Developers**, we not only prioritize your data privacy and security but also align our approach with the philosophy of Obsidian: Offline-first, ensuring an optimal user experience. Here are key features that uphold these principles:
+
+- **Privacy and Security**: All user data, including code snippets, are stored directly on your device, reinforcing our commitment to data privacy.
+
+<Image
+    zoom
+    src="/assets/obsidian/finder_window_privacy.png"
+    alt="Privacy and security details."
+/>
+
+- **On-Device ML Processing**: We carry out ~80% of machine learning processing on-device, minimizing exposure to third-party servers.
+
+- **Offline-First Design**: Like Obsidian, our tool is engineered to work seamlessly offline, providing robust functionality even without internet connectivity.
+
+- **Full On-Device ML**: We're progressing towards fully on-device ML capabilities, with an aim to ship 100% of ML features on-device by Q3.
+
+- **Opt-In Cloud Capability**: We provide opt-in cloud features on a per-resource basis, ensuring that data transfers to the cloud only occur with your explicit consent, granting you full control over your data.
+
+Just as Obsidian believes, we too are steadfast in our commitment to provide a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give 'Pieces for Developers' a spin. Who knows, you might find it liberating!
+
+### Can I adjust my privacy settings later?
+You can set your user privacy settings during onboarding when you download the app for the first time on you device.
+
+<Image
+    zoom
+    src="/assets/obsidian/onboarding_privacy.png"
+    alt="Privacy and security details."
+/>
+
+If you want to adjust your privacy settings later after you complete onboarding, you can find the option in your user settings:
+
+<Image
+    zoom
+    src="/assets/obsidian/pieces_desktop_privacy.png"
+    alt="Privacy and security details."
+/>
+
+
+
+## Having Trouble with the Pieces For Developers Obsidian Plugin?
+
+To double-check that Pieces OS is running, make sure that the Pieces' logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
+
+If you need to download and install Pieces OS, please <a target="_blank" href="https://docs.pieces.app/overview">visit this link</a>.
+
+<h3>
+  If the Obsidian plugin still isn't working for you, please make sure you have the
+  following:
+</h3>
+
+- The latest version of Pieces for Developers Obsidian Plugin
+- Pieces OS version 5.0.0 or higher
+
+After installing or updating your software, please restart Obsidian.
+
+If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/to/mCjBSIjF#page=docs-obsidian">submit this form</a> and we'll get back to you!
+
+## Can I Customize the Pieces Plugin?
+
+**Definitely!** To customize your Pieces Obsidian plugin experience, click on the settings icon in the bottom left corner of your Obsidian window.
+
+Select "Community plugins" and then click the gear icon for the Pieces plugin.
+
+You can adjust the following Settings for the Pieces Plugin:
+
+1. Auto-open Pieces list view on snippet save
+2. Cloud capabilities
+3. Pieces server port
+4. Login/Logout of the Pieces cloud
+
+<br></br>
+
+[Learn More](https://pieces.app)
