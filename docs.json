@@ -49,8 +49,7 @@
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
-    ]
-    ],
+    ]],
     ["Apps, Extensions & Plugins", [
       ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
       ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
@@ -67,8 +66,7 @@
       ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
-    ]
-    ],
+    ]],
     ["Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
       ["Code Completion", "/features/code-completion"],
@@ -135,7 +133,9 @@
         "pieces_pkg": "https://builds.pieces.app/stages/production/macos_packaging/pkg/download",
         "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
         "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
-        "ubuntu_versions": "https://releases.ubuntu.com/18.04/",
+        "ubuntu_versions": "https://releases.ubuntu.com/18.04",
+        "python": "https://www.python.org/downloads",
+        "conda": "https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links",
         "localhost": "pieces://"
       },
       "videos": {
