@@ -1,6 +1,6 @@
 ---
 title: Privacy, Security & Your Data | Pieces
-description:  Let's jump in and touch on a bit of things regarding privacy, data, cloud-based features, and our ML models!
+description:  Let's jump in and touch on privacy, data, cloud-based features, and our ML models.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data" />
@@ -19,7 +19,7 @@ Your snippets are stored completely locally on your device. This is what the pat
 You can easily copy this directory to a flash drive and bring it to another computer.
 
 ## Our Machine Learning Models
-All of our ML models can be completely local and offline (i.e., they're shipped within the application's binary & require no internet) as long as you opt out of blended processing.
+Our ML models can be completely local and offline (i.e., they're shipped within the application's binary & require no internet) as long as you opt out of blended processing.
 
 If you have **not opted out of blended processing,** then some of the models will offload computation to the cloud. A few of our models are **only** available in the cloud, but we are working on making them local.
 
@@ -48,20 +48,20 @@ This table shows which models are available locally and which will use cloud com
 Our ML models are not trained continuously. They do not train on your data as you use the product!
 
 ## Saving Code Snippets in the Cloud
-The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (now owned by Okta)
+The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (now owned by Okta).
 
-Even when a user signs in, they do not have a cloud until they specifically connect it in **Settings**.
+Even when a user signs in, they do not have a cloud until they specifically connect it in their Settings.
 
 If a user opts into the cloud, the data is only uploaded when something is shared.
 
-When you click the "Share" icon and create a shareable link, only then is the "Piece" uploaded and accessible.
+When you click the "Share" icon and create a shareable link, only then is the snippet uploaded and accessible via the cloud.
 
 Finally— a note on cloud architecture for the things that are backed up:
 - There is no centralized database; each user has their own micro-database
 - There are no centralized or shared servers
 - Each user has their own Cloud Run instance, with their own unique subdomain and their own micro load balancer
 
-Every user's cloud scales up and down completely independent of other users. The cloud is only running when a "Piece" is being accessed, backed up, or updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed.
+Every user's cloud scales up and down completely independent of other users. The cloud is only running when a shared snippet is being accessed, backed up, or updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed.
 
 ## Telemetry & Crash Data
 Most importantly, all data collection is opt-out and we give all the control to our users.
@@ -69,11 +69,9 @@ Most importantly, all data collection is opt-out and we give all the control to 
 The data that we do collect is completely anonymous and highly secure (we take data very seriously).
 
 ### Why do we collect data?
-
-
 Long story short, we're a seed stage startup and the data helps us to report on overall growth and hopefully help us earn more funding.
 
-Here are some screenshots of Telemetry Opt-Outs from the Pieces products:
+Here are some screenshots of Telemetry opt-outs from the Pieces products:
 
 #### Pieces for Developers Desktop App
 
