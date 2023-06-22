@@ -134,8 +134,7 @@
         "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
         "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
         "ubuntu_versions": "https://releases.ubuntu.com/18.04",
-        "python": "https://www.python.org/downloads",
-        "conda": "https://docs.conda.io/en/latest/miniconda.html#latest-miniconda-installer-links",
+        "jupyterlab": "https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html",
         "localhost": "pieces://"
       },
       "videos": {
