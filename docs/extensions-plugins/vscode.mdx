@@ -26,7 +26,7 @@ export const InstallButton = props => {
 
 export const ReleasePill = props => {
     return <a style={{textDecoration: "none"}} target="_blank"
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -62,7 +62,7 @@ export const HeaderLogoImage = props => {
 
 <GridFlexRow>
     <InstallButton>Get the VS Code Extension</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.vscode }}"></ReleasePill>
+    <ReleasePill src="https://code.pieces.app/updates" children="Current Version: {{ versions.vscode }}"></ReleasePill>
 </GridFlexRow>
 
 ## Installing the Pieces for Developers VS Code Extension

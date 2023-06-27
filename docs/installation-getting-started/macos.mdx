@@ -7,7 +7,7 @@ description: Learn how to download, install, and confirm your connected applicat
 
 export const ReleasePill = props => {
     return <a target="_blank" style={{ textDecoration: "none" }}
-              href="{{ links.installation.macos_catalina }}">
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "2px 20px",
@@ -64,7 +64,7 @@ export const Spacer = props => {
 }
 
 # Getting Started with Pieces for Developers on macOS
-<ReleasePill>Compatible with macOS 10.15 Catalina or higher</ReleasePill>
+<ReleasePill src="{{ links.installation.macos_catalina }}">Compatible with macOS 10.15 Catalina or higher</ReleasePill>
 
 ![Robots installing Pieces for Developers on macOS.](/assets/installation/robots_macos.png)
 
