@@ -25,7 +25,7 @@ export const InstallButton = props => {
 
 export const ReleasePill = props => {
     return <a style={{textDecoration: "none"}} target="_blank"
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -65,7 +65,7 @@ export const Spacer = props => {
 
 <GridFlexRow>
     <InstallButton>Get the Edge Addon</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.edge }}"></ReleasePill>
+    <ReleasePill src="https://code.pieces.app/updates" children="Current Version: {{ versions.edge }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Edge Addon with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.

@@ -7,7 +7,7 @@ description: Learn how to download, install, and confirm your connected applicat
 
 export const ReleasePill = props => {
     return <a target="_blank" style={{textDecoration: "none"}}
-              href="{{ links.installation.windows_versions }}">
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "2px 20px",
@@ -46,7 +46,7 @@ export const Spacer = props => {
 }
 
 # Getting Started with Pieces for Developers on Windows
-<ReleasePill>Compatible with Windows 10 Version 1809 or higher</ReleasePill>
+<ReleasePill src="{{ links.installation.windows_versions }}">Compatible with Windows 10 Version 1809 or higher</ReleasePill>
 
 ![Robots installing Pieces for Windows.](/assets/installation/robots_windows.png)
 

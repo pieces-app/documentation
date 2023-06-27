@@ -10,7 +10,7 @@ description: Learn how to install the Pieces for JupyterLab Extension via the PY
 
 export const ReleasePill = props => {
   return <a target="_blank" style={{textDecoration: "none"}}
-            href="{{ links.installation.jupyterlab }}">
+            href={props.src}>
     <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
       <p style={{
         padding: "2px 20px",
@@ -43,7 +43,7 @@ export const InstallButton = props => {
   </a>
 }
 
-<ReleasePill>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
+<ReleasePill src={"https://code.pieces.app/updates"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
 
 # Your Guide to Getting Started with the Pieces for JupyterLab Extension
 
