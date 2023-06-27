@@ -72,6 +72,7 @@
       ["Code Completion", "/features/code-completion"],
       ["Creating & Generating Code", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
+      ["Keyboard Shortcuts", "/features/keyboard-shortcuts"],
       ["Material Storage & Management", "/features/managing-saved-materials"],
       ["One Click Sharing", "/features/one-click-snippet-sharing"],
       ["Snippet Transformations", "/features/transforming-snippets"],
