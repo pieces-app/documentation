@@ -146,7 +146,6 @@ You can open up a file with all the keyboard shortcuts available in the applicat
 [//]: # (TODO: You can also view the keyboard shortcuts we have available here.)
 
 ### Launch Onboarding
-
 If you need to go back to onboarding to adjust your user persona, or code languages that you use, you can go back through onboarding by pressing the ` redo ` icon on the right side of the drawer.
 
 ## In-App Notifications
@@ -154,11 +153,109 @@ When saving a snippet, copying a snippet, and performing other actions inside of
 
 **None**: Shows no in-app notifications while using snippets or adjusting data
 
-**Critical**: Shows important messages such as [confirmations when deleting tags, related links, and more](#)
+**Critical**: Shows important messages but very minimal notifications will show
 
-**All**: Will show all notifications including confirmations of copy + paste and all deletion events
+**All**: Will show all notifications including confirmations of copy, paste, duplications, etc.
 
 ## Customize
+There are a few specific settings that are good to know but require a bit more explanation.
+
+### Default Search Modes
+We offer a number of search modes for users in the Pieces Desktop App that change the way you can get search results back. Each has its own benefits for rediscovering your code and understanding the way each works can make selecting the right one for you easier.
+
+_Note that you can always change these settings on the go when searching by selecting the dropdown next to the ` search hourglass icon `_
+
+#### ` Blended `
+Blended takes advantage of all aspects of your code snippets, and is the **default** setting for Pieces Desktop. When this is set, you can use search in a traditional way, as you would with other search engines
+
+#### ` Full Text Search (FTS) `
+Full Text Search uses your text to directly match with text found on a code snippet that you have saved. This matches specific characters but not semantic meaning such as the following example:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | Yes |
+| batch | cd copyfiles.bat | No |
+
+#### ` Neural Code Search (NCS) `
+Neural Code Search takes advantage of semantic description and allows you use the meaning to find what you are looking for. Take the above example - where you search for a batchfile and type ` batch ` and notice how the results are now opposite:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | No |
+| batch | cd copyfiles.bat | Yes |
+
+Because when using NCS you would be **searching for a snippet that cds into a batchfile**.
+
+#### ` Search With Snippet `
+Using Search with Snippet allows you to search other related snippet by pasting a code snippet into search, and you will get back search results of code snippets that are related inside your Pieces Desktop Storage.
+
+### Confirmation Settings
+When deleting snippets and managing sharable links, there are a few notifications that appear to confirm slightly sensitive deletions around tags, or updating sharable links when content has changed. The drawer that opens when you select the cog inside your settings has a number of options.
+
+#### Confirm Piece Deletions
+By defualt when deleting snippets by pressing ` Delete ` or from the context drawer, you will get a confirmation message to delete a snippet permantly. If you would like to turn this setting off and hide the confirmation messges, you can select the checkbox here.
+
+#### Confirm Context Deletions
+When removing tags, related links, related people, and sensitives you may want to remove a large number at once. To hide this notification you can select ` All ` or select the individual items that you would like to be notified about before deletion.
+
+#### Updates
+Changing data on [sharable links](https://docs.pieces.app/feaures/one-click-snippet-sharing) causes them to update, and if you want to hide the notifications that appear asking you ` if you would like to update your sharable link with new context ` just select the checkbox here.
+
+There is a second checkbox specific to code snippets that contain sensitive information and if you would like to be prompted.
+
+### Metrics Summary Settings
+When in the Gallery View Mode you can see a context menu preview that will appear while navigating left and right through your code snippets.
+
+You can adjust if it will automatically show for snippets that are small and will take a hybrid split view in the carousel.
+
+#### Visibility
+This controls how often the metrics preview will show, whether it is ` All ` which will leave it visible always, ` Navigating `, showing it only when navigating left and right in the carousel but hiding it soon after stopping on a single snippet, or ` Hovering `, only showing when you hover the context icon on the bottom right of the code snippet in the gallery view.
+
+You may combine these three settings to create the best experience for yourself.
+
+## Discover
+Here you can find settings to help you discover more features in Pieces Desktop and other information about the application.
+
+### Release Notes
+
+**Shortcut:** ` SHIFT + W `
+
+Use this shortcut to view the latest release notes for Pieces Desktop at [https://code.pieces.app/updates](https://code.pieces.app/updates)
+
+### Power Tips
+Select the light-bulb icon to view a list of power tips on using Pieces. There are 9 power tips that you can go through by pressing the ` -> ` arrow. Press ` Esc ` to return back to the application.
+
+### Plugins
+
+**Shortcut:** ` ⌘/CTRL +  I`
+
+Select the puzzle piece icon to view a list of links to different plugins that are available to use with the Desktop application. Use keys ` 1 -4 ` to select the plugin you want the link to download, and it will open in your browser.
+
+### Refer a Friend
+To invite another user to Pieces, select the envelope here, and you will get a link that you can copy and paste to send to someone via chat or text messages.
+
+## Community - Become a Beta Tester
+Click here to become a beta tester from inside the application. You can also [click here](https://getpieces.typeform.com/to/XGGlUqEI) to fill out the form and join our beta program!
+
+## Processing
+You can select to use local or cloud processing to manage your code snippets depending on your environment. Using local models have shown increases in speed with minor trade-offs. **Blended** mode utilizes both local and cloud models and gains additional benefits such as qGPT processing.
+
+Try both modes to find what works best in your environment.
+
+## Telemetry
+You can always adjust the amount of anonymous data that you share with us, and by unchecking this box we will not collect data and analytics from your machine. Regardless of collection prefereces here we do not collect your code snippets as they are store anonymously. The data we collect helps us see how often particular buttons are pressed, and what sections of the application are used the least by the community as a while, so we can provide a better experience for you. Any personal data is not collected and your code is not shared with any other parties, even when shared.
+
+Read more about our [Privacy & Data Security](/product-highlights-and-benefits/privacy-security-data) to get a full look.
+
+## Information
+To get the version number and specific platform build that your version of Pieces Desktop App is running on, just press the copy button next to either of these items. These are helpful when working with support on an issue related to your installation and debugging issues.
+
+
+
+
+
+
+
 
 
 
