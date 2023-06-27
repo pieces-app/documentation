@@ -75,6 +75,7 @@
       ["Keyboard Shortcuts", "/features/keyboard-shortcuts"],
       ["Material Storage & Management", "/features/managing-saved-materials"],
       ["One Click Sharing", "/features/one-click-snippet-sharing"],
+      ["Pieces Copilot", "/features/pieces-copilot"],
       ["Snippet Transformations", "/features/transforming-snippets"],
       ["User Settings", "/features/user-settings"],
       ["Workflow Activity", "/features/workflow-activity"]
