@@ -1,0 +1,85 @@
+---
+title: Pieces Copilot | Pieces
+description: Describe code and Pieces copilot will generate it for you - or ask qGPT questions about code you already have saved.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/features/pieces-copilot" />
+
+# Pieces Copilot
+Describe code and chat with Piece copilot about your code. You can write out a sentence and Pieces ML powered models will give you back functional code to use inside your project.
+
+## Getting Started With Pieces Copilot
+Open up the ` Copilot & Global Search ` view from the dropdown, and you will see the copilot chat box towards the bottom of the app window. IF you are looking for more information about Global Search [go here](https://code.pieces.app/features/global-search) and read the details on that page.
+
+You can start with three different actions:
+
+1. Paste code into the chat-box
+    - for example, we will use this code snippet:
+        ```javascript
+        function build(){
+            console.log("build starting");
+            let _count;
+            for (let i = 0; i <= 10; i++){
+                _count = _cocunt + 1;
+                console.log($_count);
+            }
+            console.log('counted to ten!');
+        }
+      ```
+2. Ask a technical question
+    - Here are a few examples:
+        - ` How do I create a flexible div with 8px of padding on both sides `
+        - ` Loop over a directory of files and write the first line of their contents to a new text file `
+3. Drag and Drop a screenshot of code
+    - Read about dragging and dropping code into Pieces desktop on the [Saving Screenshots Page](https://docs.pieces.app/product-hihglights-and-benefits/saving-screenshots)
+4. Pressing ` Scan Screenshot ` allows you to select a screenshot from your file picker to add.
+
+### Results from Copilot
+Once you start at any of the above points you will get data back from copilot. Here are the results from the examples we started above:
+
+#### Pasted Javascript Snippet
+After pasting the above [Javascript Snippet](#getting-started-with-pieces-copilot) you can see the response from Pieces Copilot has done a few things. Here is the response from Pieces Copilot:
+
+```text
+I noticed that there are a few errors in the code you provided:
+
+1. There's a typo in the variable name `_cocunt`, it should be `_count`.
+2. There's an extra dollar sign in the console.log statement.
+3. The loop currently counts up to 11, not 10.
+
+Here's an updated version of your function that should work as intended:
+```
+
+Following the helpful message explaining the issues with the code I pasted into the chat, my code has been corrected and given back to me cleaned with the errors that were listed already implemented in my code.
+
+```javascript
+    function build() {
+        console.log("build starting");
+
+        let _count = 0;
+
+        for (let i = 0; i < 10; i++) {
+            _count = _count + 1;
+            console.log(_count);
+        }
+
+        console.log('counted to ten!');
+}
+```
+
+When Copilot gives code back to you, you will see a few quick buttons appear on the bottom of the message containing the code snippet. These actions include:
+
+| Action | What it Does |
+|---|---|
+| Save to Pieces | [Saves the snippet](https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials) to your Pieces storage making it available across plugins and extensions. |
+| Share | Save and generate a [sharable link](https://docs.pieces.app/features/one-click-snippet-sharing) to send this snippet to another user. |
+| Annotate Code | Adds comments to your code describing sections, functons and variables. |
+| Find Similar Code Snippets | Searches your code snippets for code that is similar to the current value. |
+| Tell Me More | Pieces will describe the snippet to you in plaintext and tell you what the code does. |
+| Repair & Tidy | Will improve the code, remove repetition, loops or other bad practices. |
+| Show Related Links | Will show a list of related links that are related to that code snippet and its topic |
+| Show Related Tags | Shows tags that are relevant to the snippet. |
+
+
+#### Technical Questions
+
