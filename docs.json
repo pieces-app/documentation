@@ -2,7 +2,6 @@
   "name": "Pieces for Developers",
   "theme": "#BFC5EA",
   "googleTagManager": "GTM-K8C6QWB",
-  "twitter": "getpieces",
   "logo": "/assets/pieces_dark.png",
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
@@ -32,6 +31,16 @@
       "title": "YouTube Channel",
       "icon": "youtube",
       "link": "https://youtube.com/@getpieces"
+    },
+    {
+      "title": "Discord",
+      "icon": "discord",
+      "link": "https://discord.gg/getpieces"
+    },
+    {
+      "title": "Contact Support",
+      "icon": "headset",
+      "link": "https://getpieces.typeform.com/to/mCjBSIjF"
     }
   ],
   "sidebar": [
@@ -40,8 +49,7 @@
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
-    ]
-    ],
+    ]],
     ["Apps, Extensions & Plugins", [
       ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
       ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
@@ -49,6 +57,7 @@
       ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
       ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
       ["Pieces Obsidian Plugin", "/extensions-plugins/obsidian"],
+      ["Pieces JupyterLab Extension", "/extensions-plugins/jupyterlab"],
       ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["Product Highlights & Benefits", [
@@ -57,8 +66,7 @@
       ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
-    ]
-    ],
+    ]],
     ["Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
       ["Code Completion", "/features/code-completion"],
@@ -85,7 +93,8 @@
       "chrome": "v2.6.0",
       "jetbrains": "v5.2.0",
       "vscode": "v0.6.0",
-      "obsidian": "v0.1.0",
+      "obsidian": "v0.3.9",
+      "jupyterlab": "v0.1.0",
       "pieces_os": "v5.0.0",
       "edge": "v2.5.3",
       "teams": "v1.1.0"
@@ -102,7 +111,8 @@
         "chrome": "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
         "jetbrains": "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
         "vscode": "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
-        "obsidian": "https://obsidian.md/plugins?id=obsidian-pieces",
+        "obsidian": "https://obsidian.md/plugins?id=pieces-for-developers",
+        "jupyterlab":  "TODO: There is no install link for JupyterLab, not sure what is ideal here",
         "edge": "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim",
         "teams": "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fapp%2F789f23b3-d882-45ca-b3a3-de7f850656ea%3Fsource%3Dapp-details-dialog&type=app&deeplinkId=a5fe0a60-b3a1-42a2-9a57-a5ec71696573&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true"
       },
@@ -123,7 +133,8 @@
         "pieces_pkg": "https://builds.pieces.app/stages/production/macos_packaging/pkg/download",
         "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
         "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
-        "ubuntu_versions": "https://releases.ubuntu.com/18.04/",
+        "ubuntu_versions": "https://releases.ubuntu.com/18.04",
+        "jupyterlab": "https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html",
         "localhost": "pieces://"
       },
       "videos": {
@@ -164,7 +175,7 @@
           "workflow_activity_stream": "https://docs.pieces.app/features/workflow-activity"
         },
         "personalized_link_sharing": {
-          "single_click_link_sharing": "https://docs.pieces.app/features/one-click-link-sharing",
+          "single_click_snippet_sharing": "https://docs.pieces.app/features/one-click-snippet-sharing",
           "save_for_offline": "https://docs.pieces.app/features/one-click-snippet-sharing#saving-a-shared-material",
           "share_via_github_gist": "https://docs.pieces.app/one-click-snippet-sharing#share-via-github-gist"
         },

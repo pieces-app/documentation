@@ -7,7 +7,11 @@ description: Learn how to install Pieces for Developers via Snapcraft or by usin
 
 export const ReleasePill = props => {
     return <a target="_blank" style={{textDecoration: "none"}}
+<<<<<<< HEAD
               href="https://releases.ubuntu.com/18.04/">
+=======
+              href={ props.src }>
+>>>>>>> fe49df9b7483a4faa111c68d55c896f8930fb087
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "2px 20px",
@@ -42,9 +46,13 @@ export const InstallButton = props => {
 
 # Getting Started with Pieces for Developers on Linux
 
-<ReleasePill>Compatible with Ubuntu 18 or higher and currently in Beta</ReleasePill>
+<ReleasePill src="{{ links.installation.ubuntu_versions }}">Compatible with Ubuntu 18 or higher and currently in Beta</ReleasePillsrc>
 
+<<<<<<< HEAD
 ![Linux robot.](/assets/installation/robots_linux.png)
+=======
+![A robot checking the install for pieces desktop for linux.](/assets/installation/robots_linux.png)
+>>>>>>> fe49df9b7483a4faa111c68d55c896f8930fb087
 
 To run Pieces for Developers on Linux, be sure to download both of the applications from the <a target="_blank" href="https://snapcraft.io">Snap Store</a> before installing. You can also follow the instructions below these install buttons to install via terminal.
 
@@ -65,7 +73,7 @@ To run Pieces for Developers on Linux, be sure to download both of the applicati
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=b8a24c9390)
 
-    - This command sets up and configures local application interfaces to properly load our Sand-boxed and Secure Machine Learning Models.
+    This command sets up and configures local application interfaces to properly load our Sand-boxed and Secure Machine Learning Models.
 
 3. Install the Pieces Desktop Snap:
     ```shell
@@ -73,16 +81,32 @@ To run Pieces for Developers on Linux, be sure to download both of the applicati
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=f23c48bd96)
 
-4. Launch Pieces for Developers | OS Server by running the following command in your terminal:
+4. Launch Pieces OS by running the following command in your terminal:
     ```shell
     $ pieces-os
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=0f964fb0a1)
 
-5. Launch the Pieces for Developers | Flagship Desktop App by running the following command in your terminal:
+5. Launch the Pieces for Developers Desktop App by running the following command in your terminal:
     ```shell
     $ pieces-for-developers
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=e66b498977)
 
-Check out our <a target="_blank" href="https://www.youtube.com/@getpieces">Youtube Channel</a> for more information on Getting Started
+Check out our <a target="_blank" href="https://www.youtube.com/@getpieces">YouTube Channel</a> for more information on Getting Started.
+
+## Helpful Tips for Linux
+
+### Updating your Application
+To update your application, you can either:
+
+Update individual snap packages one at a time
+    1. `sudo snap refresh pieces-for-developers`
+    2. `sudo snap refresh pieces-os`
+
+#### OR
+
+Update all snap packages at once:
+    1. `sudo snap refresh`
+
+     **Note**: this will update other snap packages that you have installed, so be sure before you run this command.

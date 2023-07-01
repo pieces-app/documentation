@@ -1,6 +1,6 @@
 ---
 title: Pieces for Developers Edge Addon
-description: Troubleshoot issues that you are having, or reach out to Pieces support to get assistance with the Pieces for Developers Chrome Extension.
+description: Troubleshoot issues before reaching out to Pieces support to get assistance with the Pieces for Developers Edge Addon.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/edge" />
@@ -25,7 +25,7 @@ export const InstallButton = props => {
 
 export const ReleasePill = props => {
     return <a style={{textDecoration: "none"}} target="_blank"
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -55,19 +55,30 @@ export const HeaderLogoImage = props => {
     return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/edge_logo.png" }/>
 }
 
+export const Spacer = props => {
+    return <div style={{ width: "8px"}}></div>
+};
+
 <GridFlexRow>
     <h1>Pieces Edge Addon</h1>
 </GridFlexRow>
 
 <GridFlexRow>
     <InstallButton>Get the Edge Addon</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.edge }}"></ReleasePill>
+    <ReleasePill src="https://code.pieces.app/updates" children="Current Version: {{ versions.edge }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Edge Addon with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
 
+## Installing the Extension
+**Note:** In order to save code with the Pieces Edge Addon, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS and the Pieces for Developers desktop app.</a>
+
+To add the extension to Microsoft Edge, visit our listing on <a target="blank" href="https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim"> the Microsoft Edge Marketplace.</a>
+
+Once you've added it to Edge, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
+
 ## Where are my Saved Snippets Stored?
-_The <a target="_blank" href="{{ links.installation.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Edge Addon in order for the extension to work properly._
+_The <a target="_blank" href="/installation-getting-started/what-am-i-installing">Pieces Suite</a> must be downloaded and installed separately from the Edge Addon in order for the extension to work properly._
 
 - When you save code snippets with Pieces, they're stored locally in the Pieces desktop app.
 - When you save a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a title, a description, and more.
@@ -76,7 +87,11 @@ To view and reuse your snippets, just open the Pieces desktop app and scroll thr
 
 ## What Does the Share Button Do?
 
-![Pieces Edge Addon shows the Share button that generates a sharable link.](/assets/chrome_share_button.png)
+<GridFlexRow>
+    ![The Pieces Edge Extension shows the button that copies and saves a snippet.](/assets/chrome/copy_and_save.png)
+    <Spacer></Spacer>
+    ![The Pieces Edge Extension shows the button that creates a sharable link.](/assets/chrome/share.png)
+</GridFlexRow>
 
 When you click the Share button below a code block, Pieces generates a link that's specifically designed to share useful code with its context— it's automatically copied to your clipboard once it's generated.
 
@@ -84,17 +99,45 @@ This means that instead of copying code and pasting it into a message, you can c
 
 The recipient will also get the title, description, related links, and other context about the snippet.
 
-
-## Troubleshooting the Pieces Buttons
+## Why aren't the Pieces Buttons appearing?
 There are a few reasons why the Pieces buttons may not be appearing:
-1. Pieces OS isn't running.
+
+1. **Pieces OS isn't running.**
  - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on MacOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking on Pieces OS in your Applications folder.
  - If you need to download and install Pieces OS, please visit our homepage.
 
-2. You've disabled the Pieces buttons for this website.
+2. **You've disabled the Pieces buttons for this website.**
  - Double-check that you haven't disabled the Pieces buttons for this site by navigating to the Edge Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
 
-3. This website doesn't have detectable code.
+3. **This website doesn't have detectable code.**
 The code on this site might be embedded in an iframe, or it might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-**If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!**
+If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
+
+## How do I remove the Pieces Buttons from a site?
+If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the extension settings.
+
+1. Right-click the Pieces icon in the top right corner of your browser and choose “Settings.”
+2. Toggle the "Disable Pieces buttons" option. The page will automatically refresh and the Pieces buttons will disappear.
+
+## Can I Customize the Pieces Addon?
+**Definitely!**
+To customize your Pieces Edge Addon experience, click on the Pieces icon in the upper right corner of your browser.
+
+Hit the Settings icon in the top right and set your preferences.
+
+<Image zoom src="/assets/theme_for_chrome.png" />
+
+You can adjust the following Settings for the Pieces Edge Addon:
+1. The placement of the Pieces buttons
+2. Toggle between dark mode and light mode
+3. Decide if you'd like Pieces buttons to be enabled or disabled on a webpage by default
+4. Manage your website blacklist
+5. Adjust the minimum number of characters necessary to recognize a code block
+6. Adjust the functionality of the Copy & Save Button
+
+## Help & Support
+
+- [Contact Us](https://code.pieces.app/contact)
+- [Feedback & Bug Support](https://getpieces.typeform.com/to/mCjBSIjF)
+- [Join our Discord](https://discord.com/invite/getpieces)
