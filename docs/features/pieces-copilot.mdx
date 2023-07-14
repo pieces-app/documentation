@@ -1,0 +1,78 @@
+---
+title: Pieces Copilot | Pieces
+description: Describe code and the Pieces Copilot will generate it for you, or ask qGPT questions about code you have already saved.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/features/pieces-copilot" />
+
+# Pieces Copilot
+Describe and chat about your code with Pieces Copilot. You can write out a sentence and Pieces' ML models will generate functional code to use in your projects.
+
+## Getting Started With Pieces Copilot
+Navigate to the ` Copilot & Global Search ` view from the dropdown, and you will see the Copilot chat box towards the bottom of the app window. If you're looking for more information about Global Search, [you can find details here](https://code.pieces.app/features/global-search).
+
+You can start chatting with the Pieces Copilot with a few different actions:
+
+1. Paste code into the chat box, and the Copilot will let you know if there are any issues.
+    - Try pasting this code snippet:
+        ```javascript
+        function build(){
+            console.log("build starting");
+            let _count;
+            for (let i = 0; i <= 10; i++){
+                _count = _count + 1;
+                console.log($_count);
+            }
+            console.log('counted to ten!');
+        }
+      ```
+      - The Pieces Copilot will identify, explain, and correct a couple of errors. 
+2. Ask a technical question, and the Copilot will answer it. 
+    - Here are a few examples to try:
+        - ` How do I create a flexible div with 8px of padding on both sides? `
+        - ` Loop over a directory of files and write the first line of their contents to a new text file. `
+3. Drag and Drop a screenshot of code, and the Pieces Copilot will extract the code, explain it, and answer questions about it.
+    - Pressing ` Scan Screenshot ` allows you to select a screenshot from your file picker to add.
+    - Read about dragging and dropping code into Pieces desktop on the [Saving Screenshots Page](https://docs.pieces.app/product-hihglights-and-benefits/saving-screenshots).
+
+## Results from Pieces Copilot
+When the Pieces Copilot returns code, you will see a few quick buttons at the bottom of the message containing the code snippet. These actions include:
+
+| Action | What it Does |
+|---|---|
+| Save to Pieces | [Saves the snippet](https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials) to your Pieces repo, so it's available across plugins and extensions. |
+| Share | Saves the snippet and generates a [shareable link](https://docs.pieces.app/features/one-click-snippet-sharing) to send to another user. |
+| Annotate Code | Adds comments to the code that describe sections, functions, and variables. |
+| Find Similar Code Snippets | Searches your existing code snippets for code that is similar to the current snippet. |
+| Tell Me More | Describes the snippet to you in plain text and tell you what the code does. |
+| Repair & Tidy | Improves the code by removing repetition, loops, or other bad practices. |
+| Show Related Links | Shows a list of related links to that code snippet and its topic. |
+| Show Related Tags | Shows tags that are relevant to the snippet. |
+
+## Snippet Specific Copilot
+When viewing a snippet in Gallery or List View, you can launch copilot on a snippet that you have saved to Pieces for Developers. To do this, use the Quick Action pill labeled `Launch Copoliot` above the snippet in List View.
+
+_Note that if you are in Gallery View, the action buttons are below the code snippet._
+
+Launching Pieces Copilot on a specific snippet - instead of using it in the Global Search view - allows the bot to already have context and additional information about the snippet you want to ask specific questions about. Leveraging the question and answer system, you can ask questions such as:
+
+ `What does this snippet do?`
+
+or
+
+`How can I make this snippet better?`
+
+You can keep this very high-level and ask simple questions related to the code snippet as a whole, and you can ask questions about parts of the code.
+
+For example, using the JavaScript code snippet above, you could ask:
+
+- `What is the purpose of the "build" function in this code snippet?`
+- `How does the loop in the build function work?`
+- `What does the variable "_count" represent in this code snippet?`
+- `How many times will the loop iterate in the build function?`
+- `What will be logged to the console when the "build" function finishes counting?`
+
+When you "Launch Copilot" on a snippet, you will get a list of questions to help get you started as well. You can click any of the options that are put in your chat to start the conversation, then add more questions on top after the bot responds.
+
+### Continuing the Copilot Conversation
+If you are in the midst of a conversation with Pieces Copilot and need to navigate to a different view, reference a separate snippet, or move to another location, **don't worry**. Conversations with Copilot are saved with the snippet that you had the individual conversation about so that you can get back to where you were when jumping around. You'll notice that once you start a conversation, the `Launch Copilot` Quick Action pill will change to `Resume Copilot`.
