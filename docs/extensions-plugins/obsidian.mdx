@@ -225,6 +225,14 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
 
 Just as Obsidian believes, we too are steadfast in our commitment to provide a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give 'Pieces for Developers' a spin. Who knows, you might find it liberating!
 
+- **Offline First in qGPT**: qGPT sends data to ChatGPT for its more complex processing. Understandably, that can be a bit scary, because your vault information may be private. **We plan to make qGPT fully offline by Q3***, but for now, we've found an effective compromise. Rather than sending all your data to ChatGPT, we use a series of offline models to boil things down as much as possible. This way, we only send the bare minimum to the cloud, and the majority of ML processing is safely kept on your computer. To understand how this works internally, refer to the diagram  below.
+
+<Image
+    zoom
+    src="/assets/obsidian/qgpt_flowchart.png"
+    alt="Diagram detailing how local preprocessing limits the data sent to ChatGPT"
+/>
+
 
 ### Can I adjust my privacy settings later?
 You can set your user privacy settings during onboarding when you download the app for the first time on you device.
