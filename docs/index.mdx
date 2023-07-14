@@ -31,14 +31,14 @@ export const InstallButtonLinux = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
         <div style={{ backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
             { props.children }
-            <p style={{color: "white", marginLeft: "8px"}}>Get Pieces for Linux</p>
+            <p style={{color: "white", marginLeft: "8px"}}>See for Linux</p>
         </div>
     </a>
 }
 
 export const ReleasePill = props => {
     return <a target="_blank" style={{textDecoration: "none"}}
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -132,16 +132,16 @@ export const HeaderImage = props => {
     </InstallButtonMac>
 </GridFlexRow>
 
-## Try all of our products
+## Use with your favorite tools
 
 <GridFlexSpaceEvenlyRow>
-    <a href="{{ links.website.pfd_desktop_install }}"><Image width="50%" src="/assets/pfd_logo.png" /></a>
-    <a href="{{ links.extensions.chrome }}"><Image width="50%" src="/assets/chrome_logo.png" /></a>
-    <a href="{{ links.extensions.jetbrains }}"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
-    <a href="{{ links.extensions.vscode }}"><Image width="50%" src="/assets/vscode_logo.png" /></a>
-    <a href="{{ links.extensions.edge }}"><Image width="50%" src="/assets/edge_logo.png" /></a>
-    <a href="{{ links.extensions.teams }}"><Image width="50%" src="/assets/teams_logo.png" /></a>
-    <a href="{{ links.extensions.obsidian }}"><Image width="30px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrians"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
+    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="30px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
 </GridFlexSpaceEvenlyRow>
 
 <Spacer></Spacer>
@@ -153,7 +153,7 @@ export const HeaderImage = props => {
     <JumpButtons src="{{ links.internal.product_highlights.import_gists }}">Import Snippets from GitHub</JumpButtons>
     <JumpButtons src="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Local Snippet
         Discovery</JumpButtons>
-    <JumpButtons src="{{ links.internal.faqs }}">Frequently Asked Questions</JumpButtons>
+    <JumpButtons src="/features/creation-and-generation">Create from a Description</JumpButtons>
 </GridFlexRow>
 
 <Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/RIGHT-CLICK_SAVE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RIGHT-CLICK_SAVE-MACOS-16X9-5_18_2023.GIF" />

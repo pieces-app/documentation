@@ -25,7 +25,7 @@ export const InstallButton = props => {
 
 export const ReleasePill = props => {
     return <a style={{textDecoration: "none"}} target="_blank"
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -61,7 +61,7 @@ export const HeaderLogoImage = props => {
 
 <GridFlexRow>
     <InstallButton>Get the JetBrains Plugin</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
+    <ReleasePill src="https://code.pieces.app/updates/pieces-jetbrains-hover-preview" children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces for Developers JetBrains Plugin in combination with the Pieces Desktop App makes saving and reusing code simple from right inside your projects.
@@ -148,3 +148,9 @@ Pieces can intelligently identify and save snippets based on re-use patterns in 
 <Image zoom src="https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SUGGESTED_SNIPPETS_JETBRAINS.gif" />
 
 To opt-out of Suggested Save, go to ```Preferences > Tools > Pieces``` and click on Suggested Save.
+
+## Help & Support
+
+- [Contact Us](https://code.pieces.app/contact)
+- [Feedback & Bug Support](https://getpieces.typeform.com/to/mCjBSIjF#docs-jetbrains)
+- [Join our Discord](https://discord.com/invite/getpieces)

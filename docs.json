@@ -40,7 +40,7 @@
     {
       "title": "Contact Support",
       "icon": "headset",
-      "link": "https://getpieces.typeform.com/to/mCjBSIjF"
+      "link": "https://getpieces.typeform.com/to/mCjBSIjF#page=docs-sidebar"
     }
   ],
   "sidebar": [
@@ -64,7 +64,7 @@
       ["Collections", "/product-highlights-and-benefits/collections"],
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
       ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
-      ["Import Gists from GitHub", "/product-highlights-and-benefits/import-gists-from-github"],
+      ["Saving to and From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
     ],
@@ -88,6 +88,8 @@
     ]],
     ["Community & More", [
       ["Frequently Asked Questions", "/faq"],
+      ["Privacy Policy", "/privacy-policy"],
+      ["Terms", "/terms"],
       ["Our Community", "/our-community"]
     ]]
   ],
@@ -128,8 +130,8 @@
       },
       "external": {
         "forms": {
-          "feedback": "https://getpieces.typeform.com/to/mCjBSIjF?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca",
-          "join_beta": "https://getpieces.typeform.com/to/XGGlUqEI?os=9a9bc924-80cf-4f66-b7e8-da6526e0a5d0&user=85d3a788-9617-4a31-862b-bc26c649acca"
+          "feedback": "https://getpieces.typeform.com/to/mCjBSIjF",
+          "join_beta": "https://getpieces.typeform.com/to/XGGlUqEI"
         }
       },
       "installation": {

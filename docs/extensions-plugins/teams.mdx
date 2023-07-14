@@ -25,7 +25,7 @@ export const InstallButton = props => {
 
 export const ReleasePill = props => {
     return <a style={{textDecoration: "none"}} target="_blank"
-              href={"https://code.pieces.app/updates"}>
+              href={props.src}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
@@ -66,7 +66,7 @@ export const Spacer = props => {
 
 <GridFlexRow>
     <InstallButton>Get the Teams App</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.teams }}"></ReleasePill>
+    <ReleasePill src="https://code.pieces.app/updates/introducing-pieces-for-microsoft-teams" children="Current Version: {{ versions.teams }}"></ReleasePill>
 </GridFlexRow>
 
 ## Welcome, Microsoft Teams Users!
@@ -167,5 +167,5 @@ To view and reuse your snippets, just open the [Pieces Desktop App](/installatio
 ## Help & Support
 
 - [Contact Us](https://code.pieces.app/contact)
-- [Feedback & Feature Requests](https://getpieces.typeform.com/to/jcjbofCN)
+- [Feedback & Bug Support](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-teams)
 - [Join our Discord](https://discord.com/invite/getpieces)
