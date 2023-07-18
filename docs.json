@@ -61,10 +61,10 @@
       ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["Product Highlights & Benefits",[
-      ["Collections", "/product-highlights-and-benefits/collections"],
+      ["Snippet Collections", "/product-highlights-and-benefits/collections"],
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
       ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
-      ["Saving to and From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
+      ["Saving To/From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
     ]],
