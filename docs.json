@@ -97,7 +97,7 @@
     "versions": {
       "pfd": "v2.0.2",
       "chrome": "v2.6.0",
-      "jetbrains": "v5.2.0",
+      "jetbrains": "v5.3.0",
       "vscode": "v0.6.0",
       "obsidian": "v0.3.9",
       "jupyterlab": "v0.1.0",
