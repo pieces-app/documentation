@@ -159,9 +159,9 @@ Open the Pieces View from the Ribbon Menu.
 
 **To share a snippet:**
 
-1. Highlight the text, right-click, and select "Share via Pieces Link."
-2. Click the Pieces Share button within any code block/in the Pieces View.
-3. Highlight the desired code and use a dedicated keyboard shortcut.
+- Highlight the text, right-click, and select "Share via Pieces Link."
+- Click the Pieces Share button within any code block/in the Pieces View.
+- Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
   zoom
@@ -173,7 +173,15 @@ _Pieces hosts all of your snippets for seamless sharing!_
 
 ## Embedded Buttons
 
-Pieces adds **embedded buttons** into your markdown files to help you save, copy, & share your code snippets.
+Pieces adds **embedded buttons** into your markdown files to help you save, copy, enrich, & share your code snippets.
+
+- **Save**: This button saves any code snippet to Pieces, so that you can easily refer to it later across the Pieces ecosystem.
+
+- **Copy**: This button allows you to quickly copy your code to your clipboard.
+
+- **Enrich**: This button generates helpful metadata and contextual information for your code and automatically adds it to the markdown surrounding your code block.
+
+- **Share**: This button allows you to quickly share any code snippet with a link, for easy collaboration.
 
 <Image
   zoom
@@ -182,6 +190,17 @@ Pieces adds **embedded buttons** into your markdown files to help you save, copy
 />
 
 ---
+
+## qGPT - Personal Knowledge Assistant
+One of the most significant features of this plugin is qGPT, an artificial intelligence assistant designed to assist with your personal knowledge management.
+qGPT learns from the notes in your vault and adapts to the context of what you're working on. To try out this impressive technology: 
+
+- Ensure POS is open and updated to at least 5.1.2.
+- To view qGPT, open the Pieces plugin and click the bot logo on the top slider to switch to Copilot.
+- The Copilot will use your entire vault as context for the chatbot. This means you can query your Obsidian vault with plain text and we will semantically match your question to any of your relevant notes.
+- Simply begin asking questions in the input text prompt and watch the magic!
+- Each time you enter a query, you will also receive suggested queries relating to your conversation. Simply click one of the suggested queries buttons in order to continue the conversation with that query.
+- Each response from the qGPT will also contain links to the relevant notes that it used to answer your question. Click on one of those links in order to open that markdown file in your editor.
 
 ## Data Privacy, Security, and Offline-First Approach
 
@@ -205,6 +224,15 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
 
 Just as Obsidian believes, we too are steadfast in our commitment to provide a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give 'Pieces for Developers' a spin. Who knows, you might find it liberating!
 
+- **Offline First in qGPT**: qGPT sends data to ChatGPT for its more complex processing. Understandably, that can be a bit scary, because your vault information may be private. **We plan to make qGPT fully offline by Q3***, but for now, we've found an effective compromise. Rather than sending all your data to ChatGPT, we use a series of offline models to boil things down as much as possible. This way, we only send the bare minimum to the cloud, and the majority of ML processing is safely kept on your computer. To understand how this works internally, refer to the diagram  below.
+
+<Image
+    zoom
+    src="/assets/obsidian/qgpt_flowchart.png"
+    alt="Diagram detailing how local preprocessing limits the data sent to ChatGPT"
+/>
+
+
 ### Can I adjust my privacy settings later?
 You can set your user privacy settings during onboarding when you download the app for the first time on you device.
 
@@ -222,7 +250,8 @@ If you want to adjust your privacy settings later after you complete onboarding,
     alt="Privacy and security details."
 />
 
-
+## Real-Time Streaming for a Better Integration Experience
+To optimize your experience, we use a websocket connection to pass data between your plugins and Pieces OS. This means that any change you make across the Pieces ecosystem, including the Pieces for Obsidian plugin, is instantaneously reflected across all of your Pieces integrations. (ex. <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Extension</a>.)
 
 ## Having Trouble with the Pieces For Developers Obsidian Plugin?
 
