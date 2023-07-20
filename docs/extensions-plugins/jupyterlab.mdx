@@ -54,33 +54,27 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 ## Steps to Install
 
 <Tabs
-  defaultValue={"pypi"}
+  defaultValue={"pip"}
   values={[
-    {label: 'PYPI Manager', value: 'pypi'},
     {label: 'pip', value: 'pip'},
-    {label: 'conda', value: 'conda'}
+    {label: 'PYPI Manager', value: 'pypi'}
   ]}
 >
   <TabItem value="pypi">
-    1. Search for `jupyterlab-pieces`
+    1. Search for `jupyter-pieces`
 
-    2. Click the _Install_ button for the  `jupyterlab-pieces` extension
+    2. Follow the installation instructions on the result:
+      `pip install -U jupyter-pieces`
 
-    3. Refresh your browser window
+    2. (optional) Be Sure to have extensions enabled. [Read about enabling Extensions here](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
+      - Be sure to accept the disclaimer before moving forward in this process.
   </TabItem>
   <TabItem value="pip">
     1. Run this command
-    `pip install -U jupyterlab-pieces`
+    `pip install -U jupyter-pieces`
 
-    2. Enable the extension
-    `jupyter nbextension enable --py jupyterlab-pieces`
-  </TabItem>
-  <TabItem value="conda">
-    1. Run this command
-    `conda install -c conda-forge jupyterlab-pieces`
-
-    2. Enable the extension
-    `jupyter nbextension enable --py jupyterlab-pieces`
+    2. (optional) Be Sure to have extensions enabled. [Read about enabling Extensions here](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
+      - Be sure to accept the disclaimer before moving forward in this process.
   </TabItem>
 </Tabs>
 
