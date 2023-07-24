@@ -43,6 +43,10 @@ export const InstallButton = props => {
   </a>
 }
 
+export const Spacer = props => {
+    return <div style={{ height: "25px" }}></div>
+}
+
 <ReleasePill src={"https://code.pieces.app/updates"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
 
 # Your Guide to Getting Started with the Pieces for JupyterLab Extension
@@ -64,7 +68,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
 </Accordion>
-
+<Spacer></Spacer>
 <Accordion title="Install via Pypi">
 1. Search for `jupyter-pieces`
 2. Follow the installation instructions on the result:
@@ -73,8 +77,9 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
     ```
 3. *(optional)* Be Sure to have extensions enabled. [Read about enabling Extensions](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
-3. (optional) Be Sure to have extensions enabled. [Read about enabling Extensions here](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
-    - Be sure to accept the disclaimer before moving forward in this process.
+<Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
+</Accordion>
+<Spacer></Spacer>
 
 ## Save your Snippets
 
