@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="672d0c21-415a-43ea-91c9-c9d3d135c5ee" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="new-features-june-2023" />
+      </map>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1689706835" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="patches-updates-july18" />
+                    <option name="lastUsedInstant" value="1689685610" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="new-features-june-2023" />
+                    <option name="lastUsedInstant" value="1689103884" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="edit-cta-buttons-plus" />
+                    <option name="lastUsedInstant" value="1688650753" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="footer-plugin-changes" />
+                    <option name="lastUsedInstant" value="1687900284" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NjtXX3PcQFkEZ6VU6TlT4BHXk5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jordanfreeman/Documents/GitHub/documentation/docs/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Markdown&quot;
+    ],
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/assets" />
+      <recent name="$PROJECT_DIR$/docs/assets/obsidian" />
+      <recent name="$PROJECT_DIR$/docs/assets/chrome" />
+      <recent name="$PROJECT_DIR$/docs/assets/edge" />
+      <recent name="$PROJECT_DIR$/docs/assets/vs-code" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="672d0c21-415a-43ea-91c9-c9d3d135c5ee" name="Changes" comment="" />
+      <created>1680189358660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680189358660</updated>
+      <workItem from="1680189359905" duration="35436000" />
+      <workItem from="1680627543071" duration="2768000" />
+      <workItem from="1680633469715" duration="397000" />
+      <workItem from="1680703268529" duration="19530000" />
+      <workItem from="1680880589323" duration="12329000" />
+      <workItem from="1680898623463" duration="6791000" />
+      <workItem from="1680988424226" duration="599000" />
+      <workItem from="1681142876289" duration="159000" />
+      <workItem from="1681155923325" duration="37356000" />
+      <workItem from="1681399121894" duration="405000" />
+      <workItem from="1681400723887" duration="17211000" />
+      <workItem from="1681427120011" duration="706000" />
+      <workItem from="1681832278387" duration="11305000" />
+      <workItem from="1682025987903" duration="1951000" />
+      <workItem from="1682092848599" duration="729000" />
+      <workItem from="1682093915976" duration="436000" />
+      <workItem from="1682094816039" duration="1332000" />
+      <workItem from="1682108464458" duration="13969000" />
+      <workItem from="1682610103133" duration="5724000" />
+      <workItem from="1682951900550" duration="21342000" />
+      <workItem from="1682986110032" duration="6000" />
+      <workItem from="1683034663460" duration="647000" />
+      <workItem from="1683051383509" duration="97000" />
+      <workItem from="1683051697271" duration="5176000" />
+      <workItem from="1683142445435" duration="900000" />
+      <workItem from="1683148945952" duration="1994000" />
+      <workItem from="1683206053244" duration="599000" />
+      <workItem from="1683222033035" duration="27074000" />
+      <workItem from="1683812689641" duration="541000" />
+      <workItem from="1683826594576" duration="10439000" />
+      <workItem from="1684364429530" duration="19008000" />
+      <workItem from="1684520761382" duration="1417000" />
+      <workItem from="1684765693697" duration="16548000" />
+      <workItem from="1684875285770" duration="6508000" />
+      <workItem from="1684934771496" duration="9818000" />
+      <workItem from="1684983293941" duration="42927000" />
+      <workItem from="1685969078700" duration="844000" />
+      <workItem from="1685979034754" duration="1027000" />
+      <workItem from="1685988852363" duration="29180000" />
+      <workItem from="1686663224405" duration="1138000" />
+      <workItem from="1686837056009" duration="17736000" />
+      <workItem from="1687295674863" duration="4079000" />
+      <workItem from="1687494918541" duration="630000" />
+      <workItem from="1687550507887" duration="61000" />
+      <workItem from="1687550584634" duration="41721000" />
+      <workItem from="1687967391063" duration="580000" />
+      <workItem from="1688588679935" duration="20510000" />
+      <workItem from="1689346794055" duration="2142000" />
+      <workItem from="1689685442578" duration="2956000" />
+      <workItem from="1689706718802" duration="1091000" />
+      <workItem from="1689863371222" duration="3311000" />
+      <workItem from="1689965158258" duration="682000" />
+      <workItem from="1690329699257" duration="858000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
