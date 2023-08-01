@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="672d0c21-415a-43ea-91c9-c9d3d135c5ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/jupyterlab.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/jupyterlab.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/product-highlights-and-benefits/privacy-security-data.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/product-highlights-and-benefits/privacy-security-data.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +28,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="patches-plus" />
-                    <option name="lastUsedInstant" value="1690573888" />
+                    <option name="branchName" value="search-privacy" />
+                    <option name="lastUsedInstant" value="1690839358" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1689706835" />
+                    <option name="lastUsedInstant" value="1690839117" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="patches-plus" />
+                    <option name="lastUsedInstant" value="1690573888" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="patches-updates-july18" />
@@ -43,10 +46,6 @@
                   <RecentBranch>
                     <option name="branchName" value="new-features-june-2023" />
                     <option name="lastUsedInstant" value="1689103884" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="edit-cta-buttons-plus" />
-                    <option name="lastUsedInstant" value="1688650753" />
                   </RecentBranch>
                 </list>
               </option>
@@ -164,6 +163,7 @@
       <workItem from="1689863371222" duration="3311000" />
       <workItem from="1689965158258" duration="682000" />
       <workItem from="1690329699257" duration="858000" />
+      <workItem from="1690839078299" duration="582000" />
     </task>
     <servers />
   </component>
