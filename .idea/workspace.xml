@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="672d0c21-415a-43ea-91c9-c9d3d135c5ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/product-highlights-and-benefits/privacy-security-data.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/product-highlights-and-benefits/privacy-security-data.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="new-features-june-2023" />
+        <entry key="$PROJECT_DIR$" value="search-privacy" />
       </map>
     </option>
   </component>
