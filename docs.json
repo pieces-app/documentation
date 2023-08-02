@@ -6,6 +6,11 @@
   "socialPreview": "/assets/pfd_preview.png",
   "logoDark": "/assets/pieces_light.png",
   "favicon": "/assets/pieces_dark.png",
+  "docsearch": {
+    "appId": "KTOXFODR65",
+    "apiKey": "79c81e52460257d3761ea38438e29637",
+    "indexName": "pieces"
+  },
   "anchors": [
     {
       "title": "Visit pieces.app",
