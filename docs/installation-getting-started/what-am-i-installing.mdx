@@ -58,17 +58,6 @@ export const CallToAction = props => {
     </div>
 };
 
-export const DefaultView =>{
-    const os = window.navigator.platform;
-    let default_value = 'macos';
-    if (os.starsWith('Win')) {
-        default_value = 'windows';
-    } else {
-        default_value = 'linux';
-    } 
-    return default_value;
-}
-
 # What am I Installing?
 
 ![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
@@ -76,7 +65,15 @@ export const DefaultView =>{
 ## Pieces Desktop App & Pieces OS
 
 <Tabs
-    defaultValue= {DefaultView()}
+    defaultValue= {
+        if (window.navigator.platform.starsWith('Win')) {
+            "windows"
+        } else if (window.navigator.platform.starsWith('Linux')) {
+            "linux";
+        } else {
+            "macos";
+        }
+    }
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
