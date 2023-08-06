@@ -67,11 +67,11 @@ export const CallToAction = props => {
 <Tabs
     defaultValue= {
         if (window.navigator.platform.starsWith('Win')) {
-            "windows"
+            return 'windows';
         } else if (window.navigator.platform.starsWith('Linux')) {
-            "linux";
+            return 'linux';
         } else {
-            "macos";
+            return 'macos';
         }
     }
     values={[
