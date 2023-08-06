@@ -65,7 +65,9 @@ export const CallToAction = props => {
 ## Pieces Desktop App & Pieces OS
 
 <Tabs
-    defaultValue={"windows"}
+    if(os.startsWith("Mac")) defaultValue={"macos"}
+    else if(os.startsWith("Win")) defaultValue={"windows"}
+    else defaultValue={"linux"}
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
