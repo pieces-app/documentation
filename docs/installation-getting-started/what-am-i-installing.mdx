@@ -58,7 +58,7 @@ export const CallToAction = props => {
     </div>
 };
 
-export const DefaultView = props => {
+export const DefaultView = () =>{
     const os = window.navigator.platform;
     let default_value = 'macos';
     if (os.starsWith('Win')) {
