@@ -60,13 +60,13 @@ export const CallToAction = props => {
 
 export const DefaultView = props => {
     const os = window.navigator.platform;
-    if (os.includes("Mac")) {
-        return props.mac;
-    } else if (os.includes("Win")) {
-        return props.windows;
+    let default_value = 'macos';
+    if (os.starsWith('Win')) {
+        default_value = 'windows';
     } else {
-        return props.linux;
+        default_value = 'linux';
     } 
+    return default_value;
 }
 
 # What am I Installing?
@@ -76,7 +76,7 @@ export const DefaultView = props => {
 ## Pieces Desktop App & Pieces OS
 
 <Tabs
-    defaultValue= {DefaultView}
+    defaultValue= {default_value}
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
