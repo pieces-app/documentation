@@ -58,16 +58,25 @@ export const CallToAction = props => {
     </div>
 };
 
+export const DefaultView = props => {
+    const os = window.navigator.platform;
+    if (os.includes("Mac")) {
+        return props.mac;
+    } else if (os.includes("Win")) {
+        return props.windows;
+    } else {
+        return props.linux;
+    } 
+}
+
 # What am I Installing?
 
 ![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
 
 ## Pieces Desktop App & Pieces OS
-const os = window.navigator.platform;
+
 <Tabs
-    if(os.startsWith("Mac")) defaultValue={"macos"}
-    else if(os.startsWith("Win")) defaultValue={"windows"}
-    else defaultValue={"linux"}
+    defaultValue= {DefaultView}
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
