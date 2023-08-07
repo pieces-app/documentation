@@ -100,7 +100,7 @@
   ],
   "variables": {
     "versions": {
-      "pfd": "v2.2.3",
+      "pfd": "v2.3.1",
       "chrome": "v2.6.2",
       "jetbrains": "v5.3.2",
       "vscode": "v1.0.0",
