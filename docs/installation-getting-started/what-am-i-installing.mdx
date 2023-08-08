@@ -63,9 +63,17 @@ export const CallToAction = props => {
 ![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
 
 ## Pieces Desktop App & Pieces OS
+if (window.navigator.platform.starsWith('Win')) {
+    "windows"
+} else if (window.navigator.platform.starsWith('Linux')) {
+    "linux";
+} else {
+    "macos";
+}
+    }
 
 <Tabs
-    defaultValue= {'macos'}
+    defaultValue={window.navigator.platform.starsWith('Win') ? 'windows' : 'linux'}
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
