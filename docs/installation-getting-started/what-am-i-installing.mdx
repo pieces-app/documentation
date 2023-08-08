@@ -58,6 +58,19 @@ export const CallToAction = props => {
     </div>
 };
 
+export const ConditionalLogic = props => {
+    let output;
+    if (window.navigator.platform.starsWith('Win')){
+        output = "windows"
+    } else if (window.navigator.platform.starsWith('Linux')){
+        output = "linux"
+    } else {
+        output = "macos"
+    }
+
+    return output;
+}
+
 # What am I Installing?
 
 ![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
@@ -73,7 +86,7 @@ if (window.navigator.platform.starsWith('Win')) {
     }
 
 <Tabs
-    defaultValue={window.navigator.platform.starsWith('Win') ? 'windows' : 'linux'}
+    defaultValue={ ConditionalLogic }
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
