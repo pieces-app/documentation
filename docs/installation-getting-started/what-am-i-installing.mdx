@@ -65,15 +65,7 @@ export const CallToAction = props => {
 ## Pieces Desktop App & Pieces OS
 
 <Tabs
-    defaultValue= {
-        if (window.navigator.platform.starsWith('Win')) {
-            "windows"
-        } else if (window.navigator.platform.starsWith('Linux')) {
-            "linux";
-        } else {
-            "macos";
-        }
-    }
+    defaultValue= {'macos'}
     values={[
         {label: 'macOS', value: 'macos'},
         {label: 'Windows', value: 'windows'},
@@ -140,7 +132,7 @@ Ditch the hundreds of .txt files and siloed tools and organize your snippets in 
     </TabItem>
     <TabItem value="view_edit">
         ![View and edit snippets.](/assets/installation/tabs/macos/view_and_edit.png)
-        Navigate the Gallery to view and edit your snippets with your ```<--``` and ```-->``` arrow keys. If you are in List View, this will change to ```Up``` and ```Down```.
+        Navigate the Gallery to view and edit your snippets with your ```<---``` and ```-->``` arrow keys. If you are in List View, this will change to ```Up``` and ```Down```.
     </TabItem>
     <TabItem value="manage">
         ![Manage the context and metadata of saved code snippets.](/assets/installation/tabs/macos/manage_context.png)
