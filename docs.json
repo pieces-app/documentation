@@ -9,7 +9,8 @@
   "docsearch": {
     "appId": "KTOXFODR65",
     "apiKey": "79c81e52460257d3761ea38438e29637",
-    "indexName": "pieces"
+    "indexName": "pieces",
+    "insights": true
   },
   "anchors": [
     {
