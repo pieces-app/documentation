@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Pieces for Developers JupyterLab Extension
-description: Learn how to install the Pieces for JupyterLab Extension via the PYPI Manager, pip, and conda.
+description: Learn how to install the Pieces for JupyterLab Extension via the PYPI Manager, Pip, and Conda.
 ---
 
 <link
@@ -53,10 +53,9 @@ export const Spacer = props => {
 
 _Pieces For Developers captures **NO identifiable user data**. Our **Local only** architecture means your notes never have to leave your device!_
 
-_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the JupyterLab Extensions in order for the Plugin to work properly._
+_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the JupyterLab Extension for it to work properly._
 
 ## Ways to Install
-
 ---
 
 <Accordion title="Install Using Pip">
@@ -64,20 +63,20 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
     ```sh
     pip install -U jupyter-pieces 
     ```
-2. *(optional)* Be Sure to have extensions enabled. [Read about enabling Extensions](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
+2. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
 </Accordion>
 
 <Spacer></Spacer>
 
-<Accordion title="Install via Pypi">
+<Accordion title="Install via PYPI">
 1. Search for `jupyter-pieces`
 2. Follow the installation instructions on the result:
     ```sh
     pip install -U jupyter-pieces
     ```
-3. *(optional)* Be Sure to have extensions enabled. [Read about enabling Extensions](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
+3. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
 </Accordion>
@@ -88,23 +87,23 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 
 ---
 
-### qGPT
-- Make sure POS is open, and updated to at least 5.1.2
-- To view the Copilot, open the pieces plugin and click the bot logo on the top slider to switch to Copilot
-- The copilot will traverse the directory you launched JupyterLab from in order to load in your notebooks as context for the chatbot, this means if you have multiple notebooks in that same directory, it will load in all of them for you to query.
-- Simply begin asking questions in the input text prompt regarding your notebooks and watch the magic!
-- Each time you enter a query you will also receive suggested queries relating to your conversation, simply click one of the suggested queries buttons in order to continue the conversation with that query.
-- Each response from the Copilot will also contain the relevant notebooks that it was able to gain context from in order to answer your question, click on one of those buttons in order to open that notebook in your editor.
+### Pieces Copilot powered by qGPT
+- Make sure Pieces OS is open and updated to at least 5.1.2
+- To view the Copilot, open the Pieces JupyterLab Extension and click the bot logo on the top slider to switch to Copilot
+- The Copilot will traverse the directory you launched JupyterLab from in order to load in your notebooks as context for the chatbot. If you have multiple notebooks in the same directory, you can query all of them.
+- Interact with the Pieces Copilot and recieve answers that are specific to your notebooks.
+- Each time you enter a query, you will also receive suggested queries relating to your conversation. Select one of the suggested queries in order to continue the conversation with that query.
+- Each response from the Copilot will also contain the relevant notebooks that it was able to gain context from in order to answer your question. Click on one of those buttons to open that notebook in your editor.
 
-### Enrich Selection
-- With the new release, you can also select any text within a code cell in your notebook, right click, and add a useful description to it.
+### Enrich Selected Code
+- Select any text within a code cell in your notebook, right click, and add a useful description to it.
 
 ### Realtime Streaming
-- We added a websocket connection with this release as well. This means that all the changes you would make across any Pieces integration (i.e PFD, VSCode, Jetbrains, etc) should automatically be reflected in the plugin.
+- All of the changes you make across any Pieces integration (e.g., the Pieces Desktop App, the Pieces VS Code Extension, the Pieces JetBrains Plugin, etc.) wil automatically be reflected in the JupyterLab plugin.
 
 ## Save your Snippets
 
-**To save a Snippet, try one of these:**
+**To save a snippet:**
 
 - Highlight the text, right-click, and select "Save to Pieces."
 - Click the Pieces button within any code block.
@@ -121,7 +120,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 Open the Pieces View from the Ribbon Menu.
 
 - Sort by **recent** or by **language**
-- Search your snippets to save time leafing through your markdown files.
+- Search your snippets to save time leafing through your files.
 
 <Image
   zoom
@@ -155,7 +154,7 @@ Open the Pieces View from the Ribbon Menu.
   alt="Example of generating a shareable link for a snippet."
 />
 
-_Pieces hosts all of your snippets for seamless sharing!_
+_Pieces hosts all of your snippets for seamless sharing._
 
 ## Embedded Buttons
 
@@ -181,16 +180,15 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
   alt="Privacy and security details."
 />
 
-- **On-Device ML Processing**: We carry out ~80% of machine learning processing on-device, minimizing exposure to third-party servers.
+- **On-Device ML Processing**: We carry out ~80% of machine learning processing on-device, which minimizes exposure to third-party servers.
 
-- **Offline-First Design**: Like JupyterLab, our tool is engineered to work seamlessly offline, providing robust functionality even without internet connectivity.
+- **Offline-First Design**: Like JupyterLab, our tool is built to work seamlessly offline and provides robust functionality even without internet connectivity.
 
-- **Full On-Device ML**: We're progressing towards fully on-device ML capabilities, with an aim to ship 100% of ML features on-device by Q3.
+- **Fully On-Device ML**: We're progressing toward fully on-device ML capabilities, with an aim to ship 100% of ML features on-device in Q3.
 
-- **Opt-In Cloud Capability**: We provide opt-in cloud features on a per-resource basis, ensuring that data transfers to the cloud only occur with your explicit consent, granting you full control over your data.
+- **Opt-In Cloud Capability**: We provide opt-in cloud features on a per-resource basis, ensuring that data transfers to the cloud only occur with your explicit consent. This grants you full control over your data.
 
-Just as JupyterLab believes, we too are steadfast in our commitment to provide a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give 'Pieces for Developers' a spin. Who knows, you might find it liberating!
-
+Just like JupyterLab, we are steadfast in our commitment to providing a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give Pieces for Developers a spin.
 
 ## Having Trouble with the Pieces For Developers JupyterLab Extension?
 
@@ -203,7 +201,7 @@ If you need to download and install Pieces OS, please <a target="_blank" href="h
   following:
 </h3>
 
-- The latest version of Pieces for Developers JupyterLab Extension
+- The latest version of the Pieces for Developers JupyterLab Extension
 - Pieces OS version 5.0.0 or higher
 - JupyterLab version 4.0.0 or higher
 
@@ -220,7 +218,7 @@ You can adjust the following settings:
 1. Auto-open Pieces list view on snippet save
 2. Cloud capabilities
 3. Pieces server port
-4. Login/Logout of the Pieces cloud
+4. Login/Logout of your Pieces Cloud
 
 ## Help & Support
 
