@@ -50,7 +50,7 @@
     }
   ],
   "sidebar": [
-    ["Installation & Getting Started", [
+    ["\uD83D\uDEE0️️ Installation & Getting Started", [
       ["Overview", "/installation-getting-started/what-am-i-installing"],
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
