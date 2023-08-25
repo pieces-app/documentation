@@ -50,13 +50,13 @@
     }
   ],
   "sidebar": [
-    ["\uD83D\uDEE0️️ Installation & Getting Started", [
+    ["\uD83D\uDEE0️️ Install & Get Started", [
       ["Overview", "/installation-getting-started/what-am-i-installing"],
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
     ]],
-    ["\uD83D\uDD0C Apps, Extensions & Plugins", [
+    ["\uD83D\uDD0C Apps & Plugins", [
       ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
       ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
       ["Pieces Edge Addon", "/extensions-plugins/edge"],
@@ -65,14 +65,6 @@
       ["Pieces Obsidian Plugin", "/extensions-plugins/obsidian"],
       ["Pieces JupyterLab Extension", "/extensions-plugins/jupyterlab"],
       ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
-    ]],
-    ["✨ Product Highlights & Benefits",[
-      ["Snippet Collections", "/product-highlights-and-benefits/collections"],
-      ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
-      ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
-      ["Saving To/From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
-      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
-      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
@@ -86,6 +78,14 @@
       ["Snippet Transformations", "/features/transforming-snippets"],
       ["User Settings", "/features/user-settings"],
       ["Workflow Activity", "/features/workflow-activity"]
+    ]],
+    ["✨ Highlights & Benefits",[
+      ["Snippet Collections", "/product-highlights-and-benefits/collections"],
+      ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
+      ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
+      ["Saving To/From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
+      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
+      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
     ]],
     ["\uD83D\uDCDA Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
