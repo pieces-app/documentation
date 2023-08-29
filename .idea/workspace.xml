@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/assets/partner-collections/power_tip_asset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/partner-collections/power_tip_example.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_22_23,_11_23_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_22_23__11_23_AM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/partner-collections/note_banner_asset.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" afterDir="false" />
     </list>
@@ -33,6 +30,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="dart-tut-updates" />
+                    <option name="lastUsedInstant" value="1693328008" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1692979614" />
                   </RecentBranch>
@@ -47,10 +48,6 @@
                   <RecentBranch>
                     <option name="branchName" value="screenshots-update" />
                     <option name="lastUsedInstant" value="1691602806" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="tarun-exp2" />
-                    <option name="lastUsedInstant" value="1691531259" />
                   </RecentBranch>
                 </list>
               </option>
@@ -115,7 +112,7 @@
       <workItem from="1692977616402" duration="2664000" />
       <workItem from="1693231511919" duration="48000" />
       <workItem from="1693327224813" duration="15000" />
-      <workItem from="1693327252926" duration="730000" />
+      <workItem from="1693327252926" duration="1299000" />
     </task>
     <servers />
   </component>
