@@ -3,17 +3,583 @@ export const Spacer = props => {
 }
 
 
+## Power Tip Banners
+
+![Example of Power Tip Banner](/assets/partner-collections/power_tip_example.png)
+
+Download this image here:
+
+![Power Tip Asset](/assets/partner-collections/power_tip_asset.png)
+
+### new pages for banner:
+
+- [https://dart-tutorial.com/introduction-and-basics/introduction-to-dart/](https://dart-tutorial.com/introduction-and-basics/introduction-to-dart/)
+- [https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/](https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/)
+
+---
+
+## Note Banners
+
+Download this image here:
+
+![Note Banner](/assets/partner-collections/note_banner_asset.png)
+
+### new pages for note:
+
+- https://dart-tutorial.com/object-oriented-programming/constructor-in-dart/
+- https://dart-tutorial.com/object-oriented-programming/class-and-objects-in-dart/
+- https://dart-tutorial.com/object-oriented-programming/named-constructor-in-dart/
+
+---
+
 # Dart-tutorial Snippet Collections
 
-The following is a tabbed list of the 6 pages we'd like to update by adding shareable links under each code snippet. Please add the corresponding shareable link for each code snippet listed in the drop down for each page. Each shareable link provides additional context to each of your snippets, and provides a link back to your website to drive additional traffic. Please let us know if you have any questions!
-
-## Links Under Snippets
-
-![](/assets/save_this_snippet_example.png)
-
-![](/assets/save_this_button.png)
+The original Snippets are stored below under **OLD** and any new updates with new snippets are located immediately below this section under **NEW UPDATES**. Let us know if you have any questions!
 
 <Spacer></Spacer>
+
+### NEW UPDATES
+
+<Accordion title="Introduction to Dart | /introduction-and-basics/introduction-to-dart/">
+
+    Link to Page: [Introduction to Dart](https://dart-tutorial.com/introduction-and-basics/introduction-to-dart/)
+
+    ```dart title="Basic Programming Terms"
+    a. 52
+    b. 5+5
+    c. 'Hello World.'
+    d. num
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=8a43478824)
+
+</Accordion>
+
+<Spacer></Spacer>
+
+<Accordion title="User Input in Dart | /introduction-and-basics/user-input-in-dart/">
+
+    Link to Page: [User Input in Dart](https://dart-tutorial.com/introduction-and-basics/user-input-in-dart/)
+
+    ```dart title="String User Input"
+    import 'dart:io';
+
+    void main() {
+        print("Enter name:");
+        String? name  = stdin.readLineSync();
+        print("The entered name is ${name}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=b20449bc14)
+
+    ```dart title="Integer User Input"
+    import 'dart:io';
+
+    void main() {
+        print("Enter number:");
+        int? number = int.parse(stdin.readLineSync()!);
+        print("The entered number is ${number}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=513f459d60)
+
+    ```dart title="Floating Point User Input"
+    import 'dart:io';
+
+    void main() {
+        print("Enter a floating number:");
+        double number = double.parse(stdin.readLineSync()!);
+        print("The entered num is $number");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=2fc04bbb6c)
+
+</Accordion>
+
+<Spacer></Spacer>
+
+<Accordion title="Constructor in Dart | /object-oriented-programming/constructor-in-dart/">
+
+    Link to Page: [Constructor in Dart](https://dart-tutorial.com/object-oriented-programming/constructor-in-dart/)
+
+    ```dart title="Constructor in Dart"
+    Person person = Person("John", 30);
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=e9864d97e4)
+
+    ```dart title="Without Constructor"
+    Person person = Person();
+    person.name = "John";
+    person.age = 30;
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=7e824c914c)
+
+    ```dart title="Syntax"
+    class ClassName {
+    // Constructor declaration: Same as class name
+        ClassName() {
+            // body of the constructor
+        }
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=ee184089e2)
+
+    ```dart title="Example 1: How to Declare Constructor in Dart"
+    class Student {
+        String? name;
+        int? age;
+        int? rollNumber;
+
+    // Constructor
+    Student(String name, int age, int rollNumber) {
+        print("Constructor called"); // this is for checking the constructor is called or not.
+        this.name = name;
+        this.age = age;
+        this.rollNumber = rollNumber;
+       }
+    }
+
+    void main() {
+        // Here student is object of class Student.
+        Student student = Student("John", 20, 1);
+        print("Name: ${student.name}");
+        print("Age: ${student.age}");
+        print("Roll Number: ${student.rollNumber}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=483341aa93)
+
+    ```dart title="Example 2: Constructor in Dart"
+    class Teacher {
+        String? name;
+        int? age;
+        String? subject;
+        double? salary;
+
+        // Constructor
+        Teacher(String name, int age, String subject, double salary) {
+            this.name = name;
+            this.age = age;
+            this.subject = subject;
+            this.salary = salary;
+        }
+        // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Age: ${this.age}");
+            print("Subject: ${this.subject}");
+            print("Salary: ${this.salary}\n"); // \n is used for new line
+        }
+    }
+
+    void main() {
+        // Creating teacher1 object of class Teacher
+        Teacher teacher1 = Teacher("John", 30, "Maths", 50000.0);
+        teacher1.display();
+
+        // Creating teacher2 object of class Teacher
+        Teacher teacher2 = Teacher("Smith", 35, "Science", 60000.0);
+        teacher2.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=c66d46b9e5)
+
+    ```dart title="Example 3: Constructor in Dart"
+    class Car {
+        String? name;
+        double? prize;
+
+        // Constructor
+        Car(String name, double prize) {
+            this.name = name;
+            this.prize = prize;
+        }
+
+    // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Prize: ${this.prize}");
+        }
+    }
+
+    void main() {
+        // Here car is object of class Car.
+        Car car = Car("BMW", 500000.0);
+        car.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=4cfe42990b)
+
+    ```dart title="Example 4: Constructor in Dart"
+    class Staff {
+        String? name;
+        int? phone1;
+        int? phone2;
+        String? subject;
+
+        // Constructor
+        Staff(String name, int phone1, String subject) {
+            this.name = name;
+            this.phone1 = phone1;
+            this.subject = subject;
+        }
+
+        // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Phone1: ${this.phone1}");
+            print("Phone2: ${this.phone2}");
+            print("Subject: ${this.subject}");
+        }
+    }
+
+    void main() {
+        // Here staff is object of class Staff.
+        Staff staff = Staff("John", 1234567890, "Maths");
+        staff.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=58c14ca432)
+
+    ```dart title="Example 5: Write Constructor Single Line"
+    class Person{
+        String? name;
+        int? age;
+        String? subject;
+        double? salary;
+
+        // Constructor in short form
+        Person(this.name, this.age, this.subject, this.salary);
+
+        // display method
+        void display(){
+            print("Name: ${this.name}");
+            print("Age: ${this.age}");
+            print("Subject: ${this.subject}");
+            print("Salary: ${this.salary}");
+        }
+    }
+
+    void main(){
+        Person person = Person("John", 30, "Maths", 50000.0);
+        person.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=9e3d46a5c1)
+
+    ```dart title="Example 6: Constructor with Optional Parameters"
+    class Employee {
+        String? name;
+        int? age;
+        String? subject;
+        double? salary;
+
+        // Constructor
+        Employee(this.name, this.age, [this.subject = "N/A", this.salary=0]);
+
+        // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Age: ${this.age}");
+            print("Subject: ${this.subject}");
+            print("Salary: ${this.salary}");
+        }
+    }
+
+    void main(){
+        Employee employee = Employee("John", 30);
+        employee.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=b0a540bf99)
+
+    ```dart title="Example 7: Constructor with Named Parameters"
+    class Chair {
+        String? name;
+        String? color;
+
+        // Constructor
+        Chair({this.name, this.color});
+
+        // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Color: ${this.color}");
+        }
+    }
+
+    void main(){
+        Chair chair = Chair(name: "Chair1", color: "Red");
+        chair.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=c6664fb752)
+
+    ```dart title="Example 8: Constructor with Default Values"
+    class Table {
+        String? name;
+        String? color;
+
+        // Constructor
+        Table({this.name = "Table1", this.color = "White"});
+
+        // Method
+        void display() {
+            print("Name: ${this.name}");
+            print("Color: ${this.color}");
+        }
+    }
+
+    void main(){
+        Table table = Table();
+        table.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=ca814da364)
+
+</Accordion>
+
+<Spacer></Spacer>
+
+<Accordion title="Class and Object in Dart | /object-oriented-programming/class-and-objects-in-dart/">
+
+    Link to Page: [Class and Objects in Dart](https://dart-tutorial.com/object-oriented-programming/class-and-objects-in-dart/)
+
+    ```dart title="Example of a Class and Object in Dart"
+    class Animal {
+        String? name;
+        int? numberOfLegs;
+        int? lifeSpan;
+
+        void display() {
+            print("Animal name: $name.");
+            print("Number of Legs: $numberOfLegs.");
+            print("Life Span: $lifeSpan.");
+        }
+    }
+
+    void main(){
+        // Here animal is object of class Animal.
+        Animal animal = Animal();
+        animal.name = "Lion";
+        animal.numberOfLegs = 4;
+        animal.lifeSpan = 10;
+        animal.display();
+    }
+    ```
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=74fb43b01f)
+
+    ```dart title="Find Area Of Rectangle Using Class and Objects"
+    class Animal {
+        String? name;
+        int? numberOfLegs;
+        int? lifeSpan;
+
+        void display() {
+            print("Animal name: $name.");
+            print("Number of Legs: $numberOfLegs.");
+            print("Life Span: $lifeSpan.");
+        }
+    }
+
+    void main(){
+        // Here animal is object of class Animal.
+        Animal animal = Animal();
+        animal.name = "Lion";
+        animal.numberOfLegs = 4;
+        animal.lifeSpan = 10;
+        animal.display();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=ebb14c9391)
+
+    ```dart title="Find Simple Interest Using Class and Objects"
+    class SimpleInterest{
+        // properties of simple interest
+        double? principal;
+        double? rate;
+        double? time;
+
+        // functions of simple interest
+        double interest(){
+            return (principal! * rate! * time!)/100;
+        }
+    }
+    void main(){
+        // object of simple interest created
+        SimpleInterest simpleInterest = SimpleInterest();
+
+        // setting properties for simple interest
+        simpleInterest.principal=1000;
+        simpleInterest.rate=10;
+        simpleInterest.time=2;
+
+        // functions of simple interest called
+        print("Simple Interest is ${simpleInterest.interest()}.");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=e5d442a162)
+
+</Accordion>
+
+<Spacer></Spacer>
+
+<Accordion title="Named Constructor in Dart | /object-oriented-programming/named-constructor-in-dart/">
+
+    Link to Page: [Named Constructor in Dart](https://dart-tutorial.com/object-oriented-programming/named-constructor-in-dart/)
+
+    ```dart title="Example 1: Named Constructor In Dart"
+    class Student {
+        String? name;
+        int? age;
+        int? rollNumber;
+
+        // Default Constructor
+        Student() {
+            print("This is a default constructor");
+        }
+
+        // Named Constructor
+        Student.namedConstructor(String name, int age, int rollNumber) {
+            this.name = name;
+            this.age = age;
+            this.rollNumber = rollNumber;
+        }
+    }
+
+    void main() {
+        // Here student is object of class Student.
+        Student student = Student.namedConstructor("John", 20, 1);
+        print("Name: ${student.name}");
+        print("Age: ${student.age}");
+        print("Roll Number: ${student.rollNumber}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=f9544bb84b)
+
+    ```dart title="Example 2: Named Constructor In Dart"
+    class Mobile {
+        String? name;
+        String? color;
+        int? prize;
+
+        Mobile(this.name, this.color, this.prize);
+        // here Mobile() is a named constructor
+        Mobile.namedConstructor(this.name, this.color, [this.prize = 0]);
+
+        void displayMobileDetails() {
+            print("Mobile name: $name.");
+            print("Mobile color: $color.");
+            print("Mobile prize: $prize");
+        }
+    }
+
+    void main() {
+        var mobile1 = Mobile("Samsung", "Black", 20000);
+        mobile1.displayMobileDetails();
+        var mobile2 = Mobile.namedConstructor("Apple", "White");
+        mobile2.displayMobileDetails();
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=359a4d82c2)
+
+    ```dart title="Example 3: Named Constructor In Dart"
+    class Animal {
+        String? name;
+        int? age;
+
+        // Default Constructor
+        Animal() {
+            print("This is a default constructor");
+        }
+
+        // Named Constructor
+        Animal.namedConstructor(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        // Named Constructor
+        Animal.namedConstructor2(String name) {
+            this.name = name;
+        }
+    }
+
+    void main(){
+        // Here animal is object of class Animal.
+        Animal animal = Animal.namedConstructor("Dog", 5);
+        print("Name: ${animal.name}");
+        print("Age: ${animal.age}");
+
+        Animal animal2 = Animal.namedConstructor2("Cat");
+        print("Name: ${animal2.name}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=1b6f459385)
+
+    ```dart title="Example 4: Real Life Example Of Named Constructor In Dart"
+    import 'dart:convert';
+
+    class Person {
+        String? name;
+        int? age;
+
+        Person(this.name, this.age);
+
+        Person.fromJson(Map<String, dynamic> json) {
+            name = json['name'];
+            age = json['age'];
+        }
+
+        Person.fromJsonString(String jsonString) {
+            Map<String, dynamic> json = jsonDecode(jsonString);
+            name = json['name'];
+            age = json['age'];
+        }
+    }
+
+    void main() {
+        // Here person is object of class Person.
+        String jsonString1 = '{"name": "Bishworaj", "age": 25}';
+        String jsonString2 = '{"name": "John", "age": 30}';
+
+        Person p1 = Person.fromJsonString(jsonString1);
+        print("Person 1 name: ${p1.name}");
+        print("Person 1 age: ${p1.age}");
+
+        Person p2 = Person.fromJsonString(jsonString2);
+        print("Person 2 name: ${p2.name}");
+        print("Person 2 age: ${p2.age}");
+    }
+    ```
+
+    [Sharable Link for Code](https://snippets.pieces.cloud/?p=115948a934)
+
+</Accordion>
+
+
+---
+
+### OLD
 
 <Accordion title="Convert String to Int in Dart | /dart-how-to/convert-string-to-int-in-dart/">
 
