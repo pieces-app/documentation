@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/assets/partner-collections/power_tip_asset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/assets/partner-collections/power_tip_example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_22_23,_11_23_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_8_22_23__11_23_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,16 +33,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1692979614" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="emoji-sidebar" />
                     <option name="lastUsedInstant" value="1692977734" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="copilot-context" />
                     <option name="lastUsedInstant" value="1691678317" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1691678292" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="screenshots-update" />
@@ -89,6 +93,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/assets/partner-collections" />
       <recent name="$PROJECT_DIR$/docs/assets" />
     </key>
   </component>
@@ -107,7 +112,10 @@
       <workItem from="1691602356027" duration="18000" />
       <workItem from="1691602384368" duration="155000" />
       <workItem from="1691602542731" duration="7341000" />
-      <workItem from="1692977616402" duration="1173000" />
+      <workItem from="1692977616402" duration="2664000" />
+      <workItem from="1693231511919" duration="48000" />
+      <workItem from="1693327224813" duration="15000" />
+      <workItem from="1693327252926" duration="730000" />
     </task>
     <servers />
   </component>
