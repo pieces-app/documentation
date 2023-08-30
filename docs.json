@@ -75,6 +75,7 @@
       ["Material Storage & Management", "/features/managing-saved-materials"],
       ["One Click Sharing", "/features/one-click-snippet-sharing"],
       ["Pieces Copilot", "/features/pieces-copilot"],
+      ["Search Modes", "/features/search-modes"],
       ["Snippet Transformations", "/features/transforming-snippets"],
       ["User Settings", "/features/user-settings"],
       ["Workflow Activity", "/features/workflow-activity"]
