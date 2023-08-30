@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/features/search-modes.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features/search-modes.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +29,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1693422410" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="search-modes" />
                     <option name="lastUsedInstant" value="1693416416" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dart-tut-updates" />
                     <option name="lastUsedInstant" value="1693328008" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1692979614" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="emoji-sidebar" />
@@ -61,9 +60,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2TigAOLxdOrjGp8urswUB4ldMmF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -76,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "search-modes",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",

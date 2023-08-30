@@ -384,25 +384,27 @@ The original Snippets are stored below under **OLD** and any new updates with ne
     [Sharable Link for Code](https://snippets.pieces.cloud/?p=74fb43b01f)
 
     ```dart title="Find Area Of Rectangle Using Class and Objects"
-    class Animal {
-        String? name;
-        int? numberOfLegs;
-        int? lifeSpan;
+    class Rectangle{
+        //properties of rectangle
+        double? length;
+        double? breadth;
 
-        void display() {
-            print("Animal name: $name.");
-            print("Number of Legs: $numberOfLegs.");
-            print("Life Span: $lifeSpan.");
+        //functions of rectangle
+        double area(){
+            return length! * breadth!;
         }
     }
 
     void main(){
-        // Here animal is object of class Animal.
-        Animal animal = Animal();
-        animal.name = "Lion";
-        animal.numberOfLegs = 4;
-        animal.lifeSpan = 10;
-        animal.display();
+        //object of rectangle created
+        Rectangle rectangle = Rectangle();
+
+        //setting properties for rectangle
+        rectangle.length=10;
+        rectangle.breadth=5;
+
+        //functions of rectangle called
+        print("Area of rectangle is ${rectangle.area()}.");
     }
     ```
 
