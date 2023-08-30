@@ -1,0 +1,46 @@
+---
+title: Search Modes | Pieces
+description: Use different search modes to accurately search and find the code snippets that you are looking for.
+---
+
+# Search Types & Default Search Modes
+
+There are a number of search modes that are supported by Pieces for Developers to assist you in finding the snippet or asset that you are looking for.
+
+When in **List View** or **Gallery View** you can search to find any snippet based on two things:
+
+1. The Search Query that has been typed into the search input box.
+2. The Search Mode that has been set.
+
+## All Search Modes
+
+We currently provide 4 unique search modes that all create different search experiences:
+
+<Info>You can modify the **search mode** that you have set at any time by selecting the dropdown next to the hourglass search icon to the left of the Search input.</Info>
+
+### Blended
+Blended takes advantage of all aspects of your code snippets, and is the **default** setting for Pieces Desktop. When this is set, you can use search in a traditional way, as you would with other search engines.
+
+### Full Text Search (FTS)
+Full Text Search uses your text to directly match with text in a saved snippet. This matches specific characters, but not semantic meaning. For example:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | Yes |
+| batch | cd copyfiles.bat | No |
+
+### Neural Code Search (NCS)
+Neural Code Search takes advantage of semantic description and allows you use meaning to find the code you need. Take the above example and notice how the results are different:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | No |
+| batch | cd copyfiles.bat | Yes |
+
+When using NCS, you **searched for a snippet that cds into a batchfile**.
+
+### Search With Snippet
+Using Search with Snippet allows you to search for other related snippets by pasting a code snippet into search. Your search results will be related code snippets that you've saved to Pieces.
+
+You can also use **Search with Snippet** inside the Global Search view - read more about how it works [here](https://docs.pieces.app/features/global-search).
+

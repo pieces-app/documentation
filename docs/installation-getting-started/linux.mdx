@@ -42,9 +42,13 @@ export const InstallButton = props => {
     </a>
 }
 
+export const Spacer = props => {
+    return <div style={{ height: "25px"}}></div>
+};
+
 # Getting Started with Pieces for Developers on Linux
 
-<ReleasePill src="{{ links.installation.ubuntu_versions }}">Compatible with Ubuntu 18 or higher and currently in Beta</ReleasePill>
+<ReleasePill src="{{ links.installation.ubuntu_versions }}">Compatible with Ubuntu 18 or higher and select distributions</ReleasePill>
 
 ![A robot checking the install for pieces desktop for linux.](/assets/installation/robots_linux.png)
 
@@ -52,6 +56,27 @@ To run Pieces for Developers on Linux, be sure to download both of the applicati
 
 <InstallButton src="https://snapcraft.io/pieces-for-developers">Pieces Desktop App on Snapcraft.io</InstallButton>
 <InstallButton src="https://snapcraft.io/pieces-os">Pieces OS on Snapcraft.io</InstallButton>
+
+<Spacer></Spacer>
+
+<Info>If you are utilizing a Linux Distribution that is not encompassed within our Verified Support list, we unfortunately cannot ensure the complete functionality of all components within the Pieces for Developers Suite at this time. Should you encounter any challenges, we kindly request that you reach out to us at [here](https://getpieces.typeform.com/to/mCjBSIjF#page=installation-linux) for assistance.</Info>
+
+<Spacer></Spacer>
+
+<Accordion title={"Supported Linux Distributions"}>
+    Currently tested and supported Linux distributions that can be used with Pieces for Developers:
+
+    - Ubuntu 18+
+    - Pop! OS
+    - Fedora 36+
+    - Archcraft
+    - Arch Linux
+    - Linux Mint 21
+    - Debian 12
+    - Kali Linux 2023.3
+
+</Accordion>
+
 
 ## Steps to Install
 
@@ -87,7 +112,7 @@ To run Pieces for Developers on Linux, be sure to download both of the applicati
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=e66b498977)
 
-Check out our <a target="_blank" href="https://www.youtube.com/@getpieces">YouTube Channel</a> for more information on Getting Started.
+<Info>Check out our <a target="_blank" href="https://www.youtube.com/@getpieces">YouTube Channel</a> for more information on Getting Started.</Info>
 
 ## Helpful Tips for Linux
 
@@ -103,4 +128,4 @@ Update individual snap packages one at a time
 Update all snap packages at once:
     1. `sudo snap refresh`
 
-     **Note**: this will update other snap packages that you have installed, so be sure before you run this command.
+<Info>This will update other snap packages that you have installed, so be sure before you run this command.</Info>

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/partnership-collection/dart-tutorial.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/features/search-modes.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features/search-modes.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
         <entry key="$PROJECT_DIR$" value="copilot-context" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -28,6 +29,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="search-modes" />
+                    <option name="lastUsedInstant" value="1693416416" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dart-tut-updates" />
                     <option name="lastUsedInstant" value="1693328008" />
@@ -44,10 +49,6 @@
                     <option name="branchName" value="copilot-context" />
                     <option name="lastUsedInstant" value="1691678317" />
                   </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="screenshots-update" />
-                    <option name="lastUsedInstant" value="1691602806" />
-                  </RecentBranch>
                 </list>
               </option>
               <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
@@ -60,33 +61,37 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2TigAOLxdOrjGp8urswUB4ldMmF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "search-modes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs/assets/partner-collections" />
@@ -112,6 +117,7 @@
       <workItem from="1693231511919" duration="48000" />
       <workItem from="1693327224813" duration="15000" />
       <workItem from="1693327252926" duration="5682000" />
+      <workItem from="1693415732542" duration="4996000" />
     </task>
     <servers />
   </component>
