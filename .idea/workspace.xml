@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/chrome.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/chrome.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/edge.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/edge.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/jetbrains.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/jetbrains.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/jupyterlab.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/jupyterlab.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/extensions-plugins/vscode.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/extensions-plugins/vscode.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/installation-getting-started/linux.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation-getting-started/linux.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/installation-getting-started/macos.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation-getting-started/macos.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/installation-getting-started/what-am-i-installing.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation-getting-started/what-am-i-installing.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/installation-getting-started/windows.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation-getting-started/windows.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +125,7 @@
       <workItem from="1693231511919" duration="48000" />
       <workItem from="1693327224813" duration="15000" />
       <workItem from="1693327252926" duration="5682000" />
-      <workItem from="1693415732542" duration="2440000" />
+      <workItem from="1693415732542" duration="3775000" />
     </task>
     <servers />
   </component>
