@@ -141,7 +141,7 @@
         }
       },
       "installation": {
-        "macos_catalina": "https://support.apple.com/kb/DL2039?locale=en_US",
+        "macos_bigsur": "https://apps.apple.com/id/app/macos-big-sur/id1526878132?mt=12",
         "pieces_pkg": "https://builds.pieces.app/stages/production/macos_packaging/pkg/download",
         "pieces_suite_manager": "https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download",
         "windows_versions": "https://www.catalog.update.microsoft.com/Search.aspx?q=windows%2010%201809",
