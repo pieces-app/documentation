@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/installation-getting-started/linux.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/installation-getting-started/linux.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/features/search-modes.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features/search-modes.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,7 @@
       <workItem from="1693231511919" duration="48000" />
       <workItem from="1693327224813" duration="15000" />
       <workItem from="1693327252926" duration="5682000" />
-      <workItem from="1693415732542" duration="4875000" />
+      <workItem from="1693415732542" duration="4996000" />
     </task>
     <servers />
   </component>
