@@ -1,0 +1,11 @@
+name: Documentation Actions
+run-name: Testing Docs Actions
+on: [pull_request]
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+      - name: Comment Pull Request
+        uses: thollander/actions-comment-pull-request@v2.4.2
+        with:
+          message: |
+            preview link --> https://docs.pieces.app/~${{ github.event.pull_request.number }}/
