@@ -1,6 +1,8 @@
 name: Documentation Actions
-run-name: Testing Docs Actions
-on: [pull_request]
+run-name: Add Preview Link to PR
+on:
+  pull_request:
+    types: [opened]
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
