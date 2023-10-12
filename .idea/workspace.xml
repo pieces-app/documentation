@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="783a1302-dcd8-4a28-8f0a-4606de24b5d6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/assets/backup_database/navigate_to_home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/backup_database/replace_message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/backup_database/selecting_library_folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/backup_database/selecting_pieces_folders.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/assets/backup_database/title_archive.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/features/back-up-and-restore.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +30,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="backup-restore" />
+                    <option name="lastUsedInstant" value="1697121163" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1693422410" />
                   </RecentBranch>
@@ -49,10 +48,6 @@
                   <RecentBranch>
                     <option name="branchName" value="emoji-sidebar" />
                     <option name="lastUsedInstant" value="1692977734" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="copilot-context" />
-                    <option name="lastUsedInstant" value="1691678317" />
                   </RecentBranch>
                 </list>
               </option>
@@ -84,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "backup-restore",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -132,7 +127,7 @@
       <workItem from="1695756433947" duration="754000" />
       <workItem from="1695912919212" duration="602000" />
       <workItem from="1697118687074" duration="972000" />
-      <workItem from="1697119693392" duration="1300000" />
+      <workItem from="1697119693392" duration="1772000" />
     </task>
     <servers />
   </component>
