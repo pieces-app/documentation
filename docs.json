@@ -57,17 +57,18 @@
       ["Linux", "/installation-getting-started/linux"]
     ]],
     ["\uD83D\uDD0C Apps & Plugins", [
-      ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
-      ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins/edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
-      ["Pieces Obsidian Plugin", "/extensions-plugins/obsidian"],
-      ["Pieces JupyterLab Extension", "/extensions-plugins/jupyterlab"],
-      ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
+      ["Desktop App", "/installation-getting-started/what-am-i-installing"],
+      ["Chrome Extension", "/extensions-plugins/chrome"],
+      ["Edge Addon", "/extensions-plugins/edge"],
+      ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
+      ["VSCode Extension", "/extensions-plugins/vscode"],
+      ["Obsidian Plugin", "/extensions-plugins/obsidian"],
+      ["JupyterLab Extension", "/extensions-plugins/jupyterlab"],
+      ["Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
+      ["Back Up & Restore", "/features/back-up-and-restore"],
       ["Code Completion", "/features/code-completion"],
       ["Creating & Generating Code", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
