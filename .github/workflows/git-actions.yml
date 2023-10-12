@@ -9,4 +9,4 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2.4.2
         with:
           message: |
-            preview link --> https://docs.pieces.app/~${{ github.event.pull_request.number }}/
+            :wave: Preview link --> https://docs.pieces.app/~${{ github.event.pull_request.number }}
