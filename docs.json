@@ -59,6 +59,7 @@
     ]],
     ["\uD83D\uDD0C Apps & Plugins", [
       ["Desktop App", "/installation-getting-started/what-am-i-installing"],
+      ["Pieces OS", "/installation-getting-started/pieces-os"],
       ["Chrome Extension", "/extensions-plugins/chrome"],
       ["Edge Addon", "/extensions-plugins/edge"],
       ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
