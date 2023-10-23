@@ -1,3 +1,21 @@
+export const InstallButton = props => {
+  return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
+    <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+      <p style={{
+        padding: "8px 20px",
+        borderRadius: "8px",
+        border: "1px solid #f3f5f6",
+        backgroundColor: "black",
+        color: "white",
+        fontWeight: "500",
+        marginBottom: "8px",
+        marginTop: "25px"
+      }}>{props.children}</p>
+    </div>
+  </a>
+};
+
+
 ---
 title: Understanding Pieces OS
 description: Delve into the engine that powers Pieces for Developers: Pieces OS. Explore how it manages data processing and machine learning models to enhance your development workflow.
@@ -12,7 +30,6 @@ nextTitle: Check Out Our Chrome Plugin
 Pieces OS is the backbone of the Pieces for Developers suite. Running discreetly in the background, it handles data processing and manages both cloud-based and local Machine Learning models to ensure seamless interaction between the various products within the suite.
 
 [Could be good to include some non-secret architecture diagram here.]
-[//]: # (![Illustration: Pieces OS architecture]&#40;/assets/pieces_os_architecture.png&#41;)
 
 ## Core Features of Pieces OS
 
