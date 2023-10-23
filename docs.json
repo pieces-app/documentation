@@ -52,6 +52,7 @@
   "sidebar": [
     ["\uD83D\uDEE0️️ Install & Get Started", [
       ["Overview", "/installation-getting-started/what-am-i-installing"],
+      ["Pieces OS", "/installation-getting-started/pieces-os"],
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
