@@ -24,6 +24,27 @@ export const InstallButton = props => {
   </a>
 };
 
+export const MiniSpacer = props => {
+  return <div style={{ height: "16px"}}></div>
+};
+
+export const CallToAction = props => {
+  return <div style={{
+    marginTop: "150px",
+    marginBottom: "150px",
+    padding: "32px",
+    border: "1px solid gray",
+    borderRadius: "16px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "start"
+  }}>
+    {props.children}
+    <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
+    {props.text}
+  </div>
+};
+
 # What is Pieces OS?
 
 Pieces OS is the backbone of the Pieces for Developers suite. Running discreetly in the background, it handles data processing and manages both cloud-based and local Machine Learning models to ensure seamless interaction between the various products within the suite.
@@ -78,18 +99,58 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 
 Explore in-depth articles, tutorials, and documentation to master the features and capabilities of Pieces OS. Whether you are a beginner or an experienced developer, find resources to enhance your knowledge and get the most out of Pieces OS.
 
-  <Tabs
-    defaultValue={"tutorials"}
-    values={[
-      {label: 'Tutorials', value: 'tutorials'},
-      {label: 'Documentation', value: 'documentation'},
-      {label: 'Community', value: 'community'}
-    ]}
-  >
-    <TabItem value="tutorials">
-      Discover step-by-step tutorials to get familiar with Pieces OS.
-      <a href="https://docs.pieces.app/tutorials">Explore Tutorials</a>
-    </TabItem>
+<Tabs
+  defaultValue={"tutorials"}
+  values={[
+    {label: 'Tutorials', value: 'tutorials'},
+    {label: 'Documentation', value: 'documentation'},
+    {label: 'Community', value: 'community'}
+  ]}
+>
+  <TabItem value="tutorials">
+    Discover step-by-step tutorials to get familiar with Pieces OS.
+    <a href="https://docs.pieces.app/tutorials">Explore Tutorials</a>
+  </TabItem>
   <TabItem value="documentation">
     Dive into the comprehensive documentation to learn every aspect of Pieces OS.
+    <a href="https://docs.pieces.app/documentation">Explore Documentation</a>
+  </TabItem>
+  <TabItem value="community">
+    Join the community to share knowledge, learn from others, and get support.
+    <a href="https://community.pieces.app">Join Community</a>
+  </TabItem>
+</Tabs>
 
+<MiniSpacer></MiniSpacer>
+
+## Integrations
+
+Pieces OS is designed to work harmoniously with a variety of development tools, frameworks, and services. Discover how you can integrate it into your existing workflow for enhanced efficiency and productivity.
+
+<Tabs
+  defaultValue={"dev_tools"}
+  values={[
+    {label: 'Development Tools', value: 'dev_tools'},
+    {label: 'Frameworks', value: 'frameworks'},
+    {label: 'Cloud Services', value: 'cloud_services'}
+  ]}
+>
+  <TabItem value="dev_tools">
+    Explore the tools that seamlessly integrate with Pieces OS.
+    <a href="https://docs.pieces.app/integrations/development-tools">Explore Tools</a>
+  </TabItem>
+  <TabItem value="frameworks">
+    Discover the frameworks supported by Pieces OS and how to integrate them.
+    <a href="https://docs.pieces.app/integrations/frameworks">Explore Frameworks</a>
+  </TabItem>
+  <TabItem value="cloud_services">
+    Learn about cloud services compatibility and how to harness the power of cloud with Pieces OS.
+    <a href="https://docs.pieces.app/integrations/cloud-services">Explore Cloud Services</a>
+  </TabItem>
+</Tabs>
+
+<MiniSpacer></MiniSpacer>
+
+<CallToAction heading={"Empower Your Development"} text={"With Pieces OS, experience a robust, secure, and seamless development journey. Get started today and transform the way you manage data and machine learning models."}>
+  <InstallButton src="https://docs.pieces.app/understanding-pieces-os/installation">Install Pieces OS</InstallButton>
+</CallToAction>
