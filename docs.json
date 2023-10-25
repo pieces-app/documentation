@@ -118,7 +118,7 @@
         "home": "https://pieces.app",
         "pfd_desktop_install": "https://pieces.app",
         "pfd_linux_install": "https://pieces.app/getting-started/linux/",
-        "release_notes": "https://pieces.app/updates",
+        "release_notes": "https://code.pieces.app/updates",
         "blog": "https://code.pieces.app/blog"
       },
       "extensions": {
