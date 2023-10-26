@@ -1,9 +1,9 @@
 ---
-title: Installation & Getting Started
+title: Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
 next: /extensions-plugins/chrome
 nextTitle: Check Out Our Chrome Plugin
----
+---f
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
 
@@ -58,7 +58,7 @@ export const CallToAction = props => {
     </div>
 };
 
-# What am I Installing?
+# Getting Started
 
 ![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
 
@@ -113,96 +113,106 @@ export const CallToAction = props => {
 
 ---
 
-### Bring Order to the Chaos
-Ditch the hundreds of .txt files and siloed tools and organize your snippets in one place. Add helpful context to save time and avoid headaches in the future, or let Pieces do it for you.
+## What is Pieces OS?
+
+Pieces OS operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](https://docs.pieces.app/features/pieces-copilot), as well as [real-time search](gttps://docs.pieces.app/features/search-modes) and suggestions.
+
+![Pieces Ecosystem](https://storage.googleapis.com/pieces_multimedia/ILLUSTRATIONS/PIECES_FOR_DEVELOPERS/ANY_INTEGRATION/ANY_THEME/PLUGINS/1X1/PIECES_FOR_DEVELOPERS-ANY_INTEGRATION-PLUGINS-ANY_THEME-1X1-10_16_2023.PNG)
+
+Pieces OS enables Pieces products to operate 100% locally on your machine, with an option to connect to the cloud for [backup](https://docs.pieces.app/features/back-up-and-restore), [sharing](https://docs.pieces.app/features/one-click-snippet-sharing), and some cloud-only ML models.
+
+## Core Features of Pieces OS
+
+### Data Processing
+
+Pieces OS orchestrates effective data processing workflows, thus maintaining data integrity and providing real-time insights. Its local operation ensures a seamless and efficient data handling process that fosters efficient development.
+
+### Machine Learning Models Management
+
+Pieces OS's capabilities extend to managing the various machine learning models that are either stored locally or in the cloud. It ensures optimal performance and updated models for your applications, which bolsters the efficacy and reliability of Pieces' machine learning aspects.
+
+### Secure and Private
+
+Security and privacy are paramount in Pieces OS's operation. By running locally on your machine, it offers a secure environment for data processing and machine learning model management, ensuring the confidentiality and integrity of your data.
+
+## Getting Started with Pieces OS
+
+### Installation Guide
+
+Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
 <Tabs
-    defaultValue={"quickly_save"}
-    values={[
-        {label: 'Quickly Save', value: 'quickly_save'},
-        {label: 'Edit Snippets', value: 'view_edit'},
-        {label: 'Snippet Context', value: 'manage'}
-    ]}
+  defaultValue={"windows"}
+  values={[
+    {label: 'macOS', value: 'macos'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'}
+  ]}
 >
-    <TabItem value="quickly_save">
-        ![Quickly save code snippets.](/assets/installation/tabs/macos/quickly_save.png)
-
-        Simply copy a snippet from your IDE or the web using ```⌘/CTRL + C``` and paste it anywhere in Pieces using ```⌘/CTRL + V``` to save it. Or, you can drag and drop a code file or image.
-        <a href="{{ links.internal.product_highlights.save_materials }}">Read More</a>
-    </TabItem>
-    <TabItem value="view_edit">
-        ![View and edit snippets.](/assets/installation/tabs/macos/view_and_edit.png)
-        Navigate the Gallery to view and edit your snippets with your ```<--``` and ```-->``` arrow keys. If you are in List View, this will change to ```Up``` and ```Down```.
-    </TabItem>
-    <TabItem value="manage">
-        ![Manage the context and metadata of saved code snippets.](/assets/installation/tabs/macos/manage_context.png)
-        Use ```⌘/CTRL + I``` to add or edit information about a snippet such as Related Links, Tags, Related People, Sensitives, and more.
-        <a href="https://docs.pieces.app/features/managing-saved-materials">Read more</a>
-    </TabItem>
+  <TabItem value="macos">
+    <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
+  </TabItem>
+  <TabItem value="windows">
+    <p>Compatible with Windows 10 version 1809 and higher</p>
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
+  </TabItem>
+  <TabItem value="linux">
+    <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
+  </TabItem>
 </Tabs>
 
-<CallToAction heading={"Offline Deep Search"} text={"Pieces for Developers ships with a first-in-kind search engine designed specifically to project Natural Language Queries onto a Technical Language Vector Space, completely offline and on-device."}>
-    <img style={{ marginLeft: "0px", marginRight: "0px", marginTop: "0px", marginBottom: "0px", width: "50px"}} src={"https://raw.githubusercontent.com/pieces-app/documentation/overview-what-am-installing-upgrade/docs/assets/magnifying_glass.png"} />
-    <MiniSpacer></MiniSpacer>
-</CallToAction>
+## Dive Deeper
 
-### Maximize your time
-Automatically discover commonly used snippets in your workflow or extract code from a screenshot. Pieces Desktop is loaded with next-gen features that make your life as a developer a little (or a lot) easier.
+Explore the intricacies of Pieces OS through a variety of resources, available in different formats. Whether you are looking to better understand its functionalities or seeking support from the community, the structured tabs below provide a pathway to delve deeper into Pieces OS.
 
 <Tabs
-    defaultValue={"single_click"}
-    values={[
-        {label: 'Single-Click Sharing', value: 'single_click'},
-        {label: 'Extract Code', value: 'extract'},
-        {label: 'Discover In-Project', value: 'in_project'}
-    ]}
+  defaultValue={"tutorials"}
+  values={[
+    {label: 'Tutorials', value: 'tutorials'},
+    {label: 'Documentation', value: 'documentation'},
+    {label: 'Community', value: 'community'}
+  ]}
 >
-    <TabItem value="single_click">
-        ![Share code snippets and context in a single click.](/assets/installation/tabs/macos/single_click.png)
-        Press ```⌘/CTRL + L``` to get a shareable link for your code snippet that you can send to _anyone_, even if they don't have Pieces installed. You can also share via <a href={"https://docs.pieces.app/features/one-click-snippet-sharing#share-via-github-gist"}>Github Gist!</a>
-
-        <a href={"https://docs.pieces.app/features/one-click-snippet-sharing"}>Read more about Sharing</a>
-    </TabItem>
-    <TabItem value="extract">
-        ![Extract code from screenshots with Pieces OCR.](/assets/installation/tabs/macos/extract_screenshots.png)
-        Drag & drop a code screenshot from a YouTube video and in seconds, all of the code is available to use. Press ```T``` to toggle between the code and the original image.
-       
-        <a href="{{ links.internal.product_highlights.save_screenshots }}">Read more about OCR</a>
-    </TabItem>
-    <TabItem value="in_project">
-        ![Discover assets inside of your current Projects.](/assets/installation/tabs/macos/discover_inproject.png)
-        Scan an entire code base and return hyper-specific, highly reusable code snippets.
-       
-        <a href="{{ links.internal.product_highlights.in_project_snippet_discovery }}">Read more about Snippet Discovery</a>
-    </TabItem>
+  <TabItem value="tutorials">
+    Discover step-by-step tutorials and livestreams to get familiar with Pieces OS.
+    <a href="https://www.youtube.com/@getpieces">Explore our YouTube Channel</a>
+  </TabItem>
+  <TabItem value="documentation">
+    Dive into the comprehensive documentation to learn every aspect of Pieces OS.
+    <a href="https://docs.pieces.app">Explore Documentation</a>
+  </TabItem>
+  <TabItem value="community">
+    Join our community to share knowledge, learn from others, and get support.
+    <a href="https://discord.gg/getpieces">Join our Discord</a>
+  </TabItem>
 </Tabs>
 
-<CallToAction heading={"No-brainer security"} text={"Use Pieces connected to the cloud or not - it’s up to you! All Pieces data is stored locally on your device and you can use almost all features without connecting to the Internet."}>
-    <img style={{ marginLeft: "0px", marginRight: "0px", marginBottom: "0px", marginTop: "0px", width: "50px"}} src={"https://raw.githubusercontent.com/pieces-app/documentation/overview-what-am-installing-upgrade/docs/assets/shield.png"} />
-    <MiniSpacer></MiniSpacer>
-</CallToAction>
+<MiniSpacer></MiniSpacer>
 
-### Don't Forget The Essentials
-Everything in the Pieces Desktop App was designed for ultimate productivity. From keyboard shortcuts to responsive layouts, these little things help it fit right into your flow.
+## Integrations
+
+Pieces OS is engineered to harmoniously interact with various development, communication, and productivity tools. Explore the integrations below to learn more about how Pieces OS can enhance your workflow.
 
 <Tabs
-    defaultValue={"theme"}
-    values={[
-        {label: 'Dark & Light Mode', value: 'theme'},
-        {label: 'Keyboard Shortcuts', value: 'shortcuts'},
-        {label: 'Responsive Layout', value: 'responsive'}
-    ]}
+  defaultValue={"dev_tools"}
+  values={[
+    {label: 'Development', value: 'development'},
+    {label: 'Communication', value: 'communication'},
+    {label: 'Productivity', value: 'productivity'},
+  ]}
 >
-    <TabItem value="theme">
-        ![Both dark and light mode versions of Pieces.](/assets/installation/tabs/macos/dark_light_mode.png)
-        Use ```⌘/CTRL + T``` to switch between Light and Dark Mode. By default, Pieces ships in Dark Mode, but if you're looking for a little afternoon pick-me-up, give Light Mode a try!
-    </TabItem>
-    <TabItem value="shortcuts">
-        ![Press CMD or CTRL + K to view all of the shortcuts in Pieces.](/assets/installation/tabs/macos/keyboard_shortcuts.png)
-        Almost all features in Pieces can be accessed via keyboard shortcuts. To view all shortcuts, tap ```⌘/CTRL + K```.
-    </TabItem>
-    <TabItem value="responsive">
-        ![Use Pieces in a narrow window next to your IDE.](/assets/installation/tabs/macos/responsive_layout.png)
-        Use the narrow window layout right next to your IDE to reference and access snippets with lightning speed.
-    </TabItem>
+  <TabItem value="development">
+    Explore the dev tools that seamlessly integrate with Pieces OS.
+    <a href="https://docs.pieces.app/extensions-plugins/vscode">Explore Tools</a>
+  </TabItem>
+  <TabItem value="communication">
+    Discover the communication tools that seamlessly integrate with Pieces OS.
+    <a href="https://docs.pieces.app/extensions-plugins/teams">Explore Tools</a>
+  </TabItem>
+  <TabItem value="productivity">
+    Discover the productivity tools that seamlessly integrate with Pieces OS.
+    <a href="https://docs.pieces.app/extensions-plugins/obsidian">Explore Tools</a>
+  </TabItem>
 </Tabs>

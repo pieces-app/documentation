@@ -50,16 +50,13 @@
     }
   ],
   "sidebar": [
-    ["\uD83D\uDEE0️️ Install & Get Started", [
-      ["Overview", "/installation-getting-started/what-am-i-installing"],
-      ["Pieces OS", "/installation-getting-started/pieces-os"],
+    ["\uD83D\uDEE0️️ Installation", [
+      ["Getting Started", "/installation-getting-started/what-am-i-installing"],
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
     ]],
     ["\uD83D\uDD0C Apps & Plugins", [
-      ["Desktop App", "/installation-getting-started/what-am-i-installing"],
-      ["Pieces OS", "/installation-getting-started/pieces-os"],
       ["Chrome Extension", "/extensions-plugins/chrome"],
       ["Edge Addon", "/extensions-plugins/edge"],
       ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
