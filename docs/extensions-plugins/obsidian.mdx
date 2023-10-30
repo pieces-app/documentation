@@ -89,65 +89,62 @@ export const HeaderLogoImage = (props) => {
 };
 
 <GridFlexRow>
-  <h1>Pieces Obsidian Plugin</h1>
+  <h1>Pieces for Developers Obsidian Plugin</h1>
 </GridFlexRow>
 
 <GridFlexRow>
-  <InstallButton>Get the Obsidian Plugin</InstallButton>
-  <ReleasePill src="https://code.pieces.app/updates/new-pieces-obsidian-plugin" children="Current Version: {{ versions.obsidian }}"></ReleasePill>
+  <InstallButton>Get the Pieces for Developers Obsidian Plugin</InstallButton>
+  <ReleasePill src="https://code.pieces.app/updates/improved-pieces-copilot-experiences" children="Current Version: {{ versions.obsidian }}"></ReleasePill>
 </GridFlexRow>
 
 <br></br>
 
-# Your Guide to Getting Started with the Pieces For Developers Obsidian Plugin
+# Your Guide to Getting Started with the Pieces for Developers Obsidian Plugin
 
-_Pieces For Developers captures **NO identifiable user data**. Our **Local-only** architecture means your notes never have to leave your device._
-
-_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the Obsidian Plugin in order for the Plugin to work properly._
+_Pieces for Developers captures **NO identifiable user data**. Our **Local-only** architecture means your notes never have to leave your device._
 
 ## Install Instructions
 
-[Installation Instructions](https://github.com/pieces-app/obsidian-pieces#install-instructions) for the latest Pieces for Obsidian
-release:
+1. [Make sure you have Pieces OS installed](https://docs.pieces.app/~161/installation-getting-started/what-am-i-installing#pieces-desktop-app--pieces-os)
+  - Pieces OS is the core platform dependency for all Pieces applications. It is the backend that powers all our services, including the plugins and the Desktop App.
+2. (optional) Install the Pieces for Developers Desktop App for the full experience utilizing all of Pieces for Developers' AI features, further boosting your productivity.
+3. Make sure you have community plugins enabled in Obsidian.
+4. Search for **Pieces for Developers** in the Obsidian community plugin store.
+5. Click `install` on the Pieces for Developers plugin listing.
+6. After the plugin is downloaded and installed, click `enable` to start the plugin.
+7. Now you can get started with the Pieces for Developers plugin! Just click the Pieces icon on the left, and start the magic!
 
-1. Make sure you have community plugins enabled in Obsidian.
-2. Search for **Pieces for Developers** in the Obsidian community plugin store.
-3. Click `install` on the Pieces for Developers plugin listing.
-4. After the plugin is downloaded and installed, click `enable` to start the plugin.
-5. Now you can get started with the plugin! Just click the Pieces icon on the left, and start the magic!
+## Find your Snippets
+
+- Click on the Pieces icon in the ribbon menu to open the Pieces view.
+- Using the sort by dropdown menu, sort your snippets by **recent** or by **language**.
+- Using the searchbox at the top of the view, search your snippets to save time leafing through your markdown files.
+
+<Image
+  zoom
+  src="/assets/obsidian/OBSIDIAN_SEARCH.gif"
+  alt="Example of searching for snippets using the Pieces for Developers Obsidian Plugin."
+/>
 
 ## Save your Snippets
 
 **To save a Snippet:**
 
-- Highlight the text, right-click, and select "Save to Pieces."
+- Highlight some text, right-click, and select "Save to Pieces."
 - Click the Pieces button within any code block.
 - Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
   zoom
   src="/assets/obsidian/obsidian_screenshot.png"
-  alt="Example of saving a snippet using the obsidian Pieces plugin"
-/>
-
-## Find your Snippets
-
-Open the Pieces View from the Ribbon Menu.
-
-- Sort by **recent** or by **language**
-- Search your snippets to save time leafing through your markdown files.
-
-<Image
-  zoom
-  src="/assets/obsidian/OBSIDIAN_SEARCH.gif"
-  alt="Example of searching for snippets using the obsidian Pieces plugin."
+  alt="Example of saving a snippet using the Pieces for Developers Obsidian Plugin"
 />
 
 ## Use your Snippets
 
-- Copy and share your snippets from the Pieces View
+- Click on 'view code' to view your snippets with syntax highlighting
+- Use the copy and share buttons on each of your snippets in the Pieces View
 - You can expand your code snippets to view automatically generated metadata
-- View your snippets with syntax highlighting
 
 <Image
   zoom
@@ -192,15 +189,17 @@ Pieces adds **embedded buttons** into your markdown files to help you save, copy
 ---
 
 ## Pieces Copilot powered by qGPT - Personal Knowledge Assistant
-One of the most significant features of this plugin is Pieces Copilot, an artificial intelligence assistant designed to assist with your personal knowledge management.
+One of the most significant features of this plugin is the Pieces Copilot, an artificial intelligence assistant designed to assist with your personal knowledge management.
 The Copilot learns from the notes in your vault and adapts to the context of what you're working on. To try out this impressive technology: 
 
-- Ensure Pieces OS is open and updated to at least 5.1.2.
-- To view the Copilot, open the Pieces plugin and click the bot logo on the top slider to switch to Copilot.
-- The Copilot will use your entire vault as context for the chatbot. This means you can query your Obsidian vault with plain text and we will semantically match your question to any of your relevant notes.
+- Ensure Pieces OS is open and updated.
+- To view the Pieces Copilot, open the Pieces for Developers plugin and click the bot logo on the top slider to switch to Copilot.
+- The Pieces Copilot can be configured with context using the notes within your vault. You have complete control, so you can pick and choose which notes to use or not.
 - Simply begin asking questions in the input text prompt and watch the magic!
 - Each time you enter a query, you will also receive suggested queries relating to your conversation. Simply click one of the suggested queries buttons in order to continue the conversation with that query.
-- Each response from the Copilot will also contain links to the relevant notes that it used to answer your question. Click on one of those links in order to open that markdown file in your editor.
+- Each response from the Pieces Copilot will also contain links to the relevant notes that it used to answer your question. Click on one of those links in order to open that markdown file in your editor.
+- Privacy is at the heart of what we do, which is why you can also select between different LLM's and different LLM runtimes (Cloud or Local) depending on your privacy requirements.
+- The Pieces Copilot is also highly customizable, as a user you can select which notes you would like the Pieces Copilot to use as context, as well as selecting which LLM runtime you would like to use, local or cloud.
 
 ## Data Privacy, Security, and Offline-First Approach
 
@@ -214,23 +213,15 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
     alt="Privacy and security details."
 />
 
-- **On-Device ML Processing**: We carry out ~80% of machine learning processing on-device, which minimizes exposure to third-party servers.
+- **On-Device ML Processing**: It's possible to carry out 100% of machine learning processing on-device, which minimizes exposure to third-party servers.
 
 - **Offline-First Design**: Like Obsidian, our tool is engineered to work seamlessly offline, providing robust functionality even without internet connectivity.
 
-- **Full On-Device ML**: We're progressing towards fully on-device ML capabilities, with an aim to ship 100% of ML features on-device in Q3.
+- **Full On-Device ML**: Through the power of Llama2 LLM's the Copilot is fully capable of running 100% on device.
 
 - **Opt-In Cloud Capability**: We provide opt-in cloud features on a per-resource basis, ensuring that data transfers to the cloud only occur with your explicit consent, granting you full control over your data.
 
 Just as Obsidian believes, we too are steadfast in our commitment to provide a tool that respects user privacy, ensures data security, and delivers a powerful offline-first experience. So, feel free to switch off your Wi-Fi and give Pieces for Developers a spin.
-
-- **Offline First Pieces Copilot**: qGPT sends data to ChatGPT for its more complex processing. Understandably, that can be a bit scary, because your vault information may be private. **We plan to make qGPT fully offline by Q3***, but for now, we've found an effective compromise. Rather than sending all of your data to ChatGPT, we use a series of offline models to boil things down as much as possible. This way, we only send the bare minimum to the cloud, and the majority of ML processing is safely kept on your computer. To understand how this works internally, refer to the diagram below.
-
-<Image
-    zoom
-    src="/assets/obsidian/qgpt_flowchart.png"
-    alt="Diagram detailing how local preprocessing limits the data sent to ChatGPT"
-/>
 
 
 ### Can I adjust my privacy settings later?
@@ -253,31 +244,31 @@ If you want to adjust your privacy settings later after you complete onboarding,
 ## Real-Time Streaming for a Better Integration Experience
 To optimize your experience, we use a websocket connection to pass data between your plugins and Pieces OS. This means that any change you make across the Pieces ecosystem, including the Pieces for Obsidian plugin, is instantaneously reflected across all of your Pieces integrations. (ex. <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Extension</a>.)
 
-## Having Trouble with the Pieces For Developers Obsidian Plugin?
+## Having Trouble with the Pieces for Developers Obsidian Plugin?
 
 To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking Pieces OS in your Applications folder.
 
 If you need to download and install Pieces OS, please <a target="_blank" href="https://docs.pieces.app/overview">visit this link</a>.
 
 <h3>
-  If the Obsidian plugin still isn't working for you, please make sure you have the
+  If the Pieces for Developers Obsidian plugin still isn't working for you, please make sure you have the
   following:
 </h3>
 
 - The latest version of Pieces for Developers Obsidian Plugin
-- Pieces OS version 5.0.0 or higher
+- The latest version of Pieces OS
 
 After installing or updating your software, please restart Obsidian.
 
 If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/to/mCjBSIjF#page=docs-obsidian">submit this form</a> and we'll get back to you!
 
-## Can I Customize the Pieces Plugin?
+## Can I Customize the Pieces for Developers Obsidian Plugin?
 
-Definitely! To customize your Pieces Obsidian plugin experience, click on the settings icon in the bottom left corner of your Obsidian window.
+Definitely! To customize your Pieces for Developers Obsidian plugin experience, click on the settings icon in the bottom left corner of your Obsidian window.
 
-Select "Community plugins" and then click the gear icon for the Pieces plugin.
+Select "Community plugins" and then click the gear icon for the Pieces for Developers plugin.
 
-You can adjust the following Settings for the Pieces Obsidian Plugin:
+You can adjust the following Settings for the Pieces for Developers Obsidian Plugin:
 
 1. Auto-open Pieces list view on snippet save
 2. Cloud capabilities

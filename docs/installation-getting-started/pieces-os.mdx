@@ -1,119 +1,51 @@
 ---
-title: Getting Started
-description: Learn what is included in the installation files and find the right set of instructions for your operating system.
+title: Understanding Pieces OS
+description: Delve into the engine that powers Pieces for Developers: Pieces OS. Explore how it manages data processing and machine learning models to enhance your development workflow.
 next: /extensions-plugins/chrome
 nextTitle: Check Out Our Chrome Plugin
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
+<link rel="canonical" href="https://docs.pieces.app/understanding-pieces-os" />
 
 export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "8px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "black",
-                color: "white",
-                fontWeight: "500",
-                marginBottom: "8px",
-                marginTop: "25px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-};
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const Spacer = props => {
-    return <div style={{ height: "100px"}}></div>
+  return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
+    <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+      <p style={{
+        padding: "8px 20px",
+        borderRadius: "8px",
+        border: "1px solid #f3f5f6",
+        backgroundColor: "black",
+        color: "white",
+        fontWeight: "500",
+        marginBottom: "8px",
+        marginTop: "25px"
+      }}>{props.children}</p>
+    </div>
+  </a>
 };
 
 export const MiniSpacer = props => {
-    return <div style={{ height: "16px"}}></div>
+  return <div style={{ height: "16px"}}></div>
 };
 
 export const CallToAction = props => {
-    return <div style={{
-        marginTop: "150px",
-        marginBottom: "150px",
-        padding: "32px",
-        border: "1px solid gray",
-        borderRadius: "16px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "start"
-    }}>
-        {props.children}
-        <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
-        {props.text}
-    </div>
+  return <div style={{
+    marginTop: "150px",
+    marginBottom: "150px",
+    padding: "32px",
+    border: "1px solid gray",
+    borderRadius: "16px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "start"
+  }}>
+    {props.children}
+    <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
+    {props.text}
+  </div>
 };
 
-# Getting Started
-
-![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
-
-## Pieces Desktop App & Pieces OS
-
-<Tabs
-    defaultValue={"windows"}
-    values={[
-        {label: 'macOS', value: 'macos'},
-        {label: 'Windows', value: 'windows'},
-        {label: 'Linux', value: 'linux'}
-    ]}
->
-    <TabItem value="macos">
-        <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-        <InstallButton
-            src="https://docs.pieces.app/installation-getting-started/macos">See macOS Download Options</InstallButton>
-    </TabItem>
-    <TabItem value="windows">
-        <p>Compatible with Windows 10 version 1809 and higher</p>
-        <InstallButton
-            src="https://docs.pieces.app/installation-getting-started/windows">See Windows Download Options</InstallButton>
-    </TabItem>
-    <TabItem value="linux">
-        <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-        <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Download Options</InstallButton>
-    </TabItem>
-</Tabs>
-
-<Info>When you download Pieces for Developers, you'll get two applications: **Pieces OS** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>
-
-<Accordion title={"Pieces for Developers | Pieces OS"}>
-    **Pieces OS** is our background service that runs offline and on-device. It's **required** to enable:
-        - Individual products in the Pieces for Developers Suite to communicate
-        - Local, Private, and Secure Machine Learning Models
-        - Real-Time Search and Suggestions
-</Accordion>
-
-<MiniSpacer></MiniSpacer>
-
-<Accordion title={"Pieces for Developers | Desktop Application"}>
-    **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:
-    - Navigate snippets visually through the Gallery or List Views
-    - Transform snippets from one language to another
-    - Sort Snippets by AI-suggested usefulness
-    - Describe a snippet to get a solution to an answer
-    - Manage your custom cloud domain
-    - and so much more!
-</Accordion>
-
-<MiniSpacer></MiniSpacer>
-
----
-
-## What is Pieces OS?
+# What is Pieces OS?
 
 Pieces OS operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](https://docs.pieces.app/features/pieces-copilot), as well as [real-time search](gttps://docs.pieces.app/features/search-modes) and suggestions.
 

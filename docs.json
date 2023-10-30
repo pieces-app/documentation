@@ -26,7 +26,7 @@
     {
       "title": "Product Updates",
       "icon": "pencil",
-      "link": "https://pieces.app/updates"
+      "link": "https://code.pieces.app/updates"
     },
     {
       "title": "Company News",
@@ -50,24 +50,24 @@
     }
   ],
   "sidebar": [
-    ["\uD83D\uDEE0️️ Install & Get Started", [
-      ["Overview", "/installation-getting-started/what-am-i-installing"],
+    ["\uD83D\uDEE0️️ Installation", [
+      ["Getting Started", "/installation-getting-started/what-am-i-installing"],
       ["Windows", "/installation-getting-started/windows"],
       ["MacOS", "/installation-getting-started/macos"],
       ["Linux", "/installation-getting-started/linux"]
     ]],
     ["\uD83D\uDD0C Apps & Plugins", [
-      ["Pieces Desktop App", "/installation-getting-started/what-am-i-installing"],
-      ["Pieces Chrome Extension", "/extensions-plugins/chrome"],
-      ["Pieces Edge Addon", "/extensions-plugins/edge"],
-      ["Pieces Jetbrains Plugin", "/extensions-plugins/jetbrains"],
-      ["Pieces VSCode Extension", "/extensions-plugins/vscode"],
-      ["Pieces Obsidian Plugin", "/extensions-plugins/obsidian"],
-      ["Pieces JupyterLab Extension", "/extensions-plugins/jupyterlab"],
-      ["Pieces Microsoft Teams App", "/extensions-plugins/teams"]
+      ["Chrome Extension", "/extensions-plugins/chrome"],
+      ["Edge Addon", "/extensions-plugins/edge"],
+      ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
+      ["VSCode Extension", "/extensions-plugins/vscode"],
+      ["Obsidian Plugin", "/extensions-plugins/obsidian"],
+      ["JupyterLab Extension", "/extensions-plugins/jupyterlab"],
+      ["Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
+      ["Back Up & Restore", "/features/back-up-and-restore"],
       ["Code Completion", "/features/code-completion"],
       ["Creating & Generating Code", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
@@ -102,14 +102,14 @@
   ],
   "variables": {
     "versions": {
-      "pfd": "v2.4.0",
-      "chrome": "v2.7.0",
-      "jetbrains": "v5.4.0",
-      "vscode": "v1.0.1",
-      "obsidian": "v1.2.0",
-      "jupyterlab": "v1.2.0",
-      "pieces_os": "v6.0.0",
-      "edge": "v2.7.0",
+      "pfd": "v2.7.2",
+      "chrome": "v2.7.1",
+      "jetbrains": "v6.1.0",
+      "vscode": "v1.6.0",
+      "obsidian": "v1.5.2",
+      "jupyterlab": "v1.6.1",
+      "pieces_os": "v6.3.0",
+      "edge": "v2.7.1",
       "teams": "v1.1.0"
     },
     "links": {
@@ -117,7 +117,7 @@
         "home": "https://pieces.app",
         "pfd_desktop_install": "https://pieces.app",
         "pfd_linux_install": "https://pieces.app/getting-started/linux/",
-        "release_notes": "https://pieces.app/updates",
+        "release_notes": "https://code.pieces.app/updates",
         "blog": "https://code.pieces.app/blog"
       },
       "extensions": {

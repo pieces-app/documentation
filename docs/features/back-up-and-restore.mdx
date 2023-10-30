@@ -1,0 +1,98 @@
+---
+title: Back Up and Restore
+description: Learn how to back up and restore your Pieces Database without losing your code snippets.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/features/back-up-and-restore" />
+
+# Backup your Pieces Database - macOS
+
+<Info>Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.</Info>
+
+_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
+
+## Creating the backup
+
+### Step 1
+
+Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
+
+1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
+2. To quit Pieces Desktop, select “Pieces” in the top-left of your macOS toolbar and select “Quit”
+
+### Step 2
+
+Open your Finder and navigate to your “Home” folder.
+
+_If you cannot see your Home folder on the left-hand side of your Finder, simply tap “Shift+Cmd+H” to open it_
+
+<Image zoom alt="Navigating to home folder" src="/assets/backup_database/navigate_to_home.png" />
+
+### Step 3
+
+Once in your Home folder, you’ll need to click “Shift+Cmd+.” (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
+
+<Image zoom alt="Selecting your Library Folder" src="/assets/backup_database/selecting_library_folder.png" />
+
+### Step 4
+
+Next, locate the folders titled “com.pieces.os” and “com.pieces.pfd”. These folders represent your Pieces OS & Pieces Desktop databases.
+
+<Image zoom alt="Selecting Pieces Folders" src="/assets/backup_database/selecting_pieces_folders.png" />
+
+### Step 5
+
+Select both folders, right-click, and select “Compress”.
+
+### Step 6
+
+This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)” as shown below.
+
+<Image zoom alt="Title Archive with Timestamp" src="/assets/backup_database/title_archive.png" />
+
+From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.
+
+<Info>Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.</Info>
+
+_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
+
+## Restoring the Backup
+
+### Step 1
+
+Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
+
+1. To quit Pieces OS, open your system tray in the bottom-right corner of your Desktop, then right-click the Pieces OS icon, and select “Quit”.
+2. To quit Pieces Desktop, right-click the app icon in your system toolbar and select “Quit”.
+
+### Step 2
+
+Locate the compressed Zip folder containing both your “com.pieces.os” and “com.pieces.pfd” backups.
+
+### Step 3
+
+Navigate back to the “Library” folder either on the same or your different machine.
+
+### Step 4
+
+Double-click the compressed file to open the contents
+
+### Step 5
+
+This next step is critical. If you have an existing Pieces database already located in your Documents folder, you will see a window similar to what’s shown below.
+
+<Image zoom alt="Replace dialog popup" src="/assets/backup_database/replace_message.png" />
+
+
+This step is asking if you’d like to override the existing database with your backup.
+
+- If you’d like to override, select “Replace the files in the destination”
+- If you don’t want to override, abandon the process by pressing “Stop”
+
+### Step 6
+
+Lastly, if you chose to proceed with restoring the backup, you will need to restart both Pieces OS and Pieces Desktop for the changes to take effect.
+
+### Support
+
+As always, if you run into issues or have feedback, please fill out [this quick form](https://getpieces.typeform.com/to/mCjBSIjF) or email us at [support@pieces.app](mailto:support@pieces.app), and we’ll be in touch as soon as possible!
