@@ -24,22 +24,19 @@ export const InstallButton = props => {
 }
 
 export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}} target="_blank"
-              href={props.src}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p class="dark:text-white text-black"
-               style={{
-                   padding: "8px 20px",
-                   borderRadius: "8px",
-                   border: "1px solid #f3f5f6",
-                   backgroundColor: "transparent",
-                   fontWeight: "500",
-                   marginBottom: "8px",
-                   marginTop: "3px",
-                   marginRight: "16px"
-               }}>{props.children}</p>
-        </div>
-    </a>
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+        <p class="dark:text-white text-black"
+           style={{
+               padding: "8px 20px",
+               borderRadius: "8px",
+               border: "1px solid #f3f5f6",
+               backgroundColor: "transparent",
+               fontWeight: "500",
+               marginBottom: "8px",
+               marginTop: "3px",
+               marginRight: "16px"
+           }}>{props.children}</p>
+    </div>
 }
 
 export const GridFlexRow = props => {
@@ -61,7 +58,7 @@ export const HeaderLogoImage = props => {
 
 <GridFlexRow>
     <InstallButton>Get the JetBrains Plugin</InstallButton>
-    <ReleasePill src="https://code.pieces.app/updates/introducing-pieces-copilot-jetbrains" children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
+    <ReleasePill children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces for Developers JetBrains Plugin in combination with the Pieces Desktop App makes saving and reusing code simple within your IDE.

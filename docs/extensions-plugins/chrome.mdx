@@ -24,9 +24,7 @@ export const InstallButton = props => {
 }
 
 export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}} target="_blank"
-              href={props.src}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
                    padding: "8px 20px",
@@ -39,7 +37,6 @@ export const ReleasePill = props => {
                    marginRight: "16px"
                }}>{props.children}</p>
         </div>
-    </a>
 }
 
 export const GridFlexRow = props => {
@@ -76,7 +73,7 @@ export const Spacer = props => {
 
 <GridFlexRow>
     <InstallButton>Get the Chrome Extension</InstallButton>
-    <ReleasePill src="https://code.pieces.app/updates/pieces-web-extension-adjust-default-settings" children="Current Version: {{ versions.chrome }}"></ReleasePill>
+    <ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Chrome Extension with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
