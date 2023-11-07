@@ -8,22 +8,19 @@ nextTitle: Pieces Chrome Plugin
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/linux" />
 
 export const ReleasePill = props => {
-    return <a target="_blank" style={{textDecoration: "none"}}
-              href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "2px 20px",
-                borderRadius: "20px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "#f3f4f5",
-                color: "black",
-                fontWeight: "500",
-                marginTop: "8px",
-                marginBottom: "15px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-};
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+        <p style={{
+            padding: "2px 20px",
+            borderRadius: "20px",
+            border: "1px solid #f3f5f6",
+            backgroundColor: "#f3f4f5",
+            color: "black",
+            fontWeight: "500",
+            marginTop: "8px",
+            marginBottom: "15px"
+        }}>{props.children}</p>
+    </div>
+}
 
 export const InstallButton = props => {
     return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
@@ -48,7 +45,7 @@ export const Spacer = props => {
 
 # Getting Started with Pieces for Developers on Linux
 
-<ReleasePill src="{{ links.installation.ubuntu_versions }}">Compatible with Ubuntu 18 or higher and select distributions</ReleasePill>
+<ReleasePill>Compatible with Ubuntu 18 or higher and select distributions</ReleasePill>
 
 ![A robot checking the install for pieces desktop for linux.](/assets/installation/robots_linux.png)
 
@@ -100,7 +97,7 @@ To run Pieces for Developers on Linux, be sure to download both of the applicati
     ```
     [Save to Pieces](https://snippets.pieces.cloud/?p=f23c48bd96)
 
-4. Launch Pieces OS by running the following command in your terminal:
+4. Launch [Pieces OS](/installation-getting-started/pieces-os) by running the following command in your terminal:
     ```shell
     pieces-os
     ```

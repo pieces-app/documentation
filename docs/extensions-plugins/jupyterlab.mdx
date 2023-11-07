@@ -9,22 +9,20 @@ description: Learn how to install the Pieces for JupyterLab Extension via the PY
 />
 
 export const ReleasePill = props => {
-  return <a target="_blank" style={{textDecoration: "none"}}
-            href={props.src}>
-    <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-      <p style={{
-        padding: "2px 20px",
-        borderRadius: "20px",
-        border: "1px solid #f3f5f6",
-        backgroundColor: "#f3f4f5",
-        color: "black",
-        fontWeight: "500",
-        marginTop: "8px",
-        marginBottom: "15px"
-      }}>{props.children}</p>
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+        <p class="dark:text-white text-black"
+           style={{
+               padding: "8px 20px",
+               borderRadius: "8px",
+               border: "1px solid #f3f5f6",
+               backgroundColor: "transparent",
+               fontWeight: "500",
+               marginBottom: "8px",
+               marginTop: "3px",
+               marginRight: "16px"
+           }}>{props.children}</p>
     </div>
-  </a>
-};
+}
 
 export const InstallButton = props => {
   return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>

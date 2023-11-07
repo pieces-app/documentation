@@ -24,22 +24,19 @@ export const InstallButton = props => {
 }
 
 export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}} target="_blank"
-              href={props.src}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p class="dark:text-white text-black"
-               style={{
-                   padding: "8px 20px",
-                   borderRadius: "8px",
-                   border: "1px solid #f3f5f6",
-                   backgroundColor: "transparent",
-                   fontWeight: "500",
-                   marginBottom: "8px",
-                   marginTop: "3px",
-                   marginRight: "16px"
-               }}>{props.children}</p>
-        </div>
-    </a>
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+        <p class="dark:text-white text-black"
+           style={{
+               padding: "8px 20px",
+               borderRadius: "8px",
+               border: "1px solid #f3f5f6",
+               backgroundColor: "transparent",
+               fontWeight: "500",
+               marginBottom: "8px",
+               marginTop: "3px",
+               marginRight: "16px"
+           }}>{props.children}</p>
+    </div>
 }
 
 export const GridFlexRow = props => {
@@ -61,7 +58,7 @@ export const HeaderLogoImage = props => {
 
 <GridFlexRow>
     <InstallButton>Get the JetBrains Plugin</InstallButton>
-    <ReleasePill src="https://code.pieces.app/updates/introducing-pieces-copilot-jetbrains" children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
+    <ReleasePill children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces for Developers JetBrains Plugin in combination with the Pieces Desktop App makes saving and reusing code simple within your IDE.
@@ -119,6 +116,22 @@ or
 - Click the refresh button at the top of the sidebar view
 
 Sometimes, when saving new snippets from other plugins and extensions, you'll have to refresh your list to get a fully updated snippet list.
+
+
+## Pieces Copilot in Jetbrains
+Utilize the Pieces Copilot from Pieces for Jetbrains— no need to leave your IDE. You will not have to change your settings in the Pieces Desktop App.
+
+### Select your Copilot Runtime
+With the Pieces for Jetbrains plugin, there are multiple LLMs that you can utilize depending on the model you prefer for your specific environment. You can read more about the different copilot models that you can choose from on [this page](/features/pieces-copilot).
+
+To select your model, open the Pieces Copilot chat and select "Copilot Runtimes" below the text box at the bottom of the chat. A secondary window will open with model selections. If you have already downloaded a copilot model from another product in the Pieces Suite, it will be available for you here, too. If you **do not** already have a local runtime downloaded, you will have to download it onto your machine.
+
+Using local models allows for the flexibility to work in a completely offline environment without sacrificing Pieces Copilot.
+
+## Real Time Snippet Streaming
+Each product in the Pieces Suite uses [Pieces OS](/installation-getting-started/pieces-os) to get information about your snippets' context. When you update a snippet in the Pieces Desktop App - such as a name or description, tags or any of the other metadata — those changes are also reflected in your Pieces for JetBrains instance without refreshing.
+
+**If your snippets are not updating right away, try pressing the refresh button at the top of your snippet list.**
 
 ## Search for Snippets with the JetBrains Plugin
 

@@ -36,33 +36,21 @@ export const InstallButton = (props) => {
   );
 };
 
-export const ReleasePill = (props) => {
-  return (
-    <a
-      style={{ textDecoration: "none" }}
-      target="_blank"
-      href={ props.src }
-    >
-      <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
-        <p
-          class="dark:text-white text-black"
-          style={{
-            padding: "8px 20px",
-            borderRadius: "8px",
-            border: "1px solid #f3f5f6",
-            backgroundColor: "transparent",
-            fontWeight: "500",
-            marginBottom: "8px",
-            marginTop: "3px",
-            marginRight: "16px",
-          }}
-        >
-          {props.children}
-        </p>
-      </div>
-    </a>
-  );
-};
+export const ReleasePill = props => {
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+        <p class="dark:text-white text-black"
+           style={{
+               padding: "8px 20px",
+               borderRadius: "8px",
+               border: "1px solid #f3f5f6",
+               backgroundColor: "transparent",
+               fontWeight: "500",
+               marginBottom: "8px",
+               marginTop: "3px",
+               marginRight: "16px"
+           }}>{props.children}</p>
+    </div>
+}
 
 export const GridFlexRow = (props) => {
   return (
@@ -94,7 +82,7 @@ export const HeaderLogoImage = (props) => {
 
 <GridFlexRow>
   <InstallButton>Get the Pieces for Developers Obsidian Plugin</InstallButton>
-  <ReleasePill src="https://code.pieces.app/updates/improved-pieces-copilot-experiences" children="Current Version: {{ versions.obsidian }}"></ReleasePill>
+  <ReleasePill children="Current Version: {{ versions.obsidian }}"></ReleasePill>
 </GridFlexRow>
 
 <br></br>
@@ -118,7 +106,7 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 
 - Click on the Pieces icon in the ribbon menu to open the Pieces view.
 - Using the sort by dropdown menu, sort your snippets by **recent** or by **language**.
-- Using the searchbox at the top of the view, search your snippets to save time leafing through your markdown files.
+- Using the search box at the top of the view, search your snippets to save time leafing through your markdown files.
 
 <Image
   zoom
@@ -186,6 +174,15 @@ Pieces adds **embedded buttons** into your markdown files to help you save, copy
   alt="Example of using the embedded buttons added by the obsidian pieces plugin."
 />
 
+## Filtering your Snippets List
+To create a filter and show snippets based on a set of parameters, you can manually add filter settings to your snippet list. To add a filter based on tags, titles, content, and more:
+
+1. Click on the filter button
+2. Click “Add Filters” to see your filtering options
+3. Select a filter
+4. Fill out the inputs for what you would like to filter for
+5. Click “Run Filters”
+
 ---
 
 ## Pieces Copilot powered by qGPT - Personal Knowledge Assistant
@@ -243,6 +240,18 @@ If you want to adjust your privacy settings later after you complete onboarding,
 
 ## Real-Time Streaming for a Better Integration Experience
 To optimize your experience, we use a websocket connection to pass data between your plugins and Pieces OS. This means that any change you make across the Pieces ecosystem, including the Pieces for Obsidian plugin, is instantaneously reflected across all of your Pieces integrations. (ex. <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Extension</a>.)
+
+## On Device Local LLMs
+You can select your specific Pieces Copilot runtime from the Pieces for Obsidian Plugin, similarly to other Pieces products. When selecting the appropriate model for your environment, you can choose between various cloud and local models. To select a model:
+
+1. Click on the Pieces Copilot Logo to open our copilot view
+2. Click on the button labeled ‘Copilot Runtime’ on the bottom left of the view
+3. Click on the model that you would like to use
+4. If it's a local model, download it. Make sure your system has the right hardware to satisfy that model's requirements.
+    - The model will be downloaded as a ~4GB file, so it may take some time depending on your internet connection.
+5. Once the model has been downloaded, click on the plug icon to select the model.
+
+You are now set up and ready to start chatting with the Pieces Copilot, contextualized by your notes, 100% offline!
 
 ## Having Trouble with the Pieces for Developers Obsidian Plugin?
 

@@ -24,9 +24,7 @@ export const InstallButton = props => {
 }
 
 export const ReleasePill = props => {
-    return <a style={{textDecoration: "none"}} target="_blank"
-              href={props.src}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p class="dark:text-white text-black"
                style={{
                    padding: "8px 20px",
@@ -39,7 +37,6 @@ export const ReleasePill = props => {
                    marginRight: "16px"
                }}>{props.children}</p>
         </div>
-    </a>
 }
 
 export const GridFlexRow = props => {
@@ -76,7 +73,7 @@ export const Spacer = props => {
 
 <GridFlexRow>
     <InstallButton>Get the Chrome Extension</InstallButton>
-    <ReleasePill src="https://code.pieces.app/updates/pieces-web-extension-adjust-default-settings" children="Current Version: {{ versions.chrome }}"></ReleasePill>
+    <ReleasePill children="Current Version: {{ versions.chrome }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Chrome Extension with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
@@ -115,11 +112,9 @@ By using the Pieces Copilot in the Pieces Chrome Extension, you can chat with th
 You can chat with Pieces Copilot about any code block, generate new code, and ask other technical questions, similar to chatting with the copilot in the Pieces Desktop App. 
 
 ## Discovered Snippets
-
 When you click the Pieces icon to open the extension popover menu, you'll see all of the snippets that the Pieces Chrome Extension has discovered on that webpage. From this menu, you can easily save any relevant snippets without scrolling back through long pages. 
 
 ### Recently Discovered Snippets
-
 From the extension's popover menu, you can view your Recently Discovered Snippets. This is a list of the last 100 snippets you've come across on the web, or the last 5 sites you've visited. From here, you can save a snippet without returning to that page. You can adjust the number of sites whose snippets Pieces will remember in the extension settings. 
 
 ## Troubleshooting the Pieces Buttons
@@ -160,6 +155,9 @@ You can adjust the following Settings for the Pieces Chrome Extension:
 4. Manage your website blacklist
 5. Adjust the minimum number of characters necessary to recognize a code block
 6. Adjust the functionality of the Copy & Save Button
+
+## Side-panel Window
+The Pieces Chrome extension utilizes the side-panel functionality of your browser to display your copilot chat. When you select "Ask Copilot", a side-panel will open with the snippet that you selected pre-populated. Pieces Copilot will give you more information around the snippet. From here, you can continue the conversation and ask more questions about this snippet, save it, or generate more snippets to assist you with the current issue or solution you have found.
 
 ## Uninstalling the Pieces Chrome Extension
 
