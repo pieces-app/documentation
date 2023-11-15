@@ -1,52 +1,54 @@
 ---
 title: Connecting to a Remote Pieces OS Instance
-description: GitHub Gists are a great way to share code with a group of people for public visibility, and integrate your snippets with your GitHub repositories.
+description:
 ---
 
-# Import Gists from GitHub
+# Connecting to a Remote Pieces OS Instance
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/IMPORT_GIST.gif" alt="Importing Github Gists via Snippet Discovery" />
+## Prerequisites
 
-Before proceeding to work with Gists from GitHub in Pieces, make sure that you are signed in. _If you are signed in to both Google and GitHub, be sure that the **primary emails on both accounts match**._
+- 2 machines with [Pieces OS](https://docs.pieces.app/installation-getting-started/what-am-i-installing) installed
+- [Pieces VS Code extension](https://marketplace.visualstudio.com/items?itemName=piecesapp.pieces) installed
+- [ngrok](https://ngrok.com/) installed on the machine with Pieces OS
 
-## Sharing Snippets as GitHub Gists
+## Setting up your ngrok tunnel
 
-GitHub Gists are a great way to share code with a group of people for public visibility, and integrate your snippets with your GitHub repositories. Pieces makes it easy to update your Gist repository by enabling you to share saved code snippets within Pieces as Gists, right from the desktop app.
+We recommend using a static ngrok URL which you can generate by following [this guide](https://ngrok.com/blog-post/free-static-domains-ngrok-users).
 
-<Image zoom alt="Generating a shareable link in the Pieces desktop app" src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SHAREABLE_LINK.gif" />
+<Tabs
+  defaultValue={"windows"}
+  values={[
+    {label: 'Generated URL', value: 'generated-url'},
+    {label: 'Static URL', value: 'static-url'},
+  ]}
+>
+  <TabItem value={"generated-url"}>
+    1. Install ngrok on the machine with Pieces OS if it isn’t already
+    2. Run the following command on your machine’s terminal: ```ngrok http 1000```
+    3. Copy the forwarding URL it generates to use in the next step
+  </TabItem>
+  <TabItem value="static-url">
+    1. Install ngrok on the machine with Pieces OS if it isn’t already
+    2. Run the following command on your machine’s terminal: ```ngrok http --domain=STATIC_URL_HERE 1000```
+    3. Copy the forwarding URL it generates to use in the next step
+  </TabItem>
+</Tabs>
 
-1. After signing in and ensuring that you are **connected to the cloud**, select any snippet in the desktop app.
-2. Click the "Shareable Link" icon on the Action menu nested on the right side of your screen.
-3. Select the GitHub logo to the right of your shareable link inside the input.
--If you have not authenticated with GitHub you will have to in order to generate a Gist.
-4. (Optional) Create a title and a description. You can create a title and a description from here, or you can skip this step and a generated title will be created for you.
-5. Press "Generate," and you'll get the link to the Gist, where it can be found on your list of public gists on your GitHub account.
+## Setting up your Pieces VS Code extension
 
-#### Bundled Metadata Preview
-Every Gist has a _Markdown Preview_ built using our <a target="_blank" href="{{ links.internal.context_awareness_engine.origin_details }}">Context Awareness Engine and Origin Details</a> which includes relevant and related information to the snippet's context.
+Now we will set up your Pieces VS Code extension to connect to your machine with Pieces OS.
 
+1. Open VS Code on your machine
+2. Go to VS Code Settings ```CMD/CTRL + ,```
+3. Ensure that you have the ```Workspace``` tab selected
+4. Search ```pieces custom url```
+5. Paste your ngrok forwarding URL in the input for ```Pieces: Custom Url```
 
-## How to Import Gists to Pieces Desktop
+## Reloading your VS Code window
 
-To import the Gists and upgrade them:
-1. Navigate to 'Add Snippets' > 'Import Gists'
-2. The Snippet Discovery window will open, as we use our Snippet Discovery feature to [enrich your snippets](/features/auto-enrichment) as you import them from GitHub. This way, your Gists will maintain their context.
-3. Once you press "Select Gists," in a similar way as [Snippet Discovery](/product-highlights-and-benefits/in-project-snippet-discovery), you will be presented with a list of Snippets that have been discovered from your GitHub account.
+Now we will reload your VS Code window to ensure that your Pieces VS Code extension is using your ngrok forwarding URL.
 
-If you're not seeing your Gists, make sure they are set to public. Otherwise, they will not be detected.
-4. Select the Gists that you want to save by pressing the checkbox to select each one individually or by pressing "save all" in the top right.
-5. You will be brought back to your default view where you can see all of the snippets that you just discovered from your Gists.
+1. Use the keyboard shortcut ```CMD/CTRL+SHFT+P```
+2. Search ```Reload Window```
+3. Select ```Developer: Reload Window```
 
-### Gist Metadata
-Each code snippet that you save as a Gist is packed full of metadata and information about the repository you saved it from. Traditionally, when you save a Gist, its origin is lost unless you take extra steps to click through dozens of pull requests and commits. Now, we automatically keep track of this crucial information with our <a target="_blank" href="{{ links.internal.context_awareness_engine.origin_details }}">Context Awareness Engine and Origin Details</a>.
-
-Some of the metadata that you may get when importing Gists into the Pieces Desktop App are:
-- Related links to URLs about the repo the code came from
-- Commit history included inside the description of the snippet
-- Resource documentation links for packages used in the config files
-- Other users that are included in the comments or pull request
-
-### Where can I see this newly uncovered data?
-If you toggle to the **Context View**, you can [find all the metadata that came through from GitHub](/features/auto-enrichment) and edit it as you like.
-
-[Learn more about managing enrichments and saved materials.](/features/managing-saved-materials)
