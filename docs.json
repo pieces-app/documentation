@@ -81,12 +81,13 @@
       ["Workflow Activity", "/features/workflow-activity"]
     ]],
     ["✨ Highlights & Benefits",[
-      ["Snippet Collections", "/product-highlights-and-benefits/collections"],
+      ["Connecting to a Remote Pieces OS Instance", "/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance"],
+      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
+      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"],
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
       ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
       ["Saving To/From Github Gists", "/product-highlights-and-benefits/saving-to-and-from-github-gists"],
-      ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
-      ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"]
+      ["Snippet Collections", "/product-highlights-and-benefits/collections"]
     ]],
     ["\uD83D\uDCDA Use Cases", [
       ["Reduce Endless Google Searching", "/use-cases/countless-google-searches"],
