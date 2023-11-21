@@ -63,7 +63,8 @@
       ["VSCode Extension", "/extensions-plugins/vscode"],
       ["Obsidian Plugin", "/extensions-plugins/obsidian"],
       ["JupyterLab Extension", "/extensions-plugins/jupyterlab"],
-      ["Microsoft Teams App", "/extensions-plugins/teams"]
+      ["Microsoft Teams App", "/extensions-plugins/teams"],
+      ["Firefox Addon", "/extensions-plugins/firefox"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
