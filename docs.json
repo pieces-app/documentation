@@ -104,16 +104,16 @@
   ],
   "variables": {
     "versions": {
-      "pfd": "v2.8.1",
-      "chrome": "v2.8.1",
-      "jetbrains": "v6.3.0",
-      "vscode": "v1.8.0",
-      "obsidian": "v1.7.0",
-      "jupyterlab": "v1.7.0",
-      "pieces_os": "v6.5.0",
-      "edge": "v2.8.1",
+      "pfd": "v2.8.2",
+      "chrome": "v2.8.3",
+      "jetbrains": "v7.0.0",
+      "vscode": "v1.9.1",
+      "obsidian": "v1.8.1",
+      "jupyterlab": "v1.8.1",
+      "pieces_os": "v7.0.1",
+      "edge": "v2.8.3",
       "teams": "v1.1.0",
-      "firefox": "v2.8.2"
+      "firefox": "v2.8.3"
     },
     "links": {
       "website": {
