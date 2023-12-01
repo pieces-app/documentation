@@ -31,7 +31,7 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 For WSL users, you can access Pieces OS installed on your local Windows machine by setting up a port forward to make it accessible within WSL.
 
-1. Open Windows Firewall: Press ```Win + R```, type ```firewall.cpl```, and press Enter.
+1. Open Windows Firewall: Press `Win + R`, type `firewall.cpl`, and press Enter.
 2. In the left pane, click on “Advanced settings” to open the Windows Firewall with Advanced Security.
 3. In the left pane, click on “Inbound Rules”.
 4. On the right pane, click on “New Rule”.
@@ -57,12 +57,12 @@ We recommend using a static ngrok URL which you can claim by following [this gui
 >
   <TabItem value="static-url">
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: ```ngrok http --domain=STATIC_URL_HERE 1000```
+    2. Run the following command on your machine’s terminal: `ngrok http --domain=STATIC_URL_HERE 1000`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
   <TabItem value={"generated-url"}>
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: ```ngrok http 1000```
+    2. Run the following command on your machine’s terminal: `ngrok http 1
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
 </Tabs>
@@ -74,10 +74,10 @@ We recommend using a static ngrok URL which you can claim by following [this gui
 Now we will set up your Pieces VS Code extension to connect to your machine with Pieces OS.
 
 1. Open VS Code on your machine
-2. Go to VS Code Settings ```CMD/CTRL + ,```
-3. Ensure that you have the ```Workspace``` tab selected
-4. Search ```pieces custom url```
-5. Paste your ngrok forwarding URL in the input for ```Pieces: Custom Url```
+2. Go to VS Code Settings `CMD/CTRL + ,`
+3. Ensure that you have the `Workspace` tab selected
+4. Search `pieces custom url`
+5. Paste your ngrok forwarding URL in the input for `Pieces: Custom Url`
 
 <Image zoom alt="Configuring your VS Code extension to talk to a remote Pieces OS instance" src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/LINK_SHARING/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-LINK_SHARING-MACOS-16X9-11_27_2023.GIF" />
 
@@ -85,8 +85,8 @@ Now we will set up your Pieces VS Code extension to connect to your machine with
 
 Now we will reload your VS Code window to ensure that your Pieces VS Code extension is using your ngrok forwarding URL.
 
-1. Open up the Command Palette ```CMD/CTRL + Shift + P```
-2. Search ```Reload Window```
-3. Select ```Developer: Reload Window```
+1. Open up the Command Palette `CMD/CTRL + Shift + P`
+2. Search `Reload Window`
+3. Select `Developer: Reload Window`
 
 <Image zoom alt="Reloading the VS Code window" src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/REFRESH_TREE_VIEW/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-REFRESH_TREE_VIEW-MACOS-16X9-11_27_2023.GIF" />
