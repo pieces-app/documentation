@@ -31,6 +31,15 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 For WSL users, you can access Pieces OS installed on your local Windows machine by setting up a port forward to make it accessible within WSL.
 
+1. Open Windows Firewall: Press ```Win + R```, type ```firewall.cpl```, and press Enter.
+2. In the left pane, click on “Advanced settings” to open the Windows Firewall with Advanced Security.
+3. In the left pane, click on “Inbound Rules”.
+4. On the right pane, click on “New Rule”.
+5. Rule Type: Select “Port” and click Next.
+6. Protocol and Ports: Choose “TCP” and specify port number 1000. Click Next.
+7. Action: Select “Allow the connection” and click Next.
+8. Profile: Choose Public, Private, and Domain for the profile.
+9. Name: Give the rule a name, like “Local Devices on Port 1000”, and click Finish.
 
 
 ### GitHub Codespaces
