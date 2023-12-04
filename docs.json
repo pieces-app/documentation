@@ -44,6 +44,11 @@
       "link": "https://discord.gg/getpieces"
     },
     {
+      "title": "Open Source",
+      "icon": "unlock",
+      "link": "https://github.com/pieces-app/opensource"
+    },
+    {
       "title": "Contact Support",
       "icon": "headset",
       "link": "https://getpieces.typeform.com/to/mCjBSIjF#page=docs-sidebar"
