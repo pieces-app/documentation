@@ -78,9 +78,18 @@ export const Spacer = props => {
 ## Installing the Extension
 <Info>In order to use the Pieces for Azure Database Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
 
-You can install the Azure Extension by [downloading it on this link](/#) or by searching for Pieces in the plugins search of your IDE.
+You can install the Azure Extension by [downloading it on this link](https://builds.pieces.app/stages/staging/plugin_vscode/ads-vsix/download) or by searching for Pieces in the plugins search of your IDE.
 
-Once you've installed the extension, you'll have to restart ADS before using Pieces.
+Once you've installed the extension, you'll have to restart ADS before using Pieces. Currently, we only support installing via VSIX package in ADS.
+
+### To Install the Extension in Azure Data Studio via VSIX:
+1. Open up ADS in any project
+2. Click on "Extensions" in the sidebar on the left
+3. Click the '...' in the top right of te viewer on the left side of your IDE
+4. Select "Install from VSIX" at the bottom of the context menu that opens
+5. Then select the `ads-out.vsix' file and press choose
+
+Once you complete those steps, you should see a README.md for getting started with Pieces in your Azure Data Studio IDE.
 
 ## Save snippets with Pieces for ADS
 To save a query from a database, simply highlight the query and save with:
