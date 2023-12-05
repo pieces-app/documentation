@@ -1,6 +1,6 @@
 ---
 title: Pieces for Developers Azure Data Studio Extension
-description: Learn about the Pieces Azure Data Studio Extension, how it functions, and what all you can do with this powerful extension in ADS from Microsoft.
+description: Learn about the Pieces Azure Data Studio Extension, how it functions, and all you can do with this powerful extension in ADS from Microsoft.
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/azuredatastudio" />
@@ -78,14 +78,14 @@ export const Spacer = props => {
 ## Installing the Extension
 <Info>In order to use the Pieces for Azure Database Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
 
-You can install the Azure Extension by [downloading it on this link](https://builds.pieces.app/stages/staging/plugin_vscode/ads-vsix/download) or by searching for Pieces in the plugins search of your IDE.
+You can install the Azure Extension by [downloading it from this link](https://builds.pieces.app/stages/staging/plugin_vscode/ads-vsix/download) or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the extension, you'll have to restart ADS before using Pieces. Currently, we only support installing via VSIX package in ADS.
 
 ### To Install the Extension in Azure Data Studio via VSIX:
-1. Open up ADS in any project
+1. Open any project in ADS
 2. Click on "Extensions" in the sidebar on the left
-3. Click the '...' in the top right of te viewer on the left side of your IDE
+3. Click '...' in the top right of the viewer on the left side of your IDE
 4. Select "Install from VSIX" at the bottom of the context menu that opens
 5. Then select the `ads-out.vsix` file and press choose
 
@@ -104,17 +104,17 @@ To save a query from a database, simply highlight the query and save with:
  - Right-click and select "Save to Pieces" in the context menu
 
 ## View Saved Snippets
-To view your full list of code snippets inside your IDE:
+To view your full list of code snippets in your IDE:
 
   1. Find the Pieces for Developers Icon in the sidebar tray
   2. Select the Pieces Icon and a sidebar viewer will open with all of your snippets in a language-based list
 
   - You can expand the list of snippets for each language by clicking on the name of the language.
 
-> this is a great way to utilize notes or code snippets from other languages.
+> This is a great way to utilize notes or code snippets from other languages.
 
 ### Preview Saved Snippets in Markdown
-If you'd like to get a closer look at a snippet before adding it to your project, click on the snippet in the list view, and it will open in a Markdown preview. You'll be able to see the snippet and its context, including any tags, descriptions, titles, related links, related people, and previously generated shareable links.
+If you'd like to get a closer look at a snippet before adding it to your project, click on the snippet in the list view and it will open in a Markdown preview. You'll be able to see the snippet and its context, including any tags, descriptions, titles, related links, related people, and previously generated shareable links.
 
 ## Refresh your Saved Snippets
 Sometimes, when saving new snippets from other plugins and extensions, you'll have to refresh your Azure Data Studio extension to get a fully updated snippet list. To refresh the list, click the refresh button located at the top of the Pieces Explorer.
@@ -127,18 +127,18 @@ In the Pieces Azure Data Studio Extension list view, check out the Suggested Mat
 
 Exploring Materials with Pieces Insights allows you to learn more about a code snippet without saving it to your repository.
 
-To Explore a material:
+To explore a material:
 
 1. Highlight a code snippet in your editor
 2. Right-click and select “Explore with Pieces Insights” or hit [Shift+Alt+E] (Windows)/[Shift+Option+E] (macOS)
 3. Click the “View Insights” success message in the lower right corner of your editor
 4. Pieces will open a new window with a markdown file that showcases your snippet, its description, and other associated metadata.
 
-To revisit explored materials, visit the section titled “Explored Materials & Snippet Insights” in the Extension Tree View. Here, you can view your explored materials, save them to Pieces, or delete them— just right-click.
+To revisit Explored Materials, visit the section titled “Explored Materials & Snippet Insights” in the Extension's list view. Here, you can view your Explored Materials, save them to Pieces, or delete them— just right-click.
 
-If you'd like to automatically save your explored materials to your Pieces repository, toggle on “Explore and Save” in your extension settings.
+If you'd like to automatically save your Explored Materials to your Pieces repository, toggle on “Explore and Save” in your extension settings.
 
-<Info>In order to Explore Materials, you must be connected to your Pieces Cloud.</Info>
+<Info>In order to explore materials, you must be connected to your Pieces Cloud.</Info>
 
 ## Related Materials to Current Selection
 
@@ -150,7 +150,7 @@ Pieces can discover related snippets to the code in your editor, even if you're 
 
 ## Connect Account
 
-From this section of the sidebar, you can connect to (and disconnect from) your Pieces account without opening the Pieces for Developers desktop app. You'll need to be connected to your Pieces account in order to generate shareable links and explore materials.
+From this section of the sidebar, you can connect to (and disconnect from) your Pieces account without opening the Pieces for Developers Desktop App. You'll need to be connected to your Pieces account in order to generate shareable links and explore materials.
 
 ## Edit snippets in Azure Data Studio
 Editing a snippet that is saved to Pieces for Developers from Azure Data Studio is easy! To edit a snippet, follow these steps:
@@ -193,7 +193,7 @@ This setting enables automatic copying for generated Pieces links. If enabled, y
 If you choose to enable auto-save, Pieces will automatically save highly re-used and potentially useful snippets while you work. This cuts down on the number of snippets you need to save manually and helps to prevent searching for code in all of your files.
 
 ### Cloud Capabilities
-Here you can choose which type of ML models you'd like to use in Pieces for Azure Data Studio : Cloud, Local, or Blended. To learn more about the types of ML models and their privacy implications, [visit this section of our documentation](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data#our-machine-learning-models).
+Here you can choose which type of ML models you'd like to use in Pieces for Azure Data Studio: Cloud, Local, or Blended. To learn more about the types of ML models and their privacy implications, [visit this section of our documentation](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data#our-machine-learning-models).
 
 ### Display
 In this section, you can choose what aspect of your snippets to display in the snippet list.
@@ -220,10 +220,10 @@ The Pieces for Developers Azure Data Studio Extension can throw a lot of notific
 If you choose to check this box, any code that you select to search for related materials will be saved to your Pieces repository.
 
 ### Git Context
-In this section of the settings, you can control the Git context associated with your snippets. Pick if you'd like to include information from your Git history, commit links, and commit people here.
+In this section of the settings, you can control the Git context associated with your snippets. Pick if you'd like to include information from your Git history, commit links, and contributors here.
 
 ### Search
-In this section, you can customize your search experience in Azure Data Studio .
+In this section, you can customize your search experience in Azure Data Studio.
 
 #### Search By
 Pick your search parameters! In search by, you can decide if your search will match the characters in your snippets' titles, tags, code contents, or combinations of the three.
@@ -258,7 +258,7 @@ By unchecking this box, you revoke permission to share analytics with the Pieces
 If the Azure Data Studio extension isn't working for you, please make sure you have the following:
 
 - The latest version of Pieces for Azure Data Studio 
-- Pieces OS version 5.0.0 or higher
+- Pieces OS version 7.0.0 or higher
 
 <Info>After installing or updating your software, please restart Azure Data Studio . If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).</Info>
 
@@ -270,7 +270,7 @@ To uninstall Pieces for Azure Data Studio :
 2. Select the Settings icon next to the Pieces for Azure Data Studio Extension
 3. Select uninstall
 
-In order for Pieces to be completely uninstalled from Azure Data Studio , you'll need to restart your IDE.
+In order for Pieces to be completely uninstalled from Azure Data Studio, you'll need to restart your IDE.
 
 ## Help & Support
 
