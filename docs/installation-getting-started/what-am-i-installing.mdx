@@ -85,6 +85,15 @@ export const InstallButtonLinux = props => {
     </a>
 }
 
+export const GridFlexSpaceEvenlyRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
 # Getting Started
 
 ![Pieces for Developers and Pieces OS application windows.](/assets/getting_started.png)
@@ -95,7 +104,7 @@ Pieces is an AI-enabled productivity tool designed to increase developer efficie
 
 Our centralized storage agent (Pieces OS) works on-device, unifying various developer tools (including the desktop app) to proactively capture and enrich useful materials, streamline collaboration, and solve complex problems through a contextual understanding of your unique workflow.
 
-Download both the Pieces for Developers Desktop App and Pieces OS here:
+**Download both the Pieces for Developers Desktop App and Pieces OS here:**
 
 <GridFlexRow>
     <InstallButtonWindows src="/installation-getting-started/windows">
@@ -109,9 +118,11 @@ Download both the Pieces for Developers Desktop App and Pieces OS here:
     </InstallButtonLinux>
 </GridFlexRow>
 
+<MiniSpacer></MiniSpacer>
+
 <Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>
 
-Pieces OS is our background service that runs offline and on-device, unifying various Pieces apps & plugins. It's required to enable:
+**Pieces OS** is our background service that runs offline and on-device, unifying various Pieces apps & plugins. It's required to enable:
 
 * All Pieces for Developers products, such as the desktop application and integrations
 * Local, Private, and Secure Machine Learning Models
@@ -165,4 +176,14 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 
 ## Leverage the power of Pieces in your favorite tools
 
-Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations.
+Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
+
+<GridFlexSpaceEvenlyRow>
+    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
+    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
+</GridFlexSpaceEvenlyRow>
