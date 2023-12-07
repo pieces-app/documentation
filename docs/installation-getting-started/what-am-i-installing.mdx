@@ -58,43 +58,77 @@ export const CallToAction = props => {
     </div>
 };
 
+export const InstallButtonWindows = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for Windows</p>
+        </div>
+    </a>
+}
+
+export const InstallButtonMac = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for macOS</p>
+        </div>
+    </a>
+};
+
+export const InstallButtonLinux = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
+            { props.children }
+            <p style={{color: "white", marginLeft: "8px"}}>See for Linux</p>
+        </div>
+    </a>
+}
+
+export const GridFlexSpaceEvenlyRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
 # Getting Started
 
-![Pieces for Developers and Pieces OS application windows.](/assets/what_am_installing.png)
+![Pieces for Developers and Pieces OS application windows.](/assets/getting_started.png)
 
 ## Pieces Desktop App & Pieces OS
 
-<Tabs
-    defaultValue={"windows"}
-    values={[
-        {label: 'macOS', value: 'macos'},
-        {label: 'Windows', value: 'windows'},
-        {label: 'Linux', value: 'linux'}
-    ]}
->
-    <TabItem value="macos">
-        <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-        <InstallButton
-            src="https://docs.pieces.app/installation-getting-started/macos">See macOS Download Options</InstallButton>
-    </TabItem>
-    <TabItem value="windows">
-        <p>Compatible with Windows 10 version 1809 and higher</p>
-        <InstallButton
-            src="https://docs.pieces.app/installation-getting-started/windows">See Windows Download Options</InstallButton>
-    </TabItem>
-    <TabItem value="linux">
-        <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-        <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Download Options</InstallButton>
-    </TabItem>
-</Tabs>
+Pieces is an AI-enabled productivity tool designed to increase developer efficiency through personalized workflow assistance across the entire toolchain.
+
+Our centralized storage agent (Pieces OS) works on-device, unifying various developer tools (including the desktop app) to proactively capture and enrich useful materials, streamline collaboration, and solve complex problems through a contextual understanding of your unique workflow.
+
+**Download the Pieces for Developers Desktop App and Pieces OS here:**
+
+<GridFlexRow>
+    <InstallButtonWindows src="/installation-getting-started/windows">
+        <Image width="20px" src={"/assets/windows_logo_old.png"} />
+    </InstallButtonWindows>
+    <InstallButtonMac src="/installation-getting-started/macos">
+        <Image width="20px" src={"/assets/mac_os.png"} />
+    </InstallButtonMac>
+    <InstallButtonLinux src="/installation-getting-started/linux">
+        <Image width="20px"src={"/assets/linux_logo.png"} />
+    </InstallButtonLinux>
+</GridFlexRow>
+
+<MiniSpacer></MiniSpacer>
 
 <Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>
 
+<MiniSpacer></MiniSpacer>
+
 <Accordion title={"Pieces for Developers | Pieces OS"}>
     **[Pieces OS](/installation-getting-started/pieces-os)** is our background service that runs offline and on-device. It's **required** to enable:
-        - Individual products in the Pieces for Developers Suite to communicate
-        - Local, Private, and Secure Machine Learning Models
-        - Real-Time Search and Suggestions
+    - Individual products in the Pieces for Developers Suite to communicate
+    - Local, Private, and Secure Machine Learning Models
+    - Real-Time Search and Suggestions
 </Accordion>
 
 <MiniSpacer></MiniSpacer>
@@ -109,35 +143,15 @@ export const CallToAction = props => {
     - and so much more!
 </Accordion>
 
-<MiniSpacer></MiniSpacer>
-
 ---
 
 ## What is Pieces OS?
 
-[Pieces OS]((/installation-getting-started/pieces-os)) operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](https://docs.pieces.app/features/pieces-copilot), as well as [real-time search](gttps://docs.pieces.app/features/search-modes) and suggestions.
+[Pieces OS](/installation-getting-started/pieces-os) operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](https://docs.pieces.app/features/pieces-copilot), as well as [real-time search](https://docs.pieces.app/features/search-modes) and suggestions.
 
-![Pieces Ecosystem](https://storage.googleapis.com/pieces_multimedia/ILLUSTRATIONS/PIECES_FOR_DEVELOPERS/ANY_INTEGRATION/ANY_THEME/PLUGINS/1X1/PIECES_FOR_DEVELOPERS-ANY_INTEGRATION-PLUGINS-ANY_THEME-1X1-10_16_2023.PNG)
+Pieces OS enables Pieces products and local LLMs to operate 100% locally on your machine, with an option to connect to the cloud for [backup](https://docs.pieces.app/features/back-up-and-restore), [sharing](https://docs.pieces.app/features/one-click-snippet-sharing), and cloud-based LLMs for code generation.
 
-Pieces OS enables Pieces products to operate 100% locally on your machine, with an option to connect to the cloud for [backup](https://docs.pieces.app/features/back-up-and-restore), [sharing](https://docs.pieces.app/features/one-click-snippet-sharing), and some cloud-only ML models.
-
-## Core Features of Pieces OS
-
-### Data Processing
-
-Pieces OS orchestrates effective data processing workflows, thus maintaining data integrity and providing real-time insights. Its local operation ensures a seamless and efficient data handling process that fosters efficient development.
-
-### Machine Learning Models Management
-
-Pieces OS's capabilities extend to managing the various machine learning models that are either stored locally or in the cloud. It ensures optimal performance and updated models for your applications, which bolsters the efficacy and reliability of Pieces' machine learning aspects.
-
-### Secure and Private
-
-Security and privacy are paramount in Pieces OS's operation. By running locally on your machine, it offers a secure environment for data processing and machine learning model management, ensuring the confidentiality and integrity of your data.
-
-## Getting Started with Pieces OS
-
-### Installation Guide
+### Getting Started with Pieces OS
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
@@ -163,56 +177,16 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
   </TabItem>
 </Tabs>
 
-## Dive Deeper
+## Leverage the power of Pieces in your favorite tools
 
-Explore the intricacies of Pieces OS through a variety of resources, available in different formats. Whether you are looking to better understand its functionalities or seeking support from the community, the structured tabs below provide a pathway to delve deeper into Pieces OS.
+Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
-<Tabs
-  defaultValue={"tutorials"}
-  values={[
-    {label: 'Tutorials', value: 'tutorials'},
-    {label: 'Documentation', value: 'documentation'},
-    {label: 'Community', value: 'community'}
-  ]}
->
-  <TabItem value="tutorials">
-    Discover step-by-step tutorials and livestreams to get familiar with [Pieces OS](/installation-getting-started/pieces-os).
-    <a href="https://www.youtube.com/@getpieces">Explore our YouTube Channel</a>
-  </TabItem>
-  <TabItem value="documentation">
-    Dive into the comprehensive documentation to learn every aspect of [Pieces OS](/installation-getting-started/pieces-os).
-    <a href="https://docs.pieces.app">Explore Documentation</a>
-  </TabItem>
-  <TabItem value="community">
-    Join our community to share knowledge, learn from others, and get support.
-    <a href="https://discord.gg/getpieces">Join our Discord</a>
-  </TabItem>
-</Tabs>
-
-<MiniSpacer></MiniSpacer>
-
-## Integrations
-
-[Pieces OS](/installation-getting-started/pieces-os) is engineered to harmoniously interact with various development, communication, and productivity tools. Explore the integrations below to learn more about how Pieces OS can enhance your workflow.
-
-<Tabs
-  defaultValue={"dev_tools"}
-  values={[
-    {label: 'Development', value: 'development'},
-    {label: 'Communication', value: 'communication'},
-    {label: 'Productivity', value: 'productivity'},
-  ]}
->
-  <TabItem value="development">
-    Explore the dev tools that seamlessly integrate with [Pieces OS](/installation-getting-started/pieces-os).
-    <a href="https://docs.pieces.app/extensions-plugins/vscode">Explore Tools</a>
-  </TabItem>
-  <TabItem value="communication">
-    Discover the communication tools that seamlessly integrate with [Pieces OS](/installation-getting-started/pieces-os).
-    <a href="https://docs.pieces.app/extensions-plugins/teams">Explore Tools</a>
-  </TabItem>
-  <TabItem value="productivity">
-    Discover the productivity tools that seamlessly integrate with [Pieces OS](/installation-getting-started/pieces-os).
-    <a href="https://docs.pieces.app/extensions-plugins/obsidian">Explore Tools</a>
-  </TabItem>
-</Tabs>
+<GridFlexSpaceEvenlyRow>
+    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
+    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
+</GridFlexSpaceEvenlyRow>
