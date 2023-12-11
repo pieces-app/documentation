@@ -15,7 +15,8 @@ jobs:
   move-assigned-card:
     runs-on: ubuntu-latest
     steps:
-      - uses: alex-page/github-project-automation-plus@7ffb872c64bd809d23563a130a0a97d01dfa8f43
+      - name: GitHub Project Automation+
+        uses: alex-page/github-project-automation-plus@v0.8.3
         with:
           project: Pieces Support Queue
           column: To triage
