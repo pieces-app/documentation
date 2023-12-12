@@ -195,7 +195,22 @@ Related materials are code snippets that are similar to the code you're currentl
 ## Updating
 The Pieces JetBrains Plugin will automatically update when a new version is available. You can also manually update the plugin by going to `Plugins > Installed`, finding Pieces, and clicking the update button.
 
-## Troubleshooting Common Installation Problems
+## Troubleshooting
+
+### Pieces Copilot: Enabling JCEF Runtime and Downgrade
+Pieces Copilot relies on JCEF, a very important component of JetBrains Runtime bundled with your IDE. By default, Android Studio is launched with AA runtime version that does not support JCEF.
+
+Switch your Java runtime to JCEF enabled runtime inside your global IDE settings.
+
+> Note that this operation will require a restart of your IDE, so it’s always worth saving your work before doing this.
+
+It’s important to know that the latest stable release of Android Studio (Hedgehog 2023.1.1) unfortunately won’t benefit from this workaround, and it may throw errors regarding GPU processes restarting too many times. If you are using Android Studio Hedgehog, please consider downgrading to the second latest stable release, in this case Giraffe 2022.3.1 Patch 4.
+
+In order to switch your runtime:
+1. Use ⌘⇧A shortcut to invoke action search dialog
+2. Start typing "Choose Boot Java Runtime for the IDE…”
+3. Select the latest version with annotation ending with „with JCEF”.
+4. When you click OK and restart your IDE, **Copilot should start working properly**.
 
 ### I can't find the Pieces JetBrains Plugin in the JetBrains Marketplace!
 If you can't find the Pieces for Developers JetBrains Plugin in the JetBrains Marketplace, you can naviagte directly to it with <a target = "blank" href = "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets">this link</a>.
