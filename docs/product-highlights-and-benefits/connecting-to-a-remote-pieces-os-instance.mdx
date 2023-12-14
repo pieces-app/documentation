@@ -25,22 +25,6 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 ## Use Cases
 
-### Windows Subsystem for Linux (WSL)
-
-> - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) must be installed and configured on your machine
-
-For WSL users, you can access Pieces OS installed on your local Windows machine by setting up a port forward to make it accessible within WSL.
-
-1. Open Windows Firewall: Press `Win + R`, search `firewall.cpl`, and press Enter.
-2. In the left pane, click on `Advanced settings` to open the Windows Firewall with Advanced Security.
-3. In the left pane, click on `Inbound Rules`.
-4. On the right pane, click on `New Rule`.
-5. Rule Type: Select `Port` and click Next.
-6. Protocol and Ports: Choose `TCP` and specify port number `1000`. Click Next.
-7. Action: Select `Allow the connection` and click Next.
-8. Profile: Choose Public, Private, and Domain for the profile.
-9. Name: Give the rule a name like `Local Devices on Port 1000`, and click Finish.
-
 ### GitHub Codespaces
 
 > - [ngrok](https://ngrok.com/download) must be installed on the machine with Pieces OS
@@ -89,3 +73,26 @@ Now we will reload your VS Code window to ensure that your Pieces VS Code extens
 3. Select `Developer: Reload Window`
 
 <Image zoom alt="Reloading the VS Code window" src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/REFRESH_TREE_VIEW/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-REFRESH_TREE_VIEW-MACOS-16X9-11_27_2023.GIF" />
+
+### Windows Subsystem for Linux (WSL)
+
+> - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) must be installed and configured on your machine
+
+This integration should work out of the box with WSL. If you are having trouble connecting, please see the [Troubleshooting](#troubleshooting) section for steps on how to set up a port forward.
+
+
+### Troubleshooting
+
+#### Pieces OS is not connecting on WSL
+
+For WSL users, if the connection does not work automatically, you might have to set up a port forward to make it accessible within WSL.
+
+1. Open Windows Firewall: Press `Win + R`, search `firewall.cpl`, and press Enter.
+2. In the left pane, click on `Advanced settings` to open the Windows Firewall with Advanced Security.
+3. In the left pane, click on `Inbound Rules`.
+4. On the right pane, click on `New Rule`.
+5. Rule Type: Select `Port` and click Next.
+6. Protocol and Ports: Choose `TCP` and specify port number `1000`. Click Next.
+7. Action: Select `Allow the connection` and click Next.
+8. Profile: Choose Public, Private, and Domain for the profile.
+9. Name: Give the rule a name like `Local Devices on Port 1000`, and click Finish.
