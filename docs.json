@@ -64,13 +64,13 @@
     ["\uD83D\uDD0C Apps & Plugins", [
       ["Chrome Extension", "/extensions-plugins/chrome"],
       ["Edge Addon", "/extensions-plugins/edge"],
+      ["Firefox Addon", "/extensions-plugins/firefox"],
       ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
-      ["VSCode Extension", "/extensions-plugins/vscode"],
+      ["VS Code Extension", "/extensions-plugins/vscode"],
+      ["Azure Data Studio", "/extensions-plugins/azuredatastudio"],
       ["Obsidian Plugin", "/extensions-plugins/obsidian"],
       ["JupyterLab Extension", "/extensions-plugins/jupyterlab"],
-      ["Microsoft Teams App", "/extensions-plugins/teams"],
-      ["Firefox Addon", "/extensions-plugins/firefox"],
-      ["Azure Data Studio", "/extensions-plugins/azuredatastudio"]
+      ["Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
