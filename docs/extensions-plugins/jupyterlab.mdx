@@ -41,11 +41,13 @@ export const InstallButton = props => {
   </a>
 }
 
-export const Spacer = props => {
-    return <div style={{ height: "25px" }}></div>
-}
+export const MiniSpacer = props => {
+    return <div style={{ height: "16px"}}></div>
+};
 
 <ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
+
+<MiniSpacer></MiniSpacer>
 
 # Your Guide to Getting Started with the Pieces for JupyterLab Extension
 
@@ -66,7 +68,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
 </Accordion>
 
-<Spacer></Spacer>
+<MiniSpacer></MiniSpacer>
 
 <Accordion title="Install via PYPI">
 1. Search for `jupyter-pieces`
@@ -78,7 +80,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
 </Accordion>
-<Spacer></Spacer>
+<MiniSpacer></MiniSpacer>
 
 
 ## Newest Features
