@@ -3,6 +3,8 @@ title: Sync Snippets Across Multiple Devices using GitHub
 description: Follow this guide to get started with manually syncing your code snippets on multiple devices, so you always have them.
 ---
 
+# Sync Snippets Across Multiple Devices using GitHub
+
 > Note: This is a manual process for now, but we will be adding an in-app backup/sync experience in Q1 of 2024. In the meantime, if you have any issues with the process below please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).
 
 This guide uses VS Code since it is free and the steps for configuration are not to advanced. This can be followed using any version control flow that you use.
@@ -12,22 +14,22 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 **Follow this entire guide in order**. Going out of order or not completing the entire guide may result in a failure to sync your snippets or other unforeseen consequences.
 
 ## Prerequisites
-- Two (2) computers with Pieces OS and Pieces Desktop App already installed
+1. Two (2) computers with Pieces OS and Pieces Desktop App already installed
     - Computer #1: Computer where your saved snippets are currently saved
     - Computer #2: Other computer where you want to sync your snippets to
-- Version control account (GitHub, GitLab, etc.)
+2. Version control account (GitHub, GitLab, etc.)
 
 **You should start this guide on the computer that has your snippets saved on it.**
 
 ## Setup Steps (15-20 minutes):
 1. [Backup your current Pieces Database](https://docs.pieces.app/features/back-up-and-restore#creating-the-backup) **(Computer #1)**
-    a. This is very important to ensure you do not lose any snippets or files during the syncing process in case something goes wrong
+    - This is very important to ensure you do not lose any snippets or files during the syncing process in case something goes wrong
 2. [Quit/Turn off Pieces OS](https://docs.pieces.app/features/back-up-and-restore#step-1) on both computers
-    a. Ensure it is off until the guide specifically tells you to turn it back on
+    - Ensure it is off until the guide specifically tells you to turn it back on
 3. Ensure that you are on the computer where your snippets are the most up to date (Computer #1)
 4. Open the following folder in your IDE or terminal:
-    a. MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
-    b. Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
+    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 5. In the VS Code terminal, run the following command to initialize a git repository: `git init`
 6. (Optional) Create a .gitignore file and paste the following into the file to ensure you don’t commit any IDE-specific files:
     ```ignorelang
@@ -45,34 +47,34 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 
     ```
 7. Now go to your browser and follow these steps to create a private repository (Used GitHub but is similar on other VCSs):
-    a. If you are using VS Code, you can **skip to step #7** because it will automatically create a new repository for you
-    b. go to [https://github.com](https://github.com)
+    1. If you are using VS Code, you can **skip to step #7** because it will automatically create a new repository for you
+    2. go to [https://github.com](https://github.com)
         - If you are not signed in, please sign in to your GitHub account or create a new account if you do not already have one
-    c. Click the “Create new…” dropdown button in the top right corner
-        ![Image here](/)
-    d. Click “New repository” from the dropdown
-    e. Select the owner to be whoever you want to own this (We recommend to be your personal account)
-    f. Name the repository anything you want (The recommended name is Pieces)
-    g. Set the repository visibility to **Private**
-    h. Click "Create repository"
-    i. Copy the HTTPS link that should be in the “Quick setup” section of the page
+    3. Click the “Create new…” dropdown button in the top right corner
+        ![Create New Repo](../assets/create_new_repo.png)
+    4. Click “New repository” from the dropdown
+    5. Select the owner to be whoever you want to own this (We recommend to be your personal account)
+    6. Name the repository anything you want (The recommended name is Pieces)
+    7. Set the repository visibility to **Private**
+    8. Click "Create repository"
+    9. Copy the HTTPS link that should be in the “Quick setup” section of the page
         - This will be used to set your Pieces snippet folder to this GitHub repository
 
 8. Now we will commit and push your snippets to the remote repository:
-    a. Go to your IDE or terminal you have open from step #3
-    b. Stage and commit all changes
-    c. Create a new repository or connect your previously created repository using the HTTPS link you copied
-    d. Push your changes to the connected repository
+    1. Go to your IDE or terminal you have open from step #3
+    2. Stage and commit all changes
+    3. Create a new repository or connect your previously created repository using the HTTPS link you copied
+    4. Push your changes to the connected repository
 9. Switch to your other computer **(Computer #2)**
 10. Ensure that Pieces OS is turned off on this computer
 11. Open the following folder in your IDE or terminal:
-    a. MacOS: `~/Users/user/Library/com.pieces.os/production`
-    b. Windows/Linux: `~/Users/user/Documents/com.pieces.os/production`
+    - MacOS: `~/Users/user/Library/com.pieces.os/production`
+    - Windows/Linux: `~/Users/user/Documents/com.pieces.os/production`
 12. Delete the following folder named **Pieces**:
-    a. MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
-    b. Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
+    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 13. Go to [https://github.com](https://github.com)
-    a. If you are not signed in, please sign in to the same GitHub account you’ve been using
+    - If you are not signed in, please sign in to the same GitHub account you’ve been using
 14. Copy the clone URL of your remote repository
 15. If your cloned repository folder is not already named Pieces, you must rename the folder to Pieces
 
@@ -90,16 +92,16 @@ Now let’s test that snippets sync between your computers.
 1. Create a new snippet on Computer #2
 2. [Turn Pieces OS off](https://docs.pieces.app/features/back-up-and-restore#step-1)
 3. Go to the folder of your repository:
-    a. MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
-    b. Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
+    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 4. Commit and Push all changes to your remote repository
 5. Go to computer #1 (Pieces OS should still be off on this computer)
 6. Go to the folder of your repository:
-    a. MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
-    b. Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
+    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - Windows/Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 7. **If there are any pending changes for your repository, ensure you discard those changes before continuing the guide.**
 8. Pull the latest changes from your remote repository:
-    a. If there are any merge conflicts, always accept the remote changes
+    - If there are any merge conflicts, always accept the remote changes
 9. Run Pieces OS
 10. Run Pieces Desktop App
 11. You should see your newly created snippet from **Computer #2**
