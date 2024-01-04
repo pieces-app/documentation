@@ -45,6 +45,8 @@ export const MiniSpacer = props => {
     return <div style={{ height: "16px"}}></div>
 };
 
+<Warning>Known Installation Issues: The latest version of the extension does not currently install correctly. Please use `pip install jupyter-pieces===1.8.1` instead</Warning>
+
 <ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
 
 <MiniSpacer></MiniSpacer>
@@ -61,7 +63,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 <Accordion title="Install Using Pip">
 1. Run this command:
     ```sh
-    pip install -U jupyter-pieces 
+    pip install -U jupyter-pieces
     ```
 2. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
@@ -204,7 +206,7 @@ If you need to download and install Pieces OS, please <a target="_blank" href="h
 - The latest version of the Pieces for Developers JupyterLab Extension
 - Pieces OS version 5.0.0 or higher
 - JupyterLab version 4.0.0 or higher
-
+docs.
 <Info>After installing or updating your software, please restart JupyterLab.</Info>
 
 If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/jupyterlab">submit this form</a> and we'll get back to you!
