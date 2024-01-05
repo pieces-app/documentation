@@ -19,9 +19,11 @@ export const SingleCard = props => {
 };
 
 export const ButtonLink = props => (
-  <a className="dark:bg-white bg-black dark:text-white text-black p-[12px]" style={{textDecoration: "none"}} target="_blank" href={props.href}>
-    {props.children}
-  </a>
+  <div>
+    <a className="dark:bg-white bg-black dark:text-white text-black p-[12px]" style={{textDecoration: "none"}} target="_blank" href={props.href}>
+      {props.children}
+    </a>
+  </div>
 );
 
 export const MiniSpacer = () => {
@@ -36,22 +38,12 @@ export const MiniSpacer = () => {
 
 <SingleCard>
   <div className={'flex p-4 justify-between'}>
+    <div>
     GitHub Issues
+    </div>
 
     <ButtonLink href="https://github.com/pieces-app/support/issues">
       Go to issues
-    </ButtonLink>
-  </div>
-</SingleCard>
-
-<MiniSpacer></MiniSpacer>
-
-<SingleCard>
-  <div className={'flex p-4 justify-between'}>
-    GitHub Discussions
-
-    <ButtonLink href="https://github.com/pieces-app/support/discussions">
-      Go to discussions
     </ButtonLink>
   </div>
 </SingleCard>
