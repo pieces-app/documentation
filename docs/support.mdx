@@ -110,6 +110,28 @@ export const HeaderImage = props => {
     </picture>
 }
 
+export const SingleCard = props => {
+  return (
+    <div style={{
+      width: '100%',
+      boxSizing: 'border-box',
+      padding: '10px',
+      margin: '0 auto',
+      backgroundColor: '#f8f9fa',
+      borderRadius: '5px',
+      boxShadow: '0 2px 5px rgba(0, 0, 0, 0.15)'
+    }}>
+      {props.children}
+    </div>
+  );
+};
 
 # Support Center
 
+<SingleCard>
+  GitHub Issues
+</SingleCard>
+
+<SingleCard>
+  Form
+</SingleCard>
