@@ -36,12 +36,12 @@
     {
       "title": "Community",
       "icon": "users",
-      "link": "https://code.pieces.app/community"
+      "link": "/community"
     },
     {
       "title": "Support",
       "icon": "question-circle",
-      "link": "https://code.pieces.app/support"
+      "link": "/support"
     }
   ],
   "sidebar": [
