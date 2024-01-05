@@ -18,6 +18,12 @@ export const SingleCard = props => {
   );
 };
 
+export const ButtonLink = props => (
+  <a className="dark:bg-white bg-black dark:text-white text-black" style={{textDecoration: "none"}} target="_blank" href={props.href}>
+    {props.children}
+  </a>
+);
+
 export const MiniSpacer = () => {
   return <div style={{ height: "16px"}}></div>
 };
@@ -30,10 +36,18 @@ export const MiniSpacer = () => {
 
 <SingleCard>
   GitHub Issues
+
+  <ButtonLink href="https://github.com/pieces-app/support/issues">
+    Go to issues
+  </ButtonLink>
 </SingleCard>
 
 <MiniSpacer></MiniSpacer>
 
 <SingleCard>
   GitHub Discussions
+
+  <ButtonLink href="https://github.com/pieces-app/support/discussions">
+    Go to discussions
+  </ButtonLink>
 </SingleCard>
