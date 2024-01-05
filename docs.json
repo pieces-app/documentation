@@ -95,8 +95,7 @@
     ["\uD83C\uDF0E Community & More", [
       ["Frequently Asked Questions", "/faq"],
       ["Privacy Policy", "/privacy-policy"],
-      ["Terms", "/terms"],
-      ["Our Community", "/our-community"]
+      ["Terms", "/terms"]
     ]]
   ],
   "variables": {
