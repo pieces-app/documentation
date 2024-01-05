@@ -34,24 +34,14 @@
       "link": "https://news.pieces.app"
     },
     {
-      "title": "YouTube Channel",
-      "icon": "youtube",
-      "link": "https://youtube.com/@getpieces"
+      "title": "Community",
+      "icon": "users",
+      "link": "https://code.pieces.app/community"
     },
     {
-      "title": "Discord",
-      "icon": "discord",
-      "link": "https://discord.gg/getpieces"
-    },
-    {
-      "title": "Open Source",
-      "icon": "unlock",
-      "link": "https://github.com/pieces-app/opensource"
-    },
-    {
-      "title": "Contact Support",
-      "icon": "headset",
-      "link": "https://getpieces.typeform.com/to/mCjBSIjF#page=docs-sidebar"
+      "title": "Support",
+      "icon": "question-circle",
+      "link": "https://code.pieces.app/support"
     }
   ],
   "sidebar": [
