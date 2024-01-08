@@ -3,32 +3,70 @@ title: Pieces for Developers | Support
 description: Pieces for Developers Support
 ---
 
-export const SingleCard = props => {
+export const ButtonLink = (
+  {
+    href,
+    children,
+  }
+) => (
+  <a style={{textDecoration: "none"}} href={href}>
+    <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px"}}>
+      {children}
+    </div>
+  </a>
+);
+
+export const SingleCard = (
+  {
+    icon,
+    title,
+    link: {
+     href,
+     text,
+    },
+    children
+  }
+) => {
   return (
     <div className="dark:text-white text-black" style={{
       padding: "0px 16px",
       borderRadius: "16px",
       border: "1px solid #BEBEBE",
     }}>
-      {props.children}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "-16px"
+        }}
+      >
+        <div style={{
+          display: "flex",
+          marginBottom: "-16px",
+        }}>
+          { icon }
+
+          <div
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              margin: "-16px 0px 0px 16px",
+            }}
+          >
+            { title }
+          </div>
+        </div>
+
+        <ButtonLink href={href}>
+          { text }
+        </ButtonLink>
+      </div>
+
+      { children }
     </div>
   );
 };
-
-export const ButtonLink = props => (
-  <div
-    style={{
-      borderRadius: "12px",
-    }}
-  >
-    <a
-      target="_blank"
-      href={props.href}
-    >
-      {props.children}
-    </a>
-  </div>
-);
 
 export const MiniSpacer = () => {
   return <div style={{ height: "16px"}}></div>
@@ -44,44 +82,19 @@ Here is where you can find quick solutions for your questions or needs, or reach
 
 If you still cannot find an answer to your question or solution to your issue, please use one of the following options to get in touch with the Pieces team.
 
-<SingleCard>
-  <div
-    style={{
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      marginBottom: "-16px"
-    }}
-  >
-    <div style={{
-      display: "flex",
-      marginBottom: "-16px",
-    }}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" style={{
-        marginTop: "16px",
-      }}>
-        <circle cx="20" cy="20" r="17" stroke="currentColor" strokeWidth="5"/>
-        <circle cx="20" cy="20" r="6" fill="currentColor"/>
-      </svg>
-
-      <div
-        style={{
-          fontSize: "24px",
-          fontWeight: "bold",
-          margin: "-16px 0px 0px 16px",
-        }}
-      >
-        GitHub Issues
-      </div>
-    </div>
-
-    <a style={{textDecoration: "none"}} href={'https://github.com/pieces-app/support/issues'}>
-      <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px"}}>
-        Go to Issues
-      </div>
-    </a>
-  </div>
-
+<SingleCard
+  icon={
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" style={{ marginTop: "16px" }}>
+      <circle cx="20" cy="20" r="17" stroke="currentColor" strokeWidth="5"/>
+      <circle cx="20" cy="20" r="6" fill="currentColor"/>
+    </svg>
+  }
+  title="GitHub Issues"
+  link={{
+    href: "https://github.com/pieces-app/support/issues",
+    text: "Go an Issues"
+  }}
+>
   Our goal is to create a community-driven support experience. We invite you to check out our Github Issues to search for similar issues or submit your own.
 
   We are very active in that community and you should get a response quickly.
