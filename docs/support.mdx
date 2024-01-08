@@ -5,8 +5,7 @@ description: Pieces for Developers Support
 
 export const SingleCard = props => {
   return (
-    <div className="dark:text-white text-black" style={{
-      borderRadius: "16px",
+    <div className="dark:text-white text-black p-4 rounded-2xl" style={{
       border: "1px solid #BEBEBE",
     }}>
       {props.children}
@@ -37,7 +36,7 @@ Here is where you can find quick solutions for your questions or needs, or reach
 If you still cannot find an answer to your question or solution to your issue, please use one of the following options to get in touch with the Pieces team.
 
 <SingleCard>
-  <div className={'flex p-4 justify-between'}>
+  <div className={'flex justify-between'}>
     <div>
     GitHub Issues
     </div>
