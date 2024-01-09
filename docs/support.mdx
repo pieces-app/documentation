@@ -9,7 +9,12 @@ export const ButtonLink = (
     children,
   }
 ) => (
-  <a style={{textDecoration: "none"}} href={href}>
+  <a
+    style={{
+      textDecoration: "none",
+      border: "1px solid #BEBEBE"
+    }}
+    href={href}>
     <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px"}}>
       {children}
     </div>
@@ -99,13 +104,28 @@ If you still cannot find an answer to your question or solution to your issue, p
   We are very active in that community and you should get a response quickly.
 </SingleCard>
 
-## [GitHub Issues](https://github.com/pieces-app/support/issues)
-
-Our goal is to create a community-driven support experience. We invite you to check out our GitHub Issues to search for similar issues or submit your own.
-
-## [GitHub Discussions](https://github.com/pieces-app/support/discussions)
+<SingleCard
+  icon={
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+      <g clipPath="url(#clip0_2_40)">
+        <path d="M30 8V22H10.34L8 24.34V8H30ZM32 4H6C4.9 4 4 4.9 4 6V34L12 26H32C33.1 26 34 25.1 34 24V6C34 4.9 33.1 4 32 4ZM42 12H38V30H12V34C12 35.1 12.9 36 14 36H36L44 44V14C44 12.9 43.1 12 42 12Z" fill="black"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_2_40">
+          <rect width="48" height="48" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  }
+  title="GitHub Discussions"
+  link={{
+    href: "https://github.com/pieces-app/support/discussions"
+  }}
+>
 
 We welcome new feature ideas, general questions about Pieces, and other community conversations on our GitHub Discussion Board.
+
+</SingleCard>
 
 <hr/>
 
