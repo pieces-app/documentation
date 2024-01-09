@@ -12,10 +12,11 @@ export const ButtonLink = (
   <a
     style={{
       textDecoration: "none",
-      border: "1px solid #BEBEBE"
+      border: "1px solid #BEBEBE",
+      borderRadius: "12px"
     }}
     href={href}>
-    <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px"}}>
+    <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", padding: "4px 20px"}}>
       {children}
     </div>
   </a>
