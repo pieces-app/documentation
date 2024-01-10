@@ -34,24 +34,14 @@
       "link": "https://news.pieces.app"
     },
     {
-      "title": "YouTube Channel",
-      "icon": "youtube",
-      "link": "https://youtube.com/@getpieces"
+      "title": "Community",
+      "icon": "users",
+      "link": "/community"
     },
     {
-      "title": "Discord",
-      "icon": "discord",
-      "link": "https://discord.gg/getpieces"
-    },
-    {
-      "title": "Open Source",
-      "icon": "unlock",
-      "link": "https://github.com/pieces-app/opensource"
-    },
-    {
-      "title": "Contact Support",
-      "icon": "headset",
-      "link": "https://getpieces.typeform.com/to/mCjBSIjF#page=docs-sidebar"
+      "title": "Support",
+      "icon": "question-circle",
+      "link": "/support"
     }
   ],
   "sidebar": [
@@ -64,13 +54,13 @@
     ["\uD83D\uDD0C Apps & Plugins", [
       ["Chrome Extension", "/extensions-plugins/chrome"],
       ["Edge Addon", "/extensions-plugins/edge"],
+      ["Firefox Addon", "/extensions-plugins/firefox"],
       ["Jetbrains Plugin", "/extensions-plugins/jetbrains"],
-      ["VSCode Extension", "/extensions-plugins/vscode"],
+      ["VS Code Extension", "/extensions-plugins/vscode"],
+      ["Azure Data Studio", "/extensions-plugins/azuredatastudio"],
       ["Obsidian Plugin", "/extensions-plugins/obsidian"],
       ["JupyterLab Extension", "/extensions-plugins/jupyterlab"],
-      ["Microsoft Teams App", "/extensions-plugins/teams"],
-      ["Firefox Addon", "/extensions-plugins/firefox"],
-      ["Azure Data Studio", "/extensions-plugins/azuredatastudio"]
+      ["Microsoft Teams App", "/extensions-plugins/teams"]
     ]],
     ["⚙️ Product Features", [
       ["Auto Enrichment", "/features/auto-enrichment"],
@@ -91,6 +81,7 @@
     ["✨ Highlights & Benefits",[
       ["Connecting to a Remote Pieces OS Instance", "/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance"],
       ["In-Project Snippet Discovery", "/product-highlights-and-benefits/in-project-snippet-discovery"],
+      ["Sync Across Devices with GitHub", "/product-highlights-and-benefits/sync-across-multiple-devices-using-github"],
       ["Privacy & Security", "/product-highlights-and-benefits/privacy-security-data"],
       ["Save Developer Materials", "/product-highlights-and-benefits/saving-useful-developer-materials"],
       ["Save Screenshots & Extract Code", "/product-highlights-and-benefits/saving-screenshots"],
@@ -102,11 +93,10 @@
       ["Onboard New Developers", "/use-cases/onboard-new-developers"],
       ["Resurface Additional Context", "/use-cases/resurfacing-additional-context"]
     ]],
-    ["\uD83C\uDF0E Community & More", [
+    ["\uD83C\uDF0E FAQs & More", [
       ["Frequently Asked Questions", "/faq"],
       ["Privacy Policy", "/privacy-policy"],
-      ["Terms", "/terms"],
-      ["Our Community", "/our-community"]
+      ["Terms", "/terms"]
     ]]
   ],
   "variables": {

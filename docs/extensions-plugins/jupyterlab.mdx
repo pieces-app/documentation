@@ -41,51 +41,39 @@ export const InstallButton = props => {
   </a>
 }
 
-export const Spacer = props => {
-    return <div style={{ height: "25px" }}></div>
-}
+export const MiniSpacer = props => {
+    return <div style={{ height: "16px"}}></div>
+};
 
-<ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
+<Warning>Known Installation Issues: The latest version of the extension does not currently install correctly. Please use `pip install jupyter-pieces==1.8.1` instead</Warning>
+
+<MiniSpacer></MiniSpacer>
 
 # Your Guide to Getting Started with the Pieces for JupyterLab Extension
 
-_Pieces For Developers captures **NO identifiable user data**. Our **Local-only** architecture means your notes never have to leave your device._
+<ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
+
+_Pieces For Developers captures **NO identifiable user data**. Our **Local-only** architecture means your data never has to leave your device._
 
 _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the JupyterLab Extension for it to work properly._
 
-## Ways to Install
+## Installation Instructions
 ---
 
-<Accordion title="Install Using Pip">
 1. Run this command:
     ```sh
-    pip install -U jupyter-pieces 
+    pip install jupyter-pieces==1.8.1
     ```
 2. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
 <Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
-</Accordion>
-
-<Spacer></Spacer>
-
-<Accordion title="Install via PYPI">
-1. Search for `jupyter-pieces`
-2. Follow the installation instructions:
-    ```sh
-    pip install -U jupyter-pieces
-    ```
-3. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
-
-<Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
-</Accordion>
-<Spacer></Spacer>
-
 
 ## Newest Features
 
 ---
 
-### Pieces Copilot 
+
+### Pieces Copilot powered by qGPT
 - Make sure Pieces OS is open and updated to the latest available version.
 - To view the Copilot, open the Pieces JupyterLab Extension and click the bot logo on the top slider to switch to Copilot
 - Interact with the Pieces Copilot and receive answers that are specific to your notebooks.
@@ -152,11 +140,11 @@ Open the Pieces View from the Ribbon Menu.
   alt="Example of generating a shareable link for a snippet."
 />
 
-_Pieces hosts all of your snippets for seamless sharing._
+_Pieces stores all of your snippets for seamless sharing._
 
-## Embedded Buttons
+## Embedded Button
 
-Pieces adds **embedded buttons** into your markdown files to help you save, copy, & share your code snippets.
+Pieces adds an **embedded button** into your code cells.
 
 <Image
   zoom
@@ -202,7 +190,7 @@ If you need to download and install Pieces OS, please <a target="_blank" href="h
 - The latest version of the Pieces for Developers JupyterLab Extension
 - Pieces OS version 5.0.0 or higher
 - JupyterLab version 4.0.0 or higher
-
+docs.
 <Info>After installing or updating your software, please restart JupyterLab.</Info>
 
 If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/jupyterlab">submit this form</a> and we'll get back to you!
