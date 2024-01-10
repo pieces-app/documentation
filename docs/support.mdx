@@ -1,0 +1,132 @@
+---
+title: Pieces for Developers | Support
+description: Pieces for Developers Support
+---
+
+export const ButtonLink = (
+  {
+    href,
+    children,
+  }
+) => (
+  <a
+    style={{
+      textDecoration: "none",
+    }}
+    href={href}>
+    <div style={{ background: "black", color: "white", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", border: "1px solid #BEBEBE", borderRadius: "12px", padding: "4px 20px"}}>
+      {children}
+    </div>
+  </a>
+);
+
+export const SingleCard = (
+  {
+    icon,
+    title,
+    link: {
+     href,
+     text,
+    },
+    children
+  }
+) => {
+  return (
+    <div className="dark:text-white text-black" style={{
+      padding: "0px 16px",
+      borderRadius: "16px",
+      border: "1px solid #BEBEBE",
+    }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingTop: "16px",
+        }}
+      >
+        <div style={{
+          display: "flex",
+        }}>
+          { icon }
+
+          <div
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginLeft: "12px",
+            }}
+          >
+            { title }
+          </div>
+        </div>
+
+        <ButtonLink href={href}>
+          { text }
+        </ButtonLink>
+      </div>
+
+      { children }
+    </div>
+  );
+};
+
+export const MiniSpacer = () => {
+  return <div style={{ height: "16px"}}></div>
+};
+
+# Welcome to the Pieces for Developers Support Hub
+
+We love documentation! This page is where you can find quick solutions for your questions or needs.
+
+<Info>
+  Please use the navigation links to the left to explore our product specific Help, Tutorials, Power Tips, and How to Videos.
+</Info>
+
+Didn’t find what you were looking for? We’ve got you covered!
+
+<SingleCard
+  icon={
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="17" stroke="currentColor" strokeWidth="5"/>
+      <circle cx="20" cy="20" r="6" fill="currentColor"/>
+    </svg>
+  }
+  title="GitHub Issues"
+  link={{
+    href: "https://github.com/pieces-app/support/issues",
+    text: "Go to Issues"
+  }}
+>
+  Our goal is to create a community-driven support experience. We invite you to check out our [Github Issues](https://github.com/pieces-app/support/issues) to discover if your issue has been reported already, or to submit your own.
+
+  We are very active in our user community and will respond quickly.
+</SingleCard>
+
+<MiniSpacer/>
+
+<SingleCard
+  icon={
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+      <g clipPath="url(#clip0_2_40)">
+        <path d="M25 6.66665V18.3333H8.61667L6.66667 20.2833V6.66665H25ZM26.6667 3.33331H5C4.08334 3.33331 3.33334 4.08331 3.33334 4.99998V28.3333L10 21.6666H26.6667C27.5833 21.6666 28.3333 20.9166 28.3333 20V4.99998C28.3333 4.08331 27.5833 3.33331 26.6667 3.33331ZM35 9.99998H31.6667V25H10V28.3333C10 29.25 10.75 30 11.6667 30H30L36.6667 36.6666V11.6666C36.6667 10.75 35.9167 9.99998 35 9.99998Z" fill="currentColor"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_2_40">
+          <rect width="40" height="40" fill="currentColor"/>
+        </clipPath>
+      </defs>
+    </svg>
+  }
+  title="GitHub Discussions"
+  link={{
+    href: "https://github.com/pieces-app/support/discussions",
+    text: "Go to Discussions"
+  }}
+>
+  We also welcome new feature ideas, general questions about Pieces, and other community conversations on our [Github Discussion Board](https://github.com/pieces-app/support/discussions).
+</SingleCard>
+
+## Still need help? Our support team is here to help!
+
+If you prefer to not use GitHub, please [submit a support ticket](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-support). We appreciate your feedback and will respond to you shortly!
