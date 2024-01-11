@@ -223,10 +223,10 @@
   #### From the start, everything we build at Pieces is designed with utmost security and privacy in mind. We believe that your data is yours, and we are committed to keeping it that way. As a result, you can choose between local and cloud-based LLMs, depending on your security needs and preferences.
   #### Currently, we have available Llama 2 to run either on your device's CPU or GPU, and GPT-3.5, GPT-4, and PaLM 2 to run via the cloud. We are continuously working on expanding our LLM offerings, so stay tuned for more updates!
   > #### Local LLM Recommendations
-  > - GPU LLM's are designed for machines with a modern, dedicated
+  > - GPU LLMs are designed for machines with a modern, dedicated
   graphics chip (i.e: ARM Mac, NVIDIA GPU with 6gb VRAM or more)
   > - CPU models are recommended if you do not have a strong enough
-  graphics card for the GPU LLM's. Be aware this model will be as slow or
+  graphics card for the GPU LLMs. Be aware this model will be as slow or
   as fast as your machine specs allow. 
   > - CLOUD models are recommended if performance issues arise while
   using the local models (for older or lower powered machines).
