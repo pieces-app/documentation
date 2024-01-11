@@ -47,7 +47,7 @@
 [Product Highlights & Benefits]: #product-highlights--benefits
 [Solve coding problems faster with Copilot Chats]: #solve-coding-problems-faster-with-copilot-chats
 [Contextualized and Continuous Learning]: #contextualized-and-continuous-learning
-[Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, and PaLM 2]: #local-and-cloud-based-llms-llama-2-gpt-35-gpt-4-and-palm-2
+[Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2]: #local-and-cloud-based-llms-llama-2-gpt-35-gpt-4-and-palm-2
 
 <!-- (1.1) Saving Useful Developer Materials -->
 [Saving Useful Developer Materials]: #saving-useful-developer-materials
@@ -155,7 +155,7 @@
 - ### Section: [Product Highlights & Benefits]
   - **[Solve coding problems faster with Copilot Chats]**
     - [Contextualized and Continuous Learning]
-    - [Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, and PaLM 2]
+    - [Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2]
   - **[Saving Useful Developer Materials]**
     - [Single Click Save]
     - [Suggested Save and On-Device Pattern Engine]
@@ -213,15 +213,15 @@
 
 ## Solve coding problems faster with Copilot Chats
 #### Introducing Copilot Chats, an advanced feature of our Azure Data Studio Extension, crafted to seamlessly integrate with your unique development workflow. The Pieces Copilot is not just a tool; it's a workflow assistant that adapts to your style, learning from your interactions to provide highly personalized, context-aware assistance.
-#### Powered by on-device machine learning, as well as your choice of local and cloud-based LLMs (i.e. Llama 2, GPT-3.5, GPT-4, and PaLM 2), Pieces Copilot offers a blend of coding efficiency, accuracy, and personalized support that understands the nuances of your work, enhancing your coding experience irrespective of the task complexity.
+#### Powered by on-device machine learning, as well as your choice of local and cloud-based LLMs (i.e. Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2), Pieces Copilot offers a blend of coding efficiency, accuracy, and personalized support that understands the nuances of your work, enhancing your coding experience irrespective of the task complexity.
 - ### Contextualized and Continuous Learning
   #### Pieces Copilot excels in offering highly contextualized support. By analyzing your codebase and interactions in real-time, it delivers tailored suggestions, code optimization tips, and contextually generated code, all based on your unique coding patterns and project requirements.
   #### Pieces Copilot leverages user-defined contexts, such as local files, folders, and snippets, for code generation and interactive assistance. Set your context as chat messages, specific repositories, or saved code snippets to ensure that Copilot's support is precisely aligned with your needs.
 
 
-- ### Local and Cloud-Based LLMs (Llama 2, GPT-3.5, GPT-4, and PaLM 2)
+- ### Local and Cloud-Based LLMs (Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2)
   #### From the start, everything we build at Pieces is designed with utmost security and privacy in mind. We believe that your data is yours, and we are committed to keeping it that way. As a result, you can choose between local and cloud-based LLMs, depending on your security needs and preferences.
-  #### Currently, we have available Llama 2 to run either on your device's CPU or GPU, and GPT-3.5, GPT-4, and PaLM 2 to run via the cloud. We are continuously working on expanding our LLM offerings, so stay tuned for more updates!
+  #### Currently, we have available Llama 2 to run either on your device's CPU or GPU, and GPT-3.5, GPT-4, Gemini, and PaLM 2 to run via the cloud. We are continuously working on expanding our LLM offerings, so stay tuned for more updates!
   > #### Local LLM Recommendations
   > - GPU LLMs are designed for machines with a modern, dedicated
   graphics chip (i.e: ARM Mac, NVIDIA GPU with 6gb VRAM or more)
