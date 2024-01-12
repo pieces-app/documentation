@@ -47,7 +47,7 @@
 [Product Highlights & Benefits]: #product-highlights--benefits
 [Solve coding problems faster with Copilot Chats]: #solve-coding-problems-faster-with-copilot-chats
 [Contextualized and Continuous Learning]: #contextualized-and-continuous-learning
-[Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2]: #local-and-cloud-based-llms-llama-2-gpt-35-gpt-4-and-palm-2
+[Local and Cloud-Based LLMs - Llama 2, GPT-3.5, GPT-4, Gemini, and PaLM 2]: #local-and-cloud-based-llms-llama-2-gpt-35-gpt-4-gemini-and-palm-2
 
 <!-- (1.1) Saving Useful Developer Materials -->
 [Saving Useful Developer Materials]: #saving-useful-developer-materials
