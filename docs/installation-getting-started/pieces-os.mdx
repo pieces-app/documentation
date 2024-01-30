@@ -12,7 +12,7 @@ export const InstallButton = props => {
     <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
       <p style={{
         padding: "8px 20px",
-        borderRadius: "8px",
+        borderRadius: "12px",
         border: "1px solid #f3f5f6",
         backgroundColor: "black",
         color: "white",
@@ -51,9 +51,68 @@ Pieces OS operates as a background service that functions both offline and on-de
 
 ![Pieces Ecosystem](https://storage.googleapis.com/pieces_multimedia/ILLUSTRATIONS/PIECES_FOR_DEVELOPERS/ANY_INTEGRATION/ANY_THEME/PLUGINS/1X1/PIECES_FOR_DEVELOPERS-ANY_INTEGRATION-PLUGINS-ANY_THEME-1X1-10_16_2023.PNG)
 
-
-
 Pieces OS enables Pieces products to operate 100% locally on your machine, with an option to connect to the cloud for [backup](https://docs.pieces.app/features/back-up-and-restore), [sharing](https://docs.pieces.app/features/one-click-snippet-sharing), and some cloud-only ML models.
+
+
+## Pieces OS Installation Methods
+
+<Info>Downloading Pieces OS by itself is not recommended, but is the right solution for specific situations. [Download Pieces Desktop + Pieces OS together](https://docs.pieces.app/installation-getting-started/what-am-i-installing) for the most ideal experience.</Info>
+
+<Accordion title={"Windows"}>
+    If you aren't sure which of these you need, click "Download Pieces Suite Installer" above - it will install both applications and manage them as updates are released.
+
+    If this isn't your first rodeo, here is the list of downloadable files for windows:
+
+    - [Pieces OS](/installation-getting-started/pieces-os) Appinstaller (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/appinstaller/os_server.appinstaller)
+
+    - Pieces for Developers Desktop App Appinstaller (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/appinstaller/pieces_for_x.appinstaller)
+
+    - [Pieces OS](/installation-getting-started/pieces-os) EXE (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/os_server/windows-exe/download)
+
+    - Pieces for Developers Desktop App EXE (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download)
+
+</Accordion>
+
+<MiniSpacer></MiniSpacer>
+
+<Accordion title={"MacOS"}>
+    If you aren't sure which of these you need, check your computer's processor:
+
+    1. Click the Apple logo in the top left corner of your screen
+    2. Select "About this Mac"
+    3. Check "Chip" in the window that pops up.
+
+    If you have an Intel chip, select the Intel package above. Those with Apple M1 or M2 chips should select the "Apple Silicon" package.
+
+    If this isn't your first rodeo, here is the list of downloadable files for macOS:
+
+    - [Pieces OS](/installation-getting-started/pieces-os) DMG (Standalone Mac) | [Download Here](https://builds.pieces.app/stages/production/os_server/dmg/download)
+
+    - Pieces for Developers Desktop App DMG (Standalone Mac) | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/dmg/download)
+
+    - [Pieces OS](/installation-getting-started/pieces-os) DMG ARM64 (Standalone Mac) | [Download Here](https://builds.pieces.app/stages/production/os_server/dmg-arm64/download)
+
+    - Pieces for Developers Desktop App DMG ARM64 (Standalone Mac) | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/dmg-arm64/download)
+
+
+    Note: You can also install Pieces via Homebrew.
+    1. Ensure you have [installed](https://docs.brew.sh/Installation) Homebrew in your system
+    2. Run the following command in your terminal to Install the Pieces brew package
+    ```shell
+    brew install --cask pieces
+    ```
+    [Save to Pieces](https://snippets.pieces.cloud/?p=f23c48bd96)
+    3. The above command will install the Pieces-OS cask as well. Once the package is install successfully, you can start to run Pieces OS and the Pieces for Developers application.
+
+
+</Accordion>
+
+<MiniSpacer></MiniSpacer>
+
+<Accordion title={"Linux"}>
+Currently we only provide one installation method for downloading and installing Pieces OS for Linux. In order to download, [check out the snap store here.](https://snapcraft.io/pieces-os).
+</Accordion>
+
 
 ## Core Features of Pieces OS
 
