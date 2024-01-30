@@ -66,7 +66,6 @@
       ["Auto Enrichment", "/features/auto-enrichment"],
       ["Back Up & Restore", "/features/back-up-and-restore"],
       ["Code Completion", "/features/code-completion"],
-      ["Plugin Copilot", "/features/copilot-plugin"],
       ["Creating & Generating Code", "/features/creation-and-generation"],
       ["Global Search", "/features/global-search"],
       ["Keyboard Shortcuts", "/features/keyboard-shortcuts"],
