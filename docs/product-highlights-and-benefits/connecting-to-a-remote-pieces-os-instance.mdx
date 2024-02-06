@@ -11,6 +11,8 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 > - This is currently only available for the Pieces for Developers VS Code extension. Functionality for the rest of the Pieces for Developers ecosystem is coming soon.
 
+<Info>If Pieces OS is running on the same machine as VS Code, there should be no requirement to use this feature. Please verify these steps are required for your set up before following this guide. This custom URL is not the same thing as your Pieces Cloud custom url.</Info>
+
 ## Use Cases
 
 - [GitHub Codespaces](https://github.com/features/codespaces)
@@ -27,25 +29,33 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 ### Reverse Proxy Tunnel
 
-> - [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS
+> - In the case that Pieces OS shares the same LAN with your remote VS Code instance, you should use the LAN IP address of your machine and not ngrok.
+> - [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
 
 We recommend using a static ngrok URL which you can claim by following [this guide](https://ngrok.com/blog-post/free-static-domains-ngrok-users).
 
 <Tabs
   defaultValue={"static-url"}
   values={[
+    {label: 'LAN IP Address', value: 'lan-ip-address'},
     {label: 'Static URL', value: 'static-url'},
     {label: 'Generated URL', value: 'generated-url'},
   ]}
 >
+  <TabItem value="lan-ip-address">
+    1. Ensure that there is not a firewall in place that will block connection between two machines on your LAN.
+    2. Locate your machine's LAN IP address
+      a. If possible, you should also set up a DHCP IP reservation for your machine running Pieces OS so this IP address will not change in the future.
+    3. For linux your custom url will be `http://{'{LAN IP ADDRESS}'}:5323` and on MacOS or windows it will be `http://{'{LAN IP ADDRESS}'}:1000`
+  </TabItem>
   <TabItem value="static-url">
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: `ngrok http --domain=STATIC_URL_HERE 1000`
+    2. Run the following command on your machine’s terminal: (windows and macos)`ngrok http --domain=STATIC_URL_HERE 1000` (linux)`ngrok http --domain=STATIC_URL_HERE 5323`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
   <TabItem value={"generated-url"}>
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: `ngrok http 1000`
+    2. Run the following command on your machine’s terminal: (windows and macos)`ngrok http 1000` (linux)`ngrok http 5323`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
 </Tabs>
