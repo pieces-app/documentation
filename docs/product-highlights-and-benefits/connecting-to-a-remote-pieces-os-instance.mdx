@@ -5,13 +5,13 @@ description: Utilize the Pieces for Developers VS Code extension in a remote dev
 
 # Connecting to a Remote Pieces OS Instance
 
+<Info>If Pieces OS is running on the same machine as VS Code, there should be no requirement to use this feature. Please verify these steps are required for your set up before following this guide. This custom URL is not the same thing as your Pieces Cloud custom url.</Info>
+
 Through multiple user support tickets, we have noticed that many of our users are using the Pieces for Developers VS Code extension in a remote development environment.
 
 This guide will walk you through how to connect to a remote Pieces OS instance using the Pieces for Developers VS Code extension.
 
 > - This is currently only available for the Pieces for Developers VS Code extension. Functionality for the rest of the Pieces for Developers ecosystem is coming soon.
-
-<Info>If Pieces OS is running on the same machine as VS Code, there should be no requirement to use this feature. Please verify these steps are required for your set up before following this guide. This custom URL is not the same thing as your Pieces Cloud custom url.</Info>
 
 ## Use Cases
 
@@ -35,7 +35,7 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 We recommend using a static ngrok URL which you can claim by following [this guide](https://ngrok.com/blog-post/free-static-domains-ngrok-users).
 
 <Tabs
-  defaultValue={"static-url"}
+  defaultValue={"lan-ip-address"}
   values={[
     {label: 'LAN IP Address', value: 'lan-ip-address'},
     {label: 'Static URL', value: 'static-url'},
