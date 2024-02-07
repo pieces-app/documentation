@@ -46,11 +46,15 @@ We recommend using a static ngrok URL which you can claim by following [this gui
     1. Ensure that there is not a firewall in place that will block connection between two machines on your LAN.
     2. Locate your machine's LAN IP address
       a. If possible, you should also set up a DHCP IP reservation for your machine running Pieces OS so this IP address will not change in the future.
-    3. For linux your custom url will be `http://{'{LAN IP ADDRESS}'}:5323` and on MacOS or windows it will be `http://{'{LAN IP ADDRESS}'}:1000`
+    3. Your custom URL will be:
+      a. Linux: `http://{'{LAN IP ADDRESS}'}:5323`
+      b. MacOS or Windows: `http://{'{LAN IP ADDRESS}'}:1000`
   </TabItem>
   <TabItem value="static-url">
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: (windows and macos)`ngrok http --domain=STATIC_URL_HERE 1000` (linux)`ngrok http --domain=STATIC_URL_HERE 5323`
+    2. Run the following command on your machine’s terminal: 
+      a. (windows and macos)`ngrok http --domain=STATIC_URL_HERE 1000` 
+      b. (linux)`ngrok http --domain=STATIC_URL_HERE 5323`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
   <TabItem value={"generated-url"}>
