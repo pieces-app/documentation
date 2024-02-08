@@ -13,12 +13,49 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 > - This is currently only available for the Pieces for Developers VS Code extension. Functionality for the rest of the Pieces for Developers ecosystem is coming soon.
 
+
+### Windows Subsystem for Linux (WSL)
+
+> - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) must be installed and configured on your machine
+
+This integration should work out of the box with WSL. If you are having trouble connecting, please see the [Troubleshooting](#troubleshooting) section for steps on how to set up an inbound firewall rule.
+
+
+### VS Code Dev Containers
+
+As of the 1.12.0 release of the extension, Dev Container environments should also work with no extra configuration required. Once again, if you have trouble connecting please see [Troubleshooting](#troubleshooting).
+
+## Troubleshooting
+
+### Pieces OS is not connecting on WSL
+
+For WSL users, if the connection does not work automatically, you might have to set up an inbound firewall rule to allow the connection.
+
+1. Open Windows Firewall: Press `Win + R`, search `firewall.cpl`, and press Enter.
+2. In the left pane, click on `Advanced settings` to open the Windows Firewall with Advanced Security.
+3. In the left pane, click on `Inbound Rules`.
+4. On the right pane, click on `New Rule`.
+5. Rule Type: Select `Port` and click Next.
+6. Protocol and Ports: Choose `TCP` and specify port number `1000`. Click Next.
+7. Action: Select `Allow the connection` and click Next.
+8. Profile: Choose Public, Private, and Domain for the profile.
+9. Name: Give the rule a name like `Local Devices on Port 1000`, and click Finish.
+
+### Pieces OS is not connecting on Dev Containers
+
+For Dev Container users, if the connection does not work automatically, there are a couple of troubleshooting steps to take.
+
+1. You must ensure that Pieces OS is running *before* launching VS Code. Please try starting Pieces OS and then reloading your VS Code window.
+  a. see [this guide](#reloading-your-vs-code-window) for how to reload VS Code
+2. Similarly to the [WSL troubleshooting guide](#pieces-os-is-not-connecting-on-wsl) above, there may be a firewall that is blocking requests between machines on your LAN. Try setting up an inbound firewall rule on the machine running Pieces OS to resolve this.
+  a. for Windows and MacOS the rule should be placed on port 1000
+  b. on linux, the rule should be placed on port 5323
+
+
 ## Use Cases
 
 - [GitHub Codespaces](https://github.com/features/codespaces)
-- [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about)
 - [SSH connection](https://code.visualstudio.com/docs/remote/ssh)
-- [Development Containers](https://code.visualstudio.com/docs/devcontainers/containers)
 
 ## Prerequisites
 
@@ -27,12 +64,11 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 ## Getting Started
 
-### Reverse Proxy Tunnel
+### Using the Custom URL Feature to Access a Remote Pieces OS Instance
 
-> - In the case that Pieces OS shares the same LAN with your remote VS Code instance, you should use the LAN IP address of your machine and not ngrok.
-> - [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
-
-We recommend using a static ngrok URL which you can claim by following [this guide](https://ngrok.com/blog-post/free-static-domains-ngrok-users).
+> - In the case that Pieces OS shares the same LAN with your remote VS Code instance, you should use the LAN IP address of your machine that is running Pieces OS.
+> - In the case that Pieces OS is not on the same LAN as your development environment [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
+> - The custom URL feature has no connection to your custom Pieces Cloud domain, attempting to use your custom Pieces Cloud domain i.e: https://caleb.pieces.cloud will result in the VS Code extension ceasing to function properly.
 
 <Tabs
   defaultValue={"lan-ip-address"}
@@ -76,7 +112,7 @@ Now we will set up your Pieces VS Code extension to connect to your machine with
 2. Go to VS Code Settings `CMD/CTRL + ,`
 3. Ensure that you have the `Workspace` tab selected
 4. Search `pieces custom url`
-5. Paste your ngrok forwarding URL in the input for `Pieces: Custom Url`
+5. Paste your new forwarding URL in the input for `Pieces: Custom Url`
 
 <Image zoom alt="Configuring your VS Code extension to talk to a remote Pieces OS instance" src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/LINK_SHARING/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-LINK_SHARING-MACOS-16X9-11_27_2023.GIF" />
 
@@ -89,25 +125,3 @@ Now we will reload your VS Code window to ensure that your Pieces VS Code extens
 3. Select `Developer: Reload Window`
 
 <Image zoom alt="Reloading the VS Code window" src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/REFRESH_TREE_VIEW/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-REFRESH_TREE_VIEW-MACOS-16X9-11_27_2023.GIF" />
-
-### Windows Subsystem for Linux (WSL)
-
-> - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) must be installed and configured on your machine
-
-This integration should work out of the box with WSL. If you are having trouble connecting, please see the [Troubleshooting](#troubleshooting) section for steps on how to set up an inbound firewall rule.
-
-## Troubleshooting
-
-### Pieces OS is not connecting on WSL
-
-For WSL users, if the connection does not work automatically, you might have to set up an inbound firewall rule to allow the connection.
-
-1. Open Windows Firewall: Press `Win + R`, search `firewall.cpl`, and press Enter.
-2. In the left pane, click on `Advanced settings` to open the Windows Firewall with Advanced Security.
-3. In the left pane, click on `Inbound Rules`.
-4. On the right pane, click on `New Rule`.
-5. Rule Type: Select `Port` and click Next.
-6. Protocol and Ports: Choose `TCP` and specify port number `1000`. Click Next.
-7. Action: Select `Allow the connection` and click Next.
-8. Profile: Choose Public, Private, and Domain for the profile.
-9. Name: Give the rule a name like `Local Devices on Port 1000`, and click Finish.
