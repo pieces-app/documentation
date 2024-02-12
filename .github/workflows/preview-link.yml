@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Comment Pull Request
-        uses: thollander/actions-comment-pull-request@v2.4.2
+        uses: thollander/actions-comment-pull-request@v2.4.3
         with:
           message: |
             :wave: Preview link --> https://docs.pieces.app/~${{ github.event.pull_request.number }}
