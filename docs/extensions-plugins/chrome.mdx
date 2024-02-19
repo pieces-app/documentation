@@ -4,7 +4,9 @@ description: Learn about the Pieces Chrome Extension, how it functions, and what
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/chrome" />
-
+export const ChromeLogo = props  => {
+    return {{ marginTop: "0px", marginBottom: "1em", width: "50%" }} src={ "/assets/chrome_logo.png" }/>
+}
 export const InstallButton = props => {
     return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.chrome }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
