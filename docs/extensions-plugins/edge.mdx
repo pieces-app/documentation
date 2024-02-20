@@ -4,7 +4,9 @@ description: Troubleshoot issues before reaching out to Pieces support to get as
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/edge" />
-
+export const EdgeLogo = props => {
+    return <img style ={{marginTop: "0px", marginBottom: "1em", width: "50%"}} src={"/assets/edge_logo.png}/>
+}
 export const InstallButton = props => {
     return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.edge }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
