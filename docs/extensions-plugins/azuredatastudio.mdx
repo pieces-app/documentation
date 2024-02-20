@@ -4,7 +4,9 @@ description: Learn about the Pieces Azure Data Studio Extension, how it function
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/azuredatastudio" />
-
+export const AzureLogo = props => {
+    return <img style ={{marginTop: "0px", marginBottom: "1em", width: "50%"}} src={"/assets/ads_logo.png}/>
+}
 export const InstallButton = props => {
     return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.azureds }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
