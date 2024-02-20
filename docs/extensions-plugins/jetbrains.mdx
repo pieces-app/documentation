@@ -4,7 +4,9 @@ description: Troubleshoot issues on your own before reaching out to Pieces suppo
 ---
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/jetbrains" />
-
+export const JetBrainsLogo = props => {
+    return <img style ={{marginTop: "0px", marginBottom: "1em", width: "50%"}} src={"/assets/jetbrains_logo.png}/>
+}
 export const InstallButton = props => {
     return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.jetbrains }}">
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
