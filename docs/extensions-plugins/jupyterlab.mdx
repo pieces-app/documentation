@@ -42,7 +42,15 @@ export const InstallButton = props => {
     </div>
   </a>
 }
+<GridFlexRowBaseline>
+<JupyterLabLogo src="/assets/jupyterlab_logo.png"></JupyterLabLogo>
+    <h1>Pieces JupyterLab Plugin</h1>
+</GridFlexRow Baseline>
 
+<GridFlexRow>
+    <InstallButton>Get the JupyterLab Plugin</InstallButton>
+    <ReleasePill children="Current Version: {{ versions.jupyterlab }}"></ReleasePill>
+</GridFlexRow>
 # Your Guide to Getting Started with the Pieces for JupyterLab Extension
 
 <ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
@@ -79,7 +87,7 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
 Select any text within a code cell in your notebook, right-click, and add a useful description to it.
 
 ### Realtime Streaming
-Any changes you make across any Pieces integration (e.g., the Pieces Desktop App, the Pieces VS Code Extension, the Pieces JetBrains Plugin, etc.) will automatically be reflected in the JupyterLab plugin.
+Any changes you make across any Pieces integration (e.g., the Pieces Desktop App, the Pieces VS Code Extension, the Pieces JupyterLab Plugin, etc.) will automatically be reflected in the JupyterLab plugin.
 
 ## Save your Snippets
 
