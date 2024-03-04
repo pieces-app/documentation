@@ -1,0 +1,110 @@
+---
+title: Privacy, Security & Your Data | Pieces
+description:  Let's jump in and touch on privacy, data, cloud-based features, and our ML models.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data" />
+
+# Privacy, Security, & Your Data
+From Day 1 of engineering Pieces for Developers, we've had a first principle that everything is local first and built with speed, privacy, security, and offline-productivity in mind.
+
+We also know that our partners **operate in highly secure and sensitive environments**, and we want to be prepared to operate in such environments, e.g., HIPAA, SOC 2, FERPA/COPPA, etc. That being said - we can't tell you how happy we are that we have stayed true to this philosophy for cases just like yours!
+
+## Where Snippets are Stored
+Your snippets are stored completely locally on your device. This is what the path looks like for an installation on MacOS:
+
+### macOS
+
+```/Users/[YOUR-USERNAME]/Library/com.pieces.os/```
+
+### Windows
+
+```C:/Users/[YOUR-USERNAME]/Documents/com.pieces.os/```
+
+### Linux
+
+```/Users/[YOUR-USERNAME]/Documents/com.pieces.os/```
+
+You can easily copy this directory to a flash drive and bring it to another computer.
+
+
+## We are SOC 2 Compliant!
+
+![SOC 2 Compliance Badge](/assets/soc-2-badge.png)
+
+SOC 2 is a prestigious benchmark in the tech industry, especially important for companies like ours. It verifies that we meet strict organizational controls and practices, enhancing our credibility and trustworthiness in the market.
+
+This achievement is a collective triumph for our team, reflecting our dedication to maintaining a secure and reliable service. It's an essential step forward in our mission to provide word class developer tools.
+
+## Our Machine Learning Models
+Our ML models can be completely local and offline (i.e., they're shipped within the application's binary & require no internet) as long as you opt out of blended processing.
+
+If you have **not opted out of blended processing,** then some of the models will offload computation to the cloud. A few of our models are **only** available in the cloud, but we are working on making them local.
+
+
+This table shows which models are available locally and which will use cloud compute unless processing is set to local.
+| **Model**                      	| **Local** 	| **Blended** 	|
+|--------------------------------	|-----------	|-------------	|
+| Code vs Text                   	|      ✅    	|       ✅     	|
+| Coding language classification 	|      ✅     	|       ✅     	|
+| Code Similarity                	|      ✅     	|       ❌     	|
+| Description Generation         	|      ✅     	|       ✅      |
+| Framework Detection            	|      ✅     	|       ✅      |
+| Image to text (OCR)            	|      ✅     	|       ✅     	|
+| Link Extraction                	|      ✅     	|       ❌     	|
+| Neural Code Search             	|      ✅     	|       ❌      |
+| Related Links                  	|      🚧    	|       ✅      |
+| Suggested tags from tags       	|      ✅    	|       ❌     	|
+| Suggested Save                 	|      ✅    	|       ❌     	|
+| Snippet Discovery              	|      ✅    	|       ❌     	|
+| Secret Detection               	|      ✅    	|       ✅     	|
+| Search Queries                  	|      🚧    	|       ✅     	|
+| Tag Generation                 	|      ✅     	|       ✅      |
+| Title Generation               	|      ✅     	|       ✅      |
+
+
+Our ML models are not trained continuously. They do not train on your data as you use the product!
+
+## Saving Code Snippets in the Cloud
+The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (now owned by Okta).
+
+Even when a user signs in, they do not have a cloud until they specifically connect it in their Settings.
+
+If a user opts into the cloud, the data is only uploaded when something is shared.
+
+When you click the "Share" icon and create a shareable link, only then is the snippet uploaded and accessible via the cloud.
+
+Finally, a note on cloud architecture for the things that are backed up:
+- There is no centralized database; each user has their own micro-database
+- There are no centralized or shared servers
+- Each user has their own Cloud Run instance, with their own unique subdomain and their own micro load balancer
+
+Every user's cloud scales up and down completely independent of other users. The cloud is only running when a shared snippet is being accessed, backed up, or updated, and we can easily port our docker images over to an existing "Panasonic Cloud" if needed.
+
+## Telemetry & Crash Data
+Most importantly, all data collection is opt-out and we give all the control to our users.
+
+The data that we do collect is completely anonymous and highly secure (we take data very seriously).
+
+### Why do we collect data?
+Long story short, we're a seed stage startup and the data helps us to report on overall growth and hopefully help us earn more funding.
+
+Here are some screenshots of Telemetry opt-outs from the Pieces products:
+
+#### Pieces for Developers Desktop App
+
+![](/assets/pfd_telemetry.png)
+
+#### Pieces for IntelliJ
+
+![](/assets/intellij_telemetry.png)
+
+#### Pieces for VS Code
+
+![](/assets/vscode_telemetry.png)
+
+#### Pieces for Chrome
+
+![](/assets/chrome_telemetry.png)
+
+If you have any other questions about privacy and security, please reach out! We want to make choosing Pieces as easy for you as possible.

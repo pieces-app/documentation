@@ -50,7 +50,7 @@ export const GridFlexRow = props => {
 };
 
 export const HeaderLogoImage = props => {
-    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/jetbrains_logo.png" }/>
+    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "../assets/jetbrains_logo.png" }/>
 }
 
 <GridFlexRow>
@@ -65,7 +65,7 @@ export const HeaderLogoImage = props => {
 ## Installing the Pieces for Developers VS Code Extension
 <Info>In order to use the Pieces VS Code Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
 
-You can install the VS Code Extension through the <a target="blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Marketplace</a> or by searching for Pieces in the plugins search of your IDE. 
+You can install the VS Code Extension through the <a target="blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the extension, you'll have to restart VS Code before using Pieces.
 
@@ -91,13 +91,13 @@ Utilize a powerful Copilot integrated into your IDE, bringing your development t
 ## Save snippets with Pieces for VS Code
 To save code to Pieces from VS Code, simply highlight the snippet and save with:
 1. Keyboard Shortcut
- 
+
     - Windows: ```Shift + CTRL + V```
- 
+
     - MacOS: ```Shift + CMD + V```
 
 2. Right Click
- 
+
     - Right-click and select "Save to Pieces"
 
 ## View Saved Snippets
@@ -137,15 +137,15 @@ If you'd like to automatically save your explored materials to your Pieces repos
 
 ## Related Materials to Current Selection
 
-Pieces can discover related snippets to the code in your editor, even if you're curious about code that isn't a Pieces snippet. To find related materials: 
+Pieces can discover related snippets to the code in your editor, even if you're curious about code that isn't a Pieces snippet. To find related materials:
 
 1. Highlight some code in your editor
-2. Right-click and select “Find Related Materials in Pieces” 
+2. Right-click and select “Find Related Materials in Pieces”
 3. Pieces will search your saved snippets and display any related materials in the Side Panel so that you can easily add them to your project.
 
 ## Connect Account
 
-From this section of the sidebar, you can connect to (and disconnect from) your Pieces account without opening the Pieces for Developers desktop app. You'll need to be connected to your Pieces account in order to generate shareable links and explore materials. 
+From this section of the sidebar, you can connect to (and disconnect from) your Pieces account without opening the Pieces for Developers desktop app. You'll need to be connected to your Pieces account in order to generate shareable links and explore materials.
 
 ## Edit snippets in VS Code
 
@@ -172,7 +172,7 @@ To search for a snippet:
 To import your User Snippets from VS Code to Pieces, click "Import User Snippets to Pieces" in this section.
 
 ### Auto-complete
-To enable/disable auto-complete in this extension, you can check/uncheck the box in this section of the VS Code extension settings. 
+To enable/disable auto-complete in this extension, you can check/uncheck the box in this section of the VS Code extension settings.
 
 To change the auto-complete key:
 
@@ -183,74 +183,74 @@ To change the auto-complete key:
 Save your settings, and you're good to go!
 
 ### Auto-Expansion
-If you choose to enable this option, your snippet list will be automatically expanded to match the language of your active file. 
+If you choose to enable this option, your snippet list will be automatically expanded to match the language of your active file.
 
 ### Automatically Copy Link
-This setting enables automatic copying for generated Pieces links. If enabled, you won't need to copy a Pieces link before sharing it with a teammate or friend. 
+This setting enables automatic copying for generated Pieces links. If enabled, you won't need to copy a Pieces link before sharing it with a teammate or friend.
 
 ### Auto-Save
-If you choose to enable auto-save, Pieces will automatically save highly re-used and potentially useful snippets while you work. This cuts down on the number of snippets you need to save manually and helps to prevent searching for code in all of your files. 
+If you choose to enable auto-save, Pieces will automatically save highly re-used and potentially useful snippets while you work. This cuts down on the number of snippets you need to save manually and helps to prevent searching for code in all of your files.
 
 ### Cloud Capabilities
 Here you can choose which type of ML models you'd like to use in Pieces for VS Code: Cloud, Local, or Blended. To learn more about the types of ML models and their privacy implications, [visit this section of our documentation](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data#our-machine-learning-models).
 
 ### Display
-In this section, you can choose what aspect of your snippets to display in the snippet list. 
+In this section, you can choose what aspect of your snippets to display in the snippet list.
 
 - **Name**: Displays the title of the snippet
 - **Description**: Displays the snippet's description
 - **Preview**: Displays a preview of the code within the snippet
 
 ### Explored Snippet Insights
-This section of the settings covers your Explored Snippets. If you choose to Document with Pieces Insights, exploration results will be added above the snippet as a comment. 
+This section of the settings covers your Explored Snippets. If you choose to Document with Pieces Insights, exploration results will be added above the snippet as a comment.
 
 <Info>If you choose to Explore and Save, any explored snippets will be automatically saved to your Pieces repository.</Info>
 
 ### Launch Pieces OS
-If Pieces OS isn't running, you can launch it from the settings page instead of from your Applications folder. 
+If Pieces OS isn't running, you can launch it from the settings page instead of from your Applications folder.
 
 ### Notifications
-The Pieces for Developers VS Code Extension can throw a lot of notifications. To help make your experience less noisy, you can choose the notifications you'd like to see in this section of the user settings. 
+The Pieces for Developers VS Code Extension can throw a lot of notifications. To help make your experience less noisy, you can choose the notifications you'd like to see in this section of the user settings.
 
-- **All Notifications**: You'll see all notifications, including success notifications, suggestion notifications, and failure notifications. 
+- **All Notifications**: You'll see all notifications, including success notifications, suggestion notifications, and failure notifications.
 - **Only Critical Notifications**: You'll only see critical notifications, such as failure notifications.
 
 ### Auto-Save Related Materials Selection
-If you choose to check this box, any code that you select to search for related materials will be saved to your Pieces repository. 
+If you choose to check this box, any code that you select to search for related materials will be saved to your Pieces repository.
 
 ### Git Context
-In this section of the settings, you can control the Git context associated with your snippets. Pick if you'd like to include information from your Git history, commit links, and commit people here. 
+In this section of the settings, you can control the Git context associated with your snippets. Pick if you'd like to include information from your Git history, commit links, and commit people here.
 
-### Search 
-In this section, you can customize your search experience in VS Code. 
+### Search
+In this section, you can customize your search experience in VS Code.
 
-#### Search By 
-Pick your search parameters! In search by, you can decide if your search will match the characters in your snippets' titles, tags, code contents, or combinations of the three. 
+#### Search By
+Pick your search parameters! In search by, you can decide if your search will match the characters in your snippets' titles, tags, code contents, or combinations of the three.
 
 #### Search Display
 Here, select what you'd like to display in your search results: Title, tags, and code, or title, tags, and description.
 
-### Search Result Action 
-Finally, choose what you want to happen when you select a search result: 
+### Search Result Action
+Finally, choose what you want to happen when you select a search result:
 
 - Open in overview
 - Insert snippet at cursor position
-- Open in overview and copy to clipboard 
-- Copy to clipboard 
+- Open in overview and copy to clipboard
+- Copy to clipboard
 
-### Share Feedback 
-You can share bug reports or other feedback by selecting the Share Feedback link in this section. 
+### Share Feedback
+You can share bug reports or other feedback by selecting the Share Feedback link in this section.
 
 ### Side Panel Views
-Decide if you'd like for the following sections to show up in your Pieces Side Panel: 
+Decide if you'd like for the following sections to show up in your Pieces Side Panel:
 
-- Explored Materials 
-- Related Materials 
-- Saved Materials 
-- Suggested Materials 
+- Explored Materials
+- Related Materials
+- Saved Materials
+- Suggested Materials
 
-### Telemetry 
-By unchecking this box, you revoke permission to share analytics with the Pieces development team. 
+### Telemetry
+By unchecking this box, you revoke permission to share analytics with the Pieces development team.
 
 ## Having Trouble with Pieces for VS Code?
 
@@ -263,13 +263,13 @@ If the VS Code extension isn't working for you, please make sure you have the fo
 
 ## Uninstalling the Pieces for VS Code Extension
 
-To uninstall Pieces for VS Code: 
+To uninstall Pieces for VS Code:
 
 1. Visit the Extensions tab on your sidebar
 2. Select the Settings icon next to the Pieces for VS Code Extension
 3. Select uninstall
 
-In order for Pieces to be completely uninstalled from VS Code, you'll need to restart your IDE. 
+In order for Pieces to be completely uninstalled from VS Code, you'll need to restart your IDE.
 
 ## Support and Community
 

@@ -1,0 +1,171 @@
+---
+title: Pieces for Developers | Wiki & Docs
+description: Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
+---
+
+export const QuoteCallout = props => {
+    return <div style={{padding: "5px 30px", borderRadius: "20px"}}>
+        <p><strong>" </strong><i>{props.children}</i><strong> "</strong></p>
+    </div>
+}
+
+export const InstallButtonWindows = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for Windows</p>
+        </div>
+    </a>
+}
+
+export const InstallButtonMac = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
+            { props.children }
+            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for macOS</p>
+        </div>
+    </a>
+};
+
+export const InstallButtonLinux = props => {
+    return <a style={{textDecoration: "none"}} href={ props.src }>
+        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "12px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
+            { props.children }
+            <p style={{color: "white", marginLeft: "8px"}}>See for Linux</p>
+        </div>
+    </a>
+}
+
+export const ReleasePill = props => {
+    return <a target="_blank" style={{textDecoration: "none"}}
+              href={props.src}>
+        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "12px",
+                   border: "1px solid #f3f5f6",
+                   fontWeight: "500",
+                   background: "transparent",
+                   marginBottom: "8px",
+                   marginTop: "3px",
+                   marginRight: "16px"
+               }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const JumpButtons = props => {
+    return <a target="_blank" style={{textDecoration: "none", marginRight: "18px"}} href={props.src}>
+        <div style={{maxWidth: "275px", minWidth: "150px", textAlign: "center"}}>
+            <p class="dark:text-white text-black"
+               style={{
+                   padding: "8px 20px",
+                   borderRadius: "8px",
+                   border: "1px solid #f3f5f6",
+                   backgroundColor: "transparent",
+                   fontWeight: "500",
+                   marginBottom: "8px",
+                   marginTop: "3px"
+               }}>{props.children}</p>
+        </div>
+    </a>
+}
+
+export const PillsFlexColumn = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const GridFlexRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'start',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const GridFlexSpaceEvenlyRow = props => {
+    return <div style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        flexWrap: "wrap"
+    }}>{props.children}</div>;
+};
+
+export const Spacer = props => {
+    return <div style={{height: "16px"}}></div>
+}
+
+export const HeaderImage = props => {
+    return <picture>
+        <source srcSet={props.srcset} media="(prefers-color-scheme: dark)"/>
+        <img src={props.src}/>
+    </picture>
+}
+
+
+# Wiki & Documentation Center
+
+<HeaderImage src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/ROBOT_SEARCH_WIKI_HEADER.png"
+             srcset="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/ROBOT_SEARCH_WIKI_HEADER.png"></HeaderImage>
+
+## Download the Pieces for Developers Desktop App
+
+<Spacer></Spacer>
+
+<GridFlexRow>
+    <InstallButtonWindows src="/installation-getting-started/windows">
+        <Image width="20px" src={"/assets/windows_logo_old.png"} />
+    </InstallButtonWindows>
+    <InstallButtonMac src="/installation-getting-started/macos">
+        <Image width="20px" src={"/assets/mac_os.png"} />
+    </InstallButtonMac>
+    <InstallButtonLinux src="/installation-getting-started/linux">
+        <Image width="20px"src={"/assets/linux_logo.png"} />
+    </InstallButtonLinux>
+</GridFlexRow>
+
+## Use with your favorite tools
+
+<GridFlexSpaceEvenlyRow>
+    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
+    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
+</GridFlexSpaceEvenlyRow>
+
+<Spacer></Spacer>
+
+## Some Quick Background Context
+
+In 2022, our team set out on a journey to build the most advanced code snippet management and workflow context platform yet.
+
+The debut release of our <a href="https://docs.pieces.app/installation-getting-started/what-am-i-installing">Desktop App</a> aimed to take developer productivity to the next level by incorporating key capabilities and our users' favorite features directly into their IDE.
+
+Effortlessly **save**, **enrich**, **search**, **share**, **reference**, and **reuse** code snippets, workflow context, and other useful developer resources.
+
+<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/RIGHT-CLICK_SAVE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RIGHT-CLICK_SAVE-MACOS-16X9-5_18_2023.GIF" />
+
+## Trusted by the World's Best Developers
+
+![Logos of the companies where some of our users work.](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/TRUSTED_BY_SOME_OF_THE_WORLDS_BEST_DEVELOPERS_LEFT_ALIGNED)
+
+From students and indie developers, to startups and open source teams, to enterprise organizations and beyond, **Pieces for Developers** is purpose-built as a cohesive layer and a "tool between tools" that boosts productivity in three major workflow processes: researching and problem-solving in the browser, working with colleagues in collaborative environments, and writing, reviewing, referencing, and reusing code in the IDE.
+
+We are a venture-backed company supported by some of the world's best investors. Our products & company are secure and continuing to grow.
+
+Our **Flagship Desktop App** provides users a first-in-kind feature set that ambitiously augments your development workflows.
+
+<QuoteCallout>We are a venture-backed company supported by some of the world's best investors. Our products & company
+    are secure and continuing to grow.</QuoteCallout>
+
