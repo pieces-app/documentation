@@ -6,7 +6,7 @@ const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
   favicon: 'img/favicon.ico',
-  staticDirectories: ['docs/assets'],
+  staticDirectories: ['static', 'docs/assets'],
 
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
@@ -30,30 +30,53 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // plugins: [
+  plugins: [
     // [
-    //   "docusaurus-plugin-openapi-docs",
+    //   '@docusaurus/plugin-client-redirects',
     //   {
-    //     id: "openapi",
-    //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
-    //     config: {
-    //       sdk: { // "petstore" is considered the <id> that you will reference in the CLI
-    //         specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-    //         outputDir: "api/sdk", // output directory for generated *.mdx and sidebar.js files
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-    //         },
+    //     fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
+    //     toExtensions: ['exe', 'zip'], // /myAsset -> /myAsset.zip (if latter exists)
+    //     redirects: [
+    //       // /docs/oldDoc -> /docs/newDoc
+    //       {
+    //         to: '/docs/newDoc',
+    //         from: '/docs/oldDoc',
+    //       },
+    //       // Redirect from multiple old paths to the new path
+    //       {
+    //         to: '/docs/newDoc2',
+    //         from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
+    //       },
+    //     ],
+    //     createRedirects(existingPath) {
+    //       if (existingPath.includes('/community')) {
+    //         // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+    //         return [
+    //           existingPath.replace('/community', '/docs/team'),
+    //           existingPath.replace('/community', '/docs/support'),
+    //         ];
     //       }
-    //     }
+    //       return undefined; // Return a falsy value: no redirect created
+    //     },
     //   },
     // ],
-    // [
-    //   '@docusaurus/plugin-google-tag-manager',
-    //   {
-    //     containerId: 'GTM-K8C6QWB',
-    //   },
-    // ]
-  // ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi",
+        docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
+        config: {
+          sdk: {
+            specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
+            outputDir: "docs/api/sdk", // output directory for generated *.mdx and sidebar.js files
+            sidebarOptions: {
+              groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+            },
+          }
+        }
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -61,28 +84,33 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
+          // docItemComponent: "@theme/ApiItem"
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/pieces-app/documentation/tree/main/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   editUrl:
+        //     'https://github.com/pieces-app/documentation/tree/main/',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'GTM-K8C6QWB',
+          anonymizeIP: true,
+        }
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    // TODO: Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    // announcementBar: {
+    //   id: 'support_us',
+    //   content: 'Testing'
+    // },
     navbar: {
       title: 'Pieces for Developers',
       logo: {
@@ -97,8 +125,8 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          to: '/blog',
-          label: 'Blog',
+          to: '/api',
+          label: 'API',
           position: 'left'
         },
         {
@@ -107,11 +135,6 @@ const config: Config = {
           position: 'right',
         },
       ],
-    },
-    algolia: {
-      appId: 'KTOXFODR65',
-      apiKey: '79c81e52460257d3761ea38438e29637',
-      indexName: 'pieces',
     },
     footer: {
       style: 'dark',
@@ -145,10 +168,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/pieces-app/documentation',
@@ -158,9 +181,23 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Mesh Intelligent Technologies, Inc. All rights reserved.`,
     },
+
+    themes: ["docusaurus-theme-openapi-docs"],
+    stylesheets: [
+      {
+        href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
+        type: "text/css",
+      },
+    ],
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      appId: 'KTOXFODR65',
+      apiKey: '79c81e52460257d3761ea38438e29637',
+      indexName: 'pieces',
     },
   } satisfies Preset.ThemeConfig,
 };
