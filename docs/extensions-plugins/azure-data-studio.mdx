@@ -3,10 +3,13 @@ title: Pieces for Developers Azure Data Studio Extension
 description: Learn about the Pieces Azure Data Studio Extension, how it functions, and all you can do with this powerful extension in ADS from Microsoft.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/azuredatastudio" />
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.azureds }}">
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.azure_data_studio}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -58,27 +61,22 @@ export const GridFlexRowBaseline = props => {
     }}>{props.children}</div>;
 };
 
-export const HeaderLogoImage = props => {
-    return <img style={{ marginTop: "0px", marginBottom: "1em", width: "50%" }} src={ "/assets/ads_logo.png" }/>
-}
-
 export const Spacer = props => {
     return <div style={{ width: "8px"}}></div>
 };
 
 <GridFlexRow>
-    <h1>Pieces Azure Data Studio Extension</h1>
-</GridFlexRow>
-
-<GridFlexRow>
     <InstallButton>Get the Azure Extension</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.azureds }}"></ReleasePill>
 </GridFlexRow>
 
 ## Installing the Extension
-<Info>In order to use the Pieces for Azure Database Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
+:::info
 
-You can install the Azure Extension by [downloading it from this link](https://builds.pieces.app/stages/staging/plugin_vscode/ads-vsix/download) or by searching for Pieces in the plugins search of your IDE.
+In order to use the Pieces for Azure Database Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.
+
+:::
+
+You can install the Azure Extension by <a href={pieces_app.links.extensions.azure_data_studio}>downloading it from this link</a> or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the extension, you'll have to restart ADS before using Pieces. Currently, we only support installing via VSIX package in ADS.
 
@@ -94,14 +92,10 @@ Once you complete those steps, you should see a README.md for getting started wi
 ## Save snippets with Pieces for ADS
 To save a query from a database, simply highlight the query and save with:
 1. Keyboard Shortcut
-
- - Windows: ```Shift + CTRL + V```
-
- - MacOS: ```Shift + CMD + V```
-
+    - Windows: ```Shift + CTRL + V```
+    - MacOS: ```Shift + CMD + V```
 2. Right Click
-
- - Right-click and select "Save to Pieces" in the context menu
+    - Right-click and select "Save to Pieces" in the context menu
 
 ## View Saved Snippets
 To view your full list of code snippets in your IDE:
@@ -138,7 +132,11 @@ To revisit Explored Materials, visit the section titled “Explored Materials & 
 
 If you'd like to automatically save your Explored Materials to your Pieces repository, toggle on “Explore and Save” in your extension settings.
 
-<Info>In order to explore materials, you must be connected to your Pieces Cloud.</Info>
+:::info
+
+In order to explore materials, you must be connected to your Pieces Cloud.
+
+:::
 
 ## Related Materials to Current Selection
 
@@ -205,7 +203,11 @@ In this section, you can choose what aspect of your snippets to display in the s
 ### Explored Snippet Insights
 This section of the settings covers your Explored Snippets. If you choose to Document with Pieces Insights, exploration results will be added above the snippet as a comment.
 
-<Info>If you choose to Explore and Save, any explored snippets will be automatically saved to your Pieces repository.</Info>
+:::info
+
+If you choose to Explore and Save, any explored snippets will be automatically saved to your Pieces repository.
+
+:::
 
 ### Launch Pieces OS
 If Pieces OS isn't running, you can launch it from the settings page instead of from your Applications folder.
@@ -260,7 +262,11 @@ If the Azure Data Studio extension isn't working for you, please make sure you h
 - The latest version of Pieces for Azure Data Studio
 - Pieces OS version 7.0.0 or higher
 
-<Info>After installing or updating your software, please restart Azure Data Studio . If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).</Info>
+:::info
+
+After installing or updating your software, please restart Azure Data Studio. If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).
+
+:::
 
 ## Uninstalling the Pieces for Azure Data Studio Extension
 
@@ -274,5 +280,5 @@ In order for Pieces to be completely uninstalled from Azure Data Studio, you'll 
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Open Source Program](https://github.com/pieces-app/opensource)

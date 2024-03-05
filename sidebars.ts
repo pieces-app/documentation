@@ -175,11 +175,6 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
-          label: 'Sync Across Devices with GitHub',
-        },
-        {
-          type: 'doc',
           id: 'product-highlights-and-benefits/saving-screenshots',
           label: 'Save Screenshots & Extract Code',
         },
@@ -187,6 +182,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'product-highlights-and-benefits/saving-useful-developer-materials',
           label: 'Save Developer Materials',
+        },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
+          label: 'Sync Across Devices with GitHub',
         },
       ]
     },

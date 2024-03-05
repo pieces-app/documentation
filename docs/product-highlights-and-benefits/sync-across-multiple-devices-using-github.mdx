@@ -7,7 +7,11 @@ description: Follow this guide to get started with manually syncing your code sn
 
 # Sync Across Multiple Devices using GitHub
 
-<Info>This is a manual process and is still in early beta. If you have any issues with the process below, please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).</Info>
+:::info
+
+This is a manual process and is still in early beta. If you have any issues with the process below, please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).
+
+:::
 
 This guide uses VS Code, since it is free and the steps for configuration are not too advanced. This can be replicated using any version control flow that you use.
 
@@ -47,7 +51,6 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 
     # If you use another software that adds files to the project root
     # Add them here
-
     ```
 7. Now go to your browser and follow these steps to create a private repository (We used GitHub but is similar on other VCSs):
     1. If you are using VS Code, you can **skip to step #7** because it will automatically create a new repository for you
@@ -62,7 +65,6 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
     8. Click "Create repository"
     9. Copy the HTTPS link that should be in the “Quick setup” section of the page
         - This will be used to set your Pieces snippet folder to this GitHub repository
-
 8. Now we will commit and push your snippets to the remote repository:
     1. Go to your IDE or terminal you have open from step #3
     2. Stage and commit all changes
@@ -133,5 +135,5 @@ In order to keep your snippets in sync between your computers, follow these step
 ## Important Notes
 - [Pieces OS should be completely turned off](https://docs.pieces.app/features/back-up-and-restore#step-1) during the entire syncing process
 - Both Pieces OS instances need to be on the same version for syncing to work properly
-- Local LLM models are not synced between computers so you will have to install them on your other computer
+- Local LLM models are not synced between computers, so you will have to install them on your other computer
 - If you are syncing Computer #1 to Computer #2 and there are any uncommitted changes on Computer #2, you must discard those changes.

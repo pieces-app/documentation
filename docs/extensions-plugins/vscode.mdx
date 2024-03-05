@@ -3,11 +3,13 @@ title: Pieces for Developers Visual Studio Code Extension
 description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers VS Code Extension.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import { Image } from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/vscode" />
 
-
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.vscode }}">
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.vscode }>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -49,23 +51,18 @@ export const GridFlexRow = props => {
     }}>{props.children}</div>;
 };
 
-export const HeaderLogoImage = props => {
-    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/jetbrains_logo.png" }/>
-}
-
-<GridFlexRow>
-    <h1>Pieces VS Code Extension</h1>
-</GridFlexRow>
-
 <GridFlexRow>
     <InstallButton>Get the VS Code Extension</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.vscode }}"></ReleasePill>
 </GridFlexRow>
 
 ## Installing the Pieces for Developers VS Code Extension
-<Info>In order to use the Pieces VS Code Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
+:::info
 
-You can install the VS Code Extension through the <a target="blank" href="https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode">VS Code Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
+In order to use the Pieces VS Code Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.
+
+:::
+
+You can install the VS Code Extension through the <a target="blank" href={pieces_app.links.extensions.vscode}>VS Code Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the extension, you'll have to restart VS Code before using Pieces.
 
@@ -73,31 +70,23 @@ Once you've installed the extension, you'll have to restart VS Code before using
 Utilize a powerful Copilot integrated into your IDE, bringing your development to the next level.
 
 1. **Ask Copilot**
-    - Ask the Copilot about a file, folder, snippet, code fragment, or terminal output. All available by right clicking, and then selecting 'Ask Copilot'
-<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/GLOBAL_COPILOT/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-GLOBAL_COPILOT-MACOS-16X9-1_10_2024.GIF" />
-
+    - Ask the Copilot about a file, folder, snippet, code fragment, or terminal output. All available by right-clicking, and then selecting 'Ask Copilot'.
+<Image src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/GLOBAL_COPILOT/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-GLOBAL_COPILOT-MACOS-16X9-1_10_2024.GIF" />
 2. **Pieces: Fix**
     - Integrated into the VS Code quick fix menu, when you have an error in your code, simply open the quick fix menu and select 'Pieces: Fix' to have the Copilot resolve your issue for you.
-<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/10-pieces-fix.gif" />
-
+<Image src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/10-pieces-fix.gif" />
 3. **Pieces: Comment & Pieces: Explain**
     - Each method in your code has a code lens (like git lens) that allows you to explain, or comment your code.
-<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-ANY_FEATURE-MACOS-16X9-1_10_2024.GIF" />
-
+<Image src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-ANY_FEATURE-MACOS-16X9-1_10_2024.GIF" />
 4. <a href='/features/copilot-plugin'>A familiar chat experience spread across all your favorite text editing softwares</a>
-
     - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Obsidian, and Jupyter Lab.
 
 ## Save snippets with Pieces for VS Code
 To save code to Pieces from VS Code, simply highlight the snippet and save with:
 1. Keyboard Shortcut
-
     - Windows: ```Shift + CTRL + V```
-
     - MacOS: ```Shift + CMD + V```
-
 2. Right Click
-
     - Right-click and select "Save to Pieces"
 
 ## View Saved Snippets
@@ -105,7 +94,6 @@ To view your full list of code snippets inside your IDE:
 
   1. Find the Pieces for Developers Icon in the sidebar tray
   2. Select the Pieces Icon and a sidebar viewer will open with all of your snippets in a language-based list
-
   - You can expand the list of snippets for each language by clicking on the name of the language.
 
 ### Preview Saved Snippets in Markdown
@@ -133,7 +121,11 @@ To revisit explored materials, visit the section titled “Explored Materials & 
 
 If you'd like to automatically save your explored materials to your Pieces repository, toggle on “Explore and Save” in your extension settings.
 
-<Info>In order to Explore Materials, you must be connected to your Pieces Cloud.</Info>
+:::info
+
+In order to Explore Materials, you must be connected to your Pieces Cloud.
+
+:::
 
 ## Related Materials to Current Selection
 
@@ -149,7 +141,7 @@ From this section of the sidebar, you can connect to (and disconnect from) your 
 
 ## Edit snippets in VS Code
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/EDIT_A_SNIPPET" />
+<Image src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/EDIT_A_SNIPPET" />
 
 Editing a snippet that is saved to Pieces for Developers from VS Code is easy! To edit a snippet, follow these steps:
 
@@ -159,7 +151,7 @@ Editing a snippet that is saved to Pieces for Developers from VS Code is easy! T
 4. Edit your snippet, then save by pressing ```CTRL + S``` or ```⌘ + S```
 
 ## Search for snippets in VS Code
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/SEARCH_AND_REUSE_VS_CODE" />
+<Image src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GIFs/SEARCH_AND_REUSE_VS_CODE" />
 To search for a snippet:
 
 1. Open an editable file in VS Code
@@ -204,7 +196,11 @@ In this section, you can choose what aspect of your snippets to display in the s
 ### Explored Snippet Insights
 This section of the settings covers your Explored Snippets. If you choose to Document with Pieces Insights, exploration results will be added above the snippet as a comment.
 
-<Info>If you choose to Explore and Save, any explored snippets will be automatically saved to your Pieces repository.</Info>
+:::info
+
+If you choose to Explore and Save, any explored snippets will be automatically saved to your Pieces repository.
+
+:::
 
 ### Launch Pieces OS
 If Pieces OS isn't running, you can launch it from the settings page instead of from your Applications folder.
@@ -259,7 +255,11 @@ If the VS Code extension isn't working for you, please make sure you have the fo
 - The latest version of Pieces for VS Code
 - Pieces OS version 5.0.0 or higher
 
-<Info>After installing or updating your software, please restart VS Code. If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).</Info>
+:::info
+
+After installing or updating your software, please restart VS Code. If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).
+
+:::
 
 ## Uninstalling the Pieces for VS Code Extension
 
@@ -273,5 +273,5 @@ In order for Pieces to be completely uninstalled from VS Code, you'll need to re
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

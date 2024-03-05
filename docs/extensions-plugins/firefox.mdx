@@ -3,10 +3,13 @@ title: Pieces Firefox Addon
 description: Learn about the Pieces Firefox Addon, how it functions, and what all you can do with this powerful addon in Mozilla Firefox.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import { Image } from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/firefox" />
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.firefox }}">
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.firefox}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -62,22 +65,21 @@ export const Spacer = props => {
     return <div style={{ width: "8px"}}></div>
 };
 
-<GridFlexRowBaseline>
-    <h1>Pieces Firefox Addon</h1>
-</GridFlexRowBaseline>
-
 <GridFlexRow>
     <InstallButton>Get the Firefox Addon</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.firefox }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Firefox Addon in parallel with the Pieces Desktop App makes it easier to save code as you move from website to website and brings your Pieces Copilot even closer to your workflow.
 
-<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-11_20_2023.GIF" />
+<Image src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-11_20_2023.GIF" />
 
 ## Installing the Addon
 
-<Info>In order to save code with the Pieces Firefox Addon, you must have <a target="blank" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a></Info>
+:::info
+
+In order to save code with the Pieces Firefox Addon, you must have <a target="blank" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a>
+
+:::
 
 To add the addon to Mozilla Firefox, visit our listing on the [Firefox Addons Marketplace](https://addons.mozilla.org/en-US/firefox/addon/pieces-save-code-from-the-web/).
 
@@ -128,13 +130,15 @@ There are a few reasons why the Pieces buttons may not be appearing:
     - If you need to download and install Pieces OS, [visit this link](https://docs.pieces.app/installation-getting-started/pieces-os).
 2. You disabled the Pieces buttons on that website.
     - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
-
-<Image zoom src="/assets/settings_for_chrome.png" />
-
+<Image src="/assets/settings_for_chrome.png" />
 3. This website doesn't have detectable code.
     - The code on this site might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-<Info>If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!</Info>
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
 
 ### Disabling the Pieces Buttons
 
@@ -149,7 +153,7 @@ To customize your Pieces Firefox Addon experience, click on the Pieces icon in t
 
 Hit the Settings icon in the top right and set your preferences as you can see here:
 
-<Image zoom src="/assets/theme_for_chrome.png" />
+<Image src="/assets/theme_for_chrome.png" />
 
 You can adjust the following Settings for the Pieces Firefox Addon:
 
@@ -174,5 +178,5 @@ To uninstall Pieces:
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

@@ -3,6 +3,9 @@ title: Auto-Enrichment of Developer Materials
 description: Learn how Pieces for Developers uses ML and AI to enrich your code snippets with relevant context and metadata.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/features/auto-enrichment" />
 
 # Auto-Enrichment
@@ -10,14 +13,14 @@ Pieces for Developers enriches your content as you save snippets and makes it ea
 
 [Learn how to Manage and Update Snippets and their Metadata](/features/managing-saved-materials)
 
-<Image alt={"Viewing automatically captured metadata in Pieces for Developers."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
+<Image alt={"Viewing automatically captured metadata in Pieces for Developers."} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/PFD_ORIGIN.gif" />
 
 ## View Metadata & Enrichment Details
 
-**Shortcut:** ` ⌘/CTRL + I `
+**Shortcut:** `⌘/CTRL + I`
 
 Pieces processes your saved materials completely in the background, giving you the ability to access more data around your resources and code snippets. You can view the information in the Pieces desktop app by:
-1. Pressing ` ⌘ + I ` or ` CTRL + I ` to access the Context View
+1. Pressing `⌘/CTRL + I` to access the Context View
 2. **In List View** clicking the "View All Context" button on the top right of the Context Preview
 3. **In Gallery View** clicking the "View All Context" icon in the bottom left corner
     - When hovering over this icon, click the gear to manage how often the overlay appears.
@@ -57,14 +60,14 @@ You can add the following Annotations to your snippets:
 
 ### Tags
 
-**Shortcut:** ` ⌘/CTRL + T `
+**Shortcut:** `⌘/CTRL + T`
 
-Open the Tags drawer by clicking on the tags section or by using the ` ⌘/CTRL + T ` shortcut. This will bring pull up a list of tags that were generated when you saved the resource, along with suggested tags that you can quickly add to the snippet.
+Open the Tags drawer by clicking on the tags section or by using the `⌘/CTRL + T` shortcut. This will bring pull up a list of tags that were generated when you saved the resource, along with suggested tags that you can quickly add to the snippet.
 
 To create a custom tag, start typing and hit enter to add any tag you'd like directly into the pre-existing tags list.
 
 Example Tags:
-``` HTTP Request ```, ``` Flutter Framework ```, ``` Dart Project ```, ``` Conditional For Loop ```
+`HTTP Request`, `Flutter Framework`, `Dart Project`, `Conditional For Loop`
 
 #### Types of Tags
 
@@ -86,7 +89,7 @@ To remove a tag:
 
 To cancel the deletion, press `Esc` to go back to the tags drawer
 
-**(Optional)** You can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this confirmation turned on to protect against accidental deletions.
+*(Optional)* You can press "Do not ask me again" to quickly delete a number of tags from a snippet, but we recommend keeping this confirmation turned on to protect against accidental deletions.
 
 [//]: # ([Read more about managing your settings]&#40;#&#41;)
 
@@ -94,16 +97,16 @@ To cancel the deletion, press `Esc` to go back to the tags drawer
 
 ### Related Links
 
-**Shortcut:** ` ⌘/CTRL + K `
+**Shortcut:** `⌘/CTRL + K`
 
-Related Links can be opened by clicking on the background of the Related Links section or via the ` ⌘/CTRL + K ` shortcut. Clicking any of the individual links directly will cause them to open in your browser.
+Related Links can be opened by clicking on the background of the Related Links section or via the `⌘/CTRL + K` shortcut. Clicking any of the individual links directly will cause them to open in your browser.
 
 Note: In the header of this section, you can see the total number of Related Links that you have.
 
-<Image alt={"Saving a snippet from Stack Overflow with the Pieces web extension"} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_LINKS_EXTERNAL_RESOURCES.gif" />
+<Image alt={"Saving a snippet from Stack Overflow with the Pieces web extension"} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_LINKS_EXTERNAL_RESOURCES.gif" />
 
 #### Managing Related Links
-From inside the Related Links drawer, you can add new links by typing or pasting them directly into the text box at the top. Not all text input will be accepted, so it is important to add **a full http url** such as: [https://docs.pieces.app/](https://docs.pieces.app/).
+From inside the Related Links drawer, you can add new links by typing or pasting them directly into the text box at the top. Not all text input will be accepted, so it is important to add **a full http url** such as: https://docs.pieces.app.
 
 You can quickly copy any link from inside the Related Links drawer by pressing the copy button on the right side of the Related Link pill.
 
@@ -124,7 +127,7 @@ To remove a specific link from its resource, inside the Related Links drawer:
     - You can also press ` Enter ` or ` Return `
 - To cancel the deletion, press ` Esc ` to go back to the Related Links drawer
 
-**(Optional)** You can press "Do not ask me again" to quickly delete a number of links from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
+*(Optional)* You can press "Do not ask me again" to quickly delete a number of links from a snippet, but we recommend keeping this setting turned on to protect against accidental deletions.
 
 ---
 
@@ -148,7 +151,7 @@ To facilitate communication among and between teams, Pieces for Developers attac
 
 To access Related People, you can click the Related People section or press the ` ⌘/CTRL + P ` shortcut.
 
-<Image alt={"Showing related people on a snippet with a shareable link."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
+<Image alt={"Showing related people on a snippet with a shareable link."} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/RELATED_PEOPLE.gif" />
 
 #### Managing Related People
 If a snippet is saved from a location that has no crossover with other users, it is likely that it will have the following message:
@@ -171,7 +174,7 @@ If a Related Person is added and you wish to remove them, you can do so by click
 ---
 
 ### Security Practices
-<Image alt={"Protecting Sensitive information from being shared."} zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
+<Image alt={"Protecting Sensitive information from being shared."} src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/SENSITIVE.gif" />
 
 Pieces for Developers facilitates security and programming best-practices by detecting sensitive information and warning against accidental uploads or sharing.
 

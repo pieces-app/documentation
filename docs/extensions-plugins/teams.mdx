@@ -3,10 +3,13 @@ title: Pieces Microsoft Teams App
 description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers Microsoft Teams App.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/teams" />
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.teams }}">
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.teams}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -56,14 +59,8 @@ export const Spacer = props => {
     return <div style={{ height: "100px"}}></div>
 };
 
-
-<GridFlexRow>
-    <h1>Pieces Microsoft Teams App</h1>
-</GridFlexRow>
-
 <GridFlexRow>
     <InstallButton>Get the Teams App</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.teams }}"></ReleasePill>
 </GridFlexRow>
 
 ## Welcome, Microsoft Teams Users!
@@ -77,7 +74,7 @@ _Important Note:_ You must create an account or sign in with the email you use f
 
 **Step 2:** Install Pieces for Microsoft Teams
 
-Install the [Pieces Microsoft Teams bot for personal use](https://teams.microsoft.com/l/app/789f23b3-d882-45ca-b3a3-de7f850656ea?source=app-details-dialog) and select from the dropdown to add the bot to specific teams, chats, or meetings. Return here to add the bot to additional teams and chats later!
+Install the <a href={pieces_app.links.extensions.teams}>Pieces Microsoft Teams bot for personal use</a> and select from the dropdown to add the bot to specific teams, chats, or meetings. Return here to add the bot to additional teams and chats later!
 
 Once you have downloaded the bot, restart Pieces OS to ensure the connection with Teams.
 
@@ -98,7 +95,6 @@ If you run into any problems or if you've closed Pieces OS, you'll need to reope
 Introducing **Pieces Question** ⎯ the ultimate productivity tool for developers in Microsoft Teams. Generate code, troubleshoot, and ask questions seamlessly within the Teams App. No more context switching, nagging colleagues, or digging through documentation or endless source code. The Pieces AI Question Assistant leverages the latest in LLM technologies to truly push the envelope of developer efficiency in Teams.
 
 ![Asking Pieces a question in a Microsoft Teams chat.](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/MICROSOFT_TEAMS/WINDOWS/ANY_FEATURE/16X9/PIECES_FOR_DEVELOPERS-MICROSOFT_TEAMS-ANY_FEATURE-WINDOWS-16X9-5_21_2023.GIF)
-
 
 ## Save, enrich, extract, and more, right from your chats!
 
@@ -154,7 +150,7 @@ Need a little help with Pieces for Microsoft Teams? Both the "Help” & "Hi” c
 
 ## Where are my saved snippets stored?
 
-_The <a href="{{ links.installation.pieces_suite_manager }}">Pieces Suite</a> must be downloaded and installed separately from the Microsoft Teams App in order for the extension to work properly._
+_The <a href={pieces_app.links.installation.pieces_suite_manager}>Pieces Suite</a> must be downloaded and installed separately from the Microsoft Teams App in order for the extension to work properly._
 
 When you save code snippets with Pieces, they are stored locally in the Pieces desktop app.
 When you save a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a title, a description, and more.
@@ -163,5 +159,5 @@ To view and reuse your snippets, just open the [Pieces Desktop App](/installatio
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

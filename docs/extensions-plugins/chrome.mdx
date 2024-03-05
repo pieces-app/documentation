@@ -3,25 +3,13 @@ title: Pieces for Developers Chrome Extension
 description: Learn about the Pieces Chrome Extension, how it functions, and what all you can do with this powerful extension in Chrome.
 ---
 
-import BrowserOnly from "@docusaurus/BrowserOnly";
-import {Image} from "../../src/components/Image";
+import { pieces_app } from "../../src/lib/const";
+import { Image } from "../../src/components/Image";
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/chrome" />
 
-export const getLatestVersion = () => {
-  return fetch(`https://api.github.com/repos/pieces-app/v2-web-extensions/releases/latest`)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log('Latest release tag: ', data.tag_name)
-
-      return {
-        version: data.tag_name,
-      }
-    })
-}
-
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href={'https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm'}>
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.chrome}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -73,19 +61,13 @@ export const GridFlexRowBaseline = props => {
     }}>{props.children}</div>;
 };
 
-export const HeaderLogoImage = props => {
+export const HeaderLogoImage = () => {
     return <Image style={{ marginTop: "0px", marginBottom: "1em", width: "50%" }} src={ "/assets/chrome_logo.png" }/>
 }
 
-export const Spacer = props => {
+export const Spacer = () => {
     return <div style={{ width: "8px"}}></div>
 };
-
-[//]: # (<GridFlexRowBaseline>)
-
-[//]: # (    <h1>Pieces Chrome Extension</h1>)
-
-[//]: # (</GridFlexRowBaseline>)
 
 <GridFlexRow>
     <InstallButton>Get the Chrome Extension</InstallButton>
@@ -109,7 +91,7 @@ To add the extension to Google Chrome, visit our listing on <a target="blank" hr
 Once you've added it to Chrome, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
 
 ## Saving Snippets with the Pieces Chrome Extension
-_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from our Chrome Extension for the extension to work properly._
+_The <a target="_blank" href={pieces_app.links.website.pfd_desktop_install}>Pieces Suite</a> must be downloaded and installed separately from our Chrome Extension for the extension to work properly._
 
 To save a snippet on the web, click the "Copy and Save" Pieces button below a code block.
 
@@ -157,7 +139,7 @@ There are a few reasons why the Pieces buttons may not be appearing:
 
 :::info
 
-If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
 
 :::
 
@@ -173,7 +155,7 @@ To customize your Pieces Chrome Extension experience, click on the Pieces icon i
 
 Hit the Settings icon in the top right and set your preferences.
 
-<Image zoom src="/assets/theme_for_chrome.png" />
+<Image src="/assets/theme_for_chrome.png" />
 
 You can adjust the following Settings for the Pieces Chrome Extension:
 1. The placement of the Pieces buttons
@@ -196,5 +178,5 @@ To uninstall Pieces:
 
 ##  Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Open Source Program](https://github.com/pieces-app/opensource)

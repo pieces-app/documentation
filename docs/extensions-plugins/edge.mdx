@@ -3,12 +3,13 @@ title: Pieces for Developers Edge Addon
 description: Troubleshoot issues before reaching out to Pieces support to get assistance with the Pieces for Developers Edge Addon.
 ---
 
+import { pieces_app } from "../../src/lib/const";
 import {Image} from "../../src/components/Image";
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/edge" />
 
 export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href={'https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim'}>
+    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.edge}>
         <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
             <p style={{
                 padding: "8px 20px",
@@ -59,21 +60,20 @@ export const Spacer = props => {
 };
 
 <GridFlexRow>
-    <h1>Pieces Edge Addon</h1>
-</GridFlexRow>
-
-<GridFlexRow>
     <InstallButton>Get the Edge Addon</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.edge }}"></ReleasePill>
 </GridFlexRow>
 
 Using the Pieces Edge Addon with the Pieces Desktop App makes saving code easy from anywhere you interact with code on the web.
 
 ## Installing the Extension
 
-<Info>In order to save code with the Pieces Edge Addon, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS and the Pieces for Developers desktop app.</a></Info>
+:::info
 
-To add the extension to Microsoft Edge, visit our listing on <a target="blank" href="https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim"> the Microsoft Edge Marketplace.</a>
+In order to save code with the Pieces Edge Addon, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS and the Pieces for Developers desktop app.</a>
+
+:::
+
+To add the extension to Microsoft Edge, visit our listing on <a target="blank" href={pieces_app.links.extensions.edge}> the Microsoft Edge Marketplace.</a>
 
 Once you've added it to Edge, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
 
@@ -106,7 +106,7 @@ You can chat with Pieces Copilot about any code block, generate new code, and as
 
 ## Discovered Snippets
 
-When you click the Pieces icon to open the addon popover menu, you'll see all of the snippets that the Pieces Edge Addon has discovered on that webpage. From this menu, you can easily save any relevant snippets without scrolling back through long pages.
+When you click the Pieces icon to open the addon popover menu, you'll see all the snippets that the Pieces Edge Addon has discovered on that webpage. From this menu, you can easily save any relevant snippets without scrolling back through long pages.
 
 ## Recently Discovered Snippets
 
@@ -125,7 +125,11 @@ There are a few reasons why the Pieces buttons may not be appearing:
 3. **This website doesn't have detectable code.**
 The code on this site might be embedded in an iframe or rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-<Info>If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!</Info>
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
 
 ## Disabling the Pieces Buttons
 If you don't want the Pieces Buttons to appear on a certain website, you can disable them for that site in the addon settings.
@@ -139,7 +143,7 @@ To customize your Pieces Edge Addon experience, click on the Pieces icon in the 
 
 Hit the Settings icon in the top right and set your preferences.
 
-<Image zoom src="/assets/theme_for_chrome.png" />
+<Image src="/assets/theme_for_chrome.png" />
 
 You can adjust the following Settings for the Pieces Edge Addon:
 1. The placement of the Pieces buttons
@@ -160,5 +164,5 @@ To uninstall Pieces:
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

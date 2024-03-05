@@ -3,6 +3,9 @@ title: Pieces for Developers Obsidian Plugin
 description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers Obsidian Plugin.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+
 <link
   rel="canonical"
   href="https://docs.pieces.app/extensions-plugins/obsidian"
@@ -13,7 +16,7 @@ export const InstallButton = (props) => {
     <a
       style={{ textDecoration: "none" }}
       target="_blank"
-      href="{{ links.extensions.obsidian }}"
+      href={pieces_app.links.extensions.obsidian}
     >
       <div style={{ maxWidth: "fit-content", minWidth: "fit-content" }}>
         <p
@@ -94,8 +97,8 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 ## Install Instructions
 
 1. [Make sure you have Pieces OS installed](https://docs.pieces.app/~161/installation-getting-started/what-am-i-installing#pieces-desktop-app--pieces-os).
-  - Pieces OS is the core platform dependency for all Pieces applications. It is the backend that powers all our services, including the plugins and the Desktop App.
-2. (optional) Install the Pieces for Developers Desktop App for the full experience. With the app, you can utilize all of Pieces for Developers' AI features, further boosting your productivity.
+    - Pieces OS is the core platform dependency for all Pieces applications. It is the backend that powers all our services, including the plugins and the Desktop App.
+2. *(optional)* Install the Pieces for Developers Desktop App for the full experience. With the app, you can utilize all of Pieces for Developers' AI features, further boosting your productivity.
 3. Make sure you have community plugins enabled in Obsidian.
 4. Search for **Pieces for Developers** in the Obsidian community plugin store.
 5. Click `install` on the Pieces for Developers plugin listing.
@@ -109,7 +112,6 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 - Using the search box at the top of the view, search your snippets to save time leafing through your markdown files.
 
 <Image
-  zoom
   src="/assets/obsidian/OBSIDIAN_SEARCH.gif"
   alt="Example of searching for snippets using the Pieces for Developers Obsidian Plugin."
 />
@@ -123,7 +125,6 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 - Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
-  zoom
   src="/assets/obsidian/obsidian_screenshot.png"
   alt="Example of saving a snippet using the Pieces for Developers Obsidian Plugin"
 />
@@ -135,7 +136,6 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 - You can expand your code snippets to view automatically generated metadata.
 
 <Image
-  zoom
   src="/assets/obsidian/OBSIDIAN_VIEWPIECE.gif"
   alt="Example of using a snippet that's been saved to Pieces."
 />
@@ -149,7 +149,6 @@ _Pieces for Developers captures **NO identifiable user data**. Our **Local-only*
 - Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
-  zoom
   src="/assets/obsidian/OBSIDIAN_SHARE.gif"
   alt="Example of sharing a snippet using the obsidian Pieces plugin."
 />
@@ -169,7 +168,6 @@ Pieces adds **embedded buttons** into your markdown files to help you save, copy
 - **Share**: This button allows you to quickly share any code snippet with a link, for easy collaboration.
 
 <Image
-  zoom
   src="/assets/obsidian/OBSIDIAN_SAVE.gif"
   alt="Example of using the embedded buttons added by the obsidian pieces plugin."
 />
@@ -205,7 +203,6 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
 - **Privacy and Security**: All user data, including code snippets, are stored directly on your device, reinforcing our commitment to data privacy.
 
 <Image
-    zoom
     src="/assets/obsidian/finder_window_privacy.png"
     alt="Privacy and security details."
 />
@@ -225,7 +222,6 @@ Just as Obsidian believes, we too are steadfast in our commitment to provide a t
 You can set your user privacy settings during onboarding when you download the app for the first time on your device.
 
 <Image
-    zoom
     src="/assets/obsidian/onboarding_privacy.png"
     alt="Privacy and security details."
 />
@@ -233,7 +229,6 @@ You can set your user privacy settings during onboarding when you download the a
 If you want to adjust your privacy settings after you complete onboarding, you can find the option in your user settings:
 
 <Image
-    zoom
     src="/assets/obsidian/pieces_desktop_privacy.png"
     alt="Privacy and security details."
 />
@@ -286,5 +281,5 @@ You can adjust the following Settings for the Pieces for Developers Obsidian Plu
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

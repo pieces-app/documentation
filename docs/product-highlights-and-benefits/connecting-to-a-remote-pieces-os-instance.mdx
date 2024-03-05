@@ -3,9 +3,19 @@ title: Connecting to a Remote Pieces OS Instance
 description: Utilize the Pieces for Developers VS Code extension in a remote development environment
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import {Video} from "../../src/components/Video";
+
 # Connecting to a Remote Pieces OS Instance
 
-<Info>If Pieces OS is running on the same machine as VS Code, there should be no requirement to use this feature. Please verify these steps are required for your set up before following this guide. This custom URL is not the same thing as your Pieces Cloud custom url.</Info>
+:::info
+
+If Pieces OS is running on the same machine as VS Code, there should be no requirement to use this feature. Please verify these steps are required for your set up before following this guide. This custom URL is not the same thing as your Pieces Cloud custom url.
+
+:::
 
 Through multiple user support tickets, we have noticed that many of our users are using the Pieces for Developers VS Code extension in a remote development environment.
 
@@ -13,14 +23,13 @@ This guide will walk you through how to connect to a remote Pieces OS instance u
 
 > - This is currently only available for the Pieces for Developers VS Code extension. Functionality for the rest of the Pieces for Developers ecosystem is coming soon.
 
-<YouTube id="sbgIaK9kpu4" />
+<Video src={'https://www.youtube.com/embed/sbgIaK9kpu4?si=gFIp2xkSQjY4aGbX'} />
 
 ### Windows Subsystem for Linux (WSL)
 
 > - [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) must be installed and configured on your machine
 
 This integration should work out of the box with WSL. If you are having trouble connecting, please see the [Troubleshooting](#troubleshooting) section for steps on how to set up an inbound firewall rule.
-
 
 ### VS Code Dev Containers
 
@@ -49,7 +58,7 @@ For Dev Container users, if the connection does not work automatically, there ar
 1. You must ensure that Pieces OS is running *before* launching VS Code. Please try starting Pieces OS and then reloading your VS Code window.
   a. see [this guide](#reloading-your-vs-code-window) for how to reload your VS Code window
 2. Similarly to the [WSL troubleshooting guide](#pieces-os-is-not-connecting-on-wsl) above, there may be a firewall that is blocking requests between machines on your LAN. Try setting up an inbound firewall rule on the machine running Pieces OS to resolve this.
-  a. for Windows and MacOS the rule should be placed on port 1000
+  a. for Windows and macOS the rule should be placed on port 1000
   b. on linux, the rule should be placed on port 5323
 
 
@@ -89,15 +98,15 @@ For Dev Container users, if the connection does not work automatically, there ar
   </TabItem>
   <TabItem value="static-url">
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: 
-      a. (windows and macos)`ngrok http --domain=STATIC_URL_HERE 1000` 
+    2. Run the following command on your machine’s terminal:
+      a. (windows and macos)`ngrok http --domain=STATIC_URL_HERE 1000`
       b. (linux)`ngrok http --domain=STATIC_URL_HERE 5323`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>
   <TabItem value={"generated-url"}>
     1. Install ngrok on the machine with Pieces OS if it isn’t already
-    2. Run the following command on your machine’s terminal: 
-      a. (windows and macos)`ngrok http 1000` 
+    2. Run the following command on your machine’s terminal:
+      a. (windows and macos)`ngrok http 1000`
       b. (linux)`ngrok http 5323`
     3. Copy the forwarding URL it generates to use in the next step
   </TabItem>

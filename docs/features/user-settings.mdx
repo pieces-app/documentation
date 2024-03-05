@@ -3,12 +3,15 @@ title: User Settings | Pieces
 description: You can customize your experience while using Pieces for Developers with different combinations in the Settings menu.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import {Image} from "../../src/components/Image";
+
 <link rel="canonical" href="https://docs.pieces.app/features/user-settings" />
 
 # User Settings
 While using Pieces, there are a number of customizable features and settings that can be found via the Settings menu. To open the Settings menu use ` , ` or click the `user icon` logo in the search bar. If you are already signed in, you will see the user profile photo that is attached to the account that you're authenticated with.
 
-<Image zoom alt={"User Settings drawer inside of Pieces for Developers Desktop App."} src="../assets/user_settings.png" />
+<Image alt={"User Settings drawer inside of Pieces for Developers Desktop App."} src="/assets/user_settings.png" />
 
 From the User Settings menu, you can adjust your experience by:
 - Changing the Frequency of Notifications and Dialogs
@@ -26,33 +29,33 @@ This page explains how to manage all of your personal user settings and how they
 There are a number of accounts that you may already have that you can use to sign in to Pieces Desktop. **Don't forget that when you sign in here, you will be signed in to the same account for any Pieces plugins you have installed.**
 
 ### Signing In
-To sign in, select ` Connect Accounts ` and then follow the steps that apply to you:
+To sign in, select `Connect Accounts` and then follow the steps that apply to you:
 
 - Connecting a Microsoft Account
     1. Select the Microsoft logo on the right side of the drawer.
     2. A dialog will open that shows you how to sign in once you press continue.
         - Watch the GIF to get an understanding of the process.
-    3. Then select ` sign up `, and create an account using your Microsoft email address. It will look something like ` username@domain.onmicrosoft.com `.
+    3. Then select `sign up`, and create an account using your Microsoft email address. It will look something like `username@domain.onmicrosoft.com`.
     4. Then create a password for your account that is being added/created, and press enter once you meet the requirements in the dropdown.
     5. Select "Accept" to create your account, and you will be redirected back into the application.
 
 - Connecting a GitHub Account
     1. Select the GitHub logo on the right side of the drawer.
-    2. On the ` auth.pieces.services ` page, select 'Continue with GitHub.'
+    2. On the `auth.pieces.services` page, select 'Continue with GitHub.'
     3. Sign in to GitHub.
-    4. Select ` link this account ` on the following screen.
+    4. Select `link this account` on the following screen.
     5. You will then be redirected back into the application.
 
 - Connecting a Google Account
     1. Select the Google logo on the right side of the drawer.
-    2. On the ` auth.pieces.services ` page, select 'Continue with Google.'
+    2. On the `auth.pieces.services` page, select 'Continue with Google.'
     3. Then select the Google account that you would like to use, sign in, and you should be redirected to a confirmation page.
 
 - Connecting with an Email & Password
     1. Select the envelope logo on the right side of the drawer.
-    2. On the ` auth.pieces.services ` page, enter your email into the text area and press ` continue `.
+    2. On the `auth.pieces.services` page, enter your email into the text area and press `continue`.
     3. Then enter your password and press continue, where you will be redirected to a successful log in screen.
-        - You can also select ` Sign up ` to create an account and unlock features like [Snippet Sharing](https://docs.pieces.app/features/one-click-snippet-sharing).
+        - You can also select `Sign up` to create an account and unlock features like [Snippet Sharing](https://docs.pieces.app/features/one-click-snippet-sharing).
 
 You will be redirected back into the application, and should now see your email at the top of the drawer. You can see your cloud starting to connect and create your first cloud instance on your account. Note this may take a few seconds to connect, and learn about your personal cloud to see what you can do.
 
@@ -114,11 +117,11 @@ Your Pieces Desktop App has a default sort which affects how your snippets are o
 
 The available settings are:
 - **Recent**
-    - Show all of your snippets in chronological order, ` newest --> oldest `
+    - Show all of your snippets in chronological order, `newest --> oldest`
 - **Suggested**
     - Uses Pieces' ML models to suggest the most useful snippets for you based on language, usage, and other factors
 - **Alphabetical**
-    - Sorts all snippets based on title from ` A --> Z `
+    - Sorts all snippets based on title from `A --> Z`
 - **Language**
     - Sorts all of your current snippets in alphabetical order by language.
     - Note that all of your snippets will still be in a flat list, not nested by language.
@@ -128,13 +131,13 @@ You can control the visual aspects of the application, including toggling betwee
 
 ### Toggle Light/Dark Mode
 
-**Shortcut:** ` ⌘/CTRL + SHIFT + T `
+**Shortcut:** `⌘/CTRL + SHIFT + T`
 
 You can change your theme from most views in the Pieces Desktop App, _but not all of them_. If your hear a ` boop ` or get no reaction when attempting to adjust the theme, try closing any open dialogs or drawers or open your settings and adjust the theme by pressing the ` Theme Toggle Icon ` on the right side of the settings drawer.
 
 ### Zoom In/Zoom Out
 
-**Shortcut:** ` ⌘/CTRL + ` or ` ⌘/CTRL - `
+**Shortcut:** `⌘/CTRL +` or `⌘/CTRL -`
 
 This will increase or decrease the font size of the application if you need to see more or less code on the screen or get up close with a specific line of text.
 
@@ -143,32 +146,30 @@ If you need assistance, more documentation, or want to see a full list of keyboa
 
 ### Support Center
 
-**Shortcut:** ` ⌘/CTRL + ? `
+**Shortcut:** `⌘/CTRL + ?`
 
 Opens the [Pieces Documentation Center](https://docs.pieces.app) (Yes - that's where we are now) in case you need assistance or are looking for details on Pieces.
 
 ### Submit Feedback
 
-**Shortcut:** ` SHIFT + ! `
+**Shortcut:** `SHIFT + !`
 
 If you want to leave feedback on Pieces or are experiencing a bug/issue, fill out this form and we will be in touch!
 
 ### Check for Updates
 
-**Shortcut:** ` SHIFT + U `
+**Shortcut:** `SHIFT + U`
 
 You will likely get a notification as soon as an update is available, but you can also check for updates here. If updates are available, you will be prompted to update. If not, you will receive a notification that you are currently up to date.
 
 ### Keyboard Shortcuts
 
-**Shortcut:** ` ⌘/CTRL + ; `
+**Shortcut:** `⌘/CTRL + ;`
 
 This opens a file with all the available keyboard shortcuts in the application, even if you are offline with no connection to the internet.
 
-[//]: # (TODO: You can also view the keyboard shortcuts we have available here.)
-
 ### Launch Onboarding
-If you need to adjust your user persona or the code languages that you use, you can go back through onboarding by pressing the ` redo ` icon on the right side of the drawer.
+If you need to adjust your user persona or the code languages that you use, you can go back through onboarding by pressing the `redo` icon on the right side of the drawer.
 
 ## In-App Notifications
 When saving a snippet, copying a snippet, and performing other actions in Pieces Desktop, you will notice different notification messages that confirm the action. There are three settings you can choose from to control your notifications:
@@ -215,12 +216,12 @@ Using Search with Snippet allows you to search for other related snippets by pas
 When deleting snippets and managing shareable links, there are a few notifications that flag sensitive deletions or updating shareable links when content has changed. The drawer that opens when you select the cog inside your settings has a number of options.
 
 #### Confirm Piece Deletions
-By default, when deleting snippets by pressing ` Delete ` or from the context drawer, you will get a confirmation message to delete a snippet permanently. If you would like to turn this setting off and hide the confirmation messages, you can select the checkbox here.
+By default, when deleting snippets by pressing `Delete` or from the context drawer, you will get a confirmation message to delete a snippet permanently. If you would like to turn this setting off and hide the confirmation messages, you can select the checkbox here.
 
 **Note: You cannot recover a deleted snippet.**
 
 #### Confirm Context Deletions
-When removing tags, related links, related people, and sensitives, you may want to remove a large number at once. To hide this confirmation notification, you can select ` All ` or select the individual items that you would like to be notified about before deletion.
+When removing tags, related links, related people, and sensitives, you may want to remove a large number at once. To hide this confirmation notification, you can select `All` or select the individual items that you would like to be notified about before deletion.
 
 #### Updates
 Changing data in snippets with previously generated [shareable links](https://docs.pieces.app/feaures/one-click-snippet-sharing) causes them to update. If you want to hide the notifications that ask you if you would like to update your shareable link with new context, just select the checkbox here.
@@ -233,25 +234,25 @@ When in the Gallery View, you can see a context menu preview that will appear wh
 You can adjust if this will automatically show for short snippets, creating a hybrid split view in the carousel.
 
 #### Visibility
-This controls how often the metrics preview will show. ` All ` will make it always visible; ` Navigating ` will only show it when navigating left and right in the carousel, but hide it soon after stopping on a single snippet; and ` Hovering ` will only show it when you hover the context icon on the bottom right of the code snippet in the Gallery view.
+This controls how often the metrics preview will show. `All` will make it always visible; `Navigating` will only show it when navigating left and right in the carousel, but hide it soon after stopping on a single snippet; and `Hovering` will only show it when you hover the context icon on the bottom right of the code snippet in the Gallery view.
 
 ## Discover
 Here you can find settings to help you discover more features in Pieces Desktop and other information about the application.
 
 ### Release Notes
 
-**Shortcut:** ` SHIFT + W `
+**Shortcut:** `SHIFT + W`
 
 Use this shortcut to view the latest release notes for Pieces Desktop (and the rest of the Pieces Suite) at [https://code.pieces.app/updates](https://code.pieces.app/updates).
 
 ### Power Tips
-Select the light-bulb icon to view a list of power tips for using Pieces. There are 9 power tips that you can view by pressing the ` -> ` arrow. Press ` Esc ` to return back to the application.
+Select the light-bulb icon to view a list of power tips for using Pieces. There are 9 power tips that you can view by pressing the `->` arrow. Press  Esc` to return back to the application.
 
 ### Plugins
 
-**Shortcut:** ` ⌘/CTRL +  I`
+**Shortcut:** `⌘/CTRL +  I`
 
-Select the puzzle piece icon to view a list of links to our Pieces Suite plugins, available to use with the Desktop application. Use keys ` 1 - 4 ` to select the plugin you want to install, and it will open in your browser.
+Select the puzzle piece icon to view a list of links to our Pieces Suite plugins, available to use with the Desktop application. Use keys `1 - 4` to select the plugin you want to install, and it will open in your browser.
 
 ### Refer a Friend
 To invite another user to Pieces, select the envelope here, and you will get a link that you can copy and paste to send to someone via chat or text message.

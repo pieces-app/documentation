@@ -3,6 +3,9 @@ title: Getting Started with Pieces for Developers JupyterLab Extension
 description: Learn how to install the Pieces for JupyterLab Extension via the PYPI Manager, Pip, and Conda.
 ---
 
+import { pieces_app } from "../../src/lib/const";
+import { Image } from "../../src/components/Image";
+
 <link
   rel="canonical"
   href="https://docs.pieces.app/extensions-plugins/jupyterlab"
@@ -41,13 +44,11 @@ export const InstallButton = props => {
   </a>
 }
 
-# Your Guide to Getting Started with the Pieces for JupyterLab Extension
-
 <ReleasePill src={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}>Compatible with JupyterLab 4.0.0 and higher and is currently in Beta</ReleasePill>
 
 _Pieces For Developers captures **NO identifiable user data**. Our **Local-only** architecture means your data never has to leave your device._
 
-_The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Suite</a> must be downloaded and installed separately from the JupyterLab Extension for it to work properly._
+_The <a target="_blank" href={pieces_app.links.website.pfd_desktop_install}>Pieces Suite</a> must be downloaded and installed separately from the JupyterLab Extension for it to work properly._
 
 ## Installation Instructions
 ---
@@ -58,7 +59,11 @@ _The <a target="_blank" href="{{ links.website.pfd_desktop_install }}">Pieces Su
     ```
 2. *(optional)* Be sure to have extensions enabled. [Read about enabling extensions.](https://tljh.jupyter.org/en/latest/howto/admin/enable-extensions.html)
 
-<Info>Be sure to accept the disclaimer before moving forward in this process.</Info>
+:::info
+
+Be sure to accept the disclaimer before moving forward in this process.
+
+:::
 
 ## Newest Features
 
@@ -88,7 +93,6 @@ Any changes you make across any Pieces integration (e.g., the Pieces Desktop App
 - Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
-  zoom
   src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/RIGHT_CLICK_SAVE_SELECTION/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-RIGHT_CLICK_SAVE_SELECTION-16X9-MACOS-6_22_2023.gif"
   alt="Example of saving an active cell as a snippet."
 />
@@ -101,7 +105,6 @@ Open the Pieces View from the Ribbon Menu.
 - Search your snippets to save time leafing through your files.
 
 <Image
-  zoom
   src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/SEARCH_AND_INSERT/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-SEARCH_AND_INSERT-16X9-MACOS-6_22_2023.gif"
   alt="Example of searching for and inserting snippets."
 />
@@ -113,7 +116,6 @@ Open the Pieces View from the Ribbon Menu.
 - View your snippets with syntax highlighting
 
 <Image
-  zoom
   src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/EXPANDED_VIEW/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-EXPANDED_VIEW-16X9-MACOS-6_22_2023.gif"
   alt="Example of viewing all context related to snippet in expanded view."
 />
@@ -127,7 +129,6 @@ Open the Pieces View from the Ribbon Menu.
 3. Highlight the desired code and use a dedicated keyboard shortcut.
 
 <Image
-  zoom
   src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/SNIPPET_BUTTON_SHARE/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-SNIPPET_BUTTON_SHARE-16X9-MACOS-6_22_2023.gif"
   alt="Example of generating a shareable link for a snippet."
 />
@@ -139,7 +140,6 @@ _Pieces stores all of your snippets for seamless sharing._
 Pieces adds an **embedded button** into your code cells.
 
 <Image
-  zoom
   src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/EMBEDDED_BUTTON_SAVE_ACTIVE_CELL/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-EMBEDDED_BUTTON_SAVE_ACTIVE_CELL-16X9-MACOS-6_22_2023.gif"
   alt="Example of saving an active cell using the embedded buttons."
 />
@@ -153,7 +153,6 @@ In **Pieces for Developers**, we not only prioritize your data privacy and secur
 - **Privacy and Security**: All user data, including code snippets, are stored directly on your device, reinforcing our commitment to data privacy.
 
 <Image
-  zoom
   src="/assets/jupyterlab/finder_window_privacy.png"
   alt="Privacy and security details."
 />
@@ -183,7 +182,12 @@ If you need to download and install Pieces OS, please <a target="_blank" href="h
 - Pieces OS version 5.0.0 or higher
 - JupyterLab version 4.0.0 or higher
 docs.
-<Info>After installing or updating your software, please restart JupyterLab.</Info>
+
+:::info
+
+After installing or updating your software, please restart JupyterLab.
+
+:::
 
 If none of the above fix your issue, please <a target="_blank" href="https://getpieces.typeform.com/jupyterlab">submit this form</a> and we'll get back to you!
 
@@ -200,5 +204,5 @@ You can adjust the following settings:
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)
