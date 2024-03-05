@@ -1,9 +1,10 @@
 ---
 title: Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
-next: /extensions-plugins/chrome
-nextTitle: Check Out Our Chrome Plugin
 ---
+
+import { Image } from "../../src/components/Image";
+import WindowsLogo from "/assets/windows_logo_old.png";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
 
@@ -96,7 +97,7 @@ export const GridFlexSpaceEvenlyRow = props => {
 
 # Getting Started
 
-![Pieces for Developers and Pieces OS application windows.](../assets/getting_started.png)
+![Pieces for Developers and Pieces OS application windows.](/assets/getting_started.png)
 
 ## Pieces Desktop App & Pieces OS
 
@@ -108,40 +109,53 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 
 <GridFlexRow>
     <InstallButtonWindows src="/installation-getting-started/windows">
-        <Image width="20px" src={"../assets/windows_logo_old.png"} />
+        <img width="20px" src={'/assets/windows_logo_old.png'} />
     </InstallButtonWindows>
     <InstallButtonMac src="/installation-getting-started/macos">
-        <Image width="20px" src={"../assets/mac_os.png"} />
+        <Image width="20px" src={"/assets/mac_os.png"} />
     </InstallButtonMac>
     <InstallButtonLinux src="/installation-getting-started/linux">
-        <Image width="20px"src={"../assets/linux_logo.png"} />
+        <Image width="20px"src={"/assets/linux_logo.png"} />
     </InstallButtonLinux>
 </GridFlexRow>
 
 <MiniSpacer></MiniSpacer>
 
-<Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>
+[//]: # (<Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS]&#40;/installation-getting-started/pieces-os&#41;** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>)
 
 <MiniSpacer></MiniSpacer>
 
-<Accordion title={"Pieces for Developers | Pieces OS"}>
-    **[Pieces OS](/installation-getting-started/pieces-os)** is our background service that runs offline and on-device. It's **required** to enable:
-    - Individual products in the Pieces for Developers Suite to communicate
-    - Local, Private, and Secure Machine Learning Models
-    - Real-Time Search and Suggestions
-</Accordion>
+[//]: # (<Accordion title={"Pieces for Developers | Pieces OS"}>)
+
+[//]: # (    **[Pieces OS]&#40;/installation-getting-started/pieces-os&#41;** is our background service that runs offline and on-device. It's **required** to enable:)
+
+[//]: # (    - Individual products in the Pieces for Developers Suite to communicate)
+
+[//]: # (    - Local, Private, and Secure Machine Learning Models)
+
+[//]: # (    - Real-Time Search and Suggestions)
+
+[//]: # (</Accordion>)
 
 <MiniSpacer></MiniSpacer>
 
-<Accordion title={"Pieces for Developers | Desktop Application"}>
-    **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:
-    - Navigate snippets visually through the Gallery or List Views
-    - Transform snippets from one language to another
-    - Sort Snippets by AI-suggested usefulness
-    - Describe a snippet to get a solution to an answer
-    - Manage your custom cloud domain
-    - and so much more!
-</Accordion>
+[//]: # (<Accordion title={"Pieces for Developers | Desktop Application"}>)
+
+[//]: # (    **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:)
+
+[//]: # (    - Navigate snippets visually through the Gallery or List Views)
+
+[//]: # (    - Transform snippets from one language to another)
+
+[//]: # (    - Sort Snippets by AI-suggested usefulness)
+
+[//]: # (    - Describe a snippet to get a solution to an answer)
+
+[//]: # (    - Manage your custom cloud domain)
+
+[//]: # (    - and so much more!)
+
+[//]: # (</Accordion>)
 
 ---
 
@@ -155,38 +169,58 @@ Pieces OS enables Pieces products and local LLMs to operate 100% locally on your
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
-<Tabs
-  defaultValue={"windows"}
-  values={[
-    {label: 'macOS', value: 'macos'},
-    {label: 'Windows', value: 'windows'},
-    {label: 'Linux', value: 'linux'}
-  ]}
->
-  <TabItem value="macos">
-    <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
-  </TabItem>
-  <TabItem value="windows">
-    <p>Compatible with Windows 10 version 1809 and higher</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
-  </TabItem>
-  <TabItem value="linux">
-    <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
-  </TabItem>
-</Tabs>
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"windows"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macos'},)
+
+[//]: # (    {label: 'Windows', value: 'windows'},)
+
+[//]: # (    {label: 'Linux', value: 'linux'})
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macos">)
+
+[//]: # (    <p>Compatible with macOS 11.0 &#40;Big Sur&#41; and higher</p>)
+
+[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows">)
+
+[//]: # (    <p>Compatible with Windows 10 version 1809 and higher</p>)
+
+[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="linux">)
+
+[//]: # (    <p>Compatible with Ubuntu 18 or higher &#40;Currently in Beta&#41;</p>)
+
+[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
 
 ## Leverage the power of Pieces in your favorite tools
 
 Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
 <GridFlexSpaceEvenlyRow>
-    <a href="/extensions-plugins/chrome"><Image width="50%" src="../assets/chrome_logo.png" /></a>
-    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="../assets/jetbrains_logo.png" /></a>
-    <a href="/extensions-plugins/vscode"><Image width="50%" src="../assets/vscode_logo.png" /></a>
-    <a href="/extensions-plugins/edge"><Image width="50%" src="../assets/edge_logo.png" /></a>
-    <a href="/extensions-plugins/teams"><Image width="50%" src="../assets/teams_logo.png" /></a>
-    <a href="/extensions-plugins/obsidian"><Image width="50px" src="../assets/obsidian_logo.png" /></a>
-    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="../assets/jupyterlab_logo.png" /></a>
+    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
+    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
 </GridFlexSpaceEvenlyRow>

@@ -31,35 +31,16 @@ const config: Config = {
   },
 
   plugins: [
-    // [
-    //   '@docusaurus/plugin-client-redirects',
-    //   {
-    //     fromExtensions: ['html', 'htm'], // /myPage.html -> /myPage
-    //     toExtensions: ['exe', 'zip'], // /myAsset -> /myAsset.zip (if latter exists)
-    //     redirects: [
-    //       // /docs/oldDoc -> /docs/newDoc
-    //       {
-    //         to: '/docs/newDoc',
-    //         from: '/docs/oldDoc',
-    //       },
-    //       // Redirect from multiple old paths to the new path
-    //       {
-    //         to: '/docs/newDoc2',
-    //         from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
-    //       },
-    //     ],
-    //     createRedirects(existingPath) {
-    //       if (existingPath.includes('/community')) {
-    //         // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-    //         return [
-    //           existingPath.replace('/community', '/docs/team'),
-    //           existingPath.replace('/community', '/docs/support'),
-    //         ];
-    //       }
-    //       return undefined; // Return a falsy value: no redirect created
-    //     },
-    //   },
-    // ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -88,11 +69,6 @@ const config: Config = {
             'https://github.com/pieces-app/documentation/tree/main/',
           // docItemComponent: "@theme/ApiItem"
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   editUrl:
-        //     'https://github.com/pieces-app/documentation/tree/main/',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -109,7 +85,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     // announcementBar: {
     //   id: 'support_us',
-    //   content: 'Testing'
+    //   content: 'Support Us!'
     // },
     navbar: {
       title: 'Pieces for Developers',
@@ -120,7 +96,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Docs',
         },
@@ -137,17 +113,7 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
@@ -159,22 +125,22 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/getpieces',
             },
+          ],
+        },
+        {
+          title: 'Social Media',
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/getpieces',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
             {
-              label: 'GitHub',
-              href: 'https://github.com/pieces-app/documentation',
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/company/getpieces',
+            },
+            {
+              label: 'YouTube',
+              href: 'https://youtube.com/@getpieces',
             },
           ],
         },
@@ -183,12 +149,6 @@ const config: Config = {
     },
 
     themes: ["docusaurus-theme-openapi-docs"],
-    stylesheets: [
-      {
-        href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
-        type: "text/css",
-      },
-    ],
 
     prism: {
       theme: prismThemes.github,
@@ -199,6 +159,9 @@ const config: Config = {
       apiKey: '79c81e52460257d3761ea38438e29637',
       indexName: 'pieces',
     },
+    colorMode: {
+      defaultMode: 'dark',
+    }
   } satisfies Preset.ThemeConfig,
 };
 

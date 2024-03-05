@@ -1,3 +1,17 @@
-export const Image = () => {
-  return <img src="https://via.placeholder.com/150" alt="placeholder" />;
+type ImageProps = {
+  src: string
+  alt?: string
+  width?: number
+  height?: number
+}
+
+export const Image = (props: ImageProps) => {
+  return (
+    <img
+      src={props.src}
+      alt={props.alt}
+      width={props.width}
+      height={props.height}
+    />
+  )
 }
