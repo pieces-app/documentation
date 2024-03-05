@@ -4,6 +4,8 @@ description: Learn what is included in the installation files and find the right
 ---
 
 import { Image } from "../../src/components/Image";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
 
@@ -120,7 +122,11 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 
 <MiniSpacer></MiniSpacer>
 
-[//]: # (<Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS]&#40;/installation-getting-started/pieces-os&#41;** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>)
+:::info
+
+When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.
+
+:::
 
 <MiniSpacer></MiniSpacer>
 
@@ -168,58 +174,49 @@ Pieces OS enables Pieces products and local LLMs to operate 100% locally on your
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
-[//]: # (<Tabs)
+<Tabs defaultValue={"macos"} values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
 
-[//]: # (  defaultValue={"windows"})
+  <TabItem value="macos">
 
-[//]: # (  values={[)
+    <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
 
-[//]: # (    {label: 'macOS', value: 'macos'},)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
 
-[//]: # (    {label: 'Windows', value: 'windows'},)
+  </TabItem>
 
-[//]: # (    {label: 'Linux', value: 'linux'})
+  <TabItem value="windows">
 
-[//]: # (  ]})
+    <p>Compatible with Windows 10 version 1809 and higher</p>
 
-[//]: # (>)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
 
-[//]: # (  <TabItem value="macos">)
+  </TabItem>
 
-[//]: # (    <p>Compatible with macOS 11.0 &#40;Big Sur&#41; and higher</p>)
+  <TabItem value="linux">
 
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>)
+    <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
 
-[//]: # (  </TabItem>)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
 
-[//]: # (  <TabItem value="windows">)
+  </TabItem>
 
-[//]: # (    <p>Compatible with Windows 10 version 1809 and higher</p>)
-
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (  <TabItem value="linux">)
-
-[//]: # (    <p>Compatible with Ubuntu 18 or higher &#40;Currently in Beta&#41;</p>)
-
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (</Tabs>)
+</Tabs>
 
 ## Leverage the power of Pieces in your favorite tools
 
 Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
 <GridFlexSpaceEvenlyRow>
-    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
-    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
-    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
-    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
-    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
-    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
-    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
+    <a href="/extensions-plugins/chrome"><Image width="70px" src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width="70px" src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width="70px" src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width="70pxx" src="/assets/edge_logo.png" /></a>
+</GridFlexSpaceEvenlyRow>
+
+<MiniSpacer></MiniSpacer>
+
+<GridFlexSpaceEvenlyRow>
+    <a href="/extensions-plugins/teams"><Image width="70px" src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width="70px" src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width="70px" src="/assets/jupyterlab_logo.png" /></a>
 </GridFlexSpaceEvenlyRow>

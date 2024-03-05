@@ -7,6 +7,8 @@ const config: Config = {
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
   favicon: 'img/favicon.ico',
 
+  // themes: ["docusaurus-theme-openapi-docs"],
+
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -30,32 +32,33 @@ const config: Config = {
   },
 
   plugins: [
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
-        disableInDev: false,
-      },
-    ],
-    [
-      "docusaurus-plugin-openapi-docs",
-      {
-        id: "openapi",
-        docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
-        config: {
-          sdk: {
-            specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-            outputDir: "docs/api/sdk", // output directory for generated *.mdx and sidebar.js files
-            sidebarOptions: {
-              groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-            },
-          }
-        }
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-ideal-image',
+    //   {
+    //     quality: 70,
+    //     max: 1030, // max resized image's size.
+    //     min: 640, // min resized image's size. if original is lower, use that size.
+    //     steps: 2, // the max number of images generated between min and max (inclusive)
+    //     disableInDev: false,
+    //   },
+    // ],
+    // [
+    //   "docusaurus-plugin-openapi-docs",
+    //   {
+    //     id: "openapi",
+    //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
+    //     config: {
+    //       sdk: {
+    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
+    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/auth0/runtime_auth0_module.yaml',
+    //         outputDir: "docs/api/sdk", // output directory for generated *.mdx and sidebar.js files
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+    //         },
+    //       }
+    //     }
+    //   },
+    // ],
   ],
 
   presets: [
@@ -77,10 +80,35 @@ const config: Config = {
         }
       } satisfies Preset.Options,
     ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+            route: '/api/common/',
+            id: 'common',
+          },
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+            route: '/api/connector',
+            id: 'connector'
+          },
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+            route: '/api/core',
+            id: 'core'
+          },
+        ],
+        theme: {
+          primaryColor: 'rgb(183,183,183)',
+        },
+      },
+    ],
   ],
 
   themeConfig: {
-    // TODO: Replace with your project's social card
     image: 'assets/pfd_preview.png',
     // announcementBar: {
     //   id: 'support_us',
@@ -96,15 +124,14 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
-          position: 'left',
           label: 'Docs',
+          position: 'left',
         },
-        // {
-        //   type: 'apiSidebar',
-        //   sidebarId: 'apiSidebar',
-        //   position: 'left',
-        //   label: 'API',
-        // },
+        {
+          to: '/api/',
+          label: 'API',
+          position: 'left',
+        },
         {
           href: 'https://github.com/pieces-app/documentation',
           label: 'GitHub',
@@ -144,7 +171,6 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Mesh Intelligent Technologies, Inc. All rights reserved.`,
     },
 
-    themes: ["docusaurus-theme-openapi-docs"],
 
     prism: {
       theme: prismThemes.github,

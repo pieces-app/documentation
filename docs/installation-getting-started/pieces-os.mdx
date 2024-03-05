@@ -5,6 +5,9 @@ next: /extensions-plugins/chrome
 nextTitle: Check Out Our Chrome Plugin
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/pieces-os" />
 
 export const InstallButton = props => {
@@ -56,7 +59,11 @@ Pieces OS enables Pieces products to operate 100% locally on your machine, with 
 
 ## Pieces OS Installation Methods
 
-[//]: # (<Info>Downloading Pieces OS by itself is not recommended, but is the right solution for specific situations. [Download Pieces Desktop + Pieces OS together]&#40;https://docs.pieces.app/installation-getting-started/what-am-i-installing&#41; for the most ideal experience.</Info>)
+:::info
+
+Downloading Pieces OS by itself is not recommended, but is the right solution for specific situations. [Download Pieces Desktop + Pieces OS together]&#40;https://docs.pieces.app/installation-getting-started/what-am-i-installing&#41; for the most ideal experience.
+
+:::
 
 [//]: # (<Accordion title={"Windows"}>)
 
@@ -150,93 +157,65 @@ Security and privacy are paramount in Pieces OS's operation. By running locally 
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
-[//]: # (<Tabs)
+<Tabs defaultValue={"macos"}  values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
 
-[//]: # (  defaultValue={"windows"})
+  <TabItem value="macos">
 
-[//]: # (  values={[)
+    <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
 
-[//]: # (    {label: 'macOS', value: 'macos'},)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
 
-[//]: # (    {label: 'Windows', value: 'windows'},)
+  </TabItem>
 
-[//]: # (    {label: 'Linux', value: 'linux'})
+  <TabItem value="windows">
 
-[//]: # (  ]})
+    <p>Compatible with Windows 10 version 1809 and higher</p>
 
-[//]: # (>)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
 
-[//]: # (  <TabItem value="macos">)
+  </TabItem>
 
-[//]: # (    <p>Compatible with macOS 11.0 &#40;Big Sur&#41; and higher</p>)
+  <TabItem value="linux">
 
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>)
+    <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
 
-[//]: # (  </TabItem>)
+    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
 
-[//]: # (  <TabItem value="windows">)
+  </TabItem>
 
-[//]: # (    <p>Compatible with Windows 10 version 1809 and higher</p>)
-
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (  <TabItem value="linux">)
-
-[//]: # (    <p>Compatible with Ubuntu 18 or higher &#40;Currently in Beta&#41;</p>)
-
-[//]: # (    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (</Tabs>)
+</Tabs>
 
 ## Dive Deeper
 
 Explore the intricacies of Pieces OS through a variety of resources, available in different formats. Whether you are looking to better understand its functionalities or seeking support from the community, the structured tabs below provide a pathway to delve deeper into Pieces OS.
 
-[//]: # (<Tabs)
+<Tabs defaultValue={"tutorials"} values={[{label: 'Tutorials', value: 'tutorials'}, {label: 'Documentation', value: 'documentation'}, {label: 'Community', value: 'community'}]}>
 
-[//]: # (  defaultValue={"tutorials"})
+  <TabItem value="tutorials">
 
-[//]: # (  values={[)
+    Discover step-by-step tutorials and livestreams to get familiar with Pieces OS.
 
-[//]: # (    {label: 'Tutorials', value: 'tutorials'},)
+    <a href="https://www.youtube.com/@getpieces">Explore our YouTube Channel</a>
 
-[//]: # (    {label: 'Documentation', value: 'documentation'},)
+  </TabItem>
 
-[//]: # (    {label: 'Community', value: 'community'})
+  <TabItem value="documentation">
 
-[//]: # (  ]})
+    Dive into the comprehensive documentation to learn every aspect of Pieces OS.
 
-[//]: # (>)
+    <a href="https://docs.pieces.app">Explore Documentation</a>
 
-[//]: # (  <TabItem value="tutorials">)
+  </TabItem>
 
-[//]: # (    Discover step-by-step tutorials and livestreams to get familiar with Pieces OS.)
+  <TabItem value="community">
 
-[//]: # (    <a href="https://www.youtube.com/@getpieces">Explore our YouTube Channel</a>)
+    Join our community to share knowledge, learn from others, and get support.
 
-[//]: # (  </TabItem>)
+    <a href="https://discord.gg/getpieces">Join our Discord</a>
 
-[//]: # (  <TabItem value="documentation">)
+  </TabItem>
 
-[//]: # (    Dive into the comprehensive documentation to learn every aspect of Pieces OS.)
-
-[//]: # (    <a href="https://docs.pieces.app">Explore Documentation</a>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (  <TabItem value="community">)
-
-[//]: # (    Join our community to share knowledge, learn from others, and get support.)
-
-[//]: # (    <a href="https://discord.gg/getpieces">Join our Discord</a>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (</Tabs>)
+</Tabs>
 
 <MiniSpacer></MiniSpacer>
 
@@ -244,44 +223,30 @@ Explore the intricacies of Pieces OS through a variety of resources, available i
 
 Pieces OS is engineered to harmoniously interact with various development, communication, and productivity tools. Explore the integrations below to learn more about how Pieces OS can enhance your workflow.
 
-[//]: # (<Tabs)
+<Tabs defaultValue={"development"} values={[{label: 'Development', value: 'development'}, {label: 'Communication', value: 'communication'}, {label: 'Productivity', value: 'productivity'}]}>
 
-[//]: # (  defaultValue={"dev_tools"})
+  <TabItem value="development">
 
-[//]: # (  values={[)
+    Explore the dev tools that seamlessly integrate with Pieces OS.
 
-[//]: # (    {label: 'Development', value: 'development'},)
+    <a href="https://docs.pieces.app/extensions-plugins/vscode">Explore Tools</a>
 
-[//]: # (    {label: 'Communication', value: 'communication'},)
+  </TabItem>
 
-[//]: # (    {label: 'Productivity', value: 'productivity'},)
+  <TabItem value="communication">
 
-[//]: # (  ]})
+    Discover the communication tools that seamlessly integrate with Pieces OS.
 
-[//]: # (>)
+    <a href="https://docs.pieces.app/extensions-plugins/teams">Explore Tools</a>
 
-[//]: # (  <TabItem value="development">)
+  </TabItem>
 
-[//]: # (    Explore the dev tools that seamlessly integrate with Pieces OS.)
+  <TabItem value="productivity">
 
-[//]: # (    <a href="https://docs.pieces.app/extensions-plugins/vscode">Explore Tools</a>)
+    Discover the productivity tools that seamlessly integrate with Pieces OS.
 
-[//]: # (  </TabItem>)
+    <a href="https://docs.pieces.app/extensions-plugins/obsidian">Explore Tools</a>
 
-[//]: # (  <TabItem value="communication">)
+  </TabItem>
 
-[//]: # (    Discover the communication tools that seamlessly integrate with Pieces OS.)
-
-[//]: # (    <a href="https://docs.pieces.app/extensions-plugins/teams">Explore Tools</a>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (  <TabItem value="productivity">)
-
-[//]: # (    Discover the productivity tools that seamlessly integrate with Pieces OS.)
-
-[//]: # (    <a href="https://docs.pieces.app/extensions-plugins/obsidian">Explore Tools</a>)
-
-[//]: # (  </TabItem>)
-
-[//]: # (</Tabs>)
+</Tabs>

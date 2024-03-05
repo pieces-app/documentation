@@ -235,7 +235,6 @@ const sidebars: SidebarsConfig = {
       ]
     }
   ],
-  apiSidebar: [],
 };
 
 export default sidebars;
