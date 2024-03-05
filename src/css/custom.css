@@ -29,3 +29,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 }
 
+/* Add padding between sidebar categories and make category title bold */
+/* Do this for all but the last item */
+.theme-doc-sidebar-item-category:not(:last-child) {
+  padding-bottom: 16px;
+
+  .menu__list-item-collapsible > a {
+    font-weight: bold;
+  }
+}

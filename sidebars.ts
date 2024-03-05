@@ -13,11 +13,6 @@ const sidebars: SidebarsConfig = {
           label: 'Getting Started',
         },
         {
-          type: 'ref',
-          id: 'installation-getting-started/pieces-os',
-          label: 'Pieces OS',
-        },
-        {
           type: 'doc',
           id: 'installation-getting-started/macos',
           label: 'macOS',

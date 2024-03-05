@@ -6,7 +6,6 @@ const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
   favicon: 'img/favicon.ico',
-  staticDirectories: ['static', 'docs/assets'],
 
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
@@ -100,11 +99,12 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {
-          to: '/api',
-          label: 'API',
-          position: 'left'
-        },
+        // {
+        //   type: 'apiSidebar',
+        //   sidebarId: 'apiSidebar',
+        //   position: 'left',
+        //   label: 'API',
+        // },
         {
           href: 'https://github.com/pieces-app/documentation',
           label: 'GitHub',
@@ -133,10 +133,6 @@ const config: Config = {
             {
               label: 'Twitter',
               href: 'https://twitter.com/getpieces',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://linkedin.com/company/getpieces',
             },
             {
               label: 'YouTube',
