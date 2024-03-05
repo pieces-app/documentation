@@ -81,7 +81,7 @@ const config: Config = {
 
   themeConfig: {
     // TODO: Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'assets/pfd_preview.png',
     // announcementBar: {
     //   id: 'support_us',
     //   content: 'Support Us!'
