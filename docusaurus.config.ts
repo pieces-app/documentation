@@ -30,17 +30,14 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
-    [
-      'vercel-analytics',
-      {
-        debug: true,
-        mode: 'auto',
-      },
-    ],
-  ],
-
   // plugins: [
+  //   [
+  //     'vercel-analytics',
+  //     {
+  //        debug: true,
+  //         mode: 'auto',
+  //     },
+  //   ],
     // [
     //   '@docusaurus/plugin-ideal-image',
     //   {
