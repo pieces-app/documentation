@@ -151,6 +151,11 @@ const config: Config = {
           position: 'right',
         },
         {
+          to: '/learn/support',
+          label: 'Support',
+          position: 'right',
+        },
+        {
           to: '/learn/faq',
           label: 'FAQ',
           position: 'right',

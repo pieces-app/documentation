@@ -242,23 +242,6 @@ const sidebars: SidebarsConfig = {
         },
       ]
     },
-    // {
-    //   type: 'category',
-    //   label: '🌎 Terms & Policies',
-    //   // collapsible: false,
-    //   items: [
-    //     {
-    //       type: 'doc',
-    //       id: 'privacy-policy',
-    //       label: 'Privacy Policy',
-    //     },
-    //     {
-    //       type:'doc',
-    //       id: 'terms',
-    //       label: 'Terms'
-    //     }
-    //   ]
-    // }
   ],
 };
 
