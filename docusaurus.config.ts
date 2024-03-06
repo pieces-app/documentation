@@ -7,7 +7,6 @@ const config: Config = {
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
   favicon: 'img/favicon.ico',
 
-  // themes: ["docusaurus-theme-openapi-docs"],
 
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
@@ -60,6 +59,8 @@ const config: Config = {
     //   },
     // ],
   // ],
+
+  // themes: ["docusaurus-theme-openapi-docs"],
 
   presets: [
     [
