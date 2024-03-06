@@ -6,24 +6,24 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #333333; /* Original: #2e8555, now a dark gray */
-  --ifm-color-primary-dark: #2e2e2e; /* Original: #29784c, now a slightly darker gray */
-  --ifm-color-primary-darker: #292929; /* Original: #277148, now even darker */
-  --ifm-color-primary-darkest: #242424; /* Original: #205d3b, now nearing black */
-  --ifm-color-primary-light: #383838; /* Original: #33925d, now a lighter dark gray */
-  --ifm-color-primary-lighter: #3d3d3d; /* Original: #359962, now a bit lighter */
-  --ifm-color-primary-lightest: #424242; /* Original: #3cad6e, now the lightest dark gray before transitioning to lighter shades */
+  --ifm-color-primary: #333333;
+  --ifm-color-primary-dark: #2e2e2e;
+  --ifm-color-primary-darker: #292929;
+  --ifm-color-primary-darkest: #242424;
+  --ifm-color-primary-light: #383838;
+  --ifm-color-primary-lighter: #3d3d3d;
+  --ifm-color-primary-lightest: #424242;
 
-  --ifm-color-secondary: #f0f0f0; /* Original: #25c2a0, now a light gray */
-  --ifm-color-secondary-dark: #e6e6e6; /* Original: #21af90, now a slightly darker shade of light gray */
-  --ifm-color-secondary-darker: #dcdcdc; /* Original: #1fa588, now a more subdued gray */
-  --ifm-color-secondary-darkest: #d2d2d2; /* Original: #1a8870, now a deeper gray */
-  --ifm-color-secondary-light: #f4f4f4; /* Original: #29d5b0, now a very light gray */
-  --ifm-color-secondary-lighter: #f9f9f9; /* Original: #32d8b4, now an even lighter gray, nearing white */
-  --ifm-color-secondary-lightest: #ffffff; /* Original: #4fddbf, now pure white */
+  --ifm-color-secondary: #f0f0f0;
+  --ifm-color-secondary-dark: #e6e6e6;
+  --ifm-color-secondary-darker: #dcdcdc;
+  --ifm-color-secondary-darkest: #d2d2d2;
+  --ifm-color-secondary-light: #f4f4f4;
+  --ifm-color-secondary-lighter: #f9f9f9;
+  --ifm-color-secondary-lightest: #ffffff;
 
   --ifm-font-family-base: 'Figtree';
-  --ifm-code-font-size: 95%; /* Unchanged */
+  --ifm-code-font-size: 95%;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Original: rgba(0, 0, 0, 0.1), now a very transparent white for contrast */
 }
