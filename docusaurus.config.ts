@@ -80,58 +80,55 @@ const config: Config = {
         }
       } satisfies Preset.Options,
     ],
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-            route: '/api/common/',
-            id: 'common',
-          },
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-            route: '/api/connector',
-            id: 'connector'
-          },
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-            route: '/api/core',
-            id: 'core'
-          },
-        ],
-        theme: {
-          primaryColor: 'rgb(183,183,183)',
-        },
-      },
-    ],
+    // [
+    //   'redocusaurus',
+    //   {
+    //     // Plugin Options for loading OpenAPI files
+    //     specs: [
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+    //         route: '/api/common/',
+    //         id: 'common',
+    //       },
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+    //         route: '/api/connector',
+    //         id: 'connector'
+    //       },
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+    //         route: '/api/core',
+    //         id: 'core'
+    //       },
+    //     ],
+    //     theme: {
+    //       primaryColor: 'rgb(183,183,183)',
+    //     },
+    //   },
+    // ],
   ],
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
-    // announcementBar: {
-    //   id: 'support_us',
-    //   content: 'Support Us!'
-    // },
     navbar: {
       title: 'Pieces for Developers',
       logo: {
         alt: 'Pieces for Developers',
-        src: 'img/logo.png',
+        src: 'assets/pfd_logo.png',
+        srcDark: 'assets/logoDark.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'docsSidebar',
-          label: 'Docs',
+          sidebarId: 'learnSidebar',
+          label: 'Learn',
           position: 'left',
         },
-        {
-          to: '/api/',
-          label: 'API',
-          position: 'left',
-        },
+        // {
+        //   to: '/api/',
+        //   label: 'Build',
+        //   position: 'left',
+        // },
         {
           href: 'https://github.com/pieces-app/documentation',
           label: 'GitHub',
@@ -146,7 +143,7 @@ const config: Config = {
           items: [
             {
               label: 'Join our community',
-              href: '/community',
+              href: '/docs/community',
             },
             {
               label: 'Discord',

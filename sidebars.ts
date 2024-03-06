@@ -1,11 +1,41 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
-  docsSidebar: [
+  learnSidebar: [
+    // {
+    //   type: 'link',
+    //   label: 'Visit pieces.app',
+    //   href: 'https://pieces.app',
+    // },
+    // {
+    //   type: 'link',
+    //   label: 'Coding Blog',
+    //   href: 'https://code.pieces.app/updates',
+    // },
+    // {
+    //   type: 'link',
+    //   label: 'Product Updates',
+    //   href: 'https://code.pieces.app/updates',
+    // },
+    // {
+    //   type: 'link',
+    //   label: 'Company News',
+    //   href: 'https://news.pieces.app',
+    // },
+    // {
+    //   type: 'ref',
+    //   id: 'community',
+    //   label: 'Community',
+    // },
+    // {
+    //   type: 'ref',
+    //   id: 'support',
+    //   label: 'Support',
+    // },
     {
       type: 'category',
       label: '🛠️️ Installation',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -32,7 +62,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🔌 Apps & Plugins',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -84,7 +114,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '⚙️ Product Features',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -156,7 +186,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '✨ Highlights & Benefits',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -193,7 +223,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '📚 Use Cases',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -215,7 +245,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🌎 FAQs & More',
-      collapsible: false,
+      // collapsible: false,
       items: [
         {
           type: 'doc',
