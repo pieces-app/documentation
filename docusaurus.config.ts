@@ -66,6 +66,8 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: 'learn',
+          routeBasePath: 'learn',
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
@@ -143,7 +145,7 @@ const config: Config = {
           items: [
             {
               label: 'Join our community',
-              href: '/docs/community',
+              href: '/learn/community',
             },
             {
               label: 'Discord',
