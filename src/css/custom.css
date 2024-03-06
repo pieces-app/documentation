@@ -13,7 +13,18 @@
   --ifm-color-primary-light: #383838; /* Original: #33925d, now a lighter dark gray */
   --ifm-color-primary-lighter: #3d3d3d; /* Original: #359962, now a bit lighter */
   --ifm-color-primary-lightest: #424242; /* Original: #3cad6e, now the lightest dark gray before transitioning to lighter shades */
+
+  --ifm-color-secondary: #f0f0f0; /* Original: #25c2a0, now a light gray */
+  --ifm-color-secondary-dark: #e6e6e6; /* Original: #21af90, now a slightly darker shade of light gray */
+  --ifm-color-secondary-darker: #dcdcdc; /* Original: #1fa588, now a more subdued gray */
+  --ifm-color-secondary-darkest: #d2d2d2; /* Original: #1a8870, now a deeper gray */
+  --ifm-color-secondary-light: #f4f4f4; /* Original: #29d5b0, now a very light gray */
+  --ifm-color-secondary-lighter: #f9f9f9; /* Original: #32d8b4, now an even lighter gray, nearing white */
+  --ifm-color-secondary-lightest: #ffffff; /* Original: #4fddbf, now pure white */
+
+  --ifm-font-family-base: 'Figtree';
   --ifm-code-font-size: 95%; /* Unchanged */
+
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Original: rgba(0, 0, 0, 0.1), now a very transparent white for contrast */
 }
 
@@ -26,18 +37,17 @@
   --ifm-color-primary-light: #f4f4f4; /* Original: #29d5b0, now a very light gray */
   --ifm-color-primary-lighter: #f9f9f9; /* Original: #32d8b4, now an even lighter gray, nearing white */
   --ifm-color-primary-lightest: #ffffff; /* Original: #4fddbf, now pure white */
+
+  --ifm-color-secondary: #333333; /* Original: #2e8555, now a dark gray */
+  --ifm-color-secondary-dark: #2e2e2e; /* Original: #29784c, now a slightly darker gray */
+  --ifm-color-secondary-darker: #292929; /* Original: #277148, now even darker */
+  --ifm-color-secondary-darkest: #242424; /* Original: #205d3b, now nearing black */
+  --ifm-color-secondary-light: #383838; /* Original: #33925d, now a lighter dark gray */
+  --ifm-color-secondary-lighter: #3d3d3d; /* Original: #359962, now a bit lighter */
+  --ifm-color-secondary-lightest: #424242; /* Original: #3cad6e, now the lightest dark gray before transitioning to lighter shades */
+
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 }
-
-/* Add padding between sidebar categories and make category title bold */
-/* Do this for all but the last item */
-/*.theme-doc-sidebar-item-category:not(:last-child) {*/
-/*  padding-bottom: 16px;*/
-
-/*  .menu__list-item-collapsible > a {*/
-/*    font-weight: bold;*/
-/*  }*/
-/*}*/
 
 .header-github-link:hover {
   opacity: 0.6;

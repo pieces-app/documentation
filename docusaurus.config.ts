@@ -7,7 +7,6 @@ const config: Config = {
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
   favicon: 'img/favicon.ico',
 
-
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -177,19 +176,19 @@ const config: Config = {
     },
     footer: {
       links: [
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Join our community',
-              href: '/learn/community',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/getpieces',
-            },
-          ],
-        },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     {
+        //       label: 'Join our community',
+        //       href: '/learn/community',
+        //     },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discordapp.gg/getpieces',
+        //     },
+        //   ],
+        // },
         // {
         //   title: 'Social Media',
         //   items: [
