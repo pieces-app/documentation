@@ -242,28 +242,23 @@ const sidebars: SidebarsConfig = {
         },
       ]
     },
-    {
-      type: 'category',
-      label: '🌎 FAQs & More',
-      // collapsible: false,
-      items: [
-        {
-          type: 'doc',
-          id: 'faq',
-          label: 'Frequently Asked Questions',
-        },
-        {
-          type: 'doc',
-          id: 'privacy-policy',
-          label: 'Privacy Policy',
-        },
-        {
-          type:'doc',
-          id: 'terms',
-          label: 'Terms'
-        }
-      ]
-    }
+    // {
+    //   type: 'category',
+    //   label: '🌎 Terms & Policies',
+    //   // collapsible: false,
+    //   items: [
+    //     {
+    //       type: 'doc',
+    //       id: 'privacy-policy',
+    //       label: 'Privacy Policy',
+    //     },
+    //     {
+    //       type:'doc',
+    //       id: 'terms',
+    //       label: 'Terms'
+    //     }
+    //   ]
+    // }
   ],
 };
 

@@ -21,7 +21,7 @@ const config: Config = {
   projectName: 'documentation',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -31,7 +31,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
+  // plugins: [
     // [
     //   '@docusaurus/plugin-ideal-image',
     //   {
@@ -59,7 +59,7 @@ const config: Config = {
     //     }
     //   },
     // ],
-  ],
+  // ],
 
   presets: [
     [
@@ -82,32 +82,32 @@ const config: Config = {
         }
       } satisfies Preset.Options,
     ],
-    // [
-    //   'redocusaurus',
-    //   {
-    //     // Plugin Options for loading OpenAPI files
-    //     specs: [
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-    //         route: '/api/common/',
-    //         id: 'common',
-    //       },
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-    //         route: '/api/connector',
-    //         id: 'connector'
-    //       },
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-    //         route: '/api/core',
-    //         id: 'core'
-    //       },
-    //     ],
-    //     theme: {
-    //       primaryColor: 'rgb(183,183,183)',
-    //     },
-    //   },
-    // ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+            route: '/api/common',
+            id: 'common',
+          },
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+            route: '/api/connector',
+            id: 'connector'
+          },
+          {
+            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+            route: '/api/core',
+            id: 'core'
+          },
+        ],
+        theme: {
+          primaryColor: 'rgb(183,183,183)',
+        },
+      },
+    ],
   ],
 
   themeConfig: {
@@ -124,17 +124,41 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'learnSidebar',
           label: 'Learn',
-          position: 'left',
+          position: 'right',
         },
-        // {
-        //   to: '/api/',
-        //   label: 'Build',
-        //   position: 'left',
-        // },
+        {
+          label: 'Build',
+          position: 'right',
+          items: [
+            {
+              label: 'Common API',
+              to: '/api/common',
+            },
+            {
+              label: 'Connector API',
+              to: '/api/connector',
+            },
+            {
+              label: 'Core API',
+              to: '/api/core',
+            },
+          ],
+        },
+        {
+          to: '/learn/community',
+          label: 'Community',
+          position: 'right',
+        },
+        {
+          to: '/learn/faq',
+          label: 'FAQ',
+          position: 'right',
+        },
         {
           href: 'https://github.com/pieces-app/documentation',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -166,6 +190,19 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Terms & Policies',
+          items: [
+            {
+              label: 'Privacy Policy',
+              href: '/learn/privacy-policy',
+            },
+            {
+              label: 'Terms of Service',
+              href: '/learn/terms',
+            },
+          ],
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Mesh Intelligent Technologies, Inc. All rights reserved.`,
     },
