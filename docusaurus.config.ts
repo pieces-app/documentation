@@ -83,32 +83,32 @@ const config: Config = {
         }
       } satisfies Preset.Options,
     ],
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-            route: '/api/common',
-            id: 'common',
-          },
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-            route: '/api/connector',
-            id: 'connector'
-          },
-          {
-            spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-            route: '/api/core',
-            id: 'core'
-          },
-        ],
-        theme: {
-          primaryColor: 'rgb(183,183,183)',
-        },
-      },
-    ],
+    // [
+    //   'redocusaurus',
+    //   {
+    //     // Plugin Options for loading OpenAPI files
+    //     specs: [
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+    //         route: '/api/common',
+    //         id: 'common',
+    //       },
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+    //         route: '/api/connector',
+    //         id: 'connector'
+    //       },
+    //       {
+    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+    //         route: '/api/core',
+    //         id: 'core'
+    //       },
+    //     ],
+    //     theme: {
+    //       primaryColor: 'rgb(183,183,183)',
+    //     },
+    //   },
+    // ],
   ],
 
   themeConfig: {
@@ -127,24 +127,24 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
-        {
-          label: 'Build',
-          position: 'right',
-          items: [
-            {
-              label: 'Common API',
-              to: '/api/common',
-            },
-            {
-              label: 'Connector API',
-              to: '/api/connector',
-            },
-            {
-              label: 'Core API',
-              to: '/api/core',
-            },
-          ],
-        },
+        // {
+        //   label: 'Build',
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       label: 'Common API',
+        //       to: '/api/common',
+        //     },
+        //     {
+        //       label: 'Connector API',
+        //       to: '/api/connector',
+        //     },
+        //     {
+        //       label: 'Core API',
+        //       to: '/api/core',
+        //     },
+        //   ],
+        // },
         {
           to: '/learn/community',
           label: 'Community',
