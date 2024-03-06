@@ -5,15 +5,13 @@ Learn how to best use and optimize your workflow with Pieces for Developers! Rea
 ## [Start Here to Install Pieces for Developers](https://docs.pieces.app/installation-getting-started/what-am-i-installing)
 
 Choose a topic from the list below to get started with Pieces:
-
-[//]: # (TODO: Get rid of these docs.page links)
-* [Save a Snippet](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials)
-* [Share a Snippet](https://docs.page/pieces-app/documentation/personalized-link-sharing/one-click-snippet-sharing)
-* [Use the Pieces Copilot](https://docs.page/pieces-app/documentation/features/pieces-copilot)
-* [Import Snippets from GitHub](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/import-gists-from-github)
+* [Save a Snippet](https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials)
+* [Share a Snippet](https://docs.pieces.app/personalized-link-sharing/one-click-snippet-sharing)
+* [Use the Pieces Copilot](https://docs.pieces.app/features/pieces-copilot)
+* [Import Snippets from GitHub](https://docs.pieces.app/product-highlights-and-benefits/import-gists-from-github)
 * [Back up and Restore Your Snippets](https://docs.pieces.app/features/back-up-and-restore)
-* [Local Snippet Discovery](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/in-project-snippet-discovery)
-* [FAQs](https://docs.page/pieces-app/documentation/faq)
+* [Local Snippet Discovery](https://docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery)
+* [FAQs](https://docs.pieces.app/faq)
 
 ## Try all of our products:
 * [Pieces Desktop App & Pieces OS](https://docs.pieces.app/installation-getting-started/what-am-i-installing)
