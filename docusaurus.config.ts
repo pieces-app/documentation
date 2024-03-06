@@ -183,19 +183,19 @@ const config: Config = {
             },
           ],
         },
-        {
-          title: 'Social Media',
-          items: [
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/getpieces',
-            },
-            {
-              label: 'YouTube',
-              href: 'https://youtube.com/@getpieces',
-            },
-          ],
-        },
+        // {
+        //   title: 'Social Media',
+        //   items: [
+        //     {
+        //       label: 'Twitter',
+        //       href: 'https://twitter.com/getpieces',
+        //     },
+        //     {
+        //       label: 'YouTube',
+        //       href: 'https://youtube.com/@getpieces',
+        //     },
+        //   ],
+        // },
         {
           title: 'Terms & Policies',
           items: [
