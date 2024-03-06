@@ -7,7 +7,6 @@ Learn how to best use and optimize your workflow with Pieces for Developers! Rea
 Choose a topic from the list below to get started with Pieces:
 
 [//]: # (TODO: Get rid of these docs.page links)
-
 * [Save a Snippet](https://docs.page/pieces-app/documentation/product-highlights-and-benefits/saving-useful-developer-materials)
 * [Share a Snippet](https://docs.page/pieces-app/documentation/personalized-link-sharing/one-click-snippet-sharing)
 * [Use the Pieces Copilot](https://docs.page/pieces-app/documentation/features/pieces-copilot)
