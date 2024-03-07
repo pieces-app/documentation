@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "https://pieces-docs.vercel.app/learn/:path*"
+    }
+  ]
+}
