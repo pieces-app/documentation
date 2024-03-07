@@ -125,11 +125,10 @@ html[data-theme='dark'] .header-github-link:before {
   color: var(--ifm-color-secondary);
   font-weight: bold;
   border-radius: 5px;
-  text-decoration: none;
+  text-decoration: none !important;
 
   &:hover {
     background-color: var(--ifm-color-primary-darkest);
     color: var(--ifm-color-secondary-lightest);
-    text-decoration: none;
   }
 }
