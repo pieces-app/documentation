@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
-  favicon: 'assets/pieces_logos/white_circle.svg',
+  favicon: 'assets/pieces_logos/white_circle.png',
 
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
@@ -53,10 +53,26 @@ const config: Config = {
     //     id: "openapi",
     //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
     //     config: {
-    //       sdk: {
+    //       common: {
     //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/auth0/runtime_auth0_module.yaml',
-    //         outputDir: "docs/api/sdk", // output directory for generated *.mdx and sidebar.js files
+    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+    //         outputDir: "build/api/common", // output directory for generated *.mdx and sidebar.js files
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+    //         },
+    //       },
+    //       connector: {
+    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
+    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+    //         outputDir: "build/api/connector", // output directory for generated *.mdx and sidebar.js files
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+    //         },
+    //       },
+    //       core: {
+    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
+    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+    //         outputDir: "build/api/core", // output directory for generated *.mdx and sidebar.js files
     //         sidebarOptions: {
     //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
     //         },
@@ -78,7 +94,9 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
-          // docItemComponent: "@theme/ApiItem"
+          // docLayoutComponent: "@theme/DocPage",
+          // docItemComponent: "@theme/ApiItem" // derived from docusaurus-theme-openapi-docs
+
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -119,36 +137,6 @@ const config: Config = {
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
-    metadata: [
-      {
-        name: 'description',
-        content: 'Pieces for Developers Documentation',
-      },
-      {
-        name: 'og:description',
-        content: 'Pieces for Developers Documentation',
-      },
-      {
-        name: 'og:image',
-        content: 'assets/pfd_preview.png',
-      },
-      {
-        name: 'og:image:alt',
-        content: 'Pieces for Developers',
-      },
-      {
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      {
-        name: 'twitter:image',
-        content: 'assets/pfd_preview.png',
-      },
-      {
-        name: 'twitter:image:alt',
-        content: 'Pieces for Developers',
-      },
-    ],
     navbar: {
       // title: 'Pieces for Developers',
       logo: {
