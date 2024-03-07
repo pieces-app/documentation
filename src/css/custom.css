@@ -113,7 +113,6 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 /*CTAButton Classes*/
-
 .cta-button {
   display: flex;
   width: fit-content;
@@ -126,9 +125,9 @@ html[data-theme='dark'] .header-github-link:before {
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none !important;
+}
 
-  &:hover {
-    background-color: var(--ifm-color-primary-darkest) !important;
-    color: var(--ifm-color-secondary-lightest) !important;
-  }
+.cta-button:hover {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-secondary-lightest);
 }
