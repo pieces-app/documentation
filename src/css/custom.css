@@ -111,3 +111,25 @@ html[data-theme='dark'] .header-github-link:before {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/*CTAButton Classes*/
+
+.cta-button {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-secondary);
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--ifm-color-primary-darkest);
+    color: var(--ifm-color-secondary-lightest);
+    text-decoration: none;
+  }
+}

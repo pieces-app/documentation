@@ -16,19 +16,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
   return (
     <a
       href={props.href}
-      style={{
-        display: 'flex',
-        width: 'fit-content',
-        alignItems: 'center',
-        fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
-        gap: '10px',
-        padding: '10px 20px',
-        backgroundColor: 'var(--ifm-color-primary)',
-        color: 'var(--ifm-color-secondary)',
-        fontWeight: 'bold',
-        borderRadius: '5px',
-        textDecoration: 'none',
-      }}
+      className={'cta-button'}
     >
       {props.icon || props.iconDark ? (
         colorMode === 'dark' && props.iconDark ? (

@@ -13,10 +13,7 @@ const Image = (props: ImageProps) => {
       alt={props.alt}
       width={props.width}
       height={props.height}
-      style={{
-        borderRadius: '6px',
-        ...props.style
-      }}
+      style={props.style}
     />
   )
 }
