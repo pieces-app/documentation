@@ -128,7 +128,7 @@ html[data-theme='dark'] .header-github-link:before {
   text-decoration: none !important;
 
   &:hover {
-    background-color: var(--ifm-color-primary-darkest);
-    color: var(--ifm-color-secondary-lightest);
+    background-color: var(--ifm-color-primary-darkest) !important;
+    color: var(--ifm-color-secondary-lightest) !important;
   }
 }
