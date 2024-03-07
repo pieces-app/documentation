@@ -17,8 +17,22 @@ _Please note that you **CANNOT go backward in versions.** For example: on one co
 
 Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
 
-1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select `Quit`
-2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows/Linux', value: 'windows-linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
+    2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
+  </TabItem>
+  <TabItem value="windows-linux">
+    1. To quit Pieces OS, right-click the Pieces OS taskbar app and select `Quit`
+    2. To quit Pieces Desktop, click the `X` in the top-right corner of the Pieces Desktop window
+  </TabItem>
+</Tabs>
 
 ### Step 2
 
@@ -63,10 +77,14 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   <TabItem value="windows">
     Once in your `user` folder, you'll need to find your `Documents` folder and click it.
 
+    > You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.
+
     You should now be at the following location: `C:/Users/user/Documents`
   </TabItem>
   <TabItem value="linux">
     Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+
+    > You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.
 
     You should now be at the following location: `~/Users/user/Documents`
   </TabItem>
@@ -119,10 +137,7 @@ Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These fold
     Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select “Send to”, and then select `Compressed (zipped) folder`.
   </TabItem>
   <TabItem value="linux">
-    In your terminal, navigate to the `Documents` folder and run the following command:
-    ```bash
-    zip -r pieces_backup_$(date +%m_%d_%Y).zip com.pieces.os com.pieces.pfd
-    ```
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
   </TabItem>
 </Tabs>
 
