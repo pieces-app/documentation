@@ -3,8 +3,10 @@ title: Getting Started with Pieces for Developers on Windows
 description: Learn how to download, install, and confirm your connected applications on Windows - it only takes 3 steps!
 ---
 
+import { pieces_app } from "../../src/lib/const";
 import Image from "../../src/components/Image";
 import CTAButton from "../../src/components/CTAButton";
+import { Spacer } from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/windows" />
 
@@ -21,32 +23,6 @@ export const ReleasePill = props => {
             marginBottom: "15px"
         }}>{props.children}</p>
     </div>
-}
-
-export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={'https://builds.pieces.app/stages/production/pieces_suite_windows/appinstaller/download'}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const Spacer = () => {
-    return <div style={{ height: "25px" }}></div>
-}
-
-export const Link = props => {
-    return <a href={props.href}>{props.children}</a>
 }
 
 # Getting Started with Pieces for Developers on Windows
@@ -68,7 +44,7 @@ export const Link = props => {
   If you aren't sure which of these you need, click "Download Pieces Suite Installer" above - it will install both applications and manage them as updates are released.
 
   If this isn't your first rodeo, here is the list of downloadable files for windows:
-  - [Pieces OS](/learn/installation-getting-started/pieces-os) Appinstaller (Standalone Windows) | <Link href={"https://builds.pieces.app/stages/production/appinstaller/os_server.appinstaller"}>Download Here</Link>
+  - [Pieces OS](/learn/installation-getting-started/pieces-os) Appinstaller (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/appinstaller/os_server.appinstaller)
   - Pieces for Developers Desktop App Appinstaller (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/appinstaller/pieces_for_x.appinstaller)
   - [Pieces OS](/learn/installation-getting-started/pieces-os) EXE (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/os_server/windows-exe/download)
   - Pieces for Developers Desktop App EXE (Standalone Windows) | [Download Here](https://builds.pieces.app/stages/production/pieces_for_x/windows-exe/download)
@@ -76,7 +52,7 @@ export const Link = props => {
 
 ## Steps to Install
 
-1. Download the Pieces for Developers <a target="_blank" href="{{ links.installation.pieces_suite_manager }}">Installation Manager</a> and proceed with the installation. **This will install the Pieces for Developers Desktop App and Pieces OS.**
+1. Download the Pieces for Developers <a target="_blank" href={pieces_app.links.installation.pieces_suite_manager}>Installation Manager</a> and proceed with the installation. **This will install the Pieces for Developers Desktop App and Pieces OS.**
 
 2. Following the installation, make sure [Pieces OS](/learn/installation-getting-started/pieces-os) is running in the background. Ensure that the Pieces logo appears in your system tray menu.
 

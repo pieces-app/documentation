@@ -7,46 +7,10 @@ nextTitle: Check Out Our Chrome Plugin
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { MiniSpacer } from '../../src/components/Spacers';
+import CTAButton from "../../src/components/CTAButton";
 
 <link rel="canonical" href="https://docs.pieces.app" />
-
-export const InstallButton = props => {
-  return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
-    <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-      <p style={{
-        padding: "8px 20px",
-        borderRadius: "12px",
-        border: "1px solid #f3f5f6",
-        backgroundColor: "black",
-        color: "white",
-        fontWeight: "500",
-        marginBottom: "8px",
-        marginTop: "25px"
-      }}>{props.children}</p>
-    </div>
-  </a>
-};
-
-export const MiniSpacer = () => {
-  return <div style={{ height: "16px"}}></div>
-};
-
-export const CallToAction = props => {
-  return <div style={{
-    marginTop: "150px",
-    marginBottom: "150px",
-    padding: "32px",
-    border: "1px solid gray",
-    borderRadius: "16px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "start"
-  }}>
-    {props.children}
-    <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
-    {props.text}
-  </div>
-};
 
 # What is Pieces OS?
 
@@ -135,17 +99,33 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 <Tabs defaultValue={"macos"}  values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
   <TabItem value="macos">
     <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-    <InstallButton src="/learn/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
+    <CTAButton
+      href={'/learn/installation-getting-started/macos'}
+      label={'See macOS Installation Guide'}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+    />
   </TabItem>
 
   <TabItem value="windows">
     <p>Compatible with Windows 10 version 1809 and higher</p>
-    <InstallButton src="/learn/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
+    <CTAButton
+      href={'/learn/installation-getting-started/windows'}
+      label={'See Windows Installation Guide'}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+    />
   </TabItem>
 
   <TabItem value="linux">
     <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-    <InstallButton src="/learn/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
+    <CTAButton
+      href={'/learn/installation-getting-started/linux'}
+      label={'See Linux Installation Guide'}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+    />
   </TabItem>
 </Tabs>
 

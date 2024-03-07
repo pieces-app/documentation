@@ -6,7 +6,7 @@ nextTitle: Pieces Chrome Plugin
 ---
 
 import CTAButton from "../../src/components/CTAButton";
-import {MiniSpacer} from "../../src/components/Spacers";
+import { MiniSpacer, Spacer } from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/linux" />
 
@@ -24,27 +24,6 @@ export const ReleasePill = props => {
         }}>{props.children}</p>
     </div>
 }
-
-export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "8px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "black",
-                color: "white",
-                fontWeight: "500",
-                marginBottom: "8px",
-                marginTop: "25px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const Spacer = () => {
-    return <div style={{ height: "25px"}}></div>
-};
 
 # Getting Started with Pieces for Developers on Linux
 

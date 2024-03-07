@@ -8,27 +8,9 @@ import TabItem from "@theme/TabItem";
 import CTAButton from "../../src/components/CTAButton";
 import Image from "../../src/components/Image";
 import { MiniSpacer } from "../../src/components/Spacers";
+import GridFlexRow from "../../src/components/GridFlexRow";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
-
-export const GridFlexRow = props => {
-  return <div style={{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'start',
-    flexWrap: "wrap",
-    gap: "16px"
-  }}>{props.children}</div>;
-};
-
-export const GridFlexSpaceEvenlyRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
 
 # Getting Started
 
@@ -42,7 +24,7 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 
 **Download the Pieces for Developers Desktop App and Pieces OS here:**
 
-<GridFlexRow>
+<GridFlexRow type={'start'}>
   <CTAButton
     href="/learn/installation-getting-started/windows"
     label={"Get Pieces for Windows"}
@@ -146,17 +128,17 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 
 Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
-<GridFlexSpaceEvenlyRow>
+<GridFlexRow type={'evenly'}>
     <a href="/learn/extensions-plugins/chrome"><Image width="70px" src="/assets/chrome_logo.png" /></a>
     <a href="/learn/extensions-plugins/jetbrains"><Image width="70px" src="/assets/jetbrains_logo.png" /></a>
     <a href="/learn/extensions-plugins/vscode"><Image width="70px" src="/assets/vscode_logo.png" /></a>
     <a href="/learn/extensions-plugins/edge"><Image width="70pxx" src="/assets/edge_logo.png" /></a>
-</GridFlexSpaceEvenlyRow>
+</GridFlexRow>
 
 <MiniSpacer></MiniSpacer>
 
-<GridFlexSpaceEvenlyRow>
+<GridFlexRow type={'evenly'}>
     <a href="/learn/extensions-plugins/teams"><Image width="70px" src="/assets/teams_logo.png" /></a>
     <a href="/learn/extensions-plugins/obsidian"><Image width="70px" src="/assets/obsidian_logo.png" /></a>
     <a href="/learn/extensions-plugins/jupyterlab"><Image width="70px" src="/assets/jupyterlab_logo.png" /></a>
-</GridFlexSpaceEvenlyRow>
+</GridFlexRow>

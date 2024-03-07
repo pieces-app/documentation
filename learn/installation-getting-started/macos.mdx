@@ -5,7 +5,7 @@ description: Learn how to download, install, and confirm your connected applicat
 
 import Image from "../../src/components/Image";
 import CTAButton from "../../src/components/CTAButton";
-import {MiniSpacer} from "../../src/components/Spacers";
+import { MiniSpacer, Spacer } from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/macos" />
 
@@ -22,46 +22,6 @@ export const ReleasePill = props => {
                 marginBottom: "15px"
             }}>{props.children}</p>
         </div>
-}
-
-export const InstallButtonIntel = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={'https://builds.pieces.app/stages/production/macos_packaging/pkg/download'}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const InstallButtonSilicon = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href="https://builds.pieces.app/stages/production/macos_packaging/pkg-arm64/download">
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const Spacer = () => {
-    return <div style={{ height: "25px" }}></div>
 }
 
 # Getting Started with Pieces for Developers on macOS
