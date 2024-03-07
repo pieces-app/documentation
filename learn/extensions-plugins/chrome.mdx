@@ -5,74 +5,19 @@ description: Learn about the Pieces Chrome Extension, how it functions, and what
 
 import { pieces_app } from "../../src/lib/const";
 import Image from "../../src/components/Image";
+import CTAButton from "../../src/components/CTAButton";
+import { MiniSpacer } from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/chrome" />
 
-export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.chrome}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
+<CTAButton
+  href={pieces_app.links.extensions.chrome}
+  label={'Get the Chrome Extension'}
+  icon={'/assets/chrome_logo.png'}
+  type={'secondary'}
+/>
 
-export const ReleasePill = props => {
-    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p class="dark:text-white text-black"
-               style={{
-                   padding: "8px 20px",
-                   borderRadius: "12px",
-                   border: "1px solid #f3f5f6",
-                   backgroundColor: "transparent",
-                   fontWeight: "500",
-                   marginBottom: "8px",
-                   marginTop: "3px",
-                   marginRight: "16px"
-               }}>{props.children}</p>
-        </div>
-}
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const GridFlexRowBaseline = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap",
-        alignItems: "baseline"
-    }}>{props.children}</div>;
-};
-
-export const HeaderLogoImage = () => {
-    return <Image style={{ marginTop: "0px", marginBottom: "1em", width: "50%" }} src={ "/assets/chrome_logo.png" }/>
-}
-
-export const Spacer = () => {
-    return <div style={{ width: "8px"}}></div>
-};
-
-<GridFlexRow>
-    <InstallButton>Get the Chrome Extension</InstallButton>
-    <ReleasePill children={`Current Version: }`}></ReleasePill>
-</GridFlexRow>
+<MiniSpacer/>
 
 Save, share, and ask questions about code you find online without leaving your current tab by using our Chromium extensions. Note: If you're using Opera or Brave browsers, you are in the right place. Please follow the steps below to install Pieces in your browser, whether you use Chrome, Opera, or Brave.
 

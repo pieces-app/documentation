@@ -17,6 +17,9 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
     <a
       href={props.href}
       className={'cta-button'}
+      style={{
+        fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
+      }}
     >
       {props.icon || props.iconDark ? (
         colorMode === 'dark' && props.iconDark ? (

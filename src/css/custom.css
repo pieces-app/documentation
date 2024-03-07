@@ -117,16 +117,17 @@ html[data-theme='dark'] .header-github-link:before {
   display: flex;
   width: fit-content;
   align-items: center;
-  font-size: 1.25rem;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 8px 18px;
   background-color: var(--ifm-color-primary);
   color: var(--ifm-color-secondary);
   font-weight: bold;
   border-radius: 5px;
+  /*Had to do it this way because the default Infima button styles were not being overridden on the `:hover` event*/
   text-decoration: none !important;
 }
 
+/*Also it didn't like when `:hover` was inside the `cta-button` class so it has to be outside*/
 .cta-button:hover {
   background-color: var(--ifm-color-primary-darkest);
   color: var(--ifm-color-secondary-lightest);
