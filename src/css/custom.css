@@ -88,3 +88,26 @@ html[data-theme='dark'] .header-github-link:before {
   .hero-container > :nth-child(1) { order: 2; }
   .hero-container > :nth-child(2) { order: 1; }
 }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.feature-card {
+  padding: 10px;
+}
+
+@media (max-width: 820px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
