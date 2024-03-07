@@ -137,6 +137,9 @@ const config: Config = {
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
+    metadata: [
+      {name: 'og:image', content: 'assets/pfd_preview.png'},
+    ],
     navbar: {
       // title: 'Pieces for Developers',
       logo: {
