@@ -144,6 +144,7 @@ const config: Config = {
       },
     ],
     announcementBar: {
+      id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
     navbar: {
