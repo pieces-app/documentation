@@ -35,7 +35,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🛠️️ Installation',
-      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -62,7 +61,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🔌 Apps & Plugins',
-      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -114,7 +112,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '⚙️ Product Features',
-      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -186,7 +183,6 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '✨ Highlights & Benefits',
-      // collapsible: false,
       items: [
         {
           type: 'doc',
@@ -205,8 +201,8 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'product-highlights-and-benefits/saving-screenshots',
-          label: 'Save Screenshots & Extract Code',
+          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
+          label: 'Sync Across Devices with GitHub',
         },
         {
           type: 'doc',
@@ -215,15 +211,14 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
-          label: 'Sync Across Devices with GitHub',
+          id: 'product-highlights-and-benefits/saving-screenshots',
+          label: 'Save Screenshots & Extract Code',
         },
       ]
     },
     {
       type: 'category',
       label: '📚 Use Cases',
-      // collapsible: false,
       items: [
         {
           type: 'doc',
