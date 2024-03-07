@@ -1,5 +1,5 @@
 export const Spacer = () => {
-  return <div style={{ height: "100px"}}></div>
+  return <div style={{ height: "50px"}}></div>
 };
 
 export const MiniSpacer = () => {
