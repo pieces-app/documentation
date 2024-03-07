@@ -60,32 +60,23 @@ export const CallToAction = props => {
     </div>
 };
 
-export const InstallButtonWindows = props => {
+export const GetButton = props => {
     return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
-            { props.children }
-            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for Windows</p>
+        <div style={{
+          border: "1px solid white",
+          borderRadius: "12px",
+          padding: "8px",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          gap: "8px",
+        }}>
+            {props.children}
         </div>
     </a>
 }
 
-export const InstallButtonMac = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
-            { props.children }
-            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for macOS</p>
-        </div>
-    </a>
-};
-
-export const InstallButtonLinux = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
-            { props.children }
-            <p style={{color: "white", marginLeft: "8px"}}>See for Linux</p>
-        </div>
-    </a>
-}
 
 export const GridFlexSpaceEvenlyRow = props => {
     return <div style={{
@@ -109,15 +100,18 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 **Download the Pieces for Developers Desktop App and Pieces OS here:**
 
 <GridFlexRow>
-    <InstallButtonWindows src="/learn/installation-getting-started/windows">
-        <img width="20px" src={'/assets/windows_logo_old.png'} />
-    </InstallButtonWindows>
-    <InstallButtonMac src="/learn/installation-getting-started/macos">
-        <Image width="20px" src={"/assets/mac_os.png"} />
-    </InstallButtonMac>
-    <InstallButtonLinux src="/learn/installation-getting-started/linux">
-        <Image width="20px"src={"/assets/linux_logo.png"} />
-    </InstallButtonLinux>
+  <GetButton src="/learn/installation-getting-started/windows">
+    <Image width="20px" src={'/assets/windows_logo_old.png'} />
+    Get Pieces for Windows
+  </GetButton>
+  <GetButton src="/learn/installation-getting-started/macos">
+    <Image width="20px" src={"/assets/mac_os.png"} />
+    Get Pieces for macOS
+  </GetButton>
+  <GetButton src="/learn/installation-getting-started/linux">
+    <Image width="20px"src={"/assets/linux_logo.png"} />
+    Get Pieces for Linux
+  </GetButton>
 </GridFlexRow>
 
 <MiniSpacer></MiniSpacer>

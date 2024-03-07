@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
-  favicon: 'img/favicon.ico',
+  favicon: 'assets/pieces_logos/white_circle.svg',
 
   // Set the production url of your site here
   url: 'https://docs.pieces.app',
@@ -120,11 +120,11 @@ const config: Config = {
   themeConfig: {
     image: 'assets/pfd_preview.png',
     navbar: {
-      title: 'Pieces for Developers',
+      // title: 'Pieces for Developers',
       logo: {
         alt: 'Pieces for Developers',
-        src: 'assets/pfd_logo.png',
-        srcDark: 'assets/logoDark.png',
+        src: 'assets/pieces_logos/wordmark.svg',
+        srcDark: 'assets/pieces_logos/white_wordmark.svg',
       },
       items: [
         {
