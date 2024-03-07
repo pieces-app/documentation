@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Pieces for Developers',
-  tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.',
+  tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers!',
   favicon: 'assets/pieces_logos/white_circle.png',
 
   // Set the production url of your site here
@@ -138,8 +138,14 @@ const config: Config = {
   themeConfig: {
     image: 'assets/pfd_preview.png',
     metadata: [
-      {name: 'og:image', content: 'assets/pfd_preview.png'},
+      {
+        name: 'og:image',
+        content: 'assets/pfd_preview.png'
+      },
     ],
+    announcementBar: {
+      content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
+    },
     navbar: {
       // title: 'Pieces for Developers',
       logo: {
@@ -239,7 +245,6 @@ const config: Config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Mesh Intelligent Technologies, Inc. All rights reserved.`,
     },
-
 
     prism: {
       theme: prismThemes.github,
