@@ -3,7 +3,9 @@ title: Getting Started with Pieces for Developers on macOS
 description: Learn how to download, install, and confirm your connected applications on macOS to start using Pieces for Developers
 ---
 
-import { Image } from "../../src/components/Image";
+import Image from "../../src/components/Image";
+import CTAButton from "../../src/components/CTAButton";
+import {MiniSpacer} from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/macos" />
 
@@ -67,10 +69,19 @@ export const Spacer = () => {
 
 ![Robots installing Pieces for Developers on macOS.](/assets/installation/robots_macos.png)
 
-<InstallButtonIntel>Download Pieces Package (Intel)</InstallButtonIntel>
-<InstallButtonSilicon>Download Pieces Package (Apple Silicon)</InstallButtonSilicon>
+<CTAButton
+  href={'https://builds.pieces.app/stages/production/macos_packaging/pkg/download'}
+  label={'Download Pieces Package (Intel)'}
+  type={'secondary'}
+/>
+<MiniSpacer />
+<CTAButton
+  href={'https://builds.pieces.app/stages/production/macos_packaging/pkg-arm64/download'}
+  label={'Download Pieces Package (Apple Silicon)'}
+  type={'secondary'}
+/>
 
-<Spacer></Spacer>
+<Spacer />
 
 <details>
   <summary>Alternative Installation Methods</summary>

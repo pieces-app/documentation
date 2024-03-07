@@ -1,4 +1,4 @@
-export const Video = ({
+const Video = ({
   src
 }: {
   src: string
@@ -11,3 +11,5 @@ export const Video = ({
     allowFullScreen={true}>
   </iframe>
 );
+
+export default Video;

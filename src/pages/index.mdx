@@ -4,6 +4,8 @@ description: Learn how to best use and optimize your workflow with Pieces for De
 hide_table_of_contents: true
 ---
 
+import CTAButton from "../components/CTAButton";
+
 <div className={'hero-container'}>
   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '20px 0'}}>
     <h1 style={{color: 'var(--ifm-color-primary-darkest)', fontSize: '40px', textAlign: 'center'}}>
@@ -12,7 +14,10 @@ hide_table_of_contents: true
     <p style={{
       color: 'var(--ifm-color-primary-darkest)',
       fontSize: '20px', textAlign: 'center'}}>A contextual AI copilot that learns from your entire workflow and makes contextualized suggestions.</p>
-    <a href="/learn/installation-getting-started/what-am-i-installing" style={{fontSize: '20px', padding: '10px 30px', backgroundColor: 'var(--ifm-color-primary)', color: 'var(--ifm-color-secondary)', fontWeight: 'bold', borderRadius: '5px', textDecoration: 'none', margin: '20px 0'}}>Get Started</a>
+    <CTAButton
+      href={'/learn/installation-getting-started/what-am-i-installing'}
+      label={'Get Started'}
+    />
   </div>
 
   <div style={{maxWidth: '500px', margin: 'auto'}}>

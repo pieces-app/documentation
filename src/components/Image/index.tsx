@@ -5,7 +5,7 @@ type ImageProps = {
   height?: number
 }
 
-export const Image = (props: ImageProps) => {
+const Image = (props: ImageProps) => {
   return (
     <img
       src={props.src}
@@ -15,3 +15,5 @@ export const Image = (props: ImageProps) => {
     />
   )
 }
+
+export default Image;

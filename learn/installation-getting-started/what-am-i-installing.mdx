@@ -3,80 +3,23 @@ title: Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
 ---
 
-import { Image } from "../../src/components/Image";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import CTAButton from "../../src/components/CTAButton";
+import Image from "../../src/components/Image";
+import { MiniSpacer } from "../../src/components/Spacers";
 
 <link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
 
-export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "black",
-                color: "white",
-                fontWeight: "500",
-                marginBottom: "8px",
-                marginTop: "25px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-};
-
 export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
+  return <div style={{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'start',
+    flexWrap: "wrap",
+    gap: "16px"
+  }}>{props.children}</div>;
 };
-
-export const Spacer = props => {
-    return <div style={{ height: "100px"}}></div>
-};
-
-export const MiniSpacer = props => {
-    return <div style={{ height: "16px"}}></div>
-};
-
-export const CallToAction = props => {
-    return <div style={{
-        marginTop: "150px",
-        marginBottom: "150px",
-        padding: "32px",
-        border: "1px solid gray",
-        borderRadius: "16px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "start"
-    }}>
-        {props.children}
-        <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
-        {props.text}
-    </div>
-};
-
-export const GetButton = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{
-          border: "1px solid white",
-          borderRadius: "12px",
-          padding: "8px",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
-          gap: "8px",
-        }}>
-            {props.children}
-        </div>
-    </a>
-}
-
 
 export const GridFlexSpaceEvenlyRow = props => {
     return <div style={{
@@ -100,18 +43,25 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 **Download the Pieces for Developers Desktop App and Pieces OS here:**
 
 <GridFlexRow>
-  <GetButton src="/learn/installation-getting-started/windows">
-    <Image width="20px" src={'/assets/windows_logo_old.png'} />
-    Get Pieces for Windows
-  </GetButton>
-  <GetButton src="/learn/installation-getting-started/macos">
-    <Image width="20px" src={"/assets/mac_os.png"} />
-    Get Pieces for macOS
-  </GetButton>
-  <GetButton src="/learn/installation-getting-started/linux">
-    <Image width="20px"src={"/assets/linux_logo.png"} />
-    Get Pieces for Linux
-  </GetButton>
+  <CTAButton
+    href="/learn/installation-getting-started/windows"
+    label={"Get Pieces for Windows"}
+    icon={'/assets/windows_logo_old.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href="/learn/installation-getting-started/macos"
+    label={"Get Pieces for macOS"}
+    icon={'/assets/mac_os.png'}
+    iconDark={'/assets/mac_os_dark.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href="/learn/installation-getting-started/linux"
+    label={"Get Pieces for Linux"}
+    icon={'/assets/linux_logo.png'}
+    type={'secondary'}
+  />
 </GridFlexRow>
 
 <MiniSpacer></MiniSpacer>
@@ -142,7 +92,7 @@ When you download Pieces for Developers, you'll get two applications: **[Pieces 
     - Navigate snippets visually through the Gallery or List Views
     - Transform snippets from one language to another
     - Sort Snippets by AI-suggested usefulness
-    - Dsecribe a snippet to get a solution to an answer
+    - Describe a snippet to get a solution to an answer
     - Manage your custom cloud domain
     - and so much more!
 </details>
@@ -162,17 +112,33 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 <Tabs defaultValue={"macos"} values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
   <TabItem value="macos">
     <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-    <InstallButton src="/learn/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
+    <CTAButton
+      href="/learn/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+    />
   </TabItem>
 
   <TabItem value="windows">
     <p>Compatible with Windows 10 version 1809 and higher</p>
-    <InstallButton src="/learn/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
+    <CTAButton
+      href="/learn/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+    />
   </TabItem>
 
   <TabItem value="linux">
     <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-    <InstallButton src="/learn/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
+    <CTAButton
+      href="/learn/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+    />
   </TabItem>
 </Tabs>
 

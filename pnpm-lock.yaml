@@ -11,6 +11,9 @@ dependencies:
   '@docusaurus/preset-classic':
     specifier: 3.1.1
     version: 3.1.1(@algolia/client-search@4.22.1)(@types/react@18.2.63)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)(typescript@5.2.2)
+  '@docusaurus/theme-common':
+    specifier: ^3.1.1
+    version: 3.1.1(@docusaurus/types@3.1.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.1(@types/react@18.2.63)(react@18.2.0)

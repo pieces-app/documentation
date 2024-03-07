@@ -82,7 +82,7 @@ html[data-theme='dark'] .header-github-link:before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0px;
+    gap: 0;
   }
 
   .hero-container > :nth-child(1) { order: 2; }
