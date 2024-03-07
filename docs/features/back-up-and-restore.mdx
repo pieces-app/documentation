@@ -17,8 +17,8 @@ _Please note that you **CANNOT go backward in versions.** For example: on one co
 
 Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
 
-1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
-2. To quit Pieces Desktop, select “Pieces” in the top-left of your macOS toolbar and select “Quit”
+1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select `Quit`
+2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
 
 ### Step 2
 
@@ -26,17 +26,22 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   defaultValue={"macOS"}
   values={[
     {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'}
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
   ]}
 >
   <TabItem value="macOS">
-    Open your Finder and navigate to your “Home” folder.
+    Open your Finder and navigate to your `Home` folder.
 
     _If you cannot see your Home folder on the left-hand side of your Finder, simply tap “Shift+Cmd+H” to open it_
 
     <Image zoom alt="Navigating to home folder" src="/assets/backup_database/navigate_to_home.png" />
   </TabItem>
-  <TabItem value="windows-linux">
+  <TabItem value="windows">
+    Open your File Explorer and navigate to the following location: `C:/Users/user`
+  </TabItem>
+  <TabItem value="linux">
+    Open your File Explorer and navigate to the following location: `~/Users/user`
   </TabItem>
 </Tabs>
 
@@ -46,58 +51,117 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   defaultValue={"macOS"}
   values={[
     {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
   ]}
 >
   <TabItem value="macOS">
-    Once in your Home folder, you’ll need to click “Shift+Cmd+.” (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
+    Once in your Home folder, you’ll need to click `Shift+Cmd+.` (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
 
     <Image zoom alt="Selecting your Library Folder" src="/assets/backup_database/selecting_library_folder.png" />
   </TabItem>
-  <TabItem value="windows-linux">
-    Once in your Home folder, you’ll need to click “Shift+Cmd+.” (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
+  <TabItem value="windows">
+    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+
+    You should now be at the following location: `C:/Users/user/Documents`
+  </TabItem>
+  <TabItem value="linux">
+    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+
+    You should now be at the following location: `~/Users/user/Documents`
   </TabItem>
 </Tabs>
 
 ### Step 4
 
-Next, locate the folders titled “com.pieces.os” and “com.pieces.pfd”. These folders represent your Pieces OS & Pieces Desktop databases.
+Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These folders represent your Pieces OS & Pieces Desktop databases.
 
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'},
-  ]}
->
-  <TabItem value="macOS">
-    <Image zoom alt="Selecting Pieces Folders" src="/assets/backup_database/selecting_pieces_folders.png" />
-  </TabItem>
-  <TabItem value="windows-linux">
-  </TabItem>
-</Tabs>
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"macOS"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macOS'},)
+
+[//]: # (    {label: 'Windows/Linux', value: 'windows-linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    <Image zoom alt="Selecting Pieces Folders" src="/assets/backup_database/selecting_pieces_folders.png" />)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows-linux">)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
 
 ### Step 5
 
-Select both folders, right-click, and select “Compress”.
-
-### Step 6
-
 <Tabs
   defaultValue={"macOS"}
   values={[
     {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
   ]}
 >
   <TabItem value="macOS">
-    This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)” as shown below.
-
-    <Image zoom alt="Title Archive with Timestamp" src="/assets/backup_database/title_archive.png" />
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
   </TabItem>
-  <TabItem value="windows-linux">
+  <TabItem value="windows">
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select “Send to”, and then select `Compressed (zipped) folder`.
+  </TabItem>
+  <TabItem value="linux">
+    In your terminal, navigate to the `Documents` folder and run the following command:
+    ```bash
+    zip -r pieces_backup_$(date +%m_%d_%Y).zip com.pieces.os com.pieces.pfd
+    ```
   </TabItem>
 </Tabs>
+
+### Step 6
+
+This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)”.
+
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"macOS"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macOS'},)
+
+[//]: # (    {label: 'Windows', value: 'windows'},)
+
+[//]: # (    {label: 'Linux', value: 'linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # ()
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    <Image zoom alt="Title Archive with Timestamp" src="/assets/backup_database/title_archive.png" />)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows">)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="linux">)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
 
 From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.
 
@@ -116,7 +180,7 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
 
 ### Step 2
 
-Locate the compressed Zip folder containing both your “com.pieces.os” and “com.pieces.pfd” backups.
+Locate the compressed Zip folder containing both your `com.pieces.os` and `com.pieces.pfd` backups.
 
 ### Step 3
 
@@ -131,16 +195,17 @@ Locate the compressed Zip folder containing both your “com.pieces.os” and �
     Navigate back to the “Library” folder either on the same or your different machine.
   </TabItem>
   <TabItem value="windows-linux">
+    Navigate back to the `Documents` folder either on the same or your different machine.
   </TabItem>
 </Tabs>
 
 ### Step 4
 
-Double-click the compressed file to open the contents
+Unzip the compressed backup file.
 
 ### Step 5
 
-This next step is critical. If you have an existing Pieces database already located in your Documents folder, you will see a window similar to what’s shown below.
+This next step is critical. If you have an existing Pieces database already located in your current folder on your device, you will see a window similar to what’s shown below.
 
 <Image zoom alt="Replace dialog popup" src="/assets/backup_database/replace_message.png" />
 
