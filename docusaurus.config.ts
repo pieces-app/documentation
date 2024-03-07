@@ -119,6 +119,36 @@ const config: Config = {
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
+    metadata: [
+      {
+        name: 'description',
+        content: 'Pieces for Developers Documentation',
+      },
+      {
+        name: 'og:description',
+        content: 'Pieces for Developers Documentation',
+      },
+      {
+        name: 'og:image',
+        content: 'assets/pfd_preview.png',
+      },
+      {
+        name: 'og:image:alt',
+        content: 'Pieces for Developers',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:image',
+        content: 'assets/pfd_preview.png',
+      },
+      {
+        name: 'twitter:image:alt',
+        content: 'Pieces for Developers',
+      },
+    ],
     navbar: {
       // title: 'Pieces for Developers',
       logo: {
