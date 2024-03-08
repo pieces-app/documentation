@@ -132,3 +132,24 @@ html[data-theme='dark'] .header-github-link:before {
   background-color: var(--ifm-color-primary-darkest);
   color: var(--ifm-color-secondary-lightest);
 }
+
+
+/*Support Card Classes*/
+.main-card {
+  padding: 0 16px;
+  border-radius: 16px;
+  border: 1px solid #BEBEBE;
+}
+
+.main-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.main-card-header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
