@@ -1,11 +1,9 @@
 const Video = ({
   src,
   type,
-  style
 }: {
   src: string
   type: 'youtube' | 'mp4'
-  style?: React.CSSProperties
 }) => (
   type === 'youtube' ? (
     <iframe
@@ -22,7 +20,9 @@ const Video = ({
       muted={true}
       playsInline={true}
       width={'100%'}
-      style={style}
+      style={{
+        borderRadius: '6px',
+      }}
     >
       <source src={src} type="video/mp4" />
     </video>
