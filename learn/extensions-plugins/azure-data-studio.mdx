@@ -4,69 +4,18 @@ description: Learn about the Pieces Azure Data Studio Extension, how it function
 ---
 
 import { pieces_app } from "../../src/lib/const";
-import Image from "../../src/components/Image";
+import GridFlexRow from "../../src/components/GridFlexRow";
+import CTAButton from "../../src/components/CTAButton";
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/azuredatastudio" />
 
-export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href={pieces_app.links.extensions.azure_data_studio}>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const ReleasePill = props => {
-    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-        <p class="dark:text-white text-black"
-           style={{
-               padding: "8px 20px",
-               borderRadius: "12px",
-               border: "1px solid #f3f5f6",
-               backgroundColor: "transparent",
-               fontWeight: "500",
-               marginBottom: "8px",
-               marginTop: "3px",
-               marginRight: "16px"
-           }}>{props.children}</p>
-    </div>
-}
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const GridFlexRowBaseline = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap",
-        alignItems: "baseline"
-    }}>{props.children}</div>;
-};
-
-export const Spacer = props => {
-    return <div style={{ width: "8px"}}></div>
-};
-
-<GridFlexRow>
-    <InstallButton>Get the Azure Extension</InstallButton>
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.azure_data_studio}
+    label={'Download the Azure Extension'}
+    icon={'/assets/ads_logo.png'}
+    type={'secondary'}
+  />
 </GridFlexRow>
 
 ## Installing the Extension

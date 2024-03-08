@@ -4,9 +4,8 @@ description: Troubleshoot issues before reaching out to Pieces support to get as
 ---
 
 import { pieces_app } from "../../src/lib/const";
-import Image from "../../src/components/Image";
+import { MiniSpacer } from "../../src/components/Spacers";
 import CTAButton from "../../src/components/CTAButton";
-import { MiniSpacer, Spacer } from "../../src/components/Spacers";
 import GridFlexRow from "../../src/components/GridFlexRow";
 
 <link rel="canonical" href="https://docs.pieces.app/extensions-plugins/edge" />
@@ -47,9 +46,9 @@ To view and reuse your snippets, just open the Pieces desktop app or one of our 
 ## Sharing Code with the Pieces Edge Addon
 
 <GridFlexRow type={'start'}>
-    ![The Pieces Edge Addon shows the button that copies and saves a snippet.](/assets/chrome/copy_and_save.png)
-    <Spacer />
-    ![The Pieces Edge Addon shows the button that creates a shareable link.](/assets/chrome/share.png)
+  ![The Pieces Edge Addon shows the button that copies and saves a snippet.](/assets/chrome/copy_and_save.png)
+  <MiniSpacer/>
+  ![The Pieces Edge Addon shows the button that creates a shareable link.](/assets/chrome/share.png)
 </GridFlexRow>
 
 When you click the Share button below a code block, Pieces generates a link that's specifically designed to share useful code with its context. Plus, it's automatically copied to your clipboard once it's generated.
@@ -73,12 +72,10 @@ From the addon's popover menu, you can view your Recently Discovered Snippets. T
 There are a few reasons why the Pieces buttons may not be appearing:
 
 1. **Pieces OS isn't running.**
- - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking on Pieces OS in your Applications folder.
- - If you need to download and install Pieces OS, <a target="_blank" href="/learn/installation-getting-started/what-am-i-installing">visit this link</a>.
-
+    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows). If it isn't there, please launch Pieces OS by clicking on Pieces OS in your Applications folder.
+    - If you need to download and install Pieces OS, <a target="_blank" href="/learn/installation-getting-started/what-am-i-installing">visit this link</a>.
 2. **You've disabled the Pieces buttons for this website.**
- - Double-check that you haven't disabled the Pieces buttons for this site by navigating to the Edge Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
-
+    - Double-check that you haven't disabled the Pieces buttons for this site by navigating to the Edge Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
 3. **This website doesn't have detectable code.**
 The code on this site might be embedded in an iframe or rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
@@ -100,7 +97,7 @@ To customize your Pieces Edge Addon experience, click on the Pieces icon in the 
 
 Hit the Settings icon in the top right and set your preferences.
 
-<Image src="/assets/theme_for_chrome.png" />
+![](/assets/theme_for_chrome.png)
 
 You can adjust the following Settings for the Pieces Edge Addon:
 1. The placement of the Pieces buttons
