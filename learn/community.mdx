@@ -5,17 +5,8 @@ hide_table_of_contents: true
 ---
 
 import { pieces_app } from "../src/lib/const";
-import Image from "../src/components/Image";
 import Video from "../src/components/Video";
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
+import GridFlexRow from "../src/components/GridFlexRow";
 
 # Join our community!
 
@@ -44,14 +35,14 @@ We are a small and passionate team of developers building an amazing suite of pr
 - [Jetbrains Intellij Marketplace](https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets)
 
 ## Stay in-the-know and Get Updates
-<GridFlexRow>
-    <a target="_blank" href="https://facebook.com/getpieces"><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/FACEBOOK_BLURRED" alt="Pieces Facebook Community" /></a>
-    <a target="_blank" href="https://dev.to/get_pieces/" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/DEV_TO_BLURRED" alt="Pieces Dev.to Blog" /></a>
-    <a target="_blank" href="https://twitter.com/getpieces" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/TWITTER_BLURRED" alt="Pieces for Developers ⎸ Twitter Page" /></a>
-    <a target="_blank" href="https://pieces.hashnode.dev/" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/HASHNODE_BLURRED" alt="Pieces for Developers Blog ⎸ Hashnode" /></a>
-    <a target="_blank" href="https://pieces.medium.com/" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/MEDIUM_BLURRED" alt="Pieces for Developers Blog ⎸ Medium" /></a>
-    <a target="_blank" href="https://code.pieces.app/blog" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/PIECES_BLURRED" alt="Pieces for Developers ⎸ Blog" /></a>
-    <a target="_blank" href="https://www.youtube.com/@getpieces" ><Image style={{ marginTop: "0px", marginBottom: "0px" }} src="https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/YOUTUBE_BLURRED" alt="Pieces for Developers ⎸ Youtube Channel" /></a>
+<GridFlexRow type={'start'}>
+  [![Facebook](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/FACEBOOK_BLURRED)](https://facebook.com/getpieces)
+  [![Dev.to](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/DEV_TO_BLURRED)](https://dev.to/get_pieces/)
+  [![Twitter](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/TWITTER_BLURRED)](https://twitter.com/getpieces)
+  [![Hashnode](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/HASHNODE_BLURRED)](https://pieces.hashnode.dev/)
+  [![Medium](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/MEDIUM_BLURRED)](https://pieces.medium.com/)
+  [![Pieces Blog](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/PIECES_BLURRED)](https://code.pieces.app/blog)
+  [![Youtube](https://storage.googleapis.com/pieces_static_resources/vs_code_marketplace/GRAPHICS/COMMUNITY_LOGOS_BLURRED/YOUTUBE_BLURRED)](https://www.youtube.com/@getpieces)
 </GridFlexRow>
 
 ### Subscribe to our <a target="_blank" href={pieces_app.links.videos.youtube_channel}>YouTube Channel</a>
