@@ -5,7 +5,7 @@ description: Learn how to back up and restore your Pieces Database without losin
 
 <link rel="canonical" href="https://docs.pieces.app/features/back-up-and-restore" />
 
-# Backup your Pieces Database - macOS
+# Backup your Pieces Database
 
 <Info>Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.</Info>
 
@@ -17,38 +17,109 @@ _Please note that you **CANNOT go backward in versions.** For example: on one co
 
 Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
 
-1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
-2. To quit Pieces Desktop, select “Pieces” in the top-left of your macOS toolbar and select “Quit”
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows/Linux', value: 'windows-linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
+    2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
+  </TabItem>
+  <TabItem value="windows-linux">
+    1. To quit Pieces OS, right-click the Pieces OS taskbar app and select `Quit`
+    2. To quit Pieces Desktop, click the `X` in the top-right corner of the Pieces Desktop window
+  </TabItem>
+</Tabs>
 
 ### Step 2
 
-Open your Finder and navigate to your “Home” folder.
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    Open your Finder and navigate to your `Home` folder.
 
-_If you cannot see your Home folder on the left-hand side of your Finder, simply tap “Shift+Cmd+H” to open it_
+    _If you cannot see your Home folder on the left-hand side of your Finder, simply tap “Shift+Cmd+H” to open it_
 
-<Image zoom alt="Navigating to home folder" src="/assets/backup_database/navigate_to_home.png" />
+    <Image zoom alt="Navigating to home folder" src="/assets/backup_database/navigate_to_home.png" />
+  </TabItem>
+  <TabItem value="windows">
+    Open your File Explorer and navigate to the following location: `C:/Users/user`
+  </TabItem>
+  <TabItem value="linux">
+    Open your File Explorer and navigate to the following location: `~/Users/user`
+  </TabItem>
+</Tabs>
 
 ### Step 3
 
-Once in your Home folder, you’ll need to click “Shift+Cmd+.” (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    Once in your Home folder, you’ll need to click `Shift+Cmd+.` (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
 
-<Image zoom alt="Selecting your Library Folder" src="/assets/backup_database/selecting_library_folder.png" />
+    <Image zoom alt="Selecting your Library Folder" src="/assets/backup_database/selecting_library_folder.png" />
+  </TabItem>
+  <TabItem value="windows">
+    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+
+    <Info>You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.</Info>
+
+    You should now be at the following location: `C:/Users/user/Documents`
+  </TabItem>
+  <TabItem value="linux">
+    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+
+    <Info>You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.</Info>
+
+    You should now be at the following location: `~/Users/user/Documents`
+  </TabItem>
+</Tabs>
 
 ### Step 4
 
-Next, locate the folders titled “com.pieces.os” and “com.pieces.pfd”. These folders represent your Pieces OS & Pieces Desktop databases.
-
-<Image zoom alt="Selecting Pieces Folders" src="/assets/backup_database/selecting_pieces_folders.png" />
+Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These folders represent your Pieces OS & Pieces Desktop databases.
 
 ### Step 5
 
-Select both folders, right-click, and select “Compress”.
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows', value: 'windows'},
+    {label: 'Linux', value: 'linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
+  </TabItem>
+  <TabItem value="windows">
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select “Send to”, and then select `Compressed (zipped) Folder`.
+  </TabItem>
+  <TabItem value="linux">
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
+  </TabItem>
+</Tabs>
+
+<Info>This may take some time, especially if you have any local LLMs downloaded. If you do have any local LLMs downloaded, you may cancel the compression, open Pieces Desktop App, and delete the local LLMs you have downloaded. However, you MUST restart the guide from `Step 1` if you choose to do this.</Info>
 
 ### Step 6
 
-This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)” as shown below.
-
-<Image zoom alt="Title Archive with Timestamp" src="/assets/backup_database/title_archive.png" />
+This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)”.
 
 From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.
 
@@ -67,22 +138,34 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
 
 ### Step 2
 
-Locate the compressed Zip folder containing both your “com.pieces.os” and “com.pieces.pfd” backups.
+Locate the compressed Zip folder containing both your `com.pieces.os` and `com.pieces.pfd` backups.
 
 ### Step 3
 
-Navigate back to the “Library” folder either on the same or your different machine.
+<Tabs
+  defaultValue={"macOS"}
+  values={[
+    {label: 'macOS', value: 'macOS'},
+    {label: 'Windows/Linux', value: 'windows-linux'},
+  ]}
+>
+  <TabItem value="macOS">
+    Navigate back to the “Library” folder either on the same or your different machine.
+  </TabItem>
+  <TabItem value="windows-linux">
+    Navigate back to the `Documents` folder either on the same or your different machine.
+  </TabItem>
+</Tabs>
 
 ### Step 4
 
-Double-click the compressed file to open the contents
+Unzip the compressed backup file.
 
 ### Step 5
 
-This next step is critical. If you have an existing Pieces database already located in your Documents folder, you will see a window similar to what’s shown below.
+This next step is critical. If you have an existing Pieces database already located in your current folder on your device, you will see a window similar to what’s shown below.
 
 <Image zoom alt="Replace dialog popup" src="/assets/backup_database/replace_message.png" />
-
 
 This step is asking if you’d like to override the existing database with your backup.
 
