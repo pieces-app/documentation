@@ -180,12 +180,12 @@ const config: Config = {
         //   ],
         // },
         {
-          to: '/learn/community',
+          to: '/community',
           label: 'Community',
           position: 'right',
         },
         {
-          to: '/learn/support',
+          to: '/support',
           label: 'Support',
           position: 'right',
         },
@@ -209,7 +209,7 @@ const config: Config = {
         //   items: [
         //     {
         //       label: 'Join our community',
-        //       href: '/learn/community',
+        //       href: '/community',
         //     },
         //     {
         //       label: 'Discord',
