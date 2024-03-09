@@ -2,17 +2,17 @@ const Video = ({
   paths,
   type,
 }: {
+  type: 'youtube'
   paths: {
     youtube: string
   }
-  type: 'youtube'
 } | {
+  type: 'local'
   paths: {
     mp4: string
     webm: string
     ogg: string
   }
-  type: 'local'
 }) => (
   type === 'youtube' ? (
     <iframe
