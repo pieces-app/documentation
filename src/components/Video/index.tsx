@@ -1,19 +1,28 @@
 const Video = ({
-  src,
+  paths,
   type,
 }: {
-  src: string
-  type: 'youtube' | 'mp4'
+  paths: {
+    youtube: string
+  }
+  type: 'youtube'
+} | {
+  paths: {
+    mp4: string
+    webm: string
+    ogg: string
+  }
+  type: 'local'
 }) => (
   type === 'youtube' ? (
     <iframe
       width="100%"
       height="500px"
-      src={src}
+      src={paths.youtube}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen={true}>
     </iframe>
-  ) : type === 'mp4' ? (
+  ) : type === 'local' ? (
     <video
       autoPlay={true}
       loop={true}
@@ -24,7 +33,9 @@ const Video = ({
         borderRadius: '6px',
       }}
     >
-      <source src={src} type="video/mp4" />
+      <source src={paths.mp4} type="video/mp4" />
+      <source src={paths.webm} type="video/webm" />
+      <source src={paths.ogg} type="video/ogg" />
     </video>
   ): null
 );

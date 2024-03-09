@@ -14,7 +14,9 @@ import CTAButton from "../components/CTAButton";
     </h1>
     <p style={{
       color: 'var(--ifm-color-primary-darkest)',
-      fontSize: '1rem', textAlign: 'center'}}>A contextual AI copilot that learns from your entire workflow and makes contextualized suggestions.</p>
+      fontSize: '1rem', textAlign: 'center'}}>
+      A contextual AI copilot that learns from your entire developer workflow, leveling up your productivity and collaboration.
+    </p>
     <CTAButton
       href={'/learn/installation-getting-started/what-am-i-installing'}
       label={'Get Started'}
@@ -26,8 +28,12 @@ import CTAButton from "../components/CTAButton";
     margin: 'auto',
   }}>
     <Video
-      src={'/assets/hero-video.mp4'}
-      type={'mp4'}
+      paths={{
+        mp4: '/assets/hero-video.mp4',
+        webm: '/assets/hero-video.webm',
+        ogv: '/assets/hero-video.ogv',
+      }}
+      type={'local'}
     />
   </div>
 </div>
