@@ -1,0 +1,40 @@
+name: Lighthouse CI
+on:
+  pull_request_target:
+    branches:
+      - main
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+#      - name: Generate URLs
+#        id: urls
+#        uses: actions/github-script@v6
+#        with:
+#          github-token: ${{ secrets.GITHUB_TOKEN }}
+#          script: |
+#            const globber = await glob.create('elements/*/demo/*.html');
+#            const files = await globber.glob();
+#            const urls = files
+#              .map(x => x.match(/([\w-]+)/)[1])
+#              .map(x => `${${{ env.DOMAIN }}}/components/${x}/demo/`)
+#              .join('\n');
+#            core.setOutput('urls', urls);
+
+      - name: Lighthouse CI Action
+        id: lighthouse
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          configPath: './lighthouserc.json'
+          urls: |
+            https://pieces-docs.vercel.app
+            https://pieces-docs.vercel.app/community
+#          budgetPath: ./budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+#          urls: |
+#            ${{ steps.urls.outputs.urls }}
+
