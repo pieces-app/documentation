@@ -19,6 +19,7 @@ const config: Config = {
   projectName: 'documentation',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -29,7 +30,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // plugins: [
+  plugins: [
   //   [
   //     'vercel-analytics',
   //     {
@@ -37,66 +38,38 @@ const config: Config = {
   //         mode: 'auto',
   //     },
   //   ],
-    // [
-    //   '@docusaurus/plugin-ideal-image',
-    //   {
-    //     quality: 70,
-    //     max: 1030, // max resized image's size.
-    //     min: 640, // min resized image's size. if original is lower, use that size.
-    //     steps: 2, // the max number of images generated between min and max (inclusive)
-    //     disableInDev: false,
-    //   },
-    // ],
-    // [
-    //   "docusaurus-plugin-openapi-docs",
-    //   {
-    //     id: "openapi",
-    //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
-    //     config: {
-    //       common: {
-    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-    //         outputDir: "build/api/common", // output directory for generated *.mdx and sidebar.js files
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-    //         },
-    //       },
-    //       connector: {
-    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-    //         outputDir: "build/api/connector", // output directory for generated *.mdx and sidebar.js files
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-    //         },
-    //       },
-    //       core: {
-    //         // specPath: "openapi/sdk.yaml", // path or URL to the OpenAPI spec
-    //         specPath: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-    //         outputDir: "build/api/core", // output directory for generated *.mdx and sidebar.js files
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-    //         },
-    //       }
-    //     }
-    //   },
-    // ],
-  // ],
-
-  // themes: ["docusaurus-theme-openapi-docs"],
+  //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+        indexPages: true,
+      }
+    ]
+  ],
 
   presets: [
     [
       'classic',
       {
         docs: {
-          path: 'learn',
-          routeBasePath: 'learn',
+          path: 'docs',
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
-          // docLayoutComponent: "@theme/DocPage",
-          // docItemComponent: "@theme/ApiItem" // derived from docusaurus-theme-openapi-docs
-
+        },
+        pages: {
+          path: 'src/pages',
+          routeBasePath: '',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          mdxPageComponent: '@theme/MDXPage',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -114,19 +87,19 @@ const config: Config = {
     //     specs: [
     //       {
     //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-    //         route: '/api/common',
+    //         route: '/build/common',
     //         id: 'common',
     //       },
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-    //         route: '/api/connector',
-    //         id: 'connector'
-    //       },
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-    //         route: '/api/core',
-    //         id: 'core'
-    //       },
+    //       // {
+    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+    //       //   route: '/build/connector',
+    //       //   id: 'connector'
+    //       // },
+    //       // {
+    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+    //       //   route: '/build/core',
+    //       //   id: 'core'
+    //       // },
     //     ],
     //     theme: {
     //       primaryColor: 'rgb(183,183,183)',
@@ -148,7 +121,6 @@ const config: Config = {
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
     navbar: {
-      // title: 'Pieces for Developers',
       logo: {
         alt: 'Pieces for Developers',
         src: 'assets/pieces_logos/wordmark.svg',
@@ -161,24 +133,6 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
-        // {
-        //   label: 'Build',
-        //   position: 'right',
-        //   items: [
-        //     {
-        //       label: 'Common API',
-        //       to: '/api/common',
-        //     },
-        //     {
-        //       label: 'Connector API',
-        //       to: '/api/connector',
-        //     },
-        //     {
-        //       label: 'Core API',
-        //       to: '/api/core',
-        //     },
-        //   ],
-        // },
         {
           to: '/community',
           label: 'Community',
@@ -251,11 +205,11 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    algolia: {
-      appId: 'KTOXFODR65',
-      apiKey: '79c81e52460257d3761ea38438e29637',
-      indexName: 'pieces',
-    },
+    // algolia: {
+    //   appId: 'KTOXFODR65',
+    //   apiKey: '79c81e52460257d3761ea38438e29637',
+    //   indexName: 'pieces',
+    // },
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,

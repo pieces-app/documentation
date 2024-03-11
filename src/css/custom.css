@@ -153,3 +153,9 @@ html[data-theme='dark'] .header-github-link:before {
   font-weight: bold;
   margin-left: 12px;
 }
+
+/*Redoc menu fix*/
+.menu-content {
+  position: sticky !important;
+  top: 60px !important;
+}
