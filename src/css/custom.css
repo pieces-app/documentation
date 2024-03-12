@@ -85,6 +85,7 @@ html[data-theme='dark'] .header-github-link:before {
     gap: 0;
   }
 
+  /*Swaps order of `Welcome to Pieces for Developers` and the video on mobile*/
   .hero-container > :nth-child(1) { order: 2; }
   .hero-container > :nth-child(2) { order: 1; }
 }
@@ -155,7 +156,7 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 /*Redoc menu fix*/
-.menu-content {
-  position: sticky !important;
-  top: 60px !important;
-}
+/*.menu-content {*/
+/*  position: sticky !important;*/
+/*  top: 60px !important;*/
+/*}*/

@@ -133,6 +133,19 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
+        // {
+        //   type: 'dropdown',
+        //   label: 'SDKs',
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       type: 'doc',
+        //       label: 'Python SDK',
+        //       docId: 'sdk/',
+        //     },
+        //     // ... more items
+        //   ],
+        // },
         {
           to: '/community',
           label: 'Community',

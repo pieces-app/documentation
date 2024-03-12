@@ -6,6 +6,7 @@ hide_table_of_contents: true
 ---
 
 import CTAButton from "../src/components/CTAButton";
+import Video from "../src/components/Video";
 
 <div className={'hero-container'}>
   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '20px 0'}}>
@@ -24,9 +25,11 @@ import CTAButton from "../src/components/CTAButton";
   </div>
 
   <div style={{
-    maxWidth: '500px',
+    maxWidth: '600px',
     margin: 'auto',
   }}>
+    [//]: # (TODO: Need to either replace with `Video` component or fix edges of video)
+    [//]: # (TODO: Ideally this should use the `Video` component and be mp4/webm/ogg for better performance)
     ![Pieces for Developers](/assets/hero-video.gif)
   </div>
 </div>
