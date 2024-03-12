@@ -16,6 +16,7 @@
     "@cmfcmf/docusaurus-search-local": "^1.1.0",
     "@docusaurus/core": "3.1.1",
     "@docusaurus/preset-classic": "3.1.1",
+    "@docusaurus/theme-classic": "^3.1.1",
     "@docusaurus/theme-common": "^3.1.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -30,6 +31,7 @@
     "@docusaurus/module-type-aliases": "3.1.1",
     "@docusaurus/tsconfig": "3.1.1",
     "@docusaurus/types": "3.1.1",
+    "@types/node": "^20.11.26",
     "typescript": "~5.2.2"
   },
   "browserslist": {
