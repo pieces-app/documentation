@@ -1,0 +1,273 @@
+---
+title: User Settings
+description: You can customize your experience while using Pieces for Developers with different combinations in the Settings menu.
+---
+
+<link rel="canonical" href="https://docs.pieces.app/features/user-settings" />
+
+# User Settings
+While using Pieces, there are a number of customizable features and settings that can be found via the Settings menu. To open the Settings menu use ` , ` or click the `user icon` logo in the search bar. If you are already signed in, you will see the user profile photo that is attached to the account that you're authenticated with.
+
+![User Settings drawer inside of Pieces for Developers Desktop App](/assets/user_settings.png)
+
+From the User Settings menu, you can adjust your experience by:
+- Changing the Frequency of Notifications and Dialogs
+- Switching the Theme
+- Finding Your Current Version
+- Signing In & Out
+- Connecting to the Cloud
+- Changing Default View Modes
+- Adjusting Search Modes
+- and more!
+
+This page explains how to manage all of your personal user settings and how they impact your experience with the Pieces for Developers Desktop App.
+
+## Accounts & Cloud Integrations - Signing In With an Account
+There are a number of accounts that you may already have that you can use to sign in to Pieces Desktop. **Don't forget that when you sign in here, you will be signed in to the same account for any Pieces plugins you have installed.**
+
+### Signing In
+To sign in, select `Connect Accounts` and then follow the steps that apply to you:
+
+- Connecting a Microsoft Account
+    1. Select the Microsoft logo on the right side of the drawer.
+    2. A dialog will open that shows you how to sign in once you press continue.
+        - Watch the GIF to get an understanding of the process.
+    3. Then select `sign up`, and create an account using your Microsoft email address. It will look something like `username@domain.onmicrosoft.com`.
+    4. Then create a password for your account that is being added/created, and press enter once you meet the requirements in the dropdown.
+    5. Select "Accept" to create your account, and you will be redirected back into the application.
+
+- Connecting a GitHub Account
+    1. Select the GitHub logo on the right side of the drawer.
+    2. On the `auth.pieces.services` page, select 'Continue with GitHub.'
+    3. Sign in to GitHub.
+    4. Select `link this account` on the following screen.
+    5. You will then be redirected back into the application.
+
+- Connecting a Google Account
+    1. Select the Google logo on the right side of the drawer.
+    2. On the `auth.pieces.services` page, select 'Continue with Google.'
+    3. Then select the Google account that you would like to use, sign in, and you should be redirected to a confirmation page.
+
+- Connecting with an Email & Password
+    1. Select the envelope logo on the right side of the drawer.
+    2. On the `auth.pieces.services` page, enter your email into the text area and press `continue`.
+    3. Then enter your password and press continue, where you will be redirected to a successful log in screen.
+        - You can also select `Sign up` to create an account and unlock features like [Snippet Sharing](/features/one-click-snippet-sharing).
+
+You will be redirected back into the application, and should now see your email at the top of the drawer. You can see your cloud starting to connect and create your first cloud instance on your account. Note this may take a few seconds to connect, and learn about your personal cloud to see what you can do.
+
+### Signing Out
+Sometimes you may need to sign out and sign back in, or need to change the account that is connected by removing one and adding another. To sign out:
+
+- Click your user icon in the search bar or press `,`
+- Select the cog icon next to your user profile picture on the right side of the drawer.
+- Then at the very bottom of the `Accounts & Cloud Integrations` you can select `sign out` to remove the accounts.
+
+_If you sign out you will not have access to generate shareable links or create GitHub Gists._
+
+### Connecting Multiple Accounts
+You can connect more than one account (e.g., GitHub and Google) to Pieces to perform actions like [Importing Gists from GitHub](/product-highlights-and-benefits/import-gists-from-github). When doing this, there are a few things to look out for:
+
+- Make sure that the primary email on all connected accounts are the same, as it can cause issues between authentication and publishing Gists to the right location.
+- Once you sign in with multiple accounts, any time you sign in again, you will be signed in with all of your connected accounts, not just one.
+
+### Changing Your Password
+To change your password, please sign out of your Pieces account and navigate back to the sign in drawer in your settings. Click to sign in, and enter your email to show the password box below. Press enter, then follow the "Forgot Password" flow to reset it.
+
+If you signed in to Pieces with Microsoft, Google, or GitHub, changing your password on those accounts through the respective provider will also change your Pieces password.
+
+## Private Cloud (Beta)
+When you first sign in, your cloud will start to connect automatically. At other times, your cloud may be connected or disconnected depending on your internet connection. Make sure you have a stable internet connection when connecting to the cloud.
+
+Here are a few of the states your cloud may be in:
+
+| Status | Meaning | Color |
+|---|---|---|
+| Connected | Your Cloud is successfully connected and can be used. | Green |
+| Connecting | Attempting to connect to your Cloud. Depending on the stability of your connection, this can take 10-15s. | Yellow |
+| Disconnected | No internet connection can be made to your Pieces Cloud. | Red |
+
+### Syncing your Snippets via Private Cloud
+At this time, creating an account and a private cloud **does not** sync your snippets between devices or back them up to the cloud. We are working to release this functionality, and plan to do so later this year. In order to retrieve your snippets on another device, we recommend sending them to yourself as shareable links or saving them as GitHub Gists.
+
+If you have more questions about syncing your snippets, please reach out to support@pieces.app.
+
+### Personal Domain
+You can read about your personal cloud domain and shareable links [here](/features/one-click-snippet-sharing).
+
+## Layout
+During onboarding, you can **select your default layout** as List View, Gallery View, or Global Search & Copilot View. In your settings, you can switch your default selection.
+
+The default setting is what will appear when the application loads, but you can toggle between layouts via the ` View Dropdown `.
+
+**List View:**
+The list-style view with a list of your snippets on the left that can be scrolled through vertically with your mouse or `up` and `down` arrow keys.
+
+**Gallery View:**
+A carousel-style view that allows you to view more of your code and navigate horizontally with your `left` and `right` arrow keys.
+
+**Global Search & Copilot View:**
+This view is your portal to [Global Search](/features/global-search) and the [Pieces Copilot](/features/pieces-copilot). This is a great default view if the Pieces Copilot is your most-used feature.
+
+### Default View Sort
+Your Pieces Desktop App has a default sort which affects how your snippets are ordered. You can choose a different default sort for Gallery View and List View if you'd like.
+
+The available settings are:
+- **Recent**
+    - Show all of your snippets in chronological order, `newest --> oldest`
+- **Suggested**
+    - Uses Pieces' ML models to suggest the most useful snippets for you based on language, usage, and other factors
+- **Alphabetical**
+    - Sorts all snippets based on title from `A --> Z`
+- **Language**
+    - Sorts all of your current snippets in alphabetical order by language.
+    - Note that all of your snippets will still be in a flat list, not nested by language.
+
+## Aesthetics
+You can control the visual aspects of the application, including toggling between Light Mode and Dark Mode and minor adjustments to the scale of the application.
+
+### Toggle Light/Dark Mode
+
+**Shortcut:** `⌘/CTRL + SHIFT + T`
+
+You can change your theme from most views in the Pieces Desktop App, _but not all of them_. If your hear a ` boop ` or get no reaction when attempting to adjust the theme, try closing any open dialogs or drawers or open your settings and adjust the theme by pressing the ` Theme Toggle Icon ` on the right side of the settings drawer.
+
+### Zoom In/Zoom Out
+
+**Shortcut:** `⌘/CTRL +` or `⌘/CTRL -`
+
+This will increase or decrease the font size of the application if you need to see more or less code on the screen or get up close with a specific line of text.
+
+## Support
+If you need assistance, more documentation, or want to see a full list of keyboard shortcuts, you can select one of the icons found in this section. You can also pull these up throughout the app using their shortcuts.
+
+### Support Center
+
+**Shortcut:** `⌘/CTRL + ?`
+
+Opens the [Pieces Documentation Center](/) (Yes - that's where we are now) in case you need assistance or are looking for details on Pieces.
+
+### Submit Feedback
+
+**Shortcut:** `SHIFT + !`
+
+If you want to leave feedback on Pieces or are experiencing a bug/issue, fill out this form and we will be in touch!
+
+### Check for Updates
+
+**Shortcut:** `SHIFT + U`
+
+You will likely get a notification as soon as an update is available, but you can also check for updates here. If updates are available, you will be prompted to update. If not, you will receive a notification that you are currently up to date.
+
+### Keyboard Shortcuts
+
+**Shortcut:** `⌘/CTRL + ;`
+
+This opens a file with all the available keyboard shortcuts in the application, even if you are offline with no connection to the internet.
+
+### Launch Onboarding
+If you need to adjust your user persona or the code languages that you use, you can go back through onboarding by pressing the `redo` icon on the right side of the drawer.
+
+## In-App Notifications
+When saving a snippet, copying a snippet, and performing other actions in Pieces Desktop, you will notice different notification messages that confirm the action. There are three settings you can choose from to control your notifications:
+
+**1. None**: Shows no in-app notifications while using snippets or adjusting data
+
+**2. Critical**: Shows only important messages, e.g., error notifications and delete confirmations.
+
+**3. All**: Shows all notifications, including confirmations of copy, paste, duplications, etc.
+
+## Customize
+There are a few specific settings that require a bit more explanation:
+
+### Default Search Modes
+We offer four search modes for users in the Pieces Desktop App that change the search results you receive. Each has its own benefits for rediscovering your code; understanding how each mode works can simplify selecting the right one.
+
+_You can always change these settings when searching by selecting the dropdown next to the ` search hourglass icon `._
+
+#### Blended
+Blended takes advantage of all aspects of your code snippets, and is the **default** setting for Pieces Desktop. When this is set, you can use search in a traditional way, as you would with other search engines.
+
+#### Full Text Search (FTS)
+Full Text Search uses your text to directly match with text in a saved snippet. This matches specific characters, but not semantic meaning. For example:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | Yes |
+| batch | cd copyfiles.bat | No |
+
+#### Neural Code Search (NCS)
+Neural Code Search takes advantage of semantic description and allows you use meaning to find the code you need. Take the above example and notice how the results are different:
+
+| Search | Snippet | Match? |
+|---|---|---|
+| batch | cd batchfile.md | No |
+| batch | cd copyfiles.bat | Yes |
+
+When using NCS, you **searched for a snippet that cds into a batchfile**.
+
+#### Search With Snippet
+Using Search with Snippet allows you to search for other related snippets by pasting a code snippet into search. Your search results will be related code snippets that you've saved to Pieces.
+
+### Confirmation Settings
+When deleting snippets and managing shareable links, there are a few notifications that flag sensitive deletions or updating shareable links when content has changed. The drawer that opens when you select the cog inside your settings has a number of options.
+
+#### Confirm Piece Deletions
+By default, when deleting snippets by pressing `Delete` or from the context drawer, you will get a confirmation message to delete a snippet permanently. If you would like to turn this setting off and hide the confirmation messages, you can select the checkbox here.
+
+**Note: You cannot recover a deleted snippet.**
+
+#### Confirm Context Deletions
+When removing tags, related links, related people, and sensitives, you may want to remove a large number at once. To hide this confirmation notification, you can select `All` or select the individual items that you would like to be notified about before deletion.
+
+#### Updates
+Changing data in snippets with previously generated [shareable links](/features/one-click-snippet-sharing) causes them to update. If you want to hide the notifications that ask you if you would like to update your shareable link with new context, just select the checkbox here.
+
+There is a second checkbox specific to code snippets that contain sensitive information (e.g., API keys).
+
+### Metrics Summary Settings
+When in the Gallery View, you can see a context menu preview that will appear while navigating left and right through your code snippets.
+
+You can adjust if this will automatically show for short snippets, creating a hybrid split view in the carousel.
+
+#### Visibility
+This controls how often the metrics preview will show. `All` will make it always visible; `Navigating` will only show it when navigating left and right in the carousel, but hide it soon after stopping on a single snippet; and `Hovering` will only show it when you hover the context icon on the bottom right of the code snippet in the Gallery view.
+
+## Discover
+Here you can find settings to help you discover more features in Pieces Desktop and other information about the application.
+
+### Release Notes
+
+**Shortcut:** `SHIFT + W`
+
+Use this shortcut to view the latest release notes for Pieces Desktop (and the rest of the Pieces Suite) at [https://code.pieces.app/updates](https://code.pieces.app/updates).
+
+### Power Tips
+Select the light-bulb icon to view a list of power tips for using Pieces. There are 9 power tips that you can view by pressing the `->` arrow. Press  Esc` to return back to the application.
+
+### Plugins
+
+**Shortcut:** `⌘/CTRL +  I`
+
+Select the puzzle piece icon to view a list of links to our Pieces Suite plugins, available to use with the Desktop application. Use keys `1 - 4` to select the plugin you want to install, and it will open in your browser.
+
+### Refer a Friend
+To invite another user to Pieces, select the envelope here, and you will get a link that you can copy and paste to send to someone via chat or text message.
+
+## Community - Become a Beta Tester
+Click here to sign up to be a Beta tester. You can also [click here](https://getpieces.typeform.com/to/XGGlUqEI) to fill out the form to join our Beta program!
+
+## Processing
+You can choose to use local or blended processing to manage your code snippets. Using only local models has shown increases in speed with minor trade-offs, including higher RAM usage. Blended mode utilizes both local and cloud models and gains additional benefits, such as qGPT processing.
+
+Try both modes to find what works best in your environment.
+
+**Note:** Choosing local-only processing ensures that your code remains solely on your device. Learn more about [Privacy & Data Security](/product-highlights-and-benefits/privacy-security-data) at Pieces to determine which processing mode is best for you.
+
+## Telemetry
+You can always adjust the amount of anonymous data that you share with us. By unchecking this box, you ensure that we will not collect data and analytics from your machine. Regardless of collection preferences, we do not collect your code snippets! They are stored on your machine. The data we collect helps us see how often particular actions are taken, what sections of the application are used by the community as a whole, and other data so that we can provide a better experience for you. Personal data is not collected and your code is not shared with any other parties, even when you generate shareable links.
+
+Read more about our [Privacy & Data Security](/product-highlights-and-benefits/privacy-security-data) to get a full look.
+
+## Information
+To share the version number and specific platform build of your version of the Pieces Desktop App, just press the copy button next to either of these items. These are helpful when working with Support on installation and debugging issues.

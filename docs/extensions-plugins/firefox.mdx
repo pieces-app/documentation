@@ -1,0 +1,134 @@
+---
+title: Pieces Firefox Addon
+description: Learn about the Pieces Firefox Addon, how it functions, and what all you can do with this powerful addon in Mozilla Firefox.
+---
+
+import { pieces_app } from "/src/lib/const";
+import { MiniSpacer } from "/src/components/Spacers";
+import CTAButton from "/src/components/CTAButton";
+import GridFlexRow from "/src/components/GridFlexRow";
+
+<link rel="canonical" href="https://docs.pieces.app/extensions-plugins/firefox" />
+
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.firefox}
+    label={'Get the Firefox Addon'}
+    icon={'/assets/firefox_logo.png'}
+    type={'secondary'}
+  />
+</GridFlexRow>
+
+<MiniSpacer/>
+
+Using the Pieces Firefox Addon in parallel with the Pieces Desktop App makes it easier to save code as you move from website to website and brings your Pieces Copilot even closer to your workflow.
+
+![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-11_20_2023.GIF)
+
+## Installing the Addon
+
+:::info
+
+In order to save code with the Pieces Firefox Addon, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a>
+
+:::
+
+To add the addon to Mozilla Firefox, visit our listing on the [Firefox Addons Marketplace](https://addons.mozilla.org/en-US/firefox/addon/pieces-save-code-from-the-web/).
+
+> When first installing the Pieces Firefox Extension, you will have to allow permissions for the extension to work and add buttons to your page around code blocks.
+> - To accept those permissions, follow these steps:
+> 1. Right-click & select "allow permissions for Pieces..." with a Pieces "P" in the right-click context menu
+> 2. Permissions will then be added, **refresh your current tab**, and buttons will now be around the example snippet or other snippets in your browser!
+
+## Saving Snippets with the Pieces Firefox Addon
+
+![The Pieces Web Addon Button for saving.](/assets/chrome/copy_and_save.png)
+
+To save a snippet on the web, click the "Copy and Save" buttons below a code block on a webpage. There are two important things to know when saving snippets with the addon:
+
+1. When you save a code snippet, website, or other asset from a website, they are viewable in the Pieces desktop app and are stored in [Pieces OS](/installation-getting-started/pieces-os).
+2. When saving a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a generated title, annotations, and more.
+
+To view your snippets, simply open the Pieces Desktop App and scroll through them.
+
+## Sharing Code with the Pieces Firefox Addon
+
+![The Pieces Web Addon Button for sharing.](/assets/chrome/share.png)
+
+When you click the "Share" button below a code block, Pieces generates a link that is specifically designed to share useful code with its context. Plus, it's automatically copied to your clipboard once it's generated.
+
+This means that instead of copying code and pasting it into a message, you can create a Pieces shareable link that shares the code and maintains formatting, syntax highlighting, and relevant tags. Your recipient will also get the title, description, related links, and other context about the snippet.
+
+## Pieces Copilot in the Pieces Firefox Addon
+
+By using the Pieces Copilot in the Pieces Firefox Addon, you can chat with the copilot about any code you find on the web. We like opening the Pieces Copilot in the Firefox side panel.
+
+You can chat with Pieces Copilot about any code block, generate new code, and ask other technical questions, similar to chatting with the copilot in the Pieces Desktop App.
+
+## Discovered Snippets
+
+When you click the Pieces icon to open the popover menu, you'll see the snippets that the Pieces Firefox Addon has discovered on that webpage. From this menu, you can easily save any relevant snippets without scrolling back through long pages.
+
+### Recently Discovered Snippets
+
+From the addon's popover menu, you can view your Recently Discovered Snippets. This is a list of the last 100 snippets you've come across on the web, or the last 5 sites you've visited. From here, you can save a snippet without returning to that page. You can adjust the number of sites whose snippets Pieces will remember in the addon settings.
+
+## Troubleshooting the Pieces Buttons
+
+There are a few reasons why the Pieces buttons may not be appearing:
+
+1. Pieces OS isn't running.
+    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows and Linux). If it isn't there, please launch Pieces OS by double-clicking Pieces OS in your Applications folder.
+    - If you need to download and install Pieces OS, [visit this link](/installation-getting-started/pieces-os).
+2. You disabled the Pieces buttons on that website.
+    - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
+    ![](/assets/settings_for_chrome.png)
+3. This website doesn't have detectable code.
+    - The code on this site might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
+
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
+
+### Disabling the Pieces Buttons
+
+If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the addon settings.
+
+1. Right-click the Pieces icon in the top right corner of your browser and choose “Settings.”
+2. Toggle the "Disable Pieces buttons" option. The page will automatically refresh and the Pieces buttons will disappear.
+
+## Customizing the Pieces Addon
+
+To customize your Pieces Firefox Addon experience, click on the Pieces icon in the upper right corner of your browser.
+
+Hit the Settings icon in the top right and set your preferences as you can see here:
+
+![](/assets/theme_for_chrome.png)
+
+You can adjust the following Settings for the Pieces Firefox Addon:
+
+- The placement of the Pieces buttons
+- Toggle between dark and light buttons
+- Decide if you'd like Pieces buttons to be enabled or disabled on a webpage by default
+- Manage your website blacklist
+- Adjust the minimum number of characters necessary to recognize a code block
+- Adjust the functionality of the Copy & Save Button
+Set the number of recent websites for Pieces to display snippets in the History tab of the addon.
+
+## Side panel Window
+The Pieces Firefox Addon utilizes the side panel functionality of your browser to display your discovered snippets, snippet history, or Pieces Copilot chat. When you select "Ask Copilot", a side panel will open with the snippet that you selected pre-populated. Pieces Copilot will give you more information about the snippet. From here, you can continue the conversation and ask more questions about this snippet, save it, or generate more snippets to assist you.
+
+## Uninstalling the Pieces Firefox Addon
+
+To uninstall Pieces:
+
+1. Click the Addon's button in the top right corner of your Firefox window
+2. Choose "More Actions" next to the Pieces for Developers Firefox Addon
+3. Select "Remove from Firefox"
+
+## Support and Community
+
+- [Get Support](/support)
+- [Join our Discord](https://discord.gg/getpieces)

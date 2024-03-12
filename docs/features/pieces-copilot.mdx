@@ -1,0 +1,163 @@
+---
+title: Pieces Copilot
+description: Describe code and the Pieces Copilot will generate it for you, or ask qGPT questions about code you have already saved.
+---
+
+import Video from "/src/components/Video";
+
+<link rel="canonical" href="https://docs.pieces.app/features/pieces-copilot" />
+
+# Pieces Copilot
+Describe and chat about your code with Pieces Copilot. You can ask a technical question and Pieces' ML models will generate functional code to use in your projects.
+
+<Video
+  paths={{
+    mp4: '/assets/personalized-copilot-chats.mp4'
+  }}
+  type={'local'}
+/>
+
+
+## Getting Started With Pieces Copilot
+Navigate to the ` Copilot & Global Search ` view from the dropdown, and you will see the Copilot chat box towards the middle of the app window. If you're looking for more information about Global Search, [you can find details here](https://code.pieces.app/features/global-search).
+
+You can start chatting with the Pieces Copilot using a few different actions:
+
+1. Paste code into the chat box, and the Copilot will let you know if there are any issues.
+    - Try pasting this code snippet:
+        ```javascript
+        function build(){
+            console.log("build starting");
+            let _count;
+            for (let i = 0; i <= 10; i++){
+                _count = _count + 1;
+                console.log($_count);
+            }
+            console.log('counted to ten!');
+        }
+      ```
+      - The Pieces Copilot will identify, explain, and correct a couple of errors.
+2. Ask a technical question, and the Copilot will answer.
+    - Here are a few examples to try:
+        - ` How do I create a flexible div with 8px of padding on both sides? `
+        - ` Loop over a directory of files and write the first line of their contents to a new text file. `
+3. Drag and Drop a screenshot of code, and the Pieces Copilot will extract the code, explain it, and answer questions about it.
+    - Pressing ` Scan Screenshot ` allows you to select a screenshot using your native file picker.
+    - Read about dragging and dropping code into the Pieces Desktop App on the [Saving Screenshots Page](/product-highlights-and-benefits/saving-screenshots).
+
+## Results from Pieces Copilot
+When the Pieces Copilot returns code, you will see a few quick actions at the bottom of the code block. These actions include:
+
+| Action                     | What it Does                                                                                                                                                  |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Save to Pieces             | [Saves the snippet](/product-highlights-and-benefits/saving-useful-developer-materials) to your Pieces repo, so it's available across plugins and extensions. |
+| Share                      | Saves the snippet and generates a [shareable link](/features/one-click-snippet-sharing) to send to another user.                                        |
+| Annotate Code              | Adds comments to the code to describe sections, functions, and variables.                                                                                     |
+| Find Similar Code Snippets | Searches your existing code snippets for code that is similar to the generated snippet.                                                                       |
+| Tell Me More               | Describes the snippet to you in plain text and tells you what the code does.                                                                                  |
+| Repair & Tidy              | Improves the code by removing repetition, loops, or other bad practices.                                                                                      |
+| Show Related Links         | Shows a list of related links to that code snippet and its topic.                                                                                             |
+| Show Related Tags          | Shows tags that are relevant to the snippet.                                                                                                                  |
+
+## Set Your Own Copilot Context
+It's often helpful to ask questions specific to your own code, so you may want to give additional information to the Copilot before asking a question. With Pieces Copilot, you can set your context based on a specific set of files or a directory.
+
+To set your context, follow these steps:
+
+1. Open the **Global Search & Copilot view** from the dropdown next to your search bar.
+2. At the bottom of the Copilot chat, click "Set your Context" below the chat input.
+3. Select how you want to set your context:
+    - **Directories**: Select a single or multiple directories from the filepicker. Pieces recursively uses the files in these folders to answer your questions.
+    - **Files**: Add individual code files to reference when asking your Copilot questions.
+    - **Code Snippets**: Use code snippets that you have already created and saved to Pieces to assist you when asking questions later.
+
+![Setting Context for the Pieces Copilot](/assets/contextual_copilot.png)
+
+The more context you add, the better your Copilot will understand your questions and provide specific responses.
+
+## Snippet Specific Copilot
+When viewing a snippet in Gallery or List View, you can launch copilot on a snippet that you have saved to Pieces for Developers. To do this, use the Quick Action labeled `Launch Copilot` above the snippet in List View.
+
+_Note that if you are in Gallery View, the action buttons are below the code snippet._
+
+Launching Pieces Copilot on a specific snippet - instead of using it in the Global Search view - allows the bot to already have context and additional information about the snippet you want to ask specific questions about. Leveraging the question and answer system, you can ask questions such as:
+
+`What does this snippet do?`
+
+or
+
+`How can I make this snippet better?`
+
+You can keep this very high-level and ask simple questions related to the code snippet as a whole, and you can ask questions about parts of the code.
+
+For example, using the JavaScript code snippet above, you could ask:
+
+- `What is the purpose of the "build" function in this code snippet?`
+- `How does the loop in the build function work?`
+- `What does the variable "_count" represent in this code snippet?`
+- `How many times will the loop iterate in the build function?`
+- `What will be logged to the console when the "build" function finishes counting?`
+
+When you "Launch Copilot" on a snippet, you will get a list of suggested questions to help get you started. You can click any of the options that are put in your chat to start the conversation, then add more questions on top after the bot responds.
+
+### Continuing the Copilot Conversation
+If you are in the midst of a conversation with Pieces Copilot and need to navigate to a different view, reference a separate snippet, or move to another location, **don't worry**. Conversations with Copilot are saved with the snippet that you had the individual conversation about so that you can get back to where you were when jumping around. You'll notice that once you start a conversation, the `Launch Copilot` Quick Action pill will change to `Resume Copilot`.
+
+## Available Copilot Runtimes
+Our Copilot also comes with multiple different LLM runtimes, cloud and local in order fulfill whatever requirements your workflow entails.
+
+#### Cloud Runtimes
+
+##### OpenAI
+- GPT 3.5 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
+- GPT 3.5 Turbo 16k, a highly optimized LLM utilizing a larger set of parameters for more accurate responses.
+- GPT 4, OpenAI's most recent LLM containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
+
+##### Gemini
+- Gemini Pro, Google's most capable AI model, built to be multimodal and able to complete a wide variety of tasks.
+
+##### PaLM 2
+- Chat Bison, a Developer model optimized around key use cases for understanding multi term conversations
+- Code Chat Bison, a model fine-tuned to generate code based on a natural language description
+
+#### Local Runtimes
+:::info
+
+*Local LLMs come with some hefty hardware requirements, please make sure your system can fulfill them before attempting to load one of these models.*
+
+:::
+
+- Llama2 7B, a model trained by Meta AI optimized for completing general tasks, also available in a CPU and GPU runtime.
+    - *Requires a minimum of 5.6GB RAM for the CPU model and 5.6GB of VRAM for the GPU-accelerated model.*
+- Mistral 7B, a dense Transformer, fast-deployed and fine-tuned on code datasets. Small, yet powerful for a variety of use cases. Outperforms Llama 2 13B and 34B on most benchmarks.
+    - *Requires a minimum of 6GB RAM for the CPU model and 6GB of VRAM for the GPU-accelerated model.*
+
+## Plugin Integrations
+
+Our VS Code, Jetbrains, Web Extension, Obsidian, and Jupyter Lab integrations all offer the same copilot chat features, ensuring a consistently powerful experience wherever you need it.
+
+### Features
+1. **Chat with any of your materials, anywhere**
+    - You can use files, folders, and snippets as context in order to ask the copilot about them.
+    ![Selecting Copilot Context in VS Code](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT_CONTEXT_GENERIC/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-COPILOT_CONTEXT_GENERIC-MACOS-16X9-1_31_2024.GIF)
+2. **Select multiple different LLM runtimes, including local LLMs for offline, airgapped security**
+    - We have an extensive list of LLMs to choose from depending on your use case including GPT-3.5, GPT-3.5 16k, GPT-4, PaLM 2 and Gemini, as well as local LLMs such as Llama2 and Mistral (CodeLlama and TinyLlama coming soon).
+    ![Setting Copilot Runtimes in VS Code](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-COPILOT-MACOS-16X9-1_31_2024.GIF.gif)
+3. **Extract code from images**
+    - Extract code from a screenshot either by pasting it into the copilot input, or by clicking on the image icon in the input box.
+    ![OCR in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT_OCR/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-COPILOT_OCR-MACOS-16X9-1_31_2024.GIF.gif)
+4. **Utilize directives to quickly reuse materials as context**
+    - Simply type @ into the input box to see your list of directives or create a custom one.
+    ![Directives in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-DIRECTIVES-MACOS-16X9-1_31_2024.GIF.gif)
+5. **Slash commands to perform quick actions**
+    - Quickly find related people, save snippets, comment code, and more by using a `/` command in the input box.
+    ![Slash Commands in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-SLASH_COMMANDS-MACOS-16X9-1_31_2024.GIF.gif)
+6. **Go back to your past conversations at any time**
+    - Searchable persistent conversations allow you to go back and see all your past interactions with the copilot, synced across all our integrations.
+    ![Persistent Chats in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-PERSISTED_CHATS-MACOS-16X9-1_31_2024.GIF.gif)
+7. **Personalized suggested prompts based on your conversation and saved materials**
+    - We generate suggested prompts for you that are both relevant to what you have saved and what you are chatting with copilot about.
+    ![Suggested Prompts in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/SUGGESTED_MATERIALS/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-SUGGESTED_MATERIALS-MACOS-16X9-1_31_2024.GIF.gif)
+8. **Quickly link back to relevant files**
+    - If the copilot used a file as relevant context, it will show it in the chat window, and you can click on it to view it.
+    ![Linking to Relevant Files in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT_CONTEXT_FILES/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RELATED_FILES-MACOS-16X9-1_31_2024.GIF.gif)

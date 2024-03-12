@@ -129,7 +129,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'learnSidebar',
+          sidebarId: 'docsSidebar',
           label: 'Learn',
           position: 'right',
         },
@@ -144,7 +144,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          to: '/learn/faq',
+          to: '/faq',
           label: 'FAQ',
           position: 'right',
         },
@@ -189,11 +189,11 @@ const config: Config = {
           items: [
             {
               label: 'Privacy Policy',
-              href: '/learn/privacy-policy',
+              href: '/privacy-policy',
             },
             {
               label: 'Terms of Service',
-              href: '/learn/terms',
+              href: '/terms',
             },
           ],
         }

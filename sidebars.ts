@@ -1,29 +1,29 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
-  learnSidebar: [
+  docsSidebar: [
     {
       type: 'category',
       label: '🛠️️ Installation',
       items: [
         {
           type: 'doc',
-          id: 'learn/installation-getting-started/what-am-i-installing',
+          id: 'installation-getting-started/what-am-i-installing',
           label: 'Getting Started',
         },
         {
           type: 'doc',
-          id: 'learn/installation-getting-started/macos',
+          id: 'installation-getting-started/macos',
           label: 'macOS',
         },
         {
           type: 'doc',
-          id: 'learn/installation-getting-started/windows',
+          id: 'installation-getting-started/windows',
           label: 'Windows',
         },
         {
           type: 'doc',
-          id: 'learn/installation-getting-started/linux',
+          id: 'installation-getting-started/linux',
           label: 'Linux',
         },
       ]
@@ -34,47 +34,47 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/chrome',
+          id: 'extensions-plugins/chrome',
           label: 'Chrome Extension',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/edge',
+          id: 'extensions-plugins/edge',
           label: 'Edge Addon',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/firefox',
+          id: 'extensions-plugins/firefox',
           label: 'Firefox Addon',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/jetbrains',
+          id: 'extensions-plugins/jetbrains',
           label: 'Jetbrains Plugin',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/vscode',
+          id: 'extensions-plugins/vscode',
           label: 'VS Code Extension',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/azure-data-studio',
+          id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/obsidian',
+          id: 'extensions-plugins/obsidian',
           label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/jupyterlab',
+          id: 'extensions-plugins/jupyterlab',
           label: 'JupyterLab Extension',
         },
         {
           type: 'doc',
-          id: 'learn/extensions-plugins/teams',
+          id: 'extensions-plugins/teams',
           label: 'Microsoft Teams App',
         },
       ]
@@ -85,67 +85,67 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'learn/features/auto-enrichment',
+          id: 'features/auto-enrichment',
           label: 'Auto Enrichment',
         },
         {
           type: 'doc',
-          id: 'learn/features/back-up-and-restore',
+          id: 'features/back-up-and-restore',
           label: 'Back Up & Restore',
         },
         {
           type: 'doc',
-          id: 'learn/features/code-completion',
+          id: 'features/code-completion',
           label: 'Code Completion',
         },
         {
           type: 'doc',
-          id: 'learn/features/creation-and-generation',
+          id: 'features/creation-and-generation',
           label: 'Creating & Generating Code',
         },
         {
           type: 'doc',
-          id: 'learn/features/global-search',
+          id: 'features/global-search',
           label: 'Global Search',
         },
         {
           type: 'doc',
-          id: 'learn/features/keyboard-shortcuts',
+          id: 'features/keyboard-shortcuts',
           label: 'Keyboard Shortcuts',
         },
         {
           type: 'doc',
-          id: 'learn/features/managing-saved-materials',
+          id: 'features/managing-saved-materials',
           label: 'Material Storage & Management',
         },
         {
           type: 'doc',
-          id: 'learn/features/one-click-snippet-sharing',
+          id: 'features/one-click-snippet-sharing',
           label: 'One Click Sharing',
         },
         {
           type: 'doc',
-          id: 'learn/features/pieces-copilot',
+          id: 'features/pieces-copilot',
           label: 'Pieces Copilot',
         },
         {
           type: 'doc',
-          id: 'learn/features/search-modes',
+          id: 'features/search-modes',
           label: 'Search Modes',
         },
         {
           type: 'doc',
-          id: 'learn/features/transforming-snippets',
+          id: 'features/transforming-snippets',
           label: 'Snippet Transformations',
         },
         {
           type: 'doc',
-          id: 'learn/features/user-settings',
+          id: 'features/user-settings',
           label: 'User Settings',
         },
         {
           type: 'doc',
-          id: 'learn/features/workflow-activity',
+          id: 'features/workflow-activity',
           label: 'Workflow Activity',
         },
       ]
@@ -156,32 +156,32 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
+          id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
           label: 'Connecting to a Remote Pieces OS Instance',
         },
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/in-project-snippet-discovery',
+          id: 'product-highlights-and-benefits/in-project-snippet-discovery',
           label: 'In-Project Snippet Discovery',
         },
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/privacy-security-data',
+          id: 'product-highlights-and-benefits/privacy-security-data',
           label: 'Privacy & Security',
         },
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/sync-across-multiple-devices-using-github',
+          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
           label: 'Sync Across Devices with GitHub',
         },
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/saving-useful-developer-materials',
+          id: 'product-highlights-and-benefits/saving-useful-developer-materials',
           label: 'Save Developer Materials',
         },
         {
           type: 'doc',
-          id: 'learn/product-highlights-and-benefits/saving-screenshots',
+          id: 'product-highlights-and-benefits/saving-screenshots',
           label: 'Save Screenshots & Extract Code',
         },
       ]
@@ -192,28 +192,22 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'learn/use-cases/countless-google-searches',
+          id: 'use-cases/countless-google-searches',
           label: 'Reduce Endless Google Searching',
         },
         {
           type: 'doc',
-          id: 'learn/use-cases/onboard-new-developers',
+          id: 'use-cases/onboard-new-developers',
           label: 'Onboard New Developers',
         },
         {
           type: 'doc',
-          id: 'learn/use-cases/resurfacing-additional-context',
+          id: 'use-cases/resurfacing-additional-context',
           label: 'Resurface Additional Context',
         },
       ]
     },
   ],
-  // buildSidebar: [
-  //   {
-  //     type: 'autogenerated',
-  //     dirName: 'build',
-  //   }
-  // ]
 };
 
 export default sidebars;
