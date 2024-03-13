@@ -139,11 +139,10 @@ const config: Config = {
         //   position: 'right',
         //   items: [
         //     {
-        //       type: 'doc',
+        //       type: 'docSidebar',
+        //       sidebarId: 'pythonSDKSidebar',
         //       label: 'Python SDK',
-        //       docId: 'sdk/',
         //     },
-        //     // ... more items
         //   ],
         // },
         {

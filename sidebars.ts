@@ -208,6 +208,33 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
+  // pythonSDKSidebar: [
+  //   {
+  //     type: 'doc',
+  //     id: 'sdk/python/AssetsApi',
+  //     label: 'Assets API',
+  //   },
+  //   {
+  //     type: 'doc',
+  //     id: 'sdk/python/ConnectorApi',
+  //     label: 'Connector API',
+  //   },
+  //   {
+  //     type: 'doc',
+  //     id: 'sdk/python/ConversationApi',
+  //     label: 'Conversation API',
+  //   },
+  //   {
+  //     type: 'doc',
+  //     id: 'sdk/python/QGPTApi',
+  //     label: 'QGPT API',
+  //   },
+  //   {
+  //     type: 'doc',
+  //     id: 'sdk/python/SearchApi',
+  //     label: 'Search API',
+  //   },
+  // ],
 };
 
 export default sidebars;
