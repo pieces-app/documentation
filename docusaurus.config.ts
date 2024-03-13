@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import {EnumChangefreq} from "sitemap";
 
 const config: Config = {
   title: 'Pieces for Developers',
@@ -39,7 +40,7 @@ const config: Config = {
 
   plugins: [
   //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
-  //   TODO: This plugin is currently in a canary release. We will uncomment this once it is in a stable release
+  //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
   //   [
   //     'vercel-analytics',
   //     {
@@ -47,6 +48,7 @@ const config: Config = {
   //         mode: 'auto',
   //     },
   //   ],
+  //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
   //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
     [
@@ -87,7 +89,13 @@ const config: Config = {
         gtag: {
           trackingID: 'GTM-K8C6QWB',
           anonymizeIP: true,
-        }
+        },
+        sitemap: {
+          changefreq: EnumChangefreq.WEEKLY,
+          priority: 0.8,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       } satisfies Preset.Options,
     ],
     // TODO: Keep this commented out until we have the OpenAPI specs ready
