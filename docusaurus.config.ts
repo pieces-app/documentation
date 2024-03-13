@@ -51,13 +51,7 @@ const config: Config = {
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
   //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        // Options here
-        indexPages: true,
-      }
-    ]
+    require.resolve('docusaurus-lunr-search'),
   ],
 
   presets: [
