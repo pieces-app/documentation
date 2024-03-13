@@ -15,6 +15,7 @@
     "@docusaurus/preset-classic": "3.1.1",
     "@docusaurus/theme-classic": "^3.1.1",
     "@docusaurus/theme-common": "^3.1.1",
+    "@gracefullight/docusaurus-plugin-vercel-analytics": "^1.0.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",

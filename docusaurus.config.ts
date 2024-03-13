@@ -47,6 +47,7 @@ const config: Config = {
   //         mode: 'auto',
   //     },
   //   ],
+    "@gracefullight/docusaurus-plugin-vercel-analytics",
   //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
