@@ -30,7 +30,16 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // TODO: We will add this back in once we have merged into main and removed the local search plugin
+  // algolia: {
+  //   appId: 'KTOXFODR65',
+  //   apiKey: '79c81e52460257d3761ea38438e29637',
+  //   indexName: 'pieces',
+  // },
+
   plugins: [
+  //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
+  //   TODO: This plugin is currently in a canary release. We will uncomment this once it is in a stable release
   //   [
   //     'vercel-analytics',
   //     {
@@ -80,6 +89,7 @@ const config: Config = {
         }
       } satisfies Preset.Options,
     ],
+    // TODO: Keep this commented out until we have the OpenAPI specs ready
     // [
     //   'redocusaurus',
     //   {
@@ -109,6 +119,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // TODO: Need to figure out how to make this override the og:image on all pages
     image: 'assets/pfd_preview.png',
     metadata: [
       {
@@ -116,6 +127,7 @@ const config: Config = {
         content: 'assets/pfd_preview.png'
       },
     ],
+    // This will continuously update to show the latest addition to the documentation site
     announcementBar: {
       id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
@@ -133,6 +145,7 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
+        // TODO: Keep this commented out until we have the OpenAPI specs ready
         // {
         //   type: 'dropdown',
         //   label: 'SDKs',
@@ -170,32 +183,6 @@ const config: Config = {
     },
     footer: {
       links: [
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Join our community',
-        //       href: '/community',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.gg/getpieces',
-        //     },
-        //   ],
-        // },
-        // {
-        //   title: 'Social Media',
-        //   items: [
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/getpieces',
-        //     },
-        //     {
-        //       label: 'YouTube',
-        //       href: 'https://youtube.com/@getpieces',
-        //     },
-        //   ],
-        // },
         {
           title: 'Terms & Policies',
           items: [
@@ -217,11 +204,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    // algolia: {
-    //   appId: 'KTOXFODR65',
-    //   apiKey: '79c81e52460257d3761ea38438e29637',
-    //   indexName: 'pieces',
-    // },
+
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: true,

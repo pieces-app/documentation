@@ -44,21 +44,25 @@ Our <a target="_blank" href="https://pieces.app">Flagship Desktop App</a> provid
 * [Website](https://code.pieces.app)
 * [Release Notes](https://code.pieces.app/updates)
 
-## Contributing
+## How to Contribute
 
-### Installation
+### Prerequisites
+
+You will need `pnpm` installed on your machine. You can install it using npm: `npm install -g pnpm`.
+
+### Install Dependencies
 
 ```
 $ pnpm install
 ```
 
-### Local Development
+### Run Locally
 
 ```
 $ pnpm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command starts a local development server and opens up a browser window on http://localhost:3000. Changes are reflected live without having to restart the server.
 
 ### Build
 
@@ -67,3 +71,5 @@ $ pnpm run build
 ```
 
 This command generates static content into the `build` directory.
+
+You should run this command to ensure that your changes will compile correctly before opening a pull request.
