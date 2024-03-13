@@ -134,7 +134,6 @@ html[data-theme='dark'] .header-github-link:before {
   color: var(--ifm-color-secondary-lightest);
 }
 
-
 /*Support Card Classes*/
 .main-card {
   padding: 0 16px;
@@ -155,8 +154,7 @@ html[data-theme='dark'] .header-github-link:before {
   margin-left: 12px;
 }
 
-/*Redoc menu fix*/
-/*.menu-content {*/
-/*  position: sticky !important;*/
-/*  top: 60px !important;*/
-/*}*/
+/*Sidebar Menu Classes*/
+.menu__link--sublist {
+  font-weight: bold;
+}
