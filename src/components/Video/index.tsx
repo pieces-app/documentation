@@ -10,8 +10,8 @@ const Video = ({
   type: 'local'
   paths: {
     mp4: string
-    webm: string
-    ogg: string
+    webm?: string
+    ogg?: string
   }
 }) => (
   type === 'youtube' ? (
