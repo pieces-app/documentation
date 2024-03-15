@@ -52,12 +52,6 @@ const config: Config = {
     "@gracefullight/docusaurus-plugin-vercel-analytics",
   //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
     require.resolve('docusaurus-lunr-search'),
-    [
-      '@docusaurus/plugin-google-tag-manager',
-      {
-        containerId: 'GTM-K8C6QWB',
-      }
-    ]
   ],
 
   presets: [
@@ -86,10 +80,9 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        // gtag: {
-        //   trackingID: 'GTM-K8C6QWB',
-        //   anonymizeIP: true,
-        // },
+        googleTagManager: {
+          containerId: 'GTM-K8C6QWB',
+        },
         sitemap: {
           changefreq: EnumChangefreq.WEEKLY,
           priority: 0.8,
