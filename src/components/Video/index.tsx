@@ -9,7 +9,7 @@ const Video = ({
 } | {
   type: 'local'
   paths: {
-    mp4: string
+    mp4?: string
     webm?: string
     ogg?: string
   }
@@ -30,7 +30,7 @@ const Video = ({
       playsInline={true}
       width={'100%'}
       style={{
-        borderRadius: '6px',
+        borderRadius: '8px',
       }}
     >
       <source src={paths.mp4} type="video/mp4" />
