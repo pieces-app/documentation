@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/product-highlights-and-benefits/import-gists-from-github/",
+      "source": "/product-highlights-and-benefits/import-gists-from-github",
       "destination": "/product-highlights-and-benefits/saving-to-and-from-github-gists",
       "statusCode": 301
     }
