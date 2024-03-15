@@ -50,6 +50,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 }
 
+/*Styles for links in paragraphs*/
+/*Without this, links look the same as text as default*/
 p > a {
 /*  add underline*/
   text-decoration: underline;
