@@ -1,0 +1,109 @@
+{
+  "redirects": [
+    {
+      "source": "/additional-features-and-settings",
+      "destination": "/features/one-click-snippet-sharing#connecting-a-custom-cloud-domain",
+        "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/ai-generated-labels",
+      "destination": "/features/auto-enrichment",
+      "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/ai-smart-descriptions",
+      "destination": "/features/auto-enrichment",
+      "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/origin-details",
+      "destination": "/features/auto-enrichment",
+      "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/related-links-external-resources",
+      "destination": "/features/auto-enrichment#related-links",
+      "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/related-people",
+      "destination": "/features/auto-enrichment",
+      "statusCode": 301
+    },
+    {
+      "source": "/context-awareness-engine/smart-warnings",
+      "destination": "/features/auto-enrichment#smart-warnings-and-sensitive-information-detection",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/azuredatastudio",
+      "destination": "/extensions-plugins/azure-data-studio",
+        "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/jupyter",
+      "destination": "/extensions-plugins/jupyterlab",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins-support/troubleshooting-chrome",
+      "destination": "/extensions-plugins/chrome",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins-support/troubleshooting-edge",
+      "destination": "/extensions-plugins/edge",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins-support/troubleshooting-jetbrains",
+      "destination": "/extensions-plugins/jetbrains",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins-support/troubleshooting-vscode",
+      "destination": "/extensions-plugins/vscode",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/copilot-plugin",
+      "destination": "/features/pieces-copilot#plugin-integrations",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/import-gists-from-github",
+      "destination": "/product-highlights-and-benefits/saving-to-and-from-github-gists",
+      "statusCode": 301
+    },
+    {
+      "source": "/frequently-asked-questions",
+      "destination": "/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/one-click-snippet-sharing",
+      "destination": "/features/one-click-snippet-sharing",
+      "statusCode": 301
+    },
+    {
+      "source": "/our-community",
+      "destination": "/community",
+      "statusCode": 301
+    },
+    {
+      "source": "/overview",
+      "destination": "/installation-getting-started/what-am-i-installing",
+      "statusCode": 301
+    },
+    {
+      "source": "/single-click-link-sharing",
+      "destination": "/features/one-click-snippet-sharing",
+      "statusCode": 301
+    },
+    {
+      "source": "/use-cases/take-back-your-time",
+      "destination": "/use-cases/countless-google-searches",
+      "statusCode": 301
+    }
+  ]
+}

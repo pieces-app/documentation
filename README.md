@@ -8,7 +8,7 @@ Choose a topic from the list below to get started with Pieces:
 * [Save a Snippet](https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials)
 * [Share a Snippet](https://docs.pieces.app/personalized-link-sharing/one-click-snippet-sharing)
 * [Use the Pieces Copilot](https://docs.pieces.app/features/pieces-copilot)
-* [Import Snippets from GitHub](https://docs.pieces.app/product-highlights-and-benefits/import-gists-from-github)
+* [Import Snippets from GitHub](https://docs.pieces.app/product-highlights-and-benefits/saving-to-and-from-github-gists)
 * [Back up and Restore Your Snippets](https://docs.pieces.app/features/back-up-and-restore)
 * [Local Snippet Discovery](https://docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery)
 * [FAQs](https://docs.pieces.app/faq)
