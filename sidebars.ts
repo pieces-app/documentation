@@ -207,6 +207,25 @@ const sidebars: SidebarsConfig = {
         },
       ]
     },
+    {
+      type: 'category',
+      label: '🌱 Resources',
+      items: [
+        {
+          type: 'doc',
+          id: 'community',
+        },
+        {
+          type: 'doc',
+          id: 'support',
+        },
+        {
+          type: 'doc',
+          id: 'faq',
+          label: 'FAQs',
+        },
+      ]
+    }
   ],
   // TODO: We will uncomment this once we have the Python SDK ready
   // Will also need to add sidebars for each SDK we support
