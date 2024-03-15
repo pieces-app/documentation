@@ -72,7 +72,7 @@ export const pieces_app = {
         save_materials: "https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials",
         save_screenshots: "https://docs.pieces.app/product-highlights-and-benefits/saving-screenshots",
         in_project_snippet_discovery: "https://docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery",
-        import_gists: "https://docs.pieces.app/product-highlights-and-benefits/import-gists-from-github"
+        import_gists: "https://docs.pieces.app/product-highlights-and-benefits/saving-to-and-from-github-gists"
       },
       context_awareness_engine: {
         origin_details: "https://docs.pieces.app/features/auto-enrichment#origin-details",
