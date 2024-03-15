@@ -9,7 +9,7 @@ const Video = ({
 } | {
   type: 'local'
   paths: {
-    mp4?: string
+    mp4: string
     webm?: string
     ogg?: string
   }
