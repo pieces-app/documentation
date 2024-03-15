@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/product-highlights-and-benefits/import-gists-from-github/",
+      "destination": "https://docs.pieces.app/product-highlights-and-benefits/saving-to-and-from-github-gists",
+      "statusCode": 301
+    }
+  ]
+}
