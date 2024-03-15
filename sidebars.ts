@@ -222,7 +222,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'faq',
-          label: 'FAQs',
+          label: 'FAQ',
         },
       ]
     }
