@@ -50,6 +50,15 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 }
 
+p > a {
+/*  add underline*/
+  text-decoration: underline;
+}
+
+p > a:hover {
+  text-decoration-thickness: 2px;
+}
+
 /*NavBar Classes*/
 .header-github-link:hover {
   opacity: 0.6;
