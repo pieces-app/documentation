@@ -80,9 +80,8 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
-          trackingID: 'GTM-K8C6QWB',
-          anonymizeIP: true,
+        googleTagManager: {
+          containerId: 'GTM-K8C6QWB',
         },
         sitemap: {
           changefreq: EnumChangefreq.WEEKLY,
