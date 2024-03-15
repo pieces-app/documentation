@@ -3,11 +3,13 @@ title: Sync Across Multiple Devices using GitHub
 description: Follow this guide to get started with manually syncing your code snippets on multiple devices, so you always have them.
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/product-highlights-and-benefits/sync-across-multiple-devices-using-github.mdx" />
-
 # Sync Across Multiple Devices using GitHub
 
-<Info>This is a manual process and is still in early beta. If you have any issues with the process below, please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).</Info>
+:::info
+
+This is a manual process and is still in early beta. If you have any issues with the process below, please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).
+
+:::
 
 This guide uses VS Code, since it is free and the steps for configuration are not too advanced. This can be replicated using any version control flow that you use.
 
@@ -26,13 +28,13 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 **You should start this guide on the computer that has your snippets saved on it.**
 
 ## Setup Steps (15-20 minutes)
-1. [Backup your current Pieces Database](https://docs.pieces.app/features/back-up-and-restore#creating-the-backup) **(Computer #1)**
+1. [Backup your current Pieces Database](/features/back-up-and-restore#creating-the-backup) **(Computer #1)**
     - This is very important to ensure you do not lose any snippets or files during the syncing process in case something goes wrong
-2. [Quit/Turn off Pieces OS](https://docs.pieces.app/features/back-up-and-restore#step-1) on both computers
+2. [Quit/Turn off Pieces OS](/features/back-up-and-restore#step-1) on both computers
     - Ensure it is off until the guide specifically tells you to turn it back on
 3. Ensure that you are on the computer where your snippets are the most up to date (Computer #1)
 4. Open the following folder in your IDE or terminal:
-    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - macOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production/Pieces`
     - Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 5. In the VS Code terminal, run the following command to initialize a git repository: `git init`
@@ -47,7 +49,6 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 
     # If you use another software that adds files to the project root
     # Add them here
-
     ```
 7. Now go to your browser and follow these steps to create a private repository (We used GitHub but is similar on other VCSs):
     1. If you are using VS Code, you can **skip to step #7** because it will automatically create a new repository for you
@@ -62,7 +63,6 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
     8. Click "Create repository"
     9. Copy the HTTPS link that should be in the “Quick setup” section of the page
         - This will be used to set your Pieces snippet folder to this GitHub repository
-
 8. Now we will commit and push your snippets to the remote repository:
     1. Go to your IDE or terminal you have open from step #3
     2. Stage and commit all changes
@@ -71,11 +71,11 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 9. Switch to your other computer **(Computer #2)**
 10. Ensure that Pieces OS is turned off on this computer
 11. Open the following folder in your IDE or terminal:
-    - MacOS: `~/Users/user/Library/com.pieces.os/production`
+    - macOS: `~/Users/user/Library/com.pieces.os/production`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production`
     - Linux: `~/Users/user/Documents/com.pieces.os/production`
 12. Delete the following folder named **Pieces**:
-    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - macOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production/Pieces`
     - Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 13. Go to [https://github.com](https://github.com)
@@ -95,15 +95,15 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 Now let’s test that snippets sync between your computers.
 
 1. Create a new snippet on Computer #2
-2. [Turn Pieces OS off](https://docs.pieces.app/features/back-up-and-restore#step-1)
+2. [Turn Pieces OS off](/features/back-up-and-restore#step-1)
 3. Go to the folder of your repository:
-    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - macOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production/Pieces`
     - Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 4. Commit and Push all changes to your remote repository
 5. Go to computer #1 (Pieces OS should still be off on this computer)
 6. Go to the folder of your repository:
-    - MacOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
+    - macOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production/Pieces`
     - Linux: `~/Users/user/Documents/com.pieces.os/production/Pieces`
 7. **If there are any pending changes for your repository, ensure you discard those changes before continuing the guide.**
@@ -120,18 +120,18 @@ In order to keep your snippets in sync between your computers, follow these step
 - Computer #2: Out of date computer
 
 **On Computer #1:**
-1. [Turn Pieces OS Off](https://docs.pieces.app/features/back-up-and-restore#step-1)
+1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1)
 2. Commit and push changes to your remote repository
 
 **On Computer #2:**
-1. [Turn Pieces OS Off](https://docs.pieces.app/features/back-up-and-restore#step-1)
+1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1)
 2. Discard any pending changes
     - **do not attempt any merges. If computer #2 has any changes at all, you must discard them.**
 3. Pull the latest changes from the remote repository
 
 
 ## Important Notes
-- [Pieces OS should be completely turned off](https://docs.pieces.app/features/back-up-and-restore#step-1) during the entire syncing process
+- [Pieces OS should be completely turned off](/features/back-up-and-restore#step-1) during the entire syncing process
 - Both Pieces OS instances need to be on the same version for syncing to work properly
-- Local LLM models are not synced between computers so you will have to install them on your other computer
+- Local LLM models are not synced between computers, so you will have to install them on your other computer
 - If you are syncing Computer #1 to Computer #2 and there are any uncommitted changes on Computer #2, you must discard those changes.

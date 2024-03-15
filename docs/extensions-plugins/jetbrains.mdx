@@ -3,88 +3,47 @@ title: Pieces for Developers JetBrains Plugin
 description: Troubleshoot issues on your own before reaching out to Pieces support to get assistance with the Pieces for Developers JetBrains Plugin.
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/extensions-plugins/jetbrains" />
+import { pieces_app } from "/src/lib/const";
+import { MiniSpacer } from "/src/components/Spacers";
+import GridFlexRow from "/src/components/GridFlexRow";
+import CTAButton from "/src/components/CTAButton";
 
-export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.jetbrains }}">
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const ReleasePill = props => {
-    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-        <p class="dark:text-white text-black"
-           style={{
-               padding: "8px 20px",
-               borderRadius: "12px",
-               border: "1px solid #f3f5f6",
-               backgroundColor: "transparent",
-               fontWeight: "500",
-               marginBottom: "8px",
-               marginTop: "3px",
-               marginRight: "16px"
-           }}>{props.children}</p>
-    </div>
-}
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const HeaderLogoImage = props => {
-    return <img style={{ marginLeft: "0px", height: "30%", marginRight: "12px" }} src={ "/assets/jetbrains_logo.png" }/>
-}
-
-<GridFlexRow>
-    <h1>Pieces JetBrains Plugin</h1>
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.jetbrains}
+    label={'Download the JetBrains Plugin'}
+    icon={'/assets/jetbrains_logo.png'}
+    type={'secondary'}
+  />
 </GridFlexRow>
 
-<GridFlexRow>
-    <InstallButton>Get the JetBrains Plugin</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.jetbrains }}"></ReleasePill>
-</GridFlexRow>
+<MiniSpacer />
 
 Using the Pieces for Developers JetBrains Plugin in combination with the Pieces Desktop App makes saving and reusing code simple within your IDE.
 
 ## Installing the Pieces for Developers JetBrains Plugin
-<Info>In order to use the Pieces JetBrains Plugin, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.</Info>
 
-You can install the JetBrains plugin through the <a target="blank" href="https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets">JetBrains Marketplace</a> or by searching for Pieces in the plugins search of your IDE. 
+:::info
+
+In order to use the Pieces JetBrains Plugin, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.
+
+:::
+
+You can install the JetBrains plugin through the <a target="blank" href={pieces_app.links.extensions.jetbrains}>JetBrains Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the plugin, you can begin using Pieces without restarting your IDE.
 
 ## Save Snippets to Pieces for JetBrains
 To save code to Pieces from your JetBrains IDE, simply highlight the snippet or file and save with:
 1. Keyboard Shortcut
- 
     - Windows: ```CTRL + P(x2)```
- 
-    - MacOS: ```CMD + P```
-
+    - macOS: ```CMD + P```
 2. Right Click
- 
-    - Right-click and select "Save to Pieces"
+    - Right-click and select `Save to Pieces`
 
 ## View Saved Snippets
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/TREE_VIEW_JETBRAINS.gif" />
+![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/TREE_VIEW_JETBRAINS.gif)
 
 There are a few ways to view your full list of code snippets in your IDE.
 
@@ -100,7 +59,7 @@ There are a few ways to view your full list of code snippets in your IDE.
 The Sidebar Menu automatically expands the folder of language snippets that match the file where you're currently working.
 
 ### Preview Saved Snippets in Markdown
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SMARTDESCRIPTIONS_JETBRAINS.gif" />
+![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SMARTDESCRIPTIONS_JETBRAINS.gif)
 
 If you'd like to get a closer look at a snippet before adding it to your project, double-click on the snippet in the list view, and it will open in a Markdown preview. You'll be able to see the snippet and its context, including any tags, descriptions, titles, related links, and related people.
 
@@ -122,7 +81,7 @@ Sometimes, when saving new snippets from other plugins and extensions, you'll ha
 Utilize the Pieces Copilot from Pieces for Jetbrains— no need to leave your IDE. You will not have to change your settings in the Pieces Desktop App.
 <a href='/features/copilot-plugin'>A familiar chat experience spread across all your favorite text editing softwares</a>
     - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Obsidian, and Jupyter Lab.
-    
+
 ### Select your Copilot Runtime
 With the Pieces for Jetbrains plugin, there are multiple LLMs that you can utilize depending on the model you prefer for your specific environment. You can read more about the different copilot models that you can choose from on [this page](/features/pieces-copilot).
 
@@ -144,7 +103,7 @@ If your snippets are not updating right away, try pressing the refresh button at
 You can also find saved snippets while searching in the 'All' tab, as results come from anywhere in your IDE.
 
 ## Edit Snippets with the JetBrains Plugin
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/EDIT_SNIPPET_JETBRAINS.gif" />
+![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/EDIT_SNIPPET_JETBRAINS.gif)
 
 Editing a snippet is super easy and can be done within your IDE without opening a separate window. When you edit, a new tab will open so that you can adjust the contents of your code snippet.
 
@@ -157,16 +116,20 @@ To open and edit a previously saved snippet:
 You can adjust your snippet's name, description, and classification from the right-click context menu.
 
 ## Use Suggested Save in JetBrains
-Pieces can intelligently identify and save snippets based on re-use patterns in your JetBrains workflow. Whenever Pieces saves a snippet, you'll see a "Saved a Piece!" confirmation in the bottom right corner of your screen. Your snippet is now saved in Pieces with auto-generated metadata. 
+Pieces can intelligently identify and save snippets based on re-use patterns in your JetBrains workflow. Whenever Pieces saves a snippet, you'll see a "Saved a Piece!" confirmation in the bottom right corner of your screen. Your snippet is now saved in Pieces with auto-generated metadata.
 
-<Image zoom src = "https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SUGGESTED_SNIPPETS_JETBRAINS.gif"/>
+![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SUGGESTED_SNIPPETS_JETBRAINS.gif)
 
-<Info>To opt-out of Suggested Save, go to `Preferences, Tools, Pieces` and click on Suggested Save.</Info>
+:::info
+
+To opt-out of Suggested Save, go to `Preferences, Tools, Pieces` and click on Suggested Save.
+
+:::
 
 ## Suggested Snippets
 Pieces offers you relevant code snippets based on your current activities and saved snippets. To access the suggested snippets, open the Pieces plugin and click on the dropdown menu labeled `Suggested snippets`. Here, you will be presented with a selection of code snippets that are closely aligned with your ongoing JetBrains workflow. The more you utilize the suggested code snippets, the more accurate and relevant they become to your coding style and the workflow.
 
-<Image zoom src="https://i.ibb.co/XtRM8pb/suggested-snippet.jpg"/>
+![](https://i.ibb.co/XtRM8pb/suggested-snippet.jpg)
 
 ## Explored Materials
 Exploring materials with Pieces Insights enables you to gain deeper insights into a code snippet without needing to store it in your repository.
@@ -183,7 +146,11 @@ If you'd like to automatically save your explored materials to your Pieces repos
 
 Explored materials can be organized independently for various JetBrains products, or they can be synchronized by selecting the desired preference from the dropdown menu within the insights storage settings.
 
-<Info>In order to Explore Materials, you must be connected to your Pieces Cloud.</Info>
+:::info
+
+In order to Explore Materials, you must be connected to your Pieces Cloud.
+
+:::
 
 ## Related Materials
 Related materials are code snippets that are similar to the code you're currently working on. Pieces is capable of identifying related code snippets, even if you're interested in code that isn't originally part of the Pieces snippet. To find related materials:
@@ -192,7 +159,7 @@ Related materials are code snippets that are similar to the code you're currentl
 2. Right-click and select “Find Related Materials in Pieces”
 3. Click the “View Insights” success message in the lower right corner of your editor to open the related materials in the Side Panel so that you can easily add them to your project.
 
-<Image zoom src="https://i.ibb.co/mN1pVWt/related-snippets.jpg"/>
+![](https://i.ibb.co/mN1pVWt/related-snippets.jpg)
 
 ## Updating
 The Pieces JetBrains Plugin will automatically update when a new version is available. You can also manually update the plugin by going to `Plugins > Installed`, finding Pieces, and clicking the update button.
@@ -228,5 +195,5 @@ In order for Pieces to be completely uninstalled from the JetBrains IDE, you'll 
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

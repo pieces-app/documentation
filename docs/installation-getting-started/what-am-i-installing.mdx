@@ -1,98 +1,14 @@
 ---
 title: Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
-next: /extensions-plugins/chrome
-nextTitle: Check Out Our Chrome Plugin
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing" />
-
-export const InstallButton = props => {
-    return <a target="_blank" style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                backgroundColor: "black",
-                color: "white",
-                fontWeight: "500",
-                marginBottom: "8px",
-                marginTop: "25px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-};
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const Spacer = props => {
-    return <div style={{ height: "100px"}}></div>
-};
-
-export const MiniSpacer = props => {
-    return <div style={{ height: "16px"}}></div>
-};
-
-export const CallToAction = props => {
-    return <div style={{
-        marginTop: "150px",
-        marginBottom: "150px",
-        padding: "32px",
-        border: "1px solid gray",
-        borderRadius: "16px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "start"
-    }}>
-        {props.children}
-        <h3 style={{ marginTop: "0px", marginBottom: "0px"}}>{props.heading}</h3>
-        {props.text}
-    </div>
-};
-
-export const InstallButtonWindows = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
-            { props.children }
-            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for Windows</p>
-        </div>
-    </a>
-}
-
-export const InstallButtonMac = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px"}}>
-            { props.children }
-            <p style={{backgroundColor: "black", color: "white", marginLeft: "8px"}}>Get Pieces for macOS</p>
-        </div>
-    </a>
-};
-
-export const InstallButtonLinux = props => {
-    return <a style={{textDecoration: "none"}} href={ props.src }>
-        <div style={{border: "1px solid white", backgroundColor: "black", maxWidth: "fit-content", minWidth: "fit-content", display: "flex", flexDirection: "row", alignItems: "center", maxHeight: "50px", borderRadius: "40px", padding: "4px 20px", marginRight: "8px", marginBottom: "16px" }}>
-            { props.children }
-            <p style={{color: "white", marginLeft: "8px"}}>See for Linux</p>
-        </div>
-    </a>
-}
-
-export const GridFlexSpaceEvenlyRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import { MiniSpacer } from "/src/components/Spacers";
+import CTAButton from "/src/components/CTAButton";
+import Image from "/src/components/Image";
+import GridFlexRow from "/src/components/GridFlexRow";
 
 # Getting Started
 
@@ -106,34 +22,52 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 
 **Download the Pieces for Developers Desktop App and Pieces OS here:**
 
-<GridFlexRow>
-    <InstallButtonWindows src="/installation-getting-started/windows">
-        <Image width="20px" src={"/assets/windows_logo_old.png"} />
-    </InstallButtonWindows>
-    <InstallButtonMac src="/installation-getting-started/macos">
-        <Image width="20px" src={"/assets/mac_os.png"} />
-    </InstallButtonMac>
-    <InstallButtonLinux src="/installation-getting-started/linux">
-        <Image width="20px"src={"/assets/linux_logo.png"} />
-    </InstallButtonLinux>
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href="/installation-getting-started/windows"
+    label={"Get Pieces for Windows"}
+    icon={'/assets/windows_logo_old.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href="/installation-getting-started/macos"
+    label={"Get Pieces for macOS"}
+    icon={'/assets/mac_os.png'}
+    iconDark={'/assets/mac_os_dark.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href="/installation-getting-started/linux"
+    label={"Get Pieces for Linux"}
+    icon={'/assets/linux_logo.png'}
+    type={'secondary'}
+  />
 </GridFlexRow>
 
-<MiniSpacer></MiniSpacer>
+<MiniSpacer />
 
-<Info>When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.</Info>
+:::info
 
-<MiniSpacer></MiniSpacer>
+When you download Pieces for Developers, you'll get two applications: **[Pieces OS](/installation-getting-started/pieces-os)** and the **Pieces for Developers Desktop App**. Click on each below to find out more about what you are installing.
 
-<Accordion title={"Pieces for Developers | Pieces OS"}>
+:::
+
+<MiniSpacer />
+
+<details>
+  <summary>Pieces for Developers | Pieces OS</summary>
+
     **[Pieces OS](/installation-getting-started/pieces-os)** is our background service that runs offline and on-device. It's **required** to enable:
     - Individual products in the Pieces for Developers Suite to communicate
     - Local, Private, and Secure Machine Learning Models
     - Real-Time Search and Suggestions
-</Accordion>
+</details>
 
-<MiniSpacer></MiniSpacer>
+<MiniSpacer />
 
-<Accordion title={"Pieces for Developers | Desktop Application"}>
+<details>
+  <summary>Pieces for Developers | Desktop App</summary>
+
     **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:
     - Navigate snippets visually through the Gallery or List Views
     - Transform snippets from one language to another
@@ -141,39 +75,50 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
     - Describe a snippet to get a solution to an answer
     - Manage your custom cloud domain
     - and so much more!
-</Accordion>
+</details>
 
 ---
 
 ## What is Pieces OS?
 
-[Pieces OS](/installation-getting-started/pieces-os) operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](https://docs.pieces.app/features/pieces-copilot), as well as [real-time search](https://docs.pieces.app/features/search-modes) and suggestions.
+[Pieces OS](/installation-getting-started/pieces-os) operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](/features/pieces-copilot), as well as [real-time search](/features/search-modes) and suggestions.
 
-Pieces OS enables Pieces products and local LLMs to operate 100% locally on your machine, with an option to connect to the cloud for [backup](https://docs.pieces.app/features/back-up-and-restore), [sharing](https://docs.pieces.app/features/one-click-snippet-sharing), and cloud-based LLMs for code generation.
+Pieces OS enables Pieces products and local LLMs to operate 100% locally on your machine, with an option to connect to the cloud for [backup](/features/back-up-and-restore), [sharing](/features/one-click-snippet-sharing), and cloud-based LLMs for code generation.
 
 ### Getting Started with Pieces OS
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
-<Tabs
-  defaultValue={"windows"}
-  values={[
-    {label: 'macOS', value: 'macos'},
-    {label: 'Windows', value: 'windows'},
-    {label: 'Linux', value: 'linux'}
-  ]}
->
+<Tabs defaultValue={"macos"} values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
   <TabItem value="macos">
     <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/macos">See macOS Installation Guide</InstallButton>
+    <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+    />
   </TabItem>
+
   <TabItem value="windows">
     <p>Compatible with Windows 10 version 1809 and higher</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/windows">See Windows Installation Guide</InstallButton>
+    <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+    />
   </TabItem>
+
   <TabItem value="linux">
     <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
-    <InstallButton src="https://docs.pieces.app/installation-getting-started/linux">See Linux Installation Guide</InstallButton>
+    <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+    />
   </TabItem>
 </Tabs>
 
@@ -181,12 +126,17 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 
 Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
-<GridFlexSpaceEvenlyRow>
-    <a href="/extensions-plugins/chrome"><Image width="50%" src="/assets/chrome_logo.png" /></a>
-    <a href="/extensions-plugins/jetbrains"><Image width="50%" src="/assets/jetbrains_logo.png" /></a>
-    <a href="/extensions-plugins/vscode"><Image width="50%" src="/assets/vscode_logo.png" /></a>
-    <a href="/extensions-plugins/edge"><Image width="50%" src="/assets/edge_logo.png" /></a>
-    <a href="/extensions-plugins/teams"><Image width="50%" src="/assets/teams_logo.png" /></a>
-    <a href="/extensions-plugins/obsidian"><Image width="50px" src="/assets/obsidian_logo.png" /></a>
-    <a href="/extensions-plugins/jupyterlab"><Image width="40%" src="/assets/jupyterlab_logo.png" /></a>
-</GridFlexSpaceEvenlyRow>
+<GridFlexRow type={'evenly'}>
+    <a href="/extensions-plugins/chrome"><Image width={70} src="/assets/chrome_logo.png" /></a>
+    <a href="/extensions-plugins/jetbrains"><Image width={70} src="/assets/jetbrains_logo.png" /></a>
+    <a href="/extensions-plugins/vscode"><Image width={70} src="/assets/vscode_logo.png" /></a>
+    <a href="/extensions-plugins/edge"><Image width={70} src="/assets/edge_logo.png" /></a>
+</GridFlexRow>
+
+<MiniSpacer />
+
+<GridFlexRow type={'evenly'}>
+    <a href="/extensions-plugins/teams"><Image width={70} src="/assets/teams_logo.png" /></a>
+    <a href="/extensions-plugins/obsidian"><Image width={70} src="/assets/obsidian_logo.png" /></a>
+    <a href="/extensions-plugins/jupyterlab"><Image width={70} src="/assets/jupyterlab_logo.png" /></a>
+</GridFlexRow>

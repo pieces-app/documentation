@@ -3,81 +3,33 @@ title: Pieces Firefox Addon
 description: Learn about the Pieces Firefox Addon, how it functions, and what all you can do with this powerful addon in Mozilla Firefox.
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/extensions-plugins/firefox" />
+import { pieces_app } from "/src/lib/const";
+import { MiniSpacer } from "/src/components/Spacers";
+import CTAButton from "/src/components/CTAButton";
+import GridFlexRow from "/src/components/GridFlexRow";
 
-export const InstallButton = props => {
-    return <a style={{textDecoration: "none"}} target="_blank" href="{{ links.extensions.firefox }}">
-        <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-            <p style={{
-                padding: "8px 20px",
-                borderRadius: "12px",
-                border: "1px solid #f3f5f6",
-                color: "white",
-                fontWeight: "500",
-                background: "black",
-                marginBottom: "8px",
-                marginTop: "3px",
-                marginRight: "16px"
-            }}>{props.children}</p>
-        </div>
-    </a>
-}
-
-export const ReleasePill = props => {
-    return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
-        <p class="dark:text-white text-black"
-           style={{
-               padding: "8px 20px",
-               borderRadius: "12px",
-               border: "1px solid #f3f5f6",
-               backgroundColor: "transparent",
-               fontWeight: "500",
-               marginBottom: "8px",
-               marginTop: "3px",
-               marginRight: "16px"
-           }}>{props.children}</p>
-    </div>
-}
-
-export const GridFlexRow = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap"
-    }}>{props.children}</div>;
-};
-
-export const GridFlexRowBaseline = props => {
-    return <div style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'start',
-        flexWrap: "wrap",
-        alignItems: "baseline"
-    }}>{props.children}</div>;
-};
-
-export const Spacer = props => {
-    return <div style={{ width: "8px"}}></div>
-};
-
-<GridFlexRowBaseline>
-    <h1>Pieces Firefox Addon</h1>
-</GridFlexRowBaseline>
-
-<GridFlexRow>
-    <InstallButton>Get the Firefox Addon</InstallButton>
-    <ReleasePill children="Current Version: {{ versions.firefox }}"></ReleasePill>
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.firefox}
+    label={'Get the Firefox Addon'}
+    icon={'/assets/firefox_logo.png'}
+    type={'secondary'}
+  />
 </GridFlexRow>
+
+<MiniSpacer/>
 
 Using the Pieces Firefox Addon in parallel with the Pieces Desktop App makes it easier to save code as you move from website to website and brings your Pieces Copilot even closer to your workflow.
 
-<Image zoom src="https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-11_20_2023.GIF" />
+![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/SAVE_TO_PIECES/16X9/PIECES_FOR_DEVELOPERS-WEB-SAVE_TO_PIECES-MACOS-16X9-11_20_2023.GIF)
 
 ## Installing the Addon
 
-<Info>In order to save code with the Pieces Firefox Addon, you must have <a target="blank" href="https://docs.pieces.app/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a></Info>
+:::info
+
+In order to save code with the Pieces Firefox Addon, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a>
+
+:::
 
 To add the addon to Mozilla Firefox, visit our listing on the [Firefox Addons Marketplace](https://addons.mozilla.org/en-US/firefox/addon/pieces-save-code-from-the-web/).
 
@@ -92,7 +44,7 @@ To add the addon to Mozilla Firefox, visit our listing on the [Firefox Addons Ma
 
 To save a snippet on the web, click the "Copy and Save" buttons below a code block on a webpage. There are two important things to know when saving snippets with the addon:
 
-1. When you save a code snippet, website, or other asset from a website, they are viewable in the Pieces desktop app and are stored in [Pieces OS](https://docs.pieces.app/installation-getting-started/pieces-os).
+1. When you save a code snippet, website, or other asset from a website, they are viewable in the Pieces desktop app and are stored in [Pieces OS](/installation-getting-started/pieces-os).
 2. When saving a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a generated title, annotations, and more.
 
 To view your snippets, simply open the Pieces Desktop App and scroll through them.
@@ -125,16 +77,18 @@ There are a few reasons why the Pieces buttons may not be appearing:
 
 1. Pieces OS isn't running.
     - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows and Linux). If it isn't there, please launch Pieces OS by double-clicking Pieces OS in your Applications folder.
-    - If you need to download and install Pieces OS, [visit this link](https://docs.pieces.app/installation-getting-started/pieces-os).
+    - If you need to download and install Pieces OS, [visit this link](/installation-getting-started/pieces-os).
 2. You disabled the Pieces buttons on that website.
     - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the Addon settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
-
-<Image zoom src="/assets/settings_for_chrome.png" />
-
+    ![](/assets/settings_for_chrome.png)
 3. This website doesn't have detectable code.
     - The code on this site might be rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
 
-<Info>If none of the above fix your issue, please <a target="_blank" href="{{ links.socials.support_email }}">send us an email</a> and we'll get back to you!</Info>
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
 
 ### Disabling the Pieces Buttons
 
@@ -149,7 +103,7 @@ To customize your Pieces Firefox Addon experience, click on the Pieces icon in t
 
 Hit the Settings icon in the top right and set your preferences as you can see here:
 
-<Image zoom src="/assets/theme_for_chrome.png" />
+![](/assets/theme_for_chrome.png)
 
 You can adjust the following Settings for the Pieces Firefox Addon:
 
@@ -174,5 +128,5 @@ To uninstall Pieces:
 
 ## Support and Community
 
-- [Get Support](https://docs.pieces.app/support)
+- [Get Support](/support)
 - [Join our Discord](https://discord.gg/getpieces)

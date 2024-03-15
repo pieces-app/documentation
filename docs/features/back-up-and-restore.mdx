@@ -3,11 +3,17 @@ title: Back Up and Restore
 description: Learn how to back up and restore your Pieces Database without losing your code snippets.
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/features/back-up-and-restore" />
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Admonition from '@theme/Admonition';
 
 # Backup your Pieces Database
 
-<Info>Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.</Info>
+:::info
+
+Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.
+
+:::
 
 _Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
 
@@ -25,7 +31,7 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   ]}
 >
   <TabItem value="macOS">
-    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select “Quit”
+    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select `Quit`
     2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
   </TabItem>
   <TabItem value="windows-linux">
@@ -47,15 +53,15 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   <TabItem value="macOS">
     Open your Finder and navigate to your `Home` folder.
 
-    _If you cannot see your Home folder on the left-hand side of your Finder, simply tap “Shift+Cmd+H” to open it_
+    _If you cannot see your Home folder on the left-hand side of your Finder, simply tap `Shift+Cmd+H` to open it_
 
-    <Image zoom alt="Navigating to home folder" src="/assets/backup_database/navigate_to_home.png" />
+    ![Navigating to home folder](/assets/backup_database/navigate_to_home.png)
   </TabItem>
   <TabItem value="windows">
-    Open your File Explorer and navigate to the following location: `C:/Users/user`
+    Open your File Explorer and navigate to the following location: `C:/Users/{username}`
   </TabItem>
   <TabItem value="linux">
-    Open your File Explorer and navigate to the following location: `~/Users/user`
+    Open your File Explorer and navigate to the following location: `~/Users/{username}`
   </TabItem>
 </Tabs>
 
@@ -70,23 +76,27 @@ Please quit Pieces OS and Pieces Desktop and make sure neither are actively runn
   ]}
 >
   <TabItem value="macOS">
-    Once in your Home folder, you’ll need to click `Shift+Cmd+.` (shift, command, period) to show your hidden files & folders. Once they are visible, find your “Library” folder and click it.
+    Once in your Home folder, you’ll need to click `Shift+Cmd+.` (shift, command, period) to show your hidden files & folders. Once they are visible, find your `Library` folder and click it.
 
-    <Image zoom alt="Selecting your Library Folder" src="/assets/backup_database/selecting_library_folder.png" />
+    ![Selecting your Library Folder](/assets/backup_database/selecting_library_folder.png)
   </TabItem>
   <TabItem value="windows">
-    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.
 
-    <Info>You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.</Info>
+    <Admonition type="info">
+      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.
+    </Admonition>
 
-    You should now be at the following location: `C:/Users/user/Documents`
+    You should now be at the following location: `C:/Users/{username}/Documents`
   </TabItem>
   <TabItem value="linux">
-    Once in your `user` folder, you'll need to find your `Documents` folder and click it.
+    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.
 
-    <Info>You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.</Info>
+    <Admonition type="info">
+      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.
+    </Admonition>
 
-    You should now be at the following location: `~/Users/user/Documents`
+    You should now be at the following location: `~/Users/{username}/Documents`
   </TabItem>
 </Tabs>
 
@@ -105,25 +115,33 @@ Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These fold
   ]}
 >
   <TabItem value="macOS">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select `Compress`.
   </TabItem>
   <TabItem value="windows">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select “Send to”, and then select `Compressed (zipped) Folder`.
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select `Send to`, and then select `Compressed (zipped) Folder`.
   </TabItem>
   <TabItem value="linux">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select “Compress”.
+    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select `Compress`.
   </TabItem>
 </Tabs>
 
-<Info>This may take some time, especially if you have any local LLMs downloaded. If you do have any local LLMs downloaded, you may cancel the compression, open Pieces Desktop App, and delete the local LLMs you have downloaded. However, you MUST restart the guide from `Step 1` if you choose to do this.</Info>
+:::info
+
+This may take some time, especially if you have any local LLMs downloaded. If you do have any local LLMs downloaded, you may cancel the compression, open Pieces Desktop App, and delete the local LLMs you have downloaded. However, you **MUST** restart the guide from `Step 1` if you choose to do this.
+
+:::
 
 ### Step 6
 
-This will create a new Zip file titled, “Archive”. From here, you can enter a new name. We recommend naming this, “pieces_backup_(month)_(day)_(year)”.
+This will create a new Zip file titled, `Archive`. From here, you can enter a new name. We recommend naming this, `pieces_backup_(month)_(day)_(year)`.
 
 From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.
 
-<Info>Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.</Info>
+:::info
+
+Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.
+
+:::
 
 _Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
 
@@ -133,8 +151,8 @@ _Please note that you **CANNOT go backward in versions.** For example: on one co
 
 Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
 
-1. To quit Pieces OS, open your system tray in the bottom-right corner of your Desktop, then right-click the Pieces OS icon, and select “Quit”.
-2. To quit Pieces Desktop, right-click the app icon in your system toolbar and select “Quit”.
+1. To quit Pieces OS, open your system tray in the bottom-right corner of your Desktop, then right-click the Pieces OS icon, and select `Quit`.
+2. To quit Pieces Desktop, right-click the app icon in your system toolbar and select `Quit`.
 
 ### Step 2
 
@@ -150,7 +168,7 @@ Locate the compressed Zip folder containing both your `com.pieces.os` and `com.p
   ]}
 >
   <TabItem value="macOS">
-    Navigate back to the “Library” folder either on the same or your different machine.
+    Navigate back to the `Library` folder either on the same or your different machine.
   </TabItem>
   <TabItem value="windows-linux">
     Navigate back to the `Documents` folder either on the same or your different machine.
@@ -165,12 +183,12 @@ Unzip the compressed backup file.
 
 This next step is critical. If you have an existing Pieces database already located in your current folder on your device, you will see a window similar to what’s shown below.
 
-<Image zoom alt="Replace dialog popup" src="/assets/backup_database/replace_message.png" />
+![Replace dialog popup](/assets/backup_database/replace_message.png)
 
 This step is asking if you’d like to override the existing database with your backup.
 
-- If you’d like to override, select “Replace the files in the destination”
-- If you don’t want to override, abandon the process by pressing “Stop”
+- If you’d like to override, select `Replace the files in the destination`
+- If you don’t want to override, abandon the process by pressing `Stop`
 
 ### Step 6
 

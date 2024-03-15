@@ -1,0 +1,836 @@
+{
+  "name": "pieces-azure-data-studio",
+  "displayName": "Pieces for Azure Data Studio",
+  "description": "A centralized, on-device storage agent and AI coding assistant integrated into the Pieces for Developers desktop app, browser, IDE, and collaboration software that helps developers capture, enrich, and reuse useful materials, as well as solve complex problems through a contextual understanding of your unique workflow.",
+  "version": "1.9.1",
+  "publisher": "MeshIntelligentTechnologiesInc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pieces-app/documentation"
+  },
+  "bugs": {
+    "email": "support@pieces.app"
+  },
+  "icon": "icon/pieces_logo_black_256.png",
+  "engines": {
+    "vscode": "^1.61.1"
+  },
+  "homepage": "https://pieces.app",
+  "categories": [
+    "Snippets",
+    "Programming Languages",
+    "Machine Learning",
+    "Other"
+  ],
+  "keywords": [
+    "api",
+    "function",
+    "html",
+    "javascript",
+    "reactivity",
+    "snippet",
+    "syntax",
+    "vscode",
+    "pieces",
+    "nodejs",
+    "react",
+    ".NET",
+    "CSharp",
+    "C#",
+    "C++",
+    "Python",
+    "PHP",
+    "Ruby",
+    "Rust",
+    "create snippet",
+    "edit snippet",
+    "snippet editor",
+    "snippet manager",
+    "code snippets",
+    "ai",
+    "ml",
+    "gpt",
+    "autocomplete",
+    "workflow"
+  ],
+  "activationEvents": [
+    "onCommand:pieces-vscode.saveToPieces",
+    "onCommand:pieces-vscode.explainSnippet",
+    "onCommand:pieces-vscode.copy",
+    "onCommand:pieces-vscode.paste",
+    "onCommand:snippetTree.refreshEntry",
+    "onCommand:snippetTree.settings",
+    "onCommand:addSnippets",
+    "onCommand:launchPiecesOS",
+    "onCommand:pieces-vscode.search",
+    "onCommand:snippetTree.addTags",
+    "onCommand:snippetTree.edit",
+    "onCommand:snippetTree.addLinks",
+    "onCommand:snippetTree.renamePiece",
+    "onCommand:snippetTree.deletePiece",
+    "onCommand:snippetTree.reclassifyPiece",
+    "onCommand:snippetTree.generateShareableLink",
+    "onCommand:pieces-vscode.generateShareableLink",
+    "onView:snippetTree",
+    "onView:suggestedSnippetsTree",
+    "onView:explainedSnippetsTree",
+    "onView:connect",
+    "onView:about",
+    "onCommand:changePort",
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "submenus": [
+      {
+        "id": "pieces.pieces",
+        "label": "Pieces",
+        "icon": "icon/pieces_logo_black_256.png"
+      }
+    ],
+    "viewsWelcome": [
+      {
+        "view": "snippetTree",
+        "contents": "No saved materials found. [Learn more here!](command:launchOnboarding)\n[Refresh](command:snippetTree.refreshEntry)"
+      },
+      {
+        "view": "suggestedSnippetsTree",
+        "contents": "No suggested materials found. \n[Refresh](command:snippetTree.refreshEntry)"
+      },
+      {
+        "view": "explainedSnippetsTree",
+        "contents": "Looks like you haven't explored any material insights. We think you'll love it, give it a try by selecting a snippet and right clicking on Explore with Pieces Insights. \n[Refresh](command:snippetTree.refreshEntry)"
+      },
+      {
+        "view": "relatedSnippetsTree",
+        "contents": "Whelp! We couldn't find any previously saved snippets that are related to your selection. Save more snippets and materials for better results in the future! \n[Refresh](command:snippetTree.refreshEntry)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "snippetTree.refreshEntry",
+          "group": "navigation",
+          "when": "view == snippetTree"
+        },
+        {
+          "command": "snippetTree.refreshEntry",
+          "group": "navigation",
+          "when": "view == suggestedSnippetsTree"
+        },
+        {
+          "command": "snippetTree.refreshEntry",
+          "group": "navigation",
+          "when": "view == relatedSnippetsTree"
+        },
+        {
+          "command": "snippetTree.settings",
+          "group": "navigation",
+          "when": "view == snippetTree"
+        },
+        {
+          "command": "snippetTree.settings",
+          "group": "navigation",
+          "when": "view == suggestedSnippetsTree"
+        },
+        {
+          "command": "snippetTree.settings",
+          "group": "navigation",
+          "when": "view == relatedSnippetsTree"
+        },
+        {
+          "command": "snippetTree.settings",
+          "group": "navigation",
+          "when": "view == explainedSnippetsTree"
+        },
+        {
+          "command": "snippetTree.refreshEntry",
+          "group": "navigation",
+          "when": "view == explainedSnippetsTree"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "snippetTree.insertSnippet",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.renamePiece",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.deletePiece",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.reclassifyPiece",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.addTags",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.addLinks",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.edit",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "snippetTree.generateShareableLink",
+          "when": "viewItem == snippet"
+        },
+        {
+          "command": "explainedSnippetsTree.delete",
+          "when": "viewItem == explainedSnippetContext"
+        },
+        {
+          "command": "explainedSnippetsTree.saveExplainedSnippet",
+          "when": "viewItem == explainedSnippetContext"
+        },
+        {
+          "command": "pieces-vscode.toClipboard",
+          "when": "viewItem == explainedSnippetContext || viewItem == snippet"
+        },
+        {
+          "command": "pieces-vscode.addSnippetToContext",
+          "when": "viewItem == snippet"
+        }
+      ],
+      "pieces.pieces": [
+        {
+          "command": "pieces-vscode.saveToPieces",
+          "group": "navigation",
+          "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+        },
+        {
+          "command": "pieces-vscode.relatedSnippets",
+          "group": "navigation",
+          "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+        },
+        {
+          "command": "pieces-vscode.generateShareableLink",
+          "group": "navigation",
+          "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+        },
+        {
+          "command": "pieces-vscode.search",
+          "group": "navigation"
+        },
+        {
+          "command": "pieces-vscode.explainSnippet",
+          "group": "navigation",
+          "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+        },
+        {
+          "command": "pieces-vscode.askQGPT",
+          "group": "navigation",
+          "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+        }
+      ],
+      "editor/context": [
+        {
+          "submenu": "pieces.pieces",
+          "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "pieces-vscode.askAboutFile",
+          "group": "navigation"
+        },
+        {
+          "command": "pieces-vscode.addAnchorToContext",
+          "group": "navigation"
+        }
+      ],
+      "terminal/context": [
+        {
+          "command": "pieces-vscode.askQGPTTerminal",
+          "group": "navigation"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "snippetTree.refreshEntry",
+        "title": "Refresh",
+        "icon": {
+          "light": "icon/refresh.svg",
+          "dark": "icon/refresh.svg"
+        }
+      },
+      {
+        "command": "snippetTree.settings",
+        "title": "Settings",
+        "icon": "$(debug-configure)"
+      },
+      {
+        "command": "snippetTree.openWebview",
+        "title": "Open webview"
+      },
+      {
+        "command": "snippetTree.addEntry",
+        "title": "Add"
+      },
+      {
+        "command": "pieces-vscode.saveToPieces",
+        "title": "Save"
+      },
+      {
+        "command": "pieces-vscode.explainSnippet",
+        "title": "Explore"
+      },
+      {
+        "command": "pieces-vscode.relatedSnippets",
+        "title": "Find Related"
+      },
+      {
+        "command": "explainedSnippetsTree.delete",
+        "title": "Delete Material Insight"
+      },
+      {
+        "command": "explainedSnippetsTree.saveExplainedSnippet",
+        "title": "Save Explored Material"
+      },
+      {
+        "command": "explainedSnippetsTree.deleteAll",
+        "title": "Clear all Explored Materials"
+      },
+      {
+        "command": "pieces-vscode.copy",
+        "title": "Copy"
+      },
+      {
+        "command": "pieces-vscode.paste",
+        "title": "Paste"
+      },
+      {
+        "command": "addSnippets",
+        "title": "Import User Snippets to Pieces"
+      },
+      {
+        "command": "launchPiecesOS",
+        "title": "Launch Pieces OS"
+      },
+      {
+        "command": "pieces-vscode.search",
+        "title": "Search"
+      },
+      {
+        "command": "snippetTree.deleteEntry",
+        "title": "Delete"
+      },
+      {
+        "command": "snippetTree.insertSnippet",
+        "title": "Insert snippet"
+      },
+      {
+        "command": "snippetTree.renamePiece",
+        "title": "Rename"
+      },
+      {
+        "command": "snippetTree.deletePiece",
+        "title": "Delete"
+      },
+      {
+        "command": "snippetTree.reclassifyPiece",
+        "title": "Reclassify"
+      },
+      {
+        "command": "snippetTree.addTags",
+        "title": "Add Tags"
+      },
+      {
+        "command": "snippetTree.addLinks",
+        "title": "Add Links"
+      },
+      {
+        "command": "snippetTree.edit",
+        "title": "Edit"
+      },
+      {
+        "command": "pieces-vscode.toClipboard",
+        "title": "Copy"
+      },
+      {
+        "command": "snippetTree.generateShareableLink",
+        "title": "Share"
+      },
+      {
+        "command": "pieces-vscode.generateShareableLink",
+        "title": "Share"
+      },
+      {
+        "command": "pieces-vscode.askQGPT",
+        "title": "Ask Copilot"
+      },
+      {
+        "command": "pieces-vscode.openCopilot",
+        "title": "Open Pieces Copilot"
+      },
+      {
+        "command": "pieces-vscode.askAboutFile",
+        "title": "Pieces: Ask Copilot"
+      },
+      {
+        "command": "pieces-vscode.addSnippetToContext",
+        "title": "Add to context"
+      },
+      {
+        "command": "pieces-vscode.fixCode",
+        "title": "Add to context"
+      },
+      {
+        "command": "pieces-vscode.addAnchorToContext",
+        "title": "Pieces: Add to Context"
+      },
+      {
+        "command": "pieces-vscode.askQGPTTerminal",
+        "title": "Pieces: Ask Copilot"
+      },
+      {
+        "command": "pieces-vscode.comment",
+        "title": "Pieces: Comment"
+      },
+      {
+        "command": "pieces-vscode.explain",
+        "title": "Pieces: Explain"
+      }
+    ],
+    "configuration": {
+      "title": "Pieces",
+      "properties": {
+        "pieces.customUrl": {
+          "type": "string",
+          "description": "URL to connect to a remote Pieces OS instance"
+        },
+        "pieces.os.updateNotifications": {
+          "type": "string",
+          "default": "Patch",
+          "enum": [
+            "Patch",
+            "Minor",
+            "Major"
+          ],
+          "enumDescriptions": [
+            "Get notified on every update",
+            "Get notified on bigger changes, mostly new features",
+            "Get notified only on updates with breaking changes"
+          ],
+          "description": "Decide on what level of update you want to be notified"
+        },
+        "pieces.os.automaticLaunching": {
+          "type": "string",
+          "default": "Only when saving a new Piece",
+          "enum": [
+            "Always",
+            "Only when saving a new Piece",
+            "Never"
+          ],
+          "description": "If you interact with Pieces for VSCode, but Pieces OS is disabled, should it try to launch?"
+        },
+        "pieces.telemetry": {
+          "type": "boolean",
+          "default": true,
+          "description": "Analytics to improve the VSCode extension and bug tracking."
+        },
+        "pieces.autocomplete": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable Autocomplete."
+        },
+        "pieces.relatedMaterials.autoSaveRelatedMaterialSelection": {
+          "type": "boolean",
+          "default": false,
+          "description": "When you select some code and use it to find related materials that you have saved in Pieces, the selected code snippet or resource will automatically be saved to Pieces in the background."
+        },
+        "pieces.sidePanelViews.savedMaterials": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Saved Materials."
+        },
+        "pieces.sidePanelViews.suggestedMaterials": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Suggested Materials."
+        },
+        "pieces.sidePanelViews.exploredMaterials": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Explored Materials."
+        },
+        "pieces.sidePanelViews.relatedMaterials": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show Related Materials."
+        },
+        "pieces.exploredSnippetInsights.documentWithPiecesInsights": {
+          "type": "boolean",
+          "default": true,
+          "description": "Insert description result from explore snippet insights as a comment above the snippet."
+        },
+        "pieces.exploredSnippetInsights.deleteAll": {
+          "type": "null",
+          "default": "",
+          "markdownDescription": "[Clear all Explored Materials](command:explainedSnippetsTree.deleteAll)"
+        },
+        "pieces.exploredSnippetInsights.exploreAndSave": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically save explored snippets and material insights."
+        },
+        "pieces.shareFeedback": {
+          "type": "null",
+          "default": "",
+          "markdownDescription": "[Share Feedback](https://getpieces.typeform.com/to/mCjBSIjF?os=8c0a0a63-6fc6-43e3-a2c4-7690aefde52d&user=b52509fd-4b3b-41d3-925d-b1902d3ad2b7)"
+        },
+        "pieces.autocompleteKey": {
+          "type": "string",
+          "enum": [
+            "Tab only",
+            "Enter or Tab"
+          ],
+          "enumDescriptions": [
+            "Accept Autocomplete suggestion on Enter or Tab",
+            "Accept Autocomplete suggestion on Tab only"
+          ],
+          "default": "Tab only"
+        },
+        "pieces.closeSnippetEditorOnSave": {
+          "type": "boolean",
+          "description": "Automatically close the snippet editing tab on save",
+          "default": false
+        },
+        "pieces.cloudCapabilities": {
+          "type": "string",
+          "default": "Cloud",
+          "enum": [
+            "Cloud",
+            "Local",
+            "Blended"
+          ],
+          "enumDescriptions": [
+            "Pieces will only use cloud resources to enrich you snippets and generate material insights.",
+            "Pieces will only use offline/on-device capabilities to enrich you snippets and generate material insights. Capabilities may be limited.",
+            "Pieces will use a blend of cloud and local capabilities to enrich you snippets and generate material insights."
+          ]
+        },
+        "pieces.searchResultAction": {
+          "type": "string",
+          "default": "Open in Overview",
+          "enum": [
+            "Open in Overview",
+            "Insert snippet at cursor position",
+            "Open in Overview & Copy to Clipboard",
+            "Copy to clipboard only"
+          ],
+          "enumDescriptions": [
+            "Opens saved snippet in overview.",
+            "Inserts the saved snippet at your current cursor position.",
+            "Opens saved snippet in overview & copies it to your clipboard.",
+            "Copies saved snippet directly to your clipboard."
+          ]
+        },
+        "pieces.searchBy": {
+          "type": "string",
+          "default": "Name, Tags, and Snippet",
+          "enum": [
+            "Name, Tags, and Snippet",
+            "Name and Tags",
+            "Name and Snippet"
+          ],
+          "enumDescriptions": [
+            "Matches characters in Name, Tags, and Snippet",
+            "Matches characters in Name and Tags",
+            "Matches characters in Name and Snippet"
+          ]
+        },
+        "pieces.searchDisplay": {
+          "type": "string",
+          "default": "Name, Tags, and Code Snippet",
+          "enum": [
+            "Name, Tags, and Code Snippet",
+            "Name, Tags, and Description"
+          ],
+          "enumDescriptions": [
+            "Displays name, tags and code snippet for search.",
+            "Displays name, tags and description for search."
+          ]
+        },
+        "pieces.notifications": {
+          "type": "string",
+          "default": "All Notifications",
+          "enum": [
+            "All Notifications",
+            "Only Critical Notifications"
+          ],
+          "enumDescriptions": [
+            "Show all notifications",
+            "Show only critical notifications"
+          ]
+        },
+        "pieces.autoSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Auto Save."
+        },
+        "pieces.automaticallyCopyLink": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically copy generated link to clipboard"
+        },
+        "pieces.autoExpansion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically expand snippets based on the active file extension."
+        },
+        "pieces.addSnippets": {
+          "type": "null",
+          "default": "",
+          "markdownDescription": "[Import User Snippets to Pieces](command:addSnippets)"
+        },
+        "pieces.setCopilotLocation": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Has the user set the location of the Pieces Copilot?"
+        },
+        "pieces.launchPiecesOS": {
+          "type": "null",
+          "default": "",
+          "markdownDescription": "[Launch Pieces OS](command:launchPiecesOS)"
+        },
+        "pieces.display": {
+          "type": "string",
+          "default": "Name",
+          "enum": [
+            "Name",
+            "Description",
+            "Preview"
+          ],
+          "enumDescriptions": [
+            "Shows snippets name",
+            "Shows snippets description",
+            "Shows snippets context"
+          ]
+        },
+        "pieces.save.git.relatedPeople": {
+          "type": "boolean",
+          "default": true,
+          "description": "Add commit authors using git history when saving a snippet."
+        },
+        "pieces.save.git.relatedLinks": {
+          "type": "boolean",
+          "default": true,
+          "description": "Add commit links using git history when saving a snippet."
+        },
+        "pieces.save.git.description": {
+          "type": "boolean",
+          "default": true,
+          "description": "Add commit messages using git history to description when saving a snippet."
+        },
+        "pieces.codelens": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable pieces code lens"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "pieces-vscode.saveToPieces",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v",
+        "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+      },
+      {
+        "command": "pieces-vscode.explainSnippet",
+        "key": "shift+alt+e",
+        "mac": "shift+alt+e",
+        "when": "editorTextFocus || editorHasSelection || editorHasMultipleSelections"
+      },
+      {
+        "command": "pieces-vscode.search",
+        "key": "ctrl+alt+p",
+        "mac": "cmd+alt+p"
+      },
+      {
+        "command": "pieces-vscode.copy",
+        "key": "ctrl+c",
+        "mac": "cmd+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "pieces-vscode.paste",
+        "key": "ctrl+v",
+        "mac": "cmd+v",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "pieces-vscode.generateShareableLink",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i",
+        "when": "editorTextFocus"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "pieces-explorer-activity-bar",
+          "title": "Pieces Explorer",
+          "icon": "icon/pieces.svg"
+        }
+      ],
+      "panel": [
+        {
+          "id": "pieces-copilot",
+          "title": "Pieces Copilot",
+          "icon": "icon/pieces_copilot.svg"
+        }
+      ]
+    },
+    "views": {
+      "pieces-explorer-activity-bar": [
+        {
+          "id": "snippetTree",
+          "name": "Saved Materials",
+          "icon": "icon/pieces_saved.svg",
+          "visibility": "visible"
+        },
+        {
+          "id": "suggestedSnippetsTree",
+          "name": "Suggested Materials",
+          "icon": "icon/pieces_suggested.svg",
+          "visibility": "visible"
+        },
+        {
+          "id": "explainedSnippetsTree",
+          "name": "Explored Materials & Snippet Insights",
+          "icon": "icon/pieces_explored.svg",
+          "visibility": "visible"
+        },
+        {
+          "id": "relatedSnippetsTree",
+          "name": "Related Materials to Current Selection",
+          "icon": "icon/pieces_related.svg",
+          "visibility": "visible"
+        },
+        {
+          "type": "webview",
+          "id": "connect",
+          "name": "Connect",
+          "icon": "icon/pieces_connect.svg",
+          "visibility": "visible"
+        },
+        {
+          "type": "webview",
+          "id": "about",
+          "name": "About",
+          "icon": "icon/pieces_about.svg",
+          "visibility": "collapsed"
+        }
+      ],
+      "pieces-copilot": [
+        {
+          "type": "webview",
+          "id": "piecesCopilot",
+          "name": "Pieces Copilot",
+          "contextualTitle": ""
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "vscode:uninstall": "node ./out/plugin_vscode/src/scripts/uninstall.js",
+    "start": "code --extensionDevelopmentPath=`pwd` --disable-extensions && npm-run-all --parallel watch:*",
+    "startWin": "code --extensionDevelopmentPath=%cd% --disable-extensions && npm-run-all --parallel watch:*",
+    "package": "npm-run-all --parallel build:*",
+    "test-compile": "tsc -p ",
+    "test-watch": "tsc -watch -p ",
+    "pretest": "npm run test-compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "build:css": "postcss ./src/ui/views/WebViews/copilot/copilot.css -o ./dist/copilot.css --verbose",
+    "watch:css": "postcss ./src/ui/views/WebViews/copilot/copilot.css -o ./dist/copilot.css --watch --verbose",
+    "build:esbuild": "tsc -noEmit -skipLibCheck && node esbuild.config.js production",
+    "watch:esbuild": "node esbuild.config.js",
+    "watch:tsc": "tsc -noEmit -skipLibCheck --watch",
+    "watch": "npm-run-all --parallel watch:*",
+    "compile": "npm-run-all --parallel build:*"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@font-face/node": "^1.1.0",
+    "@types/copy-webpack-plugin": "^6.4.0",
+    "@types/glob": "^7.1.3",
+    "@types/js-search": "^1.4.2",
+    "@types/lodash": "^4.14.178",
+    "@types/lunr": "^2.3.7",
+    "@types/marked": "^5.0.1",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/node-fetch": "^2.6.4",
+    "@types/prismjs": "^1.26.0",
+    "@types/sanitize-html": "^2.9.3",
+    "@types/throttle-debounce": "^5.0.0",
+    "@types/utf8": "^3.0.1",
+    "@types/uuid": "^9.0.2",
+    "@types/vscode": "^1.61.1",
+    "@types/vscode-webview": "^1.57.4",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^6.8.1",
+    "esbuild": "^0.17.3",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "glob": "^7.1.7",
+    "mocha": "10.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "postcss-preset-env": "^9.1.2",
+    "postcss-url": "^10.1.3",
+    "raw-loader": "^4.0.2",
+    "request": "^2.88.2",
+    "spawn-sync": "^2.0.0",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "url-loader": "^4.1.1",
+    "vscode-test": "^1.5.2"
+  },
+  "dependencies": {
+    "@justinribeiro/code-block": "^1.0.0",
+    "@sentry/node": "^7.1.1",
+    "@sentry/tracing": "^7.1.1",
+    "buffer": "^6.0.3",
+    "common_openapi": "../generated_runtime/sdk/http/typescript/common",
+    "connector_openapi": "../generated_runtime/sdk/http/typescript/connector",
+    "copilot": "../copilot-ts",
+    "core_openapi": "../generated_runtime/sdk/http/typescript/core",
+    "cross-fetch": "^3.1.4",
+    "git-blame": "^1.4.0",
+    "git-commit-info": "^2.0.1",
+    "is-git-repository": "^2.0.0",
+    "last-commit-log": "^3.2.0",
+    "lunr": "^2.3.9",
+    "marked": "^5.1.2",
+    "p-retry": "^6.1.0",
+    "prismjs": "^1.29.0",
+    "semver": "^7.3.8",
+    "strip-json-comments": "^4.0.0",
+    "throttle-debounce": "^5.0.0",
+    "utf8": "^3.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.14.2"
+  }
+}

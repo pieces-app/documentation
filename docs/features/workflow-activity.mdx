@@ -1,13 +1,13 @@
 ---
-title: Workflow Activity Stream | Pieces
+title: Workflow Activity Stream
 description: Pick up where you left off and break through development bottlenecks faster with Workflow Activity Stream.
 ---
 
-<link rel="canonical" href="https://docs.pieces.app/features/workflow-activity" />
+import { pieces_app } from "/src/lib/const";
 
 # Workflow Activity Stream
 
-<Image zoom src="https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WORKFLOW_ACTIVITY.gif" />
+![](https://storage.googleapis.com/pieces_static_resources/pfd_wiki/WORKFLOW_ACTIVITY.gif)
 
 Picking up where you left off and getting back into flow is one of the largest productivity bottlenecks in a developer's workflow. So, our team has been hard at work making it easier than ever to backtrack through your work-in-progress journey.
 
@@ -17,12 +17,12 @@ Our **Workflow Activity Stream and Process Backtracking** enables you to quickly
 Workflow details and points of reference such as <a target="_blank" href="/features/auto-enrichment">related links</a>, <a target="_blank" href="/features/one-click-snippet-sharing">shared snippets</a>, <a target="_blank" href="/features/auto-enrichment#tags">relevant tags</a>, <a target="_blank" href="/features/auto-enrichment#related-people">collaborators</a>, and more are all available as a scrollable timeline in our Desktop Application.
 
 ## Workflow Activity Search & Filters
-In the Workflow Activity view, you can search to quickly find a specific event in your workflow even more quickly. You can search for events related to creation, references, and more by tying in <a target="_blank" href="{{ links.internal.context_awareness_engine.origin_details }}">context details</a> to narrow down the search.
+In the Workflow Activity view, you can search to quickly find a specific event in your workflow even more quickly. You can search for events related to creation, references, and more by tying in <a target="_blank" href={pieces_app.links.internal.context_awareness_engine.origin_details}>context details</a> to narrow down the search.
 
 When navigating and utilizing powerful snippets, Workflow Activity can get filled up fast! Use **Search Filters** to narrow down your search to a specific type.
 
 ### Created:
-View only creation events. These events are oriented around creating a snippet from any product in the Pieces Suite, such as saving a snippet from the <a target="_blank" href="{{ links.extensions.chrome }}">Pieces Chrome Extension</a>, or saving from one of your favorite IDE, like <a target="_blank" href="{{ links.extensions.jetbrains }}">JetBrains</a> or <a target="_blank" href="{{ links.extensions.vscode }}">VS Code</a>.
+View only creation events. These events are oriented around creating a snippet from any product in the Pieces Suite, such as saving a snippet from the <a target="_blank" href={pieces_app.links.extensions.chrome}>Pieces Chrome Extension</a>, or saving from one of your favorite IDE, like <a target="_blank" href={pieces_app.links.extensions.jetbrains}>JetBrains</a> or <a target="_blank" href={pieces_app.links.extensions.vscode}>VS Code</a>.
 
 ### Updated:
 View only snippet update events. Each updated event comes from adding to or removing content in the snippet itself or from any changes to the metadata in the Information View.
