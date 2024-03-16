@@ -3,8 +3,44 @@ title: Frequently Asked Questions
 description: Find answers to questions about using Pieces for Developers and its many functions.
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import { MiniSpacer } from '/src/components/Spacers';
+import CTAButton from "/src/components/CTAButton";
+
 # Frequently Asked Questions
 
+## PiecesOS
+<Tabs defaultValue={"macos"}  values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
+  <TabItem value="macos">
+    <CTAButton
+      href={"/faq/macos"}
+      label={'MacOS'}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+    />
+   <p> Click the “P” icon in your menu bar and view your update status in the dropdown</p>
+  </TabItem>
+ <TabItem value="windows">
+    <p>Compatible with Windows 10 version 1809 and higher</p>
+    <CTAButton
+      href={"/faq/windows"}
+      label={'Windows'}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+    />
+  </TabItem>
+  <TabItem value="linux">
+    <p>Linux</p>
+    <CTAButton
+      href={"/faq/linux"}
+      label={'Linux'}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+    />
+  </TabItem>
+</Tabs>
 ## How can I discover useful snippets within the Pieces for Developers Desktop App?
 
 Try using <a target="_blank" href="/product-highlights-and-benefits/in-project-snippet-discovery">Snippet Discovery</a> to discover snippets from an existing project or file.
