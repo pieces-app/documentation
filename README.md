@@ -53,13 +53,13 @@ You will need `pnpm` installed on your machine. You can install it using npm: `n
 ### Install Dependencies
 
 ```
-$ pnpm install
+pnpm install
 ```
 
 ### Run Locally
 
 ```
-$ pnpm run start
+pnpm run start
 ```
 
 This command starts a local development server and opens up a browser window on http://localhost:3000. Changes are reflected live without having to restart the server.
@@ -67,7 +67,7 @@ This command starts a local development server and opens up a browser window on 
 ### Build
 
 ```
-$ pnpm run build
+pnpm run build
 ```
 
 This command generates static content into the `build` directory.
