@@ -11,8 +11,8 @@ const Video = ({
 } | {
   type: 'local'
   src: {
-    mp4?: string
-    webm?: string
+    webm: string
+    mp4: string
     ogg?: string
   }
   maxWidth?: string
