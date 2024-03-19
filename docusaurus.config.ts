@@ -6,7 +6,7 @@ import {EnumChangefreq} from "sitemap";
 console.log('vercel', process.env.VERCEL_ENV);
 console.log('node', process.env.NODE_ENV);
 
-console.log('lunr', process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV == 'production' && !process.env.VERCEL_ENV));
+console.log('lunr', process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview');
 console.log('algolia', process.env.VERCEL_ENV === 'production');
 
 const config: Config = {
@@ -50,8 +50,10 @@ const config: Config = {
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
     // Logic that ensures lunr is only used for local development and preview deployments
-    // The second condition is necessary for when you build & serve the site locally
-    ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV == 'production' && !process.env.VERCEL_ENV)
+    // The first condition is necessary for when you run `start` for the site locally
+    // The second condition is necessary for when you run `build` & `serve` the site locally
+    // The third condition is necessary for when you deploy a preview deployment on Vercel
+    ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
       ? [
         require.resolve('docusaurus-lunr-search')
       ] : []
