@@ -49,10 +49,13 @@ const config: Config = {
   //   ],
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
-    // Logic that ensures lunr is only used for local development and preview deployments
-    // The first condition is necessary for when you run `start` for the site locally
-    // The second condition is necessary for when you run `build` & `serve` the site locally
-    // The third condition is necessary for when you deploy a preview deployment on Vercel
+
+    /*
+      The following logic ensures that lunr search is only used for local development and preview deployments
+      The first condition is necessary for when you run `start` for the site locally
+      The second condition is necessary for when you run `build` & `serve` the site locally
+      The third condition is necessary for when you deploy a preview deployment on Vercel
+    */
     ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
       ? [
         require.resolve('docusaurus-lunr-search')
@@ -128,7 +131,7 @@ const config: Config = {
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
 
-    // Logic that ensures Algolia is used only for production deployments
+    // The following logic ensures that Algolia search is only used for production deployments
     ...(process.env.VERCEL_ENV === 'production' ?
       {
         algolia: {
