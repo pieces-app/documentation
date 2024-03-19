@@ -1,11 +1,13 @@
 const Video = ({
   src,
   type,
+  maxWidth,
 }: {
   type: 'youtube'
   src: {
     youtube: string
   }
+  maxWidth?: string
 } | {
   type: 'local'
   src: {
@@ -13,12 +15,14 @@ const Video = ({
     webm?: string
     ogg?: string
   }
+  maxWidth?: string
 }) => (
   type === 'youtube' ? (
     <iframe
       width="100%"
       style={{
         aspectRatio: '16 / 9',
+        maxWidth: maxWidth || '100%',
       }}
       src={src.youtube}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -33,6 +37,7 @@ const Video = ({
       width={'100%'}
       style={{
         borderRadius: '8px',
+        maxWidth: maxWidth || '100%',
       }}
     >
       <source src={src.webm} type="video/webm" />
