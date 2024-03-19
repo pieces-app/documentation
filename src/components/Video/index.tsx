@@ -1,15 +1,15 @@
 const Video = ({
-  paths,
+  src,
   type,
 }: {
   type: 'youtube'
-  paths: {
+  src: {
     youtube: string
   }
 } | {
   type: 'local'
-  paths: {
-    mp4: string
+  src: {
+    mp4?: string
     webm?: string
     ogg?: string
   }
@@ -17,8 +17,10 @@ const Video = ({
   type === 'youtube' ? (
     <iframe
       width="100%"
-      height="500px"
-      src={paths.youtube}
+      style={{
+        aspectRatio: '16 / 9',
+      }}
+      src={src.youtube}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen={true}>
     </iframe>
@@ -30,12 +32,13 @@ const Video = ({
       playsInline={true}
       width={'100%'}
       style={{
+        aspectRatio: '16 / 9',
         borderRadius: '8px',
       }}
     >
-      <source src={paths.mp4} type="video/mp4" />
-      <source src={paths.webm} type="video/webm" />
-      <source src={paths.ogg} type="video/ogg" />
+      <source src={src.mp4} type="video/mp4" />
+      <source src={src.webm} type="video/webm" />
+      <source src={src.ogg} type="video/ogg" />
     </video>
   ): null
 );
