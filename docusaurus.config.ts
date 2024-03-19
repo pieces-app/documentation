@@ -52,7 +52,7 @@ const config: Config = {
     */
     // ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
     //   ? [
-        require.resolve('docusaurus-lunr-search')
+    //     require.resolve('docusaurus-lunr-search')
     //   ] : []
     // )
   ],
@@ -135,6 +135,12 @@ const config: Config = {
     //     }
     //   } : {}
     // ),
+
+    algolia: {
+      appId: 'KTOXFODR65',
+      apiKey: 'ea4804560699e4b727715163b74bea83',
+      indexName: 'pieces',
+    },
 
     navbar: {
       logo: {
