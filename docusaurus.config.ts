@@ -115,7 +115,6 @@ const config: Config = {
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
 
-    // TODO: We will add this back in once we have merged into main and removed the local search plugin
     algolia: {
       appId: 'KTOXFODR65',
       apiKey: 'ea4804560699e4b727715163b74bea83',
