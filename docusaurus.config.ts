@@ -189,6 +189,48 @@ const config: Config = {
     footer: {
       links: [
         {
+          title: 'Socials',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/getpieces',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/getpieces',
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/getpieces',
+            },
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@getpieces',
+            },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            {
+              label: 'Blog',
+              href: 'https://code.pieces.app/blog',
+            },
+            {
+              label: 'Product Updates',
+              href: 'https://code.pieces.app/updates',
+            },
+            {
+              label: 'Press',
+              href: 'https://news.pieces.app',
+            },
+            {
+              label: 'Newsletter',
+              href: 'https://thepiecespost.beehiiv.com',
+            }
+          ],
+        },
+        {
           title: 'Terms & Policies',
           items: [
             {
