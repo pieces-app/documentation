@@ -36,8 +36,8 @@ const Video = ({
         borderRadius: '8px',
       }}
     >
-      <source src={src.mp4} type="video/mp4" />
       <source src={src.webm} type="video/webm" />
+      <source src={src.mp4} type="video/mp4" />
       <source src={src.ogg} type="video/ogg" />
     </video>
   ): null
