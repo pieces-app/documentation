@@ -3,6 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";
 
+console.log('vercel', process.env.VERCEL_ENV);
+console.log('node', process.env.NODE_ENV);
+
 console.log('lunr', process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV == 'production' && !process.env.VERCEL_ENV));
 console.log('algolia', process.env.VERCEL_ENV === 'production');
 
