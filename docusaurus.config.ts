@@ -131,7 +131,7 @@ const config: Config = {
         algolia: {
           appId: 'KTOXFODR65',
           apiKey: 'ea4804560699e4b727715163b74bea83',
-          indexName: 'pieces',
+          indexName: 'pieces_docusaurus',
         }
       } : {}
     ),
