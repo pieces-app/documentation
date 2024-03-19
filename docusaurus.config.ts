@@ -43,6 +43,13 @@ const config: Config = {
   //   ],
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
+    // Logic that ensures lunr is only used for local development and preview deployments
+    // The second condition is necessary for when you build & serve the site locally
+    ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV == 'production' && !process.env.VERCEL_ENV)
+      ? [
+        require.resolve('docusaurus-lunr-search')
+      ] : []
+    )
   ],
 
   presets: [
@@ -100,7 +107,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // TODO: Need to figure out how to make this override the og:image on all pages
     image: 'assets/pfd_preview.png',
     metadata: [
       {
@@ -109,17 +115,21 @@ const config: Config = {
       },
     ],
 
-    // This will continuously update to show the latest addition to the documentation site
     announcementBar: {
       id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
 
-    algolia: {
-      appId: 'KTOXFODR65',
-      apiKey: 'ea4804560699e4b727715163b74bea83',
-      indexName: 'pieces',
-    },
+    // Logic that ensures Algolia is used only for production deployments
+    ...(process.env.VERCEL_ENV === 'production' ?
+      {
+        algolia: {
+          appId: 'KTOXFODR65',
+          apiKey: 'ea4804560699e4b727715163b74bea83',
+          indexName: 'pieces',
+        }
+      } : {}
+    ),
 
     navbar: {
       logo: {
