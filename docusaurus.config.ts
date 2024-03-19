@@ -31,13 +31,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-  // TODO: We will add this back in once we have merged into main and removed the local search plugin
-  // algolia: {
-  //   appId: 'KTOXFODR65',
-  //   apiKey: '79c81e52460257d3761ea38438e29637',
-  //   indexName: 'pieces',
-  // },
-
   plugins: [
   //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
   //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
@@ -50,8 +43,6 @@ const config: Config = {
   //   ],
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
-  //   TODO: Once we merge this into main, we will update this to use Algolia and remove the local search plugins
-    require.resolve('docusaurus-lunr-search'),
   ],
 
   presets: [
@@ -117,11 +108,20 @@ const config: Config = {
         content: 'assets/pfd_preview.png'
       },
     ],
+
     // This will continuously update to show the latest addition to the documentation site
     announcementBar: {
       id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
+
+    // TODO: We will add this back in once we have merged into main and removed the local search plugin
+    algolia: {
+      appId: 'KTOXFODR65',
+      apiKey: 'ea4804560699e4b727715163b74bea83',
+      indexName: 'pieces',
+    },
+
     navbar: {
       logo: {
         alt: 'Pieces for Developers',
@@ -171,6 +171,7 @@ const config: Config = {
         },
       ],
     },
+
     footer: {
       links: [
         {
