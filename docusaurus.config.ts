@@ -207,6 +207,10 @@ const config: Config = {
               label: 'YouTube',
               href: 'https://www.youtube.com/@getpieces',
             },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/getpieces',
+            }
           ],
         },
         {
