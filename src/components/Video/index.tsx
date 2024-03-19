@@ -32,7 +32,6 @@ const Video = ({
       playsInline={true}
       width={'100%'}
       style={{
-        aspectRatio: '16 / 9',
         borderRadius: '8px',
       }}
     >

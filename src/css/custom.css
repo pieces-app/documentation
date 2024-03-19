@@ -85,7 +85,7 @@ html[data-theme='dark'] .header-github-link:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 @media (max-width: 1000px) {
