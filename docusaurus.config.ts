@@ -3,6 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";
 
+console.log('lunr', process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV == 'production' && !process.env.VERCEL_ENV));
+console.log('algolia', process.env.VERCEL_ENV === 'production');
+
 const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers!',
