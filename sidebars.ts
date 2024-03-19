@@ -59,8 +59,8 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'extensions-plugins/visual-studio',
-          label: 'Visual Studio Extension',
+          id: 'extensions-plugins/visual-studio-ide',
+          label: 'Visual Studio IDE Extension',
         },
         {
           type: 'doc',
