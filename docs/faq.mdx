@@ -31,7 +31,8 @@ import CTAButton from "/src/components/CTAButton";
     />
     <p> Click the PiecesOS icon in your task bar and view in the popup</p>
     <p> If you installed PiecesOS via our Suite Installer, you don't have to manually update the applications nor do the updates within the applications themselves. They will automatically update in the background when restart the applications or your computer</p>
-    <p> If you installed the desktop app via the standalone EXE, you will receive a prompt that gives you the option to delay or do the update. Nonetheless, we recommend using the Suite installer instead because the updates are automatic</p>
+    <p> If you installed the desktop app via the standalone EXE, you will receive a prompt that gives you the option to delay or do the update. Nonetheless, we recommend using the Suite installer instead because the updates are automatic.</p>
+    <p> Before you make the switch, uninstall Pieces OS first and then the Pieces for Developers desktop app to prevent conflicts. Your user-generated dat will not be affected during this change.</p>
   </TabItem>
   <TabItem value="linux">
     <CTAButton
@@ -40,7 +41,16 @@ import CTAButton from "/src/components/CTAButton";
       icon={'/assets/linux_logo.png'}
       type={'secondary'}
     />
-    <p> </p>
+    <p> To get information, including the version of Pieces OS and Pieces for Developers desktop app snap packages, you can the following commands: </p>
+```bash
+$ snap info-pieces-os
+$ snap info pieces-for-developers
+```
+<p> This will also show any available updates.</p>
+<p> To update Pieces OS and the desktop app, you can run this command: </p>
+```bash
+$ sudo snap refresh
+```
   </TabItem>
 </Tabs>
 ## How can I discover useful snippets within the Pieces for Developers Desktop App?
