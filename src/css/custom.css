@@ -35,9 +35,9 @@
   --docsearch-modal-background: var(--ifm-color-secondary-lightest) !important;
   --docsearch-footer-background: var(--ifm-color-secondary-lightest) !important;
   --docsearch-key-shadow: null !important;
-  /*--docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-lightest), var(--ifm-color-primary-lighter)) !important;*/
+  --docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-secondary), var(--ifm-color-secondary-lightest)) !important;
   --docsearch-muted-color: #969696 !important;
-  --docsearch-searchbox-background: var(--ifm-color-secondary-darkest) !important;
+  --docsearch-searchbox-background: var(--ifm-color-secondary-darker) !important;
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 }
@@ -70,7 +70,7 @@
   --docsearch-modal-background: var(--ifm-color-secondary-darkest) !important;
   --docsearch-footer-background: var(--ifm-color-secondary-darkest) !important;
   --docsearch-key-shadow: null !important;
-  --docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary-lightest)) !important;
+  --docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary-darker)) !important;
   --docsearch-muted-color: #969696 !important;
   --docsearch-searchbox-background: var(--ifm-color-secondary-lightest) !important;
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary) !important;
