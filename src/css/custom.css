@@ -35,7 +35,7 @@
   --docsearch-modal-background: var(--ifm-color-secondary-lightest) !important;
   --docsearch-footer-background: var(--ifm-color-secondary-lightest) !important;
   --docsearch-key-shadow: null !important;
-  --docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-lightest), var(--ifm-color-primary-lighter)) !important;
+  /*--docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-lightest), var(--ifm-color-primary-lighter)) !important;*/
   --docsearch-muted-color: #969696 !important;
   --docsearch-searchbox-background: var(--ifm-color-secondary-darkest) !important;
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
