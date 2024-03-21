@@ -8,19 +8,12 @@ import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
 
-<link
-  rel="canonical"
-  href="https://docs.pieces.app/extensions-plugins/obsidian"
+<CTAButton
+  href={pieces_app.links.extensions.obsidian}
+  label={'Get the Obsidian Plugin'}
+  icon={'/assets/obsidian_logo.png'}
+  type={'secondary'}
 />
-
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href={pieces_app.links.extensions.obsidian}
-    label={'Get the Obsidian Plugin'}
-    icon={'/assets/obsidian_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
 
 <MiniSpacer />
 
