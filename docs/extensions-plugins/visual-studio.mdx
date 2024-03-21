@@ -8,14 +8,12 @@ import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
 
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href={pieces_app.links.extensions.visual_studio_ide}
-    label={'Install the Visual Studio Extension'}
-    icon={'/assets/visual_studio_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
+<CTAButton
+  href={pieces_app.links.extensions.visual_studio_ide}
+  label={'Install the Visual Studio Extension'}
+  icon={'/assets/visual_studio_logo.png'}
+  type={'secondary'}
+/>
 
 <MiniSpacer />
 
@@ -95,5 +93,16 @@ In order for Pieces to be completely uninstalled from Visual Studio, you'll need
 
 ## Support and Community
 
-- [Get Support](/support)
-- [Join our Discord](https://discord.gg/getpieces)
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>
