@@ -24,7 +24,7 @@ export const pieces_app = {
       chrome: "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
       jetbrains: "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
       vscode: "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
-      // TODO: update the link
+      // TODO: update the link when the extension is published
       visual_studio_ide: "https://marketplace.visualstudio.com/vs",
       obsidian: "https://obsidian.md/plugins?id=pieces-for-developers",
       edge: "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim",
