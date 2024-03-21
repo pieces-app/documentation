@@ -1,24 +1,30 @@
 const Video = ({
-  paths,
+  src,
   type,
+  maxWidth,
 }: {
   type: 'youtube'
-  paths: {
+  src: {
     youtube: string
   }
+  maxWidth?: string
 } | {
   type: 'local'
-  paths: {
+  src: {
+    webm: string
     mp4: string
-    webm?: string
     ogg?: string
   }
+  maxWidth?: string
 }) => (
   type === 'youtube' ? (
     <iframe
       width="100%"
-      height="500px"
-      src={paths.youtube}
+      style={{
+        aspectRatio: '16 / 9',
+        maxWidth: maxWidth || '100%',
+      }}
+      src={src.youtube}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen={true}>
     </iframe>
@@ -31,11 +37,12 @@ const Video = ({
       width={'100%'}
       style={{
         borderRadius: '8px',
+        maxWidth: maxWidth || '100%',
       }}
     >
-      <source src={paths.mp4} type="video/mp4" />
-      <source src={paths.webm} type="video/webm" />
-      <source src={paths.ogg} type="video/ogg" />
+      <source src={src.webm} type="video/webm" />
+      <source src={src.mp4} type="video/mp4" />
+      <source src={src.ogg} type="video/ogg" />
     </video>
   ): null
 );
