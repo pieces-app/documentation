@@ -24,7 +24,8 @@ export const pieces_app = {
       chrome: "https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm",
       jetbrains: "https://plugins.jetbrains.com/plugin/17328-pieces--save-search-share--reuse-code-snippets",
       vscode: "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
-      visual_studio_ide: "",
+      // TODO: update the link
+      visual_studio_ide: "https://marketplace.visualstudio.com/vs",
       obsidian: "https://obsidian.md/plugins?id=pieces-for-developers",
       edge: "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim",
       teams: "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fapp%2F789f23b3-d882-45ca-b3a3-de7f850656ea%3Fsource%3Dapp-details-dialog&type=app&deeplinkId=a5fe0a60-b3a1-42a2-9a57-a5ec71696573&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true",
