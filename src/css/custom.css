@@ -28,7 +28,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 
   /* DocSearch overrides */
-  --docsearch-hit-active-color: var(--ifm-color-secondary-darkest) !important;
+  --docsearch-hit-active-color: var(--ifm-color-secondary-lightest) !important;
   --docsearch-highlight-color: var(--ifm-color-primary) !important;
 }
 
@@ -51,6 +51,10 @@
   --ifm-color-secondary-lightest: #424242; /* Original: #3cad6e, now the lightest dark gray before transitioning to lighter shades */
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
+
+  /* DocSearch overrides */
+  --docsearch-hit-active-color: var(--ifm-color-secondary-darkest) !important;
+  --docsearch-highlight-color: var(--ifm-color-primary) !important;
 }
 
 /*Styles for links in paragraphs*/
