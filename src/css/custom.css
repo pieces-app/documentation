@@ -146,7 +146,22 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 /*Support Card Classes*/
+.support-cards-container {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1530px) {
+  .support-cards-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
+
 .main-card {
+  width: 100%;
   padding: 0 16px;
   border-radius: 16px;
   border: 1px solid #BEBEBE;
