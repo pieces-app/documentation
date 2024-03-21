@@ -50,11 +50,11 @@ const config: Config = {
       The second condition is necessary for when you run `build` & `serve` the site locally
       The third condition is necessary for when you deploy a preview deployment on Vercel
     */
-    ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
-      ? [
-        require.resolve('docusaurus-lunr-search')
-      ] : []
-    )
+    // ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
+    //   ? [
+    //     require.resolve('docusaurus-lunr-search')
+    //   ] : []
+    // )
   ],
 
   presets: [
@@ -126,15 +126,15 @@ const config: Config = {
     },
 
     // The following logic ensures that Algolia search is only used for production deployments
-    ...(process.env.VERCEL_ENV === 'production' ?
-      {
-        algolia: {
-          appId: 'KTOXFODR65',
-          apiKey: 'ea4804560699e4b727715163b74bea83',
-          indexName: 'pieces_docusaurus',
-        }
-      } : {}
-    ),
+    // ...(process.env.VERCEL_ENV === 'production' ?
+    //   {
+    algolia: {
+      appId: 'KTOXFODR65',
+      apiKey: 'ea4804560699e4b727715163b74bea83',
+      indexName: 'pieces_docusaurus',
+    },
+      // } : {}
+    // ),
 
     navbar: {
       logo: {
