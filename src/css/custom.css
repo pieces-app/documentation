@@ -50,6 +50,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 }
 
+/* Fix margin for faq dropdown titles */
+summary > h2 {
+  margin: 0;
+}
+
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
 p > a {
