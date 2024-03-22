@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**distributions_create_new_distribution**](DistributionsApi#distributions_create_new_distribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributions_delete_specific_distribution**](DistributionsApi#distributions_delete_specific_distribution) | **POST** /distributions/{distribution}/delete | /distributions/{distribution}/delete [POST]
+[**distributions_delete_specific_distribution**](DistributionsApi#distributions_delete_specific_distribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
 [**distributions_snapshot**](DistributionsApi#distributions_snapshot) | **GET** /distributions | /distributions [GET]
 
 
-# **distributions_create_new_distribution**
+## **distributions_create_new_distribution**
 > Distribution distributions_create_new_distribution(seeded_distribution=seeded_distribution)
 
 /distributions/create [POST]
@@ -77,12 +77,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **distributions_delete_specific_distribution**
+
+## **distributions_delete_specific_distribution**
 > distributions_delete_specific_distribution(distribution)
 
-/distributions/{distribution}/delete [POST]
+/distributions/\{distribution\}/delete [POST]
 
 This will delete a specific distribution.
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     distribution = 'distribution_example' # str | This is the uuid of a specific distribution.
 
     try:
-        # /distributions/{distribution}/delete [POST]
+        # /distributions/\{distribution\}/delete [POST]
         api_instance.distributions_delete_specific_distribution(distribution)
     except Exception as e:
         print("Exception when calling DistributionsApi->distributions_delete_specific_distribution: %s\n" % e)
@@ -143,9 +143,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **distributions_snapshot**
+
+## **distributions_snapshot**
 > Distributions distributions_snapshot()
 
 /distributions [GET]
@@ -208,5 +208,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -30,6 +30,6 @@ seeded_share_dict = seeded_share_instance.to_dict()
 # create an instance of SeededShare from a dict
 seeded_share_form_dict = seeded_share.from_dict(seeded_share_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

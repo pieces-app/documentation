@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**discovery_discover_tags_related**](DiscoveryApi#discovery_discover_tags_related) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
-# **discovery_discover_assets**
+## **discovery_discover_assets**
 > DiscoveredAssets discovery_discover_assets(automatic=automatic, seeded_discoverable_assets=seeded_discoverable_assets)
 
 /discovery/discover/assets [POST]
@@ -80,9 +80,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discovery_discover_assets_html**
+
+## **discovery_discover_assets_html**
 > DiscoveredHtmlWebpages discovery_discover_assets_html(automatic=automatic, seeded_discoverable_html_webpages=seeded_discoverable_html_webpages)
 
 /discovery/discover/assets/html[POST]
@@ -152,9 +152,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discovery_discover_sensitives**
+
+## **discovery_discover_sensitives**
 > DiscoveredSensitives discovery_discover_sensitives(automatic=automatic, seeded_discoverable_sensitives=seeded_discoverable_sensitives)
 
 /discovery/discover/sensitives [POST]
@@ -223,9 +223,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discovery_discover_tags_related**
+
+## **discovery_discover_tags_related**
 > DiscoveredRelatedTags discovery_discover_tags_related(automatic=automatic, seeded_discoverable_related_tags=seeded_discoverable_related_tags)
 
 /discovery/discover/tags/related [POST]
@@ -295,5 +295,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

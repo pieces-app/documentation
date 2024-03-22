@@ -28,6 +28,6 @@ format_metric_dict = format_metric_instance.to_dict()
 # create an instance of FormatMetric from a dict
 format_metric_form_dict = format_metric.from_dict(format_metric_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

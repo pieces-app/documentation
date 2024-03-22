@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**relationships_specific_relationship_snapshot**](RelationshipApi#relationships_specific_relationship_snapshot) | **GET** /relationship/{relationship} | /relationship/{relationship} [GET]
+[**relationships_specific_relationship_snapshot**](RelationshipApi#relationships_specific_relationship_snapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
 
 
-# **relationships_specific_relationship_snapshot**
+## **relationships_specific_relationship_snapshot**
 > Relationship relationships_specific_relationship_snapshot(relationship)
 
-/relationship/{relationship} [GET]
+/relationship/\{relationship\} [GET]
 
 This will return a single relationship object.
 
@@ -37,7 +37,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     relationship = 'relationship_example' # str | this is a specific relationship uuid.
 
     try:
-        # /relationship/{relationship} [GET]
+        # /relationship/\{relationship\} [GET]
         api_response = api_instance.relationships_specific_relationship_snapshot(relationship)
         print("The response of RelationshipApi->relationships_specific_relationship_snapshot:\n")
         pprint(api_response)
@@ -73,5 +73,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

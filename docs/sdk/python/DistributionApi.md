@@ -5,10 +5,10 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**distribution_update**](DistributionApi#distribution_update) | **POST** /distribution/update | /distribution/update [POST]
-[**distributions_specific_distribution_snapshot**](DistributionApi#distributions_specific_distribution_snapshot) | **GET** /distribution/{distribution} | /distribution/{distribution} [GET]
+[**distributions_specific_distribution_snapshot**](DistributionApi#distributions_specific_distribution_snapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
-# **distribution_update**
+## **distribution_update**
 > Distribution distribution_update(distribution=distribution)
 
 /distribution/update [POST]
@@ -75,12 +75,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **distributions_specific_distribution_snapshot**
+
+## **distributions_specific_distribution_snapshot**
 > Distribution distributions_specific_distribution_snapshot(distribution)
 
-/distribution/{distribution} [GET]
+/distribution/\{distribution\} [GET]
 
 This will get a specific snapshot of a distribution.
 
@@ -107,7 +107,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     distribution = 'distribution_example' # str | This is the uuid of a specific distribution.
 
     try:
-        # /distribution/{distribution} [GET]
+        # /distribution/\{distribution\} [GET]
         api_response = api_instance.distributions_specific_distribution_snapshot(distribution)
         print("The response of DistributionApi->distributions_specific_distribution_snapshot:\n")
         pprint(api_response)
@@ -145,5 +145,5 @@ No authorization required
 **410** | Distribution not found. |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

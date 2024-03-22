@@ -30,6 +30,6 @@ tracked_application_dict = tracked_application_instance.to_dict()
 # create an instance of TrackedApplication from a dict
 tracked_application_form_dict = tracked_application.from_dict(tracked_application_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

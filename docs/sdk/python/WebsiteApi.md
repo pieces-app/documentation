@@ -4,21 +4,21 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**website_associate_asset**](WebsiteApi#website_associate_asset) | **POST** /website/{website}/assets/associate/{asset} | /website/{website}/assets/associate/{asset} [POST]
-[**website_associate_conversation**](WebsiteApi#website_associate_conversation) | **POST** /website/{website}/conversations/associate/{conversation} | /website/{website}/conversations/associate/{conversation} [POST]
-[**website_associate_person**](WebsiteApi#website_associate_person) | **POST** /website/{website}/persons/associate/{person} | /website/{website}/persons/associate/{person} [POST]
-[**website_disassociate_asset**](WebsiteApi#website_disassociate_asset) | **POST** /website/{website}/assets/disassociate/{asset} | /website/{website}/assets/disassociate/{asset} [POST]
-[**website_disassociate_conversation**](WebsiteApi#website_disassociate_conversation) | **POST** /website/{website}/conversations/disassociate/{conversation} | /website/{website}/conversations/disassociate/{conversation} [POST]
-[**website_disassociate_person**](WebsiteApi#website_disassociate_person) | **POST** /website/{website}/persons/disassociate/{person} | /website/{website}/persons/disassociate/{person} [POST]
-[**website_scores_increment**](WebsiteApi#website_scores_increment) | **POST** /website/{website}/scores/increment | &#39;/website/{website}/scores/increment&#39; [POST]
+[**website_associate_asset**](WebsiteApi#website_associate_asset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**website_associate_conversation**](WebsiteApi#website_associate_conversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**website_associate_person**](WebsiteApi#website_associate_person) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**website_disassociate_asset**](WebsiteApi#website_disassociate_asset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**website_disassociate_conversation**](WebsiteApi#website_disassociate_conversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**website_disassociate_person**](WebsiteApi#website_disassociate_person) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**website_scores_increment**](WebsiteApi#website_scores_increment) | **POST** /website/\{website\}/scores/increment | &#39;/website/\{website\}/scores/increment&#39; [POST]
 [**website_update**](WebsiteApi#website_update) | **POST** /website/update | /website/update [POST]
-[**websites_specific_website_snapshot**](WebsiteApi#websites_specific_website_snapshot) | **GET** /website/{website} | /website/{website} [GET]
+[**websites_specific_website_snapshot**](WebsiteApi#websites_specific_website_snapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
-# **website_associate_asset**
+## **website_associate_asset**
 > website_associate_asset(asset, website)
 
-/website/{website}/assets/associate/{asset} [POST]
+/website/\{website\}/assets/associate/\{asset\} [POST]
 
 This will associate a website with a asset.
 
@@ -45,7 +45,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     website = 'website_example' # str | website id
 
     try:
-        # /website/{website}/assets/associate/{asset} [POST]
+        # /website/\{website\}/assets/associate/\{asset\} [POST]
         api_instance.website_associate_asset(asset, website)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_associate_asset: %s\n" % e)
@@ -81,12 +81,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_associate_conversation**
+
+## **website_associate_conversation**
 > website_associate_conversation(website, conversation)
 
-/website/{website}/conversations/associate/{conversation} [POST]
+/website/\{website\}/conversations/associate/\{conversation\} [POST]
 
 This will associate a website with a conversation.
 
@@ -113,7 +113,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
     try:
-        # /website/{website}/conversations/associate/{conversation} [POST]
+        # /website/\{website\}/conversations/associate/\{conversation\} [POST]
         api_instance.website_associate_conversation(website, conversation)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_associate_conversation: %s\n" % e)
@@ -149,12 +149,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_associate_person**
+
+## **website_associate_person**
 > website_associate_person(website, person)
 
-/website/{website}/persons/associate/{person} [POST]
+/website/\{website\}/persons/associate/\{person\} [POST]
 
 This will associate a website with a person.
 
@@ -181,7 +181,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
-        # /website/{website}/persons/associate/{person} [POST]
+        # /website/\{website\}/persons/associate/\{person\} [POST]
         api_instance.website_associate_person(website, person)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_associate_person: %s\n" % e)
@@ -217,12 +217,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_disassociate_asset**
+
+## **website_disassociate_asset**
 > website_disassociate_asset(website, asset)
 
-/website/{website}/assets/disassociate/{asset} [POST]
+/website/\{website\}/assets/disassociate/\{asset\} [POST]
 
 This will enable us to dissassociate a website from a asset.
 
@@ -249,7 +249,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
-        # /website/{website}/assets/disassociate/{asset} [POST]
+        # /website/\{website\}/assets/disassociate/\{asset\} [POST]
         api_instance.website_disassociate_asset(website, asset)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_disassociate_asset: %s\n" % e)
@@ -285,12 +285,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_disassociate_conversation**
+
+## **website_disassociate_conversation**
 > website_disassociate_conversation(website, conversation)
 
-/website/{website}/conversations/disassociate/{conversation} [POST]
+/website/\{website\}/conversations/disassociate/\{conversation\} [POST]
 
 This will enable us to dissassociate a website from a conversation.
 
@@ -317,7 +317,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
     try:
-        # /website/{website}/conversations/disassociate/{conversation} [POST]
+        # /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
         api_instance.website_disassociate_conversation(website, conversation)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_disassociate_conversation: %s\n" % e)
@@ -353,12 +353,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_disassociate_person**
+
+## **website_disassociate_person**
 > website_disassociate_person(website, person)
 
-/website/{website}/persons/disassociate/{person} [POST]
+/website/\{website\}/persons/disassociate/\{person\} [POST]
 
 This will enable us to dissassociate a website from a person.
 
@@ -385,7 +385,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
-        # /website/{website}/persons/disassociate/{person} [POST]
+        # /website/\{website\}/persons/disassociate/\{person\} [POST]
         api_instance.website_disassociate_person(website, person)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_disassociate_person: %s\n" % e)
@@ -421,12 +421,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_scores_increment**
+
+## **website_scores_increment**
 > website_scores_increment(website, seeded_score_increment=seeded_score_increment)
 
-'/website/{website}/scores/increment' [POST]
+'/website/\{website\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -454,7 +454,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/website/{website}/scores/increment' [POST]
+        # '/website/\{website\}/scores/increment' [POST]
         api_instance.website_scores_increment(website, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling WebsiteApi->website_scores_increment: %s\n" % e)
@@ -490,9 +490,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **website_update**
+
+## **website_update**
 > Website website_update(transferables=transferables, website=website)
 
 /website/update [POST]
@@ -561,12 +561,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websites_specific_website_snapshot**
+
+## **websites_specific_website_snapshot**
 > Website websites_specific_website_snapshot(website, transferables=transferables)
 
-/website/{website} [GET]
+/website/\{website\} [GET]
 
 This will get a snapshot of a single website.
 
@@ -594,7 +594,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /website/{website} [GET]
+        # /website/\{website\} [GET]
         api_response = api_instance.websites_specific_website_snapshot(website, transferables=transferables)
         print("The response of WebsiteApi->websites_specific_website_snapshot:\n")
         pprint(api_response)
@@ -632,5 +632,5 @@ No authorization required
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

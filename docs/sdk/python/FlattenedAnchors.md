@@ -27,6 +27,6 @@ flattened_anchors_dict = flattened_anchors_instance.to_dict()
 # create an instance of FlattenedAnchors from a dict
 flattened_anchors_form_dict = flattened_anchors.from_dict(flattened_anchors_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

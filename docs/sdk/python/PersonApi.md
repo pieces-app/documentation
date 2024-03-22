@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**person_scores_increment**](PersonApi#person_scores_increment) | **POST** /person/{person}/scores/increment | &#39;/person/{person}/scores/increment&#39; [POST]
-[**person_snapshot**](PersonApi#person_snapshot) | **GET** /person/{person} | /person/{person} [GET]
+[**person_scores_increment**](PersonApi#person_scores_increment) | **POST** /person/\{person\}/scores/increment | &#39;/person/\{person\}/scores/increment&#39; [POST]
+[**person_snapshot**](PersonApi#person_snapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
 [**update_person**](PersonApi#update_person) | **POST** /person/update | /person/update [POST]
 
 
-# **person_scores_increment**
+## **person_scores_increment**
 > person_scores_increment(person, seeded_score_increment=seeded_score_increment)
 
-'/person/{person}/scores/increment' [POST]
+'/person/\{person\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/person/{person}/scores/increment' [POST]
+        # '/person/\{person\}/scores/increment' [POST]
         api_instance.person_scores_increment(person, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling PersonApi->person_scores_increment: %s\n" % e)
@@ -76,12 +76,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **person_snapshot**
+
+## **person_snapshot**
 > Person person_snapshot(person, transferables=transferables)
 
-/person/{person} [GET]
+/person/\{person\} [GET]
 
 This will get a snapshot of a specific person
 
@@ -109,7 +109,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /person/{person} [GET]
+        # /person/\{person\} [GET]
         api_response = api_instance.person_snapshot(person, transferables=transferables)
         print("The response of PersonApi->person_snapshot:\n")
         pprint(api_response)
@@ -147,9 +147,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **update_person**
+
+## **update_person**
 > Person update_person(transferables=transferables, person=person)
 
 /person/update [POST]
@@ -217,5 +217,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

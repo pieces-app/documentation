@@ -28,6 +28,6 @@ tracked_format_event_dict = tracked_format_event_instance.to_dict()
 # create an instance of TrackedFormatEvent from a dict
 tracked_format_event_form_dict = tracked_format_event.from_dict(tracked_format_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

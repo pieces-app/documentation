@@ -28,6 +28,6 @@ tracked_assets_event_search_metadata_results_dict = tracked_assets_event_search_
 # create an instance of TrackedAssetsEventSearchMetadataResults from a dict
 tracked_assets_event_search_metadata_results_form_dict = tracked_assets_event_search_metadata_results.from_dict(tracked_assets_event_search_metadata_results_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

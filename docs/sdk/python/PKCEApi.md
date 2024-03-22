@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**respond_with_code**](PKCEApi#respond_with_code) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
-# **clear_pkce**
+## **clear_pkce**
 > clear_pkce()
 
 /pkce/clear [POST]
@@ -70,9 +70,9 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **generate_code**
+
+## **generate_code**
 > PKCE generate_code(seeded_pkce=seeded_pkce)
 
 /pkce/code [POST]
@@ -139,9 +139,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **generate_token**
+
+## **generate_token**
 > PKCE generate_token(tokenized_pkce=tokenized_pkce)
 
 /pkce/token [POST]
@@ -208,9 +208,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **get_challenge**
+
+## **get_challenge**
 > PKCE get_challenge()
 
 Your GET endpoint
@@ -272,9 +272,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **respond_with_code**
+
+## **respond_with_code**
 > PKCE respond_with_code(code, state, var_schema=var_schema)
 
 /pkce/response/code [POST]
@@ -345,5 +345,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -28,6 +28,6 @@ seeded_tracked_format_event_dict = seeded_tracked_format_event_instance.to_dict(
 # create an instance of SeededTrackedFormatEvent from a dict
 seeded_tracked_format_event_form_dict = seeded_tracked_format_event.from_dict(seeded_tracked_format_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

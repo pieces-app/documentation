@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitive_scores_increment**](SensitiveApi#sensitive_scores_increment) | **POST** /sensitive/{sensitive}/scores/increment | &#39;/sensitive/{sensitive}/scores/increment&#39; [POST]
-[**sensitive_snapshot**](SensitiveApi#sensitive_snapshot) | **GET** /sensitive/{sensitive} | /sensitive/{sensitive} [GET]
+[**sensitive_scores_increment**](SensitiveApi#sensitive_scores_increment) | **POST** /sensitive/\{sensitive\}/scores/increment | &#39;/sensitive/\{sensitive\}/scores/increment&#39; [POST]
+[**sensitive_snapshot**](SensitiveApi#sensitive_snapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
 [**update_sensitive**](SensitiveApi#update_sensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
-# **sensitive_scores_increment**
+## **sensitive_scores_increment**
 > sensitive_scores_increment(sensitive, seeded_score_increment=seeded_score_increment)
 
-'/sensitive/{sensitive}/scores/increment' [POST]
+'/sensitive/\{sensitive\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/sensitive/{sensitive}/scores/increment' [POST]
+        # '/sensitive/\{sensitive\}/scores/increment' [POST]
         api_instance.sensitive_scores_increment(sensitive, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling SensitiveApi->sensitive_scores_increment: %s\n" % e)
@@ -76,12 +76,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitive_snapshot**
+
+## **sensitive_snapshot**
 > Sensitive sensitive_snapshot(sensitive)
 
-/sensitive/{sensitive} [GET]
+/sensitive/\{sensitive\} [GET]
 
 This will get a specific sensitive via the sensitive uuid.
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     sensitive = 'sensitive_example' # str | 
 
     try:
-        # /sensitive/{sensitive} [GET]
+        # /sensitive/\{sensitive\} [GET]
         api_response = api_instance.sensitive_snapshot(sensitive)
         print("The response of SensitiveApi->sensitive_snapshot:\n")
         pprint(api_response)
@@ -145,9 +145,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **update_sensitive**
+
+## **update_sensitive**
 > Sensitive update_sensitive(sensitive=sensitive)
 
 /sensitive/update [POST]
@@ -214,5 +214,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

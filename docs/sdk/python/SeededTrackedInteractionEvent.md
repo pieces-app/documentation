@@ -28,6 +28,6 @@ seeded_tracked_interaction_event_dict = seeded_tracked_interaction_event_instanc
 # create an instance of SeededTrackedInteractionEvent from a dict
 seeded_tracked_interaction_event_form_dict = seeded_tracked_interaction_event.from_dict(seeded_tracked_interaction_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

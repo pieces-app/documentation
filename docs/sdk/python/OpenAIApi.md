@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**open_ai_models_list**](OpenAIApi#open_ai_models_list) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
-# **open_ai_models_list**
+## **open_ai_models_list**
 > OpenAIModelsListOutput open_ai_models_list(open_ai_models_list_input=open_ai_models_list_input)
 
 /open_ai/models/list [POST]
@@ -76,5 +76,5 @@ No authorization required
 **401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

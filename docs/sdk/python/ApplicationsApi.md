@@ -9,16 +9,16 @@ Method | HTTP request | Description
 [**applications_register**](ApplicationsApi#applications_register) | **POST** /applications/register | /applications/register [POST]
 [**applications_session_close**](ApplicationsApi#applications_session_close) | **POST** /applications/session/close | /applications/session/close [POST]
 [**applications_session_open**](ApplicationsApi#applications_session_open) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applications_session_snapshot**](ApplicationsApi#applications_session_snapshot) | **GET** /applications/sessions/{session} | /applications/sessions/{session} [GET]
+[**applications_session_snapshot**](ApplicationsApi#applications_session_snapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
 [**applications_snapshot**](ApplicationsApi#applications_snapshot) | **GET** /applications | /applications [GET]
-[**applications_specific_application_snapshot**](ApplicationsApi#applications_specific_application_snapshot) | **GET** /applications/{application} | /applications/{application} [GET]
+[**applications_specific_application_snapshot**](ApplicationsApi#applications_specific_application_snapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
 [**applications_usage_engagement_interaction**](ApplicationsApi#applications_usage_engagement_interaction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
 [**applications_usage_engagement_keyboard**](ApplicationsApi#applications_usage_engagement_keyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
 [**applications_usage_installation**](ApplicationsApi#applications_usage_installation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
 [**post_applications_usage_updated**](ApplicationsApi#post_applications_usage_updated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
-# **applications_external_related**
+## **applications_external_related**
 > DetectedExternalApplications applications_external_related()
 
 /applications/external/related [GET]
@@ -81,9 +81,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_external_snapshot**
+
+## **applications_external_snapshot**
 > DetectedExternalApplications applications_external_snapshot()
 
 /applications/external [GET]
@@ -146,9 +146,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_register**
+
+## **applications_register**
 > Application applications_register(application=application)
 
 /applications/register [POST]
@@ -214,9 +214,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_session_close**
+
+## **applications_session_close**
 > Session applications_session_close(body=body)
 
 /applications/session/close [POST]
@@ -282,9 +282,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_session_open**
+
+## **applications_session_open**
 > Session applications_session_open()
 
 /applications/session/open [POST]
@@ -346,12 +346,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_session_snapshot**
+
+## **applications_session_snapshot**
 > Session applications_session_snapshot(session)
 
-/applications/sessions/{session} [GET]
+/applications/sessions/\{session\} [GET]
 
 This is an endpoint to get a snapshot of a specific session.
 
@@ -378,7 +378,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     session = 'session_example' # str | This is a uuid that points to a session.
 
     try:
-        # /applications/sessions/{session} [GET]
+        # /applications/sessions/\{session\} [GET]
         api_response = api_instance.applications_session_snapshot(session)
         print("The response of ApplicationsApi->applications_session_snapshot:\n")
         pprint(api_response)
@@ -414,9 +414,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_snapshot**
+
+## **applications_snapshot**
 > Applications applications_snapshot()
 
 /applications [GET]
@@ -478,12 +478,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_specific_application_snapshot**
+
+## **applications_specific_application_snapshot**
 > Application applications_specific_application_snapshot(application)
 
-/applications/{application} [GET]
+/applications/\{application\} [GET]
 
 This will retrieve snapshot of a single application.
 
@@ -510,7 +510,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     application = 'application_example' # str | This is a uuid that represents an application
 
     try:
-        # /applications/{application} [GET]
+        # /applications/\{application\} [GET]
         api_response = api_instance.applications_specific_application_snapshot(application)
         print("The response of ApplicationsApi->applications_specific_application_snapshot:\n")
         pprint(api_response)
@@ -546,9 +546,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_usage_engagement_interaction**
+
+## **applications_usage_engagement_interaction**
 > TrackedInteractionEvent applications_usage_engagement_interaction(seeded_tracked_interaction_event=seeded_tracked_interaction_event)
 
 /applications/usage/engagement/interaction [POST] Scoped to Apps
@@ -615,9 +615,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_usage_engagement_keyboard**
+
+## **applications_usage_engagement_keyboard**
 > TrackedKeyboardEvent applications_usage_engagement_keyboard(seeded_tracked_keyboard_event=seeded_tracked_keyboard_event)
 
 /applications/usage/engagement/keyboard [POST] Scoped to Apps
@@ -684,9 +684,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applications_usage_installation**
+
+## **applications_usage_installation**
 > applications_usage_installation(tracked_application_install=tracked_application_install)
 
 /applications/usage/installation [POST]
@@ -750,9 +750,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **post_applications_usage_updated**
+
+## **post_applications_usage_updated**
 > post_applications_usage_updated(tracked_application_update=tracked_application_update)
 
 /applications/usage/updated [POST]
@@ -816,5 +816,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

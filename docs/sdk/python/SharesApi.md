@@ -5,12 +5,12 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**shares_create_new_share**](SharesApi#shares_create_new_share) | **POST** /shares/create | /shares/create [POST]
-[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/{share}/delete | /shares/{share}/delete [POST]
+[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
 [**shares_snapshot**](SharesApi#shares_snapshot) | **GET** /shares | /shares [GET]
-[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/{share} | /shares/{share} [GET]
+[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
-# **shares_create_new_share**
+## **shares_create_new_share**
 > Shares shares_create_new_share(transferables=transferables, seeded_share=seeded_share)
 
 /shares/create [POST]
@@ -79,12 +79,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **shares_delete_share**
+
+## **shares_delete_share**
 > str shares_delete_share(share)
 
-/shares/{share}/delete [POST]
+/shares/\{share\}/delete [POST]
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
@@ -110,7 +110,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     share = 'share_example' # str | Share id
 
     try:
-        # /shares/{share}/delete [POST]
+        # /shares/\{share\}/delete [POST]
         api_response = api_instance.shares_delete_share(share)
         print("The response of SharesApi->shares_delete_share:\n")
         pprint(api_response)
@@ -146,9 +146,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **shares_snapshot**
+
+## **shares_snapshot**
 > Shares shares_snapshot(transferables=transferables)
 
 /shares [GET]
@@ -214,12 +214,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **shares_specific_share_snapshot**
+
+## **shares_specific_share_snapshot**
 > Share shares_specific_share_snapshot(share, transferables=transferables)
 
-/shares/{share} [GET]
+/shares/\{share\} [GET]
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
@@ -247,7 +247,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /shares/{share} [GET]
+        # /shares/\{share\} [GET]
         api_response = api_instance.shares_specific_share_snapshot(share, transferables=transferables)
         print("The response of SharesApi->shares_specific_share_snapshot:\n")
         pprint(api_response)
@@ -284,5 +284,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | A specific share per the provided share id. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

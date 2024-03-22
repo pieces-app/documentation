@@ -26,6 +26,6 @@ relevant_qgpt_seeds_dict = relevant_qgpt_seeds_instance.to_dict()
 # create an instance of RelevantQGPTSeeds from a dict
 relevant_qgpt_seeds_form_dict = relevant_qgpt_seeds.from_dict(relevant_qgpt_seeds_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

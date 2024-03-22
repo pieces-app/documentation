@@ -27,6 +27,6 @@ revoked_pkce_dict = revoked_pkce_instance.to_dict()
 # create an instance of RevokedPKCE from a dict
 revoked_pkce_form_dict = revoked_pkce.from_dict(revoked_pkce_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

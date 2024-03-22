@@ -5,12 +5,12 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**authenticate_from_oauth_token**](UsersApi#authenticate_from_oauth_token) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
-[**users_disconnect_user**](UsersApi#users_disconnect_user) | **POST** /users/{user}/disconnect | /users/{user}/disconnect [POST]
+[**users_disconnect_user**](UsersApi#users_disconnect_user) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
 [**users_snapshot**](UsersApi#users_snapshot) | **GET** /users | /users [GET]
-[**users_specific_user_snapshot**](UsersApi#users_specific_user_snapshot) | **GET** /users/{user} | /users/{user} [GET] Scoped to Users
+[**users_specific_user_snapshot**](UsersApi#users_specific_user_snapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
 
 
-# **authenticate_from_oauth_token**
+## **authenticate_from_oauth_token**
 > UserProfile authenticate_from_oauth_token(o_auth_token=o_auth_token)
 
 /users/authenticate/from_token [POST]
@@ -77,7 +77,6 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
 
 ### HTTP request headers
 
@@ -90,12 +89,12 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **users_disconnect_user**
+
+## **users_disconnect_user**
 > Users users_disconnect_user(user)
 
-/users/{user}/disconnect [POST]
+/users/\{user\}/disconnect [POST]
 
 Locally Removing a user for the purpose of Signing Out
 
@@ -122,7 +121,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     user = 'user_example' # str | 
 
     try:
-        # /users/{user}/disconnect [POST]
+        # /users/\{user\}/disconnect [POST]
         api_response = api_instance.users_disconnect_user(user)
         print("The response of UsersApi->users_disconnect_user:\n")
         pprint(api_response)
@@ -158,9 +157,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **users_snapshot**
+
+## **users_snapshot**
 > Users users_snapshot()
 
 /users [GET]
@@ -222,12 +221,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **users_specific_user_snapshot**
+
+## **users_specific_user_snapshot**
 > UserProfile users_specific_user_snapshot(user)
 
-/users/{user} [GET] Scoped to Users
+/users/\{user\} [GET] Scoped to Users
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
@@ -254,7 +253,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     user = '497f6eca-6276-4993-bfeb-53cbbbba6f08' # str | The id (uuid) for a specific user.
 
     try:
-        # /users/{user} [GET] Scoped to Users
+        # /users/\{user\} [GET] Scoped to Users
         api_response = api_instance.users_specific_user_snapshot(user)
         print("The response of UsersApi->users_specific_user_snapshot:\n")
         pprint(api_response)
@@ -290,5 +289,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**tag_based_search**](SearchApi#tag_based_search) | **POST** /search/tag_based | /search/tag_based [POST]
 
 
-# **full_text_search**
+## **full_text_search**
 > SearchedAssets full_text_search(query=query, pseudo=pseudo)
 
 /search/full_text [GET]
@@ -78,9 +78,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **neural_code_search**
+
+## **neural_code_search**
 > SearchedAssets neural_code_search(query=query, pseudo=pseudo)
 
 /search/neural_code [GET]
@@ -149,9 +149,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_based_search**
+
+## **tag_based_search**
 > SearchedAssets tag_based_search(pseudo=pseudo, seeded_asset_tags=seeded_asset_tags)
 
 /search/tag_based [POST]
@@ -221,5 +221,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

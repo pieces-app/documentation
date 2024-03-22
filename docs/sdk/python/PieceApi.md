@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**html_share**](PieceApi#html_share) | **GET** / | / [GET]
 
 
-# **html_share**
+## **html_share**
 > str html_share(p)
 
 / [GET]
@@ -72,5 +72,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

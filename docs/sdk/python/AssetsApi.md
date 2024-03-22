@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assets_create_new_asset**](AssetsApi#assets_create_new_asset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/{asset}/delete | /assets/delete [POST] Scoped to Asset
+[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/\{asset\}/delete | /assets/delete [POST] Scoped to Asset
 [**assets_draft**](AssetsApi#assets_draft) | **POST** /assets/draft | /assets/draft [POST]
 [**assets_get_recommended_assets**](AssetsApi#assets_get_recommended_assets) | **GET** /assets/recommended | Your GET endpoint
 [**assets_get_related_assets**](AssetsApi#assets_get_related_assets) | **GET** /assets/related | /assets/related [GET]
@@ -14,14 +14,14 @@ Method | HTTP request | Description
 [**assets_search_assets**](AssetsApi#assets_search_assets) | **GET** /assets/search | /assets/search?query&#x3D;string [GET]
 [**assets_search_with_filters**](AssetsApi#assets_search_with_filters) | **POST** /assets/search | /assets/search [POST]
 [**assets_snapshot**](AssetsApi#assets_snapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/{asset}/formats | /assets/{asset}/formats [GET] Scoped To Assets
-[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/{asset} | /assets/{asset} [GET] Scoped to Assets
+[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
 [**assets_stream_identifiers**](AssetsApi#assets_stream_identifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
 [**get_assets_stream_transferables**](AssetsApi#get_assets_stream_transferables) | **GET** /assets/stream/transferables | Your GET endpoint
 [**stream_assets**](AssetsApi#stream_assets) | **GET** /assets/stream | /assets/stream [GET]
 
 
-# **assets_create_new_asset**
+## **assets_create_new_asset**
 > Asset assets_create_new_asset(transferables=transferables, seed=seed)
 
 /assets/create [POST] Scoped to Asset
@@ -90,9 +90,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_delete_asset**
+
+## **assets_delete_asset**
 > str assets_delete_asset(asset)
 
 /assets/delete [POST] Scoped to Asset
@@ -157,9 +157,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_draft**
+
+## **assets_draft**
 > Seed assets_draft(transferables=transferables, seed=seed)
 
 /assets/draft [POST]
@@ -228,9 +228,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_get_recommended_assets**
+
+## **assets_get_recommended_assets**
 > Assets assets_get_recommended_assets(seeded_assets_recommendation=seeded_assets_recommendation)
 
 Your GET endpoint
@@ -297,9 +297,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_get_related_assets**
+
+## **assets_get_related_assets**
 > Assets assets_get_related_assets(assets=assets)
 
 /assets/related [GET]
@@ -365,9 +365,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_identifiers_snapshot**
+
+## **assets_identifiers_snapshot**
 > FlattenedAssets assets_identifiers_snapshot(pseudo=pseudo)
 
 /assets/identifiers [GET]
@@ -434,9 +434,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_pseudo_snapshot**
+
+## **assets_pseudo_snapshot**
 > PseudoAssets assets_pseudo_snapshot()
 
 /assets/pseudo [GET]
@@ -499,9 +499,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_search_assets**
+
+## **assets_search_assets**
 > SearchedAssets assets_search_assets(query=query, transferables=transferables, searchable_tags=searchable_tags, pseudo=pseudo)
 
 /assets/search?query=string [GET]
@@ -574,9 +574,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_search_with_filters**
+
+## **assets_search_with_filters**
 > AssetsSearchWithFiltersOutput assets_search_with_filters(transferables=transferables, pseudo=pseudo, assets_search_with_filters_input=assets_search_with_filters_input)
 
 /assets/search [POST]
@@ -648,9 +648,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_snapshot**
+
+## **assets_snapshot**
 > Assets assets_snapshot(transferables=transferables, suggested=suggested, pseudo=pseudo)
 
 /assets [GET] Scoped to Assets
@@ -720,12 +720,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_specific_asset_formats_snapshot**
+
+## **assets_specific_asset_formats_snapshot**
 > Formats assets_specific_asset_formats_snapshot(asset, transferables=transferables)
 
-/assets/{asset}/formats [GET] Scoped To Assets
+/assets/\{asset\}/formats [GET] Scoped To Assets
 
 This will query the formats for agiven asset when provided that asset's id.
 
@@ -753,7 +753,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /assets/{asset}/formats [GET] Scoped To Assets
+        # /assets/\{asset\}/formats [GET] Scoped To Assets
         api_response = api_instance.assets_specific_asset_formats_snapshot(asset, transferables=transferables)
         print("The response of AssetsApi->assets_specific_asset_formats_snapshot:\n")
         pprint(api_response)
@@ -790,12 +790,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_specific_asset_snapshot**
+
+## **assets_specific_asset_snapshot**
 > Asset assets_specific_asset_snapshot(asset, transferables=transferables)
 
-/assets/{asset} [GET] Scoped to Assets
+/assets/\{asset\} [GET] Scoped to Assets
 
 This is an endpoint to enable a client to access a specific asset through a provided uuid in the path.
 
@@ -823,7 +823,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /assets/{asset} [GET] Scoped to Assets
+        # /assets/\{asset\} [GET] Scoped to Assets
         api_response = api_instance.assets_specific_asset_snapshot(asset, transferables=transferables)
         print("The response of AssetsApi->assets_specific_asset_snapshot:\n")
         pprint(api_response)
@@ -861,9 +861,9 @@ No authorization required
 **200** | A specific asset per the provided asset id. |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assets_stream_identifiers**
+
+## **assets_stream_identifiers**
 > StreamedIdentifiers assets_stream_identifiers()
 
 /assets/stream/identifiers [GET]
@@ -925,9 +925,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **get_assets_stream_transferables**
+
+## **get_assets_stream_transferables**
 > Assets get_assets_stream_transferables()
 
 Your GET endpoint
@@ -989,9 +989,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **stream_assets**
+
+## **stream_assets**
 > Assets stream_assets()
 
 /assets/stream [GET]
@@ -1053,5 +1053,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

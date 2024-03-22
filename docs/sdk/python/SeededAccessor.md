@@ -28,6 +28,6 @@ seeded_accessor_dict = seeded_accessor_instance.to_dict()
 # create an instance of SeededAccessor from a dict
 seeded_accessor_form_dict = seeded_accessor.from_dict(seeded_accessor_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

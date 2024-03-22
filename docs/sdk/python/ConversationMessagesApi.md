@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**messages_create_specific_message**](ConversationMessagesApi#messages_create_specific_message) | **POST** /messages/create | /messages/create [POST]
-[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/{message}/delete | /messages/{message}/delete [POST]
+[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
 [**messages_snapshot**](ConversationMessagesApi#messages_snapshot) | **GET** /messages | /messages [GET]
 
 
-# **messages_create_specific_message**
+## **messages_create_specific_message**
 > ConversationMessage messages_create_specific_message(transferables=transferables, seeded_conversation_message=seeded_conversation_message)
 
 /messages/create [POST]
@@ -79,12 +79,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messages_delete_specific_message**
+
+## **messages_delete_specific_message**
 > messages_delete_specific_message(message)
 
-/messages/{message}/delete [POST]
+/messages/\{message\}/delete [POST]
 
 This will delete a specific message.
 
@@ -110,7 +110,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     message = 'message_example' # str | This is the uuid of a message.
 
     try:
-        # /messages/{message}/delete [POST]
+        # /messages/\{message\}/delete [POST]
         api_instance.messages_delete_specific_message(message)
     except Exception as e:
         print("Exception when calling ConversationMessagesApi->messages_delete_specific_message: %s\n" % e)
@@ -145,9 +145,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messages_snapshot**
+
+## **messages_snapshot**
 > ConversationMessages messages_snapshot(transferables=transferables)
 
 /messages [GET]
@@ -214,5 +214,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

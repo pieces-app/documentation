@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/{message}/annotations/associate/{annotation} | /message/{message}/annotations/associate/{annotation} [POST]
-[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/{message}/annotations/disassociate/{annotation} | /message/{message}/annotations/disassociate/{annotation} [POST]
-[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/{message}/scores/increment | &#39;/message/{message}/scores/increment&#39; [POST]
-[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/{message} | /message/{message} [GET]
+[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/\{message\}/scores/increment | &#39;/message/\{message\}/scores/increment&#39; [POST]
+[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
 [**message_specific_message_update**](ConversationMessageApi#message_specific_message_update) | **POST** /message/update | /message/update [GET]
 
 
-# **message_associate_annotation**
+## **message_associate_annotation**
 > message_associate_annotation(annotation, message)
 
-/message/{message}/annotations/associate/{annotation} [POST]
+/message/\{message\}/annotations/associate/\{annotation\} [POST]
 
 This will associate a message with an annotation.
 
@@ -41,7 +41,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     message = 'message_example' # str | This is the uuid of a message.
 
     try:
-        # /message/{message}/annotations/associate/{annotation} [POST]
+        # /message/\{message\}/annotations/associate/\{annotation\} [POST]
         api_instance.message_associate_annotation(annotation, message)
     except Exception as e:
         print("Exception when calling ConversationMessageApi->message_associate_annotation: %s\n" % e)
@@ -77,12 +77,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **message_disassociate_annotation**
+
+## **message_disassociate_annotation**
 > message_disassociate_annotation(annotation, message)
 
-/message/{message}/annotations/disassociate/{annotation} [POST]
+/message/\{message\}/annotations/disassociate/\{annotation\} [POST]
 
 This will enable us to dissassociate a message from an annotation.
 
@@ -109,7 +109,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     message = 'message_example' # str | This is the uuid of a message.
 
     try:
-        # /message/{message}/annotations/disassociate/{annotation} [POST]
+        # /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
         api_instance.message_disassociate_annotation(annotation, message)
     except Exception as e:
         print("Exception when calling ConversationMessageApi->message_disassociate_annotation: %s\n" % e)
@@ -145,12 +145,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **message_scores_increment**
+
+## **message_scores_increment**
 > message_scores_increment(message, seeded_score_increment=seeded_score_increment)
 
-'/message/{message}/scores/increment' [POST]
+'/message/\{message\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -178,7 +178,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/message/{message}/scores/increment' [POST]
+        # '/message/\{message\}/scores/increment' [POST]
         api_instance.message_scores_increment(message, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling ConversationMessageApi->message_scores_increment: %s\n" % e)
@@ -214,12 +214,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **message_specific_message_snapshot**
+
+## **message_specific_message_snapshot**
 > ConversationMessage message_specific_message_snapshot(message, transferables=transferables)
 
-/message/{message} [GET]
+/message/\{message\} [GET]
 
 This will get a specific snapshot of a message
 
@@ -247,7 +247,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /message/{message} [GET]
+        # /message/\{message\} [GET]
         api_response = api_instance.message_specific_message_snapshot(message, transferables=transferables)
         print("The response of ConversationMessageApi->message_specific_message_snapshot:\n")
         pprint(api_response)
@@ -285,9 +285,9 @@ No authorization required
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **message_specific_message_update**
+
+## **message_specific_message_update**
 > ConversationMessage message_specific_message_update(transferables=transferables, conversation_message=conversation_message)
 
 /message/update [GET]
@@ -356,5 +356,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

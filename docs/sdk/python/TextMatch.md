@@ -27,6 +27,6 @@ text_match_dict = text_match_instance.to_dict()
 # create an instance of TextMatch from a dict
 text_match_form_dict = text_match.from_dict(text_match_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

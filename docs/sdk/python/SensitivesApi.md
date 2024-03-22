@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**sensitives_create_new_sensitive**](SensitivesApi#sensitives_create_new_sensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/{sensitive}/delete | /sensitives/{sensitive}/delete [POST]
+[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
 [**sensitives_snapshot**](SensitivesApi#sensitives_snapshot) | **GET** /sensitives | /sensitives [GET]
 
 
-# **sensitives_create_new_sensitive**
+## **sensitives_create_new_sensitive**
 > Sensitive sensitives_create_new_sensitive(seeded_sensitive=seeded_sensitive)
 
 /sensitives/create [POST]
@@ -77,12 +77,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitives_delete_sensitive**
+
+## **sensitives_delete_sensitive**
 > sensitives_delete_sensitive(sensitive)
 
-/sensitives/{sensitive}/delete [POST]
+/sensitives/\{sensitive\}/delete [POST]
 
 This will delete a sensitive based on the sensitive uuid.
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     sensitive = 'sensitive_example' # str | This is a uuid that represents a sensitive.
 
     try:
-        # /sensitives/{sensitive}/delete [POST]
+        # /sensitives/\{sensitive\}/delete [POST]
         api_instance.sensitives_delete_sensitive(sensitive)
     except Exception as e:
         print("Exception when calling SensitivesApi->sensitives_delete_sensitive: %s\n" % e)
@@ -143,9 +143,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** |  |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitives_snapshot**
+
+## **sensitives_snapshot**
 > Sensitives sensitives_snapshot()
 
 /sensitives [GET]
@@ -208,5 +208,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

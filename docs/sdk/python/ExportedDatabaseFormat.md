@@ -26,6 +26,6 @@ exported_database_format_dict = exported_database_format_instance.to_dict()
 # create an instance of ExportedDatabaseFormat from a dict
 exported_database_format_form_dict = exported_database_format.from_dict(exported_database_format_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

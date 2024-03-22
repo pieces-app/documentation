@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**send_local_notification**](NotificationsApi#send_local_notification) | **POST** /notifications/local/send | Send notification
 
 
-# **send_local_notification**
+## **send_local_notification**
 > send_local_notification(notification=notification)
 
 Send notification
@@ -71,5 +71,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

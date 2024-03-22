@@ -28,6 +28,6 @@ conversation_messages_dict = conversation_messages_instance.to_dict()
 # create an instance of ConversationMessages from a dict
 conversation_messages_form_dict = conversation_messages.from_dict(conversation_messages_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

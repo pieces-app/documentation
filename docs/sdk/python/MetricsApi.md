@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**metrics_formats_ordered**](MetricsApi#metrics_formats_ordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
-# **get_metrics_formats**
+## **get_metrics_formats**
 > FormatsMetrics get_metrics_formats()
 
 /metrics/formats [GET]
@@ -70,9 +70,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **metrics_formats_ordered**
+
+## **metrics_formats_ordered**
 > OrderedMetrics metrics_formats_ordered()
 
 /metrics/formats/ordered [GET]
@@ -134,5 +134,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

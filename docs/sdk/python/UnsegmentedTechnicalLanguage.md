@@ -26,6 +26,6 @@ unsegmented_technical_language_dict = unsegmented_technical_language_instance.to
 # create an instance of UnsegmentedTechnicalLanguage from a dict
 unsegmented_technical_language_form_dict = unsegmented_technical_language.from_dict(unsegmented_technical_language_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

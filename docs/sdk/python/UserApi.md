@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
-# **clear_user**
+## **clear_user**
 > clear_user()
 
 /user/clear
@@ -72,9 +72,9 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **select_user**
+
+## **select_user**
 > UserProfile select_user(auth0_user=auth0_user)
 
 /user/select [POST]
@@ -141,8 +141,6 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -154,9 +152,9 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **stream_user**
+
+## **stream_user**
 > UserProfile stream_user()
 
 /user/stream [GET]
@@ -218,9 +216,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **update_user**
+
+## **update_user**
 > UserProfile update_user(user_profile=user_profile)
 
 /user/update [POST]
@@ -286,9 +284,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **user_providers**
+
+## **user_providers**
 > ReturnedUserProfile user_providers()
 
 Your GET endpoint
@@ -352,9 +350,9 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **501** | Not Implemented |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **user_snapshot**
+
+## **user_snapshot**
 > ReturnedUserProfile user_snapshot()
 
 /user [GET]
@@ -416,9 +414,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **user_update_vanity**
+
+## **user_update_vanity**
 > UserProfile user_update_vanity(user_profile=user_profile)
 
 /user/update/vanity [POST]
@@ -488,5 +486,5 @@ No authorization required
 **500** | Unable to create a username. Internal Server Error. |  -  |
 **511** | Network Authentication Required, Cannot Update the Vanityname of the user because the user is either not signed in or in not connected to the cloud. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

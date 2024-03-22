@@ -35,6 +35,6 @@ tracked_format_event_identifier_description_pairs_dict = tracked_format_event_id
 # create an instance of TrackedFormatEventIdentifierDescriptionPairs from a dict
 tracked_format_event_identifier_description_pairs_form_dict = tracked_format_event_identifier_description_pairs.from_dict(tracked_format_event_identifier_description_pairs_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -26,6 +26,6 @@ reuse_reaction_dict = reuse_reaction_instance.to_dict()
 # create an instance of ReuseReaction from a dict
 reuse_reaction_form_dict = reuse_reaction.from_dict(reuse_reaction_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

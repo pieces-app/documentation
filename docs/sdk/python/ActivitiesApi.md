@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**activities_create_new_activity**](ActivitiesApi#activities_create_new_activity) | **POST** /activities/create | /activities/create [POST]
-[**activities_delete_specific_activity**](ActivitiesApi#activities_delete_specific_activity) | **POST** /activities/{activity}/delete | /activities/{activity}/delete [POST]
+[**activities_delete_specific_activity**](ActivitiesApi#activities_delete_specific_activity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
 [**activities_snapshot**](ActivitiesApi#activities_snapshot) | **GET** /activities | /activities [GET]
 
 
-# **activities_create_new_activity**
+## **activities_create_new_activity**
 > Activity activities_create_new_activity(transferables=transferables, seeded_activity=seeded_activity)
 
 /activities/create [POST]
@@ -79,12 +79,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activities_delete_specific_activity**
+
+## **activities_delete_specific_activity**
 > activities_delete_specific_activity(activity)
 
-/activities/{activity}/delete [POST]
+/activities/\{activity\}/delete [POST]
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
 
@@ -110,7 +110,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     activity = 'activity_example' # str | This is a specific activity uuid.
 
     try:
-        # /activities/{activity}/delete [POST]
+        # /activities/\{activity\}/delete [POST]
         api_instance.activities_delete_specific_activity(activity)
     except Exception as e:
         print("Exception when calling ActivitiesApi->activities_delete_specific_activity: %s\n" % e)
@@ -145,9 +145,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activities_snapshot**
+
+## **activities_snapshot**
 > Activities activities_snapshot(transferables=transferables, pseudo=pseudo)
 
 /activities [GET]
@@ -216,5 +216,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

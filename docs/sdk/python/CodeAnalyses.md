@@ -25,6 +25,6 @@ code_analyses_dict = code_analyses_instance.to_dict()
 # create an instance of CodeAnalyses from a dict
 code_analyses_form_dict = code_analyses.from_dict(code_analyses_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

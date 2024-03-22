@@ -27,6 +27,6 @@ referenced_anchor_dict = referenced_anchor_instance.to_dict()
 # create an instance of ReferencedAnchor from a dict
 referenced_anchor_form_dict = referenced_anchor.from_dict(referenced_anchor_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

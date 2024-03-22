@@ -27,6 +27,6 @@ seeded_assets_recommendation_dict = seeded_assets_recommendation_instance.to_dic
 # create an instance of SeededAssetsRecommendation from a dict
 seeded_assets_recommendation_form_dict = seeded_assets_recommendation.from_dict(seeded_assets_recommendation_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

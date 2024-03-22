@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/{asset} | /conversations/create/from_asset/{asset} [POST]
+[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
 [**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/{conversation}/delete | /conversations/{conversation}/delete [POST]
+[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
 [**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
 [**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations | /conversations [GET]
 [**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
 
 
-# **conversations_create_from_asset**
+## **conversations_create_from_asset**
 > ConversationsCreateFromAssetOutput conversations_create_from_asset(asset)
 
-/conversations/create/from_asset/{asset} [POST]
+/conversations/create/from_asset/\{asset\} [POST]
 
 This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
 
@@ -42,7 +42,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
-        # /conversations/create/from_asset/{asset} [POST]
+        # /conversations/create/from_asset/\{asset\} [POST]
         api_response = api_instance.conversations_create_from_asset(asset)
         print("The response of ConversationsApi->conversations_create_from_asset:\n")
         pprint(api_response)
@@ -79,9 +79,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversations_create_specific_conversation**
+
+## **conversations_create_specific_conversation**
 > Conversation conversations_create_specific_conversation(transferables=transferables, seeded_conversation=seeded_conversation)
 
 /conversations/create [POST]
@@ -151,12 +151,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversations_delete_specific_conversation**
+
+## **conversations_delete_specific_conversation**
 > conversations_delete_specific_conversation(conversation)
 
-/conversations/{conversation}/delete [POST]
+/conversations/\{conversation\}/delete [POST]
 
 This will delete a specific Conversation.
 
@@ -182,7 +182,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
     try:
-        # /conversations/{conversation}/delete [POST]
+        # /conversations/\{conversation\}/delete [POST]
         api_instance.conversations_delete_specific_conversation(conversation)
     except Exception as e:
         print("Exception when calling ConversationsApi->conversations_delete_specific_conversation: %s\n" % e)
@@ -217,9 +217,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversations_identifiers_snapshot**
+
+## **conversations_identifiers_snapshot**
 > FlattenedConversations conversations_identifiers_snapshot()
 
 /conversations/identifiers [GET]
@@ -282,9 +282,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversations_snapshot**
+
+## **conversations_snapshot**
 > Conversations conversations_snapshot(transferables=transferables)
 
 /conversations [GET]
@@ -351,9 +351,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversations_stream_identifiers**
+
+## **conversations_stream_identifiers**
 > conversations_stream_identifiers()
 
 /conversations/stream/identifiers [STREAMED]
@@ -407,5 +407,5 @@ No authorization required
  - **Accept**: Not defined
 
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

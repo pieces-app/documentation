@@ -34,6 +34,6 @@ tlp_code_fragment_descriptive_statistics_dict = tlp_code_fragment_descriptive_st
 # create an instance of TLPCodeFragmentDescriptiveStatistics from a dict
 tlp_code_fragment_descriptive_statistics_form_dict = tlp_code_fragment_descriptive_statistics.from_dict(tlp_code_fragment_descriptive_statistics_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

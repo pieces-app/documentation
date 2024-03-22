@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**anchor_points_create_new_anchor_point**](AnchorPointsApi#anchor_points_create_new_anchor_point) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchor_points_delete_specific_anchor_point**](AnchorPointsApi#anchor_points_delete_specific_anchor_point) | **POST** /anchor_points/{anchor_point}/delete | /anchor_points/{anchor_point}/delete [POST]
+[**anchor_points_delete_specific_anchor_point**](AnchorPointsApi#anchor_points_delete_specific_anchor_point) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
 [**anchor_points_snapshot**](AnchorPointsApi#anchor_points_snapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
-# **anchor_points_create_new_anchor_point**
+## **anchor_points_create_new_anchor_point**
 > AnchorPoint anchor_points_create_new_anchor_point(transferables=transferables, seeded_anchor_point=seeded_anchor_point)
 
 /anchor_points/create [POST]
@@ -79,12 +79,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchor_points_delete_specific_anchor_point**
+
+## **anchor_points_delete_specific_anchor_point**
 > anchor_points_delete_specific_anchor_point(anchor_point)
 
-/anchor_points/{anchor_point}/delete [POST]
+/anchor_points/\{anchor_point\}/delete [POST]
 
 This will delete a specific anchorPoint!
 
@@ -110,7 +110,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     anchor_point = 'anchor_point_example' # str | This is the specific uuid of an anchor_point.
 
     try:
-        # /anchor_points/{anchor_point}/delete [POST]
+        # /anchor_points/\{anchor_point\}/delete [POST]
         api_instance.anchor_points_delete_specific_anchor_point(anchor_point)
     except Exception as e:
         print("Exception when calling AnchorPointsApi->anchor_points_delete_specific_anchor_point: %s\n" % e)
@@ -145,9 +145,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchor_points_snapshot**
+
+## **anchor_points_snapshot**
 > AnchorPoints anchor_points_snapshot(transferables=transferables)
 
 /anchor_points [GET]
@@ -214,5 +214,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

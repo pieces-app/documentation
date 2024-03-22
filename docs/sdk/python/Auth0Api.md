@@ -2,15 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**auth0_logout**](Auth0Api#auth0_logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorize_auth0**](Auth0Api#authorize_auth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchange_for_auth0_token**](Auth0Api#exchange_for_auth0_token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**get_auth0_user_info**](Auth0Api#get_auth0_user_info) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+| Method                                                            | HTTP request          | Description                                     |
+|-------------------------------------------------------------------|-----------------------|-------------------------------------------------|
+| [**auth0_logout**](Auth0Api#auth0_logout)                         | **GET** /v2/logout    | https://auth.pieces.services/v2/logout [GET]    |
+| [**authorize_auth0**](Auth0Api#authorize_auth0)                   | **GET** /authorize    | https://auth.pieces.services/authorize [GET]    |
+| [**exchange_for_auth0_token**](Auth0Api#exchange_for_auth0_token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST] |
+| [**get_auth0_user_info**](Auth0Api#get_auth0_user_info)           | **GET** /userinfo     | https://auth.pieces.services/userinfo [GET]     |
 
-
-# **auth0_logout**
+## **auth0_logout**
 > str auth0_logout(client_id=client_id, return_to=return_to)
 
 https://auth.pieces.services/v2/logout [GET]
@@ -77,9 +76,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **authorize_auth0**
+
+## **authorize_auth0**
 > ResultedPKCE authorize_auth0(audience, scope, response_type, client_id, code_challenge_method, code_challenge, response_mode, state=state, redirect_uri=redirect_uri, connection=connection, prompt=prompt)
 
 https://auth.pieces.services/authorize [GET]
@@ -135,7 +134,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **audience** | **str**|  The unique identifier of the target API you want to access. | 
- **scope** | [**List[str]**](str)| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | 
+ **scope** | **List[str]**(str)| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | 
  **response_type** | **str**| Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
  **client_id** | **str**| Your application&#39;s Client ID. | 
  **code_challenge_method** | **str**| Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
@@ -165,9 +164,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **exchange_for_auth0_token**
+
+## **exchange_for_auth0_token**
 > OAuthToken exchange_for_auth0_token(grant_type, client_id, code, redirect_uri, code_verifier, var_schema=var_schema, audience=audience)
 
 https://auth.pieces.services/oauth/token [POST]
@@ -246,9 +245,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **get_auth0_user_info**
+
+## **get_auth0_user_info**
 > Auth0User get_auth0_user_info()
 
 https://auth.pieces.services/userinfo [GET]
@@ -310,8 +309,6 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -323,5 +320,5 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

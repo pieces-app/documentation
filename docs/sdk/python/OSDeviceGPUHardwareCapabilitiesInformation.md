@@ -26,6 +26,6 @@ os_device_gpu_hardware_capabilities_information_dict = os_device_gpu_hardware_ca
 # create an instance of OSDeviceGPUHardwareCapabilitiesInformation from a dict
 os_device_gpu_hardware_capabilities_information_form_dict = os_device_gpu_hardware_capabilities_information.from_dict(os_device_gpu_hardware_capabilities_information_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

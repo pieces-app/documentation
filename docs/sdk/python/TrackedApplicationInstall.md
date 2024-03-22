@@ -27,6 +27,6 @@ tracked_application_install_dict = tracked_application_install_instance.to_dict(
 # create an instance of TrackedApplicationInstall from a dict
 tracked_application_install_form_dict = tracked_application_install.from_dict(tracked_application_install_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

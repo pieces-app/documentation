@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**sign_out_of_os**](OSApi#sign_out_of_os) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
-# **link_provider**
+## **link_provider**
 > ReturnedUserProfile link_provider(seeded_external_provider=seeded_external_provider)
 
 /os/link_provider [POST]
@@ -83,9 +83,9 @@ No authorization required
 **401** | Unauthorized, this means your user is not authenticated |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **os_device_information**
+
+## **os_device_information**
 > OSDeviceInformationReturnable os_device_information()
 
 /os/device/information [GET]
@@ -148,9 +148,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **os_restart**
+
+## **os_restart**
 > os_restart()
 
 Your GET endpoint
@@ -210,9 +210,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **os_update_check**
+
+## **os_update_check**
 > CheckedOSUpdate os_update_check(unchecked_os_update=unchecked_os_update)
 
 /os/update/check [POST]
@@ -280,9 +280,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **pick_files**
+
+## **pick_files**
 > List[str] pick_files(file_picker_input=file_picker_input)
 
 /os/files/pick [POST]
@@ -349,9 +349,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **pick_folders**
+
+## **pick_folders**
 > List[str] pick_folders()
 
 /os/folders/pick [POST]
@@ -413,9 +413,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sign_into_os**
+
+## **sign_into_os**
 > UserProfile sign_into_os()
 
 
@@ -477,9 +477,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sign_out_of_os**
+
+## **sign_out_of_os**
 > Users sign_out_of_os()
 
 /os/sign_out [POST]
@@ -541,5 +541,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

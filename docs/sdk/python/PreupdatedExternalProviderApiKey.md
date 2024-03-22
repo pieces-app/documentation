@@ -27,6 +27,6 @@ preupdated_external_provider_api_key_dict = preupdated_external_provider_api_key
 # create an instance of PreupdatedExternalProviderApiKey from a dict
 preupdated_external_provider_api_key_form_dict = preupdated_external_provider_api_key.from_dict(preupdated_external_provider_api_key_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

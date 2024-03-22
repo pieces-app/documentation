@@ -5,12 +5,12 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**tags_create_new_tag**](TagsApi#tags_create_new_tag) | **POST** /tags/create | /tags/create [POST]
-[**tags_delete_specific_tag**](TagsApi#tags_delete_specific_tag) | **POST** /tags/{tag}/delete | /tags/{tag}/delete [POST]
+[**tags_delete_specific_tag**](TagsApi#tags_delete_specific_tag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
 [**tags_exists**](TagsApi#tags_exists) | **POST** /tags/exists | /tags/exists [POST]
 [**tags_snapshot**](TagsApi#tags_snapshot) | **GET** /tags | /tags [GET]
 
 
-# **tags_create_new_tag**
+## **tags_create_new_tag**
 > Tag tags_create_new_tag(transferables=transferables, seeded_tag=seeded_tag)
 
 /tags/create [POST]
@@ -80,12 +80,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tags_delete_specific_tag**
+
+## **tags_delete_specific_tag**
 > tags_delete_specific_tag(tag)
 
-/tags/{tag}/delete [POST]
+/tags/\{tag\}/delete [POST]
 
 This will delete a specific tag.
 
@@ -111,7 +111,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | tag id
 
     try:
-        # /tags/{tag}/delete [POST]
+        # /tags/\{tag\}/delete [POST]
         api_instance.tags_delete_specific_tag(tag)
     except Exception as e:
         print("Exception when calling TagsApi->tags_delete_specific_tag: %s\n" % e)
@@ -146,9 +146,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tags_exists**
+
+## **tags_exists**
 > ExistingMetadata tags_exists(existent_metadata=existent_metadata)
 
 /tags/exists [POST]
@@ -216,9 +216,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tags_snapshot**
+
+## **tags_snapshot**
 > Tags tags_snapshot(transferables=transferables)
 
 /tags [GET]
@@ -285,5 +285,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

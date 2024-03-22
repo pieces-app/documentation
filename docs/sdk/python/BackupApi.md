@@ -6,12 +6,12 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**backup**](BackupApi#backup) | **POST** /backup | /backup [POST]
 [**backup_asset**](BackupApi#backup_asset) | **POST** /backup/asset | /backup/asset [POST]
-[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/{backup}/restore | /backup/{backup}/restore [POST]
-[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/{backup}/restore/streamed | /backup/{backup}/restore/streamed [POST]
-[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/{backup} | /backup/{backup} [GET]
+[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
 
 
-# **backup**
+## **backup**
 > backup(assets=assets)
 
 /backup [POST]
@@ -77,9 +77,9 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backup_asset**
+
+## **backup_asset**
 > backup_asset(asset=asset)
 
 /backup/asset [POST]
@@ -143,12 +143,12 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backup_restore_specific_backup**
+
+## **backup_restore_specific_backup**
 > Backup backup_restore_specific_backup(backup, backup2=backup2)
 
-/backup/{backup}/restore [POST]
+/backup/\{backup\}/restore [POST]
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
 
@@ -176,7 +176,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
     try:
-        # /backup/{backup}/restore [POST]
+        # /backup/\{backup\}/restore [POST]
         api_response = api_instance.backup_restore_specific_backup(backup, backup2=backup2)
         print("The response of BackupApi->backup_restore_specific_backup:\n")
         pprint(api_response)
@@ -214,12 +214,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backup_restore_specific_backup_streamed**
+
+## **backup_restore_specific_backup_streamed**
 > BackupStreamedProgress backup_restore_specific_backup_streamed(backup, backup2=backup2)
 
-/backup/{backup}/restore/streamed [POST]
+/backup/\{backup\}/restore/streamed [POST]
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
@@ -248,7 +248,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
     try:
-        # /backup/{backup}/restore/streamed [POST]
+        # /backup/\{backup\}/restore/streamed [POST]
         api_response = api_instance.backup_restore_specific_backup_streamed(backup, backup2=backup2)
         print("The response of BackupApi->backup_restore_specific_backup_streamed:\n")
         pprint(api_response)
@@ -286,12 +286,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backup_specific_backup_snapshot**
+
+## **backup_specific_backup_snapshot**
 > Backup backup_specific_backup_snapshot(backup)
 
-/backup/{backup} [GET]
+/backup/\{backup\} [GET]
 
 This will just get the metadata associated with a specific backup.
 
@@ -318,7 +318,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     backup = 'backup_example' # str | This is a identifier that is used to identify a specific backup.(version_timestamp)
 
     try:
-        # /backup/{backup} [GET]
+        # /backup/\{backup\} [GET]
         api_response = api_instance.backup_specific_backup_snapshot(backup)
         print("The response of BackupApi->backup_specific_backup_snapshot:\n")
         pprint(api_response)
@@ -355,5 +355,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

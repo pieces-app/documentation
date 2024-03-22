@@ -25,6 +25,6 @@ seeded_tracked_adoption_event_dict = seeded_tracked_adoption_event_instance.to_d
 # create an instance of SeededTrackedAdoptionEvent from a dict
 seeded_tracked_adoption_event_form_dict = seeded_tracked_adoption_event.from_dict(seeded_tracked_adoption_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/{anchor}/rename | /anchor/{anchor}/rename [POST]
-[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/{anchor}/scores/increment | &#39;/anchor/{anchor}/scores/increment&#39; [POST]
-[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/{anchor} | /anchor/{anchor} [GET]
+[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment | &#39;/anchor/\{anchor\}/scores/increment&#39; [POST]
+[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
 [**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update | /anchor/update [POST]
 
 
-# **anchor_rename**
+## **anchor_rename**
 > Anchor anchor_rename(anchor, transferables=transferables)
 
-/anchor/{anchor}/rename [POST]
+/anchor/\{anchor\}/rename [POST]
 
 This will rename a specific anchor.
 
@@ -41,7 +41,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /anchor/{anchor}/rename [POST]
+        # /anchor/\{anchor\}/rename [POST]
         api_response = api_instance.anchor_rename(anchor, transferables=transferables)
         print("The response of AnchorApi->anchor_rename:\n")
         pprint(api_response)
@@ -79,12 +79,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchor_scores_increment**
+
+## **anchor_scores_increment**
 > anchor_scores_increment(anchor, seeded_score_increment=seeded_score_increment)
 
-'/anchor/{anchor}/scores/increment' [POST]
+'/anchor/\{anchor\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -112,7 +112,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/anchor/{anchor}/scores/increment' [POST]
+        # '/anchor/\{anchor\}/scores/increment' [POST]
         api_instance.anchor_scores_increment(anchor, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling AnchorApi->anchor_scores_increment: %s\n" % e)
@@ -148,12 +148,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchor_specific_anchor_snapshot**
+
+## **anchor_specific_anchor_snapshot**
 > Anchor anchor_specific_anchor_snapshot(anchor, transferables=transferables)
 
-/anchor/{anchor} [GET]
+/anchor/\{anchor\} [GET]
 
 This will get a snapshot of a single anchor.
 
@@ -181,7 +181,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /anchor/{anchor} [GET]
+        # /anchor/\{anchor\} [GET]
         api_response = api_instance.anchor_specific_anchor_snapshot(anchor, transferables=transferables)
         print("The response of AnchorApi->anchor_specific_anchor_snapshot:\n")
         pprint(api_response)
@@ -219,9 +219,9 @@ No authorization required
 **200** | OK |  -  |
 **410** | Anchor not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchor_update**
+
+## **anchor_update**
 > Anchor anchor_update(transferables=transferables, anchor=anchor)
 
 /anchor/update [POST]
@@ -290,5 +290,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

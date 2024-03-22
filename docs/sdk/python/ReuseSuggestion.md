@@ -27,6 +27,6 @@ reuse_suggestion_dict = reuse_suggestion_instance.to_dict()
 # create an instance of ReuseSuggestion from a dict
 reuse_suggestion_form_dict = reuse_suggestion.from_dict(reuse_suggestion_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

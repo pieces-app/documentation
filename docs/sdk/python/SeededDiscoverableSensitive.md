@@ -33,6 +33,6 @@ seeded_discoverable_sensitive_dict = seeded_discoverable_sensitive_instance.to_d
 # create an instance of SeededDiscoverableSensitive from a dict
 seeded_discoverable_sensitive_form_dict = seeded_discoverable_sensitive.from_dict(seeded_discoverable_sensitive_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -25,6 +25,6 @@ graphical_image_processing_dict = graphical_image_processing_instance.to_dict()
 # create an instance of GraphicalImageProcessing from a dict
 graphical_image_processing_form_dict = graphical_image_processing.from_dict(graphical_image_processing_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

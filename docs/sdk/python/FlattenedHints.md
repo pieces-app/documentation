@@ -28,6 +28,6 @@ flattened_hints_dict = flattened_hints_instance.to_dict()
 # create an instance of FlattenedHints from a dict
 flattened_hints_form_dict = flattened_hints.from_dict(flattened_hints_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**code_analyses_snapshot**](CodeAnalysesApi#code_analyses_snapshot) | **GET** /code_analyses | Your GET endpoint
 
 
-# **code_analyses_snapshot**
+## **code_analyses_snapshot**
 > CodeAnalyses code_analyses_snapshot()
 
 Your GET endpoint
@@ -70,5 +70,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

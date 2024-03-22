@@ -19,7 +19,7 @@ const config: Config = {
   organizationName: 'pieces-app',
   projectName: 'documentation',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
 

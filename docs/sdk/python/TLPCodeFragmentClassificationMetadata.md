@@ -26,6 +26,6 @@ tlp_code_fragment_classification_metadata_dict = tlp_code_fragment_classificatio
 # create an instance of TLPCodeFragmentClassificationMetadata from a dict
 tlp_code_fragment_classification_metadata_form_dict = tlp_code_fragment_classification_metadata.from_dict(tlp_code_fragment_classification_metadata_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

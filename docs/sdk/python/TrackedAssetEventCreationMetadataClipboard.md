@@ -27,6 +27,6 @@ tracked_asset_event_creation_metadata_clipboard_dict = tracked_asset_event_creat
 # create an instance of TrackedAssetEventCreationMetadataClipboard from a dict
 tracked_asset_event_creation_metadata_clipboard_form_dict = tracked_asset_event_creation_metadata_clipboard.from_dict(tracked_asset_event_creation_metadata_clipboard_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -30,6 +30,6 @@ linkify_dict = linkify_instance.to_dict()
 # create an instance of Linkify from a dict
 linkify_form_dict = linkify.from_dict(linkify_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

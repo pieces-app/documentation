@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/{allocation} | /allocation/{allocation} [GET]
+[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
 [**allocation_update**](AllocationApi#allocation_update) | **POST** /allocation/update | /allocation/update [POST]
 
 
-# **allocation_snapshot**
+## **allocation_snapshot**
 > AllocationCloud allocation_snapshot(allocation)
 
-/allocation/{allocation} [GET]
+/allocation/\{allocation\} [GET]
 
 This will get a snapshot of a specific allocation.
 
@@ -38,7 +38,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     allocation = 'allocation_example' # str | 
 
     try:
-        # /allocation/{allocation} [GET]
+        # /allocation/\{allocation\} [GET]
         api_response = api_instance.allocation_snapshot(allocation)
         print("The response of AllocationApi->allocation_snapshot:\n")
         pprint(api_response)
@@ -75,9 +75,9 @@ No authorization required
 **200** | OK |  -  |
 **410** | Cloud not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocation_update**
+
+## **allocation_update**
 > AllocationCloud allocation_update(allocation_cloud=allocation_cloud)
 
 /allocation/update [POST]
@@ -145,5 +145,5 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

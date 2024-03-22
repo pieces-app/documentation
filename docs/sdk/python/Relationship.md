@@ -31,6 +31,6 @@ relationship_dict = relationship_instance.to_dict()
 # create an instance of Relationship from a dict
 relationship_form_dict = relationship.from_dict(relationship_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

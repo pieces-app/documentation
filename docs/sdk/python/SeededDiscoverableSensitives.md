@@ -26,6 +26,6 @@ seeded_discoverable_sensitives_dict = seeded_discoverable_sensitives_instance.to
 # create an instance of SeededDiscoverableSensitives from a dict
 seeded_discoverable_sensitives_form_dict = seeded_discoverable_sensitives.from_dict(seeded_discoverable_sensitives_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

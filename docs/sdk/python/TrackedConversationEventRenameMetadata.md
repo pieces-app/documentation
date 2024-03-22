@@ -27,6 +27,6 @@ tracked_conversation_event_rename_metadata_dict = tracked_conversation_event_ren
 # create an instance of TrackedConversationEventRenameMetadata from a dict
 tracked_conversation_event_rename_metadata_form_dict = tracked_conversation_event_rename_metadata.from_dict(tracked_conversation_event_rename_metadata_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

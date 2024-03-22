@@ -36,6 +36,6 @@ anchor_dict = anchor_instance.to_dict()
 # create an instance of Anchor from a dict
 anchor_form_dict = anchor.from_dict(anchor_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

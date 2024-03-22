@@ -33,6 +33,6 @@ flattened_anchor_point_dict = flattened_anchor_point_instance.to_dict()
 # create an instance of FlattenedAnchorPoint from a dict
 flattened_anchor_point_form_dict = flattened_anchor_point.from_dict(flattened_anchor_point_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

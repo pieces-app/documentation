@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**relationships_snapshot**](RelationshipsApi#relationships_snapshot) | **GET** /relationships | /relationships [GET]
 
 
-# **relationships_snapshot**
+## **relationships_snapshot**
 > Relationships relationships_snapshot()
 
 /relationships [GET]
@@ -70,5 +70,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

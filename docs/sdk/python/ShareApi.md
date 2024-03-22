@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/{share}/scores/increment | &#39;/share/{share}/scores/increment&#39; [POST]
-[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/{share} | /share/{share}
+[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/\{share\}/scores/increment | &#39;/share/\{share\}/scores/increment&#39; [POST]
+[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/\{share\} | /share/\{share\}
 [**share_update**](ShareApi#share_update) | **POST** /share/update | /share/update [POST]
 
 
-# **share_scores_increment**
+## **share_scores_increment**
 > share_scores_increment(share, seeded_score_increment=seeded_score_increment)
 
-'/share/{share}/scores/increment' [POST]
+'/share/\{share\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/share/{share}/scores/increment' [POST]
+        # '/share/\{share\}/scores/increment' [POST]
         api_instance.share_scores_increment(share, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling ShareApi->share_scores_increment: %s\n" % e)
@@ -76,12 +76,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **share_snapshot**
+
+## **share_snapshot**
 > Share share_snapshot(share, transferables=transferables)
 
-/share/{share}
+/share/\{share\}
 
 Get the snapshot of a specific share.
 
@@ -109,7 +109,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /share/{share}
+        # /share/\{share\}
         api_response = api_instance.share_snapshot(share, transferables=transferables)
         print("The response of ShareApi->share_snapshot:\n")
         pprint(api_response)
@@ -146,9 +146,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **share_update**
+
+## **share_update**
 > Share share_update(transferables=transferables, share=share)
 
 /share/update [POST]
@@ -216,5 +216,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

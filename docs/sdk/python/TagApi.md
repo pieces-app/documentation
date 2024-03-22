@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tag_associate_asset**](TagApi#tag_associate_asset) | **POST** /tag/{tag}/assets/associate/{asset} | /tag/{tag}/assets/associate/{asset} [POST]
-[**tag_associate_person**](TagApi#tag_associate_person) | **POST** /tag/{tag}/persons/associate/{person} | /tag/{tag}/persons/associate/{person} [POST]
-[**tag_disassociate_asset**](TagApi#tag_disassociate_asset) | **POST** /tag/{tag}/assets/disassociate/{asset} | /tag/{tag}/assets/disassociate/{asset} [POST]
-[**tag_disassociate_person**](TagApi#tag_disassociate_person) | **POST** /tag/{tag}/persons/disassociate/{person} | /tag/{tag}/persons/disassociate/{person} [POST]
-[**tag_scores_increment**](TagApi#tag_scores_increment) | **POST** /tag/{tag}/scores/increment | &#39;/tag/{tag}/scores/increment&#39; [POST]
+[**tag_associate_asset**](TagApi#tag_associate_asset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
+[**tag_associate_person**](TagApi#tag_associate_person) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
+[**tag_disassociate_asset**](TagApi#tag_disassociate_asset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
+[**tag_disassociate_person**](TagApi#tag_disassociate_person) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
+[**tag_scores_increment**](TagApi#tag_scores_increment) | **POST** /tag/\{tag\}/scores/increment | &#39;/tag/\{tag\}/scores/increment&#39; [POST]
 [**tag_update**](TagApi#tag_update) | **POST** /tag/update | /tag/update [POST]
-[**tags_specific_tag_snapshot**](TagApi#tags_specific_tag_snapshot) | **GET** /tag/{tag} | /tag/{tag} [GET]
+[**tags_specific_tag_snapshot**](TagApi#tags_specific_tag_snapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
-# **tag_associate_asset**
+## **tag_associate_asset**
 > tag_associate_asset(asset, tag)
 
-/tag/{tag}/assets/associate/{asset} [POST]
+/tag/\{tag\}/assets/associate/\{asset\} [POST]
 
 This will associate a tag with a asset.
 
@@ -43,7 +43,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     tag = 'tag_example' # str | tag id
 
     try:
-        # /tag/{tag}/assets/associate/{asset} [POST]
+        # /tag/\{tag\}/assets/associate/\{asset\} [POST]
         api_instance.tag_associate_asset(asset, tag)
     except Exception as e:
         print("Exception when calling TagApi->tag_associate_asset: %s\n" % e)
@@ -79,12 +79,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_associate_person**
+
+## **tag_associate_person**
 > tag_associate_person(tag, person)
 
-/tag/{tag}/persons/associate/{person} [POST]
+/tag/\{tag\}/persons/associate/\{person\} [POST]
 
 This will associate a tag with a person.
 
@@ -111,7 +111,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
-        # /tag/{tag}/persons/associate/{person} [POST]
+        # /tag/\{tag\}/persons/associate/\{person\} [POST]
         api_instance.tag_associate_person(tag, person)
     except Exception as e:
         print("Exception when calling TagApi->tag_associate_person: %s\n" % e)
@@ -147,12 +147,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_disassociate_asset**
+
+## **tag_disassociate_asset**
 > tag_disassociate_asset(tag, asset)
 
-/tag/{tag}/assets/disassociate/{asset} [POST]
+/tag/\{tag\}/assets/disassociate/\{asset\} [POST]
 
 This will enable us to dissassociate a tag from a asset.
 
@@ -179,7 +179,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
-        # /tag/{tag}/assets/disassociate/{asset} [POST]
+        # /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
         api_instance.tag_disassociate_asset(tag, asset)
     except Exception as e:
         print("Exception when calling TagApi->tag_disassociate_asset: %s\n" % e)
@@ -215,12 +215,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_disassociate_person**
+
+## **tag_disassociate_person**
 > tag_disassociate_person(tag, person)
 
-/tag/{tag}/persons/disassociate/{person} [POST]
+/tag/\{tag\}/persons/disassociate/\{person\} [POST]
 
 This will enable us to dissassociate a tag from a person.
 
@@ -247,7 +247,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
-        # /tag/{tag}/persons/disassociate/{person} [POST]
+        # /tag/\{tag\}/persons/disassociate/\{person\} [POST]
         api_instance.tag_disassociate_person(tag, person)
     except Exception as e:
         print("Exception when calling TagApi->tag_disassociate_person: %s\n" % e)
@@ -283,12 +283,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_scores_increment**
+
+## **tag_scores_increment**
 > tag_scores_increment(tag, seeded_score_increment=seeded_score_increment)
 
-'/tag/{tag}/scores/increment' [POST]
+'/tag/\{tag\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -316,7 +316,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/tag/{tag}/scores/increment' [POST]
+        # '/tag/\{tag\}/scores/increment' [POST]
         api_instance.tag_scores_increment(tag, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling TagApi->tag_scores_increment: %s\n" % e)
@@ -352,9 +352,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tag_update**
+
+## **tag_update**
 > Tag tag_update(transferables=transferables, tag=tag)
 
 /tag/update [POST]
@@ -423,12 +423,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tags_specific_tag_snapshot**
+
+## **tags_specific_tag_snapshot**
 > Tag tags_specific_tag_snapshot(tag, transferables=transferables)
 
-/tag/{tag} [GET]
+/tag/\{tag\} [GET]
 
 This will get a specific tag.
 
@@ -456,7 +456,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /tag/{tag} [GET]
+        # /tag/\{tag\} [GET]
         api_response = api_instance.tags_specific_tag_snapshot(tag, transferables=transferables)
         print("The response of TagApi->tags_specific_tag_snapshot:\n")
         pprint(api_response)
@@ -494,5 +494,5 @@ No authorization required
 **200** | OK |  -  |
 **410** | Tag was not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

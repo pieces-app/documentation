@@ -26,6 +26,6 @@ formats_dict = formats_instance.to_dict()
 # create an instance of Formats from a dict
 formats_form_dict = formats.from_dict(formats_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

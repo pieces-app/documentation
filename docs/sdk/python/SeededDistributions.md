@@ -26,6 +26,6 @@ seeded_distributions_dict = seeded_distributions_instance.to_dict()
 # create an instance of SeededDistributions from a dict
 seeded_distributions_form_dict = seeded_distributions.from_dict(seeded_distributions_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

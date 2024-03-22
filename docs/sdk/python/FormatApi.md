@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**format_analysis**](FormatApi#format_analysis) | **GET** /format/{format}/analysis | /format/{format}/analysis [GET]
+[**format_analysis**](FormatApi#format_analysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
 [**format_reclassify**](FormatApi#format_reclassify) | **POST** /format/reclassify | /format/reclassify [POST]
-[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/{format} | /format/{format} [GET] Scoped to Format
+[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
 [**format_update_value**](FormatApi#format_update_value) | **POST** /format/update/value | [POST] /format/update/value
 [**format_usage_event**](FormatApi#format_usage_event) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
-# **format_analysis**
+## **format_analysis**
 > Analysis format_analysis(format)
 
-/format/{format}/analysis [GET]
+/format/\{format\}/analysis [GET]
 
 This will get an analysis from a format's id.
 
@@ -41,7 +41,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
 
     try:
-        # /format/{format}/analysis [GET]
+        # /format/\{format\}/analysis [GET]
         api_response = api_instance.format_analysis(format)
         print("The response of FormatApi->format_analysis:\n")
         pprint(api_response)
@@ -78,9 +78,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **format_reclassify**
+
+## **format_reclassify**
 > Format format_reclassify(transferable=transferable, format_reclassification=format_reclassification)
 
 /format/reclassify [POST]
@@ -149,12 +149,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **format_snapshot**
+
+## **format_snapshot**
 > Format format_snapshot(format, transferable=transferable)
 
-/format/{format} [GET] Scoped to Format
+/format/\{format\} [GET] Scoped to Format
 
 Get a snapshot of a specific format.
 
@@ -182,7 +182,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /format/{format} [GET] Scoped to Format
+        # /format/\{format\} [GET] Scoped to Format
         api_response = api_instance.format_snapshot(format, transferable=transferable)
         print("The response of FormatApi->format_snapshot:\n")
         pprint(api_response)
@@ -219,9 +219,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **format_update_value**
+
+## **format_update_value**
 > Format format_update_value(transferable=transferable, format=format)
 
 [POST] /format/update/value
@@ -290,9 +290,9 @@ No authorization required
 **200** | OK, you will get an updated format. |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **format_usage_event**
+
+## **format_usage_event**
 > TrackedFormatEvent format_usage_event(seeded_tracked_format_event=seeded_tracked_format_event)
 
 /format/usage/event [POST] Scoped to Format
@@ -359,5 +359,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

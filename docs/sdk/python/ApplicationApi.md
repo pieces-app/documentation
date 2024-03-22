@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**application_update**](ApplicationApi#application_update) | **POST** /application/update | /application/update [GET]
 
 
-# **application_update**
+## **application_update**
 > Application application_update(application=application)
 
 /application/update [GET]
@@ -73,5 +73,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -29,6 +29,6 @@ asset_filter_phrase_dict = asset_filter_phrase_instance.to_dict()
 # create an instance of AssetFilterPhrase from a dict
 asset_filter_phrase_form_dict = asset_filter_phrase.from_dict(asset_filter_phrase_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

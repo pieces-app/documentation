@@ -29,6 +29,6 @@ transferable_bytes_dict = transferable_bytes_instance.to_dict()
 # create an instance of TransferableBytes from a dict
 transferable_bytes_form_dict = transferable_bytes.from_dict(transferable_bytes_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

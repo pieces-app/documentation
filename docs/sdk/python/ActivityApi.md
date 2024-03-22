@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**activities_specific_activity_snapshot**](ActivityApi#activities_specific_activity_snapshot) | **GET** /activity/{activity} | /activity/{activity} [GET]
+[**activities_specific_activity_snapshot**](ActivityApi#activities_specific_activity_snapshot) | **GET** /activity/\{activity\} | /activity/\{activity\} [GET]
 [**activity_identifiers_snapshot**](ActivityApi#activity_identifiers_snapshot) | **GET** /activity/identifiers | /activity/identifiers [GET]
 [**activity_update**](ActivityApi#activity_update) | **POST** /activity/update | /activity/update [POST]
 
 
-# **activities_specific_activity_snapshot**
+## **activities_specific_activity_snapshot**
 > Activity activities_specific_activity_snapshot(activity, transferables=transferables)
 
-/activity/{activity} [GET]
+/activity/\{activity\} [GET]
 
 This will attempt to get a specific activity.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /activity/{activity} [GET]
+        # /activity/\{activity\} [GET]
         api_response = api_instance.activities_specific_activity_snapshot(activity, transferables=transferables)
         print("The response of ActivityApi->activities_specific_activity_snapshot:\n")
         pprint(api_response)
@@ -79,9 +79,9 @@ No authorization required
 **410** | Activity was not found. |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activity_identifiers_snapshot**
+
+## **activity_identifiers_snapshot**
 > FlattenedActivities activity_identifiers_snapshot(pseudo=pseudo, activity_filter_enum=activity_filter_enum)
 
 /activity/identifiers [GET]
@@ -150,9 +150,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activity_update**
+
+## **activity_update**
 > Activity activity_update(transferables=transferables, activity=activity)
 
 /activity/update [POST]
@@ -221,5 +221,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

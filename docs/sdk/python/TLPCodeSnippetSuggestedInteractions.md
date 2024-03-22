@@ -26,6 +26,6 @@ tlp_code_snippet_suggested_interactions_dict = tlp_code_snippet_suggested_intera
 # create an instance of TLPCodeSnippetSuggestedInteractions from a dict
 tlp_code_snippet_suggested_interactions_form_dict = tlp_code_snippet_suggested_interactions.from_dict(tlp_code_snippet_suggested_interactions_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

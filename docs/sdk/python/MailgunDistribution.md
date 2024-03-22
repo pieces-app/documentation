@@ -26,6 +26,6 @@ mailgun_distribution_dict = mailgun_distribution_instance.to_dict()
 # create an instance of MailgunDistribution from a dict
 mailgun_distribution_form_dict = mailgun_distribution.from_dict(mailgun_distribution_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

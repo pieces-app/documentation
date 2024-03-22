@@ -32,6 +32,6 @@ backup_dict = backup_instance.to_dict()
 # create an instance of Backup from a dict
 backup_form_dict = backup.from_dict(backup_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**convert_generic_classification**](ClassificationApi#convert_generic_classification) | **POST** /classification/generic/convert | Convert Generic Classification
 
 
-# **convert_generic_classification**
+## **convert_generic_classification**
 > SeededFormat convert_generic_classification(seeded_format=seeded_format)
 
 Convert Generic Classification
@@ -75,5 +75,5 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **501** | Generic Classification Conversion Not Implemented |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

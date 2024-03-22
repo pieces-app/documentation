@@ -28,6 +28,6 @@ backups_dict = backups_instance.to_dict()
 # create an instance of Backups from a dict
 backups_form_dict = backups.from_dict(backups_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

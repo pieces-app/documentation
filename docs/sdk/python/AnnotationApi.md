@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/{annotation}/scores/increment | &#39;/annotation/{annotation}/scores/increment&#39; [POST]
-[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/{annotation} | /annotation/{annotation} [GET]
+[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/\{annotation\}/scores/increment | &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
+[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
 [**annotation_update**](AnnotationApi#annotation_update) | **POST** /annotation/update | /annotation/update [POST]
 
 
-# **annotation_scores_increment**
+## **annotation_scores_increment**
 > annotation_scores_increment(annotation, seeded_score_increment=seeded_score_increment)
 
-'/annotation/{annotation}/scores/increment' [POST]
+'/annotation/\{annotation\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/annotation/{annotation}/scores/increment' [POST]
+        # '/annotation/\{annotation\}/scores/increment' [POST]
         api_instance.annotation_scores_increment(annotation, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling AnnotationApi->annotation_scores_increment: %s\n" % e)
@@ -76,12 +76,12 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotation_specific_annotation_snapshot**
+
+## **annotation_specific_annotation_snapshot**
 > Annotation annotation_specific_annotation_snapshot(annotation)
 
-/annotation/{annotation} [GET]
+/annotation/\{annotation\} [GET]
 
 This will get a snapshot of a specific annotation.
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
 
     try:
-        # /annotation/{annotation} [GET]
+        # /annotation/\{annotation\} [GET]
         api_response = api_instance.annotation_specific_annotation_snapshot(annotation)
         print("The response of AnnotationApi->annotation_specific_annotation_snapshot:\n")
         pprint(api_response)
@@ -145,9 +145,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotation_update**
+
+## **annotation_update**
 > Annotation annotation_update(annotation=annotation)
 
 /annotation/update [POST]
@@ -214,5 +214,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -28,6 +28,6 @@ seeded_asset_website_dict = seeded_asset_website_instance.to_dict()
 # create an instance of SeededAssetWebsite from a dict
 seeded_asset_website_form_dict = seeded_asset_website.from_dict(seeded_asset_website_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

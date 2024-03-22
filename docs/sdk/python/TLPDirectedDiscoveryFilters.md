@@ -25,6 +25,6 @@ tlp_directed_discovery_filters_dict = tlp_directed_discovery_filters_instance.to
 # create an instance of TLPDirectedDiscoveryFilters from a dict
 tlp_directed_discovery_filters_form_dict = tlp_directed_discovery_filters.from_dict(tlp_directed_discovery_filters_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

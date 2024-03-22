@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**person_disassociate_asset**](PersonsApi#person_disassociate_asset) | **POST** /persons/{person}/assets/delete/{asset} | /persons/{person}/assets/delete/{asset} [POST]
+[**person_disassociate_asset**](PersonsApi#person_disassociate_asset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
 [**persons_create_new_person**](PersonsApi#persons_create_new_person) | **POST** /persons/create | /persons/create [POST]
-[**persons_delete_person**](PersonsApi#persons_delete_person) | **POST** /persons/{person}/delete | /persons/{person}/delete [POST]
+[**persons_delete_person**](PersonsApi#persons_delete_person) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
 [**persons_snapshot**](PersonsApi#persons_snapshot) | **GET** /persons | /persons [GET]
 
 
-# **person_disassociate_asset**
+## **person_disassociate_asset**
 > person_disassociate_asset(person, asset)
 
-/persons/{person}/assets/delete/{asset} [POST]
+/persons/\{person\}/assets/delete/\{asset\} [POST]
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
-        # /persons/{person}/assets/delete/{asset} [POST]
+        # /persons/\{person\}/assets/delete/\{asset\} [POST]
         api_instance.person_disassociate_asset(person, asset)
     except Exception as e:
         print("Exception when calling PersonsApi->person_disassociate_asset: %s\n" % e)
@@ -76,9 +76,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **persons_create_new_person**
+
+## **persons_create_new_person**
 > Person persons_create_new_person(transferables=transferables, seeded_person=seeded_person)
 
 /persons/create [POST]
@@ -148,12 +148,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **persons_delete_person**
+
+## **persons_delete_person**
 > persons_delete_person(person)
 
-/persons/{person}/delete [POST]
+/persons/\{person\}/delete [POST]
 
 This will delete a specific person.
 
@@ -179,7 +179,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
-        # /persons/{person}/delete [POST]
+        # /persons/\{person\}/delete [POST]
         api_instance.persons_delete_person(person)
     except Exception as e:
         print("Exception when calling PersonsApi->persons_delete_person: %s\n" % e)
@@ -214,9 +214,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **persons_snapshot**
+
+## **persons_snapshot**
 > Persons persons_snapshot(transferables=transferables)
 
 /persons [GET]
@@ -283,5 +283,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

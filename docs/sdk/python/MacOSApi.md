@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**assets_create_new_asset_from_macos**](MacOSApi#assets_create_new_asset_from_macos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
-# **assets_create_new_asset_from_macos**
+## **assets_create_new_asset_from_macos**
 > Asset assets_create_new_asset_from_macos(seeded_mac_os_asset=seeded_mac_os_asset)
 
 /macos/assets/create [Post]
@@ -74,5 +74,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

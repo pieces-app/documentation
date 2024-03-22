@@ -39,6 +39,6 @@ flattened_person_dict = flattened_person_instance.to_dict()
 # create an instance of FlattenedPerson from a dict
 flattened_person_form_dict = flattened_person.from_dict(flattened_person_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

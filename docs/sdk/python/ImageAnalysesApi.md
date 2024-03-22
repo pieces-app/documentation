@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**image_analyses_snapshot**](ImageAnalysesApi#image_analyses_snapshot) | **GET** /image_analyses | Your GET endpoint
 
 
-# **image_analyses_snapshot**
+## **image_analyses_snapshot**
 > ImageAnalyses image_analyses_snapshot(transferables=transferables)
 
 Your GET endpoint
@@ -74,5 +74,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

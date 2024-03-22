@@ -37,6 +37,6 @@ flattened_share_dict = flattened_share_instance.to_dict()
 # create an instance of FlattenedShare from a dict
 flattened_share_form_dict = flattened_share.from_dict(flattened_share_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

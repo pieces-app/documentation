@@ -5,10 +5,10 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**formats_snapshot**](FormatsApi#formats_snapshot) | **GET** /formats | /formats [GET] Scoped to Formats
-[**formats_specific_format_snapshot**](FormatsApi#formats_specific_format_snapshot) | **GET** /formats/{format} | /formats/{format} [GET] Scoped to Formats
+[**formats_specific_format_snapshot**](FormatsApi#formats_specific_format_snapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
-# **formats_snapshot**
+## **formats_snapshot**
 > Formats formats_snapshot(transferables=transferables)
 
 /formats [GET] Scoped to Formats
@@ -74,12 +74,12 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formats_specific_format_snapshot**
+
+## **formats_specific_format_snapshot**
 > Format formats_specific_format_snapshot(format, transferable=transferable)
 
-/formats/{format} [GET] Scoped to Formats
+/formats/\{format\} [GET] Scoped to Formats
 
 Request a specific format when given a id (uuid in path params)
 
@@ -107,7 +107,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
-        # /formats/{format} [GET] Scoped to Formats
+        # /formats/\{format\} [GET] Scoped to Formats
         api_response = api_instance.formats_specific_format_snapshot(format, transferable=transferable)
         print("The response of FormatsApi->formats_specific_format_snapshot:\n")
         pprint(api_response)
@@ -144,5 +144,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

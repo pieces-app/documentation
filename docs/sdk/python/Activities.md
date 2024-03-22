@@ -26,6 +26,6 @@ activities_dict = activities_instance.to_dict()
 # create an instance of Activities from a dict
 activities_form_dict = activities.from_dict(activities_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

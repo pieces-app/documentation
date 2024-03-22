@@ -29,6 +29,6 @@ seeded_git_hub_gist_distribution_dict = seeded_git_hub_gist_distribution_instanc
 # create an instance of SeededGitHubGistDistribution from a dict
 seeded_git_hub_gist_distribution_form_dict = seeded_git_hub_gist_distribution.from_dict(seeded_git_hub_gist_distribution_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

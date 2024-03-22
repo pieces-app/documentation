@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**get_well_known_version**](WellKnownApi#get_well_known_version) | **GET** /.well-known/version | /.well-known/version [Get]
 
 
-# **get_well_known_health**
+## **get_well_known_health**
 > str get_well_known_health()
 
 /.well-known/health [GET]
@@ -69,9 +69,9 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **get_well_known_version**
+
+## **get_well_known_version**
 > str get_well_known_version()
 
 /.well-known/version [Get]
@@ -132,5 +132,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

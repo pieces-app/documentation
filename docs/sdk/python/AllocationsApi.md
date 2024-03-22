@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**allocations_snapshot**](AllocationsApi#allocations_snapshot) | **GET** /allocations | /allocations [GET]
 
 
-# **allocations_connect_new_cloud**
+## **allocations_connect_new_cloud**
 > AllocationCloud allocations_connect_new_cloud(user_profile=user_profile)
 
 /allocations/connect [POST]
@@ -81,9 +81,9 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocations_create_new_allocation**
+
+## **allocations_create_new_allocation**
 > AllocationCloud allocations_create_new_allocation(allocation_cloud=allocation_cloud)
 
 /allocations/create [POST]
@@ -150,9 +150,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocations_delete_allocation**
+
+## **allocations_delete_allocation**
 > str allocations_delete_allocation(allocation_cloud=allocation_cloud)
 
 /allocations/delete [POST]
@@ -219,9 +219,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocations_disconnect_cloud**
+
+## **allocations_disconnect_cloud**
 > str allocations_disconnect_cloud(allocation_cloud=allocation_cloud)
 
 /allocations/disconnect [POST]
@@ -288,9 +288,9 @@ No authorization required
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocations_reconnect_cloud**
+
+## **allocations_reconnect_cloud**
 > AllocationCloud allocations_reconnect_cloud(allocation_cloud=allocation_cloud)
 
 /allocations/reconnect [POST]
@@ -358,9 +358,9 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocations_snapshot**
+
+## **allocations_snapshot**
 > Allocations allocations_snapshot()
 
 /allocations [GET]
@@ -423,5 +423,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

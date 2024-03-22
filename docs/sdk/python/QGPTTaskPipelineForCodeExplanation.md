@@ -25,6 +25,6 @@ qgpt_task_pipeline_for_code_explanation_dict = qgpt_task_pipeline_for_code_expla
 # create an instance of QGPTTaskPipelineForCodeExplanation from a dict
 qgpt_task_pipeline_for_code_explanation_form_dict = qgpt_task_pipeline_for_code_explanation.from_dict(qgpt_task_pipeline_for_code_explanation_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

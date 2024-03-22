@@ -27,6 +27,6 @@ referenced_asset_dict = referenced_asset_instance.to_dict()
 # create an instance of ReferencedAsset from a dict
 referenced_asset_form_dict = referenced_asset.from_dict(referenced_asset_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

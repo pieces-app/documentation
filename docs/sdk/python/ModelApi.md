@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/{model}/download | /model/{model}/download [POST]
-[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/{model}/download/cancel | /model/{model}/download/cancel [POST]
-[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/{model}/download/progress | /model/{model}/download/progress [WS]
-[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/{model}/load | /model/{model}/load [POST]
-[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/{model}/unload | /model/{model}/unload [POST]
+[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
 [**model_update**](ModelApi#model_update) | **POST** /model/update | /model/update [POST]
-[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/{model} | /model/{model} [GET]
+[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
-# **model_specific_model_download**
+## **model_specific_model_download**
 > Model model_specific_model_download(model)
 
-/model/{model}/download [POST]
+/model/\{model\}/download [POST]
 
 This will download a specific model onto your local machine.
 
@@ -43,7 +43,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model}/download [POST]
+        # /model/\{model\}/download [POST]
         api_response = api_instance.model_specific_model_download(model)
         print("The response of ModelApi->model_specific_model_download:\n")
         pprint(api_response)
@@ -80,12 +80,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **model_specific_model_download_cancel**
+
+## **model_specific_model_download_cancel**
 > Model model_specific_model_download_cancel(model)
 
-/model/{model}/download/cancel [POST]
+/model/\{model\}/download/cancel [POST]
 
 This will cancel a specific model download in progress.
 
@@ -112,7 +112,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model}/download/cancel [POST]
+        # /model/\{model\}/download/cancel [POST]
         api_response = api_instance.model_specific_model_download_cancel(model)
         print("The response of ModelApi->model_specific_model_download_cancel:\n")
         pprint(api_response)
@@ -149,12 +149,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **model_specific_model_download_progress**
+
+## **model_specific_model_download_progress**
 > ModelDownloadProgress model_specific_model_download_progress(model)
 
-/model/{model}/download/progress [WS]
+/model/\{model\}/download/progress [WS]
 
 This is a Websocket Connection, to get the progress of the downloading of a specific model.
 
@@ -181,7 +181,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model}/download/progress [WS]
+        # /model/\{model\}/download/progress [WS]
         api_response = api_instance.model_specific_model_download_progress(model)
         print("The response of ModelApi->model_specific_model_download_progress:\n")
         pprint(api_response)
@@ -218,12 +218,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **model_specific_model_load**
+
+## **model_specific_model_load**
 > Model model_specific_model_load(model)
 
-/model/{model}/load [POST]
+/model/\{model\}/load [POST]
 
 This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
 
@@ -250,7 +250,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model}/load [POST]
+        # /model/\{model\}/load [POST]
         api_response = api_instance.model_specific_model_load(model)
         print("The response of ModelApi->model_specific_model_load:\n")
         pprint(api_response)
@@ -287,12 +287,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **model_specific_model_unload**
+
+## **model_specific_model_unload**
 > Model model_specific_model_unload(model)
 
-/model/{model}/unload [POST]
+/model/\{model\}/unload [POST]
 
 This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
 
@@ -319,7 +319,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model}/unload [POST]
+        # /model/\{model\}/unload [POST]
         api_response = api_instance.model_specific_model_unload(model)
         print("The response of ModelApi->model_specific_model_unload:\n")
         pprint(api_response)
@@ -356,9 +356,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **model_update**
+
+## **model_update**
 > Model model_update(model=model)
 
 /model/update [POST]
@@ -425,12 +425,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **models_specific_model_snapshot**
+
+## **models_specific_model_snapshot**
 > Model models_specific_model_snapshot(model)
 
-/model/{model} [GET]
+/model/\{model\} [GET]
 
 
 
@@ -457,7 +457,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     model = 'model_example' # str | model id
 
     try:
-        # /model/{model} [GET]
+        # /model/\{model\} [GET]
         api_response = api_instance.models_specific_model_snapshot(model)
         print("The response of ModelApi->models_specific_model_snapshot:\n")
         pprint(api_response)
@@ -494,5 +494,5 @@ No authorization required
 **200** | OK |  -  |
 **410** | model was not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

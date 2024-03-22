@@ -31,6 +31,6 @@ tlp_code_fragment_reclassification_dict = tlp_code_fragment_reclassification_ins
 # create an instance of TLPCodeFragmentReclassification from a dict
 tlp_code_fragment_reclassification_form_dict = tlp_code_fragment_reclassification.from_dict(tlp_code_fragment_reclassification_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

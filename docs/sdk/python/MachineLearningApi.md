@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**segment_technical_language**](MachineLearningApi#segment_technical_language) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
-# **personification_technical_language_generation**
+## **personification_technical_language_generation**
 > OnboardedPersonaDetails personification_technical_language_generation(preonboarded_persona_details=preonboarded_persona_details)
 
 /machine_learning/text/technical_language/generators/personification [GET]
@@ -76,9 +76,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **segment_technical_language**
+
+## **segment_technical_language**
 > SegmentedTechnicalLanguage segment_technical_language(classify=classify, unsegmented_technical_language=unsegmented_technical_language)
 
 /machine_learning/text/technical_language/parsers/segmentation [POST]
@@ -148,5 +148,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

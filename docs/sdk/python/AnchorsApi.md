@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchor_disassociate_asset**](AnchorsApi#anchor_disassociate_asset) | **POST** /anchors/{anchor}/assets/delete/{asset} | /anchors/{anchor}/assets/delete/{asset} [POST]
+[**anchor_disassociate_asset**](AnchorsApi#anchor_disassociate_asset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
 [**anchors_create_new_anchor**](AnchorsApi#anchors_create_new_anchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchors_delete_specific_anchor**](AnchorsApi#anchors_delete_specific_anchor) | **POST** /anchors/{anchor}/delete | /anchors/{anchor}/delete [POST]
+[**anchors_delete_specific_anchor**](AnchorsApi#anchors_delete_specific_anchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
 [**anchors_snapshot**](AnchorsApi#anchors_snapshot) | **GET** /anchors | /anchors [GET]
 
 
-# **anchor_disassociate_asset**
+## **anchor_disassociate_asset**
 > anchor_disassociate_asset(anchor, asset)
 
-/anchors/{anchor}/assets/delete/{asset} [POST]
+/anchors/\{anchor\}/assets/delete/\{asset\} [POST]
 
 This will update both the asset and the anchor reference, that will remove a anchor from an asset(only the references).  This will NOT remove the anchor. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
@@ -40,7 +40,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
-        # /anchors/{anchor}/assets/delete/{asset} [POST]
+        # /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
         api_instance.anchor_disassociate_asset(anchor, asset)
     except Exception as e:
         print("Exception when calling AnchorsApi->anchor_disassociate_asset: %s\n" % e)
@@ -76,9 +76,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchors_create_new_anchor**
+
+## **anchors_create_new_anchor**
 > Anchor anchors_create_new_anchor(transferables=transferables, seeded_anchor=seeded_anchor)
 
 /anchors/create [POST]
@@ -148,12 +148,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchors_delete_specific_anchor**
+
+## **anchors_delete_specific_anchor**
 > anchors_delete_specific_anchor(anchor)
 
-/anchors/{anchor}/delete [POST]
+/anchors/\{anchor\}/delete [POST]
 
 This will delete a specific anchor!
 
@@ -179,7 +179,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     anchor = 'anchor_example' # str | This is the specific uuid of an anchor.
 
     try:
-        # /anchors/{anchor}/delete [POST]
+        # /anchors/\{anchor\}/delete [POST]
         api_instance.anchors_delete_specific_anchor(anchor)
     except Exception as e:
         print("Exception when calling AnchorsApi->anchors_delete_specific_anchor: %s\n" % e)
@@ -214,9 +214,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchors_snapshot**
+
+## **anchors_snapshot**
 > Anchors anchors_snapshot(transferables=transferables)
 
 /anchors [GET]
@@ -283,5 +283,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

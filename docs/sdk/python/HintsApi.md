@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**hints_create_new_hint**](HintsApi#hints_create_new_hint) | **POST** /hints/create | /hints/create [POST]
-[**hints_delete_specific_hint**](HintsApi#hints_delete_specific_hint) | **POST** /hints/{hint}/delete | /hints/{hint}/delete [POST]
+[**hints_delete_specific_hint**](HintsApi#hints_delete_specific_hint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
 [**hints_snapshot**](HintsApi#hints_snapshot) | **GET** /hints | /hints [GET]
 
 
-# **hints_create_new_hint**
+## **hints_create_new_hint**
 > Hint hints_create_new_hint(seeded_hint=seeded_hint)
 
 /hints/create [POST]
@@ -77,12 +77,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **hints_delete_specific_hint**
+
+## **hints_delete_specific_hint**
 > hints_delete_specific_hint(hint)
 
-/hints/{hint}/delete [POST]
+/hints/\{hint\}/delete [POST]
 
 This will delete a specific hint.
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     hint = 'hint_example' # str | This is a specific hint uuid
 
     try:
-        # /hints/{hint}/delete [POST]
+        # /hints/\{hint\}/delete [POST]
         api_instance.hints_delete_specific_hint(hint)
     except Exception as e:
         print("Exception when calling HintsApi->hints_delete_specific_hint: %s\n" % e)
@@ -143,9 +143,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **hints_snapshot**
+
+## **hints_snapshot**
 > Hints hints_snapshot()
 
 /hints [GET]
@@ -208,5 +208,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

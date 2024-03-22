@@ -28,6 +28,6 @@ backup_streamed_progress_dict = backup_streamed_progress_instance.to_dict()
 # create an instance of BackupStreamedProgress from a dict
 backup_streamed_progress_form_dict = backup_streamed_progress.from_dict(backup_streamed_progress_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

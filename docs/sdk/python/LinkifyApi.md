@@ -6,10 +6,10 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**linkify**](LinkifyApi#linkify) | **POST** /linkify | /linkify [POST]
 [**linkify_multiple**](LinkifyApi#linkify_multiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
-[**linkify_share_revoke**](LinkifyApi#linkify_share_revoke) | **POST** /linkify/{share}/revoke | [POST} /linkify/{share}/revoke
+[**linkify_share_revoke**](LinkifyApi#linkify_share_revoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
-# **linkify**
+## **linkify**
 > Shares linkify(linkify=linkify)
 
 /linkify [POST]
@@ -80,9 +80,9 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, and they cannot create a shareable link. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to create shareable links. The User also need to be connected to their cloud to create shareable links.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **linkify_multiple**
+
+## **linkify_multiple**
 > Shares linkify_multiple(linkify_multiple=linkify_multiple)
 
 /linkify/multiple [POST]
@@ -154,12 +154,12 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, and they cannot create a shareable link. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to create shareable links. The User also need to be connected to their cloud to create shareable links.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **linkify_share_revoke**
+
+## **linkify_share_revoke**
 > str linkify_share_revoke(share)
 
-[POST} /linkify/{share}/revoke
+[POST} /linkify/\{share\}/revoke
 
 This will revoke a link.
 
@@ -185,7 +185,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     share = 'share_example' # str | 
 
     try:
-        # [POST} /linkify/{share}/revoke
+        # [POST} /linkify/\{share\}/revoke
         api_response = api_instance.linkify_share_revoke(share)
         print("The response of LinkifyApi->linkify_share_revoke:\n")
         pprint(api_response)
@@ -223,5 +223,5 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, and they cannot revoke a shareable link. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to create shareable links. The User also need to be connected to their cloud to create shareable links.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

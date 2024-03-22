@@ -6,11 +6,11 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**backups_create_new_backup**](BackupsApi#backups_create_new_backup) | **POST** /backups/create | /backups/create [POST]
 [**backups_create_new_backup_streamed**](BackupsApi#backups_create_new_backup_streamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
-[**backups_delete_specific_backup**](BackupsApi#backups_delete_specific_backup) | **POST** /backups/{backup}/delete | /backups/{backup}/delete [POST]
+[**backups_delete_specific_backup**](BackupsApi#backups_delete_specific_backup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
 [**backups_snapshot**](BackupsApi#backups_snapshot) | **GET** /backups | /backups [GET]
 
 
-# **backups_create_new_backup**
+## **backups_create_new_backup**
 > Backup backups_create_new_backup(seeded_backup=seeded_backup)
 
 /backups/create [POST]
@@ -78,9 +78,9 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backups_create_new_backup_streamed**
+
+## **backups_create_new_backup_streamed**
 > BackupStreamedProgress backups_create_new_backup_streamed(seeded_backup=seeded_backup)
 
 /backups/create/streamed [POST]
@@ -148,12 +148,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backups_delete_specific_backup**
+
+## **backups_delete_specific_backup**
 > backups_delete_specific_backup(backup, backup2=backup2)
 
-/backups/{backup}/delete [POST]
+/backups/\{backup\}/delete [POST]
 
 This will delete a specific backup from the cloud.
 
@@ -181,7 +181,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
     try:
-        # /backups/{backup}/delete [POST]
+        # /backups/\{backup\}/delete [POST]
         api_instance.backups_delete_specific_backup(backup, backup2=backup2)
     except Exception as e:
         print("Exception when calling BackupsApi->backups_delete_specific_backup: %s\n" % e)
@@ -217,9 +217,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backups_snapshot**
+
+## **backups_snapshot**
 > Backups backups_snapshot()
 
 /backups [GET]
@@ -282,5 +282,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

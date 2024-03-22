@@ -5,14 +5,14 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**connect**](ConnectorApi#connect) | **POST** /connect | /connect [POST]
-[**intention**](ConnectorApi#intention) | **POST** /{application}/intention | /{application}/intention [POST]
-[**onboarded**](ConnectorApi#onboarded) | **POST** /{application}/onboarded | /onboarded [POST]
-[**react**](ConnectorApi#react) | **POST** /{application}/reaction | /{application}/reaction [POST]
-[**suggest**](ConnectorApi#suggest) | **POST** /{application}/suggestion | /{application}/suggestion [POST]
-[**track**](ConnectorApi#track) | **POST** /{application}/track | /{application}/track [POST]
+[**intention**](ConnectorApi#intention) | **POST** /\{application\}/intention | /\{application\}/intention [POST]
+[**onboarded**](ConnectorApi#onboarded) | **POST** /\{application\}/onboarded | /onboarded [POST]
+[**react**](ConnectorApi#react) | **POST** /\{application\}/reaction | /\{application\}/reaction [POST]
+[**suggest**](ConnectorApi#suggest) | **POST** /\{application\}/suggestion | /\{application\}/suggestion [POST]
+[**track**](ConnectorApi#track) | **POST** /\{application\}/track | /\{application\}/track [POST]
 
 
-# **connect**
+## **connect**
 > Context connect(seeded_connector_connection=seeded_connector_connection)
 
 /connect [POST]
@@ -78,14 +78,14 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **intention**
+
+## **intention**
 > str intention(application, seeded_connector_asset=seeded_connector_asset)
 
-/{application}/intention [POST]
+/\{application\}/intention [POST]
 
 This can be used to send a SeededAsset over that you may use to compair in the future.
 
@@ -113,7 +113,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_connector_asset = pieces_os_client.SeededConnectorAsset() # SeededConnectorAsset |  (optional)
 
     try:
-        # /{application}/intention [POST]
+        # /\{application\}/intention [POST]
         api_response = api_instance.intention(application, seeded_connector_asset=seeded_connector_asset)
         print("The response of ConnectorApi->intention:\n")
         pprint(api_response)
@@ -149,13 +149,13 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 **500** | Internal Server Error:  |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **onboarded**
+
+## **onboarded**
 > str onboarded(application, body=body)
 
 /onboarded [POST]
@@ -221,15 +221,15 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK, This will jsut return a string of \&quot;OK\&quot;. |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **react**
+
+## **react**
 > str react(application, reaction=reaction)
 
-/{application}/reaction [POST]
+/\{application\}/reaction [POST]
 
 This will react to the response returned from the /suggest endpoint. 
 
@@ -257,7 +257,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     reaction = pieces_os_client.Reaction() # Reaction | ** This body will need to be modified. (optional)
 
     try:
-        # /{application}/reaction [POST]
+        # /\{application\}/reaction [POST]
         api_response = api_instance.react(application, reaction=reaction)
         print("The response of ConnectorApi->react:\n")
         pprint(api_response)
@@ -293,15 +293,15 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | This string will either (1) be a string of the AssetUid or (2) will be a generic string of &#39;OK&#39; if the asset was not saved and &#39;OK&#39; if the result was just used to send information about the a suggested reuse. |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **suggest**
+
+## **suggest**
 > Suggestion suggest(application, seeded_connector_creation=seeded_connector_creation)
 
-/{application}/suggestion [POST]
+/\{application\}/suggestion [POST]
 
 This can and should be called everytime a snippet is coppied from an integration. IE A Jetbrains user coppies some code, then this end point can get called to weigh if we want to suggest a piece to be reused (if reuse is true we should provide asset that the user may want to use) or saved or neither.   **Note: Could potentially accept a SeededFormat for the request body if we want.  TODO potentially just make this a get endpoint. (because we are trying to retireve data.
 
@@ -330,7 +330,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_connector_creation = pieces_os_client.SeededConnectorCreation() # SeededConnectorCreation | This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! (optional)
 
     try:
-        # /{application}/suggestion [POST]
+        # /\{application\}/suggestion [POST]
         api_response = api_instance.suggest(application, seeded_connector_creation=seeded_connector_creation)
         print("The response of ConnectorApi->suggest:\n")
         pprint(api_response)
@@ -366,15 +366,15 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **track**
+
+## **track**
 > str track(application, seeded_connector_tracking=seeded_connector_tracking)
 
-/{application}/track [POST]
+/\{application\}/track [POST]
 
 This is an endpoint specifically to abstract the work of packaging for segment on a per-context basis
 
@@ -402,7 +402,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_connector_tracking = pieces_os_client.SeededConnectorTracking() # SeededConnectorTracking | The body is able to take in several properties  (optional)
 
     try:
-        # /{application}/track [POST]
+        # /\{application\}/track [POST]
         api_response = api_instance.track(application, seeded_connector_tracking=seeded_connector_tracking)
         print("The response of ConnectorApi->track:\n")
         pprint(api_response)
@@ -438,8 +438,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK, This will jsut return a string of \&quot;OK\&quot;. |  -  |
-**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect {application} (applicationId) within the route that doest match a preregisterd integration. |  -  |
+**400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

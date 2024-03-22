@@ -5,11 +5,11 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**annotations_create_new_annotation**](AnnotationsApi#annotations_create_new_annotation) | **POST** /annotations/create | /annotations/create [POST]
-[**annotations_delete_specific_annotation**](AnnotationsApi#annotations_delete_specific_annotation) | **POST** /annotations/{annotation}/delete | /annotations/{annotation}/delete [POST]
+[**annotations_delete_specific_annotation**](AnnotationsApi#annotations_delete_specific_annotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
 [**annotations_snapshot**](AnnotationsApi#annotations_snapshot) | **GET** /annotations | /annotations [GET]
 
 
-# **annotations_create_new_annotation**
+## **annotations_create_new_annotation**
 > Annotation annotations_create_new_annotation(seeded_annotation=seeded_annotation)
 
 /annotations/create [POST]
@@ -77,12 +77,12 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotations_delete_specific_annotation**
+
+## **annotations_delete_specific_annotation**
 > annotations_delete_specific_annotation(annotation)
 
-/annotations/{annotation}/delete [POST]
+/annotations/\{annotation\}/delete [POST]
 
 this will delete a specific annotation
 
@@ -108,7 +108,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
 
     try:
-        # /annotations/{annotation}/delete [POST]
+        # /annotations/\{annotation\}/delete [POST]
         api_instance.annotations_delete_specific_annotation(annotation)
     except Exception as e:
         print("Exception when calling AnnotationsApi->annotations_delete_specific_annotation: %s\n" % e)
@@ -143,9 +143,9 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotations_snapshot**
+
+## **annotations_snapshot**
 > Annotations annotations_snapshot(annotation_type_filter=annotation_type_filter)
 
 /annotations [GET]
@@ -212,5 +212,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
