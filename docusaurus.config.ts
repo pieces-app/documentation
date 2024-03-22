@@ -32,6 +32,23 @@ const config: Config = {
   },
 
   plugins: [
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "sdk",
+        docsPluginId: "<your docs plugin id>", // e.g. "classic" or the plugin-content-docs id
+        config: {
+          sdk: {
+            // specPath: "/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml", // path or URL to the OpenAPI spec
+            specPath: "./openapi/spec/modules/core/isomorphic.openapi.yaml",
+            outputDir: "docs/sdk/core", // output directory for generated *.mdx and sidebar.js files
+            sidebarOptions: {
+              groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+            },
+          }
+        }
+      },
+    ],
   //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
   //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
   //   [
@@ -57,6 +74,8 @@ const config: Config = {
     // )
   ],
 
+  themes: ["docusaurus-theme-openapi-docs"],
+
   presets: [
     [
       'classic',
@@ -67,6 +86,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
+          docItemComponent: "@theme/ApiItem" // add @theme/ApiItem here
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -149,19 +169,18 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
-        // TODO: Keep this commented out until we have the OpenAPI specs ready
-        // {
-        //   type: 'dropdown',
-        //   label: 'SDKs',
-        //   position: 'right',
-        //   items: [
-        //     {
-        //       type: 'docSidebar',
-        //       sidebarId: 'pythonSDKSidebar',
-        //       label: 'Python SDK',
-        //     },
-        //   ],
-        // },
+        {
+          type: 'dropdown',
+          label: 'Build',
+          position: 'right',
+          items: [
+            {
+              type: 'docSidebar',
+              sidebarId: 'apisidebar',
+              label: 'Pieces OS SDK',
+            },
+          ],
+        },
         {
           to: '/community',
           label: 'Community',

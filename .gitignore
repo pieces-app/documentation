@@ -30,3 +30,6 @@ yarn-error.log*
 /dataSources/
 /dataSources.local.xml
 
+# OpenAPI Specs
+/openapi
+

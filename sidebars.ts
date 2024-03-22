@@ -227,6 +227,56 @@ const sidebars: SidebarsConfig = {
       ]
     }
   ],
+  apisidebar: [
+    {
+      type: "doc",
+      id: "sdk/core/pieces-isomorphic-openapi",
+    },
+    {
+      type: "category",
+      label: "WellKnown",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/get-well-known-health",
+          label: "/.well-known/health [GET]",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "sdk/core/get-well-known-version",
+          label: "/.well-known/version [Get]",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Piece",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/html-share",
+          label: "/ [GET]",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Activities",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/activities-delete-specific-activity",
+          label: "/activities/{activity}/delete [POST]",
+          className: "api-method post",
+        },
+      ],
+    },
+  ],
+
+
   // TODO: We will uncomment this once we have the Python SDK ready
   // Will also need to add sidebars for each SDK we support
   // pythonSDKSidebar: [
