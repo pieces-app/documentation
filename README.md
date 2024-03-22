@@ -48,7 +48,7 @@ Our <a target="_blank" href="https://pieces.app">Flagship Desktop App</a> provid
 
 ### Prerequisites
 
-You will need `pnpm` installed on your machine. You can install it using npm: `npm install -g pnpm`.
+You will need `pnpm` installed on your machine. You can install it using npm: `npm install -g pnpm`
 
 ### Install Dependencies
 
