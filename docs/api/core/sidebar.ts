@@ -4,7 +4,7 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "sdk/core/pieces-isomorphic-openapi",
+      id: "sdk/api/pieces-isomorphic-openapi",
     },
     {
       type: "category",
@@ -12,13 +12,13 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "sdk/core/get-well-known-health",
+          id: "sdk/api/get-well-known-health",
           label: "/.well-known/health [GET]",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "sdk/core/get-well-known-version",
+          id: "sdk/api/get-well-known-version",
           label: "/.well-known/version [Get]",
           className: "api-method get",
         },
@@ -30,7 +30,7 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "sdk/core/html-share",
+          id: "sdk/api/html-share",
           label: "/ [GET]",
           className: "api-method get",
         },
@@ -42,7 +42,7 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "sdk/core/activities-delete-specific-activity",
+          id: "sdk/api/activities-delete-specific-activity",
           label: "/activities/activity_id/delete [POST]",
           className: "api-method post",
         },

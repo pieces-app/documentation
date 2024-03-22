@@ -1,13 +1,13 @@
 ---
-id: activities-delete-specific-activity
-title: "/activities/activity_id/delete [POST]"
-description: "This will delete a specific activity."
-sidebar_label: "/activities/activity_id/delete [POST]"
+id: html-share
+title: "/ [GET]"
+description: "This is a cloud only Api. This will get a preview of your publically accessble Piece."
+sidebar_label: "/ [GET]"
 hide_title: true
 hide_table_of_contents: true
-api: eJzlVV1P2zAU/SuWnzapNAVtL3mrGJsqbQMN9gQ8GOe28UhtYzvtuqj/fecm6QcU2N6pKsW59j336/ikkc5TUMk4OylkLpVOZmGSoXhUUEWJjqInbaZGH/VbKzmQgaJ3NlKUeSNPRh/4UVDUwXhGAs53J06dTWSTXA/kx9Ho8MgE28GqSlxSWFAQZyG4AHDd+8FBeV8Z3WaX/Yrs1cioS5orXqWVJ+DEFIydyTX/BjKpGbK6luNtIfJ28CTyVWmiWJqqEl2NQolNlWJT5fDG3lgz9y4kZZOwLlEuzFQsaetkt4dzkUqVBFBnDrmI5MQdo87IUgCoC3shMsZoo6squg2aSVFoV3NPhFcBYEMCKm3dhghYiIWJJNCtqAbYRUCyscY4ugT4fKApBbIaNhWQRLVUK0BXpCwVQ/QX6GqOkIH71EiLl93gebqGe+RVKttJP9QmEKiRQk2Dl7v/bI/xf6a1oq4NMlljLsijdMw772Jqc0PUXGY7GmbNxm2dda3Csdgypsu/DhU8ypR8nmWV06oqgZUfj8C5p0l95W3xhaeiEhXim9P34pNKqk0mkq4DAl1yjR23VZ3K0V61jg0nwJ1Wbrk94YL505L01BV0YPzZJgif5O5p94Y5YW7l9j1q3ESGZBaDeCC+SS+DvequK4MbdIq54WFAs7aE/w3PCI+Cvr0GcAZ26lovkyqu/MIQ36lJdHMXfAk+n3uy44sJfJmMHcOOh4esO7OFhyzggk8hBOMYKcWB+OzCXPHiJ9iMR2vfmDvrkK8V34y5amfQX9VXb4e4vji/vLp9mkSzk9U3Ln89kRP9TpmvFMQOTW5FpOnl53rvKwiHfE8aewWCWLDI8NGmuVORwKL1ms0PNYUV7FguVDDqjrkDlSpM5DWkboqy6ZXpvPvRS+578W8NfaGc3qgs57xQVU0dx+9ptS/161ucLUkVFNoku+2x1uTTnuPBV/iRcjPd8PH9C/wk43U=
-sidebar_class_name: "post api-method"
-info_path: docs/sdk/core/pieces-isomorphic-openapi
+api: eJzlVctuGjEU/RXLq1aiQLJkh9IkQm2VqE1WiIXxXLCFZ+zYHihF/HvPNSQ8okSVqq6KkGzf57nP2chIKfgmUZKDjbzs9/moKOloQ7a+kQN590V2pPZNpiYzN9PP3DO5dvxI2lCtCnkdCNIpR9vM5ZZ/HekDRcV2RhV4rPQpGRUJFk+dPBibBP5KaOfbSvjGrcUw2K4onJV1Tswpgx8iLS2thJ+JtW+jCO3UWa0c5JXWlNLUkbi3pKkLL1nNEdlYFoKcdGRQUdWUKTL5HfwdaRnXU0txDTsNlPAMuEZ6am0kBJRjS+eB5H0g2RDAFnVRfHZAUhxAMj4il1SJJVBAi0Nh8ZKZrtwCJRAazylDzJJBZ4NHD9dEcfkMvo2uZDWHQa/nPJJgfMqDiz7KeI7rK7PFLfyiIPD9zeuF+KyyKv4S6TbavP7B6dj1gmqz6R8lxjPhEnZnzq9eJHy0v0qBr3xFr4iPBSCXwS/o8Io0Q9uZl3fS6BM2yS1j64B62vy2sXfVtbPo0yvUB4dVriD9Y/ds4cTp/5eA0vkzX7Rsdhx5GZ4kRsnXPgZjtbgL1AzvR9Dd9zCkLrqvu+66qYK3TU5i5qMYpkQ5dcSNj7XiyyO6GUehP5N31C5PYEA316rUYD9/PTG+vX6YnPvZHPbTv9skuy4o2y84he0AhGUCN/v5HEteMDyCfN9spioRcrzdMnm3SHhqK5sULGO6Z6jO+QI5DuXD9/2q+Sj+fq28EcGC1vu9tlSuZX5ZCEsVLaME4gmkDKmKYoG/UxgiQSEfaR2+Cif7C9XCt+A35TAwKA==
+sidebar_class_name: "get api-method"
+info_path: docs/sdk/api/pieces-isomorphic-openapi
 custom_edit_url: null
 ---
 
@@ -28,22 +28,20 @@ import TabItem from "@theme/TabItem";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"/activities/\\{activity\\}/delete [POST]"}
+  children={"/ [GET]"}
 >
 </Heading>
 
 <MethodEndpoint
-  method={"post"}
-  path={"/activities/activity_id/delete"}
+  method={"get"}
+  path={"/"}
 >
 
 </MethodEndpoint>
 
 
 
-This will delete a specific activity.
-
-important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
+This is a cloud only Api. This will get a preview of your publically accessble Piece.
 
 <Heading
   id={"request"}
@@ -65,13 +63,13 @@ important note: if we delete an activity: that is going to be a generic or a spe
     <h3
       className={"openapi-markdown__details-summary-header-params"}
     >
-      Path Parameters
+      Query Parameters
     </h3>
   </summary><div>
     <ul>
       <ParamsItem
         className={"paramsItem"}
-        param={{"name":"activity","in":"path","required":true,"schema":{"type":"string"},"description":"This is a specific activity uuid."}}
+        param={{"schema":{"type":"string"},"in":"query","name":"p","required":true,"description":"this is the a query param, that a shortened version of the share."}}
       >
 
       </ParamsItem>
@@ -84,26 +82,13 @@ important note: if we delete an activity: that is going to be a generic or a spe
       id={undefined}
     >
       <TabItem
-        label={"204"}
-        value={"204"}
+        label={"200"}
+        value={"200"}
       >
         <div>
 
 
-          No Content
-
-
-        </div><div>
-
-        </div>
-      </TabItem><TabItem
-        label={"500"}
-        value={"500"}
-      >
-        <div>
-
-
-          Internal Server Error
+          OK
 
 
         </div><div>
@@ -112,8 +97,8 @@ important note: if we delete an activity: that is going to be a generic or a spe
             schemaType={"response"}
           >
             <TabItem
-              label={"application/json"}
-              value={"application/json"}
+              label={"text/html"}
+              value={"text/html"}
             >
               <SchemaTabs
                 className={"openapi-tabs__schema"}
