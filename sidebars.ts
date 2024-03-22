@@ -276,36 +276,88 @@ const sidebars: SidebarsConfig = {
     },
   ],
 
+  apiSidebar: [
+    {
+      type: "doc",
+      id: "sdk/core/pieces-isomorphic-openapi",
+    },
+    {
+      type: "category",
+      label: "WellKnown",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/get-well-known-health",
+          label: "/.well-known/health [GET]",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "sdk/core/get-well-known-version",
+          label: "/.well-known/version [Get]",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Piece",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/html-share",
+          label: "/ [GET]",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Activities",
+      items: [
+        {
+          type: "doc",
+          id: "sdk/core/activities-delete-specific-activity",
+          label: "/activities/activity_id/delete [POST]",
+          className: "api-method post",
+        },
+      ],
+    },
+  ],
 
-  // TODO: We will uncomment this once we have the Python SDK ready
   // Will also need to add sidebars for each SDK we support
-  // pythonSDKSidebar: [
-  //   {
-  //     type: 'doc',
-  //     id: 'sdk/python/AssetsApi',
-  //     label: 'Assets API',
-  //   },
-  //   {
-  //     type: 'doc',
-  //     id: 'sdk/python/ConnectorApi',
-  //     label: 'Connector API',
-  //   },
-  //   {
-  //     type: 'doc',
-  //     id: 'sdk/python/ConversationApi',
-  //     label: 'Conversation API',
-  //   },
-  //   {
-  //     type: 'doc',
-  //     id: 'sdk/python/QGPTApi',
-  //     label: 'QGPT API',
-  //   },
-  //   {
-  //     type: 'doc',
-  //     id: 'sdk/python/SearchApi',
-  //     label: 'Search API',
-  //   },
-  // ],
+  pythonSDKSidebar: [
+    {
+      type: 'doc',
+      id: 'sdk/python/core/ActivityApi',
+      label: 'Activity API',
+    },
+    {
+      type: 'doc',
+      id: 'sdk/python/core/AssetApi',
+      label: 'Asset API',
+    },
+    {
+      type: 'doc',
+      id: 'sdk/python/core/ConnectorApi',
+      label: 'Connector API',
+    },
+    {
+      type: 'doc',
+      id: 'sdk/python/core/ConversationApi',
+      label: 'Conversation API',
+    },
+    {
+      type: 'doc',
+      id: 'sdk/python/core/ModelApi',
+      label: 'Model API',
+    },
+    {
+      type: 'doc',
+      id: 'sdk/python/core/WellKnownApi',
+      label: 'WellKnown API',
+    }
+  ],
 };
 
 export default sidebars;

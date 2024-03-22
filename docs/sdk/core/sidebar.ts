@@ -43,7 +43,7 @@ const sidebar: SidebarsConfig = {
         {
           type: "doc",
           id: "sdk/core/activities-delete-specific-activity",
-          label: "/activities/{activity}/delete [POST]",
+          label: "/activities/activity_id/delete [POST]",
           className: "api-method post",
         },
       ],

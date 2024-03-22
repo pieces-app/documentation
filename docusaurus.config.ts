@@ -176,8 +176,13 @@ const config: Config = {
           items: [
             {
               type: 'docSidebar',
-              sidebarId: 'apisidebar',
-              label: 'Pieces OS SDK',
+              sidebarId: 'apiSidebar',
+              label: 'API Reference',
+            },
+            {
+              type: 'docSidebar',
+              sidebarId: 'pythonSDKSidebar',
+              label: 'Python SDK',
             },
           ],
         },
