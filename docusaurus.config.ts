@@ -35,13 +35,13 @@ const config: Config = {
     [
       "docusaurus-plugin-openapi-docs",
       {
-        id: "sdk",
-        docsPluginId: "<your docs plugin id>", // e.g. "classic" or the plugin-content-docs id
+        id: "coreAPI",
+        docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
         config: {
-          sdk: {
+          coreAPI: {
             // specPath: "/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml", // path or URL to the OpenAPI spec
             specPath: "./openapi/spec/modules/core/isomorphic.openapi.yaml",
-            outputDir: "docs/sdk/core", // output directory for generated *.mdx and sidebar.js files
+            outputDir: "docs/api/core", // output directory for generated *.mdx and sidebar.js files
             sidebarOptions: {
               groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
             },
@@ -176,7 +176,7 @@ const config: Config = {
           items: [
             {
               type: 'docSidebar',
-              sidebarId: 'apiSidebar',
+              sidebarId: 'apisidebar',
               label: 'API Reference',
             },
             {

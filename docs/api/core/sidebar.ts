@@ -4,7 +4,61 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "sdk/api/pieces-isomorphic-openapi",
+      id: "api/core/pieces-isomorphic-openapi",
+    },
+    {
+      type: "category",
+      label: "Backup",
+      items: [
+        {
+          type: "doc",
+          id: "api/core/backup-restore-specific-backup",
+          label: "/backup/{backup}/restore [POST]",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/core/backup-restore-specific-backup-streamed",
+          label: "/backup/{backup}/restore/streamed [POST]",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/core/backup-specific-backup-snapshot",
+          label: "/backup/{backup} [GET]",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Backups",
+      items: [
+        {
+          type: "doc",
+          id: "api/core/backups-snapshot",
+          label: "/backups [GET]",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/core/backups-create-new-backup",
+          label: "/backups/create [POST]",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/core/backups-delete-specific-backup",
+          label: "/backups/{backup}/delete [POST]",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/core/backups-create-new-backup-streamed",
+          label: "/backups/create/streamed [POST]",
+          className: "api-method post",
+        },
+      ],
     },
     {
       type: "category",
@@ -12,13 +66,13 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "sdk/api/get-well-known-health",
+          id: "api/core/get-well-known-health",
           label: "/.well-known/health [GET]",
           className: "api-method get",
         },
         {
           type: "doc",
-          id: "sdk/api/get-well-known-version",
+          id: "api/core/get-well-known-version",
           label: "/.well-known/version [Get]",
           className: "api-method get",
         },
@@ -30,21 +84,9 @@ const sidebar: SidebarsConfig = {
       items: [
         {
           type: "doc",
-          id: "sdk/api/html-share",
+          id: "api/core/html-share",
           label: "/ [GET]",
           className: "api-method get",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Activities",
-      items: [
-        {
-          type: "doc",
-          id: "sdk/api/activities-delete-specific-activity",
-          label: "/activities/activity_id/delete [POST]",
-          className: "api-method post",
         },
       ],
     },

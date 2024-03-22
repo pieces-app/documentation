@@ -1,0 +1,794 @@
+---
+id: backup-restore-specific-backup-streamed
+title: "/backup/{backup}/restore/streamed [POST]"
+description: "This take a local database and ensure that it is backed up to the cloud."
+sidebar_label: "/backup/{backup}/restore/streamed [POST]"
+hide_title: true
+hide_table_of_contents: true
+api: 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
+sidebar_class_name: "post api-method"
+info_path: api/core/pieces-isomorphic-openapi
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"/backup/\\{backup\\}/restore/streamed [POST]"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/backup/{backup}/restore/streamed"}
+>
+  
+</MethodEndpoint>
+
+
+
+This take a local database and ensure that it is backed up to the cloud.
+
+NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"backup","in":"path","required":true,"schema":{"type":"string"},"description":"This is a identifier that is used to identify a specific backup.(version_timestamp)"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  schema
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <div
+                style={{"marginTop":".5rem","marginBottom":".5rem"}}
+              >
+                
+                
+                This is a model that will keep track of all of our version related to our models. ie (1) the database migration and (2) the global semantic version of the api.
+                
+                
+              </div><SchemaItem
+                collapsible={false}
+                name={"migration"}
+                required={true}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","description":"this is the current database version that this model was used for."}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"version"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"timestamp"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"bytes"}
+          required={true}
+          schemaName={"number"}
+          qualifierMessage={undefined}
+          schema={{"type":"number"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  created
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span><span
+                  className={"openapi-schema__divider"}
+                >
+                  
+                </span><span
+                  className={"openapi-schema__required"}
+                >
+                  required
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <div
+                style={{"marginTop":".5rem","marginBottom":".5rem"}}
+              >
+                
+                
+                A helper classs to wrap Date-Time Values with Useful Helper Properties
+                
+                
+              </div><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        schema
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <div
+                      style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                    >
+                      
+                      
+                      This is a model that will keep track of all of our version related to our models. ie (1) the database migration and (2) the global semantic version of the api.
+                      
+                      
+                    </div><SchemaItem
+                      collapsible={false}
+                      name={"migration"}
+                      required={true}
+                      schemaName={"integer"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"integer","description":"this is the current database version that this model was used for."}}
+                    >
+                      
+                    </SchemaItem>
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"value"}
+                required={true}
+                schemaName={"date-time"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","format":"date-time"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"readable"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"Last week - June 3rd, 3:33 a.m."}}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"device_name"}
+          required={true}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                schema
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              This is a model that will keep track of all of our version related to our models. ie (1) the database migration and (2) the global semantic version of the api.
+                              
+                              
+                            </div><SchemaItem
+                              collapsible={false}
+                              name={"migration"}
+                              required={true}
+                              schemaName={"integer"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"integer","description":"this is the current database version that this model was used for."}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"semantic"}
+                              required={true}
+                              schemaName={"EmbeddedModelSchemaSemanticVersionEnum (string)"}
+                              qualifierMessage={"**Possible values:** [`MAJOR_0_MINOR_0_PATCH_1`]"}
+                              schema={{"type":"string","title":"EmbeddedModelSchemaSemanticVersionEnum","description":"This is a Semantic Version Enum that will reflect the Semantic version of the api.","default":"MAJOR_0_MINOR_0_PATCH_1","enum":["MAJOR_0_MINOR_0_PATCH_1"],"readOnly":true}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"status"}
+                        required={false}
+                        schemaName={"ModelDownloadProgressStatusEnum (string)"}
+                        qualifierMessage={"**Possible values:** [`INITIALIZED`, `IN-PROGRESS`, `COMPLETED`, `FAILED`, `UNKNOWN`]"}
+                        schema={{"title":"ModelDownloadProgressStatusEnum","x-stoplight":{"id":"bab1a8291c5bf"},"type":"string","enum":["INITIALIZED","IN-PROGRESS","COMPLETED","FAILED","UNKNOWN"],"description":"Enum used for the status of the progress in downloading a model."}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"percentage"}
+                        required={false}
+                        schemaName={"number"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"number","description":"Optionally if the download is in progress you will recieve a download percent(from 0-100).","nullable":true}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                backup
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <div
+                              style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                            >
+                              
+                              
+                              This is a cloud Backup. This is specific metadata needed inorder to retrieve a Backup.
+                              
+                              
+                            </div><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      schema
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    This is a model that will keep track of all of our version related to our models. ie (1) the database migration and (2) the global semantic version of the api.
+                                    
+                                    
+                                  </div><SchemaItem
+                                    collapsible={false}
+                                    name={"migration"}
+                                    required={true}
+                                    schemaName={"integer"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"integer","description":"this is the current database version that this model was used for."}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"semantic"}
+                                    required={true}
+                                    schemaName={"EmbeddedModelSchemaSemanticVersionEnum (string)"}
+                                    qualifierMessage={"**Possible values:** [`MAJOR_0_MINOR_0_PATCH_1`]"}
+                                    schema={{"type":"string","title":"EmbeddedModelSchemaSemanticVersionEnum","description":"This is a Semantic Version Enum that will reflect the Semantic version of the api.","default":"MAJOR_0_MINOR_0_PATCH_1","enum":["MAJOR_0_MINOR_0_PATCH_1"],"readOnly":true}}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"id"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"version"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"timestamp"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"bytes"}
+                              required={true}
+                              schemaName={"number"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"number"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={true}
+                              className={"schemaItem"}
+                            >
+                              <details
+                                style={{}}
+                                className={"openapi-markdown__details"}
+                              >
+                                <summary
+                                  style={{}}
+                                >
+                                  <span
+                                    className={"openapi-schema__container"}
+                                  >
+                                    <strong
+                                      className={"openapi-schema__property"}
+                                    >
+                                      created
+                                    </strong><span
+                                      className={"openapi-schema__name"}
+                                    >
+                                       object
+                                    </span><span
+                                      className={"openapi-schema__divider"}
+                                    >
+                                      
+                                    </span><span
+                                      className={"openapi-schema__required"}
+                                    >
+                                      required
+                                    </span>
+                                  </span>
+                                </summary><div
+                                  style={{"marginLeft":"1rem"}}
+                                >
+                                  <div
+                                    style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                  >
+                                    
+                                    
+                                    A helper classs to wrap Date-Time Values with Useful Helper Properties
+                                    
+                                    
+                                  </div><SchemaItem
+                                    collapsible={true}
+                                    className={"schemaItem"}
+                                  >
+                                    <details
+                                      style={{}}
+                                      className={"openapi-markdown__details"}
+                                    >
+                                      <summary
+                                        style={{}}
+                                      >
+                                        <span
+                                          className={"openapi-schema__container"}
+                                        >
+                                          <strong
+                                            className={"openapi-schema__property"}
+                                          >
+                                            schema
+                                          </strong><span
+                                            className={"openapi-schema__name"}
+                                          >
+                                             object
+                                          </span>
+                                        </span>
+                                      </summary><div
+                                        style={{"marginLeft":"1rem"}}
+                                      >
+                                        <div
+                                          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                                        >
+                                          
+                                          
+                                          This is a model that will keep track of all of our version related to our models. ie (1) the database migration and (2) the global semantic version of the api.
+                                          
+                                          
+                                        </div><SchemaItem
+                                          collapsible={false}
+                                          name={"migration"}
+                                          required={true}
+                                          schemaName={"integer"}
+                                          qualifierMessage={undefined}
+                                          schema={{"type":"integer","description":"this is the current database version that this model was used for."}}
+                                        >
+                                          
+                                        </SchemaItem><SchemaItem
+                                          collapsible={false}
+                                          name={"semantic"}
+                                          required={true}
+                                          schemaName={"EmbeddedModelSchemaSemanticVersionEnum (string)"}
+                                          qualifierMessage={"**Possible values:** [`MAJOR_0_MINOR_0_PATCH_1`]"}
+                                          schema={{"type":"string","title":"EmbeddedModelSchemaSemanticVersionEnum","description":"This is a Semantic Version Enum that will reflect the Semantic version of the api.","default":"MAJOR_0_MINOR_0_PATCH_1","enum":["MAJOR_0_MINOR_0_PATCH_1"],"readOnly":true}}
+                                        >
+                                          
+                                        </SchemaItem>
+                                      </div>
+                                    </details>
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"value"}
+                                    required={true}
+                                    schemaName={"date-time"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","format":"date-time"}}
+                                  >
+                                    
+                                  </SchemaItem><SchemaItem
+                                    collapsible={false}
+                                    name={"readable"}
+                                    required={false}
+                                    schemaName={"string"}
+                                    qualifierMessage={undefined}
+                                    schema={{"type":"string","example":"Last week - June 3rd, 3:33 a.m."}}
+                                  >
+                                    
+                                  </SchemaItem>
+                                </div>
+                              </details>
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"device_name"}
+                              required={true}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                            >
+                              
+                            </SchemaItem><SchemaItem
+                              collapsible={false}
+                              name={"platform"}
+                              required={true}
+                              schemaName={"PlatformEnum (string)"}
+                              qualifierMessage={"**Possible values:** [`WEB`, `MACOS`, `LINUX`, `WINDOWS`, `FUCHSIA`, `IOS`, `ANDROID`, `UNKNOWN`]"}
+                              schema={{"type":"string","title":"PlatformEnum","description":"This is an Enumeration for a Platform ie, WEB, MACOS, LINUX, WINDOWS","enum":["WEB","MACOS","LINUX","WINDOWS","FUCHSIA","IOS","ANDROID","UNKNOWN"],"readOnly":true}}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"schema\": {\n    \"migration\": 0,\n    \"semantic\": \"MAJOR_0_MINOR_0_PATCH_1\"\n  },\n  \"status\": \"INITIALIZED\",\n  \"percentage\": 0,\n  \"backup\": {\n    \"schema\": {\n      \"migration\": 0,\n      \"semantic\": \"MAJOR_0_MINOR_0_PATCH_1\"\n    },\n    \"id\": \"string\",\n    \"version\": \"string\",\n    \"timestamp\": \"string\",\n    \"bytes\": 0,\n    \"created\": {\n      \"schema\": {\n        \"migration\": 0,\n        \"semantic\": \"MAJOR_0_MINOR_0_PATCH_1\"\n      },\n      \"value\": \"2024-03-22T16:35:54.629Z\",\n      \"readable\": \"Last week - June 3rd, 3:33 a.m.\"\n    },\n    \"device_name\": \"string\",\n    \"platform\": \"WEB\"\n  }\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"500"}
+        value={"500"}
+      >
+        <div>
+          
+          
+          Internal Server Error
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      
