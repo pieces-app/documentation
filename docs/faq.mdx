@@ -142,9 +142,9 @@ Please note that we have found that users who have some sort of proxy set up on 
   </TabItem>
   <TabItem value="linux">
     Follow these steps to debug:
-    1. What version of Ubuntu are you currently running? We currently support 22.04 and above.
+    1. Check the version of Ubuntu you are running. We currently support 22.04 and above.
     2. Please [submit a support ticket](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-sidebar) and include the following so we can diagnose the issue:
-    3. In your terminal, print out a debugging log of Pieces OS by using the following command:
+    In your terminal, print out a debugging log of Pieces OS by using the following command:
     ```sh
     pieces-os --debug
     ```
@@ -205,9 +205,9 @@ Some things to consider:
 
 Unfortunately, if you have an older machine or one with very low resources, you may have to use a cloud model in order to use the copilot.
 
-Another common issue on Linux and Windows is a corrupted or outdated Vulkan API, which we use to communicate with your GPU. Vulkan should be bundled with your AMD or NVIDIA drivers, and you can check its health by executing the command `vulkaninfo` in your terminal and scanning the resulting logs for errors or warnings. This could indicate that either your GPU drivers need updated or there is an issue with the API itself. Please [contact the Pieces support team](/support) if you believe your Vulkan installation is broken.
+Another common issue on Linux and Windows is a corrupted or outdated Vulkan API, which we use to communicate with your GPU. Vulkan should be bundled with your AMD or NVIDIA drivers, and you can check its health by executing the command `vulkaninfo` in your terminal and scanning the resulting logs for errors or warnings. This could indicate that either your GPU drivers need updating or there is an issue with the API itself. Please [contact the Pieces support team](/support) if you believe your Vulkan installation is broken.
 
-To understand how to check your machine specs and select the best model for your machine, keep reading this FAQ detail. For detailed information on the difference between GPU and CPU and the best hardware for running local models, please see our [blog post about this topic](https://code.pieces.app/blog/how-to-run-an-llm-locally-with-pieces).
+To understand how to check your machine specs and select the best model for your machine, continue on to the next section. For detailed information on the difference between GPU and CPU and the best hardware for running local models, please see our [blog post about this topic](https://code.pieces.app/blog/how-to-run-an-llm-locally-with-pieces).
 
 ### Checking Your Machine Specs
 
@@ -236,10 +236,11 @@ In order to select the best local model for you, you should first check your mac
     1. Open a terminal window.
     2. For CPU information, you can use the `lscpu` command.
     3. For GPU information, you can use commands like `lspci | grep -i vga` to list GPU devices.
-  </TabItem>
-</Tabs>
 
 If you don’t have this installed, you may need to consult online forums for other options for your Linux machine.
+
+  </TabItem>
+</Tabs>
 
 #### GPU Requirements for Certain Models
 If you have a GPU, you can review the specifications for several of our on-device models below to see if you have enough RAM for them.
@@ -276,9 +277,9 @@ We should link all of our videos, how-tos, and feature walkthroughs. We will pro
 
 ## Non-Ubuntu Distros - Linux
 
-https://github.com/pieces-app/support/discussions/14
-
 Pieces for Developers currently supports Ubuntu 22.04 and up and Ubuntu-based distributions. Other OSs may work, but we can't guarantee the quality of the experience.
+
+Please join [this discussion](https://github.com/pieces-app/support/discussions/14) on GitHub to add your opinion about what distributes we should work on next. 
 
 ---
 
@@ -310,7 +311,7 @@ We will need to work with you to fix this. Please [submit a support ticket](http
 
 :::warning
 
-Please note that removing Pieces will delete all of your data, including code snippets, copilot conversations, and downloaded local LLMs.
+Please note that removing your Pieces databases (step 2) will delete all of your data, including code snippets, copilot conversations, and downloaded local LLMs.
 
 :::
 
@@ -448,11 +449,12 @@ Or navigate to the Pieces User Settings -> Customize -> Toggle Light Mode.
 
 ## How do I convert a saved image to code or text?
 
-1. Open the Pieces for Developers Desktop App.
-2. In the snippet list or carousel, focus on the image you want to extract code or text from.
-3. Click on the "View as Code" button in the menu to the right of the window.
-4. Pieces uses OCR to detect and extract code or text from the image, which will then be displayed on the screen.
-5. You can now copy, modify, and share the extracted code as needed.
+In order to use Pieces OCR, you can drop a saved image into a copilot conversation. It will convert the image into a snippet that you can save to Pieces and describe the snippet for you, in addition to setting that snippet as context so you can have a customized conversation. 
+
+You can also drop an image into the saved materials view and it will create a new snippet for you. You can then select the “View as Code” button, allowing you to copy, modify, and share the extracted code as needed.
+
+It's important to note that the accuracy of the extracted code or text may vary depending on the quality of the image and the complexity of the code.
+
 
 ---
 
