@@ -261,6 +261,11 @@ const sidebars: SidebarsConfig = {
           label: 'Activities API',
         },
         {
+          type:'doc',
+          id: 'sdks/python/ApplicationsApi',
+          label: 'Applications API',
+        },
+        {
           type: 'doc',
           id: 'sdks/python/AssetsApi',
           label: 'Assets API',
@@ -274,6 +279,26 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'sdks/python/ConversationsApi',
           label: 'Conversations API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/ModelsApi',
+          label: 'Models API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/OSApi',
+          label: 'OS API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/SearchApi',
+          label: 'Search API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/WellKnownApi',
+          label: 'WellKnown API',
         }
       ]
     },
