@@ -79,12 +79,6 @@
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 }
 
-/*Fixes colors on api reference pages*/
-.openapi-explorer__request-btn {
-  background-color: var(--ifm-color-primary-darkest) !important;
-  color: var(--ifm-color-secondary-darkest) !important;
-}
-
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
 p > a {
@@ -219,4 +213,22 @@ html[data-theme='dark'] .header-github-link:before {
 /*Sidebar Menu Classes*/
 .menu__link--sublist {
   font-weight: bold;
+}
+
+/*Fixes colors on api reference pages*/
+.openapi-explorer__request-btn {
+  background-color: var(--ifm-color-primary-darkest) !important;
+  color: var(--ifm-color-secondary-darkest) !important;
+}
+
+/*Fixes overlap with redoc generated api reference sidebar*/
+.redocusaurus {
+  :first-child > :first-child {
+    top: 60px !important;
+    /*padding-bottom: 0 !important;*/
+
+    :nth-child(2) > :nth-child(2) {
+      display: none;
+    }
+  }
 }

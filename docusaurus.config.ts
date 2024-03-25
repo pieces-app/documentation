@@ -32,23 +32,23 @@ const config: Config = {
   },
 
   plugins: [
-    [
-      "docusaurus-plugin-openapi-docs",
-      {
-        id: "coreAPI",
-        docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
-        config: {
-          coreAPI: {
-            // specPath: "/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml", // path or URL to the OpenAPI spec
-            specPath: "./openapi/spec/modules/core/isomorphic.openapi.yaml",
-            outputDir: "docs/api/core", // output directory for generated *.mdx and sidebar.js files
-            sidebarOptions: {
-              groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-            },
-          }
-        }
-      },
-    ],
+    // [
+    //   "docusaurus-plugin-openapi-docs",
+    //   {
+    //     id: "coreAPI",
+    //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
+    //     config: {
+    //       coreAPI: {
+    //         // specPath: "/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml", // path or URL to the OpenAPI spec
+    //         specPath: "./openapi/spec/modules/core/isomorphic.openapi.yaml",
+    //         outputDir: "docs/api/core", // output directory for generated *.mdx and sidebar.js files
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
+    //         },
+    //       }
+    //     }
+    //   },
+    // ],
   //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
   //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
   //   [
@@ -74,7 +74,7 @@ const config: Config = {
     // )
   ],
 
-  themes: ["docusaurus-theme-openapi-docs"],
+  // themes: ["docusaurus-theme-openapi-docs"],
 
   presets: [
     [
@@ -86,7 +86,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
-          docItemComponent: "@theme/ApiItem" // add @theme/ApiItem here
+          // docItemComponent: "@theme/ApiItem" // add @theme/ApiItem here
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -103,32 +103,37 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
     // TODO: Keep this commented out until we have the OpenAPI specs ready
-    // [
-    //   'redocusaurus',
-    //   {
-    //     // Plugin Options for loading OpenAPI files
-    //     specs: [
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-    //         route: '/build/common',
-    //         id: 'common',
-    //       },
-    //       // {
-    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-    //       //   route: '/build/connector',
-    //       //   id: 'connector'
-    //       // },
-    //       // {
-    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-    //       //   route: '/build/core',
-    //       //   id: 'core'
-    //       // },
-    //     ],
-    //     theme: {
-    //       primaryColor: 'rgb(183,183,183)',
-    //     },
-    //   },
-    // ],
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+          //   route: '/build/common',
+          //   id: 'common',
+          // },
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+          //   route: '/build/connector',
+          //   id: 'connector'
+          // },
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+          //   route: '/build/core',
+          //   id: 'core'
+          // },
+          {
+            spec: './openapi/spec/modules/core/isomorphic.openapi.yaml',
+            route: '/api/core',
+            id: 'core'
+          }
+        ],
+        theme: {
+          primaryColor: 'rgb(183,183,183)',
+        },
+      },
+    ],
   ],
 
   themeConfig: {
@@ -176,13 +181,12 @@ const config: Config = {
           items: [
             {
               type: 'docSidebar',
-              sidebarId: 'apisidebar',
-              label: 'API Reference',
+              sidebarId: 'sdkSidebar',
+              label: 'Pieces OS SDKs',
             },
             {
-              type: 'docSidebar',
-              sidebarId: 'pythonSDKSidebar',
-              label: 'Python SDK',
+              to: 'api/core',
+              label: 'API Reference',
             },
           ],
         },

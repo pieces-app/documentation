@@ -1,0 +1,3 @@
+apis:
+  openapi/spec/modules/core/isomorphic.openapi.yaml:
+    alias: "pieces-isomorphic-openapi"
