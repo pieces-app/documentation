@@ -229,8 +229,6 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
-  // apisidebar: generatedSidebar,
-
   sdkSidebar: [
     {
       type: 'category',
@@ -313,6 +311,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'sdks/python/Application',
+          label: 'Application',
+        },
+        {
+          type: 'doc',
           id: 'sdks/python/Asset',
           label: 'Asset',
         },
@@ -320,6 +323,21 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'sdks/python/Conversation',
           label: 'Conversation',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/Model',
+          label: 'Model',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/SearchedAssets',
+          label: 'SearchResult',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/python/WellKnown',
+          label: 'WellKnown',
         }
       ]
     }
