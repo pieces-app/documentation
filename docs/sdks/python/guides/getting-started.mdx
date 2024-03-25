@@ -12,14 +12,14 @@ The Pieces SDK is a powerful code engine package designed for writing applicatio
 To get started with the Pieces SDK, follow these steps:
 
 1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
-   - [macOS](https://docs.pieces.app/installation-getting-started/macos)
-   - [Windows](https://docs.pieces.app/installation-getting-started/windows)
-   - [Linux](https://docs.pieces.app/installation-getting-started/linux)
+    - [macOS](/installation-getting-started/macos)
+    - [Windows](/installation-getting-started/windows)
+    - [Linux](/installation-getting-started/linux)
 
 2. **Install the PyPI Package**: Use pip to install the Pieces SDK package:
-   ```shell
-   pip install pieces-os-client
-   ```
+    ```shell
+    pip install pieces-os-client
+    ```
 
 ## Usage
 After installing the SDK, you can import the library into your project and start utilizing its features:
@@ -27,7 +27,6 @@ After installing the SDK, you can import the library into your project and start
 ```shell
 from pieces_os_client.models
 ```
-For detailed usage instructions and examples, refer to the [documentation](https://docs.pieces.app/).
 
 ## Features
 The Pieces SDK offers the following key features:
@@ -67,31 +66,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 ## Examples
 Here are some examples of the basic endpoint for getting up and running:
 
-
 <details>
-<summary>Connect</summary>
+  <summary>Connect</summary>
 
-When developing and creating an application on top of Pieces OS, it is important that you authenticate with the application itself when performing requests.
+  When developing and creating an application on top of Pieces OS, it is important that you authenticate with the application itself when performing requests.
 
-To 'connect' your application (this Python project) to the server, you will need to make a POST request to the `api_instance.connect()` endpoint of the API and print the response.
+  To 'connect' your application (this Python project) to the server, you will need to make a POST request to the `api_instance.connect()` endpoint of the API and print the response.
 
-```python
-# Enter a context with an instance of the API client
-with pieces_os_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
-    api_instance = pieces_os_client.ConnectorApi(api_client)
-    seeded_connector_connection = pieces_os_client.SeededConnectorConnection()
-    # SeededConnectorConnection |  (optional)
-    try:
-        # api_instance.connect() [POST]
-        api_response = api_instance.connect(seeded_connector_connection=seeded_connector_connection)
-        print("The response of ConnectorApi->connect:\n")
-        print(api_response)
-    except Exception as e:
-        print("Exception when calling ConnectorApi->connect: %s\n" % e)
+  ```python
+  # Enter a context with an instance of the API client
+  with pieces_os_client.ApiClient(configuration) as api_client:
+      # Create an instance of the API class
+      api_instance = pieces_os_client.ConnectorApi(api_client)
+      seeded_connector_connection = pieces_os_client.SeededConnectorConnection()
+      # SeededConnectorConnection |  (optional)
 
-```
-
+      try:
+          # api_instance.connect() [POST]
+          api_response = api_instance.connect(seeded_connector_connection=seeded_connector_connection)
+          print("The response of ConnectorApi->connect:\n")
+          print(api_response)
+      except Exception as e:
+          print("Exception when calling ConnectorApi->connect: %s\n" % e)
+  ```
 </details>
-
-A developer documentation that outlines all the ins and outs of our available endpoints can be found [here](https://github.com/pieces-app/pieces-os-client-sdk-for-python/tree/main/docs).

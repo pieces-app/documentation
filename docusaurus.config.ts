@@ -123,11 +123,21 @@ const config: Config = {
               sidebarId: 'sdksOverviewSidebar',
               label: 'Overview',
             },
+            // {
+            //   type: 'docSidebar',
+            //   sidebarId: 'typescriptSDKSidebar',
+            //   label: 'TypeScript SDK',
+            // },
             {
               type: 'docSidebar',
               sidebarId: 'pythonSDKSidebar',
               label: 'Python SDK',
             },
+            // {
+            //   type: 'docSidebar',
+            //   sidebarId: 'dartSDKSidebar',
+            //   label: 'Dart SDK',
+            // },
             {
               type: 'docSidebar',
               sidebarId: 'kotlinSDKSidebar',

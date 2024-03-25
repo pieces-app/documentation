@@ -252,6 +252,8 @@ const sidebars: SidebarsConfig = {
     },
   ],
 
+  typescriptSDKSidebar: [],
+
   pythonSDKSidebar: [
     {
       type: 'doc',
@@ -347,7 +349,14 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
+  dartSDKSidebar: [],
+
   kotlinSDKSidebar: [
+    {
+      type: 'doc',
+      id: 'sdks/kotlin/guides/getting-started',
+      label: 'Getting Started',
+    },
     {
       type: 'category',
       label: 'APIs',
