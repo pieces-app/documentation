@@ -33,6 +33,6 @@ tlp_code_fragment_suggested_save_dict = tlp_code_fragment_suggested_save_instanc
 # create an instance of TLPCodeFragmentSuggestedSave from a dict
 tlp_code_fragment_suggested_save_form_dict = tlp_code_fragment_suggested_save.from_dict(tlp_code_fragment_suggested_save_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

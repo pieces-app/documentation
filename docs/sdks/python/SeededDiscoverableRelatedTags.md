@@ -26,6 +26,6 @@ seeded_discoverable_related_tags_dict = seeded_discoverable_related_tags_instanc
 # create an instance of SeededDiscoverableRelatedTags from a dict
 seeded_discoverable_related_tags_form_dict = seeded_discoverable_related_tags.from_dict(seeded_discoverable_related_tags_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -28,6 +28,6 @@ qgpt_conversation_pipeline_dict = qgpt_conversation_pipeline_instance.to_dict()
 # create an instance of QGPTConversationPipeline from a dict
 qgpt_conversation_pipeline_form_dict = qgpt_conversation_pipeline.from_dict(qgpt_conversation_pipeline_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -26,6 +26,6 @@ open_ai_models_list_output_dict = open_ai_models_list_output_instance.to_dict()
 # create an instance of OpenAIModelsListOutput from a dict
 open_ai_models_list_output_form_dict = open_ai_models_list_output.from_dict(open_ai_models_list_output_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

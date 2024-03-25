@@ -24,6 +24,6 @@ graphical_ocr_descriptive_statistics_confidence_dict = graphical_ocr_descriptive
 # create an instance of GraphicalOCRDescriptiveStatisticsConfidence from a dict
 graphical_ocr_descriptive_statistics_confidence_form_dict = graphical_ocr_descriptive_statistics_confidence.from_dict(graphical_ocr_descriptive_statistics_confidence_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

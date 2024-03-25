@@ -27,6 +27,6 @@ tracked_asset_event_rename_metadata_dict = tracked_asset_event_rename_metadata_i
 # create an instance of TrackedAssetEventRenameMetadata from a dict
 tracked_asset_event_rename_metadata_form_dict = tracked_asset_event_rename_metadata.from_dict(tracked_asset_event_rename_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

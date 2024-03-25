@@ -27,6 +27,6 @@ grouped_timestamp_dict = grouped_timestamp_instance.to_dict()
 # create an instance of GroupedTimestamp from a dict
 grouped_timestamp_form_dict = grouped_timestamp.from_dict(grouped_timestamp_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

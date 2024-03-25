@@ -26,6 +26,6 @@ qgpt_task_pipeline_for_code_modification_dict = qgpt_task_pipeline_for_code_modi
 # create an instance of QGPTTaskPipelineForCodeModification from a dict
 qgpt_task_pipeline_for_code_modification_form_dict = qgpt_task_pipeline_for_code_modification.from_dict(qgpt_task_pipeline_for_code_modification_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

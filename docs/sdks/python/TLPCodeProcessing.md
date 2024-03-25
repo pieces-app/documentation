@@ -28,6 +28,6 @@ tlp_code_processing_dict = tlp_code_processing_instance.to_dict()
 # create an instance of TLPCodeProcessing from a dict
 tlp_code_processing_form_dict = tlp_code_processing.from_dict(tlp_code_processing_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

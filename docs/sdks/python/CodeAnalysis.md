@@ -1,6 +1,6 @@
 # CodeAnalysis
 
-This is the ML Analysis object Specific to code.  prediction and similarity are custom ** please dont not modify **
+This is the ML Analysis object Specific to code.  prediction and similarity are custom types \{[string]: number\}. ** please dont not modify **
 
 ## Properties
 
@@ -35,6 +35,6 @@ code_analysis_dict = code_analysis_instance.to_dict()
 # create an instance of CodeAnalysis from a dict
 code_analysis_form_dict = code_analysis.from_dict(code_analysis_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

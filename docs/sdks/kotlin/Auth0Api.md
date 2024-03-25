@@ -1,4 +1,4 @@
-# Auth0Api
+# Auth0 API
 
 All URIs are relative to *http://localhost:1000*
 

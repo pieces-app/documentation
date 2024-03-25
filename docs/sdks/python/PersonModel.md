@@ -28,6 +28,6 @@ person_model_dict = person_model_instance.to_dict()
 # create an instance of PersonModel from a dict
 person_model_form_dict = person_model.from_dict(person_model_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

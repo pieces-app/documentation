@@ -28,6 +28,6 @@ flattened_websites_dict = flattened_websites_instance.to_dict()
 # create an instance of FlattenedWebsites from a dict
 flattened_websites_form_dict = flattened_websites.from_dict(flattened_websites_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

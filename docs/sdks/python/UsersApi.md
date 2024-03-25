@@ -1,4 +1,4 @@
-UsersApi
+# Users API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -77,6 +77,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
+[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
 
 ### HTTP request headers
 
@@ -89,7 +90,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **users_disconnect_user**
 > Users users_disconnect_user(user)
@@ -157,7 +158,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **users_snapshot**
 > Users users_snapshot()
@@ -221,7 +222,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **users_specific_user_snapshot**
 > UserProfile users_specific_user_snapshot(user)
@@ -289,5 +290,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

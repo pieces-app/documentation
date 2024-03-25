@@ -1,4 +1,4 @@
-AnchorApi
+# Anchor API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -79,7 +79,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **anchor_scores_increment**
 > anchor_scores_increment(anchor, seeded_score_increment=seeded_score_increment)
@@ -148,7 +148,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **anchor_specific_anchor_snapshot**
 > Anchor anchor_specific_anchor_snapshot(anchor, transferables=transferables)
@@ -219,7 +219,7 @@ No authorization required
 **200** | OK |  -  |
 **410** | Anchor not found. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **anchor_update**
 > Anchor anchor_update(transferables=transferables, anchor=anchor)
@@ -290,5 +290,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

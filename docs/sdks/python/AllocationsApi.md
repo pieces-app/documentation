@@ -1,4 +1,4 @@
-AllocationsApi
+# Allocations API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -81,7 +81,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **allocations_create_new_allocation**
 > AllocationCloud allocations_create_new_allocation(allocation_cloud=allocation_cloud)
@@ -150,7 +150,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **allocations_delete_allocation**
 > str allocations_delete_allocation(allocation_cloud=allocation_cloud)
@@ -219,7 +219,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **allocations_disconnect_cloud**
 > str allocations_disconnect_cloud(allocation_cloud=allocation_cloud)
@@ -288,7 +288,7 @@ No authorization required
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **allocations_reconnect_cloud**
 > AllocationCloud allocations_reconnect_cloud(allocation_cloud=allocation_cloud)
@@ -358,7 +358,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **allocations_snapshot**
 > Allocations allocations_snapshot()
@@ -423,5 +423,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

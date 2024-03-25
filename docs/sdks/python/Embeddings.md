@@ -24,6 +24,6 @@ embeddings_dict = embeddings_instance.to_dict()
 # create an instance of Embeddings from a dict
 embeddings_form_dict = embeddings.from_dict(embeddings_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

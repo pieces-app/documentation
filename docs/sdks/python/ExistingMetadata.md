@@ -27,6 +27,6 @@ existing_metadata_dict = existing_metadata_instance.to_dict()
 # create an instance of ExistingMetadata from a dict
 existing_metadata_form_dict = existing_metadata.from_dict(existing_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

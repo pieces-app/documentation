@@ -1,4 +1,4 @@
-ConversationMessagesApi
+# ConversationMessages API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -79,7 +79,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **messages_delete_specific_message**
 > messages_delete_specific_message(message)
@@ -145,7 +145,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **messages_snapshot**
 > ConversationMessages messages_snapshot(transferables=transferables)
@@ -214,5 +214,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

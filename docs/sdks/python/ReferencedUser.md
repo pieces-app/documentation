@@ -27,6 +27,6 @@ referenced_user_dict = referenced_user_instance.to_dict()
 # create an instance of ReferencedUser from a dict
 referenced_user_form_dict = referenced_user.from_dict(referenced_user_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

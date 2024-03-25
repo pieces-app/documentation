@@ -1,4 +1,4 @@
-SharesApi
+# Shares API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -79,7 +79,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **shares_delete_share**
 > str shares_delete_share(share)
@@ -146,7 +146,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **shares_snapshot**
 > Shares shares_snapshot(transferables=transferables)
@@ -214,7 +214,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **shares_specific_share_snapshot**
 > Share shares_specific_share_snapshot(share, transferables=transferables)
@@ -284,5 +284,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | A specific share per the provided share id. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

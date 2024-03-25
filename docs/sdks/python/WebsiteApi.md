@@ -1,4 +1,4 @@
-WebsiteApi
+# Website API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -81,7 +81,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_associate_conversation**
 > website_associate_conversation(website, conversation)
@@ -149,7 +149,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_associate_person**
 > website_associate_person(website, person)
@@ -217,7 +217,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_disassociate_asset**
 > website_disassociate_asset(website, asset)
@@ -285,7 +285,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_disassociate_conversation**
 > website_disassociate_conversation(website, conversation)
@@ -353,7 +353,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_disassociate_person**
 > website_disassociate_person(website, person)
@@ -421,7 +421,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_scores_increment**
 > website_scores_increment(website, seeded_score_increment=seeded_score_increment)
@@ -490,7 +490,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **website_update**
 > Website website_update(transferables=transferables, website=website)
@@ -561,7 +561,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **websites_specific_website_snapshot**
 > Website websites_specific_website_snapshot(website, transferables=transferables)
@@ -632,5 +632,5 @@ No authorization required
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

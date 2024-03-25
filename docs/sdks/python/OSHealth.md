@@ -27,6 +27,6 @@ os_health_dict = os_health_instance.to_dict()
 # create an instance of OSHealth from a dict
 os_health_form_dict = os_health.from_dict(os_health_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

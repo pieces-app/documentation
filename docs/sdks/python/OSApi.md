@@ -1,4 +1,4 @@
-OSApi
+# OS API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -83,7 +83,7 @@ No authorization required
 **401** | Unauthorized, this means your user is not authenticated |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **os_device_information**
 > OSDeviceInformationReturnable os_device_information()
@@ -148,7 +148,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **os_restart**
 > os_restart()
@@ -210,7 +210,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **os_update_check**
 > CheckedOSUpdate os_update_check(unchecked_os_update=unchecked_os_update)
@@ -280,7 +280,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **pick_files**
 > List[str] pick_files(file_picker_input=file_picker_input)
@@ -349,7 +349,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **pick_folders**
 > List[str] pick_folders()
@@ -413,7 +413,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **sign_into_os**
 > UserProfile sign_into_os()
@@ -477,7 +477,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **sign_out_of_os**
 > Users sign_out_of_os()
@@ -541,5 +541,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

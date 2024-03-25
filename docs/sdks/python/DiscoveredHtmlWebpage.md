@@ -27,6 +27,6 @@ discovered_html_webpage_dict = discovered_html_webpage_instance.to_dict()
 # create an instance of DiscoveredHtmlWebpage from a dict
 discovered_html_webpage_form_dict = discovered_html_webpage.from_dict(discovered_html_webpage_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -1,4 +1,4 @@
-PKCEApi
+# PKCE API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -70,7 +70,7 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **generate_code**
 > PKCE generate_code(seeded_pkce=seeded_pkce)
@@ -139,7 +139,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **generate_token**
 > PKCE generate_token(tokenized_pkce=tokenized_pkce)
@@ -208,7 +208,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **get_challenge**
 > PKCE get_challenge()
@@ -272,7 +272,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **respond_with_code**
 > PKCE respond_with_code(code, state, var_schema=var_schema)
@@ -345,5 +345,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

@@ -26,6 +26,6 @@ font_dict = font_instance.to_dict()
 # create an instance of Font from a dict
 font_form_dict = font.from_dict(font_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

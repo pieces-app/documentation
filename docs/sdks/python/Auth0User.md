@@ -43,6 +43,6 @@ auth0_user_dict = auth0_user_instance.to_dict()
 # create an instance of Auth0User from a dict
 auth0_user_form_dict = auth0_user.from_dict(auth0_user_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

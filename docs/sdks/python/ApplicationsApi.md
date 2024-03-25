@@ -1,4 +1,4 @@
-ApplicationsApi
+# Applications API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -81,7 +81,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_external_snapshot**
 > DetectedExternalApplications applications_external_snapshot()
@@ -146,7 +146,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_register**
 > Application applications_register(application=application)
@@ -214,7 +214,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_session_close**
 > Session applications_session_close(body=body)
@@ -282,7 +282,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_session_open**
 > Session applications_session_open()
@@ -346,7 +346,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_session_snapshot**
 > Session applications_session_snapshot(session)
@@ -414,7 +414,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_snapshot**
 > Applications applications_snapshot()
@@ -478,7 +478,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_specific_application_snapshot**
 > Application applications_specific_application_snapshot(application)
@@ -546,7 +546,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_usage_engagement_interaction**
 > TrackedInteractionEvent applications_usage_engagement_interaction(seeded_tracked_interaction_event=seeded_tracked_interaction_event)
@@ -615,7 +615,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_usage_engagement_keyboard**
 > TrackedKeyboardEvent applications_usage_engagement_keyboard(seeded_tracked_keyboard_event=seeded_tracked_keyboard_event)
@@ -684,7 +684,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **applications_usage_installation**
 > applications_usage_installation(tracked_application_install=tracked_application_install)
@@ -750,7 +750,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **post_applications_usage_updated**
 > post_applications_usage_updated(tracked_application_update=tracked_application_update)
@@ -816,5 +816,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

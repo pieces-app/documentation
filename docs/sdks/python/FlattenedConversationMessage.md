@@ -36,6 +36,6 @@ flattened_conversation_message_dict = flattened_conversation_message_instance.to
 # create an instance of FlattenedConversationMessage from a dict
 flattened_conversation_message_form_dict = flattened_conversation_message.from_dict(flattened_conversation_message_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -1,4 +1,4 @@
-ConversationsApi
+# Conversations API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -79,7 +79,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **conversations_create_specific_conversation**
 > Conversation conversations_create_specific_conversation(transferables=transferables, seeded_conversation=seeded_conversation)
@@ -151,7 +151,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **conversations_delete_specific_conversation**
 > conversations_delete_specific_conversation(conversation)
@@ -217,7 +217,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **conversations_identifiers_snapshot**
 > FlattenedConversations conversations_identifiers_snapshot()
@@ -282,7 +282,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **conversations_snapshot**
 > Conversations conversations_snapshot(transferables=transferables)
@@ -351,7 +351,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **conversations_stream_identifiers**
 > conversations_stream_identifiers()
@@ -407,5 +407,5 @@ No authorization required
  - **Accept**: Not defined
 
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

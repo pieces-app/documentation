@@ -27,6 +27,6 @@ discovered_sensitive_dict = discovered_sensitive_instance.to_dict()
 # create an instance of DiscoveredSensitive from a dict
 discovered_sensitive_form_dict = discovered_sensitive.from_dict(discovered_sensitive_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -26,6 +26,6 @@ qgpt_task_pipeline_for_code_fix_dict = qgpt_task_pipeline_for_code_fix_instance.
 # create an instance of QGPTTaskPipelineForCodeFix from a dict
 qgpt_task_pipeline_for_code_fix_form_dict = qgpt_task_pipeline_for_code_fix.from_dict(qgpt_task_pipeline_for_code_fix_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

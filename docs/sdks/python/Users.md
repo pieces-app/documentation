@@ -26,6 +26,6 @@ users_dict = users_instance.to_dict()
 # create an instance of Users from a dict
 users_form_dict = users.from_dict(users_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

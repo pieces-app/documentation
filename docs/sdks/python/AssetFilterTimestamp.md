@@ -28,6 +28,6 @@ asset_filter_timestamp_dict = asset_filter_timestamp_instance.to_dict()
 # create an instance of AssetFilterTimestamp from a dict
 asset_filter_timestamp_form_dict = asset_filter_timestamp.from_dict(asset_filter_timestamp_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

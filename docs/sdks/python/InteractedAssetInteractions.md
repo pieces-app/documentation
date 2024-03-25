@@ -26,6 +26,6 @@ interacted_asset_interactions_dict = interacted_asset_interactions_instance.to_d
 # create an instance of InteractedAssetInteractions from a dict
 interacted_asset_interactions_form_dict = interacted_asset_interactions.from_dict(interacted_asset_interactions_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

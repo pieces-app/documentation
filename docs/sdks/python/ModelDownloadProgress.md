@@ -27,6 +27,6 @@ model_download_progress_dict = model_download_progress_instance.to_dict()
 # create an instance of ModelDownloadProgress from a dict
 model_download_progress_form_dict = model_download_progress.from_dict(model_download_progress_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

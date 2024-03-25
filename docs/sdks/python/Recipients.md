@@ -26,6 +26,6 @@ recipients_dict = recipients_instance.to_dict()
 # create an instance of Recipients from a dict
 recipients_form_dict = recipients.from_dict(recipients_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -34,6 +34,6 @@ seeded_asset_metadata_dict = seeded_asset_metadata_instance.to_dict()
 # create an instance of SeededAssetMetadata from a dict
 seeded_asset_metadata_form_dict = seeded_asset_metadata.from_dict(seeded_asset_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

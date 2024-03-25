@@ -53,6 +53,6 @@ asset_dict = asset_instance.to_dict()
 # create an instance of Asset from a dict
 asset_form_dict = asset.from_dict(asset_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

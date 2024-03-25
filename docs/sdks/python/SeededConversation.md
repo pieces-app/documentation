@@ -37,6 +37,6 @@ seeded_conversation_dict = seeded_conversation_instance.to_dict()
 # create an instance of SeededConversation from a dict
 seeded_conversation_form_dict = seeded_conversation.from_dict(seeded_conversation_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

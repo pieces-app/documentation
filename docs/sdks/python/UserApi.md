@@ -1,4 +1,4 @@
-UserApi
+# User API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -72,7 +72,7 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **select_user**
 > UserProfile select_user(auth0_user=auth0_user)
@@ -141,6 +141,8 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
+[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
+
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -152,7 +154,7 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **stream_user**
 > UserProfile stream_user()
@@ -216,7 +218,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **update_user**
 > UserProfile update_user(user_profile=user_profile)
@@ -284,7 +286,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **user_providers**
 > ReturnedUserProfile user_providers()
@@ -350,7 +352,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **501** | Not Implemented |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **user_snapshot**
 > ReturnedUserProfile user_snapshot()
@@ -414,7 +416,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **user_update_vanity**
 > UserProfile user_update_vanity(user_profile=user_profile)
@@ -486,5 +488,5 @@ No authorization required
 **500** | Unable to create a username. Internal Server Error. |  -  |
 **511** | Network Authentication Required, Cannot Update the Vanityname of the user because the user is either not signed in or in not connected to the cloud. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

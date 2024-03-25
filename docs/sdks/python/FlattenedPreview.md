@@ -27,6 +27,6 @@ flattened_preview_dict = flattened_preview_instance.to_dict()
 # create an instance of FlattenedPreview from a dict
 flattened_preview_form_dict = flattened_preview.from_dict(flattened_preview_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

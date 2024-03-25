@@ -26,6 +26,6 @@ seeded_user_dict = seeded_user_instance.to_dict()
 # create an instance of SeededUser from a dict
 seeded_user_form_dict = seeded_user.from_dict(seeded_user_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

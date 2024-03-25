@@ -25,6 +25,6 @@ discovered_related_tag_dict = discovered_related_tag_instance.to_dict()
 # create an instance of DiscoveredRelatedTag from a dict
 discovered_related_tag_form_dict = discovered_related_tag.from_dict(discovered_related_tag_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

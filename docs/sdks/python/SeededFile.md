@@ -28,6 +28,6 @@ seeded_file_dict = seeded_file_instance.to_dict()
 # create an instance of SeededFile from a dict
 seeded_file_form_dict = seeded_file.from_dict(seeded_file_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

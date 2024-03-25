@@ -43,6 +43,6 @@ flattened_format_dict = flattened_format_instance.to_dict()
 # create an instance of FlattenedFormat from a dict
 flattened_format_form_dict = flattened_format.from_dict(flattened_format_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

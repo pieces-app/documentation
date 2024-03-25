@@ -26,6 +26,6 @@ seeded_connector_connection_dict = seeded_connector_connection_instance.to_dict(
 # create an instance of SeededConnectorConnection from a dict
 seeded_connector_connection_form_dict = seeded_connector_connection.from_dict(seeded_connector_connection_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

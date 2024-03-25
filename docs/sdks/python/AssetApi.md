@@ -1,4 +1,4 @@
-AssetApi
+# Asset API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -85,7 +85,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_associate_website**
 > asset_associate_website(asset, website)
@@ -153,7 +153,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_disassociate_tag**
 > asset_disassociate_tag(tag, asset)
@@ -221,7 +221,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_disassociate_website**
 > asset_disassociate_website(website, asset)
@@ -289,7 +289,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_formats**
 > Formats asset_formats(asset, transferables=transferables)
@@ -359,7 +359,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_reclassify**
 > Asset asset_reclassify(transferables=transferables, asset_reclassification=asset_reclassification)
@@ -430,7 +430,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_scores_increment**
 > asset_scores_increment(asset, seeded_score_increment=seeded_score_increment)
@@ -499,7 +499,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_snapshot**
 > Asset asset_snapshot(asset, transferables=transferables)
@@ -570,7 +570,7 @@ No authorization required
 **200** | OK |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_snapshot_post**
 > Asset asset_snapshot_post(asset, transferables=transferables, seeded_accessor=seeded_accessor)
@@ -643,7 +643,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_specific_asset_activities**
 > Activities asset_specific_asset_activities(asset, transferables=transferables)
@@ -714,7 +714,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_specific_asset_conversations**
 > Conversations asset_specific_asset_conversations(asset, transferables=transferables)
@@ -785,7 +785,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_specific_asset_export**
 > ExportedAsset asset_specific_asset_export(asset, export_type)
@@ -856,7 +856,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **asset_update**
 > Asset asset_update(transferables=transferables, asset=asset)
@@ -926,5 +926,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

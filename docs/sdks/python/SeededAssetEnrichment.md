@@ -29,6 +29,6 @@ seeded_asset_enrichment_dict = seeded_asset_enrichment_instance.to_dict()
 # create an instance of SeededAssetEnrichment from a dict
 seeded_asset_enrichment_form_dict = seeded_asset_enrichment.from_dict(seeded_asset_enrichment_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

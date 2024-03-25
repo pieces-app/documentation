@@ -30,6 +30,6 @@ seeded_discoverable_related_tag_dict = seeded_discoverable_related_tag_instance.
 # create an instance of SeededDiscoverableRelatedTag from a dict
 seeded_discoverable_related_tag_form_dict = seeded_discoverable_related_tag.from_dict(seeded_discoverable_related_tag_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

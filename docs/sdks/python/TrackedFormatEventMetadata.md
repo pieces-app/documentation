@@ -24,6 +24,6 @@ tracked_format_event_metadata_dict = tracked_format_event_metadata_instance.to_d
 # create an instance of TrackedFormatEventMetadata from a dict
 tracked_format_event_metadata_form_dict = tracked_format_event_metadata.from_dict(tracked_format_event_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

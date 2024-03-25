@@ -37,6 +37,6 @@ tracked_session_event_identifier_description_pairs_dict = tracked_session_event_
 # create an instance of TrackedSessionEventIdentifierDescriptionPairs from a dict
 tracked_session_event_identifier_description_pairs_form_dict = tracked_session_event_identifier_description_pairs.from_dict(tracked_session_event_identifier_description_pairs_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

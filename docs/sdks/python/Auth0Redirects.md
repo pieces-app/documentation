@@ -26,6 +26,6 @@ auth0_redirects_dict = auth0_redirects_instance.to_dict()
 # create an instance of Auth0Redirects from a dict
 auth0_redirects_form_dict = auth0_redirects.from_dict(auth0_redirects_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -27,6 +27,6 @@ referenced_distribution_dict = referenced_distribution_instance.to_dict()
 # create an instance of ReferencedDistribution from a dict
 referenced_distribution_form_dict = referenced_distribution.from_dict(referenced_distribution_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

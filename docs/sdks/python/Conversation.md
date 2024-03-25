@@ -43,6 +43,6 @@ conversation_dict = conversation_instance.to_dict()
 # create an instance of Conversation from a dict
 conversation_form_dict = conversation.from_dict(conversation_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

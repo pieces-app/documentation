@@ -27,6 +27,6 @@ suggestion_target_dict = suggestion_target_instance.to_dict()
 # create an instance of SuggestionTarget from a dict
 suggestion_target_form_dict = suggestion_target.from_dict(suggestion_target_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

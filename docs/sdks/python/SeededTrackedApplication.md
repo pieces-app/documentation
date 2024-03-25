@@ -31,6 +31,6 @@ seeded_tracked_application_dict = seeded_tracked_application_instance.to_dict()
 # create an instance of SeededTrackedApplication from a dict
 seeded_tracked_application_form_dict = seeded_tracked_application.from_dict(seeded_tracked_application_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

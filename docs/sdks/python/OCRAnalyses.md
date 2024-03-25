@@ -25,6 +25,6 @@ ocr_analyses_dict = ocr_analyses_instance.to_dict()
 # create an instance of OCRAnalyses from a dict
 ocr_analyses_form_dict = ocr_analyses.from_dict(ocr_analyses_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

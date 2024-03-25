@@ -27,6 +27,6 @@ discovered_assets_dict = discovered_assets_instance.to_dict()
 # create an instance of DiscoveredAssets from a dict
 discovered_assets_form_dict = discovered_assets.from_dict(discovered_assets_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

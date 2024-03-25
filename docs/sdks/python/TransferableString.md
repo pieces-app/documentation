@@ -29,6 +29,6 @@ transferable_string_dict = transferable_string_instance.to_dict()
 # create an instance of TransferableString from a dict
 transferable_string_form_dict = transferable_string.from_dict(transferable_string_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -25,6 +25,6 @@ qgpt_conversation_pipeline_for_contextualized_code_generation_dict = qgpt_conver
 # create an instance of QGPTConversationPipelineForContextualizedCodeGeneration from a dict
 qgpt_conversation_pipeline_for_contextualized_code_generation_form_dict = qgpt_conversation_pipeline_for_contextualized_code_generation.from_dict(qgpt_conversation_pipeline_for_contextualized_code_generation_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -28,6 +28,6 @@ model_max_tokens_dict = model_max_tokens_instance.to_dict()
 # create an instance of ModelMaxTokens from a dict
 model_max_tokens_form_dict = model_max_tokens.from_dict(model_max_tokens_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

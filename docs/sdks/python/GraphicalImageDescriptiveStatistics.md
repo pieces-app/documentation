@@ -32,6 +32,6 @@ graphical_image_descriptive_statistics_dict = graphical_image_descriptive_statis
 # create an instance of GraphicalImageDescriptiveStatistics from a dict
 graphical_image_descriptive_statistics_form_dict = graphical_image_descriptive_statistics.from_dict(graphical_image_descriptive_statistics_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -24,6 +24,6 @@ edges_dict = edges_instance.to_dict()
 # create an instance of Edges from a dict
 edges_form_dict = edges.from_dict(edges_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

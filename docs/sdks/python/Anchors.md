@@ -28,6 +28,6 @@ anchors_dict = anchors_instance.to_dict()
 # create an instance of Anchors from a dict
 anchors_form_dict = anchors.from_dict(anchors_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

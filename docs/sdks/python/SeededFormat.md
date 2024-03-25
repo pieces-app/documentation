@@ -28,6 +28,6 @@ seeded_format_dict = seeded_format_instance.to_dict()
 # create an instance of SeededFormat from a dict
 seeded_format_form_dict = seeded_format.from_dict(seeded_format_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

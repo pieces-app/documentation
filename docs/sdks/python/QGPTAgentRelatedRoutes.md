@@ -26,6 +26,6 @@ qgpt_agent_related_routes_dict = qgpt_agent_related_routes_instance.to_dict()
 # create an instance of QGPTAgentRelatedRoutes from a dict
 qgpt_agent_related_routes_form_dict = qgpt_agent_related_routes.from_dict(qgpt_agent_related_routes_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

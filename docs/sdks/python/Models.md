@@ -26,6 +26,6 @@ models_dict = models_instance.to_dict()
 # create an instance of Models from a dict
 models_form_dict = models.from_dict(models_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

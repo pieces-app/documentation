@@ -1,4 +1,4 @@
-ConnectorApi
+# Connector API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -80,7 +80,7 @@ No authorization required
 **200** | OK |  -  |
 **400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **intention**
 > str intention(application, seeded_connector_asset=seeded_connector_asset)
@@ -153,7 +153,7 @@ No authorization required
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 **500** | Internal Server Error:  |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **onboarded**
 > str onboarded(application, body=body)
@@ -224,7 +224,7 @@ No authorization required
 **400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **react**
 > str react(application, reaction=reaction)
@@ -296,7 +296,7 @@ No authorization required
 **400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **suggest**
 > Suggestion suggest(application, seeded_connector_creation=seeded_connector_creation)
@@ -369,7 +369,7 @@ No authorization required
 **400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **track**
 > str track(application, seeded_connector_tracking=seeded_connector_tracking)
@@ -441,5 +441,5 @@ No authorization required
 **400** | Bad Request, Application Failed to connect, Please ensure this is a valid integration. This happens in the case a developer provides and incorrect \{application\} (applicationId) within the route that doest match a preregisterd integration. |  -  |
 **401** | Unauthorized, you will get this in the case that you are trying to ping Pieces_OS but havnt connected yet.\&quot;/connect was not called for your application.\&quot; |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

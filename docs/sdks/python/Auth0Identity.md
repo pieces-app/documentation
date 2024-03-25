@@ -30,6 +30,6 @@ auth0_identity_dict = auth0_identity_instance.to_dict()
 # create an instance of Auth0Identity from a dict
 auth0_identity_form_dict = auth0_identity.from_dict(auth0_identity_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -1,6 +1,6 @@
 # FlattenedAsset
 
-An Asset Model representing data extracted from an Application connecting a group of data containing one or more Formats. [DAG Compatible - Directed Acyclic Graph Data Structure]  FlattenedAsset prevent Cycles in Reference because all outbound references are strings as opposed to crosspollinated objects.  i.e. FlattenedFormat.formats is Type String[] , FlattenedFormat.preview is Type String, and FlattenedFormat.original is Type String
+An Asset Model representing data extracted from an Application connecting a group of data containing one or more Formats. [DAG Compatible - Directed Acyclic Graph Data Structure]  FlattenedAsset prevent Cycles in Reference because all outbound references are strings as opposed to crosspollinated objects.  FlattenedFormat.preview is Type String and FlattenedFormat.original is Type String
 
 ## Properties
 
@@ -53,6 +53,6 @@ flattened_asset_dict = flattened_asset_instance.to_dict()
 # create an instance of FlattenedAsset from a dict
 flattened_asset_form_dict = flattened_asset.from_dict(flattened_asset_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

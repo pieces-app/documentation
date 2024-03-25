@@ -26,6 +26,6 @@ checked_os_update_dict = checked_os_update_instance.to_dict()
 # create an instance of CheckedOSUpdate from a dict
 checked_os_update_form_dict = checked_os_update.from_dict(checked_os_update_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

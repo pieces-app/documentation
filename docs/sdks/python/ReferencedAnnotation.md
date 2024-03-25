@@ -27,6 +27,6 @@ referenced_annotation_dict = referenced_annotation_instance.to_dict()
 # create an instance of ReferencedAnnotation from a dict
 referenced_annotation_form_dict = referenced_annotation.from_dict(referenced_annotation_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

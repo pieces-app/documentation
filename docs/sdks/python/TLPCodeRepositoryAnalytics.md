@@ -25,6 +25,6 @@ tlp_code_repository_analytics_dict = tlp_code_repository_analytics_instance.to_d
 # create an instance of TLPCodeRepositoryAnalytics from a dict
 tlp_code_repository_analytics_form_dict = tlp_code_repository_analytics.from_dict(tlp_code_repository_analytics_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

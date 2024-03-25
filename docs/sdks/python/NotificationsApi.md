@@ -1,4 +1,4 @@
-NotificationsApi
+# Notifications API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -71,5 +71,5 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

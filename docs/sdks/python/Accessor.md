@@ -30,6 +30,6 @@ accessor_dict = accessor_instance.to_dict()
 # create an instance of Accessor from a dict
 accessor_form_dict = accessor.from_dict(accessor_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -26,6 +26,6 @@ o_auth_group_dict = o_auth_group_instance.to_dict()
 # create an instance of OAuthGroup from a dict
 o_auth_group_form_dict = o_auth_group.from_dict(o_auth_group_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

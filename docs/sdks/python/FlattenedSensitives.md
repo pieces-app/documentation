@@ -27,6 +27,6 @@ flattened_sensitives_dict = flattened_sensitives_instance.to_dict()
 # create an instance of FlattenedSensitives from a dict
 flattened_sensitives_form_dict = flattened_sensitives.from_dict(flattened_sensitives_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -27,6 +27,6 @@ referenced_hint_dict = referenced_hint_instance.to_dict()
 # create an instance of ReferencedHint from a dict
 referenced_hint_form_dict = referenced_hint.from_dict(referenced_hint_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

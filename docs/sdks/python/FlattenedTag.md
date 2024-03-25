@@ -37,6 +37,6 @@ flattened_tag_dict = flattened_tag_instance.to_dict()
 # create an instance of FlattenedTag from a dict
 flattened_tag_form_dict = flattened_tag.from_dict(flattened_tag_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

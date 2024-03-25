@@ -27,6 +27,6 @@ streamed_identifier_dict = streamed_identifier_instance.to_dict()
 # create an instance of StreamedIdentifier from a dict
 streamed_identifier_form_dict = streamed_identifier.from_dict(streamed_identifier_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

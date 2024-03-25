@@ -31,6 +31,6 @@ seeded_activity_dict = seeded_activity_instance.to_dict()
 # create an instance of SeededActivity from a dict
 seeded_activity_form_dict = seeded_activity.from_dict(seeded_activity_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

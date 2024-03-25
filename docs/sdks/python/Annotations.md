@@ -28,6 +28,6 @@ annotations_dict = annotations_instance.to_dict()
 # create an instance of Annotations from a dict
 annotations_form_dict = annotations.from_dict(annotations_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

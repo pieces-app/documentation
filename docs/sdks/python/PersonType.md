@@ -27,6 +27,6 @@ person_type_dict = person_type_instance.to_dict()
 # create an instance of PersonType from a dict
 person_type_form_dict = person_type.from_dict(person_type_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

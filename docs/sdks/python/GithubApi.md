@@ -1,4 +1,4 @@
-GithubApi
+# Github API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 /github/gists/import [POST]
 
-This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users' gists. implemented. v2. can get specific a public gist.
+This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users' gists. v2. can get specific a public gist.
 
 ### Example
 
@@ -79,5 +79,5 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **511** | Network Authentication Required, Not logged into Pieces os required the user to authenticate. or if the user is not connected to their cloud. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

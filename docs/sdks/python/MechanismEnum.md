@@ -7,6 +7,6 @@ This will let us know how an asset was uploaded.  MANUAL: this is an event such 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

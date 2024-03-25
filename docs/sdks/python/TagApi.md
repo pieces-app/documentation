@@ -1,4 +1,4 @@
-TagApi
+# Tag API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -79,7 +79,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tag_associate_person**
 > tag_associate_person(tag, person)
@@ -147,7 +147,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tag_disassociate_asset**
 > tag_disassociate_asset(tag, asset)
@@ -215,7 +215,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tag_disassociate_person**
 > tag_disassociate_person(tag, person)
@@ -283,7 +283,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tag_scores_increment**
 > tag_scores_increment(tag, seeded_score_increment=seeded_score_increment)
@@ -352,7 +352,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tag_update**
 > Tag tag_update(transferables=transferables, tag=tag)
@@ -423,7 +423,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
 ## **tags_specific_tag_snapshot**
 > Tag tags_specific_tag_snapshot(tag, transferables=transferables)
@@ -494,5 +494,5 @@ No authorization required
 **200** | OK |  -  |
 **410** | Tag was not found. |  -  |
 
-
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 

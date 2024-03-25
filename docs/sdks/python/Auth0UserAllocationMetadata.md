@@ -26,6 +26,6 @@ auth0_user_allocation_metadata_dict = auth0_user_allocation_metadata_instance.to
 # create an instance of Auth0UserAllocationMetadata from a dict
 auth0_user_allocation_metadata_form_dict = auth0_user_allocation_metadata.from_dict(auth0_user_allocation_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

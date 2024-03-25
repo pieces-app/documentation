@@ -29,6 +29,6 @@ seeded_score_dict = seeded_score_instance.to_dict()
 # create an instance of SeededScore from a dict
 seeded_score_form_dict = seeded_score.from_dict(seeded_score_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

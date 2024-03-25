@@ -31,6 +31,6 @@ pkce_dict = pkce_instance.to_dict()
 # create an instance of PKCE from a dict
 pkce_form_dict = pkce.from_dict(pkce_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

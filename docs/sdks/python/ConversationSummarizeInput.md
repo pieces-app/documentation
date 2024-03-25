@@ -26,6 +26,6 @@ conversation_summarize_input_dict = conversation_summarize_input_instance.to_dic
 # create an instance of ConversationSummarizeInput from a dict
 conversation_summarize_input_form_dict = conversation_summarize_input.from_dict(conversation_summarize_input_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

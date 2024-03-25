@@ -25,6 +25,6 @@ qgpt_conversation_pipeline_for_contextualized_code_dialog_dict = qgpt_conversati
 # create an instance of QGPTConversationPipelineForContextualizedCodeDialog from a dict
 qgpt_conversation_pipeline_for_contextualized_code_dialog_form_dict = qgpt_conversation_pipeline_for_contextualized_code_dialog.from_dict(qgpt_conversation_pipeline_for_contextualized_code_dialog_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

@@ -33,6 +33,6 @@ asset_filter_dict = asset_filter_instance.to_dict()
 # create an instance of AssetFilter from a dict
 asset_filter_form_dict = asset_filter.from_dict(asset_filter_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

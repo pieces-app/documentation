@@ -28,6 +28,6 @@ file_metadata_dict = file_metadata_instance.to_dict()
 # create an instance of FileMetadata from a dict
 file_metadata_form_dict = file_metadata.from_dict(file_metadata_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 

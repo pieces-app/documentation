@@ -35,6 +35,6 @@ tlp_code_snippet_tagify_code_dict = tlp_code_snippet_tagify_code_instance.to_dic
 # create an instance of TLPCodeSnippetTagifyCode from a dict
 tlp_code_snippet_tagify_code_form_dict = tlp_code_snippet_tagify_code.from_dict(tlp_code_snippet_tagify_code_dict)
 ```
-
+[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
 
 
