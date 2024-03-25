@@ -229,21 +229,58 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
-  sdkSidebar: [
+  sdksOverviewSidebar: [
+    // {
+    //   type: 'category',
+    //   label: 'Pieces OS SDKs',
+    //   items: [
+    //     {
+    //       type: 'doc',
+    //       id: 'sdks/index',
+    //       label: 'Overview',
+    //     },
+    //     {
+    //       type: 'link',
+    //       href: 'python/ActivitiesApi',
+    //       label: 'Python SDK',
+    //     },
+    //   ]
+    // }
+    {
+      type: 'doc',
+      id: 'sdks/index',
+      label: 'Overview',
+    },
     {
       type: 'category',
-      label: 'Pieces OS SDKs',
+      label: 'Python SDK',
       items: [
         {
           type: 'doc',
-          id: 'sdks/index',
-          label: 'Overview',
+          id: 'sdks/python/guides/quickstart',
+          label: 'Quickstart',
         },
         {
-          type: 'link',
-          href: 'python/ActivitiesApi',
-          label: 'Python SDK',
+          type: 'doc',
+          id: 'sdks/python/ActivitiesApi',
+          label: 'SDK Docs',
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Kotlin SDK',
+      items: [
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/guides/quickstart',
+          label: 'Quickstart',
         },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/ActivitiesApi',
+          label: 'SDK Docs',
+        }
       ]
     }
   ],
@@ -332,16 +369,102 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'sdks/python/SearchedAssets',
-          label: 'SearchResult',
+          label: 'Searched Assets',
+        },
+      ]
+    }
+  ],
+
+  kotlinSDKSidebar: [
+    {
+      type: 'category',
+      label: 'APIs',
+      items: [
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/ActivitiesApi',
+          label: 'Activities API',
+        },
+        {
+          type:'doc',
+          id: 'sdks/kotlin/ApplicationsApi',
+          label: 'Applications API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/WellKnown',
-          label: 'WellKnown',
+          id: 'sdks/kotlin/AssetsApi',
+          label: 'Assets API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/ConnectorApi',
+          label: 'Connector API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/ConversationsApi',
+          label: 'Conversations API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/ModelsApi',
+          label: 'Models API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/OSApi',
+          label: 'OS API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/SearchApi',
+          label: 'Search API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/WellKnownApi',
+          label: 'WellKnown API',
         }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Models',
+      items: [
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/Activity',
+          label: 'Activity',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/Application',
+          label: 'Application',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/Asset',
+          label: 'Asset',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/Conversation',
+          label: 'Conversation',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/Model',
+          label: 'Model',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/kotlin/SearchedAssets',
+          label: 'Searched Assets',
+        },
       ]
     }
   ]
+
 };
 
 export default sidebars;

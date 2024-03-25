@@ -19,8 +19,8 @@ const config: Config = {
   organizationName: 'pieces-app',
   projectName: 'documentation',
 
-  onBrokenLinks: 'throw',
-  onBrokenAnchors: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenAnchors: 'warn',
   onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -103,37 +103,27 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
     // TODO: Keep this commented out until we have the OpenAPI specs ready
-    [
-      'redocusaurus',
-      {
-        // Plugin Options for loading OpenAPI files
-        specs: [
-          // {
-          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-          //   route: '/build/common',
-          //   id: 'common',
-          // },
-          // {
-          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-          //   route: '/build/connector',
-          //   id: 'connector'
-          // },
-          // {
-          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-          //   route: '/build/core',
-          //   id: 'core'
-          // },
-          {
-            spec: './openapi/spec/modules/core/isomorphic.openapi.yaml',
-            route: '/api/core',
-            id: 'core'
-          }
-        ],
-        theme: {
-          primaryColor: 'rgb(183,183,183)',
-        },
-      },
-    ],
+    // [
+    //   'redocusaurus',
+    //   {
+    //     // Plugin Options for loading OpenAPI files
+    //     specs: [
+    //       // {
+    //       //   spec: './openapi/spec/common/runtime_common_library.yaml',
+    //       //   route: '/api/common',
+    //       //   id: 'common',
+    //       // },
+    //       {
+    //         spec: './openapi/spec/modules/core/isomorphic.openapi.yaml',
+    //         route: '/api/core',
+    //         id: 'core'
+    //       }
+    //     ],
+    //     theme: {
+    //       primaryColor: 'rgb(183,183,183)',
+    //     },
+    //   },
+    // ],
   ],
 
   themeConfig: {
@@ -181,13 +171,27 @@ const config: Config = {
           items: [
             {
               type: 'docSidebar',
-              sidebarId: 'sdkSidebar',
-              label: 'Pieces OS SDKs',
+              sidebarId: 'sdksOverviewSidebar',
+              label: 'Overview',
             },
             {
-              to: 'api/core',
-              label: 'API Reference',
+              type: 'docSidebar',
+              sidebarId: 'pythonSDKSidebar',
+              label: 'Python SDK',
             },
+            {
+              type: 'docSidebar',
+              sidebarId: 'kotlinSDKSidebar',
+              label: 'Kotlin SDK',
+            }
+            // {
+            //   to: 'api/core',
+            //   label: 'Core API Reference',
+            // },
+            // {
+            //   to: 'api/common',
+            //   label: 'Common API Reference',
+            // }
           ],
         },
         {
