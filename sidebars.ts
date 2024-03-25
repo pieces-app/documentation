@@ -240,7 +240,7 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'sdks/python/guides/getting-started',
+          id: 'sdks/python/guides/quickstart',
           label: 'Python SDK',
         },
         {
@@ -255,7 +255,7 @@ const sidebars: SidebarsConfig = {
   pythonSDKSidebar: [
     {
       type: 'doc',
-      id: 'sdks/python/guides/getting-started',
+      id: 'sdks/python/guides/quickstart',
       label: 'Getting Started',
     },
     {
