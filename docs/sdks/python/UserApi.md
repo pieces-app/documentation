@@ -5,6 +5,7 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**clear_user**](UserApi#clear_user) | **POST** /user/clear | /user/clear
+[**refresh_user**](UserApi#refresh_user) | **GET** /user/refresh | /user/refresh [GET]
 [**select_user**](UserApi#select_user) | **POST** /user/select | /user/select [POST]
 [**stream_user**](UserApi#stream_user) | **GET** /user/stream | /user/stream [GET]
 [**update_user**](UserApi#update_user) | **POST** /user/update | /user/update [POST]
@@ -71,6 +72,71 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
+## **refresh_user**
+> UserProfile refresh_user()
+
+/user/refresh [GET]
+
+This will refresh a user.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.models.user_profile import UserProfile
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.UserApi(api_client)
+
+    try:
+        # /user/refresh [GET]
+        api_response = api_instance.refresh_user()
+        print("The response of UserApi->refresh_user:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UserApi->refresh_user: %s\n" % e)
+```
+
+
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**UserProfile**](UserProfile)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
