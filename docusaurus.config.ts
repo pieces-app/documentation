@@ -32,23 +32,6 @@ const config: Config = {
   },
 
   plugins: [
-    // [
-    //   "docusaurus-plugin-openapi-docs",
-    //   {
-    //     id: "coreAPI",
-    //     docsPluginId: "classic", // e.g. "classic" or the plugin-content-docs id
-    //     config: {
-    //       coreAPI: {
-    //         // specPath: "/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml", // path or URL to the OpenAPI spec
-    //         specPath: "./openapi/spec/modules/core/isomorphic.openapi.yaml",
-    //         outputDir: "docs/api/core", // output directory for generated *.mdx and sidebar.js files
-    //         sidebarOptions: {
-    //           groupPathsBy: "tag", // generate a sidebar.js slice that groups operations by tag
-    //         },
-    //       }
-    //     }
-    //   },
-    // ],
   //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
   //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
   //   [
@@ -60,21 +43,7 @@ const config: Config = {
   //   ],
   //   TODO: Once the official plugin is released, we will remove this and use the official plugin
     "@gracefullight/docusaurus-plugin-vercel-analytics",
-
-    /*
-      The following logic ensures that lunr search is only used for local development and preview deployments
-      The first condition is necessary for when you run `start` for the site locally
-      The second condition is necessary for when you run `build` & `serve` the site locally
-      The third condition is necessary for when you deploy a preview deployment on Vercel
-    */
-    // ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
-    //   ? [
-    //     require.resolve('docusaurus-lunr-search')
-    //   ] : []
-    // )
   ],
-
-  // themes: ["docusaurus-theme-openapi-docs"],
 
   presets: [
     [
@@ -102,28 +71,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-    // TODO: Keep this commented out until we have the OpenAPI specs ready
-    // [
-    //   'redocusaurus',
-    //   {
-    //     // Plugin Options for loading OpenAPI files
-    //     specs: [
-    //       // {
-    //       //   spec: './openapi/spec/common/runtime_common_library.yaml',
-    //       //   route: '/api/common',
-    //       //   id: 'common',
-    //       // },
-    //       {
-    //         spec: './openapi/spec/modules/core/isomorphic.openapi.yaml',
-    //         route: '/api/core',
-    //         id: 'core'
-    //       }
-    //     ],
-    //     theme: {
-    //       primaryColor: 'rgb(183,183,183)',
-    //     },
-    //   },
-    // ],
   ],
 
   themeConfig: {
@@ -141,15 +88,11 @@ const config: Config = {
     },
 
     // The following logic ensures that Algolia search is only used for production deployments
-    // ...(process.env.VERCEL_ENV === 'production' ?
-    //   {
     algolia: {
       appId: 'KTOXFODR65',
       apiKey: 'ea4804560699e4b727715163b74bea83',
       indexName: 'pieces_docusaurus',
     },
-      // } : {}
-    // ),
 
     navbar: {
       logo: {
@@ -165,35 +108,33 @@ const config: Config = {
           position: 'right',
         },
         {
-          type: 'dropdown',
+          type: 'docSidebar',
+          sidebarId: 'sdksOverviewSidebar',
           label: 'Build',
           position: 'right',
-          items: [
-            {
-              type: 'docSidebar',
-              sidebarId: 'sdksOverviewSidebar',
-              label: 'Overview',
-            },
-            {
-              type: 'docSidebar',
-              sidebarId: 'pythonSDKSidebar',
-              label: 'Python SDK',
-            },
-            {
-              type: 'docSidebar',
-              sidebarId: 'kotlinSDKSidebar',
-              label: 'Kotlin SDK',
-            }
-            // {
-            //   to: 'api/core',
-            //   label: 'Core API Reference',
-            // },
-            // {
-            //   to: 'api/common',
-            //   label: 'Common API Reference',
-            // }
-          ],
         },
+        // {
+        //   type: 'dropdown',
+        //   label: 'Build',
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'sdksOverviewSidebar',
+        //       label: 'Overview',
+        //     },
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'pythonSDKSidebar',
+        //       label: 'Python SDK',
+        //     },
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'kotlinSDKSidebar',
+        //       label: 'Kotlin SDK',
+        //     }
+        //   ],
+        // },
         {
           to: '/community',
           label: 'Community',
