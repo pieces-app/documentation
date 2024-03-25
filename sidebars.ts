@@ -1,5 +1,4 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
-// import generatedSidebar from './docs/api/core/sidebar';
 
 const sidebars: SidebarsConfig = {
   docsSidebar: [
@@ -230,22 +229,6 @@ const sidebars: SidebarsConfig = {
   ],
 
   sdksOverviewSidebar: [
-    // {
-    //   type: 'category',
-    //   label: 'Pieces OS SDKs',
-    //   items: [
-    //     {
-    //       type: 'doc',
-    //       id: 'sdks/index',
-    //       label: 'Overview',
-    //     },
-    //     {
-    //       type: 'link',
-    //       href: 'python/ActivitiesApi',
-    //       label: 'Python SDK',
-    //     },
-    //   ]
-    // }
     {
       type: 'doc',
       id: 'sdks/index',
@@ -253,86 +236,75 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Python SDK',
+      label: 'SDKs',
       items: [
         {
           type: 'doc',
-          id: 'sdks/python/guides/quickstart',
-          label: 'Quickstart',
+          id: 'sdks/python/guides/getting-started',
+          label: 'Python SDK',
         },
         {
           type: 'doc',
-          id: 'sdks/python/ActivitiesApi',
-          label: 'SDK Docs',
-        }
+          id: 'sdks/kotlin/guides/getting-started',
+          label: 'Kotlin SDK',
+        },
       ]
     },
-    {
-      type: 'category',
-      label: 'Kotlin SDK',
-      items: [
-        {
-          type: 'doc',
-          id: 'sdks/kotlin/guides/quickstart',
-          label: 'Quickstart',
-        },
-        {
-          type: 'doc',
-          id: 'sdks/kotlin/ActivitiesApi',
-          label: 'SDK Docs',
-        }
-      ]
-    }
   ],
 
   pythonSDKSidebar: [
+    {
+      type: 'doc',
+      id: 'sdks/python/guides/getting-started',
+      label: 'Getting Started',
+    },
     {
       type: 'category',
       label: 'APIs',
       items: [
         {
           type: 'doc',
-          id: 'sdks/python/ActivitiesApi',
+          id: 'sdks/python/docs/ActivitiesApi',
           label: 'Activities API',
         },
         {
           type:'doc',
-          id: 'sdks/python/ApplicationsApi',
+          id: 'sdks/python/docs/ApplicationsApi',
           label: 'Applications API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/AssetsApi',
+          id: 'sdks/python/docs/AssetsApi',
           label: 'Assets API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/ConnectorApi',
+          id: 'sdks/python/docs/ConnectorApi',
           label: 'Connector API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/ConversationsApi',
+          id: 'sdks/python/docs/ConversationsApi',
           label: 'Conversations API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/ModelsApi',
+          id: 'sdks/python/docs/ModelsApi',
           label: 'Models API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/OSApi',
+          id: 'sdks/python/docs/OSApi',
           label: 'OS API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/SearchApi',
+          id: 'sdks/python/docs/SearchApi',
           label: 'Search API',
         },
         {
           type: 'doc',
-          id: 'sdks/python/WellKnownApi',
+          id: 'sdks/python/docs/WellKnownApi',
           label: 'WellKnown API',
         }
       ]
@@ -343,32 +315,32 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'sdks/python/Activity',
+          id: 'sdks/python/docs/Activity',
           label: 'Activity',
         },
         {
           type: 'doc',
-          id: 'sdks/python/Application',
+          id: 'sdks/python/docs/Application',
           label: 'Application',
         },
         {
           type: 'doc',
-          id: 'sdks/python/Asset',
+          id: 'sdks/python/docs/Asset',
           label: 'Asset',
         },
         {
           type: 'doc',
-          id: 'sdks/python/Conversation',
+          id: 'sdks/python/docs/Conversation',
           label: 'Conversation',
         },
         {
           type: 'doc',
-          id: 'sdks/python/Model',
+          id: 'sdks/python/docs/Model',
           label: 'Model',
         },
         {
           type: 'doc',
-          id: 'sdks/python/SearchedAssets',
+          id: 'sdks/python/docs/SearchedAssets',
           label: 'Searched Assets',
         },
       ]
@@ -382,47 +354,47 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'sdks/kotlin/ActivitiesApi',
+          id: 'sdks/kotlin/docs/ActivitiesApi',
           label: 'Activities API',
         },
         {
           type:'doc',
-          id: 'sdks/kotlin/ApplicationsApi',
+          id: 'sdks/kotlin/docs/ApplicationsApi',
           label: 'Applications API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/AssetsApi',
+          id: 'sdks/kotlin/docs/AssetsApi',
           label: 'Assets API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/ConnectorApi',
+          id: 'sdks/kotlin/docs/ConnectorApi',
           label: 'Connector API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/ConversationsApi',
+          id: 'sdks/kotlin/docs/ConversationsApi',
           label: 'Conversations API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/ModelsApi',
+          id: 'sdks/kotlin/docs/ModelsApi',
           label: 'Models API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/OSApi',
+          id: 'sdks/kotlin/docs/OSApi',
           label: 'OS API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/SearchApi',
+          id: 'sdks/kotlin/docs/SearchApi',
           label: 'Search API',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/WellKnownApi',
+          id: 'sdks/kotlin/docs/WellKnownApi',
           label: 'WellKnown API',
         }
       ]
@@ -433,38 +405,37 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'sdks/kotlin/Activity',
+          id: 'sdks/kotlin/docs/Activity',
           label: 'Activity',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/Application',
+          id: 'sdks/kotlin/docs/Application',
           label: 'Application',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/Asset',
+          id: 'sdks/kotlin/docs/Asset',
           label: 'Asset',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/Conversation',
+          id: 'sdks/kotlin/docs/Conversation',
           label: 'Conversation',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/Model',
+          id: 'sdks/kotlin/docs/Model',
           label: 'Model',
         },
         {
           type: 'doc',
-          id: 'sdks/kotlin/SearchedAssets',
+          id: 'sdks/kotlin/docs/SearchedAssets',
           label: 'Searched Assets',
         },
       ]
     }
   ]
-
 };
 
 export default sidebars;
