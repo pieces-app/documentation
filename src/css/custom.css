@@ -119,6 +119,7 @@ html[data-theme='dark'] .header-github-link:before {
   align-items: center;
   justify-content: center;
   gap: 100px;
+  padding: 50px 0;
 }
 
 @media (max-width: 1000px) {
@@ -127,6 +128,7 @@ html[data-theme='dark'] .header-github-link:before {
     align-items: center;
     justify-content: center;
     gap: 0;
+    padding: 25px 0;
   }
 
   /*Swaps order of `Welcome to Pieces for Developers` and the video on mobile*/
@@ -139,7 +141,6 @@ html[data-theme='dark'] .header-github-link:before {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 10px;
-  margin-top: 40px;
 }
 
 .feature-card {
@@ -150,7 +151,6 @@ html[data-theme='dark'] .header-github-link:before {
 
 @media (max-width: 820px) {
   .feature-grid {
-    margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
