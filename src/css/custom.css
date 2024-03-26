@@ -131,7 +131,7 @@ html[data-theme='dark'] .header-github-link:before {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 10px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 @media (max-width: 1000px) {
