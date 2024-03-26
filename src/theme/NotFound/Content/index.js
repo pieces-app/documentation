@@ -20,17 +20,15 @@ export default function NotFoundContent({className}) {
             />
           </div>
 
-          <h1 className="hero__title">Oops! You found a dead end.</h1>
+          <h1 className="hero__title">You found a dead end!</h1>
           <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
 
           <hr />
 
           <h2>Get Started with Pieces for Developers</h2>
-          <p>Here are some links to help you get started:</p>
           <ul>
             <li><a href={'/installation-getting-started/what-am-i-installing'}>What is Pieces for Developers?</a></li>
-            <li><a href={''}>Getting Started Guide</a></li>
-            <li><a href={'/docs/tutorials'}>Tutorials</a></li>you
+            <li><a href={'https://youtube.com/@getpieces'}>Video Tutorials</a></li>
             <li><a href={'/faq'}>FAQs</a></li>
           </ul>
 
@@ -61,14 +59,9 @@ export default function NotFoundContent({className}) {
           <h2>Need more help?</h2>
           <ul>
             <li>
-              <a href={'/suppport'}>Contact Support</a>
+              <a href={'/support'}>Contact Support</a>
             </li>
           </ul>
-          {/*<CTAButton*/}
-          {/*  label={'Contact Support'}*/}
-          {/*  href={'/support'}*/}
-          {/*  type={'secondary'}*/}
-          {/*/>*/}
         </div>
       </div>
     </main>
