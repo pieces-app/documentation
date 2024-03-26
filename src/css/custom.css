@@ -81,14 +81,19 @@
   --feature-card-border-color: #303030;
 }
 
+/* Fix margin for faq dropdown titles */
+summary > h2 {
+  margin: 0;
+}
+
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
-p > a {
-/*  add underline*/
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item) {
+  /*  add underline*/
   text-decoration: underline;
 }
 
-p > a:hover {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item):hover {
   text-decoration-thickness: 2px;
 }
 
@@ -120,6 +125,15 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 50px 0;
 }
 
+/*404 Page Styles*/
+.error-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
 @media (max-width: 1000px) {
   .hero-container {
     flex-direction: column;
@@ -132,6 +146,10 @@ html[data-theme='dark'] .header-github-link:before {
   /*Swaps order of `Welcome to Pieces for Developers` and the video on mobile*/
   .hero-container > :nth-child(1) { order: 2; }
   .hero-container > :nth-child(2) { order: 1; }
+
+  .error-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .feature-grid {
