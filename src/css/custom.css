@@ -41,7 +41,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --ifm-card-border-color: #dedede;
+  /*--ifm-card-border-color: #dedede;*/
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -78,7 +78,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --ifm-card-border-color: #303030;
+  /*--ifm-card-border-color: #303030;*/
 }
 
 /*Styles for links in paragraphs*/
@@ -142,12 +142,12 @@ html[data-theme='dark'] .header-github-link:before {
 
 .feature-card {
   padding: 20px;
-  border: 1px solid var(--ifm-card-border-color);
-  border-radius: 8px;
+  /*border: 1px solid var(--ifm-card-border-color);*/
+  /*border-radius: 8px;*/
 
-  p {
-    margin: 0;
-  }
+  /*p {*/
+  /*  margin: 0;*/
+  /*}*/
 }
 
 @media (max-width: 820px) {
