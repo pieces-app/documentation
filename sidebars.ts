@@ -238,11 +238,23 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'SDKs',
+      collapsed: false,
       items: activeSDKs.map(sdk => ({
         type: 'doc' as 'doc' | 'ref',
         id: `sdks/${sdk}/guides/getting-started`,
         label: `${sdk.charAt(0).toUpperCase() + sdk.slice(1)} SDK`,
       })),
+      // items: activeSDKs.map(sdk => ({
+      //   type: 'category' as 'category',
+      //   label: `${sdk.charAt(0).toUpperCase() + sdk.slice(1)} SDK`,
+      //   items: [
+      //     {
+      //       type: 'doc',
+      //       id: `sdks/${sdk}/guides/getting-started`,
+      //       label: 'Getting Started',
+      //     }
+      //   ]
+      // })),
     },
   ],
 

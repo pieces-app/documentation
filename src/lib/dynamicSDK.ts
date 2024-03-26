@@ -10,6 +10,11 @@ export const activeSDKs = [
 // Base list of sidebar items to be used as a template for each SDK
 const baseSidebarItems = [
   {
+    type: 'ref',
+    id: 'sdks/index',
+    label: '← Back to SDKs',
+  },
+  {
     type: 'doc',
     id: 'guides/getting-started',
     label: 'Getting Started',
@@ -46,6 +51,12 @@ const baseSidebarItems = [
 // Generate sidebar items for each active SDK
 export const sdkSidebars = activeSDKs.reduce((acc, sdkName) => {
   const itemsWithPrefixedId = baseSidebarItems.map(item => {
+    if (item.id === 'sdks/index') {
+      return {
+        ...item,
+      };
+    }
+
     // For top-level doc items, simply prefix the id
     if (item.type === 'doc') {
       return {
