@@ -6,16 +6,31 @@ import {MiniSpacer} from "@site/src/components/Spacers";
 
 export default function NotFoundContent({className}) {
   return (
-    <main className={'hero-container'}>
-      <div>
-        <h1 className="hero__title">You found a dead end!</h1>
-        <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
+    <div className={'hero-container'}>
+      <div style={{
+        padding: '0 20px',
+      }}>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+          <h1 className="hero__title">You found a dead end!</h1>
+          <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
+          <GridFlexRow type={'evenly'}>
+            <CTAButton
+              href={'/'}
+              label={'← Back to Docs'}
+              type={'secondary'}
+            />
+          </GridFlexRow>
+        </div>
 
         <hr/>
 
         <h2>Get Started with Pieces for Developers</h2>
         <ul>
-          <li><a href={'/'}>← Back to Docs</a></li>
           <li><a href={'/installation-getting-started/what-am-i-installing'}>What is Pieces for Developers?</a></li>
           <li><a href={'https://youtube.com/@getpieces'}>Video Tutorials</a></li>
           <li><a href={'/faq'}>FAQs</a></li>
@@ -63,6 +78,6 @@ export default function NotFoundContent({className}) {
           alt={'404 - Page Not Found'}
         />
       </div>
-    </main>
+    </div>
   );
 }
