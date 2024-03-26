@@ -137,6 +137,7 @@ html[data-theme='dark'] .header-github-link:before {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 10px;
+  margin-top: 40px;
 }
 
 .feature-card {
@@ -150,6 +151,10 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 @media (max-width: 820px) {
+  .feature-grid {
+    margin-top: 20px;
+  }
+
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
   }
