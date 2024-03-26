@@ -1,0 +1,45 @@
+---
+title: Pieces SDKs
+description: Pieces provides SDK libraries for major programming languages like Python, Dart, Kotlin and TypeScript so you don't have to write code for interacting with our API protocols from scratch.
+---
+
+import {activeSDKs} from "/src/lib/dynamicSDK";
+import CTAButton from "/src/components/CTAButton";
+import GridFlexRow from "/src/components/GridFlexRow";
+
+Pieces provides SDK libraries for major programming languages like Python, Dart, Kotlin and TypeScript so you don't have to write code for interacting with our API protocols from scratch.
+
+We're always working on improving and extending the current stack of available SDKs and SDK documentation, listed below is a list of official SDKS the Pieces team is maintaining.
+
+## Explore Our SDKs
+
+<GridFlexRow type={'evenly'}>
+  {activeSDKs.map((sdk) => (
+    <CTAButton
+      key={sdk}
+      label={`${sdk} SDK`}
+      href={`sdks/${sdk}/guides/getting-started`}
+      icon={`/assets/languages/${sdk}_logo.webp`}
+      type={'secondary'}
+    />
+  ))}
+</GridFlexRow>
+
+[//]: # (| Language                                                                                                                                            |                                            GitHub Repository                                             |)
+
+[//]: # (|-----------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------:|)
+
+[//]: # (| ![TypeScript Logo]&#40;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/20px-Typescript_logo_2020.svg.png&#41; TypeScript | [pieces-os-client-sdk-for-typescript]&#40;https://github.com/pieces-app/pieces-os-client-sdk-for-typescript&#41; |)
+
+[//]: # (| ![Dart Logo]&#40;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dart-logo.png/20px-Dart-logo.png&#41; Dart                                      |       [pieces-os-client-sdk-for-dart]&#40;https://github.com/pieces-app/pieces-os-client-sdk-for-dart&#41;       |)
+
+[//]: # (| ![Python Logo]&#40;/assets/languages/python_logo.webp&#41; Python           |     [pieces-os-client-sdk-for-python]&#40;https://github.com/pieces-app/pieces-os-client-sdk-for-python&#41;     |)
+
+[//]: # (| ![Kotlin Logo]&#40;/assets/languages/kotlin_logo.webp&#41; Kotlin                      |     [pieces-os-client-sdk-for-kotlin]&#40;https://github.com/pieces-app/pieces-os-client-sdk-for-kotlin&#41;     |)
+
+
+## Community
+
+If you have created your own SDK or any other technology specific integration and would like us to list it here under community maintained SDKs/integrations please [contact us](https://github.com/pieces-app/opensource/discussions).
+
+If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our Open Source [Discussions](https://github.com/pieces-app/opensource/discussions) and you can also join our [Discord](https://discord.gg/getpieces).

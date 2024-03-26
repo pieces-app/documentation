@@ -2,7 +2,7 @@ import {useColorMode} from '@docusaurus/theme-common';
 import Image from "../Image";
 
 type CTAButtonProps = {
-  label: string
+  label?: string
   href: string
   // Primary is larger, secondary is smaller
   type?: 'primary' | 'secondary'

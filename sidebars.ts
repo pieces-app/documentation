@@ -232,7 +232,7 @@ const sidebars: SidebarsConfig = {
   sdksOverviewSidebar: [
     {
       type: 'doc',
-      id: 'sdks/index',
+      id: 'build/index',
       label: 'Overview',
     },
     {
@@ -241,8 +241,8 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: activeSDKs.map(sdk => ({
         type: 'doc' as 'doc' | 'ref',
-        id: `sdks/${sdk}/guides/getting-started`,
-        label: `${sdk.charAt(0).toUpperCase() + sdk.slice(1)} SDK`,
+        id: `build/sdks/${sdk.toLowerCase()}/guides/getting-started`,
+        label: `${sdk} SDK`,
       })),
       // items: activeSDKs.map(sdk => ({
       //   type: 'category' as 'category',

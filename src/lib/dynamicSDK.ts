@@ -2,16 +2,16 @@
 
 // List of SDKs to display on the docs
 export const activeSDKs = [
-  'python',
-  'dart',
-  'kotlin'
+  'Python',
+  'Dart',
+  'Kotlin'
 ];
 
 // Base list of sidebar items to be used as a template for each SDK
 const baseSidebarItems = [
   {
     type: 'ref',
-    id: 'sdks/index',
+    id: 'build/index',
     label: '← Back to SDKs',
   },
   {
@@ -50,8 +50,10 @@ const baseSidebarItems = [
 
 // Generate sidebar items for each active SDK
 export const sdkSidebars = activeSDKs.reduce((acc, sdkName) => {
+  const sdkNameLowerCase = sdkName.toLowerCase();
+
   const itemsWithPrefixedId = baseSidebarItems.map(item => {
-    if (item.id === 'sdks/index') {
+    if (item.id === 'build/index') {
       return {
         ...item,
       };
@@ -61,7 +63,7 @@ export const sdkSidebars = activeSDKs.reduce((acc, sdkName) => {
     if (item.type === 'doc') {
       return {
         ...item,
-        id: `sdks/${sdkName}/${item.id}`,
+        id: `build/sdks/${sdkNameLowerCase}/${item.id}`,
       };
     }
 
@@ -71,12 +73,12 @@ export const sdkSidebars = activeSDKs.reduce((acc, sdkName) => {
         ...item,
         items: item.items.map(subItem => ({
           ...subItem,
-          id: `sdks/${sdkName}/${subItem.id}`,
+          id: `build/sdks/${sdkNameLowerCase}/${subItem.id}`,
         })),
       };
     }
   });
 
-  acc[`${sdkName}SDKSidebar`] = itemsWithPrefixedId;
+  acc[`${sdkNameLowerCase}SDKSidebar`] = itemsWithPrefixedId;
   return acc;
 }, {});
