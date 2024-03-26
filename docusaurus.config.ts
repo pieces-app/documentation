@@ -107,44 +107,44 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'sdksOverviewSidebar',
-        //   label: 'Build',
-        //   position: 'right',
-        // },
         {
-          type: 'dropdown',
+          type: 'docSidebar',
+          sidebarId: 'sdksOverviewSidebar',
           label: 'Build',
           position: 'right',
-          items: [
-            {
-              type: 'docSidebar',
-              sidebarId: 'sdksOverviewSidebar',
-              label: 'Overview',
-            },
-            // {
-            //   type: 'docSidebar',
-            //   sidebarId: 'typescriptSDKSidebar',
-            //   label: 'TypeScript SDK',
-            // },
-            {
-              type: 'docSidebar',
-              sidebarId: 'pythonSDKSidebar',
-              label: 'Python SDK',
-            },
-            {
-              type: 'docSidebar',
-              sidebarId: 'dartSDKSidebar',
-              label: 'Dart SDK',
-            },
-            {
-              type: 'docSidebar',
-              sidebarId: 'kotlinSDKSidebar',
-              label: 'Kotlin SDK',
-            }
-          ],
         },
+        // {
+        //   type: 'dropdown',
+        //   label: 'Build',
+        //   position: 'right',
+        //   items: [
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'sdksOverviewSidebar',
+        //       label: 'Overview',
+        //     },
+        //     // {
+        //     //   type: 'docSidebar',
+        //     //   sidebarId: 'typescriptSDKSidebar',
+        //     //   label: 'TypeScript SDK',
+        //     // },
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'pythonSDKSidebar',
+        //       label: 'Python SDK',
+        //     },
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'dartSDKSidebar',
+        //       label: 'Dart SDK',
+        //     },
+        //     {
+        //       type: 'docSidebar',
+        //       sidebarId: 'kotlinSDKSidebar',
+        //       label: 'Kotlin SDK',
+        //     }
+        //   ],
+        // },
         {
           to: '/community',
           label: 'Community',
