@@ -20,7 +20,7 @@ export default function NotFoundContent({className}) {
             />
           </div>
 
-          <h1 className="hero__title">Oops! We goofed.</h1>
+          <h1 className="hero__title">Oops! You found a dead end.</h1>
           <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
 
           <hr />
