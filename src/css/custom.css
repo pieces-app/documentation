@@ -144,18 +144,11 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 20px;
   border: 1px solid var(--feature-card-border-color);
   border-radius: 8px;
-
-  p {
-    margin: 0 !important;
-  }
 }
 
 @media (max-width: 820px) {
   .feature-grid {
     margin-top: 20px;
-  }
-
-  .feature-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
