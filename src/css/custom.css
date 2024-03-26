@@ -222,21 +222,3 @@ html[data-theme='dark'] .header-github-link:before {
 .menu__link--sublist {
   font-weight: bold;
 }
-
-/*Fixes colors on api reference pages*/
-.openapi-explorer__request-btn {
-  background-color: var(--ifm-color-primary-darkest) !important;
-  color: var(--ifm-color-secondary-darkest) !important;
-}
-
-/*Fixes overlap with redoc generated api reference sidebar*/
-.redocusaurus {
-  :first-child > :first-child {
-    top: 60px !important;
-    /*padding-bottom: 0 !important;*/
-
-    :nth-child(2) > :nth-child(2) {
-      display: none;
-    }
-  }
-}
