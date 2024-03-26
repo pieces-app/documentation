@@ -126,6 +126,7 @@ html[data-theme='dark'] .header-github-link:before {
     align-items: center;
     justify-content: center;
     gap: 0;
+    padding: 25px 0;
   }
 
   /*Swaps order of `Welcome to Pieces for Developers` and the video on mobile*/
