@@ -8,14 +8,9 @@ const config: Config = {
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers!',
   favicon: 'assets/pieces_logos/white_circle.png',
 
-  // Set the production url of your site here
   url: 'https://docs.pieces.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pieces-app',
   projectName: 'documentation',
 
@@ -23,9 +18,6 @@ const config: Config = {
   onBrokenAnchors: 'warn',
   onBrokenMarkdownLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -55,7 +47,6 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/pieces-app/documentation/tree/main/',
-          // docItemComponent: "@theme/ApiItem" // add @theme/ApiItem here
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -87,7 +78,6 @@ const config: Config = {
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
 
-    // The following logic ensures that Algolia search is only used for production deployments
     algolia: {
       appId: 'KTOXFODR65',
       apiKey: 'ea4804560699e4b727715163b74bea83',
