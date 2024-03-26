@@ -15,6 +15,7 @@ export default function NotFoundContent({className}) {
 
         <h2>Get Started with Pieces for Developers</h2>
         <ul>
+          <li><a href={'/'}>← Back to Docs</a></li>
           <li><a href={'/installation-getting-started/what-am-i-installing'}>What is Pieces for Developers?</a></li>
           <li><a href={'https://youtube.com/@getpieces'}>Video Tutorials</a></li>
           <li><a href={'/faq'}>FAQs</a></li>
