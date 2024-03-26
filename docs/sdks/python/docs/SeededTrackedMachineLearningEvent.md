@@ -26,6 +26,6 @@ seeded_tracked_machine_learning_event_dict = seeded_tracked_machine_learning_eve
 # create an instance of SeededTrackedMachineLearningEvent from a dict
 seeded_tracked_machine_learning_event_form_dict = seeded_tracked_machine_learning_event.from_dict(seeded_tracked_machine_learning_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

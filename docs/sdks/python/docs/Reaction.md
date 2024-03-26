@@ -28,6 +28,6 @@ reaction_dict = reaction_instance.to_dict()
 # create an instance of Reaction from a dict
 reaction_form_dict = reaction.from_dict(reaction_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

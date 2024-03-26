@@ -28,6 +28,6 @@ tracked_application_update_dict = tracked_application_update_instance.to_dict()
 # create an instance of TrackedApplicationUpdate from a dict
 tracked_application_update_form_dict = tracked_application_update.from_dict(tracked_application_update_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

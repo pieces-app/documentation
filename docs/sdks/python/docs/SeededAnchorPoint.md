@@ -29,6 +29,6 @@ seeded_anchor_point_dict = seeded_anchor_point_instance.to_dict()
 # create an instance of SeededAnchorPoint from a dict
 seeded_anchor_point_form_dict = seeded_anchor_point.from_dict(seeded_anchor_point_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

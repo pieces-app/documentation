@@ -19,6 +19,6 @@ Name | Type | Description | Notes
 **context** | **String** | this is the application in which this was created from. | 
 **snippet** | **String** | this is the value of the snippet | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

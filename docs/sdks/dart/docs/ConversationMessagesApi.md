@@ -1,20 +1,20 @@
-# core_openapi.api.ConversationMessagesApi
+# ConversationMessages API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**messagesCreateSpecificMessage**](ConversationMessagesApi#messagescreatespecificmessage) | **POST** /messages/create | /messages/create [POST]
-[**messagesDeleteSpecificMessage**](ConversationMessagesApi#messagesdeletespecificmessage) | **POST** /messages/{message}/delete | /messages/{message}/delete [POST]
+[**messagesDeleteSpecificMessage**](ConversationMessagesApi#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
 [**messagesSnapshot**](ConversationMessagesApi#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
-# **messagesCreateSpecificMessage**
+## **messagesCreateSpecificMessage**
 > ConversationMessage messagesCreateSpecificMessage(transferables, seededConversationMessage)
 
 /messages/create [POST]
@@ -57,12 +57,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messagesDeleteSpecificMessage**
+
+## **messagesDeleteSpecificMessage**
 > messagesDeleteSpecificMessage(message)
 
-/messages/{message}/delete [POST]
+/messages/\{message\}/delete [POST]
 
 This will delete a specific message.
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messagesSnapshot**
+
+## **messagesSnapshot**
 > ConversationMessages messagesSnapshot(transferables)
 
 /messages [GET]
@@ -142,5 +142,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

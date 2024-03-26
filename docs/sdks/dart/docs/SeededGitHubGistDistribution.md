@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **description** | **String** | This is the description of the Gist Distribution | [optional] 
 **name** | **String** | This is the name of the gist you will add. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

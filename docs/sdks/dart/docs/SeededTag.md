@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] 
 **person** | **String** | uuid of the person, you want to add this tag too | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -76,7 +76,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **anchor_point_specific_anchor_point_snapshot**
 > AnchorPoint anchor_point_specific_anchor_point_snapshot(anchor_point, transferables=transferables)
@@ -147,7 +147,7 @@ No authorization required
 **200** | OK |  -  |
 **410** | AnchorPoint not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **anchor_point_update**
 > AnchorPoint anchor_point_update(transferables=transferables, anchor_point=anchor_point)
@@ -218,5 +218,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

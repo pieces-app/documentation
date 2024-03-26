@@ -1,18 +1,18 @@
-# core_openapi.api.CodeAnalysesApi
+# CodeAnalyses API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
 
 
-# **codeAnalysesSnapshot**
+## **codeAnalysesSnapshot**
 > CodeAnalyses codeAnalysesSnapshot()
 
 Your GET endpoint
@@ -49,5 +49,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

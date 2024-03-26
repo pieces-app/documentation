@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **touched** | **bool** | If the user touched or panned over the asset. | [optional] [default to false]
 **scrolled** | **bool** | If the user scrolled over the asset. | [optional] [default to false]
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

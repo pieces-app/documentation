@@ -1,21 +1,21 @@
-# core_openapi.api.SharesApi
+# Shares API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**sharesCreateNewShare**](SharesApi#sharescreatenewshare) | **POST** /shares/create | /shares/create [POST]
-[**sharesDeleteShare**](SharesApi#sharesdeleteshare) | **POST** /shares/{share}/delete | /shares/{share}/delete [POST]
+[**sharesDeleteShare**](SharesApi#sharesdeleteshare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
 [**sharesSnapshot**](SharesApi#sharessnapshot) | **GET** /shares | /shares [GET]
-[**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/{share} | /shares/{share} [GET]
+[**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
-# **sharesCreateNewShare**
+## **sharesCreateNewShare**
 > Shares sharesCreateNewShare(transferables, seededShare)
 
 /shares/create [POST]
@@ -58,12 +58,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sharesDeleteShare**
+
+## **sharesDeleteShare**
 > String sharesDeleteShare(share)
 
-/shares/{share}/delete [POST]
+/shares/\{share\}/delete [POST]
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
@@ -101,9 +101,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sharesSnapshot**
+
+## **sharesSnapshot**
 > Shares sharesSnapshot(transferables)
 
 /shares [GET]
@@ -144,12 +144,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sharesSpecificShareSnapshot**
+
+## **sharesSpecificShareSnapshot**
 > Share sharesSpecificShareSnapshot(share, transferables)
 
-/shares/{share} [GET]
+/shares/\{share\} [GET]
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
@@ -189,5 +189,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

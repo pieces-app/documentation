@@ -25,6 +25,6 @@ graphical_ocr_statistics_dict = graphical_ocr_statistics_instance.to_dict()
 # create an instance of GraphicalOCRStatistics from a dict
 graphical_ocr_statistics_form_dict = graphical_ocr_statistics.from_dict(graphical_ocr_statistics_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

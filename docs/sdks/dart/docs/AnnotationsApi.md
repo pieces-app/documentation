@@ -1,20 +1,20 @@
-# core_openapi.api.AnnotationsApi
+# Annotations API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**annotationsCreateNewAnnotation**](AnnotationsApi#annotationscreatenewannotation) | **POST** /annotations/create | /annotations/create [POST]
-[**annotationsDeleteSpecificAnnotation**](AnnotationsApi#annotationsdeletespecificannotation) | **POST** /annotations/{annotation}/delete | /annotations/{annotation}/delete [POST]
+[**annotationsDeleteSpecificAnnotation**](AnnotationsApi#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
 [**annotationsSnapshot**](AnnotationsApi#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
-# **annotationsCreateNewAnnotation**
+## **annotationsCreateNewAnnotation**
 > Annotation annotationsCreateNewAnnotation(seededAnnotation)
 
 /annotations/create [POST]
@@ -55,12 +55,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotationsDeleteSpecificAnnotation**
+
+## **annotationsDeleteSpecificAnnotation**
 > annotationsDeleteSpecificAnnotation(annotation)
 
-/annotations/{annotation}/delete [POST]
+/annotations/\{annotation\}/delete [POST]
 
 this will delete a specific annotation
 
@@ -97,9 +97,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotationsSnapshot**
+
+## **annotationsSnapshot**
 > Annotations annotationsSnapshot(annotationTypeFilter)
 
 /annotations [GET]
@@ -140,5 +140,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **cpu** | [**OSDeviceCPUHardwareInformation**](OSDeviceCPUHardwareInformation) |  | [optional] 
 **gpu** | [**OSDeviceGPUHardwareInformation**](OSDeviceGPUHardwareInformation) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

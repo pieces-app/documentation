@@ -21,6 +21,6 @@ Name | Type | Description | Notes
 **latency** | **num** | this is the time it takes to run this model. | [optional] 
 **system** | [**SystemExecutionInformation**](SystemExecutionInformation) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

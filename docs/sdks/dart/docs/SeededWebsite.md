@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **person** | **String** | this is a uuid of a person that we are going to add the website too. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

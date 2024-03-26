@@ -1,11 +1,11 @@
-# core_openapi.api.PKCEApi
+# PKCE API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 [**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
-# **clearPKCE**
+## **clearPKCE**
 > clearPKCE()
 
 /pkce/clear [POST]
@@ -52,9 +52,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **generateCode**
+
+## **generateCode**
 > PKCE generateCode(seededPKCE)
 
 /pkce/code [POST]
@@ -95,9 +95,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **generateToken**
+
+## **generateToken**
 > PKCE generateToken(tokenizedPKCE)
 
 /pkce/token [POST]
@@ -138,9 +138,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **getChallenge**
+
+## **getChallenge**
 > PKCE getChallenge()
 
 Your GET endpoint
@@ -177,9 +177,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **respondWithCode**
+
+## **respondWithCode**
 > PKCE respondWithCode(code, state, schema)
 
 /pkce/response/code [POST]
@@ -224,5 +224,5 @@ No authorization required
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

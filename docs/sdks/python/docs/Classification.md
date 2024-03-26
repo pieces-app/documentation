@@ -28,6 +28,6 @@ classification_dict = classification_instance.to_dict()
 # create an instance of Classification from a dict
 classification_form_dict = classification.from_dict(classification_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

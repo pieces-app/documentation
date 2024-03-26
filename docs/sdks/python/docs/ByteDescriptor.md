@@ -27,6 +27,6 @@ byte_descriptor_dict = byte_descriptor_instance.to_dict()
 # create an instance of ByteDescriptor from a dict
 byte_descriptor_form_dict = byte_descriptor.from_dict(byte_descriptor_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

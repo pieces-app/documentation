@@ -1,26 +1,26 @@
-# core_openapi.api.ConversationsApi
+# Conversations API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/{asset} | /conversations/create/from_asset/{asset} [POST]
+[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
 [**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/{conversation}/delete | /conversations/{conversation}/delete [POST]
+[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
 [**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
 [**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations | /conversations [GET]
 [**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
 
 
-# **conversationsCreateFromAsset**
+## **conversationsCreateFromAsset**
 > ConversationsCreateFromAssetOutput conversationsCreateFromAsset(asset)
 
-/conversations/create/from_asset/{asset} [POST]
+/conversations/create/from_asset/\{asset\} [POST]
 
 This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
 
@@ -58,9 +58,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationsCreateSpecificConversation**
+
+## **conversationsCreateSpecificConversation**
 > Conversation conversationsCreateSpecificConversation(transferables, seededConversation)
 
 /conversations/create [POST]
@@ -103,12 +103,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationsDeleteSpecificConversation**
+
+## **conversationsDeleteSpecificConversation**
 > conversationsDeleteSpecificConversation(conversation)
 
-/conversations/{conversation}/delete [POST]
+/conversations/\{conversation\}/delete [POST]
 
 This will delete a specific Conversation.
 
@@ -145,9 +145,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationsIdentifiersSnapshot**
+
+## **conversationsIdentifiersSnapshot**
 > FlattenedConversations conversationsIdentifiersSnapshot()
 
 /conversations/identifiers [GET]
@@ -184,9 +184,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationsSnapshot**
+
+## **conversationsSnapshot**
 > Conversations conversationsSnapshot(transferables)
 
 /conversations [GET]
@@ -227,9 +227,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationsStreamIdentifiers**
+
+## **conversationsStreamIdentifiers**
 > conversationsStreamIdentifiers()
 
 /conversations/stream/identifiers [STREAMED]
@@ -265,5 +265,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -1,21 +1,21 @@
-# core_openapi.api.BackupsApi
+# Backups API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
 [**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
-[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/{backup}/delete | /backups/{backup}/delete [POST]
+[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
 [**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
-# **backupsCreateNewBackup**
+## **backupsCreateNewBackup**
 > Backup backupsCreateNewBackup(seededBackup)
 
 /backups/create [POST]
@@ -56,9 +56,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupsCreateNewBackupStreamed**
+
+## **backupsCreateNewBackupStreamed**
 > BackupStreamedProgress backupsCreateNewBackupStreamed(seededBackup)
 
 /backups/create/streamed [POST]
@@ -99,12 +99,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupsDeleteSpecificBackup**
+
+## **backupsDeleteSpecificBackup**
 > backupsDeleteSpecificBackup(backup, backup2)
 
-/backups/{backup}/delete [POST]
+/backups/\{backup\}/delete [POST]
 
 This will delete a specific backup from the cloud.
 
@@ -143,9 +143,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupsSnapshot**
+
+## **backupsSnapshot**
 > Backups backupsSnapshot()
 
 /backups [GET]
@@ -182,5 +182,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

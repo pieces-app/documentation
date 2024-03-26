@@ -28,6 +28,6 @@ assets_search_with_filters_input_dict = assets_search_with_filters_input_instanc
 # create an instance of AssetsSearchWithFiltersInput from a dict
 assets_search_with_filters_input_form_dict = assets_search_with_filters_input.from_dict(assets_search_with_filters_input_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -78,7 +78,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **message_disassociate_annotation**
 > message_disassociate_annotation(annotation, message)
@@ -146,7 +146,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **message_scores_increment**
 > message_scores_increment(message, seeded_score_increment=seeded_score_increment)
@@ -215,7 +215,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **message_specific_message_snapshot**
 > ConversationMessage message_specific_message_snapshot(message, transferables=transferables)
@@ -286,7 +286,7 @@ No authorization required
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **message_specific_message_update**
 > ConversationMessage message_specific_message_update(transferables=transferables, conversation_message=conversation_message)
@@ -357,7 +357,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **message_update_value**
 > ConversationMessage message_update_value(transferables=transferables, conversation_message=conversation_message)
@@ -428,5 +428,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **count** | **int** | how many times this user accessed this piece. | 
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

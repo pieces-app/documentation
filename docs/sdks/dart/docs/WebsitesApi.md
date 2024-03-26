@@ -1,21 +1,21 @@
-# core_openapi.api.WebsitesApi
+# Websites API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
-[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/{website}/delete | /websites/{website}/delete [POST]
+[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
 [**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
 [**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites | /websites [GET]
 
 
-# **websitesCreateNewWebsite**
+## **websitesCreateNewWebsite**
 > Website websitesCreateNewWebsite(transferables, seededWebsite)
 
 /websites/create [POST]
@@ -58,12 +58,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websitesDeleteSpecificWebsite**
+
+## **websitesDeleteSpecificWebsite**
 > websitesDeleteSpecificWebsite(website)
 
-/websites/{website}/delete [POST]
+/websites/\{website\}/delete [POST]
 
 This will delete a specific website!
 
@@ -100,9 +100,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websitesExists**
+
+## **websitesExists**
 > ExistingMetadata websitesExists(existentMetadata)
 
 /websites/exists [POST]
@@ -143,9 +143,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websitesSnapshot**
+
+## **websitesSnapshot**
 > Websites websitesSnapshot(transferables)
 
 /websites [GET]
@@ -186,5 +186,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

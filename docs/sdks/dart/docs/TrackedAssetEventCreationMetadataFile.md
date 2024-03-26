@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **dragAndDrop** | **bool** | Whether the file was dropped onto pieces | [optional] 
 **interaction** | **bool** | Whether the file was attached via a button click | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

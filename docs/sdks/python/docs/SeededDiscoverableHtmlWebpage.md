@@ -26,6 +26,6 @@ seeded_discoverable_html_webpage_dict = seeded_discoverable_html_webpage_instanc
 # create an instance of SeededDiscoverableHtmlWebpage from a dict
 seeded_discoverable_html_webpage_form_dict = seeded_discoverable_html_webpage.from_dict(seeded_discoverable_html_webpage_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **format** | **String** | this is a reference to the format that it belongs too. | 
 **image** | [**FlattenedImageAnalysis**](FlattenedImageAnalysis) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

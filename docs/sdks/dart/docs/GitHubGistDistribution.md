@@ -19,6 +19,6 @@ Name | Type | Description | Notes
 **githubId** | **String** | This is the id that github uses to represent the gist. | 
 **url** | **String** | This is the url where the gist is. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

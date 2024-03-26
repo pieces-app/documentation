@@ -28,6 +28,6 @@ allocation_cloud_urls_dict = allocation_cloud_urls_instance.to_dict()
 # create an instance of AllocationCloudUrls from a dict
 allocation_cloud_urls_form_dict = allocation_cloud_urls.from_dict(allocation_cloud_urls_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

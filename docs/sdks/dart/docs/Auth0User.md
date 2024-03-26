@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **emailVerified** | **bool** | Indicates whether the user has verified their email address. Mapped from email_verified -> emailVerified. | [optional] 
 **familyName** | **String** | User's family name. | [optional] 
 **givenName** | **String** | User's given name.  | [optional] 
-**identities** | [**List<Auth0Identity>**](Auth0Identity) | Contains info retrieved from the identity provider with which the user originally authenticates. | [optional] [default to const []]
+**identities** | [**List\<Auth0Identity\>**](Auth0Identity) | Contains info retrieved from the identity provider with which the user originally authenticates. | [optional] [default to const []]
 **nickname** | **String** | User's nickname.  | [optional] 
 **updatedAt** | [**DateTime**](DateTime) |  | [optional] 
 **username** | **String** |  (unique) User's username.   | [optional] 
@@ -25,9 +25,9 @@ Name | Type | Description | Notes
 **lastIp** | **String** |  | [optional] 
 **lastLogin** | [**DateTime**](DateTime) |  | [optional] 
 **loginsCount** | **int** |  | [optional] 
-**blockedFor** | **List<String>** |  | [optional] [default to const []]
-**guardianAuthenticators** | **List<String>** |  | [optional] [default to const []]
+**blockedFor** | **List\<String\>** |  | [optional] [default to const []]
+**guardianAuthenticators** | **List\<String\>** |  | [optional] [default to const []]
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

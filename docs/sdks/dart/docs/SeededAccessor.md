@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] 
 **share** | **String** | this is the share that the asset is apart of. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

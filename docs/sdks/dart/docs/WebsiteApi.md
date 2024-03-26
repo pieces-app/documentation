@@ -1,29 +1,29 @@
-# core_openapi.api.WebsiteApi
+# Website API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**websiteAssociateAsset**](WebsiteApi#websiteassociateasset) | **POST** /website/{website}/assets/associate/{asset} | /website/{website}/assets/associate/{asset} [POST]
-[**websiteAssociateConversation**](WebsiteApi#websiteassociateconversation) | **POST** /website/{website}/conversations/associate/{conversation} | /website/{website}/conversations/associate/{conversation} [POST]
-[**websiteAssociatePerson**](WebsiteApi#websiteassociateperson) | **POST** /website/{website}/persons/associate/{person} | /website/{website}/persons/associate/{person} [POST]
-[**websiteDisassociateAsset**](WebsiteApi#websitedisassociateasset) | **POST** /website/{website}/assets/disassociate/{asset} | /website/{website}/assets/disassociate/{asset} [POST]
-[**websiteDisassociateConversation**](WebsiteApi#websitedisassociateconversation) | **POST** /website/{website}/conversations/disassociate/{conversation} | /website/{website}/conversations/disassociate/{conversation} [POST]
-[**websiteDisassociatePerson**](WebsiteApi#websitedisassociateperson) | **POST** /website/{website}/persons/disassociate/{person} | /website/{website}/persons/disassociate/{person} [POST]
-[**websiteScoresIncrement**](WebsiteApi#websitescoresincrement) | **POST** /website/{website}/scores/increment | '/website/{website}/scores/increment' [POST]
+[**websiteAssociateAsset**](WebsiteApi#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**websiteAssociateConversation**](WebsiteApi#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**websiteAssociatePerson**](WebsiteApi#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**websiteDisassociateAsset**](WebsiteApi#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**websiteDisassociateConversation**](WebsiteApi#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**websiteDisassociatePerson**](WebsiteApi#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**websiteScoresIncrement**](WebsiteApi#websitescoresincrement) | **POST** /website/\{website\}/scores/increment | '/website/\{website\}/scores/increment' [POST]
 [**websiteUpdate**](WebsiteApi#websiteupdate) | **POST** /website/update | /website/update [POST]
-[**websitesSpecificWebsiteSnapshot**](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/{website} | /website/{website} [GET]
+[**websitesSpecificWebsiteSnapshot**](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
-# **websiteAssociateAsset**
+## **websiteAssociateAsset**
 > websiteAssociateAsset(asset, website)
 
-/website/{website}/assets/associate/{asset} [POST]
+/website/\{website\}/assets/associate/\{asset\} [POST]
 
 This will associate a website with a asset.
 
@@ -62,12 +62,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteAssociateConversation**
+
+## **websiteAssociateConversation**
 > websiteAssociateConversation(website, conversation)
 
-/website/{website}/conversations/associate/{conversation} [POST]
+/website/\{website\}/conversations/associate/\{conversation\} [POST]
 
 This will associate a website with a conversation.
 
@@ -106,12 +106,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteAssociatePerson**
+
+## **websiteAssociatePerson**
 > websiteAssociatePerson(website, person)
 
-/website/{website}/persons/associate/{person} [POST]
+/website/\{website\}/persons/associate/\{person\} [POST]
 
 This will associate a website with a person.
 
@@ -150,12 +150,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteDisassociateAsset**
+
+## **websiteDisassociateAsset**
 > websiteDisassociateAsset(website, asset)
 
-/website/{website}/assets/disassociate/{asset} [POST]
+/website/\{website\}/assets/disassociate/\{asset\} [POST]
 
 This will enable us to dissassociate a website from a asset.
 
@@ -194,12 +194,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteDisassociateConversation**
+
+## **websiteDisassociateConversation**
 > websiteDisassociateConversation(website, conversation)
 
-/website/{website}/conversations/disassociate/{conversation} [POST]
+/website/\{website\}/conversations/disassociate/\{conversation\} [POST]
 
 This will enable us to dissassociate a website from a conversation.
 
@@ -238,12 +238,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteDisassociatePerson**
+
+## **websiteDisassociatePerson**
 > websiteDisassociatePerson(website, person)
 
-/website/{website}/persons/disassociate/{person} [POST]
+/website/\{website\}/persons/disassociate/\{person\} [POST]
 
 This will enable us to dissassociate a website from a person.
 
@@ -282,12 +282,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteScoresIncrement**
+
+## **websiteScoresIncrement**
 > websiteScoresIncrement(website, seededScoreIncrement)
 
-'/website/{website}/scores/increment' [POST]
+'/website/\{website\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -326,9 +326,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websiteUpdate**
+
+## **websiteUpdate**
 > Website websiteUpdate(transferables, website)
 
 /website/update [POST]
@@ -371,12 +371,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **websitesSpecificWebsiteSnapshot**
+
+## **websitesSpecificWebsiteSnapshot**
 > Website websitesSpecificWebsiteSnapshot(website, transferables)
 
-/website/{website} [GET]
+/website/\{website\} [GET]
 
 This will get a snapshot of a single website.
 
@@ -416,5 +416,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

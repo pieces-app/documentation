@@ -38,6 +38,6 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a 'demo' snippet | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

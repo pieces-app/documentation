@@ -1,11 +1,11 @@
-# core_openapi.api.DiscoveryApi
+# Discovery API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**discoveryDiscoverTagsRelated**](DiscoveryApi#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
-# **discoveryDiscoverAssets**
+## **discoveryDiscoverAssets**
 > DiscoveredAssets discoveryDiscoverAssets(automatic, seededDiscoverableAssets)
 
 /discovery/discover/assets [POST]
@@ -58,9 +58,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discoveryDiscoverAssetsHtml**
+
+## **discoveryDiscoverAssetsHtml**
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml(automatic, seededDiscoverableHtmlWebpages)
 
 /discovery/discover/assets/html[POST]
@@ -103,9 +103,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discoveryDiscoverSensitives**
+
+## **discoveryDiscoverSensitives**
 > DiscoveredSensitives discoveryDiscoverSensitives(automatic, seededDiscoverableSensitives)
 
 /discovery/discover/sensitives [POST]
@@ -148,9 +148,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **discoveryDiscoverTagsRelated**
+
+## **discoveryDiscoverTagsRelated**
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated(automatic, seededDiscoverableRelatedTags)
 
 /discovery/discover/tags/related [POST]
@@ -193,5 +193,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

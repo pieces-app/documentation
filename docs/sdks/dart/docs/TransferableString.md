@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **base64Url** | **String** | NOT IMPLEMENTED | [optional] 
 **dataUrl** | **String** | NOT IMPLEMENTED | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

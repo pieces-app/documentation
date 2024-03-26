@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **path** | **String** | This is an optional file path | [optional] 
 **asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

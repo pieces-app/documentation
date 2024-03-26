@@ -28,6 +28,6 @@ Name | Type | Description | Notes
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] 
 **demo** | **bool** | This will let us know if this conversation was generated as a 'demo' conversation | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

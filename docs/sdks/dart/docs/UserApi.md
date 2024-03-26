@@ -1,11 +1,11 @@
-# core_openapi.api.UserApi
+# User API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 [**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
-# **clearUser**
+## **clearUser**
 > clearUser()
 
 /user/clear
@@ -55,9 +55,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **refreshUser**
+
+## **refreshUser**
 > UserProfile refreshUser()
 
 /user/refresh [GET]
@@ -94,9 +94,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **selectUser**
+
+## **selectUser**
 > UserProfile selectUser(auth0User)
 
 /user/select [POST]
@@ -107,11 +107,11 @@ This will select the current user.
 ```dart
 import 'package:core_openapi/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
-//defaultApiClient.getAuthentication<OAuth>('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
+//defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0
-//defaultApiClient.getAuthentication<OAuth>('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
+//defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0
-//defaultApiClient.getAuthentication<OAuth>('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
+//defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 
 final api_instance = UserApi();
 final auth0User = Auth0User(); // Auth0User | 
@@ -136,16 +136,16 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
+
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **streamUser**
+
+## **streamUser**
 > UserProfile streamUser()
 
 /user/stream [GET]
@@ -182,9 +182,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **updateUser**
+
+## **updateUser**
 > UserProfile updateUser(userProfile)
 
 /user/update [POST]
@@ -225,9 +225,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **userProviders**
+
+## **userProviders**
 > ReturnedUserProfile userProviders()
 
 Your GET endpoint
@@ -264,9 +264,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **userSnapshot**
+
+## **userSnapshot**
 > ReturnedUserProfile userSnapshot()
 
 /user [GET]
@@ -303,9 +303,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **userUpdateVanity**
+
+## **userUpdateVanity**
 > UserProfile userUpdateVanity(userProfile)
 
 /user/update/vanity [POST]
@@ -346,5 +346,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

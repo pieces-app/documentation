@@ -30,6 +30,6 @@ challenged_pkce_dict = challenged_pkce_instance.to_dict()
 # create an instance of ChallengedPKCE from a dict
 challenged_pkce_form_dict = challenged_pkce.from_dict(challenged_pkce_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

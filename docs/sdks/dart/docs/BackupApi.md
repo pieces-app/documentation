@@ -1,22 +1,22 @@
-# core_openapi.api.BackupApi
+# Backup API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**backup**](BackupApi#backup) | **POST** /backup | /backup [POST]
 [**backupAsset**](BackupApi#backupasset) | **POST** /backup/asset | /backup/asset [POST]
-[**backupRestoreSpecificBackup**](BackupApi#backuprestorespecificbackup) | **POST** /backup/{backup}/restore | /backup/{backup}/restore [POST]
-[**backupRestoreSpecificBackupStreamed**](BackupApi#backuprestorespecificbackupstreamed) | **POST** /backup/{backup}/restore/streamed | /backup/{backup}/restore/streamed [POST]
-[**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/{backup} | /backup/{backup} [GET]
+[**backupRestoreSpecificBackup**](BackupApi#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backupRestoreSpecificBackupStreamed**](BackupApi#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
 
 
-# **backup**
+## **backup**
 > backup(assets)
 
 /backup [POST]
@@ -56,9 +56,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupAsset**
+
+## **backupAsset**
 > backupAsset(asset)
 
 /backup/asset [POST]
@@ -96,12 +96,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupRestoreSpecificBackup**
+
+## **backupRestoreSpecificBackup**
 > Backup backupRestoreSpecificBackup(backup, backup2)
 
-/backup/{backup}/restore [POST]
+/backup/\{backup\}/restore [POST]
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
 
@@ -141,12 +141,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupRestoreSpecificBackupStreamed**
+
+## **backupRestoreSpecificBackupStreamed**
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed(backup, backup2)
 
-/backup/{backup}/restore/streamed [POST]
+/backup/\{backup\}/restore/streamed [POST]
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
@@ -186,12 +186,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **backupSpecificBackupSnapshot**
+
+## **backupSpecificBackupSnapshot**
 > Backup backupSpecificBackupSnapshot(backup)
 
-/backup/{backup} [GET]
+/backup/\{backup\} [GET]
 
 This will just get the metadata associated with a specific backup.
 
@@ -229,5 +229,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

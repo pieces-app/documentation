@@ -1,0 +1,56 @@
+---
+title: Dart SDK Getting Started
+description: This getting started guide will help you get started with the Pieces for Developers Dart SDK.
+---
+
+## Introduction
+
+The Pieces SDK is a powerful code engine package designed for writing applications on top of Pieces OS. It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+## Installation & Usage
+
+Requires Dart 2.12 or later
+
+1. **GitHub**: If this Dart package is published to GitHub, add the following dependency to your pubspec.yaml:
+    ```
+    dependencies:
+      pieces_os_client:
+        git: https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+    ```
+
+2. **Local**: To use the package in your local drive, add the following dependency to your pubspec.yaml:
+    ```
+    dependencies:
+      pieces_os_client:
+        path: /path/to/pieces_os_client
+    ```
+
+3. **Getting Started**: Please run the following:
+    ```dart
+    import 'package:pieces_os_client/api.dart';
+
+    final api_instance = ActivitiesApi();
+    final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
+    final seededActivity = SeededActivity(); // SeededActivity |
+
+    try {
+        final result = api_instance.activitiesCreateNewActivity(transferables, seededActivity);
+        print(result);
+    } catch (e) {
+        print('Exception when calling ActivitiesApi->activitiesCreateNewActivity: $e\n');
+    }
+    ```
+
+## Features
+The Pieces SDK offers the following key features:
+
+1. Copilot Chats: Communicate seamlessly with copilot chats functionality.
+2. Asset Management: Save and manage assets and formats efficiently.
+3. Local Server Interaction: Interact with a locally hosted server for various functionalities.
+4. Multi LLMs support: Use any Pieces supported LLMs to power apps.
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+[//]: # (Ensure these are the correct requirements for the SDK)
+- Pieces OS running as a backend service.

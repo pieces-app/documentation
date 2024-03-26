@@ -26,6 +26,6 @@ detected_external_applications_dict = detected_external_applications_instance.to
 # create an instance of DetectedExternalApplications from a dict
 detected_external_applications_form_dict = detected_external_applications.from_dict(detected_external_applications_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

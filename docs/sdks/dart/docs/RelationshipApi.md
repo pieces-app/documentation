@@ -1,21 +1,21 @@
-# core_openapi.api.RelationshipApi
+# Relationship API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/{relationship} | /relationship/{relationship} [GET]
+[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
 
 
-# **relationshipsSpecificRelationshipSnapshot**
+## **relationshipsSpecificRelationshipSnapshot**
 > Relationship relationshipsSpecificRelationshipSnapshot(relationship)
 
-/relationship/{relationship} [GET]
+/relationship/\{relationship\} [GET]
 
 This will return a single relationship object.
 
@@ -53,5 +53,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

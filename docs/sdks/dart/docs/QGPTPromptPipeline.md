@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **task** | [**QGPTTaskPipeline**](QGPTTaskPipeline) |  | [optional] 
 **conversation** | [**QGPTConversationPipeline**](QGPTConversationPipeline) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

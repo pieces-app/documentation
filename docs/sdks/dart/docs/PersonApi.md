@@ -1,23 +1,23 @@
-# core_openapi.api.PersonApi
+# Person API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personScoresIncrement**](PersonApi#personscoresincrement) | **POST** /person/{person}/scores/increment | '/person/{person}/scores/increment' [POST]
-[**personSnapshot**](PersonApi#personsnapshot) | **GET** /person/{person} | /person/{person} [GET]
+[**personScoresIncrement**](PersonApi#personscoresincrement) | **POST** /person/\{person\}/scores/increment | '/person/\{person\}/scores/increment' [POST]
+[**personSnapshot**](PersonApi#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
 [**updatePerson**](PersonApi#updateperson) | **POST** /person/update | /person/update [POST]
 
 
-# **personScoresIncrement**
+## **personScoresIncrement**
 > personScoresIncrement(person, seededScoreIncrement)
 
-'/person/{person}/scores/increment' [POST]
+'/person/\{person\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -56,12 +56,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **personSnapshot**
+
+## **personSnapshot**
 > Person personSnapshot(person, transferables)
 
-/person/{person} [GET]
+/person/\{person\} [GET]
 
 This will get a snapshot of a specific person
 
@@ -101,9 +101,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **updatePerson**
+
+## **updatePerson**
 > Person updatePerson(transferables, person)
 
 /person/update [POST]
@@ -146,5 +146,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -1,22 +1,22 @@
-# core_openapi.api.ModelsApi
+# Models API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**modelsCreateNewModel**](ModelsApi#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
-[**modelsDeleteSpecificModel**](ModelsApi#modelsdeletespecificmodel) | **POST** /models/{model}/delete | /models/{model}/delete [POST]
-[**modelsDeleteSpecificModelCache**](ModelsApi#modelsdeletespecificmodelcache) | **POST** /models/{model}/delete/cache | /models/{model}/delete/cache [POST]
+[**modelsDeleteSpecificModel**](ModelsApi#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
+[**modelsDeleteSpecificModelCache**](ModelsApi#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
 [**modelsSnapshot**](ModelsApi#modelssnapshot) | **GET** /models | /models [GET]
 [**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
-# **modelsCreateNewModel**
+## **modelsCreateNewModel**
 > Model modelsCreateNewModel(seededModel)
 
 /models/create [POST]
@@ -57,12 +57,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelsDeleteSpecificModel**
+
+## **modelsDeleteSpecificModel**
 > modelsDeleteSpecificModel(model)
 
-/models/{model}/delete [POST]
+/models/\{model\}/delete [POST]
 
 This will delete a model, This is only available for custom: true models.
 
@@ -99,12 +99,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelsDeleteSpecificModelCache**
+
+## **modelsDeleteSpecificModelCache**
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
 
-/models/{model}/delete/cache [POST]
+/models/\{model\}/delete/cache [POST]
 
 This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
 
@@ -144,9 +144,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelsSnapshot**
+
+## **modelsSnapshot**
 > Models modelsSnapshot()
 
 /models [GET]
@@ -183,9 +183,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **unloadModels**
+
+## **unloadModels**
 > unloadModels()
 
 /models/unload [POST]
@@ -221,5 +221,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

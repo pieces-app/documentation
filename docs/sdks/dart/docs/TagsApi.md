@@ -1,21 +1,21 @@
-# core_openapi.api.TagsApi
+# Tags API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
-[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/{tag}/delete | /tags/{tag}/delete [POST]
+[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
 [**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
 [**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags | /tags [GET]
 
 
-# **tagsCreateNewTag**
+## **tagsCreateNewTag**
 > Tag tagsCreateNewTag(transferables, seededTag)
 
 /tags/create [POST]
@@ -58,12 +58,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagsDeleteSpecificTag**
+
+## **tagsDeleteSpecificTag**
 > tagsDeleteSpecificTag(tag)
 
-/tags/{tag}/delete [POST]
+/tags/\{tag\}/delete [POST]
 
 This will delete a specific tag.
 
@@ -100,9 +100,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagsExists**
+
+## **tagsExists**
 > ExistingMetadata tagsExists(existentMetadata)
 
 /tags/exists [POST]
@@ -143,9 +143,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagsSnapshot**
+
+## **tagsSnapshot**
 > Tags tagsSnapshot(transferables)
 
 /tags [GET]
@@ -186,5 +186,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

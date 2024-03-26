@@ -41,6 +41,6 @@ flattened_annotation_dict = flattened_annotation_instance.to_dict()
 # create an instance of FlattenedAnnotation from a dict
 flattened_annotation_form_dict = flattened_annotation.from_dict(flattened_annotation_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

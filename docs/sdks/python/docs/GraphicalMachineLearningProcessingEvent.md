@@ -27,6 +27,6 @@ graphical_machine_learning_processing_event_dict = graphical_machine_learning_pr
 # create an instance of GraphicalMachineLearningProcessingEvent from a dict
 graphical_machine_learning_processing_event_form_dict = graphical_machine_learning_processing_event.from_dict(graphical_machine_learning_processing_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -20,6 +20,6 @@ Name | Type | Description | Notes
 **formatInserted** | **String** | a format was inserted | [optional] 
 **formatValueEdited** | **String** | a format's value was update ie, the text, etc... | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -1,19 +1,19 @@
-# core_openapi.api.FormatsApi
+# Formats API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**formatsSnapshot**](FormatsApi#formatssnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
-[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/{format} | /formats/{format} [GET] Scoped to Formats
+[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
-# **formatsSnapshot**
+## **formatsSnapshot**
 > Formats formatsSnapshot(transferables)
 
 /formats [GET] Scoped to Formats
@@ -54,12 +54,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formatsSpecificFormatSnapshot**
+
+## **formatsSpecificFormatSnapshot**
 > Format formatsSpecificFormatSnapshot(format, transferable)
 
-/formats/{format} [GET] Scoped to Formats
+/formats/\{format\} [GET] Scoped to Formats
 
 Request a specific format when given a id (uuid in path params)
 
@@ -99,5 +99,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

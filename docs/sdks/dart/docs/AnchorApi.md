@@ -1,24 +1,24 @@
-# core_openapi.api.AnchorApi
+# Anchor API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/{anchor}/rename | /anchor/{anchor}/rename [POST]
-[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/{anchor}/scores/increment | '/anchor/{anchor}/scores/increment' [POST]
-[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/{anchor} | /anchor/{anchor} [GET]
+[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | '/anchor/\{anchor\}/scores/increment' [POST]
+[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
 [**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
 
 
-# **anchorRename**
+## **anchorRename**
 > Anchor anchorRename(anchor, transferables)
 
-/anchor/{anchor}/rename [POST]
+/anchor/\{anchor\}/rename [POST]
 
 This will rename a specific anchor.
 
@@ -58,12 +58,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorScoresIncrement**
+
+## **anchorScoresIncrement**
 > anchorScoresIncrement(anchor, seededScoreIncrement)
 
-'/anchor/{anchor}/scores/increment' [POST]
+'/anchor/\{anchor\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -102,12 +102,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorSpecificAnchorSnapshot**
+
+## **anchorSpecificAnchorSnapshot**
 > Anchor anchorSpecificAnchorSnapshot(anchor, transferables)
 
-/anchor/{anchor} [GET]
+/anchor/\{anchor\} [GET]
 
 This will get a snapshot of a single anchor.
 
@@ -147,9 +147,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorUpdate**
+
+## **anchorUpdate**
 > Anchor anchorUpdate(transferables, anchor)
 
 /anchor/update [POST]
@@ -192,5 +192,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

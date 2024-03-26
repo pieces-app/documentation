@@ -1,16 +1,16 @@
-# core_openapi.api.AssetsApi
+# Assets API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/{asset}/delete | /assets/delete [POST] Scoped to Asset
+[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/delete [POST] Scoped to Asset
 [**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
 [**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
 [**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
@@ -19,14 +19,14 @@ Method | HTTP request | Description
 [**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search | /assets/search?query=string [GET]
 [**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
 [**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/{asset}/formats | /assets/{asset}/formats [GET] Scoped To Assets
-[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/{asset} | /assets/{asset} [GET] Scoped to Assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
 [**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
 [**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | Your GET endpoint
 [**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [GET]
 
 
-# **assetsCreateNewAsset**
+## **assetsCreateNewAsset**
 > Asset assetsCreateNewAsset(transferables, seed)
 
 /assets/create [POST] Scoped to Asset
@@ -69,9 +69,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsDeleteAsset**
+
+## **assetsDeleteAsset**
 > String assetsDeleteAsset(asset)
 
 /assets/delete [POST] Scoped to Asset
@@ -112,9 +112,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsDraft**
+
+## **assetsDraft**
 > Seed assetsDraft(transferables, seed)
 
 /assets/draft [POST]
@@ -157,9 +157,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsGetRecommendedAssets**
+
+## **assetsGetRecommendedAssets**
 > Assets assetsGetRecommendedAssets(seededAssetsRecommendation)
 
 Your GET endpoint
@@ -200,9 +200,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsGetRelatedAssets**
+
+## **assetsGetRelatedAssets**
 > Assets assetsGetRelatedAssets(assets)
 
 /assets/related [GET]
@@ -243,9 +243,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsIdentifiersSnapshot**
+
+## **assetsIdentifiersSnapshot**
 > FlattenedAssets assetsIdentifiersSnapshot(pseudo)
 
 /assets/identifiers [GET]
@@ -286,9 +286,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsPseudoSnapshot**
+
+## **assetsPseudoSnapshot**
 > PseudoAssets assetsPseudoSnapshot()
 
 /assets/pseudo [GET]
@@ -325,9 +325,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsSearchAssets**
+
+## **assetsSearchAssets**
 > SearchedAssets assetsSearchAssets(query, transferables, searchableTags, pseudo)
 
 /assets/search?query=string [GET]
@@ -374,9 +374,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsSearchWithFilters**
+
+## **assetsSearchWithFilters**
 > AssetsSearchWithFiltersOutput assetsSearchWithFilters(transferables, pseudo, assetsSearchWithFiltersInput)
 
 /assets/search [POST]
@@ -421,9 +421,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsSnapshot**
+
+## **assetsSnapshot**
 > Assets assetsSnapshot(transferables, suggested, pseudo)
 
 /assets [GET] Scoped to Assets
@@ -468,12 +468,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsSpecificAssetFormatsSnapshot**
+
+## **assetsSpecificAssetFormatsSnapshot**
 > Formats assetsSpecificAssetFormatsSnapshot(asset, transferables)
 
-/assets/{asset}/formats [GET] Scoped To Assets
+/assets/\{asset\}/formats [GET] Scoped To Assets
 
 This will query the formats for agiven asset when provided that asset's id.
 
@@ -513,12 +513,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsSpecificAssetSnapshot**
+
+## **assetsSpecificAssetSnapshot**
 > Asset assetsSpecificAssetSnapshot(asset, transferables)
 
-/assets/{asset} [GET] Scoped to Assets
+/assets/\{asset\} [GET] Scoped to Assets
 
 This is an endpoint to enable a client to access a specific asset through a provided uuid in the path.
 
@@ -558,9 +558,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetsStreamIdentifiers**
+
+## **assetsStreamIdentifiers**
 > StreamedIdentifiers assetsStreamIdentifiers()
 
 /assets/stream/identifiers [GET]
@@ -597,9 +597,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **getAssetsStreamTransferables**
+
+## **getAssetsStreamTransferables**
 > Assets getAssetsStreamTransferables()
 
 Your GET endpoint
@@ -636,9 +636,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **streamAssets**
+
+## **streamAssets**
 > Assets streamAssets()
 
 /assets/stream [GET]
@@ -675,5 +675,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

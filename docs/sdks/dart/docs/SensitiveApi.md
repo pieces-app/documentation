@@ -1,23 +1,23 @@
-# core_openapi.api.SensitiveApi
+# Sensitive API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/{sensitive}/scores/increment | '/sensitive/{sensitive}/scores/increment' [POST]
-[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/{sensitive} | /sensitive/{sensitive} [GET]
+[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | '/sensitive/\{sensitive\}/scores/increment' [POST]
+[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
 [**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
-# **sensitiveScoresIncrement**
+## **sensitiveScoresIncrement**
 > sensitiveScoresIncrement(sensitive, seededScoreIncrement)
 
-'/sensitive/{sensitive}/scores/increment' [POST]
+'/sensitive/\{sensitive\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -56,12 +56,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitiveSnapshot**
+
+## **sensitiveSnapshot**
 > Sensitive sensitiveSnapshot(sensitive)
 
-/sensitive/{sensitive} [GET]
+/sensitive/\{sensitive\} [GET]
 
 This will get a specific sensitive via the sensitive uuid.
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **updateSensitive**
+
+## **updateSensitive**
 > Sensitive updateSensitive(sensitive)
 
 /sensitive/update [POST]
@@ -142,5 +142,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

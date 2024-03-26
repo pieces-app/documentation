@@ -1,20 +1,20 @@
-# core_openapi.api.AnchorPointsApi
+# AnchorPoints API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/{anchor_point}/delete | /anchor_points/{anchor_point}/delete [POST]
+[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
 [**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
-# **anchorPointsCreateNewAnchorPoint**
+## **anchorPointsCreateNewAnchorPoint**
 > AnchorPoint anchorPointsCreateNewAnchorPoint(transferables, seededAnchorPoint)
 
 /anchor_points/create [POST]
@@ -57,12 +57,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorPointsDeleteSpecificAnchorPoint**
+
+## **anchorPointsDeleteSpecificAnchorPoint**
 > anchorPointsDeleteSpecificAnchorPoint(anchorPoint)
 
-/anchor_points/{anchor_point}/delete [POST]
+/anchor_points/\{anchor_point\}/delete [POST]
 
 This will delete a specific anchorPoint!
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorPointsSnapshot**
+
+## **anchorPointsSnapshot**
 > AnchorPoints anchorPointsSnapshot(transferables)
 
 /anchor_points [GET]
@@ -142,5 +142,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

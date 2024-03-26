@@ -18,6 +18,6 @@ Name | Type | Description | Notes
 **score** | **num** | maximum similarity score | [optional] 
 **candidates** | **int** | number of candidates | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

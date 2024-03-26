@@ -26,6 +26,6 @@ segmented_technical_language_dict = segmented_technical_language_instance.to_dic
 # create an instance of SegmentedTechnicalLanguage from a dict
 segmented_technical_language_form_dict = segmented_technical_language.from_dict(segmented_technical_language_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

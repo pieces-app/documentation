@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **application** | **String** | application id. | 
 **public** | **bool** | This will default to false.(ie private), currently not supporting pulling public gists. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

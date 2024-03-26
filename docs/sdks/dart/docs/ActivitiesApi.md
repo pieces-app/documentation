@@ -1,20 +1,20 @@
-# core_openapi.api.ActivitiesApi
+# Activities API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**activitiesCreateNewActivity**](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
-[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/{activity}/delete | /activities/{activity}/delete [POST]
+[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
 [**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
-# **activitiesCreateNewActivity**
+## **activitiesCreateNewActivity**
 > Activity activitiesCreateNewActivity(transferables, seededActivity)
 
 /activities/create [POST]
@@ -57,12 +57,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activitiesDeleteSpecificActivity**
+
+## **activitiesDeleteSpecificActivity**
 > activitiesDeleteSpecificActivity(activity)
 
-/activities/{activity}/delete [POST]
+/activities/\{activity\}/delete [POST]
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activitiesSnapshot**
+
+## **activitiesSnapshot**
 > Activities activitiesSnapshot(transferables, pseudo)
 
 /activities [GET]
@@ -144,5 +144,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

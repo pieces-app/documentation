@@ -1,23 +1,23 @@
-# core_openapi.api.ConnectorApi
+# Connector API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**connect**](ConnectorApi#connect) | **POST** /connect | /connect [POST]
-[**intention**](ConnectorApi#intention) | **POST** /{application}/intention | /{application}/intention [POST]
-[**onboarded**](ConnectorApi#onboarded) | **POST** /{application}/onboarded | /onboarded [POST]
-[**react**](ConnectorApi#react) | **POST** /{application}/reaction | /{application}/reaction [POST]
-[**suggest**](ConnectorApi#suggest) | **POST** /{application}/suggestion | /{application}/suggestion [POST]
-[**track**](ConnectorApi#track) | **POST** /{application}/track | /{application}/track [POST]
+[**intention**](ConnectorApi#intention) | **POST** /\{application\}/intention | /\{application\}/intention [POST]
+[**onboarded**](ConnectorApi#onboarded) | **POST** /\{application\}/onboarded | /onboarded [POST]
+[**react**](ConnectorApi#react) | **POST** /\{application\}/reaction | /\{application\}/reaction [POST]
+[**suggest**](ConnectorApi#suggest) | **POST** /\{application\}/suggestion | /\{application\}/suggestion [POST]
+[**track**](ConnectorApi#track) | **POST** /\{application\}/track | /\{application\}/track [POST]
 
 
-# **connect**
+## **connect**
 > Context connect(seededConnectorConnection)
 
 /connect [POST]
@@ -58,12 +58,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **intention**
+
+## **intention**
 > String intention(application, seededConnectorAsset)
 
-/{application}/intention [POST]
+/\{application\}/intention [POST]
 
 This can be used to send a SeededAsset over that you may use to compair in the future.
 
@@ -103,9 +103,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **onboarded**
+
+## **onboarded**
 > String onboarded(application, body)
 
 /onboarded [POST]
@@ -148,12 +148,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **react**
+
+## **react**
 > String react(application, reaction)
 
-/{application}/reaction [POST]
+/\{application\}/reaction [POST]
 
 This will react to the response returned from the /suggest endpoint. 
 
@@ -193,12 +193,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **suggest**
+
+## **suggest**
 > Suggestion suggest(application, seededConnectorCreation)
 
-/{application}/suggestion [POST]
+/\{application\}/suggestion [POST]
 
 This can and should be called everytime a snippet is coppied from an integration. IE A Jetbrains user coppies some code, then this end point can get called to weigh if we want to suggest a piece to be reused (if reuse is true we should provide asset that the user may want to use) or saved or neither.   **Note: Could potentially accept a SeededFormat for the request body if we want.  TODO potentially just make this a get endpoint. (because we are trying to retireve data.
 
@@ -238,12 +238,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **track**
+
+## **track**
 > String track(application, seededConnectorTracking)
 
-/{application}/track [POST]
+/\{application\}/track [POST]
 
 This is an endpoint specifically to abstract the work of packaging for segment on a per-context basis
 
@@ -283,5 +283,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

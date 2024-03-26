@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **percentage** | **num** | Optionally if the download is in progress you will recieve a download percent(from 0-100). | [optional] 
 **backup** | [**Backup**](Backup) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

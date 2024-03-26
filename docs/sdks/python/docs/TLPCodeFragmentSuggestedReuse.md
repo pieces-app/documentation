@@ -25,6 +25,6 @@ tlp_code_fragment_suggested_reuse_dict = tlp_code_fragment_suggested_reuse_insta
 # create an instance of TLPCodeFragmentSuggestedReuse from a dict
 tlp_code_fragment_suggested_reuse_form_dict = tlp_code_fragment_suggested_reuse.from_dict(tlp_code_fragment_suggested_reuse_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

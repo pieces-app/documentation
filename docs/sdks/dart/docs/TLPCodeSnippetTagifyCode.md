@@ -20,6 +20,6 @@ Name | Type | Description | Notes
 **context** | **String** | this is the origin in which this asset was created, application(string representation) | 
 **asset** | **String** | This is the asset id. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

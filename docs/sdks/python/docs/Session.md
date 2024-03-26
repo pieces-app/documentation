@@ -27,6 +27,6 @@ session_dict = session_instance.to_dict()
 # create an instance of Session from a dict
 session_form_dict = session.from_dict(session_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

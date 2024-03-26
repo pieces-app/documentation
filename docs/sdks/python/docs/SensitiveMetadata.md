@@ -27,6 +27,6 @@ sensitive_metadata_dict = sensitive_metadata_instance.to_dict()
 # create an instance of SensitiveMetadata from a dict
 sensitive_metadata_form_dict = sensitive_metadata.from_dict(sensitive_metadata_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

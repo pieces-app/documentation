@@ -31,6 +31,6 @@ seeded_website_dict = seeded_website_instance.to_dict()
 # create an instance of SeededWebsite from a dict
 seeded_website_form_dict = seeded_website.from_dict(seeded_website_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

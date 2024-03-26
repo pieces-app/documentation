@@ -28,6 +28,6 @@ seeded_tracked_conversation_event_dict = seeded_tracked_conversation_event_insta
 # create an instance of SeededTrackedConversationEvent from a dict
 seeded_tracked_conversation_event_form_dict = seeded_tracked_conversation_event.from_dict(seeded_tracked_conversation_event_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

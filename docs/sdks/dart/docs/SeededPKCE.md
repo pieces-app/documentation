@@ -21,11 +21,11 @@ Name | Type | Description | Notes
 **prompt** | **String** |  To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
 **organization** | **String** |  | [optional] 
 **invitation** | **String** |  | [optional] 
-**scope** | **List<String>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
+**scope** | **List\<String\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
 **clientId** | **String** | Your application's Client ID. | 
 **ADDITIONAL_PARAMETERS** | [**SeededPKCEADDITIONALPARAMETERS**](SeededPKCEADDITIONALPARAMETERS) |  | [optional] 
 **responseMode** | **String** |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -18,6 +18,6 @@ Name | Type | Description | Notes
 **version** | **String** | this is the current version of the server. | [optional] 
 **region** | **String** | this is the region where the project is defined. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

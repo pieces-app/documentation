@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **method** | **String** | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
 **verifier** | **String** | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

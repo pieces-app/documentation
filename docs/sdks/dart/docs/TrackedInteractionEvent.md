@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **description** | **String** | (optional) a description of this button that was clicked. or maybe what it did. | 
 **element** | **String** | This is an identifer that will allow the developer to know what unique button/field was interacted with. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

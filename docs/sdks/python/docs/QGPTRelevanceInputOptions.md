@@ -27,6 +27,6 @@ qgpt_relevance_input_options_dict = qgpt_relevance_input_options_instance.to_dic
 # create an instance of QGPTRelevanceInputOptions from a dict
 qgpt_relevance_input_options_form_dict = qgpt_relevance_input_options.from_dict(qgpt_relevance_input_options_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

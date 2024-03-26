@@ -27,6 +27,6 @@ referenced_share_dict = referenced_share_instance.to_dict()
 # create an instance of ReferencedShare from a dict
 referenced_share_form_dict = referenced_share.from_dict(referenced_share_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

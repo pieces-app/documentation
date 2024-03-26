@@ -1,11 +1,11 @@
-# core_openapi.api.ApplicationsApi
+# Applications API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,16 +14,16 @@ Method | HTTP request | Description
 [**applicationsRegister**](ApplicationsApi#applicationsregister) | **POST** /applications/register | /applications/register [POST]
 [**applicationsSessionClose**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
 [**applicationsSessionOpen**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/{session} | /applications/sessions/{session} [GET]
+[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
 [**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications | /applications [GET]
-[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/{application} | /applications/{application} [GET]
+[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
 [**applicationsUsageEngagementInteraction**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
 [**applicationsUsageEngagementKeyboard**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
 [**applicationsUsageInstallation**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
 [**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
-# **applicationsExternalRelated**
+## **applicationsExternalRelated**
 > DetectedExternalApplications applicationsExternalRelated()
 
 /applications/external/related [GET]
@@ -60,9 +60,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsExternalSnapshot**
+
+## **applicationsExternalSnapshot**
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 /applications/external [GET]
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsRegister**
+
+## **applicationsRegister**
 > Application applicationsRegister(application)
 
 /applications/register [POST]
@@ -142,9 +142,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsSessionClose**
+
+## **applicationsSessionClose**
 > Session applicationsSessionClose(body)
 
 /applications/session/close [POST]
@@ -185,9 +185,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsSessionOpen**
+
+## **applicationsSessionOpen**
 > Session applicationsSessionOpen()
 
 /applications/session/open [POST]
@@ -224,12 +224,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsSessionSnapshot**
+
+## **applicationsSessionSnapshot**
 > Session applicationsSessionSnapshot(session)
 
-/applications/sessions/{session} [GET]
+/applications/sessions/\{session\} [GET]
 
 This is an endpoint to get a snapshot of a specific session.
 
@@ -267,9 +267,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsSnapshot**
+
+## **applicationsSnapshot**
 > Applications applicationsSnapshot()
 
 /applications [GET]
@@ -306,12 +306,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsSpecificApplicationSnapshot**
+
+## **applicationsSpecificApplicationSnapshot**
 > Application applicationsSpecificApplicationSnapshot(application)
 
-/applications/{application} [GET]
+/applications/\{application\} [GET]
 
 This will retrieve snapshot of a single application.
 
@@ -349,9 +349,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsUsageEngagementInteraction**
+
+## **applicationsUsageEngagementInteraction**
 > TrackedInteractionEvent applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
 
 /applications/usage/engagement/interaction [POST] Scoped to Apps
@@ -392,9 +392,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsUsageEngagementKeyboard**
+
+## **applicationsUsageEngagementKeyboard**
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
 
 /applications/usage/engagement/keyboard [POST] Scoped to Apps
@@ -435,9 +435,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **applicationsUsageInstallation**
+
+## **applicationsUsageInstallation**
 > applicationsUsageInstallation(trackedApplicationInstall)
 
 /applications/usage/installation [POST]
@@ -477,9 +477,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **postApplicationsUsageUpdated**
+
+## **postApplicationsUsageUpdated**
 > postApplicationsUsageUpdated(trackedApplicationUpdate)
 
 /applications/usage/updated [POST]
@@ -519,5 +519,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

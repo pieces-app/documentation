@@ -34,6 +34,6 @@ application_dict = application_instance.to_dict()
 # create an instance of Application from a dict
 application_form_dict = application.from_dict(application_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -24,6 +24,6 @@ Name | Type | Description | Notes
 **interactions** | **int** | This is an optional value that will keep track of the number of times this has been interacted with. | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

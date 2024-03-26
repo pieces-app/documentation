@@ -27,6 +27,6 @@ os_device_cpu_hardware_information_dict = os_device_cpu_hardware_information_ins
 # create an instance of OSDeviceCPUHardwareInformation from a dict
 os_device_cpu_hardware_information_form_dict = os_device_cpu_hardware_information.from_dict(os_device_cpu_hardware_information_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

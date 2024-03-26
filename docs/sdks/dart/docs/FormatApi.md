@@ -1,25 +1,25 @@
-# core_openapi.api.FormatApi
+# Format API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**formatAnalysis**](FormatApi#formatanalysis) | **GET** /format/{format}/analysis | /format/{format}/analysis [GET]
+[**formatAnalysis**](FormatApi#formatanalysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
 [**formatReclassify**](FormatApi#formatreclassify) | **POST** /format/reclassify | /format/reclassify [POST]
-[**formatSnapshot**](FormatApi#formatsnapshot) | **GET** /format/{format} | /format/{format} [GET] Scoped to Format
+[**formatSnapshot**](FormatApi#formatsnapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
 [**formatUpdateValue**](FormatApi#formatupdatevalue) | **POST** /format/update/value | [POST] /format/update/value
 [**formatUsageEvent**](FormatApi#formatusageevent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
-# **formatAnalysis**
+## **formatAnalysis**
 > Analysis formatAnalysis(format)
 
-/format/{format}/analysis [GET]
+/format/\{format\}/analysis [GET]
 
 This will get an analysis from a format's id.
 
@@ -57,9 +57,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formatReclassify**
+
+## **formatReclassify**
 > Format formatReclassify(transferable, formatReclassification)
 
 /format/reclassify [POST]
@@ -102,12 +102,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formatSnapshot**
+
+## **formatSnapshot**
 > Format formatSnapshot(format, transferable)
 
-/format/{format} [GET] Scoped to Format
+/format/\{format\} [GET] Scoped to Format
 
 Get a snapshot of a specific format.
 
@@ -147,9 +147,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formatUpdateValue**
+
+## **formatUpdateValue**
 > Format formatUpdateValue(transferable, format)
 
 [POST] /format/update/value
@@ -192,9 +192,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **formatUsageEvent**
+
+## **formatUsageEvent**
 > TrackedFormatEvent formatUsageEvent(seededTrackedFormatEvent)
 
 /format/usage/event [POST] Scoped to Format
@@ -235,5 +235,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

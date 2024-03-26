@@ -133,11 +133,11 @@ const config: Config = {
               sidebarId: 'pythonSDKSidebar',
               label: 'Python SDK',
             },
-            // {
-            //   type: 'docSidebar',
-            //   sidebarId: 'dartSDKSidebar',
-            //   label: 'Dart SDK',
-            // },
+            {
+              type: 'docSidebar',
+              sidebarId: 'dartSDKSidebar',
+              label: 'Dart SDK',
+            },
             {
               type: 'docSidebar',
               sidebarId: 'kotlinSDKSidebar',

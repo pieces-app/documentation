@@ -1,19 +1,19 @@
-# core_openapi.api.DistributionApi
+# Distribution API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**distributionUpdate**](DistributionApi#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
-[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/{distribution} | /distribution/{distribution} [GET]
+[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
-# **distributionUpdate**
+## **distributionUpdate**
 > Distribution distributionUpdate(distribution)
 
 /distribution/update [POST]
@@ -54,12 +54,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **distributionsSpecificDistributionSnapshot**
+
+## **distributionsSpecificDistributionSnapshot**
 > Distribution distributionsSpecificDistributionSnapshot(distribution)
 
-/distribution/{distribution} [GET]
+/distribution/\{distribution\} [GET]
 
 This will get a specific snapshot of a distribution.
 
@@ -97,5 +97,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

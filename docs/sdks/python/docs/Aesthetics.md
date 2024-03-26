@@ -27,6 +27,6 @@ aesthetics_dict = aesthetics_instance.to_dict()
 # create an instance of Aesthetics from a dict
 aesthetics_form_dict = aesthetics.from_dict(aesthetics_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

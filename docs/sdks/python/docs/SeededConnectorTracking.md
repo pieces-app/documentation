@@ -34,6 +34,6 @@ seeded_connector_tracking_dict = seeded_connector_tracking_instance.to_dict()
 # create an instance of SeededConnectorTracking from a dict
 seeded_connector_tracking_form_dict = seeded_connector_tracking.from_dict(seeded_connector_tracking_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

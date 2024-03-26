@@ -75,5 +75,5 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **501** | Generic Classification Conversion Not Implemented |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

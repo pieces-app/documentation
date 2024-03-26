@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **email** | **String** | The user's email if we have it. | [optional] 
 **granularity** | **String** | At what level is this user being tracked. | [default to 'ANONYMOUS']
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

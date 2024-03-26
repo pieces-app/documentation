@@ -1,24 +1,24 @@
-# core_openapi.api.AnchorsApi
+# Anchors API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorDisassociateAsset**](AnchorsApi#anchordisassociateasset) | **POST** /anchors/{anchor}/assets/delete/{asset} | /anchors/{anchor}/assets/delete/{asset} [POST]
+[**anchorDisassociateAsset**](AnchorsApi#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
 [**anchorsCreateNewAnchor**](AnchorsApi#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchorsDeleteSpecificAnchor**](AnchorsApi#anchorsdeletespecificanchor) | **POST** /anchors/{anchor}/delete | /anchors/{anchor}/delete [POST]
+[**anchorsDeleteSpecificAnchor**](AnchorsApi#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
 [**anchorsSnapshot**](AnchorsApi#anchorssnapshot) | **GET** /anchors | /anchors [GET]
 
 
-# **anchorDisassociateAsset**
+## **anchorDisassociateAsset**
 > anchorDisassociateAsset(anchor, asset)
 
-/anchors/{anchor}/assets/delete/{asset} [POST]
+/anchors/\{anchor\}/assets/delete/\{asset\} [POST]
 
 This will update both the asset and the anchor reference, that will remove a anchor from an asset(only the references).  This will NOT remove the anchor. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
@@ -57,9 +57,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorsCreateNewAnchor**
+
+## **anchorsCreateNewAnchor**
 > Anchor anchorsCreateNewAnchor(transferables, seededAnchor)
 
 /anchors/create [POST]
@@ -102,12 +102,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorsDeleteSpecificAnchor**
+
+## **anchorsDeleteSpecificAnchor**
 > anchorsDeleteSpecificAnchor(anchor)
 
-/anchors/{anchor}/delete [POST]
+/anchors/\{anchor\}/delete [POST]
 
 This will delete a specific anchor!
 
@@ -144,9 +144,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorsSnapshot**
+
+## **anchorsSnapshot**
 > Anchors anchorsSnapshot(transferables)
 
 /anchors [GET]
@@ -187,5 +187,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

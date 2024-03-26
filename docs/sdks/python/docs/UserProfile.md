@@ -37,6 +37,6 @@ user_profile_dict = user_profile_instance.to_dict()
 # create an instance of UserProfile from a dict
 user_profile_form_dict = user_profile.from_dict(user_profile_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -1,20 +1,20 @@
-# core_openapi.api.LinkifyApi
+# Linkify API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**linkify**](LinkifyApi#linkify) | **POST** /linkify | /linkify [POST]
 [**linkifyMultiple**](LinkifyApi#linkifymultiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
-[**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/{share}/revoke | [POST} /linkify/{share}/revoke
+[**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
-# **linkify**
+## **linkify**
 > Shares linkify(linkify)
 
 /linkify [POST]
@@ -55,9 +55,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **linkifyMultiple**
+
+## **linkifyMultiple**
 > Shares linkifyMultiple(linkifyMultiple)
 
 /linkify/multiple [POST]
@@ -98,12 +98,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **linkifyShareRevoke**
+
+## **linkifyShareRevoke**
 > String linkifyShareRevoke(share)
 
-[POST} /linkify/{share}/revoke
+[POST} /linkify/\{share\}/revoke
 
 This will revoke a link.
 
@@ -141,5 +141,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

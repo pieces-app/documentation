@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **format** | **String** | (optionally) you can attach a tag to a format. so when you delete a format this tag will get removed from the asset as well. | [optional] 
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

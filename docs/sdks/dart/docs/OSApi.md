@@ -1,11 +1,11 @@
-# core_openapi.api.OSApi
+# OS API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 [**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
-# **linkProvider**
+## **linkProvider**
 > ReturnedUserProfile linkProvider(seededExternalProvider)
 
 /os/link_provider [POST]
@@ -60,9 +60,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **osDeviceInformation**
+
+## **osDeviceInformation**
 > OSDeviceInformationReturnable osDeviceInformation()
 
 /os/device/information [GET]
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **osRestart**
+
+## **osRestart**
 > osRestart()
 
 Your GET endpoint
@@ -137,9 +137,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **osUpdateCheck**
+
+## **osUpdateCheck**
 > CheckedOSUpdate osUpdateCheck(uncheckedOSUpdate)
 
 /os/update/check [POST]
@@ -180,10 +180,10 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **pickFiles**
-> List<String> pickFiles(filePickerInput)
+
+## **pickFiles**
+> List\<String\>** pickFiles(filePickerInput)
 
 /os/files/pick [POST]
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**List<String>**
+**List\<String\>**
 
 ### Authorization
 
@@ -223,10 +223,10 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **pickFolders**
-> List<String> pickFolders()
+
+## **pickFolders**
+> List\<String\>** pickFolders()
 
 /os/folders/pick [POST]
 
@@ -251,7 +251,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**List<String>**
+**List\<String\>**
 
 ### Authorization
 
@@ -262,9 +262,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **signIntoOS**
+
+## **signIntoOS**
 > UserProfile signIntoOS()
 
 
@@ -301,9 +301,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **signOutOfOS**
+
+## **signOutOfOS**
 > Users signOutOfOS()
 
 /os/sign_out [POST]
@@ -340,5 +340,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

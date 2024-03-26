@@ -1,27 +1,27 @@
-# core_openapi.api.TagApi
+# Tag API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/{tag}/assets/associate/{asset} | /tag/{tag}/assets/associate/{asset} [POST]
-[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/{tag}/persons/associate/{person} | /tag/{tag}/persons/associate/{person} [POST]
-[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/{tag}/assets/disassociate/{asset} | /tag/{tag}/assets/disassociate/{asset} [POST]
-[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/{tag}/persons/disassociate/{person} | /tag/{tag}/persons/disassociate/{person} [POST]
-[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/{tag}/scores/increment | '/tag/{tag}/scores/increment' [POST]
+[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
+[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
+[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
+[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
+[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | '/tag/\{tag\}/scores/increment' [POST]
 [**tagUpdate**](TagApi#tagupdate) | **POST** /tag/update | /tag/update [POST]
-[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/{tag} | /tag/{tag} [GET]
+[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
-# **tagAssociateAsset**
+## **tagAssociateAsset**
 > tagAssociateAsset(asset, tag)
 
-/tag/{tag}/assets/associate/{asset} [POST]
+/tag/\{tag\}/assets/associate/\{asset\} [POST]
 
 This will associate a tag with a asset.
 
@@ -60,12 +60,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagAssociatePerson**
+
+## **tagAssociatePerson**
 > tagAssociatePerson(tag, person)
 
-/tag/{tag}/persons/associate/{person} [POST]
+/tag/\{tag\}/persons/associate/\{person\} [POST]
 
 This will associate a tag with a person.
 
@@ -104,12 +104,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagDisassociateAsset**
+
+## **tagDisassociateAsset**
 > tagDisassociateAsset(tag, asset)
 
-/tag/{tag}/assets/disassociate/{asset} [POST]
+/tag/\{tag\}/assets/disassociate/\{asset\} [POST]
 
 This will enable us to dissassociate a tag from a asset.
 
@@ -148,12 +148,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagDisassociatePerson**
+
+## **tagDisassociatePerson**
 > tagDisassociatePerson(tag, person)
 
-/tag/{tag}/persons/disassociate/{person} [POST]
+/tag/\{tag\}/persons/disassociate/\{person\} [POST]
 
 This will enable us to dissassociate a tag from a person.
 
@@ -192,12 +192,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagScoresIncrement**
+
+## **tagScoresIncrement**
 > tagScoresIncrement(tag, seededScoreIncrement)
 
-'/tag/{tag}/scores/increment' [POST]
+'/tag/\{tag\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -236,9 +236,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagUpdate**
+
+## **tagUpdate**
 > Tag tagUpdate(transferables, tag)
 
 /tag/update [POST]
@@ -281,12 +281,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **tagsSpecificTagSnapshot**
+
+## **tagsSpecificTagSnapshot**
 > Tag tagsSpecificTagSnapshot(tag, transferables)
 
-/tag/{tag} [GET]
+/tag/\{tag\} [GET]
 
 This will get a specific tag.
 
@@ -326,5 +326,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

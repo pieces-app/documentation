@@ -77,7 +77,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **authorize_auth0**
 > ResultedPKCE authorize_auth0(audience, scope, response_type, client_id, code_challenge_method, code_challenge, response_mode, state=state, redirect_uri=redirect_uri, connection=connection, prompt=prompt)
@@ -165,7 +165,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **exchange_for_auth0_token**
 > OAuthToken exchange_for_auth0_token(grant_type, client_id, code, redirect_uri, code_verifier, var_schema=var_schema, audience=audience)
@@ -246,7 +246,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **get_auth0_user_info**
 > Auth0User get_auth0_user_info()
@@ -310,7 +310,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[auth0](../README#auth0), [auth0](../README#auth0), [auth0](../README#auth0)
+
 
 ### HTTP request headers
 
@@ -323,5 +323,5 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

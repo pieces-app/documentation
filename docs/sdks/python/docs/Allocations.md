@@ -25,6 +25,6 @@ allocations_dict = allocations_instance.to_dict()
 # create an instance of Allocations from a dict
 allocations_form_dict = allocations.from_dict(allocations_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -26,6 +26,6 @@ assets_search_with_filters_output_dict = assets_search_with_filters_output_insta
 # create an instance of AssetsSearchWithFiltersOutput from a dict
 assets_search_with_filters_output_form_dict = assets_search_with_filters_output.from_dict(assets_search_with_filters_output_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

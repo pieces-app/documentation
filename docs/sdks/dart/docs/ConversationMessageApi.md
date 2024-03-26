@@ -1,26 +1,26 @@
-# core_openapi.api.ConversationMessageApi
+# ConversationMessage API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/{message}/annotations/associate/{annotation} | /message/{message}/annotations/associate/{annotation} [POST]
-[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/{message}/annotations/disassociate/{annotation} | /message/{message}/annotations/disassociate/{annotation} [POST]
-[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/{message}/scores/increment | '/message/{message}/scores/increment' [POST]
-[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/{message} | /message/{message} [GET]
+[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | '/message/\{message\}/scores/increment' [POST]
+[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
 [**messageSpecificMessageUpdate**](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
 [**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
-# **messageAssociateAnnotation**
+## **messageAssociateAnnotation**
 > messageAssociateAnnotation(annotation, message)
 
-/message/{message}/annotations/associate/{annotation} [POST]
+/message/\{message\}/annotations/associate/\{annotation\} [POST]
 
 This will associate a message with an annotation.
 
@@ -59,12 +59,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messageDisassociateAnnotation**
+
+## **messageDisassociateAnnotation**
 > messageDisassociateAnnotation(annotation, message)
 
-/message/{message}/annotations/disassociate/{annotation} [POST]
+/message/\{message\}/annotations/disassociate/\{annotation\} [POST]
 
 This will enable us to dissassociate a message from an annotation.
 
@@ -103,12 +103,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messageScoresIncrement**
+
+## **messageScoresIncrement**
 > messageScoresIncrement(message, seededScoreIncrement)
 
-'/message/{message}/scores/increment' [POST]
+'/message/\{message\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -147,12 +147,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messageSpecificMessageSnapshot**
+
+## **messageSpecificMessageSnapshot**
 > ConversationMessage messageSpecificMessageSnapshot(message, transferables)
 
-/message/{message} [GET]
+/message/\{message\} [GET]
 
 This will get a specific snapshot of a message
 
@@ -192,9 +192,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messageSpecificMessageUpdate**
+
+## **messageSpecificMessageUpdate**
 > ConversationMessage messageSpecificMessageUpdate(transferables, conversationMessage)
 
 /message/update [GET]
@@ -237,9 +237,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **messageUpdateValue**
+
+## **messageUpdateValue**
 > ConversationMessage messageUpdateValue(transferables, conversationMessage)
 
 /message/update/value [POST]
@@ -282,5 +282,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

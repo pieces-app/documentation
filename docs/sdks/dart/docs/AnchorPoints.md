@@ -9,10 +9,10 @@ import 'package:core_openapi/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-**iterable** | [**List<AnchorPoint>**](AnchorPoint) |  | [default to const []]
-**indices** | **Map<String, int>** | This is a Map<String, int> where the the key is an AnchorPoint id. | [optional] [default to const {}]
+**iterable** | [**List\<AnchorPoint\>**](AnchorPoint) |  | [default to const []]
+**indices** | **Map\<String, int\>** | This is a Map\<String, int\>** where the the key is an AnchorPoint id. | [optional] [default to const {}]
 **score** | [**Score**](Score) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -31,6 +31,6 @@ score_dict = score_instance.to_dict()
 # create an instance of Score from a dict
 score_form_dict = score.from_dict(score_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

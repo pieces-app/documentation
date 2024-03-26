@@ -17,6 +17,6 @@ Name | Type | Description | Notes
 **conversationNameUpdatedByTheUser** | **String** | A conversation was renamed by the user | [optional] 
 **conversationSummaryAnnotationGeneratedByTheSystem** | **String** | A conversation summary was generated | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

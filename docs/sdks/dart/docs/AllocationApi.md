@@ -1,22 +1,22 @@
-# core_openapi.api.AllocationApi
+# Allocation API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/{allocation} | /allocation/{allocation} [GET]
+[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
 [**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
-# **allocationSnapshot**
+## **allocationSnapshot**
 > AllocationCloud allocationSnapshot(allocation)
 
-/allocation/{allocation} [GET]
+/allocation/\{allocation\} [GET]
 
 This will get a snapshot of a specific allocation.
 
@@ -54,9 +54,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationUpdate**
+
+## **allocationUpdate**
 > AllocationCloud allocationUpdate(allocationCloud)
 
 /allocation/update [POST]
@@ -97,5 +97,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **id** | **String** |  | 
 **text** | **String** |  | 
-**mechanisms** | [**Map<String, MechanismEnum>**](MechanismEnum) | This is a Map<String, MechanismEnum> where the the key is an asset id. | [optional] [default to const {}]
+**mechanisms** | [**Map\<String, MechanismEnum\>**](MechanismEnum) | This is a Map\<String, MechanismEnum\>** where the the key is an asset id. | [optional] [default to const {}]
 **assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] 
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
@@ -22,6 +22,6 @@ Name | Type | Description | Notes
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

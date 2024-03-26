@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **text** | **String** | This is the text of the hint. | 
 **model** | **String** | this is a model id. that we are using to link this to a model. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

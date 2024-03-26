@@ -35,6 +35,6 @@ hint_dict = hint_instance.to_dict()
 # create an instance of Hint from a dict
 hint_form_dict = hint.from_dict(hint_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

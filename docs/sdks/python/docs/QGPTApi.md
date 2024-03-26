@@ -80,7 +80,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **persons_related**
 > QGPTPersonsRelatedOutput persons_related(transferables=transferables, qgpt_persons_related_input=qgpt_persons_related_input)
@@ -152,7 +152,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **qgpt_stream**
 > QGPTStreamOutput qgpt_stream(qgpt_stream_input=qgpt_stream_input)
@@ -222,7 +222,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **question**
 > QGPTQuestionOutput question(qgpt_question_input=qgpt_question_input)
@@ -295,7 +295,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **503** | Service Unavailable, (engine is currently overloaded) |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **relevance**
 > QGPTRelevanceOutput relevance(qgpt_relevance_input=qgpt_relevance_input)
@@ -368,7 +368,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **503** | Service Unavailable, (engine is currently overloaded) |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 
 ## **reprompt**
 > QGPTRepromptOutput reprompt(qgpt_reprompt_input=qgpt_reprompt_input)
@@ -438,5 +438,5 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

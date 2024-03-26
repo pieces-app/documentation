@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **name** | **String** |  | 
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

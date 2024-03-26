@@ -1,18 +1,18 @@
-# core_openapi.api.MacOSApi
+# MacOS API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
-# **assetsCreateNewAssetFromMacos**
+## **assetsCreateNewAssetFromMacos**
 > Asset assetsCreateNewAssetFromMacos(seededMacOSAsset)
 
 /macos/assets/create [Post]
@@ -53,5 +53,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

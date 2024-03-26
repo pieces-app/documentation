@@ -1,23 +1,23 @@
-# core_openapi.api.AnchorPointApi
+# AnchorPoint API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/{anchor_point}/scores/increment | '/anchor_point/{anchor_point}/scores/increment' [POST]
-[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/{anchor_point} | /anchor_point/{anchor_point} [GET]
+[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | '/anchor_point/\{anchor_point\}/scores/increment' [POST]
+[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
 [**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
-# **anchorPointScoresIncrement**
+## **anchorPointScoresIncrement**
 > anchorPointScoresIncrement(anchorPoint, seededScoreIncrement)
 
-'/anchor_point/{anchor_point}/scores/increment' [POST]
+'/anchor_point/\{anchor_point\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -56,12 +56,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorPointSpecificAnchorPointSnapshot**
+
+## **anchorPointSpecificAnchorPointSnapshot**
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
 
-/anchor_point/{anchor_point} [GET]
+/anchor_point/\{anchor_point\} [GET]
 
 This will get a snapshot of a single anchorPoint.
 
@@ -101,9 +101,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **anchorPointUpdate**
+
+## **anchorPointUpdate**
 > AnchorPoint anchorPointUpdate(transferables, anchorPoint)
 
 /anchor_point/update [POST]
@@ -146,5 +146,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

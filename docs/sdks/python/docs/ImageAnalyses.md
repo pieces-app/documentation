@@ -25,6 +25,6 @@ image_analyses_dict = image_analyses_instance.to_dict()
 # create an instance of ImageAnalyses from a dict
 image_analyses_form_dict = image_analyses.from_dict(image_analyses_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

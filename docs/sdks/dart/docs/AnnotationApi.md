@@ -1,23 +1,23 @@
-# core_openapi.api.AnnotationApi
+# Annotation API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/{annotation}/scores/increment | '/annotation/{annotation}/scores/increment' [POST]
-[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/{annotation} | /annotation/{annotation} [GET]
+[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | '/annotation/\{annotation\}/scores/increment' [POST]
+[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
 [**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
 
 
-# **annotationScoresIncrement**
+## **annotationScoresIncrement**
 > annotationScoresIncrement(annotation, seededScoreIncrement)
 
-'/annotation/{annotation}/scores/increment' [POST]
+'/annotation/\{annotation\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -56,12 +56,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotationSpecificAnnotationSnapshot**
+
+## **annotationSpecificAnnotationSnapshot**
 > Annotation annotationSpecificAnnotationSnapshot(annotation)
 
-/annotation/{annotation} [GET]
+/annotation/\{annotation\} [GET]
 
 This will get a snapshot of a specific annotation.
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **annotationUpdate**
+
+## **annotationUpdate**
 > Annotation annotationUpdate(annotation)
 
 /annotation/update [POST]
@@ -142,5 +142,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -17,6 +17,6 @@ Name | Type | Description | Notes
 **context** | **String** | the application this description was created from. | [optional] 
 **os** | **String** | This is the UUID of the OS that this context is currently connected to. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

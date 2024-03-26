@@ -1,23 +1,23 @@
-# core_openapi.api.GithubApi
+# Github API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**importGithubGists**](GithubApi#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
-# **importGithubGists**
+## **importGithubGists**
 > Seeds importGithubGists(automatic, seededGithubGistsImport)
 
 /github/gists/import [POST]
 
-This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users' gists. <- implemented. v2. can get specific a public gist.
+This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users' gists. \<- implemented. v2. can get specific a public gist.
 
 ### Example
 ```dart
@@ -31,7 +31,7 @@ try {
     final result = api_instance.importGithubGists(automatic, seededGithubGistsImport);
     print(result);
 } catch (e) {
-    print('Exception when calling GithubApi->importGithubGists: $e\n');
+    print('Exception when calling GithubApi-\>**importGithubGists: $e\n');
 }
 ```
 
@@ -55,5 +55,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

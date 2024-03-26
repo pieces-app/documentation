@@ -1,20 +1,20 @@
-# core_openapi.api.SensitivesApi
+# Sensitives API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/{sensitive}/delete | /sensitives/{sensitive}/delete [POST]
+[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
 [**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
 
 
-# **sensitivesCreateNewSensitive**
+## **sensitivesCreateNewSensitive**
 > Sensitive sensitivesCreateNewSensitive(seededSensitive)
 
 /sensitives/create [POST]
@@ -55,12 +55,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitivesDeleteSensitive**
+
+## **sensitivesDeleteSensitive**
 > sensitivesDeleteSensitive(sensitive)
 
-/sensitives/{sensitive}/delete [POST]
+/sensitives/\{sensitive\}/delete [POST]
 
 This will delete a sensitive based on the sensitive uuid.
 
@@ -97,9 +97,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **sensitivesSnapshot**
+
+## **sensitivesSnapshot**
 > Sensitives sensitivesSnapshot()
 
 /sensitives [GET]
@@ -136,5 +136,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

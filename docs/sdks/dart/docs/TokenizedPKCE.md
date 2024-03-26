@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **codeVerifier** | **String** | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
 **audience** | **String** | The audience domain: i.e. https://pieces.us.auth0.com | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

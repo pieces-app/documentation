@@ -31,6 +31,6 @@ searched_asset_dict = searched_asset_instance.to_dict()
 # create an instance of SearchedAsset from a dict
 searched_asset_form_dict = searched_asset.from_dict(searched_asset_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

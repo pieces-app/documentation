@@ -1,24 +1,24 @@
-# core_openapi.api.PersonsApi
+# Persons API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/{person}/assets/delete/{asset} | /persons/{person}/assets/delete/{asset} [POST]
+[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
 [**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
-[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/{person}/delete | /persons/{person}/delete [POST]
+[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
 [**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
 
 
-# **personDisassociateAsset**
+## **personDisassociateAsset**
 > personDisassociateAsset(person, asset)
 
-/persons/{person}/assets/delete/{asset} [POST]
+/persons/\{person\}/assets/delete/\{asset\} [POST]
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
@@ -57,9 +57,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **personsCreateNewPerson**
+
+## **personsCreateNewPerson**
 > Person personsCreateNewPerson(transferables, seededPerson)
 
 /persons/create [POST]
@@ -102,12 +102,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **personsDeletePerson**
+
+## **personsDeletePerson**
 > personsDeletePerson(person)
 
-/persons/{person}/delete [POST]
+/persons/\{person\}/delete [POST]
 
 This will delete a specific person.
 
@@ -144,9 +144,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **personsSnapshot**
+
+## **personsSnapshot**
 > Persons personsSnapshot(transferables)
 
 /persons [GET]
@@ -187,5 +187,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

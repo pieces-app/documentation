@@ -27,6 +27,6 @@ preonboarded_persona_details_dict = preonboarded_persona_details_instance.to_dic
 # create an instance of PreonboardedPersonaDetails from a dict
 preonboarded_persona_details_form_dict = preonboarded_persona_details.from_dict(preonboarded_persona_details_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -1,27 +1,27 @@
-# core_openapi.api.ModelApi
+# Model API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/{model}/download | /model/{model}/download [POST]
-[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/{model}/download/cancel | /model/{model}/download/cancel [POST]
-[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/{model}/download/progress | /model/{model}/download/progress [WS]
-[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/{model}/load | /model/{model}/load [POST]
-[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/{model}/unload | /model/{model}/unload [POST]
+[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
 [**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update | /model/update [POST]
-[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/{model} | /model/{model} [GET]
+[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
-# **modelSpecificModelDownload**
+## **modelSpecificModelDownload**
 > Model modelSpecificModelDownload(model)
 
-/model/{model}/download [POST]
+/model/\{model\}/download [POST]
 
 This will download a specific model onto your local machine.
 
@@ -59,12 +59,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelSpecificModelDownloadCancel**
+
+## **modelSpecificModelDownloadCancel**
 > Model modelSpecificModelDownloadCancel(model)
 
-/model/{model}/download/cancel [POST]
+/model/\{model\}/download/cancel [POST]
 
 This will cancel a specific model download in progress.
 
@@ -102,12 +102,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelSpecificModelDownloadProgress**
+
+## **modelSpecificModelDownloadProgress**
 > ModelDownloadProgress modelSpecificModelDownloadProgress(model)
 
-/model/{model}/download/progress [WS]
+/model/\{model\}/download/progress [WS]
 
 This is a Websocket Connection, to get the progress of the downloading of a specific model.
 
@@ -145,12 +145,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelSpecificModelLoad**
+
+## **modelSpecificModelLoad**
 > Model modelSpecificModelLoad(model)
 
-/model/{model}/load [POST]
+/model/\{model\}/load [POST]
 
 This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
 
@@ -188,12 +188,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelSpecificModelUnload**
+
+## **modelSpecificModelUnload**
 > Model modelSpecificModelUnload(model)
 
-/model/{model}/unload [POST]
+/model/\{model\}/unload [POST]
 
 This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
 
@@ -231,9 +231,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelUpdate**
+
+## **modelUpdate**
 > Model modelUpdate(model)
 
 /model/update [POST]
@@ -274,12 +274,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **modelsSpecificModelSnapshot**
+
+## **modelsSpecificModelSnapshot**
 > Model modelsSpecificModelSnapshot(model)
 
-/model/{model} [GET]
+/model/\{model\} [GET]
 
 
 
@@ -317,5 +317,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

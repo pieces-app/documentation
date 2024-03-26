@@ -30,6 +30,6 @@ suggestion_dict = suggestion_instance.to_dict()
 # create an instance of Suggestion from a dict
 suggestion_form_dict = suggestion.from_dict(suggestion_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

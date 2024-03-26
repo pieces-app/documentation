@@ -1,33 +1,33 @@
-# core_openapi.api.AssetApi
+# Asset API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/{asset}/tags/associate/{tag} | /asset/{asset}/tags/associate/{tag} [POST]
-[**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/{asset}/websites/associate/{website} | /asset/{asset}/websites/associate/{website} [POST]
-[**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/{asset}/tags/disassociate/{tag} | /asset/{asset}/tags/disassociate/{tag} [POST]
-[**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/{asset}/websites/disassociate/{website} | /asset/{asset}/websites/disassociate/{website} [POST]
-[**assetFormats**](AssetApi#assetformats) | **GET** /asset/{asset}/formats | /asset/{asset}/formats [GET] Scoped To Asset
+[**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
+[**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
+[**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
+[**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
+[**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
 [**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
-[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/{asset}/scores/increment | '/asset/{asset}/scores/increment' [POST]
-[**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/{asset} | /asset/{asset} [GET] Scoped To Asset
-[**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/{asset} | /asset/{asset} [POST] Scoped to an Asset
-[**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/{asset}/activities | /asset/{asset}/activities [GET]
-[**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/{asset}/conversations | /asset/{asset}/conversations [GET]
-[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/{asset}/export | [GET] /asset/{asset}/export
+[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | '/asset/\{asset\}/scores/increment' [POST]
+[**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
+[**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
+[**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
+[**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
+[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | [GET] /asset/\{asset\}/export
 [**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
 
 
-# **assetAssociateTag**
+## **assetAssociateTag**
 > assetAssociateTag(asset, tag)
 
-/asset/{asset}/tags/associate/{tag} [POST]
+/asset/\{asset\}/tags/associate/\{tag\} [POST]
 
 This will associate a tag with a asset. This will do the same thing as the tag equivilant.
 
@@ -66,12 +66,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetAssociateWebsite**
+
+## **assetAssociateWebsite**
 > assetAssociateWebsite(asset, website)
 
-/asset/{asset}/websites/associate/{website} [POST]
+/asset/\{asset\}/websites/associate/\{website\} [POST]
 
 This will associate a website with a asset. This will do the same thing as the website equivilant.
 
@@ -110,12 +110,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetDisassociateTag**
+
+## **assetDisassociateTag**
 > assetDisassociateTag(tag, asset)
 
-/asset/{asset}/tags/disassociate/{tag} [POST]
+/asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 
 This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivilant.
 
@@ -154,12 +154,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetDisassociateWebsite**
+
+## **assetDisassociateWebsite**
 > assetDisassociateWebsite(website, asset)
 
-/asset/{asset}/websites/disassociate/{website} [POST]
+/asset/\{asset\}/websites/disassociate/\{website\} [POST]
 
 This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivilant.
 
@@ -198,12 +198,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetFormats**
+
+## **assetFormats**
 > Formats assetFormats(asset, transferables)
 
-/asset/{asset}/formats [GET] Scoped To Asset
+/asset/\{asset\}/formats [GET] Scoped To Asset
 
 Get the formats for a given asset.
 
@@ -243,9 +243,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetReclassify**
+
+## **assetReclassify**
 > Asset assetReclassify(transferables, assetReclassification)
 
 /asset/reclassify [POST]
@@ -288,12 +288,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetScoresIncrement**
+
+## **assetScoresIncrement**
 > assetScoresIncrement(asset, seededScoreIncrement)
 
-'/asset/{asset}/scores/increment' [POST]
+'/asset/\{asset\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -332,12 +332,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetSnapshot**
+
+## **assetSnapshot**
 > Asset assetSnapshot(asset, transferables)
 
-/asset/{asset} [GET] Scoped To Asset
+/asset/\{asset\} [GET] Scoped To Asset
 
 Get the snapshot of a specific asset.
 
@@ -377,12 +377,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetSnapshotPost**
+
+## **assetSnapshotPost**
 > Asset assetSnapshotPost(asset, transferables, seededAccessor)
 
-/asset/{asset} [POST] Scoped to an Asset
+/asset/\{asset\} [POST] Scoped to an Asset
 
 Get the snapshot of a specific asset. by passing over as well the user who is getting the snapshot.
 
@@ -424,12 +424,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetSpecificAssetActivities**
+
+## **assetSpecificAssetActivities**
 > Activities assetSpecificAssetActivities(asset, transferables)
 
-/asset/{asset}/activities [GET]
+/asset/\{asset\}/activities [GET]
 
 This will get a specific asset's activity events
 
@@ -469,12 +469,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetSpecificAssetConversations**
+
+## **assetSpecificAssetConversations**
 > Conversations assetSpecificAssetConversations(asset, transferables)
 
-/asset/{asset}/conversations [GET]
+/asset/\{asset\}/conversations [GET]
 
 This will get a specific asset's conversations
 
@@ -514,12 +514,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetSpecificAssetExport**
+
+## **assetSpecificAssetExport**
 > ExportedAsset assetSpecificAssetExport(asset, exportType)
 
-[GET] /asset/{asset}/export
+[GET] /asset/\{asset\}/export
 
 This will return a export version of your asset.
 
@@ -559,9 +559,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **assetUpdate**
+
+## **assetUpdate**
 > Asset assetUpdate(transferables, asset)
 
 /asset/update [POST] Scoped to Asset
@@ -604,5 +604,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

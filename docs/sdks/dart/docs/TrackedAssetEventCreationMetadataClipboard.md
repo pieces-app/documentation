@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **keyboard** | **bool** | Whether the clipboard was utilized via the keyboard | [optional] 
 **interaction** | **bool** | Whether the clipboard was extracted through a button click | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

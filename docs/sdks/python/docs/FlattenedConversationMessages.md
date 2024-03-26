@@ -28,6 +28,6 @@ flattened_conversation_messages_dict = flattened_conversation_messages_instance.
 # create an instance of FlattenedConversationMessages from a dict
 flattened_conversation_messages_form_dict = flattened_conversation_messages.from_dict(flattened_conversation_messages_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

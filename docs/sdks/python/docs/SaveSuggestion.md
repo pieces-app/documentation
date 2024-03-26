@@ -26,6 +26,6 @@ save_suggestion_dict = save_suggestion_instance.to_dict()
 # create an instance of SaveSuggestion from a dict
 save_suggestion_form_dict = save_suggestion.from_dict(save_suggestion_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

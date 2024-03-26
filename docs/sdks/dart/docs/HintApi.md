@@ -1,23 +1,23 @@
-# core_openapi.api.HintApi
+# Hint API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/{hint}/scores/increment | '/hint/{hint}/scores/increment' [POST]
-[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/{hint} | /hint/{hint} [POST]
+[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | '/hint/\{hint\}/scores/increment' [POST]
+[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
 [**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
-# **hintScoresIncrement**
+## **hintScoresIncrement**
 > hintScoresIncrement(hint, seededScoreIncrement)
 
-'/hint/{hint}/scores/increment' [POST]
+'/hint/\{hint\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -56,12 +56,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **hintSpecificHintSnapshot**
+
+## **hintSpecificHintSnapshot**
 > Hint hintSpecificHintSnapshot(hint)
 
-/hint/{hint} [POST]
+/hint/\{hint\} [POST]
 
 This will get a snapshot of a specific hint.
 
@@ -99,9 +99,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **hintUpdate**
+
+## **hintUpdate**
 > Hint hintUpdate(hint)
 
 /hint/update [POST]
@@ -142,5 +142,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -26,6 +26,6 @@ referenced_website_dict = referenced_website_instance.to_dict()
 # create an instance of ReferencedWebsite from a dict
 referenced_website_form_dict = referenced_website.from_dict(referenced_website_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

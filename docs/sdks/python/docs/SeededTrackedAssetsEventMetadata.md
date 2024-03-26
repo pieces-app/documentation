@@ -25,6 +25,6 @@ seeded_tracked_assets_event_metadata_dict = seeded_tracked_assets_event_metadata
 # create an instance of SeededTrackedAssetsEventMetadata from a dict
 seeded_tracked_assets_event_metadata_form_dict = seeded_tracked_assets_event_metadata.from_dict(seeded_tracked_assets_event_metadata_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

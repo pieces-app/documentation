@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **ocr** | [**FlattenedOCRAnalysis**](FlattenedOCRAnalysis) |  | [optional] 
 **analysis** | **String** | this is a reference to our (parent)analysis | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

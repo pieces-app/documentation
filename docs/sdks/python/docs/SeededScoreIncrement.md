@@ -49,6 +49,6 @@ seeded_score_increment_dict = seeded_score_increment_instance.to_dict()
 # create an instance of SeededScoreIncrement from a dict
 seeded_score_increment_form_dict = seeded_score_increment.from_dict(seeded_score_increment_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

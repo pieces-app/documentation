@@ -26,6 +26,6 @@ distributions_dict = distributions_instance.to_dict()
 # create an instance of Distributions from a dict
 distributions_form_dict = distributions.from_dict(distributions_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

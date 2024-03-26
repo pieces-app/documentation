@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **token** | [**TokenizedPKCE**](TokenizedPKCE) |  | [optional] 
 **auth0** | [**Auth0**](Auth0) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

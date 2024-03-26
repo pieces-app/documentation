@@ -16,6 +16,6 @@ Name | Type | Description | Notes
 **identifier** | **String** | This is the uuid of the asset. | 
 **pseudo** | **bool** | If this is a pseudo asset that was also returned. | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

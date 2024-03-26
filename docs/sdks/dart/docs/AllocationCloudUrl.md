@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **status** | [**AllocationStatusEnum**](AllocationStatusEnum) |  | 
 **url** | **String** | this is the base url that is used to communicat with your vpc. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

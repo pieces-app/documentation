@@ -238,10 +238,20 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'SDKs',
       items: [
+        // {
+        //   type: 'doc',
+        //   id: 'sdks/typescript/guides/getting-started',
+        //   label: 'TypeScript SDK',
+        // },
         {
           type: 'doc',
           id: 'sdks/python/guides/getting-started',
           label: 'Python SDK',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/guides/getting-started',
+          label: 'Dart SDK',
         },
         {
           type: 'doc',
@@ -349,7 +359,100 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
-  dartSDKSidebar: [],
+  dartSDKSidebar: [
+    {
+      type: 'doc',
+      id: 'sdks/dart/guides/getting-started',
+      label: 'Getting Started',
+    },
+    {
+      type: 'category',
+      label: 'APIs',
+      items: [
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/ActivitiesApi',
+          label: 'Activities API',
+        },
+        {
+          type:'doc',
+          id: 'sdks/dart/docs/ApplicationsApi',
+          label: 'Applications API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/AssetsApi',
+          label: 'Assets API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/ConnectorApi',
+          label: 'Connector API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/ConversationsApi',
+          label: 'Conversations API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/ModelsApi',
+          label: 'Models API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/OSApi',
+          label: 'OS API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/SearchApi',
+          label: 'Search API',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/WellKnownApi',
+          label: 'WellKnown API',
+        }
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Models',
+      items: [
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/Activity',
+          label: 'Activity',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/Application',
+          label: 'Application',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/Asset',
+          label: 'Asset',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/Conversation',
+          label: 'Conversation',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/Model',
+          label: 'Model',
+        },
+        {
+          type: 'doc',
+          id: 'sdks/dart/docs/SearchedAssets',
+          label: 'Searched Assets',
+        },
+      ],
+    },
+  ],
 
   kotlinSDKSidebar: [
     {

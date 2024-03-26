@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **base** | **String** | this is a reference(uuid) to the base format | 
 **overlay** | **String** | this is a reference(uuid) to the overlay format | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

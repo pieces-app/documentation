@@ -29,6 +29,6 @@ analysis_dict = analysis_instance.to_dict()
 # create an instance of Analysis from a dict
 analysis_form_dict = analysis.from_dict(analysis_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -18,6 +18,6 @@ Name | Type | Description | Notes
 **picture** | **String** | A URI pointing to the user's picture. | 
 **nickname** | **String** | The user's nickname. | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -1,23 +1,23 @@
-# core_openapi.api.ActivityApi
+# Activity API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**activitiesSpecificActivitySnapshot**](ActivityApi#activitiesspecificactivitysnapshot) | **GET** /activity/{activity} | /activity/{activity} [GET]
+[**activitiesSpecificActivitySnapshot**](ActivityApi#activitiesspecificactivitysnapshot) | **GET** /activity/\{activity\} | /activity/\{activity\} [GET]
 [**activityIdentifiersSnapshot**](ActivityApi#activityidentifierssnapshot) | **GET** /activity/identifiers | /activity/identifiers [GET]
 [**activityUpdate**](ActivityApi#activityupdate) | **POST** /activity/update | /activity/update [POST]
 
 
-# **activitiesSpecificActivitySnapshot**
+## **activitiesSpecificActivitySnapshot**
 > Activity activitiesSpecificActivitySnapshot(activity, transferables)
 
-/activity/{activity} [GET]
+/activity/\{activity\} [GET]
 
 This will attempt to get a specific activity.
 
@@ -57,9 +57,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activityIdentifiersSnapshot**
+
+## **activityIdentifiersSnapshot**
 > FlattenedActivities activityIdentifiersSnapshot(pseudo, activityFilterEnum)
 
 /activity/identifiers [GET]
@@ -102,9 +102,9 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **activityUpdate**
+
+## **activityUpdate**
 > Activity activityUpdate(transferables, activity)
 
 /activity/update [POST]
@@ -147,5 +147,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

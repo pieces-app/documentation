@@ -16,12 +16,12 @@ Name | Type | Description | Notes
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
-**mechanisms** | [**Map<String, MechanismEnum>**](MechanismEnum) | This is a Map<String, MechanismEnum> where the the key is an asset id. | [optional] [default to const {}]
+**mechanisms** | [**Map\<String, MechanismEnum\>**](MechanismEnum) | This is a Map\<String, MechanismEnum\>** where the the key is an asset id. | [optional] [default to const {}]
 **interactions** | **int** | This is an optional value that will keep track of the number of times this has been interacted with. | [optional] 
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -28,6 +28,6 @@ text_location_dict = text_location_instance.to_dict()
 # create an instance of TextLocation from a dict
 text_location_form_dict = text_location.from_dict(text_location_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -28,6 +28,6 @@ segmented_technical_language_fragment_dict = segmented_technical_language_fragme
 # create an instance of SegmentedTechnicalLanguageFragment from a dict
 segmented_technical_language_fragment_form_dict = segmented_technical_language_fragment.from_dict(segmented_technical_language_fragment_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

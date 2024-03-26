@@ -26,6 +26,6 @@ seeds_dict = seeds_instance.to_dict()
 # create an instance of Seeds from a dict
 seeds_form_dict = seeds.from_dict(seeds_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

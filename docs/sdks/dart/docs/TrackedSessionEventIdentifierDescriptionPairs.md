@@ -22,6 +22,6 @@ Name | Type | Description | Notes
 **sessionOnboardingInitialized** | **String** | Onboarding has been initialized for this session | [optional] 
 **sessionOnboardingCompleted** | **String** | Onboarding has been completed for this session | [optional] 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

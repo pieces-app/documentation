@@ -1,18 +1,18 @@
-# core_openapi.api.UltraSuiteApi
+# UltraSuite API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
-# **assetsCreateUltraSuiteAsset**
+## **assetsCreateUltraSuiteAsset**
 > Asset assetsCreateUltraSuiteAsset(seededUltraSuiteAsset)
 
 /ultra_suite/assets/create [POST]
@@ -53,5 +53,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

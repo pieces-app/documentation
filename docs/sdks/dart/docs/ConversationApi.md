@@ -1,34 +1,34 @@
-# core_openapi.api.ConversationApi
+# Conversation API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/{conversation}/anchors/associate/{anchor} | /conversation/{conversation}/anchors/associate/{anchor} [POST]
-[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/{conversation}/assets/associate/{asset} | /conversation/{conversation}/assets/associate/{asset} [POST]
-[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/{conversation}/websites/associate/{website} | /conversation/{conversation}/websites/associate/{website} [POST]
-[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/{conversation}/anchors/delete/{anchor} | /conversation/{conversation}/anchors/delete/{anchor} [POST]
-[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/{conversation}/assets/delete/{asset} | /conversation/{conversation}/assets/delete/{asset} [POST]
-[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/{conversation}/websites/disassociate/{website} | /website/{website}/websites/disassociate/{website} [POST]
-[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/{conversation} | /conversation/{conversation} [GET]
-[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/{conversation}/grounding/messages/associate/{message} | /conversation/{conversation}/grounding/messages/associate/{message} [POST]
-[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/{conversation}/grounding/messages/disassociate/{message} | /conversation/{conversation}/grounding/messages/disassociate/{message} [POST]
-[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/{conversation}/scores/increment | '/conversation/{conversation}/scores/increment' [POST]
-[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/{conversation}/messages | /conversation/{conversation}/messages [GET]
-[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/{conversation}/rename | /conversation/{conversation}/rename [POST]
-[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/{conversation}/summarize | /conversation/{conversation}/summarize [POST]
+[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
+[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
+[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
+[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
+[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
+[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | '/conversation/\{conversation\}/scores/increment' [POST]
+[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
+[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
+[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
 [**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
 
 
-# **conversationAssociateAnchor**
+## **conversationAssociateAnchor**
 > conversationAssociateAnchor(conversation, anchor)
 
-/conversation/{conversation}/anchors/associate/{anchor} [POST]
+/conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
 
 This will update both the anchor and the conversation.  and associate the 2 together
 
@@ -67,12 +67,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationAssociateAsset**
+
+## **conversationAssociateAsset**
 > conversationAssociateAsset(conversation, asset)
 
-/conversation/{conversation}/assets/associate/{asset} [POST]
+/conversation/\{conversation\}/assets/associate/\{asset\} [POST]
 
 This will update both the asset and the conversation.  and associate the 2 together
 
@@ -111,12 +111,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationAssociateWebsite**
+
+## **conversationAssociateWebsite**
 > conversationAssociateWebsite(conversation, website)
 
-/conversation/{conversation}/websites/associate/{website} [POST]
+/conversation/\{conversation\}/websites/associate/\{website\} [POST]
 
 This will update both the website and the conversation.  and associate the 2 together
 
@@ -155,12 +155,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationDisassociateAnchor**
+
+## **conversationDisassociateAnchor**
 > conversationDisassociateAnchor(conversation, anchor)
 
-/conversation/{conversation}/anchors/delete/{anchor} [POST]
+/conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
 
 This will update both the anchor and the conversation.  and delete(disassociate) the 2 together
 
@@ -199,12 +199,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationDisassociateAsset**
+
+## **conversationDisassociateAsset**
 > conversationDisassociateAsset(conversation, asset)
 
-/conversation/{conversation}/assets/delete/{asset} [POST]
+/conversation/\{conversation\}/assets/delete/\{asset\} [POST]
 
 This will update both the asset and the conversation.  and delete(disassociate) the 2.
 
@@ -243,12 +243,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationDisassociateWebsite**
+
+## **conversationDisassociateWebsite**
 > conversationDisassociateWebsite(conversation, website)
 
-/website/{website}/websites/disassociate/{website} [POST]
+/website/\{website\}/websites/disassociate/\{website\} [POST]
 
 This will enable us to dissassociate a conversation from a website.
 
@@ -287,12 +287,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationGetSpecificConversation**
+
+## **conversationGetSpecificConversation**
 > Conversation conversationGetSpecificConversation(conversation, transferables)
 
-/conversation/{conversation} [GET]
+/conversation/\{conversation\} [GET]
 
 This will get a specific conversation.
 
@@ -332,12 +332,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationGroundingMessagesAssociateMessage**
+
+## **conversationGroundingMessagesAssociateMessage**
 > conversationGroundingMessagesAssociateMessage(conversation, message)
 
-/conversation/{conversation}/grounding/messages/associate/{message} [POST]
+/conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
 
 This will save the grounding context for a conversation. This will enable us to associate a message to the conversation.grounding object.
 
@@ -376,12 +376,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationGroundingMessagesDisassociateMessage**
+
+## **conversationGroundingMessagesDisassociateMessage**
 > conversationGroundingMessagesDisassociateMessage(conversation, message)
 
-/conversation/{conversation}/grounding/messages/disassociate/{message} [POST]
+/conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
 
 This will remove specific grounding context for a conversation. This will enable us to dissassociate a message from the conversation.grounding object.
 
@@ -420,12 +420,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationScoresIncrement**
+
+## **conversationScoresIncrement**
 > conversationScoresIncrement(conversation, seededScoreIncrement)
 
-'/conversation/{conversation}/scores/increment' [POST]
+'/conversation/\{conversation\}/scores/increment' [POST]
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
@@ -464,12 +464,12 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationSpecificConversationMessages**
+
+## **conversationSpecificConversationMessages**
 > ConversationMessages conversationSpecificConversationMessages(conversation, transferables)
 
-/conversation/{conversation}/messages [GET]
+/conversation/\{conversation\}/messages [GET]
 
 This will get a specific conversations messages
 
@@ -509,12 +509,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationSpecificConversationRename**
+
+## **conversationSpecificConversationRename**
 > Conversation conversationSpecificConversationRename(conversation, transferables)
 
-/conversation/{conversation}/rename [POST]
+/conversation/\{conversation\}/rename [POST]
 
 This will take a specific converssation and it will rename using ML.
 
@@ -554,12 +554,12 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationSummarize**
+
+## **conversationSummarize**
 > ConversationSummarizeOutput conversationSummarize(conversation, conversationSummarizeInput)
 
-/conversation/{conversation}/summarize [POST]
+/conversation/\{conversation\}/summarize [POST]
 
 This will take a current conversation and create a summary of the conversation and save it as an annotation on the conversation.  will return the annotation reference used as the summary.
 
@@ -599,9 +599,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **conversationUpdate**
+
+## **conversationUpdate**
 > Conversation conversationUpdate(transferables, conversation)
 
 /conversation/update [POST]
@@ -644,5 +644,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **image** | **String** | this is a reference the the imageAnalysis. | 
 **model** | [**Model**](Model) |  | 
 
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

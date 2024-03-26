@@ -27,6 +27,6 @@ tracked_assets_event_search_metadata_dict = tracked_assets_event_search_metadata
 # create an instance of TrackedAssetsEventSearchMetadata from a dict
 tracked_assets_event_search_metadata_form_dict = tracked_assets_event_search_metadata.from_dict(tracked_assets_event_search_metadata_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

@@ -27,6 +27,6 @@ referenced_tag_dict = referenced_tag_instance.to_dict()
 # create an instance of ReferencedTag from a dict
 referenced_tag_form_dict = referenced_tag.from_dict(referenced_tag_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

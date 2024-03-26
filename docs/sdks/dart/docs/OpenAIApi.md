@@ -1,18 +1,18 @@
-# core_openapi.api.OpenAIApi
+# OpenAI API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
-# **openAiModelsList**
+## **openAiModelsList**
 > OpenAIModelsListOutput openAiModelsList(openAIModelsListInput)
 
 /open_ai/models/list [POST]
@@ -53,5 +53,5 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

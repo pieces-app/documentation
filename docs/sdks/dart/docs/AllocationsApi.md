@@ -1,11 +1,11 @@
-# core_openapi.api.AllocationsApi
+# Allocations API
 
 ## Load the API package
 ```dart
 import 'package:core_openapi/api.dart';
 ```
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
-# **allocationsConnectNewCloud**
+## **allocationsConnectNewCloud**
 > AllocationCloud allocationsConnectNewCloud(userProfile)
 
 /allocations/connect [POST]
@@ -58,9 +58,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationsCreateNewAllocation**
+
+## **allocationsCreateNewAllocation**
 > AllocationCloud allocationsCreateNewAllocation(allocationCloud)
 
 /allocations/create [POST]
@@ -101,9 +101,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationsDeleteAllocation**
+
+## **allocationsDeleteAllocation**
 > String allocationsDeleteAllocation(allocationCloud)
 
 /allocations/delete [POST]
@@ -144,9 +144,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationsDisconnectCloud**
+
+## **allocationsDisconnectCloud**
 > String allocationsDisconnectCloud(allocationCloud)
 
 /allocations/disconnect [POST]
@@ -187,9 +187,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationsReconnectCloud**
+
+## **allocationsReconnectCloud**
 > AllocationCloud allocationsReconnectCloud(allocationCloud)
 
 /allocations/reconnect [POST]
@@ -230,9 +230,9 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
 
-# **allocationsSnapshot**
+
+## **allocationsSnapshot**
 > Allocations allocationsSnapshot()
 
 /allocations [GET]
@@ -269,5 +269,5 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)
+
 

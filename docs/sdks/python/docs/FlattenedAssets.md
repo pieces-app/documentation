@@ -28,6 +28,6 @@ flattened_assets_dict = flattened_assets_instance.to_dict()
 # create an instance of FlattenedAssets from a dict
 flattened_assets_form_dict = flattened_assets.from_dict(flattened_assets_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 

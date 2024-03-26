@@ -27,6 +27,6 @@ person_access_dict = person_access_instance.to_dict()
 # create an instance of PersonAccess from a dict
 person_access_form_dict = person_access.from_dict(person_access_dict)
 ```
-[[Back to Model list]](../README#documentation-for-models) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to README]](../README)
+
 
 
