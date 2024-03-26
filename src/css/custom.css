@@ -125,6 +125,15 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 50px 0;
 }
 
+/*404 Page Styles*/
+.error-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin: auto;
+}
+
 @media (max-width: 1000px) {
   .hero-container {
     flex-direction: column;
@@ -137,6 +146,10 @@ html[data-theme='dark'] .header-github-link:before {
   /*Swaps order of `Welcome to Pieces for Developers` and the video on mobile*/
   .hero-container > :nth-child(1) { order: 2; }
   .hero-container > :nth-child(2) { order: 1; }
+
+  .error-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .feature-grid {
