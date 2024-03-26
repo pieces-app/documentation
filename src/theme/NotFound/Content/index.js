@@ -6,34 +6,59 @@ import {MiniSpacer} from "@site/src/components/Spacers";
 
 export default function NotFoundContent({className}) {
   return (
-    <main className={clsx('container margin-vert--xl', className)}>
-      <div className="row">
-        <div className="col col--8 col--offset-2">
+    <main style={{
+      margin: '0 auto',
+      padding: '0 20px',
+      maxWidth: '1200px'
+    }}>
+      <div className={'hero-container'}>
+        <div>
           <div style={{
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
           }}>
-            <img
-              src={'/assets/404_image.webp'}
-              width={500}
-              alt={'404 - Page Not Found'}
-            />
+            <h1 style={{color: 'var(--ifm-color-primary-darkest)', fontSize: '2.5rem', textAlign: 'center'}}>
+              You found a dead end!
+            </h1>
+            <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
+            <GridFlexRow type={'evenly'}>
+              <CTAButton
+                href={'/'}
+                label={'← Back to Docs'}
+                type={'secondary'}
+              />
+            </GridFlexRow>
           </div>
+        </div>
 
-          <h1 className="hero__title">Oops! We goofed.</h1>
-          <p>It seems like you've found a missing link. Don't worry, it happens to the best of us!</p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <img
+            src={'/assets/404_image.webp'}
+            width={500}
+            alt={'404 - Page Not Found'}
+          />
+        </div>
+      </div>
 
-          <hr />
+      <hr />
 
+      <div className={'error-footer'}>
+        <div>
           <h2>Get Started with Pieces for Developers</h2>
-          <p>Here are some links to help you get started:</p>
           <ul>
             <li><a href={'/installation-getting-started/what-am-i-installing'}>What is Pieces for Developers?</a></li>
-            <li><a href={''}>Getting Started Guide</a></li>
-            <li><a href={'/docs/tutorials'}>Tutorials</a></li>you
+            <li><a href={'https://youtube.com/@getpieces'}>Video Tutorials</a></li>
             <li><a href={'/faq'}>FAQs</a></li>
           </ul>
+        </div>
 
+        <div>
           <h2>Explore Plugins</h2>
           <GridFlexRow type={'start'}>
             <CTAButton
@@ -55,20 +80,15 @@ export default function NotFoundContent({className}) {
               type={'secondary'}
             />
           </GridFlexRow>
+        </div>
 
-          <MiniSpacer />
-
+        <div>
           <h2>Need more help?</h2>
           <ul>
             <li>
-              <a href={'/suppport'}>Contact Support</a>
+              <a href={'/support'}>Contact Support</a>
             </li>
           </ul>
-          {/*<CTAButton*/}
-          {/*  label={'Contact Support'}*/}
-          {/*  href={'/support'}*/}
-          {/*  type={'secondary'}*/}
-          {/*/>*/}
         </div>
       </div>
     </main>
