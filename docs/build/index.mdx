@@ -3,8 +3,8 @@ title: Build with Pieces
 description: Jumpstart your development with Pieces SDKs, offering powerful tools to simplify your build process. Explore our comprehensive guides, example projects, and community support to enhance your workflow. Build smarter and faster with Pieces.
 ---
 
+import {MiniSpacer} from "../../src/components/Spacers";
 import CTAButton from "/src/components/CTAButton";
-import GridFlexRow from "/src/components/GridFlexRow";
 import Grid from "/src/components/Grid";
 
 Pieces provides SDK libraries for major programming languages so you don't have to write code for interacting with our API protocols from scratch.
@@ -13,43 +13,118 @@ We're always working on improving and extending the current stack of available S
 
 ## Explore Our SDKs
 
-<GridFlexRow type={'evenly'}>
-  <CTAButton
-    label={'Python SDK'}
-    href={'sdks/python/guides/getting-started'}
-    icon={'/assets/languages/python_logo.png'}
-    type={'secondary'}
-  />
-  <CTAButton
-    label={'Dart SDK'}
-    href={'sdks/dart/guides/getting-started'}
-    icon={'/assets/languages/dart_logo.png'}
-    type={'secondary'}
-  />
-  <CTAButton
-    label={'Kotlin SDK'}
-    href={'sdks/kotlin/guides/getting-started'}
-    icon={'/assets/languages/kotlin_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
+<Grid cols={2}>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <img
+        src={'/assets/languages/typescript_logo.png'}
+        alt={'Typescript Logo'}
+        width={40}
+      />
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Typescript SDK</span>
+    </div>
+    <MiniSpacer/>
+    <p>Typescript SDK for Pieces OS</p>
+    <CTAButton
+      label={'Coming Soon...'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <img
+        src={'/assets/languages/python_logo.png'}
+        alt={'Python Logo'}
+        width={40}
+      />
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Python SDK</span>
+    </div>
+    <MiniSpacer/>
+    <p>Python SDK for Pieces OS</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'sdks/python/guides/getting-started'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <img
+        src={'/assets/languages/dart_logo.png'}
+        alt={'Dart Logo'}
+        width={40}
+      />
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Dart SDK</span>
+    </div>
+    <MiniSpacer/>
+    <p>Dart SDK for Pieces OS</p>
+    <CTAButton
+      label={'Coming Soon...'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <img
+        src={'/assets/languages/kotlin_logo.png'}
+        alt={'Kotlin Logo'}
+        width={40}
+      />
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Kotlin SDK</span>
+    </div>
+    <MiniSpacer/>
+    <p>Kotlin SDK for Pieces OS</p>
+    <CTAButton
+      label={'Coming Soon...'}
+      type={'secondary'}
+    />
+  </div>
+</Grid>
 
 ## Capabilities
 
 <Grid cols={2}>
-  <div className={'feature-card'}>
+  <div className={'grid-card'}>
     <h2>🤖 Copilot Chats</h2>
     <p>Communicate seamlessly with our copilot functionality.</p>
   </div>
-  <div className={'feature-card'}>
+  <div className={'grid-card'}>
     <h2>📁 Asset Management</h2>
     <p>Save and manage assets and formats efficiently.</p>
   </div>
-  <div className={'feature-card'}>
+  <div className={'grid-card'}>
     <h2>🖥 Local Server Interaction</h2>
     <p>Interact with a locally hosted server for various functionalities.</p>
   </div>
-  <div className={'feature-card'}>
+  <div className={'grid-card'}>
     <h2>🧠 Cloud & Local LLM Support</h2>
     <p>Tap into your favorite cloud or local LLM with ease.</p>
   </div>

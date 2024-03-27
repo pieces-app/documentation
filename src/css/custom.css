@@ -41,7 +41,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --feature-card-border-color: #dedede;
+  --grid-card-border-color: #dedede;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -80,7 +80,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --feature-card-border-color: #303030;
+  --grid-card-border-color: #303030;
 }
 
 /* Fix margin for faq dropdown titles */
@@ -168,9 +168,9 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 10px;
 }
 
-.feature-card {
+.grid-card {
   padding: 20px;
-  border: 1px solid var(--feature-card-border-color);
+  border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
 }
 

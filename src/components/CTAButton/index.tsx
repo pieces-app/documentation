@@ -3,11 +3,12 @@ import Image from "../Image";
 
 type CTAButtonProps = {
   label?: string
-  href: string
+  href?: string
   // Primary is larger, secondary is smaller
   type?: 'primary' | 'secondary'
   icon?: string
   iconDark?: string
+  disabled?: boolean
 }
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
@@ -20,6 +21,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       style={{
         fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
       }}
+      aria-disabled={props.disabled}
     >
       {props.icon || props.iconDark ? (
         colorMode === 'dark' && props.iconDark ? (
