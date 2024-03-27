@@ -7,6 +7,7 @@ import { pieces_app } from "/src/lib/const";
 import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
+import Video from "../../src/components/Video";
 
 <CTAButton
   href={pieces_app.links.extensions.visual_studio_ide}
@@ -44,6 +45,32 @@ Utilize a powerful Copilot integrated into your IDE, bringing your development t
 A [familiar chat experience](/features/pieces-copilot#plugin-integrations) spread across all your favorite text editing softwares.
 
 The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Visual Studio, Jetbrains, Obsidian, and JupyterLab.
+
+## Features
+
+### Insert At Cursor
+
+The Insert At Cursor feature allows you to insert code snippets at the cursor location in your code editor. To use this feature, select the code snippet you want to insert and click the Insert At Cursor button.
+
+<Video
+  type={'local'}
+  src={{
+    webm: '/assets/visual_studio/InsertAtCursor.webm',
+    mp4: '/assets/visual_studio/InsertAtCursor.mp4',
+  }}
+/>
+
+### Generate Shareable Link
+
+You can generate a shareable link for a code snippet by selecting the code you want to share, Right-click > Pieces > Share. This will generate and copy a Pieces link to your clipboard, which you can share with your teammates, friends, or on social media!
+
+<Video
+  type={'local'}
+  src={{
+    webm: '/assets/visual_studio/RightClickShareableLink.webm',
+    mp4: '/assets/visual_studio/RightClickShareableLink.mp4',
+  }}
+/>
 
 ## Pieces for Developers Visual Studio Extension Settings
 
