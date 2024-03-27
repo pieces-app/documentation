@@ -18,15 +18,16 @@ To get started with the Pieces SDK, follow these steps:
 
 2. **Install the PyPI Package**: Use pip to install the Pieces SDK package:
     ```shell
-    pip install pieces-os-client
+    pip install pieces-os-client==1.2.7
     ```
 
-## Usage
-After installing the SDK, you can import the library into your project and start utilizing its features:
+    :::warning
 
-```shell
-from pieces_os_client.models
-```
+    Ensure that you install `v1.2.7` of the Pieces SDK package to ensure compatibility with the latest version of Pieces OS.
+
+    This will be fixed in the coming weeks but for now, please install the package with the version number.
+
+    :::
 
 ## Requirements
 The Pieces SDK has the following system requirements:
@@ -34,51 +35,61 @@ The Pieces SDK has the following system requirements:
 - Pieces OS running as a backend service.
 - Python environment with pip for installing the SDK package.
 
-## Testing Usage
+## Getting Started
 
-Create a wellknown.py file and add this code to confirm you have installed the correct package:
+First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a `config.py` file to store your configuration info and a `wellknown.py` file to test the connection.
 
-```python
-# Enter a context with an instance of the API client
+Create a `config.py` file and add the following code:
+
+```python title="config.py"
+import pieces_os_client
+import platform
+
+# Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+platform_info = platform.platform()
+if 'Linux' in platform_info:
+    port = 5323
+else:
+    port = 1000
+
+# Defining the host is optional, but we've added support for Linux in the conditional statement above for this example.
+# It defaults to http://localhost:1000
+configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
+
+# Initialize the ApiClient globally
+api_client = pieces_os_client.ApiClient(configuration)
+```
+
+Create a `wellknown.py` file and add this code to confirm you have installed the correct package:
+
+```python title="wellknown.py"
+import pieces_os_client
+from config import configuration
+
+# Enter a context with an instance of the ApiClient
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pieces_os_client.WellKnownApi(api_client)
 
     try:
-        # api_instance.get_well_known_version() [Get]
+        # Retrieve the (wellknown) version of the Pieces OS
         api_response = api_instance.get_well_known_version()
-        print("The response of WellKnownApi->get_well_known_version:\n")
+        print("The response of WellKnownApi().get_well_known_version:")
         print(api_response)
     except Exception as e:
         print("Exception when calling WellKnownApi->get_well_known_version: %s\n" % e)
 ```
 
-**Your output should appear on your IDE terminal stating the version of the Pieces OS installed.**
+Run the Python script to see the output:
 
-## Examples
-Here are some examples of the basic endpoint for getting up and running:
+```shell
+python3 wellknown.py
+```
 
-<details>
-  <summary>Connect</summary>
+**The output should appear in your terminal stating the version of Pieces OS that is installed on your machine.**
 
-  When developing and creating an application on top of Pieces OS, it is important that you authenticate with the application itself when performing requests.
+## Next Steps
 
-  To 'connect' your application (this Python project) to the server, you will need to make a POST request to the `api_instance.connect()` endpoint of the API and print the response.
+You have successfully connected to the Pieces OS server using the Python SDK. You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
 
-  ```python
-  # Enter a context with an instance of the API client
-  with pieces_os_client.ApiClient(configuration) as api_client:
-      # Create an instance of the API class
-      api_instance = pieces_os_client.ConnectorApi(api_client)
-      seeded_connector_connection = pieces_os_client.SeededConnectorConnection()
-      # SeededConnectorConnection |  (optional)
-
-      try:
-          # api_instance.connect() [POST]
-          api_response = api_instance.connect(seeded_connector_connection=seeded_connector_connection)
-          print("The response of ConnectorApi->connect:\n")
-          print(api_response)
-      except Exception as e:
-          print("Exception when calling ConnectorApi->connect: %s\n" % e)
-  ```
-</details>
+Click the `Next →` button below to get started with the Python SDK documentation.
