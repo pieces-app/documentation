@@ -154,9 +154,16 @@ html[data-theme='dark'] .header-github-link:before {
   }
 }
 
-.feature-grid {
+.grid-3xN {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.grid-2xN {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 10px;
 }
@@ -168,13 +175,17 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 @media (max-width: 820px) {
-  .feature-grid {
+  .grid-3xN {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .feature-grid {
+  .grid-3xN {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-2xN {
     grid-template-columns: repeat(1, 1fr);
   }
 }
