@@ -144,6 +144,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/',
+          label: 'Home',
+          position: 'right',
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           label: 'Learn',
