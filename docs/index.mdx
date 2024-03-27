@@ -7,6 +7,7 @@ hide_table_of_contents: true
 
 import CTAButton from "/src/components/CTAButton";
 import Video from "/src/components/Video";
+import Grid from "/src/components/Grid";
 
 <div className={'hero-container'}>
   <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '20px 0'}}>
@@ -32,7 +33,7 @@ import Video from "/src/components/Video";
   />
 </div>
 
-<div className={'grid-3xN'}>
+<Grid cols={3}>
   <div className={'feature-card'}>
     <h2>🤖 Contextual AI Copilot</h2>
     <p>The Pieces Copilot runs at the operating system-level, using the power of retrieval augmented generation to learn from your entire workflow and make contextualized suggestions.</p>
@@ -57,4 +58,4 @@ import Video from "/src/components/Video";
     <h2>🔒 Security & Privacy</h2>
     <p>Pieces processes data on-device for air-gapped security and privacy. All AI capabilities can run entirely local or in the cloud, depending on operational constraints.</p>
   </div>
-</div>
+</Grid>

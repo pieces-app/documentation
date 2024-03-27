@@ -181,11 +181,7 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 @media (max-width: 600px) {
-  .grid-3xN {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .grid-2xN {
+  .grid-2xN, .grid-3xN {
     grid-template-columns: repeat(1, 1fr);
   }
 }

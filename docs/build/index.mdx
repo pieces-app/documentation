@@ -1,11 +1,11 @@
 ---
 title: Pieces SDKs
-description: Pieces provides SDK libraries for major programming languages like Python, Dart, Kotlin and TypeScript so you don't have to write code for interacting with our API protocols from scratch.
+description: Pieces libraries and
 ---
 
-import {activeSDKs} from "/src/lib/dynamicSDK";
 import CTAButton from "/src/components/CTAButton";
 import GridFlexRow from "/src/components/GridFlexRow";
+import Grid from "/src/components/Grid";
 
 Pieces provides SDK libraries for major programming languages so you don't have to write code for interacting with our API protocols from scratch.
 
@@ -37,7 +37,7 @@ We're always working on improving and extending the current stack of available S
 ## Features
 The Pieces SDK offers the following key features:
 
-<div className={'grid-2xN'}>
+<Grid cols={2}>
   <div className={'feature-card'}>
     <h2>🤖 Copilot Chats</h2>
     <p>Communicate seamlessly with our copilot functionality.</p>
@@ -54,7 +54,34 @@ The Pieces SDK offers the following key features:
     <h2>🧠 Cloud & Local LLM Support</h2>
     <p>Tap into your favorite cloud or local LLM with ease.</p>
   </div>
-</div>
+</Grid>
+
+## Example Projects
+
+We have a few example projects that demonstrate how to use the Pieces SDKs in a real-world scenario.
+
+<GridFlexRow type={'evenly'}>
+  <CTAButton
+    label={'React x Pieces'}
+    href={'https://github.com/pieces-app/example-ts'}
+    type={'secondary'}
+  />
+  <CTAButton
+    label={'Python CLI x Pieces'}
+    href={'https://github.com/pieces-app/cli-agent'}
+    type={'secondary'}
+  />
+  <CTAButton
+    label={'Svelte x Pieces'}
+    href={'https://github.com/seantiz/piecesvelte'}
+    type={'secondary'}
+  />
+  <CTAButton
+    label={'Streamlit x Pieces'}
+    href={'https://github.com/pieces-app/pieces-copilot-streamlit-example'}
+    type={'secondary'}
+  />
+</GridFlexRow>
 
 ## Community
 
