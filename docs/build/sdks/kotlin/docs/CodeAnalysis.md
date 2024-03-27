@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema.md) |  |  [optional]
 **tokenized** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
 **language** | **kotlin.String** |  |  [optional]
-**prediction** | [**kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;**](java.math.BigDecimal) |  |  [optional]
-**similarity** | [**kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;**](java.math.BigDecimal) |  |  [optional]
+**prediction** | **kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;** |  |  [optional]
+**similarity** | **kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;** |  |  [optional]
 **top5Colors** | **kotlin.collections.List&lt;kotlin.Int&gt;** |  |  [optional]
 **top5Sorted** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
 

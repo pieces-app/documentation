@@ -5,10 +5,10 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**backup**](BackupApi.md#backup) | **POST** /backup | /backup [POST]
-[**backupAsset**](BackupApi.md#backupAsset) | **POST** /backup/asset | /backup/asset [POST]
-[**backupRestoreSpecificBackup**](BackupApi.md#backupRestoreSpecificBackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
-[**backupRestoreSpecificBackupStreamed**](BackupApi.md#backupRestoreSpecificBackupStreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
-[**backupSpecificBackupSnapshot**](BackupApi.md#backupSpecificBackupSnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+[**backupAsset**](BackupApi.md#backupasset) | **POST** /backup/asset | /backup/asset [POST]
+[**backupRestoreSpecificBackup**](BackupApi.md#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backupRestoreSpecificBackupStreamed**](BackupApi.md#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backupSpecificBackupSnapshot**](BackupApi.md#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
 
 
 <a id="backup"></a>

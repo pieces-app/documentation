@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **user** | **kotlin.String** |  | 
 **os** | **kotlin.String** |  | 
 **language** | **kotlin.String** |  | 
-**length** | [**java.math.BigDecimal**](java.math.BigDecimal) |  | 
+**length** | **java.math.BigDecimal** |  | 
 **ast** | **kotlin.String** |  | 
 **timestamp** | **kotlin.String** |  | 
 **asset** | **kotlin.String** |  | 

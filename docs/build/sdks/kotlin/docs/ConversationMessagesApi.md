@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**messagesCreateSpecificMessage**](ConversationMessagesApi.md#messagesCreateSpecificMessage) | **POST** /messages/create | /messages/create [POST]
-[**messagesDeleteSpecificMessage**](ConversationMessagesApi.md#messagesDeleteSpecificMessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
-[**messagesSnapshot**](ConversationMessagesApi.md#messagesSnapshot) | **GET** /messages | /messages [GET]
+[**messagesCreateSpecificMessage**](ConversationMessagesApi.md#messagescreatespecificmessage) | **POST** /messages/create | /messages/create [POST]
+[**messagesDeleteSpecificMessage**](ConversationMessagesApi.md#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
+[**messagesSnapshot**](ConversationMessagesApi.md#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
 <a id="messagesCreateSpecificMessage"></a>

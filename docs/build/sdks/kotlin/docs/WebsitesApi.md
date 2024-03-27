@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**websitesCreateNewWebsite**](WebsitesApi.md#websitesCreateNewWebsite) | **POST** /websites/create | /websites/create [POST]
-[**websitesDeleteSpecificWebsite**](WebsitesApi.md#websitesDeleteSpecificWebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
-[**websitesExists**](WebsitesApi.md#websitesExists) | **POST** /websites/exists | /websites/exists [POST]
-[**websitesSnapshot**](WebsitesApi.md#websitesSnapshot) | **GET** /websites | /websites [GET]
+[**websitesCreateNewWebsite**](WebsitesApi.md#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
+[**websitesDeleteSpecificWebsite**](WebsitesApi.md#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
+[**websitesExists**](WebsitesApi.md#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
+[**websitesSnapshot**](WebsitesApi.md#websitessnapshot) | **GET** /websites | /websites [GET]
 
 
 <a id="websitesCreateNewWebsite"></a>

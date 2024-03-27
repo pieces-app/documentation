@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personScoresIncrement**](PersonApi.md#personScoresIncrement) | **POST** /person/\{person\}/scores/increment | &#39;/person/\{person\}/scores/increment&#39; [POST]
-[**personSnapshot**](PersonApi.md#personSnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
-[**updatePerson**](PersonApi.md#updatePerson) | **POST** /person/update | /person/update [POST]
+[**personScoresIncrement**](PersonApi.md#personscoresincrement) | **POST** /person/\{person\}/scores/increment | &#39;/person/\{person\}/scores/increment&#39; [POST]
+[**personSnapshot**](PersonApi.md#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
+[**updatePerson**](PersonApi.md#updateperson) | **POST** /person/update | /person/update [POST]
 
 
 <a id="personScoresIncrement"></a>

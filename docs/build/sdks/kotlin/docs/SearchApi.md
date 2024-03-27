@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fullTextSearch**](SearchApi.md#fullTextSearch) | **GET** /search/full_text | /search/full_text [GET]
-[**neuralCodeSearch**](SearchApi.md#neuralCodeSearch) | **GET** /search/neural_code | /search/neural_code [GET]
-[**tagBasedSearch**](SearchApi.md#tagBasedSearch) | **POST** /search/tag_based | /search/tag_based [POST]
+[**fullTextSearch**](SearchApi.md#fulltextsearch) | **GET** /search/full_text | /search/full_text [GET]
+[**neuralCodeSearch**](SearchApi.md#neuralcodesearch) | **GET** /search/neural_code | /search/neural_code [GET]
+[**tagBasedSearch**](SearchApi.md#tagbasedsearch) | **POST** /search/tag_based | /search/tag_based [POST]
 
 
 <a id="fullTextSearch"></a>

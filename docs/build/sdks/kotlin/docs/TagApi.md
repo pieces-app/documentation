@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tagAssociateAsset**](TagApi.md#tagAssociateAsset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
-[**tagAssociatePerson**](TagApi.md#tagAssociatePerson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
-[**tagDisassociateAsset**](TagApi.md#tagDisassociateAsset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
-[**tagDisassociatePerson**](TagApi.md#tagDisassociatePerson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
-[**tagScoresIncrement**](TagApi.md#tagScoresIncrement) | **POST** /tag/\{tag\}/scores/increment | &#39;/tag/\{tag\}/scores/increment&#39; [POST]
-[**tagUpdate**](TagApi.md#tagUpdate) | **POST** /tag/update | /tag/update [POST]
-[**tagsSpecificTagSnapshot**](TagApi.md#tagsSpecificTagSnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
+[**tagAssociateAsset**](TagApi.md#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
+[**tagAssociatePerson**](TagApi.md#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
+[**tagDisassociateAsset**](TagApi.md#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
+[**tagDisassociatePerson**](TagApi.md#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
+[**tagScoresIncrement**](TagApi.md#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | &#39;/tag/\{tag\}/scores/increment&#39; [POST]
+[**tagUpdate**](TagApi.md#tagupdate) | **POST** /tag/update | /tag/update [POST]
+[**tagsSpecificTagSnapshot**](TagApi.md#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
 <a id="tagAssociateAsset"></a>

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**globalId** | [**java.util.UUID**](java.util.UUID) |  | 
+**globalId** | \[**java.util.UUID**](java.util.UUID) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema.md) |  |  [optional]
 **cloudKey** | **kotlin.String** |  |  [optional]
 **stripeCustomerId** | **kotlin.String** | A customer ID that is added to the user in the case of payments |  [optional]

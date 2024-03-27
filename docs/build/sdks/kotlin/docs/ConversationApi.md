@@ -4,20 +4,20 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationAssociateAnchor**](ConversationApi.md#conversationAssociateAnchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
-[**conversationAssociateAsset**](ConversationApi.md#conversationAssociateAsset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
-[**conversationAssociateWebsite**](ConversationApi.md#conversationAssociateWebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
-[**conversationDisassociateAnchor**](ConversationApi.md#conversationDisassociateAnchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
-[**conversationDisassociateAsset**](ConversationApi.md#conversationDisassociateAsset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
-[**conversationDisassociateWebsite**](ConversationApi.md#conversationDisassociateWebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
-[**conversationGetSpecificConversation**](ConversationApi.md#conversationGetSpecificConversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
-[**conversationGroundingMessagesAssociateMessage**](ConversationApi.md#conversationGroundingMessagesAssociateMessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
-[**conversationGroundingMessagesDisassociateMessage**](ConversationApi.md#conversationGroundingMessagesDisassociateMessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
-[**conversationScoresIncrement**](ConversationApi.md#conversationScoresIncrement) | **POST** /conversation/\{conversation\}/scores/increment | &#39;/conversation/\{conversation\}/scores/increment&#39; [POST]
-[**conversationSpecificConversationMessages**](ConversationApi.md#conversationSpecificConversationMessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
-[**conversationSpecificConversationRename**](ConversationApi.md#conversationSpecificConversationRename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
-[**conversationSummarize**](ConversationApi.md#conversationSummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
-[**conversationUpdate**](ConversationApi.md#conversationUpdate) | **POST** /conversation/update | /conversation/update [POST]
+[**conversationAssociateAnchor**](ConversationApi.md#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
+[**conversationAssociateAsset**](ConversationApi.md#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversationAssociateWebsite**](ConversationApi.md#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversationDisassociateAnchor**](ConversationApi.md#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
+[**conversationDisassociateAsset**](ConversationApi.md#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversationDisassociateWebsite**](ConversationApi.md#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversationGetSpecificConversation**](ConversationApi.md#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
+[**conversationGroundingMessagesAssociateMessage**](ConversationApi.md#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
+[**conversationGroundingMessagesDisassociateMessage**](ConversationApi.md#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
+[**conversationScoresIncrement**](ConversationApi.md#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | &#39;/conversation/\{conversation\}/scores/increment&#39; [POST]
+[**conversationSpecificConversationMessages**](ConversationApi.md#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
+[**conversationSpecificConversationRename**](ConversationApi.md#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
+[**conversationSummarize**](ConversationApi.md#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
+[**conversationUpdate**](ConversationApi.md#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
 
 
 <a id="conversationAssociateAnchor"></a>

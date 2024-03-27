@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**formatAnalysis**](FormatApi.md#formatAnalysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
-[**formatReclassify**](FormatApi.md#formatReclassify) | **POST** /format/reclassify | /format/reclassify [POST]
-[**formatSnapshot**](FormatApi.md#formatSnapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
-[**formatUpdateValue**](FormatApi.md#formatUpdateValue) | **POST** /format/update/value | [POST] /format/update/value
-[**formatUsageEvent**](FormatApi.md#formatUsageEvent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
+[**formatAnalysis**](FormatApi.md#formatanalysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
+[**formatReclassify**](FormatApi.md#formatreclassify) | **POST** /format/reclassify | /format/reclassify [POST]
+[**formatSnapshot**](FormatApi.md#formatsnapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
+[**formatUpdateValue**](FormatApi.md#formatupdatevalue) | **POST** /format/update/value | [POST] /format/update/value
+[**formatUsageEvent**](FormatApi.md#formatusageevent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
 <a id="formatAnalysis"></a>

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applicationUpdate**](ApplicationApi.md#applicationUpdate) | **POST** /application/update | /application/update [GET]
+[**applicationUpdate**](ApplicationApi.md#applicationupdate) | **POST** /application/update | /application/update [GET]
 
 
 <a id="applicationUpdate"></a>

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**convertGenericClassification**](ClassificationApi.md#convertGenericClassification) | **POST** /classification/generic/convert | Convert Generic Classification
+[**convertGenericClassification**](ClassificationApi.md#convertgenericclassification) | **POST** /classification/generic/convert | Convert Generic Classification
 
 
 <a id="convertGenericClassification"></a>

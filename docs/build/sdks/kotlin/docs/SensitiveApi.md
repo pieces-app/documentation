@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitiveScoresIncrement**](SensitiveApi.md#sensitiveScoresIncrement) | **POST** /sensitive/\{sensitive\}/scores/increment | &#39;/sensitive/\{sensitive\}/scores/increment&#39; [POST]
-[**sensitiveSnapshot**](SensitiveApi.md#sensitiveSnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
-[**updateSensitive**](SensitiveApi.md#updateSensitive) | **POST** /sensitive/update | /sensitive/update [POST]
+[**sensitiveScoresIncrement**](SensitiveApi.md#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | &#39;/sensitive/\{sensitive\}/scores/increment&#39; [POST]
+[**sensitiveSnapshot**](SensitiveApi.md#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
+[**updateSensitive**](SensitiveApi.md#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
 <a id="sensitiveScoresIncrement"></a>

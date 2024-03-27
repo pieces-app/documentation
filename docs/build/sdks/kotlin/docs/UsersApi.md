@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticateFromOauthToken**](UsersApi.md#authenticateFromOauthToken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
-[**usersDisconnectUser**](UsersApi.md#usersDisconnectUser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
-[**usersSnapshot**](UsersApi.md#usersSnapshot) | **GET** /users | /users [GET]
-[**usersSpecificUserSnapshot**](UsersApi.md#usersSpecificUserSnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
+[**authenticateFromOauthToken**](UsersApi.md#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
+[**usersDisconnectUser**](UsersApi.md#usersdisconnectuser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
+[**usersSnapshot**](UsersApi.md#userssnapshot) | **GET** /users | /users [GET]
+[**usersSpecificUserSnapshot**](UsersApi.md#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
 
 
 <a id="authenticateFromOauthToken"></a>

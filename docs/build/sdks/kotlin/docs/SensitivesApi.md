@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitivesCreateNewSensitive**](SensitivesApi.md#sensitivesCreateNewSensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitivesDeleteSensitive**](SensitivesApi.md#sensitivesDeleteSensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
-[**sensitivesSnapshot**](SensitivesApi.md#sensitivesSnapshot) | **GET** /sensitives | /sensitives [GET]
+[**sensitivesCreateNewSensitive**](SensitivesApi.md#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
+[**sensitivesDeleteSensitive**](SensitivesApi.md#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
+[**sensitivesSnapshot**](SensitivesApi.md#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
 
 
 <a id="sensitivesCreateNewSensitive"></a>

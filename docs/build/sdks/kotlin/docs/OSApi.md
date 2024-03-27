@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**linkProvider**](OSApi.md#linkProvider) | **POST** /os/link_provider | /os/link_provider [POST]
-[**osDeviceInformation**](OSApi.md#osDeviceInformation) | **GET** /os/device/information | /os/device/information [GET]
-[**osRestart**](OSApi.md#osRestart) | **GET** /os/restart | Your GET endpoint
-[**osUpdateCheck**](OSApi.md#osUpdateCheck) | **POST** /os/update/check | /os/update/check [POST]
-[**pickFiles**](OSApi.md#pickFiles) | **POST** /os/files/pick | /os/files/pick [POST]
-[**pickFolders**](OSApi.md#pickFolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
-[**signIntoOS**](OSApi.md#signIntoOS) | **POST** /os/sign_in | 
-[**signOutOfOS**](OSApi.md#signOutOfOS) | **POST** /os/sign_out | /os/sign_out [POST]
+[**linkProvider**](OSApi.md#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**osDeviceInformation**](OSApi.md#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
+[**osRestart**](OSApi.md#osrestart) | **GET** /os/restart | Your GET endpoint
+[**osUpdateCheck**](OSApi.md#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
+[**pickFiles**](OSApi.md#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pickFolders**](OSApi.md#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**signIntoOS**](OSApi.md#signintoos) | **POST** /os/sign_in | 
+[**signOutOfOS**](OSApi.md#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 <a id="linkProvider"></a>

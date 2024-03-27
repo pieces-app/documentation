@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **exact** | **kotlin.Boolean** |  | 
-**score** | [**java.math.BigDecimal**](java.math.BigDecimal) |  | 
+**score** | **java.math.BigDecimal** |  | 
 **match** | [**SearchedMatchEnum**](SearchedMatchEnum.md) |  | 
 **identifier** | **kotlin.String** | This is the uuid of the asset. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema.md) |  |  [optional]

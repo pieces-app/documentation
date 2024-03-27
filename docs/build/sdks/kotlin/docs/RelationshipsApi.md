@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**relationshipsSnapshot**](RelationshipsApi.md#relationshipsSnapshot) | **GET** /relationships | /relationships [GET]
+[**relationshipsSnapshot**](RelationshipsApi.md#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
 
 
 <a id="relationshipsSnapshot"></a>

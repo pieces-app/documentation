@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**discoveryDiscoverAssets**](DiscoveryApi.md#discoveryDiscoverAssets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
-[**discoveryDiscoverAssetsHtml**](DiscoveryApi.md#discoveryDiscoverAssetsHtml) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
-[**discoveryDiscoverSensitives**](DiscoveryApi.md#discoveryDiscoverSensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
-[**discoveryDiscoverTagsRelated**](DiscoveryApi.md#discoveryDiscoverTagsRelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
+[**discoveryDiscoverAssets**](DiscoveryApi.md#discoverydiscoverassets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
+[**discoveryDiscoverAssetsHtml**](DiscoveryApi.md#discoverydiscoverassetshtml) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
+[**discoveryDiscoverSensitives**](DiscoveryApi.md#discoverydiscoversensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
+[**discoveryDiscoverTagsRelated**](DiscoveryApi.md#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
 <a id="discoveryDiscoverAssets"></a>

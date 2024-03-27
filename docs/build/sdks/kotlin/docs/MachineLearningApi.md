@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personificationTechnicalLanguageGeneration**](MachineLearningApi.md#personificationTechnicalLanguageGeneration) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
-[**segmentTechnicalLanguage**](MachineLearningApi.md#segmentTechnicalLanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
+[**personificationTechnicalLanguageGeneration**](MachineLearningApi.md#personificationtechnicallanguagegeneration) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
+[**segmentTechnicalLanguage**](MachineLearningApi.md#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
 <a id="personificationTechnicalLanguageGeneration"></a>

@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**activitiesCreateNewActivity**](ActivitiesApi.md#activitiesCreateNewActivity) | **POST** /activities/create | /activities/create [POST]
-[**activitiesDeleteSpecificActivity**](ActivitiesApi.md#activitiesDeleteSpecificActivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
-[**activitiesSnapshot**](ActivitiesApi.md#activitiesSnapshot) | **GET** /activities | /activities [GET]
+[**activitiesCreateNewActivity**](ActivitiesApi.md#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
+[**activitiesDeleteSpecificActivity**](ActivitiesApi.md#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
+[**activitiesSnapshot**](ActivitiesApi.md#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
 <a id="activitiesCreateNewActivity"></a>

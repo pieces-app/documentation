@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **classification** | [**Classification**](Classification.md) |  | 
 **role** | [**Role**](Role.md) |  | 
 **application** | [**Application**](Application.md) |  | 
-**asset** | [**java.util.UUID**](java.util.UUID) | A uuid model. 36 Characters (4 Dashes, 32 Numbers/Letters)  | 
+**asset** | \[**java.util.UUID**](java.util.UUID) | A uuid model. 36 Characters (4 Dashes, 32 Numbers/Letters)  | 
 **bytes** | [**ByteDescriptor**](ByteDescriptor.md) |  | 
 **created** | [**GroupedTimestamp**](GroupedTimestamp.md) |  | 
 **updated** | [**GroupedTimestamp**](GroupedTimestamp.md) |  | 

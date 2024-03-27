@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **relevance** | [**QGPTRelevanceOutput**](QGPTRelevanceOutput.md) |  |  [optional]
 **question** | [**QGPTQuestionOutput**](QGPTQuestionOutput.md) |  |  [optional]
 **status** | [**QGPTStreamEnum**](QGPTStreamEnum.md) |  |  [optional]
-**statusCode** | [**java.math.BigDecimal**](java.math.BigDecimal) | This will be provided |  [optional]
+**statusCode** | **java.math.BigDecimal** | This will be provided |  [optional]
 **errorMessage** | **kotlin.String** | optional error message is the status code is NOT 200 |  [optional]
 **agentRoutes** | [**QGPTAgentRoutes**](QGPTAgentRoutes.md) |  |  [optional]
 

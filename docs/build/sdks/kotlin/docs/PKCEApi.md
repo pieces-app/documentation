@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clearPKCE**](PKCEApi.md#clearPKCE) | **POST** /pkce/clear | /pkce/clear [POST]
-[**generateCode**](PKCEApi.md#generateCode) | **POST** /pkce/code | /pkce/code [POST]
-[**generateToken**](PKCEApi.md#generateToken) | **POST** /pkce/token | /pkce/token [POST]
-[**getChallenge**](PKCEApi.md#getChallenge) | **GET** /pkce/challenge | Your GET endpoint
-[**respondWithCode**](PKCEApi.md#respondWithCode) | **POST** /pkce/response/code | /pkce/response/code [POST]
+[**clearPKCE**](PKCEApi.md#clearpkce) | **POST** /pkce/clear | /pkce/clear [POST]
+[**generateCode**](PKCEApi.md#generatecode) | **POST** /pkce/code | /pkce/code [POST]
+[**generateToken**](PKCEApi.md#generatetoken) | **POST** /pkce/token | /pkce/token [POST]
+[**getChallenge**](PKCEApi.md#getchallenge) | **GET** /pkce/challenge | Your GET endpoint
+[**respondWithCode**](PKCEApi.md#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
 <a id="clearPKCE"></a>

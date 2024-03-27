@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**modelsCreateNewModel**](ModelsApi.md#modelsCreateNewModel) | **POST** /models/create | /models/create [POST]
-[**modelsDeleteSpecificModel**](ModelsApi.md#modelsDeleteSpecificModel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
-[**modelsDeleteSpecificModelCache**](ModelsApi.md#modelsDeleteSpecificModelCache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
-[**modelsSnapshot**](ModelsApi.md#modelsSnapshot) | **GET** /models | /models [GET]
-[**unloadModels**](ModelsApi.md#unloadModels) | **POST** /models/unload | /models/unload [POST]
+[**modelsCreateNewModel**](ModelsApi.md#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
+[**modelsDeleteSpecificModel**](ModelsApi.md#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
+[**modelsDeleteSpecificModelCache**](ModelsApi.md#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
+[**modelsSnapshot**](ModelsApi.md#modelssnapshot) | **GET** /models | /models [GET]
+[**unloadModels**](ModelsApi.md#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
 <a id="modelsCreateNewModel"></a>

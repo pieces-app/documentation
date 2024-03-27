@@ -5,8 +5,8 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**linkify**](LinkifyApi.md#linkify) | **POST** /linkify | /linkify [POST]
-[**linkifyMultiple**](LinkifyApi.md#linkifyMultiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
-[**linkifyShareRevoke**](LinkifyApi.md#linkifyShareRevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
+[**linkifyMultiple**](LinkifyApi.md#linkifymultiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
+[**linkifyShareRevoke**](LinkifyApi.md#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
 <a id="linkify"></a>

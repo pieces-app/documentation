@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocationSnapshot**](AllocationApi.md#allocationSnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocationUpdate**](AllocationApi.md#allocationUpdate) | **POST** /allocation/update | /allocation/update [POST]
+[**allocationSnapshot**](AllocationApi.md#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
+[**allocationUpdate**](AllocationApi.md#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
 <a id="allocationSnapshot"></a>

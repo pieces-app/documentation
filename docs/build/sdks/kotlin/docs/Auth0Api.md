@@ -5,9 +5,9 @@ All URIs are relative to *http://localhost:1000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**auth0Logout**](Auth0Api.md#auth0Logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](Auth0Api.md#authorizeAuth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchangeForAuth0Token**](Auth0Api.md#exchangeForAuth0Token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**getAuth0UserInfo**](Auth0Api.md#getAuth0UserInfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+[**authorizeAuth0**](Auth0Api.md#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**exchangeForAuth0Token**](Auth0Api.md#exchangeforauth0Token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
+[**getAuth0UserInfo**](Auth0Api.md#getauth0UserInfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
 
 <a id="auth0Logout"></a>

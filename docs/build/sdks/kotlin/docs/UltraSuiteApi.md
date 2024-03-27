@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateUltraSuiteAsset**](UltraSuiteApi.md#assetsCreateUltraSuiteAsset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
+[**assetsCreateUltraSuiteAsset**](UltraSuiteApi.md#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
 <a id="assetsCreateUltraSuiteAsset"></a>

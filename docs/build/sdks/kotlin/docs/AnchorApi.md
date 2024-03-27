@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorRename**](AnchorApi.md#anchorRename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
-[**anchorScoresIncrement**](AnchorApi.md#anchorScoresIncrement) | **POST** /anchor/\{anchor\}/scores/increment | &#39;/anchor/\{anchor\}/scores/increment&#39; [POST]
-[**anchorSpecificAnchorSnapshot**](AnchorApi.md#anchorSpecificAnchorSnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
-[**anchorUpdate**](AnchorApi.md#anchorUpdate) | **POST** /anchor/update | /anchor/update [POST]
+[**anchorRename**](AnchorApi.md#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchorScoresIncrement**](AnchorApi.md#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | &#39;/anchor/\{anchor\}/scores/increment&#39; [POST]
+[**anchorSpecificAnchorSnapshot**](AnchorApi.md#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
+[**anchorUpdate**](AnchorApi.md#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
 
 
 <a id="anchorRename"></a>

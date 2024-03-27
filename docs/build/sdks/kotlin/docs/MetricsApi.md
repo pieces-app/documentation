@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getMetricsFormats**](MetricsApi.md#getMetricsFormats) | **GET** /metrics/formats | /metrics/formats [GET]
-[**metricsFormatsOrdered**](MetricsApi.md#metricsFormatsOrdered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
+[**getMetricsFormats**](MetricsApi.md#getmetricsformats) | **GET** /metrics/formats | /metrics/formats [GET]
+[**metricsFormatsOrdered**](MetricsApi.md#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
 <a id="getMetricsFormats"></a>

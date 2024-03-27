@@ -94,19 +94,19 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **audience** | **String**|  The unique identifier of the target API you want to access. | 
- **scope** | [**List\<String\>**](String)| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
- **responseType** | **String**| Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
- **clientId** | **String**| Your application's Client ID. | 
- **codeChallengeMethod** | **String**| Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
- **codeChallenge** | **String**| Generated challenge from the code_verifier. | 
- **responseMode** | **String**|  | 
- **state** | **String**| An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional] 
- **redirectUri** | **String**| The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional] 
- **connection** | **String**| The name of the connection configured to your application. | [optional] 
- **prompt** | **String**| To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
+Name | Type                         | Description  | Notes
+------------- |------------------------------| ------------- | -------------
+ **audience** | **String**                   |  The unique identifier of the target API you want to access. | 
+ **scope** | **List\<String\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
+ **responseType** | **String**                   | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
+ **clientId** | **String**                   | Your application's Client ID. | 
+ **codeChallengeMethod** | **String**                   | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
+ **codeChallenge** | **String**                   | Generated challenge from the code_verifier. | 
+ **responseMode** | **String**                   |  | 
+ **state** | **String**                   | An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional] 
+ **redirectUri** | **String**                   | The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional] 
+ **connection** | **String**                   | The name of the connection configured to your application. | [optional] 
+ **prompt** | **String**                   | To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
 
 ### Return type
 

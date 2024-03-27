@@ -4,21 +4,21 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateNewAsset**](AssetsApi.md#assetsCreateNewAsset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assetsDeleteAsset**](AssetsApi.md#assetsDeleteAsset) | **POST** /assets/\{asset\}/delete | /assets/delete [POST] Scoped to Asset
-[**assetsDraft**](AssetsApi.md#assetsDraft) | **POST** /assets/draft | /assets/draft [POST]
-[**assetsGetRecommendedAssets**](AssetsApi.md#assetsGetRecommendedAssets) | **GET** /assets/recommended | Your GET endpoint
-[**assetsGetRelatedAssets**](AssetsApi.md#assetsGetRelatedAssets) | **GET** /assets/related | /assets/related [GET]
-[**assetsIdentifiersSnapshot**](AssetsApi.md#assetsIdentifiersSnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
-[**assetsPseudoSnapshot**](AssetsApi.md#assetsPseudoSnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
-[**assetsSearchAssets**](AssetsApi.md#assetsSearchAssets) | **GET** /assets/search | /assets/search?query&#x3D;string [GET]
-[**assetsSearchWithFilters**](AssetsApi.md#assetsSearchWithFilters) | **POST** /assets/search | /assets/search [POST]
-[**assetsSnapshot**](AssetsApi.md#assetsSnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assetsSpecificAssetFormatsSnapshot**](AssetsApi.md#assetsSpecificAssetFormatsSnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
-[**assetsSpecificAssetSnapshot**](AssetsApi.md#assetsSpecificAssetSnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
-[**assetsStreamIdentifiers**](AssetsApi.md#assetsStreamIdentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
-[**getAssetsStreamTransferables**](AssetsApi.md#getAssetsStreamTransferables) | **GET** /assets/stream/transferables | Your GET endpoint
-[**streamAssets**](AssetsApi.md#streamAssets) | **GET** /assets/stream | /assets/stream [GET]
+[**assetsCreateNewAsset**](AssetsApi.md#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
+[**assetsDeleteAsset**](AssetsApi.md#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/delete [POST] Scoped to Asset
+[**assetsDraft**](AssetsApi.md#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
+[**assetsGetRecommendedAssets**](AssetsApi.md#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
+[**assetsGetRelatedAssets**](AssetsApi.md#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
+[**assetsIdentifiersSnapshot**](AssetsApi.md#assetsidentifierssnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
+[**assetsPseudoSnapshot**](AssetsApi.md#assetspseudosnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
+[**assetsSearchAssets**](AssetsApi.md#assetssearchassets) | **GET** /assets/search | /assets/search?query&#x3D;string [GET]
+[**assetsSearchWithFilters**](AssetsApi.md#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
+[**assetsSnapshot**](AssetsApi.md#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi.md#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assetsSpecificAssetSnapshot**](AssetsApi.md#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
+[**assetsStreamIdentifiers**](AssetsApi.md#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
+[**getAssetsStreamTransferables**](AssetsApi.md#getassetsstreamtransferables) | **GET** /assets/stream/transferables | Your GET endpoint
+[**streamAssets**](AssetsApi.md#streamassets) | **GET** /assets/stream | /assets/stream [GET]
 
 
 <a id="assetsCreateNewAsset"></a>

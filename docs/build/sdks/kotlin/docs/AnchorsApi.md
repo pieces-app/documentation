@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorDisassociateAsset**](AnchorsApi.md#anchorDisassociateAsset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
-[**anchorsCreateNewAnchor**](AnchorsApi.md#anchorsCreateNewAnchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchorsDeleteSpecificAnchor**](AnchorsApi.md#anchorsDeleteSpecificAnchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
-[**anchorsSnapshot**](AnchorsApi.md#anchorsSnapshot) | **GET** /anchors | /anchors [GET]
+[**anchorDisassociateAsset**](AnchorsApi.md#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
+[**anchorsCreateNewAnchor**](AnchorsApi.md#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
+[**anchorsDeleteSpecificAnchor**](AnchorsApi.md#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
+[**anchorsSnapshot**](AnchorsApi.md#anchorssnapshot) | **GET** /anchors | /anchors [GET]
 
 
 <a id="anchorDisassociateAsset"></a>

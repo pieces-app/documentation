@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **downloaded** | **kotlin.Boolean** | This is an optional bool to let us know if this model has been downloaded locally. |  [optional]
 **loaded** | **kotlin.Boolean** | This is a boolean that represents if the model is loaded into memory.(this is not persisted, and is calculated on the fly.) |  [optional]
 **unique** | **kotlin.String** | This is the unique model name used to load the model. |  [optional]
-**parameters** | [**java.math.BigDecimal**](java.math.BigDecimal) | This is the number of parameters in terms of billions. |  [optional]
+**parameters** | **java.math.BigDecimal** | This is the number of parameters in terms of billions. |  [optional]
 **provider** | [**ExternalMLProviderEnum**](ExternalMLProviderEnum.md) |  |  [optional]
 **cpu** | **kotlin.Boolean** | This is an optional bool that is optimized for CPU usage. |  [optional]
 **downloading** | **kotlin.Boolean** | This is a calculated property, that will say if this is currently downloading. |  [optional]

@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**databaseExport**](DatabaseApi.md#databaseExport) | **GET** /database/export | Your GET endpoint
-[**databaseImport**](DatabaseApi.md#databaseImport) | **POST** /database/import | /database/import [POST]
+[**databaseExport**](DatabaseApi.md#databaseexport) | **GET** /database/export | Your GET endpoint
+[**databaseImport**](DatabaseApi.md#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
 <a id="databaseExport"></a>

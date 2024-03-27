@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**externalProviderApiKeyCreate**](ExternalProviderApi.md#externalProviderApiKeyCreate) | **POST** /external_provider/api_key/create | /external_provider/api_key/create [POST]
-[**externalProviderApiKeyDelete**](ExternalProviderApi.md#externalProviderApiKeyDelete) | **POST** /external_provider/api_key/delete | /external_provider/api_key/delete [POST]
-[**externalProviderApiKeyUpdate**](ExternalProviderApi.md#externalProviderApiKeyUpdate) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
+[**externalProviderApiKeyCreate**](ExternalProviderApi.md#externalproviderapikeycreate) | **POST** /external_provider/api_key/create | /external_provider/api_key/create [POST]
+[**externalProviderApiKeyDelete**](ExternalProviderApi.md#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete | /external_provider/api_key/delete [POST]
+[**externalProviderApiKeyUpdate**](ExternalProviderApi.md#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
 
 
 <a id="externalProviderApiKeyCreate"></a>

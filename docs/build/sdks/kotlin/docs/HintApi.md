@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintScoresIncrement**](HintApi.md#hintScoresIncrement) | **POST** /hint/\{hint\}/scores/increment | &#39;/hint/\{hint\}/scores/increment&#39; [POST]
-[**hintSpecificHintSnapshot**](HintApi.md#hintSpecificHintSnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
-[**hintUpdate**](HintApi.md#hintUpdate) | **POST** /hint/update | /hint/update [POST]
+[**hintScoresIncrement**](HintApi.md#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | &#39;/hint/\{hint\}/scores/increment&#39; [POST]
+[**hintSpecificHintSnapshot**](HintApi.md#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
+[**hintUpdate**](HintApi.md#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
 <a id="hintScoresIncrement"></a>

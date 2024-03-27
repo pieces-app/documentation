@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintsCreateNewHint**](HintsApi.md#hintsCreateNewHint) | **POST** /hints/create | /hints/create [POST]
-[**hintsDeleteSpecificHint**](HintsApi.md#hintsDeleteSpecificHint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
-[**hintsSnapshot**](HintsApi.md#hintsSnapshot) | **GET** /hints | /hints [GET]
+[**hintsCreateNewHint**](HintsApi.md#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
+[**hintsDeleteSpecificHint**](HintsApi.md#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
+[**hintsSnapshot**](HintsApi.md#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
 <a id="hintsCreateNewHint"></a>

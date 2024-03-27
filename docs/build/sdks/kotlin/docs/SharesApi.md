@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sharesCreateNewShare**](SharesApi.md#sharesCreateNewShare) | **POST** /shares/create | /shares/create [POST]
-[**sharesDeleteShare**](SharesApi.md#sharesDeleteShare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
-[**sharesSnapshot**](SharesApi.md#sharesSnapshot) | **GET** /shares | /shares [GET]
-[**sharesSpecificShareSnapshot**](SharesApi.md#sharesSpecificShareSnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
+[**sharesCreateNewShare**](SharesApi.md#sharescreatenewshare) | **POST** /shares/create | /shares/create [POST]
+[**sharesDeleteShare**](SharesApi.md#sharesdeleteshare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
+[**sharesSnapshot**](SharesApi.md#sharessnapshot) | **GET** /shares | /shares [GET]
+[**sharesSpecificShareSnapshot**](SharesApi.md#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
 <a id="sharesCreateNewShare"></a>

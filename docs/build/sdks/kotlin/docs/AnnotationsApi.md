@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotationsCreateNewAnnotation**](AnnotationsApi.md#annotationsCreateNewAnnotation) | **POST** /annotations/create | /annotations/create [POST]
-[**annotationsDeleteSpecificAnnotation**](AnnotationsApi.md#annotationsDeleteSpecificAnnotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
-[**annotationsSnapshot**](AnnotationsApi.md#annotationsSnapshot) | **GET** /annotations | /annotations [GET]
+[**annotationsCreateNewAnnotation**](AnnotationsApi.md#annotationscreatenewannotation) | **POST** /annotations/create | /annotations/create [POST]
+[**annotationsDeleteSpecificAnnotation**](AnnotationsApi.md#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
+[**annotationsSnapshot**](AnnotationsApi.md#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
 <a id="annotationsCreateNewAnnotation"></a>

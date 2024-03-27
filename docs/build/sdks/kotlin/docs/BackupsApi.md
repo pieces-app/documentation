@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**backupsCreateNewBackup**](BackupsApi.md#backupsCreateNewBackup) | **POST** /backups/create | /backups/create [POST]
-[**backupsCreateNewBackupStreamed**](BackupsApi.md#backupsCreateNewBackupStreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
-[**backupsDeleteSpecificBackup**](BackupsApi.md#backupsDeleteSpecificBackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
-[**backupsSnapshot**](BackupsApi.md#backupsSnapshot) | **GET** /backups | /backups [GET]
+[**backupsCreateNewBackup**](BackupsApi.md#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
+[**backupsCreateNewBackupStreamed**](BackupsApi.md#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
+[**backupsDeleteSpecificBackup**](BackupsApi.md#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
+[**backupsSnapshot**](BackupsApi.md#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
 <a id="backupsCreateNewBackup"></a>

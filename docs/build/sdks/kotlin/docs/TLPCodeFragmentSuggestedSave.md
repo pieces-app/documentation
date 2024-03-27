@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **os** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema.md) |  |  [optional]
 **context** | **kotlin.String** | context from where suggestion came from |  [optional]
-**score** | [**java.math.BigDecimal**](java.math.BigDecimal) | maximum similarity score |  [optional]
+**score** | **java.math.BigDecimal** | maximum similarity score |  [optional]
 **candidates** | **kotlin.Int** | number of candidates |  [optional]
 
 

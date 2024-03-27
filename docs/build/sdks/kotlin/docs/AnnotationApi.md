@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotationScoresIncrement**](AnnotationApi.md#annotationScoresIncrement) | **POST** /annotation/\{annotation\}/scores/increment | &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
-[**annotationSpecificAnnotationSnapshot**](AnnotationApi.md#annotationSpecificAnnotationSnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
-[**annotationUpdate**](AnnotationApi.md#annotationUpdate) | **POST** /annotation/update | /annotation/update [POST]
+[**annotationScoresIncrement**](AnnotationApi.md#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
+[**annotationSpecificAnnotationSnapshot**](AnnotationApi.md#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
+[**annotationUpdate**](AnnotationApi.md#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
 
 
 <a id="annotationScoresIncrement"></a>

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**openAiModelsList**](OpenAIApi.md#openAiModelsList) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
+[**openAiModelsList**](OpenAIApi.md#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
 <a id="openAiModelsList"></a>

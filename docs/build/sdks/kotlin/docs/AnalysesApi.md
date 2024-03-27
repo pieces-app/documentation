@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**analysesSnapshot**](AnalysesApi.md#analysesSnapshot) | **GET** /analyses | Your GET endpoint
+[**analysesSnapshot**](AnalysesApi.md#analysessnapshot) | **GET** /analyses | Your GET endpoint
 
 
 <a id="analysesSnapshot"></a>

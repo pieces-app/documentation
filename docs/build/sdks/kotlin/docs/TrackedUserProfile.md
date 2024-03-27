@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | [**java.util.UUID**](java.util.UUID) | The ID of the user that you are tracking. | 
+**id** | \[**java.util.UUID**](java.util.UUID) | The ID of the user that you are tracking. | 
 **username** | **kotlin.String** | This is a username that is attempted to be assigned but is \&quot;Anonymous User\&quot; by default | 
 **granularity** | [**inline**](#Granularity) | At what level is this user being tracked. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema.md) |  |  [optional]

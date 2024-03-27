@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**importGithubGists**](GithubApi.md#importGithubGists) | **POST** /github/gists/import | /github/gists/import [POST]
+[**importGithubGists**](GithubApi.md#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
 <a id="importGithubGists"></a>

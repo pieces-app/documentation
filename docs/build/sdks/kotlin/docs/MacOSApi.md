@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateNewAssetFromMacos**](MacOSApi.md#assetsCreateNewAssetFromMacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
+[**assetsCreateNewAssetFromMacos**](MacOSApi.md#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
 <a id="assetsCreateNewAssetFromMacos"></a>

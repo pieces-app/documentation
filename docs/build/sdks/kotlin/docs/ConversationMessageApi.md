@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**messageAssociateAnnotation**](ConversationMessageApi.md#messageAssociateAnnotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
-[**messageDisassociateAnnotation**](ConversationMessageApi.md#messageDisassociateAnnotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
-[**messageScoresIncrement**](ConversationMessageApi.md#messageScoresIncrement) | **POST** /message/\{message\}/scores/increment | &#39;/message/\{message\}/scores/increment&#39; [POST]
-[**messageSpecificMessageSnapshot**](ConversationMessageApi.md#messageSpecificMessageSnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
-[**messageSpecificMessageUpdate**](ConversationMessageApi.md#messageSpecificMessageUpdate) | **POST** /message/update | /message/update [GET]
-[**messageUpdateValue**](ConversationMessageApi.md#messageUpdateValue) | **POST** /message/update/value | /message/update/value [POST]
+[**messageAssociateAnnotation**](ConversationMessageApi.md#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**messageDisassociateAnnotation**](ConversationMessageApi.md#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**messageScoresIncrement**](ConversationMessageApi.md#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | &#39;/message/\{message\}/scores/increment&#39; [POST]
+[**messageSpecificMessageSnapshot**](ConversationMessageApi.md#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
+[**messageSpecificMessageUpdate**](ConversationMessageApi.md#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
+[**messageUpdateValue**](ConversationMessageApi.md#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
 <a id="messageAssociateAnnotation"></a>

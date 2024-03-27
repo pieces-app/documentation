@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clearUser**](UserApi.md#clearUser) | **POST** /user/clear | /user/clear
-[**refreshUser**](UserApi.md#refreshUser) | **GET** /user/refresh | /user/refresh [GET]
-[**selectUser**](UserApi.md#selectUser) | **POST** /user/select | /user/select [POST]
-[**streamUser**](UserApi.md#streamUser) | **GET** /user/stream | /user/stream [GET]
-[**updateUser**](UserApi.md#updateUser) | **POST** /user/update | /user/update [POST]
-[**userProviders**](UserApi.md#userProviders) | **GET** /user/providers | Your GET endpoint
-[**userSnapshot**](UserApi.md#userSnapshot) | **GET** /user | /user [GET]
-[**userUpdateVanity**](UserApi.md#userUpdateVanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
+[**clearUser**](UserApi.md#clearuser) | **POST** /user/clear | /user/clear
+[**refreshUser**](UserApi.md#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
+[**selectUser**](UserApi.md#selectuser) | **POST** /user/select | /user/select [POST]
+[**streamUser**](UserApi.md#streamuser) | **GET** /user/stream | /user/stream [GET]
+[**updateUser**](UserApi.md#updateuser) | **POST** /user/update | /user/update [POST]
+[**userProviders**](UserApi.md#userproviders) | **GET** /user/providers | Your GET endpoint
+[**userSnapshot**](UserApi.md#usersnapshot) | **GET** /user | /user [GET]
+[**userUpdateVanity**](UserApi.md#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
 <a id="clearUser"></a>

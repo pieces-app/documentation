@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personDisassociateAsset**](PersonsApi.md#personDisassociateAsset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
-[**personsCreateNewPerson**](PersonsApi.md#personsCreateNewPerson) | **POST** /persons/create | /persons/create [POST]
-[**personsDeletePerson**](PersonsApi.md#personsDeletePerson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
-[**personsSnapshot**](PersonsApi.md#personsSnapshot) | **GET** /persons | /persons [GET]
+[**personDisassociateAsset**](PersonsApi.md#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
+[**personsCreateNewPerson**](PersonsApi.md#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
+[**personsDeletePerson**](PersonsApi.md#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
+[**personsSnapshot**](PersonsApi.md#personssnapshot) | **GET** /persons | /persons [GET]
 
 
 <a id="personDisassociateAsset"></a>

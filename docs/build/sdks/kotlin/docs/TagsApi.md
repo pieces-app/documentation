@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tagsCreateNewTag**](TagsApi.md#tagsCreateNewTag) | **POST** /tags/create | /tags/create [POST]
-[**tagsDeleteSpecificTag**](TagsApi.md#tagsDeleteSpecificTag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
-[**tagsExists**](TagsApi.md#tagsExists) | **POST** /tags/exists | /tags/exists [POST]
-[**tagsSnapshot**](TagsApi.md#tagsSnapshot) | **GET** /tags | /tags [GET]
+[**tagsCreateNewTag**](TagsApi.md#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
+[**tagsDeleteSpecificTag**](TagsApi.md#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
+[**tagsExists**](TagsApi.md#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
+[**tagsSnapshot**](TagsApi.md#tagssnapshot) | **GET** /tags | /tags [GET]
 
 
 <a id="tagsCreateNewTag"></a>

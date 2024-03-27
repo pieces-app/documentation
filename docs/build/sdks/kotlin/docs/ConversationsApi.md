@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationsCreateFromAsset**](ConversationsApi.md#conversationsCreateFromAsset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
-[**conversationsCreateSpecificConversation**](ConversationsApi.md#conversationsCreateSpecificConversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversationsDeleteSpecificConversation**](ConversationsApi.md#conversationsDeleteSpecificConversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
-[**conversationsIdentifiersSnapshot**](ConversationsApi.md#conversationsIdentifiersSnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
-[**conversationsSnapshot**](ConversationsApi.md#conversationsSnapshot) | **GET** /conversations | /conversations [GET]
-[**conversationsStreamIdentifiers**](ConversationsApi.md#conversationsStreamIdentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
+[**conversationsCreateFromAsset**](ConversationsApi.md#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
+[**conversationsCreateSpecificConversation**](ConversationsApi.md#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
+[**conversationsDeleteSpecificConversation**](ConversationsApi.md#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
+[**conversationsIdentifiersSnapshot**](ConversationsApi.md#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
+[**conversationsSnapshot**](ConversationsApi.md#conversationssnapshot) | **GET** /conversations | /conversations [GET]
+[**conversationsStreamIdentifiers**](ConversationsApi.md#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
 
 
 <a id="conversationsCreateFromAsset"></a>

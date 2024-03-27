@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionsCreateNewDistribution**](DistributionsApi.md#distributionsCreateNewDistribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributionsDeleteSpecificDistribution**](DistributionsApi.md#distributionsDeleteSpecificDistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
-[**distributionsSnapshot**](DistributionsApi.md#distributionsSnapshot) | **GET** /distributions | /distributions [GET]
+[**distributionsCreateNewDistribution**](DistributionsApi.md#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
+[**distributionsDeleteSpecificDistribution**](DistributionsApi.md#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
+[**distributionsSnapshot**](DistributionsApi.md#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
 <a id="distributionsCreateNewDistribution"></a>

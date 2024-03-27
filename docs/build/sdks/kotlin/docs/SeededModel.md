@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **foundation** | [**ModelFoundationEnum**](ModelFoundationEnum.md) |  |  [optional]
 **downloaded** | **kotlin.Boolean** | This is an optional bool to let us know if this model has been downloaded locally. |  [optional]
 **unique** | **kotlin.String** | This is the unique model name used to load the model. |  [optional]
-**parameters** | [**java.math.BigDecimal**](java.math.BigDecimal) | This is the number of parameters in terms of billions. |  [optional]
+**parameters** | **java.math.BigDecimal** | This is the number of parameters in terms of billions. |  [optional]
 **provider** | [**ExternalMLProviderEnum**](ExternalMLProviderEnum.md) |  |  [optional]
 **cpu** | **kotlin.Boolean** | This is an optional bool that is optimized for CPU usage. |  [optional]
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens.md) |  |  [optional]

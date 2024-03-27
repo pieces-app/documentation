@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**websiteAssociateAsset**](WebsiteApi.md#websiteAssociateAsset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
-[**websiteAssociateConversation**](WebsiteApi.md#websiteAssociateConversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
-[**websiteAssociatePerson**](WebsiteApi.md#websiteAssociatePerson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
-[**websiteDisassociateAsset**](WebsiteApi.md#websiteDisassociateAsset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
-[**websiteDisassociateConversation**](WebsiteApi.md#websiteDisassociateConversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
-[**websiteDisassociatePerson**](WebsiteApi.md#websiteDisassociatePerson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
-[**websiteScoresIncrement**](WebsiteApi.md#websiteScoresIncrement) | **POST** /website/\{website\}/scores/increment | &#39;/website/\{website\}/scores/increment&#39; [POST]
-[**websiteUpdate**](WebsiteApi.md#websiteUpdate) | **POST** /website/update | /website/update [POST]
-[**websitesSpecificWebsiteSnapshot**](WebsiteApi.md#websitesSpecificWebsiteSnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
+[**websiteAssociateAsset**](WebsiteApi.md#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**websiteAssociateConversation**](WebsiteApi.md#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**websiteAssociatePerson**](WebsiteApi.md#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**websiteDisassociateAsset**](WebsiteApi.md#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**websiteDisassociateConversation**](WebsiteApi.md#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**websiteDisassociatePerson**](WebsiteApi.md#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**websiteScoresIncrement**](WebsiteApi.md#websitescoresincrement) | **POST** /website/\{website\}/scores/increment | &#39;/website/\{website\}/scores/increment&#39; [POST]
+[**websiteUpdate**](WebsiteApi.md#websiteupdate) | **POST** /website/update | /website/update [POST]
+[**websitesSpecificWebsiteSnapshot**](WebsiteApi.md#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
 <a id="websiteAssociateAsset"></a>

@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**modelSpecificModelDownload**](ModelApi.md#modelSpecificModelDownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
-[**modelSpecificModelDownloadCancel**](ModelApi.md#modelSpecificModelDownloadCancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
-[**modelSpecificModelDownloadProgress**](ModelApi.md#modelSpecificModelDownloadProgress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
-[**modelSpecificModelLoad**](ModelApi.md#modelSpecificModelLoad) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
-[**modelSpecificModelUnload**](ModelApi.md#modelSpecificModelUnload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
-[**modelUpdate**](ModelApi.md#modelUpdate) | **POST** /model/update | /model/update [POST]
-[**modelsSpecificModelSnapshot**](ModelApi.md#modelsSpecificModelSnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
+[**modelSpecificModelDownload**](ModelApi.md#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**modelSpecificModelDownloadCancel**](ModelApi.md#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**modelSpecificModelDownloadProgress**](ModelApi.md#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**modelSpecificModelLoad**](ModelApi.md#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**modelSpecificModelUnload**](ModelApi.md#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
+[**modelUpdate**](ModelApi.md#modelupdate) | **POST** /model/update | /model/update [POST]
+[**modelsSpecificModelSnapshot**](ModelApi.md#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
 <a id="modelSpecificModelDownload"></a>

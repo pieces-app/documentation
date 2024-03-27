@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 | Method                                                      | HTTP request                 | Description                |
 |-------------------------------------------------------------|------------------------------|----------------------------|
-| [**getWellKnownHealth**](WellKnownApi.md#getWellKnownHealth)   | **GET** /.well-known/health  | /.well-known/health [GET]  |
-| [**getWellKnownVersion**](WellKnownApi.md#getWellKnownVersion) | **GET** /.well-known/version | /.well-known/version [Get] |
+| [**getWellKnownHealth**](WellKnownApi.md#getwellknownhealth)   | **GET** /.well-known/health  | /.well-known/health [GET]  |
+| [**getWellKnownVersion**](WellKnownApi.md#getwellknownversion) | **GET** /.well-known/version | /.well-known/version [Get] |
 
 <a id="getWellKnownHealth"></a>
 ## **getWellKnownHealth**

@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetAssociateTag**](AssetApi.md#assetAssociateTag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
-[**assetAssociateWebsite**](AssetApi.md#assetAssociateWebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
-[**assetDisassociateTag**](AssetApi.md#assetDisassociateTag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
-[**assetDisassociateWebsite**](AssetApi.md#assetDisassociateWebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
-[**assetFormats**](AssetApi.md#assetFormats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
-[**assetReclassify**](AssetApi.md#assetReclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
-[**assetScoresIncrement**](AssetApi.md#assetScoresIncrement) | **POST** /asset/\{asset\}/scores/increment | &#39;/asset/\{asset\}/scores/increment&#39; [POST]
-[**assetSnapshot**](AssetApi.md#assetSnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
-[**assetSnapshotPost**](AssetApi.md#assetSnapshotPost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
-[**assetSpecificAssetActivities**](AssetApi.md#assetSpecificAssetActivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
-[**assetSpecificAssetConversations**](AssetApi.md#assetSpecificAssetConversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
-[**assetSpecificAssetExport**](AssetApi.md#assetSpecificAssetExport) | **GET** /asset/\{asset\}/export | [GET] /asset/\{asset\}/export
-[**assetUpdate**](AssetApi.md#assetUpdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
+[**assetAssociateTag**](AssetApi.md#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
+[**assetAssociateWebsite**](AssetApi.md#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
+[**assetDisassociateTag**](AssetApi.md#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
+[**assetDisassociateWebsite**](AssetApi.md#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
+[**assetFormats**](AssetApi.md#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
+[**assetReclassify**](AssetApi.md#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
+[**assetScoresIncrement**](AssetApi.md#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | &#39;/asset/\{asset\}/scores/increment&#39; [POST]
+[**assetSnapshot**](AssetApi.md#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
+[**assetSnapshotPost**](AssetApi.md#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
+[**assetSpecificAssetActivities**](AssetApi.md#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
+[**assetSpecificAssetConversations**](AssetApi.md#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
+[**assetSpecificAssetExport**](AssetApi.md#assetspecificassetexport) | **GET** /asset/\{asset\}/export | [GET] /asset/\{asset\}/export
+[**assetUpdate**](AssetApi.md#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
 
 
 <a id="assetAssociateTag"></a>

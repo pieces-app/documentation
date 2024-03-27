@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi.md#anchorPointsCreateNewAnchorPoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi.md#anchorPointsDeleteSpecificAnchorPoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
-[**anchorPointsSnapshot**](AnchorPointsApi.md#anchorPointsSnapshot) | **GET** /anchor_points | /anchor_points [GET]
+[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi.md#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
+[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi.md#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
+[**anchorPointsSnapshot**](AnchorPointsApi.md#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
 <a id="anchorPointsCreateNewAnchorPoint"></a>

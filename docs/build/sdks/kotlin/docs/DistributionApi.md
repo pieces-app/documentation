@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionUpdate**](DistributionApi.md#distributionUpdate) | **POST** /distribution/update | /distribution/update [POST]
-[**distributionsSpecificDistributionSnapshot**](DistributionApi.md#distributionsSpecificDistributionSnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
+[**distributionUpdate**](DistributionApi.md#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
+[**distributionsSpecificDistributionSnapshot**](DistributionApi.md#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
 <a id="distributionUpdate"></a>

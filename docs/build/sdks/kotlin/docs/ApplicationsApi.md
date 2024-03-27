@@ -4,18 +4,18 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applicationsExternalRelated**](ApplicationsApi.md#applicationsExternalRelated) | **GET** /applications/external/related | /applications/external/related [GET]
-[**applicationsExternalSnapshot**](ApplicationsApi.md#applicationsExternalSnapshot) | **GET** /applications/external | /applications/external [GET]
-[**applicationsRegister**](ApplicationsApi.md#applicationsRegister) | **POST** /applications/register | /applications/register [POST]
-[**applicationsSessionClose**](ApplicationsApi.md#applicationsSessionClose) | **POST** /applications/session/close | /applications/session/close [POST]
-[**applicationsSessionOpen**](ApplicationsApi.md#applicationsSessionOpen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot**](ApplicationsApi.md#applicationsSessionSnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
-[**applicationsSnapshot**](ApplicationsApi.md#applicationsSnapshot) | **GET** /applications | /applications [GET]
-[**applicationsSpecificApplicationSnapshot**](ApplicationsApi.md#applicationsSpecificApplicationSnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
-[**applicationsUsageEngagementInteraction**](ApplicationsApi.md#applicationsUsageEngagementInteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
-[**applicationsUsageEngagementKeyboard**](ApplicationsApi.md#applicationsUsageEngagementKeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
-[**applicationsUsageInstallation**](ApplicationsApi.md#applicationsUsageInstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
-[**postApplicationsUsageUpdated**](ApplicationsApi.md#postApplicationsUsageUpdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
+[**applicationsExternalRelated**](ApplicationsApi.md#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
+[**applicationsExternalSnapshot**](ApplicationsApi.md#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
+[**applicationsRegister**](ApplicationsApi.md#applicationsregister) | **POST** /applications/register | /applications/register [POST]
+[**applicationsSessionClose**](ApplicationsApi.md#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applicationsSessionOpen**](ApplicationsApi.md#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applicationsSessionSnapshot**](ApplicationsApi.md#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applicationsSnapshot**](ApplicationsApi.md#applicationssnapshot) | **GET** /applications | /applications [GET]
+[**applicationsSpecificApplicationSnapshot**](ApplicationsApi.md#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
+[**applicationsUsageEngagementInteraction**](ApplicationsApi.md#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applicationsUsageEngagementKeyboard**](ApplicationsApi.md#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applicationsUsageInstallation**](ApplicationsApi.md#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**postApplicationsUsageUpdated**](ApplicationsApi.md#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
 <a id="applicationsExternalRelated"></a>

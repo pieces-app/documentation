@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**htmlShare**](PieceApi.md#htmlShare) | **GET** / | / [GET]
+[**htmlShare**](PieceApi.md#htmlshare) | **GET** / | / [GET]
 
 
 <a id="htmlShare"></a>

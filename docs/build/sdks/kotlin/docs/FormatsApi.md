@@ -4,8 +4,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**formatsSnapshot**](FormatsApi.md#formatsSnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
-[**formatsSpecificFormatSnapshot**](FormatsApi.md#formatsSpecificFormatSnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
+[**formatsSnapshot**](FormatsApi.md#formatssnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
+[**formatsSpecificFormatSnapshot**](FormatsApi.md#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
 <a id="formatsSnapshot"></a>

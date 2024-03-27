@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**shareScoresIncrement**](ShareApi.md#shareScoresIncrement) | **POST** /share/\{share\}/scores/increment | &#39;/share/\{share\}/scores/increment&#39; [POST]
-[**shareSnapshot**](ShareApi.md#shareSnapshot) | **GET** /share/\{share\} | /share/\{share\}
-[**shareUpdate**](ShareApi.md#shareUpdate) | **POST** /share/update | /share/update [POST]
+[**shareScoresIncrement**](ShareApi.md#sharescoresincrement) | **POST** /share/\{share\}/scores/increment | &#39;/share/\{share\}/scores/increment&#39; [POST]
+[**shareSnapshot**](ShareApi.md#sharesnapshot) | **GET** /share/\{share\} | /share/\{share\}
+[**shareUpdate**](ShareApi.md#shareupdate) | **POST** /share/update | /share/update [POST]
 
 
 <a id="shareScoresIncrement"></a>
