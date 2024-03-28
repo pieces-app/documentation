@@ -89,8 +89,14 @@ const config: Config = {
         alt: 'Pieces for Developers',
         src: 'assets/pieces_logos/wordmark.svg',
         srcDark: 'assets/pieces_logos/white_wordmark.svg',
+        href: 'https://pieces.app',
       },
       items: [
+        {
+          to: '/',
+          label: 'Home',
+          position: 'right',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
