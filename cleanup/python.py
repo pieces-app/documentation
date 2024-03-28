@@ -37,7 +37,9 @@ def prefix_filename_with_number(target_dir_path, original_filename):
 
 def organize_markdown_files_in_directory(source_directory):
     # Create a copy of the source directory
-    copied_directory = source_directory + "_copy"
+    # Remove "_raw" from the copied_directory name
+    copied_directory = source_directory.replace("_raw", "")
+
     if os.path.exists(copied_directory):
         shutil.rmtree(copied_directory) # Remove the existing copy if it exists
     shutil.copytree(source_directory, copied_directory)
@@ -86,5 +88,5 @@ def organize_markdown_files_in_directory(source_directory):
         logging.info(f"Moved and renamed {file_path} to {full_target_path}")
 
 
-root_directory = './docs/build/sdks/python/docs'
+root_directory = './docs/build/sdks/python/python_raw'
 organize_markdown_files_in_directory(root_directory)

@@ -236,14 +236,80 @@ const sidebars: SidebarsConfig = {
       label: 'Overview',
     },
     {
+      type: 'doc',
+      id: 'build/quick-start/index',
+      label: '⚡️ Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'build/reference/index',
+      label: '📚 API Reference',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/index',
+      label: '🛠 SDKs',
+    },
+    {
+      type: 'doc',
+      id: 'build/concepts/index',
+      label: '🧠 Concepts',
+    },
+    {
+      type: 'doc',
+      id: 'build/glossary/index',
+      label: '📖 Glossary',
+    },
+  ],
+
+  quickstartSidebar: [
+    {
+      type: 'ref',
+      id: 'build/index',
+      label: '← Go Back',
+    },
+    {
+      type: 'doc',
+      id: 'build/quick-start/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'build/quick-start/react',
+      label: 'React',
+    },
+    {
+      type: 'doc',
+      id: 'build/quick-start/svelte',
+      label: 'Svelte',
+    },
+    {
+      type: 'doc',
+      id: 'build/quick-start/streamlit',
+      label: 'Streamlit',
+    }
+  ],
+
+  referenceSidebar: [
+    {
+      type: 'ref',
+      id: 'build/index',
+      label: '← Go Back',
+    },
+    {
+      type: 'doc',
+      id: 'build/reference/index',
+      label: 'Overview',
+    },
+    {
       type: 'category',
-      label: 'SDKs',
+      label: 'Languages',
       collapsed: false,
       items: activeSDKs.map(sdk => ({
-        type: 'doc' as 'doc' | 'ref',
-        id: `build/sdks/${sdk.toLowerCase()}/guides/getting-started`,
-        label: `${sdk} SDK`,
-      })),
+        type: 'doc' as const,
+        id: `build/reference/${sdk.toLowerCase()}/index`,
+        label: `${sdk} API`
+      }))
     },
   ],
 

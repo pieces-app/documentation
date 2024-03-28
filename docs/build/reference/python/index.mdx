@@ -1,0 +1,115 @@
+---
+title: Python SDK
+description: This getting started guide will help you get started with the Pieces for Developers Python SDK.
+---
+
+import GridFlexRow from '/src/components/GridFlexRow'
+import CTAButton from '/src/components/CTAButton'
+
+## Introduction
+The Pieces SDK is a powerful code engine package designed for writing applications on top of [Pieces OS](/installation-getting-started/what-am-i-installing). It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) running as a backend service.
+- [Python environment](https://docs.python.org/3/library/venv.html) with pip for installing the SDK package.
+
+## Installation
+To get started with the Pieces SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+
+    <GridFlexRow type={'start'}>
+      <CTAButton
+        href="/installation-getting-started/windows"
+        label={"Get Pieces for Windows"}
+        icon={'/assets/windows_logo_old.png'}
+        type={'secondary'}
+      />
+      <CTAButton
+        href="/installation-getting-started/macos"
+        label={"Get Pieces for macOS"}
+        icon={'/assets/mac_os.png'}
+        iconDark={'/assets/mac_os_dark.png'}
+        type={'secondary'}
+      />
+      <CTAButton
+        href="/installation-getting-started/linux"
+        label={"Get Pieces for Linux"}
+        icon={'/assets/linux_logo.png'}
+        type={'secondary'}
+      />
+    </GridFlexRow>
+
+2. **Install the PyPI Package**: Use pip to install the Pieces SDK package:
+ ```shell
+ pip install pieces-os-client==1.2.7
+    ```
+
+:::warning
+
+Ensure that you install `v1.2.7` of the Pieces SDK package to ensure compatibility with the latest version of Pieces OS.
+
+We are working on a fix for this but for now, please install the package with that specific version number.
+
+:::
+
+## Getting Started
+
+First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a `config.py` file to store your configuration info and a `wellknown.py` file to test the connection.
+
+Create a `config.py` file and add the following code:
+
+```python title="config.py"
+import pieces_os_client
+import platform
+
+# Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+platform_info = platform.platform()
+if 'Linux' in platform_info:
+    port = 5323
+else:
+    port = 1000
+
+# Defining the host is optional, but we've added support for Linux in the conditional statement above for this example.
+# It defaults to http://localhost:1000
+configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
+
+# Initialize the ApiClient globally
+api_client = pieces_os_client.ApiClient(configuration)
+```
+
+Create a `wellknown.py` file and add this code to confirm you have installed the correct package:
+
+```python title="wellknown.py"
+import pieces_os_client
+from config import configuration
+
+# Enter a context with an instance of the ApiClient
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.WellKnownApi(api_client)
+
+    try:
+        # Retrieve the (wellknown) version of the Pieces OS
+        api_response = api_instance.get_well_known_version()
+        print("The response of WellKnownApi().get_well_known_version:")
+        print(api_response)
+    except Exception as e:
+        print("Exception when calling WellKnownApi->get_well_known_version: %s\n" % e)
+```
+
+Run the Python script to see the output:
+
+```shell
+python3 wellknown.py
+```
+
+**The output should appear in your terminal stating the version of Pieces OS that is installed on your machine.**
+
+## Next Steps
+
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Python SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+
+Click the `Next →` button below to dive deeper into the Python SDK documentation.

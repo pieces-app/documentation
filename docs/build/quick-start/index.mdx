@@ -1,0 +1,65 @@
+import Grid from "/src/components/Grid";
+import CTAButton from "/src/components/CTAButton";
+import {MiniSpacer} from "/src/components/Spacers";
+
+# Pieces Quickstart
+
+<Grid cols={2}>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>React x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your React project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'react'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Svelte x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your Svelte project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'svelte'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Streamlit x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your Streamlit project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'streamlit'}
+      type={'secondary'}
+    />
+  </div>
+</Grid>
