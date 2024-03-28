@@ -1,5 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
-import {sdkSidebars, activeSDKs} from './src/lib/dynamicSDK';
+import {generatedSDKSidebars, activeSDKs} from './src/lib/dynamicSDK';
 
 const sidebars: SidebarsConfig = {
   docsSidebar: [
@@ -244,22 +244,11 @@ const sidebars: SidebarsConfig = {
         id: `build/sdks/${sdk.toLowerCase()}/guides/getting-started`,
         label: `${sdk} SDK`,
       })),
-      // items: activeSDKs.map(sdk => ({
-      //   type: 'category' as 'category',
-      //   label: `${sdk.charAt(0).toUpperCase() + sdk.slice(1)} SDK`,
-      //   items: [
-      //     {
-      //       type: 'doc',
-      //       id: `sdks/${sdk}/guides/getting-started`,
-      //       label: 'Getting Started',
-      //     }
-      //   ]
-      // })),
     },
   ],
 
   // Generates sidebar for each active SDK
-  ...sdkSidebars
+  ...generatedSDKSidebars
 };
 
 export default sidebars;
