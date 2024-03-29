@@ -8,14 +8,12 @@ import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
 
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href={pieces_app.links.extensions.vscode}
-    label={'Install the VS Code Extension'}
-    icon={'/assets/vscode_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
+<CTAButton
+  href={pieces_app.links.extensions.vscode}
+  label={'Install the VS Code Extension'}
+  icon={'/assets/vscode_logo.png'}
+  type={'secondary'}
+/>
 
 <MiniSpacer />
 
@@ -45,7 +43,7 @@ Utilize a powerful Copilot integrated into your IDE, bringing your development t
     - Each method in your code has a code lens (like git lens) that allows you to explain, or comment your code.
 ![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/ANY_FEATURE/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-ANY_FEATURE-MACOS-16X9-1_10_2024.GIF")
 4. <a href='/features/pieces-copilot#plugin-integrations'>A familiar chat experience spread across all your favorite text editing softwares</a>
-    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Obsidian, and Jupyter Lab.
+    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
 
 ## Save snippets with Pieces for VS Code
 To save code to Pieces from VS Code, simply highlight the snippet and save with:
@@ -243,5 +241,16 @@ In order for Pieces to be completely uninstalled from VS Code, you'll need to re
 
 ## Support and Community
 
-- [Get Support](/support)
-- [Join our Discord](https://discord.gg/getpieces)
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>
