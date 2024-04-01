@@ -8,14 +8,12 @@ import { MiniSpacer } from "/src/components/Spacers";
 import CTAButton from "/src/components/CTAButton";
 import GridFlexRow from "/src/components/GridFlexRow";
 
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href={pieces_app.links.extensions.firefox}
-    label={'Get the Firefox Addon'}
-    icon={'/assets/firefox_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
+<CTAButton
+  href={pieces_app.links.extensions.firefox}
+  label={'Get the Firefox Addon'}
+  icon={'/assets/firefox_logo.png'}
+  type={'secondary'}
+/>
 
 <MiniSpacer/>
 
@@ -34,7 +32,7 @@ In order to save code with the Pieces Firefox Addon, you must have <a target="bl
 To add the addon to Mozilla Firefox, visit our listing on the [Firefox Addons Marketplace](https://addons.mozilla.org/en-US/firefox/addon/pieces-save-code-from-the-web/).
 
 > When first installing the Pieces Firefox Extension, you will have to allow permissions for the extension to work and add buttons to your page around code blocks.
-> - To accept those permissions, follow these steps:
+> To accept those permissions, follow these steps:
 > 1. Right-click & select "allow permissions for Pieces..." with a Pieces "P" in the right-click context menu
 > 2. Permissions will then be added, **refresh your current tab**, and buttons will now be around the example snippet or other snippets in your browser!
 
@@ -128,5 +126,16 @@ To uninstall Pieces:
 
 ## Support and Community
 
-- [Get Support](/support)
-- [Join our Discord](https://discord.gg/getpieces)
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>

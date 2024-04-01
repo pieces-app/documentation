@@ -6,11 +6,7 @@ description: Learn how to install the Pieces for JupyterLab Extension via the PY
 import { pieces_app } from "/src/lib/const";
 import { MiniSpacer } from "/src/components/Spacers";
 import CTAButton from "/src/components/CTAButton";
-
-<link
-  rel="canonical"
-  href="https://docs.pieces.app/extensions-plugins/jupyterlab"
-/>
+import GridFlexRow from "/src/components/GridFlexRow";
 
 <CTAButton
   href={"https://code.pieces.app/updates/improved-pieces-copilot-experiences"}
@@ -49,9 +45,9 @@ Be sure to accept the disclaimer before moving forward in this process.
 - Make sure Pieces OS is open and updated to the latest available version.
 - To view the Copilot, open the Pieces JupyterLab Extension and click the bot logo on the top slider to switch to Copilot
 - Interact with the Pieces Copilot and receive answers that are specific to your notebooks.
-- You can 'Ask Copilot' about a specific piece of code by highlighting it in a cell, right clicking, and clicking on 'Ask Copilot'
+- You can 'Ask Copilot' about a specific piece of code by highlighting it in a cell, right-clicking, and clicking on 'Ask Copilot'
 - [A familiar chat experience spread across all your favorite text editing softwares](/features/pieces-copilot#plugin-integrations)
-    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Obsidian, and Jupyter Lab.
+    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
 
 ### Enrich Selected Code
 Select any text within a code cell in your notebook, right-click, and add a useful description to it.
@@ -156,5 +152,16 @@ You can adjust the following settings:
 
 ## Support and Community
 
-- [Get Support](/support)
-- [Join our Discord](https://discord.gg/getpieces)
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>

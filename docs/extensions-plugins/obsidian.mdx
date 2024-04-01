@@ -8,19 +8,12 @@ import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
 
-<link
-  rel="canonical"
-  href="https://docs.pieces.app/extensions-plugins/obsidian"
+<CTAButton
+  href={pieces_app.links.extensions.obsidian}
+  label={'Get the Obsidian Plugin'}
+  icon={'/assets/obsidian_logo.png'}
+  type={'secondary'}
 />
-
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href={pieces_app.links.extensions.obsidian}
-    label={'Get the Obsidian Plugin'}
-    icon={'/assets/obsidian_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
 
 <MiniSpacer />
 
@@ -111,7 +104,7 @@ The Copilot learns from the notes in your vault and adapts to the context of wha
 - Privacy is at the heart of what we do, which is why you can also select between different LLMs and different LLM runtimes (Cloud or Local) depending on your privacy requirements.
 - You can 'Ask Copilot' about a specific piece of content by highlighting it in your editor, right clicking, and clicking on 'Ask Copilot'
 - [A familiar chat experience spread across all your favorite text editing softwares](/features/pieces-copilot#plugin-integrations)
-    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Obsidian, and Jupyter Lab.
+    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
 
 ## Data Privacy, Security, and Offline-First Approach
 
@@ -184,5 +177,16 @@ You can adjust the following Settings for the Pieces for Developers Obsidian Plu
 
 ## Support and Community
 
-- [Get Support](/support)
-- [Join our Discord](https://discord.gg/getpieces)
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>

@@ -1,0 +1,131 @@
+---
+title: Pieces for Developers Visual Studio Extension
+description: Troubleshoot issues or reach out to Pieces Support for assistance with the Pieces for Developers Visual Studio Extension.
+---
+
+import { pieces_app } from "/src/lib/const";
+import { MiniSpacer } from "/src/components/Spacers";
+import GridFlexRow from "/src/components/GridFlexRow";
+import CTAButton from "/src/components/CTAButton";
+import Video from "../../src/components/Video";
+
+<CTAButton
+  href={pieces_app.links.extensions.visual_studio}
+  label={'Install the Visual Studio Extension'}
+  icon={'/assets/visual_studio_logo.png'}
+  type={'secondary'}
+/>
+
+<MiniSpacer />
+
+:::info
+
+Compatible with Visual Studio 2022 and versions 17.9.0 and higher
+
+:::
+
+<MiniSpacer />
+
+Using the Pieces for Developers Visual Studio Extension in combination with the Pieces Desktop App makes saving and reusing code simple within your IDE.
+
+## Installing the Pieces for Developers Visual Studio Extension
+:::info
+
+In order to use the Pieces Visual Studio Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.
+
+:::
+
+You can install the Visual Studio Extension through the <a target="blank" href={pieces_app.links.extensions.visual_studio}>Visual Studio Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
+
+Once you've installed the extension, you'll have to restart Visual Studio before using Pieces.
+
+## [Pieces Copilot](/features/pieces-copilot#plugin-integrations)
+Utilize a powerful Copilot integrated into your IDE, bringing your development to the next level.
+
+A [familiar chat experience](/features/pieces-copilot#plugin-integrations) spread across all your favorite text editing softwares.
+
+The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
+
+## Features
+
+### Insert At Cursor
+The Insert At Cursor feature allows you to insert code snippets at the cursor location in your code editor. To use this feature, select the code snippet you want to insert and click the Insert At Cursor button.
+
+<Video
+  type={'local'}
+  src={{
+    webm: '/assets/visual_studio/InsertAtCursor.webm',
+    mp4: '/assets/visual_studio/InsertAtCursor.mp4',
+  }}
+/>
+
+### Generate Shareable Link
+You can generate a shareable link for a code snippet by selecting the code you want to share, Right-click > Pieces > Share. This will generate and copy a Pieces link to your clipboard, which you can share with your teammates, friends, or on social media!
+
+<Video
+  type={'local'}
+  src={{
+    webm: '/assets/visual_studio/RightClickShareableLink.webm',
+    mp4: '/assets/visual_studio/RightClickShareableLink.mp4',
+  }}
+/>
+
+## Settings
+
+### Automatically Copy Link
+This setting enables automatic copying for generated Pieces links. If enabled, you won't need to copy a Pieces link before sharing it with a teammate or friend.
+
+### Cloud Capabilities
+Here you can choose which type of ML models you'd like to use in Pieces for Visual Studio: Cloud, Local, or Blended. To learn more about the types of ML models and their privacy implications, [visit this section of our documentation](/product-highlights-and-benefits/privacy-security-data#our-machine-learning-models).
+
+### Custom Pieces OS URL
+If you're using a [custom Pieces OS URL](/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance), you can update it here. This is useful if you're using a self-hosted version of Pieces OS.
+
+<Video
+  type={'local'}
+  src={{
+    webm: '/assets/visual_studio/UpdateAPIPath.webm',
+    mp4: '/assets/visual_studio/UpdateAPIPath.mp4',
+  }}
+/>
+
+### Share Feedback
+You can share bug reports or other feedback by selecting the Share Feedback link in this section.
+
+## Having Trouble with Pieces for Visual Studio?
+If the Visual Studio extension isn't working for you, please make sure you have the following:
+
+- The latest version of Pieces for Visual Studio
+- Pieces OS version 8.0.0 or higher
+
+:::info
+
+After installing or updating your software, please restart Visual Studio. If there is still a problem, [reach out to our support](https://getpieces.typeform.com/to/mCjBSIjF#docs-vscode).
+
+:::
+
+## Uninstalling the Pieces for Visual Studio Extension
+
+To uninstall Pieces for Visual Studio:
+
+1. Visit the Extensions tab on your sidebar
+2. Select the Settings icon next to the Pieces for Visual Studio Extension
+3. Select uninstall
+
+In order for Pieces to be completely uninstalled from Visual Studio, you'll need to restart your IDE.
+
+## Support and Community
+
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={'/support'}
+    label={'Get Support'}
+    type={'secondary'}
+  />
+
+  <CTAButton
+    href={'https://discord.gg/getpieces'}
+    label={'Join our Discord'}
+    type={'secondary'}
+  />
+</GridFlexRow>
