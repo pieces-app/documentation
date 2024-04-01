@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -28,7 +28,7 @@ An endpoint to clear the current user.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 
@@ -66,7 +66,7 @@ This will refresh a user.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 
@@ -105,7 +105,7 @@ This will select the current user.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
 //defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0
@@ -154,7 +154,7 @@ This will stream in the current user, not quiet sure yet how we want to do this.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 
@@ -193,7 +193,7 @@ This will update a specific user in the database.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 final userProfile = UserProfile(); // UserProfile | 
@@ -236,7 +236,7 @@ This will retrieve all the users Providers that are connected to this account.  
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 
@@ -275,7 +275,7 @@ This will return a snapshot of the current user. This will return our ReturnUser
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 
@@ -314,7 +314,7 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \"m
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UserApi();
 final userProfile = UserProfile(); // UserProfile | This will take an update userProfile, with the updated vanity name!

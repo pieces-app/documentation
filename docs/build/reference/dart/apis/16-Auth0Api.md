@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -24,7 +24,7 @@ https://auth0.com/docs/api/authentication#logout
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = Auth0Api();
 final clientId = clientId_example; // String | The client ID of the Auth0 Instance
@@ -69,7 +69,7 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = Auth0Api();
 final audience = https://pieces.us.auth0.com/api/v2/; // String |  The unique identifier of the target API you want to access.
@@ -97,7 +97,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **audience** | **String**|  The unique identifier of the target API you want to access. | 
- **scope** | [**List\<String\>**](../models/String)| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
+ **scope** | **List\<String\>**| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
  **responseType** | **String**| Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
  **clientId** | **String**| Your application's Client ID. | 
  **codeChallengeMethod** | **String**| Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
@@ -132,7 +132,7 @@ An endpoint to generate a OAuth Token for an authentication flow.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = Auth0Api();
 final grantType = grantType_example; // String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -187,7 +187,7 @@ Get the users info from the Auth0 API
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
 //defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0

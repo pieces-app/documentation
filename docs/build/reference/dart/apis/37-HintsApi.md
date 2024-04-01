@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -23,7 +23,7 @@ This will create a hint.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = HintsApi();
 final seededHint = SeededHint(); // SeededHint | 
@@ -66,7 +66,7 @@ This will delete a specific hint.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = HintsApi();
 final hint = hint_example; // String | This is a specific hint uuid
@@ -108,7 +108,7 @@ This will get a snapshot of all of the hints.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = HintsApi();
 

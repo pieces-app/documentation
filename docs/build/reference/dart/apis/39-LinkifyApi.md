@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = LinkifyApi();
 final linkify = Linkify(); // Linkify | 
@@ -66,7 +66,7 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = LinkifyApi();
 final linkifyMultiple = LinkifyMultiple(); // LinkifyMultiple | 
@@ -109,7 +109,7 @@ This will revoke a link.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = LinkifyApi();
 final share = share_example; // String | 

@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -28,11 +28,11 @@ Method | HTTP request | Description
 
 /applications/external/related [GET]
 
-This will get the Applications that are currently installed on your Machine, that we have detected that we have an available Pieces integration for, however that you as a user have not installed yet. + applications that are installed where Pieces is going to be coming soon.
+Retrieves a list of external applications installed on the user's machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -67,11 +67,11 @@ No authorization required
 
 /applications/external [GET]
 
-This will get a snapshot of your installed applications on your local Machine. Applications like \"Microsoft Teams classic\", \"Google Chat\", \"Obsidian\", etc...
+Provides a snapshot of all external applications detected on the user's machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -106,11 +106,11 @@ No authorization required
 
 /applications/register [POST]
 
-This will register a connected applicaiton.
+Registers a new application within the Pieces ecosystem.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final application = Application(); // Application | This will accept a application.
@@ -149,11 +149,11 @@ No authorization required
 
 /applications/session/close [POST]
 
-This will close your opened session! Going to want to accept a session uuid here.
+Closes an active session, identified by a session UUID, marking the end of the user's current interaction with the Pieces application.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final body = String(); // String | This will accept a required session uuid.
@@ -192,11 +192,11 @@ No authorization required
 
 /applications/session/open [POST]
 
-This will open a new session. A session is when someone is using the pieces application.
+Initiates a new session, marking the start of a user's interaction with the Pieces application.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -231,11 +231,11 @@ No authorization required
 
 /applications/sessions/\{session\} [GET]
 
-This is an endpoint to get a snapshot of a specific session.
+Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final session = session_example; // String | This is a uuid that points to a session.
@@ -274,11 +274,11 @@ No authorization required
 
 /applications [GET]
 
-
+Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -313,11 +313,11 @@ No authorization required
 
 /applications/\{application\} [GET]
 
-This will retrieve snapshot of a single application.
+Obtains a snapshot with information about a specific application, identified by its UUID.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final application = application_example; // String | This is a uuid that represents an application
@@ -356,11 +356,11 @@ No authorization required
 
 /applications/usage/engagement/interaction [POST] Scoped to Apps
 
-This is an analytics endpoint that will enable us to know when a user engages something via an interaction(ie click/tap).
+Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final seededTrackedInteractionEvent = SeededTrackedInteractionEvent(); // SeededTrackedInteractionEvent | 
@@ -399,11 +399,11 @@ No authorization required
 
 /applications/usage/engagement/keyboard [POST] Scoped to Apps
 
-This is an analytics endpoint that will enable us to know when a user uses a keyboard short cut for any sort of engagement.
+Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final seededTrackedKeyboardEvent = SeededTrackedKeyboardEvent(); // SeededTrackedKeyboardEvent | 
@@ -442,11 +442,11 @@ No authorization required
 
 /applications/usage/installation [POST]
 
-This is an analytics endpoint that will enable us to know when a user has installed a version of Pieces
+Logs the installation events of the Pieces application.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final trackedApplicationInstall = TrackedApplicationInstall(); // TrackedApplicationInstall | 
@@ -484,11 +484,11 @@ No authorization required
 
 /applications/usage/updated [POST]
 
-This is an endpoint to determine when an application has been updated 
+Tracks updates to the Pieces application, including version changes.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ApplicationsApi();
 final trackedApplicationUpdate = TrackedApplicationUpdate(); // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.

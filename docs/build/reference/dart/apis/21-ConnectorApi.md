@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -26,7 +26,7 @@ An endpoint which abstracts a bootup/connection for a specific context
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final seededConnectorConnection = SeededConnectorConnection(); // SeededConnectorConnection | 
@@ -69,7 +69,7 @@ This can be used to send a SeededAsset over that you may use to compair in the f
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final application = application_example; // String | 
@@ -114,7 +114,7 @@ A consolidation endpoint to handle the updating of an onboarding process.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final application = application_example; // String | This is a uuid that represents an application
@@ -159,7 +159,7 @@ This will react to the response returned from the /suggest endpoint.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final application = application_example; // String | 
@@ -204,7 +204,7 @@ This can and should be called everytime a snippet is coppied from an integration
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final application = application_example; // String | 
@@ -249,7 +249,7 @@ This is an endpoint specifically to abstract the work of packaging for segment o
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ConnectorApi();
 final application = application_example; // String | This is a uuid that represents an application

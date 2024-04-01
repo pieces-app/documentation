@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -29,7 +29,7 @@ This will associate a website with a asset.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -73,7 +73,7 @@ This will associate a website with a conversation.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -117,7 +117,7 @@ This will associate a website with a person.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -161,7 +161,7 @@ This will enable us to dissassociate a website from a asset.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -205,7 +205,7 @@ This will enable us to dissassociate a website from a conversation.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -249,7 +249,7 @@ This will enable us to dissassociate a website from a person.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -293,7 +293,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id
@@ -337,7 +337,7 @@ This will update a specific website.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -382,7 +382,7 @@ This will get a snapshot of a single website.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = WebsiteApi();
 final website = website_example; // String | website id

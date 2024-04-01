@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -35,7 +35,7 @@ This endpoint will accept a seeded (a structure that comes before an asset, will
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -80,7 +80,7 @@ This endpoint will just take a uid to delete out of the assets table, will retur
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -123,7 +123,7 @@ This is an endpoint that will enable a developer to pass in a Seed and get a see
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -168,7 +168,7 @@ An endpoint that takes in a SeededAssetsRecommendation Model within it's request
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final seededAssetsRecommendation = SeededAssetsRecommendation(); // SeededAssetsRecommendation | The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats.
@@ -211,7 +211,7 @@ Gets one or more related assets when provided one or more input assets. The body
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final assets = Assets(); // Assets | The body of the request is an object (Assets Model) with iterable internally.
@@ -254,7 +254,7 @@ This will get all of your asset ids
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final pseudo = true; // bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
@@ -297,7 +297,7 @@ This will get a snapshot of ONLY the pseudo Assets included in your Pieces drive
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 
@@ -336,7 +336,7 @@ This function will search your pieces and will return Assets(the results) based 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final query = query_example; // String | This is a string that you can use to search your assets.
@@ -385,7 +385,7 @@ This function will search your pieces and will return Assets(the results) based 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -432,7 +432,7 @@ Get all of the users Assets.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -479,7 +479,7 @@ This will query the formats for agiven asset when provided that asset's id.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -524,7 +524,7 @@ This is an endpoint to enable a client to access a specific asset through a prov
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -569,7 +569,7 @@ This will stream the asset identifiers(uuids) that have changed via a websocket 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 
@@ -608,7 +608,7 @@ This will emit changes of your assets with your transferables included. This is 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 
@@ -647,7 +647,7 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AssetsApi();
 

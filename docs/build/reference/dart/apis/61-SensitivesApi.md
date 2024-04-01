@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -23,7 +23,7 @@ This will create a new sensitive model.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SensitivesApi();
 final seededSensitive = SeededSensitive(); // SeededSensitive | 
@@ -66,7 +66,7 @@ This will delete a sensitive based on the sensitive uuid.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SensitivesApi();
 final sensitive = sensitive_example; // String | This is a uuid that represents a sensitive.
@@ -108,7 +108,7 @@ This will get a snapshot of all of the sensitives.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SensitivesApi();
 

@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -28,7 +28,7 @@ This will link an external provider to your current auth0 account.  Will throw e
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 final seededExternalProvider = SeededExternalProvider(); // SeededExternalProvider | 
@@ -71,7 +71,7 @@ This will get information related to your specific device.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 
@@ -110,7 +110,7 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 
@@ -148,7 +148,7 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 final uncheckedOSUpdate = UncheckedOSUpdate(); // UncheckedOSUpdate | 
@@ -191,7 +191,7 @@ This will trigger a filer picker and return the string paths of the files that w
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 final filePickerInput = FilePickerInput(); // FilePickerInput | 
@@ -234,7 +234,7 @@ This will trigger a folder picker and return the string paths of the folders tha
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 
@@ -273,7 +273,7 @@ A trigger that launches a Sign into OS Server
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 
@@ -312,7 +312,7 @@ A trigger that signs out a user from the OS
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = OSApi();
 

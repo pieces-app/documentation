@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -26,7 +26,7 @@ This is only to generate suggested questions that the user can ask. ( we will pr
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final qGPTHintsInput = QGPTHintsInput(); // QGPTHintsInput | 
@@ -69,7 +69,7 @@ This Endpoint is used for Who Support.  IE given context like a Seed, or a qgptC
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -114,7 +114,7 @@ This is a version of qGPT stream that will stream the inputs.  This will handle 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final qGPTStreamInput = QGPTStreamInput(); // QGPTStreamInput | 
@@ -157,7 +157,7 @@ This is going to accept, relevant code snippets or uuids returned from the /qgpt
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final qGPTQuestionInput = QGPTQuestionInput(); // QGPTQuestionInput | 
@@ -200,7 +200,7 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final qGPTRelevanceInput = QGPTRelevanceInput(); // QGPTRelevanceInput | 
@@ -243,7 +243,7 @@ This will take in a followup question and the history of the conversation, and e
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = QGPTApi();
 final qGPTRepromptInput = QGPTRepromptInput(); // QGPTRepromptInput | 

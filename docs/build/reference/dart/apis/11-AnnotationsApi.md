@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -23,7 +23,7 @@ This will create an annotation.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AnnotationsApi();
 final seededAnnotation = SeededAnnotation(); // SeededAnnotation | 
@@ -66,7 +66,7 @@ this will delete a specific annotation
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AnnotationsApi();
 final annotation = annotation_example; // String | This is a specific annotation uuid.
@@ -108,7 +108,7 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AnnotationsApi();
 final annotationTypeFilter = annotationTypeFilter_example; // String | This is an AnnotationTypeEnum as a optional filter.

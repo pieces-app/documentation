@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -23,7 +23,7 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SearchApi();
 final query = query_example; // String | This is a string that you can use to search your assets.
@@ -68,7 +68,7 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SearchApi();
 final query = query_example; // String | This is a string that you can use to search your assets.
@@ -113,7 +113,7 @@ This will run our tag based search, and return the assets that best match your p
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = SearchApi();
 final pseudo = true; // bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.

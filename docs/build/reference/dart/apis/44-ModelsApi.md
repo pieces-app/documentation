@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -25,7 +25,7 @@ This will create a ml model, this is aloud however all models will be set to cus
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ModelsApi();
 final seededModel = SeededModel(); // SeededModel | 
@@ -68,7 +68,7 @@ This will delete a model, This is only available for custom: true models.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ModelsApi();
 final model = model_example; // String | model id
@@ -110,7 +110,7 @@ This is going to delete and sort of data that is associated with the Model itsel
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ModelsApi();
 final model = model_example; // String | model id
@@ -155,7 +155,7 @@ This will get a snapshot of all of your models.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ModelsApi();
 
@@ -194,7 +194,7 @@ This will unload all of the ml models.(that are unloadable)
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = ModelsApi();
 

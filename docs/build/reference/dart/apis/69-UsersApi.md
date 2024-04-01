@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -24,7 +24,7 @@ Creates a User From a oAuth Token
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
 //defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0
@@ -73,7 +73,7 @@ Locally Removing a user for the purpose of Signing Out
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UsersApi();
 final user = user_example; // String | 
@@ -116,7 +116,7 @@ this will return a snapshot of all of the users that are in the users database. 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UsersApi();
 
@@ -155,7 +155,7 @@ This enables the client to get the current user.  This endpoint will return a Us
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = UsersApi();
 final user = 497f6eca-6276-4993-bfeb-53cbbbba6f08; // String | The id (uuid) for a specific user.

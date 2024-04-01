@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -21,7 +21,7 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PieceApi();
 final p = p_example; // String | this is the a query param, that a shortened version of the share.

@@ -14,7 +14,7 @@ def remove_md_links(text):
     return result
 
 
-def fix_headers(text):
+def fix_h1_headers(text):
     pattern = r'# pieces_os_client\.(\w+?)Api'
     replacement = r'# \1 API'
     result = re.sub(pattern, replacement, text)
@@ -120,12 +120,10 @@ def organize_markdown_files_in_directory(source_directory):
         with open(file_path, 'r') as f:
             content = f.read()
 
-        transformed_content = content
-
         # Transform the content
         transformed_content = transform_links(content, target_dir)
         transformed_content = remove_md_links(transformed_content)
-        transformed_content = fix_headers(transformed_content)
+        transformed_content = fix_h1_headers(transformed_content)
         transformed_content = fix_h2_headers(transformed_content)
         transformed_content = fix_variables(transformed_content)
         transformed_content = fix_str_links(transformed_content)

@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -25,7 +25,7 @@ This is a function to Clear a PKCE Authentication Flow
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PKCEApi();
 
@@ -63,7 +63,7 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PKCEApi();
 final seededPKCE = SeededPKCE(); // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow
@@ -106,7 +106,7 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PKCEApi();
 final tokenizedPKCE = TokenizedPKCE(); // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token
@@ -149,7 +149,7 @@ An endpoint that returns a PKCE Challenge
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PKCEApi();
 
@@ -188,7 +188,7 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = PKCEApi();
 final code = code_example; // String | The PKCE Code to be used to access a Token.

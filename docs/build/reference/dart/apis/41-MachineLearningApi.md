@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -22,7 +22,7 @@ This is going to take in some personification details ie languages & personas.  
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = MachineLearningApi();
 final preonboardedPersonaDetails = PreonboardedPersonaDetails(); // PreonboardedPersonaDetails | 
@@ -65,7 +65,7 @@ This is a functional endpoint that will parse a message or text in to text or co
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = MachineLearningApi();
 final classify = true; // bool | This will let us know if you want us to classifiy your code, this is default to false.

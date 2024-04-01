@@ -2,7 +2,7 @@
 
 ## Load the API package
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:1000*
@@ -26,7 +26,7 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 final userProfile = UserProfile(); // UserProfile | 
@@ -69,7 +69,7 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -112,7 +112,7 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -155,7 +155,7 @@ This will attempt to disconnect to a specific users cloud.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -198,7 +198,7 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -241,7 +241,7 @@ This is going to get a snapshot of all of the connected allocations.
 
 ### Example
 ```dart
-import 'package:core_openapi/api.dart';
+import 'package:pieces_os_client/api.dart';
 
 final api_instance = AllocationsApi();
 
