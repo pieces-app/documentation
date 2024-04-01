@@ -3,6 +3,8 @@
 // List of SDKs to display on the docs
 export const activeSDKs = [
   'Python',
+  'Dart',
+  // 'Kotlin'
 ];
 
 // Template for the sidebar items for each SDK
