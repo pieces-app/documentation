@@ -9,7 +9,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v11
         with:
           urls: |
-           https://pieces.app/
             https://docs.pieces.app
           budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
