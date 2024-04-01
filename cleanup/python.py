@@ -167,6 +167,10 @@ def organize_markdown_files_in_directory(source_directory):
     shutil.rmtree(temp_directory)
     logging.info(f"Removed directory: {temp_directory}")
 
+    # Remove the source directory
+    shutil.rmtree(source_directory)
+    logging.info(f"Removed directory: {source_directory}")
+
     logging.info(f"Finished organizing markdown files in {source_directory}.")
 
 
