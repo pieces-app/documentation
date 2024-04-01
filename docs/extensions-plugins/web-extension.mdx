@@ -1,22 +1,18 @@
 ---
-title: Pieces for Developers Chrome Extension
-description: Learn about the Pieces Chrome Extension, how it functions, and what all you can do with this powerful extension in Chrome.
+title: Pieces for Developers Web Extension
+description: Learn about the Pieces Web Extension, how it functions, and what all you can do with this powerful extension.
 ---
 
 import { pieces_app } from "/src/lib/const";
-import CTAButton from "/src/components/CTAButton";
 import { MiniSpacer } from "/src/components/Spacers";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CTAButton from "/src/components/CTAButton";
+import GridFlexRow from "../../src/components/GridFlexRow";
 
-<CTAButton
-  href={pieces_app.links.extensions.chrome}
-  label={'Get the Chrome Extension'}
-  icon={'/assets/chrome_logo.png'}
-  type={'secondary'}
-/>
+[//]: # (<MiniSpacer/>)
 
-<MiniSpacer/>
-
-Save, share, and ask questions about code you find online without leaving your current tab by using our Chromium extensions.
+Save, share, and ask questions about code you find online without leaving your current tab by using our Web Extensions.
 
 :::info
 
@@ -30,13 +26,52 @@ If you're using Opera or Brave browsers, you are in the right place. Please foll
 
 :::info
 
-In order to save code with the Pieces Chrome Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS and the Pieces for Developers desktop app.</a>
+In order to save code with any of our web extensions, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS</a> installed on your machine.
 
 :::
 
-To add the extension to Google Chrome, visit our listing on <a target="blank" href="https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm"> the Chrome Web Store.</a>
+[//]: # (To add the extension to Google Chrome, visit our listing on <a target="blank" href="https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm"> the Chrome Web Store.</a>)
 
-Once you've added it to Chrome, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.chrome}
+    label={'Get the Chromium Extension'}
+    icon={'/assets/chromium_logo.svg'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href={pieces_app.links.extensions.edge}
+    label={'Get the Edge Addon'}
+    icon={'/assets/edge_logo.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href={pieces_app.links.extensions.firefox}
+    label={'Get the Firefox Addon'}
+    icon={'/assets/firefox_logo.png'}
+    type={'secondary'}
+  />
+</GridFlexRow>
+
+<MiniSpacer />
+
+Once you've added it, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
+
+<Tabs
+  defaultValue={'chrome-brave-opera'}
+  values={[
+    {label: 'Chrome/Brave/Opera', value: 'chrome-brave-opera'},
+    {label: 'Edge', value: 'edge'},
+    {label: 'Firefox', value: 'firefox'},
+  ]}
+>
+  <TabItem value="chrome-brave-opera">
+  </TabItem>
+  <TabItem value="edge">
+  </TabItem>
+  <TabItem value="firefox">
+  </TabItem>
+</Tabs>
 
 ## Saving Snippets with the Pieces Chrome Extension
 _The <a target="_blank" href={pieces_app.links.website.pfd_desktop_install}>Pieces Suite</a> must be downloaded and installed separately from our Chrome Extension for the extension to work properly._
