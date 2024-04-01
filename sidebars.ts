@@ -34,19 +34,24 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'extensions-plugins/chrome',
-          label: 'Chrome Extension',
+          id: 'extensions-plugins/web-extensions',
+          label: 'Web Extensions',
         },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/edge',
-          label: 'Edge Addon',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/firefox',
-          label: 'Firefox Addon',
-        },
+        // {
+        //   type: 'doc',
+        //   id: 'extensions-plugins/chrome',
+        //   label: 'Chrome Extension',
+        // },
+        // {
+        //   type: 'doc',
+        //   id: 'extensions-plugins/edge',
+        //   label: 'Edge Addon',
+        // },
+        // {
+        //   type: 'doc',
+        //   id: 'extensions-plugins/firefox',
+        //   label: 'Firefox Addon',
+        // },
         {
           type: 'doc',
           id: 'extensions-plugins/jetbrains',
