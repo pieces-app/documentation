@@ -60,6 +60,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/visual-studio',
+          label: 'Visual Studio Extension',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
         },

@@ -23,20 +23,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
-  //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
-  //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
-  //   [
-  //     'vercel-analytics',
-  //     {
-  //        debug: true,
-  //         mode: 'auto',
-  //     },
-  //   ],
-  //   TODO: Once the official plugin is released, we will remove this and use the official plugin
-    "@gracefullight/docusaurus-plugin-vercel-analytics",
-  ],
-
   presets: [
     [
       'classic',
