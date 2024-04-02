@@ -1,6 +1,6 @@
 ---
-title: Dart SDK
-description: This getting started guide will help you get started with the Pieces for Developers Dart SDK.
+title: Kotlin SDK
+description: This getting started guide will help you get started with the Pieces for Developers Kotlin SDK.
 ---
 
 import {MiniSpacer} from "/src/components/Spacers";
@@ -42,43 +42,10 @@ To get started with the Pieces SDK, follow these steps:
       />
     </GridFlexRow>
 
-2. **Add the SDK dependency**: Add the SDK dependency to your Dart project by adding the following to your `pubspec.yaml` file:
-    ```dart
-    dependencies:
-      pieces_os_client:
-        path: /path/to/pieces_os_client
-    ```
-
-## Getting Started
-
-We will create a Dart script to test the connection to the Pieces OS server.
-
-Create a `main.dart` file and add the following code:
-
-```dart title="main.dart"
-import 'package:pieces_os_client/api.dart';
-
-Future<void> main() async {
-  final api_instance = WellKnownApi();
-
-  try {
-    final result = await api_instance.getWellKnownHealth();
-    print(result);
-  } catch (e) {
-    print('Exception when calling WellKnownApi->getWellKnownHealth: $e\n');
-  }
-}
-```
-Run the Dart script to see the output:
-
-```shell
-dart main.dart
-```
-
-**The output should appear in your terminal stating the version of Pieces OS that is installed on your machine.**
+## TODO: Add Kotlin SDK installation instructions
 
 ## Next Steps
 
-If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Dart SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Kotlin SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
 
-Click the `Next →` button below to dive deeper into the Dart SDK documentation.
+Click the `Next →` button below to dive deeper into the Kotlin SDK documentation.
