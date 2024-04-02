@@ -261,11 +261,6 @@ const sidebars: SidebarsConfig = {
         }))
       ]
     },
-    // {
-    //   type: 'doc',
-    //   id: 'build/sdks/index',
-    //   label: '🛠 SDKs',
-    // },
     {
       type: 'doc',
       id: 'build/concepts/index',
