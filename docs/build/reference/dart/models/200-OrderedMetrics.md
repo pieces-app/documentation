@@ -1,4 +1,4 @@
-# OrderedMetrics Model
+# OrderedMetrics
 
 ## Load the model package
 ```dart

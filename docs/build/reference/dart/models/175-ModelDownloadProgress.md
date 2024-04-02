@@ -1,4 +1,4 @@
-# ModelDownloadProgress Model
+# ModelDownloadProgress
 
 ## Load the model package
 ```dart

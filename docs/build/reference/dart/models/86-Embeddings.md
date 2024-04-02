@@ -1,4 +1,4 @@
-# Embeddings Model
+# Embeddings
 
 ## Load the model package
 ```dart

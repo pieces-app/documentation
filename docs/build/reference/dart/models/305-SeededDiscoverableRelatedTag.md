@@ -1,4 +1,4 @@
-# SeededDiscoverableRelatedTag Model
+# SeededDiscoverableRelatedTag
 
 ## Load the model package
 ```dart

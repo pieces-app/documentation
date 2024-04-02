@@ -1,4 +1,4 @@
-# OAuthGroup Model
+# OAuthGroup
 
 ## Load the model package
 ```dart

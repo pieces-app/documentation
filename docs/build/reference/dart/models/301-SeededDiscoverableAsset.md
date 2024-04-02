@@ -1,4 +1,4 @@
-# SeededDiscoverableAsset Model
+# SeededDiscoverableAsset
 
 ## Load the model package
 ```dart

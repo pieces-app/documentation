@@ -1,4 +1,4 @@
-# FlattenedAnalysis Model
+# FlattenedAnalysis
 
 ## Load the model package
 ```dart

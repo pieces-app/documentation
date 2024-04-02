@@ -1,5 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
-import {generatedSDKSidebars, activeSDKs} from './src/lib/dynamicSDK';
+import {generatedSDKSidebars, activeSDK} from './src/lib/activeSDK';
 
 const sidebars: SidebarsConfig = {
   docsSidebar: [
@@ -246,15 +246,26 @@ const sidebars: SidebarsConfig = {
       label: '⚡️ Quickstart',
     },
     {
-      type: 'doc',
-      id: 'build/reference/index',
+      type: 'category',
       label: '📚 API Reference',
+      items: [
+        {
+          type: 'doc',
+          id: 'build/reference/index',
+          label: 'Overview',
+        },
+        ...activeSDK.map(sdk => ({
+          type: 'doc' as const,
+          id: `build/reference/${sdk.toLowerCase()}/index`,
+          label: `${sdk} SDK`
+        }))
+      ]
     },
-    {
-      type: 'doc',
-      id: 'build/sdks/index',
-      label: '🛠 SDKs',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'build/sdks/index',
+    //   label: '🛠 SDKs',
+    // },
     {
       type: 'doc',
       id: 'build/concepts/index',
@@ -295,28 +306,28 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
-  referenceSidebar: [
-    {
-      type: 'ref',
-      id: 'build/index',
-      label: '← Go Back',
-    },
-    {
-      type: 'doc',
-      id: 'build/reference/index',
-      label: 'Overview',
-    },
-    {
-      type: 'category',
-      label: 'Languages',
-      collapsed: false,
-      items: activeSDKs.map(sdk => ({
-        type: 'doc' as const,
-        id: `build/reference/${sdk.toLowerCase()}/index`,
-        label: `${sdk} API`
-      }))
-    },
-  ],
+  // referenceSidebar: [
+  //   {
+  //     type: 'ref',
+  //     id: 'build/index',
+  //     label: '← Go Back',
+  //   },
+  //   {
+  //     type: 'doc',
+  //     id: 'build/reference/index',
+  //     label: 'Overview',
+  //   },
+  //   {
+  //     type: 'category',
+  //     label: 'Languages',
+  //     collapsed: false,
+  //     items: activeSDK.map(sdk => ({
+  //       type: 'doc' as const,
+  //       id: `build/reference/${sdk.toLowerCase()}/index`,
+  //       label: `${sdk} API`
+  //     }))
+  //   },
+  // ],
 
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars

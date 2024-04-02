@@ -1,4 +1,4 @@
-# InteractedAssetInteractions Model
+# InteractedAssetInteractions
 
 ## Load the model package
 ```dart

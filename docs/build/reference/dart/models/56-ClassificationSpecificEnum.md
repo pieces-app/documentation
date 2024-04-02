@@ -1,4 +1,4 @@
-# ClassificationSpecificEnum Model
+# ClassificationSpecificEnum
 
 ## Load the model package
 ```dart

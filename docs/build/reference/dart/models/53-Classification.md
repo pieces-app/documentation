@@ -1,4 +1,4 @@
-# Classification Model
+# Classification
 
 ## Load the model package
 ```dart

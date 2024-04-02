@@ -1,4 +1,4 @@
-# Node Model
+# Node
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# ModelDeleteCacheInput Model
+# ModelDeleteCacheInput
 
 ## Load the model package
 ```dart

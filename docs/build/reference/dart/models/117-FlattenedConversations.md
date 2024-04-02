@@ -1,4 +1,4 @@
-# FlattenedConversations Model
+# FlattenedConversations
 
 ## Load the model package
 ```dart

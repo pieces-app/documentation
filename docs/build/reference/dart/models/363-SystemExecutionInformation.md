@@ -1,4 +1,4 @@
-# SystemExecutionInformation Model
+# SystemExecutionInformation
 
 ## Load the model package
 ```dart

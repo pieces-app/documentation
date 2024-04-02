@@ -1,4 +1,4 @@
-# TLPMachineLearningProcessingEvent Model
+# TLPMachineLearningProcessingEvent
 
 ## Load the model package
 ```dart

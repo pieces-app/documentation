@@ -1,4 +1,4 @@
-# SeededTrackedMachineLearningEvent Model
+# SeededTrackedMachineLearningEvent
 
 ## Load the model package
 ```dart

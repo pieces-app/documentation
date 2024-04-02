@@ -1,4 +1,4 @@
-# PseudoAssets Model
+# PseudoAssets
 
 ## Load the model package
 ```dart

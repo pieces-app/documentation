@@ -1,4 +1,4 @@
-# ExistentMetadata Model
+# ExistentMetadata
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# SeededDiscoverableSensitive Model
+# SeededDiscoverableSensitive
 
 ## Load the model package
 ```dart

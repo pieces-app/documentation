@@ -1,4 +1,4 @@
-# SeededAssetEnrichment Model
+# SeededAssetEnrichment
 
 ## Load the model package
 ```dart

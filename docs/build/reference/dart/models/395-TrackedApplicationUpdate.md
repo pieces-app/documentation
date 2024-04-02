@@ -1,4 +1,4 @@
-# TrackedApplicationUpdate Model
+# TrackedApplicationUpdate
 
 ## Load the model package
 ```dart

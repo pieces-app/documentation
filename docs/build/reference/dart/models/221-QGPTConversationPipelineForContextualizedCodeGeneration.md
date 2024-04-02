@@ -1,4 +1,4 @@
-# QGPTConversationPipelineForContextualizedCodeGeneration Model
+# QGPTConversationPipelineForContextualizedCodeGeneration
 
 ## Load the model package
 ```dart

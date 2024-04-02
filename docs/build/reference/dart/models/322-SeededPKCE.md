@@ -1,4 +1,4 @@
-# SeededPKCE Model
+# SeededPKCE
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Role Model
+# Role
 
 ## Load the model package
 ```dart

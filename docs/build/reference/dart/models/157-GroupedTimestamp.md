@@ -1,4 +1,4 @@
-# GroupedTimestamp Model
+# GroupedTimestamp
 
 ## Load the model package
 ```dart

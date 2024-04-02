@@ -1,4 +1,4 @@
-# TLPCodeFragmentStatistics Model
+# TLPCodeFragmentStatistics
 
 ## Load the model package
 ```dart

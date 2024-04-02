@@ -1,4 +1,4 @@
-# TagCategoryEnum Model
+# TagCategoryEnum
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# ChallengedPKCE Model
+# ChallengedPKCE
 
 ## Load the model package
 ```dart

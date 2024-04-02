@@ -1,4 +1,4 @@
-# TrackedApplicationInstall Model
+# TrackedApplicationInstall
 
 ## Load the model package
 ```dart

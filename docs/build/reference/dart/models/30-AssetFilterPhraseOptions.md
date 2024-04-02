@@ -1,4 +1,4 @@
-# AssetFilterPhraseOptions Model
+# AssetFilterPhraseOptions
 
 ## Load the model package
 ```dart

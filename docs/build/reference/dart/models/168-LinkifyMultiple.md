@@ -1,4 +1,4 @@
-# LinkifyMultiple Model
+# LinkifyMultiple
 
 ## Load the model package
 ```dart

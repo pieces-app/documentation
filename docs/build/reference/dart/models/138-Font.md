@@ -1,4 +1,4 @@
-# Font Model
+# Font
 
 ## Load the model package
 ```dart

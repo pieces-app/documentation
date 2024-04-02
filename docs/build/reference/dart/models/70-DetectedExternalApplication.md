@@ -1,4 +1,4 @@
-# DetectedExternalApplication Model
+# DetectedExternalApplication
 
 ## Load the model package
 ```dart

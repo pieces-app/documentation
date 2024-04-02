@@ -1,4 +1,4 @@
-# DiscoveredSensitives Model
+# DiscoveredSensitives
 
 ## Load the model package
 ```dart

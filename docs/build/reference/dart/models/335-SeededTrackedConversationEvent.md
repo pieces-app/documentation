@@ -1,4 +1,4 @@
-# SeededTrackedConversationEvent Model
+# SeededTrackedConversationEvent
 
 ## Load the model package
 ```dart

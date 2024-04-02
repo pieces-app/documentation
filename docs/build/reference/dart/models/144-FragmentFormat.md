@@ -1,4 +1,4 @@
-# FragmentFormat Model
+# FragmentFormat
 
 ## Load the model package
 ```dart

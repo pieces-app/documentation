@@ -1,4 +1,4 @@
-# UncheckedOSUpdate Model
+# UncheckedOSUpdate
 
 ## Load the model package
 ```dart

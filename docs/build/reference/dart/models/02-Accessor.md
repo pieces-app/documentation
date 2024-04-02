@@ -1,4 +1,4 @@
-# Accessor Model
+# Accessor
 
 ## Load the model package
 ```dart

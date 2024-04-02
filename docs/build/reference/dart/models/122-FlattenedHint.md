@@ -1,4 +1,4 @@
-# FlattenedHint Model
+# FlattenedHint
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Score Model
+# Score
 
 ## Load the model package
 ```dart

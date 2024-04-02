@@ -1,4 +1,4 @@
-# BackupStreamedProgress Model
+# BackupStreamedProgress
 
 ## Load the model package
 ```dart

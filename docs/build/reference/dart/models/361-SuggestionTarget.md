@@ -1,4 +1,4 @@
-# SuggestionTarget Model
+# SuggestionTarget
 
 ## Load the model package
 ```dart

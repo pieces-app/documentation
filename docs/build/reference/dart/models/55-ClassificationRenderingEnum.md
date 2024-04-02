@@ -1,4 +1,4 @@
-# ClassificationRenderingEnum Model
+# ClassificationRenderingEnum
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# TrackedConversationEventIdentifierDescriptionPairs Model
+# TrackedConversationEventIdentifierDescriptionPairs
 
 ## Load the model package
 ```dart

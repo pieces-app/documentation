@@ -1,4 +1,4 @@
-# ReferencedHint Model
+# ReferencedHint
 
 ## Load the model package
 ```dart

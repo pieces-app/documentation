@@ -1,4 +1,4 @@
-# TLPCodeSnippetTagifyCode Model
+# TLPCodeSnippetTagifyCode
 
 ## Load the model package
 ```dart

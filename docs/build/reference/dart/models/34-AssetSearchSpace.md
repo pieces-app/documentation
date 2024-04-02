@@ -1,4 +1,4 @@
-# AssetSearchSpace Model
+# AssetSearchSpace
 
 ## Load the model package
 ```dart

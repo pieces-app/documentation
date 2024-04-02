@@ -1,4 +1,4 @@
-# SeededConnectorCreation Model
+# SeededConnectorCreation
 
 ## Load the model package
 ```dart

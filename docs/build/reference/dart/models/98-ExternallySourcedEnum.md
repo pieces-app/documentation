@@ -1,4 +1,4 @@
-# ExternallySourcedEnum Model
+# ExternallySourcedEnum
 
 ## Load the model package
 ```dart

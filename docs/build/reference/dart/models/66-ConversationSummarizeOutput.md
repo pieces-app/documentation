@@ -1,4 +1,4 @@
-# ConversationSummarizeOutput Model
+# ConversationSummarizeOutput
 
 ## Load the model package
 ```dart

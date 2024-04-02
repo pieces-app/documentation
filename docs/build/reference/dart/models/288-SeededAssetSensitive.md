@@ -1,4 +1,4 @@
-# SeededAssetSensitive Model
+# SeededAssetSensitive
 
 ## Load the model package
 ```dart

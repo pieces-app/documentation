@@ -1,4 +1,4 @@
-# TrackedFormatEventMetadata Model
+# TrackedFormatEventMetadata
 
 ## Load the model package
 ```dart

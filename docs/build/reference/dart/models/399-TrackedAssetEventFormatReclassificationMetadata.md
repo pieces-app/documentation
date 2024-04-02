@@ -1,4 +1,4 @@
-# TrackedAssetEventFormatReclassificationMetadata Model
+# TrackedAssetEventFormatReclassificationMetadata
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Space Model
+# Space
 
 ## Load the model package
 ```dart

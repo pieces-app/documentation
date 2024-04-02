@@ -1,4 +1,4 @@
-# ReferencedAnchorPoint Model
+# ReferencedAnchorPoint
 
 ## Load the model package
 ```dart

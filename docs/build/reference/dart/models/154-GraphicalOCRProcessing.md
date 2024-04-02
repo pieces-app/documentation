@@ -1,4 +1,4 @@
-# GraphicalOCRProcessing Model
+# GraphicalOCRProcessing
 
 ## Load the model package
 ```dart

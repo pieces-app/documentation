@@ -1,4 +1,4 @@
-# AssetReclassification Model
+# AssetReclassification
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# QGPTStreamEnum Model
+# QGPTStreamEnum
 
 ## Load the model package
 ```dart

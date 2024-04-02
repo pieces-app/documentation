@@ -1,4 +1,4 @@
-# OCRAnalysis Model
+# OCRAnalysis
 
 ## Load the model package
 ```dart

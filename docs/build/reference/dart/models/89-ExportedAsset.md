@@ -1,4 +1,4 @@
-# ExportedAsset Model
+# ExportedAsset
 
 ## Load the model package
 ```dart

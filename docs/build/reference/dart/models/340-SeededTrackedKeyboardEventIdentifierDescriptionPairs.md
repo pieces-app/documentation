@@ -1,4 +1,4 @@
-# SeededTrackedKeyboardEventIdentifierDescriptionPairs Model
+# SeededTrackedKeyboardEventIdentifierDescriptionPairs
 
 ## Load the model package
 ```dart

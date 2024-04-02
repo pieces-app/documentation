@@ -1,4 +1,4 @@
-# Activity Model
+# Activity
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# TransferableBytes Model
+# TransferableBytes
 
 ## Load the model package
 ```dart

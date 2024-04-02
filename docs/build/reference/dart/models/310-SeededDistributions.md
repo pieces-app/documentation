@@ -1,4 +1,4 @@
-# SeededDistributions Model
+# SeededDistributions
 
 ## Load the model package
 ```dart

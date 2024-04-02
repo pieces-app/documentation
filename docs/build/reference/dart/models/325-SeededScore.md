@@ -1,4 +1,4 @@
-# SeededScore Model
+# SeededScore
 
 ## Load the model package
 ```dart

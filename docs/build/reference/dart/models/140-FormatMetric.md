@@ -1,4 +1,4 @@
-# FormatMetric Model
+# FormatMetric
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# UpdatingStatusEnum Model
+# UpdatingStatusEnum
 
 ## Load the model package
 ```dart

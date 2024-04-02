@@ -1,4 +1,4 @@
-# Hint Model
+# Hint
 
 ## Load the model package
 ```dart

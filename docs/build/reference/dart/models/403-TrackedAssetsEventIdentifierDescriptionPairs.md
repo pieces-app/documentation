@@ -1,4 +1,4 @@
-# TrackedAssetsEventIdentifierDescriptionPairs Model
+# TrackedAssetsEventIdentifierDescriptionPairs
 
 ## Load the model package
 ```dart

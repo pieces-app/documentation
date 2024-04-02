@@ -1,4 +1,4 @@
-# AllocationStatusEnum Model
+# AllocationStatusEnum
 
 ## Load the model package
 ```dart

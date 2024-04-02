@@ -1,4 +1,4 @@
-# Edges Model
+# Edges
 
 ## Load the model package
 ```dart

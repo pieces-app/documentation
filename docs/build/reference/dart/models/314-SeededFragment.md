@@ -1,4 +1,4 @@
-# SeededFragment Model
+# SeededFragment
 
 ## Load the model package
 ```dart

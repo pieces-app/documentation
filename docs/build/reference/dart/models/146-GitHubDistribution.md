@@ -1,4 +1,4 @@
-# GitHubDistribution Model
+# GitHubDistribution
 
 ## Load the model package
 ```dart

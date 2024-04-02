@@ -1,4 +1,4 @@
-# TrackedSessionEventIdentifierDescriptionPairs Model
+# TrackedSessionEventIdentifierDescriptionPairs
 
 ## Load the model package
 ```dart

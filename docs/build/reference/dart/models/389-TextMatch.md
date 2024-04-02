@@ -1,4 +1,4 @@
-# TextMatch Model
+# TextMatch
 
 ## Load the model package
 ```dart

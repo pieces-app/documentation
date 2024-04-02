@@ -1,4 +1,4 @@
-# SeededPKCEADDITIONALPARAMETERS Model
+# SeededPKCEADDITIONALPARAMETERS
 
 ## Load the model package
 ```dart

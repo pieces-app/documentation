@@ -1,4 +1,4 @@
-# ReferencedUser Model
+# ReferencedUser
 
 ## Load the model package
 ```dart

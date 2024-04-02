@@ -1,4 +1,4 @@
-# RelevantQGPTSeeds Model
+# RelevantQGPTSeeds
 
 ## Load the model package
 ```dart

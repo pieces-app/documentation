@@ -1,4 +1,4 @@
-# ReturnedUserProfile Model
+# ReturnedUserProfile
 
 ## Load the model package
 ```dart

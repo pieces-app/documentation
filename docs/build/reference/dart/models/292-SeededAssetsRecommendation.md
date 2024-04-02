@@ -1,4 +1,4 @@
-# SeededAssetsRecommendation Model
+# SeededAssetsRecommendation
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# FormatReclassification Model
+# FormatReclassification
 
 ## Load the model package
 ```dart

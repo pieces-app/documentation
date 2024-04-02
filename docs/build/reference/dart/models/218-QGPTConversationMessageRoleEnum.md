@@ -1,4 +1,4 @@
-# QGPTConversationMessageRoleEnum Model
+# QGPTConversationMessageRoleEnum
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Linkify Model
+# Linkify
 
 ## Load the model package
 ```dart

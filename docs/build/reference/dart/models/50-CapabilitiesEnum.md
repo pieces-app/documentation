@@ -1,4 +1,4 @@
-# CapabilitiesEnum Model
+# CapabilitiesEnum
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# RevokedPKCE Model
+# RevokedPKCE
 
 ## Load the model package
 ```dart

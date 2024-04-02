@@ -1,4 +1,4 @@
-# UnsegmentedTechnicalLanguage Model
+# UnsegmentedTechnicalLanguage
 
 ## Load the model package
 ```dart

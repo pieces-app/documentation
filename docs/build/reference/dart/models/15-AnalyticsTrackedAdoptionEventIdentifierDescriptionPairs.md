@@ -1,4 +1,4 @@
-# AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs Model
+# AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# SeededAssetWebsite Model
+# SeededAssetWebsite
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# CheckedOSUpdate Model
+# CheckedOSUpdate
 
 ## Load the model package
 ```dart

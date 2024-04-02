@@ -1,4 +1,4 @@
-# SeededTrackedInteractionEvent Model
+# SeededTrackedInteractionEvent
 
 ## Load the model package
 ```dart

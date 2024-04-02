@@ -1,4 +1,4 @@
-# AssetsSearchWithFiltersInput Model
+# AssetsSearchWithFiltersInput
 
 ## Load the model package
 ```dart

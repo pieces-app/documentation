@@ -1,4 +1,4 @@
-# ReferencedShare Model
+# ReferencedShare
 
 ## Load the model package
 ```dart

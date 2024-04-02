@@ -1,4 +1,4 @@
-# MechanismEnum Model
+# MechanismEnum
 
 ## Load the model package
 ```dart

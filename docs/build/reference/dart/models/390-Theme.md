@@ -1,4 +1,4 @@
-# Theme Model
+# Theme
 
 ## Load the model package
 ```dart

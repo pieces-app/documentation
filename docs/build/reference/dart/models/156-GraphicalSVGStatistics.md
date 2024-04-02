@@ -1,4 +1,4 @@
-# GraphicalSVGStatistics Model
+# GraphicalSVGStatistics
 
 ## Load the model package
 ```dart

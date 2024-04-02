@@ -1,4 +1,4 @@
-# ExternalMLProviderEnum Model
+# ExternalMLProviderEnum
 
 ## Load the model package
 ```dart

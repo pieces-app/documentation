@@ -1,4 +1,4 @@
-# AvailableFormats Model
+# AvailableFormats
 
 ## Load the model package
 ```dart

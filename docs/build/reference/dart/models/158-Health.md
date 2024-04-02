@@ -1,4 +1,4 @@
-# Health Model
+# Health
 
 ## Load the model package
 ```dart

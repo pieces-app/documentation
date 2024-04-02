@@ -1,4 +1,4 @@
-# TimestampRange Model
+# TimestampRange
 
 ## Load the model package
 ```dart

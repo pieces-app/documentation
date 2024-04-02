@@ -1,4 +1,4 @@
-# SystemExecutionCpuInformation Model
+# SystemExecutionCpuInformation
 
 ## Load the model package
 ```dart

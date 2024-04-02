@@ -1,4 +1,4 @@
-# ByteDescriptor Model
+# ByteDescriptor
 
 ## Load the model package
 ```dart

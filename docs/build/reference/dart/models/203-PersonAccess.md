@@ -1,4 +1,4 @@
-# PersonAccess Model
+# PersonAccess
 
 ## Load the model package
 ```dart

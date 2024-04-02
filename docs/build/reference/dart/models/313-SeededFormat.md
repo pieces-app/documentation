@@ -1,4 +1,4 @@
-# SeededFormat Model
+# SeededFormat
 
 ## Load the model package
 ```dart

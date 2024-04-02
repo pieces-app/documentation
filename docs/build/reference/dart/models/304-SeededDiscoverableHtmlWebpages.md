@@ -1,4 +1,4 @@
-# SeededDiscoverableHtmlWebpages Model
+# SeededDiscoverableHtmlWebpages
 
 ## Load the model package
 ```dart

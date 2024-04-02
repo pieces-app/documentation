@@ -1,4 +1,4 @@
-# FlattenedTag Model
+# FlattenedTag
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# SeededAssetTag Model
+# SeededAssetTag
 
 ## Load the model package
 ```dart

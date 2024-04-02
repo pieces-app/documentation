@@ -1,4 +1,4 @@
-# StreamedIdentifiers Model
+# StreamedIdentifiers
 
 ## Load the model package
 ```dart

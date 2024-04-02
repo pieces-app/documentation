@@ -1,4 +1,4 @@
-# FlattenedDistributions Model
+# FlattenedDistributions
 
 ## Load the model package
 ```dart

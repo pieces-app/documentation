@@ -1,4 +1,4 @@
-# OSDeviceGPUHardwareInformation Model
+# OSDeviceGPUHardwareInformation
 
 ## Load the model package
 ```dart

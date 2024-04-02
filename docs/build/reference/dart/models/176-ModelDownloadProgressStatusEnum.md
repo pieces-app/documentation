@@ -1,4 +1,4 @@
-# ModelDownloadProgressStatusEnum Model
+# ModelDownloadProgressStatusEnum
 
 ## Load the model package
 ```dart

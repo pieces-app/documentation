@@ -1,4 +1,4 @@
-# TLPCodeFragmentReclassificationUpdates Model
+# TLPCodeFragmentReclassificationUpdates
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# SeededTag Model
+# SeededTag
 
 ## Load the model package
 ```dart

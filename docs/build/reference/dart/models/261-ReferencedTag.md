@@ -1,4 +1,4 @@
-# ReferencedTag Model
+# ReferencedTag
 
 ## Load the model package
 ```dart

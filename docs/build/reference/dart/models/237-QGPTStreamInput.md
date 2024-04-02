@@ -1,4 +1,4 @@
-# QGPTStreamInput Model
+# QGPTStreamInput
 
 ## Load the model package
 ```dart

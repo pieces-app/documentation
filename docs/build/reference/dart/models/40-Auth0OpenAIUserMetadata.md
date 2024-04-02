@@ -1,4 +1,4 @@
-# Auth0OpenAIUserMetadata Model
+# Auth0OpenAIUserMetadata
 
 ## Load the model package
 ```dart

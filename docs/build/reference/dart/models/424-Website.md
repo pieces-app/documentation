@@ -1,4 +1,4 @@
-# Website Model
+# Website
 
 ## Load the model package
 ```dart

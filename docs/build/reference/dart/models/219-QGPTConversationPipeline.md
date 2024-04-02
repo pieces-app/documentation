@@ -1,4 +1,4 @@
-# QGPTConversationPipeline Model
+# QGPTConversationPipeline
 
 ## Load the model package
 ```dart

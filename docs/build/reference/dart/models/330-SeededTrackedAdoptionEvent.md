@@ -1,4 +1,4 @@
-# SeededTrackedAdoptionEvent Model
+# SeededTrackedAdoptionEvent
 
 ## Load the model package
 ```dart

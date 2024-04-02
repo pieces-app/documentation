@@ -1,4 +1,4 @@
-# SeededAnnotation Model
+# SeededAnnotation
 
 ## Load the model package
 ```dart

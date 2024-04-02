@@ -1,4 +1,4 @@
-# FlattenedActivity Model
+# FlattenedActivity
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# MailgunDistribution Model
+# MailgunDistribution
 
 ## Load the model package
 ```dart

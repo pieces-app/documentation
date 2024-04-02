@@ -1,4 +1,4 @@
-# Applications Model
+# Applications
 
 ## Load the model package
 ```dart

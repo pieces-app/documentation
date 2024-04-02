@@ -1,4 +1,4 @@
-# FlattenedShare Model
+# FlattenedShare
 
 ## Load the model package
 ```dart

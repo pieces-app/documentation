@@ -1,4 +1,4 @@
-# Session Model
+# Session
 
 ## Load the model package
 ```dart

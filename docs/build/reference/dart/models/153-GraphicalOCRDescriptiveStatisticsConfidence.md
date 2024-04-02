@@ -1,4 +1,4 @@
-# GraphicalOCRDescriptiveStatisticsConfidence Model
+# GraphicalOCRDescriptiveStatisticsConfidence
 
 ## Load the model package
 ```dart

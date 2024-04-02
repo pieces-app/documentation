@@ -1,4 +1,4 @@
-# SeededShare Model
+# SeededShare
 
 ## Load the model package
 ```dart

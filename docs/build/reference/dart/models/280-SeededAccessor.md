@@ -1,4 +1,4 @@
-# SeededAccessor Model
+# SeededAccessor
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# TokenizedPKCE Model
+# TokenizedPKCE
 
 ## Load the model package
 ```dart

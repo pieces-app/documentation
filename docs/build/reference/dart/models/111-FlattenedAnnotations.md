@@ -1,4 +1,4 @@
-# FlattenedAnnotations Model
+# FlattenedAnnotations
 
 ## Load the model package
 ```dart

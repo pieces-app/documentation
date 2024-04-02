@@ -1,4 +1,4 @@
-# AccessEnum Model
+# AccessEnum
 
 ## Load the model package
 ```dart

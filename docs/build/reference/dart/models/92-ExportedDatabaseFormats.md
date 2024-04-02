@@ -1,4 +1,4 @@
-# ExportedDatabaseFormats Model
+# ExportedDatabaseFormats
 
 ## Load the model package
 ```dart

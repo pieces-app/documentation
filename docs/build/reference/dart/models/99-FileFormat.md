@@ -1,4 +1,4 @@
-# FileFormat Model
+# FileFormat
 
 ## Load the model package
 ```dart

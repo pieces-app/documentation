@@ -1,4 +1,4 @@
-# FlattenedUserProfile Model
+# FlattenedUserProfile
 
 ## Load the model package
 ```dart

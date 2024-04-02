@@ -1,4 +1,4 @@
-# SegmentedTechnicalLanguage Model
+# SegmentedTechnicalLanguage
 
 ## Load the model package
 ```dart

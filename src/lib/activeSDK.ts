@@ -1,10 +1,10 @@
-// This script generates the sidebar items for each SDK based on the activeSDKs array.
+// This script generates the sidebar items for each SDK based on the activeSDK array.
 
 // List of SDKs to display on the docs
-export const activeSDKs = [
+export const activeSDK = [
   'Python',
   'Dart',
-  // 'Kotlin'
+  'Kotlin'
 ];
 
 // Template for the sidebar items for each SDK
@@ -62,7 +62,7 @@ const baseSidebarItems: {
 ];
 
 // Generate sidebar items for each active SDK
-export const generatedSDKSidebars = activeSDKs.reduce((acc, sdkName) => {
+export const generatedSDKSidebars = activeSDK.reduce((acc, sdkName) => {
   const sdkNameLowerCase = sdkName.toLowerCase();
 
   const itemsWithPrefixedId = baseSidebarItems.map(item => {
