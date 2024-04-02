@@ -27,7 +27,7 @@ export const pieces_app = {
       // jetbrains: "http://localhost:63342/api/installPlugin?action=install&pluginId=app.pieces.plugins.jetbrains",
       vscode: "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.pieces-vscode",
       // vscode: "vscode:extension/meshintelligenttechnologiesinc.pieces-vscode",
-      visual_studio: "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.PiecesForVisualStudio",
+      visual_studio: "https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.PiecesVisualStudio",
       obsidian: "https://obsidian.md/plugins?id=pieces-for-developers",
       // obsidian: "obsidian://show-plugin?id=pieces-for-developers",
       edge: "https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim",
