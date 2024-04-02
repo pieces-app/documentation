@@ -32,10 +32,10 @@ cleanup/
 
 To use the scripts effectively, follow these steps:
 
-1. Generate new documentation for your project.
+1. Generate new documentation.
 2. Paste the generated documentation into the `/docs/build/reference` directory within the Cleanup Documentation Project structure.
 3. Ensure that the name of the new docs folder corresponds to the language and is suffixed with `_raw` (e.g., `kotlin_raw`, `python_raw`, etc.).
-4. Navigate to the `cleanup` directory of the language you wish to clean up.
+4. Navigate to the `cleanup` directory.
 5. Run the respective Python script to update the documentation. For example, to clean up Kotlin documentation:
 
 ```bash
