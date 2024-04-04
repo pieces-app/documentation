@@ -1,0 +1,35 @@
+---
+title: Pieces SDKs Technical Glossary - Assets
+description: Add Technical Glossary for key terms used in Pieces SDKs to help explain these to the developers
+category: Assets
+---
+
+# Assets
+
+### Asset
+
+An asset model represents data extracted from an application connecting a group of data containing one or more formats. It includes properties such as the asset's unique identifier, name, creator, creation and update timestamps, formats, preview, original format, shares, mechanism, websites, interaction timestamp, tags, sensitive information, persons, curated flags, discovered flags, activities, scores, favorited flags, pseudo flags, annotations, hints, anchors, conversations, and demo flags.
+
+### Snippet
+
+A snippet typically refers to small bits/chunks/fragments of code that are highly reusable, complex, hard to remember, etc. In the Pieces API, snippets are rarely used. A snippet is basically an asset, where that snippet value is held by the format itself that is attached to a single asset (many snippet values may be assigned to one asset, as an asset can have many formats that are different representations of the same snippet, i.e., syntax highlight, Markdown export, PNG format).
+
+### Seed
+
+Seeds are typically used in Pieces SDKs and require a minimum amount of information to create different materials. These will come into the API with an identifier (ID) and can be used to create a fully referenced asset with generated metadata. All assets have a seeded version of it that is always its starting place. For example, a Tag will first start as a SeededTag and will become a Tag after it is created in the Pieces database. Similarly, an Asset originally starts from a seed, SeededAsset, and then goes through its specific create pipeline and eventually becomes a fully referenced Asset.
+
+### Discovered Assets
+
+A collection of discovered assets is used in the bulk upload flow for clustering and uploading snippets. DiscoveredAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of discovered assets, which are snippets of code that have been identified as potential candidates for upload. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The DiscoveredAssets model contains properties such as the application ID, an iterable of discovered assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.
+
+### InteractedAssets
+
+A collection of interacted assets, used in the bulk upload flow for clustering and uploading snippets. InteractedAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of interacted assets, which are snippets of code that have been interacted with by the user. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The InteractedAssets model contains properties such as the application ID, an iterable of interacted assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.
+
+### SeededTag
+
+A SeededTag represents the minimum information needed when creating a Tag. A SeededTag is a data structure that contains the basic information required to create a Tag. It includes fields such as the tag's name, description, and the asset, format, or person that the tag is associated with. SeededTags can be created from JSON strings or dictionaries and can be converted back into these formats as well.
+
+### Snapshot
+
+This refers to some sort of GET request to the API. For example, there is a /tags snapshot that will fetch all of your tags. There is also a `/tag/{tag_uuid}` snapshot that we refer to as a specific snapshot. This says we are going to give you the data for this specific thing, singular or plural, as it exists in the database.
