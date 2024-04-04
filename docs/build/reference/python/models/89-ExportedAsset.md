@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of ExportedAsset from a JSON string
 exported_asset_instance = ExportedAsset.from_json(json)
 # print the JSON string representation of the object
-print ExportedAsset.to_json()
+print(ExportedAsset.to_json())
 
 # convert the object into a dict
 exported_asset_dict = exported_asset_instance.to_dict()

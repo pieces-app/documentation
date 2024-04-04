@@ -29,7 +29,7 @@ json = "{}"
 # create an instance of FlattenedConversationMessage from a JSON string
 flattened_conversation_message_instance = FlattenedConversationMessage.from_json(json)
 # print the JSON string representation of the object
-print FlattenedConversationMessage.to_json()
+print(FlattenedConversationMessage.to_json())
 
 # convert the object into a dict
 flattened_conversation_message_dict = flattened_conversation_message_instance.to_dict()

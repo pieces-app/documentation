@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of Distributions from a JSON string
 distributions_instance = Distributions.from_json(json)
 # print the JSON string representation of the object
-print Distributions.to_json()
+print(Distributions.to_json())
 
 # convert the object into a dict
 distributions_dict = distributions_instance.to_dict()

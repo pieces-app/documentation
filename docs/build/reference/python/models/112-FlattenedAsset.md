@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 **anchors** | [**FlattenedAnchors**](FlattenedAnchors) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a &#39;demo&#39; snippet | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 ## Example
 
@@ -46,7 +47,7 @@ json = "{}"
 # create an instance of FlattenedAsset from a JSON string
 flattened_asset_instance = FlattenedAsset.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAsset.to_json()
+print(FlattenedAsset.to_json())
 
 # convert the object into a dict
 flattened_asset_dict = flattened_asset_instance.to_dict()

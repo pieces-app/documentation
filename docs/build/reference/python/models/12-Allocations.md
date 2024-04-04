@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of Allocations from a JSON string
 allocations_instance = Allocations.from_json(json)
 # print the JSON string representation of the object
-print Allocations.to_json()
+print(Allocations.to_json())
 
 # convert the object into a dict
 allocations_dict = allocations_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of ConversationsCreateFromAssetOutput from a JSON string
 conversations_create_from_asset_output_instance = ConversationsCreateFromAssetOutput.from_json(json)
 # print the JSON string representation of the object
-print ConversationsCreateFromAssetOutput.to_json()
+print(ConversationsCreateFromAssetOutput.to_json())
 
 # convert the object into a dict
 conversations_create_from_asset_output_dict = conversations_create_from_asset_output_instance.to_dict()

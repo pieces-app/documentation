@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of ChallengedPKCE from a JSON string
 challenged_pkce_instance = ChallengedPKCE.from_json(json)
 # print the JSON string representation of the object
-print ChallengedPKCE.to_json()
+print(ChallengedPKCE.to_json())
 
 # convert the object into a dict
 challenged_pkce_dict = challenged_pkce_instance.to_dict()

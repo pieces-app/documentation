@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of DiscoveredHtmlWebpage from a JSON string
 discovered_html_webpage_instance = DiscoveredHtmlWebpage.from_json(json)
 # print the JSON string representation of the object
-print DiscoveredHtmlWebpage.to_json()
+print(DiscoveredHtmlWebpage.to_json())
 
 # convert the object into a dict
 discovered_html_webpage_dict = discovered_html_webpage_instance.to_dict()

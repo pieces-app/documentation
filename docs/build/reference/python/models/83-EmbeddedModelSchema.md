@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of EmbeddedModelSchema from a JSON string
 embedded_model_schema_instance = EmbeddedModelSchema.from_json(json)
 # print the JSON string representation of the object
-print EmbeddedModelSchema.to_json()
+print(EmbeddedModelSchema.to_json())
 
 # convert the object into a dict
 embedded_model_schema_dict = embedded_model_schema_instance.to_dict()

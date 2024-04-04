@@ -17,7 +17,7 @@ json = "{}"
 # create an instance of Edges from a JSON string
 edges_instance = Edges.from_json(json)
 # print the JSON string representation of the object
-print Edges.to_json()
+print(Edges.to_json())
 
 # convert the object into a dict
 edges_dict = edges_instance.to_dict()

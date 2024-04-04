@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FlattenedImageAnalysis from a JSON string
 flattened_image_analysis_instance = FlattenedImageAnalysis.from_json(json)
 # print the JSON string representation of the object
-print FlattenedImageAnalysis.to_json()
+print(FlattenedImageAnalysis.to_json())
 
 # convert the object into a dict
 flattened_image_analysis_dict = flattened_image_analysis_instance.to_dict()

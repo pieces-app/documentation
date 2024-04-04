@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of ExistentMetadata from a JSON string
 existent_metadata_instance = ExistentMetadata.from_json(json)
 # print the JSON string representation of the object
-print ExistentMetadata.to_json()
+print(ExistentMetadata.to_json())
 
 # convert the object into a dict
 existent_metadata_dict = existent_metadata_instance.to_dict()

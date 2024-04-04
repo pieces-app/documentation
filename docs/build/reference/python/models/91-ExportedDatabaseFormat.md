@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of ExportedDatabaseFormat from a JSON string
 exported_database_format_instance = ExportedDatabaseFormat.from_json(json)
 # print the JSON string representation of the object
-print ExportedDatabaseFormat.to_json()
+print(ExportedDatabaseFormat.to_json())
 
 # convert the object into a dict
 exported_database_format_dict = exported_database_format_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs from a JSON string
 analytics_tracked_adoption_event_identifier_description_pairs_instance = AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs.from_json(json)
 # print the JSON string representation of the object
-print AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs.to_json()
+print(AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs.to_json())
 
 # convert the object into a dict
 analytics_tracked_adoption_event_identifier_description_pairs_dict = analytics_tracked_adoption_event_identifier_description_pairs_instance.to_dict()

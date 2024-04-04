@@ -29,7 +29,7 @@ json = "{}"
 # create an instance of Activity from a JSON string
 activity_instance = Activity.from_json(json)
 # print the JSON string representation of the object
-print Activity.to_json()
+print(Activity.to_json())
 
 # convert the object into a dict
 activity_dict = activity_instance.to_dict()

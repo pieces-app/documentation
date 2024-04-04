@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of FlattenedAnchorPoint from a JSON string
 flattened_anchor_point_instance = FlattenedAnchorPoint.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnchorPoint.to_json()
+print(FlattenedAnchorPoint.to_json())
 
 # convert the object into a dict
 flattened_anchor_point_dict = flattened_anchor_point_instance.to_dict()

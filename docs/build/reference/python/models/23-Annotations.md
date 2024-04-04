@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Annotations from a JSON string
 annotations_instance = Annotations.from_json(json)
 # print the JSON string representation of the object
-print Annotations.to_json()
+print(Annotations.to_json())
 
 # convert the object into a dict
 annotations_dict = annotations_instance.to_dict()

@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
+**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 
 ## Example
 
@@ -34,7 +35,7 @@ json = "{}"
 # create an instance of FlattenedAnnotation from a JSON string
 flattened_annotation_instance = FlattenedAnnotation.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnnotation.to_json()
+print(FlattenedAnnotation.to_json())
 
 # convert the object into a dict
 flattened_annotation_dict = flattened_annotation_instance.to_dict()

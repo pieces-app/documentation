@@ -24,7 +24,7 @@ json = "{}"
 # create an instance of FlattenedDistribution from a JSON string
 flattened_distribution_instance = FlattenedDistribution.from_json(json)
 # print the JSON string representation of the object
-print FlattenedDistribution.to_json()
+print(FlattenedDistribution.to_json())
 
 # convert the object into a dict
 flattened_distribution_dict = flattened_distribution_instance.to_dict()

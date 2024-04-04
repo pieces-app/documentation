@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of AssetFilterPhrase from a JSON string
 asset_filter_phrase_instance = AssetFilterPhrase.from_json(json)
 # print the JSON string representation of the object
-print AssetFilterPhrase.to_json()
+print(AssetFilterPhrase.to_json())
 
 # convert the object into a dict
 asset_filter_phrase_dict = asset_filter_phrase_instance.to_dict()

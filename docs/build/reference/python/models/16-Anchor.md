@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 ## Example
 
@@ -29,7 +30,7 @@ json = "{}"
 # create an instance of Anchor from a JSON string
 anchor_instance = Anchor.from_json(json)
 # print the JSON string representation of the object
-print Anchor.to_json()
+print(Anchor.to_json())
 
 # convert the object into a dict
 anchor_dict = anchor_instance.to_dict()

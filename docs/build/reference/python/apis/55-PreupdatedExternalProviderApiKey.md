@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of PreupdatedExternalProviderApiKey from a JSON string
 preupdated_external_provider_api_key_instance = PreupdatedExternalProviderApiKey.from_json(json)
 # print the JSON string representation of the object
-print PreupdatedExternalProviderApiKey.to_json()
+print(PreupdatedExternalProviderApiKey.to_json())
 
 # convert the object into a dict
 preupdated_external_provider_api_key_dict = preupdated_external_provider_api_key_instance.to_dict()

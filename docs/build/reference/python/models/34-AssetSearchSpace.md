@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of AssetSearchSpace from a JSON string
 asset_search_space_instance = AssetSearchSpace.from_json(json)
 # print the JSON string representation of the object
-print AssetSearchSpace.to_json()
+print(AssetSearchSpace.to_json())
 
 # convert the object into a dict
 asset_search_space_dict = asset_search_space_instance.to_dict()

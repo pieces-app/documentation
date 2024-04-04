@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of DetectedExternalApplications from a JSON string
 detected_external_applications_instance = DetectedExternalApplications.from_json(json)
 # print the JSON string representation of the object
-print DetectedExternalApplications.to_json()
+print(DetectedExternalApplications.to_json())
 
 # convert the object into a dict
 detected_external_applications_dict = detected_external_applications_instance.to_dict()

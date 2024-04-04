@@ -36,7 +36,7 @@ json = "{}"
 # create an instance of Auth0User from a JSON string
 auth0_user_instance = Auth0User.from_json(json)
 # print the JSON string representation of the object
-print Auth0User.to_json()
+print(Auth0User.to_json())
 
 # convert the object into a dict
 auth0_user_dict = auth0_user_instance.to_dict()

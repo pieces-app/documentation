@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of DiscoveredSensitive from a JSON string
 discovered_sensitive_instance = DiscoveredSensitive.from_json(json)
 # print the JSON string representation of the object
-print DiscoveredSensitive.to_json()
+print(DiscoveredSensitive.to_json())
 
 # convert the object into a dict
 discovered_sensitive_dict = discovered_sensitive_instance.to_dict()

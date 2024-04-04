@@ -29,7 +29,7 @@ json = "{}"
 # create an instance of FlattenedActivity from a JSON string
 flattened_activity_instance = FlattenedActivity.from_json(json)
 # print the JSON string representation of the object
-print FlattenedActivity.to_json()
+print(FlattenedActivity.to_json())
 
 # convert the object into a dict
 flattened_activity_dict = flattened_activity_instance.to_dict()

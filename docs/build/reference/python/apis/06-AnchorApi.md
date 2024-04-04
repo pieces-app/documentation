@@ -4,10 +4,148 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**anchor_associate_workstream_summary**](AnchorApi#anchor_associate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**anchor_disassociate_workstream_summary**](AnchorApi#anchor_disassociate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
 [**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
 [**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment | &#39;/anchor/\{anchor\}/scores/increment&#39; [POST]
 [**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
 [**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update | /anchor/update [POST]
+
+
+## **anchor_associate_workstream_summary**
+> anchor_associate_workstream_summary(anchor, workstream_summary)
+
+/anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+
+This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.AnchorApi(api_client)
+    anchor = 'anchor_example' # str | This is the specific uuid of an anchor.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+        api_instance.anchor_associate_workstream_summary(anchor, workstream_summary)
+    except Exception as e:
+        print("Exception when calling AnchorApi->anchor_associate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **anchor** | **str**| This is the specific uuid of an anchor. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **anchor_disassociate_workstream_summary**
+> anchor_disassociate_workstream_summary(anchor, workstream_summary)
+
+/anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+
+This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.AnchorApi(api_client)
+    anchor = 'anchor_example' # str | This is the specific uuid of an anchor.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+        api_instance.anchor_disassociate_workstream_summary(anchor, workstream_summary)
+    except Exception as e:
+        print("Exception when calling AnchorApi->anchor_disassociate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **anchor** | **str**| This is the specific uuid of an anchor. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
 
 
 ## **anchor_rename**

@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Classification from a JSON string
 classification_instance = Classification.from_json(json)
 # print the JSON string representation of the object
-print Classification.to_json()
+print(Classification.to_json())
 
 # convert the object into a dict
 classification_dict = classification_instance.to_dict()

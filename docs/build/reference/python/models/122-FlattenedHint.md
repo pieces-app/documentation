@@ -28,7 +28,7 @@ json = "{}"
 # create an instance of FlattenedHint from a JSON string
 flattened_hint_instance = FlattenedHint.from_json(json)
 # print the JSON string representation of the object
-print FlattenedHint.to_json()
+print(FlattenedHint.to_json())
 
 # convert the object into a dict
 flattened_hint_dict = flattened_hint_instance.to_dict()

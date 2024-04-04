@@ -55,7 +55,7 @@ json = "{}"
 # create an instance of ExternalProviderProfileData from a JSON string
 external_provider_profile_data_instance = ExternalProviderProfileData.from_json(json)
 # print the JSON string representation of the object
-print ExternalProviderProfileData.to_json()
+print(ExternalProviderProfileData.to_json())
 
 # convert the object into a dict
 external_provider_profile_data_dict = external_provider_profile_data_instance.to_dict()

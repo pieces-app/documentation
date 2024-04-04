@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FileFormat from a JSON string
 file_format_instance = FileFormat.from_json(json)
 # print the JSON string representation of the object
-print FileFormat.to_json()
+print(FileFormat.to_json())
 
 # convert the object into a dict
 file_format_dict = file_format_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FlattenedAnchorPoints from a JSON string
 flattened_anchor_points_instance = FlattenedAnchorPoints.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnchorPoints.to_json()
+print(FlattenedAnchorPoints.to_json())
 
 # convert the object into a dict
 flattened_anchor_points_dict = flattened_anchor_points_instance.to_dict()

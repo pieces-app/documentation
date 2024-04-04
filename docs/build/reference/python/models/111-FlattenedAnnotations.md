@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of FlattenedAnnotations from a JSON string
 flattened_annotations_instance = FlattenedAnnotations.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnnotations.to_json()
+print(FlattenedAnnotations.to_json())
 
 # convert the object into a dict
 flattened_annotations_dict = flattened_annotations_instance.to_dict()

@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of AssetFilterPhraseOptions from a JSON string
 asset_filter_phrase_options_instance = AssetFilterPhraseOptions.from_json(json)
 # print the JSON string representation of the object
-print AssetFilterPhraseOptions.to_json()
+print(AssetFilterPhraseOptions.to_json())
 
 # convert the object into a dict
 asset_filter_phrase_options_dict = asset_filter_phrase_options_instance.to_dict()
