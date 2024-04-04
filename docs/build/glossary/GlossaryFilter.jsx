@@ -36,10 +36,7 @@ const GlossaryComponent = () => {
     }, [selectedCategories]);
   
     const toggleCategory = (category) => {
-      setSelectedCategories(prev => {
-        const newSelection = prev.includes(category) ? prev.filter(c => c !== category) : [...prev, category];
-        return newSelection.length > 0 ? newSelection : allCategories;
-      });
+      setSelectedCategories([category]);
     };
   
     return (
