@@ -22,7 +22,8 @@
     "lunr": "^2.3.9",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "redocusaurus": "^2.0.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.2.0",

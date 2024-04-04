@@ -1,6 +1,7 @@
+import type * as Preset from '@docusaurus/preset-classic';
+import type * as Redocusaurus from 'redocusaurus';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";
 
 const config: Config = {
@@ -48,6 +49,38 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    // TODO: Keep this commented out until we have the OpenAPI specs ready
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
+          //   route: '/build/common',
+          //   id: 'common',
+          // },
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
+          //   route: '/build/connector',
+          //   id: 'connector'
+          // },
+          // {
+          //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
+          //   route: '/build/core',
+          //   id: 'core'
+          // },
+          // {
+          //   spec: './test.yaml',
+          //   route: '/build/test',
+          //   id: 'test',
+          // }
+        ],
+        theme: {
+          primaryColor: 'rgb(183,183,183)',
+        },
+      },
+    ] satisfies Redocusaurus.PresetEntry,
   ],
 
   themeConfig: {
