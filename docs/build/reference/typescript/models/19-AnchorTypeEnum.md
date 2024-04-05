@@ -1,0 +1,33 @@
+
+# AnchorTypeEnum
+
+This is an enum used to differentiate the different between different anchors. Used in the Anchor data model.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+
+## Example
+
+```typescript
+import { AnchorTypeEnum } from '';
+
+// TODO: Update the object below with actual values
+const example: AnchorTypeEnum = {
+};
+
+console.log(example);
+
+// Convert the instance to a JSON string
+const exampleJSON: string = JSON.stringify(example);
+console.log(exampleJSON);
+
+// Parse the JSON string back to an object
+const exampleParsed = JSON.parse(exampleJSON) as AnchorTypeEnum;
+console.log(exampleParsed);
+```
+
+
+
+

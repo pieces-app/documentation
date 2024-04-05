@@ -1,0 +1,39 @@
+
+# SeededDistribution
+
+TODO if we add another distribution add to this, Distribution, and flattenedDistribution.  can only use this Model with our Linkify Model.
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+**mailgun** | [**MailgunDistribution**](MailgunDistribution) |  | [optional] [default to undefined]
+**github** | [**SeededGitHubDistribution**](SeededGitHubDistribution) |  | [optional] [default to undefined]
+
+## Example
+
+```typescript
+import { SeededDistribution } from '';
+
+// TODO: Update the object below with actual values
+const example: SeededDistribution = {
+    "schema": null, // 
+    "mailgun": null, // 
+    "github": null, // 
+};
+
+console.log(example);
+
+// Convert the instance to a JSON string
+const exampleJSON: string = JSON.stringify(example);
+console.log(exampleJSON);
+
+// Parse the JSON string back to an object
+const exampleParsed = JSON.parse(exampleJSON) as SeededDistribution;
+console.log(exampleParsed);
+```
+
+
+
+
