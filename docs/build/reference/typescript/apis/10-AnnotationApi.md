@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
 
 
-## **annotationScoresIncrement**
+## **annotationScoresIncrement** Deprecated: 
 > annotationScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **annotationSpecificAnnotationSnapshot**
+## **annotationSpecificAnnotationSnapshot** Deprecated: 
 > Annotation annotationSpecificAnnotationSnapshot()
 
 This will get a snapshot of a specific annotation.
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 
 
-## **annotationUpdate**
+## **annotationUpdate** Deprecated: 
 > Annotation annotationUpdate()
 
 This will update a specific annotation.

@@ -18,7 +18,7 @@ Method | HTTP request | Description
 [**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
-## **applicationsExternalRelated**
+## **applicationsExternalRelated** Deprecated: 
 > DetectedExternalApplications applicationsExternalRelated()
 
 Retrieves a list of external applications installed on the user\'s machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
@@ -59,7 +59,7 @@ This endpoint does not need any parameter.
 
 
 
-## **applicationsExternalSnapshot**
+## **applicationsExternalSnapshot** Deprecated: 
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 Provides a snapshot of all external applications detected on the user\'s machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 
 
-## **applicationsRegister**
+## **applicationsRegister** Deprecated: 
 > Application applicationsRegister()
 
 Registers a new application within the Pieces ecosystem.
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsSessionClose**
+## **applicationsSessionClose** Deprecated: 
 > Session applicationsSessionClose()
 
 Closes an active session, identified by a session UUID, marking the end of the user\'s current interaction with the Pieces application.
@@ -196,7 +196,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsSessionOpen**
+## **applicationsSessionOpen** Deprecated: 
 > Session applicationsSessionOpen()
 
 Initiates a new session, marking the start of a user\'s interaction with the Pieces application.
@@ -236,7 +236,7 @@ This endpoint does not need any parameter.
 
 
 
-## **applicationsSessionSnapshot**
+## **applicationsSessionSnapshot** Deprecated: 
 > Session applicationsSessionSnapshot()
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
@@ -284,7 +284,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsSnapshot**
+## **applicationsSnapshot** Deprecated: 
 > Applications applicationsSnapshot()
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
@@ -324,7 +324,7 @@ This endpoint does not need any parameter.
 
 
 
-## **applicationsSpecificApplicationSnapshot**
+## **applicationsSpecificApplicationSnapshot** Deprecated: 
 > Application applicationsSpecificApplicationSnapshot()
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
@@ -372,7 +372,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsUsageEngagementInteraction**
+## **applicationsUsageEngagementInteraction** Deprecated: 
 > TrackedInteractionEvent applicationsUsageEngagementInteraction()
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
@@ -420,7 +420,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsUsageEngagementKeyboard**
+## **applicationsUsageEngagementKeyboard** Deprecated: 
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard()
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
@@ -468,7 +468,7 @@ Name | Type | Description  | Notes
 
 
 
-## **applicationsUsageInstallation**
+## **applicationsUsageInstallation** Deprecated: 
 > applicationsUsageInstallation()
 
 Logs the installation events of the Pieces application.
@@ -516,7 +516,7 @@ void (empty response body)
 
 
 
-## **postApplicationsUsageUpdated**
+## **postApplicationsUsageUpdated** Deprecated: 
 > postApplicationsUsageUpdated()
 
 Tracks updates to the Pieces application, including version changes.

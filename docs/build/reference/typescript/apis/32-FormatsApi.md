@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
-## **formatsSnapshot**
+## **formatsSnapshot** Deprecated: 
 > Formats formatsSnapshot()
 
 Get all of your formats for a given user.
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 
 
-## **formatsSpecificFormatSnapshot**
+## **formatsSpecificFormatSnapshot** Deprecated: 
 > Format formatsSpecificFormatSnapshot()
 
 Request a specific format when given a id (uuid in path params)

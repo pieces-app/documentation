@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags | /tags [GET]
 
 
-## **tagsCreateNewTag**
+## **tagsCreateNewTag** Deprecated: 
 > Tag tagsCreateNewTag()
 
 This will create a new tag.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **tagsDeleteSpecificTag**
+## **tagsDeleteSpecificTag** Deprecated: 
 > tagsDeleteSpecificTag()
 
 This will delete a specific tag.
@@ -111,7 +111,7 @@ void (empty response body)
 
 
 
-## **tagsExists**
+## **tagsExists** Deprecated: 
 > ExistingMetadata tagsExists()
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 
 
-## **tagsSnapshot**
+## **tagsSnapshot** Deprecated: 
 > Tags tagsSnapshot()
 
 This will get a snapshot of all of your tags.

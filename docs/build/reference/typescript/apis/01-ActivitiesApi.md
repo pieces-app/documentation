@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
-## **activitiesCreateNewActivity**
+## **activitiesCreateNewActivity** Deprecated: 
 > Activity activitiesCreateNewActivity()
 
 This will create a new Activity.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **activitiesDeleteSpecificActivity**
+## **activitiesDeleteSpecificActivity** Deprecated: 
 > activitiesDeleteSpecificActivity()
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **activitiesSnapshot**
+## **activitiesSnapshot** Deprecated: 
 > Activities activitiesSnapshot()
 
 This will get a snapshot of all of the activities

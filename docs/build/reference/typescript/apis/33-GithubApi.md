@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**importGithubGists**](GithubApi#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
-## **importGithubGists**
+## **importGithubGists** Deprecated: 
 > Seeds importGithubGists()
 
 This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users\' gists. implemented. v2. can get specific a public gist.

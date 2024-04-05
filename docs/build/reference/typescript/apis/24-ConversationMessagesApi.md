@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**messagesSnapshot**](ConversationMessagesApi#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
-## **messagesCreateSpecificMessage**
+## **messagesCreateSpecificMessage** Deprecated: 
 > ConversationMessage messagesCreateSpecificMessage()
 
 This will create a Message on a specific conversation.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **messagesDeleteSpecificMessage**
+## **messagesDeleteSpecificMessage** Deprecated: 
 > messagesDeleteSpecificMessage()
 
 This will delete a specific message.
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **messagesSnapshot**
+## **messagesSnapshot** Deprecated: 
 > ConversationMessages messagesSnapshot()
 
 This will get all the messages.

@@ -17,7 +17,7 @@ Method | HTTP request | Description
 [**websitesSpecificWebsiteSnapshot**](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
-## **websiteAssociateAsset**
+## **websiteAssociateAsset** Deprecated: 
 > websiteAssociateAsset()
 
 This will associate a website with a asset.
@@ -69,7 +69,7 @@ void (empty response body)
 
 
 
-## **websiteAssociateConversation**
+## **websiteAssociateConversation** Deprecated: 
 > websiteAssociateConversation()
 
 This will associate a website with a conversation.
@@ -121,7 +121,7 @@ void (empty response body)
 
 
 
-## **websiteAssociatePerson**
+## **websiteAssociatePerson** Deprecated: 
 > websiteAssociatePerson()
 
 This will associate a website with a person.
@@ -173,7 +173,7 @@ void (empty response body)
 
 
 
-## **websiteAssociateWorkstreamSummary**
+## **websiteAssociateWorkstreamSummary** Deprecated: 
 > websiteAssociateWorkstreamSummary()
 
 This will associate a website with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -225,7 +225,7 @@ void (empty response body)
 
 
 
-## **websiteDisassociateAsset**
+## **websiteDisassociateAsset** Deprecated: 
 > websiteDisassociateAsset()
 
 This will enable us to dissassociate a website from a asset.
@@ -277,7 +277,7 @@ void (empty response body)
 
 
 
-## **websiteDisassociateConversation**
+## **websiteDisassociateConversation** Deprecated: 
 > websiteDisassociateConversation()
 
 This will enable us to dissassociate a website from a conversation.
@@ -329,7 +329,7 @@ void (empty response body)
 
 
 
-## **websiteDisassociatePerson**
+## **websiteDisassociatePerson** Deprecated: 
 > websiteDisassociatePerson()
 
 This will enable us to dissassociate a website from a person.
@@ -381,7 +381,7 @@ void (empty response body)
 
 
 
-## **websiteDisassociateWorkstreamSummary**
+## **websiteDisassociateWorkstreamSummary** Deprecated: 
 > websiteDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a website from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -433,7 +433,7 @@ void (empty response body)
 
 
 
-## **websiteScoresIncrement**
+## **websiteScoresIncrement** Deprecated: 
 > websiteScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -485,7 +485,7 @@ void (empty response body)
 
 
 
-## **websiteUpdate**
+## **websiteUpdate** Deprecated: 
 > Website websiteUpdate()
 
 This will update a specific website.
@@ -537,7 +537,7 @@ Name | Type | Description  | Notes
 
 
 
-## **websitesSpecificWebsiteSnapshot**
+## **websitesSpecificWebsiteSnapshot** Deprecated: 
 > Website websitesSpecificWebsiteSnapshot()
 
 This will get a snapshot of a single website.

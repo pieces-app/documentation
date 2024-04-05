@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version | /.well-known/version [Get]
 
 
-## **getWellKnownHealth**
+## **getWellKnownHealth** Deprecated: 
 > string getWellKnownHealth()
 
 This will get the health of the server.
@@ -48,7 +48,7 @@ This endpoint does not need any parameter.
 
 
 
-## **getWellKnownVersion**
+## **getWellKnownVersion** Deprecated: 
 > string getWellKnownVersion()
 
 This will get the version of the server. This will return a string of current version.

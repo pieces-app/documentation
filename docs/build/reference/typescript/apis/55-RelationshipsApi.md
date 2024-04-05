@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
 
 
-## **relationshipsSnapshot**
+## **relationshipsSnapshot** Deprecated: 
 > Relationships relationshipsSnapshot()
 
 This will reurn all of the relationships that exists within your pieces db.

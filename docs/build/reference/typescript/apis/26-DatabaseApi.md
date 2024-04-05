@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
-## **databaseExport**
+## **databaseExport** Deprecated: 
 > ExportedDatabase databaseExport()
 
 This is going to export your current database.
@@ -49,7 +49,7 @@ This endpoint does not need any parameter.
 
 
 
-## **databaseImport**
+## **databaseImport** Deprecated: 
 > databaseImport()
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.

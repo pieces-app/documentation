@@ -23,7 +23,7 @@ Method | HTTP request | Description
 [**workstreamSummaryUpdate**](WorkstreamSummaryApi#workstreamsummaryupdate) | **POST** /workstream_summary/update | /workstream_summary/update [POST]
 
 
-## **workstreamSummariesSpecificWorkstreamSummarySnapshot**
+## **workstreamSummariesSpecificWorkstreamSummarySnapshot** Deprecated: 
 > WorkstreamSummary workstreamSummariesSpecificWorkstreamSummarySnapshot()
 
 This will get a snapshot of a single workstream_summary.
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 
 
 
-## **workstreamSummaryAssociateAnchor**
+## **workstreamSummaryAssociateAnchor** Deprecated: 
 > workstreamSummaryAssociateAnchor()
 
 This will associate a anchor with a workstream_summary. This will do the same thing as the anchor equivalent.
@@ -127,7 +127,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociateAsset**
+## **workstreamSummaryAssociateAsset** Deprecated: 
 > workstreamSummaryAssociateAsset()
 
 This will associate an asset with a workstream_summary. This will do the same thing as the asset equivalent.
@@ -179,7 +179,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociateConversation**
+## **workstreamSummaryAssociateConversation** Deprecated: 
 > workstreamSummaryAssociateConversation()
 
 This will associate an conversation with a workstream_summary. This will do the same thing as the conversation equivalent.
@@ -231,7 +231,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociatePerson**
+## **workstreamSummaryAssociatePerson** Deprecated: 
 > workstreamSummaryAssociatePerson()
 
 This will associate an person with a workstream_summary. This will do the same thing as the person equivalent.
@@ -283,7 +283,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociateRange**
+## **workstreamSummaryAssociateRange** Deprecated: 
 > workstreamSummaryAssociateRange()
 
 This will associate a range with a workstream_summary. This will do the same thing as the range equivalent.
@@ -335,7 +335,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociateWebsite**
+## **workstreamSummaryAssociateWebsite** Deprecated: 
 > workstreamSummaryAssociateWebsite()
 
 This will associate a website with a workstream_summary. This will do the same thing as the website equivalent.
@@ -387,7 +387,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryAssociateWorkstreamEvent**
+## **workstreamSummaryAssociateWorkstreamEvent** Deprecated: 
 > workstreamSummaryAssociateWorkstreamEvent()
 
 This will associate a workstream_summary with a workstream_event. This will do the same thing as the workstream_event equivalent.
@@ -439,7 +439,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateAnchor**
+## **workstreamSummaryDisassociateAnchor** Deprecated: 
 > workstreamSummaryDisassociateAnchor()
 
 This will enable us to disassociate a anchor from a workstream_summary. This will do the same thing as the anchor equivalent.
@@ -491,7 +491,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateAsset**
+## **workstreamSummaryDisassociateAsset** Deprecated: 
 > workstreamSummaryDisassociateAsset()
 
 This will enable us to disassociate a asset from a workstream_summary. This will do the same thing as the asset equivalent.
@@ -543,7 +543,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateConversation**
+## **workstreamSummaryDisassociateConversation** Deprecated: 
 > workstreamSummaryDisassociateConversation()
 
 This will enable us to disassociate a conversation from a workstream_summary. This will do the same thing as the conversation equivalent.
@@ -595,7 +595,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociatePerson**
+## **workstreamSummaryDisassociatePerson** Deprecated: 
 > workstreamSummaryDisassociatePerson()
 
 This will enable us to disassociate a person from a workstream_summary. This will do the same thing as the person equivalent.
@@ -647,7 +647,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateRange**
+## **workstreamSummaryDisassociateRange** Deprecated: 
 > workstreamSummaryDisassociateRange()
 
 This will enable us to disassociate a range from a workstream_summary. This will do the same thing as the range equivalent.
@@ -699,7 +699,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateWebsite**
+## **workstreamSummaryDisassociateWebsite** Deprecated: 
 > workstreamSummaryDisassociateWebsite()
 
 This will enable us to disassociate a website from a workstream_summary. This will do the same thing as the website equivalent.
@@ -751,7 +751,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryDisassociateWorkstreamEvent**
+## **workstreamSummaryDisassociateWorkstreamEvent** Deprecated: 
 > workstreamSummaryDisassociateWorkstreamEvent()
 
 This will enable us to disassociate a workstream_summary from a workstream_event. This will do the same thing as the workstream_event equivalent.
@@ -803,7 +803,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryScoresIncrement**
+## **workstreamSummaryScoresIncrement** Deprecated: 
 > workstreamSummaryScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -855,7 +855,7 @@ void (empty response body)
 
 
 
-## **workstreamSummaryUpdate**
+## **workstreamSummaryUpdate** Deprecated: 
 > WorkstreamSummary workstreamSummaryUpdate()
 
 This will update a specific workstream_summary.

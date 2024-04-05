@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
-## **tagAssociateAsset**
+## **tagAssociateAsset** Deprecated: 
 > tagAssociateAsset()
 
 This will associate a tag with a asset.
@@ -65,7 +65,7 @@ void (empty response body)
 
 
 
-## **tagAssociatePerson**
+## **tagAssociatePerson** Deprecated: 
 > tagAssociatePerson()
 
 This will associate a tag with a person.
@@ -117,7 +117,7 @@ void (empty response body)
 
 
 
-## **tagDisassociateAsset**
+## **tagDisassociateAsset** Deprecated: 
 > tagDisassociateAsset()
 
 This will enable us to dissassociate a tag from a asset.
@@ -169,7 +169,7 @@ void (empty response body)
 
 
 
-## **tagDisassociatePerson**
+## **tagDisassociatePerson** Deprecated: 
 > tagDisassociatePerson()
 
 This will enable us to dissassociate a tag from a person.
@@ -221,7 +221,7 @@ void (empty response body)
 
 
 
-## **tagScoresIncrement**
+## **tagScoresIncrement** Deprecated: 
 > tagScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -273,7 +273,7 @@ void (empty response body)
 
 
 
-## **tagUpdate**
+## **tagUpdate** Deprecated: 
 > Tag tagUpdate()
 
 This will update a specific tag.
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 
 
 
-## **tagsSpecificTagSnapshot**
+## **tagsSpecificTagSnapshot** Deprecated: 
 > Tag tagsSpecificTagSnapshot()
 
 This will get a specific tag.

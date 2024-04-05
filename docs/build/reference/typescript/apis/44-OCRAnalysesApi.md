@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**ocrAnalysesSnapshot**](OCRAnalysesApi#ocranalysessnapshot) | **GET** /ocr_analyses | Your GET endpoint
 
 
-## **ocrAnalysesSnapshot**
+## **ocrAnalysesSnapshot** Deprecated: 
 > OCRAnalyses ocrAnalysesSnapshot()
 
 This will get a snapshot of all of your ocr analyses, an ocr analysis is attached to an image analysis.

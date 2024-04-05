@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
 
-## **auth0Logout**
+## **auth0Logout** Deprecated: 
 > string auth0Logout()
 
 https://auth0.com/docs/api/authentication#logout
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **authorizeAuth0**
+## **authorizeAuth0** Deprecated: 
 > ResultedPKCE authorizeAuth0()
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 
 
-## **exchangeForAuth0Token**
+## **exchangeForAuth0Token** Deprecated: 
 > OAuthToken exchangeForAuth0Token()
 
 An endpoint to generate a OAuth Token for an authentication flow. 
@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 
 
 
-## **getAuth0UserInfo**
+## **getAuth0UserInfo** Deprecated: 
 > Auth0User getAuth0UserInfo()
 
 Get the users info from the Auth0 API

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**rangesSpecificRangeSnapshot**](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\} | /range/\{range\} [GET]
 
 
-## **rangeAssociateConversationGroundingTemporalRangeWorkstreams**
+## **rangeAssociateConversationGroundingTemporalRangeWorkstreams** Deprecated: 
 > rangeAssociateConversationGroundingTemporalRangeWorkstreams()
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
@@ -65,7 +65,7 @@ void (empty response body)
 
 
 
-## **rangeAssociateWorkstreamSummary**
+## **rangeAssociateWorkstreamSummary** Deprecated: 
 > rangeAssociateWorkstreamSummary()
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -117,7 +117,7 @@ void (empty response body)
 
 
 
-## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams**
+## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams** Deprecated: 
 > rangeDisassociateConversationGroundingTemporalRangeWorkstreams()
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
@@ -169,7 +169,7 @@ void (empty response body)
 
 
 
-## **rangeDisassociateWorkstreamSummary**
+## **rangeDisassociateWorkstreamSummary** Deprecated: 
 > rangeDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -221,7 +221,7 @@ void (empty response body)
 
 
 
-## **rangeScoresIncrement**
+## **rangeScoresIncrement** Deprecated: 
 > rangeScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -273,7 +273,7 @@ void (empty response body)
 
 
 
-## **rangeUpdate**
+## **rangeUpdate** Deprecated: 
 > Range rangeUpdate()
 
 This will update a specific range.
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 
 
-## **rangesSpecificRangeSnapshot**
+## **rangesSpecificRangeSnapshot** Deprecated: 
 > Range rangesSpecificRangeSnapshot()
 
 This will get a snapshot of a single range.

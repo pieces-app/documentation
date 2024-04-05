@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**updatePerson**](PersonApi#updateperson) | **POST** /person/update | /person/update [POST]
 
 
-## **personAssociateWorkstreamSummary**
+## **personAssociateWorkstreamSummary** Deprecated: 
 > personAssociateWorkstreamSummary()
 
 This will associate a person with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -63,7 +63,7 @@ void (empty response body)
 
 
 
-## **personDisassociateWorkstreamSummary**
+## **personDisassociateWorkstreamSummary** Deprecated: 
 > personDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an person from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -115,7 +115,7 @@ void (empty response body)
 
 
 
-## **personScoresIncrement**
+## **personScoresIncrement** Deprecated: 
 > personScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -167,7 +167,7 @@ void (empty response body)
 
 
 
-## **personSnapshot**
+## **personSnapshot** Deprecated: 
 > Person personSnapshot()
 
 This will get a snapshot of a specific person
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 
 
-## **updatePerson**
+## **updatePerson** Deprecated: 
 > Person updatePerson()
 
 This will update a specific person

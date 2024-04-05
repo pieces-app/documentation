@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
-## **getMetricsFormats**
+## **getMetricsFormats** Deprecated: 
 > FormatsMetrics getMetricsFormats()
 
 This is going to get a snapshot of our FormatsMetrics
@@ -48,7 +48,7 @@ This endpoint does not need any parameter.
 
 
 
-## **metricsFormatsOrdered**
+## **metricsFormatsOrdered** Deprecated: 
 > OrderedMetrics metricsFormatsOrdered()
 
 This will return a list of code formats in desc order from most to least formats uploaded.

@@ -13,7 +13,7 @@ Method | HTTP request | Description
 [**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
-## **modelSpecificModelDownload**
+## **modelSpecificModelDownload** Deprecated: 
 > Model modelSpecificModelDownload()
 
 This will download a specific model onto your local machine.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelSpecificModelDownloadCancel**
+## **modelSpecificModelDownloadCancel** Deprecated: 
 > Model modelSpecificModelDownloadCancel()
 
 This will cancel a specific model download in progress.
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelSpecificModelDownloadProgress**
+## **modelSpecificModelDownloadProgress** Deprecated: 
 > ModelDownloadProgress modelSpecificModelDownloadProgress()
 
 This is a Websocket Connection, to get the progress of the downloading of a specific model.
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelSpecificModelLoad**
+## **modelSpecificModelLoad** Deprecated: 
 > Model modelSpecificModelLoad()
 
 This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelSpecificModelUnload**
+## **modelSpecificModelUnload** Deprecated: 
 > Model modelSpecificModelUnload()
 
 This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelUpdate**
+## **modelUpdate** Deprecated: 
 > Model modelUpdate()
 
 This will update Machinelearning Model, this is only available for \"custom:true\" models.
@@ -307,7 +307,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelsSpecificModelSnapshot**
+## **modelsSpecificModelSnapshot** Deprecated: 
 > Model modelsSpecificModelSnapshot()
 
 

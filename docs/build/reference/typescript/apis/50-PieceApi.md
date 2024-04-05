@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**htmlShare**](PieceApi#htmlshare) | **GET** / | / [GET]
 
 
-## **htmlShare**
+## **htmlShare** Deprecated: 
 > string htmlShare()
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.

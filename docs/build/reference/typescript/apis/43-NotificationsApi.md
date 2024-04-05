@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**sendLocalNotification**](NotificationsApi#sendlocalnotification) | **POST** /notifications/local/send | Send notification
 
 
-## **sendLocalNotification**
+## **sendLocalNotification** Deprecated: 
 > sendLocalNotification()
 
 This one is to universaly send notifications from any member of the system

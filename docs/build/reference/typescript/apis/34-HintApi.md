@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
-## **hintScoresIncrement**
+## **hintScoresIncrement** Deprecated: 
 > hintScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **hintSpecificHintSnapshot**
+## **hintSpecificHintSnapshot** Deprecated: 
 > Hint hintSpecificHintSnapshot()
 
 This will get a snapshot of a specific hint.
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 
 
-## **hintUpdate**
+## **hintUpdate** Deprecated: 
 > Hint hintUpdate()
 
 This will update a specific hint.

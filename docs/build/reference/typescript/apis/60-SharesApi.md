@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
-## **sharesCreateNewShare**
+## **sharesCreateNewShare** Deprecated: 
 > Shares sharesCreateNewShare()
 
 This endpoint will accept an asset. Response here will be a Share that was created.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **sharesDeleteShare**
+## **sharesDeleteShare** Deprecated: 
 > string sharesDeleteShare()
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 
 
-## **sharesSnapshot**
+## **sharesSnapshot** Deprecated: 
 > Shares sharesSnapshot()
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 
 
-## **sharesSpecificShareSnapshot**
+## **sharesSpecificShareSnapshot** Deprecated: 
 > Share sharesSpecificShareSnapshot()
 
 This is an endpoint to enable a client to access a specific share through a provided share id.

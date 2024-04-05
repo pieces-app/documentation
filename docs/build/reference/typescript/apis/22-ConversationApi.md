@@ -24,7 +24,7 @@ Method | HTTP request | Description
 [**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
 
 
-## **conversationAssociateAnchor**
+## **conversationAssociateAnchor** Deprecated: 
 > conversationAssociateAnchor()
 
 This will update both the anchor and the conversation.  and associate the 2 together
@@ -76,7 +76,7 @@ void (empty response body)
 
 
 
-## **conversationAssociateAsset**
+## **conversationAssociateAsset** Deprecated: 
 > conversationAssociateAsset()
 
 This will update both the asset and the conversation.  and associate the 2 together
@@ -128,7 +128,7 @@ void (empty response body)
 
 
 
-## **conversationAssociateGroundingTemporalRangeWorkstream**
+## **conversationAssociateGroundingTemporalRangeWorkstream** Deprecated: 
 > conversationAssociateGroundingTemporalRangeWorkstream()
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
@@ -180,7 +180,7 @@ void (empty response body)
 
 
 
-## **conversationAssociateWebsite**
+## **conversationAssociateWebsite** Deprecated: 
 > conversationAssociateWebsite()
 
 This will update both the website and the conversation.  and associate the 2 together
@@ -232,7 +232,7 @@ void (empty response body)
 
 
 
-## **conversationAssociateWorkstreamSummary**
+## **conversationAssociateWorkstreamSummary** Deprecated: 
 > conversationAssociateWorkstreamSummary()
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -284,7 +284,7 @@ void (empty response body)
 
 
 
-## **conversationDisassociateAnchor**
+## **conversationDisassociateAnchor** Deprecated: 
 > conversationDisassociateAnchor()
 
 This will update both the anchor and the conversation.  and delete(disassociate) the 2 together
@@ -336,7 +336,7 @@ void (empty response body)
 
 
 
-## **conversationDisassociateAsset**
+## **conversationDisassociateAsset** Deprecated: 
 > conversationDisassociateAsset()
 
 This will update both the asset and the conversation.  and delete(disassociate) the 2.
@@ -388,7 +388,7 @@ void (empty response body)
 
 
 
-## **conversationDisassociateGroundingTemporalRangeWorkstream**
+## **conversationDisassociateGroundingTemporalRangeWorkstream** Deprecated: 
 > conversationDisassociateGroundingTemporalRangeWorkstream()
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
@@ -440,7 +440,7 @@ void (empty response body)
 
 
 
-## **conversationDisassociateWebsite**
+## **conversationDisassociateWebsite** Deprecated: 
 > conversationDisassociateWebsite()
 
 This will enable us to dissassociate a conversation from a website.
@@ -492,7 +492,7 @@ void (empty response body)
 
 
 
-## **conversationDisassociateWorkstreamSummary**
+## **conversationDisassociateWorkstreamSummary** Deprecated: 
 > conversationDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -544,7 +544,7 @@ void (empty response body)
 
 
 
-## **conversationGetSpecificConversation**
+## **conversationGetSpecificConversation** Deprecated: 
 > Conversation conversationGetSpecificConversation()
 
 This will get a specific conversation.
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationGroundingMessagesAssociateMessage**
+## **conversationGroundingMessagesAssociateMessage** Deprecated: 
 > conversationGroundingMessagesAssociateMessage()
 
 This will save the grounding context for a conversation. This will enable us to associate a message to the conversation.grounding object.
@@ -648,7 +648,7 @@ void (empty response body)
 
 
 
-## **conversationGroundingMessagesDisassociateMessage**
+## **conversationGroundingMessagesDisassociateMessage** Deprecated: 
 > conversationGroundingMessagesDisassociateMessage()
 
 This will remove specific grounding context for a conversation. This will enable us to dissassociate a message from the conversation.grounding object.
@@ -700,7 +700,7 @@ void (empty response body)
 
 
 
-## **conversationScoresIncrement**
+## **conversationScoresIncrement** Deprecated: 
 > conversationScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -752,7 +752,7 @@ void (empty response body)
 
 
 
-## **conversationSpecificConversationMessages**
+## **conversationSpecificConversationMessages** Deprecated: 
 > ConversationMessages conversationSpecificConversationMessages()
 
 This will get a specific conversations messages
@@ -804,7 +804,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationSpecificConversationRename**
+## **conversationSpecificConversationRename** Deprecated: 
 > Conversation conversationSpecificConversationRename()
 
 This will take a specific converssation and it will rename using ML.
@@ -856,7 +856,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationSummarize**
+## **conversationSummarize** Deprecated: 
 > ConversationSummarizeOutput conversationSummarize()
 
 This will take a current conversation and create a summary of the conversation and save it as an annotation on the conversation.  will return the annotation reference used as the summary.
@@ -908,7 +908,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationUpdate**
+## **conversationUpdate** Deprecated: 
 > Conversation conversationUpdate()
 
 This will update a specific conversation.

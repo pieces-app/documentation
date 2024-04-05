@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**anchorsSnapshot**](AnchorsApi#anchorssnapshot) | **GET** /anchors | /anchors [GET]
 
 
-## **anchorDisassociateAsset**
+## **anchorDisassociateAsset** Deprecated: 
 > anchorDisassociateAsset()
 
 This will update both the asset and the anchor reference, that will remove a anchor from an asset(only the references).  This will NOT remove the anchor. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
@@ -62,7 +62,7 @@ void (empty response body)
 
 
 
-## **anchorsCreateNewAnchor**
+## **anchorsCreateNewAnchor** Deprecated: 
 > Anchor anchorsCreateNewAnchor()
 
 This will create a anchor and attach it to a specific asset(s) This will also ensure the anchor is normalized.
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 
 
-## **anchorsDeleteSpecificAnchor**
+## **anchorsDeleteSpecificAnchor** Deprecated: 
 > anchorsDeleteSpecificAnchor()
 
 This will delete a specific anchor!
@@ -163,7 +163,7 @@ void (empty response body)
 
 
 
-## **anchorsSnapshot**
+## **anchorsSnapshot** Deprecated: 
 > Anchors anchorsSnapshot()
 
 This will get a snapshot of all your anchors.

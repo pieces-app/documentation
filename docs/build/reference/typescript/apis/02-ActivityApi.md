@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**activityUpdate**](ActivityApi#activityupdate) | **POST** /activity/update | /activity/update [POST]
 
 
-## **activitiesSpecificActivitySnapshot**
+## **activitiesSpecificActivitySnapshot** Deprecated: 
 > Activity activitiesSpecificActivitySnapshot()
 
 This will attempt to get a specific activity.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **activityIdentifiersSnapshot**
+## **activityIdentifiersSnapshot** Deprecated: 
 > FlattenedActivities activityIdentifiersSnapshot()
 
 This is going to return all the identifiers of the activity event in order of most recent -> oldest.
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 
 
-## **activityUpdate**
+## **activityUpdate** Deprecated: 
 > Activity activityUpdate()
 
 this will update a specific activity.

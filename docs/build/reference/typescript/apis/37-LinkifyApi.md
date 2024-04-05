@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
-## **linkify**
+## **linkify** Deprecated: 
 > Shares linkify()
 
 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **linkifyMultiple**
+## **linkifyMultiple** Deprecated: 
 > Shares linkifyMultiple()
 
 - assumption that you have already backed up the asset\'s that you are sending to this endpoint.(b/c the assets are ids.)
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 
 
-## **linkifyShareRevoke**
+## **linkifyShareRevoke** Deprecated: 
 > string linkifyShareRevoke()
 
 This will revoke a link.

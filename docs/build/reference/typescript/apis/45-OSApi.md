@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
-## **linkProvider**
+## **linkProvider** Deprecated: 
 > ReturnedUserProfile linkProvider()
 
 This will link an external provider to your current auth0 account.  Will throw errors if your user is not signed in.
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 
 
-## **osDeviceInformation**
+## **osDeviceInformation** Deprecated: 
 > OSDeviceInformationReturnable osDeviceInformation()
 
 This will get information related to your specific device.
@@ -105,7 +105,7 @@ This endpoint does not need any parameter.
 
 
 
-## **osRestart**
+## **osRestart** Deprecated: 
 > osRestart()
 
 This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS Only Endpoint.
@@ -146,7 +146,7 @@ void (empty response body)
 
 
 
-## **osUpdateCheck**
+## **osUpdateCheck** Deprecated: 
 > CheckedOSUpdate osUpdateCheck()
 
 This is a helper endpoint that will check the status of an update for PiecesOS. IE if there is an update downloading, if there is one available, but the downloading has not started... etc
@@ -195,7 +195,7 @@ Name | Type | Description  | Notes
 
 
 
-## **pickFiles**
+## **pickFiles** Deprecated: 
 > Array\<string\> pickFiles()
 
 This will trigger a filer picker and return the string paths of the files that were selected.
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 
 
-## **pickFolders**
+## **pickFolders** Deprecated: 
 > Array\<string\> pickFolders()
 
 This will trigger a folder picker and return the string paths of the folders that were selected.
@@ -285,7 +285,7 @@ This endpoint does not need any parameter.
 
 
 
-## **signIntoOS**
+## **signIntoOS** Deprecated: 
 > UserProfile signIntoOS()
 
 A trigger that launches a Sign into OS Server
@@ -325,7 +325,7 @@ This endpoint does not need any parameter.
 
 
 
-## **signOutOfOS**
+## **signOutOfOS** Deprecated: 
 > Users signOutOfOS()
 
 A trigger that signs out a user from the OS

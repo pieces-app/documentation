@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
-## **modelsCreateNewModel**
+## **modelsCreateNewModel** Deprecated: 
 > Model modelsCreateNewModel()
 
 This will create a ml model, this is aloud however all models will be set to custom: true.  && we will verify we dont have a model that matches this model.
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelsDeleteSpecificModel**
+## **modelsDeleteSpecificModel** Deprecated: 
 > modelsDeleteSpecificModel()
 
 This will delete a model, This is only available for custom: true models.
@@ -109,7 +109,7 @@ void (empty response body)
 
 
 
-## **modelsDeleteSpecificModelCache**
+## **modelsDeleteSpecificModelCache** Deprecated: 
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache()
 
 This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 
 
-## **modelsSnapshot**
+## **modelsSnapshot** Deprecated: 
 > Models modelsSnapshot()
 
 This will get a snapshot of all of your models.
@@ -202,7 +202,7 @@ This endpoint does not need any parameter.
 
 
 
-## **unloadModels**
+## **unloadModels** Deprecated: 
 > unloadModels()
 
 This will unload all of the ml models.(that are unloadable)

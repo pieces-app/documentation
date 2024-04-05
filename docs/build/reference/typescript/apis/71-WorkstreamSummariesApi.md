@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**workstreamSummariesSnapshot**](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
 
 
-## **workstreamSummariesCreateNewWorkstreamSummary**
+## **workstreamSummariesCreateNewWorkstreamSummary** Deprecated: 
 > WorkstreamSummary workstreamSummariesCreateNewWorkstreamSummary()
 
 This will create a new WorkstreamSummary in the database.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **workstreamSummariesDeleteSpecificWorkstreamSummary**
+## **workstreamSummariesDeleteSpecificWorkstreamSummary** Deprecated: 
 > workstreamSummariesDeleteSpecificWorkstreamSummary()
 
 This will delete a specific workstream_summary from the database!
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **workstreamSummariesSnapshot**
+## **workstreamSummariesSnapshot** Deprecated: 
 > WorkstreamSummaries workstreamSummariesSnapshot()
 
 This will get a snapshot of all your workstream summaries.

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
-## **messageAssociateAnnotation**
+## **messageAssociateAnnotation** Deprecated: 
 > messageAssociateAnnotation()
 
 This will associate a message with an annotation.
@@ -64,7 +64,7 @@ void (empty response body)
 
 
 
-## **messageDisassociateAnnotation**
+## **messageDisassociateAnnotation** Deprecated: 
 > messageDisassociateAnnotation()
 
 This will enable us to dissassociate a message from an annotation.
@@ -116,7 +116,7 @@ void (empty response body)
 
 
 
-## **messageScoresIncrement**
+## **messageScoresIncrement** Deprecated: 
 > messageScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -168,7 +168,7 @@ void (empty response body)
 
 
 
-## **messageSpecificMessageSnapshot**
+## **messageSpecificMessageSnapshot** Deprecated: 
 > ConversationMessage messageSpecificMessageSnapshot()
 
 This will get a specific snapshot of a message
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 
 
-## **messageSpecificMessageUpdate**
+## **messageSpecificMessageUpdate** Deprecated: 
 > ConversationMessage messageSpecificMessageUpdate()
 
 This will update a conversation message.
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 
 
-## **messageUpdateValue**
+## **messageUpdateValue** Deprecated: 
 > ConversationMessage messageUpdateValue()
 
 This will update the value of a conversation message.

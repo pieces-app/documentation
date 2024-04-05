@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**segmentTechnicalLanguage**](MachineLearningApi#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
-## **personificationTechnicalLanguageGeneration**
+## **personificationTechnicalLanguageGeneration** Deprecated: 
 > OnboardedPersonaDetails personificationTechnicalLanguageGeneration()
 
 This is going to take in some personification details ie languages & personas.  and will return generated Seeds that can be used as snippets post/pre onboarding.
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 
 
-## **segmentTechnicalLanguage**
+## **segmentTechnicalLanguage** Deprecated: 
 > SegmentedTechnicalLanguage segmentTechnicalLanguage()
 
 This is a functional endpoint that will parse a message or text in to text or code.  if the optional query param is passed along \'classify\' then we will optionally classify the just the code that is segmented.

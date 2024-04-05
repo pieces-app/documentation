@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
 
 
-## **conversationsCreateFromAsset**
+## **conversationsCreateFromAsset** Deprecated: 
 > ConversationsCreateFromAssetOutput conversationsCreateFromAsset()
 
 This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationsCreateSpecificConversation**
+## **conversationsCreateSpecificConversation** Deprecated: 
 > Conversation conversationsCreateSpecificConversation()
 
 This will create a specific conversation.
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationsDeleteSpecificConversation**
+## **conversationsDeleteSpecificConversation** Deprecated: 
 > conversationsDeleteSpecificConversation()
 
 This will delete a specific Conversation.
@@ -162,7 +162,7 @@ void (empty response body)
 
 
 
-## **conversationsIdentifiersSnapshot**
+## **conversationsIdentifiersSnapshot** Deprecated: 
 > FlattenedConversations conversationsIdentifiersSnapshot()
 
 This will get all the uuids of a Conversation.
@@ -203,7 +203,7 @@ This endpoint does not need any parameter.
 
 
 
-## **conversationsSnapshot**
+## **conversationsSnapshot** Deprecated: 
 > Conversations conversationsSnapshot()
 
 This will return a snapshot of a specific conversation
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 
 
-## **conversationsStreamIdentifiers**
+## **conversationsStreamIdentifiers** Deprecated: 
 > conversationsStreamIdentifiers()
 
 This is a stream for the conversation identifiers. will return StreamedIdentifiers.

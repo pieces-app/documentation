@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
 
 
-## **relationshipsSpecificRelationshipSnapshot**
+## **relationshipsSpecificRelationshipSnapshot** Deprecated: 
 > Relationship relationshipsSpecificRelationshipSnapshot()
 
 This will return a single relationship object.

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
-## **clearUser**
+## **clearUser** Deprecated: 
 > clearUser()
 
 An endpoint to clear the current user. 
@@ -54,7 +54,7 @@ void (empty response body)
 
 
 
-## **refreshUser**
+## **refreshUser** Deprecated: 
 > UserProfile refreshUser()
 
 This will refresh a user.
@@ -95,7 +95,7 @@ This endpoint does not need any parameter.
 
 
 
-## **selectUser**
+## **selectUser** Deprecated: 
 > UserProfile selectUser()
 
 This will select the current user.
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 
 
-## **streamUser**
+## **streamUser** Deprecated: 
 > UserProfile streamUser()
 
 This will stream in the current user, not quiet sure yet how we want to do this.
@@ -183,7 +183,7 @@ This endpoint does not need any parameter.
 
 
 
-## **updateUser**
+## **updateUser** Deprecated: 
 > UserProfile updateUser()
 
 This will update a specific user in the database.
@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 
 
-## **userProviders**
+## **userProviders** Deprecated: 
 > ReturnedUserProfile userProviders()
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
@@ -273,7 +273,7 @@ This endpoint does not need any parameter.
 
 
 
-## **userSnapshot**
+## **userSnapshot** Deprecated: 
 > ReturnedUserProfile userSnapshot()
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
@@ -313,7 +313,7 @@ This endpoint does not need any parameter.
 
 
 
-## **userUpdateVanity**
+## **userUpdateVanity** Deprecated: 
 > UserProfile userUpdateVanity()
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.

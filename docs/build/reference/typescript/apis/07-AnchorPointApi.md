@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
-## **anchorPointScoresIncrement**
+## **anchorPointScoresIncrement** Deprecated: 
 > anchorPointScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **anchorPointSpecificAnchorPointSnapshot**
+## **anchorPointSpecificAnchorPointSnapshot** Deprecated: 
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot()
 
 This will get a snapshot of a single anchorPoint.
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 
 
-## **anchorPointUpdate**
+## **anchorPointUpdate** Deprecated: 
 > AnchorPoint anchorPointUpdate()
 
 This will update a specific anchorPoint.

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
-## **clearPKCE**
+## **clearPKCE** Deprecated: 
 > clearPKCE()
 
 This is a function to Clear a PKCE Authentication Flow
@@ -51,7 +51,7 @@ void (empty response body)
 
 
 
-## **generateCode**
+## **generateCode** Deprecated: 
 > PKCE generateCode()
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 
 
-## **generateToken**
+## **generateToken** Deprecated: 
 > PKCE generateToken()
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 
 
-## **getChallenge**
+## **getChallenge** Deprecated: 
 > PKCE getChallenge()
 
 An endpoint that returns a PKCE Challenge
@@ -187,7 +187,7 @@ This endpoint does not need any parameter.
 
 
 
-## **respondWithCode**
+## **respondWithCode** Deprecated: 
 > PKCE respondWithCode()
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.

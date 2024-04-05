@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
 
 
-## **personDisassociateAsset**
+## **personDisassociateAsset** Deprecated: 
 > personDisassociateAsset()
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
@@ -62,7 +62,7 @@ void (empty response body)
 
 
 
-## **personsCreateNewPerson**
+## **personsCreateNewPerson** Deprecated: 
 > Person personsCreateNewPerson()
 
 This will create a new person.
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 
 
-## **personsDeletePerson**
+## **personsDeletePerson** Deprecated: 
 > personsDeletePerson()
 
 This will delete a specific person.
@@ -163,7 +163,7 @@ void (empty response body)
 
 
 
-## **personsSnapshot**
+## **personsSnapshot** Deprecated: 
 > Persons personsSnapshot()
 
 This will get a snapshot of all of your people

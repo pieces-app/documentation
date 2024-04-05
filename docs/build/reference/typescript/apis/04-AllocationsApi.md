@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
-## **allocationsConnectNewCloud**
+## **allocationsConnectNewCloud** Deprecated: 
 > AllocationCloud allocationsConnectNewCloud()
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationsCreateNewAllocation**
+## **allocationsCreateNewAllocation** Deprecated: 
 > AllocationCloud allocationsCreateNewAllocation()
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationsDeleteAllocation**
+## **allocationsDeleteAllocation** Deprecated: 
 > string allocationsDeleteAllocation()
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationsDisconnectCloud**
+## **allocationsDisconnectCloud** Deprecated: 
 > string allocationsDisconnectCloud()
 
 This will attempt to disconnect to a specific users cloud.
@@ -209,7 +209,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationsReconnectCloud**
+## **allocationsReconnectCloud** Deprecated: 
 > AllocationCloud allocationsReconnectCloud()
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user\'s cloud is up-to-date.
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationsSnapshot**
+## **allocationsSnapshot** Deprecated: 
 > Allocations allocationsSnapshot()
 
 This is going to get a snapshot of all of the connected allocations.

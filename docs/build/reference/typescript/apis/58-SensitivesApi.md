@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
 
 
-## **sensitivesCreateNewSensitive**
+## **sensitivesCreateNewSensitive** Deprecated: 
 > Sensitive sensitivesCreateNewSensitive()
 
 This will create a new sensitive model.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **sensitivesDeleteSensitive**
+## **sensitivesDeleteSensitive** Deprecated: 
 > sensitivesDeleteSensitive()
 
 This will delete a sensitive based on the sensitive uuid.
@@ -107,7 +107,7 @@ void (empty response body)
 
 
 
-## **sensitivesSnapshot**
+## **sensitivesSnapshot** Deprecated: 
 > Sensitives sensitivesSnapshot()
 
 This will get a snapshot of all of the sensitives.

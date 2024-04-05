@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
-## **sensitiveScoresIncrement**
+## **sensitiveScoresIncrement** Deprecated: 
 > sensitiveScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **sensitiveSnapshot**
+## **sensitiveSnapshot** Deprecated: 
 > Sensitive sensitiveSnapshot()
 
 This will get a specific sensitive via the sensitive uuid.
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 
 
-## **updateSensitive**
+## **updateSensitive** Deprecated: 
 > Sensitive updateSensitive()
 
 This will update a specific sensitive

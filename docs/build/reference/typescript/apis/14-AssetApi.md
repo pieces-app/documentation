@@ -12,19 +12,19 @@ Method | HTTP request | Description
 [**assetDisassociateWorkstreamSummary**](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
 [**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
 [**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
-[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | \&#39;/asset/\{asset\}/scores/increment\&#39; [POST]
+[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | /asset/\{asset\}/scores/increment [POST]
 [**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
 [**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
 [**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
 [**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
-[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | [GET] /asset/\{asset\}/export
+[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | /asset/\{asset\}/export [GET]
 [**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
 
 
-## **assetAssociateTag**
+## **assetAssociateTag** Deprecated: 
 > assetAssociateTag()
 
-This will associate a tag with a asset. This will do the same thing as the tag equivalent.
+This endpoint associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
 ### Example
 
@@ -73,10 +73,10 @@ void (empty response body)
 
 
 
-## **assetAssociateWebsite**
+## **assetAssociateWebsite** Deprecated: 
 > assetAssociateWebsite()
 
-This will associate a website with a asset. This will do the same thing as the website equivalent.
+This endpoint associates a website with an asset. It performs the same action as its website equivalent.
 
 ### Example
 
@@ -125,7 +125,7 @@ void (empty response body)
 
 
 
-## **assetAssociateWorkstreamSummary**
+## **assetAssociateWorkstreamSummary** Deprecated: 
 > assetAssociateWorkstreamSummary()
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -177,10 +177,10 @@ void (empty response body)
 
 
 
-## **assetDisassociateTag**
+## **assetDisassociateTag** Deprecated: 
 > assetDisassociateTag()
 
-This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivalent.
+This endpoint disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
 ### Example
 
@@ -229,10 +229,10 @@ void (empty response body)
 
 
 
-## **assetDisassociateWebsite**
+## **assetDisassociateWebsite** Deprecated: 
 > assetDisassociateWebsite()
 
-This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivalent.
+This endpoint disassociates a website from an asset. It performs the same action as the website equivalent.
 
 ### Example
 
@@ -281,7 +281,7 @@ void (empty response body)
 
 
 
-## **assetDisassociateWorkstreamSummary**
+## **assetDisassociateWorkstreamSummary** Deprecated: 
 > assetDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -333,10 +333,10 @@ void (empty response body)
 
 
 
-## **assetFormats**
+## **assetFormats** Deprecated: 
 > Formats assetFormats()
 
-Get the formats for a given asset.
+This endpoint retrieves the formats available for a specified asset.
 
 ### Example
 
@@ -384,10 +384,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetReclassify**
+## **assetReclassify** Deprecated: 
 > Asset assetReclassify()
 
-This will update the classification of this asset to the proper classification.
+This endpoint updates the classification of an asset to the appropriate category.
 
 ### Example
 
@@ -435,10 +435,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetScoresIncrement**
+## **assetScoresIncrement** Deprecated: 
 > assetScoresIncrement()
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+This endpoint increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
 ### Example
 
@@ -487,10 +487,10 @@ void (empty response body)
 
 
 
-## **assetSnapshot**
+## **assetSnapshot** Deprecated: 
 > Asset assetSnapshot()
 
-Get the snapshot of a specific asset.
+This endpoint retrieves the snapshot of a specific asset.
 
 ### Example
 
@@ -539,10 +539,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetSnapshotPost**
+## **assetSnapshotPost** Deprecated: 
 > Asset assetSnapshotPost()
 
-Get the snapshot of a specific asset. by passing over as well the user who is getting the snapshot.
+This endpoint retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
 ### Example
 
@@ -593,10 +593,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetSpecificAssetActivities**
+## **assetSpecificAssetActivities** Deprecated: 
 > Activities assetSpecificAssetActivities()
 
-This will get a specific asset\'s activity events
+This endpoint retrieves activity events specific to the given asset.
 
 ### Example
 
@@ -645,10 +645,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetSpecificAssetConversations**
+## **assetSpecificAssetConversations** Deprecated: 
 > Conversations assetSpecificAssetConversations()
 
-This will get a specific asset\'s conversations
+This endpoint retrieves conversations specific to the given asset.
 
 ### Example
 
@@ -697,10 +697,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetSpecificAssetExport**
+## **assetSpecificAssetExport** Deprecated: 
 > ExportedAsset assetSpecificAssetExport()
 
-This will return a export version of your asset.
+This endpoint retrieves an export version of the specified asset.
 
 ### Example
 
@@ -749,7 +749,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetUpdate**
+## **assetUpdate** Deprecated: 
 > Asset assetUpdate()
 
 This endpoint will accept an Asset that the user wants to update, and will return the a full Asset that was updated!
@@ -766,7 +766,7 @@ const apiInstance = new Pieces.AssetApi(configuration);
 const body: Pieces.AssetUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
-    // Asset | This is the updated Asset that needs to be updated in our db. (optional)
+    // Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. (optional)
     asset: ,
 };
 
@@ -779,7 +779,7 @@ apiInstance.assetUpdate(body).then((data: Asset) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **Asset**| This is the updated Asset that needs to be updated in our db. |
+ **asset** | **Asset**| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

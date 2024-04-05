@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
 
 
-## **authenticateFromOauthToken**
+## **authenticateFromOauthToken** Deprecated: 
 > UserProfile authenticateFromOauthToken()
 
 Creates a User From a oAuth Token
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **usersDisconnectUser**
+## **usersDisconnectUser** Deprecated: 
 > Users usersDisconnectUser()
 
 Locally Removing a user for the purpose of Signing Out
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 
 
-## **usersSnapshot**
+## **usersSnapshot** Deprecated: 
 > Users usersSnapshot()
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
@@ -146,7 +146,7 @@ This endpoint does not need any parameter.
 
 
 
-## **usersSpecificUserSnapshot**
+## **usersSpecificUserSnapshot** Deprecated: 
 > UserProfile usersSpecificUserSnapshot()
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.

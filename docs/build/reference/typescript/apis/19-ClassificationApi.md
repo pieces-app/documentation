@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert | Convert Generic Classification
 
 
-## **convertGenericClassification**
+## **convertGenericClassification** Deprecated: 
 > SeededFormat convertGenericClassification()
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 

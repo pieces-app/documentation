@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
-## **distributionsCreateNewDistribution**
+## **distributionsCreateNewDistribution** Deprecated: 
 > Distribution distributionsCreateNewDistribution()
 
 This will create a new distribution.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **distributionsDeleteSpecificDistribution**
+## **distributionsDeleteSpecificDistribution** Deprecated: 
 > distributionsDeleteSpecificDistribution()
 
 This will delete a specific distribution.
@@ -107,7 +107,7 @@ void (empty response body)
 
 
 
-## **distributionsSnapshot**
+## **distributionsSnapshot** Deprecated: 
 > Distributions distributionsSnapshot()
 
 This will get a specific snapshot of all our distributions.

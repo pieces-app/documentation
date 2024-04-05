@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**track**](ConnectorApi#track) | **POST** /\{application\}/track | /\{application\}/track [POST]
 
 
-## **connect**
+## **connect** Deprecated: 
 > Context connect()
 
 An endpoint which abstracts a bootup/connection for a specific context
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **intention**
+## **intention** Deprecated: 
 > string intention()
 
 This can be used to send a SeededAsset over that you may use to compair in the future.
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 
 
-## **onboarded**
+## **onboarded** Deprecated: 
 > string onboarded()
 
 A consolidation endpoint to handle the updating of an onboarding process.
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 
 
-## **react**
+## **react** Deprecated: 
 > string react()
 
 This will react to the response returned from the /suggest endpoint. 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 
 
-## **suggest**
+## **suggest** Deprecated: 
 > Suggestion suggest()
 
 This can and should be called everytime a snippet is coppied from an integration. IE A Jetbrains user coppies some code, then this end point can get called to weigh if we want to suggest a piece to be reused (if reuse is true we should provide asset that the user may want to use) or saved or neither.   **Note: Could potentially accept a SeededFormat for the request body if we want.  TODO potentially just make this a get endpoint. (because we are trying to retireve data.
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 
 
 
-## **track**
+## **track** Deprecated: 
 > string track()
 
 This is an endpoint specifically to abstract the work of packaging for segment on a per-context basis

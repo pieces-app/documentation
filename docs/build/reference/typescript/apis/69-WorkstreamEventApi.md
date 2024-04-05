@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**workstreamEventsSpecificWorkstreamEventSnapshot**](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\} | /workstream_event/\{workstream_event\} [GET]
 
 
-## **workstreamEventAssociateWorkstreamSummary**
+## **workstreamEventAssociateWorkstreamSummary** Deprecated: 
 > workstreamEventAssociateWorkstreamSummary()
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -63,7 +63,7 @@ void (empty response body)
 
 
 
-## **workstreamEventDisassociateWorkstreamSummary**
+## **workstreamEventDisassociateWorkstreamSummary** Deprecated: 
 > workstreamEventDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -115,7 +115,7 @@ void (empty response body)
 
 
 
-## **workstreamEventScoresIncrement**
+## **workstreamEventScoresIncrement** Deprecated: 
 > workstreamEventScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -167,7 +167,7 @@ void (empty response body)
 
 
 
-## **workstreamEventUpdate**
+## **workstreamEventUpdate** Deprecated: 
 > WorkstreamEvent workstreamEventUpdate()
 
 This will update a specific workstream_event.
@@ -219,7 +219,7 @@ Name | Type | Description  | Notes
 
 
 
-## **workstreamEventsSpecificWorkstreamEventSnapshot**
+## **workstreamEventsSpecificWorkstreamEventSnapshot** Deprecated: 
 > WorkstreamEvent workstreamEventsSpecificWorkstreamEventSnapshot()
 
 This will get a snapshot of a single workstream_event.

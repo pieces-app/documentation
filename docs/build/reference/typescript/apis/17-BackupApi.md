@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
 
 
-## **backup**
+## **backup** Deprecated: 
 > backup()
 
 
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **backupAsset**
+## **backupAsset** Deprecated: 
 > backupAsset()
 
 
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **backupRestoreSpecificBackup**
+## **backupRestoreSpecificBackup** Deprecated: 
 > Backup backupRestoreSpecificBackup()
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 
 
-## **backupRestoreSpecificBackupStreamed**
+## **backupRestoreSpecificBackupStreamed** Deprecated: 
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed()
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
@@ -214,7 +214,7 @@ Name | Type | Description  | Notes
 
 
 
-## **backupSpecificBackupSnapshot**
+## **backupSpecificBackupSnapshot** Deprecated: 
 > Backup backupSpecificBackupSnapshot()
 
 This will just get the metadata associated with a specific backup.

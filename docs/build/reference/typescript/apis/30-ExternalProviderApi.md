@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
 
 
-## **externalProviderApiKeyCreate**
+## **externalProviderApiKeyCreate** Deprecated: 
 > CreatedExternalProviderApiKey externalProviderApiKeyCreate()
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 
 
-## **externalProviderApiKeyDelete**
+## **externalProviderApiKeyDelete** Deprecated: 
 > DeletedExternalProviderApiKey externalProviderApiKeyDelete()
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 
 
-## **externalProviderApiKeyUpdate**
+## **externalProviderApiKeyUpdate** Deprecated: 
 > UpdatedExternalProviderApiKey externalProviderApiKeyUpdate()
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**annotationsSnapshot**](AnnotationsApi#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
-## **annotationsCreateNewAnnotation**
+## **annotationsCreateNewAnnotation** Deprecated: 
 > Annotation annotationsCreateNewAnnotation()
 
 This will create an annotation.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **annotationsDeleteSpecificAnnotation**
+## **annotationsDeleteSpecificAnnotation** Deprecated: 
 > annotationsDeleteSpecificAnnotation()
 
 this will delete a specific annotation
@@ -107,7 +107,7 @@ void (empty response body)
 
 
 
-## **annotationsSnapshot**
+## **annotationsSnapshot** Deprecated: 
 > Annotations annotationsSnapshot()
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.

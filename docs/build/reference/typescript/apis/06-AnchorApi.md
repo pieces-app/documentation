@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
 
 
-## **anchorAssociateWorkstreamSummary**
+## **anchorAssociateWorkstreamSummary** Deprecated: 
 > anchorAssociateWorkstreamSummary()
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -64,7 +64,7 @@ void (empty response body)
 
 
 
-## **anchorDisassociateWorkstreamSummary**
+## **anchorDisassociateWorkstreamSummary** Deprecated: 
 > anchorDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -116,7 +116,7 @@ void (empty response body)
 
 
 
-## **anchorRename**
+## **anchorRename** Deprecated: 
 > Anchor anchorRename()
 
 This will rename a specific anchor.
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 
 
-## **anchorScoresIncrement**
+## **anchorScoresIncrement** Deprecated: 
 > anchorScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -220,7 +220,7 @@ void (empty response body)
 
 
 
-## **anchorSpecificAnchorSnapshot**
+## **anchorSpecificAnchorSnapshot** Deprecated: 
 > Anchor anchorSpecificAnchorSnapshot()
 
 This will get a snapshot of a single anchor.
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 
 
 
-## **anchorUpdate**
+## **anchorUpdate** Deprecated: 
 > Anchor anchorUpdate()
 
 This will update a specific anchor.

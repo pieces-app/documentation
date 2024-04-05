@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
-## **assetsCreateNewAssetFromMacos**
+## **assetsCreateNewAssetFromMacos** Deprecated: 
 > Asset assetsCreateNewAssetFromMacos()
 
 Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Data

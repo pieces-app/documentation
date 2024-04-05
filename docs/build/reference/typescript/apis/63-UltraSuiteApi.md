@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
-## **assetsCreateUltraSuiteAsset**
+## **assetsCreateUltraSuiteAsset** Deprecated: 
 > Asset assetsCreateUltraSuiteAsset()
 
 This Endpoint will create an Asset that is sent from UltraSuite.

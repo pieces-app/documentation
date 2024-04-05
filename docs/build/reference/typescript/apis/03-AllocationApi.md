@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
-## **allocationSnapshot**
+## **allocationSnapshot** Deprecated: 
 > AllocationCloud allocationSnapshot()
 
 This will get a snapshot of a specific allocation.
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 
 
-## **allocationUpdate**
+## **allocationUpdate** Deprecated: 
 > AllocationCloud allocationUpdate()
 
 This will update a specific allocation.

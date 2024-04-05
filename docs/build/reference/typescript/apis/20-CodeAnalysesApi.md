@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
 
 
-## **codeAnalysesSnapshot**
+## **codeAnalysesSnapshot** Deprecated: 
 > CodeAnalyses codeAnalysesSnapshot()
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an analysis.

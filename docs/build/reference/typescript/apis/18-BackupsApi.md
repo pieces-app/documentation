@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
-## **backupsCreateNewBackup**
+## **backupsCreateNewBackup** Deprecated: 
 > Backup backupsCreateNewBackup()
 
 This take a local database and ensure that it is backed up to the cloud.
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 
 
-## **backupsCreateNewBackupStreamed**
+## **backupsCreateNewBackupStreamed** Deprecated: 
 > BackupStreamedProgress backupsCreateNewBackupStreamed()
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 
 
-## **backupsDeleteSpecificBackup**
+## **backupsDeleteSpecificBackup** Deprecated: 
 > backupsDeleteSpecificBackup()
 
 This will delete a specific backup from the cloud.
@@ -160,7 +160,7 @@ void (empty response body)
 
 
 
-## **backupsSnapshot**
+## **backupsSnapshot** Deprecated: 
 > Backups backupsSnapshot()
 
 This will get a snapshot of Backsup within the cloud.  This endpoint requires our user to be authenticated and connected to the cloud.

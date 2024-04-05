@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**applicationUpdate**](ApplicationApi#applicationupdate) | **POST** /application/update | /application/update [GET]
 
 
-## **applicationUpdate**
+## **applicationUpdate** Deprecated: 
 > Application applicationUpdate()
 
 This is an endpoint for updating an application.

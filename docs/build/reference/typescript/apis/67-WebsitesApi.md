@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites | /websites [GET]
 
 
-## **websitesCreateNewWebsite**
+## **websitesCreateNewWebsite** Deprecated: 
 > Website websitesCreateNewWebsite()
 
 This will create a website and attach it to a specific asset.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **websitesDeleteSpecificWebsite**
+## **websitesDeleteSpecificWebsite** Deprecated: 
 > websitesDeleteSpecificWebsite()
 
 This will delete a specific website!
@@ -111,7 +111,7 @@ void (empty response body)
 
 
 
-## **websitesExists**
+## **websitesExists** Deprecated: 
 > ExistingMetadata websitesExists()
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 
 
-## **websitesSnapshot**
+## **websitesSnapshot** Deprecated: 
 > Websites websitesSnapshot()
 
 This will get a snapshot of all your websites.

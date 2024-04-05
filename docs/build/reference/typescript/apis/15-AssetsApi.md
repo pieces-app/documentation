@@ -21,7 +21,7 @@ Method | HTTP request | Description
 [**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [GET]
 
 
-## **assetsCreateNewAsset**
+## **assetsCreateNewAsset** Deprecated: 
 > Asset assetsCreateNewAsset()
 
 Accepts a seeded (a structure that comes before an asset, and will be used in creation) asset and uploads it to Pieces. The response will be the newly created Asset object.
@@ -72,7 +72,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsDeleteAsset**
+## **assetsDeleteAsset** Deprecated: 
 > string assetsDeleteAsset()
 
 Deletes a specific asset from the system by providing its unique identifier (UID). Upon successful deletion, it returns the UID of the deleted asset.
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsDraft**
+## **assetsDraft** Deprecated: 
 > Seed assetsDraft()
 
 This endpoint allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsGetRecommendedAssets**
+## **assetsGetRecommendedAssets** Deprecated: 
 > Assets assetsGetRecommendedAssets()
 
 This endpoint expects a request body containing a SeededAssetsRecommendation Model, which includes assets (represented by the Assets Model) and interactions (represented by the InteractedAssets Model). The response will provide an Assets Model suitable for use in a UI
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsGetRelatedAssets**
+## **assetsGetRelatedAssets** Deprecated: 
 > Assets assetsGetRelatedAssets()
 
 Retrieves one or more related assets when provided with one or more input assets.
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsIdentifiersSnapshot**
+## **assetsIdentifiersSnapshot** Deprecated: 
 > FlattenedAssets assetsIdentifiersSnapshot()
 
 Retrieves all asset IDs associated with your account.
@@ -317,7 +317,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsPseudoSnapshot**
+## **assetsPseudoSnapshot** Deprecated: 
 > PseudoAssets assetsPseudoSnapshot()
 
 Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive.
@@ -358,7 +358,7 @@ This endpoint does not need any parameter.
 
 
 
-## **assetsSearchAssets**
+## **assetsSearchAssets** Deprecated: 
 > SearchedAssets assetsSearchAssets()
 
 This function performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
@@ -416,10 +416,10 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsSearchWithFilters**
+## **assetsSearchWithFilters** Deprecated: 
 > AssetsSearchWithFiltersOutput assetsSearchWithFilters()
 
-This function enables searching through your pieces and returns Assets (the results) based on your query. When sending a query in the request body, fuzzy search is applied. Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
+Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
 
 ### Example
 
@@ -471,7 +471,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsSnapshot**
+## **assetsSnapshot** Deprecated: 
 > Assets assetsSnapshot()
 
 Get all of the users Assets.
@@ -525,7 +525,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsSpecificAssetFormatsSnapshot**
+## **assetsSpecificAssetFormatsSnapshot** Deprecated: 
 > Formats assetsSpecificAssetFormatsSnapshot()
 
 Retrieves the available formats for a specific asset identified by its ID.
@@ -576,7 +576,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsSpecificAssetSnapshot**
+## **assetsSpecificAssetSnapshot** Deprecated: 
 > Asset assetsSpecificAssetSnapshot()
 
 This endpoint allows clients to retrieve details of a specific asset by providing its UUID in the path.
@@ -628,7 +628,7 @@ Name | Type | Description  | Notes
 
 
 
-## **assetsStreamIdentifiers**
+## **assetsStreamIdentifiers** Deprecated: 
 > StreamedIdentifiers assetsStreamIdentifiers()
 
 This endpoint streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
@@ -668,7 +668,7 @@ This endpoint does not need any parameter.
 
 
 
-## **getAssetsStreamTransferables**
+## **getAssetsStreamTransferables** Deprecated: 
 > Assets getAssetsStreamTransferables()
 
 This endpoint provides a WebSocket connection that emits changes to your assets, including their transferable.
@@ -708,7 +708,7 @@ This endpoint does not need any parameter.
 
 
 
-## **streamAssets**
+## **streamAssets** Deprecated: 
 > Assets streamAssets()
 
 IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.

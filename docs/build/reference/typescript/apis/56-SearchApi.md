@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based | /search/tag_based [POST]
 
 
-## **fullTextSearch**
+## **fullTextSearch** Deprecated: 
 > SearchedAssets fullTextSearch()
 
 This will run FTS for exact search, and will NOT run fuzzy matching. This will only search the content within the 
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **neuralCodeSearch**
+## **neuralCodeSearch** Deprecated: 
 > SearchedAssets neuralCodeSearch()
 
 This will run ncs on your assets. This will simply return FlattenedAssets, but will just be the assetuuids that match.
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 
 
-## **tagBasedSearch**
+## **tagBasedSearch** Deprecated: 
 > SearchedAssets tagBasedSearch()
 
 This will run our tag based search, and return the assets that best match your passed in tags. This will simply return FlattenedAssets, but will just be the assetuuids that match.

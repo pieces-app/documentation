@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
-## **hintsCreateNewHint**
+## **hintsCreateNewHint** Deprecated: 
 > Hint hintsCreateNewHint()
 
 This will create a hint.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **hintsDeleteSpecificHint**
+## **hintsDeleteSpecificHint** Deprecated: 
 > hintsDeleteSpecificHint()
 
 This will delete a specific hint.
@@ -107,7 +107,7 @@ void (empty response body)
 
 
 
-## **hintsSnapshot**
+## **hintsSnapshot** Deprecated: 
 > Hints hintsSnapshot()
 
 This will get a snapshot of all of the hints.

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**discoveryDiscoverTagsRelated**](DiscoveryApi#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
-## **discoveryDiscoverAssets**
+## **discoveryDiscoverAssets** Deprecated: 
 > DiscoveredAssets discoveryDiscoverAssets()
 
 This is the endpoint used for bulk import. In both cases of the bulk import flow, fragments or files. When we already have \"snippets\" or fragments to discover and now our job is to check if they are actually valid snippets(clustering). Otherwise, we should have a file to parse && snippitize and then run through the clustering.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 
 
-## **discoveryDiscoverAssetsHtml**
+## **discoveryDiscoverAssetsHtml** Deprecated: 
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml()
 
 This is the discover discover assets html endpoint. The goal of this endpoint is to either take an iterable of urls and pages(an html string) and extract all the assets from the iterable.
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 
 
-## **discoveryDiscoverSensitives**
+## **discoveryDiscoverSensitives** Deprecated: 
 > DiscoveredSensitives discoveryDiscoverSensitives()
 
 This endpoint will accept an array of text values, and attampt to extract sensitive data out of it.
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 
 
-## **discoveryDiscoverTagsRelated**
+## **discoveryDiscoverTagsRelated** Deprecated: 
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated()
 
 This will take in a tag or multiple tags and return all the tags that are related to the tag or tag provide in the body.

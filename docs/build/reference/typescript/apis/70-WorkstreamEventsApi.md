@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**workstreamEventsSnapshot**](WorkstreamEventsApi#workstreameventssnapshot) | **GET** /workstream_events | /workstream_events [GET]
 
 
-## **workstreamEventsCreateNewWorkstreamEvent**
+## **workstreamEventsCreateNewWorkstreamEvent** Deprecated: 
 > WorkstreamEvent workstreamEventsCreateNewWorkstreamEvent()
 
 This will create a new WorkstreamEvent in the database.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **workstreamEventsDeleteSpecificWorkstreamEvent**
+## **workstreamEventsDeleteSpecificWorkstreamEvent** Deprecated: 
 > workstreamEventsDeleteSpecificWorkstreamEvent()
 
 This will delete a specific workstream_event from the database!
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **workstreamEventsSnapshot**
+## **workstreamEventsSnapshot** Deprecated: 
 > WorkstreamEvents workstreamEventsSnapshot()
 
 This will get a snapshot of all your workstream events.

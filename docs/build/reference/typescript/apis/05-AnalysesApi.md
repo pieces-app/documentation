@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**analysesSnapshot**](AnalysesApi#analysessnapshot) | **GET** /analyses | Your GET endpoint
 
 
-## **analysesSnapshot**
+## **analysesSnapshot** Deprecated: 
 > Analyses analysesSnapshot()
 
 This will get a snapshot of all of your analyses, that are all attached to formats. An analysis can optionally have an codeAnalysis or an optional imageAnalysis.

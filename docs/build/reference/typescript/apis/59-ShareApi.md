@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**shareUpdate**](ShareApi#shareupdate) | **POST** /share/update | /share/update [POST]
 
 
-## **shareScoresIncrement**
+## **shareScoresIncrement** Deprecated: 
 > shareScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -61,7 +61,7 @@ void (empty response body)
 
 
 
-## **shareSnapshot**
+## **shareSnapshot** Deprecated: 
 > Share shareSnapshot()
 
 Get the snapshot of a specific share.
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 
 
-## **shareUpdate**
+## **shareUpdate** Deprecated: 
 > Share shareUpdate()
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!

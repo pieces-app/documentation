@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
-## **anchorPointsCreateNewAnchorPoint**
+## **anchorPointsCreateNewAnchorPoint** Deprecated: 
 > AnchorPoint anchorPointsCreateNewAnchorPoint()
 
 This will create a anchorPoint.
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 
 
-## **anchorPointsDeleteSpecificAnchorPoint**
+## **anchorPointsDeleteSpecificAnchorPoint** Deprecated: 
 > anchorPointsDeleteSpecificAnchorPoint()
 
 This will delete a specific anchorPoint!
@@ -110,7 +110,7 @@ void (empty response body)
 
 
 
-## **anchorPointsSnapshot**
+## **anchorPointsSnapshot** Deprecated: 
 > AnchorPoints anchorPointsSnapshot()
 
 This will get a snapshot of all your anchorPoints.

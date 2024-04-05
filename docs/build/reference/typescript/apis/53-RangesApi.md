@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**rangesSnapshot**](RangesApi#rangessnapshot) | **GET** /ranges | /ranges [GET]
 
 
-## **rangesCreateNewRange**
+## **rangesCreateNewRange** Deprecated: 
 > Range rangesCreateNewRange()
 
 This will create a new Range in the database.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 
 
-## **rangesDeleteSpecificRange**
+## **rangesDeleteSpecificRange** Deprecated: 
 > rangesDeleteSpecificRange()
 
 This will delete a specific range from the database!
@@ -107,7 +107,7 @@ void (empty response body)
 
 
 
-## **rangesSnapshot**
+## **rangesSnapshot** Deprecated: 
 > Ranges rangesSnapshot()
 
 This will get a snapshot of all your ranges.

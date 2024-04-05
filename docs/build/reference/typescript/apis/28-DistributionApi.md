@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
-## **distributionUpdate**
+## **distributionUpdate** Deprecated: 
 > Distribution distributionUpdate()
 
 This will update a specific Distribution.
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 
 
-## **distributionsSpecificDistributionSnapshot**
+## **distributionsSpecificDistributionSnapshot** Deprecated: 
 > Distribution distributionsSpecificDistributionSnapshot()
 
 This will get a specific snapshot of a distribution.

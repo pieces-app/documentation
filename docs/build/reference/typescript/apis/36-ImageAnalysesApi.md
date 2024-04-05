@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**imageAnalysesSnapshot**](ImageAnalysesApi#imageanalysessnapshot) | **GET** /image_analyses | Your GET endpoint
 
 
-## **imageAnalysesSnapshot**
+## **imageAnalysesSnapshot** Deprecated: 
 > ImageAnalyses imageAnalysesSnapshot()
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an image analysis.
