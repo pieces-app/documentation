@@ -65,7 +65,7 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **backupAsset**
 > backupAsset()
@@ -120,7 +120,7 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **backupRestoreSpecificBackup**
 > Backup backupRestoreSpecificBackup()
@@ -178,7 +178,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **backupRestoreSpecificBackupStreamed**
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed()
@@ -236,7 +236,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **backupSpecificBackupSnapshot**
 > Backup backupSpecificBackupSnapshot()
@@ -291,6 +291,6 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

@@ -65,7 +65,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **conversationsCreateSpecificConversation**
 > Conversation conversationsCreateSpecificConversation()
@@ -123,7 +123,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **conversationsDeleteSpecificConversation**
 > conversationsDeleteSpecificConversation()
@@ -178,7 +178,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **conversationsIdentifiersSnapshot**
 > FlattenedConversations conversationsIdentifiersSnapshot()
@@ -227,7 +227,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **conversationsSnapshot**
 > Conversations conversationsSnapshot()
@@ -282,7 +282,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **conversationsStreamIdentifiers**
 > conversationsStreamIdentifiers()
@@ -325,6 +325,6 @@ No authorization required
 - **Accept**: Not defined
 
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

@@ -65,7 +65,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **personsRelated**
 > QGPTPersonsRelatedOutput personsRelated()
@@ -123,7 +123,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **qgptStream**
 > QGPTStreamOutput qgptStream()
@@ -178,7 +178,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **question**
 > QGPTQuestionOutput question()
@@ -236,7 +236,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **503** | Service Unavailable, (engine is currently overloaded) |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **relevance**
 > QGPTRelevanceOutput relevance()
@@ -294,7 +294,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **503** | Service Unavailable, (engine is currently overloaded) |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **reprompt**
 > QGPTRepromptOutput reprompt()
@@ -349,6 +349,6 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

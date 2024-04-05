@@ -66,7 +66,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **discoveryDiscoverAssetsHtml**
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml()
@@ -124,7 +124,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **discoveryDiscoverSensitives**
 > DiscoveredSensitives discoveryDiscoverSensitives()
@@ -181,7 +181,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **discoveryDiscoverTagsRelated**
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated()
@@ -239,6 +239,6 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

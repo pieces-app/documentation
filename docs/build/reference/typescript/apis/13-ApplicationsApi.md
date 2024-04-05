@@ -65,7 +65,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsExternalSnapshot**
 > DetectedExternalApplications applicationsExternalSnapshot()
@@ -114,7 +114,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsRegister**
 > Application applicationsRegister()
@@ -168,7 +168,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsSessionClose**
 > Session applicationsSessionClose()
@@ -222,7 +222,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsSessionOpen**
 > Session applicationsSessionOpen()
@@ -270,7 +270,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsSessionSnapshot**
 > Session applicationsSessionSnapshot()
@@ -324,7 +324,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsSnapshot**
 > Applications applicationsSnapshot()
@@ -372,7 +372,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsSpecificApplicationSnapshot**
 > Application applicationsSpecificApplicationSnapshot()
@@ -426,7 +426,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsUsageEngagementInteraction**
 > TrackedInteractionEvent applicationsUsageEngagementInteraction()
@@ -480,7 +480,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsUsageEngagementKeyboard**
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard()
@@ -534,7 +534,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **applicationsUsageInstallation**
 > applicationsUsageInstallation()
@@ -588,7 +588,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **postApplicationsUsageUpdated**
 > postApplicationsUsageUpdated()
@@ -642,6 +642,6 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

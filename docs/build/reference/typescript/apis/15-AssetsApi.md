@@ -76,7 +76,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsDeleteAsset**
 > string assetsDeleteAsset()
@@ -130,7 +130,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsDraft**
 > Seed assetsDraft()
@@ -188,7 +188,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsGetRecommendedAssets**
 > Assets assetsGetRecommendedAssets()
@@ -242,7 +242,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsGetRelatedAssets**
 > Assets assetsGetRelatedAssets()
@@ -296,7 +296,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsIdentifiersSnapshot**
 > FlattenedAssets assetsIdentifiersSnapshot()
@@ -351,7 +351,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsPseudoSnapshot**
 > PseudoAssets assetsPseudoSnapshot()
@@ -400,7 +400,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsSearchAssets**
 > SearchedAssets assetsSearchAssets()
@@ -464,7 +464,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsSearchWithFilters**
 > AssetsSearchWithFiltersOutput assetsSearchWithFilters()
@@ -525,7 +525,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsSnapshot**
 > Assets assetsSnapshot()
@@ -585,7 +585,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsSpecificAssetFormatsSnapshot**
 > Formats assetsSpecificAssetFormatsSnapshot()
@@ -642,7 +642,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsSpecificAssetSnapshot**
 > Asset assetsSpecificAssetSnapshot()
@@ -700,7 +700,7 @@ No authorization required
 **200** | A specific asset per the provided asset id. |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **assetsStreamIdentifiers**
 > StreamedIdentifiers assetsStreamIdentifiers()
@@ -748,7 +748,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **getAssetsStreamTransferables**
 > Assets getAssetsStreamTransferables()
@@ -796,7 +796,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **streamAssets**
 > Assets streamAssets()
@@ -844,6 +844,6 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

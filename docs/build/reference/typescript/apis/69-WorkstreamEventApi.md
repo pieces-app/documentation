@@ -67,7 +67,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **workstreamEventDisassociateWorkstreamSummary**
 > workstreamEventDisassociateWorkstreamSummary()
@@ -125,7 +125,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **workstreamEventScoresIncrement**
 > workstreamEventScoresIncrement()
@@ -183,7 +183,7 @@ No authorization required
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **workstreamEventUpdate**
 > WorkstreamEvent workstreamEventUpdate()
@@ -241,7 +241,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **workstreamEventsSpecificWorkstreamEventSnapshot**
 > WorkstreamEvent workstreamEventsSpecificWorkstreamEventSnapshot()
@@ -299,6 +299,6 @@ No authorization required
 **200** | OK |  -  |
 **410** | WorkstreamEvent not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

@@ -61,7 +61,7 @@ No authorization required
 **200** | OK |  -  |
 **410** | Cloud not found. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationUpdate**
 > AllocationCloud allocationUpdate()
@@ -117,6 +117,6 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 

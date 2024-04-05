@@ -66,7 +66,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationsCreateNewAllocation**
 > AllocationCloud allocationsCreateNewAllocation()
@@ -121,7 +121,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationsDeleteAllocation**
 > string allocationsDeleteAllocation()
@@ -176,7 +176,7 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationsDisconnectCloud**
 > string allocationsDisconnectCloud()
@@ -231,7 +231,7 @@ No authorization required
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationsReconnectCloud**
 > AllocationCloud allocationsReconnectCloud()
@@ -287,7 +287,7 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 ## **allocationsSnapshot**
 > Allocations allocationsSnapshot()
@@ -336,6 +336,6 @@ No authorization required
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-[[Back to top]](#) [[Back to API list]](README#documentation-for-api-endpoints) [[Back to Model list]](README#documentation-for-models) [[Back to README]](README)
+
 
 
