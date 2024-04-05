@@ -256,7 +256,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[auth0](README#auth0), [auth0](README#auth0), [auth0](README#auth0)
+
 
 ### HTTP request headers
 

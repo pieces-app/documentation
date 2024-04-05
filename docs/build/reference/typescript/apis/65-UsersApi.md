@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth0](README#auth0), [auth0](README#auth0), [auth0](README#auth0)
+
 
 ### HTTP request headers
 
