@@ -15,23 +15,21 @@ This will get a snapshot of all of your analyses, that are all attached to forma
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnalysesApi(configuration);
 
-let body:.AnalysesApiAnalysesSnapshotRequest = {
+const body: Pieces.AnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.analysesSnapshot(body).then((data:any) => {
+apiInstance.analysesSnapshot(body).then((data: Analyses) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Analyses**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

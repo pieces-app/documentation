@@ -17,25 +17,23 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SearchApi(configuration);
 
-let body:.SearchApiFullTextSearchRequest = {
+const body: Pieces.FullTextSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
     query: query_example,
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     pseudo: true,
 };
 
-apiInstance.fullTextSearch(body).then((data:any) => {
+apiInstance.fullTextSearch(body).then((data: SearchedAssets) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **SearchedAssets**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SearchApi(configuration);
 
-let body:.SearchApiNeuralCodeSearchRequest = {
+const body: Pieces.NeuralCodeSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
     query: query_example,
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     pseudo: true,
 };
 
-apiInstance.neuralCodeSearch(body).then((data:any) => {
+apiInstance.neuralCodeSearch(body).then((data: SearchedAssets) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **SearchedAssets**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -133,25 +121,23 @@ This will run our tag based search, and return the assets that best match your p
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SearchApi(configuration);
 
-let body:.SearchApiTagBasedSearchRequest = {
+const body: Pieces.TagBasedSearchRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     pseudo: true,
     // SeededAssetTags (optional)
     seededAssetTags: ,
 };
 
-apiInstance.tagBasedSearch(body).then((data:any) => {
+apiInstance.tagBasedSearch(body).then((data: SearchedAssets) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -164,10 +150,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **SearchedAssets**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

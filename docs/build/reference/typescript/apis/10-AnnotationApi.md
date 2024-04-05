@@ -17,25 +17,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
-let body:.AnnotationApiAnnotationScoresIncrementRequest = {
+const body: Pieces.AnnotationScoresIncrementRequest = {
     // string | This is a specific annotation uuid.
     annotation: annotation_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.annotationScoresIncrement(body).then((data:any) => {
+apiInstance.annotationScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will get a snapshot of a specific annotation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
-let body:.AnnotationApiAnnotationSpecificAnnotationSnapshotRequest = {
+const body: Pieces.AnnotationSpecificAnnotationSnapshotRequest = {
     // string | This is a specific annotation uuid.
     annotation: annotation_example,
 };
 
-apiInstance.annotationSpecificAnnotationSnapshot(body).then((data:any) => {
+apiInstance.annotationSpecificAnnotationSnapshot(body).then((data: Annotation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Annotation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will update a specific annotation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
-let body:.AnnotationApiAnnotationUpdateRequest = {
+const body: Pieces.AnnotationUpdateRequest = {
     // Annotation (optional)
     annotation: ,
 };
 
-apiInstance.annotationUpdate(body).then((data:any) => {
+apiInstance.annotationUpdate(body).then((data: Annotation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Annotation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

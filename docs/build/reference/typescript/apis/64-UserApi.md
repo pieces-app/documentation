@@ -22,20 +22,16 @@ An endpoint to clear the current user.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:any = {};
-
-apiInstance.clearUser(body).then((data:any) => {
+apiInstance.clearUser().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -44,10 +40,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -70,20 +62,16 @@ This will refresh a user.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:any = {};
-
-apiInstance.refreshUser(body).then((data:any) => {
+apiInstance.refreshUser().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -92,10 +80,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -119,23 +103,21 @@ This will select the current user.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:.UserApiSelectUserRequest = {
+const body: Pieces.SelectUserRequest = {
     // Auth0User |  (optional)
     auth0User: ,
 };
 
-apiInstance.selectUser(body).then((data:any) => {
+apiInstance.selectUser(body).then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -147,10 +129,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-
 
 ### HTTP request headers
 
@@ -173,20 +151,16 @@ This will stream in the current user, not quiet sure yet how we want to do this.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:any = {};
-
-apiInstance.streamUser(body).then((data:any) => {
+apiInstance.streamUser().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -195,10 +169,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -221,23 +191,21 @@ This will update a specific user in the database.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:.UserApiUpdateUserRequest = {
+const body: Pieces.UpdateUserRequest = {
     // UserProfile |  (optional)
     userProfile: ,
 };
 
-apiInstance.updateUser(body).then((data:any) => {
+apiInstance.updateUser(body).then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -249,10 +217,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -275,20 +239,16 @@ This will retrieve all the users Providers that are connected to this account.  
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:any = {};
-
-apiInstance.userProviders(body).then((data:any) => {
+apiInstance.userProviders().then((data: ReturnedUserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -297,10 +257,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **ReturnedUserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -325,20 +281,16 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:any = {};
-
-apiInstance.userSnapshot(body).then((data:any) => {
+apiInstance.userSnapshot().then((data: ReturnedUserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -347,10 +299,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **ReturnedUserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -373,23 +321,21 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \"m
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
-let body:.UserApiUserUpdateVanityRequest = {
+const body: Pieces.UserUpdateVanityRequest = {
     // UserProfile | This will take an update userProfile, with the updated vanity name! (optional)
     userProfile: ,
 };
 
-apiInstance.userUpdateVanity(body).then((data:any) => {
+apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -401,10 +347,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

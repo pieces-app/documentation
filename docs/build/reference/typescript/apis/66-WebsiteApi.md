@@ -25,25 +25,23 @@ This will associate a website with a asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteAssociateAssetRequest = {
+const body: Pieces.WebsiteAssociateAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // string | website id
     website: website_example,
 };
 
-apiInstance.websiteAssociateAsset(body).then((data:any) => {
+apiInstance.websiteAssociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -56,10 +54,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -83,25 +77,23 @@ This will associate a website with a conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteAssociateConversationRequest = {
+const body: Pieces.WebsiteAssociateConversationRequest = {
     // string | website id
     website: website_example,
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
 };
 
-apiInstance.websiteAssociateConversation(body).then((data:any) => {
+apiInstance.websiteAssociateConversation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -114,10 +106,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -141,25 +129,23 @@ This will associate a website with a person.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteAssociatePersonRequest = {
+const body: Pieces.WebsiteAssociatePersonRequest = {
     // string | website id
     website: website_example,
     // string | This is a uuid that represents a person.
     person: person_example,
 };
 
-apiInstance.websiteAssociatePerson(body).then((data:any) => {
+apiInstance.websiteAssociatePerson(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -172,10 +158,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -199,25 +181,23 @@ This will associate a website with a workstream summary. This will do the same t
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteAssociateWorkstreamSummaryRequest = {
+const body: Pieces.WebsiteAssociateWorkstreamSummaryRequest = {
     // string | website id
     website: website_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.websiteAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.websiteAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -230,10 +210,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -257,25 +233,23 @@ This will enable us to dissassociate a website from a asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteDisassociateAssetRequest = {
+const body: Pieces.WebsiteDisassociateAssetRequest = {
     // string | website id
     website: website_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.websiteDisassociateAsset(body).then((data:any) => {
+apiInstance.websiteDisassociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -288,10 +262,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -315,25 +285,23 @@ This will enable us to dissassociate a website from a conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteDisassociateConversationRequest = {
+const body: Pieces.WebsiteDisassociateConversationRequest = {
     // string | website id
     website: website_example,
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
 };
 
-apiInstance.websiteDisassociateConversation(body).then((data:any) => {
+apiInstance.websiteDisassociateConversation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -346,10 +314,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -373,25 +337,23 @@ This will enable us to dissassociate a website from a person.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteDisassociatePersonRequest = {
+const body: Pieces.WebsiteDisassociatePersonRequest = {
     // string | website id
     website: website_example,
     // string | This is a uuid that represents a person.
     person: person_example,
 };
 
-apiInstance.websiteDisassociatePerson(body).then((data:any) => {
+apiInstance.websiteDisassociatePerson(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -404,10 +366,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -431,25 +389,23 @@ This will enable us to disassociate a website from a workstream summary. This wi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.WebsiteDisassociateWorkstreamSummaryRequest = {
     // string | website id
     website: website_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.websiteDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.websiteDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -462,10 +418,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -489,25 +441,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteScoresIncrementRequest = {
+const body: Pieces.WebsiteScoresIncrementRequest = {
     // string | website id
     website: website_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.websiteScoresIncrement(body).then((data:any) => {
+apiInstance.websiteScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -520,10 +470,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -547,25 +493,23 @@ This will update a specific website.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsiteUpdateRequest = {
+const body: Pieces.WebsiteUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Website (optional)
     website: ,
 };
 
-apiInstance.websiteUpdate(body).then((data:any) => {
+apiInstance.websiteUpdate(body).then((data: Website) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -578,10 +522,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Website**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -605,25 +545,23 @@ This will get a snapshot of a single website.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsiteApi(configuration);
 
-let body:.WebsiteApiWebsitesSpecificWebsiteSnapshotRequest = {
+const body: Pieces.WebsitesSpecificWebsiteSnapshotRequest = {
     // string | website id
     website: website_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.websitesSpecificWebsiteSnapshot(body).then((data:any) => {
+apiInstance.websitesSpecificWebsiteSnapshot(body).then((data: Website) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -636,10 +574,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Website**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

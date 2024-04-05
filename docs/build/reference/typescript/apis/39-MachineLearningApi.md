@@ -16,23 +16,21 @@ This is going to take in some personification details ie languages & personas.  
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MachineLearningApi(configuration);
 
-let body:.MachineLearningApiPersonificationTechnicalLanguageGenerationRequest = {
+const body: Pieces.PersonificationTechnicalLanguageGenerationRequest = {
     // PreonboardedPersonaDetails (optional)
     preonboardedPersonaDetails: ,
 };
 
-apiInstance.personificationTechnicalLanguageGeneration(body).then((data:any) => {
+apiInstance.personificationTechnicalLanguageGeneration(body).then((data: OnboardedPersonaDetails) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -44,10 +42,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **OnboardedPersonaDetails**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -71,25 +65,23 @@ This is a functional endpoint that will parse a message or text in to text or co
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MachineLearningApi(configuration);
 
-let body:.MachineLearningApiSegmentTechnicalLanguageRequest = {
+const body: Pieces.SegmentTechnicalLanguageRequest = {
     // boolean | This will let us know if you want us to classifiy your code, this is default to false. (optional)
     classify: true,
     // UnsegmentedTechnicalLanguage (optional)
     unsegmentedTechnicalLanguage: ,
 };
 
-apiInstance.segmentTechnicalLanguage(body).then((data:any) => {
+apiInstance.segmentTechnicalLanguage(body).then((data: SegmentedTechnicalLanguage) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -102,10 +94,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **SegmentedTechnicalLanguage**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

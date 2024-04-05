@@ -15,23 +15,21 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MacOSApi(configuration);
 
-let body:.MacOSApiAssetsCreateNewAssetFromMacosRequest = {
+const body: Pieces.AssetsCreateNewAssetFromMacosRequest = {
     // SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance (optional)
     seededMacOSAsset: ,
 };
 
-apiInstance.assetsCreateNewAssetFromMacos(body).then((data:any) => {
+apiInstance.assetsCreateNewAssetFromMacos(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

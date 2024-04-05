@@ -15,23 +15,21 @@ This is an endpoint for updating an application.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationApi(configuration);
 
-let body:.ApplicationApiApplicationUpdateRequest = {
+const body: Pieces.ApplicationUpdateRequest = {
     // Application (optional)
     application: ,
 };
 
-apiInstance.applicationUpdate(body).then((data:any) => {
+apiInstance.applicationUpdate(body).then((data: Application) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Application**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

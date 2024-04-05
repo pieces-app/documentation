@@ -18,25 +18,23 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
-let body:.SharesApiSharesCreateNewShareRequest = {
+const body: Pieces.SharesCreateNewShareRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededShare (optional)
     seededShare: ,
 };
 
-apiInstance.sharesCreateNewShare(body).then((data:any) => {
+apiInstance.sharesCreateNewShare(body).then((data: Shares) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Shares**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
-let body:.SharesApiSharesDeleteShareRequest = {
+const body: Pieces.SharesDeleteShareRequest = {
     // string | Share id
     share: share_example,
 };
 
-apiInstance.sharesDeleteShare(body).then((data:any) => {
+apiInstance.sharesDeleteShare(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -129,23 +117,21 @@ This will return all of your shares. A Share is an asset that you as a user deci
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
-let body:.SharesApiSharesSnapshotRequest = {
+const body: Pieces.SharesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.sharesSnapshot(body).then((data:any) => {
+apiInstance.sharesSnapshot(body).then((data: Shares) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -157,10 +143,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Shares**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -183,25 +165,23 @@ This is an endpoint to enable a client to access a specific share through a prov
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
-let body:.SharesApiSharesSpecificShareSnapshotRequest = {
+const body: Pieces.SharesSpecificShareSnapshotRequest = {
     // string | Share id
     share: share_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.sharesSpecificShareSnapshot(body).then((data:any) => {
+apiInstance.sharesSpecificShareSnapshot(body).then((data: Share) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -214,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Share**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

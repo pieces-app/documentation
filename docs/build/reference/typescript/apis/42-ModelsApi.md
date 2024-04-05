@@ -19,23 +19,21 @@ This will create a ml model, this is aloud however all models will be set to cus
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
-let body:.ModelsApiModelsCreateNewModelRequest = {
+const body: Pieces.ModelsCreateNewModelRequest = {
     // SeededModel |  (optional)
     seededModel: ,
 };
 
-apiInstance.modelsCreateNewModel(body).then((data:any) => {
+apiInstance.modelsCreateNewModel(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -47,10 +45,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -74,23 +68,21 @@ This will delete a model, This is only available for custom: true models.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
-let body:.ModelsApiModelsDeleteSpecificModelRequest = {
+const body: Pieces.ModelsDeleteSpecificModelRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelsDeleteSpecificModel(body).then((data:any) => {
+apiInstance.modelsDeleteSpecificModel(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -102,10 +94,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -129,25 +117,23 @@ This is going to delete and sort of data that is associated with the Model itsel
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
-let body:.ModelsApiModelsDeleteSpecificModelCacheRequest = {
+const body: Pieces.ModelsDeleteSpecificModelCacheRequest = {
     // string | model id
     model: model_example,
     // ModelDeleteCacheInput (optional)
     modelDeleteCacheInput: ,
 };
 
-apiInstance.modelsDeleteSpecificModelCache(body).then((data:any) => {
+apiInstance.modelsDeleteSpecificModelCache(body).then((data: ModelDeleteCacheOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -160,10 +146,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ModelDeleteCacheOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -187,20 +169,16 @@ This will get a snapshot of all of your models.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
-let body:any = {};
-
-apiInstance.modelsSnapshot(body).then((data:any) => {
+apiInstance.modelsSnapshot().then((data: Models) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -209,10 +187,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Models**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -236,20 +210,16 @@ This will unload all of the ml models.(that are unloadable)
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
-let body:any = {};
-
-apiInstance.unloadModels(body).then((data:any) => {
+apiInstance.unloadModels().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -258,10 +228,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

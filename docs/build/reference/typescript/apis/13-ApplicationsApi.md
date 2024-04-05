@@ -26,20 +26,16 @@ Retrieves a list of external applications installed on the user\'s machine that 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.applicationsExternalRelated(body).then((data:any) => {
+apiInstance.applicationsExternalRelated().then((data: DetectedExternalApplications) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -48,10 +44,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **DetectedExternalApplications**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,20 +67,16 @@ Provides a snapshot of all external applications detected on the user\'s machine
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.applicationsExternalSnapshot(body).then((data:any) => {
+apiInstance.applicationsExternalSnapshot().then((data: DetectedExternalApplications) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -97,10 +85,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **DetectedExternalApplications**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -124,23 +108,21 @@ Registers a new application within the Pieces ecosystem.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsRegisterRequest = {
+const body: Pieces.ApplicationsRegisterRequest = {
     // Application | This will accept a application. (optional)
     application: ,
 };
 
-apiInstance.applicationsRegister(body).then((data:any) => {
+apiInstance.applicationsRegister(body).then((data: Application) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -152,10 +134,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Application**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -178,23 +156,21 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsSessionCloseRequest = {
+const body: Pieces.ApplicationsSessionCloseRequest = {
     // string | This will accept a required session uuid. (optional)
     body: 38400000-8cf0-11bd-b23e-10b96e4ef00d,
 };
 
-apiInstance.applicationsSessionClose(body).then((data:any) => {
+apiInstance.applicationsSessionClose(body).then((data: Session) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -206,10 +182,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Session**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -232,20 +204,16 @@ Initiates a new session, marking the start of a user\'s interaction with the Pie
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.applicationsSessionOpen(body).then((data:any) => {
+apiInstance.applicationsSessionOpen().then((data: Session) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -254,10 +222,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Session**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -280,23 +244,21 @@ Fetches detailed information about a specific session, identified by a session U
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsSessionSnapshotRequest = {
+const body: Pieces.ApplicationsSessionSnapshotRequest = {
     // string | This is a uuid that points to a session.
     session: session_example,
 };
 
-apiInstance.applicationsSessionSnapshot(body).then((data:any) => {
+apiInstance.applicationsSessionSnapshot(body).then((data: Session) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -308,10 +270,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Session**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -334,20 +292,16 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.applicationsSnapshot(body).then((data:any) => {
+apiInstance.applicationsSnapshot().then((data: Applications) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -356,10 +310,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Applications**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -382,23 +332,21 @@ Obtains a snapshot with information about a specific application, identified by 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsSpecificApplicationSnapshotRequest = {
+const body: Pieces.ApplicationsSpecificApplicationSnapshotRequest = {
     // string | This is a uuid that represents an application
     application: application_example,
 };
 
-apiInstance.applicationsSpecificApplicationSnapshot(body).then((data:any) => {
+apiInstance.applicationsSpecificApplicationSnapshot(body).then((data: Application) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -410,10 +358,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Application**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -436,23 +380,21 @@ Records user interaction events within applications, such as clicks or taps, to 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsUsageEngagementInteractionRequest = {
+const body: Pieces.ApplicationsUsageEngagementInteractionRequest = {
     // SeededTrackedInteractionEvent |  (optional)
     seededTrackedInteractionEvent: ,
 };
 
-apiInstance.applicationsUsageEngagementInteraction(body).then((data:any) => {
+apiInstance.applicationsUsageEngagementInteraction(body).then((data: TrackedInteractionEvent) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -464,10 +406,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **TrackedInteractionEvent**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -490,23 +428,21 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsUsageEngagementKeyboardRequest = {
+const body: Pieces.ApplicationsUsageEngagementKeyboardRequest = {
     // SeededTrackedKeyboardEvent |  (optional)
     seededTrackedKeyboardEvent: ,
 };
 
-apiInstance.applicationsUsageEngagementKeyboard(body).then((data:any) => {
+apiInstance.applicationsUsageEngagementKeyboard(body).then((data: TrackedKeyboardEvent) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -518,10 +454,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **TrackedKeyboardEvent**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -544,23 +476,21 @@ Logs the installation events of the Pieces application.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiApplicationsUsageInstallationRequest = {
+const body: Pieces.ApplicationsUsageInstallationRequest = {
     // TrackedApplicationInstall |  (optional)
     trackedApplicationInstall: ,
 };
 
-apiInstance.applicationsUsageInstallation(body).then((data:any) => {
+apiInstance.applicationsUsageInstallation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -572,10 +502,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -598,23 +524,21 @@ Tracks updates to the Pieces application, including version changes.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
-let body:.ApplicationsApiPostApplicationsUsageUpdatedRequest = {
+const body: Pieces.PostApplicationsUsageUpdatedRequest = {
     // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user. (optional)
     trackedApplicationUpdate: ,
 };
 
-apiInstance.postApplicationsUsageUpdated(body).then((data:any) => {
+apiInstance.postApplicationsUsageUpdated(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -626,10 +550,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

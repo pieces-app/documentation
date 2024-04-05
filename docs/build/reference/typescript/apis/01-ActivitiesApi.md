@@ -17,25 +17,23 @@ This will create a new Activity.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
-let body:.ActivitiesApiActivitiesCreateNewActivityRequest = {
+const body: Pieces.ActivitiesCreateNewActivityRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededActivity (optional)
     seededActivity: ,
 };
 
-apiInstance.activitiesCreateNewActivity(body).then((data:any) => {
+apiInstance.activitiesCreateNewActivity(body).then((data: Activity) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Activity**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will delete a specific activity.  important note: if we delete an activity:
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
-let body:.ActivitiesApiActivitiesDeleteSpecificActivityRequest = {
+const body: Pieces.ActivitiesDeleteSpecificActivityRequest = {
     // string | This is a specific activity uuid.
     activity: activity_example,
 };
 
-apiInstance.activitiesDeleteSpecificActivity(body).then((data:any) => {
+apiInstance.activitiesDeleteSpecificActivity(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,25 +118,23 @@ This will get a snapshot of all of the activities
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
-let body:.ActivitiesApiActivitiesSnapshotRequest = {
+const body: Pieces.ActivitiesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     pseudo: true,
 };
 
-apiInstance.activitiesSnapshot(body).then((data:any) => {
+apiInstance.activitiesSnapshot(body).then((data: Activities) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -161,10 +147,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Activities**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

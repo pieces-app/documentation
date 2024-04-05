@@ -17,25 +17,23 @@ This will attempt to get a specific activity.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivityApi(configuration);
 
-let body:.ActivityApiActivitiesSpecificActivitySnapshotRequest = {
+const body: Pieces.ActivitiesSpecificActivitySnapshotRequest = {
     // string | This is a specific activity uuid.
     activity: activity_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.activitiesSpecificActivitySnapshot(body).then((data:any) => {
+apiInstance.activitiesSpecificActivitySnapshot(body).then((data: Activity) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Activity**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,25 +70,23 @@ This is going to return all the identifiers of the activity event in order of mo
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivityApi(configuration);
 
-let body:.ActivityApiActivityIdentifiersSnapshotRequest = {
+const body: Pieces.ActivityIdentifiersSnapshotRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     pseudo: true,
     // 'CREATED' | 'UPDATED' | 'DELETED' | 'REFERENCED' | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. (optional)
     activityFilterEnum: activityFilterEnum_example,
 };
 
-apiInstance.activityIdentifiersSnapshot(body).then((data:any) => {
+apiInstance.activityIdentifiersSnapshot(body).then((data: FlattenedActivities) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -107,10 +99,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **FlattenedActivities**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -134,25 +122,23 @@ this will update a specific activity.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivityApi(configuration);
 
-let body:.ActivityApiActivityUpdateRequest = {
+const body: Pieces.ActivityUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Activity (optional)
     activity: ,
 };
 
-apiInstance.activityUpdate(body).then((data:any) => {
+apiInstance.activityUpdate(body).then((data: Activity) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -165,10 +151,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Activity**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

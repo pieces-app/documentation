@@ -17,23 +17,21 @@ This will create a new distribution.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
-let body:.DistributionsApiDistributionsCreateNewDistributionRequest = {
+const body: Pieces.DistributionsCreateNewDistributionRequest = {
     // SeededDistribution |  (optional)
     seededDistribution: ,
 };
 
-apiInstance.distributionsCreateNewDistribution(body).then((data:any) => {
+apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Distribution**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -72,23 +66,21 @@ This will delete a specific distribution.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
-let body:.DistributionsApiDistributionsDeleteSpecificDistributionRequest = {
+const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
     // string | This is the uuid of a specific distribution.
     distribution: distribution_example,
 };
 
-apiInstance.distributionsDeleteSpecificDistribution(body).then((data:any) => {
+apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -100,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -127,20 +115,16 @@ This will get a specific snapshot of all our distributions.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
-let body:any = {};
-
-apiInstance.distributionsSnapshot(body).then((data:any) => {
+apiInstance.distributionsSnapshot().then((data: Distributions) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -149,10 +133,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Distributions**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

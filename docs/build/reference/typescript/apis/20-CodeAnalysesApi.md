@@ -15,20 +15,16 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.CodeAnalysesApi(configuration);
 
-let body:any = {};
-
-apiInstance.codeAnalysesSnapshot(body).then((data:any) => {
+apiInstance.codeAnalysesSnapshot().then((data: CodeAnalyses) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -37,10 +33,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **CodeAnalyses**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

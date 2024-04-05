@@ -15,23 +15,21 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ImageAnalysesApi(configuration);
 
-let body:.ImageAnalysesApiImageAnalysesSnapshotRequest = {
+const body: Pieces.ImageAnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.imageAnalysesSnapshot(body).then((data:any) => {
+apiInstance.imageAnalysesSnapshot(body).then((data: ImageAnalyses) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ImageAnalyses**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

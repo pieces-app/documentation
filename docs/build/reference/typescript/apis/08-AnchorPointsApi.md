@@ -17,25 +17,23 @@ This will create a anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
-let body:.AnchorPointsApiAnchorPointsCreateNewAnchorPointRequest = {
+const body: Pieces.AnchorPointsCreateNewAnchorPointRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededAnchorPoint (optional)
     seededAnchorPoint: ,
 };
 
-apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data:any) => {
+apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data: AnchorPoint) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AnchorPoint**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will delete a specific anchorPoint!
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
-let body:.AnchorPointsApiAnchorPointsDeleteSpecificAnchorPointRequest = {
+const body: Pieces.AnchorPointsDeleteSpecificAnchorPointRequest = {
     // string | This is the specific uuid of an anchor_point.
     anchorPoint: anchorPoint_example,
 };
 
-apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data:any) => {
+apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will get a snapshot of all your anchorPoints.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
-let body:.AnchorPointsApiAnchorPointsSnapshotRequest = {
+const body: Pieces.AnchorPointsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.anchorPointsSnapshot(body).then((data:any) => {
+apiInstance.anchorPointsSnapshot(body).then((data: AnchorPoints) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AnchorPoints**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

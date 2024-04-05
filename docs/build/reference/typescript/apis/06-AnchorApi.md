@@ -20,25 +20,23 @@ This will associate a anchor with a workstream summary. This will do the same th
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorAssociateWorkstreamSummaryRequest = {
+const body: Pieces.AnchorAssociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.anchorAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -51,10 +49,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -78,25 +72,23 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.AnchorDisassociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.anchorDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -109,10 +101,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -136,25 +124,23 @@ This will rename a specific anchor.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorRenameRequest = {
+const body: Pieces.AnchorRenameRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.anchorRename(body).then((data:any) => {
+apiInstance.anchorRename(body).then((data: Anchor) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -167,10 +153,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Anchor**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -194,25 +176,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorScoresIncrementRequest = {
+const body: Pieces.AnchorScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.anchorScoresIncrement(body).then((data:any) => {
+apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -225,10 +205,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -252,25 +228,23 @@ This will get a snapshot of a single anchor.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorSpecificAnchorSnapshotRequest = {
+const body: Pieces.AnchorSpecificAnchorSnapshotRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.anchorSpecificAnchorSnapshot(body).then((data:any) => {
+apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -283,10 +257,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Anchor**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -310,25 +280,23 @@ This will update a specific anchor.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
-let body:.AnchorApiAnchorUpdateRequest = {
+const body: Pieces.AnchorUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Anchor (optional)
     anchor: ,
 };
 
-apiInstance.anchorUpdate(body).then((data:any) => {
+apiInstance.anchorUpdate(body).then((data: Anchor) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -341,10 +309,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Anchor**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -17,23 +17,21 @@ This will create a new Range in the database.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
-let body:.RangesApiRangesCreateNewRangeRequest = {
+const body: Pieces.RangesCreateNewRangeRequest = {
     // SeededRange (optional)
     seededRange: ,
 };
 
-apiInstance.rangesCreateNewRange(body).then((data:any) => {
+apiInstance.rangesCreateNewRange(body).then((data: Range) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Range**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -72,23 +66,21 @@ This will delete a specific range from the database!
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
-let body:.RangesApiRangesDeleteSpecificRangeRequest = {
+const body: Pieces.RangesDeleteSpecificRangeRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
 };
 
-apiInstance.rangesDeleteSpecificRange(body).then((data:any) => {
+apiInstance.rangesDeleteSpecificRange(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -100,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -127,20 +115,16 @@ This will get a snapshot of all your ranges.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
-let body:any = {};
-
-apiInstance.rangesSnapshot(body).then((data:any) => {
+apiInstance.rangesSnapshot().then((data: Ranges) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -149,10 +133,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Ranges**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

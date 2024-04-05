@@ -20,23 +20,21 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:.AllocationsApiAllocationsConnectNewCloudRequest = {
+const body: Pieces.AllocationsConnectNewCloudRequest = {
     // UserProfile (optional)
     userProfile: ,
 };
 
-apiInstance.allocationsConnectNewCloud(body).then((data:any) => {
+apiInstance.allocationsConnectNewCloud(body).then((data: AllocationCloud) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AllocationCloud**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,23 +70,21 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:.AllocationsApiAllocationsCreateNewAllocationRequest = {
+const body: Pieces.AllocationsCreateNewAllocationRequest = {
     // AllocationCloud (optional)
     allocationCloud: ,
 };
 
-apiInstance.allocationsCreateNewAllocation(body).then((data:any) => {
+apiInstance.allocationsCreateNewAllocation(body).then((data: AllocationCloud) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -104,10 +96,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AllocationCloud**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -131,23 +119,21 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:.AllocationsApiAllocationsDeleteAllocationRequest = {
+const body: Pieces.AllocationsDeleteAllocationRequest = {
     // AllocationCloud (optional)
     allocationCloud: ,
 };
 
-apiInstance.allocationsDeleteAllocation(body).then((data:any) => {
+apiInstance.allocationsDeleteAllocation(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -159,10 +145,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -186,23 +168,21 @@ This will attempt to disconnect to a specific users cloud.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:.AllocationsApiAllocationsDisconnectCloudRequest = {
+const body: Pieces.AllocationsDisconnectCloudRequest = {
     // AllocationCloud (optional)
     allocationCloud: ,
 };
 
-apiInstance.allocationsDisconnectCloud(body).then((data:any) => {
+apiInstance.allocationsDisconnectCloud(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -214,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -241,23 +217,21 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:.AllocationsApiAllocationsReconnectCloudRequest = {
+const body: Pieces.AllocationsReconnectCloudRequest = {
     // AllocationCloud (optional)
     allocationCloud: ,
 };
 
-apiInstance.allocationsReconnectCloud(body).then((data:any) => {
+apiInstance.allocationsReconnectCloud(body).then((data: AllocationCloud) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -269,10 +243,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AllocationCloud**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -297,20 +267,16 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.allocationsSnapshot(body).then((data:any) => {
+apiInstance.allocationsSnapshot().then((data: Allocations) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -319,10 +285,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Allocations**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -17,25 +17,23 @@ This will create a Message on a specific conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessagesApi(configuration);
 
-let body:.ConversationMessagesApiMessagesCreateSpecificMessageRequest = {
+const body: Pieces.MessagesCreateSpecificMessageRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededConversationMessage (optional)
     seededConversationMessage: ,
 };
 
-apiInstance.messagesCreateSpecificMessage(body).then((data:any) => {
+apiInstance.messagesCreateSpecificMessage(body).then((data: ConversationMessage) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessage**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will delete a specific message.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessagesApi(configuration);
 
-let body:.ConversationMessagesApiMessagesDeleteSpecificMessageRequest = {
+const body: Pieces.MessagesDeleteSpecificMessageRequest = {
     // string | This is the uuid of a message.
     message: message_example,
 };
 
-apiInstance.messagesDeleteSpecificMessage(body).then((data:any) => {
+apiInstance.messagesDeleteSpecificMessage(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will get all the messages.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessagesApi(configuration);
 
-let body:.ConversationMessagesApiMessagesSnapshotRequest = {
+const body: Pieces.MessagesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.messagesSnapshot(body).then((data:any) => {
+apiInstance.messagesSnapshot(body).then((data: ConversationMessages) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessages**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -19,23 +19,21 @@ This will get an analysis from a format\'s id.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
-let body:.FormatApiFormatAnalysisRequest = {
+const body: Pieces.FormatAnalysisRequest = {
     // string | The id (uuid) for a specific format.
     format: 102ff265-fdfb-4142-8d94-4932d400199c,
 };
 
-apiInstance.formatAnalysis(body).then((data:any) => {
+apiInstance.formatAnalysis(body).then((data: Analysis) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -47,10 +45,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Analysis**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -74,25 +68,23 @@ This endpoint will be used to reclassify a single Format.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
-let body:.FormatApiFormatReclassifyRequest = {
+const body: Pieces.FormatReclassifyRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferable: true,
     // FormatReclassification (optional)
     formatReclassification: ,
 };
 
-apiInstance.formatReclassify(body).then((data:any) => {
+apiInstance.formatReclassify(body).then((data: Format) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -105,10 +97,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Format**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -131,25 +119,23 @@ Get a snapshot of a specific format.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
-let body:.FormatApiFormatSnapshotRequest = {
+const body: Pieces.FormatSnapshotRequest = {
     // string | The id (uuid) for a specific format.
     format: 102ff265-fdfb-4142-8d94-4932d400199c,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferable: true,
 };
 
-apiInstance.formatSnapshot(body).then((data:any) => {
+apiInstance.formatSnapshot(body).then((data: Format) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -162,10 +148,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Format**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -188,25 +170,23 @@ This will update a format\'s value, ie, a formats fragment or file depending on 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
-let body:.FormatApiFormatUpdateValueRequest = {
+const body: Pieces.FormatUpdateValueRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferable: true,
     // Format | This is the format that you want to update. (optional)
     format: ,
 };
 
-apiInstance.formatUpdateValue(body).then((data:any) => {
+apiInstance.formatUpdateValue(body).then((data: Format) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -219,10 +199,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Format**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -246,23 +222,21 @@ This is an analytics endpoint that will enable us to know when a user has copied
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
-let body:.FormatApiFormatUsageEventRequest = {
+const body: Pieces.FormatUsageEventRequest = {
     // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:) (optional)
     seededTrackedFormatEvent: ,
 };
 
-apiInstance.formatUsageEvent(body).then((data:any) => {
+apiInstance.formatUsageEvent(body).then((data: TrackedFormatEvent) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -274,10 +248,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **TrackedFormatEvent**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -15,23 +15,21 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PieceApi(configuration);
 
-let body:.PieceApiHtmlShareRequest = {
+const body: Pieces.HtmlShareRequest = {
     // string | this is the a query param, that a shortened version of the share.
     p: p_example,
 };
 
-apiInstance.htmlShare(body).then((data:any) => {
+apiInstance.htmlShare(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -17,23 +17,21 @@ This will create a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
-let body:.ExternalProviderApiExternalProviderApiKeyCreateRequest = {
+const body: Pieces.ExternalProviderApiKeyCreateRequest = {
     // PrecreatedExternalProviderApiKey (optional)
     precreatedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyCreate(body).then((data:any) => {
+apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProviderApiKey) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **CreatedExternalProviderApiKey**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -73,23 +67,21 @@ This will remove a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
-let body:.ExternalProviderApiExternalProviderApiKeyDeleteRequest = {
+const body: Pieces.ExternalProviderApiKeyDeleteRequest = {
     // PredeletedExternalProviderApiKey (optional)
     predeletedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyDelete(body).then((data:any) => {
+apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProviderApiKey) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -101,10 +93,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **DeletedExternalProviderApiKey**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -129,23 +117,21 @@ This will update a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
-let body:.ExternalProviderApiExternalProviderApiKeyUpdateRequest = {
+const body: Pieces.ExternalProviderApiKeyUpdateRequest = {
     // PreupdatedExternalProviderApiKey (optional)
     preupdatedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyUpdate(body).then((data:any) => {
+apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProviderApiKey) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -157,10 +143,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UpdatedExternalProviderApiKey**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

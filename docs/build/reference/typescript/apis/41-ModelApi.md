@@ -21,23 +21,21 @@ This will download a specific model onto your local machine.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelSpecificModelDownloadRequest = {
+const body: Pieces.ModelSpecificModelDownloadRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelSpecificModelDownload(body).then((data:any) => {
+apiInstance.modelSpecificModelDownload(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,23 +70,21 @@ This will cancel a specific model download in progress.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelSpecificModelDownloadCancelRequest = {
+const body: Pieces.ModelSpecificModelDownloadCancelRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelSpecificModelDownloadCancel(body).then((data:any) => {
+apiInstance.modelSpecificModelDownloadCancel(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -104,10 +96,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -131,23 +119,21 @@ This is a Websocket Connection, to get the progress of the downloading of a spec
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelSpecificModelDownloadProgressRequest = {
+const body: Pieces.ModelSpecificModelDownloadProgressRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelSpecificModelDownloadProgress(body).then((data:any) => {
+apiInstance.modelSpecificModelDownloadProgress(body).then((data: ModelDownloadProgress) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -159,10 +145,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ModelDownloadProgress**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -186,23 +168,21 @@ This will load an already downloaded model into memory. This is different that d
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelSpecificModelLoadRequest = {
+const body: Pieces.ModelSpecificModelLoadRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelSpecificModelLoad(body).then((data:any) => {
+apiInstance.modelSpecificModelLoad(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -214,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -241,23 +217,21 @@ This will unload an already loaded model from memory. This will free up the ram 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelSpecificModelUnloadRequest = {
+const body: Pieces.ModelSpecificModelUnloadRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelSpecificModelUnload(body).then((data:any) => {
+apiInstance.modelSpecificModelUnload(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -269,10 +243,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -296,23 +266,21 @@ This will update Machinelearning Model, this is only available for \"custom:true
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelUpdateRequest = {
+const body: Pieces.ModelUpdateRequest = {
     // Model (optional)
     model: ,
 };
 
-apiInstance.modelUpdate(body).then((data:any) => {
+apiInstance.modelUpdate(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -324,10 +292,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -351,23 +315,21 @@ No authorization required
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
-let body:.ModelApiModelsSpecificModelSnapshotRequest = {
+const body: Pieces.ModelsSpecificModelSnapshotRequest = {
     // string | model id
     model: model_example,
 };
 
-apiInstance.modelsSpecificModelSnapshot(body).then((data:any) => {
+apiInstance.modelsSpecificModelSnapshot(body).then((data: Model) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -379,10 +341,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Model**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

@@ -19,25 +19,23 @@ This will associate a person with a workstream summary. This will do the same th
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
-let body:.PersonApiPersonAssociateWorkstreamSummaryRequest = {
+const body: Pieces.PersonAssociateWorkstreamSummaryRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.personAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.personAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -50,10 +48,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -77,25 +71,23 @@ This will enable us to disassociate an person from a workstream summary. This wi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
-let body:.PersonApiPersonDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.PersonDisassociateWorkstreamSummaryRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.personDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.personDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -108,10 +100,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -135,25 +123,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
-let body:.PersonApiPersonScoresIncrementRequest = {
+const body: Pieces.PersonScoresIncrementRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.personScoresIncrement(body).then((data:any) => {
+apiInstance.personScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -166,10 +152,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -193,25 +175,23 @@ This will get a snapshot of a specific person
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
-let body:.PersonApiPersonSnapshotRequest = {
+const body: Pieces.PersonSnapshotRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.personSnapshot(body).then((data:any) => {
+apiInstance.personSnapshot(body).then((data: Person) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -224,10 +204,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Person**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -251,25 +227,23 @@ This will update a specific person
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
-let body:.PersonApiUpdatePersonRequest = {
+const body: Pieces.UpdatePersonRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Person (optional)
     person: ,
 };
 
-apiInstance.updatePerson(body).then((data:any) => {
+apiInstance.updatePerson(body).then((data: Person) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -282,10 +256,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Person**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

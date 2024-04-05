@@ -17,23 +17,21 @@ Method | HTTP request | Description
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.LinkifyApi(configuration);
 
-let body:.LinkifyApiLinkifyRequest = {
+const body: Pieces.LinkifyRequest = {
     // Linkify (optional)
     linkify: ,
 };
 
-apiInstance.linkify(body).then((data:any) => {
+apiInstance.linkify(body).then((data: Shares) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Shares**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ No authorization required
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.LinkifyApi(configuration);
 
-let body:.LinkifyApiLinkifyMultipleRequest = {
+const body: Pieces.LinkifyMultipleRequest = {
     // LinkifyMultiple |  (optional)
     linkifyMultiple: ,
 };
 
-apiInstance.linkifyMultiple(body).then((data:any) => {
+apiInstance.linkifyMultiple(body).then((data: Shares) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Shares**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -134,23 +122,21 @@ This will revoke a link.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.LinkifyApi(configuration);
 
-let body:.LinkifyApiLinkifyShareRevokeRequest = {
+const body: Pieces.LinkifyShareRevokeRequest = {
     // string
     share: share_example,
 };
 
-apiInstance.linkifyShareRevoke(body).then((data:any) => {
+apiInstance.linkifyShareRevoke(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -162,10 +148,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

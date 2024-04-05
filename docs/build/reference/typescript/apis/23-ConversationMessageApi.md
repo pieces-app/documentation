@@ -20,25 +20,23 @@ This will associate a message with an annotation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageAssociateAnnotationRequest = {
+const body: Pieces.MessageAssociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
     annotation: annotation_example,
     // string | This is the uuid of a message.
     message: message_example,
 };
 
-apiInstance.messageAssociateAnnotation(body).then((data:any) => {
+apiInstance.messageAssociateAnnotation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -51,10 +49,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -78,25 +72,23 @@ This will enable us to dissassociate a message from an annotation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageDisassociateAnnotationRequest = {
+const body: Pieces.MessageDisassociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
     annotation: annotation_example,
     // string | This is the uuid of a message.
     message: message_example,
 };
 
-apiInstance.messageDisassociateAnnotation(body).then((data:any) => {
+apiInstance.messageDisassociateAnnotation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -109,10 +101,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -136,25 +124,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageScoresIncrementRequest = {
+const body: Pieces.MessageScoresIncrementRequest = {
     // string | This is the uuid of a message.
     message: message_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.messageScoresIncrement(body).then((data:any) => {
+apiInstance.messageScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -167,10 +153,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -194,25 +176,23 @@ This will get a specific snapshot of a message
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageSpecificMessageSnapshotRequest = {
+const body: Pieces.MessageSpecificMessageSnapshotRequest = {
     // string | This is the uuid of a message.
     message: message_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.messageSpecificMessageSnapshot(body).then((data:any) => {
+apiInstance.messageSpecificMessageSnapshot(body).then((data: ConversationMessage) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -225,10 +205,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessage**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -252,25 +228,23 @@ This will update a conversation message.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageSpecificMessageUpdateRequest = {
+const body: Pieces.MessageSpecificMessageUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // ConversationMessage (optional)
     conversationMessage: ,
 };
 
-apiInstance.messageSpecificMessageUpdate(body).then((data:any) => {
+apiInstance.messageSpecificMessageUpdate(body).then((data: ConversationMessage) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -283,10 +257,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessage**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -310,25 +280,23 @@ This will update the value of a conversation message.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
-let body:.ConversationMessageApiMessageUpdateValueRequest = {
+const body: Pieces.MessageUpdateValueRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // ConversationMessage (optional)
     conversationMessage: ,
 };
 
-apiInstance.messageUpdateValue(body).then((data:any) => {
+apiInstance.messageUpdateValue(body).then((data: ConversationMessage) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -341,10 +309,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessage**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

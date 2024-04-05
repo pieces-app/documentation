@@ -17,25 +17,23 @@ This will create a new WorkstreamSummary in the database.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
-let body:.WorkstreamSummariesApiWorkstreamSummariesCreateNewWorkstreamSummaryRequest = {
+const body: Pieces.WorkstreamSummariesCreateNewWorkstreamSummaryRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededWorkstreamSummary (optional)
     seededWorkstreamSummary: ,
 };
 
-apiInstance.workstreamSummariesCreateNewWorkstreamSummary(body).then((data:any) => {
+apiInstance.workstreamSummariesCreateNewWorkstreamSummary(body).then((data: WorkstreamSummary) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **WorkstreamSummary**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will delete a specific workstream_summary from the database!
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
-let body:.WorkstreamSummariesApiWorkstreamSummariesDeleteSpecificWorkstreamSummaryRequest = {
+const body: Pieces.WorkstreamSummariesDeleteSpecificWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(body).then((data:any) => {
+apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will get a snapshot of all your workstream summaries.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
-let body:.WorkstreamSummariesApiWorkstreamSummariesSnapshotRequest = {
+const body: Pieces.WorkstreamSummariesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.workstreamSummariesSnapshot(body).then((data:any) => {
+apiInstance.workstreamSummariesSnapshot(body).then((data: WorkstreamSummaries) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **WorkstreamSummaries**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

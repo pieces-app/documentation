@@ -32,25 +32,23 @@ This will update both the anchor and the conversation.  and associate the 2 toge
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationAssociateAnchorRequest = {
+const body: Pieces.ConversationAssociateAnchorRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
 };
 
-apiInstance.conversationAssociateAnchor(body).then((data:any) => {
+apiInstance.conversationAssociateAnchor(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -63,10 +61,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -90,25 +84,23 @@ This will update both the asset and the conversation.  and associate the 2 toget
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationAssociateAssetRequest = {
+const body: Pieces.ConversationAssociateAssetRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.conversationAssociateAsset(body).then((data:any) => {
+apiInstance.conversationAssociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -121,10 +113,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -148,25 +136,23 @@ This will associate a workstream(range) with a conversation. This will do the sa
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationAssociateGroundingTemporalRangeWorkstreamRequest = {
+const body: Pieces.ConversationAssociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
 };
 
-apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((data:any) => {
+apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -179,10 +165,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -206,25 +188,23 @@ This will update both the website and the conversation.  and associate the 2 tog
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationAssociateWebsiteRequest = {
+const body: Pieces.ConversationAssociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | website id
     website: website_example,
 };
 
-apiInstance.conversationAssociateWebsite(body).then((data:any) => {
+apiInstance.conversationAssociateWebsite(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -237,10 +217,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -264,25 +240,23 @@ This will associate a conversation with a workstream summary. This will do the s
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationAssociateWorkstreamSummaryRequest = {
+const body: Pieces.ConversationAssociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.conversationAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.conversationAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -295,10 +269,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -322,25 +292,23 @@ This will update both the anchor and the conversation.  and delete(disassociate)
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationDisassociateAnchorRequest = {
+const body: Pieces.ConversationDisassociateAnchorRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
 };
 
-apiInstance.conversationDisassociateAnchor(body).then((data:any) => {
+apiInstance.conversationDisassociateAnchor(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -353,10 +321,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -380,25 +344,23 @@ This will update both the asset and the conversation.  and delete(disassociate) 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationDisassociateAssetRequest = {
+const body: Pieces.ConversationDisassociateAssetRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.conversationDisassociateAsset(body).then((data:any) => {
+apiInstance.conversationDisassociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -411,10 +373,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -438,25 +396,23 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationDisassociateGroundingTemporalRangeWorkstreamRequest = {
+const body: Pieces.ConversationDisassociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
 };
 
-apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then((data:any) => {
+apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -469,10 +425,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -496,25 +448,23 @@ This will enable us to dissassociate a conversation from a website.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationDisassociateWebsiteRequest = {
+const body: Pieces.ConversationDisassociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | website id
     website: website_example,
 };
 
-apiInstance.conversationDisassociateWebsite(body).then((data:any) => {
+apiInstance.conversationDisassociateWebsite(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -527,10 +477,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -554,25 +500,23 @@ This will enable us to disassociate an conversation from a workstream summary. T
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.ConversationDisassociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.conversationDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.conversationDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -585,10 +529,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -612,25 +552,23 @@ This will get a specific conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationGetSpecificConversationRequest = {
+const body: Pieces.ConversationGetSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.conversationGetSpecificConversation(body).then((data:any) => {
+apiInstance.conversationGetSpecificConversation(body).then((data: Conversation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -643,10 +581,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -670,25 +604,23 @@ This will save the grounding context for a conversation. This will enable us to 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationGroundingMessagesAssociateMessageRequest = {
+const body: Pieces.ConversationGroundingMessagesAssociateMessageRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is the uuid of a message.
     message: message_example,
 };
 
-apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data:any) => {
+apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -701,10 +633,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -728,25 +656,23 @@ This will remove specific grounding context for a conversation. This will enable
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationGroundingMessagesDisassociateMessageRequest = {
+const body: Pieces.ConversationGroundingMessagesDisassociateMessageRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // string | This is the uuid of a message.
     message: message_example,
 };
 
-apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data:any) => {
+apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -759,10 +685,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -786,25 +708,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationScoresIncrementRequest = {
+const body: Pieces.ConversationScoresIncrementRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.conversationScoresIncrement(body).then((data:any) => {
+apiInstance.conversationScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -817,10 +737,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -844,25 +760,23 @@ This will get a specific conversations messages
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationSpecificConversationMessagesRequest = {
+const body: Pieces.ConversationSpecificConversationMessagesRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.conversationSpecificConversationMessages(body).then((data:any) => {
+apiInstance.conversationSpecificConversationMessages(body).then((data: ConversationMessages) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -875,10 +789,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationMessages**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -902,25 +812,23 @@ This will take a specific converssation and it will rename using ML.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationSpecificConversationRenameRequest = {
+const body: Pieces.ConversationSpecificConversationRenameRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.conversationSpecificConversationRename(body).then((data:any) => {
+apiInstance.conversationSpecificConversationRename(body).then((data: Conversation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -933,10 +841,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -960,25 +864,23 @@ This will take a current conversation and create a summary of the conversation a
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationSummarizeRequest = {
+const body: Pieces.ConversationSummarizeRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
     // ConversationSummarizeInput (optional)
     conversationSummarizeInput: ,
 };
 
-apiInstance.conversationSummarize(body).then((data:any) => {
+apiInstance.conversationSummarize(body).then((data: ConversationSummarizeOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -991,10 +893,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationSummarizeOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -1018,25 +916,23 @@ This will update a specific conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
-let body:.ConversationApiConversationUpdateRequest = {
+const body: Pieces.ConversationUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Conversation (optional)
     conversation: ,
 };
 
-apiInstance.conversationUpdate(body).then((data:any) => {
+apiInstance.conversationUpdate(body).then((data: Conversation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -1049,10 +945,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

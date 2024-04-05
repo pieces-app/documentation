@@ -18,25 +18,23 @@ This will create a new tag.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
-let body:.TagsApiTagsCreateNewTagRequest = {
+const body: Pieces.TagsCreateNewTagRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededTag (optional)
     seededTag: ,
 };
 
-apiInstance.tagsCreateNewTag(body).then((data:any) => {
+apiInstance.tagsCreateNewTag(body).then((data: Tag) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Tag**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,23 +70,21 @@ This will delete a specific tag.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
-let body:.TagsApiTagsDeleteSpecificTagRequest = {
+const body: Pieces.TagsDeleteSpecificTagRequest = {
     // string | tag id
     tag: tag_example,
 };
 
-apiInstance.tagsDeleteSpecificTag(body).then((data:any) => {
+apiInstance.tagsDeleteSpecificTag(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -104,10 +96,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -131,23 +119,21 @@ This will check all of the tags in our database to see if this specific provided
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
-let body:.TagsApiTagsExistsRequest = {
+const body: Pieces.TagsExistsRequest = {
     // ExistentMetadata (optional)
     existentMetadata: ,
 };
 
-apiInstance.tagsExists(body).then((data:any) => {
+apiInstance.tagsExists(body).then((data: ExistingMetadata) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -159,10 +145,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ExistingMetadata**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -186,23 +168,21 @@ This will get a snapshot of all of your tags.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
-let body:.TagsApiTagsSnapshotRequest = {
+const body: Pieces.TagsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.tagsSnapshot(body).then((data:any) => {
+apiInstance.tagsSnapshot(body).then((data: Tags) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -214,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Tags**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

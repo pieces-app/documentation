@@ -16,20 +16,16 @@ This is going to get a snapshot of our FormatsMetrics
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MetricsApi(configuration);
 
-let body:any = {};
-
-apiInstance.getMetricsFormats(body).then((data:any) => {
+apiInstance.getMetricsFormats().then((data: FormatsMetrics) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -38,10 +34,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **FormatsMetrics**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -64,20 +56,16 @@ This will return a list of code formats in desc order from most to least formats
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MetricsApi(configuration);
 
-let body:any = {};
-
-apiInstance.metricsFormatsOrdered(body).then((data:any) => {
+apiInstance.metricsFormatsOrdered().then((data: OrderedMetrics) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -86,10 +74,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **OrderedMetrics**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

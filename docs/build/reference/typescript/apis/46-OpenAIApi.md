@@ -15,23 +15,21 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OpenAIApi(configuration);
 
-let body:.OpenAIApiOpenAiModelsListRequest = {
+const body: Pieces.OpenAiModelsListRequest = {
     // OpenAIModelsListInput (optional)
     openAIModelsListInput: ,
 };
 
-apiInstance.openAiModelsList(body).then((data:any) => {
+apiInstance.openAiModelsList(body).then((data: OpenAIModelsListOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **OpenAIModelsListOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

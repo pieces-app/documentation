@@ -17,23 +17,21 @@ This will create a new sensitive model.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
-let body:.SensitivesApiSensitivesCreateNewSensitiveRequest = {
+const body: Pieces.SensitivesCreateNewSensitiveRequest = {
     // SeededSensitive (optional)
     seededSensitive: ,
 };
 
-apiInstance.sensitivesCreateNewSensitive(body).then((data:any) => {
+apiInstance.sensitivesCreateNewSensitive(body).then((data: Sensitive) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Sensitive**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -72,23 +66,21 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
-let body:.SensitivesApiSensitivesDeleteSensitiveRequest = {
+const body: Pieces.SensitivesDeleteSensitiveRequest = {
     // string | This is a uuid that represents a sensitive.
     sensitive: sensitive_example,
 };
 
-apiInstance.sensitivesDeleteSensitive(body).then((data:any) => {
+apiInstance.sensitivesDeleteSensitive(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -100,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -127,20 +115,16 @@ This will get a snapshot of all of the sensitives.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
-let body:any = {};
-
-apiInstance.sensitivesSnapshot(body).then((data:any) => {
+apiInstance.sensitivesSnapshot().then((data: Sensitives) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -149,10 +133,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Sensitives**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

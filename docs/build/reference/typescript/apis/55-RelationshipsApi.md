@@ -15,20 +15,16 @@ This will reurn all of the relationships that exists within your pieces db.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RelationshipsApi(configuration);
 
-let body:any = {};
-
-apiInstance.relationshipsSnapshot(body).then((data:any) => {
+apiInstance.relationshipsSnapshot().then((data: Relationships) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -37,10 +33,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Relationships**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

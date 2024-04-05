@@ -17,25 +17,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
-let body:.SensitiveApiSensitiveScoresIncrementRequest = {
+const body: Pieces.SensitiveScoresIncrementRequest = {
     // string | This is a uuid that represents a sensitive.
     sensitive: sensitive_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.sensitiveScoresIncrement(body).then((data:any) => {
+apiInstance.sensitiveScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will get a specific sensitive via the sensitive uuid.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
-let body:.SensitiveApiSensitiveSnapshotRequest = {
+const body: Pieces.SensitiveSnapshotRequest = {
     // string
     sensitive: sensitive_example,
 };
 
-apiInstance.sensitiveSnapshot(body).then((data:any) => {
+apiInstance.sensitiveSnapshot(body).then((data: Sensitive) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Sensitive**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will update a specific sensitive
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
-let body:.SensitiveApiUpdateSensitiveRequest = {
+const body: Pieces.UpdateSensitiveRequest = {
     // Sensitive |  (optional)
     sensitive: ,
 };
 
-apiInstance.updateSensitive(body).then((data:any) => {
+apiInstance.updateSensitive(body).then((data: Sensitive) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Sensitive**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

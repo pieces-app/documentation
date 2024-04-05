@@ -16,23 +16,21 @@ This will get a snapshot of a specific allocation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationApi(configuration);
 
-let body:.AllocationApiAllocationSnapshotRequest = {
+const body: Pieces.AllocationSnapshotRequest = {
     // string
     allocation: allocation_example,
 };
 
-apiInstance.allocationSnapshot(body).then((data:any) => {
+apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -44,10 +42,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AllocationCloud**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -71,23 +65,21 @@ This will update a specific allocation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationApi(configuration);
 
-let body:.AllocationApiAllocationUpdateRequest = {
+const body: Pieces.AllocationUpdateRequest = {
     // AllocationCloud (optional)
     allocationCloud: ,
 };
 
-apiInstance.allocationUpdate(body).then((data:any) => {
+apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -99,10 +91,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AllocationCloud**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

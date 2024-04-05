@@ -18,25 +18,23 @@ This will create a website and attach it to a specific asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
-let body:.WebsitesApiWebsitesCreateNewWebsiteRequest = {
+const body: Pieces.WebsitesCreateNewWebsiteRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededWebsite (optional)
     seededWebsite: ,
 };
 
-apiInstance.websitesCreateNewWebsite(body).then((data:any) => {
+apiInstance.websitesCreateNewWebsite(body).then((data: Website) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Website**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,23 +70,21 @@ This will delete a specific website!
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
-let body:.WebsitesApiWebsitesDeleteSpecificWebsiteRequest = {
+const body: Pieces.WebsitesDeleteSpecificWebsiteRequest = {
     // string | website id
     website: website_example,
 };
 
-apiInstance.websitesDeleteSpecificWebsite(body).then((data:any) => {
+apiInstance.websitesDeleteSpecificWebsite(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -104,10 +96,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -131,23 +119,21 @@ This will check all of the websites in our database to see if this specific prov
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
-let body:.WebsitesApiWebsitesExistsRequest = {
+const body: Pieces.WebsitesExistsRequest = {
     // ExistentMetadata (optional)
     existentMetadata: ,
 };
 
-apiInstance.websitesExists(body).then((data:any) => {
+apiInstance.websitesExists(body).then((data: ExistingMetadata) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -159,10 +145,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ExistingMetadata**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -186,23 +168,21 @@ This will get a snapshot of all your websites.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
-let body:.WebsitesApiWebsitesSnapshotRequest = {
+const body: Pieces.WebsitesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.websitesSnapshot(body).then((data:any) => {
+apiInstance.websitesSnapshot(body).then((data: Websites) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -214,10 +194,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Websites**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

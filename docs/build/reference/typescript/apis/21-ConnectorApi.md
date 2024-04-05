@@ -20,23 +20,21 @@ An endpoint which abstracts a bootup/connection for a specific context
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiConnectRequest = {
+const body: Pieces.ConnectRequest = {
     // SeededConnectorConnection |  (optional)
     seededConnectorConnection: ,
 };
 
-apiInstance.connect(body).then((data:any) => {
+apiInstance.connect(body).then((data: Context) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Context**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ This can be used to send a SeededAsset over that you may use to compair in the f
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiIntentionRequest = {
+const body: Pieces.IntentionRequest = {
     // string
     application: application_example,
     // SeededConnectorAsset (optional)
     seededConnectorAsset: ,
 };
 
-apiInstance.intention(body).then((data:any) => {
+apiInstance.intention(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -135,25 +123,23 @@ A consolidation endpoint to handle the updating of an onboarding process.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiOnboardedRequest = {
+const body: Pieces.OnboardedRequest = {
     // string | This is a uuid that represents an application
     application: application_example,
     // boolean | Whether or not that application has been onboarded. (optional)
     body: true,
 };
 
-apiInstance.onboarded(body).then((data:any) => {
+apiInstance.onboarded(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -166,10 +152,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -194,25 +176,23 @@ This will react to the response returned from the /suggest endpoint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiReactRequest = {
+const body: Pieces.ReactRequest = {
     // string
     application: application_example,
     // Reaction | ** This body will need to be modified. (optional)
     reaction: ,
 };
 
-apiInstance.react(body).then((data:any) => {
+apiInstance.react(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -225,10 +205,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -253,25 +229,23 @@ This can and should be called everytime a snippet is coppied from an integration
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiSuggestRequest = {
+const body: Pieces.SuggestRequest = {
     // string
     application: application_example,
     // SeededConnectorCreation | This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! (optional)
     seededConnectorCreation: ,
 };
 
-apiInstance.suggest(body).then((data:any) => {
+apiInstance.suggest(body).then((data: Suggestion) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -284,10 +258,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Suggestion**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -312,25 +282,23 @@ This is an endpoint specifically to abstract the work of packaging for segment o
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConnectorApi(configuration);
 
-let body:.ConnectorApiTrackRequest = {
+const body: Pieces.TrackRequest = {
     // string | This is a uuid that represents an application
     application: application_example,
     // SeededConnectorTracking | The body is able to take in several properties  (optional)
     seededConnectorTracking: ,
 };
 
-apiInstance.track(body).then((data:any) => {
+apiInstance.track(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -343,10 +311,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

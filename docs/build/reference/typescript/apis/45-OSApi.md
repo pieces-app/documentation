@@ -22,23 +22,21 @@ This will link an external provider to your current auth0 account.  Will throw e
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:.OSApiLinkProviderRequest = {
+const body: Pieces.LinkProviderRequest = {
     // SeededExternalProvider (optional)
     seededExternalProvider: ,
 };
 
-apiInstance.linkProvider(body).then((data:any) => {
+apiInstance.linkProvider(body).then((data: ReturnedUserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -50,10 +48,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ReturnedUserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -78,20 +72,16 @@ This will get information related to your specific device.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:any = {};
-
-apiInstance.osDeviceInformation(body).then((data:any) => {
+apiInstance.osDeviceInformation().then((data: OSDeviceInformationReturnable) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -100,10 +90,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **OSDeviceInformationReturnable**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -127,20 +113,16 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:any = {};
-
-apiInstance.osRestart(body).then((data:any) => {
+apiInstance.osRestart().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -149,10 +131,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -176,23 +154,21 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:.OSApiOsUpdateCheckRequest = {
+const body: Pieces.OsUpdateCheckRequest = {
     // UncheckedOSUpdate (optional)
     uncheckedOSUpdate: ,
 };
 
-apiInstance.osUpdateCheck(body).then((data:any) => {
+apiInstance.osUpdateCheck(body).then((data: CheckedOSUpdate) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -204,10 +180,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **CheckedOSUpdate**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -231,23 +203,21 @@ This will trigger a filer picker and return the string paths of the files that w
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:.OSApiPickFilesRequest = {
+const body: Pieces.PickFilesRequest = {
     // FilePickerInput (optional)
     filePickerInput: ,
 };
 
-apiInstance.pickFiles(body).then((data:any) => {
+apiInstance.pickFiles(body).then((data: Array\<string\>) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -259,10 +229,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Array\<string\>**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -286,20 +252,16 @@ This will trigger a folder picker and return the string paths of the folders tha
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:any = {};
-
-apiInstance.pickFolders(body).then((data:any) => {
+apiInstance.pickFolders().then((data: Array\<string\>) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -308,10 +270,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Array\<string\>**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -335,20 +293,16 @@ A trigger that launches a Sign into OS Server
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:any = {};
-
-apiInstance.signIntoOS(body).then((data:any) => {
+apiInstance.signIntoOS().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -357,10 +311,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -383,20 +333,16 @@ A trigger that signs out a user from the OS
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OSApi(configuration);
 
-let body:any = {};
-
-apiInstance.signOutOfOS(body).then((data:any) => {
+apiInstance.signOutOfOS().then((data: Users) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -405,10 +351,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Users**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

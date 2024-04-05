@@ -18,23 +18,21 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
-let body:.BackupsApiBackupsCreateNewBackupRequest = {
+const body: Pieces.BackupsCreateNewBackupRequest = {
     // SeededBackup (optional)
     seededBackup: ,
 };
 
-apiInstance.backupsCreateNewBackup(body).then((data:any) => {
+apiInstance.backupsCreateNewBackup(body).then((data: Backup) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -46,10 +44,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Backup**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -73,23 +67,21 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
-let body:.BackupsApiBackupsCreateNewBackupStreamedRequest = {
+const body: Pieces.BackupsCreateNewBackupStreamedRequest = {
     // SeededBackup (optional)
     seededBackup: ,
 };
 
-apiInstance.backupsCreateNewBackupStreamed(body).then((data:any) => {
+apiInstance.backupsCreateNewBackupStreamed(body).then((data: BackupStreamedProgress) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -101,10 +93,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **BackupStreamedProgress**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -128,25 +116,23 @@ This will delete a specific backup from the cloud.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
-let body:.BackupsApiBackupsDeleteSpecificBackupRequest = {
+const body: Pieces.BackupsDeleteSpecificBackupRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup: backup_example,
     // Backup (optional)
     backup2: ,
 };
 
-apiInstance.backupsDeleteSpecificBackup(body).then((data:any) => {
+apiInstance.backupsDeleteSpecificBackup(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -159,10 +145,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -186,20 +168,16 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
-let body:any = {};
-
-apiInstance.backupsSnapshot(body).then((data:any) => {
+apiInstance.backupsSnapshot().then((data: Backups) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -208,10 +186,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Backups**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

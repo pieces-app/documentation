@@ -18,23 +18,21 @@ Creates a User From a oAuth Token
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
-let body:.UsersApiAuthenticateFromOauthTokenRequest = {
+const body: Pieces.AuthenticateFromOauthTokenRequest = {
     // OAuthToken |  (optional)
     oAuthToken: ,
 };
 
-apiInstance.authenticateFromOauthToken(body).then((data:any) => {
+apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -46,10 +44,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-
 
 ### HTTP request headers
 
@@ -72,23 +66,21 @@ Locally Removing a user for the purpose of Signing Out
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
-let body:.UsersApiUsersDisconnectUserRequest = {
+const body: Pieces.UsersDisconnectUserRequest = {
     // string
     user: user_example,
 };
 
-apiInstance.usersDisconnectUser(body).then((data:any) => {
+apiInstance.usersDisconnectUser(body).then((data: Users) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -100,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Users**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -126,20 +114,16 @@ this will return a snapshot of all of the users that are in the users database. 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
-let body:any = {};
-
-apiInstance.usersSnapshot(body).then((data:any) => {
+apiInstance.usersSnapshot().then((data: Users) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -148,10 +132,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Users**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -174,23 +154,21 @@ This enables the client to get the current user.  This endpoint will return a Us
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
-let body:.UsersApiUsersSpecificUserSnapshotRequest = {
+const body: Pieces.UsersSpecificUserSnapshotRequest = {
     // string | The id (uuid) for a specific user.
     user: 497f6eca-6276-4993-bfeb-53cbbbba6f08,
 };
 
-apiInstance.usersSpecificUserSnapshot(body).then((data:any) => {
+apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -202,10 +180,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **UserProfile**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

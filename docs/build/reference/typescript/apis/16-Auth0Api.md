@@ -18,25 +18,23 @@ https://auth0.com/docs/api/authentication#logout
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
-let body:.Auth0ApiAuth0LogoutRequest = {
+const body: Pieces.Auth0LogoutRequest = {
     // string | The client ID of the Auth0 Instance (optional)
     clientId: clientId_example,
     // string | The URL that the logout endpoint will return to (optional)
     returnTo: returnTo_example,
 };
 
-apiInstance.auth0Logout(body).then((data:any) => {
+apiInstance.auth0Logout(body).then((data: string) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **string**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,14 +69,13 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
-let body:.Auth0ApiAuthorizeAuth0Request = {
+const body: Pieces.AuthorizeAuth0Request = {
     // string |  The unique identifier of the target API you want to access.
     audience: https://pieces.us.auth0.com/api/v2/,
     // Array\<'openid' | 'email' | 'profile' | 'offline_access'\> | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
@@ -107,11 +100,10 @@ let body:.Auth0ApiAuthorizeAuth0Request = {
     prompt: prompt_example,
 };
 
-apiInstance.authorizeAuth0(body).then((data:any) => {
+apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -134,10 +126,6 @@ Name | Type | Description  | Notes
 
 **ResultedPKCE**
 
-### Authorization
-
-No authorization required
-
 ### HTTP request headers
 
 - **Content-Type**: Not defined
@@ -159,14 +147,13 @@ An endpoint to generate a OAuth Token for an authentication flow.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
-let body:.Auth0ApiExchangeForAuth0TokenRequest = {
+const body: Pieces.ExchangeForAuth0TokenRequest = {
     // string | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
     grantType: grantType_example,
     // string | Your application\\\'s Client ID.
@@ -183,11 +170,10 @@ let body:.Auth0ApiExchangeForAuth0TokenRequest = {
     audience: audience_example,
 };
 
-apiInstance.exchangeForAuth0Token(body).then((data:any) => {
+apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -205,10 +191,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **OAuthToken**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -231,20 +213,16 @@ Get the users info from the Auth0 API
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
-let body:any = {};
-
-apiInstance.getAuth0UserInfo(body).then((data:any) => {
+apiInstance.getAuth0UserInfo().then((data: Auth0User) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -253,10 +231,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **Auth0User**
-
-### Authorization
-
-
 
 ### HTTP request headers
 

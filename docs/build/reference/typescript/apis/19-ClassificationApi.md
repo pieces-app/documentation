@@ -15,23 +15,21 @@ This endpoint converts on a best effort basis from one generic format to another
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ClassificationApi(configuration);
 
-let body:.ClassificationApiConvertGenericClassificationRequest = {
+const body: Pieces.ConvertGenericClassificationRequest = {
     // SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  (optional)
     seededFormat: ,
 };
 
-apiInstance.convertGenericClassification(body).then((data:any) => {
+apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **SeededFormat**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

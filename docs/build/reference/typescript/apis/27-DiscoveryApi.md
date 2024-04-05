@@ -18,25 +18,23 @@ This is the endpoint used for bulk import. In both cases of the bulk import flow
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
-let body:.DiscoveryApiDiscoveryDiscoverAssetsRequest = {
+const body: Pieces.DiscoveryDiscoverAssetsRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
     automatic: true,
     // SeededDiscoverableAssets | The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. (optional)
     seededDiscoverableAssets: ,
 };
 
-apiInstance.discoveryDiscoverAssets(body).then((data:any) => {
+apiInstance.discoveryDiscoverAssets(body).then((data: DiscoveredAssets) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **DiscoveredAssets**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,25 +70,23 @@ This is the discover discover assets html endpoint. The goal of this endpoint is
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
-let body:.DiscoveryApiDiscoveryDiscoverAssetsHtmlRequest = {
+const body: Pieces.DiscoveryDiscoverAssetsHtmlRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
     automatic: true,
     // SeededDiscoverableHtmlWebpages (optional)
     seededDiscoverableHtmlWebpages: ,
 };
 
-apiInstance.discoveryDiscoverAssetsHtml(body).then((data:any) => {
+apiInstance.discoveryDiscoverAssetsHtml(body).then((data: DiscoveredHtmlWebpages) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -107,10 +99,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **DiscoveredHtmlWebpages**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -134,25 +122,23 @@ This endpoint will accept an array of text values, and attampt to extract sensit
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
-let body:.DiscoveryApiDiscoveryDiscoverSensitivesRequest = {
+const body: Pieces.DiscoveryDiscoverSensitivesRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
     automatic: true,
     // SeededDiscoverableSensitives (optional)
     seededDiscoverableSensitives: ,
 };
 
-apiInstance.discoveryDiscoverSensitives(body).then((data:any) => {
+apiInstance.discoveryDiscoverSensitives(body).then((data: DiscoveredSensitives) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -165,10 +151,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **DiscoveredSensitives**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -191,25 +173,23 @@ This will take in a tag or multiple tags and return all the tags that are relate
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
-let body:.DiscoveryApiDiscoveryDiscoverTagsRelatedRequest = {
+const body: Pieces.DiscoveryDiscoverTagsRelatedRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
     automatic: true,
     // SeededDiscoverableRelatedTags (optional)
     seededDiscoverableRelatedTags: ,
 };
 
-apiInstance.discoveryDiscoverTagsRelated(body).then((data:any) => {
+apiInstance.discoveryDiscoverTagsRelated(body).then((data: DiscoveredRelatedTags) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -222,10 +202,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **DiscoveredRelatedTags**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

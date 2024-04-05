@@ -15,23 +15,21 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UltraSuiteApi(configuration);
 
-let body:.UltraSuiteApiAssetsCreateUltraSuiteAssetRequest = {
+const body: Pieces.AssetsCreateUltraSuiteAssetRequest = {
     // SeededUltraSuiteAsset (optional)
     seededUltraSuiteAsset: ,
 };
 
-apiInstance.assetsCreateUltraSuiteAsset(body).then((data:any) => {
+apiInstance.assetsCreateUltraSuiteAsset(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

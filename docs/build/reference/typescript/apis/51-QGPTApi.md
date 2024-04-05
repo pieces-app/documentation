@@ -20,23 +20,21 @@ This is only to generate suggested questions that the user can ask. ( we will pr
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiHintsRequest = {
+const body: Pieces.HintsRequest = {
     // QGPTHintsInput (optional)
     qGPTHintsInput: ,
 };
 
-apiInstance.hints(body).then((data:any) => {
+apiInstance.hints(body).then((data: QGPTQuestionOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTQuestionOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ This Endpoint is used for Who Support.  IE given context like a Seed, or a qgptC
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiPersonsRelatedRequest = {
+const body: Pieces.PersonsRelatedRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // QGPTPersonsRelatedInput (optional)
     qGPTPersonsRelatedInput: ,
 };
 
-apiInstance.personsRelated(body).then((data:any) => {
+apiInstance.personsRelated(body).then((data: QGPTPersonsRelatedOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTPersonsRelatedOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -133,23 +121,21 @@ This is a version of qGPT stream that will stream the inputs.  This will handle 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiQgptStreamRequest = {
+const body: Pieces.QgptStreamRequest = {
     // QGPTStreamInput (optional)
     qGPTStreamInput: ,
 };
 
-apiInstance.qgptStream(body).then((data:any) => {
+apiInstance.qgptStream(body).then((data: QGPTStreamOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -161,10 +147,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTStreamOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -188,23 +170,21 @@ This is going to accept, relevant code snippets or uuids returned from the /qgpt
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiQuestionRequest = {
+const body: Pieces.QuestionRequest = {
     // QGPTQuestionInput (optional)
     qGPTQuestionInput: ,
 };
 
-apiInstance.question(body).then((data:any) => {
+apiInstance.question(body).then((data: QGPTQuestionOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -216,10 +196,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTQuestionOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -246,23 +222,21 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiRelevanceRequest = {
+const body: Pieces.RelevanceRequest = {
     // QGPTRelevanceInput (optional)
     qGPTRelevanceInput: ,
 };
 
-apiInstance.relevance(body).then((data:any) => {
+apiInstance.relevance(body).then((data: QGPTRelevanceOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -274,10 +248,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTRelevanceOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -304,23 +274,21 @@ This will take in a followup question and the history of the conversation, and e
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.QGPTApi(configuration);
 
-let body:.QGPTApiRepromptRequest = {
+const body: Pieces.RepromptRequest = {
     // QGPTRepromptInput (optional)
     qGPTRepromptInput: ,
 };
 
-apiInstance.reprompt(body).then((data:any) => {
+apiInstance.reprompt(body).then((data: QGPTRepromptOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -332,10 +300,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **QGPTRepromptOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

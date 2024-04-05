@@ -16,23 +16,21 @@ Get all of your formats for a given user.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatsApi(configuration);
 
-let body:.FormatsApiFormatsSnapshotRequest = {
+const body: Pieces.FormatsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.formatsSnapshot(body).then((data:any) => {
+apiInstance.formatsSnapshot(body).then((data: Formats) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -44,10 +42,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Formats**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -70,25 +64,23 @@ Request a specific format when given a id (uuid in path params)
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatsApi(configuration);
 
-let body:.FormatsApiFormatsSpecificFormatSnapshotRequest = {
+const body: Pieces.FormatsSpecificFormatSnapshotRequest = {
     // string | The id (uuid) for a specific format.
     format: 102ff265-fdfb-4142-8d94-4932d400199c,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferable: true,
 };
 
-apiInstance.formatsSpecificFormatSnapshot(body).then((data:any) => {
+apiInstance.formatsSpecificFormatSnapshot(body).then((data: Format) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -101,10 +93,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Format**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

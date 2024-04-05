@@ -19,25 +19,23 @@ This will associate a workstream_event with a workstream summary. This will do t
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventApi(configuration);
 
-let body:.WorkstreamEventApiWorkstreamEventAssociateWorkstreamSummaryRequest = {
+const body: Pieces.WorkstreamEventAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
     workstreamEvent: workstreamEvent_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.workstreamEventAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.workstreamEventAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -50,10 +48,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -77,25 +71,23 @@ This will enable us to disassociate a workstream_event from a workstream summary
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventApi(configuration);
 
-let body:.WorkstreamEventApiWorkstreamEventDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.WorkstreamEventDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
     workstreamEvent: workstreamEvent_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.workstreamEventDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.workstreamEventDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -108,10 +100,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -135,25 +123,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventApi(configuration);
 
-let body:.WorkstreamEventApiWorkstreamEventScoresIncrementRequest = {
+const body: Pieces.WorkstreamEventScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
     workstreamEvent: workstreamEvent_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.workstreamEventScoresIncrement(body).then((data:any) => {
+apiInstance.workstreamEventScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -166,10 +152,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -193,25 +175,23 @@ This will update a specific workstream_event.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventApi(configuration);
 
-let body:.WorkstreamEventApiWorkstreamEventUpdateRequest = {
+const body: Pieces.WorkstreamEventUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // WorkstreamEvent (optional)
     workstreamEvent: ,
 };
 
-apiInstance.workstreamEventUpdate(body).then((data:any) => {
+apiInstance.workstreamEventUpdate(body).then((data: WorkstreamEvent) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -224,10 +204,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **WorkstreamEvent**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -251,25 +227,23 @@ This will get a snapshot of a single workstream_event.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventApi(configuration);
 
-let body:.WorkstreamEventApiWorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
+const body: Pieces.WorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
     workstreamEvent: workstreamEvent_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(body).then((data:any) => {
+apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(body).then((data: WorkstreamEvent) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -282,10 +256,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **WorkstreamEvent**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

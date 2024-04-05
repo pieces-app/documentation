@@ -20,23 +20,21 @@ This will create a conversation from an asset, This will create a conversation a
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:.ConversationsApiConversationsCreateFromAssetRequest = {
+const body: Pieces.ConversationsCreateFromAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.conversationsCreateFromAsset(body).then((data:any) => {
+apiInstance.conversationsCreateFromAsset(body).then((data: ConversationsCreateFromAssetOutput) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ConversationsCreateFromAssetOutput**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ This will create a specific conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:.ConversationsApiConversationsCreateSpecificConversationRequest = {
+const body: Pieces.ConversationsCreateSpecificConversationRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededConversation (optional)
     seededConversation: ,
 };
 
-apiInstance.conversationsCreateSpecificConversation(body).then((data:any) => {
+apiInstance.conversationsCreateSpecificConversation(body).then((data: Conversation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -133,23 +121,21 @@ This will delete a specific Conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:.ConversationsApiConversationsDeleteSpecificConversationRequest = {
+const body: Pieces.ConversationsDeleteSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
 };
 
-apiInstance.conversationsDeleteSpecificConversation(body).then((data:any) => {
+apiInstance.conversationsDeleteSpecificConversation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -161,10 +147,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -188,20 +170,16 @@ This will get all the uuids of a Conversation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.conversationsIdentifiersSnapshot(body).then((data:any) => {
+apiInstance.conversationsIdentifiersSnapshot().then((data: FlattenedConversations) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -210,10 +188,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **FlattenedConversations**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -237,23 +211,21 @@ This will return a snapshot of a specific conversation
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:.ConversationsApiConversationsSnapshotRequest = {
+const body: Pieces.ConversationsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.conversationsSnapshot(body).then((data:any) => {
+apiInstance.conversationsSnapshot(body).then((data: Conversations) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -265,10 +237,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversations**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -292,20 +260,16 @@ This is a stream for the conversation identifiers. will return StreamedIdentifie
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
-let body:any = {};
-
-apiInstance.conversationsStreamIdentifiers(body).then((data:any) => {
+apiInstance.conversationsStreamIdentifiers().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -314,10 +278,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

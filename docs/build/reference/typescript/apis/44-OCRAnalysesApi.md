@@ -15,23 +15,21 @@ This will get a snapshot of all of your ocr analyses, an ocr analysis is attache
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OCRAnalysesApi(configuration);
 
-let body:.OCRAnalysesApiOcrAnalysesSnapshotRequest = {
+const body: Pieces.OcrAnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.ocrAnalysesSnapshot(body).then((data:any) => {
+apiInstance.ocrAnalysesSnapshot(body).then((data: OCRAnalyses) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **OCRAnalyses**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

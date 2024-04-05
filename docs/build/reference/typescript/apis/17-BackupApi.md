@@ -19,23 +19,21 @@ Method | HTTP request | Description
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupApi(configuration);
 
-let body:.BackupApiBackupRequest = {
+const body: Pieces.BackupRequest = {
     // Assets (optional)
     assets: ,
 };
 
-apiInstance.backup(body).then((data:any) => {
+apiInstance.backup(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -47,10 +45,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -74,23 +68,21 @@ No authorization required
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupApi(configuration);
 
-let body:.BackupApiBackupAssetRequest = {
+const body: Pieces.BackupAssetRequest = {
     // Asset (optional)
     asset: ,
 };
 
-apiInstance.backupAsset(body).then((data:any) => {
+apiInstance.backupAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -102,10 +94,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,25 +118,23 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupApi(configuration);
 
-let body:.BackupApiBackupRestoreSpecificBackupRequest = {
+const body: Pieces.BackupRestoreSpecificBackupRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup: backup_example,
     // Backup (optional)
     backup2: ,
 };
 
-apiInstance.backupRestoreSpecificBackup(body).then((data:any) => {
+apiInstance.backupRestoreSpecificBackup(body).then((data: Backup) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -161,10 +147,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Backup**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -188,25 +170,23 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupApi(configuration);
 
-let body:.BackupApiBackupRestoreSpecificBackupStreamedRequest = {
+const body: Pieces.BackupRestoreSpecificBackupStreamedRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup: backup_example,
     // Backup (optional)
     backup2: ,
 };
 
-apiInstance.backupRestoreSpecificBackupStreamed(body).then((data:any) => {
+apiInstance.backupRestoreSpecificBackupStreamed(body).then((data: BackupStreamedProgress) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -219,10 +199,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **BackupStreamedProgress**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -246,23 +222,21 @@ This will just get the metadata associated with a specific backup.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupApi(configuration);
 
-let body:.BackupApiBackupSpecificBackupSnapshotRequest = {
+const body: Pieces.BackupSpecificBackupSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup: backup_example,
 };
 
-apiInstance.backupSpecificBackupSnapshot(body).then((data:any) => {
+apiInstance.backupSpecificBackupSnapshot(body).then((data: Backup) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -274,10 +248,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Backup**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

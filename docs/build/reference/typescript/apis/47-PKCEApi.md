@@ -19,20 +19,16 @@ This is a function to Clear a PKCE Authentication Flow
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
-let body:any = {};
-
-apiInstance.clearPKCE(body).then((data:any) => {
+apiInstance.clearPKCE().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -41,10 +37,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -67,23 +59,21 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
-let body:.PKCEApiGenerateCodeRequest = {
+const body: Pieces.GenerateCodeRequest = {
     // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
     seededPKCE: ,
 };
 
-apiInstance.generateCode(body).then((data:any) => {
+apiInstance.generateCode(body).then((data: PKCE) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -95,10 +85,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **PKCE**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -121,23 +107,21 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
-let body:.PKCEApiGenerateTokenRequest = {
+const body: Pieces.GenerateTokenRequest = {
     // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
     tokenizedPKCE: ,
 };
 
-apiInstance.generateToken(body).then((data:any) => {
+apiInstance.generateToken(body).then((data: PKCE) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -149,10 +133,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **PKCE**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -175,20 +155,16 @@ An endpoint that returns a PKCE Challenge
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
-let body:any = {};
-
-apiInstance.getChallenge(body).then((data:any) => {
+apiInstance.getChallenge().then((data: PKCE) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -197,10 +173,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **PKCE**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -223,14 +195,13 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
-let body:.PKCEApiRespondWithCodeRequest = {
+const body: Pieces.RespondWithCodeRequest = {
     // string | The PKCE Code to be used to access a Token.
     code: code_example,
     // string | Likely the state that will be returned which should match the requested state as well as the nonce
@@ -239,11 +210,10 @@ let body:.PKCEApiRespondWithCodeRequest = {
     schema: ,
 };
 
-apiInstance.respondWithCode(body).then((data:any) => {
+apiInstance.respondWithCode(body).then((data: PKCE) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -257,10 +227,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **PKCE**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

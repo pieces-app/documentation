@@ -17,25 +17,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
-let body:.HintApiHintScoresIncrementRequest = {
+const body: Pieces.HintScoresIncrementRequest = {
     // string | This is a specific hint uuid
     hint: hint_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.hintScoresIncrement(body).then((data:any) => {
+apiInstance.hintScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,23 +69,21 @@ This will get a snapshot of a specific hint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
-let body:.HintApiHintSpecificHintSnapshotRequest = {
+const body: Pieces.HintSpecificHintSnapshotRequest = {
     // string | This is a specific hint uuid
     hint: hint_example,
 };
 
-apiInstance.hintSpecificHintSnapshot(body).then((data:any) => {
+apiInstance.hintSpecificHintSnapshot(body).then((data: Hint) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -103,10 +95,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Hint**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -130,23 +118,21 @@ This will update a specific hint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
-let body:.HintApiHintUpdateRequest = {
+const body: Pieces.HintUpdateRequest = {
     // Hint (optional)
     hint: ,
 };
 
-apiInstance.hintUpdate(body).then((data:any) => {
+apiInstance.hintUpdate(body).then((data: Hint) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -158,10 +144,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Hint**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

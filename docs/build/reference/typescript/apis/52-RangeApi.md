@@ -21,25 +21,23 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeAssociateConversationGroundingTemporalRangeWorkstreamsRequest = {
+const body: Pieces.RangeAssociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
 };
 
-apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(body).then((data:any) => {
+apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -52,10 +50,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -79,25 +73,23 @@ This will associate a range with a workstream summary. This will do the same thi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeAssociateWorkstreamSummaryRequest = {
+const body: Pieces.RangeAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.rangeAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.rangeAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -110,10 +102,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -137,25 +125,23 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeDisassociateConversationGroundingTemporalRangeWorkstreamsRequest = {
+const body: Pieces.RangeDisassociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
     // string | This is the uuid of a conversation.
     conversation: conversation_example,
 };
 
-apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(body).then((data:any) => {
+apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -168,10 +154,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -195,25 +177,23 @@ This will enable us to disassociate a range from a workstream summary. This will
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.RangeDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.rangeDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.rangeDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -226,10 +206,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -253,25 +229,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeScoresIncrementRequest = {
+const body: Pieces.RangeScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.rangeScoresIncrement(body).then((data:any) => {
+apiInstance.rangeScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -284,10 +258,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -311,23 +281,21 @@ This will update a specific range.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangeUpdateRequest = {
+const body: Pieces.RangeUpdateRequest = {
     // Range (optional)
     range: ,
 };
 
-apiInstance.rangeUpdate(body).then((data:any) => {
+apiInstance.rangeUpdate(body).then((data: Range) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -339,10 +307,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Range**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -366,23 +330,21 @@ This will get a snapshot of a single range.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangeApi(configuration);
 
-let body:.RangeApiRangesSpecificRangeSnapshotRequest = {
+const body: Pieces.RangesSpecificRangeSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific range.
     range: range_example,
 };
 
-apiInstance.rangesSpecificRangeSnapshot(body).then((data:any) => {
+apiInstance.rangesSpecificRangeSnapshot(body).then((data: Range) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -394,10 +356,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Range**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

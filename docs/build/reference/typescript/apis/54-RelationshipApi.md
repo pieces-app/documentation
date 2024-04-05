@@ -15,23 +15,21 @@ This will return a single relationship object.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RelationshipApi(configuration);
 
-let body:.RelationshipApiRelationshipsSpecificRelationshipSnapshotRequest = {
+const body: Pieces.RelationshipsSpecificRelationshipSnapshotRequest = {
     // string | this is a specific relationship uuid.
     relationship: relationship_example,
 };
 
-apiInstance.relationshipsSpecificRelationshipSnapshot(body).then((data:any) => {
+apiInstance.relationshipsSpecificRelationshipSnapshot(body).then((data: Relationship) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Relationship**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

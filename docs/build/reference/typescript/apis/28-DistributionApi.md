@@ -16,23 +16,21 @@ This will update a specific Distribution.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionApi(configuration);
 
-let body:.DistributionApiDistributionUpdateRequest = {
+const body: Pieces.DistributionUpdateRequest = {
     // Distribution (optional)
     distribution: ,
 };
 
-apiInstance.distributionUpdate(body).then((data:any) => {
+apiInstance.distributionUpdate(body).then((data: Distribution) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -44,10 +42,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Distribution**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -71,23 +65,21 @@ This will get a specific snapshot of a distribution.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionApi(configuration);
 
-let body:.DistributionApiDistributionsSpecificDistributionSnapshotRequest = {
+const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
     // string | This is the uuid of a specific distribution.
     distribution: distribution_example,
 };
 
-apiInstance.distributionsSpecificDistributionSnapshot(body).then((data:any) => {
+apiInstance.distributionsSpecificDistributionSnapshot(body).then((data: Distribution) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -99,10 +91,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Distribution**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

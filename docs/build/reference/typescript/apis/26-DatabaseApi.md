@@ -16,20 +16,16 @@ This is going to export your current database.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DatabaseApi(configuration);
 
-let body:any = {};
-
-apiInstance.databaseExport(body).then((data:any) => {
+apiInstance.databaseExport().then((data: ExportedDatabase) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 This endpoint does not need any parameter.
@@ -38,10 +34,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 **ExportedDatabase**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -65,23 +57,21 @@ This is going to take in a database, and merge it with the current database. Thi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DatabaseApi(configuration);
 
-let body:.DatabaseApiDatabaseImportRequest = {
+const body: Pieces.DatabaseImportRequest = {
     // ExportedDatabase |  (optional)
     exportedDatabase: ,
 };
 
-apiInstance.databaseImport(body).then((data:any) => {
+apiInstance.databaseImport(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -93,10 +83,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

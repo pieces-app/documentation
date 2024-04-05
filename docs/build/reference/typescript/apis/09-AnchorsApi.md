@@ -18,25 +18,23 @@ This will update both the asset and the anchor reference, that will remove a anc
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorsApi(configuration);
 
-let body:.AnchorsApiAnchorDisassociateAssetRequest = {
+const body: Pieces.AnchorDisassociateAssetRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.anchorDisassociateAsset(body).then((data:any) => {
+apiInstance.anchorDisassociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,25 +70,23 @@ This will create a anchor and attach it to a specific asset(s) This will also en
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorsApi(configuration);
 
-let body:.AnchorsApiAnchorsCreateNewAnchorRequest = {
+const body: Pieces.AnchorsCreateNewAnchorRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededAnchor (optional)
     seededAnchor: ,
 };
 
-apiInstance.anchorsCreateNewAnchor(body).then((data:any) => {
+apiInstance.anchorsCreateNewAnchor(body).then((data: Anchor) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -107,10 +99,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Anchor**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -134,23 +122,21 @@ This will delete a specific anchor!
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorsApi(configuration);
 
-let body:.AnchorsApiAnchorsDeleteSpecificAnchorRequest = {
+const body: Pieces.AnchorsDeleteSpecificAnchorRequest = {
     // string | This is the specific uuid of an anchor.
     anchor: anchor_example,
 };
 
-apiInstance.anchorsDeleteSpecificAnchor(body).then((data:any) => {
+apiInstance.anchorsDeleteSpecificAnchor(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -162,10 +148,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -189,23 +171,21 @@ This will get a snapshot of all your anchors.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorsApi(configuration);
 
-let body:.AnchorsApiAnchorsSnapshotRequest = {
+const body: Pieces.AnchorsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.anchorsSnapshot(body).then((data:any) => {
+apiInstance.anchorsSnapshot(body).then((data: Anchors) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -217,10 +197,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Anchors**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

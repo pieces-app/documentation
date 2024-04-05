@@ -17,25 +17,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
-let body:.ShareApiShareScoresIncrementRequest = {
+const body: Pieces.ShareScoresIncrementRequest = {
     // string | Share id
     share: share_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.shareScoresIncrement(body).then((data:any) => {
+apiInstance.shareScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ Get the snapshot of a specific share.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
-let body:.ShareApiShareSnapshotRequest = {
+const body: Pieces.ShareSnapshotRequest = {
     // string | Share id
     share: share_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.shareSnapshot(body).then((data:any) => {
+apiInstance.shareSnapshot(body).then((data: Share) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Share**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -132,25 +120,23 @@ This endpoint will accept a Share that the user wants to update, and will return
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
-let body:.ShareApiShareUpdateRequest = {
+const body: Pieces.ShareUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Share | This is the Share that needs to be updated. (optional)
     share: ,
 };
 
-apiInstance.shareUpdate(body).then((data:any) => {
+apiInstance.shareUpdate(body).then((data: Share) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -163,10 +149,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Share**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

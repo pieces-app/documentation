@@ -15,25 +15,23 @@ This will attempt to get all the gist availble and return them to the user as a 
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.GithubApi(configuration);
 
-let body:.GithubApiImportGithubGistsRequest = {
+const body: Pieces.ImportGithubGistsRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
     automatic: true,
     // SeededGithubGistsImport |  (optional)
     seededGithubGistsImport: ,
 };
 
-apiInstance.importGithubGists(body).then((data:any) => {
+apiInstance.importGithubGists(body).then((data: Seeds) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -46,10 +44,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Seeds**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

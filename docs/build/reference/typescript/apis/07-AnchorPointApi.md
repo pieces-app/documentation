@@ -17,25 +17,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
-let body:.AnchorPointApiAnchorPointScoresIncrementRequest = {
+const body: Pieces.AnchorPointScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor_point.
     anchorPoint: anchorPoint_example,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.anchorPointScoresIncrement(body).then((data:any) => {
+apiInstance.anchorPointScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -48,10 +46,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -75,25 +69,23 @@ This will get a snapshot of a single anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
-let body:.AnchorPointApiAnchorPointSpecificAnchorPointSnapshotRequest = {
+const body: Pieces.AnchorPointSpecificAnchorPointSnapshotRequest = {
     // string | This is the specific uuid of an anchor_point.
     anchorPoint: anchorPoint_example,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data:any) => {
+apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data: AnchorPoint) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -106,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AnchorPoint**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -133,25 +121,23 @@ This will update a specific anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
-let body:.AnchorPointApiAnchorPointUpdateRequest = {
+const body: Pieces.AnchorPointUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // AnchorPoint (optional)
     anchorPoint: ,
 };
 
-apiInstance.anchorPointUpdate(body).then((data:any) => {
+apiInstance.anchorPointUpdate(body).then((data: AnchorPoint) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -164,10 +150,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **AnchorPoint**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

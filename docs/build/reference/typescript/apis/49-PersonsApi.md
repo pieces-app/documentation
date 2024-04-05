@@ -18,25 +18,23 @@ This will update both the asset and the person reference, that will remove a per
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
-let body:.PersonsApiPersonDisassociateAssetRequest = {
+const body: Pieces.PersonDisassociateAssetRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.personDisassociateAsset(body).then((data:any) => {
+apiInstance.personDisassociateAsset(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -49,10 +47,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -76,25 +70,23 @@ This will create a new person.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
-let body:.PersonsApiPersonsCreateNewPersonRequest = {
+const body: Pieces.PersonsCreateNewPersonRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // SeededPerson (optional)
     seededPerson: ,
 };
 
-apiInstance.personsCreateNewPerson(body).then((data:any) => {
+apiInstance.personsCreateNewPerson(body).then((data: Person) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -107,10 +99,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Person**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -134,23 +122,21 @@ This will delete a specific person.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
-let body:.PersonsApiPersonsDeletePersonRequest = {
+const body: Pieces.PersonsDeletePersonRequest = {
     // string | This is a uuid that represents a person.
     person: person_example,
 };
 
-apiInstance.personsDeletePerson(body).then((data:any) => {
+apiInstance.personsDeletePerson(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -162,10 +148,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -189,23 +171,21 @@ This will get a snapshot of all of your people
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
-let body:.PersonsApiPersonsSnapshotRequest = {
+const body: Pieces.PersonsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.personsSnapshot(body).then((data:any) => {
+apiInstance.personsSnapshot(body).then((data: Persons) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -217,10 +197,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Persons**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

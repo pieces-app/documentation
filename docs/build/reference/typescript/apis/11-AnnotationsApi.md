@@ -17,23 +17,21 @@ This will create an annotation.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationsApi(configuration);
 
-let body:.AnnotationsApiAnnotationsCreateNewAnnotationRequest = {
+const body: Pieces.AnnotationsCreateNewAnnotationRequest = {
     // SeededAnnotation (optional)
     seededAnnotation: ,
 };
 
-apiInstance.annotationsCreateNewAnnotation(body).then((data:any) => {
+apiInstance.annotationsCreateNewAnnotation(body).then((data: Annotation) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -45,10 +43,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Annotation**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -72,23 +66,21 @@ this will delete a specific annotation
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationsApi(configuration);
 
-let body:.AnnotationsApiAnnotationsDeleteSpecificAnnotationRequest = {
+const body: Pieces.AnnotationsDeleteSpecificAnnotationRequest = {
     // string | This is a specific annotation uuid.
     annotation: annotation_example,
 };
 
-apiInstance.annotationsDeleteSpecificAnnotation(body).then((data:any) => {
+apiInstance.annotationsDeleteSpecificAnnotation(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -100,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -127,23 +115,21 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationsApi(configuration);
 
-let body:.AnnotationsApiAnnotationsSnapshotRequest = {
+const body: Pieces.AnnotationsSnapshotRequest = {
     // 'DESCRIPTION' | 'COMMENT' | 'COMMENTATION' | 'DOCUMENTATION' | 'SUMMARIZATION' | 'SUMMARY' | 'EXPLANATION' | 'GIT_COMMIT' | This is an AnnotationTypeEnum as a optional filter. (optional)
     annotationTypeFilter: annotationTypeFilter_example,
 };
 
-apiInstance.annotationsSnapshot(body).then((data:any) => {
+apiInstance.annotationsSnapshot(body).then((data: Annotations) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -155,10 +141,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Annotations**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

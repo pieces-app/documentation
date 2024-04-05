@@ -15,23 +15,21 @@ This one is to universaly send notifications from any member of the system
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.NotificationsApi(configuration);
 
-let body:.NotificationsApiSendLocalNotificationRequest = {
+const body: Pieces.SendLocalNotificationRequest = {
     // Notification (optional)
     notification: ,
 };
 
-apiInstance.sendLocalNotification(body).then((data:any) => {
+apiInstance.sendLocalNotification(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -43,10 +41,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 

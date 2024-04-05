@@ -29,25 +29,23 @@ This will associate a tag with a asset. This will do the same thing as the tag e
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetAssociateTagRequest = {
+const body: Pieces.AssetAssociateTagRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // string | tag id
     tag: tag_example,
 };
 
-apiInstance.assetAssociateTag(body).then((data:any) => {
+apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -60,10 +58,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -87,25 +81,23 @@ This will associate a website with a asset. This will do the same thing as the w
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetAssociateWebsiteRequest = {
+const body: Pieces.AssetAssociateWebsiteRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // string | website id
     website: website_example,
 };
 
-apiInstance.assetAssociateWebsite(body).then((data:any) => {
+apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -118,10 +110,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -145,25 +133,23 @@ This will associate a asset with a workstream summary. This will do the same thi
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetAssociateWorkstreamSummaryRequest = {
+const body: Pieces.AssetAssociateWorkstreamSummaryRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.assetAssociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -176,10 +162,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -203,25 +185,23 @@ This will enable us to dissassociate a tag from a asset. This will do the same t
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetDisassociateTagRequest = {
+const body: Pieces.AssetDisassociateTagRequest = {
     // string | tag id
     tag: tag_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.assetDisassociateTag(body).then((data:any) => {
+apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -234,10 +214,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -261,25 +237,23 @@ This will enable us to dissassociate a website from a asset. This will do the sa
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetDisassociateWebsiteRequest = {
+const body: Pieces.AssetDisassociateWebsiteRequest = {
     // string | website id
     website: website_example,
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
-apiInstance.assetDisassociateWebsite(body).then((data:any) => {
+apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -292,10 +266,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -319,25 +289,23 @@ This will enable us to disassociate an asset from a workstream summary. This wil
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetDisassociateWorkstreamSummaryRequest = {
+const body: Pieces.AssetDisassociateWorkstreamSummaryRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // string | This is a identifier that is used to identify a specific workstream_summary.
     workstreamSummary: workstreamSummary_example,
 };
 
-apiInstance.assetDisassociateWorkstreamSummary(body).then((data:any) => {
+apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -350,10 +318,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -377,25 +341,23 @@ Get the formats for a given asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetFormatsRequest = {
+const body: Pieces.AssetFormatsRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.assetFormats(body).then((data:any) => {
+apiInstance.assetFormats(body).then((data: Formats) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -408,10 +370,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Formats**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -434,25 +392,23 @@ This will update the classification of this asset to the proper classification.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetReclassifyRequest = {
+const body: Pieces.AssetReclassifyRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // AssetReclassification | This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. (optional)
     assetReclassification: ,
 };
 
-apiInstance.assetReclassify(body).then((data:any) => {
+apiInstance.assetReclassify(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -465,10 +421,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -491,25 +443,23 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetScoresIncrementRequest = {
+const body: Pieces.AssetScoresIncrementRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // SeededScoreIncrement (optional)
     seededScoreIncrement: ,
 };
 
-apiInstance.assetScoresIncrement(body).then((data:any) => {
+apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -522,10 +472,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -549,25 +495,23 @@ Get the snapshot of a specific asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetSnapshotRequest = {
+const body: Pieces.AssetSnapshotRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.assetSnapshot(body).then((data:any) => {
+apiInstance.assetSnapshot(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -580,10 +524,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -607,14 +547,13 @@ Get the snapshot of a specific asset. by passing over as well the user who is ge
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetSnapshotPostRequest = {
+const body: Pieces.AssetSnapshotPostRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -623,11 +562,10 @@ let body:.AssetApiAssetSnapshotPostRequest = {
     seededAccessor: ,
 };
 
-apiInstance.assetSnapshotPost(body).then((data:any) => {
+apiInstance.assetSnapshotPost(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -641,10 +579,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -667,25 +601,23 @@ This will get a specific asset\'s activity events
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetSpecificAssetActivitiesRequest = {
+const body: Pieces.AssetSpecificAssetActivitiesRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.assetSpecificAssetActivities(body).then((data:any) => {
+apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -698,10 +630,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Activities**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -725,25 +653,23 @@ This will get a specific asset\'s conversations
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetSpecificAssetConversationsRequest = {
+const body: Pieces.AssetSpecificAssetConversationsRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
 };
 
-apiInstance.assetSpecificAssetConversations(body).then((data:any) => {
+apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -756,10 +682,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Conversations**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -783,25 +705,23 @@ This will return a export version of your asset.
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetSpecificAssetExportRequest = {
+const body: Pieces.AssetSpecificAssetExportRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
     asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
     // 'HTML' | 'MD' | This specifies the type of export the user wants.
     exportType: exportType_example,
 };
 
-apiInstance.assetSpecificAssetExport(body).then((data:any) => {
+apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -814,10 +734,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **ExportedAsset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
@@ -841,25 +757,23 @@ This endpoint will accept an Asset that the user wants to update, and will retur
 ### Example
 
 ```typescript
-import * as Pieces from '@pieces.app/pieces-os-client'
+import * as Pieces from @pieces.app/pieces-os-client
 
-const configuration = Pieces.Configuration({
-    basePath: 'localhost:1000'
-});
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
-let body:.AssetApiAssetUpdateRequest = {
+const body: Pieces.AssetUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     transferables: true,
     // Asset | This is the updated Asset that needs to be updated in our db. (optional)
     asset: ,
 };
 
-apiInstance.assetUpdate(body).then((data:any) => {
+apiInstance.assetUpdate(body).then((data: Asset) => {
     console.log('API called successfully. Returned data: ' + data);
-}).catch((error:any) => console.error(error));
+}).catch((error: unknown) => console.error(error));
 ```
-
 
 ### Parameters
 
@@ -872,10 +786,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **Asset**
-
-### Authorization
-
-No authorization required
 
 ### HTTP request headers
 
