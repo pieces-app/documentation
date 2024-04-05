@@ -253,18 +253,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🔍 API Reference',
-      items: [
-        {
-          type: 'doc',
-          id: 'build/reference/index',
-          label: 'Overview',
-        },
-        ...activeSDK.map(sdk => ({
+      items: activeSDK.map(sdk => ({
           type: 'doc' as const,
           id: `build/reference/${sdk.toLowerCase()}/index`,
           label: `${sdk} SDK`
         }))
-      ]
     },
     {
       type: 'doc',
@@ -282,7 +275,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'ref',
       id: 'build/index',
-      label: '← Go Back',
+      label: '← Back to Build',
     },
     {
       type: 'doc',
@@ -305,29 +298,6 @@ const sidebars: SidebarsConfig = {
       label: 'Streamlit',
     }
   ],
-
-  // referenceSidebar: [
-  //   {
-  //     type: 'ref',
-  //     id: 'build/index',
-  //     label: '← Go Back',
-  //   },
-  //   {
-  //     type: 'doc',
-  //     id: 'build/reference/index',
-  //     label: 'Overview',
-  //   },
-  //   {
-  //     type: 'category',
-  //     label: 'Languages',
-  //     collapsed: false,
-  //     items: activeSDK.map(sdk => ({
-  //       type: 'doc' as const,
-  //       id: `build/reference/${sdk.toLowerCase()}/index`,
-  //       label: `${sdk} API`
-  //     }))
-  //   },
-  // ],
 
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars

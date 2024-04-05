@@ -21,8 +21,8 @@ const baseSidebarItems: {
 } = [
   {
     type: 'ref',
-    id: 'build/reference/index',
-    label: '← Go Back',
+    id: 'build/index',
+    label: '← Back to Build',
   },
   {
     type: 'doc',
