@@ -1,5 +1,5 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
-import {generatedSDKSidebars, activeSDK} from './src/lib/activeSDK';
+import {generatedSDKSidebars, activeSDKs} from './src/lib/activeSDK';
 
 const sidebars: SidebarsConfig = {
   docsSidebar: [
@@ -253,7 +253,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: '🔍 API Reference',
-      items: activeSDK.map(sdk => ({
+      items: activeSDKs.map(sdk => ({
           type: 'doc' as const,
           id: `build/reference/${sdk.toLowerCase()}/index`,
           label: `${sdk} SDK`

@@ -15,7 +15,7 @@ def remove_md_links(text):
 
 
 def fix_h1_headers(text):
-    pattern = r'# pieces_os_client\.(\w+?)Api'
+    pattern = r'# (\w+?)Api'
     replacement = r'# \1 API'
     result = re.sub(pattern, replacement, text)
     return result
@@ -45,6 +45,13 @@ def fix_str_links(text):
 def fix_key_string_types(text):
     pattern = '(\{)\s*(\[key: string\]:)\s*(.*?;)\s*(\})'
     replacement = r'\\\1 \2 \3 \\\4'
+    result = re.sub(pattern, replacement, text)
+    return result
+
+
+def fix_arrow_brackets(text):
+    pattern = r'<(.*?)>'
+    replacement = r'\\<\1\\>'
     result = re.sub(pattern, replacement, text)
     return result
 
@@ -119,7 +126,7 @@ def organize_markdown_files_in_directory(source_directory):
     for file_path in file_paths:
         filename = os.path.basename(file_path)
         # Determine the target directory based on the filename
-        if "Api" in filename:
+        if filename.endswith("Api.md"):
             target_dir = "apis"
         else:
             target_dir = "models"
@@ -130,12 +137,12 @@ def organize_markdown_files_in_directory(source_directory):
 
         # Transform the content
         transformed_content = transform_links(content, target_dir)
-        transformed_content = remove_md_links(content)
+        transformed_content = remove_md_links(transformed_content)
         transformed_content = fix_h1_headers(transformed_content)
         transformed_content = fix_h2_headers(transformed_content)
         transformed_content = fix_variables(transformed_content)
-        # transformed_content = fix_str_links(transformed_content)
         transformed_content = fix_key_string_types(transformed_content)
+        transformed_content = fix_arrow_brackets(transformed_content)
         transformed_content = remove_readme_links(transformed_content)
 
         # Write the transformed content back to the file
