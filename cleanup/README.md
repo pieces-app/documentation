@@ -1,6 +1,6 @@
 # Cleanup Documentation Project
 
-Welcome to the Cleanup Documentation Project! This project is dedicated to organizing, cleaning, and transforming markdown documentation files for various programming languages, including Kotlin, Dart, and Python. Our goal is to ensure that the documentation is more readable, accessible, and user-friendly.
+Welcome to the Cleanup Documentation Project! This project is dedicated to organizing, cleaning, and transforming markdown documentation files for various programming languages, including TypeScript, Python, Dart, and Kotlin. Our goal is to ensure that the documentation is more readable, accessible, and user-friendly.
 
 ## Overview
 
@@ -17,15 +17,15 @@ The Cleanup Documentation Project consists of Python scripts designed to automat
 
 ## Directory Structure
 
-The project is organized into separate directories for each programming language (Kotlin, Dart, and Python), each containing a Python script (`kotlin.py`, `dart.py`, `python.py`) responsible for cleaning up the markdown documentation specific to that language.
+The project is organized into separate directories for each programming language (TypeScript, Python, Dart, and Kotlin), each containing a Python script (`typescript.py`, `python.py`, `dart.py`, `kotlin.py`) responsible for cleaning up the markdown documentation specific to that language.
 
 ```
 cleanup/
-│
 ├── kotlin.py
 ├── dart.py
 ├── python.py
-└── README.md
+├── README.md
+└── typescript.py
 ```
 
 ## Usage
@@ -34,13 +34,13 @@ To use the scripts effectively, follow these steps:
 
 1. Generate new documentation.
 2. Paste the generated documentation into the `/docs/build/reference` directory within the Cleanup Documentation Project structure.
-3. Ensure that the name of the new docs folder corresponds to the language and is suffixed with `_raw` (e.g., `kotlin_raw`, `python_raw`, etc.).
+3. Ensure that the name of the new docs folder corresponds to the language and is suffixed with `_raw` (e.g., `typescript_raw`, `python_raw`, etc.).
 4. Navigate to the `cleanup` directory.
 5. Run the respective Python script to update the documentation. For example, to clean up Kotlin documentation:
 
 ```bash
 cd /path/to/cleanup
-python kotlin.py
+python typescript.py
 ```
 
 Ensure you have Python installed on your system and that you have read and write permissions for the directories involved.

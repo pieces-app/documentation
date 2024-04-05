@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of FlattenedPreview from a JSON string
 flattened_preview_instance = FlattenedPreview.from_json(json)
 # print the JSON string representation of the object
-print FlattenedPreview.to_json()
+print(FlattenedPreview.to_json())
 
 # convert the object into a dict
 flattened_preview_dict = flattened_preview_instance.to_dict()

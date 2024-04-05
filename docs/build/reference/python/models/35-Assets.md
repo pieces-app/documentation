@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Assets from a JSON string
 assets_instance = Assets.from_json(json)
 # print the JSON string representation of the object
-print Assets.to_json()
+print(Assets.to_json())
 
 # convert the object into a dict
 assets_dict = assets_instance.to_dict()

@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of Auth0Identity from a JSON string
 auth0_identity_instance = Auth0Identity.from_json(json)
 # print the JSON string representation of the object
-print Auth0Identity.to_json()
+print(Auth0Identity.to_json())
 
 # convert the object into a dict
 auth0_identity_dict = auth0_identity_instance.to_dict()

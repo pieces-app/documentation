@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of AnchorPoint from a JSON string
 anchor_point_instance = AnchorPoint.from_json(json)
 # print the JSON string representation of the object
-print AnchorPoint.to_json()
+print(AnchorPoint.to_json())
 
 # convert the object into a dict
 anchor_point_dict = anchor_point_instance.to_dict()

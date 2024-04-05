@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 ## Example
 
@@ -29,7 +30,7 @@ json = "{}"
 # create an instance of FlattenedAnchor from a JSON string
 flattened_anchor_instance = FlattenedAnchor.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnchor.to_json()
+print(FlattenedAnchor.to_json())
 
 # convert the object into a dict
 flattened_anchor_dict = flattened_anchor_instance.to_dict()

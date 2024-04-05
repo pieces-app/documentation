@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of Auth0UserAllocationMetadata from a JSON string
 auth0_user_allocation_metadata_instance = Auth0UserAllocationMetadata.from_json(json)
 # print the JSON string representation of the object
-print Auth0UserAllocationMetadata.to_json()
+print(Auth0UserAllocationMetadata.to_json())
 
 # convert the object into a dict
 auth0_user_allocation_metadata_dict = auth0_user_allocation_metadata_instance.to_dict()

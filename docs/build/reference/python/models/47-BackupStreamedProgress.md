@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of BackupStreamedProgress from a JSON string
 backup_streamed_progress_instance = BackupStreamedProgress.from_json(json)
 # print the JSON string representation of the object
-print BackupStreamedProgress.to_json()
+print(BackupStreamedProgress.to_json())
 
 # convert the object into a dict
 backup_streamed_progress_dict = backup_streamed_progress_instance.to_dict()

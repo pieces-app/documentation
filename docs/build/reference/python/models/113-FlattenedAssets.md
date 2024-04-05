@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of FlattenedAssets from a JSON string
 flattened_assets_instance = FlattenedAssets.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAssets.to_json()
+print(FlattenedAssets.to_json())
 
 # convert the object into a dict
 flattened_assets_dict = flattened_assets_instance.to_dict()

@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of AssetReclassification from a JSON string
 asset_reclassification_instance = AssetReclassification.from_json(json)
 # print the JSON string representation of the object
-print AssetReclassification.to_json()
+print(AssetReclassification.to_json())
 
 # convert the object into a dict
 asset_reclassification_dict = asset_reclassification_instance.to_dict()

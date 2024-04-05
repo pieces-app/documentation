@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Auth0OpenAIUserMetadata from a JSON string
 auth0_open_ai_user_metadata_instance = Auth0OpenAIUserMetadata.from_json(json)
 # print the JSON string representation of the object
-print Auth0OpenAIUserMetadata.to_json()
+print(Auth0OpenAIUserMetadata.to_json())
 
 # convert the object into a dict
 auth0_open_ai_user_metadata_dict = auth0_open_ai_user_metadata_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of Applications from a JSON string
 applications_instance = Applications.from_json(json)
 # print the JSON string representation of the object
-print Applications.to_json()
+print(Applications.to_json())
 
 # convert the object into a dict
 applications_dict = applications_instance.to_dict()

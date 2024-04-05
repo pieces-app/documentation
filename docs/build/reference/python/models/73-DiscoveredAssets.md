@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of DiscoveredAssets from a JSON string
 discovered_assets_instance = DiscoveredAssets.from_json(json)
 # print the JSON string representation of the object
-print DiscoveredAssets.to_json()
+print(DiscoveredAssets.to_json())
 
 # convert the object into a dict
 discovered_assets_dict = discovered_assets_instance.to_dict()

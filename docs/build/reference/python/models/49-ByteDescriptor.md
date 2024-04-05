@@ -20,7 +20,7 @@ json = "{}"
 # create an instance of ByteDescriptor from a JSON string
 byte_descriptor_instance = ByteDescriptor.from_json(json)
 # print the JSON string representation of the object
-print ByteDescriptor.to_json()
+print(ByteDescriptor.to_json())
 
 # convert the object into a dict
 byte_descriptor_dict = byte_descriptor_instance.to_dict()

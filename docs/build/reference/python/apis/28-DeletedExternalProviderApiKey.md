@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of DeletedExternalProviderApiKey from a JSON string
 deleted_external_provider_api_key_instance = DeletedExternalProviderApiKey.from_json(json)
 # print the JSON string representation of the object
-print DeletedExternalProviderApiKey.to_json()
+print(DeletedExternalProviderApiKey.to_json())
 
 # convert the object into a dict
 deleted_external_provider_api_key_dict = deleted_external_provider_api_key_instance.to_dict()

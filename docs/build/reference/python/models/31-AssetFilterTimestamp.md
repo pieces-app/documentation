@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of AssetFilterTimestamp from a JSON string
 asset_filter_timestamp_instance = AssetFilterTimestamp.from_json(json)
 # print the JSON string representation of the object
-print AssetFilterTimestamp.to_json()
+print(AssetFilterTimestamp.to_json())
 
 # convert the object into a dict
 asset_filter_timestamp_dict = asset_filter_timestamp_instance.to_dict()

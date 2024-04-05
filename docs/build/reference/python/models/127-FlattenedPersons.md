@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of FlattenedPersons from a JSON string
 flattened_persons_instance = FlattenedPersons.from_json(json)
 # print the JSON string representation of the object
-print FlattenedPersons.to_json()
+print(FlattenedPersons.to_json())
 
 # convert the object into a dict
 flattened_persons_dict = flattened_persons_instance.to_dict()

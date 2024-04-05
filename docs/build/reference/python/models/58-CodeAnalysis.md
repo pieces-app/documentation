@@ -28,7 +28,7 @@ json = "{}"
 # create an instance of CodeAnalysis from a JSON string
 code_analysis_instance = CodeAnalysis.from_json(json)
 # print the JSON string representation of the object
-print CodeAnalysis.to_json()
+print(CodeAnalysis.to_json())
 
 # convert the object into a dict
 code_analysis_dict = code_analysis_instance.to_dict()

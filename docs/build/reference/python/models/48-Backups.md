@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Backups from a JSON string
 backups_instance = Backups.from_json(json)
 # print the JSON string representation of the object
-print Backups.to_json()
+print(Backups.to_json())
 
 # convert the object into a dict
 backups_dict = backups_instance.to_dict()

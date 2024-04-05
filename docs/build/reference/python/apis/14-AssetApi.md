@@ -6,8 +6,10 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**asset_associate_tag**](AssetApi#asset_associate_tag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
 [**asset_associate_website**](AssetApi#asset_associate_website) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
+[**asset_associate_workstream_summary**](AssetApi#asset_associate_workstream_summary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
 [**asset_disassociate_tag**](AssetApi#asset_disassociate_tag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 [**asset_disassociate_website**](AssetApi#asset_disassociate_website) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
+[**asset_disassociate_workstream_summary**](AssetApi#asset_disassociate_workstream_summary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
 [**asset_formats**](AssetApi#asset_formats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
 [**asset_reclassify**](AssetApi#asset_reclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
 [**asset_scores_increment**](AssetApi#asset_scores_increment) | **POST** /asset/\{asset\}/scores/increment | &#39;/asset/\{asset\}/scores/increment&#39; [POST]
@@ -24,7 +26,7 @@ Method | HTTP request | Description
 
 /asset/\{asset\}/tags/associate/\{tag\} [POST]
 
-This will associate a tag with a asset. This will do the same thing as the tag equivilant.
+This will associate a tag with a asset. This will do the same thing as the tag equivalent.
 
 ### Example
 
@@ -92,7 +94,7 @@ No authorization required
 
 /asset/\{asset\}/websites/associate/\{website\} [POST]
 
-This will associate a website with a asset. This will do the same thing as the website equivilant.
+This will associate a website with a asset. This will do the same thing as the website equivalent.
 
 ### Example
 
@@ -155,12 +157,80 @@ No authorization required
 
 
 
+## **asset_associate_workstream_summary**
+> asset_associate_workstream_summary(asset, workstream_summary)
+
+/asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+
+This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.AssetApi(api_client)
+    asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+        api_instance.asset_associate_workstream_summary(asset, workstream_summary)
+    except Exception as e:
+        print("Exception when calling AssetApi->asset_associate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
 ## **asset_disassociate_tag**
 > asset_disassociate_tag(tag, asset)
 
 /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 
-This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivilant.
+This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivalent.
 
 ### Example
 
@@ -228,7 +298,7 @@ No authorization required
 
 /asset/\{asset\}/websites/disassociate/\{website\} [POST]
 
-This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivilant.
+This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivalent.
 
 ### Example
 
@@ -268,6 +338,74 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **str**| website id | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **asset_disassociate_workstream_summary**
+> asset_disassociate_workstream_summary(asset, workstream_summary)
+
+/asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+
+This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.AssetApi(api_client)
+    asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+        api_instance.asset_disassociate_workstream_summary(asset, workstream_summary)
+    except Exception as e:
+        print("Exception when calling AssetApi->asset_disassociate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
 ### Return type
 

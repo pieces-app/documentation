@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of FileMetadata from a JSON string
 file_metadata_instance = FileMetadata.from_json(json)
 # print the JSON string representation of the object
-print FileMetadata.to_json()
+print(FileMetadata.to_json())
 
 # convert the object into a dict
 file_metadata_dict = file_metadata_instance.to_dict()

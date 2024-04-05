@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of ConversationSummarizeInput from a JSON string
 conversation_summarize_input_instance = ConversationSummarizeInput.from_json(json)
 # print the JSON string representation of the object
-print ConversationSummarizeInput.to_json()
+print(ConversationSummarizeInput.to_json())
 
 # convert the object into a dict
 conversation_summarize_input_dict = conversation_summarize_input_instance.to_dict()

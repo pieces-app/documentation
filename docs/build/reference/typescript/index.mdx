@@ -1,0 +1,57 @@
+---
+title: TypeScript SDK
+description: This getting started guide will help you get started with the Pieces for Developers TypeScript SDK.
+---
+
+import {MiniSpacer} from "/src/components/Spacers";
+import GridFlexRow from '/src/components/GridFlexRow'
+import CTAButton from '/src/components/CTAButton'
+
+## Introduction
+The Pieces SDK is a powerful code engine package designed for writing applications on top of [Pieces OS](/installation-getting-started/what-am-i-installing). It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) running as a backend service.
+
+## Installation
+To get started with the Pieces SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+
+    <GridFlexRow type={'start'}>
+      <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+      />
+    </GridFlexRow>
+
+2. **Install the NPM Package**: Use npm to install the Pieces SDK package:
+    ```shell
+    npm install @pieces.app/pieces-os-client
+    ```
+
+## Getting Started
+
+
+## Next Steps
+
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our TypeScript SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+
+Click the `Next →` button below to dive deeper into the TypeScript SDK documentation.

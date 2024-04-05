@@ -17,7 +17,7 @@ json = "{}"
 # create an instance of Embeddings from a JSON string
 embeddings_instance = Embeddings.from_json(json)
 # print the JSON string representation of the object
-print Embeddings.to_json()
+print(Embeddings.to_json())
 
 # convert the object into a dict
 embeddings_dict = embeddings_instance.to_dict()

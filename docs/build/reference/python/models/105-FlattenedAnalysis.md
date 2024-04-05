@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of FlattenedAnalysis from a JSON string
 flattened_analysis_instance = FlattenedAnalysis.from_json(json)
 # print the JSON string representation of the object
-print FlattenedAnalysis.to_json()
+print(FlattenedAnalysis.to_json())
 
 # convert the object into a dict
 flattened_analysis_dict = flattened_analysis_instance.to_dict()

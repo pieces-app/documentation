@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of Analysis from a JSON string
 analysis_instance = Analysis.from_json(json)
 # print the JSON string representation of the object
-print Analysis.to_json()
+print(Analysis.to_json())
 
 # convert the object into a dict
 analysis_dict = analysis_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of Auth0Redirects from a JSON string
 auth0_redirects_instance = Auth0Redirects.from_json(json)
 # print the JSON string representation of the object
-print Auth0Redirects.to_json()
+print(Auth0Redirects.to_json())
 
 # convert the object into a dict
 auth0_redirects_dict = auth0_redirects_instance.to_dict()

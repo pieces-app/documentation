@@ -36,7 +36,7 @@ json = "{}"
 # create an instance of FlattenedFormat from a JSON string
 flattened_format_instance = FlattenedFormat.from_json(json)
 # print the JSON string representation of the object
-print FlattenedFormat.to_json()
+print(FlattenedFormat.to_json())
 
 # convert the object into a dict
 flattened_format_dict = flattened_format_instance.to_dict()

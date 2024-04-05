@@ -26,7 +26,7 @@ json = "{}"
 # create an instance of AssetFilter from a JSON string
 asset_filter_instance = AssetFilter.from_json(json)
 # print the JSON string representation of the object
-print AssetFilter.to_json()
+print(AssetFilter.to_json())
 
 # convert the object into a dict
 asset_filter_dict = asset_filter_instance.to_dict()

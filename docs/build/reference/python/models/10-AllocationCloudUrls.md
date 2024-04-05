@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of AllocationCloudUrls from a JSON string
 allocation_cloud_urls_instance = AllocationCloudUrls.from_json(json)
 # print the JSON string representation of the object
-print AllocationCloudUrls.to_json()
+print(AllocationCloudUrls.to_json())
 
 # convert the object into a dict
 allocation_cloud_urls_dict = allocation_cloud_urls_instance.to_dict()

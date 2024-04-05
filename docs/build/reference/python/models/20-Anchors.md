@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of Anchors from a JSON string
 anchors_instance = Anchors.from_json(json)
 # print the JSON string representation of the object
-print Anchors.to_json()
+print(Anchors.to_json())
 
 # convert the object into a dict
 anchors_dict = anchors_instance.to_dict()

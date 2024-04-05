@@ -27,7 +27,7 @@ json = "{}"
 # create an instance of ExternalProvider from a JSON string
 external_provider_instance = ExternalProvider.from_json(json)
 # print the JSON string representation of the object
-print ExternalProvider.to_json()
+print(ExternalProvider.to_json())
 
 # convert the object into a dict
 external_provider_dict = external_provider_instance.to_dict()

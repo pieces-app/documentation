@@ -22,7 +22,7 @@ json = "{}"
 # create an instance of Context from a JSON string
 context_instance = Context.from_json(json)
 # print the JSON string representation of the object
-print Context.to_json()
+print(Context.to_json())
 
 # convert the object into a dict
 context_dict = context_instance.to_dict()

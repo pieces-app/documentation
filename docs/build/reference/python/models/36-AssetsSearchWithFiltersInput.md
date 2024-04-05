@@ -21,7 +21,7 @@ json = "{}"
 # create an instance of AssetsSearchWithFiltersInput from a JSON string
 assets_search_with_filters_input_instance = AssetsSearchWithFiltersInput.from_json(json)
 # print the JSON string representation of the object
-print AssetsSearchWithFiltersInput.to_json()
+print(AssetsSearchWithFiltersInput.to_json())
 
 # convert the object into a dict
 assets_search_with_filters_input_dict = assets_search_with_filters_input_instance.to_dict()

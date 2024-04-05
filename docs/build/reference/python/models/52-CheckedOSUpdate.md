@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of CheckedOSUpdate from a JSON string
 checked_os_update_instance = CheckedOSUpdate.from_json(json)
 # print the JSON string representation of the object
-print CheckedOSUpdate.to_json()
+print(CheckedOSUpdate.to_json())
 
 # convert the object into a dict
 checked_os_update_dict = checked_os_update_instance.to_dict()

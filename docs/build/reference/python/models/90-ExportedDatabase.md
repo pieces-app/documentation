@@ -31,7 +31,11 @@ Name | Type | Description | Notes
 **anchor_points** | **List[int]** |  | [optional] 
 **conversations** | **List[int]** |  | [optional] 
 **conversation_messages** | **List[int]** |  | [optional] 
+**workstream_events** | **List[int]** |  | [optional] 
+**ranges** | **List[int]** |  | [optional] 
+**workstream_summaries** | **List[int]** |  | [optional] 
 **message_values** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
+**workstream_event_values** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
 
 ## Example
 
@@ -43,7 +47,7 @@ json = "{}"
 # create an instance of ExportedDatabase from a JSON string
 exported_database_instance = ExportedDatabase.from_json(json)
 # print the JSON string representation of the object
-print ExportedDatabase.to_json()
+print(ExportedDatabase.to_json())
 
 # convert the object into a dict
 exported_database_dict = exported_database_instance.to_dict()

@@ -19,7 +19,7 @@ json = "{}"
 # create an instance of AvailableFormats from a JSON string
 available_formats_instance = AvailableFormats.from_json(json)
 # print the JSON string representation of the object
-print AvailableFormats.to_json()
+print(AvailableFormats.to_json())
 
 # convert the object into a dict
 available_formats_dict = available_formats_instance.to_dict()

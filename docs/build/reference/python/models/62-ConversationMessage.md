@@ -29,7 +29,7 @@ json = "{}"
 # create an instance of ConversationMessage from a JSON string
 conversation_message_instance = ConversationMessage.from_json(json)
 # print the JSON string representation of the object
-print ConversationMessage.to_json()
+print(ConversationMessage.to_json())
 
 # convert the object into a dict
 conversation_message_dict = conversation_message_instance.to_dict()

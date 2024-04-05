@@ -1,0 +1,151 @@
+# Distributions API
+
+All URIs are relative to *http://localhost:1000*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
+[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
+[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions | /distributions [GET]
+
+
+## **distributionsCreateNewDistribution** Deprecated: 
+> Distribution distributionsCreateNewDistribution()
+
+This will create a new distribution.
+
+### Example
+
+```typescript
+import * as Pieces from @pieces.app/pieces-os-client
+
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
+const apiInstance = new Pieces.DistributionsApi(configuration);
+
+const body: Pieces.DistributionsCreateNewDistributionRequest = {
+    // SeededDistribution |  (optional)
+    seededDistribution: ,
+};
+
+apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) => {
+    console.log('API called successfully. Returned data: ' + data);
+}).catch((error: unknown) => console.error(error));
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **seededDistribution** | **SeededDistribution**|  |
+
+
+### Return type
+
+**Distribution**
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **distributionsDeleteSpecificDistribution** Deprecated: 
+> distributionsDeleteSpecificDistribution()
+
+This will delete a specific distribution.
+
+### Example
+
+```typescript
+import * as Pieces from @pieces.app/pieces-os-client
+
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
+const apiInstance = new Pieces.DistributionsApi(configuration);
+
+const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
+    // string | This is the uuid of a specific distribution.
+    distribution: distribution_example,
+};
+
+apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empty response body)) => {
+    console.log('API called successfully. Returned data: ' + data);
+}).catch((error: unknown) => console.error(error));
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
+
+
+### Return type
+
+void (empty response body)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **distributionsSnapshot** Deprecated: 
+> Distributions distributionsSnapshot()
+
+This will get a specific snapshot of all our distributions.
+
+### Example
+
+```typescript
+import * as Pieces from @pieces.app/pieces-os-client
+
+// TODO: Write logic for os here
+const configuration = Pieces.Configuration();
+const apiInstance = new Pieces.DistributionsApi(configuration);
+
+apiInstance.distributionsSnapshot().then((data: Distributions) => {
+    console.log('API called successfully. Returned data: ' + data);
+}).catch((error: unknown) => console.error(error));
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+
+### Return type
+
+**Distributions**
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+

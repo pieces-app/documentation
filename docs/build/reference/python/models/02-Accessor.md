@@ -23,7 +23,7 @@ json = "{}"
 # create an instance of Accessor from a JSON string
 accessor_instance = Accessor.from_json(json)
 # print the JSON string representation of the object
-print Accessor.to_json()
+print(Accessor.to_json())
 
 # convert the object into a dict
 accessor_dict = accessor_instance.to_dict()

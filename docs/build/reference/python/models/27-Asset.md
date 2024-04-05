@@ -34,6 +34,7 @@ Name | Type | Description | Notes
 **hints** | [**Hints**](Hints) |  | [optional] 
 **anchors** | [**Anchors**](Anchors) |  | [optional] 
 **conversations** | [**Conversations**](Conversations) |  | [optional] 
+**summaries** | [**WorkstreamSummaries**](WorkstreamSummaries) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a &#39;demo&#39; snippet | [optional] 
 
 ## Example
@@ -46,7 +47,7 @@ json = "{}"
 # create an instance of Asset from a JSON string
 asset_instance = Asset.from_json(json)
 # print the JSON string representation of the object
-print Asset.to_json()
+print(Asset.to_json())
 
 # convert the object into a dict
 asset_dict = asset_instance.to_dict()

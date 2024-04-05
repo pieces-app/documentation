@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
+**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] 
 
 ## Example
 
@@ -19,7 +20,7 @@ json = "{}"
 # create an instance of ConversationGrounding from a JSON string
 conversation_grounding_instance = ConversationGrounding.from_json(json)
 # print the JSON string representation of the object
-print ConversationGrounding.to_json()
+print(ConversationGrounding.to_json())
 
 # convert the object into a dict
 conversation_grounding_dict = conversation_grounding_instance.to_dict()

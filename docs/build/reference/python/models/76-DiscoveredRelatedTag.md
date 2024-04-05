@@ -18,7 +18,7 @@ json = "{}"
 # create an instance of DiscoveredRelatedTag from a JSON string
 discovered_related_tag_instance = DiscoveredRelatedTag.from_json(json)
 # print the JSON string representation of the object
-print DiscoveredRelatedTag.to_json()
+print(DiscoveredRelatedTag.to_json())
 
 # convert the object into a dict
 discovered_related_tag_dict = discovered_related_tag_instance.to_dict()

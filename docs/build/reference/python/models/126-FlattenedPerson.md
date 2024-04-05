@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **models** | [**Dict[str, PersonModel]**](PersonModel) | This is a Map&lt;String, PersonModel&gt;, where the the key is an asset id. | [optional] 
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 ## Example
 
@@ -32,7 +33,7 @@ json = "{}"
 # create an instance of FlattenedPerson from a JSON string
 flattened_person_instance = FlattenedPerson.from_json(json)
 # print the JSON string representation of the object
-print FlattenedPerson.to_json()
+print(FlattenedPerson.to_json())
 
 # convert the object into a dict
 flattened_person_dict = flattened_person_instance.to_dict()

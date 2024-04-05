@@ -6,10 +6,14 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**conversation_associate_anchor**](ConversationApi#conversation_associate_anchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
 [**conversation_associate_asset**](ConversationApi#conversation_associate_asset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversation_associate_grounding_temporal_range_workstream**](ConversationApi#conversation_associate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
 [**conversation_associate_website**](ConversationApi#conversation_associate_website) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversation_associate_workstream_summary**](ConversationApi#conversation_associate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
 [**conversation_disassociate_anchor**](ConversationApi#conversation_disassociate_anchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
 [**conversation_disassociate_asset**](ConversationApi#conversation_disassociate_asset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversation_disassociate_grounding_temporal_range_workstream**](ConversationApi#conversation_disassociate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
 [**conversation_disassociate_website**](ConversationApi#conversation_disassociate_website) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversation_disassociate_workstream_summary**](ConversationApi#conversation_disassociate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
 [**conversation_get_specific_conversation**](ConversationApi#conversation_get_specific_conversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
 [**conversation_grounding_messages_associate_message**](ConversationApi#conversation_grounding_messages_associate_message) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
 [**conversation_grounding_messages_disassociate_message**](ConversationApi#conversation_grounding_messages_disassociate_message) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
@@ -156,6 +160,74 @@ No authorization required
 
 
 
+## **conversation_associate_grounding_temporal_range_workstream**
+> conversation_associate_grounding_temporal_range_workstream(conversation, range)
+
+/conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
+
+This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.ConversationApi(api_client)
+    conversation = 'conversation_example' # str | This is the uuid of a conversation.
+    range = 'range_example' # str | This is a identifier that is used to identify a specific range.
+
+    try:
+        # /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
+        api_instance.conversation_associate_grounding_temporal_range_workstream(conversation, range)
+    except Exception as e:
+        print("Exception when calling ConversationApi->conversation_associate_grounding_temporal_range_workstream: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **conversation** | **str**| This is the uuid of a conversation. | 
+ **range** | **str**| This is a identifier that is used to identify a specific range. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
 ## **conversation_associate_website**
 > conversation_associate_website(conversation, website)
 
@@ -201,6 +273,74 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **str**| This is the uuid of a conversation. | 
  **website** | **str**| website id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **conversation_associate_workstream_summary**
+> conversation_associate_workstream_summary(conversation, workstream_summary)
+
+/conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+
+This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.ConversationApi(api_client)
+    conversation = 'conversation_example' # str | This is the uuid of a conversation.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+        api_instance.conversation_associate_workstream_summary(conversation, workstream_summary)
+    except Exception as e:
+        print("Exception when calling ConversationApi->conversation_associate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **conversation** | **str**| This is the uuid of a conversation. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
 ### Return type
 
@@ -360,6 +500,74 @@ No authorization required
 
 
 
+## **conversation_disassociate_grounding_temporal_range_workstream**
+> conversation_disassociate_grounding_temporal_range_workstream(conversation, range)
+
+/conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
+
+This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.ConversationApi(api_client)
+    conversation = 'conversation_example' # str | This is the uuid of a conversation.
+    range = 'range_example' # str | This is a identifier that is used to identify a specific range.
+
+    try:
+        # /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
+        api_instance.conversation_disassociate_grounding_temporal_range_workstream(conversation, range)
+    except Exception as e:
+        print("Exception when calling ConversationApi->conversation_disassociate_grounding_temporal_range_workstream: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **conversation** | **str**| This is the uuid of a conversation. | 
+ **range** | **str**| This is a identifier that is used to identify a specific range. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
 ## **conversation_disassociate_website**
 > conversation_disassociate_website(conversation, website)
 
@@ -405,6 +613,74 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **str**| This is the uuid of a conversation. | 
  **website** | **str**| website id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**204** | No Content |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **conversation_disassociate_workstream_summary**
+> conversation_disassociate_workstream_summary(conversation, workstream_summary)
+
+/conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+
+This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.ConversationApi(api_client)
+    conversation = 'conversation_example' # str | This is the uuid of a conversation.
+    workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
+
+    try:
+        # /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+        api_instance.conversation_disassociate_workstream_summary(conversation, workstream_summary)
+    except Exception as e:
+        print("Exception when calling ConversationApi->conversation_disassociate_workstream_summary: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **conversation** | **str**| This is the uuid of a conversation. | 
+ **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
 ### Return type
 
