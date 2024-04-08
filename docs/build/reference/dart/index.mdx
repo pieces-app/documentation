@@ -3,6 +3,8 @@ title: Dart SDK
 description: This getting started guide will help you get started with the Pieces for Developers Dart SDK.
 ---
 
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 import GridFlexRow from '/src/components/GridFlexRow'
 import CTAButton from '/src/components/CTAButton'
 
@@ -11,7 +13,7 @@ The Pieces SDK is a powerful code engine package designed for writing applicatio
 
 :::info
 
-The Pieces Dart SDK is not yet available on pub.dev. To use the SDK, you must clone the repository and add it as a dependency in your Dart project.
+The Pieces Dart SDK is not yet available on pub.dev. To use the SDK, you must use the [Pieces Dart SDK GitHub repository](https://github.com/pieces-app/pieces-os-client-sdk-for-dart) when adding the dependency to your project.
 
 :::
 
@@ -48,15 +50,42 @@ To get started with the Pieces SDK, follow these steps:
     </GridFlexRow>
 
 2. **Add the SDK dependency**: Add the SDK dependency to your Dart project by adding the following to your `pubspec.yaml` file:
-   ```dart
-   dependencies:
-     pieces_os_client:
-       path: /path/to/pieces_os_client
-   ```
+    <Tabs
+      defaultValue="github"
+      values={[
+        { label: 'GitHub', value: 'github', },
+        { label: 'Local', value: 'local', },
+      ]
+    }>
+      <TabItem value="github">
+        ```dart
+        dependencies:
+          pieces_os_client:
+            git: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
+        ```
+      </TabItem>
+      <TabItem value="local">
+        ```dart
+        dependencies:
+          pieces_os_client:
+            path: /path/to/pieces-os-client-sdk-for-dart
+        ```
+      </TabItem>
+    </Tabs>
 
 ## Getting Started
 
 We will create a Dart script to test the connection to the Pieces OS server.
+
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
 
 Create a `main.dart` file and add the following code:
 
@@ -79,8 +108,6 @@ Run the Dart script to see the output:
 ```shell
 dart main.dart
 ```
-
-**The output should appear in your terminal stating the version of Pieces OS that is installed on your machine.**
 
 ## Next Steps
 
