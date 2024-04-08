@@ -39,13 +39,18 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'extensions-plugins/jetbrains',
-          label: 'Jetbrains Plugin',
+          id: 'extensions-plugins/vscode',
+          label: 'VS Code Extension',
         },
         {
           type: 'doc',
-          id: 'extensions-plugins/vscode',
-          label: 'VS Code Extension',
+          id: 'extensions-plugins/jetbrains',
+          label: 'JetBrains Plugin',
+        },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/obsidian',
+          label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
@@ -56,11 +61,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/obsidian',
-          label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
