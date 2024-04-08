@@ -245,11 +245,11 @@ const sidebars: SidebarsConfig = {
       id: 'build/quick-start/index',
       label: '⚡️ Quickstart',
     },
-    {
-      type: 'doc',
-      id: 'build/tutorials/index',
-      label: '📚 Tutorials',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'build/tutorials/index',
+    //   label: '📚 Tutorials',
+    // },
     {
       type: 'category',
       label: '🔍 API Reference',
