@@ -31,32 +31,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
-  //   https://docusaurus.io/docs/next/api/plugins/@docusaurus/plugin-vercel-analytics
-  //   TODO: This plugin is currently in a canary release. We will update this to use the official plugin once it is released
-  //   [
-  //     'vercel-analytics',
-  //     {
-  //        debug: true,
-  //         mode: 'auto',
-  //     },
-  //   ],
-  //   TODO: Once the official plugin is released, we will remove this and use the official plugin
-    "@gracefullight/docusaurus-plugin-vercel-analytics",
-
-    /*
-      The following logic ensures that lunr search is only used for local development and preview deployments
-      The first condition is necessary for when you run `start` for the site locally
-      The second condition is necessary for when you run `build` & `serve` the site locally
-      The third condition is necessary for when you deploy a preview deployment on Vercel
-    */
-    // ...(process.env.NODE_ENV !== 'production' || (process.env.NODE_ENV === 'production' && !process.env.VERCEL_ENV) || process.env.VERCEL_ENV === 'preview'
-    //   ? [
-    //     require.resolve('docusaurus-lunr-search')
-    //   ] : []
-    // )
-  ],
-
   presets: [
     [
       'classic',
