@@ -25,11 +25,21 @@ Save, share, and ask questions about code you find online without leaving your c
 ## Supported Browsers
 
 <GridFlexRow type={'evenly'}>
-  <Image width={70} src="/assets/chrome_logo.png" />
-  <Image width={60} src="/assets/brave_logo.png" />
-  <Image width={70} src="/assets/opera_logo.png" />
-  <Image width={60} src="/assets/firefox_logo.png" />
-  <Image width={70} src="/assets/edge_logo.png" />
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={70} src="/assets/chrome_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={60} src="/assets/brave_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={70} src="/assets/opera_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.edge}>
+    <Image width={70} src="/assets/edge_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.firefox}>
+    <Image width={70} src="/assets/firefox_logo.png" />
+  </a>
 </GridFlexRow>
 
 ## Installing the Extension
@@ -63,62 +73,40 @@ In order to use any of our web extensions, you must have <a target="blank" href=
 
 <MiniSpacer />
 
-Once installed, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
+> Please use the Chromium web extension for Opera and Brave browsers.
 
-> Note: Please use the Chromium web extension for Opera and Brave browsers.
+Once installed, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
 
 ## Saving Snippets
 To save a snippet on the web, click the "Copy and Save" Pieces button below a code block. You can also use Pieces context menu actions to save a particular selection.
 
 - When you save code snippets with Pieces, they're stored locally in the Pieces desktop app.
-- When you save a snippet, Pieces also saves metadata such as the origin of the snippet, tags, a title, annotations, and more.
+- When you save a snippet, Pieces also saves metadata such as the origin url of the snippet, tags, a title, annotations, and more.
 
 To view and reuse your snippets, just open the Pieces desktop app or one of our other integrations and scroll through your snippets.
 
 ## Sharing Code
-
-[//]: # (TODO: Add a video showing the share functionality)
-
 When you click the "Share" button below a code block, Pieces generates a link that is specifically designed to share useful code with its context. Plus, it's automatically copied to your clipboard once it's generated.
 
 This means that instead of copying code and pasting it into a message, you can create a Pieces shareable link that shares the code and maintains formatting, syntax highlighting, and relevant tags. Your recipient will also get the title, description, related links, and other context about the snippet.
 
-## Pieces Copilot in the Pieces Web Extension
-By using the Pieces Copilot in the Pieces Web Extension, you can chat with the copilot about any code you find on the web. You can chat with the Pieces Copilot in the extension popover menu, but we like opening the Pieces Copilot in the side panel.
+## Pieces Copilot
+By using the [Pieces Copilot](/features/pieces-copilot) in the Pieces Web Extension, you can chat with the copilot about any code you find on the web. You can chat with the Pieces Copilot in the extension popover menu, but we like opening the Pieces Copilot in the side panel.
 
 You can chat with Pieces Copilot about any code block, generate new code, and ask other technical questions, similar to chatting with the copilot in the [Pieces Desktop App](/installation-getting-started/what-am-i-installing).
 
 ## Snippet Discovery
-When you click the Pieces icon to open the extension popover menu, you'll see all the snippets that the Pieces Web Extension has discovered on that webpage. From this menu, you can easily save any relevant snippets without scrolling back through long pages.
+Pieces Web Extension can automatically discover code snippets you come across on the web.
+
+Snippets discovered on a website are shown within the Discovered Snippets tab on the extension's home page. From there, you can scroll through all the discovered snippets on a site and save the most useful ones.
+
+## View Your Saved Snippets
+You can view your saved snippets in the extension. Simply go to the Saved Snippets tab on the extension's home page to see all your saved snippets.
+
+Click on any snippet to open its detailed view, where you can see the full snippet, along with other information captured from the snippet. You can also perform various actions on the snippet, such as generating shareable links, copying the snippet, and more.
 
 ### Recently Discovered Snippets
 From the extension's popover menu, you can view your Recently Discovered Snippets. This is a list of the last 100 snippets you've come across on the web, or the last 5 sites you've visited. From here, you can save a snippet without returning to that page. You can adjust the number of sites whose snippets Pieces will remember in the extension settings.
-
-## Troubleshooting the Pieces Buttons
-There are a few reasons why the Pieces buttons may not be appearing:
-
-1. **Pieces OS isn't running.**
-    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows and Linux). If it isn't there, please launch Pieces OS by double-clicking Pieces OS in your Applications folder.
-    - If you need to download and install Pieces OS, <a target="_blank" href="/installation-getting-started/what-am-i-installing">visit this link</a>.
-
-2. **You disabled the Pieces buttons on that website.**
-    - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the extension settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
-
-    ![Pieces Extension Settings](/assets/settings_for_chrome.png)
-
-3. **This website doesn't have detectable code.**
-    - The code on this site might be embedded in an iframe or rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
-
-### Whitelisted Websites
-We maintain a curated list of websites that are verified to work seamlessly with the Pieces buttons. Should you come across a site where the Pieces buttons are not automatically present, you have the option to manually activate them within the extension's settings.
-
-If you discover a website that supports our buttons effectively, please share this information with us via [our feedback form](https://getpieces.typeform.com/web-extension).
-
-:::info
-
-If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
-
-:::
 
 ## Disabling the Pieces Buttons
 If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the extension settings.
@@ -134,18 +122,19 @@ Hit the Settings icon in the top right and set your preferences.
 
 ![](/assets/theme_for_chrome.png)
 
-You can adjust the following Settings for the Pieces Web Extension:
-1. The placement of the Pieces buttons
-2. Toggle between dark and light buttons
-3. Decide if you'd like Pieces buttons to be enabled or disabled on a webpage by default
-4. Manage your website blacklist
-5. Adjust the minimum number of characters necessary to recognize a code block
-6. Adjust the functionality of the Copy & Save Button
-7. Set the number of recent websites for Pieces to display snippets in the History tab of the extension.
+You can adjust the following settings for the Pieces Web Extension:
+- Which Pieces Buttons are shown around snippets
+- The placement of the Pieces Buttons
+- Toggle between dark and light Pieces Buttons
+- Decide if you'd like Pieces Buttons to be enabled or disabled on a website by default
+- Manage your website blacklist
+- Adjust the minimum number of characters necessary to recognize a code block
+- Adjust the functionality of the Copy & Save Button
+- Set the number of recent websites for Pieces to display snippets in the History tab of the extension.
 
-## Side-panel Window
+[//]: # (## Side-panel Window)
 
-The Pieces Web extension utilizes the side-panel functionality of your browser to display your discovered snippets, snippet history, or Pieces Copilot chat. When you select "Ask Copilot", a side-panel will open with the snippet that you selected pre-populated. Pieces Copilot will give you more information about the snippet. From here, you can continue the conversation and ask more questions about this snippet, save it, or generate more snippets to assist you.
+[//]: # (The Pieces Web extension utilizes the side-panel functionality of your browser to display your discovered snippets, snippet history, or Pieces Copilot chat. When you select "Ask Copilot", a side-panel will open with the snippet that you selected pre-populated. Pieces Copilot will give you more information about the snippet. From here, you can continue the conversation and ask more questions about this snippet, save it, or generate more snippets to assist you.)
 
 ## Uninstalling the Pieces Web Extension
 
@@ -174,6 +163,32 @@ The Pieces Web extension utilizes the side-panel functionality of your browser t
     3. Select `Remove`
   </TabItem>
 </Tabs>
+
+## Troubleshooting the Pieces Buttons
+There are a few reasons why the Pieces buttons may not be displayed or working properly:
+
+1. **Pieces OS isn't running.**
+    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows and Linux). If it isn't there, please launch Pieces OS by double-clicking Pieces OS in your Applications folder.
+    - If you need to download and install Pieces OS, <a target="_blank" href="/installation-getting-started/what-am-i-installing">visit this link</a>.
+
+2. **You disabled the Pieces buttons on that website.**
+    - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the extension settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
+
+    ![Pieces Extension Settings](/assets/settings_for_chrome.png)
+
+3. **This website doesn't have detectable code.**
+    - The code on this site might be embedded in an iframe or rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
+
+### Whitelisted Websites
+We maintain a curated list of websites that are verified to work seamlessly with the Pieces buttons. Should you come across a site where the Pieces buttons are not automatically present, you have the option to manually activate them within the extension's settings.
+
+If you discover a website that supports our buttons effectively, please share this information with us via [our feedback form](https://getpieces.typeform.com/web-extension).
+
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
 
 ##  Support and Community
 
