@@ -91,6 +91,11 @@
       "statusCode": 301
     },
     {
+      "source": "/product-highlights-and-benefits/privacy-security-data",
+      "destination": "/privacy-and-security",
+      "statusCode": 301
+    },
+    {
       "source": "/frequently-asked-questions",
       "destination": "/faq",
       "statusCode": 301
