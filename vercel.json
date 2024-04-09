@@ -92,7 +92,7 @@
     },
     {
       "source": "/product-highlights-and-benefits/privacy-security-data",
-      "destination": "/privacy-and-security",
+      "destination": "/security-and-privacy",
       "statusCode": 301
     },
     {
