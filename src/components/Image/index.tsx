@@ -1,5 +1,6 @@
 type ImageProps = {
   src: string
+  caption?: string
   alt?: string
   width?: number
   height?: number
@@ -17,5 +18,24 @@ const Image = (props: ImageProps) => {
     />
   )
 }
+
+// const Image = ({ src, caption, alt, width, height, style }: ImageProps) => {
+//   return (
+//     <figure style={{
+//       display: 'flex',
+//       flexDirection: 'column',
+//       alignItems: 'center'
+//     }}>
+//       <img
+//         src={src}
+//         alt={alt}
+//         width={width}
+//         height={height}
+//         style={style}
+//       />
+//       {caption && <figcaption>{caption}</figcaption>}
+//     </figure>
+//   )
+// }
 
 export default Image;
