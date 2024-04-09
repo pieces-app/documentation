@@ -41,7 +41,7 @@ Name | Type | Description
 
 ### Return type
 
-[**CreatedExternalProviderApiKey**](CreatedExternalProviderApiKey)
+[**CreatedExternalProviderApiKey**](../models/CreatedExternalProviderApiKey)
 
 ### HTTP request headers
 
@@ -88,7 +88,7 @@ Name | Type | Description
 
 ### Return type
 
-[**DeletedExternalProviderApiKey**](DeletedExternalProviderApiKey)
+[**DeletedExternalProviderApiKey**](../models/DeletedExternalProviderApiKey)
 
 ### HTTP request headers
 
@@ -135,7 +135,7 @@ Name | Type | Description
 
 ### Return type
 
-[**UpdatedExternalProviderApiKey**](UpdatedExternalProviderApiKey)
+[**UpdatedExternalProviderApiKey**](../models/UpdatedExternalProviderApiKey)
 
 ### HTTP request headers
 
