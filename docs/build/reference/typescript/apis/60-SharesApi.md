@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**sharesCreateNewShare**](SharesApi#sharescreatenewshare) | **POST** /shares/create | /shares/create [POST]
-[**sharesDeleteShare**](SharesApi#sharesdeleteshare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
-[**sharesSnapshot**](SharesApi#sharessnapshot) | **GET** /shares | /shares [GET]
-[**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
+Method | HTTP request
+------------- | -------------
+[**sharesCreateNewShare**](SharesApi#sharescreatenewshare) | **POST** /shares/create
+[**sharesDeleteShare**](SharesApi#sharesdeleteshare) | **POST** /shares/\{share\}/delete
+[**sharesSnapshot**](SharesApi#sharessnapshot) | **GET** /shares
+[**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/\{share\}
 
 
-## **sharesCreateNewShare** Deprecated: 
+## **sharesCreateNewShare**
 > Shares sharesCreateNewShare()
 
 This endpoint will accept an asset. Response here will be a Share that was created.
@@ -18,9 +18,8 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.sharesCreateNewShare(body).then((data: Shares) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededShare** | **SeededShare**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -46,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Shares**
+[**Shares**](../models/Shares)
 
 ### HTTP request headers
 
@@ -55,13 +54,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **sharesDeleteShare** Deprecated: 
+## **sharesDeleteShare**
 > string sharesDeleteShare()
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
@@ -69,9 +66,8 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
@@ -87,7 +83,7 @@ apiInstance.sharesDeleteShare(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] | Share id | defaults to undefined
 
@@ -103,13 +99,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **sharesSnapshot** Deprecated: 
+## **sharesSnapshot**
 > Shares sharesSnapshot()
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
@@ -117,9 +111,8 @@ This will return all of your shares. A Share is an asset that you as a user deci
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
@@ -135,14 +128,14 @@ apiInstance.sharesSnapshot(body).then((data: Shares) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Shares**
+[**Shares**](../models/Shares)
 
 ### HTTP request headers
 
@@ -151,13 +144,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **sharesSpecificShareSnapshot** Deprecated: 
+## **sharesSpecificShareSnapshot**
 > Share sharesSpecificShareSnapshot()
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
@@ -165,9 +156,8 @@ This is an endpoint to enable a client to access a specific share through a prov
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SharesApi(configuration);
 
@@ -185,7 +175,7 @@ apiInstance.sharesSpecificShareSnapshot(body).then((data: Share) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] | Share id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -193,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Share**
+[**Share**](../models/Share)
 
 ### HTTP request headers
 
@@ -202,10 +192,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | A specific share per the provided share id. |  -  |
-
-
 
 

@@ -5,20 +5,20 @@ This is the output model for \'/machine_learning/text/technical_language/parsers
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SegmentedTechnicalLanguageFragment&gt;**](SegmentedTechnicalLanguageFragment) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SegmentedTechnicalLanguageFragment&gt;**](SegmentedTechnicalLanguageFragment)
 
 ## Example
 
 ```typescript
-import { SegmentedTechnicalLanguage } from '';
+import { SegmentedTechnicalLanguage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SegmentedTechnicalLanguage = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SegmentedTechnicalLanguage;
 console.log(exampleParsed);
 ```
-
-
 
 

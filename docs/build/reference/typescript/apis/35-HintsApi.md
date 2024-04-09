@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
-[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
-[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
+Method | HTTP request
+------------- | -------------
+[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create
+[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete
+[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints
 
 
-## **hintsCreateNewHint** Deprecated: 
+## **hintsCreateNewHint**
 > Hint hintsCreateNewHint()
 
 This will create a hint.
@@ -17,9 +17,8 @@ This will create a hint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintsApi(configuration);
 
@@ -35,14 +34,14 @@ apiInstance.hintsCreateNewHint(body).then((data: Hint) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededHint** | **SeededHint**|  |
 
 
 ### Return type
 
-**Hint**
+[**Hint**](../models/Hint)
 
 ### HTTP request headers
 
@@ -51,14 +50,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **hintsDeleteSpecificHint** Deprecated: 
+## **hintsDeleteSpecificHint**
 > hintsDeleteSpecificHint()
 
 This will delete a specific hint.
@@ -66,9 +63,8 @@ This will delete a specific hint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintsApi(configuration);
 
@@ -84,7 +80,7 @@ apiInstance.hintsDeleteSpecificHint(body).then((data: void (empty response body)
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
@@ -100,14 +96,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **hintsSnapshot** Deprecated: 
+## **hintsSnapshot**
 > Hints hintsSnapshot()
 
 This will get a snapshot of all of the hints.
@@ -115,9 +109,8 @@ This will get a snapshot of all of the hints.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintsApi(configuration);
 
@@ -132,7 +125,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Hints**
+[**Hints**](../models/Hints)
 
 ### HTTP request headers
 
@@ -141,11 +134,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

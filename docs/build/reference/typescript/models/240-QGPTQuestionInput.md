@@ -5,32 +5,32 @@ This is the body input for the /code_gpt/question.  Note: - each relevant seed, 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | [default to undefined]
-**query** | **string** | This is the user asked question. | [default to undefined]
-**application** | **string** | optional application id | [optional] [default to undefined]
-**model** | **string** | optional model id | [optional] [default to undefined]
-**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] [default to undefined]
-**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] [default to undefined]
-**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds)
+**query** | **string**
+**application** | **string**
+**model** | **string**
+**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
+**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
+**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
 ## Example
 
 ```typescript
-import { QGPTQuestionInput } from '';
+import { QGPTQuestionInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTQuestionInput = {
-    "schema": null, // 
-    "relevant": null, // 
-    "query": null, // This is the user asked question.
-    "application": null, // optional application id
-    "model": null, // optional model id
-    "messages": null, // 
-    "pipeline": null, // 
-    "temporal": null, // 
+    "schema": null,
+    "relevant": null,
+    "query": null,
+    "application": null,
+    "model": null,
+    "messages": null,
+    "pipeline": null,
+    "temporal": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTQuestionInput;
 console.log(exampleParsed);
 ```
-
-
 
 

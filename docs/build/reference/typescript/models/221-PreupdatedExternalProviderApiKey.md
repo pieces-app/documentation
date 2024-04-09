@@ -5,22 +5,22 @@ This is the endput model for \"/external_provider/api_key/update\". everything b
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**user** | **string** |  | [default to undefined]
-**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**user** | **string**
+**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
 
 ## Example
 
 ```typescript
-import { PreupdatedExternalProviderApiKey } from '';
+import { PreupdatedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PreupdatedExternalProviderApiKey = {
-    "schema": null, // 
-    "user": null, // 
-    "openAI": null, // 
+    "schema": null,
+    "user": null,
+    "openAI": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PreupdatedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

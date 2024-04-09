@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | \&#39;/annotation/\{annotation\}/scores/increment\&#39; [POST]
-[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
-[**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment
+[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\}
+[**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update
 
 
-## **annotationScoresIncrement** Deprecated: 
+## **annotationScoresIncrement**
 > annotationScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -17,9 +17,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.annotationScoresIncrement(body).then((data: void (empty response bod
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
@@ -54,14 +53,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **annotationSpecificAnnotationSnapshot** Deprecated: 
+## **annotationSpecificAnnotationSnapshot**
 > Annotation annotationSpecificAnnotationSnapshot()
 
 This will get a snapshot of a specific annotation.
@@ -69,9 +66,8 @@ This will get a snapshot of a specific annotation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
@@ -87,14 +83,14 @@ apiInstance.annotationSpecificAnnotationSnapshot(body).then((data: Annotation) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
 ### Return type
 
-**Annotation**
+[**Annotation**](../models/Annotation)
 
 ### HTTP request headers
 
@@ -103,14 +99,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **annotationUpdate** Deprecated: 
+## **annotationUpdate**
 > Annotation annotationUpdate()
 
 This will update a specific annotation.
@@ -118,9 +112,8 @@ This will update a specific annotation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnnotationApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.annotationUpdate(body).then((data: Annotation) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **annotation** | **Annotation**|  |
 
 
 ### Return type
 
-**Annotation**
+[**Annotation**](../models/Annotation)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

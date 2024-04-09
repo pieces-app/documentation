@@ -5,20 +5,20 @@ These are all of the available event types that are permitted in an object pair 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**assetsSearched** | **string** | A If the assets were searched | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**assetsSearched** | **string**
 
 ## Example
 
 ```typescript
-import { TrackedAssetsEventIdentifierDescriptionPairs } from '';
+import { TrackedAssetsEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetsEventIdentifierDescriptionPairs = {
-    "schema": null, // 
-    "assetsSearched": null, // A If the assets were searched
+    "schema": null,
+    "assetsSearched": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetsEventIdentifierDescriptionPairs;
 console.log(exampleParsed);
 ```
-
-
 
 

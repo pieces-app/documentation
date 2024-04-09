@@ -245,11 +245,11 @@ const sidebars: SidebarsConfig = {
       id: 'build/quick-start/index',
       label: '⚡️ Quickstart',
     },
-    {
-      type: 'doc',
-      id: 'build/tutorials/index',
-      label: '📚 Tutorials',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'build/tutorials/index',
+    //   label: '📚 Tutorials',
+    // },
     {
       type: 'category',
       label: '🔍 API Reference',
@@ -259,46 +259,17 @@ const sidebars: SidebarsConfig = {
           label: `${sdk} SDK`
         }))
     },
-    {
-      type: 'doc',
-      id: 'build/concepts/index',
-      label: '🧠 Concepts',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'build/concepts/index',
+    //   label: '🧠 Concepts',
+    // },
     {
       type: 'doc',
       id: 'build/glossary/index',
       label: '📖 Glossary',
     },
   ],
-
-  quickstartSidebar: [
-    {
-      type: 'ref',
-      id: 'build/index',
-      label: '← Back to Build',
-    },
-    {
-      type: 'doc',
-      id: 'build/quick-start/index',
-      label: 'Overview',
-    },
-    {
-      type: 'doc',
-      id: 'build/quick-start/react',
-      label: 'React',
-    },
-    {
-      type: 'doc',
-      id: 'build/quick-start/svelte',
-      label: 'Svelte',
-    },
-    {
-      type: 'doc',
-      id: 'build/quick-start/streamlit',
-      label: 'Streamlit',
-    }
-  ],
-
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars
 };

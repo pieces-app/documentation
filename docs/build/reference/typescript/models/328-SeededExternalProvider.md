@@ -5,18 +5,18 @@ This is the minimum information needed to connect an additional provider.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**type** | [**ExternalProviderTypeEnum**](ExternalProviderTypeEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**type** | [**ExternalProviderTypeEnum**](ExternalProviderTypeEnum)
 
 ## Example
 
 ```typescript
-import { SeededExternalProvider } from '';
+import { SeededExternalProvider } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededExternalProvider = {
-    "type": null, // 
+    "type": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededExternalProvider;
 console.log(exampleParsed);
 ```
-
-
 
 

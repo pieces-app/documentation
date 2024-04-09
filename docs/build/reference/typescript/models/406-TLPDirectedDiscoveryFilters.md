@@ -5,18 +5,18 @@ Contains array of TLPDirectedDiscoveryFilter
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;TLPDirectedDiscoveryFilter&gt;**](TLPDirectedDiscoveryFilter) | Array that contains filters like class/function/loop | [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;TLPDirectedDiscoveryFilter&gt;**](TLPDirectedDiscoveryFilter)
 
 ## Example
 
 ```typescript
-import { TLPDirectedDiscoveryFilters } from '';
+import { TLPDirectedDiscoveryFilters } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPDirectedDiscoveryFilters = {
-    "iterable": null, // Array that contains filters like class/function/loop
+    "iterable": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPDirectedDiscoveryFilters;
 console.log(exampleParsed);
 ```
-
-
 
 

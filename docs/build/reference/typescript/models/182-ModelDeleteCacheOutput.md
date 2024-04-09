@@ -5,20 +5,20 @@ This is the output model for \'/model/\{model\}/delete/cache\'
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**model** | [**ReferencedModel**](ReferencedModel) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**model** | [**ReferencedModel**](ReferencedModel)
 
 ## Example
 
 ```typescript
-import { ModelDeleteCacheOutput } from '';
+import { ModelDeleteCacheOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelDeleteCacheOutput = {
-    "schema": null, // 
-    "model": null, // 
+    "schema": null,
+    "model": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelDeleteCacheOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

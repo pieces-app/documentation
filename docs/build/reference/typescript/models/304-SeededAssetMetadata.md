@@ -5,36 +5,36 @@ This is optional metadata sent with the SeededAsset and other SeededAssets ie (U
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** | This is the name of the asset. | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**tags** | [**Array&lt;SeededAssetTag&gt;**](SeededAssetTag) | (optional) can add some tags to associate to this asset. | [optional] [default to undefined]
-**websites** | [**Array&lt;SeededAssetWebsite&gt;**](SeededAssetWebsite) |  | [optional] [default to undefined]
-**sensitives** | [**Array&lt;SeededAssetSensitive&gt;**](SeededAssetSensitive) |  | [optional] [default to undefined]
-**persons** | [**Array&lt;SeededPerson&gt;**](SeededPerson) |  | [optional] [default to undefined]
-**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation) |  | [optional] [default to undefined]
-**hints** | [**Array&lt;SeededHint&gt;**](SeededHint) |  | [optional] [default to undefined]
-**anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**tags** | [**Array&lt;SeededAssetTag&gt;**](SeededAssetTag)
+**websites** | [**Array&lt;SeededAssetWebsite&gt;**](SeededAssetWebsite)
+**sensitives** | [**Array&lt;SeededAssetSensitive&gt;**](SeededAssetSensitive)
+**persons** | [**Array&lt;SeededPerson&gt;**](SeededPerson)
+**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
+**hints** | [**Array&lt;SeededHint&gt;**](SeededHint)
+**anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor)
 
 ## Example
 
 ```typescript
-import { SeededAssetMetadata } from '';
+import { SeededAssetMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetMetadata = {
-    "schema": null, // 
-    "name": null, // This is the name of the asset.
-    "mechanism": null, // 
-    "tags": null, // (optional) can add some tags to associate to this asset.
-    "websites": null, // 
-    "sensitives": null, // 
-    "persons": null, // 
-    "annotations": null, // 
-    "hints": null, // 
-    "anchors": null, // 
+    "schema": null,
+    "name": null,
+    "mechanism": null,
+    "tags": null,
+    "websites": null,
+    "sensitives": null,
+    "persons": null,
+    "annotations": null,
+    "hints": null,
+    "anchors": null,
 };
 
 console.log(example);
@@ -47,7 +47,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

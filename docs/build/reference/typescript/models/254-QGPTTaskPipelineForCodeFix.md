@@ -5,20 +5,20 @@ This task is for fixing a bit of code.  This is a class so that we can add optio
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**error** | **string** | This is the error message provided from the IDE, that we can use to provide the solution. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**error** | **string**
 
 ## Example
 
 ```typescript
-import { QGPTTaskPipelineForCodeFix } from '';
+import { QGPTTaskPipelineForCodeFix } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTTaskPipelineForCodeFix = {
-    "schema": null, // 
-    "error": null, // This is the error message provided from the IDE, that we can use to provide the solution.
+    "schema": null,
+    "error": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipelineForCodeFix;
 console.log(exampleParsed);
 ```
-
-
 
 

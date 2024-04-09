@@ -5,20 +5,20 @@ A collection of Formats specific to the authenticated user. [DAG Compatible - Di
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ReferencedFormat&gt;**](ReferencedFormat) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ReferencedFormat&gt;**](ReferencedFormat)
 
 ## Example
 
 ```typescript
-import { FlattenedFormats } from '';
+import { FlattenedFormats } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedFormats = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedFormats;
 console.log(exampleParsed);
 ```
-
-
 
 

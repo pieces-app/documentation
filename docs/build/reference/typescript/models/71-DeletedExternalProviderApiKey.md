@@ -5,20 +5,20 @@ This is the returnable for the \"\"/external_provider/api_key/delete\" endpoint
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
 ## Example
 
 ```typescript
-import { DeletedExternalProviderApiKey } from '';
+import { DeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DeletedExternalProviderApiKey = {
-    "schema": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DeletedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

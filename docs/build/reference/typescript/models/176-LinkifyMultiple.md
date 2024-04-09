@@ -5,26 +5,26 @@ This is the incoming linkify model.  if access is PRIVATE then please provide an
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**assets** | **Array&lt;string&gt;** | This is an array or string that represents an already backed up asset. That will be added to a collection. | [default to undefined]
-**users** | [**Array&lt;SeededUser&gt;**](SeededUser) | this is an array of users. | [optional] [default to undefined]
-**access** | [**AccessEnum**](AccessEnum) |  | [default to undefined]
-**name** | **string** | optionally can give the collection a name if you want. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**assets** | **Array&lt;string&gt;**
+**users** | [**Array&lt;SeededUser&gt;**](SeededUser)
+**access** | [**AccessEnum**](AccessEnum)
+**name** | **string**
 
 ## Example
 
 ```typescript
-import { LinkifyMultiple } from '';
+import { LinkifyMultiple } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: LinkifyMultiple = {
-    "schema": null, // 
-    "assets": null, // This is an array or string that represents an already backed up asset. That will be added to a collection.
-    "users": null, // this is an array of users.
-    "access": null, // 
-    "name": null, // optionally can give the collection a name if you want.
+    "schema": null,
+    "assets": null,
+    "users": null,
+    "access": null,
+    "name": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as LinkifyMultiple;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -4,34 +4,34 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**type** | [**AnchorTypeEnum**](AnchorTypeEnum) |  | [default to undefined]
-**watch** | **boolean** |  | [optional] [default to undefined]
-**fullpath** | **string** |  | [default to undefined]
-**asset** | **string** | You may associate a SeededAnchor with an asset | [optional] [default to undefined]
-**platform** | [**PlatformEnum**](PlatformEnum) |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation) |  | [optional] [default to undefined]
-**conversation** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**type** | [**AnchorTypeEnum**](AnchorTypeEnum)
+**watch** | **boolean**
+**fullpath** | **string**
+**asset** | **string**
+**platform** | [**PlatformEnum**](PlatformEnum)
+**name** | **string**
+**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
+**conversation** | **string**
 
 ## Example
 
 ```typescript
-import { SeededAnchor } from '';
+import { SeededAnchor } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAnchor = {
-    "schema": null, // 
-    "type": null, // 
-    "watch": null, // 
-    "fullpath": null, // 
-    "asset": null, // You may associate a SeededAnchor with an asset
-    "platform": null, // 
-    "name": null, // 
-    "annotations": null, // 
-    "conversation": null, // 
+    "schema": null,
+    "type": null,
+    "watch": null,
+    "fullpath": null,
+    "asset": null,
+    "platform": null,
+    "name": null,
+    "annotations": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -44,7 +44,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAnchor;
 console.log(exampleParsed);
 ```
-
-
 
 

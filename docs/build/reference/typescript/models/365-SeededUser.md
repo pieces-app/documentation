@@ -5,20 +5,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**emails** | **Array&lt;string&gt;** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**emails** | **Array&lt;string&gt;**
 
 ## Example
 
 ```typescript
-import { SeededUser } from '';
+import { SeededUser } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededUser = {
-    "schema": null, // 
-    "emails": null, // 
+    "schema": null,
+    "emails": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededUser;
 console.log(exampleParsed);
 ```
-
-
 
 

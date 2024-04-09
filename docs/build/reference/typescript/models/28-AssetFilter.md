@@ -5,34 +5,34 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**classification** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] [default to undefined]
-**tags** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
-**websites** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
-**persons** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
-**phrase** | [**AssetFilterPhrase**](AssetFilterPhrase) |  | [optional] [default to undefined]
-**created** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  | [optional] [default to undefined]
-**updated** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  | [optional] [default to undefined]
-**operations** | [**AssetFilters**](AssetFilters) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**classification** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**tags** | **Array&lt;string&gt;**
+**websites** | **Array&lt;string&gt;**
+**persons** | **Array&lt;string&gt;**
+**phrase** | [**AssetFilterPhrase**](AssetFilterPhrase)
+**created** | [**AssetFilterTimestamp**](AssetFilterTimestamp)
+**updated** | [**AssetFilterTimestamp**](AssetFilterTimestamp)
+**operations** | [**AssetFilters**](AssetFilters)
 
 ## Example
 
 ```typescript
-import { AssetFilter } from '';
+import { AssetFilter } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetFilter = {
-    "schema": null, // 
-    "classification": null, // 
-    "tags": null, // 
-    "websites": null, // 
-    "persons": null, // 
-    "phrase": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "operations": null, // 
+    "schema": null,
+    "classification": null,
+    "tags": null,
+    "websites": null,
+    "persons": null,
+    "phrase": null,
+    "created": null,
+    "updated": null,
+    "operations": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetFilter;
 console.log(exampleParsed);
 ```
-
-
 
 

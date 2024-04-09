@@ -5,13 +5,13 @@ This is a Generic status enumeration that will be used for the status of dns and
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { AllocationStatusEnum } from '';
+import { AllocationStatusEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AllocationStatusEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AllocationStatusEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,32 +5,32 @@ User Metadata from Auth0
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**globalId** | **string** |  | [default to undefined]
-**cloudKey** | **string** |  | [optional] [default to undefined]
-**stripeCustomerId** | **string** | A customer ID that is added to the user in the case of payments | [optional] [default to undefined]
-**vanityname** | **string** | this is the vanityname of the user.(set from their custom CNAME dns record.) ie mark.pieces.cloud where \&quot;mark\&quot; is the vanityname. | [optional] [default to undefined]
-**allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata) |  | [optional] [default to undefined]
-**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] [default to undefined]
-**beta** | [**TimestampRange**](TimestampRange) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**globalId** | **string**
+**cloudKey** | **string**
+**stripeCustomerId** | **string**
+**vanityname** | **string**
+**allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata)
+**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
+**beta** | [**TimestampRange**](TimestampRange)
 
 ## Example
 
 ```typescript
-import { Auth0UserMetadata } from '';
+import { Auth0UserMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Auth0UserMetadata = {
-    "schema": null, // 
-    "globalId": null, // 
-    "cloudKey": null, // 
-    "stripeCustomerId": null, // A customer ID that is added to the user in the case of payments
-    "vanityname": null, // this is the vanityname of the user.(set from their custom CNAME dns record.) ie mark.pieces.cloud where \&quot;mark\&quot; is the vanityname.
-    "allocation": null, // 
-    "openAI": null, // 
-    "beta": null, // 
+    "schema": null,
+    "globalId": null,
+    "cloudKey": null,
+    "stripeCustomerId": null,
+    "vanityname": null,
+    "allocation": null,
+    "openAI": null,
+    "beta": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Auth0UserMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

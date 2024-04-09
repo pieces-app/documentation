@@ -5,28 +5,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** | This is the description of the tag. | [default to undefined]
-**asset** | **string** | this is a uuid that references an asset. | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**format** | **string** | (optionally) you can attach a tag to a format. so when you delete a format this tag will get removed from the asset as well. | [optional] [default to undefined]
-**category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**asset** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**format** | **string**
+**category** | [**TagCategoryEnum**](TagCategoryEnum)
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableRelatedTag } from '';
+import { SeededDiscoverableRelatedTag } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableRelatedTag = {
-    "schema": null, // 
-    "text": null, // This is the description of the tag.
-    "asset": null, // this is a uuid that references an asset.
-    "mechanism": null, // 
-    "format": null, // (optionally) you can attach a tag to a format. so when you delete a format this tag will get removed from the asset as well.
-    "category": null, // 
+    "schema": null,
+    "text": null,
+    "asset": null,
+    "mechanism": null,
+    "format": null,
+    "category": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableRelatedTag;
 console.log(exampleParsed);
 ```
-
-
 
 

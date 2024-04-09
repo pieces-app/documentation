@@ -5,13 +5,13 @@ This lets us know what capabilites in relation to ml/ cloud infrastructure you a
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { CapabilitiesEnum } from '';
+import { CapabilitiesEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: CapabilitiesEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as CapabilitiesEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

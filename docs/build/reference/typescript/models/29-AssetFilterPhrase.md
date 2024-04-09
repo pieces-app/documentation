@@ -4,28 +4,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**value** | **string** |  | [optional] [default to undefined]
-**annotation** | **boolean** |  | [optional] [default to undefined]
-**title** | **boolean** |  | [optional] [default to undefined]
-**content** | **boolean** |  | [optional] [default to undefined]
-**options** | [**AssetFilterPhraseOptions**](AssetFilterPhraseOptions) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**value** | **string**
+**annotation** | **boolean**
+**title** | **boolean**
+**content** | **boolean**
+**options** | [**AssetFilterPhraseOptions**](AssetFilterPhraseOptions)
 
 ## Example
 
 ```typescript
-import { AssetFilterPhrase } from '';
+import { AssetFilterPhrase } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetFilterPhrase = {
-    "schema": null, // 
-    "value": null, // 
-    "annotation": null, // 
-    "title": null, // 
-    "content": null, // 
-    "options": null, // 
+    "schema": null,
+    "value": null,
+    "annotation": null,
+    "title": null,
+    "content": null,
+    "options": null,
 };
 
 console.log(example);
@@ -38,7 +38,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetFilterPhrase;
 console.log(exampleParsed);
 ```
-
-
 
 

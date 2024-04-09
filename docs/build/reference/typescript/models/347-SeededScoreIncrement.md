@@ -5,78 +5,78 @@ This is the body for a respective scores increment,  This will enable us to know
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**assets** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**website** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**websites** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**anchor** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**anchors** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**anchorPoint** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**anchorPoints** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**annotation** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**annotations** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**conversation** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**conversations** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**conversationMessage** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**conversationMessages** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**share** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**shares** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**sensitive** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**sensitives** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**hint** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**hints** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**person** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**persons** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**tag** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**tags** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**workstreamSummary** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**workstreamSummaries** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**workstreamEvents** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**workstreamEvent** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**ranges** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
-**range** | [**SeededScore**](SeededScore) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | [**SeededScore**](SeededScore)
+**assets** | [**SeededScore**](SeededScore)
+**website** | [**SeededScore**](SeededScore)
+**websites** | [**SeededScore**](SeededScore)
+**anchor** | [**SeededScore**](SeededScore)
+**anchors** | [**SeededScore**](SeededScore)
+**anchorPoint** | [**SeededScore**](SeededScore)
+**anchorPoints** | [**SeededScore**](SeededScore)
+**annotation** | [**SeededScore**](SeededScore)
+**annotations** | [**SeededScore**](SeededScore)
+**conversation** | [**SeededScore**](SeededScore)
+**conversations** | [**SeededScore**](SeededScore)
+**conversationMessage** | [**SeededScore**](SeededScore)
+**conversationMessages** | [**SeededScore**](SeededScore)
+**share** | [**SeededScore**](SeededScore)
+**shares** | [**SeededScore**](SeededScore)
+**sensitive** | [**SeededScore**](SeededScore)
+**sensitives** | [**SeededScore**](SeededScore)
+**hint** | [**SeededScore**](SeededScore)
+**hints** | [**SeededScore**](SeededScore)
+**person** | [**SeededScore**](SeededScore)
+**persons** | [**SeededScore**](SeededScore)
+**tag** | [**SeededScore**](SeededScore)
+**tags** | [**SeededScore**](SeededScore)
+**workstreamSummary** | [**SeededScore**](SeededScore)
+**workstreamSummaries** | [**SeededScore**](SeededScore)
+**workstreamEvents** | [**SeededScore**](SeededScore)
+**workstreamEvent** | [**SeededScore**](SeededScore)
+**ranges** | [**SeededScore**](SeededScore)
+**range** | [**SeededScore**](SeededScore)
 
 ## Example
 
 ```typescript
-import { SeededScoreIncrement } from '';
+import { SeededScoreIncrement } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededScoreIncrement = {
-    "schema": null, // 
-    "asset": null, // 
-    "assets": null, // 
-    "website": null, // 
-    "websites": null, // 
-    "anchor": null, // 
-    "anchors": null, // 
-    "anchorPoint": null, // 
-    "anchorPoints": null, // 
-    "annotation": null, // 
-    "annotations": null, // 
-    "conversation": null, // 
-    "conversations": null, // 
-    "conversationMessage": null, // 
-    "conversationMessages": null, // 
-    "share": null, // 
-    "shares": null, // 
-    "sensitive": null, // 
-    "sensitives": null, // 
-    "hint": null, // 
-    "hints": null, // 
-    "person": null, // 
-    "persons": null, // 
-    "tag": null, // 
-    "tags": null, // 
-    "workstreamSummary": null, // 
-    "workstreamSummaries": null, // 
-    "workstreamEvents": null, // 
-    "workstreamEvent": null, // 
-    "ranges": null, // 
-    "range": null, // 
+    "schema": null,
+    "asset": null,
+    "assets": null,
+    "website": null,
+    "websites": null,
+    "anchor": null,
+    "anchors": null,
+    "anchorPoint": null,
+    "anchorPoints": null,
+    "annotation": null,
+    "annotations": null,
+    "conversation": null,
+    "conversations": null,
+    "conversationMessage": null,
+    "conversationMessages": null,
+    "share": null,
+    "shares": null,
+    "sensitive": null,
+    "sensitives": null,
+    "hint": null,
+    "hints": null,
+    "person": null,
+    "persons": null,
+    "tag": null,
+    "tags": null,
+    "workstreamSummary": null,
+    "workstreamSummaries": null,
+    "workstreamEvents": null,
+    "workstreamEvent": null,
+    "ranges": null,
+    "range": null,
 };
 
 console.log(example);
@@ -89,7 +89,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededScoreIncrement;
 console.log(exampleParsed);
 ```
-
-
 
 

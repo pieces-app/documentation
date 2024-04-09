@@ -5,22 +5,22 @@ This will return assets that were extracted from the html webpage. This will con
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**assets** | [**DiscoveredAssets**](DiscoveredAssets) |  | [default to undefined]
-**url** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**assets** | [**DiscoveredAssets**](DiscoveredAssets)
+**url** | **string**
 
 ## Example
 
 ```typescript
-import { DiscoveredHtmlWebpage } from '';
+import { DiscoveredHtmlWebpage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DiscoveredHtmlWebpage = {
-    "schema": null, // 
-    "assets": null, // 
-    "url": null, // 
+    "schema": null,
+    "assets": null,
+    "url": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DiscoveredHtmlWebpage;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ These are the references of the formats **Only UUIDS**
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**base** | **string** | this is a reference(uuid) to the base format | [default to undefined]
-**overlay** | **string** | this is a reference(uuid) to the overlay format | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**base** | **string**
+**overlay** | **string**
 
 ## Example
 
 ```typescript
-import { FlattenedPreview } from '';
+import { FlattenedPreview } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedPreview = {
-    "schema": null, // 
-    "base": null, // this is a reference(uuid) to the base format
-    "overlay": null, // this is a reference(uuid) to the overlay format
+    "schema": null,
+    "base": null,
+    "overlay": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedPreview;
 console.log(exampleParsed);
 ```
-
-
 
 

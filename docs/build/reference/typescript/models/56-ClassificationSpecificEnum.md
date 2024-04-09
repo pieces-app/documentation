@@ -5,13 +5,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ClassificationSpecificEnum } from '';
+import { ClassificationSpecificEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ClassificationSpecificEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ClassificationSpecificEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

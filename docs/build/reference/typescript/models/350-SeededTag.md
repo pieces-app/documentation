@@ -5,28 +5,28 @@ This is the minimum information needed when creating a Tag.  Default we will att
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** | This is the description of the tag. | [default to undefined]
-**asset** | **string** | this is a uuid that references an asset. | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] [default to undefined]
-**person** | **string** | uuid of the person, you want to add this tag too | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**asset** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**category** | [**TagCategoryEnum**](TagCategoryEnum)
+**person** | **string**
 
 ## Example
 
 ```typescript
-import { SeededTag } from '';
+import { SeededTag } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTag = {
-    "schema": null, // 
-    "text": null, // This is the description of the tag.
-    "asset": null, // this is a uuid that references an asset.
-    "mechanism": null, // 
-    "category": null, // 
-    "person": null, // uuid of the person, you want to add this tag too
+    "schema": null,
+    "text": null,
+    "asset": null,
+    "mechanism": null,
+    "category": null,
+    "person": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTag;
 console.log(exampleParsed);
 ```
-
-
 
 

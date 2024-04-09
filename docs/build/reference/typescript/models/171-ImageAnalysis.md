@@ -5,24 +5,24 @@ This is a model that represents all the information collected during the process
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | this is a uuid that represents a imageAnalysis. | [default to undefined]
-**analysis** | **string** | this is a reference to the analysis. | [default to undefined]
-**ocr** | [**OCRAnalysis**](OCRAnalysis) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**analysis** | **string**
+**ocr** | [**OCRAnalysis**](OCRAnalysis)
 
 ## Example
 
 ```typescript
-import { ImageAnalysis } from '';
+import { ImageAnalysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ImageAnalysis = {
-    "schema": null, // 
-    "id": null, // this is a uuid that represents a imageAnalysis.
-    "analysis": null, // this is a reference to the analysis.
-    "ocr": null, // 
+    "schema": null,
+    "id": null,
+    "analysis": null,
+    "ocr": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ImageAnalysis;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -4,13 +4,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { FilterOperationTypeEnum } from '';
+import { FilterOperationTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FilterOperationTypeEnum = {
@@ -26,7 +26,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FilterOperationTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

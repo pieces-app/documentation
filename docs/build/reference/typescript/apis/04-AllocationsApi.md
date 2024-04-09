@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allocationsConnectNewCloud**](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect | /allocations/connect [POST]
-[**allocationsCreateNewAllocation**](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create | /allocations/create [POST]
-[**allocationsDeleteAllocation**](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete | /allocations/delete [POST]
-[**allocationsDisconnectCloud**](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
-[**allocationsReconnectCloud**](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
-[**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations | /allocations [GET]
+Method | HTTP request
+------------- | -------------
+[**allocationsConnectNewCloud**](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect
+[**allocationsCreateNewAllocation**](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create
+[**allocationsDeleteAllocation**](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete
+[**allocationsDisconnectCloud**](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect
+[**allocationsReconnectCloud**](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect
+[**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations
 
 
-## **allocationsConnectNewCloud** Deprecated: 
+## **allocationsConnectNewCloud**
 > AllocationCloud allocationsConnectNewCloud()
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
@@ -20,9 +20,8 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -38,14 +37,14 @@ apiInstance.allocationsConnectNewCloud(body).then((data: AllocationCloud) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
 ### Return type
 
-**AllocationCloud**
+[**AllocationCloud**](../models/AllocationCloud)
 
 ### HTTP request headers
 
@@ -54,15 +53,13 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-
-
-## **allocationsCreateNewAllocation** Deprecated: 
+## **allocationsCreateNewAllocation**
 > AllocationCloud allocationsCreateNewAllocation()
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
@@ -70,9 +67,8 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -88,14 +84,14 @@ apiInstance.allocationsCreateNewAllocation(body).then((data: AllocationCloud) =>
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
 ### Return type
 
-**AllocationCloud**
+[**AllocationCloud**](../models/AllocationCloud)
 
 ### HTTP request headers
 
@@ -104,14 +100,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **allocationsDeleteAllocation** Deprecated: 
+## **allocationsDeleteAllocation**
 > string allocationsDeleteAllocation()
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
@@ -119,9 +113,8 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -137,7 +130,7 @@ apiInstance.allocationsDeleteAllocation(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
@@ -153,14 +146,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **allocationsDisconnectCloud** Deprecated: 
+## **allocationsDisconnectCloud**
 > string allocationsDisconnectCloud()
 
 This will attempt to disconnect to a specific users cloud.
@@ -168,9 +159,8 @@ This will attempt to disconnect to a specific users cloud.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -186,7 +176,7 @@ apiInstance.allocationsDisconnectCloud(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
@@ -202,14 +192,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **allocationsReconnectCloud** Deprecated: 
+## **allocationsReconnectCloud**
 > AllocationCloud allocationsReconnectCloud()
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user\'s cloud is up-to-date.
@@ -217,9 +205,8 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -235,14 +222,14 @@ apiInstance.allocationsReconnectCloud(body).then((data: AllocationCloud) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
 ### Return type
 
-**AllocationCloud**
+[**AllocationCloud**](../models/AllocationCloud)
 
 ### HTTP request headers
 
@@ -251,15 +238,13 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-
-
-## **allocationsSnapshot** Deprecated: 
+## **allocationsSnapshot**
 > Allocations allocationsSnapshot()
 
 This is going to get a snapshot of all of the connected allocations.
@@ -267,9 +252,8 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationsApi(configuration);
 
@@ -284,7 +268,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Allocations**
+[**Allocations**](../models/Allocations)
 
 ### HTTP request headers
 
@@ -293,11 +277,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

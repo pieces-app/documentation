@@ -5,20 +5,20 @@ This is the update Auth0UserMetadata object, and the specific update output mode
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
 ## Example
 
 ```typescript
-import { UpdatedExternalProviderApiKey } from '';
+import { UpdatedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: UpdatedExternalProviderApiKey = {
-    "schema": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as UpdatedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

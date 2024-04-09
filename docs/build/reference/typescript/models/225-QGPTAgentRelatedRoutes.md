@@ -5,20 +5,20 @@ This is specific for all the related materials, like people, tags, websites... x
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**people** | **boolean** | optional bool, that will say if we reccomend to run related.people on this conversation, IFF set to TRUE. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**people** | **boolean**
 
 ## Example
 
 ```typescript
-import { QGPTAgentRelatedRoutes } from '';
+import { QGPTAgentRelatedRoutes } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTAgentRelatedRoutes = {
-    "schema": null, // 
-    "people": null, // optional bool, that will say if we reccomend to run related.people on this conversation, IFF set to TRUE.
+    "schema": null,
+    "people": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTAgentRelatedRoutes;
 console.log(exampleParsed);
 ```
-
-
 
 

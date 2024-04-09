@@ -5,24 +5,24 @@ This is the specific classification of an Asset\'s Format.(This is on a per form
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  | [default to undefined]
-**specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [default to undefined]
-**rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum)
+**specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum)
 
 ## Example
 
 ```typescript
-import { Classification } from '';
+import { Classification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Classification = {
-    "schema": null, // 
-    "generic": null, // 
-    "specific": null, // 
-    "rendering": null, // 
+    "schema": null,
+    "generic": null,
+    "specific": null,
+    "rendering": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Classification;
 console.log(exampleParsed);
 ```
-
-
 
 

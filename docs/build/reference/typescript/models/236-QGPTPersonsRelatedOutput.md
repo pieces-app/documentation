@@ -5,22 +5,22 @@ This model is used for the output of the /qgpt/related/persons endpoint.  Explan
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**persons** | [**Persons**](Persons) |  | [default to undefined]
-**explanations** | **\{ [key: string]: string; \}** | This is a Map&lt;String, String&gt; where the the key is a person id. and the value is the explanation. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**persons** | [**Persons**](Persons)
+**explanations** | **\{ [key: string]: string; \}**
 
 ## Example
 
 ```typescript
-import { QGPTPersonsRelatedOutput } from '';
+import { QGPTPersonsRelatedOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTPersonsRelatedOutput = {
-    "schema": null, // 
-    "persons": null, // 
-    "explanations": null, // This is a Map&lt;String, String&gt; where the the key is a person id. and the value is the explanation.
+    "schema": null,
+    "persons": null,
+    "explanations": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTPersonsRelatedOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,28 +5,28 @@ Query is your followup question.  Conversation is a list of the back and fourth 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**query** | **string** |  | [default to undefined]
-**conversation** | [**QGPTConversation**](QGPTConversation) |  | [default to undefined]
-**application** | **string** | optional application id | [optional] [default to undefined]
-**model** | **string** | optional model id | [optional] [default to undefined]
-**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**query** | **string**
+**conversation** | [**QGPTConversation**](QGPTConversation)
+**application** | **string**
+**model** | **string**
+**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 
 ## Example
 
 ```typescript
-import { QGPTRepromptInput } from '';
+import { QGPTRepromptInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTRepromptInput = {
-    "schema": null, // 
-    "query": null, // 
-    "conversation": null, // 
-    "application": null, // optional application id
-    "model": null, // optional model id
-    "pipeline": null, // 
+    "schema": null,
+    "query": null,
+    "conversation": null,
+    "application": null,
+    "model": null,
+    "pipeline": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTRepromptInput;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SeededDiscoverableRelatedTag&gt;**](SeededDiscoverableRelatedTag) |  | [default to undefined]
-**application** | **string** | This is the application id that this request is sent from. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SeededDiscoverableRelatedTag&gt;**](SeededDiscoverableRelatedTag)
+**application** | **string**
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableRelatedTags } from '';
+import { SeededDiscoverableRelatedTags } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableRelatedTags = {
-    "schema": null, // 
-    "iterable": null, // 
-    "application": null, // This is the application id that this request is sent from.
+    "schema": null,
+    "iterable": null,
+    "application": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableRelatedTags;
 console.log(exampleParsed);
 ```
-
-
 
 

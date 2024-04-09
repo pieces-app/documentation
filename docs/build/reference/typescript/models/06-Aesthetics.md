@@ -5,22 +5,22 @@ These are aesthetics properties that will ensure the darkmode + font size and ot
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**theme** | [**Theme**](Theme) |  | [default to undefined]
-**font** | [**Font**](Font) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**theme** | [**Theme**](Theme)
+**font** | [**Font**](Font)
 
 ## Example
 
 ```typescript
-import { Aesthetics } from '';
+import { Aesthetics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Aesthetics = {
-    "schema": null, // 
-    "theme": null, // 
-    "font": null, // 
+    "schema": null,
+    "theme": null,
+    "font": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Aesthetics;
 console.log(exampleParsed);
 ```
-
-
 
 

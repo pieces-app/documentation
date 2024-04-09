@@ -5,26 +5,26 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**raw** | **Array&lt;number&gt;** | this is the raw value of the embedding | [default to undefined]
-**model** | [**Model**](Model) |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**raw** | **Array&lt;number&gt;**
+**model** | [**Model**](Model)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { Embedding } from '';
+import { Embedding } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Embedding = {
-    "raw": null, // this is the raw value of the embedding
-    "model": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
+    "raw": null,
+    "model": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Embedding;
 console.log(exampleParsed);
 ```
-
-
 
 

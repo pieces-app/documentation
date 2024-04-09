@@ -5,24 +5,24 @@ This is a model that will hold relavent information in relation to a keyboard(in
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**description** | **string** | This also needs structure such as key vals or enums | [default to undefined]
-**shortcut** | **Array&lt;number&gt;** |  | [default to undefined]
-**identifierDescriptionPair** | [**SeededTrackedKeyboardEventIdentifierDescriptionPairs**](SeededTrackedKeyboardEventIdentifierDescriptionPairs) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**description** | **string**
+**shortcut** | **Array&lt;number&gt;**
+**identifierDescriptionPair** | [**SeededTrackedKeyboardEventIdentifierDescriptionPairs**](SeededTrackedKeyboardEventIdentifierDescriptionPairs)
 
 ## Example
 
 ```typescript
-import { SeededTrackedKeyboardEvent } from '';
+import { SeededTrackedKeyboardEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedKeyboardEvent = {
-    "schema": null, // 
-    "description": null, // This also needs structure such as key vals or enums
-    "shortcut": null, // 
-    "identifierDescriptionPair": null, // 
+    "schema": null,
+    "description": null,
+    "shortcut": null,
+    "identifierDescriptionPair": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedKeyboardEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

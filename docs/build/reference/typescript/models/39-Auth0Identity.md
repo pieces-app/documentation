@@ -5,28 +5,28 @@ Contains info retrieved from the identity provider with which the user originall
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**connection** | **string** | Name of the Auth0 connection used to authenticate the user.  | [optional] [default to undefined]
-**isSocial** | **boolean** | Indicates whether the connection is a social one.  | [optional] [default to undefined]
-**provider** | **string** | mapped from user_id  -&gt; id | [optional] [default to undefined]
-**userId** | **string** | User\&#39;s unique identifier for this connection/provider. | [optional] [default to undefined]
-**accessToken** | **string** |  | [optional] [default to undefined]
-**expiresIn** | **number** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**connection** | **string**
+**isSocial** | **boolean**
+**provider** | **string**
+**userId** | **string**
+**accessToken** | **string**
+**expiresIn** | **number**
 
 ## Example
 
 ```typescript
-import { Auth0Identity } from '';
+import { Auth0Identity } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Auth0Identity = {
-    "connection": null, // Name of the Auth0 connection used to authenticate the user. 
-    "isSocial": null, // Indicates whether the connection is a social one. 
-    "provider": null, // mapped from user_id  -&gt; id
-    "userId": null, // User\&#39;s unique identifier for this connection/provider.
-    "accessToken": null, // 
-    "expiresIn": null, // 
+    "connection": null,
+    "isSocial": null,
+    "provider": null,
+    "userId": null,
+    "accessToken": null,
+    "expiresIn": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Auth0Identity;
 console.log(exampleParsed);
 ```
-
-
 
 

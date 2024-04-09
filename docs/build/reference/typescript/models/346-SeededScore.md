@@ -5,26 +5,26 @@ This is the low level seeded score and will let us know what exactly we want to 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**reuse** | **boolean** |  | [optional] [default to undefined]
-**update** | **boolean** |  | [optional] [default to undefined]
-**reference** | **boolean** |  | [optional] [default to undefined]
-**priority** | **boolean** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**reuse** | **boolean**
+**update** | **boolean**
+**reference** | **boolean**
+**priority** | **boolean**
 
 ## Example
 
 ```typescript
-import { SeededScore } from '';
+import { SeededScore } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededScore = {
-    "schema": null, // 
-    "reuse": null, // 
-    "update": null, // 
-    "reference": null, // 
-    "priority": null, // 
+    "schema": null,
+    "reuse": null,
+    "update": null,
+    "reference": null,
+    "priority": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededScore;
 console.log(exampleParsed);
 ```
-
-
 
 

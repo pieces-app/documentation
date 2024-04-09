@@ -5,20 +5,20 @@ This is a specific Distribution for mailgun specific information.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**recipients** | [**Recipients**](Recipients) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**recipients** | [**Recipients**](Recipients)
 
 ## Example
 
 ```typescript
-import { MailgunDistribution } from '';
+import { MailgunDistribution } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: MailgunDistribution = {
-    "schema": null, // 
-    "recipients": null, // 
+    "schema": null,
+    "recipients": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as MailgunDistribution;
 console.log(exampleParsed);
 ```
-
-
 
 

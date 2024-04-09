@@ -5,22 +5,22 @@ This is a model that represents many individual sensitive pieces of data.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Sensitive&gt;**](Sensitive) |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Sensitive&gt;**](Sensitive)
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { Sensitives } from '';
+import { Sensitives } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Sensitives = {
-    "schema": null, // 
-    "iterable": null, // 
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "score": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Sensitives;
 console.log(exampleParsed);
 ```
-
-
 
 

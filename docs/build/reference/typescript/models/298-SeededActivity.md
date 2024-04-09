@@ -5,30 +5,30 @@ This is the preseed to a full blown Activity.  This is the minimum information n
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**event** | [**SeededConnectorTracking**](SeededConnectorTracking) |  | [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] [default to undefined]
-**user** | [**ReferencedUser**](ReferencedUser) |  | [optional] [default to undefined]
-**format** | [**ReferencedFormat**](ReferencedFormat) |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**event** | [**SeededConnectorTracking**](SeededConnectorTracking)
+**application** | [**Application**](Application)
+**asset** | [**ReferencedAsset**](ReferencedAsset)
+**user** | [**ReferencedUser**](ReferencedUser)
+**format** | [**ReferencedFormat**](ReferencedFormat)
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
 
 ## Example
 
 ```typescript
-import { SeededActivity } from '';
+import { SeededActivity } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededActivity = {
-    "event": null, // 
-    "application": null, // 
-    "asset": null, // 
-    "user": null, // 
-    "format": null, // 
-    "mechanism": null, // 
-    "conversation": null, // 
+    "event": null,
+    "application": null,
+    "asset": null,
+    "user": null,
+    "format": null,
+    "mechanism": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededActivity;
 console.log(exampleParsed);
 ```
-
-
 
 

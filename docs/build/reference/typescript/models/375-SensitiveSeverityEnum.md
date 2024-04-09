@@ -5,13 +5,13 @@ This is the enum used to describe the severity of our sensitive model. ie low, m
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { SensitiveSeverityEnum } from '';
+import { SensitiveSeverityEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SensitiveSeverityEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SensitiveSeverityEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

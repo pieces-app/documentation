@@ -5,24 +5,24 @@ if you want a range between you can use from && to.  if you want anything before
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**from** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**to** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**between** | **boolean** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**from** | [**GroupedTimestamp**](GroupedTimestamp)
+**to** | [**GroupedTimestamp**](GroupedTimestamp)
+**between** | **boolean**
 
 ## Example
 
 ```typescript
-import { TimestampRange } from '';
+import { TimestampRange } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TimestampRange = {
-    "schema": null, // 
-    "from": null, // 
-    "to": null, // 
-    "between": null, // 
+    "schema": null,
+    "from": null,
+    "to": null,
+    "between": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TimestampRange;
 console.log(exampleParsed);
 ```
-
-
 
 

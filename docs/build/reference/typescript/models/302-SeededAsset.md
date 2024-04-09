@@ -5,34 +5,34 @@ This is seed data that will be come an asset.  discovered: if set to true this s
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**metadata** | [**SeededAssetMetadata**](SeededAssetMetadata) |  | [optional] [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**format** | [**SeededFormat**](SeededFormat) |  | [default to undefined]
-**discovered** | **boolean** |  | [optional] [default to undefined]
-**available** | [**AvailableFormats**](AvailableFormats) |  | [optional] [default to undefined]
-**pseudo** | **boolean** |  | [optional] [default to undefined]
-**enrichment** | [**SeededAssetEnrichment**](SeededAssetEnrichment) |  | [optional] [default to undefined]
-**demo** | **boolean** | This will let us know if this asset was generated as a \&#39;demo\&#39; snippet | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**metadata** | [**SeededAssetMetadata**](SeededAssetMetadata)
+**application** | [**Application**](Application)
+**format** | [**SeededFormat**](SeededFormat)
+**discovered** | **boolean**
+**available** | [**AvailableFormats**](AvailableFormats)
+**pseudo** | **boolean**
+**enrichment** | [**SeededAssetEnrichment**](SeededAssetEnrichment)
+**demo** | **boolean**
 
 ## Example
 
 ```typescript
-import { SeededAsset } from '';
+import { SeededAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAsset = {
-    "schema": null, // 
-    "metadata": null, // 
-    "application": null, // 
-    "format": null, // 
-    "discovered": null, // 
-    "available": null, // 
-    "pseudo": null, // 
-    "enrichment": null, // 
-    "demo": null, // This will let us know if this asset was generated as a \&#39;demo\&#39; snippet
+    "schema": null,
+    "metadata": null,
+    "application": null,
+    "format": null,
+    "discovered": null,
+    "available": null,
+    "pseudo": null,
+    "enrichment": null,
+    "demo": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

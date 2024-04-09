@@ -5,24 +5,24 @@ This describes a node within a relationship graph used to related like types. ie
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **string** |  | [default to undefined]
-**type** | [**NodeTypeEnum**](NodeTypeEnum) |  | [default to undefined]
-**root** | **boolean** | This is a boolean to let us know if this node is the root or origin of the relationship graph. | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**id** | **string**
+**type** | [**NodeTypeEnum**](NodeTypeEnum)
+**root** | **boolean**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { Node } from '';
+import { Node } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Node = {
-    "id": null, // 
-    "type": null, // 
-    "root": null, // This is a boolean to let us know if this node is the root or origin of the relationship graph.
-    "created": null, // 
+    "id": null,
+    "type": null,
+    "root": null,
+    "created": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Node;
 console.log(exampleParsed);
 ```
-
-
 
 

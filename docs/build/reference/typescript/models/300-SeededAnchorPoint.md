@@ -4,28 +4,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**type** | [**AnchorTypeEnum**](AnchorTypeEnum) |  | [default to undefined]
-**watch** | **boolean** |  | [optional] [default to undefined]
-**fullpath** | **string** |  | [default to undefined]
-**anchor** | **string** | Cannot create an AnchorPoint w/o a Anchor. | [default to undefined]
-**platform** | [**PlatformEnum**](PlatformEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**type** | [**AnchorTypeEnum**](AnchorTypeEnum)
+**watch** | **boolean**
+**fullpath** | **string**
+**anchor** | **string**
+**platform** | [**PlatformEnum**](PlatformEnum)
 
 ## Example
 
 ```typescript
-import { SeededAnchorPoint } from '';
+import { SeededAnchorPoint } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAnchorPoint = {
-    "schema": null, // 
-    "type": null, // 
-    "watch": null, // 
-    "fullpath": null, // 
-    "anchor": null, // Cannot create an AnchorPoint w/o a Anchor.
-    "platform": null, // 
+    "schema": null,
+    "type": null,
+    "watch": null,
+    "fullpath": null,
+    "anchor": null,
+    "platform": null,
 };
 
 console.log(example);
@@ -38,7 +38,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAnchorPoint;
 console.log(exampleParsed);
 ```
-
-
 
 

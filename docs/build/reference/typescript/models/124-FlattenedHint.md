@@ -5,38 +5,38 @@ This is the flattened version of a hint. Ensure that you DO NOT reference the As
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] [default to undefined]
-**type** | [**HintTypeEnum**](HintTypeEnum) |  | [default to undefined]
-**text** | **string** | This is the text of the hint. | [default to undefined]
-**model** | [**ReferencedModel**](ReferencedModel) |  | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**asset** | [**ReferencedAsset**](ReferencedAsset)
+**type** | [**HintTypeEnum**](HintTypeEnum)
+**text** | **string**
+**model** | [**ReferencedModel**](ReferencedModel)
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { FlattenedHint } from '';
+import { FlattenedHint } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedHint = {
-    "schema": null, // 
-    "id": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
-    "mechanism": null, // 
-    "asset": null, // 
-    "type": null, // 
-    "text": null, // This is the text of the hint.
-    "model": null, // 
-    "score": null, // 
+    "schema": null,
+    "id": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
+    "mechanism": null,
+    "asset": null,
+    "type": null,
+    "text": null,
+    "model": null,
+    "score": null,
 };
 
 console.log(example);
@@ -49,7 +49,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedHint;
 console.log(exampleParsed);
 ```
-
-
 
 

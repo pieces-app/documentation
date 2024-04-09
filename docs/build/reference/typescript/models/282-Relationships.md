@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;Relationship&gt;**](Relationship) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;Relationship&gt;**](Relationship)
 
 ## Example
 
 ```typescript
-import { Relationships } from '';
+import { Relationships } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Relationships = {
-    "iterable": null, // 
+    "iterable": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Relationships;
 console.log(exampleParsed);
 ```
-
-
 
 

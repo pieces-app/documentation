@@ -5,13 +5,13 @@ This is a running enumeration for the Names of all the Applications that can be 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ApplicationNameEnum } from '';
+import { ApplicationNameEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ApplicationNameEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ApplicationNameEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

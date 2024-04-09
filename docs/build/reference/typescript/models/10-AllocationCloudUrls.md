@@ -5,24 +5,24 @@ you will have at minimum 2 urls,  base: is the default url of your cloud.  id: i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**base** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | [default to undefined]
-**id** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | [default to undefined]
-**vanity** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**base** | [**AllocationCloudUrl**](AllocationCloudUrl)
+**id** | [**AllocationCloudUrl**](AllocationCloudUrl)
+**vanity** | [**AllocationCloudUrl**](AllocationCloudUrl)
 
 ## Example
 
 ```typescript
-import { AllocationCloudUrls } from '';
+import { AllocationCloudUrls } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AllocationCloudUrls = {
-    "schema": null, // 
-    "base": null, // 
-    "id": null, // 
-    "vanity": null, // 
+    "schema": null,
+    "base": null,
+    "id": null,
+    "vanity": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AllocationCloudUrls;
 console.log(exampleParsed);
 ```
-
-
 
 

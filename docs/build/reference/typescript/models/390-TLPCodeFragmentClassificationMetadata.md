@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**context** | [**Classification**](Classification) |  | [optional] [default to undefined]
-**prior** | [**Classification**](Classification) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**context** | [**Classification**](Classification)
+**prior** | [**Classification**](Classification)
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentClassificationMetadata } from '';
+import { TLPCodeFragmentClassificationMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentClassificationMetadata = {
-    "schema": null, // 
-    "context": null, // 
-    "prior": null, // 
+    "schema": null,
+    "context": null,
+    "prior": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentClassificationMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

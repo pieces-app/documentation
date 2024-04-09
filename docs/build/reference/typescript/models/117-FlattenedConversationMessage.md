@@ -5,40 +5,40 @@ This is a flattened DAG safe version of a ConversationMessage.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**model** | [**Model**](Model) |  | [optional] [default to undefined]
-**fragment** | [**FragmentFormat**](FragmentFormat) |  | [optional] [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [default to undefined]
-**sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum) |  | [optional] [default to undefined]
-**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum) |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
-**annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**model** | [**Model**](Model)
+**fragment** | [**FragmentFormat**](FragmentFormat)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
+**sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum)
+**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
+**score** | [**Score**](Score)
+**annotations** | [**FlattenedAnnotations**](FlattenedAnnotations)
 
 ## Example
 
 ```typescript
-import { FlattenedConversationMessage } from '';
+import { FlattenedConversationMessage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedConversationMessage = {
-    "schema": null, // 
-    "id": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
-    "model": null, // 
-    "fragment": null, // 
-    "conversation": null, // 
-    "sentiment": null, // 
-    "role": null, // 
-    "score": null, // 
-    "annotations": null, // 
+    "schema": null,
+    "id": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
+    "model": null,
+    "fragment": null,
+    "conversation": null,
+    "sentiment": null,
+    "role": null,
+    "score": null,
+    "annotations": null,
 };
 
 console.log(example);
@@ -51,7 +51,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedConversationMessage;
 console.log(exampleParsed);
 ```
-
-
 
 

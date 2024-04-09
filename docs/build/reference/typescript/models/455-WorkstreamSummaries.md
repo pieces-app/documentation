@@ -5,24 +5,24 @@ This is a collection of many WorkstreamSummary
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;WorkstreamSummary&gt;**](WorkstreamSummary) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an summary id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;WorkstreamSummary&gt;**](WorkstreamSummary)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { WorkstreamSummaries } from '';
+import { WorkstreamSummaries } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: WorkstreamSummaries = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an summary id.
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as WorkstreamSummaries;
 console.log(exampleParsed);
 ```
-
-
 
 

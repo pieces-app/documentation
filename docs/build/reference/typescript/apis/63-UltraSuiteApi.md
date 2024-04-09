@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
+Method | HTTP request
+------------- | -------------
+[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
 
 
-## **assetsCreateUltraSuiteAsset** Deprecated: 
+## **assetsCreateUltraSuiteAsset**
 > Asset assetsCreateUltraSuiteAsset()
 
 This Endpoint will create an Asset that is sent from UltraSuite.
@@ -15,9 +15,8 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UltraSuiteApi(configuration);
 
@@ -33,14 +32,14 @@ apiInstance.assetsCreateUltraSuiteAsset(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededUltraSuiteAsset** | **SeededUltraSuiteAsset**|  |
 
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -49,10 +48,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

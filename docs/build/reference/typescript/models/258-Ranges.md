@@ -5,26 +5,26 @@ This is a collection of many Ranges
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Range&gt;**](Range) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an range id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
-**continuous** | **boolean** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Range&gt;**](Range)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
+**continuous** | **boolean**
 
 ## Example
 
 ```typescript
-import { Ranges } from '';
+import { Ranges } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Ranges = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an range id.
-    "score": null, // 
-    "continuous": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
+    "continuous": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Ranges;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@ This is the output model for the /open_ai/models/list endpoint.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**models** | [**SeededModels**](SeededModels) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**models** | [**SeededModels**](SeededModels)
 
 ## Example
 
 ```typescript
-import { OpenAIModelsListOutput } from '';
+import { OpenAIModelsListOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OpenAIModelsListOutput = {
-    "schema": null, // 
-    "models": null, // 
+    "schema": null,
+    "models": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OpenAIModelsListOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

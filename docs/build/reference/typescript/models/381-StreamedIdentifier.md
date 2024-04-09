@@ -5,22 +5,22 @@ This is currently only used within /assets/steam/identifiers && /conversations/s
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] [default to undefined]
-**deleted** | **boolean** | This is a specific bool that will let us know if we deleted an Identifierfrom the db. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**asset** | [**ReferencedAsset**](ReferencedAsset)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
+**deleted** | **boolean**
 
 ## Example
 
 ```typescript
-import { StreamedIdentifier } from '';
+import { StreamedIdentifier } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: StreamedIdentifier = {
-    "asset": null, // 
-    "conversation": null, // 
-    "deleted": null, // This is a specific bool that will let us know if we deleted an Identifierfrom the db.
+    "asset": null,
+    "conversation": null,
+    "deleted": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as StreamedIdentifier;
 console.log(exampleParsed);
 ```
-
-
 
 

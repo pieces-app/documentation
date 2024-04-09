@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**formatAnalysis**](FormatApi#formatanalysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
-[**formatReclassify**](FormatApi#formatreclassify) | **POST** /format/reclassify | /format/reclassify [POST]
-[**formatSnapshot**](FormatApi#formatsnapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
-[**formatUpdateValue**](FormatApi#formatupdatevalue) | **POST** /format/update/value | [POST] /format/update/value
-[**formatUsageEvent**](FormatApi#formatusageevent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
+Method | HTTP request
+------------- | -------------
+[**formatAnalysis**](FormatApi#formatanalysis) | **GET** /format/\{format\}/analysis
+[**formatReclassify**](FormatApi#formatreclassify) | **POST** /format/reclassify
+[**formatSnapshot**](FormatApi#formatsnapshot) | **GET** /format/\{format\}
+[**formatUpdateValue**](FormatApi#formatupdatevalue) | **POST** /format/update/value
+[**formatUsageEvent**](FormatApi#formatusageevent) | **POST** /format/usage/event
 
 
-## **formatAnalysis** Deprecated: 
+## **formatAnalysis**
 > Analysis formatAnalysis()
 
 This will get an analysis from a format\'s id.
@@ -19,9 +19,8 @@ This will get an analysis from a format\'s id.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
@@ -37,14 +36,14 @@ apiInstance.formatAnalysis(body).then((data: Analysis) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **format** | [**string**] | The id (uuid) for a specific format. | defaults to undefined
 
 
 ### Return type
 
-**Analysis**
+[**Analysis**](../models/Analysis)
 
 ### HTTP request headers
 
@@ -53,14 +52,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **formatReclassify** Deprecated: 
+## **formatReclassify**
 > Format formatReclassify()
 
 This endpoint will be used to reclassify a single Format.
@@ -68,9 +65,8 @@ This endpoint will be used to reclassify a single Format.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
@@ -88,7 +84,7 @@ apiInstance.formatReclassify(body).then((data: Format) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **formatReclassification** | **FormatReclassification**|  |
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -96,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Format**
+[**Format**](../models/Format)
 
 ### HTTP request headers
 
@@ -105,13 +101,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **formatSnapshot** Deprecated: 
+## **formatSnapshot**
 > Format formatSnapshot()
 
 Get a snapshot of a specific format.
@@ -119,9 +113,8 @@ Get a snapshot of a specific format.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
@@ -139,7 +132,7 @@ apiInstance.formatSnapshot(body).then((data: Format) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **format** | [**string**] | The id (uuid) for a specific format. | defaults to undefined
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -147,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Format**
+[**Format**](../models/Format)
 
 ### HTTP request headers
 
@@ -156,13 +149,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **formatUpdateValue** Deprecated: 
+## **formatUpdateValue**
 > Format formatUpdateValue()
 
 This will update a format\'s value, ie, a formats fragment or file depending on what is provided.  code/text fragment behavior: If this format is an asset.preview.base we will update the asset.original\'s value. if this format is an asset.preview.original we will update the asset.preview.base\'s value.  code/text file behavior: If the the format that is update is the asset.preview.base is a fragment and the asset.original is file then we will update the asset.original\'s value to be bytes or string respectively. This goes the same for orignal to preview but will be go the reverse order so if the original is a file we will update the preview base\'s fragment string.  image fragment/file: We will not modify preview -> orignal or original -> preview here. so there are zero side effects in this case, and will update as normal. (this will be the case for all other value updates.)
@@ -170,9 +161,8 @@ This will update a format\'s value, ie, a formats fragment or file depending on 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
@@ -190,7 +180,7 @@ apiInstance.formatUpdateValue(body).then((data: Format) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **format** | **Format**| This is the format that you want to update. |
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -198,7 +188,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Format**
+[**Format**](../models/Format)
 
 ### HTTP request headers
 
@@ -207,14 +197,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK, you will get an updated format. |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **formatUsageEvent** Deprecated: 
+## **formatUsageEvent**
 > TrackedFormatEvent formatUsageEvent()
 
 This is an analytics endpoint that will enable us to know when a user has copied/downloaded/beamed/viewed a format.
@@ -222,9 +210,8 @@ This is an analytics endpoint that will enable us to know when a user has copied
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatApi(configuration);
 
@@ -240,14 +227,14 @@ apiInstance.formatUsageEvent(body).then((data: TrackedFormatEvent) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededTrackedFormatEvent** | **SeededTrackedFormatEvent**| This is a SeededTrackedFormatEvent, per tracked event:) |
 
 
 ### Return type
 
-**TrackedFormatEvent**
+[**TrackedFormatEvent**](../models/TrackedFormatEvent)
 
 ### HTTP request headers
 
@@ -256,10 +243,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

@@ -5,13 +5,13 @@ This is a Model used for the Model class. This will be used to describe the prov
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ExternalMLProviderEnum } from '';
+import { ExternalMLProviderEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExternalMLProviderEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExternalMLProviderEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

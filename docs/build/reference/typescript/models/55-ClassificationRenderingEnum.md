@@ -5,13 +5,13 @@ Specifically supported renderings...usually between generic types
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ClassificationRenderingEnum } from '';
+import { ClassificationRenderingEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ClassificationRenderingEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ClassificationRenderingEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

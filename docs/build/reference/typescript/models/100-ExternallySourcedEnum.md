@@ -5,13 +5,13 @@ This is an enum that will highlight something that is externally sourced.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ExternallySourcedEnum } from '';
+import { ExternallySourcedEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExternallySourcedEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExternallySourcedEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

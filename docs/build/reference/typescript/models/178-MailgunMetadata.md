@@ -5,20 +5,20 @@ TODO add additional properties. TODO eventually modify this model to look like t
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**messageId** | **string** | This is the id given to us from mailgun when the email was sent successfully. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**messageId** | **string**
 
 ## Example
 
 ```typescript
-import { MailgunMetadata } from '';
+import { MailgunMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: MailgunMetadata = {
-    "schema": null, // 
-    "messageId": null, // This is the id given to us from mailgun when the email was sent successfully.
+    "schema": null,
+    "messageId": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as MailgunMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

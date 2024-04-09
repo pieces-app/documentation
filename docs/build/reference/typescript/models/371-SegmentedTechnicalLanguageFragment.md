@@ -5,24 +5,24 @@ This is the output iterable model for \'/machine_learning/text/technical_languag
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  | [default to undefined]
-**specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] [default to undefined]
-**fragment** | [**FragmentFormat**](FragmentFormat) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum)
+**specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**fragment** | [**FragmentFormat**](FragmentFormat)
 
 ## Example
 
 ```typescript
-import { SegmentedTechnicalLanguageFragment } from '';
+import { SegmentedTechnicalLanguageFragment } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SegmentedTechnicalLanguageFragment = {
-    "schema": null, // 
-    "generic": null, // 
-    "specific": null, // 
-    "fragment": null, // 
+    "schema": null,
+    "generic": null,
+    "specific": null,
+    "fragment": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SegmentedTechnicalLanguageFragment;
 console.log(exampleParsed);
 ```
-
-
 
 

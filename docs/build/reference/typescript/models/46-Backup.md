@@ -5,32 +5,32 @@ This is a cloud Backup. This is specific metadata needed inorder to retrieve a B
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**version** | **string** |  | [default to undefined]
-**timestamp** | **string** |  | [default to undefined]
-**bytes** | **number** |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deviceName** | **string** |  | [default to undefined]
-**platform** | [**PlatformEnum**](PlatformEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**version** | **string**
+**timestamp** | **string**
+**bytes** | **number**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**deviceName** | **string**
+**platform** | [**PlatformEnum**](PlatformEnum)
 
 ## Example
 
 ```typescript
-import { Backup } from '';
+import { Backup } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Backup = {
-    "schema": null, // 
-    "id": null, // 
-    "version": null, // 
-    "timestamp": null, // 
-    "bytes": null, // 
-    "created": null, // 
-    "deviceName": null, // 
-    "platform": null, // 
+    "schema": null,
+    "id": null,
+    "version": null,
+    "timestamp": null,
+    "bytes": null,
+    "created": null,
+    "deviceName": null,
+    "platform": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Backup;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,13 +5,13 @@ This is an enum used to differentiate the different between different anchors. U
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { AnchorTypeEnum } from '';
+import { AnchorTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AnchorTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AnchorTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

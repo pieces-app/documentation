@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**count** | **number** | this is the number of cpus | [default to undefined]
-**brand** | **string** | this is the brand of cpu | [default to undefined]
-**frequency** | **number** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**count** | **number**
+**brand** | **string**
+**frequency** | **number**
 
 ## Example
 
 ```typescript
-import { SystemExecutionCpuInformation } from '';
+import { SystemExecutionCpuInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SystemExecutionCpuInformation = {
-    "count": null, // this is the number of cpus
-    "brand": null, // this is the brand of cpu
-    "frequency": null, // 
+    "count": null,
+    "brand": null,
+    "frequency": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SystemExecutionCpuInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

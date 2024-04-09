@@ -5,24 +5,24 @@ This seeded tracked asset event will be recieved by a context on the OS Server s
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [default to undefined]
-**identifierDescriptionPair** | [**TrackedAssetEventIdentifierDescriptionPairs**](TrackedAssetEventIdentifierDescriptionPairs) |  | [default to undefined]
-**metadata** | [**TrackedAssetEventMetadata**](TrackedAssetEventMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | [**ReferencedAsset**](ReferencedAsset)
+**identifierDescriptionPair** | [**TrackedAssetEventIdentifierDescriptionPairs**](TrackedAssetEventIdentifierDescriptionPairs)
+**metadata** | [**TrackedAssetEventMetadata**](TrackedAssetEventMetadata)
 
 ## Example
 
 ```typescript
-import { SeededTrackedAssetEvent } from '';
+import { SeededTrackedAssetEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedAssetEvent = {
-    "schema": null, // 
-    "asset": null, // 
-    "identifierDescriptionPair": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "asset": null,
+    "identifierDescriptionPair": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedAssetEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

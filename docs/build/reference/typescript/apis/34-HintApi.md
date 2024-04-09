@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | \&#39;/hint/\{hint\}/scores/increment\&#39; [POST]
-[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
-[**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update | /hint/update [POST]
+Method | HTTP request
+------------- | -------------
+[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
+[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
+[**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update
 
 
-## **hintScoresIncrement** Deprecated: 
+## **hintScoresIncrement**
 > hintScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -17,9 +17,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.hintScoresIncrement(body).then((data: void (empty response body)) =>
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
@@ -54,14 +53,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **hintSpecificHintSnapshot** Deprecated: 
+## **hintSpecificHintSnapshot**
 > Hint hintSpecificHintSnapshot()
 
 This will get a snapshot of a specific hint.
@@ -69,9 +66,8 @@ This will get a snapshot of a specific hint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
@@ -87,14 +83,14 @@ apiInstance.hintSpecificHintSnapshot(body).then((data: Hint) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
 ### Return type
 
-**Hint**
+[**Hint**](../models/Hint)
 
 ### HTTP request headers
 
@@ -103,14 +99,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **hintUpdate** Deprecated: 
+## **hintUpdate**
 > Hint hintUpdate()
 
 This will update a specific hint.
@@ -118,9 +112,8 @@ This will update a specific hint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.HintApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.hintUpdate(body).then((data: Hint) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **hint** | **Hint**|  |
 
 
 ### Return type
 
-**Hint**
+[**Hint**](../models/Hint)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

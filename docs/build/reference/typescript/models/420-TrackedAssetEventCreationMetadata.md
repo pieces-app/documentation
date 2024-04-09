@@ -5,22 +5,22 @@ Metadata attached to a creation event on an Asset
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**clipboard** | [**TrackedAssetEventCreationMetadataClipboard**](TrackedAssetEventCreationMetadataClipboard) |  | [optional] [default to undefined]
-**file** | [**TrackedAssetEventCreationMetadataFile**](TrackedAssetEventCreationMetadataFile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**clipboard** | [**TrackedAssetEventCreationMetadataClipboard**](TrackedAssetEventCreationMetadataClipboard)
+**file** | [**TrackedAssetEventCreationMetadataFile**](TrackedAssetEventCreationMetadataFile)
 
 ## Example
 
 ```typescript
-import { TrackedAssetEventCreationMetadata } from '';
+import { TrackedAssetEventCreationMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetEventCreationMetadata = {
-    "schema": null, // 
-    "clipboard": null, // 
-    "file": null, // 
+    "schema": null,
+    "clipboard": null,
+    "file": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventCreationMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

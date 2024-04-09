@@ -5,26 +5,26 @@ config model for notification invoking
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **number** |  | [default to undefined]
-**title** | **string** |  | [optional] [default to undefined]
-**message** | **string** |  | [optional] [default to undefined]
-**payload** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **number**
+**title** | **string**
+**message** | **string**
+**payload** | **string**
 
 ## Example
 
 ```typescript
-import { Notification } from '';
+import { Notification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Notification = {
-    "schema": null, // 
-    "id": null, // 
-    "title": null, // 
-    "message": null, // 
-    "payload": null, // 
+    "schema": null,
+    "id": null,
+    "title": null,
+    "message": null,
+    "payload": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Notification;
 console.log(exampleParsed);
 ```
-
-
 
 

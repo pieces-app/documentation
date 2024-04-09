@@ -5,34 +5,34 @@ A Model to support account creation to Auth0\'s Database.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**clientId** | **string** | The client_id of your client. | [default to undefined]
-**email** | **string** | The user\&#39;s email address. | [default to undefined]
-**connection** | **string** | The name of the database configured to your client. | [default to undefined]
-**username** | **string** | The user\&#39;s username. Only valid if the connection requires a username. | [default to undefined]
-**givenName** | **string** | The user\&#39;s given name(s). | [default to undefined]
-**familyName** | **string** | The user\&#39;s family name(s). | [default to undefined]
-**name** | **string** | The user\&#39;s full name. | [default to undefined]
-**picture** | **string** | A URI pointing to the user\&#39;s picture. | [default to undefined]
-**nickname** | **string** | The user\&#39;s nickname. | [default to undefined]
+Name | Type
+------------ | -------------
+**clientId** | **string**
+**email** | **string**
+**connection** | **string**
+**username** | **string**
+**givenName** | **string**
+**familyName** | **string**
+**name** | **string**
+**picture** | **string**
+**nickname** | **string**
 
 ## Example
 
 ```typescript
-import { OAuthAccount } from '';
+import { OAuthAccount } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OAuthAccount = {
-    "clientId": null, // The client_id of your client.
-    "email": null, // The user\&#39;s email address.
-    "connection": null, // The name of the database configured to your client.
-    "username": null, // The user\&#39;s username. Only valid if the connection requires a username.
-    "givenName": null, // The user\&#39;s given name(s).
-    "familyName": null, // The user\&#39;s family name(s).
-    "name": null, // The user\&#39;s full name.
-    "picture": null, // A URI pointing to the user\&#39;s picture.
-    "nickname": null, // The user\&#39;s nickname.
+    "clientId": null,
+    "email": null,
+    "connection": null,
+    "username": null,
+    "givenName": null,
+    "familyName": null,
+    "name": null,
+    "picture": null,
+    "nickname": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OAuthAccount;
 console.log(exampleParsed);
 ```
-
-
 
 

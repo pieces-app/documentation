@@ -5,13 +5,13 @@ This describes the type of a node ie an asset, tag, website, format... ETC
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { NodeTypeEnum } from '';
+import { NodeTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: NodeTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as NodeTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

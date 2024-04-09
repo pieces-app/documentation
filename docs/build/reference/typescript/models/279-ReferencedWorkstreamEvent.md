@@ -5,22 +5,22 @@ This is a minimal representation of a WorkstreamEvent event.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedWorkstreamEvent**](FlattenedWorkstreamEvent) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedWorkstreamEvent**](FlattenedWorkstreamEvent)
 
 ## Example
 
 ```typescript
-import { ReferencedWorkstreamEvent } from '';
+import { ReferencedWorkstreamEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedWorkstreamEvent = {
-    "schema": null, // 
-    "id": null, // 
-    "reference": null, // 
+    "schema": null,
+    "id": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedWorkstreamEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

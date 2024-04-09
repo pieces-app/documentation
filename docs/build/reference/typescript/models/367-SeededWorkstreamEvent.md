@@ -5,30 +5,30 @@ This is a precreated version of a WorkstreamEvent event, this will be used inges
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**trigger** | [**WorkstreamEventTrigger**](WorkstreamEventTrigger) |  | [default to undefined]
-**metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  | [optional] [default to undefined]
-**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] [default to undefined]
-**internalIdentifier** | **string** | This is used to override the event identifier, if this was an event that was originally in the internal events collection. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**score** | [**Score**](Score)
+**application** | [**Application**](Application)
+**trigger** | [**WorkstreamEventTrigger**](WorkstreamEventTrigger)
+**metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata)
+**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary)
+**internalIdentifier** | **string**
 
 ## Example
 
 ```typescript
-import { SeededWorkstreamEvent } from '';
+import { SeededWorkstreamEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededWorkstreamEvent = {
-    "schema": null, // 
-    "score": null, // 
-    "application": null, // 
-    "trigger": null, // 
-    "metadata": null, // 
-    "summary": null, // 
-    "internalIdentifier": null, // This is used to override the event identifier, if this was an event that was originally in the internal events collection.
+    "schema": null,
+    "score": null,
+    "application": null,
+    "trigger": null,
+    "metadata": null,
+    "summary": null,
+    "internalIdentifier": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededWorkstreamEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

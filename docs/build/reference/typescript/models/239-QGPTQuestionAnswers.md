@@ -5,20 +5,20 @@ This is the plural of QGPTQuestionAnswer
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;QGPTQuestionAnswer&gt;**](QGPTQuestionAnswer) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;QGPTQuestionAnswer&gt;**](QGPTQuestionAnswer)
 
 ## Example
 
 ```typescript
-import { QGPTQuestionAnswers } from '';
+import { QGPTQuestionAnswers } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTQuestionAnswers = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTQuestionAnswers;
 console.log(exampleParsed);
 ```
-
-
 
 

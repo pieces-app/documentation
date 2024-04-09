@@ -5,22 +5,22 @@ This is the input model for /external_provider/api_key/create
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**user** | **string** | This is the ID of the User. | [default to undefined]
-**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**user** | **string**
+**openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
 
 ## Example
 
 ```typescript
-import { PrecreatedExternalProviderApiKey } from '';
+import { PrecreatedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PrecreatedExternalProviderApiKey = {
-    "schema": null, // 
-    "user": null, // This is the ID of the User.
-    "openAI": null, // 
+    "schema": null,
+    "user": null,
+    "openAI": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PrecreatedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

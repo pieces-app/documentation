@@ -5,13 +5,13 @@ OPEN: Means that privacy is fully open CLOSED: Means that privacy is fully locke
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { PrivacyEnum } from '';
+import { PrivacyEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PrivacyEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PrivacyEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

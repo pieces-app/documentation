@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**seed** | [**SeededTag**](SeededTag) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**seed** | [**SeededTag**](SeededTag)
 
 ## Example
 
 ```typescript
-import { DiscoveredRelatedTag } from '';
+import { DiscoveredRelatedTag } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DiscoveredRelatedTag = {
-    "schema": null, // 
-    "seed": null, // 
+    "schema": null,
+    "seed": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DiscoveredRelatedTag;
 console.log(exampleParsed);
 ```
-
-
 
 

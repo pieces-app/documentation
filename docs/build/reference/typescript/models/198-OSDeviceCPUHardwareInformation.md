@@ -5,22 +5,22 @@ This will let us know specific hardware information related to the CPU.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**memory** | **number** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**memory** | **number**
 
 ## Example
 
 ```typescript
-import { OSDeviceCPUHardwareInformation } from '';
+import { OSDeviceCPUHardwareInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSDeviceCPUHardwareInformation = {
-    "schema": null, // 
-    "name": null, // 
-    "memory": null, // 
+    "schema": null,
+    "name": null,
+    "memory": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSDeviceCPUHardwareInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

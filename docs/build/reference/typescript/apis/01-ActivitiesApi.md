@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**activitiesCreateNewActivity**](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
-[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
-[**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities | /activities [GET]
+Method | HTTP request
+------------- | -------------
+[**activitiesCreateNewActivity**](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create
+[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete
+[**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities
 
 
-## **activitiesCreateNewActivity** Deprecated: 
+## **activitiesCreateNewActivity**
 > Activity activitiesCreateNewActivity()
 
 This will create a new Activity.
@@ -17,9 +17,8 @@ This will create a new Activity.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.activitiesCreateNewActivity(body).then((data: Activity) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededActivity** | **SeededActivity**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -45,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Activity**
+[**Activity**](../models/Activity)
 
 ### HTTP request headers
 
@@ -54,14 +53,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **activitiesDeleteSpecificActivity** Deprecated: 
+## **activitiesDeleteSpecificActivity**
 > activitiesDeleteSpecificActivity()
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
@@ -69,9 +66,8 @@ This will delete a specific activity.  important note: if we delete an activity:
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
@@ -87,7 +83,7 @@ apiInstance.activitiesDeleteSpecificActivity(body).then((data: void (empty respo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **activity** | [**string**] | This is a specific activity uuid. | defaults to undefined
 
@@ -103,14 +99,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **activitiesSnapshot** Deprecated: 
+## **activitiesSnapshot**
 > Activities activitiesSnapshot()
 
 This will get a snapshot of all of the activities
@@ -118,9 +112,8 @@ This will get a snapshot of all of the activities
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ActivitiesApi(configuration);
 
@@ -138,7 +131,7 @@ apiInstance.activitiesSnapshot(body).then((data: Activities) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
@@ -146,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Activities**
+[**Activities**](../models/Activities)
 
 ### HTTP request headers
 
@@ -155,11 +148,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

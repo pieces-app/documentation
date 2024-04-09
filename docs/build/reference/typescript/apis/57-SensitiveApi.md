@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | \&#39;/sensitive/\{sensitive\}/scores/increment\&#39; [POST]
-[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
-[**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
+Method | HTTP request
+------------- | -------------
+[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment
+[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\}
+[**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update
 
 
-## **sensitiveScoresIncrement** Deprecated: 
+## **sensitiveScoresIncrement**
 > sensitiveScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -17,9 +17,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.sensitiveScoresIncrement(body).then((data: void (empty response body
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
@@ -54,14 +53,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **sensitiveSnapshot** Deprecated: 
+## **sensitiveSnapshot**
 > Sensitive sensitiveSnapshot()
 
 This will get a specific sensitive via the sensitive uuid.
@@ -69,9 +66,8 @@ This will get a specific sensitive via the sensitive uuid.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
@@ -87,14 +83,14 @@ apiInstance.sensitiveSnapshot(body).then((data: Sensitive) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **sensitive** | [**string**] |  | defaults to undefined
 
 
 ### Return type
 
-**Sensitive**
+[**Sensitive**](../models/Sensitive)
 
 ### HTTP request headers
 
@@ -103,14 +99,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **updateSensitive** Deprecated: 
+## **updateSensitive**
 > Sensitive updateSensitive()
 
 This will update a specific sensitive
@@ -118,9 +112,8 @@ This will update a specific sensitive
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitiveApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.updateSensitive(body).then((data: Sensitive) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **Sensitive**|  |
 
 
 ### Return type
 
-**Sensitive**
+[**Sensitive**](../models/Sensitive)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

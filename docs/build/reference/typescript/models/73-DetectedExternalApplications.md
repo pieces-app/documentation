@@ -5,20 +5,20 @@ This is used as the returnable for the /applications/external && /applications/e
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;DetectedExternalApplication&gt;**](DetectedExternalApplication) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;DetectedExternalApplication&gt;**](DetectedExternalApplication)
 
 ## Example
 
 ```typescript
-import { DetectedExternalApplications } from '';
+import { DetectedExternalApplications } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DetectedExternalApplications = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DetectedExternalApplications;
 console.log(exampleParsed);
 ```
-
-
 
 

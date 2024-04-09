@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SeededDiscoverableHtmlWebpage&gt;**](SeededDiscoverableHtmlWebpage) |  | [default to undefined]
-**application** | **string** | This is the applicaiton Id used to connect to Pieces OS. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SeededDiscoverableHtmlWebpage&gt;**](SeededDiscoverableHtmlWebpage)
+**application** | **string**
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableHtmlWebpages } from '';
+import { SeededDiscoverableHtmlWebpages } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableHtmlWebpages = {
-    "schema": null, // 
-    "iterable": null, // 
-    "application": null, // This is the applicaiton Id used to connect to Pieces OS.
+    "schema": null,
+    "iterable": null,
+    "application": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableHtmlWebpages;
 console.log(exampleParsed);
 ```
-
-
 
 

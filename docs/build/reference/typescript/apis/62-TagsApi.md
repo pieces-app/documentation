@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
-[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
-[**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
-[**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags | /tags [GET]
+Method | HTTP request
+------------- | -------------
+[**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create
+[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
+[**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists
+[**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags
 
 
-## **tagsCreateNewTag** Deprecated: 
+## **tagsCreateNewTag**
 > Tag tagsCreateNewTag()
 
 This will create a new tag.
@@ -18,9 +18,8 @@ This will create a new tag.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.tagsCreateNewTag(body).then((data: Tag) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededTag** | **SeededTag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -46,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Tag**
+[**Tag**](../models/Tag)
 
 ### HTTP request headers
 
@@ -55,14 +54,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagsDeleteSpecificTag** Deprecated: 
+## **tagsDeleteSpecificTag**
 > tagsDeleteSpecificTag()
 
 This will delete a specific tag.
@@ -70,9 +67,8 @@ This will delete a specific tag.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
@@ -88,7 +84,7 @@ apiInstance.tagsDeleteSpecificTag(body).then((data: void (empty response body)) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -104,14 +100,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagsExists** Deprecated: 
+## **tagsExists**
 > ExistingMetadata tagsExists()
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
@@ -119,9 +113,8 @@ This will check all of the tags in our database to see if this specific provided
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
@@ -137,14 +130,14 @@ apiInstance.tagsExists(body).then((data: ExistingMetadata) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **existentMetadata** | **ExistentMetadata**|  |
 
 
 ### Return type
 
-**ExistingMetadata**
+[**ExistingMetadata**](../models/ExistingMetadata)
 
 ### HTTP request headers
 
@@ -153,14 +146,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagsSnapshot** Deprecated: 
+## **tagsSnapshot**
 > Tags tagsSnapshot()
 
 This will get a snapshot of all of your tags.
@@ -168,9 +159,8 @@ This will get a snapshot of all of your tags.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagsApi(configuration);
 
@@ -186,14 +176,14 @@ apiInstance.tagsSnapshot(body).then((data: Tags) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Tags**
+[**Tags**](../models/Tags)
 
 ### HTTP request headers
 
@@ -202,11 +192,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

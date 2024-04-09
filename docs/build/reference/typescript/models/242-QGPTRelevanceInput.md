@@ -5,36 +5,36 @@ This is the input body for the /code_gpt/relevance endpoint.  There are a couple
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**query** | **string** | This is the question that the user is asking. | [default to undefined]
-**paths** | **Array&lt;string&gt;** | This is an optional list of file || folder paths. | [optional] [default to undefined]
-**seeds** | [**Seeds**](Seeds) |  | [optional] [default to undefined]
-**assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] [default to undefined]
-**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] [default to undefined]
-**options** | [**QGPTRelevanceInputOptions**](QGPTRelevanceInputOptions) |  | [optional] [default to undefined]
-**application** | **string** | optional application id | [optional] [default to undefined]
-**model** | **string** | optional model id | [optional] [default to undefined]
-**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**query** | **string**
+**paths** | **Array&lt;string&gt;**
+**seeds** | [**Seeds**](Seeds)
+**assets** | [**FlattenedAssets**](FlattenedAssets)
+**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
+**options** | [**QGPTRelevanceInputOptions**](QGPTRelevanceInputOptions)
+**application** | **string**
+**model** | **string**
+**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
 ## Example
 
 ```typescript
-import { QGPTRelevanceInput } from '';
+import { QGPTRelevanceInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTRelevanceInput = {
-    "schema": null, // 
-    "query": null, // This is the question that the user is asking.
-    "paths": null, // This is an optional list of file || folder paths.
-    "seeds": null, // 
-    "assets": null, // 
-    "messages": null, // 
-    "options": null, // 
-    "application": null, // optional application id
-    "model": null, // optional model id
-    "temporal": null, // 
+    "schema": null,
+    "query": null,
+    "paths": null,
+    "seeds": null,
+    "assets": null,
+    "messages": null,
+    "options": null,
+    "application": null,
+    "model": null,
+    "temporal": null,
 };
 
 console.log(example);
@@ -47,7 +47,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTRelevanceInput;
 console.log(exampleParsed);
 ```
-
-
 
 

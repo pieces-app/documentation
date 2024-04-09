@@ -5,24 +5,24 @@ Assumption: filters imposed in this model can be overwritten by passing them in 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | **string** | application id. | [default to undefined]
-**iterable** | [**Array&lt;SeededDiscoverableAsset&gt;**](SeededDiscoverableAsset) | This is an iterable of already snippitized snippets that we will compare &amp;&amp; cluster. | [default to undefined]
-**filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | **string**
+**iterable** | [**Array&lt;SeededDiscoverableAsset&gt;**](SeededDiscoverableAsset)
+**filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters)
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableAssets } from '';
+import { SeededDiscoverableAssets } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableAssets = {
-    "schema": null, // 
-    "application": null, // application id.
-    "iterable": null, // This is an iterable of already snippitized snippets that we will compare &amp;&amp; cluster.
-    "filters": null, // 
+    "schema": null,
+    "application": null,
+    "iterable": null,
+    "filters": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableAssets;
 console.log(exampleParsed);
 ```
-
-
 
 

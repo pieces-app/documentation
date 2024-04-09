@@ -5,18 +5,18 @@ This is for the users that wants to have contextualized code conversations, mean
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { QGPTConversationPipelineForContextualizedCodeDialog } from '';
+import { QGPTConversationPipelineForContextualizedCodeDialog } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTConversationPipelineForContextualizedCodeDialog = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTConversationPipelineForContextualizedCodeDialog;
 console.log(exampleParsed);
 ```
-
-
 
 

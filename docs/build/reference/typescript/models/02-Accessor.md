@@ -5,28 +5,28 @@ This is used to determine who has accessed a share. and how many times.  The use
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**os** | **string** | this is an os id. | [default to undefined]
-**share** | **string** |  | [default to undefined]
-**count** | **number** | how many times this user accessed this piece. | [default to undefined]
-**user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**os** | **string**
+**share** | **string**
+**count** | **number**
+**user** | [**FlattenedUserProfile**](FlattenedUserProfile)
 
 ## Example
 
 ```typescript
-import { Accessor } from '';
+import { Accessor } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Accessor = {
-    "schema": null, // 
-    "id": null, // 
-    "os": null, // this is an os id.
-    "share": null, // 
-    "count": null, // how many times this user accessed this piece.
-    "user": null, // 
+    "schema": null,
+    "id": null,
+    "os": null,
+    "share": null,
+    "count": null,
+    "user": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Accessor;
 console.log(exampleParsed);
 ```
-
-
 
 

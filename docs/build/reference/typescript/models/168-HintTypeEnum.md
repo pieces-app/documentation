@@ -5,13 +5,13 @@ This is the hint enum used to describe a type of hint.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { HintTypeEnum } from '';
+import { HintTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: HintTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as HintTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

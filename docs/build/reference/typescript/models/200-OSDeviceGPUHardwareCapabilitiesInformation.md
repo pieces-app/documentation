@@ -5,20 +5,20 @@ This will give specific information on task specific capibilites for GPU.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**llm** | **boolean** | This will let us know if in the case we have a gpu and our gpu has the capabilities to use llms | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**llm** | **boolean**
 
 ## Example
 
 ```typescript
-import { OSDeviceGPUHardwareCapabilitiesInformation } from '';
+import { OSDeviceGPUHardwareCapabilitiesInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSDeviceGPUHardwareCapabilitiesInformation = {
-    "schema": null, // 
-    "llm": null, // This will let us know if in the case we have a gpu and our gpu has the capabilities to use llms
+    "schema": null,
+    "llm": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSDeviceGPUHardwareCapabilitiesInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

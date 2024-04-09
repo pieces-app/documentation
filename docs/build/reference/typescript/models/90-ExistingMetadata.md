@@ -5,22 +5,22 @@ This is a shared input model for all the exists endpoints: /tags/exists : if the
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**website** | [**ReferencedWebsite**](ReferencedWebsite) |  | [optional] [default to undefined]
-**tag** | [**ReferencedTag**](ReferencedTag) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**website** | [**ReferencedWebsite**](ReferencedWebsite)
+**tag** | [**ReferencedTag**](ReferencedTag)
 
 ## Example
 
 ```typescript
-import { ExistingMetadata } from '';
+import { ExistingMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExistingMetadata = {
-    "schema": null, // 
-    "website": null, // 
-    "tag": null, // 
+    "schema": null,
+    "website": null,
+    "tag": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExistingMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

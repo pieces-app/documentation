@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**previous** | [**Classification**](Classification) |  | [default to undefined]
-**current** | [**Classification**](Classification) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**previous** | [**Classification**](Classification)
+**current** | [**Classification**](Classification)
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentReclassificationUpdates } from '';
+import { TLPCodeFragmentReclassificationUpdates } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentReclassificationUpdates = {
-    "schema": null, // 
-    "previous": null, // 
-    "current": null, // 
+    "schema": null,
+    "previous": null,
+    "current": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentReclassificationUpdates;
 console.log(exampleParsed);
 ```
-
-
 
 

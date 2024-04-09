@@ -5,28 +5,28 @@ This is a preIdentified version of a Range.  conversation: this is here to speci
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**to** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**from** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**between** | **boolean** |  | [optional] [default to undefined]
-**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] [default to undefined]
-**conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**to** | [**GroupedTimestamp**](GroupedTimestamp)
+**from** | [**GroupedTimestamp**](GroupedTimestamp)
+**between** | **boolean**
+**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary)
+**conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation)
 
 ## Example
 
 ```typescript
-import { SeededRange } from '';
+import { SeededRange } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededRange = {
-    "schema": null, // 
-    "to": null, // 
-    "from": null, // 
-    "between": null, // 
-    "summary": null, // 
-    "conversation": null, // 
+    "schema": null,
+    "to": null,
+    "from": null,
+    "between": null,
+    "summary": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededRange;
 console.log(exampleParsed);
 ```
-
-
 
 

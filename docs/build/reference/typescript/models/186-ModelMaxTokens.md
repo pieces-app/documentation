@@ -5,24 +5,24 @@ This will describe the MaxTokens for an MLModel  total is required.  iff there i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**total** | **number** |  | [default to undefined]
-**input** | **number** |  | [optional] [default to undefined]
-**output** | **number** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**total** | **number**
+**input** | **number**
+**output** | **number**
 
 ## Example
 
 ```typescript
-import { ModelMaxTokens } from '';
+import { ModelMaxTokens } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelMaxTokens = {
-    "schema": null, // 
-    "total": null, // 
-    "input": null, // 
-    "output": null, // 
+    "schema": null,
+    "total": null,
+    "input": null,
+    "output": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelMaxTokens;
 console.log(exampleParsed);
 ```
-
-
 
 

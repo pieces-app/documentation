@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**descriptive** | [**GraphicalImageDescriptiveStatistics**](GraphicalImageDescriptiveStatistics) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**descriptive** | [**GraphicalImageDescriptiveStatistics**](GraphicalImageDescriptiveStatistics)
 
 ## Example
 
 ```typescript
-import { GraphicalImageStatistics } from '';
+import { GraphicalImageStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalImageStatistics = {
-    "schema": null, // 
-    "descriptive": null, // 
+    "schema": null,
+    "descriptive": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalImageStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@ This is the output/returned value from the /qgpt/question endpoint. && /qgpt/fol
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**answers** | [**QGPTQuestionAnswers**](QGPTQuestionAnswers) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**answers** | [**QGPTQuestionAnswers**](QGPTQuestionAnswers)
 
 ## Example
 
 ```typescript
-import { QGPTQuestionOutput } from '';
+import { QGPTQuestionOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTQuestionOutput = {
-    "schema": null, // 
-    "answers": null, // 
+    "schema": null,
+    "answers": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTQuestionOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

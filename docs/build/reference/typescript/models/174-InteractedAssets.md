@@ -5,20 +5,20 @@ A model which contains a list of InteractedAssets with potentially additional pr
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;InteractedAsset&gt;**](InteractedAsset) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;InteractedAsset&gt;**](InteractedAsset)
 
 ## Example
 
 ```typescript
-import { InteractedAssets } from '';
+import { InteractedAssets } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: InteractedAssets = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as InteractedAssets;
 console.log(exampleParsed);
 ```
-
-
 
 

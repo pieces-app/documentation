@@ -5,30 +5,30 @@ This is a seeded version of a ConversationMessage.  conversation is optional, th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**model** | [**Model**](Model) |  | [optional] [default to undefined]
-**fragment** | [**FragmentFormat**](FragmentFormat) |  | [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] [default to undefined]
-**sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum) |  | [optional] [default to undefined]
-**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**model** | [**Model**](Model)
+**fragment** | [**FragmentFormat**](FragmentFormat)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
+**sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum)
+**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
 
 ## Example
 
 ```typescript
-import { SeededConversationMessage } from '';
+import { SeededConversationMessage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConversationMessage = {
-    "schema": null, // 
-    "created": null, // 
-    "model": null, // 
-    "fragment": null, // 
-    "conversation": null, // 
-    "sentiment": null, // 
-    "role": null, // 
+    "schema": null,
+    "created": null,
+    "model": null,
+    "fragment": null,
+    "conversation": null,
+    "sentiment": null,
+    "role": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConversationMessage;
 console.log(exampleParsed);
 ```
-
-
 
 

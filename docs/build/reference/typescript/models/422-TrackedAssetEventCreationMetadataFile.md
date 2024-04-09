@@ -5,22 +5,22 @@ If an asset was created from a file attachment
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**keyboard** | **boolean** | Whether the file was pasted via the keyboard | [optional] [default to undefined]
-**dragAndDrop** | **boolean** | Whether the file was dropped onto pieces | [optional] [default to undefined]
-**interaction** | **boolean** | Whether the file was attached via a button click | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**keyboard** | **boolean**
+**dragAndDrop** | **boolean**
+**interaction** | **boolean**
 
 ## Example
 
 ```typescript
-import { TrackedAssetEventCreationMetadataFile } from '';
+import { TrackedAssetEventCreationMetadataFile } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetEventCreationMetadataFile = {
-    "keyboard": null, // Whether the file was pasted via the keyboard
-    "dragAndDrop": null, // Whether the file was dropped onto pieces
-    "interaction": null, // Whether the file was attached via a button click
+    "keyboard": null,
+    "dragAndDrop": null,
+    "interaction": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventCreationMetadataFile;
 console.log(exampleParsed);
 ```
-
-
 
 

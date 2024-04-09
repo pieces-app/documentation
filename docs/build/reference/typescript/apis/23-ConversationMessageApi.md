@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
-[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
-[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | \&#39;/message/\{message\}/scores/increment\&#39; [POST]
-[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
-[**messageSpecificMessageUpdate**](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
-[**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
+Method | HTTP request
+------------- | -------------
+[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
+[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
+[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment
+[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\}
+[**messageSpecificMessageUpdate**](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update
+[**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value
 
 
-## **messageAssociateAnnotation** Deprecated: 
+## **messageAssociateAnnotation**
 > messageAssociateAnnotation()
 
 This will associate a message with an annotation.
@@ -20,9 +20,8 @@ This will associate a message with an annotation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -40,7 +39,7 @@ apiInstance.messageAssociateAnnotation(body).then((data: void (empty response bo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
@@ -57,14 +56,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **messageDisassociateAnnotation** Deprecated: 
+## **messageDisassociateAnnotation**
 > messageDisassociateAnnotation()
 
 This will enable us to dissassociate a message from an annotation.
@@ -72,9 +69,8 @@ This will enable us to dissassociate a message from an annotation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -92,7 +88,7 @@ apiInstance.messageDisassociateAnnotation(body).then((data: void (empty response
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
@@ -109,14 +105,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **messageScoresIncrement** Deprecated: 
+## **messageScoresIncrement**
 > messageScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -124,9 +118,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -144,7 +137,7 @@ apiInstance.messageScoresIncrement(body).then((data: void (empty response body))
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
@@ -161,14 +154,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **messageSpecificMessageSnapshot** Deprecated: 
+## **messageSpecificMessageSnapshot**
 > ConversationMessage messageSpecificMessageSnapshot()
 
 This will get a specific snapshot of a message
@@ -176,9 +167,8 @@ This will get a specific snapshot of a message
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -196,7 +186,7 @@ apiInstance.messageSpecificMessageSnapshot(body).then((data: ConversationMessage
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -204,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ConversationMessage**
+[**ConversationMessage**](../models/ConversationMessage)
 
 ### HTTP request headers
 
@@ -213,14 +203,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-
-
-## **messageSpecificMessageUpdate** Deprecated: 
+## **messageSpecificMessageUpdate**
 > ConversationMessage messageSpecificMessageUpdate()
 
 This will update a conversation message.
@@ -228,9 +216,8 @@ This will update a conversation message.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -248,7 +235,7 @@ apiInstance.messageSpecificMessageUpdate(body).then((data: ConversationMessage) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -256,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ConversationMessage**
+[**ConversationMessage**](../models/ConversationMessage)
 
 ### HTTP request headers
 
@@ -265,14 +252,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **messageUpdateValue** Deprecated: 
+## **messageUpdateValue**
 > ConversationMessage messageUpdateValue()
 
 This will update the value of a conversation message.
@@ -280,9 +265,8 @@ This will update the value of a conversation message.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationMessageApi(configuration);
 
@@ -300,7 +284,7 @@ apiInstance.messageUpdateValue(body).then((data: ConversationMessage) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -308,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ConversationMessage**
+[**ConversationMessage**](../models/ConversationMessage)
 
 ### HTTP request headers
 
@@ -317,11 +301,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

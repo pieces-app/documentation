@@ -5,20 +5,20 @@ This is a model that will keep track of all of our version related to our models
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**migration** | **number** | this is the current database version that this model was used for. | [default to undefined]
-**semantic** | [**EmbeddedModelSchemaSemanticVersionEnum**](EmbeddedModelSchemaSemanticVersionEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**migration** | **number**
+**semantic** | [**EmbeddedModelSchemaSemanticVersionEnum**](EmbeddedModelSchemaSemanticVersionEnum)
 
 ## Example
 
 ```typescript
-import { EmbeddedModelSchema } from '';
+import { EmbeddedModelSchema } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: EmbeddedModelSchema = {
-    "migration": null, // this is the current database version that this model was used for.
-    "semantic": null, // 
+    "migration": null,
+    "semantic": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as EmbeddedModelSchema;
 console.log(exampleParsed);
 ```
-
-
 
 

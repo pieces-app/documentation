@@ -5,32 +5,32 @@ Model for monitoring and evaluating the OCR feature
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**user** | **string** |  | [default to undefined]
-**model** | **string** |  | [default to undefined]
-**created** | **string** |  | [default to undefined]
-**os** | **string** |  | [default to undefined]
-**confidence** | [**GraphicalOCRDescriptiveStatisticsConfidence**](GraphicalOCRDescriptiveStatisticsConfidence) |  | [default to undefined]
-**duration** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**user** | **string**
+**model** | **string**
+**created** | **string**
+**os** | **string**
+**confidence** | [**GraphicalOCRDescriptiveStatisticsConfidence**](GraphicalOCRDescriptiveStatisticsConfidence)
+**duration** | **string**
 
 ## Example
 
 ```typescript
-import { GraphicalOCRDescriptiveStatistics } from '';
+import { GraphicalOCRDescriptiveStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalOCRDescriptiveStatistics = {
-    "schema": null, // 
-    "asset": null, // 
-    "user": null, // 
-    "model": null, // 
-    "created": null, // 
-    "os": null, // 
-    "confidence": null, // 
-    "duration": null, // 
+    "schema": null,
+    "asset": null,
+    "user": null,
+    "model": null,
+    "created": null,
+    "os": null,
+    "confidence": null,
+    "duration": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalOCRDescriptiveStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

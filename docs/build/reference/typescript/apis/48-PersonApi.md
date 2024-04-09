@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**personAssociateWorkstreamSummary**](PersonApi#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**personDisassociateWorkstreamSummary**](PersonApi#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**personScoresIncrement**](PersonApi#personscoresincrement) | **POST** /person/\{person\}/scores/increment | \&#39;/person/\{person\}/scores/increment\&#39; [POST]
-[**personSnapshot**](PersonApi#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
-[**updatePerson**](PersonApi#updateperson) | **POST** /person/update | /person/update [POST]
+Method | HTTP request
+------------- | -------------
+[**personAssociateWorkstreamSummary**](PersonApi#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\}
+[**personDisassociateWorkstreamSummary**](PersonApi#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**personScoresIncrement**](PersonApi#personscoresincrement) | **POST** /person/\{person\}/scores/increment
+[**personSnapshot**](PersonApi#personsnapshot) | **GET** /person/\{person\}
+[**updatePerson**](PersonApi#updateperson) | **POST** /person/update
 
 
-## **personAssociateWorkstreamSummary** Deprecated: 
+## **personAssociateWorkstreamSummary**
 > personAssociateWorkstreamSummary()
 
 This will associate a person with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -19,9 +19,8 @@ This will associate a person with a workstream summary. This will do the same th
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
@@ -39,7 +38,7 @@ apiInstance.personAssociateWorkstreamSummary(body).then((data: void (empty respo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -56,14 +55,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personDisassociateWorkstreamSummary** Deprecated: 
+## **personDisassociateWorkstreamSummary**
 > personDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an person from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -71,9 +68,8 @@ This will enable us to disassociate an person from a workstream summary. This wi
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
@@ -91,7 +87,7 @@ apiInstance.personDisassociateWorkstreamSummary(body).then((data: void (empty re
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -108,14 +104,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personScoresIncrement** Deprecated: 
+## **personScoresIncrement**
 > personScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -123,9 +117,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
@@ -143,7 +136,7 @@ apiInstance.personScoresIncrement(body).then((data: void (empty response body)) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
@@ -160,14 +153,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personSnapshot** Deprecated: 
+## **personSnapshot**
 > Person personSnapshot()
 
 This will get a snapshot of a specific person
@@ -175,9 +166,8 @@ This will get a snapshot of a specific person
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
@@ -195,7 +185,7 @@ apiInstance.personSnapshot(body).then((data: Person) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -203,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Person**
+[**Person**](../models/Person)
 
 ### HTTP request headers
 
@@ -212,14 +202,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **updatePerson** Deprecated: 
+## **updatePerson**
 > Person updatePerson()
 
 This will update a specific person
@@ -227,9 +215,8 @@ This will update a specific person
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonApi(configuration);
 
@@ -247,7 +234,7 @@ apiInstance.updatePerson(body).then((data: Person) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | **Person**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -255,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Person**
+[**Person**](../models/Person)
 
 ### HTTP request headers
 
@@ -264,10 +251,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

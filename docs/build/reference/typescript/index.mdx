@@ -3,7 +3,8 @@ title: TypeScript SDK
 description: This getting started guide will help you get started with the Pieces for Developers TypeScript SDK.
 ---
 
-import {MiniSpacer} from "/src/components/Spacers";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 import GridFlexRow from '/src/components/GridFlexRow'
 import CTAButton from '/src/components/CTAButton'
 
@@ -42,13 +43,44 @@ To get started with the Pieces SDK, follow these steps:
       />
     </GridFlexRow>
 
-2. **Install the NPM Package**: Use npm to install the Pieces SDK package:
-    ```shell
-    npm install @pieces.app/pieces-os-client
-    ```
+2. **Install the SDK**: Install the Pieces SDK using your preferred package manager:
+
+    <Tabs
+      defaultValue={'npm'}
+      values={[
+        {label: 'npm', value: 'npm'},
+        {label: 'pnpm', value: 'pnpm'},
+        {label: 'yarn', value: 'yarn'},
+      ]}
+    >
+      <TabItem value="npm">
+      ```shell
+      npm install @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+      <TabItem value="pnpm">
+      ```shell
+      pnpm add @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+      <TabItem value="yarn">
+      ```shell
+      yarn add @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+    </Tabs>
 
 ## Getting Started
 
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
 
 ## Next Steps
 

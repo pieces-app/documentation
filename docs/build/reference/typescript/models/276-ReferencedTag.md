@@ -5,22 +5,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedTag**](FlattenedTag) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedTag**](FlattenedTag)
 
 ## Example
 
 ```typescript
-import { ReferencedTag } from '';
+import { ReferencedTag } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedTag = {
-    "schema": null, // 
-    "id": null, // 
-    "reference": null, // 
+    "schema": null,
+    "id": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedTag;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;FormatMetric&gt;**](FormatMetric) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;FormatMetric&gt;**](FormatMetric)
 
 ## Example
 
 ```typescript
-import { FormatsMetrics } from '';
+import { FormatsMetrics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FormatsMetrics = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FormatsMetrics;
 console.log(exampleParsed);
 ```
-
-
 
 

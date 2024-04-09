@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**clearUser**](UserApi#clearuser) | **POST** /user/clear | /user/clear
-[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
-[**selectUser**](UserApi#selectuser) | **POST** /user/select | /user/select [POST]
-[**streamUser**](UserApi#streamuser) | **GET** /user/stream | /user/stream [GET]
-[**updateUser**](UserApi#updateuser) | **POST** /user/update | /user/update [POST]
-[**userProviders**](UserApi#userproviders) | **GET** /user/providers | Your GET endpoint
-[**userSnapshot**](UserApi#usersnapshot) | **GET** /user | /user [GET]
-[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
+Method | HTTP request
+------------- | -------------
+[**clearUser**](UserApi#clearuser) | **POST** /user/clear
+[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh
+[**selectUser**](UserApi#selectuser) | **POST** /user/select
+[**streamUser**](UserApi#streamuser) | **GET** /user/stream
+[**updateUser**](UserApi#updateuser) | **POST** /user/update
+[**userProviders**](UserApi#userproviders) | **GET** /user/providers
+[**userSnapshot**](UserApi#usersnapshot) | **GET** /user
+[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity
 
 
-## **clearUser** Deprecated: 
+## **clearUser**
 > clearUser()
 
 An endpoint to clear the current user. 
@@ -22,9 +22,8 @@ An endpoint to clear the current user.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -48,13 +47,11 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 
-
-
-## **refreshUser** Deprecated: 
+## **refreshUser**
 > UserProfile refreshUser()
 
 This will refresh a user.
@@ -62,9 +59,8 @@ This will refresh a user.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -79,7 +75,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -88,14 +84,12 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **selectUser** Deprecated: 
+## **selectUser**
 > UserProfile selectUser()
 
 This will select the current user.
@@ -103,9 +97,8 @@ This will select the current user.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -121,14 +114,14 @@ apiInstance.selectUser(body).then((data: UserProfile) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **auth0User** | **Auth0User**|  |
 
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -137,13 +130,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **streamUser** Deprecated: 
+## **streamUser**
 > UserProfile streamUser()
 
 This will stream in the current user, not quiet sure yet how we want to do this.
@@ -151,9 +142,8 @@ This will stream in the current user, not quiet sure yet how we want to do this.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -168,7 +158,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -177,13 +167,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **updateUser** Deprecated: 
+## **updateUser**
 > UserProfile updateUser()
 
 This will update a specific user in the database.
@@ -191,9 +179,8 @@ This will update a specific user in the database.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -209,14 +196,14 @@ apiInstance.updateUser(body).then((data: UserProfile) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -225,13 +212,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **userProviders** Deprecated: 
+## **userProviders**
 > ReturnedUserProfile userProviders()
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
@@ -239,9 +224,8 @@ This will retrieve all the users Providers that are connected to this account.  
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -256,7 +240,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**ReturnedUserProfile**
+[**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
 ### HTTP request headers
 
@@ -265,15 +249,13 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **501** | Not Implemented |  -  |
 
-
-
-## **userSnapshot** Deprecated: 
+## **userSnapshot**
 > ReturnedUserProfile userSnapshot()
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
@@ -281,9 +263,8 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -298,7 +279,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**ReturnedUserProfile**
+[**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
 ### HTTP request headers
 
@@ -307,13 +288,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **userUpdateVanity** Deprecated: 
+## **userUpdateVanity**
 > UserProfile userUpdateVanity()
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
@@ -321,9 +300,8 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \"m
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UserApi(configuration);
 
@@ -339,14 +317,14 @@ apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**| This will take an update userProfile, with the updated vanity name! |
 
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -355,14 +333,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **404** | The original dns record was not found, please wait for cloud connectivity to fully connect. |  -  |
 **409** | Conflict, This means that we were unable to update the username because it was already taken. |  -  |
 **500** | Unable to create a username. Internal Server Error. |  -  |
 **511** | Network Authentication Required, Cannot Update the Vanityname of the user because the user is either not signed in or in not connected to the cloud. |  -  |
-
-
 
 

@@ -5,30 +5,30 @@ This is a per-cursor to a full person.  Will throw an error, if asset is passed 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**access** | [**PersonAccess**](PersonAccess) |  | [optional] [default to undefined]
-**type** | [**PersonType**](PersonType) |  | [default to undefined]
-**model** | [**PersonModel**](PersonModel) |  | [optional] [default to undefined]
-**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**access** | [**PersonAccess**](PersonAccess)
+**type** | [**PersonType**](PersonType)
+**model** | [**PersonModel**](PersonModel)
+**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
 
 ## Example
 
 ```typescript
-import { SeededPerson } from '';
+import { SeededPerson } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededPerson = {
-    "schema": null, // 
-    "asset": null, // 
-    "mechanism": null, // 
-    "access": null, // 
-    "type": null, // 
-    "model": null, // 
-    "annotations": null, // 
+    "schema": null,
+    "asset": null,
+    "mechanism": null,
+    "access": null,
+    "type": null,
+    "model": null,
+    "annotations": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededPerson;
 console.log(exampleParsed);
 ```
-
-
 
 

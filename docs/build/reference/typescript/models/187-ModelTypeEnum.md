@@ -5,13 +5,13 @@ This will describe the type of Model balanced, speed, accuracy...
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ModelTypeEnum } from '';
+import { ModelTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

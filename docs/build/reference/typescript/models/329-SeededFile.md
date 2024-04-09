@@ -5,24 +5,24 @@ This is a base model for a File(Seeded).  We will Throw an Error, if the text an
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] [default to undefined]
-**string** | [**TransferableString**](TransferableString) |  | [optional] [default to undefined]
-**metadata** | [**FileMetadata**](FileMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**bytes** | [**TransferableBytes**](TransferableBytes)
+**string** | [**TransferableString**](TransferableString)
+**metadata** | [**FileMetadata**](FileMetadata)
 
 ## Example
 
 ```typescript
-import { SeededFile } from '';
+import { SeededFile } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededFile = {
-    "schema": null, // 
-    "bytes": null, // 
-    "string": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "bytes": null,
+    "string": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededFile;
 console.log(exampleParsed);
 ```
-
-
 
 

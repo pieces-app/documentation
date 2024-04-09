@@ -5,22 +5,22 @@ Metadata of a format reclassification event
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**previous** | [**Classification**](Classification) |  | [optional] [default to undefined]
-**current** | [**Classification**](Classification) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**previous** | [**Classification**](Classification)
+**current** | [**Classification**](Classification)
 
 ## Example
 
 ```typescript
-import { TrackedAssetEventFormatReclassificationMetadata } from '';
+import { TrackedAssetEventFormatReclassificationMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetEventFormatReclassificationMetadata = {
-    "schema": null, // 
-    "previous": null, // 
-    "current": null, // 
+    "schema": null,
+    "previous": null,
+    "current": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventFormatReclassificationMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

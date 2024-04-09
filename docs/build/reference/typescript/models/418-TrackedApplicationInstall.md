@@ -5,22 +5,22 @@ A model that allows for us to specifically track Application Installs & Related 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | [**TrackedApplication**](TrackedApplication) |  | [default to undefined]
-**user** | [**TrackedUserProfile**](TrackedUserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | [**TrackedApplication**](TrackedApplication)
+**user** | [**TrackedUserProfile**](TrackedUserProfile)
 
 ## Example
 
 ```typescript
-import { TrackedApplicationInstall } from '';
+import { TrackedApplicationInstall } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedApplicationInstall = {
-    "schema": null, // 
-    "application": null, // 
-    "user": null, // 
+    "schema": null,
+    "application": null,
+    "user": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedApplicationInstall;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,26 +5,26 @@ This is the returnable model for the /os/device/information.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**dependencies** | [**OSDeviceDependenciesInformation**](OSDeviceDependenciesInformation) |  | [optional] [default to undefined]
-**name** | **string** | this is the name of the device | [optional] [default to undefined]
-**version** | **string** | this is the version of the device | [optional] [default to undefined]
-**hardware** | [**OSDeviceHardwareInformation**](OSDeviceHardwareInformation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**dependencies** | [**OSDeviceDependenciesInformation**](OSDeviceDependenciesInformation)
+**name** | **string**
+**version** | **string**
+**hardware** | [**OSDeviceHardwareInformation**](OSDeviceHardwareInformation)
 
 ## Example
 
 ```typescript
-import { OSDeviceInformationReturnable } from '';
+import { OSDeviceInformationReturnable } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSDeviceInformationReturnable = {
-    "schema": null, // 
-    "dependencies": null, // 
-    "name": null, // this is the name of the device
-    "version": null, // this is the version of the device
-    "hardware": null, // 
+    "schema": null,
+    "dependencies": null,
+    "name": null,
+    "version": null,
+    "hardware": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSDeviceInformationReturnable;
 console.log(exampleParsed);
 ```
-
-
 
 

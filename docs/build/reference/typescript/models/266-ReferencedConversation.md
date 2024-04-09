@@ -5,22 +5,22 @@ This is a DAG-Safe Minimal version of a Conversation.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedConversation**](FlattenedConversation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedConversation**](FlattenedConversation)
 
 ## Example
 
 ```typescript
-import { ReferencedConversation } from '';
+import { ReferencedConversation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedConversation = {
-    "schema": null, // 
-    "id": null, // 
-    "reference": null, // 
+    "schema": null,
+    "id": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedConversation;
 console.log(exampleParsed);
 ```
-
-
 
 

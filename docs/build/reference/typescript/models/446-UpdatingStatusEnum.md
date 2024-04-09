@@ -5,13 +5,13 @@ This is a simple enum used to determine the status of the Updating process.(of P
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { UpdatingStatusEnum } from '';
+import { UpdatingStatusEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: UpdatingStatusEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as UpdatingStatusEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@ This is a model of all optional properties, that will get returned from /assets/
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifiers** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifiers** | [**FlattenedAssets**](FlattenedAssets)
 
 ## Example
 
 ```typescript
-import { PseudoAssets } from '';
+import { PseudoAssets } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PseudoAssets = {
-    "schema": null, // 
-    "identifiers": null, // 
+    "schema": null,
+    "identifiers": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PseudoAssets;
 console.log(exampleParsed);
 ```
-
-
 
 

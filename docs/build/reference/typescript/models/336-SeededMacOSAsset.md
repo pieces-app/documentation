@@ -5,22 +5,22 @@ An Seeded Asset specific to MacOS which takes in a Value, and Application
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | [**Application**](Application) |  | [optional] [default to undefined]
-**value** | **string** | The value of the text that you want to save as an asset. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | [**Application**](Application)
+**value** | **string**
 
 ## Example
 
 ```typescript
-import { SeededMacOSAsset } from '';
+import { SeededMacOSAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededMacOSAsset = {
-    "schema": null, // 
-    "application": null, // 
-    "value": console.log("hello world"), // The value of the text that you want to save as an asset.
+    "schema": null,
+    "application": null,
+    "value": console.log("hello world"),
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededMacOSAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

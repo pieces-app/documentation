@@ -5,20 +5,20 @@ This is the plural Model of a Distribution.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;Distribution&gt;**](Distribution) |  | [default to undefined]
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;Distribution&gt;**](Distribution)
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { Distributions } from '';
+import { Distributions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Distributions = {
-    "iterable": null, // 
-    "schema": null, // 
+    "iterable": null,
+    "schema": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Distributions;
 console.log(exampleParsed);
 ```
-
-
 
 

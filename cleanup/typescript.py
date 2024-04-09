@@ -74,7 +74,7 @@ def remove_readme_links(text):
 
 def transform_links(text, directory_type):
     if directory_type == "apis":
-        pattern = r'\[\*\*(.*?)\*\*\]\((?!.*Api)(.*?)\)'
+        pattern = r'\[\*\*(.*?)\*\*\]\(((?!Api\.md$).*?\.md)\)'
         replacement = r'[**\1**](../models/\2)'
     elif directory_type == "models":
         pattern = r'\[\*\*(.*?)\*\*\]\((?=.*Api)(.*?)\)'

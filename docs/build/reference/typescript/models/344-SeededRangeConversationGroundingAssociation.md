@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**temporal** | [**SeededRangeConversationGroundingTemporalAssociation**](SeededRangeConversationGroundingTemporalAssociation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**temporal** | [**SeededRangeConversationGroundingTemporalAssociation**](SeededRangeConversationGroundingTemporalAssociation)
 
 ## Example
 
 ```typescript
-import { SeededRangeConversationGroundingAssociation } from '';
+import { SeededRangeConversationGroundingAssociation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededRangeConversationGroundingAssociation = {
-    "schema": null, // 
-    "temporal": null, // 
+    "schema": null,
+    "temporal": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededRangeConversationGroundingAssociation;
 console.log(exampleParsed);
 ```
-
-
 
 

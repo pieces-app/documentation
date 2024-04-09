@@ -5,20 +5,20 @@ This is the plural version of a SeededDistribution that is not referenced just y
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SeededDistribution&gt;**](SeededDistribution) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SeededDistribution&gt;**](SeededDistribution)
 
 ## Example
 
 ```typescript
-import { SeededDistributions } from '';
+import { SeededDistributions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDistributions = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDistributions;
 console.log(exampleParsed);
 ```
-
-
 
 

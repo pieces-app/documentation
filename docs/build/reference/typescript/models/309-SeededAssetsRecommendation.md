@@ -5,22 +5,22 @@ This is the input data model for the /assets/recommend [GET] endpoint. It includ
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**assets** | [**Assets**](Assets) |  | [default to undefined]
-**interactions** | [**InteractedAssets**](InteractedAssets) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**assets** | [**Assets**](Assets)
+**interactions** | [**InteractedAssets**](InteractedAssets)
 
 ## Example
 
 ```typescript
-import { SeededAssetsRecommendation } from '';
+import { SeededAssetsRecommendation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetsRecommendation = {
-    "schema": null, // 
-    "assets": null, // 
-    "interactions": null, // 
+    "schema": null,
+    "assets": null,
+    "interactions": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetsRecommendation;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ This is the body of the /github/gists/import,  by default we will look for every
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | **string** | application id. | [default to undefined]
-**_public** | **boolean** | This will default to false.(ie private), currently not supporting pulling public gists. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | **string**
+**_public** | **boolean**
 
 ## Example
 
 ```typescript
-import { SeededGithubGistsImport } from '';
+import { SeededGithubGistsImport } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededGithubGistsImport = {
-    "schema": null, // 
-    "application": null, // application id.
-    "_public": null, // This will default to false.(ie private), currently not supporting pulling public gists.
+    "schema": null,
+    "application": null,
+    "_public": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededGithubGistsImport;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,23 +2,22 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getWellKnownHealth**](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health | /.well-known/health [GET]
-[**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version | /.well-known/version [Get]
+Method | HTTP request
+------------- | -------------
+[**getWellKnownHealth**](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health
+[**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version
 
 
-## **getWellKnownHealth** Deprecated: 
+## **getWellKnownHealth**
 > string getWellKnownHealth()
 
-This will get the health of the server.
+Retrieves the health status of the server.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WellKnownApi(configuration);
 
@@ -42,23 +41,20 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **getWellKnownVersion** Deprecated: 
+## **getWellKnownVersion**
 > string getWellKnownVersion()
 
-This will get the version of the server. This will return a string of current version.
+Retrieves the version of the server. It returns a string representing the current version.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WellKnownApi(configuration);
 
@@ -82,10 +78,8 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

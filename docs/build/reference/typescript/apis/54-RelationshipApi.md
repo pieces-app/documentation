@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
+Method | HTTP request
+------------- | -------------
+[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\}
 
 
-## **relationshipsSpecificRelationshipSnapshot** Deprecated: 
+## **relationshipsSpecificRelationshipSnapshot**
 > Relationship relationshipsSpecificRelationshipSnapshot()
 
 This will return a single relationship object.
@@ -15,9 +15,8 @@ This will return a single relationship object.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RelationshipApi(configuration);
 
@@ -33,14 +32,14 @@ apiInstance.relationshipsSpecificRelationshipSnapshot(body).then((data: Relation
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **relationship** | [**string**] | this is a specific relationship uuid. | defaults to undefined
 
 
 ### Return type
 
-**Relationship**
+[**Relationship**](../models/Relationship)
 
 ### HTTP request headers
 
@@ -49,10 +48,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

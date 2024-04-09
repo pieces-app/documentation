@@ -4,24 +4,24 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**database** | **boolean** | This is an optional boolen that will tell us to use our entire snippet database as the sample. | [optional] [default to undefined]
-**question** | **boolean** | This is an optional boolean, that will let the serve know if you want to combine the 2 endpointsboth relevance &amp;&amp; the Question endpoint to return the final results. | [optional] [default to undefined]
-**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**database** | **boolean**
+**question** | **boolean**
+**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 
 ## Example
 
 ```typescript
-import { QGPTRelevanceInputOptions } from '';
+import { QGPTRelevanceInputOptions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTRelevanceInputOptions = {
-    "schema": null, // 
-    "database": null, // This is an optional boolen that will tell us to use our entire snippet database as the sample.
-    "question": null, // This is an optional boolean, that will let the serve know if you want to combine the 2 endpointsboth relevance &amp;&amp; the Question endpoint to return the final results.
-    "pipeline": null, // 
+    "schema": null,
+    "database": null,
+    "question": null,
+    "pipeline": null,
 };
 
 console.log(example);
@@ -34,7 +34,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTRelevanceInputOptions;
 console.log(exampleParsed);
 ```
-
-
 
 

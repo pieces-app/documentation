@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**descriptive** | [**GraphicalOCRDescriptiveStatistics**](GraphicalOCRDescriptiveStatistics) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**descriptive** | [**GraphicalOCRDescriptiveStatistics**](GraphicalOCRDescriptiveStatistics)
 
 ## Example
 
 ```typescript
-import { GraphicalOCRStatistics } from '';
+import { GraphicalOCRStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalOCRStatistics = {
-    "schema": null, // 
-    "descriptive": null, // 
+    "schema": null,
+    "descriptive": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalOCRStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

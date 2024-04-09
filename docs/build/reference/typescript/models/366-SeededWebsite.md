@@ -5,30 +5,30 @@ This is the minimum information required to create a website for a specific asse
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** | This is the specific asset that this website is going to get attached to!! | [optional] [default to undefined]
-**conversation** | **string** | This is the specific conversation that this website is going to get attached to!! | [optional] [default to undefined]
-**url** | **string** | this is the url of the website. | [default to undefined]
-**name** | **string** | name of the website.(customizable and updateable as well.) | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**person** | **string** | this is a uuid of a person that we are going to add the website too. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**conversation** | **string**
+**url** | **string**
+**name** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**person** | **string**
 
 ## Example
 
 ```typescript
-import { SeededWebsite } from '';
+import { SeededWebsite } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededWebsite = {
-    "schema": null, // 
-    "asset": null, // This is the specific asset that this website is going to get attached to!!
-    "conversation": null, // This is the specific conversation that this website is going to get attached to!!
-    "url": null, // this is the url of the website.
-    "name": null, // name of the website.(customizable and updateable as well.)
-    "mechanism": null, // 
-    "person": null, // this is a uuid of a person that we are going to add the website too.
+    "schema": null,
+    "asset": null,
+    "conversation": null,
+    "url": null,
+    "name": null,
+    "mechanism": null,
+    "person": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededWebsite;
 console.log(exampleParsed);
 ```
-
-
 
 

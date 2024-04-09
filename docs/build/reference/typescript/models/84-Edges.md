@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;Node&gt;**](Node) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;Node&gt;**](Node)
 
 ## Example
 
 ```typescript
-import { Edges } from '';
+import { Edges } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Edges = {
-    "iterable": null, // 
+    "iterable": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Edges;
 console.log(exampleParsed);
 ```
-
-
 
 

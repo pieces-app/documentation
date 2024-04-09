@@ -5,26 +5,26 @@ Bytes is a Model for A FileFormat. Raw and file are the only 2 that are currentl
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**raw** | **Array&lt;number&gt;** | IMPLEMENTED | [optional] [default to undefined]
-**base64** | **Array&lt;number&gt;** | NOT IMPLEMENTED | [optional] [default to undefined]
-**base64Url** | **Array&lt;number&gt;** | NOT IMPLEMENTED | [optional] [default to undefined]
-**dataUrl** | **Array&lt;number&gt;** | NOT IMPLEMENTED | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**raw** | **Array&lt;number&gt;**
+**base64** | **Array&lt;number&gt;**
+**base64Url** | **Array&lt;number&gt;**
+**dataUrl** | **Array&lt;number&gt;**
 
 ## Example
 
 ```typescript
-import { TransferableBytes } from '';
+import { TransferableBytes } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TransferableBytes = {
-    "schema": null, // 
-    "raw": null, // IMPLEMENTED
-    "base64": null, // NOT IMPLEMENTED
-    "base64Url": null, // NOT IMPLEMENTED
-    "dataUrl": null, // NOT IMPLEMENTED
+    "schema": null,
+    "raw": null,
+    "base64": null,
+    "base64Url": null,
+    "dataUrl": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TransferableBytes;
 console.log(exampleParsed);
 ```
-
-
 
 

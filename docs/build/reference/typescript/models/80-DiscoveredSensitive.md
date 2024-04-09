@@ -5,22 +5,22 @@ This will return a discoveredSensitive, with a seed that can be used to create i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**seed** | [**SeededSensitive**](SeededSensitive) |  | [default to undefined]
-**text** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**seed** | [**SeededSensitive**](SeededSensitive)
+**text** | **string**
 
 ## Example
 
 ```typescript
-import { DiscoveredSensitive } from '';
+import { DiscoveredSensitive } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DiscoveredSensitive = {
-    "schema": null, // 
-    "seed": null, // 
-    "text": null, // 
+    "schema": null,
+    "seed": null,
+    "text": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DiscoveredSensitive;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ Metadata attached to a search event on an Asset
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**query** | **string** | The search query itself | [optional] [default to undefined]
-**results** | [**TrackedAssetsEventSearchMetadataResults**](TrackedAssetsEventSearchMetadataResults) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**query** | **string**
+**results** | [**TrackedAssetsEventSearchMetadataResults**](TrackedAssetsEventSearchMetadataResults)
 
 ## Example
 
 ```typescript
-import { TrackedAssetsEventSearchMetadata } from '';
+import { TrackedAssetsEventSearchMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetsEventSearchMetadata = {
-    "schema": null, // 
-    "query": null, // The search query itself
-    "results": null, // 
+    "schema": null,
+    "query": null,
+    "results": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetsEventSearchMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

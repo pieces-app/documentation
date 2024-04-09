@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
+Method | HTTP request
+------------- | -------------
+[**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create
 
 
-## **assetsCreateNewAssetFromMacos** Deprecated: 
+## **assetsCreateNewAssetFromMacos**
 > Asset assetsCreateNewAssetFromMacos()
 
 Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Data
@@ -15,9 +15,8 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MacOSApi(configuration);
 
@@ -33,14 +32,14 @@ apiInstance.assetsCreateNewAssetFromMacos(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededMacOSAsset** | **SeededMacOSAsset**| A SeededMacosApplication which contains the value and an Application Instance |
 
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -49,10 +48,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

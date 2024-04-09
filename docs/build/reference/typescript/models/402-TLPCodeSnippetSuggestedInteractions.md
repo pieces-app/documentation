@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**save** | [**TLPCodeFragmentSuggestedSave**](TLPCodeFragmentSuggestedSave) |  | [optional] [default to undefined]
-**reuse** | [**TLPCodeFragmentSuggestedReuse**](TLPCodeFragmentSuggestedReuse) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**save** | [**TLPCodeFragmentSuggestedSave**](TLPCodeFragmentSuggestedSave)
+**reuse** | [**TLPCodeFragmentSuggestedReuse**](TLPCodeFragmentSuggestedReuse)
 
 ## Example
 
 ```typescript
-import { TLPCodeSnippetSuggestedInteractions } from '';
+import { TLPCodeSnippetSuggestedInteractions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeSnippetSuggestedInteractions = {
-    "schema": null, // 
-    "save": null, // 
-    "reuse": null, // 
+    "schema": null,
+    "save": null,
+    "reuse": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeSnippetSuggestedInteractions;
 console.log(exampleParsed);
 ```
-
-
 
 

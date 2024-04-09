@@ -5,20 +5,20 @@ A simple model to capture a Tracked Session to be send to the Connection API
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**TrackedSessionEventIdentifierDescriptionPairs**](TrackedSessionEventIdentifierDescriptionPairs) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifierDescriptionPair** | [**TrackedSessionEventIdentifierDescriptionPairs**](TrackedSessionEventIdentifierDescriptionPairs)
 
 ## Example
 
 ```typescript
-import { SeededTrackedSessionEvent } from '';
+import { SeededTrackedSessionEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedSessionEvent = {
-    "schema": null, // 
-    "identifierDescriptionPair": null, // 
+    "schema": null,
+    "identifierDescriptionPair": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedSessionEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

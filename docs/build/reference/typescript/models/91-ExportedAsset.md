@@ -5,24 +5,24 @@ This is a model for a minimum exported version of an asset.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | **string** | this is the title of the asset  | [default to undefined]
-**description** | **string** | this is the description of the asset | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**raw** | [**FileFormat**](FileFormat) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**name** | **string**
+**description** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**raw** | [**FileFormat**](FileFormat)
 
 ## Example
 
 ```typescript
-import { ExportedAsset } from '';
+import { ExportedAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExportedAsset = {
-    "name": null, // this is the title of the asset 
-    "description": null, // this is the description of the asset
-    "created": null, // 
-    "raw": null, // 
+    "name": null,
+    "description": null,
+    "created": null,
+    "raw": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExportedAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

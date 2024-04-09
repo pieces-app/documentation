@@ -5,20 +5,20 @@ This is a plural model for multiple Seed.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Seed&gt;**](Seed) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Seed&gt;**](Seed)
 
 ## Example
 
 ```typescript
-import { Seeds } from '';
+import { Seeds } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Seeds = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Seeds;
 console.log(exampleParsed);
 ```
-
-
 
 

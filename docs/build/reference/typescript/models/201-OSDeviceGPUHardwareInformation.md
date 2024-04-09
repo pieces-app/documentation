@@ -5,24 +5,24 @@ This will let us know specific hardware information related to the GPU.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**memory** | **number** |  | [optional] [default to undefined]
-**capabilities** | [**OSDeviceGPUHardwareCapabilitiesInformation**](OSDeviceGPUHardwareCapabilitiesInformation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**memory** | **number**
+**capabilities** | [**OSDeviceGPUHardwareCapabilitiesInformation**](OSDeviceGPUHardwareCapabilitiesInformation)
 
 ## Example
 
 ```typescript
-import { OSDeviceGPUHardwareInformation } from '';
+import { OSDeviceGPUHardwareInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSDeviceGPUHardwareInformation = {
-    "schema": null, // 
-    "name": null, // 
-    "memory": null, // 
-    "capabilities": null, // 
+    "schema": null,
+    "name": null,
+    "memory": null,
+    "capabilities": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSDeviceGPUHardwareInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getMetricsFormats**](MetricsApi#getmetricsformats) | **GET** /metrics/formats | /metrics/formats [GET]
-[**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
+Method | HTTP request
+------------- | -------------
+[**getMetricsFormats**](MetricsApi#getmetricsformats) | **GET** /metrics/formats
+[**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered
 
 
-## **getMetricsFormats** Deprecated: 
+## **getMetricsFormats**
 > FormatsMetrics getMetricsFormats()
 
 This is going to get a snapshot of our FormatsMetrics
@@ -16,9 +16,8 @@ This is going to get a snapshot of our FormatsMetrics
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MetricsApi(configuration);
 
@@ -33,7 +32,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**FormatsMetrics**
+[**FormatsMetrics**](../models/FormatsMetrics)
 
 ### HTTP request headers
 
@@ -42,13 +41,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **metricsFormatsOrdered** Deprecated: 
+## **metricsFormatsOrdered**
 > OrderedMetrics metricsFormatsOrdered()
 
 This will return a list of code formats in desc order from most to least formats uploaded.
@@ -56,9 +53,8 @@ This will return a list of code formats in desc order from most to least formats
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.MetricsApi(configuration);
 
@@ -73,7 +69,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**OrderedMetrics**
+[**OrderedMetrics**](../models/OrderedMetrics)
 
 ### HTTP request headers
 
@@ -82,10 +78,8 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

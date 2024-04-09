@@ -5,20 +5,20 @@ This will lets us know about specific dependencies that we are looking for on th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**vulkan** | **boolean** | This will let us know if vulkan is present &#x3D; true or not there &#x3D;&#x3D;false | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**vulkan** | **boolean**
 
 ## Example
 
 ```typescript
-import { OSDeviceDependenciesInformation } from '';
+import { OSDeviceDependenciesInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSDeviceDependenciesInformation = {
-    "schema": null, // 
-    "vulkan": null, // This will let us know if vulkan is present &#x3D; true or not there &#x3D;&#x3D;false
+    "schema": null,
+    "vulkan": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSDeviceDependenciesInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

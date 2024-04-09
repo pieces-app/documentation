@@ -5,18 +5,18 @@ Contains enum which represents code block type
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**name** | [**TLPDirectedDiscoveryFilterEnum**](TLPDirectedDiscoveryFilterEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**name** | [**TLPDirectedDiscoveryFilterEnum**](TLPDirectedDiscoveryFilterEnum)
 
 ## Example
 
 ```typescript
-import { TLPDirectedDiscoveryFilter } from '';
+import { TLPDirectedDiscoveryFilter } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPDirectedDiscoveryFilter = {
-    "name": null, // 
+    "name": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPDirectedDiscoveryFilter;
 console.log(exampleParsed);
 ```
-
-
 
 

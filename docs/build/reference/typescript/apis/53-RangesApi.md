@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**rangesCreateNewRange**](RangesApi#rangescreatenewrange) | **POST** /ranges/create | /ranges/create [POST]
-[**rangesDeleteSpecificRange**](RangesApi#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete | /ranges/\{range\}/delete [POST]
-[**rangesSnapshot**](RangesApi#rangessnapshot) | **GET** /ranges | /ranges [GET]
+Method | HTTP request
+------------- | -------------
+[**rangesCreateNewRange**](RangesApi#rangescreatenewrange) | **POST** /ranges/create
+[**rangesDeleteSpecificRange**](RangesApi#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete
+[**rangesSnapshot**](RangesApi#rangessnapshot) | **GET** /ranges
 
 
-## **rangesCreateNewRange** Deprecated: 
+## **rangesCreateNewRange**
 > Range rangesCreateNewRange()
 
 This will create a new Range in the database.
@@ -17,9 +17,8 @@ This will create a new Range in the database.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
@@ -35,14 +34,14 @@ apiInstance.rangesCreateNewRange(body).then((data: Range) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededRange** | **SeededRange**|  |
 
 
 ### Return type
 
-**Range**
+[**Range**](../models/Range)
 
 ### HTTP request headers
 
@@ -51,14 +50,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **rangesDeleteSpecificRange** Deprecated: 
+## **rangesDeleteSpecificRange**
 > rangesDeleteSpecificRange()
 
 This will delete a specific range from the database!
@@ -66,9 +63,8 @@ This will delete a specific range from the database!
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
@@ -84,7 +80,7 @@ apiInstance.rangesDeleteSpecificRange(body).then((data: void (empty response bod
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -100,14 +96,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **rangesSnapshot** Deprecated: 
+## **rangesSnapshot**
 > Ranges rangesSnapshot()
 
 This will get a snapshot of all your ranges.
@@ -115,9 +109,8 @@ This will get a snapshot of all your ranges.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RangesApi(configuration);
 
@@ -132,7 +125,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Ranges**
+[**Ranges**](../models/Ranges)
 
 ### HTTP request headers
 
@@ -141,11 +134,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

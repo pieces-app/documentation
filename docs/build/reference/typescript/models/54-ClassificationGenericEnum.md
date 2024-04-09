@@ -5,13 +5,13 @@ EXTERNAL_RESOURCE_REFERENCE can be thought of as anything such as URL, URI, UNIX
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ClassificationGenericEnum } from '';
+import { ClassificationGenericEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ClassificationGenericEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ClassificationGenericEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ This is the ReuseSuggestion. Mainly creating an additional model here because I 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**suggested** | **boolean** | This is a boolean, that will say if you should or should not take action. | [default to undefined]
-**assets** | [**Assets**](Assets) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**suggested** | **boolean**
+**assets** | [**Assets**](Assets)
 
 ## Example
 
 ```typescript
-import { ReuseSuggestion } from '';
+import { ReuseSuggestion } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReuseSuggestion = {
-    "schema": null, // 
-    "suggested": null, // This is a boolean, that will say if you should or should not take action.
-    "assets": null, // 
+    "schema": null,
+    "suggested": null,
+    "assets": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReuseSuggestion;
 console.log(exampleParsed);
 ```
-
-
 
 

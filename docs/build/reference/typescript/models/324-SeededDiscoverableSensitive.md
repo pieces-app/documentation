@@ -5,34 +5,34 @@ This is the SeededDiscoverableSensitive, this has every property that the seeded
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**text** | **string** | this is the string representative of the sensative piece of data. | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**category** | [**SensitiveCategoryEnum**](SensitiveCategoryEnum) |  | [optional] [default to undefined]
-**severity** | [**SensitiveSeverityEnum**](SensitiveSeverityEnum) |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
-**metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**text** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**category** | [**SensitiveCategoryEnum**](SensitiveCategoryEnum)
+**severity** | [**SensitiveSeverityEnum**](SensitiveSeverityEnum)
+**name** | **string**
+**description** | **string**
+**metadata** | [**SensitiveMetadata**](SensitiveMetadata)
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableSensitive } from '';
+import { SeededDiscoverableSensitive } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableSensitive = {
-    "schema": null, // 
-    "asset": null, // 
-    "text": null, // this is the string representative of the sensative piece of data.
-    "mechanism": null, // 
-    "category": null, // 
-    "severity": null, // 
-    "name": null, // 
-    "description": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "asset": null,
+    "text": null,
+    "mechanism": null,
+    "category": null,
+    "severity": null,
+    "name": null,
+    "description": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableSensitive;
 console.log(exampleParsed);
 ```
-
-
 
 

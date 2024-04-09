@@ -5,22 +5,22 @@ A reference to a sensitive which at minimum must have the Sensitive id. But in t
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedSensitive**](FlattenedSensitive) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedSensitive**](FlattenedSensitive)
 
 ## Example
 
 ```typescript
-import { ReferencedSensitive } from '';
+import { ReferencedSensitive } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedSensitive = {
-    "schema": null, // 
-    "id": null, // 
-    "reference": null, // 
+    "schema": null,
+    "id": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedSensitive;
 console.log(exampleParsed);
 ```
-
-
 
 

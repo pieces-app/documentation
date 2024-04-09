@@ -60,6 +60,16 @@ We are working on a fix for this but for now, please install the package with th
 
 First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a `config.py` file to store your configuration info and a `wellknown.py` file to test the connection.
 
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
+
 Create a `config.py` file and add the following code:
 
 ```python title="config.py"
@@ -106,8 +116,6 @@ Run the Python script to see the output:
 ```shell
 python3 wellknown.py
 ```
-
-**The output should appear in your terminal stating the version of Pieces OS that is installed on your machine.**
 
 ## Next Steps
 

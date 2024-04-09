@@ -5,24 +5,24 @@ This model is specifically for QGPT Conversation pipelines, the model is used to
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**contextualizedCodeGeneration** | [**QGPTConversationPipelineForContextualizedCodeGeneration**](QGPTConversationPipelineForContextualizedCodeGeneration) |  | [optional] [default to undefined]
-**generalizedCodeDialog** | [**QGPTConversationPipelineForGeneralizedCodeDialog**](QGPTConversationPipelineForGeneralizedCodeDialog) |  | [optional] [default to undefined]
-**contextualizedCodeDialog** | [**QGPTConversationPipelineForContextualizedCodeDialog**](QGPTConversationPipelineForContextualizedCodeDialog) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**contextualizedCodeGeneration** | [**QGPTConversationPipelineForContextualizedCodeGeneration**](QGPTConversationPipelineForContextualizedCodeGeneration)
+**generalizedCodeDialog** | [**QGPTConversationPipelineForGeneralizedCodeDialog**](QGPTConversationPipelineForGeneralizedCodeDialog)
+**contextualizedCodeDialog** | [**QGPTConversationPipelineForContextualizedCodeDialog**](QGPTConversationPipelineForContextualizedCodeDialog)
 
 ## Example
 
 ```typescript
-import { QGPTConversationPipeline } from '';
+import { QGPTConversationPipeline } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTConversationPipeline = {
-    "schema": null, // 
-    "contextualizedCodeGeneration": null, // 
-    "generalizedCodeDialog": null, // 
-    "contextualizedCodeDialog": null, // 
+    "schema": null,
+    "contextualizedCodeGeneration": null,
+    "generalizedCodeDialog": null,
+    "contextualizedCodeDialog": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTConversationPipeline;
 console.log(exampleParsed);
 ```
-
-
 
 

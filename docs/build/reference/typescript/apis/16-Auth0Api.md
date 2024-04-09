@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+Method | HTTP request
+------------- | -------------
+[**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout
+[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize
+[**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token
+[**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo
 
 
-## **auth0Logout** Deprecated: 
+## **auth0Logout**
 > string auth0Logout()
 
 https://auth0.com/docs/api/authentication#logout
@@ -18,9 +18,8 @@ https://auth0.com/docs/api/authentication#logout
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.auth0Logout(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **clientId** | [**string**] | The client ID of the Auth0 Instance | (optional) defaults to undefined
  **returnTo** | [**string**] | The URL that the logout endpoint will return to | (optional) defaults to undefined
@@ -55,13 +54,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **authorizeAuth0** Deprecated: 
+## **authorizeAuth0**
 > ResultedPKCE authorizeAuth0()
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
@@ -69,9 +66,8 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
@@ -107,7 +103,7 @@ apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **audience** | [**string**] |  The unique identifier of the target API you want to access. | defaults to undefined
  **scope** | **Array\<&#39;openid&#39; &#124; &#39;email&#39; &#124; &#39;profile&#39; &#124; &#39;offline_access&#39;\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | defaults to undefined
@@ -124,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ResultedPKCE**
+[**ResultedPKCE**](../models/ResultedPKCE)
 
 ### HTTP request headers
 
@@ -133,13 +129,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **exchangeForAuth0Token** Deprecated: 
+## **exchangeForAuth0Token**
 > OAuthToken exchangeForAuth0Token()
 
 An endpoint to generate a OAuth Token for an authentication flow. 
@@ -147,9 +141,8 @@ An endpoint to generate a OAuth Token for an authentication flow.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
@@ -177,7 +170,7 @@ apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **grantType** | [**string**]**Array\<&#39;refresh_token&#39; &#124; &#39;authorization_code&#39;\>** | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | defaults to undefined
  **clientId** | [**string**] | Your application\\\&#39;s Client ID. | defaults to undefined
@@ -190,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**OAuthToken**
+[**OAuthToken**](../models/OAuthToken)
 
 ### HTTP request headers
 
@@ -199,13 +192,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **getAuth0UserInfo** Deprecated: 
+## **getAuth0UserInfo**
 > Auth0User getAuth0UserInfo()
 
 Get the users info from the Auth0 API
@@ -213,9 +204,8 @@ Get the users info from the Auth0 API
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.Auth0Api(configuration);
 
@@ -230,7 +220,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Auth0User**
+[**Auth0User**](../models/Auth0User)
 
 ### HTTP request headers
 
@@ -239,10 +229,8 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

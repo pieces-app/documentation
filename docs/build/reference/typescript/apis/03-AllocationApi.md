@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\}
+[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update
 
 
-## **allocationSnapshot** Deprecated: 
+## **allocationSnapshot**
 > AllocationCloud allocationSnapshot()
 
 This will get a snapshot of a specific allocation.
@@ -16,9 +16,8 @@ This will get a snapshot of a specific allocation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationApi(configuration);
 
@@ -34,14 +33,14 @@ apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocation** | [**string**] |  | defaults to undefined
 
 
 ### Return type
 
-**AllocationCloud**
+[**AllocationCloud**](../models/AllocationCloud)
 
 ### HTTP request headers
 
@@ -50,14 +49,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Cloud not found. |  -  |
 
-
-
-## **allocationUpdate** Deprecated: 
+## **allocationUpdate**
 > AllocationCloud allocationUpdate()
 
 This will update a specific allocation.
@@ -65,9 +62,8 @@ This will update a specific allocation.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AllocationApi(configuration);
 
@@ -83,14 +79,14 @@ apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
 ### Return type
 
-**AllocationCloud**
+[**AllocationCloud**](../models/AllocationCloud)
 
 ### HTTP request headers
 
@@ -99,12 +95,10 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
-
-
 
 

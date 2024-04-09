@@ -5,20 +5,20 @@ This is a Model that will hold an iterable of SeededModels.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SeededModel&gt;**](SeededModel) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SeededModel&gt;**](SeededModel)
 
 ## Example
 
 ```typescript
-import { SeededModels } from '';
+import { SeededModels } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededModels = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededModels;
 console.log(exampleParsed);
 ```
-
-
 
 

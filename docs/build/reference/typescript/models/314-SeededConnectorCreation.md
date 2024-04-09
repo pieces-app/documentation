@@ -5,20 +5,20 @@ A encompasing creation object that can be utilized to create either an asset or 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | [**SeededConnectorAsset**](SeededConnectorAsset) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | [**SeededConnectorAsset**](SeededConnectorAsset)
 
 ## Example
 
 ```typescript
-import { SeededConnectorCreation } from '';
+import { SeededConnectorCreation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConnectorCreation = {
-    "schema": null, // 
-    "asset": null, // 
+    "schema": null,
+    "asset": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConnectorCreation;
 console.log(exampleParsed);
 ```
-
-
 
 

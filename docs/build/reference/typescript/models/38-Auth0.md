@@ -5,34 +5,34 @@ An object representing all of the properties that are available within a Auth0 P
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**identity** | [**Auth0Identity**](Auth0Identity) |  | [optional] [default to undefined]
-**user** | [**Auth0User**](Auth0User) |  | [optional] [default to undefined]
-**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [optional] [default to undefined]
-**domain** | **string** | The domain of your Auth 0 Service | [default to undefined]
-**client** | **string** | The Client ID for your Auth0 Service | [default to undefined]
-**audience** | **string** | The Server Audience of your Auth0 Service | [default to undefined]
-**redirects** | [**Auth0Redirects**](Auth0Redirects) |  | [default to undefined]
-**oAuth** | [**OAuthGroup**](OAuthGroup) |  | [default to undefined]
-**namespace** | **string** | An optional namespace parameter to add an additional namespace | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**identity** | [**Auth0Identity**](Auth0Identity)
+**user** | [**Auth0User**](Auth0User)
+**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
+**domain** | **string**
+**client** | **string**
+**audience** | **string**
+**redirects** | [**Auth0Redirects**](Auth0Redirects)
+**oAuth** | [**OAuthGroup**](OAuthGroup)
+**namespace** | **string**
 
 ## Example
 
 ```typescript
-import { Auth0 } from '';
+import { Auth0 } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Auth0 = {
-    "identity": null, // 
-    "user": null, // 
-    "metadata": null, // 
-    "domain": null, // The domain of your Auth 0 Service
-    "client": null, // The Client ID for your Auth0 Service
-    "audience": null, // The Server Audience of your Auth0 Service
-    "redirects": null, // 
-    "oAuth": null, // 
-    "namespace": null, // An optional namespace parameter to add an additional namespace
+    "identity": null,
+    "user": null,
+    "metadata": null,
+    "domain": null,
+    "client": null,
+    "audience": null,
+    "redirects": null,
+    "oAuth": null,
+    "namespace": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Auth0;
 console.log(exampleParsed);
 ```
-
-
 
 

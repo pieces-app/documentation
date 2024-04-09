@@ -5,36 +5,36 @@ This model is designed to be light weight and low friction while most of the hea
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**format** | [**SeededTrackedFormatEvent**](SeededTrackedFormatEvent) |  | [optional] [default to undefined]
-**asset** | [**SeededTrackedAssetEvent**](SeededTrackedAssetEvent) |  | [optional] [default to undefined]
-**interaction** | [**SeededTrackedInteractionEvent**](SeededTrackedInteractionEvent) |  | [optional] [default to undefined]
-**keyboard** | [**SeededTrackedKeyboardEvent**](SeededTrackedKeyboardEvent) |  | [optional] [default to undefined]
-**session** | [**SeededTrackedSessionEvent**](SeededTrackedSessionEvent) |  | [optional] [default to undefined]
-**assets** | [**SeededTrackedAssetsEvent**](SeededTrackedAssetsEvent) |  | [optional] [default to undefined]
-**ml** | [**SeededTrackedMachineLearningEvent**](SeededTrackedMachineLearningEvent) |  | [optional] [default to undefined]
-**adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent) |  | [optional] [default to undefined]
-**conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**format** | [**SeededTrackedFormatEvent**](SeededTrackedFormatEvent)
+**asset** | [**SeededTrackedAssetEvent**](SeededTrackedAssetEvent)
+**interaction** | [**SeededTrackedInteractionEvent**](SeededTrackedInteractionEvent)
+**keyboard** | [**SeededTrackedKeyboardEvent**](SeededTrackedKeyboardEvent)
+**session** | [**SeededTrackedSessionEvent**](SeededTrackedSessionEvent)
+**assets** | [**SeededTrackedAssetsEvent**](SeededTrackedAssetsEvent)
+**ml** | [**SeededTrackedMachineLearningEvent**](SeededTrackedMachineLearningEvent)
+**adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent)
+**conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent)
 
 ## Example
 
 ```typescript
-import { SeededConnectorTracking } from '';
+import { SeededConnectorTracking } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConnectorTracking = {
-    "schema": null, // 
-    "format": null, // 
-    "asset": null, // 
-    "interaction": null, // 
-    "keyboard": null, // 
-    "session": null, // 
-    "assets": null, // 
-    "ml": null, // 
-    "adoption": null, // 
-    "conversation": null, // 
+    "schema": null,
+    "format": null,
+    "asset": null,
+    "interaction": null,
+    "keyboard": null,
+    "session": null,
+    "assets": null,
+    "ml": null,
+    "adoption": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -47,7 +47,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConnectorTracking;
 console.log(exampleParsed);
 ```
-
-
 
 

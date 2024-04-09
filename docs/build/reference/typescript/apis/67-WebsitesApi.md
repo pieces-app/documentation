@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
-[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
-[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
-[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites | /websites [GET]
+Method | HTTP request
+------------- | -------------
+[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create
+[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete
+[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists
+[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites
 
 
-## **websitesCreateNewWebsite** Deprecated: 
+## **websitesCreateNewWebsite**
 > Website websitesCreateNewWebsite()
 
 This will create a website and attach it to a specific asset.
@@ -18,9 +18,8 @@ This will create a website and attach it to a specific asset.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.websitesCreateNewWebsite(body).then((data: Website) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededWebsite** | **SeededWebsite**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -46,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Website**
+[**Website**](../models/Website)
 
 ### HTTP request headers
 
@@ -55,14 +54,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **websitesDeleteSpecificWebsite** Deprecated: 
+## **websitesDeleteSpecificWebsite**
 > websitesDeleteSpecificWebsite()
 
 This will delete a specific website!
@@ -70,9 +67,8 @@ This will delete a specific website!
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
@@ -88,7 +84,7 @@ apiInstance.websitesDeleteSpecificWebsite(body).then((data: void (empty response
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
 
@@ -104,14 +100,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **websitesExists** Deprecated: 
+## **websitesExists**
 > ExistingMetadata websitesExists()
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
@@ -119,9 +113,8 @@ This will check all of the websites in our database to see if this specific prov
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
@@ -137,14 +130,14 @@ apiInstance.websitesExists(body).then((data: ExistingMetadata) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **existentMetadata** | **ExistentMetadata**|  |
 
 
 ### Return type
 
-**ExistingMetadata**
+[**ExistingMetadata**](../models/ExistingMetadata)
 
 ### HTTP request headers
 
@@ -153,14 +146,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **websitesSnapshot** Deprecated: 
+## **websitesSnapshot**
 > Websites websitesSnapshot()
 
 This will get a snapshot of all your websites.
@@ -168,9 +159,8 @@ This will get a snapshot of all your websites.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WebsitesApi(configuration);
 
@@ -186,14 +176,14 @@ apiInstance.websitesSnapshot(body).then((data: Websites) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Websites**
+[**Websites**](../models/Websites)
 
 ### HTTP request headers
 
@@ -202,11 +192,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

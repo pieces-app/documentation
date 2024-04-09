@@ -5,30 +5,30 @@ This is use as the score for an asset.  Manual: will be the raw sum of the asset
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**manual** | **number** | These are points assigned via manual user driven events. | [default to undefined]
-**automatic** | **number** | These are point assigned via automatic activity events. | [default to undefined]
-**priority** | **number** |  | [optional] [default to undefined]
-**reuse** | **number** |  | [optional] [default to undefined]
-**update** | **number** |  | [optional] [default to undefined]
-**reference** | **number** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**manual** | **number**
+**automatic** | **number**
+**priority** | **number**
+**reuse** | **number**
+**update** | **number**
+**reference** | **number**
 
 ## Example
 
 ```typescript
-import { Score } from '';
+import { Score } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Score = {
-    "schema": null, // 
-    "manual": null, // These are points assigned via manual user driven events.
-    "automatic": null, // These are point assigned via automatic activity events.
-    "priority": null, // 
-    "reuse": null, // 
-    "update": null, // 
-    "reference": null, // 
+    "schema": null,
+    "manual": null,
+    "automatic": null,
+    "priority": null,
+    "reuse": null,
+    "update": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Score;
 console.log(exampleParsed);
 ```
-
-
 
 

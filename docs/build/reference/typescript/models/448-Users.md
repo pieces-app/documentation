@@ -5,20 +5,20 @@ A base class for a collection of users and some additional meta properties.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;UserProfile&gt;**](UserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;UserProfile&gt;**](UserProfile)
 
 ## Example
 
 ```typescript
-import { Users } from '';
+import { Users } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Users = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Users;
 console.log(exampleParsed);
 ```
-
-
 
 

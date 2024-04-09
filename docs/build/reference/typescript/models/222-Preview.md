@@ -5,22 +5,22 @@ This is a preview Model that will hold references to at minimum the base preview
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**base** | [**ReferencedFormat**](ReferencedFormat) |  | [default to undefined]
-**overlay** | [**ReferencedFormat**](ReferencedFormat) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**base** | [**ReferencedFormat**](ReferencedFormat)
+**overlay** | [**ReferencedFormat**](ReferencedFormat)
 
 ## Example
 
 ```typescript
-import { Preview } from '';
+import { Preview } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Preview = {
-    "schema": null, // 
-    "base": null, // 
-    "overlay": null, // 
+    "schema": null,
+    "base": null,
+    "overlay": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Preview;
 console.log(exampleParsed);
 ```
-
-
 
 

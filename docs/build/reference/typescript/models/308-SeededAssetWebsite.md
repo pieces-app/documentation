@@ -5,24 +5,24 @@ This is similar to an SeededWebsite, where this is the minimum information of a 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**url** | **string** |  | [default to undefined]
-**name** | **string** |  | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**url** | **string**
+**name** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
 
 ## Example
 
 ```typescript
-import { SeededAssetWebsite } from '';
+import { SeededAssetWebsite } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetWebsite = {
-    "schema": null, // 
-    "url": null, // 
-    "name": null, // 
-    "mechanism": null, // 
+    "schema": null,
+    "url": null,
+    "name": null,
+    "mechanism": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetWebsite;
 console.log(exampleParsed);
 ```
-
-
 
 

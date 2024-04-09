@@ -5,20 +5,20 @@ This is a model for metadata of a file!
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 
 ## Example
 
 ```typescript
-import { FragmentMetadata } from '';
+import { FragmentMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FragmentMetadata = {
-    "schema": null, // 
-    "ext": null, // 
+    "schema": null,
+    "ext": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FragmentMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

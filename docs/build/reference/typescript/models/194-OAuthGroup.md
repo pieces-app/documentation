@@ -5,20 +5,20 @@ A model to group all of the properties associated with OAuthGroup
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**token** | [**OAuthToken**](OAuthToken) |  | [optional] [default to undefined]
-**account** | [**OAuthAccount**](OAuthAccount) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**token** | [**OAuthToken**](OAuthToken)
+**account** | [**OAuthAccount**](OAuthAccount)
 
 ## Example
 
 ```typescript
-import { OAuthGroup } from '';
+import { OAuthGroup } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OAuthGroup = {
-    "token": null, // 
-    "account": null, // 
+    "token": null,
+    "account": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OAuthGroup;
 console.log(exampleParsed);
 ```
-
-
 
 

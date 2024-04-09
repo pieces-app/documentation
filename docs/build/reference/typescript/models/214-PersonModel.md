@@ -5,24 +5,24 @@ This is a PersonSpecific Model. and will let us know for all the assets that get
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] [default to undefined]
-**model** | [**ReferencedModel**](ReferencedModel) |  | [optional] [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**explanation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**asset** | [**ReferencedAsset**](ReferencedAsset)
+**model** | [**ReferencedModel**](ReferencedModel)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**explanation** | [**ReferencedAnnotation**](ReferencedAnnotation)
 
 ## Example
 
 ```typescript
-import { PersonModel } from '';
+import { PersonModel } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PersonModel = {
-    "asset": null, // 
-    "model": null, // 
-    "deleted": null, // 
-    "explanation": null, // 
+    "asset": null,
+    "model": null,
+    "deleted": null,
+    "explanation": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PersonModel;
 console.log(exampleParsed);
 ```
-
-
 
 

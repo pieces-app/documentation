@@ -5,32 +5,32 @@ This is the seededAssetSensitive, this does not have an id yet as we will add it
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** | this is the string representative of the sensative piece of data. | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**category** | [**SensitiveCategoryEnum**](SensitiveCategoryEnum) |  | [default to undefined]
-**severity** | [**SensitiveSeverityEnum**](SensitiveSeverityEnum) |  | [default to undefined]
-**name** | **string** |  | [default to undefined]
-**description** | **string** |  | [default to undefined]
-**metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**category** | [**SensitiveCategoryEnum**](SensitiveCategoryEnum)
+**severity** | [**SensitiveSeverityEnum**](SensitiveSeverityEnum)
+**name** | **string**
+**description** | **string**
+**metadata** | [**SensitiveMetadata**](SensitiveMetadata)
 
 ## Example
 
 ```typescript
-import { SeededAssetSensitive } from '';
+import { SeededAssetSensitive } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetSensitive = {
-    "schema": null, // 
-    "text": null, // this is the string representative of the sensative piece of data.
-    "mechanism": null, // 
-    "category": null, // 
-    "severity": null, // 
-    "name": null, // 
-    "description": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "text": null,
+    "mechanism": null,
+    "category": null,
+    "severity": null,
+    "name": null,
+    "description": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetSensitive;
 console.log(exampleParsed);
 ```
-
-
 
 

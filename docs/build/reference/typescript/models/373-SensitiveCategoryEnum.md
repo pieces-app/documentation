@@ -5,13 +5,13 @@ This is the enum that is use to describe the category of our Sensitive Model.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { SensitiveCategoryEnum } from '';
+import { SensitiveCategoryEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SensitiveCategoryEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SensitiveCategoryEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

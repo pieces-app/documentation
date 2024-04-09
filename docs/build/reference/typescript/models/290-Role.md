@@ -5,13 +5,13 @@ This is the specific role of a format.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { Role } from '';
+import { Role } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Role = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Role;
 console.log(exampleParsed);
 ```
-
-
 
 

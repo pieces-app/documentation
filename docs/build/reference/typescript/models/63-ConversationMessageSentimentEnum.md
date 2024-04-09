@@ -5,13 +5,13 @@ This will describe the sentiment of a specific message ie if the message was lik
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ConversationMessageSentimentEnum } from '';
+import { ConversationMessageSentimentEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ConversationMessageSentimentEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ConversationMessageSentimentEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

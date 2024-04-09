@@ -5,24 +5,24 @@ Only supporting a single api key per user.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**apiKey** | **string** |  | [optional] [default to undefined]
-**apiKeyName** | **string** |  | [optional] [default to undefined]
-**organizationKey** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**apiKey** | **string**
+**apiKeyName** | **string**
+**organizationKey** | **string**
 
 ## Example
 
 ```typescript
-import { Auth0OpenAIUserMetadata } from '';
+import { Auth0OpenAIUserMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Auth0OpenAIUserMetadata = {
-    "schema": null, // 
-    "apiKey": null, // 
-    "apiKeyName": null, // 
-    "organizationKey": null, // 
+    "schema": null,
+    "apiKey": null,
+    "apiKeyName": null,
+    "organizationKey": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Auth0OpenAIUserMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
+Method | HTTP request
+------------- | -------------
+[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
 
 
-## **openAiModelsList** Deprecated: 
+## **openAiModelsList**
 > OpenAIModelsListOutput openAiModelsList()
 
 This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.apiKey.  if the user is unauthenticated or if the openAI key doesnt exist or if it is invalid we will return a 401.  Requires internet as this will ping out to OpenAI\'s server to get the models.
@@ -15,9 +15,8 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.OpenAIApi(configuration);
 
@@ -33,14 +32,14 @@ apiInstance.openAiModelsList(body).then((data: OpenAIModelsListOutput) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **openAIModelsListInput** | **OpenAIModelsListInput**|  |
 
 
 ### Return type
 
-**OpenAIModelsListOutput**
+[**OpenAIModelsListOutput**](../models/OpenAIModelsListOutput)
 
 ### HTTP request headers
 
@@ -49,12 +48,10 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

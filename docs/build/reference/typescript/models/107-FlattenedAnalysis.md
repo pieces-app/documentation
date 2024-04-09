@@ -4,26 +4,26 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**code** | [**CodeAnalysis**](CodeAnalysis) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**format** | **string** | this is a reference to the format that it belongs too. | [default to undefined]
-**image** | [**FlattenedImageAnalysis**](FlattenedImageAnalysis) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**code** | [**CodeAnalysis**](CodeAnalysis)
+**id** | **string**
+**format** | **string**
+**image** | [**FlattenedImageAnalysis**](FlattenedImageAnalysis)
 
 ## Example
 
 ```typescript
-import { FlattenedAnalysis } from '';
+import { FlattenedAnalysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedAnalysis = {
-    "schema": null, // 
-    "code": null, // 
-    "id": null, // 
-    "format": null, // this is a reference to the format that it belongs too.
-    "image": null, // 
+    "schema": null,
+    "code": null,
+    "id": null,
+    "format": null,
+    "image": null,
 };
 
 console.log(example);
@@ -36,7 +36,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnalysis;
 console.log(exampleParsed);
 ```
-
-
 
 

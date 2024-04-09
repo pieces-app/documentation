@@ -4,13 +4,13 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { AccessEnum } from '';
+import { AccessEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AccessEnum = {
@@ -26,7 +26,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AccessEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

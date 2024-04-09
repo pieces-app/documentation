@@ -5,20 +5,20 @@ if reuse was used in the reaction then we can provide the uuid of the asset that
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
 
 ## Example
 
 ```typescript
-import { ReuseReaction } from '';
+import { ReuseReaction } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReuseReaction = {
-    "schema": null, // 
-    "asset": null, // 
+    "schema": null,
+    "asset": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReuseReaction;
 console.log(exampleParsed);
 ```
-
-
 
 

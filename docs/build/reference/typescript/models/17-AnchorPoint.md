@@ -4,36 +4,36 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**verified** | **boolean** |  | [optional] [default to undefined]
-**fullpath** | **string** | This is the text of the path. | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**platform** | [**PlatformEnum**](PlatformEnum) |  | [optional] [default to undefined]
-**anchor** | [**ReferencedAnchor**](ReferencedAnchor) |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**verified** | **boolean**
+**fullpath** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**platform** | [**PlatformEnum**](PlatformEnum)
+**anchor** | [**ReferencedAnchor**](ReferencedAnchor)
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { AnchorPoint } from '';
+import { AnchorPoint } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AnchorPoint = {
-    "schema": null, // 
-    "id": null, // 
-    "verified": null, // 
-    "fullpath": null, // This is the text of the path.
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
-    "platform": null, // 
-    "anchor": null, // 
-    "score": null, // 
+    "schema": null,
+    "id": null,
+    "verified": null,
+    "fullpath": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
+    "platform": null,
+    "anchor": null,
+    "score": null,
 };
 
 console.log(example);
@@ -46,7 +46,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AnchorPoint;
 console.log(exampleParsed);
 ```
-
-
 
 
