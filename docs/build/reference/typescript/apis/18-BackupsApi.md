@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
-[**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
-[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
-[**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
+Method | HTTP request
+------------- | -------------
+[**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create
+[**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed
+[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete
+[**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups
 
 
-## **backupsCreateNewBackup** Deprecated: 
+## **backupsCreateNewBackup**
 > Backup backupsCreateNewBackup()
 
 This take a local database and ensure that it is backed up to the cloud.
@@ -18,9 +18,8 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
@@ -36,14 +35,14 @@ apiInstance.backupsCreateNewBackup(body).then((data: Backup) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededBackup** | **SeededBackup**|  |
 
 
 ### Return type
 
-**Backup**
+[**Backup**](../models/Backup)
 
 ### HTTP request headers
 
@@ -52,14 +51,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **backupsCreateNewBackupStreamed** Deprecated: 
+## **backupsCreateNewBackupStreamed**
 > BackupStreamedProgress backupsCreateNewBackupStreamed()
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
@@ -67,9 +64,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
@@ -85,14 +81,14 @@ apiInstance.backupsCreateNewBackupStreamed(body).then((data: BackupStreamedProgr
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededBackup** | **SeededBackup**|  |
 
 
 ### Return type
 
-**BackupStreamedProgress**
+[**BackupStreamedProgress**](../models/BackupStreamedProgress)
 
 ### HTTP request headers
 
@@ -101,14 +97,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **backupsDeleteSpecificBackup** Deprecated: 
+## **backupsDeleteSpecificBackup**
 > backupsDeleteSpecificBackup()
 
 This will delete a specific backup from the cloud.
@@ -116,9 +110,8 @@ This will delete a specific backup from the cloud.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
@@ -136,7 +129,7 @@ apiInstance.backupsDeleteSpecificBackup(body).then((data: void (empty response b
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
@@ -153,14 +146,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **backupsSnapshot** Deprecated: 
+## **backupsSnapshot**
 > Backups backupsSnapshot()
 
 This will get a snapshot of Backsup within the cloud.  This endpoint requires our user to be authenticated and connected to the cloud.
@@ -168,9 +159,8 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.BackupsApi(configuration);
 
@@ -185,7 +175,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Backups**
+[**Backups**](../models/Backups)
 
 ### HTTP request headers
 
@@ -194,11 +184,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

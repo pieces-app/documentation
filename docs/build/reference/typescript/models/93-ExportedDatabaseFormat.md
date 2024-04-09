@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | this is the id of the format | [default to undefined]
-**raw** | **Array&lt;number&gt;** | these are bytes. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**raw** | **Array&lt;number&gt;**
 
 ## Example
 
 ```typescript
-import { ExportedDatabaseFormat } from '';
+import { ExportedDatabaseFormat } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExportedDatabaseFormat = {
-    "schema": null, // 
-    "id": null, // this is the id of the format
-    "raw": null, // these are bytes.
+    "schema": null,
+    "id": null,
+    "raw": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExportedDatabaseFormat;
 console.log(exampleParsed);
 ```
-
-
 
 

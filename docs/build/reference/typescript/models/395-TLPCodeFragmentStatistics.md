@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**descriptive** | [**TLPCodeFragmentDescriptiveStatistics**](TLPCodeFragmentDescriptiveStatistics) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**descriptive** | [**TLPCodeFragmentDescriptiveStatistics**](TLPCodeFragmentDescriptiveStatistics)
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentStatistics } from '';
+import { TLPCodeFragmentStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentStatistics = {
-    "schema": null, // 
-    "descriptive": null, // 
+    "schema": null,
+    "descriptive": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

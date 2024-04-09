@@ -5,28 +5,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**raw** | [**ReferencedFormat**](ReferencedFormat) |  | [default to undefined]
-**hocr** | [**ReferencedFormat**](ReferencedFormat) |  | [default to undefined]
-**model** | [**Model**](Model) |  | [default to undefined]
-**image** | **string** | this is a refernece to the image analysis. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**raw** | [**ReferencedFormat**](ReferencedFormat)
+**hocr** | [**ReferencedFormat**](ReferencedFormat)
+**model** | [**Model**](Model)
+**image** | **string**
 
 ## Example
 
 ```typescript
-import { FlattenedOCRAnalysis } from '';
+import { FlattenedOCRAnalysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedOCRAnalysis = {
-    "schema": null, // 
-    "id": null, // 
-    "raw": null, // 
-    "hocr": null, // 
-    "model": null, // 
-    "image": null, // this is a refernece to the image analysis.
+    "schema": null,
+    "id": null,
+    "raw": null,
+    "hocr": null,
+    "model": null,
+    "image": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedOCRAnalysis;
 console.log(exampleParsed);
 ```
-
-
 
 

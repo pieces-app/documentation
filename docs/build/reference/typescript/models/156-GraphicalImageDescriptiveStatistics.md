@@ -5,32 +5,32 @@ Model for collecting descriptive statistics of images uploaded to Pieces
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**width** | **string** |  | [default to undefined]
-**height** | **string** |  | [default to undefined]
-**channels** | **string** |  | [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**user** | **string** |  | [optional] [default to undefined]
-**created** | **string** |  | [default to undefined]
-**os** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**width** | **string**
+**height** | **string**
+**channels** | **string**
+**asset** | **string**
+**user** | **string**
+**created** | **string**
+**os** | **string**
 
 ## Example
 
 ```typescript
-import { GraphicalImageDescriptiveStatistics } from '';
+import { GraphicalImageDescriptiveStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalImageDescriptiveStatistics = {
-    "schema": null, // 
-    "width": null, // 
-    "height": null, // 
-    "channels": null, // 
-    "asset": null, // 
-    "user": null, // 
-    "created": null, // 
-    "os": null, // 
+    "schema": null,
+    "width": null,
+    "height": null,
+    "channels": null,
+    "asset": null,
+    "user": null,
+    "created": null,
+    "os": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalImageDescriptiveStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

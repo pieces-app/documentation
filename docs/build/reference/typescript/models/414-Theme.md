@@ -5,20 +5,20 @@ This will describe the theme that belongs to a user.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**dark** | **boolean** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**dark** | **boolean**
 
 ## Example
 
 ```typescript
-import { Theme } from '';
+import { Theme } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Theme = {
-    "schema": null, // 
-    "dark": null, // 
+    "schema": null,
+    "dark": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Theme;
 console.log(exampleParsed);
 ```
-
-
 
 

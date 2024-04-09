@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs**](AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifierDescriptionPair** | [**AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs**](AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs)
 
 ## Example
 
 ```typescript
-import { SeededTrackedAdoptionEvent } from '';
+import { SeededTrackedAdoptionEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedAdoptionEvent = {
-    "schema": null, // 
-    "identifierDescriptionPair": null, // 
+    "schema": null,
+    "identifierDescriptionPair": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedAdoptionEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,24 +5,24 @@ This will take a single message, and a role.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** |  | [default to undefined]
-**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum) |  | [default to undefined]
-**timestamp** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
+**timestamp** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { QGPTConversationMessage } from '';
+import { QGPTConversationMessage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTConversationMessage = {
-    "schema": null, // 
-    "text": null, // 
-    "role": null, // 
-    "timestamp": null, // 
+    "schema": null,
+    "text": null,
+    "role": null,
+    "timestamp": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTConversationMessage;
 console.log(exampleParsed);
 ```
-
-
 
 

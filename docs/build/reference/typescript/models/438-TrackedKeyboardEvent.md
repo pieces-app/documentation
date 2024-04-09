@@ -5,22 +5,22 @@ This is a model that will hold relavent information in relation to a keyboard(in
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**description** | **string** | this is a description of the event, optional. | [default to undefined]
-**shortcut** | **Array&lt;number&gt;** | this is an array of of ascii values that represent numerics on your keyboard. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**description** | **string**
+**shortcut** | **Array&lt;number&gt;**
 
 ## Example
 
 ```typescript
-import { TrackedKeyboardEvent } from '';
+import { TrackedKeyboardEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedKeyboardEvent = {
-    "schema": null, // 
-    "description": null, // this is a description of the event, optional.
-    "shortcut": null, // this is an array of of ascii values that represent numerics on your keyboard.
+    "schema": null,
+    "description": null,
+    "shortcut": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedKeyboardEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

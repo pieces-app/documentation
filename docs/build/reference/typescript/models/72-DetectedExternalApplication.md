@@ -5,22 +5,22 @@ This is a detected External Application that comes from our endpoint that will g
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** | this is the name of the application | [default to undefined]
-**version** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**version** | **string**
 
 ## Example
 
 ```typescript
-import { DetectedExternalApplication } from '';
+import { DetectedExternalApplication } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DetectedExternalApplication = {
-    "schema": null, // 
-    "name": null, // this is the name of the application
-    "version": null, // 
+    "schema": null,
+    "name": null,
+    "version": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DetectedExternalApplication;
 console.log(exampleParsed);
 ```
-
-
 
 

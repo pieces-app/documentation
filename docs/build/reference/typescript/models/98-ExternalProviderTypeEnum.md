@@ -5,13 +5,13 @@ This is an enum to describe the provider used to authenticate a user.  IMPORTANT
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ExternalProviderTypeEnum } from '';
+import { ExternalProviderTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExternalProviderTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExternalProviderTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,42 +5,42 @@ This represents what information that is relavent to anything and every sharing 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | This is the uuid that represents this share model. | [default to undefined]
-**user** | **string** | this is the uuid of the user that the share is created for. | [optional] [default to undefined]
-**asset** | [**FlattenedAsset**](FlattenedAsset) |  | [optional] [default to undefined]
-**assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] [default to undefined]
-**link** | **string** | This is the prebuilt link. | [default to undefined]
-**access** | [**AccessEnum**](AccessEnum) |  | [default to undefined]
-**accessors** | [**Accessors**](Accessors) |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**_short** | **string** | This is a shortened version of our uuid. | [default to undefined]
-**name** | **string** | this is an optional name we can give to the link, ie ?p&#x3D;JAVASCRIPT or what ever the user wants as long as it is available. | [optional] [default to undefined]
-**distributions** | [**Distributions**](Distributions) |  | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**user** | **string**
+**asset** | [**FlattenedAsset**](FlattenedAsset)
+**assets** | [**FlattenedAssets**](FlattenedAssets)
+**link** | **string**
+**access** | [**AccessEnum**](AccessEnum)
+**accessors** | [**Accessors**](Accessors)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**_short** | **string**
+**name** | **string**
+**distributions** | [**Distributions**](Distributions)
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { Share } from '';
+import { Share } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Share = {
-    "schema": null, // 
-    "id": null, // This is the uuid that represents this share model.
-    "user": null, // this is the uuid of the user that the share is created for.
-    "asset": null, // 
-    "assets": null, // 
-    "link": null, // This is the prebuilt link.
-    "access": null, // 
-    "accessors": null, // 
-    "created": null, // 
-    "_short": null, // This is a shortened version of our uuid.
-    "name": null, // this is an optional name we can give to the link, ie ?p&#x3D;JAVASCRIPT or what ever the user wants as long as it is available.
-    "distributions": null, // 
-    "score": null, // 
+    "schema": null,
+    "id": null,
+    "user": null,
+    "asset": null,
+    "assets": null,
+    "link": null,
+    "access": null,
+    "accessors": null,
+    "created": null,
+    "_short": null,
+    "name": null,
+    "distributions": null,
+    "score": null,
 };
 
 console.log(example);
@@ -53,7 +53,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Share;
 console.log(exampleParsed);
 ```
-
-
 
 

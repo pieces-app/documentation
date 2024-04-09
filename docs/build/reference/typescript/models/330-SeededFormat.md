@@ -5,24 +5,24 @@ This is seeded data that will be come a format.  We will throw an Error if, 1) f
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**file** | [**SeededFile**](SeededFile) |  | [optional] [default to undefined]
-**fragment** | [**SeededFragment**](SeededFragment) |  | [optional] [default to undefined]
-**classification** | [**SeededClassification**](SeededClassification) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**file** | [**SeededFile**](SeededFile)
+**fragment** | [**SeededFragment**](SeededFragment)
+**classification** | [**SeededClassification**](SeededClassification)
 
 ## Example
 
 ```typescript
-import { SeededFormat } from '';
+import { SeededFormat } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededFormat = {
-    "schema": null, // 
-    "file": null, // 
-    "fragment": null, // 
-    "classification": null, // 
+    "schema": null,
+    "file": null,
+    "fragment": null,
+    "classification": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededFormat;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ An seeded event model that can occur at the assets level i.e. search
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**TrackedAssetsEventIdentifierDescriptionPairs**](TrackedAssetsEventIdentifierDescriptionPairs) |  | [optional] [default to undefined]
-**metadata** | [**SeededTrackedAssetsEventMetadata**](SeededTrackedAssetsEventMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifierDescriptionPair** | [**TrackedAssetsEventIdentifierDescriptionPairs**](TrackedAssetsEventIdentifierDescriptionPairs)
+**metadata** | [**SeededTrackedAssetsEventMetadata**](SeededTrackedAssetsEventMetadata)
 
 ## Example
 
 ```typescript
-import { SeededTrackedAssetsEvent } from '';
+import { SeededTrackedAssetsEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedAssetsEvent = {
-    "schema": null, // 
-    "identifierDescriptionPair": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "identifierDescriptionPair": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedAssetsEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

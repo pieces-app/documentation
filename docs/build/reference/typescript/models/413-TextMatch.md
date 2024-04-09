@@ -5,22 +5,22 @@ Thext Match currently used for sensitive for scales for people, and anything rel
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**group** | [**TextLocation**](TextLocation) |  | [default to undefined]
-**subgroup** | [**TextLocation**](TextLocation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**group** | [**TextLocation**](TextLocation)
+**subgroup** | [**TextLocation**](TextLocation)
 
 ## Example
 
 ```typescript
-import { TextMatch } from '';
+import { TextMatch } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TextMatch = {
-    "schema": null, // 
-    "group": null, // 
-    "subgroup": null, // 
+    "schema": null,
+    "group": null,
+    "subgroup": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TextMatch;
 console.log(exampleParsed);
 ```
-
-
 
 

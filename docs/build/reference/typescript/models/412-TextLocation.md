@@ -5,24 +5,24 @@ This is a generic model that is used for text location.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** | this is the value that was found. | [default to undefined]
-**start** | **number** | this is the start index within the original string. | [default to undefined]
-**end** | **number** | this is the end index within the original string. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**start** | **number**
+**end** | **number**
 
 ## Example
 
 ```typescript
-import { TextLocation } from '';
+import { TextLocation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TextLocation = {
-    "schema": null, // 
-    "text": null, // this is the value that was found.
-    "start": null, // this is the start index within the original string.
-    "end": null, // this is the end index within the original string.
+    "schema": null,
+    "text": null,
+    "start": null,
+    "end": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TextLocation;
 console.log(exampleParsed);
 ```
-
-
 
 

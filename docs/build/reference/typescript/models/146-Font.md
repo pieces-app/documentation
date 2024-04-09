@@ -5,20 +5,20 @@ This will describe the font that the user sees.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**size** | **number** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**size** | **number**
 
 ## Example
 
 ```typescript
-import { Font } from '';
+import { Font } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Font = {
-    "schema": null, // 
-    "size": null, // 
+    "schema": null,
+    "size": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Font;
 console.log(exampleParsed);
 ```
-
-
 
 

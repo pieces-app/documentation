@@ -5,20 +5,20 @@ This is the metadata for the the ConversationEvent
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**rename** | [**TrackedConversationEventRenameMetadata**](TrackedConversationEventRenameMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**rename** | [**TrackedConversationEventRenameMetadata**](TrackedConversationEventRenameMetadata)
 
 ## Example
 
 ```typescript
-import { TrackedConversationEventMetadata } from '';
+import { TrackedConversationEventMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedConversationEventMetadata = {
-    "schema": null, // 
-    "rename": null, // 
+    "schema": null,
+    "rename": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedConversationEventMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

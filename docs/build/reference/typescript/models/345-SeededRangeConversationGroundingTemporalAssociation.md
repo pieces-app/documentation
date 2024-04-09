@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**workstream** | **boolean** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**workstream** | **boolean**
 
 ## Example
 
 ```typescript
-import { SeededRangeConversationGroundingTemporalAssociation } from '';
+import { SeededRangeConversationGroundingTemporalAssociation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededRangeConversationGroundingTemporalAssociation = {
-    "schema": null, // 
-    "workstream": null, // 
+    "schema": null,
+    "workstream": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededRangeConversationGroundingTemporalAssociation;
 console.log(exampleParsed);
 ```
-
-
 
 

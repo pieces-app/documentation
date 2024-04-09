@@ -5,24 +5,24 @@ This is the plural of Person. will have top level meta about the person includin
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ReferencedPerson&gt;**](ReferencedPerson) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an person id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ReferencedPerson&gt;**](ReferencedPerson)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { FlattenedPersons } from '';
+import { FlattenedPersons } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedPersons = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an person id.
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedPersons;
 console.log(exampleParsed);
 ```
-
-
 
 

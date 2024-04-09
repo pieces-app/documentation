@@ -5,18 +5,18 @@ This type of conversation is reccomended to be provided when a user want generat
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { QGPTConversationPipelineForContextualizedCodeGeneration } from '';
+import { QGPTConversationPipelineForContextualizedCodeGeneration } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTConversationPipelineForContextualizedCodeGeneration = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTConversationPipelineForContextualizedCodeGeneration;
 console.log(exampleParsed);
 ```
-
-
 
 

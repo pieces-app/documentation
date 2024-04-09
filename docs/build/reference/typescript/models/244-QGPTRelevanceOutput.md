@@ -5,22 +5,22 @@ This is the returned value from /code_gpt/relevance.  This will return the snipp
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**answer** | [**QGPTQuestionOutput**](QGPTQuestionOutput) |  | [optional] [default to undefined]
-**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**answer** | [**QGPTQuestionOutput**](QGPTQuestionOutput)
+**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds)
 
 ## Example
 
 ```typescript
-import { QGPTRelevanceOutput } from '';
+import { QGPTRelevanceOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTRelevanceOutput = {
-    "schema": null, // 
-    "answer": null, // 
-    "relevant": null, // 
+    "schema": null,
+    "answer": null,
+    "relevant": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTRelevanceOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

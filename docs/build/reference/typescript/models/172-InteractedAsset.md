@@ -5,20 +5,20 @@ A model that represents an asset that has been interacted with.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**asset** | **string** | A uuid model. 36 Characters (4 Dashes, 32 Numbers/Letters)  | [optional] [default to undefined]
-**interactions** | [**InteractedAssetInteractions**](InteractedAssetInteractions) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**asset** | **string**
+**interactions** | [**InteractedAssetInteractions**](InteractedAssetInteractions)
 
 ## Example
 
 ```typescript
-import { InteractedAsset } from '';
+import { InteractedAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: InteractedAsset = {
-    "asset": 6a2f41a3-c54c-fce8-32d2-0324e1c32e22, // A uuid model. 36 Characters (4 Dashes, 32 Numbers/Letters) 
-    "interactions": null, // 
+    "asset": 6a2f41a3-c54c-fce8-32d2-0324e1c32e22,
+    "interactions": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as InteractedAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

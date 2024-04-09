@@ -4,24 +4,24 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**ocr** | [**FlattenedOCRAnalysis**](FlattenedOCRAnalysis) |  | [optional] [default to undefined]
-**analysis** | **string** | this is a reference to our (parent)analysis | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**ocr** | [**FlattenedOCRAnalysis**](FlattenedOCRAnalysis)
+**analysis** | **string**
 
 ## Example
 
 ```typescript
-import { FlattenedImageAnalysis } from '';
+import { FlattenedImageAnalysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedImageAnalysis = {
-    "schema": null, // 
-    "id": null, // 
-    "ocr": null, // 
-    "analysis": null, // this is a reference to our (parent)analysis
+    "schema": null,
+    "id": null,
+    "ocr": null,
+    "analysis": null,
 };
 
 console.log(example);
@@ -34,7 +34,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedImageAnalysis;
 console.log(exampleParsed);
 ```
-
-
 
 

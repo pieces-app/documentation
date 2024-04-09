@@ -5,13 +5,13 @@ Code block type like function, class, abstract
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { TLPDirectedDiscoveryFilterEnum } from '';
+import { TLPDirectedDiscoveryFilterEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPDirectedDiscoveryFilterEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPDirectedDiscoveryFilterEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,22 +5,22 @@ This is a model related to switching between different prompts based on if we ar
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**task** | [**QGPTTaskPipeline**](QGPTTaskPipeline) |  | [optional] [default to undefined]
-**conversation** | [**QGPTConversationPipeline**](QGPTConversationPipeline) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**task** | [**QGPTTaskPipeline**](QGPTTaskPipeline)
+**conversation** | [**QGPTConversationPipeline**](QGPTConversationPipeline)
 
 ## Example
 
 ```typescript
-import { QGPTPromptPipeline } from '';
+import { QGPTPromptPipeline } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTPromptPipeline = {
-    "schema": null, // 
-    "task": null, // 
-    "conversation": null, // 
+    "schema": null,
+    "task": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTPromptPipeline;
 console.log(exampleParsed);
 ```
-
-
 
 

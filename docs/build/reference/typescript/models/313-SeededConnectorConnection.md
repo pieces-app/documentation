@@ -5,20 +5,20 @@ A model that is passed to the context API at bootup
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | [**SeededTrackedApplication**](SeededTrackedApplication) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | [**SeededTrackedApplication**](SeededTrackedApplication)
 
 ## Example
 
 ```typescript
-import { SeededConnectorConnection } from '';
+import { SeededConnectorConnection } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConnectorConnection = {
-    "schema": null, // 
-    "application": null, // 
+    "schema": null,
+    "application": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConnectorConnection;
 console.log(exampleParsed);
 ```
-
-
 
 

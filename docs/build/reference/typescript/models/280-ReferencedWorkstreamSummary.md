@@ -5,22 +5,22 @@ this is a referenced minimal version of a WorkstreamSummary typically just our u
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedWorkstreamSummary**](FlattenedWorkstreamSummary) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedWorkstreamSummary**](FlattenedWorkstreamSummary)
 
 ## Example
 
 ```typescript
-import { ReferencedWorkstreamSummary } from '';
+import { ReferencedWorkstreamSummary } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedWorkstreamSummary = {
-    "schema": null, // 
-    "id": null, // 
-    "reference": null, // 
+    "schema": null,
+    "id": null,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedWorkstreamSummary;
 console.log(exampleParsed);
 ```
-
-
 
 

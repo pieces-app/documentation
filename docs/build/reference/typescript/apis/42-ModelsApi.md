@@ -2,26 +2,25 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**modelsCreateNewModel**](ModelsApi#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
-[**modelsDeleteSpecificModel**](ModelsApi#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
-[**modelsDeleteSpecificModelCache**](ModelsApi#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
-[**modelsSnapshot**](ModelsApi#modelssnapshot) | **GET** /models | /models [GET]
-[**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload | /models/unload [POST]
+Method | HTTP request
+------------- | -------------
+[**modelsCreateNewModel**](ModelsApi#modelscreatenewmodel) | **POST** /models/create
+[**modelsDeleteSpecificModel**](ModelsApi#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete
+[**modelsDeleteSpecificModelCache**](ModelsApi#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache
+[**modelsSnapshot**](ModelsApi#modelssnapshot) | **GET** /models
+[**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload
 
 
-## **modelsCreateNewModel** Deprecated: 
+## **modelsCreateNewModel**
 > Model modelsCreateNewModel()
 
-This will create a ml model, this is aloud however all models will be set to custom: true.  && we will verify we dont have a model that matches this model.
+Creates a machine learning model. By default, all models created through this endpoint will have the \'custom\' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
@@ -37,14 +36,14 @@ apiInstance.modelsCreateNewModel(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededModel** | **SeededModel**|  |
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -53,24 +52,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelsDeleteSpecificModel** Deprecated: 
+## **modelsDeleteSpecificModel**
 > modelsDeleteSpecificModel()
 
-This will delete a model, This is only available for custom: true models.
+Deletes a specific model. It is exclusively available for custom models with the \'custom: true\' attribute.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
@@ -86,7 +82,7 @@ apiInstance.modelsDeleteSpecificModel(body).then((data: void (empty response bod
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
@@ -102,24 +98,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelsDeleteSpecificModelCache** Deprecated: 
+## **modelsDeleteSpecificModelCache**
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache()
 
-This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
+Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
@@ -137,7 +130,7 @@ apiInstance.modelsDeleteSpecificModelCache(body).then((data: ModelDeleteCacheOut
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **modelDeleteCacheInput** | **ModelDeleteCacheInput**|  |
  **model** | [**string**] | model id | defaults to undefined
@@ -145,7 +138,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ModelDeleteCacheOutput**
+[**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
 ### HTTP request headers
 
@@ -154,14 +147,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelsSnapshot** Deprecated: 
+## **modelsSnapshot**
 > Models modelsSnapshot()
 
 This will get a snapshot of all of your models.
@@ -169,9 +160,8 @@ This will get a snapshot of all of your models.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
@@ -186,7 +176,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Models**
+[**Models**](../models/Models)
 
 ### HTTP request headers
 
@@ -195,24 +185,21 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **unloadModels** Deprecated: 
+## **unloadModels**
 > unloadModels()
 
-This will unload all of the ml models.(that are unloadable)
+Unloads all available machine learning models that are unloadable.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelsApi(configuration);
 
@@ -236,11 +223,9 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

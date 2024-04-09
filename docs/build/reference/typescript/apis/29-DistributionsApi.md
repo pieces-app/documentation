@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
-[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions | /distributions [GET]
+Method | HTTP request
+------------- | -------------
+[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create
+[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
+[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions
 
 
-## **distributionsCreateNewDistribution** Deprecated: 
+## **distributionsCreateNewDistribution**
 > Distribution distributionsCreateNewDistribution()
 
 This will create a new distribution.
@@ -17,9 +17,8 @@ This will create a new distribution.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
@@ -35,14 +34,14 @@ apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededDistribution** | **SeededDistribution**|  |
 
 
 ### Return type
 
-**Distribution**
+[**Distribution**](../models/Distribution)
 
 ### HTTP request headers
 
@@ -51,14 +50,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **distributionsDeleteSpecificDistribution** Deprecated: 
+## **distributionsDeleteSpecificDistribution**
 > distributionsDeleteSpecificDistribution()
 
 This will delete a specific distribution.
@@ -66,9 +63,8 @@ This will delete a specific distribution.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
@@ -84,7 +80,7 @@ apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empt
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
@@ -100,14 +96,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **distributionsSnapshot** Deprecated: 
+## **distributionsSnapshot**
 > Distributions distributionsSnapshot()
 
 This will get a specific snapshot of all our distributions.
@@ -115,9 +109,8 @@ This will get a specific snapshot of all our distributions.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DistributionsApi(configuration);
 
@@ -132,7 +125,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Distributions**
+[**Distributions**](../models/Distributions)
 
 ### HTTP request headers
 
@@ -141,11 +134,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

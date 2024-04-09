@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
+Method | HTTP request
+------------- | -------------
+[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
 
 
-## **relationshipsSnapshot** Deprecated: 
+## **relationshipsSnapshot**
 > Relationships relationshipsSnapshot()
 
 This will reurn all of the relationships that exists within your pieces db.
@@ -15,9 +15,8 @@ This will reurn all of the relationships that exists within your pieces db.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.RelationshipsApi(configuration);
 
@@ -32,7 +31,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Relationships**
+[**Relationships**](../models/Relationships)
 
 ### HTTP request headers
 
@@ -41,11 +40,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

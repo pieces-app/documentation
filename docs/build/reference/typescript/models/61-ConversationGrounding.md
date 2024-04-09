@@ -5,22 +5,22 @@ This is the context used for grounding the ml models with reguard to a conversat
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] [default to undefined]
-**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
+**temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
 ## Example
 
 ```typescript
-import { ConversationGrounding } from '';
+import { ConversationGrounding } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ConversationGrounding = {
-    "schema": null, // 
-    "messages": null, // 
-    "temporal": null, // 
+    "schema": null,
+    "messages": null,
+    "temporal": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ConversationGrounding;
 console.log(exampleParsed);
 ```
-
-
 
 

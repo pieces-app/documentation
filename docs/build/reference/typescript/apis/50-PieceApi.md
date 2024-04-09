@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**htmlShare**](PieceApi#htmlshare) | **GET** / | / [GET]
+Method | HTTP request
+------------- | -------------
+[**htmlShare**](PieceApi#htmlshare) | **GET** /
 
 
-## **htmlShare** Deprecated: 
+## **htmlShare**
 > string htmlShare()
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.
@@ -15,9 +15,8 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PieceApi(configuration);
 
@@ -33,7 +32,7 @@ apiInstance.htmlShare(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **p** | [**string**] | this is the a query param, that a shortened version of the share. | defaults to undefined
 
@@ -49,10 +48,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

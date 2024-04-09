@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert | Convert Generic Classification
+Method | HTTP request
+------------- | -------------
+[**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert
 
 
-## **convertGenericClassification** Deprecated: 
+## **convertGenericClassification**
 > SeededFormat convertGenericClassification()
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 
@@ -15,9 +15,8 @@ This endpoint converts on a best effort basis from one generic format to another
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ClassificationApi(configuration);
 
@@ -33,14 +32,14 @@ apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededFormat** | **SeededFormat**| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  |
 
 
 ### Return type
 
-**SeededFormat**
+[**SeededFormat**](../models/SeededFormat)
 
 ### HTTP request headers
 
@@ -49,12 +48,10 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK - The SeededFormat that was successfully converted to the rendering format that was specified. |  -  |
 **500** | Internal Server Error |  -  |
 **501** | Generic Classification Conversion Not Implemented |  -  |
-
-
 
 

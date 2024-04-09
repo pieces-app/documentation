@@ -2,26 +2,26 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
-[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
-[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
-[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
-[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
-[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
-[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search | /assets/search?query&#x3D;string [GET]
-[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
-[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
-[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
-[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
-[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | Your GET endpoint
-[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [GET]
+Method | HTTP request
+------------- | -------------
+[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create
+[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete
+[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft
+[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended
+[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related
+[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers
+[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo
+[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search
+[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search
+[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats
+[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\}
+[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers
+[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables
+[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream
 
 
-## **assetsCreateNewAsset** Deprecated: 
+## **assetsCreateNewAsset**
 > Asset assetsCreateNewAsset()
 
 Accepts a seeded (a structure that comes before an asset, and will be used in creation) asset and uploads it to Pieces. The response will be the newly created Asset object.
@@ -29,9 +29,8 @@ Accepts a seeded (a structure that comes before an asset, and will be used in cr
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -49,7 +48,7 @@ apiInstance.assetsCreateNewAsset(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seed** | **Seed**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -57,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -66,13 +65,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsDeleteAsset** Deprecated: 
+## **assetsDeleteAsset**
 > string assetsDeleteAsset()
 
 Deletes a specific asset from the system by providing its unique identifier (UID). Upon successful deletion, it returns the UID of the deleted asset.
@@ -80,9 +77,8 @@ Deletes a specific asset from the system by providing its unique identifier (UID
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -98,7 +94,7 @@ apiInstance.assetsDeleteAsset(body).then((data: string) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -114,23 +110,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsDraft** Deprecated: 
+## **assetsDraft**
 > Seed assetsDraft()
 
-This endpoint allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
+Allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -148,7 +141,7 @@ apiInstance.assetsDraft(body).then((data: Seed) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seed** | **Seed**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -156,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Seed**
+[**Seed**](../models/Seed)
 
 ### HTTP request headers
 
@@ -165,24 +158,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetsGetRecommendedAssets** Deprecated: 
+## **assetsGetRecommendedAssets**
 > Assets assetsGetRecommendedAssets()
 
-This endpoint expects a request body containing a SeededAssetsRecommendation Model, which includes assets (represented by the Assets Model) and interactions (represented by the InteractedAssets Model). The response will provide an Assets Model suitable for use in a UI
+Expects a SeededAssetsRecommendation Model in the request body, containing assets and interactions. Returns an Assets Model suitable for UI.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -198,14 +188,14 @@ apiInstance.assetsGetRecommendedAssets(body).then((data: Assets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededAssetsRecommendation** | **SeededAssetsRecommendation**| The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. |
 
 
 ### Return type
 
-**Assets**
+[**Assets**](../models/Assets)
 
 ### HTTP request headers
 
@@ -214,13 +204,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsGetRelatedAssets** Deprecated: 
+## **assetsGetRelatedAssets**
 > Assets assetsGetRelatedAssets()
 
 Retrieves one or more related assets when provided with one or more input assets.
@@ -228,9 +216,8 @@ Retrieves one or more related assets when provided with one or more input assets
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -246,14 +233,14 @@ apiInstance.assetsGetRelatedAssets(body).then((data: Assets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **assets** | **Assets**| The body of the request is an object (Assets Model) with iterable internally. |
 
 
 ### Return type
 
-**Assets**
+[**Assets**](../models/Assets)
 
 ### HTTP request headers
 
@@ -262,13 +249,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsIdentifiersSnapshot** Deprecated: 
+## **assetsIdentifiersSnapshot**
 > FlattenedAssets assetsIdentifiersSnapshot()
 
 Retrieves all asset IDs associated with your account.
@@ -276,9 +261,8 @@ Retrieves all asset IDs associated with your account.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -294,14 +278,14 @@ apiInstance.assetsIdentifiersSnapshot(body).then((data: FlattenedAssets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
 ### Return type
 
-**FlattenedAssets**
+[**FlattenedAssets**](../models/FlattenedAssets)
 
 ### HTTP request headers
 
@@ -310,14 +294,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetsPseudoSnapshot** Deprecated: 
+## **assetsPseudoSnapshot**
 > PseudoAssets assetsPseudoSnapshot()
 
 Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive.
@@ -325,9 +307,8 @@ Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -342,7 +323,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**PseudoAssets**
+[**PseudoAssets**](../models/PseudoAssets)
 
 ### HTTP request headers
 
@@ -351,24 +332,21 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetsSearchAssets** Deprecated: 
+## **assetsSearchAssets**
 > SearchedAssets assetsSearchAssets()
 
-This function performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
+Performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -390,7 +368,7 @@ apiInstance.assetsSearchAssets(body).then((data: SearchedAssets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -400,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**SearchedAssets**
+[**SearchedAssets**](../models/SearchedAssets)
 
 ### HTTP request headers
 
@@ -409,14 +387,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetsSearchWithFilters** Deprecated: 
+## **assetsSearchWithFilters**
 > AssetsSearchWithFiltersOutput assetsSearchWithFilters()
 
 Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
@@ -424,9 +400,8 @@ Enables searching through your pieces and returns Assets (the results) based on 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -446,7 +421,7 @@ apiInstance.assetsSearchWithFilters(body).then((data: AssetsSearchWithFiltersOut
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **assetsSearchWithFiltersInput** | **AssetsSearchWithFiltersInput**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -455,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**AssetsSearchWithFiltersOutput**
+[**AssetsSearchWithFiltersOutput**](../models/AssetsSearchWithFiltersOutput)
 
 ### HTTP request headers
 
@@ -464,14 +439,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetsSnapshot** Deprecated: 
+## **assetsSnapshot**
 > Assets assetsSnapshot()
 
 Get all of the users Assets.
@@ -479,9 +452,8 @@ Get all of the users Assets.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -501,7 +473,7 @@ apiInstance.assetsSnapshot(body).then((data: Assets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
  **suggested** | [**boolean**] | This will let us know if a developer, wants a snapshot related to suggested content or normal content | (optional) defaults to undefined
@@ -510,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Assets**
+[**Assets**](../models/Assets)
 
 ### HTTP request headers
 
@@ -519,23 +491,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsSpecificAssetFormatsSnapshot** Deprecated: 
+## **assetsSpecificAssetFormatsSnapshot**
 > Formats assetsSpecificAssetFormatsSnapshot()
 
-Retrieves the available formats for a specific asset identified by its ID.
+Retrieves the available formats for a specific asset identified by its ID
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -553,7 +522,7 @@ apiInstance.assetsSpecificAssetFormatsSnapshot(body).then((data: Formats) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -561,7 +530,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Formats**
+[**Formats**](../models/Formats)
 
 ### HTTP request headers
 
@@ -570,23 +539,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetsSpecificAssetSnapshot** Deprecated: 
+## **assetsSpecificAssetSnapshot**
 > Asset assetsSpecificAssetSnapshot()
 
-This endpoint allows clients to retrieve details of a specific asset by providing its UUID in the path.
+Allows clients to retrieve details of a specific asset by providing its UUID in the path.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -604,7 +570,7 @@ apiInstance.assetsSpecificAssetSnapshot(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -612,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -621,24 +587,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | A specific asset per the provided asset id. |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-
-
-## **assetsStreamIdentifiers** Deprecated: 
+## **assetsStreamIdentifiers**
 > StreamedIdentifiers assetsStreamIdentifiers()
 
-This endpoint streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
+Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -653,7 +616,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**StreamedIdentifiers**
+[**StreamedIdentifiers**](../models/StreamedIdentifiers)
 
 ### HTTP request headers
 
@@ -662,23 +625,20 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **getAssetsStreamTransferables** Deprecated: 
+## **getAssetsStreamTransferables**
 > Assets getAssetsStreamTransferables()
 
-This endpoint provides a WebSocket connection that emits changes to your assets, including their transferable.
+Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -693,7 +653,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Assets**
+[**Assets**](../models/Assets)
 
 ### HTTP request headers
 
@@ -702,13 +662,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **streamAssets** Deprecated: 
+## **streamAssets**
 > Assets streamAssets()
 
 IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.
@@ -716,9 +674,8 @@ IMPORTANT: This stream emits changes without transferables in a specific format.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetsApi(configuration);
 
@@ -733,7 +690,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Assets**
+[**Assets**](../models/Assets)
 
 ### HTTP request headers
 
@@ -742,10 +699,8 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

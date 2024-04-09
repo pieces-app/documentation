@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**shareScoresIncrement**](ShareApi#sharescoresincrement) | **POST** /share/\{share\}/scores/increment | \&#39;/share/\{share\}/scores/increment\&#39; [POST]
-[**shareSnapshot**](ShareApi#sharesnapshot) | **GET** /share/\{share\} | /share/\{share\}
-[**shareUpdate**](ShareApi#shareupdate) | **POST** /share/update | /share/update [POST]
+Method | HTTP request
+------------- | -------------
+[**shareScoresIncrement**](ShareApi#sharescoresincrement) | **POST** /share/\{share\}/scores/increment
+[**shareSnapshot**](ShareApi#sharesnapshot) | **GET** /share/\{share\}
+[**shareUpdate**](ShareApi#shareupdate) | **POST** /share/update
 
 
-## **shareScoresIncrement** Deprecated: 
+## **shareScoresIncrement**
 > shareScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -17,9 +17,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.shareScoresIncrement(body).then((data: void (empty response body)) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **share** | [**string**] | Share id | defaults to undefined
@@ -54,14 +53,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **shareSnapshot** Deprecated: 
+## **shareSnapshot**
 > Share shareSnapshot()
 
 Get the snapshot of a specific share.
@@ -69,9 +66,8 @@ Get the snapshot of a specific share.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
@@ -89,7 +85,7 @@ apiInstance.shareSnapshot(body).then((data: Share) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] | Share id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -97,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Share**
+[**Share**](../models/Share)
 
 ### HTTP request headers
 
@@ -106,13 +102,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **shareUpdate** Deprecated: 
+## **shareUpdate**
 > Share shareUpdate()
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
@@ -120,9 +114,8 @@ This endpoint will accept a Share that the user wants to update, and will return
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ShareApi(configuration);
 
@@ -140,7 +133,7 @@ apiInstance.shareUpdate(body).then((data: Share) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **share** | **Share**| This is the Share that needs to be updated. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -148,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Share**
+[**Share**](../models/Share)
 
 ### HTTP request headers
 
@@ -157,10 +150,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

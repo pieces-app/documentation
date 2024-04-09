@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**workstreamSummariesCreateNewWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create | /workstream_summaries/create [POST]
-[**workstreamSummariesDeleteSpecificWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete | /workstream_summaries/\{workstream_summary\}/delete [POST]
-[**workstreamSummariesSnapshot**](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
+Method | HTTP request
+------------- | -------------
+[**workstreamSummariesCreateNewWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create
+[**workstreamSummariesDeleteSpecificWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete
+[**workstreamSummariesSnapshot**](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries
 
 
-## **workstreamSummariesCreateNewWorkstreamSummary** Deprecated: 
+## **workstreamSummariesCreateNewWorkstreamSummary**
 > WorkstreamSummary workstreamSummariesCreateNewWorkstreamSummary()
 
 This will create a new WorkstreamSummary in the database.
@@ -17,9 +17,8 @@ This will create a new WorkstreamSummary in the database.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.workstreamSummariesCreateNewWorkstreamSummary(body).then((data: Work
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededWorkstreamSummary** | **SeededWorkstreamSummary**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -45,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**WorkstreamSummary**
+[**WorkstreamSummary**](../models/WorkstreamSummary)
 
 ### HTTP request headers
 
@@ -54,14 +53,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **workstreamSummariesDeleteSpecificWorkstreamSummary** Deprecated: 
+## **workstreamSummariesDeleteSpecificWorkstreamSummary**
 > workstreamSummariesDeleteSpecificWorkstreamSummary()
 
 This will delete a specific workstream_summary from the database!
@@ -69,9 +66,8 @@ This will delete a specific workstream_summary from the database!
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
@@ -87,7 +83,7 @@ apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(body).then((data:
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -103,14 +99,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **workstreamSummariesSnapshot** Deprecated: 
+## **workstreamSummariesSnapshot**
 > WorkstreamSummaries workstreamSummariesSnapshot()
 
 This will get a snapshot of all your workstream summaries.
@@ -118,9 +112,8 @@ This will get a snapshot of all your workstream summaries.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.workstreamSummariesSnapshot(body).then((data: WorkstreamSummaries) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**WorkstreamSummaries**
+[**WorkstreamSummaries**](../models/WorkstreamSummaries)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

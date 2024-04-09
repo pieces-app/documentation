@@ -5,20 +5,20 @@ This is used in the TrackedAssetsEventSearchMetadata
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**size** | **number** | This is the size of your current catalog.(number of assets) | [optional] [default to undefined]
-**duration** | **number** | this is the number in ms it took to run search. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**size** | **number**
+**duration** | **number**
 
 ## Example
 
 ```typescript
-import { Space } from '';
+import { Space } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Space = {
-    "size": null, // This is the size of your current catalog.(number of assets)
-    "duration": null, // this is the number in ms it took to run search.
+    "size": null,
+    "duration": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Space;
 console.log(exampleParsed);
 ```
-
-
 
 

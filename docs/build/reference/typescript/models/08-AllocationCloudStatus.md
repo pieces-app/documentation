@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**cloud** | [**AllocationStatusEnum**](AllocationStatusEnum) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**cloud** | [**AllocationStatusEnum**](AllocationStatusEnum)
 
 ## Example
 
 ```typescript
-import { AllocationCloudStatus } from '';
+import { AllocationCloudStatus } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AllocationCloudStatus = {
-    "schema": null, // 
-    "cloud": null, // 
+    "schema": null,
+    "cloud": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AllocationCloudStatus;
 console.log(exampleParsed);
 ```
-
-
 
 

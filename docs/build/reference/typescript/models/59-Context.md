@@ -5,26 +5,26 @@ A Context that is returned from almost all calls to the ContextAPI
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**os** | **string** | This is th UUID of the OS that this context is currently connected to. This attempts to be the same as Segment\&#39;s anonmyousId feild. It is attempted to be set at initial installation at Pieces/.identity/.os | [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**health** | [**Health**](Health) |  | [default to undefined]
-**user** | [**UserProfile**](UserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**os** | **string**
+**application** | [**Application**](Application)
+**health** | [**Health**](Health)
+**user** | [**UserProfile**](UserProfile)
 
 ## Example
 
 ```typescript
-import { Context } from '';
+import { Context } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Context = {
-    "schema": null, // 
-    "os": null, // This is th UUID of the OS that this context is currently connected to. This attempts to be the same as Segment\&#39;s anonmyousId feild. It is attempted to be set at initial installation at Pieces/.identity/.os
-    "application": null, // 
-    "health": null, // 
-    "user": null, // 
+    "schema": null,
+    "os": null,
+    "application": null,
+    "health": null,
+    "user": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Context;
 console.log(exampleParsed);
 ```
-
-
 
 

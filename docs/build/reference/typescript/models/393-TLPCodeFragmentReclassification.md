@@ -5,30 +5,30 @@ Model for ML big query Reclassification.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**model** | **string** |  | [default to undefined]
-**created** | **string** |  | [default to undefined]
-**updates** | [**TLPCodeFragmentReclassificationUpdates**](TLPCodeFragmentReclassificationUpdates) |  | [default to undefined]
-**user** | **string** | this is the user that is reclassifying | [default to undefined]
-**context** | **string** | this is the application is which this is from. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**model** | **string**
+**created** | **string**
+**updates** | [**TLPCodeFragmentReclassificationUpdates**](TLPCodeFragmentReclassificationUpdates)
+**user** | **string**
+**context** | **string**
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentReclassification } from '';
+import { TLPCodeFragmentReclassification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentReclassification = {
-    "schema": null, // 
-    "asset": null, // 
-    "model": null, // 
-    "created": null, // 
-    "updates": null, // 
-    "user": null, // this is the user that is reclassifying
-    "context": null, // this is the application is which this is from.
+    "schema": null,
+    "asset": null,
+    "model": null,
+    "created": null,
+    "updates": null,
+    "user": null,
+    "context": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentReclassification;
 console.log(exampleParsed);
 ```
-
-
 
 

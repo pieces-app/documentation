@@ -5,38 +5,38 @@ This is a model that allows us to send send over super specific format related e
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**formatCreated** | **string** | The key value pair for an asset being created. | [optional] [default to undefined]
-**formatCopied** | **string** | If a format was copied entirely | [optional] [default to undefined]
-**formatPartiallyCopied** | **string** | If a format was copied partially | [optional] [default to undefined]
-**formatDownloaded** | **string** | If a format was downloaded | [optional] [default to undefined]
-**formatDeleted** | **string** | If an format was deleted | [optional] [default to undefined]
-**formatGenericClassificationUpdated** | **string** | If a generic classification was changed on a format | [optional] [default to undefined]
-**formatSpecificClassificationUpdated** | **string** | If a specific classification was changed on a format | [optional] [default to undefined]
-**formatUpdated** | **string** | a format was updated, generic update. | [optional] [default to undefined]
-**formatInserted** | **string** | a format was inserted | [optional] [default to undefined]
-**formatValueEdited** | **string** | a format\&#39;s value was update ie, the text, etc... | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**formatCreated** | **string**
+**formatCopied** | **string**
+**formatPartiallyCopied** | **string**
+**formatDownloaded** | **string**
+**formatDeleted** | **string**
+**formatGenericClassificationUpdated** | **string**
+**formatSpecificClassificationUpdated** | **string**
+**formatUpdated** | **string**
+**formatInserted** | **string**
+**formatValueEdited** | **string**
 
 ## Example
 
 ```typescript
-import { TrackedFormatEventIdentifierDescriptionPairs } from '';
+import { TrackedFormatEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedFormatEventIdentifierDescriptionPairs = {
-    "schema": null, // 
-    "formatCreated": null, // The key value pair for an asset being created.
-    "formatCopied": null, // If a format was copied entirely
-    "formatPartiallyCopied": null, // If a format was copied partially
-    "formatDownloaded": null, // If a format was downloaded
-    "formatDeleted": null, // If an format was deleted
-    "formatGenericClassificationUpdated": null, // If a generic classification was changed on a format
-    "formatSpecificClassificationUpdated": null, // If a specific classification was changed on a format
-    "formatUpdated": null, // a format was updated, generic update.
-    "formatInserted": null, // a format was inserted
-    "formatValueEdited": null, // a format\&#39;s value was update ie, the text, etc...
+    "schema": null,
+    "formatCreated": null,
+    "formatCopied": null,
+    "formatPartiallyCopied": null,
+    "formatDownloaded": null,
+    "formatDeleted": null,
+    "formatGenericClassificationUpdated": null,
+    "formatSpecificClassificationUpdated": null,
+    "formatUpdated": null,
+    "formatInserted": null,
+    "formatValueEdited": null,
 };
 
 console.log(example);
@@ -49,7 +49,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedFormatEventIdentifierDescriptionPairs;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**clearPKCE**](PKCEApi#clearpkce) | **POST** /pkce/clear | /pkce/clear [POST]
-[**generateCode**](PKCEApi#generatecode) | **POST** /pkce/code | /pkce/code [POST]
-[**generateToken**](PKCEApi#generatetoken) | **POST** /pkce/token | /pkce/token [POST]
-[**getChallenge**](PKCEApi#getchallenge) | **GET** /pkce/challenge | Your GET endpoint
-[**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
+Method | HTTP request
+------------- | -------------
+[**clearPKCE**](PKCEApi#clearpkce) | **POST** /pkce/clear
+[**generateCode**](PKCEApi#generatecode) | **POST** /pkce/code
+[**generateToken**](PKCEApi#generatetoken) | **POST** /pkce/token
+[**getChallenge**](PKCEApi#getchallenge) | **GET** /pkce/challenge
+[**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code
 
 
-## **clearPKCE** Deprecated: 
+## **clearPKCE**
 > clearPKCE()
 
 This is a function to Clear a PKCE Authentication Flow
@@ -19,9 +19,8 @@ This is a function to Clear a PKCE Authentication Flow
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
@@ -45,13 +44,11 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 
-
-
-## **generateCode** Deprecated: 
+## **generateCode**
 > PKCE generateCode()
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
@@ -59,9 +56,8 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
@@ -77,14 +73,14 @@ apiInstance.generateCode(body).then((data: PKCE) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededPKCE** | **SeededPKCE**| All of the properties that the client might want to send over to authorize a PKCE Code Flow |
 
 
 ### Return type
 
-**PKCE**
+[**PKCE**](../models/PKCE)
 
 ### HTTP request headers
 
@@ -93,13 +89,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **generateToken** Deprecated: 
+## **generateToken**
 > PKCE generateToken()
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
@@ -107,9 +101,8 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
@@ -125,14 +118,14 @@ apiInstance.generateToken(body).then((data: PKCE) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tokenizedPKCE** | **TokenizedPKCE**| The needed properties to exchange a PKCE Code for an OAuth Token |
 
 
 ### Return type
 
-**PKCE**
+[**PKCE**](../models/PKCE)
 
 ### HTTP request headers
 
@@ -141,13 +134,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **getChallenge** Deprecated: 
+## **getChallenge**
 > PKCE getChallenge()
 
 An endpoint that returns a PKCE Challenge
@@ -155,9 +146,8 @@ An endpoint that returns a PKCE Challenge
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
@@ -172,7 +162,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**PKCE**
+[**PKCE**](../models/PKCE)
 
 ### HTTP request headers
 
@@ -181,13 +171,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **respondWithCode** Deprecated: 
+## **respondWithCode**
 > PKCE respondWithCode()
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
@@ -195,9 +183,8 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PKCEApi(configuration);
 
@@ -217,7 +204,7 @@ apiInstance.respondWithCode(body).then((data: PKCE) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **code** | [**string**] | The PKCE Code to be used to access a Token. | defaults to undefined
  **state** | [**string**] | Likely the state that will be returned which should match the requested state as well as the nonce | defaults to undefined
@@ -226,7 +213,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**PKCE**
+[**PKCE**](../models/PKCE)
 
 ### HTTP request headers
 
@@ -235,10 +222,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

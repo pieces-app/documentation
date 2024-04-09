@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**annotation** | [**AnnotationTypeEnum**](AnnotationTypeEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**annotation** | [**AnnotationTypeEnum**](AnnotationTypeEnum)
 
 ## Example
 
 ```typescript
-import { AssetFilterPhraseOptions } from '';
+import { AssetFilterPhraseOptions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetFilterPhraseOptions = {
-    "schema": null, // 
-    "annotation": null, // 
+    "schema": null,
+    "annotation": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetFilterPhraseOptions;
 console.log(exampleParsed);
 ```
-
-
 
 

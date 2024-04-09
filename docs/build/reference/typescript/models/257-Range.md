@@ -5,36 +5,36 @@ This is an identified Range, this is ONLY needed when using plural rangedTimesta
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**to** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**from** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**between** | **boolean** |  | [optional] [default to undefined]
-**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] [default to undefined]
-**conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**score** | [**Score**](Score)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**to** | [**GroupedTimestamp**](GroupedTimestamp)
+**from** | [**GroupedTimestamp**](GroupedTimestamp)
+**between** | **boolean**
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
+**conversations** | [**FlattenedConversations**](FlattenedConversations)
 
 ## Example
 
 ```typescript
-import { Range } from '';
+import { Range } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Range = {
-    "schema": null, // 
-    "id": null, // 
-    "score": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "to": null, // 
-    "from": null, // 
-    "between": null, // 
-    "summaries": null, // 
-    "conversations": null, // 
+    "schema": null,
+    "id": null,
+    "score": null,
+    "created": null,
+    "updated": null,
+    "to": null,
+    "from": null,
+    "between": null,
+    "summaries": null,
+    "conversations": null,
 };
 
 console.log(example);
@@ -47,7 +47,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Range;
 console.log(exampleParsed);
 ```
-
-
 
 

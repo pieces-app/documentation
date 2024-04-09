@@ -5,22 +5,22 @@ This is a model that will represent the miminum properties required to update th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [default to undefined]
-**asset** | [**Asset**](Asset) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**asset** | [**Asset**](Asset)
 
 ## Example
 
 ```typescript
-import { AssetReclassification } from '';
+import { AssetReclassification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetReclassification = {
-    "schema": null, // 
-    "ext": null, // 
-    "asset": null, // 
+    "schema": null,
+    "ext": null,
+    "asset": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetReclassification;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@ This is provided search spaces, This is a provided assets, TODO in the future we
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifers** | [**FlattenedAssets**](FlattenedAssets) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifers** | [**FlattenedAssets**](FlattenedAssets)
 
 ## Example
 
 ```typescript
-import { AssetSearchSpace } from '';
+import { AssetSearchSpace } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetSearchSpace = {
-    "schema": null, // 
-    "identifers": null, // 
+    "schema": null,
+    "identifers": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetSearchSpace;
 console.log(exampleParsed);
 ```
-
-
 
 

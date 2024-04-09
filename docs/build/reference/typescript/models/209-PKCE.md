@@ -5,30 +5,30 @@ An object representing all of the properties involved in a PKCE Authentication F
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**result** | [**ResultedPKCE**](ResultedPKCE) |  | [optional] [default to undefined]
-**challenge** | [**ChallengedPKCE**](ChallengedPKCE) |  | [optional] [default to undefined]
-**revocation** | [**RevokedPKCE**](RevokedPKCE) |  | [optional] [default to undefined]
-**seed** | [**SeededPKCE**](SeededPKCE) |  | [optional] [default to undefined]
-**token** | [**TokenizedPKCE**](TokenizedPKCE) |  | [optional] [default to undefined]
-**auth0** | [**Auth0**](Auth0) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**result** | [**ResultedPKCE**](ResultedPKCE)
+**challenge** | [**ChallengedPKCE**](ChallengedPKCE)
+**revocation** | [**RevokedPKCE**](RevokedPKCE)
+**seed** | [**SeededPKCE**](SeededPKCE)
+**token** | [**TokenizedPKCE**](TokenizedPKCE)
+**auth0** | [**Auth0**](Auth0)
 
 ## Example
 
 ```typescript
-import { PKCE } from '';
+import { PKCE } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PKCE = {
-    "schema": null, // 
-    "result": null, // 
-    "challenge": null, // 
-    "revocation": null, // 
-    "seed": null, // 
-    "token": null, // 
-    "auth0": null, // 
+    "schema": null,
+    "result": null,
+    "challenge": null,
+    "revocation": null,
+    "seed": null,
+    "token": null,
+    "auth0": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PKCE;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,20 +5,20 @@ This is the SaveSuggestion. Mainly creating an additional model here because I i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**suggested** | **boolean** | This is a boolean, that will say if you should or should not take action. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**suggested** | **boolean**
 
 ## Example
 
 ```typescript
-import { SaveSuggestion } from '';
+import { SaveSuggestion } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SaveSuggestion = {
-    "schema": null, // 
-    "suggested": null, // This is a boolean, that will say if you should or should not take action.
+    "schema": null,
+    "suggested": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SaveSuggestion;
 console.log(exampleParsed);
 ```
-
-
 
 

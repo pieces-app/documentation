@@ -5,42 +5,42 @@ This is a pre-Conversation object.  This will hold together a conversation. Ie a
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** | This is a name that is customized. | [optional] [default to undefined]
-**favorited** | **boolean** |  | [optional] [default to undefined]
-**application** | [**Application**](Application) |  | [optional] [default to undefined]
-**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation) |  | [optional] [default to undefined]
-**messages** | [**Array&lt;SeededConversationMessage&gt;**](SeededConversationMessage) |  | [optional] [default to undefined]
-**model** | [**ReferencedModel**](ReferencedModel) |  | [optional] [default to undefined]
-**assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] [default to undefined]
-**websites** | [**FlattenedWebsites**](FlattenedWebsites) |  | [optional] [default to undefined]
-**anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor) |  | [optional] [default to undefined]
-**type** | [**ConversationTypeEnum**](ConversationTypeEnum) |  | [default to undefined]
-**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] [default to undefined]
-**demo** | **boolean** | This will let us know if this conversation was generated as a \&#39;demo\&#39; conversation | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**favorited** | **boolean**
+**application** | [**Application**](Application)
+**annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
+**messages** | [**Array&lt;SeededConversationMessage&gt;**](SeededConversationMessage)
+**model** | [**ReferencedModel**](ReferencedModel)
+**assets** | [**FlattenedAssets**](FlattenedAssets)
+**websites** | [**FlattenedWebsites**](FlattenedWebsites)
+**anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor)
+**type** | [**ConversationTypeEnum**](ConversationTypeEnum)
+**pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
+**demo** | **boolean**
 
 ## Example
 
 ```typescript
-import { SeededConversation } from '';
+import { SeededConversation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConversation = {
-    "schema": null, // 
-    "name": null, // This is a name that is customized.
-    "favorited": null, // 
-    "application": null, // 
-    "annotations": null, // 
-    "messages": null, // 
-    "model": null, // 
-    "assets": null, // 
-    "websites": null, // 
-    "anchors": null, // 
-    "type": null, // 
-    "pipeline": null, // 
-    "demo": null, // This will let us know if this conversation was generated as a \&#39;demo\&#39; conversation
+    "schema": null,
+    "name": null,
+    "favorited": null,
+    "application": null,
+    "annotations": null,
+    "messages": null,
+    "model": null,
+    "assets": null,
+    "websites": null,
+    "anchors": null,
+    "type": null,
+    "pipeline": null,
+    "demo": null,
 };
 
 console.log(example);
@@ -53,7 +53,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConversation;
 console.log(exampleParsed);
 ```
-
-
 
 

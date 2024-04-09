@@ -5,22 +5,22 @@ A reference to a format which at minimum must have the format\'s id. But in the 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | The id of the Format | [default to undefined]
-**reference** | [**FlattenedFormat**](FlattenedFormat) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedFormat**](FlattenedFormat)
 
 ## Example
 
 ```typescript
-import { ReferencedFormat } from '';
+import { ReferencedFormat } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedFormat = {
-    "schema": null, // 
-    "id": 102ff265-fdfb-4142-8d94-4932d400199c, // The id of the Format
-    "reference": null, // 
+    "schema": null,
+    "id": 102ff265-fdfb-4142-8d94-4932d400199c,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedFormat;
 console.log(exampleParsed);
 ```
-
-
 
 

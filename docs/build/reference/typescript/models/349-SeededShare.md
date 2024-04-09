@@ -5,28 +5,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | [**Asset**](Asset) |  | [optional] [default to undefined]
-**users** | [**Array&lt;SeededUser&gt;**](SeededUser) | if private please specificy some users you want to share this with. | [optional] [default to undefined]
-**access** | [**AccessEnum**](AccessEnum) |  | [default to undefined]
-**assets** | [**Assets**](Assets) |  | [optional] [default to undefined]
-**name** | **string** | optional name, if it is available. and must be unique. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | [**Asset**](Asset)
+**users** | [**Array&lt;SeededUser&gt;**](SeededUser)
+**access** | [**AccessEnum**](AccessEnum)
+**assets** | [**Assets**](Assets)
+**name** | **string**
 
 ## Example
 
 ```typescript
-import { SeededShare } from '';
+import { SeededShare } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededShare = {
-    "schema": null, // 
-    "asset": null, // 
-    "users": null, // if private please specificy some users you want to share this with.
-    "access": null, // 
-    "assets": null, // 
-    "name": null, // optional name, if it is available. and must be unique.
+    "schema": null,
+    "asset": null,
+    "users": null,
+    "access": null,
+    "assets": null,
+    "name": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededShare;
 console.log(exampleParsed);
 ```
-
-
 
 

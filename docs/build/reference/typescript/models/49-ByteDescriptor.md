@@ -5,22 +5,22 @@ This is a nice microclass to help with managing the size of a File or Fragment i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**value** | **number** |  | [default to undefined]
-**readable** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**value** | **number**
+**readable** | **string**
 
 ## Example
 
 ```typescript
-import { ByteDescriptor } from '';
+import { ByteDescriptor } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ByteDescriptor = {
-    "schema": null, // 
-    "value": 33600, // 
-    "readable": 33.6 KB, // 
+    "schema": null,
+    "value": 33600,
+    "readable": 33.6 KB,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ByteDescriptor;
 console.log(exampleParsed);
 ```
-
-
 
 

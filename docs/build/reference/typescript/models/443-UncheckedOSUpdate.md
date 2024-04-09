@@ -5,18 +5,18 @@ This is the input body for /os/update/check, just a placeholder for now.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { UncheckedOSUpdate } from '';
+import { UncheckedOSUpdate } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: UncheckedOSUpdate = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as UncheckedOSUpdate;
 console.log(exampleParsed);
 ```
-
-
 
 

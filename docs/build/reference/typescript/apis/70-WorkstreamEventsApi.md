@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**workstreamEventsCreateNewWorkstreamEvent**](WorkstreamEventsApi#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create | /workstream_events/create [POST]
-[**workstreamEventsDeleteSpecificWorkstreamEvent**](WorkstreamEventsApi#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete | /workstream_events/\{workstream_event\}/delete [POST]
-[**workstreamEventsSnapshot**](WorkstreamEventsApi#workstreameventssnapshot) | **GET** /workstream_events | /workstream_events [GET]
+Method | HTTP request
+------------- | -------------
+[**workstreamEventsCreateNewWorkstreamEvent**](WorkstreamEventsApi#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create
+[**workstreamEventsDeleteSpecificWorkstreamEvent**](WorkstreamEventsApi#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete
+[**workstreamEventsSnapshot**](WorkstreamEventsApi#workstreameventssnapshot) | **GET** /workstream_events
 
 
-## **workstreamEventsCreateNewWorkstreamEvent** Deprecated: 
+## **workstreamEventsCreateNewWorkstreamEvent**
 > WorkstreamEvent workstreamEventsCreateNewWorkstreamEvent()
 
 This will create a new WorkstreamEvent in the database.
@@ -17,9 +17,8 @@ This will create a new WorkstreamEvent in the database.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventsApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.workstreamEventsCreateNewWorkstreamEvent(body).then((data: Workstrea
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededWorkstreamEvent** | **SeededWorkstreamEvent**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -45,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**WorkstreamEvent**
+[**WorkstreamEvent**](../models/WorkstreamEvent)
 
 ### HTTP request headers
 
@@ -54,14 +53,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **workstreamEventsDeleteSpecificWorkstreamEvent** Deprecated: 
+## **workstreamEventsDeleteSpecificWorkstreamEvent**
 > workstreamEventsDeleteSpecificWorkstreamEvent()
 
 This will delete a specific workstream_event from the database!
@@ -69,9 +66,8 @@ This will delete a specific workstream_event from the database!
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventsApi(configuration);
 
@@ -87,7 +83,7 @@ apiInstance.workstreamEventsDeleteSpecificWorkstreamEvent(body).then((data: void
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
@@ -103,14 +99,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **workstreamEventsSnapshot** Deprecated: 
+## **workstreamEventsSnapshot**
 > WorkstreamEvents workstreamEventsSnapshot()
 
 This will get a snapshot of all your workstream events.
@@ -118,9 +112,8 @@ This will get a snapshot of all your workstream events.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.WorkstreamEventsApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.workstreamEventsSnapshot(body).then((data: WorkstreamEvents) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**WorkstreamEvents**
+[**WorkstreamEvents**](../models/WorkstreamEvents)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

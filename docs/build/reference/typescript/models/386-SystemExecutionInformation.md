@@ -5,24 +5,24 @@ This is system information that we are able to get from the users machine(rust p
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**memory** | **number** |  | [default to undefined]
-**os** | **string** |  | [default to undefined]
-**kernel** | **string** |  | [default to undefined]
-**cpu** | [**SystemExecutionCpuInformation**](SystemExecutionCpuInformation) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**memory** | **number**
+**os** | **string**
+**kernel** | **string**
+**cpu** | [**SystemExecutionCpuInformation**](SystemExecutionCpuInformation)
 
 ## Example
 
 ```typescript
-import { SystemExecutionInformation } from '';
+import { SystemExecutionInformation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SystemExecutionInformation = {
-    "memory": null, // 
-    "os": null, // 
-    "kernel": null, // 
-    "cpu": null, // 
+    "memory": null,
+    "os": null,
+    "kernel": null,
+    "cpu": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SystemExecutionInformation;
 console.log(exampleParsed);
 ```
-
-
 
 

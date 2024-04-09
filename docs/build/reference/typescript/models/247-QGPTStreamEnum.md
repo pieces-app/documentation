@@ -5,13 +5,13 @@ This is a specific Enum used for the QGPT Stream.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { QGPTStreamEnum } from '';
+import { QGPTStreamEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTStreamEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTStreamEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

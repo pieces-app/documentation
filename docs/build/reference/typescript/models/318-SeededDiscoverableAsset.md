@@ -5,26 +5,26 @@ Assumption: filters applied in this model will overwrite filters passed in Seede
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**file** | [**SeededFile**](SeededFile) |  | [optional] [default to undefined]
-**fragment** | [**SeededFragment**](SeededFragment) |  | [optional] [default to undefined]
-**directory** | **string** |  | [optional] [default to undefined]
-**filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**file** | [**SeededFile**](SeededFile)
+**fragment** | [**SeededFragment**](SeededFragment)
+**directory** | **string**
+**filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters)
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableAsset } from '';
+import { SeededDiscoverableAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableAsset = {
-    "schema": null, // 
-    "file": null, // 
-    "fragment": null, // 
-    "directory": null, // 
-    "filters": null, // 
+    "schema": null,
+    "file": null,
+    "fragment": null,
+    "directory": null,
+    "filters": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

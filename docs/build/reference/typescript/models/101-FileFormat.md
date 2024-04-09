@@ -5,22 +5,22 @@ This describes a FileFormat. If you need meta data you can get all of that from 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] [default to undefined]
-**string** | [**TransferableString**](TransferableString) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**bytes** | [**TransferableBytes**](TransferableBytes)
+**string** | [**TransferableString**](TransferableString)
 
 ## Example
 
 ```typescript
-import { FileFormat } from '';
+import { FileFormat } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FileFormat = {
-    "schema": null, // 
-    "bytes": null, // 
-    "string": null, // 
+    "schema": null,
+    "bytes": null,
+    "string": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FileFormat;
 console.log(exampleParsed);
 ```
-
-
 
 

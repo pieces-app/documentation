@@ -5,24 +5,24 @@ This will be either a TransferableString or TransferableBytes that represent you
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**string** | [**TransferableString**](TransferableString) |  | [optional] [default to undefined]
-**bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] [default to undefined]
-**metadata** | [**FragmentMetadata**](FragmentMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**string** | [**TransferableString**](TransferableString)
+**bytes** | [**TransferableBytes**](TransferableBytes)
+**metadata** | [**FragmentMetadata**](FragmentMetadata)
 
 ## Example
 
 ```typescript
-import { SeededFragment } from '';
+import { SeededFragment } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededFragment = {
-    "schema": null, // 
-    "string": null, // 
-    "bytes": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "string": null,
+    "bytes": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededFragment;
 console.log(exampleParsed);
 ```
-
-
 
 

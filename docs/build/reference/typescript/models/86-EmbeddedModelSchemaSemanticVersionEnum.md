@@ -5,13 +5,13 @@ This is a Semantic Version Enum that will reflect the Semantic version of the ap
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { EmbeddedModelSchemaSemanticVersionEnum } from '';
+import { EmbeddedModelSchemaSemanticVersionEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: EmbeddedModelSchemaSemanticVersionEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as EmbeddedModelSchemaSemanticVersionEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

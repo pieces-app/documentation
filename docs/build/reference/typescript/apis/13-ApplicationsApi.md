@@ -2,23 +2,23 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**applicationsExternalRelated**](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
-[**applicationsExternalSnapshot**](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
-[**applicationsRegister**](ApplicationsApi#applicationsregister) | **POST** /applications/register | /applications/register [POST]
-[**applicationsSessionClose**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
-[**applicationsSessionOpen**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
-[**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications | /applications [GET]
-[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
-[**applicationsUsageEngagementInteraction**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
-[**applicationsUsageEngagementKeyboard**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
-[**applicationsUsageInstallation**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
-[**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
+Method | HTTP request
+------------- | -------------
+[**applicationsExternalRelated**](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related
+[**applicationsExternalSnapshot**](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external
+[**applicationsRegister**](ApplicationsApi#applicationsregister) | **POST** /applications/register
+[**applicationsSessionClose**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close
+[**applicationsSessionOpen**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open
+[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\}
+[**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications
+[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\}
+[**applicationsUsageEngagementInteraction**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction
+[**applicationsUsageEngagementKeyboard**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard
+[**applicationsUsageInstallation**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation
+[**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated
 
 
-## **applicationsExternalRelated** Deprecated: 
+## **applicationsExternalRelated**
 > DetectedExternalApplications applicationsExternalRelated()
 
 Retrieves a list of external applications installed on the user\'s machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
@@ -26,9 +26,8 @@ Retrieves a list of external applications installed on the user\'s machine that 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -43,7 +42,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**DetectedExternalApplications**
+[**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
 ### HTTP request headers
 
@@ -52,14 +51,12 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **applicationsExternalSnapshot** Deprecated: 
+## **applicationsExternalSnapshot**
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 Provides a snapshot of all external applications detected on the user\'s machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
@@ -67,9 +64,8 @@ Provides a snapshot of all external applications detected on the user\'s machine
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -84,7 +80,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**DetectedExternalApplications**
+[**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
 ### HTTP request headers
 
@@ -93,14 +89,12 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **applicationsRegister** Deprecated: 
+## **applicationsRegister**
 > Application applicationsRegister()
 
 Registers a new application within the Pieces ecosystem.
@@ -108,9 +102,8 @@ Registers a new application within the Pieces ecosystem.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -126,14 +119,14 @@ apiInstance.applicationsRegister(body).then((data: Application) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **application** | **Application**| This will accept a application. |
 
 
 ### Return type
 
-**Application**
+[**Application**](../models/Application)
 
 ### HTTP request headers
 
@@ -142,13 +135,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsSessionClose** Deprecated: 
+## **applicationsSessionClose**
 > Session applicationsSessionClose()
 
 Closes an active session, identified by a session UUID, marking the end of the user\'s current interaction with the Pieces application.
@@ -156,9 +147,8 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -174,14 +164,14 @@ apiInstance.applicationsSessionClose(body).then((data: Session) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **body** | **string**| This will accept a required session uuid. |
 
 
 ### Return type
 
-**Session**
+[**Session**](../models/Session)
 
 ### HTTP request headers
 
@@ -190,13 +180,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsSessionOpen** Deprecated: 
+## **applicationsSessionOpen**
 > Session applicationsSessionOpen()
 
 Initiates a new session, marking the start of a user\'s interaction with the Pieces application.
@@ -204,9 +192,8 @@ Initiates a new session, marking the start of a user\'s interaction with the Pie
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -221,7 +208,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Session**
+[**Session**](../models/Session)
 
 ### HTTP request headers
 
@@ -230,13 +217,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsSessionSnapshot** Deprecated: 
+## **applicationsSessionSnapshot**
 > Session applicationsSessionSnapshot()
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
@@ -244,9 +229,8 @@ Fetches detailed information about a specific session, identified by a session U
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -262,14 +246,14 @@ apiInstance.applicationsSessionSnapshot(body).then((data: Session) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **session** | [**string**] | This is a uuid that points to a session. | defaults to undefined
 
 
 ### Return type
 
-**Session**
+[**Session**](../models/Session)
 
 ### HTTP request headers
 
@@ -278,13 +262,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsSnapshot** Deprecated: 
+## **applicationsSnapshot**
 > Applications applicationsSnapshot()
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
@@ -292,9 +274,8 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -309,7 +290,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Applications**
+[**Applications**](../models/Applications)
 
 ### HTTP request headers
 
@@ -318,13 +299,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsSpecificApplicationSnapshot** Deprecated: 
+## **applicationsSpecificApplicationSnapshot**
 > Application applicationsSpecificApplicationSnapshot()
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
@@ -332,9 +311,8 @@ Obtains a snapshot with information about a specific application, identified by 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -350,14 +328,14 @@ apiInstance.applicationsSpecificApplicationSnapshot(body).then((data: Applicatio
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
 ### Return type
 
-**Application**
+[**Application**](../models/Application)
 
 ### HTTP request headers
 
@@ -366,13 +344,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsUsageEngagementInteraction** Deprecated: 
+## **applicationsUsageEngagementInteraction**
 > TrackedInteractionEvent applicationsUsageEngagementInteraction()
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
@@ -380,9 +356,8 @@ Records user interaction events within applications, such as clicks or taps, to 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -398,14 +373,14 @@ apiInstance.applicationsUsageEngagementInteraction(body).then((data: TrackedInte
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededTrackedInteractionEvent** | **SeededTrackedInteractionEvent**|  |
 
 
 ### Return type
 
-**TrackedInteractionEvent**
+[**TrackedInteractionEvent**](../models/TrackedInteractionEvent)
 
 ### HTTP request headers
 
@@ -414,13 +389,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsUsageEngagementKeyboard** Deprecated: 
+## **applicationsUsageEngagementKeyboard**
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard()
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
@@ -428,9 +401,8 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -446,14 +418,14 @@ apiInstance.applicationsUsageEngagementKeyboard(body).then((data: TrackedKeyboar
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededTrackedKeyboardEvent** | **SeededTrackedKeyboardEvent**|  |
 
 
 ### Return type
 
-**TrackedKeyboardEvent**
+[**TrackedKeyboardEvent**](../models/TrackedKeyboardEvent)
 
 ### HTTP request headers
 
@@ -462,13 +434,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **applicationsUsageInstallation** Deprecated: 
+## **applicationsUsageInstallation**
 > applicationsUsageInstallation()
 
 Logs the installation events of the Pieces application.
@@ -476,9 +446,8 @@ Logs the installation events of the Pieces application.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -494,7 +463,7 @@ apiInstance.applicationsUsageInstallation(body).then((data: void (empty response
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationInstall** | **TrackedApplicationInstall**|  |
 
@@ -510,13 +479,11 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **postApplicationsUsageUpdated** Deprecated: 
+## **postApplicationsUsageUpdated**
 > postApplicationsUsageUpdated()
 
 Tracks updates to the Pieces application, including version changes.
@@ -524,9 +491,8 @@ Tracks updates to the Pieces application, including version changes.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ApplicationsApi(configuration);
 
@@ -542,7 +508,7 @@ apiInstance.postApplicationsUsageUpdated(body).then((data: void (empty response 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationUpdate** | **TrackedApplicationUpdate**| Sending over the previous application version, the current version, and the user. |
 
@@ -558,10 +524,8 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

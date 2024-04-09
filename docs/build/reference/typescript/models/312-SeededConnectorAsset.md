@@ -5,22 +5,22 @@ A generic model to use with the Connector API that requires little to no additio
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**metadata** | [**SeededAssetMetadata**](SeededAssetMetadata) |  | [optional] [default to undefined]
-**format** | [**SeededFormat**](SeededFormat) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**metadata** | [**SeededAssetMetadata**](SeededAssetMetadata)
+**format** | [**SeededFormat**](SeededFormat)
 
 ## Example
 
 ```typescript
-import { SeededConnectorAsset } from '';
+import { SeededConnectorAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededConnectorAsset = {
-    "schema": null, // 
-    "metadata": null, // 
-    "format": null, // 
+    "schema": null,
+    "metadata": null,
+    "format": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededConnectorAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

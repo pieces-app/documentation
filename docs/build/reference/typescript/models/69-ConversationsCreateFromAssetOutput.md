@@ -5,20 +5,20 @@ This is the model for the output for the \"/conversations/create/from_asset/\{as
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
 
 ## Example
 
 ```typescript
-import { ConversationsCreateFromAssetOutput } from '';
+import { ConversationsCreateFromAssetOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ConversationsCreateFromAssetOutput = {
-    "schema": null, // 
-    "conversation": null, // 
+    "schema": null,
+    "conversation": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ConversationsCreateFromAssetOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

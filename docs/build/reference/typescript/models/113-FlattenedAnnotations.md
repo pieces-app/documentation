@@ -5,24 +5,24 @@ This is a flattened plural of Annotation, typically this will just be a list of 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ReferencedAnnotation&gt;**](ReferencedAnnotation) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an annotation id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ReferencedAnnotation&gt;**](ReferencedAnnotation)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { FlattenedAnnotations } from '';
+import { FlattenedAnnotations } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedAnnotations = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an annotation id.
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnnotations;
 console.log(exampleParsed);
 ```
-
-
 
 

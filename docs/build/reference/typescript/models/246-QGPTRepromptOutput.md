@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**query** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**query** | **string**
 
 ## Example
 
 ```typescript
-import { QGPTRepromptOutput } from '';
+import { QGPTRepromptOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTRepromptOutput = {
-    "schema": null, // 
-    "query": null, // 
+    "schema": null,
+    "query": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTRepromptOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

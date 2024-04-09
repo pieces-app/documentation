@@ -5,22 +5,22 @@ A helper classs to wrap Date-Time Values with Useful Helper Properties
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**value** | **Date** |  | [default to undefined]
-**readable** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**value** | **Date**
+**readable** | **string**
 
 ## Example
 
 ```typescript
-import { GroupedTimestamp } from '';
+import { GroupedTimestamp } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GroupedTimestamp = {
-    "schema": null, // 
-    "value": null, // 
-    "readable": Last week - June 3rd, 3:33 a.m., // 
+    "schema": null,
+    "value": null,
+    "readable": Last week - June 3rd, 3:33 a.m.,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GroupedTimestamp;
 console.log(exampleParsed);
 ```
-
-
 
 

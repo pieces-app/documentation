@@ -5,20 +5,20 @@ This is apart of the Output and will let the plugin developer know if we reccome
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**related** | [**QGPTAgentRelatedRoutes**](QGPTAgentRelatedRoutes) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**related** | [**QGPTAgentRelatedRoutes**](QGPTAgentRelatedRoutes)
 
 ## Example
 
 ```typescript
-import { QGPTAgentRoutes } from '';
+import { QGPTAgentRoutes } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTAgentRoutes = {
-    "schema": null, // 
-    "related": null, // 
+    "schema": null,
+    "related": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTAgentRoutes;
 console.log(exampleParsed);
 ```
-
-
 
 

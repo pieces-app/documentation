@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**databaseExport**](DatabaseApi#databaseexport) | **GET** /database/export | Your GET endpoint
-[**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import | /database/import [POST]
+Method | HTTP request
+------------- | -------------
+[**databaseExport**](DatabaseApi#databaseexport) | **GET** /database/export
+[**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import
 
 
-## **databaseExport** Deprecated: 
+## **databaseExport**
 > ExportedDatabase databaseExport()
 
 This is going to export your current database.
@@ -16,9 +16,8 @@ This is going to export your current database.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DatabaseApi(configuration);
 
@@ -33,7 +32,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**ExportedDatabase**
+[**ExportedDatabase**](../models/ExportedDatabase)
 
 ### HTTP request headers
 
@@ -42,14 +41,12 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **databaseImport** Deprecated: 
+## **databaseImport**
 > databaseImport()
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
@@ -57,9 +54,8 @@ This is going to take in a database, and merge it with the current database. Thi
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DatabaseApi(configuration);
 
@@ -75,7 +71,7 @@ apiInstance.databaseImport(body).then((data: void (empty response body)) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **exportedDatabase** | **ExportedDatabase**|  |
 
@@ -91,12 +87,10 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, and they cannot create a shareable link. |  -  |
-
-
 
 

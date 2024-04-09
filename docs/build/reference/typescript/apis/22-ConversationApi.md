@@ -2,39 +2,38 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
-[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
-[**conversationAssociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
-[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
-[**conversationAssociateWorkstreamSummary**](ConversationApi#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
-[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
-[**conversationDisassociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
-[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
-[**conversationDisassociateWorkstreamSummary**](ConversationApi#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
-[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
-[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
-[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | \&#39;/conversation/\{conversation\}/scores/increment\&#39; [POST]
-[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
-[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
-[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
-[**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
+[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
+[**conversationAssociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
+[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
+[**conversationAssociateWorkstreamSummary**](ConversationApi#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
+[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
+[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
+[**conversationDisassociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
+[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
+[**conversationDisassociateWorkstreamSummary**](ConversationApi#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\}
+[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
+[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
+[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment
+[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages
+[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename
+[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize
+[**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update
 
 
-## **conversationAssociateAnchor** Deprecated: 
+## **conversationAssociateAnchor**
 > conversationAssociateAnchor()
 
-This will update both the anchor and the conversation.  and associate the 2 together
+Updates both the anchor and the conversation, associating them together.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -52,7 +51,7 @@ apiInstance.conversationAssociateAnchor(body).then((data: void (empty response b
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
@@ -69,24 +68,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationAssociateAsset** Deprecated: 
+## **conversationAssociateAsset**
 > conversationAssociateAsset()
 
-This will update both the asset and the conversation.  and associate the 2 together
+Updates both the asset and the conversation, associating the two together.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -104,7 +100,7 @@ apiInstance.conversationAssociateAsset(body).then((data: void (empty response bo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -121,14 +117,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationAssociateGroundingTemporalRangeWorkstream** Deprecated: 
+## **conversationAssociateGroundingTemporalRangeWorkstream**
 > conversationAssociateGroundingTemporalRangeWorkstream()
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
@@ -136,9 +130,8 @@ This will associate a workstream(range) with a conversation. This will do the sa
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -156,7 +149,7 @@ apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((da
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
@@ -173,24 +166,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationAssociateWebsite** Deprecated: 
+## **conversationAssociateWebsite**
 > conversationAssociateWebsite()
 
-This will update both the website and the conversation.  and associate the 2 together
+Updates both the website and the conversation, and associate them together.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -208,7 +198,7 @@ apiInstance.conversationAssociateWebsite(body).then((data: void (empty response 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
@@ -225,14 +215,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationAssociateWorkstreamSummary** Deprecated: 
+## **conversationAssociateWorkstreamSummary**
 > conversationAssociateWorkstreamSummary()
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -240,9 +228,8 @@ This will associate a conversation with a workstream summary. This will do the s
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -260,7 +247,7 @@ apiInstance.conversationAssociateWorkstreamSummary(body).then((data: void (empty
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -277,24 +264,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationDisassociateAnchor** Deprecated: 
+## **conversationDisassociateAnchor**
 > conversationDisassociateAnchor()
 
-This will update both the anchor and the conversation.  and delete(disassociate) the 2 together
+Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -312,7 +296,7 @@ apiInstance.conversationDisassociateAnchor(body).then((data: void (empty respons
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
@@ -329,24 +313,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationDisassociateAsset** Deprecated: 
+## **conversationDisassociateAsset**
 > conversationDisassociateAsset()
 
-This will update both the asset and the conversation.  and delete(disassociate) the 2.
+Updates both the asset and the conversation, effectively disassociating them.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -364,7 +345,7 @@ apiInstance.conversationDisassociateAsset(body).then((data: void (empty response
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -381,14 +362,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationDisassociateGroundingTemporalRangeWorkstream** Deprecated: 
+## **conversationDisassociateGroundingTemporalRangeWorkstream**
 > conversationDisassociateGroundingTemporalRangeWorkstream()
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
@@ -396,9 +375,8 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -416,7 +394,7 @@ apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then(
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
@@ -433,24 +411,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationDisassociateWebsite** Deprecated: 
+## **conversationDisassociateWebsite**
 > conversationDisassociateWebsite()
 
-This will enable us to dissassociate a conversation from a website.
+Allows us to disassociate a conversation from a specific website
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -468,7 +443,7 @@ apiInstance.conversationDisassociateWebsite(body).then((data: void (empty respon
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
@@ -485,14 +460,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationDisassociateWorkstreamSummary** Deprecated: 
+## **conversationDisassociateWorkstreamSummary**
 > conversationDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -500,9 +473,8 @@ This will enable us to disassociate an conversation from a workstream summary. T
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -520,7 +492,7 @@ apiInstance.conversationDisassociateWorkstreamSummary(body).then((data: void (em
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -537,24 +509,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationGetSpecificConversation** Deprecated: 
+## **conversationGetSpecificConversation**
 > Conversation conversationGetSpecificConversation()
 
-This will get a specific conversation.
+Retrieves a specific conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -572,7 +541,7 @@ apiInstance.conversationGetSpecificConversation(body).then((data: Conversation) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -580,7 +549,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Conversation**
+[**Conversation**](../models/Conversation)
 
 ### HTTP request headers
 
@@ -589,24 +558,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-
-
-## **conversationGroundingMessagesAssociateMessage** Deprecated: 
+## **conversationGroundingMessagesAssociateMessage**
 > conversationGroundingMessagesAssociateMessage()
 
-This will save the grounding context for a conversation. This will enable us to associate a message to the conversation.grounding object.
+Stores the grounding context for a conversation. It allows to associate a message with the conversation\'s grounding object, facilitating contextual understanding and management of the conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -624,7 +590,7 @@ apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data: void
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
@@ -641,24 +607,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationGroundingMessagesDisassociateMessage** Deprecated: 
+## **conversationGroundingMessagesDisassociateMessage**
 > conversationGroundingMessagesDisassociateMessage()
 
-This will remove specific grounding context for a conversation. This will enable us to dissassociate a message from the conversation.grounding object.
+Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation\'s grounding object.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -676,7 +639,7 @@ apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data: v
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
@@ -693,24 +656,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationScoresIncrement** Deprecated: 
+## **conversationScoresIncrement**
 > conversationScoresIncrement()
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -728,7 +688,7 @@ apiInstance.conversationScoresIncrement(body).then((data: void (empty response b
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
@@ -745,24 +705,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationSpecificConversationMessages** Deprecated: 
+## **conversationSpecificConversationMessages**
 > ConversationMessages conversationSpecificConversationMessages()
 
-This will get a specific conversations messages
+Retrieves messages specific to a particular conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -780,7 +737,7 @@ apiInstance.conversationSpecificConversationMessages(body).then((data: Conversat
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -788,7 +745,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ConversationMessages**
+[**ConversationMessages**](../models/ConversationMessages)
 
 ### HTTP request headers
 
@@ -797,24 +754,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationSpecificConversationRename** Deprecated: 
+## **conversationSpecificConversationRename**
 > Conversation conversationSpecificConversationRename()
 
-This will take a specific converssation and it will rename using ML.
+Renames a specific conversation using machine learning (ML) techniques.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -832,7 +786,7 @@ apiInstance.conversationSpecificConversationRename(body).then((data: Conversatio
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -840,7 +794,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Conversation**
+[**Conversation**](../models/Conversation)
 
 ### HTTP request headers
 
@@ -849,24 +803,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationSummarize** Deprecated: 
+## **conversationSummarize**
 > ConversationSummarizeOutput conversationSummarize()
 
-This will take a current conversation and create a summary of the conversation and save it as an annotation on the conversation.  will return the annotation reference used as the summary.
+Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -884,7 +835,7 @@ apiInstance.conversationSummarize(body).then((data: ConversationSummarizeOutput)
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversationSummarizeInput** | **ConversationSummarizeInput**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
@@ -892,7 +843,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ConversationSummarizeOutput**
+[**ConversationSummarizeOutput**](../models/ConversationSummarizeOutput)
 
 ### HTTP request headers
 
@@ -901,24 +852,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationUpdate** Deprecated: 
+## **conversationUpdate**
 > Conversation conversationUpdate()
 
-This will update a specific conversation.
+Updates a specific conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationApi(configuration);
 
@@ -936,7 +884,7 @@ apiInstance.conversationUpdate(body).then((data: Conversation) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | **Conversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -944,7 +892,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Conversation**
+[**Conversation**](../models/Conversation)
 
 ### HTTP request headers
 
@@ -953,11 +901,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

@@ -5,13 +5,13 @@ This is an enum that will help provide information around what permission this p
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { PersonAccessScopedEnum } from '';
+import { PersonAccessScopedEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PersonAccessScopedEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PersonAccessScopedEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

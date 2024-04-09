@@ -5,22 +5,22 @@ basic or platform is absolutely required here. basic: if provided is just inform
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**basic** | [**PersonBasicType**](PersonBasicType) |  | [optional] [default to undefined]
-**platform** | [**UserProfile**](UserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**basic** | [**PersonBasicType**](PersonBasicType)
+**platform** | [**UserProfile**](UserProfile)
 
 ## Example
 
 ```typescript
-import { PersonType } from '';
+import { PersonType } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PersonType = {
-    "schema": null, // 
-    "basic": null, // 
-    "platform": null, // 
+    "schema": null,
+    "basic": null,
+    "platform": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PersonType;
 console.log(exampleParsed);
 ```
-
-
 
 

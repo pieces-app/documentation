@@ -5,22 +5,22 @@ This is a model that will hold relavent information in relation to an interactio
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**description** | **string** | (optional) a description of this button that was clicked. or maybe what it did. | [default to undefined]
-**element** | **string** | This is an identifer that will allow the developer to know what unique button/field was interacted with. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**description** | **string**
+**element** | **string**
 
 ## Example
 
 ```typescript
-import { TrackedInteractionEvent } from '';
+import { TrackedInteractionEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedInteractionEvent = {
-    "schema": null, // 
-    "description": null, // (optional) a description of this button that was clicked. or maybe what it did.
-    "element": null, // This is an identifer that will allow the developer to know what unique button/field was interacted with.
+    "schema": null,
+    "description": null,
+    "element": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedInteractionEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

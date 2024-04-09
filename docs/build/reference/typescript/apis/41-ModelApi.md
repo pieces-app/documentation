@@ -2,28 +2,27 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
-[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
-[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
-[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
-[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
-[**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update | /model/update [POST]
-[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
+Method | HTTP request
+------------- | -------------
+[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download
+[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
+[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
+[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load
+[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload
+[**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update
+[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
 
 
-## **modelSpecificModelDownload** Deprecated: 
+## **modelSpecificModelDownload**
 > Model modelSpecificModelDownload()
 
-This will download a specific model onto your local machine.
+Downloads a specific model to your local machine.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -39,14 +38,14 @@ apiInstance.modelSpecificModelDownload(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -55,24 +54,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelSpecificModelDownloadCancel** Deprecated: 
+## **modelSpecificModelDownloadCancel**
 > Model modelSpecificModelDownloadCancel()
 
-This will cancel a specific model download in progress.
+Cancels a specific model download that is currently in progress.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -88,14 +84,14 @@ apiInstance.modelSpecificModelDownloadCancel(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -104,24 +100,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelSpecificModelDownloadProgress** Deprecated: 
+## **modelSpecificModelDownloadProgress**
 > ModelDownloadProgress modelSpecificModelDownloadProgress()
 
-This is a Websocket Connection, to get the progress of the downloading of a specific model.
+This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -137,14 +130,14 @@ apiInstance.modelSpecificModelDownloadProgress(body).then((data: ModelDownloadPr
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**ModelDownloadProgress**
+[**ModelDownloadProgress**](../models/ModelDownloadProgress)
 
 ### HTTP request headers
 
@@ -153,24 +146,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelSpecificModelLoad** Deprecated: 
+## **modelSpecificModelLoad**
 > Model modelSpecificModelLoad()
 
-This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
+Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -186,14 +176,14 @@ apiInstance.modelSpecificModelLoad(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -202,24 +192,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelSpecificModelUnload** Deprecated: 
+## **modelSpecificModelUnload**
 > Model modelSpecificModelUnload()
 
-This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
+Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -235,14 +222,14 @@ apiInstance.modelSpecificModelUnload(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -251,24 +238,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelUpdate** Deprecated: 
+## **modelUpdate**
 > Model modelUpdate()
 
-This will update Machinelearning Model, this is only available for \"custom:true\" models.
+Updates a machine learning model. This functionality is exclusively available for models with the \'custom:true\' setting.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -284,14 +268,14 @@ apiInstance.modelUpdate(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | **Model**|  |
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -300,24 +284,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **modelsSpecificModelSnapshot** Deprecated: 
+## **modelsSpecificModelSnapshot**
 > Model modelsSpecificModelSnapshot()
 
-
+Retrieves a specific ML model.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ModelApi(configuration);
 
@@ -333,14 +314,14 @@ apiInstance.modelsSpecificModelSnapshot(body).then((data: Model) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
 ### Return type
 
-**Model**
+[**Model**](../models/Model)
 
 ### HTTP request headers
 
@@ -349,11 +330,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | model was not found. |  -  |
-
-
 
 

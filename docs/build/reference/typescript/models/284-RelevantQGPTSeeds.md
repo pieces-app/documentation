@@ -5,20 +5,20 @@ This is a plural of RelevantQGPTSeed.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;RelevantQGPTSeed&gt;**](RelevantQGPTSeed) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;RelevantQGPTSeed&gt;**](RelevantQGPTSeed)
 
 ## Example
 
 ```typescript
-import { RelevantQGPTSeeds } from '';
+import { RelevantQGPTSeeds } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: RelevantQGPTSeeds = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as RelevantQGPTSeeds;
 console.log(exampleParsed);
 ```
-
-
 
 

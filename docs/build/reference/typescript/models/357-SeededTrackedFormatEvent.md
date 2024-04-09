@@ -5,24 +5,24 @@ Again this is a model designed to be sent over to a context server to be built a
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs) |  | [default to undefined]
-**format** | [**ReferencedFormat**](ReferencedFormat) |  | [default to undefined]
-**metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs)
+**format** | [**ReferencedFormat**](ReferencedFormat)
+**metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata)
 
 ## Example
 
 ```typescript
-import { SeededTrackedFormatEvent } from '';
+import { SeededTrackedFormatEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedFormatEvent = {
-    "schema": null, // 
-    "identifierDescriptionPair": null, // 
-    "format": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "identifierDescriptionPair": null,
+    "format": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedFormatEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

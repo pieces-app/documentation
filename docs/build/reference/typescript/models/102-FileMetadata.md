@@ -5,24 +5,24 @@ This is a model for metadata of a file!
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** | This is the name of your file. | [optional] [default to undefined]
-**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] [default to undefined]
-**size** | **number** | This is the size(in bytes) | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**size** | **number**
 
 ## Example
 
 ```typescript
-import { FileMetadata } from '';
+import { FileMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FileMetadata = {
-    "schema": null, // 
-    "name": null, // This is the name of your file.
-    "ext": null, // 
-    "size": null, // This is the size(in bytes)
+    "schema": null,
+    "name": null,
+    "ext": null,
+    "size": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FileMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

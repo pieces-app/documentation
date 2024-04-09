@@ -5,20 +5,20 @@ The redirect URI for you Auth 0 Service
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**authenticated** | **string** | Where the Auth0 redirects after the user is authorized | [optional] [default to undefined]
-**unauthenticated** | **string** | The redirect where a user returns once unauthenticated | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**authenticated** | **string**
+**unauthenticated** | **string**
 
 ## Example
 
 ```typescript
-import { Auth0Redirects } from '';
+import { Auth0Redirects } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Auth0Redirects = {
-    "authenticated": null, // Where the Auth0 redirects after the user is authorized
-    "unauthenticated": null, // The redirect where a user returns once unauthenticated
+    "authenticated": null,
+    "unauthenticated": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Auth0Redirects;
 console.log(exampleParsed);
 ```
-
-
 
 

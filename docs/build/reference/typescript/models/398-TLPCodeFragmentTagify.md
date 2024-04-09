@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**code** | [**TLPCodeSnippetTagifyCode**](TLPCodeSnippetTagifyCode) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**code** | [**TLPCodeSnippetTagifyCode**](TLPCodeSnippetTagifyCode)
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentTagify } from '';
+import { TLPCodeFragmentTagify } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentTagify = {
-    "schema": null, // 
-    "code": null, // 
+    "schema": null,
+    "code": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentTagify;
 console.log(exampleParsed);
 ```
-
-
 
 

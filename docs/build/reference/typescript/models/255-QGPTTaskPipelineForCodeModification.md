@@ -5,20 +5,20 @@ This task is for modifying a bit of code, IE modify this code to do xyz.  This i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**instruction** | **string** | This is the instruction that we will use to modify this snippet. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**instruction** | **string**
 
 ## Example
 
 ```typescript
-import { QGPTTaskPipelineForCodeModification } from '';
+import { QGPTTaskPipelineForCodeModification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTTaskPipelineForCodeModification = {
-    "schema": null, // 
-    "instruction": null, // This is the instruction that we will use to modify this snippet.
+    "schema": null,
+    "instruction": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipelineForCodeModification;
 console.log(exampleParsed);
 ```
-
-
 
 

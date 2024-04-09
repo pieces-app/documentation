@@ -5,28 +5,28 @@ A Model to describe what application a format/analytics event originated.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | The ID of the tracked application. | [default to undefined]
-**name** | [**ApplicationNameEnum**](ApplicationNameEnum) |  | [default to undefined]
-**version** | **string** | This is the specific version number 0.0.0 | [default to undefined]
-**platform** | [**PlatformEnum**](PlatformEnum) |  | [default to undefined]
-**automaticUnload** | **boolean** | This is a proper that will let us know if we will proactivity unload all of your machine learning models.by default this is false. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**name** | [**ApplicationNameEnum**](ApplicationNameEnum)
+**version** | **string**
+**platform** | [**PlatformEnum**](PlatformEnum)
+**automaticUnload** | **boolean**
 
 ## Example
 
 ```typescript
-import { TrackedApplication } from '';
+import { TrackedApplication } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedApplication = {
-    "schema": null, // 
-    "id": null, // The ID of the tracked application.
-    "name": null, // 
-    "version": null, // This is the specific version number 0.0.0
-    "platform": null, // 
-    "automaticUnload": null, // This is a proper that will let us know if we will proactivity unload all of your machine learning models.by default this is false.
+    "schema": null,
+    "id": null,
+    "name": null,
+    "version": null,
+    "platform": null,
+    "automaticUnload": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedApplication;
 console.log(exampleParsed);
 ```
-
-
 
 

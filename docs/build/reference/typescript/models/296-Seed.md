@@ -5,22 +5,22 @@ A seed Model used to wrap a format or asset
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | [**SeededAsset**](SeededAsset) |  | [optional] [default to undefined]
-**type** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | [**SeededAsset**](SeededAsset)
+**type** | **string**
 
 ## Example
 
 ```typescript
-import { Seed } from '';
+import { Seed } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Seed = {
-    "schema": null, // 
-    "asset": null, // 
-    "type": SEEDED_ASSET, // 
+    "schema": null,
+    "asset": null,
+    "type": SEEDED_ASSET,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Seed;
 console.log(exampleParsed);
 ```
-
-
 
 

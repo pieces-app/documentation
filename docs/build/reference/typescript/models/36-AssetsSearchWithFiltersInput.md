@@ -4,26 +4,26 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**query** | **string** |  | [optional] [default to undefined]
-**space** | [**AssetSearchSpace**](AssetSearchSpace) |  | [optional] [default to undefined]
-**filters** | [**AssetFilters**](AssetFilters) |  | [optional] [default to undefined]
-**casing** | **boolean** | This is an optional bool that will let us know, if we want to ignore case or not.(default is to allow casing)ie casing:true. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**query** | **string**
+**space** | [**AssetSearchSpace**](AssetSearchSpace)
+**filters** | [**AssetFilters**](AssetFilters)
+**casing** | **boolean**
 
 ## Example
 
 ```typescript
-import { AssetsSearchWithFiltersInput } from '';
+import { AssetsSearchWithFiltersInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetsSearchWithFiltersInput = {
-    "schema": null, // 
-    "query": null, // 
-    "space": null, // 
-    "filters": null, // 
-    "casing": null, // This is an optional bool that will let us know, if we want to ignore case or not.(default is to allow casing)ie casing:true.
+    "schema": null,
+    "query": null,
+    "space": null,
+    "filters": null,
+    "casing": null,
 };
 
 console.log(example);
@@ -36,7 +36,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetsSearchWithFiltersInput;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**url** | **string** | The route of the page  | [default to undefined]
-**page** | **string** | page\&#39;s html as a string | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**url** | **string**
+**page** | **string**
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableHtmlWebpage } from '';
+import { SeededDiscoverableHtmlWebpage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableHtmlWebpage = {
-    "schema": null, // 
-    "url": null, // The route of the page 
-    "page": null, // page\&#39;s html as a string
+    "schema": null,
+    "url": null,
+    "page": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableHtmlWebpage;
 console.log(exampleParsed);
 ```
-
-
 
 

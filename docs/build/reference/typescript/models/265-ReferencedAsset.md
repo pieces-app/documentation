@@ -5,22 +5,22 @@ A reference to a asset, which at minimum must have the asset\'s id. But in the c
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**reference** | [**FlattenedAsset**](FlattenedAsset) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**reference** | [**FlattenedAsset**](FlattenedAsset)
 
 ## Example
 
 ```typescript
-import { ReferencedAsset } from '';
+import { ReferencedAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ReferencedAsset = {
-    "schema": null, // 
-    "id": 2254f2c8-5797-40e8-ac56-41166dc0e159, // 
-    "reference": null, // 
+    "schema": null,
+    "id": 2254f2c8-5797-40e8-ac56-41166dc0e159,
+    "reference": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ReferencedAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

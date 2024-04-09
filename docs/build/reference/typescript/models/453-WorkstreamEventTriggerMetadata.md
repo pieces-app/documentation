@@ -5,18 +5,18 @@ This is a free form data object that will enable additional data to be passed in
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { WorkstreamEventTriggerMetadata } from '';
+import { WorkstreamEventTriggerMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: WorkstreamEventTriggerMetadata = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as WorkstreamEventTriggerMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

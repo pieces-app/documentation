@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**reference** | [**ReferencedConversation**](ReferencedConversation) |  | [default to undefined]
-**grounding** | [**SeededRangeConversationGroundingAssociation**](SeededRangeConversationGroundingAssociation) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**reference** | [**ReferencedConversation**](ReferencedConversation)
+**grounding** | [**SeededRangeConversationGroundingAssociation**](SeededRangeConversationGroundingAssociation)
 
 ## Example
 
 ```typescript
-import { SeededRangeConversationAssociation } from '';
+import { SeededRangeConversationAssociation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededRangeConversationAssociation = {
-    "schema": null, // 
-    "reference": null, // 
-    "grounding": null, // 
+    "schema": null,
+    "reference": null,
+    "grounding": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededRangeConversationAssociation;
 console.log(exampleParsed);
 ```
-
-
 
 

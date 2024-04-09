@@ -5,22 +5,22 @@ This is a plural Model that is used within the bulk upload flow in both cases of
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**application** | **string** | application id. | [default to undefined]
-**iterable** | [**Array&lt;DiscoveredAsset&gt;**](DiscoveredAsset) | This is an iterable of already snippitized snippets that have been clustered.(These are assets that are going to be uploaded or at minimum the assets that we reccommend to upload) | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**application** | **string**
+**iterable** | [**Array&lt;DiscoveredAsset&gt;**](DiscoveredAsset)
 
 ## Example
 
 ```typescript
-import { DiscoveredAssets } from '';
+import { DiscoveredAssets } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DiscoveredAssets = {
-    "schema": null, // 
-    "application": null, // application id.
-    "iterable": null, // This is an iterable of already snippitized snippets that have been clustered.(These are assets that are going to be uploaded or at minimum the assets that we reccommend to upload)
+    "schema": null,
+    "application": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DiscoveredAssets;
 console.log(exampleParsed);
 ```
-
-
 
 

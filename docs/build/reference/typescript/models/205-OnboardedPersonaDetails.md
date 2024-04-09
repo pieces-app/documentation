@@ -5,20 +5,20 @@ This is an out body for the /machine_learning/text/technical_processing/generato
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**seeds** | [**Seeds**](Seeds) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**seeds** | [**Seeds**](Seeds)
 
 ## Example
 
 ```typescript
-import { OnboardedPersonaDetails } from '';
+import { OnboardedPersonaDetails } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OnboardedPersonaDetails = {
-    "schema": null, // 
-    "seeds": null, // 
+    "schema": null,
+    "seeds": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OnboardedPersonaDetails;
 console.log(exampleParsed);
 ```
-
-
 
 

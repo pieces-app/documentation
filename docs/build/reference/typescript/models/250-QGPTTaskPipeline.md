@@ -5,28 +5,28 @@ This model is specifically for QGPT Task pipelines, the model is used to group o
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**codeExplanation** | [**QGPTTaskPipelineForCodeExplanation**](QGPTTaskPipelineForCodeExplanation) |  | [optional] [default to undefined]
-**codeCommentation** | [**QGPTTaskPipelineForCodeCommentation**](QGPTTaskPipelineForCodeCommentation) |  | [optional] [default to undefined]
-**codeFix** | [**QGPTTaskPipelineForCodeFix**](QGPTTaskPipelineForCodeFix) |  | [optional] [default to undefined]
-**codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification) |  | [optional] [default to undefined]
-**codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**codeExplanation** | [**QGPTTaskPipelineForCodeExplanation**](QGPTTaskPipelineForCodeExplanation)
+**codeCommentation** | [**QGPTTaskPipelineForCodeCommentation**](QGPTTaskPipelineForCodeCommentation)
+**codeFix** | [**QGPTTaskPipelineForCodeFix**](QGPTTaskPipelineForCodeFix)
+**codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification)
+**codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion)
 
 ## Example
 
 ```typescript
-import { QGPTTaskPipeline } from '';
+import { QGPTTaskPipeline } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTTaskPipeline = {
-    "schema": null, // 
-    "codeExplanation": null, // 
-    "codeCommentation": null, // 
-    "codeFix": null, // 
-    "codeModification": null, // 
-    "codeCompletion": null, // 
+    "schema": null,
+    "codeExplanation": null,
+    "codeCommentation": null,
+    "codeFix": null,
+    "codeModification": null,
+    "codeCompletion": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipeline;
 console.log(exampleParsed);
 ```
-
-
 
 

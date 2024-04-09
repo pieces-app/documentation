@@ -5,36 +5,36 @@ Model for ML big query Data collection.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**user** | **string** |  | [default to undefined]
-**os** | **string** |  | [default to undefined]
-**language** | **string** |  | [default to undefined]
-**length** | **number** |  | [default to undefined]
-**ast** | **string** |  | [default to undefined]
-**timestamp** | **string** |  | [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**context** | **string** | this is the application in which this was created from. | [default to undefined]
-**snippet** | **string** | this is the value of the snippet | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**user** | **string**
+**os** | **string**
+**language** | **string**
+**length** | **number**
+**ast** | **string**
+**timestamp** | **string**
+**asset** | **string**
+**context** | **string**
+**snippet** | **string**
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentDescriptiveStatistics } from '';
+import { TLPCodeFragmentDescriptiveStatistics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentDescriptiveStatistics = {
-    "schema": null, // 
-    "user": null, // 
-    "os": null, // 
-    "language": null, // 
-    "length": null, // 
-    "ast": null, // 
-    "timestamp": null, // 
-    "asset": null, // 
-    "context": null, // this is the application in which this was created from.
-    "snippet": null, // this is the value of the snippet
+    "schema": null,
+    "user": null,
+    "os": null,
+    "language": null,
+    "length": null,
+    "ast": null,
+    "timestamp": null,
+    "asset": null,
+    "context": null,
+    "snippet": null,
 };
 
 console.log(example);
@@ -47,7 +47,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentDescriptiveStatistics;
 console.log(exampleParsed);
 ```
-
-
 
 

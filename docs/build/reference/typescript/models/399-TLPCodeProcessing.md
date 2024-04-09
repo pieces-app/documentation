@@ -4,26 +4,26 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**fragment** | [**TLPCodeSnippetAnalytics**](TLPCodeSnippetAnalytics) |  | [optional] [default to undefined]
-**file** | [**TLPCodeFileAnalytics**](TLPCodeFileAnalytics) |  | [optional] [default to undefined]
-**directory** | [**TLPCodeDirectoryAnalytics**](TLPCodeDirectoryAnalytics) |  | [optional] [default to undefined]
-**repository** | [**TLPCodeRepositoryAnalytics**](TLPCodeRepositoryAnalytics) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**fragment** | [**TLPCodeSnippetAnalytics**](TLPCodeSnippetAnalytics)
+**file** | [**TLPCodeFileAnalytics**](TLPCodeFileAnalytics)
+**directory** | [**TLPCodeDirectoryAnalytics**](TLPCodeDirectoryAnalytics)
+**repository** | [**TLPCodeRepositoryAnalytics**](TLPCodeRepositoryAnalytics)
 
 ## Example
 
 ```typescript
-import { TLPCodeProcessing } from '';
+import { TLPCodeProcessing } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeProcessing = {
-    "schema": null, // 
-    "fragment": null, // 
-    "file": null, // 
-    "directory": null, // 
-    "repository": null, // 
+    "schema": null,
+    "fragment": null,
+    "file": null,
+    "directory": null,
+    "repository": null,
 };
 
 console.log(example);
@@ -36,7 +36,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeProcessing;
 console.log(exampleParsed);
 ```
-
-
 
 

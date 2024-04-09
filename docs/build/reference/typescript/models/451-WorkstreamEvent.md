@@ -5,34 +5,34 @@ This is a Shadow Activity event:  This is used to for 2 collections the internal
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**trigger** | [**WorkstreamEventTrigger**](WorkstreamEventTrigger) |  | [default to undefined]
-**metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  | [optional] [default to undefined]
-**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**score** | [**Score**](Score)
+**application** | [**Application**](Application)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**trigger** | [**WorkstreamEventTrigger**](WorkstreamEventTrigger)
+**metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata)
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
 ## Example
 
 ```typescript
-import { WorkstreamEvent } from '';
+import { WorkstreamEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: WorkstreamEvent = {
-    "schema": null, // 
-    "id": null, // 
-    "score": null, // 
-    "application": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "trigger": null, // 
-    "metadata": null, // 
-    "summaries": null, // 
+    "schema": null,
+    "id": null,
+    "score": null,
+    "application": null,
+    "created": null,
+    "updated": null,
+    "trigger": null,
+    "metadata": null,
+    "summaries": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as WorkstreamEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

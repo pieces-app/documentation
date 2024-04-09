@@ -5,13 +5,13 @@ These are all the possible uses for a model, i.e. code classification, OCR, text
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ModelUsageEnum } from '';
+import { ModelUsageEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelUsageEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelUsageEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

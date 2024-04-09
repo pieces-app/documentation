@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorAssociateWorkstreamSummary**](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**anchorDisassociateWorkstreamSummary**](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
-[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | \&#39;/anchor/\{anchor\}/scores/increment\&#39; [POST]
-[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
-[**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
+Method | HTTP request
+------------- | -------------
+[**anchorAssociateWorkstreamSummary**](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
+[**anchorDisassociateWorkstreamSummary**](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename
+[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
+[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
+[**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update
 
 
-## **anchorAssociateWorkstreamSummary** Deprecated: 
+## **anchorAssociateWorkstreamSummary**
 > anchorAssociateWorkstreamSummary()
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -20,9 +20,8 @@ This will associate a anchor with a workstream summary. This will do the same th
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -40,7 +39,7 @@ apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty respo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -57,14 +56,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorDisassociateWorkstreamSummary** Deprecated: 
+## **anchorDisassociateWorkstreamSummary**
 > anchorDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -72,9 +69,8 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -92,7 +88,7 @@ apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty re
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -109,14 +105,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorRename** Deprecated: 
+## **anchorRename**
 > Anchor anchorRename()
 
 This will rename a specific anchor.
@@ -124,9 +118,8 @@ This will rename a specific anchor.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -144,7 +137,7 @@ apiInstance.anchorRename(body).then((data: Anchor) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -152,7 +145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Anchor**
+[**Anchor**](../models/Anchor)
 
 ### HTTP request headers
 
@@ -161,14 +154,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorScoresIncrement** Deprecated: 
+## **anchorScoresIncrement**
 > anchorScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -176,9 +167,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -196,7 +186,7 @@ apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
@@ -213,14 +203,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorSpecificAnchorSnapshot** Deprecated: 
+## **anchorSpecificAnchorSnapshot**
 > Anchor anchorSpecificAnchorSnapshot()
 
 This will get a snapshot of a single anchor.
@@ -228,9 +216,8 @@ This will get a snapshot of a single anchor.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -248,7 +235,7 @@ apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -256,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Anchor**
+[**Anchor**](../models/Anchor)
 
 ### HTTP request headers
 
@@ -265,14 +252,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Anchor not found. |  -  |
 
-
-
-## **anchorUpdate** Deprecated: 
+## **anchorUpdate**
 > Anchor anchorUpdate()
 
 This will update a specific anchor.
@@ -280,9 +265,8 @@ This will update a specific anchor.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorApi(configuration);
 
@@ -300,7 +284,7 @@ apiInstance.anchorUpdate(body).then((data: Anchor) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchor** | **Anchor**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -308,7 +292,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Anchor**
+[**Anchor**](../models/Anchor)
 
 ### HTTP request headers
 
@@ -317,11 +301,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

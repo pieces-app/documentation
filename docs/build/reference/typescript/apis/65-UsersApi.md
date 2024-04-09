@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**authenticateFromOauthToken**](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
-[**usersDisconnectUser**](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
-[**usersSnapshot**](UsersApi#userssnapshot) | **GET** /users | /users [GET]
-[**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
+Method | HTTP request
+------------- | -------------
+[**authenticateFromOauthToken**](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
+[**usersDisconnectUser**](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
+[**usersSnapshot**](UsersApi#userssnapshot) | **GET** /users
+[**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\}
 
 
-## **authenticateFromOauthToken** Deprecated: 
+## **authenticateFromOauthToken**
 > UserProfile authenticateFromOauthToken()
 
 Creates a User From a oAuth Token
@@ -18,9 +18,8 @@ Creates a User From a oAuth Token
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
@@ -36,14 +35,14 @@ apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **oAuthToken** | **OAuthToken**|  |
 
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -52,13 +51,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **usersDisconnectUser** Deprecated: 
+## **usersDisconnectUser**
 > Users usersDisconnectUser()
 
 Locally Removing a user for the purpose of Signing Out
@@ -66,9 +63,8 @@ Locally Removing a user for the purpose of Signing Out
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
@@ -84,14 +80,14 @@ apiInstance.usersDisconnectUser(body).then((data: Users) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] |  | defaults to undefined
 
 
 ### Return type
 
-**Users**
+[**Users**](../models/Users)
 
 ### HTTP request headers
 
@@ -100,13 +96,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **usersSnapshot** Deprecated: 
+## **usersSnapshot**
 > Users usersSnapshot()
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
@@ -114,9 +108,8 @@ this will return a snapshot of all of the users that are in the users database. 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
@@ -131,7 +124,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Users**
+[**Users**](../models/Users)
 
 ### HTTP request headers
 
@@ -140,13 +133,11 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **usersSpecificUserSnapshot** Deprecated: 
+## **usersSpecificUserSnapshot**
 > UserProfile usersSpecificUserSnapshot()
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
@@ -154,9 +145,8 @@ This enables the client to get the current user.  This endpoint will return a Us
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.UsersApi(configuration);
 
@@ -172,14 +162,14 @@ apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 
 ### Return type
 
-**UserProfile**
+[**UserProfile**](../models/UserProfile)
 
 ### HTTP request headers
 
@@ -188,10 +178,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

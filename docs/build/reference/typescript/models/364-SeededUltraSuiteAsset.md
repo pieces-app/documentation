@@ -5,26 +5,26 @@ A SeededUEAsset is the minimum data sent from UE required to create an asset wit
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**name** | **string** | (optional) name is the name of the file | [optional] [default to undefined]
-**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] [default to undefined]
-**format** | [**SeededFormat**](SeededFormat) |  | [default to undefined]
-**description** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**name** | **string**
+**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**format** | [**SeededFormat**](SeededFormat)
+**description** | **string**
 
 ## Example
 
 ```typescript
-import { SeededUltraSuiteAsset } from '';
+import { SeededUltraSuiteAsset } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededUltraSuiteAsset = {
-    "schema": null, // 
-    "name": null, // (optional) name is the name of the file
-    "ext": null, // 
-    "format": null, // 
-    "description": null, // 
+    "schema": null,
+    "name": null,
+    "ext": null,
+    "format": null,
+    "description": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededUltraSuiteAsset;
 console.log(exampleParsed);
 ```
-
-
 
 

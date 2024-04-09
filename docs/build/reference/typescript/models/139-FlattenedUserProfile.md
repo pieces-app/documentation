@@ -5,30 +5,30 @@ This is a FlattenedUserProfile that includes information that is not sensative i
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | this is the uuid that identifies a user. | [default to undefined]
-**email** | **string** |  | [optional] [default to undefined]
-**name** | **string** |  | [optional] [default to undefined]
-**username** | **string** |  | [optional] [default to undefined]
-**picture** | **string** |  | [optional] [default to undefined]
-**vanityname** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**email** | **string**
+**name** | **string**
+**username** | **string**
+**picture** | **string**
+**vanityname** | **string**
 
 ## Example
 
 ```typescript
-import { FlattenedUserProfile } from '';
+import { FlattenedUserProfile } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedUserProfile = {
-    "schema": null, // 
-    "id": null, // this is the uuid that identifies a user.
-    "email": null, // 
-    "name": null, // 
-    "username": null, // 
-    "picture": null, // 
-    "vanityname": null, // 
+    "schema": null,
+    "id": null,
+    "email": null,
+    "name": null,
+    "username": null,
+    "picture": null,
+    "vanityname": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedUserProfile;
 console.log(exampleParsed);
 ```
-
-
 
 

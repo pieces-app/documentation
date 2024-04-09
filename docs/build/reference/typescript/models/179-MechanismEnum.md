@@ -5,13 +5,13 @@ This will let us know how an asset was uploaded.  MANUAL: this is an event such 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { MechanismEnum } from '';
+import { MechanismEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: MechanismEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as MechanismEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

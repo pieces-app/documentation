@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**externalProviderApiKeyCreate**](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create | /external_provider/api_key/create [POST]
-[**externalProviderApiKeyDelete**](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete | /external_provider/api_key/delete [POST]
-[**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
+Method | HTTP request
+------------- | -------------
+[**externalProviderApiKeyCreate**](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create
+[**externalProviderApiKeyDelete**](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete
+[**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update
 
 
-## **externalProviderApiKeyCreate** Deprecated: 
+## **externalProviderApiKeyCreate**
 > CreatedExternalProviderApiKey externalProviderApiKeyCreate()
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -17,9 +17,8 @@ This will create a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
@@ -35,14 +34,14 @@ apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProvid
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | **PrecreatedExternalProviderApiKey**|  |
 
 
 ### Return type
 
-**CreatedExternalProviderApiKey**
+[**CreatedExternalProviderApiKey**](CreatedExternalProviderApiKey)
 
 ### HTTP request headers
 
@@ -51,15 +50,13 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **externalProviderApiKeyDelete** Deprecated: 
+## **externalProviderApiKeyDelete**
 > DeletedExternalProviderApiKey externalProviderApiKeyDelete()
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -67,9 +64,8 @@ This will remove a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
@@ -85,14 +81,14 @@ apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProvid
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | **PredeletedExternalProviderApiKey**|  |
 
 
 ### Return type
 
-**DeletedExternalProviderApiKey**
+[**DeletedExternalProviderApiKey**](DeletedExternalProviderApiKey)
 
 ### HTTP request headers
 
@@ -101,15 +97,13 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **externalProviderApiKeyUpdate** Deprecated: 
+## **externalProviderApiKeyUpdate**
 > UpdatedExternalProviderApiKey externalProviderApiKeyUpdate()
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -117,9 +111,8 @@ This will update a specific external_provider api_key from a specific user Auth0
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ExternalProviderApi(configuration);
 
@@ -135,14 +128,14 @@ apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProvid
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | **PreupdatedExternalProviderApiKey**|  |
 
 
 ### Return type
 
-**UpdatedExternalProviderApiKey**
+[**UpdatedExternalProviderApiKey**](UpdatedExternalProviderApiKey)
 
 ### HTTP request headers
 
@@ -151,12 +144,10 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

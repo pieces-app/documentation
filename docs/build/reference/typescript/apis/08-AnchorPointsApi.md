@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
-[**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
+Method | HTTP request
+------------- | -------------
+[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create
+[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete
+[**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points
 
 
-## **anchorPointsCreateNewAnchorPoint** Deprecated: 
+## **anchorPointsCreateNewAnchorPoint**
 > AnchorPoint anchorPointsCreateNewAnchorPoint()
 
 This will create a anchorPoint.
@@ -17,9 +17,8 @@ This will create a anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data: AnchorPoint) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededAnchorPoint** | **SeededAnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -45,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**AnchorPoint**
+[**AnchorPoint**](../models/AnchorPoint)
 
 ### HTTP request headers
 
@@ -54,14 +53,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorPointsDeleteSpecificAnchorPoint** Deprecated: 
+## **anchorPointsDeleteSpecificAnchorPoint**
 > anchorPointsDeleteSpecificAnchorPoint()
 
 This will delete a specific anchorPoint!
@@ -69,9 +66,8 @@ This will delete a specific anchorPoint!
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
@@ -87,7 +83,7 @@ apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data: void (empty 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
@@ -103,14 +99,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorPointsSnapshot** Deprecated: 
+## **anchorPointsSnapshot**
 > AnchorPoints anchorPointsSnapshot()
 
 This will get a snapshot of all your anchorPoints.
@@ -118,9 +112,8 @@ This will get a snapshot of all your anchorPoints.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointsApi(configuration);
 
@@ -136,14 +129,14 @@ apiInstance.anchorPointsSnapshot(body).then((data: AnchorPoints) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**AnchorPoints**
+[**AnchorPoints**](../models/AnchorPoints)
 
 ### HTTP request headers
 
@@ -152,11 +145,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

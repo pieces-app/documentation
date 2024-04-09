@@ -5,20 +5,20 @@ This is a returnable for the metrics/formats/ordered
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**ordered** | **Array&lt;string&gt;** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**ordered** | **Array&lt;string&gt;**
 
 ## Example
 
 ```typescript
-import { OrderedMetrics } from '';
+import { OrderedMetrics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OrderedMetrics = {
-    "schema": null, // 
-    "ordered": null, // 
+    "schema": null,
+    "ordered": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OrderedMetrics;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**discoveryDiscoverAssets**](DiscoveryApi#discoverydiscoverassets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
-[**discoveryDiscoverAssetsHtml**](DiscoveryApi#discoverydiscoverassetshtml) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
-[**discoveryDiscoverSensitives**](DiscoveryApi#discoverydiscoversensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
-[**discoveryDiscoverTagsRelated**](DiscoveryApi#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
+Method | HTTP request
+------------- | -------------
+[**discoveryDiscoverAssets**](DiscoveryApi#discoverydiscoverassets) | **POST** /discovery/discover/assets
+[**discoveryDiscoverAssetsHtml**](DiscoveryApi#discoverydiscoverassetshtml) | **POST** /discovery/discover/assets/html
+[**discoveryDiscoverSensitives**](DiscoveryApi#discoverydiscoversensitives) | **POST** /discovery/discover/sensitives
+[**discoveryDiscoverTagsRelated**](DiscoveryApi#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related
 
 
-## **discoveryDiscoverAssets** Deprecated: 
+## **discoveryDiscoverAssets**
 > DiscoveredAssets discoveryDiscoverAssets()
 
 This is the endpoint used for bulk import. In both cases of the bulk import flow, fragments or files. When we already have \"snippets\" or fragments to discover and now our job is to check if they are actually valid snippets(clustering). Otherwise, we should have a file to parse && snippitize and then run through the clustering.
@@ -18,9 +18,8 @@ This is the endpoint used for bulk import. In both cases of the bulk import flow
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.discoveryDiscoverAssets(body).then((data: DiscoveredAssets) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededDiscoverableAssets** | **SeededDiscoverableAssets**| The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
@@ -46,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**DiscoveredAssets**
+[**DiscoveredAssets**](../models/DiscoveredAssets)
 
 ### HTTP request headers
 
@@ -55,14 +54,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **discoveryDiscoverAssetsHtml** Deprecated: 
+## **discoveryDiscoverAssetsHtml**
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml()
 
 This is the discover discover assets html endpoint. The goal of this endpoint is to either take an iterable of urls and pages(an html string) and extract all the assets from the iterable.
@@ -70,9 +67,8 @@ This is the discover discover assets html endpoint. The goal of this endpoint is
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
@@ -90,7 +86,7 @@ apiInstance.discoveryDiscoverAssetsHtml(body).then((data: DiscoveredHtmlWebpages
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededDiscoverableHtmlWebpages** | **SeededDiscoverableHtmlWebpages**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
@@ -98,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**DiscoveredHtmlWebpages**
+[**DiscoveredHtmlWebpages**](../models/DiscoveredHtmlWebpages)
 
 ### HTTP request headers
 
@@ -107,14 +103,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **discoveryDiscoverSensitives** Deprecated: 
+## **discoveryDiscoverSensitives**
 > DiscoveredSensitives discoveryDiscoverSensitives()
 
 This endpoint will accept an array of text values, and attampt to extract sensitive data out of it.
@@ -122,9 +116,8 @@ This endpoint will accept an array of text values, and attampt to extract sensit
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
@@ -142,7 +135,7 @@ apiInstance.discoveryDiscoverSensitives(body).then((data: DiscoveredSensitives) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededDiscoverableSensitives** | **SeededDiscoverableSensitives**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
@@ -150,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**DiscoveredSensitives**
+[**DiscoveredSensitives**](../models/DiscoveredSensitives)
 
 ### HTTP request headers
 
@@ -159,13 +152,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **discoveryDiscoverTagsRelated** Deprecated: 
+## **discoveryDiscoverTagsRelated**
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated()
 
 This will take in a tag or multiple tags and return all the tags that are related to the tag or tag provide in the body.
@@ -173,9 +164,8 @@ This will take in a tag or multiple tags and return all the tags that are relate
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.DiscoveryApi(configuration);
 
@@ -193,7 +183,7 @@ apiInstance.discoveryDiscoverTagsRelated(body).then((data: DiscoveredRelatedTags
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededDiscoverableRelatedTags** | **SeededDiscoverableRelatedTags**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
@@ -201,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**DiscoveredRelatedTags**
+[**DiscoveredRelatedTags**](../models/DiscoveredRelatedTags)
 
 ### HTTP request headers
 
@@ -210,11 +200,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

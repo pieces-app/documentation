@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**viewed** | **string** | https://en.wikipedia.org/wiki/ISO_8601#Time_intervals | [default to undefined]
-**touched** | **boolean** | If the user touched or panned over the asset. | [optional] [default to false]
-**scrolled** | **boolean** | If the user scrolled over the asset. | [optional] [default to false]
+Name | Type
+------------ | -------------
+**viewed** | **string**
+**touched** | **boolean**
+**scrolled** | **boolean**
 
 ## Example
 
 ```typescript
-import { InteractedAssetInteractions } from '';
+import { InteractedAssetInteractions } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: InteractedAssetInteractions = {
-    "viewed": null, // https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
-    "touched": null, // If the user touched or panned over the asset.
-    "scrolled": null, // If the user scrolled over the asset.
+    "viewed": null,
+    "touched": null,
+    "scrolled": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as InteractedAssetInteractions;
 console.log(exampleParsed);
 ```
-
-
 
 

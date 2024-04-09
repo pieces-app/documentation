@@ -2,36 +2,35 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
-[**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
-[**assetAssociateWorkstreamSummary**](AssetApi#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
-[**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
-[**assetDisassociateWorkstreamSummary**](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
-[**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
-[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | /asset/\{asset\}/scores/increment [POST]
-[**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
-[**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
-[**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
-[**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
-[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | /asset/\{asset\}/export [GET]
-[**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
+Method | HTTP request
+------------- | -------------
+[**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\}
+[**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\}
+[**assetAssociateWorkstreamSummary**](AssetApi#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\}
+[**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\}
+[**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\}
+[**assetDisassociateWorkstreamSummary**](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats
+[**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify
+[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment
+[**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\}
+[**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\}
+[**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities
+[**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations
+[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export
+[**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update
 
 
-## **assetAssociateTag** Deprecated: 
+## **assetAssociateTag**
 > assetAssociateTag()
 
-This endpoint associates a tag with a specified asset. It performs the same action as the tag equivalent.
+Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -49,7 +48,7 @@ apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
@@ -66,24 +65,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetAssociateWebsite** Deprecated: 
+## **assetAssociateWebsite**
 > assetAssociateWebsite()
 
-This endpoint associates a website with an asset. It performs the same action as its website equivalent.
+Associates a website with an asset. It performs the same action as its website equivalent.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -101,7 +97,7 @@ apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
@@ -118,14 +114,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetAssociateWorkstreamSummary** Deprecated: 
+## **assetAssociateWorkstreamSummary**
 > assetAssociateWorkstreamSummary()
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -133,9 +127,8 @@ This will associate a asset with a workstream summary. This will do the same thi
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -153,7 +146,7 @@ apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty respon
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -170,24 +163,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetDisassociateTag** Deprecated: 
+## **assetDisassociateTag**
 > assetDisassociateTag()
 
-This endpoint disassociates a tag from an asset. It performs the same action as the tag equivalent.
+Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -205,7 +195,7 @@ apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -222,24 +212,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetDisassociateWebsite** Deprecated: 
+## **assetDisassociateWebsite**
 > assetDisassociateWebsite()
 
-This endpoint disassociates a website from an asset. It performs the same action as the website equivalent.
+Disassociates a website from an asset. It performs the same action as the website equivalent.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -257,7 +244,7 @@ apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -274,14 +261,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetDisassociateWorkstreamSummary** Deprecated: 
+## **assetDisassociateWorkstreamSummary**
 > assetDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -289,9 +274,8 @@ This will enable us to disassociate an asset from a workstream summary. This wil
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -309,7 +293,7 @@ apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty res
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
@@ -326,24 +310,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetFormats** Deprecated: 
+## **assetFormats**
 > Formats assetFormats()
 
-This endpoint retrieves the formats available for a specified asset.
+Retrieves the formats available for a specified asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -361,7 +342,7 @@ apiInstance.assetFormats(body).then((data: Formats) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -369,7 +350,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Formats**
+[**Formats**](../models/Formats)
 
 ### HTTP request headers
 
@@ -378,23 +359,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetReclassify** Deprecated: 
+## **assetReclassify**
 > Asset assetReclassify()
 
-This endpoint updates the classification of an asset to the appropriate category.
+Retrieves the formats available for a specified asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -412,7 +390,7 @@ apiInstance.assetReclassify(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **assetReclassification** | **AssetReclassification**| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -420,7 +398,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -429,23 +407,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetScoresIncrement** Deprecated: 
+## **assetScoresIncrement**
 > assetScoresIncrement()
 
-This endpoint increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
+Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -463,7 +438,7 @@ apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -480,24 +455,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetSnapshot** Deprecated: 
+## **assetSnapshot**
 > Asset assetSnapshot()
 
-This endpoint retrieves the snapshot of a specific asset.
+Retrieves the snapshot of a specific asset
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -515,7 +487,7 @@ apiInstance.assetSnapshot(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -523,7 +495,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -532,24 +504,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-
-
-## **assetSnapshotPost** Deprecated: 
+## **assetSnapshotPost**
 > Asset assetSnapshotPost()
 
-This endpoint retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
+Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -569,7 +538,7 @@ apiInstance.assetSnapshotPost(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededAccessor** | **SeededAccessor**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -578,7 +547,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -587,23 +556,20 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **assetSpecificAssetActivities** Deprecated: 
+## **assetSpecificAssetActivities**
 > Activities assetSpecificAssetActivities()
 
-This endpoint retrieves activity events specific to the given asset.
+Retrieves activity events specific to the given asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -621,7 +587,7 @@ apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -629,7 +595,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Activities**
+[**Activities**](../models/Activities)
 
 ### HTTP request headers
 
@@ -638,24 +604,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetSpecificAssetConversations** Deprecated: 
+## **assetSpecificAssetConversations**
 > Conversations assetSpecificAssetConversations()
 
-This endpoint retrieves conversations specific to the given asset.
+Retrieves conversations specific to the given asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -673,7 +636,7 @@ apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -681,7 +644,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Conversations**
+[**Conversations**](../models/Conversations)
 
 ### HTTP request headers
 
@@ -690,24 +653,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetSpecificAssetExport** Deprecated: 
+## **assetSpecificAssetExport**
 > ExportedAsset assetSpecificAssetExport()
 
-This endpoint retrieves an export version of the specified asset.
+Retrieves an export version of the specified asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -725,7 +685,7 @@ apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **exportType** | [**&#39;HTML&#39; | &#39;MD&#39;**]**Array\<&#39;HTML&#39; &#124; &#39;MD&#39;\>** | This specifies the type of export the user wants. | defaults to undefined
@@ -733,7 +693,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**ExportedAsset**
+[**ExportedAsset**](../models/ExportedAsset)
 
 ### HTTP request headers
 
@@ -742,24 +702,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **assetUpdate** Deprecated: 
+## **assetUpdate**
 > Asset assetUpdate()
 
-This endpoint will accept an Asset that the user wants to update, and will return the a full Asset that was updated!
+Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AssetApi(configuration);
 
@@ -777,7 +734,7 @@ apiInstance.assetUpdate(body).then((data: Asset) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | **Asset**| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -785,7 +742,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Asset**
+[**Asset**](../models/Asset)
 
 ### HTTP request headers
 
@@ -794,10 +751,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

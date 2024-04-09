@@ -5,22 +5,22 @@ This is the target that was sent to pieces. This will return the string that rep
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**seed** | [**SeededConnectorCreation**](SeededConnectorCreation) |  | [default to undefined]
-**vector** | **number** | This is the vector representation of this target that we generated. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**seed** | [**SeededConnectorCreation**](SeededConnectorCreation)
+**vector** | **number**
 
 ## Example
 
 ```typescript
-import { SuggestionTarget } from '';
+import { SuggestionTarget } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SuggestionTarget = {
-    "schema": null, // 
-    "seed": null, // 
-    "vector": null, // This is the vector representation of this target that we generated.
+    "schema": null,
+    "seed": null,
+    "vector": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SuggestionTarget;
 console.log(exampleParsed);
 ```
-
-
 
 

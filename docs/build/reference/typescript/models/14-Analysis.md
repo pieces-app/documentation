@@ -5,26 +5,26 @@ This the the MlAnalysis Object, that will go on a format.  this will hold all th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**code** | [**CodeAnalysis**](CodeAnalysis) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**format** | **string** | this is a reference to the format that it belongs too. | [default to undefined]
-**image** | [**ImageAnalysis**](ImageAnalysis) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**code** | [**CodeAnalysis**](CodeAnalysis)
+**id** | **string**
+**format** | **string**
+**image** | [**ImageAnalysis**](ImageAnalysis)
 
 ## Example
 
 ```typescript
-import { Analysis } from '';
+import { Analysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Analysis = {
-    "schema": null, // 
-    "code": null, // 
-    "id": null, // 
-    "format": null, // this is a reference to the format that it belongs too.
-    "image": null, // 
+    "schema": null,
+    "code": null,
+    "id": null,
+    "format": null,
+    "image": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Analysis;
 console.log(exampleParsed);
 ```
-
-
 
 

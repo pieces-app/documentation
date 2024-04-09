@@ -5,24 +5,24 @@ This will the the Request body of the Request Endpoint.  Reuse will not be requi
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**save** | **boolean** | This will just be a simple boolean here that will say if the use should save the asset or not. | [default to undefined]
-**reuse** | [**ReuseReaction**](ReuseReaction) |  | [optional] [default to undefined]
-**seed** | [**SeededConnectorCreation**](SeededConnectorCreation) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**save** | **boolean**
+**reuse** | [**ReuseReaction**](ReuseReaction)
+**seed** | [**SeededConnectorCreation**](SeededConnectorCreation)
 
 ## Example
 
 ```typescript
-import { Reaction } from '';
+import { Reaction } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Reaction = {
-    "schema": null, // 
-    "save": null, // This will just be a simple boolean here that will say if the use should save the asset or not.
-    "reuse": null, // 
-    "seed": null, // 
+    "schema": null,
+    "save": null,
+    "reuse": null,
+    "seed": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Reaction;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,24 +5,24 @@ Numbers related to search results
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**fuzzy** | **number** | Total number of fuzzy results | [optional] [default to undefined]
-**exact** | **number** | Total number of exact results | [optional] [default to undefined]
-**assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] [default to undefined]
-**space** | [**Space**](Space) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**fuzzy** | **number**
+**exact** | **number**
+**assets** | [**FlattenedAssets**](FlattenedAssets)
+**space** | [**Space**](Space)
 
 ## Example
 
 ```typescript
-import { TrackedAssetsEventSearchMetadataResults } from '';
+import { TrackedAssetsEventSearchMetadataResults } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetsEventSearchMetadataResults = {
-    "fuzzy": null, // Total number of fuzzy results
-    "exact": null, // Total number of exact results
-    "assets": null, // 
-    "space": null, // 
+    "fuzzy": null,
+    "exact": null,
+    "assets": null,
+    "space": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetsEventSearchMetadataResults;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,24 +5,24 @@ This is a model that represents a generic event that we may want to track in rel
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**format** | [**TrackedFormat**](TrackedFormat) |  | [default to undefined]
-**identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs) |  | [default to undefined]
-**metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**format** | [**TrackedFormat**](TrackedFormat)
+**identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs)
+**metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata)
 
 ## Example
 
 ```typescript
-import { TrackedFormatEvent } from '';
+import { TrackedFormatEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedFormatEvent = {
-    "schema": null, // 
-    "format": null, // 
-    "identifierDescriptionPair": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "format": null,
+    "identifierDescriptionPair": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedFormatEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

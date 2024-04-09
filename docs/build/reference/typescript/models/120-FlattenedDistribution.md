@@ -4,32 +4,32 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**share** | **string** | This is the UUId of the share. | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**mailgun** | [**MailgunDistribution**](MailgunDistribution) |  | [optional] [default to undefined]
-**github** | [**GitHubDistribution**](GitHubDistribution) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**share** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**mailgun** | [**MailgunDistribution**](MailgunDistribution)
+**github** | [**GitHubDistribution**](GitHubDistribution)
 
 ## Example
 
 ```typescript
-import { FlattenedDistribution } from '';
+import { FlattenedDistribution } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedDistribution = {
-    "schema": null, // 
-    "id": null, // 
-    "share": null, // This is the UUId of the share.
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
-    "mailgun": null, // 
-    "github": null, // 
+    "schema": null,
+    "id": null,
+    "share": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
+    "mailgun": null,
+    "github": null,
 };
 
 console.log(example);
@@ -42,7 +42,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedDistribution;
 console.log(exampleParsed);
 ```
-
-
 
 

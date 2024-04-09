@@ -5,40 +5,40 @@ This is the percursor to a fully referenced Annotation.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**asset** | **string** |  | [optional] [default to undefined]
-**person** | **string** |  | [optional] [default to undefined]
-**type** | [**AnnotationTypeEnum**](AnnotationTypeEnum) |  | [default to undefined]
-**text** | **string** | This is the text of the annotation. | [default to undefined]
-**model** | **string** |  | [optional] [default to undefined]
-**pseudo** | **boolean** |  | [optional] [default to undefined]
-**favorited** | **boolean** |  | [optional] [default to undefined]
-**anchor** | **string** |  | [optional] [default to undefined]
-**conversation** | **string** |  | [optional] [default to undefined]
-**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**asset** | **string**
+**person** | **string**
+**type** | [**AnnotationTypeEnum**](AnnotationTypeEnum)
+**text** | **string**
+**model** | **string**
+**pseudo** | **boolean**
+**favorited** | **boolean**
+**anchor** | **string**
+**conversation** | **string**
+**messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
 
 ## Example
 
 ```typescript
-import { SeededAnnotation } from '';
+import { SeededAnnotation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAnnotation = {
-    "schema": null, // 
-    "mechanism": null, // 
-    "asset": null, // 
-    "person": null, // 
-    "type": null, // 
-    "text": null, // This is the text of the annotation.
-    "model": null, // 
-    "pseudo": null, // 
-    "favorited": null, // 
-    "anchor": null, // 
-    "conversation": null, // 
-    "messages": null, // 
+    "schema": null,
+    "mechanism": null,
+    "asset": null,
+    "person": null,
+    "type": null,
+    "text": null,
+    "model": null,
+    "pseudo": null,
+    "favorited": null,
+    "anchor": null,
+    "conversation": null,
+    "messages": null,
 };
 
 console.log(example);
@@ -51,7 +51,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAnnotation;
 console.log(exampleParsed);
 ```
-
-
 
 

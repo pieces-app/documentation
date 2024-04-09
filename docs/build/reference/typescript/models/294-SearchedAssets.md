@@ -5,24 +5,24 @@ This is a modle that will return fro mthe search endpoint that will just contain
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SearchedAsset&gt;**](SearchedAsset) |  | [default to undefined]
-**suggested** | **number** | the number of fuzzy/suggested search results. | [default to undefined]
-**exact** | **number** | the number of exact results | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SearchedAsset&gt;**](SearchedAsset)
+**suggested** | **number**
+**exact** | **number**
 
 ## Example
 
 ```typescript
-import { SearchedAssets } from '';
+import { SearchedAssets } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SearchedAssets = {
-    "schema": null, // 
-    "iterable": null, // 
-    "suggested": null, // the number of fuzzy/suggested search results.
-    "exact": null, // the number of exact results
+    "schema": null,
+    "iterable": null,
+    "suggested": null,
+    "exact": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SearchedAssets;
 console.log(exampleParsed);
 ```
-
-
 
 

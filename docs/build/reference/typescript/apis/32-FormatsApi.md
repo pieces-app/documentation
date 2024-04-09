@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**formatsSnapshot**](FormatsApi#formatssnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
-[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
+Method | HTTP request
+------------- | -------------
+[**formatsSnapshot**](FormatsApi#formatssnapshot) | **GET** /formats
+[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\}
 
 
-## **formatsSnapshot** Deprecated: 
+## **formatsSnapshot**
 > Formats formatsSnapshot()
 
 Get all of your formats for a given user.
@@ -16,9 +16,8 @@ Get all of your formats for a given user.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatsApi(configuration);
 
@@ -34,14 +33,14 @@ apiInstance.formatsSnapshot(body).then((data: Formats) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Formats**
+[**Formats**](../models/Formats)
 
 ### HTTP request headers
 
@@ -50,13 +49,11 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 
-
-
-## **formatsSpecificFormatSnapshot** Deprecated: 
+## **formatsSpecificFormatSnapshot**
 > Format formatsSpecificFormatSnapshot()
 
 Request a specific format when given a id (uuid in path params)
@@ -64,9 +61,8 @@ Request a specific format when given a id (uuid in path params)
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.FormatsApi(configuration);
 
@@ -84,7 +80,7 @@ apiInstance.formatsSpecificFormatSnapshot(body).then((data: Format) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **format** | [**string**] | The id (uuid) for a specific format. | defaults to undefined
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -92,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Format**
+[**Format**](../models/Format)
 
 ### HTTP request headers
 
@@ -101,10 +97,8 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
-
-
 
 

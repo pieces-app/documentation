@@ -5,30 +5,30 @@ A relationship expresses a graph of like types, to build a relationship graph.  
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **string** |  | [default to undefined]
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**embeddings** | [**Embeddings**](Embeddings) |  | [default to undefined]
-**edges** | [**Edges**](Edges) |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**id** | **string**
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**embeddings** | [**Embeddings**](Embeddings)
+**edges** | [**Edges**](Edges)
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { Relationship } from '';
+import { Relationship } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Relationship = {
-    "id": null, // 
-    "schema": null, // 
-    "embeddings": null, // 
-    "edges": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "deleted": null, // 
+    "id": null,
+    "schema": null,
+    "embeddings": null,
+    "edges": null,
+    "created": null,
+    "updated": null,
+    "deleted": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Relationship;
 console.log(exampleParsed);
 ```
-
-
 
 

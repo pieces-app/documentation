@@ -4,30 +4,30 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**statistics** | [**TLPCodeFragmentStatistics**](TLPCodeFragmentStatistics) |  | [optional] [default to undefined]
-**classification** | [**TLPCodeFragmentClassification**](TLPCodeFragmentClassification) |  | [optional] [default to undefined]
-**reclassification** | [**TLPCodeFragmentReclassification**](TLPCodeFragmentReclassification) |  | [optional] [default to undefined]
-**suggested** | [**TLPCodeSnippetSuggestedInteractions**](TLPCodeSnippetSuggestedInteractions) |  | [optional] [default to undefined]
-**tagify** | [**TLPCodeFragmentTagify**](TLPCodeFragmentTagify) |  | [optional] [default to undefined]
-**description** | [**TLPCodeFragmentDescription**](TLPCodeFragmentDescription) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**statistics** | [**TLPCodeFragmentStatistics**](TLPCodeFragmentStatistics)
+**classification** | [**TLPCodeFragmentClassification**](TLPCodeFragmentClassification)
+**reclassification** | [**TLPCodeFragmentReclassification**](TLPCodeFragmentReclassification)
+**suggested** | [**TLPCodeSnippetSuggestedInteractions**](TLPCodeSnippetSuggestedInteractions)
+**tagify** | [**TLPCodeFragmentTagify**](TLPCodeFragmentTagify)
+**description** | [**TLPCodeFragmentDescription**](TLPCodeFragmentDescription)
 
 ## Example
 
 ```typescript
-import { TLPCodeSnippetAnalytics } from '';
+import { TLPCodeSnippetAnalytics } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeSnippetAnalytics = {
-    "schema": null, // 
-    "statistics": null, // 
-    "classification": null, // 
-    "reclassification": null, // 
-    "suggested": null, // 
-    "tagify": null, // 
-    "description": null, // 
+    "schema": null,
+    "statistics": null,
+    "classification": null,
+    "reclassification": null,
+    "suggested": null,
+    "tagify": null,
+    "description": null,
 };
 
 console.log(example);
@@ -40,7 +40,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeSnippetAnalytics;
 console.log(exampleParsed);
 ```
-
-
 
 

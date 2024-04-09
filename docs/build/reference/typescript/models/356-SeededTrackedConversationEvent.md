@@ -5,24 +5,24 @@ This is a pre-created(seed) TrackedConversationEvent
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**TrackedConversationEventIdentifierDescriptionPairs**](TrackedConversationEventIdentifierDescriptionPairs) |  | [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [default to undefined]
-**metadata** | [**TrackedConversationEventMetadata**](TrackedConversationEventMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**identifierDescriptionPair** | [**TrackedConversationEventIdentifierDescriptionPairs**](TrackedConversationEventIdentifierDescriptionPairs)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
+**metadata** | [**TrackedConversationEventMetadata**](TrackedConversationEventMetadata)
 
 ## Example
 
 ```typescript
-import { SeededTrackedConversationEvent } from '';
+import { SeededTrackedConversationEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedConversationEvent = {
-    "schema": null, // 
-    "identifierDescriptionPair": null, // 
-    "conversation": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "identifierDescriptionPair": null,
+    "conversation": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedConversationEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

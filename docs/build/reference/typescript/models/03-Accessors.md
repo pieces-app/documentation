@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Accessor&gt;**](Accessor) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Accessor&gt;**](Accessor)
 
 ## Example
 
 ```typescript
-import { Accessors } from '';
+import { Accessors } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Accessors = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Accessors;
 console.log(exampleParsed);
 ```
-
-
 
 

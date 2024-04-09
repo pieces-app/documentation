@@ -5,20 +5,20 @@ This is a List of MachineLearning Models
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Model&gt;**](Model) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Model&gt;**](Model)
 
 ## Example
 
 ```typescript
-import { Models } from '';
+import { Models } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Models = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Models;
 console.log(exampleParsed);
 ```
-
-
 
 

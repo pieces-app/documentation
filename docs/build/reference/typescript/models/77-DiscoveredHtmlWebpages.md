@@ -5,22 +5,22 @@ Assumption: The iterable will be in the exact same order as it was passed in wit
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;DiscoveredHtmlWebpage&gt;**](DiscoveredHtmlWebpage) |  | [default to undefined]
-**application** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;DiscoveredHtmlWebpage&gt;**](DiscoveredHtmlWebpage)
+**application** | **string**
 
 ## Example
 
 ```typescript
-import { DiscoveredHtmlWebpages } from '';
+import { DiscoveredHtmlWebpages } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: DiscoveredHtmlWebpages = {
-    "schema": null, // 
-    "iterable": null, // 
-    "application": null, // 
+    "schema": null,
+    "iterable": null,
+    "application": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as DiscoveredHtmlWebpages;
 console.log(exampleParsed);
 ```
-
-
 
 

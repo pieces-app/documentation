@@ -5,22 +5,22 @@ if scoped is provided will let us know what level of permission(access) this spe
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**scoped** | [**PersonAccessScopedEnum**](PersonAccessScopedEnum) |  | [optional] [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**scoped** | [**PersonAccessScopedEnum**](PersonAccessScopedEnum)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { PersonAccess } from '';
+import { PersonAccess } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PersonAccess = {
-    "schema": null, // 
-    "scoped": null, // 
-    "deleted": null, // 
+    "schema": null,
+    "scoped": null,
+    "deleted": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PersonAccess;
 console.log(exampleParsed);
 ```
-
-
 
 

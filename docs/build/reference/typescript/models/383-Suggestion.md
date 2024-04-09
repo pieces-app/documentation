@@ -5,28 +5,28 @@ This is the model return by the connector\'s suggest endpoint.  Note: assets are
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**reuse** | [**ReuseSuggestion**](ReuseSuggestion) |  | [default to undefined]
-**save** | [**SaveSuggestion**](SaveSuggestion) |  | [default to undefined]
-**target** | [**SuggestionTarget**](SuggestionTarget) |  | [default to undefined]
-**assets** | [**Assets**](Assets) |  | [default to undefined]
-**distribution** | **\{ [key: string]: number; \}** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**reuse** | [**ReuseSuggestion**](ReuseSuggestion)
+**save** | [**SaveSuggestion**](SaveSuggestion)
+**target** | [**SuggestionTarget**](SuggestionTarget)
+**assets** | [**Assets**](Assets)
+**distribution** | **\{ [key: string]: number; \}**
 
 ## Example
 
 ```typescript
-import { Suggestion } from '';
+import { Suggestion } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Suggestion = {
-    "schema": null, // 
-    "reuse": null, // 
-    "save": null, // 
-    "target": null, // 
-    "assets": null, // 
-    "distribution": null, // 
+    "schema": null,
+    "reuse": null,
+    "save": null,
+    "target": null,
+    "assets": null,
+    "distribution": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Suggestion;
 console.log(exampleParsed);
 ```
-
-
 
 

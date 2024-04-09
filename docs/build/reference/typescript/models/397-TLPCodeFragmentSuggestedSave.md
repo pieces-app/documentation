@@ -5,34 +5,34 @@ Model for monitoring and evaluating the suggested save feature
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**asset** | **string** |  | [default to undefined]
-**user** | **string** |  | [default to undefined]
-**model** | **string** |  | [default to undefined]
-**created** | **string** |  | [default to undefined]
-**os** | **string** |  | [default to undefined]
-**context** | **string** | context from where suggestion came from | [optional] [default to undefined]
-**score** | **number** | maximum similarity score | [optional] [default to undefined]
-**candidates** | **number** | number of candidates | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**asset** | **string**
+**user** | **string**
+**model** | **string**
+**created** | **string**
+**os** | **string**
+**context** | **string**
+**score** | **number**
+**candidates** | **number**
 
 ## Example
 
 ```typescript
-import { TLPCodeFragmentSuggestedSave } from '';
+import { TLPCodeFragmentSuggestedSave } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TLPCodeFragmentSuggestedSave = {
-    "schema": null, // 
-    "asset": null, // 
-    "user": null, // 
-    "model": null, // 
-    "created": null, // 
-    "os": null, // 
-    "context": null, // context from where suggestion came from
-    "score": null, // maximum similarity score
-    "candidates": null, // number of candidates
+    "schema": null,
+    "asset": null,
+    "user": null,
+    "model": null,
+    "created": null,
+    "os": null,
+    "context": null,
+    "score": null,
+    "candidates": null,
 };
 
 console.log(example);
@@ -45,7 +45,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentSuggestedSave;
 console.log(exampleParsed);
 ```
-
-
 
 

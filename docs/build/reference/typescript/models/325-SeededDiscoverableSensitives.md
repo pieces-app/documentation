@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;SeededDiscoverableSensitive&gt;**](SeededDiscoverableSensitive) |  | [default to undefined]
-**application** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;SeededDiscoverableSensitive&gt;**](SeededDiscoverableSensitive)
+**application** | **string**
 
 ## Example
 
 ```typescript
-import { SeededDiscoverableSensitives } from '';
+import { SeededDiscoverableSensitives } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDiscoverableSensitives = {
-    "schema": null, // 
-    "iterable": null, // 
-    "application": null, // 
+    "schema": null,
+    "iterable": null,
+    "application": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableSensitives;
 console.log(exampleParsed);
 ```
-
-
 
 

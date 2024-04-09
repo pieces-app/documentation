@@ -5,20 +5,20 @@ output for the /assets/search [POST]
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**results** | [**SearchedAssets**](SearchedAssets) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**results** | [**SearchedAssets**](SearchedAssets)
 
 ## Example
 
 ```typescript
-import { AssetsSearchWithFiltersOutput } from '';
+import { AssetsSearchWithFiltersOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetsSearchWithFiltersOutput = {
-    "schema": null, // 
-    "results": null, // 
+    "schema": null,
+    "results": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetsSearchWithFiltersOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

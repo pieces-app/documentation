@@ -5,26 +5,26 @@ This is a generic model used, to wrap a seed, as well as give an identifier used
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [optional] [default to undefined]
-**seed** | [**Seed**](Seed) |  | [optional] [default to undefined]
-**path** | **string** | This is an optional file path | [optional] [default to undefined]
-**asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**seed** | [**Seed**](Seed)
+**path** | **string**
+**asset** | [**ReferencedAsset**](ReferencedAsset)
 
 ## Example
 
 ```typescript
-import { RelevantQGPTSeed } from '';
+import { RelevantQGPTSeed } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: RelevantQGPTSeed = {
-    "schema": null, // 
-    "id": null, // 
-    "seed": null, // 
-    "path": null, // This is an optional file path
-    "asset": null, // 
+    "schema": null,
+    "id": null,
+    "seed": null,
+    "path": null,
+    "asset": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as RelevantQGPTSeed;
 console.log(exampleParsed);
 ```
-
-
 
 

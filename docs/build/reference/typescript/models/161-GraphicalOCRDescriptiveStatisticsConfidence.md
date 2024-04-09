@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**mean** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**mean** | **string**
 
 ## Example
 
 ```typescript
-import { GraphicalOCRDescriptiveStatisticsConfidence } from '';
+import { GraphicalOCRDescriptiveStatisticsConfidence } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalOCRDescriptiveStatisticsConfidence = {
-    "mean": null, // 
+    "mean": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalOCRDescriptiveStatisticsConfidence;
 console.log(exampleParsed);
 ```
-
-
 
 

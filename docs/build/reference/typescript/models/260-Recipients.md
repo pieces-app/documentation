@@ -5,20 +5,20 @@ This an iterable of People that are attached to a specific distribution ie, slac
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;PersonBasicType&gt;**](PersonBasicType) |  | [default to undefined]
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;PersonBasicType&gt;**](PersonBasicType)
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { Recipients } from '';
+import { Recipients } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Recipients = {
-    "iterable": null, // 
-    "schema": null, // 
+    "iterable": null,
+    "schema": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Recipients;
 console.log(exampleParsed);
 ```
-
-
 
 

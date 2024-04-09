@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;SeededAssetTag&gt;**](SeededAssetTag) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;SeededAssetTag&gt;**](SeededAssetTag)
 
 ## Example
 
 ```typescript
-import { SeededAssetTags } from '';
+import { SeededAssetTags } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetTags = {
-    "iterable": null, // 
+    "iterable": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetTags;
 console.log(exampleParsed);
 ```
-
-
 
 

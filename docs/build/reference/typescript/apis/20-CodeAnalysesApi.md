@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
+Method | HTTP request
+------------- | -------------
+[**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses
 
 
-## **codeAnalysesSnapshot** Deprecated: 
+## **codeAnalysesSnapshot**
 > CodeAnalyses codeAnalysesSnapshot()
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an analysis.
@@ -15,9 +15,8 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.CodeAnalysesApi(configuration);
 
@@ -32,7 +31,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**CodeAnalyses**
+[**CodeAnalyses**](../models/CodeAnalyses)
 
 ### HTTP request headers
 
@@ -41,11 +40,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

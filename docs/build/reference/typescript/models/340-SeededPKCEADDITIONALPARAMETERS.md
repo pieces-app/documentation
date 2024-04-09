@@ -5,20 +5,20 @@ Append any additional parameter to the end of your request, and it will be sent 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**accessType** | **string** |  | [optional] [default to undefined]
-**display** | **string** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**accessType** | **string**
+**display** | **string**
 
 ## Example
 
 ```typescript
-import { SeededPKCEADDITIONALPARAMETERS } from '';
+import { SeededPKCEADDITIONALPARAMETERS } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededPKCEADDITIONALPARAMETERS = {
-    "accessType": null, // 
-    "display": null, // 
+    "accessType": null,
+    "display": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededPKCEADDITIONALPARAMETERS;
 console.log(exampleParsed);
 ```
-
-
 
 

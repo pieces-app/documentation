@@ -5,22 +5,22 @@ If an asset was created from a clipboard event
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**keyboard** | **boolean** | Whether the clipboard was utilized via the keyboard | [optional] [default to undefined]
-**interaction** | **boolean** | Whether the clipboard was extracted through a button click | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**keyboard** | **boolean**
+**interaction** | **boolean**
 
 ## Example
 
 ```typescript
-import { TrackedAssetEventCreationMetadataClipboard } from '';
+import { TrackedAssetEventCreationMetadataClipboard } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetEventCreationMetadataClipboard = {
-    "schema": null, // 
-    "keyboard": null, // Whether the clipboard was utilized via the keyboard
-    "interaction": null, // Whether the clipboard was extracted through a button click
+    "schema": null,
+    "keyboard": null,
+    "interaction": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventCreationMetadataClipboard;
 console.log(exampleParsed);
 ```
-
-
 
 

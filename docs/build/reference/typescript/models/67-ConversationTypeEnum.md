@@ -5,13 +5,13 @@ This is a type of conversation, for now just COPILOT.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ConversationTypeEnum } from '';
+import { ConversationTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ConversationTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ConversationTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

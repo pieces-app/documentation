@@ -5,22 +5,22 @@ This is optional metatdata attached to a sensitive piece of data.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**match** | [**TextMatch**](TextMatch) |  | [optional] [default to undefined]
-**entropy** | **number** | entropy of the sensitive | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**match** | [**TextMatch**](TextMatch)
+**entropy** | **number**
 
 ## Example
 
 ```typescript
-import { SensitiveMetadata } from '';
+import { SensitiveMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SensitiveMetadata = {
-    "schema": null, // 
-    "match": null, // 
-    "entropy": null, // entropy of the sensitive
+    "schema": null,
+    "match": null,
+    "entropy": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SensitiveMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

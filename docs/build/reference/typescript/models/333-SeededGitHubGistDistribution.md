@@ -5,26 +5,26 @@ This is the minimum information needed to distribute a Piece to a Gist.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**recipients** | [**Recipients**](Recipients) |  | [optional] [default to undefined]
-**_public** | **boolean** | we will default to true | [optional] [default to undefined]
-**description** | **string** | This is the description of the Gist Distribution | [optional] [default to undefined]
-**name** | **string** | This is the name of the gist you will add. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**recipients** | [**Recipients**](Recipients)
+**_public** | **boolean**
+**description** | **string**
+**name** | **string**
 
 ## Example
 
 ```typescript
-import { SeededGitHubGistDistribution } from '';
+import { SeededGitHubGistDistribution } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededGitHubGistDistribution = {
-    "schema": null, // 
-    "recipients": null, // 
-    "_public": null, // we will default to true
-    "description": null, // This is the description of the Gist Distribution
-    "name": null, // This is the name of the gist you will add.
+    "schema": null,
+    "recipients": null,
+    "_public": null,
+    "description": null,
+    "name": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededGitHubGistDistribution;
 console.log(exampleParsed);
 ```
-
-
 
 

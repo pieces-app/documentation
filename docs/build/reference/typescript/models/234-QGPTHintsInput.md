@@ -5,26 +5,26 @@ Query is your hints question. Relevant is the relevant snippets. Answer is the p
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**query** | **string** |  | [optional] [default to undefined]
-**answer** | [**QGPTQuestionAnswer**](QGPTQuestionAnswer) |  | [optional] [default to undefined]
-**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | [default to undefined]
-**application** | **string** | optional application id | [optional] [default to undefined]
-**model** | **string** | optional model id | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**query** | **string**
+**answer** | [**QGPTQuestionAnswer**](QGPTQuestionAnswer)
+**relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds)
+**application** | **string**
+**model** | **string**
 
 ## Example
 
 ```typescript
-import { QGPTHintsInput } from '';
+import { QGPTHintsInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTHintsInput = {
-    "query": null, // 
-    "answer": null, // 
-    "relevant": null, // 
-    "application": null, // optional application id
-    "model": null, // optional model id
+    "query": null,
+    "answer": null,
+    "relevant": null,
+    "application": null,
+    "model": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTHintsInput;
 console.log(exampleParsed);
 ```
-
-
 
 

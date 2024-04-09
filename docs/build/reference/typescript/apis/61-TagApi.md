@@ -2,18 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
-[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
-[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
-[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
-[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | \&#39;/tag/\{tag\}/scores/increment\&#39; [POST]
-[**tagUpdate**](TagApi#tagupdate) | **POST** /tag/update | /tag/update [POST]
-[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
+Method | HTTP request
+------------- | -------------
+[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\}
+[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\}
+[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\}
+[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\}
+[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment
+[**tagUpdate**](TagApi#tagupdate) | **POST** /tag/update
+[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\}
 
 
-## **tagAssociateAsset** Deprecated: 
+## **tagAssociateAsset**
 > tagAssociateAsset()
 
 This will associate a tag with a asset.
@@ -21,9 +21,8 @@ This will associate a tag with a asset.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -41,7 +40,7 @@ apiInstance.tagAssociateAsset(body).then((data: void (empty response body)) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
@@ -58,14 +57,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagAssociatePerson** Deprecated: 
+## **tagAssociatePerson**
 > tagAssociatePerson()
 
 This will associate a tag with a person.
@@ -73,9 +70,8 @@ This will associate a tag with a person.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -93,7 +89,7 @@ apiInstance.tagAssociatePerson(body).then((data: void (empty response body)) => 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
@@ -110,14 +106,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagDisassociateAsset** Deprecated: 
+## **tagDisassociateAsset**
 > tagDisassociateAsset()
 
 This will enable us to dissassociate a tag from a asset.
@@ -125,9 +119,8 @@ This will enable us to dissassociate a tag from a asset.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -145,7 +138,7 @@ apiInstance.tagDisassociateAsset(body).then((data: void (empty response body)) =
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -162,14 +155,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagDisassociatePerson** Deprecated: 
+## **tagDisassociatePerson**
 > tagDisassociatePerson()
 
 This will enable us to dissassociate a tag from a person.
@@ -177,9 +168,8 @@ This will enable us to dissassociate a tag from a person.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -197,7 +187,7 @@ apiInstance.tagDisassociatePerson(body).then((data: void (empty response body)) 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
@@ -214,14 +204,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagScoresIncrement** Deprecated: 
+## **tagScoresIncrement**
 > tagScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -229,9 +217,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -249,7 +236,7 @@ apiInstance.tagScoresIncrement(body).then((data: void (empty response body)) => 
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **tag** | [**string**] | tag id | defaults to undefined
@@ -266,14 +253,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagUpdate** Deprecated: 
+## **tagUpdate**
 > Tag tagUpdate()
 
 This will update a specific tag.
@@ -281,9 +266,8 @@ This will update a specific tag.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -301,7 +285,7 @@ apiInstance.tagUpdate(body).then((data: Tag) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | **Tag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -309,7 +293,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Tag**
+[**Tag**](../models/Tag)
 
 ### HTTP request headers
 
@@ -318,14 +302,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **tagsSpecificTagSnapshot** Deprecated: 
+## **tagsSpecificTagSnapshot**
 > Tag tagsSpecificTagSnapshot()
 
 This will get a specific tag.
@@ -333,9 +315,8 @@ This will get a specific tag.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.TagApi(configuration);
 
@@ -353,7 +334,7 @@ apiInstance.tagsSpecificTagSnapshot(body).then((data: Tag) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -361,7 +342,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Tag**
+[**Tag**](../models/Tag)
 
 ### HTTP request headers
 
@@ -370,11 +351,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | Tag was not found. |  -  |
-
-
 
 

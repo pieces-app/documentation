@@ -5,20 +5,20 @@ This is the outputmodel for /external_provider/api_key/create
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
 ## Example
 
 ```typescript
-import { CreatedExternalProviderApiKey } from '';
+import { CreatedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: CreatedExternalProviderApiKey = {
-    "schema": null, // 
-    "metadata": null, // 
+    "schema": null,
+    "metadata": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as CreatedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

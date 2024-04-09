@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
-[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
-[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
-[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
+Method | HTTP request
+------------- | -------------
+[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
+[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create
+[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
+[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons
 
 
-## **personDisassociateAsset** Deprecated: 
+## **personDisassociateAsset**
 > personDisassociateAsset()
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
@@ -18,9 +18,8 @@ This will update both the asset and the person reference, that will remove a per
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
@@ -38,7 +37,7 @@ apiInstance.personDisassociateAsset(body).then((data: void (empty response body)
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
@@ -55,14 +54,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personsCreateNewPerson** Deprecated: 
+## **personsCreateNewPerson**
 > Person personsCreateNewPerson()
 
 This will create a new person.
@@ -70,9 +67,8 @@ This will create a new person.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
@@ -90,7 +86,7 @@ apiInstance.personsCreateNewPerson(body).then((data: Person) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededPerson** | **SeededPerson**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -98,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Person**
+[**Person**](../models/Person)
 
 ### HTTP request headers
 
@@ -107,14 +103,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personsDeletePerson** Deprecated: 
+## **personsDeletePerson**
 > personsDeletePerson()
 
 This will delete a specific person.
@@ -122,9 +116,8 @@ This will delete a specific person.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
@@ -140,7 +133,7 @@ apiInstance.personsDeletePerson(body).then((data: void (empty response body)) =>
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -156,14 +149,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **personsSnapshot** Deprecated: 
+## **personsSnapshot**
 > Persons personsSnapshot()
 
 This will get a snapshot of all of your people
@@ -171,9 +162,8 @@ This will get a snapshot of all of your people
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.PersonsApi(configuration);
 
@@ -189,14 +179,14 @@ apiInstance.personsSnapshot(body).then((data: Persons) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Persons**
+[**Persons**](../models/Persons)
 
 ### HTTP request headers
 
@@ -205,11 +195,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

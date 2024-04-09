@@ -5,26 +5,26 @@ This is a String representaion of any of these changes.  [NOT IMPLEMENTED] base6
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**raw** | **string** | IMPLEMENTED | [optional] [default to undefined]
-**base64** | **string** | NOT IMPLEMENTED | [optional] [default to undefined]
-**base64Url** | **string** | NOT IMPLEMENTED | [optional] [default to undefined]
-**dataUrl** | **string** | NOT IMPLEMENTED | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**raw** | **string**
+**base64** | **string**
+**base64Url** | **string**
+**dataUrl** | **string**
 
 ## Example
 
 ```typescript
-import { TransferableString } from '';
+import { TransferableString } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TransferableString = {
-    "schema": null, // 
-    "raw": null, // IMPLEMENTED
-    "base64": null, // NOT IMPLEMENTED
-    "base64Url": null, // NOT IMPLEMENTED
-    "dataUrl": null, // NOT IMPLEMENTED
+    "schema": null,
+    "raw": null,
+    "base64": null,
+    "base64Url": null,
+    "dataUrl": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TransferableString;
 console.log(exampleParsed);
 ```
-
-
 
 

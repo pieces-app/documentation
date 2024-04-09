@@ -5,22 +5,22 @@ This is the output model for \"/conversation/\{conversation\}/summarize
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [default to undefined]
-**annotation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**conversation** | [**ReferencedConversation**](ReferencedConversation)
+**annotation** | [**ReferencedAnnotation**](ReferencedAnnotation)
 
 ## Example
 
 ```typescript
-import { ConversationSummarizeOutput } from '';
+import { ConversationSummarizeOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ConversationSummarizeOutput = {
-    "schema": null, // 
-    "conversation": null, // 
-    "annotation": null, // 
+    "schema": null,
+    "conversation": null,
+    "annotation": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ConversationSummarizeOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

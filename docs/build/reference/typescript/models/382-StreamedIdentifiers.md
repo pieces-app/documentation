@@ -5,20 +5,20 @@ This is currently only used within /assets/steam/identifiers && /conversations/s
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;StreamedIdentifier&gt;**](StreamedIdentifier) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;StreamedIdentifier&gt;**](StreamedIdentifier)
 
 ## Example
 
 ```typescript
-import { StreamedIdentifiers } from '';
+import { StreamedIdentifiers } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: StreamedIdentifiers = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as StreamedIdentifiers;
 console.log(exampleParsed);
 ```
-
-
 
 

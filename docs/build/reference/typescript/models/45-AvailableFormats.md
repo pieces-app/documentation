@@ -5,20 +5,20 @@ This is a specific model here used within the SeededAsset that enables us to ret
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Classification&gt;**](Classification) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Classification&gt;**](Classification)
 
 ## Example
 
 ```typescript
-import { AvailableFormats } from '';
+import { AvailableFormats } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AvailableFormats = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AvailableFormats;
 console.log(exampleParsed);
 ```
-
-
 
 

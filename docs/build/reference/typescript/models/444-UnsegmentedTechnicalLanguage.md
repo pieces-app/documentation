@@ -5,20 +5,20 @@ This is the input model for \'/machine_learning/text/technical_language/parsers/
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**value** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**value** | **string**
 
 ## Example
 
 ```typescript
-import { UnsegmentedTechnicalLanguage } from '';
+import { UnsegmentedTechnicalLanguage } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: UnsegmentedTechnicalLanguage = {
-    "schema": null, // 
-    "value": null, // 
+    "schema": null,
+    "value": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as UnsegmentedTechnicalLanguage;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,28 +5,28 @@ This is the data collected during the ocr analysis of an image.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**raw** | [**Format**](Format) |  | [default to undefined]
-**hocr** | [**Format**](Format) |  | [default to undefined]
-**image** | **string** | this is a reference the the imageAnalysis. | [default to undefined]
-**model** | [**Model**](Model) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**raw** | [**Format**](Format)
+**hocr** | [**Format**](Format)
+**image** | **string**
+**model** | [**Model**](Model)
 
 ## Example
 
 ```typescript
-import { OCRAnalysis } from '';
+import { OCRAnalysis } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OCRAnalysis = {
-    "schema": null, // 
-    "id": null, // 
-    "raw": null, // 
-    "hocr": null, // 
-    "image": null, // this is a reference the the imageAnalysis.
-    "model": null, // 
+    "schema": null,
+    "id": null,
+    "raw": null,
+    "hocr": null,
+    "image": null,
+    "model": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OCRAnalysis;
 console.log(exampleParsed);
 ```
-
-
 
 

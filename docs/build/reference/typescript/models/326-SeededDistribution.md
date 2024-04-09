@@ -5,22 +5,22 @@ TODO if we add another distribution add to this, Distribution, and flattenedDist
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**mailgun** | [**MailgunDistribution**](MailgunDistribution) |  | [optional] [default to undefined]
-**github** | [**SeededGitHubDistribution**](SeededGitHubDistribution) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**mailgun** | [**MailgunDistribution**](MailgunDistribution)
+**github** | [**SeededGitHubDistribution**](SeededGitHubDistribution)
 
 ## Example
 
 ```typescript
-import { SeededDistribution } from '';
+import { SeededDistribution } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededDistribution = {
-    "schema": null, // 
-    "mailgun": null, // 
-    "github": null, // 
+    "schema": null,
+    "mailgun": null,
+    "github": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededDistribution;
 console.log(exampleParsed);
 ```
-
-
 
 

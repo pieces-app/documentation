@@ -5,32 +5,32 @@ This is all optional properties around the most basic information around a non-p
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**username** | **string** | username or twitter handle...etc | [optional] [default to undefined]
-**name** | **string** | This is the name of the basic user. | [optional] [default to undefined]
-**picture** | **string** | this is a url picture representation of a user. | [optional] [default to undefined]
-**email** | **string** | an email that was extracted. | [optional] [default to undefined]
-**sourced** | [**ExternallySourcedEnum**](ExternallySourcedEnum) |  | [optional] [default to undefined]
-**url** | **string** | This is a specific url that this basic user came from. | [optional] [default to undefined]
-**mailgun** | [**MailgunMetadata**](MailgunMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**username** | **string**
+**name** | **string**
+**picture** | **string**
+**email** | **string**
+**sourced** | [**ExternallySourcedEnum**](ExternallySourcedEnum)
+**url** | **string**
+**mailgun** | [**MailgunMetadata**](MailgunMetadata)
 
 ## Example
 
 ```typescript
-import { PersonBasicType } from '';
+import { PersonBasicType } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PersonBasicType = {
-    "schema": null, // 
-    "username": null, // username or twitter handle...etc
-    "name": null, // This is the name of the basic user.
-    "picture": null, // this is a url picture representation of a user.
-    "email": null, // an email that was extracted.
-    "sourced": null, // 
-    "url": null, // This is a specific url that this basic user came from.
-    "mailgun": null, // 
+    "schema": null,
+    "username": null,
+    "name": null,
+    "picture": null,
+    "email": null,
+    "sourced": null,
+    "url": null,
+    "mailgun": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PersonBasicType;
 console.log(exampleParsed);
 ```
-
-
 
 

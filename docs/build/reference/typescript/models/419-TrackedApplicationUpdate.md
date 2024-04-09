@@ -5,24 +5,24 @@ This is a model used to track when an Application is Updated
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**current** | [**TrackedApplication**](TrackedApplication) |  | [default to undefined]
-**previous** | [**TrackedApplication**](TrackedApplication) |  | [optional] [default to undefined]
-**user** | [**TrackedUserProfile**](TrackedUserProfile) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**current** | [**TrackedApplication**](TrackedApplication)
+**previous** | [**TrackedApplication**](TrackedApplication)
+**user** | [**TrackedUserProfile**](TrackedUserProfile)
 
 ## Example
 
 ```typescript
-import { TrackedApplicationUpdate } from '';
+import { TrackedApplicationUpdate } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedApplicationUpdate = {
-    "schema": null, // 
-    "current": null, // 
-    "previous": null, // 
-    "user": null, // 
+    "schema": null,
+    "current": null,
+    "previous": null,
+    "user": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedApplicationUpdate;
 console.log(exampleParsed);
 ```
-
-
 
 

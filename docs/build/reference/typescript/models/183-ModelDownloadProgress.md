@@ -5,22 +5,22 @@ This is the model that is sent over our ws for streaming the progress of a model
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**status** | [**ModelDownloadProgressStatusEnum**](ModelDownloadProgressStatusEnum) |  | [optional] [default to undefined]
-**percentage** | **number** | Optionally if the download is in progress you will recieve a download percent(from 0-100). | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**status** | [**ModelDownloadProgressStatusEnum**](ModelDownloadProgressStatusEnum)
+**percentage** | **number**
 
 ## Example
 
 ```typescript
-import { ModelDownloadProgress } from '';
+import { ModelDownloadProgress } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelDownloadProgress = {
-    "schema": null, // 
-    "status": null, // 
-    "percentage": null, // Optionally if the download is in progress you will recieve a download percent(from 0-100).
+    "schema": null,
+    "status": null,
+    "percentage": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelDownloadProgress;
 console.log(exampleParsed);
 ```
-
-
 
 

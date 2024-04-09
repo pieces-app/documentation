@@ -5,18 +5,18 @@ This task is for commenting a bit of code.  This is a class so that we can add o
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { QGPTTaskPipelineForCodeCommentation } from '';
+import { QGPTTaskPipelineForCodeCommentation } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTTaskPipelineForCodeCommentation = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipelineForCodeCommentation;
 console.log(exampleParsed);
 ```
-
-
 
 

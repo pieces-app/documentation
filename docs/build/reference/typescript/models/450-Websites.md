@@ -5,24 +5,24 @@ This is a specific model for related websites to an asset.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;Website&gt;**](Website) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an website id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;Website&gt;**](Website)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { Websites } from '';
+import { Websites } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Websites = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an website id.
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Websites;
 console.log(exampleParsed);
 ```
-
-
 
 

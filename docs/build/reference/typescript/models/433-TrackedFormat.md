@@ -5,30 +5,30 @@ A minimal format to send to Mixpanel
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | The UUID of the format | [default to undefined]
-**classification** | [**Classification**](Classification) |  | [default to undefined]
-**role** | [**Role**](Role) |  | [default to undefined]
-**asset** | **string** | The UUID of the asset associated | [default to undefined]
-**fragment** | **boolean** |  | [default to undefined]
-**file** | **boolean** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**classification** | [**Classification**](Classification)
+**role** | [**Role**](Role)
+**asset** | **string**
+**fragment** | **boolean**
+**file** | **boolean**
 
 ## Example
 
 ```typescript
-import { TrackedFormat } from '';
+import { TrackedFormat } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedFormat = {
-    "schema": null, // 
-    "id": null, // The UUID of the format
-    "classification": null, // 
-    "role": null, // 
-    "asset": null, // The UUID of the asset associated
-    "fragment": null, // 
-    "file": null, // 
+    "schema": null,
+    "id": null,
+    "classification": null,
+    "role": null,
+    "asset": null,
+    "fragment": null,
+    "file": null,
 };
 
 console.log(example);
@@ -41,7 +41,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedFormat;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,18 +5,18 @@ This is used in the QGPT flow as well as within the conversation.  This will let
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**workstreams** | [**FlattenedRanges**](FlattenedRanges) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**workstreams** | [**FlattenedRanges**](FlattenedRanges)
 
 ## Example
 
 ```typescript
-import { TemporalRangeGrounding } from '';
+import { TemporalRangeGrounding } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TemporalRangeGrounding = {
-    "workstreams": null, // 
+    "workstreams": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TemporalRangeGrounding;
 console.log(exampleParsed);
 ```
-
-
 
 

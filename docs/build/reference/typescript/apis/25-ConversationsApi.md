@@ -2,27 +2,26 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
-[**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
-[**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
-[**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations | /conversations [GET]
-[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
+Method | HTTP request
+------------- | -------------
+[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
+[**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create
+[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
+[**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
+[**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations
+[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
 
 
-## **conversationsCreateFromAsset** Deprecated: 
+## **conversationsCreateFromAsset**
 > ConversationsCreateFromAssetOutput conversationsCreateFromAsset()
 
-This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
+Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -38,14 +37,14 @@ apiInstance.conversationsCreateFromAsset(body).then((data: ConversationsCreateFr
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
 ### Return type
 
-**ConversationsCreateFromAssetOutput**
+[**ConversationsCreateFromAssetOutput**](../models/ConversationsCreateFromAssetOutput)
 
 ### HTTP request headers
 
@@ -54,24 +53,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationsCreateSpecificConversation** Deprecated: 
+## **conversationsCreateSpecificConversation**
 > Conversation conversationsCreateSpecificConversation()
 
-This will create a specific conversation.
+Creates a specific conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -89,7 +85,7 @@ apiInstance.conversationsCreateSpecificConversation(body).then((data: Conversati
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededConversation** | **SeededConversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -97,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Conversation**
+[**Conversation**](../models/Conversation)
 
 ### HTTP request headers
 
@@ -106,24 +102,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationsDeleteSpecificConversation** Deprecated: 
+## **conversationsDeleteSpecificConversation**
 > conversationsDeleteSpecificConversation()
 
-This will delete a specific Conversation.
+Deletes a specific conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -139,7 +132,7 @@ apiInstance.conversationsDeleteSpecificConversation(body).then((data: void (empt
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -155,24 +148,21 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationsIdentifiersSnapshot** Deprecated: 
+## **conversationsIdentifiersSnapshot**
 > FlattenedConversations conversationsIdentifiersSnapshot()
 
-This will get all the uuids of a Conversation.
+Retrieves all the UUIDs associated with a Conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -187,7 +177,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**FlattenedConversations**
+[**FlattenedConversations**](../models/FlattenedConversations)
 
 ### HTTP request headers
 
@@ -196,24 +186,21 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationsSnapshot** Deprecated: 
+## **conversationsSnapshot**
 > Conversations conversationsSnapshot()
 
-This will return a snapshot of a specific conversation
+Retrieves a snapshot of a specific conversation.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -229,14 +216,14 @@ apiInstance.conversationsSnapshot(body).then((data: Conversations) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
 ### Return type
 
-**Conversations**
+[**Conversations**](../models/Conversations)
 
 ### HTTP request headers
 
@@ -245,24 +232,21 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **conversationsStreamIdentifiers** Deprecated: 
+## **conversationsStreamIdentifiers**
 > conversationsStreamIdentifiers()
 
-This is a stream for the conversation identifiers. will return StreamedIdentifiers.
+Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
 
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.ConversationsApi(configuration);
 
@@ -283,8 +267,6 @@ void (empty response body)
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
-
-
 
 
 

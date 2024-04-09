@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**tlp** | [**TLPMachineLearningProcessingEvent**](TLPMachineLearningProcessingEvent) |  | [optional] [default to undefined]
-**graphical** | [**GraphicalMachineLearningProcessingEvent**](GraphicalMachineLearningProcessingEvent) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**tlp** | [**TLPMachineLearningProcessingEvent**](TLPMachineLearningProcessingEvent)
+**graphical** | [**GraphicalMachineLearningProcessingEvent**](GraphicalMachineLearningProcessingEvent)
 
 ## Example
 
 ```typescript
-import { SeededTrackedMachineLearningEvent } from '';
+import { SeededTrackedMachineLearningEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedMachineLearningEvent = {
-    "schema": null, // 
-    "tlp": null, // 
-    "graphical": null, // 
+    "schema": null,
+    "tlp": null,
+    "graphical": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedMachineLearningEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

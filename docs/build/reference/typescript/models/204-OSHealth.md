@@ -5,22 +5,22 @@ This is a specific model for the health of our OS Server.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | id of your OS | [default to undefined]
-**version** | **string** | this is the current OS version | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**version** | **string**
 
 ## Example
 
 ```typescript
-import { OSHealth } from '';
+import { OSHealth } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: OSHealth = {
-    "schema": null, // 
-    "id": null, // id of your OS
-    "version": null, // this is the current OS version
+    "schema": null,
+    "id": null,
+    "version": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as OSHealth;
 console.log(exampleParsed);
 ```
-
-
 
 

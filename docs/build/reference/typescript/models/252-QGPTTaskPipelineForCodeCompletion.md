@@ -5,20 +5,20 @@ This task is for code_completion ie auto-complete.  This is a class so that we c
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**context** | **Array&lt;string&gt;** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**context** | **Array&lt;string&gt;**
 
 ## Example
 
 ```typescript
-import { QGPTTaskPipelineForCodeCompletion } from '';
+import { QGPTTaskPipelineForCodeCompletion } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTTaskPipelineForCodeCompletion = {
-    "schema": null, // 
-    "context": null, // 
+    "schema": null,
+    "context": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipelineForCodeCompletion;
 console.log(exampleParsed);
 ```
-
-
 
 

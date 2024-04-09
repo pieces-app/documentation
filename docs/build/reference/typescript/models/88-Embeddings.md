@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**iterable** | [**Array&lt;Embedding&gt;**](Embedding) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**iterable** | [**Array&lt;Embedding&gt;**](Embedding)
 
 ## Example
 
 ```typescript
-import { Embeddings } from '';
+import { Embeddings } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Embeddings = {
-    "iterable": null, // 
+    "iterable": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Embeddings;
 console.log(exampleParsed);
 ```
-
-
 
 

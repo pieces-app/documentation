@@ -5,18 +5,18 @@ This is the input model for \'/model/\{model\}/delete/cache\'
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { ModelDeleteCacheInput } from '';
+import { ModelDeleteCacheInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelDeleteCacheInput = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelDeleteCacheInput;
 console.log(exampleParsed);
 ```
-
-
 
 

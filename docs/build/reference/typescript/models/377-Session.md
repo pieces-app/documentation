@@ -5,22 +5,22 @@ This is a specific model that will let us know at what time this user was using 
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**id** | **string** | The UUID of the current Session | [default to undefined]
-**opened** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**closed** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**id** | **string**
+**opened** | [**GroupedTimestamp**](GroupedTimestamp)
+**closed** | [**GroupedTimestamp**](GroupedTimestamp)
 
 ## Example
 
 ```typescript
-import { Session } from '';
+import { Session } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Session = {
-    "id": null, // The UUID of the current Session
-    "opened": null, // 
-    "closed": null, // 
+    "id": null,
+    "opened": null,
+    "closed": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Session;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,24 +5,24 @@ This is a pre-created accessor that simply takes an os id and an optional user(f
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**os** | **string** | this is an os id. | [default to undefined]
-**user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] [default to undefined]
-**share** | **string** | this is the share that the asset is apart of. | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**os** | **string**
+**user** | [**FlattenedUserProfile**](FlattenedUserProfile)
+**share** | **string**
 
 ## Example
 
 ```typescript
-import { SeededAccessor } from '';
+import { SeededAccessor } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAccessor = {
-    "schema": null, // 
-    "os": null, // this is an os id.
-    "user": null, // 
-    "share": null, // this is the share that the asset is apart of.
+    "schema": null,
+    "os": null,
+    "user": null,
+    "share": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAccessor;
 console.log(exampleParsed);
 ```
-
-
 
 

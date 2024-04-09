@@ -5,22 +5,22 @@ This is a flattened representation of multiple sensitive pieces of data.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ReferencedSensitive&gt;**](ReferencedSensitive) |  | [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ReferencedSensitive&gt;**](ReferencedSensitive)
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { FlattenedSensitives } from '';
+import { FlattenedSensitives } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedSensitives = {
-    "schema": null, // 
-    "iterable": null, // 
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "score": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedSensitives;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | \&#39;/anchor_point/\{anchor_point\}/scores/increment\&#39; [POST]
-[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
-[**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
+Method | HTTP request
+------------- | -------------
+[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment
+[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\}
+[**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update
 
 
-## **anchorPointScoresIncrement** Deprecated: 
+## **anchorPointScoresIncrement**
 > anchorPointScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -17,9 +17,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
@@ -37,7 +36,7 @@ apiInstance.anchorPointScoresIncrement(body).then((data: void (empty response bo
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
@@ -54,14 +53,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **anchorPointSpecificAnchorPointSnapshot** Deprecated: 
+## **anchorPointSpecificAnchorPointSnapshot**
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot()
 
 This will get a snapshot of a single anchorPoint.
@@ -69,9 +66,8 @@ This will get a snapshot of a single anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
@@ -89,7 +85,7 @@ apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data: AnchorPoint
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -97,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**AnchorPoint**
+[**AnchorPoint**](../models/AnchorPoint)
 
 ### HTTP request headers
 
@@ -106,14 +102,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **410** | AnchorPoint not found. |  -  |
 
-
-
-## **anchorPointUpdate** Deprecated: 
+## **anchorPointUpdate**
 > AnchorPoint anchorPointUpdate()
 
 This will update a specific anchorPoint.
@@ -121,9 +115,8 @@ This will update a specific anchorPoint.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.AnchorPointApi(configuration);
 
@@ -141,7 +134,7 @@ apiInstance.anchorPointUpdate(body).then((data: AnchorPoint) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | **AnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -149,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**AnchorPoint**
+[**AnchorPoint**](../models/AnchorPoint)
 
 ### HTTP request headers
 
@@ -158,11 +151,9 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

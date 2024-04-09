@@ -5,22 +5,22 @@ This is a predeleted version relating to the /external_provider/api_key/delete e
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**user** | **string** |  | [default to undefined]
-**openAI** | **boolean** |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**user** | **string**
+**openAI** | **boolean**
 
 ## Example
 
 ```typescript
-import { PredeletedExternalProviderApiKey } from '';
+import { PredeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: PredeletedExternalProviderApiKey = {
-    "schema": null, // 
-    "user": null, // 
-    "openAI": null, // 
+    "schema": null,
+    "user": null,
+    "openAI": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as PredeletedExternalProviderApiKey;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,13 +5,13 @@ Enum used for the status of the progress in downloading a model.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { ModelDownloadProgressStatusEnum } from '';
+import { ModelDownloadProgressStatusEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ModelDownloadProgressStatusEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ModelDownloadProgressStatusEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

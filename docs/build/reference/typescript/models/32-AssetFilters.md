@@ -4,22 +4,22 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;AssetFilter&gt;**](AssetFilter) |  | [default to undefined]
-**type** | [**FilterOperationTypeEnum**](FilterOperationTypeEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;AssetFilter&gt;**](AssetFilter)
+**type** | [**FilterOperationTypeEnum**](FilterOperationTypeEnum)
 
 ## Example
 
 ```typescript
-import { AssetFilters } from '';
+import { AssetFilters } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AssetFilters = {
-    "schema": null, // 
-    "iterable": null, // 
-    "type": null, // 
+    "schema": null,
+    "iterable": null,
+    "type": null,
 };
 
 console.log(example);
@@ -32,7 +32,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AssetFilters;
 console.log(exampleParsed);
 ```
-
-
 
 

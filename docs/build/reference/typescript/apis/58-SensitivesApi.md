@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
-[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
+Method | HTTP request
+------------- | -------------
+[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create
+[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete
+[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives
 
 
-## **sensitivesCreateNewSensitive** Deprecated: 
+## **sensitivesCreateNewSensitive**
 > Sensitive sensitivesCreateNewSensitive()
 
 This will create a new sensitive model.
@@ -17,9 +17,8 @@ This will create a new sensitive model.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
@@ -35,14 +34,14 @@ apiInstance.sensitivesCreateNewSensitive(body).then((data: Sensitive) => {
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **seededSensitive** | **SeededSensitive**|  |
 
 
 ### Return type
 
-**Sensitive**
+[**Sensitive**](../models/Sensitive)
 
 ### HTTP request headers
 
@@ -51,14 +50,12 @@ Name | Type | Description  | Notes
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-
-
-## **sensitivesDeleteSensitive** Deprecated: 
+## **sensitivesDeleteSensitive**
 > sensitivesDeleteSensitive()
 
 This will delete a sensitive based on the sensitive uuid.
@@ -66,9 +63,8 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
@@ -84,7 +80,7 @@ apiInstance.sensitivesDeleteSensitive(body).then((data: void (empty response bod
 
 ### Parameters
 
-Name | Type | Description  | Notes
+Name | Type | Description
 ------------- | ------------- | ------------- | -------------
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
@@ -100,14 +96,12 @@ void (empty response body)
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** |  |  -  |
 
-
-
-## **sensitivesSnapshot** Deprecated: 
+## **sensitivesSnapshot**
 > Sensitives sensitivesSnapshot()
 
 This will get a snapshot of all of the sensitives.
@@ -115,9 +109,8 @@ This will get a snapshot of all of the sensitives.
 ### Example
 
 ```typescript
-import * as Pieces from @pieces.app/pieces-os-client
+import * as Pieces from '@pieces.app/pieces-os-client'
 
-// TODO: Write logic for os here
 const configuration = Pieces.Configuration();
 const apiInstance = new Pieces.SensitivesApi(configuration);
 
@@ -132,7 +125,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**Sensitives**
+[**Sensitives**](../models/Sensitives)
 
 ### HTTP request headers
 
@@ -141,11 +134,9 @@ This endpoint does not need any parameter.
 
 
 ### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
+| Status code | Description | Response headers
+|-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 

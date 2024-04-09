@@ -4,18 +4,18 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**reclassification** | [**TrackedAssetEventFormatReclassificationMetadata**](TrackedAssetEventFormatReclassificationMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**reclassification** | [**TrackedAssetEventFormatReclassificationMetadata**](TrackedAssetEventFormatReclassificationMetadata)
 
 ## Example
 
 ```typescript
-import { TrackedFormatEventMetadata } from '';
+import { TrackedFormatEventMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedFormatEventMetadata = {
-    "reclassification": null, // 
+    "reclassification": null,
 };
 
 console.log(example);
@@ -28,7 +28,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedFormatEventMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

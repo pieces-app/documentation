@@ -4,28 +4,28 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**asset** | **string** | This is an asset id that we are using to link this to an asset. | [optional] [default to undefined]
-**type** | [**HintTypeEnum**](HintTypeEnum) |  | [default to undefined]
-**text** | **string** | This is the text of the hint. | [default to undefined]
-**model** | **string** | this is a model id. that we are using to link this to a model. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**asset** | **string**
+**type** | [**HintTypeEnum**](HintTypeEnum)
+**text** | **string**
+**model** | **string**
 
 ## Example
 
 ```typescript
-import { SeededHint } from '';
+import { SeededHint } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededHint = {
-    "schema": null, // 
-    "mechanism": null, // 
-    "asset": null, // This is an asset id that we are using to link this to an asset.
-    "type": null, // 
-    "text": null, // This is the text of the hint.
-    "model": null, // this is a model id. that we are using to link this to a model.
+    "schema": null,
+    "mechanism": null,
+    "asset": null,
+    "type": null,
+    "text": null,
+    "model": null,
 };
 
 console.log(example);
@@ -38,7 +38,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededHint;
 console.log(exampleParsed);
 ```
-
-
 
 

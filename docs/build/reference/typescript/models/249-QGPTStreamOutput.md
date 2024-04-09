@@ -5,32 +5,32 @@ This is the out for the /qgpt/stream endpoint.  200: success 401: invalid authen
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**request** | **string** | This is the id used to represent the stream of response. this will always be present. We will use the value passed inby the client, or we will generate one. | [optional] [default to undefined]
-**relevance** | [**QGPTRelevanceOutput**](QGPTRelevanceOutput) |  | [optional] [default to undefined]
-**question** | [**QGPTQuestionOutput**](QGPTQuestionOutput) |  | [optional] [default to undefined]
-**status** | [**QGPTStreamEnum**](QGPTStreamEnum) |  | [optional] [default to undefined]
-**conversation** | **string** | This is the ID of a predefined persisted conversation, if this is not present we will create a new conversation for the input/output.(in the case of a question) | [default to undefined]
-**statusCode** | **number** | This will be provided | [optional] [default to undefined]
-**errorMessage** | **string** | optional error message is the status code is NOT 200 | [optional] [default to undefined]
-**agentRoutes** | [**QGPTAgentRoutes**](QGPTAgentRoutes) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**request** | **string**
+**relevance** | [**QGPTRelevanceOutput**](QGPTRelevanceOutput)
+**question** | [**QGPTQuestionOutput**](QGPTQuestionOutput)
+**status** | [**QGPTStreamEnum**](QGPTStreamEnum)
+**conversation** | **string**
+**statusCode** | **number**
+**errorMessage** | **string**
+**agentRoutes** | [**QGPTAgentRoutes**](QGPTAgentRoutes)
 
 ## Example
 
 ```typescript
-import { QGPTStreamOutput } from '';
+import { QGPTStreamOutput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTStreamOutput = {
-    "request": null, // This is the id used to represent the stream of response. this will always be present. We will use the value passed inby the client, or we will generate one.
-    "relevance": null, // 
-    "question": null, // 
-    "status": null, // 
-    "conversation": null, // This is the ID of a predefined persisted conversation, if this is not present we will create a new conversation for the input/output.(in the case of a question)
-    "statusCode": null, // This will be provided
-    "errorMessage": null, // optional error message is the status code is NOT 200
-    "agentRoutes": null, // 
+    "request": null,
+    "relevance": null,
+    "question": null,
+    "status": null,
+    "conversation": null,
+    "statusCode": null,
+    "errorMessage": null,
+    "agentRoutes": null,
 };
 
 console.log(example);
@@ -43,7 +43,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTStreamOutput;
 console.log(exampleParsed);
 ```
-
-
 
 

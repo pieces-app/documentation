@@ -5,13 +5,13 @@ This is used to describe a specific type of annotation. NOTE** This is linked to
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
+Name | Type
+------------ | -------------
 
 ## Example
 
 ```typescript
-import { AnnotationTypeEnum } from '';
+import { AnnotationTypeEnum } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: AnnotationTypeEnum = {
@@ -27,7 +27,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as AnnotationTypeEnum;
 console.log(exampleParsed);
 ```
-
-
 
 

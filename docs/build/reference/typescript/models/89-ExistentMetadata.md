@@ -5,20 +5,20 @@ This is a shared output model for all the exists endpoints: /tags/exists : value
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**value** | **string** |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**value** | **string**
 
 ## Example
 
 ```typescript
-import { ExistentMetadata } from '';
+import { ExistentMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ExistentMetadata = {
-    "schema": null, // 
-    "value": null, // 
+    "schema": null,
+    "value": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ExistentMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ImageAnalysis&gt;**](ImageAnalysis) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ImageAnalysis&gt;**](ImageAnalysis)
 
 ## Example
 
 ```typescript
-import { ImageAnalyses } from '';
+import { ImageAnalyses } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: ImageAnalyses = {
-    "schema": null, // 
-    "iterable": null, // 
+    "schema": null,
+    "iterable": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as ImageAnalyses;
 console.log(exampleParsed);
 ```
-
-
 
 

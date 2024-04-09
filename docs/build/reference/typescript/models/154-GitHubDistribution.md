@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**gist** | [**GitHubGistDistribution**](GitHubGistDistribution) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**gist** | [**GitHubGistDistribution**](GitHubGistDistribution)
 
 ## Example
 
 ```typescript
-import { GitHubDistribution } from '';
+import { GitHubDistribution } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GitHubDistribution = {
-    "schema": null, // 
-    "gist": null, // 
+    "schema": null,
+    "gist": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GitHubDistribution;
 console.log(exampleParsed);
 ```
-
-
 
 

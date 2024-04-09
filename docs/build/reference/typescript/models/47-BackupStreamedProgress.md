@@ -5,24 +5,24 @@ This is a specific model to the /backups/create/streamed.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**status** | [**ModelDownloadProgressStatusEnum**](ModelDownloadProgressStatusEnum) |  | [optional] [default to undefined]
-**percentage** | **number** | Optionally if the download is in progress you will recieve a download percent(from 0-100). | [optional] [default to undefined]
-**backup** | [**Backup**](Backup) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**status** | [**ModelDownloadProgressStatusEnum**](ModelDownloadProgressStatusEnum)
+**percentage** | **number**
+**backup** | [**Backup**](Backup)
 
 ## Example
 
 ```typescript
-import { BackupStreamedProgress } from '';
+import { BackupStreamedProgress } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: BackupStreamedProgress = {
-    "schema": null, // 
-    "status": null, // 
-    "percentage": null, // Optionally if the download is in progress you will recieve a download percent(from 0-100).
-    "backup": null, // 
+    "schema": null,
+    "status": null,
+    "percentage": null,
+    "backup": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as BackupStreamedProgress;
 console.log(exampleParsed);
 ```
-
-
 
 

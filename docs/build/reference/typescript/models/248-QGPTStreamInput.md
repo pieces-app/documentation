@@ -5,28 +5,28 @@ This is the input for the /qgpt/stream endpoint.
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**relevance** | [**QGPTRelevanceInput**](QGPTRelevanceInput) |  | [optional] [default to undefined]
-**question** | [**QGPTQuestionInput**](QGPTQuestionInput) |  | [optional] [default to undefined]
-**request** | **string** | This is an optional Id you can use to identify the result from your request. | [optional] [default to undefined]
-**conversation** | **string** | This is the ID of a predefined persisted conversation, if this is not present we will create a new conversation for the input/output.(in the case of a question) | [optional] [default to undefined]
-**stop** | **boolean** |  | [optional] [default to undefined]
-**agent** | **boolean** | This will let us know if we want to run the agent routing as well, this is default to true. However if set to false you will save on processing and you will recieve null for the agentRoutes class on the QGPTStreamOutput. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**relevance** | [**QGPTRelevanceInput**](QGPTRelevanceInput)
+**question** | [**QGPTQuestionInput**](QGPTQuestionInput)
+**request** | **string**
+**conversation** | **string**
+**stop** | **boolean**
+**agent** | **boolean**
 
 ## Example
 
 ```typescript
-import { QGPTStreamInput } from '';
+import { QGPTStreamInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTStreamInput = {
-    "relevance": null, // 
-    "question": null, // 
-    "request": null, // This is an optional Id you can use to identify the result from your request.
-    "conversation": null, // This is the ID of a predefined persisted conversation, if this is not present we will create a new conversation for the input/output.(in the case of a question)
-    "stop": null, // 
-    "agent": null, // This will let us know if we want to run the agent routing as well, this is default to true. However if set to false you will save on processing and you will recieve null for the agentRoutes class on the QGPTStreamOutput.
+    "relevance": null,
+    "question": null,
+    "request": null,
+    "conversation": null,
+    "stop": null,
+    "agent": null,
 };
 
 console.log(example);
@@ -39,7 +39,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTStreamInput;
 console.log(exampleParsed);
 ```
-
-
 
 

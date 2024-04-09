@@ -5,24 +5,24 @@ This is a flattened plural version of ConversationMessages
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**iterable** | [**Array&lt;ReferencedConversationMessage&gt;**](ReferencedConversationMessage) |  | [default to undefined]
-**indices** | **\{ [key: string]: number; \}** | This is a Map&lt;String, int&gt; where the the key is an ConversationMessage id. | [optional] [default to undefined]
-**score** | [**Score**](Score) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**iterable** | [**Array&lt;ReferencedConversationMessage&gt;**](ReferencedConversationMessage)
+**indices** | **\{ [key: string]: number; \}**
+**score** | [**Score**](Score)
 
 ## Example
 
 ```typescript
-import { FlattenedConversationMessages } from '';
+import { FlattenedConversationMessages } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FlattenedConversationMessages = {
-    "schema": null, // 
-    "iterable": null, // 
-    "indices": null, // This is a Map&lt;String, int&gt; where the the key is an ConversationMessage id.
-    "score": null, // 
+    "schema": null,
+    "iterable": null,
+    "indices": null,
+    "score": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FlattenedConversationMessages;
 console.log(exampleParsed);
 ```
-
-
 
 

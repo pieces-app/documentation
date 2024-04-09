@@ -5,18 +5,18 @@ This is a precursor to a Backup, for now this will not need to take any properti
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
 ## Example
 
 ```typescript
-import { SeededBackup } from '';
+import { SeededBackup } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededBackup = {
-    "schema": null, // 
+    "schema": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededBackup;
 console.log(exampleParsed);
 ```
-
-
 
 

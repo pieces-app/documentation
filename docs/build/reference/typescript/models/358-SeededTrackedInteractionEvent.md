@@ -5,24 +5,24 @@ This is a model that will hold relavent information in relation to an interactio
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**description** | **string** | These need structure | [default to undefined]
-**element** | **string** |  | [optional] [default to undefined]
-**identifierDescriptionPair** | [**SeededTrackedInteractionEventIdentifierDescriptionPairs**](SeededTrackedInteractionEventIdentifierDescriptionPairs) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**description** | **string**
+**element** | **string**
+**identifierDescriptionPair** | [**SeededTrackedInteractionEventIdentifierDescriptionPairs**](SeededTrackedInteractionEventIdentifierDescriptionPairs)
 
 ## Example
 
 ```typescript
-import { SeededTrackedInteractionEvent } from '';
+import { SeededTrackedInteractionEvent } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedInteractionEvent = {
-    "schema": null, // 
-    "description": null, // These need structure
-    "element": null, // 
-    "identifierDescriptionPair": null, // 
+    "schema": null,
+    "description": null,
+    "element": null,
+    "identifierDescriptionPair": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedInteractionEvent;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,26 +5,26 @@ This is used for /qgpt/persons/related.  will accept a seed, or conversation all
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**seed** | [**Seed**](Seed) |  | [optional] [default to undefined]
-**conversation** | [**QGPTConversation**](QGPTConversation) |  | [optional] [default to undefined]
-**application** | **string** | optional application id | [optional] [default to undefined]
-**model** | **string** | optional model id | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**seed** | [**Seed**](Seed)
+**conversation** | [**QGPTConversation**](QGPTConversation)
+**application** | **string**
+**model** | **string**
 
 ## Example
 
 ```typescript
-import { QGPTPersonsRelatedInput } from '';
+import { QGPTPersonsRelatedInput } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: QGPTPersonsRelatedInput = {
-    "schema": null, // 
-    "seed": null, // 
-    "conversation": null, // 
-    "application": null, // optional application id
-    "model": null, // optional model id
+    "schema": null,
+    "seed": null,
+    "conversation": null,
+    "application": null,
+    "model": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as QGPTPersonsRelatedInput;
 console.log(exampleParsed);
 ```
-
-
 
 

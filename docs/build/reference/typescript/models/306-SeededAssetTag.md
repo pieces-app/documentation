@@ -5,24 +5,24 @@ This is similar to an SeededTag, where this is the minimum information of a tag,
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**text** | **string** | this is the text that represents the tag. | [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] [default to undefined]
-**category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**text** | **string**
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**category** | [**TagCategoryEnum**](TagCategoryEnum)
 
 ## Example
 
 ```typescript
-import { SeededAssetTag } from '';
+import { SeededAssetTag } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededAssetTag = {
-    "schema": null, // 
-    "text": null, // this is the text that represents the tag.
-    "mechanism": null, // 
-    "category": null, // 
+    "schema": null,
+    "text": null,
+    "mechanism": null,
+    "category": null,
 };
 
 console.log(example);
@@ -35,7 +35,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededAssetTag;
 console.log(exampleParsed);
 ```
-
-
 
 

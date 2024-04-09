@@ -5,22 +5,22 @@ This is a model that will represent the miminum properties required to update th
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [default to undefined]
-**format** | [**Format**](Format) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
+**format** | [**Format**](Format)
 
 ## Example
 
 ```typescript
-import { FormatReclassification } from '';
+import { FormatReclassification } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: FormatReclassification = {
-    "schema": null, // 
-    "ext": null, // 
-    "format": null, // 
+    "schema": null,
+    "ext": null,
+    "format": null,
 };
 
 console.log(example);
@@ -33,7 +33,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as FormatReclassification;
 console.log(exampleParsed);
 ```
-
-
 
 

@@ -5,18 +5,18 @@ Additional Metadata as Neeeded i.e. Search + Query, etc
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**search** | [**TrackedAssetsEventSearchMetadata**](TrackedAssetsEventSearchMetadata) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**search** | [**TrackedAssetsEventSearchMetadata**](TrackedAssetsEventSearchMetadata)
 
 ## Example
 
 ```typescript
-import { SeededTrackedAssetsEventMetadata } from '';
+import { SeededTrackedAssetsEventMetadata } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedAssetsEventMetadata = {
-    "search": null, // 
+    "search": null,
 };
 
 console.log(example);
@@ -29,7 +29,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedAssetsEventMetadata;
 console.log(exampleParsed);
 ```
-
-
 
 

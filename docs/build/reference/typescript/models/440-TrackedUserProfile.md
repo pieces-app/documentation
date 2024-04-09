@@ -5,26 +5,26 @@ A user that will be passed along with each analytics event
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** | The ID of the user that you are tracking. | [default to undefined]
-**username** | **string** | This is a username that is attempted to be assigned but is \&quot;Anonymous User\&quot; by default | [default to 'unknown']
-**email** | **string** | The user\&#39;s email if we have it. | [optional] [default to undefined]
-**granularity** | **string** | At what level is this user being tracked. | [default to GranularityEnum_Anonymous]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**username** | **string**
+**email** | **string**
+**granularity** | **string**
 
 ## Example
 
 ```typescript
-import { TrackedUserProfile } from '';
+import { TrackedUserProfile } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: TrackedUserProfile = {
-    "schema": null, // 
-    "id": null, // The ID of the user that you are tracking.
-    "username": null, // This is a username that is attempted to be assigned but is \&quot;Anonymous User\&quot; by default
-    "email": null, // The user\&#39;s email if we have it.
-    "granularity": null, // At what level is this user being tracked.
+    "schema": null,
+    "id": null,
+    "username": null,
+    "email": null,
+    "granularity": null,
 };
 
 console.log(example);
@@ -37,7 +37,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as TrackedUserProfile;
 console.log(exampleParsed);
 ```
-
-
 
 

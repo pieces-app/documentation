@@ -5,40 +5,40 @@ consider a rename to Event? That being said if we go with event we need to think
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**id** | **string** |  | [default to undefined]
-**created** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [default to undefined]
-**event** | [**SeededConnectorTracking**](SeededConnectorTracking) |  | [default to undefined]
-**application** | [**Application**](Application) |  | [default to undefined]
-**deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] [default to undefined]
-**asset** | [**FlattenedAsset**](FlattenedAsset) |  | [optional] [default to undefined]
-**user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] [default to undefined]
-**format** | [**FlattenedFormat**](FlattenedFormat) |  | [optional] [default to undefined]
-**mechanism** | [**MechanismEnum**](MechanismEnum) |  | [default to undefined]
-**rank** | **number** | This is the numeric value assigned for this activity event. This number is based off the the type of activity event calcaulated on the server side.DO NOT MODIFY. To see what the value qualilates to, please refer to the function within the common sdk. The number here is based on the fib series. from 0 -&gt; infinity but rn there arnt any value over 8. | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**id** | **string**
+**created** | [**GroupedTimestamp**](GroupedTimestamp)
+**updated** | [**GroupedTimestamp**](GroupedTimestamp)
+**event** | [**SeededConnectorTracking**](SeededConnectorTracking)
+**application** | [**Application**](Application)
+**deleted** | [**GroupedTimestamp**](GroupedTimestamp)
+**asset** | [**FlattenedAsset**](FlattenedAsset)
+**user** | [**FlattenedUserProfile**](FlattenedUserProfile)
+**format** | [**FlattenedFormat**](FlattenedFormat)
+**mechanism** | [**MechanismEnum**](MechanismEnum)
+**rank** | **number**
 
 ## Example
 
 ```typescript
-import { Activity } from '';
+import { Activity } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Activity = {
-    "schema": null, // 
-    "id": null, // 
-    "created": null, // 
-    "updated": null, // 
-    "event": null, // 
-    "application": null, // 
-    "deleted": null, // 
-    "asset": null, // 
-    "user": null, // 
-    "format": null, // 
-    "mechanism": null, // 
-    "rank": null, // This is the numeric value assigned for this activity event. This number is based off the the type of activity event calcaulated on the server side.DO NOT MODIFY. To see what the value qualilates to, please refer to the function within the common sdk. The number here is based on the fib series. from 0 -&gt; infinity but rn there arnt any value over 8.
+    "schema": null,
+    "id": null,
+    "created": null,
+    "updated": null,
+    "event": null,
+    "application": null,
+    "deleted": null,
+    "asset": null,
+    "user": null,
+    "format": null,
+    "mechanism": null,
+    "rank": null,
 };
 
 console.log(example);
@@ -51,7 +51,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Activity;
 console.log(exampleParsed);
 ```
-
-
 
 

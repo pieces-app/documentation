@@ -4,20 +4,20 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**statistics** | [**GraphicalOCRStatistics**](GraphicalOCRStatistics) |  | [optional] [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**statistics** | [**GraphicalOCRStatistics**](GraphicalOCRStatistics)
 
 ## Example
 
 ```typescript
-import { GraphicalOCRProcessing } from '';
+import { GraphicalOCRProcessing } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: GraphicalOCRProcessing = {
-    "schema": null, // 
-    "statistics": null, // 
+    "schema": null,
+    "statistics": null,
 };
 
 console.log(example);
@@ -30,7 +30,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as GraphicalOCRProcessing;
 console.log(exampleParsed);
 ```
-
-
 
 

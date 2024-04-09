@@ -5,20 +5,20 @@ This is a health model used to determine the \"health\" of the os server and clo
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] [default to undefined]
-**os** | [**OSHealth**](OSHealth) |  | [default to undefined]
+Name | Type
+------------ | -------------
+**schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
+**os** | [**OSHealth**](OSHealth)
 
 ## Example
 
 ```typescript
-import { Health } from '';
+import { Health } from '@pieces.app/pieces-os-client';
 
 // TODO: Update the object below with actual values
 const example: Health = {
-    "schema": null, // 
-    "os": null, // 
+    "schema": null,
+    "os": null,
 };
 
 console.log(example);
@@ -31,7 +31,5 @@ console.log(exampleJSON);
 const exampleParsed = JSON.parse(exampleJSON) as Health;
 console.log(exampleParsed);
 ```
-
-
 
 
