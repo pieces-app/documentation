@@ -209,15 +209,22 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'community',
+          label: 'Community',
+        },
+        {
+          type: 'doc',
+          id: 'beta-program',
+          label: 'Beta Program',
         },
         {
           type: 'doc',
           id: 'support',
+          label: 'Support',
         },
         {
           type: 'doc',
           id: 'faq',
-          label: 'FAQ',
+          label: 'FAQs',
         },
       ]
     }
