@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**format_analysis**](FormatApi#format_analysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
-[**format_reclassify**](FormatApi#format_reclassify) | **POST** /format/reclassify | /format/reclassify [POST]
-[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
-[**format_update_value**](FormatApi#format_update_value) | **POST** /format/update/value | [POST] /format/update/value
-[**format_usage_event**](FormatApi#format_usage_event) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
+Method | HTTP request
+------------- | -------------
+[**format_analysis**](FormatApi#format_analysis) | **GET** /format/\{format\}/analysis
+[**format_reclassify**](FormatApi#format_reclassify) | **POST** /format/reclassify
+[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/\{format\}
+[**format_update_value**](FormatApi#format_update_value) | **POST** /format/update/value
+[**format_usage_event**](FormatApi#format_usage_event) | **POST** /format/usage/event
 
 
-## **format_analysis**
+## **format_analysis** {#format_analysis}
 > Analysis format_analysis(format)
 
 /format/\{format\}/analysis [GET]
@@ -80,7 +80,7 @@ No authorization required
 
 
 
-## **format_reclassify**
+## **format_reclassify** {#format_reclassify}
 > Format format_reclassify(transferable=transferable, format_reclassification=format_reclassification)
 
 /format/reclassify [POST]
@@ -151,7 +151,7 @@ No authorization required
 
 
 
-## **format_snapshot**
+## **format_snapshot** {#format_snapshot}
 > Format format_snapshot(format, transferable=transferable)
 
 /format/\{format\} [GET] Scoped to Format
@@ -221,7 +221,7 @@ No authorization required
 
 
 
-## **format_update_value**
+## **format_update_value** {#format_update_value}
 > Format format_update_value(transferable=transferable, format=format)
 
 [POST] /format/update/value
@@ -292,7 +292,7 @@ No authorization required
 
 
 
-## **format_usage_event**
+## **format_usage_event** {#format_usage_event}
 > TrackedFormatEvent format_usage_event(seeded_tracked_format_event=seeded_tracked_format_event)
 
 /format/usage/event [POST] Scoped to Format

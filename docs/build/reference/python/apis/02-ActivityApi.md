@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**activities_specific_activity_snapshot**](ActivityApi#activities_specific_activity_snapshot) | **GET** /activity/\{activity\} | /activity/\{activity\} [GET]
-[**activity_identifiers_snapshot**](ActivityApi#activity_identifiers_snapshot) | **GET** /activity/identifiers | /activity/identifiers [GET]
-[**activity_update**](ActivityApi#activity_update) | **POST** /activity/update | /activity/update [POST]
+Method | HTTP request
+------------- | -------------
+[**activities_specific_activity_snapshot**](ActivityApi#activities_specific_activity_snapshot) | **GET** /activity/\{activity\}
+[**activity_identifiers_snapshot**](ActivityApi#activity_identifiers_snapshot) | **GET** /activity/identifiers
+[**activity_update**](ActivityApi#activity_update) | **POST** /activity/update
 
 
-## **activities_specific_activity_snapshot**
+## **activities_specific_activity_snapshot** {#activities_specific_activity_snapshot}
 > Activity activities_specific_activity_snapshot(activity, transferables=transferables)
 
 /activity/\{activity\} [GET]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **activity_identifiers_snapshot**
+## **activity_identifiers_snapshot** {#activity_identifiers_snapshot}
 > FlattenedActivities activity_identifiers_snapshot(pseudo=pseudo, activity_filter_enum=activity_filter_enum)
 
 /activity/identifiers [GET]
@@ -152,7 +152,7 @@ No authorization required
 
 
 
-## **activity_update**
+## **activity_update** {#activity_update}
 > Activity activity_update(transferables=transferables, activity=activity)
 
 /activity/update [POST]

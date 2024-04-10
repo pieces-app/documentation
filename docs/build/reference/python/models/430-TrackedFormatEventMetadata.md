@@ -26,4 +26,3 @@ tracked_format_event_metadata_form_dict = tracked_format_event_metadata.from_dic
 ```
 
 
-

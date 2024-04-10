@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**rangeAssociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\}
-[**rangeAssociateWorkstreamSummary**](RangeApi#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\}
-[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\}
-[**rangeDisassociateWorkstreamSummary**](RangeApi#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**rangeScoresIncrement**](RangeApi#rangescoresincrement) | **POST** /range/\{range\}/scores/increment
-[**rangeUpdate**](RangeApi#rangeupdate) | **POST** /range/update
-[**rangesSpecificRangeSnapshot**](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\}
+[**rangeAssociateConversationGroundingTemporalRangeWorkstreams****](RangeApi#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\}
+[**rangeAssociateWorkstreamSummary****](RangeApi#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\}
+[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams****](RangeApi#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\}
+[**rangeDisassociateWorkstreamSummary****](RangeApi#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**rangeScoresIncrement****](RangeApi#rangescoresincrement) | **POST** /range/\{range\}/scores/increment
+[**rangeUpdate****](RangeApi#rangeupdate) | **POST** /range/update
+[**rangesSpecificRangeSnapshot****](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\}
 
 
-## **rangeAssociateConversationGroundingTemporalRangeWorkstreams**
+## **rangeAssociateConversationGroundingTemporalRangeWorkstreams** {#rangeassociateconversationgroundingtemporalrangeworkstreams}
 > rangeAssociateConversationGroundingTemporalRangeWorkstreams()
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
@@ -23,8 +23,8 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeAssociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -34,14 +34,14 @@ const body: Pieces.RangeAssociateConversationGroundingTemporalRangeWorkstreamsRe
 };
 
 apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -62,7 +62,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangeAssociateWorkstreamSummary**
+## **rangeAssociateWorkstreamSummary** {#rangeassociateworkstreamsummary}
 > rangeAssociateWorkstreamSummary()
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -72,8 +72,8 @@ This will associate a range with a workstream summary. This will do the same thi
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -83,14 +83,14 @@ const body: Pieces.RangeAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.rangeAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -111,7 +111,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams**
+## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams** {#rangedisassociateconversationgroundingtemporalrangeworkstreams}
 > rangeDisassociateConversationGroundingTemporalRangeWorkstreams()
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
@@ -121,8 +121,8 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeDisassociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -132,14 +132,14 @@ const body: Pieces.RangeDisassociateConversationGroundingTemporalRangeWorkstream
 };
 
 apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -160,7 +160,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangeDisassociateWorkstreamSummary**
+## **rangeDisassociateWorkstreamSummary** {#rangedisassociateworkstreamsummary}
 > rangeDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -170,8 +170,8 @@ This will enable us to disassociate a range from a workstream summary. This will
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -181,14 +181,14 @@ const body: Pieces.RangeDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.rangeDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -209,7 +209,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangeScoresIncrement**
+## **rangeScoresIncrement** {#rangescoresincrement}
 > rangeScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -219,8 +219,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -230,14 +230,14 @@ const body: Pieces.RangeScoresIncrementRequest = {
 };
 
 apiInstance.rangeScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -258,7 +258,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangeUpdate**
+## **rangeUpdate** {#rangeupdate}
 > Range rangeUpdate()
 
 This will update a specific range.
@@ -268,8 +268,8 @@ This will update a specific range.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangeUpdateRequest = {
     // Range (optional)
@@ -277,14 +277,14 @@ const body: Pieces.RangeUpdateRequest = {
 };
 
 apiInstance.rangeUpdate(body).then((data: Range) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | **Range**|  |
 
 
@@ -304,7 +304,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **rangesSpecificRangeSnapshot**
+## **rangesSpecificRangeSnapshot** {#rangesspecificrangesnapshot}
 > Range rangesSpecificRangeSnapshot()
 
 This will get a snapshot of a single range.
@@ -314,8 +314,8 @@ This will get a snapshot of a single range.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RangeApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RangeApi(configuration)
 
 const body: Pieces.RangesSpecificRangeSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -323,14 +323,14 @@ const body: Pieces.RangesSpecificRangeSnapshotRequest = {
 };
 
 apiInstance.rangesSpecificRangeSnapshot(body).then((data: Range) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 

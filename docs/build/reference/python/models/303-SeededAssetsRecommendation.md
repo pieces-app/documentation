@@ -29,4 +29,3 @@ seeded_assets_recommendation_form_dict = seeded_assets_recommendation.from_dict(
 ```
 
 
-

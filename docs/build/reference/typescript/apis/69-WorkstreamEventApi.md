@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**workstreamEventAssociateWorkstreamSummary**](WorkstreamEventApi#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
-[**workstreamEventDisassociateWorkstreamSummary**](WorkstreamEventApi#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**workstreamEventScoresIncrement**](WorkstreamEventApi#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment
-[**workstreamEventUpdate**](WorkstreamEventApi#workstreameventupdate) | **POST** /workstream_event/update
-[**workstreamEventsSpecificWorkstreamEventSnapshot**](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
+[**workstreamEventAssociateWorkstreamSummary****](WorkstreamEventApi#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
+[**workstreamEventDisassociateWorkstreamSummary****](WorkstreamEventApi#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**workstreamEventScoresIncrement****](WorkstreamEventApi#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment
+[**workstreamEventUpdate****](WorkstreamEventApi#workstreameventupdate) | **POST** /workstream_event/update
+[**workstreamEventsSpecificWorkstreamEventSnapshot****](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
 
 
-## **workstreamEventAssociateWorkstreamSummary**
+## **workstreamEventAssociateWorkstreamSummary** {#workstreameventassociateworkstreamsummary}
 > workstreamEventAssociateWorkstreamSummary()
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -21,8 +21,8 @@ This will associate a workstream_event with a workstream summary. This will do t
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamEventApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -32,14 +32,14 @@ const body: Pieces.WorkstreamEventAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.workstreamEventAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -60,7 +60,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamEventDisassociateWorkstreamSummary**
+## **workstreamEventDisassociateWorkstreamSummary** {#workstreameventdisassociateworkstreamsummary}
 > workstreamEventDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -70,8 +70,8 @@ This will enable us to disassociate a workstream_event from a workstream summary
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamEventApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -81,14 +81,14 @@ const body: Pieces.WorkstreamEventDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.workstreamEventDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -109,7 +109,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamEventScoresIncrement**
+## **workstreamEventScoresIncrement** {#workstreameventscoresincrement}
 > workstreamEventScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -119,8 +119,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamEventApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -130,14 +130,14 @@ const body: Pieces.WorkstreamEventScoresIncrementRequest = {
 };
 
 apiInstance.workstreamEventScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
@@ -158,7 +158,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamEventUpdate**
+## **workstreamEventUpdate** {#workstreameventupdate}
 > WorkstreamEvent workstreamEventUpdate()
 
 This will update a specific workstream_event.
@@ -168,8 +168,8 @@ This will update a specific workstream_event.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamEventApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -179,14 +179,14 @@ const body: Pieces.WorkstreamEventUpdateRequest = {
 };
 
 apiInstance.workstreamEventUpdate(body).then((data: WorkstreamEvent) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **WorkstreamEvent**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -207,7 +207,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamEventsSpecificWorkstreamEventSnapshot**
+## **workstreamEventsSpecificWorkstreamEventSnapshot** {#workstreameventsspecificworkstreameventsnapshot}
 > WorkstreamEvent workstreamEventsSpecificWorkstreamEventSnapshot()
 
 This will get a snapshot of a single workstream_event.
@@ -217,8 +217,8 @@ This will get a snapshot of a single workstream_event.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamEventApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -228,14 +228,14 @@ const body: Pieces.WorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
 };
 
 apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(body).then((data: WorkstreamEvent) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

@@ -28,4 +28,3 @@ seeded_discoverable_related_tags_form_dict = seeded_discoverable_related_tags.fr
 ```
 
 
-

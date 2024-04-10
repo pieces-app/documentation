@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**shares_create_new_share**](SharesApi#shares_create_new_share) | **POST** /shares/create | /shares/create [POST]
-[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
-[**shares_snapshot**](SharesApi#shares_snapshot) | **GET** /shares | /shares [GET]
-[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
+Method | HTTP request
+------------- | -------------
+[**shares_create_new_share**](SharesApi#shares_create_new_share) | **POST** /shares/create
+[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/\{share\}/delete
+[**shares_snapshot**](SharesApi#shares_snapshot) | **GET** /shares
+[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/\{share\}
 
 
-## **shares_create_new_share**
+## **shares_create_new_share** {#shares_create_new_share}
 > Shares shares_create_new_share(transferables=transferables, seeded_share=seeded_share)
 
 /shares/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **shares_delete_share**
+## **shares_delete_share** {#shares_delete_share}
 > str shares_delete_share(share)
 
 /shares/\{share\}/delete [POST]
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **shares_snapshot**
+## **shares_snapshot** {#shares_snapshot}
 > Shares shares_snapshot(transferables=transferables)
 
 /shares [GET]
@@ -216,7 +216,7 @@ No authorization required
 
 
 
-## **shares_specific_share_snapshot**
+## **shares_specific_share_snapshot** {#shares_specific_share_snapshot}
 > Share shares_specific_share_snapshot(share, transferables=transferables)
 
 /shares/\{share\} [GET]

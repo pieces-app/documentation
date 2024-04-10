@@ -1,10 +1,5 @@
 # ConversationMessages API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**messagesSnapshot**](ConversationMessagesApi#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
-## **messagesCreateSpecificMessage**
+## **messagesCreateSpecificMessage** {#messagescreatespecificmessage}
 > ConversationMessage messagesCreateSpecificMessage(transferables, seededConversationMessage)
 
 /messages/create [POST]
@@ -23,7 +18,7 @@ This will create a Message on a specific conversation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ConversationMessagesApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -59,7 +54,7 @@ No authorization required
 
 
 
-## **messagesDeleteSpecificMessage**
+## **messagesDeleteSpecificMessage** {#messagesdeletespecificmessage}
 > messagesDeleteSpecificMessage(message)
 
 /messages/\{message\}/delete [POST]
@@ -68,7 +63,7 @@ This will delete a specific message.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ConversationMessagesApi();
 final message = message_example; // String | This is the uuid of a message.
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **messagesSnapshot**
+## **messagesSnapshot** {#messagessnapshot}
 > ConversationMessages messagesSnapshot(transferables)
 
 /messages [GET]
@@ -110,7 +105,7 @@ This will get all the messages.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ConversationMessagesApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

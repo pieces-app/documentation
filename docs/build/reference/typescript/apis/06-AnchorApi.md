@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**anchorAssociateWorkstreamSummary**](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
-[**anchorDisassociateWorkstreamSummary**](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename
-[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
-[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
-[**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update
+[**anchorAssociateWorkstreamSummary****](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
+[**anchorDisassociateWorkstreamSummary****](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**anchorRename****](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename
+[**anchorScoresIncrement****](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
+[**anchorSpecificAnchorSnapshot****](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
+[**anchorUpdate****](AnchorApi#anchorupdate) | **POST** /anchor/update
 
 
-## **anchorAssociateWorkstreamSummary**
+## **anchorAssociateWorkstreamSummary** {#anchorassociateworkstreamsummary}
 > anchorAssociateWorkstreamSummary()
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -22,8 +22,8 @@ This will associate a anchor with a workstream summary. This will do the same th
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorAssociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
@@ -33,14 +33,14 @@ const body: Pieces.AnchorAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -61,7 +61,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorDisassociateWorkstreamSummary**
+## **anchorDisassociateWorkstreamSummary** {#anchordisassociateworkstreamsummary}
 > anchorDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -71,8 +71,8 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorDisassociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
@@ -82,14 +82,14 @@ const body: Pieces.AnchorDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -110,7 +110,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorRename**
+## **anchorRename** {#anchorrename}
 > Anchor anchorRename()
 
 This will rename a specific anchor.
@@ -120,8 +120,8 @@ This will rename a specific anchor.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorRenameRequest = {
     // string | This is the specific uuid of an anchor.
@@ -131,14 +131,14 @@ const body: Pieces.AnchorRenameRequest = {
 };
 
 apiInstance.anchorRename(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -159,7 +159,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorScoresIncrement**
+## **anchorScoresIncrement** {#anchorscoresincrement}
 > anchorScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -169,8 +169,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor.
@@ -180,14 +180,14 @@ const body: Pieces.AnchorScoresIncrementRequest = {
 };
 
 apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -208,7 +208,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorSpecificAnchorSnapshot**
+## **anchorSpecificAnchorSnapshot** {#anchorspecificanchorsnapshot}
 > Anchor anchorSpecificAnchorSnapshot()
 
 This will get a snapshot of a single anchor.
@@ -218,8 +218,8 @@ This will get a snapshot of a single anchor.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorSpecificAnchorSnapshotRequest = {
     // string | This is the specific uuid of an anchor.
@@ -229,14 +229,14 @@ const body: Pieces.AnchorSpecificAnchorSnapshotRequest = {
 };
 
 apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -257,7 +257,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | Anchor not found. |  -  |
 
-## **anchorUpdate**
+## **anchorUpdate** {#anchorupdate}
 > Anchor anchorUpdate()
 
 This will update a specific anchor.
@@ -267,8 +267,8 @@ This will update a specific anchor.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -278,14 +278,14 @@ const body: Pieces.AnchorUpdateRequest = {
 };
 
 apiInstance.anchorUpdate(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchor** | **Anchor**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

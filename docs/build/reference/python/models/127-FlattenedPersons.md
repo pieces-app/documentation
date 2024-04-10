@@ -30,4 +30,3 @@ flattened_persons_form_dict = flattened_persons.from_dict(flattened_persons_dict
 ```
 
 
-

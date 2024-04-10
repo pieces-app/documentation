@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**imageAnalysesSnapshot**](ImageAnalysesApi#imageanalysessnapshot) | **GET** /image_analyses
+[**imageAnalysesSnapshot****](ImageAnalysesApi#imageanalysessnapshot) | **GET** /image_analyses
 
 
-## **imageAnalysesSnapshot**
+## **imageAnalysesSnapshot** {#imageanalysessnapshot}
 > ImageAnalyses imageAnalysesSnapshot()
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an image analysis.
@@ -17,8 +17,8 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ImageAnalysesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ImageAnalysesApi(configuration)
 
 const body: Pieces.ImageAnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -26,14 +26,14 @@ const body: Pieces.ImageAnalysesSnapshotRequest = {
 };
 
 apiInstance.imageAnalysesSnapshot(body).then((data: ImageAnalyses) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**code_analyses_snapshot**](CodeAnalysesApi#code_analyses_snapshot) | **GET** /code_analyses | Your GET endpoint
+Method | HTTP request
+------------- | -------------
+[**code_analyses_snapshot**](CodeAnalysesApi#code_analyses_snapshot) | **GET** /code_analyses
 
 
-## **code_analyses_snapshot**
+## **code_analyses_snapshot** {#code_analyses_snapshot}
 > CodeAnalyses code_analyses_snapshot()
 
 Your GET endpoint
@@ -48,7 +48,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

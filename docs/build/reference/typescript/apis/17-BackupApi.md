@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**backup**](BackupApi#backup) | **POST** /backup
-[**backupAsset**](BackupApi#backupasset) | **POST** /backup/asset
-[**backupRestoreSpecificBackup**](BackupApi#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore
-[**backupRestoreSpecificBackupStreamed**](BackupApi#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed
-[**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\}
+[**backup****](BackupApi#backup) | **POST** /backup
+[**backupAsset****](BackupApi#backupasset) | **POST** /backup/asset
+[**backupRestoreSpecificBackup****](BackupApi#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore
+[**backupRestoreSpecificBackupStreamed****](BackupApi#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed
+[**backupSpecificBackupSnapshot****](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\}
 
 
-## **backup**
+## **backup** {#backup}
 > backup()
 
 
@@ -21,8 +21,8 @@ Method | HTTP request
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.BackupApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRequest = {
     // Assets (optional)
@@ -30,14 +30,14 @@ const body: Pieces.BackupRequest = {
 };
 
 apiInstance.backup(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **assets** | **Assets**|  |
 
 
@@ -58,7 +58,7 @@ void (empty response body)
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-## **backupAsset**
+## **backupAsset** {#backupasset}
 > backupAsset()
 
 
@@ -67,8 +67,8 @@ void (empty response body)
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.BackupApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupAssetRequest = {
     // Asset (optional)
@@ -76,14 +76,14 @@ const body: Pieces.BackupAssetRequest = {
 };
 
 apiInstance.backupAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | **Asset**|  |
 
 
@@ -104,7 +104,7 @@ void (empty response body)
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-## **backupRestoreSpecificBackup**
+## **backupRestoreSpecificBackup** {#backuprestorespecificbackup}
 > Backup backupRestoreSpecificBackup()
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
@@ -114,8 +114,8 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.BackupApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -125,14 +125,14 @@ const body: Pieces.BackupRestoreSpecificBackupRequest = {
 };
 
 apiInstance.backupRestoreSpecificBackup(body).then((data: Backup) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
@@ -153,7 +153,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **backupRestoreSpecificBackupStreamed**
+## **backupRestoreSpecificBackupStreamed** {#backuprestorespecificbackupstreamed}
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed()
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
@@ -163,8 +163,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.BackupApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupStreamedRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -174,14 +174,14 @@ const body: Pieces.BackupRestoreSpecificBackupStreamedRequest = {
 };
 
 apiInstance.backupRestoreSpecificBackupStreamed(body).then((data: BackupStreamedProgress) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
@@ -202,7 +202,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **backupSpecificBackupSnapshot**
+## **backupSpecificBackupSnapshot** {#backupspecificbackupsnapshot}
 > Backup backupSpecificBackupSnapshot()
 
 This will just get the metadata associated with a specific backup.
@@ -212,8 +212,8 @@ This will just get the metadata associated with a specific backup.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.BackupApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificBackupSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -221,14 +221,14 @@ const body: Pieces.BackupSpecificBackupSnapshotRequest = {
 };
 
 apiInstance.backupSpecificBackupSnapshot(body).then((data: Backup) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 

@@ -30,4 +30,3 @@ qgpt_conversation_pipeline_form_dict = qgpt_conversation_pipeline.from_dict(qgpt
 ```
 
 
-

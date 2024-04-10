@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**activities_create_new_activity**](ActivitiesApi#activities_create_new_activity) | **POST** /activities/create | /activities/create [POST]
-[**activities_delete_specific_activity**](ActivitiesApi#activities_delete_specific_activity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
-[**activities_snapshot**](ActivitiesApi#activities_snapshot) | **GET** /activities | /activities [GET]
+Method | HTTP request
+------------- | -------------
+[**activities_create_new_activity**](ActivitiesApi#activities_create_new_activity) | **POST** /activities/create
+[**activities_delete_specific_activity**](ActivitiesApi#activities_delete_specific_activity) | **POST** /activities/\{activity\}/delete
+[**activities_snapshot**](ActivitiesApi#activities_snapshot) | **GET** /activities
 
 
-## **activities_create_new_activity**
+## **activities_create_new_activity** {#activities_create_new_activity}
 > Activity activities_create_new_activity(transferables=transferables, seeded_activity=seeded_activity)
 
 /activities/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **activities_delete_specific_activity**
+## **activities_delete_specific_activity** {#activities_delete_specific_activity}
 > activities_delete_specific_activity(activity)
 
 /activities/\{activity\}/delete [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **activities_snapshot**
+## **activities_snapshot** {#activities_snapshot}
 > Activities activities_snapshot(transferables=transferables, pseudo=pseudo)
 
 /activities [GET]

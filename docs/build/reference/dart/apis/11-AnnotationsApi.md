@@ -1,10 +1,5 @@
 # Annotations API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**annotationsSnapshot**](AnnotationsApi#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
-## **annotationsCreateNewAnnotation**
+## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}
 > Annotation annotationsCreateNewAnnotation(seededAnnotation)
 
 /annotations/create [POST]
@@ -23,7 +18,7 @@ This will create an annotation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationsApi();
 final seededAnnotation = SeededAnnotation(); // SeededAnnotation | 
@@ -57,7 +52,7 @@ No authorization required
 
 
 
-## **annotationsDeleteSpecificAnnotation**
+## **annotationsDeleteSpecificAnnotation** {#annotationsdeletespecificannotation}
 > annotationsDeleteSpecificAnnotation(annotation)
 
 /annotations/\{annotation\}/delete [POST]
@@ -66,7 +61,7 @@ this will delete a specific annotation
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationsApi();
 final annotation = annotation_example; // String | This is a specific annotation uuid.
@@ -99,7 +94,7 @@ No authorization required
 
 
 
-## **annotationsSnapshot**
+## **annotationsSnapshot** {#annotationssnapshot}
 > Annotations annotationsSnapshot(annotationTypeFilter)
 
 /annotations [GET]
@@ -108,7 +103,7 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationsApi();
 final annotationTypeFilter = annotationTypeFilter_example; // String | This is an AnnotationTypeEnum as a optional filter.

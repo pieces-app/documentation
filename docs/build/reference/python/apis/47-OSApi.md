@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**link_provider**](OSApi#link_provider) | **POST** /os/link_provider | /os/link_provider [POST]
-[**os_device_information**](OSApi#os_device_information) | **GET** /os/device/information | /os/device/information [GET]
-[**os_restart**](OSApi#os_restart) | **GET** /os/restart | Your GET endpoint
-[**os_update_check**](OSApi#os_update_check) | **POST** /os/update/check | /os/update/check [POST]
-[**pick_files**](OSApi#pick_files) | **POST** /os/files/pick | /os/files/pick [POST]
-[**pick_folders**](OSApi#pick_folders) | **POST** /os/folders/pick | /os/folders/pick [POST]
-[**sign_into_os**](OSApi#sign_into_os) | **POST** /os/sign_in | 
-[**sign_out_of_os**](OSApi#sign_out_of_os) | **POST** /os/sign_out | /os/sign_out [POST]
+Method | HTTP request
+------------- | -------------
+[**link_provider**](OSApi#link_provider) | **POST** /os/link_provider
+[**os_device_information**](OSApi#os_device_information) | **GET** /os/device/information
+[**os_restart**](OSApi#os_restart) | **GET** /os/restart
+[**os_update_check**](OSApi#os_update_check) | **POST** /os/update/check
+[**pick_files**](OSApi#pick_files) | **POST** /os/files/pick
+[**pick_folders**](OSApi#pick_folders) | **POST** /os/folders/pick
+[**sign_into_os**](OSApi#sign_into_os) | **POST** /os/sign_in
+[**sign_out_of_os**](OSApi#sign_out_of_os) | **POST** /os/sign_out
 
 
-## **link_provider**
+## **link_provider** {#link_provider}
 > ReturnedUserProfile link_provider(seeded_external_provider=seeded_external_provider)
 
 /os/link_provider [POST]
@@ -85,7 +85,7 @@ No authorization required
 
 
 
-## **os_device_information**
+## **os_device_information** {#os_device_information}
 > OSDeviceInformationReturnable os_device_information()
 
 /os/device/information [GET]
@@ -126,7 +126,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -150,7 +150,7 @@ No authorization required
 
 
 
-## **os_restart**
+## **os_restart** {#os_restart}
 > os_restart()
 
 Your GET endpoint
@@ -188,7 +188,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -212,7 +212,7 @@ No authorization required
 
 
 
-## **os_update_check**
+## **os_update_check** {#os_update_check}
 > CheckedOSUpdate os_update_check(unchecked_os_update=unchecked_os_update)
 
 /os/update/check [POST]
@@ -282,7 +282,7 @@ No authorization required
 
 
 
-## **pick_files**
+## **pick_files** {#pick_files}
 > List[str] pick_files(file_picker_input=file_picker_input)
 
 /os/files/pick [POST]
@@ -351,7 +351,7 @@ No authorization required
 
 
 
-## **pick_folders**
+## **pick_folders** {#pick_folders}
 > List[str] pick_folders()
 
 /os/folders/pick [POST]
@@ -391,7 +391,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -415,7 +415,7 @@ No authorization required
 
 
 
-## **sign_into_os**
+## **sign_into_os** {#sign_into_os}
 > UserProfile sign_into_os()
 
 
@@ -456,7 +456,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -479,7 +479,7 @@ No authorization required
 
 
 
-## **sign_out_of_os**
+## **sign_out_of_os** {#sign_out_of_os}
 > Users sign_out_of_os()
 
 /os/sign_out [POST]
@@ -520,7 +520,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

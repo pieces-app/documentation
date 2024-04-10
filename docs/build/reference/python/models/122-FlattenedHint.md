@@ -37,4 +37,3 @@ flattened_hint_form_dict = flattened_hint.from_dict(flattened_hint_dict)
 ```
 
 
-

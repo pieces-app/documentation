@@ -30,4 +30,3 @@ seeded_asset_tag_form_dict = seeded_asset_tag.from_dict(seeded_asset_tag_dict)
 ```
 
 
-

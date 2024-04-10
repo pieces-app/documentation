@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**clear_pkce**](PKCEApi#clear_pkce) | **POST** /pkce/clear | /pkce/clear [POST]
-[**generate_code**](PKCEApi#generate_code) | **POST** /pkce/code | /pkce/code [POST]
-[**generate_token**](PKCEApi#generate_token) | **POST** /pkce/token | /pkce/token [POST]
-[**get_challenge**](PKCEApi#get_challenge) | **GET** /pkce/challenge | Your GET endpoint
-[**respond_with_code**](PKCEApi#respond_with_code) | **POST** /pkce/response/code | /pkce/response/code [POST]
+Method | HTTP request
+------------- | -------------
+[**clear_pkce**](PKCEApi#clear_pkce) | **POST** /pkce/clear
+[**generate_code**](PKCEApi#generate_code) | **POST** /pkce/code
+[**generate_token**](PKCEApi#generate_token) | **POST** /pkce/token
+[**get_challenge**](PKCEApi#get_challenge) | **GET** /pkce/challenge
+[**respond_with_code**](PKCEApi#respond_with_code) | **POST** /pkce/response/code
 
 
-## **clear_pkce**
+## **clear_pkce** {#clear_pkce}
 > clear_pkce()
 
 /pkce/clear [POST]
@@ -49,7 +49,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -72,7 +72,7 @@ No authorization required
 
 
 
-## **generate_code**
+## **generate_code** {#generate_code}
 > PKCE generate_code(seeded_pkce=seeded_pkce)
 
 /pkce/code [POST]
@@ -141,7 +141,7 @@ No authorization required
 
 
 
-## **generate_token**
+## **generate_token** {#generate_token}
 > PKCE generate_token(tokenized_pkce=tokenized_pkce)
 
 /pkce/token [POST]
@@ -210,7 +210,7 @@ No authorization required
 
 
 
-## **get_challenge**
+## **get_challenge** {#get_challenge}
 > PKCE get_challenge()
 
 Your GET endpoint
@@ -251,7 +251,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -274,7 +274,7 @@ No authorization required
 
 
 
-## **respond_with_code**
+## **respond_with_code** {#respond_with_code}
 > PKCE respond_with_code(code, state, var_schema=var_schema)
 
 /pkce/response/code [POST]

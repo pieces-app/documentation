@@ -32,4 +32,3 @@ flattened_ocr_analysis_form_dict = flattened_ocr_analysis.from_dict(flattened_oc
 ```
 
 
-

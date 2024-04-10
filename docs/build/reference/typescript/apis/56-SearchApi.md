@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**fullTextSearch**](SearchApi#fulltextsearch) | **GET** /search/full_text
-[**neuralCodeSearch**](SearchApi#neuralcodesearch) | **GET** /search/neural_code
-[**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based
+[**fullTextSearch****](SearchApi#fulltextsearch) | **GET** /search/full_text
+[**neuralCodeSearch****](SearchApi#neuralcodesearch) | **GET** /search/neural_code
+[**tagBasedSearch****](SearchApi#tagbasedsearch) | **POST** /search/tag_based
 
 
-## **fullTextSearch**
+## **fullTextSearch** {#fulltextsearch}
 > SearchedAssets fullTextSearch()
 
 This will run FTS for exact search, and will NOT run fuzzy matching. This will only search the content within the 
@@ -19,8 +19,8 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SearchApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SearchApi(configuration)
 
 const body: Pieces.FullTextSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
@@ -30,14 +30,14 @@ const body: Pieces.FullTextSearchRequest = {
 };
 
 apiInstance.fullTextSearch(body).then((data: SearchedAssets) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
@@ -58,7 +58,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **neuralCodeSearch**
+## **neuralCodeSearch** {#neuralcodesearch}
 > SearchedAssets neuralCodeSearch()
 
 This will run ncs on your assets. This will simply return FlattenedAssets, but will just be the assetuuids that match.
@@ -68,8 +68,8 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SearchApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SearchApi(configuration)
 
 const body: Pieces.NeuralCodeSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
@@ -79,14 +79,14 @@ const body: Pieces.NeuralCodeSearchRequest = {
 };
 
 apiInstance.neuralCodeSearch(body).then((data: SearchedAssets) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
@@ -107,7 +107,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagBasedSearch**
+## **tagBasedSearch** {#tagbasedsearch}
 > SearchedAssets tagBasedSearch()
 
 This will run our tag based search, and return the assets that best match your passed in tags. This will simply return FlattenedAssets, but will just be the assetuuids that match.
@@ -117,8 +117,8 @@ This will run our tag based search, and return the assets that best match your p
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SearchApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SearchApi(configuration)
 
 const body: Pieces.TagBasedSearchRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
@@ -128,14 +128,14 @@ const body: Pieces.TagBasedSearchRequest = {
 };
 
 apiInstance.tagBasedSearch(body).then((data: SearchedAssets) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededAssetTags** | **SeededAssetTags**|  |
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 

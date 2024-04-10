@@ -1,10 +1,5 @@
 # Discovery API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -15,7 +10,7 @@ Method | HTTP request | Description
 [**discoveryDiscoverTagsRelated**](DiscoveryApi#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
-## **discoveryDiscoverAssets**
+## **discoveryDiscoverAssets** {#discoverydiscoverassets}
 > DiscoveredAssets discoveryDiscoverAssets(automatic, seededDiscoverableAssets)
 
 /discovery/discover/assets [POST]
@@ -24,7 +19,7 @@ This is the endpoint used for bulk import. In both cases of the bulk import flow
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DiscoveryApi();
 final automatic = true; // bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -60,7 +55,7 @@ No authorization required
 
 
 
-## **discoveryDiscoverAssetsHtml**
+## **discoveryDiscoverAssetsHtml** {#discoverydiscoverassetshtml}
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml(automatic, seededDiscoverableHtmlWebpages)
 
 /discovery/discover/assets/html[POST]
@@ -69,7 +64,7 @@ This is the discover discover assets html endpoint. The goal of this endpoint is
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DiscoveryApi();
 final automatic = true; // bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -105,7 +100,7 @@ No authorization required
 
 
 
-## **discoveryDiscoverSensitives**
+## **discoveryDiscoverSensitives** {#discoverydiscoversensitives}
 > DiscoveredSensitives discoveryDiscoverSensitives(automatic, seededDiscoverableSensitives)
 
 /discovery/discover/sensitives [POST]
@@ -114,7 +109,7 @@ This endpoint will accept an array of text values, and attampt to extract sensit
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DiscoveryApi();
 final automatic = true; // bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -150,7 +145,7 @@ No authorization required
 
 
 
-## **discoveryDiscoverTagsRelated**
+## **discoveryDiscoverTagsRelated** {#discoverydiscovertagsrelated}
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated(automatic, seededDiscoverableRelatedTags)
 
 /discovery/discover/tags/related [POST]
@@ -159,7 +154,7 @@ This will take in a tag or multiple tags and return all the tags that are relate
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DiscoveryApi();
 final automatic = true; // bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.

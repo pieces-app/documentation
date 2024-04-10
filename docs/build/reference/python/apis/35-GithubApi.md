@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**import_github_gists**](GithubApi#import_github_gists) | **POST** /github/gists/import | /github/gists/import [POST]
+Method | HTTP request
+------------- | -------------
+[**import_github_gists**](GithubApi#import_github_gists) | **POST** /github/gists/import
 
 
-## **import_github_gists**
+## **import_github_gists** {#import_github_gists}
 > Seeds import_github_gists(automatic=automatic, seeded_github_gists_import=seeded_github_gists_import)
 
 /github/gists/import [POST]

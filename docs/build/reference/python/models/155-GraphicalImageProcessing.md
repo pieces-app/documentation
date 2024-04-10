@@ -27,4 +27,3 @@ graphical_image_processing_form_dict = graphical_image_processing.from_dict(grap
 ```
 
 
-

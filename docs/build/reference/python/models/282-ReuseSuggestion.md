@@ -29,4 +29,3 @@ reuse_suggestion_form_dict = reuse_suggestion.from_dict(reuse_suggestion_dict)
 ```
 
 
-

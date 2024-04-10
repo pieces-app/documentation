@@ -14,24 +14,24 @@ Name | Type
 ## Example
 
 ```typescript
-import { ReferencedFormat } from '@pieces.app/pieces-os-client';
+import { ReferencedFormat } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: ReferencedFormat = {
     "schema": null,
     "id": 102ff265-fdfb-4142-8d94-4932d400199c,
     "reference": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ReferencedFormat;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as ReferencedFormat
+console.log(exampleParsed)
 ```
 
 

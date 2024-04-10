@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**sendLocalNotification**](NotificationsApi#sendlocalnotification) | **POST** /notifications/local/send
+[**sendLocalNotification****](NotificationsApi#sendlocalnotification) | **POST** /notifications/local/send
 
 
-## **sendLocalNotification**
+## **sendLocalNotification** {#sendlocalnotification}
 > sendLocalNotification()
 
 Retrieves a snapshot of all available models.
@@ -17,8 +17,8 @@ Retrieves a snapshot of all available models.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.NotificationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.NotificationsApi(configuration)
 
 const body: Pieces.SendLocalNotificationRequest = {
     // Notification (optional)
@@ -26,14 +26,14 @@ const body: Pieces.SendLocalNotificationRequest = {
 };
 
 apiInstance.sendLocalNotification(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **notification** | **Notification**|  |
 
 

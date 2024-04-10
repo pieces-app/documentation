@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**authenticate_from_oauth_token**](UsersApi#authenticate_from_oauth_token) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
-[**users_disconnect_user**](UsersApi#users_disconnect_user) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
-[**users_snapshot**](UsersApi#users_snapshot) | **GET** /users | /users [GET]
-[**users_specific_user_snapshot**](UsersApi#users_specific_user_snapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
+Method | HTTP request
+------------- | -------------
+[**authenticate_from_oauth_token**](UsersApi#authenticate_from_oauth_token) | **POST** /users/authenticate/from_token
+[**users_disconnect_user**](UsersApi#users_disconnect_user) | **POST** /users/\{user\}/disconnect
+[**users_snapshot**](UsersApi#users_snapshot) | **GET** /users
+[**users_specific_user_snapshot**](UsersApi#users_specific_user_snapshot) | **GET** /users/\{user\}
 
 
-## **authenticate_from_oauth_token**
+## **authenticate_from_oauth_token** {#authenticate_from_oauth_token}
 > UserProfile authenticate_from_oauth_token(o_auth_token=o_auth_token)
 
 /users/authenticate/from_token [POST]
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 
 
-## **users_disconnect_user**
+## **users_disconnect_user** {#users_disconnect_user}
 > Users users_disconnect_user(user)
 
 /users/\{user\}/disconnect [POST]
@@ -160,7 +160,7 @@ No authorization required
 
 
 
-## **users_snapshot**
+## **users_snapshot** {#users_snapshot}
 > Users users_snapshot()
 
 /users [GET]
@@ -201,7 +201,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -224,7 +224,7 @@ No authorization required
 
 
 
-## **users_specific_user_snapshot**
+## **users_specific_user_snapshot** {#users_specific_user_snapshot}
 > UserProfile users_specific_user_snapshot(user)
 
 /users/\{user\} [GET] Scoped to Users

@@ -31,4 +31,3 @@ relevant_qgpt_seed_form_dict = relevant_qgpt_seed.from_dict(relevant_qgpt_seed_d
 ```
 
 
-

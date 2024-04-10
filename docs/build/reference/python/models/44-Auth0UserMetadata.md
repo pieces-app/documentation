@@ -34,4 +34,3 @@ auth0_user_metadata_form_dict = auth0_user_metadata.from_dict(auth0_user_metadat
 ```
 
 
-

@@ -1,10 +1,5 @@
 # ImageAnalyses API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -12,7 +7,7 @@ Method | HTTP request | Description
 [**imageAnalysesSnapshot**](ImageAnalysesApi#imageanalysessnapshot) | **GET** /image_analyses | Your GET endpoint
 
 
-## **imageAnalysesSnapshot**
+## **imageAnalysesSnapshot** {#imageanalysessnapshot}
 > ImageAnalyses imageAnalysesSnapshot(transferables)
 
 Your GET endpoint
@@ -21,7 +16,7 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ImageAnalysesApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

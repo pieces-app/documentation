@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**workstreamSummariesCreateNewWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create
-[**workstreamSummariesDeleteSpecificWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete
-[**workstreamSummariesSnapshot**](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries
+[**workstreamSummariesCreateNewWorkstreamSummary****](WorkstreamSummariesApi#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create
+[**workstreamSummariesDeleteSpecificWorkstreamSummary****](WorkstreamSummariesApi#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete
+[**workstreamSummariesSnapshot****](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries
 
 
-## **workstreamSummariesCreateNewWorkstreamSummary**
+## **workstreamSummariesCreateNewWorkstreamSummary** {#workstreamsummariescreatenewworkstreamsummary}
 > WorkstreamSummary workstreamSummariesCreateNewWorkstreamSummary()
 
 This will create a new WorkstreamSummary in the database.
@@ -19,8 +19,8 @@ This will create a new WorkstreamSummary in the database.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesCreateNewWorkstreamSummaryRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -30,14 +30,14 @@ const body: Pieces.WorkstreamSummariesCreateNewWorkstreamSummaryRequest = {
 };
 
 apiInstance.workstreamSummariesCreateNewWorkstreamSummary(body).then((data: WorkstreamSummary) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededWorkstreamSummary** | **SeededWorkstreamSummary**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -58,7 +58,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamSummariesDeleteSpecificWorkstreamSummary**
+## **workstreamSummariesDeleteSpecificWorkstreamSummary** {#workstreamsummariesdeletespecificworkstreamsummary}
 > workstreamSummariesDeleteSpecificWorkstreamSummary()
 
 This will delete a specific workstream_summary from the database!
@@ -68,8 +68,8 @@ This will delete a specific workstream_summary from the database!
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesDeleteSpecificWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -77,14 +77,14 @@ const body: Pieces.WorkstreamSummariesDeleteSpecificWorkstreamSummaryRequest = {
 };
 
 apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
@@ -104,7 +104,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **workstreamSummariesSnapshot**
+## **workstreamSummariesSnapshot** {#workstreamsummariessnapshot}
 > WorkstreamSummaries workstreamSummariesSnapshot()
 
 This will get a snapshot of all your workstream summaries.
@@ -114,8 +114,8 @@ This will get a snapshot of all your workstream summaries.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WorkstreamSummariesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -123,14 +123,14 @@ const body: Pieces.WorkstreamSummariesSnapshotRequest = {
 };
 
 apiInstance.workstreamSummariesSnapshot(body).then((data: WorkstreamSummaries) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

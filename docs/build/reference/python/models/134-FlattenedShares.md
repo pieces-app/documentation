@@ -29,4 +29,3 @@ flattened_shares_form_dict = flattened_shares.from_dict(flattened_shares_dict)
 ```
 
 
-

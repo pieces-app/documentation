@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**messagesCreateSpecificMessage**](ConversationMessagesApi#messagescreatespecificmessage) | **POST** /messages/create
-[**messagesDeleteSpecificMessage**](ConversationMessagesApi#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete
-[**messagesSnapshot**](ConversationMessagesApi#messagessnapshot) | **GET** /messages
+[**messagesCreateSpecificMessage****](ConversationMessagesApi#messagescreatespecificmessage) | **POST** /messages/create
+[**messagesDeleteSpecificMessage****](ConversationMessagesApi#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete
+[**messagesSnapshot****](ConversationMessagesApi#messagessnapshot) | **GET** /messages
 
 
-## **messagesCreateSpecificMessage**
+## **messagesCreateSpecificMessage** {#messagescreatespecificmessage}
 > ConversationMessage messagesCreateSpecificMessage()
 
 This will create a Message on a specific conversation.
@@ -19,8 +19,8 @@ This will create a Message on a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessagesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesCreateSpecificMessageRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -30,14 +30,14 @@ const body: Pieces.MessagesCreateSpecificMessageRequest = {
 };
 
 apiInstance.messagesCreateSpecificMessage(body).then((data: ConversationMessage) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededConversationMessage** | **SeededConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -58,7 +58,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messagesDeleteSpecificMessage**
+## **messagesDeleteSpecificMessage** {#messagesdeletespecificmessage}
 > messagesDeleteSpecificMessage()
 
 This will delete a specific message.
@@ -68,8 +68,8 @@ This will delete a specific message.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessagesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesDeleteSpecificMessageRequest = {
     // string | This is the uuid of a message.
@@ -77,14 +77,14 @@ const body: Pieces.MessagesDeleteSpecificMessageRequest = {
 };
 
 apiInstance.messagesDeleteSpecificMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
 
@@ -104,7 +104,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messagesSnapshot**
+## **messagesSnapshot** {#messagessnapshot}
 > ConversationMessages messagesSnapshot()
 
 This will get all the messages.
@@ -114,8 +114,8 @@ This will get all the messages.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessagesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -123,14 +123,14 @@ const body: Pieces.MessagesSnapshotRequest = {
 };
 
 apiInstance.messagesSnapshot(body).then((data: ConversationMessages) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

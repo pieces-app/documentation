@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**full_text_search**](SearchApi#full_text_search) | **GET** /search/full_text | /search/full_text [GET]
-[**neural_code_search**](SearchApi#neural_code_search) | **GET** /search/neural_code | /search/neural_code [GET]
-[**tag_based_search**](SearchApi#tag_based_search) | **POST** /search/tag_based | /search/tag_based [POST]
+Method | HTTP request
+------------- | -------------
+[**full_text_search**](SearchApi#full_text_search) | **GET** /search/full_text
+[**neural_code_search**](SearchApi#neural_code_search) | **GET** /search/neural_code
+[**tag_based_search**](SearchApi#tag_based_search) | **POST** /search/tag_based
 
 
-## **full_text_search**
+## **full_text_search** {#full_text_search}
 > SearchedAssets full_text_search(query=query, pseudo=pseudo)
 
 /search/full_text [GET]
@@ -80,7 +80,7 @@ No authorization required
 
 
 
-## **neural_code_search**
+## **neural_code_search** {#neural_code_search}
 > SearchedAssets neural_code_search(query=query, pseudo=pseudo)
 
 /search/neural_code [GET]
@@ -151,7 +151,7 @@ No authorization required
 
 
 
-## **tag_based_search**
+## **tag_based_search** {#tag_based_search}
 > SearchedAssets tag_based_search(pseudo=pseudo, seeded_asset_tags=seeded_asset_tags)
 
 /search/tag_based [POST]

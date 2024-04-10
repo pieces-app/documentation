@@ -32,4 +32,3 @@ qgpt_task_pipeline_form_dict = qgpt_task_pipeline.from_dict(qgpt_task_pipeline_d
 ```
 
 
-

@@ -37,4 +37,3 @@ hint_form_dict = hint.from_dict(hint_dict)
 ```
 
 
-

@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**databaseExport**](DatabaseApi#databaseexport) | **GET** /database/export
-[**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import
+[**databaseExport****](DatabaseApi#databaseexport) | **GET** /database/export
+[**databaseImport****](DatabaseApi#databaseimport) | **POST** /database/import
 
 
-## **databaseExport**
+## **databaseExport** {#databaseexport}
 > ExportedDatabase databaseExport()
 
 This is going to export your current database.
@@ -18,16 +18,16 @@ This is going to export your current database.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DatabaseApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DatabaseApi(configuration)
 
 apiInstance.databaseExport().then((data: ExportedDatabase) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -46,7 +46,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **databaseImport**
+## **databaseImport** {#databaseimport}
 > databaseImport()
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
@@ -56,8 +56,8 @@ This is going to take in a database, and merge it with the current database. Thi
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DatabaseApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DatabaseApi(configuration)
 
 const body: Pieces.DatabaseImportRequest = {
     // ExportedDatabase |  (optional)
@@ -65,14 +65,14 @@ const body: Pieces.DatabaseImportRequest = {
 };
 
 apiInstance.databaseImport(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **exportedDatabase** | **ExportedDatabase**|  |
 
 

@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/\{annotation\}/scores/increment | &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
-[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
-[**annotation_update**](AnnotationApi#annotation_update) | **POST** /annotation/update | /annotation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/\{annotation\}/scores/increment
+[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/\{annotation\}
+[**annotation_update**](AnnotationApi#annotation_update) | **POST** /annotation/update
 
 
-## **annotation_scores_increment**
+## **annotation_scores_increment** {#annotation_scores_increment}
 > annotation_scores_increment(annotation, seeded_score_increment=seeded_score_increment)
 
 '/annotation/\{annotation\}/scores/increment' [POST]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **annotation_specific_annotation_snapshot**
+## **annotation_specific_annotation_snapshot** {#annotation_specific_annotation_snapshot}
 > Annotation annotation_specific_annotation_snapshot(annotation)
 
 /annotation/\{annotation\} [GET]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **annotation_update**
+## **annotation_update** {#annotation_update}
 > Annotation annotation_update(annotation=annotation)
 
 /annotation/update [POST]

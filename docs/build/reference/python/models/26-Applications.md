@@ -28,4 +28,3 @@ applications_form_dict = applications.from_dict(applications_dict)
 ```
 
 
-

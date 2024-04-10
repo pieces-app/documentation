@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
+[**relationshipsSnapshot****](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
 
 
-## **relationshipsSnapshot**
+## **relationshipsSnapshot** {#relationshipssnapshot}
 > Relationships relationshipsSnapshot()
 
 This will reurn all of the relationships that exists within your pieces db.
@@ -17,16 +17,16 @@ This will reurn all of the relationships that exists within your pieces db.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.RelationshipsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.RelationshipsApi(configuration)
 
 apiInstance.relationshipsSnapshot().then((data: Relationships) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

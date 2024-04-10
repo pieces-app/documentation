@@ -38,4 +38,3 @@ activity_form_dict = activity.from_dict(activity_dict)
 ```
 
 
-

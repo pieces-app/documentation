@@ -1,10 +1,5 @@
 # Auth0 API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -15,7 +10,7 @@ Method | HTTP request | Description
 [**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
 
-## **auth0Logout**
+## **auth0Logout** {#auth0logout}
 > String auth0Logout(clientId, returnTo)
 
 https://auth.pieces.services/v2/logout [GET]
@@ -24,7 +19,7 @@ https://auth0.com/docs/api/authentication#logout
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = Auth0Api();
 final clientId = clientId_example; // String | The client ID of the Auth0 Instance
@@ -60,7 +55,7 @@ No authorization required
 
 
 
-## **authorizeAuth0**
+## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
 
 https://auth.pieces.services/authorize [GET]
@@ -69,7 +64,7 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = Auth0Api();
 final audience = https://pieces.us.auth0.com/api/v2/; // String |  The unique identifier of the target API you want to access.
@@ -123,7 +118,7 @@ No authorization required
 
 
 
-## **exchangeForAuth0Token**
+## **exchangeForAuth0Token** {#exchangeforauth0token}
 > OAuthToken exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
 
 https://auth.pieces.services/oauth/token [POST]
@@ -132,7 +127,7 @@ An endpoint to generate a OAuth Token for an authentication flow.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = Auth0Api();
 final grantType = grantType_example; // String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -178,7 +173,7 @@ No authorization required
 
 
 
-## **getAuth0UserInfo**
+## **getAuth0UserInfo** {#getauth0userinfo}
 > Auth0User getAuth0UserInfo()
 
 https://auth.pieces.services/userinfo [GET]
@@ -187,7 +182,7 @@ Get the users info from the Auth0 API
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
 //defaultApiClient.getAuthentication\<OAuth\>**('auth0').accessToken = 'YOUR_ACCESS_TOKEN';
 // TODO Configure OAuth2 access token for authorization: auth0

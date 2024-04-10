@@ -35,4 +35,3 @@ anchor_point_form_dict = anchor_point.from_dict(anchor_point_dict)
 ```
 
 
-

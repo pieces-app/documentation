@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/\{share\}/scores/increment | &#39;/share/\{share\}/scores/increment&#39; [POST]
-[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/\{share\} | /share/\{share\}
-[**share_update**](ShareApi#share_update) | **POST** /share/update | /share/update [POST]
+Method | HTTP request
+------------- | -------------
+[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/\{share\}/scores/increment
+[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/\{share\}
+[**share_update**](ShareApi#share_update) | **POST** /share/update
 
 
-## **share_scores_increment**
+## **share_scores_increment** {#share_scores_increment}
 > share_scores_increment(share, seeded_score_increment=seeded_score_increment)
 
 '/share/\{share\}/scores/increment' [POST]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **share_snapshot**
+## **share_snapshot** {#share_snapshot}
 > Share share_snapshot(share, transferables=transferables)
 
 /share/\{share\}
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **share_update**
+## **share_update** {#share_update}
 > Share share_update(transferables=transferables, share=share)
 
 /share/update [POST]

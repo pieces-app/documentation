@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**auth0_logout**](Auth0Api#auth0_logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorize_auth0**](Auth0Api#authorize_auth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchange_for_auth0_token**](Auth0Api#exchange_for_auth0_token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**get_auth0_user_info**](Auth0Api#get_auth0_user_info) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+Method | HTTP request
+------------- | -------------
+[**auth0_logout**](Auth0Api#auth0_logout) | **GET** /v2/logout
+[**authorize_auth0**](Auth0Api#authorize_auth0) | **GET** /authorize
+[**exchange_for_auth0_token**](Auth0Api#exchange_for_auth0_token) | **POST** /oauth/token
+[**get_auth0_user_info**](Auth0Api#get_auth0_user_info) | **GET** /userinfo
 
 
-## **auth0_logout**
+## **auth0_logout** {#auth0_logout}
 > str auth0_logout(client_id=client_id, return_to=return_to)
 
 https://auth.pieces.services/v2/logout [GET]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **authorize_auth0**
+## **authorize_auth0** {#authorize_auth0}
 > ResultedPKCE authorize_auth0(audience, scope, response_type, client_id, code_challenge_method, code_challenge, response_mode, state=state, redirect_uri=redirect_uri, connection=connection, prompt=prompt)
 
 https://auth.pieces.services/authorize [GET]
@@ -167,7 +167,7 @@ No authorization required
 
 
 
-## **exchange_for_auth0_token**
+## **exchange_for_auth0_token** {#exchange_for_auth0_token}
 > OAuthToken exchange_for_auth0_token(grant_type, client_id, code, redirect_uri, code_verifier, var_schema=var_schema, audience=audience)
 
 https://auth.pieces.services/oauth/token [POST]
@@ -248,7 +248,7 @@ No authorization required
 
 
 
-## **get_auth0_user_info**
+## **get_auth0_user_info** {#get_auth0_user_info}
 > Auth0User get_auth0_user_info()
 
 https://auth.pieces.services/userinfo [GET]
@@ -302,7 +302,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

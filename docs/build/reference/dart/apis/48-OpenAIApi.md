@@ -1,10 +1,5 @@
 # OpenAI API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -12,7 +7,7 @@ Method | HTTP request | Description
 [**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
-## **openAiModelsList**
+## **openAiModelsList** {#openaimodelslist}
 > OpenAIModelsListOutput openAiModelsList(openAIModelsListInput)
 
 /open_ai/models/list [POST]
@@ -21,7 +16,7 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = OpenAIApi();
 final openAIModelsListInput = OpenAIModelsListInput(); // OpenAIModelsListInput | 

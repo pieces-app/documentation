@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**send_local_notification**](NotificationsApi#send_local_notification) | **POST** /notifications/local/send | Send notification
+Method | HTTP request
+------------- | -------------
+[**send_local_notification**](NotificationsApi#send_local_notification) | **POST** /notifications/local/send
 
 
-## **send_local_notification**
+## **send_local_notification** {#send_local_notification}
 > send_local_notification(notification=notification)
 
 Send notification
 
-This one is to universaly send notifications from any member of the system
+Retrieves a snapshot of all available models.
 
 ### Example
 

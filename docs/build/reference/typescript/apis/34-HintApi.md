@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
-[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
-[**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update
+[**hintScoresIncrement****](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
+[**hintSpecificHintSnapshot****](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
+[**hintUpdate****](HintApi#hintupdate) | **POST** /hint/update
 
 
-## **hintScoresIncrement**
+## **hintScoresIncrement** {#hintscoresincrement}
 > hintScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -19,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.HintApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.HintApi(configuration)
 
 const body: Pieces.HintScoresIncrementRequest = {
     // string | This is a specific hint uuid
@@ -30,14 +30,14 @@ const body: Pieces.HintScoresIncrementRequest = {
 };
 
 apiInstance.hintScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
@@ -58,7 +58,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **hintSpecificHintSnapshot**
+## **hintSpecificHintSnapshot** {#hintspecifichintsnapshot}
 > Hint hintSpecificHintSnapshot()
 
 This will get a snapshot of a specific hint.
@@ -68,8 +68,8 @@ This will get a snapshot of a specific hint.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.HintApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.HintApi(configuration)
 
 const body: Pieces.HintSpecificHintSnapshotRequest = {
     // string | This is a specific hint uuid
@@ -77,14 +77,14 @@ const body: Pieces.HintSpecificHintSnapshotRequest = {
 };
 
 apiInstance.hintSpecificHintSnapshot(body).then((data: Hint) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
@@ -104,7 +104,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **hintUpdate**
+## **hintUpdate** {#hintupdate}
 > Hint hintUpdate()
 
 This will update a specific hint.
@@ -114,8 +114,8 @@ This will update a specific hint.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.HintApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.HintApi(configuration)
 
 const body: Pieces.HintUpdateRequest = {
     // Hint (optional)
@@ -123,14 +123,14 @@ const body: Pieces.HintUpdateRequest = {
 };
 
 apiInstance.hintUpdate(body).then((data: Hint) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **hint** | **Hint**|  |
 
 

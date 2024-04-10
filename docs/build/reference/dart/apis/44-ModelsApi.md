@@ -1,10 +1,5 @@
 # Models API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -16,16 +11,16 @@ Method | HTTP request | Description
 [**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
-## **modelsCreateNewModel**
+## **modelsCreateNewModel** {#modelscreatenewmodel}
 > Model modelsCreateNewModel(seededModel)
 
 /models/create [POST]
 
-This will create a ml model, this is aloud however all models will be set to custom: true.  && we will verify we dont have a model that matches this model.
+Creates a machine learning model. By default, all models created through this endpoint will have the 'custom' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelsApi();
 final seededModel = SeededModel(); // SeededModel | 
@@ -59,16 +54,16 @@ No authorization required
 
 
 
-## **modelsDeleteSpecificModel**
+## **modelsDeleteSpecificModel** {#modelsdeletespecificmodel}
 > modelsDeleteSpecificModel(model)
 
 /models/\{model\}/delete [POST]
 
-This will delete a model, This is only available for custom: true models.
+Deletes a specific model. It is exclusively available for custom models with the 'custom: true' attribute.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelsApi();
 final model = model_example; // String | model id
@@ -101,16 +96,16 @@ No authorization required
 
 
 
-## **modelsDeleteSpecificModelCache**
+## **modelsDeleteSpecificModelCache** {#modelsdeletespecificmodelcache}
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
 
 /models/\{model\}/delete/cache [POST]
 
-This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
+Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelsApi();
 final model = model_example; // String | model id
@@ -146,7 +141,7 @@ No authorization required
 
 
 
-## **modelsSnapshot**
+## **modelsSnapshot** {#modelssnapshot}
 > Models modelsSnapshot()
 
 /models [GET]
@@ -155,7 +150,7 @@ This will get a snapshot of all of your models.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelsApi();
 
@@ -185,16 +180,16 @@ No authorization required
 
 
 
-## **unloadModels**
+## **unloadModels** {#unloadmodels}
 > unloadModels()
 
 /models/unload [POST]
 
-This will unload all of the ml models.(that are unloadable)
+Unloads all available machine learning models that are unloadable.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelsApi();
 

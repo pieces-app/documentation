@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
+[**openAiModelsList****](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
 
 
-## **openAiModelsList**
+## **openAiModelsList** {#openaimodelslist}
 > OpenAIModelsListOutput openAiModelsList()
 
 This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.apiKey.  if the user is unauthenticated or if the openAI key doesnt exist or if it is invalid we will return a 401.  Requires internet as this will ping out to OpenAI\'s server to get the models.
@@ -17,8 +17,8 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.OpenAIApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.OpenAIApi(configuration)
 
 const body: Pieces.OpenAiModelsListRequest = {
     // OpenAIModelsListInput (optional)
@@ -26,14 +26,14 @@ const body: Pieces.OpenAiModelsListRequest = {
 };
 
 apiInstance.openAiModelsList(body).then((data: OpenAIModelsListOutput) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **openAIModelsListInput** | **OpenAIModelsListInput**|  |
 
 

@@ -1,10 +1,5 @@
 # Distribution API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
-## **distributionUpdate**
+## **distributionUpdate** {#distributionupdate}
 > Distribution distributionUpdate(distribution)
 
 /distribution/update [POST]
@@ -22,7 +17,7 @@ This will update a specific Distribution.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DistributionApi();
 final distribution = Distribution(); // Distribution | 
@@ -56,7 +51,7 @@ No authorization required
 
 
 
-## **distributionsSpecificDistributionSnapshot**
+## **distributionsSpecificDistributionSnapshot** {#distributionsspecificdistributionsnapshot}
 > Distribution distributionsSpecificDistributionSnapshot(distribution)
 
 /distribution/\{distribution\} [GET]
@@ -65,7 +60,7 @@ This will get a specific snapshot of a distribution.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DistributionApi();
 final distribution = distribution_example; // String | This is the uuid of a specific distribution.

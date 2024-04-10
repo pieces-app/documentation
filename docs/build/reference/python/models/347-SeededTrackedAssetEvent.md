@@ -30,4 +30,3 @@ seeded_tracked_asset_event_form_dict = seeded_tracked_asset_event.from_dict(seed
 ```
 
 
-

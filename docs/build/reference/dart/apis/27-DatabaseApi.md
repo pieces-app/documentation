@@ -1,10 +1,5 @@
 # Database API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
-## **databaseExport**
+## **databaseExport** {#databaseexport}
 > ExportedDatabase databaseExport()
 
 Your GET endpoint
@@ -22,7 +17,7 @@ This is going to export your current database.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DatabaseApi();
 
@@ -52,7 +47,7 @@ No authorization required
 
 
 
-## **databaseImport**
+## **databaseImport** {#databaseimport}
 > databaseImport(exportedDatabase)
 
 /database/import [POST]
@@ -61,7 +56,7 @@ This is going to take in a database, and merge it with the current database. Thi
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = DatabaseApi();
 final exportedDatabase = ExportedDatabase(); // ExportedDatabase | 

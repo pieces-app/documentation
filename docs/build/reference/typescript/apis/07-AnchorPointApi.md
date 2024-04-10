@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment
-[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\}
-[**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update
+[**anchorPointScoresIncrement****](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment
+[**anchorPointSpecificAnchorPointSnapshot****](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\}
+[**anchorPointUpdate****](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update
 
 
-## **anchorPointScoresIncrement**
+## **anchorPointScoresIncrement** {#anchorpointscoresincrement}
 > anchorPointScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -19,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -30,14 +30,14 @@ const body: Pieces.AnchorPointScoresIncrementRequest = {
 };
 
 apiInstance.anchorPointScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
@@ -58,7 +58,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorPointSpecificAnchorPointSnapshot**
+## **anchorPointSpecificAnchorPointSnapshot** {#anchorpointspecificanchorpointsnapshot}
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot()
 
 This will get a snapshot of a single anchorPoint.
@@ -68,8 +68,8 @@ This will get a snapshot of a single anchorPoint.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointSpecificAnchorPointSnapshotRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -79,14 +79,14 @@ const body: Pieces.AnchorPointSpecificAnchorPointSnapshotRequest = {
 };
 
 apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -107,7 +107,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | AnchorPoint not found. |  -  |
 
-## **anchorPointUpdate**
+## **anchorPointUpdate** {#anchorpointupdate}
 > AnchorPoint anchorPointUpdate()
 
 This will update a specific anchorPoint.
@@ -117,8 +117,8 @@ This will update a specific anchorPoint.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -128,14 +128,14 @@ const body: Pieces.AnchorPointUpdateRequest = {
 };
 
 apiInstance.anchorPointUpdate(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchorPoint** | **AnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

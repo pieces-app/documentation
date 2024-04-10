@@ -31,4 +31,3 @@ seeded_anchor_point_form_dict = seeded_anchor_point.from_dict(seeded_anchor_poin
 ```
 
 
-

@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create
-[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
-[**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists
-[**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags
+[**tagsCreateNewTag****](TagsApi#tagscreatenewtag) | **POST** /tags/create
+[**tagsDeleteSpecificTag****](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
+[**tagsExists****](TagsApi#tagsexists) | **POST** /tags/exists
+[**tagsSnapshot****](TagsApi#tagssnapshot) | **GET** /tags
 
 
-## **tagsCreateNewTag**
+## **tagsCreateNewTag** {#tagscreatenewtag}
 > Tag tagsCreateNewTag()
 
 This will create a new tag.
@@ -20,8 +20,8 @@ This will create a new tag.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsCreateNewTagRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -31,14 +31,14 @@ const body: Pieces.TagsCreateNewTagRequest = {
 };
 
 apiInstance.tagsCreateNewTag(body).then((data: Tag) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededTag** | **SeededTag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -59,7 +59,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagsDeleteSpecificTag**
+## **tagsDeleteSpecificTag** {#tagsdeletespecifictag}
 > tagsDeleteSpecificTag()
 
 This will delete a specific tag.
@@ -69,8 +69,8 @@ This will delete a specific tag.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsDeleteSpecificTagRequest = {
     // string | tag id
@@ -78,14 +78,14 @@ const body: Pieces.TagsDeleteSpecificTagRequest = {
 };
 
 apiInstance.tagsDeleteSpecificTag(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
 
 
@@ -105,7 +105,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagsExists**
+## **tagsExists** {#tagsexists}
 > ExistingMetadata tagsExists()
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
@@ -115,8 +115,8 @@ This will check all of the tags in our database to see if this specific provided
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsExistsRequest = {
     // ExistentMetadata (optional)
@@ -124,14 +124,14 @@ const body: Pieces.TagsExistsRequest = {
 };
 
 apiInstance.tagsExists(body).then((data: ExistingMetadata) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **existentMetadata** | **ExistentMetadata**|  |
 
 
@@ -151,7 +151,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagsSnapshot**
+## **tagsSnapshot** {#tagssnapshot}
 > Tags tagsSnapshot()
 
 This will get a snapshot of all of your tags.
@@ -161,8 +161,8 @@ This will get a snapshot of all of your tags.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -170,14 +170,14 @@ const body: Pieces.TagsSnapshotRequest = {
 };
 
 apiInstance.tagsSnapshot(body).then((data: Tags) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

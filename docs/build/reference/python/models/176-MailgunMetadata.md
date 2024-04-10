@@ -28,4 +28,3 @@ mailgun_metadata_form_dict = mailgun_metadata.from_dict(mailgun_metadata_dict)
 ```
 
 
-

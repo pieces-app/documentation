@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
-[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
-[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/\{message\}/scores/increment | &#39;/message/\{message\}/scores/increment&#39; [POST]
-[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
-[**message_specific_message_update**](ConversationMessageApi#message_specific_message_update) | **POST** /message/update | /message/update [GET]
-[**message_update_value**](ConversationMessageApi#message_update_value) | **POST** /message/update/value | /message/update/value [POST]
+Method | HTTP request
+------------- | -------------
+[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
+[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
+[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/\{message\}/scores/increment
+[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/\{message\}
+[**message_specific_message_update**](ConversationMessageApi#message_specific_message_update) | **POST** /message/update
+[**message_update_value**](ConversationMessageApi#message_update_value) | **POST** /message/update/value
 
 
-## **message_associate_annotation**
+## **message_associate_annotation** {#message_associate_annotation}
 > message_associate_annotation(annotation, message)
 
 /message/\{message\}/annotations/associate/\{annotation\} [POST]
@@ -80,7 +80,7 @@ No authorization required
 
 
 
-## **message_disassociate_annotation**
+## **message_disassociate_annotation** {#message_disassociate_annotation}
 > message_disassociate_annotation(annotation, message)
 
 /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **message_scores_increment**
+## **message_scores_increment** {#message_scores_increment}
 > message_scores_increment(message, seeded_score_increment=seeded_score_increment)
 
 '/message/\{message\}/scores/increment' [POST]
@@ -217,7 +217,7 @@ No authorization required
 
 
 
-## **message_specific_message_snapshot**
+## **message_specific_message_snapshot** {#message_specific_message_snapshot}
 > ConversationMessage message_specific_message_snapshot(message, transferables=transferables)
 
 /message/\{message\} [GET]
@@ -288,7 +288,7 @@ No authorization required
 
 
 
-## **message_specific_message_update**
+## **message_specific_message_update** {#message_specific_message_update}
 > ConversationMessage message_specific_message_update(transferables=transferables, conversation_message=conversation_message)
 
 /message/update [GET]
@@ -359,7 +359,7 @@ No authorization required
 
 
 
-## **message_update_value**
+## **message_update_value** {#message_update_value}
 > ConversationMessage message_update_value(transferables=transferables, conversation_message=conversation_message)
 
 /message/update/value [POST]

@@ -31,4 +31,3 @@ transferable_string_form_dict = transferable_string.from_dict(transferable_strin
 ```
 
 
-

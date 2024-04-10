@@ -29,4 +29,3 @@ os_device_hardware_information_form_dict = os_device_hardware_information.from_d
 ```
 
 
-

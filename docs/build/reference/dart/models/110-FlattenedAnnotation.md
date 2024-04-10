@@ -1,8 +1,8 @@
-# FlattenedAnnotation
+# FlattenedAnnotation Model
 
 ## Load the model package
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 ```
 
 ## Properties
@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
+**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 
 
 

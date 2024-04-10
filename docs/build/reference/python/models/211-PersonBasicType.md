@@ -34,4 +34,3 @@ person_basic_type_form_dict = person_basic_type.from_dict(person_basic_type_dict
 ```
 
 
-

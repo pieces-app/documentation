@@ -28,4 +28,3 @@ save_suggestion_form_dict = save_suggestion.from_dict(save_suggestion_dict)
 ```
 
 
-

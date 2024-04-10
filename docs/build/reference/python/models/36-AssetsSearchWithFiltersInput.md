@@ -30,4 +30,3 @@ assets_search_with_filters_input_form_dict = assets_search_with_filters_input.fr
 ```
 
 
-

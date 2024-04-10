@@ -28,4 +28,3 @@ mailgun_distribution_form_dict = mailgun_distribution.from_dict(mailgun_distribu
 ```
 
 
-

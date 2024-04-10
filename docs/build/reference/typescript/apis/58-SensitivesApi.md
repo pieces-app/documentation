@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create
-[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete
-[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives
+[**sensitivesCreateNewSensitive****](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create
+[**sensitivesDeleteSensitive****](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete
+[**sensitivesSnapshot****](SensitivesApi#sensitivessnapshot) | **GET** /sensitives
 
 
-## **sensitivesCreateNewSensitive**
+## **sensitivesCreateNewSensitive** {#sensitivescreatenewsensitive}
 > Sensitive sensitivesCreateNewSensitive()
 
 This will create a new sensitive model.
@@ -19,8 +19,8 @@ This will create a new sensitive model.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitivesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 const body: Pieces.SensitivesCreateNewSensitiveRequest = {
     // SeededSensitive (optional)
@@ -28,14 +28,14 @@ const body: Pieces.SensitivesCreateNewSensitiveRequest = {
 };
 
 apiInstance.sensitivesCreateNewSensitive(body).then((data: Sensitive) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededSensitive** | **SeededSensitive**|  |
 
 
@@ -55,7 +55,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **sensitivesDeleteSensitive**
+## **sensitivesDeleteSensitive** {#sensitivesdeletesensitive}
 > sensitivesDeleteSensitive()
 
 This will delete a sensitive based on the sensitive uuid.
@@ -65,8 +65,8 @@ This will delete a sensitive based on the sensitive uuid.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitivesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 const body: Pieces.SensitivesDeleteSensitiveRequest = {
     // string | This is a uuid that represents a sensitive.
@@ -74,14 +74,14 @@ const body: Pieces.SensitivesDeleteSensitiveRequest = {
 };
 
 apiInstance.sensitivesDeleteSensitive(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
 
@@ -101,7 +101,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** |  |  -  |
 
-## **sensitivesSnapshot**
+## **sensitivesSnapshot** {#sensitivessnapshot}
 > Sensitives sensitivesSnapshot()
 
 This will get a snapshot of all of the sensitives.
@@ -111,16 +111,16 @@ This will get a snapshot of all of the sensitives.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitivesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 apiInstance.sensitivesSnapshot().then((data: Sensitives) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

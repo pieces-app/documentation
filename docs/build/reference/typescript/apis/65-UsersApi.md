@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**authenticateFromOauthToken**](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
-[**usersDisconnectUser**](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
-[**usersSnapshot**](UsersApi#userssnapshot) | **GET** /users
-[**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\}
+[**authenticateFromOauthToken****](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
+[**usersDisconnectUser****](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
+[**usersSnapshot****](UsersApi#userssnapshot) | **GET** /users
+[**usersSpecificUserSnapshot****](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\}
 
 
-## **authenticateFromOauthToken**
+## **authenticateFromOauthToken** {#authenticatefromoauthtoken}
 > UserProfile authenticateFromOauthToken()
 
 Creates a User From a oAuth Token
@@ -20,8 +20,8 @@ Creates a User From a oAuth Token
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UsersApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.AuthenticateFromOauthTokenRequest = {
     // OAuthToken |  (optional)
@@ -29,14 +29,14 @@ const body: Pieces.AuthenticateFromOauthTokenRequest = {
 };
 
 apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **oAuthToken** | **OAuthToken**|  |
 
 
@@ -55,7 +55,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **usersDisconnectUser**
+## **usersDisconnectUser** {#usersdisconnectuser}
 > Users usersDisconnectUser()
 
 Locally Removing a user for the purpose of Signing Out
@@ -65,8 +65,8 @@ Locally Removing a user for the purpose of Signing Out
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UsersApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.UsersDisconnectUserRequest = {
     // string
@@ -74,14 +74,14 @@ const body: Pieces.UsersDisconnectUserRequest = {
 };
 
 apiInstance.usersDisconnectUser(body).then((data: Users) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **user** | [**string**] |  | defaults to undefined
 
 
@@ -100,7 +100,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **usersSnapshot**
+## **usersSnapshot** {#userssnapshot}
 > Users usersSnapshot()
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
@@ -110,16 +110,16 @@ this will return a snapshot of all of the users that are in the users database. 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UsersApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UsersApi(configuration)
 
 apiInstance.usersSnapshot().then((data: Users) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -137,7 +137,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **usersSpecificUserSnapshot**
+## **usersSpecificUserSnapshot** {#usersspecificusersnapshot}
 > UserProfile usersSpecificUserSnapshot()
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
@@ -147,8 +147,8 @@ This enables the client to get the current user.  This endpoint will return a Us
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UsersApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.UsersSpecificUserSnapshotRequest = {
     // string | The id (uuid) for a specific user.
@@ -156,14 +156,14 @@ const body: Pieces.UsersSpecificUserSnapshotRequest = {
 };
 
 apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 

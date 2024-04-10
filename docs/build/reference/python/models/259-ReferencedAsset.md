@@ -29,4 +29,3 @@ referenced_asset_form_dict = referenced_asset.from_dict(referenced_asset_dict)
 ```
 
 
-

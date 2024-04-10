@@ -2,18 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_well_known_health**](WellKnownApi#get_well_known_health) | **GET** /.well-known/health | /.well-known/health [GET]
-[**get_well_known_version**](WellKnownApi#get_well_known_version) | **GET** /.well-known/version | /.well-known/version [Get]
+Method | HTTP request
+------------- | -------------
+[**get_well_known_health**](WellKnownApi#get_well_known_health) | **GET** /.well-known/health
+[**get_well_known_version**](WellKnownApi#get_well_known_version) | **GET** /.well-known/version
 
 
-## **get_well_known_health**
+## **get_well_known_health** {#get_well_known_health}
 > str get_well_known_health()
 
 /.well-known/health [GET]
 
-This will get the health of the server.
+Retrieves the health status of the server.
 
 ### Example
 
@@ -48,7 +48,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -71,12 +71,12 @@ No authorization required
 
 
 
-## **get_well_known_version**
+## **get_well_known_version** {#get_well_known_version}
 > str get_well_known_version()
 
 /.well-known/version [Get]
 
-This will get the version of the server. This will return a string of current version.
+Retrieves the version of the server. It returns a string representing the current version.
 
 ### Example
 
@@ -111,7 +111,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

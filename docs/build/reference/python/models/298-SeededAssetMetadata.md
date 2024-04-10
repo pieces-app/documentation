@@ -36,4 +36,3 @@ seeded_asset_metadata_form_dict = seeded_asset_metadata.from_dict(seeded_asset_m
 ```
 
 
-

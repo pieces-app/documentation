@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**clear_user**](UserApi#clear_user) | **POST** /user/clear | /user/clear
-[**refresh_user**](UserApi#refresh_user) | **GET** /user/refresh | /user/refresh [GET]
-[**select_user**](UserApi#select_user) | **POST** /user/select | /user/select [POST]
-[**stream_user**](UserApi#stream_user) | **GET** /user/stream | /user/stream [GET]
-[**update_user**](UserApi#update_user) | **POST** /user/update | /user/update [POST]
-[**user_providers**](UserApi#user_providers) | **GET** /user/providers | Your GET endpoint
-[**user_snapshot**](UserApi#user_snapshot) | **GET** /user | /user [GET]
-[**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
+Method | HTTP request
+------------- | -------------
+[**clear_user**](UserApi#clear_user) | **POST** /user/clear
+[**refresh_user**](UserApi#refresh_user) | **GET** /user/refresh
+[**select_user**](UserApi#select_user) | **POST** /user/select
+[**stream_user**](UserApi#stream_user) | **GET** /user/stream
+[**update_user**](UserApi#update_user) | **POST** /user/update
+[**user_providers**](UserApi#user_providers) | **GET** /user/providers
+[**user_snapshot**](UserApi#user_snapshot) | **GET** /user
+[**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity
 
 
-## **clear_user**
+## **clear_user** {#clear_user}
 > clear_user()
 
 /user/clear
@@ -52,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -75,7 +75,7 @@ No authorization required
 
 
 
-## **refresh_user**
+## **refresh_user** {#refresh_user}
 > UserProfile refresh_user()
 
 /user/refresh [GET]
@@ -116,7 +116,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -140,7 +140,7 @@ No authorization required
 
 
 
-## **select_user**
+## **select_user** {#select_user}
 > UserProfile select_user(auth0_user=auth0_user)
 
 /user/select [POST]
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 
 
-## **stream_user**
+## **stream_user** {#stream_user}
 > UserProfile stream_user()
 
 /user/stream [GET]
@@ -263,7 +263,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -286,7 +286,7 @@ No authorization required
 
 
 
-## **update_user**
+## **update_user** {#update_user}
 > UserProfile update_user(user_profile=user_profile)
 
 /user/update [POST]
@@ -354,7 +354,7 @@ No authorization required
 
 
 
-## **user_providers**
+## **user_providers** {#user_providers}
 > ReturnedUserProfile user_providers()
 
 Your GET endpoint
@@ -395,7 +395,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -420,7 +420,7 @@ No authorization required
 
 
 
-## **user_snapshot**
+## **user_snapshot** {#user_snapshot}
 > ReturnedUserProfile user_snapshot()
 
 /user [GET]
@@ -461,7 +461,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -484,7 +484,7 @@ No authorization required
 
 
 
-## **user_update_vanity**
+## **user_update_vanity** {#user_update_vanity}
 > UserProfile user_update_vanity(user_profile=user_profile)
 
 /user/update/vanity [POST]

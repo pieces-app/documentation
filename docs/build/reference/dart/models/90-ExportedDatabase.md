@@ -1,8 +1,8 @@
-# ExportedDatabase
+# ExportedDatabase Model
 
 ## Load the model package
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 ```
 
 ## Properties
@@ -34,7 +34,11 @@ Name | Type | Description | Notes
 **anchorPoints** | **List\<int\>** |  | [optional] [default to const []]
 **conversations** | **List\<int\>** |  | [optional] [default to const []]
 **conversationMessages** | **List\<int\>** |  | [optional] [default to const []]
+**workstreamEvents** | **List\<int\>** |  | [optional] [default to const []]
+**ranges** | **List\<int\>** |  | [optional] [default to const []]
+**workstreamSummaries** | **List\<int\>** |  | [optional] [default to const []]
 **messageValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
+**workstreamEventValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
 
 
 

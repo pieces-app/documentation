@@ -27,4 +27,3 @@ flattened_activities_form_dict = flattened_activities.from_dict(flattened_activi
 ```
 
 
-

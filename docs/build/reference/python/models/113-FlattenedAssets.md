@@ -30,4 +30,3 @@ flattened_assets_form_dict = flattened_assets.from_dict(flattened_assets_dict)
 ```
 
 
-

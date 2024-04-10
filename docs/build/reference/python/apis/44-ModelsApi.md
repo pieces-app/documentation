@@ -2,21 +2,21 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**models_create_new_model**](ModelsApi#models_create_new_model) | **POST** /models/create | /models/create [POST]
-[**models_delete_specific_model**](ModelsApi#models_delete_specific_model) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
-[**models_delete_specific_model_cache**](ModelsApi#models_delete_specific_model_cache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
-[**models_snapshot**](ModelsApi#models_snapshot) | **GET** /models | /models [GET]
-[**unload_models**](ModelsApi#unload_models) | **POST** /models/unload | /models/unload [POST]
+Method | HTTP request
+------------- | -------------
+[**models_create_new_model**](ModelsApi#models_create_new_model) | **POST** /models/create
+[**models_delete_specific_model**](ModelsApi#models_delete_specific_model) | **POST** /models/\{model\}/delete
+[**models_delete_specific_model_cache**](ModelsApi#models_delete_specific_model_cache) | **POST** /models/\{model\}/delete/cache
+[**models_snapshot**](ModelsApi#models_snapshot) | **GET** /models
+[**unload_models**](ModelsApi#unload_models) | **POST** /models/unload
 
 
-## **models_create_new_model**
+## **models_create_new_model** {#models_create_new_model}
 > Model models_create_new_model(seeded_model=seeded_model)
 
 /models/create [POST]
 
-This will create a ml model, this is aloud however all models will be set to custom: true.  && we will verify we dont have a model that matches this model.
+Creates a machine learning model. By default, all models created through this endpoint will have the 'custom' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
 ### Example
 
@@ -81,12 +81,12 @@ No authorization required
 
 
 
-## **models_delete_specific_model**
+## **models_delete_specific_model** {#models_delete_specific_model}
 > models_delete_specific_model(model)
 
 /models/\{model\}/delete [POST]
 
-This will delete a model, This is only available for custom: true models.
+Deletes a specific model. It is exclusively available for custom models with the 'custom: true' attribute.
 
 ### Example
 
@@ -147,12 +147,12 @@ No authorization required
 
 
 
-## **models_delete_specific_model_cache**
+## **models_delete_specific_model_cache** {#models_delete_specific_model_cache}
 > ModelDeleteCacheOutput models_delete_specific_model_cache(model, model_delete_cache_input=model_delete_cache_input)
 
 /models/\{model\}/delete/cache [POST]
 
-This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
+Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
 ### Example
 
@@ -219,7 +219,7 @@ No authorization required
 
 
 
-## **models_snapshot**
+## **models_snapshot** {#models_snapshot}
 > Models models_snapshot()
 
 /models [GET]
@@ -260,7 +260,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -284,12 +284,12 @@ No authorization required
 
 
 
-## **unload_models**
+## **unload_models** {#unload_models}
 > unload_models()
 
 /models/unload [POST]
 
-This will unload all of the ml models.(that are unloadable)
+Unloads all available machine learning models that are unloadable.
 
 ### Example
 
@@ -322,7 +322,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

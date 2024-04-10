@@ -4,27 +4,27 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
-[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
-[**conversationAssociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
-[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
-[**conversationAssociateWorkstreamSummary**](ConversationApi#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
-[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
-[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
-[**conversationDisassociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
-[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
-[**conversationDisassociateWorkstreamSummary**](ConversationApi#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\}
-[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
-[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
-[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment
-[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages
-[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename
-[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize
-[**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update
+[**conversationAssociateAnchor****](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
+[**conversationAssociateAsset****](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
+[**conversationAssociateGroundingTemporalRangeWorkstream****](ConversationApi#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
+[**conversationAssociateWebsite****](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
+[**conversationAssociateWorkstreamSummary****](ConversationApi#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
+[**conversationDisassociateAnchor****](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
+[**conversationDisassociateAsset****](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
+[**conversationDisassociateGroundingTemporalRangeWorkstream****](ConversationApi#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
+[**conversationDisassociateWebsite****](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
+[**conversationDisassociateWorkstreamSummary****](ConversationApi#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**conversationGetSpecificConversation****](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\}
+[**conversationGroundingMessagesAssociateMessage****](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
+[**conversationGroundingMessagesDisassociateMessage****](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
+[**conversationScoresIncrement****](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment
+[**conversationSpecificConversationMessages****](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages
+[**conversationSpecificConversationRename****](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename
+[**conversationSummarize****](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize
+[**conversationUpdate****](ConversationApi#conversationupdate) | **POST** /conversation/update
 
 
-## **conversationAssociateAnchor**
+## **conversationAssociateAnchor** {#conversationassociateanchor}
 > conversationAssociateAnchor()
 
 Updates both the anchor and the conversation, associating them together.
@@ -34,8 +34,8 @@ Updates both the anchor and the conversation, associating them together.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAnchorRequest = {
     // string | This is the uuid of a conversation.
@@ -45,14 +45,14 @@ const body: Pieces.ConversationAssociateAnchorRequest = {
 };
 
 apiInstance.conversationAssociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -73,7 +73,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationAssociateAsset**
+## **conversationAssociateAsset** {#conversationassociateasset}
 > conversationAssociateAsset()
 
 Updates both the asset and the conversation, associating the two together.
@@ -83,8 +83,8 @@ Updates both the asset and the conversation, associating the two together.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAssetRequest = {
     // string | This is the uuid of a conversation.
@@ -94,14 +94,14 @@ const body: Pieces.ConversationAssociateAssetRequest = {
 };
 
 apiInstance.conversationAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -122,7 +122,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationAssociateGroundingTemporalRangeWorkstream**
+## **conversationAssociateGroundingTemporalRangeWorkstream** {#conversationassociategroundingtemporalrangeworkstream}
 > conversationAssociateGroundingTemporalRangeWorkstream()
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
@@ -132,8 +132,8 @@ This will associate a workstream(range) with a conversation. This will do the sa
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
@@ -143,14 +143,14 @@ const body: Pieces.ConversationAssociateGroundingTemporalRangeWorkstreamRequest 
 };
 
 apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -171,7 +171,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationAssociateWebsite**
+## **conversationAssociateWebsite** {#conversationassociatewebsite}
 > conversationAssociateWebsite()
 
 Updates both the website and the conversation, and associate them together.
@@ -181,8 +181,8 @@ Updates both the website and the conversation, and associate them together.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
@@ -192,14 +192,14 @@ const body: Pieces.ConversationAssociateWebsiteRequest = {
 };
 
 apiInstance.conversationAssociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -220,7 +220,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationAssociateWorkstreamSummary**
+## **conversationAssociateWorkstreamSummary** {#conversationassociateworkstreamsummary}
 > conversationAssociateWorkstreamSummary()
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -230,8 +230,8 @@ This will associate a conversation with a workstream summary. This will do the s
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
@@ -241,14 +241,14 @@ const body: Pieces.ConversationAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.conversationAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -269,7 +269,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationDisassociateAnchor**
+## **conversationDisassociateAnchor** {#conversationdisassociateanchor}
 > conversationDisassociateAnchor()
 
 Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
@@ -279,8 +279,8 @@ Updates both the anchor and the conversation, deleting (disassociating) them sim
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAnchorRequest = {
     // string | This is the uuid of a conversation.
@@ -290,14 +290,14 @@ const body: Pieces.ConversationDisassociateAnchorRequest = {
 };
 
 apiInstance.conversationDisassociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -318,7 +318,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationDisassociateAsset**
+## **conversationDisassociateAsset** {#conversationdisassociateasset}
 > conversationDisassociateAsset()
 
 Updates both the asset and the conversation, effectively disassociating them.
@@ -328,8 +328,8 @@ Updates both the asset and the conversation, effectively disassociating them.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAssetRequest = {
     // string | This is the uuid of a conversation.
@@ -339,14 +339,14 @@ const body: Pieces.ConversationDisassociateAssetRequest = {
 };
 
 apiInstance.conversationDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -367,7 +367,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationDisassociateGroundingTemporalRangeWorkstream**
+## **conversationDisassociateGroundingTemporalRangeWorkstream** {#conversationdisassociategroundingtemporalrangeworkstream}
 > conversationDisassociateGroundingTemporalRangeWorkstream()
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
@@ -377,8 +377,8 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
@@ -388,14 +388,14 @@ const body: Pieces.ConversationDisassociateGroundingTemporalRangeWorkstreamReque
 };
 
 apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -416,7 +416,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationDisassociateWebsite**
+## **conversationDisassociateWebsite** {#conversationdisassociatewebsite}
 > conversationDisassociateWebsite()
 
 Allows us to disassociate a conversation from a specific website
@@ -426,8 +426,8 @@ Allows us to disassociate a conversation from a specific website
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
@@ -437,14 +437,14 @@ const body: Pieces.ConversationDisassociateWebsiteRequest = {
 };
 
 apiInstance.conversationDisassociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -465,7 +465,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationDisassociateWorkstreamSummary**
+## **conversationDisassociateWorkstreamSummary** {#conversationdisassociateworkstreamsummary}
 > conversationDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -475,8 +475,8 @@ This will enable us to disassociate an conversation from a workstream summary. T
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
@@ -486,14 +486,14 @@ const body: Pieces.ConversationDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.conversationDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -514,7 +514,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationGetSpecificConversation**
+## **conversationGetSpecificConversation** {#conversationgetspecificconversation}
 > Conversation conversationGetSpecificConversation()
 
 Retrieves a specific conversation.
@@ -524,8 +524,8 @@ Retrieves a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGetSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
@@ -535,14 +535,14 @@ const body: Pieces.ConversationGetSpecificConversationRequest = {
 };
 
 apiInstance.conversationGetSpecificConversation(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -563,7 +563,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-## **conversationGroundingMessagesAssociateMessage**
+## **conversationGroundingMessagesAssociateMessage** {#conversationgroundingmessagesassociatemessage}
 > conversationGroundingMessagesAssociateMessage()
 
 Stores the grounding context for a conversation. It allows to associate a message with the conversation\'s grounding object, facilitating contextual understanding and management of the conversation.
@@ -573,8 +573,8 @@ Stores the grounding context for a conversation. It allows to associate a messag
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesAssociateMessageRequest = {
     // string | This is the uuid of a conversation.
@@ -584,14 +584,14 @@ const body: Pieces.ConversationGroundingMessagesAssociateMessageRequest = {
 };
 
 apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -612,7 +612,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationGroundingMessagesDisassociateMessage**
+## **conversationGroundingMessagesDisassociateMessage** {#conversationgroundingmessagesdisassociatemessage}
 > conversationGroundingMessagesDisassociateMessage()
 
 Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation\'s grounding object.
@@ -622,8 +622,8 @@ Removes a specific grounding context for a conversation, and allows us to disass
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesDisassociateMessageRequest = {
     // string | This is the uuid of a conversation.
@@ -633,14 +633,14 @@ const body: Pieces.ConversationGroundingMessagesDisassociateMessageRequest = {
 };
 
 apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -661,7 +661,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationScoresIncrement**
+## **conversationScoresIncrement** {#conversationscoresincrement}
 > conversationScoresIncrement()
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
@@ -671,8 +671,8 @@ Increment scores associated with a conversation. It accepts a SeededScoreIncreme
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationScoresIncrementRequest = {
     // string | This is the uuid of a conversation.
@@ -682,14 +682,14 @@ const body: Pieces.ConversationScoresIncrementRequest = {
 };
 
 apiInstance.conversationScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -710,7 +710,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationSpecificConversationMessages**
+## **conversationSpecificConversationMessages** {#conversationspecificconversationmessages}
 > ConversationMessages conversationSpecificConversationMessages()
 
 Retrieves messages specific to a particular conversation.
@@ -720,8 +720,8 @@ Retrieves messages specific to a particular conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationMessagesRequest = {
     // string | This is the uuid of a conversation.
@@ -731,14 +731,14 @@ const body: Pieces.ConversationSpecificConversationMessagesRequest = {
 };
 
 apiInstance.conversationSpecificConversationMessages(body).then((data: ConversationMessages) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -759,7 +759,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationSpecificConversationRename**
+## **conversationSpecificConversationRename** {#conversationspecificconversationrename}
 > Conversation conversationSpecificConversationRename()
 
 Renames a specific conversation using machine learning (ML) techniques.
@@ -769,8 +769,8 @@ Renames a specific conversation using machine learning (ML) techniques.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationRenameRequest = {
     // string | This is the uuid of a conversation.
@@ -780,14 +780,14 @@ const body: Pieces.ConversationSpecificConversationRenameRequest = {
 };
 
 apiInstance.conversationSpecificConversationRename(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -808,7 +808,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationSummarize**
+## **conversationSummarize** {#conversationsummarize}
 > ConversationSummarizeOutput conversationSummarize()
 
 Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
@@ -818,8 +818,8 @@ Generates a summary of a given conversation and saves it as an annotation associ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSummarizeRequest = {
     // string | This is the uuid of a conversation.
@@ -829,14 +829,14 @@ const body: Pieces.ConversationSummarizeRequest = {
 };
 
 apiInstance.conversationSummarize(body).then((data: ConversationSummarizeOutput) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversationSummarizeInput** | **ConversationSummarizeInput**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -857,7 +857,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationUpdate**
+## **conversationUpdate** {#conversationupdate}
 > Conversation conversationUpdate()
 
 Updates a specific conversation.
@@ -867,8 +867,8 @@ Updates a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -878,14 +878,14 @@ const body: Pieces.ConversationUpdateRequest = {
 };
 
 apiInstance.conversationUpdate(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | **Conversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

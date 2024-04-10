@@ -31,4 +31,3 @@ os_device_information_returnable_form_dict = os_device_information_returnable.fr
 ```
 
 
-

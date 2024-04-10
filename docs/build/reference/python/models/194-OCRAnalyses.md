@@ -27,4 +27,3 @@ ocr_analyses_form_dict = ocr_analyses.from_dict(ocr_analyses_dict)
 ```
 
 
-

@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**externalProviderApiKeyCreate**](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create
-[**externalProviderApiKeyDelete**](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete
-[**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update
+[**externalProviderApiKeyCreate****](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create
+[**externalProviderApiKeyDelete****](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete
+[**externalProviderApiKeyUpdate****](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update
 
 
-## **externalProviderApiKeyCreate**
+## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
 > CreatedExternalProviderApiKey externalProviderApiKeyCreate()
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -19,8 +19,8 @@ This will create a specific external_provider api_key from a specific user Auth0
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ExternalProviderApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyCreateRequest = {
     // PrecreatedExternalProviderApiKey (optional)
@@ -28,14 +28,14 @@ const body: Pieces.ExternalProviderApiKeyCreateRequest = {
 };
 
 apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | **PrecreatedExternalProviderApiKey**|  |
 
 
@@ -56,7 +56,7 @@ Name | Type | Description
 **401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
-## **externalProviderApiKeyDelete**
+## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
 > DeletedExternalProviderApiKey externalProviderApiKeyDelete()
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -66,8 +66,8 @@ This will remove a specific external_provider api_key from a specific user Auth0
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ExternalProviderApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyDeleteRequest = {
     // PredeletedExternalProviderApiKey (optional)
@@ -75,14 +75,14 @@ const body: Pieces.ExternalProviderApiKeyDeleteRequest = {
 };
 
 apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | **PredeletedExternalProviderApiKey**|  |
 
 
@@ -103,7 +103,7 @@ Name | Type | Description
 **401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
-## **externalProviderApiKeyUpdate**
+## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
 > UpdatedExternalProviderApiKey externalProviderApiKeyUpdate()
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
@@ -113,8 +113,8 @@ This will update a specific external_provider api_key from a specific user Auth0
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ExternalProviderApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyUpdateRequest = {
     // PreupdatedExternalProviderApiKey (optional)
@@ -122,14 +122,14 @@ const body: Pieces.ExternalProviderApiKeyUpdateRequest = {
 };
 
 apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | **PreupdatedExternalProviderApiKey**|  |
 
 

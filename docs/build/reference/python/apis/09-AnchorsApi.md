@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchor_disassociate_asset**](AnchorsApi#anchor_disassociate_asset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
-[**anchors_create_new_anchor**](AnchorsApi#anchors_create_new_anchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchors_delete_specific_anchor**](AnchorsApi#anchors_delete_specific_anchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
-[**anchors_snapshot**](AnchorsApi#anchors_snapshot) | **GET** /anchors | /anchors [GET]
+Method | HTTP request
+------------- | -------------
+[**anchor_disassociate_asset**](AnchorsApi#anchor_disassociate_asset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\}
+[**anchors_create_new_anchor**](AnchorsApi#anchors_create_new_anchor) | **POST** /anchors/create
+[**anchors_delete_specific_anchor**](AnchorsApi#anchors_delete_specific_anchor) | **POST** /anchors/\{anchor\}/delete
+[**anchors_snapshot**](AnchorsApi#anchors_snapshot) | **GET** /anchors
 
 
-## **anchor_disassociate_asset**
+## **anchor_disassociate_asset** {#anchor_disassociate_asset}
 > anchor_disassociate_asset(anchor, asset)
 
 /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **anchors_create_new_anchor**
+## **anchors_create_new_anchor** {#anchors_create_new_anchor}
 > Anchor anchors_create_new_anchor(transferables=transferables, seeded_anchor=seeded_anchor)
 
 /anchors/create [POST]
@@ -150,7 +150,7 @@ No authorization required
 
 
 
-## **anchors_delete_specific_anchor**
+## **anchors_delete_specific_anchor** {#anchors_delete_specific_anchor}
 > anchors_delete_specific_anchor(anchor)
 
 /anchors/\{anchor\}/delete [POST]
@@ -216,7 +216,7 @@ No authorization required
 
 
 
-## **anchors_snapshot**
+## **anchors_snapshot** {#anchors_snapshot}
 > Anchors anchors_snapshot(transferables=transferables)
 
 /anchors [GET]

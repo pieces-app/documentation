@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**hints_create_new_hint**](HintsApi#hints_create_new_hint) | **POST** /hints/create | /hints/create [POST]
-[**hints_delete_specific_hint**](HintsApi#hints_delete_specific_hint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
-[**hints_snapshot**](HintsApi#hints_snapshot) | **GET** /hints | /hints [GET]
+Method | HTTP request
+------------- | -------------
+[**hints_create_new_hint**](HintsApi#hints_create_new_hint) | **POST** /hints/create
+[**hints_delete_specific_hint**](HintsApi#hints_delete_specific_hint) | **POST** /hints/\{hint\}/delete
+[**hints_snapshot**](HintsApi#hints_snapshot) | **GET** /hints
 
 
-## **hints_create_new_hint**
+## **hints_create_new_hint** {#hints_create_new_hint}
 > Hint hints_create_new_hint(seeded_hint=seeded_hint)
 
 /hints/create [POST]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **hints_delete_specific_hint**
+## **hints_delete_specific_hint** {#hints_delete_specific_hint}
 > hints_delete_specific_hint(hint)
 
 /hints/\{hint\}/delete [POST]
@@ -145,7 +145,7 @@ No authorization required
 
 
 
-## **hints_snapshot**
+## **hints_snapshot** {#hints_snapshot}
 > Hints hints_snapshot()
 
 /hints [GET]
@@ -186,7 +186,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

@@ -28,4 +28,3 @@ interacted_asset_form_dict = interacted_asset.from_dict(interacted_asset_dict)
 ```
 
 
-

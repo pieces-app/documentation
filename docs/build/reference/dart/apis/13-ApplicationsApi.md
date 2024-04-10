@@ -1,29 +1,24 @@
 # Applications API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**applicationsExternalRelated**](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
 [**applicationsExternalSnapshot**](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
-[**applicationsRegister**](ApplicationsApi#applicationsregister) | **POST** /applications/register | /applications/register [POST]
-[**applicationsSessionClose**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
-[**applicationsSessionOpen**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applicationsRegister - (Deprecated)**](ApplicationsApi#applicationsregister) | **POST** /applications/register | /applications/register [POST]
+[**applicationsSessionClose - (Deprecated)**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applicationsSessionOpen - (Deprecated)**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applicationsSessionSnapshot - (Deprecated)**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
 [**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications | /applications [GET]
 [**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
-[**applicationsUsageEngagementInteraction**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
-[**applicationsUsageEngagementKeyboard**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
-[**applicationsUsageInstallation**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
-[**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
+[**applicationsUsageEngagementInteraction - (Deprecated)**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applicationsUsageEngagementKeyboard - (Deprecated)**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applicationsUsageInstallation - (Deprecated)**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**postApplicationsUsageUpdated - (Deprecated)**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
-## **applicationsExternalRelated**
+## **applicationsExternalRelated** {#applicationsexternalrelated}
 > DetectedExternalApplications applicationsExternalRelated()
 
 /applications/external/related [GET]
@@ -32,7 +27,7 @@ Retrieves a list of external applications installed on the user's machine that h
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -62,7 +57,7 @@ No authorization required
 
 
 
-## **applicationsExternalSnapshot**
+## **applicationsExternalSnapshot** {#applicationsexternalsnapshot}
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 /applications/external [GET]
@@ -71,7 +66,7 @@ Provides a snapshot of all external applications detected on the user's machine,
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **applicationsRegister**
+## **applicationsRegister - (Deprecated)** {#applicationsregister}
 > Application applicationsRegister(application)
 
 /applications/register [POST]
@@ -110,7 +105,7 @@ Registers a new application within the Pieces ecosystem.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final application = Application(); // Application | This will accept a application.
@@ -144,7 +139,7 @@ No authorization required
 
 
 
-## **applicationsSessionClose**
+## **applicationsSessionClose - (Deprecated)** {#applicationssessionclose}
 > Session applicationsSessionClose(body)
 
 /applications/session/close [POST]
@@ -153,7 +148,7 @@ Closes an active session, identified by a session UUID, marking the end of the u
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final body = String(); // String | This will accept a required session uuid.
@@ -187,7 +182,7 @@ No authorization required
 
 
 
-## **applicationsSessionOpen**
+## **applicationsSessionOpen - (Deprecated)** {#applicationssessionopen}
 > Session applicationsSessionOpen()
 
 /applications/session/open [POST]
@@ -196,7 +191,7 @@ Initiates a new session, marking the start of a user's interaction with the Piec
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -226,7 +221,7 @@ No authorization required
 
 
 
-## **applicationsSessionSnapshot**
+## **applicationsSessionSnapshot - (Deprecated)** {#applicationssessionsnapshot}
 > Session applicationsSessionSnapshot(session)
 
 /applications/sessions/\{session\} [GET]
@@ -235,7 +230,7 @@ Fetches detailed information about a specific session, identified by a session U
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final session = session_example; // String | This is a uuid that points to a session.
@@ -269,7 +264,7 @@ No authorization required
 
 
 
-## **applicationsSnapshot**
+## **applicationsSnapshot** {#applicationssnapshot}
 > Applications applicationsSnapshot()
 
 /applications [GET]
@@ -278,7 +273,7 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 
@@ -308,7 +303,7 @@ No authorization required
 
 
 
-## **applicationsSpecificApplicationSnapshot**
+## **applicationsSpecificApplicationSnapshot** {#applicationsspecificapplicationsnapshot}
 > Application applicationsSpecificApplicationSnapshot(application)
 
 /applications/\{application\} [GET]
@@ -317,7 +312,7 @@ Obtains a snapshot with information about a specific application, identified by 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final application = application_example; // String | This is a uuid that represents an application
@@ -351,7 +346,7 @@ No authorization required
 
 
 
-## **applicationsUsageEngagementInteraction**
+## **applicationsUsageEngagementInteraction - (Deprecated)** {#applicationsusageengagementinteraction}
 > TrackedInteractionEvent applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
 
 /applications/usage/engagement/interaction [POST] Scoped to Apps
@@ -360,7 +355,7 @@ Records user interaction events within applications, such as clicks or taps, to 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final seededTrackedInteractionEvent = SeededTrackedInteractionEvent(); // SeededTrackedInteractionEvent | 
@@ -394,7 +389,7 @@ No authorization required
 
 
 
-## **applicationsUsageEngagementKeyboard**
+## **applicationsUsageEngagementKeyboard - (Deprecated)** {#applicationsusageengagementkeyboard}
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
 
 /applications/usage/engagement/keyboard [POST] Scoped to Apps
@@ -403,7 +398,7 @@ Captures keyboard interaction events, including shortcuts, within applications t
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final seededTrackedKeyboardEvent = SeededTrackedKeyboardEvent(); // SeededTrackedKeyboardEvent | 
@@ -437,7 +432,7 @@ No authorization required
 
 
 
-## **applicationsUsageInstallation**
+## **applicationsUsageInstallation - (Deprecated)** {#applicationsusageinstallation}
 > applicationsUsageInstallation(trackedApplicationInstall)
 
 /applications/usage/installation [POST]
@@ -446,7 +441,7 @@ Logs the installation events of the Pieces application.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final trackedApplicationInstall = TrackedApplicationInstall(); // TrackedApplicationInstall | 
@@ -479,7 +474,7 @@ No authorization required
 
 
 
-## **postApplicationsUsageUpdated**
+## **postApplicationsUsageUpdated - (Deprecated)** {#postapplicationsusageupdated}
 > postApplicationsUsageUpdated(trackedApplicationUpdate)
 
 /applications/usage/updated [POST]
@@ -488,7 +483,7 @@ Tracks updates to the Pieces application, including version changes.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ApplicationsApi();
 final trackedApplicationUpdate = TrackedApplicationUpdate(); // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.

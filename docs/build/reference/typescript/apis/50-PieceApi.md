@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**htmlShare**](PieceApi#htmlshare) | **GET** /
+[**htmlShare****](PieceApi#htmlshare) | **GET** /
 
 
-## **htmlShare**
+## **htmlShare** {#htmlshare}
 > string htmlShare()
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.
@@ -17,8 +17,8 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PieceApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PieceApi(configuration)
 
 const body: Pieces.HtmlShareRequest = {
     // string | this is the a query param, that a shortened version of the share.
@@ -26,14 +26,14 @@ const body: Pieces.HtmlShareRequest = {
 };
 
 apiInstance.htmlShare(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **p** | [**string**] | this is the a query param, that a shortened version of the share. | defaults to undefined
 
 

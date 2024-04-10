@@ -30,4 +30,3 @@ tracked_format_event_form_dict = tracked_format_event.from_dict(tracked_format_e
 ```
 
 
-

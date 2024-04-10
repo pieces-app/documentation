@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**personification_technical_language_generation**](MachineLearningApi#personification_technical_language_generation) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
-[**segment_technical_language**](MachineLearningApi#segment_technical_language) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
+Method | HTTP request
+------------- | -------------
+[**personification_technical_language_generation**](MachineLearningApi#personification_technical_language_generation) | **POST** /machine_learning/text/technical_language/generators/personification
+[**segment_technical_language**](MachineLearningApi#segment_technical_language) | **POST** /machine_learning/text/technical_language/parsers/segmentation
 
 
-## **personification_technical_language_generation**
+## **personification_technical_language_generation** {#personification_technical_language_generation}
 > OnboardedPersonaDetails personification_technical_language_generation(preonboarded_persona_details=preonboarded_persona_details)
 
 /machine_learning/text/technical_language/generators/personification [GET]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **segment_technical_language**
+## **segment_technical_language** {#segment_technical_language}
 > SegmentedTechnicalLanguage segment_technical_language(classify=classify, unsegmented_technical_language=unsegmented_technical_language)
 
 /machine_learning/text/technical_language/parsers/segmentation [POST]

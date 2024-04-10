@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**distributions_create_new_distribution**](DistributionsApi#distributions_create_new_distribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributions_delete_specific_distribution**](DistributionsApi#distributions_delete_specific_distribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
-[**distributions_snapshot**](DistributionsApi#distributions_snapshot) | **GET** /distributions | /distributions [GET]
+Method | HTTP request
+------------- | -------------
+[**distributions_create_new_distribution**](DistributionsApi#distributions_create_new_distribution) | **POST** /distributions/create
+[**distributions_delete_specific_distribution**](DistributionsApi#distributions_delete_specific_distribution) | **POST** /distributions/\{distribution\}/delete
+[**distributions_snapshot**](DistributionsApi#distributions_snapshot) | **GET** /distributions
 
 
-## **distributions_create_new_distribution**
+## **distributions_create_new_distribution** {#distributions_create_new_distribution}
 > Distribution distributions_create_new_distribution(seeded_distribution=seeded_distribution)
 
 /distributions/create [POST]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **distributions_delete_specific_distribution**
+## **distributions_delete_specific_distribution** {#distributions_delete_specific_distribution}
 > distributions_delete_specific_distribution(distribution)
 
 /distributions/\{distribution\}/delete [POST]
@@ -145,7 +145,7 @@ No authorization required
 
 
 
-## **distributions_snapshot**
+## **distributions_snapshot** {#distributions_snapshot}
 > Distributions distributions_snapshot()
 
 /distributions [GET]
@@ -186,7 +186,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

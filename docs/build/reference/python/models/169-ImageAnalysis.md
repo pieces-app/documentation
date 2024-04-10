@@ -30,4 +30,3 @@ image_analysis_form_dict = image_analysis.from_dict(image_analysis_dict)
 ```
 
 
-

@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**ocr_analyses_snapshot**](OCRAnalysesApi#ocr_analyses_snapshot) | **GET** /ocr_analyses | Your GET endpoint
+Method | HTTP request
+------------- | -------------
+[**ocr_analyses_snapshot**](OCRAnalysesApi#ocr_analyses_snapshot) | **GET** /ocr_analyses
 
 
-## **ocr_analyses_snapshot**
+## **ocr_analyses_snapshot** {#ocr_analyses_snapshot}
 > OCRAnalyses ocr_analyses_snapshot(transferables=transferables)
 
 Your GET endpoint

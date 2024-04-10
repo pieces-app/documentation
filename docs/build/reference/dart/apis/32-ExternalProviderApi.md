@@ -1,10 +1,5 @@
 # ExternalProvider API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
 
 
-## **externalProviderApiKeyCreate**
+## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
 > CreatedExternalProviderApiKey externalProviderApiKeyCreate(precreatedExternalProviderApiKey)
 
 /external_provider/api_key/create [POST]
@@ -23,7 +18,7 @@ This will create a specific external_provider api_key from a specific user Auth0
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ExternalProviderApi();
 final precreatedExternalProviderApiKey = PrecreatedExternalProviderApiKey(); // PrecreatedExternalProviderApiKey | 
@@ -57,7 +52,7 @@ No authorization required
 
 
 
-## **externalProviderApiKeyDelete**
+## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
 > DeletedExternalProviderApiKey externalProviderApiKeyDelete(predeletedExternalProviderApiKey)
 
 /external_provider/api_key/delete [POST]
@@ -66,7 +61,7 @@ This will remove a specific external_provider api_key from a specific user Auth0
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ExternalProviderApi();
 final predeletedExternalProviderApiKey = PredeletedExternalProviderApiKey(); // PredeletedExternalProviderApiKey | 
@@ -100,7 +95,7 @@ No authorization required
 
 
 
-## **externalProviderApiKeyUpdate**
+## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
 > UpdatedExternalProviderApiKey externalProviderApiKeyUpdate(preupdatedExternalProviderApiKey)
 
 /external_provider/api_key/update [POST]
@@ -109,7 +104,7 @@ This will update a specific external_provider api_key from a specific user Auth0
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ExternalProviderApi();
 final preupdatedExternalProviderApiKey = PreupdatedExternalProviderApiKey(); // PreupdatedExternalProviderApiKey | 

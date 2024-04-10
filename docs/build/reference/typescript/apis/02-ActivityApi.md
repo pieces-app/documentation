@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**activitiesSpecificActivitySnapshot**](ActivityApi#activitiesspecificactivitysnapshot) | **GET** /activity/\{activity\}
-[**activityIdentifiersSnapshot**](ActivityApi#activityidentifierssnapshot) | **GET** /activity/identifiers
-[**activityUpdate**](ActivityApi#activityupdate) | **POST** /activity/update
+[**activitiesSpecificActivitySnapshot****](ActivityApi#activitiesspecificactivitysnapshot) | **GET** /activity/\{activity\}
+[**activityIdentifiersSnapshot****](ActivityApi#activityidentifierssnapshot) | **GET** /activity/identifiers
+[**activityUpdate****](ActivityApi#activityupdate) | **POST** /activity/update
 
 
-## **activitiesSpecificActivitySnapshot**
+## **activitiesSpecificActivitySnapshot** {#activitiesspecificactivitysnapshot}
 > Activity activitiesSpecificActivitySnapshot()
 
 This will attempt to get a specific activity.
@@ -19,8 +19,8 @@ This will attempt to get a specific activity.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ActivityApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivitiesSpecificActivitySnapshotRequest = {
     // string | This is a specific activity uuid.
@@ -30,14 +30,14 @@ const body: Pieces.ActivitiesSpecificActivitySnapshotRequest = {
 };
 
 apiInstance.activitiesSpecificActivitySnapshot(body).then((data: Activity) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **activity** | [**string**] | This is a specific activity uuid. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -59,7 +59,7 @@ Name | Type | Description
 **410** | Activity was not found. |  -  |
 **500** | Internal Server Error |  -  |
 
-## **activityIdentifiersSnapshot**
+## **activityIdentifiersSnapshot** {#activityidentifierssnapshot}
 > FlattenedActivities activityIdentifiersSnapshot()
 
 This is going to return all the identifiers of the activity event in order of most recent -> oldest.
@@ -69,8 +69,8 @@ This is going to return all the identifiers of the activity event in order of mo
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ActivityApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivityIdentifiersSnapshotRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
@@ -80,14 +80,14 @@ const body: Pieces.ActivityIdentifiersSnapshotRequest = {
 };
 
 apiInstance.activityIdentifiersSnapshot(body).then((data: FlattenedActivities) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
  **activityFilterEnum** | [**&#39;CREATED&#39; | &#39;UPDATED&#39; | &#39;DELETED&#39; | &#39;REFERENCED&#39;**]**Array\<&#39;CREATED&#39; &#124; &#39;UPDATED&#39; &#124; &#39;DELETED&#39; &#124; &#39;REFERENCED&#39;\>** | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | (optional) defaults to undefined
 
@@ -108,7 +108,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **activityUpdate**
+## **activityUpdate** {#activityupdate}
 > Activity activityUpdate()
 
 this will update a specific activity.
@@ -118,8 +118,8 @@ this will update a specific activity.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ActivityApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivityUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -129,14 +129,14 @@ const body: Pieces.ActivityUpdateRequest = {
 };
 
 apiInstance.activityUpdate(body).then((data: Activity) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **activity** | **Activity**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
