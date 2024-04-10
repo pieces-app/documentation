@@ -49,7 +49,7 @@ apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -98,7 +98,7 @@ apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -147,7 +147,7 @@ apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -196,7 +196,7 @@ apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -245,7 +245,7 @@ apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -294,7 +294,7 @@ apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty res
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -343,7 +343,7 @@ apiInstance.assetFormats(body).then((data: Formats) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -391,7 +391,7 @@ apiInstance.assetReclassify(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **assetReclassification** | **AssetReclassification**| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -439,7 +439,7 @@ apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -488,7 +488,7 @@ apiInstance.assetSnapshot(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -539,7 +539,7 @@ apiInstance.assetSnapshotPost(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededAccessor** | **SeededAccessor**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -588,7 +588,7 @@ apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -637,7 +637,7 @@ apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -686,7 +686,7 @@ apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **exportType** | [**&#39;HTML&#39; | &#39;MD&#39;**]**Array\<&#39;HTML&#39; &#124; &#39;MD&#39;\>** | This specifies the type of export the user wants. | defaults to undefined
 
@@ -735,7 +735,7 @@ apiInstance.assetUpdate(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | **Asset**| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

@@ -38,7 +38,7 @@ apiInstance.websitesCreateNewWebsite(body).then((data: Website) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededWebsite** | **SeededWebsite**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -85,7 +85,7 @@ apiInstance.websitesDeleteSpecificWebsite(body).then((data: void (empty response
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
 
 
@@ -131,7 +131,7 @@ apiInstance.websitesExists(body).then((data: ExistingMetadata) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **existentMetadata** | **ExistentMetadata**|  |
 
 
@@ -177,7 +177,7 @@ apiInstance.websitesSnapshot(body).then((data: Websites) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

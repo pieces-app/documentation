@@ -115,7 +115,7 @@ apiInstance.selectUser(body).then((data: UserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **auth0User** | **Auth0User**|  |
 
 
@@ -197,7 +197,7 @@ apiInstance.updateUser(body).then((data: UserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **userProfile** | **UserProfile**|  |
 
 
@@ -318,7 +318,7 @@ apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **userProfile** | **UserProfile**| This will take an update userProfile, with the updated vanity name! |
 
 

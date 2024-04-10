@@ -38,7 +38,7 @@ apiInstance.conversationsCreateFromAsset(body).then((data: ConversationsCreateFr
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
@@ -86,7 +86,7 @@ apiInstance.conversationsCreateSpecificConversation(body).then((data: Conversati
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConversation** | **SeededConversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -133,7 +133,7 @@ apiInstance.conversationsDeleteSpecificConversation(body).then((data: void (empt
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
@@ -217,7 +217,7 @@ apiInstance.conversationsSnapshot(body).then((data: Conversations) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

@@ -41,7 +41,7 @@ apiInstance.tagAssociateAsset(body).then((data: void (empty response body)) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -90,7 +90,7 @@ apiInstance.tagAssociatePerson(body).then((data: void (empty response body)) => 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -139,7 +139,7 @@ apiInstance.tagDisassociateAsset(body).then((data: void (empty response body)) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -188,7 +188,7 @@ apiInstance.tagDisassociatePerson(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -237,7 +237,7 @@ apiInstance.tagScoresIncrement(body).then((data: void (empty response body)) => 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -286,7 +286,7 @@ apiInstance.tagUpdate(body).then((data: Tag) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | **Tag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -335,7 +335,7 @@ apiInstance.tagsSpecificTagSnapshot(body).then((data: Tag) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

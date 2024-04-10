@@ -37,7 +37,7 @@ apiInstance.workstreamSummariesCreateNewWorkstreamSummary(body).then((data: Work
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededWorkstreamSummary** | **SeededWorkstreamSummary**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(body).then((data:
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.workstreamSummariesSnapshot(body).then((data: WorkstreamSummaries) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

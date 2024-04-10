@@ -35,7 +35,7 @@ apiInstance.rangesCreateNewRange(body).then((data: Range) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededRange** | **SeededRange**|  |
 
 
@@ -81,7 +81,7 @@ apiInstance.rangesDeleteSpecificRange(body).then((data: void (empty response bod
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 

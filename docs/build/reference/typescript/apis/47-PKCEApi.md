@@ -74,7 +74,7 @@ apiInstance.generateCode(body).then((data: PKCE) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededPKCE** | **SeededPKCE**| All of the properties that the client might want to send over to authorize a PKCE Code Flow |
 
 
@@ -119,7 +119,7 @@ apiInstance.generateToken(body).then((data: PKCE) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tokenizedPKCE** | **TokenizedPKCE**| The needed properties to exchange a PKCE Code for an OAuth Token |
 
 
@@ -205,7 +205,7 @@ apiInstance.respondWithCode(body).then((data: PKCE) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **code** | [**string**] | The PKCE Code to be used to access a Token. | defaults to undefined
  **state** | [**string**] | Likely the state that will be returned which should match the requested state as well as the nonce | defaults to undefined
  **schema** | **EmbeddedModelSchema** |  | (optional) defaults to undefined

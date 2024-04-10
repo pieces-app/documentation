@@ -37,7 +37,7 @@ apiInstance.messagesCreateSpecificMessage(body).then((data: ConversationMessage)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConversationMessage** | **SeededConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.messagesDeleteSpecificMessage(body).then((data: void (empty response
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.messagesSnapshot(body).then((data: ConversationMessages) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

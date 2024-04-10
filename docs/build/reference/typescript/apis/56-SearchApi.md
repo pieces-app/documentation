@@ -37,7 +37,7 @@ apiInstance.fullTextSearch(body).then((data: SearchedAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
@@ -86,7 +86,7 @@ apiInstance.neuralCodeSearch(body).then((data: SearchedAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
@@ -135,7 +135,7 @@ apiInstance.tagBasedSearch(body).then((data: SearchedAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededAssetTags** | **SeededAssetTags**|  |
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 

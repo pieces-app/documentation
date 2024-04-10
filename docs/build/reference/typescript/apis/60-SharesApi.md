@@ -38,7 +38,7 @@ apiInstance.sharesCreateNewShare(body).then((data: Shares) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededShare** | **SeededShare**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.sharesDeleteShare(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **share** | [**string**] | Share id | defaults to undefined
 
 
@@ -129,7 +129,7 @@ apiInstance.sharesSnapshot(body).then((data: Shares) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
@@ -176,7 +176,7 @@ apiInstance.sharesSpecificShareSnapshot(body).then((data: Share) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **share** | [**string**] | Share id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

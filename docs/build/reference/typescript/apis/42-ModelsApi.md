@@ -37,7 +37,7 @@ apiInstance.modelsCreateNewModel(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededModel** | **SeededModel**|  |
 
 
@@ -83,7 +83,7 @@ apiInstance.modelsDeleteSpecificModel(body).then((data: void (empty response bod
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -131,7 +131,7 @@ apiInstance.modelsDeleteSpecificModelCache(body).then((data: ModelDeleteCacheOut
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **modelDeleteCacheInput** | **ModelDeleteCacheInput**|  |
  **model** | [**string**] | model id | defaults to undefined
 

@@ -35,7 +35,7 @@ apiInstance.linkify(body).then((data: Shares) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **linkify** | **Linkify**|  |
 
 
@@ -84,7 +84,7 @@ apiInstance.linkifyMultiple(body).then((data: Shares) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **linkifyMultiple** | **LinkifyMultiple**|  |
 
 
@@ -134,7 +134,7 @@ apiInstance.linkifyShareRevoke(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **share** | [**string**] |  | defaults to undefined
 
 

@@ -38,7 +38,7 @@ apiInstance.personDisassociateAsset(body).then((data: void (empty response body)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -87,7 +87,7 @@ apiInstance.personsCreateNewPerson(body).then((data: Person) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededPerson** | **SeededPerson**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -134,7 +134,7 @@ apiInstance.personsDeletePerson(body).then((data: void (empty response body)) =>
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
@@ -180,7 +180,7 @@ apiInstance.personsSnapshot(body).then((data: Persons) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

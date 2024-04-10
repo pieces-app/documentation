@@ -33,7 +33,7 @@ apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededFormat** | **SeededFormat**| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  |
 
 

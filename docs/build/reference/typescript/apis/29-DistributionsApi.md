@@ -35,7 +35,7 @@ apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededDistribution** | **SeededDistribution**|  |
 
 
@@ -81,7 +81,7 @@ apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empt
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 

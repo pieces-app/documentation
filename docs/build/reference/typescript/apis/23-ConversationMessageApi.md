@@ -40,7 +40,7 @@ apiInstance.messageAssociateAnnotation(body).then((data: void (empty response bo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -89,7 +89,7 @@ apiInstance.messageDisassociateAnnotation(body).then((data: void (empty response
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -138,7 +138,7 @@ apiInstance.messageScoresIncrement(body).then((data: void (empty response body))
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -187,7 +187,7 @@ apiInstance.messageSpecificMessageSnapshot(body).then((data: ConversationMessage
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -236,7 +236,7 @@ apiInstance.messageSpecificMessageUpdate(body).then((data: ConversationMessage) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -285,7 +285,7 @@ apiInstance.messageUpdateValue(body).then((data: ConversationMessage) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

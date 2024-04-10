@@ -33,7 +33,7 @@ apiInstance.sendLocalNotification(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **notification** | **Notification**|  |
 
 

@@ -38,7 +38,7 @@ apiInstance.tagsCreateNewTag(body).then((data: Tag) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededTag** | **SeededTag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -85,7 +85,7 @@ apiInstance.tagsDeleteSpecificTag(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **tag** | [**string**] | tag id | defaults to undefined
 
 
@@ -131,7 +131,7 @@ apiInstance.tagsExists(body).then((data: ExistingMetadata) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **existentMetadata** | **ExistentMetadata**|  |
 
 
@@ -177,7 +177,7 @@ apiInstance.tagsSnapshot(body).then((data: Tags) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

@@ -72,7 +72,7 @@ apiInstance.databaseImport(body).then((data: void (empty response body)) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **exportedDatabase** | **ExportedDatabase**|  |
 
 

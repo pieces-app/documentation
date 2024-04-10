@@ -38,7 +38,7 @@ apiInstance.auth0Logout(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **clientId** | [**string**] | The client ID of the Auth0 Instance | (optional) defaults to undefined
  **returnTo** | [**string**] | The URL that the logout endpoint will return to | (optional) defaults to undefined
 
@@ -104,7 +104,7 @@ apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **audience** | [**string**] |  The unique identifier of the target API you want to access. | defaults to undefined
  **scope** | **Array\<&#39;openid&#39; &#124; &#39;email&#39; &#124; &#39;profile&#39; &#124; &#39;offline_access&#39;\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | defaults to undefined
  **responseType** | [**&#39;code&#39;**]**Array\<&#39;code&#39;\>** | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | defaults to undefined
@@ -171,7 +171,7 @@ apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **grantType** | [**string**]**Array\<&#39;refresh_token&#39; &#124; &#39;authorization_code&#39;\>** | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | defaults to undefined
  **clientId** | [**string**] | Your application\\\&#39;s Client ID. | defaults to undefined
  **code** | [**string**] | The Authorization Code received from the initial /authorize call. | defaults to undefined

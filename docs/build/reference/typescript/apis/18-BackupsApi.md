@@ -36,7 +36,7 @@ apiInstance.backupsCreateNewBackup(body).then((data: Backup) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededBackup** | **SeededBackup**|  |
 
 
@@ -82,7 +82,7 @@ apiInstance.backupsCreateNewBackupStreamed(body).then((data: BackupStreamedProgr
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededBackup** | **SeededBackup**|  |
 
 
@@ -130,7 +130,7 @@ apiInstance.backupsDeleteSpecificBackup(body).then((data: void (empty response b
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 

@@ -49,7 +49,7 @@ apiInstance.assetsCreateNewAsset(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seed** | **Seed**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -95,7 +95,7 @@ apiInstance.assetsDeleteAsset(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
@@ -142,7 +142,7 @@ apiInstance.assetsDraft(body).then((data: Seed) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seed** | **Seed**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -189,7 +189,7 @@ apiInstance.assetsGetRecommendedAssets(body).then((data: Assets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededAssetsRecommendation** | **SeededAssetsRecommendation**| The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. |
 
 
@@ -234,7 +234,7 @@ apiInstance.assetsGetRelatedAssets(body).then((data: Assets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **assets** | **Assets**| The body of the request is an object (Assets Model) with iterable internally. |
 
 
@@ -279,7 +279,7 @@ apiInstance.assetsIdentifiersSnapshot(body).then((data: FlattenedAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
@@ -369,7 +369,7 @@ apiInstance.assetsSearchAssets(body).then((data: SearchedAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **query** | [**string**] | This is a string that you can use to search your assets. | (optional) defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
  **searchableTags** | [**string**] | This is a comma separated value of tags used for search. | (optional) defaults to undefined
@@ -422,7 +422,7 @@ apiInstance.assetsSearchWithFilters(body).then((data: AssetsSearchWithFiltersOut
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **assetsSearchWithFiltersInput** | **AssetsSearchWithFiltersInput**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
@@ -474,7 +474,7 @@ apiInstance.assetsSnapshot(body).then((data: Assets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
  **suggested** | [**boolean**] | This will let us know if a developer, wants a snapshot related to suggested content or normal content | (optional) defaults to undefined
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
@@ -523,7 +523,7 @@ apiInstance.assetsSpecificAssetFormatsSnapshot(body).then((data: Formats) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -571,7 +571,7 @@ apiInstance.assetsSpecificAssetSnapshot(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

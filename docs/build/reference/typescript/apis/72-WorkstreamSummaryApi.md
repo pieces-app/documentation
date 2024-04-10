@@ -51,7 +51,7 @@ apiInstance.workstreamSummariesSpecificWorkstreamSummarySnapshot(body).then((dat
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -100,7 +100,7 @@ apiInstance.workstreamSummaryAssociateAnchor(body).then((data: void (empty respo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -149,7 +149,7 @@ apiInstance.workstreamSummaryAssociateAsset(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -198,7 +198,7 @@ apiInstance.workstreamSummaryAssociateConversation(body).then((data: void (empty
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -247,7 +247,7 @@ apiInstance.workstreamSummaryAssociatePerson(body).then((data: void (empty respo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -296,7 +296,7 @@ apiInstance.workstreamSummaryAssociateRange(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -345,7 +345,7 @@ apiInstance.workstreamSummaryAssociateWebsite(body).then((data: void (empty resp
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -394,7 +394,7 @@ apiInstance.workstreamSummaryAssociateWorkstreamEvent(body).then((data: void (em
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
@@ -443,7 +443,7 @@ apiInstance.workstreamSummaryDisassociateAnchor(body).then((data: void (empty re
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -492,7 +492,7 @@ apiInstance.workstreamSummaryDisassociateAsset(body).then((data: void (empty res
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -541,7 +541,7 @@ apiInstance.workstreamSummaryDisassociateConversation(body).then((data: void (em
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -590,7 +590,7 @@ apiInstance.workstreamSummaryDisassociatePerson(body).then((data: void (empty re
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -639,7 +639,7 @@ apiInstance.workstreamSummaryDisassociateRange(body).then((data: void (empty res
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -688,7 +688,7 @@ apiInstance.workstreamSummaryDisassociateWebsite(body).then((data: void (empty r
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -737,7 +737,7 @@ apiInstance.workstreamSummaryDisassociateWorkstreamEvent(body).then((data: void 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
@@ -786,7 +786,7 @@ apiInstance.workstreamSummaryScoresIncrement(body).then((data: void (empty respo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -835,7 +835,7 @@ apiInstance.workstreamSummaryUpdate(body).then((data: WorkstreamSummary) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamSummary** | **WorkstreamSummary**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

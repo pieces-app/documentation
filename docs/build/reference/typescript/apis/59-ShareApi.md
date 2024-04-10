@@ -37,7 +37,7 @@ apiInstance.shareScoresIncrement(body).then((data: void (empty response body)) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **share** | [**string**] | Share id | defaults to undefined
 
@@ -86,7 +86,7 @@ apiInstance.shareSnapshot(body).then((data: Share) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **share** | [**string**] | Share id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -134,7 +134,7 @@ apiInstance.shareUpdate(body).then((data: Share) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **share** | **Share**| This is the Share that needs to be updated. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

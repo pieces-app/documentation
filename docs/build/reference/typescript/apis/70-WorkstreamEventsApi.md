@@ -37,7 +37,7 @@ apiInstance.workstreamEventsCreateNewWorkstreamEvent(body).then((data: Workstrea
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededWorkstreamEvent** | **SeededWorkstreamEvent**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.workstreamEventsDeleteSpecificWorkstreamEvent(body).then((data: void
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.workstreamEventsSnapshot(body).then((data: WorkstreamEvents) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

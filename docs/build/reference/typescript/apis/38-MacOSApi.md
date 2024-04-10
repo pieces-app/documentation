@@ -33,7 +33,7 @@ apiInstance.assetsCreateNewAssetFromMacos(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededMacOSAsset** | **SeededMacOSAsset**| A SeededMacosApplication which contains the value and an Application Instance |
 
 

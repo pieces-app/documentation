@@ -37,7 +37,7 @@ apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data: AnchorPoint) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededAnchorPoint** | **SeededAnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data: void (empty 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.anchorPointsSnapshot(body).then((data: AnchorPoints) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

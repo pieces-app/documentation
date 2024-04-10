@@ -34,7 +34,7 @@ apiInstance.distributionUpdate(body).then((data: Distribution) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **distribution** | **Distribution**|  |
 
 
@@ -80,7 +80,7 @@ apiInstance.distributionsSpecificDistributionSnapshot(body).then((data: Distribu
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 

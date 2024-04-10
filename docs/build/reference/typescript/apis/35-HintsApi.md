@@ -35,7 +35,7 @@ apiInstance.hintsCreateNewHint(body).then((data: Hint) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededHint** | **SeededHint**|  |
 
 
@@ -81,7 +81,7 @@ apiInstance.hintsDeleteSpecificHint(body).then((data: void (empty response body)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 

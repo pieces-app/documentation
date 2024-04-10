@@ -37,7 +37,7 @@ apiInstance.backup(body).then((data: void (empty response body)) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **assets** | **Assets**|  |
 
 
@@ -83,7 +83,7 @@ apiInstance.backupAsset(body).then((data: void (empty response body)) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | **Asset**|  |
 
 
@@ -132,7 +132,7 @@ apiInstance.backupRestoreSpecificBackup(body).then((data: Backup) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
@@ -181,7 +181,7 @@ apiInstance.backupRestoreSpecificBackupStreamed(body).then((data: BackupStreamed
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **backup2** | **Backup**|  |
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
@@ -228,7 +228,7 @@ apiInstance.backupSpecificBackupSnapshot(body).then((data: Backup) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 

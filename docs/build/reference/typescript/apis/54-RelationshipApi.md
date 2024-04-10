@@ -33,7 +33,7 @@ apiInstance.relationshipsSpecificRelationshipSnapshot(body).then((data: Relation
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **relationship** | [**string**] | this is a specific relationship uuid. | defaults to undefined
 
 

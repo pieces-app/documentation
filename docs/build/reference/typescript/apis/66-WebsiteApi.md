@@ -45,7 +45,7 @@ apiInstance.websiteAssociateAsset(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -94,7 +94,7 @@ apiInstance.websiteAssociateConversation(body).then((data: void (empty response 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -143,7 +143,7 @@ apiInstance.websiteAssociatePerson(body).then((data: void (empty response body))
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -192,7 +192,7 @@ apiInstance.websiteAssociateWorkstreamSummary(body).then((data: void (empty resp
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -241,7 +241,7 @@ apiInstance.websiteDisassociateAsset(body).then((data: void (empty response body
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -290,7 +290,7 @@ apiInstance.websiteDisassociateConversation(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -339,7 +339,7 @@ apiInstance.websiteDisassociatePerson(body).then((data: void (empty response bod
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -388,7 +388,7 @@ apiInstance.websiteDisassociateWorkstreamSummary(body).then((data: void (empty r
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -437,7 +437,7 @@ apiInstance.websiteScoresIncrement(body).then((data: void (empty response body))
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **website** | [**string**] | website id | defaults to undefined
 
@@ -486,7 +486,7 @@ apiInstance.websiteUpdate(body).then((data: Website) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | **Website**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -535,7 +535,7 @@ apiInstance.websitesSpecificWebsiteSnapshot(body).then((data: Website) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **website** | [**string**] | website id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

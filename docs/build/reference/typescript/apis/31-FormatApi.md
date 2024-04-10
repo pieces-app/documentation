@@ -37,7 +37,7 @@ apiInstance.formatAnalysis(body).then((data: Analysis) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **format** | [**string**] | The id (uuid) for a specific format. | defaults to undefined
 
 
@@ -85,7 +85,7 @@ apiInstance.formatReclassify(body).then((data: Format) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **formatReclassification** | **FormatReclassification**|  |
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -133,7 +133,7 @@ apiInstance.formatSnapshot(body).then((data: Format) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **format** | [**string**] | The id (uuid) for a specific format. | defaults to undefined
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -181,7 +181,7 @@ apiInstance.formatUpdateValue(body).then((data: Format) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **format** | **Format**| This is the format that you want to update. |
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -228,7 +228,7 @@ apiInstance.formatUsageEvent(body).then((data: TrackedFormatEvent) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededTrackedFormatEvent** | **SeededTrackedFormatEvent**| This is a SeededTrackedFormatEvent, per tracked event:) |
 
 

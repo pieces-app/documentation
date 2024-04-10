@@ -39,7 +39,7 @@ apiInstance.personAssociateWorkstreamSummary(body).then((data: void (empty respo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -88,7 +88,7 @@ apiInstance.personDisassociateWorkstreamSummary(body).then((data: void (empty re
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -137,7 +137,7 @@ apiInstance.personScoresIncrement(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -186,7 +186,7 @@ apiInstance.personSnapshot(body).then((data: Person) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -235,7 +235,7 @@ apiInstance.updatePerson(body).then((data: Person) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **person** | **Person**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
