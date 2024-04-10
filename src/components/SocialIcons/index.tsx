@@ -26,20 +26,17 @@ import GridFlexRow from "@site/src/components/GridFlexRow";
 const SocialIcons = () => {
   return (
     <GridFlexRow type={'evenly'}>
-      <a href="https://discord.gg/getpieces" target="_blank" rel="noreferrer">
-        <img src="/img/social/discord.svg" alt="Discord" />
-      </a>
       <a href="https://twitter.com/getpieces" target="_blank" rel="noreferrer">
-        <img src="/img/social/twitter.svg" alt="Twitter" />
+        <img src="/social/twitter.svg" alt="Twitter" />
       </a>
       <a href="https://www.linkedin.com/company/getpieces" target="_blank" rel="noreferrer">
-        <img src="/img/social/linkedin.svg" alt="LinkedIn" />
+        <img src="/social/linkedin.svg" alt="LinkedIn" />
       </a>
       <a href="https://www.youtube.com/@getpieces" target="_blank" rel="noreferrer">
-        <img src="/img/social/youtube.svg" alt="YouTube" />
+        <img src="/social/youtube.svg" alt="YouTube" />
       </a>
       <a href="https://www.instagram.com/getpieces" target="_blank" rel="noreferrer">
-        <img src="/img/social/instagram.svg" alt="Instagram" />
+        <img src="/social/instagram.svg" alt="Instagram" />
       </a>
     </GridFlexRow>
   )
