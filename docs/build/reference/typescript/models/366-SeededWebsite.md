@@ -1,9 +1,9 @@
 
-# SeededWebsite
+# SeededWebsite Model
 
 This is the minimum information required to create a website for a specific asset.  you can optionally add an asset, or person id to attach this website directly to it  TODO consider updating these asset,format to referenced Models
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **person** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededWebsite } from '@pieces.app/pieces-os-client'

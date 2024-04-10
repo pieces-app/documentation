@@ -1,14 +1,14 @@
 
-# TagCategoryEnum
+# TagCategoryEnum Model
 
 This is an enum that describes the category that that this tag is apart of.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { TagCategoryEnum } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# DiscoveredSensitives
+# DiscoveredSensitives Model
 
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;DiscoveredSensitive&gt;**](DiscoveredSensitive)
 **application** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { DiscoveredSensitives } from '@pieces.app/pieces-os-client'

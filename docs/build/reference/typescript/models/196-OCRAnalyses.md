@@ -1,15 +1,15 @@
 
-# OCRAnalyses
+# OCRAnalyses Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;OCRAnalysis&gt;**](OCRAnalysis)
 
-## Example
+## Example Model
 
 ```typescript
 import { OCRAnalyses } from '@pieces.app/pieces-os-client'

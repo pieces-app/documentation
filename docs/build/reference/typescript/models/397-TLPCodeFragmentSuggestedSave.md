@@ -1,9 +1,9 @@
 
-# TLPCodeFragmentSuggestedSave
+# TLPCodeFragmentSuggestedSave Model
 
 Model for monitoring and evaluating the suggested save feature
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **score** | **number**
 **candidates** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPCodeFragmentSuggestedSave } from '@pieces.app/pieces-os-client'

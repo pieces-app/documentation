@@ -1,10 +1,10 @@
-# Relationships API
+# Relationships Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**relationshipsSnapshot****](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
+[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
 
 
 ## **relationshipsSnapshot** {#relationshipssnapshot}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This will reurn all of the relationships that exists within your pieces db.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,21 +25,21 @@ apiInstance.relationshipsSnapshot().then((data: Relationships) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Relationships**](../models/Relationships)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

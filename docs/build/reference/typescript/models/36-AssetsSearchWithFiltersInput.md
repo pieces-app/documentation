@@ -1,8 +1,8 @@
 
-# AssetsSearchWithFiltersInput
+# AssetsSearchWithFiltersInput Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **filters** | [**AssetFilters**](AssetFilters)
 **casing** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { AssetsSearchWithFiltersInput } from '@pieces.app/pieces-os-client'

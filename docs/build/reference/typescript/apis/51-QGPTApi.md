@@ -1,15 +1,15 @@
-# QGPT API
+# QGPT Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**hints****](QGPTApi#hints) | **POST** /qgpt/hints
-[**personsRelated****](QGPTApi#personsrelated) | **POST** /qgpt/persons/related
-[**qgptStream****](QGPTApi#qgptstream) | **GET** /qgpt/stream
-[**question****](QGPTApi#question) | **POST** /qgpt/question
-[**relevance****](QGPTApi#relevance) | **POST** /qgpt/relevance
-[**reprompt****](QGPTApi#reprompt) | **POST** /qgpt/reprompt
+[**hints**](QGPTApi#hints) | **POST** /qgpt/hints
+[**personsRelated**](QGPTApi#personsrelated) | **POST** /qgpt/persons/related
+[**qgptStream**](QGPTApi#qgptstream) | **GET** /qgpt/stream
+[**question**](QGPTApi#question) | **POST** /qgpt/question
+[**relevance**](QGPTApi#relevance) | **POST** /qgpt/relevance
+[**reprompt**](QGPTApi#reprompt) | **POST** /qgpt/reprompt
 
 
 ## **hints** {#hints}
@@ -17,7 +17,7 @@ Method | HTTP request
 
 Generates suggested questions that users can ask. It accepts the answer displayed to the user, relevant code snippets used for the answer, and the previous query as inputs. In return, it provides a list of questions that can be presented to the user.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,24 +35,24 @@ apiInstance.hints(body).then((data: QGPTQuestionOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **qGPTHintsInput** | **QGPTHintsInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**QGPTQuestionOutput**](../models/QGPTQuestionOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 Utilize this endpoint for Who Support, identifying individuals who can provide assistance when given context such as a Seed or a QGPT Conversation, for example.  Input:   - (optional) seed: Seed - Only supports fragments for now.   - (optional) conversation: QGPTConversation.  Output:   - persons: Persons
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -83,7 +83,7 @@ apiInstance.personsRelated(body).then((data: QGPTPersonsRelatedOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -91,17 +91,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**QGPTPersonsRelatedOutput**](../models/QGPTPersonsRelatedOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 Provides a version of qGPT stream that streams inputs. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option \'question:true\'. It is designed to manage multiple conversations and operates as a Websocket.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -130,24 +130,24 @@ apiInstance.qgptStream(body).then((data: QGPTStreamOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **qGPTStreamInput** | **QGPTStreamInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**QGPTStreamOutput**](../models/QGPTStreamOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 
 Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endpoint, along with a question query, to provide possible answers.  Note:   - Relevant seeds must either include an ID used within the /qgpt/relevance endpoint or a seed with a fragment/string; otherwise, an error will be thrown.   - This endpoint utilizes your query and relevant snippets to generate multiple answers, each accompanied by a score.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -179,24 +179,24 @@ apiInstance.question(body).then((data: QGPTQuestionOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **qGPTQuestionInput** | **QGPTQuestionInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**QGPTQuestionOutput**](../models/QGPTQuestionOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 This is the first phase to the QGPT flow.  Please one of the following. 1. provide an absolute path on the users machine that we can use locally. 2. provide Seeds that you want to compare to, which will be ONLY fragment/string values(all other values will be ignored) 3. provide assets, here you can provide an iterable of the asset id, and we will do the rest 4. you can set your database boolean to true which will tell us to use your entire DB as the query space.  required - query: string; This is the question of the user. optional - question: boolean; This will by-pass the second endpoint and just ask the question and return the results(as an ease of use bool)  This endpoint will embed everything. and will return the relevance snippets that we will use in the next phase, to answer your question.  on the UI: we can show this to users (around this is the snippets we used to answer your question.)  Next: feed this information to the /qgpt/question [POST] endpoint to get your question answered.(unless you included the question:true optional boolean, then you will get the results from here.)
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -228,24 +228,24 @@ apiInstance.relevance(body).then((data: QGPTRelevanceOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **qGPTRelevanceInput** | **QGPTRelevanceInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**QGPTRelevanceOutput**](../models/QGPTRelevanceOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 This will take in a followup question and the history of the conversation, and emit your a prompt or query that you can pass to the /qgpt/relevance and then the /qgpt/question endpoint to get your next answer.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -277,24 +277,24 @@ apiInstance.reprompt(body).then((data: QGPTRepromptOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **qGPTRepromptInput** | **QGPTRepromptInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**QGPTRepromptOutput**](../models/QGPTRepromptOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

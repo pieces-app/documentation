@@ -1,11 +1,11 @@
-# Formats API
+# Formats Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**formatsSnapshot****](FormatsApi#formatssnapshot) | **GET** /formats
-[**formatsSpecificFormatSnapshot****](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\}
+[**formatsSnapshot**](FormatsApi#formatssnapshot) | **GET** /formats
+[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\}
 
 
 ## **formatsSnapshot** {#formatssnapshot}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 Get all of your formats for a given user.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,24 +31,24 @@ apiInstance.formatsSnapshot(body).then((data: Formats) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Formats**](../models/Formats)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 Request a specific format when given a id (uuid in path params)
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,7 +78,7 @@ apiInstance.formatsSpecificFormatSnapshot(body).then((data: Format) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -86,17 +86,17 @@ Name | Type | Description  | Notes
  **transferable** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Format**](../models/Format)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

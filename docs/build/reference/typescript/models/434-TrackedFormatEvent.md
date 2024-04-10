@@ -1,9 +1,9 @@
 
-# TrackedFormatEvent
+# TrackedFormatEvent Model
 
 This is a model that represents a generic event that we may want to track in relation to a format, for example beamed, copied, downloaded, and view. ** Note: This is the model that will get returned by our api, and is. Representative of a full TrackedFormat event. **
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs)
 **metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedFormatEvent } from '@pieces.app/pieces-os-client'

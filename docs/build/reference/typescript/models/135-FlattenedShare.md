@@ -1,9 +1,9 @@
 
-# FlattenedShare
+# FlattenedShare Model
 
 This is a dag safe version of the Share.  if user is undefined && access is public then we have an asset that is publicly available.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **distributions** | [**FlattenedDistributions**](FlattenedDistributions)
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedShare } from '@pieces.app/pieces-os-client'

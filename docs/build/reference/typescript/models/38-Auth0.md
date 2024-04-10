@@ -1,9 +1,9 @@
 
-# Auth0
+# Auth0 Model
 
 An object representing all of the properties that are available within a Auth0 PKCE Flow
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **oAuth** | [**OAuthGroup**](OAuthGroup)
 **namespace** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { Auth0 } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# OSDeviceDependenciesInformation
+# OSDeviceDependenciesInformation Model
 
 This will lets us know about specific dependencies that we are looking for on the device that are needed for specific tasks.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **vulkan** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { OSDeviceDependenciesInformation } from '@pieces.app/pieces-os-client'

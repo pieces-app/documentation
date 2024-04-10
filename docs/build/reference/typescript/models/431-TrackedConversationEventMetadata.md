@@ -1,16 +1,16 @@
 
-# TrackedConversationEventMetadata
+# TrackedConversationEventMetadata Model
 
 This is the metadata for the the ConversationEvent
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **rename** | [**TrackedConversationEventRenameMetadata**](TrackedConversationEventRenameMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedConversationEventMetadata } from '@pieces.app/pieces-os-client'

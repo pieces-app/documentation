@@ -1,9 +1,9 @@
 
-# AllocationCloud
+# AllocationCloud Model
 
 update && version: will be present only if your cloud was successfully spun up && running.  updated: is the last time this was updated.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **version** | **string**
 **region** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { AllocationCloud } from '@pieces.app/pieces-os-client'

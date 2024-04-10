@@ -1,16 +1,16 @@
 
-# MailgunMetadata
+# MailgunMetadata Model
 
 TODO add additional properties. TODO eventually modify this model to look like the response from Mailgun.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **messageId** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { MailgunMetadata } from '@pieces.app/pieces-os-client'

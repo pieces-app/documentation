@@ -1,9 +1,9 @@
 
-# TrackedApplicationInstall
+# TrackedApplicationInstall Model
 
 A model that allows for us to specifically track Application Installs & Related Data
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **application** | [**TrackedApplication**](TrackedApplication)
 **user** | [**TrackedUserProfile**](TrackedUserProfile)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedApplicationInstall } from '@pieces.app/pieces-os-client'

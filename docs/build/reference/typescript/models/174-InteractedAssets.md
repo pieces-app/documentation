@@ -1,16 +1,16 @@
 
-# InteractedAssets
+# InteractedAssets Model
 
 A model which contains a list of InteractedAssets with potentially additional properties.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;InteractedAsset&gt;**](InteractedAsset)
 
-## Example
+## Example Model
 
 ```typescript
 import { InteractedAssets } from '@pieces.app/pieces-os-client'

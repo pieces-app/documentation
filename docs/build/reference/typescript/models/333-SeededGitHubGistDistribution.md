@@ -1,9 +1,9 @@
 
-# SeededGitHubGistDistribution
+# SeededGitHubGistDistribution Model
 
 This is the minimum information needed to distribute a Piece to a Gist.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **description** | **string**
 **name** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededGitHubGistDistribution } from '@pieces.app/pieces-os-client'

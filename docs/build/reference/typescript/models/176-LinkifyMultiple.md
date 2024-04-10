@@ -1,9 +1,9 @@
 
-# LinkifyMultiple
+# LinkifyMultiple Model
 
 This is the incoming linkify model.  if access is PRIVATE then please provide and array of users to enable the link for.  Assumption, all assets are already backed up to the cloud. 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **access** | [**AccessEnum**](AccessEnum)
 **name** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { LinkifyMultiple } from '@pieces.app/pieces-os-client'

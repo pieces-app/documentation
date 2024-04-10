@@ -1,10 +1,10 @@
-# Relationship API
+# Relationship Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**relationshipsSpecificRelationshipSnapshot****](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\}
+[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\}
 
 
 ## **relationshipsSpecificRelationshipSnapshot** {#relationshipsspecificrelationshipsnapshot}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This will return a single relationship object.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.relationshipsSpecificRelationshipSnapshot(body).then((data: Relation
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **relationship** | [**string**] | this is a specific relationship uuid. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Relationship**](../models/Relationship)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

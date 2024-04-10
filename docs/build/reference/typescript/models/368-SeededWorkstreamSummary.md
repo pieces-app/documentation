@@ -1,9 +1,9 @@
 
-# SeededWorkstreamSummary
+# SeededWorkstreamSummary Model
 
 This is a seeded version of a WorkstreamSummary
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **persons** | [**FlattenedPersons**](FlattenedPersons)
 **applications** | [**Applications**](Applications)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededWorkstreamSummary } from '@pieces.app/pieces-os-client'

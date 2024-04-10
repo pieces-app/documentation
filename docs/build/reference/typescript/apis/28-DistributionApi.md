@@ -1,11 +1,11 @@
-# Distribution API
+# Distribution Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**distributionUpdate****](DistributionApi#distributionupdate) | **POST** /distribution/update
-[**distributionsSpecificDistributionSnapshot****](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\}
+[**distributionUpdate**](DistributionApi#distributionupdate) | **POST** /distribution/update
+[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\}
 
 
 ## **distributionUpdate** {#distributionupdate}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 This will update a specific Distribution.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,24 +31,24 @@ apiInstance.distributionUpdate(body).then((data: Distribution) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **Distribution**|  |
 
 
-### Return type
+### Return Model type
 
 [**Distribution**](../models/Distribution)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -77,24 +77,24 @@ apiInstance.distributionsSpecificDistributionSnapshot(body).then((data: Distribu
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Distribution**](../models/Distribution)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

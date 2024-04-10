@@ -1,9 +1,9 @@
 
-# FlattenedHint
+# FlattenedHint Model
 
 This is the flattened version of a hint. Ensure that you DO NOT reference the Asset here as you can create an infinite loop within the packaging.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **model** | [**ReferencedModel**](ReferencedModel)
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedHint } from '@pieces.app/pieces-os-client'

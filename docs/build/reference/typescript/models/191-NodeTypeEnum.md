@@ -1,14 +1,14 @@
 
-# NodeTypeEnum
+# NodeTypeEnum Model
 
 This describes the type of a node ie an asset, tag, website, format... ETC
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { NodeTypeEnum } from '@pieces.app/pieces-os-client'

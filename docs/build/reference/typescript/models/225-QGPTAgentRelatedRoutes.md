@@ -1,16 +1,16 @@
 
-# QGPTAgentRelatedRoutes
+# QGPTAgentRelatedRoutes Model
 
 This is specific for all the related materials, like people, tags, websites... xyz
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **people** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTAgentRelatedRoutes } from '@pieces.app/pieces-os-client'

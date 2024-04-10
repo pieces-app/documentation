@@ -1,9 +1,9 @@
 
-# ConversationMessages
+# ConversationMessages Model
 
 This is a plural version of ConversationMessage.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { ConversationMessages } from '@pieces.app/pieces-os-client'

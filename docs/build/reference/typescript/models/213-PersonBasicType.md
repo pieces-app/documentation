@@ -1,9 +1,9 @@
 
-# PersonBasicType
+# PersonBasicType Model
 
 This is all optional properties around the most basic information around a non-pieces user.  A Basic type will NOT have a scope as it is not an actual pieces user.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **url** | **string**
 **mailgun** | [**MailgunMetadata**](MailgunMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { PersonBasicType } from '@pieces.app/pieces-os-client'

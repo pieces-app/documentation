@@ -1,16 +1,16 @@
 
-# Models
+# Models Model
 
 This is a List of MachineLearning Models
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Model&gt;**](Model)
 
-## Example
+## Example Model
 
 ```typescript
 import { Models } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# TrackedAssetEventCreationMetadataFile
+# TrackedAssetEventCreationMetadataFile Model
 
 If an asset was created from a file attachment
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **dragAndDrop** | **boolean**
 **interaction** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedAssetEventCreationMetadataFile } from '@pieces.app/pieces-os-client'

@@ -1,8 +1,8 @@
 
-# SeededTrackedMachineLearningEvent
+# SeededTrackedMachineLearningEvent Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **tlp** | [**TLPMachineLearningProcessingEvent**](TLPMachineLearningProcessingEvent)
 **graphical** | [**GraphicalMachineLearningProcessingEvent**](GraphicalMachineLearningProcessingEvent)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededTrackedMachineLearningEvent } from '@pieces.app/pieces-os-client'

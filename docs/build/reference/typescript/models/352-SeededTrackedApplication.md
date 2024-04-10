@@ -1,9 +1,9 @@
 
-# SeededTrackedApplication
+# SeededTrackedApplication Model
 
 A Model to describe what application a format/analytics event originated - Specifically NOT requiring an ID
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **privacy** | [**PrivacyEnum**](PrivacyEnum)
 **automaticUnload** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededTrackedApplication } from '@pieces.app/pieces-os-client'

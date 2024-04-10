@@ -1,9 +1,9 @@
 
-# SeededAssetMetadata
+# SeededAssetMetadata Model
 
 This is optional metadata sent with the SeededAsset and other SeededAssets ie (UE, Jetbrains...)  Note: if a user/develop didnt explicitly state a mechanism we will default to manual(user Driven only)
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **hints** | [**Array&lt;SeededHint&gt;**](SeededHint)
 **anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededAssetMetadata } from '@pieces.app/pieces-os-client'

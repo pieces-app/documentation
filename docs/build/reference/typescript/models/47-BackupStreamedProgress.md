@@ -1,9 +1,9 @@
 
-# BackupStreamedProgress
+# BackupStreamedProgress Model
 
 This is a specific model to the /backups/create/streamed.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **percentage** | **number**
 **backup** | [**Backup**](Backup)
 
-## Example
+## Example Model
 
 ```typescript
 import { BackupStreamedProgress } from '@pieces.app/pieces-os-client'

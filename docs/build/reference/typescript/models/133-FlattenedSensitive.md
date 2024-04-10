@@ -1,9 +1,9 @@
 
-# FlattenedSensitive
+# FlattenedSensitive Model
 
 This is a dereferenced representation of a sensitive pieces of data.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -23,7 +23,7 @@ Name | Type
 **interactions** | **number**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedSensitive } from '@pieces.app/pieces-os-client'

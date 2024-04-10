@@ -1,16 +1,16 @@
 
-# Activities
+# Activities Model
 
 This is the plural of activity
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Activity&gt;**](Activity)
 
-## Example
+## Example Model
 
 ```typescript
 import { Activities } from '@pieces.app/pieces-os-client'

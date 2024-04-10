@@ -1,14 +1,14 @@
 
-# ClassificationGenericEnum
+# ClassificationGenericEnum Model
 
 EXTERNAL_RESOURCE_REFERENCE can be thought of as anything such as URL, URI, UNIX PATH, etc
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { ClassificationGenericEnum } from '@pieces.app/pieces-os-client'

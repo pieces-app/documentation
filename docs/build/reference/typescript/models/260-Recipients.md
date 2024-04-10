@@ -1,16 +1,16 @@
 
-# Recipients
+# Recipients Model
 
 This an iterable of People that are attached to a specific distribution ie, slack, maigun, ...etc
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;PersonBasicType&gt;**](PersonBasicType)
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example
+## Example Model
 
 ```typescript
 import { Recipients } from '@pieces.app/pieces-os-client'

@@ -1,15 +1,15 @@
 
-# Accessors
+# Accessors Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Accessor&gt;**](Accessor)
 
-## Example
+## Example Model
 
 ```typescript
 import { Accessors } from '@pieces.app/pieces-os-client'

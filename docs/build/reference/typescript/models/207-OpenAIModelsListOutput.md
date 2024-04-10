@@ -1,16 +1,16 @@
 
-# OpenAIModelsListOutput
+# OpenAIModelsListOutput Model
 
 This is the output model for the /open_ai/models/list endpoint.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **models** | [**SeededModels**](SeededModels)
 
-## Example
+## Example Model
 
 ```typescript
 import { OpenAIModelsListOutput } from '@pieces.app/pieces-os-client'

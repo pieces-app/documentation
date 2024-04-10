@@ -1,9 +1,9 @@
 
-# QGPTPersonsRelatedInput
+# QGPTPersonsRelatedInput Model
 
 This is used for /qgpt/persons/related.  will accept a seed, or conversation all optionally. 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **application** | **string**
 **model** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTPersonsRelatedInput } from '@pieces.app/pieces-os-client'

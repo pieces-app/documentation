@@ -1,9 +1,9 @@
 
-# SeededDiscoverableRelatedTag
+# SeededDiscoverableRelatedTag Model
 
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **format** | **string**
 **category** | [**TagCategoryEnum**](TagCategoryEnum)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededDiscoverableRelatedTag } from '@pieces.app/pieces-os-client'

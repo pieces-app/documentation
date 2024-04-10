@@ -1,9 +1,9 @@
 
-# Linkify
+# Linkify Model
 
 This is the incoming linkify model.  if access is PRIVATE then please provide and array of users to enable the link for. 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **access** | [**AccessEnum**](AccessEnum)
 **distributions** | [**SeededDistributions**](SeededDistributions)
 
-## Example
+## Example Model
 
 ```typescript
 import { Linkify } from '@pieces.app/pieces-os-client'

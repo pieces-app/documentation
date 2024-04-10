@@ -1,15 +1,15 @@
-# Allocations API
+# Allocations Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**allocationsConnectNewCloud****](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect
-[**allocationsCreateNewAllocation****](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create
-[**allocationsDeleteAllocation****](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete
-[**allocationsDisconnectCloud****](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect
-[**allocationsReconnectCloud****](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect
-[**allocationsSnapshot****](AllocationsApi#allocationssnapshot) | **GET** /allocations
+[**allocationsConnectNewCloud**](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect
+[**allocationsCreateNewAllocation**](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create
+[**allocationsDeleteAllocation**](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete
+[**allocationsDisconnectCloud**](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect
+[**allocationsReconnectCloud**](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect
+[**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations
 
 
 ## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}
@@ -17,7 +17,7 @@ Method | HTTP request
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,24 +35,24 @@ apiInstance.allocationsConnectNewCloud(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
-### Return type
+### Return Model type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -82,24 +82,24 @@ apiInstance.allocationsCreateNewAllocation(body).then((data: AllocationCloud) =>
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return type
+### Return Model type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -128,24 +128,24 @@ apiInstance.allocationsDeleteAllocation(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 This will attempt to disconnect to a specific users cloud.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -174,24 +174,24 @@ apiInstance.allocationsDisconnectCloud(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user\'s cloud is up-to-date.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -220,24 +220,24 @@ apiInstance.allocationsReconnectCloud(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return type
+### Return Model type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 This is going to get a snapshot of all of the connected allocations.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -262,21 +262,21 @@ apiInstance.allocationsSnapshot().then((data: Allocations) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Allocations**](../models/Allocations)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,16 +1,16 @@
 
-# Theme
+# Theme Model
 
 This will describe the theme that belongs to a user.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **dark** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { Theme } from '@pieces.app/pieces-os-client'

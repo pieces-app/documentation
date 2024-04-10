@@ -1,13 +1,13 @@
 
-# FilterOperationTypeEnum
+# FilterOperationTypeEnum Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { FilterOperationTypeEnum } from '@pieces.app/pieces-os-client'

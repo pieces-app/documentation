@@ -1,9 +1,9 @@
 
-# Analysis
+# Analysis Model
 
 This the the MlAnalysis Object, that will go on a format.  this will hold all the different analysis models!  ** keep format just a uuid for now **
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **format** | **string**
 **image** | [**ImageAnalysis**](ImageAnalysis)
 
-## Example
+## Example Model
 
 ```typescript
 import { Analysis } from '@pieces.app/pieces-os-client'

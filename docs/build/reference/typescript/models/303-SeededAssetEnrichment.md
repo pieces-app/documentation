@@ -1,9 +1,9 @@
 
-# SeededAssetEnrichment
+# SeededAssetEnrichment Model
 
-This is a specific Model for the SeededAsset that will enable the developer to modify the enrichment levels of persons, tags, websites.  These enrichment levels will guarentee that the # of people/tags/websites do not eceeed the provided value, but will not guarentee a minimum.
+This is a specific Model for the SeededAsset that will enable the developer to modify the enrichment levels of persons, tags, websites.  These enrichment levels will guarentee that the # of Model people/tags/websites do not eceeed the provided value, but will not guarentee a minimum.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **persons** | **number**
 **hints** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededAssetEnrichment } from '@pieces.app/pieces-os-client'

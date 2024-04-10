@@ -1,9 +1,9 @@
 
-# Hints
+# Hints Model
 
 This is the plural of a Hint.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Hints } from '@pieces.app/pieces-os-client'

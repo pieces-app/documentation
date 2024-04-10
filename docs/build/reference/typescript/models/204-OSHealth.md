@@ -1,9 +1,9 @@
 
-# OSHealth
+# OSHealth Model
 
 This is a specific model for the health of our OS Server.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **version** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { OSHealth } from '@pieces.app/pieces-os-client'

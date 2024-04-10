@@ -1,8 +1,8 @@
 
-# TrackedAssetEventMetadata
+# TrackedAssetEventMetadata Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **hint** | [**ReferencedHint**](ReferencedHint)
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedAssetEventMetadata } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# SeededConnectorConnection
+# SeededConnectorConnection Model
 
 A model that is passed to the context API at bootup
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **application** | [**SeededTrackedApplication**](SeededTrackedApplication)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededConnectorConnection } from '@pieces.app/pieces-os-client'

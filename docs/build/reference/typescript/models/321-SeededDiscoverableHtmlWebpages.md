@@ -1,8 +1,8 @@
 
-# SeededDiscoverableHtmlWebpages
+# SeededDiscoverableHtmlWebpages Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **iterable** | [**Array&lt;SeededDiscoverableHtmlWebpage&gt;**](SeededDiscoverableHtmlWebpage)
 **application** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededDiscoverableHtmlWebpages } from '@pieces.app/pieces-os-client'

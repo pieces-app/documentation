@@ -1,9 +1,9 @@
 
-# ExternalProviderProfileData
+# ExternalProviderProfileData Model
 
 All of these will be optional.  Will support ProfileData from all our social providers.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -46,7 +46,7 @@ Name | Type
 **collaborators** | **number**
 **twoFactorAuthentication** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { ExternalProviderProfileData } from '@pieces.app/pieces-os-client'

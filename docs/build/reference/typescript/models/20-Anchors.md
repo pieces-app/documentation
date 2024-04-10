@@ -1,9 +1,9 @@
 
-# Anchors
+# Anchors Model
 
 This is the plural of Anchor.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Anchors } from '@pieces.app/pieces-os-client'

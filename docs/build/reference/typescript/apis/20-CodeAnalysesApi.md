@@ -1,10 +1,10 @@
-# CodeAnalyses API
+# CodeAnalyses Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**codeAnalysesSnapshot****](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses
+[**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses
 
 
 ## **codeAnalysesSnapshot** {#codeanalysessnapshot}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an analysis.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,21 +25,21 @@ apiInstance.codeAnalysesSnapshot().then((data: CodeAnalyses) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**CodeAnalyses**](../models/CodeAnalyses)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

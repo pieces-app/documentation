@@ -1,8 +1,8 @@
 
-# DiscoveredRelatedTags
+# DiscoveredRelatedTags Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **application** | **string**
 **iterable** | [**Array&lt;DiscoveredRelatedTag&gt;**](DiscoveredRelatedTag)
 
-## Example
+## Example Model
 
 ```typescript
 import { DiscoveredRelatedTags } from '@pieces.app/pieces-os-client'

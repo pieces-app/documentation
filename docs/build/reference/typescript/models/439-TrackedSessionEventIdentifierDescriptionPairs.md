@@ -1,9 +1,9 @@
 
-# TrackedSessionEventIdentifierDescriptionPairs
+# TrackedSessionEventIdentifierDescriptionPairs Model
 
 These are all of the available event types that are permitted in an object pair notation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **sessionOnboardingInitialized** | **string**
 **sessionOnboardingCompleted** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedSessionEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

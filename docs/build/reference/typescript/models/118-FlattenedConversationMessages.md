@@ -1,9 +1,9 @@
 
-# FlattenedConversationMessages
+# FlattenedConversationMessages Model
 
 This is a flattened plural version of ConversationMessages
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedConversationMessages } from '@pieces.app/pieces-os-client'

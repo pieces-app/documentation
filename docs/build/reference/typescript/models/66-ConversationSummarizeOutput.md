@@ -1,9 +1,9 @@
 
-# ConversationSummarizeOutput
+# ConversationSummarizeOutput Model
 
 This is the output model for \"/conversation/\{conversation\}/summarize
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 **annotation** | [**ReferencedAnnotation**](ReferencedAnnotation)
 
-## Example
+## Example Model
 
 ```typescript
 import { ConversationSummarizeOutput } from '@pieces.app/pieces-os-client'

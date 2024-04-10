@@ -1,14 +1,14 @@
 
-# PersonAccessScopedEnum
+# PersonAccessScopedEnum Model
 
 This is an enum that will help provide information around what permission this person has in relate to their scope.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { PersonAccessScopedEnum } from '@pieces.app/pieces-os-client'

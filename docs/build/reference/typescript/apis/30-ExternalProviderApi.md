@@ -1,12 +1,12 @@
-# ExternalProvider API
+# ExternalProvider Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**externalProviderApiKeyCreate****](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create
-[**externalProviderApiKeyDelete****](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete
-[**externalProviderApiKeyUpdate****](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update
+[**externalProviderApiKeyCreate**](ExternalProviderApi#externalproviderapikeycreate) | **POST** /external_provider/api_key/create
+[**externalProviderApiKeyDelete**](ExternalProviderApi#externalproviderapikeydelete) | **POST** /external_provider/api_key/delete
+[**externalProviderApiKeyUpdate**](ExternalProviderApi#externalproviderapikeyupdate) | **POST** /external_provider/api_key/update
 
 
 ## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProvid
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | **PrecreatedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return Model type
 
 [**CreatedExternalProviderApiKey**](../models/CreatedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -79,24 +79,24 @@ apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProvid
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | **PredeletedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return Model type
 
 [**DeletedExternalProviderApiKey**](../models/DeletedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -126,24 +126,24 @@ apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProvid
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | **PreupdatedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return Model type
 
 [**UpdatedExternalProviderApiKey**](../models/UpdatedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

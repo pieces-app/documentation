@@ -1,15 +1,15 @@
 
-# GraphicalImageStatistics
+# GraphicalImageStatistics Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **descriptive** | [**GraphicalImageDescriptiveStatistics**](GraphicalImageDescriptiveStatistics)
 
-## Example
+## Example Model
 
 ```typescript
 import { GraphicalImageStatistics } from '@pieces.app/pieces-os-client'

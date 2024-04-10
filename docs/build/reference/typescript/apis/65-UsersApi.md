@@ -1,13 +1,13 @@
-# Users API
+# Users Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**authenticateFromOauthToken****](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
-[**usersDisconnectUser****](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
-[**usersSnapshot****](UsersApi#userssnapshot) | **GET** /users
-[**usersSpecificUserSnapshot****](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\}
+[**authenticateFromOauthToken**](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
+[**usersDisconnectUser**](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
+[**usersSnapshot**](UsersApi#userssnapshot) | **GET** /users
+[**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\}
 
 
 ## **authenticateFromOauthToken** {#authenticatefromoauthtoken}
@@ -15,7 +15,7 @@ Method | HTTP request
 
 Creates a User From a oAuth Token
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -33,24 +33,24 @@ apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oAuthToken** | **OAuthToken**|  |
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 Locally Removing a user for the purpose of Signing Out
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.usersDisconnectUser(body).then((data: Users) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -118,21 +118,21 @@ apiInstance.usersSnapshot().then((data: Users) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -142,7 +142,7 @@ This endpoint does not need any parameters.
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -160,24 +160,24 @@ apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

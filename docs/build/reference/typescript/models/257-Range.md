@@ -1,9 +1,9 @@
 
-# Range
+# Range Model
 
 This is an identified Range, this is ONLY needed when using plural rangedTimestamps, in order to ensure granularity(add/modify/delete)
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 **conversations** | [**FlattenedConversations**](FlattenedConversations)
 
-## Example
+## Example Model
 
 ```typescript
 import { Range } from '@pieces.app/pieces-os-client'

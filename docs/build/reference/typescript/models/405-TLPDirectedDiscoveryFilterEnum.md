@@ -1,14 +1,14 @@
 
-# TLPDirectedDiscoveryFilterEnum
+# TLPDirectedDiscoveryFilterEnum Model
 
 Code block type like function, class, abstract
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPDirectedDiscoveryFilterEnum } from '@pieces.app/pieces-os-client'

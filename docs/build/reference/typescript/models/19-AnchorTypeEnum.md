@@ -1,14 +1,14 @@
 
-# AnchorTypeEnum
+# AnchorTypeEnum Model
 
 This is an enum used to differentiate the different between different anchors. Used in the Anchor data model.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { AnchorTypeEnum } from '@pieces.app/pieces-os-client'

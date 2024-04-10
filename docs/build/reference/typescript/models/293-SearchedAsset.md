@@ -1,9 +1,9 @@
 
-# SearchedAsset
+# SearchedAsset Model
 
 This is a modle that will represent a searched asset!
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **identifier** | **string**
 **pseudo** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { SearchedAsset } from '@pieces.app/pieces-os-client'

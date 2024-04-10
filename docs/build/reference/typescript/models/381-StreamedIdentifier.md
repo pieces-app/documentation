@@ -1,9 +1,9 @@
 
-# StreamedIdentifier
+# StreamedIdentifier Model
 
 This is currently only used within /assets/steam/identifiers && /conversations/steam/identifiers but can be used with other as well, if we want to expand this class.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 **deleted** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { StreamedIdentifier } from '@pieces.app/pieces-os-client'

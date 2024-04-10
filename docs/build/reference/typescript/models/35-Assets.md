@@ -1,9 +1,9 @@
 
-# Assets
+# Assets Model
 
 A base class for a collection of assets and some additional meta properties. Fully Populated with Formats internally (not just uuid\'s).
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Assets } from '@pieces.app/pieces-os-client'

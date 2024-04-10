@@ -1,10 +1,10 @@
-# OpenAI API
+# OpenAI Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**openAiModelsList****](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
+[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
 
 
 ## **openAiModelsList** {#openaimodelslist}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.apiKey.  if the user is unauthenticated or if the openAI key doesnt exist or if it is invalid we will return a 401.  Requires internet as this will ping out to OpenAI\'s server to get the models.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.openAiModelsList(body).then((data: OpenAIModelsListOutput) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **openAIModelsListInput** | **OpenAIModelsListInput**|  |
 
 
-### Return type
+### Return Model type
 
 [**OpenAIModelsListOutput**](../models/OpenAIModelsListOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

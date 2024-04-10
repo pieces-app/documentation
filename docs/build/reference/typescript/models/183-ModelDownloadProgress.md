@@ -1,9 +1,9 @@
 
-# ModelDownloadProgress
+# ModelDownloadProgress Model
 
 This is the model that is sent over our ws for streaming the progress of a model that is being downloaded.  can eventually add a number that display the percent downloaded an so on.(this is called percent 0-100)
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **status** | [**ModelDownloadProgressStatusEnum**](ModelDownloadProgressStatusEnum)
 **percentage** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { ModelDownloadProgress } from '@pieces.app/pieces-os-client'

@@ -1,14 +1,14 @@
 
-# CapabilitiesEnum
+# CapabilitiesEnum Model
 
 This lets us know what capabilites in relation to ml/ cloud infrastructure you are opting into.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { CapabilitiesEnum } from '@pieces.app/pieces-os-client'

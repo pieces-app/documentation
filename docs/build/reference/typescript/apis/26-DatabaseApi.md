@@ -1,11 +1,11 @@
-# Database API
+# Database Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**databaseExport****](DatabaseApi#databaseexport) | **GET** /database/export
-[**databaseImport****](DatabaseApi#databaseimport) | **POST** /database/import
+[**databaseExport**](DatabaseApi#databaseexport) | **GET** /database/export
+[**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import
 
 
 ## **databaseExport** {#databaseexport}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 This is going to export your current database.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,21 +26,21 @@ apiInstance.databaseExport().then((data: ExportedDatabase) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**ExportedDatabase**](../models/ExportedDatabase)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -51,7 +51,7 @@ This endpoint does not need any parameters.
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -69,24 +69,24 @@ apiInstance.databaseImport(body).then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **exportedDatabase** | **ExportedDatabase**|  |
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |

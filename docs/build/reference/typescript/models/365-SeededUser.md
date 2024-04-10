@@ -1,16 +1,16 @@
 
-# SeededUser
+# SeededUser Model
 
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **emails** | **Array&lt;string&gt;**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededUser } from '@pieces.app/pieces-os-client'

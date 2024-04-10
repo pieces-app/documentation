@@ -1,9 +1,9 @@
 
-# Conversations
+# Conversations Model
 
 This is a plural version of a Conversation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Conversations } from '@pieces.app/pieces-os-client'

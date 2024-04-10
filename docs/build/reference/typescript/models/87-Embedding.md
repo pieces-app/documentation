@@ -1,9 +1,9 @@
 
-# Embedding
+# Embedding Model
 
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **updated** | [**GroupedTimestamp**](GroupedTimestamp)
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 
-## Example
+## Example Model
 
 ```typescript
 import { Embedding } from '@pieces.app/pieces-os-client'

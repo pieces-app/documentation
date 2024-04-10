@@ -1,14 +1,14 @@
 
-# QGPTStreamEnum
+# QGPTStreamEnum Model
 
 This is a specific Enum used for the QGPT Stream.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTStreamEnum } from '@pieces.app/pieces-os-client'

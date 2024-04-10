@@ -1,16 +1,16 @@
 
-# ReuseReaction
+# ReuseReaction Model
 
 if reuse was used in the reaction then we can provide the uuid of the asset that was reused.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **asset** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { ReuseReaction } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# TrackedAssetsEventIdentifierDescriptionPairs
+# TrackedAssetsEventIdentifierDescriptionPairs Model
 
 These are all of the available event types that are permitted in an object pair notation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **assetsSearched** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedAssetsEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

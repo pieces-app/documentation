@@ -1,11 +1,11 @@
-# WellKnown API
+# WellKnown Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**getWellKnownHealth****](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health
-[**getWellKnownVersion****](WellKnownApi#getwellknownversion) | **GET** /.well-known/version
+[**getWellKnownHealth**](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health
+[**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version
 
 
 ## **getWellKnownHealth** {#getwellknownhealth}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 Retrieves the health status of the server.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,21 +26,21 @@ apiInstance.getWellKnownHealth().then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -50,7 +50,7 @@ This endpoint does not need any parameters.
 
 Retrieves the version of the server. It returns a string representing the current version.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -63,21 +63,21 @@ apiInstance.getWellKnownVersion().then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

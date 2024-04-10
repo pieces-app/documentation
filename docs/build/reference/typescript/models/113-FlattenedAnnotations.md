@@ -1,9 +1,9 @@
 
-# FlattenedAnnotations
+# FlattenedAnnotations Model
 
 This is a flattened plural of Annotation, typically this will just be a list of uuids.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedAnnotations } from '@pieces.app/pieces-os-client'

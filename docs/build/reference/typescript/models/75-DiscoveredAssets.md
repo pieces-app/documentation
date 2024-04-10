@@ -1,9 +1,9 @@
 
-# DiscoveredAssets
+# DiscoveredAssets Model
 
 This is a plural Model that is used within the bulk upload flow in both cases of a file(&& needing snippitization) as well as if the fragments are passed in and they only need to be clustered.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **application** | **string**
 **iterable** | [**Array&lt;DiscoveredAsset&gt;**](DiscoveredAsset)
 
-## Example
+## Example Model
 
 ```typescript
 import { DiscoveredAssets } from '@pieces.app/pieces-os-client'

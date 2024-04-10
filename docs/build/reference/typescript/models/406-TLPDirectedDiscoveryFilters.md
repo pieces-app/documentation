@@ -1,15 +1,15 @@
 
-# TLPDirectedDiscoveryFilters
+# TLPDirectedDiscoveryFilters Model
 
 Contains array of TLPDirectedDiscoveryFilter
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;TLPDirectedDiscoveryFilter&gt;**](TLPDirectedDiscoveryFilter)
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPDirectedDiscoveryFilters } from '@pieces.app/pieces-os-client'

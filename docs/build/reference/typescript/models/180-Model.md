@@ -1,9 +1,9 @@
 
-# Model
+# Model Model
 
 This is a Machine Learning Model, that will give readable information about the Machine Learning Model Used.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -30,7 +30,7 @@ Name | Type
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens)
 **custom** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { Model } from '@pieces.app/pieces-os-client'

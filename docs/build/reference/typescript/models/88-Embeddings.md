@@ -1,14 +1,14 @@
 
-# Embeddings
+# Embeddings Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;Embedding&gt;**](Embedding)
 
-## Example
+## Example Model
 
 ```typescript
 import { Embeddings } from '@pieces.app/pieces-os-client'

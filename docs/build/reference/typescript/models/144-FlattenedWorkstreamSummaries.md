@@ -1,9 +1,9 @@
 
-# FlattenedWorkstreamSummaries
+# FlattenedWorkstreamSummaries Model
 
 This is a DAG-Safe plural model of workstreamsummaries
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedWorkstreamSummaries } from '@pieces.app/pieces-os-client'

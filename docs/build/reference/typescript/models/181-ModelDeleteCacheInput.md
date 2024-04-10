@@ -1,15 +1,15 @@
 
-# ModelDeleteCacheInput
+# ModelDeleteCacheInput Model
 
 This is the input model for \'/model/\{model\}/delete/cache\'
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example
+## Example Model
 
 ```typescript
 import { ModelDeleteCacheInput } from '@pieces.app/pieces-os-client'

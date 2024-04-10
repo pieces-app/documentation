@@ -1,10 +1,10 @@
-# Piece API
+# Piece Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**htmlShare****](PieceApi#htmlshare) | **GET** /
+[**htmlShare**](PieceApi#htmlshare) | **GET** /
 
 
 ## **htmlShare** {#htmlshare}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.htmlShare(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **p** | [**string**] | this is the a query param, that a shortened version of the share. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: text/html
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

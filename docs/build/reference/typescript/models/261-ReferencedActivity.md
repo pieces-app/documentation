@@ -1,8 +1,8 @@
 
-# ReferencedActivity
+# ReferencedActivity Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedActivity**](FlattenedActivity)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedActivity } from '@pieces.app/pieces-os-client'

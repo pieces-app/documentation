@@ -1,10 +1,10 @@
-# Classification API
+# Classification Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**convertGenericClassification****](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert
+[**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert
 
 
 ## **convertGenericClassification** {#convertgenericclassification}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededFormat** | **SeededFormat**| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  |
 
 
-### Return type
+### Return Model type
 
 [**SeededFormat**](../models/SeededFormat)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK - The SeededFormat that was successfully converted to the rendering format that was specified. |  -  |

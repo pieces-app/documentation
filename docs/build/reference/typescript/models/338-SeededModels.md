@@ -1,16 +1,16 @@
 
-# SeededModels
+# SeededModels Model
 
 This is a Model that will hold an iterable of SeededModels.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;SeededModel&gt;**](SeededModel)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededModels } from '@pieces.app/pieces-os-client'

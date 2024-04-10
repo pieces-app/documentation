@@ -1,16 +1,16 @@
 
-# MailgunDistribution
+# MailgunDistribution Model
 
 This is a specific Distribution for mailgun specific information.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **recipients** | [**Recipients**](Recipients)
 
-## Example
+## Example Model
 
 ```typescript
 import { MailgunDistribution } from '@pieces.app/pieces-os-client'

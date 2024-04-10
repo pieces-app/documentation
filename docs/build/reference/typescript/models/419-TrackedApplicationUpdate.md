@@ -1,9 +1,9 @@
 
-# TrackedApplicationUpdate
+# TrackedApplicationUpdate Model
 
 This is a model used to track when an Application is Updated
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **previous** | [**TrackedApplication**](TrackedApplication)
 **user** | [**TrackedUserProfile**](TrackedUserProfile)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedApplicationUpdate } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# ResultedPKCE
+# ResultedPKCE Model
 
 A Model To Represent the Code Returned from a PKCE Response
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **code** | **string**
 **state** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { ResultedPKCE } from '@pieces.app/pieces-os-client'

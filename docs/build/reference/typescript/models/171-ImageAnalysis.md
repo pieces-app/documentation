@@ -1,9 +1,9 @@
 
-# ImageAnalysis
+# ImageAnalysis Model
 
 This is a model that represents all the information collected during the processing of an image.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **analysis** | **string**
 **ocr** | [**OCRAnalysis**](OCRAnalysis)
 
-## Example
+## Example Model
 
 ```typescript
 import { ImageAnalysis } from '@pieces.app/pieces-os-client'

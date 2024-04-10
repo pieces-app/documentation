@@ -1,16 +1,16 @@
 
-# Seeds
+# Seeds Model
 
 This is a plural model for multiple Seed.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Seed&gt;**](Seed)
 
-## Example
+## Example Model
 
 ```typescript
 import { Seeds } from '@pieces.app/pieces-os-client'

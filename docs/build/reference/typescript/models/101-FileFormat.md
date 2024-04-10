@@ -1,9 +1,9 @@
 
-# FileFormat
+# FileFormat Model
 
 This describes a FileFormat. If you need meta data you can get all of that from your format wrapper.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **bytes** | [**TransferableBytes**](TransferableBytes)
 **string** | [**TransferableString**](TransferableString)
 
-## Example
+## Example Model
 
 ```typescript
 import { FileFormat } from '@pieces.app/pieces-os-client'

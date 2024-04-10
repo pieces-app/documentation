@@ -1,9 +1,9 @@
 
-# SegmentedTechnicalLanguageFragment
+# SegmentedTechnicalLanguageFragment Model
 
 This is the output iterable model for \'/machine_learning/text/technical_language/parsers/segmentation\'  specific is optional here, however you can pass in classify: true to get the specific classificaiton in the case the generic is code.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 **fragment** | [**FragmentFormat**](FragmentFormat)
 
-## Example
+## Example Model
 
 ```typescript
 import { SegmentedTechnicalLanguageFragment } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# FormatReclassification
+# FormatReclassification Model
 
 This is a model that will represent the miminum properties required to update the classification of this format.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 **format** | [**Format**](Format)
 
-## Example
+## Example Model
 
 ```typescript
 import { FormatReclassification } from '@pieces.app/pieces-os-client'

@@ -1,8 +1,8 @@
 
-# InteractedAssetInteractions
+# InteractedAssetInteractions Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **touched** | **boolean**
 **scrolled** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { InteractedAssetInteractions } from '@pieces.app/pieces-os-client'

@@ -1,11 +1,11 @@
-# Metrics API
+# Metrics Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**getMetricsFormats****](MetricsApi#getmetricsformats) | **GET** /metrics/formats
-[**metricsFormatsOrdered****](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered
+[**getMetricsFormats**](MetricsApi#getmetricsformats) | **GET** /metrics/formats
+[**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered
 
 
 ## **getMetricsFormats** {#getmetricsformats}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 This is going to get a snapshot of our FormatsMetrics
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,21 +26,21 @@ apiInstance.getMetricsFormats().then((data: FormatsMetrics) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**FormatsMetrics**](../models/FormatsMetrics)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -50,7 +50,7 @@ This endpoint does not need any parameters.
 
 This will return a list of code formats in desc order from most to least formats uploaded.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -63,21 +63,21 @@ apiInstance.metricsFormatsOrdered().then((data: OrderedMetrics) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**OrderedMetrics**](../models/OrderedMetrics)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

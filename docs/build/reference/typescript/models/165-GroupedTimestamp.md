@@ -1,9 +1,9 @@
 
-# GroupedTimestamp
+# GroupedTimestamp Model
 
 A helper classs to wrap Date-Time Values with Useful Helper Properties
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **value** | **Date**
 **readable** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { GroupedTimestamp } from '@pieces.app/pieces-os-client'

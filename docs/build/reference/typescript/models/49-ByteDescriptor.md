@@ -1,9 +1,9 @@
 
-# ByteDescriptor
+# ByteDescriptor Model
 
 This is a nice microclass to help with managing the size of a File or Fragment in a readable way for UI\'s
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **value** | **number**
 **readable** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { ByteDescriptor } from '@pieces.app/pieces-os-client'

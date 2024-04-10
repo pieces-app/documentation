@@ -1,9 +1,9 @@
 
-# FlattenedHints
+# FlattenedHints Model
 
 This is the flattened Version of plural hints.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedHints } from '@pieces.app/pieces-os-client'

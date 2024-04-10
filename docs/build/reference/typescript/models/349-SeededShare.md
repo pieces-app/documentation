@@ -1,9 +1,9 @@
 
-# SeededShare
+# SeededShare Model
 
  required to pass in an asset or assets.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **assets** | [**Assets**](Assets)
 **name** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededShare } from '@pieces.app/pieces-os-client'

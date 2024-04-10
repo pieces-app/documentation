@@ -1,8 +1,8 @@
 
-# TLPCodeProcessing
+# TLPCodeProcessing Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **directory** | [**TLPCodeDirectoryAnalytics**](TLPCodeDirectoryAnalytics)
 **repository** | [**TLPCodeRepositoryAnalytics**](TLPCodeRepositoryAnalytics)
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPCodeProcessing } from '@pieces.app/pieces-os-client'

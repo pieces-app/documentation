@@ -1,15 +1,15 @@
 
-# TLPMachineLearningProcessingEvent
+# TLPMachineLearningProcessingEvent Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **code** | [**TLPCodeProcessing**](TLPCodeProcessing)
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPMachineLearningProcessingEvent } from '@pieces.app/pieces-os-client'

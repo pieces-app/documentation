@@ -1,9 +1,9 @@
 
-# ReferencedAnnotation
+# ReferencedAnnotation Model
 
 This is the referenced version of a annotation, main used for the uuid.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedAnnotation**](FlattenedAnnotation)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedAnnotation } from '@pieces.app/pieces-os-client'

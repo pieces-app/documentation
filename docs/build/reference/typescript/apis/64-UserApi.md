@@ -1,17 +1,17 @@
-# User API
+# User Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**clearUser****](UserApi#clearuser) | **POST** /user/clear
-[**refreshUser****](UserApi#refreshuser) | **GET** /user/refresh
-[**selectUser****](UserApi#selectuser) | **POST** /user/select
-[**streamUser****](UserApi#streamuser) | **GET** /user/stream
-[**updateUser****](UserApi#updateuser) | **POST** /user/update
-[**userProviders****](UserApi#userproviders) | **GET** /user/providers
-[**userSnapshot****](UserApi#usersnapshot) | **GET** /user
-[**userUpdateVanity****](UserApi#userupdatevanity) | **POST** /user/update/vanity
+[**clearUser**](UserApi#clearuser) | **POST** /user/clear
+[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh
+[**selectUser**](UserApi#selectuser) | **POST** /user/select
+[**streamUser**](UserApi#streamuser) | **GET** /user/stream
+[**updateUser**](UserApi#updateuser) | **POST** /user/update
+[**userProviders**](UserApi#userproviders) | **GET** /user/providers
+[**userSnapshot**](UserApi#usersnapshot) | **GET** /user
+[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity
 
 
 ## **clearUser** {#clearuser}
@@ -19,7 +19,7 @@ Method | HTTP request
 
 An endpoint to clear the current user. 
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,21 +32,21 @@ apiInstance.clearUser().then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -56,7 +56,7 @@ void (empty response body)
 
 This will refresh a user.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -69,21 +69,21 @@ apiInstance.refreshUser().then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -94,7 +94,7 @@ This endpoint does not need any parameters.
 
 This will select the current user.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -112,24 +112,24 @@ apiInstance.selectUser(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **auth0User** | **Auth0User**|  |
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 This will stream in the current user, not quiet sure yet how we want to do this.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -152,21 +152,21 @@ apiInstance.streamUser().then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -176,7 +176,7 @@ This endpoint does not need any parameters.
 
 This will update a specific user in the database.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -194,24 +194,24 @@ apiInstance.updateUser(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -234,21 +234,21 @@ apiInstance.userProviders().then((data: ReturnedUserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -260,7 +260,7 @@ This endpoint does not need any parameters.
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -273,21 +273,21 @@ apiInstance.userSnapshot().then((data: ReturnedUserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -297,7 +297,7 @@ This endpoint does not need any parameters.
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -315,24 +315,24 @@ apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**| This will take an update userProfile, with the updated vanity name! |
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

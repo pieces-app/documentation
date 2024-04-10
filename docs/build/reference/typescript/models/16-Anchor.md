@@ -1,8 +1,8 @@
 
-# Anchor
+# Anchor Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example
+## Example Model
 
 ```typescript
 import { Anchor } from '@pieces.app/pieces-os-client'

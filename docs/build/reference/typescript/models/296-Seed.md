@@ -1,9 +1,9 @@
 
-# Seed
+# Seed Model
 
 A seed Model used to wrap a format or asset
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **asset** | [**SeededAsset**](SeededAsset)
 **type** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { Seed } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# ExistentMetadata
+# ExistentMetadata Model
 
 This is a shared output model for all the exists endpoints: /tags/exists : value here is the tag that you want to see if it exists. /websites/exists: value here is the url you want to see if it exists
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **value** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { ExistentMetadata } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# ReferencedAnchor
+# ReferencedAnchor Model
 
 This is the referenced version of a Anchor, main used for the uuid.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedAnchor**](FlattenedAnchor)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedAnchor } from '@pieces.app/pieces-os-client'

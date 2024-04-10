@@ -1,16 +1,16 @@
 
-# QGPTQuestionAnswers
+# QGPTQuestionAnswers Model
 
 This is the plural of QGPTQuestionAnswer
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;QGPTQuestionAnswer&gt;**](QGPTQuestionAnswer)
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTQuestionAnswers } from '@pieces.app/pieces-os-client'

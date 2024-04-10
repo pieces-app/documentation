@@ -1,8 +1,8 @@
 
-# FlattenedImageAnalysis
+# FlattenedImageAnalysis Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **ocr** | [**FlattenedOCRAnalysis**](FlattenedOCRAnalysis)
 **analysis** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedImageAnalysis } from '@pieces.app/pieces-os-client'
