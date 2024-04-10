@@ -38,7 +38,7 @@ apiInstance.allocationsConnectNewCloud(body).then((data: AllocationCloud) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **userProfile** | **UserProfile**|  |
 
 
@@ -85,7 +85,7 @@ apiInstance.allocationsCreateNewAllocation(body).then((data: AllocationCloud) =>
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -131,7 +131,7 @@ apiInstance.allocationsDeleteAllocation(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -177,7 +177,7 @@ apiInstance.allocationsDisconnectCloud(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -223,7 +223,7 @@ apiInstance.allocationsReconnectCloud(body).then((data: AllocationCloud) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocationCloud** | **AllocationCloud**|  |
 
 

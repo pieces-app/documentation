@@ -38,7 +38,7 @@ apiInstance.hints(body).then((data: QGPTQuestionOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTHintsInput** | **QGPTHintsInput**|  |
 
 
@@ -86,7 +86,7 @@ apiInstance.personsRelated(body).then((data: QGPTPersonsRelatedOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTPersonsRelatedInput** | **QGPTPersonsRelatedInput**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -133,7 +133,7 @@ apiInstance.qgptStream(body).then((data: QGPTStreamOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTStreamInput** | **QGPTStreamInput**|  |
 
 
@@ -182,7 +182,7 @@ apiInstance.question(body).then((data: QGPTQuestionOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTQuestionInput** | **QGPTQuestionInput**|  |
 
 
@@ -231,7 +231,7 @@ apiInstance.relevance(body).then((data: QGPTRelevanceOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTRelevanceInput** | **QGPTRelevanceInput**|  |
 
 
@@ -280,7 +280,7 @@ apiInstance.reprompt(body).then((data: QGPTRepromptOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **qGPTRepromptInput** | **QGPTRepromptInput**|  |
 
 

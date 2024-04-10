@@ -35,7 +35,7 @@ apiInstance.importGithubGists(body).then((data: Seeds) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededGithubGistsImport** | **SeededGithubGistsImport**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 

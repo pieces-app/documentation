@@ -37,7 +37,7 @@ apiInstance.sensitiveScoresIncrement(body).then((data: void (empty response body
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.sensitiveSnapshot(body).then((data: Sensitive) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **sensitive** | [**string**] |  | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.updateSensitive(body).then((data: Sensitive) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **sensitive** | **Sensitive**|  |
 
 

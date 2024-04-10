@@ -38,7 +38,7 @@ apiInstance.discoveryDiscoverAssets(body).then((data: DiscoveredAssets) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededDiscoverableAssets** | **SeededDiscoverableAssets**| The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 
@@ -87,7 +87,7 @@ apiInstance.discoveryDiscoverAssetsHtml(body).then((data: DiscoveredHtmlWebpages
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededDiscoverableHtmlWebpages** | **SeededDiscoverableHtmlWebpages**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 
@@ -136,7 +136,7 @@ apiInstance.discoveryDiscoverSensitives(body).then((data: DiscoveredSensitives) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededDiscoverableSensitives** | **SeededDiscoverableSensitives**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 
@@ -184,7 +184,7 @@ apiInstance.discoveryDiscoverTagsRelated(body).then((data: DiscoveredRelatedTags
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededDiscoverableRelatedTags** | **SeededDiscoverableRelatedTags**|  |
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 

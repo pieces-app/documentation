@@ -33,7 +33,7 @@ apiInstance.applicationUpdate(body).then((data: Application) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **application** | **Application**|  |
 
 

@@ -34,7 +34,7 @@ apiInstance.personificationTechnicalLanguageGeneration(body).then((data: Onboard
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **preonboardedPersonaDetails** | **PreonboardedPersonaDetails**|  |
 
 
@@ -82,7 +82,7 @@ apiInstance.segmentTechnicalLanguage(body).then((data: SegmentedTechnicalLanguag
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **unsegmentedTechnicalLanguage** | **UnsegmentedTechnicalLanguage**|  |
  **classify** | [**boolean**] | This will let us know if you want us to classifiy your code, this is default to false. | (optional) defaults to undefined
 

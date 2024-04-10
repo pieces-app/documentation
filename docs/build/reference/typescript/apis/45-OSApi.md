@@ -40,7 +40,7 @@ apiInstance.linkProvider(body).then((data: ReturnedUserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededExternalProvider** | **SeededExternalProvider**|  |
 
 
@@ -163,7 +163,7 @@ apiInstance.osUpdateCheck(body).then((data: CheckedOSUpdate) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **uncheckedOSUpdate** | **UncheckedOSUpdate**|  |
 
 
@@ -209,7 +209,7 @@ apiInstance.pickFiles(body).then((data: Array\<string\>) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **filePickerInput** | **FilePickerInput**|  |
 
 

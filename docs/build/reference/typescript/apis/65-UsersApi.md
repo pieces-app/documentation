@@ -36,7 +36,7 @@ apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **oAuthToken** | **OAuthToken**|  |
 
 
@@ -81,7 +81,7 @@ apiInstance.usersDisconnectUser(body).then((data: Users) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **user** | [**string**] |  | defaults to undefined
 
 
@@ -163,7 +163,7 @@ apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 

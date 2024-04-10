@@ -35,7 +35,7 @@ apiInstance.sensitivesCreateNewSensitive(body).then((data: Sensitive) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededSensitive** | **SeededSensitive**|  |
 
 
@@ -81,7 +81,7 @@ apiInstance.sensitivesDeleteSensitive(body).then((data: void (empty response bod
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
 

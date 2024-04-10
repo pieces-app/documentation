@@ -37,7 +37,7 @@ apiInstance.annotationScoresIncrement(body).then((data: void (empty response bod
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.annotationSpecificAnnotationSnapshot(body).then((data: Annotation) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.annotationUpdate(body).then((data: Annotation) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **annotation** | **Annotation**|  |
 
 

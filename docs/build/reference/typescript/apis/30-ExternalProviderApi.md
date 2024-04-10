@@ -35,7 +35,7 @@ apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProvid
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **precreatedExternalProviderApiKey** | **PrecreatedExternalProviderApiKey**|  |
 
 
@@ -82,7 +82,7 @@ apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProvid
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **predeletedExternalProviderApiKey** | **PredeletedExternalProviderApiKey**|  |
 
 
@@ -129,7 +129,7 @@ apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProvid
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **preupdatedExternalProviderApiKey** | **PreupdatedExternalProviderApiKey**|  |
 
 

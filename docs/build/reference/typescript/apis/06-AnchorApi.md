@@ -40,7 +40,7 @@ apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty respo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -89,7 +89,7 @@ apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty re
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -138,7 +138,7 @@ apiInstance.anchorRename(body).then((data: Anchor) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -187,7 +187,7 @@ apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -236,7 +236,7 @@ apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -285,7 +285,7 @@ apiInstance.anchorUpdate(body).then((data: Anchor) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | **Anchor**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

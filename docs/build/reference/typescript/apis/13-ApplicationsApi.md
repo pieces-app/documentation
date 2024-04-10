@@ -120,7 +120,7 @@ apiInstance.applicationsRegister(body).then((data: Application) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **application** | **Application**| This will accept a application. |
 
 
@@ -165,7 +165,7 @@ apiInstance.applicationsSessionClose(body).then((data: Session) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **body** | **string**| This will accept a required session uuid. |
 
 
@@ -247,7 +247,7 @@ apiInstance.applicationsSessionSnapshot(body).then((data: Session) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **session** | [**string**] | This is a uuid that points to a session. | defaults to undefined
 
 
@@ -329,7 +329,7 @@ apiInstance.applicationsSpecificApplicationSnapshot(body).then((data: Applicatio
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
@@ -374,7 +374,7 @@ apiInstance.applicationsUsageEngagementInteraction(body).then((data: TrackedInte
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededTrackedInteractionEvent** | **SeededTrackedInteractionEvent**|  |
 
 
@@ -419,7 +419,7 @@ apiInstance.applicationsUsageEngagementKeyboard(body).then((data: TrackedKeyboar
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededTrackedKeyboardEvent** | **SeededTrackedKeyboardEvent**|  |
 
 
@@ -464,7 +464,7 @@ apiInstance.applicationsUsageInstallation(body).then((data: void (empty response
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **trackedApplicationInstall** | **TrackedApplicationInstall**|  |
 
 
@@ -509,7 +509,7 @@ apiInstance.postApplicationsUsageUpdated(body).then((data: void (empty response 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **trackedApplicationUpdate** | **TrackedApplicationUpdate**| Sending over the previous application version, the current version, and the user. |
 
 

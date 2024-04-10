@@ -37,7 +37,7 @@ apiInstance.hintScoresIncrement(body).then((data: void (empty response body)) =>
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
@@ -84,7 +84,7 @@ apiInstance.hintSpecificHintSnapshot(body).then((data: Hint) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
@@ -130,7 +130,7 @@ apiInstance.hintUpdate(body).then((data: Hint) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **hint** | **Hint**|  |
 
 

@@ -37,7 +37,7 @@ apiInstance.anchorPointScoresIncrement(body).then((data: void (empty response bo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
@@ -86,7 +86,7 @@ apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data: AnchorPoint
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -135,7 +135,7 @@ apiInstance.anchorPointUpdate(body).then((data: AnchorPoint) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchorPoint** | **AnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

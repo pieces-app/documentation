@@ -38,7 +38,7 @@ apiInstance.anchorDisassociateAsset(body).then((data: void (empty response body)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -87,7 +87,7 @@ apiInstance.anchorsCreateNewAnchor(body).then((data: Anchor) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededAnchor** | **SeededAnchor**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -134,7 +134,7 @@ apiInstance.anchorsDeleteSpecificAnchor(body).then((data: void (empty response b
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
@@ -180,7 +180,7 @@ apiInstance.anchorsSnapshot(body).then((data: Anchors) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

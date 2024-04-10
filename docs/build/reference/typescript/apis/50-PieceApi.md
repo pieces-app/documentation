@@ -33,7 +33,7 @@ apiInstance.htmlShare(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **p** | [**string**] | this is the a query param, that a shortened version of the share. | defaults to undefined
 
 

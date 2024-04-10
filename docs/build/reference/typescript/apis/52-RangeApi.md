@@ -41,7 +41,7 @@ apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(body).th
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -90,7 +90,7 @@ apiInstance.rangeAssociateWorkstreamSummary(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -139,7 +139,7 @@ apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(body)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -188,7 +188,7 @@ apiInstance.rangeDisassociateWorkstreamSummary(body).then((data: void (empty res
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -237,7 +237,7 @@ apiInstance.rangeScoresIncrement(body).then((data: void (empty response body)) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -284,7 +284,7 @@ apiInstance.rangeUpdate(body).then((data: Range) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | **Range**|  |
 
 
@@ -330,7 +330,7 @@ apiInstance.rangesSpecificRangeSnapshot(body).then((data: Range) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 

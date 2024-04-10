@@ -52,7 +52,7 @@ apiInstance.conversationAssociateAnchor(body).then((data: void (empty response b
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -101,7 +101,7 @@ apiInstance.conversationAssociateAsset(body).then((data: void (empty response bo
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -150,7 +150,7 @@ apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((da
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -199,7 +199,7 @@ apiInstance.conversationAssociateWebsite(body).then((data: void (empty response 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -248,7 +248,7 @@ apiInstance.conversationAssociateWorkstreamSummary(body).then((data: void (empty
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -297,7 +297,7 @@ apiInstance.conversationDisassociateAnchor(body).then((data: void (empty respons
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
@@ -346,7 +346,7 @@ apiInstance.conversationDisassociateAsset(body).then((data: void (empty response
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -395,7 +395,7 @@ apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then(
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
@@ -444,7 +444,7 @@ apiInstance.conversationDisassociateWebsite(body).then((data: void (empty respon
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -493,7 +493,7 @@ apiInstance.conversationDisassociateWorkstreamSummary(body).then((data: void (em
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -542,7 +542,7 @@ apiInstance.conversationGetSpecificConversation(body).then((data: Conversation) 
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -591,7 +591,7 @@ apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data: void
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -640,7 +640,7 @@ apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data: v
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -689,7 +689,7 @@ apiInstance.conversationScoresIncrement(body).then((data: void (empty response b
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -738,7 +738,7 @@ apiInstance.conversationSpecificConversationMessages(body).then((data: Conversat
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -787,7 +787,7 @@ apiInstance.conversationSpecificConversationRename(body).then((data: Conversatio
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -836,7 +836,7 @@ apiInstance.conversationSummarize(body).then((data: ConversationSummarizeOutput)
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversationSummarizeInput** | **ConversationSummarizeInput**|  |
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -885,7 +885,7 @@ apiInstance.conversationUpdate(body).then((data: Conversation) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **conversation** | **Conversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

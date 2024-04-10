@@ -33,7 +33,7 @@ apiInstance.openAiModelsList(body).then((data: OpenAIModelsListOutput) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **openAIModelsListInput** | **OpenAIModelsListInput**|  |
 
 

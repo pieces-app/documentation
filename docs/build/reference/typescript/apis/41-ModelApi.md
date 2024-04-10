@@ -39,7 +39,7 @@ apiInstance.modelSpecificModelDownload(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -85,7 +85,7 @@ apiInstance.modelSpecificModelDownloadCancel(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -131,7 +131,7 @@ apiInstance.modelSpecificModelDownloadProgress(body).then((data: ModelDownloadPr
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -177,7 +177,7 @@ apiInstance.modelSpecificModelLoad(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -223,7 +223,7 @@ apiInstance.modelSpecificModelUnload(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -269,7 +269,7 @@ apiInstance.modelUpdate(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | **Model**|  |
 
 
@@ -315,7 +315,7 @@ apiInstance.modelsSpecificModelSnapshot(body).then((data: Model) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **model** | [**string**] | model id | defaults to undefined
 
 

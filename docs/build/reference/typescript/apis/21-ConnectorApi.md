@@ -38,7 +38,7 @@ apiInstance.connect(body).then((data: Context) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConnectorConnection** | **SeededConnectorConnection**|  |
 
 
@@ -86,7 +86,7 @@ apiInstance.intention(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConnectorAsset** | **SeededConnectorAsset**|  |
  **application** | [**string**] |  | defaults to undefined
 
@@ -137,7 +137,7 @@ apiInstance.onboarded(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **body** | **boolean**| Whether or not that application has been onboarded. |
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
@@ -187,7 +187,7 @@ apiInstance.react(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **reaction** | **Reaction**| ** This body will need to be modified. |
  **application** | [**string**] |  | defaults to undefined
 
@@ -237,7 +237,7 @@ apiInstance.suggest(body).then((data: Suggestion) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConnectorCreation** | **SeededConnectorCreation**| This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! |
  **application** | [**string**] |  | defaults to undefined
 
@@ -287,7 +287,7 @@ apiInstance.track(body).then((data: string) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededConnectorTracking** | **SeededConnectorTracking**| The body is able to take in several properties  |
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 

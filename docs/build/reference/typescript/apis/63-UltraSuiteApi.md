@@ -33,7 +33,7 @@ apiInstance.assetsCreateUltraSuiteAsset(body).then((data: Asset) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **seededUltraSuiteAsset** | **SeededUltraSuiteAsset**|  |
 
 

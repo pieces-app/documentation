@@ -34,7 +34,7 @@ apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocation** | [**string**] |  | defaults to undefined
 
 
@@ -80,7 +80,7 @@ apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **allocationCloud** | **AllocationCloud**|  |
 
 

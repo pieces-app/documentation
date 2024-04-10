@@ -37,7 +37,7 @@ apiInstance.activitiesSpecificActivitySnapshot(body).then((data: Activity) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **activity** | [**string**] | This is a specific activity uuid. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -87,7 +87,7 @@ apiInstance.activityIdentifiersSnapshot(body).then((data: FlattenedActivities) =
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
  **activityFilterEnum** | [**&#39;CREATED&#39; | &#39;UPDATED&#39; | &#39;DELETED&#39; | &#39;REFERENCED&#39;**]**Array\<&#39;CREATED&#39; &#124; &#39;UPDATED&#39; &#124; &#39;DELETED&#39; &#124; &#39;REFERENCED&#39;\>** | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | (optional) defaults to undefined
 
@@ -136,7 +136,7 @@ apiInstance.activityUpdate(body).then((data: Activity) => {
 ### Parameters
 
 Name | Type | Description
-------------- | ------------- | ------------- | -------------
+------------- | ------------- | ------------- 
  **activity** | **Activity**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
