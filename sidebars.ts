@@ -221,6 +221,11 @@ const sidebars: SidebarsConfig = {
           id: 'faq',
           label: 'FAQs',
         },
+        {
+          type: 'doc',
+          id: 'ama/building-a-more-extensible-development-environment',
+          label: 'Livestream AMA',
+        }
       ]
     }
   ],
