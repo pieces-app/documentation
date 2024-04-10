@@ -204,10 +204,12 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'community',
+          label: 'Community',
         },
         {
           type: 'doc',
           id: 'support',
+          label: 'Support',
         },
         {
           type: 'doc',
@@ -217,11 +219,12 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'faq',
-          label: 'FAQ',
+          label: 'FAQs',
         },
       ]
     }
   ],
+
   // TODO: We will uncomment this once we have the Python SDK ready
   // Will also need to add sidebars for each SDK we support
   // pythonSDKSidebar: [
