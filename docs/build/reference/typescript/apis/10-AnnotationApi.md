@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment
-[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\}
-[**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update
+[**annotationScoresIncrement****](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment
+[**annotationSpecificAnnotationSnapshot****](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\}
+[**annotationUpdate****](AnnotationApi#annotationupdate) | **POST** /annotation/update
 
 
-## **annotationScoresIncrement**
+## **annotationScoresIncrement** {#annotationscoresincrement}
 > annotationScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -19,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnnotationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationScoresIncrementRequest = {
     // string | This is a specific annotation uuid.
@@ -30,14 +30,14 @@ const body: Pieces.AnnotationScoresIncrementRequest = {
 };
 
 apiInstance.annotationScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
@@ -58,7 +58,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **annotationSpecificAnnotationSnapshot**
+## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot()
 
 This will get a snapshot of a specific annotation.
@@ -68,8 +68,8 @@ This will get a snapshot of a specific annotation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnnotationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationSpecificAnnotationSnapshotRequest = {
     // string | This is a specific annotation uuid.
@@ -77,14 +77,14 @@ const body: Pieces.AnnotationSpecificAnnotationSnapshotRequest = {
 };
 
 apiInstance.annotationSpecificAnnotationSnapshot(body).then((data: Annotation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
@@ -104,7 +104,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **annotationUpdate**
+## **annotationUpdate** {#annotationupdate}
 > Annotation annotationUpdate()
 
 This will update a specific annotation.
@@ -114,8 +114,8 @@ This will update a specific annotation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnnotationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationUpdateRequest = {
     // Annotation (optional)
@@ -123,14 +123,14 @@ const body: Pieces.AnnotationUpdateRequest = {
 };
 
 apiInstance.annotationUpdate(body).then((data: Annotation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **annotation** | **Annotation**|  |
 
 

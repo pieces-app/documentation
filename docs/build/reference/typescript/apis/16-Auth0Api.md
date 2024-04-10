@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout
-[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize
-[**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token
-[**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo
+[**auth0Logout****](Auth0Api#auth0logout) | **GET** /v2/logout
+[**authorizeAuth0****](Auth0Api#authorizeauth0) | **GET** /authorize
+[**exchangeForAuth0Token****](Auth0Api#exchangeforauth0token) | **POST** /oauth/token
+[**getAuth0UserInfo****](Auth0Api#getauth0userinfo) | **GET** /userinfo
 
 
-## **auth0Logout**
+## **auth0Logout** {#auth0logout}
 > string auth0Logout()
 
 https://auth0.com/docs/api/authentication#logout
@@ -20,8 +20,8 @@ https://auth0.com/docs/api/authentication#logout
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.Auth0Api(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.Auth0LogoutRequest = {
     // string | The client ID of the Auth0 Instance (optional)
@@ -31,14 +31,14 @@ const body: Pieces.Auth0LogoutRequest = {
 };
 
 apiInstance.auth0Logout(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **clientId** | [**string**] | The client ID of the Auth0 Instance | (optional) defaults to undefined
  **returnTo** | [**string**] | The URL that the logout endpoint will return to | (optional) defaults to undefined
 
@@ -58,7 +58,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **authorizeAuth0**
+## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0()
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
@@ -68,8 +68,8 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.Auth0Api(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.AuthorizeAuth0Request = {
     // string |  The unique identifier of the target API you want to access.
@@ -97,14 +97,14 @@ const body: Pieces.AuthorizeAuth0Request = {
 };
 
 apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **audience** | [**string**] |  The unique identifier of the target API you want to access. | defaults to undefined
  **scope** | **Array\<&#39;openid&#39; &#124; &#39;email&#39; &#124; &#39;profile&#39; &#124; &#39;offline_access&#39;\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | defaults to undefined
  **responseType** | [**&#39;code&#39;**]**Array\<&#39;code&#39;\>** | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | defaults to undefined
@@ -133,7 +133,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **exchangeForAuth0Token**
+## **exchangeForAuth0Token** {#exchangeforauth0token}
 > OAuthToken exchangeForAuth0Token()
 
 An endpoint to generate a OAuth Token for an authentication flow. 
@@ -143,8 +143,8 @@ An endpoint to generate a OAuth Token for an authentication flow.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.Auth0Api(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.ExchangeForAuth0TokenRequest = {
     // string | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -164,14 +164,14 @@ const body: Pieces.ExchangeForAuth0TokenRequest = {
 };
 
 apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **grantType** | [**string**]**Array\<&#39;refresh_token&#39; &#124; &#39;authorization_code&#39;\>** | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | defaults to undefined
  **clientId** | [**string**] | Your application\\\&#39;s Client ID. | defaults to undefined
  **code** | [**string**] | The Authorization Code received from the initial /authorize call. | defaults to undefined
@@ -196,7 +196,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **getAuth0UserInfo**
+## **getAuth0UserInfo** {#getauth0userinfo}
 > Auth0User getAuth0UserInfo()
 
 Get the users info from the Auth0 API
@@ -206,16 +206,16 @@ Get the users info from the Auth0 API
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.Auth0Api(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 apiInstance.getAuth0UserInfo().then((data: Auth0User) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

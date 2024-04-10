@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**workstream_events_create_new_workstream_event**](WorkstreamEventsApi#workstream_events_create_new_workstream_event) | **POST** /workstream_events/create | /workstream_events/create [POST]
-[**workstream_events_delete_specific_workstream_event**](WorkstreamEventsApi#workstream_events_delete_specific_workstream_event) | **POST** /workstream_events/\{workstream_event\}/delete | /workstream_events/\{workstream_event\}/delete [POST]
-[**workstream_events_snapshot**](WorkstreamEventsApi#workstream_events_snapshot) | **GET** /workstream_events | /workstream_events [GET]
+Method | HTTP request
+------------- | -------------
+[**workstream_events_create_new_workstream_event**](WorkstreamEventsApi#workstream_events_create_new_workstream_event) | **POST** /workstream_events/create
+[**workstream_events_delete_specific_workstream_event**](WorkstreamEventsApi#workstream_events_delete_specific_workstream_event) | **POST** /workstream_events/\{workstream_event\}/delete
+[**workstream_events_snapshot**](WorkstreamEventsApi#workstream_events_snapshot) | **GET** /workstream_events
 
 
-## **workstream_events_create_new_workstream_event**
+## **workstream_events_create_new_workstream_event** {#workstream_events_create_new_workstream_event}
 > WorkstreamEvent workstream_events_create_new_workstream_event(transferables=transferables, seeded_workstream_event=seeded_workstream_event)
 
 /workstream_events/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **workstream_events_delete_specific_workstream_event**
+## **workstream_events_delete_specific_workstream_event** {#workstream_events_delete_specific_workstream_event}
 > workstream_events_delete_specific_workstream_event(workstream_event)
 
 /workstream_events/\{workstream_event\}/delete [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **workstream_events_snapshot**
+## **workstream_events_snapshot** {#workstream_events_snapshot}
 > WorkstreamEvents workstream_events_snapshot(transferables=transferables)
 
 /workstream_events [GET]

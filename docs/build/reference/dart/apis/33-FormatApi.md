@@ -1,10 +1,5 @@
 # Format API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -16,7 +11,7 @@ Method | HTTP request | Description
 [**formatUsageEvent**](FormatApi#formatusageevent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
-## **formatAnalysis**
+## **formatAnalysis** {#formatanalysis}
 > Analysis formatAnalysis(format)
 
 /format/\{format\}/analysis [GET]
@@ -25,7 +20,7 @@ This will get an analysis from a format's id.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatApi();
 final format = 102ff265-fdfb-4142-8d94-4932d400199c; // String | The id (uuid) for a specific format.
@@ -59,7 +54,7 @@ No authorization required
 
 
 
-## **formatReclassify**
+## **formatReclassify** {#formatreclassify}
 > Format formatReclassify(transferable, formatReclassification)
 
 /format/reclassify [POST]
@@ -68,7 +63,7 @@ This endpoint will be used to reclassify a single Format.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatApi();
 final transferable = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -104,7 +99,7 @@ No authorization required
 
 
 
-## **formatSnapshot**
+## **formatSnapshot** {#formatsnapshot}
 > Format formatSnapshot(format, transferable)
 
 /format/\{format\} [GET] Scoped to Format
@@ -113,7 +108,7 @@ Get a snapshot of a specific format.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatApi();
 final format = 102ff265-fdfb-4142-8d94-4932d400199c; // String | The id (uuid) for a specific format.
@@ -149,7 +144,7 @@ No authorization required
 
 
 
-## **formatUpdateValue**
+## **formatUpdateValue** {#formatupdatevalue}
 > Format formatUpdateValue(transferable, format)
 
 [POST] /format/update/value
@@ -158,7 +153,7 @@ This will update a format's value, ie, a formats fragment or file depending on w
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatApi();
 final transferable = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -194,7 +189,7 @@ No authorization required
 
 
 
-## **formatUsageEvent**
+## **formatUsageEvent** {#formatusageevent}
 > TrackedFormatEvent formatUsageEvent(seededTrackedFormatEvent)
 
 /format/usage/event [POST] Scoped to Format
@@ -203,7 +198,7 @@ This is an analytics endpoint that will enable us to know when a user has copied
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatApi();
 final seededTrackedFormatEvent = SeededTrackedFormatEvent(); // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:)

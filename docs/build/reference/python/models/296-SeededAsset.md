@@ -35,4 +35,3 @@ seeded_asset_form_dict = seeded_asset.from_dict(seeded_asset_dict)
 ```
 
 
-

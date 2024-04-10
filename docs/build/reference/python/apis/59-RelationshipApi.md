@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**relationships_specific_relationship_snapshot**](RelationshipApi#relationships_specific_relationship_snapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
+Method | HTTP request
+------------- | -------------
+[**relationships_specific_relationship_snapshot**](RelationshipApi#relationships_specific_relationship_snapshot) | **GET** /relationship/\{relationship\}
 
 
-## **relationships_specific_relationship_snapshot**
+## **relationships_specific_relationship_snapshot** {#relationships_specific_relationship_snapshot}
 > Relationship relationships_specific_relationship_snapshot(relationship)
 
 /relationship/\{relationship\} [GET]

@@ -15,7 +15,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { SeededTrackedInteractionEvent } from '@pieces.app/pieces-os-client';
+import { SeededTrackedInteractionEvent } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: SeededTrackedInteractionEvent = {
@@ -23,17 +23,17 @@ const example: SeededTrackedInteractionEvent = {
     "description": null,
     "element": null,
     "identifierDescriptionPair": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedInteractionEvent;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as SeededTrackedInteractionEvent
+console.log(exampleParsed)
 ```
 
 

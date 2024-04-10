@@ -27,4 +27,3 @@ graphical_svg_statistics_form_dict = graphical_svg_statistics.from_dict(graphica
 ```
 
 
-

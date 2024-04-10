@@ -1,10 +1,5 @@
 # Persons API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -15,7 +10,7 @@ Method | HTTP request | Description
 [**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
 
 
-## **personDisassociateAsset**
+## **personDisassociateAsset** {#persondisassociateasset}
 > personDisassociateAsset(person, asset)
 
 /persons/\{person\}/assets/delete/\{asset\} [POST]
@@ -24,7 +19,7 @@ This will update both the asset and the person reference, that will remove a per
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = PersonsApi();
 final person = person_example; // String | This is a uuid that represents a person.
@@ -59,7 +54,7 @@ No authorization required
 
 
 
-## **personsCreateNewPerson**
+## **personsCreateNewPerson** {#personscreatenewperson}
 > Person personsCreateNewPerson(transferables, seededPerson)
 
 /persons/create [POST]
@@ -68,7 +63,7 @@ This will create a new person.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = PersonsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -104,7 +99,7 @@ No authorization required
 
 
 
-## **personsDeletePerson**
+## **personsDeletePerson** {#personsdeleteperson}
 > personsDeletePerson(person)
 
 /persons/\{person\}/delete [POST]
@@ -113,7 +108,7 @@ This will delete a specific person.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = PersonsApi();
 final person = person_example; // String | This is a uuid that represents a person.
@@ -146,7 +141,7 @@ No authorization required
 
 
 
-## **personsSnapshot**
+## **personsSnapshot** {#personssnapshot}
 > Persons personsSnapshot(transferables)
 
 /persons [GET]
@@ -155,7 +150,7 @@ This will get a snapshot of all of your people
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = PersonsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

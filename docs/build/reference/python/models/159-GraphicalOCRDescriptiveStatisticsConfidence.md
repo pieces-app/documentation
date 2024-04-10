@@ -26,4 +26,3 @@ graphical_ocr_descriptive_statistics_confidence_form_dict = graphical_ocr_descri
 ```
 
 
-

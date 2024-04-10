@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**allocationsConnectNewCloud**](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect
-[**allocationsCreateNewAllocation**](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create
-[**allocationsDeleteAllocation**](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete
-[**allocationsDisconnectCloud**](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect
-[**allocationsReconnectCloud**](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect
-[**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations
+[**allocationsConnectNewCloud****](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect
+[**allocationsCreateNewAllocation****](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create
+[**allocationsDeleteAllocation****](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete
+[**allocationsDisconnectCloud****](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect
+[**allocationsReconnectCloud****](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect
+[**allocationsSnapshot****](AllocationsApi#allocationssnapshot) | **GET** /allocations
 
 
-## **allocationsConnectNewCloud**
+## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}
 > AllocationCloud allocationsConnectNewCloud()
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
@@ -22,8 +22,8 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 const body: Pieces.AllocationsConnectNewCloudRequest = {
     // UserProfile (optional)
@@ -31,14 +31,14 @@ const body: Pieces.AllocationsConnectNewCloudRequest = {
 };
 
 apiInstance.allocationsConnectNewCloud(body).then((data: AllocationCloud) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
@@ -59,7 +59,7 @@ Name | Type | Description
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-## **allocationsCreateNewAllocation**
+## **allocationsCreateNewAllocation** {#allocationscreatenewallocation}
 > AllocationCloud allocationsCreateNewAllocation()
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
@@ -69,8 +69,8 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 const body: Pieces.AllocationsCreateNewAllocationRequest = {
     // AllocationCloud (optional)
@@ -78,14 +78,14 @@ const body: Pieces.AllocationsCreateNewAllocationRequest = {
 };
 
 apiInstance.allocationsCreateNewAllocation(body).then((data: AllocationCloud) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -105,7 +105,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **allocationsDeleteAllocation**
+## **allocationsDeleteAllocation** {#allocationsdeleteallocation}
 > string allocationsDeleteAllocation()
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
@@ -115,8 +115,8 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 const body: Pieces.AllocationsDeleteAllocationRequest = {
     // AllocationCloud (optional)
@@ -124,14 +124,14 @@ const body: Pieces.AllocationsDeleteAllocationRequest = {
 };
 
 apiInstance.allocationsDeleteAllocation(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -151,7 +151,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **allocationsDisconnectCloud**
+## **allocationsDisconnectCloud** {#allocationsdisconnectcloud}
 > string allocationsDisconnectCloud()
 
 This will attempt to disconnect to a specific users cloud.
@@ -161,8 +161,8 @@ This will attempt to disconnect to a specific users cloud.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 const body: Pieces.AllocationsDisconnectCloudRequest = {
     // AllocationCloud (optional)
@@ -170,14 +170,14 @@ const body: Pieces.AllocationsDisconnectCloudRequest = {
 };
 
 apiInstance.allocationsDisconnectCloud(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -197,7 +197,7 @@ Name | Type | Description
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
 
-## **allocationsReconnectCloud**
+## **allocationsReconnectCloud** {#allocationsreconnectcloud}
 > AllocationCloud allocationsReconnectCloud()
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user\'s cloud is up-to-date.
@@ -207,8 +207,8 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 const body: Pieces.AllocationsReconnectCloudRequest = {
     // AllocationCloud (optional)
@@ -216,14 +216,14 @@ const body: Pieces.AllocationsReconnectCloudRequest = {
 };
 
 apiInstance.allocationsReconnectCloud(body).then((data: AllocationCloud) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
@@ -244,7 +244,7 @@ Name | Type | Description
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
 
-## **allocationsSnapshot**
+## **allocationsSnapshot** {#allocationssnapshot}
 > Allocations allocationsSnapshot()
 
 This is going to get a snapshot of all of the connected allocations.
@@ -254,16 +254,16 @@ This is going to get a snapshot of all of the connected allocations.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationsApi(configuration)
 
 apiInstance.allocationsSnapshot().then((data: Allocations) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

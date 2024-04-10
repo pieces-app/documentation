@@ -33,4 +33,3 @@ searched_asset_form_dict = searched_asset.from_dict(searched_asset_dict)
 ```
 
 
-

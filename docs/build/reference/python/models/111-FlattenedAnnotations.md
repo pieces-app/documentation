@@ -30,4 +30,3 @@ flattened_annotations_form_dict = flattened_annotations.from_dict(flattened_anno
 ```
 
 
-

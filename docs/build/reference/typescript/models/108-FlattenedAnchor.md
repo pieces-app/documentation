@@ -24,7 +24,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { FlattenedAnchor } from '@pieces.app/pieces-os-client';
+import { FlattenedAnchor } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: FlattenedAnchor = {
@@ -42,17 +42,17 @@ const example: FlattenedAnchor = {
     "conversations": null,
     "score": null,
     "summaries": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnchor;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnchor
+console.log(exampleParsed)
 ```
 
 

@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**websites_create_new_website**](WebsitesApi#websites_create_new_website) | **POST** /websites/create | /websites/create [POST]
-[**websites_delete_specific_website**](WebsitesApi#websites_delete_specific_website) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
-[**websites_exists**](WebsitesApi#websites_exists) | **POST** /websites/exists | /websites/exists [POST]
-[**websites_snapshot**](WebsitesApi#websites_snapshot) | **GET** /websites | /websites [GET]
+Method | HTTP request
+------------- | -------------
+[**websites_create_new_website**](WebsitesApi#websites_create_new_website) | **POST** /websites/create
+[**websites_delete_specific_website**](WebsitesApi#websites_delete_specific_website) | **POST** /websites/\{website\}/delete
+[**websites_exists**](WebsitesApi#websites_exists) | **POST** /websites/exists
+[**websites_snapshot**](WebsitesApi#websites_snapshot) | **GET** /websites
 
 
-## **websites_create_new_website**
+## **websites_create_new_website** {#websites_create_new_website}
 > Website websites_create_new_website(transferables=transferables, seeded_website=seeded_website)
 
 /websites/create [POST]
@@ -82,7 +82,7 @@ No authorization required
 
 
 
-## **websites_delete_specific_website**
+## **websites_delete_specific_website** {#websites_delete_specific_website}
 > websites_delete_specific_website(website)
 
 /websites/\{website\}/delete [POST]
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **websites_exists**
+## **websites_exists** {#websites_exists}
 > ExistingMetadata websites_exists(existent_metadata=existent_metadata)
 
 /websites/exists [POST]
@@ -218,7 +218,7 @@ No authorization required
 
 
 
-## **websites_snapshot**
+## **websites_snapshot** {#websites_snapshot}
 > Websites websites_snapshot(transferables=transferables)
 
 /websites [GET]

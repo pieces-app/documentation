@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocation_update**](AllocationApi#allocation_update) | **POST** /allocation/update | /allocation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/\{allocation\}
+[**allocation_update**](AllocationApi#allocation_update) | **POST** /allocation/update
 
 
-## **allocation_snapshot**
+## **allocation_snapshot** {#allocation_snapshot}
 > AllocationCloud allocation_snapshot(allocation)
 
 /allocation/\{allocation\} [GET]
@@ -77,7 +77,7 @@ No authorization required
 
 
 
-## **allocation_update**
+## **allocation_update** {#allocation_update}
 > AllocationCloud allocation_update(allocation_cloud=allocation_cloud)
 
 /allocation/update [POST]

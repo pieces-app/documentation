@@ -29,4 +29,3 @@ qgpt_relevance_output_form_dict = qgpt_relevance_output.from_dict(qgpt_relevance
 ```
 
 
-

@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**workstream_summaries_create_new_workstream_summary**](WorkstreamSummariesApi#workstream_summaries_create_new_workstream_summary) | **POST** /workstream_summaries/create | /workstream_summaries/create [POST]
-[**workstream_summaries_delete_specific_workstream_summary**](WorkstreamSummariesApi#workstream_summaries_delete_specific_workstream_summary) | **POST** /workstream_summaries/\{workstream_summary\}/delete | /workstream_summaries/\{workstream_summary\}/delete [POST]
-[**workstream_summaries_snapshot**](WorkstreamSummariesApi#workstream_summaries_snapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
+Method | HTTP request
+------------- | -------------
+[**workstream_summaries_create_new_workstream_summary**](WorkstreamSummariesApi#workstream_summaries_create_new_workstream_summary) | **POST** /workstream_summaries/create
+[**workstream_summaries_delete_specific_workstream_summary**](WorkstreamSummariesApi#workstream_summaries_delete_specific_workstream_summary) | **POST** /workstream_summaries/\{workstream_summary\}/delete
+[**workstream_summaries_snapshot**](WorkstreamSummariesApi#workstream_summaries_snapshot) | **GET** /workstream_summaries
 
 
-## **workstream_summaries_create_new_workstream_summary**
+## **workstream_summaries_create_new_workstream_summary** {#workstream_summaries_create_new_workstream_summary}
 > WorkstreamSummary workstream_summaries_create_new_workstream_summary(transferables=transferables, seeded_workstream_summary=seeded_workstream_summary)
 
 /workstream_summaries/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **workstream_summaries_delete_specific_workstream_summary**
+## **workstream_summaries_delete_specific_workstream_summary** {#workstream_summaries_delete_specific_workstream_summary}
 > workstream_summaries_delete_specific_workstream_summary(workstream_summary)
 
 /workstream_summaries/\{workstream_summary\}/delete [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **workstream_summaries_snapshot**
+## **workstream_summaries_snapshot** {#workstream_summaries_snapshot}
 > WorkstreamSummaries workstream_summaries_snapshot(transferables=transferables)
 
 /workstream_summaries [GET]

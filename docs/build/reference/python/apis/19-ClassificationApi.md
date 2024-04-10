@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**convert_generic_classification**](ClassificationApi#convert_generic_classification) | **POST** /classification/generic/convert | Convert Generic Classification
+Method | HTTP request
+------------- | -------------
+[**convert_generic_classification**](ClassificationApi#convert_generic_classification) | **POST** /classification/generic/convert
 
 
-## **convert_generic_classification**
+## **convert_generic_classification** {#convert_generic_classification}
 > SeededFormat convert_generic_classification(seeded_format=seeded_format)
 
 Convert Generic Classification

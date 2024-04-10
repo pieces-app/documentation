@@ -27,4 +27,3 @@ temporal_range_grounding_form_dict = temporal_range_grounding.from_dict(temporal
 ```
 
 
-

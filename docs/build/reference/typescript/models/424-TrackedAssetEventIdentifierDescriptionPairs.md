@@ -48,7 +48,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { TrackedAssetEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client';
+import { TrackedAssetEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: TrackedAssetEventIdentifierDescriptionPairs = {
@@ -89,17 +89,17 @@ const example: TrackedAssetEventIdentifierDescriptionPairs = {
     "assetAnchorAdded": null,
     "assetAnchorDeleted": null,
     "assetAnchorUpdated": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventIdentifierDescriptionPairs;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as TrackedAssetEventIdentifierDescriptionPairs
+console.log(exampleParsed)
 ```
 
 

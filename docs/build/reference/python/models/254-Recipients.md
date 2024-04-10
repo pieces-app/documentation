@@ -28,4 +28,3 @@ recipients_form_dict = recipients.from_dict(recipients_dict)
 ```
 
 
-

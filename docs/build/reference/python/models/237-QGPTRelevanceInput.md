@@ -36,4 +36,3 @@ qgpt_relevance_input_form_dict = qgpt_relevance_input.from_dict(qgpt_relevance_i
 ```
 
 
-

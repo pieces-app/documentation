@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**distributionUpdate**](DistributionApi#distributionupdate) | **POST** /distribution/update
-[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\}
+[**distributionUpdate****](DistributionApi#distributionupdate) | **POST** /distribution/update
+[**distributionsSpecificDistributionSnapshot****](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\}
 
 
-## **distributionUpdate**
+## **distributionUpdate** {#distributionupdate}
 > Distribution distributionUpdate()
 
 This will update a specific Distribution.
@@ -18,8 +18,8 @@ This will update a specific Distribution.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DistributionApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionUpdateRequest = {
     // Distribution (optional)
@@ -27,14 +27,14 @@ const body: Pieces.DistributionUpdateRequest = {
 };
 
 apiInstance.distributionUpdate(body).then((data: Distribution) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **distribution** | **Distribution**|  |
 
 
@@ -54,7 +54,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **distributionsSpecificDistributionSnapshot**
+## **distributionsSpecificDistributionSnapshot** {#distributionsspecificdistributionsnapshot}
 > Distribution distributionsSpecificDistributionSnapshot()
 
 This will get a specific snapshot of a distribution.
@@ -64,8 +64,8 @@ This will get a specific snapshot of a distribution.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DistributionApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
     // string | This is the uuid of a specific distribution.
@@ -73,14 +73,14 @@ const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
 };
 
 apiInstance.distributionsSpecificDistributionSnapshot(body).then((data: Distribution) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 

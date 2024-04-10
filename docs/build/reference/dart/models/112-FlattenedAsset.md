@@ -1,8 +1,8 @@
-# FlattenedAsset
+# FlattenedAsset Model
 
 ## Load the model package
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 ```
 
 ## Properties
@@ -37,6 +37,7 @@ Name | Type | Description | Notes
 **anchors** | [**FlattenedAnchors**](FlattenedAnchors) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a 'demo' snippet | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 
 

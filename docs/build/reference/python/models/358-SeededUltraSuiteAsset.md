@@ -31,4 +31,3 @@ seeded_ultra_suite_asset_form_dict = seeded_ultra_suite_asset.from_dict(seeded_u
 ```
 
 
-

@@ -27,4 +27,3 @@ graphical_ocr_processing_form_dict = graphical_ocr_processing.from_dict(graphica
 ```
 
 
-

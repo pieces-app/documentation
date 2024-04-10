@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**messages_create_specific_message**](ConversationMessagesApi#messages_create_specific_message) | **POST** /messages/create | /messages/create [POST]
-[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
-[**messages_snapshot**](ConversationMessagesApi#messages_snapshot) | **GET** /messages | /messages [GET]
+Method | HTTP request
+------------- | -------------
+[**messages_create_specific_message**](ConversationMessagesApi#messages_create_specific_message) | **POST** /messages/create
+[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/\{message\}/delete
+[**messages_snapshot**](ConversationMessagesApi#messages_snapshot) | **GET** /messages
 
 
-## **messages_create_specific_message**
+## **messages_create_specific_message** {#messages_create_specific_message}
 > ConversationMessage messages_create_specific_message(transferables=transferables, seeded_conversation_message=seeded_conversation_message)
 
 /messages/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **messages_delete_specific_message**
+## **messages_delete_specific_message** {#messages_delete_specific_message}
 > messages_delete_specific_message(message)
 
 /messages/\{message\}/delete [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **messages_snapshot**
+## **messages_snapshot** {#messages_snapshot}
 > ConversationMessages messages_snapshot(transferables=transferables)
 
 /messages [GET]

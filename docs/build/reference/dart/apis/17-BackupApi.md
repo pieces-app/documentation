@@ -1,10 +1,5 @@
 # Backup API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -16,7 +11,7 @@ Method | HTTP request | Description
 [**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
 
 
-## **backup**
+## **backup** {#backup}
 > backup(assets)
 
 /backup [POST]
@@ -25,7 +20,7 @@ Method | HTTP request | Description
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupApi();
 final assets = Assets(); // Assets | 
@@ -58,14 +53,14 @@ No authorization required
 
 
 
-## **backupAsset**
+## **backupAsset** {#backupasset}
 > backupAsset(asset)
 
 /backup/asset [POST]
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupApi();
 final asset = Asset(); // Asset | 
@@ -98,7 +93,7 @@ No authorization required
 
 
 
-## **backupRestoreSpecificBackup**
+## **backupRestoreSpecificBackup** {#backuprestorespecificbackup}
 > Backup backupRestoreSpecificBackup(backup, backup2)
 
 /backup/\{backup\}/restore [POST]
@@ -107,7 +102,7 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupApi();
 final backup = backup_example; // String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -143,7 +138,7 @@ No authorization required
 
 
 
-## **backupRestoreSpecificBackupStreamed**
+## **backupRestoreSpecificBackupStreamed** {#backuprestorespecificbackupstreamed}
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed(backup, backup2)
 
 /backup/\{backup\}/restore/streamed [POST]
@@ -152,7 +147,7 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupApi();
 final backup = backup_example; // String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -188,7 +183,7 @@ No authorization required
 
 
 
-## **backupSpecificBackupSnapshot**
+## **backupSpecificBackupSnapshot** {#backupspecificbackupsnapshot}
 > Backup backupSpecificBackupSnapshot(backup)
 
 /backup/\{backup\} [GET]
@@ -197,7 +192,7 @@ This will just get the metadata associated with a specific backup.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupApi();
 final backup = backup_example; // String | This is a identifier that is used to identify a specific backup.(version_timestamp)

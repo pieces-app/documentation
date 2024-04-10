@@ -1,10 +1,5 @@
 # Allocations API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -17,7 +12,7 @@ Method | HTTP request | Description
 [**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
-## **allocationsConnectNewCloud**
+## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}
 > AllocationCloud allocationsConnectNewCloud(userProfile)
 
 /allocations/connect [POST]
@@ -26,7 +21,7 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 final userProfile = UserProfile(); // UserProfile | 
@@ -60,7 +55,7 @@ No authorization required
 
 
 
-## **allocationsCreateNewAllocation**
+## **allocationsCreateNewAllocation** {#allocationscreatenewallocation}
 > AllocationCloud allocationsCreateNewAllocation(allocationCloud)
 
 /allocations/create [POST]
@@ -69,7 +64,7 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -103,7 +98,7 @@ No authorization required
 
 
 
-## **allocationsDeleteAllocation**
+## **allocationsDeleteAllocation** {#allocationsdeleteallocation}
 > String allocationsDeleteAllocation(allocationCloud)
 
 /allocations/delete [POST]
@@ -112,7 +107,7 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -146,7 +141,7 @@ No authorization required
 
 
 
-## **allocationsDisconnectCloud**
+## **allocationsDisconnectCloud** {#allocationsdisconnectcloud}
 > String allocationsDisconnectCloud(allocationCloud)
 
 /allocations/disconnect [POST]
@@ -155,7 +150,7 @@ This will attempt to disconnect to a specific users cloud.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -189,7 +184,7 @@ No authorization required
 
 
 
-## **allocationsReconnectCloud**
+## **allocationsReconnectCloud** {#allocationsreconnectcloud}
 > AllocationCloud allocationsReconnectCloud(allocationCloud)
 
 /allocations/reconnect [POST]
@@ -198,7 +193,7 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 
@@ -232,7 +227,7 @@ No authorization required
 
 
 
-## **allocationsSnapshot**
+## **allocationsSnapshot** {#allocationssnapshot}
 > Allocations allocationsSnapshot()
 
 /allocations [GET]
@@ -241,7 +236,7 @@ This is going to get a snapshot of all of the connected allocations.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationsApi();
 

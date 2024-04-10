@@ -1,10 +1,5 @@
 # Classification API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -12,7 +7,7 @@ Method | HTTP request | Description
 [**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert | Convert Generic Classification
 
 
-## **convertGenericClassification**
+## **convertGenericClassification** {#convertgenericclassification}
 > SeededFormat convertGenericClassification(seededFormat)
 
 Convert Generic Classification
@@ -21,7 +16,7 @@ This endpoint converts on a best effort basis from one generic format to another
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ClassificationApi();
 final seededFormat = SeededFormat(); // SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified 

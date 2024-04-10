@@ -2,26 +2,26 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**assets_create_new_asset**](AssetsApi#assets_create_new_asset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
-[**assets_draft**](AssetsApi#assets_draft) | **POST** /assets/draft | /assets/draft [POST]
-[**assets_get_recommended_assets**](AssetsApi#assets_get_recommended_assets) | **GET** /assets/recommended | Your GET endpoint
-[**assets_get_related_assets**](AssetsApi#assets_get_related_assets) | **GET** /assets/related | /assets/related [GET]
-[**assets_identifiers_snapshot**](AssetsApi#assets_identifiers_snapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
-[**assets_pseudo_snapshot**](AssetsApi#assets_pseudo_snapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
-[**assets_search_assets**](AssetsApi#assets_search_assets) | **GET** /assets/search | /assets/search?query&#x3D;string [GET]
-[**assets_search_with_filters**](AssetsApi#assets_search_with_filters) | **POST** /assets/search | /assets/search [POST]
-[**assets_snapshot**](AssetsApi#assets_snapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
-[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
-[**assets_stream_identifiers**](AssetsApi#assets_stream_identifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
-[**get_assets_stream_transferables**](AssetsApi#get_assets_stream_transferables) | **GET** /assets/stream/transferables | Your GET endpoint
-[**stream_assets**](AssetsApi#stream_assets) | **GET** /assets/stream | /assets/stream [GET]
+Method | HTTP request
+------------- | -------------
+[**assets_create_new_asset**](AssetsApi#assets_create_new_asset) | **POST** /assets/create
+[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/\{asset\}/delete
+[**assets_draft**](AssetsApi#assets_draft) | **POST** /assets/draft
+[**assets_get_recommended_assets**](AssetsApi#assets_get_recommended_assets) | **GET** /assets/recommended
+[**assets_get_related_assets**](AssetsApi#assets_get_related_assets) | **GET** /assets/related
+[**assets_identifiers_snapshot**](AssetsApi#assets_identifiers_snapshot) | **GET** /assets/identifiers
+[**assets_pseudo_snapshot**](AssetsApi#assets_pseudo_snapshot) | **GET** /assets/pseudo
+[**assets_search_assets**](AssetsApi#assets_search_assets) | **GET** /assets/search
+[**assets_search_with_filters**](AssetsApi#assets_search_with_filters) | **POST** /assets/search
+[**assets_snapshot**](AssetsApi#assets_snapshot) | **GET** /assets
+[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/\{asset\}/formats
+[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/\{asset\}
+[**assets_stream_identifiers**](AssetsApi#assets_stream_identifiers) | **GET** /assets/stream/identifiers
+[**get_assets_stream_transferables**](AssetsApi#get_assets_stream_transferables) | **GET** /assets/stream/transferables
+[**stream_assets**](AssetsApi#stream_assets) | **GET** /assets/stream
 
 
-## **assets_create_new_asset**
+## **assets_create_new_asset** {#assets_create_new_asset}
 > Asset assets_create_new_asset(transferables=transferables, seed=seed)
 
 /assets/create [POST] Scoped to Asset
@@ -92,7 +92,7 @@ No authorization required
 
 
 
-## **assets_delete_asset**
+## **assets_delete_asset** {#assets_delete_asset}
 > str assets_delete_asset(asset)
 
 /assets/\{asset\}/delete [POST] Scoped to Asset
@@ -159,12 +159,12 @@ No authorization required
 
 
 
-## **assets_draft**
+## **assets_draft** {#assets_draft}
 > Seed assets_draft(transferables=transferables, seed=seed)
 
 /assets/draft [POST]
 
-This endpoint allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
+Allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
 
 ### Example
 
@@ -230,12 +230,12 @@ No authorization required
 
 
 
-## **assets_get_recommended_assets**
+## **assets_get_recommended_assets** {#assets_get_recommended_assets}
 > Assets assets_get_recommended_assets(seeded_assets_recommendation=seeded_assets_recommendation)
 
 Your GET endpoint
 
-This endpoint expects a request body containing a SeededAssetsRecommendation Model, which includes assets (represented by the Assets Model) and interactions (represented by the InteractedAssets Model). The response will provide an Assets Model suitable for use in a UI
+Expects a SeededAssetsRecommendation Model in the request body, containing assets and interactions. Returns an Assets Model suitable for UI.
 
 ### Example
 
@@ -299,7 +299,7 @@ No authorization required
 
 
 
-## **assets_get_related_assets**
+## **assets_get_related_assets** {#assets_get_related_assets}
 > Assets assets_get_related_assets(assets=assets)
 
 /assets/related [GET]
@@ -367,7 +367,7 @@ No authorization required
 
 
 
-## **assets_identifiers_snapshot**
+## **assets_identifiers_snapshot** {#assets_identifiers_snapshot}
 > FlattenedAssets assets_identifiers_snapshot(pseudo=pseudo)
 
 /assets/identifiers [GET]
@@ -436,7 +436,7 @@ No authorization required
 
 
 
-## **assets_pseudo_snapshot**
+## **assets_pseudo_snapshot** {#assets_pseudo_snapshot}
 > PseudoAssets assets_pseudo_snapshot()
 
 /assets/pseudo [GET]
@@ -477,7 +477,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -501,12 +501,12 @@ No authorization required
 
 
 
-## **assets_search_assets**
+## **assets_search_assets** {#assets_search_assets}
 > SearchedAssets assets_search_assets(query=query, transferables=transferables, searchable_tags=searchable_tags, pseudo=pseudo)
 
 /assets/search?query=string [GET]
 
-This function performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
+Performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
 
 ### Example
 
@@ -576,12 +576,12 @@ No authorization required
 
 
 
-## **assets_search_with_filters**
+## **assets_search_with_filters** {#assets_search_with_filters}
 > AssetsSearchWithFiltersOutput assets_search_with_filters(transferables=transferables, pseudo=pseudo, assets_search_with_filters_input=assets_search_with_filters_input)
 
 /assets/search [POST]
 
-This function enables searching through your pieces and returns Assets (the results) based on your query. When sending a query in the request body, fuzzy search is applied. Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
+Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
 
 ### Example
 
@@ -650,7 +650,7 @@ No authorization required
 
 
 
-## **assets_snapshot**
+## **assets_snapshot** {#assets_snapshot}
 > Assets assets_snapshot(transferables=transferables, suggested=suggested, pseudo=pseudo)
 
 /assets [GET] Scoped to Assets
@@ -722,12 +722,12 @@ No authorization required
 
 
 
-## **assets_specific_asset_formats_snapshot**
+## **assets_specific_asset_formats_snapshot** {#assets_specific_asset_formats_snapshot}
 > Formats assets_specific_asset_formats_snapshot(asset, transferables=transferables)
 
 /assets/\{asset\}/formats [GET] Scoped To Assets
 
-Retrieves the available formats for a specific asset identified by its ID.
+Retrieves the available formats for a specific asset identified by its ID
 
 ### Example
 
@@ -792,12 +792,12 @@ No authorization required
 
 
 
-## **assets_specific_asset_snapshot**
+## **assets_specific_asset_snapshot** {#assets_specific_asset_snapshot}
 > Asset assets_specific_asset_snapshot(asset, transferables=transferables)
 
 /assets/\{asset\} [GET] Scoped to Assets
 
-This endpoint allows clients to retrieve details of a specific asset by providing its UUID in the path.
+Allows clients to retrieve details of a specific asset by providing its UUID in the path.
 
 ### Example
 
@@ -863,12 +863,12 @@ No authorization required
 
 
 
-## **assets_stream_identifiers**
+## **assets_stream_identifiers** {#assets_stream_identifiers}
 > StreamedIdentifiers assets_stream_identifiers()
 
 /assets/stream/identifiers [GET]
 
-This endpoint streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
+Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
 
 ### Example
 
@@ -904,7 +904,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -927,12 +927,12 @@ No authorization required
 
 
 
-## **get_assets_stream_transferables**
+## **get_assets_stream_transferables** {#get_assets_stream_transferables}
 > Assets get_assets_stream_transferables()
 
 Your GET endpoint
 
-This endpoint provides a WebSocket connection that emits changes to your assets, including their transferable.
+Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
 ### Example
 
@@ -968,7 +968,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -991,7 +991,7 @@ No authorization required
 
 
 
-## **stream_assets**
+## **stream_assets** {#stream_assets}
 > Assets stream_assets()
 
 /assets/stream [GET]
@@ -1032,7 +1032,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment
-[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\}
-[**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update
+[**sensitiveScoresIncrement****](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment
+[**sensitiveSnapshot****](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\}
+[**updateSensitive****](SensitiveApi#updatesensitive) | **POST** /sensitive/update
 
 
-## **sensitiveScoresIncrement**
+## **sensitiveScoresIncrement** {#sensitivescoresincrement}
 > sensitiveScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -19,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitiveApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitiveApi(configuration)
 
 const body: Pieces.SensitiveScoresIncrementRequest = {
     // string | This is a uuid that represents a sensitive.
@@ -30,14 +30,14 @@ const body: Pieces.SensitiveScoresIncrementRequest = {
 };
 
 apiInstance.sensitiveScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
@@ -58,7 +58,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **sensitiveSnapshot**
+## **sensitiveSnapshot** {#sensitivesnapshot}
 > Sensitive sensitiveSnapshot()
 
 This will get a specific sensitive via the sensitive uuid.
@@ -68,8 +68,8 @@ This will get a specific sensitive via the sensitive uuid.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitiveApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitiveApi(configuration)
 
 const body: Pieces.SensitiveSnapshotRequest = {
     // string
@@ -77,14 +77,14 @@ const body: Pieces.SensitiveSnapshotRequest = {
 };
 
 apiInstance.sensitiveSnapshot(body).then((data: Sensitive) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **sensitive** | [**string**] |  | defaults to undefined
 
 
@@ -104,7 +104,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **updateSensitive**
+## **updateSensitive** {#updatesensitive}
 > Sensitive updateSensitive()
 
 This will update a specific sensitive
@@ -114,8 +114,8 @@ This will update a specific sensitive
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.SensitiveApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.SensitiveApi(configuration)
 
 const body: Pieces.UpdateSensitiveRequest = {
     // Sensitive |  (optional)
@@ -123,14 +123,14 @@ const body: Pieces.UpdateSensitiveRequest = {
 };
 
 apiInstance.updateSensitive(body).then((data: Sensitive) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **sensitive** | **Sensitive**|  |
 
 

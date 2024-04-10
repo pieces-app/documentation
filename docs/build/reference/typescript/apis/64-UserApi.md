@@ -4,17 +4,17 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**clearUser**](UserApi#clearuser) | **POST** /user/clear
-[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh
-[**selectUser**](UserApi#selectuser) | **POST** /user/select
-[**streamUser**](UserApi#streamuser) | **GET** /user/stream
-[**updateUser**](UserApi#updateuser) | **POST** /user/update
-[**userProviders**](UserApi#userproviders) | **GET** /user/providers
-[**userSnapshot**](UserApi#usersnapshot) | **GET** /user
-[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity
+[**clearUser****](UserApi#clearuser) | **POST** /user/clear
+[**refreshUser****](UserApi#refreshuser) | **GET** /user/refresh
+[**selectUser****](UserApi#selectuser) | **POST** /user/select
+[**streamUser****](UserApi#streamuser) | **GET** /user/stream
+[**updateUser****](UserApi#updateuser) | **POST** /user/update
+[**userProviders****](UserApi#userproviders) | **GET** /user/providers
+[**userSnapshot****](UserApi#usersnapshot) | **GET** /user
+[**userUpdateVanity****](UserApi#userupdatevanity) | **POST** /user/update/vanity
 
 
-## **clearUser**
+## **clearUser** {#clearuser}
 > clearUser()
 
 An endpoint to clear the current user. 
@@ -24,16 +24,16 @@ An endpoint to clear the current user.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 apiInstance.clearUser().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -51,7 +51,7 @@ void (empty response body)
 |-------------|-------------|------------------
 **204** | No Content |  -  |
 
-## **refreshUser**
+## **refreshUser** {#refreshuser}
 > UserProfile refreshUser()
 
 This will refresh a user.
@@ -61,16 +61,16 @@ This will refresh a user.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 apiInstance.refreshUser().then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -89,7 +89,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **selectUser**
+## **selectUser** {#selectuser}
 > UserProfile selectUser()
 
 This will select the current user.
@@ -99,8 +99,8 @@ This will select the current user.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 const body: Pieces.SelectUserRequest = {
     // Auth0User |  (optional)
@@ -108,14 +108,14 @@ const body: Pieces.SelectUserRequest = {
 };
 
 apiInstance.selectUser(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **auth0User** | **Auth0User**|  |
 
 
@@ -134,7 +134,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **streamUser**
+## **streamUser** {#streamuser}
 > UserProfile streamUser()
 
 This will stream in the current user, not quiet sure yet how we want to do this.
@@ -144,16 +144,16 @@ This will stream in the current user, not quiet sure yet how we want to do this.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 apiInstance.streamUser().then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -171,7 +171,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **updateUser**
+## **updateUser** {#updateuser}
 > UserProfile updateUser()
 
 This will update a specific user in the database.
@@ -181,8 +181,8 @@ This will update a specific user in the database.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 const body: Pieces.UpdateUserRequest = {
     // UserProfile |  (optional)
@@ -190,14 +190,14 @@ const body: Pieces.UpdateUserRequest = {
 };
 
 apiInstance.updateUser(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
@@ -216,7 +216,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **userProviders**
+## **userProviders** {#userproviders}
 > ReturnedUserProfile userProviders()
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
@@ -226,16 +226,16 @@ This will retrieve all the users Providers that are connected to this account.  
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 apiInstance.userProviders().then((data: ReturnedUserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -255,7 +255,7 @@ This endpoint does not need any parameter.
 **500** | Internal Server Error |  -  |
 **501** | Not Implemented |  -  |
 
-## **userSnapshot**
+## **userSnapshot** {#usersnapshot}
 > ReturnedUserProfile userSnapshot()
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
@@ -265,16 +265,16 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 apiInstance.userSnapshot().then((data: ReturnedUserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -292,7 +292,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **userUpdateVanity**
+## **userUpdateVanity** {#userupdatevanity}
 > UserProfile userUpdateVanity()
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
@@ -302,8 +302,8 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \"m
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UserApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
 
 const body: Pieces.UserUpdateVanityRequest = {
     // UserProfile | This will take an update userProfile, with the updated vanity name! (optional)
@@ -311,14 +311,14 @@ const body: Pieces.UserUpdateVanityRequest = {
 };
 
 apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**| This will take an update userProfile, with the updated vanity name! |
 
 

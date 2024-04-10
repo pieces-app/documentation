@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\}
-[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\}
-[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\}
-[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\}
-[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment
-[**tagUpdate**](TagApi#tagupdate) | **POST** /tag/update
-[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\}
+[**tagAssociateAsset****](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\}
+[**tagAssociatePerson****](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\}
+[**tagDisassociateAsset****](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\}
+[**tagDisassociatePerson****](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\}
+[**tagScoresIncrement****](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment
+[**tagUpdate****](TagApi#tagupdate) | **POST** /tag/update
+[**tagsSpecificTagSnapshot****](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\}
 
 
-## **tagAssociateAsset**
+## **tagAssociateAsset** {#tagassociateasset}
 > tagAssociateAsset()
 
 This will associate a tag with a asset.
@@ -23,8 +23,8 @@ This will associate a tag with a asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociateAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -34,14 +34,14 @@ const body: Pieces.TagAssociateAssetRequest = {
 };
 
 apiInstance.tagAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -62,7 +62,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagAssociatePerson**
+## **tagAssociatePerson** {#tagassociateperson}
 > tagAssociatePerson()
 
 This will associate a tag with a person.
@@ -72,8 +72,8 @@ This will associate a tag with a person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociatePersonRequest = {
     // string | tag id
@@ -83,14 +83,14 @@ const body: Pieces.TagAssociatePersonRequest = {
 };
 
 apiInstance.tagAssociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -111,7 +111,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagDisassociateAsset**
+## **tagDisassociateAsset** {#tagdisassociateasset}
 > tagDisassociateAsset()
 
 This will enable us to dissassociate a tag from a asset.
@@ -121,8 +121,8 @@ This will enable us to dissassociate a tag from a asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociateAssetRequest = {
     // string | tag id
@@ -132,14 +132,14 @@ const body: Pieces.TagDisassociateAssetRequest = {
 };
 
 apiInstance.tagDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -160,7 +160,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagDisassociatePerson**
+## **tagDisassociatePerson** {#tagdisassociateperson}
 > tagDisassociatePerson()
 
 This will enable us to dissassociate a tag from a person.
@@ -170,8 +170,8 @@ This will enable us to dissassociate a tag from a person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociatePersonRequest = {
     // string | tag id
@@ -181,14 +181,14 @@ const body: Pieces.TagDisassociatePersonRequest = {
 };
 
 apiInstance.tagDisassociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -209,7 +209,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagScoresIncrement**
+## **tagScoresIncrement** {#tagscoresincrement}
 > tagScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -219,8 +219,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagScoresIncrementRequest = {
     // string | tag id
@@ -230,14 +230,14 @@ const body: Pieces.TagScoresIncrementRequest = {
 };
 
 apiInstance.tagScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -258,7 +258,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagUpdate**
+## **tagUpdate** {#tagupdate}
 > Tag tagUpdate()
 
 This will update a specific tag.
@@ -268,8 +268,8 @@ This will update a specific tag.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -279,14 +279,14 @@ const body: Pieces.TagUpdateRequest = {
 };
 
 apiInstance.tagUpdate(body).then((data: Tag) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | **Tag**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -307,7 +307,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **tagsSpecificTagSnapshot**
+## **tagsSpecificTagSnapshot** {#tagsspecifictagsnapshot}
 > Tag tagsSpecificTagSnapshot()
 
 This will get a specific tag.
@@ -317,8 +317,8 @@ This will get a specific tag.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.TagApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagsSpecificTagSnapshotRequest = {
     // string | tag id
@@ -328,14 +328,14 @@ const body: Pieces.TagsSpecificTagSnapshotRequest = {
 };
 
 apiInstance.tagsSpecificTagSnapshot(body).then((data: Tag) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

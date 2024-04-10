@@ -29,4 +29,3 @@ qgpt_prompt_pipeline_form_dict = qgpt_prompt_pipeline.from_dict(qgpt_prompt_pipe
 ```
 
 
-

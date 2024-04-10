@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**relationships_snapshot**](RelationshipsApi#relationships_snapshot) | **GET** /relationships | /relationships [GET]
+Method | HTTP request
+------------- | -------------
+[**relationships_snapshot**](RelationshipsApi#relationships_snapshot) | **GET** /relationships
 
 
-## **relationships_snapshot**
+## **relationships_snapshot** {#relationships_snapshot}
 > Relationships relationships_snapshot()
 
 /relationships [GET]
@@ -48,7 +48,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

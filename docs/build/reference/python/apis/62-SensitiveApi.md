@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**sensitive_scores_increment**](SensitiveApi#sensitive_scores_increment) | **POST** /sensitive/\{sensitive\}/scores/increment | &#39;/sensitive/\{sensitive\}/scores/increment&#39; [POST]
-[**sensitive_snapshot**](SensitiveApi#sensitive_snapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
-[**update_sensitive**](SensitiveApi#update_sensitive) | **POST** /sensitive/update | /sensitive/update [POST]
+Method | HTTP request
+------------- | -------------
+[**sensitive_scores_increment**](SensitiveApi#sensitive_scores_increment) | **POST** /sensitive/\{sensitive\}/scores/increment
+[**sensitive_snapshot**](SensitiveApi#sensitive_snapshot) | **GET** /sensitive/\{sensitive\}
+[**update_sensitive**](SensitiveApi#update_sensitive) | **POST** /sensitive/update
 
 
-## **sensitive_scores_increment**
+## **sensitive_scores_increment** {#sensitive_scores_increment}
 > sensitive_scores_increment(sensitive, seeded_score_increment=seeded_score_increment)
 
 '/sensitive/\{sensitive\}/scores/increment' [POST]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **sensitive_snapshot**
+## **sensitive_snapshot** {#sensitive_snapshot}
 > Sensitive sensitive_snapshot(sensitive)
 
 /sensitive/\{sensitive\} [GET]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **update_sensitive**
+## **update_sensitive** {#update_sensitive}
 > Sensitive update_sensitive(sensitive=sensitive)
 
 /sensitive/update [POST]

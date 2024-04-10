@@ -1,10 +1,5 @@
 # Annotation API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
 
 
-## **annotationScoresIncrement**
+## **annotationScoresIncrement** {#annotationscoresincrement}
 > annotationScoresIncrement(annotation, seededScoreIncrement)
 
 '/annotation/\{annotation\}/scores/increment' [POST]
@@ -23,7 +18,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationApi();
 final annotation = annotation_example; // String | This is a specific annotation uuid.
@@ -58,7 +53,7 @@ No authorization required
 
 
 
-## **annotationSpecificAnnotationSnapshot**
+## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(annotation)
 
 /annotation/\{annotation\} [GET]
@@ -67,7 +62,7 @@ This will get a snapshot of a specific annotation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationApi();
 final annotation = annotation_example; // String | This is a specific annotation uuid.
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **annotationUpdate**
+## **annotationUpdate** {#annotationupdate}
 > Annotation annotationUpdate(annotation)
 
 /annotation/update [POST]
@@ -110,7 +105,7 @@ This will update a specific annotation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnnotationApi();
 final annotation = Annotation(); // Annotation | 

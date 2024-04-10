@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**backup**](BackupApi#backup) | **POST** /backup | /backup [POST]
-[**backup_asset**](BackupApi#backup_asset) | **POST** /backup/asset | /backup/asset [POST]
-[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
-[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
-[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+Method | HTTP request
+------------- | -------------
+[**backup**](BackupApi#backup) | **POST** /backup
+[**backup_asset**](BackupApi#backup_asset) | **POST** /backup/asset
+[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/\{backup\}/restore
+[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/\{backup\}/restore/streamed
+[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/\{backup\}
 
 
-## **backup**
+## **backup** {#backup}
 > backup(assets=assets)
 
 /backup [POST]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **backup_asset**
+## **backup_asset** {#backup_asset}
 > backup_asset(asset=asset)
 
 /backup/asset [POST]
@@ -145,7 +145,7 @@ No authorization required
 
 
 
-## **backup_restore_specific_backup**
+## **backup_restore_specific_backup** {#backup_restore_specific_backup}
 > Backup backup_restore_specific_backup(backup, backup2=backup2)
 
 /backup/\{backup\}/restore [POST]
@@ -216,7 +216,7 @@ No authorization required
 
 
 
-## **backup_restore_specific_backup_streamed**
+## **backup_restore_specific_backup_streamed** {#backup_restore_specific_backup_streamed}
 > BackupStreamedProgress backup_restore_specific_backup_streamed(backup, backup2=backup2)
 
 /backup/\{backup\}/restore/streamed [POST]
@@ -288,7 +288,7 @@ No authorization required
 
 
 
-## **backup_specific_backup_snapshot**
+## **backup_specific_backup_snapshot** {#backup_specific_backup_snapshot}
 > Backup backup_specific_backup_snapshot(backup)
 
 /backup/\{backup\} [GET]

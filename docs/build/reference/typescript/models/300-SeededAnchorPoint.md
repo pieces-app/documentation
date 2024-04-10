@@ -16,7 +16,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { SeededAnchorPoint } from '@pieces.app/pieces-os-client';
+import { SeededAnchorPoint } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: SeededAnchorPoint = {
@@ -26,17 +26,17 @@ const example: SeededAnchorPoint = {
     "fullpath": null,
     "anchor": null,
     "platform": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededAnchorPoint;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as SeededAnchorPoint
+console.log(exampleParsed)
 ```
 
 

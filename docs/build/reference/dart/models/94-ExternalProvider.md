@@ -1,8 +1,8 @@
-# ExternalProvider
+# ExternalProvider Model
 
 ## Load the model package
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 ```
 
 ## Properties

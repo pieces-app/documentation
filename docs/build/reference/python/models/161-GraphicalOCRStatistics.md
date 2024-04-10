@@ -27,4 +27,3 @@ graphical_ocr_statistics_form_dict = graphical_ocr_statistics.from_dict(graphica
 ```
 
 
-

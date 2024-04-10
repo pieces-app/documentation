@@ -1,10 +1,5 @@
 # Formats API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
-## **formatsSnapshot**
+## **formatsSnapshot** {#formatssnapshot}
 > Formats formatsSnapshot(transferables)
 
 /formats [GET] Scoped to Formats
@@ -22,7 +17,7 @@ Get all of your formats for a given user.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatsApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -56,7 +51,7 @@ No authorization required
 
 
 
-## **formatsSpecificFormatSnapshot**
+## **formatsSpecificFormatSnapshot** {#formatsspecificformatsnapshot}
 > Format formatsSpecificFormatSnapshot(format, transferable)
 
 /formats/\{format\} [GET] Scoped to Formats
@@ -65,7 +60,7 @@ Request a specific format when given a id (uuid in path params)
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = FormatsApi();
 final format = 102ff265-fdfb-4142-8d94-4932d400199c; // String | The id (uuid) for a specific format.

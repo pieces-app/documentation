@@ -2,22 +2,22 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
-[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
-[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
-[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations | /conversations [GET]
-[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
+Method | HTTP request
+------------- | -------------
+[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\}
+[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create
+[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete
+[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers
+[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations
+[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers
 
 
-## **conversations_create_from_asset**
+## **conversations_create_from_asset** {#conversations_create_from_asset}
 > ConversationsCreateFromAssetOutput conversations_create_from_asset(asset)
 
 /conversations/create/from_asset/\{asset\} [POST]
 
-This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
+Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
 ### Example
 
@@ -81,12 +81,12 @@ No authorization required
 
 
 
-## **conversations_create_specific_conversation**
+## **conversations_create_specific_conversation** {#conversations_create_specific_conversation}
 > Conversation conversations_create_specific_conversation(transferables=transferables, seeded_conversation=seeded_conversation)
 
 /conversations/create [POST]
 
-This will create a specific conversation.
+Creates a specific conversation.
 
 ### Example
 
@@ -153,12 +153,12 @@ No authorization required
 
 
 
-## **conversations_delete_specific_conversation**
+## **conversations_delete_specific_conversation** {#conversations_delete_specific_conversation}
 > conversations_delete_specific_conversation(conversation)
 
 /conversations/\{conversation\}/delete [POST]
 
-This will delete a specific Conversation.
+Deletes a specific conversation.
 
 ### Example
 
@@ -219,12 +219,12 @@ No authorization required
 
 
 
-## **conversations_identifiers_snapshot**
+## **conversations_identifiers_snapshot** {#conversations_identifiers_snapshot}
 > FlattenedConversations conversations_identifiers_snapshot()
 
 /conversations/identifiers [GET]
 
-This will get all the uuids of a Conversation.
+Retrieves all the UUIDs associated with a Conversation.
 
 ### Example
 
@@ -260,7 +260,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -284,12 +284,12 @@ No authorization required
 
 
 
-## **conversations_snapshot**
+## **conversations_snapshot** {#conversations_snapshot}
 > Conversations conversations_snapshot(transferables=transferables)
 
 /conversations [GET]
 
-This will return a snapshot of a specific conversation
+Retrieves a snapshot of a specific conversation.
 
 ### Example
 
@@ -353,12 +353,12 @@ No authorization required
 
 
 
-## **conversations_stream_identifiers**
+## **conversations_stream_identifiers** {#conversations_stream_identifiers}
 > conversations_stream_identifiers()
 
 /conversations/stream/identifiers [STREAMED]
 
-This is a stream for the conversation identifiers. will return StreamedIdentifiers.
+Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
 
 ### Example
 
@@ -391,7 +391,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

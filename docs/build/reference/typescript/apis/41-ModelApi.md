@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download
-[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
-[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
-[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load
-[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload
-[**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update
-[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
+[**modelSpecificModelDownload****](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download
+[**modelSpecificModelDownloadCancel****](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
+[**modelSpecificModelDownloadProgress****](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
+[**modelSpecificModelLoad****](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load
+[**modelSpecificModelUnload****](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload
+[**modelUpdate****](ModelApi#modelupdate) | **POST** /model/update
+[**modelsSpecificModelSnapshot****](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
 
 
-## **modelSpecificModelDownload**
+## **modelSpecificModelDownload** {#modelspecificmodeldownload}
 > Model modelSpecificModelDownload()
 
 Downloads a specific model to your local machine.
@@ -23,8 +23,8 @@ Downloads a specific model to your local machine.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadRequest = {
     // string | model id
@@ -32,14 +32,14 @@ const body: Pieces.ModelSpecificModelDownloadRequest = {
 };
 
 apiInstance.modelSpecificModelDownload(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -59,7 +59,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelSpecificModelDownloadCancel**
+## **modelSpecificModelDownloadCancel** {#modelspecificmodeldownloadcancel}
 > Model modelSpecificModelDownloadCancel()
 
 Cancels a specific model download that is currently in progress.
@@ -69,8 +69,8 @@ Cancels a specific model download that is currently in progress.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadCancelRequest = {
     // string | model id
@@ -78,14 +78,14 @@ const body: Pieces.ModelSpecificModelDownloadCancelRequest = {
 };
 
 apiInstance.modelSpecificModelDownloadCancel(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -105,7 +105,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelSpecificModelDownloadProgress**
+## **modelSpecificModelDownloadProgress** {#modelspecificmodeldownloadprogress}
 > ModelDownloadProgress modelSpecificModelDownloadProgress()
 
 This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
@@ -115,8 +115,8 @@ This is a WebSocket connection that provides real-time updates on the download p
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadProgressRequest = {
     // string | model id
@@ -124,14 +124,14 @@ const body: Pieces.ModelSpecificModelDownloadProgressRequest = {
 };
 
 apiInstance.modelSpecificModelDownloadProgress(body).then((data: ModelDownloadProgress) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -151,7 +151,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelSpecificModelLoad**
+## **modelSpecificModelLoad** {#modelspecificmodelload}
 > Model modelSpecificModelLoad()
 
 Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
@@ -161,8 +161,8 @@ Loads a previously downloaded model into memory. It differs from downloading, as
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelSpecificModelLoadRequest = {
     // string | model id
@@ -170,14 +170,14 @@ const body: Pieces.ModelSpecificModelLoadRequest = {
 };
 
 apiInstance.modelSpecificModelLoad(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -197,7 +197,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelSpecificModelUnload**
+## **modelSpecificModelUnload** {#modelspecificmodelunload}
 > Model modelSpecificModelUnload()
 
 Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
@@ -207,8 +207,8 @@ Unloads a previously loaded model from memory and effectively frees up the RAM c
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelSpecificModelUnloadRequest = {
     // string | model id
@@ -216,14 +216,14 @@ const body: Pieces.ModelSpecificModelUnloadRequest = {
 };
 
 apiInstance.modelSpecificModelUnload(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
@@ -243,7 +243,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelUpdate**
+## **modelUpdate** {#modelupdate}
 > Model modelUpdate()
 
 Updates a machine learning model. This functionality is exclusively available for models with the \'custom:true\' setting.
@@ -253,8 +253,8 @@ Updates a machine learning model. This functionality is exclusively available fo
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelUpdateRequest = {
     // Model (optional)
@@ -262,14 +262,14 @@ const body: Pieces.ModelUpdateRequest = {
 };
 
 apiInstance.modelUpdate(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | **Model**|  |
 
 
@@ -289,7 +289,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **modelsSpecificModelSnapshot**
+## **modelsSpecificModelSnapshot** {#modelsspecificmodelsnapshot}
 > Model modelsSpecificModelSnapshot()
 
 Retrieves a specific ML model.
@@ -299,8 +299,8 @@ Retrieves a specific ML model.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ModelApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ModelApi(configuration)
 
 const body: Pieces.ModelsSpecificModelSnapshotRequest = {
     // string | model id
@@ -308,14 +308,14 @@ const body: Pieces.ModelsSpecificModelSnapshotRequest = {
 };
 
 apiInstance.modelsSpecificModelSnapshot(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 

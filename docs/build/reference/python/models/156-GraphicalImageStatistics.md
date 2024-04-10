@@ -27,4 +27,3 @@ graphical_image_statistics_form_dict = graphical_image_statistics.from_dict(grap
 ```
 
 
-

@@ -27,4 +27,3 @@ image_analyses_form_dict = image_analyses.from_dict(image_analyses_dict)
 ```
 
 
-

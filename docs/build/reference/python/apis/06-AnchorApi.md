@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchor_associate_workstream_summary**](AnchorApi#anchor_associate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**anchor_disassociate_workstream_summary**](AnchorApi#anchor_disassociate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
-[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment | &#39;/anchor/\{anchor\}/scores/increment&#39; [POST]
-[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
-[**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update | /anchor/update [POST]
+Method | HTTP request
+------------- | -------------
+[**anchor_associate_workstream_summary**](AnchorApi#anchor_associate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
+[**anchor_disassociate_workstream_summary**](AnchorApi#anchor_disassociate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename
+[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment
+[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\}
+[**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update
 
 
-## **anchor_associate_workstream_summary**
+## **anchor_associate_workstream_summary** {#anchor_associate_workstream_summary}
 > anchor_associate_workstream_summary(anchor, workstream_summary)
 
 /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
@@ -80,7 +80,7 @@ No authorization required
 
 
 
-## **anchor_disassociate_workstream_summary**
+## **anchor_disassociate_workstream_summary** {#anchor_disassociate_workstream_summary}
 > anchor_disassociate_workstream_summary(anchor, workstream_summary)
 
 /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **anchor_rename**
+## **anchor_rename** {#anchor_rename}
 > Anchor anchor_rename(anchor, transferables=transferables)
 
 /anchor/\{anchor\}/rename [POST]
@@ -219,7 +219,7 @@ No authorization required
 
 
 
-## **anchor_scores_increment**
+## **anchor_scores_increment** {#anchor_scores_increment}
 > anchor_scores_increment(anchor, seeded_score_increment=seeded_score_increment)
 
 '/anchor/\{anchor\}/scores/increment' [POST]
@@ -288,7 +288,7 @@ No authorization required
 
 
 
-## **anchor_specific_anchor_snapshot**
+## **anchor_specific_anchor_snapshot** {#anchor_specific_anchor_snapshot}
 > Anchor anchor_specific_anchor_snapshot(anchor, transferables=transferables)
 
 /anchor/\{anchor\} [GET]
@@ -359,7 +359,7 @@ No authorization required
 
 
 
-## **anchor_update**
+## **anchor_update** {#anchor_update}
 > Anchor anchor_update(transferables=transferables, anchor=anchor)
 
 /anchor/update [POST]

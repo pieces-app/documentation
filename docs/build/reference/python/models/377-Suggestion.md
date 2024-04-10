@@ -32,4 +32,3 @@ suggestion_form_dict = suggestion.from_dict(suggestion_dict)
 ```
 
 
-

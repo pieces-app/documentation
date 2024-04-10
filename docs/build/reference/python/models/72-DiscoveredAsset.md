@@ -32,4 +32,3 @@ discovered_asset_form_dict = discovered_asset.from_dict(discovered_asset_dict)
 ```
 
 
-

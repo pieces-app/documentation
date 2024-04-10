@@ -1,10 +1,5 @@
 # Hint API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
-## **hintScoresIncrement**
+## **hintScoresIncrement** {#hintscoresincrement}
 > hintScoresIncrement(hint, seededScoreIncrement)
 
 '/hint/\{hint\}/scores/increment' [POST]
@@ -23,7 +18,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintApi();
 final hint = hint_example; // String | This is a specific hint uuid
@@ -58,7 +53,7 @@ No authorization required
 
 
 
-## **hintSpecificHintSnapshot**
+## **hintSpecificHintSnapshot** {#hintspecifichintsnapshot}
 > Hint hintSpecificHintSnapshot(hint)
 
 /hint/\{hint\} [POST]
@@ -67,7 +62,7 @@ This will get a snapshot of a specific hint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintApi();
 final hint = hint_example; // String | This is a specific hint uuid
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **hintUpdate**
+## **hintUpdate** {#hintupdate}
 > Hint hintUpdate(hint)
 
 /hint/update [POST]
@@ -110,7 +105,7 @@ This will update a specific hint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintApi();
 final hint = Hint(); // Hint | 

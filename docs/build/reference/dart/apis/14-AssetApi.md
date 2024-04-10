@@ -1,39 +1,36 @@
 # Asset API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
 [**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
+[**assetAssociateWorkstreamSummary**](AssetApi#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
 [**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 [**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
+[**assetDisassociateWorkstreamSummary**](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
 [**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
 [**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
-[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | '/asset/\{asset\}/scores/increment' [POST]
+[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | /asset/\{asset\}/scores/increment [POST]
 [**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
 [**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
 [**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
 [**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
-[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | [GET] /asset/\{asset\}/export
+[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export | /asset/\{asset\}/export [GET]
 [**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
 
 
-## **assetAssociateTag**
+## **assetAssociateTag** {#assetassociatetag}
 > assetAssociateTag(asset, tag)
 
 /asset/\{asset\}/tags/associate/\{tag\} [POST]
 
-This will associate a tag with a asset. This will do the same thing as the tag equivilant.
+Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -68,16 +65,16 @@ No authorization required
 
 
 
-## **assetAssociateWebsite**
+## **assetAssociateWebsite** {#assetassociatewebsite}
 > assetAssociateWebsite(asset, website)
 
 /asset/\{asset\}/websites/associate/\{website\} [POST]
 
-This will associate a website with a asset. This will do the same thing as the website equivilant.
+Associates a website with an asset. It performs the same action as its website equivalent.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -112,16 +109,60 @@ No authorization required
 
 
 
-## **assetDisassociateTag**
+## **assetAssociateWorkstreamSummary** {#assetassociateworkstreamsummary}
+> assetAssociateWorkstreamSummary(asset, workstreamSummary)
+
+/asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+
+This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+```dart
+import 'package:core_openapi/api.dart';
+
+final api_instance = AssetApi();
+final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
+final workstreamSummary = workstreamSummary_example; // String | This is a identifier that is used to identify a specific workstream_summary.
+
+try {
+    api_instance.assetAssociateWorkstreamSummary(asset, workstreamSummary);
+} catch (e) {
+    print('Exception when calling AssetApi->assetAssociateWorkstreamSummary: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **asset** | **String**| The id (uuid) of the asset that you are trying to access. | 
+ **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+## **assetDisassociateTag** {#assetdisassociatetag}
 > assetDisassociateTag(tag, asset)
 
 /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 
-This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivilant.
+Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final tag = tag_example; // String | tag id
@@ -156,16 +197,16 @@ No authorization required
 
 
 
-## **assetDisassociateWebsite**
+## **assetDisassociateWebsite** {#assetdisassociatewebsite}
 > assetDisassociateWebsite(website, asset)
 
 /asset/\{asset\}/websites/disassociate/\{website\} [POST]
 
-This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivilant.
+Disassociates a website from an asset. It performs the same action as the website equivalent.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final website = website_example; // String | website id
@@ -200,16 +241,60 @@ No authorization required
 
 
 
-## **assetFormats**
+## **assetDisassociateWorkstreamSummary** {#assetdisassociateworkstreamsummary}
+> assetDisassociateWorkstreamSummary(asset, workstreamSummary)
+
+/asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+
+This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
+
+### Example
+```dart
+import 'package:core_openapi/api.dart';
+
+final api_instance = AssetApi();
+final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
+final workstreamSummary = workstreamSummary_example; // String | This is a identifier that is used to identify a specific workstream_summary.
+
+try {
+    api_instance.assetDisassociateWorkstreamSummary(asset, workstreamSummary);
+} catch (e) {
+    print('Exception when calling AssetApi->assetDisassociateWorkstreamSummary: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **asset** | **String**| The id (uuid) of the asset that you are trying to access. | 
+ **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+## **assetFormats** {#assetformats}
 > Formats assetFormats(asset, transferables)
 
 /asset/\{asset\}/formats [GET] Scoped To Asset
 
-Get the formats for a given asset.
+Retrieves the formats available for a specified asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -245,16 +330,16 @@ No authorization required
 
 
 
-## **assetReclassify**
+## **assetReclassify** {#assetreclassify}
 > Asset assetReclassify(transferables, assetReclassification)
 
 /asset/reclassify [POST]
 
-This will update the classification of this asset to the proper classification.
+Retrieves the formats available for a specified asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -290,16 +375,16 @@ No authorization required
 
 
 
-## **assetScoresIncrement**
+## **assetScoresIncrement** {#assetscoresincrement}
 > assetScoresIncrement(asset, seededScoreIncrement)
 
-'/asset/\{asset\}/scores/increment' [POST]
+/asset/\{asset\}/scores/increment [POST]
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -334,16 +419,16 @@ No authorization required
 
 
 
-## **assetSnapshot**
+## **assetSnapshot** {#assetsnapshot}
 > Asset assetSnapshot(asset, transferables)
 
 /asset/\{asset\} [GET] Scoped To Asset
 
-Get the snapshot of a specific asset.
+Retrieves the snapshot of a specific asset
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -379,16 +464,16 @@ No authorization required
 
 
 
-## **assetSnapshotPost**
+## **assetSnapshotPost** {#assetsnapshotpost}
 > Asset assetSnapshotPost(asset, transferables, seededAccessor)
 
 /asset/\{asset\} [POST] Scoped to an Asset
 
-Get the snapshot of a specific asset. by passing over as well the user who is getting the snapshot.
+Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -426,16 +511,16 @@ No authorization required
 
 
 
-## **assetSpecificAssetActivities**
+## **assetSpecificAssetActivities** {#assetspecificassetactivities}
 > Activities assetSpecificAssetActivities(asset, transferables)
 
 /asset/\{asset\}/activities [GET]
 
-This will get a specific asset's activity events
+Retrieves activity events specific to the given asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -471,16 +556,16 @@ No authorization required
 
 
 
-## **assetSpecificAssetConversations**
+## **assetSpecificAssetConversations** {#assetspecificassetconversations}
 > Conversations assetSpecificAssetConversations(asset, transferables)
 
 /asset/\{asset\}/conversations [GET]
 
-This will get a specific asset's conversations
+Retrieves conversations specific to the given asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -516,16 +601,16 @@ No authorization required
 
 
 
-## **assetSpecificAssetExport**
+## **assetSpecificAssetExport** {#assetspecificassetexport}
 > ExportedAsset assetSpecificAssetExport(asset, exportType)
 
-[GET] /asset/\{asset\}/export
+/asset/\{asset\}/export [GET]
 
-This will return a export version of your asset.
+Retrieves an export version of the specified asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final asset = 2254f2c8-5797-40e8-ac56-41166dc0e159; // String | The id (uuid) of the asset that you are trying to access.
@@ -561,20 +646,20 @@ No authorization required
 
 
 
-## **assetUpdate**
+## **assetUpdate** {#assetupdate}
 > Asset assetUpdate(transferables, asset)
 
 /asset/update [POST] Scoped to Asset
 
-This endpoint will accept an Asset that the user wants to update, and will return the a full Asset that was updated!
+Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AssetApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
-final asset = Asset(); // Asset | This is the updated Asset that needs to be updated in our db.
+final asset = Asset(); // Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
 try {
     final result = api_instance.assetUpdate(transferables, asset);
@@ -589,7 +674,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **asset** | [**Asset**](../models/Asset)| This is the updated Asset that needs to be updated in our db. | [optional] 
+ **asset** | [**Asset**](../models/Asset)| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. | [optional] 
 
 ### Return type
 

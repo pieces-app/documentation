@@ -37,4 +37,3 @@ tracked_asset_event_metadata_form_dict = tracked_asset_event_metadata.from_dict(
 ```
 
 
-

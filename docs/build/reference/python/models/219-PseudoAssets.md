@@ -28,4 +28,3 @@ pseudo_assets_form_dict = pseudo_assets.from_dict(pseudo_assets_dict)
 ```
 
 
-

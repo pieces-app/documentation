@@ -27,4 +27,3 @@ seeded_tracked_assets_event_metadata_form_dict = seeded_tracked_assets_event_met
 ```
 
 
-

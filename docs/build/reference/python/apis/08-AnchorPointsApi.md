@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchor_points_create_new_anchor_point**](AnchorPointsApi#anchor_points_create_new_anchor_point) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchor_points_delete_specific_anchor_point**](AnchorPointsApi#anchor_points_delete_specific_anchor_point) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
-[**anchor_points_snapshot**](AnchorPointsApi#anchor_points_snapshot) | **GET** /anchor_points | /anchor_points [GET]
+Method | HTTP request
+------------- | -------------
+[**anchor_points_create_new_anchor_point**](AnchorPointsApi#anchor_points_create_new_anchor_point) | **POST** /anchor_points/create
+[**anchor_points_delete_specific_anchor_point**](AnchorPointsApi#anchor_points_delete_specific_anchor_point) | **POST** /anchor_points/\{anchor_point\}/delete
+[**anchor_points_snapshot**](AnchorPointsApi#anchor_points_snapshot) | **GET** /anchor_points
 
 
-## **anchor_points_create_new_anchor_point**
+## **anchor_points_create_new_anchor_point** {#anchor_points_create_new_anchor_point}
 > AnchorPoint anchor_points_create_new_anchor_point(transferables=transferables, seeded_anchor_point=seeded_anchor_point)
 
 /anchor_points/create [POST]
@@ -81,7 +81,7 @@ No authorization required
 
 
 
-## **anchor_points_delete_specific_anchor_point**
+## **anchor_points_delete_specific_anchor_point** {#anchor_points_delete_specific_anchor_point}
 > anchor_points_delete_specific_anchor_point(anchor_point)
 
 /anchor_points/\{anchor_point\}/delete [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **anchor_points_snapshot**
+## **anchor_points_snapshot** {#anchor_points_snapshot}
 > AnchorPoints anchor_points_snapshot(transferables=transferables)
 
 /anchor_points [GET]

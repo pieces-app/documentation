@@ -1,10 +1,5 @@
 # Metrics API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
-## **getMetricsFormats**
+## **getMetricsFormats** {#getmetricsformats}
 > FormatsMetrics getMetricsFormats()
 
 /metrics/formats [GET]
@@ -22,7 +17,7 @@ This is going to get a snapshot of our FormatsMetrics
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = MetricsApi();
 
@@ -52,7 +47,7 @@ No authorization required
 
 
 
-## **metricsFormatsOrdered**
+## **metricsFormatsOrdered** {#metricsformatsordered}
 > OrderedMetrics metricsFormatsOrdered()
 
 /metrics/formats/ordered [GET]
@@ -61,7 +56,7 @@ This will return a list of code formats in desc order from most to least formats
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = MetricsApi();
 

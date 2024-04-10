@@ -2,34 +2,34 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**conversation_associate_anchor**](ConversationApi#conversation_associate_anchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
-[**conversation_associate_asset**](ConversationApi#conversation_associate_asset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
-[**conversation_associate_grounding_temporal_range_workstream**](ConversationApi#conversation_associate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
-[**conversation_associate_website**](ConversationApi#conversation_associate_website) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
-[**conversation_associate_workstream_summary**](ConversationApi#conversation_associate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**conversation_disassociate_anchor**](ConversationApi#conversation_disassociate_anchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
-[**conversation_disassociate_asset**](ConversationApi#conversation_disassociate_asset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
-[**conversation_disassociate_grounding_temporal_range_workstream**](ConversationApi#conversation_disassociate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
-[**conversation_disassociate_website**](ConversationApi#conversation_disassociate_website) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
-[**conversation_disassociate_workstream_summary**](ConversationApi#conversation_disassociate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**conversation_get_specific_conversation**](ConversationApi#conversation_get_specific_conversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
-[**conversation_grounding_messages_associate_message**](ConversationApi#conversation_grounding_messages_associate_message) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
-[**conversation_grounding_messages_disassociate_message**](ConversationApi#conversation_grounding_messages_disassociate_message) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
-[**conversation_scores_increment**](ConversationApi#conversation_scores_increment) | **POST** /conversation/\{conversation\}/scores/increment | &#39;/conversation/\{conversation\}/scores/increment&#39; [POST]
-[**conversation_specific_conversation_messages**](ConversationApi#conversation_specific_conversation_messages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
-[**conversation_specific_conversation_rename**](ConversationApi#conversation_specific_conversation_rename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
-[**conversation_summarize**](ConversationApi#conversation_summarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
-[**conversation_update**](ConversationApi#conversation_update) | **POST** /conversation/update | /conversation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**conversation_associate_anchor**](ConversationApi#conversation_associate_anchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
+[**conversation_associate_asset**](ConversationApi#conversation_associate_asset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
+[**conversation_associate_grounding_temporal_range_workstream**](ConversationApi#conversation_associate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
+[**conversation_associate_website**](ConversationApi#conversation_associate_website) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
+[**conversation_associate_workstream_summary**](ConversationApi#conversation_associate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
+[**conversation_disassociate_anchor**](ConversationApi#conversation_disassociate_anchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
+[**conversation_disassociate_asset**](ConversationApi#conversation_disassociate_asset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
+[**conversation_disassociate_grounding_temporal_range_workstream**](ConversationApi#conversation_disassociate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
+[**conversation_disassociate_website**](ConversationApi#conversation_disassociate_website) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
+[**conversation_disassociate_workstream_summary**](ConversationApi#conversation_disassociate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**conversation_get_specific_conversation**](ConversationApi#conversation_get_specific_conversation) | **GET** /conversation/\{conversation\}
+[**conversation_grounding_messages_associate_message**](ConversationApi#conversation_grounding_messages_associate_message) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
+[**conversation_grounding_messages_disassociate_message**](ConversationApi#conversation_grounding_messages_disassociate_message) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
+[**conversation_scores_increment**](ConversationApi#conversation_scores_increment) | **POST** /conversation/\{conversation\}/scores/increment
+[**conversation_specific_conversation_messages**](ConversationApi#conversation_specific_conversation_messages) | **GET** /conversation/\{conversation\}/messages
+[**conversation_specific_conversation_rename**](ConversationApi#conversation_specific_conversation_rename) | **POST** /conversation/\{conversation\}/rename
+[**conversation_summarize**](ConversationApi#conversation_summarize) | **POST** /conversation/\{conversation\}/summarize
+[**conversation_update**](ConversationApi#conversation_update) | **POST** /conversation/update
 
 
-## **conversation_associate_anchor**
+## **conversation_associate_anchor** {#conversation_associate_anchor}
 > conversation_associate_anchor(conversation, anchor)
 
 /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
 
-This will update both the anchor and the conversation.  and associate the 2 together
+Updates both the anchor and the conversation, associating them together.
 
 ### Example
 
@@ -92,12 +92,12 @@ No authorization required
 
 
 
-## **conversation_associate_asset**
+## **conversation_associate_asset** {#conversation_associate_asset}
 > conversation_associate_asset(conversation, asset)
 
 /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
 
-This will update both the asset and the conversation.  and associate the 2 together
+Updates both the asset and the conversation, associating the two together.
 
 ### Example
 
@@ -160,7 +160,7 @@ No authorization required
 
 
 
-## **conversation_associate_grounding_temporal_range_workstream**
+## **conversation_associate_grounding_temporal_range_workstream** {#conversation_associate_grounding_temporal_range_workstream}
 > conversation_associate_grounding_temporal_range_workstream(conversation, range)
 
 /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
@@ -228,12 +228,12 @@ No authorization required
 
 
 
-## **conversation_associate_website**
+## **conversation_associate_website** {#conversation_associate_website}
 > conversation_associate_website(conversation, website)
 
 /conversation/\{conversation\}/websites/associate/\{website\} [POST]
 
-This will update both the website and the conversation.  and associate the 2 together
+Updates both the website and the conversation, and associate them together.
 
 ### Example
 
@@ -296,7 +296,7 @@ No authorization required
 
 
 
-## **conversation_associate_workstream_summary**
+## **conversation_associate_workstream_summary** {#conversation_associate_workstream_summary}
 > conversation_associate_workstream_summary(conversation, workstream_summary)
 
 /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
@@ -364,12 +364,12 @@ No authorization required
 
 
 
-## **conversation_disassociate_anchor**
+## **conversation_disassociate_anchor** {#conversation_disassociate_anchor}
 > conversation_disassociate_anchor(conversation, anchor)
 
 /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
 
-This will update both the anchor and the conversation.  and delete(disassociate) the 2 together
+Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
 ### Example
 
@@ -432,12 +432,12 @@ No authorization required
 
 
 
-## **conversation_disassociate_asset**
+## **conversation_disassociate_asset** {#conversation_disassociate_asset}
 > conversation_disassociate_asset(conversation, asset)
 
 /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
 
-This will update both the asset and the conversation.  and delete(disassociate) the 2.
+Updates both the asset and the conversation, effectively disassociating them.
 
 ### Example
 
@@ -500,7 +500,7 @@ No authorization required
 
 
 
-## **conversation_disassociate_grounding_temporal_range_workstream**
+## **conversation_disassociate_grounding_temporal_range_workstream** {#conversation_disassociate_grounding_temporal_range_workstream}
 > conversation_disassociate_grounding_temporal_range_workstream(conversation, range)
 
 /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
@@ -568,12 +568,12 @@ No authorization required
 
 
 
-## **conversation_disassociate_website**
+## **conversation_disassociate_website** {#conversation_disassociate_website}
 > conversation_disassociate_website(conversation, website)
 
 /website/\{website\}/websites/disassociate/\{website\} [POST]
 
-This will enable us to dissassociate a conversation from a website.
+Allows us to disassociate a conversation from a specific website
 
 ### Example
 
@@ -636,7 +636,7 @@ No authorization required
 
 
 
-## **conversation_disassociate_workstream_summary**
+## **conversation_disassociate_workstream_summary** {#conversation_disassociate_workstream_summary}
 > conversation_disassociate_workstream_summary(conversation, workstream_summary)
 
 /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
@@ -704,12 +704,12 @@ No authorization required
 
 
 
-## **conversation_get_specific_conversation**
+## **conversation_get_specific_conversation** {#conversation_get_specific_conversation}
 > Conversation conversation_get_specific_conversation(conversation, transferables=transferables)
 
 /conversation/\{conversation\} [GET]
 
-This will get a specific conversation.
+Retrieves a specific conversation.
 
 ### Example
 
@@ -775,12 +775,12 @@ No authorization required
 
 
 
-## **conversation_grounding_messages_associate_message**
+## **conversation_grounding_messages_associate_message** {#conversation_grounding_messages_associate_message}
 > conversation_grounding_messages_associate_message(conversation, message)
 
 /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
 
-This will save the grounding context for a conversation. This will enable us to associate a message to the conversation.grounding object.
+Stores the grounding context for a conversation. It allows to associate a message with the conversation's grounding object, facilitating contextual understanding and management of the conversation.
 
 ### Example
 
@@ -843,12 +843,12 @@ No authorization required
 
 
 
-## **conversation_grounding_messages_disassociate_message**
+## **conversation_grounding_messages_disassociate_message** {#conversation_grounding_messages_disassociate_message}
 > conversation_grounding_messages_disassociate_message(conversation, message)
 
 /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
 
-This will remove specific grounding context for a conversation. This will enable us to dissassociate a message from the conversation.grounding object.
+Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation's grounding object.
 
 ### Example
 
@@ -911,12 +911,12 @@ No authorization required
 
 
 
-## **conversation_scores_increment**
+## **conversation_scores_increment** {#conversation_scores_increment}
 > conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
 
 '/conversation/\{conversation\}/scores/increment' [POST]
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
 ### Example
 
@@ -980,12 +980,12 @@ No authorization required
 
 
 
-## **conversation_specific_conversation_messages**
+## **conversation_specific_conversation_messages** {#conversation_specific_conversation_messages}
 > ConversationMessages conversation_specific_conversation_messages(conversation, transferables=transferables)
 
 /conversation/\{conversation\}/messages [GET]
 
-This will get a specific conversations messages
+Retrieves messages specific to a particular conversation.
 
 ### Example
 
@@ -1051,12 +1051,12 @@ No authorization required
 
 
 
-## **conversation_specific_conversation_rename**
+## **conversation_specific_conversation_rename** {#conversation_specific_conversation_rename}
 > Conversation conversation_specific_conversation_rename(conversation, transferables=transferables)
 
 /conversation/\{conversation\}/rename [POST]
 
-This will take a specific converssation and it will rename using ML.
+Renames a specific conversation using machine learning (ML) techniques.
 
 ### Example
 
@@ -1122,12 +1122,12 @@ No authorization required
 
 
 
-## **conversation_summarize**
+## **conversation_summarize** {#conversation_summarize}
 > ConversationSummarizeOutput conversation_summarize(conversation, conversation_summarize_input=conversation_summarize_input)
 
 /conversation/\{conversation\}/summarize [POST]
 
-This will take a current conversation and create a summary of the conversation and save it as an annotation on the conversation.  will return the annotation reference used as the summary.
+Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
 ### Example
 
@@ -1194,12 +1194,12 @@ No authorization required
 
 
 
-## **conversation_update**
+## **conversation_update** {#conversation_update}
 > Conversation conversation_update(transferables=transferables, conversation=conversation)
 
 /conversation/update [POST]
 
-This will update a specific conversation.
+Updates a specific conversation.
 
 ### Example
 

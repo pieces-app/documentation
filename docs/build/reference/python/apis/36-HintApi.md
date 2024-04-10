@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**hint_scores_increment**](HintApi#hint_scores_increment) | **POST** /hint/\{hint\}/scores/increment | &#39;/hint/\{hint\}/scores/increment&#39; [POST]
-[**hint_specific_hint_snapshot**](HintApi#hint_specific_hint_snapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
-[**hint_update**](HintApi#hint_update) | **POST** /hint/update | /hint/update [POST]
+Method | HTTP request
+------------- | -------------
+[**hint_scores_increment**](HintApi#hint_scores_increment) | **POST** /hint/\{hint\}/scores/increment
+[**hint_specific_hint_snapshot**](HintApi#hint_specific_hint_snapshot) | **GET** /hint/\{hint\}
+[**hint_update**](HintApi#hint_update) | **POST** /hint/update
 
 
-## **hint_scores_increment**
+## **hint_scores_increment** {#hint_scores_increment}
 > hint_scores_increment(hint, seeded_score_increment=seeded_score_increment)
 
 '/hint/\{hint\}/scores/increment' [POST]
@@ -78,7 +78,7 @@ No authorization required
 
 
 
-## **hint_specific_hint_snapshot**
+## **hint_specific_hint_snapshot** {#hint_specific_hint_snapshot}
 > Hint hint_specific_hint_snapshot(hint)
 
 /hint/\{hint\} [POST]
@@ -147,7 +147,7 @@ No authorization required
 
 
 
-## **hint_update**
+## **hint_update** {#hint_update}
 > Hint hint_update(hint=hint)
 
 /hint/update [POST]

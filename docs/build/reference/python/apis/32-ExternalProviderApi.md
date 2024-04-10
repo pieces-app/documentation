@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**external_provider_api_key_create**](ExternalProviderApi#external_provider_api_key_create) | **POST** /external_provider/api_key/create | /external_provider/api_key/create [POST]
-[**external_provider_api_key_delete**](ExternalProviderApi#external_provider_api_key_delete) | **POST** /external_provider/api_key/delete | /external_provider/api_key/delete [POST]
-[**external_provider_api_key_update**](ExternalProviderApi#external_provider_api_key_update) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
+Method | HTTP request
+------------- | -------------
+[**external_provider_api_key_create**](ExternalProviderApi#external_provider_api_key_create) | **POST** /external_provider/api_key/create
+[**external_provider_api_key_delete**](ExternalProviderApi#external_provider_api_key_delete) | **POST** /external_provider/api_key/delete
+[**external_provider_api_key_update**](ExternalProviderApi#external_provider_api_key_update) | **POST** /external_provider/api_key/update
 
 
-## **external_provider_api_key_create**
+## **external_provider_api_key_create** {#external_provider_api_key_create}
 > CreatedExternalProviderApiKey external_provider_api_key_create(precreated_external_provider_api_key=precreated_external_provider_api_key)
 
 /external_provider/api_key/create [POST]
@@ -75,12 +75,12 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
 
 
-## **external_provider_api_key_delete**
+## **external_provider_api_key_delete** {#external_provider_api_key_delete}
 > DeletedExternalProviderApiKey external_provider_api_key_delete(predeleted_external_provider_api_key=predeleted_external_provider_api_key)
 
 /external_provider/api_key/delete [POST]
@@ -146,12 +146,12 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
 
 
-## **external_provider_api_key_update**
+## **external_provider_api_key_update** {#external_provider_api_key_update}
 > UpdatedExternalProviderApiKey external_provider_api_key_update(preupdated_external_provider_api_key=preupdated_external_provider_api_key)
 
 /external_provider/api_key/update [POST]
@@ -217,7 +217,7 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
 

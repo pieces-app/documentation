@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allocations_connect_new_cloud**](AllocationsApi#allocations_connect_new_cloud) | **POST** /allocations/connect | /allocations/connect [POST]
-[**allocations_create_new_allocation**](AllocationsApi#allocations_create_new_allocation) | **POST** /allocations/create | /allocations/create [POST]
-[**allocations_delete_allocation**](AllocationsApi#allocations_delete_allocation) | **POST** /allocations/delete | /allocations/delete [POST]
-[**allocations_disconnect_cloud**](AllocationsApi#allocations_disconnect_cloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
-[**allocations_reconnect_cloud**](AllocationsApi#allocations_reconnect_cloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
-[**allocations_snapshot**](AllocationsApi#allocations_snapshot) | **GET** /allocations | /allocations [GET]
+Method | HTTP request
+------------- | -------------
+[**allocations_connect_new_cloud**](AllocationsApi#allocations_connect_new_cloud) | **POST** /allocations/connect
+[**allocations_create_new_allocation**](AllocationsApi#allocations_create_new_allocation) | **POST** /allocations/create
+[**allocations_delete_allocation**](AllocationsApi#allocations_delete_allocation) | **POST** /allocations/delete
+[**allocations_disconnect_cloud**](AllocationsApi#allocations_disconnect_cloud) | **POST** /allocations/disconnect
+[**allocations_reconnect_cloud**](AllocationsApi#allocations_reconnect_cloud) | **POST** /allocations/reconnect
+[**allocations_snapshot**](AllocationsApi#allocations_snapshot) | **GET** /allocations
 
 
-## **allocations_connect_new_cloud**
+## **allocations_connect_new_cloud** {#allocations_connect_new_cloud}
 > AllocationCloud allocations_connect_new_cloud(user_profile=user_profile)
 
 /allocations/connect [POST]
@@ -83,7 +83,7 @@ No authorization required
 
 
 
-## **allocations_create_new_allocation**
+## **allocations_create_new_allocation** {#allocations_create_new_allocation}
 > AllocationCloud allocations_create_new_allocation(allocation_cloud=allocation_cloud)
 
 /allocations/create [POST]
@@ -152,7 +152,7 @@ No authorization required
 
 
 
-## **allocations_delete_allocation**
+## **allocations_delete_allocation** {#allocations_delete_allocation}
 > str allocations_delete_allocation(allocation_cloud=allocation_cloud)
 
 /allocations/delete [POST]
@@ -221,7 +221,7 @@ No authorization required
 
 
 
-## **allocations_disconnect_cloud**
+## **allocations_disconnect_cloud** {#allocations_disconnect_cloud}
 > str allocations_disconnect_cloud(allocation_cloud=allocation_cloud)
 
 /allocations/disconnect [POST]
@@ -290,7 +290,7 @@ No authorization required
 
 
 
-## **allocations_reconnect_cloud**
+## **allocations_reconnect_cloud** {#allocations_reconnect_cloud}
 > AllocationCloud allocations_reconnect_cloud(allocation_cloud=allocation_cloud)
 
 /allocations/reconnect [POST]
@@ -360,7 +360,7 @@ No authorization required
 
 
 
-## **allocations_snapshot**
+## **allocations_snapshot** {#allocations_snapshot}
 > Allocations allocations_snapshot()
 
 /allocations [GET]
@@ -401,7 +401,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

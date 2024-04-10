@@ -23,7 +23,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { FlattenedConversationMessage } from '@pieces.app/pieces-os-client';
+import { FlattenedConversationMessage } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: FlattenedConversationMessage = {
@@ -39,17 +39,17 @@ const example: FlattenedConversationMessage = {
     "role": null,
     "score": null,
     "annotations": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedConversationMessage;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as FlattenedConversationMessage
+console.log(exampleParsed)
 ```
 
 

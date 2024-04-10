@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**get_metrics_formats**](MetricsApi#get_metrics_formats) | **GET** /metrics/formats | /metrics/formats [GET]
-[**metrics_formats_ordered**](MetricsApi#metrics_formats_ordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
+Method | HTTP request
+------------- | -------------
+[**get_metrics_formats**](MetricsApi#get_metrics_formats) | **GET** /metrics/formats
+[**metrics_formats_ordered**](MetricsApi#metrics_formats_ordered) | **GET** /metrics/formats/ordered
 
 
-## **get_metrics_formats**
+## **get_metrics_formats** {#get_metrics_formats}
 > FormatsMetrics get_metrics_formats()
 
 /metrics/formats [GET]
@@ -49,7 +49,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -72,7 +72,7 @@ No authorization required
 
 
 
-## **metrics_formats_ordered**
+## **metrics_formats_ordered** {#metrics_formats_ordered}
 > OrderedMetrics metrics_formats_ordered()
 
 /metrics/formats/ordered [GET]
@@ -113,7 +113,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

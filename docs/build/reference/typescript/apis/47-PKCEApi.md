@@ -4,14 +4,14 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**clearPKCE**](PKCEApi#clearpkce) | **POST** /pkce/clear
-[**generateCode**](PKCEApi#generatecode) | **POST** /pkce/code
-[**generateToken**](PKCEApi#generatetoken) | **POST** /pkce/token
-[**getChallenge**](PKCEApi#getchallenge) | **GET** /pkce/challenge
-[**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code
+[**clearPKCE****](PKCEApi#clearpkce) | **POST** /pkce/clear
+[**generateCode****](PKCEApi#generatecode) | **POST** /pkce/code
+[**generateToken****](PKCEApi#generatetoken) | **POST** /pkce/token
+[**getChallenge****](PKCEApi#getchallenge) | **GET** /pkce/challenge
+[**respondWithCode****](PKCEApi#respondwithcode) | **POST** /pkce/response/code
 
 
-## **clearPKCE**
+## **clearPKCE** {#clearpkce}
 > clearPKCE()
 
 This is a function to Clear a PKCE Authentication Flow
@@ -21,16 +21,16 @@ This is a function to Clear a PKCE Authentication Flow
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PKCEApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PKCEApi(configuration)
 
 apiInstance.clearPKCE().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -48,7 +48,7 @@ void (empty response body)
 |-------------|-------------|------------------
 **204** | No Content |  -  |
 
-## **generateCode**
+## **generateCode** {#generatecode}
 > PKCE generateCode()
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
@@ -58,8 +58,8 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PKCEApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.GenerateCodeRequest = {
     // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
@@ -67,14 +67,14 @@ const body: Pieces.GenerateCodeRequest = {
 };
 
 apiInstance.generateCode(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededPKCE** | **SeededPKCE**| All of the properties that the client might want to send over to authorize a PKCE Code Flow |
 
 
@@ -93,7 +93,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **generateToken**
+## **generateToken** {#generatetoken}
 > PKCE generateToken()
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
@@ -103,8 +103,8 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PKCEApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.GenerateTokenRequest = {
     // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
@@ -112,14 +112,14 @@ const body: Pieces.GenerateTokenRequest = {
 };
 
 apiInstance.generateToken(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tokenizedPKCE** | **TokenizedPKCE**| The needed properties to exchange a PKCE Code for an OAuth Token |
 
 
@@ -138,7 +138,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **getChallenge**
+## **getChallenge** {#getchallenge}
 > PKCE getChallenge()
 
 An endpoint that returns a PKCE Challenge
@@ -148,16 +148,16 @@ An endpoint that returns a PKCE Challenge
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PKCEApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PKCEApi(configuration)
 
 apiInstance.getChallenge().then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -175,7 +175,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **respondWithCode**
+## **respondWithCode** {#respondwithcode}
 > PKCE respondWithCode()
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
@@ -185,8 +185,8 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PKCEApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.RespondWithCodeRequest = {
     // string | The PKCE Code to be used to access a Token.
@@ -198,14 +198,14 @@ const body: Pieces.RespondWithCodeRequest = {
 };
 
 apiInstance.respondWithCode(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **code** | [**string**] | The PKCE Code to be used to access a Token. | defaults to undefined
  **state** | [**string**] | Likely the state that will be returned which should match the requested state as well as the nonce | defaults to undefined
  **schema** | **EmbeddedModelSchema** |  | (optional) defaults to undefined

@@ -31,4 +31,3 @@ notification_form_dict = notification.from_dict(notification_dict)
 ```
 
 
-

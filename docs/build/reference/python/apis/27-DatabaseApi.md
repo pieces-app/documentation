@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**database_export**](DatabaseApi#database_export) | **GET** /database/export | Your GET endpoint
-[**database_import**](DatabaseApi#database_import) | **POST** /database/import | /database/import [POST]
+Method | HTTP request
+------------- | -------------
+[**database_export**](DatabaseApi#database_export) | **GET** /database/export
+[**database_import**](DatabaseApi#database_import) | **POST** /database/import
 
 
-## **database_export**
+## **database_export** {#database_export}
 > ExportedDatabase database_export()
 
 Your GET endpoint
@@ -49,7 +49,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 
@@ -73,7 +73,7 @@ No authorization required
 
 
 
-## **database_import**
+## **database_import** {#database_import}
 > database_import(exported_database=exported_database)
 
 /database/import [POST]

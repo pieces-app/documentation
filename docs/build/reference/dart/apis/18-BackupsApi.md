@@ -1,10 +1,5 @@
 # Backups API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -15,7 +10,7 @@ Method | HTTP request | Description
 [**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
-## **backupsCreateNewBackup**
+## **backupsCreateNewBackup** {#backupscreatenewbackup}
 > Backup backupsCreateNewBackup(seededBackup)
 
 /backups/create [POST]
@@ -24,7 +19,7 @@ This take a local database and ensure that it is backed up to the cloud.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupsApi();
 final seededBackup = SeededBackup(); // SeededBackup | 
@@ -58,7 +53,7 @@ No authorization required
 
 
 
-## **backupsCreateNewBackupStreamed**
+## **backupsCreateNewBackupStreamed** {#backupscreatenewbackupstreamed}
 > BackupStreamedProgress backupsCreateNewBackupStreamed(seededBackup)
 
 /backups/create/streamed [POST]
@@ -67,7 +62,7 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupsApi();
 final seededBackup = SeededBackup(); // SeededBackup | 
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **backupsDeleteSpecificBackup**
+## **backupsDeleteSpecificBackup** {#backupsdeletespecificbackup}
 > backupsDeleteSpecificBackup(backup, backup2)
 
 /backups/\{backup\}/delete [POST]
@@ -110,7 +105,7 @@ This will delete a specific backup from the cloud.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupsApi();
 final backup = backup_example; // String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -145,7 +140,7 @@ No authorization required
 
 
 
-## **backupsSnapshot**
+## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
 
 /backups [GET]
@@ -154,7 +149,7 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = BackupsApi();
 

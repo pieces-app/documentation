@@ -4,20 +4,20 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**websiteAssociateAsset**](WebsiteApi#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\}
-[**websiteAssociateConversation**](WebsiteApi#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\}
-[**websiteAssociatePerson**](WebsiteApi#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\}
-[**websiteAssociateWorkstreamSummary**](WebsiteApi#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\}
-[**websiteDisassociateAsset**](WebsiteApi#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\}
-[**websiteDisassociateConversation**](WebsiteApi#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\}
-[**websiteDisassociatePerson**](WebsiteApi#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\}
-[**websiteDisassociateWorkstreamSummary**](WebsiteApi#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**websiteScoresIncrement**](WebsiteApi#websitescoresincrement) | **POST** /website/\{website\}/scores/increment
-[**websiteUpdate**](WebsiteApi#websiteupdate) | **POST** /website/update
-[**websitesSpecificWebsiteSnapshot**](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/\{website\}
+[**websiteAssociateAsset****](WebsiteApi#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\}
+[**websiteAssociateConversation****](WebsiteApi#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\}
+[**websiteAssociatePerson****](WebsiteApi#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\}
+[**websiteAssociateWorkstreamSummary****](WebsiteApi#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\}
+[**websiteDisassociateAsset****](WebsiteApi#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\}
+[**websiteDisassociateConversation****](WebsiteApi#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\}
+[**websiteDisassociatePerson****](WebsiteApi#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\}
+[**websiteDisassociateWorkstreamSummary****](WebsiteApi#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**websiteScoresIncrement****](WebsiteApi#websitescoresincrement) | **POST** /website/\{website\}/scores/increment
+[**websiteUpdate****](WebsiteApi#websiteupdate) | **POST** /website/update
+[**websitesSpecificWebsiteSnapshot****](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/\{website\}
 
 
-## **websiteAssociateAsset**
+## **websiteAssociateAsset** {#websiteassociateasset}
 > websiteAssociateAsset()
 
 This will associate a website with a asset.
@@ -27,8 +27,8 @@ This will associate a website with a asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteAssociateAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -38,14 +38,14 @@ const body: Pieces.WebsiteAssociateAssetRequest = {
 };
 
 apiInstance.websiteAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -66,7 +66,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteAssociateConversation**
+## **websiteAssociateConversation** {#websiteassociateconversation}
 > websiteAssociateConversation()
 
 This will associate a website with a conversation.
@@ -76,8 +76,8 @@ This will associate a website with a conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteAssociateConversationRequest = {
     // string | website id
@@ -87,14 +87,14 @@ const body: Pieces.WebsiteAssociateConversationRequest = {
 };
 
 apiInstance.websiteAssociateConversation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -115,7 +115,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteAssociatePerson**
+## **websiteAssociatePerson** {#websiteassociateperson}
 > websiteAssociatePerson()
 
 This will associate a website with a person.
@@ -125,8 +125,8 @@ This will associate a website with a person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteAssociatePersonRequest = {
     // string | website id
@@ -136,14 +136,14 @@ const body: Pieces.WebsiteAssociatePersonRequest = {
 };
 
 apiInstance.websiteAssociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -164,7 +164,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteAssociateWorkstreamSummary**
+## **websiteAssociateWorkstreamSummary** {#websiteassociateworkstreamsummary}
 > websiteAssociateWorkstreamSummary()
 
 This will associate a website with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -174,8 +174,8 @@ This will associate a website with a workstream summary. This will do the same t
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteAssociateWorkstreamSummaryRequest = {
     // string | website id
@@ -185,14 +185,14 @@ const body: Pieces.WebsiteAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.websiteAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -213,7 +213,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteDisassociateAsset**
+## **websiteDisassociateAsset** {#websitedisassociateasset}
 > websiteDisassociateAsset()
 
 This will enable us to dissassociate a website from a asset.
@@ -223,8 +223,8 @@ This will enable us to dissassociate a website from a asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteDisassociateAssetRequest = {
     // string | website id
@@ -234,14 +234,14 @@ const body: Pieces.WebsiteDisassociateAssetRequest = {
 };
 
 apiInstance.websiteDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -262,7 +262,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteDisassociateConversation**
+## **websiteDisassociateConversation** {#websitedisassociateconversation}
 > websiteDisassociateConversation()
 
 This will enable us to dissassociate a website from a conversation.
@@ -272,8 +272,8 @@ This will enable us to dissassociate a website from a conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteDisassociateConversationRequest = {
     // string | website id
@@ -283,14 +283,14 @@ const body: Pieces.WebsiteDisassociateConversationRequest = {
 };
 
 apiInstance.websiteDisassociateConversation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
@@ -311,7 +311,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteDisassociatePerson**
+## **websiteDisassociatePerson** {#websitedisassociateperson}
 > websiteDisassociatePerson()
 
 This will enable us to dissassociate a website from a person.
@@ -321,8 +321,8 @@ This will enable us to dissassociate a website from a person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteDisassociatePersonRequest = {
     // string | website id
@@ -332,14 +332,14 @@ const body: Pieces.WebsiteDisassociatePersonRequest = {
 };
 
 apiInstance.websiteDisassociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
@@ -360,7 +360,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteDisassociateWorkstreamSummary**
+## **websiteDisassociateWorkstreamSummary** {#websitedisassociateworkstreamsummary}
 > websiteDisassociateWorkstreamSummary()
 
 This will enable us to disassociate a website from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -370,8 +370,8 @@ This will enable us to disassociate a website from a workstream summary. This wi
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteDisassociateWorkstreamSummaryRequest = {
     // string | website id
@@ -381,14 +381,14 @@ const body: Pieces.WebsiteDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.websiteDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -409,7 +409,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteScoresIncrement**
+## **websiteScoresIncrement** {#websitescoresincrement}
 > websiteScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -419,8 +419,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteScoresIncrementRequest = {
     // string | website id
@@ -430,14 +430,14 @@ const body: Pieces.WebsiteScoresIncrementRequest = {
 };
 
 apiInstance.websiteScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **website** | [**string**] | website id | defaults to undefined
 
@@ -458,7 +458,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websiteUpdate**
+## **websiteUpdate** {#websiteupdate}
 > Website websiteUpdate()
 
 This will update a specific website.
@@ -468,8 +468,8 @@ This will update a specific website.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsiteUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -479,14 +479,14 @@ const body: Pieces.WebsiteUpdateRequest = {
 };
 
 apiInstance.websiteUpdate(body).then((data: Website) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | **Website**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -507,7 +507,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websitesSpecificWebsiteSnapshot**
+## **websitesSpecificWebsiteSnapshot** {#websitesspecificwebsitesnapshot}
 > Website websitesSpecificWebsiteSnapshot()
 
 This will get a snapshot of a single website.
@@ -517,8 +517,8 @@ This will get a snapshot of a single website.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsiteApi(configuration)
 
 const body: Pieces.WebsitesSpecificWebsiteSnapshotRequest = {
     // string | website id
@@ -528,14 +528,14 @@ const body: Pieces.WebsitesSpecificWebsiteSnapshotRequest = {
 };
 
 apiInstance.websitesSpecificWebsiteSnapshot(body).then((data: Website) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

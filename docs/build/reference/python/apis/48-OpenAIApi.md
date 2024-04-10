@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**open_ai_models_list**](OpenAIApi#open_ai_models_list) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
+Method | HTTP request
+------------- | -------------
+[**open_ai_models_list**](OpenAIApi#open_ai_models_list) | **POST** /open_ai/models/list
 
 
-## **open_ai_models_list**
+## **open_ai_models_list** {#open_ai_models_list}
 > OpenAIModelsListOutput open_ai_models_list(open_ai_models_list_input=open_ai_models_list_input)
 
 /open_ai/models/list [POST]
@@ -73,7 +73,7 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-**401** | Invalid Authentication, Incorrect API key provided or organization to use the AP |  -  |
+**401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
 
 

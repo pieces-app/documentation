@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create
-[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete
-[**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points
+[**anchorPointsCreateNewAnchorPoint****](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create
+[**anchorPointsDeleteSpecificAnchorPoint****](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete
+[**anchorPointsSnapshot****](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points
 
 
-## **anchorPointsCreateNewAnchorPoint**
+## **anchorPointsCreateNewAnchorPoint** {#anchorpointscreatenewanchorpoint}
 > AnchorPoint anchorPointsCreateNewAnchorPoint()
 
 This will create a anchorPoint.
@@ -19,8 +19,8 @@ This will create a anchorPoint.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsCreateNewAnchorPointRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -30,14 +30,14 @@ const body: Pieces.AnchorPointsCreateNewAnchorPointRequest = {
 };
 
 apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededAnchorPoint** | **SeededAnchorPoint**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -58,7 +58,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorPointsDeleteSpecificAnchorPoint**
+## **anchorPointsDeleteSpecificAnchorPoint** {#anchorpointsdeletespecificanchorpoint}
 > anchorPointsDeleteSpecificAnchorPoint()
 
 This will delete a specific anchorPoint!
@@ -68,8 +68,8 @@ This will delete a specific anchorPoint!
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsDeleteSpecificAnchorPointRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -77,14 +77,14 @@ const body: Pieces.AnchorPointsDeleteSpecificAnchorPointRequest = {
 };
 
 apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
 
@@ -104,7 +104,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **anchorPointsSnapshot**
+## **anchorPointsSnapshot** {#anchorpointssnapshot}
 > AnchorPoints anchorPointsSnapshot()
 
 This will get a snapshot of all your anchorPoints.
@@ -114,8 +114,8 @@ This will get a snapshot of all your anchorPoints.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AnchorPointsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -123,14 +123,14 @@ const body: Pieces.AnchorPointsSnapshotRequest = {
 };
 
 apiInstance.anchorPointsSnapshot(body).then((data: AnchorPoints) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

@@ -1,10 +1,5 @@
 # Allocation API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
-## **allocationSnapshot**
+## **allocationSnapshot** {#allocationsnapshot}
 > AllocationCloud allocationSnapshot(allocation)
 
 /allocation/\{allocation\} [GET]
@@ -22,7 +17,7 @@ This will get a snapshot of a specific allocation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationApi();
 final allocation = allocation_example; // String | 
@@ -56,7 +51,7 @@ No authorization required
 
 
 
-## **allocationUpdate**
+## **allocationUpdate** {#allocationupdate}
 > AllocationCloud allocationUpdate(allocationCloud)
 
 /allocation/update [POST]
@@ -65,7 +60,7 @@ This will update a specific allocation.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AllocationApi();
 final allocationCloud = AllocationCloud(); // AllocationCloud | 

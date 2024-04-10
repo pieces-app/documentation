@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\}
-[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update
+[**allocationSnapshot****](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\}
+[**allocationUpdate****](AllocationApi#allocationupdate) | **POST** /allocation/update
 
 
-## **allocationSnapshot**
+## **allocationSnapshot** {#allocationsnapshot}
 > AllocationCloud allocationSnapshot()
 
 This will get a snapshot of a specific allocation.
@@ -18,8 +18,8 @@ This will get a snapshot of a specific allocation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationApi(configuration)
 
 const body: Pieces.AllocationSnapshotRequest = {
     // string
@@ -27,14 +27,14 @@ const body: Pieces.AllocationSnapshotRequest = {
 };
 
 apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocation** | [**string**] |  | defaults to undefined
 
 
@@ -54,7 +54,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | Cloud not found. |  -  |
 
-## **allocationUpdate**
+## **allocationUpdate** {#allocationupdate}
 > AllocationCloud allocationUpdate()
 
 This will update a specific allocation.
@@ -64,8 +64,8 @@ This will update a specific allocation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AllocationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AllocationApi(configuration)
 
 const body: Pieces.AllocationUpdateRequest = {
     // AllocationCloud (optional)
@@ -73,14 +73,14 @@ const body: Pieces.AllocationUpdateRequest = {
 };
 
 apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 

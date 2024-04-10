@@ -31,4 +31,3 @@ linkify_multiple_form_dict = linkify_multiple.from_dict(linkify_multiple_dict)
 ```
 
 
-

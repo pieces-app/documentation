@@ -28,4 +28,3 @@ activities_form_dict = activities.from_dict(activities_dict)
 ```
 
 
-

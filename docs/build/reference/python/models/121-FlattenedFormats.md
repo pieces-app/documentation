@@ -28,4 +28,3 @@ flattened_formats_form_dict = flattened_formats.from_dict(flattened_formats_dict
 ```
 
 
-

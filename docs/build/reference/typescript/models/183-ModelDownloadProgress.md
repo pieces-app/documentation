@@ -14,24 +14,24 @@ Name | Type
 ## Example
 
 ```typescript
-import { ModelDownloadProgress } from '@pieces.app/pieces-os-client';
+import { ModelDownloadProgress } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: ModelDownloadProgress = {
     "schema": null,
     "status": null,
     "percentage": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ModelDownloadProgress;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as ModelDownloadProgress
+console.log(exampleParsed)
 ```
 
 

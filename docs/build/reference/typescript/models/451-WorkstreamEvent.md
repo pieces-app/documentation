@@ -20,7 +20,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { WorkstreamEvent } from '@pieces.app/pieces-os-client';
+import { WorkstreamEvent } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: WorkstreamEvent = {
@@ -33,17 +33,17 @@ const example: WorkstreamEvent = {
     "trigger": null,
     "metadata": null,
     "summaries": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as WorkstreamEvent;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as WorkstreamEvent
+console.log(exampleParsed)
 ```
 
 

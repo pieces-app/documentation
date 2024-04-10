@@ -1,10 +1,5 @@
 # MachineLearning API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -13,7 +8,7 @@ Method | HTTP request | Description
 [**segmentTechnicalLanguage**](MachineLearningApi#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
-## **personificationTechnicalLanguageGeneration**
+## **personificationTechnicalLanguageGeneration** {#personificationtechnicallanguagegeneration}
 > OnboardedPersonaDetails personificationTechnicalLanguageGeneration(preonboardedPersonaDetails)
 
 /machine_learning/text/technical_language/generators/personification [GET]
@@ -22,7 +17,7 @@ This is going to take in some personification details ie languages & personas.  
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = MachineLearningApi();
 final preonboardedPersonaDetails = PreonboardedPersonaDetails(); // PreonboardedPersonaDetails | 
@@ -56,7 +51,7 @@ No authorization required
 
 
 
-## **segmentTechnicalLanguage**
+## **segmentTechnicalLanguage** {#segmenttechnicallanguage}
 > SegmentedTechnicalLanguage segmentTechnicalLanguage(classify, unsegmentedTechnicalLanguage)
 
 /machine_learning/text/technical_language/parsers/segmentation [POST]
@@ -65,7 +60,7 @@ This is a functional endpoint that will parse a message or text in to text or co
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = MachineLearningApi();
 final classify = true; // bool | This will let us know if you want us to classifiy your code, this is default to false.

@@ -4,21 +4,21 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**applicationsExternalRelated**](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related
-[**applicationsExternalSnapshot**](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external
-[**applicationsRegister**](ApplicationsApi#applicationsregister) | **POST** /applications/register
-[**applicationsSessionClose**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close
-[**applicationsSessionOpen**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open
-[**applicationsSessionSnapshot**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\}
-[**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications
-[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\}
-[**applicationsUsageEngagementInteraction**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction
-[**applicationsUsageEngagementKeyboard**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard
-[**applicationsUsageInstallation**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation
-[**postApplicationsUsageUpdated**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated
+[**applicationsExternalRelated****](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related
+[**applicationsExternalSnapshot****](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external
+[**applicationsRegister** - (Deprecated)**](ApplicationsApi#applicationsregister) | **POST** /applications/register
+[**applicationsSessionClose** - (Deprecated)**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close
+[**applicationsSessionOpen** - (Deprecated)**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open
+[**applicationsSessionSnapshot** - (Deprecated)**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\}
+[**applicationsSnapshot****](ApplicationsApi#applicationssnapshot) | **GET** /applications
+[**applicationsSpecificApplicationSnapshot****](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\}
+[**applicationsUsageEngagementInteraction** - (Deprecated)**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction
+[**applicationsUsageEngagementKeyboard** - (Deprecated)**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard
+[**applicationsUsageInstallation** - (Deprecated)**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation
+[**postApplicationsUsageUpdated** - (Deprecated)**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated
 
 
-## **applicationsExternalRelated**
+## **applicationsExternalRelated** {#applicationsexternalrelated}
 > DetectedExternalApplications applicationsExternalRelated()
 
 Retrieves a list of external applications installed on the user\'s machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
@@ -28,16 +28,16 @@ Retrieves a list of external applications installed on the user\'s machine that 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 apiInstance.applicationsExternalRelated().then((data: DetectedExternalApplications) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -56,7 +56,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **applicationsExternalSnapshot**
+## **applicationsExternalSnapshot** {#applicationsexternalsnapshot}
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 Provides a snapshot of all external applications detected on the user\'s machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
@@ -66,16 +66,16 @@ Provides a snapshot of all external applications detected on the user\'s machine
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 apiInstance.applicationsExternalSnapshot().then((data: DetectedExternalApplications) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -94,7 +94,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **applicationsRegister**
+## **applicationsRegister** - (Deprecated) {#applicationsregister}
 > Application applicationsRegister()
 
 Registers a new application within the Pieces ecosystem.
@@ -104,8 +104,8 @@ Registers a new application within the Pieces ecosystem.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsRegisterRequest = {
     // Application | This will accept a application. (optional)
@@ -113,14 +113,14 @@ const body: Pieces.ApplicationsRegisterRequest = {
 };
 
 apiInstance.applicationsRegister(body).then((data: Application) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **application** | **Application**| This will accept a application. |
 
 
@@ -139,7 +139,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsSessionClose**
+## **applicationsSessionClose** - (Deprecated) {#applicationssessionclose}
 > Session applicationsSessionClose()
 
 Closes an active session, identified by a session UUID, marking the end of the user\'s current interaction with the Pieces application.
@@ -149,8 +149,8 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsSessionCloseRequest = {
     // string | This will accept a required session uuid. (optional)
@@ -158,14 +158,14 @@ const body: Pieces.ApplicationsSessionCloseRequest = {
 };
 
 apiInstance.applicationsSessionClose(body).then((data: Session) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **body** | **string**| This will accept a required session uuid. |
 
 
@@ -184,7 +184,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsSessionOpen**
+## **applicationsSessionOpen** - (Deprecated) {#applicationssessionopen}
 > Session applicationsSessionOpen()
 
 Initiates a new session, marking the start of a user\'s interaction with the Pieces application.
@@ -194,16 +194,16 @@ Initiates a new session, marking the start of a user\'s interaction with the Pie
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 apiInstance.applicationsSessionOpen().then((data: Session) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -221,7 +221,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsSessionSnapshot**
+## **applicationsSessionSnapshot** - (Deprecated) {#applicationssessionsnapshot}
 > Session applicationsSessionSnapshot()
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
@@ -231,8 +231,8 @@ Fetches detailed information about a specific session, identified by a session U
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsSessionSnapshotRequest = {
     // string | This is a uuid that points to a session.
@@ -240,14 +240,14 @@ const body: Pieces.ApplicationsSessionSnapshotRequest = {
 };
 
 apiInstance.applicationsSessionSnapshot(body).then((data: Session) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **session** | [**string**] | This is a uuid that points to a session. | defaults to undefined
 
 
@@ -266,7 +266,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsSnapshot**
+## **applicationsSnapshot** {#applicationssnapshot}
 > Applications applicationsSnapshot()
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
@@ -276,16 +276,16 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 apiInstance.applicationsSnapshot().then((data: Applications) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -303,7 +303,7 @@ This endpoint does not need any parameter.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsSpecificApplicationSnapshot**
+## **applicationsSpecificApplicationSnapshot** {#applicationsspecificapplicationsnapshot}
 > Application applicationsSpecificApplicationSnapshot()
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
@@ -313,8 +313,8 @@ Obtains a snapshot with information about a specific application, identified by 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsSpecificApplicationSnapshotRequest = {
     // string | This is a uuid that represents an application
@@ -322,14 +322,14 @@ const body: Pieces.ApplicationsSpecificApplicationSnapshotRequest = {
 };
 
 apiInstance.applicationsSpecificApplicationSnapshot(body).then((data: Application) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
@@ -348,7 +348,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsUsageEngagementInteraction**
+## **applicationsUsageEngagementInteraction** - (Deprecated) {#applicationsusageengagementinteraction}
 > TrackedInteractionEvent applicationsUsageEngagementInteraction()
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
@@ -358,8 +358,8 @@ Records user interaction events within applications, such as clicks or taps, to 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsUsageEngagementInteractionRequest = {
     // SeededTrackedInteractionEvent |  (optional)
@@ -367,14 +367,14 @@ const body: Pieces.ApplicationsUsageEngagementInteractionRequest = {
 };
 
 apiInstance.applicationsUsageEngagementInteraction(body).then((data: TrackedInteractionEvent) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededTrackedInteractionEvent** | **SeededTrackedInteractionEvent**|  |
 
 
@@ -393,7 +393,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsUsageEngagementKeyboard**
+## **applicationsUsageEngagementKeyboard** - (Deprecated) {#applicationsusageengagementkeyboard}
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard()
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
@@ -403,8 +403,8 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsUsageEngagementKeyboardRequest = {
     // SeededTrackedKeyboardEvent |  (optional)
@@ -412,14 +412,14 @@ const body: Pieces.ApplicationsUsageEngagementKeyboardRequest = {
 };
 
 apiInstance.applicationsUsageEngagementKeyboard(body).then((data: TrackedKeyboardEvent) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededTrackedKeyboardEvent** | **SeededTrackedKeyboardEvent**|  |
 
 
@@ -438,7 +438,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **applicationsUsageInstallation**
+## **applicationsUsageInstallation** - (Deprecated) {#applicationsusageinstallation}
 > applicationsUsageInstallation()
 
 Logs the installation events of the Pieces application.
@@ -448,8 +448,8 @@ Logs the installation events of the Pieces application.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.ApplicationsUsageInstallationRequest = {
     // TrackedApplicationInstall |  (optional)
@@ -457,14 +457,14 @@ const body: Pieces.ApplicationsUsageInstallationRequest = {
 };
 
 apiInstance.applicationsUsageInstallation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **trackedApplicationInstall** | **TrackedApplicationInstall**|  |
 
 
@@ -483,7 +483,7 @@ void (empty response body)
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **postApplicationsUsageUpdated**
+## **postApplicationsUsageUpdated** - (Deprecated) {#postapplicationsusageupdated}
 > postApplicationsUsageUpdated()
 
 Tracks updates to the Pieces application, including version changes.
@@ -493,8 +493,8 @@ Tracks updates to the Pieces application, including version changes.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ApplicationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ApplicationsApi(configuration)
 
 const body: Pieces.PostApplicationsUsageUpdatedRequest = {
     // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user. (optional)
@@ -502,14 +502,14 @@ const body: Pieces.PostApplicationsUsageUpdatedRequest = {
 };
 
 apiInstance.postApplicationsUsageUpdated(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **trackedApplicationUpdate** | **TrackedApplicationUpdate**| Sending over the previous application version, the current version, and the user. |
 
 

@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**html_share**](PieceApi#html_share) | **GET** / | / [GET]
+Method | HTTP request
+------------- | -------------
+[**html_share**](PieceApi#html_share) | **GET** /
 
 
-## **html_share**
+## **html_share** {#html_share}
 > str html_share(p)
 
 / [GET]

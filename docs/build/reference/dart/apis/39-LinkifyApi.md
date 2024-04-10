@@ -1,10 +1,5 @@
 # Linkify API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
-## **linkify**
+## **linkify** {#linkify}
 > Shares linkify(linkify)
 
 /linkify [POST]
@@ -23,7 +18,7 @@ Method | HTTP request | Description
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = LinkifyApi();
 final linkify = Linkify(); // Linkify | 
@@ -57,7 +52,7 @@ No authorization required
 
 
 
-## **linkifyMultiple**
+## **linkifyMultiple** {#linkifymultiple}
 > Shares linkifyMultiple(linkifyMultiple)
 
 /linkify/multiple [POST]
@@ -66,7 +61,7 @@ No authorization required
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = LinkifyApi();
 final linkifyMultiple = LinkifyMultiple(); // LinkifyMultiple | 
@@ -100,7 +95,7 @@ No authorization required
 
 
 
-## **linkifyShareRevoke**
+## **linkifyShareRevoke** {#linkifysharerevoke}
 > String linkifyShareRevoke(share)
 
 [POST} /linkify/\{share\}/revoke
@@ -109,7 +104,7 @@ This will revoke a link.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = LinkifyApi();
 final share = share_example; // String | 

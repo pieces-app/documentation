@@ -28,4 +28,3 @@ qgpt_question_output_form_dict = qgpt_question_output.from_dict(qgpt_question_ou
 ```
 
 
-

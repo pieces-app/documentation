@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**ranges_create_new_range**](RangesApi#ranges_create_new_range) | **POST** /ranges/create | /ranges/create [POST]
-[**ranges_delete_specific_range**](RangesApi#ranges_delete_specific_range) | **POST** /ranges/\{range\}/delete | /ranges/\{range\}/delete [POST]
-[**ranges_snapshot**](RangesApi#ranges_snapshot) | **GET** /ranges | /ranges [GET]
+Method | HTTP request
+------------- | -------------
+[**ranges_create_new_range**](RangesApi#ranges_create_new_range) | **POST** /ranges/create
+[**ranges_delete_specific_range**](RangesApi#ranges_delete_specific_range) | **POST** /ranges/\{range\}/delete
+[**ranges_snapshot**](RangesApi#ranges_snapshot) | **GET** /ranges
 
 
-## **ranges_create_new_range**
+## **ranges_create_new_range** {#ranges_create_new_range}
 > Range ranges_create_new_range(seeded_range=seeded_range)
 
 /ranges/create [POST]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **ranges_delete_specific_range**
+## **ranges_delete_specific_range** {#ranges_delete_specific_range}
 > ranges_delete_specific_range(range)
 
 /ranges/\{range\}/delete [POST]
@@ -145,7 +145,7 @@ No authorization required
 
 
 
-## **ranges_snapshot**
+## **ranges_snapshot** {#ranges_snapshot}
 > Ranges ranges_snapshot()
 
 /ranges [GET]
@@ -186,7 +186,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

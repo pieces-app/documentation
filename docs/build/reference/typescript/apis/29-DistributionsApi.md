@@ -4,12 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create
-[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
-[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions
+[**distributionsCreateNewDistribution****](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create
+[**distributionsDeleteSpecificDistribution****](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
+[**distributionsSnapshot****](DistributionsApi#distributionssnapshot) | **GET** /distributions
 
 
-## **distributionsCreateNewDistribution**
+## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
 > Distribution distributionsCreateNewDistribution()
 
 This will create a new distribution.
@@ -19,8 +19,8 @@ This will create a new distribution.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DistributionsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 const body: Pieces.DistributionsCreateNewDistributionRequest = {
     // SeededDistribution |  (optional)
@@ -28,14 +28,14 @@ const body: Pieces.DistributionsCreateNewDistributionRequest = {
 };
 
 apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededDistribution** | **SeededDistribution**|  |
 
 
@@ -55,7 +55,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **distributionsDeleteSpecificDistribution**
+## **distributionsDeleteSpecificDistribution** {#distributionsdeletespecificdistribution}
 > distributionsDeleteSpecificDistribution()
 
 This will delete a specific distribution.
@@ -65,8 +65,8 @@ This will delete a specific distribution.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DistributionsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
     // string | This is the uuid of a specific distribution.
@@ -74,14 +74,14 @@ const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
 };
 
 apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 
@@ -101,7 +101,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **distributionsSnapshot**
+## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
 
 This will get a specific snapshot of all our distributions.
@@ -111,16 +111,16 @@ This will get a specific snapshot of all our distributions.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.DistributionsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 apiInstance.distributionsSnapshot().then((data: Distributions) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

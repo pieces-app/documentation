@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**discovery_discover_assets**](DiscoveryApi#discovery_discover_assets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
-[**discovery_discover_assets_html**](DiscoveryApi#discovery_discover_assets_html) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
-[**discovery_discover_sensitives**](DiscoveryApi#discovery_discover_sensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
-[**discovery_discover_tags_related**](DiscoveryApi#discovery_discover_tags_related) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
+Method | HTTP request
+------------- | -------------
+[**discovery_discover_assets**](DiscoveryApi#discovery_discover_assets) | **POST** /discovery/discover/assets
+[**discovery_discover_assets_html**](DiscoveryApi#discovery_discover_assets_html) | **POST** /discovery/discover/assets/html
+[**discovery_discover_sensitives**](DiscoveryApi#discovery_discover_sensitives) | **POST** /discovery/discover/sensitives
+[**discovery_discover_tags_related**](DiscoveryApi#discovery_discover_tags_related) | **POST** /discovery/discover/tags/related
 
 
-## **discovery_discover_assets**
+## **discovery_discover_assets** {#discovery_discover_assets}
 > DiscoveredAssets discovery_discover_assets(automatic=automatic, seeded_discoverable_assets=seeded_discoverable_assets)
 
 /discovery/discover/assets [POST]
@@ -82,7 +82,7 @@ No authorization required
 
 
 
-## **discovery_discover_assets_html**
+## **discovery_discover_assets_html** {#discovery_discover_assets_html}
 > DiscoveredHtmlWebpages discovery_discover_assets_html(automatic=automatic, seeded_discoverable_html_webpages=seeded_discoverable_html_webpages)
 
 /discovery/discover/assets/html[POST]
@@ -154,7 +154,7 @@ No authorization required
 
 
 
-## **discovery_discover_sensitives**
+## **discovery_discover_sensitives** {#discovery_discover_sensitives}
 > DiscoveredSensitives discovery_discover_sensitives(automatic=automatic, seeded_discoverable_sensitives=seeded_discoverable_sensitives)
 
 /discovery/discover/sensitives [POST]
@@ -225,7 +225,7 @@ No authorization required
 
 
 
-## **discovery_discover_tags_related**
+## **discovery_discover_tags_related** {#discovery_discover_tags_related}
 > DiscoveredRelatedTags discovery_discover_tags_related(automatic=automatic, seeded_discoverable_related_tags=seeded_discoverable_related_tags)
 
 /discovery/discover/tags/related [POST]

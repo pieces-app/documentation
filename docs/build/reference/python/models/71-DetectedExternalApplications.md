@@ -28,4 +28,3 @@ detected_external_applications_form_dict = detected_external_applications.from_d
 ```
 
 
-

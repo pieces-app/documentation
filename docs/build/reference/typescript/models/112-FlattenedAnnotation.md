@@ -29,7 +29,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { FlattenedAnnotation } from '@pieces.app/pieces-os-client';
+import { FlattenedAnnotation } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: FlattenedAnnotation = {
@@ -51,17 +51,17 @@ const example: FlattenedAnnotation = {
     "score": null,
     "messages": null,
     "summary": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnnotation;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as FlattenedAnnotation
+console.log(exampleParsed)
 ```
 
 

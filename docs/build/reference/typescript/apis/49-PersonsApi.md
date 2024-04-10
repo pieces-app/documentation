@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
-[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create
-[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
-[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons
+[**personDisassociateAsset****](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
+[**personsCreateNewPerson****](PersonsApi#personscreatenewperson) | **POST** /persons/create
+[**personsDeletePerson****](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
+[**personsSnapshot****](PersonsApi#personssnapshot) | **GET** /persons
 
 
-## **personDisassociateAsset**
+## **personDisassociateAsset** {#persondisassociateasset}
 > personDisassociateAsset()
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
@@ -20,8 +20,8 @@ This will update both the asset and the person reference, that will remove a per
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PersonsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonDisassociateAssetRequest = {
     // string | This is a uuid that represents a person.
@@ -31,14 +31,14 @@ const body: Pieces.PersonDisassociateAssetRequest = {
 };
 
 apiInstance.personDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -59,7 +59,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **personsCreateNewPerson**
+## **personsCreateNewPerson** {#personscreatenewperson}
 > Person personsCreateNewPerson()
 
 This will create a new person.
@@ -69,8 +69,8 @@ This will create a new person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PersonsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsCreateNewPersonRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -80,14 +80,14 @@ const body: Pieces.PersonsCreateNewPersonRequest = {
 };
 
 apiInstance.personsCreateNewPerson(body).then((data: Person) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededPerson** | **SeededPerson**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -108,7 +108,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **personsDeletePerson**
+## **personsDeletePerson** {#personsdeleteperson}
 > personsDeletePerson()
 
 This will delete a specific person.
@@ -118,8 +118,8 @@ This will delete a specific person.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PersonsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsDeletePersonRequest = {
     // string | This is a uuid that represents a person.
@@ -127,14 +127,14 @@ const body: Pieces.PersonsDeletePersonRequest = {
 };
 
 apiInstance.personsDeletePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
@@ -154,7 +154,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **personsSnapshot**
+## **personsSnapshot** {#personssnapshot}
 > Persons personsSnapshot()
 
 This will get a snapshot of all of your people
@@ -164,8 +164,8 @@ This will get a snapshot of all of your people
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.PersonsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -173,14 +173,14 @@ const body: Pieces.PersonsSnapshotRequest = {
 };
 
 apiInstance.personsSnapshot(body).then((data: Persons) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 

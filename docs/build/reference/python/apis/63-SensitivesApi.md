@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**sensitives_create_new_sensitive**](SensitivesApi#sensitives_create_new_sensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
-[**sensitives_snapshot**](SensitivesApi#sensitives_snapshot) | **GET** /sensitives | /sensitives [GET]
+Method | HTTP request
+------------- | -------------
+[**sensitives_create_new_sensitive**](SensitivesApi#sensitives_create_new_sensitive) | **POST** /sensitives/create
+[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/\{sensitive\}/delete
+[**sensitives_snapshot**](SensitivesApi#sensitives_snapshot) | **GET** /sensitives
 
 
-## **sensitives_create_new_sensitive**
+## **sensitives_create_new_sensitive** {#sensitives_create_new_sensitive}
 > Sensitive sensitives_create_new_sensitive(seeded_sensitive=seeded_sensitive)
 
 /sensitives/create [POST]
@@ -79,7 +79,7 @@ No authorization required
 
 
 
-## **sensitives_delete_sensitive**
+## **sensitives_delete_sensitive** {#sensitives_delete_sensitive}
 > sensitives_delete_sensitive(sensitive)
 
 /sensitives/\{sensitive\}/delete [POST]
@@ -145,7 +145,7 @@ No authorization required
 
 
 
-## **sensitives_snapshot**
+## **sensitives_snapshot** {#sensitives_snapshot}
 > Sensitives sensitives_snapshot()
 
 /sensitives [GET]
@@ -186,7 +186,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 ### Parameters
 
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

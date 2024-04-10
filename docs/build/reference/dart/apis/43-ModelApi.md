@@ -1,10 +1,5 @@
 # Model API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -18,16 +13,16 @@ Method | HTTP request | Description
 [**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
-## **modelSpecificModelDownload**
+## **modelSpecificModelDownload** {#modelspecificmodeldownload}
 > Model modelSpecificModelDownload(model)
 
 /model/\{model\}/download [POST]
 
-This will download a specific model onto your local machine.
+Downloads a specific model to your local machine.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id
@@ -61,16 +56,16 @@ No authorization required
 
 
 
-## **modelSpecificModelDownloadCancel**
+## **modelSpecificModelDownloadCancel** {#modelspecificmodeldownloadcancel}
 > Model modelSpecificModelDownloadCancel(model)
 
 /model/\{model\}/download/cancel [POST]
 
-This will cancel a specific model download in progress.
+Cancels a specific model download that is currently in progress.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id
@@ -104,16 +99,16 @@ No authorization required
 
 
 
-## **modelSpecificModelDownloadProgress**
+## **modelSpecificModelDownloadProgress** {#modelspecificmodeldownloadprogress}
 > ModelDownloadProgress modelSpecificModelDownloadProgress(model)
 
 /model/\{model\}/download/progress [WS]
 
-This is a Websocket Connection, to get the progress of the downloading of a specific model.
+This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id
@@ -147,16 +142,16 @@ No authorization required
 
 
 
-## **modelSpecificModelLoad**
+## **modelSpecificModelLoad** {#modelspecificmodelload}
 > Model modelSpecificModelLoad(model)
 
 /model/\{model\}/load [POST]
 
-This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
+Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id
@@ -190,16 +185,16 @@ No authorization required
 
 
 
-## **modelSpecificModelUnload**
+## **modelSpecificModelUnload** {#modelspecificmodelunload}
 > Model modelSpecificModelUnload(model)
 
 /model/\{model\}/unload [POST]
 
-This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
+Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id
@@ -233,16 +228,16 @@ No authorization required
 
 
 
-## **modelUpdate**
+## **modelUpdate** {#modelupdate}
 > Model modelUpdate(model)
 
 /model/update [POST]
 
-This will update Machinelearning Model, this is only available for \"custom:true\" models.
+Updates a machine learning model. This functionality is exclusively available for models with the 'custom:true' setting.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = Model(); // Model | 
@@ -276,16 +271,16 @@ No authorization required
 
 
 
-## **modelsSpecificModelSnapshot**
+## **modelsSpecificModelSnapshot** {#modelsspecificmodelsnapshot}
 > Model modelsSpecificModelSnapshot(model)
 
 /model/\{model\} [GET]
 
-
+Retrieves a specific ML model.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ModelApi();
 final model = model_example; // String | model id

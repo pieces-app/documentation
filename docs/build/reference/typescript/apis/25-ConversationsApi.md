@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
-[**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create
-[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
-[**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
-[**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations
-[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
+[**conversationsCreateFromAsset****](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
+[**conversationsCreateSpecificConversation****](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create
+[**conversationsDeleteSpecificConversation****](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
+[**conversationsIdentifiersSnapshot****](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
+[**conversationsSnapshot****](ConversationsApi#conversationssnapshot) | **GET** /conversations
+[**conversationsStreamIdentifiers****](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
 
 
-## **conversationsCreateFromAsset**
+## **conversationsCreateFromAsset** {#conversationscreatefromasset}
 > ConversationsCreateFromAssetOutput conversationsCreateFromAsset()
 
 Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
@@ -22,8 +22,8 @@ Creates a conversation based on an asset. It initiates a conversation and genera
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 const body: Pieces.ConversationsCreateFromAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -31,14 +31,14 @@ const body: Pieces.ConversationsCreateFromAssetRequest = {
 };
 
 apiInstance.conversationsCreateFromAsset(body).then((data: ConversationsCreateFromAssetOutput) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
@@ -58,7 +58,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationsCreateSpecificConversation**
+## **conversationsCreateSpecificConversation** {#conversationscreatespecificconversation}
 > Conversation conversationsCreateSpecificConversation()
 
 Creates a specific conversation.
@@ -68,8 +68,8 @@ Creates a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 const body: Pieces.ConversationsCreateSpecificConversationRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -79,14 +79,14 @@ const body: Pieces.ConversationsCreateSpecificConversationRequest = {
 };
 
 apiInstance.conversationsCreateSpecificConversation(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededConversation** | **SeededConversation**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -107,7 +107,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationsDeleteSpecificConversation**
+## **conversationsDeleteSpecificConversation** {#conversationsdeletespecificconversation}
 > conversationsDeleteSpecificConversation()
 
 Deletes a specific conversation.
@@ -117,8 +117,8 @@ Deletes a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 const body: Pieces.ConversationsDeleteSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
@@ -126,14 +126,14 @@ const body: Pieces.ConversationsDeleteSpecificConversationRequest = {
 };
 
 apiInstance.conversationsDeleteSpecificConversation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
@@ -153,7 +153,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationsIdentifiersSnapshot**
+## **conversationsIdentifiersSnapshot** {#conversationsidentifierssnapshot}
 > FlattenedConversations conversationsIdentifiersSnapshot()
 
 Retrieves all the UUIDs associated with a Conversation.
@@ -163,16 +163,16 @@ Retrieves all the UUIDs associated with a Conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 apiInstance.conversationsIdentifiersSnapshot().then((data: FlattenedConversations) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type
@@ -191,7 +191,7 @@ This endpoint does not need any parameter.
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationsSnapshot**
+## **conversationsSnapshot** {#conversationssnapshot}
 > Conversations conversationsSnapshot()
 
 Retrieves a snapshot of a specific conversation.
@@ -201,8 +201,8 @@ Retrieves a snapshot of a specific conversation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 const body: Pieces.ConversationsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -210,14 +210,14 @@ const body: Pieces.ConversationsSnapshotRequest = {
 };
 
 apiInstance.conversationsSnapshot(body).then((data: Conversations) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
@@ -237,7 +237,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **conversationsStreamIdentifiers**
+## **conversationsStreamIdentifiers** {#conversationsstreamidentifiers}
 > conversationsStreamIdentifiers()
 
 Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
@@ -247,16 +247,16 @@ Provides a continuous stream of conversation identifiers. It returns StreamedIde
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationsApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationsApi(configuration)
 
 apiInstance.conversationsStreamIdentifiers().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 
 ### Return type

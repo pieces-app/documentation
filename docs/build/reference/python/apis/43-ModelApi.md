@@ -2,23 +2,23 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
-[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
-[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
-[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
-[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
-[**model_update**](ModelApi#model_update) | **POST** /model/update | /model/update [POST]
-[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
+Method | HTTP request
+------------- | -------------
+[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/\{model\}/download
+[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/\{model\}/download/cancel
+[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/\{model\}/download/progress
+[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/\{model\}/load
+[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/\{model\}/unload
+[**model_update**](ModelApi#model_update) | **POST** /model/update
+[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/\{model\}
 
 
-## **model_specific_model_download**
+## **model_specific_model_download** {#model_specific_model_download}
 > Model model_specific_model_download(model)
 
 /model/\{model\}/download [POST]
 
-This will download a specific model onto your local machine.
+Downloads a specific model to your local machine.
 
 ### Example
 
@@ -82,12 +82,12 @@ No authorization required
 
 
 
-## **model_specific_model_download_cancel**
+## **model_specific_model_download_cancel** {#model_specific_model_download_cancel}
 > Model model_specific_model_download_cancel(model)
 
 /model/\{model\}/download/cancel [POST]
 
-This will cancel a specific model download in progress.
+Cancels a specific model download that is currently in progress.
 
 ### Example
 
@@ -151,12 +151,12 @@ No authorization required
 
 
 
-## **model_specific_model_download_progress**
+## **model_specific_model_download_progress** {#model_specific_model_download_progress}
 > ModelDownloadProgress model_specific_model_download_progress(model)
 
 /model/\{model\}/download/progress [WS]
 
-This is a Websocket Connection, to get the progress of the downloading of a specific model.
+This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
 ### Example
 
@@ -220,12 +220,12 @@ No authorization required
 
 
 
-## **model_specific_model_load**
+## **model_specific_model_load** {#model_specific_model_load}
 > Model model_specific_model_load(model)
 
 /model/\{model\}/load [POST]
 
-This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
+Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
 ### Example
 
@@ -289,12 +289,12 @@ No authorization required
 
 
 
-## **model_specific_model_unload**
+## **model_specific_model_unload** {#model_specific_model_unload}
 > Model model_specific_model_unload(model)
 
 /model/\{model\}/unload [POST]
 
-This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
+Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
 ### Example
 
@@ -358,12 +358,12 @@ No authorization required
 
 
 
-## **model_update**
+## **model_update** {#model_update}
 > Model model_update(model=model)
 
 /model/update [POST]
 
-This will update Machinelearning Model, this is only available for \"custom:true\" models.
+Updates a machine learning model. This functionality is exclusively available for models with the 'custom:true' setting.
 
 ### Example
 
@@ -427,12 +427,12 @@ No authorization required
 
 
 
-## **models_specific_model_snapshot**
+## **models_specific_model_snapshot** {#models_specific_model_snapshot}
 > Model models_specific_model_snapshot(model)
 
 /model/\{model\} [GET]
 
-
+Retrieves a specific ML model.
 
 ### Example
 

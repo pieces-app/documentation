@@ -1,10 +1,5 @@
 # AnchorPoint API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
-## **anchorPointScoresIncrement**
+## **anchorPointScoresIncrement** {#anchorpointscoresincrement}
 > anchorPointScoresIncrement(anchorPoint, seededScoreIncrement)
 
 '/anchor_point/\{anchor_point\}/scores/increment' [POST]
@@ -23,7 +18,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnchorPointApi();
 final anchorPoint = anchorPoint_example; // String | This is the specific uuid of an anchor_point.
@@ -58,7 +53,7 @@ No authorization required
 
 
 
-## **anchorPointSpecificAnchorPointSnapshot**
+## **anchorPointSpecificAnchorPointSnapshot** {#anchorpointspecificanchorpointsnapshot}
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
 
 /anchor_point/\{anchor_point\} [GET]
@@ -67,7 +62,7 @@ This will get a snapshot of a single anchorPoint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnchorPointApi();
 final anchorPoint = anchorPoint_example; // String | This is the specific uuid of an anchor_point.
@@ -103,7 +98,7 @@ No authorization required
 
 
 
-## **anchorPointUpdate**
+## **anchorPointUpdate** {#anchorpointupdate}
 > AnchorPoint anchorPointUpdate(transferables, anchorPoint)
 
 /anchor_point/update [POST]
@@ -112,7 +107,7 @@ This will update a specific anchorPoint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = AnchorPointApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

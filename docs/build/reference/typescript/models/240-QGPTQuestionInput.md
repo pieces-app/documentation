@@ -19,7 +19,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { QGPTQuestionInput } from '@pieces.app/pieces-os-client';
+import { QGPTQuestionInput } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: QGPTQuestionInput = {
@@ -31,17 +31,17 @@ const example: QGPTQuestionInput = {
     "messages": null,
     "pipeline": null,
     "temporal": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as QGPTQuestionInput;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as QGPTQuestionInput
+console.log(exampleParsed)
 ```
 
 

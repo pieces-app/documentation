@@ -16,7 +16,7 @@ Name | Type
 ## Example
 
 ```typescript
-import { TransferableBytes } from '@pieces.app/pieces-os-client';
+import { TransferableBytes } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
 const example: TransferableBytes = {
@@ -25,17 +25,17 @@ const example: TransferableBytes = {
     "base64": null,
     "base64Url": null,
     "dataUrl": null,
-};
+}
 
-console.log(example);
+console.log(example)
 
 // Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example);
-console.log(exampleJSON);
+const exampleJSON: string = JSON.stringify(example)
+console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as TransferableBytes;
-console.log(exampleParsed);
+const exampleParsed = JSON.parse(exampleJSON) as TransferableBytes
+console.log(exampleParsed)
 ```
 
 

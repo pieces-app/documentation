@@ -1,8 +1,8 @@
-# FlattenedPerson
+# FlattenedPerson Model
 
 ## Load the model package
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 ```
 
 ## Properties
@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **models** | [**Map\<String, PersonModel\>**](PersonModel) | This is a Map\<String, PersonModel\>**, where the the key is an asset id. | [optional] [default to const {}]
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
 
 

@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
+[**assetsCreateUltraSuiteAsset****](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
 
 
-## **assetsCreateUltraSuiteAsset**
+## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}
 > Asset assetsCreateUltraSuiteAsset()
 
 This Endpoint will create an Asset that is sent from UltraSuite.
@@ -17,8 +17,8 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.UltraSuiteApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UltraSuiteApi(configuration)
 
 const body: Pieces.AssetsCreateUltraSuiteAssetRequest = {
     // SeededUltraSuiteAsset (optional)
@@ -26,14 +26,14 @@ const body: Pieces.AssetsCreateUltraSuiteAssetRequest = {
 };
 
 apiInstance.assetsCreateUltraSuiteAsset(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededUltraSuiteAsset** | **SeededUltraSuiteAsset**|  |
 
 

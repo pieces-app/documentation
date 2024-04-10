@@ -39,4 +39,3 @@ flattened_anchor_form_dict = flattened_anchor.from_dict(flattened_anchor_dict)
 ```
 
 
-

@@ -1,10 +1,5 @@
 # Notifications API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -12,16 +7,16 @@ Method | HTTP request | Description
 [**sendLocalNotification**](NotificationsApi#sendlocalnotification) | **POST** /notifications/local/send | Send notification
 
 
-## **sendLocalNotification**
+## **sendLocalNotification** {#sendlocalnotification}
 > sendLocalNotification(notification)
 
 Send notification
 
-This one is to universaly send notifications from any member of the system
+Retrieves a snapshot of all available models.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = NotificationsApi();
 final notification = Notification(); // Notification | 

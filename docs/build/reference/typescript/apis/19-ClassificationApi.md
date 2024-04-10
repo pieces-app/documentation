@@ -4,10 +4,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**convertGenericClassification**](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert
+[**convertGenericClassification****](ClassificationApi#convertgenericclassification) | **POST** /classification/generic/convert
 
 
-## **convertGenericClassification**
+## **convertGenericClassification** {#convertgenericclassification}
 > SeededFormat convertGenericClassification()
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 
@@ -17,8 +17,8 @@ This endpoint converts on a best effort basis from one generic format to another
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ClassificationApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ClassificationApi(configuration)
 
 const body: Pieces.ConvertGenericClassificationRequest = {
     // SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  (optional)
@@ -26,14 +26,14 @@ const body: Pieces.ConvertGenericClassificationRequest = {
 };
 
 apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededFormat** | **SeededFormat**| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  |
 
 

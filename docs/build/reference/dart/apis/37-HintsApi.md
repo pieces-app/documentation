@@ -1,10 +1,5 @@
 # Hints API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
-## **hintsCreateNewHint**
+## **hintsCreateNewHint** {#hintscreatenewhint}
 > Hint hintsCreateNewHint(seededHint)
 
 /hints/create [POST]
@@ -23,7 +18,7 @@ This will create a hint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintsApi();
 final seededHint = SeededHint(); // SeededHint | 
@@ -57,7 +52,7 @@ No authorization required
 
 
 
-## **hintsDeleteSpecificHint**
+## **hintsDeleteSpecificHint** {#hintsdeletespecifichint}
 > hintsDeleteSpecificHint(hint)
 
 /hints/\{hint\}/delete [POST]
@@ -66,7 +61,7 @@ This will delete a specific hint.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintsApi();
 final hint = hint_example; // String | This is a specific hint uuid
@@ -99,7 +94,7 @@ No authorization required
 
 
 
-## **hintsSnapshot**
+## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
 
 /hints [GET]
@@ -108,7 +103,7 @@ This will get a snapshot of all of the hints.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = HintsApi();
 

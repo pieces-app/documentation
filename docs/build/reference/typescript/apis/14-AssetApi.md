@@ -4,24 +4,24 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**assetAssociateTag**](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\}
-[**assetAssociateWebsite**](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\}
-[**assetAssociateWorkstreamSummary**](AssetApi#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\}
-[**assetDisassociateTag**](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\}
-[**assetDisassociateWebsite**](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\}
-[**assetDisassociateWorkstreamSummary**](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**assetFormats**](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats
-[**assetReclassify**](AssetApi#assetreclassify) | **POST** /asset/reclassify
-[**assetScoresIncrement**](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment
-[**assetSnapshot**](AssetApi#assetsnapshot) | **GET** /asset/\{asset\}
-[**assetSnapshotPost**](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\}
-[**assetSpecificAssetActivities**](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities
-[**assetSpecificAssetConversations**](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations
-[**assetSpecificAssetExport**](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export
-[**assetUpdate**](AssetApi#assetupdate) | **POST** /asset/update
+[**assetAssociateTag****](AssetApi#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\}
+[**assetAssociateWebsite****](AssetApi#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\}
+[**assetAssociateWorkstreamSummary****](AssetApi#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\}
+[**assetDisassociateTag****](AssetApi#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\}
+[**assetDisassociateWebsite****](AssetApi#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\}
+[**assetDisassociateWorkstreamSummary****](AssetApi#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**assetFormats****](AssetApi#assetformats) | **GET** /asset/\{asset\}/formats
+[**assetReclassify****](AssetApi#assetreclassify) | **POST** /asset/reclassify
+[**assetScoresIncrement****](AssetApi#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment
+[**assetSnapshot****](AssetApi#assetsnapshot) | **GET** /asset/\{asset\}
+[**assetSnapshotPost****](AssetApi#assetsnapshotpost) | **POST** /asset/\{asset\}
+[**assetSpecificAssetActivities****](AssetApi#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities
+[**assetSpecificAssetConversations****](AssetApi#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations
+[**assetSpecificAssetExport****](AssetApi#assetspecificassetexport) | **GET** /asset/\{asset\}/export
+[**assetUpdate****](AssetApi#assetupdate) | **POST** /asset/update
 
 
-## **assetAssociateTag**
+## **assetAssociateTag** {#assetassociatetag}
 > assetAssociateTag()
 
 Associates a tag with a specified asset. It performs the same action as the tag equivalent.
@@ -31,8 +31,8 @@ Associates a tag with a specified asset. It performs the same action as the tag 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateTagRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -42,14 +42,14 @@ const body: Pieces.AssetAssociateTagRequest = {
 };
 
 apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **tag** | [**string**] | tag id | defaults to undefined
 
@@ -70,7 +70,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetAssociateWebsite**
+## **assetAssociateWebsite** {#assetassociatewebsite}
 > assetAssociateWebsite()
 
 Associates a website with an asset. It performs the same action as its website equivalent.
@@ -80,8 +80,8 @@ Associates a website with an asset. It performs the same action as its website e
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateWebsiteRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -91,14 +91,14 @@ const body: Pieces.AssetAssociateWebsiteRequest = {
 };
 
 apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **website** | [**string**] | website id | defaults to undefined
 
@@ -119,7 +119,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetAssociateWorkstreamSummary**
+## **assetAssociateWorkstreamSummary** {#assetassociateworkstreamsummary}
 > assetAssociateWorkstreamSummary()
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -129,8 +129,8 @@ This will associate a asset with a workstream summary. This will do the same thi
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateWorkstreamSummaryRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -140,14 +140,14 @@ const body: Pieces.AssetAssociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -168,7 +168,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetDisassociateTag**
+## **assetDisassociateTag** {#assetdisassociatetag}
 > assetDisassociateTag()
 
 Disassociates a tag from an asset. It performs the same action as the tag equivalent.
@@ -178,8 +178,8 @@ Disassociates a tag from an asset. It performs the same action as the tag equiva
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateTagRequest = {
     // string | tag id
@@ -189,14 +189,14 @@ const body: Pieces.AssetDisassociateTagRequest = {
 };
 
 apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -217,7 +217,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetDisassociateWebsite**
+## **assetDisassociateWebsite** {#assetdisassociatewebsite}
 > assetDisassociateWebsite()
 
 Disassociates a website from an asset. It performs the same action as the website equivalent.
@@ -227,8 +227,8 @@ Disassociates a website from an asset. It performs the same action as the websit
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateWebsiteRequest = {
     // string | website id
@@ -238,14 +238,14 @@ const body: Pieces.AssetDisassociateWebsiteRequest = {
 };
 
 apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -266,7 +266,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetDisassociateWorkstreamSummary**
+## **assetDisassociateWorkstreamSummary** {#assetdisassociateworkstreamsummary}
 > assetDisassociateWorkstreamSummary()
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
@@ -276,8 +276,8 @@ This will enable us to disassociate an asset from a workstream summary. This wil
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateWorkstreamSummaryRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -287,14 +287,14 @@ const body: Pieces.AssetDisassociateWorkstreamSummaryRequest = {
 };
 
 apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
@@ -315,7 +315,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetFormats**
+## **assetFormats** {#assetformats}
 > Formats assetFormats()
 
 Retrieves the formats available for a specified asset.
@@ -325,8 +325,8 @@ Retrieves the formats available for a specified asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetFormatsRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -336,14 +336,14 @@ const body: Pieces.AssetFormatsRequest = {
 };
 
 apiInstance.assetFormats(body).then((data: Formats) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -363,7 +363,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **assetReclassify**
+## **assetReclassify** {#assetreclassify}
 > Asset assetReclassify()
 
 Retrieves the formats available for a specified asset.
@@ -373,8 +373,8 @@ Retrieves the formats available for a specified asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetReclassifyRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -384,14 +384,14 @@ const body: Pieces.AssetReclassifyRequest = {
 };
 
 apiInstance.assetReclassify(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **assetReclassification** | **AssetReclassification**| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -411,7 +411,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **assetScoresIncrement**
+## **assetScoresIncrement** {#assetscoresincrement}
 > assetScoresIncrement()
 
 Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
@@ -421,8 +421,8 @@ Increments the scores associated with the specified asset based on the provided 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetScoresIncrementRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -432,14 +432,14 @@ const body: Pieces.AssetScoresIncrementRequest = {
 };
 
 apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
@@ -460,7 +460,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetSnapshot**
+## **assetSnapshot** {#assetsnapshot}
 > Asset assetSnapshot()
 
 Retrieves the snapshot of a specific asset
@@ -470,8 +470,8 @@ Retrieves the snapshot of a specific asset
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSnapshotRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -481,14 +481,14 @@ const body: Pieces.AssetSnapshotRequest = {
 };
 
 apiInstance.assetSnapshot(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -509,7 +509,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
 
-## **assetSnapshotPost**
+## **assetSnapshotPost** {#assetsnapshotpost}
 > Asset assetSnapshotPost()
 
 Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
@@ -519,8 +519,8 @@ Retrieves a snapshot of a specific asset, along with the user requesting the sna
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSnapshotPostRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -532,14 +532,14 @@ const body: Pieces.AssetSnapshotPostRequest = {
 };
 
 apiInstance.assetSnapshotPost(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededAccessor** | **SeededAccessor**|  |
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
@@ -560,7 +560,7 @@ Name | Type | Description
 |-------------|-------------|------------------
 **200** | OK |  -  |
 
-## **assetSpecificAssetActivities**
+## **assetSpecificAssetActivities** {#assetspecificassetactivities}
 > Activities assetSpecificAssetActivities()
 
 Retrieves activity events specific to the given asset.
@@ -570,8 +570,8 @@ Retrieves activity events specific to the given asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetActivitiesRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -581,14 +581,14 @@ const body: Pieces.AssetSpecificAssetActivitiesRequest = {
 };
 
 apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -609,7 +609,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetSpecificAssetConversations**
+## **assetSpecificAssetConversations** {#assetspecificassetconversations}
 > Conversations assetSpecificAssetConversations()
 
 Retrieves conversations specific to the given asset.
@@ -619,8 +619,8 @@ Retrieves conversations specific to the given asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetConversationsRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -630,14 +630,14 @@ const body: Pieces.AssetSpecificAssetConversationsRequest = {
 };
 
 apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -658,7 +658,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetSpecificAssetExport**
+## **assetSpecificAssetExport** {#assetspecificassetexport}
 > ExportedAsset assetSpecificAssetExport()
 
 Retrieves an export version of the specified asset.
@@ -668,8 +668,8 @@ Retrieves an export version of the specified asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetExportRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -679,14 +679,14 @@ const body: Pieces.AssetSpecificAssetExportRequest = {
 };
 
 apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
  **exportType** | [**&#39;HTML&#39; | &#39;MD&#39;**]**Array\<&#39;HTML&#39; &#124; &#39;MD&#39;\>** | This specifies the type of export the user wants. | defaults to undefined
 
@@ -707,7 +707,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **assetUpdate**
+## **assetUpdate** {#assetupdate}
 > Asset assetUpdate()
 
 Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
@@ -717,8 +717,8 @@ Allows the user to update an existing Asset. It accepts the Asset object that ne
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.AssetApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -728,14 +728,14 @@ const body: Pieces.AssetUpdateRequest = {
 };
 
 apiInstance.assetUpdate(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **asset** | **Asset**| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

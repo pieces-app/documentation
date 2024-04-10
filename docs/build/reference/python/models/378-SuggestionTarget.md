@@ -29,4 +29,3 @@ suggestion_target_form_dict = suggestion_target.from_dict(suggestion_target_dict
 ```
 
 
-

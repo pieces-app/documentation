@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**tags_create_new_tag**](TagsApi#tags_create_new_tag) | **POST** /tags/create | /tags/create [POST]
-[**tags_delete_specific_tag**](TagsApi#tags_delete_specific_tag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
-[**tags_exists**](TagsApi#tags_exists) | **POST** /tags/exists | /tags/exists [POST]
-[**tags_snapshot**](TagsApi#tags_snapshot) | **GET** /tags | /tags [GET]
+Method | HTTP request
+------------- | -------------
+[**tags_create_new_tag**](TagsApi#tags_create_new_tag) | **POST** /tags/create
+[**tags_delete_specific_tag**](TagsApi#tags_delete_specific_tag) | **POST** /tags/\{tag\}/delete
+[**tags_exists**](TagsApi#tags_exists) | **POST** /tags/exists
+[**tags_snapshot**](TagsApi#tags_snapshot) | **GET** /tags
 
 
-## **tags_create_new_tag**
+## **tags_create_new_tag** {#tags_create_new_tag}
 > Tag tags_create_new_tag(transferables=transferables, seeded_tag=seeded_tag)
 
 /tags/create [POST]
@@ -82,7 +82,7 @@ No authorization required
 
 
 
-## **tags_delete_specific_tag**
+## **tags_delete_specific_tag** {#tags_delete_specific_tag}
 > tags_delete_specific_tag(tag)
 
 /tags/\{tag\}/delete [POST]
@@ -148,7 +148,7 @@ No authorization required
 
 
 
-## **tags_exists**
+## **tags_exists** {#tags_exists}
 > ExistingMetadata tags_exists(existent_metadata=existent_metadata)
 
 /tags/exists [POST]
@@ -218,7 +218,7 @@ No authorization required
 
 
 
-## **tags_snapshot**
+## **tags_snapshot** {#tags_snapshot}
 > Tags tags_snapshot(transferables=transferables)
 
 /tags [GET]

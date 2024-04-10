@@ -1,10 +1,5 @@
 # Activities API
 
-## Load the API package
-```dart
-import 'package:pieces_os_client/api.dart';
-```
-
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
@@ -14,7 +9,7 @@ Method | HTTP request | Description
 [**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
-## **activitiesCreateNewActivity**
+## **activitiesCreateNewActivity** {#activitiescreatenewactivity}
 > Activity activitiesCreateNewActivity(transferables, seededActivity)
 
 /activities/create [POST]
@@ -23,7 +18,7 @@ This will create a new Activity.
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ActivitiesApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -59,7 +54,7 @@ No authorization required
 
 
 
-## **activitiesDeleteSpecificActivity**
+## **activitiesDeleteSpecificActivity** {#activitiesdeletespecificactivity}
 > activitiesDeleteSpecificActivity(activity)
 
 /activities/\{activity\}/delete [POST]
@@ -68,7 +63,7 @@ This will delete a specific activity.  important note: if we delete an activity:
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ActivitiesApi();
 final activity = activity_example; // String | This is a specific activity uuid.
@@ -101,7 +96,7 @@ No authorization required
 
 
 
-## **activitiesSnapshot**
+## **activitiesSnapshot** {#activitiessnapshot}
 > Activities activitiesSnapshot(transferables, pseudo)
 
 /activities [GET]
@@ -110,7 +105,7 @@ This will get a snapshot of all of the activities
 
 ### Example
 ```dart
-import 'package:pieces_os_client/api.dart';
+import 'package:core_openapi/api.dart';
 
 final api_instance = ActivitiesApi();
 final transferables = true; // bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

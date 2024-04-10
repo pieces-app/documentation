@@ -35,4 +35,3 @@ flattened_anchor_point_form_dict = flattened_anchor_point.from_dict(flattened_an
 ```
 
 
-

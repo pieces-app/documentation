@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
-[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
-[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment
-[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\}
-[**messageSpecificMessageUpdate**](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update
-[**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value
+[**messageAssociateAnnotation****](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
+[**messageDisassociateAnnotation****](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
+[**messageScoresIncrement****](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment
+[**messageSpecificMessageSnapshot****](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\}
+[**messageSpecificMessageUpdate****](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update
+[**messageUpdateValue****](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value
 
 
-## **messageAssociateAnnotation**
+## **messageAssociateAnnotation** {#messageassociateannotation}
 > messageAssociateAnnotation()
 
 This will associate a message with an annotation.
@@ -22,8 +22,8 @@ This will associate a message with an annotation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageAssociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
@@ -33,14 +33,14 @@ const body: Pieces.MessageAssociateAnnotationRequest = {
 };
 
 apiInstance.messageAssociateAnnotation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -61,7 +61,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messageDisassociateAnnotation**
+## **messageDisassociateAnnotation** {#messagedisassociateannotation}
 > messageDisassociateAnnotation()
 
 This will enable us to dissassociate a message from an annotation.
@@ -71,8 +71,8 @@ This will enable us to dissassociate a message from an annotation.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageDisassociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
@@ -82,14 +82,14 @@ const body: Pieces.MessageDisassociateAnnotationRequest = {
 };
 
 apiInstance.messageDisassociateAnnotation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -110,7 +110,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messageScoresIncrement**
+## **messageScoresIncrement** {#messagescoresincrement}
 > messageScoresIncrement()
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
@@ -120,8 +120,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageScoresIncrementRequest = {
     // string | This is the uuid of a message.
@@ -131,14 +131,14 @@ const body: Pieces.MessageScoresIncrementRequest = {
 };
 
 apiInstance.messageScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededScoreIncrement** | **SeededScoreIncrement**|  |
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
@@ -159,7 +159,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messageSpecificMessageSnapshot**
+## **messageSpecificMessageSnapshot** {#messagespecificmessagesnapshot}
 > ConversationMessage messageSpecificMessageSnapshot()
 
 This will get a specific snapshot of a message
@@ -169,8 +169,8 @@ This will get a specific snapshot of a message
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageSpecificMessageSnapshotRequest = {
     // string | This is the uuid of a message.
@@ -180,14 +180,14 @@ const body: Pieces.MessageSpecificMessageSnapshotRequest = {
 };
 
 apiInstance.messageSpecificMessageSnapshot(body).then((data: ConversationMessage) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -208,7 +208,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
 
-## **messageSpecificMessageUpdate**
+## **messageSpecificMessageUpdate** {#messagespecificmessageupdate}
 > ConversationMessage messageSpecificMessageUpdate()
 
 This will update a conversation message.
@@ -218,8 +218,8 @@ This will update a conversation message.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageSpecificMessageUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -229,14 +229,14 @@ const body: Pieces.MessageSpecificMessageUpdateRequest = {
 };
 
 apiInstance.messageSpecificMessageUpdate(body).then((data: ConversationMessage) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -257,7 +257,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **messageUpdateValue**
+## **messageUpdateValue** {#messageupdatevalue}
 > ConversationMessage messageUpdateValue()
 
 This will update the value of a conversation message.
@@ -267,8 +267,8 @@ This will update the value of a conversation message.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.ConversationMessageApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.ConversationMessageApi(configuration)
 
 const body: Pieces.MessageUpdateValueRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -278,14 +278,14 @@ const body: Pieces.MessageUpdateValueRequest = {
 };
 
 apiInstance.messageUpdateValue(body).then((data: ConversationMessage) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **conversationMessage** | **ConversationMessage**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 

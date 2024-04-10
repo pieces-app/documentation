@@ -4,13 +4,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create
-[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete
-[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists
-[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites
+[**websitesCreateNewWebsite****](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create
+[**websitesDeleteSpecificWebsite****](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete
+[**websitesExists****](WebsitesApi#websitesexists) | **POST** /websites/exists
+[**websitesSnapshot****](WebsitesApi#websitessnapshot) | **GET** /websites
 
 
-## **websitesCreateNewWebsite**
+## **websitesCreateNewWebsite** {#websitescreatenewwebsite}
 > Website websitesCreateNewWebsite()
 
 This will create a website and attach it to a specific asset.
@@ -20,8 +20,8 @@ This will create a website and attach it to a specific asset.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsitesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsitesApi(configuration)
 
 const body: Pieces.WebsitesCreateNewWebsiteRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -31,14 +31,14 @@ const body: Pieces.WebsitesCreateNewWebsiteRequest = {
 };
 
 apiInstance.websitesCreateNewWebsite(body).then((data: Website) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **seededWebsite** | **SeededWebsite**|  |
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
@@ -59,7 +59,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websitesDeleteSpecificWebsite**
+## **websitesDeleteSpecificWebsite** {#websitesdeletespecificwebsite}
 > websitesDeleteSpecificWebsite()
 
 This will delete a specific website!
@@ -69,8 +69,8 @@ This will delete a specific website!
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsitesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsitesApi(configuration)
 
 const body: Pieces.WebsitesDeleteSpecificWebsiteRequest = {
     // string | website id
@@ -78,14 +78,14 @@ const body: Pieces.WebsitesDeleteSpecificWebsiteRequest = {
 };
 
 apiInstance.websitesDeleteSpecificWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **website** | [**string**] | website id | defaults to undefined
 
 
@@ -105,7 +105,7 @@ void (empty response body)
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websitesExists**
+## **websitesExists** {#websitesexists}
 > ExistingMetadata websitesExists()
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
@@ -115,8 +115,8 @@ This will check all of the websites in our database to see if this specific prov
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsitesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsitesApi(configuration)
 
 const body: Pieces.WebsitesExistsRequest = {
     // ExistentMetadata (optional)
@@ -124,14 +124,14 @@ const body: Pieces.WebsitesExistsRequest = {
 };
 
 apiInstance.websitesExists(body).then((data: ExistingMetadata) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **existentMetadata** | **ExistentMetadata**|  |
 
 
@@ -151,7 +151,7 @@ Name | Type | Description
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 
-## **websitesSnapshot**
+## **websitesSnapshot** {#websitessnapshot}
 > Websites websitesSnapshot()
 
 This will get a snapshot of all your websites.
@@ -161,8 +161,8 @@ This will get a snapshot of all your websites.
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
 
-const configuration = Pieces.Configuration();
-const apiInstance = new Pieces.WebsitesApi(configuration);
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.WebsitesApi(configuration)
 
 const body: Pieces.WebsitesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -170,14 +170,14 @@ const body: Pieces.WebsitesSnapshotRequest = {
 };
 
 apiInstance.websitesSnapshot(body).then((data: Websites) => {
-    console.log('API called successfully. Returned data: ' + data);
-}).catch((error: unknown) => console.error(error));
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
 ```
 
 ### Parameters
 
-Name | Type | Description
-------------- | ------------- | ------------- 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
