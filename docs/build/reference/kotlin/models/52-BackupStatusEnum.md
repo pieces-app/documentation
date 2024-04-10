@@ -1,5 +1,5 @@
 
-# ModelDownloadProgressStatusEnum
+# BackupStatusEnum
 
 ## Enum
 
@@ -13,6 +13,10 @@
     * `FAILED` (value: `"FAILED"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
+    * `CANCELED` (value: `"CANCELED"`)
+
+    * `RESET` (value: `"RESET"`)
 
 
 

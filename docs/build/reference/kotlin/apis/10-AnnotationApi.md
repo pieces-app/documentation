@@ -1,6 +1,6 @@
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -20,8 +20,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -41,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
+ **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
 ### Return type
 
@@ -68,8 +68,8 @@ This will get a snapshot of a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -89,7 +89,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
+ **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
 
 ### Return type
 
@@ -115,8 +115,8 @@ This will update a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : Annotation =  // Annotation | 
@@ -136,7 +136,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **&#x60;annotation&#x60;** | [**Annotation**](../models/Annotation)|  | [optional]
+ **`annotation`** | [**Annotation**](../models/Annotation)|  | [optional] 
 
 ### Return type
 

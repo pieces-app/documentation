@@ -1,6 +1,6 @@
 # Format API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -22,8 +22,8 @@ This will get an analysis from a format&#39;s id.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
@@ -43,7 +43,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **java.util.UUID**| The id (uuid) for a specific format. |
+ **format** | **java.util.UUID**| The id (uuid) for a specific format. | 
 
 ### Return type
 
@@ -69,8 +69,8 @@ This endpoint will be used to reclassify a single Format.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -91,8 +91,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **formatReclassification** | [**FormatReclassification**](../models/FormatReclassification)|  | [optional]
+ **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **formatReclassification** | [**FormatReclassification**](../models/FormatReclassification)|  | [optional] 
 
 ### Return type
 
@@ -118,8 +118,8 @@ Get a snapshot of a specific format.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
@@ -140,8 +140,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **java.util.UUID**| The id (uuid) for a specific format. |
- **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **format** | **java.util.UUID**| The id (uuid) for a specific format. | 
+ **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
 ### Return type
 
@@ -167,8 +167,8 @@ This will update a format&#39;s value, ie, a formats fragment or file depending 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -189,8 +189,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **format** | [**Format**](../models/Format)| This is the format that you want to update. | [optional]
+ **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **format** | [**Format**](../models/Format)| This is the format that you want to update. | [optional] 
 
 ### Return type
 
@@ -216,8 +216,8 @@ This is an analytics endpoint that will enable us to know when a user has copied
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val seededTrackedFormatEvent : SeededTrackedFormatEvent =  // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:)
@@ -237,7 +237,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededTrackedFormatEvent** | [**SeededTrackedFormatEvent**](../models/SeededTrackedFormatEvent)| This is a SeededTrackedFormatEvent, per tracked event:) | [optional]
+ **seededTrackedFormatEvent** | [**SeededTrackedFormatEvent**](../models/SeededTrackedFormatEvent)| This is a SeededTrackedFormatEvent, per tracked event:) | [optional] 
 
 ### Return type
 

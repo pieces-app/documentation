@@ -1,6 +1,6 @@
 # AnchorPoints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -20,8 +20,8 @@ This will create a anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -42,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **seededAnchorPoint** | [**SeededAnchorPoint**](../models/SeededAnchorPoint)|  | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededAnchorPoint** | [**SeededAnchorPoint**](../models/SeededAnchorPoint)|  | [optional] 
 
 ### Return type
 
@@ -69,8 +69,8 @@ This will delete a specific anchorPoint!
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointsApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -89,7 +89,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
+ **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. | 
 
 ### Return type
 
@@ -115,8 +115,8 @@ This will get a snapshot of all your anchorPoints.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -136,7 +136,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
 ### Return type
 

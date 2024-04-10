@@ -1,6 +1,6 @@
 # WellKnown API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -14,13 +14,13 @@ Method | HTTP request
 
 /.well-known/health [GET]
 
-Retrieves the health status of the server.
+This will get the health of the server.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {
@@ -57,13 +57,13 @@ No authorization required
 
 /.well-known/version [Get]
 
-Retrieves the version of the server. It returns a string representing the current version.
+This will get the version of the server. This will return a string of current version.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {

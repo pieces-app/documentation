@@ -1,6 +1,6 @@
 # QGPT API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -18,13 +18,13 @@ Method | HTTP request
 
 /qgpt/hints [POST]
 
-Generates suggested questions that users can ask. It accepts the answer displayed to the user, relevant code snippets used for the answer, and the previous query as inputs. In return, it provides a list of questions that can be presented to the user.
+This is only to generate suggested questions that the user can ask. ( we will provide the answer we displayed to the user, the relevant snippets used for the answer, and the previous query.  We will return a list of questions that can be displayed to the user.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTHintsInput : QGPTHintsInput =  // QGPTHintsInput | 
@@ -44,7 +44,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **qgPTHintsInput** | [**QGPTHintsInput**](../models/QGPTHintsInput)|  | [optional]
+ **qgPTHintsInput** | [**QGPTHintsInput**](../models/QGPTHintsInput)|  | [optional] 
 
 ### Return type
 
@@ -65,13 +65,13 @@ No authorization required
 
 /qgpt/persons/related [POST]
 
-Utilize this endpoint for Who Support, identifying individuals who can provide assistance when given context such as a Seed or a QGPT Conversation, for example.  Input:   - (optional) seed: Seed - Only supports fragments for now.   - (optional) conversation: QGPTConversation.  Output:   - persons: Persons
+This Endpoint is used for Who Support.  IE given context like a Seed, or a qgptConversation, who will be able to help out.   Input: - (optional) seed: Seed - ONLY GOING TO SUPPORT fragments.for now. - (optional) conversation: QGPTConversation.  Output: - persons: Persons
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -92,8 +92,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **qgPTPersonsRelatedInput** | [**QGPTPersonsRelatedInput**](../models/QGPTPersonsRelatedInput)|  | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **qgPTPersonsRelatedInput** | [**QGPTPersonsRelatedInput**](../models/QGPTPersonsRelatedInput)|  | [optional] 
 
 ### Return type
 
@@ -114,13 +114,13 @@ No authorization required
 
 /qgpt/stream [GET]
 
-Provides a version of qGPT stream that streams inputs. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option &#39;question:true&#39;. It is designed to manage multiple conversations and operates as a Websocket.
+This is a version of qGPT stream that will stream the inputs.  This will handle relevance.  This will handle question.  This will throw an error if both are passed in. That being said if you want to utalize question &amp;&amp; relevant, you can get stream results by passing in relevance with options.question:true.  This will handle multiple conversations.  This is a Websocket.  StatusCodes of the output of this will be on the output of the websocket: 200: success 401: invalid authentication/api key 429: Rate limit/Quota exceeded 500: server had an error 503: the engine is currently overloaded
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTStreamInput : QGPTStreamInput =  // QGPTStreamInput | 
@@ -140,7 +140,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **qgPTStreamInput** | [**QGPTStreamInput**](../models/QGPTStreamInput)|  | [optional]
+ **qgPTStreamInput** | [**QGPTStreamInput**](../models/QGPTStreamInput)|  | [optional] 
 
 ### Return type
 
@@ -161,13 +161,13 @@ No authorization required
 
 /qgpt/question [POST]
 
-Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endpoint, along with a question query, to provide possible answers.  Note:   - Relevant seeds must either include an ID used within the /qgpt/relevance endpoint or a seed with a fragment/string; otherwise, an error will be thrown.   - This endpoint utilizes your query and relevant snippets to generate multiple answers, each accompanied by a score.
+This is going to accept, relevant code snippets or uuids returned from the /qgpt/relevance endpoint, as well as a question query and we will return possible results to answer your question.  NOTE: - The relevant seeds, must require either an id, that was used within the /qgpt/relevance endpoint or a seed with afragment/string. or else we will throw and error.  This endpoint will take your query and your relevant snippets and use them to answer your question, returning multiple answers to your question all of which with scores.  200: success 401: invalid authentication/api key 429: Rate limit/Quota exceeded 500: server had an error 503: the engine is currently overloaded
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTQuestionInput : QGPTQuestionInput =  // QGPTQuestionInput | 
@@ -187,7 +187,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **qgPTQuestionInput** | [**QGPTQuestionInput**](../models/QGPTQuestionInput)|  | [optional]
+ **qgPTQuestionInput** | [**QGPTQuestionInput**](../models/QGPTQuestionInput)|  | [optional] 
 
 ### Return type
 
@@ -213,8 +213,8 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTRelevanceInput : QGPTRelevanceInput =  // QGPTRelevanceInput | 
@@ -234,7 +234,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **qgPTRelevanceInput** | [**QGPTRelevanceInput**](../models/QGPTRelevanceInput)|  | [optional]
+ **qgPTRelevanceInput** | [**QGPTRelevanceInput**](../models/QGPTRelevanceInput)|  | [optional] 
 
 ### Return type
 
@@ -260,8 +260,8 @@ This will take in a followup question and the history of the conversation, and e
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTRepromptInput : QGPTRepromptInput =  // QGPTRepromptInput | 
@@ -281,7 +281,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **qgPTRepromptInput** | [**QGPTRepromptInput**](../models/QGPTRepromptInput)|  | [optional]
+ **qgPTRepromptInput** | [**QGPTRepromptInput**](../models/QGPTRepromptInput)|  | [optional] 
 
 ### Return type
 

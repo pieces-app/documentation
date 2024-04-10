@@ -1,6 +1,6 @@
 # User API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,6 +9,7 @@ Method | HTTP request
 [**selectUser**](#selectuser) | **POST** /user/select
 [**streamUser**](#streamuser) | **GET** /user/stream
 [**updateUser**](#updateuser) | **POST** /user/update
+[**userBetaStatus**](#userbetastatus) | **POST** /user/beta/status
 [**userProviders**](#userproviders) | **GET** /user/providers
 [**userSnapshot**](#usersnapshot) | **GET** /user
 [**userUpdateVanity**](#userupdatevanity) | **POST** /user/update/vanity
@@ -25,8 +26,8 @@ An endpoint to clear the current user.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -67,8 +68,8 @@ This will refresh a user.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -110,8 +111,8 @@ This will select the current user.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val auth0User : Auth0User =  // Auth0User | 
@@ -131,7 +132,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional]
+ **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional] 
 
 ### Return type
 
@@ -163,8 +164,8 @@ This will stream in the current user, not quiet sure yet how we want to do this.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -206,8 +207,8 @@ This will update a specific user in the database.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -227,11 +228,58 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
+ **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
 
 ### Return type
 
 [**UserProfile**](../models/UserProfile)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a id="userBetaStatus"></a>
+## **userBetaStatus** {#userbetastatus}
+> UserBetaStatus userBetaStatus(userBetaStatus)
+
+/user/beta/status [POST]
+
+This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
+
+### Example
+```kotlin
+// Import classes:
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
+
+val apiInstance = UserApi()
+val userBetaStatus : UserBetaStatus =  // UserBetaStatus | 
+try {
+    val result : UserBetaStatus = apiInstance.userBetaStatus(userBetaStatus)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling UserApi#userBetaStatus")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling UserApi#userBetaStatus")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
+
+### Return type
+
+[**UserBetaStatus**](../models/UserBetaStatus)
 
 ### Authorization
 
@@ -253,8 +301,8 @@ This will retrieve all the users Providers that are connected to this account.  
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -296,8 +344,8 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -339,8 +387,8 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \&q
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | This will take an update userProfile, with the updated vanity name!
@@ -360,7 +408,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional]
+ **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional] 
 
 ### Return type
 

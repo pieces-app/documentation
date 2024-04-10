@@ -1,6 +1,6 @@
 # Backups API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -21,8 +21,8 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -42,7 +42,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
+ **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
 
 ### Return type
 
@@ -68,8 +68,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -89,7 +89,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
+ **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
 
 ### Return type
 
@@ -115,8 +115,8 @@ This will delete a specific backup from the cloud.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -136,8 +136,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **backup** | **kotlin.String**| This is a identifier that is used to identify a specific backup.(version_timestamp) |
- **backup2** | [**Backup**](../models/Backup)|  | [optional]
+ **backup** | **kotlin.String**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
+ **backup2** | [**Backup**](../models/Backup)|  | [optional] 
 
 ### Return type
 
@@ -163,8 +163,8 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 try {

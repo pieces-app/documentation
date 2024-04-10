@@ -992,5 +992,11 @@
 
     * `vba` (value: `"vba"`)
 
+    * `svelte` (value: `"svelte"`)
+
+    * `vue` (value: `"vue"`)
+
+    * `scss` (value: `"scss"`)
+
 
 

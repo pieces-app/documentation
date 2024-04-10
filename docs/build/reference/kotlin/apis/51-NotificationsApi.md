@@ -1,6 +1,6 @@
 # Notifications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -13,13 +13,13 @@ Method | HTTP request
 
 Send notification
 
-Retrieves a snapshot of all available models.
+This one is to universaly send notifications from any member of the system
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = NotificationsApi()
 val notification : Notification =  // Notification | 
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **notification** | [**Notification**](../models/Notification)|  | [optional]
+ **notification** | [**Notification**](../models/Notification)|  | [optional] 
 
 ### Return type
 

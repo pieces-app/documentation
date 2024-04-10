@@ -1,6 +1,6 @@
 # Persons API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -21,8 +21,8 @@ This will update both the asset and the person reference, that will remove a per
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonsApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -42,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. |
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **person** | **kotlin.String**| This is a uuid that represents a person. | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
 
 ### Return type
 
@@ -69,8 +69,8 @@ This will create a new person.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -91,8 +91,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **seededPerson** | [**SeededPerson**](../models/SeededPerson)|  | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededPerson** | [**SeededPerson**](../models/SeededPerson)|  | [optional] 
 
 ### Return type
 
@@ -118,8 +118,8 @@ This will delete a specific person.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonsApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -138,7 +138,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **person** | **kotlin.String**| This is a uuid that represents a person. | 
 
 ### Return type
 
@@ -164,8 +164,8 @@ This will get a snapshot of all of your people
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -185,7 +185,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
 ### Return type
 

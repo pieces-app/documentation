@@ -1,6 +1,6 @@
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -20,8 +20,8 @@ This will create a hint.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val seededHint : SeededHint =  // SeededHint | 
@@ -41,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional]
+ **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional] 
 
 ### Return type
 
@@ -67,8 +67,8 @@ This will delete a specific hint.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | **kotlin.String**| This is a specific hint uuid |
+ **hint** | **kotlin.String**| This is a specific hint uuid | 
 
 ### Return type
 
@@ -113,8 +113,8 @@ This will get a snapshot of all of the hints.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 try {

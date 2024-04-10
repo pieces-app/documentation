@@ -1,6 +1,6 @@
 # Ranges API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -20,8 +20,8 @@ This will create a new Range in the database.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val seededRange : SeededRange =  // SeededRange | 
@@ -41,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededRange** | [**SeededRange**](../models/SeededRange)|  | [optional]
+ **seededRange** | [**SeededRange**](../models/SeededRange)|  | [optional] 
 
 ### Return type
 
@@ -67,8 +67,8 @@ This will delete a specific range from the database!
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
 
 ### Return type
 
@@ -113,8 +113,8 @@ This will get a snapshot of all your ranges.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 try {

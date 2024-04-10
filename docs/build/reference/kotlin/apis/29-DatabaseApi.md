@@ -1,6 +1,6 @@
 # Database API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -19,8 +19,8 @@ This is going to export your current database.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DatabaseApi()
 try {
@@ -62,8 +62,8 @@ This is going to take in a database, and merge it with the current database. Thi
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DatabaseApi()
 val exportedDatabase : ExportedDatabase =  // ExportedDatabase | 
@@ -82,7 +82,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **exportedDatabase** | [**ExportedDatabase**](../models/ExportedDatabase)|  | [optional]
+ **exportedDatabase** | [**ExportedDatabase**](../models/ExportedDatabase)|  | [optional] 
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # Application API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -18,8 +18,8 @@ This is an endpoint for updating an application.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationApi()
 val application : Application =  // Application | 
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application** | [**Application**](../models/Application)|  | [optional]
+ **application** | [**Application**](../models/Application)|  | [optional] 
 
 ### Return type
 

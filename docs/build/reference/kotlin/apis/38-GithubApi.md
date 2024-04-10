@@ -1,6 +1,6 @@
 # Github API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -13,13 +13,13 @@ Method | HTTP request
 
 /github/gists/import [POST]
 
-This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users&#39; gists. implemented. v2. can get specific a public gist.
+This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users&#39; gists. &lt;- implemented. v2. can get specific a public gist.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = GithubApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -41,7 +41,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **automatic** | **kotlin.Boolean**| For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
- **seededGithubGistsImport** | [**SeededGithubGistsImport**](../models/SeededGithubGistsImport)|  | [optional]
+ **seededGithubGistsImport** | [**SeededGithubGistsImport**](../models/SeededGithubGistsImport)|  | [optional] 
 
 ### Return type
 

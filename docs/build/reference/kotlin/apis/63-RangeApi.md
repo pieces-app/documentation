@@ -1,6 +1,6 @@
 # Range API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -24,8 +24,8 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -45,8 +45,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
- **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
 
 ### Return type
 
@@ -72,8 +72,8 @@ This will associate a range with a workstream summary. This will do the same thi
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -93,8 +93,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
 
 ### Return type
 
@@ -120,8 +120,8 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -141,8 +141,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
- **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
 
 ### Return type
 
@@ -168,8 +168,8 @@ This will enable us to disassociate a range from a workstream summary. This will
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -189,8 +189,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
 
 ### Return type
 
@@ -216,8 +216,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -237,8 +237,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
 ### Return type
 
@@ -264,8 +264,8 @@ This will update a specific range.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : Range =  // Range | 
@@ -285,7 +285,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | [**Range**](../models/Range)|  | [optional]
+ **range** | [**Range**](../models/Range)|  | [optional] 
 
 ### Return type
 
@@ -311,8 +311,8 @@ This will get a snapshot of a single range.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -332,7 +332,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
 
 ### Return type
 

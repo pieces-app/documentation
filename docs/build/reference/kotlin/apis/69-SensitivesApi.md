@@ -1,6 +1,6 @@
 # Sensitives API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -20,8 +20,8 @@ This will create a new sensitive model.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val seededSensitive : SeededSensitive =  // SeededSensitive | 
@@ -41,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededSensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional]
+ **seededSensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional] 
 
 ### Return type
 
@@ -67,8 +67,8 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
@@ -87,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. |
+ **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. | 
 
 ### Return type
 
@@ -113,8 +113,8 @@ This will get a snapshot of all of the sensitives.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 try {

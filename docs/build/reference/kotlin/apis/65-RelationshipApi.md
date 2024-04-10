@@ -1,6 +1,6 @@
 # Relationship API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -18,8 +18,8 @@ This will return a single relationship object.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RelationshipApi()
 val relationship : kotlin.String = relationship_example // kotlin.String | this is a specific relationship uuid.
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **relationship** | **kotlin.String**| this is a specific relationship uuid. |
+ **relationship** | **kotlin.String**| this is a specific relationship uuid. | 
 
 ### Return type
 

@@ -1,11 +1,13 @@
 # OS API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
 [**linkProvider**](#linkprovider) | **POST** /os/link_provider
 [**osDeviceInformation**](#osdeviceinformation) | **GET** /os/device/information
+[**osPermissions**](#ospermissions) | **GET** /os/permissions
+[**osPermissionsRequest**](#ospermissionsrequest) | **POST** /os/permissions/request
 [**osRestart**](#osrestart) | **GET** /os/restart
 [**osUpdateCheck**](#osupdatecheck) | **POST** /os/update/check
 [**pickFiles**](#pickfiles) | **POST** /os/files/pick
@@ -25,8 +27,8 @@ This will link an external provider to your current auth0 account.  Will throw e
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val seededExternalProvider : SeededExternalProvider =  // SeededExternalProvider | 
@@ -46,7 +48,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional]
+ **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional] 
 
 ### Return type
 
@@ -72,8 +74,8 @@ This will get information related to your specific device.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -104,6 +106,96 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+<a id="osPermissions"></a>
+## **osPermissions** {#ospermissions}
+> OSPermissions osPermissions()
+
+/os/permissions [GET]
+
+This will only work on Macos and Windows.  And will get the permissions of the user&#39;s local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
+
+### Example
+```kotlin
+// Import classes:
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
+
+val apiInstance = OSApi()
+try {
+    val result : OSPermissions = apiInstance.osPermissions()
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling OSApi#osPermissions")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling OSApi#osPermissions")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+This endpoint does not need any parameters.
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a id="osPermissionsRequest"></a>
+## **osPermissionsRequest** {#ospermissionsrequest}
+> OSPermissions osPermissionsRequest(osPermissions)
+
+/os/permissions/request [POST]
+
+This will only work on Macos and Windows.  This will request permissions for the given inputs
+
+### Example
+```kotlin
+// Import classes:
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
+
+val apiInstance = OSApi()
+val osPermissions : OSPermissions =  // OSPermissions | 
+try {
+    val result : OSPermissions = apiInstance.osPermissionsRequest(osPermissions)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling OSApi#osPermissionsRequest")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling OSApi#osPermissionsRequest")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **osPermissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
 <a id="osRestart"></a>
 ## **osRestart** {#osrestart}
 > osRestart()
@@ -115,8 +207,8 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -157,8 +249,8 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val uncheckedOSUpdate : UncheckedOSUpdate =  // UncheckedOSUpdate | 
@@ -178,7 +270,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional]
+ **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional] 
 
 ### Return type
 
@@ -204,8 +296,8 @@ This will trigger a filer picker and return the string paths of the files that w
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val filePickerInput : FilePickerInput =  // FilePickerInput | 
@@ -225,7 +317,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional]
+ **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional] 
 
 ### Return type
 
@@ -251,8 +343,8 @@ This will trigger a folder picker and return the string paths of the folders tha
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -294,8 +386,8 @@ A trigger that launches a Sign into OS Server
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -337,8 +429,8 @@ A trigger that signs out a user from the OS
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {

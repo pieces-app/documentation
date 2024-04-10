@@ -1,6 +1,6 @@
 # Tag API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -24,8 +24,8 @@ This will associate a tag with a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -45,8 +45,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
- **tag** | **kotlin.String**| tag id |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **tag** | **kotlin.String**| tag id | 
 
 ### Return type
 
@@ -72,8 +72,8 @@ This will associate a tag with a person.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -93,8 +93,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id |
- **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **tag** | **kotlin.String**| tag id | 
+ **person** | **kotlin.String**| This is a uuid that represents a person. | 
 
 ### Return type
 
@@ -120,8 +120,8 @@ This will enable us to dissassociate a tag from a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -141,8 +141,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id |
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **tag** | **kotlin.String**| tag id | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
 
 ### Return type
 
@@ -168,8 +168,8 @@ This will enable us to dissassociate a tag from a person.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -189,8 +189,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id |
- **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **tag** | **kotlin.String**| tag id | 
+ **person** | **kotlin.String**| This is a uuid that represents a person. | 
 
 ### Return type
 
@@ -216,8 +216,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -237,8 +237,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id |
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
+ **tag** | **kotlin.String**| tag id | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
 ### Return type
 
@@ -264,8 +264,8 @@ This will update a specific tag.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -286,8 +286,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
- **tag** | [**Tag**](../models/Tag)|  | [optional]
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **tag** | [**Tag**](../models/Tag)|  | [optional] 
 
 ### Return type
 
@@ -313,8 +313,8 @@ This will get a specific tag.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -335,8 +335,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id |
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **tag** | **kotlin.String**| tag id | 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
 ### Return type
 

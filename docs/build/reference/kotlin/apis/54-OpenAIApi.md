@@ -1,6 +1,6 @@
 # OpenAI API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -18,8 +18,8 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OpenAIApi()
 val openAIModelsListInput : OpenAIModelsListInput =  // OpenAIModelsListInput | 
@@ -39,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **openAIModelsListInput** | [**OpenAIModelsListInput**](../models/OpenAIModelsListInput)|  | [optional]
+ **openAIModelsListInput** | [**OpenAIModelsListInput**](../models/OpenAIModelsListInput)|  | [optional] 
 
 ### Return type
 

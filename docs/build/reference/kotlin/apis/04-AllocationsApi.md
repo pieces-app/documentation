@@ -1,6 +1,6 @@
 # Allocations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -23,8 +23,8 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -44,7 +44,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
+ **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
 
 ### Return type
 
@@ -70,8 +70,8 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -91,7 +91,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
 ### Return type
 
@@ -117,8 +117,8 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -138,7 +138,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
 ### Return type
 
@@ -164,8 +164,8 @@ This will attempt to disconnect to a specific users cloud.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -185,7 +185,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
 ### Return type
 
@@ -211,8 +211,8 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -232,7 +232,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
 ### Return type
 
@@ -258,8 +258,8 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 try {

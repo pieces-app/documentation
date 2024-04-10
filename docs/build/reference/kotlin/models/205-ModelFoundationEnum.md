@@ -16,6 +16,14 @@
 
     * `LLAMA_2_70B` (value: `"LLAMA_2_70B"`)
 
+    * `LLAMA_3_2B` (value: `"LLAMA_3_2B"`)
+
+    * `LLAMA_3_7B` (value: `"LLAMA_3_7B"`)
+
+    * `LLAMA_3_13B` (value: `"LLAMA_3_13B"`)
+
+    * `LLAMA_3_70B` (value: `"LLAMA_3_70B"`)
+
     * `CODE_LLAMA_2_7B` (value: `"CODE_LLAMA_2_7B"`)
 
     * `CODE_LLAMA_2_13B` (value: `"CODE_LLAMA_2_13B"`)
@@ -163,6 +171,36 @@
     * `PHI_2` (value: `"PHI_2"`)
 
     * `MIXTRAL_8_x_7B` (value: `"MIXTRAL_8_x_7B"`)
+
+    * `MIXTRAL_8_x_22B` (value: `"MIXTRAL_8_x_22B"`)
+
+    * `GEMMA_7B` (value: `"GEMMA_7B"`)
+
+    * `GEMMA_2B` (value: `"GEMMA_2B"`)
+
+    * `CODE_GEMMA_7B` (value: `"CODE_GEMMA_7B"`)
+
+    * `CODE_GEMMA_2B` (value: `"CODE_GEMMA_2B"`)
+
+    * `RECURRENT_GEMMA_2B` (value: `"RECURRENT_GEMMA_2B"`)
+
+    * `GROK_1` (value: `"GROK_1"`)
+
+    * `GROK_1Period5` (value: `"GROK_1.5"`)
+
+    * `CLAUDE_2` (value: `"CLAUDE_2"`)
+
+    * `CLAUDE_3` (value: `"CLAUDE_3"`)
+
+    * `STARLING_7B` (value: `"STARLING_7B"`)
+
+    * `DBRX` (value: `"DBRX"`)
+
+    * `COMMAND_RPlus` (value: `"COMMAND_R+"`)
+
+    * `GEMMA_1Period1_2B` (value: `"GEMMA_1.1_2B"`)
+
+    * `GEMMA_1Period1_7B` (value: `"GEMMA_1.1_7B"`)
 
 
 

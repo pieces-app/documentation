@@ -1,6 +1,6 @@
 # Model API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to *http://localhost:3000*
 
 Method | HTTP request
 ------------- | -------------
@@ -19,13 +19,13 @@ Method | HTTP request
 
 /model/\{model\}/download [POST]
 
-Downloads a specific model to your local machine.
+This will download a specific model onto your local machine.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -45,7 +45,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
@@ -66,13 +66,13 @@ No authorization required
 
 /model/\{model\}/download/cancel [POST]
 
-Cancels a specific model download that is currently in progress.
+This will cancel a specific model download in progress.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -92,7 +92,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
@@ -113,13 +113,13 @@ No authorization required
 
 /model/\{model\}/download/progress [WS]
 
-This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
+This is a Websocket Connection, to get the progress of the downloading of a specific model.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -139,7 +139,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
@@ -160,13 +160,13 @@ No authorization required
 
 /model/\{model\}/load [POST]
 
-Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
+This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -186,7 +186,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
@@ -207,13 +207,13 @@ No authorization required
 
 /model/\{model\}/unload [POST]
 
-Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
+This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -233,7 +233,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
@@ -254,13 +254,13 @@ No authorization required
 
 /model/update [POST]
 
-Updates a machine learning model. This functionality is exclusively available for models with the &#39;custom:true&#39; setting.
+This will update Machinelearning Model, this is only available for \&quot;custom:true\&quot; models.
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : Model =  // Model | 
@@ -280,7 +280,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | [**Model**](../models/Model)|  | [optional]
+ **model** | [**Model**](../models/Model)|  | [optional] 
 
 ### Return type
 
@@ -301,13 +301,13 @@ No authorization required
 
 /model/\{model\} [GET]
 
-Retrieves a specific ML model.
+
 
 ### Example
 ```kotlin
 // Import classes:
-// import org.openapitools.client.infrastructure.*
-// import org.openapitools.client.models.*
+// import app.pieces.pieces-os-client.infrastructure.*
+// import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -327,7 +327,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id |
+ **model** | **kotlin.String**| model id | 
 
 ### Return type
 
