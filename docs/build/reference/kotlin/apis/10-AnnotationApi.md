@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**annotationScoresIncrement**](#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
-[**annotationSpecificAnnotationSnapshot**](#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
-[**annotationUpdate**](#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**annotationScoresIncrement**](#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment
+[**annotationSpecificAnnotationSnapshot**](#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\}
+[**annotationUpdate**](#annotationupdate) | **POST** /annotation/update
 
 
 <a id="annotationScoresIncrement"></a>
-## **annotationScoresIncrement**
+## **annotationScoresIncrement** {#annotationscoresincrement}
 > annotationScoresIncrement(`annotation`, seededScoreIncrement)
 
 &#39;/annotation/\{annotation\}/scores/increment&#39; [POST]
@@ -20,8 +20,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -58,7 +58,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="annotationSpecificAnnotationSnapshot"></a>
-## **annotationSpecificAnnotationSnapshot**
+## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(`annotation`)
 
 /annotation/\{annotation\} [GET]
@@ -68,8 +68,8 @@ This will get a snapshot of a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -105,7 +105,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="annotationUpdate"></a>
-## **annotationUpdate**
+## **annotationUpdate** {#annotationupdate}
 > Annotation annotationUpdate(`annotation`)
 
 /annotation/update [POST]
@@ -115,8 +115,8 @@ This will update a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : Annotation =  // Annotation | 

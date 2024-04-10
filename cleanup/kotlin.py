@@ -21,13 +21,6 @@ def fix_h1_headers(text):
     return result
 
 
-def fix_h2_headers(text):
-    find = '# **'
-    replacement = '## **'
-    result = text.replace(find, replacement)
-    return result
-
-
 def fix_java_classes(text):
     pattern = r'\[(.*?)\]\(java\.(net\.URI|time\.OffsetDateTime|util\.UUID|math\.BigDecimal)\)'
     replacement = r'\1'
@@ -158,7 +151,7 @@ def organize_markdown_files_in_directory(source_directory):
         transformed_content = fix_java_classes(transformed_content)
         transformed_content = fix_kotlin_classes(transformed_content)
         transformed_content = fix_camel_case_anchors(transformed_content)
-        transformed_content = fix_h2_headers(transformed_content)
+        # transformed_content = fix_h2_headers(transformed_content)
         transformed_content = fix_variables(transformed_content)
         # transformed_content = fix_str_links(transformed_content)
         transformed_content = remove_readme_links(transformed_content)

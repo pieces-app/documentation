@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**applicationUpdate**](#applicationupdate) | **POST** /application/update | /application/update [GET]
+Method | HTTP request
+------------- | -------------
+[**applicationUpdate**](#applicationupdate) | **POST** /application/update
 
 
 <a id="applicationUpdate"></a>
-## **applicationUpdate**
+## **applicationUpdate** {#applicationupdate}
 > Application applicationUpdate(application)
 
 /application/update [GET]
@@ -18,8 +18,8 @@ This is an endpoint for updating an application.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = ApplicationApi()
 val application : Application =  // Application | 

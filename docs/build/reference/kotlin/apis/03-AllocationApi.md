@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**allocationSnapshot**](#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocationUpdate**](#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
+Method | HTTP request
+------------- | -------------
+[**allocationSnapshot**](#allocationsnapshot) | **GET** /allocation/\{allocation\}
+[**allocationUpdate**](#allocationupdate) | **POST** /allocation/update
 
 
 <a id="allocationSnapshot"></a>
-## **allocationSnapshot**
+## **allocationSnapshot** {#allocationsnapshot}
 > AllocationCloud allocationSnapshot(allocation)
 
 /allocation/\{allocation\} [GET]
@@ -19,8 +19,8 @@ This will get a snapshot of a specific allocation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AllocationApi()
 val allocation : kotlin.String = allocation_example // kotlin.String | 
@@ -56,7 +56,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="allocationUpdate"></a>
-## **allocationUpdate**
+## **allocationUpdate** {#allocationupdate}
 > AllocationCloud allocationUpdate(allocationCloud)
 
 /allocation/update [POST]
@@ -66,8 +66,8 @@ This will update a specific allocation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AllocationApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 

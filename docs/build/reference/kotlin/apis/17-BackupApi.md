@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**backup**](#backup) | **POST** /backup | /backup [POST]
-[**backupAsset**](#backupasset) | **POST** /backup/asset | /backup/asset [POST]
-[**backupRestoreSpecificBackup**](#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
-[**backupRestoreSpecificBackupStreamed**](#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
-[**backupSpecificBackupSnapshot**](#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+Method | HTTP request
+------------- | -------------
+[**backup**](#backup) | **POST** /backup
+[**backupAsset**](#backupasset) | **POST** /backup/asset
+[**backupRestoreSpecificBackup**](#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore
+[**backupRestoreSpecificBackupStreamed**](#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed
+[**backupSpecificBackupSnapshot**](#backupspecificbackupsnapshot) | **GET** /backup/\{backup\}
 
 
 <a id="backup"></a>
-## **backup**
+## **backup** {#backup}
 > backup(assets)
 
 /backup [POST]
@@ -22,8 +22,8 @@ Method | HTTP request | Description
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = BackupApi()
 val assets : Assets =  // Assets | 
@@ -58,7 +58,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="backupAsset"></a>
-## **backupAsset**
+## **backupAsset** {#backupasset}
 > backupAsset(asset)
 
 /backup/asset [POST]
@@ -66,8 +66,8 @@ No authorization required
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = BackupApi()
 val asset : Asset =  // Asset | 
@@ -102,7 +102,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="backupRestoreSpecificBackup"></a>
-## **backupRestoreSpecificBackup**
+## **backupRestoreSpecificBackup** {#backuprestorespecificbackup}
 > Backup backupRestoreSpecificBackup(backup, backup2)
 
 /backup/\{backup\}/restore [POST]
@@ -112,8 +112,8 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -151,7 +151,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="backupRestoreSpecificBackupStreamed"></a>
-## **backupRestoreSpecificBackupStreamed**
+## **backupRestoreSpecificBackupStreamed** {#backuprestorespecificbackupstreamed}
 > BackupStreamedProgress backupRestoreSpecificBackupStreamed(backup, backup2)
 
 /backup/\{backup\}/restore/streamed [POST]
@@ -161,8 +161,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -200,7 +200,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="backupSpecificBackupSnapshot"></a>
-## **backupSpecificBackupSnapshot**
+## **backupSpecificBackupSnapshot** {#backupspecificbackupsnapshot}
 > Backup backupSpecificBackupSnapshot(backup)
 
 /backup/\{backup\} [GET]
@@ -210,8 +210,8 @@ This will just get the metadata associated with a specific backup.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)

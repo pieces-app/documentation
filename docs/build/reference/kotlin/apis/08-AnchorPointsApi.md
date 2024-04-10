@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchorPointsDeleteSpecificAnchorPoint**](#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
-[**anchorPointsSnapshot**](#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
+Method | HTTP request
+------------- | -------------
+[**anchorPointsCreateNewAnchorPoint**](#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create
+[**anchorPointsDeleteSpecificAnchorPoint**](#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete
+[**anchorPointsSnapshot**](#anchorpointssnapshot) | **GET** /anchor_points
 
 
 <a id="anchorPointsCreateNewAnchorPoint"></a>
-## **anchorPointsCreateNewAnchorPoint**
+## **anchorPointsCreateNewAnchorPoint** {#anchorpointscreatenewanchorpoint}
 > AnchorPoint anchorPointsCreateNewAnchorPoint(transferables, seededAnchorPoint)
 
 /anchor_points/create [POST]
@@ -20,8 +20,8 @@ This will create a anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -59,7 +59,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="anchorPointsDeleteSpecificAnchorPoint"></a>
-## **anchorPointsDeleteSpecificAnchorPoint**
+## **anchorPointsDeleteSpecificAnchorPoint** {#anchorpointsdeletespecificanchorpoint}
 > anchorPointsDeleteSpecificAnchorPoint(anchorPoint)
 
 /anchor_points/\{anchor_point\}/delete [POST]
@@ -69,8 +69,8 @@ This will delete a specific anchorPoint!
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorPointsApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -105,7 +105,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="anchorPointsSnapshot"></a>
-## **anchorPointsSnapshot**
+## **anchorPointsSnapshot** {#anchorpointssnapshot}
 > AnchorPoints anchorPointsSnapshot(transferables)
 
 /anchor_points [GET]
@@ -115,8 +115,8 @@ This will get a snapshot of all your anchorPoints.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorDisassociateAsset**](#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
-[**anchorsCreateNewAnchor**](#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchorsDeleteSpecificAnchor**](#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
-[**anchorsSnapshot**](#anchorssnapshot) | **GET** /anchors | /anchors [GET]
+Method | HTTP request
+------------- | -------------
+[**anchorDisassociateAsset**](#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\}
+[**anchorsCreateNewAnchor**](#anchorscreatenewanchor) | **POST** /anchors/create
+[**anchorsDeleteSpecificAnchor**](#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete
+[**anchorsSnapshot**](#anchorssnapshot) | **GET** /anchors
 
 
 <a id="anchorDisassociateAsset"></a>
-## **anchorDisassociateAsset**
+## **anchorDisassociateAsset** {#anchordisassociateasset}
 > anchorDisassociateAsset(anchor, asset)
 
 /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
@@ -21,8 +21,8 @@ This will update both the asset and the anchor reference, that will remove a anc
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorsApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -59,7 +59,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="anchorsCreateNewAnchor"></a>
-## **anchorsCreateNewAnchor**
+## **anchorsCreateNewAnchor** {#anchorscreatenewanchor}
 > Anchor anchorsCreateNewAnchor(transferables, seededAnchor)
 
 /anchors/create [POST]
@@ -69,8 +69,8 @@ This will create a anchor and attach it to a specific asset(s) This will also en
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -108,7 +108,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="anchorsDeleteSpecificAnchor"></a>
-## **anchorsDeleteSpecificAnchor**
+## **anchorsDeleteSpecificAnchor** {#anchorsdeletespecificanchor}
 > anchorsDeleteSpecificAnchor(anchor)
 
 /anchors/\{anchor\}/delete [POST]
@@ -118,8 +118,8 @@ This will delete a specific anchor!
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorsApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -154,7 +154,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="anchorsSnapshot"></a>
-## **anchorsSnapshot**
+## **anchorsSnapshot** {#anchorssnapshot}
 > Anchors anchorsSnapshot(transferables)
 
 /anchors [GET]
@@ -164,8 +164,8 @@ This will get a snapshot of all your anchors.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = AnchorsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

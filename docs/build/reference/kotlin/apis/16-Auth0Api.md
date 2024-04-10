@@ -2,16 +2,16 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**auth0Logout**](#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchangeForAuth0Token**](#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+Method | HTTP request
+------------- | -------------
+[**auth0Logout**](#auth0logout) | **GET** /v2/logout
+[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize
+[**exchangeForAuth0Token**](#exchangeforauth0token) | **POST** /oauth/token
+[**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo
 
 
 <a id="auth0Logout"></a>
-## **auth0Logout**
+## **auth0Logout** {#auth0logout}
 > kotlin.String auth0Logout(clientId, returnTo)
 
 https://auth.pieces.services/v2/logout [GET]
@@ -21,8 +21,8 @@ https://auth0.com/docs/api/authentication#logout
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = Auth0Api()
 val clientId : kotlin.String = clientId_example // kotlin.String | The client ID of the Auth0 Instance
@@ -60,7 +60,7 @@ No authorization required
  - **Accept**: Not defined
 
 <a id="authorizeAuth0"></a>
-## **authorizeAuth0**
+## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
 
 https://auth.pieces.services/authorize [GET]
@@ -70,8 +70,8 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = Auth0Api()
 val audience : kotlin.String = https://pieces.us.auth0.com/api/v2/ // kotlin.String |  The unique identifier of the target API you want to access.
@@ -127,7 +127,7 @@ No authorization required
  - **Accept**: application/x-www-form-urlencoded
 
 <a id="exchangeForAuth0Token"></a>
-## **exchangeForAuth0Token**
+## **exchangeForAuth0Token** {#exchangeforauth0token}
 > OAuthToken exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
 
 https://auth.pieces.services/oauth/token [POST]
@@ -137,8 +137,8 @@ An endpoint to generate a OAuth Token for an authentication flow.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = Auth0Api()
 val grantType : kotlin.String = grantType_example // kotlin.String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -186,7 +186,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="getAuth0UserInfo"></a>
-## **getAuth0UserInfo**
+## **getAuth0UserInfo** {#getauth0userinfo}
 > Auth0User getAuth0UserInfo()
 
 https://auth.pieces.services/userinfo [GET]
@@ -196,8 +196,8 @@ Get the users info from the Auth0 API
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = Auth0Api()
 try {
@@ -213,7 +213,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
 
 ### Return type
 

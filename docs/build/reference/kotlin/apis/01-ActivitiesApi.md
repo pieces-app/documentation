@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**activitiesCreateNewActivity**](#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
-[**activitiesDeleteSpecificActivity**](#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
-[**activitiesSnapshot**](#activitiessnapshot) | **GET** /activities | /activities [GET]
+Method | HTTP request
+------------- | -------------
+[**activitiesCreateNewActivity**](#activitiescreatenewactivity) | **POST** /activities/create
+[**activitiesDeleteSpecificActivity**](#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete
+[**activitiesSnapshot**](#activitiessnapshot) | **GET** /activities
 
 
 <a id="activitiesCreateNewActivity"></a>
-## **activitiesCreateNewActivity**
+## **activitiesCreateNewActivity** {#activitiescreatenewactivity}
 > Activity activitiesCreateNewActivity(transferables, seededActivity)
 
 /activities/create [POST]
@@ -20,8 +20,8 @@ This will create a new Activity.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = ActivitiesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -59,7 +59,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="activitiesDeleteSpecificActivity"></a>
-## **activitiesDeleteSpecificActivity**
+## **activitiesDeleteSpecificActivity** {#activitiesdeletespecificactivity}
 > activitiesDeleteSpecificActivity(activity)
 
 /activities/\{activity\}/delete [POST]
@@ -69,8 +69,8 @@ This will delete a specific activity.  important note: if we delete an activity:
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = ActivitiesApi()
 val activity : kotlin.String = activity_example // kotlin.String | This is a specific activity uuid.
@@ -105,7 +105,7 @@ No authorization required
  - **Accept**: application/json
 
 <a id="activitiesSnapshot"></a>
-## **activitiesSnapshot**
+## **activitiesSnapshot** {#activitiessnapshot}
 > Activities activitiesSnapshot(transferables, pseudo)
 
 /activities [GET]
@@ -115,8 +115,8 @@ This will get a snapshot of all of the activities
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+// import org.openapitools.client.infrastructure.*
+// import org.openapitools.client.models.*
 
 val apiInstance = ActivitiesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
