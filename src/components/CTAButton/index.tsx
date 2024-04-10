@@ -2,16 +2,20 @@ import {useColorMode} from '@docusaurus/theme-common';
 import Image from "../Image";
 
 type CTAButtonProps = {
-  label: string
-  href: string
+  label?: string
+  href?: string
   // Primary is larger, secondary is smaller
   type?: 'primary' | 'secondary'
   icon?: string
   iconDark?: string
+  disabled?: boolean
 }
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
   const {colorMode} = useColorMode();
+
+  // If the href starts with http, open in a new tab
+  const newTab = props.href?.startsWith('http');
 
   return (
     <a
@@ -20,6 +24,9 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       style={{
         fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
       }}
+      aria-disabled={props.disabled}
+      target={newTab ? '_blank' : '_self'}
+      rel={newTab ? 'noopener noreferrer' : undefined}
     >
       {props.icon || props.iconDark ? (
         colorMode === 'dark' && props.iconDark ? (

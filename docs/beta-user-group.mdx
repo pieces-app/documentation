@@ -1,0 +1,84 @@
+---
+title: Pieces Beta User Program
+description: The Pieces Beta User Program is a way for us to test new features with our users before they are released to the public.
+---
+
+import Image2x1 from '/src/components/Image2x1'
+
+Thank you so much for participating in one of the very first Early Access Beta Programs on the Pieces for Developers Platform. Your contributions will help shape the future of what developer productivity looks like and we are truly excited to have you on this journey with us.
+
+This document outlines all the information you will need to know as you officially participate in our Early Access Program bringing you our Workstream Pattern Engine and the world’s first Temporally Grounded Copilot.
+
+:::info
+
+We will keep this page updated as much as possible but the active communication will be taking place on Discord, so if you have not joined there please [do so now](https://discord.gg/qPd2748b7s).
+
+If you’re already a Discord user, please message [mason-at-pieces](https://discord.com/users/112015890194706432) on Discord and he will add you to the channel.
+
+:::
+
+## What Are We Testing?
+Pieces for Developers has thus far been a productivity tool that is integrated into all of your tools using plugins and extensions, and allows users to have deep contextual conversations when they manually add context from folders, files, snippets, etc. While this is useful and the users love it, we want to go one step further.
+
+Our goal is to push the limits of intelligent Copilot interactions through truly horizontal context awareness across the operating system, enabling your copilot to understand what you've been working on and keep up with the productivity demands that developers deal with every day. Together with your help, the Pieces Copilot will become the first that can understand recent workstream contexts, eliminating the need for manual grounding.
+
+## The Workstream Pattern Engine
+The workflow context will come from the Workstream Pattern Engine, an “intelligently on” system that shadows your day-to-day work in progress journey to capture relevant workflow materials and temporally ground your Pieces Copilot Chats with relevant and recent context. Practically, this enables natural questions such as "What was I talking to Mack about this morning?" or "What did I get done today?" allowing your Pieces Copilot to truly extend your train of thought and let you spend less time trying to track things down or capture context and more time doing the things you love, like building amazing software.
+
+The workstream pattern engine will start working once we enable your account on a specific version of Pieces OS and Pieces Desktop App. Shortly after, you will be able to interact within your Copilot Chats; specifically in the Pieces Desktop App, via a new "Workstream Chat Pipeline."
+
+![Workstream Pipeline](/beta-user-group/workstream-pipeline.png)
+
+## Data and Privacy
+**Your workstream data is captured and stored locally on-device.** At no point will anyone, including the Pieces team, have access to this data unless you choose to share it with us.
+
+The Workstream Pattern Engine triangulates and leverages on-task and technical context across developer-specific tools you're actively using. The bulk of the processing that occurs within the Workstream Pattern Engine is filtering, which utilizes our on-device machine learning engines to ignore sensitive information, PIID, non-technical language, secrets, and anything else unrelated to the code you're writing and the technical tasks you're engaging in. This enables the highest levels of performance, security, and privacy.
+
+Lastly, for some advanced components within the Workstream Pattern Engine, blended processing is required to be set via user preferences and you will need to leverage a cloud-powered Large Language Model as your copilot’s runtime.
+
+That said, you can leverage Local Large Language Models, but this may reduce the fidelity of output and requires a fairly new machine (2021 and newer) and ideally a dedicated GPU for this. You can read [this blog](https://code.pieces.app/blog/how-to-run-an-llm-locally-with-pieces) for more information about running local models on your machine.
+
+As always, we've built Pieces from the ground up to put you in control. With that, **the Workstream Pattern Engine may be paused and resumed at any time.** Additionally, users may also clear locally persisted data and opt out of the Workstream Pattern Engine Early Access Program with a simple request to the team. Details on how to pause or opt-out may be found below.
+
+## Goals of the Beta Test
+Our main priority for this test is to test the workstream pattern engine in as many development environments and tooling configurations as possible. From you, we want to hear pain points, any confusion you have regarding how the feature works, if you feel it adds value to your daily workflow, and **how we can make it more valuable.**
+
+## Beta Tester Expectations
+As part of our beta user group, you will be expected to:
+- Use the workstream context pipeline as often as makes sense with your workflow, minimum ten times during the beta testing period. We’re aiming to release this the week of April 15-19 with the intention of running the test for two weeks.
+- Report any bugs you find in the discord group, and be willing to join a live call if necessary to debug.
+- Provide regular feedback during the test via conversations and quick responses in the discord
+- Complete a survey at the end of your experience detailing your experience with the workstream pattern engine.
+
+## Best Practices
+As with any interaction with an LLM, good prompting practices will improve your experience greatly. Through the Workstream Pattern Engine, the Pieces Copilot is able to understand what you’re working on, including files, websites, folders, etc and with whom. Therefore, you are now able to ask even more natural questions that feel like extensions of thought.
+
+Here are some examples of what's now possible:
+- “Can you summarize the readme file from the pieces_for_x repo?”
+- “What did Sam have to say about the All Hands meeting in the GChat MLChat channel?”
+- “Generate a script in python using the function I saw on W3Schools to create a variable named xyz”
+- “Take the function from example_function.dart and add it as a method to the class in example_class.dart”
+- “What did Mark say about requests to the xyz api in slack?”
+
+## Communication
+Our main form of communication will be via Discord, so please join our discord using [this link](https://discord.gg/qPd2748b7s) if you haven’t already, which will place you in the beta group channel.
+
+If you’re already a Discord user, please message [mason-at-pieces](https://discord.com/users/112015890194706432) on Discord and he will add you to the channel.
+
+## Toggling On/Off
+You can toggle the Workstream Pattern Engine off at any time if you are working on something that you do not want to be used as context for conversations. You do this in the copilot chat.
+
+<Image2x1>
+  ![Toggle On](/beta-user-group/toggle-on.png)
+
+  ![Toggle Off](/beta-user-group/toggle-off.png)
+</Image2x1>
+
+## Opting In/Out
+If you decide to completely opt-out of this beta test, you can do this by clicking on your Beta User badge on your user profile icon, or in the main settings of the desktop app under “Account & Cloud Integrations.”
+
+![Opt Out](/beta-user-group/beta-comms-and-opt-out.png)
+
+## Help and Support
+If you need any assistance during the beta test, please either post in [the Discord group](https://discord.gg/qPd2748b7s) or reach out directly to rosie@pieces.app
+
