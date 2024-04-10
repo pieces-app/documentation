@@ -1,16 +1,16 @@
 
-# Space
+# Space Model
 
 This is used in the TrackedAssetsEventSearchMetadata
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **size** | **number**
 **duration** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { Space } from '@pieces.app/pieces-os-client'

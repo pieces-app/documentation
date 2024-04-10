@@ -1,8 +1,8 @@
 
-# SystemExecutionCpuInformation
+# SystemExecutionCpuInformation Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **brand** | **string**
 **frequency** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { SystemExecutionCpuInformation } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# FlattenedWorkstreamSummary
+# FlattenedWorkstreamSummary Model
 
 This is a DAG-Safe minimal representation of a workstream summary
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -24,7 +24,7 @@ Name | Type
 **persons** | [**FlattenedPersons**](FlattenedPersons)
 **applications** | [**Applications**](Applications)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedWorkstreamSummary } from '@pieces.app/pieces-os-client'

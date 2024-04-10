@@ -1,14 +1,14 @@
 
-# Role
+# Role Model
 
 This is the specific role of a format.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { Role } from '@pieces.app/pieces-os-client'

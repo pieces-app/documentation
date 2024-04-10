@@ -1,9 +1,9 @@
 
-# TrackedAssetEventIdentifierDescriptionPairs
+# TrackedAssetEventIdentifierDescriptionPairs Model
 
 These are all of the available event types that are permitted in an object pair notation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -45,7 +45,7 @@ Name | Type
 **assetAnchorDeleted** | **string**
 **assetAnchorUpdated** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedAssetEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

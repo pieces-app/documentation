@@ -1,9 +1,9 @@
 
-# Sensitives
+# Sensitives Model
 
 This is a model that represents many individual sensitive pieces of data.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;Sensitive&gt;**](Sensitive)
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Sensitives } from '@pieces.app/pieces-os-client'

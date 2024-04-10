@@ -1,15 +1,15 @@
 
-# SeededGitHubDistribution
+# SeededGitHubDistribution Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **gist** | [**SeededGitHubGistDistribution**](SeededGitHubGistDistribution)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededGitHubDistribution } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# FlattenedTag
+# FlattenedTag Model
 
 This is a Flattened Version of a Tag.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **persons** | [**FlattenedPersons**](FlattenedPersons)
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedTag } from '@pieces.app/pieces-os-client'

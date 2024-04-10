@@ -1,10 +1,10 @@
-# UltraSuite API
+# UltraSuite Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**assetsCreateUltraSuiteAsset****](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
+[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
 
 
 ## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This Endpoint will create an Asset that is sent from UltraSuite.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.assetsCreateUltraSuiteAsset(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededUltraSuiteAsset** | **SeededUltraSuiteAsset**|  |
 
 
-### Return type
+### Return Model type
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

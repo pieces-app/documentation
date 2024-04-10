@@ -1,9 +1,9 @@
 
-# SeededDiscoverableAsset
+# SeededDiscoverableAsset Model
 
 Assumption: filters applied in this model will overwrite filters passed in SeededDiscoverableAssets
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **directory** | **string**
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededDiscoverableAsset } from '@pieces.app/pieces-os-client'

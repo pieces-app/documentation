@@ -1,12 +1,12 @@
-# Distributions API
+# Distributions Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**distributionsCreateNewDistribution****](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create
-[**distributionsDeleteSpecificDistribution****](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
-[**distributionsSnapshot****](DistributionsApi#distributionssnapshot) | **GET** /distributions
+[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create
+[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
+[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions
 
 
 ## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create a new distribution.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.distributionsCreateNewDistribution(body).then((data: Distribution) =
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededDistribution** | **SeededDistribution**|  |
 
 
-### Return type
+### Return Model type
 
 [**Distribution**](../models/Distribution)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific distribution.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.distributionsDeleteSpecificDistribution(body).then((data: void (empt
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -106,7 +106,7 @@ void (empty response body)
 
 This will get a specific snapshot of all our distributions.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,21 +119,21 @@ apiInstance.distributionsSnapshot().then((data: Distributions) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Distributions**](../models/Distributions)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

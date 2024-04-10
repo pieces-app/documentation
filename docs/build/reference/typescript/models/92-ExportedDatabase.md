@@ -1,8 +1,8 @@
 
-# ExportedDatabase
+# ExportedDatabase Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -38,7 +38,7 @@ Name | Type
 **messageValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats)
 **workstreamEventValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats)
 
-## Example
+## Example Model
 
 ```typescript
 import { ExportedDatabase } from '@pieces.app/pieces-os-client'

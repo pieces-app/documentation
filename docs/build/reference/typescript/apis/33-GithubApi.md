@@ -1,10 +1,10 @@
-# Github API
+# Github Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**importGithubGists****](GithubApi#importgithubgists) | **POST** /github/gists/import
+[**importGithubGists**](GithubApi#importgithubgists) | **POST** /github/gists/import
 
 
 ## **importGithubGists** {#importgithubgists}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users\' gists. implemented. v2. can get specific a public gist.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,7 +32,7 @@ apiInstance.importGithubGists(body).then((data: Seeds) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -40,17 +40,17 @@ Name | Type | Description  | Notes
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 
 
-### Return type
+### Return Model type
 
 [**Seeds**](../models/Seeds)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

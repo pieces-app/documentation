@@ -1,11 +1,11 @@
-# Allocation API
+# Allocation Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**allocationSnapshot****](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\}
-[**allocationUpdate****](AllocationApi#allocationupdate) | **POST** /allocation/update
+[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\}
+[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update
 
 
 ## **allocationSnapshot** {#allocationsnapshot}
@@ -13,7 +13,7 @@ Method | HTTP request
 
 This will get a snapshot of a specific allocation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,24 +31,24 @@ apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 This will update a specific allocation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -77,24 +77,24 @@ apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return type
+### Return Model type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

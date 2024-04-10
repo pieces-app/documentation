@@ -1,9 +1,9 @@
 
-# PreonboardedPersonaDetails
+# PreonboardedPersonaDetails Model
 
 This is an input body for the /machine_learning/text/technical_processing/generators/personification endpoint.  This will accept some of the personal details ie languages/personas && will transform this in to onbaording snippets
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **languages** | **Array&lt;string&gt;**
 **personas** | **Array&lt;string&gt;**
 
-## Example
+## Example Model
 
 ```typescript
 import { PreonboardedPersonaDetails } from '@pieces.app/pieces-os-client'

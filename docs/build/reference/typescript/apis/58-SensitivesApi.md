@@ -1,12 +1,12 @@
-# Sensitives API
+# Sensitives Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**sensitivesCreateNewSensitive****](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create
-[**sensitivesDeleteSensitive****](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete
-[**sensitivesSnapshot****](SensitivesApi#sensitivessnapshot) | **GET** /sensitives
+[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create
+[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete
+[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives
 
 
 ## **sensitivesCreateNewSensitive** {#sensitivescreatenewsensitive}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create a new sensitive model.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.sensitivesCreateNewSensitive(body).then((data: Sensitive) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededSensitive** | **SeededSensitive**|  |
 
 
-### Return type
+### Return Model type
 
 [**Sensitive**](../models/Sensitive)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 This will delete a sensitive based on the sensitive uuid.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.sensitivesDeleteSensitive(body).then((data: void (empty response bod
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | [**string**] | This is a uuid that represents a sensitive. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -106,7 +106,7 @@ void (empty response body)
 
 This will get a snapshot of all of the sensitives.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,21 +119,21 @@ apiInstance.sensitivesSnapshot().then((data: Sensitives) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Sensitives**](../models/Sensitives)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

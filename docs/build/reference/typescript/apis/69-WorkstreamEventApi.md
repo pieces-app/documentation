@@ -1,14 +1,14 @@
-# WorkstreamEvent API
+# WorkstreamEvent Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**workstreamEventAssociateWorkstreamSummary****](WorkstreamEventApi#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
-[**workstreamEventDisassociateWorkstreamSummary****](WorkstreamEventApi#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**workstreamEventScoresIncrement****](WorkstreamEventApi#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment
-[**workstreamEventUpdate****](WorkstreamEventApi#workstreameventupdate) | **POST** /workstream_event/update
-[**workstreamEventsSpecificWorkstreamEventSnapshot****](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
+[**workstreamEventAssociateWorkstreamSummary**](WorkstreamEventApi#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
+[**workstreamEventDisassociateWorkstreamSummary**](WorkstreamEventApi#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**workstreamEventScoresIncrement**](WorkstreamEventApi#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment
+[**workstreamEventUpdate**](WorkstreamEventApi#workstreameventupdate) | **POST** /workstream_event/update
+[**workstreamEventsSpecificWorkstreamEventSnapshot**](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
 
 
 ## **workstreamEventAssociateWorkstreamSummary** {#workstreameventassociateworkstreamsummary}
@@ -16,7 +16,7 @@ Method | HTTP request
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -36,7 +36,7 @@ apiInstance.workstreamEventAssociateWorkstreamSummary(body).then((data: void (em
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -44,17 +44,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -65,7 +65,7 @@ void (empty response body)
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -85,7 +85,7 @@ apiInstance.workstreamEventDisassociateWorkstreamSummary(body).then((data: void 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -93,17 +93,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -114,7 +114,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -134,7 +134,7 @@ apiInstance.workstreamEventScoresIncrement(body).then((data: void (empty respons
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -142,17 +142,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -163,7 +163,7 @@ void (empty response body)
 
 This will update a specific workstream_event.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -183,7 +183,7 @@ apiInstance.workstreamEventUpdate(body).then((data: WorkstreamEvent) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -191,17 +191,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of a single workstream_event.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -232,7 +232,7 @@ apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(body).then((data: Wo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -240,17 +240,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

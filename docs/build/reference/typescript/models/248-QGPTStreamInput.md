@@ -1,9 +1,9 @@
 
-# QGPTStreamInput
+# QGPTStreamInput Model
 
 This is the input for the /qgpt/stream endpoint.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **stop** | **boolean**
 **agent** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTStreamInput } from '@pieces.app/pieces-os-client'

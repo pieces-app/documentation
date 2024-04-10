@@ -1,8 +1,8 @@
 
-# SeededDiscoverableSensitives
+# SeededDiscoverableSensitives Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **iterable** | [**Array&lt;SeededDiscoverableSensitive&gt;**](SeededDiscoverableSensitive)
 **application** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededDiscoverableSensitives } from '@pieces.app/pieces-os-client'

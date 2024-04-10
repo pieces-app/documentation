@@ -1,9 +1,9 @@
 
-# ReferencedWorkstreamSummary
+# ReferencedWorkstreamSummary Model
 
 this is a referenced minimal version of a WorkstreamSummary typically just our uuid.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedWorkstreamSummary**](FlattenedWorkstreamSummary)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedWorkstreamSummary } from '@pieces.app/pieces-os-client'

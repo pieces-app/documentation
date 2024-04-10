@@ -1,9 +1,9 @@
 
-# TimestampRange
+# TimestampRange Model
 
 if you want a range between you can use from && to.  if you want anything before, use to and NO from.  if you want anything after, use from and NO to.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **to** | [**GroupedTimestamp**](GroupedTimestamp)
 **between** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { TimestampRange } from '@pieces.app/pieces-os-client'

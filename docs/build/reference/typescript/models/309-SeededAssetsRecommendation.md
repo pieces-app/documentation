@@ -1,9 +1,9 @@
 
-# SeededAssetsRecommendation
+# SeededAssetsRecommendation Model
 
 This is the input data model for the /assets/recommend [GET] endpoint. It includes both a list of assets but also 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **assets** | [**Assets**](Assets)
 **interactions** | [**InteractedAssets**](InteractedAssets)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededAssetsRecommendation } from '@pieces.app/pieces-os-client'

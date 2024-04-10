@@ -1,9 +1,9 @@
 
-# PreupdatedExternalProvider APIKey
+# PreupdatedExternalProvider Model APIKey
 
 This is the endput model for \"/external_provider/api_key/update\". everything but the uder will be optional, anything that is defined will get an update.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **user** | **string**
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { PreupdatedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

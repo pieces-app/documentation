@@ -1,16 +1,16 @@
 
-# FilePickerInput
+# FilePickerInput Model
 
 This is the input model for the FilePicker
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **allowedExtensions** | **Array&lt;string&gt;**
 
-## Example
+## Example Model
 
 ```typescript
 import { FilePickerInput } from '@pieces.app/pieces-os-client'

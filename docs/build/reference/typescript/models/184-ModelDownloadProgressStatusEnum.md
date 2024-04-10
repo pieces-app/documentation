@@ -1,14 +1,14 @@
 
-# ModelDownloadProgressStatusEnum
+# ModelDownloadProgressStatusEnum Model
 
 Enum used for the status of the progress in downloading a model.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { ModelDownloadProgressStatusEnum } from '@pieces.app/pieces-os-client'

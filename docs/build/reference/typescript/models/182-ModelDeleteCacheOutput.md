@@ -1,16 +1,16 @@
 
-# ModelDeleteCacheOutput
+# ModelDeleteCacheOutput Model
 
 This is the output model for \'/model/\{model\}/delete/cache\'
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **model** | [**ReferencedModel**](ReferencedModel)
 
-## Example
+## Example Model
 
 ```typescript
 import { ModelDeleteCacheOutput } from '@pieces.app/pieces-os-client'

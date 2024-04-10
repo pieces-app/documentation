@@ -1,14 +1,14 @@
 
-# ExternallySourcedEnum
+# ExternallySourcedEnum Model
 
 This is an enum that will highlight something that is externally sourced.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { ExternallySourcedEnum } from '@pieces.app/pieces-os-client'

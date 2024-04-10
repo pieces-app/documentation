@@ -1,12 +1,12 @@
-# Activities API
+# Activities Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**activitiesCreateNewActivity****](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create
-[**activitiesDeleteSpecificActivity****](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete
-[**activitiesSnapshot****](ActivitiesApi#activitiessnapshot) | **GET** /activities
+[**activitiesCreateNewActivity**](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create
+[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete
+[**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities
 
 
 ## **activitiesCreateNewActivity** {#activitiescreatenewactivity}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create a new Activity.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -34,7 +34,7 @@ apiInstance.activitiesCreateNewActivity(body).then((data: Activity) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +42,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Activity**](../models/Activity)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -81,24 +81,24 @@ apiInstance.activitiesDeleteSpecificActivity(body).then((data: void (empty respo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **activity** | [**string**] | This is a specific activity uuid. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -109,7 +109,7 @@ void (empty response body)
 
 This will get a snapshot of all of the activities
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -129,7 +129,7 @@ apiInstance.activitiesSnapshot(body).then((data: Activities) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -137,17 +137,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Activities**](../models/Activities)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

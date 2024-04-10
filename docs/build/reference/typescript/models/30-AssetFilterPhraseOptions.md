@@ -1,15 +1,15 @@
 
-# AssetFilterPhraseOptions
+# AssetFilterPhraseOptions Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **annotation** | [**AnnotationTypeEnum**](AnnotationTypeEnum)
 
-## Example
+## Example Model
 
 ```typescript
 import { AssetFilterPhraseOptions } from '@pieces.app/pieces-os-client'

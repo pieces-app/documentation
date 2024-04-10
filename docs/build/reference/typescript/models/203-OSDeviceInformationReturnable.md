@@ -1,9 +1,9 @@
 
-# OSDeviceInformationReturnable
+# OSDeviceInformationReturnable Model
 
 This is the returnable model for the /os/device/information.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **version** | **string**
 **hardware** | [**OSDeviceHardwareInformation**](OSDeviceHardwareInformation)
 
-## Example
+## Example Model
 
 ```typescript
 import { OSDeviceInformationReturnable } from '@pieces.app/pieces-os-client'

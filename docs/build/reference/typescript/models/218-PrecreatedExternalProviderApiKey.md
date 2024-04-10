@@ -1,9 +1,9 @@
 
-# PrecreatedExternalProvider APIKey
+# PrecreatedExternalProvider Model APIKey
 
 This is the input model for /external_provider/api_key/create
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **user** | **string**
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { PrecreatedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

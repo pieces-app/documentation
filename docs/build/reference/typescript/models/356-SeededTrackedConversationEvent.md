@@ -1,9 +1,9 @@
 
-# SeededTrackedConversationEvent
+# SeededTrackedConversationEvent Model
 
 This is a pre-created(seed) TrackedConversationEvent
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 **metadata** | [**TrackedConversationEventMetadata**](TrackedConversationEventMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededTrackedConversationEvent } from '@pieces.app/pieces-os-client'

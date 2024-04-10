@@ -1,24 +1,24 @@
-# Assets API
+# Assets Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**assetsCreateNewAsset****](AssetsApi#assetscreatenewasset) | **POST** /assets/create
-[**assetsDeleteAsset****](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete
-[**assetsDraft****](AssetsApi#assetsdraft) | **POST** /assets/draft
-[**assetsGetRecommendedAssets****](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended
-[**assetsGetRelatedAssets****](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related
-[**assetsIdentifiersSnapshot****](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers
-[**assetsPseudoSnapshot****](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo
-[**assetsSearchAssets****](AssetsApi#assetssearchassets) | **GET** /assets/search
-[**assetsSearchWithFilters****](AssetsApi#assetssearchwithfilters) | **POST** /assets/search
-[**assetsSnapshot****](AssetsApi#assetssnapshot) | **GET** /assets
-[**assetsSpecificAssetFormatsSnapshot****](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats
-[**assetsSpecificAssetSnapshot****](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\}
-[**assetsStreamIdentifiers****](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers
-[**getAssetsStreamTransferables****](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables
-[**streamAssets****](AssetsApi#streamassets) | **GET** /assets/stream
+[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create
+[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete
+[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft
+[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended
+[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related
+[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers
+[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo
+[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search
+[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search
+[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats
+[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\}
+[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers
+[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables
+[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream
 
 
 ## **assetsCreateNewAsset** {#assetscreatenewasset}
@@ -26,7 +26,7 @@ Method | HTTP request
 
 Accepts a seeded (a structure that comes before an asset, and will be used in creation) asset and uploads it to Pieces. The response will be the newly created Asset object.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -46,7 +46,7 @@ apiInstance.assetsCreateNewAsset(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -54,17 +54,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 Deletes a specific asset from the system by providing its unique identifier (UID). Upon successful deletion, it returns the UID of the deleted asset.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -92,24 +92,24 @@ apiInstance.assetsDeleteAsset(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 Allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -139,7 +139,7 @@ apiInstance.assetsDraft(body).then((data: Seed) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -147,17 +147,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Seed**](../models/Seed)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 Expects a SeededAssetsRecommendation Model in the request body, containing assets and interactions. Returns an Assets Model suitable for UI.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -186,24 +186,24 @@ apiInstance.assetsGetRecommendedAssets(body).then((data: Assets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAssetsRecommendation** | **SeededAssetsRecommendation**| The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. |
 
 
-### Return type
+### Return Model type
 
 [**Assets**](../models/Assets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -213,7 +213,7 @@ Name | Type | Description  | Notes
 
 Retrieves one or more related assets when provided with one or more input assets.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -231,24 +231,24 @@ apiInstance.assetsGetRelatedAssets(body).then((data: Assets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assets** | **Assets**| The body of the request is an object (Assets Model) with iterable internally. |
 
 
-### Return type
+### Return Model type
 
 [**Assets**](../models/Assets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 Retrieves all asset IDs associated with your account.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -276,24 +276,24 @@ apiInstance.assetsIdentifiersSnapshot(body).then((data: FlattenedAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**FlattenedAssets**](../models/FlattenedAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -317,21 +317,21 @@ apiInstance.assetsPseudoSnapshot().then((data: PseudoAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**PseudoAssets**](../models/PseudoAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -342,7 +342,7 @@ This endpoint does not need any parameters.
 
 Performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -366,7 +366,7 @@ apiInstance.assetsSearchAssets(body).then((data: SearchedAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -376,17 +376,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -397,7 +397,7 @@ Name | Type | Description  | Notes
 
 Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -419,7 +419,7 @@ apiInstance.assetsSearchWithFilters(body).then((data: AssetsSearchWithFiltersOut
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -428,17 +428,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**AssetsSearchWithFiltersOutput**](../models/AssetsSearchWithFiltersOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -449,7 +449,7 @@ Name | Type | Description  | Notes
 
 Get all of the users Assets.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -471,7 +471,7 @@ apiInstance.assetsSnapshot(body).then((data: Assets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -480,17 +480,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Assets**](../models/Assets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -500,7 +500,7 @@ Name | Type | Description  | Notes
 
 Retrieves the available formats for a specific asset identified by its ID
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -520,7 +520,7 @@ apiInstance.assetsSpecificAssetFormatsSnapshot(body).then((data: Formats) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -528,17 +528,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Formats**](../models/Formats)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -548,7 +548,7 @@ Name | Type | Description  | Notes
 
 Allows clients to retrieve details of a specific asset by providing its UUID in the path.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -568,7 +568,7 @@ apiInstance.assetsSpecificAssetSnapshot(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -576,17 +576,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | A specific asset per the provided asset id. |  -  |
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 
 Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -610,21 +610,21 @@ apiInstance.assetsStreamIdentifiers().then((data: StreamedIdentifiers) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**StreamedIdentifiers**](../models/StreamedIdentifiers)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -634,7 +634,7 @@ This endpoint does not need any parameters.
 
 Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -647,21 +647,21 @@ apiInstance.getAssetsStreamTransferables().then((data: Assets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Assets**](../models/Assets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -671,7 +671,7 @@ This endpoint does not need any parameters.
 
 IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -684,21 +684,21 @@ apiInstance.streamAssets().then((data: Assets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Assets**](../models/Assets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

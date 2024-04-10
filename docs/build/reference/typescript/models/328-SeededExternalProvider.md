@@ -1,15 +1,15 @@
 
-# SeededExternalProvider
+# SeededExternalProvider Model
 
 This is the minimum information needed to connect an additional provider.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **type** | [**ExternalProviderTypeEnum**](ExternalProviderTypeEnum)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededExternalProvider } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
-# Range API
+# Range Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**rangeAssociateConversationGroundingTemporalRangeWorkstreams****](RangeApi#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\}
-[**rangeAssociateWorkstreamSummary****](RangeApi#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\}
-[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams****](RangeApi#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\}
-[**rangeDisassociateWorkstreamSummary****](RangeApi#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**rangeScoresIncrement****](RangeApi#rangescoresincrement) | **POST** /range/\{range\}/scores/increment
-[**rangeUpdate****](RangeApi#rangeupdate) | **POST** /range/update
-[**rangesSpecificRangeSnapshot****](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\}
+[**rangeAssociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\}
+[**rangeAssociateWorkstreamSummary**](RangeApi#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\}
+[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\}
+[**rangeDisassociateWorkstreamSummary**](RangeApi#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**rangeScoresIncrement**](RangeApi#rangescoresincrement) | **POST** /range/\{range\}/scores/increment
+[**rangeUpdate**](RangeApi#rangeupdate) | **POST** /range/update
+[**rangesSpecificRangeSnapshot**](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\}
 
 
 ## **rangeAssociateConversationGroundingTemporalRangeWorkstreams** {#rangeassociateconversationgroundingtemporalrangeworkstreams}
@@ -18,7 +18,7 @@ Method | HTTP request
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -38,7 +38,7 @@ apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(body).th
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -46,17 +46,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -67,7 +67,7 @@ void (empty response body)
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -87,7 +87,7 @@ apiInstance.rangeAssociateWorkstreamSummary(body).then((data: void (empty respon
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -95,17 +95,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -116,7 +116,7 @@ void (empty response body)
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -136,7 +136,7 @@ apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(body)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -144,17 +144,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -165,7 +165,7 @@ void (empty response body)
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -185,7 +185,7 @@ apiInstance.rangeDisassociateWorkstreamSummary(body).then((data: void (empty res
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -193,17 +193,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -214,7 +214,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -234,7 +234,7 @@ apiInstance.rangeScoresIncrement(body).then((data: void (empty response body)) =
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -242,17 +242,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -263,7 +263,7 @@ void (empty response body)
 
 This will update a specific range.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -281,24 +281,24 @@ apiInstance.rangeUpdate(body).then((data: Range) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **Range**|  |
 
 
-### Return type
+### Return Model type
 
 [**Range**](../models/Range)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -309,7 +309,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of a single range.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -327,24 +327,24 @@ apiInstance.rangesSpecificRangeSnapshot(body).then((data: Range) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Range**](../models/Range)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

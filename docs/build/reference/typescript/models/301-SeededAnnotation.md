@@ -1,9 +1,9 @@
 
-# SeededAnnotation
+# SeededAnnotation Model
 
 This is the percursor to a fully referenced Annotation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **conversation** | **string**
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededAnnotation } from '@pieces.app/pieces-os-client'

@@ -1,12 +1,12 @@
-# Annotations API
+# Annotations Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**annotationsCreateNewAnnotation****](AnnotationsApi#annotationscreatenewannotation) | **POST** /annotations/create
-[**annotationsDeleteSpecificAnnotation****](AnnotationsApi#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete
-[**annotationsSnapshot****](AnnotationsApi#annotationssnapshot) | **GET** /annotations
+[**annotationsCreateNewAnnotation**](AnnotationsApi#annotationscreatenewannotation) | **POST** /annotations/create
+[**annotationsDeleteSpecificAnnotation**](AnnotationsApi#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete
+[**annotationsSnapshot**](AnnotationsApi#annotationssnapshot) | **GET** /annotations
 
 
 ## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create an annotation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.annotationsCreateNewAnnotation(body).then((data: Annotation) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAnnotation** | **SeededAnnotation**|  |
 
 
-### Return type
+### Return Model type
 
 [**Annotation**](../models/Annotation)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 this will delete a specific annotation
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.annotationsDeleteSpecificAnnotation(body).then((data: void (empty re
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -106,7 +106,7 @@ void (empty response body)
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -124,24 +124,24 @@ apiInstance.annotationsSnapshot(body).then((data: Annotations) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotationTypeFilter** | [**&#39;DESCRIPTION&#39; | &#39;COMMENT&#39; | &#39;COMMENTATION&#39; | &#39;DOCUMENTATION&#39; | &#39;SUMMARIZATION&#39; | &#39;SUMMARY&#39; | &#39;EXPLANATION&#39; | &#39;GIT_COMMIT&#39;**]**Array\<&#39;DESCRIPTION&#39; &#124; &#39;COMMENT&#39; &#124; &#39;COMMENTATION&#39; &#124; &#39;DOCUMENTATION&#39; &#124; &#39;SUMMARIZATION&#39; &#124; &#39;SUMMARY&#39; &#124; &#39;EXPLANATION&#39; &#124; &#39;GIT_COMMIT&#39;\>** | This is an AnnotationTypeEnum as a optional filter. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Annotations**](../models/Annotations)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

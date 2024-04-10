@@ -1,16 +1,16 @@
 
-# FlattenedFormats
+# FlattenedFormats Model
 
 A collection of Formats specific to the authenticated user. [DAG Compatible - Directed Acyclic Graph Data Structure]  FlattenedFormats prevent Cycles in Reference because all outbound references are strings as opposed to crosspollinated objects. 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ReferencedFormat&gt;**](ReferencedFormat)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedFormats } from '@pieces.app/pieces-os-client'

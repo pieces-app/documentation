@@ -1,9 +1,9 @@
 
-# SeededTrackedAssetsEvent
+# SeededTrackedAssetsEvent Model
 
 An seeded event model that can occur at the assets level i.e. search 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **identifierDescriptionPair** | [**TrackedAssetsEventIdentifierDescriptionPairs**](TrackedAssetsEventIdentifierDescriptionPairs)
 **metadata** | [**SeededTrackedAssetsEventMetadata**](SeededTrackedAssetsEventMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededTrackedAssetsEvent } from '@pieces.app/pieces-os-client'

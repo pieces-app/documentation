@@ -1,8 +1,8 @@
 
-# SeededHint
+# SeededHint Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **text** | **string**
 **model** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededHint } from '@pieces.app/pieces-os-client'

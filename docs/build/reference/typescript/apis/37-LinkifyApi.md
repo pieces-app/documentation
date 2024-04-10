@@ -1,12 +1,12 @@
-# Linkify API
+# Linkify Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**linkify****](LinkifyApi#linkify) | **POST** /linkify
-[**linkifyMultiple****](LinkifyApi#linkifymultiple) | **POST** /linkify/multiple
-[**linkifyShareRevoke****](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke
+[**linkify**](LinkifyApi#linkify) | **POST** /linkify
+[**linkifyMultiple**](LinkifyApi#linkifymultiple) | **POST** /linkify/multiple
+[**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke
 
 
 ## **linkify** {#linkify}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.linkify(body).then((data: Shares) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **linkify** | **Linkify**|  |
 
 
-### Return type
+### Return Model type
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 - assumption that you have already backed up the asset\'s that you are sending to this endpoint.(b/c the assets are ids.)
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -81,24 +81,24 @@ apiInstance.linkifyMultiple(body).then((data: Shares) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **linkifyMultiple** | **LinkifyMultiple**|  |
 
 
-### Return type
+### Return Model type
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 This will revoke a link.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -131,24 +131,24 @@ apiInstance.linkifyShareRevoke(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK, this is the uuid of the share that was revoked. |  -  |

@@ -1,15 +1,15 @@
-# Anchor API
+# Anchor Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**anchorAssociateWorkstreamSummary****](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
-[**anchorDisassociateWorkstreamSummary****](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**anchorRename****](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename
-[**anchorScoresIncrement****](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
-[**anchorSpecificAnchorSnapshot****](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
-[**anchorUpdate****](AnchorApi#anchorupdate) | **POST** /anchor/update
+[**anchorAssociateWorkstreamSummary**](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
+[**anchorDisassociateWorkstreamSummary**](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
+[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename
+[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
+[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
+[**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update
 
 
 ## **anchorAssociateWorkstreamSummary** {#anchorassociateworkstreamsummary}
@@ -17,7 +17,7 @@ Method | HTTP request
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -37,7 +37,7 @@ apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty respo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -45,17 +45,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -66,7 +66,7 @@ void (empty response body)
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -86,7 +86,7 @@ apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty re
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -94,17 +94,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -115,7 +115,7 @@ void (empty response body)
 
 This will rename a specific anchor.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -135,7 +135,7 @@ apiInstance.anchorRename(body).then((data: Anchor) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -143,17 +143,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -184,7 +184,7 @@ apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -192,17 +192,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -213,7 +213,7 @@ void (empty response body)
 
 This will get a snapshot of a single anchor.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -233,7 +233,7 @@ apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -241,17 +241,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 
 This will update a specific anchor.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -282,7 +282,7 @@ apiInstance.anchorUpdate(body).then((data: Anchor) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -290,17 +290,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

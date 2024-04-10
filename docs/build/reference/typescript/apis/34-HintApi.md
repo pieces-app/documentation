@@ -1,12 +1,12 @@
-# Hint API
+# Hint Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**hintScoresIncrement****](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
-[**hintSpecificHintSnapshot****](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
-[**hintUpdate****](HintApi#hintupdate) | **POST** /hint/update
+[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
+[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
+[**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update
 
 
 ## **hintScoresIncrement** {#hintscoresincrement}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -34,7 +34,7 @@ apiInstance.hintScoresIncrement(body).then((data: void (empty response body)) =>
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +42,17 @@ Name | Type | Description  | Notes
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -63,7 +63,7 @@ void (empty response body)
 
 This will get a snapshot of a specific hint.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -81,24 +81,24 @@ apiInstance.hintSpecificHintSnapshot(body).then((data: Hint) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Hint**](../models/Hint)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 This will update a specific hint.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -127,24 +127,24 @@ apiInstance.hintUpdate(body).then((data: Hint) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **Hint**|  |
 
 
-### Return type
+### Return Model type
 
 [**Hint**](../models/Hint)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

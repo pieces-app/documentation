@@ -1,16 +1,16 @@
 
-# OpenAIModelsListInput
+# OpenAIModelsListInput Model
 
 This is the input model for the /open_ai/models/list endpoint.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **user** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { OpenAIModelsListInput } from '@pieces.app/pieces-os-client'

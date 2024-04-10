@@ -1,9 +1,9 @@
 
-# Persons
+# Persons Model
 
 This is the plural of Person. will have top level meta about the person including an iterable of all the person.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { Persons } from '@pieces.app/pieces-os-client'

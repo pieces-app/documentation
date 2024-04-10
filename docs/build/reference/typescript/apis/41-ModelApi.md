@@ -1,16 +1,16 @@
-# Model API
+# Model Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**modelSpecificModelDownload****](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download
-[**modelSpecificModelDownloadCancel****](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
-[**modelSpecificModelDownloadProgress****](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
-[**modelSpecificModelLoad****](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load
-[**modelSpecificModelUnload****](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload
-[**modelUpdate****](ModelApi#modelupdate) | **POST** /model/update
-[**modelsSpecificModelSnapshot****](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
+[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download
+[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
+[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
+[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load
+[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload
+[**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update
+[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
 
 
 ## **modelSpecificModelDownload** {#modelspecificmodeldownload}
@@ -18,7 +18,7 @@ Method | HTTP request
 
 Downloads a specific model to your local machine.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -36,24 +36,24 @@ apiInstance.modelSpecificModelDownload(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 Cancels a specific model download that is currently in progress.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -82,24 +82,24 @@ apiInstance.modelSpecificModelDownloadCancel(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -128,24 +128,24 @@ apiInstance.modelSpecificModelDownloadProgress(body).then((data: ModelDownloadPr
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**ModelDownloadProgress**](../models/ModelDownloadProgress)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -174,24 +174,24 @@ apiInstance.modelSpecificModelLoad(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -220,24 +220,24 @@ apiInstance.modelSpecificModelUnload(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 Updates a machine learning model. This functionality is exclusively available for models with the \'custom:true\' setting.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -266,24 +266,24 @@ apiInstance.modelUpdate(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **Model**|  |
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -294,7 +294,7 @@ Name | Type | Description  | Notes
 
 Retrieves a specific ML model.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -312,24 +312,24 @@ apiInstance.modelsSpecificModelSnapshot(body).then((data: Model) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,9 +1,9 @@
 
-# ReferencedWorkstreamEvent
+# ReferencedWorkstreamEvent Model
 
 This is a minimal representation of a WorkstreamEvent event.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedWorkstreamEvent**](FlattenedWorkstreamEvent)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedWorkstreamEvent } from '@pieces.app/pieces-os-client'

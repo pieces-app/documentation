@@ -1,14 +1,14 @@
 
-# HintTypeEnum
+# HintTypeEnum Model
 
 This is the hint enum used to describe a type of hint.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { HintTypeEnum } from '@pieces.app/pieces-os-client'

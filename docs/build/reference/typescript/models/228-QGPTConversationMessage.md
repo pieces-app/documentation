@@ -1,9 +1,9 @@
 
-# QGPTConversationMessage
+# QGPTConversationMessage Model
 
 This will take a single message, and a role.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
 **timestamp** | [**GroupedTimestamp**](GroupedTimestamp)
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTConversationMessage } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# OCRAnalysis
+# OCRAnalysis Model
 
 This is the data collected during the ocr analysis of an image.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **image** | **string**
 **model** | [**Model**](Model)
 
-## Example
+## Example Model
 
 ```typescript
 import { OCRAnalysis } from '@pieces.app/pieces-os-client'

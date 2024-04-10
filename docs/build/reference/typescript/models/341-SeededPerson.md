@@ -1,9 +1,9 @@
 
-# SeededPerson
+# SeededPerson Model
 
 This is a per-cursor to a full person.  Will throw an error, if asset is passed in but acces.scope is undefined.  can optionally pass in our mechanism here, as the default will be manual unless specified.  TODO consider updating these asset, format to referenced Models  Note: model, access, mechanism will only be added if the asset is passed in.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **model** | [**PersonModel**](PersonModel)
 **annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededPerson } from '@pieces.app/pieces-os-client'

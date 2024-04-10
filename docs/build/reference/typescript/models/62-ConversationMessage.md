@@ -1,9 +1,9 @@
 
-# ConversationMessage
+# ConversationMessage Model
 
 This is a fully referenced ConversationMessage.  This has the minimum amount of properties to keep this light weight  (will consider additional properties in the future like people/tags/links xyz)
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **score** | [**Score**](Score)
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations)
 
-## Example
+## Example Model
 
 ```typescript
 import { ConversationMessage } from '@pieces.app/pieces-os-client'

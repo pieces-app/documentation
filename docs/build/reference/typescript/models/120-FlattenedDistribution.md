@@ -1,8 +1,8 @@
 
-# FlattenedDistribution
+# FlattenedDistribution Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **mailgun** | [**MailgunDistribution**](MailgunDistribution)
 **github** | [**GitHubDistribution**](GitHubDistribution)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedDistribution } from '@pieces.app/pieces-os-client'

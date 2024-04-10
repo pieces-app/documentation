@@ -1,9 +1,9 @@
 
-# SeededDistribution
+# SeededDistribution Model
 
 TODO if we add another distribution add to this, Distribution, and flattenedDistribution.  can only use this Model with our Linkify Model.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **mailgun** | [**MailgunDistribution**](MailgunDistribution)
 **github** | [**SeededGitHubDistribution**](SeededGitHubDistribution)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededDistribution } from '@pieces.app/pieces-os-client'

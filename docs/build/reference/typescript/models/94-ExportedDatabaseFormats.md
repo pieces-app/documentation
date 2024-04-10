@@ -1,15 +1,15 @@
 
-# ExportedDatabaseFormats
+# ExportedDatabaseFormats Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ExportedDatabaseFormat&gt;**](ExportedDatabaseFormat)
 
-## Example
+## Example Model
 
 ```typescript
 import { ExportedDatabaseFormats } from '@pieces.app/pieces-os-client'

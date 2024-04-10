@@ -1,15 +1,15 @@
 
-# SeededTrackedAdoptionEvent
+# SeededTrackedAdoptionEvent Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **identifierDescriptionPair** | [**AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs**](AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededTrackedAdoptionEvent } from '@pieces.app/pieces-os-client'

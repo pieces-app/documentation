@@ -1,9 +1,9 @@
 
-# SeededConnectorAsset
+# SeededConnectorAsset Model
 
 A generic model to use with the Connector API that requires little to no additional information about the current application.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **metadata** | [**SeededAssetMetadata**](SeededAssetMetadata)
 **format** | [**SeededFormat**](SeededFormat)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededConnectorAsset } from '@pieces.app/pieces-os-client'

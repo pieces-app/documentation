@@ -1,17 +1,17 @@
-# OS API
+# OS Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**linkProvider****](OSApi#linkprovider) | **POST** /os/link_provider
-[**osDeviceInformation****](OSApi#osdeviceinformation) | **GET** /os/device/information
-[**osRestart****](OSApi#osrestart) | **GET** /os/restart
-[**osUpdateCheck****](OSApi#osupdatecheck) | **POST** /os/update/check
-[**pickFiles****](OSApi#pickfiles) | **POST** /os/files/pick
-[**pickFolders****](OSApi#pickfolders) | **POST** /os/folders/pick
-[**signIntoOS****](OSApi#signintoos) | **POST** /os/sign_in
-[**signOutOfOS****](OSApi#signoutofos) | **POST** /os/sign_out
+[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider
+[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information
+[**osRestart**](OSApi#osrestart) | **GET** /os/restart
+[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check
+[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick
+[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick
+[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in
+[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out
 
 
 ## **linkProvider** {#linkprovider}
@@ -19,7 +19,7 @@ Method | HTTP request
 
 This will link an external provider to your current auth0 account.  Will throw errors if your user is not signed in.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -37,24 +37,24 @@ apiInstance.linkProvider(body).then((data: ReturnedUserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededExternalProvider** | **SeededExternalProvider**|  |
 
 
-### Return type
+### Return Model type
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 This will get information related to your specific device.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -79,21 +79,21 @@ apiInstance.osDeviceInformation().then((data: OSDeviceInformationReturnable) => 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**OSDeviceInformationReturnable**](../models/OSDeviceInformationReturnable)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -104,7 +104,7 @@ This endpoint does not need any parameters.
 
 This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS Only Endpoint.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -117,21 +117,21 @@ apiInstance.osRestart().then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -142,7 +142,7 @@ void (empty response body)
 
 This is a helper endpoint that will check the status of an update for PiecesOS. IE if there is an update downloading, if there is one available, but the downloading has not started... etc
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -160,24 +160,24 @@ apiInstance.osUpdateCheck(body).then((data: CheckedOSUpdate) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uncheckedOSUpdate** | **UncheckedOSUpdate**|  |
 
 
-### Return type
+### Return Model type
 
 [**CheckedOSUpdate**](../models/CheckedOSUpdate)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 
 This will trigger a filer picker and return the string paths of the files that were selected.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -206,24 +206,24 @@ apiInstance.pickFiles(body).then((data: Array\<string\>) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **filePickerInput** | **FilePickerInput**|  |
 
 
-### Return type
+### Return Model type
 
 **Array\<string\>**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 This will trigger a folder picker and return the string paths of the folders that were selected.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -247,21 +247,21 @@ apiInstance.pickFolders().then((data: Array\<string\>) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 **Array\<string\>**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -272,7 +272,7 @@ This endpoint does not need any parameters.
 
 A trigger that launches a Sign into OS Server
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -285,21 +285,21 @@ apiInstance.signIntoOS().then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -309,7 +309,7 @@ This endpoint does not need any parameters.
 
 A trigger that signs out a user from the OS
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -322,21 +322,21 @@ apiInstance.signOutOfOS().then((data: Users) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,16 +1,16 @@
 
-# Font
+# Font Model
 
 This will describe the font that the user sees.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **size** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { Font } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# AssetReclassification
+# AssetReclassification Model
 
 This is a model that will represent the miminum properties required to update the classification of this asset.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 **asset** | [**Asset**](Asset)
 
-## Example
+## Example Model
 
 ```typescript
 import { AssetReclassification } from '@pieces.app/pieces-os-client'

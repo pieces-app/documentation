@@ -1,16 +1,16 @@
 
-# ConversationSummarizeInput
+# ConversationSummarizeInput Model
 
 Optionally you may pass in a list of conversation message that you would like to use for the summary.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
 
-## Example
+## Example Model
 
 ```typescript
 import { ConversationSummarizeInput } from '@pieces.app/pieces-os-client'

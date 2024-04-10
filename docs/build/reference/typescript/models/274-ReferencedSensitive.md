@@ -1,9 +1,9 @@
 
-# ReferencedSensitive
+# ReferencedSensitive Model
 
 A reference to a sensitive which at minimum must have the Sensitive id. But in the case of a hydrated client API it may have a populated reference of type Sensitive.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedSensitive**](FlattenedSensitive)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedSensitive } from '@pieces.app/pieces-os-client'

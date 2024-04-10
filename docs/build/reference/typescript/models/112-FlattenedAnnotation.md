@@ -1,9 +1,9 @@
 
-# FlattenedAnnotation
+# FlattenedAnnotation Model
 
 This is the flattened Version of the annotation, IMPORTANT: when referencing these, ONLY Take the UUID, do NOT polinate(ie w/ asset/person/model) the FlattenedAnnotation as it can create an infinite loop.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -26,7 +26,7 @@ Name | Type
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedAnnotation } from '@pieces.app/pieces-os-client'

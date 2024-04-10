@@ -1,8 +1,8 @@
 
-# AnchorPoint
+# AnchorPoint Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor)
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { AnchorPoint } from '@pieces.app/pieces-os-client'

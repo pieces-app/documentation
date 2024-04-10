@@ -1,12 +1,12 @@
-# Search API
+# Search Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**fullTextSearch****](SearchApi#fulltextsearch) | **GET** /search/full_text
-[**neuralCodeSearch****](SearchApi#neuralcodesearch) | **GET** /search/neural_code
-[**tagBasedSearch****](SearchApi#tagbasedsearch) | **POST** /search/tag_based
+[**fullTextSearch**](SearchApi#fulltextsearch) | **GET** /search/full_text
+[**neuralCodeSearch**](SearchApi#neuralcodesearch) | **GET** /search/neural_code
+[**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based
 
 
 ## **fullTextSearch** {#fulltextsearch}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will run FTS for exact search, and will NOT run fuzzy matching. This will only search the content within the 
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -34,7 +34,7 @@ apiInstance.fullTextSearch(body).then((data: SearchedAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +42,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 This will run ncs on your assets. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -83,7 +83,7 @@ apiInstance.neuralCodeSearch(body).then((data: SearchedAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -91,17 +91,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 This will run our tag based search, and return the assets that best match your passed in tags. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -132,7 +132,7 @@ apiInstance.tagBasedSearch(body).then((data: SearchedAssets) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -140,17 +140,17 @@ Name | Type | Description  | Notes
  **pseudo** | [**boolean**] | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

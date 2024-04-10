@@ -1,13 +1,13 @@
-# Tags API
+# Tags Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**tagsCreateNewTag****](TagsApi#tagscreatenewtag) | **POST** /tags/create
-[**tagsDeleteSpecificTag****](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
-[**tagsExists****](TagsApi#tagsexists) | **POST** /tags/exists
-[**tagsSnapshot****](TagsApi#tagssnapshot) | **GET** /tags
+[**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create
+[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
+[**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists
+[**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags
 
 
 ## **tagsCreateNewTag** {#tagscreatenewtag}
@@ -15,7 +15,7 @@ Method | HTTP request
 
 This will create a new tag.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,7 +35,7 @@ apiInstance.tagsCreateNewTag(body).then((data: Tag) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -43,17 +43,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Tag**](../models/Tag)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific tag.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -82,24 +82,24 @@ apiInstance.tagsDeleteSpecificTag(body).then((data: void (empty response body)) 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | [**string**] | tag id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -110,7 +110,7 @@ void (empty response body)
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -128,24 +128,24 @@ apiInstance.tagsExists(body).then((data: ExistingMetadata) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **existentMetadata** | **ExistentMetadata**|  |
 
 
-### Return type
+### Return Model type
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of all of your tags.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -174,24 +174,24 @@ apiInstance.tagsSnapshot(body).then((data: Tags) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Tags**](../models/Tags)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

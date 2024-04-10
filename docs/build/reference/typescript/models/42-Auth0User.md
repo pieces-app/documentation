@@ -1,9 +1,9 @@
 
-# Auth0User
+# Auth0User Model
 
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -27,7 +27,7 @@ Name | Type
 **blockedFor** | **Array&lt;string&gt;**
 **guardianAuthenticators** | **Array&lt;string&gt;**
 
-## Example
+## Example Model
 
 ```typescript
 import { Auth0User } from '@pieces.app/pieces-os-client'

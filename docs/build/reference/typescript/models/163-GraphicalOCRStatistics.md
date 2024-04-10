@@ -1,15 +1,15 @@
 
-# GraphicalOCRStatistics
+# GraphicalOCRStatistics Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **descriptive** | [**GraphicalOCRDescriptiveStatistics**](GraphicalOCRDescriptiveStatistics)
 
-## Example
+## Example Model
 
 ```typescript
 import { GraphicalOCRStatistics } from '@pieces.app/pieces-os-client'

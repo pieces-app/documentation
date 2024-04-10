@@ -1,9 +1,9 @@
 
-# PersonAccess
+# PersonAccess Model
 
 if scoped is provided will let us know what level of permission(access) this specific person has in relation to what scope.(collection, asset,...etc)  in the future will expand to global (with its own enumeration for a global entire project/cloud scope)
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **scoped** | [**PersonAccessScopedEnum**](PersonAccessScopedEnum)
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 
-## Example
+## Example Model
 
 ```typescript
 import { PersonAccess } from '@pieces.app/pieces-os-client'

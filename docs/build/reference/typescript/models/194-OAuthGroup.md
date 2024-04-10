@@ -1,16 +1,16 @@
 
-# OAuthGroup
+# OAuthGroup Model
 
 A model to group all of the properties associated with OAuthGroup
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **token** | [**OAuthToken**](OAuthToken)
 **account** | [**OAuthAccount**](OAuthAccount)
 
-## Example
+## Example Model
 
 ```typescript
 import { OAuthGroup } from '@pieces.app/pieces-os-client'

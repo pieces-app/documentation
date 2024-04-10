@@ -1,9 +1,9 @@
 
-# Distribution
+# Distribution Model
 
 This is a fully referenced version of a Distribution. TODO add additional distributions such as slack, google_chat, ...etc
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **mailgun** | [**MailgunDistribution**](MailgunDistribution)
 **github** | [**GitHubDistribution**](GitHubDistribution)
 
-## Example
+## Example Model
 
 ```typescript
 import { Distribution } from '@pieces.app/pieces-os-client'

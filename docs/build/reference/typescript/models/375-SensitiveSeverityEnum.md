@@ -1,14 +1,14 @@
 
-# SensitiveSeverityEnum
+# SensitiveSeverityEnum Model
 
 This is the enum used to describe the severity of our sensitive model. ie low, moderate, high
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { SensitiveSeverityEnum } from '@pieces.app/pieces-os-client'

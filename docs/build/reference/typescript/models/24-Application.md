@@ -1,9 +1,9 @@
 
-# Application
+# Application Model
 
 A Model to describe what application a format/analytics event originated.  mechanism: This will let us know where this came from. ie.only 2 enums are used here or else throw and error. default mechanism here is MANUAL- meaning that this came from our user Connecting an application. INTERNAL - means that this came from a shareable link
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **automaticUnload** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { Application } from '@pieces.app/pieces-os-client'

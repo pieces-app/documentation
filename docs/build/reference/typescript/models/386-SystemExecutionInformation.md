@@ -1,9 +1,9 @@
 
-# SystemExecutionInformation
+# SystemExecutionInformation Model
 
 This is system information that we are able to get from the users machine(rust package TBD). TODO potentially pull this out of TLP.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **kernel** | **string**
 **cpu** | [**SystemExecutionCpuInformation**](SystemExecutionCpuInformation)
 
-## Example
+## Example Model
 
 ```typescript
 import { SystemExecutionInformation } from '@pieces.app/pieces-os-client'

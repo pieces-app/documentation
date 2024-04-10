@@ -1,14 +1,14 @@
 
-# AllocationStatusEnum
+# AllocationStatusEnum Model
 
 This is a Generic status enumeration that will be used for the status of dns and pod or cloud.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { AllocationStatusEnum } from '@pieces.app/pieces-os-client'

@@ -1,15 +1,15 @@
-# Conversations API
+# Conversations Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**conversationsCreateFromAsset****](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
-[**conversationsCreateSpecificConversation****](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create
-[**conversationsDeleteSpecificConversation****](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
-[**conversationsIdentifiersSnapshot****](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
-[**conversationsSnapshot****](ConversationsApi#conversationssnapshot) | **GET** /conversations
-[**conversationsStreamIdentifiers****](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
+[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
+[**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create
+[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
+[**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
+[**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations
+[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
 
 
 ## **conversationsCreateFromAsset** {#conversationscreatefromasset}
@@ -17,7 +17,7 @@ Method | HTTP request
 
 Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,24 +35,24 @@ apiInstance.conversationsCreateFromAsset(body).then((data: ConversationsCreateFr
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**ConversationsCreateFromAssetOutput**](../models/ConversationsCreateFromAssetOutput)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 Creates a specific conversation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -83,7 +83,7 @@ apiInstance.conversationsCreateSpecificConversation(body).then((data: Conversati
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -91,17 +91,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Conversation**](../models/Conversation)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 
 Deletes a specific conversation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -130,24 +130,24 @@ apiInstance.conversationsDeleteSpecificConversation(body).then((data: void (empt
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -158,7 +158,7 @@ void (empty response body)
 
 Retrieves all the UUIDs associated with a Conversation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -171,21 +171,21 @@ apiInstance.conversationsIdentifiersSnapshot().then((data: FlattenedConversation
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**FlattenedConversations**](../models/FlattenedConversations)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -196,7 +196,7 @@ This endpoint does not need any parameters.
 
 Retrieves a snapshot of a specific conversation.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -214,24 +214,24 @@ apiInstance.conversationsSnapshot(body).then((data: Conversations) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Conversations**](../models/Conversations)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -255,15 +255,15 @@ apiInstance.conversationsStreamIdentifiers().then((data: void (empty response bo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined

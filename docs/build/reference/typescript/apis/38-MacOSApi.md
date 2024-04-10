@@ -1,10 +1,10 @@
-# MacOS API
+# MacOS Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**assetsCreateNewAssetFromMacos****](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create
+[**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create
 
 
 ## **assetsCreateNewAssetFromMacos** {#assetscreatenewassetfrommacos}
@@ -12,7 +12,7 @@ Method | HTTP request
 
 Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Data
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.assetsCreateNewAssetFromMacos(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededMacOSAsset** | **SeededMacOSAsset**| A SeededMacosApplication which contains the value and an Application Instance |
 
 
-### Return type
+### Return Model type
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

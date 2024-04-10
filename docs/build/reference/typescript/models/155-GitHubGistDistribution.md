@@ -1,9 +1,9 @@
 
-# GitHubGistDistribution
+# GitHubGistDistribution Model
 
 This is a published Github Gist.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **githubId** | **string**
 **url** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { GitHubGistDistribution } from '@pieces.app/pieces-os-client'

@@ -1,13 +1,13 @@
-# Auth0 API
+# Auth0 Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**auth0Logout****](Auth0Api#auth0logout) | **GET** /v2/logout
-[**authorizeAuth0****](Auth0Api#authorizeauth0) | **GET** /authorize
-[**exchangeForAuth0Token****](Auth0Api#exchangeforauth0token) | **POST** /oauth/token
-[**getAuth0UserInfo****](Auth0Api#getauth0userinfo) | **GET** /userinfo
+[**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout
+[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize
+[**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token
+[**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo
 
 
 ## **auth0Logout** {#auth0logout}
@@ -15,7 +15,7 @@ Method | HTTP request
 
 https://auth0.com/docs/api/authentication#logout
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,7 +35,7 @@ apiInstance.auth0Logout(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -43,17 +43,17 @@ Name | Type | Description  | Notes
  **returnTo** | [**string**] | The URL that the logout endpoint will return to | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 **string**
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: text/html
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -101,7 +101,7 @@ apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -118,17 +118,17 @@ Name | Type | Description  | Notes
  **prompt** | [**string**] | To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**ResultedPKCE**](../models/ResultedPKCE)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/x-www-form-urlencoded
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -138,7 +138,7 @@ Name | Type | Description  | Notes
 
 An endpoint to generate a OAuth Token for an authentication flow. 
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -168,7 +168,7 @@ apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -181,17 +181,17 @@ Name | Type | Description  | Notes
  **audience** | [**string**] | The audience domain: i.e. https://pieces.us.auth0.com | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**OAuthToken**](../models/OAuthToken)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/x-www-form-urlencoded
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 Get the users info from the Auth0 API
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -214,21 +214,21 @@ apiInstance.getAuth0UserInfo().then((data: Auth0User) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Auth0User**](../models/Auth0User)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,9 +1,9 @@
 
-# ReferencedRange
+# ReferencedRange Model
 
 This is a minimal version of a Range, with mainly an Id.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedRange**](FlattenedRange)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedRange } from '@pieces.app/pieces-os-client'

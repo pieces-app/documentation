@@ -1,9 +1,9 @@
 
-# FragmentFormat
+# FragmentFormat Model
 
 This will be either a TransferableString or TransferableBytes that represent your fragment. ONLY Pass one or the other DONT pass both or neither.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **bytes** | [**TransferableBytes**](TransferableBytes)
 **metadata** | [**FragmentMetadata**](FragmentMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { FragmentFormat } from '@pieces.app/pieces-os-client'

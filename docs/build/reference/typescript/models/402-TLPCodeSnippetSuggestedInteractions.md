@@ -1,8 +1,8 @@
 
-# TLPCodeSnippetSuggestedInteractions
+# TLPCodeSnippetSuggestedInteractions Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **save** | [**TLPCodeFragmentSuggestedSave**](TLPCodeFragmentSuggestedSave)
 **reuse** | [**TLPCodeFragmentSuggestedReuse**](TLPCodeFragmentSuggestedReuse)
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPCodeSnippetSuggestedInteractions } from '@pieces.app/pieces-os-client'

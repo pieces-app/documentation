@@ -1,9 +1,9 @@
 
-# TLPCodeFragmentReclassification
+# TLPCodeFragmentReclassification Model
 
 Model for ML big query Reclassification.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **user** | **string**
 **context** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { TLPCodeFragmentReclassification } from '@pieces.app/pieces-os-client'

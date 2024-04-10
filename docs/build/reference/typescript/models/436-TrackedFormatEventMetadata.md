@@ -1,14 +1,14 @@
 
-# TrackedFormatEventMetadata
+# TrackedFormatEventMetadata Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **reclassification** | [**TrackedAssetEventFormatReclassificationMetadata**](TrackedAssetEventFormatReclassificationMetadata)
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedFormatEventMetadata } from '@pieces.app/pieces-os-client'

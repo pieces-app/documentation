@@ -1,9 +1,9 @@
 
-# FlattenedWorkstreamEvents
+# FlattenedWorkstreamEvents Model
 
 This is a plural (DAG Safe) version of a WorkstreamEvents.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { FlattenedWorkstreamEvents } from '@pieces.app/pieces-os-client'

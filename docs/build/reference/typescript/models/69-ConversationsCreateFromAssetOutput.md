@@ -1,16 +1,16 @@
 
-# ConversationsCreateFromAssetOutput
+# ConversationsCreateFromAssetOutput Model
 
 This is the model for the output for the \"/conversations/create/from_asset/\{asset\}\" endpoints.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 
-## Example
+## Example Model
 
 ```typescript
 import { ConversationsCreateFromAssetOutput } from '@pieces.app/pieces-os-client'

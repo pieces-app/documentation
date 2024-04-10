@@ -1,9 +1,9 @@
 
-# TrackedApplication
+# TrackedApplication Model
 
 A Model to describe what application a format/analytics event originated.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **platform** | [**PlatformEnum**](PlatformEnum)
 **automaticUnload** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { TrackedApplication } from '@pieces.app/pieces-os-client'

@@ -1,8 +1,8 @@
 
-# SeededRangeConversationAssociation
+# SeededRangeConversationAssociation Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **reference** | [**ReferencedConversation**](ReferencedConversation)
 **grounding** | [**SeededRangeConversationGroundingAssociation**](SeededRangeConversationGroundingAssociation)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededRangeConversationAssociation } from '@pieces.app/pieces-os-client'

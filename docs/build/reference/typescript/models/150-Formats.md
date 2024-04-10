@@ -1,16 +1,16 @@
 
-# Formats
+# Formats Model
 
 A base class for a collection of formats and some additional meta properties.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Format&gt;**](Format)
 
-## Example
+## Example Model
 
 ```typescript
 import { Formats } from '@pieces.app/pieces-os-client'

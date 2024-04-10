@@ -1,9 +1,9 @@
 
-# SensitiveMetadata
+# SensitiveMetadata Model
 
 This is optional metatdata attached to a sensitive piece of data.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **match** | [**TextMatch**](TextMatch)
 **entropy** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { SensitiveMetadata } from '@pieces.app/pieces-os-client'

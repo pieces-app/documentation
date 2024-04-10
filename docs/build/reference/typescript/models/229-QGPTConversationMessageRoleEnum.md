@@ -1,14 +1,14 @@
 
-# QGPTConversationMessageRoleEnum
+# QGPTConversationMessageRoleEnum Model
 
 This is the role enum used for a QGPT conversation
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTConversationMessageRoleEnum } from '@pieces.app/pieces-os-client'

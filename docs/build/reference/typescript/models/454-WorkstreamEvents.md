@@ -1,9 +1,9 @@
 
-# WorkstreamEvents
+# WorkstreamEvents Model
 
 This is a collection of many Shadow Activity events.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example
+## Example Model
 
 ```typescript
 import { WorkstreamEvents } from '@pieces.app/pieces-os-client'

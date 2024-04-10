@@ -1,9 +1,9 @@
 
-# ExternalProvider
+# ExternalProvider Model
 
 I know that profileData and user_id have differeing casing but they are done because they map to Auth0\'s projeecties.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **connection** | **string**
 **isSocial** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { ExternalProvider } from '@pieces.app/pieces-os-client'

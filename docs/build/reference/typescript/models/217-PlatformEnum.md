@@ -1,14 +1,14 @@
 
-# PlatformEnum
+# PlatformEnum Model
 
 This is an Enumeration for a Platform ie, WEB, MACOS, LINUX, WINDOWS
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { PlatformEnum } from '@pieces.app/pieces-os-client'

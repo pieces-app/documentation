@@ -1,12 +1,12 @@
-# Share API
+# Share Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**shareScoresIncrement****](ShareApi#sharescoresincrement) | **POST** /share/\{share\}/scores/increment
-[**shareSnapshot****](ShareApi#sharesnapshot) | **GET** /share/\{share\}
-[**shareUpdate****](ShareApi#shareupdate) | **POST** /share/update
+[**shareScoresIncrement**](ShareApi#sharescoresincrement) | **POST** /share/\{share\}/scores/increment
+[**shareSnapshot**](ShareApi#sharesnapshot) | **GET** /share/\{share\}
+[**shareUpdate**](ShareApi#shareupdate) | **POST** /share/update
 
 
 ## **shareScoresIncrement** {#sharescoresincrement}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -34,7 +34,7 @@ apiInstance.shareScoresIncrement(body).then((data: void (empty response body)) =
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +42,17 @@ Name | Type | Description  | Notes
  **share** | [**string**] | Share id | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -63,7 +63,7 @@ void (empty response body)
 
 Get the snapshot of a specific share.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -83,7 +83,7 @@ apiInstance.shareSnapshot(body).then((data: Share) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -91,17 +91,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Share**](../models/Share)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -131,7 +131,7 @@ apiInstance.shareUpdate(body).then((data: Share) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -139,17 +139,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Share**](../models/Share)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

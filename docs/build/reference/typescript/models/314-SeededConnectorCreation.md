@@ -1,16 +1,16 @@
 
-# SeededConnectorCreation
+# SeededConnectorCreation Model
 
 A encompasing creation object that can be utilized to create either an asset or a format.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **asset** | [**SeededConnectorAsset**](SeededConnectorAsset)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededConnectorCreation } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# OAuthAccount
+# OAuthAccount Model
 
 A Model to support account creation to Auth0\'s Database.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **picture** | **string**
 **nickname** | **string**
 
-## Example
+## Example Model
 
 ```typescript
 import { OAuthAccount } from '@pieces.app/pieces-os-client'

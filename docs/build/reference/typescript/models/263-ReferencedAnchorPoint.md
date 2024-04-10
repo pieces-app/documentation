@@ -1,8 +1,8 @@
 
-# ReferencedAnchorPoint
+# ReferencedAnchorPoint Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedAnchorPoint**](FlattenedAnchorPoint)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedAnchorPoint } from '@pieces.app/pieces-os-client'

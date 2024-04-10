@@ -1,14 +1,14 @@
-# PKCE API
+# PKCE Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**clearPKCE****](PKCEApi#clearpkce) | **POST** /pkce/clear
-[**generateCode****](PKCEApi#generatecode) | **POST** /pkce/code
-[**generateToken****](PKCEApi#generatetoken) | **POST** /pkce/token
-[**getChallenge****](PKCEApi#getchallenge) | **GET** /pkce/challenge
-[**respondWithCode****](PKCEApi#respondwithcode) | **POST** /pkce/response/code
+[**clearPKCE**](PKCEApi#clearpkce) | **POST** /pkce/clear
+[**generateCode**](PKCEApi#generatecode) | **POST** /pkce/code
+[**generateToken**](PKCEApi#generatetoken) | **POST** /pkce/token
+[**getChallenge**](PKCEApi#getchallenge) | **GET** /pkce/challenge
+[**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code
 
 
 ## **clearPKCE** {#clearpkce}
@@ -16,7 +16,7 @@ Method | HTTP request
 
 This is a function to Clear a PKCE Authentication Flow
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -29,21 +29,21 @@ apiInstance.clearPKCE().then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -53,7 +53,7 @@ void (empty response body)
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -71,24 +71,24 @@ apiInstance.generateCode(body).then((data: PKCE) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededPKCE** | **SeededPKCE**| All of the properties that the client might want to send over to authorize a PKCE Code Flow |
 
 
-### Return type
+### Return Model type
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -116,24 +116,24 @@ apiInstance.generateToken(body).then((data: PKCE) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenizedPKCE** | **TokenizedPKCE**| The needed properties to exchange a PKCE Code for an OAuth Token |
 
 
-### Return type
+### Return Model type
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 An endpoint that returns a PKCE Challenge
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -156,21 +156,21 @@ apiInstance.getChallenge().then((data: PKCE) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -180,7 +180,7 @@ This endpoint does not need any parameters.
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -202,7 +202,7 @@ apiInstance.respondWithCode(body).then((data: PKCE) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -211,17 +211,17 @@ Name | Type | Description  | Notes
  **schema** | **EmbeddedModelSchema** |  | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/x-www-form-urlencoded
 - **Accept**: application/json, text/html
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

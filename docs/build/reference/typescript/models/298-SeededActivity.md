@@ -1,9 +1,9 @@
 
-# SeededActivity
+# SeededActivity Model
 
 This is the preseed to a full blown Activity.  This is the minimum information needed to create an Activity, used within our [POST] /activities/create  if mechenism is not passed in we will default to AUTOMATIC  NOT required to pass in an asset/user/format.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 
-## Example
+## Example Model
 
 ```typescript
 import { SeededActivity } from '@pieces.app/pieces-os-client'

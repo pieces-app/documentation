@@ -1,9 +1,9 @@
 
-# ReferencedUser
+# ReferencedUser Model
 
 A object to reference a user\'s ID and optionally a FlattenedUserProfile Instance 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedUserProfile**](FlattenedUserProfile)
 
-## Example
+## Example Model
 
 ```typescript
 import { ReferencedUser } from '@pieces.app/pieces-os-client'

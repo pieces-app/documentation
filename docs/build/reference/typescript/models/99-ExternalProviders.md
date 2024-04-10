@@ -1,15 +1,15 @@
 
-# ExternalProviders
+# ExternalProviders Model
 
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ExternalProvider&gt;**](ExternalProvider)
 
-## Example
+## Example Model
 
 ```typescript
 import { ExternalProviders } from '@pieces.app/pieces-os-client'

@@ -1,14 +1,14 @@
 
-# EmbeddedModelSchemaSemanticVersionEnum
+# EmbeddedModelSchemaSemanticVersionEnum Model
 
 This is a Semantic Version Enum that will reflect the Semantic version of the api.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 
-## Example
+## Example Model
 
 ```typescript
 import { EmbeddedModelSchemaSemanticVersionEnum } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# Ranges
+# Ranges Model
 
 This is a collection of many Ranges
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **score** | [**Score**](Score)
 **continuous** | **boolean**
 
-## Example
+## Example Model
 
 ```typescript
 import { Ranges } from '@pieces.app/pieces-os-client'

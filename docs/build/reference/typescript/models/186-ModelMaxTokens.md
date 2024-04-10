@@ -1,9 +1,9 @@
 
-# ModelMaxTokens
+# ModelMaxTokens Model
 
 This will describe the MaxTokens for an MLModel  total is required.  iff there is a differentiator with inputs/outputs, then we can also provide those as well.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **input** | **number**
 **output** | **number**
 
-## Example
+## Example Model
 
 ```typescript
 import { ModelMaxTokens } from '@pieces.app/pieces-os-client'

@@ -1,13 +1,13 @@
-# Persons API
+# Persons Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**personDisassociateAsset****](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
-[**personsCreateNewPerson****](PersonsApi#personscreatenewperson) | **POST** /persons/create
-[**personsDeletePerson****](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
-[**personsSnapshot****](PersonsApi#personssnapshot) | **GET** /persons
+[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
+[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create
+[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
+[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons
 
 
 ## **personDisassociateAsset** {#persondisassociateasset}
@@ -15,7 +15,7 @@ Method | HTTP request
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,7 +35,7 @@ apiInstance.personDisassociateAsset(body).then((data: void (empty response body)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -43,17 +43,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -64,7 +64,7 @@ void (empty response body)
 
 This will create a new person.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -84,7 +84,7 @@ apiInstance.personsCreateNewPerson(body).then((data: Person) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -92,17 +92,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Person**](../models/Person)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific person.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -131,24 +131,24 @@ apiInstance.personsDeletePerson(body).then((data: void (empty response body)) =>
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -159,7 +159,7 @@ void (empty response body)
 
 This will get a snapshot of all of your people
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -177,24 +177,24 @@ apiInstance.personsSnapshot(body).then((data: Persons) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return Model type
 
 [**Persons**](../models/Persons)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

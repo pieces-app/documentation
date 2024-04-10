@@ -1,9 +1,9 @@
 
-# Suggestion
+# Suggestion Model
 
 This is the model return by the connector\'s suggest endpoint.  Note: assets are the assets that this target was ran against.  distribution is the distribution that we generated from comparing the target to the asset\'s vectors.(currently uuid(assetid) : value that is the difference between the asset and the target) **could potentially make an additional model here that is an array from most to least relevent.  *** distribution is required but we are currently unable to reflect that with our current dart generation.
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **assets** | [**Assets**](Assets)
 **distribution** | **\{ [key: string]: number; \}**
 
-## Example
+## Example Model
 
 ```typescript
 import { Suggestion } from '@pieces.app/pieces-os-client'

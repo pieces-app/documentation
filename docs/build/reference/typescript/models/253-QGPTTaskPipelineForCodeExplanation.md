@@ -1,15 +1,15 @@
 
-# QGPTTaskPipelineForCodeExplanation
+# QGPTTaskPipelineForCodeExplanation Model
 
 This task is for explaining a bit of code.  This is a class so that we can add optional properties in the future.  Note: the snippet && language that needs to be explaned should be within the QGPTQuestionInput.relevant
 
-## Properties
+## Properties Model
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example
+## Example Model
 
 ```typescript
 import { QGPTTaskPipelineForCodeExplanation } from '@pieces.app/pieces-os-client'

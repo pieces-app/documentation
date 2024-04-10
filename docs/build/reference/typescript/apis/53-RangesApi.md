@@ -1,12 +1,12 @@
-# Ranges API
+# Ranges Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
-[**rangesCreateNewRange****](RangesApi#rangescreatenewrange) | **POST** /ranges/create
-[**rangesDeleteSpecificRange****](RangesApi#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete
-[**rangesSnapshot****](RangesApi#rangessnapshot) | **GET** /ranges
+[**rangesCreateNewRange**](RangesApi#rangescreatenewrange) | **POST** /ranges/create
+[**rangesDeleteSpecificRange**](RangesApi#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete
+[**rangesSnapshot**](RangesApi#rangessnapshot) | **GET** /ranges
 
 
 ## **rangesCreateNewRange** {#rangescreatenewrange}
@@ -14,7 +14,7 @@ Method | HTTP request
 
 This will create a new Range in the database.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -32,24 +32,24 @@ apiInstance.rangesCreateNewRange(body).then((data: Range) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededRange** | **SeededRange**|  |
 
 
-### Return type
+### Return Model type
 
 [**Range**](../models/Range)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific range from the database!
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.rangesDeleteSpecificRange(body).then((data: void (empty response bod
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return Model type
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -106,7 +106,7 @@ void (empty response body)
 
 This will get a snapshot of all your ranges.
 
-### Example
+### Example Model
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,21 +119,21 @@ apiInstance.rangesSnapshot().then((data: Ranges) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters Model
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return Model type
 
 [**Ranges**](../models/Ranges)
 
-### HTTP request headers
+### HTTP Model request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP Model response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
