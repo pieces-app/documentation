@@ -1,9 +1,9 @@
 
-# Session Model
+# Session
 
 This is a specific model that will let us know at what time this user was using the application.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **opened** | [**GroupedTimestamp**](GroupedTimestamp)
 **closed** | [**GroupedTimestamp**](GroupedTimestamp)
 
-## Example Model
+## Example
 
 ```typescript
 import { Session } from '@pieces.app/pieces-os-client'

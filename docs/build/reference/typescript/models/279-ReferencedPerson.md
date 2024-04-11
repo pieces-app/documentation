@@ -1,9 +1,9 @@
 
-# ReferencedPerson Model
+# ReferencedPerson
 
 [DAG Safe] version of a Person Model. 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedPerson**](FlattenedPerson)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedPerson } from '@pieces.app/pieces-os-client'

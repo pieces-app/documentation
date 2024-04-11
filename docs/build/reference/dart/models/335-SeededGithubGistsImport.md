@@ -1,4 +1,4 @@
-# SeededGithubGistsImport Model
+# SeededGithubGistsImport
 
 ## Load the model package
 ```dart

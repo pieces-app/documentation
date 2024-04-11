@@ -1,15 +1,15 @@
 
-# UncheckedOSUpdate Model
+# UncheckedOSUpdate
 
 This is the input body for /os/update/check, just a placeholder for now.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { UncheckedOSUpdate } from '@pieces.app/pieces-os-client'

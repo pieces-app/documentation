@@ -1,14 +1,14 @@
 
-# ApplicationNameEnum Model
+# ApplicationNameEnum
 
 This is a running enumeration for the Names of all the Applications that can be Registered
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ApplicationNameEnum } from '@pieces.app/pieces-os-client'

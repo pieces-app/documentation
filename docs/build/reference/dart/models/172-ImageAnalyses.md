@@ -1,4 +1,4 @@
-# ImageAnalyses Model
+# ImageAnalyses
 
 ## Load the model package
 ```dart

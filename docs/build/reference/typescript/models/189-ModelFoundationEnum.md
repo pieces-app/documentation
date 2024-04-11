@@ -1,14 +1,14 @@
 
-# ModelFoundationEnum Model
+# ModelFoundationEnum
 
 This is used to describe the foundational models used within POS.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ModelFoundationEnum } from '@pieces.app/pieces-os-client'

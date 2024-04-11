@@ -1,15 +1,15 @@
 
-# GraphicalOCRProcessing Model
+# GraphicalOCRProcessing
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **statistics** | [**GraphicalOCRStatistics**](GraphicalOCRStatistics)
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalOCRProcessing } from '@pieces.app/pieces-os-client'

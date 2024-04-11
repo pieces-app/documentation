@@ -1,15 +1,15 @@
 
-# Analyses Model
+# Analyses
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Analysis&gt;**](Analysis)
 
-## Example Model
+## Example
 
 ```typescript
 import { Analyses } from '@pieces.app/pieces-os-client'

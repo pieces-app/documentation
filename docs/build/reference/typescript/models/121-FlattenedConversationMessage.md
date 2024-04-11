@@ -1,9 +1,9 @@
 
-# FlattenedConversationMessage Model
+# FlattenedConversationMessage
 
 This is a flattened DAG safe version of a ConversationMessage.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **score** | [**Score**](Score)
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedConversationMessage } from '@pieces.app/pieces-os-client'

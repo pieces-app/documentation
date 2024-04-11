@@ -1,4 +1,4 @@
-# ReuseReaction Model
+# ReuseReaction
 
 ## Load the model package
 ```dart

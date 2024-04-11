@@ -1,15 +1,15 @@
 
-# QGPTTaskPipelineForCodeCommentation Model
+# QGPTTaskPipelineForCodeCommentation
 
 This task is for commenting a bit of code.  This is a class so that we can add optional properties in the future.  Note: the snippet && language that needs to be commented should be within the QGPTQuestionInput.relevant
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTTaskPipelineForCodeCommentation } from '@pieces.app/pieces-os-client'

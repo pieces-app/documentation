@@ -1,15 +1,15 @@
 
-# Allocations Model
+# Allocations
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;AllocationCloud&gt;**](AllocationCloud)
 
-## Example Model
+## Example
 
 ```typescript
 import { Allocations } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# FlattenedFormat Model
+# FlattenedFormat
 
 A representation of Data for a particular Form Factor of an Asset.[DAG Compatible - Directed Acyclic Graph Data Structure]  FlattenedFormats prevent Cycles in Reference because all outbound references are strings as opposed to crosspollinated objects.  i.e. FlattenedFormat.asset is Type String  fragment or file will always be defined. Even thought they are both optional.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -27,7 +27,7 @@ Name | Type
 **relationship** | [**Relationship**](Relationship)
 **activities** | [**FlattenedActivities**](FlattenedActivities)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedFormat } from '@pieces.app/pieces-os-client'

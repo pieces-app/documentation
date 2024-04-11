@@ -1,13 +1,13 @@
 
-# AccessEnum Model
+# AccessEnum
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { AccessEnum } from '@pieces.app/pieces-os-client'

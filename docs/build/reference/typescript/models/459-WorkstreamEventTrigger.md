@@ -1,9 +1,9 @@
 
-# WorkstreamEventTrigger Model
+# WorkstreamEventTrigger
 
 This is the specific event that represent the Shadow Activity ie the copy/paste ...xyz
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -23,7 +23,7 @@ Name | Type
 **applicationLeave** | **boolean**
 **applicationSwitch** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { WorkstreamEventTrigger } from '@pieces.app/pieces-os-client'

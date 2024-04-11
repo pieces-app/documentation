@@ -1,4 +1,4 @@
-# UserProfile Model
+# UserProfile
 
 ## Load the model package
 ```dart

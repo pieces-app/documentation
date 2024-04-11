@@ -1,14 +1,14 @@
 
-# Edges Model
+# Edges
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;Node&gt;**](Node)
 
-## Example Model
+## Example
 
 ```typescript
 import { Edges } from '@pieces.app/pieces-os-client'

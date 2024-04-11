@@ -1,4 +1,4 @@
-# TrackedAssetEventRenameMetadata Model
+# TrackedAssetEventRenameMetadata
 
 ## Load the model package
 ```dart

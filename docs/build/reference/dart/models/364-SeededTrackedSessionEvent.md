@@ -1,4 +1,4 @@
-# SeededTrackedSessionEvent Model
+# SeededTrackedSessionEvent
 
 ## Load the model package
 ```dart

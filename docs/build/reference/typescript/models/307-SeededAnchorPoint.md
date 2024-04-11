@@ -1,8 +1,8 @@
 
-# SeededAnchorPoint Model
+# SeededAnchorPoint
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **anchor** | **string**
 **platform** | [**PlatformEnum**](PlatformEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAnchorPoint } from '@pieces.app/pieces-os-client'

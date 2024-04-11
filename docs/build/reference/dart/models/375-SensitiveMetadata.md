@@ -1,4 +1,4 @@
-# SensitiveMetadata Model
+# SensitiveMetadata
 
 ## Load the model package
 ```dart

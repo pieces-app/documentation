@@ -1,9 +1,9 @@
 
-# SeededAccessor Model
+# SeededAccessor
 
 This is a pre-created accessor that simply takes an os id and an optional user(flattened)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile)
 **share** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAccessor } from '@pieces.app/pieces-os-client'

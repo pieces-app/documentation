@@ -1,9 +1,9 @@
 
-# Auth0UserMetadata Model
+# Auth0UserMetadata
 
 User Metadata from Auth0
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
 **beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange)
 
-## Example Model
+## Example
 
 ```typescript
 import { Auth0UserMetadata } from '@pieces.app/pieces-os-client'

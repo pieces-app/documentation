@@ -1,4 +1,4 @@
-# TLPDirectedDiscoveryFilter Model
+# TLPDirectedDiscoveryFilter
 
 ## Load the model package
 ```dart

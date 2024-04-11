@@ -1,4 +1,4 @@
-# ReuseSuggestion Model
+# ReuseSuggestion
 
 ## Load the model package
 ```dart

@@ -1,16 +1,16 @@
 
-# OSDeviceGPUHardwareCapabilitiesInformation Model
+# OSDeviceGPUHardwareCapabilitiesInformation
 
 This will give specific information on task specific capibilites for GPU.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **llm** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { OSDeviceGPUHardwareCapabilitiesInformation } from '@pieces.app/pieces-os-client'

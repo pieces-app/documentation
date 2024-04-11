@@ -1,4 +1,4 @@
-# SearchedAssets Model
+# SearchedAssets
 
 ## Load the model package
 ```dart

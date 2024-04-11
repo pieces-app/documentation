@@ -1,16 +1,16 @@
 
-# DeletedExternalProvider Model APIKey
+# DeletedExternalProvider APIKey
 
 This is the returnable for the \"\"/external_provider/api_key/delete\" endpoint
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { DeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

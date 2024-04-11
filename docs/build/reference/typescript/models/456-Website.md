@@ -1,9 +1,9 @@
 
-# Website Model
+# Website
 
 This is a specific model for related websites to an asset.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -22,7 +22,7 @@ Name | Type
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example Model
+## Example
 
 ```typescript
 import { Website } from '@pieces.app/pieces-os-client'

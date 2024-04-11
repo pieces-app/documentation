@@ -1,4 +1,4 @@
-# TrackedAssetEventCreationMetadataClipboard Model
+# TrackedAssetEventCreationMetadataClipboard
 
 ## Load the model package
 ```dart

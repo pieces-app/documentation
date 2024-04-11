@@ -1,4 +1,4 @@
-# SaveSuggestion Model
+# SaveSuggestion
 
 ## Load the model package
 ```dart

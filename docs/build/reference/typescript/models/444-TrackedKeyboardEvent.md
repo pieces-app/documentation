@@ -1,9 +1,9 @@
 
-# TrackedKeyboardEvent Model
+# TrackedKeyboardEvent
 
 This is a model that will hold relavent information in relation to a keyboard(including shortcuts) analytics event (usage).
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **description** | **string**
 **shortcut** | **Array&lt;number&gt;**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedKeyboardEvent } from '@pieces.app/pieces-os-client'

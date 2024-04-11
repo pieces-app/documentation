@@ -1,15 +1,15 @@
 
-# QGPTConversationPipelineForContextualizedCodeWorkstreamDialog Model
+# QGPTConversationPipelineForContextualizedCodeWorkstreamDialog
 
 This is for the users that wants to have contextualized code conversations around their workstream materials, meaning conversations around code with Context provided, as well as workstream information ie information gathered from the WPE.  This is a class so that we can add optional properties in the future.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTConversationPipelineForContextualizedCodeWorkstreamDialog } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# TrackedConversationEventRenameMetadata Model
+# TrackedConversationEventRenameMetadata
 
 This will give specific metadata need to determine what the rename was to/from.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **previous** | **string**
 **current** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedConversationEventRenameMetadata } from '@pieces.app/pieces-os-client'

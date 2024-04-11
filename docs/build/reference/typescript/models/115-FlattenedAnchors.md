@@ -1,8 +1,8 @@
 
-# FlattenedAnchors Model
+# FlattenedAnchors
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedAnchors } from '@pieces.app/pieces-os-client'

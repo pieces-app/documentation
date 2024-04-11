@@ -1,4 +1,4 @@
-# WorkstreamSummaries Model
+# WorkstreamSummaries
 
 ## Load the model package
 ```dart

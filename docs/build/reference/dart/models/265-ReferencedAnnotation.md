@@ -1,4 +1,4 @@
-# ReferencedAnnotation Model
+# ReferencedAnnotation
 
 ## Load the model package
 ```dart

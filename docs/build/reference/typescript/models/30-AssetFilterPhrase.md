@@ -1,8 +1,8 @@
 
-# AssetFilterPhrase Model
+# AssetFilterPhrase
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **content** | **boolean**
 **options** | [**AssetFilterPhraseOptions**](AssetFilterPhraseOptions)
 
-## Example Model
+## Example
 
 ```typescript
 import { AssetFilterPhrase } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# PlatformEnum Model
+# PlatformEnum
 
 ## Load the model package
 ```dart

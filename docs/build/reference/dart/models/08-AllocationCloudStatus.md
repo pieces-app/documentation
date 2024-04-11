@@ -1,4 +1,4 @@
-# AllocationCloudStatus Model
+# AllocationCloudStatus
 
 ## Load the model package
 ```dart

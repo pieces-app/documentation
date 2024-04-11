@@ -1,9 +1,9 @@
 
-# FlattenedRanges Model
+# FlattenedRanges
 
 This is a DAG-Safe minimal representation of many Ranges.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **score** | [**Score**](Score)
 **continuous** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedRanges } from '@pieces.app/pieces-os-client'

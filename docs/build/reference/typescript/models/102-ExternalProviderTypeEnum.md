@@ -1,14 +1,14 @@
 
-# ExternalProviderTypeEnum Model
+# ExternalProviderTypeEnum
 
 This is an enum to describe the provider used to authenticate a user.  IMPORTANT NOT to modify tha values here unless they are explicitly mapped with auth0\'s provider values(example within cloud server)  \'waad\': (windows azure active directory)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ExternalProviderTypeEnum } from '@pieces.app/pieces-os-client'

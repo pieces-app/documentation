@@ -1,15 +1,15 @@
 
-# TLPCodeFragmentStatistics Model
+# TLPCodeFragmentStatistics
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **descriptive** | [**TLPCodeFragmentDescriptiveStatistics**](TLPCodeFragmentDescriptiveStatistics)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentStatistics } from '@pieces.app/pieces-os-client'

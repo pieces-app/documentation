@@ -1,14 +1,14 @@
 
-# SensitiveCategoryEnum Model
+# SensitiveCategoryEnum
 
 This is the enum that is use to describe the category of our Sensitive Model.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { SensitiveCategoryEnum } from '@pieces.app/pieces-os-client'

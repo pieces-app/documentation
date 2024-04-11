@@ -1,4 +1,4 @@
-# ExternalProvider Model
+# ExternalProvider
 
 ## Load the model package
 ```dart

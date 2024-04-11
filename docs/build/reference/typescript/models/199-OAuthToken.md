@@ -1,9 +1,9 @@
 
-# OAuthToken Model
+# OAuthToken
 
 A model representing a returnable response for a OAuthGroup Token
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **refreshToken** | **string**
 **idToken** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { OAuthToken } from '@pieces.app/pieces-os-client'

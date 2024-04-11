@@ -1,4 +1,4 @@
-# SeededWorkstreamSummary Model
+# SeededWorkstreamSummary
 
 ## Load the model package
 ```dart

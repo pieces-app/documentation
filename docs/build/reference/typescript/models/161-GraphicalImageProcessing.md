@@ -1,15 +1,15 @@
 
-# GraphicalImageProcessing Model
+# GraphicalImageProcessing
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **statistics** | [**GraphicalImageStatistics**](GraphicalImageStatistics)
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalImageProcessing } from '@pieces.app/pieces-os-client'

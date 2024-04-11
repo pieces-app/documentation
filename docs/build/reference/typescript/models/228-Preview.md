@@ -1,9 +1,9 @@
 
-# Preview Model
+# Preview
 
 This is a preview Model that will hold references to at minimum the base preview. which can be potentiall a base image, or also base text/code and then the oveylay is another format(image/text/code) that is \'overlayed\' ontop of the base format.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **base** | [**ReferencedFormat**](ReferencedFormat)
 **overlay** | [**ReferencedFormat**](ReferencedFormat)
 
-## Example Model
+## Example
 
 ```typescript
 import { Preview } from '@pieces.app/pieces-os-client'

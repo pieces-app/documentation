@@ -1,4 +1,4 @@
-# GraphicalImageStatistics Model
+# GraphicalImageStatistics
 
 ## Load the model package
 ```dart

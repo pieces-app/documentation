@@ -1,14 +1,14 @@
 
-# SeededAssetTags Model
+# SeededAssetTags
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;SeededAssetTag&gt;**](SeededAssetTag)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAssetTags } from '@pieces.app/pieces-os-client'

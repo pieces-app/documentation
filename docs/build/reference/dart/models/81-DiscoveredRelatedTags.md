@@ -1,4 +1,4 @@
-# DiscoveredRelatedTags Model
+# DiscoveredRelatedTags
 
 ## Load the model package
 ```dart

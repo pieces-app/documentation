@@ -1,16 +1,16 @@
 
-# StreamedIdentifiers Model
+# StreamedIdentifiers
 
 This is currently only used within /assets/steam/identifiers && /conversations/steam/identifiers but can be used with other as well, if we want to expand this class. && expand the StreamedIdentifier class.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;StreamedIdentifier&gt;**](StreamedIdentifier)
 
-## Example Model
+## Example
 
 ```typescript
 import { StreamedIdentifiers } from '@pieces.app/pieces-os-client'

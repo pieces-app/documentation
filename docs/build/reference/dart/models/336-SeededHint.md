@@ -1,4 +1,4 @@
-# SeededHint Model
+# SeededHint
 
 ## Load the model package
 ```dart

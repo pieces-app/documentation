@@ -1,4 +1,4 @@
-# Allocation Model API
+# Allocation API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a specific allocation.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,24 +31,24 @@ apiInstance.allocationSnapshot(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation** | [**string**] |  | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 This will update a specific allocation.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -77,24 +77,24 @@ apiInstance.allocationUpdate(body).then((data: AllocationCloud) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | **AllocationCloud**|  |
 
 
-### Return Model type
+### Return type
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

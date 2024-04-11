@@ -1,4 +1,4 @@
-# ConversationTypeEnum Model
+# ConversationTypeEnum
 
 ## Load the model package
 ```dart

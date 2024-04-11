@@ -1,14 +1,14 @@
 
-# PrivacyEnum Model
+# PrivacyEnum
 
 OPEN: Means that privacy is fully open CLOSED: Means that privacy is fully locked down, and private ANONYMOUS: Means that we are allowed to collect information but it cannot get attached to me as the user.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { PrivacyEnum } from '@pieces.app/pieces-os-client'

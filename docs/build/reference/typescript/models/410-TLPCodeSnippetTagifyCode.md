@@ -1,9 +1,9 @@
 
-# TLPCodeSnippetTagifyCode Model
+# TLPCodeSnippetTagifyCode
 
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **context** | **string**
 **asset** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeSnippetTagifyCode } from '@pieces.app/pieces-os-client'

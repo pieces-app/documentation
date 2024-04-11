@@ -1,9 +1,9 @@
 
-# FlattenedWebsite Model
+# FlattenedWebsite
 
 This is a specific model for related websites to an asset.[DAG SAFE]
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -22,7 +22,7 @@ Name | Type
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedWebsite } from '@pieces.app/pieces-os-client'

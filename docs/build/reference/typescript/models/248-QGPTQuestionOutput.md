@@ -1,16 +1,16 @@
 
-# QGPTQuestionOutput Model
+# QGPTQuestionOutput
 
 This is the output/returned value from the /qgpt/question endpoint. && /qgpt/followup  This will just have a single required property. the possible answers to the question, with a score.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **answers** | [**QGPTQuestionAnswers**](QGPTQuestionAnswers)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTQuestionOutput } from '@pieces.app/pieces-os-client'

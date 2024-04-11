@@ -1,4 +1,4 @@
-# GraphicalImageProcessing Model
+# GraphicalImageProcessing
 
 ## Load the model package
 ```dart

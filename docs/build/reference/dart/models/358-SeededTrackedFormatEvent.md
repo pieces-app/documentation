@@ -1,4 +1,4 @@
-# SeededTrackedFormatEvent Model
+# SeededTrackedFormatEvent
 
 ## Load the model package
 ```dart

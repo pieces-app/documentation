@@ -1,9 +1,9 @@
 
-# SeededTrackedAssetEvent Model
+# SeededTrackedAssetEvent
 
 This seeded tracked asset event will be recieved by a context on the OS Server side, which will then be able to look up the asset id and structure the asset for shipment to Segment aka a fully built TrackedAssetEvent
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **identifierDescriptionPair** | [**TrackedAssetEventIdentifierDescriptionPairs**](TrackedAssetEventIdentifierDescriptionPairs)
 **metadata** | [**TrackedAssetEventMetadata**](TrackedAssetEventMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedAssetEvent } from '@pieces.app/pieces-os-client'

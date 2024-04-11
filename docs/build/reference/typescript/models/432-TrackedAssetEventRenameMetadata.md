@@ -1,9 +1,9 @@
 
-# TrackedAssetEventRenameMetadata Model
+# TrackedAssetEventRenameMetadata
 
 This will give specific metadata need to determine what the rename was to/from.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **previous** | **string**
 **current** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetEventRenameMetadata } from '@pieces.app/pieces-os-client'

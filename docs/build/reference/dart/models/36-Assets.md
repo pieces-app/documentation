@@ -1,4 +1,4 @@
-# Assets Model
+# Assets
 
 ## Load the model package
 ```dart

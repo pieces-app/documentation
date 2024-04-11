@@ -1,4 +1,4 @@
-# QGPTPromptPipeline Model
+# QGPTPromptPipeline
 
 ## Load the model package
 ```dart

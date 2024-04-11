@@ -1,9 +1,9 @@
 
-# SeededSensitive Model
+# SeededSensitive
 
 This is the seededSensitive, this does not have an id yet as we will add it on the server side.  can optionally pass in our mechanism here, as the default will be manual unless specified.  TODO consider updating these asset,format to referenced Models
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **description** | **string**
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededSensitive } from '@pieces.app/pieces-os-client'

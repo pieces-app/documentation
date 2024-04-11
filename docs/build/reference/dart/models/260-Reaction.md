@@ -1,4 +1,4 @@
-# Reaction Model
+# Reaction
 
 ## Load the model package
 ```dart

@@ -1,15 +1,15 @@
 
-# QGPTConversationPipelineForContextualizedCodeDialog Model
+# QGPTConversationPipelineForContextualizedCodeDialog
 
 This is for the users that wants to have contextualized code conversations, meaning conversations around code with Context provided.  This is a class so that we can add optional properties in the future.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTConversationPipelineForContextualizedCodeDialog } from '@pieces.app/pieces-os-client'

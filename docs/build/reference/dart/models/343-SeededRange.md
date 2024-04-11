@@ -1,4 +1,4 @@
-# SeededRange Model
+# SeededRange
 
 ## Load the model package
 ```dart

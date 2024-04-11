@@ -1,4 +1,4 @@
-# SeededMacOSAsset Model
+# SeededMacOSAsset
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# WorkstreamPatternEngine Model API
+# WorkstreamPatternEngine API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 This will activate your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -33,24 +33,24 @@ apiInstance.workstreamPatternEngineProcessorsVisionActivate(body).then((data: Wo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineStatus** | **WorkstreamPatternEngineStatus**|  |
 
 
-### Return Model type
+### Return type
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 This will clear the data for the Workstream Pattern Engine, specifically for our vision data.  This boy will accept ranges of time that the user wants to remove the processing from.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -80,24 +80,24 @@ apiInstance.workstreamPatternEngineProcessorsVisionDataClear(body).then((data: v
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineDataCleanupRequest** | **WorkstreamPatternEngineDataCleanupRequest**|  |
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -109,7 +109,7 @@ void (empty response body)
 
 This will deactivate your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -127,24 +127,24 @@ apiInstance.workstreamPatternEngineProcessorsVisionDeactivate(body).then((data: 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineStatus** | **WorkstreamPatternEngineStatus**|  |
 
 
-### Return Model type
+### Return type
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of the status your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -169,21 +169,21 @@ apiInstance.workstreamPatternEngineProcessorsVisionStatus().then((data: Workstre
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

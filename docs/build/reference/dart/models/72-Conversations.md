@@ -1,4 +1,4 @@
-# Conversations Model
+# Conversations
 
 ## Load the model package
 ```dart

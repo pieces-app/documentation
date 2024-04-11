@@ -1,4 +1,4 @@
-# FormatsMetrics Model
+# FormatsMetrics
 
 ## Load the model package
 ```dart

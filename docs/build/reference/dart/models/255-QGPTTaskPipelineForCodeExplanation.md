@@ -1,4 +1,4 @@
-# QGPTTaskPipelineForCodeExplanation Model
+# QGPTTaskPipelineForCodeExplanation
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# TemporalRangeGrounding Model
+# TemporalRangeGrounding
 
 ## Load the model package
 ```dart

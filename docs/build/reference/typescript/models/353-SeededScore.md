@@ -1,9 +1,9 @@
 
-# SeededScore Model
+# SeededScore
 
 This is the low level seeded score and will let us know what exactly we want to increment on our material.  Note: ONLY include one of these, as we will only increment one of the following.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **reference** | **boolean**
 **priority** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededScore } from '@pieces.app/pieces-os-client'

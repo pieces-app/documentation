@@ -1,4 +1,4 @@
-# SeededRangeConversationAssociation Model
+# SeededRangeConversationAssociation
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# Accessor Model
+# Accessor
 
 This is used to determine who has accessed a share. and how many times.  The user here is the user that accessed this Piece.(optional) if undefined then this user was not logged in yet.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **count** | **number**
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile)
 
-## Example Model
+## Example
 
 ```typescript
 import { Accessor } from '@pieces.app/pieces-os-client'

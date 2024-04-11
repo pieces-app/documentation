@@ -1,16 +1,16 @@
 
-# SeededTrackedSessionEvent Model
+# SeededTrackedSessionEvent
 
 A simple model to capture a Tracked Session to be send to the Connection API
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **identifierDescriptionPair** | [**TrackedSessionEventIdentifierDescriptionPairs**](TrackedSessionEventIdentifierDescriptionPairs)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedSessionEvent } from '@pieces.app/pieces-os-client'

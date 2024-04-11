@@ -1,16 +1,16 @@
 
-# SeededDistributions Model
+# SeededDistributions
 
 This is the plural version of a SeededDistribution that is not referenced just yet.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;SeededDistribution&gt;**](SeededDistribution)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededDistributions } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# AssetsSearchWithFiltersOutput Model
+# AssetsSearchWithFiltersOutput
 
 output for the /assets/search [POST] 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **results** | [**SearchedAssets**](SearchedAssets)
 
-## Example Model
+## Example
 
 ```typescript
 import { AssetsSearchWithFiltersOutput } from '@pieces.app/pieces-os-client'

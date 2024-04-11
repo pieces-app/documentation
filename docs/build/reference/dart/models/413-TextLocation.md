@@ -1,4 +1,4 @@
-# TextLocation Model
+# TextLocation
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# UserBetaStatus Model
+# UserBetaStatus
 
 ## Load the model package
 ```dart

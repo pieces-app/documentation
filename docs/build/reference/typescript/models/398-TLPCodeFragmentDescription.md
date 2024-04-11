@@ -1,9 +1,9 @@
 
-# TLPCodeFragmentDescription Model
+# TLPCodeFragmentDescription
 
 Model for ML big query Code Description.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **context** | **string**
 **os** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentDescription } from '@pieces.app/pieces-os-client'

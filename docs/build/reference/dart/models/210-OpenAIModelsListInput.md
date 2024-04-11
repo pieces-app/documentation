@@ -1,4 +1,4 @@
-# OpenAIModelsListInput Model
+# OpenAIModelsListInput
 
 ## Load the model package
 ```dart

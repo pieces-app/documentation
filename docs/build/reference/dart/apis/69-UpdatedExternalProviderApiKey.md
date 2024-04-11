@@ -1,4 +1,4 @@
-# UpdatedExternalProviderApiKey Model
+# UpdatedExternalProviderApiKey
 
 ## Load the model package
 ```dart

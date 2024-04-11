@@ -1,4 +1,4 @@
-# TrackedConversationEventMetadata Model
+# TrackedConversationEventMetadata
 
 ## Load the model package
 ```dart

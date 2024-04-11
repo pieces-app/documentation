@@ -1,16 +1,16 @@
 
-# CheckedOSUpdate Model
+# CheckedOSUpdate
 
 This is the returnable for /os/update/check
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **status** | [**UpdatingStatusEnum**](UpdatingStatusEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { CheckedOSUpdate } from '@pieces.app/pieces-os-client'

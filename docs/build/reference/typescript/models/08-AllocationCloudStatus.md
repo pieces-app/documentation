@@ -1,15 +1,15 @@
 
-# AllocationCloudStatus Model
+# AllocationCloudStatus
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **cloud** | [**AllocationStatusEnum**](AllocationStatusEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { AllocationCloudStatus } from '@pieces.app/pieces-os-client'

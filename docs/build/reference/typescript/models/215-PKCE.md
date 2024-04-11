@@ -1,9 +1,9 @@
 
-# PKCE Model
+# PKCE
 
 An object representing all of the properties involved in a PKCE Authentication Flow
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **token** | [**TokenizedPKCE**](TokenizedPKCE)
 **auth0** | [**Auth0**](Auth0)
 
-## Example Model
+## Example
 
 ```typescript
 import { PKCE } from '@pieces.app/pieces-os-client'

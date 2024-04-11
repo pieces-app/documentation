@@ -1,4 +1,4 @@
-# FlattenedWorkstreamEvent Model
+# FlattenedWorkstreamEvent
 
 ## Load the model package
 ```dart

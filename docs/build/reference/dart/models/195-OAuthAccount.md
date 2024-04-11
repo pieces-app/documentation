@@ -1,4 +1,4 @@
-# OAuthAccount Model
+# OAuthAccount
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# Score Model
+# Score
 
 This is use as the score for an asset.  Manual: will be the raw sum of the asset activity events ranks with mechanismEnum == manual Automatic: will be the raw sum of the asset activity events ranks with mechanismEnum == automatic
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **update** | **number**
 **reference** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { Score } from '@pieces.app/pieces-os-client'

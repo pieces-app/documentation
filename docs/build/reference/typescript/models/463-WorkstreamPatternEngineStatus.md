@@ -1,16 +1,16 @@
 
-# WorkstreamPatternEngineStatus Model
+# WorkstreamPatternEngineStatus
 
 This will return the status for the Workstream pettern engine, specifically the activation/deactivation status
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **vision** | [**WorkstreamPatternEngineVisionStatus**](WorkstreamPatternEngineVisionStatus)
 
-## Example Model
+## Example
 
 ```typescript
 import { WorkstreamPatternEngineStatus } from '@pieces.app/pieces-os-client'

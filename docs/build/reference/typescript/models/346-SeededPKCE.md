@@ -1,9 +1,9 @@
 
-# SeededPKCE Model
+# SeededPKCE
 
 A model that initialized a PKCE Authentication Flow.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -25,7 +25,7 @@ Name | Type
 **aDDITIONALPARAMETERS** | [**SeededPKCEADDITIONALPARAMETERS**](SeededPKCEADDITIONALPARAMETERS)
 **responseMode** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededPKCE } from '@pieces.app/pieces-os-client'

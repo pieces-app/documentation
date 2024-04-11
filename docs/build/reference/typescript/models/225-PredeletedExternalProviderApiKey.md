@@ -1,9 +1,9 @@
 
-# PredeletedExternalProvider Model APIKey
+# PredeletedExternalProvider APIKey
 
 This is a predeleted version relating to the /external_provider/api_key/delete endpoint.  This will ensure we remove this specific provider.(anything that is set to true we will reset to null within the database.)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **user** | **string**
 **openAI** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { PredeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

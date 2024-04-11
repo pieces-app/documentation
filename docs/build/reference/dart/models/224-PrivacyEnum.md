@@ -1,4 +1,4 @@
-# PrivacyEnum Model
+# PrivacyEnum
 
 ## Load the model package
 ```dart

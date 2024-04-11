@@ -1,4 +1,4 @@
-# GraphicalOCRDescriptiveStatistics Model
+# GraphicalOCRDescriptiveStatistics
 
 ## Load the model package
 ```dart

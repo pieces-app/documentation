@@ -1,9 +1,9 @@
 
-# TransferableString Model
+# TransferableString
 
 This is a String representaion of any of these changes.  [NOT IMPLEMENTED] base64, base64_url, data_url [IMPLEMENTED] raw
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **base64Url** | **string**
 **dataUrl** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TransferableString } from '@pieces.app/pieces-os-client'

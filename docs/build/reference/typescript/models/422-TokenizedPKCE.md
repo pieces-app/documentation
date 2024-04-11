@@ -1,9 +1,9 @@
 
-# TokenizedPKCE Model
+# TokenizedPKCE
 
 This is the flow that mobile apps use to access an API. Use this endpoint to exchange an Authorization Code for a Token.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **codeVerifier** | **string**
 **audience** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TokenizedPKCE } from '@pieces.app/pieces-os-client'

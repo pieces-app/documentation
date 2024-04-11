@@ -1,4 +1,4 @@
-# WorkstreamEventTriggerMetadata Model
+# WorkstreamEventTriggerMetadata
 
 ## Load the model package
 ```dart

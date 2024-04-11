@@ -1,9 +1,9 @@
 
-# Asset Model
+# Asset
 
 An Asset Model representing data extracted from an Application connecting a group of data containing one or more Formats.  Below formats, preview, and original CAN to be pollinated (DAG Unsafe) because it is a root node and it\'s child leaf nodes will prevent cycles agressively.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -38,7 +38,7 @@ Name | Type
 **summaries** | [**WorkstreamSummaries**](WorkstreamSummaries)
 **demo** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { Asset } from '@pieces.app/pieces-os-client'

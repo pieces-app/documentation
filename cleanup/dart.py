@@ -20,7 +20,7 @@ def fix_h1_headers(text):
     result = re.sub(pattern, replacement, text)
 
     pattern = r'# core_openapi\.model\.(\w+)'
-    replacement = r'# \1 Model'
+    replacement = r'# \1'
     result = re.sub(pattern, replacement, result)
     return result
 

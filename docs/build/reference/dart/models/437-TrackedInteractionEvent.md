@@ -1,4 +1,4 @@
-# TrackedInteractionEvent Model
+# TrackedInteractionEvent
 
 ## Load the model package
 ```dart

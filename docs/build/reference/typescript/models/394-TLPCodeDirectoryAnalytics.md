@@ -1,15 +1,15 @@
 
-# TLPCodeDirectoryAnalytics Model
+# TLPCodeDirectoryAnalytics
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **id** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeDirectoryAnalytics } from '@pieces.app/pieces-os-client'

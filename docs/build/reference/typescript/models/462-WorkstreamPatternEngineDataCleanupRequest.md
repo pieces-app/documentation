@@ -1,16 +1,16 @@
 
-# WorkstreamPatternEngineDataCleanupRequest Model
+# WorkstreamPatternEngineDataCleanupRequest
 
 NOTE: if we want to remove all the data the from would be unset, the to will be right now.  from: is always in the past to: is always at least before from in our time.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **ranges** | [**Array&lt;AnonymousTemporalRange&gt;**](AnonymousTemporalRange)
 
-## Example Model
+## Example
 
 ```typescript
 import { WorkstreamPatternEngineDataCleanupRequest } from '@pieces.app/pieces-os-client'

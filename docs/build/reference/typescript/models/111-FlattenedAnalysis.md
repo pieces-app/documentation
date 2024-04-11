@@ -1,8 +1,8 @@
 
-# FlattenedAnalysis Model
+# FlattenedAnalysis
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **format** | **string**
 **image** | [**FlattenedImageAnalysis**](FlattenedImageAnalysis)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedAnalysis } from '@pieces.app/pieces-os-client'

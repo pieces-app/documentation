@@ -1,4 +1,4 @@
-# QGPTConversationPipelineForContextualizedCodeWorkstreamDialog Model
+# QGPTConversationPipelineForContextualizedCodeWorkstreamDialog
 
 ## Load the model package
 ```dart

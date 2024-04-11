@@ -1,9 +1,9 @@
 
-# Hint Model
+# Hint
 
 This is a hint that is attached to an asset, used for suggested_queries, and hints given via the qgpt flow.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **model** | [**ReferencedModel**](ReferencedModel)
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { Hint } from '@pieces.app/pieces-os-client'

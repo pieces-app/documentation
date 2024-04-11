@@ -1,4 +1,4 @@
-# PersonAccessScopedEnum Model
+# PersonAccessScopedEnum
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# ReferencedFormat Model
+# ReferencedFormat
 
 ## Load the model package
 ```dart

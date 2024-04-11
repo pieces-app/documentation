@@ -1,15 +1,15 @@
 
-# SeededTrackedAssetsEventMetadata Model
+# SeededTrackedAssetsEventMetadata
 
 Additional Metadata as Neeeded i.e. Search + Query, etc
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **search** | [**TrackedAssetsEventSearchMetadata**](TrackedAssetsEventSearchMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedAssetsEventMetadata } from '@pieces.app/pieces-os-client'

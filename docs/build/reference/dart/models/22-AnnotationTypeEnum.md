@@ -1,4 +1,4 @@
-# AnnotationTypeEnum Model
+# AnnotationTypeEnum
 
 ## Load the model package
 ```dart

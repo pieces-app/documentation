@@ -1,9 +1,9 @@
 
-# Backups Model
+# Backups
 
 This is a plural model of many Cloud Backups.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { Backups } from '@pieces.app/pieces-os-client'

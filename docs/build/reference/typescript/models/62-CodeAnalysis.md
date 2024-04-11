@@ -1,9 +1,9 @@
 
-# CodeAnalysis Model
+# CodeAnalysis
 
 This is the ML Analysis object Specific to code.  prediction and similarity are custom types. ** please dont not modify **
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **analysis** | **string**
 **model** | [**Model**](Model)
 
-## Example Model
+## Example
 
 ```typescript
 import { CodeAnalysis } from '@pieces.app/pieces-os-client'

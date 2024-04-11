@@ -1,15 +1,15 @@
 
-# DiscoveredRelatedTag Model
+# DiscoveredRelatedTag
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **seed** | [**SeededTag**](SeededTag)
 
-## Example Model
+## Example
 
 ```typescript
 import { DiscoveredRelatedTag } from '@pieces.app/pieces-os-client'

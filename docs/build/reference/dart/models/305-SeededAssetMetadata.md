@@ -1,4 +1,4 @@
-# SeededAssetMetadata Model
+# SeededAssetMetadata
 
 ## Load the model package
 ```dart

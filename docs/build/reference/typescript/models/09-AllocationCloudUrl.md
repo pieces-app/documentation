@@ -1,9 +1,9 @@
 
-# AllocationCloudUrl Model
+# AllocationCloudUrl
 
 This is one of the 3 possible urls that will route to your cloud :).
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **status** | [**AllocationStatusEnum**](AllocationStatusEnum)
 **url** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { AllocationCloudUrl } from '@pieces.app/pieces-os-client'

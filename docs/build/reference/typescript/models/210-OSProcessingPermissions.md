@@ -1,9 +1,9 @@
 
-# OSProcessingPermissions Model
+# OSProcessingPermissions
 
 These are the permissions relating to the vision models.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **vision** | **boolean**
 **accessibility** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { OSProcessingPermissions } from '@pieces.app/pieces-os-client'

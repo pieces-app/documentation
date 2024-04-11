@@ -1,9 +1,9 @@
 
-# Auth0OpenAIUserMetadata Model
+# Auth0OpenAIUserMetadata
 
 Only supporting a single api key per user.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **apiKeyName** | **string**
 **organizationKey** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { Auth0OpenAIUserMetadata } from '@pieces.app/pieces-os-client'

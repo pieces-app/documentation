@@ -1,4 +1,4 @@
-# TransferableString Model
+# TransferableString
 
 ## Load the model package
 ```dart

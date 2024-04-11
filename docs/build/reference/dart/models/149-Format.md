@@ -1,4 +1,4 @@
-# Format Model
+# Format
 
 ## Load the model package
 ```dart

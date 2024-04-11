@@ -1,15 +1,15 @@
 
-# CodeAnalyses Model
+# CodeAnalyses
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;CodeAnalysis&gt;**](CodeAnalysis)
 
-## Example Model
+## Example
 
 ```typescript
 import { CodeAnalyses } from '@pieces.app/pieces-os-client'

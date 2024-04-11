@@ -1,9 +1,9 @@
 
-# AnonymousTemporalRange Model
+# AnonymousTemporalRange
 
 if you want a range between you can use from && to.  if you want anything before, use to and NO from.  if you want anything after, use from and NO to.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **between** | **boolean**
 **continuous** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { AnonymousTemporalRange } from '@pieces.app/pieces-os-client'

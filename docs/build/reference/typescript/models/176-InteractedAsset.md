@@ -1,16 +1,16 @@
 
-# InteractedAsset Model
+# InteractedAsset
 
 A model that represents an asset that has been interacted with. 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **asset** | **string**
 **interactions** | [**InteractedAssetInteractions**](InteractedAssetInteractions)
 
-## Example Model
+## Example
 
 ```typescript
 import { InteractedAsset } from '@pieces.app/pieces-os-client'

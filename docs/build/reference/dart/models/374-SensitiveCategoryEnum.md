@@ -1,4 +1,4 @@
-# SensitiveCategoryEnum Model
+# SensitiveCategoryEnum
 
 ## Load the model package
 ```dart

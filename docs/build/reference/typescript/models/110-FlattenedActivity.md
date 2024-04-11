@@ -1,9 +1,9 @@
 
-# FlattenedActivity Model
+# FlattenedActivity
 
 Note: - if mechanism == internal we will not display to the user.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **rank** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedActivity } from '@pieces.app/pieces-os-client'

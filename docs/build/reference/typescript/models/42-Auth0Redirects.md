@@ -1,16 +1,16 @@
 
-# Auth0Redirects Model
+# Auth0Redirects
 
 The redirect URI for you Auth 0 Service
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **authenticated** | **string**
 **unauthenticated** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { Auth0Redirects } from '@pieces.app/pieces-os-client'

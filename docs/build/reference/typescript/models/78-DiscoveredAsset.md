@@ -1,9 +1,9 @@
 
-# DiscoveredAsset Model
+# DiscoveredAsset
 
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **metadata** | [**SeededAssetMetadata**](SeededAssetMetadata)
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters)
 
-## Example Model
+## Example
 
 ```typescript
 import { DiscoveredAsset } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# WorkstreamPatternEngineStatus Model
+# WorkstreamPatternEngineStatus
 
 ## Load the model package
 ```dart

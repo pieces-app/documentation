@@ -1,9 +1,9 @@
 
-# TrackedInteractionEvent Model
+# TrackedInteractionEvent
 
 This is a model that will hold relavent information in relation to an interaction(ONLY CLICK/TAP) analytics event(usage). If you want to register an event that relates to an interaction with the key then register a Keyboard Event. 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **description** | **string**
 **element** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedInteractionEvent } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# SeededActivity Model
+# SeededActivity
 
 ## Load the model package
 ```dart

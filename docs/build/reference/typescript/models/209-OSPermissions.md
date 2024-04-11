@@ -1,16 +1,16 @@
 
-# OSPermissions Model
+# OSPermissions
 
 This will return the permission of this specific operating system w/ relation to given features.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **processing** | [**OSProcessingPermissions**](OSProcessingPermissions)
 
-## Example Model
+## Example
 
 ```typescript
 import { OSPermissions } from '@pieces.app/pieces-os-client'

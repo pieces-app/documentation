@@ -1,4 +1,4 @@
-# QGPTRelevanceInput Model
+# QGPTRelevanceInput
 
 ## Load the model package
 ```dart

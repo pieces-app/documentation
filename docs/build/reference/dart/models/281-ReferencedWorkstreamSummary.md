@@ -1,4 +1,4 @@
-# ReferencedWorkstreamSummary Model
+# ReferencedWorkstreamSummary
 
 ## Load the model package
 ```dart

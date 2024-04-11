@@ -1,4 +1,4 @@
-# OSDeviceInformationReturnable Model
+# OSDeviceInformationReturnable
 
 ## Load the model package
 ```dart

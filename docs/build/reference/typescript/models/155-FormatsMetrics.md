@@ -1,16 +1,16 @@
 
-# FormatsMetrics Model
+# FormatsMetrics
 
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;FormatMetric&gt;**](FormatMetric)
 
-## Example Model
+## Example
 
 ```typescript
 import { FormatsMetrics } from '@pieces.app/pieces-os-client'

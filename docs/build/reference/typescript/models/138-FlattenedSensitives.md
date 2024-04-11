@@ -1,9 +1,9 @@
 
-# FlattenedSensitives Model
+# FlattenedSensitives
 
 This is a flattened representation of multiple sensitive pieces of data.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;ReferencedSensitive&gt;**](ReferencedSensitive)
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedSensitives } from '@pieces.app/pieces-os-client'

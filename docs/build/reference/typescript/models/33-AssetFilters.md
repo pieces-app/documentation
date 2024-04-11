@@ -1,8 +1,8 @@
 
-# AssetFilters Model
+# AssetFilters
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **iterable** | [**Array&lt;AssetFilter&gt;**](AssetFilter)
 **type** | [**FilterOperationTypeEnum**](FilterOperationTypeEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { AssetFilters } from '@pieces.app/pieces-os-client'

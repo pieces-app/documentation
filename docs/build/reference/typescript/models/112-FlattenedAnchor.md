@@ -1,8 +1,8 @@
 
-# FlattenedAnchor Model
+# FlattenedAnchor
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedAnchor } from '@pieces.app/pieces-os-client'

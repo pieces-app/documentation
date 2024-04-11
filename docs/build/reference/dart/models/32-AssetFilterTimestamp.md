@@ -1,4 +1,4 @@
-# AssetFilterTimestamp Model
+# AssetFilterTimestamp
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# ReferencedShare Model
+# ReferencedShare
 
 This is a [DAG SAFE] version of a share. with just a required share ID.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedShare**](FlattenedShare)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedShare } from '@pieces.app/pieces-os-client'

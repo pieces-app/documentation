@@ -1,4 +1,4 @@
-# Anchors Model
+# Anchors
 
 ## Load the model package
 ```dart

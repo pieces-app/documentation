@@ -1,16 +1,16 @@
 
-# QGPTTaskPipelineForCodeModification Model
+# QGPTTaskPipelineForCodeModification
 
 This task is for modifying a bit of code, IE modify this code to do xyz.  This is a class so that we can add optional properties in the future.  Note: the snippet && language that needs to be modified should be within the QGPTQuestionInput.relevant
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **instruction** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTTaskPipelineForCodeModification } from '@pieces.app/pieces-os-client'

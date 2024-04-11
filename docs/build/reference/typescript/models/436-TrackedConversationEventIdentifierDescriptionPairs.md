@@ -1,9 +1,9 @@
 
-# TrackedConversationEventIdentifierDescriptionPairs Model
+# TrackedConversationEventIdentifierDescriptionPairs
 
 These are all of the available event types that are permitted in an object pair notation.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **conversationNameUpdatedByTheUser** | **string**
 **conversationSummaryAnnotationGeneratedByTheSystem** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedConversationEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

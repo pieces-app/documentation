@@ -1,15 +1,15 @@
 
-# GitHubDistribution Model
+# GitHubDistribution
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **gist** | [**GitHubGistDistribution**](GitHubGistDistribution)
 
-## Example Model
+## Example
 
 ```typescript
 import { GitHubDistribution } from '@pieces.app/pieces-os-client'

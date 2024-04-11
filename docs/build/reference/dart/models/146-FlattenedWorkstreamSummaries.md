@@ -1,4 +1,4 @@
-# FlattenedWorkstreamSummaries Model
+# FlattenedWorkstreamSummaries
 
 ## Load the model package
 ```dart

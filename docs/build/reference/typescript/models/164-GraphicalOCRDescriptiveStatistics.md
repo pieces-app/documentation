@@ -1,9 +1,9 @@
 
-# GraphicalOCRDescriptiveStatistics Model
+# GraphicalOCRDescriptiveStatistics
 
 Model for monitoring and evaluating the OCR feature
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **confidence** | [**GraphicalOCRDescriptiveStatisticsConfidence**](GraphicalOCRDescriptiveStatisticsConfidence)
 **duration** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalOCRDescriptiveStatistics } from '@pieces.app/pieces-os-client'

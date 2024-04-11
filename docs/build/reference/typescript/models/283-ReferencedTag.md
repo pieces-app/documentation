@@ -1,9 +1,9 @@
 
-# ReferencedTag Model
+# ReferencedTag
 
 [DAG Safe] version of a Tag Model. 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedTag**](FlattenedTag)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedTag } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# QGPTQuestionAnswer Model
+# QGPTQuestionAnswer
 
 This will be a simple model with a score and a text value that will represent the value returned for this answer.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **score** | **number**
 **text** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTQuestionAnswer } from '@pieces.app/pieces-os-client'

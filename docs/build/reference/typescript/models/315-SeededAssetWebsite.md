@@ -1,9 +1,9 @@
 
-# SeededAssetWebsite Model
+# SeededAssetWebsite
 
 This is similar to an SeededWebsite, where this is the minimum information of a website, but this can get added to a seededAsset,  where you may not yet have an asset id.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **name** | **string**
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAssetWebsite } from '@pieces.app/pieces-os-client'

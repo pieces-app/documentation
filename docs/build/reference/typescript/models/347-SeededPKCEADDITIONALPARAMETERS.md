@@ -1,16 +1,16 @@
 
-# SeededPKCEADDITIONALPARAMETERS Model
+# SeededPKCEADDITIONALPARAMETERS
 
 Append any additional parameter to the end of your request, and it will be sent to the provider. For example, access_type=offline (for Google Refresh Tokens) , display=popup (for Windows Live popup mode).
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **accessType** | **string**
 **display** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededPKCEADDITIONALPARAMETERS } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# ExportedAsset Model
+# ExportedAsset
 
 This is a model for a minimum exported version of an asset.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **created** | [**GroupedTimestamp**](GroupedTimestamp)
 **raw** | [**FileFormat**](FileFormat)
 
-## Example Model
+## Example
 
 ```typescript
 import { ExportedAsset } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# Distribution Model
+# Distribution
 
 ## Load the model package
 ```dart

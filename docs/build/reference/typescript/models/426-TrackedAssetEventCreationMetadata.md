@@ -1,9 +1,9 @@
 
-# TrackedAssetEventCreationMetadata Model
+# TrackedAssetEventCreationMetadata
 
 Metadata attached to a creation event on an Asset
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **clipboard** | [**TrackedAssetEventCreationMetadataClipboard**](TrackedAssetEventCreationMetadataClipboard)
 **file** | [**TrackedAssetEventCreationMetadataFile**](TrackedAssetEventCreationMetadataFile)
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetEventCreationMetadata } from '@pieces.app/pieces-os-client'

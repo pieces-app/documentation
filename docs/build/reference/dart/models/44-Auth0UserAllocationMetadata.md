@@ -1,4 +1,4 @@
-# Auth0UserAllocationMetadata Model
+# Auth0UserAllocationMetadata
 
 ## Load the model package
 ```dart

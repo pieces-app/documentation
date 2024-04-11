@@ -1,4 +1,4 @@
-# FlattenedAnchors Model
+# FlattenedAnchors
 
 ## Load the model package
 ```dart

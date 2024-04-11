@@ -1,16 +1,16 @@
 
-# OrderedMetrics Model
+# OrderedMetrics
 
 This is a returnable for the metrics/formats/ordered
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **ordered** | **Array&lt;string&gt;**
 
-## Example Model
+## Example
 
 ```typescript
 import { OrderedMetrics } from '@pieces.app/pieces-os-client'

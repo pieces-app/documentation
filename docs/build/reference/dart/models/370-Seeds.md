@@ -1,4 +1,4 @@
-# Seeds Model
+# Seeds
 
 ## Load the model package
 ```dart

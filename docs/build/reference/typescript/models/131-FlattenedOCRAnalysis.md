@@ -1,9 +1,9 @@
 
-# FlattenedOCRAnalysis Model
+# FlattenedOCRAnalysis
 
 [DAG Safe] Ocr Analysis that will reference FlattenedFormats.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **model** | [**Model**](Model)
 **image** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedOCRAnalysis } from '@pieces.app/pieces-os-client'

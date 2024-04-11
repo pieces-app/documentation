@@ -1,14 +1,14 @@
 
-# ConversationTypeEnum Model
+# ConversationTypeEnum
 
 This is a type of conversation, for now just COPILOT.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ConversationTypeEnum } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# GraphicalImageDescriptiveStatistics Model
+# GraphicalImageDescriptiveStatistics
 
 Model for collecting descriptive statistics of images uploaded to Pieces
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **created** | **string**
 **os** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalImageDescriptiveStatistics } from '@pieces.app/pieces-os-client'

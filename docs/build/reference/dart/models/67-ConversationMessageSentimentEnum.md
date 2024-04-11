@@ -1,4 +1,4 @@
-# ConversationMessageSentimentEnum Model
+# ConversationMessageSentimentEnum
 
 ## Load the model package
 ```dart

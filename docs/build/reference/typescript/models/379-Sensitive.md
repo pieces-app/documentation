@@ -1,9 +1,9 @@
 
-# Sensitive Model
+# Sensitive
 
 This is a fully referenced representation of a sensitive pieces of data.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -23,7 +23,7 @@ Name | Type
 **interactions** | **number**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { Sensitive } from '@pieces.app/pieces-os-client'

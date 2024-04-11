@@ -1,16 +1,16 @@
 
-# AssetSearchSpace Model
+# AssetSearchSpace
 
 This is provided search spaces, This is a provided assets, TODO in the future we might want to add seeds.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **identifers** | [**FlattenedAssets**](FlattenedAssets)
 
-## Example Model
+## Example
 
 ```typescript
 import { AssetSearchSpace } from '@pieces.app/pieces-os-client'

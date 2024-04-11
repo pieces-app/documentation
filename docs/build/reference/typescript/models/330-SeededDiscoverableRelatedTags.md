@@ -1,8 +1,8 @@
 
-# SeededDiscoverableRelatedTags Model
+# SeededDiscoverableRelatedTags
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **iterable** | [**Array&lt;SeededDiscoverableRelatedTag&gt;**](SeededDiscoverableRelatedTag)
 **application** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededDiscoverableRelatedTags } from '@pieces.app/pieces-os-client'

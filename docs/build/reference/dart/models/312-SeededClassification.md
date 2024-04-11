@@ -1,4 +1,4 @@
-# SeededClassification Model
+# SeededClassification
 
 ## Load the model package
 ```dart

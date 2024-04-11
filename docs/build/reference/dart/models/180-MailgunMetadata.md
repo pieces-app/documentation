@@ -1,4 +1,4 @@
-# MailgunMetadata Model
+# MailgunMetadata
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# TextMatch Model
+# TextMatch
 
 Thext Match currently used for sensitive for scales for people, and anything related to text matching.  group: is the entire match subgroup is the inner match within the group.(optional)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **group** | [**TextLocation**](TextLocation)
 **subgroup** | [**TextLocation**](TextLocation)
 
-## Example Model
+## Example
 
 ```typescript
 import { TextMatch } from '@pieces.app/pieces-os-client'

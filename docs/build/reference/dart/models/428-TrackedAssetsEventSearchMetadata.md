@@ -1,4 +1,4 @@
-# TrackedAssetsEventSearchMetadata Model
+# TrackedAssetsEventSearchMetadata
 
 ## Load the model package
 ```dart

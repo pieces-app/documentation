@@ -1,9 +1,9 @@
 
-# UserProfile Model
+# UserProfile
 
 This is the model for a user logged into Pieces.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -21,7 +21,7 @@ Name | Type
 **providers** | [**ExternalProviders**](ExternalProviders)
 **auth0** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { UserProfile } from '@pieces.app/pieces-os-client'

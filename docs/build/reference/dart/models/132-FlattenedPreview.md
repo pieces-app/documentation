@@ -1,4 +1,4 @@
-# FlattenedPreview Model
+# FlattenedPreview
 
 ## Load the model package
 ```dart

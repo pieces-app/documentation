@@ -1,9 +1,9 @@
 
-# ReferencedConversation Model
+# ReferencedConversation
 
 This is a DAG-Safe Minimal version of a Conversation.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedConversation**](FlattenedConversation)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedConversation } from '@pieces.app/pieces-os-client'

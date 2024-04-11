@@ -1,9 +1,9 @@
 
-# TrackedFormatEventIdentifierDescriptionPairs Model
+# TrackedFormatEventIdentifierDescriptionPairs
 
 This is a model that allows us to send send over super specific format related events such as copied, deleted, downloaded, etc
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -19,7 +19,7 @@ Name | Type
 **formatInserted** | **string**
 **formatValueEdited** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedFormatEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

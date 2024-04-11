@@ -1,9 +1,9 @@
 
-# TrackedAssetsEventSearchMetadata Model
+# TrackedAssetsEventSearchMetadata
 
 Metadata attached to a search event on an Asset
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **query** | **string**
 **results** | [**TrackedAssetsEventSearchMetadataResults**](TrackedAssetsEventSearchMetadataResults)
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetsEventSearchMetadata } from '@pieces.app/pieces-os-client'

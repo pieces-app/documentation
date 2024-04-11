@@ -1,9 +1,9 @@
 
-# SeededTrackedFormatEvent Model
+# SeededTrackedFormatEvent
 
 Again this is a model designed to be sent over to a context server to be built and then sent along to segment. 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **format** | [**ReferencedFormat**](ReferencedFormat)
 **metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedFormatEvent } from '@pieces.app/pieces-os-client'

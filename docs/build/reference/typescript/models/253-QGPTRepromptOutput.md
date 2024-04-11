@@ -1,15 +1,15 @@
 
-# QGPTRepromptOutput Model
+# QGPTRepromptOutput
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **query** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTRepromptOutput } from '@pieces.app/pieces-os-client'

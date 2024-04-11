@@ -1,4 +1,4 @@
-# SeededConversation Model
+# SeededConversation
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# QGPTQuestionInput Model
+# QGPTQuestionInput
 
 This is the body input for the /code_gpt/question.  Note: - each relevant seed, must require at minimum a Seed or an id used from the /code_gpt/relevance endpoint or we will throw an error.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTQuestionInput } from '@pieces.app/pieces-os-client'

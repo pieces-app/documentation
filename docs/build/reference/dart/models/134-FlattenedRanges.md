@@ -1,4 +1,4 @@
-# FlattenedRanges Model
+# FlattenedRanges
 
 ## Load the model package
 ```dart

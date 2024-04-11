@@ -1,8 +1,8 @@
 
-# SeededAnchor Model
+# SeededAnchor
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
 **conversation** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAnchor } from '@pieces.app/pieces-os-client'
