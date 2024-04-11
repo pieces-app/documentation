@@ -1,4 +1,4 @@
-# User Model API
+# User API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 An endpoint to clear the current user. 
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -33,21 +33,21 @@ apiInstance.clearUser().then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -57,7 +57,7 @@ void (empty response body)
 
 This will refresh a user.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -70,21 +70,21 @@ apiInstance.refreshUser().then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -95,7 +95,7 @@ This endpoint does not need any parameters.
 
 This will select the current user.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -113,24 +113,24 @@ apiInstance.selectUser(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **auth0User** | **Auth0User**|  |
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 Provides a WebSocket connection that streams user data.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -153,21 +153,21 @@ apiInstance.streamUser().then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -177,7 +177,7 @@ This endpoint does not need any parameters.
 
 This will update a specific user in the database.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -195,24 +195,24 @@ apiInstance.updateUser(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**|  |
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -240,24 +240,24 @@ apiInstance.userBetaStatus(body).then((data: UserBetaStatus) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userBetaStatus** | **UserBetaStatus**|  |
 
 
-### Return Model type
+### Return type
 
 [**UserBetaStatus**](../models/UserBetaStatus)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -282,21 +282,21 @@ apiInstance.userProviders().then((data: ReturnedUserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -308,7 +308,7 @@ This endpoint does not need any parameters.
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -321,21 +321,21 @@ apiInstance.userSnapshot().then((data: ReturnedUserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -345,7 +345,7 @@ This endpoint does not need any parameters.
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -363,24 +363,24 @@ apiInstance.userUpdateVanity(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | **UserProfile**| This will take an update userProfile, with the updated vanity name! |
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

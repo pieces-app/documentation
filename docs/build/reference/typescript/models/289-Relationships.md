@@ -1,14 +1,14 @@
 
-# Relationships Model
+# Relationships
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;Relationship&gt;**](Relationship)
 
-## Example Model
+## Example
 
 ```typescript
 import { Relationships } from '@pieces.app/pieces-os-client'

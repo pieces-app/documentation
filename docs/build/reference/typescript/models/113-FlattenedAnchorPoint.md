@@ -1,8 +1,8 @@
 
-# FlattenedAnchorPoint Model
+# FlattenedAnchorPoint
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor)
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedAnchorPoint } from '@pieces.app/pieces-os-client'

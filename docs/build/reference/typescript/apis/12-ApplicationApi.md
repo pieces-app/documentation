@@ -1,4 +1,4 @@
-# Application Model API
+# Application API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 This is an endpoint for updating an application.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.applicationUpdate(body).then((data: Application) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **Application**|  |
 
 
-### Return Model type
+### Return type
 
 [**Application**](../models/Application)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

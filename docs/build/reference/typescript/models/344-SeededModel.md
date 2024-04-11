@@ -1,9 +1,9 @@
 
-# SeededModel Model
+# SeededModel
 
 This is Precursor to a Model.  bytes: here is the size of the model in a file local on your computer. ram: is the amount of ram usage when the model is loaded into memory.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -27,7 +27,7 @@ Name | Type
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens)
 **custom** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededModel } from '@pieces.app/pieces-os-client'

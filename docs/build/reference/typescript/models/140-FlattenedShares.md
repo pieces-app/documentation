@@ -1,9 +1,9 @@
 
-# FlattenedShares Model
+# FlattenedShares
 
 This is just an iterable of our individual share models.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;FlattenedShare&gt;**](FlattenedShare)
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedShares } from '@pieces.app/pieces-os-client'

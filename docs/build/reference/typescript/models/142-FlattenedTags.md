@@ -1,9 +1,9 @@
 
-# FlattenedTags Model
+# FlattenedTags
 
 This is multiple ReferencedTags(which includes an optional FlattenedTag Model within the reference model).
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedTags } from '@pieces.app/pieces-os-client'

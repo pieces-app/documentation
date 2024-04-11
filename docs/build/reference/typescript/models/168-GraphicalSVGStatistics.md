@@ -1,15 +1,15 @@
 
-# GraphicalSVGStatistics Model
+# GraphicalSVGStatistics
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **id** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalSVGStatistics } from '@pieces.app/pieces-os-client'

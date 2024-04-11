@@ -1,15 +1,15 @@
 
-# SeededTrackedInteractionEventIdentifierDescriptionPairs Model
+# SeededTrackedInteractionEventIdentifierDescriptionPairs
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **assetsListRefreshed** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedInteractionEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

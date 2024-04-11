@@ -1,9 +1,9 @@
 
-# SeededAssetTag Model
+# SeededAssetTag
 
 This is similar to an SeededTag, where this is the minimum information of a tag, but this can get added to a seededAsset,  where you may not yet have an asset id.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **category** | [**TagCategoryEnum**](TagCategoryEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededAssetTag } from '@pieces.app/pieces-os-client'

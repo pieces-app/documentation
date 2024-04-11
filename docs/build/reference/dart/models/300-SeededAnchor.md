@@ -1,4 +1,4 @@
-# SeededAnchor Model
+# SeededAnchor
 
 ## Load the model package
 ```dart

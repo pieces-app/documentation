@@ -1,16 +1,16 @@
 
-# QGPTTaskPipelineForCodeFix Model
+# QGPTTaskPipelineForCodeFix
 
 This task is for fixing a bit of code.  This is a class so that we can add optional properties in the future.  Note: the snippet && language that needs to be fixed should be within the QGPTQuestionInput.relevant.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **error** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTTaskPipelineForCodeFix } from '@pieces.app/pieces-os-client'

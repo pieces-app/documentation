@@ -1,4 +1,4 @@
-# FilePickerInput Model
+# FilePickerInput
 
 ## Load the model package
 ```dart

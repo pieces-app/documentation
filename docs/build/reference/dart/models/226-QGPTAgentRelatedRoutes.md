@@ -1,4 +1,4 @@
-# QGPTAgentRelatedRoutes Model
+# QGPTAgentRelatedRoutes
 
 ## Load the model package
 ```dart

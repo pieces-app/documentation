@@ -1,16 +1,16 @@
 
-# UpdatedExternalProvider Model APIKey
+# UpdatedExternalProvider APIKey
 
 This is the update Auth0UserMetadata object, and the specific update output model for \"/external_provider/api_key/update\"
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { UpdatedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

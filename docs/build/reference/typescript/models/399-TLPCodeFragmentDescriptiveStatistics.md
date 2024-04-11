@@ -1,9 +1,9 @@
 
-# TLPCodeFragmentDescriptiveStatistics Model
+# TLPCodeFragmentDescriptiveStatistics
 
 Model for ML big query Data collection.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **context** | **string**
 **snippet** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentDescriptiveStatistics } from '@pieces.app/pieces-os-client'

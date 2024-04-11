@@ -1,16 +1,16 @@
 
-# FragmentMetadata Model
+# FragmentMetadata
 
 This is a model for metadata of a file!
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { FragmentMetadata } from '@pieces.app/pieces-os-client'

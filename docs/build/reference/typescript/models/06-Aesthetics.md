@@ -1,9 +1,9 @@
 
-# Aesthetics Model
+# Aesthetics
 
 These are aesthetics properties that will ensure the darkmode + font size and other aesthetics properties persist:)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **theme** | [**Theme**](Theme)
 **font** | [**Font**](Font)
 
-## Example Model
+## Example
 
 ```typescript
 import { Aesthetics } from '@pieces.app/pieces-os-client'

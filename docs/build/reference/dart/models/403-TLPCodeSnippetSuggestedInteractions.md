@@ -1,4 +1,4 @@
-# TLPCodeSnippetSuggestedInteractions Model
+# TLPCodeSnippetSuggestedInteractions
 
 ## Load the model package
 ```dart

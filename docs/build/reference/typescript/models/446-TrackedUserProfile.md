@@ -1,9 +1,9 @@
 
-# TrackedUserProfile Model
+# TrackedUserProfile
 
 A user that will be passed along with each analytics event
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **email** | **string**
 **granularity** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedUserProfile } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# AllocationCloudUrls Model
+# AllocationCloudUrls
 
 ## Load the model package
 ```dart

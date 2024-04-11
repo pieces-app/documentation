@@ -1,4 +1,4 @@
-# AnonymousTemporalRange Model
+# AnonymousTemporalRange
 
 ## Load the model package
 ```dart

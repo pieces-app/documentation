@@ -1,9 +1,9 @@
 
-# Context Model
+# Context
 
 A Context that is returned from almost all calls to the ContextAPI
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **health** | [**Health**](Health)
 **user** | [**UserProfile**](UserProfile)
 
-## Example Model
+## Example
 
 ```typescript
 import { Context } from '@pieces.app/pieces-os-client'

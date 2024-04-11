@@ -1,9 +1,9 @@
 
-# SeededFragment Model
+# SeededFragment
 
 This will be either a TransferableString or TransferableBytes that represent your fragment. ONLY Pass one or the other DONT pass both or neither.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **bytes** | [**TransferableBytes**](TransferableBytes)
 **metadata** | [**FragmentMetadata**](FragmentMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededFragment } from '@pieces.app/pieces-os-client'

@@ -1,15 +1,15 @@
 
-# TemporalRangeGrounding Model
+# TemporalRangeGrounding
 
 This is used in the QGPT flow as well as within the conversation.  This will let us know grounding\'s that you want us to use within a given time range(s).  workstreams: is used to describe workstreams context. (specific to the \"workstream mapper\" - name subject to change)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **workstreams** | [**FlattenedRanges**](FlattenedRanges)
 
-## Example Model
+## Example
 
 ```typescript
 import { TemporalRangeGrounding } from '@pieces.app/pieces-os-client'

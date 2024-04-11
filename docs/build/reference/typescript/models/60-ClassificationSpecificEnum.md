@@ -1,14 +1,14 @@
 
-# ClassificationSpecificEnum Model
+# ClassificationSpecificEnum
 
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ClassificationSpecificEnum } from '@pieces.app/pieces-os-client'

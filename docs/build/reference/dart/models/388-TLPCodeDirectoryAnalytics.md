@@ -1,4 +1,4 @@
-# TLPCodeDirectoryAnalytics Model
+# TLPCodeDirectoryAnalytics
 
 ## Load the model package
 ```dart

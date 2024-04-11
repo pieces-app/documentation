@@ -1,9 +1,9 @@
 
-# FlattenedPreview Model
+# FlattenedPreview
 
 These are the references of the formats **Only UUIDS**
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **base** | **string**
 **overlay** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedPreview } from '@pieces.app/pieces-os-client'

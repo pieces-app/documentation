@@ -1,4 +1,4 @@
-# ExternalProviderProfileData Model
+# ExternalProviderProfileData
 
 ## Load the model package
 ```dart

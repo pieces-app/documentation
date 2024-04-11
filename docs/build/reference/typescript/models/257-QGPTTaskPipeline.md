@@ -1,9 +1,9 @@
 
-# QGPTTaskPipeline Model
+# QGPTTaskPipeline
 
 This model is specifically for QGPT Task pipelines, the model is used to group one off tasks for instance fix/explaining/commenting that dont necessarily require a conversation form factor.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification)
 **codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTTaskPipeline } from '@pieces.app/pieces-os-client'

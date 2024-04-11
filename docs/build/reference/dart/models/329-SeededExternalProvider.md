@@ -1,4 +1,4 @@
-# SeededExternalProvider Model
+# SeededExternalProvider
 
 ## Load the model package
 ```dart

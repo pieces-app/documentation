@@ -1,8 +1,8 @@
 
-# ExportedDatabaseFormat Model
+# ExportedDatabaseFormat
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **id** | **string**
 **raw** | **Array&lt;number&gt;**
 
-## Example Model
+## Example
 
 ```typescript
 import { ExportedDatabaseFormat } from '@pieces.app/pieces-os-client'

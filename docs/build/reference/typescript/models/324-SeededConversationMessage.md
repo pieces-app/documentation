@@ -1,9 +1,9 @@
 
-# SeededConversationMessage Model
+# SeededConversationMessage
 
 This is a seeded version of a ConversationMessage.  conversation is optional, this is because it can be used within the SeededConversation, however if this is passed into the /messages/create w/o a conversation uuid then we will throw an error.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum)
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededConversationMessage } from '@pieces.app/pieces-os-client'

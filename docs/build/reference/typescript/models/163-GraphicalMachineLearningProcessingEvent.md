@@ -1,8 +1,8 @@
 
-# GraphicalMachineLearningProcessingEvent Model
+# GraphicalMachineLearningProcessingEvent
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **image** | [**GraphicalImageProcessing**](GraphicalImageProcessing)
 **svg** | [**GraphicalSVGStatistics**](GraphicalSVGStatistics)
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalMachineLearningProcessingEvent } from '@pieces.app/pieces-os-client'

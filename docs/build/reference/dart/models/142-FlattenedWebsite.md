@@ -1,4 +1,4 @@
-# FlattenedWebsite Model
+# FlattenedWebsite
 
 ## Load the model package
 ```dart

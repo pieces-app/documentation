@@ -1,8 +1,8 @@
 
-# ReferencedWebsite Model
+# ReferencedWebsite
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedWebsite**](FlattenedWebsite)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedWebsite } from '@pieces.app/pieces-os-client'

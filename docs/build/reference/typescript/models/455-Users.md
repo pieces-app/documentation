@@ -1,16 +1,16 @@
 
-# Users Model
+# Users
 
 A base class for a collection of users and some additional meta properties.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;UserProfile&gt;**](UserProfile)
 
-## Example Model
+## Example
 
 ```typescript
 import { Users } from '@pieces.app/pieces-os-client'

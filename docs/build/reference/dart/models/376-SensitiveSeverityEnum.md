@@ -1,4 +1,4 @@
-# SensitiveSeverityEnum Model
+# SensitiveSeverityEnum
 
 ## Load the model package
 ```dart

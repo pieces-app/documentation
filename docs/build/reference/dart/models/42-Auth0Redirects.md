@@ -1,4 +1,4 @@
-# Auth0Redirects Model
+# Auth0Redirects
 
 ## Load the model package
 ```dart

@@ -1,14 +1,14 @@
 
-# BackupStatusEnum Model
+# BackupStatusEnum
 
 Enum used for the status of creating a backup or restoring a backup.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { BackupStatusEnum } from '@pieces.app/pieces-os-client'

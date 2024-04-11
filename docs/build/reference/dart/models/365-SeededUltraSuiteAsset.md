@@ -1,4 +1,4 @@
-# SeededUltraSuiteAsset Model
+# SeededUltraSuiteAsset
 
 ## Load the model package
 ```dart

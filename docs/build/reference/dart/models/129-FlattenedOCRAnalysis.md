@@ -1,4 +1,4 @@
-# FlattenedOCRAnalysis Model
+# FlattenedOCRAnalysis
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# SeededUltraSuiteAsset Model
+# SeededUltraSuiteAsset
 
 A SeededUEAsset is the minimum data sent from UE required to create an asset within Pieces.  Fragment & file are both optional properties however we will throw an internal error if both fragment and file are passed through or if both are undefined.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **format** | [**SeededFormat**](SeededFormat)
 **description** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededUltraSuiteAsset } from '@pieces.app/pieces-os-client'

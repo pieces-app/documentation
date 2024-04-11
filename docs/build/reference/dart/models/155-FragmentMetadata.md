@@ -1,4 +1,4 @@
-# FragmentMetadata Model
+# FragmentMetadata
 
 ## Load the model package
 ```dart

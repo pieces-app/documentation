@@ -1,9 +1,9 @@
 
-# WorkstreamSummaries Model
+# WorkstreamSummaries
 
 This is a collection of many WorkstreamSummary
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { WorkstreamSummaries } from '@pieces.app/pieces-os-client'

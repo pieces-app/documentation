@@ -1,4 +1,4 @@
-# TLPDirectedDiscoveryFilterEnum Model
+# TLPDirectedDiscoveryFilterEnum
 
 ## Load the model package
 ```dart

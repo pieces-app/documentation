@@ -1,4 +1,4 @@
-# QGPTTaskPipelineForCodeFix Model
+# QGPTTaskPipelineForCodeFix
 
 ## Load the model package
 ```dart

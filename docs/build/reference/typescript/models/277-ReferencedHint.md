@@ -1,9 +1,9 @@
 
-# ReferencedHint Model
+# ReferencedHint
 
 This is the referenced version of a hint, main used for the uuid.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedHint**](FlattenedHint)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedHint } from '@pieces.app/pieces-os-client'

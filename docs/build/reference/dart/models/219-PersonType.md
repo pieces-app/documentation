@@ -1,4 +1,4 @@
-# PersonType Model
+# PersonType
 
 ## Load the model package
 ```dart

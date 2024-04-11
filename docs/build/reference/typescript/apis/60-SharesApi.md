@@ -1,4 +1,4 @@
-# Shares Model API
+# Shares API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 This endpoint will accept an asset. Response here will be a Share that was created.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,7 +35,7 @@ apiInstance.sharesCreateNewShare(body).then((data: Shares) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -43,17 +43,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Shares**](../models/Shares)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -81,24 +81,24 @@ apiInstance.sharesDeleteShare(body).then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] | Share id | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 **string**
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -126,24 +126,24 @@ apiInstance.sharesSnapshot(body).then((data: Shares) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Shares**](../models/Shares)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -173,7 +173,7 @@ apiInstance.sharesSpecificShareSnapshot(body).then((data: Share) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -181,17 +181,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Share**](../models/Share)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | A specific share per the provided share id. |  -  |

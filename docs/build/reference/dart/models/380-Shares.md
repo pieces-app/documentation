@@ -1,4 +1,4 @@
-# Shares Model
+# Shares
 
 ## Load the model package
 ```dart

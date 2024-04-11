@@ -1,9 +1,9 @@
 
-# TrackedAssetEventCreationMetadataClipboard Model
+# TrackedAssetEventCreationMetadataClipboard
 
 If an asset was created from a clipboard event
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **keyboard** | **boolean**
 **interaction** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetEventCreationMetadataClipboard } from '@pieces.app/pieces-os-client'

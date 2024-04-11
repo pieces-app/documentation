@@ -1,9 +1,9 @@
 
-# DiscoveredSensitive Model
+# DiscoveredSensitive
 
 This will return a discoveredSensitive, with a seed that can be used to create if automatic is set to false. and will provide the original text provided.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **seed** | [**SeededSensitive**](SeededSensitive)
 **text** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { DiscoveredSensitive } from '@pieces.app/pieces-os-client'

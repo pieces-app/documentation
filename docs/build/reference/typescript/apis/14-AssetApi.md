@@ -1,4 +1,4 @@
-# Asset Model API
+# Asset API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -46,7 +46,7 @@ apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -54,17 +54,17 @@ Name | Type | Description  | Notes
  **tag** | [**string**] | tag id | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -75,7 +75,7 @@ void (empty response body)
 
 Associates a website with an asset. It performs the same action as its website equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -95,7 +95,7 @@ apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -103,17 +103,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -124,7 +124,7 @@ void (empty response body)
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -144,7 +144,7 @@ apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty respon
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -152,17 +152,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -173,7 +173,7 @@ void (empty response body)
 
 Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -193,7 +193,7 @@ apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) =
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -201,17 +201,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -222,7 +222,7 @@ void (empty response body)
 
 Disassociates a website from an asset. It performs the same action as the website equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -242,7 +242,7 @@ apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -250,17 +250,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -271,7 +271,7 @@ void (empty response body)
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -291,7 +291,7 @@ apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty res
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -299,17 +299,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -320,7 +320,7 @@ void (empty response body)
 
 Retrieves the formats available for a specified asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -340,7 +340,7 @@ apiInstance.assetFormats(body).then((data: Formats) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -348,17 +348,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Formats**](../models/Formats)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 
 Retrieves the formats available for a specified asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -388,7 +388,7 @@ apiInstance.assetReclassify(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -396,17 +396,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Asset**](../models/Asset)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -416,7 +416,7 @@ Name | Type | Description  | Notes
 
 Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -436,7 +436,7 @@ apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) =
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -444,17 +444,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -465,7 +465,7 @@ void (empty response body)
 
 Retrieves the snapshot of a specific asset
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -485,7 +485,7 @@ apiInstance.assetSnapshot(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -493,17 +493,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Asset**](../models/Asset)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -514,7 +514,7 @@ Name | Type | Description  | Notes
 
 Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -536,7 +536,7 @@ apiInstance.assetSnapshotPost(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -545,17 +545,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Asset**](../models/Asset)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -565,7 +565,7 @@ Name | Type | Description  | Notes
 
 Retrieves activity events specific to the given asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -585,7 +585,7 @@ apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -593,17 +593,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Activities**](../models/Activities)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -614,7 +614,7 @@ Name | Type | Description  | Notes
 
 Retrieves conversations specific to the given asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -634,7 +634,7 @@ apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -642,17 +642,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Conversations**](../models/Conversations)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -663,7 +663,7 @@ Name | Type | Description  | Notes
 
 Retrieves an export version of the specified asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -683,7 +683,7 @@ apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -691,17 +691,17 @@ Name | Type | Description  | Notes
  **exportType** | [**&#39;HTML&#39; | &#39;MD&#39;**]**Array\<&#39;HTML&#39; &#124; &#39;MD&#39;\>** | This specifies the type of export the user wants. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**ExportedAsset**](../models/ExportedAsset)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -712,7 +712,7 @@ Name | Type | Description  | Notes
 
 Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -732,7 +732,7 @@ apiInstance.assetUpdate(body).then((data: Asset) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -740,17 +740,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Asset**](../models/Asset)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

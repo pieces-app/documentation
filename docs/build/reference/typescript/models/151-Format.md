@@ -1,9 +1,9 @@
 
-# Format Model
+# Format
 
 A representation of Data for a particular Form Factor of an Asset.  Below asset HAS to be Flattened because it is a leaf node and must prevent cycles agressively.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -27,7 +27,7 @@ Name | Type
 **relationship** | [**Relationship**](Relationship)
 **activities** | [**Activities**](Activities)
 
-## Example Model
+## Example
 
 ```typescript
 import { Format } from '@pieces.app/pieces-os-client'

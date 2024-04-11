@@ -1,4 +1,4 @@
-# TrackedUserProfile Model
+# TrackedUserProfile
 
 ## Load the model package
 ```dart

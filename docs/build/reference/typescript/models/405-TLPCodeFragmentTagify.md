@@ -1,15 +1,15 @@
 
-# TLPCodeFragmentTagify Model
+# TLPCodeFragmentTagify
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **code** | [**TLPCodeSnippetTagifyCode**](TLPCodeSnippetTagifyCode)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentTagify } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# Relationships Model API
+# Relationships API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 This will return all of the relationships that exists within your pieces db.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,21 +25,21 @@ apiInstance.relationshipsSnapshot().then((data: Relationships) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**Relationships**](../models/Relationships)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

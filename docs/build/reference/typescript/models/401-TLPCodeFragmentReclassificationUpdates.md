@@ -1,8 +1,8 @@
 
-# TLPCodeFragmentReclassificationUpdates Model
+# TLPCodeFragmentReclassificationUpdates
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **previous** | [**Classification**](Classification)
 **current** | [**Classification**](Classification)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentReclassificationUpdates } from '@pieces.app/pieces-os-client'

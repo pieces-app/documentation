@@ -1,4 +1,4 @@
-# QGPTRepromptInput Model
+# QGPTRepromptInput
 
 ## Load the model package
 ```dart

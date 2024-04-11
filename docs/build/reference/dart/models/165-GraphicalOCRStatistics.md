@@ -1,4 +1,4 @@
-# GraphicalOCRStatistics Model
+# GraphicalOCRStatistics
 
 ## Load the model package
 ```dart

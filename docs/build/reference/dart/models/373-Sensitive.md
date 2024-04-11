@@ -1,4 +1,4 @@
-# Sensitive Model
+# Sensitive
 
 ## Load the model package
 ```dart

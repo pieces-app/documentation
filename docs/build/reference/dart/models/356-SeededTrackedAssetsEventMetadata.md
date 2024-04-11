@@ -1,4 +1,4 @@
-# SeededTrackedAssetsEventMetadata Model
+# SeededTrackedAssetsEventMetadata
 
 ## Load the model package
 ```dart

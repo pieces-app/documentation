@@ -1,4 +1,4 @@
-# DiscoveredHtmlWebpage Model
+# DiscoveredHtmlWebpage
 
 ## Load the model package
 ```dart

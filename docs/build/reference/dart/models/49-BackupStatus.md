@@ -1,4 +1,4 @@
-# BackupStatus Model
+# BackupStatus
 
 ## Load the model package
 ```dart

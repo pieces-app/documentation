@@ -1,8 +1,8 @@
 
-# QGPTRelevanceInputOptions Model
+# QGPTRelevanceInputOptions
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **question** | **boolean**
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTRelevanceInputOptions } from '@pieces.app/pieces-os-client'

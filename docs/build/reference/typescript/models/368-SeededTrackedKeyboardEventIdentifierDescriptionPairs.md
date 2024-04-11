@@ -1,15 +1,15 @@
 
-# SeededTrackedKeyboardEventIdentifierDescriptionPairs Model
+# SeededTrackedKeyboardEventIdentifierDescriptionPairs
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **assetsListRefreshed** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedKeyboardEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

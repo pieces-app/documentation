@@ -1,4 +1,4 @@
-# Annotations Model
+# Annotations
 
 ## Load the model package
 ```dart

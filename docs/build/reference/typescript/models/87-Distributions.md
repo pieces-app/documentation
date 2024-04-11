@@ -1,16 +1,16 @@
 
-# Distributions Model
+# Distributions
 
 This is the plural Model of a Distribution.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **iterable** | [**Array&lt;Distribution&gt;**](Distribution)
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { Distributions } from '@pieces.app/pieces-os-client'

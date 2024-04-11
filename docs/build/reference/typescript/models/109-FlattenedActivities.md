@@ -1,15 +1,15 @@
 
-# FlattenedActivities Model
+# FlattenedActivities
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ReferencedActivity&gt;**](ReferencedActivity)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedActivities } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# BackupStatus Model
+# BackupStatus
 
 TODO add more description to this.  can eventually add a number that display the percent downloaded an so on.(this is called percent 0-100)
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **percentage** | **number**
 **backup** | [**Backup**](Backup)
 
-## Example Model
+## Example
 
 ```typescript
 import { BackupStatus } from '@pieces.app/pieces-os-client'

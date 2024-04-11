@@ -1,4 +1,4 @@
-# FlattenedAsset Model
+# FlattenedAsset
 
 ## Load the model package
 ```dart

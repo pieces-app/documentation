@@ -1,4 +1,4 @@
-# SeededTrackedApplication Model
+# SeededTrackedApplication
 
 ## Load the model package
 ```dart

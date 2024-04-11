@@ -1,4 +1,4 @@
-# FlattenedPersons Model
+# FlattenedPersons
 
 ## Load the model package
 ```dart

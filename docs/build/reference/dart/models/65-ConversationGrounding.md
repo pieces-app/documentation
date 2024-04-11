@@ -1,4 +1,4 @@
-# ConversationGrounding Model
+# ConversationGrounding
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Notification Model
+# Notification
 
 ## Load the model package
 ```dart

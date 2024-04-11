@@ -1,4 +1,4 @@
-# ReferencedWebsite Model
+# ReferencedWebsite
 
 ## Load the model package
 ```dart

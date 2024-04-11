@@ -1,4 +1,4 @@
-# WorkstreamSummary Model API
+# WorkstreamSummary API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a single workstream_summary.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -48,7 +48,7 @@ apiInstance.workstreamSummariesSpecificWorkstreamSummarySnapshot(body).then((dat
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -56,17 +56,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 
 This will associate a anchor with a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -97,7 +97,7 @@ apiInstance.workstreamSummaryAssociateAnchor(body).then((data: void (empty respo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -105,17 +105,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -126,7 +126,7 @@ void (empty response body)
 
 This will associate an asset with a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -146,7 +146,7 @@ apiInstance.workstreamSummaryAssociateAsset(body).then((data: void (empty respon
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -154,17 +154,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -175,7 +175,7 @@ void (empty response body)
 
 This will associate an conversation with a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -195,7 +195,7 @@ apiInstance.workstreamSummaryAssociateConversation(body).then((data: void (empty
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -203,17 +203,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -224,7 +224,7 @@ void (empty response body)
 
 This will associate an person with a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -244,7 +244,7 @@ apiInstance.workstreamSummaryAssociatePerson(body).then((data: void (empty respo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -252,17 +252,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -273,7 +273,7 @@ void (empty response body)
 
 This will associate a range with a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -293,7 +293,7 @@ apiInstance.workstreamSummaryAssociateRange(body).then((data: void (empty respon
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -301,17 +301,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -322,7 +322,7 @@ void (empty response body)
 
 This will associate a website with a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -342,7 +342,7 @@ apiInstance.workstreamSummaryAssociateWebsite(body).then((data: void (empty resp
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -350,17 +350,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -371,7 +371,7 @@ void (empty response body)
 
 This will associate a workstream_summary with a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -391,7 +391,7 @@ apiInstance.workstreamSummaryAssociateWorkstreamEvent(body).then((data: void (em
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -399,17 +399,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -420,7 +420,7 @@ void (empty response body)
 
 This will enable us to disassociate a anchor from a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -440,7 +440,7 @@ apiInstance.workstreamSummaryDisassociateAnchor(body).then((data: void (empty re
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -448,17 +448,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -469,7 +469,7 @@ void (empty response body)
 
 This will enable us to disassociate a asset from a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -489,7 +489,7 @@ apiInstance.workstreamSummaryDisassociateAsset(body).then((data: void (empty res
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -497,17 +497,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -518,7 +518,7 @@ void (empty response body)
 
 This will enable us to disassociate a conversation from a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -538,7 +538,7 @@ apiInstance.workstreamSummaryDisassociateConversation(body).then((data: void (em
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -546,17 +546,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -567,7 +567,7 @@ void (empty response body)
 
 This will enable us to disassociate a person from a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -587,7 +587,7 @@ apiInstance.workstreamSummaryDisassociatePerson(body).then((data: void (empty re
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -595,17 +595,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -616,7 +616,7 @@ void (empty response body)
 
 This will enable us to disassociate a range from a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -636,7 +636,7 @@ apiInstance.workstreamSummaryDisassociateRange(body).then((data: void (empty res
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -644,17 +644,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -665,7 +665,7 @@ void (empty response body)
 
 This will enable us to disassociate a website from a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -685,7 +685,7 @@ apiInstance.workstreamSummaryDisassociateWebsite(body).then((data: void (empty r
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -693,17 +693,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -714,7 +714,7 @@ void (empty response body)
 
 This will enable us to disassociate a workstream_summary from a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -734,7 +734,7 @@ apiInstance.workstreamSummaryDisassociateWorkstreamEvent(body).then((data: void 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -742,17 +742,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -763,7 +763,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -783,7 +783,7 @@ apiInstance.workstreamSummaryScoresIncrement(body).then((data: void (empty respo
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -791,17 +791,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -812,7 +812,7 @@ void (empty response body)
 
 This will update a specific workstream_summary.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -832,7 +832,7 @@ apiInstance.workstreamSummaryUpdate(body).then((data: WorkstreamSummary) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -840,17 +840,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

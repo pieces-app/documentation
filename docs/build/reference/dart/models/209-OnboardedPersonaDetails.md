@@ -1,4 +1,4 @@
-# OnboardedPersonaDetails Model
+# OnboardedPersonaDetails
 
 ## Load the model package
 ```dart

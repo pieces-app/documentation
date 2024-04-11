@@ -1,4 +1,4 @@
-# WorkstreamPatternEngineDataCleanupRequest Model
+# WorkstreamPatternEngineDataCleanupRequest
 
 ## Load the model package
 ```dart

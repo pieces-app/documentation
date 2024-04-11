@@ -1,4 +1,4 @@
-# FilterOperationTypeEnum Model
+# FilterOperationTypeEnum
 
 ## Load the model package
 ```dart

@@ -1,9 +1,9 @@
 
-# UserBetaStatus Model
+# UserBetaStatus
 
 This is used to either grant or remove a specific provider betastatus
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **auth0** | [**Auth0UserBetaStatus**](Auth0UserBetaStatus)
 **user** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { UserBetaStatus } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# CreatedExternalProvider Model APIKey
+# CreatedExternalProvider APIKey
 
 This is the outputmodel for /external_provider/api_key/create
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **metadata** | [**Auth0UserMetadata**](Auth0UserMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { CreatedExternalProviderApiKey } from '@pieces.app/pieces-os-client'

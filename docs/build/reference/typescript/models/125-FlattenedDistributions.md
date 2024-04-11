@@ -1,15 +1,15 @@
 
-# FlattenedDistributions Model
+# FlattenedDistributions
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ReferencedDistribution&gt;**](ReferencedDistribution)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedDistributions } from '@pieces.app/pieces-os-client'

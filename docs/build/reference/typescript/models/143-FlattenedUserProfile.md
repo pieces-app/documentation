@@ -1,9 +1,9 @@
 
-# FlattenedUserProfile Model
+# FlattenedUserProfile
 
 This is a FlattenedUserProfile that includes information that is not sensative in relation to a user.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **picture** | **string**
 **vanityname** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedUserProfile } from '@pieces.app/pieces-os-client'

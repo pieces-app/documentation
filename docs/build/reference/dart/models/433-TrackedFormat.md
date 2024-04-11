@@ -1,4 +1,4 @@
-# TrackedFormat Model
+# TrackedFormat
 
 ## Load the model package
 ```dart

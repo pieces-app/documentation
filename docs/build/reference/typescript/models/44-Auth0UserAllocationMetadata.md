@@ -1,16 +1,16 @@
 
-# Auth0UserAllocationMetadata Model
+# Auth0UserAllocationMetadata
 
 This is specifically for our allocation server metadata.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **project** | **string**
 **region** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { Auth0UserAllocationMetadata } from '@pieces.app/pieces-os-client'

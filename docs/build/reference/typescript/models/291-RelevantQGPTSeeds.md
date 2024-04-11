@@ -1,16 +1,16 @@
 
-# RelevantQGPTSeeds Model
+# RelevantQGPTSeeds
 
 This is a plural of RelevantQGPTSeed.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;RelevantQGPTSeed&gt;**](RelevantQGPTSeed)
 
-## Example Model
+## Example
 
 ```typescript
 import { RelevantQGPTSeeds } from '@pieces.app/pieces-os-client'

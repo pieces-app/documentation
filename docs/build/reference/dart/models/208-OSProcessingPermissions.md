@@ -1,4 +1,4 @@
-# OSProcessingPermissions Model
+# OSProcessingPermissions
 
 ## Load the model package
 ```dart

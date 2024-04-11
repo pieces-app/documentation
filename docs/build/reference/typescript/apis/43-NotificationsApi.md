@@ -1,4 +1,4 @@
-# Notifications Model API
+# Notifications API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 Retrieves a snapshot of all available models.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,24 +30,24 @@ apiInstance.sendLocalNotification(body).then((data: void (empty response body)) 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **notification** | **Notification**|  |
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: Not defined
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

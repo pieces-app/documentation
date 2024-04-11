@@ -1,4 +1,4 @@
-# EmbeddedModelSchema Model
+# EmbeddedModelSchema
 
 ## Load the model package
 ```dart

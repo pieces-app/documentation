@@ -1,9 +1,9 @@
 
-# Notification Model
+# Notification
 
 config model for notification invoking
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -13,7 +13,7 @@ Name | Type
 **message** | **string**
 **payload** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { Notification } from '@pieces.app/pieces-os-client'

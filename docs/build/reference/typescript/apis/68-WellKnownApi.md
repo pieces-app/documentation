@@ -1,4 +1,4 @@
-# WellKnown Model API
+# WellKnown API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 Retrieves the health status of the server.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,21 +26,21 @@ apiInstance.getWellKnownHealth().then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 **string**
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -50,7 +50,7 @@ This endpoint does not need any parameters.
 
 Retrieves the version of the server. It returns a string representing the current version.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -63,21 +63,21 @@ apiInstance.getWellKnownVersion().then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 **string**
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

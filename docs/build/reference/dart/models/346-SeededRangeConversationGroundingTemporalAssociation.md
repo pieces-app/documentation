@@ -1,4 +1,4 @@
-# SeededRangeConversationGroundingTemporalAssociation Model
+# SeededRangeConversationGroundingTemporalAssociation
 
 ## Load the model package
 ```dart

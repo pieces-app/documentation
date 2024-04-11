@@ -1,4 +1,4 @@
-# AnchorPoint Model
+# AnchorPoint
 
 ## Load the model package
 ```dart

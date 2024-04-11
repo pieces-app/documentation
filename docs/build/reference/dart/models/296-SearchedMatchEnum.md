@@ -1,4 +1,4 @@
-# SearchedMatchEnum Model
+# SearchedMatchEnum
 
 ## Load the model package
 ```dart

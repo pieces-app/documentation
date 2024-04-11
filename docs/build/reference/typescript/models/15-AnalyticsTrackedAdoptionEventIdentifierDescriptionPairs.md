@@ -1,8 +1,8 @@
 
-# AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs Model
+# AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **adoptionInstall** | **string**
 **adoptionUninstall** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs } from '@pieces.app/pieces-os-client'

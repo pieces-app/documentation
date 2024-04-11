@@ -1,16 +1,16 @@
 
-# Applications Model
+# Applications
 
 A list of all the applications
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;Application&gt;**](Application)
 
-## Example Model
+## Example
 
 ```typescript
 import { Applications } from '@pieces.app/pieces-os-client'

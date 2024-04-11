@@ -1,4 +1,4 @@
-# EmbeddedModelSchemaSemanticVersionEnum Model
+# EmbeddedModelSchemaSemanticVersionEnum
 
 ## Load the model package
 ```dart

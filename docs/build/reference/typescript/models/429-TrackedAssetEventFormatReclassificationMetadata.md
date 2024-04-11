@@ -1,9 +1,9 @@
 
-# TrackedAssetEventFormatReclassificationMetadata Model
+# TrackedAssetEventFormatReclassificationMetadata
 
 Metadata of a format reclassification event
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **previous** | [**Classification**](Classification)
 **current** | [**Classification**](Classification)
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetEventFormatReclassificationMetadata } from '@pieces.app/pieces-os-client'

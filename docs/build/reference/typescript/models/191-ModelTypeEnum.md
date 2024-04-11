@@ -1,14 +1,14 @@
 
-# ModelTypeEnum Model
+# ModelTypeEnum
 
 This will describe the type of Model balanced, speed, accuracy...
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ModelTypeEnum } from '@pieces.app/pieces-os-client'

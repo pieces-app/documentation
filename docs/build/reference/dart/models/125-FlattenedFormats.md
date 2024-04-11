@@ -1,4 +1,4 @@
-# FlattenedFormats Model
+# FlattenedFormats
 
 ## Load the model package
 ```dart

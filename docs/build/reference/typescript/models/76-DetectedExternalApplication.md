@@ -1,9 +1,9 @@
 
-# DetectedExternalApplication Model
+# DetectedExternalApplication
 
 This is a detected External Application that comes from our endpoint that will get a snapshot of the installed applications on your machine.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **name** | **string**
 **version** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { DetectedExternalApplication } from '@pieces.app/pieces-os-client'

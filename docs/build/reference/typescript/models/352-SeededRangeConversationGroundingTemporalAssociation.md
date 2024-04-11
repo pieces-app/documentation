@@ -1,15 +1,15 @@
 
-# SeededRangeConversationGroundingTemporalAssociation Model
+# SeededRangeConversationGroundingTemporalAssociation
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **workstream** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededRangeConversationGroundingTemporalAssociation } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# FlattenedWorkstreamEvent Model
+# FlattenedWorkstreamEvent
 
 This is a singular (DAG Safe) version of a WorkstreamEvent.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedWorkstreamEvent } from '@pieces.app/pieces-os-client'

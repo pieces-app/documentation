@@ -1,4 +1,4 @@
-# Users Model API
+# Users API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Creates a User From a oAuth Token
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -33,24 +33,24 @@ apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oAuthToken** | **OAuthToken**|  |
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 Locally Removing a user for the purpose of Signing Out
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -78,24 +78,24 @@ apiInstance.usersDisconnectUser(body).then((data: Users) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] |  | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Users**](../models/Users)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -118,21 +118,21 @@ apiInstance.usersSnapshot().then((data: Users) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**Users**](../models/Users)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -142,7 +142,7 @@ This endpoint does not need any parameters.
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -160,24 +160,24 @@ apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

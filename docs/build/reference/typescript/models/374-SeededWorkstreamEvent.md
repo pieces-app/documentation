@@ -1,9 +1,9 @@
 
-# SeededWorkstreamEvent Model
+# SeededWorkstreamEvent
 
 This is a precreated version of a WorkstreamEvent event, this will be used ingested into PiecesOS and PiecesOS will do all the magic to transform this into relevant data show in the workstream feed.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary)
 **internalIdentifier** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededWorkstreamEvent } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# PersonModel Model
+# PersonModel
 
 This is a PersonSpecific Model. and will let us know for all the assets that get attached to the person if, this person was attached via a model or just attached automatically.  explanation here are the reason why a Person was attached to an asset.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp)
 **explanation** | [**ReferencedAnnotation**](ReferencedAnnotation)
 
-## Example Model
+## Example
 
 ```typescript
 import { PersonModel } from '@pieces.app/pieces-os-client'

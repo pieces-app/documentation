@@ -1,9 +1,9 @@
 
-# FlattenedRange Model
+# FlattenedRange
 
 This is a DAG-Safe minimal representation of a Range.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -18,7 +18,7 @@ Name | Type
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 **conversations** | [**FlattenedConversations**](FlattenedConversations)
 
-## Example Model
+## Example
 
 ```typescript
 import { FlattenedRange } from '@pieces.app/pieces-os-client'

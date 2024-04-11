@@ -1,4 +1,4 @@
-# HintTypeEnum Model
+# HintTypeEnum
 
 ## Load the model package
 ```dart

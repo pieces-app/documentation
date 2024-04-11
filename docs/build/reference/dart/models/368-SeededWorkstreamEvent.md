@@ -1,4 +1,4 @@
-# SeededWorkstreamEvent Model
+# SeededWorkstreamEvent
 
 ## Load the model package
 ```dart

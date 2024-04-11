@@ -1,4 +1,4 @@
-# Recipients Model
+# Recipients
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Relationships Model
+# Relationships
 
 ## Load the model package
 ```dart

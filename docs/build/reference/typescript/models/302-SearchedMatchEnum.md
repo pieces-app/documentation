@@ -1,13 +1,13 @@
 
-# SearchedMatchEnum Model
+# SearchedMatchEnum
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { SearchedMatchEnum } from '@pieces.app/pieces-os-client'

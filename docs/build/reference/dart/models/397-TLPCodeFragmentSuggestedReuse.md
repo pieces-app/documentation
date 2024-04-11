@@ -1,4 +1,4 @@
-# TLPCodeFragmentSuggestedReuse Model
+# TLPCodeFragmentSuggestedReuse
 
 ## Load the model package
 ```dart

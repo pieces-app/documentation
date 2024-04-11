@@ -1,4 +1,4 @@
-# SeededWebsite Model
+# SeededWebsite
 
 ## Load the model package
 ```dart

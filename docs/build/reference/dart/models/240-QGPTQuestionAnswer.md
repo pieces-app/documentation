@@ -1,4 +1,4 @@
-# QGPTQuestionAnswer Model
+# QGPTQuestionAnswer
 
 ## Load the model package
 ```dart

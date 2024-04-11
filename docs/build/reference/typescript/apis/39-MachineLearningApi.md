@@ -1,4 +1,4 @@
-# MachineLearning Model API
+# MachineLearning API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 This is going to take in some personification details ie languages & personas.  and will return generated Seeds that can be used as snippets post/pre onboarding.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,24 +31,24 @@ apiInstance.personificationTechnicalLanguageGeneration(body).then((data: Onboard
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preonboardedPersonaDetails** | **PreonboardedPersonaDetails**|  |
 
 
-### Return Model type
+### Return type
 
 [**OnboardedPersonaDetails**](../models/OnboardedPersonaDetails)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 This is a functional endpoint that will parse a message or text in to text or code.  if the optional query param is passed along \'classify\' then we will optionally classify the just the code that is segmented.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -79,7 +79,7 @@ apiInstance.segmentTechnicalLanguage(body).then((data: SegmentedTechnicalLanguag
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -87,17 +87,17 @@ Name | Type | Description  | Notes
  **classify** | [**boolean**] | This will let us know if you want us to classifiy your code, this is default to false. | (optional) defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**SegmentedTechnicalLanguage**](../models/SegmentedTechnicalLanguage)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,9 +1,9 @@
 
-# Tags Model
+# Tags
 
 This is a model that represents multiple Tag Models
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { Tags } from '@pieces.app/pieces-os-client'

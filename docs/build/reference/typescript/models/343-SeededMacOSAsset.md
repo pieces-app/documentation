@@ -1,9 +1,9 @@
 
-# SeededMacOSAsset Model
+# SeededMacOSAsset
 
 An Seeded Asset specific to MacOS which takes in a Value, and Application
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **application** | [**Application**](Application)
 **value** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededMacOSAsset } from '@pieces.app/pieces-os-client'

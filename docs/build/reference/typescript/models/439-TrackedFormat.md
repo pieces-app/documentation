@@ -1,9 +1,9 @@
 
-# TrackedFormat Model
+# TrackedFormat
 
 A minimal format to send to Mixpanel
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -15,7 +15,7 @@ Name | Type
 **fragment** | **boolean**
 **file** | **boolean**
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedFormat } from '@pieces.app/pieces-os-client'

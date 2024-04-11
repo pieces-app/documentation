@@ -1,9 +1,9 @@
 
-# AnchorPoints Model
+# AnchorPoints
 
 This is the plural of AnchorPoint.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **indices** | **\{ [key: string]: number; \}**
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { AnchorPoints } from '@pieces.app/pieces-os-client'

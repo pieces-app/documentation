@@ -1,15 +1,15 @@
 
-# TLPCodeFragmentSuggestedReuse Model
+# TLPCodeFragmentSuggestedReuse
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **id** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentSuggestedReuse } from '@pieces.app/pieces-os-client'

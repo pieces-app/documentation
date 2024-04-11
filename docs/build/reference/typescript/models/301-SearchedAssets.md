@@ -1,9 +1,9 @@
 
-# SearchedAssets Model
+# SearchedAssets
 
 This is a modle that will return fro mthe search endpoint that will just contain an array of assets!
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **suggested** | **number**
 **exact** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { SearchedAssets } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# Applications Model API
+# Applications API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 Retrieves a list of external applications installed on the user\'s machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -36,21 +36,21 @@ apiInstance.applicationsExternalRelated().then((data: DetectedExternalApplicatio
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -61,7 +61,7 @@ This endpoint does not need any parameters.
 
 Provides a snapshot of all external applications detected on the user\'s machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -74,21 +74,21 @@ apiInstance.applicationsExternalSnapshot().then((data: DetectedExternalApplicati
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -99,7 +99,7 @@ This endpoint does not need any parameters.
 
 Registers a new application within the Pieces ecosystem.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -117,24 +117,24 @@ apiInstance.applicationsRegister(body).then((data: Application) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **Application**| This will accept a application. |
 
 
-### Return Model type
+### Return type
 
 [**Application**](../models/Application)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 Closes an active session, identified by a session UUID, marking the end of the user\'s current interaction with the Pieces application.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -162,24 +162,24 @@ apiInstance.applicationsSessionClose(body).then((data: Session) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | **string**| This will accept a required session uuid. |
 
 
-### Return Model type
+### Return type
 
 [**Session**](../models/Session)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 Initiates a new session, marking the start of a user\'s interaction with the Pieces application.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -202,21 +202,21 @@ apiInstance.applicationsSessionOpen().then((data: Session) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**Session**](../models/Session)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -226,7 +226,7 @@ This endpoint does not need any parameters.
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -244,24 +244,24 @@ apiInstance.applicationsSessionSnapshot(body).then((data: Session) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **session** | [**string**] | This is a uuid that points to a session. | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Session**](../models/Session)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -284,21 +284,21 @@ apiInstance.applicationsSnapshot().then((data: Applications) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**Applications**](../models/Applications)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -308,7 +308,7 @@ This endpoint does not need any parameters.
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -326,24 +326,24 @@ apiInstance.applicationsSpecificApplicationSnapshot(body).then((data: Applicatio
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
-### Return Model type
+### Return type
 
 [**Application**](../models/Application)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -371,24 +371,24 @@ apiInstance.applicationsUsageEngagementInteraction(body).then((data: TrackedInte
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededTrackedInteractionEvent** | **SeededTrackedInteractionEvent**|  |
 
 
-### Return Model type
+### Return type
 
 [**TrackedInteractionEvent**](../models/TrackedInteractionEvent)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -398,7 +398,7 @@ Name | Type | Description  | Notes
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -416,24 +416,24 @@ apiInstance.applicationsUsageEngagementKeyboard(body).then((data: TrackedKeyboar
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededTrackedKeyboardEvent** | **SeededTrackedKeyboardEvent**|  |
 
 
-### Return Model type
+### Return type
 
 [**TrackedKeyboardEvent**](../models/TrackedKeyboardEvent)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -443,7 +443,7 @@ Name | Type | Description  | Notes
 
 Logs the installation events of the Pieces application.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -461,24 +461,24 @@ apiInstance.applicationsUsageInstallation(body).then((data: void (empty response
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationInstall** | **TrackedApplicationInstall**|  |
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: Not defined
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -488,7 +488,7 @@ void (empty response body)
 
 Tracks updates to the Pieces application, including version changes.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -506,24 +506,24 @@ apiInstance.postApplicationsUsageUpdated(body).then((data: void (empty response 
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationUpdate** | **TrackedApplicationUpdate**| Sending over the previous application version, the current version, and the user. |
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: Not defined
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

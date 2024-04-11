@@ -1,9 +1,9 @@
 
-# TextLocation Model
+# TextLocation
 
 This is a generic model that is used for text location.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **start** | **number**
 **end** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { TextLocation } from '@pieces.app/pieces-os-client'

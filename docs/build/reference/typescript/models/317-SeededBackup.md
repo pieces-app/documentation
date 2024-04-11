@@ -1,15 +1,15 @@
 
-# SeededBackup Model
+# SeededBackup
 
 This is a precursor to a Backup, for now this will not need to take any properties.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededBackup } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# ChallengedPKCE Model
+# ChallengedPKCE
 
 A model that Generates A PKCE Challenge Object with the needed requirements.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **method** | **string**
 **verifier** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { ChallengedPKCE } from '@pieces.app/pieces-os-client'

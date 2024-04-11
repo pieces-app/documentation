@@ -1,9 +1,9 @@
 
-# ConversationGrounding Model
+# ConversationGrounding
 
 This is the context used for grounding the ml models with reguard to a conversation.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages)
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
-## Example Model
+## Example
 
 ```typescript
 import { ConversationGrounding } from '@pieces.app/pieces-os-client'

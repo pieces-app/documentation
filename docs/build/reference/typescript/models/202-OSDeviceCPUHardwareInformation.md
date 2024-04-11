@@ -1,9 +1,9 @@
 
-# OSDeviceCPUHardwareInformation Model
+# OSDeviceCPUHardwareInformation
 
 This will let us know specific hardware information related to the CPU.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **name** | **string**
 **memory** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { OSDeviceCPUHardwareInformation } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# ReferencedConversation Model
+# ReferencedConversation
 
 ## Load the model package
 ```dart

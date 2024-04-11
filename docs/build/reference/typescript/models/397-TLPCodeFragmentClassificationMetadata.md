@@ -1,8 +1,8 @@
 
-# TLPCodeFragmentClassificationMetadata Model
+# TLPCodeFragmentClassificationMetadata
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -10,7 +10,7 @@ Name | Type
 **context** | [**Classification**](Classification)
 **prior** | [**Classification**](Classification)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentClassificationMetadata } from '@pieces.app/pieces-os-client'

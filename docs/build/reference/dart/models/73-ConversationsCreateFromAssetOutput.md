@@ -1,4 +1,4 @@
-# ConversationsCreateFromAssetOutput Model
+# ConversationsCreateFromAssetOutput
 
 ## Load the model package
 ```dart

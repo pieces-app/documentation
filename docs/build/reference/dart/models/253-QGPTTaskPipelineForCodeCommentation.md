@@ -1,4 +1,4 @@
-# QGPTTaskPipelineForCodeCommentation Model
+# QGPTTaskPipelineForCodeCommentation
 
 ## Load the model package
 ```dart

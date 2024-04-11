@@ -1,4 +1,4 @@
-# FileMetadata Model
+# FileMetadata
 
 ## Load the model package
 ```dart

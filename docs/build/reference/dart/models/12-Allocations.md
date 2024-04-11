@@ -1,4 +1,4 @@
-# Allocations Model
+# Allocations
 
 ## Load the model package
 ```dart

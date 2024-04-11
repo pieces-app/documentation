@@ -1,9 +1,9 @@
 
-# ReferencedAsset Model
+# ReferencedAsset
 
 A reference to a asset, which at minimum must have the asset\'s id. But in the case of a hydrated client API it may have a populated reference of type Asset.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedAsset**](FlattenedAsset)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedAsset } from '@pieces.app/pieces-os-client'

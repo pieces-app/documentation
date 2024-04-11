@@ -1,8 +1,8 @@
 
-# TLPCodeSnippetAnalytics Model
+# TLPCodeSnippetAnalytics
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **tagify** | [**TLPCodeFragmentTagify**](TLPCodeFragmentTagify)
 **description** | [**TLPCodeFragmentDescription**](TLPCodeFragmentDescription)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeSnippetAnalytics } from '@pieces.app/pieces-os-client'

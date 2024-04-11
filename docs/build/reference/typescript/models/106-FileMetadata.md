@@ -1,9 +1,9 @@
 
-# FileMetadata Model
+# FileMetadata
 
 This is a model for metadata of a file!
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 **size** | **number**
 
-## Example Model
+## Example
 
 ```typescript
 import { FileMetadata } from '@pieces.app/pieces-os-client'

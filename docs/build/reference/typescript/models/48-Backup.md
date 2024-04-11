@@ -1,9 +1,9 @@
 
-# Backup Model
+# Backup
 
 This is a cloud Backup. This is specific metadata needed inorder to retrieve a Backup.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -16,7 +16,7 @@ Name | Type
 **deviceName** | **string**
 **platform** | [**PlatformEnum**](PlatformEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { Backup } from '@pieces.app/pieces-os-client'

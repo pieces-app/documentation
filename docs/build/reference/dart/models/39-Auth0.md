@@ -1,4 +1,4 @@
-# Auth0 Model
+# Auth0
 
 ## Load the model package
 ```dart

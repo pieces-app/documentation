@@ -1,4 +1,4 @@
-# ModelMaxTokens Model
+# ModelMaxTokens
 
 ## Load the model package
 ```dart

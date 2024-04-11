@@ -1,9 +1,9 @@
 
-# TrackedAssetsEventSearchMetadataResults Model
+# TrackedAssetsEventSearchMetadataResults
 
 Numbers related to search results
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **assets** | [**FlattenedAssets**](FlattenedAssets)
 **space** | [**Space**](Space)
 
-## Example Model
+## Example
 
 ```typescript
 import { TrackedAssetsEventSearchMetadataResults } from '@pieces.app/pieces-os-client'

@@ -1,4 +1,4 @@
-# GraphicalMachineLearningProcessingEvent Model
+# GraphicalMachineLearningProcessingEvent
 
 ## Load the model package
 ```dart

@@ -1,4 +1,4 @@
-# Database Model API
+# Database API
 
 All URIs are relative to *http://localhost:1000*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 This is going to export your current database.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,21 +26,21 @@ apiInstance.databaseExport().then((data: ExportedDatabase) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 This endpoint does not need any parameters.
 
 
-### Return Model type
+### Return type
 
 [**ExportedDatabase**](../models/ExportedDatabase)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -51,7 +51,7 @@ This endpoint does not need any parameters.
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
 
-### Example Model
+### Example
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -69,24 +69,24 @@ apiInstance.databaseImport(body).then((data: void (empty response body)) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters Model
+### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **exportedDatabase** | **ExportedDatabase**|  |
 
 
-### Return Model type
+### Return type
 
 void (empty response body)
 
-### HTTP Model request headers
+### HTTP request headers
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP Model response details
+### HTTP response details
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |

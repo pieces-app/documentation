@@ -1,9 +1,9 @@
 
-# ReferencedDistribution Model
+# ReferencedDistribution
 
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **id** | **string**
 **reference** | [**FlattenedDistribution**](FlattenedDistribution)
 
-## Example Model
+## Example
 
 ```typescript
 import { ReferencedDistribution } from '@pieces.app/pieces-os-client'

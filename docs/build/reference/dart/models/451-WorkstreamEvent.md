@@ -1,4 +1,4 @@
-# WorkstreamEvent Model
+# WorkstreamEvent
 
 ## Load the model package
 ```dart

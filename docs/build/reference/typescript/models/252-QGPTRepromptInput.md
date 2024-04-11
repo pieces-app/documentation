@@ -1,9 +1,9 @@
 
-# QGPTRepromptInput Model
+# QGPTRepromptInput
 
 Query is your followup question.  Conversation is a list of the back and fourth with the qgpt bot. where the first entry in the array was the last message sent.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -14,7 +14,7 @@ Name | Type
 **model** | **string**
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTRepromptInput } from '@pieces.app/pieces-os-client'

@@ -1,14 +1,14 @@
 
-# ClassificationRenderingEnum Model
+# ClassificationRenderingEnum
 
 Specifically supported renderings...usually between generic types
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ClassificationRenderingEnum } from '@pieces.app/pieces-os-client'

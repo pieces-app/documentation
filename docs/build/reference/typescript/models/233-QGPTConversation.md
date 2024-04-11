@@ -1,15 +1,15 @@
 
-# QGPTConversation Model
+# QGPTConversation
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;QGPTConversationMessage&gt;**](QGPTConversationMessage)
 
-## Example Model
+## Example
 
 ```typescript
 import { QGPTConversation } from '@pieces.app/pieces-os-client'

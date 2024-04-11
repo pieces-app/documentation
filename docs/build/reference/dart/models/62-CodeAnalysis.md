@@ -1,4 +1,4 @@
-# CodeAnalysis Model
+# CodeAnalysis
 
 ## Load the model package
 ```dart

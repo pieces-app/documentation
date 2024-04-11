@@ -1,14 +1,14 @@
 
-# ConversationMessageSentimentEnum Model
+# ConversationMessageSentimentEnum
 
 This will describe the sentiment of a specific message ie if the message was liked/disliked/reported
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 
-## Example Model
+## Example
 
 ```typescript
 import { ConversationMessageSentimentEnum } from '@pieces.app/pieces-os-client'

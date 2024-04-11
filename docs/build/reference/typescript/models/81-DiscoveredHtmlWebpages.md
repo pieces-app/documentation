@@ -1,9 +1,9 @@
 
-# DiscoveredHtmlWebpages Model
+# DiscoveredHtmlWebpages
 
 Assumption: The iterable will be in the exact same order as it was passed in within the seededDiscoveredHtmlWebpages
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;DiscoveredHtmlWebpage&gt;**](DiscoveredHtmlWebpage)
 **application** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { DiscoveredHtmlWebpages } from '@pieces.app/pieces-os-client'

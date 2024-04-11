@@ -1,4 +1,4 @@
-# Analysis Model
+# Analysis
 
 ## Load the model package
 ```dart

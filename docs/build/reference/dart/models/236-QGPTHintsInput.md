@@ -1,4 +1,4 @@
-# QGPTHintsInput Model
+# QGPTHintsInput
 
 ## Load the model package
 ```dart

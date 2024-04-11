@@ -1,16 +1,16 @@
 
-# Health Model
+# Health
 
 This is a health model used to determine the \"health\" of the os server and cloud server(Coming Soon). READONLY Model.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **os** | [**OSHealth**](OSHealth)
 
-## Example Model
+## Example
 
 ```typescript
 import { Health } from '@pieces.app/pieces-os-client'

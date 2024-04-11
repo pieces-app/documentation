@@ -1,9 +1,9 @@
 
-# Shares Model
+# Shares
 
 this is just an iterable of our individual share models.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -11,7 +11,7 @@ Name | Type
 **iterable** | [**Array&lt;Share&gt;**](Share)
 **score** | [**Score**](Score)
 
-## Example Model
+## Example
 
 ```typescript
 import { Shares } from '@pieces.app/pieces-os-client'

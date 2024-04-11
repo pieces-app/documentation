@@ -1,9 +1,9 @@
 
-# FormatMetric Model
+# FormatMetric
 
 FormatMetric  This is a model that will represent the about of specific formats. ie Generic: \'CODE\' specific: \'DART\' identifiers: [\'FormatUID1, \'FormatUID2\']
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum)
 **identifiers** | **Array&lt;string&gt;**
 
-## Example Model
+## Example
 
 ```typescript
 import { FormatMetric } from '@pieces.app/pieces-os-client'

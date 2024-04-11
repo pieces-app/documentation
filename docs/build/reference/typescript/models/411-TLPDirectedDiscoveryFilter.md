@@ -1,15 +1,15 @@
 
-# TLPDirectedDiscoveryFilter Model
+# TLPDirectedDiscoveryFilter
 
 Contains enum which represents code block type
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **name** | [**TLPDirectedDiscoveryFilterEnum**](TLPDirectedDiscoveryFilterEnum)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPDirectedDiscoveryFilter } from '@pieces.app/pieces-os-client'

@@ -1,9 +1,9 @@
 
-# SeededDiscoverableSensitive Model
+# SeededDiscoverableSensitive
 
 This is the SeededDiscoverableSensitive, this has every property that the seededSensitive has except this one is all optionally passed in. and will override our classification if provided.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -17,7 +17,7 @@ Name | Type
 **description** | **string**
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededDiscoverableSensitive } from '@pieces.app/pieces-os-client'

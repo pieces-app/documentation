@@ -1,4 +1,4 @@
-# OSHealth Model
+# OSHealth
 
 ## Load the model package
 ```dart

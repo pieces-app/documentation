@@ -1,4 +1,4 @@
-# FlattenedSensitives Model
+# FlattenedSensitives
 
 ## Load the model package
 ```dart

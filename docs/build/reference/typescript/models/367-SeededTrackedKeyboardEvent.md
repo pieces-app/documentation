@@ -1,9 +1,9 @@
 
-# SeededTrackedKeyboardEvent Model
+# SeededTrackedKeyboardEvent
 
 This is a model that will hold relavent information in relation to a keyboard(including shortcuts) analytics event (usage).
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **shortcut** | **Array&lt;number&gt;**
 **identifierDescriptionPair** | [**SeededTrackedKeyboardEventIdentifierDescriptionPairs**](SeededTrackedKeyboardEventIdentifierDescriptionPairs)
 
-## Example Model
+## Example
 
 ```typescript
 import { SeededTrackedKeyboardEvent } from '@pieces.app/pieces-os-client'

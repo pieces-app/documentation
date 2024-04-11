@@ -1,4 +1,4 @@
-# AnchorTypeEnum Model
+# AnchorTypeEnum
 
 ## Load the model package
 ```dart

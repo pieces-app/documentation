@@ -1,9 +1,9 @@
 
-# OSDeviceGPUHardwareInformation Model
+# OSDeviceGPUHardwareInformation
 
 This will let us know specific hardware information related to the GPU.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -12,7 +12,7 @@ Name | Type
 **memory** | **number**
 **capabilities** | [**OSDeviceGPUHardwareCapabilitiesInformation**](OSDeviceGPUHardwareCapabilitiesInformation)
 
-## Example Model
+## Example
 
 ```typescript
 import { OSDeviceGPUHardwareInformation } from '@pieces.app/pieces-os-client'

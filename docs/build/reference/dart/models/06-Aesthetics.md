@@ -1,4 +1,4 @@
-# Aesthetics Model
+# Aesthetics
 
 ## Load the model package
 ```dart

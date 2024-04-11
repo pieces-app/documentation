@@ -1,4 +1,4 @@
-# ReferencedRange Model
+# ReferencedRange
 
 ## Load the model package
 ```dart

@@ -1,14 +1,14 @@
 
-# GraphicalOCRDescriptiveStatisticsConfidence Model
+# GraphicalOCRDescriptiveStatisticsConfidence
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **mean** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { GraphicalOCRDescriptiveStatisticsConfidence } from '@pieces.app/pieces-os-client'

@@ -1,16 +1,16 @@
 
-# UnsegmentedTechnicalLanguage Model
+# UnsegmentedTechnicalLanguage
 
 This is the input model for \'/machine_learning/text/technical_language/parsers/segmentation\'  This will take the unsegmentedText here!
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **value** | **string**
 
-## Example Model
+## Example
 
 ```typescript
 import { UnsegmentedTechnicalLanguage } from '@pieces.app/pieces-os-client'

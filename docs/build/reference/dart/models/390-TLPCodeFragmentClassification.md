@@ -1,4 +1,4 @@
-# TLPCodeFragmentClassification Model
+# TLPCodeFragmentClassification
 
 ## Load the model package
 ```dart

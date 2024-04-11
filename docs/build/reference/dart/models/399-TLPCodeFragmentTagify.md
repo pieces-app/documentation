@@ -1,4 +1,4 @@
-# TLPCodeFragmentTagify Model
+# TLPCodeFragmentTagify
 
 ## Load the model package
 ```dart

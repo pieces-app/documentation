@@ -1,9 +1,9 @@
 
-# TLPCodeFragmentClassification Model
+# TLPCodeFragmentClassification
 
 Model for ML big query classification.
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
@@ -20,7 +20,7 @@ Name | Type
 **latency** | **number**
 **system** | [**SystemExecutionInformation**](SystemExecutionInformation)
 
-## Example Model
+## Example
 
 ```typescript
 import { TLPCodeFragmentClassification } from '@pieces.app/pieces-os-client'

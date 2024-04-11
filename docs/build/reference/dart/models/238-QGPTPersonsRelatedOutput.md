@@ -1,4 +1,4 @@
-# QGPTPersonsRelatedOutput Model
+# QGPTPersonsRelatedOutput
 
 ## Load the model package
 ```dart

@@ -1,15 +1,15 @@
 
-# ImageAnalyses Model
+# ImageAnalyses
 
 
-## Properties Model
+## Properties
 
 Name | Type
 ------------ | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema)
 **iterable** | [**Array&lt;ImageAnalysis&gt;**](ImageAnalysis)
 
-## Example Model
+## Example
 
 ```typescript
 import { ImageAnalyses } from '@pieces.app/pieces-os-client'
