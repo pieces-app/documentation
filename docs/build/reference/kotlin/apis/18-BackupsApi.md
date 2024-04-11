@@ -1,6 +1,6 @@
 # Backups API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**backupsSnapshot**](#backupssnapshot) | **GET** /backups
 
 
-<a id="backupsCreateNewBackup"></a>
 ## **backupsCreateNewBackup** {#backupscreatenewbackup}
 > Backup backupsCreateNewBackup(seededBackup)
 
@@ -21,8 +20,8 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -42,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
+ **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsCreateNewBackupStreamed"></a>
 ## **backupsCreateNewBackupStreamed** {#backupscreatenewbackupstreamed}
 > BackupStreamedProgress backupsCreateNewBackupStreamed(seededBackup)
 
@@ -68,8 +66,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -89,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
+ **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
 
 ### Return type
 
@@ -104,7 +102,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsDeleteSpecificBackup"></a>
 ## **backupsDeleteSpecificBackup** {#backupsdeletespecificbackup}
 > backupsDeleteSpecificBackup(backup, backup2)
 
@@ -115,8 +112,8 @@ This will delete a specific backup from the cloud.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -136,8 +133,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **backup** | **kotlin.String**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
- **backup2** | [**Backup**](../models/Backup)|  | [optional] 
+ **backup** | **kotlin.String**| This is a identifier that is used to identify a specific backup.(version_timestamp) |
+ **backup2** | [**Backup**](../models/Backup)|  | [optional]
 
 ### Return type
 
@@ -152,7 +149,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsSnapshot"></a>
 ## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
 
@@ -163,8 +159,8 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 try {
@@ -180,7 +176,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

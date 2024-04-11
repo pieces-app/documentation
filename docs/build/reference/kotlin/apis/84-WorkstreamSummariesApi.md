@@ -1,6 +1,6 @@
 # WorkstreamSummaries API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**workstreamSummariesSnapshot**](#workstreamsummariessnapshot) | **GET** /workstream_summaries
 
 
-<a id="workstreamSummariesCreateNewWorkstreamSummary"></a>
 ## **workstreamSummariesCreateNewWorkstreamSummary** {#workstreamsummariescreatenewworkstreamsummary}
 > WorkstreamSummary workstreamSummariesCreateNewWorkstreamSummary(transferables, seededWorkstreamSummary)
 
@@ -20,8 +19,8 @@ This will create a new WorkstreamSummary in the database.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamSummariesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -42,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededWorkstreamSummary** | [**SeededWorkstreamSummary**](../models/SeededWorkstreamSummary)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededWorkstreamSummary** | [**SeededWorkstreamSummary**](../models/SeededWorkstreamSummary)|  | [optional]
 
 ### Return type
 
@@ -58,7 +57,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamSummariesDeleteSpecificWorkstreamSummary"></a>
 ## **workstreamSummariesDeleteSpecificWorkstreamSummary** {#workstreamsummariesdeletespecificworkstreamsummary}
 > workstreamSummariesDeleteSpecificWorkstreamSummary(workstreamSummary)
 
@@ -69,8 +67,8 @@ This will delete a specific workstream_summary from the database!
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamSummariesApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
@@ -89,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -104,7 +102,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="workstreamSummariesSnapshot"></a>
 ## **workstreamSummariesSnapshot** {#workstreamsummariessnapshot}
 > WorkstreamSummaries workstreamSummariesSnapshot(transferables)
 
@@ -115,8 +112,8 @@ This will get a snapshot of all your workstream summaries.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamSummariesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -136,7 +133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

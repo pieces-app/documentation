@@ -1,6 +1,6 @@
 # MachineLearning API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request
 [**segmentTechnicalLanguage**](#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation
 
 
-<a id="personificationTechnicalLanguageGeneration"></a>
 ## **personificationTechnicalLanguageGeneration** {#personificationtechnicallanguagegeneration}
 > OnboardedPersonaDetails personificationTechnicalLanguageGeneration(preonboardedPersonaDetails)
 
@@ -19,8 +18,8 @@ This is going to take in some personification details ie languages &amp; persona
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MachineLearningApi()
 val preonboardedPersonaDetails : PreonboardedPersonaDetails =  // PreonboardedPersonaDetails | 
@@ -40,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **preonboardedPersonaDetails** | [**PreonboardedPersonaDetails**](../models/PreonboardedPersonaDetails)|  | [optional] 
+ **preonboardedPersonaDetails** | [**PreonboardedPersonaDetails**](../models/PreonboardedPersonaDetails)|  | [optional]
 
 ### Return type
 
@@ -55,7 +54,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="segmentTechnicalLanguage"></a>
 ## **segmentTechnicalLanguage** {#segmenttechnicallanguage}
 > SegmentedTechnicalLanguage segmentTechnicalLanguage(classify, unsegmentedTechnicalLanguage)
 
@@ -66,8 +64,8 @@ This is a functional endpoint that will parse a message or text in to text or co
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MachineLearningApi()
 val classify : kotlin.Boolean = true // kotlin.Boolean | This will let us know if you want us to classifiy your code, this is default to false.
@@ -88,8 +86,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **classify** | **kotlin.Boolean**| This will let us know if you want us to classifiy your code, this is default to false. | [optional] 
- **unsegmentedTechnicalLanguage** | [**UnsegmentedTechnicalLanguage**](../models/UnsegmentedTechnicalLanguage)|  | [optional] 
+ **classify** | **kotlin.Boolean**| This will let us know if you want us to classifiy your code, this is default to false. | [optional]
+ **unsegmentedTechnicalLanguage** | [**UnsegmentedTechnicalLanguage**](../models/UnsegmentedTechnicalLanguage)|  | [optional]
 
 ### Return type
 

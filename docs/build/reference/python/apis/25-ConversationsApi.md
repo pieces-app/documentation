@@ -356,9 +356,9 @@ No authorization required
 ## **conversations_stream_identifiers** {#conversations_stream_identifiers}
 > conversations_stream_identifiers()
 
-/conversations/stream/identifiers [STREAMED]
+/conversations/stream/identifiers [WS]
 
-Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
+Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
 ### Example
 
@@ -381,7 +381,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.ConversationsApi(api_client)
 
     try:
-        # /conversations/stream/identifiers [STREAMED]
+        # /conversations/stream/identifiers [WS]
         api_instance.conversations_stream_identifiers()
     except Exception as e:
         print("Exception when calling ConversationsApi->conversations_stream_identifiers: %s\n" % e)

@@ -1,13 +1,12 @@
 # Application API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**applicationUpdate**](#applicationupdate) | **POST** /application/update
 
 
-<a id="applicationUpdate"></a>
 ## **applicationUpdate** {#applicationupdate}
 > Application applicationUpdate(application)
 
@@ -18,8 +17,8 @@ This is an endpoint for updating an application.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationApi()
 val application : Application =  // Application | 
@@ -39,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application** | [**Application**](../models/Application)|  | [optional] 
+ **application** | [**Application**](../models/Application)|  | [optional]
 
 ### Return type
 

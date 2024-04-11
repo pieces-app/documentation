@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**anchorDisassociateAsset**](AnchorsApi#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
-[**anchorsCreateNewAnchor**](AnchorsApi#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchorsDeleteSpecificAnchor**](AnchorsApi#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
-[**anchorsSnapshot**](AnchorsApi#anchorssnapshot) | **GET** /anchors | /anchors [GET]
+Method | HTTP request
+------------- | -------------
+[**anchorDisassociateAsset**](AnchorsApi#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\}
+[**anchorsCreateNewAnchor**](AnchorsApi#anchorscreatenewanchor) | **POST** /anchors/create
+[**anchorsDeleteSpecificAnchor**](AnchorsApi#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete
+[**anchorsSnapshot**](AnchorsApi#anchorssnapshot) | **GET** /anchors
 
 
 ## **anchorDisassociateAsset** {#anchordisassociateasset}

@@ -1,6 +1,6 @@
 # Hints API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**hintsSnapshot**](#hintssnapshot) | **GET** /hints
 
 
-<a id="hintsCreateNewHint"></a>
 ## **hintsCreateNewHint** {#hintscreatenewhint}
 > Hint hintsCreateNewHint(seededHint)
 
@@ -20,8 +19,8 @@ This will create a hint.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val seededHint : SeededHint =  // SeededHint | 
@@ -41,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional] 
+ **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional]
 
 ### Return type
 
@@ -56,7 +55,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="hintsDeleteSpecificHint"></a>
 ## **hintsDeleteSpecificHint** {#hintsdeletespecifichint}
 > hintsDeleteSpecificHint(hint)
 
@@ -67,8 +65,8 @@ This will delete a specific hint.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | **kotlin.String**| This is a specific hint uuid | 
+ **hint** | **kotlin.String**| This is a specific hint uuid |
 
 ### Return type
 
@@ -102,7 +100,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="hintsSnapshot"></a>
 ## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
 
@@ -113,8 +110,8 @@ This will get a snapshot of all of the hints.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 try {
@@ -130,7 +127,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

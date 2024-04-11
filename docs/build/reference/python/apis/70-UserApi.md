@@ -9,6 +9,7 @@ Method | HTTP request
 [**select_user**](UserApi#select_user) | **POST** /user/select
 [**stream_user**](UserApi#stream_user) | **GET** /user/stream
 [**update_user**](UserApi#update_user) | **POST** /user/update
+[**user_beta_status**](UserApi#user_beta_status) | **POST** /user/beta/status
 [**user_providers**](UserApi#user_providers) | **GET** /user/providers
 [**user_snapshot**](UserApi#user_snapshot) | **GET** /user
 [**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity
@@ -225,9 +226,9 @@ Name | Type | Description  | Notes
 ## **stream_user** {#stream_user}
 > UserProfile stream_user()
 
-/user/stream [GET]
+/user/stream [WS]
 
-This will stream in the current user, not quiet sure yet how we want to do this.
+Provides a WebSocket connection that streams user data.
 
 ### Example
 
@@ -251,7 +252,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.UserApi(api_client)
 
     try:
-        # /user/stream [GET]
+        # /user/stream [WS]
         api_response = api_instance.stream_user()
         print("The response of UserApi->stream_user:\n")
         pprint(api_response)
@@ -351,6 +352,76 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
+
+
+
+## **user_beta_status** {#user_beta_status}
+> UserBetaStatus user_beta_status(user_beta_status=user_beta_status)
+
+/user/beta/status [POST]
+
+This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.models.user_beta_status import UserBetaStatus
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.UserApi(api_client)
+    user_beta_status = pieces_os_client.UserBetaStatus() # UserBetaStatus |  (optional)
+
+    try:
+        # /user/beta/status [POST]
+        api_response = api_instance.user_beta_status(user_beta_status=user_beta_status)
+        print("The response of UserApi->user_beta_status:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling UserApi->user_beta_status: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **user_beta_status** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
+
+### Return type
+
+[**UserBetaStatus**](../models/UserBetaStatus)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to change the beta status |  -  |
 
 
 

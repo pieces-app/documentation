@@ -1,6 +1,6 @@
 # Annotation API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**annotationUpdate**](#annotationupdate) | **POST** /annotation/update
 
 
-<a id="annotationScoresIncrement"></a>
 ## **annotationScoresIncrement** {#annotationscoresincrement}
 > annotationScoresIncrement(`annotation`, seededScoreIncrement)
 
@@ -20,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -41,8 +40,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="annotationSpecificAnnotationSnapshot"></a>
 ## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(`annotation`)
 
@@ -68,8 +66,8 @@ This will get a snapshot of a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -89,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
+ **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
 ### Return type
 
@@ -104,7 +102,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="annotationUpdate"></a>
 ## **annotationUpdate** {#annotationupdate}
 > Annotation annotationUpdate(`annotation`)
 
@@ -115,8 +112,8 @@ This will update a specific annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationApi()
 val `annotation` : Annotation =  // Annotation | 
@@ -136,7 +133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | [**Annotation**](../models/Annotation)|  | [optional] 
+ **&#x60;annotation&#x60;** | [**Annotation**](../models/Annotation)|  | [optional]
 
 ### Return type
 

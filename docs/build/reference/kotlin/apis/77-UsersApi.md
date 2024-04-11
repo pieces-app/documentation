@@ -1,6 +1,6 @@
 # Users API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**usersSpecificUserSnapshot**](#usersspecificusersnapshot) | **GET** /users/\{user\}
 
 
-<a id="authenticateFromOauthToken"></a>
 ## **authenticateFromOauthToken** {#authenticatefromoauthtoken}
 > UserProfile authenticateFromOauthToken(oauthToken)
 
@@ -21,8 +20,8 @@ Creates a User From a oAuth Token
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val oauthToken : OAuthToken =  // OAuthToken | 
@@ -42,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oauthToken** | [**OAuthToken**](../models/OAuthToken)|  | [optional] 
+ **oauthToken** | [**OAuthToken**](../models/OAuthToken)|  | [optional]
 
 ### Return type
 
@@ -50,20 +49,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
+[auth0](#auth0), [auth0](#auth0), [auth0](#auth0)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="usersDisconnectUser"></a>
 ## **usersDisconnectUser** {#usersdisconnectuser}
 > Users usersDisconnectUser(user)
 
@@ -74,8 +66,8 @@ Locally Removing a user for the purpose of Signing Out
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val user : kotlin.String = user_example // kotlin.String | 
@@ -95,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user** | **kotlin.String**|  | 
+ **user** | **kotlin.String**|  |
 
 ### Return type
 
@@ -110,7 +102,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="usersSnapshot"></a>
 ## **usersSnapshot** {#userssnapshot}
 > Users usersSnapshot()
 
@@ -121,8 +112,8 @@ this will return a snapshot of all of the users that are in the users database. 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 try {
@@ -138,7 +129,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -153,7 +144,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="usersSpecificUserSnapshot"></a>
 ## **usersSpecificUserSnapshot** {#usersspecificusersnapshot}
 > UserProfile usersSpecificUserSnapshot(user)
 
@@ -164,8 +154,8 @@ This enables the client to get the current user.  This endpoint will return a Us
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val user : java.util.UUID = 497f6eca-6276-4993-bfeb-53cbbbba6f08 // java.util.UUID | The id (uuid) for a specific user.
@@ -185,7 +175,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **user** | **java.util.UUID**| The id (uuid) for a specific user. | 
+ **user** | **java.util.UUID**| The id (uuid) for a specific user. |
 
 ### Return type
 

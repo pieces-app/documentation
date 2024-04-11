@@ -1,6 +1,6 @@
 # Activity API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**activityUpdate**](#activityupdate) | **POST** /activity/update
 
 
-<a id="activitiesSpecificActivitySnapshot"></a>
 ## **activitiesSpecificActivitySnapshot** {#activitiesspecificactivitysnapshot}
 > Activity activitiesSpecificActivitySnapshot(activity, transferables)
 
@@ -20,8 +19,8 @@ This will attempt to get a specific activity.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ActivityApi()
 val activity : kotlin.String = activity_example // kotlin.String | This is a specific activity uuid.
@@ -42,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **activity** | **kotlin.String**| This is a specific activity uuid. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **activity** | **kotlin.String**| This is a specific activity uuid. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -58,7 +57,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="activityIdentifiersSnapshot"></a>
 ## **activityIdentifiersSnapshot** {#activityidentifierssnapshot}
 > FlattenedActivities activityIdentifiersSnapshot(pseudo, activityFilterEnum)
 
@@ -69,8 +67,8 @@ This is going to return all the identifiers of the activity event in order of mo
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ActivityApi()
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
@@ -91,8 +89,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
- **activityFilterEnum** | **kotlin.String**| This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | [optional] 
+ **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
+ **activityFilterEnum** | **kotlin.String**| This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | [optional] [enum: CREATED, UPDATED, DELETED, REFERENCED]
 
 ### Return type
 
@@ -107,7 +105,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="activityUpdate"></a>
 ## **activityUpdate** {#activityupdate}
 > Activity activityUpdate(transferables, activity)
 
@@ -118,8 +115,8 @@ this will update a specific activity.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ActivityApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -140,8 +137,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **activity** | [**Activity**](../models/Activity)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **activity** | [**Activity**](../models/Activity)|  | [optional]
 
 ### Return type
 

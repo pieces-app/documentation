@@ -12,7 +12,7 @@ Method | HTTP request
 
 /relationships [GET]
 
-This will reurn all of the relationships that exists within your pieces db.
+This will return all of the relationships that exists within your pieces db.
 
 ### Example
 

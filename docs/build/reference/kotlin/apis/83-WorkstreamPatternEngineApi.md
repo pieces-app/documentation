@@ -1,6 +1,6 @@
 # WorkstreamPatternEngine API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**workstreamPatternEngineProcessorsVisionStatus**](#workstreampatternengineprocessorsvisionstatus) | **GET** /workstream_pattern_engine/processors/vision/status
 
 
-<a id="workstreamPatternEngineProcessorsVisionActivate"></a>
 ## **workstreamPatternEngineProcessorsVisionActivate** {#workstreampatternengineprocessorsvisionactivate}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionActivate(workstreamPatternEngineStatus)
 
@@ -21,8 +20,8 @@ This will activate your Workstream Pattern Engine. This is used to aggregate inf
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
@@ -42,7 +41,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional] 
+ **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamPatternEngineProcessorsVisionDataClear"></a>
 ## **workstreamPatternEngineProcessorsVisionDataClear** {#workstreampatternengineprocessorsvisiondataclear}
 > workstreamPatternEngineProcessorsVisionDataClear(workstreamPatternEngineDataCleanupRequest)
 
@@ -68,8 +66,8 @@ This will clear the data for the Workstream Pattern Engine, specifically for our
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineDataCleanupRequest : WorkstreamPatternEngineDataCleanupRequest =  // WorkstreamPatternEngineDataCleanupRequest | 
@@ -88,7 +86,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamPatternEngineDataCleanupRequest** | [**WorkstreamPatternEngineDataCleanupRequest**](../models/WorkstreamPatternEngineDataCleanupRequest)|  | [optional] 
+ **workstreamPatternEngineDataCleanupRequest** | [**WorkstreamPatternEngineDataCleanupRequest**](../models/WorkstreamPatternEngineDataCleanupRequest)|  | [optional]
 
 ### Return type
 
@@ -103,7 +101,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamPatternEngineProcessorsVisionDeactivate"></a>
 ## **workstreamPatternEngineProcessorsVisionDeactivate** {#workstreampatternengineprocessorsvisiondeactivate}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionDeactivate(workstreamPatternEngineStatus)
 
@@ -114,8 +111,8 @@ This will deactivate your Workstream Pattern Engine. This is used to aggregate i
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
@@ -135,7 +132,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional] 
+ **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional]
 
 ### Return type
 
@@ -150,7 +147,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamPatternEngineProcessorsVisionStatus"></a>
 ## **workstreamPatternEngineProcessorsVisionStatus** {#workstreampatternengineprocessorsvisionstatus}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionStatus()
 
@@ -161,8 +157,8 @@ This will get a snapshot of the status your Workstream Pattern Engine. This is u
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 try {
@@ -178,7 +174,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

@@ -157,9 +157,9 @@ No authorization required
 ## **qgpt_stream** {#qgpt_stream}
 > QGPTStreamOutput qgpt_stream(qgpt_stream_input=qgpt_stream_input)
 
-/qgpt/stream [GET]
+/qgpt/stream [WS]
 
-Provides a version of qGPT stream that streams inputs. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option 'question:true'. It is designed to manage multiple conversations and operates as a Websocket.
+Provides a WebSocket connection that streams inputs to the qGPT model. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option 'question:true'. It is designed to manage multiple conversations.
 
 ### Example
 
@@ -185,7 +185,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     qgpt_stream_input = pieces_os_client.QGPTStreamInput() # QGPTStreamInput |  (optional)
 
     try:
-        # /qgpt/stream [GET]
+        # /qgpt/stream [WS]
         api_response = api_instance.qgpt_stream(qgpt_stream_input=qgpt_stream_input)
         print("The response of QGPTApi->qgpt_stream:\n")
         pprint(api_response)

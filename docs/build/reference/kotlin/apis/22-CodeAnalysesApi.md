@@ -1,13 +1,12 @@
 # CodeAnalyses API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**codeAnalysesSnapshot**](#codeanalysessnapshot) | **GET** /code_analyses
 
 
-<a id="codeAnalysesSnapshot"></a>
 ## **codeAnalysesSnapshot** {#codeanalysessnapshot}
 > CodeAnalyses codeAnalysesSnapshot()
 
@@ -18,8 +17,8 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = CodeAnalysesApi()
 try {
@@ -35,7 +34,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

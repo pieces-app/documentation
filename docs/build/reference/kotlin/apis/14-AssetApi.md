@@ -1,6 +1,6 @@
 # Asset API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -21,19 +21,18 @@ Method | HTTP request
 [**assetUpdate**](#assetupdate) | **POST** /asset/update
 
 
-<a id="assetAssociateTag"></a>
 ## **assetAssociateTag** {#assetassociatetag}
 > assetAssociateTag(asset, tag)
 
 /asset/\{asset\}/tags/associate/\{tag\} [POST]
 
-This will associate a tag with a asset. This will do the same thing as the tag equivalent.
+Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -53,8 +52,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **tag** | **kotlin.String**| tag id | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **tag** | **kotlin.String**| tag id |
 
 ### Return type
 
@@ -69,19 +68,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetAssociateWebsite"></a>
 ## **assetAssociateWebsite** {#assetassociatewebsite}
 > assetAssociateWebsite(asset, website)
 
 /asset/\{asset\}/websites/associate/\{website\} [POST]
 
-This will associate a website with a asset. This will do the same thing as the website equivalent.
+Associates a website with an asset. It performs the same action as its website equivalent.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -101,8 +99,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **website** | **kotlin.String**| website id | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **website** | **kotlin.String**| website id |
 
 ### Return type
 
@@ -117,7 +115,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetAssociateWorkstreamSummary"></a>
 ## **assetAssociateWorkstreamSummary** {#assetassociateworkstreamsummary}
 > assetAssociateWorkstreamSummary(asset, workstreamSummary)
 
@@ -128,8 +125,8 @@ This will associate a asset with a workstream summary. This will do the same thi
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -149,8 +146,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -165,19 +162,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetDisassociateTag"></a>
 ## **assetDisassociateTag** {#assetdisassociatetag}
 > assetDisassociateTag(tag, asset)
 
 /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
 
-This will enable us to dissassociate a tag from a asset. This will do the same thing as the tag equivalent.
+Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -197,8 +193,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **tag** | **kotlin.String**| tag id |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -213,19 +209,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetDisassociateWebsite"></a>
 ## **assetDisassociateWebsite** {#assetdisassociatewebsite}
 > assetDisassociateWebsite(website, asset)
 
 /asset/\{asset\}/websites/disassociate/\{website\} [POST]
 
-This will enable us to dissassociate a website from a asset. This will do the same thing as the website equivalent.
+Disassociates a website from an asset. It performs the same action as the website equivalent.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -245,8 +240,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **website** | **kotlin.String**| website id |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -261,7 +256,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetDisassociateWorkstreamSummary"></a>
 ## **assetDisassociateWorkstreamSummary** {#assetdisassociateworkstreamsummary}
 > assetDisassociateWorkstreamSummary(asset, workstreamSummary)
 
@@ -272,8 +266,8 @@ This will enable us to disassociate an asset from a workstream summary. This wil
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -293,8 +287,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -309,19 +303,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetFormats"></a>
 ## **assetFormats** {#assetformats}
 > Formats assetFormats(asset, transferables)
 
 /asset/\{asset\}/formats [GET] Scoped To Asset
 
-Get the formats for a given asset.
+Retrieves the formats available for a specified asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -342,8 +335,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -358,19 +351,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetReclassify"></a>
 ## **assetReclassify** {#assetreclassify}
 > Asset assetReclassify(transferables, assetReclassification)
 
 /asset/reclassify [POST]
 
-This will update the classification of this asset to the proper classification.
+Retrieves the formats available for a specified asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -391,8 +383,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **assetReclassification** | [**AssetReclassification**](../models/AssetReclassification)| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **assetReclassification** | [**AssetReclassification**](../models/AssetReclassification)| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. | [optional]
 
 ### Return type
 
@@ -407,19 +399,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="assetScoresIncrement"></a>
 ## **assetScoresIncrement** {#assetscoresincrement}
 > assetScoresIncrement(asset, seededScoreIncrement)
 
-&#39;/asset/\{asset\}/scores/increment&#39; [POST]
+/asset/\{asset\}/scores/increment [POST]
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -439,8 +430,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -455,19 +446,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="assetSnapshot"></a>
 ## **assetSnapshot** {#assetsnapshot}
 > Asset assetSnapshot(asset, transferables)
 
 /asset/\{asset\} [GET] Scoped To Asset
 
-Get the snapshot of a specific asset.
+Retrieves the snapshot of a specific asset
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -488,8 +478,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -504,19 +494,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetSnapshotPost"></a>
 ## **assetSnapshotPost** {#assetsnapshotpost}
 > Asset assetSnapshotPost(asset, transferables, seededAccessor)
 
 /asset/\{asset\} [POST] Scoped to an Asset
 
-Get the snapshot of a specific asset. by passing over as well the user who is getting the snapshot.
+Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -538,9 +527,9 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededAccessor** | [**SeededAccessor**](../models/SeededAccessor)|  | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededAccessor** | [**SeededAccessor**](../models/SeededAccessor)|  | [optional]
 
 ### Return type
 
@@ -555,19 +544,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="assetSpecificAssetActivities"></a>
 ## **assetSpecificAssetActivities** {#assetspecificassetactivities}
 > Activities assetSpecificAssetActivities(asset, transferables)
 
 /asset/\{asset\}/activities [GET]
 
-This will get a specific asset&#39;s activity events
+Retrieves activity events specific to the given asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -588,8 +576,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -604,19 +592,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetSpecificAssetConversations"></a>
 ## **assetSpecificAssetConversations** {#assetspecificassetconversations}
 > Conversations assetSpecificAssetConversations(asset, transferables)
 
 /asset/\{asset\}/conversations [GET]
 
-This will get a specific asset&#39;s conversations
+Retrieves conversations specific to the given asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -637,8 +624,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -653,19 +640,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetSpecificAssetExport"></a>
 ## **assetSpecificAssetExport** {#assetspecificassetexport}
 > ExportedAsset assetSpecificAssetExport(asset, exportType)
 
-[GET] /asset/\{asset\}/export
+/asset/\{asset\}/export [GET]
 
-This will return a export version of your asset.
+Retrieves an export version of the specified asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -686,8 +672,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **exportType** | **kotlin.String**| This specifies the type of export the user wants. | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **exportType** | **kotlin.String**| This specifies the type of export the user wants. | [enum: HTML, MD]
 
 ### Return type
 
@@ -702,23 +688,22 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="assetUpdate"></a>
 ## **assetUpdate** {#assetupdate}
 > Asset assetUpdate(transferables, asset)
 
 /asset/update [POST] Scoped to Asset
 
-This endpoint will accept an Asset that the user wants to update, and will return the a full Asset that was updated!
+Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AssetApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
-val asset : Asset =  // Asset | This is the updated Asset that needs to be updated in our db.
+val asset : Asset =  // Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 try {
     val result : Asset = apiInstance.assetUpdate(transferables, asset)
     println(result)
@@ -735,8 +720,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **asset** | [**Asset**](../models/Asset)| This is the updated Asset that needs to be updated in our db. | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **asset** | [**Asset**](../models/Asset)| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # WorkstreamEvent API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -11,7 +11,6 @@ Method | HTTP request
 [**workstreamEventsSpecificWorkstreamEventSnapshot**](#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
 
 
-<a id="workstreamEventAssociateWorkstreamSummary"></a>
 ## **workstreamEventAssociateWorkstreamSummary** {#workstreameventassociateworkstreamsummary}
 > workstreamEventAssociateWorkstreamSummary(workstreamEvent, workstreamSummary)
 
@@ -22,8 +21,8 @@ This will associate a workstream_event with a workstream summary. This will do t
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamEventApi()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="workstreamEventDisassociateWorkstreamSummary"></a>
 ## **workstreamEventDisassociateWorkstreamSummary** {#workstreameventdisassociateworkstreamsummary}
 > workstreamEventDisassociateWorkstreamSummary(workstreamEvent, workstreamSummary)
 
@@ -70,8 +68,8 @@ This will enable us to disassociate a workstream_event from a workstream summary
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamEventApi()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
@@ -91,8 +89,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -107,7 +105,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="workstreamEventScoresIncrement"></a>
 ## **workstreamEventScoresIncrement** {#workstreameventscoresincrement}
 > workstreamEventScoresIncrement(workstreamEvent, seededScoreIncrement)
 
@@ -118,8 +115,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamEventApi()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
@@ -139,8 +136,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -155,7 +152,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamEventUpdate"></a>
 ## **workstreamEventUpdate** {#workstreameventupdate}
 > WorkstreamEvent workstreamEventUpdate(transferables, workstreamEvent)
 
@@ -166,8 +162,8 @@ This will update a specific workstream_event.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamEventApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -188,8 +184,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **workstreamEvent** | [**WorkstreamEvent**](../models/WorkstreamEvent)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **workstreamEvent** | [**WorkstreamEvent**](../models/WorkstreamEvent)|  | [optional]
 
 ### Return type
 
@@ -204,7 +200,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="workstreamEventsSpecificWorkstreamEventSnapshot"></a>
 ## **workstreamEventsSpecificWorkstreamEventSnapshot** {#workstreameventsspecificworkstreameventsnapshot}
 > WorkstreamEvent workstreamEventsSpecificWorkstreamEventSnapshot(workstreamEvent, transferables)
 
@@ -215,8 +210,8 @@ This will get a snapshot of a single workstream_event.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamEventApi()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
@@ -237,8 +232,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # Ranges API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**rangesSnapshot**](#rangessnapshot) | **GET** /ranges
 
 
-<a id="rangesCreateNewRange"></a>
 ## **rangesCreateNewRange** {#rangescreatenewrange}
 > Range rangesCreateNewRange(seededRange)
 
@@ -20,8 +19,8 @@ This will create a new Range in the database.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val seededRange : SeededRange =  // SeededRange | 
@@ -41,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededRange** | [**SeededRange**](../models/SeededRange)|  | [optional] 
+ **seededRange** | [**SeededRange**](../models/SeededRange)|  | [optional]
 
 ### Return type
 
@@ -56,7 +55,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="rangesDeleteSpecificRange"></a>
 ## **rangesDeleteSpecificRange** {#rangesdeletespecificrange}
 > rangesDeleteSpecificRange(range)
 
@@ -67,8 +65,8 @@ This will delete a specific range from the database!
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
 ### Return type
 
@@ -102,7 +100,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="rangesSnapshot"></a>
 ## **rangesSnapshot** {#rangessnapshot}
 > Ranges rangesSnapshot()
 
@@ -113,8 +110,8 @@ This will get a snapshot of all your ranges.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 try {
@@ -130,7 +127,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

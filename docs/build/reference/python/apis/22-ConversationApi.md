@@ -914,7 +914,7 @@ No authorization required
 ## **conversation_scores_increment** {#conversation_scores_increment}
 > conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
 
-'/conversation/\{conversation\}/scores/increment' [POST]
+/conversation/\{conversation\}/scores/increment [POST]
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
@@ -942,7 +942,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/conversation/\{conversation\}/scores/increment' [POST]
+        # /conversation/\{conversation\}/scores/increment [POST]
         api_instance.conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling ConversationApi->conversation_scores_increment: %s\n" % e)

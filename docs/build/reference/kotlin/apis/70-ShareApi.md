@@ -1,6 +1,6 @@
 # Share API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**shareUpdate**](#shareupdate) | **POST** /share/update
 
 
-<a id="shareScoresIncrement"></a>
 ## **shareScoresIncrement** {#sharescoresincrement}
 > shareScoresIncrement(share, seededScoreIncrement)
 
@@ -20,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -41,8 +40,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **share** | **kotlin.String**| Share id | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **share** | **kotlin.String**| Share id |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="shareSnapshot"></a>
 ## **shareSnapshot** {#sharesnapshot}
 > Share shareSnapshot(share, transferables)
 
@@ -68,8 +66,8 @@ Get the snapshot of a specific share.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -90,8 +88,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **share** | **kotlin.String**| Share id | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **share** | **kotlin.String**| Share id |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -106,7 +104,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="shareUpdate"></a>
 ## **shareUpdate** {#shareupdate}
 > Share shareUpdate(transferables, share)
 
@@ -117,8 +114,8 @@ This endpoint will accept a Share that the user wants to update, and will return
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -139,8 +136,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **share** | [**Share**](../models/Share)| This is the Share that needs to be updated. | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **share** | [**Share**](../models/Share)| This is the Share that needs to be updated. | [optional]
 
 ### Return type
 

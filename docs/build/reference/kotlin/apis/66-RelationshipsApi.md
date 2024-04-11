@@ -1,25 +1,24 @@
 # Relationships API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**relationshipsSnapshot**](#relationshipssnapshot) | **GET** /relationships
 
 
-<a id="relationshipsSnapshot"></a>
 ## **relationshipsSnapshot** {#relationshipssnapshot}
 > Relationships relationshipsSnapshot()
 
 /relationships [GET]
 
-This will reurn all of the relationships that exists within your pieces db.
+This will return all of the relationships that exists within your pieces db.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RelationshipsApi()
 try {
@@ -35,7 +34,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

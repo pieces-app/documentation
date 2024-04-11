@@ -1,13 +1,12 @@
 # Relationship API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**relationshipsSpecificRelationshipSnapshot**](#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\}
 
 
-<a id="relationshipsSpecificRelationshipSnapshot"></a>
 ## **relationshipsSpecificRelationshipSnapshot** {#relationshipsspecificrelationshipsnapshot}
 > Relationship relationshipsSpecificRelationshipSnapshot(relationship)
 
@@ -18,8 +17,8 @@ This will return a single relationship object.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RelationshipApi()
 val relationship : kotlin.String = relationship_example // kotlin.String | this is a specific relationship uuid.
@@ -39,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **relationship** | **kotlin.String**| this is a specific relationship uuid. | 
+ **relationship** | **kotlin.String**| this is a specific relationship uuid. |
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # Person API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -11,7 +11,6 @@ Method | HTTP request
 [**updatePerson**](#updateperson) | **POST** /person/update
 
 
-<a id="personAssociateWorkstreamSummary"></a>
 ## **personAssociateWorkstreamSummary** {#personassociateworkstreamsummary}
 > personAssociateWorkstreamSummary(person, workstreamSummary)
 
@@ -22,8 +21,8 @@ This will associate a person with a workstream summary. This will do the same th
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="personDisassociateWorkstreamSummary"></a>
 ## **personDisassociateWorkstreamSummary** {#persondisassociateworkstreamsummary}
 > personDisassociateWorkstreamSummary(person, workstreamSummary)
 
@@ -70,8 +68,8 @@ This will enable us to disassociate an person from a workstream summary. This wi
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -91,8 +89,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -107,7 +105,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="personScoresIncrement"></a>
 ## **personScoresIncrement** {#personscoresincrement}
 > personScoresIncrement(person, seededScoreIncrement)
 
@@ -118,8 +115,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -139,8 +136,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -155,7 +152,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="personSnapshot"></a>
 ## **personSnapshot** {#personsnapshot}
 > Person personSnapshot(person, transferables)
 
@@ -166,8 +162,8 @@ This will get a snapshot of a specific person
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -188,8 +184,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -204,7 +200,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="updatePerson"></a>
 ## **updatePerson** {#updateperson}
 > Person updatePerson(transferables, person)
 
@@ -215,8 +210,8 @@ This will update a specific person
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -237,8 +232,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **person** | [**Person**](../models/Person)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **person** | [**Person**](../models/Person)|  | [optional]
 
 ### Return type
 

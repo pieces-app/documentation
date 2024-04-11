@@ -1,6 +1,6 @@
 # Range API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -13,7 +13,6 @@ Method | HTTP request
 [**rangesSpecificRangeSnapshot**](#rangesspecificrangesnapshot) | **GET** /range/\{range\}
 
 
-<a id="rangeAssociateConversationGroundingTemporalRangeWorkstreams"></a>
 ## **rangeAssociateConversationGroundingTemporalRangeWorkstreams** {#rangeassociateconversationgroundingtemporalrangeworkstreams}
 > rangeAssociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
 
@@ -24,8 +23,8 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -45,8 +44,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
 ### Return type
 
@@ -61,7 +60,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="rangeAssociateWorkstreamSummary"></a>
 ## **rangeAssociateWorkstreamSummary** {#rangeassociateworkstreamsummary}
 > rangeAssociateWorkstreamSummary(range, workstreamSummary)
 
@@ -72,8 +70,8 @@ This will associate a range with a workstream summary. This will do the same thi
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -93,8 +91,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -109,7 +107,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="rangeDisassociateConversationGroundingTemporalRangeWorkstreams"></a>
 ## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams** {#rangedisassociateconversationgroundingtemporalrangeworkstreams}
 > rangeDisassociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
 
@@ -120,8 +117,8 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -141,8 +138,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
 ### Return type
 
@@ -157,7 +154,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="rangeDisassociateWorkstreamSummary"></a>
 ## **rangeDisassociateWorkstreamSummary** {#rangedisassociateworkstreamsummary}
 > rangeDisassociateWorkstreamSummary(range, workstreamSummary)
 
@@ -168,8 +164,8 @@ This will enable us to disassociate a range from a workstream summary. This will
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -189,8 +185,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -205,7 +201,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="rangeScoresIncrement"></a>
 ## **rangeScoresIncrement** {#rangescoresincrement}
 > rangeScoresIncrement(range, seededScoreIncrement)
 
@@ -216,8 +211,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -237,8 +232,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -253,7 +248,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="rangeUpdate"></a>
 ## **rangeUpdate** {#rangeupdate}
 > Range rangeUpdate(range)
 
@@ -264,8 +258,8 @@ This will update a specific range.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : Range =  // Range | 
@@ -285,7 +279,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | [**Range**](../models/Range)|  | [optional] 
+ **range** | [**Range**](../models/Range)|  | [optional]
 
 ### Return type
 
@@ -300,7 +294,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="rangesSpecificRangeSnapshot"></a>
 ## **rangesSpecificRangeSnapshot** {#rangesspecificrangesnapshot}
 > Range rangesSpecificRangeSnapshot(range)
 
@@ -311,8 +304,8 @@ This will get a snapshot of a single range.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -332,7 +325,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
 ### Return type
 

@@ -2,16 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
-[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
-[**osRestart**](OSApi#osrestart) | **GET** /os/restart | Your GET endpoint
-[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
-[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
-[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
-[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in | 
-[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
+Method | HTTP request
+------------- | -------------
+[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider
+[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information
+[**osPermissions**](OSApi#ospermissions) | **GET** /os/permissions
+[**osPermissionsRequest**](OSApi#ospermissionsrequest) | **POST** /os/permissions/request
+[**osRestart**](OSApi#osrestart) | **GET** /os/restart
+[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check
+[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick
+[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick
+[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in
+[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out
 
 
 ## **linkProvider** {#linkprovider}
@@ -92,6 +94,88 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+## **osPermissions** {#ospermissions}
+> OSPermissions osPermissions()
+
+/os/permissions [GET]
+
+This will only work on Macos and Windows.  And will get the permissions of the user's local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
+
+### Example
+```dart
+import 'package:core_openapi/api.dart';
+
+final api_instance = OSApi();
+
+try {
+    final result = api_instance.osPermissions();
+    print(result);
+} catch (e) {
+    print('Exception when calling OSApi->osPermissions: $e\n');
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+
+## **osPermissionsRequest** {#ospermissionsrequest}
+> OSPermissions osPermissionsRequest(oSPermissions)
+
+/os/permissions/request [POST]
+
+This will only work on Macos and Windows.  This will request permissions for the given inputs
+
+### Example
+```dart
+import 'package:core_openapi/api.dart';
+
+final api_instance = OSApi();
+final oSPermissions = OSPermissions(); // OSPermissions | 
+
+try {
+    final result = api_instance.osPermissionsRequest(oSPermissions);
+    print(result);
+} catch (e) {
+    print('Exception when calling OSApi->osPermissionsRequest: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oSPermissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 

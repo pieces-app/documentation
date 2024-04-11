@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getWellKnownHealth**](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health | /.well-known/health [GET]
-[**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version | /.well-known/version [Get]
+Method | HTTP request
+------------- | -------------
+[**getWellKnownHealth**](WellKnownApi#getwellknownhealth) | **GET** /.well-known/health
+[**getWellKnownVersion**](WellKnownApi#getwellknownversion) | **GET** /.well-known/version
 
 
 ## **getWellKnownHealth** {#getwellknownhealth}

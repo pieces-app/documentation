@@ -1,6 +1,6 @@
 # Sensitive API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**updateSensitive**](#updatesensitive) | **POST** /sensitive/update
 
 
-<a id="sensitiveScoresIncrement"></a>
 ## **sensitiveScoresIncrement** {#sensitivescoresincrement}
 > sensitiveScoresIncrement(sensitive, seededScoreIncrement)
 
@@ -20,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
@@ -41,8 +40,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="sensitiveSnapshot"></a>
 ## **sensitiveSnapshot** {#sensitivesnapshot}
 > Sensitive sensitiveSnapshot(sensitive)
 
@@ -68,8 +66,8 @@ This will get a specific sensitive via the sensitive uuid.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | 
@@ -89,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **kotlin.String**|  | 
+ **sensitive** | **kotlin.String**|  |
 
 ### Return type
 
@@ -104,7 +102,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="updateSensitive"></a>
 ## **updateSensitive** {#updatesensitive}
 > Sensitive updateSensitive(sensitive)
 
@@ -115,8 +112,8 @@ This will update a specific sensitive
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : Sensitive =  // Sensitive | 
@@ -136,7 +133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | [**Sensitive**](../models/Sensitive)|  | [optional] 
+ **sensitive** | [**Sensitive**](../models/Sensitive)|  | [optional]
 
 ### Return type
 

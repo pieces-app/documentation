@@ -1,4 +1,4 @@
-# FlattenedReferences Model
+# WorkstreamPatternEngineVisionStatus Model
 
 ## Load the model package
 ```dart
@@ -9,8 +9,8 @@ import 'package:core_openapi/api.dart';
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-**indices** | **Map\<String, int\>** | This is a Map\<String, int\>** where the the key is an Reference id. | [optional] [default to const {}]
-**score** | [**Score**](Score) |  | [optional] 
+**activation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
+**deactivation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
 
 
 

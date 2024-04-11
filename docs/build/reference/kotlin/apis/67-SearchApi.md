@@ -1,6 +1,6 @@
 # Search API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**tagBasedSearch**](#tagbasedsearch) | **POST** /search/tag_based
 
 
-<a id="fullTextSearch"></a>
 ## **fullTextSearch** {#fulltextsearch}
 > SearchedAssets fullTextSearch(query, pseudo)
 
@@ -20,8 +19,8 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
@@ -42,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional] 
- **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
+ **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional]
+ **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
 ### Return type
 
@@ -58,7 +57,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="neuralCodeSearch"></a>
 ## **neuralCodeSearch** {#neuralcodesearch}
 > SearchedAssets neuralCodeSearch(query, pseudo)
 
@@ -69,8 +67,8 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
@@ -91,8 +89,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional] 
- **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
+ **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional]
+ **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
 ### Return type
 
@@ -107,7 +105,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagBasedSearch"></a>
 ## **tagBasedSearch** {#tagbasedsearch}
 > SearchedAssets tagBasedSearch(pseudo, seededAssetTags)
 
@@ -118,8 +115,8 @@ This will run our tag based search, and return the assets that best match your p
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
@@ -140,8 +137,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
- **seededAssetTags** | [**SeededAssetTags**](../models/SeededAssetTags)|  | [optional] 
+ **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
+ **seededAssetTags** | [**SeededAssetTags**](../models/SeededAssetTags)|  | [optional]
 
 ### Return type
 

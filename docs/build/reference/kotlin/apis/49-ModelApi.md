@@ -1,6 +1,6 @@
 # Model API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -13,19 +13,18 @@ Method | HTTP request
 [**modelsSpecificModelSnapshot**](#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
 
 
-<a id="modelSpecificModelDownload"></a>
 ## **modelSpecificModelDownload** {#modelspecificmodeldownload}
 > Model modelSpecificModelDownload(model)
 
 /model/\{model\}/download [POST]
 
-This will download a specific model onto your local machine.
+Downloads a specific model to your local machine.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -45,7 +44,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 
@@ -60,19 +59,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelSpecificModelDownloadCancel"></a>
 ## **modelSpecificModelDownloadCancel** {#modelspecificmodeldownloadcancel}
 > Model modelSpecificModelDownloadCancel(model)
 
 /model/\{model\}/download/cancel [POST]
 
-This will cancel a specific model download in progress.
+Cancels a specific model download that is currently in progress.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -92,7 +90,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 
@@ -107,19 +105,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelSpecificModelDownloadProgress"></a>
 ## **modelSpecificModelDownloadProgress** {#modelspecificmodeldownloadprogress}
 > ModelDownloadProgress modelSpecificModelDownloadProgress(model)
 
 /model/\{model\}/download/progress [WS]
 
-This is a Websocket Connection, to get the progress of the downloading of a specific model.
+This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -139,7 +136,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 
@@ -154,19 +151,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelSpecificModelLoad"></a>
 ## **modelSpecificModelLoad** {#modelspecificmodelload}
 > Model modelSpecificModelLoad(model)
 
 /model/\{model\}/load [POST]
 
-This will load an already downloaded model into memory. This is different that downloading becuase downloading the entire model onto your machine, load will load the downloaded model into memory.
+Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -186,7 +182,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 
@@ -201,19 +197,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelSpecificModelUnload"></a>
 ## **modelSpecificModelUnload** {#modelspecificmodelunload}
 > Model modelSpecificModelUnload(model)
 
 /model/\{model\}/unload [POST]
 
-This will unload an already loaded model from memory. This will free up the ram that this model is currently consuming.
+Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -233,7 +228,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 
@@ -248,19 +243,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelUpdate"></a>
 ## **modelUpdate** {#modelupdate}
 > Model modelUpdate(model)
 
 /model/update [POST]
 
-This will update Machinelearning Model, this is only available for \&quot;custom:true\&quot; models.
+Updates a machine learning model. This functionality is exclusively available for models with the &#39;custom:true&#39; setting.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : Model =  // Model | 
@@ -280,7 +274,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | [**Model**](../models/Model)|  | [optional] 
+ **model** | [**Model**](../models/Model)|  | [optional]
 
 ### Return type
 
@@ -295,19 +289,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="modelsSpecificModelSnapshot"></a>
 ## **modelsSpecificModelSnapshot** {#modelsspecificmodelsnapshot}
 > Model modelsSpecificModelSnapshot(model)
 
 /model/\{model\} [GET]
 
-
+Retrieves a specific ML model.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -327,7 +320,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **kotlin.String**| model id | 
+ **model** | **kotlin.String**| model id |
 
 ### Return type
 

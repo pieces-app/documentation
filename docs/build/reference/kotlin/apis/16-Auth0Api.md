@@ -1,6 +1,6 @@
 # Auth0 API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo
 
 
-<a id="auth0Logout"></a>
 ## **auth0Logout** {#auth0logout}
 > kotlin.String auth0Logout(clientId, returnTo)
 
@@ -21,8 +20,8 @@ https://auth0.com/docs/api/authentication#logout
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = Auth0Api()
 val clientId : kotlin.String = clientId_example // kotlin.String | The client ID of the Auth0 Instance
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientId** | **kotlin.String**| The client ID of the Auth0 Instance | [optional] 
- **returnTo** | **kotlin.String**| The URL that the logout endpoint will return to | [optional] 
+ **clientId** | **kotlin.String**| The client ID of the Auth0 Instance | [optional]
+ **returnTo** | **kotlin.String**| The URL that the logout endpoint will return to | [optional]
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a id="authorizeAuth0"></a>
 ## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
 
@@ -70,8 +68,8 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = Auth0Api()
 val audience : kotlin.String = https://pieces.us.auth0.com/api/v2/ // kotlin.String |  The unique identifier of the target API you want to access.
@@ -99,19 +97,19 @@ try {
 
 ### Parameters
 
-Name | Type                                         | Description  | Notes
-------------- |----------------------------------------------| ------------- | -------------
- **audience** | **kotlin.String**                            |  The unique identifier of the target API you want to access. | 
- **scope** | **kotlin.collections.List\<kotlin.String\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | 
- **responseType** | **kotlin.String**                            | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
- **clientId** | **kotlin.String**                            | Your application's Client ID. | 
- **codeChallengeMethod** | **kotlin.String**                            | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
- **codeChallenge** | **kotlin.String**                            | Generated challenge from the code_verifier. | 
- **responseMode** | **kotlin.String**                            |  | 
- **state** | **kotlin.String**                            | An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional] 
- **redirectUri** | **kotlin.String**                            | The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional] 
- **connection** | **kotlin.String**                            | The name of the connection configured to your application. | [optional] 
- **prompt** | **kotlin.String**                            | To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **audience** | **kotlin.String**|  The unique identifier of the target API you want to access. |
+ **scope** | **kotlin.collections.List&lt;kotlin.String&gt;**| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [enum: openid, email, profile, offline_access]
+ **responseType** | **kotlin.String**| Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | [enum: code]
+ **clientId** | **kotlin.String**| Your application&#39;s Client ID. |
+ **codeChallengeMethod** | **kotlin.String**| Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | [enum: S256]
+ **codeChallenge** | **kotlin.String**| Generated challenge from the code_verifier. |
+ **responseMode** | **kotlin.String**|  | [enum: form_post, fragment, query, web_message]
+ **state** | **kotlin.String**| An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional]
+ **redirectUri** | **kotlin.String**| The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional]
+ **connection** | **kotlin.String**| The name of the connection configured to your application. | [optional]
+ **prompt** | **kotlin.String**| To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). | [optional]
 
 ### Return type
 
@@ -126,7 +124,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/x-www-form-urlencoded
 
-<a id="exchangeForAuth0Token"></a>
 ## **exchangeForAuth0Token** {#exchangeforauth0token}
 > OAuthToken exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
 
@@ -137,8 +134,8 @@ An endpoint to generate a OAuth Token for an authentication flow.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = Auth0Api()
 val grantType : kotlin.String = grantType_example // kotlin.String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -164,13 +161,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **grantType** | **kotlin.String**| Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | 
- **clientId** | **kotlin.String**| Your application's Client ID. | 
- **code** | **kotlin.String**| The Authorization Code received from the initial /authorize call. | 
- **redirectUri** | **kotlin.String**| This is required only if it was set at the GET /authorize endpoint. The values must match. | 
- **codeVerifier** | **kotlin.String**| Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
- **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional] 
- **audience** | **kotlin.String**| The audience domain: i.e. https://pieces.us.auth0.com | [optional] 
+ **grantType** | **kotlin.String**| Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | [enum: refresh_token, authorization_code]
+ **clientId** | **kotlin.String**| Your application&#39;s Client ID. |
+ **code** | **kotlin.String**| The Authorization Code received from the initial /authorize call. |
+ **redirectUri** | **kotlin.String**| This is required only if it was set at the GET /authorize endpoint. The values must match. |
+ **codeVerifier** | **kotlin.String**| Cryptographically random key that was used to generate the code_challenge passed to /authorize. |
+ **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional]
+ **audience** | **kotlin.String**| The audience domain: i.e. https://pieces.us.auth0.com | [optional]
 
 ### Return type
 
@@ -185,7 +182,6 @@ No authorization required
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
 
-<a id="getAuth0UserInfo"></a>
 ## **getAuth0UserInfo** {#getauth0userinfo}
 > Auth0User getAuth0UserInfo()
 
@@ -196,8 +192,8 @@ Get the users info from the Auth0 API
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = Auth0Api()
 try {
@@ -213,7 +209,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -221,13 +217,7 @@ This endpoint does not need any parameters.
 
 ### Authorization
 
-
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
+[auth0](#auth0), [auth0](#auth0), [auth0](#auth0)
 
 ### HTTP request headers
 

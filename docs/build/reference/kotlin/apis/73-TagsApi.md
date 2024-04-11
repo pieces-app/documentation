@@ -1,6 +1,6 @@
 # Tags API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**tagsSnapshot**](#tagssnapshot) | **GET** /tags
 
 
-<a id="tagsCreateNewTag"></a>
 ## **tagsCreateNewTag** {#tagscreatenewtag}
 > Tag tagsCreateNewTag(transferables, seededTag)
 
@@ -21,8 +20,8 @@ This will create a new tag.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededTag** | [**SeededTag**](../models/SeededTag)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededTag** | [**SeededTag**](../models/SeededTag)|  | [optional]
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="tagsDeleteSpecificTag"></a>
 ## **tagsDeleteSpecificTag** {#tagsdeletespecifictag}
 > tagsDeleteSpecificTag(tag)
 
@@ -70,8 +68,8 @@ This will delete a specific tag.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagsApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -90,7 +88,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
+ **tag** | **kotlin.String**| tag id |
 
 ### Return type
 
@@ -105,7 +103,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagsExists"></a>
 ## **tagsExists** {#tagsexists}
 > ExistingMetadata tagsExists(existentMetadata)
 
@@ -116,8 +113,8 @@ This will check all of the tags in our database to see if this specific provided
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagsApi()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
@@ -137,7 +134,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
+ **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional]
 
 ### Return type
 
@@ -152,7 +149,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="tagsSnapshot"></a>
 ## **tagsSnapshot** {#tagssnapshot}
 > Tags tagsSnapshot(transferables)
 
@@ -163,8 +159,8 @@ This will get a snapshot of all of your tags.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -184,7 +180,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

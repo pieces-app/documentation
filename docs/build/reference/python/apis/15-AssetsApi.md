@@ -866,9 +866,9 @@ No authorization required
 ## **assets_stream_identifiers** {#assets_stream_identifiers}
 > StreamedIdentifiers assets_stream_identifiers()
 
-/assets/stream/identifiers [GET]
+/assets/stream/identifiers [WS]
 
-Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
+Provides a WebSocket connection that emits changes to your asset's identifiers (UUIDs).
 
 ### Example
 
@@ -892,7 +892,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
-        # /assets/stream/identifiers [GET]
+        # /assets/stream/identifiers [WS]
         api_response = api_instance.assets_stream_identifiers()
         print("The response of AssetsApi->assets_stream_identifiers:\n")
         pprint(api_response)
@@ -930,7 +930,7 @@ No authorization required
 ## **get_assets_stream_transferables** {#get_assets_stream_transferables}
 > Assets get_assets_stream_transferables()
 
-Your GET endpoint
+/assets/stream/transferables [WS]
 
 Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
@@ -956,7 +956,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
-        # Your GET endpoint
+        # /assets/stream/transferables [WS]
         api_response = api_instance.get_assets_stream_transferables()
         print("The response of AssetsApi->get_assets_stream_transferables:\n")
         pprint(api_response)
@@ -994,9 +994,9 @@ No authorization required
 ## **stream_assets** {#stream_assets}
 > Assets stream_assets()
 
-/assets/stream [GET]
+/assets/stream [WS]
 
-IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.
+Provides a WebSocket connection that emits changes to your assets.
 
 ### Example
 
@@ -1020,7 +1020,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
-        # /assets/stream [GET]
+        # /assets/stream [WS]
         api_response = api_instance.stream_assets()
         print("The response of AssetsApi->stream_assets:\n")
         pprint(api_response)

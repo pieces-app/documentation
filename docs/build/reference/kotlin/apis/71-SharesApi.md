@@ -1,6 +1,6 @@
 # Shares API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**sharesSpecificShareSnapshot**](#sharesspecificsharesnapshot) | **GET** /shares/\{share\}
 
 
-<a id="sharesCreateNewShare"></a>
 ## **sharesCreateNewShare** {#sharescreatenewshare}
 > Shares sharesCreateNewShare(transferables, seededShare)
 
@@ -21,8 +20,8 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededShare** | [**SeededShare**](../models/SeededShare)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededShare** | [**SeededShare**](../models/SeededShare)|  | [optional]
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="sharesDeleteShare"></a>
 ## **sharesDeleteShare** {#sharesdeleteshare}
 > kotlin.String sharesDeleteShare(share)
 
@@ -70,8 +68,8 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -91,7 +89,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **share** | **kotlin.String**| Share id | 
+ **share** | **kotlin.String**| Share id |
 
 ### Return type
 
@@ -106,7 +104,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="sharesSnapshot"></a>
 ## **sharesSnapshot** {#sharessnapshot}
 > Shares sharesSnapshot(transferables)
 
@@ -117,8 +114,8 @@ This will return all of your shares. A Share is an asset that you as a user deci
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -138,7 +135,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -153,7 +150,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="sharesSpecificShareSnapshot"></a>
 ## **sharesSpecificShareSnapshot** {#sharesspecificsharesnapshot}
 > Share sharesSpecificShareSnapshot(share, transferables)
 
@@ -164,8 +160,8 @@ This is an endpoint to enable a client to access a specific share through a prov
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -186,8 +182,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **share** | **kotlin.String**| Share id | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **share** | **kotlin.String**| Share id |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

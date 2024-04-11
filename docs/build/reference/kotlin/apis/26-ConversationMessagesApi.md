@@ -1,6 +1,6 @@
 # ConversationMessages API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**messagesSnapshot**](#messagessnapshot) | **GET** /messages
 
 
-<a id="messagesCreateSpecificMessage"></a>
 ## **messagesCreateSpecificMessage** {#messagescreatespecificmessage}
 > ConversationMessage messagesCreateSpecificMessage(transferables, seededConversationMessage)
 
@@ -20,8 +19,8 @@ This will create a Message on a specific conversation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessagesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -42,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededConversationMessage** | [**SeededConversationMessage**](../models/SeededConversationMessage)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededConversationMessage** | [**SeededConversationMessage**](../models/SeededConversationMessage)|  | [optional]
 
 ### Return type
 
@@ -58,7 +57,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="messagesDeleteSpecificMessage"></a>
 ## **messagesDeleteSpecificMessage** {#messagesdeletespecificmessage}
 > messagesDeleteSpecificMessage(message)
 
@@ -69,8 +67,8 @@ This will delete a specific message.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessagesApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
@@ -89,7 +87,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **message** | **kotlin.String**| This is the uuid of a message. | 
+ **message** | **kotlin.String**| This is the uuid of a message. |
 
 ### Return type
 
@@ -104,7 +102,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messagesSnapshot"></a>
 ## **messagesSnapshot** {#messagessnapshot}
 > ConversationMessages messagesSnapshot(transferables)
 
@@ -115,8 +112,8 @@ This will get all the messages.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessagesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -136,7 +133,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

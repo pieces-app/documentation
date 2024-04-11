@@ -1,6 +1,6 @@
 # Tag API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -13,7 +13,6 @@ Method | HTTP request
 [**tagsSpecificTagSnapshot**](#tagsspecifictagsnapshot) | **GET** /tag/\{tag\}
 
 
-<a id="tagAssociateAsset"></a>
 ## **tagAssociateAsset** {#tagassociateasset}
 > tagAssociateAsset(asset, tag)
 
@@ -24,8 +23,8 @@ This will associate a tag with a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -45,8 +44,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **tag** | **kotlin.String**| tag id | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **tag** | **kotlin.String**| tag id |
 
 ### Return type
 
@@ -61,7 +60,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagAssociatePerson"></a>
 ## **tagAssociatePerson** {#tagassociateperson}
 > tagAssociatePerson(tag, person)
 
@@ -72,8 +70,8 @@ This will associate a tag with a person.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -93,8 +91,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
+ **tag** | **kotlin.String**| tag id |
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
 
 ### Return type
 
@@ -109,7 +107,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagDisassociateAsset"></a>
 ## **tagDisassociateAsset** {#tagdisassociateasset}
 > tagDisassociateAsset(tag, asset)
 
@@ -120,8 +117,8 @@ This will enable us to dissassociate a tag from a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -141,8 +138,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **tag** | **kotlin.String**| tag id |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -157,7 +154,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagDisassociatePerson"></a>
 ## **tagDisassociatePerson** {#tagdisassociateperson}
 > tagDisassociatePerson(tag, person)
 
@@ -168,8 +164,8 @@ This will enable us to dissassociate a tag from a person.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -189,8 +185,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
+ **tag** | **kotlin.String**| tag id |
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
 
 ### Return type
 
@@ -205,7 +201,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="tagScoresIncrement"></a>
 ## **tagScoresIncrement** {#tagscoresincrement}
 > tagScoresIncrement(tag, seededScoreIncrement)
 
@@ -216,8 +211,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -237,8 +232,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **tag** | **kotlin.String**| tag id |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -253,7 +248,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="tagUpdate"></a>
 ## **tagUpdate** {#tagupdate}
 > Tag tagUpdate(transferables, tag)
 
@@ -264,8 +258,8 @@ This will update a specific tag.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -286,8 +280,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **tag** | [**Tag**](../models/Tag)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **tag** | [**Tag**](../models/Tag)|  | [optional]
 
 ### Return type
 
@@ -302,7 +296,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="tagsSpecificTagSnapshot"></a>
 ## **tagsSpecificTagSnapshot** {#tagsspecifictagsnapshot}
 > Tag tagsSpecificTagSnapshot(tag, transferables)
 
@@ -313,8 +306,8 @@ This will get a specific tag.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -335,8 +328,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **kotlin.String**| tag id | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **tag** | **kotlin.String**| tag id |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

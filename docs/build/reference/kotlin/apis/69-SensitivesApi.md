@@ -1,6 +1,6 @@
 # Sensitives API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**sensitivesSnapshot**](#sensitivessnapshot) | **GET** /sensitives
 
 
-<a id="sensitivesCreateNewSensitive"></a>
 ## **sensitivesCreateNewSensitive** {#sensitivescreatenewsensitive}
 > Sensitive sensitivesCreateNewSensitive(seededSensitive)
 
@@ -20,8 +19,8 @@ This will create a new sensitive model.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val seededSensitive : SeededSensitive =  // SeededSensitive | 
@@ -41,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededSensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional] 
+ **seededSensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional]
 
 ### Return type
 
@@ -56,7 +55,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="sensitivesDeleteSensitive"></a>
 ## **sensitivesDeleteSensitive** {#sensitivesdeletesensitive}
 > sensitivesDeleteSensitive(sensitive)
 
@@ -67,8 +65,8 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. | 
+ **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. |
 
 ### Return type
 
@@ -102,7 +100,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="sensitivesSnapshot"></a>
 ## **sensitivesSnapshot** {#sensitivessnapshot}
 > Sensitives sensitivesSnapshot()
 
@@ -113,8 +110,8 @@ This will get a snapshot of all of the sensitives.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 try {
@@ -130,7 +127,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

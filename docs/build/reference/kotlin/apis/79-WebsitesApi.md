@@ -1,6 +1,6 @@
 # Websites API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**websitesSnapshot**](#websitessnapshot) | **GET** /websites
 
 
-<a id="websitesCreateNewWebsite"></a>
 ## **websitesCreateNewWebsite** {#websitescreatenewwebsite}
 > Website websitesCreateNewWebsite(transferables, seededWebsite)
 
@@ -21,8 +20,8 @@ This will create a website and attach it to a specific asset.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -43,8 +42,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededWebsite** | [**SeededWebsite**](../models/SeededWebsite)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededWebsite** | [**SeededWebsite**](../models/SeededWebsite)|  | [optional]
 
 ### Return type
 
@@ -59,7 +58,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="websitesDeleteSpecificWebsite"></a>
 ## **websitesDeleteSpecificWebsite** {#websitesdeletespecificwebsite}
 > websitesDeleteSpecificWebsite(website)
 
@@ -70,8 +68,8 @@ This will delete a specific website!
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -90,7 +88,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
+ **website** | **kotlin.String**| website id |
 
 ### Return type
 
@@ -105,7 +103,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websitesExists"></a>
 ## **websitesExists** {#websitesexists}
 > ExistingMetadata websitesExists(existentMetadata)
 
@@ -116,8 +113,8 @@ This will check all of the websites in our database to see if this specific prov
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
@@ -137,7 +134,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
+ **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional]
 
 ### Return type
 
@@ -152,7 +149,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="websitesSnapshot"></a>
 ## **websitesSnapshot** {#websitessnapshot}
 > Websites websitesSnapshot(transferables)
 
@@ -163,8 +159,8 @@ This will get a snapshot of all your websites.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -184,7 +180,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

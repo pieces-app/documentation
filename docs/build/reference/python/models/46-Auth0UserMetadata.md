@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **vanityname** | **str** | this is the vanityname of the user.(set from their custom CNAME dns record.) ie mark.pieces.cloud where \&quot;mark\&quot; is the vanityname. | [optional] 
 **allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata) |  | [optional] 
 **open_ai** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] 
-**beta** | [**TimestampRange**](TimestampRange) |  | [optional] 
+**beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
 
 ## Example
 

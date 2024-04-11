@@ -1,13 +1,12 @@
 # UltraSuite API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**assetsCreateUltraSuiteAsset**](#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
 
 
-<a id="assetsCreateUltraSuiteAsset"></a>
 ## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}
 > Asset assetsCreateUltraSuiteAsset(seededUltraSuiteAsset)
 
@@ -18,8 +17,8 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UltraSuiteApi()
 val seededUltraSuiteAsset : SeededUltraSuiteAsset =  // SeededUltraSuiteAsset | 
@@ -39,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededUltraSuiteAsset** | [**SeededUltraSuiteAsset**](../models/SeededUltraSuiteAsset)|  | [optional] 
+ **seededUltraSuiteAsset** | [**SeededUltraSuiteAsset**](../models/SeededUltraSuiteAsset)|  | [optional]
 
 ### Return type
 

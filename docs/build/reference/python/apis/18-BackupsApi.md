@@ -77,6 +77,8 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
 
 
@@ -147,6 +149,8 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
 
 
@@ -216,6 +220,8 @@ No authorization required
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
 
 
@@ -281,6 +287,8 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
 
 

@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**applicationUpdate**](ApplicationApi#applicationupdate) | **POST** /application/update | /application/update [GET]
+Method | HTTP request
+------------- | -------------
+[**applicationUpdate**](ApplicationApi#applicationupdate) | **POST** /application/update
 
 
 ## **applicationUpdate** {#applicationupdate}

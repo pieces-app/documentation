@@ -1,6 +1,6 @@
 # Annotations API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**annotationsSnapshot**](#annotationssnapshot) | **GET** /annotations
 
 
-<a id="annotationsCreateNewAnnotation"></a>
 ## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}
 > Annotation annotationsCreateNewAnnotation(seededAnnotation)
 
@@ -20,8 +19,8 @@ This will create an annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val seededAnnotation : SeededAnnotation =  // SeededAnnotation | 
@@ -41,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededAnnotation** | [**SeededAnnotation**](../models/SeededAnnotation)|  | [optional] 
+ **seededAnnotation** | [**SeededAnnotation**](../models/SeededAnnotation)|  | [optional]
 
 ### Return type
 
@@ -56,7 +55,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="annotationsDeleteSpecificAnnotation"></a>
 ## **annotationsDeleteSpecificAnnotation** {#annotationsdeletespecificannotation}
 > annotationsDeleteSpecificAnnotation(`annotation`)
 
@@ -67,8 +65,8 @@ this will delete a specific annotation
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
+ **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
 ### Return type
 
@@ -102,7 +100,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="annotationsSnapshot"></a>
 ## **annotationsSnapshot** {#annotationssnapshot}
 > Annotations annotationsSnapshot(annotationTypeFilter)
 
@@ -113,8 +110,8 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val annotationTypeFilter : kotlin.String = annotationTypeFilter_example // kotlin.String | This is an AnnotationTypeEnum as a optional filter.
@@ -134,7 +131,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **annotationTypeFilter** | **kotlin.String**| This is an AnnotationTypeEnum as a optional filter. | [optional] 
+ **annotationTypeFilter** | **kotlin.String**| This is an AnnotationTypeEnum as a optional filter. | [optional] [enum: DESCRIPTION, COMMENT, COMMENTATION, DOCUMENTATION, SUMMARIZATION, SUMMARY, EXPLANATION, GIT_COMMIT]
 
 ### Return type
 

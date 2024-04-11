@@ -1,6 +1,6 @@
 # AnchorPoint API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**anchorPointUpdate**](#anchorpointupdate) | **POST** /anchor_point/update
 
 
-<a id="anchorPointScoresIncrement"></a>
 ## **anchorPointScoresIncrement** {#anchorpointscoresincrement}
 > anchorPointScoresIncrement(anchorPoint, seededScoreIncrement)
 
@@ -20,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -41,8 +40,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="anchorPointSpecificAnchorPointSnapshot"></a>
 ## **anchorPointSpecificAnchorPointSnapshot** {#anchorpointspecificanchorpointsnapshot}
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
 
@@ -68,8 +66,8 @@ This will get a snapshot of a single anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -90,8 +88,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -106,7 +104,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorPointUpdate"></a>
 ## **anchorPointUpdate** {#anchorpointupdate}
 > AnchorPoint anchorPointUpdate(transferables, anchorPoint)
 
@@ -117,8 +114,8 @@ This will update a specific anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -139,8 +136,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **anchorPoint** | [**AnchorPoint**](../models/AnchorPoint)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **anchorPoint** | [**AnchorPoint**](../models/AnchorPoint)|  | [optional]
 
 ### Return type
 

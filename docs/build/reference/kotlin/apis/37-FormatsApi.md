@@ -1,6 +1,6 @@
 # Formats API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request
 [**formatsSpecificFormatSnapshot**](#formatsspecificformatsnapshot) | **GET** /formats/\{format\}
 
 
-<a id="formatsSnapshot"></a>
 ## **formatsSnapshot** {#formatssnapshot}
 > Formats formatsSnapshot(transferables)
 
@@ -19,8 +18,8 @@ Get all of your formats for a given user.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -40,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -55,7 +54,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="formatsSpecificFormatSnapshot"></a>
 ## **formatsSpecificFormatSnapshot** {#formatsspecificformatsnapshot}
 > Format formatsSpecificFormatSnapshot(format, transferable)
 
@@ -66,8 +64,8 @@ Request a specific format when given a id (uuid in path params)
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatsApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
@@ -88,8 +86,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **java.util.UUID**| The id (uuid) for a specific format. | 
- **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **format** | **java.util.UUID**| The id (uuid) for a specific format. |
+ **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

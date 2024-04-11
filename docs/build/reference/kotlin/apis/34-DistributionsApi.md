@@ -1,6 +1,6 @@
 # Distributions API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -9,7 +9,6 @@ Method | HTTP request
 [**distributionsSnapshot**](#distributionssnapshot) | **GET** /distributions
 
 
-<a id="distributionsCreateNewDistribution"></a>
 ## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
 > Distribution distributionsCreateNewDistribution(seededDistribution)
 
@@ -20,8 +19,8 @@ This will create a new distribution.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
@@ -41,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional] 
+ **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional]
 
 ### Return type
 
@@ -56,7 +55,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="distributionsDeleteSpecificDistribution"></a>
 ## **distributionsDeleteSpecificDistribution** {#distributionsdeletespecificdistribution}
 > distributionsDeleteSpecificDistribution(distribution)
 
@@ -67,8 +65,8 @@ This will delete a specific distribution.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **distribution** | **kotlin.String**| This is the uuid of a specific distribution. | 
+ **distribution** | **kotlin.String**| This is the uuid of a specific distribution. |
 
 ### Return type
 
@@ -102,7 +100,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="distributionsSnapshot"></a>
 ## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
 
@@ -113,8 +110,8 @@ This will get a specific snapshot of all our distributions.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 try {
@@ -130,7 +127,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

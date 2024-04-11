@@ -1,6 +1,6 @@
 # Conversation API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -24,19 +24,18 @@ Method | HTTP request
 [**conversationUpdate**](#conversationupdate) | **POST** /conversation/update
 
 
-<a id="conversationAssociateAnchor"></a>
 ## **conversationAssociateAnchor** {#conversationassociateanchor}
 > conversationAssociateAnchor(conversation, anchor)
 
 /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
 
-This will update both the anchor and the conversation.  and associate the 2 together
+Updates both the anchor and the conversation, associating them together.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -56,8 +55,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
 ### Return type
 
@@ -72,19 +71,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationAssociateAsset"></a>
 ## **conversationAssociateAsset** {#conversationassociateasset}
 > conversationAssociateAsset(conversation, asset)
 
 /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
 
-This will update both the asset and the conversation.  and associate the 2 together
+Updates both the asset and the conversation, associating the two together.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -104,8 +102,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -120,7 +118,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationAssociateGroundingTemporalRangeWorkstream"></a>
 ## **conversationAssociateGroundingTemporalRangeWorkstream** {#conversationassociategroundingtemporalrangeworkstream}
 > conversationAssociateGroundingTemporalRangeWorkstream(conversation, range)
 
@@ -131,8 +128,8 @@ This will associate a workstream(range) with a conversation. This will do the sa
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -152,8 +149,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
 ### Return type
 
@@ -168,19 +165,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationAssociateWebsite"></a>
 ## **conversationAssociateWebsite** {#conversationassociatewebsite}
 > conversationAssociateWebsite(conversation, website)
 
 /conversation/\{conversation\}/websites/associate/\{website\} [POST]
 
-This will update both the website and the conversation.  and associate the 2 together
+Updates both the website and the conversation, and associate them together.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -200,8 +196,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **website** | **kotlin.String**| website id | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **website** | **kotlin.String**| website id |
 
 ### Return type
 
@@ -216,7 +212,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationAssociateWorkstreamSummary"></a>
 ## **conversationAssociateWorkstreamSummary** {#conversationassociateworkstreamsummary}
 > conversationAssociateWorkstreamSummary(conversation, workstreamSummary)
 
@@ -227,8 +222,8 @@ This will associate a conversation with a workstream summary. This will do the s
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -248,8 +243,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -264,19 +259,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationDisassociateAnchor"></a>
 ## **conversationDisassociateAnchor** {#conversationdisassociateanchor}
 > conversationDisassociateAnchor(conversation, anchor)
 
 /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
 
-This will update both the anchor and the conversation.  and delete(disassociate) the 2 together
+Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -296,8 +290,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
 ### Return type
 
@@ -312,19 +306,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationDisassociateAsset"></a>
 ## **conversationDisassociateAsset** {#conversationdisassociateasset}
 > conversationDisassociateAsset(conversation, asset)
 
 /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
 
-This will update both the asset and the conversation.  and delete(disassociate) the 2.
+Updates both the asset and the conversation, effectively disassociating them.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -344,8 +337,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -360,7 +353,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationDisassociateGroundingTemporalRangeWorkstream"></a>
 ## **conversationDisassociateGroundingTemporalRangeWorkstream** {#conversationdisassociategroundingtemporalrangeworkstream}
 > conversationDisassociateGroundingTemporalRangeWorkstream(conversation, range)
 
@@ -371,8 +363,8 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -392,8 +384,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
 ### Return type
 
@@ -408,19 +400,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationDisassociateWebsite"></a>
 ## **conversationDisassociateWebsite** {#conversationdisassociatewebsite}
 > conversationDisassociateWebsite(conversation, website)
 
 /website/\{website\}/websites/disassociate/\{website\} [POST]
 
-This will enable us to dissassociate a conversation from a website.
+Allows us to disassociate a conversation from a specific website
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -440,8 +431,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **website** | **kotlin.String**| website id | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **website** | **kotlin.String**| website id |
 
 ### Return type
 
@@ -456,7 +447,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationDisassociateWorkstreamSummary"></a>
 ## **conversationDisassociateWorkstreamSummary** {#conversationdisassociateworkstreamsummary}
 > conversationDisassociateWorkstreamSummary(conversation, workstreamSummary)
 
@@ -467,8 +457,8 @@ This will enable us to disassociate an conversation from a workstream summary. T
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -488,8 +478,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -504,19 +494,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationGetSpecificConversation"></a>
 ## **conversationGetSpecificConversation** {#conversationgetspecificconversation}
 > Conversation conversationGetSpecificConversation(conversation, transferables)
 
 /conversation/\{conversation\} [GET]
 
-This will get a specific conversation.
+Retrieves a specific conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -537,8 +526,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -553,19 +542,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationGroundingMessagesAssociateMessage"></a>
 ## **conversationGroundingMessagesAssociateMessage** {#conversationgroundingmessagesassociatemessage}
 > conversationGroundingMessagesAssociateMessage(conversation, message)
 
 /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
 
-This will save the grounding context for a conversation. This will enable us to associate a message to the conversation.grounding object.
+Stores the grounding context for a conversation. It allows to associate a message with the conversation&#39;s grounding object, facilitating contextual understanding and management of the conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -585,8 +573,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **message** | **kotlin.String**| This is the uuid of a message. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **message** | **kotlin.String**| This is the uuid of a message. |
 
 ### Return type
 
@@ -601,19 +589,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationGroundingMessagesDisassociateMessage"></a>
 ## **conversationGroundingMessagesDisassociateMessage** {#conversationgroundingmessagesdisassociatemessage}
 > conversationGroundingMessagesDisassociateMessage(conversation, message)
 
 /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
 
-This will remove specific grounding context for a conversation. This will enable us to dissassociate a message from the conversation.grounding object.
+Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation&#39;s grounding object.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -633,8 +620,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **message** | **kotlin.String**| This is the uuid of a message. | 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **message** | **kotlin.String**| This is the uuid of a message. |
 
 ### Return type
 
@@ -649,19 +636,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationScoresIncrement"></a>
 ## **conversationScoresIncrement** {#conversationscoresincrement}
 > conversationScoresIncrement(conversation, seededScoreIncrement)
 
-&#39;/conversation/\{conversation\}/scores/increment&#39; [POST]
+/conversation/\{conversation\}/scores/increment [POST]
 
-This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
+Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -681,8 +667,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -697,19 +683,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="conversationSpecificConversationMessages"></a>
 ## **conversationSpecificConversationMessages** {#conversationspecificconversationmessages}
 > ConversationMessages conversationSpecificConversationMessages(conversation, transferables)
 
 /conversation/\{conversation\}/messages [GET]
 
-This will get a specific conversations messages
+Retrieves messages specific to a particular conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -730,8 +715,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -746,19 +731,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationSpecificConversationRename"></a>
 ## **conversationSpecificConversationRename** {#conversationspecificconversationrename}
 > Conversation conversationSpecificConversationRename(conversation, transferables)
 
 /conversation/\{conversation\}/rename [POST]
 
-This will take a specific converssation and it will rename using ML.
+Renames a specific conversation using machine learning (ML) techniques.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -779,8 +763,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -795,19 +779,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationSummarize"></a>
 ## **conversationSummarize** {#conversationsummarize}
 > ConversationSummarizeOutput conversationSummarize(conversation, conversationSummarizeInput)
 
 /conversation/\{conversation\}/summarize [POST]
 
-This will take a current conversation and create a summary of the conversation and save it as an annotation on the conversation.  will return the annotation reference used as the summary.
+Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -828,8 +811,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
- **conversationSummarizeInput** | [**ConversationSummarizeInput**](../models/ConversationSummarizeInput)|  | [optional] 
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
+ **conversationSummarizeInput** | [**ConversationSummarizeInput**](../models/ConversationSummarizeInput)|  | [optional]
 
 ### Return type
 
@@ -844,19 +827,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="conversationUpdate"></a>
 ## **conversationUpdate** {#conversationupdate}
 > Conversation conversationUpdate(transferables, conversation)
 
 /conversation/update [POST]
 
-This will update a specific conversation.
+Updates a specific conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -877,8 +859,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **conversation** | [**Conversation**](../models/Conversation)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **conversation** | [**Conversation**](../models/Conversation)|  | [optional]
 
 ### Return type
 

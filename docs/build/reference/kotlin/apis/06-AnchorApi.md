@@ -1,6 +1,6 @@
 # Anchor API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -12,7 +12,6 @@ Method | HTTP request
 [**anchorUpdate**](#anchorupdate) | **POST** /anchor/update
 
 
-<a id="anchorAssociateWorkstreamSummary"></a>
 ## **anchorAssociateWorkstreamSummary** {#anchorassociateworkstreamsummary}
 > anchorAssociateWorkstreamSummary(anchor, workstreamSummary)
 
@@ -23,8 +22,8 @@ This will associate a anchor with a workstream summary. This will do the same th
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -44,8 +43,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -60,7 +59,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorDisassociateWorkstreamSummary"></a>
 ## **anchorDisassociateWorkstreamSummary** {#anchordisassociateworkstreamsummary}
 > anchorDisassociateWorkstreamSummary(anchor, workstreamSummary)
 
@@ -71,8 +69,8 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -92,8 +90,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -108,7 +106,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorRename"></a>
 ## **anchorRename** {#anchorrename}
 > Anchor anchorRename(anchor, transferables)
 
@@ -119,8 +116,8 @@ This will rename a specific anchor.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -141,8 +138,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -157,7 +154,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorScoresIncrement"></a>
 ## **anchorScoresIncrement** {#anchorscoresincrement}
 > anchorScoresIncrement(anchor, seededScoreIncrement)
 
@@ -168,8 +164,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -189,8 +185,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -205,7 +201,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="anchorSpecificAnchorSnapshot"></a>
 ## **anchorSpecificAnchorSnapshot** {#anchorspecificanchorsnapshot}
 > Anchor anchorSpecificAnchorSnapshot(anchor, transferables)
 
@@ -216,8 +211,8 @@ This will get a snapshot of a single anchor.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -238,8 +233,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -254,7 +249,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorUpdate"></a>
 ## **anchorUpdate** {#anchorupdate}
 > Anchor anchorUpdate(transferables, anchor)
 
@@ -265,8 +259,8 @@ This will update a specific anchor.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -287,8 +281,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **anchor** | [**Anchor**](../models/Anchor)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **anchor** | [**Anchor**](../models/Anchor)|  | [optional]
 
 ### Return type
 

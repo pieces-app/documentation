@@ -1,6 +1,6 @@
 # Website API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -17,7 +17,6 @@ Method | HTTP request
 [**websitesSpecificWebsiteSnapshot**](#websitesspecificwebsitesnapshot) | **GET** /website/\{website\}
 
 
-<a id="websiteAssociateAsset"></a>
 ## **websiteAssociateAsset** {#websiteassociateasset}
 > websiteAssociateAsset(asset, website)
 
@@ -28,8 +27,8 @@ This will associate a website with a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -49,8 +48,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
- **website** | **kotlin.String**| website id | 
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
+ **website** | **kotlin.String**| website id |
 
 ### Return type
 
@@ -65,7 +64,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteAssociateConversation"></a>
 ## **websiteAssociateConversation** {#websiteassociateconversation}
 > websiteAssociateConversation(website, conversation)
 
@@ -76,8 +74,8 @@ This will associate a website with a conversation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -97,8 +95,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
+ **website** | **kotlin.String**| website id |
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
 ### Return type
 
@@ -113,7 +111,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteAssociatePerson"></a>
 ## **websiteAssociatePerson** {#websiteassociateperson}
 > websiteAssociatePerson(website, person)
 
@@ -124,8 +121,8 @@ This will associate a website with a person.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -145,8 +142,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
+ **website** | **kotlin.String**| website id |
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
 
 ### Return type
 
@@ -161,7 +158,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteAssociateWorkstreamSummary"></a>
 ## **websiteAssociateWorkstreamSummary** {#websiteassociateworkstreamsummary}
 > websiteAssociateWorkstreamSummary(website, workstreamSummary)
 
@@ -172,8 +168,8 @@ This will associate a website with a workstream summary. This will do the same t
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -193,8 +189,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **website** | **kotlin.String**| website id |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -209,7 +205,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteDisassociateAsset"></a>
 ## **websiteDisassociateAsset** {#websitedisassociateasset}
 > websiteDisassociateAsset(website, asset)
 
@@ -220,8 +215,8 @@ This will enable us to dissassociate a website from a asset.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -241,8 +236,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **website** | **kotlin.String**| website id |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -257,7 +252,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteDisassociateConversation"></a>
 ## **websiteDisassociateConversation** {#websitedisassociateconversation}
 > websiteDisassociateConversation(website, conversation)
 
@@ -268,8 +262,8 @@ This will enable us to dissassociate a website from a conversation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -289,8 +283,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **conversation** | **kotlin.String**| This is the uuid of a conversation. | 
+ **website** | **kotlin.String**| website id |
+ **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
 ### Return type
 
@@ -305,7 +299,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteDisassociatePerson"></a>
 ## **websiteDisassociatePerson** {#websitedisassociateperson}
 > websiteDisassociatePerson(website, person)
 
@@ -316,8 +309,8 @@ This will enable us to dissassociate a website from a person.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -337,8 +330,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **person** | **kotlin.String**| This is a uuid that represents a person. | 
+ **website** | **kotlin.String**| website id |
+ **person** | **kotlin.String**| This is a uuid that represents a person. |
 
 ### Return type
 
@@ -353,7 +346,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteDisassociateWorkstreamSummary"></a>
 ## **websiteDisassociateWorkstreamSummary** {#websitedisassociateworkstreamsummary}
 > websiteDisassociateWorkstreamSummary(website, workstreamSummary)
 
@@ -364,8 +356,8 @@ This will enable us to disassociate a website from a workstream summary. This wi
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -385,8 +377,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **website** | **kotlin.String**| website id |
+ **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
 ### Return type
 
@@ -401,7 +393,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="websiteScoresIncrement"></a>
 ## **websiteScoresIncrement** {#websitescoresincrement}
 > websiteScoresIncrement(website, seededScoreIncrement)
 
@@ -412,8 +403,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -433,8 +424,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **website** | **kotlin.String**| website id |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -449,7 +440,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="websiteUpdate"></a>
 ## **websiteUpdate** {#websiteupdate}
 > Website websiteUpdate(transferables, website)
 
@@ -460,8 +450,8 @@ This will update a specific website.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -482,8 +472,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **website** | [**Website**](../models/Website)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **website** | [**Website**](../models/Website)|  | [optional]
 
 ### Return type
 
@@ -498,7 +488,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="websitesSpecificWebsiteSnapshot"></a>
 ## **websitesSpecificWebsiteSnapshot** {#websitesspecificwebsitesnapshot}
 > Website websitesSpecificWebsiteSnapshot(website, transferables)
 
@@ -509,8 +498,8 @@ This will get a snapshot of a single website.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -531,8 +520,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **kotlin.String**| website id | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **website** | **kotlin.String**| website id |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 

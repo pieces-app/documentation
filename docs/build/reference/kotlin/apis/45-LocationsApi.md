@@ -182,10 +182,10 @@ try {
 
 ### Parameters
 
-Name | Type                | Description  | Notes
-------------- |---------------------| ------------- | -------------
- **location** | **kotlin.String**   | This is the specific uuid of a location. |
- **asset** | **java.util.UUID**  | The id (uuid) of the asset that you are trying to access. |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **location** | **kotlin.String**| This is the specific uuid of a location. |
+ **asset** | [**java.util.UUID**](../models/)| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # Metrics API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request
 [**metricsFormatsOrdered**](#metricsformatsordered) | **GET** /metrics/formats/ordered
 
 
-<a id="getMetricsFormats"></a>
 ## **getMetricsFormats** {#getmetricsformats}
 > FormatsMetrics getMetricsFormats()
 
@@ -19,8 +18,8 @@ This is going to get a snapshot of our FormatsMetrics
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {
@@ -36,7 +35,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -51,7 +50,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="metricsFormatsOrdered"></a>
 ## **metricsFormatsOrdered** {#metricsformatsordered}
 > OrderedMetrics metricsFormatsOrdered()
 
@@ -62,8 +60,8 @@ This will return a list of code formats in desc order from most to least formats
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {
@@ -79,7 +77,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

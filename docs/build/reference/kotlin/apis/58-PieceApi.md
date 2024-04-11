@@ -1,13 +1,12 @@
 # Piece API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
 [**htmlShare**](#htmlshare) | **GET** /
 
 
-<a id="htmlShare"></a>
 ## **htmlShare** {#htmlshare}
 > kotlin.String htmlShare(p)
 
@@ -18,8 +17,8 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PieceApi()
 val p : kotlin.String = p_example // kotlin.String | this is the a query param, that a shortened version of the share.
@@ -39,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **p** | **kotlin.String**| this is the a query param, that a shortened version of the share. | 
+ **p** | **kotlin.String**| this is the a query param, that a shortened version of the share. |
 
 ### Return type
 

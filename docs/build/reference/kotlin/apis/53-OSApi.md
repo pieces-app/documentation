@@ -1,6 +1,6 @@
 # OS API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -16,7 +16,6 @@ Method | HTTP request
 [**signOutOfOS**](#signoutofos) | **POST** /os/sign_out
 
 
-<a id="linkProvider"></a>
 ## **linkProvider** {#linkprovider}
 > ReturnedUserProfile linkProvider(seededExternalProvider)
 
@@ -27,8 +26,8 @@ This will link an external provider to your current auth0 account.  Will throw e
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val seededExternalProvider : SeededExternalProvider =  // SeededExternalProvider | 
@@ -48,7 +47,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional] 
+ **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional]
 
 ### Return type
 
@@ -63,7 +62,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="osDeviceInformation"></a>
 ## **osDeviceInformation** {#osdeviceinformation}
 > OSDeviceInformationReturnable osDeviceInformation()
 
@@ -74,8 +72,8 @@ This will get information related to your specific device.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -91,7 +89,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -106,7 +104,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="osPermissions"></a>
 ## **osPermissions** {#ospermissions}
 > OSPermissions osPermissions()
 
@@ -117,8 +114,8 @@ This will only work on Macos and Windows.  And will get the permissions of the u
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -134,7 +131,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -149,7 +146,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="osPermissionsRequest"></a>
 ## **osPermissionsRequest** {#ospermissionsrequest}
 > OSPermissions osPermissionsRequest(osPermissions)
 
@@ -160,8 +156,8 @@ This will only work on Macos and Windows.  This will request permissions for the
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val osPermissions : OSPermissions =  // OSPermissions | 
@@ -181,7 +177,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **osPermissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
+ **osPermissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional]
 
 ### Return type
 
@@ -196,7 +192,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="osRestart"></a>
 ## **osRestart** {#osrestart}
 > osRestart()
 
@@ -207,8 +202,8 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -223,7 +218,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -238,7 +233,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="osUpdateCheck"></a>
 ## **osUpdateCheck** {#osupdatecheck}
 > CheckedOSUpdate osUpdateCheck(uncheckedOSUpdate)
 
@@ -249,8 +243,8 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val uncheckedOSUpdate : UncheckedOSUpdate =  // UncheckedOSUpdate | 
@@ -270,7 +264,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional] 
+ **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional]
 
 ### Return type
 
@@ -285,7 +279,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="pickFiles"></a>
 ## **pickFiles** {#pickfiles}
 > kotlin.collections.List&lt;kotlin.String&gt; pickFiles(filePickerInput)
 
@@ -296,8 +289,8 @@ This will trigger a filer picker and return the string paths of the files that w
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val filePickerInput : FilePickerInput =  // FilePickerInput | 
@@ -317,7 +310,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional] 
+ **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional]
 
 ### Return type
 
@@ -332,7 +325,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="pickFolders"></a>
 ## **pickFolders** {#pickfolders}
 > kotlin.collections.List&lt;kotlin.String&gt; pickFolders()
 
@@ -343,8 +335,8 @@ This will trigger a folder picker and return the string paths of the folders tha
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -360,7 +352,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -375,7 +367,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="signIntoOS"></a>
 ## **signIntoOS** {#signintoos}
 > UserProfile signIntoOS()
 
@@ -386,8 +377,8 @@ A trigger that launches a Sign into OS Server
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -403,7 +394,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -418,7 +409,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="signOutOfOS"></a>
 ## **signOutOfOS** {#signoutofos}
 > Users signOutOfOS()
 
@@ -429,8 +419,8 @@ A trigger that signs out a user from the OS
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -446,7 +436,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

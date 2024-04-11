@@ -1,6 +1,6 @@
 # Allocation API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -8,7 +8,6 @@ Method | HTTP request
 [**allocationUpdate**](#allocationupdate) | **POST** /allocation/update
 
 
-<a id="allocationSnapshot"></a>
 ## **allocationSnapshot** {#allocationsnapshot}
 > AllocationCloud allocationSnapshot(allocation)
 
@@ -19,8 +18,8 @@ This will get a snapshot of a specific allocation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationApi()
 val allocation : kotlin.String = allocation_example // kotlin.String | 
@@ -40,7 +39,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocation** | **kotlin.String**|  | 
+ **allocation** | **kotlin.String**|  |
 
 ### Return type
 
@@ -55,7 +54,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="allocationUpdate"></a>
 ## **allocationUpdate** {#allocationupdate}
 > AllocationCloud allocationUpdate(allocationCloud)
 
@@ -66,8 +64,8 @@ This will update a specific allocation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -87,7 +85,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
 ### Return type
 

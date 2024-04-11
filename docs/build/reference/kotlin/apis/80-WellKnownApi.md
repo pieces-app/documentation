@@ -1,6 +1,6 @@
 # WellKnown API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -8,19 +8,18 @@ Method | HTTP request
 [**getWellKnownVersion**](#getwellknownversion) | **GET** /.well-known/version
 
 
-<a id="getWellKnownHealth"></a>
 ## **getWellKnownHealth** {#getwellknownhealth}
 > kotlin.String getWellKnownHealth()
 
 /.well-known/health [GET]
 
-This will get the health of the server.
+Retrieves the health status of the server.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {
@@ -36,7 +35,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -51,19 +50,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="getWellKnownVersion"></a>
 ## **getWellKnownVersion** {#getwellknownversion}
 > kotlin.String getWellKnownVersion()
 
 /.well-known/version [Get]
 
-This will get the version of the server. This will return a string of current version.
+Retrieves the version of the server. It returns a string representing the current version.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {
@@ -79,7 +77,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 

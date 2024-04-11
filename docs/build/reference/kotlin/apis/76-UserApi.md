@@ -1,6 +1,6 @@
 # User API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -15,7 +15,6 @@ Method | HTTP request
 [**userUpdateVanity**](#userupdatevanity) | **POST** /user/update/vanity
 
 
-<a id="clearUser"></a>
 ## **clearUser** {#clearuser}
 > clearUser()
 
@@ -26,8 +25,8 @@ An endpoint to clear the current user.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -42,7 +41,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -57,7 +56,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a id="refreshUser"></a>
 ## **refreshUser** {#refreshuser}
 > UserProfile refreshUser()
 
@@ -68,8 +66,8 @@ This will refresh a user.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -85,7 +83,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -100,7 +98,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="selectUser"></a>
 ## **selectUser** {#selectuser}
 > UserProfile selectUser(auth0User)
 
@@ -111,8 +108,8 @@ This will select the current user.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val auth0User : Auth0User =  // Auth0User | 
@@ -132,7 +129,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional] 
+ **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional]
 
 ### Return type
 
@@ -140,32 +137,25 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
-Configure auth0:
-    ApiClient.accessToken = ""
+[auth0](#auth0), [auth0](#auth0), [auth0](#auth0)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="streamUser"></a>
 ## **streamUser** {#streamuser}
 > UserProfile streamUser()
 
-/user/stream [GET]
+/user/stream [WS]
 
-This will stream in the current user, not quiet sure yet how we want to do this.
+Provides a WebSocket connection that streams user data.
 
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -181,7 +171,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -196,7 +186,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="updateUser"></a>
 ## **updateUser** {#updateuser}
 > UserProfile updateUser(userProfile)
 
@@ -207,8 +196,8 @@ This will update a specific user in the database.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -228,7 +217,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
+ **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
 
 ### Return type
 
@@ -243,7 +232,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="userBetaStatus"></a>
 ## **userBetaStatus** {#userbetastatus}
 > UserBetaStatus userBetaStatus(userBetaStatus)
 
@@ -254,8 +242,8 @@ This will be an endpoint to give access or remove access immediately from a give
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userBetaStatus : UserBetaStatus =  // UserBetaStatus | 
@@ -275,7 +263,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
+ **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional]
 
 ### Return type
 
@@ -290,7 +278,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="userProviders"></a>
 ## **userProviders** {#userproviders}
 > ReturnedUserProfile userProviders()
 
@@ -301,8 +288,8 @@ This will retrieve all the users Providers that are connected to this account.  
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -318,7 +305,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -333,7 +320,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="userSnapshot"></a>
 ## **userSnapshot** {#usersnapshot}
 > ReturnedUserProfile userSnapshot()
 
@@ -344,8 +330,8 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -361,7 +347,7 @@ try {
 ```
 
 ### Parameters
-This endpoint does not need any parameters.
+This endpoint does not need any parameter.
 
 ### Return type
 
@@ -376,7 +362,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="userUpdateVanity"></a>
 ## **userUpdateVanity** {#userupdatevanity}
 > UserProfile userUpdateVanity(userProfile)
 
@@ -387,8 +372,8 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \&q
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | This will take an update userProfile, with the updated vanity name!
@@ -408,7 +393,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional] 
+ **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional]
 
 ### Return type
 

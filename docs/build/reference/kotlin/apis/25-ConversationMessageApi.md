@@ -1,6 +1,6 @@
 # ConversationMessage API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -12,7 +12,6 @@ Method | HTTP request
 [**messageUpdateValue**](#messageupdatevalue) | **POST** /message/update/value
 
 
-<a id="messageAssociateAnnotation"></a>
 ## **messageAssociateAnnotation** {#messageassociateannotation}
 > messageAssociateAnnotation(`annotation`, message)
 
@@ -23,8 +22,8 @@ This will associate a message with an annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -44,8 +43,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
- **message** | **kotlin.String**| This is the uuid of a message. | 
+ **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
+ **message** | **kotlin.String**| This is the uuid of a message. |
 
 ### Return type
 
@@ -60,7 +59,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageDisassociateAnnotation"></a>
 ## **messageDisassociateAnnotation** {#messagedisassociateannotation}
 > messageDisassociateAnnotation(`annotation`, message)
 
@@ -71,8 +69,8 @@ This will enable us to dissassociate a message from an annotation.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -92,8 +90,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **`annotation`** | **kotlin.String**| This is a specific annotation uuid. | 
- **message** | **kotlin.String**| This is the uuid of a message. | 
+ **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
+ **message** | **kotlin.String**| This is the uuid of a message. |
 
 ### Return type
 
@@ -108,7 +106,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageScoresIncrement"></a>
 ## **messageScoresIncrement** {#messagescoresincrement}
 > messageScoresIncrement(message, seededScoreIncrement)
 
@@ -119,8 +116,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
@@ -140,8 +137,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **message** | **kotlin.String**| This is the uuid of a message. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **message** | **kotlin.String**| This is the uuid of a message. |
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
 ### Return type
 
@@ -156,7 +153,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="messageSpecificMessageSnapshot"></a>
 ## **messageSpecificMessageSnapshot** {#messagespecificmessagesnapshot}
 > ConversationMessage messageSpecificMessageSnapshot(message, transferables)
 
@@ -167,8 +163,8 @@ This will get a specific snapshot of a message
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
@@ -189,8 +185,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **message** | **kotlin.String**| This is the uuid of a message. | 
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **message** | **kotlin.String**| This is the uuid of a message. |
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
@@ -205,7 +201,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageSpecificMessageUpdate"></a>
 ## **messageSpecificMessageUpdate** {#messagespecificmessageupdate}
 > ConversationMessage messageSpecificMessageUpdate(transferables, conversationMessage)
 
@@ -216,8 +211,8 @@ This will update a conversation message.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -238,8 +233,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional]
 
 ### Return type
 
@@ -254,7 +249,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="messageUpdateValue"></a>
 ## **messageUpdateValue** {#messageupdatevalue}
 > ConversationMessage messageUpdateValue(transferables, conversationMessage)
 
@@ -265,8 +259,8 @@ This will update the value of a conversation message.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -287,8 +281,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional]
 
 ### Return type
 

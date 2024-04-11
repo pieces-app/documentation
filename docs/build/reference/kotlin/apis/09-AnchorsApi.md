@@ -1,6 +1,6 @@
 # Anchors API
 
-All URIs are relative to *http://localhost:3000*
+All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request
 ------------- | -------------
@@ -10,7 +10,6 @@ Method | HTTP request
 [**anchorsSnapshot**](#anchorssnapshot) | **GET** /anchors
 
 
-<a id="anchorDisassociateAsset"></a>
 ## **anchorDisassociateAsset** {#anchordisassociateasset}
 > anchorDisassociateAsset(anchor, asset)
 
@@ -21,8 +20,8 @@ This will update both the asset and the anchor reference, that will remove a anc
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorsApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -42,8 +41,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
- **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. | 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
+ **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
 ### Return type
 
@@ -58,7 +57,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorsCreateNewAnchor"></a>
 ## **anchorsCreateNewAnchor** {#anchorscreatenewanchor}
 > Anchor anchorsCreateNewAnchor(transferables, seededAnchor)
 
@@ -69,8 +67,8 @@ This will create a anchor and attach it to a specific asset(s) This will also en
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -91,8 +89,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededAnchor** | [**SeededAnchor**](../models/SeededAnchor)|  | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
+ **seededAnchor** | [**SeededAnchor**](../models/SeededAnchor)|  | [optional]
 
 ### Return type
 
@@ -107,7 +105,6 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="anchorsDeleteSpecificAnchor"></a>
 ## **anchorsDeleteSpecificAnchor** {#anchorsdeletespecificanchor}
 > anchorsDeleteSpecificAnchor(anchor)
 
@@ -118,8 +115,8 @@ This will delete a specific anchor!
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorsApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -138,7 +135,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **kotlin.String**| This is the specific uuid of an anchor. | 
+ **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
 ### Return type
 
@@ -153,7 +150,6 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorsSnapshot"></a>
 ## **anchorsSnapshot** {#anchorssnapshot}
 > Anchors anchorsSnapshot(transferables)
 
@@ -164,8 +160,8 @@ This will get a snapshot of all your anchors.
 ### Example
 ```kotlin
 // Import classes:
-// import app.pieces.pieces-os-client.infrastructure.*
-// import app.pieces.pieces-os-client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -185,7 +181,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
 ### Return type
 
