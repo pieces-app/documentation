@@ -137,7 +137,13 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth0](#auth0), [auth0](#auth0), [auth0](#auth0)
+
+Configure auth0:
+    ApiClient.accessToken = ""
+Configure auth0:
+    ApiClient.accessToken = ""
+Configure auth0:
+    ApiClient.accessToken = ""
 
 ### HTTP request headers
 
