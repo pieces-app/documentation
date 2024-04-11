@@ -1,0 +1,200 @@
+---
+title: Pieces for Developers Web Extension
+description: Learn about the Pieces Web Extension, how it functions, and what all you can do with this powerful extension.
+---
+
+import { pieces_app } from "/src/lib/const";
+import { MiniSpacer } from "/src/components/Spacers";
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import CTAButton from "/src/components/CTAButton";
+import GridFlexRow from "/src/components/GridFlexRow";
+import Image from "/src/components/Image";
+import Video from "../../src/components/Video";
+
+Save, share, and ask questions about code you find online without leaving your current tab by using our Web Extensions.
+
+![Pieces Global Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/WEB/MACOS/GLOBAL_COPILOT/16X9/PIECES_FOR_DEVELOPERS-WEB-GLOBAL_COPILOT-MACOS-16X9-11_27_2023.GIF)
+
+[//]: # (<Video)
+
+[//]: # (  type={'local'})
+
+[//]: # (  src={{)
+
+[//]: # (    webm: '/assets/web-extension/PIECES_FOR_DEVELOPERS-WEB-GLOBAL_COPILOT-MACOS-16X9-11_27_2023.webm',)
+
+[//]: # (    mp4: '/assets/web-extension/PIECES_FOR_DEVELOPERS-WEB-GLOBAL_COPILOT-MACOS-16X9-11_27_2023.mp4',)
+
+[//]: # (  }})
+
+[//]: # (/>)
+
+## Supported Browsers
+
+<GridFlexRow type={'evenly'}>
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={70} src="/assets/chrome_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={60} src="/assets/brave_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.chrome}>
+    <Image width={70} src="/assets/opera_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.edge}>
+    <Image width={70} src="/assets/edge_logo.png" />
+  </a>
+  <a href={pieces_app.links.extensions.firefox}>
+    <Image width={70} src="/assets/firefox_logo.png" />
+  </a>
+</GridFlexRow>
+
+## Installing the Extension
+
+:::info
+
+In order to use any of our web extensions, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing#what-is-pieces-os">Pieces OS</a> installed on your machine.
+
+:::
+
+<GridFlexRow type={'start'}>
+  <CTAButton
+    href={pieces_app.links.extensions.chrome}
+    label={'Get the Chromium Extension'}
+    icon={'/assets/chromium_logo.svg'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href={pieces_app.links.extensions.edge}
+    label={'Get the Edge Addon'}
+    icon={'/assets/edge_logo.png'}
+    type={'secondary'}
+  />
+  <CTAButton
+    href={pieces_app.links.extensions.firefox}
+    label={'Get the Firefox Addon'}
+    icon={'/assets/firefox_logo.png'}
+    type={'secondary'}
+  />
+</GridFlexRow>
+
+<MiniSpacer />
+
+> Please use the Chromium web extension for Opera and Brave browsers.
+
+Once installed, refresh your browser, and you'll see the Pieces buttons appear below code blocks on the web.
+
+## Saving Snippets
+To save a snippet on the web, click the "Copy and Save" Pieces button below a code block. You can also use Pieces context menu actions to save a particular selection.
+
+- When you save code snippets with Pieces, they're stored locally in the Pieces desktop app.
+- When you save a snippet, Pieces also saves metadata such as the origin url of the snippet, tags, a title, annotations, and more.
+
+To view and reuse your snippets, just open the Pieces desktop app or one of our other integrations and scroll through your snippets.
+
+## Sharing Code
+When you click the "Share" button below a code block, Pieces generates a link that is specifically designed to share useful code with its context. Plus, it's automatically copied to your clipboard once it's generated.
+
+This means that instead of copying code and pasting it into a message, you can create a Pieces shareable link that shares the code and maintains formatting, syntax highlighting, and relevant tags. Your recipient will also get the title, description, related links, and other context about the snippet.
+
+## Pieces Copilot
+By using the [Pieces Copilot](/features/pieces-copilot) in the Pieces Web Extension, you can chat with the copilot about any code you find on the web. You can chat with the Pieces Copilot in the extension popover menu, but we like opening the Pieces Copilot in the side panel.
+
+You can chat with Pieces Copilot about any code block, generate new code, and ask other technical questions, similar to chatting with the copilot in the [Pieces Desktop App](/installation-getting-started/what-am-i-installing).
+
+## Snippet Discovery
+Pieces Web Extension can automatically discover code snippets you come across on the web.
+
+Snippets discovered on a website are shown within the Discovered Snippets tab on the extension's home page. From there, you can scroll through all the discovered snippets on a site and save the most useful ones.
+
+## View Your Saved Snippets
+You can view your saved snippets in the extension. Simply go to the Saved Snippets tab on the extension's home page to see all your saved snippets.
+
+Click on any snippet to open its detailed view, where you can see the full snippet, along with other information captured from the snippet. You can also perform various actions on the snippet, such as generating shareable links, copying the snippet, and more.
+
+### Recently Discovered Snippets
+From the extension's popover menu, you can view your Recently Discovered Snippets. This is a list of the last 100 snippets you've come across on the web, or the last 5 sites you've visited. From here, you can save a snippet without returning to that page. You can adjust the number of sites whose snippets Pieces will remember in the extension settings.
+
+## Disabling the Pieces Buttons
+If you don't want the Pieces buttons to appear on a certain website, you can disable them for that site in the extension settings.
+
+1. Right-click the Pieces icon in the top right corner of your browser and choose “Settings.”
+2. Toggle the "Disable Pieces buttons" option. The page will automatically refresh and the Pieces buttons will disappear.
+
+## Customizing the Pieces Extension
+
+To customize your Pieces Web Extension experience, click on the Pieces icon in the upper right corner of your browser.
+
+Hit the Settings icon in the top right and set your preferences.
+
+![](/assets/theme_for_chrome.png)
+
+You can adjust the following settings for the Pieces Web Extension:
+- Which Pieces Buttons are shown around snippets
+- The placement of the Pieces Buttons
+- Toggle between dark and light Pieces Buttons
+- Decide if you'd like Pieces Buttons to be enabled or disabled on a website by default
+- Manage your website blacklist
+- Adjust the minimum number of characters necessary to recognize a code block
+- Adjust the functionality of the Copy & Save Button
+- Set the number of recent websites for Pieces to display snippets in the History tab of the extension.
+
+## Uninstalling the Pieces Web Extension
+
+<Tabs
+  defaultValue={"chrome-brave-opera"}
+  values={[
+    {label: 'Chrome/Brave/Opera', value: 'chrome-brave-opera'},
+    {label: 'Edge', value: 'edge'},
+    {label: 'Firefox', value: 'firefox'}
+  ]}
+>
+  <TabItem value="chrome-brave-opera">
+    1. Click the Extensions button in the top right corner of your window
+    2. Choose `More Actions` next to the Pieces for Developers Chrome Extension
+    3. Select `Remove from Chrome`
+  </TabItem>
+  <TabItem value="edge">
+    1. Click the Extensions button in the top right corner of your window
+    2. Choose `More Actions` next to the Pieces for Developers Edge Extension
+    3. Select `Remove from Microsoft Edge`
+  </TabItem>
+  <TabItem value="firefox">
+    1. Click the Add-ons button in the top right corner of your window
+    2. Choose `Theme` → `Manage Extensions`
+    3. Click to the right of the extension you want to remove
+    3. Select `Remove`
+  </TabItem>
+</Tabs>
+
+## Troubleshooting the Pieces Buttons
+There are a few reasons why the Pieces buttons may not be displayed or working properly:
+
+1. **Pieces OS isn't running.**
+    - To double-check that Pieces OS is running, make sure that the Pieces logo is present in your toolbar (on macOS) or your task bar (on Windows and Linux). If it isn't there, please launch Pieces OS by double-clicking Pieces OS in your Applications folder.
+    - If you need to download and install Pieces OS, <a target="_blank" href="/installation-getting-started/what-am-i-installing">visit this link</a>.
+
+2. **You disabled the Pieces buttons on that website.**
+    - Double-check that you haven't disabled the Pieces buttons from this site by navigating to the extension settings. If you enable the Pieces buttons, the page will automatically refresh and the buttons should appear.
+
+    ![Pieces Extension Settings](/assets/settings_for_chrome.png)
+
+3. **This website doesn't have detectable code.**
+    - The code on this site might be embedded in an iframe or rendered in a way we haven't encountered before! Please send us the site and we'll work on supporting it.
+
+### Whitelisted Websites
+We maintain a curated list of websites that are verified to work seamlessly with the Pieces buttons. Should you come across a site where the Pieces buttons are not automatically present, you have the option to manually activate them within the extension's settings.
+
+If you discover a website that supports our buttons effectively, please share this information with us via [our feedback form](https://getpieces.typeform.com/web-extension).
+
+:::info
+
+If none of the above fix your issue, please <a target="_blank" href={pieces_app.links.socials.support_email}>email us</a> and we'll get back to you!
+
+:::
+
+##  Support and Community
+
+- [Get Support](/support)
+- [Join our Open Source Program](https://github.com/pieces-app/opensource)

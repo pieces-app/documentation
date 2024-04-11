@@ -35,28 +35,23 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'extensions-plugins/chrome',
-          label: 'Chrome Extension',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/edge',
-          label: 'Edge Addon',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/firefox',
-          label: 'Firefox Addon',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/jetbrains',
-          label: 'Jetbrains Plugin',
+          id: 'extensions-plugins/web-extension',
+          label: 'Web Extension',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/vscode',
           label: 'VS Code Extension',
+        },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/jetbrains',
+          label: 'JetBrains Plugin',
+        },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/obsidian',
+          label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
@@ -67,11 +62,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/obsidian',
-          label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
@@ -220,16 +210,23 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'community',
+          label: 'Community',
         },
         {
           type: 'doc',
           id: 'support',
+          label: 'Support',
         },
         {
           type: 'doc',
           id: 'faq',
-          label: 'FAQ',
+          label: 'FAQs',
         },
+        {
+          type: 'doc',
+          id: 'ama/building-a-more-extensible-development-environment',
+          label: 'Livestream AMA',
+        }
       ]
     }
   ],
