@@ -1,5 +1,8 @@
 name: Lighthouse CI
-on: push
+on:
+  pull_request:
+    branches:
+      - main
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
