@@ -258,3 +258,51 @@ html[data-theme='dark'] .header-github-link:before {
 .menu__link--sublist {
   font-weight: bold;
 }
+
+
+/* Glossary Component Styles */
+.glossary-container {
+  font-family: Arial, sans-serif;
+}
+
+.glossary-header {
+  margin-bottom: 20px;
+}
+
+.category-filters {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--ifm-color-secondary); /* Adjusted to use custom.css variable */
+  transition: background-color 0.3s ease;
+  color: var(--ifm-color-primary); /* Adjusted to use custom.css variable */
+}
+
+.category:hover {
+  background-color: var(--ifm-color-secondary-dark); /* Adjusted to use custom.css variable */
+}
+
+.category.active {
+  font-weight: bold;
+  background-color: var(--ifm-color-secondary-darker); /* Adjusted to use custom.css variable */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .category {
+    margin: 5px;
+    padding: 8px 12px;
+  }
+}
