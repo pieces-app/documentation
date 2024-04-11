@@ -82,6 +82,37 @@ For macOS and Windows, you should use `localhost:1000`.
 
 :::
 
+Create a `config.py` file and add the following code:
+
+```typescript title="main.ts"
+import * as Pieces from '@pieces.app/pieces-os-client'
+import os from 'os';
+
+const platform = os.platform();
+let port = 1000;
+
+if (platform === 'linux') {
+  port = 5323;
+} else {
+  port = 1000;
+}
+
+const configuration = Pieces.Configuration({
+  basePath: `http://localhost:${port}`
+})
+const apiInstance = new Pieces.WellKnownApi(configuration)
+
+apiInstance.getWellKnownVersion().then((data: string) => {
+  console.log('Pieces OS Version: ' + data)
+}).catch((error: unknown) => console.error(error))
+```
+
+Run the TypeScript script to see the output:
+
+```shell
+ts-node main.ts
+```
+
 ## Next Steps
 
 If you've made it this far, that means you've successfully connected to your local Pieces OS server using our TypeScript SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
