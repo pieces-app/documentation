@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
-[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
-[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/\{message\}/scores/increment
-[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/\{message\}
-[**message_specific_message_update**](ConversationMessageApi#message_specific_message_update) | **POST** /message/update
-[**message_update_value**](ConversationMessageApi#message_update_value) | **POST** /message/update/value
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**message_associate_annotation**](ConversationMessageApi#message_associate_annotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**message_disassociate_annotation**](ConversationMessageApi#message_disassociate_annotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**message_scores_increment**](ConversationMessageApi#message_scores_increment) | **POST** /message/\{message\}/scores/increment | '/message/\{message\}/scores/increment' [POST]
+[**message_specific_message_snapshot**](ConversationMessageApi#message_specific_message_snapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
+[**message_specific_message_update**](ConversationMessageApi#message_specific_message_update) | **POST** /message/update | /message/update [GET]
+[**message_update_value**](ConversationMessageApi#message_update_value) | **POST** /message/update/value | /message/update/value [POST]
 
 
 ## **message_associate_annotation** {#message_associate_annotation}

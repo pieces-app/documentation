@@ -4,13 +4,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorPointScoresIncrement**](#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | &#39;/anchor_point/\{anchor_point\}/scores/increment&#39; [POST]
+[**anchorPointScoresIncrement**](#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | '/anchor_point/\{anchor_point\}/scores/increment' [POST]
 [**anchorPointSpecificAnchorPointSnapshot**](#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
 [**anchorPointUpdate**](#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
-<a id="anchorPointScoresIncrement"></a>
-## **anchorPointScoresIncrement**
+## **anchorPointScoresIncrement** {#anchorpointscoresincrement}
 > anchorPointScoresIncrement(anchorPoint, seededScoreIncrement)
 
 &#39;/anchor_point/\{anchor_point\}/scores/increment&#39; [POST]
@@ -20,8 +19,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -57,8 +56,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="anchorPointSpecificAnchorPointSnapshot"></a>
-## **anchorPointSpecificAnchorPointSnapshot**
+## **anchorPointSpecificAnchorPointSnapshot** {#anchorpointspecificanchorpointsnapshot}
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
 
 /anchor_point/\{anchor_point\} [GET]
@@ -68,8 +66,8 @@ This will get a snapshot of a single anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
@@ -106,8 +104,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="anchorPointUpdate"></a>
-## **anchorPointUpdate**
+## **anchorPointUpdate** {#anchorpointupdate}
 > AnchorPoint anchorPointUpdate(transferables, anchorPoint)
 
 /anchor_point/update [POST]
@@ -117,8 +114,8 @@ This will update a specific anchorPoint.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorPointApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

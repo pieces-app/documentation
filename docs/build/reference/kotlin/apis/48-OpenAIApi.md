@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**openAiModelsList**](#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
-<a id="openAiModelsList"></a>
-## **openAiModelsList**
+## **openAiModelsList** {#openaimodelslist}
 > OpenAIModelsListOutput openAiModelsList(openAIModelsListInput)
 
 /open_ai/models/list [POST]
@@ -18,8 +17,8 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OpenAIApi()
 val openAIModelsListInput : OpenAIModelsListInput =  // OpenAIModelsListInput | 

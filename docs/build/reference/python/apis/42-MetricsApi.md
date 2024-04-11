@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**get_metrics_formats**](MetricsApi#get_metrics_formats) | **GET** /metrics/formats
-[**metrics_formats_ordered**](MetricsApi#metrics_formats_ordered) | **GET** /metrics/formats/ordered
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**get_metrics_formats**](MetricsApi#get_metrics_formats) | **GET** /metrics/formats | /metrics/formats [GET]
+[**metrics_formats_ordered**](MetricsApi#metrics_formats_ordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
 ## **get_metrics_formats** {#get_metrics_formats}

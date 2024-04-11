@@ -8,8 +8,7 @@ Method | HTTP request | Description
 [**distributionsSpecificDistributionSnapshot**](#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
-<a id="distributionUpdate"></a>
-## **distributionUpdate**
+## **distributionUpdate** {#distributionupdate}
 > Distribution distributionUpdate(distribution)
 
 /distribution/update [POST]
@@ -19,8 +18,8 @@ This will update a specific Distribution.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionApi()
 val distribution : Distribution =  // Distribution | 
@@ -55,8 +54,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="distributionsSpecificDistributionSnapshot"></a>
-## **distributionsSpecificDistributionSnapshot**
+## **distributionsSpecificDistributionSnapshot** {#distributionsspecificdistributionsnapshot}
 > Distribution distributionsSpecificDistributionSnapshot(distribution)
 
 /distribution/\{distribution\} [GET]
@@ -66,8 +64,8 @@ This will get a specific snapshot of a distribution.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.

@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**range_associate_conversation_grounding_temporal_range_workstreams**](RangeApi#range_associate_conversation_grounding_temporal_range_workstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\}
-[**range_associate_workstream_summary**](RangeApi#range_associate_workstream_summary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\}
-[**range_disassociate_conversation_grounding_temporal_range_workstreams**](RangeApi#range_disassociate_conversation_grounding_temporal_range_workstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\}
-[**range_disassociate_workstream_summary**](RangeApi#range_disassociate_workstream_summary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**range_scores_increment**](RangeApi#range_scores_increment) | **POST** /range/\{range\}/scores/increment
-[**range_update**](RangeApi#range_update) | **POST** /range/update
-[**ranges_specific_range_snapshot**](RangeApi#ranges_specific_range_snapshot) | **GET** /range/\{range\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**range_associate_conversation_grounding_temporal_range_workstreams**](RangeApi#range_associate_conversation_grounding_temporal_range_workstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} [POST]
+[**range_associate_workstream_summary**](RangeApi#range_associate_workstream_summary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**range_disassociate_conversation_grounding_temporal_range_workstreams**](RangeApi#range_disassociate_conversation_grounding_temporal_range_workstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} [POST]
+[**range_disassociate_workstream_summary**](RangeApi#range_disassociate_workstream_summary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**range_scores_increment**](RangeApi#range_scores_increment) | **POST** /range/\{range\}/scores/increment | '/range/\{range\}/scores/increment' [POST]
+[**range_update**](RangeApi#range_update) | **POST** /range/update | /range/update [POST]
+[**ranges_specific_range_snapshot**](RangeApi#ranges_specific_range_snapshot) | **GET** /range/\{range\} | /range/\{range\} [GET]
 
 
 ## **range_associate_conversation_grounding_temporal_range_workstreams** {#range_associate_conversation_grounding_temporal_range_workstreams}

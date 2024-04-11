@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
 [**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
 [**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations | /conversations [GET]
-[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
+[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
 ## **conversationsCreateFromAsset** {#conversationscreatefromasset}
@@ -227,9 +227,9 @@ No authorization required
 ## **conversationsStreamIdentifiers** {#conversationsstreamidentifiers}
 > conversationsStreamIdentifiers()
 
-/conversations/stream/identifiers [STREAMED]
+/conversations/stream/identifiers [WS]
 
-Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
+Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
 ### Example
 ```dart

@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**format_analysis**](FormatApi#format_analysis) | **GET** /format/\{format\}/analysis
-[**format_reclassify**](FormatApi#format_reclassify) | **POST** /format/reclassify
-[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/\{format\}
-[**format_update_value**](FormatApi#format_update_value) | **POST** /format/update/value
-[**format_usage_event**](FormatApi#format_usage_event) | **POST** /format/usage/event
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**format_analysis**](FormatApi#format_analysis) | **GET** /format/\{format\}/analysis | /format/\{format\}/analysis [GET]
+[**format_reclassify**](FormatApi#format_reclassify) | **POST** /format/reclassify | /format/reclassify [POST]
+[**format_snapshot**](FormatApi#format_snapshot) | **GET** /format/\{format\} | /format/\{format\} [GET] Scoped to Format
+[**format_update_value**](FormatApi#format_update_value) | **POST** /format/update/value | [POST] /format/update/value
+[**format_usage_event**](FormatApi#format_usage_event) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
 ## **format_analysis** {#format_analysis}

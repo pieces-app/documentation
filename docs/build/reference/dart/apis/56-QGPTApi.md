@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**hints**](QGPTApi#hints) | **POST** /qgpt/hints | /qgpt/hints [POST]
 [**personsRelated**](QGPTApi#personsrelated) | **POST** /qgpt/persons/related | /qgpt/persons/related [POST]
-[**qgptStream**](QGPTApi#qgptstream) | **GET** /qgpt/stream | /qgpt/stream [GET]
+[**qgptStream**](QGPTApi#qgptstream) | **GET** /qgpt/stream | /qgpt/stream [WS]
 [**question**](QGPTApi#question) | **POST** /qgpt/question | /qgpt/question [POST]
 [**relevance**](QGPTApi#relevance) | **POST** /qgpt/relevance | /qgpt/relevance [POST]
 [**reprompt**](QGPTApi#reprompt) | **POST** /qgpt/reprompt | /qgpt/reprompt [POST]
@@ -103,9 +103,9 @@ No authorization required
 ## **qgptStream** {#qgptstream}
 > QGPTStreamOutput qgptStream(qGPTStreamInput)
 
-/qgpt/stream [GET]
+/qgpt/stream [WS]
 
-Provides a version of qGPT stream that streams inputs. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option 'question:true'. It is designed to manage multiple conversations and operates as a Websocket.
+Provides a WebSocket connection that streams inputs to the qGPT model. It handles relevance and questions, but will throw an error if both are passed in simultaneously. However, if you wish to utilize both question and relevance, you can obtain stream results by passing relevance with the option 'question:true'. It is designed to manage multiple conversations.
 
 ### Example
 ```dart

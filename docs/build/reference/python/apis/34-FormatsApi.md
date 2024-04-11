@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**formats_snapshot**](FormatsApi#formats_snapshot) | **GET** /formats
-[**formats_specific_format_snapshot**](FormatsApi#formats_specific_format_snapshot) | **GET** /formats/\{format\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**formats_snapshot**](FormatsApi#formats_snapshot) | **GET** /formats | /formats [GET] Scoped to Formats
+[**formats_specific_format_snapshot**](FormatsApi#formats_specific_format_snapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
 ## **formats_snapshot** {#formats_snapshot}

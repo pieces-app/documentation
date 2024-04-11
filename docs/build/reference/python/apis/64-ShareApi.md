@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/\{share\}/scores/increment
-[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/\{share\}
-[**share_update**](ShareApi#share_update) | **POST** /share/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**share_scores_increment**](ShareApi#share_scores_increment) | **POST** /share/\{share\}/scores/increment | '/share/\{share\}/scores/increment' [POST]
+[**share_snapshot**](ShareApi#share_snapshot) | **GET** /share/\{share\} | /share/\{share\}
+[**share_update**](ShareApi#share_update) | **POST** /share/update | /share/update [POST]
 
 
 ## **share_scores_increment** {#share_scores_increment}

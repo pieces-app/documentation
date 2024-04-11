@@ -9,8 +9,7 @@ Method | HTTP request | Description
 [**annotationsSnapshot**](#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
-<a id="annotationsCreateNewAnnotation"></a>
-## **annotationsCreateNewAnnotation**
+## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}
 > Annotation annotationsCreateNewAnnotation(seededAnnotation)
 
 /annotations/create [POST]
@@ -20,8 +19,8 @@ This will create an annotation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val seededAnnotation : SeededAnnotation =  // SeededAnnotation | 
@@ -56,8 +55,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="annotationsDeleteSpecificAnnotation"></a>
-## **annotationsDeleteSpecificAnnotation**
+## **annotationsDeleteSpecificAnnotation** {#annotationsdeletespecificannotation}
 > annotationsDeleteSpecificAnnotation(`annotation`)
 
 /annotations/\{annotation\}/delete [POST]
@@ -67,8 +65,8 @@ this will delete a specific annotation
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -102,8 +100,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="annotationsSnapshot"></a>
-## **annotationsSnapshot**
+## **annotationsSnapshot** {#annotationssnapshot}
 > Annotations annotationsSnapshot(annotationTypeFilter)
 
 /annotations [GET]
@@ -113,8 +110,8 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnnotationsApi()
 val annotationTypeFilter : kotlin.String = annotationTypeFilter_example // kotlin.String | This is an AnnotationTypeEnum as a optional filter.

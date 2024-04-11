@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**send_local_notification**](NotificationsApi#send_local_notification) | **POST** /notifications/local/send
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**send_local_notification**](NotificationsApi#send_local_notification) | **POST** /notifications/local/send | Send notification
 
 
 ## **send_local_notification** {#send_local_notification}

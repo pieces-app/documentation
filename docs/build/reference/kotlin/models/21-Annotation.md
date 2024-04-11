@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
+**summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  |  [optional]
 
 
 

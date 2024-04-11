@@ -8,8 +8,7 @@ Method | HTTP request | Description
 [**metricsFormatsOrdered**](#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
-<a id="getMetricsFormats"></a>
-## **getMetricsFormats**
+## **getMetricsFormats** {#getmetricsformats}
 > FormatsMetrics getMetricsFormats()
 
 /metrics/formats [GET]
@@ -19,8 +18,8 @@ This is going to get a snapshot of our FormatsMetrics
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {
@@ -51,8 +50,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="metricsFormatsOrdered"></a>
-## **metricsFormatsOrdered**
+## **metricsFormatsOrdered** {#metricsformatsordered}
 > OrderedMetrics metricsFormatsOrdered()
 
 /metrics/formats/ordered [GET]
@@ -62,8 +60,8 @@ This will return a list of code formats in desc order from most to least formats
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {

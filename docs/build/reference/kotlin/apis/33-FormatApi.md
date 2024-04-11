@@ -11,8 +11,7 @@ Method | HTTP request | Description
 [**formatUsageEvent**](#formatusageevent) | **POST** /format/usage/event | /format/usage/event [POST] Scoped to Format
 
 
-<a id="formatAnalysis"></a>
-## **formatAnalysis**
+## **formatAnalysis** {#formatanalysis}
 > Analysis formatAnalysis(format)
 
 /format/\{format\}/analysis [GET]
@@ -22,8 +21,8 @@ This will get an analysis from a format&#39;s id.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
@@ -58,8 +57,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="formatReclassify"></a>
-## **formatReclassify**
+## **formatReclassify** {#formatreclassify}
 > Format formatReclassify(transferable, formatReclassification)
 
 /format/reclassify [POST]
@@ -69,8 +67,8 @@ This endpoint will be used to reclassify a single Format.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -107,8 +105,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="formatSnapshot"></a>
-## **formatSnapshot**
+## **formatSnapshot** {#formatsnapshot}
 > Format formatSnapshot(format, transferable)
 
 /format/\{format\} [GET] Scoped to Format
@@ -118,8 +115,8 @@ Get a snapshot of a specific format.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
@@ -156,8 +153,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="formatUpdateValue"></a>
-## **formatUpdateValue**
+## **formatUpdateValue** {#formatupdatevalue}
 > Format formatUpdateValue(transferable, format)
 
 [POST] /format/update/value
@@ -167,8 +163,8 @@ This will update a format&#39;s value, ie, a formats fragment or file depending 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -205,8 +201,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="formatUsageEvent"></a>
-## **formatUsageEvent**
+## **formatUsageEvent** {#formatusageevent}
 > TrackedFormatEvent formatUsageEvent(seededTrackedFormatEvent)
 
 /format/usage/event [POST] Scoped to Format
@@ -216,8 +211,8 @@ This is an analytics endpoint that will enable us to know when a user has copied
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = FormatApi()
 val seededTrackedFormatEvent : SeededTrackedFormatEvent =  // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:)

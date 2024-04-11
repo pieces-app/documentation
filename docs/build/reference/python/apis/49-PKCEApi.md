@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**clear_pkce**](PKCEApi#clear_pkce) | **POST** /pkce/clear
-[**generate_code**](PKCEApi#generate_code) | **POST** /pkce/code
-[**generate_token**](PKCEApi#generate_token) | **POST** /pkce/token
-[**get_challenge**](PKCEApi#get_challenge) | **GET** /pkce/challenge
-[**respond_with_code**](PKCEApi#respond_with_code) | **POST** /pkce/response/code
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**clear_pkce**](PKCEApi#clear_pkce) | **POST** /pkce/clear | /pkce/clear [POST]
+[**generate_code**](PKCEApi#generate_code) | **POST** /pkce/code | /pkce/code [POST]
+[**generate_token**](PKCEApi#generate_token) | **POST** /pkce/token | /pkce/token [POST]
+[**get_challenge**](PKCEApi#get_challenge) | **GET** /pkce/challenge | Your GET endpoint
+[**respond_with_code**](PKCEApi#respond_with_code) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
 ## **clear_pkce** {#clear_pkce}

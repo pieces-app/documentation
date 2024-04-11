@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**models_create_new_model**](ModelsApi#models_create_new_model) | **POST** /models/create
-[**models_delete_specific_model**](ModelsApi#models_delete_specific_model) | **POST** /models/\{model\}/delete
-[**models_delete_specific_model_cache**](ModelsApi#models_delete_specific_model_cache) | **POST** /models/\{model\}/delete/cache
-[**models_snapshot**](ModelsApi#models_snapshot) | **GET** /models
-[**unload_models**](ModelsApi#unload_models) | **POST** /models/unload
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**models_create_new_model**](ModelsApi#models_create_new_model) | **POST** /models/create | /models/create [POST]
+[**models_delete_specific_model**](ModelsApi#models_delete_specific_model) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
+[**models_delete_specific_model_cache**](ModelsApi#models_delete_specific_model_cache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
+[**models_snapshot**](ModelsApi#models_snapshot) | **GET** /models | /models [GET]
+[**unload_models**](ModelsApi#unload_models) | **POST** /models/unload | /models/unload [POST]
 
 
 ## **models_create_new_model** {#models_create_new_model}

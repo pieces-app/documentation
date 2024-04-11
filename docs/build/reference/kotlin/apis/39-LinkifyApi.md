@@ -9,8 +9,7 @@ Method | HTTP request | Description
 [**linkifyShareRevoke**](#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
-<a id="linkify"></a>
-## **linkify**
+## **linkify** {#linkify}
 > Shares linkify(linkify)
 
 /linkify [POST]
@@ -20,8 +19,8 @@ Method | HTTP request | Description
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = LinkifyApi()
 val linkify : Linkify =  // Linkify | 
@@ -56,8 +55,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="linkifyMultiple"></a>
-## **linkifyMultiple**
+## **linkifyMultiple** {#linkifymultiple}
 > Shares linkifyMultiple(linkifyMultiple)
 
 /linkify/multiple [POST]
@@ -67,8 +65,8 @@ No authorization required
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = LinkifyApi()
 val linkifyMultiple : LinkifyMultiple =  // LinkifyMultiple | 
@@ -103,8 +101,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="linkifyShareRevoke"></a>
-## **linkifyShareRevoke**
+## **linkifyShareRevoke** {#linkifysharerevoke}
 > kotlin.String linkifyShareRevoke(share)
 
 [POST} /linkify/\{share\}/revoke
@@ -114,8 +111,8 @@ This will revoke a link.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = LinkifyApi()
 val share : kotlin.String = share_example // kotlin.String | 

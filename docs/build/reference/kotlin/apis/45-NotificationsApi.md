@@ -7,19 +7,18 @@ Method | HTTP request | Description
 [**sendLocalNotification**](#sendlocalnotification) | **POST** /notifications/local/send | Send notification
 
 
-<a id="sendLocalNotification"></a>
-## **sendLocalNotification**
+## **sendLocalNotification** {#sendlocalnotification}
 > sendLocalNotification(notification)
 
 Send notification
 
-This one is to universaly send notifications from any member of the system
+Retrieves a snapshot of all available models.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = NotificationsApi()
 val notification : Notification =  // Notification | 

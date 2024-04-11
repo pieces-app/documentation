@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**messages_create_specific_message**](ConversationMessagesApi#messages_create_specific_message) | **POST** /messages/create
-[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/\{message\}/delete
-[**messages_snapshot**](ConversationMessagesApi#messages_snapshot) | **GET** /messages
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**messages_create_specific_message**](ConversationMessagesApi#messages_create_specific_message) | **POST** /messages/create | /messages/create [POST]
+[**messages_delete_specific_message**](ConversationMessagesApi#messages_delete_specific_message) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
+[**messages_snapshot**](ConversationMessagesApi#messages_snapshot) | **GET** /messages | /messages [GET]
 
 
 ## **messages_create_specific_message** {#messages_create_specific_message}

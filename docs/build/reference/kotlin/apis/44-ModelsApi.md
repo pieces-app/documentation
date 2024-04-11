@@ -11,19 +11,18 @@ Method | HTTP request | Description
 [**unloadModels**](#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
-<a id="modelsCreateNewModel"></a>
-## **modelsCreateNewModel**
+## **modelsCreateNewModel** {#modelscreatenewmodel}
 > Model modelsCreateNewModel(seededModel)
 
 /models/create [POST]
 
-This will create a ml model, this is aloud however all models will be set to custom: true.  &amp;&amp; we will verify we dont have a model that matches this model.
+Creates a machine learning model. By default, all models created through this endpoint will have the &#39;custom&#39; attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val seededModel : SeededModel =  // SeededModel | 
@@ -58,19 +57,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="modelsDeleteSpecificModel"></a>
-## **modelsDeleteSpecificModel**
+## **modelsDeleteSpecificModel** {#modelsdeletespecificmodel}
 > modelsDeleteSpecificModel(model)
 
 /models/\{model\}/delete [POST]
 
-This will delete a model, This is only available for custom: true models.
+Deletes a specific model. It is exclusively available for custom models with the &#39;custom: true&#39; attribute.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -104,19 +102,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="modelsDeleteSpecificModelCache"></a>
-## **modelsDeleteSpecificModelCache**
+## **modelsDeleteSpecificModelCache** {#modelsdeletespecificmodelcache}
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
 
 /models/\{model\}/delete/cache [POST]
 
-This is going to delete and sort of data that is associated with the Model itself IE the Assets/Libraries downloaded specifically for this model.  This is only available for the LLLM models for now.
+Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -153,8 +150,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="modelsSnapshot"></a>
-## **modelsSnapshot**
+## **modelsSnapshot** {#modelssnapshot}
 > Models modelsSnapshot()
 
 /models [GET]
@@ -164,8 +160,8 @@ This will get a snapshot of all of your models.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 try {
@@ -196,19 +192,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="unloadModels"></a>
-## **unloadModels**
+## **unloadModels** {#unloadmodels}
 > unloadModels()
 
 /models/unload [POST]
 
-This will unload all of the ml models.(that are unloadable)
+Unloads all available machine learning models that are unloadable.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 try {

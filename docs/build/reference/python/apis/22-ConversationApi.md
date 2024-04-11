@@ -2,26 +2,26 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**conversation_associate_anchor**](ConversationApi#conversation_associate_anchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
-[**conversation_associate_asset**](ConversationApi#conversation_associate_asset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
-[**conversation_associate_grounding_temporal_range_workstream**](ConversationApi#conversation_associate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
-[**conversation_associate_website**](ConversationApi#conversation_associate_website) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
-[**conversation_associate_workstream_summary**](ConversationApi#conversation_associate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
-[**conversation_disassociate_anchor**](ConversationApi#conversation_disassociate_anchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
-[**conversation_disassociate_asset**](ConversationApi#conversation_disassociate_asset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
-[**conversation_disassociate_grounding_temporal_range_workstream**](ConversationApi#conversation_disassociate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
-[**conversation_disassociate_website**](ConversationApi#conversation_disassociate_website) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
-[**conversation_disassociate_workstream_summary**](ConversationApi#conversation_disassociate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**conversation_get_specific_conversation**](ConversationApi#conversation_get_specific_conversation) | **GET** /conversation/\{conversation\}
-[**conversation_grounding_messages_associate_message**](ConversationApi#conversation_grounding_messages_associate_message) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
-[**conversation_grounding_messages_disassociate_message**](ConversationApi#conversation_grounding_messages_disassociate_message) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
-[**conversation_scores_increment**](ConversationApi#conversation_scores_increment) | **POST** /conversation/\{conversation\}/scores/increment
-[**conversation_specific_conversation_messages**](ConversationApi#conversation_specific_conversation_messages) | **GET** /conversation/\{conversation\}/messages
-[**conversation_specific_conversation_rename**](ConversationApi#conversation_specific_conversation_rename) | **POST** /conversation/\{conversation\}/rename
-[**conversation_summarize**](ConversationApi#conversation_summarize) | **POST** /conversation/\{conversation\}/summarize
-[**conversation_update**](ConversationApi#conversation_update) | **POST** /conversation/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**conversation_associate_anchor**](ConversationApi#conversation_associate_anchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
+[**conversation_associate_asset**](ConversationApi#conversation_associate_asset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversation_associate_grounding_temporal_range_workstream**](ConversationApi#conversation_associate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
+[**conversation_associate_website**](ConversationApi#conversation_associate_website) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversation_associate_workstream_summary**](ConversationApi#conversation_associate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**conversation_disassociate_anchor**](ConversationApi#conversation_disassociate_anchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
+[**conversation_disassociate_asset**](ConversationApi#conversation_disassociate_asset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversation_disassociate_grounding_temporal_range_workstream**](ConversationApi#conversation_disassociate_grounding_temporal_range_workstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
+[**conversation_disassociate_website**](ConversationApi#conversation_disassociate_website) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversation_disassociate_workstream_summary**](ConversationApi#conversation_disassociate_workstream_summary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**conversation_get_specific_conversation**](ConversationApi#conversation_get_specific_conversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
+[**conversation_grounding_messages_associate_message**](ConversationApi#conversation_grounding_messages_associate_message) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
+[**conversation_grounding_messages_disassociate_message**](ConversationApi#conversation_grounding_messages_disassociate_message) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
+[**conversation_scores_increment**](ConversationApi#conversation_scores_increment) | **POST** /conversation/\{conversation\}/scores/increment | /conversation/\{conversation\}/scores/increment [POST]
+[**conversation_specific_conversation_messages**](ConversationApi#conversation_specific_conversation_messages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
+[**conversation_specific_conversation_rename**](ConversationApi#conversation_specific_conversation_rename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
+[**conversation_summarize**](ConversationApi#conversation_summarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
+[**conversation_update**](ConversationApi#conversation_update) | **POST** /conversation/update | /conversation/update [POST]
 
 
 ## **conversation_associate_anchor** {#conversation_associate_anchor}
@@ -914,7 +914,7 @@ No authorization required
 ## **conversation_scores_increment** {#conversation_scores_increment}
 > conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
 
-'/conversation/\{conversation\}/scores/increment' [POST]
+/conversation/\{conversation\}/scores/increment [POST]
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
@@ -942,7 +942,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
     try:
-        # '/conversation/\{conversation\}/scores/increment' [POST]
+        # /conversation/\{conversation\}/scores/increment [POST]
         api_instance.conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
     except Exception as e:
         print("Exception when calling ConversationApi->conversation_scores_increment: %s\n" % e)

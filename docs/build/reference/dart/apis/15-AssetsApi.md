@@ -16,9 +16,9 @@ Method | HTTP request | Description
 [**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
 [**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
 [**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
-[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [GET]
-[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | Your GET endpoint
-[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [GET]
+[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [WS]
+[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | /assets/stream/transferables [WS]
+[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [WS]
 
 
 ## **assetsCreateNewAsset** {#assetscreatenewasset}
@@ -558,9 +558,9 @@ No authorization required
 ## **assetsStreamIdentifiers** {#assetsstreamidentifiers}
 > StreamedIdentifiers assetsStreamIdentifiers()
 
-/assets/stream/identifiers [GET]
+/assets/stream/identifiers [WS]
 
-Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
+Provides a WebSocket connection that emits changes to your asset's identifiers (UUIDs).
 
 ### Example
 ```dart
@@ -597,7 +597,7 @@ No authorization required
 ## **getAssetsStreamTransferables** {#getassetsstreamtransferables}
 > Assets getAssetsStreamTransferables()
 
-Your GET endpoint
+/assets/stream/transferables [WS]
 
 Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
@@ -636,9 +636,9 @@ No authorization required
 ## **streamAssets** {#streamassets}
 > Assets streamAssets()
 
-/assets/stream [GET]
+/assets/stream [WS]
 
-IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.
+Provides a WebSocket connection that emits changes to your assets.
 
 ### Example
 ```dart

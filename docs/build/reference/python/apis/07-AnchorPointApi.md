@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**anchor_point_scores_increment**](AnchorPointApi#anchor_point_scores_increment) | **POST** /anchor_point/\{anchor_point\}/scores/increment
-[**anchor_point_specific_anchor_point_snapshot**](AnchorPointApi#anchor_point_specific_anchor_point_snapshot) | **GET** /anchor_point/\{anchor_point\}
-[**anchor_point_update**](AnchorPointApi#anchor_point_update) | **POST** /anchor_point/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**anchor_point_scores_increment**](AnchorPointApi#anchor_point_scores_increment) | **POST** /anchor_point/\{anchor_point\}/scores/increment | '/anchor_point/\{anchor_point\}/scores/increment' [POST]
+[**anchor_point_specific_anchor_point_snapshot**](AnchorPointApi#anchor_point_specific_anchor_point_snapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
+[**anchor_point_update**](AnchorPointApi#anchor_point_update) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
 ## **anchor_point_scores_increment** {#anchor_point_scores_increment}

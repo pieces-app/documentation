@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**codeAnalysesSnapshot**](#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
 
 
-<a id="codeAnalysesSnapshot"></a>
-## **codeAnalysesSnapshot**
+## **codeAnalysesSnapshot** {#codeanalysessnapshot}
 > CodeAnalyses codeAnalysesSnapshot()
 
 Your GET endpoint
@@ -18,8 +17,8 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = CodeAnalysesApi()
 try {

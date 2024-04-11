@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  |  [optional]
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+**summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
 
 
 

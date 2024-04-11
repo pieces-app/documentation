@@ -6,20 +6,19 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**applicationsExternalRelated**](#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
 [**applicationsExternalSnapshot**](#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
-[**applicationsRegister**](#applicationsregister) | **POST** /applications/register | /applications/register [POST]
-[**applicationsSessionClose**](#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
-[**applicationsSessionOpen**](#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot**](#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applicationsRegister - (Deprecated)**](#applicationsregister) | **POST** /applications/register | /applications/register [POST]
+[**applicationsSessionClose - (Deprecated)**](#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applicationsSessionOpen - (Deprecated)**](#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applicationsSessionSnapshot - (Deprecated)**](#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
 [**applicationsSnapshot**](#applicationssnapshot) | **GET** /applications | /applications [GET]
 [**applicationsSpecificApplicationSnapshot**](#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
-[**applicationsUsageEngagementInteraction**](#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
-[**applicationsUsageEngagementKeyboard**](#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
-[**applicationsUsageInstallation**](#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
-[**postApplicationsUsageUpdated**](#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
+[**applicationsUsageEngagementInteraction - (Deprecated)**](#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applicationsUsageEngagementKeyboard - (Deprecated)**](#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applicationsUsageInstallation - (Deprecated)**](#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**postApplicationsUsageUpdated - (Deprecated)**](#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
-<a id="applicationsExternalRelated"></a>
-## **applicationsExternalRelated**
+## **applicationsExternalRelated** {#applicationsexternalrelated}
 > DetectedExternalApplications applicationsExternalRelated()
 
 /applications/external/related [GET]
@@ -29,8 +28,8 @@ Retrieves a list of external applications installed on the user&#39;s machine th
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -61,8 +60,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsExternalSnapshot"></a>
-## **applicationsExternalSnapshot**
+## **applicationsExternalSnapshot** {#applicationsexternalsnapshot}
 > DetectedExternalApplications applicationsExternalSnapshot()
 
 /applications/external [GET]
@@ -72,8 +70,8 @@ Provides a snapshot of all external applications detected on the user&#39;s mach
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -104,8 +102,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsRegister"></a>
-## **applicationsRegister**
+## **applicationsRegister - (Deprecated)** {#applicationsregister}
 > Application applicationsRegister(application)
 
 /applications/register [POST]
@@ -115,8 +112,8 @@ Registers a new application within the Pieces ecosystem.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val application : Application =  // Application | This will accept a application.
@@ -151,8 +148,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="applicationsSessionClose"></a>
-## **applicationsSessionClose**
+## **applicationsSessionClose - (Deprecated)** {#applicationssessionclose}
 > Session applicationsSessionClose(body)
 
 /applications/session/close [POST]
@@ -162,8 +158,8 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val body : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | This will accept a required session uuid.
@@ -198,8 +194,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="applicationsSessionOpen"></a>
-## **applicationsSessionOpen**
+## **applicationsSessionOpen - (Deprecated)** {#applicationssessionopen}
 > Session applicationsSessionOpen()
 
 /applications/session/open [POST]
@@ -209,8 +204,8 @@ Initiates a new session, marking the start of a user&#39;s interaction with the 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -241,8 +236,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsSessionSnapshot"></a>
-## **applicationsSessionSnapshot**
+## **applicationsSessionSnapshot - (Deprecated)** {#applicationssessionsnapshot}
 > Session applicationsSessionSnapshot(session)
 
 /applications/sessions/\{session\} [GET]
@@ -252,8 +246,8 @@ Fetches detailed information about a specific session, identified by a session U
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val session : kotlin.String = session_example // kotlin.String | This is a uuid that points to a session.
@@ -288,8 +282,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsSnapshot"></a>
-## **applicationsSnapshot**
+## **applicationsSnapshot** {#applicationssnapshot}
 > Applications applicationsSnapshot()
 
 /applications [GET]
@@ -299,8 +292,8 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -331,8 +324,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsSpecificApplicationSnapshot"></a>
-## **applicationsSpecificApplicationSnapshot**
+## **applicationsSpecificApplicationSnapshot** {#applicationsspecificapplicationsnapshot}
 > Application applicationsSpecificApplicationSnapshot(application)
 
 /applications/\{application\} [GET]
@@ -342,8 +334,8 @@ Obtains a snapshot with information about a specific application, identified by 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
@@ -378,8 +370,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="applicationsUsageEngagementInteraction"></a>
-## **applicationsUsageEngagementInteraction**
+## **applicationsUsageEngagementInteraction - (Deprecated)** {#applicationsusageengagementinteraction}
 > TrackedInteractionEvent applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
 
 /applications/usage/engagement/interaction [POST] Scoped to Apps
@@ -389,8 +380,8 @@ Records user interaction events within applications, such as clicks or taps, to 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val seededTrackedInteractionEvent : SeededTrackedInteractionEvent =  // SeededTrackedInteractionEvent | 
@@ -425,8 +416,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="applicationsUsageEngagementKeyboard"></a>
-## **applicationsUsageEngagementKeyboard**
+## **applicationsUsageEngagementKeyboard - (Deprecated)** {#applicationsusageengagementkeyboard}
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
 
 /applications/usage/engagement/keyboard [POST] Scoped to Apps
@@ -436,8 +426,8 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val seededTrackedKeyboardEvent : SeededTrackedKeyboardEvent =  // SeededTrackedKeyboardEvent | 
@@ -472,8 +462,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="applicationsUsageInstallation"></a>
-## **applicationsUsageInstallation**
+## **applicationsUsageInstallation - (Deprecated)** {#applicationsusageinstallation}
 > applicationsUsageInstallation(trackedApplicationInstall)
 
 /applications/usage/installation [POST]
@@ -483,8 +472,8 @@ Logs the installation events of the Pieces application.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val trackedApplicationInstall : TrackedApplicationInstall =  // TrackedApplicationInstall | 
@@ -518,8 +507,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-<a id="postApplicationsUsageUpdated"></a>
-## **postApplicationsUsageUpdated**
+## **postApplicationsUsageUpdated - (Deprecated)** {#postapplicationsusageupdated}
 > postApplicationsUsageUpdated(trackedApplicationUpdate)
 
 /applications/usage/updated [POST]
@@ -529,8 +517,8 @@ Tracks updates to the Pieces application, including version changes.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val trackedApplicationUpdate : TrackedApplicationUpdate =  // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.

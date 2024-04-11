@@ -7,8 +7,9 @@ Method | HTTP request | Description
 [**clearUser**](UserApi#clearuser) | **POST** /user/clear | /user/clear
 [**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
 [**selectUser**](UserApi#selectuser) | **POST** /user/select | /user/select [POST]
-[**streamUser**](UserApi#streamuser) | **GET** /user/stream | /user/stream [GET]
+[**streamUser**](UserApi#streamuser) | **GET** /user/stream | /user/stream [WS]
 [**updateUser**](UserApi#updateuser) | **POST** /user/update | /user/update [POST]
+[**userBetaStatus**](UserApi#userbetastatus) | **POST** /user/beta/status | /user/beta/status [POST]
 [**userProviders**](UserApi#userproviders) | **GET** /user/providers | Your GET endpoint
 [**userSnapshot**](UserApi#usersnapshot) | **GET** /user | /user [GET]
 [**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
@@ -143,9 +144,9 @@ Name | Type | Description  | Notes
 ## **streamUser** {#streamuser}
 > UserProfile streamUser()
 
-/user/stream [GET]
+/user/stream [WS]
 
-This will stream in the current user, not quiet sure yet how we want to do this.
+Provides a WebSocket connection that streams user data.
 
 ### Example
 ```dart
@@ -210,6 +211,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UserProfile**](../models/UserProfile)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+## **userBetaStatus** {#userbetastatus}
+> UserBetaStatus userBetaStatus(userBetaStatus)
+
+/user/beta/status [POST]
+
+This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
+
+### Example
+```dart
+import 'package:core_openapi/api.dart';
+
+final api_instance = UserApi();
+final userBetaStatus = UserBetaStatus(); // UserBetaStatus | 
+
+try {
+    final result = api_instance.userBetaStatus(userBetaStatus);
+    print(result);
+} catch (e) {
+    print('Exception when calling UserApi->userBetaStatus: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
+
+### Return type
+
+[**UserBetaStatus**](../models/UserBetaStatus)
 
 ### Authorization
 

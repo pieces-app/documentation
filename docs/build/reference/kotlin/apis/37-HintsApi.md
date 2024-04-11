@@ -9,8 +9,7 @@ Method | HTTP request | Description
 [**hintsSnapshot**](#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
-<a id="hintsCreateNewHint"></a>
-## **hintsCreateNewHint**
+## **hintsCreateNewHint** {#hintscreatenewhint}
 > Hint hintsCreateNewHint(seededHint)
 
 /hints/create [POST]
@@ -20,8 +19,8 @@ This will create a hint.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val seededHint : SeededHint =  // SeededHint | 
@@ -56,8 +55,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="hintsDeleteSpecificHint"></a>
-## **hintsDeleteSpecificHint**
+## **hintsDeleteSpecificHint** {#hintsdeletespecifichint}
 > hintsDeleteSpecificHint(hint)
 
 /hints/\{hint\}/delete [POST]
@@ -67,8 +65,8 @@ This will delete a specific hint.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
@@ -102,8 +100,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="hintsSnapshot"></a>
-## **hintsSnapshot**
+## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
 
 /hints [GET]
@@ -113,8 +110,8 @@ This will get a snapshot of all of the hints.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 try {

@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**ocrAnalysesSnapshot**](#ocranalysessnapshot) | **GET** /ocr_analyses | Your GET endpoint
 
 
-<a id="ocrAnalysesSnapshot"></a>
-## **ocrAnalysesSnapshot**
+## **ocrAnalysesSnapshot** {#ocranalysessnapshot}
 > OCRAnalyses ocrAnalysesSnapshot(transferables)
 
 Your GET endpoint
@@ -18,8 +17,8 @@ This will get a snapshot of all of your ocr analyses, an ocr analysis is attache
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OCRAnalysesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

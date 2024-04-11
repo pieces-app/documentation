@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/\{allocation\}
-[**allocation_update**](AllocationApi#allocation_update) | **POST** /allocation/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**allocation_snapshot**](AllocationApi#allocation_snapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
+[**allocation_update**](AllocationApi#allocation_update) | **POST** /allocation/update | /allocation/update [POST]
 
 
 ## **allocation_snapshot** {#allocation_snapshot}

@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**linkify**](LinkifyApi#linkify) | **POST** /linkify
-[**linkify_multiple**](LinkifyApi#linkify_multiple) | **POST** /linkify/multiple
-[**linkify_share_revoke**](LinkifyApi#linkify_share_revoke) | **POST** /linkify/\{share\}/revoke
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**linkify**](LinkifyApi#linkify) | **POST** /linkify | /linkify [POST]
+[**linkify_multiple**](LinkifyApi#linkify_multiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
+[**linkify_share_revoke**](LinkifyApi#linkify_share_revoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
 ## **linkify** {#linkify}

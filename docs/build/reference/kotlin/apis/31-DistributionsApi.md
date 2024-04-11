@@ -9,8 +9,7 @@ Method | HTTP request | Description
 [**distributionsSnapshot**](#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
-<a id="distributionsCreateNewDistribution"></a>
-## **distributionsCreateNewDistribution**
+## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
 > Distribution distributionsCreateNewDistribution(seededDistribution)
 
 /distributions/create [POST]
@@ -20,8 +19,8 @@ This will create a new distribution.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
@@ -56,8 +55,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="distributionsDeleteSpecificDistribution"></a>
-## **distributionsDeleteSpecificDistribution**
+## **distributionsDeleteSpecificDistribution** {#distributionsdeletespecificdistribution}
 > distributionsDeleteSpecificDistribution(distribution)
 
 /distributions/\{distribution\}/delete [POST]
@@ -67,8 +65,8 @@ This will delete a specific distribution.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
@@ -102,8 +100,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="distributionsSnapshot"></a>
-## **distributionsSnapshot**
+## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
 
 /distributions [GET]
@@ -113,8 +110,8 @@ This will get a specific snapshot of all our distributions.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 try {

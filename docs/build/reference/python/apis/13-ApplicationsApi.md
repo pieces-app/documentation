@@ -2,20 +2,20 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**applications_external_related**](ApplicationsApi#applications_external_related) | **GET** /applications/external/related
-[**applications_external_snapshot**](ApplicationsApi#applications_external_snapshot) | **GET** /applications/external
-[**applications_register - (Deprecated)**](ApplicationsApi#applications_register) | **POST** /applications/register
-[**applications_session_close - (Deprecated)**](ApplicationsApi#applications_session_close) | **POST** /applications/session/close
-[**applications_session_open - (Deprecated)**](ApplicationsApi#applications_session_open) | **POST** /applications/session/open
-[**applications_session_snapshot - (Deprecated)**](ApplicationsApi#applications_session_snapshot) | **GET** /applications/sessions/\{session\}
-[**applications_snapshot**](ApplicationsApi#applications_snapshot) | **GET** /applications
-[**applications_specific_application_snapshot**](ApplicationsApi#applications_specific_application_snapshot) | **GET** /applications/\{application\}
-[**applications_usage_engagement_interaction - (Deprecated)**](ApplicationsApi#applications_usage_engagement_interaction) | **POST** /applications/usage/engagement/interaction
-[**applications_usage_engagement_keyboard - (Deprecated)**](ApplicationsApi#applications_usage_engagement_keyboard) | **POST** /applications/usage/engagement/keyboard
-[**applications_usage_installation - (Deprecated)**](ApplicationsApi#applications_usage_installation) | **POST** /applications/usage/installation
-[**post_applications_usage_updated - (Deprecated)**](ApplicationsApi#post_applications_usage_updated) | **POST** /applications/usage/updated
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**applications_external_related**](ApplicationsApi#applications_external_related) | **GET** /applications/external/related | /applications/external/related [GET]
+[**applications_external_snapshot**](ApplicationsApi#applications_external_snapshot) | **GET** /applications/external | /applications/external [GET]
+[**applications_register - (Deprecated)**](ApplicationsApi#applications_register) | **POST** /applications/register | /applications/register [POST]
+[**applications_session_close - (Deprecated)**](ApplicationsApi#applications_session_close) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applications_session_open - (Deprecated)**](ApplicationsApi#applications_session_open) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applications_session_snapshot - (Deprecated)**](ApplicationsApi#applications_session_snapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applications_snapshot**](ApplicationsApi#applications_snapshot) | **GET** /applications | /applications [GET]
+[**applications_specific_application_snapshot**](ApplicationsApi#applications_specific_application_snapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
+[**applications_usage_engagement_interaction - (Deprecated)**](ApplicationsApi#applications_usage_engagement_interaction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applications_usage_engagement_keyboard - (Deprecated)**](ApplicationsApi#applications_usage_engagement_keyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applications_usage_installation - (Deprecated)**](ApplicationsApi#applications_usage_installation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**post_applications_usage_updated - (Deprecated)**](ApplicationsApi#post_applications_usage_updated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
 ## **applications_external_related** {#applications_external_related}

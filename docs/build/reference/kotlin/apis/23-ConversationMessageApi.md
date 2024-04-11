@@ -6,14 +6,13 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**messageAssociateAnnotation**](#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
 [**messageDisassociateAnnotation**](#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
-[**messageScoresIncrement**](#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | &#39;/message/\{message\}/scores/increment&#39; [POST]
+[**messageScoresIncrement**](#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | '/message/\{message\}/scores/increment' [POST]
 [**messageSpecificMessageSnapshot**](#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
 [**messageSpecificMessageUpdate**](#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
 [**messageUpdateValue**](#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
-<a id="messageAssociateAnnotation"></a>
-## **messageAssociateAnnotation**
+## **messageAssociateAnnotation** {#messageassociateannotation}
 > messageAssociateAnnotation(`annotation`, message)
 
 /message/\{message\}/annotations/associate/\{annotation\} [POST]
@@ -23,8 +22,8 @@ This will associate a message with an annotation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -60,8 +59,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageDisassociateAnnotation"></a>
-## **messageDisassociateAnnotation**
+## **messageDisassociateAnnotation** {#messagedisassociateannotation}
 > messageDisassociateAnnotation(`annotation`, message)
 
 /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
@@ -71,8 +69,8 @@ This will enable us to dissassociate a message from an annotation.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
@@ -108,8 +106,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageScoresIncrement"></a>
-## **messageScoresIncrement**
+## **messageScoresIncrement** {#messagescoresincrement}
 > messageScoresIncrement(message, seededScoreIncrement)
 
 &#39;/message/\{message\}/scores/increment&#39; [POST]
@@ -119,8 +116,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
@@ -156,8 +153,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="messageSpecificMessageSnapshot"></a>
-## **messageSpecificMessageSnapshot**
+## **messageSpecificMessageSnapshot** {#messagespecificmessagesnapshot}
 > ConversationMessage messageSpecificMessageSnapshot(message, transferables)
 
 /message/\{message\} [GET]
@@ -167,8 +163,8 @@ This will get a specific snapshot of a message
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
@@ -205,8 +201,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="messageSpecificMessageUpdate"></a>
-## **messageSpecificMessageUpdate**
+## **messageSpecificMessageUpdate** {#messagespecificmessageupdate}
 > ConversationMessage messageSpecificMessageUpdate(transferables, conversationMessage)
 
 /message/update [GET]
@@ -216,8 +211,8 @@ This will update a conversation message.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -254,8 +249,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="messageUpdateValue"></a>
-## **messageUpdateValue**
+## **messageUpdateValue** {#messageupdatevalue}
 > ConversationMessage messageUpdateValue(transferables, conversationMessage)
 
 /message/update/value [POST]
@@ -265,8 +259,8 @@ This will update the value of a conversation message.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

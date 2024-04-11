@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/\{annotation\}/scores/increment
-[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/\{annotation\}
-[**annotation_update**](AnnotationApi#annotation_update) | **POST** /annotation/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**annotation_scores_increment**](AnnotationApi#annotation_scores_increment) | **POST** /annotation/\{annotation\}/scores/increment | '/annotation/\{annotation\}/scores/increment' [POST]
+[**annotation_specific_annotation_snapshot**](AnnotationApi#annotation_specific_annotation_snapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
+[**annotation_update**](AnnotationApi#annotation_update) | **POST** /annotation/update | /annotation/update [POST]
 
 
 ## **annotation_scores_increment** {#annotation_scores_increment}

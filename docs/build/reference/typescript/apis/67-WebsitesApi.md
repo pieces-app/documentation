@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create
-[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete
-[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists
-[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
+[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
+[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
+[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites | /websites [GET]
 
 
 ## **websitesCreateNewWebsite** {#websitescreatenewwebsite}

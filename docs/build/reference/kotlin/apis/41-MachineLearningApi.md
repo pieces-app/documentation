@@ -8,8 +8,7 @@ Method | HTTP request | Description
 [**segmentTechnicalLanguage**](#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
-<a id="personificationTechnicalLanguageGeneration"></a>
-## **personificationTechnicalLanguageGeneration**
+## **personificationTechnicalLanguageGeneration** {#personificationtechnicallanguagegeneration}
 > OnboardedPersonaDetails personificationTechnicalLanguageGeneration(preonboardedPersonaDetails)
 
 /machine_learning/text/technical_language/generators/personification [GET]
@@ -19,8 +18,8 @@ This is going to take in some personification details ie languages &amp; persona
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MachineLearningApi()
 val preonboardedPersonaDetails : PreonboardedPersonaDetails =  // PreonboardedPersonaDetails | 
@@ -55,8 +54,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="segmentTechnicalLanguage"></a>
-## **segmentTechnicalLanguage**
+## **segmentTechnicalLanguage** {#segmenttechnicallanguage}
 > SegmentedTechnicalLanguage segmentTechnicalLanguage(classify, unsegmentedTechnicalLanguage)
 
 /machine_learning/text/technical_language/parsers/segmentation [POST]
@@ -66,8 +64,8 @@ This is a functional endpoint that will parse a message or text in to text or co
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MachineLearningApi()
 val classify : kotlin.Boolean = true // kotlin.Boolean | This will let us know if you want us to classifiy your code, this is default to false.

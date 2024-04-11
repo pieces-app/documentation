@@ -2,16 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**link_provider**](OSApi#link_provider) | **POST** /os/link_provider
-[**os_device_information**](OSApi#os_device_information) | **GET** /os/device/information
-[**os_restart**](OSApi#os_restart) | **GET** /os/restart
-[**os_update_check**](OSApi#os_update_check) | **POST** /os/update/check
-[**pick_files**](OSApi#pick_files) | **POST** /os/files/pick
-[**pick_folders**](OSApi#pick_folders) | **POST** /os/folders/pick
-[**sign_into_os**](OSApi#sign_into_os) | **POST** /os/sign_in
-[**sign_out_of_os**](OSApi#sign_out_of_os) | **POST** /os/sign_out
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**link_provider**](OSApi#link_provider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**os_device_information**](OSApi#os_device_information) | **GET** /os/device/information | /os/device/information [GET]
+[**os_permissions**](OSApi#os_permissions) | **GET** /os/permissions | /os/permissions [GET]
+[**os_permissions_request**](OSApi#os_permissions_request) | **POST** /os/permissions/request | /os/permissions/request [POST]
+[**os_restart**](OSApi#os_restart) | **GET** /os/restart | Your GET endpoint
+[**os_update_check**](OSApi#os_update_check) | **POST** /os/update/check | /os/update/check [POST]
+[**pick_files**](OSApi#pick_files) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pick_folders**](OSApi#pick_folders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**sign_into_os**](OSApi#sign_into_os) | **POST** /os/sign_in | 
+[**sign_out_of_os**](OSApi#sign_out_of_os) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 ## **link_provider** {#link_provider}
@@ -139,6 +141,140 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **os_permissions** {#os_permissions}
+> OSPermissions os_permissions()
+
+/os/permissions [GET]
+
+This will only work on Macos and Windows.  And will get the permissions of the user's local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.models.os_permissions import OSPermissions
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.OSApi(api_client)
+
+    try:
+        # /os/permissions [GET]
+        api_response = api_instance.os_permissions()
+        print("The response of OSApi->os_permissions:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling OSApi->os_permissions: %s\n" % e)
+```
+
+
+
+### Parameters
+
+This endpoint does not need any parameters.
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+
+
+## **os_permissions_request** {#os_permissions_request}
+> OSPermissions os_permissions_request(os_permissions=os_permissions)
+
+/os/permissions/request [POST]
+
+This will only work on Macos and Windows.  This will request permissions for the given inputs
+
+### Example
+
+
+```python
+import pieces_os_client
+from pieces_os_client.models.os_permissions import OSPermissions
+from pieces_os_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost:1000
+# See configuration.py for a list of all supported configuration parameters.
+configuration = pieces_os_client.Configuration(
+    host = "http://localhost:1000"
+)
+
+
+# Enter a context with an instance of the API client
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = pieces_os_client.OSApi(api_client)
+    os_permissions = pieces_os_client.OSPermissions() # OSPermissions |  (optional)
+
+    try:
+        # /os/permissions/request [POST]
+        api_response = api_instance.os_permissions_request(os_permissions=os_permissions)
+        print("The response of OSApi->os_permissions_request:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling OSApi->os_permissions_request: %s\n" % e)
+```
+
+
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **os_permissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
+
+### Return type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 ### HTTP response details

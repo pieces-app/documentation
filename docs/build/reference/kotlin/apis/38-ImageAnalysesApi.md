@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**imageAnalysesSnapshot**](#imageanalysessnapshot) | **GET** /image_analyses | Your GET endpoint
 
 
-<a id="imageAnalysesSnapshot"></a>
-## **imageAnalysesSnapshot**
+## **imageAnalysesSnapshot** {#imageanalysessnapshot}
 > ImageAnalyses imageAnalysesSnapshot(transferables)
 
 Your GET endpoint
@@ -18,8 +17,8 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ImageAnalysesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

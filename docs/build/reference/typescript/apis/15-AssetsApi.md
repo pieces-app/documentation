@@ -2,23 +2,23 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create
-[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete
-[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft
-[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended
-[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related
-[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers
-[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo
-[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search
-[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search
-[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets
-[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats
-[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\}
-[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers
-[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables
-[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
+[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
+[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
+[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
+[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
+[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
+[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
+[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search | /assets/search?query=string [GET]
+[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
+[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
+[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [WS]
+[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | /assets/stream/transferables [WS]
+[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [WS]
 
 
 ## **assetsCreateNewAsset** {#assetscreatenewasset}
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 ## **assetsStreamIdentifiers** {#assetsstreamidentifiers}
 > StreamedIdentifiers assetsStreamIdentifiers()
 
-Streams the identifiers (UUIDs) of assets that have been updated via a WebSocket connection.
+Provides a WebSocket connection that emits changes to your asset\'s identifiers (UUIDs).
 
 ### Example Model
 
@@ -669,7 +669,7 @@ This endpoint does not need any parameters.
 ## **streamAssets** {#streamassets}
 > Assets streamAssets()
 
-IMPORTANT: This stream emits changes without transferables in a specific format. If transferables are required, please use /assets/stream/transferables.
+Provides a WebSocket connection that emits changes to your assets.
 
 ### Example Model
 

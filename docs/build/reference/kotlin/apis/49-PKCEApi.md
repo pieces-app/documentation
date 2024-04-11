@@ -11,8 +11,7 @@ Method | HTTP request | Description
 [**respondWithCode**](#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
-<a id="clearPKCE"></a>
-## **clearPKCE**
+## **clearPKCE** {#clearpkce}
 > clearPKCE()
 
 /pkce/clear [POST]
@@ -22,8 +21,8 @@ This is a function to Clear a PKCE Authentication Flow
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 try {
@@ -53,8 +52,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-<a id="generateCode"></a>
-## **generateCode**
+## **generateCode** {#generatecode}
 > PKCE generateCode(seededPKCE)
 
 /pkce/code [POST]
@@ -64,8 +62,8 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val seededPKCE : SeededPKCE =  // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow
@@ -100,8 +98,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="generateToken"></a>
-## **generateToken**
+## **generateToken** {#generatetoken}
 > PKCE generateToken(tokenizedPKCE)
 
 /pkce/token [POST]
@@ -111,8 +108,8 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val tokenizedPKCE : TokenizedPKCE =  // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token
@@ -147,8 +144,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="getChallenge"></a>
-## **getChallenge**
+## **getChallenge** {#getchallenge}
 > PKCE getChallenge()
 
 Your GET endpoint
@@ -158,8 +154,8 @@ An endpoint that returns a PKCE Challenge
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 try {
@@ -190,8 +186,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="respondWithCode"></a>
-## **respondWithCode**
+## **respondWithCode** {#respondwithcode}
 > PKCE respondWithCode(code, state, schema)
 
 /pkce/response/code [POST]
@@ -201,8 +196,8 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val code : kotlin.String = code_example // kotlin.String | The PKCE Code to be used to access a Token.

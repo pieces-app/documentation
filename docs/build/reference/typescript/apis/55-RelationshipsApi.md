@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
 
 
 ## **relationshipsSnapshot** {#relationshipssnapshot}
 > Relationships relationshipsSnapshot()
 
-This will reurn all of the relationships that exists within your pieces db.
+This will return all of the relationships that exists within your pieces db.
 
 ### Example Model
 

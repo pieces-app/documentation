@@ -12,8 +12,7 @@ Method | HTTP request | Description
 [**allocationsSnapshot**](#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
-<a id="allocationsConnectNewCloud"></a>
-## **allocationsConnectNewCloud**
+## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}
 > AllocationCloud allocationsConnectNewCloud(userProfile)
 
 /allocations/connect [POST]
@@ -23,8 +22,8 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -59,8 +58,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="allocationsCreateNewAllocation"></a>
-## **allocationsCreateNewAllocation**
+## **allocationsCreateNewAllocation** {#allocationscreatenewallocation}
 > AllocationCloud allocationsCreateNewAllocation(allocationCloud)
 
 /allocations/create [POST]
@@ -70,8 +68,8 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -106,8 +104,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="allocationsDeleteAllocation"></a>
-## **allocationsDeleteAllocation**
+## **allocationsDeleteAllocation** {#allocationsdeleteallocation}
 > kotlin.String allocationsDeleteAllocation(allocationCloud)
 
 /allocations/delete [POST]
@@ -117,8 +114,8 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -153,8 +150,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="allocationsDisconnectCloud"></a>
-## **allocationsDisconnectCloud**
+## **allocationsDisconnectCloud** {#allocationsdisconnectcloud}
 > kotlin.String allocationsDisconnectCloud(allocationCloud)
 
 /allocations/disconnect [POST]
@@ -164,8 +160,8 @@ This will attempt to disconnect to a specific users cloud.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -200,8 +196,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="allocationsReconnectCloud"></a>
-## **allocationsReconnectCloud**
+## **allocationsReconnectCloud** {#allocationsreconnectcloud}
 > AllocationCloud allocationsReconnectCloud(allocationCloud)
 
 /allocations/reconnect [POST]
@@ -211,8 +206,8 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -247,8 +242,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="allocationsSnapshot"></a>
-## **allocationsSnapshot**
+## **allocationsSnapshot** {#allocationssnapshot}
 > Allocations allocationsSnapshot()
 
 /allocations [GET]
@@ -258,8 +252,8 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 try {

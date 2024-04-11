@@ -9,22 +9,21 @@ Method | HTTP request | Description
 [**conversationsDeleteSpecificConversation**](#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
 [**conversationsIdentifiersSnapshot**](#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
 [**conversationsSnapshot**](#conversationssnapshot) | **GET** /conversations | /conversations [GET]
-[**conversationsStreamIdentifiers**](#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [STREAMED]
+[**conversationsStreamIdentifiers**](#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
-<a id="conversationsCreateFromAsset"></a>
-## **conversationsCreateFromAsset**
+## **conversationsCreateFromAsset** {#conversationscreatefromasset}
 > ConversationsCreateFromAssetOutput conversationsCreateFromAsset(asset)
 
 /conversations/create/from_asset/\{asset\} [POST]
 
-This will create a conversation from an asset, This will create a conversation and an initial message for the conversation(w/ a summary of the asset that is being used as grounding context).
+Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -59,19 +58,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationsCreateSpecificConversation"></a>
-## **conversationsCreateSpecificConversation**
+## **conversationsCreateSpecificConversation** {#conversationscreatespecificconversation}
 > Conversation conversationsCreateSpecificConversation(transferables, seededConversation)
 
 /conversations/create [POST]
 
-This will create a specific conversation.
+Creates a specific conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -108,19 +106,18 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="conversationsDeleteSpecificConversation"></a>
-## **conversationsDeleteSpecificConversation**
+## **conversationsDeleteSpecificConversation** {#conversationsdeletespecificconversation}
 > conversationsDeleteSpecificConversation(conversation)
 
 /conversations/\{conversation\}/delete [POST]
 
-This will delete a specific Conversation.
+Deletes a specific conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -154,19 +151,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationsIdentifiersSnapshot"></a>
-## **conversationsIdentifiersSnapshot**
+## **conversationsIdentifiersSnapshot** {#conversationsidentifierssnapshot}
 > FlattenedConversations conversationsIdentifiersSnapshot()
 
 /conversations/identifiers [GET]
 
-This will get all the uuids of a Conversation.
+Retrieves all the UUIDs associated with a Conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 try {
@@ -197,19 +193,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationsSnapshot"></a>
-## **conversationsSnapshot**
+## **conversationsSnapshot** {#conversationssnapshot}
 > Conversations conversationsSnapshot(transferables)
 
 /conversations [GET]
 
-This will return a snapshot of a specific conversation
+Retrieves a snapshot of a specific conversation.
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -244,19 +239,18 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="conversationsStreamIdentifiers"></a>
-## **conversationsStreamIdentifiers**
+## **conversationsStreamIdentifiers** {#conversationsstreamidentifiers}
 > conversationsStreamIdentifiers()
 
-/conversations/stream/identifiers [STREAMED]
+/conversations/stream/identifiers [WS]
 
-This is a stream for the conversation identifiers. will return StreamedIdentifiers.
+Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationsApi()
 try {

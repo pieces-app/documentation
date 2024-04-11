@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**htmlShare**](#htmlshare) | **GET** / | / [GET]
 
 
-<a id="htmlShare"></a>
-## **htmlShare**
+## **htmlShare** {#htmlshare}
 > kotlin.String htmlShare(p)
 
 / [GET]
@@ -18,8 +17,8 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PieceApi()
 val p : kotlin.String = p_example // kotlin.String | this is the a query param, that a shortened version of the share.

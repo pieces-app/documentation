@@ -10,8 +10,7 @@ Method | HTTP request | Description
 [**backupsSnapshot**](#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
-<a id="backupsCreateNewBackup"></a>
-## **backupsCreateNewBackup**
+## **backupsCreateNewBackup** {#backupscreatenewbackup}
 > Backup backupsCreateNewBackup(seededBackup)
 
 /backups/create [POST]
@@ -21,8 +20,8 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -57,8 +56,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsCreateNewBackupStreamed"></a>
-## **backupsCreateNewBackupStreamed**
+## **backupsCreateNewBackupStreamed** {#backupscreatenewbackupstreamed}
 > BackupStreamedProgress backupsCreateNewBackupStreamed(seededBackup)
 
 /backups/create/streamed [POST]
@@ -68,8 +66,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -104,8 +102,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsDeleteSpecificBackup"></a>
-## **backupsDeleteSpecificBackup**
+## **backupsDeleteSpecificBackup** {#backupsdeletespecificbackup}
 > backupsDeleteSpecificBackup(backup, backup2)
 
 /backups/\{backup\}/delete [POST]
@@ -115,8 +112,8 @@ This will delete a specific backup from the cloud.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -152,8 +149,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="backupsSnapshot"></a>
-## **backupsSnapshot**
+## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
 
 /backups [GET]
@@ -163,8 +159,8 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 try {

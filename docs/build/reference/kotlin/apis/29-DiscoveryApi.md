@@ -10,8 +10,7 @@ Method | HTTP request | Description
 [**discoveryDiscoverTagsRelated**](#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
-<a id="discoveryDiscoverAssets"></a>
-## **discoveryDiscoverAssets**
+## **discoveryDiscoverAssets** {#discoverydiscoverassets}
 > DiscoveredAssets discoveryDiscoverAssets(automatic, seededDiscoverableAssets)
 
 /discovery/discover/assets [POST]
@@ -21,8 +20,8 @@ This is the endpoint used for bulk import. In both cases of the bulk import flow
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -59,8 +58,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="discoveryDiscoverAssetsHtml"></a>
-## **discoveryDiscoverAssetsHtml**
+## **discoveryDiscoverAssetsHtml** {#discoverydiscoverassetshtml}
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml(automatic, seededDiscoverableHtmlWebpages)
 
 /discovery/discover/assets/html[POST]
@@ -70,8 +68,8 @@ This is the discover discover assets html endpoint. The goal of this endpoint is
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -108,8 +106,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="discoveryDiscoverSensitives"></a>
-## **discoveryDiscoverSensitives**
+## **discoveryDiscoverSensitives** {#discoverydiscoversensitives}
 > DiscoveredSensitives discoveryDiscoverSensitives(automatic, seededDiscoverableSensitives)
 
 /discovery/discover/sensitives [POST]
@@ -119,8 +116,8 @@ This endpoint will accept an array of text values, and attampt to extract sensit
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
@@ -157,8 +154,7 @@ No authorization required
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a id="discoveryDiscoverTagsRelated"></a>
-## **discoveryDiscoverTagsRelated**
+## **discoveryDiscoverTagsRelated** {#discoverydiscovertagsrelated}
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated(automatic, seededDiscoverableRelatedTags)
 
 /discovery/discover/tags/related [POST]
@@ -168,8 +164,8 @@ This will take in a tag or multiple tags and return all the tags that are relate
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.

@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**applicationUpdate**](#applicationupdate) | **POST** /application/update | /application/update [GET]
 
 
-<a id="applicationUpdate"></a>
-## **applicationUpdate**
+## **applicationUpdate** {#applicationupdate}
 > Application applicationUpdate(application)
 
 /application/update [GET]
@@ -18,8 +17,8 @@ This is an endpoint for updating an application.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationApi()
 val application : Application =  // Application | 

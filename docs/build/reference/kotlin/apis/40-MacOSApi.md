@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**assetsCreateNewAssetFromMacos**](#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
-<a id="assetsCreateNewAssetFromMacos"></a>
-## **assetsCreateNewAssetFromMacos**
+## **assetsCreateNewAssetFromMacos** {#assetscreatenewassetfrommacos}
 > Asset assetsCreateNewAssetFromMacos(seededMacOSAsset)
 
 /macos/assets/create [Post]
@@ -18,8 +17,8 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MacOSApi()
 val seededMacOSAsset : SeededMacOSAsset =  // SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance

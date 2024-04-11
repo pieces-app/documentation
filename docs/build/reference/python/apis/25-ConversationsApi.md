@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\}
-[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create
-[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete
-[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers
-[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations
-[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
+[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create | /conversations/create [POST]
+[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
+[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
+[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations | /conversations [GET]
+[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
 ## **conversations_create_from_asset** {#conversations_create_from_asset}
@@ -356,9 +356,9 @@ No authorization required
 ## **conversations_stream_identifiers** {#conversations_stream_identifiers}
 > conversations_stream_identifiers()
 
-/conversations/stream/identifiers [STREAMED]
+/conversations/stream/identifiers [WS]
 
-Provides a continuous stream of conversation identifiers. It returns StreamedIdentifiers.
+Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
 ### Example
 
@@ -381,7 +381,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     api_instance = pieces_os_client.ConversationsApi(api_client)
 
     try:
-        # /conversations/stream/identifiers [STREAMED]
+        # /conversations/stream/identifiers [WS]
         api_instance.conversations_stream_identifiers()
     except Exception as e:
         print("Exception when calling ConversationsApi->conversations_stream_identifiers: %s\n" % e)

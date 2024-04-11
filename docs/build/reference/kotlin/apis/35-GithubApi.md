@@ -7,8 +7,7 @@ Method | HTTP request | Description
 [**importGithubGists**](#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
-<a id="importGithubGists"></a>
-## **importGithubGists**
+## **importGithubGists** {#importgithubgists}
 > Seeds importGithubGists(automatic, seededGithubGistsImport)
 
 /github/gists/import [POST]
@@ -18,8 +17,8 @@ This will attempt to get all the gist availble and return them to the user as a 
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = GithubApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.

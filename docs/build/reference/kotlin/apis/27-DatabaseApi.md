@@ -8,8 +8,7 @@ Method | HTTP request | Description
 [**databaseImport**](#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
-<a id="databaseExport"></a>
-## **databaseExport**
+## **databaseExport** {#databaseexport}
 > ExportedDatabase databaseExport()
 
 Your GET endpoint
@@ -19,8 +18,8 @@ This is going to export your current database.
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DatabaseApi()
 try {
@@ -51,8 +50,7 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a id="databaseImport"></a>
-## **databaseImport**
+## **databaseImport** {#databaseimport}
 > databaseImport(exportedDatabase)
 
 /database/import [POST]
@@ -62,8 +60,8 @@ This is going to take in a database, and merge it with the current database. Thi
 ### Example
 ```kotlin
 // Import classes:
-//import org.openapitools.client.infrastructure.*
-//import org.openapitools.client.models.*
+//import app.pieces.pieces-os-client.infrastructure.*
+//import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DatabaseApi()
 val exportedDatabase : ExportedDatabase =  // ExportedDatabase | 

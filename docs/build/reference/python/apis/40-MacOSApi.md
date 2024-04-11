@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**assets_create_new_asset_from_macos**](MacOSApi#assets_create_new_asset_from_macos) | **POST** /macos/assets/create
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**assets_create_new_asset_from_macos**](MacOSApi#assets_create_new_asset_from_macos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
 ## **assets_create_new_asset_from_macos** {#assets_create_new_asset_from_macos}
