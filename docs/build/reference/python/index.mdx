@@ -104,11 +104,11 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
     try:
         # Retrieve the (wellknown) version of the Pieces OS
-        api_response = api_instance.get_well_known_version()
-        print("The response of WellKnownApi().get_well_known_version:")
-        print(api_response)
+        api_response = api_instance.get_well_known_health()
+        print("The response of WellKnownApi().get_well_known_health:")
+        print(api_response) # ok
     except Exception as e:
-        print("Exception when calling WellKnownApi->get_well_known_version: %s\n" % e)
+        print("Exception when calling WellKnownApi->get_well_known_health: %s\n" % e)
 ```
 
 Run the Python script to see the output:

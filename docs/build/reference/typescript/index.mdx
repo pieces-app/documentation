@@ -102,8 +102,8 @@ const configuration = Pieces.Configuration({
 })
 const apiInstance = new Pieces.WellKnownApi(configuration)
 
-apiInstance.getWellKnownVersion().then((data: string) => {
-  console.log('Pieces OS Version: ' + data)
+apiInstance.getWellKnownHealth().then((data: string) => {
+  console.log(data) // ok
 }).catch((error: unknown) => console.error(error))
 ```
 

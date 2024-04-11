@@ -68,7 +68,8 @@ To get started with the Pieces SDK, follow these steps:
         ```dart
         dependencies:
           pieces_os_client:
-            path: /path/to/pieces-os-client-sdk-for-dart
+            git:
+              url: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
         ```
       </TabItem>
     </Tabs>
@@ -97,7 +98,7 @@ Future<void> main() async {
 
   try {
     final result = await api_instance.getWellKnownHealth();
-    print(result);
+    print(result); // ok
   } catch (e) {
     print('Exception when calling WellKnownApi->getWellKnownHealth: $e\n');
   }
