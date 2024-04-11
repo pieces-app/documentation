@@ -84,7 +84,7 @@ For macOS and Windows, you should use `localhost:1000`.
 
 Create a `config.ts` file and add the following code:
 
-```typescript title="config.ts"
+```typescript title="main.ts"
 import * as Pieces from '@pieces.app/pieces-os-client'
 import os from 'os';
 
@@ -100,14 +100,7 @@ if (platform === 'linux') {
 const configuration = Pieces.Configuration({
   basePath: `http://localhost:${port}`
 })
-export const apiInstance = new Pieces.WellKnownApi(configuration)
-```
-
-Create a `main.ts` file and add the following code:
-
-```typescript title="main.ts"
-import * as Pieces from '@pieces.app/pieces-os-client'
-import { apiInstance } from './config'
+const apiInstance = new Pieces.WellKnownApi(configuration)
 
 apiInstance.getWellKnownHealth().then((data: string) => {
   console.log(data) // ok

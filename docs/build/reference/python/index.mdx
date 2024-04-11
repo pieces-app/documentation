@@ -70,9 +70,9 @@ For macOS and Windows, you should use `localhost:1000`.
 
 :::
 
-Create a `config.py` file and add the following code:
+Create a `main.py` file and add this code to confirm you have installed the correct package:
 
-```python title="config.py"
+```python title="main.py"
 import pieces_os_client
 import platform
 
@@ -89,13 +89,6 @@ configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
 
 # Initialize the ApiClient globally
 api_client = pieces_os_client.ApiClient(configuration)
-```
-
-Create a `wellknown.py` file and add this code to confirm you have installed the correct package:
-
-```python title="wellknown.py"
-import pieces_os_client
-from config import configuration
 
 # Enter a context with an instance of the ApiClient
 with pieces_os_client.ApiClient(configuration) as api_client:
@@ -114,7 +107,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 Run the Python script to see the output:
 
 ```shell
-python3 wellknown.py
+python3 main.py
 ```
 
 ## Next Steps
