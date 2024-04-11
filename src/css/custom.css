@@ -136,6 +136,29 @@ html[data-theme='dark'] .header-github-link:before {
   margin: 20px auto;
 }
 
+/*Image Row*/
+.image-2x1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 820px) {
+  .grid-3xN {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2xN, .grid-3xN {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-2x1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 1000px) {
   .hero-container {
     flex-direction: column;
@@ -172,18 +195,6 @@ html[data-theme='dark'] .header-github-link:before {
   padding: 20px;
   border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
-}
-
-@media (max-width: 820px) {
-  .grid-3xN {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-2xN, .grid-3xN {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 /*CTAButton Classes*/

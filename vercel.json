@@ -36,6 +36,21 @@
       "statusCode": 301
     },
     {
+      "source": "/extensions-plugins/chrome",
+      "destination": "/extensions-plugins/web-extension",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/edge",
+      "destination": "/extensions-plugins/web-extension",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/firefox",
+      "destination": "/extensions-plugins/web-extension",
+      "statusCode": 301
+    },
+    {
       "source": "/extensions-plugins/azuredatastudio",
       "destination": "/extensions-plugins/azure-data-studio",
         "statusCode": 301
