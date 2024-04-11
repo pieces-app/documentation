@@ -2,18 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**linkProvider**](#linkprovider) | **POST** /os/link_provider
-[**osDeviceInformation**](#osdeviceinformation) | **GET** /os/device/information
-[**osPermissions**](#ospermissions) | **GET** /os/permissions
-[**osPermissionsRequest**](#ospermissionsrequest) | **POST** /os/permissions/request
-[**osRestart**](#osrestart) | **GET** /os/restart
-[**osUpdateCheck**](#osupdatecheck) | **POST** /os/update/check
-[**pickFiles**](#pickfiles) | **POST** /os/files/pick
-[**pickFolders**](#pickfolders) | **POST** /os/folders/pick
-[**signIntoOS**](#signintoos) | **POST** /os/sign_in
-[**signOutOfOS**](#signoutofos) | **POST** /os/sign_out
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**linkProvider**](#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**osDeviceInformation**](#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
+[**osPermissions**](#ospermissions) | **GET** /os/permissions | /os/permissions [GET]
+[**osPermissionsRequest**](#ospermissionsrequest) | **POST** /os/permissions/request | /os/permissions/request [POST]
+[**osRestart**](#osrestart) | **GET** /os/restart | Your GET endpoint
+[**osUpdateCheck**](#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
+[**pickFiles**](#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pickFolders**](#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**signIntoOS**](#signintoos) | **POST** /os/sign_in | 
+[**signOutOfOS**](#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 ## **linkProvider** {#linkprovider}

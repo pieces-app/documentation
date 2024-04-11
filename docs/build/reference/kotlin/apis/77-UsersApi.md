@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**authenticateFromOauthToken**](#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token
-[**usersDisconnectUser**](#usersdisconnectuser) | **POST** /users/\{user\}/disconnect
-[**usersSnapshot**](#userssnapshot) | **GET** /users
-[**usersSpecificUserSnapshot**](#usersspecificusersnapshot) | **GET** /users/\{user\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**authenticateFromOauthToken**](#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
+[**usersDisconnectUser**](#usersdisconnectuser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
+[**usersSnapshot**](#userssnapshot) | **GET** /users | /users [GET]
+[**usersSpecificUserSnapshot**](#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
 
 
 ## **authenticateFromOauthToken** {#authenticatefromoauthtoken}

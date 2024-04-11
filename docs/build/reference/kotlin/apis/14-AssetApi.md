@@ -2,23 +2,23 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**assetAssociateTag**](#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\}
-[**assetAssociateWebsite**](#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\}
-[**assetAssociateWorkstreamSummary**](#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\}
-[**assetDisassociateTag**](#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\}
-[**assetDisassociateWebsite**](#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\}
-[**assetDisassociateWorkstreamSummary**](#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**assetFormats**](#assetformats) | **GET** /asset/\{asset\}/formats
-[**assetReclassify**](#assetreclassify) | **POST** /asset/reclassify
-[**assetScoresIncrement**](#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment
-[**assetSnapshot**](#assetsnapshot) | **GET** /asset/\{asset\}
-[**assetSnapshotPost**](#assetsnapshotpost) | **POST** /asset/\{asset\}
-[**assetSpecificAssetActivities**](#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities
-[**assetSpecificAssetConversations**](#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations
-[**assetSpecificAssetExport**](#assetspecificassetexport) | **GET** /asset/\{asset\}/export
-[**assetUpdate**](#assetupdate) | **POST** /asset/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**assetAssociateTag**](#assetassociatetag) | **POST** /asset/\{asset\}/tags/associate/\{tag\} | /asset/\{asset\}/tags/associate/\{tag\} [POST]
+[**assetAssociateWebsite**](#assetassociatewebsite) | **POST** /asset/\{asset\}/websites/associate/\{website\} | /asset/\{asset\}/websites/associate/\{website\} [POST]
+[**assetAssociateWorkstreamSummary**](#assetassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**assetDisassociateTag**](#assetdisassociatetag) | **POST** /asset/\{asset\}/tags/disassociate/\{tag\} | /asset/\{asset\}/tags/disassociate/\{tag\} [POST]
+[**assetDisassociateWebsite**](#assetdisassociatewebsite) | **POST** /asset/\{asset\}/websites/disassociate/\{website\} | /asset/\{asset\}/websites/disassociate/\{website\} [POST]
+[**assetDisassociateWorkstreamSummary**](#assetdisassociateworkstreamsummary) | **POST** /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} | /asset/\{asset\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**assetFormats**](#assetformats) | **GET** /asset/\{asset\}/formats | /asset/\{asset\}/formats [GET] Scoped To Asset
+[**assetReclassify**](#assetreclassify) | **POST** /asset/reclassify | /asset/reclassify [POST]
+[**assetScoresIncrement**](#assetscoresincrement) | **POST** /asset/\{asset\}/scores/increment | /asset/\{asset\}/scores/increment [POST]
+[**assetSnapshot**](#assetsnapshot) | **GET** /asset/\{asset\} | /asset/\{asset\} [GET] Scoped To Asset
+[**assetSnapshotPost**](#assetsnapshotpost) | **POST** /asset/\{asset\} | /asset/\{asset\} [POST] Scoped to an Asset
+[**assetSpecificAssetActivities**](#assetspecificassetactivities) | **GET** /asset/\{asset\}/activities | /asset/\{asset\}/activities [GET]
+[**assetSpecificAssetConversations**](#assetspecificassetconversations) | **GET** /asset/\{asset\}/conversations | /asset/\{asset\}/conversations [GET]
+[**assetSpecificAssetExport**](#assetspecificassetexport) | **GET** /asset/\{asset\}/export | /asset/\{asset\}/export [GET]
+[**assetUpdate**](#assetupdate) | **POST** /asset/update | /asset/update [POST] Scoped to Asset
 
 
 ## **assetAssociateTag** {#assetassociatetag}

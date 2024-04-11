@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\}
-[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create
-[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete
-[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
+[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
+[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
+[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
 
 
 ## **personDisassociateAsset** {#persondisassociateasset}

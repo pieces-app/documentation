@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**sensitives_create_new_sensitive**](SensitivesApi#sensitives_create_new_sensitive) | **POST** /sensitives/create
-[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/\{sensitive\}/delete
-[**sensitives_snapshot**](SensitivesApi#sensitives_snapshot) | **GET** /sensitives
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**sensitives_create_new_sensitive**](SensitivesApi#sensitives_create_new_sensitive) | **POST** /sensitives/create | /sensitives/create [POST]
+[**sensitives_delete_sensitive**](SensitivesApi#sensitives_delete_sensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
+[**sensitives_snapshot**](SensitivesApi#sensitives_snapshot) | **GET** /sensitives | /sensitives [GET]
 
 
 ## **sensitives_create_new_sensitive** {#sensitives_create_new_sensitive}

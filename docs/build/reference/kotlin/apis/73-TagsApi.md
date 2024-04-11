@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**tagsCreateNewTag**](#tagscreatenewtag) | **POST** /tags/create
-[**tagsDeleteSpecificTag**](#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete
-[**tagsExists**](#tagsexists) | **POST** /tags/exists
-[**tagsSnapshot**](#tagssnapshot) | **GET** /tags
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**tagsCreateNewTag**](#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
+[**tagsDeleteSpecificTag**](#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
+[**tagsExists**](#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
+[**tagsSnapshot**](#tagssnapshot) | **GET** /tags | /tags [GET]
 
 
 ## **tagsCreateNewTag** {#tagscreatenewtag}

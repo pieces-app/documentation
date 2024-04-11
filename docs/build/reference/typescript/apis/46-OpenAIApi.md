@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
 ## **openAiModelsList** {#openaimodelslist}

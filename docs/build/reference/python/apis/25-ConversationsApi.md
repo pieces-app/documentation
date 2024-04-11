@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\}
-[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create
-[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete
-[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers
-[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations
-[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**conversations_create_from_asset**](ConversationsApi#conversations_create_from_asset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
+[**conversations_create_specific_conversation**](ConversationsApi#conversations_create_specific_conversation) | **POST** /conversations/create | /conversations/create [POST]
+[**conversations_delete_specific_conversation**](ConversationsApi#conversations_delete_specific_conversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
+[**conversations_identifiers_snapshot**](ConversationsApi#conversations_identifiers_snapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
+[**conversations_snapshot**](ConversationsApi#conversations_snapshot) | **GET** /conversations | /conversations [GET]
+[**conversations_stream_identifiers**](ConversationsApi#conversations_stream_identifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
 ## **conversations_create_from_asset** {#conversations_create_from_asset}

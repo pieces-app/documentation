@@ -2,26 +2,26 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**conversationAssociateAnchor**](#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\}
-[**conversationAssociateAsset**](#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\}
-[**conversationAssociateGroundingTemporalRangeWorkstream**](#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\}
-[**conversationAssociateWebsite**](#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\}
-[**conversationAssociateWorkstreamSummary**](#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\}
-[**conversationDisassociateAnchor**](#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\}
-[**conversationDisassociateAsset**](#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\}
-[**conversationDisassociateGroundingTemporalRangeWorkstream**](#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\}
-[**conversationDisassociateWebsite**](#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\}
-[**conversationDisassociateWorkstreamSummary**](#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**conversationGetSpecificConversation**](#conversationgetspecificconversation) | **GET** /conversation/\{conversation\}
-[**conversationGroundingMessagesAssociateMessage**](#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\}
-[**conversationGroundingMessagesDisassociateMessage**](#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\}
-[**conversationScoresIncrement**](#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment
-[**conversationSpecificConversationMessages**](#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages
-[**conversationSpecificConversationRename**](#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename
-[**conversationSummarize**](#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize
-[**conversationUpdate**](#conversationupdate) | **POST** /conversation/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**conversationAssociateAnchor**](#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
+[**conversationAssociateAsset**](#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversationAssociateGroundingTemporalRangeWorkstream**](#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
+[**conversationAssociateWebsite**](#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversationAssociateWorkstreamSummary**](#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**conversationDisassociateAnchor**](#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
+[**conversationDisassociateAsset**](#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversationDisassociateGroundingTemporalRangeWorkstream**](#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
+[**conversationDisassociateWebsite**](#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversationDisassociateWorkstreamSummary**](#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**conversationGetSpecificConversation**](#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
+[**conversationGroundingMessagesAssociateMessage**](#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
+[**conversationGroundingMessagesDisassociateMessage**](#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
+[**conversationScoresIncrement**](#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | /conversation/\{conversation\}/scores/increment [POST]
+[**conversationSpecificConversationMessages**](#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
+[**conversationSpecificConversationRename**](#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
+[**conversationSummarize**](#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
+[**conversationUpdate**](#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
 
 
 ## **conversationAssociateAnchor** {#conversationassociateanchor}

@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstreamEventsCreateNewWorkstreamEvent**](#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create
-[**workstreamEventsDeleteSpecificWorkstreamEvent**](#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete
-[**workstreamEventsSnapshot**](#workstreameventssnapshot) | **GET** /workstream_events
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstreamEventsCreateNewWorkstreamEvent**](#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create | /workstream_events/create [POST]
+[**workstreamEventsDeleteSpecificWorkstreamEvent**](#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete | /workstream_events/\{workstream_event\}/delete [POST]
+[**workstreamEventsSnapshot**](#workstreameventssnapshot) | **GET** /workstream_events | /workstream_events [GET]
 
 
 ## **workstreamEventsCreateNewWorkstreamEvent** {#workstreameventscreatenewworkstreamevent}

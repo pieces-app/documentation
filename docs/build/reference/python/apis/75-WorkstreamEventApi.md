@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstream_event_associate_workstream_summary**](WorkstreamEventApi#workstream_event_associate_workstream_summary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
-[**workstream_event_disassociate_workstream_summary**](WorkstreamEventApi#workstream_event_disassociate_workstream_summary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**workstream_event_scores_increment**](WorkstreamEventApi#workstream_event_scores_increment) | **POST** /workstream_event/\{workstream_event\}/scores/increment
-[**workstream_event_update**](WorkstreamEventApi#workstream_event_update) | **POST** /workstream_event/update
-[**workstream_events_specific_workstream_event_snapshot**](WorkstreamEventApi#workstream_events_specific_workstream_event_snapshot) | **GET** /workstream_event/\{workstream_event\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstream_event_associate_workstream_summary**](WorkstreamEventApi#workstream_event_associate_workstream_summary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**workstream_event_disassociate_workstream_summary**](WorkstreamEventApi#workstream_event_disassociate_workstream_summary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**workstream_event_scores_increment**](WorkstreamEventApi#workstream_event_scores_increment) | **POST** /workstream_event/\{workstream_event\}/scores/increment | '/workstream_event/\{workstream_event\}/scores/increment' [POST]
+[**workstream_event_update**](WorkstreamEventApi#workstream_event_update) | **POST** /workstream_event/update | /workstream_event/update [POST]
+[**workstream_events_specific_workstream_event_snapshot**](WorkstreamEventApi#workstream_events_specific_workstream_event_snapshot) | **GET** /workstream_event/\{workstream_event\} | /workstream_event/\{workstream_event\} [GET]
 
 
 ## **workstream_event_associate_workstream_summary** {#workstream_event_associate_workstream_summary}

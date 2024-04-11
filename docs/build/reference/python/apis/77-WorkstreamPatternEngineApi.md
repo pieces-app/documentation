@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstream_pattern_engine_processors_vision_activate**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_activate) | **POST** /workstream_pattern_engine/processors/vision/activate
-[**workstream_pattern_engine_processors_vision_data_clear**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_data_clear) | **POST** /workstream_pattern_engine/processors/vision/data/clear
-[**workstream_pattern_engine_processors_vision_deactivate**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_deactivate) | **POST** /workstream_pattern_engine/processors/vision/deactivate
-[**workstream_pattern_engine_processors_vision_status**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_status) | **GET** /workstream_pattern_engine/processors/vision/status
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstream_pattern_engine_processors_vision_activate**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_activate) | **POST** /workstream_pattern_engine/processors/vision/activate | /workstream_pattern_engine/processors/vision/activate [POST]
+[**workstream_pattern_engine_processors_vision_data_clear**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_data_clear) | **POST** /workstream_pattern_engine/processors/vision/data/clear | /workstream_pattern_engine/processors/vision/data/clear [POST]
+[**workstream_pattern_engine_processors_vision_deactivate**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_deactivate) | **POST** /workstream_pattern_engine/processors/vision/deactivate | /workstream_pattern_engine/processors/vision/deactivate [POST]
+[**workstream_pattern_engine_processors_vision_status**](WorkstreamPatternEngineApi#workstream_pattern_engine_processors_vision_status) | **GET** /workstream_pattern_engine/processors/vision/status | /workstream_pattern_engine/processors/vision/status [GET]
 
 
 ## **workstream_pattern_engine_processors_vision_activate** {#workstream_pattern_engine_processors_vision_activate}

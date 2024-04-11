@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**tagAssociateAsset**](#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\}
-[**tagAssociatePerson**](#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\}
-[**tagDisassociateAsset**](#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\}
-[**tagDisassociatePerson**](#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\}
-[**tagScoresIncrement**](#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment
-[**tagUpdate**](#tagupdate) | **POST** /tag/update
-[**tagsSpecificTagSnapshot**](#tagsspecifictagsnapshot) | **GET** /tag/\{tag\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**tagAssociateAsset**](#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
+[**tagAssociatePerson**](#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
+[**tagDisassociateAsset**](#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
+[**tagDisassociatePerson**](#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
+[**tagScoresIncrement**](#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | '/tag/\{tag\}/scores/increment' [POST]
+[**tagUpdate**](#tagupdate) | **POST** /tag/update | /tag/update [POST]
+[**tagsSpecificTagSnapshot**](#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
 ## **tagAssociateAsset** {#tagassociateasset}

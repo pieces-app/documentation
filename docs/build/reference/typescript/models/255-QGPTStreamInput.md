@@ -12,6 +12,7 @@ Name | Type
 **request** | **string**
 **conversation** | **string**
 **stop** | **boolean**
+**reset** | **boolean**
 **agent** | **boolean**
 
 ## Example Model
@@ -26,6 +27,7 @@ const example: QGPTStreamInput = {
     "request": null,
     "conversation": null,
     "stop": null,
+    "reset": null,
     "agent": null,
 }
 

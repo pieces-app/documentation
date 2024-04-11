@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**discoveryDiscoverAssets**](#discoverydiscoverassets) | **POST** /discovery/discover/assets
-[**discoveryDiscoverAssetsHtml**](#discoverydiscoverassetshtml) | **POST** /discovery/discover/assets/html
-[**discoveryDiscoverSensitives**](#discoverydiscoversensitives) | **POST** /discovery/discover/sensitives
-[**discoveryDiscoverTagsRelated**](#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**discoveryDiscoverAssets**](#discoverydiscoverassets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
+[**discoveryDiscoverAssetsHtml**](#discoverydiscoverassetshtml) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
+[**discoveryDiscoverSensitives**](#discoverydiscoversensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
+[**discoveryDiscoverTagsRelated**](#discoverydiscovertagsrelated) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
 ## **discoveryDiscoverAssets** {#discoverydiscoverassets}

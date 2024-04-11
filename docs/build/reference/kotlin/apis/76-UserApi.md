@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**clearUser**](#clearuser) | **POST** /user/clear
-[**refreshUser**](#refreshuser) | **GET** /user/refresh
-[**selectUser**](#selectuser) | **POST** /user/select
-[**streamUser**](#streamuser) | **GET** /user/stream
-[**updateUser**](#updateuser) | **POST** /user/update
-[**userBetaStatus**](#userbetastatus) | **POST** /user/beta/status
-[**userProviders**](#userproviders) | **GET** /user/providers
-[**userSnapshot**](#usersnapshot) | **GET** /user
-[**userUpdateVanity**](#userupdatevanity) | **POST** /user/update/vanity
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**clearUser**](#clearuser) | **POST** /user/clear | /user/clear
+[**refreshUser**](#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
+[**selectUser**](#selectuser) | **POST** /user/select | /user/select [POST]
+[**streamUser**](#streamuser) | **GET** /user/stream | /user/stream [WS]
+[**updateUser**](#updateuser) | **POST** /user/update | /user/update [POST]
+[**userBetaStatus**](#userbetastatus) | **POST** /user/beta/status | /user/beta/status [POST]
+[**userProviders**](#userproviders) | **GET** /user/providers | Your GET endpoint
+[**userSnapshot**](#usersnapshot) | **GET** /user | /user [GET]
+[**userUpdateVanity**](#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
 ## **clearUser** {#clearuser}

@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**assetsCreateUltraSuiteAsset**](#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**assetsCreateUltraSuiteAsset**](#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
 ## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}

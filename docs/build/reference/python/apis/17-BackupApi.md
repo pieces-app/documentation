@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**backup**](BackupApi#backup) | **POST** /backup
-[**backup_asset**](BackupApi#backup_asset) | **POST** /backup/asset
-[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/\{backup\}/restore
-[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/\{backup\}/restore/streamed
-[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/\{backup\}
-[**backup_specific_creation_cancel**](BackupApi#backup_specific_creation_cancel) | **POST** /backup/\{backup\}/creation/cancel
-[**backup_specific_creation_status**](BackupApi#backup_specific_creation_status) | **GET** /backup/\{backup\}/creation/status
-[**backup_specific_restoration_cancel**](BackupApi#backup_specific_restoration_cancel) | **POST** /backup/\{backup\}/restoration/cancel
-[**backup_specific_restoration_status**](BackupApi#backup_specific_restoration_status) | **GET** /backup/\{backup\}/restoration/status
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**backup**](BackupApi#backup) | **POST** /backup | /backup [POST]
+[**backup_asset**](BackupApi#backup_asset) | **POST** /backup/asset | /backup/asset [POST]
+[**backup_restore_specific_backup**](BackupApi#backup_restore_specific_backup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backup_restore_specific_backup_streamed**](BackupApi#backup_restore_specific_backup_streamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backup_specific_backup_snapshot**](BackupApi#backup_specific_backup_snapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+[**backup_specific_creation_cancel**](BackupApi#backup_specific_creation_cancel) | **POST** /backup/\{backup\}/creation/cancel | /backup/\{backup\}/creation/cancel [POST]
+[**backup_specific_creation_status**](BackupApi#backup_specific_creation_status) | **GET** /backup/\{backup\}/creation/status | /backup/\{backup\}/creation/status [GET]
+[**backup_specific_restoration_cancel**](BackupApi#backup_specific_restoration_cancel) | **POST** /backup/\{backup\}/restoration/cancel | /backup/\{backup\}/restoration/cancel [POST]
+[**backup_specific_restoration_status**](BackupApi#backup_specific_restoration_status) | **GET** /backup/\{backup\}/restoration/status | /backup/\{backup\}/restoration/status [GET]
 
 
 ## **backup** {#backup}

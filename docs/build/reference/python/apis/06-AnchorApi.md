@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**anchor_associate_workstream_summary**](AnchorApi#anchor_associate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
-[**anchor_disassociate_workstream_summary**](AnchorApi#anchor_disassociate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename
-[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment
-[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\}
-[**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**anchor_associate_workstream_summary**](AnchorApi#anchor_associate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**anchor_disassociate_workstream_summary**](AnchorApi#anchor_disassociate_workstream_summary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**anchor_rename**](AnchorApi#anchor_rename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchor_scores_increment**](AnchorApi#anchor_scores_increment) | **POST** /anchor/\{anchor\}/scores/increment | '/anchor/\{anchor\}/scores/increment' [POST]
+[**anchor_specific_anchor_snapshot**](AnchorApi#anchor_specific_anchor_snapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
+[**anchor_update**](AnchorApi#anchor_update) | **POST** /anchor/update | /anchor/update [POST]
 
 
 ## **anchor_associate_workstream_summary** {#anchor_associate_workstream_summary}

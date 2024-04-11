@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create
-[**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed
-[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete
-[**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
+[**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
+[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
+[**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
 ## **backupsCreateNewBackup** {#backupscreatenewbackup}
@@ -55,6 +55,8 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
 ## **backupsCreateNewBackupStreamed** {#backupscreatenewbackupstreamed}
 > BackupStreamedProgress backupsCreateNewBackupStreamed()
@@ -101,6 +103,8 @@ Name | Type | Description  | Notes
 |-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
 ## **backupsDeleteSpecificBackup** {#backupsdeletespecificbackup}
 > backupsDeleteSpecificBackup()
@@ -150,6 +154,8 @@ void (empty response body)
 |-------------|-------------|------------------
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
 ## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
@@ -188,5 +194,7 @@ This endpoint does not need any parameters.
 |-------------|-------------|------------------
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
+**505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
 

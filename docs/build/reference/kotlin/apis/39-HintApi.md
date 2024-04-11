@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**hintScoresIncrement**](#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment
-[**hintSpecificHintSnapshot**](#hintspecifichintsnapshot) | **GET** /hint/\{hint\}
-[**hintUpdate**](#hintupdate) | **POST** /hint/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**hintScoresIncrement**](#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | '/hint/\{hint\}/scores/increment' [POST]
+[**hintSpecificHintSnapshot**](#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
+[**hintUpdate**](#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
 ## **hintScoresIncrement** {#hintscoresincrement}

@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**messageAssociateAnnotation**](#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\}
-[**messageDisassociateAnnotation**](#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\}
-[**messageScoresIncrement**](#messagescoresincrement) | **POST** /message/\{message\}/scores/increment
-[**messageSpecificMessageSnapshot**](#messagespecificmessagesnapshot) | **GET** /message/\{message\}
-[**messageSpecificMessageUpdate**](#messagespecificmessageupdate) | **POST** /message/update
-[**messageUpdateValue**](#messageupdatevalue) | **POST** /message/update/value
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**messageAssociateAnnotation**](#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**messageDisassociateAnnotation**](#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**messageScoresIncrement**](#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | '/message/\{message\}/scores/increment' [POST]
+[**messageSpecificMessageSnapshot**](#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
+[**messageSpecificMessageUpdate**](#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
+[**messageUpdateValue**](#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
 ## **messageAssociateAnnotation** {#messageassociateannotation}

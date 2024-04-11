@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create
-[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete
-[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
+[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
+[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
 ## **hintsCreateNewHint** {#hintscreatenewhint}

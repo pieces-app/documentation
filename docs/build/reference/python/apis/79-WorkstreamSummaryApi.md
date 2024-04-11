@@ -2,25 +2,25 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstream_summaries_specific_workstream_summary_snapshot**](WorkstreamSummaryApi#workstream_summaries_specific_workstream_summary_snapshot) | **GET** /workstream_summary/\{workstream_summary\}
-[**workstream_summary_associate_anchor**](WorkstreamSummaryApi#workstream_summary_associate_anchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\}
-[**workstream_summary_associate_asset**](WorkstreamSummaryApi#workstream_summary_associate_asset) | **POST** /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\}
-[**workstream_summary_associate_conversation**](WorkstreamSummaryApi#workstream_summary_associate_conversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\}
-[**workstream_summary_associate_person**](WorkstreamSummaryApi#workstream_summary_associate_person) | **POST** /workstream_summary/\{workstream_summary\}/persons/associate/\{person\}
-[**workstream_summary_associate_range**](WorkstreamSummaryApi#workstream_summary_associate_range) | **POST** /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\}
-[**workstream_summary_associate_website**](WorkstreamSummaryApi#workstream_summary_associate_website) | **POST** /workstream_summary/\{workstream_summary\}/websites/associate/\{website\}
-[**workstream_summary_associate_workstream_event**](WorkstreamSummaryApi#workstream_summary_associate_workstream_event) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\}
-[**workstream_summary_disassociate_anchor**](WorkstreamSummaryApi#workstream_summary_disassociate_anchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\}
-[**workstream_summary_disassociate_asset**](WorkstreamSummaryApi#workstream_summary_disassociate_asset) | **POST** /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\}
-[**workstream_summary_disassociate_conversation**](WorkstreamSummaryApi#workstream_summary_disassociate_conversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\}
-[**workstream_summary_disassociate_person**](WorkstreamSummaryApi#workstream_summary_disassociate_person) | **POST** /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\}
-[**workstream_summary_disassociate_range**](WorkstreamSummaryApi#workstream_summary_disassociate_range) | **POST** /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\}
-[**workstream_summary_disassociate_website**](WorkstreamSummaryApi#workstream_summary_disassociate_website) | **POST** /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\}
-[**workstream_summary_disassociate_workstream_event**](WorkstreamSummaryApi#workstream_summary_disassociate_workstream_event) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\}
-[**workstream_summary_scores_increment**](WorkstreamSummaryApi#workstream_summary_scores_increment) | **POST** /workstream_summary/\{workstream_summary\}/scores/increment
-[**workstream_summary_update**](WorkstreamSummaryApi#workstream_summary_update) | **POST** /workstream_summary/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstream_summaries_specific_workstream_summary_snapshot**](WorkstreamSummaryApi#workstream_summaries_specific_workstream_summary_snapshot) | **GET** /workstream_summary/\{workstream_summary\} | /workstream_summary/\{workstream_summary\} [GET]
+[**workstream_summary_associate_anchor**](WorkstreamSummaryApi#workstream_summary_associate_anchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} [POST]
+[**workstream_summary_associate_asset**](WorkstreamSummaryApi#workstream_summary_associate_asset) | **POST** /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} [POST]
+[**workstream_summary_associate_conversation**](WorkstreamSummaryApi#workstream_summary_associate_conversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} [POST]
+[**workstream_summary_associate_person**](WorkstreamSummaryApi#workstream_summary_associate_person) | **POST** /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} [POST]
+[**workstream_summary_associate_range**](WorkstreamSummaryApi#workstream_summary_associate_range) | **POST** /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} [POST]
+[**workstream_summary_associate_website**](WorkstreamSummaryApi#workstream_summary_associate_website) | **POST** /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} [POST]
+[**workstream_summary_associate_workstream_event**](WorkstreamSummaryApi#workstream_summary_associate_workstream_event) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} [POST]
+[**workstream_summary_disassociate_anchor**](WorkstreamSummaryApi#workstream_summary_disassociate_anchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} [POST]
+[**workstream_summary_disassociate_asset**](WorkstreamSummaryApi#workstream_summary_disassociate_asset) | **POST** /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} [POST]
+[**workstream_summary_disassociate_conversation**](WorkstreamSummaryApi#workstream_summary_disassociate_conversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} [POST]
+[**workstream_summary_disassociate_person**](WorkstreamSummaryApi#workstream_summary_disassociate_person) | **POST** /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} [POST]
+[**workstream_summary_disassociate_range**](WorkstreamSummaryApi#workstream_summary_disassociate_range) | **POST** /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} [POST]
+[**workstream_summary_disassociate_website**](WorkstreamSummaryApi#workstream_summary_disassociate_website) | **POST** /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} [POST]
+[**workstream_summary_disassociate_workstream_event**](WorkstreamSummaryApi#workstream_summary_disassociate_workstream_event) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} [POST]
+[**workstream_summary_scores_increment**](WorkstreamSummaryApi#workstream_summary_scores_increment) | **POST** /workstream_summary/\{workstream_summary\}/scores/increment | '/workstream_summary/\{workstream_summary\}/scores/increment' [POST]
+[**workstream_summary_update**](WorkstreamSummaryApi#workstream_summary_update) | **POST** /workstream_summary/update | /workstream_summary/update [POST]
 
 
 ## **workstream_summaries_specific_workstream_summary_snapshot** {#workstream_summaries_specific_workstream_summary_snapshot}

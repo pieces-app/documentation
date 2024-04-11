@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**hints**](#hints) | **POST** /qgpt/hints
-[**personsRelated**](#personsrelated) | **POST** /qgpt/persons/related
-[**qgptStream**](#qgptstream) | **GET** /qgpt/stream
-[**question**](#question) | **POST** /qgpt/question
-[**relevance**](#relevance) | **POST** /qgpt/relevance
-[**reprompt**](#reprompt) | **POST** /qgpt/reprompt
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**hints**](#hints) | **POST** /qgpt/hints | /qgpt/hints [POST]
+[**personsRelated**](#personsrelated) | **POST** /qgpt/persons/related | /qgpt/persons/related [POST]
+[**qgptStream**](#qgptstream) | **GET** /qgpt/stream | /qgpt/stream [WS]
+[**question**](#question) | **POST** /qgpt/question | /qgpt/question [POST]
+[**relevance**](#relevance) | **POST** /qgpt/relevance | /qgpt/relevance [POST]
+[**reprompt**](#reprompt) | **POST** /qgpt/reprompt | /qgpt/reprompt [POST]
 
 
 ## **hints** {#hints}

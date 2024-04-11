@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**rangesCreateNewRange**](#rangescreatenewrange) | **POST** /ranges/create
-[**rangesDeleteSpecificRange**](#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete
-[**rangesSnapshot**](#rangessnapshot) | **GET** /ranges
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**rangesCreateNewRange**](#rangescreatenewrange) | **POST** /ranges/create | /ranges/create [POST]
+[**rangesDeleteSpecificRange**](#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete | /ranges/\{range\}/delete [POST]
+[**rangesSnapshot**](#rangessnapshot) | **GET** /ranges | /ranges [GET]
 
 
 ## **rangesCreateNewRange** {#rangescreatenewrange}

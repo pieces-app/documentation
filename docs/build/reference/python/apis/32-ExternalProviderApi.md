@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**external_provider_api_key_create**](ExternalProviderApi#external_provider_api_key_create) | **POST** /external_provider/api_key/create
-[**external_provider_api_key_delete**](ExternalProviderApi#external_provider_api_key_delete) | **POST** /external_provider/api_key/delete
-[**external_provider_api_key_update**](ExternalProviderApi#external_provider_api_key_update) | **POST** /external_provider/api_key/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**external_provider_api_key_create**](ExternalProviderApi#external_provider_api_key_create) | **POST** /external_provider/api_key/create | /external_provider/api_key/create [POST]
+[**external_provider_api_key_delete**](ExternalProviderApi#external_provider_api_key_delete) | **POST** /external_provider/api_key/delete | /external_provider/api_key/delete [POST]
+[**external_provider_api_key_update**](ExternalProviderApi#external_provider_api_key_update) | **POST** /external_provider/api_key/update | /external_provider/api_key/update [POST]
 
 
 ## **external_provider_api_key_create** {#external_provider_api_key_create}

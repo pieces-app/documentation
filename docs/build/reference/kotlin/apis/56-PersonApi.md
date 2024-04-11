@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**personAssociateWorkstreamSummary**](#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\}
-[**personDisassociateWorkstreamSummary**](#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**personScoresIncrement**](#personscoresincrement) | **POST** /person/\{person\}/scores/increment
-[**personSnapshot**](#personsnapshot) | **GET** /person/\{person\}
-[**updatePerson**](#updateperson) | **POST** /person/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**personAssociateWorkstreamSummary**](#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**personDisassociateWorkstreamSummary**](#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**personScoresIncrement**](#personscoresincrement) | **POST** /person/\{person\}/scores/increment | '/person/\{person\}/scores/increment' [POST]
+[**personSnapshot**](#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
+[**updatePerson**](#updateperson) | **POST** /person/update | /person/update [POST]
 
 
 ## **personAssociateWorkstreamSummary** {#personassociateworkstreamsummary}

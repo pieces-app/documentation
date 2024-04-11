@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**sensitiveScoresIncrement**](#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment
-[**sensitiveSnapshot**](#sensitivesnapshot) | **GET** /sensitive/\{sensitive\}
-[**updateSensitive**](#updatesensitive) | **POST** /sensitive/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**sensitiveScoresIncrement**](#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | '/sensitive/\{sensitive\}/scores/increment' [POST]
+[**sensitiveSnapshot**](#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
+[**updateSensitive**](#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
 ## **sensitiveScoresIncrement** {#sensitivescoresincrement}

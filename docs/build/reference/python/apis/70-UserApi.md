@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**clear_user**](UserApi#clear_user) | **POST** /user/clear
-[**refresh_user**](UserApi#refresh_user) | **GET** /user/refresh
-[**select_user**](UserApi#select_user) | **POST** /user/select
-[**stream_user**](UserApi#stream_user) | **GET** /user/stream
-[**update_user**](UserApi#update_user) | **POST** /user/update
-[**user_beta_status**](UserApi#user_beta_status) | **POST** /user/beta/status
-[**user_providers**](UserApi#user_providers) | **GET** /user/providers
-[**user_snapshot**](UserApi#user_snapshot) | **GET** /user
-[**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**clear_user**](UserApi#clear_user) | **POST** /user/clear | /user/clear
+[**refresh_user**](UserApi#refresh_user) | **GET** /user/refresh | /user/refresh [GET]
+[**select_user**](UserApi#select_user) | **POST** /user/select | /user/select [POST]
+[**stream_user**](UserApi#stream_user) | **GET** /user/stream | /user/stream [WS]
+[**update_user**](UserApi#update_user) | **POST** /user/update | /user/update [POST]
+[**user_beta_status**](UserApi#user_beta_status) | **POST** /user/beta/status | /user/beta/status [POST]
+[**user_providers**](UserApi#user_providers) | **GET** /user/providers | Your GET endpoint
+[**user_snapshot**](UserApi#user_snapshot) | **GET** /user | /user [GET]
+[**user_update_vanity**](UserApi#user_update_vanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
 ## **clear_user** {#clear_user}

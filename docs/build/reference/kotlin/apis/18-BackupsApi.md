@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**backupsCreateNewBackup**](#backupscreatenewbackup) | **POST** /backups/create
-[**backupsCreateNewBackupStreamed**](#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed
-[**backupsDeleteSpecificBackup**](#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete
-[**backupsSnapshot**](#backupssnapshot) | **GET** /backups
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**backupsCreateNewBackup**](#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
+[**backupsCreateNewBackupStreamed**](#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
+[**backupsDeleteSpecificBackup**](#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
+[**backupsSnapshot**](#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
 ## **backupsCreateNewBackup** {#backupscreatenewbackup}

@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstreamEventAssociateWorkstreamSummary**](#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\}
-[**workstreamEventDisassociateWorkstreamSummary**](#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**workstreamEventScoresIncrement**](#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment
-[**workstreamEventUpdate**](#workstreameventupdate) | **POST** /workstream_event/update
-[**workstreamEventsSpecificWorkstreamEventSnapshot**](#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstreamEventAssociateWorkstreamSummary**](#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**workstreamEventDisassociateWorkstreamSummary**](#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**workstreamEventScoresIncrement**](#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment | '/workstream_event/\{workstream_event\}/scores/increment' [POST]
+[**workstreamEventUpdate**](#workstreameventupdate) | **POST** /workstream_event/update | /workstream_event/update [POST]
+[**workstreamEventsSpecificWorkstreamEventSnapshot**](#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\} | /workstream_event/\{workstream_event\} [GET]
 
 
 ## **workstreamEventAssociateWorkstreamSummary** {#workstreameventassociateworkstreamsummary}

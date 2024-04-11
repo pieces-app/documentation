@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**websiteAssociateAsset**](#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\}
-[**websiteAssociateConversation**](#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\}
-[**websiteAssociatePerson**](#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\}
-[**websiteAssociateWorkstreamSummary**](#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\}
-[**websiteDisassociateAsset**](#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\}
-[**websiteDisassociateConversation**](#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\}
-[**websiteDisassociatePerson**](#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\}
-[**websiteDisassociateWorkstreamSummary**](#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**websiteScoresIncrement**](#websitescoresincrement) | **POST** /website/\{website\}/scores/increment
-[**websiteUpdate**](#websiteupdate) | **POST** /website/update
-[**websitesSpecificWebsiteSnapshot**](#websitesspecificwebsitesnapshot) | **GET** /website/\{website\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**websiteAssociateAsset**](#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**websiteAssociateConversation**](#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**websiteAssociatePerson**](#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**websiteAssociateWorkstreamSummary**](#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**websiteDisassociateAsset**](#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**websiteDisassociateConversation**](#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**websiteDisassociatePerson**](#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**websiteDisassociateWorkstreamSummary**](#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**websiteScoresIncrement**](#websitescoresincrement) | **POST** /website/\{website\}/scores/increment | '/website/\{website\}/scores/increment' [POST]
+[**websiteUpdate**](#websiteupdate) | **POST** /website/update | /website/update [POST]
+[**websitesSpecificWebsiteSnapshot**](#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
 ## **websiteAssociateAsset** {#websiteassociateasset}

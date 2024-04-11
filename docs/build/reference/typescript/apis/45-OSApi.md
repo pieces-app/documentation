@@ -2,16 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider
-[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information
-[**osRestart**](OSApi#osrestart) | **GET** /os/restart
-[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check
-[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick
-[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick
-[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in
-[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
+[**osPermissions**](OSApi#ospermissions) | **GET** /os/permissions | /os/permissions [GET]
+[**osPermissionsRequest**](OSApi#ospermissionsrequest) | **POST** /os/permissions/request | /os/permissions/request [POST]
+[**osRestart**](OSApi#osrestart) | **GET** /os/restart | Your GET endpoint
+[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
+[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in | 
+[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 ## **linkProvider** {#linkprovider}
@@ -90,6 +92,90 @@ This endpoint does not need any parameters.
 ### HTTP Model request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP Model response details
+| Status code | Description | Response headers
+|-------------|-------------|------------------
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+## **osPermissions** {#ospermissions}
+> OSPermissions osPermissions()
+
+This will only work on Macos and Windows.  And will get the permissions of the user\'s local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
+
+### Example Model
+
+```typescript
+import * as Pieces from '@pieces.app/pieces-os-client'
+
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.OSApi(configuration)
+
+apiInstance.osPermissions().then((data: OSPermissions) => {
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
+```
+
+### Parameters Model
+This endpoint does not need any parameters.
+
+
+### Return Model type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### HTTP Model request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+### HTTP Model response details
+| Status code | Description | Response headers
+|-------------|-------------|------------------
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+
+## **osPermissionsRequest** {#ospermissionsrequest}
+> OSPermissions osPermissionsRequest()
+
+This will only work on Macos and Windows.  This will request permissions for the given inputs
+
+### Example Model
+
+```typescript
+import * as Pieces from '@pieces.app/pieces-os-client'
+
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.OSApi(configuration)
+
+const body: Pieces.OsPermissionsRequestRequest = {
+    // OSPermissions (optional)
+    oSPermissions: ,
+};
+
+apiInstance.osPermissionsRequest(body).then((data: OSPermissions) => {
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
+```
+
+### Parameters Model
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oSPermissions** | **OSPermissions**|  |
+
+
+### Return Model type
+
+[**OSPermissions**](../models/OSPermissions)
+
+### HTTP Model request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 

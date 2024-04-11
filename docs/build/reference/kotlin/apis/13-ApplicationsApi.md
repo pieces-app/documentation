@@ -2,20 +2,20 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**applicationsExternalRelated**](#applicationsexternalrelated) | **GET** /applications/external/related
-[**applicationsExternalSnapshot**](#applicationsexternalsnapshot) | **GET** /applications/external
-[**applicationsRegister - (Deprecated)**](#applicationsregister) | **POST** /applications/register
-[**applicationsSessionClose - (Deprecated)**](#applicationssessionclose) | **POST** /applications/session/close
-[**applicationsSessionOpen - (Deprecated)**](#applicationssessionopen) | **POST** /applications/session/open
-[**applicationsSessionSnapshot - (Deprecated)**](#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\}
-[**applicationsSnapshot**](#applicationssnapshot) | **GET** /applications
-[**applicationsSpecificApplicationSnapshot**](#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\}
-[**applicationsUsageEngagementInteraction - (Deprecated)**](#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction
-[**applicationsUsageEngagementKeyboard - (Deprecated)**](#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard
-[**applicationsUsageInstallation - (Deprecated)**](#applicationsusageinstallation) | **POST** /applications/usage/installation
-[**postApplicationsUsageUpdated - (Deprecated)**](#postapplicationsusageupdated) | **POST** /applications/usage/updated
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**applicationsExternalRelated**](#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
+[**applicationsExternalSnapshot**](#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
+[**applicationsRegister - (Deprecated)**](#applicationsregister) | **POST** /applications/register | /applications/register [POST]
+[**applicationsSessionClose - (Deprecated)**](#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applicationsSessionOpen - (Deprecated)**](#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applicationsSessionSnapshot - (Deprecated)**](#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applicationsSnapshot**](#applicationssnapshot) | **GET** /applications | /applications [GET]
+[**applicationsSpecificApplicationSnapshot**](#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
+[**applicationsUsageEngagementInteraction - (Deprecated)**](#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applicationsUsageEngagementKeyboard - (Deprecated)**](#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applicationsUsageInstallation - (Deprecated)**](#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**postApplicationsUsageUpdated - (Deprecated)**](#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
 ## **applicationsExternalRelated** {#applicationsexternalrelated}

@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**conversationsCreateFromAsset**](#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\}
-[**conversationsCreateSpecificConversation**](#conversationscreatespecificconversation) | **POST** /conversations/create
-[**conversationsDeleteSpecificConversation**](#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete
-[**conversationsIdentifiersSnapshot**](#conversationsidentifierssnapshot) | **GET** /conversations/identifiers
-[**conversationsSnapshot**](#conversationssnapshot) | **GET** /conversations
-[**conversationsStreamIdentifiers**](#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**conversationsCreateFromAsset**](#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
+[**conversationsCreateSpecificConversation**](#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
+[**conversationsDeleteSpecificConversation**](#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
+[**conversationsIdentifiersSnapshot**](#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
+[**conversationsSnapshot**](#conversationssnapshot) | **GET** /conversations | /conversations [GET]
+[**conversationsStreamIdentifiers**](#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
 ## **conversationsCreateFromAsset** {#conversationscreatefromasset}

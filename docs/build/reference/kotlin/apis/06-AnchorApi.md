@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**anchorAssociateWorkstreamSummary**](#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\}
-[**anchorDisassociateWorkstreamSummary**](#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**anchorRename**](#anchorrename) | **POST** /anchor/\{anchor\}/rename
-[**anchorScoresIncrement**](#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment
-[**anchorSpecificAnchorSnapshot**](#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\}
-[**anchorUpdate**](#anchorupdate) | **POST** /anchor/update
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**anchorAssociateWorkstreamSummary**](#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**anchorDisassociateWorkstreamSummary**](#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**anchorRename**](#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchorScoresIncrement**](#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | '/anchor/\{anchor\}/scores/increment' [POST]
+[**anchorSpecificAnchorSnapshot**](#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
+[**anchorUpdate**](#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
 
 
 ## **anchorAssociateWorkstreamSummary** {#anchorassociateworkstreamsummary}

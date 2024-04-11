@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**discovery_discover_assets**](DiscoveryApi#discovery_discover_assets) | **POST** /discovery/discover/assets
-[**discovery_discover_assets_html**](DiscoveryApi#discovery_discover_assets_html) | **POST** /discovery/discover/assets/html
-[**discovery_discover_sensitives**](DiscoveryApi#discovery_discover_sensitives) | **POST** /discovery/discover/sensitives
-[**discovery_discover_tags_related**](DiscoveryApi#discovery_discover_tags_related) | **POST** /discovery/discover/tags/related
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**discovery_discover_assets**](DiscoveryApi#discovery_discover_assets) | **POST** /discovery/discover/assets | /discovery/discover/assets [POST]
+[**discovery_discover_assets_html**](DiscoveryApi#discovery_discover_assets_html) | **POST** /discovery/discover/assets/html | /discovery/discover/assets/html[POST]
+[**discovery_discover_sensitives**](DiscoveryApi#discovery_discover_sensitives) | **POST** /discovery/discover/sensitives | /discovery/discover/sensitives [POST]
+[**discovery_discover_tags_related**](DiscoveryApi#discovery_discover_tags_related) | **POST** /discovery/discover/tags/related | /discovery/discover/tags/related [POST]
 
 
 ## **discovery_discover_assets** {#discovery_discover_assets}

@@ -2,23 +2,23 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**assets_create_new_asset**](AssetsApi#assets_create_new_asset) | **POST** /assets/create
-[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/\{asset\}/delete
-[**assets_draft**](AssetsApi#assets_draft) | **POST** /assets/draft
-[**assets_get_recommended_assets**](AssetsApi#assets_get_recommended_assets) | **GET** /assets/recommended
-[**assets_get_related_assets**](AssetsApi#assets_get_related_assets) | **GET** /assets/related
-[**assets_identifiers_snapshot**](AssetsApi#assets_identifiers_snapshot) | **GET** /assets/identifiers
-[**assets_pseudo_snapshot**](AssetsApi#assets_pseudo_snapshot) | **GET** /assets/pseudo
-[**assets_search_assets**](AssetsApi#assets_search_assets) | **GET** /assets/search
-[**assets_search_with_filters**](AssetsApi#assets_search_with_filters) | **POST** /assets/search
-[**assets_snapshot**](AssetsApi#assets_snapshot) | **GET** /assets
-[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/\{asset\}/formats
-[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/\{asset\}
-[**assets_stream_identifiers**](AssetsApi#assets_stream_identifiers) | **GET** /assets/stream/identifiers
-[**get_assets_stream_transferables**](AssetsApi#get_assets_stream_transferables) | **GET** /assets/stream/transferables
-[**stream_assets**](AssetsApi#stream_assets) | **GET** /assets/stream
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**assets_create_new_asset**](AssetsApi#assets_create_new_asset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
+[**assets_delete_asset**](AssetsApi#assets_delete_asset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
+[**assets_draft**](AssetsApi#assets_draft) | **POST** /assets/draft | /assets/draft [POST]
+[**assets_get_recommended_assets**](AssetsApi#assets_get_recommended_assets) | **GET** /assets/recommended | Your GET endpoint
+[**assets_get_related_assets**](AssetsApi#assets_get_related_assets) | **GET** /assets/related | /assets/related [GET]
+[**assets_identifiers_snapshot**](AssetsApi#assets_identifiers_snapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
+[**assets_pseudo_snapshot**](AssetsApi#assets_pseudo_snapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
+[**assets_search_assets**](AssetsApi#assets_search_assets) | **GET** /assets/search | /assets/search?query=string [GET]
+[**assets_search_with_filters**](AssetsApi#assets_search_with_filters) | **POST** /assets/search | /assets/search [POST]
+[**assets_snapshot**](AssetsApi#assets_snapshot) | **GET** /assets | /assets [GET] Scoped to Assets
+[**assets_specific_asset_formats_snapshot**](AssetsApi#assets_specific_asset_formats_snapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assets_specific_asset_snapshot**](AssetsApi#assets_specific_asset_snapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
+[**assets_stream_identifiers**](AssetsApi#assets_stream_identifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [WS]
+[**get_assets_stream_transferables**](AssetsApi#get_assets_stream_transferables) | **GET** /assets/stream/transferables | /assets/stream/transferables [WS]
+[**stream_assets**](AssetsApi#stream_assets) | **GET** /assets/stream | /assets/stream [WS]
 
 
 ## **assets_create_new_asset** {#assets_create_new_asset}

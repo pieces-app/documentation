@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**hints**](QGPTApi#hints) | **POST** /qgpt/hints
-[**persons_related**](QGPTApi#persons_related) | **POST** /qgpt/persons/related
-[**qgpt_stream**](QGPTApi#qgpt_stream) | **GET** /qgpt/stream
-[**question**](QGPTApi#question) | **POST** /qgpt/question
-[**relevance**](QGPTApi#relevance) | **POST** /qgpt/relevance
-[**reprompt**](QGPTApi#reprompt) | **POST** /qgpt/reprompt
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**hints**](QGPTApi#hints) | **POST** /qgpt/hints | /qgpt/hints [POST]
+[**persons_related**](QGPTApi#persons_related) | **POST** /qgpt/persons/related | /qgpt/persons/related [POST]
+[**qgpt_stream**](QGPTApi#qgpt_stream) | **GET** /qgpt/stream | /qgpt/stream [WS]
+[**question**](QGPTApi#question) | **POST** /qgpt/question | /qgpt/question [POST]
+[**relevance**](QGPTApi#relevance) | **POST** /qgpt/relevance | /qgpt/relevance [POST]
+[**reprompt**](QGPTApi#reprompt) | **POST** /qgpt/reprompt | /qgpt/reprompt [POST]
 
 
 ## **hints** {#hints}

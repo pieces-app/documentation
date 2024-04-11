@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**convertGenericClassification**](#convertgenericclassification) | **POST** /classification/generic/convert
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**convertGenericClassification**](#convertgenericclassification) | **POST** /classification/generic/convert | Convert Generic Classification
 
 
 ## **convertGenericClassification** {#convertgenericclassification}

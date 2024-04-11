@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**auth0Logout**](#auth0logout) | **GET** /v2/logout
-[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize
-[**exchangeForAuth0Token**](#exchangeforauth0token) | **POST** /oauth/token
-[**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**auth0Logout**](#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
+[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**exchangeForAuth0Token**](#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
+[**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
 
 ## **auth0Logout** {#auth0logout}

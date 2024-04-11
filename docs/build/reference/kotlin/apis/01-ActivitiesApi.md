@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**activitiesCreateNewActivity**](#activitiescreatenewactivity) | **POST** /activities/create
-[**activitiesDeleteSpecificActivity**](#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete
-[**activitiesSnapshot**](#activitiessnapshot) | **GET** /activities
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**activitiesCreateNewActivity**](#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
+[**activitiesDeleteSpecificActivity**](#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
+[**activitiesSnapshot**](#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
 ## **activitiesCreateNewActivity** {#activitiescreatenewactivity}

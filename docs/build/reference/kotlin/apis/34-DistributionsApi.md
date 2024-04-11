@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**distributionsCreateNewDistribution**](#distributionscreatenewdistribution) | **POST** /distributions/create
-[**distributionsDeleteSpecificDistribution**](#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete
-[**distributionsSnapshot**](#distributionssnapshot) | **GET** /distributions
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**distributionsCreateNewDistribution**](#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
+[**distributionsDeleteSpecificDistribution**](#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
+[**distributionsSnapshot**](#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
 ## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}

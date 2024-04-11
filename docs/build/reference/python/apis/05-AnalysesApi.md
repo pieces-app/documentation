@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**analyses_snapshot**](AnalysesApi#analyses_snapshot) | **GET** /analyses
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**analyses_snapshot**](AnalysesApi#analyses_snapshot) | **GET** /analyses | Your GET endpoint
 
 
 ## **analyses_snapshot** {#analyses_snapshot}

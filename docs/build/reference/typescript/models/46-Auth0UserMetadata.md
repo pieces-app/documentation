@@ -14,7 +14,7 @@ Name | Type
 **vanityname** | **string**
 **allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata)
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata)
-**beta** | [**TimestampRange**](TimestampRange)
+**beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange)
 
 ## Example Model
 

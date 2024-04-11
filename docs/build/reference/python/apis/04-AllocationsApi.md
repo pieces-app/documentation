@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**allocations_connect_new_cloud**](AllocationsApi#allocations_connect_new_cloud) | **POST** /allocations/connect
-[**allocations_create_new_allocation**](AllocationsApi#allocations_create_new_allocation) | **POST** /allocations/create
-[**allocations_delete_allocation**](AllocationsApi#allocations_delete_allocation) | **POST** /allocations/delete
-[**allocations_disconnect_cloud**](AllocationsApi#allocations_disconnect_cloud) | **POST** /allocations/disconnect
-[**allocations_reconnect_cloud**](AllocationsApi#allocations_reconnect_cloud) | **POST** /allocations/reconnect
-[**allocations_snapshot**](AllocationsApi#allocations_snapshot) | **GET** /allocations
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**allocations_connect_new_cloud**](AllocationsApi#allocations_connect_new_cloud) | **POST** /allocations/connect | /allocations/connect [POST]
+[**allocations_create_new_allocation**](AllocationsApi#allocations_create_new_allocation) | **POST** /allocations/create | /allocations/create [POST]
+[**allocations_delete_allocation**](AllocationsApi#allocations_delete_allocation) | **POST** /allocations/delete | /allocations/delete [POST]
+[**allocations_disconnect_cloud**](AllocationsApi#allocations_disconnect_cloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
+[**allocations_reconnect_cloud**](AllocationsApi#allocations_reconnect_cloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
+[**allocations_snapshot**](AllocationsApi#allocations_snapshot) | **GET** /allocations | /allocations [GET]
 
 
 ## **allocations_connect_new_cloud** {#allocations_connect_new_cloud}

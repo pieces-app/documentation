@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**allocationsConnectNewCloud**](#allocationsconnectnewcloud) | **POST** /allocations/connect
-[**allocationsCreateNewAllocation**](#allocationscreatenewallocation) | **POST** /allocations/create
-[**allocationsDeleteAllocation**](#allocationsdeleteallocation) | **POST** /allocations/delete
-[**allocationsDisconnectCloud**](#allocationsdisconnectcloud) | **POST** /allocations/disconnect
-[**allocationsReconnectCloud**](#allocationsreconnectcloud) | **POST** /allocations/reconnect
-[**allocationsSnapshot**](#allocationssnapshot) | **GET** /allocations
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**allocationsConnectNewCloud**](#allocationsconnectnewcloud) | **POST** /allocations/connect | /allocations/connect [POST]
+[**allocationsCreateNewAllocation**](#allocationscreatenewallocation) | **POST** /allocations/create | /allocations/create [POST]
+[**allocationsDeleteAllocation**](#allocationsdeleteallocation) | **POST** /allocations/delete | /allocations/delete [POST]
+[**allocationsDisconnectCloud**](#allocationsdisconnectcloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
+[**allocationsReconnectCloud**](#allocationsreconnectcloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
+[**allocationsSnapshot**](#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
 ## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}

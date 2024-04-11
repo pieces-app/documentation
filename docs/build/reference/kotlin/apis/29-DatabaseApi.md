@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**databaseExport**](#databaseexport) | **GET** /database/export
-[**databaseImport**](#databaseimport) | **POST** /database/import
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**databaseExport**](#databaseexport) | **GET** /database/export | Your GET endpoint
+[**databaseImport**](#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
 ## **databaseExport** {#databaseexport}

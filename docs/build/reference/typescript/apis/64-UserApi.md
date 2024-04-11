@@ -2,16 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**clearUser**](UserApi#clearuser) | **POST** /user/clear
-[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh
-[**selectUser**](UserApi#selectuser) | **POST** /user/select
-[**streamUser**](UserApi#streamuser) | **GET** /user/stream
-[**updateUser**](UserApi#updateuser) | **POST** /user/update
-[**userProviders**](UserApi#userproviders) | **GET** /user/providers
-[**userSnapshot**](UserApi#usersnapshot) | **GET** /user
-[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**clearUser**](UserApi#clearuser) | **POST** /user/clear | /user/clear
+[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
+[**selectUser**](UserApi#selectuser) | **POST** /user/select | /user/select [POST]
+[**streamUser**](UserApi#streamuser) | **GET** /user/stream | /user/stream [WS]
+[**updateUser**](UserApi#updateuser) | **POST** /user/update | /user/update [POST]
+[**userBetaStatus**](UserApi#userbetastatus) | **POST** /user/beta/status | /user/beta/status [POST]
+[**userProviders**](UserApi#userproviders) | **GET** /user/providers | Your GET endpoint
+[**userSnapshot**](UserApi#usersnapshot) | **GET** /user | /user [GET]
+[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
 ## **clearUser** {#clearuser}
@@ -137,7 +138,7 @@ Name | Type | Description  | Notes
 ## **streamUser** {#streamuser}
 > UserProfile streamUser()
 
-This will stream in the current user, not quiet sure yet how we want to do this.
+Provides a WebSocket connection that streams user data.
 
 ### Example Model
 
@@ -215,6 +216,53 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
+
+## **userBetaStatus** {#userbetastatus}
+> UserBetaStatus userBetaStatus()
+
+This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
+
+### Example Model
+
+```typescript
+import * as Pieces from '@pieces.app/pieces-os-client'
+
+const configuration = Pieces.Configuration()
+const apiInstance = new Pieces.UserApi(configuration)
+
+const body: Pieces.UserBetaStatusRequest = {
+    // UserBetaStatus (optional)
+    userBetaStatus: ,
+};
+
+apiInstance.userBetaStatus(body).then((data: UserBetaStatus) => {
+    console.log('API called successfully. Returned data: ' + data)
+}).catch((error: unknown) => console.error(error))
+```
+
+### Parameters Model
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userBetaStatus** | **UserBetaStatus**|  |
+
+
+### Return Model type
+
+[**UserBetaStatus**](../models/UserBetaStatus)
+
+### HTTP Model request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+### HTTP Model response details
+| Status code | Description | Response headers
+|-------------|-------------|------------------
+**200** | OK |  -  |
+**500** | Internal Server Error |  -  |
+**511** | Authentication Required, This means that you user needs to be authenticated with OS in order to change the beta status |  -  |
 
 ## **userProviders** {#userproviders}
 > ReturnedUserProfile userProviders()

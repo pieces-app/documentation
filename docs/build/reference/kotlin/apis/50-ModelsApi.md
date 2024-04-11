@@ -2,13 +2,13 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**modelsCreateNewModel**](#modelscreatenewmodel) | **POST** /models/create
-[**modelsDeleteSpecificModel**](#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete
-[**modelsDeleteSpecificModelCache**](#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache
-[**modelsSnapshot**](#modelssnapshot) | **GET** /models
-[**unloadModels**](#unloadmodels) | **POST** /models/unload
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**modelsCreateNewModel**](#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
+[**modelsDeleteSpecificModel**](#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
+[**modelsDeleteSpecificModelCache**](#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
+[**modelsSnapshot**](#modelssnapshot) | **GET** /models | /models [GET]
+[**unloadModels**](#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
 ## **modelsCreateNewModel** {#modelscreatenewmodel}

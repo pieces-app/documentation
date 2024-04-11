@@ -2,19 +2,19 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**website_associate_asset**](WebsiteApi#website_associate_asset) | **POST** /website/\{website\}/assets/associate/\{asset\}
-[**website_associate_conversation**](WebsiteApi#website_associate_conversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\}
-[**website_associate_person**](WebsiteApi#website_associate_person) | **POST** /website/\{website\}/persons/associate/\{person\}
-[**website_associate_workstream_summary**](WebsiteApi#website_associate_workstream_summary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\}
-[**website_disassociate_asset**](WebsiteApi#website_disassociate_asset) | **POST** /website/\{website\}/assets/disassociate/\{asset\}
-[**website_disassociate_conversation**](WebsiteApi#website_disassociate_conversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\}
-[**website_disassociate_person**](WebsiteApi#website_disassociate_person) | **POST** /website/\{website\}/persons/disassociate/\{person\}
-[**website_disassociate_workstream_summary**](WebsiteApi#website_disassociate_workstream_summary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\}
-[**website_scores_increment**](WebsiteApi#website_scores_increment) | **POST** /website/\{website\}/scores/increment
-[**website_update**](WebsiteApi#website_update) | **POST** /website/update
-[**websites_specific_website_snapshot**](WebsiteApi#websites_specific_website_snapshot) | **GET** /website/\{website\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**website_associate_asset**](WebsiteApi#website_associate_asset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**website_associate_conversation**](WebsiteApi#website_associate_conversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**website_associate_person**](WebsiteApi#website_associate_person) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**website_associate_workstream_summary**](WebsiteApi#website_associate_workstream_summary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**website_disassociate_asset**](WebsiteApi#website_disassociate_asset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**website_disassociate_conversation**](WebsiteApi#website_disassociate_conversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**website_disassociate_person**](WebsiteApi#website_disassociate_person) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**website_disassociate_workstream_summary**](WebsiteApi#website_disassociate_workstream_summary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**website_scores_increment**](WebsiteApi#website_scores_increment) | **POST** /website/\{website\}/scores/increment | '/website/\{website\}/scores/increment' [POST]
+[**website_update**](WebsiteApi#website_update) | **POST** /website/update | /website/update [POST]
+[**websites_specific_website_snapshot**](WebsiteApi#websites_specific_website_snapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
 ## **website_associate_asset** {#website_associate_asset}

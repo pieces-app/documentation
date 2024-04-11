@@ -2,14 +2,14 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**connect**](#connect) | **POST** /connect
-[**intention**](#intention) | **POST** /\{application\}/intention
-[**onboarded**](#onboarded) | **POST** /\{application\}/onboarded
-[**react**](#react) | **POST** /\{application\}/reaction
-[**suggest**](#suggest) | **POST** /\{application\}/suggestion
-[**track**](#track) | **POST** /\{application\}/track
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**connect**](#connect) | **POST** /connect | /connect [POST]
+[**intention**](#intention) | **POST** /\{application\}/intention | /\{application\}/intention [POST]
+[**onboarded**](#onboarded) | **POST** /\{application\}/onboarded | /onboarded [POST]
+[**react**](#react) | **POST** /\{application\}/reaction | /\{application\}/reaction [POST]
+[**suggest**](#suggest) | **POST** /\{application\}/suggestion | /\{application\}/suggestion [POST]
+[**track**](#track) | **POST** /\{application\}/track | /\{application\}/track [POST]
 
 
 ## **connect** {#connect}

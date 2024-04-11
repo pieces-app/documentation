@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**fullTextSearch**](SearchApi#fulltextsearch) | **GET** /search/full_text
-[**neuralCodeSearch**](SearchApi#neuralcodesearch) | **GET** /search/neural_code
-[**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**fullTextSearch**](SearchApi#fulltextsearch) | **GET** /search/full_text | /search/full_text [GET]
+[**neuralCodeSearch**](SearchApi#neuralcodesearch) | **GET** /search/neural_code | /search/neural_code [GET]
+[**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based | /search/tag_based [POST]
 
 
 ## **fullTextSearch** {#fulltextsearch}

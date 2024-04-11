@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**distributionUpdate**](#distributionupdate) | **POST** /distribution/update
-[**distributionsSpecificDistributionSnapshot**](#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**distributionUpdate**](#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
+[**distributionsSpecificDistributionSnapshot**](#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
 ## **distributionUpdate** {#distributionupdate}

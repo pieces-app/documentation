@@ -2,18 +2,18 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider
-[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information
-[**osPermissions**](OSApi#ospermissions) | **GET** /os/permissions
-[**osPermissionsRequest**](OSApi#ospermissionsrequest) | **POST** /os/permissions/request
-[**osRestart**](OSApi#osrestart) | **GET** /os/restart
-[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check
-[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick
-[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick
-[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in
-[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
+[**osPermissions**](OSApi#ospermissions) | **GET** /os/permissions | /os/permissions [GET]
+[**osPermissionsRequest**](OSApi#ospermissionsrequest) | **POST** /os/permissions/request | /os/permissions/request [POST]
+[**osRestart**](OSApi#osrestart) | **GET** /os/restart | Your GET endpoint
+[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
+[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in | 
+[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 ## **linkProvider** {#linkprovider}

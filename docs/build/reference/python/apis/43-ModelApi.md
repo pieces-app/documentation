@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/\{model\}/download
-[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/\{model\}/download/cancel
-[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/\{model\}/download/progress
-[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/\{model\}/load
-[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/\{model\}/unload
-[**model_update**](ModelApi#model_update) | **POST** /model/update
-[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/\{model\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**model_specific_model_download**](ModelApi#model_specific_model_download) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**model_specific_model_download_cancel**](ModelApi#model_specific_model_download_cancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**model_specific_model_download_progress**](ModelApi#model_specific_model_download_progress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**model_specific_model_load**](ModelApi#model_specific_model_load) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**model_specific_model_unload**](ModelApi#model_specific_model_unload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
+[**model_update**](ModelApi#model_update) | **POST** /model/update | /model/update [POST]
+[**models_specific_model_snapshot**](ModelApi#models_specific_model_snapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
 ## **model_specific_model_download** {#model_specific_model_download}

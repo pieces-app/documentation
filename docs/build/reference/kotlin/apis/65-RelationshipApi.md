@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**relationshipsSpecificRelationshipSnapshot**](#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**relationshipsSpecificRelationshipSnapshot**](#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
 
 
 ## **relationshipsSpecificRelationshipSnapshot** {#relationshipsspecificrelationshipsnapshot}

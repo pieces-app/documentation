@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**annotationsCreateNewAnnotation**](#annotationscreatenewannotation) | **POST** /annotations/create
-[**annotationsDeleteSpecificAnnotation**](#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete
-[**annotationsSnapshot**](#annotationssnapshot) | **GET** /annotations
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**annotationsCreateNewAnnotation**](#annotationscreatenewannotation) | **POST** /annotations/create | /annotations/create [POST]
+[**annotationsDeleteSpecificAnnotation**](#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
+[**annotationsSnapshot**](#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
 ## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}

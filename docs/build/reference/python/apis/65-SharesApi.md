@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**shares_create_new_share**](SharesApi#shares_create_new_share) | **POST** /shares/create
-[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/\{share\}/delete
-[**shares_snapshot**](SharesApi#shares_snapshot) | **GET** /shares
-[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/\{share\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**shares_create_new_share**](SharesApi#shares_create_new_share) | **POST** /shares/create | /shares/create [POST]
+[**shares_delete_share**](SharesApi#shares_delete_share) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
+[**shares_snapshot**](SharesApi#shares_snapshot) | **GET** /shares | /shares [GET]
+[**shares_specific_share_snapshot**](SharesApi#shares_specific_share_snapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
 ## **shares_create_new_share** {#shares_create_new_share}

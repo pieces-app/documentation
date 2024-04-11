@@ -2,15 +2,15 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**modelSpecificModelDownload**](#modelspecificmodeldownload) | **POST** /model/\{model\}/download
-[**modelSpecificModelDownloadCancel**](#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel
-[**modelSpecificModelDownloadProgress**](#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress
-[**modelSpecificModelLoad**](#modelspecificmodelload) | **POST** /model/\{model\}/load
-[**modelSpecificModelUnload**](#modelspecificmodelunload) | **POST** /model/\{model\}/unload
-[**modelUpdate**](#modelupdate) | **POST** /model/update
-[**modelsSpecificModelSnapshot**](#modelsspecificmodelsnapshot) | **GET** /model/\{model\}
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**modelSpecificModelDownload**](#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**modelSpecificModelDownloadCancel**](#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**modelSpecificModelDownloadProgress**](#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**modelSpecificModelLoad**](#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**modelSpecificModelUnload**](#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
+[**modelUpdate**](#modelupdate) | **POST** /model/update | /model/update [POST]
+[**modelsSpecificModelSnapshot**](#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
 ## **modelSpecificModelDownload** {#modelspecificmodeldownload}

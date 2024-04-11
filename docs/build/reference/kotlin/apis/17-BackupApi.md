@@ -2,17 +2,17 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**backup**](#backup) | **POST** /backup
-[**backupAsset**](#backupasset) | **POST** /backup/asset
-[**backupRestoreSpecificBackup**](#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore
-[**backupRestoreSpecificBackupStreamed**](#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed
-[**backupSpecificBackupSnapshot**](#backupspecificbackupsnapshot) | **GET** /backup/\{backup\}
-[**backupSpecificCreationCancel**](#backupspecificcreationcancel) | **POST** /backup/\{backup\}/creation/cancel
-[**backupSpecificCreationStatus**](#backupspecificcreationstatus) | **GET** /backup/\{backup\}/creation/status
-[**backupSpecificRestorationCancel**](#backupspecificrestorationcancel) | **POST** /backup/\{backup\}/restoration/cancel
-[**backupSpecificRestorationStatus**](#backupspecificrestorationstatus) | **GET** /backup/\{backup\}/restoration/status
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**backup**](#backup) | **POST** /backup | /backup [POST]
+[**backupAsset**](#backupasset) | **POST** /backup/asset | /backup/asset [POST]
+[**backupRestoreSpecificBackup**](#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backupRestoreSpecificBackupStreamed**](#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backupSpecificBackupSnapshot**](#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+[**backupSpecificCreationCancel**](#backupspecificcreationcancel) | **POST** /backup/\{backup\}/creation/cancel | /backup/\{backup\}/creation/cancel [POST]
+[**backupSpecificCreationStatus**](#backupspecificcreationstatus) | **GET** /backup/\{backup\}/creation/status | /backup/\{backup\}/creation/status [GET]
+[**backupSpecificRestorationCancel**](#backupspecificrestorationcancel) | **POST** /backup/\{backup\}/restoration/cancel | /backup/\{backup\}/restoration/cancel [POST]
+[**backupSpecificRestorationStatus**](#backupspecificrestorationstatus) | **GET** /backup/\{backup\}/restoration/status | /backup/\{backup\}/restoration/status [GET]
 
 
 ## **backup** {#backup}

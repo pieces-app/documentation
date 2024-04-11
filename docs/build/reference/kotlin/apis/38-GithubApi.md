@@ -2,9 +2,9 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**importGithubGists**](#importgithubgists) | **POST** /github/gists/import
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**importGithubGists**](#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
 ## **importGithubGists** {#importgithubgists}

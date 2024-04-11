@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create
-[**anchorPointsDeleteSpecificAnchorPoint**](#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete
-[**anchorPointsSnapshot**](#anchorpointssnapshot) | **GET** /anchor_points
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**anchorPointsCreateNewAnchorPoint**](#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
+[**anchorPointsDeleteSpecificAnchorPoint**](#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
+[**anchorPointsSnapshot**](#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
 ## **anchorPointsCreateNewAnchorPoint** {#anchorpointscreatenewanchorpoint}

@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**messagesCreateSpecificMessage**](#messagescreatespecificmessage) | **POST** /messages/create
-[**messagesDeleteSpecificMessage**](#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete
-[**messagesSnapshot**](#messagessnapshot) | **GET** /messages
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**messagesCreateSpecificMessage**](#messagescreatespecificmessage) | **POST** /messages/create | /messages/create [POST]
+[**messagesDeleteSpecificMessage**](#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
+[**messagesSnapshot**](#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
 ## **messagesCreateSpecificMessage** {#messagescreatespecificmessage}

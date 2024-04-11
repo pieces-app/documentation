@@ -2,11 +2,11 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**workstreamSummariesCreateNewWorkstreamSummary**](#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create
-[**workstreamSummariesDeleteSpecificWorkstreamSummary**](#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete
-[**workstreamSummariesSnapshot**](#workstreamsummariessnapshot) | **GET** /workstream_summaries
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**workstreamSummariesCreateNewWorkstreamSummary**](#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create | /workstream_summaries/create [POST]
+[**workstreamSummariesDeleteSpecificWorkstreamSummary**](#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete | /workstream_summaries/\{workstream_summary\}/delete [POST]
+[**workstreamSummariesSnapshot**](#workstreamsummariessnapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
 
 
 ## **workstreamSummariesCreateNewWorkstreamSummary** {#workstreamsummariescreatenewworkstreamsummary}

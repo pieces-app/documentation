@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost:1000*
 
-Method | HTTP request
-------------- | -------------
-[**personificationTechnicalLanguageGeneration**](#personificationtechnicallanguagegeneration) | **POST** /machine_learning/text/technical_language/generators/personification
-[**segmentTechnicalLanguage**](#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**personificationTechnicalLanguageGeneration**](#personificationtechnicallanguagegeneration) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
+[**segmentTechnicalLanguage**](#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
 ## **personificationTechnicalLanguageGeneration** {#personificationtechnicallanguagegeneration}
