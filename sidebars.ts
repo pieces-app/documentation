@@ -261,11 +261,11 @@ const sidebars: SidebarsConfig = {
     //   id: 'build/concepts/index',
     //   label: '🧠 Concepts',
     // },
-    {
-      type: 'doc',
-      id: 'build/glossary/index',
-      label: '📖 Glossary',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'build/glossary/index',
+    //   label: '📖 Glossary',
+    // },
   ],
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars
