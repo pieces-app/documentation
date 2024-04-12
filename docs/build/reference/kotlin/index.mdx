@@ -76,13 +76,16 @@ val configuration = Configuration().apply {
     basePath = "http://localhost:$port"
 }
 
+// Initialize the Pieces ApiClient
 val apiClient = ApiClient(configuration)
+// Create an instance of the WellKnownApi class
 val apiInstance = WellKnownApi(apiClient)
 
 try {
+    // Retrieve the (wellknown) health of the Pieces OS
     val result: kotlin.String = apiInstance.getWellKnownHealth()
     println("The response of WellKnownApi().getWellKnownHealth:")
-    println(result)
+    println(result) // Response: ok
 } catch (e: ClientException) {
     println("4xx response calling WellKnownApi#getWellKnownHealth")
     e.printStackTrace()
