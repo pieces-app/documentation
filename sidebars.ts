@@ -239,8 +239,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
-      id: 'build/quick-start/index',
-      label: '⚡️ Quickstart',
+      id: 'build/examples/index',
+      label: '⚡️ Examples',
     },
     // {
     //   type: 'doc',
