@@ -11,7 +11,7 @@ const GlossaryComponent = () => {
   
     setCategories(definitions.categories);
     setTerms(definitions.terms);
-    setSelectedCategories(definitions.categories);
+    setSelectedCategories(["AIML"]);
   }, []);
 
   const toggleCategory = (category) => {
@@ -48,14 +48,16 @@ const GlossaryComponent = () => {
       </div>
       <ul className="term-list">
       {filteredTerms.map((term, index) => (
-  <li key={index} className="term">
-    {/* Updated to navigate on the same page */}
-    <a id={slugify(term.term)} href={term.referencePath} rel="noopener noreferrer" className="term-anchor">
-      <strong>{term.term}</strong>
-    </a>
-    : {getFirstLine(term.definition)}
-  </li>
-))}
+        <li key={index} className="term">
+            {/* Updated to navigate on the same page */}
+            <h3>
+                <a id={slugify(term.term)} href={term.referencePath} rel="noopener noreferrer" className="term-anchor">
+            <strong>{term.term}</strong>
+            </a>
+            </h3>
+            {getFirstLine(term.definition)}
+        </li>
+        ))}
       </ul>
     </div>
   );

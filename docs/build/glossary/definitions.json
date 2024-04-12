@@ -11,13 +11,13 @@
       "term": "Retrieval-Augmented Generation (RAG)",
       "definition": "Combines retrieval-based and generative-based approaches to generate responses by retrieving relevant information from a large corpus. RAG is a text generation technique that combines retrieval-based and generative-based approaches. It involves retrieving relevant information from a large corpus of text and then using that information to generate new text. RAG can be used for a variety of tasks, such as question-answering, summarization, and translation.",
       "category": "AIML",
-      "referencePath": "terms/AIML/retrieval-augmented-generation-(rag)"
+      "referencePath": "terms/AIML/retrieval-augmented-generation"
     },
     {
       "term": "Large Language Models (LLMs)",
       "definition": "LLMs are a type of neural network that has been trained on diverse datasets, including vast amounts of text and, increasingly, multimodal data such as images, audio, and video. These models can learn to understand and generate human-like text, and they have been used for a variety of tasks, such as language translation, text summarization, and question-answering.",
       "category": "AIML",
-      "referencePath": "terms/AIML/large-language-models-(llms)"
+      "referencePath": "terms/AIML/large-language-models"
     },
     {
       "term": "Classification",
@@ -41,7 +41,7 @@
       "term": "Quantized Generative Pre-trained Transformer (qGPT)",
       "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model. Quantization is a technique that reduces the size and computational cost of a neural network model by reducing the precision of its weights. qGPT can be used for a variety of tasks, such as text generation, language translation, and question answering.",
       "category": "AIML",
-      "referencePath": "terms/AIML/quantized-generative-pre-trained-transformer-(qgpt)"
+      "referencePath": "terms/AIML/quantized-generative-pre-trained-transformer"
     },
     {
       "term": "qGPTseeds",
