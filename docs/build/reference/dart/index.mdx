@@ -68,7 +68,8 @@ To get started with the Pieces SDK, follow these steps:
         ```dart
         dependencies:
           pieces_os_client:
-            path: /path/to/pieces-os-client-sdk-for-dart
+            git:
+              url: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
         ```
       </TabItem>
     </Tabs>
@@ -93,17 +94,31 @@ Create a `main.dart` file and add the following code:
 import 'package:pieces_os_client/api.dart';
 
 Future<void> main() async {
-  final api_instance = WellKnownApi();
+  final platform = Platform.operatingSystem;
+  // Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+  final port = platform == 'linux' ? 5323 : 1000;
+
+  final configuration = Configuration();
+  // The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
+  configuration.basePath = 'http://localhost:$port';
+
+  // Initialize the Pieces ApiClient
+  final apiClient = ApiClient(configuration);
+  // Create an instance of the WellKnownApi class
+  final apiInstance = WellKnownApi(apiClient);
 
   try {
-    final result = await api_instance.getWellKnownHealth();
-    print(result);
+    // Retrieve the (wellknown) health of the Pieces OS
+    final result = await apiInstance.getWellKnownHealth();
+    print('The response of WellKnownApi().getWellKnownHealth:');
+    print(result); // Response: ok
   } catch (e) {
     print('Exception when calling WellKnownApi->getWellKnownHealth: $e\n');
   }
 }
 ```
-Run the Dart script to see the output:
+
+Run the following command to execute the script:
 
 ```shell
 dart main.dart

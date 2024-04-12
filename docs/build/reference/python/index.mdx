@@ -70,9 +70,9 @@ For macOS and Windows, you should use `localhost:1000`.
 
 :::
 
-Create a `config.py` file and add the following code:
+Create a `main.py` file and add this code to confirm you have installed the correct package:
 
-```python title="config.py"
+```python title="main.py"
 import pieces_os_client
 import platform
 
@@ -83,38 +83,30 @@ if 'Linux' in platform_info:
 else:
     port = 1000
 
-# Defining the host is optional, but we've added support for Linux in the conditional statement above for this example.
-# It defaults to http://localhost:1000
+# The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
 configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
 
-# Initialize the ApiClient globally
+# Initialize the Pieces ApiClient
 api_client = pieces_os_client.ApiClient(configuration)
-```
-
-Create a `wellknown.py` file and add this code to confirm you have installed the correct package:
-
-```python title="wellknown.py"
-import pieces_os_client
-from config import configuration
 
 # Enter a context with an instance of the ApiClient
 with pieces_os_client.ApiClient(configuration) as api_client:
-    # Create an instance of the API class
+    # Create an instance of the WellKnownApi class
     api_instance = pieces_os_client.WellKnownApi(api_client)
 
     try:
-        # Retrieve the (wellknown) version of the Pieces OS
-        api_response = api_instance.get_well_known_version()
-        print("The response of WellKnownApi().get_well_known_version:")
-        print(api_response)
+        # Retrieve the (wellknown) health of the Pieces OS
+        api_response = api_instance.get_well_known_health()
+        print("The response of WellKnownApi().get_well_known_health:")
+        print(api_response) # Response: ok
     except Exception as e:
-        print("Exception when calling WellKnownApi->get_well_known_version: %s\n" % e)
+        print("Exception when calling WellKnownApi->get_well_known_health: %s\n" % e)
 ```
 
-Run the Python script to see the output:
+Run the following command to execute the script:
 
 ```shell
-python3 wellknown.py
+python3 main.py
 ```
 
 ## Next Steps
