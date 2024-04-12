@@ -311,7 +311,6 @@ const sidebars: SidebarsConfig = {
             dirName: 'build/glossary/terms/Search',
           }]
         },
-
       ]
     },
   ],
