@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import definitions from './definitions.json'; 
-
+import definitions from './definitions.json';
 
 const GlossaryComponent = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -8,7 +7,6 @@ const GlossaryComponent = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-  
     setCategories(definitions.categories);
     setTerms(definitions.terms);
     setSelectedCategories(["AIML"]);
@@ -28,7 +26,7 @@ const GlossaryComponent = () => {
     return text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
   };
 
-  
+
   const getFirstLine = (text) => {
     return text.split('.', 1)[0];
   };
