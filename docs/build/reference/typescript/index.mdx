@@ -82,7 +82,7 @@ For macOS and Windows, you should use `localhost:1000`.
 
 :::
 
-Create a `config.ts` file and add the following code:
+Create a `main.ts` file and add the following code:
 
 ```typescript title="main.ts"
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -107,7 +107,7 @@ apiInstance.getWellKnownHealth().then((data: string) => {
 }).catch((error: unknown) => console.error(error))
 ```
 
-Run the TypeScript script to see the output:
+Run the following command to execute the script:
 
 ```shell
 ts-node main.ts
