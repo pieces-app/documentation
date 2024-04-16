@@ -124,6 +124,11 @@
       "source": "/use-cases/take-back-your-time",
       "destination": "/use-cases/countless-google-searches",
       "statusCode": 301
+    },
+    {
+      "source": "/beta-user-group",
+      "destination": "/early-access-program",
+      "statusCode": 301
     }
   ]
 }
