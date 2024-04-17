@@ -1,0 +1,68 @@
+---
+title: Projects Using Pieces SDK
+description: Get started with Pieces SDK in your choice of framework
+---
+
+import Grid from "/src/components/Grid";
+import CTAButton from "/src/components/CTAButton";
+import {MiniSpacer} from "/src/components/Spacers";
+
+<Grid cols={2}>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>React x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your React project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'https://github.com/pieces-app/example-typescript'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Svelte x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your Svelte project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'https://github.com/seantiz/piecesvelte'}
+      type={'secondary'}
+    />
+  </div>
+  <div className={'grid-card'}>
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <span style={{
+        fontSize: '1.5rem',
+        fontWeight: 'bold'
+      }}>Streamlit x Pieces</span>
+    </div>
+    <MiniSpacer/>
+    <p>Learn how to integrate Pieces into your Streamlit project</p>
+    <CTAButton
+      label={'Get Started'}
+      href={'https://github.com/pieces-app/pieces-copilot-streamlit-example'}
+      type={'secondary'}
+    />
+  </div>
+</Grid>

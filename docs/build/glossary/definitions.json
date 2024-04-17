@@ -1,0 +1,383 @@
+{
+  "categories": [
+    "AIML",
+    "Assets",
+    "CS Fundamentals",
+    "Search",
+    "Pieces Specific"
+  ],
+  "terms": [
+    {
+      "term": "Retrieval-Augmented Generation (RAG)",
+      "definition": "Combines retrieval-based and generative-based approaches to generate responses by retrieving relevant information from a large corpus. RAG is a text generation technique that combines retrieval-based and generative-based approaches. It involves retrieving relevant information from a large corpus of text and then using that information to generate new text. RAG can be used for a variety of tasks, such as question-answering, summarization, and translation.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/retrieval-augmented-generation"
+    },
+    {
+      "term": "Large Language Models (LLMs)",
+      "definition": "LLMs are a type of neural network that has been trained on diverse datasets, including vast amounts of text and, increasingly, multimodal data such as images, audio, and video. These models can learn to understand and generate human-like text, and they have been used for a variety of tasks, such as language translation, text summarization, and question-answering.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/large-language-models"
+    },
+    {
+      "term": "Classification",
+      "definition": "Classification is a machine-learning task that involves assigning a label to an input data point. For example, a classification model could be used to classify emails as spam or not spam or to classify images as cats or dogs.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/classification"
+    },
+    {
+      "term": "Embedding",
+      "definition": "Embedding is a technique that converts discrete data into a continuous vector space. This allows the data to be processed by machine learning models, which typically require continuous input data. For example, word embeddings can be used to represent the meaning of words in a text document.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/embedding"
+    },
+    {
+      "term": "Patterns Engine",
+      "definition": "A patterns engine is a software tool that can be used to identify and extract patterns from data. These patterns can then be used for a variety of purposes, such as fraud detection, anomaly detection, and text classification.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/patterns-engine"
+    },
+    {
+      "term": "Quantized Generative Pre-trained Transformer (qGPT)",
+      "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model. Quantization is a technique that reduces the size and computational cost of a neural network model by reducing the precision of its weights. qGPT can be used for a variety of tasks, such as text generation, language translation, and question answering.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/quantized-generative-pre-trained-transformer"
+    },
+    {
+      "term": "qGPTseeds",
+      "definition": "qGPTseeds are a set of pre-trained models for the qGPT language model. These models can be used for a variety of tasks, such as text generation, language translation, and question-answering.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/qgptseeds"
+    },
+    {
+      "term": "Copilot",
+      "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code. Copilots can suggest code completions, generate entire functions, and even help to debug code.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/copilot"
+    },
+    {
+      "term": "Small Language Models",
+      "definition": "Small language models are a type of AI that can understand and generate human language. They are typically trained on a large dataset of text, and they learn to identify patterns in the language. This allows them to generate new text that is both coherent and grammatically correct.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/small-language-models"
+    },
+    {
+      "term": "Asset",
+      "definition": "An asset model represents data extracted from an application connecting a group of data containing one or more formats. It includes properties such as the asset's unique identifier, name, creator, creation and update timestamps, formats, preview, original format, shares, mechanism, websites, interaction timestamp, tags, sensitive information, persons, curated flags, discovered flags, activities, scores, favorited flags, pseudo flags, annotations, hints, anchors, conversations, and demo flags.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/asset"
+    },
+    {
+      "term": "Snippet",
+      "definition": "A snippet typically refers to small bits/chunks/fragments of code that are highly reusable, complex, hard to remember, etc. In the Pieces API, snippets are rarely used. A snippet is basically an asset, where that snippet value is held by the format itself that is attached to a single asset (many snippet values may be assigned to one asset, as an asset can have many formats that are different representations of the same snippet, i.e., syntax highlight, Markdown export, PNG format).",
+      "category": "Assets",
+      "referencePath": "terms/Assets/snippet"
+    },
+    {
+      "term": "Seed",
+      "definition": "Seeds are typically used in Pieces SDKs and require a minimum amount of information to create different materials. These will come into the API with an identifier (ID) and can be used to create a fully referenced asset with generated metadata. All assets have a seeded version of it that is always its starting place. For example, a Tag will first start as a SeededTag and will become a Tag after it is created in the Pieces database. Similarly, an Asset originally starts from a seed, SeededAsset, and then goes through its specific create pipeline and eventually becomes a fully referenced Asset.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/seed"
+    },
+    {
+      "term": "Snapshot",
+      "definition": "This refers to some sort of GET request to the API. For example, there is a /tags snapshot that will fetch all of your tags. There is also a /tag/{tag_uuid} snapshot that we refer to as a specific snapshot. This says we are going to give you the data for this specific thing, singular or plural, as it exists in the database.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/snapshot"
+    },
+    {
+      "term": "Discovered Assets",
+      "definition": "A collection of discovered assets is used in the bulk upload flow for clustering and uploading snippets. DiscoveredAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of discovered assets, which are snippets of code that have been identified as potential candidates for upload. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The DiscoveredAssets model contains properties such as the application ID, an iterable of discovered assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/discovered-assets"
+    },
+    {
+      "term": "InteractedAssets",
+      "definition": "A collection of interacted assets, used in the bulk upload flow for clustering and uploading snippets. InteractedAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of interacted assets, which are snippets of code that have been interacted with by the user. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The InteractedAssets model contains properties such as the application ID, an iterable of interacted assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/interactedassets"
+    },
+    {
+      "term": "SeededTag",
+      "definition": "A SeededTag represents the minimum information needed when creating a Tag. A SeededTag is a data structure that contains the basic information required to create a Tag. It includes fields such as the tag's name, description, and the asset, format, or person that the tag is associated with. SeededTags can be created from JSON strings or dictionaries and can be converted back into these formats as well.",
+      "category": "Assets",
+      "referencePath": "terms/Assets/seededtag"
+    },
+    {
+      "term": "PKCE Flow",
+      "definition": "Proof Key for Code Exchange (PKCE) is an extension of the OAuth 2.0 authorization code flow that enhances security by eliminating the need to securely store and manage client secrets. It uses a randomly generated code verifier and code challenge pair that is exchanged for an access token, ensuring that the authorization code cannot be intercepted and reused maliciously.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/pkce-flow"
+    },
+    {
+      "term": "Auth0 User",
+      "definition": "In Pieces, an Auth0 User represents a user who has been authenticated through Auth0.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/auth0-user"
+    },
+    {
+      "term": "OCR",
+      "definition": "Optical Character Recognition (OCR) is a technology that converts scanned or printed images into machine-readable text. It analyzes the image, identifies characters and symbols, and transforms them into digital text that can be stored, edited, and searched. OCR has applications in various industries, including document digitization, data entry automation, and image analysis.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/ocr"
+    },
+    {
+      "term": "Reverse Proxy Tunnel",
+      "definition": "A reverse proxy tunnel acts as an intermediary server that forwards requests from clients to a target server at a different location. It allows applications or services running on internal networks to be securely accessed from external sources by creating a tunnel that masks the actual network topology and provides additional layers of protection.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/reverse-proxy-tunnel"
+    },
+    {
+      "term": "WSL",
+      "definition": "Windows Subsystem for Linux (WSL) enables the running of a Linux environment directly on Windows 10 or 11 systems. It allows developers and users to access and work with Linux tools, applications, and shell commands within the Windows operating system, simplifying cross-platform development and application deployment.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/wsl"
+    },
+    {
+      "term": "Backtracking",
+      "definition": "Backtracking is an algorithmic technique used to solve problems by systematically exploring all possible solutions. It involves recursively testing each option and backtracking if the current path leads to a dead end. Backtracking algorithms are employed in various scenarios, including game-solving, optimization problems, and graph traversal.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/backtracking"
+    },
+    {
+      "term": "Iterable",
+      "definition": "Iterable refers to an array-like data structure that represents a sequence of elements. It allows for efficient traversal through each element, one at a time. In the Pieces SDK, we specifically use the term Iterable to denote arrays.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/iterable"
+    },
+    {
+      "term": "Telemetry",
+      "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices. It provides valuable insights into how systems are behaving, enabling troubleshooting, performance monitoring, and optimization. Telemetry is commonly used in industries such as manufacturing, healthcare, and IT operations.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/telemetry"
+    },
+    {
+      "term": "Formats",
+      "definition": "Formats refer to the specific structures or representations used to encode, store, and transmit data. These include file formats (e.g., JPEG, PDF), database formats (e.g., JSON, XML), and communication protocols (e.g., HTTP, TCP). Formats provide a standardized way of exchanging and processing data across different systems and applications.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/formats"
+    },
+    {
+      "term": "Plural API versus singular API",
+      "definition": "In API design, we utilize both plural and singular APIs based on the operation's nature. Plural APIs are used to handle multiple resources (such as create, delete, and full snapshots with many materials) at once. Singular APIs are used to handle single resources, like updates and specific snapshots.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/plural-api-versus-singular-api"
+    },
+    {
+      "term": "TLP Code Processing",
+      "definition": "TLP stands for Technical Language Processing, It’s quite similar to NLP (Natural Language Processing). TLP specifically focuses on processing technical language, particularly code. It involves techniques to understand, analyze, and derive insights from code.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/tlp-code-processing"
+    },
+    {
+      "term": "Language Server Protocol",
+      "definition": "Language Server Protocol (LSP) is an open, JSON-RPC-based protocol for use between source code editors or integrated development environments (IDEs) and servers that provide language intelligence tools",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/language-server-protocol"
+    },
+    {
+      "term": "Global Search",
+      "definition": "Global Search is a feature that allows users to search across all of their assets, regardless of where they are stored or what type of asset they are. With Global Search, users can search across all of their assets, including files, notes, code snippets, and more. They can also search within specific folders or projects, and filter their results by type, date, or other criteria. Global Search is a great way to save time and stay organized, and it can help users to be more productive in their work.",
+      "category": "Search",
+      "referencePath": "terms/Search/global-search"
+    },
+    {
+      "term": "Discovery API",
+      "definition": "The Discovery API provides endpoints for discovering assets, HTML webpages, sensitives, and related tags.",
+      "category": "Search",
+      "referencePath": "terms/Search/discovery-api"
+    },
+    {
+      "term": "FTS",
+      "definition": "Full-text search (FTS) is a search method that allows users to find assets by searching for specific words or phrases within the content of those assets. Unlike fuzzy matching, FTS doesn't understand different spellings or sentence structures. So, the search terms must match the exact text in the assets to be found.",
+      "category": "Search",
+      "referencePath": "terms/Search/fts"
+    },
+    {
+      "term": "Indices",
+      "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps (<String, int>) are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these). A uuid will map to an int, which is its place in the iterable (array) on the plural models. This will also let us know what was previously referenced but removed, signaled with a -1, and will get fully cleared on shut down and boot up.",
+      "category": "Search",
+      "referencePath": "terms/Search/indices"
+    },
+    {
+      "term": "Neural Code Search",
+      "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries. It converts the code into a vector of numbers, and then uses those numbers to compare to other vectors to find similar code. This allows NCS to find similar code even if it is written in different languages or has different variable names.",
+      "category": "Search",
+      "referencePath": "terms/Search/neural-code-search"
+    },
+    {
+      "term": "Activities",
+      "definition": "Activities are a way to track and manage the progress of tasks and projects within Pieces OS. They enable users to create, assign, and track the progress of tasks, as well as manage dependencies and resources. Activities can be linked to specific projects, allowing for efficient project management and collaboration.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/activities"
+    },
+    {
+      "term": "Accessor",
+      "definition": "An accessor is a feature that tracks who has accessed a shared snippet and how many times they have accessed it. It keeps a record of the user who accessed the shared snippet (if they were logged in) and the number of times they accessed it.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/accessor"
+    },
+    {
+      "term": "Aesthetics",
+      "definition": "Aesthetics are a set of properties that control the visual appearance of an object, such as its color, size, and shape.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/aesthetics"
+    },
+    {
+      "term": "Analysis",
+      "definition": "Analysis is an object used for storing various analysis models like image analysis and code analysis.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/analysis"
+    },
+    {
+      "term": "Anchor",
+      "definition": "An anchor is a reference to a specific file or folder location on a machine. It is used for conversations, referencing the origin of the code snippet.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/anchor"
+    },
+    {
+      "term": "Annotation",
+      "definition": "An annotation is a versatile tool that facilitates the addition of comments, summaries, and various other types of annotations to enhance understanding and provide additional context.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/annotation"
+    },
+    {
+      "term": "Application",
+      "definition": "An application is used to identify the source of a format/analytics event. It provides information such as the application name, version number, platform, onboarding status, privacy settings, capabilities, mechanism, and automatic unload flag.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/application"
+    },
+    {
+      "term": "Context",
+      "definition": "Context contains information about the current context or state of the application.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/context"
+    },
+    {
+      "term": "Context Awareness",
+      "definition": "Context awareness is the capability of Pieces to gather information about some code’s context or environment at any given time.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/context-awareness"
+    },
+    {
+      "term": "Distribution",
+      "definition": "A distribution object represents a channel through which notifications can be sent. Currently, Pieces supports distribution for GitHub, with each distribution having its own unique set of properties and configuration options.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/distribution"
+    },
+    {
+      "term": "Edges",
+      "definition": "The 'Edges' object represents a collection of nodes in a graph structure.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/edges"
+    },
+    {
+      "term": "Health",
+      "definition": "The health model is a read-only model that provides information about the health of the OS server, including properties such as the OS health and the schema version.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/health"
+    },
+    {
+      "term": "Hint",
+      "definition": "The hint model is used to provide hints and suggested queries for assets, including properties such as the hint text, the mechanism by which the hint was generated, and the asset to which the hint is attached.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/hint"
+    },
+    {
+      "term": "Linkify",
+      "definition": "The Linkify API generates a publicly sharable link for a code snippet, expecting an asset for the snippet and generating the link once the asset is passed into the API.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/linkify"
+    },
+    {
+      "term": "Reaction",
+      "definition": "The Reaction endpoint is used to react to the response given from the suggestion endpoint, allowing for a hybrid approach of user interaction/confirmation and auto-recommended uploads.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/reaction"
+    },
+    {
+      "term": "Recipients",
+      "definition": "Recipients is an iterable of People that are attached to a specific distribution, used in tandem with the Distribution endpoint to describe which distribution is being used.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/recipients"
+    },
+    {
+      "term": "Relationship",
+      "definition": "A relationship expresses a graph of like types to build a relationship graph,to build a relationship graph, requiring iteration through edges to get the root or simply getting the first edge's type as a relationship can only be expressed through the same type.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/relationship"
+    },
+    {
+      "term": "Role",
+      "definition": "This is the specific role of a format.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/role"
+    },
+    {
+      "term": "Score",
+      "definition": "Score is a model present for all materials, both plural and singular, that can be incremented individually as users use specific materials. This is relevant to specific algorithms used for the Feed and to determine which materials or actions to show.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/score"
+    },
+    {
+      "term": "Sensitives",
+      "definition": "A 'sensitive' is defined as a piece of information that may be of a sensitive nature, such as an API key or service account, automatically extracted and linked into the assets creation.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/sensitives"
+    },
+    {
+      "term": "Tag",
+      "definition": "This field displays any relevant tags or keywords assigned to your code snippet, used to group, organize, and search various assets.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/tag"
+    },
+    {
+      "term": "Related people",
+      "definition": "Related people help to search through known users to pinpoint a person who could help understand/work with a given snippet, extending to natural language questions about specific programming problems or codebases.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/related-people"
+    },
+    {
+      "term": "Relevance",
+      "definition": "Relevance refers to all the relevant or useful information used to ground the model to better answer your question or query, specific to the qGPT flow.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/relevance"
+    },
+    {
+      "term": "OS Instance",
+      "definition": "Provides information to Pieces OS about the operating system being used by the host system.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/os-instance"
+    },
+    {
+      "term": "Enrich",
+      "definition": "Enrich enables developers to modify the enrichment levels of the persons, tags, and websites associated with an asset, ensuring the number of people/tags/websites does not exceed the provided value.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/enrich"
+    },
+    {
+      "term": "Smart Transforms",
+      "definition": "Quickly transform code snippets with a single click to improve readability, format, and runtime performance, translate to your preferred language, or convert to boilerplate effortlessly.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/smart-transforms"
+    },
+    {
+      "term": "Associate",
+      "definition": "Associate endpoints are used to build relationships between materials, like associating a related website or a tag with an asset.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/associate"
+    },
+    {
+      "term": "Ghost Assets",
+      "definition": "Ghost assets enable assets that are added to Pieces but not included in typical snapshots, allowing for internal addition of assets without returning them to a user unless explicitly stated.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/ghost-assets"
+    },
+    {
+      "term": "Disassociate",
+      "definition": "Endpoints used to remove a relationship, such as removing a tag from an asset after using an associate endpoint.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/disassociate"
+    }
+  ]
+}

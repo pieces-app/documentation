@@ -1,0 +1,131 @@
+---
+title: Dart SDK
+description: This getting started guide will help you get started with the Pieces for Developers Dart SDK.
+---
+
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import GridFlexRow from '/src/components/GridFlexRow'
+import CTAButton from '/src/components/CTAButton'
+
+## Introduction
+The Pieces SDK is a powerful code engine package designed for writing applications on top of [Pieces OS](/installation-getting-started/what-am-i-installing). It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+:::info
+
+The Pieces Dart SDK is not yet available on pub.dev. To use the SDK, you must use the [Pieces Dart SDK GitHub repository](https://github.com/pieces-app/pieces-os-client-sdk-for-dart) when adding the dependency to your project.
+
+:::
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) running as a backend service.
+
+## Installation
+To get started with the Pieces SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+
+    <GridFlexRow type={'start'}>
+      <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+      />
+    </GridFlexRow>
+
+2. **Add the SDK dependency**: Add the SDK dependency to your Dart project by adding the following to your `pubspec.yaml` file:
+    <Tabs
+      defaultValue="github"
+      values={[
+        { label: 'GitHub', value: 'github', },
+        { label: 'Local', value: 'local', },
+      ]
+    }>
+      <TabItem value="github">
+        ```dart
+        dependencies:
+          pieces_os_client:
+            git: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
+        ```
+      </TabItem>
+      <TabItem value="local">
+        ```dart
+        dependencies:
+          pieces_os_client:
+            git:
+              url: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
+        ```
+      </TabItem>
+    </Tabs>
+
+## Getting Started
+
+We will create a Dart script to test the connection to the Pieces OS server.
+
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
+
+Create a `main.dart` file and add the following code:
+
+```dart title="main.dart"
+import 'package:pieces_os_client/api.dart';
+
+Future<void> main() async {
+  final platform = Platform.operatingSystem;
+  // Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+  final port = platform == 'linux' ? 5323 : 1000;
+
+  final configuration = Configuration();
+  // The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
+  configuration.basePath = 'http://localhost:$port';
+
+  // Initialize the Pieces ApiClient
+  final apiClient = ApiClient(configuration);
+  // Create an instance of the WellKnownApi class
+  final apiInstance = WellKnownApi(apiClient);
+
+  try {
+    // Retrieve the (wellknown) health of the Pieces OS
+    final result = await apiInstance.getWellKnownHealth();
+    print('The response of WellKnownApi().getWellKnownHealth:');
+    print(result); // Response: ok
+  } catch (e) {
+    print('Exception when calling WellKnownApi->getWellKnownHealth: $e\n');
+  }
+}
+```
+
+Run the following command to execute the script:
+
+```shell
+dart main.dart
+```
+
+## Next Steps
+
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Dart SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+
+Click the `Next →` button below to dive deeper into the Dart SDK documentation.
