@@ -1,3 +1,7 @@
+---
+title: FlattenedTag | Python SDK
+---
+
 # FlattenedTag
 
 This is a Flattened Version of a Tag.

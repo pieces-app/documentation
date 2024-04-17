@@ -1,3 +1,7 @@
+---
+title: QGPTPromptPipeline | Dart SDK
+---
+
 # QGPTPromptPipeline
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: PredeletedExternalProvider APIKey | TypeScript SDK
+---
+
 
 # PredeletedExternalProvider APIKey
 
@@ -14,10 +18,10 @@ Name | Type
 ## Example
 
 ```typescript
-import { PredeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client'
+import { PredeletedExternalProvider APIKey } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
-const example: PredeletedExternalProviderApiKey = {
+const example: PredeletedExternalProvider APIKey = {
     "schema": null,
     "user": null,
     "openAI": null,
@@ -30,7 +34,7 @@ const exampleJSON: string = JSON.stringify(example)
 console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as PredeletedExternalProviderApiKey
+const exampleParsed = JSON.parse(exampleJSON) as PredeletedExternalProvider APIKey
 console.log(exampleParsed)
 ```
 

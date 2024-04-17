@@ -1,3 +1,7 @@
+---
+title: WorkstreamEvent API | Kotlin SDK
+---
+
 # WorkstreamEvent API
 
 All URIs are relative to *http://localhost:1000*
@@ -24,16 +28,16 @@ This will associate a workstream_event with a workstream summary. This will do t
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventApi()
+val apiInstance = WorkstreamEvent API()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.workstreamEventAssociateWorkstreamSummary(workstreamEvent, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventApi#workstreamEventAssociateWorkstreamSummary")
+    println("4xx response calling WorkstreamEvent API#workstreamEventAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventApi#workstreamEventAssociateWorkstreamSummary")
+    println("5xx response calling WorkstreamEvent API#workstreamEventAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -56,7 +60,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **workstreamEventDisassociateWorkstreamSummary** {#workstreameventdisassociateworkstreamsummary}
 > workstreamEventDisassociateWorkstreamSummary(workstreamEvent, workstreamSummary)
@@ -71,16 +75,16 @@ This will enable us to disassociate a workstream_event from a workstream summary
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventApi()
+val apiInstance = WorkstreamEvent API()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.workstreamEventDisassociateWorkstreamSummary(workstreamEvent, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventApi#workstreamEventDisassociateWorkstreamSummary")
+    println("4xx response calling WorkstreamEvent API#workstreamEventDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventApi#workstreamEventDisassociateWorkstreamSummary")
+    println("5xx response calling WorkstreamEvent API#workstreamEventDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -103,7 +107,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **workstreamEventScoresIncrement** {#workstreameventscoresincrement}
 > workstreamEventScoresIncrement(workstreamEvent, seededScoreIncrement)
@@ -118,16 +122,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventApi()
+val apiInstance = WorkstreamEvent API()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.workstreamEventScoresIncrement(workstreamEvent, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventApi#workstreamEventScoresIncrement")
+    println("4xx response calling WorkstreamEvent API#workstreamEventScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventApi#workstreamEventScoresIncrement")
+    println("5xx response calling WorkstreamEvent API#workstreamEventScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -150,7 +154,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **workstreamEventUpdate** {#workstreameventupdate}
 > WorkstreamEvent workstreamEventUpdate(transferables, workstreamEvent)
@@ -165,17 +169,17 @@ This will update a specific workstream_event.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventApi()
+val apiInstance = WorkstreamEvent API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val workstreamEvent : WorkstreamEvent =  // WorkstreamEvent | 
 try {
     val result : WorkstreamEvent = apiInstance.workstreamEventUpdate(transferables, workstreamEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventApi#workstreamEventUpdate")
+    println("4xx response calling WorkstreamEvent API#workstreamEventUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventApi#workstreamEventUpdate")
+    println("5xx response calling WorkstreamEvent API#workstreamEventUpdate")
     e.printStackTrace()
 }
 ```
@@ -213,17 +217,17 @@ This will get a snapshot of a single workstream_event.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventApi()
+val apiInstance = WorkstreamEvent API()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : WorkstreamEvent = apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(workstreamEvent, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventApi#workstreamEventsSpecificWorkstreamEventSnapshot")
+    println("4xx response calling WorkstreamEvent API#workstreamEventsSpecificWorkstreamEventSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventApi#workstreamEventsSpecificWorkstreamEventSnapshot")
+    println("5xx response calling WorkstreamEvent API#workstreamEventsSpecificWorkstreamEventSnapshot")
     e.printStackTrace()
 }
 ```

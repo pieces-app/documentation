@@ -1,3 +1,7 @@
+---
+title: FlattenedSensitives | Python SDK
+---
+
 # FlattenedSensitives
 
 This is a flattened representation of multiple sensitive pieces of data.

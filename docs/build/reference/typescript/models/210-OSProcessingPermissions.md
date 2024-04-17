@@ -1,3 +1,7 @@
+---
+title: OSProcessingPermissions | TypeScript SDK
+---
+
 
 # OSProcessingPermissions
 

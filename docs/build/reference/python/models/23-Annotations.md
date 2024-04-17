@@ -1,3 +1,7 @@
+---
+title: Annotations | Python SDK
+---
+
 # Annotations
 
 This is the plural of Annotation

@@ -1,3 +1,7 @@
+---
+title: SeededRange | TypeScript SDK
+---
+
 
 # SeededRange
 

@@ -1,3 +1,7 @@
+---
+title: PreonboardedPersonaDetails | TypeScript SDK
+---
+
 
 # PreonboardedPersonaDetails
 

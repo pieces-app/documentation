@@ -1,3 +1,7 @@
+---
+title: QGPTStreamOutput | TypeScript SDK
+---
+
 
 # QGPTStreamOutput
 

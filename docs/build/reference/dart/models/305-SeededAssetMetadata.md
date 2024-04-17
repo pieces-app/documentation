@@ -1,3 +1,7 @@
+---
+title: SeededAssetMetadata | Dart SDK
+---
+
 # SeededAssetMetadata
 
 ## Load the model package

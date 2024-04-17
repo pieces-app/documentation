@@ -1,3 +1,7 @@
+---
+title: QGPT API | Kotlin SDK
+---
+
 # QGPT API
 
 All URIs are relative to *http://localhost:1000*
@@ -25,16 +29,16 @@ Generates suggested questions that users can ask. It accepts the answer displaye
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val qgPTHintsInput : QGPTHintsInput =  // QGPTHintsInput | 
 try {
     val result : QGPTQuestionOutput = apiInstance.hints(qgPTHintsInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#hints")
+    println("4xx response calling QGPT API#hints")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#hints")
+    println("5xx response calling QGPT API#hints")
     e.printStackTrace()
 }
 ```
@@ -71,17 +75,17 @@ Utilize this endpoint for Who Support, identifying individuals who can provide a
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val qgPTPersonsRelatedInput : QGPTPersonsRelatedInput =  // QGPTPersonsRelatedInput | 
 try {
     val result : QGPTPersonsRelatedOutput = apiInstance.personsRelated(transferables, qgPTPersonsRelatedInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#personsRelated")
+    println("4xx response calling QGPT API#personsRelated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#personsRelated")
+    println("5xx response calling QGPT API#personsRelated")
     e.printStackTrace()
 }
 ```
@@ -119,16 +123,16 @@ Provides a WebSocket connection that streams inputs to the qGPT model. It handle
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val qgPTStreamInput : QGPTStreamInput =  // QGPTStreamInput | 
 try {
     val result : QGPTStreamOutput = apiInstance.qgptStream(qgPTStreamInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#qgptStream")
+    println("4xx response calling QGPT API#qgptStream")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#qgptStream")
+    println("5xx response calling QGPT API#qgptStream")
     e.printStackTrace()
 }
 ```
@@ -165,16 +169,16 @@ Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endp
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val qgPTQuestionInput : QGPTQuestionInput =  // QGPTQuestionInput | 
 try {
     val result : QGPTQuestionOutput = apiInstance.question(qgPTQuestionInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#question")
+    println("4xx response calling QGPT API#question")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#question")
+    println("5xx response calling QGPT API#question")
     e.printStackTrace()
 }
 ```
@@ -211,16 +215,16 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val qgPTRelevanceInput : QGPTRelevanceInput =  // QGPTRelevanceInput | 
 try {
     val result : QGPTRelevanceOutput = apiInstance.relevance(qgPTRelevanceInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#relevance")
+    println("4xx response calling QGPT API#relevance")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#relevance")
+    println("5xx response calling QGPT API#relevance")
     e.printStackTrace()
 }
 ```
@@ -257,16 +261,16 @@ This will take in a followup question and the history of the conversation, and e
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPTApi()
+val apiInstance = QGPT API()
 val qgPTRepromptInput : QGPTRepromptInput =  // QGPTRepromptInput | 
 try {
     val result : QGPTRepromptOutput = apiInstance.reprompt(qgPTRepromptInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPTApi#reprompt")
+    println("4xx response calling QGPT API#reprompt")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPTApi#reprompt")
+    println("5xx response calling QGPT API#reprompt")
     e.printStackTrace()
 }
 ```

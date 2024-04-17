@@ -1,3 +1,7 @@
+---
+title: ReturnedUserProfile | Kotlin SDK
+---
+
 
 # ReturnedUserProfile
 

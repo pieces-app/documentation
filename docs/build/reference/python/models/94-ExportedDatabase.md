@@ -1,3 +1,7 @@
+---
+title: ExportedDatabase | Python SDK
+---
+
 # ExportedDatabase
 
 

@@ -1,3 +1,7 @@
+---
+title: OnboardedPersonaDetails | TypeScript SDK
+---
+
 
 # OnboardedPersonaDetails
 

@@ -1,3 +1,7 @@
+---
+title: ApplicationNameEnum | TypeScript SDK
+---
+
 
 # ApplicationNameEnum
 

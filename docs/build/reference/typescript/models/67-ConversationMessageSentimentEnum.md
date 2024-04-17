@@ -1,3 +1,7 @@
+---
+title: ConversationMessageSentimentEnum | TypeScript SDK
+---
+
 
 # ConversationMessageSentimentEnum
 

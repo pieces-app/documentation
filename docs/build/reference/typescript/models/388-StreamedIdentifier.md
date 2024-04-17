@@ -1,3 +1,7 @@
+---
+title: StreamedIdentifier | TypeScript SDK
+---
+
 
 # StreamedIdentifier
 

@@ -1,3 +1,7 @@
+---
+title: ReferencedHint | Python SDK
+---
+
 # ReferencedHint
 
 This is the referenced version of a hint, main used for the uuid.

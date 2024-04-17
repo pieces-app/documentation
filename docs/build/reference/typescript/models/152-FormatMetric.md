@@ -1,3 +1,7 @@
+---
+title: FormatMetric | TypeScript SDK
+---
+
 
 # FormatMetric
 

@@ -1,3 +1,7 @@
+---
+title: WorkstreamPatternEngineDataCleanupRequest | Kotlin SDK
+---
+
 
 # WorkstreamPatternEngineDataCleanupRequest
 

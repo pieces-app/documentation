@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamEvent | TypeScript SDK
+---
+
 
 # SeededWorkstreamEvent
 

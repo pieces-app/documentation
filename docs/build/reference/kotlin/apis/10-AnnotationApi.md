@@ -1,3 +1,7 @@
+---
+title: Annotation API | Kotlin SDK
+---
+
 # Annotation API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.annotationScoresIncrement(`annotation`, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationScoresIncrement")
+    println("4xx response calling Annotation API#annotationScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationScoresIncrement")
+    println("5xx response calling Annotation API#annotationScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -54,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(`annotation`)
@@ -69,16 +73,16 @@ This will get a snapshot of a specific annotation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 try {
     val result : Annotation = apiInstance.annotationSpecificAnnotationSnapshot(`annotation`)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationSpecificAnnotationSnapshot")
+    println("4xx response calling Annotation API#annotationSpecificAnnotationSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationSpecificAnnotationSnapshot")
+    println("5xx response calling Annotation API#annotationSpecificAnnotationSnapshot")
     e.printStackTrace()
 }
 ```
@@ -115,16 +119,16 @@ This will update a specific annotation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : Annotation =  // Annotation | 
 try {
     val result : Annotation = apiInstance.annotationUpdate(`annotation`)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationUpdate")
+    println("4xx response calling Annotation API#annotationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationUpdate")
+    println("5xx response calling Annotation API#annotationUpdate")
     e.printStackTrace()
 }
 ```

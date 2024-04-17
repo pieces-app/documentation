@@ -1,3 +1,7 @@
+---
+title: SeededAssetsRecommendation | Dart SDK
+---
+
 # SeededAssetsRecommendation
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: FlattenedDistribution | Kotlin SDK
+---
+
 
 # FlattenedDistribution
 

@@ -1,3 +1,7 @@
+---
+title: ApplicationNameEnum | Dart SDK
+---
+
 # ApplicationNameEnum
 
 ## Load the model package

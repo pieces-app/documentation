@@ -1,3 +1,7 @@
+---
+title: Backups API | Python SDK
+---
+
 # Backups API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -69,7 +73,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -109,7 +113,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -141,7 +145,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -180,7 +184,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     backup = 'backup_example' # str | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
@@ -212,7 +216,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -251,7 +255,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
 
     try:
         # /backups [GET]
@@ -279,7 +283,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

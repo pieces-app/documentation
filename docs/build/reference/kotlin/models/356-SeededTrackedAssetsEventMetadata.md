@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAssetsEventMetadata | Kotlin SDK
+---
+
 
 # SeededTrackedAssetsEventMetadata
 

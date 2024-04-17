@@ -1,3 +1,7 @@
+---
+title: SeededBackup | Python SDK
+---
+
 # SeededBackup
 
 This is a precursor to a Backup, for now this will not need to take any properties.

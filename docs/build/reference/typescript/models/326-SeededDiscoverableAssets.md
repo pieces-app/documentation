@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableAssets | TypeScript SDK
+---
+
 
 # SeededDiscoverableAssets
 

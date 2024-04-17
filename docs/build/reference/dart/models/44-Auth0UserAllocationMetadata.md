@@ -1,3 +1,7 @@
+---
+title: Auth0UserAllocationMetadata | Dart SDK
+---
+
 # Auth0UserAllocationMetadata
 
 ## Load the model package

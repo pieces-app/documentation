@@ -1,3 +1,7 @@
+---
+title: SeededTrackedConversationEvent | TypeScript SDK
+---
+
 
 # SeededTrackedConversationEvent
 

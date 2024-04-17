@@ -1,3 +1,7 @@
+---
+title: DiscoveredAsset | Python SDK
+---
+
 # DiscoveredAsset
 
 

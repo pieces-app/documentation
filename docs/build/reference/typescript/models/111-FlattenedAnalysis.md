@@ -1,3 +1,7 @@
+---
+title: FlattenedAnalysis | TypeScript SDK
+---
+
 
 # FlattenedAnalysis
 

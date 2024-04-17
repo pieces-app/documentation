@@ -1,3 +1,7 @@
+---
+title: SeededFragment | TypeScript SDK
+---
+
 
 # SeededFragment
 

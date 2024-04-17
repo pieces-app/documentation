@@ -1,3 +1,7 @@
+---
+title: SeededTrackedMachineLearningEvent | Python SDK
+---
+
 # SeededTrackedMachineLearningEvent
 
 

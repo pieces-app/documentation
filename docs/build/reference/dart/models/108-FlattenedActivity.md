@@ -1,3 +1,7 @@
+---
+title: FlattenedActivity | Dart SDK
+---
+
 # FlattenedActivity
 
 ## Load the model package

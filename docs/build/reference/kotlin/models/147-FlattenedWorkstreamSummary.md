@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamSummary | Kotlin SDK
+---
+
 
 # FlattenedWorkstreamSummary
 

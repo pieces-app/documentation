@@ -1,3 +1,7 @@
+---
+title: QGPTPersonsRelatedInput | Python SDK
+---
+
 # QGPTPersonsRelatedInput
 
 This is used for /qgpt/persons/related.  will accept a seed, or conversation all optionally. 

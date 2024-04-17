@@ -1,3 +1,7 @@
+---
+title: Auth0 | Dart SDK
+---
+
 # Auth0
 
 ## Load the model package

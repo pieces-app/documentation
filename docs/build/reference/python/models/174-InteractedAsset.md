@@ -1,3 +1,7 @@
+---
+title: InteractedAsset | Python SDK
+---
+
 # InteractedAsset
 
 A model that represents an asset that has been interacted with. 

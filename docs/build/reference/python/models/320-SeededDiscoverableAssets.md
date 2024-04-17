@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableAssets | Python SDK
+---
+
 # SeededDiscoverableAssets
 
 Assumption: filters imposed in this model can be overwritten by passing them in SeededDiscoverableAsset

@@ -1,3 +1,7 @@
+---
+title: CapabilitiesEnum | TypeScript SDK
+---
+
 
 # CapabilitiesEnum
 

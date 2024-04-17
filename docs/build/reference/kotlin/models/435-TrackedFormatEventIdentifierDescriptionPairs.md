@@ -1,3 +1,7 @@
+---
+title: TrackedFormatEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # TrackedFormatEventIdentifierDescriptionPairs
 

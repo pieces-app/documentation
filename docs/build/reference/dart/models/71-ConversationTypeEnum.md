@@ -1,3 +1,7 @@
+---
+title: ConversationTypeEnum | Dart SDK
+---
+
 # ConversationTypeEnum
 
 ## Load the model package

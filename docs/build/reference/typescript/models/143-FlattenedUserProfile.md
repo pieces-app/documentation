@@ -1,3 +1,7 @@
+---
+title: FlattenedUserProfile | TypeScript SDK
+---
+
 
 # FlattenedUserProfile
 

@@ -1,3 +1,7 @@
+---
+title: DiscoveredSensitive | Dart SDK
+---
+
 # DiscoveredSensitive
 
 ## Load the model package

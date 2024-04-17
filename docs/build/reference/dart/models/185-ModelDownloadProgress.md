@@ -1,3 +1,7 @@
+---
+title: ModelDownloadProgress | Dart SDK
+---
+
 # ModelDownloadProgress
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventRenameMetadata | Python SDK
+---
+
 # TrackedAssetEventRenameMetadata
 
 This will give specific metadata need to determine what the rename was to/from.

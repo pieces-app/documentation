@@ -1,3 +1,7 @@
+---
+title: Auth0User | Python SDK
+---
+
 # Auth0User
 
 

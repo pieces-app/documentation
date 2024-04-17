@@ -1,3 +1,7 @@
+---
+title: OpenAI API | Python SDK
+---
+
 # OpenAI API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OpenAIApi(api_client)
+    api_instance = OpenAI API(api_client)
     open_ai_models_list_input = pieces_os_client.OpenAIModelsListInput() # OpenAIModelsListInput |  (optional)
 
     try:
@@ -66,7 +70,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

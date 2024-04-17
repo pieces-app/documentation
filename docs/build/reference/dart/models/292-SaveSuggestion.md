@@ -1,3 +1,7 @@
+---
+title: SaveSuggestion | Dart SDK
+---
+
 # SaveSuggestion
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: MailgunDistribution | Kotlin SDK
+---
+
 
 # MailgunDistribution
 

@@ -1,3 +1,7 @@
+---
+title: ExternalProviderProfileData | TypeScript SDK
+---
+
 
 # ExternalProviderProfileData
 

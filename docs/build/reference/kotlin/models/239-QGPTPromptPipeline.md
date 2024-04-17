@@ -1,3 +1,7 @@
+---
+title: QGPTPromptPipeline | Kotlin SDK
+---
+
 
 # QGPTPromptPipeline
 

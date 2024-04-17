@@ -1,3 +1,7 @@
+---
+title: FlattenedAssets | Dart SDK
+---
+
 # FlattenedAssets
 
 ## Load the model package

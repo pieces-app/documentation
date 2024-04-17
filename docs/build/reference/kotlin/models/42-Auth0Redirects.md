@@ -1,3 +1,7 @@
+---
+title: Auth0Redirects | Kotlin SDK
+---
+
 
 # Auth0Redirects
 

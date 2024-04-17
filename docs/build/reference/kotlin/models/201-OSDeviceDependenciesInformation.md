@@ -1,3 +1,7 @@
+---
+title: OSDeviceDependenciesInformation | Kotlin SDK
+---
+
 
 # OSDeviceDependenciesInformation
 

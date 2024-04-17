@@ -1,3 +1,7 @@
+---
+title: SeededShare | Python SDK
+---
+
 # SeededShare
 
  required to pass in an asset or assets.

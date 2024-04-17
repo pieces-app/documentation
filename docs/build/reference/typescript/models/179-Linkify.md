@@ -1,3 +1,7 @@
+---
+title: Linkify | TypeScript SDK
+---
+
 
 # Linkify
 

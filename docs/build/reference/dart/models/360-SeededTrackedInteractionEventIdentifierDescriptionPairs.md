@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEventIdentifierDescriptionPairs | Dart SDK
+---
+
 # SeededTrackedInteractionEventIdentifierDescriptionPairs
 
 ## Load the model package

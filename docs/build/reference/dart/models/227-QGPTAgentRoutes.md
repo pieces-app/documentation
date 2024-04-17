@@ -1,3 +1,7 @@
+---
+title: QGPTAgentRoutes | Dart SDK
+---
+
 # QGPTAgentRoutes
 
 ## Load the model package

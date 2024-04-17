@@ -1,3 +1,7 @@
+---
+title: SeededConnectorTracking | TypeScript SDK
+---
+
 
 # SeededConnectorTracking
 

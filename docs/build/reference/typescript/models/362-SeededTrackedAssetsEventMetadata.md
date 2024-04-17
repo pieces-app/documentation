@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAssetsEventMetadata | TypeScript SDK
+---
+
 
 # SeededTrackedAssetsEventMetadata
 

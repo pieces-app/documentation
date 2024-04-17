@@ -1,3 +1,7 @@
+---
+title: SeededAssetMetadata | TypeScript SDK
+---
+
 
 # SeededAssetMetadata
 

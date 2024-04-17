@@ -1,3 +1,7 @@
+---
+title: FragmentMetadata | Python SDK
+---
+
 # FragmentMetadata
 
 This is a model for metadata of a file!

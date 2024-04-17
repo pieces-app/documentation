@@ -1,3 +1,7 @@
+---
+title: GraphicalSVGStatistics | TypeScript SDK
+---
+
 
 # GraphicalSVGStatistics
 

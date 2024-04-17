@@ -1,3 +1,7 @@
+---
+title: OrderedMetrics | Dart SDK
+---
+
 # OrderedMetrics
 
 ## Load the model package

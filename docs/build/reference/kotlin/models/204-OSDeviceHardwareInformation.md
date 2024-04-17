@@ -1,3 +1,7 @@
+---
+title: OSDeviceHardwareInformation | Kotlin SDK
+---
+
 
 # OSDeviceHardwareInformation
 

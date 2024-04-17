@@ -1,3 +1,7 @@
+---
+title: DiscoveredRelatedTags | Python SDK
+---
+
 # DiscoveredRelatedTags
 
 

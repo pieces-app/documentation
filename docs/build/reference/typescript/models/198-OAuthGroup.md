@@ -1,3 +1,7 @@
+---
+title: OAuthGroup | TypeScript SDK
+---
+
 
 # OAuthGroup
 

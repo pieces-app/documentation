@@ -1,3 +1,7 @@
+---
+title: SeededTrackedSessionEvent | TypeScript SDK
+---
+
 
 # SeededTrackedSessionEvent
 

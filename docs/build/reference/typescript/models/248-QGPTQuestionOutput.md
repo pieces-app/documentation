@@ -1,3 +1,7 @@
+---
+title: QGPTQuestionOutput | TypeScript SDK
+---
+
 
 # QGPTQuestionOutput
 

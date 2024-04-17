@@ -1,3 +1,7 @@
+---
+title: HintTypeEnum | Dart SDK
+---
+
 # HintTypeEnum
 
 ## Load the model package

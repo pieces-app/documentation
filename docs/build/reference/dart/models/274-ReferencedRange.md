@@ -1,3 +1,7 @@
+---
+title: ReferencedRange | Dart SDK
+---
+
 # ReferencedRange
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessage | TypeScript SDK
+---
+
 
 # QGPTConversationMessage
 

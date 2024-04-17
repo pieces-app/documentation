@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeCompletion | TypeScript SDK
+---
+
 
 # QGPTTaskPipelineForCodeCompletion
 

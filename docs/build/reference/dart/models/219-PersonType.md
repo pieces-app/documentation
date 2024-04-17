@@ -1,3 +1,7 @@
+---
+title: PersonType | Dart SDK
+---
+
 # PersonType
 
 ## Load the model package

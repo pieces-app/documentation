@@ -1,3 +1,7 @@
+---
+title: BackupStreamedProgress | Kotlin SDK
+---
+
 
 # BackupStreamedProgress
 

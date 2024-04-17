@@ -1,3 +1,7 @@
+---
+title: Auth0UserAllocationMetadata | TypeScript SDK
+---
+
 
 # Auth0UserAllocationMetadata
 

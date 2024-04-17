@@ -1,3 +1,7 @@
+---
+title: Suggestion | Dart SDK
+---
+
 # Suggestion
 
 ## Load the model package

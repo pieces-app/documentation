@@ -1,3 +1,7 @@
+---
+title: Search API | Python SDK
+---
+
 # Search API
 
 All URIs are relative to *http://localhost:1000*
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SearchApi(api_client)
+    api_instance = Search API(api_client)
     query = 'query_example' # str | This is a string that you can use to search your assets. (optional)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
 
@@ -69,7 +73,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -106,7 +110,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SearchApi(api_client)
+    api_instance = Search API(api_client)
     query = 'query_example' # str | This is a string that you can use to search your assets. (optional)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
 
@@ -140,7 +144,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -178,7 +182,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SearchApi(api_client)
+    api_instance = Search API(api_client)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     seeded_asset_tags = pieces_os_client.SeededAssetTags() # SeededAssetTags |  (optional)
 
@@ -212,7 +216,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

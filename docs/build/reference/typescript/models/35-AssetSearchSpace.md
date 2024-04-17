@@ -1,3 +1,7 @@
+---
+title: AssetSearchSpace | TypeScript SDK
+---
+
 
 # AssetSearchSpace
 

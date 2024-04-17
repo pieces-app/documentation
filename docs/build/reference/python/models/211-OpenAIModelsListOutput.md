@@ -1,3 +1,7 @@
+---
+title: OpenAIModelsListOutput | Python SDK
+---
+
 # OpenAIModelsListOutput
 
 This is the output model for the /open_ai/models/list endpoint.

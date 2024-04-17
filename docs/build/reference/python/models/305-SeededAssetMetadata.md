@@ -1,3 +1,7 @@
+---
+title: SeededAssetMetadata | Python SDK
+---
+
 # SeededAssetMetadata
 
 This is optional metadata sent with the SeededAsset and other SeededAssets ie (UE, Jetbrains...)  Note: if a user/develop didnt explicitly state a mechanism we will default to manual(user Driven only)

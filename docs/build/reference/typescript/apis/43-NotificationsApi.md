@@ -1,3 +1,7 @@
+---
+title: Notifications API | TypeScript SDK
+---
+
 # Notifications API
 
 All URIs are relative to *http://localhost:1000*

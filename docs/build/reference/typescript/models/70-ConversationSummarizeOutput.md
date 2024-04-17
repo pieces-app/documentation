@@ -1,3 +1,7 @@
+---
+title: ConversationSummarizeOutput | TypeScript SDK
+---
+
 
 # ConversationSummarizeOutput
 

@@ -1,3 +1,7 @@
+---
+title: TLPCodeSnippetAnalytics | Dart SDK
+---
+
 # TLPCodeSnippetAnalytics
 
 ## Load the model package

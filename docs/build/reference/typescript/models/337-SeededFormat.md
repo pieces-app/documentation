@@ -1,3 +1,7 @@
+---
+title: SeededFormat | TypeScript SDK
+---
+
 
 # SeededFormat
 

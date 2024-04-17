@@ -1,3 +1,7 @@
+---
+title: Auth0Redirects | Dart SDK
+---
+
 # Auth0Redirects
 
 ## Load the model package

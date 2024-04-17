@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAssetsEvent | Kotlin SDK
+---
+
 
 # SeededTrackedAssetsEvent
 

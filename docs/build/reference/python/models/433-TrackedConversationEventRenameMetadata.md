@@ -1,3 +1,7 @@
+---
+title: TrackedConversationEventRenameMetadata | Python SDK
+---
+
 # TrackedConversationEventRenameMetadata
 
 This will give specific metadata need to determine what the rename was to/from.

@@ -1,3 +1,7 @@
+---
+title: GroupedTimestamp | Python SDK
+---
+
 # GroupedTimestamp
 
 A helper classs to wrap Date-Time Values with Useful Helper Properties

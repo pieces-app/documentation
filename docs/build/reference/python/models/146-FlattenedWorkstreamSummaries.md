@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamSummaries | Python SDK
+---
+
 # FlattenedWorkstreamSummaries
 
 This is a DAG-Safe plural model of workstreamsummaries

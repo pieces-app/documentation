@@ -1,3 +1,7 @@
+---
+title: ExportedDatabaseFormats | TypeScript SDK
+---
+
 
 # ExportedDatabaseFormats
 

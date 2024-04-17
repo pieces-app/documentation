@@ -1,3 +1,7 @@
+---
+title: Person API | Kotlin SDK
+---
+
 # Person API
 
 All URIs are relative to *http://localhost:1000*
@@ -24,16 +28,16 @@ This will associate a person with a workstream summary. This will do the same th
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonApi()
+val apiInstance = Person API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.personAssociateWorkstreamSummary(person, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling PersonApi#personAssociateWorkstreamSummary")
+    println("4xx response calling Person API#personAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonApi#personAssociateWorkstreamSummary")
+    println("5xx response calling Person API#personAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -56,7 +60,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **personDisassociateWorkstreamSummary** {#persondisassociateworkstreamsummary}
 > personDisassociateWorkstreamSummary(person, workstreamSummary)
@@ -71,16 +75,16 @@ This will enable us to disassociate an person from a workstream summary. This wi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonApi()
+val apiInstance = Person API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.personDisassociateWorkstreamSummary(person, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling PersonApi#personDisassociateWorkstreamSummary")
+    println("4xx response calling Person API#personDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonApi#personDisassociateWorkstreamSummary")
+    println("5xx response calling Person API#personDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -103,7 +107,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **personScoresIncrement** {#personscoresincrement}
 > personScoresIncrement(person, seededScoreIncrement)
@@ -118,16 +122,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonApi()
+val apiInstance = Person API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.personScoresIncrement(person, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling PersonApi#personScoresIncrement")
+    println("4xx response calling Person API#personScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonApi#personScoresIncrement")
+    println("5xx response calling Person API#personScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -150,7 +154,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **personSnapshot** {#personsnapshot}
 > Person personSnapshot(person, transferables)
@@ -165,17 +169,17 @@ This will get a snapshot of a specific person
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonApi()
+val apiInstance = Person API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Person = apiInstance.personSnapshot(person, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling PersonApi#personSnapshot")
+    println("4xx response calling Person API#personSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonApi#personSnapshot")
+    println("5xx response calling Person API#personSnapshot")
     e.printStackTrace()
 }
 ```
@@ -213,17 +217,17 @@ This will update a specific person
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonApi()
+val apiInstance = Person API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val person : Person =  // Person | 
 try {
     val result : Person = apiInstance.updatePerson(transferables, person)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling PersonApi#updatePerson")
+    println("4xx response calling Person API#updatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonApi#updatePerson")
+    println("5xx response calling Person API#updatePerson")
     e.printStackTrace()
 }
 ```

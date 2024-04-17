@@ -1,3 +1,7 @@
+---
+title: QGPT API | Python SDK
+---
+
 # QGPT API
 
 All URIs are relative to *http://localhost:1000*
@@ -39,7 +43,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     qgpt_hints_input = pieces_os_client.QGPTHintsInput() # QGPTHintsInput |  (optional)
 
     try:
@@ -71,7 +75,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -109,7 +113,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     qgpt_persons_related_input = pieces_os_client.QGPTPersonsRelatedInput() # QGPTPersonsRelatedInput |  (optional)
 
@@ -143,7 +147,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -181,7 +185,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     qgpt_stream_input = pieces_os_client.QGPTStreamInput() # QGPTStreamInput |  (optional)
 
     try:
@@ -213,7 +217,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -254,7 +258,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     qgpt_question_input = pieces_os_client.QGPTQuestionInput() # QGPTQuestionInput |  (optional)
 
     try:
@@ -286,7 +290,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -327,7 +331,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     qgpt_relevance_input = pieces_os_client.QGPTRelevanceInput() # QGPTRelevanceInput |  (optional)
 
     try:
@@ -359,7 +363,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -400,7 +404,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.QGPTApi(api_client)
+    api_instance = QGPT API(api_client)
     qgpt_reprompt_input = pieces_os_client.QGPTRepromptInput() # QGPTRepromptInput |  (optional)
 
     try:
@@ -432,7 +436,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

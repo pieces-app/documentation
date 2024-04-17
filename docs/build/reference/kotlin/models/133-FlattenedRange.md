@@ -1,3 +1,7 @@
+---
+title: FlattenedRange | Kotlin SDK
+---
+
 
 # FlattenedRange
 

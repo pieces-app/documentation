@@ -1,3 +1,7 @@
+---
+title: SeededTrackedMachineLearningEvent | TypeScript SDK
+---
+
 
 # SeededTrackedMachineLearningEvent
 

@@ -1,3 +1,7 @@
+---
+title: Assets | Python SDK
+---
+
 # Assets
 
 A base class for a collection of assets and some additional meta properties. Fully Populated with Formats internally (not just uuid's).

@@ -1,3 +1,7 @@
+---
+title: FlattenedImageAnalysis | Kotlin SDK
+---
+
 
 # FlattenedImageAnalysis
 

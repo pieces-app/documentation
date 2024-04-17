@@ -1,3 +1,7 @@
+---
+title: Aesthetics | Kotlin SDK
+---
+
 
 # Aesthetics
 

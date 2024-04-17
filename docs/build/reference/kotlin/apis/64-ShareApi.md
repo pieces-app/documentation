@@ -1,3 +1,7 @@
+---
+title: Share API | Kotlin SDK
+---
+
 # Share API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val share : kotlin.String = share_example // kotlin.String | Share id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.shareScoresIncrement(share, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareScoresIncrement")
+    println("4xx response calling Share API#shareScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareScoresIncrement")
+    println("5xx response calling Share API#shareScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -54,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **shareSnapshot** {#sharesnapshot}
 > Share shareSnapshot(share, transferables)
@@ -69,17 +73,17 @@ Get the snapshot of a specific share.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val share : kotlin.String = share_example // kotlin.String | Share id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Share = apiInstance.shareSnapshot(share, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareSnapshot")
+    println("4xx response calling Share API#shareSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareSnapshot")
+    println("5xx response calling Share API#shareSnapshot")
     e.printStackTrace()
 }
 ```
@@ -117,17 +121,17 @@ This endpoint will accept a Share that the user wants to update, and will return
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val share : Share =  // Share | This is the Share that needs to be updated.
 try {
     val result : Share = apiInstance.shareUpdate(transferables, share)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareUpdate")
+    println("4xx response calling Share API#shareUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareUpdate")
+    println("5xx response calling Share API#shareUpdate")
     e.printStackTrace()
 }
 ```

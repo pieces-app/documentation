@@ -1,3 +1,7 @@
+---
+title: Classification | TypeScript SDK
+---
+
 
 # Classification
 

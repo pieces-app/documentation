@@ -1,3 +1,7 @@
+---
+title: MechanismEnum | TypeScript SDK
+---
+
 
 # MechanismEnum
 

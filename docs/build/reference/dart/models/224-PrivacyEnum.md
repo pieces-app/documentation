@@ -1,3 +1,7 @@
+---
+title: PrivacyEnum | Dart SDK
+---
+
 # PrivacyEnum
 
 ## Load the model package

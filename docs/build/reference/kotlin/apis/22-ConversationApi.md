@@ -1,3 +1,7 @@
+---
+title: Conversation API | Kotlin SDK
+---
+
 # Conversation API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,16 +41,16 @@ Updates both the anchor and the conversation, associating them together.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 try {
     apiInstance.conversationAssociateAnchor(conversation, anchor)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationAssociateAnchor")
+    println("4xx response calling Conversation API#conversationAssociateAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationAssociateAnchor")
+    println("5xx response calling Conversation API#conversationAssociateAnchor")
     e.printStackTrace()
 }
 ```
@@ -69,7 +73,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationAssociateAsset** {#conversationassociateasset}
 > conversationAssociateAsset(conversation, asset)
@@ -84,16 +88,16 @@ Updates both the asset and the conversation, associating the two together.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.conversationAssociateAsset(conversation, asset)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationAssociateAsset")
+    println("4xx response calling Conversation API#conversationAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationAssociateAsset")
+    println("5xx response calling Conversation API#conversationAssociateAsset")
     e.printStackTrace()
 }
 ```
@@ -116,7 +120,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationAssociateGroundingTemporalRangeWorkstream** {#conversationassociategroundingtemporalrangeworkstream}
 > conversationAssociateGroundingTemporalRangeWorkstream(conversation, range)
@@ -131,16 +135,16 @@ This will associate a workstream(range) with a conversation. This will do the sa
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(conversation, range)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationAssociateGroundingTemporalRangeWorkstream")
+    println("4xx response calling Conversation API#conversationAssociateGroundingTemporalRangeWorkstream")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationAssociateGroundingTemporalRangeWorkstream")
+    println("5xx response calling Conversation API#conversationAssociateGroundingTemporalRangeWorkstream")
     e.printStackTrace()
 }
 ```
@@ -163,7 +167,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationAssociateWebsite** {#conversationassociatewebsite}
 > conversationAssociateWebsite(conversation, website)
@@ -178,16 +182,16 @@ Updates both the website and the conversation, and associate them together.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.conversationAssociateWebsite(conversation, website)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationAssociateWebsite")
+    println("4xx response calling Conversation API#conversationAssociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationAssociateWebsite")
+    println("5xx response calling Conversation API#conversationAssociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -210,7 +214,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationAssociateWorkstreamSummary** {#conversationassociateworkstreamsummary}
 > conversationAssociateWorkstreamSummary(conversation, workstreamSummary)
@@ -225,16 +229,16 @@ This will associate a conversation with a workstream summary. This will do the s
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.conversationAssociateWorkstreamSummary(conversation, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationAssociateWorkstreamSummary")
+    println("4xx response calling Conversation API#conversationAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationAssociateWorkstreamSummary")
+    println("5xx response calling Conversation API#conversationAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -257,7 +261,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationDisassociateAnchor** {#conversationdisassociateanchor}
 > conversationDisassociateAnchor(conversation, anchor)
@@ -272,16 +276,16 @@ Updates both the anchor and the conversation, deleting (disassociating) them sim
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 try {
     apiInstance.conversationDisassociateAnchor(conversation, anchor)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationDisassociateAnchor")
+    println("4xx response calling Conversation API#conversationDisassociateAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationDisassociateAnchor")
+    println("5xx response calling Conversation API#conversationDisassociateAnchor")
     e.printStackTrace()
 }
 ```
@@ -304,7 +308,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationDisassociateAsset** {#conversationdisassociateasset}
 > conversationDisassociateAsset(conversation, asset)
@@ -319,16 +323,16 @@ Updates both the asset and the conversation, effectively disassociating them.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.conversationDisassociateAsset(conversation, asset)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationDisassociateAsset")
+    println("4xx response calling Conversation API#conversationDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationDisassociateAsset")
+    println("5xx response calling Conversation API#conversationDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -351,7 +355,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationDisassociateGroundingTemporalRangeWorkstream** {#conversationdisassociategroundingtemporalrangeworkstream}
 > conversationDisassociateGroundingTemporalRangeWorkstream(conversation, range)
@@ -366,16 +370,16 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(conversation, range)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationDisassociateGroundingTemporalRangeWorkstream")
+    println("4xx response calling Conversation API#conversationDisassociateGroundingTemporalRangeWorkstream")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationDisassociateGroundingTemporalRangeWorkstream")
+    println("5xx response calling Conversation API#conversationDisassociateGroundingTemporalRangeWorkstream")
     e.printStackTrace()
 }
 ```
@@ -398,7 +402,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationDisassociateWebsite** {#conversationdisassociatewebsite}
 > conversationDisassociateWebsite(conversation, website)
@@ -413,16 +417,16 @@ Allows us to disassociate a conversation from a specific website
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.conversationDisassociateWebsite(conversation, website)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationDisassociateWebsite")
+    println("4xx response calling Conversation API#conversationDisassociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationDisassociateWebsite")
+    println("5xx response calling Conversation API#conversationDisassociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -445,7 +449,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationDisassociateWorkstreamSummary** {#conversationdisassociateworkstreamsummary}
 > conversationDisassociateWorkstreamSummary(conversation, workstreamSummary)
@@ -460,16 +464,16 @@ This will enable us to disassociate an conversation from a workstream summary. T
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.conversationDisassociateWorkstreamSummary(conversation, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationDisassociateWorkstreamSummary")
+    println("4xx response calling Conversation API#conversationDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationDisassociateWorkstreamSummary")
+    println("5xx response calling Conversation API#conversationDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -492,7 +496,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationGetSpecificConversation** {#conversationgetspecificconversation}
 > Conversation conversationGetSpecificConversation(conversation, transferables)
@@ -507,17 +511,17 @@ Retrieves a specific conversation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Conversation = apiInstance.conversationGetSpecificConversation(conversation, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationGetSpecificConversation")
+    println("4xx response calling Conversation API#conversationGetSpecificConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationGetSpecificConversation")
+    println("5xx response calling Conversation API#conversationGetSpecificConversation")
     e.printStackTrace()
 }
 ```
@@ -555,16 +559,16 @@ Stores the grounding context for a conversation. It allows to associate a messag
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 try {
     apiInstance.conversationGroundingMessagesAssociateMessage(conversation, message)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationGroundingMessagesAssociateMessage")
+    println("4xx response calling Conversation API#conversationGroundingMessagesAssociateMessage")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationGroundingMessagesAssociateMessage")
+    println("5xx response calling Conversation API#conversationGroundingMessagesAssociateMessage")
     e.printStackTrace()
 }
 ```
@@ -587,7 +591,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationGroundingMessagesDisassociateMessage** {#conversationgroundingmessagesdisassociatemessage}
 > conversationGroundingMessagesDisassociateMessage(conversation, message)
@@ -602,16 +606,16 @@ Removes a specific grounding context for a conversation, and allows us to disass
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 try {
     apiInstance.conversationGroundingMessagesDisassociateMessage(conversation, message)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationGroundingMessagesDisassociateMessage")
+    println("4xx response calling Conversation API#conversationGroundingMessagesDisassociateMessage")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationGroundingMessagesDisassociateMessage")
+    println("5xx response calling Conversation API#conversationGroundingMessagesDisassociateMessage")
     e.printStackTrace()
 }
 ```
@@ -634,7 +638,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationScoresIncrement** {#conversationscoresincrement}
 > conversationScoresIncrement(conversation, seededScoreIncrement)
@@ -649,16 +653,16 @@ Increment scores associated with a conversation. It accepts a SeededScoreIncreme
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.conversationScoresIncrement(conversation, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationScoresIncrement")
+    println("4xx response calling Conversation API#conversationScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationScoresIncrement")
+    println("5xx response calling Conversation API#conversationScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -681,7 +685,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **conversationSpecificConversationMessages** {#conversationspecificconversationmessages}
 > ConversationMessages conversationSpecificConversationMessages(conversation, transferables)
@@ -696,17 +700,17 @@ Retrieves messages specific to a particular conversation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : ConversationMessages = apiInstance.conversationSpecificConversationMessages(conversation, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationSpecificConversationMessages")
+    println("4xx response calling Conversation API#conversationSpecificConversationMessages")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationSpecificConversationMessages")
+    println("5xx response calling Conversation API#conversationSpecificConversationMessages")
     e.printStackTrace()
 }
 ```
@@ -744,17 +748,17 @@ Renames a specific conversation using machine learning (ML) techniques.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Conversation = apiInstance.conversationSpecificConversationRename(conversation, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationSpecificConversationRename")
+    println("4xx response calling Conversation API#conversationSpecificConversationRename")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationSpecificConversationRename")
+    println("5xx response calling Conversation API#conversationSpecificConversationRename")
     e.printStackTrace()
 }
 ```
@@ -792,17 +796,17 @@ Generates a summary of a given conversation and saves it as an annotation associ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 val conversationSummarizeInput : ConversationSummarizeInput =  // ConversationSummarizeInput | 
 try {
     val result : ConversationSummarizeOutput = apiInstance.conversationSummarize(conversation, conversationSummarizeInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationSummarize")
+    println("4xx response calling Conversation API#conversationSummarize")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationSummarize")
+    println("5xx response calling Conversation API#conversationSummarize")
     e.printStackTrace()
 }
 ```
@@ -840,17 +844,17 @@ Updates a specific conversation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationApi()
+val apiInstance = Conversation API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val conversation : Conversation =  // Conversation | 
 try {
     val result : Conversation = apiInstance.conversationUpdate(transferables, conversation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationApi#conversationUpdate")
+    println("4xx response calling Conversation API#conversationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationApi#conversationUpdate")
+    println("5xx response calling Conversation API#conversationUpdate")
     e.printStackTrace()
 }
 ```

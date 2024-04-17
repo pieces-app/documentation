@@ -1,3 +1,7 @@
+---
+title: OSDeviceGPUHardwareCapabilitiesInformation | Python SDK
+---
+
 # OSDeviceGPUHardwareCapabilitiesInformation
 
 This will give specific information on task specific capibilites for GPU.

@@ -1,3 +1,7 @@
+---
+title: SeededUser | TypeScript SDK
+---
+
 
 # SeededUser
 

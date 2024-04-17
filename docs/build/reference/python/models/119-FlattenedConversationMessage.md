@@ -1,3 +1,7 @@
+---
+title: FlattenedConversationMessage | Python SDK
+---
+
 # FlattenedConversationMessage
 
 This is a flattened DAG safe version of a ConversationMessage.

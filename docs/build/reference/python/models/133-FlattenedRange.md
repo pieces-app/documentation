@@ -1,3 +1,7 @@
+---
+title: FlattenedRange | Python SDK
+---
+
 # FlattenedRange
 
 This is a DAG-Safe minimal representation of a Range.

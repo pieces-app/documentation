@@ -1,3 +1,7 @@
+---
+title: OpenAIModelsListInput | TypeScript SDK
+---
+
 
 # OpenAIModelsListInput
 

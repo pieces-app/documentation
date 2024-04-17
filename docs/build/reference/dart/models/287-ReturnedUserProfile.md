@@ -1,3 +1,7 @@
+---
+title: ReturnedUserProfile | Dart SDK
+---
+
 # ReturnedUserProfile
 
 ## Load the model package

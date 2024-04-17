@@ -1,3 +1,7 @@
+---
+title: FlattenedRanges | Python SDK
+---
+
 # FlattenedRanges
 
 This is a DAG-Safe minimal representation of many Ranges.

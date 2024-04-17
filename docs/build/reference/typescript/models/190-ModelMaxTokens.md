@@ -1,3 +1,7 @@
+---
+title: ModelMaxTokens | TypeScript SDK
+---
+
 
 # ModelMaxTokens
 

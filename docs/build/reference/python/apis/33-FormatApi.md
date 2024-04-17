@@ -1,3 +1,7 @@
+---
+title: Format API | Python SDK
+---
+
 # Format API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
 
     try:
@@ -69,7 +73,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -107,7 +111,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     format_reclassification = pieces_os_client.FormatReclassification() # FormatReclassification |  (optional)
 
@@ -177,7 +181,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -247,7 +251,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     format = pieces_os_client.Format() # Format | This is the format that you want to update. (optional)
 
@@ -281,7 +285,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -319,7 +323,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     seeded_tracked_format_event = pieces_os_client.SeededTrackedFormatEvent() # SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:) (optional)
 
     try:

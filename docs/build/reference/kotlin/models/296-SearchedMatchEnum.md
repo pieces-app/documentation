@@ -1,3 +1,7 @@
+---
+title: SearchedMatchEnum | Kotlin SDK
+---
+
 
 # SearchedMatchEnum
 

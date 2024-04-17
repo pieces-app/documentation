@@ -1,3 +1,7 @@
+---
+title: FileMetadata | Kotlin SDK
+---
+
 
 # FileMetadata
 

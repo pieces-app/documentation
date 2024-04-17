@@ -1,3 +1,7 @@
+---
+title: PersonAccessScopedEnum | TypeScript SDK
+---
+
 
 # PersonAccessScopedEnum
 

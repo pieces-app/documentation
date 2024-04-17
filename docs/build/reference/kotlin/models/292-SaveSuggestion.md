@@ -1,3 +1,7 @@
+---
+title: SaveSuggestion | Kotlin SDK
+---
+
 
 # SaveSuggestion
 

@@ -1,3 +1,7 @@
+---
+title: DiscoveredRelatedTag | Kotlin SDK
+---
+
 
 # DiscoveredRelatedTag
 

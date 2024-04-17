@@ -1,3 +1,7 @@
+---
+title: SeededGithubGistsImport | TypeScript SDK
+---
+
 
 # SeededGithubGistsImport
 

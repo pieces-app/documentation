@@ -1,3 +1,7 @@
+---
+title: TransferableString | Python SDK
+---
+
 # TransferableString
 
 This is a String representaion of any of these changes.  [NOT IMPLEMENTED] base64, base64_url, data_url [IMPLEMENTED] raw

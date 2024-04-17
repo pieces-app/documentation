@@ -1,3 +1,7 @@
+---
+title: Seeds | Python SDK
+---
+
 # Seeds
 
 This is a plural model for multiple Seed.

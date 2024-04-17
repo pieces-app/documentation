@@ -1,3 +1,7 @@
+---
+title: Applications | Dart SDK
+---
+
 # Applications
 
 ## Load the model package

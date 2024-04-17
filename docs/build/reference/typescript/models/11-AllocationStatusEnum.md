@@ -1,3 +1,7 @@
+---
+title: AllocationStatusEnum | TypeScript SDK
+---
+
 
 # AllocationStatusEnum
 

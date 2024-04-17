@@ -1,3 +1,7 @@
+---
+title: FlattenedImageAnalysis | Python SDK
+---
+
 # FlattenedImageAnalysis
 
 

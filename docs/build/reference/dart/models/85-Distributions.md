@@ -1,3 +1,7 @@
+---
+title: Distributions | Dart SDK
+---
+
 # Distributions
 
 ## Load the model package

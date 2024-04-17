@@ -1,3 +1,7 @@
+---
+title: SearchedAssets | Kotlin SDK
+---
+
 
 # SearchedAssets
 

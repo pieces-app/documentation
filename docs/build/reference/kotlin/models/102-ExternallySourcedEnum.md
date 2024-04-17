@@ -1,3 +1,7 @@
+---
+title: ExternallySourcedEnum | Kotlin SDK
+---
+
 
 # ExternallySourcedEnum
 

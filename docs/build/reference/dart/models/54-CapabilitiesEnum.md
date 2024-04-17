@@ -1,3 +1,7 @@
+---
+title: CapabilitiesEnum | Dart SDK
+---
+
 # CapabilitiesEnum
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SearchedMatchEnum | TypeScript SDK
+---
+
 
 # SearchedMatchEnum
 

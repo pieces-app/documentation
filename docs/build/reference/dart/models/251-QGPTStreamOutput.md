@@ -1,3 +1,7 @@
+---
+title: QGPTStreamOutput | Dart SDK
+---
+
 # QGPTStreamOutput
 
 ## Load the model package

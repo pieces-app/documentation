@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamEvent | Dart SDK
+---
+
 # FlattenedWorkstreamEvent
 
 ## Load the model package

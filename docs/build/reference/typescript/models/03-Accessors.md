@@ -1,3 +1,7 @@
+---
+title: Accessors | TypeScript SDK
+---
+
 
 # Accessors
 

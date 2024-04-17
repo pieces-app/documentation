@@ -1,3 +1,7 @@
+---
+title: PreonboardedPersonaDetails | Kotlin SDK
+---
+
 
 # PreonboardedPersonaDetails
 

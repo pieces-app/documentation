@@ -1,3 +1,7 @@
+---
+title: Shares API | TypeScript SDK
+---
+
 # Shares API
 
 All URIs are relative to *http://localhost:1000*
@@ -95,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details

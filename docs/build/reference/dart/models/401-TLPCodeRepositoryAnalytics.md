@@ -1,3 +1,7 @@
+---
+title: TLPCodeRepositoryAnalytics | Dart SDK
+---
+
 # TLPCodeRepositoryAnalytics
 
 ## Load the model package

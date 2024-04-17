@@ -1,3 +1,7 @@
+---
+title: SeededFile | TypeScript SDK
+---
+
 
 # SeededFile
 

@@ -1,3 +1,7 @@
+---
+title: Auth0OpenAIUserMetadata | TypeScript SDK
+---
+
 
 # Auth0OpenAIUserMetadata
 

@@ -1,3 +1,7 @@
+---
+title: ClassificationGenericEnum | Kotlin SDK
+---
+
 
 # ClassificationGenericEnum
 

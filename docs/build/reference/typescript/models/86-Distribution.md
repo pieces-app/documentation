@@ -1,3 +1,7 @@
+---
+title: Distribution | TypeScript SDK
+---
+
 
 # Distribution
 

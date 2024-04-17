@@ -1,3 +1,7 @@
+---
+title: FlattenedAnnotation | Python SDK
+---
+
 # FlattenedAnnotation
 
 This is the flattened Version of the annotation, IMPORTANT: when referencing these, ONLY Take the UUID, do NOT polinate(ie w/ asset/person/model) the FlattenedAnnotation as it can create an infinite loop.

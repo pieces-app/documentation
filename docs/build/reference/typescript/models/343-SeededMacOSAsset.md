@@ -1,3 +1,7 @@
+---
+title: SeededMacOSAsset | TypeScript SDK
+---
+
 
 # SeededMacOSAsset
 

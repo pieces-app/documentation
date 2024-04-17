@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventCreationMetadataClipboard | Kotlin SDK
+---
+
 
 # TrackedAssetEventCreationMetadataClipboard
 

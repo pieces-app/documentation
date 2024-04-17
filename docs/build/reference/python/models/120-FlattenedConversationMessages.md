@@ -1,3 +1,7 @@
+---
+title: FlattenedConversationMessages | Python SDK
+---
+
 # FlattenedConversationMessages
 
 This is a flattened plural version of ConversationMessages

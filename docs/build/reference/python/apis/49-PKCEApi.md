@@ -1,3 +1,7 @@
+---
+title: PKCE API | Python SDK
+---
+
 # PKCE API
 
 All URIs are relative to *http://localhost:1000*
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
 
     try:
         # /pkce/clear [POST]
@@ -99,7 +103,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     seeded_pkce = pieces_os_client.SeededPKCE() # SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
 
     try:
@@ -168,7 +172,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     tokenized_pkce = pieces_os_client.TokenizedPKCE() # TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
 
     try:
@@ -236,7 +240,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
 
     try:
         # Your GET endpoint
@@ -301,7 +305,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     code = 'code_example' # str | The PKCE Code to be used to access a Token.
     state = 'state_example' # str | Likely the state that will be returned which should match the requested state as well as the nonce
     var_schema = pieces_os_client.EmbeddedModelSchema() # EmbeddedModelSchema |  (optional)

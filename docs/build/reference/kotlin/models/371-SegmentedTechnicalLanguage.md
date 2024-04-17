@@ -1,3 +1,7 @@
+---
+title: SegmentedTechnicalLanguage | Kotlin SDK
+---
+
 
 # SegmentedTechnicalLanguage
 

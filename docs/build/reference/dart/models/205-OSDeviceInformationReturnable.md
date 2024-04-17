@@ -1,3 +1,7 @@
+---
+title: OSDeviceInformationReturnable | Dart SDK
+---
+
 # OSDeviceInformationReturnable
 
 ## Load the model package

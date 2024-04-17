@@ -1,3 +1,7 @@
+---
+title: Relationships API | Kotlin SDK
+---
+
 # Relationships API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,15 +24,15 @@ This will return all of the relationships that exists within your pieces db.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RelationshipsApi()
+val apiInstance = Relationships API()
 try {
     val result : Relationships = apiInstance.relationshipsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RelationshipsApi#relationshipsSnapshot")
+    println("4xx response calling Relationships API#relationshipsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RelationshipsApi#relationshipsSnapshot")
+    println("5xx response calling Relationships API#relationshipsSnapshot")
     e.printStackTrace()
 }
 ```

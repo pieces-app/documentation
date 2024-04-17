@@ -1,3 +1,7 @@
+---
+title: OAuthAccount | Dart SDK
+---
+
 # OAuthAccount
 
 ## Load the model package

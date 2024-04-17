@@ -1,3 +1,7 @@
+---
+title: PlatformEnum | TypeScript SDK
+---
+
 
 # PlatformEnum
 

@@ -1,3 +1,7 @@
+---
+title: FilterOperationTypeEnum | Kotlin SDK
+---
+
 
 # FilterOperationTypeEnum
 

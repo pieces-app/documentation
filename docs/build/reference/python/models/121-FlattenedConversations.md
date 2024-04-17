@@ -1,3 +1,7 @@
+---
+title: FlattenedConversations | Python SDK
+---
+
 # FlattenedConversations
 
 Flattened version of conversations.

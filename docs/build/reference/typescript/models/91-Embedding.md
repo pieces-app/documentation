@@ -1,3 +1,7 @@
+---
+title: Embedding | TypeScript SDK
+---
+
 
 # Embedding
 

@@ -1,3 +1,7 @@
+---
+title: OAuthAccount | Python SDK
+---
+
 # OAuthAccount
 
 A Model to support account creation to Auth0's Database.

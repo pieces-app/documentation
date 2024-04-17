@@ -1,3 +1,7 @@
+---
+title: Github API | Python SDK
+---
+
 # Github API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.GithubApi(api_client)
+    api_instance = Github API(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_github_gists_import = pieces_os_client.SeededGithubGistsImport() # SeededGithubGistsImport |  (optional)
 
@@ -68,7 +72,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

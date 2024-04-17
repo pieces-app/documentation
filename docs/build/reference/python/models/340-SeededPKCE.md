@@ -1,3 +1,7 @@
+---
+title: SeededPKCE | Python SDK
+---
+
 # SeededPKCE
 
 A model that initialized a PKCE Authentication Flow.

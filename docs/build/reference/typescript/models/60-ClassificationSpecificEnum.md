@@ -1,3 +1,7 @@
+---
+title: ClassificationSpecificEnum | TypeScript SDK
+---
+
 
 # ClassificationSpecificEnum
 

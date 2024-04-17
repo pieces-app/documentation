@@ -1,3 +1,7 @@
+---
+title: PersonModel | TypeScript SDK
+---
+
 
 # PersonModel
 

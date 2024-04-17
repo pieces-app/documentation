@@ -1,3 +1,7 @@
+---
+title: GraphicalImageStatistics | TypeScript SDK
+---
+
 
 # GraphicalImageStatistics
 

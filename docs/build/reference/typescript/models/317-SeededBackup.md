@@ -1,3 +1,7 @@
+---
+title: SeededBackup | TypeScript SDK
+---
+
 
 # SeededBackup
 

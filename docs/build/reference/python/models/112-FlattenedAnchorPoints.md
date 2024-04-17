@@ -1,3 +1,7 @@
+---
+title: FlattenedAnchorPoints | Python SDK
+---
+
 # FlattenedAnchorPoints
 
 

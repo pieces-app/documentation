@@ -1,3 +1,7 @@
+---
+title: SeededAssetsRecommendation | Kotlin SDK
+---
+
 
 # SeededAssetsRecommendation
 

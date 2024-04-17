@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableRelatedTag | TypeScript SDK
+---
+
 
 # SeededDiscoverableRelatedTag
 

@@ -1,3 +1,7 @@
+---
+title: BackupStreamedProgress | Python SDK
+---
+
 # BackupStreamedProgress
 
 This is a specific model to the /backups/create/streamed.

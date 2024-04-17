@@ -1,3 +1,7 @@
+---
+title: ExistingMetadata | Dart SDK
+---
+
 # ExistingMetadata
 
 ## Load the model package

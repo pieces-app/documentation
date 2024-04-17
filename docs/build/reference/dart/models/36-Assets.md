@@ -1,3 +1,7 @@
+---
+title: Assets | Dart SDK
+---
+
 # Assets
 
 ## Load the model package

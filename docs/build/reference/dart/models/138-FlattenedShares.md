@@ -1,3 +1,7 @@
+---
+title: FlattenedShares | Dart SDK
+---
+
 # FlattenedShares
 
 ## Load the model package

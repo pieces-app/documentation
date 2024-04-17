@@ -1,3 +1,7 @@
+---
+title: FlattenedActivities | TypeScript SDK
+---
+
 
 # FlattenedActivities
 

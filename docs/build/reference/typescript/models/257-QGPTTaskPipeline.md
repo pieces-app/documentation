@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipeline | TypeScript SDK
+---
+
 
 # QGPTTaskPipeline
 

@@ -1,3 +1,7 @@
+---
+title: Session | Python SDK
+---
+
 # Session
 
 This is a specific model that will let us know at what time this user was using the application.

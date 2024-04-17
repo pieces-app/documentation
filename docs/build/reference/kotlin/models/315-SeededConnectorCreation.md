@@ -1,3 +1,7 @@
+---
+title: SeededConnectorCreation | Kotlin SDK
+---
+
 
 # SeededConnectorCreation
 

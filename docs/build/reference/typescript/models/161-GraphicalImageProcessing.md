@@ -1,3 +1,7 @@
+---
+title: GraphicalImageProcessing | TypeScript SDK
+---
+
 
 # GraphicalImageProcessing
 

@@ -1,3 +1,7 @@
+---
+title: Applications | Python SDK
+---
+
 # Applications
 
 A list of all the applications

@@ -1,3 +1,7 @@
+---
+title: MailgunDistribution | TypeScript SDK
+---
+
 
 # MailgunDistribution
 

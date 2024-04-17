@@ -1,3 +1,7 @@
+---
+title: SeededAnnotation | Python SDK
+---
+
 # SeededAnnotation
 
 This is the percursor to a fully referenced Annotation.

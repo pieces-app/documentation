@@ -1,3 +1,7 @@
+---
+title: OSDeviceHardwareInformation | TypeScript SDK
+---
+
 
 # OSDeviceHardwareInformation
 

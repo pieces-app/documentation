@@ -1,3 +1,7 @@
+---
+title: Seed | Python SDK
+---
+
 # Seed
 
 A seed Model used to wrap a format or asset

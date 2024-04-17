@@ -1,3 +1,7 @@
+---
+title: Sensitives API | Kotlin SDK
+---
+
 # Sensitives API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will create a new sensitive model.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = SensitivesApi()
+val apiInstance = Sensitives API()
 val seededSensitive : SeededSensitive =  // SeededSensitive | 
 try {
     val result : Sensitive = apiInstance.sensitivesCreateNewSensitive(seededSensitive)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SensitivesApi#sensitivesCreateNewSensitive")
+    println("4xx response calling Sensitives API#sensitivesCreateNewSensitive")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SensitivesApi#sensitivesCreateNewSensitive")
+    println("5xx response calling Sensitives API#sensitivesCreateNewSensitive")
     e.printStackTrace()
 }
 ```
@@ -68,15 +72,15 @@ This will delete a sensitive based on the sensitive uuid.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = SensitivesApi()
+val apiInstance = Sensitives API()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
 try {
     apiInstance.sensitivesDeleteSensitive(sensitive)
 } catch (e: ClientException) {
-    println("4xx response calling SensitivesApi#sensitivesDeleteSensitive")
+    println("4xx response calling Sensitives API#sensitivesDeleteSensitive")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SensitivesApi#sensitivesDeleteSensitive")
+    println("5xx response calling Sensitives API#sensitivesDeleteSensitive")
     e.printStackTrace()
 }
 ```
@@ -98,7 +102,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **sensitivesSnapshot** {#sensitivessnapshot}
 > Sensitives sensitivesSnapshot()
@@ -113,15 +117,15 @@ This will get a snapshot of all of the sensitives.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = SensitivesApi()
+val apiInstance = Sensitives API()
 try {
     val result : Sensitives = apiInstance.sensitivesSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SensitivesApi#sensitivesSnapshot")
+    println("4xx response calling Sensitives API#sensitivesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SensitivesApi#sensitivesSnapshot")
+    println("5xx response calling Sensitives API#sensitivesSnapshot")
     e.printStackTrace()
 }
 ```

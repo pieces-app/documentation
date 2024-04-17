@@ -1,3 +1,7 @@
+---
+title: Theme | Python SDK
+---
+
 # Theme
 
 This will describe the theme that belongs to a user.

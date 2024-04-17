@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventCreationMetadataFile | Kotlin SDK
+---
+
 
 # TrackedAssetEventCreationMetadataFile
 

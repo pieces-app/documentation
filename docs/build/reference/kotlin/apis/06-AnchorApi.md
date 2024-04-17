@@ -1,3 +1,7 @@
+---
+title: Anchor API | Kotlin SDK
+---
+
 # Anchor API
 
 All URIs are relative to *http://localhost:1000*
@@ -25,16 +29,16 @@ This will associate a anchor with a workstream summary. This will do the same th
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.anchorAssociateWorkstreamSummary(anchor, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorAssociateWorkstreamSummary")
+    println("4xx response calling Anchor API#anchorAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorAssociateWorkstreamSummary")
+    println("5xx response calling Anchor API#anchorAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -57,7 +61,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorDisassociateWorkstreamSummary** {#anchordisassociateworkstreamsummary}
 > anchorDisassociateWorkstreamSummary(anchor, workstreamSummary)
@@ -72,16 +76,16 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.anchorDisassociateWorkstreamSummary(anchor, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorDisassociateWorkstreamSummary")
+    println("4xx response calling Anchor API#anchorDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorDisassociateWorkstreamSummary")
+    println("5xx response calling Anchor API#anchorDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -104,7 +108,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorRename** {#anchorrename}
 > Anchor anchorRename(anchor, transferables)
@@ -119,17 +123,17 @@ This will rename a specific anchor.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Anchor = apiInstance.anchorRename(anchor, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorRename")
+    println("4xx response calling Anchor API#anchorRename")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorRename")
+    println("5xx response calling Anchor API#anchorRename")
     e.printStackTrace()
 }
 ```
@@ -167,16 +171,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.anchorScoresIncrement(anchor, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorScoresIncrement")
+    println("4xx response calling Anchor API#anchorScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorScoresIncrement")
+    println("5xx response calling Anchor API#anchorScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -199,7 +203,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorSpecificAnchorSnapshot** {#anchorspecificanchorsnapshot}
 > Anchor anchorSpecificAnchorSnapshot(anchor, transferables)
@@ -214,17 +218,17 @@ This will get a snapshot of a single anchor.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Anchor = apiInstance.anchorSpecificAnchorSnapshot(anchor, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorSpecificAnchorSnapshot")
+    println("4xx response calling Anchor API#anchorSpecificAnchorSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorSpecificAnchorSnapshot")
+    println("5xx response calling Anchor API#anchorSpecificAnchorSnapshot")
     e.printStackTrace()
 }
 ```
@@ -262,17 +266,17 @@ This will update a specific anchor.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorApi()
+val apiInstance = Anchor API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val anchor : Anchor =  // Anchor | 
 try {
     val result : Anchor = apiInstance.anchorUpdate(transferables, anchor)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorApi#anchorUpdate")
+    println("4xx response calling Anchor API#anchorUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorApi#anchorUpdate")
+    println("5xx response calling Anchor API#anchorUpdate")
     e.printStackTrace()
 }
 ```

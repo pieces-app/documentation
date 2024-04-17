@@ -1,3 +1,7 @@
+---
+title: SeededModels | Python SDK
+---
+
 # SeededModels
 
 This is a Model that will hold an iterable of SeededModels.

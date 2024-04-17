@@ -1,3 +1,7 @@
+---
+title: DiscoveredRelatedTag | Dart SDK
+---
+
 # DiscoveredRelatedTag
 
 ## Load the model package

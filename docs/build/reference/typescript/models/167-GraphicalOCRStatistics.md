@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRStatistics | TypeScript SDK
+---
+
 
 # GraphicalOCRStatistics
 

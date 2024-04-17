@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableSensitives | Dart SDK
+---
+
 # SeededDiscoverableSensitives
 
 ## Load the model package

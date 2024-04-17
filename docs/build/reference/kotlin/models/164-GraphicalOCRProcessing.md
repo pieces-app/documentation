@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRProcessing | Kotlin SDK
+---
+
 
 # GraphicalOCRProcessing
 

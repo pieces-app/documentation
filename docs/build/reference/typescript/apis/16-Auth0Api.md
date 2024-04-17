@@ -1,3 +1,7 @@
+---
+title: Auth0 API | TypeScript SDK
+---
+
 # Auth0 API
 
 All URIs are relative to *http://localhost:1000*

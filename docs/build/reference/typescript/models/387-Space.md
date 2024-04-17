@@ -1,3 +1,7 @@
+---
+title: Space | TypeScript SDK
+---
+
 
 # Space
 

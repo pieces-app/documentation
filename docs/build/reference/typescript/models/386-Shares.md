@@ -1,3 +1,7 @@
+---
+title: Shares | TypeScript SDK
+---
+
 
 # Shares
 

@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRProcessing | Dart SDK
+---
+
 # GraphicalOCRProcessing
 
 ## Load the model package

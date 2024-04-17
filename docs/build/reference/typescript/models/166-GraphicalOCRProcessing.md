@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRProcessing | TypeScript SDK
+---
+
 
 # GraphicalOCRProcessing
 

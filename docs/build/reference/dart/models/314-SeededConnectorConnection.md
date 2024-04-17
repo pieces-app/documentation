@@ -1,3 +1,7 @@
+---
+title: SeededConnectorConnection | Dart SDK
+---
+
 # SeededConnectorConnection
 
 ## Load the model package

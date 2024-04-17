@@ -1,3 +1,7 @@
+---
+title: QGPTAgentRelatedRoutes | Python SDK
+---
+
 # QGPTAgentRelatedRoutes
 
 This is specific for all the related materials, like people, tags, websites... xyz

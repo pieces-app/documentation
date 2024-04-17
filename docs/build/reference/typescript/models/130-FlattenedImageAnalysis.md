@@ -1,3 +1,7 @@
+---
+title: FlattenedImageAnalysis | TypeScript SDK
+---
+
 
 # FlattenedImageAnalysis
 

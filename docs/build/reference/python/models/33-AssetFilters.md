@@ -1,3 +1,7 @@
+---
+title: AssetFilters | Python SDK
+---
+
 # AssetFilters
 
 

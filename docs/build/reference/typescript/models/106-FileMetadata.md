@@ -1,3 +1,7 @@
+---
+title: FileMetadata | TypeScript SDK
+---
+
 
 # FileMetadata
 

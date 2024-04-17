@@ -1,3 +1,7 @@
+---
+title: SeededTrackedFormatEvent | TypeScript SDK
+---
+
 
 # SeededTrackedFormatEvent
 

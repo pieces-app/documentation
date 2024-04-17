@@ -1,3 +1,7 @@
+---
+title: SeededDistribution | TypeScript SDK
+---
+
 
 # SeededDistribution
 

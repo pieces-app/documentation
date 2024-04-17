@@ -1,3 +1,7 @@
+---
+title: ReferencedDistribution | Dart SDK
+---
+
 # ReferencedDistribution
 
 ## Load the model package
