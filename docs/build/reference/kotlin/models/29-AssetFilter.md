@@ -3,6 +3,7 @@ title: AssetFilter | Kotlin SDK
 ---
 
 
+
 # AssetFilter
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 **created** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  |  [optional]
 **updated** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  |  [optional]
 **operations** | [**AssetFilters**](AssetFilters) |  |  [optional]
+
 
 
 

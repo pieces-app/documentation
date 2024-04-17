@@ -3,6 +3,7 @@ title: ModelTypeEnum | Kotlin SDK
 ---
 
 
+
 # ModelTypeEnum
 
 ## Enum
@@ -13,6 +14,7 @@ title: ModelTypeEnum | Kotlin SDK
     * `SPEED` (value: `"SPEED"`)
 
     * `ACCURACY` (value: `"ACCURACY"`)
+
 
 
 

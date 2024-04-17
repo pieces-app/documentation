@@ -3,6 +3,7 @@ title: PlatformEnum | Kotlin SDK
 ---
 
 
+
 # PlatformEnum
 
 ## Enum
@@ -23,6 +24,7 @@ title: PlatformEnum | Kotlin SDK
     * `ANDROID` (value: `"ANDROID"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
 
 
 

@@ -3,6 +3,7 @@ title: SeededAsset | Kotlin SDK
 ---
 
 
+
 # SeededAsset
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 **pseudo** | **kotlin.Boolean** |  |  [optional]
 **enrichment** | [**SeededAssetEnrichment**](SeededAssetEnrichment) |  |  [optional]
 **demo** | **kotlin.Boolean** | This will let us know if this asset was generated as a &#39;demo&#39; snippet |  [optional]
+
 
 
 

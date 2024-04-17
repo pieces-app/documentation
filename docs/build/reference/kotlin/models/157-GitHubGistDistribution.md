@@ -3,6 +3,7 @@ title: GitHubGistDistribution | Kotlin SDK
 ---
 
 
+
 # GitHubGistDistribution
 
 ## Properties
@@ -18,6 +19,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **description** | **kotlin.String** | This is the description of the Gist Distribution |  [optional]
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
+
 
 
 

@@ -4,11 +4,6 @@ title: FlattenedAsset | Dart SDK
 
 # FlattenedAsset
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -42,7 +37,5 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a 'demo' snippet | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-
 
 

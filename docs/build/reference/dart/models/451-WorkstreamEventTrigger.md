@@ -4,11 +4,6 @@ title: WorkstreamEventTrigger | Dart SDK
 
 # WorkstreamEventTrigger
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -27,7 +22,5 @@ Name | Type | Description | Notes
 **applicationEnter** | **bool** |  | [optional] 
 **applicationLeave** | **bool** |  | [optional] 
 **applicationSwitch** | **bool** |  | [optional] 
-
-
 
 

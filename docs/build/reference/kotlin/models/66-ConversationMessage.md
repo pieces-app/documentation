@@ -3,6 +3,7 @@ title: ConversationMessage | Kotlin SDK
 ---
 
 
+
 # ConversationMessage
 
 ## Properties
@@ -20,6 +21,7 @@ Name | Type | Description | Notes
 **sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  |  [optional]
+
 
 
 

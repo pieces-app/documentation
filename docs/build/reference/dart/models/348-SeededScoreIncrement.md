@@ -4,11 +4,6 @@ title: SeededScoreIncrement | Dart SDK
 
 # SeededScoreIncrement
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -43,7 +38,5 @@ Name | Type | Description | Notes
 **workstreamEvent** | [**SeededScore**](SeededScore) |  | [optional] 
 **ranges** | [**SeededScore**](SeededScore) |  | [optional] 
 **range** | [**SeededScore**](SeededScore) |  | [optional] 
-
-
 
 

@@ -3,6 +3,7 @@ title: OAuthToken | Kotlin SDK
 ---
 
 
+
 # OAuthToken
 
 ## Properties
@@ -22,6 +23,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 tokenType | Bearer
+
 
 
 

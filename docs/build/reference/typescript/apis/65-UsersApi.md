@@ -4,7 +4,7 @@ title: Users API | TypeScript SDK
 
 # Users API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 Creates a User From a oAuth Token
 
-### Example
+### Example {#authenticatefromoauthtoken-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -28,33 +28,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.AuthenticateFromOauthTokenRequest = {
-    // OAuthToken |  (optional)
-    oAuthToken: ,
+// OAuthToken |  (optional)
+oAuthToken: ,
 };
 
 apiInstance.authenticateFromOauthToken(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#authenticatefromoauthtoken-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oAuthToken** | **OAuthToken**|  |
 
 
-### Return type
+### Return type {#authenticatefromoauthtoken-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP request headers {#authenticatefromoauthtoken-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#authenticatefromoauthtoken-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +65,7 @@ Name | Type | Description  | Notes
 
 Locally Removing a user for the purpose of Signing Out
 
-### Example
+### Example {#usersdisconnectuser-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -73,33 +74,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.UsersDisconnectUserRequest = {
-    // string
-    user: user_example,
+// string
+user: user_example,
 };
 
 apiInstance.usersDisconnectUser(body).then((data: Users) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#usersdisconnectuser-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return type {#usersdisconnectuser-return-type}
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP request headers {#usersdisconnectuser-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#usersdisconnectuser-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -109,7 +111,7 @@ Name | Type | Description  | Notes
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
 
-### Example
+### Example {#userssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -118,25 +120,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.UsersApi(configuration)
 
 apiInstance.usersSnapshot().then((data: Users) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#userssnapshot-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#userssnapshot-return-type}
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP request headers {#userssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#userssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -146,7 +149,7 @@ This endpoint does not need any parameters.
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
-### Example
+### Example {#usersspecificusersnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -155,33 +158,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.UsersApi(configuration)
 
 const body: Pieces.UsersSpecificUserSnapshotRequest = {
-    // string | The id (uuid) for a specific user.
-    user: 497f6eca-6276-4993-bfeb-53cbbbba6f08,
+// string | The id (uuid) for a specific user.
+user: 497f6eca-6276-4993-bfeb-53cbbbba6f08,
 };
 
 apiInstance.usersSpecificUserSnapshot(body).then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#usersspecificusersnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | [**string**] | The id (uuid) for a specific user. | defaults to undefined
 
 
-### Return type
+### Return type {#usersspecificusersnapshot-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP request headers {#usersspecificusersnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#usersspecificusersnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -4,11 +4,6 @@ title: TrackedAssetEventIdentifierDescriptionPairs | Dart SDK
 
 # TrackedAssetEventIdentifierDescriptionPairs
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -49,7 +44,5 @@ Name | Type | Description | Notes
 **assetAnchorAdded** | **String** |  | [optional] 
 **assetAnchorDeleted** | **String** |  | [optional] 
 **assetAnchorUpdated** | **String** |  | [optional] 
-
-
 
 

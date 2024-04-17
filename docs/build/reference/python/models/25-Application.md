@@ -21,22 +21,4 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **automatic_unload** | **bool** | This is a proper that will let us know if we will proactivity unload all of your machine learning models.by default this is false. | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.application import Application
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Application from a JSON string
-application_instance = Application.from_json(json)
-# print the JSON string representation of the object
-print(Application.to_json())
-
-# convert the object into a dict
-application_dict = application_instance.to_dict()
-# create an instance of Application from a dict
-application_form_dict = application.from_dict(application_dict)
-```
-
 

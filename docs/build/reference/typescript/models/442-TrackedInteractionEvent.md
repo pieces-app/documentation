@@ -15,27 +15,4 @@ Name | Type
 **description** | **string**
 **element** | **string**
 
-## Example
-
-```typescript
-import { TrackedInteractionEvent } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: TrackedInteractionEvent = {
-    "schema": null,
-    "description": null,
-    "element": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as TrackedInteractionEvent
-console.log(exampleParsed)
-```
-
 

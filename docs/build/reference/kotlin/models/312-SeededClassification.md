@@ -3,6 +3,7 @@ title: SeededClassification | Kotlin SDK
 ---
 
 
+
 # SeededClassification
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  |  [optional]
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
 **rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  |  [optional]
+
 
 
 

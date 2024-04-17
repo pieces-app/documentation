@@ -3,6 +3,7 @@ title: SeededPKCE | Kotlin SDK
 ---
 
 
+
 # SeededPKCE
 
 ## Properties
@@ -16,9 +17,9 @@ Name | Type | Description | Notes
 **scope** | [**inline**](#kotlin.collections.List&lt;Scope&gt;) | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | 
 **clientId** | **kotlin.String** | Your application&#39;s Client ID. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**redirectUri** | **java.net.URI** | http://localhost:8080/authentication/response |  [optional]
-**domain** | **java.net.URI** | https://auth.pieces.services/authorize |  [optional]
-**audience** | **java.net.URI** | The unique identifier of the target API you want to access. i.e. https://pieces.us.auth0.com/api/v2/ |  [optional]
+**redirectUri** | **java.net.URI** | `http://localhost:8080/authentication/response` |  [optional]
+**domain** | **java.net.URI** | `https://auth.pieces.services/authorize` |  [optional]
+**audience** | **java.net.URI** | The unique identifier of the target API you want to access. i.e. `https://pieces.us.auth0.com`/api/v2/ |  [optional]
 **screenHint** | [**inline**](#screenhint) | Provides a hint to Auth0 as to what flow should be displayed. The default behavior is to show a login page but you can override this by passing &#39;signup&#39; to show the signup page instead. |  [optional]
 **prompt** | [**inline**](#prompt) |  To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). |  [optional]
 **organization** | **kotlin.String** |  |  [optional]
@@ -67,6 +68,7 @@ prompt | login, none
 Name | Value
 ---- | -----
 responseMode | form_post, web_message, fragment, query
+
 
 
 

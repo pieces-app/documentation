@@ -4,11 +4,6 @@ title: SeededDiscoverableAsset | Dart SDK
 
 # SeededDiscoverableAsset
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **fragment** | [**SeededFragment**](SeededFragment) |  | [optional] 
 **directory** | **String** |  | [optional] 
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  | [optional] 
-
-
 
 

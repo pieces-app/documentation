@@ -4,7 +4,7 @@ title: WorkstreamPatternEngine API | Kotlin SDK
 
 # WorkstreamPatternEngine API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This will activate your Workstream Pattern Engine. This is used to aggregate information on your user&#39;s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstreampatternengineprocessorsvisionactivate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,21 +41,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreampatternengineprocessorsvisionactivate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional]
 
-### Return type
+### Return type {#workstreampatternengineprocessorsvisionactivate-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstreampatternengineprocessorsvisionactivate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreampatternengineprocessorsvisionactivate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -67,7 +67,7 @@ No authorization required
 
 This will clear the data for the Workstream Pattern Engine, specifically for our vision data.  This boy will accept ranges of time that the user wants to remove the processing from.
 
-### Example
+### Example {#workstreampatternengineprocessorsvisiondataclear-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -86,21 +86,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreampatternengineprocessorsvisiondataclear-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineDataCleanupRequest** | [**WorkstreamPatternEngineDataCleanupRequest**](../models/WorkstreamPatternEngineDataCleanupRequest)|  | [optional]
 
-### Return type
+### Return type {#workstreampatternengineprocessorsvisiondataclear-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreampatternengineprocessorsvisiondataclear-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreampatternengineprocessorsvisiondataclear-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -112,7 +112,7 @@ No authorization required
 
 This will deactivate your Workstream Pattern Engine. This is used to aggregate information on your user&#39;s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstreampatternengineprocessorsvisiondeactivate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -132,21 +132,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreampatternengineprocessorsvisiondeactivate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamPatternEngineStatus** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional]
 
-### Return type
+### Return type {#workstreampatternengineprocessorsvisiondeactivate-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstreampatternengineprocessorsvisiondeactivate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreampatternengineprocessorsvisiondeactivate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -158,7 +158,7 @@ No authorization required
 
 This will get a snapshot of the status your Workstream Pattern Engine. This is used to aggregate information on your user&#39;s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstreampatternengineprocessorsvisionstatus-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -177,18 +177,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreampatternengineprocessorsvisionstatus-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#workstreampatternengineprocessorsvisionstatus-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstreampatternengineprocessorsvisionstatus-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreampatternengineprocessorsvisionstatus-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

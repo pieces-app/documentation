@@ -31,22 +31,4 @@ Name | Type | Description | Notes
 **demo** | **bool** | This will let us know if this conversation was generated as a &#39;demo&#39; conversation | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.flattened_conversation import FlattenedConversation
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedConversation from a JSON string
-flattened_conversation_instance = FlattenedConversation.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedConversation.to_json())
-
-# convert the object into a dict
-flattened_conversation_dict = flattened_conversation_instance.to_dict()
-# create an instance of FlattenedConversation from a dict
-flattened_conversation_form_dict = flattened_conversation.from_dict(flattened_conversation_dict)
-```
-
 

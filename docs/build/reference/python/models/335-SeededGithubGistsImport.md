@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **application** | **str** | application id. | 
 **public** | **bool** | This will default to false.(ie private), currently not supporting pulling public gists. | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_github_gists_import import SeededGithubGistsImport
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededGithubGistsImport from a JSON string
-seeded_github_gists_import_instance = SeededGithubGistsImport.from_json(json)
-# print the JSON string representation of the object
-print(SeededGithubGistsImport.to_json())
-
-# convert the object into a dict
-seeded_github_gists_import_dict = seeded_github_gists_import_instance.to_dict()
-# create an instance of SeededGithubGistsImport from a dict
-seeded_github_gists_import_form_dict = seeded_github_gists_import.from_dict(seeded_github_gists_import_dict)
-```
-
 

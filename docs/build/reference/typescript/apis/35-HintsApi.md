@@ -4,7 +4,7 @@ title: Hints API | TypeScript SDK
 
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will create a hint.
 
-### Example
+### Example {#hintscreatenewhint-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,33 +27,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.HintsApi(configuration)
 
 const body: Pieces.HintsCreateNewHintRequest = {
-    // SeededHint (optional)
-    seededHint: ,
+// SeededHint (optional)
+seededHint: ,
 };
 
 apiInstance.hintsCreateNewHint(body).then((data: Hint) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#hintscreatenewhint-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededHint** | **SeededHint**|  |
 
 
-### Return type
+### Return type {#hintscreatenewhint-return-type}
 
 [**Hint**](../models/Hint)
 
-### HTTP request headers
+### HTTP request headers {#hintscreatenewhint-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#hintscreatenewhint-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +65,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific hint.
 
-### Example
+### Example {#hintsdeletespecifichint-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -73,33 +74,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.HintsApi(configuration)
 
 const body: Pieces.HintsDeleteSpecificHintRequest = {
-    // string | This is a specific hint uuid
-    hint: hint_example,
+// string | This is a specific hint uuid
+hint: hint_example,
 };
 
 apiInstance.hintsDeleteSpecificHint(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#hintsdeletespecifichint-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | [**string**] | This is a specific hint uuid | defaults to undefined
 
 
-### Return type
+### Return type {#hintsdeletespecifichint-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#hintsdeletespecifichint-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#hintsdeletespecifichint-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -110,7 +112,7 @@ void (empty response body)
 
 This will get a snapshot of all of the hints.
 
-### Example
+### Example {#hintssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,25 +121,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.HintsApi(configuration)
 
 apiInstance.hintsSnapshot().then((data: Hints) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#hintssnapshot-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#hintssnapshot-return-type}
 
 [**Hints**](../models/Hints)
 
-### HTTP request headers
+### HTTP request headers {#hintssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#hintssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

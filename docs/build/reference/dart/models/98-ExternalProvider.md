@@ -4,11 +4,6 @@ title: ExternalProvider | Dart SDK
 
 # ExternalProvider
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -22,7 +17,5 @@ Name | Type | Description | Notes
 **profileData** | [**ExternalProviderProfileData**](ExternalProviderProfileData) |  | [optional] 
 **connection** | **String** | This is an optional field that will be provided onentreprise connections. ie is type == waad then connection might be PiecesApp. However is other cases,you my find your provider and connection is the exact same string. To decifer between the two, you can use the isSocial bool. | [optional] 
 **isSocial** | **bool** |  | [optional] 
-
-
 
 

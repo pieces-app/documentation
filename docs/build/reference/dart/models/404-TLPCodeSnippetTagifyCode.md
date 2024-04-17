@@ -4,11 +4,6 @@ title: TLPCodeSnippetTagifyCode | Dart SDK
 
 # TLPCodeSnippetTagifyCode
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -23,7 +18,5 @@ Name | Type | Description | Notes
 **inferredThreshold** | **num** | this is the minimum score from the postprocessing that a tag needs to have to be included in the inferred_tags array. | 
 **context** | **String** | this is the origin in which this asset was created, application(string representation) | 
 **asset** | **String** | This is the asset id. | 
-
-
 
 

@@ -3,6 +3,7 @@ title: TrackedFormatEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # TrackedFormatEventIdentifierDescriptionPairs
 
 ## Properties
@@ -89,6 +90,7 @@ formatInserted | a_format_was_inserted
 Name | Value
 ---- | -----
 formatValueEdited | a_format_value_was_edited
+
 
 
 

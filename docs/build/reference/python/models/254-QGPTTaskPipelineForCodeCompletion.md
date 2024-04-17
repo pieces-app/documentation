@@ -13,22 +13,4 @@ Name | Type | Description | Notes
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **context** | **List[str]** |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_task_pipeline_for_code_completion import QGPTTaskPipelineForCodeCompletion
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTTaskPipelineForCodeCompletion from a JSON string
-qgpt_task_pipeline_for_code_completion_instance = QGPTTaskPipelineForCodeCompletion.from_json(json)
-# print the JSON string representation of the object
-print(QGPTTaskPipelineForCodeCompletion.to_json())
-
-# convert the object into a dict
-qgpt_task_pipeline_for_code_completion_dict = qgpt_task_pipeline_for_code_completion_instance.to_dict()
-# create an instance of QGPTTaskPipelineForCodeCompletion from a dict
-qgpt_task_pipeline_for_code_completion_form_dict = qgpt_task_pipeline_for_code_completion.from_dict(qgpt_task_pipeline_for_code_completion_dict)
-```
-
 

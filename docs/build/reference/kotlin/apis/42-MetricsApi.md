@@ -4,7 +4,7 @@ title: Metrics API | Kotlin SDK
 
 # Metrics API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This is going to get a snapshot of our FormatsMetrics
 
-### Example
+### Example {#getmetricsformats-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -38,18 +38,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getmetricsformats-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getmetricsformats-return-type}
 
 [**FormatsMetrics**](../models/FormatsMetrics)
 
-### Authorization
+### Authorization {#getmetricsformats-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getmetricsformats-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -61,7 +61,7 @@ No authorization required
 
 This will return a list of code formats in desc order from most to least formats uploaded.
 
-### Example
+### Example {#metricsformatsordered-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -80,18 +80,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#metricsformatsordered-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#metricsformatsordered-return-type}
 
 [**OrderedMetrics**](../models/OrderedMetrics)
 
-### Authorization
+### Authorization {#metricsformatsordered-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#metricsformatsordered-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

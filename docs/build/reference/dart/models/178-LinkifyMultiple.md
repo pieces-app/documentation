@@ -4,11 +4,6 @@ title: LinkifyMultiple | Dart SDK
 
 # LinkifyMultiple
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **users** | [**List\<SeededUser\>**](SeededUser) | this is an array of users. | [optional] [default to const []]
 **access** | [**AccessEnum**](AccessEnum) |  | 
 **name** | **String** | optionally can give the collection a name if you want. | [optional] 
-
-
 
 

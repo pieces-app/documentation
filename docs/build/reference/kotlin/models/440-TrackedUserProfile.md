@@ -3,6 +3,7 @@ title: TrackedUserProfile | Kotlin SDK
 ---
 
 
+
 # TrackedUserProfile
 
 ## Properties
@@ -20,6 +21,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 granularity | DEVICE, ACCOUNT, ANONYMOUS
+
 
 
 

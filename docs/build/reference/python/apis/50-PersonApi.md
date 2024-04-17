@@ -4,7 +4,7 @@ title: Person API | Python SDK
 
 # Person API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a person with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#person_associate_workstream_summary-example}
 
 
 ```python
@@ -53,7 +53,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#person_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -61,27 +61,26 @@ Name | Type | Description  | Notes
  **person** | **str**| This is a uuid that represents a person. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#person_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#person_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#person_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#person_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **person_disassociate_workstream_summary** {#person_disassociate_workstream_summary}
 > person_disassociate_workstream_summary(person, workstream_summary)
@@ -90,7 +89,7 @@ No authorization required
 
 This will enable us to disassociate an person from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#person_disassociate_workstream_summary-example}
 
 
 ```python
@@ -121,7 +120,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#person_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -129,27 +128,26 @@ Name | Type | Description  | Notes
  **person** | **str**| This is a uuid that represents a person. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#person_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#person_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#person_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#person_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **person_scores_increment** {#person_scores_increment}
 > person_scores_increment(person, seeded_score_increment=seeded_score_increment)
@@ -158,7 +156,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#person_scores_increment-example}
 
 
 ```python
@@ -190,7 +188,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#person_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -198,27 +196,26 @@ Name | Type | Description  | Notes
  **person** | **str**| This is a uuid that represents a person. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#person_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#person_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#person_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#person_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **person_snapshot** {#person_snapshot}
 > Person person_snapshot(person, transferables=transferables)
@@ -227,7 +224,7 @@ No authorization required
 
 This will get a snapshot of a specific person
 
-### Example
+### Example {#person_snapshot-example}
 
 
 ```python
@@ -261,7 +258,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#person_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -269,27 +266,26 @@ Name | Type | Description  | Notes
  **person** | **str**| This is a uuid that represents a person. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#person_snapshot-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#person_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#person_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#person_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **update_person** {#update_person}
 > Person update_person(transferables=transferables, person=person)
@@ -298,7 +294,7 @@ No authorization required
 
 This will update a specific person
 
-### Example
+### Example {#update_person-example}
 
 
 ```python
@@ -332,7 +328,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#update_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -340,24 +336,23 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **person** | [**Person**](../models/Person)|  | [optional] 
 
-### Return type
+### Return type {#update_person-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#update_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#update_person-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#update_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

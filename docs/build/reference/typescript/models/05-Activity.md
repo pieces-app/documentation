@@ -24,36 +24,4 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **rank** | **number**
 
-## Example
-
-```typescript
-import { Activity } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Activity = {
-    "schema": null,
-    "id": null,
-    "created": null,
-    "updated": null,
-    "event": null,
-    "application": null,
-    "deleted": null,
-    "asset": null,
-    "user": null,
-    "format": null,
-    "mechanism": null,
-    "rank": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Activity
-console.log(exampleParsed)
-```
-
 

@@ -3,6 +3,7 @@ title: ExternalProviderProfileData | Kotlin SDK
 ---
 
 
+
 # ExternalProviderProfileData
 
 ## Properties
@@ -46,6 +47,7 @@ Name | Type | Description | Notes
 **diskUsage** | **kotlin.Int** |  |  [optional]
 **collaborators** | **kotlin.Int** |  |  [optional]
 **twoFactorAuthentication** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

@@ -3,6 +3,7 @@ title: TrackedAssetEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # TrackedAssetEventIdentifierDescriptionPairs
 
 ## Properties
@@ -297,6 +298,7 @@ assetAnchorDeleted | a_anchor_was_deleted_by_the_user
 Name | Value
 ---- | -----
 assetAnchorUpdated | a_anchor_was_updated_by_the_user
+
 
 
 

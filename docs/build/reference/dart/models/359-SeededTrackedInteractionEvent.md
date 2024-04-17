@@ -4,11 +4,6 @@ title: SeededTrackedInteractionEvent | Dart SDK
 
 # SeededTrackedInteractionEvent
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **description** | **String** | These need structure | 
 **element** | **String** |  | [optional] 
 **identifierDescriptionPair** | [**SeededTrackedInteractionEventIdentifierDescriptionPairs**](SeededTrackedInteractionEventIdentifierDescriptionPairs) |  | [optional] 
-
-
 
 

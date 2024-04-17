@@ -22,34 +22,4 @@ Name | Type
 **model** | **string**
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding)
 
-## Example
-
-```typescript
-import { QGPTRelevanceInput } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: QGPTRelevanceInput = {
-    "schema": null,
-    "query": null,
-    "paths": null,
-    "seeds": null,
-    "assets": null,
-    "messages": null,
-    "options": null,
-    "application": null,
-    "model": null,
-    "temporal": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as QGPTRelevanceInput
-console.log(exampleParsed)
-```
-
 

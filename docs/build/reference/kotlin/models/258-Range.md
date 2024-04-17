@@ -3,6 +3,7 @@ title: Range | Kotlin SDK
 ---
 
 
+
 # Range
 
 ## Properties
@@ -18,6 +19,7 @@ Name | Type | Description | Notes
 **between** | **kotlin.Boolean** |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
+
 
 
 

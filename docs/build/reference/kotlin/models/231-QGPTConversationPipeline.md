@@ -3,6 +3,7 @@ title: QGPTConversationPipeline | Kotlin SDK
 ---
 
 
+
 # QGPTConversationPipeline
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **generalizedCodeDialog** | [**QGPTConversationPipelineForGeneralizedCodeDialog**](QGPTConversationPipelineForGeneralizedCodeDialog) |  |  [optional]
 **contextualizedCodeDialog** | [**QGPTConversationPipelineForContextualizedCodeDialog**](QGPTConversationPipelineForContextualizedCodeDialog) |  |  [optional]
 **contextualizedCodeWorkstreamDialog** | [**QGPTConversationPipelineForContextualizedCodeWorkstreamDialog**](QGPTConversationPipelineForContextualizedCodeWorkstreamDialog) |  |  [optional]
+
 
 
 

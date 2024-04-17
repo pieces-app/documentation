@@ -4,7 +4,7 @@ title: Database API | TypeScript SDK
 
 # Database API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 This is going to export your current database.
 
-### Example
+### Example {#databaseexport-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,25 +26,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.DatabaseApi(configuration)
 
 apiInstance.databaseExport().then((data: ExportedDatabase) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#databaseexport-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#databaseexport-return-type}
 
 [**ExportedDatabase**](../models/ExportedDatabase)
 
-### HTTP request headers
+### HTTP request headers {#databaseexport-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#databaseexport-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -55,7 +56,7 @@ This endpoint does not need any parameters.
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
 
-### Example
+### Example {#databaseimport-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -64,33 +65,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.DatabaseApi(configuration)
 
 const body: Pieces.DatabaseImportRequest = {
-    // ExportedDatabase |  (optional)
-    exportedDatabase: ,
+// ExportedDatabase |  (optional)
+exportedDatabase: ,
 };
 
 apiInstance.databaseImport(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#databaseimport-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **exportedDatabase** | **ExportedDatabase**|  |
 
 
-### Return type
+### Return type {#databaseimport-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#databaseimport-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#databaseimport-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |

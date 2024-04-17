@@ -3,6 +3,7 @@ title: Auth0Identity | Kotlin SDK
 ---
 
 
+
 # Auth0Identity
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **userId** | **kotlin.String** | User&#39;s unique identifier for this connection/provider. |  [optional]
 **accessToken** | **kotlin.String** |  |  [optional]
 **expiresIn** | **kotlin.Int** |  |  [optional]
+
 
 
 

@@ -3,6 +3,7 @@ title: SeededWebsite | Kotlin SDK
 ---
 
 
+
 # SeededWebsite
 
 ## Properties
@@ -15,6 +16,7 @@ Name | Type | Description | Notes
 **conversation** | **kotlin.String** | This is the specific conversation that this website is going to get attached to!! |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **person** | **kotlin.String** | this is a uuid of a person that we are going to add the website too. |  [optional]
+
 
 
 

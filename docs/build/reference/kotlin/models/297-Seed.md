@@ -3,6 +3,7 @@ title: Seed | Kotlin SDK
 ---
 
 
+
 # Seed
 
 ## Properties
@@ -18,6 +19,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 type | SEEDED_FORMAT, SEEDED_ASSET
+
 
 
 

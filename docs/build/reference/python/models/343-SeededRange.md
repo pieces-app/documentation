@@ -17,22 +17,4 @@ Name | Type | Description | Notes
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 **conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_range import SeededRange
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededRange from a JSON string
-seeded_range_instance = SeededRange.from_json(json)
-# print the JSON string representation of the object
-print(SeededRange.to_json())
-
-# convert the object into a dict
-seeded_range_dict = seeded_range_instance.to_dict()
-# create an instance of SeededRange from a dict
-seeded_range_form_dict = seeded_range.from_dict(seeded_range_dict)
-```
-
 

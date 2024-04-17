@@ -3,6 +3,7 @@ title: TokenizedPKCE | Kotlin SDK
 ---
 
 
+
 # TokenizedPKCE
 
 ## Properties
@@ -14,7 +15,7 @@ Name | Type | Description | Notes
 **redirectUri** | **kotlin.String** | This is required only if it was set at the GET /authorize endpoint. The values must match. | 
 **codeVerifier** | **kotlin.String** | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**audience** | **kotlin.String** | The audience domain: i.e. https://pieces.us.auth0.com |  [optional]
+**audience** | **kotlin.String** | The audience domain: i.e. `https://pieces.us.auth0.com` |  [optional]
 
 
 <a id="GrantType"></a>
@@ -22,6 +23,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 grantType | refresh_token, authorization_code
+
 
 
 

@@ -3,6 +3,7 @@ title: TrackedSessionEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # TrackedSessionEventIdentifierDescriptionPairs
 
 ## Properties
@@ -105,6 +106,7 @@ sessionOnboardingInitialized | onboarding_has_been_initialized_for_this_session
 Name | Value
 ---- | -----
 sessionOnboardingCompleted | onboarding_has_been_completed_for_this_session
+
 
 
 

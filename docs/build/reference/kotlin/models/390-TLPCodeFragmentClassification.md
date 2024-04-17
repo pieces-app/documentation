@@ -3,6 +3,7 @@ title: TLPCodeFragmentClassification | Kotlin SDK
 ---
 
 
+
 # TLPCodeFragmentClassification
 
 ## Properties
@@ -20,6 +21,7 @@ Name | Type | Description | Notes
 **metadata** | [**TLPCodeFragmentClassificationMetadata**](TLPCodeFragmentClassificationMetadata) |  |  [optional]
 **latency** | **java.math.BigDecimal** | this is the time it takes to run this model. |  [optional]
 **system** | [**SystemExecutionInformation**](SystemExecutionInformation) |  |  [optional]
+
 
 
 

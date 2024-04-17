@@ -42,22 +42,4 @@ Name | Type | Description | Notes
 **ranges** | [**SeededScore**](SeededScore) |  | [optional] 
 **range** | [**SeededScore**](SeededScore) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_score_increment import SeededScoreIncrement
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededScoreIncrement from a JSON string
-seeded_score_increment_instance = SeededScoreIncrement.from_json(json)
-# print the JSON string representation of the object
-print(SeededScoreIncrement.to_json())
-
-# convert the object into a dict
-seeded_score_increment_dict = seeded_score_increment_instance.to_dict()
-# create an instance of SeededScoreIncrement from a dict
-seeded_score_increment_form_dict = seeded_score_increment.from_dict(seeded_score_increment_dict)
-```
-
 

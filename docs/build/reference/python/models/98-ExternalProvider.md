@@ -21,22 +21,4 @@ Name | Type | Description | Notes
 **connection** | **str** | This is an optional field that will be provided onentreprise connections. ie is type &#x3D;&#x3D; waad then connection might be PiecesApp. However is other cases,you my find your provider and connection is the exact same string. To decifer between the two, you can use the isSocial bool. | [optional] 
 **is_social** | **bool** |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.external_provider import ExternalProvider
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ExternalProvider from a JSON string
-external_provider_instance = ExternalProvider.from_json(json)
-# print the JSON string representation of the object
-print(ExternalProvider.to_json())
-
-# convert the object into a dict
-external_provider_dict = external_provider_instance.to_dict()
-# create an instance of ExternalProvider from a dict
-external_provider_form_dict = external_provider.from_dict(external_provider_dict)
-```
-
 

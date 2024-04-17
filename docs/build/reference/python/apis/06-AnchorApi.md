@@ -4,7 +4,7 @@ title: Anchor API | Python SDK
 
 # Anchor API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchor_associate_workstream_summary-example}
 
 
 ```python
@@ -54,7 +54,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -62,27 +62,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#anchor_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchor_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchor_disassociate_workstream_summary** {#anchor_disassociate_workstream_summary}
 > anchor_disassociate_workstream_summary(anchor, workstream_summary)
@@ -91,7 +90,7 @@ No authorization required
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchor_disassociate_workstream_summary-example}
 
 
 ```python
@@ -122,7 +121,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -130,27 +129,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#anchor_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchor_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchor_rename** {#anchor_rename}
 > Anchor anchor_rename(anchor, transferables=transferables)
@@ -159,7 +157,7 @@ No authorization required
 
 This will rename a specific anchor.
 
-### Example
+### Example {#anchor_rename-example}
 
 
 ```python
@@ -193,7 +191,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_rename-parameters}
 
 
 Name | Type | Description  | Notes
@@ -201,27 +199,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchor_rename-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchor_rename-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_rename-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_rename-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchor_scores_increment** {#anchor_scores_increment}
 > anchor_scores_increment(anchor, seeded_score_increment=seeded_score_increment)
@@ -230,7 +227,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchor_scores_increment-example}
 
 
 ```python
@@ -262,7 +259,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -270,27 +267,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#anchor_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchor_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchor_specific_anchor_snapshot** {#anchor_specific_anchor_snapshot}
 > Anchor anchor_specific_anchor_snapshot(anchor, transferables=transferables)
@@ -299,7 +295,7 @@ No authorization required
 
 This will get a snapshot of a single anchor.
 
-### Example
+### Example {#anchor_specific_anchor_snapshot-example}
 
 
 ```python
@@ -333,7 +329,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_specific_anchor_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -341,27 +337,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchor_specific_anchor_snapshot-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchor_specific_anchor_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_specific_anchor_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_specific_anchor_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Anchor not found. |  -  |
-
-
 
 ## **anchor_update** {#anchor_update}
 > Anchor anchor_update(transferables=transferables, anchor=anchor)
@@ -370,7 +365,7 @@ No authorization required
 
 This will update a specific anchor.
 
-### Example
+### Example {#anchor_update-example}
 
 
 ```python
@@ -404,7 +399,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -412,25 +407,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **anchor** | [**Anchor**](../models/Anchor)|  | [optional] 
 
-### Return type
+### Return type {#anchor_update-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchor_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

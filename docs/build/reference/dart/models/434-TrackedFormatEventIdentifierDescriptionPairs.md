@@ -4,11 +4,6 @@ title: TrackedFormatEventIdentifierDescriptionPairs | Dart SDK
 
 # TrackedFormatEventIdentifierDescriptionPairs
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -23,7 +18,5 @@ Name | Type | Description | Notes
 **formatUpdated** | **String** | a format was updated, generic update. | [optional] 
 **formatInserted** | **String** | a format was inserted | [optional] 
 **formatValueEdited** | **String** | a format's value was update ie, the text, etc... | [optional] 
-
-
 
 

@@ -4,7 +4,7 @@ title: MacOS API | Python SDK
 
 # MacOS API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Data
 
-### Example
+### Example {#assets_create_new_asset_from_macos-example}
 
 
 ```python
@@ -52,31 +52,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_create_new_asset_from_macos-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_mac_os_asset** | [**SeededMacOSAsset**](../models/SeededMacOSAsset)| A SeededMacosApplication which contains the value and an Application Instance | [optional] 
 
-### Return type
+### Return type {#assets_create_new_asset_from_macos-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assets_create_new_asset_from_macos-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_create_new_asset_from_macos-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_create_new_asset_from_macos-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

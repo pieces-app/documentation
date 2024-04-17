@@ -20,22 +20,4 @@ Name | Type | Description | Notes
 **enrichment** | [**SeededAssetEnrichment**](SeededAssetEnrichment) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a &#39;demo&#39; snippet | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_asset import SeededAsset
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededAsset from a JSON string
-seeded_asset_instance = SeededAsset.from_json(json)
-# print the JSON string representation of the object
-print(SeededAsset.to_json())
-
-# convert the object into a dict
-seeded_asset_dict = seeded_asset_instance.to_dict()
-# create an instance of SeededAsset from a dict
-seeded_asset_form_dict = seeded_asset.from_dict(seeded_asset_dict)
-```
-
 

@@ -15,27 +15,4 @@ Name | Type
 **website** | [**ReferencedWebsite**](ReferencedWebsite)
 **tag** | [**ReferencedTag**](ReferencedTag)
 
-## Example
-
-```typescript
-import { ExistingMetadata } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: ExistingMetadata = {
-    "schema": null,
-    "website": null,
-    "tag": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ExistingMetadata
-console.log(exampleParsed)
-```
-
 

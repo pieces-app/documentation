@@ -4,11 +4,6 @@ title: AssetFilter | Dart SDK
 
 # AssetFilter
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -21,7 +16,5 @@ Name | Type | Description | Notes
 **created** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  | [optional] 
 **updated** | [**AssetFilterTimestamp**](AssetFilterTimestamp) |  | [optional] 
 **operations** | [**AssetFilters**](AssetFilters) |  | [optional] 
-
-
 
 

@@ -4,11 +4,6 @@ title: TrackedApplicationUpdate | Dart SDK
 
 # TrackedApplicationUpdate
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **current** | [**Application**](Application) |  | 
 **previous** | [**Application**](Application) |  | [optional] 
 **user** | [**TrackedUserProfile**](TrackedUserProfile) |  | [optional] 
-
-
 
 

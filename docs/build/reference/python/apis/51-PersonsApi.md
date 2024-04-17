@@ -4,7 +4,7 @@ title: Persons API | Python SDK
 
 # Persons API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
-### Example
+### Example {#person_disassociate_asset-example}
 
 
 ```python
@@ -52,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#person_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -60,27 +60,26 @@ Name | Type | Description  | Notes
  **person** | **str**| This is a uuid that represents a person. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#person_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#person_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#person_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#person_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **persons_create_new_person** {#persons_create_new_person}
 > Person persons_create_new_person(transferables=transferables, seeded_person=seeded_person)
@@ -89,7 +88,7 @@ No authorization required
 
 This will create a new person.
 
-### Example
+### Example {#persons_create_new_person-example}
 
 
 ```python
@@ -124,7 +123,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#persons_create_new_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -132,27 +131,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_person** | [**SeededPerson**](../models/SeededPerson)|  | [optional] 
 
-### Return type
+### Return type {#persons_create_new_person-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#persons_create_new_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#persons_create_new_person-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#persons_create_new_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **persons_delete_person** {#persons_delete_person}
 > persons_delete_person(person)
@@ -161,7 +159,7 @@ No authorization required
 
 This will delete a specific person.
 
-### Example
+### Example {#persons_delete_person-example}
 
 
 ```python
@@ -191,34 +189,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#persons_delete_person-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#persons_delete_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#persons_delete_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#persons_delete_person-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#persons_delete_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **persons_snapshot** {#persons_snapshot}
 > Persons persons_snapshot(transferables=transferables)
@@ -227,7 +224,7 @@ No authorization required
 
 This will get a snapshot of all of your people
 
-### Example
+### Example {#persons_snapshot-example}
 
 
 ```python
@@ -260,32 +257,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#persons_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#persons_snapshot-return-type}
 
 [**Persons**](../models/Persons)
 
-### Authorization
+### Authorization {#persons_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#persons_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#persons_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

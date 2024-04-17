@@ -3,6 +3,7 @@ title: SeededTrackedInteractionEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # SeededTrackedInteractionEventIdentifierDescriptionPairs
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 assetsListRefreshed | the_assets_list_was_refreshed_through_ui_element
+
 
 
 

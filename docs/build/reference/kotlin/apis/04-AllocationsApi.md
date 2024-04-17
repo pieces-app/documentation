@@ -4,7 +4,7 @@ title: Allocations API | Kotlin SDK
 
 # Allocations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
 
-### Example
+### Example {#allocationsconnectnewcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -43,21 +43,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationsconnectnewcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
 
-### Return type
+### Return type {#allocationsconnectnewcloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationsconnectnewcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsconnectnewcloud-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -69,7 +69,7 @@ No authorization required
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocationscreatenewallocation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -89,21 +89,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationscreatenewallocation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationscreatenewallocation-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationscreatenewallocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationscreatenewallocation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -115,7 +115,7 @@ No authorization required
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocationsdeleteallocation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -135,21 +135,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationsdeleteallocation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsdeleteallocation-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#allocationsdeleteallocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsdeleteallocation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -161,7 +161,7 @@ No authorization required
 
 This will attempt to disconnect to a specific users cloud.
 
-### Example
+### Example {#allocationsdisconnectcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -181,21 +181,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationsdisconnectcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsdisconnectcloud-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#allocationsdisconnectcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsdisconnectcloud-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -207,7 +207,7 @@ No authorization required
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user&#39;s cloud is up-to-date.
 
-### Example
+### Example {#allocationsreconnectcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -227,21 +227,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationsreconnectcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsreconnectcloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationsreconnectcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsreconnectcloud-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -253,7 +253,7 @@ No authorization required
 
 This is going to get a snapshot of all of the connected allocations.
 
-### Example
+### Example {#allocationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -272,18 +272,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#allocationssnapshot-return-type}
 
 [**Allocations**](../models/Allocations)
 
-### Authorization
+### Authorization {#allocationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

@@ -4,7 +4,7 @@ title: Discovery API | Dart SDK
 
 # Discovery API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This is the endpoint used for bulk import. In both cases of the bulk import flow, fragments or files. When we already have \"snippets\" or fragments to discover and now our job is to check if they are actually valid snippets(clustering). Otherwise, we should have a file to parse && snippitize and then run through the clustering.
 
-### Example
+### Example {#discoverydiscoverassets-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -37,27 +37,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#discoverydiscoverassets-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **automatic** | **bool**| For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
- **seededDiscoverableAssets** | [**SeededDiscoverableAssets**](../models/SeededDiscoverableAssets)| The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. | [optional] 
+ **automatic** | **bool** | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
+ **seededDiscoverableAssets** | [**SeededDiscoverableAssets**](../models/SeededDiscoverableAssets) | The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. | [optional] 
 
-### Return type
+### Return type {#discoverydiscoverassets-return-type}
 
 [**DiscoveredAssets**](../models/DiscoveredAssets)
 
-### Authorization
+### Authorization {#discoverydiscoverassets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#discoverydiscoverassets-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **discoveryDiscoverAssetsHtml** {#discoverydiscoverassetshtml}
 > DiscoveredHtmlWebpages discoveryDiscoverAssetsHtml(automatic, seededDiscoverableHtmlWebpages)
@@ -66,7 +64,7 @@ No authorization required
 
 This is the discover discover assets html endpoint. The goal of this endpoint is to either take an iterable of urls and pages(an html string) and extract all the assets from the iterable.
 
-### Example
+### Example {#discoverydiscoverassetshtml-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -82,27 +80,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#discoverydiscoverassetshtml-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **automatic** | **bool**| For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
- **seededDiscoverableHtmlWebpages** | [**SeededDiscoverableHtmlWebpages**](../models/SeededDiscoverableHtmlWebpages)|  | [optional] 
+ **automatic** | **bool** | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
+ **seededDiscoverableHtmlWebpages** | [**SeededDiscoverableHtmlWebpages**](../models/SeededDiscoverableHtmlWebpages) |  | [optional] 
 
-### Return type
+### Return type {#discoverydiscoverassetshtml-return-type}
 
 [**DiscoveredHtmlWebpages**](../models/DiscoveredHtmlWebpages)
 
-### Authorization
+### Authorization {#discoverydiscoverassetshtml-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#discoverydiscoverassetshtml-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **discoveryDiscoverSensitives** {#discoverydiscoversensitives}
 > DiscoveredSensitives discoveryDiscoverSensitives(automatic, seededDiscoverableSensitives)
@@ -111,7 +107,7 @@ No authorization required
 
 This endpoint will accept an array of text values, and attampt to extract sensitive data out of it.
 
-### Example
+### Example {#discoverydiscoversensitives-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -127,27 +123,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#discoverydiscoversensitives-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **automatic** | **bool**| For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
- **seededDiscoverableSensitives** | [**SeededDiscoverableSensitives**](../models/SeededDiscoverableSensitives)|  | [optional] 
+ **automatic** | **bool** | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
+ **seededDiscoverableSensitives** | [**SeededDiscoverableSensitives**](../models/SeededDiscoverableSensitives) |  | [optional] 
 
-### Return type
+### Return type {#discoverydiscoversensitives-return-type}
 
 [**DiscoveredSensitives**](../models/DiscoveredSensitives)
 
-### Authorization
+### Authorization {#discoverydiscoversensitives-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#discoverydiscoversensitives-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **discoveryDiscoverTagsRelated** {#discoverydiscovertagsrelated}
 > DiscoveredRelatedTags discoveryDiscoverTagsRelated(automatic, seededDiscoverableRelatedTags)
@@ -156,7 +150,7 @@ No authorization required
 
 This will take in a tag or multiple tags and return all the tags that are related to the tag or tag provide in the body.
 
-### Example
+### Example {#discoverydiscovertagsrelated-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -172,25 +166,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#discoverydiscovertagsrelated-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **automatic** | **bool**| For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
- **seededDiscoverableRelatedTags** | [**SeededDiscoverableRelatedTags**](../models/SeededDiscoverableRelatedTags)|  | [optional] 
+ **automatic** | **bool** | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | [optional] [default to true]
+ **seededDiscoverableRelatedTags** | [**SeededDiscoverableRelatedTags**](../models/SeededDiscoverableRelatedTags) |  | [optional] 
 
-### Return type
+### Return type {#discoverydiscovertagsrelated-return-type}
 
 [**DiscoveredRelatedTags**](../models/DiscoveredRelatedTags)
 
-### Authorization
+### Authorization {#discoverydiscovertagsrelated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#discoverydiscovertagsrelated-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

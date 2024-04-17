@@ -4,7 +4,7 @@ title: Applications API | Dart SDK
 
 # Applications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 Retrieves a list of external applications installed on the user's machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
 
-### Example
+### Example {#applicationsexternalrelated-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -43,23 +43,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsexternalrelated-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationsexternalrelated-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applicationsexternalrelated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsexternalrelated-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **applicationsExternalSnapshot** {#applicationsexternalsnapshot}
 > DetectedExternalApplications applicationsExternalSnapshot()
@@ -68,7 +66,7 @@ No authorization required
 
 Provides a snapshot of all external applications detected on the user's machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
 
-### Example
+### Example {#applicationsexternalsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -82,23 +80,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsexternalsnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationsexternalsnapshot-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applicationsexternalsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsexternalsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **applicationsRegister - (Deprecated)** {#applicationsregister}
 > Application applicationsRegister(application)
@@ -107,7 +103,7 @@ No authorization required
 
 Registers a new application within the Pieces ecosystem.
 
-### Example
+### Example {#applicationsregister-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -122,26 +118,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsregister-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application** | [**Application**](../models/Application)| This will accept a application. | [optional] 
+ **application** | [**Application**](../models/Application) | This will accept a application. | [optional] 
 
-### Return type
+### Return type {#applicationsregister-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationsregister-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsregister-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **applicationsSessionClose - (Deprecated)** {#applicationssessionclose}
 > Session applicationsSessionClose(body)
@@ -150,7 +144,7 @@ No authorization required
 
 Closes an active session, identified by a session UUID, marking the end of the user's current interaction with the Pieces application.
 
-### Example
+### Example {#applicationssessionclose-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -165,26 +159,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionclose-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | **String**| This will accept a required session uuid. | [optional] 
+ **body** | **String** | This will accept a required session uuid. | [optional] 
 
-### Return type
+### Return type {#applicationssessionclose-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionclose-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionclose-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **applicationsSessionOpen - (Deprecated)** {#applicationssessionopen}
 > Session applicationsSessionOpen()
@@ -193,7 +185,7 @@ No authorization required
 
 Initiates a new session, marking the start of a user's interaction with the Pieces application.
 
-### Example
+### Example {#applicationssessionopen-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -207,23 +199,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionopen-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationssessionopen-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionopen-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionopen-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **applicationsSessionSnapshot - (Deprecated)** {#applicationssessionsnapshot}
 > Session applicationsSessionSnapshot(session)
@@ -232,7 +222,7 @@ No authorization required
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
 
-### Example
+### Example {#applicationssessionsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -247,26 +237,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **session** | **String**| This is a uuid that points to a session. | 
+ **session** | **String** | This is a uuid that points to a session. | 
 
-### Return type
+### Return type {#applicationssessionsnapshot-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **applicationsSnapshot** {#applicationssnapshot}
 > Applications applicationsSnapshot()
@@ -275,7 +263,7 @@ No authorization required
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
 
-### Example
+### Example {#applicationssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -289,23 +277,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationssnapshot-return-type}
 
 [**Applications**](../models/Applications)
 
-### Authorization
+### Authorization {#applicationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **applicationsSpecificApplicationSnapshot** {#applicationsspecificapplicationsnapshot}
 > Application applicationsSpecificApplicationSnapshot(application)
@@ -314,7 +300,7 @@ No authorization required
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
 
-### Example
+### Example {#applicationsspecificapplicationsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -329,26 +315,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsspecificapplicationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **application** | **String**| This is a uuid that represents an application | 
+ **application** | **String** | This is a uuid that represents an application | 
 
-### Return type
+### Return type {#applicationsspecificapplicationsnapshot-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationsspecificapplicationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsspecificapplicationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **applicationsUsageEngagementInteraction - (Deprecated)** {#applicationsusageengagementinteraction}
 > TrackedInteractionEvent applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
@@ -357,7 +341,7 @@ No authorization required
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
 
-### Example
+### Example {#applicationsusageengagementinteraction-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -372,26 +356,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageengagementinteraction-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededTrackedInteractionEvent** | [**SeededTrackedInteractionEvent**](../models/SeededTrackedInteractionEvent)|  | [optional] 
+ **seededTrackedInteractionEvent** | [**SeededTrackedInteractionEvent**](../models/SeededTrackedInteractionEvent) |  | [optional] 
 
-### Return type
+### Return type {#applicationsusageengagementinteraction-return-type}
 
 [**TrackedInteractionEvent**](../models/TrackedInteractionEvent)
 
-### Authorization
+### Authorization {#applicationsusageengagementinteraction-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageengagementinteraction-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **applicationsUsageEngagementKeyboard - (Deprecated)** {#applicationsusageengagementkeyboard}
 > TrackedKeyboardEvent applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
@@ -400,7 +382,7 @@ No authorization required
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
 
-### Example
+### Example {#applicationsusageengagementkeyboard-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -415,26 +397,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageengagementkeyboard-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededTrackedKeyboardEvent** | [**SeededTrackedKeyboardEvent**](../models/SeededTrackedKeyboardEvent)|  | [optional] 
+ **seededTrackedKeyboardEvent** | [**SeededTrackedKeyboardEvent**](../models/SeededTrackedKeyboardEvent) |  | [optional] 
 
-### Return type
+### Return type {#applicationsusageengagementkeyboard-return-type}
 
 [**TrackedKeyboardEvent**](../models/TrackedKeyboardEvent)
 
-### Authorization
+### Authorization {#applicationsusageengagementkeyboard-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageengagementkeyboard-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **applicationsUsageInstallation - (Deprecated)** {#applicationsusageinstallation}
 > applicationsUsageInstallation(trackedApplicationInstall)
@@ -443,7 +423,7 @@ No authorization required
 
 Logs the installation events of the Pieces application.
 
-### Example
+### Example {#applicationsusageinstallation-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -457,26 +437,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageinstallation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **trackedApplicationInstall** | [**TrackedApplicationInstall**](../models/TrackedApplicationInstall)|  | [optional] 
+ **trackedApplicationInstall** | [**TrackedApplicationInstall**](../models/TrackedApplicationInstall) |  | [optional] 
 
-### Return type
+### Return type {#applicationsusageinstallation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#applicationsusageinstallation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageinstallation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
-
-
 
 ## **postApplicationsUsageUpdated - (Deprecated)** {#postapplicationsusageupdated}
 > postApplicationsUsageUpdated(trackedApplicationUpdate)
@@ -485,7 +463,7 @@ No authorization required
 
 Tracks updates to the Pieces application, including version changes.
 
-### Example
+### Example {#postapplicationsusageupdated-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -499,24 +477,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#postapplicationsusageupdated-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **trackedApplicationUpdate** | [**TrackedApplicationUpdate**](../models/TrackedApplicationUpdate)| Sending over the previous application version, the current version, and the user. | [optional] 
+ **trackedApplicationUpdate** | [**TrackedApplicationUpdate**](../models/TrackedApplicationUpdate) | Sending over the previous application version, the current version, and the user. | [optional] 
 
-### Return type
+### Return type {#postapplicationsusageupdated-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#postapplicationsusageupdated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#postapplicationsusageupdated-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
-
-
 

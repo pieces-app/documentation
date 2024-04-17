@@ -3,6 +3,7 @@ title: Suggestion | Kotlin SDK
 ---
 
 
+
 # Suggestion
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **assets** | [**Assets**](Assets) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **distribution** | **kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;** |  |  [optional]
+
 
 
 

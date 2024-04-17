@@ -3,6 +3,7 @@ title: TrackedAssetsEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # TrackedAssetsEventIdentifierDescriptionPairs
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 assetsSearched | assets_were_searched
+
 
 
 

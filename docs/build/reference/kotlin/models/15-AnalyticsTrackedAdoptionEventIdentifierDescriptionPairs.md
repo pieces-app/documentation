@@ -3,6 +3,7 @@ title: AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs
 
 ## Properties
@@ -25,6 +26,7 @@ adoptionInstall | the_user_has_installed_a_pieces_application
 Name | Value
 ---- | -----
 adoptionUninstall | the_user_has_uninstalled_a_pieces_application
+
 
 
 

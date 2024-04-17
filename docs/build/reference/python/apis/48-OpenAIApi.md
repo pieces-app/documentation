@@ -4,7 +4,7 @@ title: OpenAI API | Python SDK
 
 # OpenAI API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.apiKey.  if the user is unauthenticated or if the openAI key doesnt exist or if it is invalid we will return a 401.  Requires internet as this will ping out to OpenAI's server to get the models.
 
-### Example
+### Example {#open_ai_models_list-example}
 
 
 ```python
@@ -52,33 +52,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#open_ai_models_list-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **open_ai_models_list_input** | [**OpenAIModelsListInput**](../models/OpenAIModelsListInput)|  | [optional] 
 
-### Return type
+### Return type {#open_ai_models_list-return-type}
 
 [**OpenAIModelsListOutput**](../models/OpenAIModelsListOutput)
 
-### Authorization
+### Authorization {#open_ai_models_list-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#open_ai_models_list-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#open_ai_models_list-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **401** | Invalid Authentication, Incorrect API key provided or organization |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

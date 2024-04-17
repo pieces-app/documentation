@@ -3,6 +3,7 @@ title: SeededPKCEADDITIONALPARAMETERS | Kotlin SDK
 ---
 
 
+
 # SeededPKCEADDITIONALPARAMETERS
 
 ## Properties
@@ -24,6 +25,7 @@ accessType | offline
 Name | Value
 ---- | -----
 display | popup
+
 
 
 

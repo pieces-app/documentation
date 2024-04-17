@@ -4,11 +4,6 @@ title: TLPCodeProcessing | Dart SDK
 
 # TLPCodeProcessing
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **file** | [**TLPCodeFileAnalytics**](TLPCodeFileAnalytics) |  | [optional] 
 **directory** | [**TLPCodeDirectoryAnalytics**](TLPCodeDirectoryAnalytics) |  | [optional] 
 **repository** | [**TLPCodeRepositoryAnalytics**](TLPCodeRepositoryAnalytics) |  | [optional] 
-
-
 
 

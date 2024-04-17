@@ -3,6 +3,7 @@ title: Embedding | Kotlin SDK
 ---
 
 
+
 # Embedding
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
+
 
 
 

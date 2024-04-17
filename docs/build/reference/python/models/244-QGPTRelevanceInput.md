@@ -21,22 +21,4 @@ Name | Type | Description | Notes
 **model** | **str** | optional model id | [optional] 
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_relevance_input import QGPTRelevanceInput
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTRelevanceInput from a JSON string
-qgpt_relevance_input_instance = QGPTRelevanceInput.from_json(json)
-# print the JSON string representation of the object
-print(QGPTRelevanceInput.to_json())
-
-# convert the object into a dict
-qgpt_relevance_input_dict = qgpt_relevance_input_instance.to_dict()
-# create an instance of QGPTRelevanceInput from a dict
-qgpt_relevance_input_form_dict = qgpt_relevance_input.from_dict(qgpt_relevance_input_dict)
-```
-
 

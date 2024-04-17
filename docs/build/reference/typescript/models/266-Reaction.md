@@ -16,28 +16,4 @@ Name | Type
 **reuse** | [**ReuseReaction**](ReuseReaction)
 **seed** | [**SeededConnectorCreation**](SeededConnectorCreation)
 
-## Example
-
-```typescript
-import { Reaction } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Reaction = {
-    "schema": null,
-    "save": null,
-    "reuse": null,
-    "seed": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Reaction
-console.log(exampleParsed)
-```
-
 

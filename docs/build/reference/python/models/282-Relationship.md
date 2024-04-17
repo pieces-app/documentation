@@ -18,22 +18,4 @@ Name | Type | Description | Notes
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.relationship import Relationship
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Relationship from a JSON string
-relationship_instance = Relationship.from_json(json)
-# print the JSON string representation of the object
-print(Relationship.to_json())
-
-# convert the object into a dict
-relationship_dict = relationship_instance.to_dict()
-# create an instance of Relationship from a dict
-relationship_form_dict = relationship.from_dict(relationship_dict)
-```
-
 

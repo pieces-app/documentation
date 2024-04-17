@@ -3,6 +3,7 @@ title: HintTypeEnum | Kotlin SDK
 ---
 
 
+
 # HintTypeEnum
 
 ## Enum
@@ -11,6 +12,7 @@ title: HintTypeEnum | Kotlin SDK
     * `SUGGESTED_QUERY` (value: `"SUGGESTED_QUERY"`)
 
     * `QGPT_HINT` (value: `"QGPT_HINT"`)
+
 
 
 

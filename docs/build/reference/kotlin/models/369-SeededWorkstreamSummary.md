@@ -3,6 +3,7 @@ title: SeededWorkstreamSummary | Kotlin SDK
 ---
 
 
+
 # SeededWorkstreamSummary
 
 ## Properties
@@ -20,6 +21,7 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  |  [optional]
 **applications** | [**Applications**](Applications) |  |  [optional]
+
 
 
 

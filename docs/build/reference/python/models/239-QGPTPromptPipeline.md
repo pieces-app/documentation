@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **task** | [**QGPTTaskPipeline**](QGPTTaskPipeline) |  | [optional] 
 **conversation** | [**QGPTConversationPipeline**](QGPTConversationPipeline) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_prompt_pipeline import QGPTPromptPipeline
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTPromptPipeline from a JSON string
-qgpt_prompt_pipeline_instance = QGPTPromptPipeline.from_json(json)
-# print the JSON string representation of the object
-print(QGPTPromptPipeline.to_json())
-
-# convert the object into a dict
-qgpt_prompt_pipeline_dict = qgpt_prompt_pipeline_instance.to_dict()
-# create an instance of QGPTPromptPipeline from a dict
-qgpt_prompt_pipeline_form_dict = qgpt_prompt_pipeline.from_dict(qgpt_prompt_pipeline_dict)
-```
-
 

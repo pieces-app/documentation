@@ -3,6 +3,7 @@ title: OSDeviceGPUHardwareInformation | Kotlin SDK
 ---
 
 
+
 # OSDeviceGPUHardwareInformation
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** |  |  [optional]
 **memory** | **java.math.BigDecimal** |  |  [optional]
 **capabilities** | [**OSDeviceGPUHardwareCapabilitiesInformation**](OSDeviceGPUHardwareCapabilitiesInformation) |  |  [optional]
+
 
 
 

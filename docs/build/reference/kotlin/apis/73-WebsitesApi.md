@@ -4,7 +4,7 @@ title: Websites API | Kotlin SDK
 
 # Websites API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This will create a website and attach it to a specific asset.
 
-### Example
+### Example {#websitescreatenewwebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -42,22 +42,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitescreatenewwebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededWebsite** | [**SeededWebsite**](../models/SeededWebsite)|  | [optional]
 
-### Return type
+### Return type {#websitescreatenewwebsite-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websitescreatenewwebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitescreatenewwebsite-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -69,7 +69,7 @@ No authorization required
 
 This will delete a specific website!
 
-### Example
+### Example {#websitesdeletespecificwebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -88,21 +88,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitesdeletespecificwebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#websitesdeletespecificwebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitesdeletespecificwebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesdeletespecificwebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -114,7 +114,7 @@ No authorization required
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
 
-### Example
+### Example {#websitesexists-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -134,21 +134,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitesexists-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional]
 
-### Return type
+### Return type {#websitesexists-return-type}
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### Authorization
+### Authorization {#websitesexists-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesexists-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -160,7 +160,7 @@ No authorization required
 
 This will get a snapshot of all your websites.
 
-### Example
+### Example {#websitessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -180,21 +180,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#websitessnapshot-return-type}
 
 [**Websites**](../models/Websites)
 
-### Authorization
+### Authorization {#websitessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

@@ -3,6 +3,7 @@ title: TLPDirectedDiscoveryFilterEnum | Kotlin SDK
 ---
 
 
+
 # TLPDirectedDiscoveryFilterEnum
 
 ## Enum
@@ -27,6 +28,7 @@ title: TLPDirectedDiscoveryFilterEnum | Kotlin SDK
     * `LOOP` (value: `"LOOP"`)
 
     * `RETURN` (value: `"RETURN"`)
+
 
 
 

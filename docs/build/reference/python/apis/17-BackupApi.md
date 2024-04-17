@@ -4,7 +4,7 @@ title: Backup API | Python SDK
 
 # Backup API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 
 
-### Example
+### Example {#backup-example}
 
 
 ```python
@@ -57,27 +57,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assets** | [**Assets**](../models/Assets)|  | [optional] 
 
-### Return type
+### Return type {#backup-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#backup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -85,14 +86,12 @@ No authorization required
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
 
-
-
 ## **backup_asset** {#backup_asset}
 > backup_asset(asset=asset)
 
 /backup/asset [POST]
 
-### Example
+### Example {#backup_asset-example}
 
 
 ```python
@@ -123,35 +122,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_asset-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | [**Asset**](../models/Asset)|  | [optional] 
 
-### Return type
+### Return type {#backup_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#backup_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_asset-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, or they cannot Backup to the Cloud. |  -  |
 **511** | Network Authentication Required, This means that you user needs to be authenticated with OS inorder to backup. The User also need to be connected to their cloud to backup.(If either of the 2 are not connected we will return a 511)  TODO thinking about returning a more comprehensive value for digestion on the recieving side. |  -  |
-
-
 
 ## **backup_restore_specific_backup** {#backup_restore_specific_backup}
 > Backup backup_restore_specific_backup(backup, backup2=backup2)
@@ -160,7 +158,7 @@ No authorization required
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
 
-### Example
+### Example {#backup_restore_specific_backup-example}
 
 
 ```python
@@ -194,7 +192,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_restore_specific_backup-parameters}
 
 
 Name | Type | Description  | Notes
@@ -202,20 +200,21 @@ Name | Type | Description  | Notes
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
  **backup2** | [**Backup**](../models/Backup)|  | [optional] 
 
-### Return type
+### Return type {#backup_restore_specific_backup-return-type}
 
 [**Backup**](../models/Backup)
 
-### Authorization
+### Authorization {#backup_restore_specific_backup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_restore_specific_backup-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_restore_specific_backup-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -224,8 +223,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
-
-
 ## **backup_restore_specific_backup_streamed** {#backup_restore_specific_backup_streamed}
 > BackupStreamedProgress backup_restore_specific_backup_streamed(backup, backup2=backup2)
 
@@ -233,7 +230,7 @@ No authorization required
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
-### Example
+### Example {#backup_restore_specific_backup_streamed-example}
 
 
 ```python
@@ -268,7 +265,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_restore_specific_backup_streamed-parameters}
 
 
 Name | Type | Description  | Notes
@@ -276,20 +273,21 @@ Name | Type | Description  | Notes
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
  **backup2** | [**Backup**](../models/Backup)|  | [optional] 
 
-### Return type
+### Return type {#backup_restore_specific_backup_streamed-return-type}
 
 [**BackupStreamedProgress**](../models/BackupStreamedProgress)
 
-### Authorization
+### Authorization {#backup_restore_specific_backup_streamed-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_restore_specific_backup_streamed-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_restore_specific_backup_streamed-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -298,8 +296,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to change the beta status |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
-
-
 ## **backup_specific_backup_snapshot** {#backup_specific_backup_snapshot}
 > Backup backup_specific_backup_snapshot(backup)
 
@@ -307,7 +303,7 @@ No authorization required
 
 This will just get the metadata associated with a specific backup.
 
-### Example
+### Example {#backup_specific_backup_snapshot-example}
 
 
 ```python
@@ -340,27 +336,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_specific_backup_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
 
-### Return type
+### Return type {#backup_specific_backup_snapshot-return-type}
 
 [**Backup**](../models/Backup)
 
-### Authorization
+### Authorization {#backup_specific_backup_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_specific_backup_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_specific_backup_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -369,8 +366,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to change the beta status |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
-
-
 ## **backup_specific_creation_cancel** {#backup_specific_creation_cancel}
 > backup_specific_creation_cancel(backup)
 
@@ -378,7 +373,7 @@ No authorization required
 
 This is Going to cancel a create backup (streamed) or not streamed that is currently in progress.  This will throw a 500 if there is not a backup in progress.  TODO: ADD mofe DESCRIPITON To this.
 
-### Example
+### Example {#backup_specific_creation_cancel-example}
 
 
 ```python
@@ -408,34 +403,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_specific_creation_cancel-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
 
-### Return type
+### Return type {#backup_specific_creation_cancel-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#backup_specific_creation_cancel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_specific_creation_cancel-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_specific_creation_cancel-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **backup_specific_creation_status** {#backup_specific_creation_status}
 > BackupStatus backup_specific_creation_status(backup)
@@ -444,7 +438,7 @@ No authorization required
 
 TODO add a description:
 
-### Example
+### Example {#backup_specific_creation_status-example}
 
 
 ```python
@@ -477,35 +471,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_specific_creation_status-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
 
-### Return type
+### Return type {#backup_specific_creation_status-return-type}
 
 [**BackupStatus**](../models/BackupStatus)
 
-### Authorization
+### Authorization {#backup_specific_creation_status-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_specific_creation_status-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_specific_creation_status-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **404** | Internal Server Error |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **backup_specific_restoration_cancel** {#backup_specific_restoration_cancel}
 > backup_specific_restoration_cancel(backup, backup2=backup2)
@@ -514,7 +507,7 @@ No authorization required
 
 This will cancel a Restoration that is in progress and restore to the original database.  Note: if there is not a restore in progress we will return a 500.  TODO add
 
-### Example
+### Example {#backup_specific_restoration_cancel-example}
 
 
 ```python
@@ -546,7 +539,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_specific_restoration_cancel-parameters}
 
 
 Name | Type | Description  | Notes
@@ -554,27 +547,26 @@ Name | Type | Description  | Notes
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
  **backup2** | [**Backup**](../models/Backup)|  | [optional] 
 
-### Return type
+### Return type {#backup_specific_restoration_cancel-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#backup_specific_restoration_cancel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_specific_restoration_cancel-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_specific_restoration_cancel-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **backup_specific_restoration_status** {#backup_specific_restoration_status}
 > BackupStatus backup_specific_restoration_status(backup)
@@ -583,7 +575,7 @@ No authorization required
 
 TODO add a description:
 
-### Example
+### Example {#backup_specific_restoration_status-example}
 
 
 ```python
@@ -616,33 +608,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backup_specific_restoration_status-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
 
-### Return type
+### Return type {#backup_specific_restoration_status-return-type}
 
 [**BackupStatus**](../models/BackupStatus)
 
-### Authorization
+### Authorization {#backup_specific_restoration_status-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backup_specific_restoration_status-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backup_specific_restoration_status-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **404** | Internal Server Error |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

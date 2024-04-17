@@ -15,22 +15,4 @@ Name | Type | Description | Notes
 **string** | [**TransferableString**](TransferableString) |  | [optional] 
 **metadata** | [**FileMetadata**](FileMetadata) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_file import SeededFile
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededFile from a JSON string
-seeded_file_instance = SeededFile.from_json(json)
-# print the JSON string representation of the object
-print(SeededFile.to_json())
-
-# convert the object into a dict
-seeded_file_dict = seeded_file_instance.to_dict()
-# create an instance of SeededFile from a dict
-seeded_file_form_dict = seeded_file.from_dict(seeded_file_dict)
-```
-
 

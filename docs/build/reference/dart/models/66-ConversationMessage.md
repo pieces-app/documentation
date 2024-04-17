@@ -4,11 +4,6 @@ title: ConversationMessage | Dart SDK
 
 # ConversationMessage
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -24,7 +19,5 @@ Name | Type | Description | Notes
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum) |  | 
 **score** | [**Score**](Score) |  | [optional] 
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
-
-
 
 

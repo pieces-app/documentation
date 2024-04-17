@@ -21,22 +21,4 @@ Name | Type | Description | Notes
 **hints** | [**List[SeededHint]**](SeededHint) |  | [optional] 
 **anchors** | [**List[SeededAnchor]**](SeededAnchor) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_asset_metadata import SeededAssetMetadata
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededAssetMetadata from a JSON string
-seeded_asset_metadata_instance = SeededAssetMetadata.from_json(json)
-# print the JSON string representation of the object
-print(SeededAssetMetadata.to_json())
-
-# convert the object into a dict
-seeded_asset_metadata_dict = seeded_asset_metadata_instance.to_dict()
-# create an instance of SeededAssetMetadata from a dict
-seeded_asset_metadata_form_dict = seeded_asset_metadata.from_dict(seeded_asset_metadata_dict)
-```
-
 

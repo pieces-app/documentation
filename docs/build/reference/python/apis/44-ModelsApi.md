@@ -4,7 +4,7 @@ title: Models API | Python SDK
 
 # Models API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 Creates a machine learning model. By default, all models created through this endpoint will have the 'custom' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
-### Example
+### Example {#models_create_new_model-example}
 
 
 ```python
@@ -56,34 +56,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#models_create_new_model-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_model** | [**SeededModel**](../models/SeededModel)|  | [optional] 
 
-### Return type
+### Return type {#models_create_new_model-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#models_create_new_model-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#models_create_new_model-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#models_create_new_model-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **models_delete_specific_model** {#models_delete_specific_model}
 > models_delete_specific_model(model)
@@ -92,7 +91,7 @@ No authorization required
 
 Deletes a specific model. It is exclusively available for custom models with the 'custom: true' attribute.
 
-### Example
+### Example {#models_delete_specific_model-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#models_delete_specific_model-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#models_delete_specific_model-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#models_delete_specific_model-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#models_delete_specific_model-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#models_delete_specific_model-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **models_delete_specific_model_cache** {#models_delete_specific_model_cache}
 > ModelDeleteCacheOutput models_delete_specific_model_cache(model, model_delete_cache_input=model_delete_cache_input)
@@ -158,7 +156,7 @@ No authorization required
 
 Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
-### Example
+### Example {#models_delete_specific_model_cache-example}
 
 
 ```python
@@ -193,7 +191,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#models_delete_specific_model_cache-parameters}
 
 
 Name | Type | Description  | Notes
@@ -201,27 +199,26 @@ Name | Type | Description  | Notes
  **model** | **str**| model id | 
  **model_delete_cache_input** | [**ModelDeleteCacheInput**](../models/ModelDeleteCacheInput)|  | [optional] 
 
-### Return type
+### Return type {#models_delete_specific_model_cache-return-type}
 
 [**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
-### Authorization
+### Authorization {#models_delete_specific_model_cache-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#models_delete_specific_model_cache-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#models_delete_specific_model_cache-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **models_snapshot** {#models_snapshot}
 > Models models_snapshot()
@@ -230,7 +227,7 @@ No authorization required
 
 This will get a snapshot of all of your models.
 
-### Example
+### Example {#models_snapshot-example}
 
 
 ```python
@@ -262,31 +259,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#models_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#models_snapshot-return-type}
 
 [**Models**](../models/Models)
 
-### Authorization
+### Authorization {#models_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#models_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#models_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **unload_models** {#unload_models}
 > unload_models()
@@ -295,7 +291,7 @@ No authorization required
 
 Unloads all available machine learning models that are unloadable.
 
-### Example
+### Example {#unload_models-example}
 
 
 ```python
@@ -324,29 +320,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#unload_models-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#unload_models-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#unload_models-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#unload_models-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#unload_models-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

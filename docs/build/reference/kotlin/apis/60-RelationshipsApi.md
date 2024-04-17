@@ -4,7 +4,7 @@ title: Relationships API | Kotlin SDK
 
 # Relationships API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will return all of the relationships that exists within your pieces db.
 
-### Example
+### Example {#relationshipssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -37,18 +37,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#relationshipssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#relationshipssnapshot-return-type}
 
 [**Relationships**](../models/Relationships)
 
-### Authorization
+### Authorization {#relationshipssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#relationshipssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

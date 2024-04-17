@@ -4,7 +4,7 @@ title: Conversations API | Kotlin SDK
 
 # Conversations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
-### Example
+### Example {#conversationscreatefromasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -43,21 +43,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationscreatefromasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#conversationscreatefromasset-return-type}
 
 [**ConversationsCreateFromAssetOutput**](../models/ConversationsCreateFromAssetOutput)
 
-### Authorization
+### Authorization {#conversationscreatefromasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationscreatefromasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -69,7 +69,7 @@ No authorization required
 
 Creates a specific conversation.
 
-### Example
+### Example {#conversationscreatespecificconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -90,22 +90,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationscreatespecificconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededConversation** | [**SeededConversation**](../models/SeededConversation)|  | [optional]
 
-### Return type
+### Return type {#conversationscreatespecificconversation-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversationscreatespecificconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationscreatespecificconversation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -117,7 +117,7 @@ No authorization required
 
 Deletes a specific conversation.
 
-### Example
+### Example {#conversationsdeletespecificconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -136,21 +136,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationsdeletespecificconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#conversationsdeletespecificconversation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationsdeletespecificconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationsdeletespecificconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -162,7 +162,7 @@ No authorization required
 
 Retrieves all the UUIDs associated with a Conversation.
 
-### Example
+### Example {#conversationsidentifierssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -181,18 +181,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationsidentifierssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#conversationsidentifierssnapshot-return-type}
 
 [**FlattenedConversations**](../models/FlattenedConversations)
 
-### Authorization
+### Authorization {#conversationsidentifierssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationsidentifierssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -204,7 +204,7 @@ No authorization required
 
 Retrieves a snapshot of a specific conversation.
 
-### Example
+### Example {#conversationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -224,21 +224,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#conversationssnapshot-return-type}
 
 [**Conversations**](../models/Conversations)
 
-### Authorization
+### Authorization {#conversationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -250,7 +250,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
-### Example
+### Example {#conversationsstreamidentifiers-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -268,18 +268,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationsstreamidentifiers-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#conversationsstreamidentifiers-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationsstreamidentifiers-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationsstreamidentifiers-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined

@@ -4,7 +4,7 @@ title: Allocation API | Dart SDK
 
 # Allocation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a specific allocation.
 
-### Example
+### Example {#allocationsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -34,26 +34,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocation** | **String**|  | 
+ **allocation** | **String** |  | 
 
-### Return type
+### Return type {#allocationsnapshot-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **allocationUpdate** {#allocationupdate}
 > AllocationCloud allocationUpdate(allocationCloud)
@@ -62,7 +60,7 @@ No authorization required
 
 This will update a specific allocation.
 
-### Example
+### Example {#allocationupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -77,24 +75,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#allocationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
+ **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud) |  | [optional] 
 
-### Return type
+### Return type {#allocationupdate-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

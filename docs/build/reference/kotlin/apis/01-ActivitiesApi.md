@@ -4,7 +4,7 @@ title: Activities API | Kotlin SDK
 
 # Activities API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new Activity.
 
-### Example
+### Example {#activitiescreatenewactivity-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activitiescreatenewactivity-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededActivity** | [**SeededActivity**](../models/SeededActivity)|  | [optional]
 
-### Return type
+### Return type {#activitiescreatenewactivity-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activitiescreatenewactivity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activitiescreatenewactivity-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
 
-### Example
+### Example {#activitiesdeletespecificactivity-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activitiesdeletespecificactivity-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **activity** | **kotlin.String**| This is a specific activity uuid. |
 
-### Return type
+### Return type {#activitiesdeletespecificactivity-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#activitiesdeletespecificactivity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activitiesdeletespecificactivity-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -113,7 +113,7 @@ No authorization required
 
 This will get a snapshot of all of the activities
 
-### Example
+### Example {#activitiessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -134,22 +134,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activitiessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#activitiessnapshot-return-type}
 
 [**Activities**](../models/Activities)
 
-### Authorization
+### Authorization {#activitiessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activitiessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

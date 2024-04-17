@@ -3,6 +3,7 @@ title: WorkstreamEventTrigger | Kotlin SDK
 ---
 
 
+
 # WorkstreamEventTrigger
 
 ## Properties
@@ -23,6 +24,7 @@ Name | Type | Description | Notes
 **applicationEnter** | **kotlin.Boolean** |  |  [optional]
 **applicationLeave** | **kotlin.Boolean** |  |  [optional]
 **applicationSwitch** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

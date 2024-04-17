@@ -4,7 +4,7 @@ title: Distribution API | Kotlin SDK
 
 # Distribution API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This will update a specific Distribution.
 
-### Example
+### Example {#distributionupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -39,21 +39,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**Distribution**](../models/Distribution)|  | [optional]
 
-### Return type
+### Return type {#distributionupdate-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -65,7 +65,7 @@ No authorization required
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example {#distributionsspecificdistributionsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -85,21 +85,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionsspecificdistributionsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **kotlin.String**| This is the uuid of a specific distribution. |
 
-### Return type
+### Return type {#distributionsspecificdistributionsnapshot-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionsspecificdistributionsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsspecificdistributionsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

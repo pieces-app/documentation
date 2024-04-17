@@ -4,7 +4,7 @@ title: Users API | Python SDK
 
 # Users API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 Creates a User From a oAuth Token
 
-### Example
+### Example {#authenticate_from_oauth_token-example}
 
 * OAuth Authentication (auth0):
 * OAuth Authentication (auth0):
@@ -68,33 +68,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#authenticate_from_oauth_token-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **o_auth_token** | [**OAuthToken**](../models/OAuthToken)|  | [optional] 
 
-### Return type
+### Return type {#authenticate_from_oauth_token-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#authenticate_from_oauth_token-authorization}
 
 
 
-### HTTP request headers
+### HTTP request headers {#authenticate_from_oauth_token-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#authenticate_from_oauth_token-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **users_disconnect_user** {#users_disconnect_user}
 > Users users_disconnect_user(user)
@@ -103,7 +102,7 @@ Name | Type | Description  | Notes
 
 Locally Removing a user for the purpose of Signing Out
 
-### Example
+### Example {#users_disconnect_user-example}
 
 
 ```python
@@ -136,33 +135,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#users_disconnect_user-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | **str**|  | 
 
-### Return type
+### Return type {#users_disconnect_user-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#users_disconnect_user-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#users_disconnect_user-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#users_disconnect_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **users_snapshot** {#users_snapshot}
 > Users users_snapshot()
@@ -171,7 +169,7 @@ No authorization required
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
 
-### Example
+### Example {#users_snapshot-example}
 
 
 ```python
@@ -203,30 +201,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#users_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#users_snapshot-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#users_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#users_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#users_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **users_specific_user_snapshot** {#users_specific_user_snapshot}
 > UserProfile users_specific_user_snapshot(user)
@@ -235,7 +232,7 @@ No authorization required
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
-### Example
+### Example {#users_specific_user_snapshot-example}
 
 
 ```python
@@ -268,31 +265,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#users_specific_user_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | **str**| The id (uuid) for a specific user. | 
 
-### Return type
+### Return type {#users_specific_user_snapshot-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#users_specific_user_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#users_specific_user_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#users_specific_user_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

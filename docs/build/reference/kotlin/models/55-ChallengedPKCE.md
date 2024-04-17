@@ -3,6 +3,7 @@ title: ChallengedPKCE | Kotlin SDK
 ---
 
 
+
 # ChallengedPKCE
 
 ## Properties
@@ -21,6 +22,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 method | S256
+
 
 
 

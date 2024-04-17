@@ -3,6 +3,7 @@ title: Hint | Kotlin SDK
 ---
 
 
+
 # Hint
 
 ## Properties
@@ -19,6 +20,7 @@ Name | Type | Description | Notes
 **asset** | [**ReferencedAsset**](ReferencedAsset) |  |  [optional]
 **model** | [**ReferencedModel**](ReferencedModel) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

@@ -4,11 +4,6 @@ title: ExportedDatabase | Dart SDK
 
 # ExportedDatabase
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -43,7 +38,5 @@ Name | Type | Description | Notes
 **workstreamSummaries** | **List\<int\>** |  | [optional] [default to const []]
 **messageValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
 **workstreamEventValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
-
-
 
 

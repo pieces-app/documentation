@@ -4,7 +4,7 @@ title: Activity API | Dart SDK
 
 # Activity API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will attempt to get a specific activity.
 
-### Example
+### Example {#activitiesspecificactivitysnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -36,27 +36,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activitiesspecificactivitysnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **activity** | **String**| This is a specific activity uuid. | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **activity** | **String** | This is a specific activity uuid. | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#activitiesspecificactivitysnapshot-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activitiesspecificactivitysnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activitiesspecificactivitysnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **activityIdentifiersSnapshot** {#activityidentifierssnapshot}
 > FlattenedActivities activityIdentifiersSnapshot(pseudo, activityFilterEnum)
@@ -65,7 +63,7 @@ No authorization required
 
 This is going to return all the identifiers of the activity event in order of most recent -> oldest.
 
-### Example
+### Example {#activityidentifierssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -81,27 +79,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activityidentifierssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
- **activityFilterEnum** | **String**| This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | [optional] 
+ **pseudo** | **bool** | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
+ **activityFilterEnum** | **String** | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | [optional] 
 
-### Return type
+### Return type {#activityidentifierssnapshot-return-type}
 
 [**FlattenedActivities**](../models/FlattenedActivities)
 
-### Authorization
+### Authorization {#activityidentifierssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activityidentifierssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **activityUpdate** {#activityupdate}
 > Activity activityUpdate(transferables, activity)
@@ -110,7 +106,7 @@ No authorization required
 
 this will update a specific activity.
 
-### Example
+### Example {#activityupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -126,25 +122,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activityupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **activity** | [**Activity**](../models/Activity)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **activity** | [**Activity**](../models/Activity) |  | [optional] 
 
-### Return type
+### Return type {#activityupdate-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activityupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activityupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

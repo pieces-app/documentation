@@ -3,6 +3,7 @@ title: ModelFoundationEnum | Kotlin SDK
 ---
 
 
+
 # ModelFoundationEnum
 
 ## Enum
@@ -205,6 +206,7 @@ title: ModelFoundationEnum | Kotlin SDK
     * `GEMMA_1Period1_2B` (value: `"GEMMA_1.1_2B"`)
 
     * `GEMMA_1Period1_7B` (value: `"GEMMA_1.1_7B"`)
+
 
 
 

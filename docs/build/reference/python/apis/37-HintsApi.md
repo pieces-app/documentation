@@ -4,7 +4,7 @@ title: Hints API | Python SDK
 
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a hint.
 
-### Example
+### Example {#hints_create_new_hint-example}
 
 
 ```python
@@ -54,34 +54,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hints_create_new_hint-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_hint** | [**SeededHint**](../models/SeededHint)|  | [optional] 
 
-### Return type
+### Return type {#hints_create_new_hint-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hints_create_new_hint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hints_create_new_hint-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#hints_create_new_hint-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **hints_delete_specific_hint** {#hints_delete_specific_hint}
 > hints_delete_specific_hint(hint)
@@ -90,7 +89,7 @@ No authorization required
 
 This will delete a specific hint.
 
-### Example
+### Example {#hints_delete_specific_hint-example}
 
 
 ```python
@@ -120,34 +119,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hints_delete_specific_hint-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **str**| This is a specific hint uuid | 
 
-### Return type
+### Return type {#hints_delete_specific_hint-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#hints_delete_specific_hint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hints_delete_specific_hint-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#hints_delete_specific_hint-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **hints_snapshot** {#hints_snapshot}
 > Hints hints_snapshot()
@@ -156,7 +154,7 @@ No authorization required
 
 This will get a snapshot of all of the hints.
 
-### Example
+### Example {#hints_snapshot-example}
 
 
 ```python
@@ -188,29 +186,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hints_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#hints_snapshot-return-type}
 
 [**Hints**](../models/Hints)
 
-### Authorization
+### Authorization {#hints_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hints_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#hints_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

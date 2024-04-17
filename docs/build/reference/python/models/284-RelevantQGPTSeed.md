@@ -16,22 +16,4 @@ Name | Type | Description | Notes
 **path** | **str** | This is an optional file path | [optional] 
 **asset** | [**ReferencedAsset**](ReferencedAsset) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.relevant_qgpt_seed import RelevantQGPTSeed
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RelevantQGPTSeed from a JSON string
-relevant_qgpt_seed_instance = RelevantQGPTSeed.from_json(json)
-# print the JSON string representation of the object
-print(RelevantQGPTSeed.to_json())
-
-# convert the object into a dict
-relevant_qgpt_seed_dict = relevant_qgpt_seed_instance.to_dict()
-# create an instance of RelevantQGPTSeed from a dict
-relevant_qgpt_seed_form_dict = relevant_qgpt_seed.from_dict(relevant_qgpt_seed_dict)
-```
-
 

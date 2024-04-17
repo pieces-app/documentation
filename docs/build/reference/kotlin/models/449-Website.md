@@ -3,6 +3,7 @@ title: Website | Kotlin SDK
 ---
 
 
+
 # Website
 
 ## Properties
@@ -22,6 +23,7 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

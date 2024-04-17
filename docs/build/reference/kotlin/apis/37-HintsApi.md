@@ -4,7 +4,7 @@ title: Hints API | Kotlin SDK
 
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a hint.
 
-### Example
+### Example {#hintscreatenewhint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,21 +40,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintscreatenewhint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional]
 
-### Return type
+### Return type {#hintscreatenewhint-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintscreatenewhint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintscreatenewhint-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -66,7 +66,7 @@ No authorization required
 
 This will delete a specific hint.
 
-### Example
+### Example {#hintsdeletespecifichint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -85,21 +85,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintsdeletespecifichint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **kotlin.String**| This is a specific hint uuid |
 
-### Return type
+### Return type {#hintsdeletespecifichint-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#hintsdeletespecifichint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintsdeletespecifichint-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -111,7 +111,7 @@ No authorization required
 
 This will get a snapshot of all of the hints.
 
-### Example
+### Example {#hintssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -130,18 +130,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#hintssnapshot-return-type}
 
 [**Hints**](../models/Hints)
 
-### Authorization
+### Authorization {#hintssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

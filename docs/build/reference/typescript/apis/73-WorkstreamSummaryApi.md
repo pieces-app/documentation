@@ -4,7 +4,7 @@ title: WorkstreamSummary API | TypeScript SDK
 
 # WorkstreamSummary API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a single workstream_summary.
 
-### Example
+### Example {#workstreamsummariesspecificworkstreamsummarysnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -41,18 +41,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummariesSpecificWorkstreamSummarySnapshotRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.workstreamSummariesSpecificWorkstreamSummarySnapshot(body).then((data: WorkstreamSummary) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummariesspecificworkstreamsummarysnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -60,17 +61,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummariesspecificworkstreamsummarysnapshot-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummariesspecificworkstreamsummarysnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummariesspecificworkstreamsummarysnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -81,7 +82,7 @@ Name | Type | Description  | Notes
 
 This will associate a anchor with a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateanchor-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -90,18 +91,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateAnchorRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
 };
 
 apiInstance.workstreamSummaryAssociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateanchor-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -109,17 +111,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociateanchor-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateanchor-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociateanchor-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -130,7 +132,7 @@ void (empty response body)
 
 This will associate an asset with a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -139,18 +141,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateAssetRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.workstreamSummaryAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -158,17 +161,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -179,7 +182,7 @@ void (empty response body)
 
 This will associate an conversation with a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateconversation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -188,18 +191,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateConversationRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
 };
 
 apiInstance.workstreamSummaryAssociateConversation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateconversation-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -207,17 +211,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociateconversation-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateconversation-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociateconversation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -228,7 +232,7 @@ void (empty response body)
 
 This will associate an person with a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -237,18 +241,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociatePersonRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a uuid that represents a person.
-    person: person_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a uuid that represents a person.
+person: person_example,
 };
 
 apiInstance.workstreamSummaryAssociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -256,17 +261,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociateperson-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateperson-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociateperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -277,7 +282,7 @@ void (empty response body)
 
 This will associate a range with a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstreamsummaryassociaterange-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -286,18 +291,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateRangeRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a identifier that is used to identify a specific range.
-    range: range_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific range.
+range: range_example,
 };
 
 apiInstance.workstreamSummaryAssociateRange(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociaterange-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -305,17 +311,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociaterange-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociaterange-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociaterange-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -326,7 +332,7 @@ void (empty response body)
 
 This will associate a website with a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstreamsummaryassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -335,18 +341,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateWebsiteRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | website id
-    website: website_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | website id
+website: website_example,
 };
 
 apiInstance.workstreamSummaryAssociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -354,17 +361,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -375,7 +382,7 @@ void (empty response body)
 
 This will associate a workstream_summary with a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateworkstreamevent-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -384,18 +391,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateWorkstreamEventRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
 };
 
 apiInstance.workstreamSummaryAssociateWorkstreamEvent(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateworkstreamevent-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -403,17 +411,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryassociateworkstreamevent-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateworkstreamevent-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryassociateworkstreamevent-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -424,7 +432,7 @@ void (empty response body)
 
 This will enable us to disassociate a anchor from a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateanchor-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -433,18 +441,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateAnchorRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
 };
 
 apiInstance.workstreamSummaryDisassociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateanchor-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -452,17 +461,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociateanchor-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateanchor-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociateanchor-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -473,7 +482,7 @@ void (empty response body)
 
 This will enable us to disassociate a asset from a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -482,18 +491,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateAssetRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.workstreamSummaryDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -501,17 +511,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -522,7 +532,7 @@ void (empty response body)
 
 This will enable us to disassociate a conversation from a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateconversation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -531,18 +541,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateConversationRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
 };
 
 apiInstance.workstreamSummaryDisassociateConversation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateconversation-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -550,17 +561,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociateconversation-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateconversation-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociateconversation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -571,7 +582,7 @@ void (empty response body)
 
 This will enable us to disassociate a person from a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -580,18 +591,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociatePersonRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a uuid that represents a person.
-    person: person_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a uuid that represents a person.
+person: person_example,
 };
 
 apiInstance.workstreamSummaryDisassociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -599,17 +611,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociateperson-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateperson-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociateperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -620,7 +632,7 @@ void (empty response body)
 
 This will enable us to disassociate a range from a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociaterange-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -629,18 +641,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateRangeRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a identifier that is used to identify a specific range.
-    range: range_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific range.
+range: range_example,
 };
 
 apiInstance.workstreamSummaryDisassociateRange(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociaterange-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -648,17 +661,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociaterange-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociaterange-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociaterange-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -669,7 +682,7 @@ void (empty response body)
 
 This will enable us to disassociate a website from a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -678,18 +691,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateWebsiteRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | website id
-    website: website_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | website id
+website: website_example,
 };
 
 apiInstance.workstreamSummaryDisassociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -697,17 +711,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -718,7 +732,7 @@ void (empty response body)
 
 This will enable us to disassociate a workstream_summary from a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateworkstreamevent-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -727,18 +741,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateWorkstreamEventRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
 };
 
 apiInstance.workstreamSummaryDisassociateWorkstreamEvent(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateworkstreamevent-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -746,17 +761,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummarydisassociateworkstreamevent-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateworkstreamevent-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummarydisassociateworkstreamevent-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -767,7 +782,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstreamsummaryscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -776,18 +791,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryScoresIncrementRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.workstreamSummaryScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -795,17 +811,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -816,7 +832,7 @@ void (empty response body)
 
 This will update a specific workstream_summary.
 
-### Example
+### Example {#workstreamsummaryupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -825,18 +841,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
 
 const body: Pieces.WorkstreamSummaryUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // WorkstreamSummary (optional)
-    workstreamSummary: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// WorkstreamSummary (optional)
+workstreamSummary: ,
 };
 
 apiInstance.workstreamSummaryUpdate(body).then((data: WorkstreamSummary) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -844,17 +861,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#workstreamsummaryupdate-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreamsummaryupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

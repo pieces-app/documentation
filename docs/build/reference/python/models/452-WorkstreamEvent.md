@@ -20,22 +20,4 @@ Name | Type | Description | Notes
 **metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.workstream_event import WorkstreamEvent
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkstreamEvent from a JSON string
-workstream_event_instance = WorkstreamEvent.from_json(json)
-# print the JSON string representation of the object
-print(WorkstreamEvent.to_json())
-
-# convert the object into a dict
-workstream_event_dict = workstream_event_instance.to_dict()
-# create an instance of WorkstreamEvent from a dict
-workstream_event_form_dict = workstream_event.from_dict(workstream_event_dict)
-```
-
 

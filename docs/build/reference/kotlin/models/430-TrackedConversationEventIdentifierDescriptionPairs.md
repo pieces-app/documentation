@@ -3,6 +3,7 @@ title: TrackedConversationEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # TrackedConversationEventIdentifierDescriptionPairs
 
 ## Properties
@@ -65,6 +66,7 @@ conversationNameUpdatedByTheUser | a_conversation_was_renamed_by_the_user
 Name | Value
 ---- | -----
 conversationSummaryAnnotationGeneratedByTheSystem | a_conversation_summary_annotation_was_generated_by_the_system
+
 
 
 

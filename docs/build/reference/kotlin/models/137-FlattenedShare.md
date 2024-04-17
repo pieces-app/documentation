@@ -3,6 +3,7 @@ title: FlattenedShare | Kotlin SDK
 ---
 
 
+
 # FlattenedShare
 
 ## Properties
@@ -21,6 +22,7 @@ Name | Type | Description | Notes
 **assets** | [**FlattenedAssets**](FlattenedAssets) |  |  [optional]
 **distributions** | [**FlattenedDistributions**](FlattenedDistributions) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

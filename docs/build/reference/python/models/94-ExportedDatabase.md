@@ -41,22 +41,4 @@ Name | Type | Description | Notes
 **message_values** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
 **workstream_event_values** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.exported_database import ExportedDatabase
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ExportedDatabase from a JSON string
-exported_database_instance = ExportedDatabase.from_json(json)
-# print the JSON string representation of the object
-print(ExportedDatabase.to_json())
-
-# convert the object into a dict
-exported_database_dict = exported_database_instance.to_dict()
-# create an instance of ExportedDatabase from a dict
-exported_database_form_dict = exported_database.from_dict(exported_database_dict)
-```
-
 

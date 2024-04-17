@@ -35,6 +35,25 @@ def fix_str_links(text):
     return result
 
 
+def delink_links(text):
+    pattern = r'https://pieces.us.auth0.com/api/v2/'
+    replacement = '`https://pieces.us.auth0.com/api/v2/`'
+    result = re.sub(pattern, replacement, text)
+
+    pattern = r'https://pieces.us.auth0.com'
+    replacement = '`https://pieces.us.auth0.com`'
+    result = re.sub(pattern, replacement, text)
+
+    pattern = r'https://auth.pieces.services/authorize'
+    replacement = '`https://auth.pieces.services/authorize`'
+    result = re.sub(pattern, replacement, result)
+
+    pattern = r'http://localhost:8080/authentication/response'
+    replacement = '`http://localhost:8080/authentication/response`'
+    result = re.sub(pattern, replacement, result)
+    return result
+
+
 def remove_readme_links(text):
     find = [
         '[[Back to top]](#) [[Back to API list]](../README#documentation-for-api-endpoints) [[Back to Model list]](../README#documentation-for-models) [[Back to README]](../README)',
@@ -120,6 +139,7 @@ def organize_markdown_files_in_directory(source_directory):
         # transformed_content = fix_h2_headers(transformed_content)
         transformed_content = fix_variables(transformed_content)
         transformed_content = fix_str_links(transformed_content)
+        transformed_content = delink_links(transformed_content)
         transformed_content = remove_readme_links(transformed_content)
 
         # Write the transformed content back to the file

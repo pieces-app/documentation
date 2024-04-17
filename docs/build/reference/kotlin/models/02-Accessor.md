@@ -3,6 +3,7 @@ title: Accessor | Kotlin SDK
 ---
 
 
+
 # Accessor
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **count** | **kotlin.Int** | how many times this user accessed this piece. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  |  [optional]
+
 
 
 

@@ -3,6 +3,7 @@ title: PrivacyEnum | Kotlin SDK
 ---
 
 
+
 # PrivacyEnum
 
 ## Enum
@@ -13,6 +14,7 @@ title: PrivacyEnum | Kotlin SDK
     * `CLOSED` (value: `"CLOSED"`)
 
     * `ANONYMOUS` (value: `"ANONYMOUS"`)
+
 
 
 

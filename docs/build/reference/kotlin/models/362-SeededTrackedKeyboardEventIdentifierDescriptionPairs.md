@@ -3,6 +3,7 @@ title: SeededTrackedKeyboardEventIdentifierDescriptionPairs | Kotlin SDK
 ---
 
 
+
 # SeededTrackedKeyboardEventIdentifierDescriptionPairs
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 Name | Value
 ---- | -----
 assetsListRefreshed | the_assets_list_was_refreshed_through_a_keyboard_shortcut
+
 
 
 

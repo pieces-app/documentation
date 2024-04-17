@@ -3,6 +3,7 @@ title: FlattenedTag | Kotlin SDK
 ---
 
 
+
 # FlattenedTag
 
 ## Properties
@@ -21,6 +22,7 @@ Name | Type | Description | Notes
 **interactions** | **kotlin.Int** | This is an optional value that will keep track of the number of times this has been interacted with. |  [optional]
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

@@ -4,7 +4,7 @@ title: Conversations API | Python SDK
 
 # Conversations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 Creates a conversation based on an asset. It initiates a conversation and generates an initial message that includes a summary of the asset used as contextual grounding.
 
-### Example
+### Example {#conversations_create_from_asset-example}
 
 
 ```python
@@ -56,34 +56,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_create_from_asset-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#conversations_create_from_asset-return-type}
 
 [**ConversationsCreateFromAssetOutput**](../models/ConversationsCreateFromAssetOutput)
 
-### Authorization
+### Authorization {#conversations_create_from_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_create_from_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversations_create_from_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversations_create_specific_conversation** {#conversations_create_specific_conversation}
 > Conversation conversations_create_specific_conversation(transferables=transferables, seeded_conversation=seeded_conversation)
@@ -92,7 +91,7 @@ No authorization required
 
 Creates a specific conversation.
 
-### Example
+### Example {#conversations_create_specific_conversation-example}
 
 
 ```python
@@ -127,7 +126,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_create_specific_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -135,27 +134,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_conversation** | [**SeededConversation**](../models/SeededConversation)|  | [optional] 
 
-### Return type
+### Return type {#conversations_create_specific_conversation-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversations_create_specific_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_create_specific_conversation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversations_create_specific_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversations_delete_specific_conversation** {#conversations_delete_specific_conversation}
 > conversations_delete_specific_conversation(conversation)
@@ -164,7 +162,7 @@ No authorization required
 
 Deletes a specific conversation.
 
-### Example
+### Example {#conversations_delete_specific_conversation-example}
 
 
 ```python
@@ -194,34 +192,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_delete_specific_conversation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#conversations_delete_specific_conversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversations_delete_specific_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_delete_specific_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversations_delete_specific_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversations_identifiers_snapshot** {#conversations_identifiers_snapshot}
 > FlattenedConversations conversations_identifiers_snapshot()
@@ -230,7 +227,7 @@ No authorization required
 
 Retrieves all the UUIDs associated with a Conversation.
 
-### Example
+### Example {#conversations_identifiers_snapshot-example}
 
 
 ```python
@@ -262,31 +259,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_identifiers_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#conversations_identifiers_snapshot-return-type}
 
 [**FlattenedConversations**](../models/FlattenedConversations)
 
-### Authorization
+### Authorization {#conversations_identifiers_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_identifiers_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversations_identifiers_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversations_snapshot** {#conversations_snapshot}
 > Conversations conversations_snapshot(transferables=transferables)
@@ -295,7 +291,7 @@ No authorization required
 
 Retrieves a snapshot of a specific conversation.
 
-### Example
+### Example {#conversations_snapshot-example}
 
 
 ```python
@@ -328,34 +324,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#conversations_snapshot-return-type}
 
 [**Conversations**](../models/Conversations)
 
-### Authorization
+### Authorization {#conversations_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversations_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversations_stream_identifiers** {#conversations_stream_identifiers}
 > conversations_stream_identifiers()
@@ -364,7 +359,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your conversation identifiers (UUIDs).
 
-### Example
+### Example {#conversations_stream_identifiers-example}
 
 
 ```python
@@ -393,23 +388,21 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversations_stream_identifiers-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#conversations_stream_identifiers-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversations_stream_identifiers-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversations_stream_identifiers-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
-
-
 
 

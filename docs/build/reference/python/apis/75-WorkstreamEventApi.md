@@ -4,7 +4,7 @@ title: WorkstreamEvent API | Python SDK
 
 # WorkstreamEvent API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstream_event_associate_workstream_summary-example}
 
 
 ```python
@@ -53,7 +53,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_event_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -61,27 +61,26 @@ Name | Type | Description  | Notes
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#workstream_event_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_event_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_event_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_event_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_event_disassociate_workstream_summary** {#workstream_event_disassociate_workstream_summary}
 > workstream_event_disassociate_workstream_summary(workstream_event, workstream_summary)
@@ -90,7 +89,7 @@ No authorization required
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstream_event_disassociate_workstream_summary-example}
 
 
 ```python
@@ -121,7 +120,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_event_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -129,27 +128,26 @@ Name | Type | Description  | Notes
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#workstream_event_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_event_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_event_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_event_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_event_scores_increment** {#workstream_event_scores_increment}
 > workstream_event_scores_increment(workstream_event, seeded_score_increment=seeded_score_increment)
@@ -158,7 +156,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstream_event_scores_increment-example}
 
 
 ```python
@@ -190,7 +188,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_event_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -198,27 +196,26 @@ Name | Type | Description  | Notes
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#workstream_event_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_event_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_event_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_event_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_event_update** {#workstream_event_update}
 > WorkstreamEvent workstream_event_update(transferables=transferables, workstream_event=workstream_event)
@@ -227,7 +224,7 @@ No authorization required
 
 This will update a specific workstream_event.
 
-### Example
+### Example {#workstream_event_update-example}
 
 
 ```python
@@ -261,7 +258,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_event_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -269,27 +266,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **workstream_event** | [**WorkstreamEvent**](../models/WorkstreamEvent)|  | [optional] 
 
-### Return type
+### Return type {#workstream_event_update-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstream_event_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_event_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_event_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_events_specific_workstream_event_snapshot** {#workstream_events_specific_workstream_event_snapshot}
 > WorkstreamEvent workstream_events_specific_workstream_event_snapshot(workstream_event, transferables=transferables)
@@ -298,7 +294,7 @@ No authorization required
 
 This will get a snapshot of a single workstream_event.
 
-### Example
+### Example {#workstream_events_specific_workstream_event_snapshot-example}
 
 
 ```python
@@ -332,7 +328,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_events_specific_workstream_event_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -340,25 +336,24 @@ Name | Type | Description  | Notes
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#workstream_events_specific_workstream_event_snapshot-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstream_events_specific_workstream_event_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_events_specific_workstream_event_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_events_specific_workstream_event_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | WorkstreamEvent not found. |  -  |
-
-
 

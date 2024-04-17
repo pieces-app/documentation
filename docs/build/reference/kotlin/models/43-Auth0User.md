@@ -3,6 +3,7 @@ title: Auth0User | Kotlin SDK
 ---
 
 
+
 # Auth0User
 
 ## Properties
@@ -27,6 +28,7 @@ Name | Type | Description | Notes
 **loginsCount** | **kotlin.Int** |  |  [optional]
 **blockedFor** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
 **guardianAuthenticators** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
+
 
 
 

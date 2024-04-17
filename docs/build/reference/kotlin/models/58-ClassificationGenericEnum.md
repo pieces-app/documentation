@@ -3,6 +3,7 @@ title: ClassificationGenericEnum | Kotlin SDK
 ---
 
 
+
 # ClassificationGenericEnum
 
 ## Enum
@@ -21,6 +22,7 @@ title: ClassificationGenericEnum | Kotlin SDK
     * `UNKNOWN` (value: `"UNKNOWN"`)
 
     * `FILE` (value: `"FILE"`)
+
 
 
 

@@ -3,6 +3,7 @@ title: TagCategoryEnum | Kotlin SDK
 ---
 
 
+
 # TagCategoryEnum
 
 ## Enum
@@ -13,6 +14,7 @@ title: TagCategoryEnum | Kotlin SDK
     * `EMAIL` (value: `"EMAIL"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
 
 
 

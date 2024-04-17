@@ -4,7 +4,7 @@ title: WorkstreamEvent API | Kotlin SDK
 
 # WorkstreamEvent API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -42,22 +42,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#workstreameventassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreameventassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -69,7 +69,7 @@ No authorization required
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventdisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -89,22 +89,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventdisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#workstreameventdisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreameventdisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventdisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -116,7 +116,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstreameventscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -136,22 +136,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#workstreameventscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreameventscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -163,7 +163,7 @@ No authorization required
 
 This will update a specific workstream_event.
 
-### Example
+### Example {#workstreameventupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -184,22 +184,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **workstreamEvent** | [**WorkstreamEvent**](../models/WorkstreamEvent)|  | [optional]
 
-### Return type
+### Return type {#workstreameventupdate-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstreameventupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -211,7 +211,7 @@ No authorization required
 
 This will get a snapshot of a single workstream_event.
 
-### Example
+### Example {#workstreameventsspecificworkstreameventsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -232,22 +232,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventsspecificworkstreameventsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#workstreameventsspecificworkstreameventsnapshot-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstreameventsspecificworkstreameventsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventsspecificworkstreameventsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

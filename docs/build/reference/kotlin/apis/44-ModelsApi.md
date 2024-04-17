@@ -4,7 +4,7 @@ title: Models API | Kotlin SDK
 
 # Models API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 Creates a machine learning model. By default, all models created through this endpoint will have the &#39;custom&#39; attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
-### Example
+### Example {#modelscreatenewmodel-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -42,21 +42,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelscreatenewmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededModel** | [**SeededModel**](../models/SeededModel)|  | [optional]
 
-### Return type
+### Return type {#modelscreatenewmodel-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelscreatenewmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelscreatenewmodel-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 Deletes a specific model. It is exclusively available for custom models with the &#39;custom: true&#39; attribute.
 
-### Example
+### Example {#modelsdeletespecificmodel-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelsdeletespecificmodel-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodel-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -113,7 +113,7 @@ No authorization required
 
 Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
-### Example
+### Example {#modelsdeletespecificmodelcache-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -134,22 +134,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodelcache-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
  **modelDeleteCacheInput** | [**ModelDeleteCacheInput**](../models/ModelDeleteCacheInput)|  | [optional]
 
-### Return type
+### Return type {#modelsdeletespecificmodelcache-return-type}
 
 [**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodelcache-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodelcache-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -161,7 +161,7 @@ No authorization required
 
 This will get a snapshot of all of your models.
 
-### Example
+### Example {#modelssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -180,18 +180,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#modelssnapshot-return-type}
 
 [**Models**](../models/Models)
 
-### Authorization
+### Authorization {#modelssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -203,7 +203,7 @@ No authorization required
 
 Unloads all available machine learning models that are unloadable.
 
-### Example
+### Example {#unloadmodels-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -221,18 +221,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#unloadmodels-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#unloadmodels-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#unloadmodels-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#unloadmodels-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined

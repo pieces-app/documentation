@@ -4,7 +4,7 @@ title: Sensitives API | Python SDK
 
 # Sensitives API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new sensitive model.
 
-### Example
+### Example {#sensitives_create_new_sensitive-example}
 
 
 ```python
@@ -54,34 +54,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sensitives_create_new_sensitive-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_sensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional] 
 
-### Return type
+### Return type {#sensitives_create_new_sensitive-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#sensitives_create_new_sensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitives_create_new_sensitive-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#sensitives_create_new_sensitive-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **sensitives_delete_sensitive** {#sensitives_delete_sensitive}
 > sensitives_delete_sensitive(sensitive)
@@ -90,7 +89,7 @@ No authorization required
 
 This will delete a sensitive based on the sensitive uuid.
 
-### Example
+### Example {#sensitives_delete_sensitive-example}
 
 
 ```python
@@ -120,34 +119,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sensitives_delete_sensitive-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **str**| This is a uuid that represents a sensitive. | 
 
-### Return type
+### Return type {#sensitives_delete_sensitive-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#sensitives_delete_sensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitives_delete_sensitive-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#sensitives_delete_sensitive-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** |  |  -  |
-
-
 
 ## **sensitives_snapshot** {#sensitives_snapshot}
 > Sensitives sensitives_snapshot()
@@ -156,7 +154,7 @@ No authorization required
 
 This will get a snapshot of all of the sensitives.
 
-### Example
+### Example {#sensitives_snapshot-example}
 
 
 ```python
@@ -188,29 +186,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sensitives_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#sensitives_snapshot-return-type}
 
 [**Sensitives**](../models/Sensitives)
 
-### Authorization
+### Authorization {#sensitives_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitives_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#sensitives_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

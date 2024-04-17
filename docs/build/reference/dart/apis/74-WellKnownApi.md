@@ -4,7 +4,7 @@ title: WellKnown API | Dart SDK
 
 # WellKnown API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 Retrieves the health status of the server.
 
-### Example
+### Example {#getwellknownhealth-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,23 +33,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getwellknownhealth-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getwellknownhealth-return-type}
 
 **String**
 
-### Authorization
+### Authorization {#getwellknownhealth-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getwellknownhealth-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **getWellKnownVersion** {#getwellknownversion}
 > String getWellKnownVersion()
@@ -58,7 +56,7 @@ No authorization required
 
 Retrieves the version of the server. It returns a string representing the current version.
 
-### Example
+### Example {#getwellknownversion-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -72,21 +70,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getwellknownversion-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getwellknownversion-return-type}
 
 **String**
 
-### Authorization
+### Authorization {#getwellknownversion-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getwellknownversion-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 

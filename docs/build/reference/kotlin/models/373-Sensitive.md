@@ -3,6 +3,7 @@ title: Sensitive | Kotlin SDK
 ---
 
 
+
 # Sensitive
 
 ## Properties
@@ -23,6 +24,7 @@ Name | Type | Description | Notes
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  |  [optional]
 **interactions** | **kotlin.Int** | This is an optional value that will keep track of the number of times this has been interacted with. |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

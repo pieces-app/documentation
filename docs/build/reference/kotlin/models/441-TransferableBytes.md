@@ -3,6 +3,7 @@ title: TransferableBytes | Kotlin SDK
 ---
 
 
+
 # TransferableBytes
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **base64** | **kotlin.collections.List&lt;kotlin.Int&gt;** | NOT IMPLEMENTED |  [optional]
 **base64Url** | **kotlin.collections.List&lt;kotlin.Int&gt;** | NOT IMPLEMENTED |  [optional]
 **dataUrl** | **kotlin.collections.List&lt;kotlin.Int&gt;** | NOT IMPLEMENTED |  [optional]
+
 
 
 
