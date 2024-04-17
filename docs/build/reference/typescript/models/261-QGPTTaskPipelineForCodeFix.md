@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeFix | TypeScript SDK
+---
+
 
 # QGPTTaskPipelineForCodeFix
 

@@ -1,3 +1,7 @@
+---
+title: TagCategoryEnum | TypeScript SDK
+---
+
 
 # TagCategoryEnum
 

@@ -1,3 +1,7 @@
+---
+title: Database API | TypeScript SDK
+---
+
 # Database API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,7 +41,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -83,7 +87,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: OSProcessingPermissions | Python SDK
+---
+
 # OSProcessingPermissions
 
 These are the permissions relating to the vision models.

@@ -1,3 +1,7 @@
+---
+title: ModelDeleteCacheInput | Python SDK
+---
+
 # ModelDeleteCacheInput
 
 This is the input model for '/model/\{model\}/delete/cache'

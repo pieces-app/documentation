@@ -1,3 +1,7 @@
+---
+title: QGPTHintsInput | Kotlin SDK
+---
+
 
 # QGPTHintsInput
 

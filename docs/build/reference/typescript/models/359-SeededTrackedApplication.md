@@ -1,3 +1,7 @@
+---
+title: SeededTrackedApplication | TypeScript SDK
+---
+
 
 # SeededTrackedApplication
 

@@ -1,3 +1,7 @@
+---
+title: Hint API | Kotlin SDK
+---
+
 # Hint API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.hintScoresIncrement(hint, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintScoresIncrement")
+    println("4xx response calling Hint API#hintScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintScoresIncrement")
+    println("5xx response calling Hint API#hintScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -54,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **hintSpecificHintSnapshot** {#hintspecifichintsnapshot}
 > Hint hintSpecificHintSnapshot(hint)
@@ -69,16 +73,16 @@ This will get a snapshot of a specific hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     val result : Hint = apiInstance.hintSpecificHintSnapshot(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintSpecificHintSnapshot")
+    println("4xx response calling Hint API#hintSpecificHintSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintSpecificHintSnapshot")
+    println("5xx response calling Hint API#hintSpecificHintSnapshot")
     e.printStackTrace()
 }
 ```
@@ -115,16 +119,16 @@ This will update a specific hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : Hint =  // Hint | 
 try {
     val result : Hint = apiInstance.hintUpdate(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintUpdate")
+    println("4xx response calling Hint API#hintUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintUpdate")
+    println("5xx response calling Hint API#hintUpdate")
     e.printStackTrace()
 }
 ```

@@ -1,3 +1,7 @@
+---
+title: Auth0Redirects | TypeScript SDK
+---
+
 
 # Auth0Redirects
 

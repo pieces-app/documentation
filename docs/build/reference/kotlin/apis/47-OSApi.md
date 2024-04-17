@@ -1,3 +1,7 @@
+---
+title: OS API | Kotlin SDK
+---
+
 # OS API
 
 All URIs are relative to *http://localhost:1000*
@@ -29,16 +33,16 @@ This will link an external provider to your current auth0 account.  Will throw e
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 val seededExternalProvider : SeededExternalProvider =  // SeededExternalProvider | 
 try {
     val result : ReturnedUserProfile = apiInstance.linkProvider(seededExternalProvider)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#linkProvider")
+    println("4xx response calling OS API#linkProvider")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#linkProvider")
+    println("5xx response calling OS API#linkProvider")
     e.printStackTrace()
 }
 ```
@@ -75,15 +79,15 @@ This will get information related to your specific device.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     val result : OSDeviceInformationReturnable = apiInstance.osDeviceInformation()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#osDeviceInformation")
+    println("4xx response calling OS API#osDeviceInformation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#osDeviceInformation")
+    println("5xx response calling OS API#osDeviceInformation")
     e.printStackTrace()
 }
 ```
@@ -117,15 +121,15 @@ This will only work on Macos and Windows.  And will get the permissions of the u
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     val result : OSPermissions = apiInstance.osPermissions()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#osPermissions")
+    println("4xx response calling OS API#osPermissions")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#osPermissions")
+    println("5xx response calling OS API#osPermissions")
     e.printStackTrace()
 }
 ```
@@ -159,16 +163,16 @@ This will only work on Macos and Windows.  This will request permissions for the
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 val osPermissions : OSPermissions =  // OSPermissions | 
 try {
     val result : OSPermissions = apiInstance.osPermissionsRequest(osPermissions)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#osPermissionsRequest")
+    println("4xx response calling OS API#osPermissionsRequest")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#osPermissionsRequest")
+    println("5xx response calling OS API#osPermissionsRequest")
     e.printStackTrace()
 }
 ```
@@ -205,14 +209,14 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     apiInstance.osRestart()
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#osRestart")
+    println("4xx response calling OS API#osRestart")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#osRestart")
+    println("5xx response calling OS API#osRestart")
     e.printStackTrace()
 }
 ```
@@ -231,7 +235,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **osUpdateCheck** {#osupdatecheck}
 > CheckedOSUpdate osUpdateCheck(uncheckedOSUpdate)
@@ -246,16 +250,16 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 val uncheckedOSUpdate : UncheckedOSUpdate =  // UncheckedOSUpdate | 
 try {
     val result : CheckedOSUpdate = apiInstance.osUpdateCheck(uncheckedOSUpdate)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#osUpdateCheck")
+    println("4xx response calling OS API#osUpdateCheck")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#osUpdateCheck")
+    println("5xx response calling OS API#osUpdateCheck")
     e.printStackTrace()
 }
 ```
@@ -292,16 +296,16 @@ This will trigger a filer picker and return the string paths of the files that w
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 val filePickerInput : FilePickerInput =  // FilePickerInput | 
 try {
     val result : kotlin.collections.List<kotlin.String> = apiInstance.pickFiles(filePickerInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#pickFiles")
+    println("4xx response calling OS API#pickFiles")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#pickFiles")
+    println("5xx response calling OS API#pickFiles")
     e.printStackTrace()
 }
 ```
@@ -338,15 +342,15 @@ This will trigger a folder picker and return the string paths of the folders tha
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     val result : kotlin.collections.List<kotlin.String> = apiInstance.pickFolders()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#pickFolders")
+    println("4xx response calling OS API#pickFolders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#pickFolders")
+    println("5xx response calling OS API#pickFolders")
     e.printStackTrace()
 }
 ```
@@ -380,15 +384,15 @@ A trigger that launches a Sign into OS Server
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     val result : UserProfile = apiInstance.signIntoOS()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#signIntoOS")
+    println("4xx response calling OS API#signIntoOS")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#signIntoOS")
+    println("5xx response calling OS API#signIntoOS")
     e.printStackTrace()
 }
 ```
@@ -422,15 +426,15 @@ A trigger that signs out a user from the OS
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OSApi()
+val apiInstance = OS API()
 try {
     val result : Users = apiInstance.signOutOfOS()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OSApi#signOutOfOS")
+    println("4xx response calling OS API#signOutOfOS")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OSApi#signOutOfOS")
+    println("5xx response calling OS API#signOutOfOS")
     e.printStackTrace()
 }
 ```

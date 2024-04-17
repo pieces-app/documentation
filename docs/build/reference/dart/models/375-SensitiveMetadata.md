@@ -1,3 +1,7 @@
+---
+title: SensitiveMetadata | Dart SDK
+---
+
 # SensitiveMetadata
 
 ## Load the model package

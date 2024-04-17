@@ -1,3 +1,7 @@
+---
+title: QGPTQuestionOutput | Dart SDK
+---
+
 # QGPTQuestionOutput
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilter | Python SDK
+---
+
 # TLPDirectedDiscoveryFilter
 
 Contains enum which represents code block type

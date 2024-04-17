@@ -1,3 +1,7 @@
+---
+title: StreamedIdentifier | Dart SDK
+---
+
 # StreamedIdentifier
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamSummary | TypeScript SDK
+---
+
 
 # SeededWorkstreamSummary
 

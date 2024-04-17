@@ -1,3 +1,7 @@
+---
+title: Hints API | Kotlin SDK
+---
+
 # Hints API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will create a hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 val seededHint : SeededHint =  // SeededHint | 
 try {
     val result : Hint = apiInstance.hintsCreateNewHint(seededHint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsCreateNewHint")
+    println("4xx response calling Hints API#hintsCreateNewHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsCreateNewHint")
+    println("5xx response calling Hints API#hintsCreateNewHint")
     e.printStackTrace()
 }
 ```
@@ -68,15 +72,15 @@ This will delete a specific hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     apiInstance.hintsDeleteSpecificHint(hint)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsDeleteSpecificHint")
+    println("4xx response calling Hints API#hintsDeleteSpecificHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsDeleteSpecificHint")
+    println("5xx response calling Hints API#hintsDeleteSpecificHint")
     e.printStackTrace()
 }
 ```
@@ -98,7 +102,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
@@ -113,15 +117,15 @@ This will get a snapshot of all of the hints.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 try {
     val result : Hints = apiInstance.hintsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsSnapshot")
+    println("4xx response calling Hints API#hintsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsSnapshot")
+    println("5xx response calling Hints API#hintsSnapshot")
     e.printStackTrace()
 }
 ```

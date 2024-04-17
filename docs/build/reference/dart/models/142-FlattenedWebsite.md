@@ -1,3 +1,7 @@
+---
+title: FlattenedWebsite | Dart SDK
+---
+
 # FlattenedWebsite
 
 ## Load the model package

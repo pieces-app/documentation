@@ -1,3 +1,7 @@
+---
+title: WorkstreamSummaries | Python SDK
+---
+
 # WorkstreamSummaries
 
 This is a collection of many WorkstreamSummary

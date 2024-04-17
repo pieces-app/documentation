@@ -1,3 +1,7 @@
+---
+title: Auth0UserBetaStatus | Kotlin SDK
+---
+
 
 # Auth0UserBetaStatus
 

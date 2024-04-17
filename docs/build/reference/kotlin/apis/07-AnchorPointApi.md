@@ -1,3 +1,7 @@
+---
+title: AnchorPoint API | Kotlin SDK
+---
+
 # AnchorPoint API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPointApi()
+val apiInstance = AnchorPoint API()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.anchorPointScoresIncrement(anchorPoint, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPointApi#anchorPointScoresIncrement")
+    println("4xx response calling AnchorPoint API#anchorPointScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPointApi#anchorPointScoresIncrement")
+    println("5xx response calling AnchorPoint API#anchorPointScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -54,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorPointSpecificAnchorPointSnapshot** {#anchorpointspecificanchorpointsnapshot}
 > AnchorPoint anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
@@ -69,17 +73,17 @@ This will get a snapshot of a single anchorPoint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPointApi()
+val apiInstance = AnchorPoint API()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : AnchorPoint = apiInstance.anchorPointSpecificAnchorPointSnapshot(anchorPoint, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPointApi#anchorPointSpecificAnchorPointSnapshot")
+    println("4xx response calling AnchorPoint API#anchorPointSpecificAnchorPointSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPointApi#anchorPointSpecificAnchorPointSnapshot")
+    println("5xx response calling AnchorPoint API#anchorPointSpecificAnchorPointSnapshot")
     e.printStackTrace()
 }
 ```
@@ -117,17 +121,17 @@ This will update a specific anchorPoint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPointApi()
+val apiInstance = AnchorPoint API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val anchorPoint : AnchorPoint =  // AnchorPoint | 
 try {
     val result : AnchorPoint = apiInstance.anchorPointUpdate(transferables, anchorPoint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPointApi#anchorPointUpdate")
+    println("4xx response calling AnchorPoint API#anchorPointUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPointApi#anchorPointUpdate")
+    println("5xx response calling AnchorPoint API#anchorPointUpdate")
     e.printStackTrace()
 }
 ```

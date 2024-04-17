@@ -1,3 +1,7 @@
+---
+title: Notifications API | Kotlin SDK
+---
+
 # Notifications API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,15 +24,15 @@ Retrieves a snapshot of all available models.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = NotificationsApi()
+val apiInstance = Notifications API()
 val notification : Notification =  // Notification | 
 try {
     apiInstance.sendLocalNotification(notification)
 } catch (e: ClientException) {
-    println("4xx response calling NotificationsApi#sendLocalNotification")
+    println("4xx response calling Notifications API#sendLocalNotification")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling NotificationsApi#sendLocalNotification")
+    println("5xx response calling Notifications API#sendLocalNotification")
     e.printStackTrace()
 }
 ```

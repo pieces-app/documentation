@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilters | Python SDK
+---
+
 # TLPDirectedDiscoveryFilters
 
 Contains array of TLPDirectedDiscoveryFilter

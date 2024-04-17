@@ -1,3 +1,7 @@
+---
+title: SeededUser | Python SDK
+---
+
 # SeededUser
 
 

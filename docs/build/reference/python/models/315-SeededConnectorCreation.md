@@ -1,3 +1,7 @@
+---
+title: SeededConnectorCreation | Python SDK
+---
+
 # SeededConnectorCreation
 
 A encompasing creation object that can be utilized to create either an asset or a format.

@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceInputOptions | Kotlin SDK
+---
+
 
 # QGPTRelevanceInputOptions
 

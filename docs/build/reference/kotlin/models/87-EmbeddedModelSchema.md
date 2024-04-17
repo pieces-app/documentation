@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchema | Kotlin SDK
+---
+
 
 # EmbeddedModelSchema
 

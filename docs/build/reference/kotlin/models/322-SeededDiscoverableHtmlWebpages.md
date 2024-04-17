@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableHtmlWebpages | Kotlin SDK
+---
+
 
 # SeededDiscoverableHtmlWebpages
 

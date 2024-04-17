@@ -1,3 +1,7 @@
+---
+title: FlattenedFormats | TypeScript SDK
+---
+
 
 # FlattenedFormats
 

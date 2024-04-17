@@ -1,3 +1,7 @@
+---
+title: SeededExternalProvider | Python SDK
+---
+
 # SeededExternalProvider
 
 This is the minimum information needed to connect an additional provider.

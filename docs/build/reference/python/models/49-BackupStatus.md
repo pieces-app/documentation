@@ -1,3 +1,7 @@
+---
+title: BackupStatus | Python SDK
+---
+
 # BackupStatus
 
 TODO add more description to this.  can eventually add a number that display the percent downloaded an so on.(this is called percent 0-100)

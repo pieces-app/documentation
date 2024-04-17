@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRStatistics | Dart SDK
+---
+
 # GraphicalOCRStatistics
 
 ## Load the model package

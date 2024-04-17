@@ -1,3 +1,7 @@
+---
+title: Relationship API | Python SDK
+---
+
 # Relationship API
 
 All URIs are relative to *http://localhost:1000*
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RelationshipApi(api_client)
+    api_instance = Relationship API(api_client)
     relationship = 'relationship_example' # str | this is a specific relationship uuid.
 
     try:

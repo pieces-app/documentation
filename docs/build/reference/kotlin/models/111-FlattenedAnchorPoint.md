@@ -1,3 +1,7 @@
+---
+title: FlattenedAnchorPoint | Kotlin SDK
+---
+
 
 # FlattenedAnchorPoint
 

@@ -1,3 +1,7 @@
+---
+title: FlattenedHint | Dart SDK
+---
+
 # FlattenedHint
 
 ## Load the model package

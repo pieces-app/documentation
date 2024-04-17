@@ -1,3 +1,7 @@
+---
+title: Sensitive | Python SDK
+---
+
 # Sensitive
 
 This is a fully referenced representation of a sensitive pieces of data.

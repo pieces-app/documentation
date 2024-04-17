@@ -1,3 +1,7 @@
+---
+title: Auth0Redirects | Python SDK
+---
+
 # Auth0Redirects
 
 The redirect URI for you Auth 0 Service

@@ -1,3 +1,7 @@
+---
+title: Space | Python SDK
+---
+
 # Space
 
 This is used in the TrackedAssetsEventSearchMetadata

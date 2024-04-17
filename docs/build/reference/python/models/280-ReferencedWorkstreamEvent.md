@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamEvent | Python SDK
+---
+
 # ReferencedWorkstreamEvent
 
 This is a minimal representation of a WorkstreamEvent event.

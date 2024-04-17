@@ -1,3 +1,7 @@
+---
+title: ExternalProviderTypeEnum | Dart SDK
+---
+
 # ExternalProviderTypeEnum
 
 ## Load the model package

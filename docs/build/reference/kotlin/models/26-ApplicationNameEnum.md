@@ -1,3 +1,7 @@
+---
+title: ApplicationNameEnum | Kotlin SDK
+---
+
 
 # ApplicationNameEnum
 

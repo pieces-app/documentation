@@ -1,3 +1,7 @@
+---
+title: GraphicalSVGStatistics | Python SDK
+---
+
 # GraphicalSVGStatistics
 
 

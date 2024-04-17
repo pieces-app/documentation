@@ -1,3 +1,7 @@
+---
+title: ReferencedAnnotation | TypeScript SDK
+---
+
 
 # ReferencedAnnotation
 

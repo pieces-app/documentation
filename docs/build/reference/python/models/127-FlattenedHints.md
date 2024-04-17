@@ -1,3 +1,7 @@
+---
+title: FlattenedHints | Python SDK
+---
+
 # FlattenedHints
 
 This is the flattened Version of plural hints.

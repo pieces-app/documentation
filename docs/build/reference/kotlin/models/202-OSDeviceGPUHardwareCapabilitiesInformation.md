@@ -1,3 +1,7 @@
+---
+title: OSDeviceGPUHardwareCapabilitiesInformation | Kotlin SDK
+---
+
 
 # OSDeviceGPUHardwareCapabilitiesInformation
 

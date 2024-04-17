@@ -1,3 +1,7 @@
+---
+title: OSDeviceCPUHardwareInformation | Python SDK
+---
+
 # OSDeviceCPUHardwareInformation
 
 This will let us know specific hardware information related to the CPU.

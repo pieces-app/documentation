@@ -1,3 +1,7 @@
+---
+title: OrderedMetrics | Python SDK
+---
+
 # OrderedMetrics
 
 This is a returnable for the metrics/formats/ordered

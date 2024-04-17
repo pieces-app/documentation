@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilterEnum | Kotlin SDK
+---
+
 
 # TLPDirectedDiscoveryFilterEnum
 

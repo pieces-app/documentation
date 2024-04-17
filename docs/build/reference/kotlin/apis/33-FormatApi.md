@@ -1,3 +1,7 @@
+---
+title: Format API | Kotlin SDK
+---
+
 # Format API
 
 All URIs are relative to *http://localhost:1000*
@@ -24,16 +28,16 @@ This will get an analysis from a format&#39;s id.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 try {
     val result : Analysis = apiInstance.formatAnalysis(format)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatAnalysis")
+    println("4xx response calling Format API#formatAnalysis")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatAnalysis")
+    println("5xx response calling Format API#formatAnalysis")
     e.printStackTrace()
 }
 ```
@@ -70,17 +74,17 @@ This endpoint will be used to reclassify a single Format.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val formatReclassification : FormatReclassification =  // FormatReclassification | 
 try {
     val result : Format = apiInstance.formatReclassify(transferable, formatReclassification)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatReclassify")
+    println("4xx response calling Format API#formatReclassify")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatReclassify")
+    println("5xx response calling Format API#formatReclassify")
     e.printStackTrace()
 }
 ```
@@ -118,17 +122,17 @@ Get a snapshot of a specific format.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Format = apiInstance.formatSnapshot(format, transferable)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatSnapshot")
+    println("4xx response calling Format API#formatSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatSnapshot")
+    println("5xx response calling Format API#formatSnapshot")
     e.printStackTrace()
 }
 ```
@@ -166,17 +170,17 @@ This will update a format&#39;s value, ie, a formats fragment or file depending 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val format : Format =  // Format | This is the format that you want to update.
 try {
     val result : Format = apiInstance.formatUpdateValue(transferable, format)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatUpdateValue")
+    println("4xx response calling Format API#formatUpdateValue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatUpdateValue")
+    println("5xx response calling Format API#formatUpdateValue")
     e.printStackTrace()
 }
 ```
@@ -214,16 +218,16 @@ This is an analytics endpoint that will enable us to know when a user has copied
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val seededTrackedFormatEvent : SeededTrackedFormatEvent =  // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:)
 try {
     val result : TrackedFormatEvent = apiInstance.formatUsageEvent(seededTrackedFormatEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatUsageEvent")
+    println("4xx response calling Format API#formatUsageEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatUsageEvent")
+    println("5xx response calling Format API#formatUsageEvent")
     e.printStackTrace()
 }
 ```

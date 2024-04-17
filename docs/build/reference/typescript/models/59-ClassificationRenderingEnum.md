@@ -1,3 +1,7 @@
+---
+title: ClassificationRenderingEnum | TypeScript SDK
+---
+
 
 # ClassificationRenderingEnum
 

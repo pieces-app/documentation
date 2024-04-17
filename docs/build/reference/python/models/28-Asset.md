@@ -1,3 +1,7 @@
+---
+title: Asset | Python SDK
+---
+
 # Asset
 
 An Asset Model representing data extracted from an Application connecting a group of data containing one or more Formats.  Below formats, preview, and original CAN to be pollinated (DAG Unsafe) because it is a root node and it's child leaf nodes will prevent cycles agressively.

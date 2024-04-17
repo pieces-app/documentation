@@ -1,3 +1,7 @@
+---
+title: BackupStatusEnum | TypeScript SDK
+---
+
 
 # BackupStatusEnum
 

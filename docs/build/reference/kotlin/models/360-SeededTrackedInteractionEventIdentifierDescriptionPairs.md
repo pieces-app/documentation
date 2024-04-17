@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # SeededTrackedInteractionEventIdentifierDescriptionPairs
 

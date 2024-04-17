@@ -1,3 +1,7 @@
+---
+title: Hint | TypeScript SDK
+---
+
 
 # Hint
 

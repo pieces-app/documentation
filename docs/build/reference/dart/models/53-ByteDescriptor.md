@@ -1,3 +1,7 @@
+---
+title: ByteDescriptor | Dart SDK
+---
+
 # ByteDescriptor
 
 ## Load the model package

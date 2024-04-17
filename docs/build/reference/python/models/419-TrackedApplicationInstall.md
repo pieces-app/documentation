@@ -1,3 +1,7 @@
+---
+title: TrackedApplicationInstall | Python SDK
+---
+
 # TrackedApplicationInstall
 
 A model that allows for us to specifically track Application Installs & Related Data
@@ -7,7 +11,7 @@ A model that allows for us to specifically track Application Installs & Related 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-**application** | [**TrackedApplication**](TrackedApplication) |  | 
+**application** | [**Application**](Application) |  | 
 **user** | [**TrackedUserProfile**](TrackedUserProfile) |  | [optional] 
 
 ## Example

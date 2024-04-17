@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableSensitives | TypeScript SDK
+---
+
 
 # SeededDiscoverableSensitives
 

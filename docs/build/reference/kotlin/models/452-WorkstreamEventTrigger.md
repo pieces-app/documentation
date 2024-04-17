@@ -1,3 +1,7 @@
+---
+title: WorkstreamEventTrigger | Kotlin SDK
+---
+
 
 # WorkstreamEventTrigger
 

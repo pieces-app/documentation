@@ -1,3 +1,7 @@
+---
+title: AnnotationTypeEnum | TypeScript SDK
+---
+
 
 # AnnotationTypeEnum
 

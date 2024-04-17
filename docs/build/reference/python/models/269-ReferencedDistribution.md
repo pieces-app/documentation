@@ -1,3 +1,7 @@
+---
+title: ReferencedDistribution | Python SDK
+---
+
 # ReferencedDistribution
 
 

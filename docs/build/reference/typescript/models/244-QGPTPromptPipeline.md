@@ -1,3 +1,7 @@
+---
+title: QGPTPromptPipeline | TypeScript SDK
+---
+
 
 # QGPTPromptPipeline
 

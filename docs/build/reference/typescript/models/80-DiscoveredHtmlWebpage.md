@@ -1,3 +1,7 @@
+---
+title: DiscoveredHtmlWebpage | TypeScript SDK
+---
+
 
 # DiscoveredHtmlWebpage
 

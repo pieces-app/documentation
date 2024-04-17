@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForContextualizedCodeWorkstreamDialog | Dart SDK
+---
+
 # QGPTConversationPipelineForContextualizedCodeWorkstreamDialog
 
 ## Load the model package

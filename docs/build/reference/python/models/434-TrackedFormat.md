@@ -1,3 +1,7 @@
+---
+title: TrackedFormat | Python SDK
+---
+
 # TrackedFormat
 
 A minimal format to send to Mixpanel

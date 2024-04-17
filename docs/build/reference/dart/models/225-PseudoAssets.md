@@ -1,3 +1,7 @@
+---
+title: PseudoAssets | Dart SDK
+---
+
 # PseudoAssets
 
 ## Load the model package

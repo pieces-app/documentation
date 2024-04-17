@@ -1,3 +1,7 @@
+---
+title: OSDeviceGPUHardwareCapabilitiesInformation | TypeScript SDK
+---
+
 
 # OSDeviceGPUHardwareCapabilitiesInformation
 

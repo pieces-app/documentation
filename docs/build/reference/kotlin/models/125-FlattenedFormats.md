@@ -1,3 +1,7 @@
+---
+title: FlattenedFormats | Kotlin SDK
+---
+
 
 # FlattenedFormats
 

@@ -1,3 +1,7 @@
+---
+title: SeededDistributions | Dart SDK
+---
+
 # SeededDistributions
 
 ## Load the model package

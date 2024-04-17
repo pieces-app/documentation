@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventIdentifierDescriptionPairs | Python SDK
+---
+
 # TrackedAssetEventIdentifierDescriptionPairs
 
 These are all of the available event types that are permitted in an object pair notation.

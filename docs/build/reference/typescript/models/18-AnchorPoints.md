@@ -1,3 +1,7 @@
+---
+title: AnchorPoints | TypeScript SDK
+---
+
 
 # AnchorPoints
 

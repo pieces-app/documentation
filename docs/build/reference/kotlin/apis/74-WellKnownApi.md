@@ -1,3 +1,7 @@
+---
+title: WellKnown API | Kotlin SDK
+---
+
 # WellKnown API
 
 All URIs are relative to *http://localhost:1000*
@@ -21,15 +25,15 @@ Retrieves the health status of the server.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnownApi()
+val apiInstance = WellKnown API()
 try {
     val result : kotlin.String = apiInstance.getWellKnownHealth()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnownApi#getWellKnownHealth")
+    println("4xx response calling WellKnown API#getWellKnownHealth")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnownApi#getWellKnownHealth")
+    println("5xx response calling WellKnown API#getWellKnownHealth")
     e.printStackTrace()
 }
 ```
@@ -48,7 +52,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **getWellKnownVersion** {#getwellknownversion}
 > kotlin.String getWellKnownVersion()
@@ -63,15 +67,15 @@ Retrieves the version of the server. It returns a string representing the curren
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnownApi()
+val apiInstance = WellKnown API()
 try {
     val result : kotlin.String = apiInstance.getWellKnownVersion()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnownApi#getWellKnownVersion")
+    println("4xx response calling WellKnown API#getWellKnownVersion")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnownApi#getWellKnownVersion")
+    println("5xx response calling WellKnown API#getWellKnownVersion")
     e.printStackTrace()
 }
 ```
@@ -90,5 +94,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 

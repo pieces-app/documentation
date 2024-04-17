@@ -1,3 +1,7 @@
+---
+title: PersonType | TypeScript SDK
+---
+
 
 # PersonType
 

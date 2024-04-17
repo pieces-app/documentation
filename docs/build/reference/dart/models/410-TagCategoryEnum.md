@@ -1,3 +1,7 @@
+---
+title: TagCategoryEnum | Dart SDK
+---
+
 # TagCategoryEnum
 
 ## Load the model package

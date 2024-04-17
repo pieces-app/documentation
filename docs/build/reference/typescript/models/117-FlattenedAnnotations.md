@@ -1,3 +1,7 @@
+---
+title: FlattenedAnnotations | TypeScript SDK
+---
+
 
 # FlattenedAnnotations
 

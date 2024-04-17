@@ -1,3 +1,7 @@
+---
+title: ExternallySourcedEnum | Dart SDK
+---
+
 # ExternallySourcedEnum
 
 ## Load the model package

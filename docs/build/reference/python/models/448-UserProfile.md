@@ -1,3 +1,7 @@
+---
+title: UserProfile | Python SDK
+---
+
 # UserProfile
 
 This is the model for a user logged into Pieces.

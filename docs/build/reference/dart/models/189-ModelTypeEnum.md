@@ -1,3 +1,7 @@
+---
+title: ModelTypeEnum | Dart SDK
+---
+
 # ModelTypeEnum
 
 ## Load the model package

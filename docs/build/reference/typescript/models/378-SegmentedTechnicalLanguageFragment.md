@@ -1,3 +1,7 @@
+---
+title: SegmentedTechnicalLanguageFragment | TypeScript SDK
+---
+
 
 # SegmentedTechnicalLanguageFragment
 

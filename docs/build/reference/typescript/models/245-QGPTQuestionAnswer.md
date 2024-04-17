@@ -1,3 +1,7 @@
+---
+title: QGPTQuestionAnswer | TypeScript SDK
+---
+
 
 # QGPTQuestionAnswer
 

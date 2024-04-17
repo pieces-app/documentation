@@ -1,3 +1,7 @@
+---
+title: NodeTypeEnum | TypeScript SDK
+---
+
 
 # NodeTypeEnum
 

@@ -1,3 +1,7 @@
+---
+title: SeededScoreIncrement | Python SDK
+---
+
 # SeededScoreIncrement
 
 This is the body for a respective scores increment,  This will enable us to know what material we want to increment, all of which are optional, if it is defined we will attempt to increment the material.

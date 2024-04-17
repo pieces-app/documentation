@@ -1,3 +1,7 @@
+---
+title: ReferencedShare | TypeScript SDK
+---
+
 
 # ReferencedShare
 

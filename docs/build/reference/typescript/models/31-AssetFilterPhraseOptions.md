@@ -1,3 +1,7 @@
+---
+title: AssetFilterPhraseOptions | TypeScript SDK
+---
+
 
 # AssetFilterPhraseOptions
 

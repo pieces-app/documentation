@@ -1,3 +1,7 @@
+---
+title: MailgunMetadata | Kotlin SDK
+---
+
 
 # MailgunMetadata
 

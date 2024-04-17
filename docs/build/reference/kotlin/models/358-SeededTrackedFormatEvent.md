@@ -1,3 +1,7 @@
+---
+title: SeededTrackedFormatEvent | Kotlin SDK
+---
+
 
 # SeededTrackedFormatEvent
 

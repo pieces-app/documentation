@@ -1,3 +1,7 @@
+---
+title: FlattenedShares | Python SDK
+---
+
 # FlattenedShares
 
 This is just an iterable of our individual share models.

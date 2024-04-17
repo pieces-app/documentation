@@ -1,3 +1,7 @@
+---
+title: GraphicalImageProcessing | Dart SDK
+---
+
 # GraphicalImageProcessing
 
 ## Load the model package

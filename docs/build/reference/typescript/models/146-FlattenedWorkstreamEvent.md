@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamEvent | TypeScript SDK
+---
+
 
 # FlattenedWorkstreamEvent
 

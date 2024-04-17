@@ -1,3 +1,7 @@
+---
+title: ExternallySourcedEnum | Python SDK
+---
+
 # ExternallySourcedEnum
 
 This is an enum that will highlight something that is externally sourced.

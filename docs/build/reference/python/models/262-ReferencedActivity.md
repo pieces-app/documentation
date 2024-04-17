@@ -1,3 +1,7 @@
+---
+title: ReferencedActivity | Python SDK
+---
+
 # ReferencedActivity
 
 

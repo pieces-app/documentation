@@ -1,3 +1,7 @@
+---
+title: TLPCodeSnippetTagifyCode | Python SDK
+---
+
 # TLPCodeSnippetTagifyCode
 
 

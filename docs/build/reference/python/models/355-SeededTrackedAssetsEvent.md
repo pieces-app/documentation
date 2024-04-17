@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAssetsEvent | Python SDK
+---
+
 # SeededTrackedAssetsEvent
 
 An seeded event model that can occur at the assets level i.e. search 

@@ -1,3 +1,7 @@
+---
+title: ReferencedUser | Python SDK
+---
+
 # ReferencedUser
 
 A object to reference a user's ID and optionally a FlattenedUserProfile Instance 

@@ -1,3 +1,7 @@
+---
+title: ExternallySourcedEnum | TypeScript SDK
+---
+
 
 # ExternallySourcedEnum
 

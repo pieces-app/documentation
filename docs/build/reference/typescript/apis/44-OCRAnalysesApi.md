@@ -1,3 +1,7 @@
+---
+title: OCRAnalyses API | TypeScript SDK
+---
+
 # OCRAnalyses API
 
 All URIs are relative to *http://localhost:1000*
@@ -44,7 +48,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

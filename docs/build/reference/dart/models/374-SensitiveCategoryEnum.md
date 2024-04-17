@@ -1,3 +1,7 @@
+---
+title: SensitiveCategoryEnum | Dart SDK
+---
+
 # SensitiveCategoryEnum
 
 ## Load the model package

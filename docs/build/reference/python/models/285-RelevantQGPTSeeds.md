@@ -1,3 +1,7 @@
+---
+title: RelevantQGPTSeeds | Python SDK
+---
+
 # RelevantQGPTSeeds
 
 This is a plural of RelevantQGPTSeed.

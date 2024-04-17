@@ -1,3 +1,7 @@
+---
+title: Distribution | Python SDK
+---
+
 # Distribution
 
 This is a fully referenced version of a Distribution. TODO add additional distributions such as slack, google_chat, ...etc

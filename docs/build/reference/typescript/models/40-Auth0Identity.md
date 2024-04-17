@@ -1,3 +1,7 @@
+---
+title: Auth0Identity | TypeScript SDK
+---
+
 
 # Auth0Identity
 

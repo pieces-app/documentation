@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeCompletion | Dart SDK
+---
+
 # QGPTTaskPipelineForCodeCompletion
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: FlattenedTag | Kotlin SDK
+---
+
 
 # FlattenedTag
 

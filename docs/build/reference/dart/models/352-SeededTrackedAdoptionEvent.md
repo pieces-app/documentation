@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAdoptionEvent | Dart SDK
+---
+
 # SeededTrackedAdoptionEvent
 
 ## Load the model package

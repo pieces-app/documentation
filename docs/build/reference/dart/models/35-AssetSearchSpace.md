@@ -1,3 +1,7 @@
+---
+title: AssetSearchSpace | Dart SDK
+---
+
 # AssetSearchSpace
 
 ## Load the model package

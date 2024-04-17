@@ -1,3 +1,7 @@
+---
+title: ModelDeleteCacheOutput | Python SDK
+---
+
 # ModelDeleteCacheOutput
 
 This is the output model for '/model/\{model\}/delete/cache'

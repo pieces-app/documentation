@@ -1,3 +1,7 @@
+---
+title: AssetsSearchWithFiltersInput | TypeScript SDK
+---
+
 
 # AssetsSearchWithFiltersInput
 

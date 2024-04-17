@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForContextualizedCodeWorkstreamDialog | TypeScript SDK
+---
+
 
 # QGPTConversationPipelineForContextualizedCodeWorkstreamDialog
 

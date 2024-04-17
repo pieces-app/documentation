@@ -1,3 +1,7 @@
+---
+title: FlattenedActivities | Kotlin SDK
+---
+
 
 # FlattenedActivities
 

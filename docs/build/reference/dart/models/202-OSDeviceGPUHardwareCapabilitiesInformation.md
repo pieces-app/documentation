@@ -1,3 +1,7 @@
+---
+title: OSDeviceGPUHardwareCapabilitiesInformation | Dart SDK
+---
+
 # OSDeviceGPUHardwareCapabilitiesInformation
 
 ## Load the model package

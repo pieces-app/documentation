@@ -1,3 +1,7 @@
+---
+title: MailgunMetadata | TypeScript SDK
+---
+
 
 # MailgunMetadata
 

@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatistics | Kotlin SDK
+---
+
 
 # GraphicalOCRDescriptiveStatistics
 

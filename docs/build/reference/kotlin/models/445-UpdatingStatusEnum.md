@@ -1,3 +1,7 @@
+---
+title: UpdatingStatusEnum | Kotlin SDK
+---
+
 
 # UpdatingStatusEnum
 

@@ -1,3 +1,7 @@
+---
+title: ByteDescriptor | TypeScript SDK
+---
+
 
 # ByteDescriptor
 

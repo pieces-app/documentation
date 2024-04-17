@@ -1,3 +1,7 @@
+---
+title: OrderedMetrics | TypeScript SDK
+---
+
 
 # OrderedMetrics
 

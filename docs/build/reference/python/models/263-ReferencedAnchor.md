@@ -1,3 +1,7 @@
+---
+title: ReferencedAnchor | Python SDK
+---
+
 # ReferencedAnchor
 
 This is the referenced version of a Anchor, main used for the uuid.

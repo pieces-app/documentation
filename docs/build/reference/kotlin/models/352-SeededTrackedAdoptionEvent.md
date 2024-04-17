@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAdoptionEvent | Kotlin SDK
+---
+
 
 # SeededTrackedAdoptionEvent
 

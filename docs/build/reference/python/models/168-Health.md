@@ -1,3 +1,7 @@
+---
+title: Health | Python SDK
+---
+
 # Health
 
 This is a health model used to determine the \"health\" of the os server and cloud server(Coming Soon). READONLY Model.

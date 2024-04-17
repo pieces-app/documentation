@@ -1,3 +1,7 @@
+---
+title: FlattenedTags | Python SDK
+---
+
 # FlattenedTags
 
 This is multiple ReferencedTags(which includes an optional FlattenedTag Model within the reference model).

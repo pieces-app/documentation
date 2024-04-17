@@ -1,3 +1,7 @@
+---
+title: PrivacyEnum | TypeScript SDK
+---
+
 
 # PrivacyEnum
 

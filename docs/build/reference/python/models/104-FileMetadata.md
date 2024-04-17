@@ -1,3 +1,7 @@
+---
+title: FileMetadata | Python SDK
+---
+
 # FileMetadata
 
 This is a model for metadata of a file!

@@ -1,3 +1,7 @@
+---
+title: SeededTrackedConversationEvent | Python SDK
+---
+
 # SeededTrackedConversationEvent
 
 This is a pre-created(seed) TrackedConversationEvent

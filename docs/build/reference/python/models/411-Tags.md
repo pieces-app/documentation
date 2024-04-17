@@ -1,3 +1,7 @@
+---
+title: Tags | Python SDK
+---
+
 # Tags
 
 This is a model that represents multiple Tag Models

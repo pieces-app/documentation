@@ -1,3 +1,7 @@
+---
+title: GraphicalImageProcessing | Python SDK
+---
+
 # GraphicalImageProcessing
 
 

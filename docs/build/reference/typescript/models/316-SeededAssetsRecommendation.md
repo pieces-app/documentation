@@ -1,3 +1,7 @@
+---
+title: SeededAssetsRecommendation | TypeScript SDK
+---
+
 
 # SeededAssetsRecommendation
 

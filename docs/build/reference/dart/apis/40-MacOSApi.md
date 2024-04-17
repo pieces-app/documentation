@@ -1,3 +1,7 @@
+---
+title: MacOS API | Dart SDK
+---
+
 # MacOS API
 
 All URIs are relative to *http://localhost:1000*

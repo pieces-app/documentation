@@ -1,3 +1,7 @@
+---
+title: ExportedAsset | Python SDK
+---
+
 # ExportedAsset
 
 This is a model for a minimum exported version of an asset.

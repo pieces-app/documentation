@@ -1,3 +1,7 @@
+---
+title: FlattenedWebsite | TypeScript SDK
+---
+
 
 # FlattenedWebsite
 

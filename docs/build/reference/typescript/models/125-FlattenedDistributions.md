@@ -1,3 +1,7 @@
+---
+title: FlattenedDistributions | TypeScript SDK
+---
+
 
 # FlattenedDistributions
 

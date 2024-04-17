@@ -1,3 +1,7 @@
+---
+title: Activities | Python SDK
+---
+
 # Activities
 
 This is the plural of activity

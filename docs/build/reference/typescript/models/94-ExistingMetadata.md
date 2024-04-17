@@ -1,3 +1,7 @@
+---
+title: ExistingMetadata | TypeScript SDK
+---
+
 
 # ExistingMetadata
 

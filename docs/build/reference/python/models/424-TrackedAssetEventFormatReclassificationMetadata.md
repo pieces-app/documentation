@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventFormatReclassificationMetadata | Python SDK
+---
+
 # TrackedAssetEventFormatReclassificationMetadata
 
 Metadata of a format reclassification event

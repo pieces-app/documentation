@@ -1,3 +1,7 @@
+---
+title: AnchorTypeEnum | Kotlin SDK
+---
+
 
 # AnchorTypeEnum
 

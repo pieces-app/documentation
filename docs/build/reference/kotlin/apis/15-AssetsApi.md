@@ -1,3 +1,7 @@
+---
+title: Assets API | Kotlin SDK
+---
+
 # Assets API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,17 +38,17 @@ Accepts a seeded (a structure that comes before an asset, and will be used in cr
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seed : Seed =  // Seed | 
 try {
     val result : Asset = apiInstance.assetsCreateNewAsset(transferables, seed)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsCreateNewAsset")
+    println("4xx response calling Assets API#assetsCreateNewAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsCreateNewAsset")
+    println("5xx response calling Assets API#assetsCreateNewAsset")
     e.printStackTrace()
 }
 ```
@@ -82,16 +86,16 @@ Deletes a specific asset from the system by providing its unique identifier (UID
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     val result : kotlin.String = apiInstance.assetsDeleteAsset(asset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsDeleteAsset")
+    println("4xx response calling Assets API#assetsDeleteAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsDeleteAsset")
+    println("5xx response calling Assets API#assetsDeleteAsset")
     e.printStackTrace()
 }
 ```
@@ -113,7 +117,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **assetsDraft** {#assetsdraft}
 > Seed assetsDraft(transferables, seed)
@@ -128,17 +132,17 @@ Allows developers to input a Seed and receive a drafted asset with preprocessed 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seed : Seed =  // Seed | 
 try {
     val result : Seed = apiInstance.assetsDraft(transferables, seed)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsDraft")
+    println("4xx response calling Assets API#assetsDraft")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsDraft")
+    println("5xx response calling Assets API#assetsDraft")
     e.printStackTrace()
 }
 ```
@@ -176,16 +180,16 @@ Expects a SeededAssetsRecommendation Model in the request body, containing asset
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val seededAssetsRecommendation : SeededAssetsRecommendation =  // SeededAssetsRecommendation | The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats.
 try {
     val result : Assets = apiInstance.assetsGetRecommendedAssets(seededAssetsRecommendation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsGetRecommendedAssets")
+    println("4xx response calling Assets API#assetsGetRecommendedAssets")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsGetRecommendedAssets")
+    println("5xx response calling Assets API#assetsGetRecommendedAssets")
     e.printStackTrace()
 }
 ```
@@ -222,16 +226,16 @@ Retrieves one or more related assets when provided with one or more input assets
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val assets : Assets =  // Assets | The body of the request is an object (Assets Model) with iterable internally.
 try {
     val result : Assets = apiInstance.assetsGetRelatedAssets(assets)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsGetRelatedAssets")
+    println("4xx response calling Assets API#assetsGetRelatedAssets")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsGetRelatedAssets")
+    println("5xx response calling Assets API#assetsGetRelatedAssets")
     e.printStackTrace()
 }
 ```
@@ -268,16 +272,16 @@ Retrieves all asset IDs associated with your account.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
 try {
     val result : FlattenedAssets = apiInstance.assetsIdentifiersSnapshot(pseudo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsIdentifiersSnapshot")
+    println("4xx response calling Assets API#assetsIdentifiersSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsIdentifiersSnapshot")
+    println("5xx response calling Assets API#assetsIdentifiersSnapshot")
     e.printStackTrace()
 }
 ```
@@ -314,15 +318,15 @@ Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 try {
     val result : PseudoAssets = apiInstance.assetsPseudoSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsPseudoSnapshot")
+    println("4xx response calling Assets API#assetsPseudoSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsPseudoSnapshot")
+    println("5xx response calling Assets API#assetsPseudoSnapshot")
     e.printStackTrace()
 }
 ```
@@ -356,7 +360,7 @@ Performs a search across your pieces and returns Assets (the results) based on y
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val searchableTags : kotlin.String = searchableTags_example // kotlin.String | This is a comma separated value of tags used for search.
@@ -365,10 +369,10 @@ try {
     val result : SearchedAssets = apiInstance.assetsSearchAssets(query, transferables, searchableTags, pseudo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsSearchAssets")
+    println("4xx response calling Assets API#assetsSearchAssets")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsSearchAssets")
+    println("5xx response calling Assets API#assetsSearchAssets")
     e.printStackTrace()
 }
 ```
@@ -408,7 +412,7 @@ Enables searching through your pieces and returns Assets (the results) based on 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
 val assetsSearchWithFiltersInput : AssetsSearchWithFiltersInput =  // AssetsSearchWithFiltersInput | 
@@ -416,10 +420,10 @@ try {
     val result : AssetsSearchWithFiltersOutput = apiInstance.assetsSearchWithFilters(transferables, pseudo, assetsSearchWithFiltersInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsSearchWithFilters")
+    println("4xx response calling Assets API#assetsSearchWithFilters")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsSearchWithFilters")
+    println("5xx response calling Assets API#assetsSearchWithFilters")
     e.printStackTrace()
 }
 ```
@@ -458,7 +462,7 @@ Get all of the users Assets.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val suggested : kotlin.Boolean = true // kotlin.Boolean | This will let us know if a developer, wants a snapshot related to suggested content or normal content
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
@@ -466,10 +470,10 @@ try {
     val result : Assets = apiInstance.assetsSnapshot(transferables, suggested, pseudo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsSnapshot")
+    println("4xx response calling Assets API#assetsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsSnapshot")
+    println("5xx response calling Assets API#assetsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -508,17 +512,17 @@ Retrieves the available formats for a specific asset identified by its ID
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Formats = apiInstance.assetsSpecificAssetFormatsSnapshot(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsSpecificAssetFormatsSnapshot")
+    println("4xx response calling Assets API#assetsSpecificAssetFormatsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsSpecificAssetFormatsSnapshot")
+    println("5xx response calling Assets API#assetsSpecificAssetFormatsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -556,17 +560,17 @@ Allows clients to retrieve details of a specific asset by providing its UUID in 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Asset = apiInstance.assetsSpecificAssetSnapshot(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsSpecificAssetSnapshot")
+    println("4xx response calling Assets API#assetsSpecificAssetSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsSpecificAssetSnapshot")
+    println("5xx response calling Assets API#assetsSpecificAssetSnapshot")
     e.printStackTrace()
 }
 ```
@@ -604,15 +608,15 @@ Provides a WebSocket connection that emits changes to your asset&#39;s identifie
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 try {
     val result : StreamedIdentifiers = apiInstance.assetsStreamIdentifiers()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#assetsStreamIdentifiers")
+    println("4xx response calling Assets API#assetsStreamIdentifiers")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#assetsStreamIdentifiers")
+    println("5xx response calling Assets API#assetsStreamIdentifiers")
     e.printStackTrace()
 }
 ```
@@ -646,15 +650,15 @@ Provides a WebSocket connection that emits changes to your assets, including the
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 try {
     val result : Assets = apiInstance.getAssetsStreamTransferables()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#getAssetsStreamTransferables")
+    println("4xx response calling Assets API#getAssetsStreamTransferables")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#getAssetsStreamTransferables")
+    println("5xx response calling Assets API#getAssetsStreamTransferables")
     e.printStackTrace()
 }
 ```
@@ -688,15 +692,15 @@ Provides a WebSocket connection that emits changes to your assets.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AssetsApi()
+val apiInstance = Assets API()
 try {
     val result : Assets = apiInstance.streamAssets()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AssetsApi#streamAssets")
+    println("4xx response calling Assets API#streamAssets")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AssetsApi#streamAssets")
+    println("5xx response calling Assets API#streamAssets")
     e.printStackTrace()
 }
 ```

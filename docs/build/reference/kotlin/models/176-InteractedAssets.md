@@ -1,3 +1,7 @@
+---
+title: InteractedAssets | Kotlin SDK
+---
+
 
 # InteractedAssets
 

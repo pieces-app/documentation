@@ -1,3 +1,7 @@
+---
+title: Notifications API | Python SDK
+---
+
 # Notifications API
 
 All URIs are relative to *http://localhost:1000*
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.NotificationsApi(api_client)
+    api_instance = Notifications API(api_client)
     notification = pieces_os_client.Notification() # Notification |  (optional)
 
     try:

@@ -1,3 +1,7 @@
+---
+title: SeededClassification | TypeScript SDK
+---
+
 
 # SeededClassification
 

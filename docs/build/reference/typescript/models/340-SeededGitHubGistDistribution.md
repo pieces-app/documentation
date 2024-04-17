@@ -1,3 +1,7 @@
+---
+title: SeededGitHubGistDistribution | TypeScript SDK
+---
+
 
 # SeededGitHubGistDistribution
 

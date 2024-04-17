@@ -1,3 +1,7 @@
+---
+title: UltraSuite API | Python SDK
+---
+
 # UltraSuite API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UltraSuiteApi(api_client)
+    api_instance = UltraSuite API(api_client)
     seeded_ultra_suite_asset = pieces_os_client.SeededUltraSuiteAsset() # SeededUltraSuiteAsset |  (optional)
 
     try:

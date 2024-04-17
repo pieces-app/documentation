@@ -1,3 +1,7 @@
+---
+title: FormatMetric | Kotlin SDK
+---
+
 
 # FormatMetric
 

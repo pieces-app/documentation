@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamEvent | Kotlin SDK
+---
+
 
 # FlattenedWorkstreamEvent
 

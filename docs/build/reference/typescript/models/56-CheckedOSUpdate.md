@@ -1,3 +1,7 @@
+---
+title: CheckedOSUpdate | TypeScript SDK
+---
+
 
 # CheckedOSUpdate
 

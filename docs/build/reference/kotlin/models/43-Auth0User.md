@@ -1,3 +1,7 @@
+---
+title: Auth0User | Kotlin SDK
+---
+
 
 # Auth0User
 

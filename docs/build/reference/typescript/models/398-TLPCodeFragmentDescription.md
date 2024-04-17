@@ -1,3 +1,7 @@
+---
+title: TLPCodeFragmentDescription | TypeScript SDK
+---
+
 
 # TLPCodeFragmentDescription
 

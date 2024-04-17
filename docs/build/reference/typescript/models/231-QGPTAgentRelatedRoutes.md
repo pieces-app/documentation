@@ -1,3 +1,7 @@
+---
+title: QGPTAgentRelatedRoutes | TypeScript SDK
+---
+
 
 # QGPTAgentRelatedRoutes
 

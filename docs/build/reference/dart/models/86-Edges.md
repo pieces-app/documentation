@@ -1,3 +1,7 @@
+---
+title: Edges | Dart SDK
+---
+
 # Edges
 
 ## Load the model package

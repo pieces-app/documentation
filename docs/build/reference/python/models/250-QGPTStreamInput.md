@@ -1,3 +1,7 @@
+---
+title: QGPTStreamInput | Python SDK
+---
+
 # QGPTStreamInput
 
 This is the input for the /qgpt/stream endpoint.

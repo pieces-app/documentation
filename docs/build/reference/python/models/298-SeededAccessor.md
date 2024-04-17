@@ -1,3 +1,7 @@
+---
+title: SeededAccessor | Python SDK
+---
+
 # SeededAccessor
 
 This is a pre-created accessor that simply takes an os id and an optional user(flattened)

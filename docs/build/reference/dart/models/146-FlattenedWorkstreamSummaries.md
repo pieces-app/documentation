@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamSummaries | Dart SDK
+---
+
 # FlattenedWorkstreamSummaries
 
 ## Load the model package

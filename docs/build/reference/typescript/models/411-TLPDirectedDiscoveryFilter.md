@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilter | TypeScript SDK
+---
+
 
 # TLPDirectedDiscoveryFilter
 

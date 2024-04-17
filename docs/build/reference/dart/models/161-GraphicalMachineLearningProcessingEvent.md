@@ -1,3 +1,7 @@
+---
+title: GraphicalMachineLearningProcessingEvent | Dart SDK
+---
+
 # GraphicalMachineLearningProcessingEvent
 
 ## Load the model package

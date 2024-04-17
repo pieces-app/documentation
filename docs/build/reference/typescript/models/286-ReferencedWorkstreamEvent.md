@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamEvent | TypeScript SDK
+---
+
 
 # ReferencedWorkstreamEvent
 

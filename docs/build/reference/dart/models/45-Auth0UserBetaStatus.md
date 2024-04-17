@@ -1,3 +1,7 @@
+---
+title: Auth0UserBetaStatus | Dart SDK
+---
+
 # Auth0UserBetaStatus
 
 ## Load the model package

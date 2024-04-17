@@ -1,3 +1,7 @@
+---
+title: GitHubGistDistribution | Kotlin SDK
+---
+
 
 # GitHubGistDistribution
 

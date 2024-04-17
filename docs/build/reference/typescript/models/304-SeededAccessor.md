@@ -1,3 +1,7 @@
+---
+title: SeededAccessor | TypeScript SDK
+---
+
 
 # SeededAccessor
 

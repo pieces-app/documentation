@@ -1,3 +1,7 @@
+---
+title: SeededTrackedApplication | Python SDK
+---
+
 # SeededTrackedApplication
 
 A Model to describe what application a format/analytics event originated - Specifically NOT requiring an ID

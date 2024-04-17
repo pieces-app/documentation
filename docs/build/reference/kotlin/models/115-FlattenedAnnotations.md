@@ -1,3 +1,7 @@
+---
+title: FlattenedAnnotations | Kotlin SDK
+---
+
 
 # FlattenedAnnotations
 

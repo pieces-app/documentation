@@ -1,3 +1,7 @@
+---
+title: Annotations | TypeScript SDK
+---
+
 
 # Annotations
 

@@ -1,3 +1,7 @@
+---
+title: OSDeviceInformationReturnable | TypeScript SDK
+---
+
 
 # OSDeviceInformationReturnable
 

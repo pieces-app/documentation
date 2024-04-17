@@ -1,3 +1,7 @@
+---
+title: ExternalProvider API | Python SDK
+---
+
 # ExternalProvider API
 
 All URIs are relative to *http://localhost:1000*
@@ -36,8 +40,8 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ExternalProviderApi(api_client)
-    precreated_external_provider_api_key = pieces_os_client.PrecreatedExternalProviderApiKey() # PrecreatedExternalProviderApiKey |  (optional)
+    api_instance = ExternalProvider API(api_client)
+    precreated_external_provider_api_key = PrecreatedExternalProvider APIKey() # PrecreatedExternalProviderApiKey |  (optional)
 
     try:
         # /external_provider/api_key/create [POST]
@@ -68,7 +72,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -107,8 +111,8 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ExternalProviderApi(api_client)
-    predeleted_external_provider_api_key = pieces_os_client.PredeletedExternalProviderApiKey() # PredeletedExternalProviderApiKey |  (optional)
+    api_instance = ExternalProvider API(api_client)
+    predeleted_external_provider_api_key = PredeletedExternalProvider APIKey() # PredeletedExternalProviderApiKey |  (optional)
 
     try:
         # /external_provider/api_key/delete [POST]
@@ -139,7 +143,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -178,8 +182,8 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ExternalProviderApi(api_client)
-    preupdated_external_provider_api_key = pieces_os_client.PreupdatedExternalProviderApiKey() # PreupdatedExternalProviderApiKey |  (optional)
+    api_instance = ExternalProvider API(api_client)
+    preupdated_external_provider_api_key = PreupdatedExternalProvider APIKey() # PreupdatedExternalProviderApiKey |  (optional)
 
     try:
         # /external_provider/api_key/update [POST]
@@ -210,7 +214,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

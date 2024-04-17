@@ -1,3 +1,7 @@
+---
+title: GraphicalSVGStatistics | Kotlin SDK
+---
+
 
 # GraphicalSVGStatistics
 

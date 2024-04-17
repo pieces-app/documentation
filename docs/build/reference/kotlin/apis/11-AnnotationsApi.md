@@ -1,3 +1,7 @@
+---
+title: Annotations API | Kotlin SDK
+---
+
 # Annotations API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will create an annotation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val seededAnnotation : SeededAnnotation =  // SeededAnnotation | 
 try {
     val result : Annotation = apiInstance.annotationsCreateNewAnnotation(seededAnnotation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsCreateNewAnnotation")
+    println("4xx response calling Annotations API#annotationsCreateNewAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsCreateNewAnnotation")
+    println("5xx response calling Annotations API#annotationsCreateNewAnnotation")
     e.printStackTrace()
 }
 ```
@@ -68,15 +72,15 @@ this will delete a specific annotation
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 try {
     apiInstance.annotationsDeleteSpecificAnnotation(`annotation`)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsDeleteSpecificAnnotation")
+    println("4xx response calling Annotations API#annotationsDeleteSpecificAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsDeleteSpecificAnnotation")
+    println("5xx response calling Annotations API#annotationsDeleteSpecificAnnotation")
     e.printStackTrace()
 }
 ```
@@ -98,7 +102,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **annotationsSnapshot** {#annotationssnapshot}
 > Annotations annotationsSnapshot(annotationTypeFilter)
@@ -113,16 +117,16 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val annotationTypeFilter : kotlin.String = annotationTypeFilter_example // kotlin.String | This is an AnnotationTypeEnum as a optional filter.
 try {
     val result : Annotations = apiInstance.annotationsSnapshot(annotationTypeFilter)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsSnapshot")
+    println("4xx response calling Annotations API#annotationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsSnapshot")
+    println("5xx response calling Annotations API#annotationsSnapshot")
     e.printStackTrace()
 }
 ```

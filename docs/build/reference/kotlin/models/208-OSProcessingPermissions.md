@@ -1,3 +1,7 @@
+---
+title: OSProcessingPermissions | Kotlin SDK
+---
+
 
 # OSProcessingPermissions
 

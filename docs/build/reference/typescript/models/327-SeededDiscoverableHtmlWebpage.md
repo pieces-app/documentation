@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableHtmlWebpage | TypeScript SDK
+---
+
 
 # SeededDiscoverableHtmlWebpage
 

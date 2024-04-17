@@ -1,3 +1,7 @@
+---
+title: SeededActivity | Dart SDK
+---
+
 # SeededActivity
 
 ## Load the model package

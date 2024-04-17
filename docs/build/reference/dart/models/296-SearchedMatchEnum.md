@@ -1,3 +1,7 @@
+---
+title: SearchedMatchEnum | Dart SDK
+---
+
 # SearchedMatchEnum
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: TrackedKeyboardEvent | Python SDK
+---
+
 # TrackedKeyboardEvent
 
 This is a model that will hold relavent information in relation to a keyboard(including shortcuts) analytics event (usage).

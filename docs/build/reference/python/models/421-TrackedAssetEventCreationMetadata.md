@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventCreationMetadata | Python SDK
+---
+
 # TrackedAssetEventCreationMetadata
 
 Metadata attached to a creation event on an Asset

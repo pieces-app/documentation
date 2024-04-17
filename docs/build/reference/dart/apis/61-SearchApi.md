@@ -1,3 +1,7 @@
+---
+title: Search API | Dart SDK
+---
+
 # Search API
 
 All URIs are relative to *http://localhost:1000*
@@ -50,7 +54,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 
 
@@ -95,7 +99,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 
 
@@ -140,7 +144,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 
 

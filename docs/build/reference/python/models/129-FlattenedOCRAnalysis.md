@@ -1,3 +1,7 @@
+---
+title: FlattenedOCRAnalysis | Python SDK
+---
+
 # FlattenedOCRAnalysis
 
 [DAG Safe] Ocr Analysis that will reference FlattenedFormats.

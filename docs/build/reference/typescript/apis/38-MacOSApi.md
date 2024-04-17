@@ -1,3 +1,7 @@
+---
+title: MacOS API | TypeScript SDK
+---
+
 # MacOS API
 
 All URIs are relative to *http://localhost:1000*

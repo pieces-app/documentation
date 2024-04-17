@@ -1,3 +1,7 @@
+---
+title: Seed | TypeScript SDK
+---
+
 
 # Seed
 

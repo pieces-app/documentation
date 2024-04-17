@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | Python SDK
+---
+
 # GraphicalOCRDescriptiveStatisticsConfidence
 
 

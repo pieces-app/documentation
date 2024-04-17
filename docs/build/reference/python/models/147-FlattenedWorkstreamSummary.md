@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamSummary | Python SDK
+---
+
 # FlattenedWorkstreamSummary
 
 This is a DAG-Safe minimal representation of a workstream summary

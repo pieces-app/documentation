@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamSummary | Python SDK
+---
+
 # ReferencedWorkstreamSummary
 
 this is a referenced minimal version of a WorkstreamSummary typically just our uuid.

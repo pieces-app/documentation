@@ -1,3 +1,7 @@
+---
+title: PersonAccessScopedEnum | Kotlin SDK
+---
+
 
 # PersonAccessScopedEnum
 

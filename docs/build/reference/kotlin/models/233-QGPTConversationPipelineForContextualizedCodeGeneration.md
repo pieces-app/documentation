@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForContextualizedCodeGeneration | Kotlin SDK
+---
+
 
 # QGPTConversationPipelineForContextualizedCodeGeneration
 

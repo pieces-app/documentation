@@ -1,3 +1,7 @@
+---
+title: ReferencedAsset | Dart SDK
+---
+
 # ReferencedAsset
 
 ## Load the model package

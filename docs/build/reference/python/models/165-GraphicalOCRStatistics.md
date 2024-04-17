@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRStatistics | Python SDK
+---
+
 # GraphicalOCRStatistics
 
 

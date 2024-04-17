@@ -1,3 +1,7 @@
+---
+title: TrackedAssetsEventSearchMetadata | Python SDK
+---
+
 # TrackedAssetsEventSearchMetadata
 
 Metadata attached to a search event on an Asset

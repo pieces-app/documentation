@@ -1,3 +1,7 @@
+---
+title: FlattenedFormat | Dart SDK
+---
+
 # FlattenedFormat
 
 ## Load the model package

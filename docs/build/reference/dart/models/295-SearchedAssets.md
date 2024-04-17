@@ -1,3 +1,7 @@
+---
+title: SearchedAssets | Dart SDK
+---
+
 # SearchedAssets
 
 ## Load the model package

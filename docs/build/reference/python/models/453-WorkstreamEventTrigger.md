@@ -1,3 +1,7 @@
+---
+title: WorkstreamEventTrigger | Python SDK
+---
+
 # WorkstreamEventTrigger
 
 This is the specific event that represent the Shadow Activity ie the copy/paste ...xyz

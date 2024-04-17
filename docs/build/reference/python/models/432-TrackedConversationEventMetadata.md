@@ -1,3 +1,7 @@
+---
+title: TrackedConversationEventMetadata | Python SDK
+---
+
 # TrackedConversationEventMetadata
 
 This is the metadata for the the ConversationEvent

@@ -1,3 +1,7 @@
+---
+title: SeededScore | TypeScript SDK
+---
+
 
 # SeededScore
 

@@ -1,3 +1,7 @@
+---
+title: LinkifyMultiple | Dart SDK
+---
+
 # LinkifyMultiple
 
 ## Load the model package

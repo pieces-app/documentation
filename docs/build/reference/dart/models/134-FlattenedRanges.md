@@ -1,3 +1,7 @@
+---
+title: FlattenedRanges | Dart SDK
+---
+
 # FlattenedRanges
 
 ## Load the model package

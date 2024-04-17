@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventCreationMetadataClipboard | Python SDK
+---
+
 # TrackedAssetEventCreationMetadataClipboard
 
 If an asset was created from a clipboard event

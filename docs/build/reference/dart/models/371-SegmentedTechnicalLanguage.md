@@ -1,3 +1,7 @@
+---
+title: SegmentedTechnicalLanguage | Dart SDK
+---
+
 # SegmentedTechnicalLanguage
 
 ## Load the model package

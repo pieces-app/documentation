@@ -1,3 +1,7 @@
+---
+title: Auth0Identity | Dart SDK
+---
+
 # Auth0Identity
 
 ## Load the model package

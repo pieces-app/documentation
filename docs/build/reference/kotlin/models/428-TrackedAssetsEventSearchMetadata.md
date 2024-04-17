@@ -1,3 +1,7 @@
+---
+title: TrackedAssetsEventSearchMetadata | Kotlin SDK
+---
+
 
 # TrackedAssetsEventSearchMetadata
 

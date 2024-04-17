@@ -1,3 +1,7 @@
+---
+title: ClassificationGenericEnum | TypeScript SDK
+---
+
 
 # ClassificationGenericEnum
 

@@ -1,3 +1,7 @@
+---
+title: SeededHint | Kotlin SDK
+---
+
 
 # SeededHint
 

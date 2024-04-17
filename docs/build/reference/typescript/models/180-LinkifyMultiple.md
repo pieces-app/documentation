@@ -1,3 +1,7 @@
+---
+title: LinkifyMultiple | TypeScript SDK
+---
+
 
 # LinkifyMultiple
 

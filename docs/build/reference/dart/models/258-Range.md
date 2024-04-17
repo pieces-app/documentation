@@ -1,3 +1,7 @@
+---
+title: Range | Dart SDK
+---
+
 # Range
 
 ## Load the model package

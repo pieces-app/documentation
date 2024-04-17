@@ -1,3 +1,7 @@
+---
+title: SeededScore | Kotlin SDK
+---
+
 
 # SeededScore
 

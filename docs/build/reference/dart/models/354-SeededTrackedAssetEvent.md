@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAssetEvent | Dart SDK
+---
+
 # SeededTrackedAssetEvent
 
 ## Load the model package

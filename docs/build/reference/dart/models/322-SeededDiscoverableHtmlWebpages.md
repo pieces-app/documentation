@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableHtmlWebpages | Dart SDK
+---
+
 # SeededDiscoverableHtmlWebpages
 
 ## Load the model package

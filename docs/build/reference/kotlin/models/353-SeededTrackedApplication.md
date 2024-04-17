@@ -1,3 +1,7 @@
+---
+title: SeededTrackedApplication | Kotlin SDK
+---
+
 
 # SeededTrackedApplication
 

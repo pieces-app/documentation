@@ -1,3 +1,7 @@
+---
+title: ExportedDatabaseFormat | Python SDK
+---
+
 # ExportedDatabaseFormat
 
 

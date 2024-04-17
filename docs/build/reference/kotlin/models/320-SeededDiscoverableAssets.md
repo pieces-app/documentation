@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableAssets | Kotlin SDK
+---
+
 
 # SeededDiscoverableAssets
 

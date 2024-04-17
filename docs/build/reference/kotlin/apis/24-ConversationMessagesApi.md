@@ -1,3 +1,7 @@
+---
+title: ConversationMessages API | Kotlin SDK
+---
+
 # ConversationMessages API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,17 +26,17 @@ This will create a Message on a specific conversation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessagesApi()
+val apiInstance = ConversationMessages API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededConversationMessage : SeededConversationMessage =  // SeededConversationMessage | 
 try {
     val result : ConversationMessage = apiInstance.messagesCreateSpecificMessage(transferables, seededConversationMessage)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessagesApi#messagesCreateSpecificMessage")
+    println("4xx response calling ConversationMessages API#messagesCreateSpecificMessage")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessagesApi#messagesCreateSpecificMessage")
+    println("5xx response calling ConversationMessages API#messagesCreateSpecificMessage")
     e.printStackTrace()
 }
 ```
@@ -70,15 +74,15 @@ This will delete a specific message.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessagesApi()
+val apiInstance = ConversationMessages API()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 try {
     apiInstance.messagesDeleteSpecificMessage(message)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessagesApi#messagesDeleteSpecificMessage")
+    println("4xx response calling ConversationMessages API#messagesDeleteSpecificMessage")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessagesApi#messagesDeleteSpecificMessage")
+    println("5xx response calling ConversationMessages API#messagesDeleteSpecificMessage")
     e.printStackTrace()
 }
 ```
@@ -100,7 +104,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **messagesSnapshot** {#messagessnapshot}
 > ConversationMessages messagesSnapshot(transferables)
@@ -115,16 +119,16 @@ This will get all the messages.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessagesApi()
+val apiInstance = ConversationMessages API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : ConversationMessages = apiInstance.messagesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessagesApi#messagesSnapshot")
+    println("4xx response calling ConversationMessages API#messagesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessagesApi#messagesSnapshot")
+    println("5xx response calling ConversationMessages API#messagesSnapshot")
     e.printStackTrace()
 }
 ```

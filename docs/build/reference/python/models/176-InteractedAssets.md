@@ -1,3 +1,7 @@
+---
+title: InteractedAssets | Python SDK
+---
+
 # InteractedAssets
 
 A model which contains a list of InteractedAssets with potentially additional properties.

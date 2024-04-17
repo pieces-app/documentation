@@ -1,3 +1,7 @@
+---
+title: ModelTypeEnum | Kotlin SDK
+---
+
 
 # ModelTypeEnum
 

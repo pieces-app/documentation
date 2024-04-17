@@ -1,3 +1,7 @@
+---
+title: MailgunDistribution | Python SDK
+---
+
 # MailgunDistribution
 
 This is a specific Distribution for mailgun specific information.

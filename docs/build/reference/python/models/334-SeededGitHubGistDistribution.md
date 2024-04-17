@@ -1,3 +1,7 @@
+---
+title: SeededGitHubGistDistribution | Python SDK
+---
+
 # SeededGitHubGistDistribution
 
 This is the minimum information needed to distribute a Piece to a Gist.

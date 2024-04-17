@@ -1,3 +1,7 @@
+---
+title: ReferencedModel | TypeScript SDK
+---
+
 
 # ReferencedModel
 

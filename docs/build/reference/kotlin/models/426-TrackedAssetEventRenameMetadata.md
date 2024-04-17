@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventRenameMetadata | Kotlin SDK
+---
+
 
 # TrackedAssetEventRenameMetadata
 

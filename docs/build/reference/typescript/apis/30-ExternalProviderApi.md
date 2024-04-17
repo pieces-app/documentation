@@ -1,3 +1,7 @@
+---
+title: ExternalProvider API | TypeScript SDK
+---
+
 # ExternalProvider API
 
 All URIs are relative to *http://localhost:1000*
@@ -10,7 +14,7 @@ Method | HTTP request | Description
 
 
 ## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
-> CreatedExternalProviderApiKey externalProviderApiKeyCreate()
+> CreatedExternalProvider APIKey externalProvider APIKeyCreate()
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
@@ -23,11 +27,11 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyCreateRequest = {
-    // PrecreatedExternalProviderApiKey (optional)
-    precreatedExternalProviderApiKey: ,
+    // PrecreatedExternalProvider APIKey (optional)
+    precreatedExternalProvider APIKey: ,
 };
 
-apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProviderApiKey) => {
+apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProvider APIKey) => {
     console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -57,7 +61,7 @@ Name | Type | Description  | Notes
 **500** | Internal Server Error |  -  |
 
 ## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
-> DeletedExternalProviderApiKey externalProviderApiKeyDelete()
+> DeletedExternalProvider APIKey externalProvider APIKeyDelete()
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
@@ -70,11 +74,11 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyDeleteRequest = {
-    // PredeletedExternalProviderApiKey (optional)
-    predeletedExternalProviderApiKey: ,
+    // PredeletedExternalProvider APIKey (optional)
+    predeletedExternalProvider APIKey: ,
 };
 
-apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProviderApiKey) => {
+apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProvider APIKey) => {
     console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
@@ -93,7 +97,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -104,7 +108,7 @@ Name | Type | Description  | Notes
 **500** | Internal Server Error |  -  |
 
 ## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
-> UpdatedExternalProviderApiKey externalProviderApiKeyUpdate()
+> UpdatedExternalProvider APIKey externalProvider APIKeyUpdate()
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
@@ -117,11 +121,11 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyUpdateRequest = {
-    // PreupdatedExternalProviderApiKey (optional)
-    preupdatedExternalProviderApiKey: ,
+    // PreupdatedExternalProvider APIKey (optional)
+    preupdatedExternalProvider APIKey: ,
 };
 
-apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProviderApiKey) => {
+apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProvider APIKey) => {
     console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
@@ -140,7 +144,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

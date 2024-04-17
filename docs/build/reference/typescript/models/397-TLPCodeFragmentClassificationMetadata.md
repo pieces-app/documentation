@@ -1,3 +1,7 @@
+---
+title: TLPCodeFragmentClassificationMetadata | TypeScript SDK
+---
+
 
 # TLPCodeFragmentClassificationMetadata
 

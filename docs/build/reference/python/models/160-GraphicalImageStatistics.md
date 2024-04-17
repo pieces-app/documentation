@@ -1,3 +1,7 @@
+---
+title: GraphicalImageStatistics | Python SDK
+---
+
 # GraphicalImageStatistics
 
 

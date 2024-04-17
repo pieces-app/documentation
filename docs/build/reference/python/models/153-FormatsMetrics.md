@@ -1,3 +1,7 @@
+---
+title: FormatsMetrics | Python SDK
+---
+
 # FormatsMetrics
 
 

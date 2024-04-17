@@ -1,3 +1,7 @@
+---
+title: ConversationSummarizeOutput | Dart SDK
+---
+
 # ConversationSummarizeOutput
 
 ## Load the model package

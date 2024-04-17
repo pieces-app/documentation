@@ -1,3 +1,7 @@
+---
+title: TLPMachineLearningProcessingEvent | TypeScript SDK
+---
+
 
 # TLPMachineLearningProcessingEvent
 

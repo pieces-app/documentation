@@ -1,3 +1,7 @@
+---
+title: QGPTStreamInput | Kotlin SDK
+---
+
 
 # QGPTStreamInput
 

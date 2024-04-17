@@ -1,3 +1,7 @@
+---
+title: ExternalProvider | TypeScript SDK
+---
+
 
 # ExternalProvider
 

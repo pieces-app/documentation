@@ -1,3 +1,7 @@
+---
+title: AvailableFormats | TypeScript SDK
+---
+
 
 # AvailableFormats
 

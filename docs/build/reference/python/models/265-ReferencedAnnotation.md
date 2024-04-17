@@ -1,3 +1,7 @@
+---
+title: ReferencedAnnotation | Python SDK
+---
+
 # ReferencedAnnotation
 
 This is the referenced version of a annotation, main used for the uuid.

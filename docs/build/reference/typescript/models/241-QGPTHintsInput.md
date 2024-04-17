@@ -1,3 +1,7 @@
+---
+title: QGPTHintsInput | TypeScript SDK
+---
+
 
 # QGPTHintsInput
 

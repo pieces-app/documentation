@@ -1,3 +1,7 @@
+---
+title: Score | Dart SDK
+---
+
 # Score
 
 ## Load the model package

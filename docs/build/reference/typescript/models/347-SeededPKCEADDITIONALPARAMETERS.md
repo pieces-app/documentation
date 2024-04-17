@@ -1,3 +1,7 @@
+---
+title: SeededPKCEADDITIONALPARAMETERS | TypeScript SDK
+---
+
 
 # SeededPKCEADDITIONALPARAMETERS
 

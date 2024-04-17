@@ -1,3 +1,7 @@
+---
+title: DiscoveredAssets | Kotlin SDK
+---
+
 
 # DiscoveredAssets
 

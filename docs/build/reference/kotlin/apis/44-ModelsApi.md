@@ -1,3 +1,7 @@
+---
+title: Models API | Kotlin SDK
+---
+
 # Models API
 
 All URIs are relative to *http://localhost:1000*
@@ -24,16 +28,16 @@ Creates a machine learning model. By default, all models created through this en
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val seededModel : SeededModel =  // SeededModel | 
 try {
     val result : Model = apiInstance.modelsCreateNewModel(seededModel)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsCreateNewModel")
+    println("4xx response calling Models API#modelsCreateNewModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsCreateNewModel")
+    println("5xx response calling Models API#modelsCreateNewModel")
     e.printStackTrace()
 }
 ```
@@ -70,15 +74,15 @@ Deletes a specific model. It is exclusively available for custom models with the
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     apiInstance.modelsDeleteSpecificModel(model)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsDeleteSpecificModel")
+    println("4xx response calling Models API#modelsDeleteSpecificModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsDeleteSpecificModel")
+    println("5xx response calling Models API#modelsDeleteSpecificModel")
     e.printStackTrace()
 }
 ```
@@ -100,7 +104,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **modelsDeleteSpecificModelCache** {#modelsdeletespecificmodelcache}
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
@@ -115,17 +119,17 @@ Deletes the data associated with a specific model, such as assets or libraries d
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val model : kotlin.String = model_example // kotlin.String | model id
 val modelDeleteCacheInput : ModelDeleteCacheInput =  // ModelDeleteCacheInput | 
 try {
     val result : ModelDeleteCacheOutput = apiInstance.modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsDeleteSpecificModelCache")
+    println("4xx response calling Models API#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsDeleteSpecificModelCache")
+    println("5xx response calling Models API#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 }
 ```
@@ -163,15 +167,15 @@ This will get a snapshot of all of your models.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 try {
     val result : Models = apiInstance.modelsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsSnapshot")
+    println("4xx response calling Models API#modelsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsSnapshot")
+    println("5xx response calling Models API#modelsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -205,14 +209,14 @@ Unloads all available machine learning models that are unloadable.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 try {
     apiInstance.unloadModels()
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#unloadModels")
+    println("4xx response calling Models API#unloadModels")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#unloadModels")
+    println("5xx response calling Models API#unloadModels")
     e.printStackTrace()
 }
 ```
@@ -231,5 +235,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 

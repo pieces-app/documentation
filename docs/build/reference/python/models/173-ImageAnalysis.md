@@ -1,3 +1,7 @@
+---
+title: ImageAnalysis | Python SDK
+---
+
 # ImageAnalysis
 
 This is a model that represents all the information collected during the processing of an image.

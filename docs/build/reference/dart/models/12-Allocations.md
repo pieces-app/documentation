@@ -1,3 +1,7 @@
+---
+title: Allocations | Dart SDK
+---
+
 # Allocations
 
 ## Load the model package

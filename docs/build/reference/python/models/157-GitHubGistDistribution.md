@@ -1,3 +1,7 @@
+---
+title: GitHubGistDistribution | Python SDK
+---
+
 # GitHubGistDistribution
 
 This is a published Github Gist.

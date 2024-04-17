@@ -1,3 +1,7 @@
+---
+title: Relationship API | Kotlin SDK
+---
+
 # Relationship API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,16 +24,16 @@ This will return a single relationship object.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RelationshipApi()
+val apiInstance = Relationship API()
 val relationship : kotlin.String = relationship_example // kotlin.String | this is a specific relationship uuid.
 try {
     val result : Relationship = apiInstance.relationshipsSpecificRelationshipSnapshot(relationship)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RelationshipApi#relationshipsSpecificRelationshipSnapshot")
+    println("4xx response calling Relationship API#relationshipsSpecificRelationshipSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RelationshipApi#relationshipsSpecificRelationshipSnapshot")
+    println("5xx response calling Relationship API#relationshipsSpecificRelationshipSnapshot")
     e.printStackTrace()
 }
 ```

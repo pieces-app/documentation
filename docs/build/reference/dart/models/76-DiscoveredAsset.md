@@ -1,3 +1,7 @@
+---
+title: DiscoveredAsset | Dart SDK
+---
+
 # DiscoveredAsset
 
 ## Load the model package

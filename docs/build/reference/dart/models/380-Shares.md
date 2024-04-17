@@ -1,3 +1,7 @@
+---
+title: Shares | Dart SDK
+---
+
 # Shares
 
 ## Load the model package

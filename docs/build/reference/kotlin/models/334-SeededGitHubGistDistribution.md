@@ -1,3 +1,7 @@
+---
+title: SeededGitHubGistDistribution | Kotlin SDK
+---
+
 
 # SeededGitHubGistDistribution
 

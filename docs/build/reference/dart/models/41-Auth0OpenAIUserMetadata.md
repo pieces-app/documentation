@@ -1,3 +1,7 @@
+---
+title: Auth0OpenAIUserMetadata | Dart SDK
+---
+
 # Auth0OpenAIUserMetadata
 
 ## Load the model package

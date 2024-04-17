@@ -1,3 +1,7 @@
+---
+title: SeededAssetEnrichment | Dart SDK
+---
+
 # SeededAssetEnrichment
 
 ## Load the model package

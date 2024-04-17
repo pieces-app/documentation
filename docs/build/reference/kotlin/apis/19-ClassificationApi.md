@@ -1,3 +1,7 @@
+---
+title: Classification API | Kotlin SDK
+---
+
 # Classification API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,16 +24,16 @@ This endpoint converts on a best effort basis from one generic format to another
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ClassificationApi()
+val apiInstance = Classification API()
 val seededFormat : SeededFormat =  // SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified 
 try {
     val result : SeededFormat = apiInstance.convertGenericClassification(seededFormat)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ClassificationApi#convertGenericClassification")
+    println("4xx response calling Classification API#convertGenericClassification")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ClassificationApi#convertGenericClassification")
+    println("5xx response calling Classification API#convertGenericClassification")
     e.printStackTrace()
 }
 ```

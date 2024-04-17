@@ -1,3 +1,7 @@
+---
+title: ExternalProviderTypeEnum | TypeScript SDK
+---
+
 
 # ExternalProviderTypeEnum
 

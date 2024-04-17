@@ -1,3 +1,7 @@
+---
+title: SeededConnectorConnection | Python SDK
+---
+
 # SeededConnectorConnection
 
 A model that is passed to the context API at bootup

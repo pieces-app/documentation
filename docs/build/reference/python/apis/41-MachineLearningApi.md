@@ -1,3 +1,7 @@
+---
+title: MachineLearning API | Python SDK
+---
+
 # MachineLearning API
 
 All URIs are relative to *http://localhost:1000*
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MachineLearningApi(api_client)
+    api_instance = MachineLearning API(api_client)
     preonboarded_persona_details = pieces_os_client.PreonboardedPersonaDetails() # PreonboardedPersonaDetails |  (optional)
 
     try:
@@ -67,7 +71,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -105,7 +109,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MachineLearningApi(api_client)
+    api_instance = MachineLearning API(api_client)
     classify = True # bool | This will let us know if you want us to classifiy your code, this is default to false. (optional)
     unsegmented_technical_language = pieces_os_client.UnsegmentedTechnicalLanguage() # UnsegmentedTechnicalLanguage |  (optional)
 
@@ -139,7 +143,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

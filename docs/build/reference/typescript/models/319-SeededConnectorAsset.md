@@ -1,3 +1,7 @@
+---
+title: SeededConnectorAsset | TypeScript SDK
+---
+
 
 # SeededConnectorAsset
 

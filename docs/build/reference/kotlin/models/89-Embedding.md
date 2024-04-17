@@ -1,3 +1,7 @@
+---
+title: Embedding | Kotlin SDK
+---
+
 
 # Embedding
 
