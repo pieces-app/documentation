@@ -1,12 +1,16 @@
+---
+title: Hint API | TypeScript SDK
+---
+
 # Hint API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintScoresIncrement**](HintApi#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | \'/hint/\{hint\}/scores/increment\' [POST]
-[**hintSpecificHintSnapshot**](HintApi#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
-[**hintUpdate**](HintApi#hintupdate) | **POST** /hint/update | /hint/update [POST]
+[**hintScoresIncrement**](Hint API#hintscoresincrement) | **POST** /hint/\{hint\}/scores/increment | \'/hint/\{hint\}/scores/increment\' [POST]
+[**hintSpecificHintSnapshot**](Hint API#hintspecifichintsnapshot) | **GET** /hint/\{hint\} | /hint/\{hint\} [POST]
+[**hintUpdate**](Hint API#hintupdate) | **POST** /hint/update | /hint/update [POST]
 
 
 ## **hintScoresIncrement** {#hintscoresincrement}
@@ -20,7 +24,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintApi(configuration)
+const apiInstance = new Pieces.Hint API(configuration)
 
 const body: Pieces.HintScoresIncrementRequest = {
     // string | This is a specific hint uuid
@@ -49,7 +53,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will get a snapshot of a specific hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintApi(configuration)
+const apiInstance = new Pieces.Hint API(configuration)
 
 const body: Pieces.HintSpecificHintSnapshotRequest = {
     // string | This is a specific hint uuid
@@ -95,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -115,7 +119,7 @@ This will update a specific hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintApi(configuration)
+const apiInstance = new Pieces.Hint API(configuration)
 
 const body: Pieces.HintUpdateRequest = {
     // Hint (optional)
@@ -141,7 +145,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableRelatedTags | Kotlin SDK
+---
+
 
 # SeededDiscoverableRelatedTags
 

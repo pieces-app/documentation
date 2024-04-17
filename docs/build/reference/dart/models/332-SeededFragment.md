@@ -1,3 +1,7 @@
+---
+title: SeededFragment | Dart SDK
+---
+
 # SeededFragment
 
 ## Load the model package

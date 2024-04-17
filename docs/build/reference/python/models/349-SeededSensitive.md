@@ -1,3 +1,7 @@
+---
+title: SeededSensitive | Python SDK
+---
+
 # SeededSensitive
 
 This is the seededSensitive, this does not have an id yet as we will add it on the server side.  can optionally pass in our mechanism here, as the default will be manual unless specified.  TODO consider updating these asset,format to referenced Models

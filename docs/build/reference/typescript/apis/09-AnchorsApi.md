@@ -1,13 +1,17 @@
+---
+title: Anchors API | TypeScript SDK
+---
+
 # Anchors API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorDisassociateAsset**](AnchorsApi#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
-[**anchorsCreateNewAnchor**](AnchorsApi#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
-[**anchorsDeleteSpecificAnchor**](AnchorsApi#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
-[**anchorsSnapshot**](AnchorsApi#anchorssnapshot) | **GET** /anchors | /anchors [GET]
+[**anchorDisassociateAsset**](Anchors API#anchordisassociateasset) | **POST** /anchors/\{anchor\}/assets/delete/\{asset\} | /anchors/\{anchor\}/assets/delete/\{asset\} [POST]
+[**anchorsCreateNewAnchor**](Anchors API#anchorscreatenewanchor) | **POST** /anchors/create | /anchors/create [POST]
+[**anchorsDeleteSpecificAnchor**](Anchors API#anchorsdeletespecificanchor) | **POST** /anchors/\{anchor\}/delete | /anchors/\{anchor\}/delete [POST]
+[**anchorsSnapshot**](Anchors API#anchorssnapshot) | **GET** /anchors | /anchors [GET]
 
 
 ## **anchorDisassociateAsset** {#anchordisassociateasset}
@@ -21,7 +25,7 @@ This will update both the asset and the anchor reference, that will remove a anc
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorsApi(configuration)
+const apiInstance = new Pieces.Anchors API(configuration)
 
 const body: Pieces.AnchorDisassociateAssetRequest = {
     // string | This is the specific uuid of an anchor.
@@ -50,7 +54,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -70,7 +74,7 @@ This will create a anchor and attach it to a specific asset(s) This will also en
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorsApi(configuration)
+const apiInstance = new Pieces.Anchors API(configuration)
 
 const body: Pieces.AnchorsCreateNewAnchorRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -99,7 +103,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -119,7 +123,7 @@ This will delete a specific anchor!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorsApi(configuration)
+const apiInstance = new Pieces.Anchors API(configuration)
 
 const body: Pieces.AnchorsDeleteSpecificAnchorRequest = {
     // string | This is the specific uuid of an anchor.
@@ -145,7 +149,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -165,7 +169,7 @@ This will get a snapshot of all your anchors.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorsApi(configuration)
+const apiInstance = new Pieces.Anchors API(configuration)
 
 const body: Pieces.AnchorsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -191,7 +195,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

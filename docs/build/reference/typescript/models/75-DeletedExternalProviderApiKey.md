@@ -1,3 +1,7 @@
+---
+title: DeletedExternalProvider APIKey | TypeScript SDK
+---
+
 
 # DeletedExternalProvider APIKey
 
@@ -13,10 +17,10 @@ Name | Type
 ## Example
 
 ```typescript
-import { DeletedExternalProviderApiKey } from '@pieces.app/pieces-os-client'
+import { DeletedExternalProvider APIKey } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
-const example: DeletedExternalProviderApiKey = {
+const example: DeletedExternalProvider APIKey = {
     "schema": null,
     "metadata": null,
 }
@@ -28,7 +32,7 @@ const exampleJSON: string = JSON.stringify(example)
 console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as DeletedExternalProviderApiKey
+const exampleParsed = JSON.parse(exampleJSON) as DeletedExternalProvider APIKey
 console.log(exampleParsed)
 ```
 

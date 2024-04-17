@@ -1,3 +1,7 @@
+---
+title: RelevantQGPTSeeds | Kotlin SDK
+---
+
 
 # RelevantQGPTSeeds
 

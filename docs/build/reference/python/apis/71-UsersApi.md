@@ -1,3 +1,7 @@
+---
+title: Users API | Python SDK
+---
+
 # Users API
 
 All URIs are relative to *http://localhost:1000*
@@ -50,7 +54,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UsersApi(api_client)
+    api_instance = Users API(api_client)
     o_auth_token = pieces_os_client.OAuthToken() # OAuthToken |  (optional)
 
     try:
@@ -118,7 +122,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UsersApi(api_client)
+    api_instance = Users API(api_client)
     user = 'user_example' # str | 
 
     try:
@@ -186,7 +190,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UsersApi(api_client)
+    api_instance = Users API(api_client)
 
     try:
         # /users [GET]
@@ -250,7 +254,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UsersApi(api_client)
+    api_instance = Users API(api_client)
     user = '497f6eca-6276-4993-bfeb-53cbbbba6f08' # str | The id (uuid) for a specific user.
 
     try:

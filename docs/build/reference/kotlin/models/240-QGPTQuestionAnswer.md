@@ -1,3 +1,7 @@
+---
+title: QGPTQuestionAnswer | Kotlin SDK
+---
+
 
 # QGPTQuestionAnswer
 

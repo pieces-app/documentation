@@ -1,3 +1,7 @@
+---
+title: OSDeviceDependenciesInformation | Dart SDK
+---
+
 # OSDeviceDependenciesInformation
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: GraphicalImageDescriptiveStatistics | Python SDK
+---
+
 # GraphicalImageDescriptiveStatistics
 
 Model for collecting descriptive statistics of images uploaded to Pieces

@@ -1,3 +1,7 @@
+---
+title: PrivacyEnum | Kotlin SDK
+---
+
 
 # PrivacyEnum
 

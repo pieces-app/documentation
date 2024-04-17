@@ -1,12 +1,16 @@
+---
+title: Sensitive API | TypeScript SDK
+---
+
 # Sensitive API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitiveScoresIncrement**](SensitiveApi#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | \'/sensitive/\{sensitive\}/scores/increment\' [POST]
-[**sensitiveSnapshot**](SensitiveApi#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
-[**updateSensitive**](SensitiveApi#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
+[**sensitiveScoresIncrement**](Sensitive API#sensitivescoresincrement) | **POST** /sensitive/\{sensitive\}/scores/increment | \'/sensitive/\{sensitive\}/scores/increment\' [POST]
+[**sensitiveSnapshot**](Sensitive API#sensitivesnapshot) | **GET** /sensitive/\{sensitive\} | /sensitive/\{sensitive\} [GET]
+[**updateSensitive**](Sensitive API#updatesensitive) | **POST** /sensitive/update | /sensitive/update [POST]
 
 
 ## **sensitiveScoresIncrement** {#sensitivescoresincrement}
@@ -20,7 +24,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitiveApi(configuration)
+const apiInstance = new Pieces.Sensitive API(configuration)
 
 const body: Pieces.SensitiveScoresIncrementRequest = {
     // string | This is a uuid that represents a sensitive.
@@ -49,7 +53,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will get a specific sensitive via the sensitive uuid.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitiveApi(configuration)
+const apiInstance = new Pieces.Sensitive API(configuration)
 
 const body: Pieces.SensitiveSnapshotRequest = {
     // string
@@ -95,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -115,7 +119,7 @@ This will update a specific sensitive
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitiveApi(configuration)
+const apiInstance = new Pieces.Sensitive API(configuration)
 
 const body: Pieces.UpdateSensitiveRequest = {
     // Sensitive |  (optional)
@@ -141,7 +145,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

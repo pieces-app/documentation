@@ -1,3 +1,7 @@
+---
+title: Ranges API | Kotlin SDK
+---
+
 # Ranges API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will create a new Range in the database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangesApi()
+val apiInstance = Ranges API()
 val seededRange : SeededRange =  // SeededRange | 
 try {
     val result : Range = apiInstance.rangesCreateNewRange(seededRange)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RangesApi#rangesCreateNewRange")
+    println("4xx response calling Ranges API#rangesCreateNewRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangesApi#rangesCreateNewRange")
+    println("5xx response calling Ranges API#rangesCreateNewRange")
     e.printStackTrace()
 }
 ```
@@ -68,15 +72,15 @@ This will delete a specific range from the database!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangesApi()
+val apiInstance = Ranges API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.rangesDeleteSpecificRange(range)
 } catch (e: ClientException) {
-    println("4xx response calling RangesApi#rangesDeleteSpecificRange")
+    println("4xx response calling Ranges API#rangesDeleteSpecificRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangesApi#rangesDeleteSpecificRange")
+    println("5xx response calling Ranges API#rangesDeleteSpecificRange")
     e.printStackTrace()
 }
 ```
@@ -98,7 +102,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangesSnapshot** {#rangessnapshot}
 > Ranges rangesSnapshot()
@@ -113,15 +117,15 @@ This will get a snapshot of all your ranges.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangesApi()
+val apiInstance = Ranges API()
 try {
     val result : Ranges = apiInstance.rangesSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RangesApi#rangesSnapshot")
+    println("4xx response calling Ranges API#rangesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangesApi#rangesSnapshot")
+    println("5xx response calling Ranges API#rangesSnapshot")
     e.printStackTrace()
 }
 ```

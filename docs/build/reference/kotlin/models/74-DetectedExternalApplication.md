@@ -1,3 +1,7 @@
+---
+title: DetectedExternalApplication | Kotlin SDK
+---
+
 
 # DetectedExternalApplication
 

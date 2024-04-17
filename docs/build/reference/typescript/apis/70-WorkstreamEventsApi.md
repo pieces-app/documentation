@@ -1,12 +1,16 @@
+---
+title: WorkstreamEvents API | TypeScript SDK
+---
+
 # WorkstreamEvents API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workstreamEventsCreateNewWorkstreamEvent**](WorkstreamEventsApi#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create | /workstream_events/create [POST]
-[**workstreamEventsDeleteSpecificWorkstreamEvent**](WorkstreamEventsApi#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete | /workstream_events/\{workstream_event\}/delete [POST]
-[**workstreamEventsSnapshot**](WorkstreamEventsApi#workstreameventssnapshot) | **GET** /workstream_events | /workstream_events [GET]
+[**workstreamEventsCreateNewWorkstreamEvent**](WorkstreamEvents API#workstreameventscreatenewworkstreamevent) | **POST** /workstream_events/create | /workstream_events/create [POST]
+[**workstreamEventsDeleteSpecificWorkstreamEvent**](WorkstreamEvents API#workstreameventsdeletespecificworkstreamevent) | **POST** /workstream_events/\{workstream_event\}/delete | /workstream_events/\{workstream_event\}/delete [POST]
+[**workstreamEventsSnapshot**](WorkstreamEvents API#workstreameventssnapshot) | **GET** /workstream_events | /workstream_events [GET]
 
 
 ## **workstreamEventsCreateNewWorkstreamEvent** {#workstreameventscreatenewworkstreamevent}
@@ -20,7 +24,7 @@ This will create a new WorkstreamEvent in the database.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEventsApi(configuration)
+const apiInstance = new Pieces.WorkstreamEvents API(configuration)
 
 const body: Pieces.WorkstreamEventsCreateNewWorkstreamEventRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will delete a specific workstream_event from the database!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEventsApi(configuration)
+const apiInstance = new Pieces.WorkstreamEvents API(configuration)
 
 const body: Pieces.WorkstreamEventsDeleteSpecificWorkstreamEventRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -95,7 +99,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -115,7 +119,7 @@ This will get a snapshot of all your workstream events.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEventsApi(configuration)
+const apiInstance = new Pieces.WorkstreamEvents API(configuration)
 
 const body: Pieces.WorkstreamEventsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -141,7 +145,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: WorkstreamEvents | Python SDK
+---
+
 # WorkstreamEvents
 
 This is a collection of many Shadow Activity events.

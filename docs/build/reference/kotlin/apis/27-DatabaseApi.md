@@ -1,3 +1,7 @@
+---
+title: Database API | Kotlin SDK
+---
+
 # Database API
 
 All URIs are relative to *http://localhost:1000*
@@ -21,15 +25,15 @@ This is going to export your current database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DatabaseApi()
+val apiInstance = Database API()
 try {
     val result : ExportedDatabase = apiInstance.databaseExport()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DatabaseApi#databaseExport")
+    println("4xx response calling Database API#databaseExport")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DatabaseApi#databaseExport")
+    println("5xx response calling Database API#databaseExport")
     e.printStackTrace()
 }
 ```
@@ -63,15 +67,15 @@ This is going to take in a database, and merge it with the current database. Thi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DatabaseApi()
+val apiInstance = Database API()
 val exportedDatabase : ExportedDatabase =  // ExportedDatabase | 
 try {
     apiInstance.databaseImport(exportedDatabase)
 } catch (e: ClientException) {
-    println("4xx response calling DatabaseApi#databaseImport")
+    println("4xx response calling Database API#databaseImport")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DatabaseApi#databaseImport")
+    println("5xx response calling Database API#databaseImport")
     e.printStackTrace()
 }
 ```
@@ -93,5 +97,5 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 

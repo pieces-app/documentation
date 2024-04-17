@@ -1,3 +1,7 @@
+---
+title: SegmentedTechnicalLanguage | TypeScript SDK
+---
+
 
 # SegmentedTechnicalLanguage
 

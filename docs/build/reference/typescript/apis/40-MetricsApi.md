@@ -1,11 +1,15 @@
+---
+title: Metrics API | TypeScript SDK
+---
+
 # Metrics API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getMetricsFormats**](MetricsApi#getmetricsformats) | **GET** /metrics/formats | /metrics/formats [GET]
-[**metricsFormatsOrdered**](MetricsApi#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
+[**getMetricsFormats**](Metrics API#getmetricsformats) | **GET** /metrics/formats | /metrics/formats [GET]
+[**metricsFormatsOrdered**](Metrics API#metricsformatsordered) | **GET** /metrics/formats/ordered | /metrics/formats/ordered [GET]
 
 
 ## **getMetricsFormats** {#getmetricsformats}
@@ -19,7 +23,7 @@ This is going to get a snapshot of our FormatsMetrics
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.MetricsApi(configuration)
+const apiInstance = new Pieces.Metrics API(configuration)
 
 apiInstance.getMetricsFormats().then((data: FormatsMetrics) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -56,7 +60,7 @@ This will return a list of code formats in desc order from most to least formats
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.MetricsApi(configuration)
+const apiInstance = new Pieces.Metrics API(configuration)
 
 apiInstance.metricsFormatsOrdered().then((data: OrderedMetrics) => {
     console.log('API called successfully. Returned data: ' + data)

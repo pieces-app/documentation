@@ -1,3 +1,7 @@
+---
+title: FlattenedAnnotations | Dart SDK
+---
+
 # FlattenedAnnotations
 
 ## Load the model package

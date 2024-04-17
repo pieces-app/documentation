@@ -1,3 +1,7 @@
+---
+title: ConversationTypeEnum | TypeScript SDK
+---
+
 
 # ConversationTypeEnum
 

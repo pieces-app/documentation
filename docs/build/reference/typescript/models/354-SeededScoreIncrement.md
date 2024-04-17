@@ -1,3 +1,7 @@
+---
+title: SeededScoreIncrement | TypeScript SDK
+---
+
 
 # SeededScoreIncrement
 

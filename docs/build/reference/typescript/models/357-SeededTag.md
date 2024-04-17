@@ -1,3 +1,7 @@
+---
+title: SeededTag | TypeScript SDK
+---
+
 
 # SeededTag
 

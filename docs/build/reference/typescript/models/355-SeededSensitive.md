@@ -1,3 +1,7 @@
+---
+title: SeededSensitive | TypeScript SDK
+---
+
 
 # SeededSensitive
 

@@ -1,11 +1,15 @@
+---
+title: Database API | TypeScript SDK
+---
+
 # Database API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**databaseExport**](DatabaseApi#databaseexport) | **GET** /database/export | Your GET endpoint
-[**databaseImport**](DatabaseApi#databaseimport) | **POST** /database/import | /database/import [POST]
+[**databaseExport**](Database API#databaseexport) | **GET** /database/export | Your GET endpoint
+[**databaseImport**](Database API#databaseimport) | **POST** /database/import | /database/import [POST]
 
 
 ## **databaseExport** {#databaseexport}
@@ -19,7 +23,7 @@ This is going to export your current database.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DatabaseApi(configuration)
+const apiInstance = new Pieces.Database API(configuration)
 
 apiInstance.databaseExport().then((data: ExportedDatabase) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -37,7 +41,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -57,7 +61,7 @@ This is going to take in a database, and merge it with the current database. Thi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DatabaseApi(configuration)
+const apiInstance = new Pieces.Database API(configuration)
 
 const body: Pieces.DatabaseImportRequest = {
     // ExportedDatabase |  (optional)
@@ -83,7 +87,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details

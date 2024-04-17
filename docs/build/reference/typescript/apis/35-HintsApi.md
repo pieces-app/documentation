@@ -1,12 +1,16 @@
+---
+title: Hints API | TypeScript SDK
+---
+
 # Hints API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
-[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
-[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
+[**hintsCreateNewHint**](Hints API#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
+[**hintsDeleteSpecificHint**](Hints API#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
+[**hintsSnapshot**](Hints API#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
 ## **hintsCreateNewHint** {#hintscreatenewhint}
@@ -20,7 +24,7 @@ This will create a hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintsApi(configuration)
+const apiInstance = new Pieces.Hints API(configuration)
 
 const body: Pieces.HintsCreateNewHintRequest = {
     // SeededHint (optional)
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -66,7 +70,7 @@ This will delete a specific hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintsApi(configuration)
+const apiInstance = new Pieces.Hints API(configuration)
 
 const body: Pieces.HintsDeleteSpecificHintRequest = {
     // string | This is a specific hint uuid
@@ -92,7 +96,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -112,7 +116,7 @@ This will get a snapshot of all of the hints.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.HintsApi(configuration)
+const apiInstance = new Pieces.Hints API(configuration)
 
 apiInstance.hintsSnapshot().then((data: Hints) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -130,7 +134,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: SeededAssetTags | Dart SDK
+---
+
 # SeededAssetTags
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededAssetTags | Python SDK
+---
+
 # SeededAssetTags
 
 

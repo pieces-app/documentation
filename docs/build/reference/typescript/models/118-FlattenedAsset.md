@@ -1,3 +1,7 @@
+---
+title: FlattenedAsset | TypeScript SDK
+---
+
 
 # FlattenedAsset
 

@@ -1,3 +1,7 @@
+---
+title: FlattenedSensitives | TypeScript SDK
+---
+
 
 # FlattenedSensitives
 

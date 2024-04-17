@@ -1,18 +1,22 @@
+---
+title: Backup API | TypeScript SDK
+---
+
 # Backup API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**backup**](BackupApi#backup) | **POST** /backup | /backup [POST]
-[**backupAsset**](BackupApi#backupasset) | **POST** /backup/asset | /backup/asset [POST]
-[**backupRestoreSpecificBackup**](BackupApi#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
-[**backupRestoreSpecificBackupStreamed**](BackupApi#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
-[**backupSpecificBackupSnapshot**](BackupApi#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
-[**backupSpecificCreationCancel**](BackupApi#backupspecificcreationcancel) | **POST** /backup/\{backup\}/creation/cancel | /backup/\{backup\}/creation/cancel [POST]
-[**backupSpecificCreationStatus**](BackupApi#backupspecificcreationstatus) | **GET** /backup/\{backup\}/creation/status | /backup/\{backup\}/creation/status [GET]
-[**backupSpecificRestorationCancel**](BackupApi#backupspecificrestorationcancel) | **POST** /backup/\{backup\}/restoration/cancel | /backup/\{backup\}/restoration/cancel [POST]
-[**backupSpecificRestorationStatus**](BackupApi#backupspecificrestorationstatus) | **GET** /backup/\{backup\}/restoration/status | /backup/\{backup\}/restoration/status [GET]
+[**backup**](Backup API#backup) | **POST** /backup | /backup [POST]
+[**backupAsset**](Backup API#backupasset) | **POST** /backup/asset | /backup/asset [POST]
+[**backupRestoreSpecificBackup**](Backup API#backuprestorespecificbackup) | **POST** /backup/\{backup\}/restore | /backup/\{backup\}/restore [POST]
+[**backupRestoreSpecificBackupStreamed**](Backup API#backuprestorespecificbackupstreamed) | **POST** /backup/\{backup\}/restore/streamed | /backup/\{backup\}/restore/streamed [POST]
+[**backupSpecificBackupSnapshot**](Backup API#backupspecificbackupsnapshot) | **GET** /backup/\{backup\} | /backup/\{backup\} [GET]
+[**backupSpecificCreationCancel**](Backup API#backupspecificcreationcancel) | **POST** /backup/\{backup\}/creation/cancel | /backup/\{backup\}/creation/cancel [POST]
+[**backupSpecificCreationStatus**](Backup API#backupspecificcreationstatus) | **GET** /backup/\{backup\}/creation/status | /backup/\{backup\}/creation/status [GET]
+[**backupSpecificRestorationCancel**](Backup API#backupspecificrestorationcancel) | **POST** /backup/\{backup\}/restoration/cancel | /backup/\{backup\}/restoration/cancel [POST]
+[**backupSpecificRestorationStatus**](Backup API#backupspecificrestorationstatus) | **GET** /backup/\{backup\}/restoration/status | /backup/\{backup\}/restoration/status [GET]
 
 
 ## **backup** {#backup}
@@ -26,7 +30,7 @@ Method | HTTP request | Description
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupRequest = {
     // Assets (optional)
@@ -52,7 +56,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -72,7 +76,7 @@ void (empty response body)
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupAssetRequest = {
     // Asset (optional)
@@ -98,7 +102,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -119,7 +123,7 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -148,7 +152,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -170,7 +174,7 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupStreamedRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -199,7 +203,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -221,7 +225,7 @@ This will just get the metadata associated with a specific backup.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupSpecificBackupSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -247,7 +251,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -269,7 +273,7 @@ This is Going to cancel a create backup (streamed) or not streamed that is curre
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupSpecificCreationCancelRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -295,7 +299,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -315,7 +319,7 @@ TODO add a description:
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupSpecificCreationStatusRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -341,7 +345,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -362,7 +366,7 @@ This will cancel a Restoration that is in progress and restore to the original d
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupSpecificRestorationCancelRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -391,7 +395,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -411,7 +415,7 @@ TODO add a description:
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupApi(configuration)
+const apiInstance = new Pieces.Backup API(configuration)
 
 const body: Pieces.BackupSpecificRestorationStatusRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -437,7 +441,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

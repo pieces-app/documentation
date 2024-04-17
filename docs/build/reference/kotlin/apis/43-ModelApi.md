@@ -1,3 +1,7 @@
+---
+title: Model API | Kotlin SDK
+---
+
 # Model API
 
 All URIs are relative to *http://localhost:1000*
@@ -26,16 +30,16 @@ Downloads a specific model to your local machine.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelDownload(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownload")
+    println("4xx response calling Model API#modelSpecificModelDownload")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownload")
+    println("5xx response calling Model API#modelSpecificModelDownload")
     e.printStackTrace()
 }
 ```
@@ -72,16 +76,16 @@ Cancels a specific model download that is currently in progress.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelDownloadCancel(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownloadCancel")
+    println("4xx response calling Model API#modelSpecificModelDownloadCancel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownloadCancel")
+    println("5xx response calling Model API#modelSpecificModelDownloadCancel")
     e.printStackTrace()
 }
 ```
@@ -118,16 +122,16 @@ This is a WebSocket connection that provides real-time updates on the download p
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : ModelDownloadProgress = apiInstance.modelSpecificModelDownloadProgress(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownloadProgress")
+    println("4xx response calling Model API#modelSpecificModelDownloadProgress")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownloadProgress")
+    println("5xx response calling Model API#modelSpecificModelDownloadProgress")
     e.printStackTrace()
 }
 ```
@@ -164,16 +168,16 @@ Loads a previously downloaded model into memory. It differs from downloading, as
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelLoad(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelLoad")
+    println("4xx response calling Model API#modelSpecificModelLoad")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelLoad")
+    println("5xx response calling Model API#modelSpecificModelLoad")
     e.printStackTrace()
 }
 ```
@@ -210,16 +214,16 @@ Unloads a previously loaded model from memory and effectively frees up the RAM c
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelUnload(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelUnload")
+    println("4xx response calling Model API#modelSpecificModelUnload")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelUnload")
+    println("5xx response calling Model API#modelSpecificModelUnload")
     e.printStackTrace()
 }
 ```
@@ -256,16 +260,16 @@ Updates a machine learning model. This functionality is exclusively available fo
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : Model =  // Model | 
 try {
     val result : Model = apiInstance.modelUpdate(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelUpdate")
+    println("4xx response calling Model API#modelUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelUpdate")
+    println("5xx response calling Model API#modelUpdate")
     e.printStackTrace()
 }
 ```
@@ -302,16 +306,16 @@ Retrieves a specific ML model.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelsSpecificModelSnapshot(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelsSpecificModelSnapshot")
+    println("4xx response calling Model API#modelsSpecificModelSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelsSpecificModelSnapshot")
+    println("5xx response calling Model API#modelsSpecificModelSnapshot")
     e.printStackTrace()
 }
 ```

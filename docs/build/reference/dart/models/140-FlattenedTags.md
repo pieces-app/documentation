@@ -1,3 +1,7 @@
+---
+title: FlattenedTags | Dart SDK
+---
+
 # FlattenedTags
 
 ## Load the model package

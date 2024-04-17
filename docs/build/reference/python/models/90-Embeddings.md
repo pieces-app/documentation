@@ -1,3 +1,7 @@
+---
+title: Embeddings | Python SDK
+---
+
 # Embeddings
 
 

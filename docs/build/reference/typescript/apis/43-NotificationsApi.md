@@ -1,10 +1,14 @@
+---
+title: Notifications API | TypeScript SDK
+---
+
 # Notifications API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sendLocalNotification**](NotificationsApi#sendlocalnotification) | **POST** /notifications/local/send | Send notification
+[**sendLocalNotification**](Notifications API#sendlocalnotification) | **POST** /notifications/local/send | Send notification
 
 
 ## **sendLocalNotification** {#sendlocalnotification}
@@ -18,7 +22,7 @@ Retrieves a snapshot of all available models.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.NotificationsApi(configuration)
+const apiInstance = new Pieces.Notifications API(configuration)
 
 const body: Pieces.SendLocalNotificationRequest = {
     // Notification (optional)

@@ -1,3 +1,7 @@
+---
+title: NodeTypeEnum | Kotlin SDK
+---
+
 
 # NodeTypeEnum
 

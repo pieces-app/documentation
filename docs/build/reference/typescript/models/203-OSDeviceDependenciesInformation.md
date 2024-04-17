@@ -1,3 +1,7 @@
+---
+title: OSDeviceDependenciesInformation | TypeScript SDK
+---
+
 
 # OSDeviceDependenciesInformation
 

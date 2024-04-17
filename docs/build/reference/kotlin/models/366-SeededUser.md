@@ -1,3 +1,7 @@
+---
+title: SeededUser | Kotlin SDK
+---
+
 
 # SeededUser
 

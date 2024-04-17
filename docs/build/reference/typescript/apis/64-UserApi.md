@@ -1,18 +1,22 @@
+---
+title: User API | TypeScript SDK
+---
+
 # User API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clearUser**](UserApi#clearuser) | **POST** /user/clear | /user/clear
-[**refreshUser**](UserApi#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
-[**selectUser**](UserApi#selectuser) | **POST** /user/select | /user/select [POST]
-[**streamUser**](UserApi#streamuser) | **GET** /user/stream | /user/stream [WS]
-[**updateUser**](UserApi#updateuser) | **POST** /user/update | /user/update [POST]
-[**userBetaStatus**](UserApi#userbetastatus) | **POST** /user/beta/status | /user/beta/status [POST]
-[**userProviders**](UserApi#userproviders) | **GET** /user/providers | Your GET endpoint
-[**userSnapshot**](UserApi#usersnapshot) | **GET** /user | /user [GET]
-[**userUpdateVanity**](UserApi#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
+[**clearUser**](User API#clearuser) | **POST** /user/clear | /user/clear
+[**refreshUser**](User API#refreshuser) | **GET** /user/refresh | /user/refresh [GET]
+[**selectUser**](User API#selectuser) | **POST** /user/select | /user/select [POST]
+[**streamUser**](User API#streamuser) | **GET** /user/stream | /user/stream [WS]
+[**updateUser**](User API#updateuser) | **POST** /user/update | /user/update [POST]
+[**userBetaStatus**](User API#userbetastatus) | **POST** /user/beta/status | /user/beta/status [POST]
+[**userProviders**](User API#userproviders) | **GET** /user/providers | Your GET endpoint
+[**userSnapshot**](User API#usersnapshot) | **GET** /user | /user [GET]
+[**userUpdateVanity**](User API#userupdatevanity) | **POST** /user/update/vanity | /user/update/vanity [POST]
 
 
 ## **clearUser** {#clearuser}
@@ -26,7 +30,7 @@ An endpoint to clear the current user.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 apiInstance.clearUser().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -63,7 +67,7 @@ This will refresh a user.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 apiInstance.refreshUser().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -81,7 +85,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -101,7 +105,7 @@ This will select the current user.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 const body: Pieces.SelectUserRequest = {
     // Auth0User |  (optional)
@@ -146,7 +150,7 @@ Provides a WebSocket connection that streams user data.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 apiInstance.streamUser().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -183,7 +187,7 @@ This will update a specific user in the database.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 const body: Pieces.UpdateUserRequest = {
     // UserProfile |  (optional)
@@ -228,7 +232,7 @@ This will be an endpoint to give access or remove access immediately from a give
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 const body: Pieces.UserBetaStatusRequest = {
     // UserBetaStatus (optional)
@@ -254,7 +258,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -275,7 +279,7 @@ This will retrieve all the users Providers that are connected to this account.  
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 apiInstance.userProviders().then((data: ReturnedUserProfile) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -293,7 +297,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -314,7 +318,7 @@ This will return a snapshot of the current user. This will return our ReturnUser
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 apiInstance.userSnapshot().then((data: ReturnedUserProfile) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -351,7 +355,7 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \"m
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UserApi(configuration)
+const apiInstance = new Pieces.User API(configuration)
 
 const body: Pieces.UserUpdateVanityRequest = {
     // UserProfile | This will take an update userProfile, with the updated vanity name! (optional)
@@ -377,7 +381,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

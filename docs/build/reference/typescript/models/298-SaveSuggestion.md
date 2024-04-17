@@ -1,3 +1,7 @@
+---
+title: SaveSuggestion | TypeScript SDK
+---
+
 
 # SaveSuggestion
 

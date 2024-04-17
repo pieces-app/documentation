@@ -1,3 +1,7 @@
+---
+title: TrackedSessionEventIdentifierDescriptionPairs | Python SDK
+---
+
 # TrackedSessionEventIdentifierDescriptionPairs
 
 These are all of the available event types that are permitted in an object pair notation.

@@ -1,3 +1,7 @@
+---
+title: InteractedAssets | TypeScript SDK
+---
+
 
 # InteractedAssets
 

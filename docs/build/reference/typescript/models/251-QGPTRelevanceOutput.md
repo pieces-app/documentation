@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceOutput | TypeScript SDK
+---
+
 
 # QGPTRelevanceOutput
 

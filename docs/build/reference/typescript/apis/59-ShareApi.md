@@ -1,12 +1,16 @@
+---
+title: Share API | TypeScript SDK
+---
+
 # Share API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**shareScoresIncrement**](ShareApi#sharescoresincrement) | **POST** /share/\{share\}/scores/increment | \'/share/\{share\}/scores/increment\' [POST]
-[**shareSnapshot**](ShareApi#sharesnapshot) | **GET** /share/\{share\} | /share/\{share\}
-[**shareUpdate**](ShareApi#shareupdate) | **POST** /share/update | /share/update [POST]
+[**shareScoresIncrement**](Share API#sharescoresincrement) | **POST** /share/\{share\}/scores/increment | \'/share/\{share\}/scores/increment\' [POST]
+[**shareSnapshot**](Share API#sharesnapshot) | **GET** /share/\{share\} | /share/\{share\}
+[**shareUpdate**](Share API#shareupdate) | **POST** /share/update | /share/update [POST]
 
 
 ## **shareScoresIncrement** {#sharescoresincrement}
@@ -20,7 +24,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ShareApi(configuration)
+const apiInstance = new Pieces.Share API(configuration)
 
 const body: Pieces.ShareScoresIncrementRequest = {
     // string | Share id
@@ -49,7 +53,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ Get the snapshot of a specific share.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ShareApi(configuration)
+const apiInstance = new Pieces.Share API(configuration)
 
 const body: Pieces.ShareSnapshotRequest = {
     // string | Share id
@@ -117,7 +121,7 @@ This endpoint will accept a Share that the user wants to update, and will return
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ShareApi(configuration)
+const apiInstance = new Pieces.Share API(configuration)
 
 const body: Pieces.ShareUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

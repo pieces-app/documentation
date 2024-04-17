@@ -1,3 +1,7 @@
+---
+title: AllocationCloudUrls | TypeScript SDK
+---
+
 
 # AllocationCloudUrls
 

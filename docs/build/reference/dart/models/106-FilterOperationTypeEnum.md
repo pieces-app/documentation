@@ -1,3 +1,7 @@
+---
+title: FilterOperationTypeEnum | Dart SDK
+---
+
 # FilterOperationTypeEnum
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: QGPTConversation | Dart SDK
+---
+
 # QGPTConversation
 
 ## Load the model package

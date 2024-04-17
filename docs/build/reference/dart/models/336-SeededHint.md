@@ -1,3 +1,7 @@
+---
+title: SeededHint | Dart SDK
+---
+
 # SeededHint
 
 ## Load the model package

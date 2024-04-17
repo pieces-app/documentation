@@ -1,3 +1,7 @@
+---
+title: WorkstreamEvents API | Kotlin SDK
+---
+
 # WorkstreamEvents API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,17 +26,17 @@ This will create a new WorkstreamEvent in the database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventsApi()
+val apiInstance = WorkstreamEvents API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededWorkstreamEvent : SeededWorkstreamEvent =  // SeededWorkstreamEvent | 
 try {
     val result : WorkstreamEvent = apiInstance.workstreamEventsCreateNewWorkstreamEvent(transferables, seededWorkstreamEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventsApi#workstreamEventsCreateNewWorkstreamEvent")
+    println("4xx response calling WorkstreamEvents API#workstreamEventsCreateNewWorkstreamEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventsApi#workstreamEventsCreateNewWorkstreamEvent")
+    println("5xx response calling WorkstreamEvents API#workstreamEventsCreateNewWorkstreamEvent")
     e.printStackTrace()
 }
 ```
@@ -70,15 +74,15 @@ This will delete a specific workstream_event from the database!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventsApi()
+val apiInstance = WorkstreamEvents API()
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 try {
     apiInstance.workstreamEventsDeleteSpecificWorkstreamEvent(workstreamEvent)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventsApi#workstreamEventsDeleteSpecificWorkstreamEvent")
+    println("4xx response calling WorkstreamEvents API#workstreamEventsDeleteSpecificWorkstreamEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventsApi#workstreamEventsDeleteSpecificWorkstreamEvent")
+    println("5xx response calling WorkstreamEvents API#workstreamEventsDeleteSpecificWorkstreamEvent")
     e.printStackTrace()
 }
 ```
@@ -100,7 +104,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **workstreamEventsSnapshot** {#workstreameventssnapshot}
 > WorkstreamEvents workstreamEventsSnapshot(transferables)
@@ -115,16 +119,16 @@ This will get a snapshot of all your workstream events.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamEventsApi()
+val apiInstance = WorkstreamEvents API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : WorkstreamEvents = apiInstance.workstreamEventsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamEventsApi#workstreamEventsSnapshot")
+    println("4xx response calling WorkstreamEvents API#workstreamEventsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamEventsApi#workstreamEventsSnapshot")
+    println("5xx response calling WorkstreamEvents API#workstreamEventsSnapshot")
     e.printStackTrace()
 }
 ```

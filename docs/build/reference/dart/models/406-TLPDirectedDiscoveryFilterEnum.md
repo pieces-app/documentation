@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilterEnum | Dart SDK
+---
+
 # TLPDirectedDiscoveryFilterEnum
 
 ## Load the model package

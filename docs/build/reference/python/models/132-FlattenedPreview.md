@@ -1,3 +1,7 @@
+---
+title: FlattenedPreview | Python SDK
+---
+
 # FlattenedPreview
 
 These are the references of the formats **Only UUIDS**

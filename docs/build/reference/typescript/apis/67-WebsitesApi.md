@@ -1,13 +1,17 @@
+---
+title: Websites API | TypeScript SDK
+---
+
 # Websites API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**websitesCreateNewWebsite**](WebsitesApi#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
-[**websitesDeleteSpecificWebsite**](WebsitesApi#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
-[**websitesExists**](WebsitesApi#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
-[**websitesSnapshot**](WebsitesApi#websitessnapshot) | **GET** /websites | /websites [GET]
+[**websitesCreateNewWebsite**](Websites API#websitescreatenewwebsite) | **POST** /websites/create | /websites/create [POST]
+[**websitesDeleteSpecificWebsite**](Websites API#websitesdeletespecificwebsite) | **POST** /websites/\{website\}/delete | /websites/\{website\}/delete [POST]
+[**websitesExists**](Websites API#websitesexists) | **POST** /websites/exists | /websites/exists [POST]
+[**websitesSnapshot**](Websites API#websitessnapshot) | **GET** /websites | /websites [GET]
 
 
 ## **websitesCreateNewWebsite** {#websitescreatenewwebsite}
@@ -21,7 +25,7 @@ This will create a website and attach it to a specific asset.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsitesApi(configuration)
+const apiInstance = new Pieces.Websites API(configuration)
 
 const body: Pieces.WebsitesCreateNewWebsiteRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -50,7 +54,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -70,7 +74,7 @@ This will delete a specific website!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsitesApi(configuration)
+const apiInstance = new Pieces.Websites API(configuration)
 
 const body: Pieces.WebsitesDeleteSpecificWebsiteRequest = {
     // string | website id
@@ -96,7 +100,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -116,7 +120,7 @@ This will check all of the websites in our database to see if this specific prov
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsitesApi(configuration)
+const apiInstance = new Pieces.Websites API(configuration)
 
 const body: Pieces.WebsitesExistsRequest = {
     // ExistentMetadata (optional)
@@ -142,7 +146,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -162,7 +166,7 @@ This will get a snapshot of all your websites.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsitesApi(configuration)
+const apiInstance = new Pieces.Websites API(configuration)
 
 const body: Pieces.WebsitesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -188,7 +192,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

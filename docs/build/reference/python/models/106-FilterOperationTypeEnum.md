@@ -1,3 +1,7 @@
+---
+title: FilterOperationTypeEnum | Python SDK
+---
+
 # FilterOperationTypeEnum
 
 

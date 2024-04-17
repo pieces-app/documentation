@@ -1,3 +1,7 @@
+---
+title: FlattenedConversations | Kotlin SDK
+---
+
 
 # FlattenedConversations
 

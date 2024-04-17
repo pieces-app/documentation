@@ -1,3 +1,7 @@
+---
+title: SeededShare | Dart SDK
+---
+
 # SeededShare
 
 ## Load the model package

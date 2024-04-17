@@ -1,3 +1,7 @@
+---
+title: Persons | Python SDK
+---
+
 # Persons
 
 This is the plural of Person. will have top level meta about the person including an iterable of all the person.

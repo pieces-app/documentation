@@ -1,12 +1,16 @@
+---
+title: Ranges API | TypeScript SDK
+---
+
 # Ranges API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**rangesCreateNewRange**](RangesApi#rangescreatenewrange) | **POST** /ranges/create | /ranges/create [POST]
-[**rangesDeleteSpecificRange**](RangesApi#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete | /ranges/\{range\}/delete [POST]
-[**rangesSnapshot**](RangesApi#rangessnapshot) | **GET** /ranges | /ranges [GET]
+[**rangesCreateNewRange**](Ranges API#rangescreatenewrange) | **POST** /ranges/create | /ranges/create [POST]
+[**rangesDeleteSpecificRange**](Ranges API#rangesdeletespecificrange) | **POST** /ranges/\{range\}/delete | /ranges/\{range\}/delete [POST]
+[**rangesSnapshot**](Ranges API#rangessnapshot) | **GET** /ranges | /ranges [GET]
 
 
 ## **rangesCreateNewRange** {#rangescreatenewrange}
@@ -20,7 +24,7 @@ This will create a new Range in the database.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangesApi(configuration)
+const apiInstance = new Pieces.Ranges API(configuration)
 
 const body: Pieces.RangesCreateNewRangeRequest = {
     // SeededRange (optional)
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -66,7 +70,7 @@ This will delete a specific range from the database!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangesApi(configuration)
+const apiInstance = new Pieces.Ranges API(configuration)
 
 const body: Pieces.RangesDeleteSpecificRangeRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -92,7 +96,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -112,7 +116,7 @@ This will get a snapshot of all your ranges.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangesApi(configuration)
+const apiInstance = new Pieces.Ranges API(configuration)
 
 apiInstance.rangesSnapshot().then((data: Ranges) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -130,7 +134,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

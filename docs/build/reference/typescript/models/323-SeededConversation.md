@@ -1,3 +1,7 @@
+---
+title: SeededConversation | TypeScript SDK
+---
+
 
 # SeededConversation
 

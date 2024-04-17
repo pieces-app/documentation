@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchema | Dart SDK
+---
+
 # EmbeddedModelSchema
 
 ## Load the model package

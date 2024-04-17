@@ -1,3 +1,7 @@
+---
+title: SensitiveMetadata | Python SDK
+---
+
 # SensitiveMetadata
 
 This is optional metatdata attached to a sensitive piece of data.

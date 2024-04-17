@@ -1,3 +1,7 @@
+---
+title: TrackedApplicationUpdate | Python SDK
+---
+
 # TrackedApplicationUpdate
 
 This is a model used to track when an Application is Updated
@@ -7,8 +11,8 @@ This is a model used to track when an Application is Updated
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-**current** | [**TrackedApplication**](TrackedApplication) |  | 
-**previous** | [**TrackedApplication**](TrackedApplication) |  | [optional] 
+**current** | [**Application**](Application) |  | 
+**previous** | [**Application**](Application) |  | [optional] 
 **user** | [**TrackedUserProfile**](TrackedUserProfile) |  | [optional] 
 
 ## Example

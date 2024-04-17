@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessageRoleEnum | Kotlin SDK
+---
+
 
 # QGPTConversationMessageRoleEnum
 

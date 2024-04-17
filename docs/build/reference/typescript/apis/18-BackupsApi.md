@@ -1,13 +1,17 @@
+---
+title: Backups API | TypeScript SDK
+---
+
 # Backups API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**backupsCreateNewBackup**](BackupsApi#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
-[**backupsCreateNewBackupStreamed**](BackupsApi#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
-[**backupsDeleteSpecificBackup**](BackupsApi#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
-[**backupsSnapshot**](BackupsApi#backupssnapshot) | **GET** /backups | /backups [GET]
+[**backupsCreateNewBackup**](Backups API#backupscreatenewbackup) | **POST** /backups/create | /backups/create [POST]
+[**backupsCreateNewBackupStreamed**](Backups API#backupscreatenewbackupstreamed) | **POST** /backups/create/streamed | /backups/create/streamed [POST]
+[**backupsDeleteSpecificBackup**](Backups API#backupsdeletespecificbackup) | **POST** /backups/\{backup\}/delete | /backups/\{backup\}/delete [POST]
+[**backupsSnapshot**](Backups API#backupssnapshot) | **GET** /backups | /backups [GET]
 
 
 ## **backupsCreateNewBackup** {#backupscreatenewbackup}
@@ -21,7 +25,7 @@ This take a local database and ensure that it is backed up to the cloud.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupsApi(configuration)
+const apiInstance = new Pieces.Backups API(configuration)
 
 const body: Pieces.BackupsCreateNewBackupRequest = {
     // SeededBackup (optional)
@@ -47,7 +51,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupsApi(configuration)
+const apiInstance = new Pieces.Backups API(configuration)
 
 const body: Pieces.BackupsCreateNewBackupStreamedRequest = {
     // SeededBackup (optional)
@@ -95,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -117,7 +121,7 @@ This will delete a specific backup from the cloud.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupsApi(configuration)
+const apiInstance = new Pieces.Backups API(configuration)
 
 const body: Pieces.BackupsDeleteSpecificBackupRequest = {
     // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -146,7 +150,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -168,7 +172,7 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.BackupsApi(configuration)
+const apiInstance = new Pieces.Backups API(configuration)
 
 apiInstance.backupsSnapshot().then((data: Backups) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -186,7 +190,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

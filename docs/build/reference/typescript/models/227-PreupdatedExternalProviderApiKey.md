@@ -1,3 +1,7 @@
+---
+title: PreupdatedExternalProvider APIKey | TypeScript SDK
+---
+
 
 # PreupdatedExternalProvider APIKey
 
@@ -14,10 +18,10 @@ Name | Type
 ## Example
 
 ```typescript
-import { PreupdatedExternalProviderApiKey } from '@pieces.app/pieces-os-client'
+import { PreupdatedExternalProvider APIKey } from '@pieces.app/pieces-os-client'
 
 // TODO: Update the object below with actual values
-const example: PreupdatedExternalProviderApiKey = {
+const example: PreupdatedExternalProvider APIKey = {
     "schema": null,
     "user": null,
     "openAI": null,
@@ -30,7 +34,7 @@ const exampleJSON: string = JSON.stringify(example)
 console.log(exampleJSON)
 
 // Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as PreupdatedExternalProviderApiKey
+const exampleParsed = JSON.parse(exampleJSON) as PreupdatedExternalProvider APIKey
 console.log(exampleParsed)
 ```
 

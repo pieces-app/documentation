@@ -1,16 +1,20 @@
+---
+title: Model API | TypeScript SDK
+---
+
 # Model API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**modelSpecificModelDownload**](ModelApi#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
-[**modelSpecificModelDownloadCancel**](ModelApi#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
-[**modelSpecificModelDownloadProgress**](ModelApi#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
-[**modelSpecificModelLoad**](ModelApi#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
-[**modelSpecificModelUnload**](ModelApi#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
-[**modelUpdate**](ModelApi#modelupdate) | **POST** /model/update | /model/update [POST]
-[**modelsSpecificModelSnapshot**](ModelApi#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
+[**modelSpecificModelDownload**](Model API#modelspecificmodeldownload) | **POST** /model/\{model\}/download | /model/\{model\}/download [POST]
+[**modelSpecificModelDownloadCancel**](Model API#modelspecificmodeldownloadcancel) | **POST** /model/\{model\}/download/cancel | /model/\{model\}/download/cancel [POST]
+[**modelSpecificModelDownloadProgress**](Model API#modelspecificmodeldownloadprogress) | **GET** /model/\{model\}/download/progress | /model/\{model\}/download/progress [WS]
+[**modelSpecificModelLoad**](Model API#modelspecificmodelload) | **POST** /model/\{model\}/load | /model/\{model\}/load [POST]
+[**modelSpecificModelUnload**](Model API#modelspecificmodelunload) | **POST** /model/\{model\}/unload | /model/\{model\}/unload [POST]
+[**modelUpdate**](Model API#modelupdate) | **POST** /model/update | /model/update [POST]
+[**modelsSpecificModelSnapshot**](Model API#modelsspecificmodelsnapshot) | **GET** /model/\{model\} | /model/\{model\} [GET]
 
 
 ## **modelSpecificModelDownload** {#modelspecificmodeldownload}
@@ -24,7 +28,7 @@ Downloads a specific model to your local machine.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadRequest = {
     // string | model id
@@ -50,7 +54,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -70,7 +74,7 @@ Cancels a specific model download that is currently in progress.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadCancelRequest = {
     // string | model id
@@ -96,7 +100,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -116,7 +120,7 @@ This is a WebSocket connection that provides real-time updates on the download p
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelSpecificModelDownloadProgressRequest = {
     // string | model id
@@ -142,7 +146,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -162,7 +166,7 @@ Loads a previously downloaded model into memory. It differs from downloading, as
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelSpecificModelLoadRequest = {
     // string | model id
@@ -188,7 +192,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -208,7 +212,7 @@ Unloads a previously loaded model from memory and effectively frees up the RAM c
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelSpecificModelUnloadRequest = {
     // string | model id
@@ -234,7 +238,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -254,7 +258,7 @@ Updates a machine learning model. This functionality is exclusively available fo
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelUpdateRequest = {
     // Model (optional)
@@ -280,7 +284,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -300,7 +304,7 @@ Retrieves a specific ML model.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ModelApi(configuration)
+const apiInstance = new Pieces.Model API(configuration)
 
 const body: Pieces.ModelsSpecificModelSnapshotRequest = {
     // string | model id
@@ -326,7 +330,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

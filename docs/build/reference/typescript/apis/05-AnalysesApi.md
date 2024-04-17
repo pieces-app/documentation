@@ -1,10 +1,14 @@
+---
+title: Analyses API | TypeScript SDK
+---
+
 # Analyses API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**analysesSnapshot**](AnalysesApi#analysessnapshot) | **GET** /analyses | Your GET endpoint
+[**analysesSnapshot**](Analyses API#analysessnapshot) | **GET** /analyses | Your GET endpoint
 
 
 ## **analysesSnapshot** {#analysessnapshot}
@@ -18,7 +22,7 @@ This will get a snapshot of all of your analyses, that are all attached to forma
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnalysesApi(configuration)
+const apiInstance = new Pieces.Analyses API(configuration)
 
 const body: Pieces.AnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -44,7 +48,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

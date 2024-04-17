@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableHtmlWebpage | Python SDK
+---
+
 # SeededDiscoverableHtmlWebpage
 
 

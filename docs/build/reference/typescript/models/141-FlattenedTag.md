@@ -1,3 +1,7 @@
+---
+title: FlattenedTag | TypeScript SDK
+---
+
 
 # FlattenedTag
 

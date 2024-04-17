@@ -1,3 +1,7 @@
+---
+title: BackupStatus | TypeScript SDK
+---
+
 
 # BackupStatus
 

@@ -1,3 +1,7 @@
+---
+title: SeededAnchorPoint | Kotlin SDK
+---
+
 
 # SeededAnchorPoint
 

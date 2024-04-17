@@ -1,3 +1,7 @@
+---
+title: RelevantQGPTSeed | TypeScript SDK
+---
+
 
 # RelevantQGPTSeed
 

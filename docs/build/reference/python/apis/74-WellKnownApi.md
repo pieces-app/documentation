@@ -1,3 +1,7 @@
+---
+title: WellKnown API | Python SDK
+---
+
 # WellKnown API
 
 All URIs are relative to *http://localhost:1000*
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WellKnownApi(api_client)
+    api_instance = WellKnown API(api_client)
 
     try:
         # /.well-known/health [GET]
@@ -61,7 +65,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -96,7 +100,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WellKnownApi(api_client)
+    api_instance = WellKnown API(api_client)
 
     try:
         # /.well-known/version [Get]
@@ -124,7 +128,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 

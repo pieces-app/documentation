@@ -1,3 +1,7 @@
+---
+title: PersonType | Kotlin SDK
+---
+
 
 # PersonType
 

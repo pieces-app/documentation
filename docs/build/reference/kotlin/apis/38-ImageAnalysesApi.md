@@ -1,3 +1,7 @@
+---
+title: ImageAnalyses API | Kotlin SDK
+---
+
 # ImageAnalyses API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,16 +24,16 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ImageAnalysesApi()
+val apiInstance = ImageAnalyses API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : ImageAnalyses = apiInstance.imageAnalysesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ImageAnalysesApi#imageAnalysesSnapshot")
+    println("4xx response calling ImageAnalyses API#imageAnalysesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ImageAnalysesApi#imageAnalysesSnapshot")
+    println("5xx response calling ImageAnalyses API#imageAnalysesSnapshot")
     e.printStackTrace()
 }
 ```

@@ -1,10 +1,14 @@
+---
+title: OCRAnalyses API | TypeScript SDK
+---
+
 # OCRAnalyses API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ocrAnalysesSnapshot**](OCRAnalysesApi#ocranalysessnapshot) | **GET** /ocr_analyses | Your GET endpoint
+[**ocrAnalysesSnapshot**](OCRAnalyses API#ocranalysessnapshot) | **GET** /ocr_analyses | Your GET endpoint
 
 
 ## **ocrAnalysesSnapshot** {#ocranalysessnapshot}
@@ -18,7 +22,7 @@ This will get a snapshot of all of your ocr analyses, an ocr analysis is attache
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OCRAnalysesApi(configuration)
+const apiInstance = new Pieces.OCRAnalyses API(configuration)
 
 const body: Pieces.OcrAnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -44,7 +48,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

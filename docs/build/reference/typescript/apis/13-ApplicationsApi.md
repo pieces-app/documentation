@@ -1,21 +1,25 @@
+---
+title: Applications API | TypeScript SDK
+---
+
 # Applications API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applicationsExternalRelated**](ApplicationsApi#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
-[**applicationsExternalSnapshot**](ApplicationsApi#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
-[**applicationsRegister - (Deprecated)**](ApplicationsApi#applicationsregister) | **POST** /applications/register | /applications/register [POST]
-[**applicationsSessionClose - (Deprecated)**](ApplicationsApi#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
-[**applicationsSessionOpen - (Deprecated)**](ApplicationsApi#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
-[**applicationsSessionSnapshot - (Deprecated)**](ApplicationsApi#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
-[**applicationsSnapshot**](ApplicationsApi#applicationssnapshot) | **GET** /applications | /applications [GET]
-[**applicationsSpecificApplicationSnapshot**](ApplicationsApi#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
-[**applicationsUsageEngagementInteraction - (Deprecated)**](ApplicationsApi#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
-[**applicationsUsageEngagementKeyboard - (Deprecated)**](ApplicationsApi#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
-[**applicationsUsageInstallation - (Deprecated)**](ApplicationsApi#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
-[**postApplicationsUsageUpdated - (Deprecated)**](ApplicationsApi#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
+[**applicationsExternalRelated**](Applications API#applicationsexternalrelated) | **GET** /applications/external/related | /applications/external/related [GET]
+[**applicationsExternalSnapshot**](Applications API#applicationsexternalsnapshot) | **GET** /applications/external | /applications/external [GET]
+[**applicationsRegister - (Deprecated)**](Applications API#applicationsregister) | **POST** /applications/register | /applications/register [POST]
+[**applicationsSessionClose - (Deprecated)**](Applications API#applicationssessionclose) | **POST** /applications/session/close | /applications/session/close [POST]
+[**applicationsSessionOpen - (Deprecated)**](Applications API#applicationssessionopen) | **POST** /applications/session/open | /applications/session/open [POST]
+[**applicationsSessionSnapshot - (Deprecated)**](Applications API#applicationssessionsnapshot) | **GET** /applications/sessions/\{session\} | /applications/sessions/\{session\} [GET]
+[**applicationsSnapshot**](Applications API#applicationssnapshot) | **GET** /applications | /applications [GET]
+[**applicationsSpecificApplicationSnapshot**](Applications API#applicationsspecificapplicationsnapshot) | **GET** /applications/\{application\} | /applications/\{application\} [GET]
+[**applicationsUsageEngagementInteraction - (Deprecated)**](Applications API#applicationsusageengagementinteraction) | **POST** /applications/usage/engagement/interaction | /applications/usage/engagement/interaction [POST] Scoped to Apps
+[**applicationsUsageEngagementKeyboard - (Deprecated)**](Applications API#applicationsusageengagementkeyboard) | **POST** /applications/usage/engagement/keyboard | /applications/usage/engagement/keyboard [POST] Scoped to Apps
+[**applicationsUsageInstallation - (Deprecated)**](Applications API#applicationsusageinstallation) | **POST** /applications/usage/installation | /applications/usage/installation [POST]
+[**postApplicationsUsageUpdated - (Deprecated)**](Applications API#postapplicationsusageupdated) | **POST** /applications/usage/updated | /applications/usage/updated [POST]
 
 
 ## **applicationsExternalRelated** {#applicationsexternalrelated}
@@ -29,7 +33,7 @@ Retrieves a list of external applications installed on the user\'s machine that 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 apiInstance.applicationsExternalRelated().then((data: DetectedExternalApplications) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -47,7 +51,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -67,7 +71,7 @@ Provides a snapshot of all external applications detected on the user\'s machine
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 apiInstance.applicationsExternalSnapshot().then((data: DetectedExternalApplications) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -85,7 +89,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -105,7 +109,7 @@ Registers a new application within the Pieces ecosystem.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsRegisterRequest = {
     // Application | This will accept a application. (optional)
@@ -150,7 +154,7 @@ Closes an active session, identified by a session UUID, marking the end of the u
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsSessionCloseRequest = {
     // string | This will accept a required session uuid. (optional)
@@ -195,7 +199,7 @@ Initiates a new session, marking the start of a user\'s interaction with the Pie
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 apiInstance.applicationsSessionOpen().then((data: Session) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -232,7 +236,7 @@ Fetches detailed information about a specific session, identified by a session U
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsSessionSnapshotRequest = {
     // string | This is a uuid that points to a session.
@@ -277,7 +281,7 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 apiInstance.applicationsSnapshot().then((data: Applications) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -314,7 +318,7 @@ Obtains a snapshot with information about a specific application, identified by 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsSpecificApplicationSnapshotRequest = {
     // string | This is a uuid that represents an application
@@ -359,7 +363,7 @@ Records user interaction events within applications, such as clicks or taps, to 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsUsageEngagementInteractionRequest = {
     // SeededTrackedInteractionEvent |  (optional)
@@ -404,7 +408,7 @@ Captures keyboard interaction events, including shortcuts, within applications t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsUsageEngagementKeyboardRequest = {
     // SeededTrackedKeyboardEvent |  (optional)
@@ -449,7 +453,7 @@ Logs the installation events of the Pieces application.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.ApplicationsUsageInstallationRequest = {
     // TrackedApplicationInstall |  (optional)
@@ -494,7 +498,7 @@ Tracks updates to the Pieces application, including version changes.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ApplicationsApi(configuration)
+const apiInstance = new Pieces.Applications API(configuration)
 
 const body: Pieces.PostApplicationsUsageUpdatedRequest = {
     // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user. (optional)

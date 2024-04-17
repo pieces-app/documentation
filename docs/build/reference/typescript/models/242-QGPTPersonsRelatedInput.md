@@ -1,3 +1,7 @@
+---
+title: QGPTPersonsRelatedInput | TypeScript SDK
+---
+
 
 # QGPTPersonsRelatedInput
 

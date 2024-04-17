@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeCompletion | Kotlin SDK
+---
+
 
 # QGPTTaskPipelineForCodeCompletion
 

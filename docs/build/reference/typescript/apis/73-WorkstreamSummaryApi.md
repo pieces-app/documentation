@@ -1,26 +1,30 @@
+---
+title: WorkstreamSummary API | TypeScript SDK
+---
+
 # WorkstreamSummary API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workstreamSummariesSpecificWorkstreamSummarySnapshot**](WorkstreamSummaryApi#workstreamsummariesspecificworkstreamsummarysnapshot) | **GET** /workstream_summary/\{workstream_summary\} | /workstream_summary/\{workstream_summary\} [GET]
-[**workstreamSummaryAssociateAnchor**](WorkstreamSummaryApi#workstreamsummaryassociateanchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} [POST]
-[**workstreamSummaryAssociateAsset**](WorkstreamSummaryApi#workstreamsummaryassociateasset) | **POST** /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} [POST]
-[**workstreamSummaryAssociateConversation**](WorkstreamSummaryApi#workstreamsummaryassociateconversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} [POST]
-[**workstreamSummaryAssociatePerson**](WorkstreamSummaryApi#workstreamsummaryassociateperson) | **POST** /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} [POST]
-[**workstreamSummaryAssociateRange**](WorkstreamSummaryApi#workstreamsummaryassociaterange) | **POST** /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} [POST]
-[**workstreamSummaryAssociateWebsite**](WorkstreamSummaryApi#workstreamsummaryassociatewebsite) | **POST** /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} [POST]
-[**workstreamSummaryAssociateWorkstreamEvent**](WorkstreamSummaryApi#workstreamsummaryassociateworkstreamevent) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} [POST]
-[**workstreamSummaryDisassociateAnchor**](WorkstreamSummaryApi#workstreamsummarydisassociateanchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} [POST]
-[**workstreamSummaryDisassociateAsset**](WorkstreamSummaryApi#workstreamsummarydisassociateasset) | **POST** /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} [POST]
-[**workstreamSummaryDisassociateConversation**](WorkstreamSummaryApi#workstreamsummarydisassociateconversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} [POST]
-[**workstreamSummaryDisassociatePerson**](WorkstreamSummaryApi#workstreamsummarydisassociateperson) | **POST** /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} [POST]
-[**workstreamSummaryDisassociateRange**](WorkstreamSummaryApi#workstreamsummarydisassociaterange) | **POST** /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} [POST]
-[**workstreamSummaryDisassociateWebsite**](WorkstreamSummaryApi#workstreamsummarydisassociatewebsite) | **POST** /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} [POST]
-[**workstreamSummaryDisassociateWorkstreamEvent**](WorkstreamSummaryApi#workstreamsummarydisassociateworkstreamevent) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} [POST]
-[**workstreamSummaryScoresIncrement**](WorkstreamSummaryApi#workstreamsummaryscoresincrement) | **POST** /workstream_summary/\{workstream_summary\}/scores/increment | \'/workstream_summary/\{workstream_summary\}/scores/increment\' [POST]
-[**workstreamSummaryUpdate**](WorkstreamSummaryApi#workstreamsummaryupdate) | **POST** /workstream_summary/update | /workstream_summary/update [POST]
+[**workstreamSummariesSpecificWorkstreamSummarySnapshot**](WorkstreamSummary API#workstreamsummariesspecificworkstreamsummarysnapshot) | **GET** /workstream_summary/\{workstream_summary\} | /workstream_summary/\{workstream_summary\} [GET]
+[**workstreamSummaryAssociateAnchor**](WorkstreamSummary API#workstreamsummaryassociateanchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/associate/\{anchor\} [POST]
+[**workstreamSummaryAssociateAsset**](WorkstreamSummary API#workstreamsummaryassociateasset) | **POST** /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/associate/\{asset\} [POST]
+[**workstreamSummaryAssociateConversation**](WorkstreamSummary API#workstreamsummaryassociateconversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/associate/\{conversation\} [POST]
+[**workstreamSummaryAssociatePerson**](WorkstreamSummary API#workstreamsummaryassociateperson) | **POST** /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/associate/\{person\} [POST]
+[**workstreamSummaryAssociateRange**](WorkstreamSummary API#workstreamsummaryassociaterange) | **POST** /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/associate/\{range\} [POST]
+[**workstreamSummaryAssociateWebsite**](WorkstreamSummary API#workstreamsummaryassociatewebsite) | **POST** /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/associate/\{website\} [POST]
+[**workstreamSummaryAssociateWorkstreamEvent**](WorkstreamSummary API#workstreamsummaryassociateworkstreamevent) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/associate/\{workstream_event\} [POST]
+[**workstreamSummaryDisassociateAnchor**](WorkstreamSummary API#workstreamsummarydisassociateanchor) | **POST** /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} | /workstream_summary/\{workstream_summary\}/anchors/disassociate/\{anchor\} [POST]
+[**workstreamSummaryDisassociateAsset**](WorkstreamSummary API#workstreamsummarydisassociateasset) | **POST** /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} | /workstream_summary/\{workstream_summary\}/assets/disassociate/\{asset\} [POST]
+[**workstreamSummaryDisassociateConversation**](WorkstreamSummary API#workstreamsummarydisassociateconversation) | **POST** /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} | /workstream_summary/\{workstream_summary\}/conversations/disassociate/\{conversation\} [POST]
+[**workstreamSummaryDisassociatePerson**](WorkstreamSummary API#workstreamsummarydisassociateperson) | **POST** /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} | /workstream_summary/\{workstream_summary\}/persons/disassociate/\{person\} [POST]
+[**workstreamSummaryDisassociateRange**](WorkstreamSummary API#workstreamsummarydisassociaterange) | **POST** /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} | /workstream_summary/\{workstream_summary\}/ranges/disassociate/\{range\} [POST]
+[**workstreamSummaryDisassociateWebsite**](WorkstreamSummary API#workstreamsummarydisassociatewebsite) | **POST** /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} | /workstream_summary/\{workstream_summary\}/websites/disassociate/\{website\} [POST]
+[**workstreamSummaryDisassociateWorkstreamEvent**](WorkstreamSummary API#workstreamsummarydisassociateworkstreamevent) | **POST** /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} | /workstream_summary/\{workstream_summary\}/workstream_events/disassociate/\{workstream_event\} [POST]
+[**workstreamSummaryScoresIncrement**](WorkstreamSummary API#workstreamsummaryscoresincrement) | **POST** /workstream_summary/\{workstream_summary\}/scores/increment | \'/workstream_summary/\{workstream_summary\}/scores/increment\' [POST]
+[**workstreamSummaryUpdate**](WorkstreamSummary API#workstreamsummaryupdate) | **POST** /workstream_summary/update | /workstream_summary/update [POST]
 
 
 ## **workstreamSummariesSpecificWorkstreamSummarySnapshot** {#workstreamsummariesspecificworkstreamsummarysnapshot}
@@ -34,7 +38,7 @@ This will get a snapshot of a single workstream_summary.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummariesSpecificWorkstreamSummarySnapshotRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -63,7 +67,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -83,7 +87,7 @@ This will associate a anchor with a workstream_summary. This will do the same th
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateAnchorRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -112,7 +116,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -132,7 +136,7 @@ This will associate an asset with a workstream_summary. This will do the same th
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateAssetRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -161,7 +165,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -181,7 +185,7 @@ This will associate an conversation with a workstream_summary. This will do the 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateConversationRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -210,7 +214,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -230,7 +234,7 @@ This will associate an person with a workstream_summary. This will do the same t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociatePersonRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -259,7 +263,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -279,7 +283,7 @@ This will associate a range with a workstream_summary. This will do the same thi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateRangeRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -308,7 +312,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -328,7 +332,7 @@ This will associate a website with a workstream_summary. This will do the same t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateWebsiteRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -357,7 +361,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -377,7 +381,7 @@ This will associate a workstream_summary with a workstream_event. This will do t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryAssociateWorkstreamEventRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -406,7 +410,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -426,7 +430,7 @@ This will enable us to disassociate a anchor from a workstream_summary. This wil
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateAnchorRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -455,7 +459,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -475,7 +479,7 @@ This will enable us to disassociate a asset from a workstream_summary. This will
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateAssetRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -504,7 +508,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -524,7 +528,7 @@ This will enable us to disassociate a conversation from a workstream_summary. Th
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateConversationRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -553,7 +557,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -573,7 +577,7 @@ This will enable us to disassociate a person from a workstream_summary. This wil
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociatePersonRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -602,7 +606,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -622,7 +626,7 @@ This will enable us to disassociate a range from a workstream_summary. This will
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateRangeRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -651,7 +655,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -671,7 +675,7 @@ This will enable us to disassociate a website from a workstream_summary. This wi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateWebsiteRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -700,7 +704,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -720,7 +724,7 @@ This will enable us to disassociate a workstream_summary from a workstream_event
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryDisassociateWorkstreamEventRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -749,7 +753,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -769,7 +773,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -798,7 +802,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -818,7 +822,7 @@ This will update a specific workstream_summary.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaryApi(configuration)
+const apiInstance = new Pieces.WorkstreamSummary API(configuration)
 
 const body: Pieces.WorkstreamSummaryUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -847,7 +851,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

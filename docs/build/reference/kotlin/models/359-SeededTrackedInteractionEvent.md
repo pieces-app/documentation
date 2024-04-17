@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEvent | Kotlin SDK
+---
+
 
 # SeededTrackedInteractionEvent
 

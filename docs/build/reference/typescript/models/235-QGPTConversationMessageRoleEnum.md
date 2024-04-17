@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessageRoleEnum | TypeScript SDK
+---
+
 
 # QGPTConversationMessageRoleEnum
 

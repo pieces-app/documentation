@@ -1,12 +1,16 @@
+---
+title: Sensitives API | TypeScript SDK
+---
+
 # Sensitives API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
-[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
+[**sensitivesCreateNewSensitive**](Sensitives API#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
+[**sensitivesDeleteSensitive**](Sensitives API#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
+[**sensitivesSnapshot**](Sensitives API#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
 
 
 ## **sensitivesCreateNewSensitive** {#sensitivescreatenewsensitive}
@@ -20,7 +24,7 @@ This will create a new sensitive model.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitivesApi(configuration)
+const apiInstance = new Pieces.Sensitives API(configuration)
 
 const body: Pieces.SensitivesCreateNewSensitiveRequest = {
     // SeededSensitive (optional)
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -66,7 +70,7 @@ This will delete a sensitive based on the sensitive uuid.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitivesApi(configuration)
+const apiInstance = new Pieces.Sensitives API(configuration)
 
 const body: Pieces.SensitivesDeleteSensitiveRequest = {
     // string | This is a uuid that represents a sensitive.
@@ -92,7 +96,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -112,7 +116,7 @@ This will get a snapshot of all of the sensitives.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SensitivesApi(configuration)
+const apiInstance = new Pieces.Sensitives API(configuration)
 
 apiInstance.sensitivesSnapshot().then((data: Sensitives) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -130,7 +134,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableSensitive | Kotlin SDK
+---
+
 
 # SeededDiscoverableSensitive
 

@@ -1,3 +1,7 @@
+---
+title: FlattenedPerson | TypeScript SDK
+---
+
 
 # FlattenedPerson
 

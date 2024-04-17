@@ -1,3 +1,7 @@
+---
+title: FilePickerInput | Dart SDK
+---
+
 # FilePickerInput
 
 ## Load the model package

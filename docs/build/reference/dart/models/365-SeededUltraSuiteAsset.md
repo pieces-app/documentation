@@ -1,3 +1,7 @@
+---
+title: SeededUltraSuiteAsset | Dart SDK
+---
+
 # SeededUltraSuiteAsset
 
 ## Load the model package

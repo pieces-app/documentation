@@ -1,3 +1,7 @@
+---
+title: DiscoveredRelatedTag | TypeScript SDK
+---
+
 
 # DiscoveredRelatedTag
 

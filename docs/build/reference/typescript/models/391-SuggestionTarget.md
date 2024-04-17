@@ -1,3 +1,7 @@
+---
+title: SuggestionTarget | TypeScript SDK
+---
+
 
 # SuggestionTarget
 

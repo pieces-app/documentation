@@ -1,3 +1,7 @@
+---
+title: TrackedAssetsEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # TrackedAssetsEventIdentifierDescriptionPairs
 

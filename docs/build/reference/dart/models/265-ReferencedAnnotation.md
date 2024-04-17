@@ -1,3 +1,7 @@
+---
+title: ReferencedAnnotation | Dart SDK
+---
+
 # ReferencedAnnotation
 
 ## Load the model package

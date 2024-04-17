@@ -1,3 +1,7 @@
+---
+title: SeededTrackedKeyboardEventIdentifierDescriptionPairs | TypeScript SDK
+---
+
 
 # SeededTrackedKeyboardEventIdentifierDescriptionPairs
 

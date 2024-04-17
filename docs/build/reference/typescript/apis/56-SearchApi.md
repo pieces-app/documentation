@@ -1,12 +1,16 @@
+---
+title: Search API | TypeScript SDK
+---
+
 # Search API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fullTextSearch**](SearchApi#fulltextsearch) | **GET** /search/full_text | /search/full_text [GET]
-[**neuralCodeSearch**](SearchApi#neuralcodesearch) | **GET** /search/neural_code | /search/neural_code [GET]
-[**tagBasedSearch**](SearchApi#tagbasedsearch) | **POST** /search/tag_based | /search/tag_based [POST]
+[**fullTextSearch**](Search API#fulltextsearch) | **GET** /search/full_text | /search/full_text [GET]
+[**neuralCodeSearch**](Search API#neuralcodesearch) | **GET** /search/neural_code | /search/neural_code [GET]
+[**tagBasedSearch**](Search API#tagbasedsearch) | **POST** /search/tag_based | /search/tag_based [POST]
 
 
 ## **fullTextSearch** {#fulltextsearch}
@@ -20,7 +24,7 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SearchApi(configuration)
+const apiInstance = new Pieces.Search API(configuration)
 
 const body: Pieces.FullTextSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SearchApi(configuration)
+const apiInstance = new Pieces.Search API(configuration)
 
 const body: Pieces.NeuralCodeSearchRequest = {
     // string | This is a string that you can use to search your assets. (optional)
@@ -98,7 +102,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -118,7 +122,7 @@ This will run our tag based search, and return the assets that best match your p
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.SearchApi(configuration)
+const apiInstance = new Pieces.Search API(configuration)
 
 const body: Pieces.TagBasedSearchRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
@@ -147,7 +151,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

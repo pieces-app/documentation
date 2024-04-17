@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchemaSemanticVersionEnum | Dart SDK
+---
+
 # EmbeddedModelSchemaSemanticVersionEnum
 
 ## Load the model package

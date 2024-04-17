@@ -1,15 +1,19 @@
+---
+title: Conversations API | TypeScript SDK
+---
+
 # Conversations API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationsCreateFromAsset**](ConversationsApi#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
-[**conversationsCreateSpecificConversation**](ConversationsApi#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
-[**conversationsDeleteSpecificConversation**](ConversationsApi#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
-[**conversationsIdentifiersSnapshot**](ConversationsApi#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
-[**conversationsSnapshot**](ConversationsApi#conversationssnapshot) | **GET** /conversations | /conversations [GET]
-[**conversationsStreamIdentifiers**](ConversationsApi#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
+[**conversationsCreateFromAsset**](Conversations API#conversationscreatefromasset) | **POST** /conversations/create/from_asset/\{asset\} | /conversations/create/from_asset/\{asset\} [POST]
+[**conversationsCreateSpecificConversation**](Conversations API#conversationscreatespecificconversation) | **POST** /conversations/create | /conversations/create [POST]
+[**conversationsDeleteSpecificConversation**](Conversations API#conversationsdeletespecificconversation) | **POST** /conversations/\{conversation\}/delete | /conversations/\{conversation\}/delete [POST]
+[**conversationsIdentifiersSnapshot**](Conversations API#conversationsidentifierssnapshot) | **GET** /conversations/identifiers | /conversations/identifiers [GET]
+[**conversationsSnapshot**](Conversations API#conversationssnapshot) | **GET** /conversations | /conversations [GET]
+[**conversationsStreamIdentifiers**](Conversations API#conversationsstreamidentifiers) | **GET** /conversations/stream/identifiers | /conversations/stream/identifiers [WS]
 
 
 ## **conversationsCreateFromAsset** {#conversationscreatefromasset}
@@ -23,7 +27,7 @@ Creates a conversation based on an asset. It initiates a conversation and genera
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 const body: Pieces.ConversationsCreateFromAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ Creates a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 const body: Pieces.ConversationsCreateSpecificConversationRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -98,7 +102,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -118,7 +122,7 @@ Deletes a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 const body: Pieces.ConversationsDeleteSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
@@ -144,7 +148,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -164,7 +168,7 @@ Retrieves all the UUIDs associated with a Conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 apiInstance.conversationsIdentifiersSnapshot().then((data: FlattenedConversations) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -182,7 +186,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -202,7 +206,7 @@ Retrieves a snapshot of a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 const body: Pieces.ConversationsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -228,7 +232,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -248,7 +252,7 @@ Provides a WebSocket connection that emits changes to your conversation identifi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationsApi(configuration)
+const apiInstance = new Pieces.Conversations API(configuration)
 
 apiInstance.conversationsStreamIdentifiers().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data)

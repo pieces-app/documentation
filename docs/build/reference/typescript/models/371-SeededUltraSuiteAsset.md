@@ -1,3 +1,7 @@
+---
+title: SeededUltraSuiteAsset | TypeScript SDK
+---
+
 
 # SeededUltraSuiteAsset
 

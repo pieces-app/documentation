@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceInputOptions | TypeScript SDK
+---
+
 
 # QGPTRelevanceInputOptions
 

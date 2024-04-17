@@ -1,3 +1,7 @@
+---
+title: PreonboardedPersonaDetails | Dart SDK
+---
+
 # PreonboardedPersonaDetails
 
 ## Load the model package

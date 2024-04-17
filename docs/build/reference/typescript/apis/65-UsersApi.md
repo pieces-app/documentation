@@ -1,13 +1,17 @@
+---
+title: Users API | TypeScript SDK
+---
+
 # Users API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**authenticateFromOauthToken**](UsersApi#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
-[**usersDisconnectUser**](UsersApi#usersdisconnectuser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
-[**usersSnapshot**](UsersApi#userssnapshot) | **GET** /users | /users [GET]
-[**usersSpecificUserSnapshot**](UsersApi#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
+[**authenticateFromOauthToken**](Users API#authenticatefromoauthtoken) | **POST** /users/authenticate/from_token | /users/authenticate/from_token [POST]
+[**usersDisconnectUser**](Users API#usersdisconnectuser) | **POST** /users/\{user\}/disconnect | /users/\{user\}/disconnect [POST]
+[**usersSnapshot**](Users API#userssnapshot) | **GET** /users | /users [GET]
+[**usersSpecificUserSnapshot**](Users API#usersspecificusersnapshot) | **GET** /users/\{user\} | /users/\{user\} [GET] Scoped to Users
 
 
 ## **authenticateFromOauthToken** {#authenticatefromoauthtoken}
@@ -21,7 +25,7 @@ Creates a User From a oAuth Token
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UsersApi(configuration)
+const apiInstance = new Pieces.Users API(configuration)
 
 const body: Pieces.AuthenticateFromOauthTokenRequest = {
     // OAuthToken |  (optional)
@@ -66,7 +70,7 @@ Locally Removing a user for the purpose of Signing Out
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UsersApi(configuration)
+const apiInstance = new Pieces.Users API(configuration)
 
 const body: Pieces.UsersDisconnectUserRequest = {
     // string
@@ -111,7 +115,7 @@ this will return a snapshot of all of the users that are in the users database. 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UsersApi(configuration)
+const apiInstance = new Pieces.Users API(configuration)
 
 apiInstance.usersSnapshot().then((data: Users) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -148,7 +152,7 @@ This enables the client to get the current user.  This endpoint will return a Us
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UsersApi(configuration)
+const apiInstance = new Pieces.Users API(configuration)
 
 const body: Pieces.UsersSpecificUserSnapshotRequest = {
     // string | The id (uuid) for a specific user.

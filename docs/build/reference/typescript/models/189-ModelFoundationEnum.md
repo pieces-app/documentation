@@ -1,3 +1,7 @@
+---
+title: ModelFoundationEnum | TypeScript SDK
+---
+
 
 # ModelFoundationEnum
 

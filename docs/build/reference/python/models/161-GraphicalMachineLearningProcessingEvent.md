@@ -1,3 +1,7 @@
+---
+title: GraphicalMachineLearningProcessingEvent | Python SDK
+---
+
 # GraphicalMachineLearningProcessingEvent
 
 

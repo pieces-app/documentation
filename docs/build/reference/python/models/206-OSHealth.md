@@ -1,3 +1,7 @@
+---
+title: OSHealth | Python SDK
+---
+
 # OSHealth
 
 This is a specific model for the health of our OS Server.

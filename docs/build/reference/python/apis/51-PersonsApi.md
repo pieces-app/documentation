@@ -1,3 +1,7 @@
+---
+title: Persons API | Python SDK
+---
+
 # Persons API
 
 All URIs are relative to *http://localhost:1000*
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PersonsApi(api_client)
+    api_instance = Persons API(api_client)
     person = 'person_example' # str | This is a uuid that represents a person.
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
@@ -67,7 +71,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -105,7 +109,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PersonsApi(api_client)
+    api_instance = Persons API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seeded_person = pieces_os_client.SeededPerson() # SeededPerson |  (optional)
 
@@ -139,7 +143,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -175,7 +179,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PersonsApi(api_client)
+    api_instance = Persons API(api_client)
     person = 'person_example' # str | This is a uuid that represents a person.
 
     try:
@@ -205,7 +209,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -242,7 +246,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PersonsApi(api_client)
+    api_instance = Persons API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -274,7 +278,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

@@ -1,3 +1,7 @@
+---
+title: UserBetaStatus | Python SDK
+---
+
 # UserBetaStatus
 
 This is used to either grant or remove a specific provider betastatus

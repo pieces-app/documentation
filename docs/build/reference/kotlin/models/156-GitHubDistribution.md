@@ -1,3 +1,7 @@
+---
+title: GitHubDistribution | Kotlin SDK
+---
+
 
 # GitHubDistribution
 

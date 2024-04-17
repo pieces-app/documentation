@@ -1,3 +1,7 @@
+---
+title: Hint API | Python SDK
+---
+
 # Hint API
 
 All URIs are relative to *http://localhost:1000*
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = 'hint_example' # str | This is a specific hint uuid
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -67,7 +71,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -104,7 +108,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = 'hint_example' # str | This is a specific hint uuid
 
     try:
@@ -136,7 +140,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -173,7 +177,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = pieces_os_client.Hint() # Hint |  (optional)
 
     try:
@@ -205,7 +209,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

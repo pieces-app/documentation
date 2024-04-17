@@ -1,12 +1,16 @@
+---
+title: Linkify API | TypeScript SDK
+---
+
 # Linkify API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**linkify**](LinkifyApi#linkify) | **POST** /linkify | /linkify [POST]
-[**linkifyMultiple**](LinkifyApi#linkifymultiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
-[**linkifyShareRevoke**](LinkifyApi#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
+[**linkify**](Linkify API#linkify) | **POST** /linkify | /linkify [POST]
+[**linkifyMultiple**](Linkify API#linkifymultiple) | **POST** /linkify/multiple | /linkify/multiple [POST]
+[**linkifyShareRevoke**](Linkify API#linkifysharerevoke) | **POST** /linkify/\{share\}/revoke | [POST} /linkify/\{share\}/revoke
 
 
 ## **linkify** {#linkify}
@@ -20,7 +24,7 @@ Method | HTTP request | Description
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.LinkifyApi(configuration)
+const apiInstance = new Pieces.Linkify API(configuration)
 
 const body: Pieces.LinkifyRequest = {
     // Linkify (optional)
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ Name | Type | Description  | Notes
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.LinkifyApi(configuration)
+const apiInstance = new Pieces.Linkify API(configuration)
 
 const body: Pieces.LinkifyMultipleRequest = {
     // LinkifyMultiple |  (optional)
@@ -95,7 +99,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -119,7 +123,7 @@ This will revoke a link.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.LinkifyApi(configuration)
+const apiInstance = new Pieces.Linkify API(configuration)
 
 const body: Pieces.LinkifyShareRevokeRequest = {
     // string
@@ -145,7 +149,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details

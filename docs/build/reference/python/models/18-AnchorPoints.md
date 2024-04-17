@@ -1,3 +1,7 @@
+---
+title: AnchorPoints | Python SDK
+---
+
 # AnchorPoints
 
 This is the plural of AnchorPoint.

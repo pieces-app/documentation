@@ -1,3 +1,7 @@
+---
+title: TrackedUserProfile | Python SDK
+---
+
 # TrackedUserProfile
 
 A user that will be passed along with each analytics event

@@ -1,12 +1,16 @@
+---
+title: ConversationMessages API | TypeScript SDK
+---
+
 # ConversationMessages API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**messagesCreateSpecificMessage**](ConversationMessagesApi#messagescreatespecificmessage) | **POST** /messages/create | /messages/create [POST]
-[**messagesDeleteSpecificMessage**](ConversationMessagesApi#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
-[**messagesSnapshot**](ConversationMessagesApi#messagessnapshot) | **GET** /messages | /messages [GET]
+[**messagesCreateSpecificMessage**](ConversationMessages API#messagescreatespecificmessage) | **POST** /messages/create | /messages/create [POST]
+[**messagesDeleteSpecificMessage**](ConversationMessages API#messagesdeletespecificmessage) | **POST** /messages/\{message\}/delete | /messages/\{message\}/delete [POST]
+[**messagesSnapshot**](ConversationMessages API#messagessnapshot) | **GET** /messages | /messages [GET]
 
 
 ## **messagesCreateSpecificMessage** {#messagescreatespecificmessage}
@@ -20,7 +24,7 @@ This will create a Message on a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessagesApi(configuration)
+const apiInstance = new Pieces.ConversationMessages API(configuration)
 
 const body: Pieces.MessagesCreateSpecificMessageRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will delete a specific message.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessagesApi(configuration)
+const apiInstance = new Pieces.ConversationMessages API(configuration)
 
 const body: Pieces.MessagesDeleteSpecificMessageRequest = {
     // string | This is the uuid of a message.
@@ -95,7 +99,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -115,7 +119,7 @@ This will get all the messages.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessagesApi(configuration)
+const apiInstance = new Pieces.ConversationMessages API(configuration)
 
 const body: Pieces.MessagesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -141,7 +145,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

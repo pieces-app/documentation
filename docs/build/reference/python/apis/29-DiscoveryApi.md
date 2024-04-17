@@ -1,3 +1,7 @@
+---
+title: Discovery API | Python SDK
+---
+
 # Discovery API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DiscoveryApi(api_client)
+    api_instance = Discovery API(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_assets = pieces_os_client.SeededDiscoverableAssets() # SeededDiscoverableAssets | The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. (optional)
 
@@ -71,7 +75,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -109,7 +113,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DiscoveryApi(api_client)
+    api_instance = Discovery API(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_html_webpages = pieces_os_client.SeededDiscoverableHtmlWebpages() # SeededDiscoverableHtmlWebpages |  (optional)
 
@@ -143,7 +147,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -181,7 +185,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DiscoveryApi(api_client)
+    api_instance = Discovery API(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_sensitives = pieces_os_client.SeededDiscoverableSensitives() # SeededDiscoverableSensitives |  (optional)
 
@@ -252,7 +256,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DiscoveryApi(api_client)
+    api_instance = Discovery API(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_related_tags = pieces_os_client.SeededDiscoverableRelatedTags() # SeededDiscoverableRelatedTags |  (optional)
 
@@ -286,7 +290,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

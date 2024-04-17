@@ -1,3 +1,7 @@
+---
+title: Embedding | Dart SDK
+---
+
 # Embedding
 
 ## Load the model package

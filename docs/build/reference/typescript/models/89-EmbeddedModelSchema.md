@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchema | TypeScript SDK
+---
+
 
 # EmbeddedModelSchema
 

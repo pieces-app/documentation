@@ -1,3 +1,7 @@
+---
+title: AssetsSearchWithFiltersInput | Python SDK
+---
+
 # AssetsSearchWithFiltersInput
 
 

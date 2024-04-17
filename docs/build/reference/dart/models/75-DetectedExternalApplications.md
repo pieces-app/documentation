@@ -1,3 +1,7 @@
+---
+title: DetectedExternalApplications | Dart SDK
+---
+
 # DetectedExternalApplications
 
 ## Load the model package

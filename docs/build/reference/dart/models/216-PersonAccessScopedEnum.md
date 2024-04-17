@@ -1,3 +1,7 @@
+---
+title: PersonAccessScopedEnum | Dart SDK
+---
+
 # PersonAccessScopedEnum
 
 ## Load the model package

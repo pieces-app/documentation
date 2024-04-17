@@ -1,3 +1,7 @@
+---
+title: User API | Python SDK
+---
+
 # User API
 
 All URIs are relative to *http://localhost:1000*
@@ -40,7 +44,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/clear
@@ -102,7 +106,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/refresh [GET]
@@ -130,7 +134,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -181,7 +185,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     auth0_user = pieces_os_client.Auth0User() # Auth0User |  (optional)
 
     try:
@@ -249,7 +253,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/stream [WS]
@@ -313,7 +317,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_profile = pieces_os_client.UserProfile() # UserProfile |  (optional)
 
     try:
@@ -381,7 +385,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_beta_status = pieces_os_client.UserBetaStatus() # UserBetaStatus |  (optional)
 
     try:
@@ -413,7 +417,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -451,7 +455,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # Your GET endpoint
@@ -479,7 +483,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -517,7 +521,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user [GET]
@@ -581,7 +585,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_profile = pieces_os_client.UserProfile() # UserProfile | This will take an update userProfile, with the updated vanity name! (optional)
 
     try:
@@ -613,7 +617,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

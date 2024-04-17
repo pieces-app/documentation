@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRStatistics | Kotlin SDK
+---
+
 
 # GraphicalOCRStatistics
 

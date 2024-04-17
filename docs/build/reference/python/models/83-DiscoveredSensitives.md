@@ -1,3 +1,7 @@
+---
+title: DiscoveredSensitives | Python SDK
+---
+
 # DiscoveredSensitives
 
 

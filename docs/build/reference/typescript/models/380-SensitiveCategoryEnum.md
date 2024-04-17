@@ -1,3 +1,7 @@
+---
+title: SensitiveCategoryEnum | TypeScript SDK
+---
+
 
 # SensitiveCategoryEnum
 

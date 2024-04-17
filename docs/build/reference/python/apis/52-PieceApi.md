@@ -1,3 +1,7 @@
+---
+title: Piece API | Python SDK
+---
+
 # Piece API
 
 All URIs are relative to *http://localhost:1000*
@@ -32,7 +36,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PieceApi(api_client)
+    api_instance = Piece API(api_client)
     p = 'p_example' # str | this is the a query param, that a shortened version of the share.
 
     try:

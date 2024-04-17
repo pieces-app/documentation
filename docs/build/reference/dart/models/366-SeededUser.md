@@ -1,3 +1,7 @@
+---
+title: SeededUser | Dart SDK
+---
+
 # SeededUser
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededAssetEnrichment | Kotlin SDK
+---
+
 
 # SeededAssetEnrichment
 

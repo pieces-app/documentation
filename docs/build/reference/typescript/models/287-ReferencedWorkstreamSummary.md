@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamSummary | TypeScript SDK
+---
+
 
 # ReferencedWorkstreamSummary
 

@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchemaSemanticVersionEnum | TypeScript SDK
+---
+
 
 # EmbeddedModelSchemaSemanticVersionEnum
 

@@ -1,20 +1,24 @@
+---
+title: Website API | TypeScript SDK
+---
+
 # Website API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**websiteAssociateAsset**](WebsiteApi#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
-[**websiteAssociateConversation**](WebsiteApi#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
-[**websiteAssociatePerson**](WebsiteApi#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
-[**websiteAssociateWorkstreamSummary**](WebsiteApi#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**websiteDisassociateAsset**](WebsiteApi#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
-[**websiteDisassociateConversation**](WebsiteApi#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
-[**websiteDisassociatePerson**](WebsiteApi#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
-[**websiteDisassociateWorkstreamSummary**](WebsiteApi#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**websiteScoresIncrement**](WebsiteApi#websitescoresincrement) | **POST** /website/\{website\}/scores/increment | \'/website/\{website\}/scores/increment\' [POST]
-[**websiteUpdate**](WebsiteApi#websiteupdate) | **POST** /website/update | /website/update [POST]
-[**websitesSpecificWebsiteSnapshot**](WebsiteApi#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
+[**websiteAssociateAsset**](Website API#websiteassociateasset) | **POST** /website/\{website\}/assets/associate/\{asset\} | /website/\{website\}/assets/associate/\{asset\} [POST]
+[**websiteAssociateConversation**](Website API#websiteassociateconversation) | **POST** /website/\{website\}/conversations/associate/\{conversation\} | /website/\{website\}/conversations/associate/\{conversation\} [POST]
+[**websiteAssociatePerson**](Website API#websiteassociateperson) | **POST** /website/\{website\}/persons/associate/\{person\} | /website/\{website\}/persons/associate/\{person\} [POST]
+[**websiteAssociateWorkstreamSummary**](Website API#websiteassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**websiteDisassociateAsset**](Website API#websitedisassociateasset) | **POST** /website/\{website\}/assets/disassociate/\{asset\} | /website/\{website\}/assets/disassociate/\{asset\} [POST]
+[**websiteDisassociateConversation**](Website API#websitedisassociateconversation) | **POST** /website/\{website\}/conversations/disassociate/\{conversation\} | /website/\{website\}/conversations/disassociate/\{conversation\} [POST]
+[**websiteDisassociatePerson**](Website API#websitedisassociateperson) | **POST** /website/\{website\}/persons/disassociate/\{person\} | /website/\{website\}/persons/disassociate/\{person\} [POST]
+[**websiteDisassociateWorkstreamSummary**](Website API#websitedisassociateworkstreamsummary) | **POST** /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} | /website/\{website\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**websiteScoresIncrement**](Website API#websitescoresincrement) | **POST** /website/\{website\}/scores/increment | \'/website/\{website\}/scores/increment\' [POST]
+[**websiteUpdate**](Website API#websiteupdate) | **POST** /website/update | /website/update [POST]
+[**websitesSpecificWebsiteSnapshot**](Website API#websitesspecificwebsitesnapshot) | **GET** /website/\{website\} | /website/\{website\} [GET]
 
 
 ## **websiteAssociateAsset** {#websiteassociateasset}
@@ -28,7 +32,7 @@ This will associate a website with a asset.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteAssociateAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -57,7 +61,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -77,7 +81,7 @@ This will associate a website with a conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteAssociateConversationRequest = {
     // string | website id
@@ -106,7 +110,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -126,7 +130,7 @@ This will associate a website with a person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteAssociatePersonRequest = {
     // string | website id
@@ -155,7 +159,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -175,7 +179,7 @@ This will associate a website with a workstream summary. This will do the same t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteAssociateWorkstreamSummaryRequest = {
     // string | website id
@@ -204,7 +208,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -224,7 +228,7 @@ This will enable us to dissassociate a website from a asset.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteDisassociateAssetRequest = {
     // string | website id
@@ -253,7 +257,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -273,7 +277,7 @@ This will enable us to dissassociate a website from a conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteDisassociateConversationRequest = {
     // string | website id
@@ -302,7 +306,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -322,7 +326,7 @@ This will enable us to dissassociate a website from a person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteDisassociatePersonRequest = {
     // string | website id
@@ -351,7 +355,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -371,7 +375,7 @@ This will enable us to disassociate a website from a workstream summary. This wi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteDisassociateWorkstreamSummaryRequest = {
     // string | website id
@@ -400,7 +404,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -420,7 +424,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteScoresIncrementRequest = {
     // string | website id
@@ -449,7 +453,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -469,7 +473,7 @@ This will update a specific website.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsiteUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -498,7 +502,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -518,7 +522,7 @@ This will get a snapshot of a single website.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WebsiteApi(configuration)
+const apiInstance = new Pieces.Website API(configuration)
 
 const body: Pieces.WebsitesSpecificWebsiteSnapshotRequest = {
     // string | website id
@@ -547,7 +551,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

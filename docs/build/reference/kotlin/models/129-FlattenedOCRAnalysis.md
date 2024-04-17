@@ -1,3 +1,7 @@
+---
+title: FlattenedOCRAnalysis | Kotlin SDK
+---
+
 
 # FlattenedOCRAnalysis
 

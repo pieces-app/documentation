@@ -1,3 +1,7 @@
+---
+title: Activities | Dart SDK
+---
+
 # Activities
 
 ## Load the model package

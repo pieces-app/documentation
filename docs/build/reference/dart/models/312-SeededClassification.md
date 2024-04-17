@@ -1,3 +1,7 @@
+---
+title: SeededClassification | Dart SDK
+---
+
 # SeededClassification
 
 ## Load the model package

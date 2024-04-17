@@ -1,3 +1,7 @@
+---
+title: ClassificationRenderingEnum | Dart SDK
+---
+
 # ClassificationRenderingEnum
 
 ## Load the model package

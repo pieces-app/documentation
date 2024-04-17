@@ -1,3 +1,7 @@
+---
+title: ModelFoundationEnum | Dart SDK
+---
+
 # ModelFoundationEnum
 
 ## Load the model package

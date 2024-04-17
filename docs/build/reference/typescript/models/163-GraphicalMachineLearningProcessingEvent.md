@@ -1,3 +1,7 @@
+---
+title: GraphicalMachineLearningProcessingEvent | TypeScript SDK
+---
+
 
 # GraphicalMachineLearningProcessingEvent
 

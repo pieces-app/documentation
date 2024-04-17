@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceInputOptions | Python SDK
+---
+
 # QGPTRelevanceInputOptions
 
 

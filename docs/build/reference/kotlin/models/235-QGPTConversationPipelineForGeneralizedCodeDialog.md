@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForGeneralizedCodeDialog | Kotlin SDK
+---
+
 
 # QGPTConversationPipelineForGeneralizedCodeDialog
 

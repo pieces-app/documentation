@@ -1,3 +1,7 @@
+---
+title: Analyses | TypeScript SDK
+---
+
 
 # Analyses
 

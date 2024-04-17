@@ -1,3 +1,7 @@
+---
+title: SeededExternalProvider | Dart SDK
+---
+
 # SeededExternalProvider
 
 ## Load the model package

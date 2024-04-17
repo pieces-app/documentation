@@ -1,3 +1,7 @@
+---
+title: SeededConversationMessage | Dart SDK
+---
+
 # SeededConversationMessage
 
 ## Load the model package

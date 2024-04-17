@@ -1,3 +1,7 @@
+---
+title: ReferencedHint | TypeScript SDK
+---
+
 
 # ReferencedHint
 

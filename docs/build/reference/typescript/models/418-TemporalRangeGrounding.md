@@ -1,3 +1,7 @@
+---
+title: TemporalRangeGrounding | TypeScript SDK
+---
+
 
 # TemporalRangeGrounding
 

@@ -1,3 +1,7 @@
+---
+title: QGPTStreamOutput | Python SDK
+---
+
 # QGPTStreamOutput
 
 This is the out for the /qgpt/stream endpoint.  200: success 401: invalid authentication/api key 429: Rate limit/Quota exceeded 500: server had an error 503: the engine is currently overloaded

@@ -1,3 +1,7 @@
+---
+title: ClassificationGenericEnum | Dart SDK
+---
+
 # ClassificationGenericEnum
 
 ## Load the model package

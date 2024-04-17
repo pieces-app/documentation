@@ -1,3 +1,7 @@
+---
+title: Backups API | Kotlin SDK
+---
+
 # Backups API
 
 All URIs are relative to *http://localhost:1000*
@@ -23,16 +27,16 @@ This take a local database and ensure that it is backed up to the cloud.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val seededBackup : SeededBackup =  // SeededBackup | 
 try {
     val result : Backup = apiInstance.backupsCreateNewBackup(seededBackup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsCreateNewBackup")
+    println("4xx response calling Backups API#backupsCreateNewBackup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsCreateNewBackup")
+    println("5xx response calling Backups API#backupsCreateNewBackup")
     e.printStackTrace()
 }
 ```
@@ -69,16 +73,16 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val seededBackup : SeededBackup =  // SeededBackup | 
 try {
     val result : BackupStreamedProgress = apiInstance.backupsCreateNewBackupStreamed(seededBackup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsCreateNewBackupStreamed")
+    println("4xx response calling Backups API#backupsCreateNewBackupStreamed")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsCreateNewBackupStreamed")
+    println("5xx response calling Backups API#backupsCreateNewBackupStreamed")
     e.printStackTrace()
 }
 ```
@@ -115,16 +119,16 @@ This will delete a specific backup from the cloud.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 val backup2 : Backup =  // Backup | 
 try {
     apiInstance.backupsDeleteSpecificBackup(backup, backup2)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsDeleteSpecificBackup")
+    println("4xx response calling Backups API#backupsDeleteSpecificBackup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsDeleteSpecificBackup")
+    println("5xx response calling Backups API#backupsDeleteSpecificBackup")
     e.printStackTrace()
 }
 ```
@@ -147,7 +151,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
@@ -162,15 +166,15 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 try {
     val result : Backups = apiInstance.backupsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsSnapshot")
+    println("4xx response calling Backups API#backupsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsSnapshot")
+    println("5xx response calling Backups API#backupsSnapshot")
     e.printStackTrace()
 }
 ```

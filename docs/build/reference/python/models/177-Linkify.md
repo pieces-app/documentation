@@ -1,3 +1,7 @@
+---
+title: Linkify | Python SDK
+---
+
 # Linkify
 
 This is the incoming linkify model.  if access is PRIVATE then please provide and array of users to enable the link for. 

@@ -1,10 +1,14 @@
+---
+title: Github API | TypeScript SDK
+---
+
 # Github API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**importGithubGists**](GithubApi#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
+[**importGithubGists**](Github API#importgithubgists) | **POST** /github/gists/import | /github/gists/import [POST]
 
 
 ## **importGithubGists** {#importgithubgists}
@@ -18,7 +22,7 @@ This will attempt to get all the gist availble and return them to the user as a 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.GithubApi(configuration)
+const apiInstance = new Pieces.Github API(configuration)
 
 const body: Pieces.ImportGithubGistsRequest = {
     // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
@@ -47,7 +51,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

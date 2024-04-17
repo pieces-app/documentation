@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamEvent | Dart SDK
+---
+
 # SeededWorkstreamEvent
 
 ## Load the model package

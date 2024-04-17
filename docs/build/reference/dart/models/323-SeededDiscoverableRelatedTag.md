@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableRelatedTag | Dart SDK
+---
+
 # SeededDiscoverableRelatedTag
 
 ## Load the model package

@@ -1,10 +1,14 @@
+---
+title: OpenAI API | TypeScript SDK
+---
+
 # OpenAI API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**openAiModelsList**](OpenAIApi#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
+[**openAiModelsList**](OpenAI API#openaimodelslist) | **POST** /open_ai/models/list | /open_ai/models/list [POST]
 
 
 ## **openAiModelsList** {#openaimodelslist}
@@ -18,7 +22,7 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OpenAIApi(configuration)
+const apiInstance = new Pieces.OpenAI API(configuration)
 
 const body: Pieces.OpenAiModelsListRequest = {
     // OpenAIModelsListInput (optional)
@@ -44,7 +48,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

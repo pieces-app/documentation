@@ -1,3 +1,7 @@
+---
+title: SeededWebsite | TypeScript SDK
+---
+
 
 # SeededWebsite
 

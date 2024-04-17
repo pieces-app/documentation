@@ -1,12 +1,16 @@
+---
+title: AnchorPoint API | TypeScript SDK
+---
+
 # AnchorPoint API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorPointScoresIncrement**](AnchorPointApi#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | \'/anchor_point/\{anchor_point\}/scores/increment\' [POST]
-[**anchorPointSpecificAnchorPointSnapshot**](AnchorPointApi#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
-[**anchorPointUpdate**](AnchorPointApi#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
+[**anchorPointScoresIncrement**](AnchorPoint API#anchorpointscoresincrement) | **POST** /anchor_point/\{anchor_point\}/scores/increment | \'/anchor_point/\{anchor_point\}/scores/increment\' [POST]
+[**anchorPointSpecificAnchorPointSnapshot**](AnchorPoint API#anchorpointspecificanchorpointsnapshot) | **GET** /anchor_point/\{anchor_point\} | /anchor_point/\{anchor_point\} [GET]
+[**anchorPointUpdate**](AnchorPoint API#anchorpointupdate) | **POST** /anchor_point/update | /anchor_point/update [POST]
 
 
 ## **anchorPointScoresIncrement** {#anchorpointscoresincrement}
@@ -20,7 +24,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPointApi(configuration)
+const apiInstance = new Pieces.AnchorPoint API(configuration)
 
 const body: Pieces.AnchorPointScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -49,7 +53,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -69,7 +73,7 @@ This will get a snapshot of a single anchorPoint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPointApi(configuration)
+const apiInstance = new Pieces.AnchorPoint API(configuration)
 
 const body: Pieces.AnchorPointSpecificAnchorPointSnapshotRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -98,7 +102,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -118,7 +122,7 @@ This will update a specific anchorPoint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPointApi(configuration)
+const apiInstance = new Pieces.AnchorPoint API(configuration)
 
 const body: Pieces.AnchorPointUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -147,7 +151,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

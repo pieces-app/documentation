@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEventIdentifierDescriptionPairs | TypeScript SDK
+---
+
 
 # SeededTrackedInteractionEventIdentifierDescriptionPairs
 

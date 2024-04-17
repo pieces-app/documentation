@@ -1,3 +1,7 @@
+---
+title: OCRAnalyses | Dart SDK
+---
+
 # OCRAnalyses
 
 ## Load the model package

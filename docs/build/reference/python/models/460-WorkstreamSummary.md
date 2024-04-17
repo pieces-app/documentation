@@ -1,3 +1,7 @@
+---
+title: WorkstreamSummary | Python SDK
+---
+
 # WorkstreamSummary
 
 This is representation or a summarized version of the highly relevant WorkstreamEvent events from a given time period, 1 day, 1 week, 1 month, dependinng on your given flow.

@@ -1,3 +1,7 @@
+---
+title: ConversationSummarizeInput | TypeScript SDK
+---
+
 
 # ConversationSummarizeInput
 

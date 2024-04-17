@@ -1,3 +1,7 @@
+---
+title: AssetsSearchWithFiltersOutput | Dart SDK
+---
+
 # AssetsSearchWithFiltersOutput
 
 ## Load the model package

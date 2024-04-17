@@ -1,3 +1,7 @@
+---
+title: Model | Dart SDK
+---
+
 # Model
 
 ## Load the model package

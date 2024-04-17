@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamSummary | Python SDK
+---
+
 # SeededWorkstreamSummary
 
 This is a seeded version of a WorkstreamSummary

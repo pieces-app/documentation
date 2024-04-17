@@ -1,3 +1,7 @@
+---
+title: GitHubGistDistribution | Dart SDK
+---
+
 # GitHubGistDistribution
 
 ## Load the model package

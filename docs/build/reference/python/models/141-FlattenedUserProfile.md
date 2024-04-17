@@ -1,3 +1,7 @@
+---
+title: FlattenedUserProfile | Python SDK
+---
+
 # FlattenedUserProfile
 
 This is a FlattenedUserProfile that includes information that is not sensative in relation to a user.

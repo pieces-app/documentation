@@ -1,3 +1,7 @@
+---
+title: ReferencedTag | Python SDK
+---
+
 # ReferencedTag
 
 [DAG Safe] version of a Tag Model. 

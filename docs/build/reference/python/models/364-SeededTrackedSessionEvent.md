@@ -1,3 +1,7 @@
+---
+title: SeededTrackedSessionEvent | Python SDK
+---
+
 # SeededTrackedSessionEvent
 
 A simple model to capture a Tracked Session to be send to the Connection API

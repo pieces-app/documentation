@@ -1,3 +1,7 @@
+---
+title: User API | Kotlin SDK
+---
+
 # User API
 
 All URIs are relative to *http://localhost:1000*
@@ -28,14 +32,14 @@ An endpoint to clear the current user.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     apiInstance.clearUser()
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#clearUser")
+    println("4xx response calling User API#clearUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#clearUser")
+    println("5xx response calling User API#clearUser")
     e.printStackTrace()
 }
 ```
@@ -69,15 +73,15 @@ This will refresh a user.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : UserProfile = apiInstance.refreshUser()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#refreshUser")
+    println("4xx response calling User API#refreshUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#refreshUser")
+    println("5xx response calling User API#refreshUser")
     e.printStackTrace()
 }
 ```
@@ -111,16 +115,16 @@ This will select the current user.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val auth0User : Auth0User =  // Auth0User | 
 try {
     val result : UserProfile = apiInstance.selectUser(auth0User)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#selectUser")
+    println("4xx response calling User API#selectUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#selectUser")
+    println("5xx response calling User API#selectUser")
     e.printStackTrace()
 }
 ```
@@ -163,15 +167,15 @@ Provides a WebSocket connection that streams user data.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : UserProfile = apiInstance.streamUser()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#streamUser")
+    println("4xx response calling User API#streamUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#streamUser")
+    println("5xx response calling User API#streamUser")
     e.printStackTrace()
 }
 ```
@@ -205,16 +209,16 @@ This will update a specific user in the database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userProfile : UserProfile =  // UserProfile | 
 try {
     val result : UserProfile = apiInstance.updateUser(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#updateUser")
+    println("4xx response calling User API#updateUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#updateUser")
+    println("5xx response calling User API#updateUser")
     e.printStackTrace()
 }
 ```
@@ -251,16 +255,16 @@ This will be an endpoint to give access or remove access immediately from a give
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userBetaStatus : UserBetaStatus =  // UserBetaStatus | 
 try {
     val result : UserBetaStatus = apiInstance.userBetaStatus(userBetaStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userBetaStatus")
+    println("4xx response calling User API#userBetaStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userBetaStatus")
+    println("5xx response calling User API#userBetaStatus")
     e.printStackTrace()
 }
 ```
@@ -297,15 +301,15 @@ This will retrieve all the users Providers that are connected to this account.  
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : ReturnedUserProfile = apiInstance.userProviders()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userProviders")
+    println("4xx response calling User API#userProviders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userProviders")
+    println("5xx response calling User API#userProviders")
     e.printStackTrace()
 }
 ```
@@ -339,15 +343,15 @@ This will return a snapshot of the current user. This will return our ReturnUser
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : ReturnedUserProfile = apiInstance.userSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userSnapshot")
+    println("4xx response calling User API#userSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userSnapshot")
+    println("5xx response calling User API#userSnapshot")
     e.printStackTrace()
 }
 ```
@@ -381,16 +385,16 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \&q
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userProfile : UserProfile =  // UserProfile | This will take an update userProfile, with the updated vanity name!
 try {
     val result : UserProfile = apiInstance.userUpdateVanity(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userUpdateVanity")
+    println("4xx response calling User API#userUpdateVanity")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userUpdateVanity")
+    println("5xx response calling User API#userUpdateVanity")
     e.printStackTrace()
 }
 ```

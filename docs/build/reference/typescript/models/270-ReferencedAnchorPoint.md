@@ -1,3 +1,7 @@
+---
+title: ReferencedAnchorPoint | TypeScript SDK
+---
+
 
 # ReferencedAnchorPoint
 

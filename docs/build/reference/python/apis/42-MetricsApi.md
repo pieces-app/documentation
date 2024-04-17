@@ -1,3 +1,7 @@
+---
+title: Metrics API | Python SDK
+---
+
 # Metrics API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MetricsApi(api_client)
+    api_instance = Metrics API(api_client)
 
     try:
         # /metrics/formats [GET]
@@ -98,7 +102,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MetricsApi(api_client)
+    api_instance = Metrics API(api_client)
 
     try:
         # /metrics/formats/ordered [GET]

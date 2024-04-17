@@ -1,3 +1,7 @@
+---
+title: GraphicalImageStatistics | Kotlin SDK
+---
+
 
 # GraphicalImageStatistics
 

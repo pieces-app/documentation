@@ -1,3 +1,7 @@
+---
+title: Sensitives | TypeScript SDK
+---
+
 
 # Sensitives
 

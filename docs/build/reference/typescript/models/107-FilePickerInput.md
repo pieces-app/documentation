@@ -1,3 +1,7 @@
+---
+title: FilePickerInput | TypeScript SDK
+---
+
 
 # FilePickerInput
 

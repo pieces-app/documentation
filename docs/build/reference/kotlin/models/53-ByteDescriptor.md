@@ -1,3 +1,7 @@
+---
+title: ByteDescriptor | Kotlin SDK
+---
+
 
 # ByteDescriptor
 

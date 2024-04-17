@@ -1,3 +1,7 @@
+---
+title: SeededShare | TypeScript SDK
+---
+
 
 # SeededShare
 

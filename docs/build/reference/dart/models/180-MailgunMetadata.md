@@ -1,3 +1,7 @@
+---
+title: MailgunMetadata | Dart SDK
+---
+
 # MailgunMetadata
 
 ## Load the model package

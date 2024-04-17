@@ -1,3 +1,7 @@
+---
+title: MechanismEnum | Dart SDK
+---
+
 # MechanismEnum
 
 ## Load the model package

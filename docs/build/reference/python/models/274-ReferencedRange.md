@@ -1,3 +1,7 @@
+---
+title: ReferencedRange | Python SDK
+---
+
 # ReferencedRange
 
 This is a minimal version of a Range, with mainly an Id.

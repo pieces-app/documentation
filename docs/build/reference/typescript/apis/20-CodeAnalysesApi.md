@@ -1,10 +1,14 @@
+---
+title: CodeAnalyses API | TypeScript SDK
+---
+
 # CodeAnalyses API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**codeAnalysesSnapshot**](CodeAnalysesApi#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
+[**codeAnalysesSnapshot**](CodeAnalyses API#codeanalysessnapshot) | **GET** /code_analyses | Your GET endpoint
 
 
 ## **codeAnalysesSnapshot** {#codeanalysessnapshot}
@@ -18,7 +22,7 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.CodeAnalysesApi(configuration)
+const apiInstance = new Pieces.CodeAnalyses API(configuration)
 
 apiInstance.codeAnalysesSnapshot().then((data: CodeAnalyses) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -36,7 +40,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

@@ -1,12 +1,16 @@
+---
+title: Distributions API | TypeScript SDK
+---
+
 # Distributions API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
-[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions | /distributions [GET]
+[**distributionsCreateNewDistribution**](Distributions API#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
+[**distributionsDeleteSpecificDistribution**](Distributions API#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
+[**distributionsSnapshot**](Distributions API#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
 ## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
@@ -20,7 +24,7 @@ This will create a new distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DistributionsApi(configuration)
+const apiInstance = new Pieces.Distributions API(configuration)
 
 const body: Pieces.DistributionsCreateNewDistributionRequest = {
     // SeededDistribution |  (optional)
@@ -46,7 +50,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -66,7 +70,7 @@ This will delete a specific distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DistributionsApi(configuration)
+const apiInstance = new Pieces.Distributions API(configuration)
 
 const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
     // string | This is the uuid of a specific distribution.
@@ -92,7 +96,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -112,7 +116,7 @@ This will get a specific snapshot of all our distributions.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DistributionsApi(configuration)
+const apiInstance = new Pieces.Distributions API(configuration)
 
 apiInstance.distributionsSnapshot().then((data: Distributions) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -130,7 +134,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

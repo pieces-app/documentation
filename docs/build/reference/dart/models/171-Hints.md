@@ -1,3 +1,7 @@
+---
+title: Hints | Dart SDK
+---
+
 # Hints
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs | Dart SDK
+---
+
 # AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs
 
 ## Load the model package

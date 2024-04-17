@@ -1,3 +1,7 @@
+---
+title: ImageAnalyses | Python SDK
+---
+
 # ImageAnalyses
 
 

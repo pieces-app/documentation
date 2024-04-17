@@ -1,3 +1,7 @@
+---
+title: PseudoAssets | TypeScript SDK
+---
+
 
 # PseudoAssets
 

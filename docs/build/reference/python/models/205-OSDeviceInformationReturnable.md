@@ -1,3 +1,7 @@
+---
+title: OSDeviceInformationReturnable | Python SDK
+---
+
 # OSDeviceInformationReturnable
 
 This is the returnable model for the /os/device/information.

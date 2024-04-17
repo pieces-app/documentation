@@ -1,3 +1,7 @@
+---
+title: SeededActivity | TypeScript SDK
+---
+
 
 # SeededActivity
 

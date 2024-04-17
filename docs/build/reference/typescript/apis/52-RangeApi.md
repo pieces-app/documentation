@@ -1,16 +1,20 @@
+---
+title: Range API | TypeScript SDK
+---
+
 # Range API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**rangeAssociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} [POST]
-[**rangeAssociateWorkstreamSummary**](RangeApi#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams**](RangeApi#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} [POST]
-[**rangeDisassociateWorkstreamSummary**](RangeApi#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**rangeScoresIncrement**](RangeApi#rangescoresincrement) | **POST** /range/\{range\}/scores/increment | \'/range/\{range\}/scores/increment\' [POST]
-[**rangeUpdate**](RangeApi#rangeupdate) | **POST** /range/update | /range/update [POST]
-[**rangesSpecificRangeSnapshot**](RangeApi#rangesspecificrangesnapshot) | **GET** /range/\{range\} | /range/\{range\} [GET]
+[**rangeAssociateConversationGroundingTemporalRangeWorkstreams**](Range API#rangeassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/associate/\{conversation\} [POST]
+[**rangeAssociateWorkstreamSummary**](Range API#rangeassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**rangeDisassociateConversationGroundingTemporalRangeWorkstreams**](Range API#rangedisassociateconversationgroundingtemporalrangeworkstreams) | **POST** /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} | /range/\{range\}/conversations/grounding/temporal_range/workstreams/disassociate/\{conversation\} [POST]
+[**rangeDisassociateWorkstreamSummary**](Range API#rangedisassociateworkstreamsummary) | **POST** /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} | /range/\{range\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**rangeScoresIncrement**](Range API#rangescoresincrement) | **POST** /range/\{range\}/scores/increment | \'/range/\{range\}/scores/increment\' [POST]
+[**rangeUpdate**](Range API#rangeupdate) | **POST** /range/update | /range/update [POST]
+[**rangesSpecificRangeSnapshot**](Range API#rangesspecificrangesnapshot) | **GET** /range/\{range\} | /range/\{range\} [GET]
 
 
 ## **rangeAssociateConversationGroundingTemporalRangeWorkstreams** {#rangeassociateconversationgroundingtemporalrangeworkstreams}
@@ -24,7 +28,7 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeAssociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -53,7 +57,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -73,7 +77,7 @@ This will associate a range with a workstream summary. This will do the same thi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -102,7 +106,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -122,7 +126,7 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeDisassociateConversationGroundingTemporalRangeWorkstreamsRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -151,7 +155,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -171,7 +175,7 @@ This will enable us to disassociate a range from a workstream summary. This will
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -200,7 +204,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -220,7 +224,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -249,7 +253,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -269,7 +273,7 @@ This will update a specific range.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangeUpdateRequest = {
     // Range (optional)
@@ -295,7 +299,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -315,7 +319,7 @@ This will get a snapshot of a single range.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RangeApi(configuration)
+const apiInstance = new Pieces.Range API(configuration)
 
 const body: Pieces.RangesSpecificRangeSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific range.
@@ -341,7 +345,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

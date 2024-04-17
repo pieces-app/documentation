@@ -1,3 +1,7 @@
+---
+title: FlattenedSensitives | Dart SDK
+---
+
 # FlattenedSensitives
 
 ## Load the model package

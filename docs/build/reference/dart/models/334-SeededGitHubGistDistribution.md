@@ -1,3 +1,7 @@
+---
+title: SeededGitHubGistDistribution | Dart SDK
+---
+
 # SeededGitHubGistDistribution
 
 ## Load the model package

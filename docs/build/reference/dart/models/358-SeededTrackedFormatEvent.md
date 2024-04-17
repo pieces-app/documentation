@@ -1,3 +1,7 @@
+---
+title: SeededTrackedFormatEvent | Dart SDK
+---
+
 # SeededTrackedFormatEvent
 
 ## Load the model package

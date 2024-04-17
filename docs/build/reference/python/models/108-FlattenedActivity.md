@@ -1,3 +1,7 @@
+---
+title: FlattenedActivity | Python SDK
+---
+
 # FlattenedActivity
 
 Note: - if mechanism == internal we will not display to the user.

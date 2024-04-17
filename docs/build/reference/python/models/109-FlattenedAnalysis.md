@@ -1,3 +1,7 @@
+---
+title: FlattenedAnalysis | Python SDK
+---
+
 # FlattenedAnalysis
 
 

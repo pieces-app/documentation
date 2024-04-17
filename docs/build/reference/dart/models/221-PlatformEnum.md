@@ -1,3 +1,7 @@
+---
+title: PlatformEnum | Dart SDK
+---
+
 # PlatformEnum
 
 ## Load the model package

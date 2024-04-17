@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamEvent | Dart SDK
+---
+
 # ReferencedWorkstreamEvent
 
 ## Load the model package

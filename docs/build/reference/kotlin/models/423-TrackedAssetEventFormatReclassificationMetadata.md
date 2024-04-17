@@ -1,3 +1,7 @@
+---
+title: TrackedAssetEventFormatReclassificationMetadata | Kotlin SDK
+---
+
 
 # TrackedAssetEventFormatReclassificationMetadata
 

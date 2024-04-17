@@ -1,11 +1,15 @@
+---
+title: Allocation API | TypeScript SDK
+---
+
 # Allocation API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
+[**allocationSnapshot**](Allocation API#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
+[**allocationUpdate**](Allocation API#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
 ## **allocationSnapshot** {#allocationsnapshot}
@@ -19,7 +23,7 @@ This will get a snapshot of a specific allocation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationApi(configuration)
+const apiInstance = new Pieces.Allocation API(configuration)
 
 const body: Pieces.AllocationSnapshotRequest = {
     // string
@@ -45,7 +49,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -65,7 +69,7 @@ This will update a specific allocation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationApi(configuration)
+const apiInstance = new Pieces.Allocation API(configuration)
 
 const body: Pieces.AllocationUpdateRequest = {
     // AllocationCloud (optional)
@@ -91,7 +95,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

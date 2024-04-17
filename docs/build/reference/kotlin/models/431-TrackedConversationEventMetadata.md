@@ -1,3 +1,7 @@
+---
+title: TrackedConversationEventMetadata | Kotlin SDK
+---
+
 
 # TrackedConversationEventMetadata
 

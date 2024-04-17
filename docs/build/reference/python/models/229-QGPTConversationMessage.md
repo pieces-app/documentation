@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessage | Python SDK
+---
+
 # QGPTConversationMessage
 
 This will take a single message, and a role.

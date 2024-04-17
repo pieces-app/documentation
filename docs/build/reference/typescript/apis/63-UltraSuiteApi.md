@@ -1,10 +1,14 @@
+---
+title: UltraSuite API | TypeScript SDK
+---
+
 # UltraSuite API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
+[**assetsCreateUltraSuiteAsset**](UltraSuite API#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
 ## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}
@@ -18,7 +22,7 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UltraSuiteApi(configuration)
+const apiInstance = new Pieces.UltraSuite API(configuration)
 
 const body: Pieces.AssetsCreateUltraSuiteAssetRequest = {
     // SeededUltraSuiteAsset (optional)

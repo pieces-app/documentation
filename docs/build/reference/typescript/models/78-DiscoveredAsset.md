@@ -1,3 +1,7 @@
+---
+title: DiscoveredAsset | TypeScript SDK
+---
+
 
 # DiscoveredAsset
 

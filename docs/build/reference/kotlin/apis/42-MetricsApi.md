@@ -1,3 +1,7 @@
+---
+title: Metrics API | Kotlin SDK
+---
+
 # Metrics API
 
 All URIs are relative to *http://localhost:1000*
@@ -21,15 +25,15 @@ This is going to get a snapshot of our FormatsMetrics
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = MetricsApi()
+val apiInstance = Metrics API()
 try {
     val result : FormatsMetrics = apiInstance.getMetricsFormats()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling MetricsApi#getMetricsFormats")
+    println("4xx response calling Metrics API#getMetricsFormats")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling MetricsApi#getMetricsFormats")
+    println("5xx response calling Metrics API#getMetricsFormats")
     e.printStackTrace()
 }
 ```
@@ -63,15 +67,15 @@ This will return a list of code formats in desc order from most to least formats
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = MetricsApi()
+val apiInstance = Metrics API()
 try {
     val result : OrderedMetrics = apiInstance.metricsFormatsOrdered()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling MetricsApi#metricsFormatsOrdered")
+    println("4xx response calling Metrics API#metricsFormatsOrdered")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling MetricsApi#metricsFormatsOrdered")
+    println("5xx response calling Metrics API#metricsFormatsOrdered")
     e.printStackTrace()
 }
 ```

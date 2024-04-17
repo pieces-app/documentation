@@ -1,13 +1,17 @@
+---
+title: WorkstreamPatternEngine API | TypeScript SDK
+---
+
 # WorkstreamPatternEngine API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workstreamPatternEngineProcessorsVisionActivate**](WorkstreamPatternEngineApi#workstreampatternengineprocessorsvisionactivate) | **POST** /workstream_pattern_engine/processors/vision/activate | /workstream_pattern_engine/processors/vision/activate [POST]
-[**workstreamPatternEngineProcessorsVisionDataClear**](WorkstreamPatternEngineApi#workstreampatternengineprocessorsvisiondataclear) | **POST** /workstream_pattern_engine/processors/vision/data/clear | /workstream_pattern_engine/processors/vision/data/clear [POST]
-[**workstreamPatternEngineProcessorsVisionDeactivate**](WorkstreamPatternEngineApi#workstreampatternengineprocessorsvisiondeactivate) | **POST** /workstream_pattern_engine/processors/vision/deactivate | /workstream_pattern_engine/processors/vision/deactivate [POST]
-[**workstreamPatternEngineProcessorsVisionStatus**](WorkstreamPatternEngineApi#workstreampatternengineprocessorsvisionstatus) | **GET** /workstream_pattern_engine/processors/vision/status | /workstream_pattern_engine/processors/vision/status [GET]
+[**workstreamPatternEngineProcessorsVisionActivate**](WorkstreamPatternEngine API#workstreampatternengineprocessorsvisionactivate) | **POST** /workstream_pattern_engine/processors/vision/activate | /workstream_pattern_engine/processors/vision/activate [POST]
+[**workstreamPatternEngineProcessorsVisionDataClear**](WorkstreamPatternEngine API#workstreampatternengineprocessorsvisiondataclear) | **POST** /workstream_pattern_engine/processors/vision/data/clear | /workstream_pattern_engine/processors/vision/data/clear [POST]
+[**workstreamPatternEngineProcessorsVisionDeactivate**](WorkstreamPatternEngine API#workstreampatternengineprocessorsvisiondeactivate) | **POST** /workstream_pattern_engine/processors/vision/deactivate | /workstream_pattern_engine/processors/vision/deactivate [POST]
+[**workstreamPatternEngineProcessorsVisionStatus**](WorkstreamPatternEngine API#workstreampatternengineprocessorsvisionstatus) | **GET** /workstream_pattern_engine/processors/vision/status | /workstream_pattern_engine/processors/vision/status [GET]
 
 
 ## **workstreamPatternEngineProcessorsVisionActivate** {#workstreampatternengineprocessorsvisionactivate}
@@ -21,7 +25,7 @@ This will activate your Workstream Pattern Engine. This is used to aggregate inf
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamPatternEngineApi(configuration)
+const apiInstance = new Pieces.WorkstreamPatternEngine API(configuration)
 
 const body: Pieces.WorkstreamPatternEngineProcessorsVisionActivateRequest = {
     // WorkstreamPatternEngineStatus (optional)
@@ -47,7 +51,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -68,7 +72,7 @@ This will clear the data for the Workstream Pattern Engine, specifically for our
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamPatternEngineApi(configuration)
+const apiInstance = new Pieces.WorkstreamPatternEngine API(configuration)
 
 const body: Pieces.WorkstreamPatternEngineProcessorsVisionDataClearRequest = {
     // WorkstreamPatternEngineDataCleanupRequest (optional)
@@ -94,7 +98,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -115,7 +119,7 @@ This will deactivate your Workstream Pattern Engine. This is used to aggregate i
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamPatternEngineApi(configuration)
+const apiInstance = new Pieces.WorkstreamPatternEngine API(configuration)
 
 const body: Pieces.WorkstreamPatternEngineProcessorsVisionDeactivateRequest = {
     // WorkstreamPatternEngineStatus (optional)
@@ -141,7 +145,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -162,7 +166,7 @@ This will get a snapshot of the status your Workstream Pattern Engine. This is u
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamPatternEngineApi(configuration)
+const apiInstance = new Pieces.WorkstreamPatternEngine API(configuration)
 
 apiInstance.workstreamPatternEngineProcessorsVisionStatus().then((data: WorkstreamPatternEngineStatus) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -180,7 +184,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

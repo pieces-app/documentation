@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | Dart SDK
+---
+
 # GraphicalOCRDescriptiveStatisticsConfidence
 
 ## Load the model package

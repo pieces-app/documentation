@@ -1,3 +1,7 @@
+---
+title: FlattenedOCRAnalysis | Dart SDK
+---
+
 # FlattenedOCRAnalysis
 
 ## Load the model package

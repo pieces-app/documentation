@@ -1,3 +1,7 @@
+---
+title: ImageAnalyses | TypeScript SDK
+---
+
 
 # ImageAnalyses
 

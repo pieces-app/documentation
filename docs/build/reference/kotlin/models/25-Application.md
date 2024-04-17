@@ -1,3 +1,7 @@
+---
+title: Application | Kotlin SDK
+---
+
 
 # Application
 

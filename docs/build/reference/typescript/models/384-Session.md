@@ -1,3 +1,7 @@
+---
+title: Session | TypeScript SDK
+---
+
 
 # Session
 

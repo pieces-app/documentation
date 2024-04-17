@@ -1,3 +1,7 @@
+---
+title: Auth0UserBetaStatus | TypeScript SDK
+---
+
 
 # Auth0UserBetaStatus
 

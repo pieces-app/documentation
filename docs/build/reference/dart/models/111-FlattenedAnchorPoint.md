@@ -1,3 +1,7 @@
+---
+title: FlattenedAnchorPoint | Dart SDK
+---
+
 # FlattenedAnchorPoint
 
 ## Load the model package

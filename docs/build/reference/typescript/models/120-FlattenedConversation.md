@@ -1,3 +1,7 @@
+---
+title: FlattenedConversation | TypeScript SDK
+---
+
 
 # FlattenedConversation
 

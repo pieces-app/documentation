@@ -1,3 +1,7 @@
+---
+title: QGPTAgentRoutes | TypeScript SDK
+---
+
 
 # QGPTAgentRoutes
 

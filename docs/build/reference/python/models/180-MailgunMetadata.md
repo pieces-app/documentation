@@ -1,3 +1,7 @@
+---
+title: MailgunMetadata | Python SDK
+---
+
 # MailgunMetadata
 
 TODO add additional properties. TODO eventually modify this model to look like the response from Mailgun.

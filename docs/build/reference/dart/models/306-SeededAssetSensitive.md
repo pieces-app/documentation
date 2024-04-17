@@ -1,3 +1,7 @@
+---
+title: SeededAssetSensitive | Dart SDK
+---
+
 # SeededAssetSensitive
 
 ## Load the model package

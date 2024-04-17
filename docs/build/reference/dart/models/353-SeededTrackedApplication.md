@@ -1,3 +1,7 @@
+---
+title: SeededTrackedApplication | Dart SDK
+---
+
 # SeededTrackedApplication
 
 ## Load the model package

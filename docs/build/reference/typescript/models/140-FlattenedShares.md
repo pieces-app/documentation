@@ -1,3 +1,7 @@
+---
+title: FlattenedShares | TypeScript SDK
+---
+
 
 # FlattenedShares
 

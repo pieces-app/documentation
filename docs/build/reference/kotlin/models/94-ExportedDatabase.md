@@ -1,3 +1,7 @@
+---
+title: ExportedDatabase | Kotlin SDK
+---
+
 
 # ExportedDatabase
 

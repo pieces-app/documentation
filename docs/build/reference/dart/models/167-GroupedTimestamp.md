@@ -1,3 +1,7 @@
+---
+title: GroupedTimestamp | Dart SDK
+---
+
 # GroupedTimestamp
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: Formats API | Python SDK
+---
+
 # Formats API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatsApi(api_client)
+    api_instance = Formats API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -102,7 +106,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatsApi(api_client)
+    api_instance = Formats API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 

@@ -1,10 +1,14 @@
+---
+title: Relationships API | TypeScript SDK
+---
+
 # Relationships API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**relationshipsSnapshot**](RelationshipsApi#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
+[**relationshipsSnapshot**](Relationships API#relationshipssnapshot) | **GET** /relationships | /relationships [GET]
 
 
 ## **relationshipsSnapshot** {#relationshipssnapshot}
@@ -18,7 +22,7 @@ This will return all of the relationships that exists within your pieces db.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.RelationshipsApi(configuration)
+const apiInstance = new Pieces.Relationships API(configuration)
 
 apiInstance.relationshipsSnapshot().then((data: Relationships) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -36,7 +40,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

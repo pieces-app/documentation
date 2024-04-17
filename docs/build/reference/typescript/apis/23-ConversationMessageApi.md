@@ -1,15 +1,19 @@
+---
+title: ConversationMessage API | TypeScript SDK
+---
+
 # ConversationMessage API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**messageAssociateAnnotation**](ConversationMessageApi#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
-[**messageDisassociateAnnotation**](ConversationMessageApi#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
-[**messageScoresIncrement**](ConversationMessageApi#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | \'/message/\{message\}/scores/increment\' [POST]
-[**messageSpecificMessageSnapshot**](ConversationMessageApi#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
-[**messageSpecificMessageUpdate**](ConversationMessageApi#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
-[**messageUpdateValue**](ConversationMessageApi#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
+[**messageAssociateAnnotation**](ConversationMessage API#messageassociateannotation) | **POST** /message/\{message\}/annotations/associate/\{annotation\} | /message/\{message\}/annotations/associate/\{annotation\} [POST]
+[**messageDisassociateAnnotation**](ConversationMessage API#messagedisassociateannotation) | **POST** /message/\{message\}/annotations/disassociate/\{annotation\} | /message/\{message\}/annotations/disassociate/\{annotation\} [POST]
+[**messageScoresIncrement**](ConversationMessage API#messagescoresincrement) | **POST** /message/\{message\}/scores/increment | \'/message/\{message\}/scores/increment\' [POST]
+[**messageSpecificMessageSnapshot**](ConversationMessage API#messagespecificmessagesnapshot) | **GET** /message/\{message\} | /message/\{message\} [GET]
+[**messageSpecificMessageUpdate**](ConversationMessage API#messagespecificmessageupdate) | **POST** /message/update | /message/update [GET]
+[**messageUpdateValue**](ConversationMessage API#messageupdatevalue) | **POST** /message/update/value | /message/update/value [POST]
 
 
 ## **messageAssociateAnnotation** {#messageassociateannotation}
@@ -23,7 +27,7 @@ This will associate a message with an annotation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageAssociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
@@ -52,7 +56,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -72,7 +76,7 @@ This will enable us to dissassociate a message from an annotation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageDisassociateAnnotationRequest = {
     // string | This is a specific annotation uuid.
@@ -101,7 +105,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -121,7 +125,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageScoresIncrementRequest = {
     // string | This is the uuid of a message.
@@ -150,7 +154,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -170,7 +174,7 @@ This will get a specific snapshot of a message
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageSpecificMessageSnapshotRequest = {
     // string | This is the uuid of a message.
@@ -199,7 +203,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -219,7 +223,7 @@ This will update a conversation message.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageSpecificMessageUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -248,7 +252,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -268,7 +272,7 @@ This will update the value of a conversation message.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ConversationMessageApi(configuration)
+const apiInstance = new Pieces.ConversationMessage API(configuration)
 
 const body: Pieces.MessageUpdateValueRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -297,7 +301,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

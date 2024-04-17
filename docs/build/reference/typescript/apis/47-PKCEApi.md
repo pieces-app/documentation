@@ -1,14 +1,18 @@
+---
+title: PKCE API | TypeScript SDK
+---
+
 # PKCE API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clearPKCE**](PKCEApi#clearpkce) | **POST** /pkce/clear | /pkce/clear [POST]
-[**generateCode**](PKCEApi#generatecode) | **POST** /pkce/code | /pkce/code [POST]
-[**generateToken**](PKCEApi#generatetoken) | **POST** /pkce/token | /pkce/token [POST]
-[**getChallenge**](PKCEApi#getchallenge) | **GET** /pkce/challenge | Your GET endpoint
-[**respondWithCode**](PKCEApi#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
+[**clearPKCE**](PKCE API#clearpkce) | **POST** /pkce/clear | /pkce/clear [POST]
+[**generateCode**](PKCE API#generatecode) | **POST** /pkce/code | /pkce/code [POST]
+[**generateToken**](PKCE API#generatetoken) | **POST** /pkce/token | /pkce/token [POST]
+[**getChallenge**](PKCE API#getchallenge) | **GET** /pkce/challenge | Your GET endpoint
+[**respondWithCode**](PKCE API#respondwithcode) | **POST** /pkce/response/code | /pkce/response/code [POST]
 
 
 ## **clearPKCE** {#clearpkce}
@@ -22,7 +26,7 @@ This is a function to Clear a PKCE Authentication Flow
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.PKCEApi(configuration)
+const apiInstance = new Pieces.PKCE API(configuration)
 
 apiInstance.clearPKCE().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -59,7 +63,7 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.PKCEApi(configuration)
+const apiInstance = new Pieces.PKCE API(configuration)
 
 const body: Pieces.GenerateCodeRequest = {
     // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
@@ -104,7 +108,7 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.PKCEApi(configuration)
+const apiInstance = new Pieces.PKCE API(configuration)
 
 const body: Pieces.GenerateTokenRequest = {
     // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
@@ -149,7 +153,7 @@ An endpoint that returns a PKCE Challenge
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.PKCEApi(configuration)
+const apiInstance = new Pieces.PKCE API(configuration)
 
 apiInstance.getChallenge().then((data: PKCE) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -186,7 +190,7 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.PKCEApi(configuration)
+const apiInstance = new Pieces.PKCE API(configuration)
 
 const body: Pieces.RespondWithCodeRequest = {
     // string | The PKCE Code to be used to access a Token.

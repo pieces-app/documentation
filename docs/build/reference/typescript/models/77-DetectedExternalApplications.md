@@ -1,3 +1,7 @@
+---
+title: DetectedExternalApplications | TypeScript SDK
+---
+
 
 # DetectedExternalApplications
 

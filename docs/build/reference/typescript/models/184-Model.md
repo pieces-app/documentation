@@ -1,3 +1,7 @@
+---
+title: Model | TypeScript SDK
+---
+
 
 # Model
 

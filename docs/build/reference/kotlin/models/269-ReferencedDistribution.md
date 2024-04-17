@@ -1,3 +1,7 @@
+---
+title: ReferencedDistribution | Kotlin SDK
+---
+
 
 # ReferencedDistribution
 

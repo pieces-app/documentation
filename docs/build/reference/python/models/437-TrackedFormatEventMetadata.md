@@ -1,3 +1,7 @@
+---
+title: TrackedFormatEventMetadata | Python SDK
+---
+
 # TrackedFormatEventMetadata
 
 

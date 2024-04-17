@@ -1,3 +1,7 @@
+---
+title: ReferencedWorkstreamEvent | Kotlin SDK
+---
+
 
 # ReferencedWorkstreamEvent
 

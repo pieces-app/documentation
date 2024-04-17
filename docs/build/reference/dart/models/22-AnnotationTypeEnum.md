@@ -1,3 +1,7 @@
+---
+title: AnnotationTypeEnum | Dart SDK
+---
+
 # AnnotationTypeEnum
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEventIdentifierDescriptionPairs | Python SDK
+---
+
 # SeededTrackedInteractionEventIdentifierDescriptionPairs
 
 

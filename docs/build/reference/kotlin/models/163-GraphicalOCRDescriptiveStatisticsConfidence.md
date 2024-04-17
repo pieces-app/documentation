@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | Kotlin SDK
+---
+
 
 # GraphicalOCRDescriptiveStatisticsConfidence
 

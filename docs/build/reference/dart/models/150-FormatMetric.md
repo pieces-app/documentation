@@ -1,3 +1,7 @@
+---
+title: FormatMetric | Dart SDK
+---
+
 # FormatMetric
 
 ## Load the model package

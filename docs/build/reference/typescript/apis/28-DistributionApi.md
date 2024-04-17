@@ -1,11 +1,15 @@
+---
+title: Distribution API | TypeScript SDK
+---
+
 # Distribution API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionUpdate**](DistributionApi#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
-[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
+[**distributionUpdate**](Distribution API#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
+[**distributionsSpecificDistributionSnapshot**](Distribution API#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
 ## **distributionUpdate** {#distributionupdate}
@@ -19,7 +23,7 @@ This will update a specific Distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DistributionApi(configuration)
+const apiInstance = new Pieces.Distribution API(configuration)
 
 const body: Pieces.DistributionUpdateRequest = {
     // Distribution (optional)
@@ -45,7 +49,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -65,7 +69,7 @@ This will get a specific snapshot of a distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.DistributionApi(configuration)
+const apiInstance = new Pieces.Distribution API(configuration)
 
 const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
     // string | This is the uuid of a specific distribution.
@@ -91,7 +95,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

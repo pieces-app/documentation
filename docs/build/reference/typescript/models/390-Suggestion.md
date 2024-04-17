@@ -1,3 +1,7 @@
+---
+title: Suggestion | TypeScript SDK
+---
+
 
 # Suggestion
 

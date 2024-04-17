@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilterEnum | TypeScript SDK
+---
+
 
 # TLPDirectedDiscoveryFilterEnum
 

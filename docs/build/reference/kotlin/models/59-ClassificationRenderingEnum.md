@@ -1,3 +1,7 @@
+---
+title: ClassificationRenderingEnum | Kotlin SDK
+---
+
 
 # ClassificationRenderingEnum
 

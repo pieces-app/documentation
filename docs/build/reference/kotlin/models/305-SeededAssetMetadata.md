@@ -1,3 +1,7 @@
+---
+title: SeededAssetMetadata | Kotlin SDK
+---
+
 
 # SeededAssetMetadata
 

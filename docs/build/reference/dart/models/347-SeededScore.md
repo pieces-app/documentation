@@ -1,3 +1,7 @@
+---
+title: SeededScore | Dart SDK
+---
+
 # SeededScore
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: ReferencedSensitive | TypeScript SDK
+---
+
 
 # ReferencedSensitive
 

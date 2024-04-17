@@ -1,3 +1,7 @@
+---
+title: Annotations API | Python SDK
+---
+
 # Annotations API
 
 All URIs are relative to *http://localhost:1000*
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     seeded_annotation = pieces_os_client.SeededAnnotation() # SeededAnnotation |  (optional)
 
     try:
@@ -68,7 +72,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -104,7 +108,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
 
     try:
@@ -134,7 +138,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -171,7 +175,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     annotation_type_filter = 'annotation_type_filter_example' # str | This is an AnnotationTypeEnum as a optional filter. (optional)
 
     try:
@@ -203,7 +207,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

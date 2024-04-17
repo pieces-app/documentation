@@ -1,3 +1,7 @@
+---
+title: SeededWebsite | Dart SDK
+---
+
 # SeededWebsite
 
 ## Load the model package

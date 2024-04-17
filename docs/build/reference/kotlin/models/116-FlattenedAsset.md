@@ -1,3 +1,7 @@
+---
+title: FlattenedAsset | Kotlin SDK
+---
+
 
 # FlattenedAsset
 

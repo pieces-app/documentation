@@ -1,3 +1,7 @@
+---
+title: DiscoveredHtmlWebpages | Kotlin SDK
+---
+
 
 # DiscoveredHtmlWebpages
 

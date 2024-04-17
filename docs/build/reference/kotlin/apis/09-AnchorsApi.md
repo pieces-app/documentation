@@ -1,3 +1,7 @@
+---
+title: Anchors API | Kotlin SDK
+---
+
 # Anchors API
 
 All URIs are relative to *http://localhost:1000*
@@ -23,16 +27,16 @@ This will update both the asset and the anchor reference, that will remove a anc
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorsApi()
+val apiInstance = Anchors API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.anchorDisassociateAsset(anchor, asset)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorsApi#anchorDisassociateAsset")
+    println("4xx response calling Anchors API#anchorDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorsApi#anchorDisassociateAsset")
+    println("5xx response calling Anchors API#anchorDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -55,7 +59,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorsCreateNewAnchor** {#anchorscreatenewanchor}
 > Anchor anchorsCreateNewAnchor(transferables, seededAnchor)
@@ -70,17 +74,17 @@ This will create a anchor and attach it to a specific asset(s) This will also en
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorsApi()
+val apiInstance = Anchors API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededAnchor : SeededAnchor =  // SeededAnchor | 
 try {
     val result : Anchor = apiInstance.anchorsCreateNewAnchor(transferables, seededAnchor)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorsApi#anchorsCreateNewAnchor")
+    println("4xx response calling Anchors API#anchorsCreateNewAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorsApi#anchorsCreateNewAnchor")
+    println("5xx response calling Anchors API#anchorsCreateNewAnchor")
     e.printStackTrace()
 }
 ```
@@ -118,15 +122,15 @@ This will delete a specific anchor!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorsApi()
+val apiInstance = Anchors API()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 try {
     apiInstance.anchorsDeleteSpecificAnchor(anchor)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorsApi#anchorsDeleteSpecificAnchor")
+    println("4xx response calling Anchors API#anchorsDeleteSpecificAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorsApi#anchorsDeleteSpecificAnchor")
+    println("5xx response calling Anchors API#anchorsDeleteSpecificAnchor")
     e.printStackTrace()
 }
 ```
@@ -148,7 +152,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **anchorsSnapshot** {#anchorssnapshot}
 > Anchors anchorsSnapshot(transferables)
@@ -163,16 +167,16 @@ This will get a snapshot of all your anchors.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorsApi()
+val apiInstance = Anchors API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Anchors = apiInstance.anchorsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorsApi#anchorsSnapshot")
+    println("4xx response calling Anchors API#anchorsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorsApi#anchorsSnapshot")
+    println("5xx response calling Anchors API#anchorsSnapshot")
     e.printStackTrace()
 }
 ```

@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceInput | TypeScript SDK
+---
+
 
 # QGPTRelevanceInput
 

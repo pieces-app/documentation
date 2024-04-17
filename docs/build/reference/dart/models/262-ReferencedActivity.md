@@ -1,3 +1,7 @@
+---
+title: ReferencedActivity | Dart SDK
+---
+
 # ReferencedActivity
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: ReturnedUserProfile | TypeScript SDK
+---
+
 
 # ReturnedUserProfile
 

@@ -1,3 +1,7 @@
+---
+title: ModelTypeEnum | TypeScript SDK
+---
+
 
 # ModelTypeEnum
 

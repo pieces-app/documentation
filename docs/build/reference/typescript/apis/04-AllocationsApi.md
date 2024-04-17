@@ -1,15 +1,19 @@
+---
+title: Allocations API | TypeScript SDK
+---
+
 # Allocations API
 
 All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocationsConnectNewCloud**](AllocationsApi#allocationsconnectnewcloud) | **POST** /allocations/connect | /allocations/connect [POST]
-[**allocationsCreateNewAllocation**](AllocationsApi#allocationscreatenewallocation) | **POST** /allocations/create | /allocations/create [POST]
-[**allocationsDeleteAllocation**](AllocationsApi#allocationsdeleteallocation) | **POST** /allocations/delete | /allocations/delete [POST]
-[**allocationsDisconnectCloud**](AllocationsApi#allocationsdisconnectcloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
-[**allocationsReconnectCloud**](AllocationsApi#allocationsreconnectcloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
-[**allocationsSnapshot**](AllocationsApi#allocationssnapshot) | **GET** /allocations | /allocations [GET]
+[**allocationsConnectNewCloud**](Allocations API#allocationsconnectnewcloud) | **POST** /allocations/connect | /allocations/connect [POST]
+[**allocationsCreateNewAllocation**](Allocations API#allocationscreatenewallocation) | **POST** /allocations/create | /allocations/create [POST]
+[**allocationsDeleteAllocation**](Allocations API#allocationsdeleteallocation) | **POST** /allocations/delete | /allocations/delete [POST]
+[**allocationsDisconnectCloud**](Allocations API#allocationsdisconnectcloud) | **POST** /allocations/disconnect | /allocations/disconnect [POST]
+[**allocationsReconnectCloud**](Allocations API#allocationsreconnectcloud) | **POST** /allocations/reconnect | /allocations/reconnect [POST]
+[**allocationsSnapshot**](Allocations API#allocationssnapshot) | **GET** /allocations | /allocations [GET]
 
 
 ## **allocationsConnectNewCloud** {#allocationsconnectnewcloud}
@@ -23,7 +27,7 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 const body: Pieces.AllocationsConnectNewCloudRequest = {
     // UserProfile (optional)
@@ -49,7 +53,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -70,7 +74,7 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 const body: Pieces.AllocationsCreateNewAllocationRequest = {
     // AllocationCloud (optional)
@@ -96,7 +100,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -116,7 +120,7 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 const body: Pieces.AllocationsDeleteAllocationRequest = {
     // AllocationCloud (optional)
@@ -142,7 +146,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -162,7 +166,7 @@ This will attempt to disconnect to a specific users cloud.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 const body: Pieces.AllocationsDisconnectCloudRequest = {
     // AllocationCloud (optional)
@@ -188,7 +192,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -208,7 +212,7 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 const body: Pieces.AllocationsReconnectCloudRequest = {
     // AllocationCloud (optional)
@@ -234,7 +238,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details
@@ -255,7 +259,7 @@ This is going to get a snapshot of all of the connected allocations.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AllocationsApi(configuration)
+const apiInstance = new Pieces.Allocations API(configuration)
 
 apiInstance.allocationsSnapshot().then((data: Allocations) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -273,7 +277,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
 ### HTTP response details

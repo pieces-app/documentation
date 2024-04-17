@@ -1,3 +1,7 @@
+---
+title: Hints | Python SDK
+---
+
 # Hints
 
 This is the plural of a Hint.

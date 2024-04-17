@@ -1,3 +1,7 @@
+---
+title: AllocationCloudStatus | TypeScript SDK
+---
+
 
 # AllocationCloudStatus
 

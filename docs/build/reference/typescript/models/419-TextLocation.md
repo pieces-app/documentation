@@ -1,3 +1,7 @@
+---
+title: TextLocation | TypeScript SDK
+---
+
 
 # TextLocation
 

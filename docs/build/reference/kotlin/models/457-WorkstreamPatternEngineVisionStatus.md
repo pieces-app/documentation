@@ -1,3 +1,7 @@
+---
+title: WorkstreamPatternEngineVisionStatus | Kotlin SDK
+---
+
 
 # WorkstreamPatternEngineVisionStatus
 

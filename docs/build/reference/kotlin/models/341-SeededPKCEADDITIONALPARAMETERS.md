@@ -1,3 +1,7 @@
+---
+title: SeededPKCEADDITIONALPARAMETERS | Kotlin SDK
+---
+
 
 # SeededPKCEADDITIONALPARAMETERS
 

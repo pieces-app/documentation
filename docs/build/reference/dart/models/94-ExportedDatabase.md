@@ -1,3 +1,7 @@
+---
+title: ExportedDatabase | Dart SDK
+---
+
 # ExportedDatabase
 
 ## Load the model package

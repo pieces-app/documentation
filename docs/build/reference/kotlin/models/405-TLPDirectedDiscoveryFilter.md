@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilter | Kotlin SDK
+---
+
 
 # TLPDirectedDiscoveryFilter
 
