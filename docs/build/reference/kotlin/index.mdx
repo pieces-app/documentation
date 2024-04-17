@@ -1,0 +1,109 @@
+---
+title: Kotlin SDK
+description: This getting started guide will help you get started with the Pieces for Developers Kotlin SDK.
+---
+
+import {MiniSpacer} from "/src/components/Spacers";
+import GridFlexRow from '/src/components/GridFlexRow'
+import CTAButton from '/src/components/CTAButton'
+
+## Introduction
+The Pieces SDK is a powerful code engine package designed for writing applications on top of [Pieces OS](/installation-getting-started/what-am-i-installing). It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) running as a backend service.
+
+## Installation
+To get started with the Pieces SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+
+    <GridFlexRow type={'start'}>
+      <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+      />
+    </GridFlexRow>
+
+2. **Add the SDK dependency**: Add the SDK dependency to your Dart project by adding the following to your `pubspec.yaml` file:
+
+    ```kotlin
+    dependencies {
+        implementation 'app.pieces.pieces-os-client:pieces-os-client:1.2.2'
+    }
+    ```
+
+## Getting Started
+
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
+
+Create a `main.kt` file and add the following code:
+
+```kotlin
+import app.pieces.pieces_os_client.infrastructure.*
+import app.pieces.pieces_os_client.models.*
+import app.pieces.pieces_os_client.apis.*
+
+val platform = System.getProperty("os.name").toLowerCase()
+val port = if (platform.contains("linux")) 5323 else 1000
+
+val configuration = Configuration().apply {
+    basePath = "http://localhost:$port"
+}
+
+// Initialize the Pieces ApiClient
+val apiClient = ApiClient(configuration)
+// Create an instance of the WellKnownApi class
+val apiInstance = WellKnownApi(apiClient)
+
+try {
+    // Retrieve the (wellknown) health of the Pieces OS
+    val result: kotlin.String = apiInstance.getWellKnownHealth()
+    println("The response of WellKnownApi().getWellKnownHealth:")
+    println(result) // Response: ok
+} catch (e: ClientException) {
+    println("4xx response calling WellKnownApi#getWellKnownHealth")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling WellKnownApi#getWellKnownHealth")
+    e.printStackTrace()
+}
+```
+
+Run the following commands to compile and execute the code:
+
+```shell
+kotlinc main.kt -include-runtime -d main.jar
+java -jar main.jar
+```
+
+## Next Steps
+
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Kotlin SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+
+Click the `Next →` button below to dive deeper into the Kotlin SDK documentation.

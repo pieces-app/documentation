@@ -41,7 +41,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --feature-card-border-color: #dedede;
+  --grid-card-border-color: #dedede;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -62,6 +62,8 @@
   --ifm-color-secondary-lighter: #3d3d3d; /* Original: #359962, now a bit lighter */
   --ifm-color-secondary-lightest: #424242; /* Original: #3cad6e, now the lightest dark gray before transitioning to lighter shades */
 
+  --ifm-badge-color: var(--ifm-color-secondary);
+
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.3); /* Original: rgba(0, 0, 0, 0.3), now a light transparent white */
 
   /* DocSearch overrides */
@@ -78,7 +80,7 @@
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
-  --feature-card-border-color: #303030;
+  --grid-card-border-color: #303030;
 }
 
 /* Fix margin for faq dropdown titles */
@@ -141,15 +143,15 @@ html[data-theme='dark'] .header-github-link:before {
   gap: 20px;
 }
 
-@media (max-width: 600px) {
-  .feature-grid {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 820px) {
+  .grid-3xN {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 820px) {
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 600px) {
+  .grid-2xN, .grid-3xN {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .image-2x1 {
@@ -175,16 +177,23 @@ html[data-theme='dark'] .header-github-link:before {
   }
 }
 
-.feature-grid {
+.grid-3xN {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 10px;
 }
 
-.feature-card {
+.grid-2xN {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.grid-card {
   padding: 20px;
-  border: 1px solid var(--feature-card-border-color);
+  border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
 }
 
@@ -195,8 +204,8 @@ html[data-theme='dark'] .header-github-link:before {
   align-items: center;
   gap: 10px;
   padding: 8px 18px;
-  background-color: var(--ifm-color-primary);
-  color: var(--ifm-color-secondary);
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-secondary-lightest);
   font-weight: bold;
   border-radius: 5px;
   /*Had to do it this way because the default Infima button styles were not being overridden on the `:hover` event*/
@@ -248,4 +257,50 @@ html[data-theme='dark'] .header-github-link:before {
 /*Sidebar Menu Classes*/
 .menu__link--sublist {
   font-weight: bold;
+}
+
+/* Glossary Component Styles */
+.glossary-container {
+  font-family: Arial, sans-serif;
+}
+
+.glossary-header {
+  margin-bottom: 20px;
+}
+
+.category-filters {
+  margin-bottom: 20px;
+}
+
+.category {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--ifm-color-secondary); 
+  transition: background-color 0.3s ease;
+  color: var(--ifm-color-primary);
+}
+
+.category:hover {
+  background-color: var(--ifm-color-secondary-dark); 
+}
+
+.category.active {
+  font-weight: bold;
+  background-color: var(--ifm-color-secondary-darker); 
+}
+
+@media (max-width: 768px) {
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .category {
+    margin: 5px;
+    padding: 8px 12px;
+  }
 }
