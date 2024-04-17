@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**imageAnalysesSnapshot**](ImageAnalyses API#imageanalysessnapshot) | **GET** /image_analyses | Your GET endpoint
+[**imageAnalysesSnapshot**](ImageAnalysesApi#imageanalysessnapshot) | **GET** /image_analyses | Your GET endpoint
 
 
 ## **imageAnalysesSnapshot** {#imageanalysessnapshot}
@@ -22,7 +22,7 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.ImageAnalyses API(configuration)
+const apiInstance = new Pieces.ImageAnalysesApi(configuration)
 
 const body: Pieces.ImageAnalysesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

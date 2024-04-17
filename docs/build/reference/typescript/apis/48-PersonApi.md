@@ -8,11 +8,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personAssociateWorkstreamSummary**](Person API#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**personDisassociateWorkstreamSummary**](Person API#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**personScoresIncrement**](Person API#personscoresincrement) | **POST** /person/\{person\}/scores/increment | \'/person/\{person\}/scores/increment\' [POST]
-[**personSnapshot**](Person API#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
-[**updatePerson**](Person API#updateperson) | **POST** /person/update | /person/update [POST]
+[**personAssociateWorkstreamSummary**](PersonApi#personassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**personDisassociateWorkstreamSummary**](PersonApi#persondisassociateworkstreamsummary) | **POST** /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} | /person/\{person\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**personScoresIncrement**](PersonApi#personscoresincrement) | **POST** /person/\{person\}/scores/increment | \'/person/\{person\}/scores/increment\' [POST]
+[**personSnapshot**](PersonApi#personsnapshot) | **GET** /person/\{person\} | /person/\{person\} [GET]
+[**updatePerson**](PersonApi#updateperson) | **POST** /person/update | /person/update [POST]
 
 
 ## **personAssociateWorkstreamSummary** {#personassociateworkstreamsummary}
@@ -26,7 +26,7 @@ This will associate a person with a workstream summary. This will do the same th
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Person API(configuration)
+const apiInstance = new Pieces.PersonApi(configuration)
 
 const body: Pieces.PersonAssociateWorkstreamSummaryRequest = {
     // string | This is a uuid that represents a person.
@@ -75,7 +75,7 @@ This will enable us to disassociate an person from a workstream summary. This wi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Person API(configuration)
+const apiInstance = new Pieces.PersonApi(configuration)
 
 const body: Pieces.PersonDisassociateWorkstreamSummaryRequest = {
     // string | This is a uuid that represents a person.
@@ -124,7 +124,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Person API(configuration)
+const apiInstance = new Pieces.PersonApi(configuration)
 
 const body: Pieces.PersonScoresIncrementRequest = {
     // string | This is a uuid that represents a person.
@@ -173,7 +173,7 @@ This will get a snapshot of a specific person
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Person API(configuration)
+const apiInstance = new Pieces.PersonApi(configuration)
 
 const body: Pieces.PersonSnapshotRequest = {
     // string | This is a uuid that represents a person.
@@ -222,7 +222,7 @@ This will update a specific person
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Person API(configuration)
+const apiInstance = new Pieces.PersonApi(configuration)
 
 const body: Pieces.UpdatePersonRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionsCreateNewDistribution**](Distributions API#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
-[**distributionsDeleteSpecificDistribution**](Distributions API#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
-[**distributionsSnapshot**](Distributions API#distributionssnapshot) | **GET** /distributions | /distributions [GET]
+[**distributionsCreateNewDistribution**](DistributionsApi#distributionscreatenewdistribution) | **POST** /distributions/create | /distributions/create [POST]
+[**distributionsDeleteSpecificDistribution**](DistributionsApi#distributionsdeletespecificdistribution) | **POST** /distributions/\{distribution\}/delete | /distributions/\{distribution\}/delete [POST]
+[**distributionsSnapshot**](DistributionsApi#distributionssnapshot) | **GET** /distributions | /distributions [GET]
 
 
 ## **distributionsCreateNewDistribution** {#distributionscreatenewdistribution}
@@ -24,7 +24,7 @@ This will create a new distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Distributions API(configuration)
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 const body: Pieces.DistributionsCreateNewDistributionRequest = {
     // SeededDistribution |  (optional)
@@ -70,7 +70,7 @@ This will delete a specific distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Distributions API(configuration)
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 const body: Pieces.DistributionsDeleteSpecificDistributionRequest = {
     // string | This is the uuid of a specific distribution.
@@ -116,7 +116,7 @@ This will get a specific snapshot of all our distributions.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Distributions API(configuration)
+const apiInstance = new Pieces.DistributionsApi(configuration)
 
 apiInstance.distributionsSnapshot().then((data: Distributions) => {
     console.log('API called successfully. Returned data: ' + data)

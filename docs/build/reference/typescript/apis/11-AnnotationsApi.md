@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotationsCreateNewAnnotation**](Annotations API#annotationscreatenewannotation) | **POST** /annotations/create | /annotations/create [POST]
-[**annotationsDeleteSpecificAnnotation**](Annotations API#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
-[**annotationsSnapshot**](Annotations API#annotationssnapshot) | **GET** /annotations | /annotations [GET]
+[**annotationsCreateNewAnnotation**](AnnotationsApi#annotationscreatenewannotation) | **POST** /annotations/create | /annotations/create [POST]
+[**annotationsDeleteSpecificAnnotation**](AnnotationsApi#annotationsdeletespecificannotation) | **POST** /annotations/\{annotation\}/delete | /annotations/\{annotation\}/delete [POST]
+[**annotationsSnapshot**](AnnotationsApi#annotationssnapshot) | **GET** /annotations | /annotations [GET]
 
 
 ## **annotationsCreateNewAnnotation** {#annotationscreatenewannotation}
@@ -24,7 +24,7 @@ This will create an annotation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotations API(configuration)
+const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsCreateNewAnnotationRequest = {
     // SeededAnnotation (optional)
@@ -70,7 +70,7 @@ this will delete a specific annotation
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotations API(configuration)
+const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsDeleteSpecificAnnotationRequest = {
     // string | This is a specific annotation uuid.
@@ -116,7 +116,7 @@ This will get a snapshot of all the annotations.  This will take an optional fil
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotations API(configuration)
+const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsSnapshotRequest = {
     // 'DESCRIPTION' | 'COMMENT' | 'COMMENTATION' | 'DOCUMENTATION' | 'SUMMARIZATION' | 'SUMMARY' | 'EXPLANATION' | 'GIT_COMMIT' | This is an AnnotationTypeEnum as a optional filter. (optional)

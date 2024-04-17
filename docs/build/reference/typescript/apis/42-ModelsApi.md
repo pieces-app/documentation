@@ -8,11 +8,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**modelsCreateNewModel**](Models API#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
-[**modelsDeleteSpecificModel**](Models API#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
-[**modelsDeleteSpecificModelCache**](Models API#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
-[**modelsSnapshot**](Models API#modelssnapshot) | **GET** /models | /models [GET]
-[**unloadModels**](Models API#unloadmodels) | **POST** /models/unload | /models/unload [POST]
+[**modelsCreateNewModel**](ModelsApi#modelscreatenewmodel) | **POST** /models/create | /models/create [POST]
+[**modelsDeleteSpecificModel**](ModelsApi#modelsdeletespecificmodel) | **POST** /models/\{model\}/delete | /models/\{model\}/delete [POST]
+[**modelsDeleteSpecificModelCache**](ModelsApi#modelsdeletespecificmodelcache) | **POST** /models/\{model\}/delete/cache | /models/\{model\}/delete/cache [POST]
+[**modelsSnapshot**](ModelsApi#modelssnapshot) | **GET** /models | /models [GET]
+[**unloadModels**](ModelsApi#unloadmodels) | **POST** /models/unload | /models/unload [POST]
 
 
 ## **modelsCreateNewModel** {#modelscreatenewmodel}
@@ -26,7 +26,7 @@ Creates a machine learning model. By default, all models created through this en
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Models API(configuration)
+const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsCreateNewModelRequest = {
     // SeededModel |  (optional)
@@ -72,7 +72,7 @@ Deletes a specific model. It is exclusively available for custom models with the
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Models API(configuration)
+const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsDeleteSpecificModelRequest = {
     // string | model id
@@ -118,7 +118,7 @@ Deletes the data associated with a specific model, such as assets or libraries d
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Models API(configuration)
+const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsDeleteSpecificModelCacheRequest = {
     // string | model id
@@ -167,7 +167,7 @@ This will get a snapshot of all of your models.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Models API(configuration)
+const apiInstance = new Pieces.ModelsApi(configuration)
 
 apiInstance.modelsSnapshot().then((data: Models) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -205,7 +205,7 @@ Unloads all available machine learning models that are unloadable.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Models API(configuration)
+const apiInstance = new Pieces.ModelsApi(configuration)
 
 apiInstance.unloadModels().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data)

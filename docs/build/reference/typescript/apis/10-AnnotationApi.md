@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**annotationScoresIncrement**](Annotation API#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | \'/annotation/\{annotation\}/scores/increment\' [POST]
-[**annotationSpecificAnnotationSnapshot**](Annotation API#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
-[**annotationUpdate**](Annotation API#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
+[**annotationScoresIncrement**](AnnotationApi#annotationscoresincrement) | **POST** /annotation/\{annotation\}/scores/increment | \'/annotation/\{annotation\}/scores/increment\' [POST]
+[**annotationSpecificAnnotationSnapshot**](AnnotationApi#annotationspecificannotationsnapshot) | **GET** /annotation/\{annotation\} | /annotation/\{annotation\} [GET]
+[**annotationUpdate**](AnnotationApi#annotationupdate) | **POST** /annotation/update | /annotation/update [POST]
 
 
 ## **annotationScoresIncrement** {#annotationscoresincrement}
@@ -24,7 +24,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotation API(configuration)
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationScoresIncrementRequest = {
     // string | This is a specific annotation uuid.
@@ -73,7 +73,7 @@ This will get a snapshot of a specific annotation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotation API(configuration)
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationSpecificAnnotationSnapshotRequest = {
     // string | This is a specific annotation uuid.
@@ -119,7 +119,7 @@ This will update a specific annotation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Annotation API(configuration)
+const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationUpdateRequest = {
     // Annotation (optional)

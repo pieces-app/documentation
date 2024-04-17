@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**htmlShare**](Piece API#htmlshare) | **GET** / | / [GET]
+[**htmlShare**](PieceApi#htmlshare) | **GET** / | / [GET]
 
 
 ## **htmlShare** {#htmlshare}
@@ -22,7 +22,7 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Piece API(configuration)
+const apiInstance = new Pieces.PieceApi(configuration)
 
 const body: Pieces.HtmlShareRequest = {
     // string | this is the a query param, that a shortened version of the share.

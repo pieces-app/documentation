@@ -8,24 +8,24 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**conversationAssociateAnchor**](Conversation API#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
-[**conversationAssociateAsset**](Conversation API#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
-[**conversationAssociateGroundingTemporalRangeWorkstream**](Conversation API#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
-[**conversationAssociateWebsite**](Conversation API#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
-[**conversationAssociateWorkstreamSummary**](Conversation API#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**conversationDisassociateAnchor**](Conversation API#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
-[**conversationDisassociateAsset**](Conversation API#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
-[**conversationDisassociateGroundingTemporalRangeWorkstream**](Conversation API#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
-[**conversationDisassociateWebsite**](Conversation API#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
-[**conversationDisassociateWorkstreamSummary**](Conversation API#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**conversationGetSpecificConversation**](Conversation API#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
-[**conversationGroundingMessagesAssociateMessage**](Conversation API#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
-[**conversationGroundingMessagesDisassociateMessage**](Conversation API#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
-[**conversationScoresIncrement**](Conversation API#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | /conversation/\{conversation\}/scores/increment [POST]
-[**conversationSpecificConversationMessages**](Conversation API#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
-[**conversationSpecificConversationRename**](Conversation API#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
-[**conversationSummarize**](Conversation API#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
-[**conversationUpdate**](Conversation API#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
+[**conversationAssociateAnchor**](ConversationApi#conversationassociateanchor) | **POST** /conversation/\{conversation\}/anchors/associate/\{anchor\} | /conversation/\{conversation\}/anchors/associate/\{anchor\} [POST]
+[**conversationAssociateAsset**](ConversationApi#conversationassociateasset) | **POST** /conversation/\{conversation\}/assets/associate/\{asset\} | /conversation/\{conversation\}/assets/associate/\{asset\} [POST]
+[**conversationAssociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/associate/\{range\} | /conversation/\{conversation\}/grounding/temporal/ranges/associate/\{range\} [POST]
+[**conversationAssociateWebsite**](ConversationApi#conversationassociatewebsite) | **POST** /conversation/\{conversation\}/websites/associate/\{website\} | /conversation/\{conversation\}/websites/associate/\{website\} [POST]
+[**conversationAssociateWorkstreamSummary**](ConversationApi#conversationassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**conversationDisassociateAnchor**](ConversationApi#conversationdisassociateanchor) | **POST** /conversation/\{conversation\}/anchors/delete/\{anchor\} | /conversation/\{conversation\}/anchors/delete/\{anchor\} [POST]
+[**conversationDisassociateAsset**](ConversationApi#conversationdisassociateasset) | **POST** /conversation/\{conversation\}/assets/delete/\{asset\} | /conversation/\{conversation\}/assets/delete/\{asset\} [POST]
+[**conversationDisassociateGroundingTemporalRangeWorkstream**](ConversationApi#conversationdisassociategroundingtemporalrangeworkstream) | **POST** /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} | /conversation/\{conversation\}/grounding/temporal_range/workstreams/disassociate/\{range\} [POST]
+[**conversationDisassociateWebsite**](ConversationApi#conversationdisassociatewebsite) | **POST** /conversation/\{conversation\}/websites/disassociate/\{website\} | /website/\{website\}/websites/disassociate/\{website\} [POST]
+[**conversationDisassociateWorkstreamSummary**](ConversationApi#conversationdisassociateworkstreamsummary) | **POST** /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} | /conversation/\{conversation\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**conversationGetSpecificConversation**](ConversationApi#conversationgetspecificconversation) | **GET** /conversation/\{conversation\} | /conversation/\{conversation\} [GET]
+[**conversationGroundingMessagesAssociateMessage**](ConversationApi#conversationgroundingmessagesassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/associate/\{message\} | /conversation/\{conversation\}/grounding/messages/associate/\{message\} [POST]
+[**conversationGroundingMessagesDisassociateMessage**](ConversationApi#conversationgroundingmessagesdisassociatemessage) | **POST** /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} | /conversation/\{conversation\}/grounding/messages/disassociate/\{message\} [POST]
+[**conversationScoresIncrement**](ConversationApi#conversationscoresincrement) | **POST** /conversation/\{conversation\}/scores/increment | /conversation/\{conversation\}/scores/increment [POST]
+[**conversationSpecificConversationMessages**](ConversationApi#conversationspecificconversationmessages) | **GET** /conversation/\{conversation\}/messages | /conversation/\{conversation\}/messages [GET]
+[**conversationSpecificConversationRename**](ConversationApi#conversationspecificconversationrename) | **POST** /conversation/\{conversation\}/rename | /conversation/\{conversation\}/rename [POST]
+[**conversationSummarize**](ConversationApi#conversationsummarize) | **POST** /conversation/\{conversation\}/summarize | /conversation/\{conversation\}/summarize [POST]
+[**conversationUpdate**](ConversationApi#conversationupdate) | **POST** /conversation/update | /conversation/update [POST]
 
 
 ## **conversationAssociateAnchor** {#conversationassociateanchor}
@@ -39,7 +39,7 @@ Updates both the anchor and the conversation, associating them together.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAnchorRequest = {
     // string | This is the uuid of a conversation.
@@ -88,7 +88,7 @@ Updates both the asset and the conversation, associating the two together.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAssetRequest = {
     // string | This is the uuid of a conversation.
@@ -137,7 +137,7 @@ This will associate a workstream(range) with a conversation. This will do the sa
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
@@ -186,7 +186,7 @@ Updates both the website and the conversation, and associate them together.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
@@ -235,7 +235,7 @@ This will associate a conversation with a workstream summary. This will do the s
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
@@ -284,7 +284,7 @@ Updates both the anchor and the conversation, deleting (disassociating) them sim
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAnchorRequest = {
     // string | This is the uuid of a conversation.
@@ -333,7 +333,7 @@ Updates both the asset and the conversation, effectively disassociating them.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAssetRequest = {
     // string | This is the uuid of a conversation.
@@ -382,7 +382,7 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateGroundingTemporalRangeWorkstreamRequest = {
     // string | This is the uuid of a conversation.
@@ -431,7 +431,7 @@ Allows us to disassociate a conversation from a specific website
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWebsiteRequest = {
     // string | This is the uuid of a conversation.
@@ -480,7 +480,7 @@ This will enable us to disassociate an conversation from a workstream summary. T
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWorkstreamSummaryRequest = {
     // string | This is the uuid of a conversation.
@@ -529,7 +529,7 @@ Retrieves a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGetSpecificConversationRequest = {
     // string | This is the uuid of a conversation.
@@ -578,7 +578,7 @@ Stores the grounding context for a conversation. It allows to associate a messag
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesAssociateMessageRequest = {
     // string | This is the uuid of a conversation.
@@ -627,7 +627,7 @@ Removes a specific grounding context for a conversation, and allows us to disass
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesDisassociateMessageRequest = {
     // string | This is the uuid of a conversation.
@@ -676,7 +676,7 @@ Increment scores associated with a conversation. It accepts a SeededScoreIncreme
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationScoresIncrementRequest = {
     // string | This is the uuid of a conversation.
@@ -725,7 +725,7 @@ Retrieves messages specific to a particular conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationMessagesRequest = {
     // string | This is the uuid of a conversation.
@@ -774,7 +774,7 @@ Renames a specific conversation using machine learning (ML) techniques.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationRenameRequest = {
     // string | This is the uuid of a conversation.
@@ -823,7 +823,7 @@ Generates a summary of a given conversation and saves it as an annotation associ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSummarizeRequest = {
     // string | This is the uuid of a conversation.
@@ -872,7 +872,7 @@ Updates a specific conversation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Conversation API(configuration)
+const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

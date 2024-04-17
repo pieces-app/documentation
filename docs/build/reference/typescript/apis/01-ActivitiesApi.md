@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**activitiesCreateNewActivity**](Activities API#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
-[**activitiesDeleteSpecificActivity**](Activities API#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
-[**activitiesSnapshot**](Activities API#activitiessnapshot) | **GET** /activities | /activities [GET]
+[**activitiesCreateNewActivity**](ActivitiesApi#activitiescreatenewactivity) | **POST** /activities/create | /activities/create [POST]
+[**activitiesDeleteSpecificActivity**](ActivitiesApi#activitiesdeletespecificactivity) | **POST** /activities/\{activity\}/delete | /activities/\{activity\}/delete [POST]
+[**activitiesSnapshot**](ActivitiesApi#activitiessnapshot) | **GET** /activities | /activities [GET]
 
 
 ## **activitiesCreateNewActivity** {#activitiescreatenewactivity}
@@ -24,7 +24,7 @@ This will create a new Activity.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Activities API(configuration)
+const apiInstance = new Pieces.ActivitiesApi(configuration)
 
 const body: Pieces.ActivitiesCreateNewActivityRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -73,7 +73,7 @@ This will delete a specific activity.  important note: if we delete an activity:
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Activities API(configuration)
+const apiInstance = new Pieces.ActivitiesApi(configuration)
 
 const body: Pieces.ActivitiesDeleteSpecificActivityRequest = {
     // string | This is a specific activity uuid.
@@ -119,7 +119,7 @@ This will get a snapshot of all of the activities
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Activities API(configuration)
+const apiInstance = new Pieces.ActivitiesApi(configuration)
 
 const body: Pieces.ActivitiesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

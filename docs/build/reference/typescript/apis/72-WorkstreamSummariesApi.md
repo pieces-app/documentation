@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workstreamSummariesCreateNewWorkstreamSummary**](WorkstreamSummaries API#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create | /workstream_summaries/create [POST]
-[**workstreamSummariesDeleteSpecificWorkstreamSummary**](WorkstreamSummaries API#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete | /workstream_summaries/\{workstream_summary\}/delete [POST]
-[**workstreamSummariesSnapshot**](WorkstreamSummaries API#workstreamsummariessnapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
+[**workstreamSummariesCreateNewWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariescreatenewworkstreamsummary) | **POST** /workstream_summaries/create | /workstream_summaries/create [POST]
+[**workstreamSummariesDeleteSpecificWorkstreamSummary**](WorkstreamSummariesApi#workstreamsummariesdeletespecificworkstreamsummary) | **POST** /workstream_summaries/\{workstream_summary\}/delete | /workstream_summaries/\{workstream_summary\}/delete [POST]
+[**workstreamSummariesSnapshot**](WorkstreamSummariesApi#workstreamsummariessnapshot) | **GET** /workstream_summaries | /workstream_summaries [GET]
 
 
 ## **workstreamSummariesCreateNewWorkstreamSummary** {#workstreamsummariescreatenewworkstreamsummary}
@@ -24,7 +24,7 @@ This will create a new WorkstreamSummary in the database.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaries API(configuration)
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesCreateNewWorkstreamSummaryRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -73,7 +73,7 @@ This will delete a specific workstream_summary from the database!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaries API(configuration)
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesDeleteSpecificWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_summary.
@@ -119,7 +119,7 @@ This will get a snapshot of all your workstream summaries.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamSummaries API(configuration)
+const apiInstance = new Pieces.WorkstreamSummariesApi(configuration)
 
 const body: Pieces.WorkstreamSummariesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

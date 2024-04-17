@@ -8,8 +8,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**distributionUpdate**](Distribution API#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
-[**distributionsSpecificDistributionSnapshot**](Distribution API#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
+[**distributionUpdate**](DistributionApi#distributionupdate) | **POST** /distribution/update | /distribution/update [POST]
+[**distributionsSpecificDistributionSnapshot**](DistributionApi#distributionsspecificdistributionsnapshot) | **GET** /distribution/\{distribution\} | /distribution/\{distribution\} [GET]
 
 
 ## **distributionUpdate** {#distributionupdate}
@@ -23,7 +23,7 @@ This will update a specific Distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Distribution API(configuration)
+const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionUpdateRequest = {
     // Distribution (optional)
@@ -69,7 +69,7 @@ This will get a specific snapshot of a distribution.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Distribution API(configuration)
+const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
     // string | This is the uuid of a specific distribution.

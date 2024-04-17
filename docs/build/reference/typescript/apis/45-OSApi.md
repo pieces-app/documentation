@@ -8,16 +8,16 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**linkProvider**](OS API#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
-[**osDeviceInformation**](OS API#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
-[**osPermissions**](OS API#ospermissions) | **GET** /os/permissions | /os/permissions [GET]
-[**osPermissionsRequest**](OS API#ospermissionsrequest) | **POST** /os/permissions/request | /os/permissions/request [POST]
-[**osRestart**](OS API#osrestart) | **GET** /os/restart | Your GET endpoint
-[**osUpdateCheck**](OS API#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
-[**pickFiles**](OS API#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
-[**pickFolders**](OS API#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
-[**signIntoOS**](OS API#signintoos) | **POST** /os/sign_in | 
-[**signOutOfOS**](OS API#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
+[**linkProvider**](OSApi#linkprovider) | **POST** /os/link_provider | /os/link_provider [POST]
+[**osDeviceInformation**](OSApi#osdeviceinformation) | **GET** /os/device/information | /os/device/information [GET]
+[**osPermissions**](OSApi#ospermissions) | **GET** /os/permissions | /os/permissions [GET]
+[**osPermissionsRequest**](OSApi#ospermissionsrequest) | **POST** /os/permissions/request | /os/permissions/request [POST]
+[**osRestart**](OSApi#osrestart) | **GET** /os/restart | Your GET endpoint
+[**osUpdateCheck**](OSApi#osupdatecheck) | **POST** /os/update/check | /os/update/check [POST]
+[**pickFiles**](OSApi#pickfiles) | **POST** /os/files/pick | /os/files/pick [POST]
+[**pickFolders**](OSApi#pickfolders) | **POST** /os/folders/pick | /os/folders/pick [POST]
+[**signIntoOS**](OSApi#signintoos) | **POST** /os/sign_in | 
+[**signOutOfOS**](OSApi#signoutofos) | **POST** /os/sign_out | /os/sign_out [POST]
 
 
 ## **linkProvider** {#linkprovider}
@@ -31,7 +31,7 @@ This will link an external provider to your current auth0 account.  Will throw e
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.LinkProviderRequest = {
     // SeededExternalProvider (optional)
@@ -78,7 +78,7 @@ This will get information related to your specific device.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osDeviceInformation().then((data: OSDeviceInformationReturnable) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -116,7 +116,7 @@ This will only work on Macos and Windows.  And will get the permissions of the u
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osPermissions().then((data: OSPermissions) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -154,7 +154,7 @@ This will only work on Macos and Windows.  This will request permissions for the
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.OsPermissionsRequestRequest = {
     // OSPermissions (optional)
@@ -200,7 +200,7 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osRestart().then((data: void (empty response body)) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -238,7 +238,7 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.OsUpdateCheckRequest = {
     // UncheckedOSUpdate (optional)
@@ -284,7 +284,7 @@ This will trigger a filer picker and return the string paths of the files that w
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.PickFilesRequest = {
     // FilePickerInput (optional)
@@ -330,7 +330,7 @@ This will trigger a folder picker and return the string paths of the folders tha
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.pickFolders().then((data: Array\<string\>) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -368,7 +368,7 @@ A trigger that launches a Sign into OS Server
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.signIntoOS().then((data: UserProfile) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -405,7 +405,7 @@ A trigger that signs out a user from the OS
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.OS API(configuration)
+const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.signOutOfOS().then((data: Users) => {
     console.log('API called successfully. Returned data: ' + data)

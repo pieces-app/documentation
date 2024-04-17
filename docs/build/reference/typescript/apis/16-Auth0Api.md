@@ -8,10 +8,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**auth0Logout**](Auth0 API#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](Auth0 API#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
-[**exchangeForAuth0Token**](Auth0 API#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
-[**getAuth0UserInfo**](Auth0 API#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
+[**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
+[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
+[**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
 
 ## **auth0Logout** {#auth0logout}
@@ -25,7 +25,7 @@ https://auth0.com/docs/api/authentication#logout
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Auth0 API(configuration)
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.Auth0LogoutRequest = {
     // string | The client ID of the Auth0 Instance (optional)
@@ -73,7 +73,7 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Auth0 API(configuration)
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.AuthorizeAuth0Request = {
     // string |  The unique identifier of the target API you want to access.
@@ -148,7 +148,7 @@ An endpoint to generate a OAuth Token for an authentication flow.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Auth0 API(configuration)
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.ExchangeForAuth0TokenRequest = {
     // string | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
@@ -211,7 +211,7 @@ Get the users info from the Auth0 API
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Auth0 API(configuration)
+const apiInstance = new Pieces.Auth0Api(configuration)
 
 apiInstance.getAuth0UserInfo().then((data: Auth0User) => {
     console.log('API called successfully. Returned data: ' + data)

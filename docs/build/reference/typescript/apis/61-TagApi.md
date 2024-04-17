@@ -8,13 +8,13 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tagAssociateAsset**](Tag API#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
-[**tagAssociatePerson**](Tag API#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
-[**tagDisassociateAsset**](Tag API#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
-[**tagDisassociatePerson**](Tag API#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
-[**tagScoresIncrement**](Tag API#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | \'/tag/\{tag\}/scores/increment\' [POST]
-[**tagUpdate**](Tag API#tagupdate) | **POST** /tag/update | /tag/update [POST]
-[**tagsSpecificTagSnapshot**](Tag API#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
+[**tagAssociateAsset**](TagApi#tagassociateasset) | **POST** /tag/\{tag\}/assets/associate/\{asset\} | /tag/\{tag\}/assets/associate/\{asset\} [POST]
+[**tagAssociatePerson**](TagApi#tagassociateperson) | **POST** /tag/\{tag\}/persons/associate/\{person\} | /tag/\{tag\}/persons/associate/\{person\} [POST]
+[**tagDisassociateAsset**](TagApi#tagdisassociateasset) | **POST** /tag/\{tag\}/assets/disassociate/\{asset\} | /tag/\{tag\}/assets/disassociate/\{asset\} [POST]
+[**tagDisassociatePerson**](TagApi#tagdisassociateperson) | **POST** /tag/\{tag\}/persons/disassociate/\{person\} | /tag/\{tag\}/persons/disassociate/\{person\} [POST]
+[**tagScoresIncrement**](TagApi#tagscoresincrement) | **POST** /tag/\{tag\}/scores/increment | \'/tag/\{tag\}/scores/increment\' [POST]
+[**tagUpdate**](TagApi#tagupdate) | **POST** /tag/update | /tag/update [POST]
+[**tagsSpecificTagSnapshot**](TagApi#tagsspecifictagsnapshot) | **GET** /tag/\{tag\} | /tag/\{tag\} [GET]
 
 
 ## **tagAssociateAsset** {#tagassociateasset}
@@ -28,7 +28,7 @@ This will associate a tag with a asset.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociateAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -77,7 +77,7 @@ This will associate a tag with a person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociatePersonRequest = {
     // string | tag id
@@ -126,7 +126,7 @@ This will enable us to dissassociate a tag from a asset.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociateAssetRequest = {
     // string | tag id
@@ -175,7 +175,7 @@ This will enable us to dissassociate a tag from a person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociatePersonRequest = {
     // string | tag id
@@ -224,7 +224,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagScoresIncrementRequest = {
     // string | tag id
@@ -273,7 +273,7 @@ This will update a specific tag.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -322,7 +322,7 @@ This will get a specific tag.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tag API(configuration)
+const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagsSpecificTagSnapshotRequest = {
     // string | tag id

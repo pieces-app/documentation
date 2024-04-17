@@ -8,10 +8,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tagsCreateNewTag**](Tags API#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
-[**tagsDeleteSpecificTag**](Tags API#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
-[**tagsExists**](Tags API#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
-[**tagsSnapshot**](Tags API#tagssnapshot) | **GET** /tags | /tags [GET]
+[**tagsCreateNewTag**](TagsApi#tagscreatenewtag) | **POST** /tags/create | /tags/create [POST]
+[**tagsDeleteSpecificTag**](TagsApi#tagsdeletespecifictag) | **POST** /tags/\{tag\}/delete | /tags/\{tag\}/delete [POST]
+[**tagsExists**](TagsApi#tagsexists) | **POST** /tags/exists | /tags/exists [POST]
+[**tagsSnapshot**](TagsApi#tagssnapshot) | **GET** /tags | /tags [GET]
 
 
 ## **tagsCreateNewTag** {#tagscreatenewtag}
@@ -25,7 +25,7 @@ This will create a new tag.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tags API(configuration)
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsCreateNewTagRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -74,7 +74,7 @@ This will delete a specific tag.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tags API(configuration)
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsDeleteSpecificTagRequest = {
     // string | tag id
@@ -120,7 +120,7 @@ This will check all of the tags in our database to see if this specific provided
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tags API(configuration)
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsExistsRequest = {
     // ExistentMetadata (optional)
@@ -166,7 +166,7 @@ This will get a snapshot of all of your tags.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Tags API(configuration)
+const apiInstance = new Pieces.TagsApi(configuration)
 
 const body: Pieces.TagsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

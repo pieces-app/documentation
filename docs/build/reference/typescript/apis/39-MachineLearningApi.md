@@ -8,8 +8,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personificationTechnicalLanguageGeneration**](MachineLearning API#personificationtechnicallanguagegeneration) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
-[**segmentTechnicalLanguage**](MachineLearning API#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
+[**personificationTechnicalLanguageGeneration**](MachineLearningApi#personificationtechnicallanguagegeneration) | **POST** /machine_learning/text/technical_language/generators/personification | /machine_learning/text/technical_language/generators/personification [GET]
+[**segmentTechnicalLanguage**](MachineLearningApi#segmenttechnicallanguage) | **POST** /machine_learning/text/technical_language/parsers/segmentation | /machine_learning/text/technical_language/parsers/segmentation [POST]
 
 
 ## **personificationTechnicalLanguageGeneration** {#personificationtechnicallanguagegeneration}
@@ -23,7 +23,7 @@ This is going to take in some personification details ie languages & personas.  
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.MachineLearning API(configuration)
+const apiInstance = new Pieces.MachineLearningApi(configuration)
 
 const body: Pieces.PersonificationTechnicalLanguageGenerationRequest = {
     // PreonboardedPersonaDetails (optional)
@@ -69,7 +69,7 @@ This is a functional endpoint that will parse a message or text in to text or co
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.MachineLearning API(configuration)
+const apiInstance = new Pieces.MachineLearningApi(configuration)
 
 const body: Pieces.SegmentTechnicalLanguageRequest = {
     // boolean | This will let us know if you want us to classifiy your code, this is default to false. (optional)

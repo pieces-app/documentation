@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateNewAssetFromMacos**](MacOS API#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
+[**assetsCreateNewAssetFromMacos**](MacOSApi#assetscreatenewassetfrommacos) | **POST** /macos/assets/create | /macos/assets/create [Post]
 
 
 ## **assetsCreateNewAssetFromMacos** {#assetscreatenewassetfrommacos}
@@ -22,7 +22,7 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.MacOS API(configuration)
+const apiInstance = new Pieces.MacOSApi(configuration)
 
 const body: Pieces.AssetsCreateNewAssetFromMacosRequest = {
     // SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance (optional)

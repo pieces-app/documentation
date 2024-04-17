@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sensitivesCreateNewSensitive**](Sensitives API#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
-[**sensitivesDeleteSensitive**](Sensitives API#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
-[**sensitivesSnapshot**](Sensitives API#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
+[**sensitivesCreateNewSensitive**](SensitivesApi#sensitivescreatenewsensitive) | **POST** /sensitives/create | /sensitives/create [POST]
+[**sensitivesDeleteSensitive**](SensitivesApi#sensitivesdeletesensitive) | **POST** /sensitives/\{sensitive\}/delete | /sensitives/\{sensitive\}/delete [POST]
+[**sensitivesSnapshot**](SensitivesApi#sensitivessnapshot) | **GET** /sensitives | /sensitives [GET]
 
 
 ## **sensitivesCreateNewSensitive** {#sensitivescreatenewsensitive}
@@ -24,7 +24,7 @@ This will create a new sensitive model.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Sensitives API(configuration)
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 const body: Pieces.SensitivesCreateNewSensitiveRequest = {
     // SeededSensitive (optional)
@@ -70,7 +70,7 @@ This will delete a sensitive based on the sensitive uuid.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Sensitives API(configuration)
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 const body: Pieces.SensitivesDeleteSensitiveRequest = {
     // string | This is a uuid that represents a sensitive.
@@ -116,7 +116,7 @@ This will get a snapshot of all of the sensitives.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Sensitives API(configuration)
+const apiInstance = new Pieces.SensitivesApi(configuration)
 
 apiInstance.sensitivesSnapshot().then((data: Sensitives) => {
     console.log('API called successfully. Returned data: ' + data)

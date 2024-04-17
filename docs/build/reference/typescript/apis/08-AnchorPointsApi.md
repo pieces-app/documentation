@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorPointsCreateNewAnchorPoint**](AnchorPoints API#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
-[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPoints API#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
-[**anchorPointsSnapshot**](AnchorPoints API#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
+[**anchorPointsCreateNewAnchorPoint**](AnchorPointsApi#anchorpointscreatenewanchorpoint) | **POST** /anchor_points/create | /anchor_points/create [POST]
+[**anchorPointsDeleteSpecificAnchorPoint**](AnchorPointsApi#anchorpointsdeletespecificanchorpoint) | **POST** /anchor_points/\{anchor_point\}/delete | /anchor_points/\{anchor_point\}/delete [POST]
+[**anchorPointsSnapshot**](AnchorPointsApi#anchorpointssnapshot) | **GET** /anchor_points | /anchor_points [GET]
 
 
 ## **anchorPointsCreateNewAnchorPoint** {#anchorpointscreatenewanchorpoint}
@@ -24,7 +24,7 @@ This will create a anchorPoint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPoints API(configuration)
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsCreateNewAnchorPointRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -73,7 +73,7 @@ This will delete a specific anchorPoint!
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPoints API(configuration)
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsDeleteSpecificAnchorPointRequest = {
     // string | This is the specific uuid of an anchor_point.
@@ -119,7 +119,7 @@ This will get a snapshot of all your anchorPoints.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.AnchorPoints API(configuration)
+const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

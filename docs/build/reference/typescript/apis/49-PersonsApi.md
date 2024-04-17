@@ -8,10 +8,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**personDisassociateAsset**](Persons API#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
-[**personsCreateNewPerson**](Persons API#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
-[**personsDeletePerson**](Persons API#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
-[**personsSnapshot**](Persons API#personssnapshot) | **GET** /persons | /persons [GET]
+[**personDisassociateAsset**](PersonsApi#persondisassociateasset) | **POST** /persons/\{person\}/assets/delete/\{asset\} | /persons/\{person\}/assets/delete/\{asset\} [POST]
+[**personsCreateNewPerson**](PersonsApi#personscreatenewperson) | **POST** /persons/create | /persons/create [POST]
+[**personsDeletePerson**](PersonsApi#personsdeleteperson) | **POST** /persons/\{person\}/delete | /persons/\{person\}/delete [POST]
+[**personsSnapshot**](PersonsApi#personssnapshot) | **GET** /persons | /persons [GET]
 
 
 ## **personDisassociateAsset** {#persondisassociateasset}
@@ -25,7 +25,7 @@ This will update both the asset and the person reference, that will remove a per
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Persons API(configuration)
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonDisassociateAssetRequest = {
     // string | This is a uuid that represents a person.
@@ -74,7 +74,7 @@ This will create a new person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Persons API(configuration)
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsCreateNewPersonRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -123,7 +123,7 @@ This will delete a specific person.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Persons API(configuration)
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsDeletePersonRequest = {
     // string | This is a uuid that represents a person.
@@ -169,7 +169,7 @@ This will get a snapshot of all of your people
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Persons API(configuration)
+const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)

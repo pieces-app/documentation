@@ -8,21 +8,21 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateNewAsset**](Assets API#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
-[**assetsDeleteAsset**](Assets API#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
-[**assetsDraft**](Assets API#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
-[**assetsGetRecommendedAssets**](Assets API#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
-[**assetsGetRelatedAssets**](Assets API#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
-[**assetsIdentifiersSnapshot**](Assets API#assetsidentifierssnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
-[**assetsPseudoSnapshot**](Assets API#assetspseudosnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
-[**assetsSearchAssets**](Assets API#assetssearchassets) | **GET** /assets/search | /assets/search?query=string [GET]
-[**assetsSearchWithFilters**](Assets API#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
-[**assetsSnapshot**](Assets API#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
-[**assetsSpecificAssetFormatsSnapshot**](Assets API#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
-[**assetsSpecificAssetSnapshot**](Assets API#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
-[**assetsStreamIdentifiers**](Assets API#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [WS]
-[**getAssetsStreamTransferables**](Assets API#getassetsstreamtransferables) | **GET** /assets/stream/transferables | /assets/stream/transferables [WS]
-[**streamAssets**](Assets API#streamassets) | **GET** /assets/stream | /assets/stream [WS]
+[**assetsCreateNewAsset**](AssetsApi#assetscreatenewasset) | **POST** /assets/create | /assets/create [POST] Scoped to Asset
+[**assetsDeleteAsset**](AssetsApi#assetsdeleteasset) | **POST** /assets/\{asset\}/delete | /assets/\{asset\}/delete [POST] Scoped to Asset
+[**assetsDraft**](AssetsApi#assetsdraft) | **POST** /assets/draft | /assets/draft [POST]
+[**assetsGetRecommendedAssets**](AssetsApi#assetsgetrecommendedassets) | **GET** /assets/recommended | Your GET endpoint
+[**assetsGetRelatedAssets**](AssetsApi#assetsgetrelatedassets) | **GET** /assets/related | /assets/related [GET]
+[**assetsIdentifiersSnapshot**](AssetsApi#assetsidentifierssnapshot) | **GET** /assets/identifiers | /assets/identifiers [GET]
+[**assetsPseudoSnapshot**](AssetsApi#assetspseudosnapshot) | **GET** /assets/pseudo | /assets/pseudo [GET]
+[**assetsSearchAssets**](AssetsApi#assetssearchassets) | **GET** /assets/search | /assets/search?query=string [GET]
+[**assetsSearchWithFilters**](AssetsApi#assetssearchwithfilters) | **POST** /assets/search | /assets/search [POST]
+[**assetsSnapshot**](AssetsApi#assetssnapshot) | **GET** /assets | /assets [GET] Scoped to Assets
+[**assetsSpecificAssetFormatsSnapshot**](AssetsApi#assetsspecificassetformatssnapshot) | **GET** /assets/\{asset\}/formats | /assets/\{asset\}/formats [GET] Scoped To Assets
+[**assetsSpecificAssetSnapshot**](AssetsApi#assetsspecificassetsnapshot) | **GET** /assets/\{asset\} | /assets/\{asset\} [GET] Scoped to Assets
+[**assetsStreamIdentifiers**](AssetsApi#assetsstreamidentifiers) | **GET** /assets/stream/identifiers | /assets/stream/identifiers [WS]
+[**getAssetsStreamTransferables**](AssetsApi#getassetsstreamtransferables) | **GET** /assets/stream/transferables | /assets/stream/transferables [WS]
+[**streamAssets**](AssetsApi#streamassets) | **GET** /assets/stream | /assets/stream [WS]
 
 
 ## **assetsCreateNewAsset** {#assetscreatenewasset}
@@ -36,7 +36,7 @@ Accepts a seeded (a structure that comes before an asset, and will be used in cr
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsCreateNewAssetRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -84,7 +84,7 @@ Deletes a specific asset from the system by providing its unique identifier (UID
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsDeleteAssetRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -129,7 +129,7 @@ Allows developers to input a Seed and receive a drafted asset with preprocessed 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsDraftRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -178,7 +178,7 @@ Expects a SeededAssetsRecommendation Model in the request body, containing asset
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsGetRecommendedAssetsRequest = {
     // SeededAssetsRecommendation | The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. (optional)
@@ -223,7 +223,7 @@ Retrieves one or more related assets when provided with one or more input assets
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsGetRelatedAssetsRequest = {
     // Assets | The body of the request is an object (Assets Model) with iterable internally. (optional)
@@ -268,7 +268,7 @@ Retrieves all asset IDs associated with your account.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsIdentifiersSnapshotRequest = {
     // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
@@ -314,7 +314,7 @@ Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 apiInstance.assetsPseudoSnapshot().then((data: PseudoAssets) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -352,7 +352,7 @@ Performs a search across your pieces and returns Assets (the results) based on y
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsSearchAssetsRequest = {
     // string | This is a string that you can use to search your assets. (optional)
@@ -407,7 +407,7 @@ Enables searching through your pieces and returns Assets (the results) based on 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsSearchWithFiltersRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -459,7 +459,7 @@ Get all of the users Assets.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -510,7 +510,7 @@ Retrieves the available formats for a specific asset identified by its ID
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsSpecificAssetFormatsSnapshotRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -558,7 +558,7 @@ Allows clients to retrieve details of a specific asset by providing its UUID in 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 const body: Pieces.AssetsSpecificAssetSnapshotRequest = {
     // string | The id (uuid) of the asset that you are trying to access.
@@ -607,7 +607,7 @@ Provides a WebSocket connection that emits changes to your asset\'s identifiers 
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 apiInstance.assetsStreamIdentifiers().then((data: StreamedIdentifiers) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -644,7 +644,7 @@ Provides a WebSocket connection that emits changes to your assets, including the
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 apiInstance.getAssetsStreamTransferables().then((data: Assets) => {
     console.log('API called successfully. Returned data: ' + data)
@@ -681,7 +681,7 @@ Provides a WebSocket connection that emits changes to your assets.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Assets API(configuration)
+const apiInstance = new Pieces.AssetsApi(configuration)
 
 apiInstance.streamAssets().then((data: Assets) => {
     console.log('API called successfully. Returned data: ' + data)

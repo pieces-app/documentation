@@ -8,8 +8,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**formatsSnapshot**](Formats API#formatssnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
-[**formatsSpecificFormatSnapshot**](Formats API#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
+[**formatsSnapshot**](FormatsApi#formatssnapshot) | **GET** /formats | /formats [GET] Scoped to Formats
+[**formatsSpecificFormatSnapshot**](FormatsApi#formatsspecificformatsnapshot) | **GET** /formats/\{format\} | /formats/\{format\} [GET] Scoped to Formats
 
 
 ## **formatsSnapshot** {#formatssnapshot}
@@ -23,7 +23,7 @@ Get all of your formats for a given user.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Formats API(configuration)
+const apiInstance = new Pieces.FormatsApi(configuration)
 
 const body: Pieces.FormatsSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -68,7 +68,7 @@ Request a specific format when given a id (uuid in path params)
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Formats API(configuration)
+const apiInstance = new Pieces.FormatsApi(configuration)
 
 const body: Pieces.FormatsSpecificFormatSnapshotRequest = {
     // string | The id (uuid) for a specific format.

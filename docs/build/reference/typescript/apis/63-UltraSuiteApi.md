@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**assetsCreateUltraSuiteAsset**](UltraSuite API#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
+[**assetsCreateUltraSuiteAsset**](UltraSuiteApi#assetscreateultrasuiteasset) | **POST** /ultra_suite/assets/create | /ultra_suite/assets/create [POST]
 
 
 ## **assetsCreateUltraSuiteAsset** {#assetscreateultrasuiteasset}
@@ -22,7 +22,7 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.UltraSuite API(configuration)
+const apiInstance = new Pieces.UltraSuiteApi(configuration)
 
 const body: Pieces.AssetsCreateUltraSuiteAssetRequest = {
     // SeededUltraSuiteAsset (optional)

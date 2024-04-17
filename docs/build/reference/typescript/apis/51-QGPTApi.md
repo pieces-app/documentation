@@ -8,12 +8,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hints**](QGPT API#hints) | **POST** /qgpt/hints | /qgpt/hints [POST]
-[**personsRelated**](QGPT API#personsrelated) | **POST** /qgpt/persons/related | /qgpt/persons/related [POST]
-[**qgptStream**](QGPT API#qgptstream) | **GET** /qgpt/stream | /qgpt/stream [WS]
-[**question**](QGPT API#question) | **POST** /qgpt/question | /qgpt/question [POST]
-[**relevance**](QGPT API#relevance) | **POST** /qgpt/relevance | /qgpt/relevance [POST]
-[**reprompt**](QGPT API#reprompt) | **POST** /qgpt/reprompt | /qgpt/reprompt [POST]
+[**hints**](QGPTApi#hints) | **POST** /qgpt/hints | /qgpt/hints [POST]
+[**personsRelated**](QGPTApi#personsrelated) | **POST** /qgpt/persons/related | /qgpt/persons/related [POST]
+[**qgptStream**](QGPTApi#qgptstream) | **GET** /qgpt/stream | /qgpt/stream [WS]
+[**question**](QGPTApi#question) | **POST** /qgpt/question | /qgpt/question [POST]
+[**relevance**](QGPTApi#relevance) | **POST** /qgpt/relevance | /qgpt/relevance [POST]
+[**reprompt**](QGPTApi#reprompt) | **POST** /qgpt/reprompt | /qgpt/reprompt [POST]
 
 
 ## **hints** {#hints}
@@ -27,7 +27,7 @@ Generates suggested questions that users can ask. It accepts the answer displaye
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.HintsRequest = {
     // QGPTHintsInput (optional)
@@ -73,7 +73,7 @@ Utilize this endpoint for Who Support, identifying individuals who can provide a
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.PersonsRelatedRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -122,7 +122,7 @@ Provides a WebSocket connection that streams inputs to the qGPT model. It handle
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.QgptStreamRequest = {
     // QGPTStreamInput (optional)
@@ -171,7 +171,7 @@ Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endp
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.QuestionRequest = {
     // QGPTQuestionInput (optional)
@@ -220,7 +220,7 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.RelevanceRequest = {
     // QGPTRelevanceInput (optional)
@@ -269,7 +269,7 @@ This will take in a followup question and the history of the conversation, and e
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.QGPT API(configuration)
+const apiInstance = new Pieces.QGPTApi(configuration)
 
 const body: Pieces.RepromptRequest = {
     // QGPTRepromptInput (optional)

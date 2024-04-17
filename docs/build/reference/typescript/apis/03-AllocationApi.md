@@ -8,8 +8,8 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**allocationSnapshot**](Allocation API#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
-[**allocationUpdate**](Allocation API#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
+[**allocationSnapshot**](AllocationApi#allocationsnapshot) | **GET** /allocation/\{allocation\} | /allocation/\{allocation\} [GET]
+[**allocationUpdate**](AllocationApi#allocationupdate) | **POST** /allocation/update | /allocation/update [POST]
 
 
 ## **allocationSnapshot** {#allocationsnapshot}
@@ -23,7 +23,7 @@ This will get a snapshot of a specific allocation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Allocation API(configuration)
+const apiInstance = new Pieces.AllocationApi(configuration)
 
 const body: Pieces.AllocationSnapshotRequest = {
     // string
@@ -69,7 +69,7 @@ This will update a specific allocation.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Allocation API(configuration)
+const apiInstance = new Pieces.AllocationApi(configuration)
 
 const body: Pieces.AllocationUpdateRequest = {
     // AllocationCloud (optional)

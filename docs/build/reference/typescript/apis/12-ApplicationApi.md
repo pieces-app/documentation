@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**applicationUpdate**](Application API#applicationupdate) | **POST** /application/update | /application/update [GET]
+[**applicationUpdate**](ApplicationApi#applicationupdate) | **POST** /application/update | /application/update [GET]
 
 
 ## **applicationUpdate** {#applicationupdate}
@@ -22,7 +22,7 @@ This is an endpoint for updating an application.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Application API(configuration)
+const apiInstance = new Pieces.ApplicationApi(configuration)
 
 const body: Pieces.ApplicationUpdateRequest = {
     // Application (optional)

@@ -8,7 +8,7 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**relationshipsSpecificRelationshipSnapshot**](Relationship API#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
+[**relationshipsSpecificRelationshipSnapshot**](RelationshipApi#relationshipsspecificrelationshipsnapshot) | **GET** /relationship/\{relationship\} | /relationship/\{relationship\} [GET]
 
 
 ## **relationshipsSpecificRelationshipSnapshot** {#relationshipsspecificrelationshipsnapshot}
@@ -22,7 +22,7 @@ This will return a single relationship object.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Relationship API(configuration)
+const apiInstance = new Pieces.RelationshipApi(configuration)
 
 const body: Pieces.RelationshipsSpecificRelationshipSnapshotRequest = {
     // string | this is a specific relationship uuid.

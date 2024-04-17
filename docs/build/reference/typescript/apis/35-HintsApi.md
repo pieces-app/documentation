@@ -8,9 +8,9 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**hintsCreateNewHint**](Hints API#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
-[**hintsDeleteSpecificHint**](Hints API#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
-[**hintsSnapshot**](Hints API#hintssnapshot) | **GET** /hints | /hints [GET]
+[**hintsCreateNewHint**](HintsApi#hintscreatenewhint) | **POST** /hints/create | /hints/create [POST]
+[**hintsDeleteSpecificHint**](HintsApi#hintsdeletespecifichint) | **POST** /hints/\{hint\}/delete | /hints/\{hint\}/delete [POST]
+[**hintsSnapshot**](HintsApi#hintssnapshot) | **GET** /hints | /hints [GET]
 
 
 ## **hintsCreateNewHint** {#hintscreatenewhint}
@@ -24,7 +24,7 @@ This will create a hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Hints API(configuration)
+const apiInstance = new Pieces.HintsApi(configuration)
 
 const body: Pieces.HintsCreateNewHintRequest = {
     // SeededHint (optional)
@@ -70,7 +70,7 @@ This will delete a specific hint.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Hints API(configuration)
+const apiInstance = new Pieces.HintsApi(configuration)
 
 const body: Pieces.HintsDeleteSpecificHintRequest = {
     // string | This is a specific hint uuid
@@ -116,7 +116,7 @@ This will get a snapshot of all of the hints.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Hints API(configuration)
+const apiInstance = new Pieces.HintsApi(configuration)
 
 apiInstance.hintsSnapshot().then((data: Hints) => {
     console.log('API called successfully. Returned data: ' + data)

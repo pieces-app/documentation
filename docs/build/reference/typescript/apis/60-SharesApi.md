@@ -8,10 +8,10 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sharesCreateNewShare**](Shares API#sharescreatenewshare) | **POST** /shares/create | /shares/create [POST]
-[**sharesDeleteShare**](Shares API#sharesdeleteshare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
-[**sharesSnapshot**](Shares API#sharessnapshot) | **GET** /shares | /shares [GET]
-[**sharesSpecificShareSnapshot**](Shares API#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
+[**sharesCreateNewShare**](SharesApi#sharescreatenewshare) | **POST** /shares/create | /shares/create [POST]
+[**sharesDeleteShare**](SharesApi#sharesdeleteshare) | **POST** /shares/\{share\}/delete | /shares/\{share\}/delete [POST]
+[**sharesSnapshot**](SharesApi#sharessnapshot) | **GET** /shares | /shares [GET]
+[**sharesSpecificShareSnapshot**](SharesApi#sharesspecificsharesnapshot) | **GET** /shares/\{share\} | /shares/\{share\} [GET]
 
 
 ## **sharesCreateNewShare** {#sharescreatenewshare}
@@ -25,7 +25,7 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Shares API(configuration)
+const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesCreateNewShareRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -73,7 +73,7 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Shares API(configuration)
+const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesDeleteShareRequest = {
     // string | Share id
@@ -118,7 +118,7 @@ This will return all of your shares. A Share is an asset that you as a user deci
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Shares API(configuration)
+const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesSnapshotRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -163,7 +163,7 @@ This is an endpoint to enable a client to access a specific share through a prov
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Shares API(configuration)
+const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesSpecificShareSnapshotRequest = {
     // string | Share id

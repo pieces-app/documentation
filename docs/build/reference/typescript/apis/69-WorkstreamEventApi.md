@@ -8,11 +8,11 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**workstreamEventAssociateWorkstreamSummary**](WorkstreamEvent API#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**workstreamEventDisassociateWorkstreamSummary**](WorkstreamEvent API#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**workstreamEventScoresIncrement**](WorkstreamEvent API#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment | \'/workstream_event/\{workstream_event\}/scores/increment\' [POST]
-[**workstreamEventUpdate**](WorkstreamEvent API#workstreameventupdate) | **POST** /workstream_event/update | /workstream_event/update [POST]
-[**workstreamEventsSpecificWorkstreamEventSnapshot**](WorkstreamEvent API#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\} | /workstream_event/\{workstream_event\} [GET]
+[**workstreamEventAssociateWorkstreamSummary**](WorkstreamEventApi#workstreameventassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**workstreamEventDisassociateWorkstreamSummary**](WorkstreamEventApi#workstreameventdisassociateworkstreamsummary) | **POST** /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} | /workstream_event/\{workstream_event\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**workstreamEventScoresIncrement**](WorkstreamEventApi#workstreameventscoresincrement) | **POST** /workstream_event/\{workstream_event\}/scores/increment | \'/workstream_event/\{workstream_event\}/scores/increment\' [POST]
+[**workstreamEventUpdate**](WorkstreamEventApi#workstreameventupdate) | **POST** /workstream_event/update | /workstream_event/update [POST]
+[**workstreamEventsSpecificWorkstreamEventSnapshot**](WorkstreamEventApi#workstreameventsspecificworkstreameventsnapshot) | **GET** /workstream_event/\{workstream_event\} | /workstream_event/\{workstream_event\} [GET]
 
 
 ## **workstreamEventAssociateWorkstreamSummary** {#workstreameventassociateworkstreamsummary}
@@ -26,7 +26,7 @@ This will associate a workstream_event with a workstream summary. This will do t
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEvent API(configuration)
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventAssociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -75,7 +75,7 @@ This will enable us to disassociate a workstream_event from a workstream summary
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEvent API(configuration)
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventDisassociateWorkstreamSummaryRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -124,7 +124,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEvent API(configuration)
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventScoresIncrementRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.
@@ -173,7 +173,7 @@ This will update a specific workstream_event.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEvent API(configuration)
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
@@ -222,7 +222,7 @@ This will get a snapshot of a single workstream_event.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.WorkstreamEvent API(configuration)
+const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
     // string | This is a identifier that is used to identify a specific workstream_event.

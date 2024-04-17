@@ -8,12 +8,12 @@ All URIs are relative to *http://localhost:1000*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**anchorAssociateWorkstreamSummary**](Anchor API#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
-[**anchorDisassociateWorkstreamSummary**](Anchor API#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
-[**anchorRename**](Anchor API#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
-[**anchorScoresIncrement**](Anchor API#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | \'/anchor/\{anchor\}/scores/increment\' [POST]
-[**anchorSpecificAnchorSnapshot**](Anchor API#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
-[**anchorUpdate**](Anchor API#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
+[**anchorAssociateWorkstreamSummary**](AnchorApi#anchorassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/associate/\{workstream_summary\} [POST]
+[**anchorDisassociateWorkstreamSummary**](AnchorApi#anchordisassociateworkstreamsummary) | **POST** /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} | /anchor/\{anchor\}/workstream_summaries/disassociate/\{workstream_summary\} [POST]
+[**anchorRename**](AnchorApi#anchorrename) | **POST** /anchor/\{anchor\}/rename | /anchor/\{anchor\}/rename [POST]
+[**anchorScoresIncrement**](AnchorApi#anchorscoresincrement) | **POST** /anchor/\{anchor\}/scores/increment | \'/anchor/\{anchor\}/scores/increment\' [POST]
+[**anchorSpecificAnchorSnapshot**](AnchorApi#anchorspecificanchorsnapshot) | **GET** /anchor/\{anchor\} | /anchor/\{anchor\} [GET]
+[**anchorUpdate**](AnchorApi#anchorupdate) | **POST** /anchor/update | /anchor/update [POST]
 
 
 ## **anchorAssociateWorkstreamSummary** {#anchorassociateworkstreamsummary}
@@ -27,7 +27,7 @@ This will associate a anchor with a workstream summary. This will do the same th
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorAssociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
@@ -76,7 +76,7 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorDisassociateWorkstreamSummaryRequest = {
     // string | This is the specific uuid of an anchor.
@@ -125,7 +125,7 @@ This will rename a specific anchor.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorRenameRequest = {
     // string | This is the specific uuid of an anchor.
@@ -174,7 +174,7 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorScoresIncrementRequest = {
     // string | This is the specific uuid of an anchor.
@@ -223,7 +223,7 @@ This will get a snapshot of a single anchor.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorSpecificAnchorSnapshotRequest = {
     // string | This is the specific uuid of an anchor.
@@ -272,7 +272,7 @@ This will update a specific anchor.
 import * as Pieces from '@pieces.app/pieces-os-client'
 
 const configuration = Pieces.Configuration()
-const apiInstance = new Pieces.Anchor API(configuration)
+const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorUpdateRequest = {
     // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
