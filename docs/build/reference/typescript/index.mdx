@@ -1,0 +1,123 @@
+---
+title: TypeScript SDK
+description: This getting started guide will help you get started with the Pieces for Developers TypeScript SDK.
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import GridFlexRow from '/src/components/GridFlexRow'
+import CTAButton from '/src/components/CTAButton'
+
+## Introduction
+The Pieces SDK is a powerful code engine package designed for writing applications on top of [Pieces OS](/installation-getting-started/what-am-i-installing). It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+
+## Requirements
+The Pieces SDK has the following system requirements:
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) running as a backend service.
+
+## Installation
+To get started with the Pieces SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+
+    <GridFlexRow type={'start'}>
+      <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+      />
+      <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+      />
+    </GridFlexRow>
+
+2. **Install the SDK**: Install the Pieces SDK using your preferred package manager:
+
+    <Tabs
+      defaultValue={'npm'}
+      values={[
+        {label: 'npm', value: 'npm'},
+        {label: 'pnpm', value: 'pnpm'},
+        {label: 'yarn', value: 'yarn'},
+      ]}
+    >
+      <TabItem value="npm">
+      ```shell
+      npm install @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+      <TabItem value="pnpm">
+      ```shell
+      pnpm add @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+      <TabItem value="yarn">
+      ```shell
+      yarn add @pieces.app/pieces-os-client
+      ```
+      </TabItem>
+    </Tabs>
+
+## Getting Started
+
+:::info
+
+It's important to note that the localhost port for Pieces OS is different based on the operating system.
+
+For Linux, you should use `localhost:5323`.
+
+For macOS and Windows, you should use `localhost:1000`.
+
+:::
+
+Create a `main.ts` file and add the following code:
+
+```typescript title="main.ts"
+import * as Pieces from '@pieces.app/pieces-os-client'
+import os from 'os';
+
+const platform = os.platform();
+let port = 1000;
+
+// Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+if (platform === 'linux') {
+  port = 5323;
+} else {
+  port = 1000;
+}
+
+// The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
+const configuration = Pieces.Configuration({
+  basePath: `http://localhost:${port}`
+})
+// Create an instance of the WellKnownApi class
+const apiInstance = new Pieces.WellKnownApi(configuration)
+
+apiInstance.getWellKnownHealth().then((data: string) => {
+  console.log(data) // ok
+}).catch((error: unknown) => console.error(error))
+```
+
+Run the following command to execute the script:
+
+```shell
+ts-node main.ts
+```
+
+## Next Steps
+
+If you've made it this far, that means you've successfully connected to your local Pieces OS server using our TypeScript SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
+
+Click the `Next →` button below to dive deeper into the TypeScript SDK documentation.

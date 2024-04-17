@@ -1,8 +1,6 @@
 import React from 'react';
-import clsx from 'clsx';
 import CTAButton from "/src/components/CTAButton";
 import GridFlexRow from "@site/src/components/GridFlexRow";
-import {MiniSpacer} from "@site/src/components/Spacers";
 
 export default function NotFoundContent({className}) {
   return (
