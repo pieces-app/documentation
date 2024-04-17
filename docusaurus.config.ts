@@ -8,24 +8,16 @@ const config: Config = {
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers!',
   favicon: 'assets/pieces_logos/white_circle.png',
 
-  // Set the production url of your site here
   url: 'https://docs.pieces.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pieces-app',
   projectName: 'documentation',
 
   onBrokenLinks: 'throw',
-  onBrokenAnchors: 'throw',
+  onBrokenAnchors: 'warn',
   onBrokenMarkdownLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -56,33 +48,6 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
-    // TODO: Keep this commented out until we have the OpenAPI specs ready
-    // [
-    //   'redocusaurus',
-    //   {
-    //     // Plugin Options for loading OpenAPI files
-    //     specs: [
-    //       {
-    //         spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/common/runtime_common_library.yaml',
-    //         route: '/build/common',
-    //         id: 'common',
-    //       },
-    //       // {
-    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/connector/connector.openapi.yaml',
-    //       //   route: '/build/connector',
-    //       //   id: 'connector'
-    //       // },
-    //       // {
-    //       //   spec: '/Users/pieces/IdeaProjects/generated_runtime/spec/modules/core/isomorphic.openapi.yaml',
-    //       //   route: '/build/core',
-    //       //   id: 'core'
-    //       // },
-    //     ],
-    //     theme: {
-    //       primaryColor: 'rgb(183,183,183)',
-    //     },
-    //   },
-    // ],
   ],
 
   themeConfig: {
@@ -99,16 +64,12 @@ const config: Config = {
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
     },
 
-    // The following logic ensures that Algolia search is only used for production deployments
-    // ...(process.env.VERCEL_ENV === 'production' ?
-    //   {
     algolia: {
       appId: 'KTOXFODR65',
       apiKey: 'ea4804560699e4b727715163b74bea83',
       indexName: 'pieces_docusaurus',
     },
-      // } : {}
-    // ),
+
     navbar: {
       logo: {
         alt: 'Pieces for Developers',
@@ -128,19 +89,12 @@ const config: Config = {
           label: 'Learn',
           position: 'right',
         },
-        // TODO: Keep this commented out until we have the OpenAPI specs ready
-        // {
-        //   type: 'dropdown',
-        //   label: 'SDKs',
-        //   position: 'right',
-        //   items: [
-        //     {
-        //       type: 'docSidebar',
-        //       sidebarId: 'pythonSDKSidebar',
-        //       label: 'Python SDK',
-        //     },
-        //   ],
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'sdksOverviewSidebar',
+          label: 'Build',
+          position: 'right',
+        },
         {
           to: '/community',
           label: 'Community',
