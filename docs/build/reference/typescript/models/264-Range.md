@@ -1,3 +1,7 @@
+---
+title: Range | TypeScript SDK
+---
+
 
 # Range
 

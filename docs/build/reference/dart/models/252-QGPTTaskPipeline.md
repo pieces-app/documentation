@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipeline | Dart SDK
+---
+
 # QGPTTaskPipeline
 
 ## Load the model package

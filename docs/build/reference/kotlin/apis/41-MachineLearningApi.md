@@ -1,3 +1,7 @@
+---
+title: MachineLearning API | Kotlin SDK
+---
+
 # MachineLearning API
 
 All URIs are relative to *http://localhost:1000*
@@ -21,16 +25,16 @@ This is going to take in some personification details ie languages &amp; persona
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = MachineLearningApi()
+val apiInstance = MachineLearning API()
 val preonboardedPersonaDetails : PreonboardedPersonaDetails =  // PreonboardedPersonaDetails | 
 try {
     val result : OnboardedPersonaDetails = apiInstance.personificationTechnicalLanguageGeneration(preonboardedPersonaDetails)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling MachineLearningApi#personificationTechnicalLanguageGeneration")
+    println("4xx response calling MachineLearning API#personificationTechnicalLanguageGeneration")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling MachineLearningApi#personificationTechnicalLanguageGeneration")
+    println("5xx response calling MachineLearning API#personificationTechnicalLanguageGeneration")
     e.printStackTrace()
 }
 ```
@@ -67,17 +71,17 @@ This is a functional endpoint that will parse a message or text in to text or co
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = MachineLearningApi()
+val apiInstance = MachineLearning API()
 val classify : kotlin.Boolean = true // kotlin.Boolean | This will let us know if you want us to classifiy your code, this is default to false.
 val unsegmentedTechnicalLanguage : UnsegmentedTechnicalLanguage =  // UnsegmentedTechnicalLanguage | 
 try {
     val result : SegmentedTechnicalLanguage = apiInstance.segmentTechnicalLanguage(classify, unsegmentedTechnicalLanguage)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling MachineLearningApi#segmentTechnicalLanguage")
+    println("4xx response calling MachineLearning API#segmentTechnicalLanguage")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling MachineLearningApi#segmentTechnicalLanguage")
+    println("5xx response calling MachineLearning API#segmentTechnicalLanguage")
     e.printStackTrace()
 }
 ```

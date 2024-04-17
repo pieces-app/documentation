@@ -1,3 +1,7 @@
+---
+title: FlattenedActivities | Python SDK
+---
+
 # FlattenedActivities
 
 

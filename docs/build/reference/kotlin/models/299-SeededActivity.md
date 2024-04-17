@@ -1,3 +1,7 @@
+---
+title: SeededActivity | Kotlin SDK
+---
+
 
 # SeededActivity
 

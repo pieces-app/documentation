@@ -1,3 +1,7 @@
+---
+title: ModelDownloadProgress | TypeScript SDK
+---
+
 
 # ModelDownloadProgress
 

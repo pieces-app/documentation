@@ -1,3 +1,7 @@
+---
+title: ExportedDatabase | TypeScript SDK
+---
+
 
 # ExportedDatabase
 

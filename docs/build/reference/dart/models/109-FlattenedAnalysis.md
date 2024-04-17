@@ -1,3 +1,7 @@
+---
+title: FlattenedAnalysis | Dart SDK
+---
+
 # FlattenedAnalysis
 
 ## Load the model package

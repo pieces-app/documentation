@@ -1,3 +1,7 @@
+---
+title: BackupStreamedProgress | TypeScript SDK
+---
+
 
 # BackupStreamedProgress
 

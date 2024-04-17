@@ -1,3 +1,7 @@
+---
+title: Piece API | TypeScript SDK
+---
+
 # Piece API
 
 All URIs are relative to *http://localhost:1000*

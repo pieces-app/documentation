@@ -1,3 +1,7 @@
+---
+title: OCRAnalyses | TypeScript SDK
+---
+
 
 # OCRAnalyses
 

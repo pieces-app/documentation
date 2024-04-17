@@ -1,3 +1,7 @@
+---
+title: ModelDownloadProgressStatusEnum | Dart SDK
+---
+
 # ModelDownloadProgressStatusEnum
 
 ## Load the model package

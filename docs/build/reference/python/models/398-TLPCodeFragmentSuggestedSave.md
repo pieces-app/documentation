@@ -1,3 +1,7 @@
+---
+title: TLPCodeFragmentSuggestedSave | Python SDK
+---
+
 # TLPCodeFragmentSuggestedSave
 
 Model for monitoring and evaluating the suggested save feature

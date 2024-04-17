@@ -1,3 +1,7 @@
+---
+title: SuggestionTarget | Dart SDK
+---
+
 # SuggestionTarget
 
 ## Load the model package

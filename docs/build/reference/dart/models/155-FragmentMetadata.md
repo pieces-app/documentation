@@ -1,3 +1,7 @@
+---
+title: FragmentMetadata | Dart SDK
+---
+
 # FragmentMetadata
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: Activity | TypeScript SDK
+---
+
 
 # Activity
 

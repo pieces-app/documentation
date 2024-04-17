@@ -1,3 +1,7 @@
+---
+title: SeededFormat | Dart SDK
+---
+
 # SeededFormat
 
 ## Load the model package

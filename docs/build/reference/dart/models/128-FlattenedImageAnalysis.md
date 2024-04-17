@@ -1,3 +1,7 @@
+---
+title: FlattenedImageAnalysis | Dart SDK
+---
+
 # FlattenedImageAnalysis
 
 ## Load the model package

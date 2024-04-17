@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeExplanation | Kotlin SDK
+---
+
 
 # QGPTTaskPipelineForCodeExplanation
 

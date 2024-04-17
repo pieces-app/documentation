@@ -1,3 +1,7 @@
+---
+title: WorkstreamEventTriggerMetadata | Kotlin SDK
+---
+
 
 # WorkstreamEventTriggerMetadata
 

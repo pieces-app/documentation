@@ -1,3 +1,7 @@
+---
+title: SeededAnchorPoint | TypeScript SDK
+---
+
 
 # SeededAnchorPoint
 

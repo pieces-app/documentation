@@ -1,3 +1,7 @@
+---
+title: Edges | Python SDK
+---
+
 # Edges
 
 

@@ -1,3 +1,7 @@
+---
+title: OSDeviceInformationReturnable | Kotlin SDK
+---
+
 
 # OSDeviceInformationReturnable
 

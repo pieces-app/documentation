@@ -1,3 +1,7 @@
+---
+title: OCRAnalysis | Python SDK
+---
+
 # OCRAnalysis
 
 This is the data collected during the ocr analysis of an image.

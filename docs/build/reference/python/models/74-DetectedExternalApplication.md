@@ -1,3 +1,7 @@
+---
+title: DetectedExternalApplication | Python SDK
+---
+
 # DetectedExternalApplication
 
 This is a detected External Application that comes from our endpoint that will get a snapshot of the installed applications on your machine.

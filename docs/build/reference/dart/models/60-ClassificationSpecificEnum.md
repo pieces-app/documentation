@@ -1,3 +1,7 @@
+---
+title: ClassificationSpecificEnum | Dart SDK
+---
+
 # ClassificationSpecificEnum
 
 ## Load the model package

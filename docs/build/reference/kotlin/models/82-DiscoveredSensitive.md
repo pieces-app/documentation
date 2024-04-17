@@ -1,3 +1,7 @@
+---
+title: DiscoveredSensitive | Kotlin SDK
+---
+
 
 # DiscoveredSensitive
 

@@ -1,3 +1,7 @@
+---
+title: SeededTrackedSessionEvent | Kotlin SDK
+---
+
 
 # SeededTrackedSessionEvent
 

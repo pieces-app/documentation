@@ -1,3 +1,7 @@
+---
+title: Formats API | TypeScript SDK
+---
+
 # Formats API
 
 All URIs are relative to *http://localhost:1000*

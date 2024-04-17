@@ -1,3 +1,7 @@
+---
+title: OSDeviceCPUHardwareInformation | Kotlin SDK
+---
+
 
 # OSDeviceCPUHardwareInformation
 

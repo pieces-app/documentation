@@ -1,3 +1,7 @@
+---
+title: TextLocation | Python SDK
+---
+
 # TextLocation
 
 This is a generic model that is used for text location.

@@ -1,3 +1,7 @@
+---
+title: AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs | TypeScript SDK
+---
+
 
 # AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs
 

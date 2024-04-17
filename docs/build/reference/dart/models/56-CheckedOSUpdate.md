@@ -1,3 +1,7 @@
+---
+title: CheckedOSUpdate | Dart SDK
+---
+
 # CheckedOSUpdate
 
 ## Load the model package

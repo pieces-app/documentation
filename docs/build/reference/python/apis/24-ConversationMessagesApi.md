@@ -1,3 +1,7 @@
+---
+title: ConversationMessages API | Python SDK
+---
+
 # ConversationMessages API
 
 All URIs are relative to *http://localhost:1000*
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessagesApi(api_client)
+    api_instance = ConversationMessages API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seeded_conversation_message = pieces_os_client.SeededConversationMessage() # SeededConversationMessage |  (optional)
 
@@ -70,7 +74,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -106,7 +110,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessagesApi(api_client)
+    api_instance = ConversationMessages API(api_client)
     message = 'message_example' # str | This is the uuid of a message.
 
     try:
@@ -136,7 +140,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -173,7 +177,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessagesApi(api_client)
+    api_instance = ConversationMessages API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -205,7 +209,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

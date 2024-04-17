@@ -1,3 +1,7 @@
+---
+title: FlattenedHint | Kotlin SDK
+---
+
 
 # FlattenedHint
 

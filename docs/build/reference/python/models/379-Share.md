@@ -1,3 +1,7 @@
+---
+title: Share | Python SDK
+---
+
 # Share
 
 This represents what information that is relavent to anything and every sharing related. v1 will look very bare and will add more and more data as we go!  if user is undefined && access is public then we have an asset that is publicly available.

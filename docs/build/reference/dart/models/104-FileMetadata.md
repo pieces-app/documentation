@@ -1,3 +1,7 @@
+---
+title: FileMetadata | Dart SDK
+---
+
 # FileMetadata
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: Notification | Dart SDK
+---
+
 # Notification
 
 ## Load the model package

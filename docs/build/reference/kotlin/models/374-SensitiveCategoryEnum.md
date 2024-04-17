@@ -1,3 +1,7 @@
+---
+title: SensitiveCategoryEnum | Kotlin SDK
+---
+
 
 # SensitiveCategoryEnum
 

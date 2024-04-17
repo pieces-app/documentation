@@ -1,3 +1,7 @@
+---
+title: AnnotationTypeEnum | Kotlin SDK
+---
+
 
 # AnnotationTypeEnum
 

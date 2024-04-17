@@ -1,3 +1,7 @@
+---
+title: FlattenedPreview | Dart SDK
+---
+
 # FlattenedPreview
 
 ## Load the model package

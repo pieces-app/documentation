@@ -1,3 +1,7 @@
+---
+title: OAuthAccount | TypeScript SDK
+---
+
 
 # OAuthAccount
 

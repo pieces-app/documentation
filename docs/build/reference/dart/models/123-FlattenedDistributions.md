@@ -1,3 +1,7 @@
+---
+title: FlattenedDistributions | Dart SDK
+---
+
 # FlattenedDistributions
 
 ## Load the model package

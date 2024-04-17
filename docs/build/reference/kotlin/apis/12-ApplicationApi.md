@@ -1,3 +1,7 @@
+---
+title: Application API | Kotlin SDK
+---
+
 # Application API
 
 All URIs are relative to *http://localhost:1000*
@@ -20,16 +24,16 @@ This is an endpoint for updating an application.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationApi()
+val apiInstance = Application API()
 val application : Application =  // Application | 
 try {
     val result : Application = apiInstance.applicationUpdate(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationApi#applicationUpdate")
+    println("4xx response calling Application API#applicationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationApi#applicationUpdate")
+    println("5xx response calling Application API#applicationUpdate")
     e.printStackTrace()
 }
 ```

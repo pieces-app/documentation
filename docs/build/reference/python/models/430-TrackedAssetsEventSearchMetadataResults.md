@@ -1,3 +1,7 @@
+---
+title: TrackedAssetsEventSearchMetadataResults | Python SDK
+---
+
 # TrackedAssetsEventSearchMetadataResults
 
 Numbers related to search results

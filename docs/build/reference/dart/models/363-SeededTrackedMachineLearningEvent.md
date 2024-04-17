@@ -1,3 +1,7 @@
+---
+title: SeededTrackedMachineLearningEvent | Dart SDK
+---
+
 # SeededTrackedMachineLearningEvent
 
 ## Load the model package

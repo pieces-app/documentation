@@ -1,3 +1,7 @@
+---
+title: ModelMaxTokens | Python SDK
+---
+
 # ModelMaxTokens
 
 This will describe the MaxTokens for an MLModel  total is required.  iff there is a differentiator with inputs/outputs, then we can also provide those as well.

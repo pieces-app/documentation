@@ -1,3 +1,7 @@
+---
+title: Range | Python SDK
+---
+
 # Range
 
 This is an identified Range, this is ONLY needed when using plural rangedTimestamps, in order to ensure granularity(add/modify/delete)

@@ -1,3 +1,7 @@
+---
+title: FlattenedConversations | Dart SDK
+---
+
 # FlattenedConversations
 
 ## Load the model package

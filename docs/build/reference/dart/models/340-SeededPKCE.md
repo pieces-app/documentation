@@ -1,3 +1,7 @@
+---
+title: SeededPKCE | Dart SDK
+---
+
 # SeededPKCE
 
 ## Load the model package

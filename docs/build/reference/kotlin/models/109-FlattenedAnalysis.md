@@ -1,3 +1,7 @@
+---
+title: FlattenedAnalysis | Kotlin SDK
+---
+
 
 # FlattenedAnalysis
 

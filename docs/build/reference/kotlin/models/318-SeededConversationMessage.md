@@ -1,3 +1,7 @@
+---
+title: SeededConversationMessage | Kotlin SDK
+---
+
 
 # SeededConversationMessage
 

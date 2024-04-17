@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessageRoleEnum | Dart SDK
+---
+
 # QGPTConversationMessageRoleEnum
 
 ## Load the model package

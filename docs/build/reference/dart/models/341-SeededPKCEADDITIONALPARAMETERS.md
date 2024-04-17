@@ -1,3 +1,7 @@
+---
+title: SeededPKCEADDITIONALPARAMETERS | Dart SDK
+---
+
 # SeededPKCEADDITIONALPARAMETERS
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededModel | Kotlin SDK
+---
+
 
 # SeededModel
 

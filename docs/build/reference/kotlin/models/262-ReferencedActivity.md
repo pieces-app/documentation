@@ -1,3 +1,7 @@
+---
+title: ReferencedActivity | Kotlin SDK
+---
+
 
 # ReferencedActivity
 

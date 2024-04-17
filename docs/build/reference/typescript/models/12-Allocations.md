@@ -1,3 +1,7 @@
+---
+title: Allocations | TypeScript SDK
+---
+
 
 # Allocations
 

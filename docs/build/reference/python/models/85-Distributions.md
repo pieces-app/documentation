@@ -1,3 +1,7 @@
+---
+title: Distributions | Python SDK
+---
+
 # Distributions
 
 This is the plural Model of a Distribution.

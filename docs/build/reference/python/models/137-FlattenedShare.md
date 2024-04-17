@@ -1,3 +1,7 @@
+---
+title: FlattenedShare | Python SDK
+---
+
 # FlattenedShare
 
 This is a dag safe version of the Share.  if user is undefined && access is public then we have an asset that is publicly available.

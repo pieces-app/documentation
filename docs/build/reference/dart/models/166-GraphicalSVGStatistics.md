@@ -1,3 +1,7 @@
+---
+title: GraphicalSVGStatistics | Dart SDK
+---
+
 # GraphicalSVGStatistics
 
 ## Load the model package

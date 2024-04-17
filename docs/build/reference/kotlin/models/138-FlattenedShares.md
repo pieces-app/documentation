@@ -1,3 +1,7 @@
+---
+title: FlattenedShares | Kotlin SDK
+---
+
 
 # FlattenedShares
 

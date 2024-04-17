@@ -1,3 +1,7 @@
+---
+title: ReferencedAnchorPoint | Python SDK
+---
+
 # ReferencedAnchorPoint
 
 

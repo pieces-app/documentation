@@ -1,3 +1,7 @@
+---
+title: Edges | TypeScript SDK
+---
+
 
 # Edges
 

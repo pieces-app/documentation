@@ -1,3 +1,7 @@
+---
+title: MacOS API | Python SDK
+---
+
 # MacOS API
 
 All URIs are relative to *http://localhost:1000*
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MacOSApi(api_client)
+    api_instance = MacOS API(api_client)
     seeded_mac_os_asset = pieces_os_client.SeededMacOSAsset() # SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance (optional)
 
     try:

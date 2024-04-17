@@ -1,3 +1,7 @@
+---
+title: OAuthGroup | Dart SDK
+---
+
 # OAuthGroup
 
 ## Load the model package

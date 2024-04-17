@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipeline | TypeScript SDK
+---
+
 
 # QGPTConversationPipeline
 

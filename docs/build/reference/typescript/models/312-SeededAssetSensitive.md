@@ -1,3 +1,7 @@
+---
+title: SeededAssetSensitive | TypeScript SDK
+---
+
 
 # SeededAssetSensitive
 

@@ -1,3 +1,7 @@
+---
+title: Auth0UserMetadata | Python SDK
+---
+
 # Auth0UserMetadata
 
 User Metadata from Auth0

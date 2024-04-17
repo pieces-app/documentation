@@ -1,3 +1,7 @@
+---
+title: SeededAnchorPoint | Python SDK
+---
+
 # SeededAnchorPoint
 
 

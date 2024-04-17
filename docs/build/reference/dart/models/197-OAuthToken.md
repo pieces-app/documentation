@@ -1,3 +1,7 @@
+---
+title: OAuthToken | Dart SDK
+---
+
 # OAuthToken
 
 ## Load the model package

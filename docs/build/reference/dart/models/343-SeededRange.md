@@ -1,3 +1,7 @@
+---
+title: SeededRange | Dart SDK
+---
+
 # SeededRange
 
 ## Load the model package

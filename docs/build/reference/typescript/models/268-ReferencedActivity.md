@@ -1,3 +1,7 @@
+---
+title: ReferencedActivity | TypeScript SDK
+---
+
 
 # ReferencedActivity
 

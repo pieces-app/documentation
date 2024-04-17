@@ -1,3 +1,7 @@
+---
+title: SeededTrackedConversationEvent | Dart SDK
+---
+
 # SeededTrackedConversationEvent
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatistics | Python SDK
+---
+
 # GraphicalOCRDescriptiveStatistics
 
 Model for monitoring and evaluating the OCR feature

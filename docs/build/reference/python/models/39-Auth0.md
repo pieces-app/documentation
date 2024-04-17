@@ -1,3 +1,7 @@
+---
+title: Auth0 | Python SDK
+---
+
 # Auth0
 
 An object representing all of the properties that are available within a Auth0 PKCE Flow

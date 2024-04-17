@@ -1,3 +1,7 @@
+---
+title: AnchorTypeEnum | TypeScript SDK
+---
+
 
 # AnchorTypeEnum
 

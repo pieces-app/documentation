@@ -1,3 +1,7 @@
+---
+title: SeededTrackedAdoptionEvent | Python SDK
+---
+
 # SeededTrackedAdoptionEvent
 
 

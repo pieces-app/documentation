@@ -1,3 +1,7 @@
+---
+title: ReferencedConversationMessage | Dart SDK
+---
+
 # ReferencedConversationMessage
 
 ## Load the model package

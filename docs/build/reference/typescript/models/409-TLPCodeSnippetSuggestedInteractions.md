@@ -1,3 +1,7 @@
+---
+title: TLPCodeSnippetSuggestedInteractions | TypeScript SDK
+---
+
 
 # TLPCodeSnippetSuggestedInteractions
 

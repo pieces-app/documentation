@@ -1,3 +1,7 @@
+---
+title: WorkstreamPatternEngineStatus | Python SDK
+---
+
 # WorkstreamPatternEngineStatus
 
 This will return the status for the Workstream pettern engine, specifically the activation/deactivation status

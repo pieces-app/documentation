@@ -1,3 +1,7 @@
+---
+title: AssetFilter | Dart SDK
+---
+
 # AssetFilter
 
 ## Load the model package

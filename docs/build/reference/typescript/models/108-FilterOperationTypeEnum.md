@@ -1,3 +1,7 @@
+---
+title: FilterOperationTypeEnum | TypeScript SDK
+---
+
 
 # FilterOperationTypeEnum
 

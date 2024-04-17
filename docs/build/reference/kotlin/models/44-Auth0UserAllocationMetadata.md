@@ -1,3 +1,7 @@
+---
+title: Auth0UserAllocationMetadata | Kotlin SDK
+---
+
 
 # Auth0UserAllocationMetadata
 

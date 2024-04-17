@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForGeneralizedCodeDialog | TypeScript SDK
+---
+
 
 # QGPTConversationPipelineForGeneralizedCodeDialog
 

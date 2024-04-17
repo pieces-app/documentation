@@ -1,3 +1,7 @@
+---
+title: EmbeddedModelSchemaSemanticVersionEnum | Kotlin SDK
+---
+
 
 # EmbeddedModelSchemaSemanticVersionEnum
 

@@ -1,3 +1,7 @@
+---
+title: Score | TypeScript SDK
+---
+
 
 # Score
 

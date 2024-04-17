@@ -1,3 +1,7 @@
+---
+title: SeededDistribution | Python SDK
+---
+
 # SeededDistribution
 
 TODO if we add another distribution add to this, Distribution, and flattenedDistribution.  can only use this Model with our Linkify Model.

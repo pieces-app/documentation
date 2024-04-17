@@ -1,3 +1,7 @@
+---
+title: SeededGitHubDistribution | Python SDK
+---
+
 # SeededGitHubDistribution
 
 

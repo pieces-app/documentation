@@ -1,3 +1,7 @@
+---
+title: SensitiveMetadata | Kotlin SDK
+---
+
 
 # SensitiveMetadata
 

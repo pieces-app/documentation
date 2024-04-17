@@ -1,3 +1,7 @@
+---
+title: QGPTQuestionAnswers | Python SDK
+---
+
 # QGPTQuestionAnswers
 
 This is the plural of QGPTQuestionAnswer

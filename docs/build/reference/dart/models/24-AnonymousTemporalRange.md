@@ -1,3 +1,7 @@
+---
+title: AnonymousTemporalRange | Dart SDK
+---
+
 # AnonymousTemporalRange
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: SeededScoreIncrement | Kotlin SDK
+---
+
 
 # SeededScoreIncrement
 

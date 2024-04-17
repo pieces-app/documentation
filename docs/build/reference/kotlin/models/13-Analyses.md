@@ -1,3 +1,7 @@
+---
+title: Analyses | Kotlin SDK
+---
+
 
 # Analyses
 

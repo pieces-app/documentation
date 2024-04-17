@@ -1,3 +1,7 @@
+---
+title: Formats | Python SDK
+---
+
 # Formats
 
 A base class for a collection of formats and some additional meta properties.

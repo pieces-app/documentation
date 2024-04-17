@@ -1,3 +1,7 @@
+---
+title: SeededTrackedSessionEvent | Dart SDK
+---
+
 # SeededTrackedSessionEvent
 
 ## Load the model package

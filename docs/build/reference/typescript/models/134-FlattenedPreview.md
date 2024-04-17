@@ -1,3 +1,7 @@
+---
+title: FlattenedPreview | TypeScript SDK
+---
+
 
 # FlattenedPreview
 

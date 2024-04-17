@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessage | Kotlin SDK
+---
+
 
 # QGPTConversationMessage
 

@@ -1,3 +1,7 @@
+---
+title: Linkify | Dart SDK
+---
+
 # Linkify
 
 ## Load the model package

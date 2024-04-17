@@ -1,3 +1,7 @@
+---
+title: GraphicalImageStatistics | Dart SDK
+---
+
 # GraphicalImageStatistics
 
 ## Load the model package

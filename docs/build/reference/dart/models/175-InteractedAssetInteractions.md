@@ -1,3 +1,7 @@
+---
+title: InteractedAssetInteractions | Dart SDK
+---
+
 # InteractedAssetInteractions
 
 ## Load the model package

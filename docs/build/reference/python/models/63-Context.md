@@ -1,3 +1,7 @@
+---
+title: Context | Python SDK
+---
+
 # Context
 
 A Context that is returned from almost all calls to the ContextAPI

@@ -1,3 +1,7 @@
+---
+title: Users API | Dart SDK
+---
+
 # Users API
 
 All URIs are relative to *http://localhost:1000*

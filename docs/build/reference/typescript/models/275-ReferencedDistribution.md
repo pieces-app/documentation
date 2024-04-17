@@ -1,3 +1,7 @@
+---
+title: ReferencedDistribution | TypeScript SDK
+---
+
 
 # ReferencedDistribution
 

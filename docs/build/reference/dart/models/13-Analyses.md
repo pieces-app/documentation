@@ -1,3 +1,7 @@
+---
+title: Analyses | Dart SDK
+---
+
 # Analyses
 
 ## Load the model package

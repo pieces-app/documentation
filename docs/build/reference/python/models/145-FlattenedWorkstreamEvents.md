@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamEvents | Python SDK
+---
+
 # FlattenedWorkstreamEvents
 
 This is a plural (DAG Safe) version of a WorkstreamEvents.

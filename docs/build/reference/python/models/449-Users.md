@@ -1,3 +1,7 @@
+---
+title: Users | Python SDK
+---
+
 # Users
 
 A base class for a collection of users and some additional meta properties.

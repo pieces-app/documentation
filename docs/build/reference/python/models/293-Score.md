@@ -1,3 +1,7 @@
+---
+title: Score | Python SDK
+---
+
 # Score
 
 This is use as the score for an asset.  Manual: will be the raw sum of the asset activity events ranks with mechanismEnum == manual Automatic: will be the raw sum of the asset activity events ranks with mechanismEnum == automatic

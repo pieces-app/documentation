@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipeline | Python SDK
+---
+
 # QGPTTaskPipeline
 
 This model is specifically for QGPT Task pipelines, the model is used to group one off tasks for instance fix/explaining/commenting that dont necessarily require a conversation form factor.

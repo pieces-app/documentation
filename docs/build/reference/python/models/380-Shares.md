@@ -1,3 +1,7 @@
+---
+title: Shares | Python SDK
+---
+
 # Shares
 
 this is just an iterable of our individual share models.

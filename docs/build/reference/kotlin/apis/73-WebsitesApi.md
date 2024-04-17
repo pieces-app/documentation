@@ -1,3 +1,7 @@
+---
+title: Websites API | Kotlin SDK
+---
+
 # Websites API
 
 All URIs are relative to *http://localhost:1000*
@@ -23,17 +27,17 @@ This will create a website and attach it to a specific asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsitesApi()
+val apiInstance = Websites API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededWebsite : SeededWebsite =  // SeededWebsite | 
 try {
     val result : Website = apiInstance.websitesCreateNewWebsite(transferables, seededWebsite)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WebsitesApi#websitesCreateNewWebsite")
+    println("4xx response calling Websites API#websitesCreateNewWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsitesApi#websitesCreateNewWebsite")
+    println("5xx response calling Websites API#websitesCreateNewWebsite")
     e.printStackTrace()
 }
 ```
@@ -71,15 +75,15 @@ This will delete a specific website!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsitesApi()
+val apiInstance = Websites API()
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.websitesDeleteSpecificWebsite(website)
 } catch (e: ClientException) {
-    println("4xx response calling WebsitesApi#websitesDeleteSpecificWebsite")
+    println("4xx response calling Websites API#websitesDeleteSpecificWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsitesApi#websitesDeleteSpecificWebsite")
+    println("5xx response calling Websites API#websitesDeleteSpecificWebsite")
     e.printStackTrace()
 }
 ```
@@ -101,7 +105,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websitesExists** {#websitesexists}
 > ExistingMetadata websitesExists(existentMetadata)
@@ -116,16 +120,16 @@ This will check all of the websites in our database to see if this specific prov
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsitesApi()
+val apiInstance = Websites API()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
 try {
     val result : ExistingMetadata = apiInstance.websitesExists(existentMetadata)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WebsitesApi#websitesExists")
+    println("4xx response calling Websites API#websitesExists")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsitesApi#websitesExists")
+    println("5xx response calling Websites API#websitesExists")
     e.printStackTrace()
 }
 ```
@@ -162,16 +166,16 @@ This will get a snapshot of all your websites.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsitesApi()
+val apiInstance = Websites API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Websites = apiInstance.websitesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WebsitesApi#websitesSnapshot")
+    println("4xx response calling Websites API#websitesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsitesApi#websitesSnapshot")
+    println("5xx response calling Websites API#websitesSnapshot")
     e.printStackTrace()
 }
 ```

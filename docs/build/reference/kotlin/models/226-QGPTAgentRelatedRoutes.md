@@ -1,3 +1,7 @@
+---
+title: QGPTAgentRelatedRoutes | Kotlin SDK
+---
+
 
 # QGPTAgentRelatedRoutes
 

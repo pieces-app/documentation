@@ -1,3 +1,7 @@
+---
+title: Auth0 | TypeScript SDK
+---
+
 
 # Auth0
 

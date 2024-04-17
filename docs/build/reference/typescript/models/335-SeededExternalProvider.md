@@ -1,3 +1,7 @@
+---
+title: SeededExternalProvider | TypeScript SDK
+---
+
 
 # SeededExternalProvider
 

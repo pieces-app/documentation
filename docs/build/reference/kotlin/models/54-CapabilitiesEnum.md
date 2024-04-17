@@ -1,3 +1,7 @@
+---
+title: CapabilitiesEnum | Kotlin SDK
+---
+
 
 # CapabilitiesEnum
 

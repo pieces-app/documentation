@@ -1,3 +1,7 @@
+---
+title: SeededConnectorTracking | Kotlin SDK
+---
+
 
 # SeededConnectorTracking
 

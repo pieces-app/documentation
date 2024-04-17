@@ -1,3 +1,7 @@
+---
+title: SeededMacOSAsset | Python SDK
+---
+
 # SeededMacOSAsset
 
 An Seeded Asset specific to MacOS which takes in a Value, and Application

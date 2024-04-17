@@ -1,3 +1,7 @@
+---
+title: FlattenedHint | TypeScript SDK
+---
+
 
 # FlattenedHint
 

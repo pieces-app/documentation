@@ -1,3 +1,7 @@
+---
+title: ReferencedConversationMessage | Python SDK
+---
+
 # ReferencedConversationMessage
 
 This is a DAG-Safe Minimal version of a ConversationMessage.

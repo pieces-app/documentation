@@ -1,3 +1,7 @@
+---
+title: TrackedSessionEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # TrackedSessionEventIdentifierDescriptionPairs
 

@@ -1,3 +1,7 @@
+---
+title: TransferableString | Kotlin SDK
+---
+
 
 # TransferableString
 

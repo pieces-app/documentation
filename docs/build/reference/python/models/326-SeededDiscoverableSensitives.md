@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableSensitives | Python SDK
+---
+
 # SeededDiscoverableSensitives
 
 

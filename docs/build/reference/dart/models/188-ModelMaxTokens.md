@@ -1,3 +1,7 @@
+---
+title: ModelMaxTokens | Dart SDK
+---
+
 # ModelMaxTokens
 
 ## Load the model package

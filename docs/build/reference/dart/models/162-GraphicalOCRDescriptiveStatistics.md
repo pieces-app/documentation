@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatistics | Dart SDK
+---
+
 # GraphicalOCRDescriptiveStatistics
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: OpenAIModelsListInput | Python SDK
+---
+
 # OpenAIModelsListInput
 
 This is the input model for the /open_ai/models/list endpoint.

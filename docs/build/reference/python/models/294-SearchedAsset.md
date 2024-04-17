@@ -1,3 +1,7 @@
+---
+title: SearchedAsset | Python SDK
+---
+
 # SearchedAsset
 
 This is a modle that will represent a searched asset!

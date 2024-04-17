@@ -1,3 +1,7 @@
+---
+title: OS API | Python SDK
+---
+
 # OS API
 
 All URIs are relative to *http://localhost:1000*
@@ -43,7 +47,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     seeded_external_provider = pieces_os_client.SeededExternalProvider() # SeededExternalProvider |  (optional)
 
     try:
@@ -75,7 +79,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -113,7 +117,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/device/information [GET]
@@ -141,7 +145,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -178,7 +182,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/permissions [GET]
@@ -206,7 +210,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -243,7 +247,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     os_permissions = pieces_os_client.OSPermissions() # OSPermissions |  (optional)
 
     try:
@@ -275,7 +279,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -311,7 +315,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # Your GET endpoint
@@ -337,7 +341,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -375,7 +379,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     unchecked_os_update = pieces_os_client.UncheckedOSUpdate() # UncheckedOSUpdate |  (optional)
 
     try:
@@ -407,7 +411,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -444,7 +448,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     file_picker_input = pieces_os_client.FilePickerInput() # FilePickerInput |  (optional)
 
     try:
@@ -476,7 +480,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -512,7 +516,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/folders/pick [POST]
@@ -540,7 +544,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -577,7 +581,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # 
@@ -641,7 +645,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/sign_out [POST]

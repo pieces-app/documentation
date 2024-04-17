@@ -1,3 +1,7 @@
+---
+title: MailgunDistribution | Dart SDK
+---
+
 # MailgunDistribution
 
 ## Load the model package

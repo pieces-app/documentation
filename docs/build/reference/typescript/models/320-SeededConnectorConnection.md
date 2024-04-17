@@ -1,3 +1,7 @@
+---
+title: SeededConnectorConnection | TypeScript SDK
+---
+
 
 # SeededConnectorConnection
 

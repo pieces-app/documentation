@@ -1,3 +1,7 @@
+---
+title: Metrics API | TypeScript SDK
+---
+
 # Metrics API
 
 All URIs are relative to *http://localhost:1000*

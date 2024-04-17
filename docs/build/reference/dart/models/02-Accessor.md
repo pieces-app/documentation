@@ -1,3 +1,7 @@
+---
+title: Accessor | Dart SDK
+---
+
 # Accessor
 
 ## Load the model package

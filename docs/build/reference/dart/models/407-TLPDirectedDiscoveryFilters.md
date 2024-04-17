@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilters | Dart SDK
+---
+
 # TLPDirectedDiscoveryFilters
 
 ## Load the model package

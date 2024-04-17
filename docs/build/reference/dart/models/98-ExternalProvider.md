@@ -1,3 +1,7 @@
+---
+title: ExternalProvider | Dart SDK
+---
+
 # ExternalProvider
 
 ## Load the model package

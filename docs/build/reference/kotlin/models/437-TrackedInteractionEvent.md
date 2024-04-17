@@ -1,3 +1,7 @@
+---
+title: TrackedInteractionEvent | Kotlin SDK
+---
+
 
 # TrackedInteractionEvent
 

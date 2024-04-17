@@ -1,3 +1,7 @@
+---
+title: Activities | Kotlin SDK
+---
+
 
 # Activities
 

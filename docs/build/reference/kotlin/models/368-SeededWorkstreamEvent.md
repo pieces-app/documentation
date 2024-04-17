@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamEvent | Kotlin SDK
+---
+
 
 # SeededWorkstreamEvent
 

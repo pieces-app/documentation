@@ -1,3 +1,7 @@
+---
+title: Analyses | Python SDK
+---
+
 # Analyses
 
 

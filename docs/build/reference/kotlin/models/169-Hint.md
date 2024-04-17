@@ -1,3 +1,7 @@
+---
+title: Hint | Kotlin SDK
+---
+
 
 # Hint
 

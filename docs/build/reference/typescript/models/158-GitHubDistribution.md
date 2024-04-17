@@ -1,3 +1,7 @@
+---
+title: GitHubDistribution | TypeScript SDK
+---
+
 
 # GitHubDistribution
 

@@ -1,3 +1,7 @@
+---
+title: OSDeviceDependenciesInformation | Python SDK
+---
+
 # OSDeviceDependenciesInformation
 
 This will lets us know about specific dependencies that we are looking for on the device that are needed for specific tasks.

@@ -1,3 +1,7 @@
+---
+title: FlattenedRanges | TypeScript SDK
+---
+
 
 # FlattenedRanges
 

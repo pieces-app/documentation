@@ -1,3 +1,7 @@
+---
+title: DiscoveredHtmlWebpages | Dart SDK
+---
+
 # DiscoveredHtmlWebpages
 
 ## Load the model package

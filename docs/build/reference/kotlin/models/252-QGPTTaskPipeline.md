@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipeline | Kotlin SDK
+---
+
 
 # QGPTTaskPipeline
 

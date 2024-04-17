@@ -1,3 +1,7 @@
+---
+title: SeededTrackedInteractionEvent | Dart SDK
+---
+
 # SeededTrackedInteractionEvent
 
 ## Load the model package

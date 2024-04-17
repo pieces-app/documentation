@@ -1,3 +1,7 @@
+---
+title: OSDeviceHardwareInformation | Dart SDK
+---
+
 # OSDeviceHardwareInformation
 
 ## Load the model package

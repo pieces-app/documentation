@@ -1,3 +1,7 @@
+---
+title: QGPTHintsInput | Dart SDK
+---
+
 # QGPTHintsInput
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: Classification | Dart SDK
+---
+
 # Classification
 
 ## Load the model package

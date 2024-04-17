@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamSummary | Dart SDK
+---
+
 # SeededWorkstreamSummary
 
 ## Load the model package

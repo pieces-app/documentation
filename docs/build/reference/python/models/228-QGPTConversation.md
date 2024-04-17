@@ -1,3 +1,7 @@
+---
+title: QGPTConversation | Python SDK
+---
+
 # QGPTConversation
 
 

@@ -1,3 +1,7 @@
+---
+title: Range API | Python SDK
+---
+
 # Range API
 
 All URIs are relative to *http://localhost:1000*
@@ -38,7 +42,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -70,7 +74,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -106,7 +110,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -138,7 +142,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -174,7 +178,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -206,7 +210,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -242,7 +246,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -274,7 +278,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -311,7 +315,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -343,7 +347,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 ### HTTP response details
 
@@ -380,7 +384,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = pieces_os_client.Range() # Range |  (optional)
 
     try:
@@ -412,7 +416,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 
@@ -449,7 +453,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
 
     try:
@@ -481,7 +485,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
 ### HTTP response details
 

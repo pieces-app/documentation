@@ -1,3 +1,7 @@
+---
+title: SeededAssetTags | TypeScript SDK
+---
+
 
 # SeededAssetTags
 

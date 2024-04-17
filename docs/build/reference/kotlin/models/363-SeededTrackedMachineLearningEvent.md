@@ -1,3 +1,7 @@
+---
+title: SeededTrackedMachineLearningEvent | Kotlin SDK
+---
+
 
 # SeededTrackedMachineLearningEvent
 

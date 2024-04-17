@@ -1,3 +1,7 @@
+---
+title: FlattenedUserProfile | Dart SDK
+---
+
 # FlattenedUserProfile
 
 ## Load the model package

@@ -1,3 +1,7 @@
+---
+title: ReferencedUser | TypeScript SDK
+---
+
 
 # ReferencedUser
 

@@ -1,3 +1,7 @@
+---
+title: SeededHint | TypeScript SDK
+---
+
 
 # SeededHint
 

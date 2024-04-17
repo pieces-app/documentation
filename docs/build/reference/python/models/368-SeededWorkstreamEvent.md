@@ -1,3 +1,7 @@
+---
+title: SeededWorkstreamEvent | Python SDK
+---
+
 # SeededWorkstreamEvent
 
 This is a precreated version of a WorkstreamEvent event, this will be used ingested into PiecesOS and PiecesOS will do all the magic to transform this into relevant data show in the workstream feed.

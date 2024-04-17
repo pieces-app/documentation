@@ -1,3 +1,7 @@
+---
+title: Distributions API | Kotlin SDK
+---
+
 # Distributions API
 
 All URIs are relative to *http://localhost:1000*
@@ -22,16 +26,16 @@ This will create a new distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
 try {
     val result : Distribution = apiInstance.distributionsCreateNewDistribution(seededDistribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsCreateNewDistribution")
+    println("4xx response calling Distributions API#distributionsCreateNewDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsCreateNewDistribution")
+    println("5xx response calling Distributions API#distributionsCreateNewDistribution")
     e.printStackTrace()
 }
 ```
@@ -68,15 +72,15 @@ This will delete a specific distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
 try {
     apiInstance.distributionsDeleteSpecificDistribution(distribution)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
+    println("4xx response calling Distributions API#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
+    println("5xx response calling Distributions API#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 }
 ```
@@ -98,7 +102,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
@@ -113,15 +117,15 @@ This will get a specific snapshot of all our distributions.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 try {
     val result : Distributions = apiInstance.distributionsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsSnapshot")
+    println("4xx response calling Distributions API#distributionsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsSnapshot")
+    println("5xx response calling Distributions API#distributionsSnapshot")
     e.printStackTrace()
 }
 ```

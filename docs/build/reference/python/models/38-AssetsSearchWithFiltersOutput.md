@@ -1,3 +1,7 @@
+---
+title: AssetsSearchWithFiltersOutput | Python SDK
+---
+
 # AssetsSearchWithFiltersOutput
 
 output for the /assets/search [POST] 

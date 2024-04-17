@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceOutput | Kotlin SDK
+---
+
 
 # QGPTRelevanceOutput
 

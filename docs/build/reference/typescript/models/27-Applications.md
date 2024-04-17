@@ -1,3 +1,7 @@
+---
+title: Applications | TypeScript SDK
+---
+
 
 # Applications
 

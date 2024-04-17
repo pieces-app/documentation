@@ -1,3 +1,7 @@
+---
+title: GraphicalMachineLearningProcessingEvent | Kotlin SDK
+---
+
 
 # GraphicalMachineLearningProcessingEvent
 

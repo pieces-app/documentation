@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatistics | TypeScript SDK
+---
+
 
 # GraphicalOCRDescriptiveStatistics
 

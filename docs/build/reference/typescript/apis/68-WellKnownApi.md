@@ -1,3 +1,7 @@
+---
+title: WellKnown API | TypeScript SDK
+---
+
 # WellKnown API
 
 All URIs are relative to *http://localhost:1000*
@@ -37,7 +41,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details
@@ -74,7 +78,7 @@ This endpoint does not need any parameters.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
 ### HTTP response details

@@ -1,3 +1,7 @@
+---
+title: DiscoveredSensitive | TypeScript SDK
+---
+
 
 # DiscoveredSensitive
 

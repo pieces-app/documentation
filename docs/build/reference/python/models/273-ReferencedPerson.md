@@ -1,3 +1,7 @@
+---
+title: ReferencedPerson | Python SDK
+---
+
 # ReferencedPerson
 
 [DAG Safe] version of a Person Model. 

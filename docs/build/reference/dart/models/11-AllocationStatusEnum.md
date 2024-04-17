@@ -1,3 +1,7 @@
+---
+title: AllocationStatusEnum | Dart SDK
+---
+
 # AllocationStatusEnum
 
 ## Load the model package

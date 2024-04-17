@@ -1,3 +1,7 @@
+---
+title: Suggestion | Kotlin SDK
+---
+
 
 # Suggestion
 

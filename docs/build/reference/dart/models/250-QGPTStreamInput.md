@@ -1,3 +1,7 @@
+---
+title: QGPTStreamInput | Dart SDK
+---
+
 # QGPTStreamInput
 
 ## Load the model package

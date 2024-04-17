@@ -1,3 +1,7 @@
+---
+title: AssetsSearchWithFiltersOutput | Kotlin SDK
+---
+
 
 # AssetsSearchWithFiltersOutput
 

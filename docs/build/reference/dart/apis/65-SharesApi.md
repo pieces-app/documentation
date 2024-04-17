@@ -1,3 +1,7 @@
+---
+title: Shares API | Dart SDK
+---
+
 # Shares API
 
 All URIs are relative to *http://localhost:1000*
@@ -94,7 +98,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
 
 

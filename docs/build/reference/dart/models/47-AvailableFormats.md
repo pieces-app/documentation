@@ -1,3 +1,7 @@
+---
+title: AvailableFormats | Dart SDK
+---
+
 # AvailableFormats
 
 ## Load the model package

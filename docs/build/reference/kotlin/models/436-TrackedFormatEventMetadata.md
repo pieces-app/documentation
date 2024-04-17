@@ -1,3 +1,7 @@
+---
+title: TrackedFormatEventMetadata | Kotlin SDK
+---
+
 
 # TrackedFormatEventMetadata
 

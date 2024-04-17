@@ -1,3 +1,7 @@
+---
+title: FlattenedPerson | Dart SDK
+---
+
 # FlattenedPerson
 
 ## Load the model package

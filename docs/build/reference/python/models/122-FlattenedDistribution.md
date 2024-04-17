@@ -1,3 +1,7 @@
+---
+title: FlattenedDistribution | Python SDK
+---
+
 # FlattenedDistribution
 
 

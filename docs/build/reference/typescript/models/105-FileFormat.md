@@ -1,3 +1,7 @@
+---
+title: FileFormat | TypeScript SDK
+---
+
 
 # FileFormat
 

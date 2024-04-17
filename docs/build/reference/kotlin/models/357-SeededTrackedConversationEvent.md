@@ -1,3 +1,7 @@
+---
+title: SeededTrackedConversationEvent | Kotlin SDK
+---
+
 
 # SeededTrackedConversationEvent
 

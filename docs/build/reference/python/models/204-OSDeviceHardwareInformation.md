@@ -1,3 +1,7 @@
+---
+title: OSDeviceHardwareInformation | Python SDK
+---
+
 # OSDeviceHardwareInformation
 
 this will let us know specific hardware information

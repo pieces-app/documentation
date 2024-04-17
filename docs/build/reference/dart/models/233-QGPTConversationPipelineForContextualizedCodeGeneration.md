@@ -1,3 +1,7 @@
+---
+title: QGPTConversationPipelineForContextualizedCodeGeneration | Dart SDK
+---
+
 # QGPTConversationPipelineForContextualizedCodeGeneration
 
 ## Load the model package

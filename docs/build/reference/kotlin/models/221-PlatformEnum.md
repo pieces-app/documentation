@@ -1,3 +1,7 @@
+---
+title: PlatformEnum | Kotlin SDK
+---
+
 
 # PlatformEnum
 

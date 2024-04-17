@@ -1,3 +1,7 @@
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | TypeScript SDK
+---
+
 
 # GraphicalOCRDescriptiveStatisticsConfidence
 

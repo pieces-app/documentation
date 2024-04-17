@@ -1,3 +1,7 @@
+---
+title: TrackedConversationEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # TrackedConversationEventIdentifierDescriptionPairs
 

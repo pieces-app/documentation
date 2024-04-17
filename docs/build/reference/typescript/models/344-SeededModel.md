@@ -1,3 +1,7 @@
+---
+title: SeededModel | TypeScript SDK
+---
+
 
 # SeededModel
 

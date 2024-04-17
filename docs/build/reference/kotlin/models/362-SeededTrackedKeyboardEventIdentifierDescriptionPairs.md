@@ -1,3 +1,7 @@
+---
+title: SeededTrackedKeyboardEventIdentifierDescriptionPairs | Kotlin SDK
+---
+
 
 # SeededTrackedKeyboardEventIdentifierDescriptionPairs
 

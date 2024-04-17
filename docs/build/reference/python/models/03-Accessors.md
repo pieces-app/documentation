@@ -1,3 +1,7 @@
+---
+title: Accessors | Python SDK
+---
+
 # Accessors
 
 

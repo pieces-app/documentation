@@ -1,3 +1,7 @@
+---
+title: SearchedAsset | TypeScript SDK
+---
+
 
 # SearchedAsset
 

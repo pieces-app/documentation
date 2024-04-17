@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipelineForCodeExplanation | TypeScript SDK
+---
+
 
 # QGPTTaskPipelineForCodeExplanation
 

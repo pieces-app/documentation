@@ -1,3 +1,7 @@
+---
+title: AvailableFormats | Kotlin SDK
+---
+
 
 # AvailableFormats
 

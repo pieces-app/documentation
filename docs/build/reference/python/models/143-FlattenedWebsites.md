@@ -1,3 +1,7 @@
+---
+title: FlattenedWebsites | Python SDK
+---
+
 # FlattenedWebsites
 
 This is a specific model for related websites to an asset.[DAG SAFE]

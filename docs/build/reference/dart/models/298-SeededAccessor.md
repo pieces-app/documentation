@@ -1,3 +1,7 @@
+---
+title: SeededAccessor | Dart SDK
+---
+
 # SeededAccessor
 
 ## Load the model package

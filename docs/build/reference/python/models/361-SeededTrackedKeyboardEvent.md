@@ -1,3 +1,7 @@
+---
+title: SeededTrackedKeyboardEvent | Python SDK
+---
+
 # SeededTrackedKeyboardEvent
 
 This is a model that will hold relavent information in relation to a keyboard(including shortcuts) analytics event (usage).

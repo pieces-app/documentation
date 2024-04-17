@@ -1,3 +1,7 @@
+---
+title: QGPTRelevanceOutput | Dart SDK
+---
+
 # QGPTRelevanceOutput
 
 ## Load the model package

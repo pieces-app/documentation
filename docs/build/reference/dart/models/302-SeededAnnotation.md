@@ -1,3 +1,7 @@
+---
+title: SeededAnnotation | Dart SDK
+---
+
 # SeededAnnotation
 
 ## Load the model package

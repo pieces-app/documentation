@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import {themes as prismThemes} from'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";

@@ -1,3 +1,7 @@
+---
+title: WorkstreamPatternEngine API | Kotlin SDK
+---
+
 # WorkstreamPatternEngine API
 
 All URIs are relative to *http://localhost:1000*
@@ -23,16 +27,16 @@ This will activate your Workstream Pattern Engine. This is used to aggregate inf
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngineApi()
+val apiInstance = WorkstreamPatternEngine API()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionActivate(workstreamPatternEngineStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionActivate")
+    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionActivate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionActivate")
+    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionActivate")
     e.printStackTrace()
 }
 ```
@@ -69,15 +73,15 @@ This will clear the data for the Workstream Pattern Engine, specifically for our
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngineApi()
+val apiInstance = WorkstreamPatternEngine API()
 val workstreamPatternEngineDataCleanupRequest : WorkstreamPatternEngineDataCleanupRequest =  // WorkstreamPatternEngineDataCleanupRequest | 
 try {
     apiInstance.workstreamPatternEngineProcessorsVisionDataClear(workstreamPatternEngineDataCleanupRequest)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDataClear")
+    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDataClear")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDataClear")
+    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDataClear")
     e.printStackTrace()
 }
 ```
@@ -99,7 +103,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **workstreamPatternEngineProcessorsVisionDeactivate** {#workstreampatternengineprocessorsvisiondeactivate}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionDeactivate(workstreamPatternEngineStatus)
@@ -114,16 +118,16 @@ This will deactivate your Workstream Pattern Engine. This is used to aggregate i
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngineApi()
+val apiInstance = WorkstreamPatternEngine API()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionDeactivate(workstreamPatternEngineStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDeactivate")
+    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDeactivate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDeactivate")
+    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDeactivate")
     e.printStackTrace()
 }
 ```
@@ -160,15 +164,15 @@ This will get a snapshot of the status your Workstream Pattern Engine. This is u
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngineApi()
+val apiInstance = WorkstreamPatternEngine API()
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionStatus()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionStatus")
+    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionStatus")
+    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionStatus")
     e.printStackTrace()
 }
 ```

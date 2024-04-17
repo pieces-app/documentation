@@ -1,3 +1,7 @@
+---
+title: Persons API | Kotlin SDK
+---
+
 # Persons API
 
 All URIs are relative to *http://localhost:1000*
@@ -23,16 +27,16 @@ This will update both the asset and the person reference, that will remove a per
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonsApi()
+val apiInstance = Persons API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.personDisassociateAsset(person, asset)
 } catch (e: ClientException) {
-    println("4xx response calling PersonsApi#personDisassociateAsset")
+    println("4xx response calling Persons API#personDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonsApi#personDisassociateAsset")
+    println("5xx response calling Persons API#personDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -55,7 +59,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **personsCreateNewPerson** {#personscreatenewperson}
 > Person personsCreateNewPerson(transferables, seededPerson)
@@ -70,17 +74,17 @@ This will create a new person.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonsApi()
+val apiInstance = Persons API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededPerson : SeededPerson =  // SeededPerson | 
 try {
     val result : Person = apiInstance.personsCreateNewPerson(transferables, seededPerson)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling PersonsApi#personsCreateNewPerson")
+    println("4xx response calling Persons API#personsCreateNewPerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonsApi#personsCreateNewPerson")
+    println("5xx response calling Persons API#personsCreateNewPerson")
     e.printStackTrace()
 }
 ```
@@ -118,15 +122,15 @@ This will delete a specific person.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonsApi()
+val apiInstance = Persons API()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.personsDeletePerson(person)
 } catch (e: ClientException) {
-    println("4xx response calling PersonsApi#personsDeletePerson")
+    println("4xx response calling Persons API#personsDeletePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonsApi#personsDeletePerson")
+    println("5xx response calling Persons API#personsDeletePerson")
     e.printStackTrace()
 }
 ```
@@ -148,7 +152,7 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **personsSnapshot** {#personssnapshot}
 > Persons personsSnapshot(transferables)
@@ -163,16 +167,16 @@ This will get a snapshot of all of your people
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = PersonsApi()
+val apiInstance = Persons API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Persons = apiInstance.personsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling PersonsApi#personsSnapshot")
+    println("4xx response calling Persons API#personsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling PersonsApi#personsSnapshot")
+    println("5xx response calling Persons API#personsSnapshot")
     e.printStackTrace()
 }
 ```

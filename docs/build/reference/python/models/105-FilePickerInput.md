@@ -1,3 +1,7 @@
+---
+title: FilePickerInput | Python SDK
+---
+
 # FilePickerInput
 
 This is the input model for the FilePicker

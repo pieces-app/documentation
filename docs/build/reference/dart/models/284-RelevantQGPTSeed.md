@@ -1,3 +1,7 @@
+---
+title: RelevantQGPTSeed | Dart SDK
+---
+
 # RelevantQGPTSeed
 
 ## Load the model package

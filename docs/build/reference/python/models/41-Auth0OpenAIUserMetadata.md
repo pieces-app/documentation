@@ -1,3 +1,7 @@
+---
+title: Auth0OpenAIUserMetadata | Python SDK
+---
+
 # Auth0OpenAIUserMetadata
 
 Only supporting a single api key per user.

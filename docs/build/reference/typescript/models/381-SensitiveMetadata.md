@@ -1,3 +1,7 @@
+---
+title: SensitiveMetadata | TypeScript SDK
+---
+
 
 # SensitiveMetadata
 

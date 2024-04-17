@@ -1,3 +1,7 @@
+---
+title: FlattenedAnchorPoint | TypeScript SDK
+---
+
 
 # FlattenedAnchorPoint
 

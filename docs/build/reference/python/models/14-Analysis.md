@@ -1,3 +1,7 @@
+---
+title: Analysis | Python SDK
+---
+
 # Analysis
 
 This the the MlAnalysis Object, that will go on a format.  this will hold all the different analysis models!  ** keep format just a uuid for now **

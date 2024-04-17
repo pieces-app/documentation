@@ -1,3 +1,7 @@
+---
+title: ImageAnalysis | Dart SDK
+---
+
 # ImageAnalysis
 
 ## Load the model package

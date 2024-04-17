@@ -1,3 +1,7 @@
+---
+title: ExportedAsset | TypeScript SDK
+---
+
 
 # ExportedAsset
 

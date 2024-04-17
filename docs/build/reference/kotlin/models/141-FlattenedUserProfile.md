@@ -1,3 +1,7 @@
+---
+title: FlattenedUserProfile | Kotlin SDK
+---
+
 
 # FlattenedUserProfile
 

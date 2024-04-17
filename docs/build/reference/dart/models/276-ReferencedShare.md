@@ -1,3 +1,7 @@
+---
+title: ReferencedShare | Dart SDK
+---
+
 # ReferencedShare
 
 ## Load the model package

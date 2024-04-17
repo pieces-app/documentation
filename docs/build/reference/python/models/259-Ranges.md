@@ -1,3 +1,7 @@
+---
+title: Ranges | Python SDK
+---
+
 # Ranges
 
 This is a collection of many Ranges

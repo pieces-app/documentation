@@ -1,3 +1,7 @@
+---
+title: OSDeviceGPUHardwareInformation | Python SDK
+---
+
 # OSDeviceGPUHardwareInformation
 
 This will let us know specific hardware information related to the GPU.
