@@ -39,7 +39,7 @@ Head over to [our installation page](/installation-getting-started/what-am-i-ins
   <TabItem value="mac_os">
     Pieces OS: Click the `P` icon in your menu bar and view your update status in the dropdown
 
-    ![Pieces OS Version](/pos/version-macos.png)
+    <img src={'/pos/version-macos.png'} alt={'Pieces OS icon in menu bar'} height={400} />
 
   </TabItem>
   <TabItem value="windows">
@@ -95,9 +95,13 @@ Select Extensions > Search for `Pieces for VS Code` > Select the extension > Vie
 
 Select Settings > Plugins > Search for `Pieces for Developers` > View the version
 
+![JetBrains Plugin Version](/jetbrains/version.png)
+
 ### Pieces for Obsidian
 
 Select Settings > Community Plugins > View the version under `Pieces for Developers`
+
+![Obsidian Plugin Version](/obsidian/version.png)
 
 ### Pieces for JupyterLab
 
@@ -126,7 +130,9 @@ Please note that we have found that users who have some sort of proxy set up on 
     1. Restart your computer and launch the application again.
     2. Check the version of macOS you are running: we support macOS 12.0 Monterey or higher
     3. Ensure PiecesOS is running: you should see the Pieces icon in your menu bar
-    ![](/assets/faqs/cannot_connect_to_pieces_os_mac_os.png)
+
+        <img src={'/assets/faqs/cannot_connect_to_pieces_os_mac_os.png'} alt={'Pieces OS icon in menu bar'} height={400} />
+
     4. Check for updates using that dropdown and update if possible.
     5. Ensure that the desktop application or whichever plugin you are experiencing this with (e.g. VS Code, Chrome, Teams, etc.) is up-to-date.
 
@@ -219,6 +225,8 @@ Some things to consider:
 
 Unfortunately, if you have an older machine or one with very low resources, you may have to use a cloud model in order to use the copilot.
 
+![LLM Crashing](/misc/llm-crashing.png)
+
 Another common issue on Linux and Windows is a corrupted or outdated Vulkan API, which we use to communicate with your GPU. Vulkan should be bundled with your AMD or NVIDIA drivers, and you can check its health by executing the command `vulkaninfo` in your terminal and scanning the resulting logs for errors or warnings. This could indicate that either your GPU drivers need updating or there is an issue with the API itself. Please [contact the Pieces support team](/support) if you believe your Vulkan installation is broken.
 
 To understand how to check your machine specs and select the best model for your machine, continue on to the next section. For detailed information on the difference between GPU and CPU and the best hardware for running local models, please see our [blog post about this topic](https://code.pieces.app/blog/how-to-run-an-llm-locally-with-pieces).
@@ -236,15 +244,15 @@ In order to select the best local model for you, you should first check your mac
   ]}
 >
   <TabItem value="mac_os">
+    1. Click on the Apple logo in the top-left corner of the screen.
+    2. Select "About This Mac".
+    3. In the window that opens, you can see if your machine runs an Intel chip or an Apple Silicon M-series chip.
+   </TabItem>
+  <TabItem value="windows">
     1. Right-click on the taskbar and select `Task Manager`.
     2. In the Task Manager window, go to the `Performance` tab.
     3. Here you can see your CPU and GPU details. Click on "GPU" to see GPU information.
     4. To see detailed GPU information including VRAM, click on `GPU 0` or your GPU's name.
-  </TabItem>
-  <TabItem value="windows">
-    1. Click on the Apple logo in the top-left corner of the screen.
-    2. Select "About This Mac".
-    3. In the window that opens, you can see if your machine runs an Intel chip or an Apple Silicon M-series chip.
   </TabItem>
   <TabItem value="linux">
     1. Open a terminal window.
@@ -278,6 +286,8 @@ We at Pieces like to use a variety of models, to see the differences between ans
 - [Microsoft announcing their new Phi-2 model](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models)
 - [HuggingFace Chatbot Arena Leaderboard](https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard)
 
+![Recommended LLM Option](/misc/llm-recommendation.jpeg)
+
 Please note that these on-device models are very experimental, and we can’t necessarily guarantee success with them. We would love if you would share your experience, good or bad, [in this GitHub discussion](https://github.com/pieces-app/support/discussions/126) so that we have better data for recommendations.
 
 ---
@@ -286,7 +296,7 @@ Please note that these on-device models are very experimental, and we can’t ne
 
 Pieces for Developers currently supports Ubuntu 22.04 and up and Ubuntu-based distributions. Other OSs may work, but we can't guarantee the quality of the experience.
 
-Please join [this discussion](https://github.com/pieces-app/support/discussions/14) on GitHub to add your opinion about what distributes we should work on next.
+Please join [this discussion](https://github.com/pieces-app/support/discussions/14) on GitHub to add your opinion about what distributions we should work on next.
 
 ---
 
