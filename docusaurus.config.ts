@@ -62,6 +62,8 @@ const config: Config = {
     announcementBar: {
       id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
+      // id: 'build-with-pieces',
+      // content: '🔨 Build with Pieces! <a href="/build">Learn more</a>',
     },
 
     algolia: {
