@@ -17,8 +17,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 
 
-<a id="Method"></a>
-## Enum: method
+## method
 Name | Value
 ---- | -----
 method | S256

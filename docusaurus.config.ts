@@ -15,7 +15,7 @@ const config: Config = {
   projectName: 'documentation',
 
   onBrokenLinks: 'throw',
-  onBrokenAnchors: 'warn',
+  onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
   i18n: {

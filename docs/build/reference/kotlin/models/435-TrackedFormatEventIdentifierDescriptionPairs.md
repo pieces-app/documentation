@@ -10,83 +10,73 @@ title: TrackedFormatEventIdentifierDescriptionPairs | Kotlin SDK
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**formatCreated** | [**inline**](#formatcreated) | The key value pair for an asset being created. |  [optional]
-**formatCopied** | [**inline**](#formatcopied) | If a format was copied entirely |  [optional]
-**formatPartiallyCopied** | [**inline**](#formatpartiallycopied) | If a format was copied partially |  [optional]
-**formatDownloaded** | [**inline**](#formatdownloaded) | If a format was downloaded |  [optional]
-**formatDeleted** | [**inline**](#formatdeleted) | If an format was deleted |  [optional]
-**formatGenericClassificationUpdated** | [**inline**](#formatgenericclassificationupdated) | If a generic classification was changed on a format |  [optional]
-**formatSpecificClassificationUpdated** | [**inline**](#formatspecificclassificationupdated) | If a specific classification was changed on a format |  [optional]
-**formatUpdated** | [**inline**](#formatupdated) | a format was updated, generic update. |  [optional]
-**formatInserted** | [**inline**](#formatinserted) | a format was inserted |  [optional]
-**formatValueEdited** | [**inline**](#formatvalueedited) | a format&#39;s value was update ie, the text, etc... |  [optional]
+**formatCreated** | [**inline**](#format_created) | The key value pair for an asset being created. |  [optional]
+**formatCopied** | [**inline**](#format_copied) | If a format was copied entirely |  [optional]
+**formatPartiallyCopied** | [**inline**](#format_partially_copied) | If a format was copied partially |  [optional]
+**formatDownloaded** | [**inline**](#format_downloaded) | If a format was downloaded |  [optional]
+**formatDeleted** | [**inline**](#format_deleted) | If an format was deleted |  [optional]
+**formatGenericClassificationUpdated** | [**inline**](#format_generic_classification_updated) | If a generic classification was changed on a format |  [optional]
+**formatSpecificClassificationUpdated** | [**inline**](#format_specific_classification_updated) | If a specific classification was changed on a format |  [optional]
+**formatUpdated** | [**inline**](#format_updated) | a format was updated, generic update. |  [optional]
+**formatInserted** | [**inline**](#format_inserted) | a format was inserted |  [optional]
+**formatValueEdited** | [**inline**](#format_value_edited) | a format&#39;s value was update ie, the text, etc... |  [optional]
 
 
-<a id="FormatCreated"></a>
-## Enum: format_created
+## format_created
 Name | Value
 ---- | -----
 formatCreated | a_format_was_created
 
 
-<a id="FormatCopied"></a>
-## Enum: format_copied
+## format_copied
 Name | Value
 ---- | -----
 formatCopied | if_a_format_was_entirely_copied
 
 
-<a id="FormatPartiallyCopied"></a>
-## Enum: format_partially_copied
+## format_partially_copied
 Name | Value
 ---- | -----
 formatPartiallyCopied | if_a_format_was_partially_copied
 
 
-<a id="FormatDownloaded"></a>
-## Enum: format_downloaded
+## format_downloaded
 Name | Value
 ---- | -----
 formatDownloaded | if_a_format_was_downloaded
 
 
-<a id="FormatDeleted"></a>
-## Enum: format_deleted
+## format_deleted
 Name | Value
 ---- | -----
 formatDeleted | if_a_format_was_deleted
 
 
-<a id="FormatGenericClassificationUpdated"></a>
-## Enum: format_generic_classification_updated
+## format_generic_classification_updated
 Name | Value
 ---- | -----
 formatGenericClassificationUpdated | if_a_generic_classification_was_changed_on_a_format
 
 
-<a id="FormatSpecificClassificationUpdated"></a>
-## Enum: format_specific_classification_updated
+## format_specific_classification_updated
 Name | Value
 ---- | -----
 formatSpecificClassificationUpdated | if_a_specific_classification_was_changed_on_a_format
 
 
-<a id="FormatUpdated"></a>
-## Enum: format_updated
+## format_updated
 Name | Value
 ---- | -----
 formatUpdated | a_format_was_updated
 
 
-<a id="FormatInserted"></a>
-## Enum: format_inserted
+## format_inserted
 Name | Value
 ---- | -----
 formatInserted | a_format_was_inserted
 
 
-<a id="FormatValueEdited"></a>
-## Enum: format_value_edited
+## format_value_edited
 Name | Value
 ---- | -----
 formatValueEdited | a_format_value_was_edited

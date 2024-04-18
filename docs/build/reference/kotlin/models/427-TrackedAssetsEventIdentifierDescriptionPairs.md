@@ -10,11 +10,10 @@ title: TrackedAssetsEventIdentifierDescriptionPairs | Kotlin SDK
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**assetsSearched** | [**inline**](#assetssearched) | A If the assets were searched |  [optional]
+**assetsSearched** | [**inline**](#assets_searched) | A If the assets were searched |  [optional]
 
 
-<a id="AssetsSearched"></a>
-## Enum: assets_searched
+## assets_searched
 Name | Value
 ---- | -----
 assetsSearched | assets_were_searched
