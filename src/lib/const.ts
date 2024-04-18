@@ -44,7 +44,7 @@ export const pieces_app = {
     external: {
       forms: {
         feedback: "https://github.com/pieces-app/support/discussions",
-        join_beta: "https://getpieces.typeform.com/to/XGGlUqEI",
+        join_eap: "https://getpieces.typeform.com/earlyaccess",
       },
     },
     installation: {
