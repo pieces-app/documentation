@@ -6,7 +6,7 @@ type CTAButtonProps = {
   href?: string
   // Primary is larger, secondary is smaller
   type?: 'primary' | 'secondary'
-  icon?: string
+  icon?: string | React.ReactElement
   iconDark?: string
   disabled?: boolean
 }
@@ -28,13 +28,20 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       target={newTab ? '_blank' : '_self'}
       rel={newTab ? 'noopener noreferrer' : undefined}
     >
-      {props.icon || props.iconDark ? (
-        colorMode === 'dark' && props.iconDark ? (
-          <Image width={20} src={props.iconDark} />
-        ) : (
-          <Image width={20} src={props.icon} />
-        )
-      ) : null}
+      {
+        props.icon || props.iconDark ? (
+          typeof props.icon === 'string' && typeof props.iconDark === 'string' ? (
+            colorMode === 'dark' && props.iconDark ? (
+              <Image width={20} src={props.iconDark} />
+            ) : (
+              <Image width={20} src={props.icon} />
+            )
+          ) : (
+            props.icon
+          )
+        ) : null
+      }
+
       {props.label}
     </a>
   )
