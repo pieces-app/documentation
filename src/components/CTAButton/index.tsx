@@ -30,14 +30,15 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
     >
       {
         props.icon || props.iconDark ? (
-          typeof props.icon === 'string' && typeof props.iconDark === 'string' ? (
+          // If the icon is a React element (object) and not a string, render it directly
+          typeof props.icon === 'object' ? (
+            props.icon
+          ) : (
             colorMode === 'dark' && props.iconDark ? (
               <Image width={20} src={props.iconDark} />
             ) : (
               <Image width={20} src={props.icon} />
             )
-          ) : (
-            props.icon
           )
         ) : null
       }
