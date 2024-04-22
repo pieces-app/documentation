@@ -9,10 +9,7 @@ import Video from "/src/components/Video";
 Describe and chat about your code with Pieces Copilot. You can ask a technical question and Pieces' ML models will generate functional code to use in your projects.
 
 <Video
-  src={{
-    webm: '/assets/personalized-copilot-chats.webm',
-    mp4: '/assets/personalized-copilot-chats.mp4'
-  }}
+  src={'/assets/personalized-copilot-chats'}
   type={'local'}
 />
 
@@ -162,3 +159,19 @@ Our VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab i
 8. **Quickly link back to relevant files**
     - If the copilot used a file as relevant context, it will show it in the chat window, and you can click on it to view it.
     ![Linking to Relevant Files in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT_CONTEXT_FILES/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RELATED_FILES-MACOS-16X9-1_31_2024.GIF.gif)
+
+## Troubleshooting
+
+### Resetting the Copilot Runtime
+
+If you encounter issues with the Copilot or simply wish to restart your session, there are several methods to reset the active runtime. This can be particularly useful if the Copilot behaves unexpectedly or if you want to clear the current session's context and start fresh.
+
+#### Methods to Reset the Active Runtime
+- Double-click the "Stop" Button: Located to the right of the Copilot input box, a quick double-click on the "Stop" button will initiate a reset of the current runtime session.
+- Copilot Settings Dialog: Access the Copilot settings by clicking on the settings icon or navigating through the Copilot menu. Within the settings dialog, select "Hard Reset Active Runtime" to restart the session.
+- Copilot LLM Runtime Config Dialog: For more detailed runtime configurations, open the LLM Runtime Config dialog. Here, you can select "Hard Reset Active Runtime" to ensure a fresh start for your Copilot session.
+
+#### Expected Response
+After performing any of the above actions, you should receive a confirmation that the active runtime has been reset. This ensures that you are starting from a clean slate, allowing the Copilot to perform optimally in assisting with your coding tasks.
+
+![Example of Resetting the Copilot Runtime](/copilot/resetting-copilot-runtime.png)
