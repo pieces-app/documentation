@@ -1,3 +1,8 @@
+---
+title: TrackedConversationEventMetadata | Kotlin SDK
+---
+
+
 
 # TrackedConversationEventMetadata
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **rename** | [**TrackedConversationEventRenameMetadata**](TrackedConversationEventRenameMetadata) |  |  [optional]
+
 
 
 

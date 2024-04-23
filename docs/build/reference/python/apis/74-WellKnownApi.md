@@ -1,6 +1,10 @@
+---
+title: WellKnown API | Python SDK
+---
+
 # WellKnown API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 Retrieves the health status of the server.
 
-### Example
+### Example {#get_well_known_health-example}
 
 
 ```python
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WellKnownApi(api_client)
+    api_instance = WellKnown API(api_client)
 
     try:
         # /.well-known/health [GET]
@@ -46,30 +50,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_well_known_health-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_well_known_health-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#get_well_known_health-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#get_well_known_health-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#get_well_known_health-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **get_well_known_version** {#get_well_known_version}
 > str get_well_known_version()
@@ -78,7 +81,7 @@ No authorization required
 
 Retrieves the version of the server. It returns a string representing the current version.
 
-### Example
+### Example {#get_well_known_version-example}
 
 
 ```python
@@ -96,7 +99,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WellKnownApi(api_client)
+    api_instance = WellKnown API(api_client)
 
     try:
         # /.well-known/version [Get]
@@ -109,28 +112,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_well_known_version-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_well_known_version-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#get_well_known_version-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#get_well_known_version-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#get_well_known_version-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

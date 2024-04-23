@@ -1,6 +1,10 @@
+---
+title: PKCE API | TypeScript SDK
+---
+
 # PKCE API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This is a function to Clear a PKCE Authentication Flow
 
-### Example
+### Example {#clearpkce-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,25 +29,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PKCEApi(configuration)
 
 apiInstance.clearPKCE().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#clearpkce-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#clearpkce-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#clearpkce-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
 
-### HTTP response details
+### HTTP response details {#clearpkce-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -53,7 +58,7 @@ void (empty response body)
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
 
-### Example
+### Example {#generatecode-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -62,33 +67,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.GenerateCodeRequest = {
-    // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
-    seededPKCE: ,
+// SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
+seededPKCE: ,
 };
 
 apiInstance.generateCode(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#generatecode-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededPKCE** | **SeededPKCE**| All of the properties that the client might want to send over to authorize a PKCE Code Flow |
 
 
-### Return type
+### Return type {#generatecode-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP request headers {#generatecode-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#generatecode-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -98,7 +104,7 @@ Name | Type | Description  | Notes
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 
-### Example
+### Example {#generatetoken-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -107,33 +113,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.GenerateTokenRequest = {
-    // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
-    tokenizedPKCE: ,
+// TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
+tokenizedPKCE: ,
 };
 
 apiInstance.generateToken(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#generatetoken-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenizedPKCE** | **TokenizedPKCE**| The needed properties to exchange a PKCE Code for an OAuth Token |
 
 
-### Return type
+### Return type {#generatetoken-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP request headers {#generatetoken-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#generatetoken-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -143,7 +150,7 @@ Name | Type | Description  | Notes
 
 An endpoint that returns a PKCE Challenge
 
-### Example
+### Example {#getchallenge-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -152,25 +159,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PKCEApi(configuration)
 
 apiInstance.getChallenge().then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#getchallenge-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#getchallenge-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP request headers {#getchallenge-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#getchallenge-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -180,7 +188,7 @@ This endpoint does not need any parameters.
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
 
-### Example
+### Example {#respondwithcode-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -189,20 +197,21 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PKCEApi(configuration)
 
 const body: Pieces.RespondWithCodeRequest = {
-    // string | The PKCE Code to be used to access a Token.
-    code: code_example,
-    // string | Likely the state that will be returned which should match the requested state as well as the nonce
-    state: state_example,
-    // EmbeddedModelSchema (optional)
-    schema: ,
+// string | The PKCE Code to be used to access a Token.
+code: code_example,
+// string | Likely the state that will be returned which should match the requested state as well as the nonce
+state: state_example,
+// EmbeddedModelSchema (optional)
+schema: ,
 };
 
 apiInstance.respondWithCode(body).then((data: PKCE) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#respondwithcode-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -211,17 +220,17 @@ Name | Type | Description  | Notes
  **schema** | **EmbeddedModelSchema** |  | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#respondwithcode-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### HTTP request headers
+### HTTP request headers {#respondwithcode-http-request-headers}
 
 - **Content-Type**: application/x-www-form-urlencoded
 - **Accept**: application/json, text/html
 
 
-### HTTP response details
+### HTTP response details {#respondwithcode-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

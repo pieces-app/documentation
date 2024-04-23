@@ -1,3 +1,8 @@
+---
+title: ExternallySourcedEnum | Kotlin SDK
+---
+
+
 
 # ExternallySourcedEnum
 
@@ -27,6 +32,7 @@
     * `SLACK` (value: `"SLACK"`)
 
     * `MAILGUN` (value: `"MAILGUN"`)
+
 
 
 

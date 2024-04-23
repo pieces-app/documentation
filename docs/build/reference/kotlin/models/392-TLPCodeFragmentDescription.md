@@ -1,3 +1,8 @@
+---
+title: TLPCodeFragmentDescription | Kotlin SDK
+---
+
+
 
 # TLPCodeFragmentDescription
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **latency** | **java.math.BigDecimal** | the time it takes to run this model. |  [optional]
 **context** | **kotlin.String** | the application this description was created from. |  [optional]
 **os** | **kotlin.String** | This is the UUID of the OS that this context is currently connected to. |  [optional]
+
 
 
 

@@ -1,6 +1,10 @@
+---
+title: Models API | Kotlin SDK
+---
+
 # Models API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,41 +22,41 @@ Method | HTTP request | Description
 
 Creates a machine learning model. By default, all models created through this endpoint will have the &#39;custom&#39; attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
-### Example
+### Example {#modelscreatenewmodel-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val seededModel : SeededModel =  // SeededModel | 
 try {
     val result : Model = apiInstance.modelsCreateNewModel(seededModel)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsCreateNewModel")
+    println("4xx response calling Models API#modelsCreateNewModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsCreateNewModel")
+    println("5xx response calling Models API#modelsCreateNewModel")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelscreatenewmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededModel** | [**SeededModel**](../models/SeededModel)|  | [optional]
 
-### Return type
+### Return type {#modelscreatenewmodel-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelscreatenewmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelscreatenewmodel-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -64,43 +68,43 @@ No authorization required
 
 Deletes a specific model. It is exclusively available for custom models with the &#39;custom: true&#39; attribute.
 
-### Example
+### Example {#modelsdeletespecificmodel-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     apiInstance.modelsDeleteSpecificModel(model)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsDeleteSpecificModel")
+    println("4xx response calling Models API#modelsDeleteSpecificModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsDeleteSpecificModel")
+    println("5xx response calling Models API#modelsDeleteSpecificModel")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelsdeletespecificmodel-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodel-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **modelsDeleteSpecificModelCache** {#modelsdeletespecificmodelcache}
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
@@ -109,43 +113,43 @@ No authorization required
 
 Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
-### Example
+### Example {#modelsdeletespecificmodelcache-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 val model : kotlin.String = model_example // kotlin.String | model id
 val modelDeleteCacheInput : ModelDeleteCacheInput =  // ModelDeleteCacheInput | 
 try {
     val result : ModelDeleteCacheOutput = apiInstance.modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsDeleteSpecificModelCache")
+    println("4xx response calling Models API#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsDeleteSpecificModelCache")
+    println("5xx response calling Models API#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodelcache-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
  **modelDeleteCacheInput** | [**ModelDeleteCacheInput**](../models/ModelDeleteCacheInput)|  | [optional]
 
-### Return type
+### Return type {#modelsdeletespecificmodelcache-return-type}
 
 [**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodelcache-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodelcache-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -157,37 +161,37 @@ No authorization required
 
 This will get a snapshot of all of your models.
 
-### Example
+### Example {#modelssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 try {
     val result : Models = apiInstance.modelsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#modelsSnapshot")
+    println("4xx response calling Models API#modelsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#modelsSnapshot")
+    println("5xx response calling Models API#modelsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#modelssnapshot-return-type}
 
 [**Models**](../models/Models)
 
-### Authorization
+### Authorization {#modelssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -199,37 +203,37 @@ No authorization required
 
 Unloads all available machine learning models that are unloadable.
 
-### Example
+### Example {#unloadmodels-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelsApi()
+val apiInstance = Models API()
 try {
     apiInstance.unloadModels()
 } catch (e: ClientException) {
-    println("4xx response calling ModelsApi#unloadModels")
+    println("4xx response calling Models API#unloadModels")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelsApi#unloadModels")
+    println("5xx response calling Models API#unloadModels")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#unloadmodels-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#unloadmodels-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#unloadmodels-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#unloadmodels-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 

@@ -1,9 +1,8 @@
-# Score
+---
+title: Score | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Score
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +14,5 @@ Name | Type | Description | Notes
 **reuse** | **int** |  | [optional] 
 **update** | **int** |  | [optional] 
 **reference** | **int** |  | [optional] 
-
-
 
 

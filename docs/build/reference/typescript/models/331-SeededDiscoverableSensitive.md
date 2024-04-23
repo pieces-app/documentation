@@ -1,3 +1,7 @@
+---
+title: SeededDiscoverableSensitive | TypeScript SDK
+---
+
 
 # SeededDiscoverableSensitive
 
@@ -16,34 +20,5 @@ Name | Type
 **name** | **string**
 **description** | **string**
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata)
-
-## Example
-
-```typescript
-import { SeededDiscoverableSensitive } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededDiscoverableSensitive = {
-    "schema": null,
-    "asset": null,
-    "text": null,
-    "mechanism": null,
-    "category": null,
-    "severity": null,
-    "name": null,
-    "description": null,
-    "metadata": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededDiscoverableSensitive
-console.log(exampleParsed)
-```
 
 

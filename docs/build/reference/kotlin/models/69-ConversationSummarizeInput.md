@@ -1,3 +1,8 @@
+---
+title: ConversationSummarizeInput | Kotlin SDK
+---
+
+
 
 # ConversationSummarizeInput
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
+
 
 
 

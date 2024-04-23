@@ -1,6 +1,10 @@
+---
+title: Distribution API | Python SDK
+---
+
 # Distribution API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 This will update a specific Distribution.
 
-### Example
+### Example {#distribution_update-example}
 
 
 ```python
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DistributionApi(api_client)
+    api_instance = Distribution API(api_client)
     distribution = pieces_os_client.Distribution() # Distribution |  (optional)
 
     try:
@@ -48,34 +52,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#distribution_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**Distribution**](../models/Distribution)|  | [optional] 
 
-### Return type
+### Return type {#distribution_update-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distribution_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distribution_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#distribution_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **distributions_specific_distribution_snapshot** {#distributions_specific_distribution_snapshot}
 > Distribution distributions_specific_distribution_snapshot(distribution)
@@ -84,7 +87,7 @@ No authorization required
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example {#distributions_specific_distribution_snapshot-example}
 
 
 ```python
@@ -103,7 +106,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DistributionApi(api_client)
+    api_instance = Distribution API(api_client)
     distribution = 'distribution_example' # str | This is the uuid of a specific distribution.
 
     try:
@@ -117,33 +120,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#distributions_specific_distribution_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **str**| This is the uuid of a specific distribution. | 
 
-### Return type
+### Return type {#distributions_specific_distribution_snapshot-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributions_specific_distribution_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributions_specific_distribution_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#distributions_specific_distribution_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Distribution not found. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

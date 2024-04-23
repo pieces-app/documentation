@@ -1,9 +1,8 @@
-# SeededDiscoverableRelatedTag
+---
+title: SeededDiscoverableRelatedTag | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededDiscoverableRelatedTag
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **format** | **String** | (optionally) you can attach a tag to a format. so when you delete a format this tag will get removed from the asset as well. | [optional] 
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] 
-
-
 
 

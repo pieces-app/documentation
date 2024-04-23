@@ -1,3 +1,8 @@
+---
+title: SeededDiscoverableAsset | Kotlin SDK
+---
+
+
 
 # SeededDiscoverableAsset
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **fragment** | [**SeededFragment**](SeededFragment) |  |  [optional]
 **directory** | **kotlin.String** |  |  [optional]
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  |  [optional]
+
 
 
 

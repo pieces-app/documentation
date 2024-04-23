@@ -1,3 +1,7 @@
+---
+title: Auth0UserMetadata | Python SDK
+---
+
 # Auth0UserMetadata
 
 User Metadata from Auth0
@@ -14,23 +18,5 @@ Name | Type | Description | Notes
 **allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata) |  | [optional] 
 **open_ai** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] 
 **beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.auth0_user_metadata import Auth0UserMetadata
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Auth0UserMetadata from a JSON string
-auth0_user_metadata_instance = Auth0UserMetadata.from_json(json)
-# print the JSON string representation of the object
-print(Auth0UserMetadata.to_json())
-
-# convert the object into a dict
-auth0_user_metadata_dict = auth0_user_metadata_instance.to_dict()
-# create an instance of Auth0UserMetadata from a dict
-auth0_user_metadata_form_dict = auth0_user_metadata.from_dict(auth0_user_metadata_dict)
-```
 
 

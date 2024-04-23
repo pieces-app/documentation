@@ -1,6 +1,10 @@
+---
+title: Range API | Python SDK
+---
+
 # Range API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +24,7 @@ Method | HTTP request | Description
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#range_associate_conversation_grounding_temporal_range_workstreams-example}
 
 
 ```python
@@ -38,7 +42,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -51,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_associate_conversation_grounding_temporal_range_workstreams-parameters}
 
 
 Name | Type | Description  | Notes
@@ -59,27 +63,26 @@ Name | Type | Description  | Notes
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#range_associate_conversation_grounding_temporal_range_workstreams-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#range_associate_conversation_grounding_temporal_range_workstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_associate_conversation_grounding_temporal_range_workstreams-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_associate_conversation_grounding_temporal_range_workstreams-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **range_associate_workstream_summary** {#range_associate_workstream_summary}
 > range_associate_workstream_summary(range, workstream_summary)
@@ -88,7 +91,7 @@ No authorization required
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#range_associate_workstream_summary-example}
 
 
 ```python
@@ -106,7 +109,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -119,7 +122,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -127,27 +130,26 @@ Name | Type | Description  | Notes
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#range_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#range_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **range_disassociate_conversation_grounding_temporal_range_workstreams** {#range_disassociate_conversation_grounding_temporal_range_workstreams}
 > range_disassociate_conversation_grounding_temporal_range_workstreams(range, conversation)
@@ -156,7 +158,7 @@ No authorization required
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#range_disassociate_conversation_grounding_temporal_range_workstreams-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -187,7 +189,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_disassociate_conversation_grounding_temporal_range_workstreams-parameters}
 
 
 Name | Type | Description  | Notes
@@ -195,27 +197,26 @@ Name | Type | Description  | Notes
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#range_disassociate_conversation_grounding_temporal_range_workstreams-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#range_disassociate_conversation_grounding_temporal_range_workstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_disassociate_conversation_grounding_temporal_range_workstreams-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_disassociate_conversation_grounding_temporal_range_workstreams-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **range_disassociate_workstream_summary** {#range_disassociate_workstream_summary}
 > range_disassociate_workstream_summary(range, workstream_summary)
@@ -224,7 +225,7 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#range_disassociate_workstream_summary-example}
 
 
 ```python
@@ -242,7 +243,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -255,7 +256,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -263,27 +264,26 @@ Name | Type | Description  | Notes
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#range_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#range_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **range_scores_increment** {#range_scores_increment}
 > range_scores_increment(range, seeded_score_increment=seeded_score_increment)
@@ -292,7 +292,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#range_scores_increment-example}
 
 
 ```python
@@ -311,7 +311,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -324,7 +324,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -332,27 +332,26 @@ Name | Type | Description  | Notes
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#range_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#range_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **range_update** {#range_update}
 > Range range_update(range=range)
@@ -361,7 +360,7 @@ No authorization required
 
 This will update a specific range.
 
-### Example
+### Example {#range_update-example}
 
 
 ```python
@@ -380,7 +379,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = pieces_os_client.Range() # Range |  (optional)
 
     try:
@@ -394,34 +393,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#range_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**Range**](../models/Range)|  | [optional] 
 
-### Return type
+### Return type {#range_update-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#range_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#range_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#range_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **ranges_specific_range_snapshot** {#ranges_specific_range_snapshot}
 > Range ranges_specific_range_snapshot(range)
@@ -430,7 +428,7 @@ No authorization required
 
 This will get a snapshot of a single range.
 
-### Example
+### Example {#ranges_specific_range_snapshot-example}
 
 
 ```python
@@ -449,7 +447,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangeApi(api_client)
+    api_instance = Range API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
 
     try:
@@ -463,32 +461,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#ranges_specific_range_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#ranges_specific_range_snapshot-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#ranges_specific_range_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ranges_specific_range_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#ranges_specific_range_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Range not found. |  -  |
-
-
 

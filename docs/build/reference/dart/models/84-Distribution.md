@@ -1,9 +1,8 @@
-# Distribution
+---
+title: Distribution | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Distribution
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **mailgun** | [**MailgunDistribution**](MailgunDistribution) |  | [optional] 
 **github** | [**GitHubDistribution**](GitHubDistribution) |  | [optional] 
-
-
 
 

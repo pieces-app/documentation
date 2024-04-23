@@ -1,14 +1,11 @@
-# ConversationTypeEnum
+---
+title: ConversationTypeEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ConversationTypeEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

@@ -1,3 +1,7 @@
+---
+title: HintTypeEnum | Python SDK
+---
+
 # HintTypeEnum
 
 This is the hint enum used to describe a type of hint.
@@ -6,6 +10,5 @@ This is the hint enum used to describe a type of hint.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

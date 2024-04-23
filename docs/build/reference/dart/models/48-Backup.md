@@ -1,9 +1,8 @@
-# Backup
+---
+title: Backup | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Backup
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **deviceName** | **String** |  | 
 **platform** | [**PlatformEnum**](PlatformEnum) |  | 
-
-
 
 

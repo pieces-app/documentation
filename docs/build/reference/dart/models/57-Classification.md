@@ -1,9 +1,8 @@
-# Classification
+---
+title: Classification | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Classification
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  | 
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | 
 **rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  | [optional] 
-
-
 
 

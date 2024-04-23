@@ -1,6 +1,10 @@
+---
+title: Relationship API | Python SDK
+---
+
 # Relationship API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will return a single relationship object.
 
-### Example
+### Example {#relationships_specific_relationship_snapshot-example}
 
 
 ```python
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RelationshipApi(api_client)
+    api_instance = Relationship API(api_client)
     relationship = 'relationship_example' # str | this is a specific relationship uuid.
 
     try:
@@ -47,31 +51,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#relationships_specific_relationship_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **relationship** | **str**| this is a specific relationship uuid. | 
 
-### Return type
+### Return type {#relationships_specific_relationship_snapshot-return-type}
 
 [**Relationship**](../models/Relationship)
 
-### Authorization
+### Authorization {#relationships_specific_relationship_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#relationships_specific_relationship_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#relationships_specific_relationship_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

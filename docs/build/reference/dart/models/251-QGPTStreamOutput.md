@@ -1,9 +1,8 @@
-# QGPTStreamOutput
+---
+title: QGPTStreamOutput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTStreamOutput
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **statusCode** | **num** | This will be provided | [optional] 
 **errorMessage** | **String** | optional error message is the status code is NOT 200 | [optional] 
 **agentRoutes** | [**QGPTAgentRoutes**](QGPTAgentRoutes) |  | [optional] 
-
-
 
 

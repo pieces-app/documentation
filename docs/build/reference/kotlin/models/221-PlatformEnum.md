@@ -1,3 +1,8 @@
+---
+title: PlatformEnum | Kotlin SDK
+---
+
+
 
 # PlatformEnum
 
@@ -19,6 +24,7 @@
     * `ANDROID` (value: `"ANDROID"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
 
 
 

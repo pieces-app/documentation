@@ -1,9 +1,8 @@
-# FileFormat
+---
+title: FileFormat | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FileFormat
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] 
 **string** | [**TransferableString**](TransferableString) |  | [optional] 
-
-
 
 

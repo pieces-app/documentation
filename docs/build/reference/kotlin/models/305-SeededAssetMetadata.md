@@ -1,3 +1,8 @@
+---
+title: SeededAssetMetadata | Kotlin SDK
+---
+
+
 
 # SeededAssetMetadata
 
@@ -14,6 +19,7 @@ Name | Type | Description | Notes
 **annotations** | [**kotlin.collections.List&lt;SeededAnnotation&gt;**](SeededAnnotation) |  |  [optional]
 **hints** | [**kotlin.collections.List&lt;SeededHint&gt;**](SeededHint) |  |  [optional]
 **anchors** | [**kotlin.collections.List&lt;SeededAnchor&gt;**](SeededAnchor) |  |  [optional]
+
 
 
 

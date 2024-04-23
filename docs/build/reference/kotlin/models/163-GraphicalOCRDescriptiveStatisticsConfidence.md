@@ -1,3 +1,8 @@
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | Kotlin SDK
+---
+
+
 
 # GraphicalOCRDescriptiveStatisticsConfidence
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **mean** | **kotlin.String** |  | 
+
 
 
 

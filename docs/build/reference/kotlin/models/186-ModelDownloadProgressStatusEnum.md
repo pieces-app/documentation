@@ -1,3 +1,8 @@
+---
+title: ModelDownloadProgressStatusEnum | Kotlin SDK
+---
+
+
 
 # ModelDownloadProgressStatusEnum
 
@@ -17,6 +22,7 @@
     * `CANCELED` (value: `"CANCELED"`)
 
     * `RESET` (value: `"RESET"`)
+
 
 
 

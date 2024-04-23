@@ -1,3 +1,8 @@
+---
+title: ClassificationSpecificEnum | Kotlin SDK
+---
+
+
 
 # ClassificationSpecificEnum
 
@@ -997,6 +1002,13 @@
     * `vue` (value: `"vue"`)
 
     * `scss` (value: `"scss"`)
+
+    * `feature` (value: `"feature"`)
+
+    * `ini` (value: `"ini"`)
+
+    * `ftl` (value: `"ftl"`)
+
 
 
 

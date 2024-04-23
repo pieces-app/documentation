@@ -1,6 +1,10 @@
+---
+title: Distribution API | TypeScript SDK
+---
+
 # Distribution API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +17,7 @@ Method | HTTP request | Description
 
 This will update a specific Distribution.
 
-### Example
+### Example {#distributionupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -22,33 +26,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionUpdateRequest = {
-    // Distribution (optional)
-    distribution: ,
+// Distribution (optional)
+distribution: ,
 };
 
 apiInstance.distributionUpdate(body).then((data: Distribution) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#distributionupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **Distribution**|  |
 
 
-### Return type
+### Return type {#distributionupdate-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### HTTP request headers
+### HTTP request headers {#distributionupdate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#distributionupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +64,7 @@ Name | Type | Description  | Notes
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example {#distributionsspecificdistributionsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -68,33 +73,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.DistributionApi(configuration)
 
 const body: Pieces.DistributionsSpecificDistributionSnapshotRequest = {
-    // string | This is the uuid of a specific distribution.
-    distribution: distribution_example,
+// string | This is the uuid of a specific distribution.
+distribution: distribution_example,
 };
 
 apiInstance.distributionsSpecificDistributionSnapshot(body).then((data: Distribution) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#distributionsspecificdistributionsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**string**] | This is the uuid of a specific distribution. | defaults to undefined
 
 
-### Return type
+### Return type {#distributionsspecificdistributionsnapshot-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### HTTP request headers
+### HTTP request headers {#distributionsspecificdistributionsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#distributionsspecificdistributionsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

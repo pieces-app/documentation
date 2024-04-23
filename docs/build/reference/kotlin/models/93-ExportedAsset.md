@@ -1,3 +1,8 @@
+---
+title: ExportedAsset | Kotlin SDK
+---
+
+
 
 # ExportedAsset
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **description** | **kotlin.String** | this is the description of the asset | 
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **raw** | [**FileFormat**](FileFormat) |  | 
+
 
 
 

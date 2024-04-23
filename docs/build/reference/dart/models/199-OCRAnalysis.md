@@ -1,9 +1,8 @@
-# OCRAnalysis
+---
+title: OCRAnalysis | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# OCRAnalysis
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **hocr** | [**Format**](Format) |  | 
 **image** | **String** | this is a reference the the imageAnalysis. | 
 **model** | [**Model**](Model) |  | 
-
-
 
 

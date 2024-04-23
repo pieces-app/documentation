@@ -1,9 +1,8 @@
-# SeededConnectorTracking
+---
+title: SeededConnectorTracking | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededConnectorTracking
 
 ## Properties
 Name | Type | Description | Notes
@@ -18,7 +17,5 @@ Name | Type | Description | Notes
 **ml** | [**SeededTrackedMachineLearningEvent**](SeededTrackedMachineLearningEvent) |  | [optional] 
 **adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent) |  | [optional] 
 **conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent) |  | [optional] 
-
-
 
 

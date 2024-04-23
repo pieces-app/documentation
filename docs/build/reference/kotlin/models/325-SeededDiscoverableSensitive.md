@@ -1,3 +1,8 @@
+---
+title: SeededDiscoverableSensitive | Kotlin SDK
+---
+
+
 
 # SeededDiscoverableSensitive
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** |  |  [optional]
 **description** | **kotlin.String** |  |  [optional]
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  |  [optional]
+
 
 
 

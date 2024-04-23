@@ -1,15 +1,12 @@
-# GraphicalOCRDescriptiveStatisticsConfidence
+---
+title: GraphicalOCRDescriptiveStatisticsConfidence | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GraphicalOCRDescriptiveStatisticsConfidence
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **mean** | **String** |  | 
-
-
 
 

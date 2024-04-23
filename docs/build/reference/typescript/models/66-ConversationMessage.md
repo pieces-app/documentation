@@ -1,3 +1,7 @@
+---
+title: ConversationMessage | TypeScript SDK
+---
+
 
 # ConversationMessage
 
@@ -19,37 +23,5 @@ Name | Type
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
 **score** | [**Score**](Score)
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations)
-
-## Example
-
-```typescript
-import { ConversationMessage } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: ConversationMessage = {
-    "schema": null,
-    "id": null,
-    "created": null,
-    "updated": null,
-    "deleted": null,
-    "model": null,
-    "fragment": null,
-    "conversation": null,
-    "sentiment": null,
-    "role": null,
-    "score": null,
-    "annotations": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ConversationMessage
-console.log(exampleParsed)
-```
 
 

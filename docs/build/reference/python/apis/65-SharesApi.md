@@ -1,6 +1,10 @@
+---
+title: Shares API | Python SDK
+---
+
 # Shares API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This endpoint will accept an asset. Response here will be a Share that was created.
 
-### Example
+### Example {#shares_create_new_share-example}
 
 
 ```python
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SharesApi(api_client)
+    api_instance = Shares API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seeded_share = pieces_os_client.SeededShare() # SeededShare |  (optional)
 
@@ -52,7 +56,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#shares_create_new_share-parameters}
 
 
 Name | Type | Description  | Notes
@@ -60,26 +64,25 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_share** | [**SeededShare**](../models/SeededShare)|  | [optional] 
 
-### Return type
+### Return type {#shares_create_new_share-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#shares_create_new_share-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shares_create_new_share-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#shares_create_new_share-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **shares_delete_share** {#shares_delete_share}
 > str shares_delete_share(share)
@@ -88,7 +91,7 @@ No authorization required
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
-### Example
+### Example {#shares_delete_share-example}
 
 
 ```python
@@ -106,7 +109,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SharesApi(api_client)
+    api_instance = Shares API(api_client)
     share = 'share_example' # str | Share id
 
     try:
@@ -120,33 +123,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#shares_delete_share-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **str**| Share id | 
 
-### Return type
+### Return type {#shares_delete_share-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#shares_delete_share-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shares_delete_share-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#shares_delete_share-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **shares_snapshot** {#shares_snapshot}
 > Shares shares_snapshot(transferables=transferables)
@@ -155,7 +157,7 @@ No authorization required
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
 
-### Example
+### Example {#shares_snapshot-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SharesApi(api_client)
+    api_instance = Shares API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -188,33 +190,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#shares_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#shares_snapshot-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#shares_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shares_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#shares_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **shares_specific_share_snapshot** {#shares_specific_share_snapshot}
 > Share shares_specific_share_snapshot(share, transferables=transferables)
@@ -223,7 +224,7 @@ No authorization required
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
-### Example
+### Example {#shares_specific_share_snapshot-example}
 
 
 ```python
@@ -242,7 +243,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SharesApi(api_client)
+    api_instance = Shares API(api_client)
     share = 'share_example' # str | Share id
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -257,7 +258,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#shares_specific_share_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -265,24 +266,23 @@ Name | Type | Description  | Notes
  **share** | **str**| Share id | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#shares_specific_share_snapshot-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#shares_specific_share_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shares_specific_share_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#shares_specific_share_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | A specific share per the provided share id. |  -  |
-
-
 

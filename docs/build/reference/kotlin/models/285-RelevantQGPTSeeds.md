@@ -1,3 +1,8 @@
+---
+title: RelevantQGPTSeeds | Kotlin SDK
+---
+
+
 
 # RelevantQGPTSeeds
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;RelevantQGPTSeed&gt;**](RelevantQGPTSeed) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

@@ -1,3 +1,7 @@
+---
+title: TrackedFormatEventIdentifierDescriptionPairs | Python SDK
+---
+
 # TrackedFormatEventIdentifierDescriptionPairs
 
 This is a model that allows us to send send over super specific format related events such as copied, deleted, downloaded, etc
@@ -17,23 +21,5 @@ Name | Type | Description | Notes
 **format_updated** | **str** | a format was updated, generic update. | [optional] 
 **format_inserted** | **str** | a format was inserted | [optional] 
 **format_value_edited** | **str** | a format&#39;s value was update ie, the text, etc... | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.tracked_format_event_identifier_description_pairs import TrackedFormatEventIdentifierDescriptionPairs
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TrackedFormatEventIdentifierDescriptionPairs from a JSON string
-tracked_format_event_identifier_description_pairs_instance = TrackedFormatEventIdentifierDescriptionPairs.from_json(json)
-# print the JSON string representation of the object
-print(TrackedFormatEventIdentifierDescriptionPairs.to_json())
-
-# convert the object into a dict
-tracked_format_event_identifier_description_pairs_dict = tracked_format_event_identifier_description_pairs_instance.to_dict()
-# create an instance of TrackedFormatEventIdentifierDescriptionPairs from a dict
-tracked_format_event_identifier_description_pairs_form_dict = tracked_format_event_identifier_description_pairs.from_dict(tracked_format_event_identifier_description_pairs_dict)
-```
 
 

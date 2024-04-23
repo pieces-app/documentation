@@ -1,9 +1,8 @@
-# AnonymousTemporalRange
+---
+title: AnonymousTemporalRange | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AnonymousTemporalRange
 
 ## Properties
 Name | Type | Description | Notes
@@ -13,7 +12,5 @@ Name | Type | Description | Notes
 **to** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **between** | **bool** |  | [optional] 
 **continuous** | **bool** |  | [optional] 
-
-
 
 

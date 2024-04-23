@@ -1,3 +1,8 @@
+---
+title: SeededConversationMessage | Kotlin SDK
+---
+
+
 
 # SeededConversationMessage
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **model** | [**Model**](Model) |  |  [optional]
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  |  [optional]
 **sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum) |  |  [optional]
+
 
 
 

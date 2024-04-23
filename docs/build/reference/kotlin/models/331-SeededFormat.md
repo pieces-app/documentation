@@ -1,3 +1,8 @@
+---
+title: SeededFormat | Kotlin SDK
+---
+
+
 
 # SeededFormat
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **file** | [**SeededFile**](SeededFile) |  |  [optional]
 **fragment** | [**SeededFragment**](SeededFragment) |  |  [optional]
 **classification** | [**SeededClassification**](SeededClassification) |  |  [optional]
+
 
 
 

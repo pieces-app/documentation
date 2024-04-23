@@ -1,9 +1,8 @@
-# FlattenedFormat
+---
+title: FlattenedFormat | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedFormat
 
 ## Properties
 Name | Type | Description | Notes
@@ -27,7 +26,5 @@ Name | Type | Description | Notes
 **analysis** | [**FlattenedAnalysis**](FlattenedAnalysis) |  | [optional] 
 **relationship** | [**Relationship**](Relationship) |  | [optional] 
 **activities** | [**FlattenedActivities**](FlattenedActivities) |  | [optional] 
-
-
 
 

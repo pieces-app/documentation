@@ -1,9 +1,8 @@
-# Hint
+---
+title: Hint | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Hint
 
 ## Properties
 Name | Type | Description | Notes
@@ -19,7 +18,5 @@ Name | Type | Description | Notes
 **text** | **String** | This is the text of the hint. | 
 **model** | [**ReferencedModel**](ReferencedModel) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

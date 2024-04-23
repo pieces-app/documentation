@@ -1,3 +1,8 @@
+---
+title: AllocationStatusEnum | Kotlin SDK
+---
+
+
 
 # AllocationStatusEnum
 
@@ -13,6 +18,7 @@
     * `SUCCEEDED` (value: `"SUCCEEDED"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
 
 
 

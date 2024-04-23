@@ -1,3 +1,8 @@
+---
+title: Auth0 | Kotlin SDK
+---
+
+
 
 # Auth0
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **user** | [**Auth0User**](Auth0User) |  |  [optional]
 **metadata** | [**Auth0UserMetadata**](Auth0UserMetadata) |  |  [optional]
 **namespace** | **kotlin.String** | An optional namespace parameter to add an additional namespace |  [optional]
+
 
 
 

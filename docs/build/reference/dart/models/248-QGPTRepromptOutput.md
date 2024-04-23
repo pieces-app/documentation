@@ -1,16 +1,13 @@
-# QGPTRepromptOutput
+---
+title: QGPTRepromptOutput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTRepromptOutput
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **query** | **String** |  | 
-
-
 
 

@@ -1,3 +1,8 @@
+---
+title: MailgunMetadata | Kotlin SDK
+---
+
+
 
 # MailgunMetadata
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **messageId** | **kotlin.String** | This is the id given to us from mailgun when the email was sent successfully. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

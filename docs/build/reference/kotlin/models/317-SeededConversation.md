@@ -1,3 +1,8 @@
+---
+title: SeededConversation | Kotlin SDK
+---
+
+
 
 # SeededConversation
 
@@ -17,6 +22,7 @@ Name | Type | Description | Notes
 **anchors** | [**kotlin.collections.List&lt;SeededAnchor&gt;**](SeededAnchor) |  |  [optional]
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  |  [optional]
 **demo** | **kotlin.Boolean** | This will let us know if this conversation was generated as a &#39;demo&#39; conversation |  [optional]
+
 
 
 

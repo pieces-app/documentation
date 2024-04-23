@@ -1,3 +1,8 @@
+---
+title: DeletedExternalProvider APIKey | Kotlin SDK
+---
+
+
 
 # DeletedExternalProvider APIKey
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **metadata** | [**Auth0UserMetadata**](../models/Auth0UserMetadata) |  | 
 **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema) |  |  [optional]
+
 
 
 

@@ -1,6 +1,10 @@
+---
+title: Hint API | Kotlin SDK
+---
+
 # Hint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,45 +20,45 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#hintscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.hintScoresIncrement(hint, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintScoresIncrement")
+    println("4xx response calling Hint API#hintScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintScoresIncrement")
+    println("5xx response calling Hint API#hintScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **kotlin.String**| This is a specific hint uuid |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#hintscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#hintscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **hintSpecificHintSnapshot** {#hintspecifichintsnapshot}
 > Hint hintSpecificHintSnapshot(hint)
@@ -63,41 +67,41 @@ No authorization required
 
 This will get a snapshot of a specific hint.
 
-### Example
+### Example {#hintspecifichintsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     val result : Hint = apiInstance.hintSpecificHintSnapshot(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintSpecificHintSnapshot")
+    println("4xx response calling Hint API#hintSpecificHintSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintSpecificHintSnapshot")
+    println("5xx response calling Hint API#hintSpecificHintSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintspecifichintsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **kotlin.String**| This is a specific hint uuid |
 
-### Return type
+### Return type {#hintspecifichintsnapshot-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintspecifichintsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintspecifichintsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -109,41 +113,41 @@ No authorization required
 
 This will update a specific hint.
 
-### Example
+### Example {#hintupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintApi()
+val apiInstance = Hint API()
 val hint : Hint =  // Hint | 
 try {
     val result : Hint = apiInstance.hintUpdate(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintApi#hintUpdate")
+    println("4xx response calling Hint API#hintUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintApi#hintUpdate")
+    println("5xx response calling Hint API#hintUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | [**Hint**](../models/Hint)|  | [optional]
 
-### Return type
+### Return type {#hintupdate-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

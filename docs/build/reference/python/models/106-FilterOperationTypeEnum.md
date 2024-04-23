@@ -1,3 +1,7 @@
+---
+title: FilterOperationTypeEnum | Python SDK
+---
+
 # FilterOperationTypeEnum
 
 
@@ -5,6 +9,5 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

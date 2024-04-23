@@ -1,3 +1,8 @@
+---
+title: AssetFilterPhrase | Kotlin SDK
+---
+
+
 
 # AssetFilterPhrase
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **title** | **kotlin.Boolean** |  |  [optional]
 **content** | **kotlin.Boolean** |  |  [optional]
 **options** | [**AssetFilterPhraseOptions**](AssetFilterPhraseOptions) |  |  [optional]
+
 
 
 

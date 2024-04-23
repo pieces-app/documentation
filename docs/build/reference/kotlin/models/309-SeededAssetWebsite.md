@@ -1,3 +1,8 @@
+---
+title: SeededAssetWebsite | Kotlin SDK
+---
+
+
 
 # SeededAssetWebsite
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
+
 
 
 

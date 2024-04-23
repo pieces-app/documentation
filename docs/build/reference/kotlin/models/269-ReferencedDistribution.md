@@ -1,3 +1,8 @@
+---
+title: ReferencedDistribution | Kotlin SDK
+---
+
+
 
 # ReferencedDistribution
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reference** | [**FlattenedDistribution**](FlattenedDistribution) |  |  [optional]
+
 
 
 

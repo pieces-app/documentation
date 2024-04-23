@@ -1,3 +1,8 @@
+---
+title: QGPTRelevanceOutput | Kotlin SDK
+---
+
+
 
 # QGPTRelevanceOutput
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **answer** | [**QGPTQuestionOutput**](QGPTQuestionOutput) |  |  [optional]
+
 
 
 

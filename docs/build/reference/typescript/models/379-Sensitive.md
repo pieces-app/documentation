@@ -1,3 +1,7 @@
+---
+title: Sensitive | TypeScript SDK
+---
+
 
 # Sensitive
 
@@ -22,40 +26,5 @@ Name | Type
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata)
 **interactions** | **number**
 **score** | [**Score**](Score)
-
-## Example
-
-```typescript
-import { Sensitive } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Sensitive = {
-    "schema": null,
-    "id": null,
-    "created": null,
-    "updated": null,
-    "deleted": null,
-    "asset": null,
-    "text": null,
-    "mechanism": null,
-    "category": null,
-    "severity": null,
-    "name": null,
-    "description": null,
-    "metadata": null,
-    "interactions": null,
-    "score": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Sensitive
-console.log(exampleParsed)
-```
 
 

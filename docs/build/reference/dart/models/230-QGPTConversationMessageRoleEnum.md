@@ -1,14 +1,11 @@
-# QGPTConversationMessageRoleEnum
+---
+title: QGPTConversationMessageRoleEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTConversationMessageRoleEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

@@ -1,6 +1,10 @@
+---
+title: Share API | Kotlin SDK
+---
+
 # Share API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,45 +20,45 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sharescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val share : kotlin.String = share_example // kotlin.String | Share id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.shareScoresIncrement(share, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareScoresIncrement")
+    println("4xx response calling Share API#shareScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareScoresIncrement")
+    println("5xx response calling Share API#shareScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#sharescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#sharescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#sharescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **shareSnapshot** {#sharesnapshot}
 > Share shareSnapshot(share, transferables)
@@ -63,43 +67,43 @@ No authorization required
 
 Get the snapshot of a specific share.
 
-### Example
+### Example {#sharesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val share : kotlin.String = share_example // kotlin.String | Share id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Share = apiInstance.shareSnapshot(share, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareSnapshot")
+    println("4xx response calling Share API#shareSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareSnapshot")
+    println("5xx response calling Share API#shareSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#sharesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#sharesnapshot-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#sharesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -111,43 +115,43 @@ No authorization required
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
 
-### Example
+### Example {#shareupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ShareApi()
+val apiInstance = Share API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val share : Share =  // Share | This is the Share that needs to be updated.
 try {
     val result : Share = apiInstance.shareUpdate(transferables, share)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ShareApi#shareUpdate")
+    println("4xx response calling Share API#shareUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ShareApi#shareUpdate")
+    println("5xx response calling Share API#shareUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#shareupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **share** | [**Share**](../models/Share)| This is the Share that needs to be updated. | [optional]
 
-### Return type
+### Return type {#shareupdate-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#shareupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shareupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

@@ -1,3 +1,8 @@
+---
+title: QGPTAgentRoutes | Kotlin SDK
+---
+
+
 
 # QGPTAgentRoutes
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **related** | [**QGPTAgentRelatedRoutes**](QGPTAgentRelatedRoutes) |  |  [optional]
+
 
 
 

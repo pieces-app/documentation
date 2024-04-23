@@ -1,9 +1,8 @@
-# FlattenedWorkstreamEvent
+---
+title: FlattenedWorkstreamEvent | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedWorkstreamEvent
 
 ## Properties
 Name | Type | Description | Notes
@@ -17,7 +16,5 @@ Name | Type | Description | Notes
 **trigger** | [**WorkstreamEventTrigger**](WorkstreamEventTrigger) |  | 
 **metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-
 
 

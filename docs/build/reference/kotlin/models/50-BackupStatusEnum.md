@@ -1,3 +1,8 @@
+---
+title: BackupStatusEnum | Kotlin SDK
+---
+
+
 
 # BackupStatusEnum
 
@@ -17,6 +22,7 @@
     * `CANCELED` (value: `"CANCELED"`)
 
     * `RESET` (value: `"RESET"`)
+
 
 
 

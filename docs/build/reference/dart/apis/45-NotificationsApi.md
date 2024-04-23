@@ -1,6 +1,10 @@
+---
+title: Notifications API | Dart SDK
+---
+
 # Notifications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Send notification
 
 Retrieves a snapshot of all available models.
 
-### Example
+### Example {#sendlocalnotification-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -28,24 +32,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sendlocalnotification-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **notification** | [**Notification**](../models/Notification)|  | [optional] 
+ **notification** | [**Notification**](../models/Notification) |  | [optional] 
 
-### Return type
+### Return type {#sendlocalnotification-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#sendlocalnotification-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sendlocalnotification-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
-
-
 

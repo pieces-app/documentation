@@ -1,6 +1,10 @@
+---
+title: Persons API | Dart SDK
+---
+
 # Persons API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
-### Example
+### Example {#persondisassociateasset-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -32,27 +36,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#persondisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
- **asset** | **String**| The id (uuid) of the asset that you are trying to access. | 
+ **person** | **String** | This is a uuid that represents a person. | 
+ **asset** | **String** | The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#persondisassociateasset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#persondisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#persondisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **personsCreateNewPerson** {#personscreatenewperson}
 > Person personsCreateNewPerson(transferables, seededPerson)
@@ -61,7 +63,7 @@ No authorization required
 
 This will create a new person.
 
-### Example
+### Example {#personscreatenewperson-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -77,27 +79,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personscreatenewperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededPerson** | [**SeededPerson**](../models/SeededPerson)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededPerson** | [**SeededPerson**](../models/SeededPerson) |  | [optional] 
 
-### Return type
+### Return type {#personscreatenewperson-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#personscreatenewperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personscreatenewperson-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **personsDeletePerson** {#personsdeleteperson}
 > personsDeletePerson(person)
@@ -106,7 +106,7 @@ No authorization required
 
 This will delete a specific person.
 
-### Example
+### Example {#personsdeleteperson-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -120,26 +120,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personsdeleteperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
+ **person** | **String** | This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#personsdeleteperson-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#personsdeleteperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personsdeleteperson-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **personsSnapshot** {#personssnapshot}
 > Persons personsSnapshot(transferables)
@@ -148,7 +146,7 @@ No authorization required
 
 This will get a snapshot of all of your people
 
-### Example
+### Example {#personssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -163,24 +161,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#personssnapshot-return-type}
 
 [**Persons**](../models/Persons)
 
-### Authorization
+### Authorization {#personssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

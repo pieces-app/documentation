@@ -1,9 +1,8 @@
-# FlattenedUserProfile
+---
+title: FlattenedUserProfile | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedUserProfile
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +14,5 @@ Name | Type | Description | Notes
 **username** | **String** |  | [optional] 
 **picture** | **String** |  | [optional] 
 **vanityname** | **String** |  | [optional] 
-
-
 
 

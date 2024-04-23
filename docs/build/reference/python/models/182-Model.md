@@ -1,3 +1,7 @@
+---
+title: Model | Python SDK
+---
+
 # Model
 
 This is a Machine Learning Model, that will give readable information about the Machine Learning Model Used.
@@ -28,23 +32,5 @@ Name | Type | Description | Notes
 **downloading** | **bool** | This is a calculated property, that will say if this is currently downloading. | [optional] 
 **max_tokens** | [**ModelMaxTokens**](ModelMaxTokens) |  | [optional] 
 **custom** | **bool** |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.model import Model
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Model from a JSON string
-model_instance = Model.from_json(json)
-# print the JSON string representation of the object
-print(Model.to_json())
-
-# convert the object into a dict
-model_dict = model_instance.to_dict()
-# create an instance of Model from a dict
-model_form_dict = model.from_dict(model_dict)
-```
 
 

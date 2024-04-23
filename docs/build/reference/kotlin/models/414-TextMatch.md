@@ -1,3 +1,8 @@
+---
+title: TextMatch | Kotlin SDK
+---
+
+
 
 # TextMatch
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **group** | [**TextLocation**](TextLocation) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **subgroup** | [**TextLocation**](TextLocation) |  |  [optional]
+
 
 
 

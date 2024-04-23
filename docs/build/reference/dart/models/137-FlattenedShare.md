@@ -1,9 +1,8 @@
-# FlattenedShare
+---
+title: FlattenedShare | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedShare
 
 ## Properties
 Name | Type | Description | Notes
@@ -21,7 +20,5 @@ Name | Type | Description | Notes
 **assets** | [**FlattenedAssets**](FlattenedAssets) |  | [optional] 
 **distributions** | [**FlattenedDistributions**](FlattenedDistributions) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

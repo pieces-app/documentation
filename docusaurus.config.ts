@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import {themes as prismThemes} from'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";
@@ -15,7 +15,7 @@ const config: Config = {
   projectName: 'documentation',
 
   onBrokenLinks: 'throw',
-  onBrokenAnchors: 'warn',
+  onBrokenAnchors: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
   i18n: {
@@ -62,6 +62,8 @@ const config: Config = {
     announcementBar: {
       id: 'new-docs',
       content: '🚀 Welcome to the new Pieces for Developers Documentation! 🚀',
+      // id: 'build-with-pieces',
+      // content: '🔨 Build with Pieces! <a href="/build">Learn more</a>',
     },
 
     algolia: {
@@ -191,6 +193,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['dart']
     },
 
     colorMode: {

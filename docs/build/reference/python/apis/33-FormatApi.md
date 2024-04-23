@@ -1,6 +1,10 @@
+---
+title: Format API | Python SDK
+---
+
 # Format API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +22,7 @@ Method | HTTP request | Description
 
 This will get an analysis from a format's id.
 
-### Example
+### Example {#format_analysis-example}
 
 
 ```python
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
 
     try:
@@ -51,34 +55,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#format_analysis-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **str**| The id (uuid) for a specific format. | 
 
-### Return type
+### Return type {#format_analysis-return-type}
 
 [**Analysis**](../models/Analysis)
 
-### Authorization
+### Authorization {#format_analysis-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#format_analysis-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#format_analysis-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **format_reclassify** {#format_reclassify}
 > Format format_reclassify(transferable=transferable, format_reclassification=format_reclassification)
@@ -87,7 +90,7 @@ No authorization required
 
 This endpoint will be used to reclassify a single Format.
 
-### Example
+### Example {#format_reclassify-example}
 
 
 ```python
@@ -107,7 +110,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     format_reclassification = pieces_os_client.FormatReclassification() # FormatReclassification |  (optional)
 
@@ -122,7 +125,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#format_reclassify-parameters}
 
 
 Name | Type | Description  | Notes
@@ -130,26 +133,25 @@ Name | Type | Description  | Notes
  **transferable** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **format_reclassification** | [**FormatReclassification**](../models/FormatReclassification)|  | [optional] 
 
-### Return type
+### Return type {#format_reclassify-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#format_reclassify-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#format_reclassify-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#format_reclassify-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **format_snapshot** {#format_snapshot}
 > Format format_snapshot(format, transferable=transferable)
@@ -158,7 +160,7 @@ No authorization required
 
 Get a snapshot of a specific format.
 
-### Example
+### Example {#format_snapshot-example}
 
 
 ```python
@@ -177,7 +179,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -192,7 +194,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#format_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -200,26 +202,25 @@ Name | Type | Description  | Notes
  **format** | **str**| The id (uuid) for a specific format. | 
  **transferable** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#format_snapshot-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#format_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#format_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#format_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **format_update_value** {#format_update_value}
 > Format format_update_value(transferable=transferable, format=format)
@@ -228,7 +229,7 @@ No authorization required
 
 This will update a format's value, ie, a formats fragment or file depending on what is provided.  code/text fragment behavior: If this format is an asset.preview.base we will update the asset.original's value. if this format is an asset.preview.original we will update the asset.preview.base's value.  code/text file behavior: If the the format that is update is the asset.preview.base is a fragment and the asset.original is file then we will update the asset.original's value to be bytes or string respectively. This goes the same for orignal to preview but will be go the reverse order so if the original is a file we will update the preview base's fragment string.  image fragment/file: We will not modify preview -> orignal or original -> preview here. so there are zero side effects in this case, and will update as normal. (this will be the case for all other value updates.)
 
-### Example
+### Example {#format_update_value-example}
 
 
 ```python
@@ -247,7 +248,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     format = pieces_os_client.Format() # Format | This is the format that you want to update. (optional)
 
@@ -262,7 +263,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#format_update_value-parameters}
 
 
 Name | Type | Description  | Notes
@@ -270,27 +271,26 @@ Name | Type | Description  | Notes
  **transferable** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **format** | [**Format**](../models/Format)| This is the format that you want to update. | [optional] 
 
-### Return type
+### Return type {#format_update_value-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#format_update_value-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#format_update_value-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#format_update_value-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK, you will get an updated format. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **format_usage_event** {#format_usage_event}
 > TrackedFormatEvent format_usage_event(seeded_tracked_format_event=seeded_tracked_format_event)
@@ -299,7 +299,7 @@ No authorization required
 
 This is an analytics endpoint that will enable us to know when a user has copied/downloaded/beamed/viewed a format.
 
-### Example
+### Example {#format_usage_event-example}
 
 
 ```python
@@ -319,7 +319,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatApi(api_client)
+    api_instance = Format API(api_client)
     seeded_tracked_format_event = pieces_os_client.SeededTrackedFormatEvent() # SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:) (optional)
 
     try:
@@ -333,31 +333,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#format_usage_event-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_tracked_format_event** | [**SeededTrackedFormatEvent**](../models/SeededTrackedFormatEvent)| This is a SeededTrackedFormatEvent, per tracked event:) | [optional] 
 
-### Return type
+### Return type {#format_usage_event-return-type}
 
 [**TrackedFormatEvent**](../models/TrackedFormatEvent)
 
-### Authorization
+### Authorization {#format_usage_event-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#format_usage_event-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#format_usage_event-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

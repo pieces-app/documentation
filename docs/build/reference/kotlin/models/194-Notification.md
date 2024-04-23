@@ -1,3 +1,8 @@
+---
+title: Notification | Kotlin SDK
+---
+
+
 
 # Notification
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **title** | **kotlin.String** |  |  [optional]
 **message** | **kotlin.String** |  |  [optional]
 **payload** | **kotlin.String** |  |  [optional]
+
 
 
 

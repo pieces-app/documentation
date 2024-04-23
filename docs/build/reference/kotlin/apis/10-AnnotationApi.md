@@ -1,6 +1,10 @@
+---
+title: Annotation API | Kotlin SDK
+---
+
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,45 +20,45 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#annotationscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.annotationScoresIncrement(`annotation`, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationScoresIncrement")
+    println("4xx response calling Annotation API#annotationScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationScoresIncrement")
+    println("5xx response calling Annotation API#annotationScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#annotationscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#annotationscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(`annotation`)
@@ -63,41 +67,41 @@ No authorization required
 
 This will get a snapshot of a specific annotation.
 
-### Example
+### Example {#annotationspecificannotationsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 try {
     val result : Annotation = apiInstance.annotationSpecificAnnotationSnapshot(`annotation`)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationSpecificAnnotationSnapshot")
+    println("4xx response calling Annotation API#annotationSpecificAnnotationSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationSpecificAnnotationSnapshot")
+    println("5xx response calling Annotation API#annotationSpecificAnnotationSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationspecificannotationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
-### Return type
+### Return type {#annotationspecificannotationsnapshot-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationspecificannotationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationspecificannotationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -109,41 +113,41 @@ No authorization required
 
 This will update a specific annotation.
 
-### Example
+### Example {#annotationupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationApi()
+val apiInstance = Annotation API()
 val `annotation` : Annotation =  // Annotation | 
 try {
     val result : Annotation = apiInstance.annotationUpdate(`annotation`)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationApi#annotationUpdate")
+    println("4xx response calling Annotation API#annotationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationApi#annotationUpdate")
+    println("5xx response calling Annotation API#annotationUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | [**Annotation**](../models/Annotation)|  | [optional]
 
-### Return type
+### Return type {#annotationupdate-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

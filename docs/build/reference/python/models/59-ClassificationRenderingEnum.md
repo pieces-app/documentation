@@ -1,3 +1,7 @@
+---
+title: ClassificationRenderingEnum | Python SDK
+---
+
 # ClassificationRenderingEnum
 
 Specifically supported renderings...usually between generic types
@@ -6,6 +10,5 @@ Specifically supported renderings...usually between generic types
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

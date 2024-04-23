@@ -1,6 +1,10 @@
+---
+title: Anchor API | TypeScript SDK
+---
+
 # Anchor API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchorassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,18 +30,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorAssociateWorkstreamSummaryRequest = {
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.anchorAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -45,17 +50,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#anchorassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#anchorassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -66,7 +71,7 @@ void (empty response body)
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchordisassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -75,18 +80,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorDisassociateWorkstreamSummaryRequest = {
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.anchorDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchordisassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -94,17 +100,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#anchordisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#anchordisassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchordisassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -115,7 +121,7 @@ void (empty response body)
 
 This will rename a specific anchor.
 
-### Example
+### Example {#anchorrename-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -124,18 +130,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorRenameRequest = {
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.anchorRename(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorrename-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -143,17 +150,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorrename-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP request headers {#anchorrename-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorrename-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -164,7 +171,7 @@ Name | Type | Description  | Notes
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchorscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -173,18 +180,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorScoresIncrementRequest = {
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.anchorScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -192,17 +200,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return type {#anchorscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#anchorscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -213,7 +221,7 @@ void (empty response body)
 
 This will get a snapshot of a single anchor.
 
-### Example
+### Example {#anchorspecificanchorsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -222,18 +230,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorSpecificAnchorSnapshotRequest = {
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.anchorSpecificAnchorSnapshot(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorspecificanchorsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -241,17 +250,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorspecificanchorsnapshot-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP request headers {#anchorspecificanchorsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorspecificanchorsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -262,7 +271,7 @@ Name | Type | Description  | Notes
 
 This will update a specific anchor.
 
-### Example
+### Example {#anchorupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -271,18 +280,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorApi(configuration)
 
 const body: Pieces.AnchorUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Anchor (optional)
-    anchor: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Anchor (optional)
+anchor: ,
 };
 
 apiInstance.anchorUpdate(body).then((data: Anchor) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -290,17 +300,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorupdate-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### HTTP request headers
+### HTTP request headers {#anchorupdate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

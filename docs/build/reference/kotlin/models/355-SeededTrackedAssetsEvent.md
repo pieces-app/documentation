@@ -1,3 +1,8 @@
+---
+title: SeededTrackedAssetsEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedAssetsEvent
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **identifierDescriptionPair** | [**TrackedAssetsEventIdentifierDescriptionPairs**](TrackedAssetsEventIdentifierDescriptionPairs) |  |  [optional]
 **metadata** | [**SeededTrackedAssetsEventMetadata**](SeededTrackedAssetsEventMetadata) |  |  [optional]
+
 
 
 

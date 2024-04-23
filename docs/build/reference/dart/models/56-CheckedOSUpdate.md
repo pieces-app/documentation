@@ -1,16 +1,13 @@
-# CheckedOSUpdate
+---
+title: CheckedOSUpdate | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# CheckedOSUpdate
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **status** | [**UpdatingStatusEnum**](UpdatingStatusEnum) |  | 
-
-
 
 

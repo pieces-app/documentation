@@ -1,3 +1,8 @@
+---
+title: SeededRange | Kotlin SDK
+---
+
+
 
 # SeededRange
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **between** | **kotlin.Boolean** |  |  [optional]
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  |  [optional]
 **conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation) |  |  [optional]
+
 
 
 

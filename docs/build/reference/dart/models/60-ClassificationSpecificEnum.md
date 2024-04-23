@@ -1,14 +1,11 @@
-# ClassificationSpecificEnum
+---
+title: ClassificationSpecificEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ClassificationSpecificEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

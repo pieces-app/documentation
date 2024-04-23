@@ -1,9 +1,8 @@
-# TLPCodeFragmentDescription
+---
+title: TLPCodeFragmentDescription | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeFragmentDescription
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **user** | **String** | the uuid of the user the description was created for. | 
 **context** | **String** | the application this description was created from. | [optional] 
 **os** | **String** | This is the UUID of the OS that this context is currently connected to. | [optional] 
-
-
 
 

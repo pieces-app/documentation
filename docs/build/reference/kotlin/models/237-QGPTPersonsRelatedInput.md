@@ -1,3 +1,8 @@
+---
+title: QGPTPersonsRelatedInput | Kotlin SDK
+---
+
+
 
 # QGPTPersonsRelatedInput
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **conversation** | [**QGPTConversation**](QGPTConversation) |  |  [optional]
 **application** | **kotlin.String** | optional application id |  [optional]
 **model** | **kotlin.String** | optional model id |  [optional]
+
 
 
 

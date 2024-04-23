@@ -1,16 +1,13 @@
-# ReuseReaction
+---
+title: ReuseReaction | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ReuseReaction
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **asset** | **String** |  | 
-
-
 
 

@@ -1,3 +1,8 @@
+---
+title: SeededPerson | Kotlin SDK
+---
+
+
 
 # SeededPerson
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **access** | [**PersonAccess**](PersonAccess) |  |  [optional]
 **model** | [**PersonModel**](PersonModel) |  |  [optional]
 **annotations** | [**kotlin.collections.List&lt;SeededAnnotation&gt;**](SeededAnnotation) |  |  [optional]
+
 
 
 

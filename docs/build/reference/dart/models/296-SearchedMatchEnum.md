@@ -1,14 +1,11 @@
-# SearchedMatchEnum
+---
+title: SearchedMatchEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SearchedMatchEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

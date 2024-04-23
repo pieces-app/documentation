@@ -1,6 +1,10 @@
+---
+title: CodeAnalyses API | Dart SDK
+---
+
 # CodeAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Your GET endpoint
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an analysis.
 
-### Example
+### Example {#codeanalysessnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -28,21 +32,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#codeanalysessnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#codeanalysessnapshot-return-type}
 
 [**CodeAnalyses**](../models/CodeAnalyses)
 
-### Authorization
+### Authorization {#codeanalysessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#codeanalysessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

@@ -1,3 +1,7 @@
+---
+title: SeededSensitive | Python SDK
+---
+
 # SeededSensitive
 
 This is the seededSensitive, this does not have an id yet as we will add it on the server side.  can optionally pass in our mechanism here, as the default will be manual unless specified.  TODO consider updating these asset,format to referenced Models
@@ -15,23 +19,5 @@ Name | Type | Description | Notes
 **name** | **str** |  | 
 **description** | **str** |  | 
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.seeded_sensitive import SeededSensitive
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededSensitive from a JSON string
-seeded_sensitive_instance = SeededSensitive.from_json(json)
-# print the JSON string representation of the object
-print(SeededSensitive.to_json())
-
-# convert the object into a dict
-seeded_sensitive_dict = seeded_sensitive_instance.to_dict()
-# create an instance of SeededSensitive from a dict
-seeded_sensitive_form_dict = seeded_sensitive.from_dict(seeded_sensitive_dict)
-```
 
 

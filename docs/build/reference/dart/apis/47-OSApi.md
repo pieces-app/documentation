@@ -1,6 +1,10 @@
+---
+title: OS API | Dart SDK
+---
+
 # OS API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +27,7 @@ Method | HTTP request | Description
 
 This will link an external provider to your current auth0 account.  Will throw errors if your user is not signed in.
 
-### Example
+### Example {#linkprovider-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -38,26 +42,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#linkprovider-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional] 
+ **seededExternalProvider** | [**SeededExternalProvider**](../models/SeededExternalProvider) |  | [optional] 
 
-### Return type
+### Return type {#linkprovider-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#linkprovider-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#linkprovider-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **osDeviceInformation** {#osdeviceinformation}
 > OSDeviceInformationReturnable osDeviceInformation()
@@ -66,7 +68,7 @@ No authorization required
 
 This will get information related to your specific device.
 
-### Example
+### Example {#osdeviceinformation-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -80,23 +82,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#osdeviceinformation-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#osdeviceinformation-return-type}
 
 [**OSDeviceInformationReturnable**](../models/OSDeviceInformationReturnable)
 
-### Authorization
+### Authorization {#osdeviceinformation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#osdeviceinformation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **osPermissions** {#ospermissions}
 > OSPermissions osPermissions()
@@ -105,7 +105,7 @@ No authorization required
 
 This will only work on Macos and Windows.  And will get the permissions of the user's local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
 
-### Example
+### Example {#ospermissions-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,23 +119,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#ospermissions-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#ospermissions-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### Authorization
+### Authorization {#ospermissions-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ospermissions-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **osPermissionsRequest** {#ospermissionsrequest}
 > OSPermissions osPermissionsRequest(oSPermissions)
@@ -144,7 +142,7 @@ No authorization required
 
 This will only work on Macos and Windows.  This will request permissions for the given inputs
 
-### Example
+### Example {#ospermissionsrequest-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -159,26 +157,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#ospermissionsrequest-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **oSPermissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
+ **oSPermissions** | [**OSPermissions**](../models/OSPermissions) |  | [optional] 
 
-### Return type
+### Return type {#ospermissionsrequest-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### Authorization
+### Authorization {#ospermissionsrequest-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ospermissionsrequest-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **osRestart** {#osrestart}
 > osRestart()
@@ -187,7 +183,7 @@ Your GET endpoint
 
 This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS Only Endpoint.
 
-### Example
+### Example {#osrestart-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -200,23 +196,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#osrestart-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#osrestart-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#osrestart-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#osrestart-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **osUpdateCheck** {#osupdatecheck}
 > CheckedOSUpdate osUpdateCheck(uncheckedOSUpdate)
@@ -225,7 +219,7 @@ No authorization required
 
 This is a helper endpoint that will check the status of an update for PiecesOS. IE if there is an update downloading, if there is one available, but the downloading has not started... etc
 
-### Example
+### Example {#osupdatecheck-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -240,26 +234,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#osupdatecheck-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional] 
+ **uncheckedOSUpdate** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate) |  | [optional] 
 
-### Return type
+### Return type {#osupdatecheck-return-type}
 
 [**CheckedOSUpdate**](../models/CheckedOSUpdate)
 
-### Authorization
+### Authorization {#osupdatecheck-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#osupdatecheck-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **pickFiles** {#pickfiles}
 > List\<String\>** pickFiles(filePickerInput)
@@ -268,7 +260,7 @@ No authorization required
 
 This will trigger a filer picker and return the string paths of the files that were selected.
 
-### Example
+### Example {#pickfiles-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -283,26 +275,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#pickfiles-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional] 
+ **filePickerInput** | [**FilePickerInput**](../models/FilePickerInput) |  | [optional] 
 
-### Return type
+### Return type {#pickfiles-return-type}
 
 **List\<String\>**
 
-### Authorization
+### Authorization {#pickfiles-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#pickfiles-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **pickFolders** {#pickfolders}
 > List\<String\>** pickFolders()
@@ -311,7 +301,7 @@ No authorization required
 
 This will trigger a folder picker and return the string paths of the folders that were selected.
 
-### Example
+### Example {#pickfolders-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -325,23 +315,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#pickfolders-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#pickfolders-return-type}
 
 **List\<String\>**
 
-### Authorization
+### Authorization {#pickfolders-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#pickfolders-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **signIntoOS** {#signintoos}
 > UserProfile signIntoOS()
@@ -350,7 +338,7 @@ No authorization required
 
 A trigger that launches a Sign into OS Server
 
-### Example
+### Example {#signintoos-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -364,23 +352,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#signintoos-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#signintoos-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#signintoos-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#signintoos-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **signOutOfOS** {#signoutofos}
 > Users signOutOfOS()
@@ -389,7 +375,7 @@ No authorization required
 
 A trigger that signs out a user from the OS
 
-### Example
+### Example {#signoutofos-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -403,21 +389,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#signoutofos-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#signoutofos-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#signoutofos-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#signoutofos-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 

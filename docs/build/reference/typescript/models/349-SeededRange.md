@@ -1,3 +1,7 @@
+---
+title: SeededRange | TypeScript SDK
+---
+
 
 # SeededRange
 
@@ -13,31 +17,5 @@ Name | Type
 **between** | **boolean**
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary)
 **conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation)
-
-## Example
-
-```typescript
-import { SeededRange } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededRange = {
-    "schema": null,
-    "to": null,
-    "from": null,
-    "between": null,
-    "summary": null,
-    "conversation": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededRange
-console.log(exampleParsed)
-```
 
 

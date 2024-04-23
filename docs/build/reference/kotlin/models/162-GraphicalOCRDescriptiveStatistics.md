@@ -1,3 +1,8 @@
+---
+title: GraphicalOCRDescriptiveStatistics | Kotlin SDK
+---
+
+
 
 # GraphicalOCRDescriptiveStatistics
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **confidence** | [**GraphicalOCRDescriptiveStatisticsConfidence**](GraphicalOCRDescriptiveStatisticsConfidence) |  | 
 **duration** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

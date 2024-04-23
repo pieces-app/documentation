@@ -1,16 +1,13 @@
-# Activities
+---
+title: Activities | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Activities
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **iterable** | [**List\<Activity\>**](Activity) |  | [default to const []]
-
-
 
 

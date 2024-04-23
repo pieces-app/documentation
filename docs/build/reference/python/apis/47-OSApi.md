@@ -1,6 +1,10 @@
+---
+title: OS API | Python SDK
+---
+
 # OS API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +27,7 @@ Method | HTTP request | Description
 
 This will link an external provider to your current auth0 account.  Will throw errors if your user is not signed in.
 
-### Example
+### Example {#link_provider-example}
 
 
 ```python
@@ -43,7 +47,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     seeded_external_provider = pieces_os_client.SeededExternalProvider() # SeededExternalProvider |  (optional)
 
     try:
@@ -57,35 +61,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#link_provider-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_external_provider** | [**SeededExternalProvider**](../models/SeededExternalProvider)|  | [optional] 
 
-### Return type
+### Return type {#link_provider-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#link_provider-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#link_provider-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#link_provider-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **401** | Unauthorized, this means your user is not authenticated |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **os_device_information** {#os_device_information}
 > OSDeviceInformationReturnable os_device_information()
@@ -94,7 +97,7 @@ No authorization required
 
 This will get information related to your specific device.
 
-### Example
+### Example {#os_device_information-example}
 
 
 ```python
@@ -113,7 +116,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/device/information [GET]
@@ -126,31 +129,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#os_device_information-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#os_device_information-return-type}
 
 [**OSDeviceInformationReturnable**](../models/OSDeviceInformationReturnable)
 
-### Authorization
+### Authorization {#os_device_information-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#os_device_information-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#os_device_information-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **os_permissions** {#os_permissions}
 > OSPermissions os_permissions()
@@ -159,7 +161,7 @@ No authorization required
 
 This will only work on Macos and Windows.  And will get the permissions of the user's local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
 
-### Example
+### Example {#os_permissions-example}
 
 
 ```python
@@ -178,7 +180,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/permissions [GET]
@@ -191,31 +193,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#os_permissions-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#os_permissions-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### Authorization
+### Authorization {#os_permissions-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#os_permissions-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#os_permissions-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **os_permissions_request** {#os_permissions_request}
 > OSPermissions os_permissions_request(os_permissions=os_permissions)
@@ -224,7 +225,7 @@ No authorization required
 
 This will only work on Macos and Windows.  This will request permissions for the given inputs
 
-### Example
+### Example {#os_permissions_request-example}
 
 
 ```python
@@ -243,7 +244,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     os_permissions = pieces_os_client.OSPermissions() # OSPermissions |  (optional)
 
     try:
@@ -257,34 +258,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#os_permissions_request-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **os_permissions** | [**OSPermissions**](../models/OSPermissions)|  | [optional] 
 
-### Return type
+### Return type {#os_permissions_request-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### Authorization
+### Authorization {#os_permissions_request-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#os_permissions_request-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#os_permissions_request-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **os_restart** {#os_restart}
 > os_restart()
@@ -293,7 +293,7 @@ Your GET endpoint
 
 This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS Only Endpoint.
 
-### Example
+### Example {#os_restart-example}
 
 
 ```python
@@ -311,7 +311,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # Your GET endpoint
@@ -322,31 +322,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#os_restart-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#os_restart-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#os_restart-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#os_restart-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#os_restart-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **os_update_check** {#os_update_check}
 > CheckedOSUpdate os_update_check(unchecked_os_update=unchecked_os_update)
@@ -355,7 +354,7 @@ No authorization required
 
 This is a helper endpoint that will check the status of an update for PiecesOS. IE if there is an update downloading, if there is one available, but the downloading has not started... etc
 
-### Example
+### Example {#os_update_check-example}
 
 
 ```python
@@ -375,7 +374,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     unchecked_os_update = pieces_os_client.UncheckedOSUpdate() # UncheckedOSUpdate |  (optional)
 
     try:
@@ -389,34 +388,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#os_update_check-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **unchecked_os_update** | [**UncheckedOSUpdate**](../models/UncheckedOSUpdate)|  | [optional] 
 
-### Return type
+### Return type {#os_update_check-return-type}
 
 [**CheckedOSUpdate**](../models/CheckedOSUpdate)
 
-### Authorization
+### Authorization {#os_update_check-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#os_update_check-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#os_update_check-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **pick_files** {#pick_files}
 > List[str] pick_files(file_picker_input=file_picker_input)
@@ -425,7 +423,7 @@ No authorization required
 
 This will trigger a filer picker and return the string paths of the files that were selected.
 
-### Example
+### Example {#pick_files-example}
 
 
 ```python
@@ -444,7 +442,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
     file_picker_input = pieces_os_client.FilePickerInput() # FilePickerInput |  (optional)
 
     try:
@@ -458,34 +456,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#pick_files-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **file_picker_input** | [**FilePickerInput**](../models/FilePickerInput)|  | [optional] 
 
-### Return type
+### Return type {#pick_files-return-type}
 
 **List[str]**
 
-### Authorization
+### Authorization {#pick_files-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#pick_files-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#pick_files-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **pick_folders** {#pick_folders}
 > List[str] pick_folders()
@@ -494,7 +491,7 @@ No authorization required
 
 This will trigger a folder picker and return the string paths of the folders that were selected.
 
-### Example
+### Example {#pick_folders-example}
 
 
 ```python
@@ -512,7 +509,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/folders/pick [POST]
@@ -525,31 +522,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#pick_folders-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#pick_folders-return-type}
 
 **List[str]**
 
-### Authorization
+### Authorization {#pick_folders-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#pick_folders-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#pick_folders-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **sign_into_os** {#sign_into_os}
 > UserProfile sign_into_os()
@@ -558,7 +554,7 @@ No authorization required
 
 A trigger that launches a Sign into OS Server
 
-### Example
+### Example {#sign_into_os-example}
 
 
 ```python
@@ -577,7 +573,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # 
@@ -590,30 +586,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sign_into_os-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#sign_into_os-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#sign_into_os-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sign_into_os-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#sign_into_os-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **sign_out_of_os** {#sign_out_of_os}
 > Users sign_out_of_os()
@@ -622,7 +617,7 @@ No authorization required
 
 A trigger that signs out a user from the OS
 
-### Example
+### Example {#sign_out_of_os-example}
 
 
 ```python
@@ -641,7 +636,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OSApi(api_client)
+    api_instance = OS API(api_client)
 
     try:
         # /os/sign_out [POST]
@@ -654,28 +649,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sign_out_of_os-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#sign_out_of_os-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#sign_out_of_os-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sign_out_of_os-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#sign_out_of_os-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

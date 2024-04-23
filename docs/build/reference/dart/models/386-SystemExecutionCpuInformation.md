@@ -1,9 +1,8 @@
-# SystemExecutionCpuInformation
+---
+title: SystemExecutionCpuInformation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SystemExecutionCpuInformation
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **count** | **int** | this is the number of cpus | 
 **brand** | **String** | this is the brand of cpu | 
 **frequency** | **int** |  | 
-
-
 
 

@@ -1,6 +1,10 @@
+---
+title: MachineLearning API | Python SDK
+---
+
 # MachineLearning API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 This is going to take in some personification details ie languages & personas.  and will return generated Seeds that can be used as snippets post/pre onboarding.
 
-### Example
+### Example {#personification_technical_language_generation-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MachineLearningApi(api_client)
+    api_instance = MachineLearning API(api_client)
     preonboarded_persona_details = pieces_os_client.PreonboardedPersonaDetails() # PreonboardedPersonaDetails |  (optional)
 
     try:
@@ -49,34 +53,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#personification_technical_language_generation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preonboarded_persona_details** | [**PreonboardedPersonaDetails**](../models/PreonboardedPersonaDetails)|  | [optional] 
 
-### Return type
+### Return type {#personification_technical_language_generation-return-type}
 
 [**OnboardedPersonaDetails**](../models/OnboardedPersonaDetails)
 
-### Authorization
+### Authorization {#personification_technical_language_generation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personification_technical_language_generation-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#personification_technical_language_generation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **segment_technical_language** {#segment_technical_language}
 > SegmentedTechnicalLanguage segment_technical_language(classify=classify, unsegmented_technical_language=unsegmented_technical_language)
@@ -85,7 +88,7 @@ No authorization required
 
 This is a functional endpoint that will parse a message or text in to text or code.  if the optional query param is passed along 'classify' then we will optionally classify the just the code that is segmented.
 
-### Example
+### Example {#segment_technical_language-example}
 
 
 ```python
@@ -105,7 +108,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MachineLearningApi(api_client)
+    api_instance = MachineLearning API(api_client)
     classify = True # bool | This will let us know if you want us to classifiy your code, this is default to false. (optional)
     unsegmented_technical_language = pieces_os_client.UnsegmentedTechnicalLanguage() # UnsegmentedTechnicalLanguage |  (optional)
 
@@ -120,7 +123,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#segment_technical_language-parameters}
 
 
 Name | Type | Description  | Notes
@@ -128,25 +131,24 @@ Name | Type | Description  | Notes
  **classify** | **bool**| This will let us know if you want us to classifiy your code, this is default to false. | [optional] 
  **unsegmented_technical_language** | [**UnsegmentedTechnicalLanguage**](../models/UnsegmentedTechnicalLanguage)|  | [optional] 
 
-### Return type
+### Return type {#segment_technical_language-return-type}
 
 [**SegmentedTechnicalLanguage**](../models/SegmentedTechnicalLanguage)
 
-### Authorization
+### Authorization {#segment_technical_language-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#segment_technical_language-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#segment_technical_language-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

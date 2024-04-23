@@ -1,3 +1,8 @@
+---
+title: SystemExecutionInformation | Kotlin SDK
+---
+
+
 
 # SystemExecutionInformation
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **os** | **kotlin.String** |  | 
 **kernel** | **kotlin.String** |  | 
 **cpu** | [**SystemExecutionCpuInformation**](SystemExecutionCpuInformation) |  | 
+
 
 
 

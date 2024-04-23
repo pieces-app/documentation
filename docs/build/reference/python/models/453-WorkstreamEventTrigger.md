@@ -1,3 +1,7 @@
+---
+title: WorkstreamEventTrigger | Python SDK
+---
+
 # WorkstreamEventTrigger
 
 This is the specific event that represent the Shadow Activity ie the copy/paste ...xyz
@@ -21,23 +25,5 @@ Name | Type | Description | Notes
 **application_enter** | **bool** |  | [optional] 
 **application_leave** | **bool** |  | [optional] 
 **application_switch** | **bool** |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.workstream_event_trigger import WorkstreamEventTrigger
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkstreamEventTrigger from a JSON string
-workstream_event_trigger_instance = WorkstreamEventTrigger.from_json(json)
-# print the JSON string representation of the object
-print(WorkstreamEventTrigger.to_json())
-
-# convert the object into a dict
-workstream_event_trigger_dict = workstream_event_trigger_instance.to_dict()
-# create an instance of WorkstreamEventTrigger from a dict
-workstream_event_trigger_form_dict = workstream_event_trigger.from_dict(workstream_event_trigger_dict)
-```
 
 

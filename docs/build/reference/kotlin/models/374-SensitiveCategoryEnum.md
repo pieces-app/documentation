@@ -1,3 +1,8 @@
+---
+title: SensitiveCategoryEnum | Kotlin SDK
+---
+
+
 
 # SensitiveCategoryEnum
 
@@ -29,6 +34,7 @@
     * `API_ID` (value: `"API_ID"`)
 
     * `WEB_HOOK_URL` (value: `"WEB_HOOK_URL"`)
+
 
 
 

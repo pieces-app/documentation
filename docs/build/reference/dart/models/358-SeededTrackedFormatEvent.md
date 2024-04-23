@@ -1,9 +1,8 @@
-# SeededTrackedFormatEvent
+---
+title: SeededTrackedFormatEvent | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededTrackedFormatEvent
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs) |  | 
 **format** | [**ReferencedFormat**](ReferencedFormat) |  | 
 **metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata) |  | [optional] 
-
-
 
 

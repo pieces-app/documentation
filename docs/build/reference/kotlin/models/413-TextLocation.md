@@ -1,3 +1,8 @@
+---
+title: TextLocation | Kotlin SDK
+---
+
+
 
 # TextLocation
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **start** | **kotlin.Int** | this is the start index within the original string. | 
 **end** | **kotlin.Int** | this is the end index within the original string. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

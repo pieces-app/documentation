@@ -1,3 +1,8 @@
+---
+title: Context | Kotlin SDK
+---
+
+
 
 # Context
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **health** | [**Health**](Health) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **user** | [**UserProfile**](UserProfile) |  |  [optional]
+
 
 
 

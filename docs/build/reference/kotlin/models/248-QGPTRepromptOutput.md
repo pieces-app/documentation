@@ -1,3 +1,8 @@
+---
+title: QGPTRepromptOutput | Kotlin SDK
+---
+
+
 
 # QGPTRepromptOutput
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **query** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

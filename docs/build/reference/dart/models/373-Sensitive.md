@@ -1,9 +1,8 @@
-# Sensitive
+---
+title: Sensitive | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Sensitive
 
 ## Properties
 Name | Type | Description | Notes
@@ -23,7 +22,5 @@ Name | Type | Description | Notes
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] 
 **interactions** | **int** | This is an optional value that will keep track of the number of times this has been interacted with. | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

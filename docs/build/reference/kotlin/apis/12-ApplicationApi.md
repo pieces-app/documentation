@@ -1,6 +1,10 @@
+---
+title: Application API | Kotlin SDK
+---
+
 # Application API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,41 +18,41 @@ Method | HTTP request | Description
 
 This is an endpoint for updating an application.
 
-### Example
+### Example {#applicationupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationApi()
+val apiInstance = Application API()
 val application : Application =  // Application | 
 try {
     val result : Application = apiInstance.applicationUpdate(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationApi#applicationUpdate")
+    println("4xx response calling Application API#applicationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationApi#applicationUpdate")
+    println("5xx response calling Application API#applicationUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**Application**](../models/Application)|  | [optional]
 
-### Return type
+### Return type {#applicationupdate-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

@@ -1,6 +1,10 @@
+---
+title: Annotations API | Kotlin SDK
+---
+
 # Annotations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,41 +20,41 @@ Method | HTTP request | Description
 
 This will create an annotation.
 
-### Example
+### Example {#annotationscreatenewannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val seededAnnotation : SeededAnnotation =  // SeededAnnotation | 
 try {
     val result : Annotation = apiInstance.annotationsCreateNewAnnotation(seededAnnotation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsCreateNewAnnotation")
+    println("4xx response calling Annotations API#annotationsCreateNewAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsCreateNewAnnotation")
+    println("5xx response calling Annotations API#annotationsCreateNewAnnotation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationscreatenewannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAnnotation** | [**SeededAnnotation**](../models/SeededAnnotation)|  | [optional]
 
-### Return type
+### Return type {#annotationscreatenewannotation-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationscreatenewannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationscreatenewannotation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -62,43 +66,43 @@ No authorization required
 
 this will delete a specific annotation
 
-### Example
+### Example {#annotationsdeletespecificannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 try {
     apiInstance.annotationsDeleteSpecificAnnotation(`annotation`)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsDeleteSpecificAnnotation")
+    println("4xx response calling Annotations API#annotationsDeleteSpecificAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsDeleteSpecificAnnotation")
+    println("5xx response calling Annotations API#annotationsDeleteSpecificAnnotation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationsdeletespecificannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
-### Return type
+### Return type {#annotationsdeletespecificannotation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#annotationsdeletespecificannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationsdeletespecificannotation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **annotationsSnapshot** {#annotationssnapshot}
 > Annotations annotationsSnapshot(annotationTypeFilter)
@@ -107,41 +111,41 @@ No authorization required
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.
 
-### Example
+### Example {#annotationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnnotationsApi()
+val apiInstance = Annotations API()
 val annotationTypeFilter : kotlin.String = annotationTypeFilter_example // kotlin.String | This is an AnnotationTypeEnum as a optional filter.
 try {
     val result : Annotations = apiInstance.annotationsSnapshot(annotationTypeFilter)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnnotationsApi#annotationsSnapshot")
+    println("4xx response calling Annotations API#annotationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnnotationsApi#annotationsSnapshot")
+    println("5xx response calling Annotations API#annotationsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#annotationssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotationTypeFilter** | **kotlin.String**| This is an AnnotationTypeEnum as a optional filter. | [optional] [enum: DESCRIPTION, COMMENT, COMMENTATION, DOCUMENTATION, SUMMARIZATION, SUMMARY, EXPLANATION, GIT_COMMIT]
 
-### Return type
+### Return type {#annotationssnapshot-return-type}
 
 [**Annotations**](../models/Annotations)
 
-### Authorization
+### Authorization {#annotationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

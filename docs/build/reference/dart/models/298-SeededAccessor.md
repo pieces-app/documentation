@@ -1,9 +1,8 @@
-# SeededAccessor
+---
+title: SeededAccessor | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededAccessor
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **os** | **String** | this is an os id. | 
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] 
 **share** | **String** | this is the share that the asset is apart of. | 
-
-
 
 

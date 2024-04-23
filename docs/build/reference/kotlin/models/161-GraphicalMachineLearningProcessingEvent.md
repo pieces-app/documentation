@@ -1,3 +1,8 @@
+---
+title: GraphicalMachineLearningProcessingEvent | Kotlin SDK
+---
+
+
 
 # GraphicalMachineLearningProcessingEvent
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **ocr** | [**GraphicalOCRProcessing**](GraphicalOCRProcessing) |  |  [optional]
 **image** | [**GraphicalImageProcessing**](GraphicalImageProcessing) |  |  [optional]
 **svg** | [**GraphicalSVGStatistics**](GraphicalSVGStatistics) |  |  [optional]
+
 
 
 

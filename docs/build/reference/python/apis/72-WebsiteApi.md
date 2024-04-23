@@ -1,6 +1,10 @@
+---
+title: Website API | Python SDK
+---
+
 # Website API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +28,7 @@ Method | HTTP request | Description
 
 This will associate a website with a asset.
 
-### Example
+### Example {#website_associate_asset-example}
 
 
 ```python
@@ -42,7 +46,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
     website = 'website_example' # str | website id
 
@@ -55,7 +59,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_associate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +67,26 @@ Name | Type | Description  | Notes
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#website_associate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_associate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_associate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_associate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_associate_conversation** {#website_associate_conversation}
 > website_associate_conversation(website, conversation)
@@ -92,7 +95,7 @@ No authorization required
 
 This will associate a website with a conversation.
 
-### Example
+### Example {#website_associate_conversation-example}
 
 
 ```python
@@ -110,7 +113,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -123,7 +126,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_associate_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -131,27 +134,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#website_associate_conversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_associate_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_associate_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_associate_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_associate_person** {#website_associate_person}
 > website_associate_person(website, person)
@@ -160,7 +162,7 @@ No authorization required
 
 This will associate a website with a person.
 
-### Example
+### Example {#website_associate_person-example}
 
 
 ```python
@@ -178,7 +180,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     person = 'person_example' # str | This is a uuid that represents a person.
 
@@ -191,7 +193,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_associate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -199,27 +201,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#website_associate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_associate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_associate_person-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_associate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_associate_workstream_summary** {#website_associate_workstream_summary}
 > website_associate_workstream_summary(website, workstream_summary)
@@ -228,7 +229,7 @@ No authorization required
 
 This will associate a website with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#website_associate_workstream_summary-example}
 
 
 ```python
@@ -246,7 +247,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -259,7 +260,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -267,27 +268,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#website_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_disassociate_asset** {#website_disassociate_asset}
 > website_disassociate_asset(website, asset)
@@ -296,7 +296,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a asset.
 
-### Example
+### Example {#website_disassociate_asset-example}
 
 
 ```python
@@ -314,7 +314,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
@@ -327,7 +327,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -335,27 +335,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#website_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_disassociate_conversation** {#website_disassociate_conversation}
 > website_disassociate_conversation(website, conversation)
@@ -364,7 +363,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a conversation.
 
-### Example
+### Example {#website_disassociate_conversation-example}
 
 
 ```python
@@ -382,7 +381,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     conversation = 'conversation_example' # str | This is the uuid of a conversation.
 
@@ -395,7 +394,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_disassociate_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -403,27 +402,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#website_disassociate_conversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_disassociate_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_disassociate_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_disassociate_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_disassociate_person** {#website_disassociate_person}
 > website_disassociate_person(website, person)
@@ -432,7 +430,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a person.
 
-### Example
+### Example {#website_disassociate_person-example}
 
 
 ```python
@@ -450,7 +448,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     person = 'person_example' # str | This is a uuid that represents a person.
 
@@ -463,7 +461,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_disassociate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -471,27 +469,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#website_disassociate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_disassociate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_disassociate_person-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_disassociate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_disassociate_workstream_summary** {#website_disassociate_workstream_summary}
 > website_disassociate_workstream_summary(website, workstream_summary)
@@ -500,7 +497,7 @@ No authorization required
 
 This will enable us to disassociate a website from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#website_disassociate_workstream_summary-example}
 
 
 ```python
@@ -518,7 +515,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     workstream_summary = 'workstream_summary_example' # str | This is a identifier that is used to identify a specific workstream_summary.
 
@@ -531,7 +528,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -539,27 +536,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#website_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_scores_increment** {#website_scores_increment}
 > website_scores_increment(website, seeded_score_increment=seeded_score_increment)
@@ -568,7 +564,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#website_scores_increment-example}
 
 
 ```python
@@ -587,7 +583,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -600,7 +596,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -608,27 +604,26 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#website_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#website_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **website_update** {#website_update}
 > Website website_update(transferables=transferables, website=website)
@@ -637,7 +632,7 @@ No authorization required
 
 This will update a specific website.
 
-### Example
+### Example {#website_update-example}
 
 
 ```python
@@ -656,7 +651,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     website = pieces_os_client.Website() # Website |  (optional)
 
@@ -671,7 +666,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#website_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -679,27 +674,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **website** | [**Website**](../models/Website)|  | [optional] 
 
-### Return type
+### Return type {#website_update-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#website_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#website_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#website_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **websites_specific_website_snapshot** {#websites_specific_website_snapshot}
 > Website websites_specific_website_snapshot(website, transferables=transferables)
@@ -708,7 +702,7 @@ No authorization required
 
 This will get a snapshot of a single website.
 
-### Example
+### Example {#websites_specific_website_snapshot-example}
 
 
 ```python
@@ -727,7 +721,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsiteApi(api_client)
+    api_instance = Website API(api_client)
     website = 'website_example' # str | website id
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -742,7 +736,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#websites_specific_website_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -750,25 +744,24 @@ Name | Type | Description  | Notes
  **website** | **str**| website id | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#websites_specific_website_snapshot-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websites_specific_website_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websites_specific_website_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#websites_specific_website_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
-
-
 

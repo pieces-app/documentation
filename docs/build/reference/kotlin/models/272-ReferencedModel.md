@@ -1,3 +1,8 @@
+---
+title: ReferencedModel | Kotlin SDK
+---
+
+
 
 # ReferencedModel
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

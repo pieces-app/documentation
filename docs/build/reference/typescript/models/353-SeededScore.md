@@ -1,3 +1,7 @@
+---
+title: SeededScore | TypeScript SDK
+---
+
 
 # SeededScore
 
@@ -12,30 +16,5 @@ Name | Type
 **update** | **boolean**
 **reference** | **boolean**
 **priority** | **boolean**
-
-## Example
-
-```typescript
-import { SeededScore } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededScore = {
-    "schema": null,
-    "reuse": null,
-    "update": null,
-    "reference": null,
-    "priority": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededScore
-console.log(exampleParsed)
-```
 
 

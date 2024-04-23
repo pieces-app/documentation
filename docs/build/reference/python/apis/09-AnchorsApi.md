@@ -1,6 +1,10 @@
+---
+title: Anchors API | Python SDK
+---
+
 # Anchors API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will update both the asset and the anchor reference, that will remove a anchor from an asset(only the references).  This will NOT remove the anchor. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
-### Example
+### Example {#anchor_disassociate_asset-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorsApi(api_client)
+    api_instance = Anchors API(api_client)
     anchor = 'anchor_example' # str | This is the specific uuid of an anchor.
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
@@ -48,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -56,27 +60,26 @@ Name | Type | Description  | Notes
  **anchor** | **str**| This is the specific uuid of an anchor. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#anchor_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchor_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchors_create_new_anchor** {#anchors_create_new_anchor}
 > Anchor anchors_create_new_anchor(transferables=transferables, seeded_anchor=seeded_anchor)
@@ -85,7 +88,7 @@ No authorization required
 
 This will create a anchor and attach it to a specific asset(s) This will also ensure the anchor is normalized.
 
-### Example
+### Example {#anchors_create_new_anchor-example}
 
 
 ```python
@@ -105,7 +108,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorsApi(api_client)
+    api_instance = Anchors API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seeded_anchor = pieces_os_client.SeededAnchor() # SeededAnchor |  (optional)
 
@@ -120,7 +123,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchors_create_new_anchor-parameters}
 
 
 Name | Type | Description  | Notes
@@ -128,27 +131,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_anchor** | [**SeededAnchor**](../models/SeededAnchor)|  | [optional] 
 
-### Return type
+### Return type {#anchors_create_new_anchor-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchors_create_new_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchors_create_new_anchor-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchors_create_new_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchors_delete_specific_anchor** {#anchors_delete_specific_anchor}
 > anchors_delete_specific_anchor(anchor)
@@ -157,7 +159,7 @@ No authorization required
 
 This will delete a specific anchor!
 
-### Example
+### Example {#anchors_delete_specific_anchor-example}
 
 
 ```python
@@ -175,7 +177,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorsApi(api_client)
+    api_instance = Anchors API(api_client)
     anchor = 'anchor_example' # str | This is the specific uuid of an anchor.
 
     try:
@@ -187,34 +189,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchors_delete_specific_anchor-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **anchor** | **str**| This is the specific uuid of an anchor. | 
 
-### Return type
+### Return type {#anchors_delete_specific_anchor-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchors_delete_specific_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchors_delete_specific_anchor-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchors_delete_specific_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchors_snapshot** {#anchors_snapshot}
 > Anchors anchors_snapshot(transferables=transferables)
@@ -223,7 +224,7 @@ No authorization required
 
 This will get a snapshot of all your anchors.
 
-### Example
+### Example {#anchors_snapshot-example}
 
 
 ```python
@@ -242,7 +243,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorsApi(api_client)
+    api_instance = Anchors API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -256,32 +257,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchors_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchors_snapshot-return-type}
 
 [**Anchors**](../models/Anchors)
 
-### Authorization
+### Authorization {#anchors_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchors_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchors_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

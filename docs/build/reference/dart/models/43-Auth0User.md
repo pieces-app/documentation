@@ -1,9 +1,8 @@
-# Auth0User
+---
+title: Auth0User | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Auth0User
 
 ## Properties
 Name | Type | Description | Notes
@@ -27,7 +26,5 @@ Name | Type | Description | Notes
 **loginsCount** | **int** |  | [optional] 
 **blockedFor** | **List\<String\>** |  | [optional] [default to const []]
 **guardianAuthenticators** | **List\<String\>** |  | [optional] [default to const []]
-
-
 
 

@@ -1,3 +1,8 @@
+---
+title: Analysis | Kotlin SDK
+---
+
+
 
 # Analysis
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **code** | [**CodeAnalysis**](CodeAnalysis) |  |  [optional]
 **image** | [**ImageAnalysis**](ImageAnalysis) |  |  [optional]
+
 
 
 

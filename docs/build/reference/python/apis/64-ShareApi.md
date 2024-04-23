@@ -1,6 +1,10 @@
+---
+title: Share API | Python SDK
+---
+
 # Share API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#share_scores_increment-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ShareApi(api_client)
+    api_instance = Share API(api_client)
     share = 'share_example' # str | Share id
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -48,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#share_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -56,27 +60,26 @@ Name | Type | Description  | Notes
  **share** | **str**| Share id | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#share_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#share_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#share_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#share_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **share_snapshot** {#share_snapshot}
 > Share share_snapshot(share, transferables=transferables)
@@ -85,7 +88,7 @@ No authorization required
 
 Get the snapshot of a specific share.
 
-### Example
+### Example {#share_snapshot-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ShareApi(api_client)
+    api_instance = Share API(api_client)
     share = 'share_example' # str | Share id
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -119,7 +122,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#share_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -127,26 +130,25 @@ Name | Type | Description  | Notes
  **share** | **str**| Share id | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#share_snapshot-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#share_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#share_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#share_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **share_update** {#share_update}
 > Share share_update(transferables=transferables, share=share)
@@ -155,7 +157,7 @@ No authorization required
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
 
-### Example
+### Example {#share_update-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ShareApi(api_client)
+    api_instance = Share API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     share = pieces_os_client.Share() # Share | This is the Share that needs to be updated. (optional)
 
@@ -189,7 +191,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#share_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -197,24 +199,23 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **share** | [**Share**](../models/Share)| This is the Share that needs to be updated. | [optional] 
 
-### Return type
+### Return type {#share_update-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#share_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#share_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#share_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

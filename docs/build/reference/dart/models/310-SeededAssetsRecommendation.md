@@ -1,9 +1,8 @@
-# SeededAssetsRecommendation
+---
+title: SeededAssetsRecommendation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededAssetsRecommendation
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **assets** | [**Assets**](Assets) |  | 
 **interactions** | [**InteractedAssets**](InteractedAssets) |  | 
-
-
 
 

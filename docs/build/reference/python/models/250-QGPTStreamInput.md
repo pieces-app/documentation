@@ -1,3 +1,7 @@
+---
+title: QGPTStreamInput | Python SDK
+---
+
 # QGPTStreamInput
 
 This is the input for the /qgpt/stream endpoint.
@@ -13,23 +17,5 @@ Name | Type | Description | Notes
 **stop** | **bool** | This will stop the output of the current LLM | [optional] 
 **reset** | **bool** | This will fully reset all current Activity within the QGPT stream Flows. | [optional] 
 **agent** | **bool** | This will let us know if we want to run the agent routing as well, this is default to true. However if set to false you will save on processing and you will recieve null for the agentRoutes class on the QGPTStreamOutput. | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.qgpt_stream_input import QGPTStreamInput
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTStreamInput from a JSON string
-qgpt_stream_input_instance = QGPTStreamInput.from_json(json)
-# print the JSON string representation of the object
-print(QGPTStreamInput.to_json())
-
-# convert the object into a dict
-qgpt_stream_input_dict = qgpt_stream_input_instance.to_dict()
-# create an instance of QGPTStreamInput from a dict
-qgpt_stream_input_form_dict = qgpt_stream_input.from_dict(qgpt_stream_input_dict)
-```
 
 

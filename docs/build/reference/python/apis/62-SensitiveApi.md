@@ -1,6 +1,10 @@
+---
+title: Sensitive API | Python SDK
+---
+
 # Sensitive API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sensitive_scores_increment-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SensitiveApi(api_client)
+    api_instance = Sensitive API(api_client)
     sensitive = 'sensitive_example' # str | This is a uuid that represents a sensitive.
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -48,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sensitive_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -56,27 +60,26 @@ Name | Type | Description  | Notes
  **sensitive** | **str**| This is a uuid that represents a sensitive. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#sensitive_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#sensitive_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitive_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#sensitive_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **sensitive_snapshot** {#sensitive_snapshot}
 > Sensitive sensitive_snapshot(sensitive)
@@ -85,7 +88,7 @@ No authorization required
 
 This will get a specific sensitive via the sensitive uuid.
 
-### Example
+### Example {#sensitive_snapshot-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SensitiveApi(api_client)
+    api_instance = Sensitive API(api_client)
     sensitive = 'sensitive_example' # str | 
 
     try:
@@ -118,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#sensitive_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **str**|  | 
 
-### Return type
+### Return type {#sensitive_snapshot-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#sensitive_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitive_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#sensitive_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **update_sensitive** {#update_sensitive}
 > Sensitive update_sensitive(sensitive=sensitive)
@@ -154,7 +156,7 @@ No authorization required
 
 This will update a specific sensitive
 
-### Example
+### Example {#update_sensitive-example}
 
 
 ```python
@@ -173,7 +175,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.SensitiveApi(api_client)
+    api_instance = Sensitive API(api_client)
     sensitive = pieces_os_client.Sensitive() # Sensitive |  (optional)
 
     try:
@@ -187,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#update_sensitive-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | [**Sensitive**](../models/Sensitive)|  | [optional] 
 
-### Return type
+### Return type {#update_sensitive-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#update_sensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#update_sensitive-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#update_sensitive-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

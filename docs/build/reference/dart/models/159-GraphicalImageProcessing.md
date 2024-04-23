@@ -1,16 +1,13 @@
-# GraphicalImageProcessing
+---
+title: GraphicalImageProcessing | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GraphicalImageProcessing
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **statistics** | [**GraphicalImageStatistics**](GraphicalImageStatistics) |  | [optional] 
-
-
 
 

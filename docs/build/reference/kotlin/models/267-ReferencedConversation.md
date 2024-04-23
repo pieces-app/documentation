@@ -1,3 +1,8 @@
+---
+title: ReferencedConversation | Kotlin SDK
+---
+
+
 
 # ReferencedConversation
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reference** | [**FlattenedConversation**](FlattenedConversation) |  |  [optional]
+
 
 
 

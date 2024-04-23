@@ -1,3 +1,8 @@
+---
+title: TemporalRangeGrounding | Kotlin SDK
+---
+
+
 
 # TemporalRangeGrounding
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **workstreams** | [**FlattenedRanges**](FlattenedRanges) |  |  [optional]
+
 
 
 

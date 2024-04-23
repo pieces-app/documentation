@@ -1,9 +1,8 @@
-# ExportedAsset
+---
+title: ExportedAsset | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ExportedAsset
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **description** | **String** | this is the description of the asset | 
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **raw** | [**FileFormat**](FileFormat) |  | 
-
-
 
 

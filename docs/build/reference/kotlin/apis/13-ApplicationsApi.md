@@ -1,6 +1,10 @@
+---
+title: Applications API | Kotlin SDK
+---
+
 # Applications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,37 +29,37 @@ Method | HTTP request | Description
 
 Retrieves a list of external applications installed on the user&#39;s machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
 
-### Example
+### Example {#applicationsexternalrelated-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 try {
     val result : DetectedExternalApplications = apiInstance.applicationsExternalRelated()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsExternalRelated")
+    println("4xx response calling Applications API#applicationsExternalRelated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsExternalRelated")
+    println("5xx response calling Applications API#applicationsExternalRelated")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsexternalrelated-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationsexternalrelated-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applicationsexternalrelated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsexternalrelated-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -67,37 +71,37 @@ No authorization required
 
 Provides a snapshot of all external applications detected on the user&#39;s machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
 
-### Example
+### Example {#applicationsexternalsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 try {
     val result : DetectedExternalApplications = apiInstance.applicationsExternalSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsExternalSnapshot")
+    println("4xx response calling Applications API#applicationsExternalSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsExternalSnapshot")
+    println("5xx response calling Applications API#applicationsExternalSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsexternalsnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationsexternalsnapshot-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applicationsexternalsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsexternalsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -109,41 +113,41 @@ No authorization required
 
 Registers a new application within the Pieces ecosystem.
 
-### Example
+### Example {#applicationsregister-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val application : Application =  // Application | This will accept a application.
 try {
     val result : Application = apiInstance.applicationsRegister(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsRegister")
+    println("4xx response calling Applications API#applicationsRegister")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsRegister")
+    println("5xx response calling Applications API#applicationsRegister")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsregister-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**Application**](../models/Application)| This will accept a application. | [optional]
 
-### Return type
+### Return type {#applicationsregister-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationsregister-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsregister-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -155,41 +159,41 @@ No authorization required
 
 Closes an active session, identified by a session UUID, marking the end of the user&#39;s current interaction with the Pieces application.
 
-### Example
+### Example {#applicationssessionclose-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val body : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | This will accept a required session uuid.
 try {
     val result : Session = apiInstance.applicationsSessionClose(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsSessionClose")
+    println("4xx response calling Applications API#applicationsSessionClose")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsSessionClose")
+    println("5xx response calling Applications API#applicationsSessionClose")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionclose-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | **java.util.UUID**| This will accept a required session uuid. | [optional]
 
-### Return type
+### Return type {#applicationssessionclose-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionclose-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionclose-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -201,37 +205,37 @@ No authorization required
 
 Initiates a new session, marking the start of a user&#39;s interaction with the Pieces application.
 
-### Example
+### Example {#applicationssessionopen-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 try {
     val result : Session = apiInstance.applicationsSessionOpen()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsSessionOpen")
+    println("4xx response calling Applications API#applicationsSessionOpen")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsSessionOpen")
+    println("5xx response calling Applications API#applicationsSessionOpen")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionopen-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationssessionopen-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionopen-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionopen-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -243,41 +247,41 @@ No authorization required
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
 
-### Example
+### Example {#applicationssessionsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val session : kotlin.String = session_example // kotlin.String | This is a uuid that points to a session.
 try {
     val result : Session = apiInstance.applicationsSessionSnapshot(session)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsSessionSnapshot")
+    println("4xx response calling Applications API#applicationsSessionSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsSessionSnapshot")
+    println("5xx response calling Applications API#applicationsSessionSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationssessionsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **session** | **kotlin.String**| This is a uuid that points to a session. |
 
-### Return type
+### Return type {#applicationssessionsnapshot-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applicationssessionsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssessionsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -289,37 +293,37 @@ No authorization required
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
 
-### Example
+### Example {#applicationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 try {
     val result : Applications = apiInstance.applicationsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsSnapshot")
+    println("4xx response calling Applications API#applicationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsSnapshot")
+    println("5xx response calling Applications API#applicationsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#applicationssnapshot-return-type}
 
 [**Applications**](../models/Applications)
 
-### Authorization
+### Authorization {#applicationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -331,41 +335,41 @@ No authorization required
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
 
-### Example
+### Example {#applicationsspecificapplicationsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
 try {
     val result : Application = apiInstance.applicationsSpecificApplicationSnapshot(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsSpecificApplicationSnapshot")
+    println("4xx response calling Applications API#applicationsSpecificApplicationSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsSpecificApplicationSnapshot")
+    println("5xx response calling Applications API#applicationsSpecificApplicationSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsspecificapplicationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**| This is a uuid that represents an application |
 
-### Return type
+### Return type {#applicationsspecificapplicationsnapshot-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationsspecificapplicationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsspecificapplicationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -377,41 +381,41 @@ No authorization required
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
 
-### Example
+### Example {#applicationsusageengagementinteraction-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val seededTrackedInteractionEvent : SeededTrackedInteractionEvent =  // SeededTrackedInteractionEvent | 
 try {
     val result : TrackedInteractionEvent = apiInstance.applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsUsageEngagementInteraction")
+    println("4xx response calling Applications API#applicationsUsageEngagementInteraction")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsUsageEngagementInteraction")
+    println("5xx response calling Applications API#applicationsUsageEngagementInteraction")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageengagementinteraction-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededTrackedInteractionEvent** | [**SeededTrackedInteractionEvent**](../models/SeededTrackedInteractionEvent)|  | [optional]
 
-### Return type
+### Return type {#applicationsusageengagementinteraction-return-type}
 
 [**TrackedInteractionEvent**](../models/TrackedInteractionEvent)
 
-### Authorization
+### Authorization {#applicationsusageengagementinteraction-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageengagementinteraction-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -423,41 +427,41 @@ No authorization required
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
 
-### Example
+### Example {#applicationsusageengagementkeyboard-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val seededTrackedKeyboardEvent : SeededTrackedKeyboardEvent =  // SeededTrackedKeyboardEvent | 
 try {
     val result : TrackedKeyboardEvent = apiInstance.applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsUsageEngagementKeyboard")
+    println("4xx response calling Applications API#applicationsUsageEngagementKeyboard")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsUsageEngagementKeyboard")
+    println("5xx response calling Applications API#applicationsUsageEngagementKeyboard")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageengagementkeyboard-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededTrackedKeyboardEvent** | [**SeededTrackedKeyboardEvent**](../models/SeededTrackedKeyboardEvent)|  | [optional]
 
-### Return type
+### Return type {#applicationsusageengagementkeyboard-return-type}
 
 [**TrackedKeyboardEvent**](../models/TrackedKeyboardEvent)
 
-### Authorization
+### Authorization {#applicationsusageengagementkeyboard-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageengagementkeyboard-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -469,40 +473,40 @@ No authorization required
 
 Logs the installation events of the Pieces application.
 
-### Example
+### Example {#applicationsusageinstallation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val trackedApplicationInstall : TrackedApplicationInstall =  // TrackedApplicationInstall | 
 try {
     apiInstance.applicationsUsageInstallation(trackedApplicationInstall)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#applicationsUsageInstallation")
+    println("4xx response calling Applications API#applicationsUsageInstallation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#applicationsUsageInstallation")
+    println("5xx response calling Applications API#applicationsUsageInstallation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#applicationsusageinstallation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationInstall** | [**TrackedApplicationInstall**](../models/TrackedApplicationInstall)|  | [optional]
 
-### Return type
+### Return type {#applicationsusageinstallation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#applicationsusageinstallation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationsusageinstallation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -514,40 +518,40 @@ No authorization required
 
 Tracks updates to the Pieces application, including version changes.
 
-### Example
+### Example {#postapplicationsusageupdated-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ApplicationsApi()
+val apiInstance = Applications API()
 val trackedApplicationUpdate : TrackedApplicationUpdate =  // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.
 try {
     apiInstance.postApplicationsUsageUpdated(trackedApplicationUpdate)
 } catch (e: ClientException) {
-    println("4xx response calling ApplicationsApi#postApplicationsUsageUpdated")
+    println("4xx response calling Applications API#postApplicationsUsageUpdated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ApplicationsApi#postApplicationsUsageUpdated")
+    println("5xx response calling Applications API#postApplicationsUsageUpdated")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#postapplicationsusageupdated-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **trackedApplicationUpdate** | [**TrackedApplicationUpdate**](../models/TrackedApplicationUpdate)| Sending over the previous application version, the current version, and the user. | [optional]
 
-### Return type
+### Return type {#postapplicationsusageupdated-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#postapplicationsusageupdated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#postapplicationsusageupdated-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined

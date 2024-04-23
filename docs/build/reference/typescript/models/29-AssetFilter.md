@@ -1,3 +1,7 @@
+---
+title: AssetFilter | TypeScript SDK
+---
+
 
 # AssetFilter
 
@@ -16,34 +20,5 @@ Name | Type
 **created** | [**AssetFilterTimestamp**](AssetFilterTimestamp)
 **updated** | [**AssetFilterTimestamp**](AssetFilterTimestamp)
 **operations** | [**AssetFilters**](AssetFilters)
-
-## Example
-
-```typescript
-import { AssetFilter } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: AssetFilter = {
-    "schema": null,
-    "classification": null,
-    "tags": null,
-    "websites": null,
-    "persons": null,
-    "phrase": null,
-    "created": null,
-    "updated": null,
-    "operations": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as AssetFilter
-console.log(exampleParsed)
-```
 
 

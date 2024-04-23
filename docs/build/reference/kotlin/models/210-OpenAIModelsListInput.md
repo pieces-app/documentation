@@ -1,3 +1,8 @@
+---
+title: OpenAIModelsListInput | Kotlin SDK
+---
+
+
 
 # OpenAIModelsListInput
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **user** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

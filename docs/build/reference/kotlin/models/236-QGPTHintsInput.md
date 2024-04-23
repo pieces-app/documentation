@@ -1,3 +1,8 @@
+---
+title: QGPTHintsInput | Kotlin SDK
+---
+
+
 
 # QGPTHintsInput
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **answer** | [**QGPTQuestionAnswer**](QGPTQuestionAnswer) |  |  [optional]
 **application** | **kotlin.String** | optional application id |  [optional]
 **model** | **kotlin.String** | optional model id |  [optional]
+
 
 
 

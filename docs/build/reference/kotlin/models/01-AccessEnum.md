@@ -1,3 +1,8 @@
+---
+title: AccessEnum | Kotlin SDK
+---
+
+
 
 # AccessEnum
 
@@ -7,6 +12,7 @@
     * `PUBLIC` (value: `"PUBLIC"`)
 
     * `PRIVATE` (value: `"PRIVATE"`)
+
 
 
 

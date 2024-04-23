@@ -1,3 +1,8 @@
+---
+title: Relationships | Kotlin SDK
+---
+
+
 
 # Relationships
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Relationship&gt;**](Relationship) |  | 
+
 
 
 

@@ -1,3 +1,8 @@
+---
+title: FlattenedAnchor | Kotlin SDK
+---
+
+
 
 # FlattenedAnchor
 
@@ -18,6 +23,7 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

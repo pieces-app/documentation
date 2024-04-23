@@ -1,9 +1,8 @@
-# SeededModel
+---
+title: SeededModel | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededModel
 
 ## Properties
 Name | Type | Description | Notes
@@ -27,7 +26,5 @@ Name | Type | Description | Notes
 **cpu** | **bool** | This is an optional bool that is optimized for CPU usage. | [optional] 
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens) |  | [optional] 
 **custom** | **bool** | This is reserved to custommly registed models. | [optional] 
-
-
 
 

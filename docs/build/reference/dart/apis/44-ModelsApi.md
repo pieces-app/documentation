@@ -1,6 +1,10 @@
+---
+title: Models API | Dart SDK
+---
+
 # Models API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +22,7 @@ Method | HTTP request | Description
 
 Creates a machine learning model. By default, all models created through this endpoint will have the 'custom' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
-### Example
+### Example {#modelscreatenewmodel-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,26 +37,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelscreatenewmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededModel** | [**SeededModel**](../models/SeededModel)|  | [optional] 
+ **seededModel** | [**SeededModel**](../models/SeededModel) |  | [optional] 
 
-### Return type
+### Return type {#modelscreatenewmodel-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelscreatenewmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelscreatenewmodel-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **modelsDeleteSpecificModel** {#modelsdeletespecificmodel}
 > modelsDeleteSpecificModel(model)
@@ -61,7 +63,7 @@ No authorization required
 
 Deletes a specific model. It is exclusively available for custom models with the 'custom: true' attribute.
 
-### Example
+### Example {#modelsdeletespecificmodel-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -75,26 +77,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **String**| model id | 
+ **model** | **String** | model id | 
 
-### Return type
+### Return type {#modelsdeletespecificmodel-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodel-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **modelsDeleteSpecificModelCache** {#modelsdeletespecificmodelcache}
 > ModelDeleteCacheOutput modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
@@ -103,7 +103,7 @@ No authorization required
 
 Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
-### Example
+### Example {#modelsdeletespecificmodelcache-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,27 +119,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodelcache-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **model** | **String**| model id | 
- **modelDeleteCacheInput** | [**ModelDeleteCacheInput**](../models/ModelDeleteCacheInput)|  | [optional] 
+ **model** | **String** | model id | 
+ **modelDeleteCacheInput** | [**ModelDeleteCacheInput**](../models/ModelDeleteCacheInput) |  | [optional] 
 
-### Return type
+### Return type {#modelsdeletespecificmodelcache-return-type}
 
 [**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
-### Authorization
+### Authorization {#modelsdeletespecificmodelcache-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodelcache-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **modelsSnapshot** {#modelssnapshot}
 > Models modelsSnapshot()
@@ -148,7 +146,7 @@ No authorization required
 
 This will get a snapshot of all of your models.
 
-### Example
+### Example {#modelssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -162,23 +160,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#modelssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#modelssnapshot-return-type}
 
 [**Models**](../models/Models)
 
-### Authorization
+### Authorization {#modelssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **unloadModels** {#unloadmodels}
 > unloadModels()
@@ -187,7 +183,7 @@ No authorization required
 
 Unloads all available machine learning models that are unloadable.
 
-### Example
+### Example {#unloadmodels-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -200,21 +196,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#unloadmodels-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#unloadmodels-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#unloadmodels-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#unloadmodels-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 

@@ -1,3 +1,8 @@
+---
+title: FlattenedWorkstreamEvent | Kotlin SDK
+---
+
+
 
 # FlattenedWorkstreamEvent
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **score** | [**Score**](Score) |  |  [optional]
 **metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

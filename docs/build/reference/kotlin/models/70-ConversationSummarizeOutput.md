@@ -1,3 +1,8 @@
+---
+title: ConversationSummarizeOutput | Kotlin SDK
+---
+
+
 
 # ConversationSummarizeOutput
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | 
 **&#x60;annotation&#x60;** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

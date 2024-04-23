@@ -1,3 +1,7 @@
+---
+title: ConversationMessageSentimentEnum | Python SDK
+---
+
 # ConversationMessageSentimentEnum
 
 This will describe the sentiment of a specific message ie if the message was liked/disliked/reported
@@ -6,6 +10,5 @@ This will describe the sentiment of a specific message ie if the message was lik
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

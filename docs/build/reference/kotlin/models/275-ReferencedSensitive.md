@@ -1,3 +1,8 @@
+---
+title: ReferencedSensitive | Kotlin SDK
+---
+
+
 
 # ReferencedSensitive
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reference** | [**FlattenedSensitive**](FlattenedSensitive) |  |  [optional]
+
 
 
 

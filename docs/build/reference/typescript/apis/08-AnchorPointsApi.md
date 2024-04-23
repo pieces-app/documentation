@@ -1,6 +1,10 @@
+---
+title: AnchorPoints API | TypeScript SDK
+---
+
 # AnchorPoints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will create a anchorPoint.
 
-### Example
+### Example {#anchorpointscreatenewanchorpoint-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -23,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsCreateNewAnchorPointRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // SeededAnchorPoint (optional)
-    seededAnchorPoint: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// SeededAnchorPoint (optional)
+seededAnchorPoint: ,
 };
 
 apiInstance.anchorPointsCreateNewAnchorPoint(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointscreatenewanchorpoint-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +47,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointscreatenewanchorpoint-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointscreatenewanchorpoint-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointscreatenewanchorpoint-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +68,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific anchorPoint!
 
-### Example
+### Example {#anchorpointsdeletespecificanchorpoint-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -72,33 +77,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsDeleteSpecificAnchorPointRequest = {
-    // string | This is the specific uuid of an anchor_point.
-    anchorPoint: anchorPoint_example,
+// string | This is the specific uuid of an anchor_point.
+anchorPoint: anchorPoint_example,
 };
 
 apiInstance.anchorPointsDeleteSpecificAnchorPoint(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointsdeletespecificanchorpoint-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointsdeletespecificanchorpoint-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointsdeletespecificanchorpoint-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointsdeletespecificanchorpoint-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -109,7 +115,7 @@ void (empty response body)
 
 This will get a snapshot of all your anchorPoints.
 
-### Example
+### Example {#anchorpointssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -118,33 +124,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointsApi(configuration)
 
 const body: Pieces.AnchorPointsSnapshotRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.anchorPointsSnapshot(body).then((data: AnchorPoints) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointssnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointssnapshot-return-type}
 
 [**AnchorPoints**](../models/AnchorPoints)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

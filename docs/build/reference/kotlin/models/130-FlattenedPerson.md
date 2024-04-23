@@ -1,3 +1,8 @@
+---
+title: FlattenedPerson | Kotlin SDK
+---
+
+
 
 # FlattenedPerson
 
@@ -20,6 +25,7 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

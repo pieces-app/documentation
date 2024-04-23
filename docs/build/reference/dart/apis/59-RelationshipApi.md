@@ -1,6 +1,10 @@
+---
+title: Relationship API | Dart SDK
+---
+
 # Relationship API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will return a single relationship object.
 
-### Example
+### Example {#relationshipsspecificrelationshipsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -29,24 +33,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#relationshipsspecificrelationshipsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **relationship** | **String**| this is a specific relationship uuid. | 
+ **relationship** | **String** | this is a specific relationship uuid. | 
 
-### Return type
+### Return type {#relationshipsspecificrelationshipsnapshot-return-type}
 
 [**Relationship**](../models/Relationship)
 
-### Authorization
+### Authorization {#relationshipsspecificrelationshipsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#relationshipsspecificrelationshipsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 

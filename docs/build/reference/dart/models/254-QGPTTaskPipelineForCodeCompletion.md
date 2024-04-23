@@ -1,16 +1,13 @@
-# QGPTTaskPipelineForCodeCompletion
+---
+title: QGPTTaskPipelineForCodeCompletion | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTTaskPipelineForCodeCompletion
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **context** | **List\<String\>** |  | [optional] [default to const []]
-
-
 
 

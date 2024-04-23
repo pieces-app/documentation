@@ -1,3 +1,7 @@
+---
+title: QGPTTaskPipeline | TypeScript SDK
+---
+
 
 # QGPTTaskPipeline
 
@@ -13,31 +17,5 @@ Name | Type
 **codeFix** | [**QGPTTaskPipelineForCodeFix**](QGPTTaskPipelineForCodeFix)
 **codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification)
 **codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion)
-
-## Example
-
-```typescript
-import { QGPTTaskPipeline } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: QGPTTaskPipeline = {
-    "schema": null,
-    "codeExplanation": null,
-    "codeCommentation": null,
-    "codeFix": null,
-    "codeModification": null,
-    "codeCompletion": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as QGPTTaskPipeline
-console.log(exampleParsed)
-```
 
 

@@ -1,9 +1,8 @@
-# SeededFragment
+---
+title: SeededFragment | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededFragment
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **string** | [**TransferableString**](TransferableString) |  | [optional] 
 **bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] 
 **metadata** | [**FragmentMetadata**](FragmentMetadata) |  | [optional] 
-
-
 
 

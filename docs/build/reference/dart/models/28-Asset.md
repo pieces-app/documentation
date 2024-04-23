@@ -1,9 +1,8 @@
-# Asset
+---
+title: Asset | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Asset
 
 ## Properties
 Name | Type | Description | Notes
@@ -38,7 +37,5 @@ Name | Type | Description | Notes
 **conversations** | [**Conversations**](Conversations) |  | [optional] 
 **summaries** | [**WorkstreamSummaries**](WorkstreamSummaries) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a 'demo' snippet | [optional] 
-
-
 
 

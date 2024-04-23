@@ -1,3 +1,8 @@
+---
+title: SeededTrackedKeyboardEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedKeyboardEvent
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **shortcut** | **kotlin.collections.List&lt;kotlin.Int&gt;** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **identifierDescriptionPair** | [**SeededTrackedKeyboardEventIdentifierDescriptionPairs**](SeededTrackedKeyboardEventIdentifierDescriptionPairs) |  |  [optional]
+
 
 
 

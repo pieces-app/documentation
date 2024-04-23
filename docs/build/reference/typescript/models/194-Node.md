@@ -1,3 +1,7 @@
+---
+title: Node | TypeScript SDK
+---
+
 
 # Node
 
@@ -11,29 +15,5 @@ Name | Type
 **type** | [**NodeTypeEnum**](NodeTypeEnum)
 **root** | **boolean**
 **created** | [**GroupedTimestamp**](GroupedTimestamp)
-
-## Example
-
-```typescript
-import { Node } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Node = {
-    "id": null,
-    "type": null,
-    "root": null,
-    "created": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Node
-console.log(exampleParsed)
-```
 
 

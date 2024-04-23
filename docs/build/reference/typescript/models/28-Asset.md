@@ -1,3 +1,7 @@
+---
+title: Asset | TypeScript SDK
+---
+
 
 # Asset
 
@@ -37,55 +41,5 @@ Name | Type
 **conversations** | [**Conversations**](Conversations)
 **summaries** | [**WorkstreamSummaries**](WorkstreamSummaries)
 **demo** | **boolean**
-
-## Example
-
-```typescript
-import { Asset } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Asset = {
-    "schema": null,
-    "id": 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    "name": null,
-    "creator": 497f6eca-6276-4993-bfeb-53cbbbba6f08,
-    "created": null,
-    "updated": null,
-    "synced": null,
-    "deleted": null,
-    "formats": null,
-    "preview": null,
-    "original": null,
-    "shares": null,
-    "mechanism": null,
-    "websites": null,
-    "interacted": null,
-    "tags": null,
-    "sensitives": null,
-    "persons": null,
-    "curated": null,
-    "discovered": null,
-    "activities": null,
-    "score": null,
-    "favorited": null,
-    "pseudo": null,
-    "annotations": null,
-    "hints": null,
-    "anchors": null,
-    "conversations": null,
-    "summaries": null,
-    "demo": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Asset
-console.log(exampleParsed)
-```
 
 

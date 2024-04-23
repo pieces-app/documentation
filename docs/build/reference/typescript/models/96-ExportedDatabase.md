@@ -1,3 +1,7 @@
+---
+title: ExportedDatabase | TypeScript SDK
+---
+
 
 # ExportedDatabase
 
@@ -37,56 +41,5 @@ Name | Type
 **workstreamSummaries** | **Array&lt;number&gt;**
 **messageValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats)
 **workstreamEventValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats)
-
-## Example
-
-```typescript
-import { ExportedDatabase } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: ExportedDatabase = {
-    "analyses": null,
-    "applications": null,
-    "assets": null,
-    "codeAnalyses": null,
-    "files": null,
-    "formatMetrics": null,
-    "formats": null,
-    "fragments": null,
-    "imageAnalyses": null,
-    "models": null,
-    "ocrAnalyses": null,
-    "persons": null,
-    "sensitives": null,
-    "tags": null,
-    "websites": null,
-    "values": null,
-    "version": null,
-    "schema": null,
-    "relationships": null,
-    "activities": null,
-    "annotations": null,
-    "hints": null,
-    "anchors": null,
-    "anchorPoints": null,
-    "conversations": null,
-    "conversationMessages": null,
-    "workstreamEvents": null,
-    "ranges": null,
-    "workstreamSummaries": null,
-    "messageValues": null,
-    "workstreamEventValues": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ExportedDatabase
-console.log(exampleParsed)
-```
 
 

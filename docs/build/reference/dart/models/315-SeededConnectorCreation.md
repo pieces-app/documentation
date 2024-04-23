@@ -1,16 +1,13 @@
-# SeededConnectorCreation
+---
+title: SeededConnectorCreation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededConnectorCreation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **asset** | [**SeededConnectorAsset**](SeededConnectorAsset) |  | [optional] 
-
-
 
 

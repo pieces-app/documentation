@@ -1,3 +1,7 @@
+---
+title: SeededPerson | TypeScript SDK
+---
+
 
 # SeededPerson
 
@@ -14,32 +18,5 @@ Name | Type
 **type** | [**PersonType**](PersonType)
 **model** | [**PersonModel**](PersonModel)
 **annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
-
-## Example
-
-```typescript
-import { SeededPerson } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededPerson = {
-    "schema": null,
-    "asset": null,
-    "mechanism": null,
-    "access": null,
-    "type": null,
-    "model": null,
-    "annotations": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededPerson
-console.log(exampleParsed)
-```
 
 

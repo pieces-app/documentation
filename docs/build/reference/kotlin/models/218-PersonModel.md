@@ -1,3 +1,8 @@
+---
+title: PersonModel | Kotlin SDK
+---
+
+
 
 # PersonModel
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **model** | [**ReferencedModel**](ReferencedModel) |  |  [optional]
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
 **explanation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  |  [optional]
+
 
 
 

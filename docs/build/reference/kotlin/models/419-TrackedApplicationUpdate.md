@@ -1,13 +1,19 @@
+---
+title: TrackedApplicationUpdate | Kotlin SDK
+---
+
+
 
 # TrackedApplicationUpdate
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**current** | [**TrackedApplication**](TrackedApplication) |  | 
+**current** | [**Application**](Application) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**previous** | [**TrackedApplication**](TrackedApplication) |  |  [optional]
+**previous** | [**Application**](Application) |  |  [optional]
 **user** | [**TrackedUserProfile**](TrackedUserProfile) |  |  [optional]
+
 
 
 

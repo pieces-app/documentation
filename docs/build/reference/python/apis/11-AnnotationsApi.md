@@ -1,6 +1,10 @@
+---
+title: Annotations API | Python SDK
+---
+
 # Annotations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will create an annotation.
 
-### Example
+### Example {#annotations_create_new_annotation-example}
 
 
 ```python
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     seeded_annotation = pieces_os_client.SeededAnnotation() # SeededAnnotation |  (optional)
 
     try:
@@ -50,34 +54,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotations_create_new_annotation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_annotation** | [**SeededAnnotation**](../models/SeededAnnotation)|  | [optional] 
 
-### Return type
+### Return type {#annotations_create_new_annotation-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotations_create_new_annotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotations_create_new_annotation-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotations_create_new_annotation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **annotations_delete_specific_annotation** {#annotations_delete_specific_annotation}
 > annotations_delete_specific_annotation(annotation)
@@ -86,7 +89,7 @@ No authorization required
 
 this will delete a specific annotation
 
-### Example
+### Example {#annotations_delete_specific_annotation-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
 
     try:
@@ -116,34 +119,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotations_delete_specific_annotation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | **str**| This is a specific annotation uuid. | 
 
-### Return type
+### Return type {#annotations_delete_specific_annotation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#annotations_delete_specific_annotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotations_delete_specific_annotation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotations_delete_specific_annotation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **annotations_snapshot** {#annotations_snapshot}
 > Annotations annotations_snapshot(annotation_type_filter=annotation_type_filter)
@@ -152,7 +154,7 @@ No authorization required
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.
 
-### Example
+### Example {#annotations_snapshot-example}
 
 
 ```python
@@ -171,7 +173,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnnotationsApi(api_client)
+    api_instance = Annotations API(api_client)
     annotation_type_filter = 'annotation_type_filter_example' # str | This is an AnnotationTypeEnum as a optional filter. (optional)
 
     try:
@@ -185,32 +187,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotations_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation_type_filter** | **str**| This is an AnnotationTypeEnum as a optional filter. | [optional] 
 
-### Return type
+### Return type {#annotations_snapshot-return-type}
 
 [**Annotations**](../models/Annotations)
 
-### Authorization
+### Authorization {#annotations_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotations_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotations_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

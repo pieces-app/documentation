@@ -1,3 +1,8 @@
+---
+title: SearchedAsset | Kotlin SDK
+---
+
+
 
 # SearchedAsset
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **asset** | [**Asset**](Asset) |  |  [optional]
 **pseudo** | **kotlin.Boolean** | If this is a pseudo asset that was also returned. |  [optional]
+
 
 
 

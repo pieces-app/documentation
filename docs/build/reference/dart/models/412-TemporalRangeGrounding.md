@@ -1,15 +1,12 @@
-# TemporalRangeGrounding
+---
+title: TemporalRangeGrounding | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TemporalRangeGrounding
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **workstreams** | [**FlattenedRanges**](FlattenedRanges) |  | [optional] 
-
-
 
 

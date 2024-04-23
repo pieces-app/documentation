@@ -1,3 +1,7 @@
+---
+title: ClassificationGenericEnum | Python SDK
+---
+
 # ClassificationGenericEnum
 
 EXTERNAL_RESOURCE_REFERENCE can be thought of as anything such as URL, URI, UNIX PATH, etc
@@ -6,6 +10,5 @@ EXTERNAL_RESOURCE_REFERENCE can be thought of as anything such as URL, URI, UNIX
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

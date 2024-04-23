@@ -1,3 +1,7 @@
+---
+title: TLPCodeFragmentDescriptiveStatistics | TypeScript SDK
+---
+
 
 # TLPCodeFragmentDescriptiveStatistics
 
@@ -17,35 +21,5 @@ Name | Type
 **asset** | **string**
 **context** | **string**
 **snippet** | **string**
-
-## Example
-
-```typescript
-import { TLPCodeFragmentDescriptiveStatistics } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: TLPCodeFragmentDescriptiveStatistics = {
-    "schema": null,
-    "user": null,
-    "os": null,
-    "language": null,
-    "length": null,
-    "ast": null,
-    "timestamp": null,
-    "asset": null,
-    "context": null,
-    "snippet": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as TLPCodeFragmentDescriptiveStatistics
-console.log(exampleParsed)
-```
 
 

@@ -1,3 +1,8 @@
+---
+title: AssetSearchSpace | Kotlin SDK
+---
+
+
 
 # AssetSearchSpace
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifers** | [**FlattenedAssets**](FlattenedAssets) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

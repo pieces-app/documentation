@@ -1,6 +1,10 @@
+---
+title: Hints API | Kotlin SDK
+---
+
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,41 +20,41 @@ Method | HTTP request | Description
 
 This will create a hint.
 
-### Example
+### Example {#hintscreatenewhint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 val seededHint : SeededHint =  // SeededHint | 
 try {
     val result : Hint = apiInstance.hintsCreateNewHint(seededHint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsCreateNewHint")
+    println("4xx response calling Hints API#hintsCreateNewHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsCreateNewHint")
+    println("5xx response calling Hints API#hintsCreateNewHint")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintscreatenewhint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional]
 
-### Return type
+### Return type {#hintscreatenewhint-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintscreatenewhint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintscreatenewhint-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -62,43 +66,43 @@ No authorization required
 
 This will delete a specific hint.
 
-### Example
+### Example {#hintsdeletespecifichint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     apiInstance.hintsDeleteSpecificHint(hint)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsDeleteSpecificHint")
+    println("4xx response calling Hints API#hintsDeleteSpecificHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsDeleteSpecificHint")
+    println("5xx response calling Hints API#hintsDeleteSpecificHint")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintsdeletespecifichint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **kotlin.String**| This is a specific hint uuid |
 
-### Return type
+### Return type {#hintsdeletespecifichint-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#hintsdeletespecifichint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintsdeletespecifichint-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
@@ -107,37 +111,37 @@ No authorization required
 
 This will get a snapshot of all of the hints.
 
-### Example
+### Example {#hintssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = HintsApi()
+val apiInstance = Hints API()
 try {
     val result : Hints = apiInstance.hintsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling HintsApi#hintsSnapshot")
+    println("4xx response calling Hints API#hintsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling HintsApi#hintsSnapshot")
+    println("5xx response calling Hints API#hintsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#hintssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#hintssnapshot-return-type}
 
 [**Hints**](../models/Hints)
 
-### Authorization
+### Authorization {#hintssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

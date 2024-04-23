@@ -1,6 +1,10 @@
+---
+title: Backup API | TypeScript SDK
+---
+
 # Backup API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +24,7 @@ Method | HTTP request | Description
 
 
 
-### Example
+### Example {#backup-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -29,33 +33,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRequest = {
-    // Assets (optional)
-    assets: ,
+// Assets (optional)
+assets: ,
 };
 
 apiInstance.backup(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backup-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assets** | **Assets**|  |
 
 
-### Return type
+### Return type {#backup-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#backup-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#backup-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -66,7 +71,7 @@ void (empty response body)
 > backupAsset()
 
 
-### Example
+### Example {#backupasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -75,33 +80,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupAssetRequest = {
-    // Asset (optional)
-    asset: ,
+// Asset (optional)
+asset: ,
 };
 
 apiInstance.backupAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **Asset**|  |
 
 
-### Return type
+### Return type {#backupasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#backupasset-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -113,7 +119,7 @@ void (empty response body)
 
 Given a backup identifier version_timestamp.  we will restore a given backup from the cloud and override your local database!!!  NOTE!!!! This will NOT sync, ie all local snippets will get replaced with the restored database.
 
-### Example
+### Example {#backuprestorespecificbackup-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -122,18 +128,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
-    // Backup (optional)
-    backup2: ,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
+// Backup (optional)
+backup2: ,
 };
 
 apiInstance.backupRestoreSpecificBackup(body).then((data: Backup) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backuprestorespecificbackup-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -141,17 +148,17 @@ Name | Type | Description  | Notes
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backuprestorespecificbackup-return-type}
 
 [**Backup**](../models/Backup)
 
-### HTTP request headers
+### HTTP request headers {#backuprestorespecificbackup-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#backuprestorespecificbackup-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -164,7 +171,7 @@ Name | Type | Description  | Notes
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
-### Example
+### Example {#backuprestorespecificbackupstreamed-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -173,18 +180,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupRestoreSpecificBackupStreamedRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
-    // Backup (optional)
-    backup2: ,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
+// Backup (optional)
+backup2: ,
 };
 
 apiInstance.backupRestoreSpecificBackupStreamed(body).then((data: BackupStreamedProgress) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backuprestorespecificbackupstreamed-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -192,17 +200,17 @@ Name | Type | Description  | Notes
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backuprestorespecificbackupstreamed-return-type}
 
 [**BackupStreamedProgress**](../models/BackupStreamedProgress)
 
-### HTTP request headers
+### HTTP request headers {#backuprestorespecificbackupstreamed-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#backuprestorespecificbackupstreamed-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -215,7 +223,7 @@ Name | Type | Description  | Notes
 
 This will just get the metadata associated with a specific backup.
 
-### Example
+### Example {#backupspecificbackupsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -224,33 +232,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificBackupSnapshotRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
 };
 
 apiInstance.backupSpecificBackupSnapshot(body).then((data: Backup) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupspecificbackupsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backupspecificbackupsnapshot-return-type}
 
 [**Backup**](../models/Backup)
 
-### HTTP request headers
+### HTTP request headers {#backupspecificbackupsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupspecificbackupsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -263,7 +272,7 @@ Name | Type | Description  | Notes
 
 This is Going to cancel a create backup (streamed) or not streamed that is currently in progress.  This will throw a 500 if there is not a backup in progress.  TODO: ADD mofe DESCRIPITON To this.
 
-### Example
+### Example {#backupspecificcreationcancel-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -272,33 +281,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificCreationCancelRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
 };
 
 apiInstance.backupSpecificCreationCancel(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupspecificcreationcancel-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backupspecificcreationcancel-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#backupspecificcreationcancel-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupspecificcreationcancel-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -309,7 +319,7 @@ void (empty response body)
 
 TODO add a description:
 
-### Example
+### Example {#backupspecificcreationstatus-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -318,33 +328,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificCreationStatusRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
 };
 
 apiInstance.backupSpecificCreationStatus(body).then((data: BackupStatus) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupspecificcreationstatus-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backupspecificcreationstatus-return-type}
 
 [**BackupStatus**](../models/BackupStatus)
 
-### HTTP request headers
+### HTTP request headers {#backupspecificcreationstatus-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupspecificcreationstatus-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -356,7 +367,7 @@ Name | Type | Description  | Notes
 
 This will cancel a Restoration that is in progress and restore to the original database.  Note: if there is not a restore in progress we will return a 500.  TODO add
 
-### Example
+### Example {#backupspecificrestorationcancel-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -365,18 +376,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificRestorationCancelRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
-    // Backup (optional)
-    backup2: ,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
+// Backup (optional)
+backup2: ,
 };
 
 apiInstance.backupSpecificRestorationCancel(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupspecificrestorationcancel-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -384,17 +396,17 @@ Name | Type | Description  | Notes
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backupspecificrestorationcancel-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#backupspecificrestorationcancel-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupspecificrestorationcancel-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -405,7 +417,7 @@ void (empty response body)
 
 TODO add a description:
 
-### Example
+### Example {#backupspecificrestorationstatus-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -414,33 +426,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.BackupApi(configuration)
 
 const body: Pieces.BackupSpecificRestorationStatusRequest = {
-    // string | This is a identifier that is used to identify a specific backup.(version_timestamp)
-    backup: backup_example,
+// string | This is a identifier that is used to identify a specific backup.(version_timestamp)
+backup: backup_example,
 };
 
 apiInstance.backupSpecificRestorationStatus(body).then((data: BackupStatus) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#backupspecificrestorationstatus-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | [**string**] | This is a identifier that is used to identify a specific backup.(version_timestamp) | defaults to undefined
 
 
-### Return type
+### Return type {#backupspecificrestorationstatus-return-type}
 
 [**BackupStatus**](../models/BackupStatus)
 
-### HTTP request headers
+### HTTP request headers {#backupspecificrestorationstatus-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#backupspecificrestorationstatus-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

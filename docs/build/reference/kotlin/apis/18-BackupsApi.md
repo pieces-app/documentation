@@ -1,6 +1,10 @@
+---
+title: Backups API | Kotlin SDK
+---
+
 # Backups API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,41 +21,41 @@ Method | HTTP request | Description
 
 This take a local database and ensure that it is backed up to the cloud.
 
-### Example
+### Example {#backupscreatenewbackup-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val seededBackup : SeededBackup =  // SeededBackup | 
 try {
     val result : Backup = apiInstance.backupsCreateNewBackup(seededBackup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsCreateNewBackup")
+    println("4xx response calling Backups API#backupsCreateNewBackup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsCreateNewBackup")
+    println("5xx response calling Backups API#backupsCreateNewBackup")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#backupscreatenewbackup-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
 
-### Return type
+### Return type {#backupscreatenewbackup-return-type}
 
 [**Backup**](../models/Backup)
 
-### Authorization
+### Authorization {#backupscreatenewbackup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backupscreatenewbackup-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -63,41 +67,41 @@ No authorization required
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
-### Example
+### Example {#backupscreatenewbackupstreamed-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val seededBackup : SeededBackup =  // SeededBackup | 
 try {
     val result : BackupStreamedProgress = apiInstance.backupsCreateNewBackupStreamed(seededBackup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsCreateNewBackupStreamed")
+    println("4xx response calling Backups API#backupsCreateNewBackupStreamed")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsCreateNewBackupStreamed")
+    println("5xx response calling Backups API#backupsCreateNewBackupStreamed")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#backupscreatenewbackupstreamed-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededBackup** | [**SeededBackup**](../models/SeededBackup)|  | [optional]
 
-### Return type
+### Return type {#backupscreatenewbackupstreamed-return-type}
 
 [**BackupStreamedProgress**](../models/BackupStreamedProgress)
 
-### Authorization
+### Authorization {#backupscreatenewbackupstreamed-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backupscreatenewbackupstreamed-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -109,45 +113,45 @@ No authorization required
 
 This will delete a specific backup from the cloud.
 
-### Example
+### Example {#backupsdeletespecificbackup-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 val backup2 : Backup =  // Backup | 
 try {
     apiInstance.backupsDeleteSpecificBackup(backup, backup2)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsDeleteSpecificBackup")
+    println("4xx response calling Backups API#backupsDeleteSpecificBackup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsDeleteSpecificBackup")
+    println("5xx response calling Backups API#backupsDeleteSpecificBackup")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#backupsdeletespecificbackup-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **backup** | **kotlin.String**| This is a identifier that is used to identify a specific backup.(version_timestamp) |
  **backup2** | [**Backup**](../models/Backup)|  | [optional]
 
-### Return type
+### Return type {#backupsdeletespecificbackup-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#backupsdeletespecificbackup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backupsdeletespecificbackup-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **backupsSnapshot** {#backupssnapshot}
 > Backups backupsSnapshot()
@@ -156,37 +160,37 @@ No authorization required
 
 This will get a snapshot of Backsup within the cloud.  This endpoint requires our user to be authenticated and connected to the cloud.
 
-### Example
+### Example {#backupssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = BackupsApi()
+val apiInstance = Backups API()
 try {
     val result : Backups = apiInstance.backupsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling BackupsApi#backupsSnapshot")
+    println("4xx response calling Backups API#backupsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling BackupsApi#backupsSnapshot")
+    println("5xx response calling Backups API#backupsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#backupssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#backupssnapshot-return-type}
 
 [**Backups**](../models/Backups)
 
-### Authorization
+### Authorization {#backupssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backupssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

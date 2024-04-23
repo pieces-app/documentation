@@ -1,3 +1,8 @@
+---
+title: SearchedMatchEnum | Kotlin SDK
+---
+
+
 
 # SearchedMatchEnum
 
@@ -21,6 +26,7 @@
     * `WEBSITES` (value: `"WEBSITES"`)
 
     * `PERSONS` (value: `"PERSONS"`)
+
 
 
 

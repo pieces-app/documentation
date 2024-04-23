@@ -1,3 +1,8 @@
+---
+title: WorkstreamPatternEngineStatus | Kotlin SDK
+---
+
+
 
 # WorkstreamPatternEngineStatus
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **vision** | [**WorkstreamPatternEngineVisionStatus**](WorkstreamPatternEngineVisionStatus) |  |  [optional]
+
 
 
 

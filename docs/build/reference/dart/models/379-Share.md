@@ -1,9 +1,8 @@
-# Share
+---
+title: Share | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Share
 
 ## Properties
 Name | Type | Description | Notes
@@ -21,7 +20,5 @@ Name | Type | Description | Notes
 **name** | **String** | this is an optional name we can give to the link, ie ?p=JAVASCRIPT or what ever the user wants as long as it is available. | [optional] 
 **distributions** | [**Distributions**](Distributions) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

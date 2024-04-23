@@ -1,3 +1,8 @@
+---
+title: SeededTrackedFormatEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedFormatEvent
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **format** | [**ReferencedFormat**](ReferencedFormat) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata) |  |  [optional]
+
 
 
 

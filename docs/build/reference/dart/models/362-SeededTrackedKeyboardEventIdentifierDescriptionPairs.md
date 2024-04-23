@@ -1,16 +1,13 @@
-# SeededTrackedKeyboardEventIdentifierDescriptionPairs
+---
+title: SeededTrackedKeyboardEventIdentifierDescriptionPairs | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededTrackedKeyboardEventIdentifierDescriptionPairs
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **assetsListRefreshed** | **String** |  | [optional] 
-
-
 
 

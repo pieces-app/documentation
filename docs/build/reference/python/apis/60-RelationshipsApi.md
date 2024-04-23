@@ -1,6 +1,10 @@
+---
+title: Relationships API | Python SDK
+---
+
 # Relationships API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will return all of the relationships that exists within your pieces db.
 
-### Example
+### Example {#relationships_snapshot-example}
 
 
 ```python
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RelationshipsApi(api_client)
+    api_instance = Relationships API(api_client)
 
     try:
         # /relationships [GET]
@@ -46,29 +50,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#relationships_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#relationships_snapshot-return-type}
 
 [**Relationships**](../models/Relationships)
 
-### Authorization
+### Authorization {#relationships_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#relationships_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#relationships_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

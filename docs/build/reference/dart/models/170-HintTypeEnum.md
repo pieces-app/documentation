@@ -1,14 +1,11 @@
-# HintTypeEnum
+---
+title: HintTypeEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# HintTypeEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

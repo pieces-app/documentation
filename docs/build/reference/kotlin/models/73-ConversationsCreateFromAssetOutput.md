@@ -1,3 +1,8 @@
+---
+title: ConversationsCreateFromAssetOutput | Kotlin SDK
+---
+
+
 
 # ConversationsCreateFromAssetOutput
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

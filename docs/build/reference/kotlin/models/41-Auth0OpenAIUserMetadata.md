@@ -1,3 +1,8 @@
+---
+title: Auth0OpenAIUserMetadata | Kotlin SDK
+---
+
+
 
 # Auth0OpenAIUserMetadata
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **apiKey** | **kotlin.String** |  |  [optional]
 **apiKeyName** | **kotlin.String** |  |  [optional]
 **organizationKey** | **kotlin.String** |  |  [optional]
+
 
 
 

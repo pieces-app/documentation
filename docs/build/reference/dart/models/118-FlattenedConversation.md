@@ -1,9 +1,8 @@
-# FlattenedConversation
+---
+title: FlattenedConversation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedConversation
 
 ## Properties
 Name | Type | Description | Notes
@@ -28,7 +27,5 @@ Name | Type | Description | Notes
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] 
 **demo** | **bool** | This will let us know if this conversation was generated as a 'demo' conversation | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-
 
 

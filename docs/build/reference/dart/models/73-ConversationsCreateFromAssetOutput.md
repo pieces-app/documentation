@@ -1,16 +1,13 @@
-# ConversationsCreateFromAssetOutput
+---
+title: ConversationsCreateFromAssetOutput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ConversationsCreateFromAssetOutput
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | 
-
-
 
 

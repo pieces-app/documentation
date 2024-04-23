@@ -1,6 +1,10 @@
+---
+title: WorkstreamPatternEngine API | Python SDK
+---
+
 # WorkstreamPatternEngine API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will activate your Workstream Pattern Engine. This is used to aggregate information on your user's desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstream_pattern_engine_processors_vision_activate-example}
 
 
 ```python
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WorkstreamPatternEngineApi(api_client)
+    api_instance = WorkstreamPatternEngine API(api_client)
     workstream_pattern_engine_status = pieces_os_client.WorkstreamPatternEngineStatus() # WorkstreamPatternEngineStatus |  (optional)
 
     try:
@@ -50,35 +54,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_pattern_engine_processors_vision_activate-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstream_pattern_engine_status** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional] 
 
-### Return type
+### Return type {#workstream_pattern_engine_processors_vision_activate-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstream_pattern_engine_processors_vision_activate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_pattern_engine_processors_vision_activate-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_pattern_engine_processors_vision_activate-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **403** | Forbidden, this is not available for non-beta used until mid to late April. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_pattern_engine_processors_vision_data_clear** {#workstream_pattern_engine_processors_vision_data_clear}
 > workstream_pattern_engine_processors_vision_data_clear(workstream_pattern_engine_data_cleanup_request=workstream_pattern_engine_data_cleanup_request)
@@ -87,7 +90,7 @@ No authorization required
 
 This will clear the data for the Workstream Pattern Engine, specifically for our vision data.  This boy will accept ranges of time that the user wants to remove the processing from.
 
-### Example
+### Example {#workstream_pattern_engine_processors_vision_data_clear-example}
 
 
 ```python
@@ -106,7 +109,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WorkstreamPatternEngineApi(api_client)
+    api_instance = WorkstreamPatternEngine API(api_client)
     workstream_pattern_engine_data_cleanup_request = pieces_os_client.WorkstreamPatternEngineDataCleanupRequest() # WorkstreamPatternEngineDataCleanupRequest |  (optional)
 
     try:
@@ -118,35 +121,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_pattern_engine_processors_vision_data_clear-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstream_pattern_engine_data_cleanup_request** | [**WorkstreamPatternEngineDataCleanupRequest**](../models/WorkstreamPatternEngineDataCleanupRequest)|  | [optional] 
 
-### Return type
+### Return type {#workstream_pattern_engine_processors_vision_data_clear-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_pattern_engine_processors_vision_data_clear-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_pattern_engine_processors_vision_data_clear-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_pattern_engine_processors_vision_data_clear-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **403** | Forbidden, this is not available for non-beta used until mid to late April. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_pattern_engine_processors_vision_deactivate** {#workstream_pattern_engine_processors_vision_deactivate}
 > WorkstreamPatternEngineStatus workstream_pattern_engine_processors_vision_deactivate(workstream_pattern_engine_status=workstream_pattern_engine_status)
@@ -155,7 +157,7 @@ No authorization required
 
 This will deactivate your Workstream Pattern Engine. This is used to aggregate information on your user's desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstream_pattern_engine_processors_vision_deactivate-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WorkstreamPatternEngineApi(api_client)
+    api_instance = WorkstreamPatternEngine API(api_client)
     workstream_pattern_engine_status = pieces_os_client.WorkstreamPatternEngineStatus() # WorkstreamPatternEngineStatus |  (optional)
 
     try:
@@ -188,35 +190,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_pattern_engine_processors_vision_deactivate-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstream_pattern_engine_status** | [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)|  | [optional] 
 
-### Return type
+### Return type {#workstream_pattern_engine_processors_vision_deactivate-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstream_pattern_engine_processors_vision_deactivate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_pattern_engine_processors_vision_deactivate-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_pattern_engine_processors_vision_deactivate-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **403** | Forbidden, this is not available for non-beta used until mid to late April. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_pattern_engine_processors_vision_status** {#workstream_pattern_engine_processors_vision_status}
 > WorkstreamPatternEngineStatus workstream_pattern_engine_processors_vision_status()
@@ -225,7 +226,7 @@ No authorization required
 
 This will get a snapshot of the status your Workstream Pattern Engine. This is used to aggregate information on your user's desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
-### Example
+### Example {#workstream_pattern_engine_processors_vision_status-example}
 
 
 ```python
@@ -244,7 +245,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WorkstreamPatternEngineApi(api_client)
+    api_instance = WorkstreamPatternEngine API(api_client)
 
     try:
         # /workstream_pattern_engine/processors/vision/status [GET]
@@ -257,30 +258,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_pattern_engine_processors_vision_status-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#workstream_pattern_engine_processors_vision_status-return-type}
 
 [**WorkstreamPatternEngineStatus**](../models/WorkstreamPatternEngineStatus)
 
-### Authorization
+### Authorization {#workstream_pattern_engine_processors_vision_status-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_pattern_engine_processors_vision_status-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_pattern_engine_processors_vision_status-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **403** | Forbidden, this is not available for non-beta used until mid to late April. |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

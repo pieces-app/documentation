@@ -1,3 +1,8 @@
+---
+title: DiscoveredAsset | Kotlin SDK
+---
+
+
 
 # DiscoveredAsset
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **directory** | **kotlin.String** |  |  [optional]
 **metadata** | [**SeededAssetMetadata**](SeededAssetMetadata) |  |  [optional]
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  |  [optional]
+
 
 
 

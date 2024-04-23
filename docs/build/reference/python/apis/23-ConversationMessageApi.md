@@ -1,6 +1,10 @@
+---
+title: ConversationMessage API | Python SDK
+---
+
 # ConversationMessage API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +23,7 @@ Method | HTTP request | Description
 
 This will associate a message with an annotation.
 
-### Example
+### Example {#message_associate_annotation-example}
 
 
 ```python
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
     message = 'message_example' # str | This is the uuid of a message.
 
@@ -50,7 +54,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_associate_annotation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -58,27 +62,26 @@ Name | Type | Description  | Notes
  **annotation** | **str**| This is a specific annotation uuid. | 
  **message** | **str**| This is the uuid of a message. | 
 
-### Return type
+### Return type {#message_associate_annotation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#message_associate_annotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_associate_annotation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_associate_annotation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **message_disassociate_annotation** {#message_disassociate_annotation}
 > message_disassociate_annotation(annotation, message)
@@ -87,7 +90,7 @@ No authorization required
 
 This will enable us to dissassociate a message from an annotation.
 
-### Example
+### Example {#message_disassociate_annotation-example}
 
 
 ```python
@@ -105,7 +108,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     annotation = 'annotation_example' # str | This is a specific annotation uuid.
     message = 'message_example' # str | This is the uuid of a message.
 
@@ -118,7 +121,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_disassociate_annotation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -126,27 +129,26 @@ Name | Type | Description  | Notes
  **annotation** | **str**| This is a specific annotation uuid. | 
  **message** | **str**| This is the uuid of a message. | 
 
-### Return type
+### Return type {#message_disassociate_annotation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#message_disassociate_annotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_disassociate_annotation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_disassociate_annotation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **message_scores_increment** {#message_scores_increment}
 > message_scores_increment(message, seeded_score_increment=seeded_score_increment)
@@ -155,7 +157,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#message_scores_increment-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     message = 'message_example' # str | This is the uuid of a message.
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -187,7 +189,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -195,27 +197,26 @@ Name | Type | Description  | Notes
  **message** | **str**| This is the uuid of a message. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#message_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#message_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **message_specific_message_snapshot** {#message_specific_message_snapshot}
 > ConversationMessage message_specific_message_snapshot(message, transferables=transferables)
@@ -224,7 +225,7 @@ No authorization required
 
 This will get a specific snapshot of a message
 
-### Example
+### Example {#message_specific_message_snapshot-example}
 
 
 ```python
@@ -243,7 +244,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     message = 'message_example' # str | This is the uuid of a message.
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -258,7 +259,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_specific_message_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -266,27 +267,26 @@ Name | Type | Description  | Notes
  **message** | **str**| This is the uuid of a message. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#message_specific_message_snapshot-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#message_specific_message_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_specific_message_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_specific_message_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
-
-
 
 ## **message_specific_message_update** {#message_specific_message_update}
 > ConversationMessage message_specific_message_update(transferables=transferables, conversation_message=conversation_message)
@@ -295,7 +295,7 @@ No authorization required
 
 This will update a conversation message.
 
-### Example
+### Example {#message_specific_message_update-example}
 
 
 ```python
@@ -314,7 +314,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     conversation_message = pieces_os_client.ConversationMessage() # ConversationMessage |  (optional)
 
@@ -329,7 +329,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_specific_message_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -337,27 +337,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **conversation_message** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional] 
 
-### Return type
+### Return type {#message_specific_message_update-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#message_specific_message_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_specific_message_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_specific_message_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **message_update_value** {#message_update_value}
 > ConversationMessage message_update_value(transferables=transferables, conversation_message=conversation_message)
@@ -366,7 +365,7 @@ No authorization required
 
 This will update the value of a conversation message.
 
-### Example
+### Example {#message_update_value-example}
 
 
 ```python
@@ -385,7 +384,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ConversationMessageApi(api_client)
+    api_instance = ConversationMessage API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     conversation_message = pieces_os_client.ConversationMessage() # ConversationMessage |  (optional)
 
@@ -400,7 +399,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#message_update_value-parameters}
 
 
 Name | Type | Description  | Notes
@@ -408,25 +407,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **conversation_message** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional] 
 
-### Return type
+### Return type {#message_update_value-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#message_update_value-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#message_update_value-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#message_update_value-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

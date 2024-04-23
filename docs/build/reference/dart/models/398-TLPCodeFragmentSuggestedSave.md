@@ -1,9 +1,8 @@
-# TLPCodeFragmentSuggestedSave
+---
+title: TLPCodeFragmentSuggestedSave | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeFragmentSuggestedSave
 
 ## Properties
 Name | Type | Description | Notes
@@ -17,7 +16,5 @@ Name | Type | Description | Notes
 **context** | **String** | context from where suggestion came from | [optional] 
 **score** | **num** | maximum similarity score | [optional] 
 **candidates** | **int** | number of candidates | [optional] 
-
-
 
 

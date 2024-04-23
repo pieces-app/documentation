@@ -1,3 +1,8 @@
+---
+title: Role | Kotlin SDK
+---
+
+
 
 # Role
 
@@ -11,6 +16,7 @@
     * `BOTH` (value: `"BOTH"`)
 
     * `PREVIEW` (value: `"PREVIEW"`)
+
 
 
 

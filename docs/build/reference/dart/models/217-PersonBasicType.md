@@ -1,9 +1,8 @@
-# PersonBasicType
+---
+title: PersonBasicType | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# PersonBasicType
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **sourced** | [**ExternallySourcedEnum**](ExternallySourcedEnum) |  | [optional] 
 **url** | **String** | This is a specific url that this basic user came from. | [optional] 
 **mailgun** | [**MailgunMetadata**](MailgunMetadata) |  | [optional] 
-
-
 
 

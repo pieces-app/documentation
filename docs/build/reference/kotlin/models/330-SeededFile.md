@@ -1,3 +1,8 @@
+---
+title: SeededFile | Kotlin SDK
+---
+
+
 
 # SeededFile
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **bytes** | [**TransferableBytes**](TransferableBytes) |  |  [optional]
 **string** | [**TransferableString**](TransferableString) |  |  [optional]
 **metadata** | [**FileMetadata**](FileMetadata) |  |  [optional]
+
 
 
 

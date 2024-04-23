@@ -1,3 +1,8 @@
+---
+title: TLPCodeFragmentStatistics | Kotlin SDK
+---
+
+
 
 # TLPCodeFragmentStatistics
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **descriptive** | [**TLPCodeFragmentDescriptiveStatistics**](TLPCodeFragmentDescriptiveStatistics) |  |  [optional]
+
 
 
 

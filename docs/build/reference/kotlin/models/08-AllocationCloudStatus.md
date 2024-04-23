@@ -1,3 +1,8 @@
+---
+title: AllocationCloudStatus | Kotlin SDK
+---
+
+
 
 # AllocationCloudStatus
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cloud** | [**AllocationStatusEnum**](AllocationStatusEnum) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

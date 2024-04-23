@@ -1,3 +1,8 @@
+---
+title: GraphicalSVGStatistics | Kotlin SDK
+---
+
+
 
 # GraphicalSVGStatistics
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **id** | **kotlin.String** |  |  [optional]
+
 
 
 

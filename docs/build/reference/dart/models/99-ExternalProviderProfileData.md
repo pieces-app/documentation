@@ -1,9 +1,8 @@
-# ExternalProviderProfileData
+---
+title: ExternalProviderProfileData | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ExternalProviderProfileData
 
 ## Properties
 Name | Type | Description | Notes
@@ -46,7 +45,5 @@ Name | Type | Description | Notes
 **diskUsage** | **int** |  | [optional] 
 **collaborators** | **int** |  | [optional] 
 **twoFactorAuthentication** | **bool** |  | [optional] 
-
-
 
 

@@ -1,16 +1,13 @@
-# GitHubDistribution
+---
+title: GitHubDistribution | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GitHubDistribution
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **gist** | [**GitHubGistDistribution**](GitHubGistDistribution) |  | [optional] 
-
-
 
 

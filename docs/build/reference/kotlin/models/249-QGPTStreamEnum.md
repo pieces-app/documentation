@@ -1,3 +1,8 @@
+---
+title: QGPTStreamEnum | Kotlin SDK
+---
+
+
 
 # QGPTStreamEnum
 
@@ -19,6 +24,7 @@
     * `STOPPED` (value: `"STOPPED"`)
 
     * `RESET` (value: `"RESET"`)
+
 
 
 

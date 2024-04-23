@@ -1,3 +1,8 @@
+---
+title: Classification | Kotlin SDK
+---
+
+
 
 # Classification
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  |  [optional]
+
 
 
 

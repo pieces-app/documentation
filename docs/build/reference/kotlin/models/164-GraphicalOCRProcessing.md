@@ -1,3 +1,8 @@
+---
+title: GraphicalOCRProcessing | Kotlin SDK
+---
+
+
 
 # GraphicalOCRProcessing
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **statistics** | [**GraphicalOCRStatistics**](GraphicalOCRStatistics) |  |  [optional]
+
 
 
 

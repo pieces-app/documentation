@@ -1,3 +1,7 @@
+---
+title: ConversationTypeEnum | Python SDK
+---
+
 # ConversationTypeEnum
 
 This is a type of conversation, for now just COPILOT.
@@ -6,6 +10,5 @@ This is a type of conversation, for now just COPILOT.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

@@ -1,9 +1,8 @@
-# Suggestion
+---
+title: Suggestion | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Suggestion
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **target** | [**SuggestionTarget**](SuggestionTarget) |  | 
 **assets** | [**Assets**](Assets) |  | 
 **distribution** | **Map\<String, num\>** |  | [optional] [default to const {}]
-
-
 
 

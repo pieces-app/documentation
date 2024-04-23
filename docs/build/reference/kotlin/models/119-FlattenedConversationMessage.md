@@ -1,3 +1,8 @@
+---
+title: FlattenedConversationMessage | Kotlin SDK
+---
+
+
 
 # FlattenedConversationMessage
 
@@ -16,6 +21,7 @@ Name | Type | Description | Notes
 **sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  |  [optional]
+
 
 
 

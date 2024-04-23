@@ -1,9 +1,8 @@
-# AnchorPoint
+---
+title: AnchorPoint | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AnchorPoint
 
 ## Properties
 Name | Type | Description | Notes
@@ -18,7 +17,5 @@ Name | Type | Description | Notes
 **platform** | [**PlatformEnum**](PlatformEnum) |  | [optional] 
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor) |  | 
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

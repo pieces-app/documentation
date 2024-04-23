@@ -1,3 +1,8 @@
+---
+title: ImageAnalyses | Kotlin SDK
+---
+
+
 
 # ImageAnalyses
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;ImageAnalysis&gt;**](ImageAnalysis) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

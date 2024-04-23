@@ -1,9 +1,8 @@
-# FlattenedPerson
+---
+title: FlattenedPerson | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedPerson
 
 ## Properties
 Name | Type | Description | Notes
@@ -24,7 +23,5 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-
 
 

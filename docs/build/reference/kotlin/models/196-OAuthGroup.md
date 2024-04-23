@@ -1,3 +1,8 @@
+---
+title: OAuthGroup | Kotlin SDK
+---
+
+
 
 # OAuthGroup
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **token** | [**OAuthToken**](OAuthToken) |  |  [optional]
 **account** | [**OAuthAccount**](OAuthAccount) |  |  [optional]
+
 
 
 

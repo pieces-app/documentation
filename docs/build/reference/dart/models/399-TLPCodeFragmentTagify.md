@@ -1,16 +1,13 @@
-# TLPCodeFragmentTagify
+---
+title: TLPCodeFragmentTagify | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeFragmentTagify
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **code** | [**TLPCodeSnippetTagifyCode**](TLPCodeSnippetTagifyCode) |  | [optional] 
-
-
 
 

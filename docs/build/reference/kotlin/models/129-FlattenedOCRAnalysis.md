@@ -1,3 +1,8 @@
+---
+title: FlattenedOCRAnalysis | Kotlin SDK
+---
+
+
 
 # FlattenedOCRAnalysis
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **model** | [**Model**](Model) |  | 
 **image** | **kotlin.String** | this is a refernece to the image analysis. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

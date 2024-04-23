@@ -1,3 +1,8 @@
+---
+title: TrackedAssetsEventSearchMetadataResults | Kotlin SDK
+---
+
+
 
 # TrackedAssetsEventSearchMetadataResults
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **exact** | **java.math.BigDecimal** | Total number of exact results |  [optional]
 **assets** | [**FlattenedAssets**](FlattenedAssets) |  |  [optional]
 **space** | [**Space**](Space) |  |  [optional]
+
 
 
 

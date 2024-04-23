@@ -1,3 +1,7 @@
+---
+title: FlattenedWebsite | TypeScript SDK
+---
+
 
 # FlattenedWebsite
 
@@ -21,39 +25,5 @@ Name | Type
 **conversations** | [**FlattenedConversations**](FlattenedConversations)
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
-
-## Example
-
-```typescript
-import { FlattenedWebsite } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: FlattenedWebsite = {
-    "schema": null,
-    "id": null,
-    "assets": null,
-    "name": null,
-    "url": null,
-    "created": null,
-    "updated": null,
-    "deleted": null,
-    "mechanisms": null,
-    "interactions": null,
-    "persons": null,
-    "conversations": null,
-    "score": null,
-    "summaries": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedWebsite
-console.log(exampleParsed)
-```
 
 

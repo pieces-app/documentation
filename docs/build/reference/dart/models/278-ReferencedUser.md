@@ -1,9 +1,8 @@
-# ReferencedUser
+---
+title: ReferencedUser | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ReferencedUser
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **id** | **String** |  | 
 **reference** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] 
-
-
 
 

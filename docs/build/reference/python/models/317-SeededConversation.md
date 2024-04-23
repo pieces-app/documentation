@@ -1,3 +1,7 @@
+---
+title: SeededConversation | Python SDK
+---
+
 # SeededConversation
 
 This is a pre-Conversation object.  This will hold together a conversation. Ie allthe message within a conversation.  All the additional properties on here used on here like(anchors/assets) are used for context that will seed the conversation.  model is a calculated property, and will be the model of the last message sent if applicable.
@@ -19,23 +23,5 @@ Name | Type | Description | Notes
 **type** | [**ConversationTypeEnum**](ConversationTypeEnum) |  | 
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] 
 **demo** | **bool** | This will let us know if this conversation was generated as a &#39;demo&#39; conversation | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.seeded_conversation import SeededConversation
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededConversation from a JSON string
-seeded_conversation_instance = SeededConversation.from_json(json)
-# print the JSON string representation of the object
-print(SeededConversation.to_json())
-
-# convert the object into a dict
-seeded_conversation_dict = seeded_conversation_instance.to_dict()
-# create an instance of SeededConversation from a dict
-seeded_conversation_form_dict = seeded_conversation.from_dict(seeded_conversation_dict)
-```
 
 

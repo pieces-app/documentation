@@ -1,11 +1,15 @@
+---
+title: Auth0 API | Dart SDK
+---
+
 # Auth0 API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | `https://auth.pieces.services/authorize` [GET]
 [**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
 [**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
@@ -17,7 +21,7 @@ https://auth.pieces.services/v2/logout [GET]
 
 https://auth0.com/docs/api/authentication#logout
 
-### Example
+### Example {#auth0logout-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,41 +37,39 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#auth0logout-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientId** | **String**| The client ID of the Auth0 Instance | [optional] 
- **returnTo** | **String**| The URL that the logout endpoint will return to | [optional] 
+ **clientId** | **String** | The client ID of the Auth0 Instance | [optional] 
+ **returnTo** | **String** | The URL that the logout endpoint will return to | [optional] 
 
-### Return type
+### Return type {#auth0logout-return-type}
 
 **String**
 
-### Authorization
+### Authorization {#auth0logout-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#auth0logout-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/html
 
-
-
 ## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
 
-https://auth.pieces.services/authorize [GET]
+`https://auth.pieces.services/authorize` [GET]
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
 
-### Example
+### Example {#authorizeauth0-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
 final api_instance = Auth0Api();
-final audience = https://pieces.us.auth0.com/api/v2/; // String |  The unique identifier of the target API you want to access.
+final audience = `https://pieces.us.auth0.com`/api/v2/; // String |  The unique identifier of the target API you want to access.
 final scope = []; // List\<String\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
 final responseType = code; // String | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
 final clientId = 9sW4Pa1LEjX67l6VO14u0207NLYeXnu1; // String | Your application's Client ID.
@@ -87,36 +89,34 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#authorizeauth0-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **audience** | **String**|  The unique identifier of the target API you want to access. | 
- **scope** | **List\<String\>**| The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
- **responseType** | **String**| Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
- **clientId** | **String**| Your application's Client ID. | 
- **codeChallengeMethod** | **String**| Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
- **codeChallenge** | **String**| Generated challenge from the code_verifier. | 
- **responseMode** | **String**|  | 
- **state** | **String**| An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional] 
- **redirectUri** | **String**| The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional] 
- **connection** | **String**| The name of the connection configured to your application. | [optional] 
- **prompt** | **String**| To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
+ **audience** | **String** |  The unique identifier of the target API you want to access. | 
+ **scope** | **List\<String\>** | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token. | [default to const []]
+ **responseType** | **String** | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow. | 
+ **clientId** | **String** | Your application's Client ID. | 
+ **codeChallengeMethod** | **String** | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
+ **codeChallenge** | **String** | Generated challenge from the code_verifier. | 
+ **responseMode** | **String** |  | 
+ **state** | **String** | An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. | [optional] 
+ **redirectUri** | **String** | The URL to which Auth0 will redirect the browser after authorization has been granted by the user. | [optional] 
+ **connection** | **String** | The name of the connection configured to your application. | [optional] 
+ **prompt** | **String** | To initiate a silent authentication request, use prompt=none (see Remarks for more info). | [optional] 
 
-### Return type
+### Return type {#authorizeauth0-return-type}
 
 [**ResultedPKCE**](../models/ResultedPKCE)
 
-### Authorization
+### Authorization {#authorizeauth0-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#authorizeauth0-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/x-www-form-urlencoded
-
-
 
 ## **exchangeForAuth0Token** {#exchangeforauth0token}
 > OAuthToken exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
@@ -125,7 +125,7 @@ https://auth.pieces.services/oauth/token [POST]
 
 An endpoint to generate a OAuth Token for an authentication flow. 
 
-### Example
+### Example {#exchangeforauth0token-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -136,7 +136,7 @@ final code = code_example; // String | The Authorization Code received from the 
 final redirectUri = redirectUri_example; // String | This is required only if it was set at the GET /authorize endpoint. The values must match.
 final codeVerifier = codeVerifier_example; // String | Cryptographically random key that was used to generate the code_challenge passed to /authorize.
 final schema = ; // EmbeddedModelSchema | 
-final audience = audience_example; // String | The audience domain: i.e. https://pieces.us.auth0.com
+final audience = audience_example; // String | The audience domain: i.e. `https://pieces.us.auth0.com`
 
 try {
     final result = api_instance.exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience);
@@ -146,32 +146,30 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#exchangeforauth0token-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **grantType** | **String**| Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | 
- **clientId** | **String**| Your application's Client ID. | 
- **code** | **String**| The Authorization Code received from the initial /authorize call. | 
- **redirectUri** | **String**| This is required only if it was set at the GET /authorize endpoint. The values must match. | 
- **codeVerifier** | **String**| Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
- **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional] 
- **audience** | **String**| The audience domain: i.e. https://pieces.us.auth0.com | [optional] 
+ **grantType** | **String** | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token. | 
+ **clientId** | **String** | Your application's Client ID. | 
+ **code** | **String** | The Authorization Code received from the initial /authorize call. | 
+ **redirectUri** | **String** | This is required only if it was set at the GET /authorize endpoint. The values must match. | 
+ **codeVerifier** | **String** | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
+ **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema) |  | [optional] 
+ **audience** | **String** | The audience domain: i.e. `https://pieces.us.auth0.com` | [optional] 
 
-### Return type
+### Return type {#exchangeforauth0token-return-type}
 
 [**OAuthToken**](../models/OAuthToken)
 
-### Authorization
+### Authorization {#exchangeforauth0token-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#exchangeforauth0token-http-request-headers}
 
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
-
-
 
 ## **getAuth0UserInfo** {#getauth0userinfo}
 > Auth0User getAuth0UserInfo()
@@ -180,7 +178,7 @@ https://auth.pieces.services/userinfo [GET]
 
 Get the users info from the Auth0 API
 
-### Example
+### Example {#getauth0userinfo-example}
 ```dart
 import 'package:core_openapi/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
@@ -200,21 +198,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getauth0userinfo-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getauth0userinfo-return-type}
 
 [**Auth0User**](../models/Auth0User)
 
-### Authorization
+### Authorization {#getauth0userinfo-authorization}
 
 
 
-### HTTP request headers
+### HTTP request headers {#getauth0userinfo-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 

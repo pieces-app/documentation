@@ -1,3 +1,8 @@
+---
+title: Theme | Kotlin SDK
+---
+
+
 
 # Theme
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **dark** | **kotlin.Boolean** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

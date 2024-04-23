@@ -1,16 +1,13 @@
-# SeededRangeConversationGroundingAssociation
+---
+title: SeededRangeConversationGroundingAssociation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededRangeConversationGroundingAssociation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **temporal** | [**SeededRangeConversationGroundingTemporalAssociation**](SeededRangeConversationGroundingTemporalAssociation) |  | [optional] 
-
-
 
 

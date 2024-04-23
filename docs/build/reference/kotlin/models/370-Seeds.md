@@ -1,3 +1,8 @@
+---
+title: Seeds | Kotlin SDK
+---
+
+
 
 # Seeds
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Seed&gt;**](Seed) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

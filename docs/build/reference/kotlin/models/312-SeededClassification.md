@@ -1,3 +1,8 @@
+---
+title: SeededClassification | Kotlin SDK
+---
+
+
 
 # SeededClassification
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  |  [optional]
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
 **rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  |  [optional]
+
 
 
 

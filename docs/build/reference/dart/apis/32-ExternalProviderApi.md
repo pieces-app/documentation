@@ -1,6 +1,10 @@
+---
+title: ExternalProvider API | Dart SDK
+---
+
 # ExternalProvider API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeycreate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -31,26 +35,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeycreate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **precreatedExternalProviderApiKey** | [**PrecreatedExternalProviderApiKey**](PrecreatedExternalProviderApiKey)|  | [optional] 
+ **precreatedExternalProviderApiKey** | [**PrecreatedExternalProviderApiKey**](PrecreatedExternalProviderApiKey) |  | [optional] 
 
-### Return type
+### Return type {#externalproviderapikeycreate-return-type}
 
 [**CreatedExternalProviderApiKey**](CreatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeycreate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeycreate-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
 > DeletedExternalProviderApiKey externalProviderApiKeyDelete(predeletedExternalProviderApiKey)
@@ -59,7 +61,7 @@ No authorization required
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeydelete-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -74,26 +76,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeydelete-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **predeletedExternalProviderApiKey** | [**PredeletedExternalProviderApiKey**](PredeletedExternalProviderApiKey)|  | [optional] 
+ **predeletedExternalProviderApiKey** | [**PredeletedExternalProviderApiKey**](PredeletedExternalProviderApiKey) |  | [optional] 
 
-### Return type
+### Return type {#externalproviderapikeydelete-return-type}
 
 [**DeletedExternalProviderApiKey**](DeletedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeydelete-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeydelete-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
 > UpdatedExternalProviderApiKey externalProviderApiKeyUpdate(preupdatedExternalProviderApiKey)
@@ -102,7 +102,7 @@ No authorization required
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeyupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -117,24 +117,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeyupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **preupdatedExternalProviderApiKey** | [**PreupdatedExternalProviderApiKey**](PreupdatedExternalProviderApiKey)|  | [optional] 
+ **preupdatedExternalProviderApiKey** | [**PreupdatedExternalProviderApiKey**](PreupdatedExternalProviderApiKey) |  | [optional] 
 
-### Return type
+### Return type {#externalproviderapikeyupdate-return-type}
 
 [**UpdatedExternalProviderApiKey**](UpdatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeyupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeyupdate-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

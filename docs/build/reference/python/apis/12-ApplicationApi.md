@@ -1,6 +1,10 @@
+---
+title: Application API | Python SDK
+---
+
 # Application API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This is an endpoint for updating an application.
 
-### Example
+### Example {#application_update-example}
 
 
 ```python
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationApi(api_client)
+    api_instance = Application API(api_client)
     application = pieces_os_client.Application() # Application |  (optional)
 
     try:
@@ -47,31 +51,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#application_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**Application**](../models/Application)|  | [optional] 
 
-### Return type
+### Return type {#application_update-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#application_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#application_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#application_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

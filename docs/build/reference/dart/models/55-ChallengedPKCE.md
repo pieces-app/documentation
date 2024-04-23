@@ -1,9 +1,8 @@
-# ChallengedPKCE
+---
+title: ChallengedPKCE | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ChallengedPKCE
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **challenge** | **String** | Generated challenge from the code_verifier. | 
 **method** | **String** | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged. | 
 **verifier** | **String** | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
-
-
 
 

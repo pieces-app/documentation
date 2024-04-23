@@ -1,6 +1,10 @@
+---
+title: Format API | Kotlin SDK
+---
+
 # Format API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,41 +22,41 @@ Method | HTTP request | Description
 
 This will get an analysis from a format&#39;s id.
 
-### Example
+### Example {#formatanalysis-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 try {
     val result : Analysis = apiInstance.formatAnalysis(format)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatAnalysis")
+    println("4xx response calling Format API#formatAnalysis")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatAnalysis")
+    println("5xx response calling Format API#formatAnalysis")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatanalysis-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **java.util.UUID**| The id (uuid) for a specific format. |
 
-### Return type
+### Return type {#formatanalysis-return-type}
 
 [**Analysis**](../models/Analysis)
 
-### Authorization
+### Authorization {#formatanalysis-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatanalysis-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -64,43 +68,43 @@ No authorization required
 
 This endpoint will be used to reclassify a single Format.
 
-### Example
+### Example {#formatreclassify-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val formatReclassification : FormatReclassification =  // FormatReclassification | 
 try {
     val result : Format = apiInstance.formatReclassify(transferable, formatReclassification)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatReclassify")
+    println("4xx response calling Format API#formatReclassify")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatReclassify")
+    println("5xx response calling Format API#formatReclassify")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatreclassify-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **formatReclassification** | [**FormatReclassification**](../models/FormatReclassification)|  | [optional]
 
-### Return type
+### Return type {#formatreclassify-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formatreclassify-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatreclassify-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -112,43 +116,43 @@ No authorization required
 
 Get a snapshot of a specific format.
 
-### Example
+### Example {#formatsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Format = apiInstance.formatSnapshot(format, transferable)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatSnapshot")
+    println("4xx response calling Format API#formatSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatSnapshot")
+    println("5xx response calling Format API#formatSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **java.util.UUID**| The id (uuid) for a specific format. |
  **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#formatsnapshot-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formatsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -160,43 +164,43 @@ No authorization required
 
 This will update a format&#39;s value, ie, a formats fragment or file depending on what is provided.  code/text fragment behavior: If this format is an asset.preview.base we will update the asset.original&#39;s value. if this format is an asset.preview.original we will update the asset.preview.base&#39;s value.  code/text file behavior: If the the format that is update is the asset.preview.base is a fragment and the asset.original is file then we will update the asset.original&#39;s value to be bytes or string respectively. This goes the same for orignal to preview but will be go the reverse order so if the original is a file we will update the preview base&#39;s fragment string.  image fragment/file: We will not modify preview -&gt; orignal or original -&gt; preview here. so there are zero side effects in this case, and will update as normal. (this will be the case for all other value updates.)
 
-### Example
+### Example {#formatupdatevalue-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val format : Format =  // Format | This is the format that you want to update.
 try {
     val result : Format = apiInstance.formatUpdateValue(transferable, format)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatUpdateValue")
+    println("4xx response calling Format API#formatUpdateValue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatUpdateValue")
+    println("5xx response calling Format API#formatUpdateValue")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatupdatevalue-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **format** | [**Format**](../models/Format)| This is the format that you want to update. | [optional]
 
-### Return type
+### Return type {#formatupdatevalue-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formatupdatevalue-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatupdatevalue-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -208,41 +212,41 @@ No authorization required
 
 This is an analytics endpoint that will enable us to know when a user has copied/downloaded/beamed/viewed a format.
 
-### Example
+### Example {#formatusageevent-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatApi()
+val apiInstance = Format API()
 val seededTrackedFormatEvent : SeededTrackedFormatEvent =  // SeededTrackedFormatEvent | This is a SeededTrackedFormatEvent, per tracked event:)
 try {
     val result : TrackedFormatEvent = apiInstance.formatUsageEvent(seededTrackedFormatEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatApi#formatUsageEvent")
+    println("4xx response calling Format API#formatUsageEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatApi#formatUsageEvent")
+    println("5xx response calling Format API#formatUsageEvent")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatusageevent-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededTrackedFormatEvent** | [**SeededTrackedFormatEvent**](../models/SeededTrackedFormatEvent)| This is a SeededTrackedFormatEvent, per tracked event:) | [optional]
 
-### Return type
+### Return type {#formatusageevent-return-type}
 
 [**TrackedFormatEvent**](../models/TrackedFormatEvent)
 
-### Authorization
+### Authorization {#formatusageevent-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatusageevent-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

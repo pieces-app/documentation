@@ -1,3 +1,8 @@
+---
+title: OAuthAccount | Kotlin SDK
+---
+
+
 
 # OAuthAccount
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** | The user&#39;s full name. | 
 **picture** | **kotlin.String** | A URI pointing to the user&#39;s picture. | 
 **nickname** | **kotlin.String** | The user&#39;s nickname. | 
+
 
 
 

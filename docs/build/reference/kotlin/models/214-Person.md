@@ -1,3 +1,8 @@
+---
+title: Person | Kotlin SDK
+---
+
+
 
 # Person
 
@@ -20,6 +25,7 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

@@ -1,3 +1,8 @@
+---
+title: FlattenedAnnotation | Kotlin SDK
+---
+
+
 
 # FlattenedAnnotation
 
@@ -22,6 +27,7 @@ Name | Type | Description | Notes
 **score** | [**Score**](Score) |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  |  [optional]
+
 
 
 

@@ -1,9 +1,8 @@
-# QGPTConversationPipeline
+---
+title: QGPTConversationPipeline | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTConversationPipeline
 
 ## Properties
 Name | Type | Description | Notes
@@ -13,7 +12,5 @@ Name | Type | Description | Notes
 **generalizedCodeDialog** | [**QGPTConversationPipelineForGeneralizedCodeDialog**](QGPTConversationPipelineForGeneralizedCodeDialog) |  | [optional] 
 **contextualizedCodeDialog** | [**QGPTConversationPipelineForContextualizedCodeDialog**](QGPTConversationPipelineForContextualizedCodeDialog) |  | [optional] 
 **contextualizedCodeWorkstreamDialog** | [**QGPTConversationPipelineForContextualizedCodeWorkstreamDialog**](QGPTConversationPipelineForContextualizedCodeWorkstreamDialog) |  | [optional] 
-
-
 
 

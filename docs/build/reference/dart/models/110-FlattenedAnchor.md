@@ -1,9 +1,8 @@
-# FlattenedAnchor
+---
+title: FlattenedAnchor | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedAnchor
 
 ## Properties
 Name | Type | Description | Notes
@@ -22,7 +21,5 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-
 
 

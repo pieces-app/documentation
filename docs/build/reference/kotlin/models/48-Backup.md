@@ -1,3 +1,8 @@
+---
+title: Backup | Kotlin SDK
+---
+
+
 
 # Backup
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **deviceName** | **kotlin.String** |  | 
 **platform** | [**PlatformEnum**](PlatformEnum) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

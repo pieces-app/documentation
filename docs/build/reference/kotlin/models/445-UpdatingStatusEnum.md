@@ -1,3 +1,8 @@
+---
+title: UpdatingStatusEnum | Kotlin SDK
+---
+
+
 
 # UpdatingStatusEnum
 
@@ -17,6 +22,7 @@
     * `REINSTALL_REQUIRED` (value: `"REINSTALL_REQUIRED"`)
 
     * `CONTACT_SUPPORT` (value: `"CONTACT_SUPPORT"`)
+
 
 
 

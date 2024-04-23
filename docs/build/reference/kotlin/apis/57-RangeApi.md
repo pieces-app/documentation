@@ -1,6 +1,10 @@
+---
+title: Range API | Kotlin SDK
+---
+
 # Range API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,45 +24,45 @@ Method | HTTP request | Description
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangeassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.rangeAssociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeAssociateConversationGroundingTemporalRangeWorkstreams")
+    println("4xx response calling Range API#rangeAssociateConversationGroundingTemporalRangeWorkstreams")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeAssociateConversationGroundingTemporalRangeWorkstreams")
+    println("5xx response calling Range API#rangeAssociateConversationGroundingTemporalRangeWorkstreams")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#rangeassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangeAssociateWorkstreamSummary** {#rangeassociateworkstreamsummary}
 > rangeAssociateWorkstreamSummary(range, workstreamSummary)
@@ -67,45 +71,45 @@ No authorization required
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangeassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.rangeAssociateWorkstreamSummary(range, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeAssociateWorkstreamSummary")
+    println("4xx response calling Range API#rangeAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeAssociateWorkstreamSummary")
+    println("5xx response calling Range API#rangeAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#rangeassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams** {#rangedisassociateconversationgroundingtemporalrangeworkstreams}
 > rangeDisassociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
@@ -114,45 +118,45 @@ No authorization required
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangedisassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.rangeDisassociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeDisassociateConversationGroundingTemporalRangeWorkstreams")
+    println("4xx response calling Range API#rangeDisassociateConversationGroundingTemporalRangeWorkstreams")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeDisassociateConversationGroundingTemporalRangeWorkstreams")
+    println("5xx response calling Range API#rangeDisassociateConversationGroundingTemporalRangeWorkstreams")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#rangedisassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangeDisassociateWorkstreamSummary** {#rangedisassociateworkstreamsummary}
 > rangeDisassociateWorkstreamSummary(range, workstreamSummary)
@@ -161,45 +165,45 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.rangeDisassociateWorkstreamSummary(range, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeDisassociateWorkstreamSummary")
+    println("4xx response calling Range API#rangeDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeDisassociateWorkstreamSummary")
+    println("5xx response calling Range API#rangeDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#rangedisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangeScoresIncrement** {#rangescoresincrement}
 > rangeScoresIncrement(range, seededScoreIncrement)
@@ -208,45 +212,45 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#rangescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.rangeScoresIncrement(range, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeScoresIncrement")
+    println("4xx response calling Range API#rangeScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeScoresIncrement")
+    println("5xx response calling Range API#rangeScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#rangescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **rangeUpdate** {#rangeupdate}
 > Range rangeUpdate(range)
@@ -255,41 +259,41 @@ No authorization required
 
 This will update a specific range.
 
-### Example
+### Example {#rangeupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : Range =  // Range | 
 try {
     val result : Range = apiInstance.rangeUpdate(range)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangeUpdate")
+    println("4xx response calling Range API#rangeUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangeUpdate")
+    println("5xx response calling Range API#rangeUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangeupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**Range**](../models/Range)|  | [optional]
 
-### Return type
+### Return type {#rangeupdate-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangeupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -301,41 +305,41 @@ No authorization required
 
 This will get a snapshot of a single range.
 
-### Example
+### Example {#rangesspecificrangesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = RangeApi()
+val apiInstance = Range API()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     val result : Range = apiInstance.rangesSpecificRangeSnapshot(range)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling RangeApi#rangesSpecificRangeSnapshot")
+    println("4xx response calling Range API#rangesSpecificRangeSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling RangeApi#rangesSpecificRangeSnapshot")
+    println("5xx response calling Range API#rangesSpecificRangeSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#rangesspecificrangesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#rangesspecificrangesnapshot-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangesspecificrangesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangesspecificrangesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

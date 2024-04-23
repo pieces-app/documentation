@@ -1,3 +1,8 @@
+---
+title: SeededTrackedInteractionEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedInteractionEvent
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **element** | **kotlin.String** |  |  [optional]
 **identifierDescriptionPair** | [**SeededTrackedInteractionEventIdentifierDescriptionPairs**](SeededTrackedInteractionEventIdentifierDescriptionPairs) |  |  [optional]
+
 
 
 

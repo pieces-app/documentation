@@ -1,3 +1,8 @@
+---
+title: AllocationCloud | Kotlin SDK
+---
+
+
 
 # AllocationCloud
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
 **version** | **kotlin.String** | this is the current version of the server. |  [optional]
 **region** | **kotlin.String** | this is the region where the project is defined. |  [optional]
+
 
 
 

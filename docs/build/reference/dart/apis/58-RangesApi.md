@@ -1,6 +1,10 @@
+---
+title: Ranges API | Dart SDK
+---
+
 # Ranges API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new Range in the database.
 
-### Example
+### Example {#rangescreatenewrange-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -31,26 +35,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangescreatenewrange-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededRange** | [**SeededRange**](../models/SeededRange)|  | [optional] 
+ **seededRange** | [**SeededRange**](../models/SeededRange) |  | [optional] 
 
-### Return type
+### Return type {#rangescreatenewrange-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangescreatenewrange-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangescreatenewrange-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **rangesDeleteSpecificRange** {#rangesdeletespecificrange}
 > rangesDeleteSpecificRange(range)
@@ -59,7 +61,7 @@ No authorization required
 
 This will delete a specific range from the database!
 
-### Example
+### Example {#rangesdeletespecificrange-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -73,26 +75,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangesdeletespecificrange-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#rangesdeletespecificrange-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangesdeletespecificrange-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangesdeletespecificrange-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **rangesSnapshot** {#rangessnapshot}
 > Ranges rangesSnapshot()
@@ -101,7 +101,7 @@ No authorization required
 
 This will get a snapshot of all your ranges.
 
-### Example
+### Example {#rangessnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -115,21 +115,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangessnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#rangessnapshot-return-type}
 
 [**Ranges**](../models/Ranges)
 
-### Authorization
+### Authorization {#rangessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

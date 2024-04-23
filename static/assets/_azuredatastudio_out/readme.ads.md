@@ -544,7 +544,7 @@
   #### Restart Pieces OS. After a couple of seconds re-open Azure Data Studio
 - ### **What is Pieces OS? How does it work?**
   #### Pieces OS is the background service that enables Pieces to work locally and handles communications with any integrations. Without Pieces OS, Pieces for Developers will not be able to save your snippets or interact with any of your plugins.
-  #### Pieces OS also enables you to sync Pieces to the cloud so that you can access your data anywhere. It also enables our other cloud-enabled features, like link sharing. Download and install Pieces OS! Head over to https://code.pieces.app/install to get started.
+  #### Pieces OS also enables you to sync Pieces to the cloud so that you can access your data anywhere. It also enables our other cloud-enabled features, like link sharing. Download and install Pieces OS! Head over to our [installation page](/installation-getting-started/what-am-i-installing) to get started.
 - ### **How do I share a snippet from my Azure Data Studio?**
   #### To share a snippet you must be connected to Pieces OS and logged in and connected to the cloud. Then click the Pieces extension icon to see the snippet tree view and click inside Pieces explorer to find your saved snippets. Right-click the snippet you’d like to share and select “share via Pieces link”. Then copy the shareable link and send it to anyone!
 - ### **How do I connect to the Pieces Cloud from Azure Data Studio?**

@@ -1,6 +1,10 @@
+---
+title: ConversationMessages API | TypeScript SDK
+---
+
 # ConversationMessages API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will create a Message on a specific conversation.
 
-### Example
+### Example {#messagescreatespecificmessage-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -23,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesCreateSpecificMessageRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // SeededConversationMessage (optional)
-    seededConversationMessage: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// SeededConversationMessage (optional)
+seededConversationMessage: ,
 };
 
 apiInstance.messagesCreateSpecificMessage(body).then((data: ConversationMessage) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#messagescreatespecificmessage-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +47,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#messagescreatespecificmessage-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### HTTP request headers
+### HTTP request headers {#messagescreatespecificmessage-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#messagescreatespecificmessage-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -63,7 +68,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific message.
 
-### Example
+### Example {#messagesdeletespecificmessage-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -72,33 +77,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesDeleteSpecificMessageRequest = {
-    // string | This is the uuid of a message.
-    message: message_example,
+// string | This is the uuid of a message.
+message: message_example,
 };
 
 apiInstance.messagesDeleteSpecificMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#messagesdeletespecificmessage-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
 
-### Return type
+### Return type {#messagesdeletespecificmessage-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#messagesdeletespecificmessage-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#messagesdeletespecificmessage-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -109,7 +115,7 @@ void (empty response body)
 
 This will get all the messages.
 
-### Example
+### Example {#messagessnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -118,33 +124,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationMessagesApi(configuration)
 
 const body: Pieces.MessagesSnapshotRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.messagesSnapshot(body).then((data: ConversationMessages) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#messagessnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#messagessnapshot-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### HTTP request headers
+### HTTP request headers {#messagessnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#messagessnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -1,9 +1,8 @@
-# Annotations
+---
+title: Annotations | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Annotations
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **iterable** | [**List\<Annotation\>**](Annotation) |  | [default to const []]
 **indices** | **Map\<String, int\>** | This is a Map\<String, int\>** where the the key is an annotation id. | [optional] [default to const {}]
 **score** | [**Score**](Score) |  | [optional] 
-
-
 
 

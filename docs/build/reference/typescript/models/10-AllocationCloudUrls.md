@@ -1,3 +1,7 @@
+---
+title: AllocationCloudUrls | TypeScript SDK
+---
+
 
 # AllocationCloudUrls
 
@@ -11,29 +15,5 @@ Name | Type
 **base** | [**AllocationCloudUrl**](AllocationCloudUrl)
 **id** | [**AllocationCloudUrl**](AllocationCloudUrl)
 **vanity** | [**AllocationCloudUrl**](AllocationCloudUrl)
-
-## Example
-
-```typescript
-import { AllocationCloudUrls } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: AllocationCloudUrls = {
-    "schema": null,
-    "base": null,
-    "id": null,
-    "vanity": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as AllocationCloudUrls
-console.log(exampleParsed)
-```
 
 

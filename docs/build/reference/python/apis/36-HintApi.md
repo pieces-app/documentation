@@ -1,6 +1,10 @@
+---
+title: Hint API | Python SDK
+---
+
 # Hint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#hint_scores_increment-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = 'hint_example' # str | This is a specific hint uuid
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -48,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hint_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -56,27 +60,26 @@ Name | Type | Description  | Notes
  **hint** | **str**| This is a specific hint uuid | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#hint_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#hint_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hint_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#hint_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **hint_specific_hint_snapshot** {#hint_specific_hint_snapshot}
 > Hint hint_specific_hint_snapshot(hint)
@@ -85,7 +88,7 @@ No authorization required
 
 This will get a snapshot of a specific hint.
 
-### Example
+### Example {#hint_specific_hint_snapshot-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = 'hint_example' # str | This is a specific hint uuid
 
     try:
@@ -118,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hint_specific_hint_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | **str**| This is a specific hint uuid | 
 
-### Return type
+### Return type {#hint_specific_hint_snapshot-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hint_specific_hint_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hint_specific_hint_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#hint_specific_hint_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **hint_update** {#hint_update}
 > Hint hint_update(hint=hint)
@@ -154,7 +156,7 @@ No authorization required
 
 This will update a specific hint.
 
-### Example
+### Example {#hint_update-example}
 
 
 ```python
@@ -173,7 +175,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.HintApi(api_client)
+    api_instance = Hint API(api_client)
     hint = pieces_os_client.Hint() # Hint |  (optional)
 
     try:
@@ -187,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#hint_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **hint** | [**Hint**](../models/Hint)|  | [optional] 
 
-### Return type
+### Return type {#hint_update-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hint_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hint_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#hint_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

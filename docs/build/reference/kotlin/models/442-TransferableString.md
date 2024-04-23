@@ -1,3 +1,8 @@
+---
+title: TransferableString | Kotlin SDK
+---
+
+
 
 # TransferableString
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **base64** | **kotlin.String** | NOT IMPLEMENTED |  [optional]
 **base64Url** | **kotlin.String** | NOT IMPLEMENTED |  [optional]
 **dataUrl** | **kotlin.String** | NOT IMPLEMENTED |  [optional]
+
 
 
 

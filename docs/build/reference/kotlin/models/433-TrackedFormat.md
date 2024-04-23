@@ -1,3 +1,8 @@
+---
+title: TrackedFormat | Kotlin SDK
+---
+
+
 
 # TrackedFormat
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **fragment** | **kotlin.Boolean** |  | 
 **file** | **kotlin.Boolean** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

@@ -1,3 +1,7 @@
+---
+title: SeededScoreIncrement | TypeScript SDK
+---
+
 
 # SeededScoreIncrement
 
@@ -38,56 +42,5 @@ Name | Type
 **workstreamEvent** | [**SeededScore**](SeededScore)
 **ranges** | [**SeededScore**](SeededScore)
 **range** | [**SeededScore**](SeededScore)
-
-## Example
-
-```typescript
-import { SeededScoreIncrement } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededScoreIncrement = {
-    "schema": null,
-    "asset": null,
-    "assets": null,
-    "website": null,
-    "websites": null,
-    "anchor": null,
-    "anchors": null,
-    "anchorPoint": null,
-    "anchorPoints": null,
-    "annotation": null,
-    "annotations": null,
-    "conversation": null,
-    "conversations": null,
-    "conversationMessage": null,
-    "conversationMessages": null,
-    "share": null,
-    "shares": null,
-    "sensitive": null,
-    "sensitives": null,
-    "hint": null,
-    "hints": null,
-    "person": null,
-    "persons": null,
-    "tag": null,
-    "tags": null,
-    "workstreamSummary": null,
-    "workstreamSummaries": null,
-    "workstreamEvents": null,
-    "workstreamEvent": null,
-    "ranges": null,
-    "range": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededScoreIncrement
-console.log(exampleParsed)
-```
 
 

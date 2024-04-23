@@ -1,3 +1,7 @@
+---
+title: NodeTypeEnum | Python SDK
+---
+
 # NodeTypeEnum
 
 This describes the type of a node ie an asset, tag, website, format... ETC
@@ -6,6 +10,5 @@ This describes the type of a node ie an asset, tag, website, format... ETC
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

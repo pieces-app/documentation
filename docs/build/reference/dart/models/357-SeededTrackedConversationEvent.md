@@ -1,9 +1,8 @@
-# SeededTrackedConversationEvent
+---
+title: SeededTrackedConversationEvent | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededTrackedConversationEvent
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **identifierDescriptionPair** | [**TrackedConversationEventIdentifierDescriptionPairs**](TrackedConversationEventIdentifierDescriptionPairs) |  | 
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | 
 **metadata** | [**TrackedConversationEventMetadata**](TrackedConversationEventMetadata) |  | [optional] 
-
-
 
 

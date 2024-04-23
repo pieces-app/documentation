@@ -1,16 +1,13 @@
-# GraphicalSVGStatistics
+---
+title: GraphicalSVGStatistics | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GraphicalSVGStatistics
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **id** | **String** |  | [optional] 
-
-
 
 

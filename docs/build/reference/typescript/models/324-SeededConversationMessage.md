@@ -1,3 +1,7 @@
+---
+title: SeededConversationMessage | TypeScript SDK
+---
+
 
 # SeededConversationMessage
 
@@ -14,32 +18,5 @@ Name | Type
 **conversation** | [**ReferencedConversation**](ReferencedConversation)
 **sentiment** | [**ConversationMessageSentimentEnum**](ConversationMessageSentimentEnum)
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum)
-
-## Example
-
-```typescript
-import { SeededConversationMessage } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededConversationMessage = {
-    "schema": null,
-    "created": null,
-    "model": null,
-    "fragment": null,
-    "conversation": null,
-    "sentiment": null,
-    "role": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededConversationMessage
-console.log(exampleParsed)
-```
 
 

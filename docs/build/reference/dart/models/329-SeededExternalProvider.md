@@ -1,15 +1,12 @@
-# SeededExternalProvider
+---
+title: SeededExternalProvider | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededExternalProvider
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | [**ExternalProviderTypeEnum**](ExternalProviderTypeEnum) |  | 
-
-
 
 

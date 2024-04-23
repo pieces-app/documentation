@@ -1,3 +1,8 @@
+---
+title: PKCE | Kotlin SDK
+---
+
+
 
 # PKCE
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **seed** | [**SeededPKCE**](SeededPKCE) |  |  [optional]
 **token** | [**TokenizedPKCE**](TokenizedPKCE) |  |  [optional]
 **auth0** | [**Auth0**](Auth0) |  |  [optional]
+
 
 
 

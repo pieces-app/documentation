@@ -1,6 +1,10 @@
+---
+title: Sensitive API | Dart SDK
+---
+
 # Sensitive API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sensitivescoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -31,27 +35,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **String**| This is a uuid that represents a sensitive. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **sensitive** | **String** | This is a uuid that represents a sensitive. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#sensitivescoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#sensitivescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **sensitiveSnapshot** {#sensitivesnapshot}
 > Sensitive sensitiveSnapshot(sensitive)
@@ -60,7 +62,7 @@ No authorization required
 
 This will get a specific sensitive via the sensitive uuid.
 
-### Example
+### Example {#sensitivesnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -75,26 +77,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | **String**|  | 
+ **sensitive** | **String** |  | 
 
-### Return type
+### Return type {#sensitivesnapshot-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#sensitivesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **updateSensitive** {#updatesensitive}
 > Sensitive updateSensitive(sensitive)
@@ -103,7 +103,7 @@ No authorization required
 
 This will update a specific sensitive
 
-### Example
+### Example {#updatesensitive-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -118,24 +118,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#updatesensitive-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sensitive** | [**Sensitive**](../models/Sensitive)|  | [optional] 
+ **sensitive** | [**Sensitive**](../models/Sensitive) |  | [optional] 
 
-### Return type
+### Return type {#updatesensitive-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#updatesensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#updatesensitive-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

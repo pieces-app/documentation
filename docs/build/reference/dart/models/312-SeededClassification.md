@@ -1,9 +1,8 @@
-# SeededClassification
+---
+title: SeededClassification | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededClassification
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  | [optional] 
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] 
 **rendering** | [**ClassificationRenderingEnum**](ClassificationRenderingEnum) |  | [optional] 
-
-
 
 

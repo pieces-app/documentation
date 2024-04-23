@@ -1,3 +1,8 @@
+---
+title: SeededConnectorConnection | Kotlin SDK
+---
+
+
 
 # SeededConnectorConnection
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **application** | [**SeededTrackedApplication**](SeededTrackedApplication) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

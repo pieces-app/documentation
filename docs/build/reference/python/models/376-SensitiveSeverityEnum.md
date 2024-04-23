@@ -1,3 +1,7 @@
+---
+title: SensitiveSeverityEnum | Python SDK
+---
+
 # SensitiveSeverityEnum
 
 This is the enum used to describe the severity of our sensitive model. ie low, moderate, high
@@ -6,6 +10,5 @@ This is the enum used to describe the severity of our sensitive model. ie low, m
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

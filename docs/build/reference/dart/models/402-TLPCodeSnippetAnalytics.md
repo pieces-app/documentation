@@ -1,9 +1,8 @@
-# TLPCodeSnippetAnalytics
+---
+title: TLPCodeSnippetAnalytics | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeSnippetAnalytics
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +14,5 @@ Name | Type | Description | Notes
 **suggested** | [**TLPCodeSnippetSuggestedInteractions**](TLPCodeSnippetSuggestedInteractions) |  | [optional] 
 **tagify** | [**TLPCodeFragmentTagify**](TLPCodeFragmentTagify) |  | [optional] 
 **description** | [**TLPCodeFragmentDescription**](TLPCodeFragmentDescription) |  | [optional] 
-
-
 
 

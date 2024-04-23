@@ -1,6 +1,10 @@
+---
+title: Tags API | Dart SDK
+---
+
 # Tags API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will create a new tag.
 
-### Example
+### Example {#tagscreatenewtag-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,27 +37,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagscreatenewtag-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededTag** | [**SeededTag**](../models/SeededTag)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededTag** | [**SeededTag**](../models/SeededTag) |  | [optional] 
 
-### Return type
+### Return type {#tagscreatenewtag-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tagscreatenewtag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagscreatenewtag-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **tagsDeleteSpecificTag** {#tagsdeletespecifictag}
 > tagsDeleteSpecificTag(tag)
@@ -62,7 +64,7 @@ No authorization required
 
 This will delete a specific tag.
 
-### Example
+### Example {#tagsdeletespecifictag-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -76,26 +78,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagsdeletespecifictag-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **tag** | **String**| tag id | 
+ **tag** | **String** | tag id | 
 
-### Return type
+### Return type {#tagsdeletespecifictag-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tagsdeletespecifictag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagsdeletespecifictag-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **tagsExists** {#tagsexists}
 > ExistingMetadata tagsExists(existentMetadata)
@@ -104,7 +104,7 @@ No authorization required
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
 
-### Example
+### Example {#tagsexists-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,26 +119,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagsexists-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
+ **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata) |  | [optional] 
 
-### Return type
+### Return type {#tagsexists-return-type}
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### Authorization
+### Authorization {#tagsexists-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagsexists-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **tagsSnapshot** {#tagssnapshot}
 > Tags tagsSnapshot(transferables)
@@ -147,7 +145,7 @@ No authorization required
 
 This will get a snapshot of all of your tags.
 
-### Example
+### Example {#tagssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -162,24 +160,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#tagssnapshot-return-type}
 
 [**Tags**](../models/Tags)
 
-### Authorization
+### Authorization {#tagssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

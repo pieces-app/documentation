@@ -1,16 +1,13 @@
-# AssetSearchSpace
+---
+title: AssetSearchSpace | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AssetSearchSpace
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **identifers** | [**FlattenedAssets**](FlattenedAssets) |  | 
-
-
 
 

@@ -1,3 +1,7 @@
+---
+title: TagCategoryEnum | Python SDK
+---
+
 # TagCategoryEnum
 
 This is an enum that describes the category that that this tag is apart of.
@@ -6,6 +10,5 @@ This is an enum that describes the category that that this tag is apart of.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

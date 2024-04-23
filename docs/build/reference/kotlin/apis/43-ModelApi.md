@@ -1,6 +1,10 @@
+---
+title: Model API | Kotlin SDK
+---
+
 # Model API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,41 +24,41 @@ Method | HTTP request | Description
 
 Downloads a specific model to your local machine.
 
-### Example
+### Example {#modelspecificmodeldownload-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelDownload(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownload")
+    println("4xx response calling Model API#modelSpecificModelDownload")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownload")
+    println("5xx response calling Model API#modelSpecificModelDownload")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelspecificmodeldownload-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelspecificmodeldownload-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelspecificmodeldownload-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelspecificmodeldownload-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -66,41 +70,41 @@ No authorization required
 
 Cancels a specific model download that is currently in progress.
 
-### Example
+### Example {#modelspecificmodeldownloadcancel-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelDownloadCancel(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownloadCancel")
+    println("4xx response calling Model API#modelSpecificModelDownloadCancel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownloadCancel")
+    println("5xx response calling Model API#modelSpecificModelDownloadCancel")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelspecificmodeldownloadcancel-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelspecificmodeldownloadcancel-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelspecificmodeldownloadcancel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelspecificmodeldownloadcancel-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -112,41 +116,41 @@ No authorization required
 
 This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
-### Example
+### Example {#modelspecificmodeldownloadprogress-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : ModelDownloadProgress = apiInstance.modelSpecificModelDownloadProgress(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelDownloadProgress")
+    println("4xx response calling Model API#modelSpecificModelDownloadProgress")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelDownloadProgress")
+    println("5xx response calling Model API#modelSpecificModelDownloadProgress")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelspecificmodeldownloadprogress-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelspecificmodeldownloadprogress-return-type}
 
 [**ModelDownloadProgress**](../models/ModelDownloadProgress)
 
-### Authorization
+### Authorization {#modelspecificmodeldownloadprogress-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelspecificmodeldownloadprogress-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -158,41 +162,41 @@ No authorization required
 
 Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
-### Example
+### Example {#modelspecificmodelload-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelLoad(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelLoad")
+    println("4xx response calling Model API#modelSpecificModelLoad")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelLoad")
+    println("5xx response calling Model API#modelSpecificModelLoad")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelspecificmodelload-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelspecificmodelload-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelspecificmodelload-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelspecificmodelload-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -204,41 +208,41 @@ No authorization required
 
 Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
-### Example
+### Example {#modelspecificmodelunload-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelSpecificModelUnload(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelSpecificModelUnload")
+    println("4xx response calling Model API#modelSpecificModelUnload")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelSpecificModelUnload")
+    println("5xx response calling Model API#modelSpecificModelUnload")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelspecificmodelunload-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelspecificmodelunload-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelspecificmodelunload-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelspecificmodelunload-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -250,41 +254,41 @@ No authorization required
 
 Updates a machine learning model. This functionality is exclusively available for models with the &#39;custom:true&#39; setting.
 
-### Example
+### Example {#modelupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : Model =  // Model | 
 try {
     val result : Model = apiInstance.modelUpdate(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelUpdate")
+    println("4xx response calling Model API#modelUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelUpdate")
+    println("5xx response calling Model API#modelUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**Model**](../models/Model)|  | [optional]
 
-### Return type
+### Return type {#modelupdate-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -296,41 +300,41 @@ No authorization required
 
 Retrieves a specific ML model.
 
-### Example
+### Example {#modelsspecificmodelsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ModelApi()
+val apiInstance = Model API()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     val result : Model = apiInstance.modelsSpecificModelSnapshot(model)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ModelApi#modelsSpecificModelSnapshot")
+    println("4xx response calling Model API#modelsSpecificModelSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ModelApi#modelsSpecificModelSnapshot")
+    println("5xx response calling Model API#modelsSpecificModelSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#modelsspecificmodelsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **kotlin.String**| model id |
 
-### Return type
+### Return type {#modelsspecificmodelsnapshot-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#modelsspecificmodelsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#modelsspecificmodelsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

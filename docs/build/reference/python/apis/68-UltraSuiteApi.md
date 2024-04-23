@@ -1,6 +1,10 @@
+---
+title: UltraSuite API | Python SDK
+---
+
 # UltraSuite API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This Endpoint will create an Asset that is sent from UltraSuite.
 
-### Example
+### Example {#assets_create_ultra_suite_asset-example}
 
 
 ```python
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UltraSuiteApi(api_client)
+    api_instance = UltraSuite API(api_client)
     seeded_ultra_suite_asset = pieces_os_client.SeededUltraSuiteAsset() # SeededUltraSuiteAsset |  (optional)
 
     try:
@@ -48,31 +52,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_create_ultra_suite_asset-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_ultra_suite_asset** | [**SeededUltraSuiteAsset**](../models/SeededUltraSuiteAsset)|  | [optional] 
 
-### Return type
+### Return type {#assets_create_ultra_suite_asset-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assets_create_ultra_suite_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_create_ultra_suite_asset-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_create_ultra_suite_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

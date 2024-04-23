@@ -1,15 +1,12 @@
-# QGPTTaskPipelineForCodeExplanation
+---
+title: QGPTTaskPipelineForCodeExplanation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTTaskPipelineForCodeExplanation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-
-
 
 

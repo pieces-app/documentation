@@ -1,3 +1,8 @@
+---
+title: Ranges | Kotlin SDK
+---
+
+
 
 # Ranges
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **indices** | **kotlin.collections.Map&lt;kotlin.String, kotlin.Int&gt;** | This is a Map&lt;String, int&gt; where the the key is an range id. |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
 **continuous** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

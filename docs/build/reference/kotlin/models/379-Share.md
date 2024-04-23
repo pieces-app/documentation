@@ -1,3 +1,8 @@
+---
+title: Share | Kotlin SDK
+---
+
+
 
 # Share
 
@@ -17,6 +22,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** | this is an optional name we can give to the link, ie ?p&#x3D;JAVASCRIPT or what ever the user wants as long as it is available. |  [optional]
 **distributions** | [**Distributions**](Distributions) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

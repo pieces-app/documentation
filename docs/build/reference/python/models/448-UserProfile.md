@@ -1,3 +1,7 @@
+---
+title: UserProfile | Python SDK
+---
+
 # UserProfile
 
 This is the model for a user logged into Pieces.
@@ -19,23 +23,5 @@ Name | Type | Description | Notes
 **allocation** | [**AllocationCloud**](AllocationCloud) |  | [optional] 
 **providers** | [**ExternalProviders**](ExternalProviders) |  | [optional] 
 **auth0** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.user_profile import UserProfile
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of UserProfile from a JSON string
-user_profile_instance = UserProfile.from_json(json)
-# print the JSON string representation of the object
-print(UserProfile.to_json())
-
-# convert the object into a dict
-user_profile_dict = user_profile_instance.to_dict()
-# create an instance of UserProfile from a dict
-user_profile_form_dict = user_profile.from_dict(user_profile_dict)
-```
 
 

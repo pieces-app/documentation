@@ -1,3 +1,8 @@
+---
+title: ConversationMessageSentimentEnum | Kotlin SDK
+---
+
+
 
 # ConversationMessageSentimentEnum
 
@@ -9,6 +14,7 @@
     * `DISLIKE` (value: `"DISLIKE"`)
 
     * `REPORT` (value: `"REPORT"`)
+
 
 
 

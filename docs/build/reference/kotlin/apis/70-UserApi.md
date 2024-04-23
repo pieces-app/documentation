@@ -1,6 +1,10 @@
+---
+title: User API | Kotlin SDK
+---
+
 # User API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,36 +26,36 @@ Method | HTTP request | Description
 
 An endpoint to clear the current user. 
 
-### Example
+### Example {#clearuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     apiInstance.clearUser()
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#clearUser")
+    println("4xx response calling User API#clearUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#clearUser")
+    println("5xx response calling User API#clearUser")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#clearuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#clearuser-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#clearuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#clearuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -63,37 +67,37 @@ No authorization required
 
 This will refresh a user.
 
-### Example
+### Example {#refreshuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : UserProfile = apiInstance.refreshUser()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#refreshUser")
+    println("4xx response calling User API#refreshUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#refreshUser")
+    println("5xx response calling User API#refreshUser")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#refreshuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#refreshuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#refreshuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#refreshuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -105,37 +109,37 @@ No authorization required
 
 This will select the current user.
 
-### Example
+### Example {#selectuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val auth0User : Auth0User =  // Auth0User | 
 try {
     val result : UserProfile = apiInstance.selectUser(auth0User)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#selectUser")
+    println("4xx response calling User API#selectUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#selectUser")
+    println("5xx response calling User API#selectUser")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#selectuser-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional]
 
-### Return type
+### Return type {#selectuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#selectuser-authorization}
 
 
 Configure auth0:
@@ -145,7 +149,7 @@ Configure auth0:
 Configure auth0:
     ApiClient.accessToken = ""
 
-### HTTP request headers
+### HTTP request headers {#selectuser-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -157,37 +161,37 @@ Configure auth0:
 
 Provides a WebSocket connection that streams user data.
 
-### Example
+### Example {#streamuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : UserProfile = apiInstance.streamUser()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#streamUser")
+    println("4xx response calling User API#streamUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#streamUser")
+    println("5xx response calling User API#streamUser")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#streamuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#streamuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#streamuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#streamuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -199,41 +203,41 @@ No authorization required
 
 This will update a specific user in the database.
 
-### Example
+### Example {#updateuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userProfile : UserProfile =  // UserProfile | 
 try {
     val result : UserProfile = apiInstance.updateUser(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#updateUser")
+    println("4xx response calling User API#updateUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#updateUser")
+    println("5xx response calling User API#updateUser")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#updateuser-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
 
-### Return type
+### Return type {#updateuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#updateuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#updateuser-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -245,41 +249,41 @@ No authorization required
 
 This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
 
-### Example
+### Example {#userbetastatus-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userBetaStatus : UserBetaStatus =  // UserBetaStatus | 
 try {
     val result : UserBetaStatus = apiInstance.userBetaStatus(userBetaStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userBetaStatus")
+    println("4xx response calling User API#userBetaStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userBetaStatus")
+    println("5xx response calling User API#userBetaStatus")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#userbetastatus-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional]
 
-### Return type
+### Return type {#userbetastatus-return-type}
 
 [**UserBetaStatus**](../models/UserBetaStatus)
 
-### Authorization
+### Authorization {#userbetastatus-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userbetastatus-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -291,37 +295,37 @@ Your GET endpoint
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh &amp;&amp; get your access tokens to access these providers.
 
-### Example
+### Example {#userproviders-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : ReturnedUserProfile = apiInstance.userProviders()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userProviders")
+    println("4xx response calling User API#userProviders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userProviders")
+    println("5xx response calling User API#userProviders")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#userproviders-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#userproviders-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#userproviders-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userproviders-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -333,37 +337,37 @@ No authorization required
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
 
-### Example
+### Example {#usersnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 try {
     val result : ReturnedUserProfile = apiInstance.userSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userSnapshot")
+    println("4xx response calling User API#userSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userSnapshot")
+    println("5xx response calling User API#userSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#usersnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#usersnapshot-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#usersnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#usersnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -375,41 +379,41 @@ No authorization required
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \&quot;mark\&quot; is the vanityname.
 
-### Example
+### Example {#userupdatevanity-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UserApi()
+val apiInstance = User API()
 val userProfile : UserProfile =  // UserProfile | This will take an update userProfile, with the updated vanity name!
 try {
     val result : UserProfile = apiInstance.userUpdateVanity(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UserApi#userUpdateVanity")
+    println("4xx response calling User API#userUpdateVanity")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UserApi#userUpdateVanity")
+    println("5xx response calling User API#userUpdateVanity")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#userupdatevanity-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional]
 
-### Return type
+### Return type {#userupdatevanity-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#userupdatevanity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userupdatevanity-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

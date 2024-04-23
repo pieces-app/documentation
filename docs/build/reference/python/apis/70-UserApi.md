@@ -1,6 +1,10 @@
+---
+title: User API | Python SDK
+---
+
 # User API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +26,7 @@ Method | HTTP request | Description
 
 An endpoint to clear the current user. 
 
-### Example
+### Example {#clear_user-example}
 
 
 ```python
@@ -40,7 +44,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/clear
@@ -51,30 +55,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#clear_user-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#clear_user-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#clear_user-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#clear_user-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-### HTTP response details
+
+### HTTP response details {#clear_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
-
-
 
 ## **refresh_user** {#refresh_user}
 > UserProfile refresh_user()
@@ -83,7 +86,7 @@ No authorization required
 
 This will refresh a user.
 
-### Example
+### Example {#refresh_user-example}
 
 
 ```python
@@ -102,7 +105,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/refresh [GET]
@@ -115,31 +118,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#refresh_user-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#refresh_user-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#refresh_user-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#refresh_user-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#refresh_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **select_user** {#select_user}
 > UserProfile select_user(auth0_user=auth0_user)
@@ -148,7 +150,7 @@ No authorization required
 
 This will select the current user.
 
-### Example
+### Example {#select_user-example}
 
 * OAuth Authentication (auth0):
 * OAuth Authentication (auth0):
@@ -181,7 +183,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     auth0_user = pieces_os_client.Auth0User() # Auth0User |  (optional)
 
     try:
@@ -195,33 +197,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#select_user-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **auth0_user** | [**Auth0User**](../models/Auth0User)|  | [optional] 
 
-### Return type
+### Return type {#select_user-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#select_user-authorization}
 
 
 
-### HTTP request headers
+### HTTP request headers {#select_user-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#select_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **stream_user** {#stream_user}
 > UserProfile stream_user()
@@ -230,7 +231,7 @@ Name | Type | Description  | Notes
 
 Provides a WebSocket connection that streams user data.
 
-### Example
+### Example {#stream_user-example}
 
 
 ```python
@@ -249,7 +250,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user/stream [WS]
@@ -262,30 +263,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#stream_user-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#stream_user-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#stream_user-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#stream_user-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#stream_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **update_user** {#update_user}
 > UserProfile update_user(user_profile=user_profile)
@@ -294,7 +294,7 @@ No authorization required
 
 This will update a specific user in the database.
 
-### Example
+### Example {#update_user-example}
 
 
 ```python
@@ -313,7 +313,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_profile = pieces_os_client.UserProfile() # UserProfile |  (optional)
 
     try:
@@ -327,33 +327,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#update_user-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_profile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
 
-### Return type
+### Return type {#update_user-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#update_user-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#update_user-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#update_user-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **user_beta_status** {#user_beta_status}
 > UserBetaStatus user_beta_status(user_beta_status=user_beta_status)
@@ -362,7 +361,7 @@ No authorization required
 
 This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
 
-### Example
+### Example {#user_beta_status-example}
 
 
 ```python
@@ -381,7 +380,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_beta_status = pieces_os_client.UserBetaStatus() # UserBetaStatus |  (optional)
 
     try:
@@ -395,35 +394,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#user_beta_status-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_beta_status** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
 
-### Return type
+### Return type {#user_beta_status-return-type}
 
 [**UserBetaStatus**](../models/UserBetaStatus)
 
-### Authorization
+### Authorization {#user_beta_status-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#user_beta_status-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#user_beta_status-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to change the beta status |  -  |
-
-
 
 ## **user_providers** {#user_providers}
 > ReturnedUserProfile user_providers()
@@ -432,7 +430,7 @@ Your GET endpoint
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
 
-### Example
+### Example {#user_providers-example}
 
 
 ```python
@@ -451,7 +449,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # Your GET endpoint
@@ -464,32 +462,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#user_providers-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#user_providers-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#user_providers-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#user_providers-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#user_providers-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **501** | Not Implemented |  -  |
-
-
 
 ## **user_snapshot** {#user_snapshot}
 > ReturnedUserProfile user_snapshot()
@@ -498,7 +495,7 @@ No authorization required
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
 
-### Example
+### Example {#user_snapshot-example}
 
 
 ```python
@@ -517,7 +514,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
 
     try:
         # /user [GET]
@@ -530,30 +527,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#user_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#user_snapshot-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#user_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#user_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#user_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **user_update_vanity** {#user_update_vanity}
 > UserProfile user_update_vanity(user_profile=user_profile)
@@ -562,7 +558,7 @@ No authorization required
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
 
-### Example
+### Example {#user_update_vanity-example}
 
 
 ```python
@@ -581,7 +577,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.UserApi(api_client)
+    api_instance = User API(api_client)
     user_profile = pieces_os_client.UserProfile() # UserProfile | This will take an update userProfile, with the updated vanity name! (optional)
 
     try:
@@ -595,27 +591,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#user_update_vanity-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_profile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional] 
 
-### Return type
+### Return type {#user_update_vanity-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#user_update_vanity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#user_update_vanity-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#user_update_vanity-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -624,6 +621,4 @@ No authorization required
 **409** | Conflict, This means that we were unable to update the username because it was already taken. |  -  |
 **500** | Unable to create a username. Internal Server Error. |  -  |
 **511** | Network Authentication Required, Cannot Update the Vanityname of the user because the user is either not signed in or in not connected to the cloud. |  -  |
-
-
 

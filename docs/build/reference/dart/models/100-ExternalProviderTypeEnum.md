@@ -1,14 +1,11 @@
-# ExternalProviderTypeEnum
+---
+title: ExternalProviderTypeEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ExternalProviderTypeEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

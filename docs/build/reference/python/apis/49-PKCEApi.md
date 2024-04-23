@@ -1,6 +1,10 @@
+---
+title: PKCE API | Python SDK
+---
+
 # PKCE API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +22,7 @@ Method | HTTP request | Description
 
 This is a function to Clear a PKCE Authentication Flow
 
-### Example
+### Example {#clear_pkce-example}
 
 
 ```python
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
 
     try:
         # /pkce/clear [POST]
@@ -47,30 +51,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#clear_pkce-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#clear_pkce-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#clear_pkce-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#clear_pkce-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
 
-### HTTP response details
+
+### HTTP response details {#clear_pkce-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
-
-
 
 ## **generate_code** {#generate_code}
 > PKCE generate_code(seeded_pkce=seeded_pkce)
@@ -79,7 +82,7 @@ No authorization required
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
 
-### Example
+### Example {#generate_code-example}
 
 
 ```python
@@ -99,7 +102,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     seeded_pkce = pieces_os_client.SeededPKCE() # SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
 
     try:
@@ -113,33 +116,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#generate_code-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_pkce** | [**SeededPKCE**](../models/SeededPKCE)| All of the properties that the client might want to send over to authorize a PKCE Code Flow | [optional] 
 
-### Return type
+### Return type {#generate_code-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#generate_code-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#generate_code-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#generate_code-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **generate_token** {#generate_token}
 > PKCE generate_token(tokenized_pkce=tokenized_pkce)
@@ -148,7 +150,7 @@ No authorization required
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 
-### Example
+### Example {#generate_token-example}
 
 
 ```python
@@ -168,7 +170,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     tokenized_pkce = pieces_os_client.TokenizedPKCE() # TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
 
     try:
@@ -182,33 +184,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#generate_token-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenized_pkce** | [**TokenizedPKCE**](../models/TokenizedPKCE)| The needed properties to exchange a PKCE Code for an OAuth Token | [optional] 
 
-### Return type
+### Return type {#generate_token-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#generate_token-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#generate_token-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#generate_token-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **get_challenge** {#get_challenge}
 > PKCE get_challenge()
@@ -217,7 +218,7 @@ Your GET endpoint
 
 An endpoint that returns a PKCE Challenge
 
-### Example
+### Example {#get_challenge-example}
 
 
 ```python
@@ -236,7 +237,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
 
     try:
         # Your GET endpoint
@@ -249,30 +250,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_challenge-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_challenge-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#get_challenge-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#get_challenge-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#get_challenge-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **respond_with_code** {#respond_with_code}
 > PKCE respond_with_code(code, state, var_schema=var_schema)
@@ -281,7 +281,7 @@ No authorization required
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
 
-### Example
+### Example {#respond_with_code-example}
 
 
 ```python
@@ -301,7 +301,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.PKCEApi(api_client)
+    api_instance = PKCE API(api_client)
     code = 'code_example' # str | The PKCE Code to be used to access a Token.
     state = 'state_example' # str | Likely the state that will be returned which should match the requested state as well as the nonce
     var_schema = pieces_os_client.EmbeddedModelSchema() # EmbeddedModelSchema |  (optional)
@@ -317,7 +317,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#respond_with_code-parameters}
 
 
 Name | Type | Description  | Notes
@@ -326,24 +326,23 @@ Name | Type | Description  | Notes
  **state** | **str**| Likely the state that will be returned which should match the requested state as well as the nonce | 
  **var_schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional] 
 
-### Return type
+### Return type {#respond_with_code-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#respond_with_code-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#respond_with_code-http-request-headers}
 
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json, text/html
 
-### HTTP response details
+
+### HTTP response details {#respond_with_code-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

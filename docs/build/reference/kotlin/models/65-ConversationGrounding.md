@@ -1,3 +1,8 @@
+---
+title: ConversationGrounding | Kotlin SDK
+---
+
+
 
 # ConversationGrounding
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  |  [optional]
+
 
 
 

@@ -1,3 +1,8 @@
+---
+title: RelevantQGPTSeed | Kotlin SDK
+---
+
+
 
 # RelevantQGPTSeed
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **seed** | [**Seed**](Seed) |  |  [optional]
 **path** | **kotlin.String** | This is an optional file path |  [optional]
 **asset** | [**ReferencedAsset**](ReferencedAsset) |  |  [optional]
+
 
 
 

@@ -1,6 +1,10 @@
+---
+title: Ranges API | TypeScript SDK
+---
+
 # Ranges API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will create a new Range in the database.
 
-### Example
+### Example {#rangescreatenewrange-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -23,33 +27,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.RangesApi(configuration)
 
 const body: Pieces.RangesCreateNewRangeRequest = {
-    // SeededRange (optional)
-    seededRange: ,
+// SeededRange (optional)
+seededRange: ,
 };
 
 apiInstance.rangesCreateNewRange(body).then((data: Range) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#rangescreatenewrange-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededRange** | **SeededRange**|  |
 
 
-### Return type
+### Return type {#rangescreatenewrange-return-type}
 
 [**Range**](../models/Range)
 
-### HTTP request headers
+### HTTP request headers {#rangescreatenewrange-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#rangescreatenewrange-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -60,7 +65,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific range from the database!
 
-### Example
+### Example {#rangesdeletespecificrange-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -69,33 +74,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.RangesApi(configuration)
 
 const body: Pieces.RangesDeleteSpecificRangeRequest = {
-    // string | This is a identifier that is used to identify a specific range.
-    range: range_example,
+// string | This is a identifier that is used to identify a specific range.
+range: range_example,
 };
 
 apiInstance.rangesDeleteSpecificRange(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#rangesdeletespecificrange-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return type {#rangesdeletespecificrange-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#rangesdeletespecificrange-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#rangesdeletespecificrange-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -106,7 +112,7 @@ void (empty response body)
 
 This will get a snapshot of all your ranges.
 
-### Example
+### Example {#rangessnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -115,25 +121,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.RangesApi(configuration)
 
 apiInstance.rangesSnapshot().then((data: Ranges) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#rangessnapshot-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#rangessnapshot-return-type}
 
 [**Ranges**](../models/Ranges)
 
-### HTTP request headers
+### HTTP request headers {#rangessnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#rangessnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

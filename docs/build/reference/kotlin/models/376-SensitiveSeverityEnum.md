@@ -1,3 +1,8 @@
+---
+title: SensitiveSeverityEnum | Kotlin SDK
+---
+
+
 
 # SensitiveSeverityEnum
 
@@ -9,6 +14,7 @@
     * `MODERATE` (value: `"MODERATE"`)
 
     * `HIGH` (value: `"HIGH"`)
+
 
 
 

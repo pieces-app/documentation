@@ -1,3 +1,8 @@
+---
+title: TLPMachineLearningProcessingEvent | Kotlin SDK
+---
+
+
 
 # TLPMachineLearningProcessingEvent
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **code** | [**TLPCodeProcessing**](TLPCodeProcessing) |  |  [optional]
+
 
 
 

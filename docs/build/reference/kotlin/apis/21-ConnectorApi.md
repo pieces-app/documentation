@@ -1,6 +1,10 @@
+---
+title: Connector API | Kotlin SDK
+---
+
 # Connector API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,41 +23,41 @@ Method | HTTP request | Description
 
 Abstracts a bootup/connection for a specific context.
 
-### Example
+### Example {#connect-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val seededConnectorConnection : SeededConnectorConnection =  // SeededConnectorConnection | 
 try {
     val result : Context = apiInstance.connect(seededConnectorConnection)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#connect")
+    println("4xx response calling Connector API#connect")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#connect")
+    println("5xx response calling Connector API#connect")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#connect-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededConnectorConnection** | [**SeededConnectorConnection**](../models/SeededConnectorConnection)|  | [optional]
 
-### Return type
+### Return type {#connect-return-type}
 
 [**Context**](../models/Context)
 
-### Authorization
+### Authorization {#connect-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#connect-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -65,46 +69,46 @@ No authorization required
 
 Allows you to send a SeededAsset for future comparison.
 
-### Example
+### Example {#intention-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val application : kotlin.String = application_example // kotlin.String | 
 val seededConnectorAsset : SeededConnectorAsset =  // SeededConnectorAsset | 
 try {
     val result : kotlin.String = apiInstance.intention(application, seededConnectorAsset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#intention")
+    println("4xx response calling Connector API#intention")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#intention")
+    println("5xx response calling Connector API#intention")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#intention-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**|  |
  **seededConnectorAsset** | [**SeededConnectorAsset**](../models/SeededConnectorAsset)|  | [optional]
 
-### Return type
+### Return type {#intention-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#intention-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#intention-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **onboarded** {#onboarded}
 > kotlin.String onboarded(application, body)
@@ -113,46 +117,46 @@ No authorization required
 
 A central endpoint to manage updates to the onboarding process.
 
-### Example
+### Example {#onboarded-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
 val body : kotlin.Boolean = true // kotlin.Boolean | Whether or not that application has been onboarded.
 try {
     val result : kotlin.String = apiInstance.onboarded(application, body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#onboarded")
+    println("4xx response calling Connector API#onboarded")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#onboarded")
+    println("5xx response calling Connector API#onboarded")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#onboarded-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**| This is a uuid that represents an application |
  **body** | **kotlin.Boolean**| Whether or not that application has been onboarded. | [optional]
 
-### Return type
+### Return type {#onboarded-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#onboarded-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#onboarded-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **react** {#react}
 > kotlin.String react(application, reaction)
@@ -161,46 +165,46 @@ No authorization required
 
 This will respond to the output generated by the /suggest endpoint.
 
-### Example
+### Example {#react-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val application : kotlin.String = application_example // kotlin.String | 
 val reaction : Reaction =  // Reaction | ** This body will need to be modified.
 try {
     val result : kotlin.String = apiInstance.react(application, reaction)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#react")
+    println("4xx response calling Connector API#react")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#react")
+    println("5xx response calling Connector API#react")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#react-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**|  |
  **reaction** | [**Reaction**](../models/Reaction)| ** This body will need to be modified. | [optional]
 
-### Return type
+### Return type {#react-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#react-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#react-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **suggest** {#suggest}
 > Suggestion suggest(application, seededConnectorCreation)
@@ -209,43 +213,43 @@ No authorization required
 
 Invoked whenever a code snippet is copied from an integration. For instance, if a JetBrains user copies code, this endpoint can be called to assess whether to suggest reusing a piece (if reuse is true, the endpoint provides assets that the user may consider using), saving the code snippet, or taking no action.   **Note: This endpoint could potentially accept a SeededFormat for the request body if required.
 
-### Example
+### Example {#suggest-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val application : kotlin.String = application_example // kotlin.String | 
 val seededConnectorCreation : SeededConnectorCreation =  // SeededConnectorCreation | This is the Snippet that we will compare to all the saved assets to determine what we want to do with it!
 try {
     val result : Suggestion = apiInstance.suggest(application, seededConnectorCreation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#suggest")
+    println("4xx response calling Connector API#suggest")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#suggest")
+    println("5xx response calling Connector API#suggest")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#suggest-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**|  |
  **seededConnectorCreation** | [**SeededConnectorCreation**](../models/SeededConnectorCreation)| This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! | [optional]
 
-### Return type
+### Return type {#suggest-return-type}
 
 [**Suggestion**](../models/Suggestion)
 
-### Authorization
+### Authorization {#suggest-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#suggest-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -257,44 +261,44 @@ No authorization required
 
 Abstracts the process of packaging segments on a per-context basis.
 
-### Example
+### Example {#track-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConnectorApi()
+val apiInstance = Connector API()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
 val seededConnectorTracking : SeededConnectorTracking =  // SeededConnectorTracking | The body is able to take in several properties 
 try {
     val result : kotlin.String = apiInstance.track(application, seededConnectorTracking)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConnectorApi#track")
+    println("4xx response calling Connector API#track")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConnectorApi#track")
+    println("5xx response calling Connector API#track")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#track-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **kotlin.String**| This is a uuid that represents an application |
  **seededConnectorTracking** | [**SeededConnectorTracking**](../models/SeededConnectorTracking)| The body is able to take in several properties  | [optional]
 
-### Return type
+### Return type {#track-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#track-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#track-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 

@@ -1,3 +1,7 @@
+---
+title: ClassificationSpecificEnum | Python SDK
+---
+
 # ClassificationSpecificEnum
 
 
@@ -6,6 +10,5 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

@@ -1,3 +1,8 @@
+---
+title: FlattenedFormat | Kotlin SDK
+---
+
+
 
 # FlattenedFormat
 
@@ -23,6 +28,7 @@ Name | Type | Description | Notes
 **analysis** | [**FlattenedAnalysis**](FlattenedAnalysis) |  |  [optional]
 **relationship** | [**Relationship**](Relationship) |  |  [optional]
 **activities** | [**FlattenedActivities**](FlattenedActivities) |  |  [optional]
+
 
 
 

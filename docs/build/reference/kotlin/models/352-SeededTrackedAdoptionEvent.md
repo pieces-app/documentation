@@ -1,3 +1,8 @@
+---
+title: SeededTrackedAdoptionEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedAdoptionEvent
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **identifierDescriptionPair** | [**AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs**](AnalyticsTrackedAdoptionEventIdentifierDescriptionPairs) |  |  [optional]
+
 
 
 

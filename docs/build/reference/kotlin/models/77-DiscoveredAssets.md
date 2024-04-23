@@ -1,3 +1,8 @@
+---
+title: DiscoveredAssets | Kotlin SDK
+---
+
+
 
 # DiscoveredAssets
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **application** | **kotlin.String** | application id. | 
 **iterable** | [**kotlin.collections.List&lt;DiscoveredAsset&gt;**](DiscoveredAsset) | This is an iterable of already snippitized snippets that have been clustered.(These are assets that are going to be uploaded or at minimum the assets that we reccommend to upload) | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

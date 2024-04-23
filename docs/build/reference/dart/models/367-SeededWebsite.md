@@ -1,9 +1,8 @@
-# SeededWebsite
+---
+title: SeededWebsite | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededWebsite
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +14,5 @@ Name | Type | Description | Notes
 **name** | **String** | name of the website.(customizable and updateable as well.) | 
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **person** | **String** | this is a uuid of a person that we are going to add the website too. | [optional] 
-
-
 
 

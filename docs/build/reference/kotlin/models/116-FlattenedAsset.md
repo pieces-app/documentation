@@ -1,3 +1,8 @@
+---
+title: FlattenedAsset | Kotlin SDK
+---
+
+
 
 # FlattenedAsset
 
@@ -34,6 +39,7 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **demo** | **kotlin.Boolean** | This will let us know if this asset was generated as a &#39;demo&#39; snippet |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

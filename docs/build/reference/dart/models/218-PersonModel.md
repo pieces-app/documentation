@@ -1,9 +1,8 @@
-# PersonModel
+---
+title: PersonModel | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# PersonModel
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **model** | [**ReferencedModel**](ReferencedModel) |  | [optional] 
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **explanation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | [optional] 
-
-
 
 

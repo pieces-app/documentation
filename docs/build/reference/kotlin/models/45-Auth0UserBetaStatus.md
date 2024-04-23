@@ -1,3 +1,8 @@
+---
+title: Auth0UserBetaStatus | Kotlin SDK
+---
+
+
 
 # Auth0UserBetaStatus
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **vision** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  |  [optional]
+
 
 
 

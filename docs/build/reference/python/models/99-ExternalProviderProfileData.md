@@ -1,3 +1,7 @@
+---
+title: ExternalProviderProfileData | Python SDK
+---
+
 # ExternalProviderProfileData
 
 All of these will be optional.  Will support ProfileData from all our social providers.
@@ -44,23 +48,5 @@ Name | Type | Description | Notes
 **disk_usage** | **int** |  | [optional] 
 **collaborators** | **int** |  | [optional] 
 **two_factor_authentication** | **bool** |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.external_provider_profile_data import ExternalProviderProfileData
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ExternalProviderProfileData from a JSON string
-external_provider_profile_data_instance = ExternalProviderProfileData.from_json(json)
-# print the JSON string representation of the object
-print(ExternalProviderProfileData.to_json())
-
-# convert the object into a dict
-external_provider_profile_data_dict = external_provider_profile_data_instance.to_dict()
-# create an instance of ExternalProviderProfileData from a dict
-external_provider_profile_data_form_dict = external_provider_profile_data.from_dict(external_provider_profile_data_dict)
-```
 
 

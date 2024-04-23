@@ -1,6 +1,10 @@
+---
+title: ConversationMessages API | Dart SDK
+---
+
 # ConversationMessages API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a Message on a specific conversation.
 
-### Example
+### Example {#messagescreatespecificmessage-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -32,27 +36,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagescreatespecificmessage-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededConversationMessage** | [**SeededConversationMessage**](../models/SeededConversationMessage)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededConversationMessage** | [**SeededConversationMessage**](../models/SeededConversationMessage) |  | [optional] 
 
-### Return type
+### Return type {#messagescreatespecificmessage-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#messagescreatespecificmessage-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagescreatespecificmessage-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **messagesDeleteSpecificMessage** {#messagesdeletespecificmessage}
 > messagesDeleteSpecificMessage(message)
@@ -61,7 +63,7 @@ No authorization required
 
 This will delete a specific message.
 
-### Example
+### Example {#messagesdeletespecificmessage-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -75,26 +77,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagesdeletespecificmessage-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **message** | **String**| This is the uuid of a message. | 
+ **message** | **String** | This is the uuid of a message. | 
 
-### Return type
+### Return type {#messagesdeletespecificmessage-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#messagesdeletespecificmessage-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagesdeletespecificmessage-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **messagesSnapshot** {#messagessnapshot}
 > ConversationMessages messagesSnapshot(transferables)
@@ -103,7 +103,7 @@ No authorization required
 
 This will get all the messages.
 
-### Example
+### Example {#messagessnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -118,24 +118,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#messagessnapshot-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### Authorization
+### Authorization {#messagessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

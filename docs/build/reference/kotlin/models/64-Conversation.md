@@ -1,3 +1,8 @@
+---
+title: Conversation | Kotlin SDK
+---
+
+
 
 # Conversation
 
@@ -24,6 +29,7 @@ Name | Type | Description | Notes
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  |  [optional]
 **demo** | **kotlin.Boolean** | This will let us know if this conversation was generated as a &#39;demo&#39; conversation |  [optional]
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  |  [optional]
+
 
 
 

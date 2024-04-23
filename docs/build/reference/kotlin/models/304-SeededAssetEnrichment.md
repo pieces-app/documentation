@@ -1,3 +1,8 @@
+---
+title: SeededAssetEnrichment | Kotlin SDK
+---
+
+
 
 # SeededAssetEnrichment
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **websites** | **kotlin.Int** |  |  [optional]
 **persons** | **kotlin.Int** |  |  [optional]
 **hints** | **kotlin.Int** |  |  [optional]
+
 
 
 

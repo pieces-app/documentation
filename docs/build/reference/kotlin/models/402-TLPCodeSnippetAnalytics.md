@@ -1,3 +1,8 @@
+---
+title: TLPCodeSnippetAnalytics | Kotlin SDK
+---
+
+
 
 # TLPCodeSnippetAnalytics
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **suggested** | [**TLPCodeSnippetSuggestedInteractions**](TLPCodeSnippetSuggestedInteractions) |  |  [optional]
 **tagify** | [**TLPCodeFragmentTagify**](TLPCodeFragmentTagify) |  |  [optional]
 **description** | [**TLPCodeFragmentDescription**](TLPCodeFragmentDescription) |  |  [optional]
+
 
 
 

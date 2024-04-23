@@ -1,3 +1,8 @@
+---
+title: OCRAnalysis | Kotlin SDK
+---
+
+
 
 # OCRAnalysis
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **image** | **kotlin.String** | this is a reference the the imageAnalysis. | 
 **model** | [**Model**](Model) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

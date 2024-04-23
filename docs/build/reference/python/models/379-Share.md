@@ -1,3 +1,7 @@
+---
+title: Share | Python SDK
+---
+
 # Share
 
 This represents what information that is relavent to anything and every sharing related. v1 will look very bare and will add more and more data as we go!  if user is undefined && access is public then we have an asset that is publicly available.
@@ -19,23 +23,5 @@ Name | Type | Description | Notes
 **name** | **str** | this is an optional name we can give to the link, ie ?p&#x3D;JAVASCRIPT or what ever the user wants as long as it is available. | [optional] 
 **distributions** | [**Distributions**](Distributions) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.share import Share
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Share from a JSON string
-share_instance = Share.from_json(json)
-# print the JSON string representation of the object
-print(Share.to_json())
-
-# convert the object into a dict
-share_dict = share_instance.to_dict()
-# create an instance of Share from a dict
-share_form_dict = share.from_dict(share_dict)
-```
 
 

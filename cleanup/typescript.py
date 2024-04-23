@@ -15,8 +15,8 @@ def remove_md_links(text):
 
 
 def fix_h1_headers(text):
-    pattern = r'# (\w+?)Api'
-    replacement = r'# \1 API'
+    pattern = r' (\w+?)Api'
+    replacement = r' \1 API'
     result = re.sub(pattern, replacement, text)
     return result
 
@@ -46,6 +46,25 @@ def fix_arrow_brackets(text):
     pattern = r'<(.*?)>'
     replacement = r'\\<\1\\>'
     result = re.sub(pattern, replacement, text)
+    return result
+
+
+def delink_links(text):
+    pattern = r'https://pieces.us.auth0.com/api/v2/'
+    replacement = '`https://pieces.us.auth0.com/api/v2/`'
+    result = re.sub(pattern, replacement, text)
+
+    pattern = r'https://pieces.us.auth0.com'
+    replacement = '`https://pieces.us.auth0.com`'
+    result = re.sub(pattern, replacement, text)
+
+    pattern = r'https://auth.pieces.services/authorize'
+    replacement = '`https://auth.pieces.services/authorize`'
+    result = re.sub(pattern, replacement, result)
+
+    pattern = r'http://localhost:8080/authentication/response'
+    replacement = '`http://localhost:8080/authentication/response`'
+    result = re.sub(pattern, replacement, result)
     return result
 
 
@@ -138,6 +157,7 @@ def organize_markdown_files_in_directory(source_directory):
         transformed_content = fix_variables(transformed_content)
         transformed_content = fix_key_string_types(transformed_content)
         transformed_content = fix_arrow_brackets(transformed_content)
+        transformed_content = delink_links(transformed_content)
         transformed_content = remove_readme_links(transformed_content)
 
         # Write the transformed content back to the file

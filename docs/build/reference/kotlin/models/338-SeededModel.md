@@ -1,3 +1,8 @@
+---
+title: SeededModel | Kotlin SDK
+---
+
+
 
 # SeededModel
 
@@ -23,6 +28,7 @@ Name | Type | Description | Notes
 **cpu** | **kotlin.Boolean** | This is an optional bool that is optimized for CPU usage. |  [optional]
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens) |  |  [optional]
 **custom** | **kotlin.Boolean** | This is reserved to custommly registed models. |  [optional]
+
 
 
 

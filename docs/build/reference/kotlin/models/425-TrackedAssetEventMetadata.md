@@ -1,3 +1,8 @@
+---
+title: TrackedAssetEventMetadata | Kotlin SDK
+---
+
+
 
 # TrackedAssetEventMetadata
 
@@ -16,6 +21,7 @@ Name | Type | Description | Notes
 **&#x60;annotation&#x60;** | [**ReferencedAnnotation**](ReferencedAnnotation) |  |  [optional]
 **hint** | [**ReferencedHint**](ReferencedHint) |  |  [optional]
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor) |  |  [optional]
+
 
 
 

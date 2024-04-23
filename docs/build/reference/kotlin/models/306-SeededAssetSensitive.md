@@ -1,3 +1,8 @@
+---
+title: SeededAssetSensitive | Kotlin SDK
+---
+
+
 
 # SeededAssetSensitive
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  |  [optional]
+
 
 
 

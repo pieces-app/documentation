@@ -1,3 +1,8 @@
+---
+title: DiscoveredRelatedTag | Kotlin SDK
+---
+
+
 
 # DiscoveredRelatedTag
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **seed** | [**SeededTag**](SeededTag) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

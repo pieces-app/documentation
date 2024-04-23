@@ -1,3 +1,8 @@
+---
+title: GraphicalImageDescriptiveStatistics | Kotlin SDK
+---
+
+
 
 # GraphicalImageDescriptiveStatistics
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **os** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **user** | **kotlin.String** |  |  [optional]
+
 
 
 

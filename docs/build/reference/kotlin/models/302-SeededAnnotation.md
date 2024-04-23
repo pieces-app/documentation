@@ -1,3 +1,8 @@
+---
+title: SeededAnnotation | Kotlin SDK
+---
+
+
 
 # SeededAnnotation
 
@@ -16,6 +21,7 @@ Name | Type | Description | Notes
 **anchor** | **kotlin.String** |  |  [optional]
 **conversation** | **kotlin.String** |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
+
 
 
 

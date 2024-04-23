@@ -1,9 +1,8 @@
-# Auth0Identity
+---
+title: Auth0Identity | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Auth0Identity
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **userId** | **String** | User's unique identifier for this connection/provider. | [optional] 
 **accessToken** | **String** |  | [optional] 
 **expiresIn** | **int** |  | [optional] 
-
-
 
 

@@ -1,9 +1,8 @@
-# TLPCodeFragmentClassification
+---
+title: TLPCodeFragmentClassification | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeFragmentClassification
 
 ## Properties
 Name | Type | Description | Notes
@@ -20,7 +19,5 @@ Name | Type | Description | Notes
 **user** | **String** | identifier for the user | 
 **latency** | **num** | this is the time it takes to run this model. | [optional] 
 **system** | [**SystemExecutionInformation**](SystemExecutionInformation) |  | [optional] 
-
-
 
 

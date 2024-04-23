@@ -1,3 +1,8 @@
+---
+title: UserProfile | Kotlin SDK
+---
+
+
 
 # UserProfile
 
@@ -17,6 +22,7 @@ Name | Type | Description | Notes
 **allocation** | [**AllocationCloud**](AllocationCloud) |  |  [optional]
 **providers** | [**ExternalProviders**](ExternalProviders) |  |  [optional]
 **auth0** | [**Auth0UserMetadata**](Auth0UserMetadata) |  |  [optional]
+
 
 
 

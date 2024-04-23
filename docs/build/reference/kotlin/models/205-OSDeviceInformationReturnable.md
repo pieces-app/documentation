@@ -1,3 +1,8 @@
+---
+title: OSDeviceInformationReturnable | Kotlin SDK
+---
+
+
 
 # OSDeviceInformationReturnable
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** | this is the name of the device |  [optional]
 **version** | **kotlin.String** | this is the version of the device |  [optional]
 **hardware** | [**OSDeviceHardwareInformation**](OSDeviceHardwareInformation) |  |  [optional]
+
 
 
 

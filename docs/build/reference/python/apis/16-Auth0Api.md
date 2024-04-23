@@ -1,11 +1,15 @@
+---
+title: Auth0 API | Python SDK
+---
+
 # Auth0 API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**auth0_logout**](Auth0Api#auth0_logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorize_auth0**](Auth0Api#authorize_auth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**authorize_auth0**](Auth0Api#authorize_auth0) | **GET** /authorize | `https://auth.pieces.services/authorize` [GET]
 [**exchange_for_auth0_token**](Auth0Api#exchange_for_auth0_token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
 [**get_auth0_user_info**](Auth0Api#get_auth0_user_info) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
@@ -17,7 +21,7 @@ https://auth.pieces.services/v2/logout [GET]
 
 https://auth0.com/docs/api/authentication#logout
 
-### Example
+### Example {#auth0_logout-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.Auth0Api(api_client)
+    api_instance = Auth0 API(api_client)
     client_id = 'client_id_example' # str | The client ID of the Auth0 Instance (optional)
     return_to = 'return_to_example' # str | The URL that the logout endpoint will return to (optional)
 
@@ -50,7 +54,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#auth0_logout-parameters}
 
 
 Name | Type | Description  | Notes
@@ -58,35 +62,34 @@ Name | Type | Description  | Notes
  **client_id** | **str**| The client ID of the Auth0 Instance | [optional] 
  **return_to** | **str**| The URL that the logout endpoint will return to | [optional] 
 
-### Return type
+### Return type {#auth0_logout-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#auth0_logout-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#auth0_logout-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/html
 
-### HTTP response details
+
+### HTTP response details {#auth0_logout-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 
-
-
 ## **authorize_auth0** {#authorize_auth0}
 > ResultedPKCE authorize_auth0(audience, scope, response_type, client_id, code_challenge_method, code_challenge, response_mode, state=state, redirect_uri=redirect_uri, connection=connection, prompt=prompt)
 
-https://auth.pieces.services/authorize [GET]
+`https://auth.pieces.services/authorize` [GET]
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
 
-### Example
+### Example {#authorize_auth0-example}
 
 
 ```python
@@ -105,8 +108,8 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.Auth0Api(api_client)
-    audience = 'https://pieces.us.auth0.com/api/v2/' # str |  The unique identifier of the target API you want to access.
+    api_instance = Auth0 API(api_client)
+    audience = '`https://pieces.us.auth0.com`/api/v2/' # str |  The unique identifier of the target API you want to access.
     scope = ['scope_example'] # List[str] | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
     response_type = 'code' # str | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
     client_id = '9sW4Pa1LEjX67l6VO14u0207NLYeXnu1' # str | Your application's Client ID.
@@ -119,7 +122,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
     prompt = 'prompt_example' # str | To initiate a silent authentication request, use prompt=none (see Remarks for more info). (optional)
 
     try:
-        # https://auth.pieces.services/authorize [GET]
+        # `https://auth.pieces.services/authorize` [GET]
         api_response = api_instance.authorize_auth0(audience, scope, response_type, client_id, code_challenge_method, code_challenge, response_mode, state=state, redirect_uri=redirect_uri, connection=connection, prompt=prompt)
         print("The response of Auth0Api->authorize_auth0:\n")
         pprint(api_response)
@@ -129,7 +132,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#authorize_auth0-parameters}
 
 
 Name | Type | Description  | Notes
@@ -146,26 +149,25 @@ Name | Type | Description  | Notes
  **connection** | **str**| The name of the connection configured to your application. | [optional] 
  **prompt** | **str**| To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). | [optional] 
 
-### Return type
+### Return type {#authorize_auth0-return-type}
 
 [**ResultedPKCE**](../models/ResultedPKCE)
 
-### Authorization
+### Authorization {#authorize_auth0-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#authorize_auth0-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/x-www-form-urlencoded
 
-### HTTP response details
+
+### HTTP response details {#authorize_auth0-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **exchange_for_auth0_token** {#exchange_for_auth0_token}
 > OAuthToken exchange_for_auth0_token(grant_type, client_id, code, redirect_uri, code_verifier, var_schema=var_schema, audience=audience)
@@ -174,7 +176,7 @@ https://auth.pieces.services/oauth/token [POST]
 
 An endpoint to generate a OAuth Token for an authentication flow. 
 
-### Example
+### Example {#exchange_for_auth0_token-example}
 
 
 ```python
@@ -194,14 +196,14 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.Auth0Api(api_client)
+    api_instance = Auth0 API(api_client)
     grant_type = 'grant_type_example' # str | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
     client_id = 'client_id_example' # str | Your application's Client ID.
     code = 'code_example' # str | The Authorization Code received from the initial /authorize call.
     redirect_uri = 'redirect_uri_example' # str | This is required only if it was set at the GET /authorize endpoint. The values must match.
     code_verifier = 'code_verifier_example' # str | Cryptographically random key that was used to generate the code_challenge passed to /authorize.
     var_schema = pieces_os_client.EmbeddedModelSchema() # EmbeddedModelSchema |  (optional)
-    audience = 'audience_example' # str | The audience domain: i.e. https://pieces.us.auth0.com (optional)
+    audience = 'audience_example' # str | The audience domain: i.e. `https://pieces.us.auth0.com` (optional)
 
     try:
         # https://auth.pieces.services/oauth/token [POST]
@@ -214,7 +216,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#exchange_for_auth0_token-parameters}
 
 
 Name | Type | Description  | Notes
@@ -225,28 +227,27 @@ Name | Type | Description  | Notes
  **redirect_uri** | **str**| This is required only if it was set at the GET /authorize endpoint. The values must match. | 
  **code_verifier** | **str**| Cryptographically random key that was used to generate the code_challenge passed to /authorize. | 
  **var_schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional] 
- **audience** | **str**| The audience domain: i.e. https://pieces.us.auth0.com | [optional] 
+ **audience** | **str**| The audience domain: i.e. `https://pieces.us.auth0.com` | [optional] 
 
-### Return type
+### Return type {#exchange_for_auth0_token-return-type}
 
 [**OAuthToken**](../models/OAuthToken)
 
-### Authorization
+### Authorization {#exchange_for_auth0_token-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#exchange_for_auth0_token-http-request-headers}
 
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#exchange_for_auth0_token-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **get_auth0_user_info** {#get_auth0_user_info}
 > Auth0User get_auth0_user_info()
@@ -255,7 +256,7 @@ https://auth.pieces.services/userinfo [GET]
 
 Get the users info from the Auth0 API
 
-### Example
+### Example {#get_auth0_user_info-example}
 
 * OAuth Authentication (auth0):
 * OAuth Authentication (auth0):
@@ -287,7 +288,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.Auth0Api(api_client)
+    api_instance = Auth0 API(api_client)
 
     try:
         # https://auth.pieces.services/userinfo [GET]
@@ -300,28 +301,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_auth0_user_info-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_auth0_user_info-return-type}
 
 [**Auth0User**](../models/Auth0User)
 
-### Authorization
+### Authorization {#get_auth0_user_info-authorization}
 
 
 
-### HTTP request headers
+### HTTP request headers {#get_auth0_user_info-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#get_auth0_user_info-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

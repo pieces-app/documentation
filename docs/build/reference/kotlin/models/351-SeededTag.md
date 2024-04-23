@@ -1,3 +1,8 @@
+---
+title: SeededTag | Kotlin SDK
+---
+
+
 
 # SeededTag
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  |  [optional]
 **person** | **kotlin.String** | uuid of the person, you want to add this tag too |  [optional]
+
 
 
 

@@ -1,3 +1,7 @@
+---
+title: SearchedMatchEnum | Python SDK
+---
+
 # SearchedMatchEnum
 
 
@@ -5,6 +9,5 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

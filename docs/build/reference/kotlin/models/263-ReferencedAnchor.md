@@ -1,3 +1,8 @@
+---
+title: ReferencedAnchor | Kotlin SDK
+---
+
+
 
 # ReferencedAnchor
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reference** | [**FlattenedAnchor**](FlattenedAnchor) |  |  [optional]
+
 
 
 

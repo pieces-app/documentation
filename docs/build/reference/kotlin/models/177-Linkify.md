@@ -1,3 +1,8 @@
+---
+title: Linkify | Kotlin SDK
+---
+
+
 
 # Linkify
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **asset** | [**Asset**](Asset) |  |  [optional]
 **users** | [**kotlin.collections.List&lt;SeededUser&gt;**](SeededUser) | this is an array of users. |  [optional]
 **distributions** | [**SeededDistributions**](SeededDistributions) |  |  [optional]
+
 
 
 

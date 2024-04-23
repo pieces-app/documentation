@@ -1,16 +1,13 @@
-# QGPTAgentRelatedRoutes
+---
+title: QGPTAgentRelatedRoutes | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTAgentRelatedRoutes
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **people** | **bool** | optional bool, that will say if we reccomend to run related.people on this conversation, IFF set to TRUE. | [optional] 
-
-
 
 

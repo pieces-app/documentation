@@ -1,3 +1,8 @@
+---
+title: SeededUltraSuiteAsset | Kotlin SDK
+---
+
+
 
 # SeededUltraSuiteAsset
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** | (optional) name is the name of the file |  [optional]
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
 **description** | **kotlin.String** |  |  [optional]
+
 
 
 

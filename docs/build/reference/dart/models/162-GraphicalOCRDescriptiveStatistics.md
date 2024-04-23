@@ -1,9 +1,8 @@
-# GraphicalOCRDescriptiveStatistics
+---
+title: GraphicalOCRDescriptiveStatistics | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GraphicalOCRDescriptiveStatistics
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **os** | **String** |  | 
 **confidence** | [**GraphicalOCRDescriptiveStatisticsConfidence**](GraphicalOCRDescriptiveStatisticsConfidence) |  | 
 **duration** | **String** |  | 
-
-
 
 

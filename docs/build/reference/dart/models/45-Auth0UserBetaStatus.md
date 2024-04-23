@@ -1,16 +1,13 @@
-# Auth0UserBetaStatus
+---
+title: Auth0UserBetaStatus | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Auth0UserBetaStatus
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **vision** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
-
-
 
 

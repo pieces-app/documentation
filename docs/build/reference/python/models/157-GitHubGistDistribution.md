@@ -1,3 +1,7 @@
+---
+title: GitHubGistDistribution | Python SDK
+---
+
 # GitHubGistDistribution
 
 This is a published Github Gist.
@@ -16,23 +20,5 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **github_id** | **str** | This is the id that github uses to represent the gist. | 
 **url** | **str** | This is the url where the gist is. | 
-
-## Example
-
-```python
-from pieces_os_client.models.git_hub_gist_distribution import GitHubGistDistribution
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of GitHubGistDistribution from a JSON string
-git_hub_gist_distribution_instance = GitHubGistDistribution.from_json(json)
-# print the JSON string representation of the object
-print(GitHubGistDistribution.to_json())
-
-# convert the object into a dict
-git_hub_gist_distribution_dict = git_hub_gist_distribution_instance.to_dict()
-# create an instance of GitHubGistDistribution from a dict
-git_hub_gist_distribution_form_dict = git_hub_gist_distribution.from_dict(git_hub_gist_distribution_dict)
-```
 
 

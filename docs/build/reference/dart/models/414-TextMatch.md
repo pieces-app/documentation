@@ -1,9 +1,8 @@
-# TextMatch
+---
+title: TextMatch | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TextMatch
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **group** | [**TextLocation**](TextLocation) |  | 
 **subgroup** | [**TextLocation**](TextLocation) |  | [optional] 
-
-
 
 

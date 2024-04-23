@@ -1,3 +1,8 @@
+---
+title: Relationship | Kotlin SDK
+---
+
+
 
 # Relationship
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
+
 
 
 

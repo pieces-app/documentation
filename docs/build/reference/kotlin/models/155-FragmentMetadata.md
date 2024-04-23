@@ -1,3 +1,8 @@
+---
+title: FragmentMetadata | Kotlin SDK
+---
+
+
 
 # FragmentMetadata
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
+
 
 
 

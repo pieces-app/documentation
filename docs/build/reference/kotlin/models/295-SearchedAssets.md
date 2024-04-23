@@ -1,3 +1,8 @@
+---
+title: SearchedAssets | Kotlin SDK
+---
+
+
 
 # SearchedAssets
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **suggested** | **java.math.BigDecimal** | the number of fuzzy/suggested search results. | 
 **exact** | **java.math.BigDecimal** | the number of exact results | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

@@ -1,3 +1,8 @@
+---
+title: Annotation | Kotlin SDK
+---
+
+
 
 # Annotation
 
@@ -22,6 +27,7 @@ Name | Type | Description | Notes
 **score** | [**Score**](Score) |  |  [optional]
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  |  [optional]
+
 
 
 

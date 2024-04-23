@@ -1,6 +1,10 @@
+---
+title: Websites API | Python SDK
+---
+
 # Websites API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will create a website and attach it to a specific asset.
 
-### Example
+### Example {#websites_create_new_website-example}
 
 
 ```python
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsitesApi(api_client)
+    api_instance = Websites API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seeded_website = pieces_os_client.SeededWebsite() # SeededWebsite |  (optional)
 
@@ -52,7 +56,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#websites_create_new_website-parameters}
 
 
 Name | Type | Description  | Notes
@@ -60,27 +64,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_website** | [**SeededWebsite**](../models/SeededWebsite)|  | [optional] 
 
-### Return type
+### Return type {#websites_create_new_website-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websites_create_new_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websites_create_new_website-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#websites_create_new_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **websites_delete_specific_website** {#websites_delete_specific_website}
 > websites_delete_specific_website(website)
@@ -89,7 +92,7 @@ No authorization required
 
 This will delete a specific website!
 
-### Example
+### Example {#websites_delete_specific_website-example}
 
 
 ```python
@@ -107,7 +110,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsitesApi(api_client)
+    api_instance = Websites API(api_client)
     website = 'website_example' # str | website id
 
     try:
@@ -119,34 +122,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#websites_delete_specific_website-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#websites_delete_specific_website-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websites_delete_specific_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websites_delete_specific_website-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#websites_delete_specific_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **websites_exists** {#websites_exists}
 > ExistingMetadata websites_exists(existent_metadata=existent_metadata)
@@ -155,7 +157,7 @@ No authorization required
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
 
-### Example
+### Example {#websites_exists-example}
 
 
 ```python
@@ -175,7 +177,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsitesApi(api_client)
+    api_instance = Websites API(api_client)
     existent_metadata = pieces_os_client.ExistentMetadata() # ExistentMetadata |  (optional)
 
     try:
@@ -189,34 +191,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#websites_exists-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **existent_metadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
 
-### Return type
+### Return type {#websites_exists-return-type}
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### Authorization
+### Authorization {#websites_exists-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websites_exists-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#websites_exists-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **websites_snapshot** {#websites_snapshot}
 > Websites websites_snapshot(transferables=transferables)
@@ -225,7 +226,7 @@ No authorization required
 
 This will get a snapshot of all your websites.
 
-### Example
+### Example {#websites_snapshot-example}
 
 
 ```python
@@ -244,7 +245,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.WebsitesApi(api_client)
+    api_instance = Websites API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -258,32 +259,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#websites_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#websites_snapshot-return-type}
 
 [**Websites**](../models/Websites)
 
-### Authorization
+### Authorization {#websites_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websites_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#websites_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

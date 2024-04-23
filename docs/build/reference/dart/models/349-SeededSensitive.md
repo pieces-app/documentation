@@ -1,9 +1,8 @@
-# SeededSensitive
+---
+title: SeededSensitive | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededSensitive
 
 ## Properties
 Name | Type | Description | Notes
@@ -17,7 +16,5 @@ Name | Type | Description | Notes
 **name** | **String** |  | 
 **description** | **String** |  | 
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] 
-
-
 
 

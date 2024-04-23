@@ -1,16 +1,13 @@
-# OSPermissions
+---
+title: OSPermissions | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# OSPermissions
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **processing** | [**OSProcessingPermissions**](OSProcessingPermissions) |  | [optional] 
-
-
 
 

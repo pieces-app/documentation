@@ -1,3 +1,7 @@
+---
+title: Asset | Python SDK
+---
+
 # Asset
 
 An Asset Model representing data extracted from an Application connecting a group of data containing one or more Formats.  Below formats, preview, and original CAN to be pollinated (DAG Unsafe) because it is a root node and it's child leaf nodes will prevent cycles agressively.
@@ -36,23 +40,5 @@ Name | Type | Description | Notes
 **conversations** | [**Conversations**](Conversations) |  | [optional] 
 **summaries** | [**WorkstreamSummaries**](WorkstreamSummaries) |  | [optional] 
 **demo** | **bool** | This will let us know if this asset was generated as a &#39;demo&#39; snippet | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.asset import Asset
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Asset from a JSON string
-asset_instance = Asset.from_json(json)
-# print the JSON string representation of the object
-print(Asset.to_json())
-
-# convert the object into a dict
-asset_dict = asset_instance.to_dict()
-# create an instance of Asset from a dict
-asset_form_dict = asset.from_dict(asset_dict)
-```
 
 

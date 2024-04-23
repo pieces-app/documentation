@@ -1,3 +1,8 @@
+---
+title: QGPTConversationMessage | Kotlin SDK
+---
+
+
 
 # QGPTConversationMessage
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **role** | [**QGPTConversationMessageRoleEnum**](QGPTConversationMessageRoleEnum) |  | 
 **timestamp** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

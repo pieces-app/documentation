@@ -1,3 +1,8 @@
+---
+title: SeededRangeConversationGroundingTemporalAssociation | Kotlin SDK
+---
+
+
 
 # SeededRangeConversationGroundingTemporalAssociation
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **workstream** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

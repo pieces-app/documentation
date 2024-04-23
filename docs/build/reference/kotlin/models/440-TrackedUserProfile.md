@@ -1,3 +1,8 @@
+---
+title: TrackedUserProfile | Kotlin SDK
+---
+
+
 
 # TrackedUserProfile
 
@@ -11,11 +16,11 @@ Name | Type | Description | Notes
 **email** | **kotlin.String** | The user&#39;s email if we have it. |  [optional]
 
 
-<a id="Granularity"></a>
-## Enum: granularity
+## granularity
 Name | Value
 ---- | -----
 granularity | DEVICE, ACCOUNT, ANONYMOUS
+
 
 
 

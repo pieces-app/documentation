@@ -1,11 +1,15 @@
+---
+title: Auth0 API | Kotlin SDK
+---
+
 # Auth0 API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**auth0Logout**](#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**authorizeAuth0**](#authorizeauth0) | **GET** /authorize | `https://auth.pieces.services/authorize` [GET]
 [**exchangeForAuth0Token**](#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
 [**getAuth0UserInfo**](#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
@@ -17,43 +21,43 @@ https://auth.pieces.services/v2/logout [GET]
 
 https://auth0.com/docs/api/authentication#logout
 
-### Example
+### Example {#auth0logout-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0Api()
+val apiInstance = Auth0 API()
 val clientId : kotlin.String = clientId_example // kotlin.String | The client ID of the Auth0 Instance
 val returnTo : kotlin.String = returnTo_example // kotlin.String | The URL that the logout endpoint will return to
 try {
     val result : kotlin.String = apiInstance.auth0Logout(clientId, returnTo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0Api#auth0Logout")
+    println("4xx response calling Auth0 API#auth0Logout")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0Api#auth0Logout")
+    println("5xx response calling Auth0 API#auth0Logout")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#auth0logout-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **clientId** | **kotlin.String**| The client ID of the Auth0 Instance | [optional]
  **returnTo** | **kotlin.String**| The URL that the logout endpoint will return to | [optional]
 
-### Return type
+### Return type {#auth0logout-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#auth0logout-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#auth0logout-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -61,18 +65,18 @@ No authorization required
 ## **authorizeAuth0** {#authorizeauth0}
 > ResultedPKCE authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
 
-https://auth.pieces.services/authorize [GET]
+`https://auth.pieces.services/authorize` [GET]
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience&#x3D;https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&amp;scope&#x3D;email+profile+offline_access+openid&amp;response_type&#x3D;code&amp;client_id&#x3D;9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&amp;redirect_uri&#x3D;http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&amp;code_challenge_method&#x3D;S256&amp;code_challenge&#x3D;yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&amp;response_mode&#x3D;form_post&amp;state&#x3D;4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
 
-### Example
+### Example {#authorizeauth0-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0Api()
-val audience : kotlin.String = https://pieces.us.auth0.com/api/v2/ // kotlin.String |  The unique identifier of the target API you want to access.
+val apiInstance = Auth0 API()
+val audience : kotlin.String = `https://pieces.us.auth0.com`/api/v2/ // kotlin.String |  The unique identifier of the target API you want to access.
 val scope : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
 val responseType : kotlin.String = code // kotlin.String | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
 val clientId : kotlin.String = 9sW4Pa1LEjX67l6VO14u0207NLYeXnu1 // kotlin.String | Your application's Client ID.
@@ -87,15 +91,15 @@ try {
     val result : ResultedPKCE = apiInstance.authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0Api#authorizeAuth0")
+    println("4xx response calling Auth0 API#authorizeAuth0")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0Api#authorizeAuth0")
+    println("5xx response calling Auth0 API#authorizeAuth0")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#authorizeauth0-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -111,15 +115,15 @@ Name | Type | Description  | Notes
  **connection** | **kotlin.String**| The name of the connection configured to your application. | [optional]
  **prompt** | **kotlin.String**| To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). | [optional]
 
-### Return type
+### Return type {#authorizeauth0-return-type}
 
 [**ResultedPKCE**](../models/ResultedPKCE)
 
-### Authorization
+### Authorization {#authorizeauth0-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#authorizeauth0-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/x-www-form-urlencoded
@@ -131,33 +135,33 @@ https://auth.pieces.services/oauth/token [POST]
 
 An endpoint to generate a OAuth Token for an authentication flow. 
 
-### Example
+### Example {#exchangeforauth0token-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0Api()
+val apiInstance = Auth0 API()
 val grantType : kotlin.String = grantType_example // kotlin.String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
 val clientId : kotlin.String = clientId_example // kotlin.String | Your application's Client ID.
 val code : kotlin.String = code_example // kotlin.String | The Authorization Code received from the initial /authorize call.
 val redirectUri : kotlin.String = redirectUri_example // kotlin.String | This is required only if it was set at the GET /authorize endpoint. The values must match.
 val codeVerifier : kotlin.String = codeVerifier_example // kotlin.String | Cryptographically random key that was used to generate the code_challenge passed to /authorize.
 val schema : EmbeddedModelSchema =  // EmbeddedModelSchema | 
-val audience : kotlin.String = audience_example // kotlin.String | The audience domain: i.e. https://pieces.us.auth0.com
+val audience : kotlin.String = audience_example // kotlin.String | The audience domain: i.e. `https://pieces.us.auth0.com`
 try {
     val result : OAuthToken = apiInstance.exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0Api#exchangeForAuth0Token")
+    println("4xx response calling Auth0 API#exchangeForAuth0Token")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0Api#exchangeForAuth0Token")
+    println("5xx response calling Auth0 API#exchangeForAuth0Token")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#exchangeforauth0token-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -167,17 +171,17 @@ Name | Type | Description  | Notes
  **redirectUri** | **kotlin.String**| This is required only if it was set at the GET /authorize endpoint. The values must match. |
  **codeVerifier** | **kotlin.String**| Cryptographically random key that was used to generate the code_challenge passed to /authorize. |
  **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional]
- **audience** | **kotlin.String**| The audience domain: i.e. https://pieces.us.auth0.com | [optional]
+ **audience** | **kotlin.String**| The audience domain: i.e. `https://pieces.us.auth0.com` | [optional]
 
-### Return type
+### Return type {#exchangeforauth0token-return-type}
 
 [**OAuthToken**](../models/OAuthToken)
 
-### Authorization
+### Authorization {#exchangeforauth0token-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#exchangeforauth0token-http-request-headers}
 
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
@@ -189,33 +193,33 @@ https://auth.pieces.services/userinfo [GET]
 
 Get the users info from the Auth0 API
 
-### Example
+### Example {#getauth0userinfo-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0Api()
+val apiInstance = Auth0 API()
 try {
     val result : Auth0User = apiInstance.getAuth0UserInfo()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0Api#getAuth0UserInfo")
+    println("4xx response calling Auth0 API#getAuth0UserInfo")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0Api#getAuth0UserInfo")
+    println("5xx response calling Auth0 API#getAuth0UserInfo")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#getauth0userinfo-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getauth0userinfo-return-type}
 
 [**Auth0User**](../models/Auth0User)
 
-### Authorization
+### Authorization {#getauth0userinfo-authorization}
 
 
 Configure auth0:
@@ -225,7 +229,7 @@ Configure auth0:
 Configure auth0:
     ApiClient.accessToken = ""
 
-### HTTP request headers
+### HTTP request headers {#getauth0userinfo-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

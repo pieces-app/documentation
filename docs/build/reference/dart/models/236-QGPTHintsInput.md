@@ -1,9 +1,8 @@
-# QGPTHintsInput
+---
+title: QGPTHintsInput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTHintsInput
 
 ## Properties
 Name | Type | Description | Notes
@@ -13,7 +12,5 @@ Name | Type | Description | Notes
 **relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | 
 **application** | **String** | optional application id | [optional] 
 **model** | **String** | optional model id | [optional] 
-
-
 
 

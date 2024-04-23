@@ -1,3 +1,8 @@
+---
+title: QGPTTaskPipeline | Kotlin SDK
+---
+
+
 
 # QGPTTaskPipeline
 
@@ -10,6 +15,7 @@ Name | Type | Description | Notes
 **codeFix** | [**QGPTTaskPipelineForCodeFix**](QGPTTaskPipelineForCodeFix) |  |  [optional]
 **codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification) |  |  [optional]
 **codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion) |  |  [optional]
+
 
 
 

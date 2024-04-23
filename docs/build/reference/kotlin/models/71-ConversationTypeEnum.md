@@ -1,3 +1,8 @@
+---
+title: ConversationTypeEnum | Kotlin SDK
+---
+
+
 
 # ConversationTypeEnum
 
@@ -5,6 +10,7 @@
 
 
     * `COPILOT` (value: `"COPILOT"`)
+
 
 
 

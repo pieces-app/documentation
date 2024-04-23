@@ -1,6 +1,10 @@
+---
+title: Distribution API | Dart SDK
+---
+
 # Distribution API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 This will update a specific Distribution.
 
-### Example
+### Example {#distributionupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -30,26 +34,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **distribution** | [**Distribution**](../models/Distribution)|  | [optional] 
+ **distribution** | [**Distribution**](../models/Distribution) |  | [optional] 
 
-### Return type
+### Return type {#distributionupdate-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionupdate-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **distributionsSpecificDistributionSnapshot** {#distributionsspecificdistributionsnapshot}
 > Distribution distributionsSpecificDistributionSnapshot(distribution)
@@ -58,7 +60,7 @@ No authorization required
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example {#distributionsspecificdistributionsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -73,24 +75,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionsspecificdistributionsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **distribution** | **String**| This is the uuid of a specific distribution. | 
+ **distribution** | **String** | This is the uuid of a specific distribution. | 
 
-### Return type
+### Return type {#distributionsspecificdistributionsnapshot-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionsspecificdistributionsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsspecificdistributionsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

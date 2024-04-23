@@ -1,9 +1,8 @@
-# FlattenedActivity
+---
+title: FlattenedActivity | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedActivity
 
 ## Properties
 Name | Type | Description | Notes
@@ -20,7 +19,5 @@ Name | Type | Description | Notes
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  | [optional] 
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | 
 **rank** | **int** |  | [optional] 
-
-
 
 

@@ -1,3 +1,7 @@
+---
+title: Auth0User | Python SDK
+---
+
 # Auth0User
 
 
@@ -25,23 +29,5 @@ Name | Type | Description | Notes
 **logins_count** | **int** |  | [optional] 
 **blocked_for** | **List[str]** |  | [optional] 
 **guardian_authenticators** | **List[str]** |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.auth0_user import Auth0User
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Auth0User from a JSON string
-auth0_user_instance = Auth0User.from_json(json)
-# print the JSON string representation of the object
-print(Auth0User.to_json())
-
-# convert the object into a dict
-auth0_user_dict = auth0_user_instance.to_dict()
-# create an instance of Auth0User from a dict
-auth0_user_form_dict = auth0_user.from_dict(auth0_user_dict)
-```
 
 

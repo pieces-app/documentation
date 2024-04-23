@@ -1,6 +1,10 @@
+---
+title: Ranges API | Python SDK
+---
+
 # Ranges API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new Range in the database.
 
-### Example
+### Example {#ranges_create_new_range-example}
 
 
 ```python
@@ -36,7 +40,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangesApi(api_client)
+    api_instance = Ranges API(api_client)
     seeded_range = pieces_os_client.SeededRange() # SeededRange |  (optional)
 
     try:
@@ -50,34 +54,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#ranges_create_new_range-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_range** | [**SeededRange**](../models/SeededRange)|  | [optional] 
 
-### Return type
+### Return type {#ranges_create_new_range-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#ranges_create_new_range-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ranges_create_new_range-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#ranges_create_new_range-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **ranges_delete_specific_range** {#ranges_delete_specific_range}
 > ranges_delete_specific_range(range)
@@ -86,7 +89,7 @@ No authorization required
 
 This will delete a specific range from the database!
 
-### Example
+### Example {#ranges_delete_specific_range-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangesApi(api_client)
+    api_instance = Ranges API(api_client)
     range = 'range_example' # str | This is a identifier that is used to identify a specific range.
 
     try:
@@ -116,34 +119,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#ranges_delete_specific_range-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#ranges_delete_specific_range-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#ranges_delete_specific_range-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ranges_delete_specific_range-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#ranges_delete_specific_range-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **ranges_snapshot** {#ranges_snapshot}
 > Ranges ranges_snapshot()
@@ -152,7 +154,7 @@ No authorization required
 
 This will get a snapshot of all your ranges.
 
-### Example
+### Example {#ranges_snapshot-example}
 
 
 ```python
@@ -171,7 +173,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.RangesApi(api_client)
+    api_instance = Ranges API(api_client)
 
     try:
         # /ranges [GET]
@@ -184,29 +186,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#ranges_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#ranges_snapshot-return-type}
 
 [**Ranges**](../models/Ranges)
 
-### Authorization
+### Authorization {#ranges_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ranges_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#ranges_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

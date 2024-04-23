@@ -1,9 +1,8 @@
-# FlattenedPreview
+---
+title: FlattenedPreview | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FlattenedPreview
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **base** | **String** | this is a reference(uuid) to the base format | 
 **overlay** | **String** | this is a reference(uuid) to the overlay format | [optional] 
-
-
 
 

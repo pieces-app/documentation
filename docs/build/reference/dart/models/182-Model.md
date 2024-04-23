@@ -1,9 +1,8 @@
-# Model
+---
+title: Model | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Model
 
 ## Properties
 Name | Type | Description | Notes
@@ -30,7 +29,5 @@ Name | Type | Description | Notes
 **downloading** | **bool** | This is a calculated property, that will say if this is currently downloading. | [optional] 
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens) |  | [optional] 
 **custom** | **bool** |  | [optional] 
-
-
 
 

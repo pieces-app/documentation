@@ -1,3 +1,7 @@
+---
+title: Auth0 | Python SDK
+---
+
 # Auth0
 
 An object representing all of the properties that are available within a Auth0 PKCE Flow
@@ -15,23 +19,5 @@ Name | Type | Description | Notes
 **redirects** | [**Auth0Redirects**](Auth0Redirects) |  | 
 **o_auth** | [**OAuthGroup**](OAuthGroup) |  | 
 **namespace** | **str** | An optional namespace parameter to add an additional namespace | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.auth0 import Auth0
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Auth0 from a JSON string
-auth0_instance = Auth0.from_json(json)
-# print the JSON string representation of the object
-print(Auth0.to_json())
-
-# convert the object into a dict
-auth0_dict = auth0_instance.to_dict()
-# create an instance of Auth0 from a dict
-auth0_form_dict = auth0.from_dict(auth0_dict)
-```
 
 

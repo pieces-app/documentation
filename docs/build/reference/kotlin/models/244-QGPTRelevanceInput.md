@@ -1,3 +1,8 @@
+---
+title: QGPTRelevanceInput | Kotlin SDK
+---
+
+
 
 # QGPTRelevanceInput
 
@@ -14,6 +19,7 @@ Name | Type | Description | Notes
 **application** | **kotlin.String** | optional application id |  [optional]
 **model** | **kotlin.String** | optional model id |  [optional]
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  |  [optional]
+
 
 
 

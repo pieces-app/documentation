@@ -1,14 +1,11 @@
-# TLPDirectedDiscoveryFilterEnum
+---
+title: TLPDirectedDiscoveryFilterEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPDirectedDiscoveryFilterEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

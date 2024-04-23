@@ -1,9 +1,8 @@
-# ModelMaxTokens
+---
+title: ModelMaxTokens | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ModelMaxTokens
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **total** | **num** |  | 
 **input** | **num** |  | [optional] 
 **output** | **num** |  | [optional] 
-
-
 
 

@@ -1,6 +1,10 @@
+---
+title: Website API | Kotlin SDK
+---
+
 # Website API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,45 +28,45 @@ Method | HTTP request | Description
 
 This will associate a website with a asset.
 
-### Example
+### Example {#websiteassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.websiteAssociateAsset(asset, website)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteAssociateAsset")
+    println("4xx response calling Website API#websiteAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteAssociateAsset")
+    println("5xx response calling Website API#websiteAssociateAsset")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#websiteassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteAssociateConversation** {#websiteassociateconversation}
 > websiteAssociateConversation(website, conversation)
@@ -71,45 +75,45 @@ No authorization required
 
 This will associate a website with a conversation.
 
-### Example
+### Example {#websiteassociateconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.websiteAssociateConversation(website, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteAssociateConversation")
+    println("4xx response calling Website API#websiteAssociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteAssociateConversation")
+    println("5xx response calling Website API#websiteAssociateConversation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#websiteassociateconversation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteAssociatePerson** {#websiteassociateperson}
 > websiteAssociatePerson(website, person)
@@ -118,45 +122,45 @@ No authorization required
 
 This will associate a website with a person.
 
-### Example
+### Example {#websiteassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.websiteAssociatePerson(website, person)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteAssociatePerson")
+    println("4xx response calling Website API#websiteAssociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteAssociatePerson")
+    println("5xx response calling Website API#websiteAssociatePerson")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#websiteassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteAssociateWorkstreamSummary** {#websiteassociateworkstreamsummary}
 > websiteAssociateWorkstreamSummary(website, workstreamSummary)
@@ -165,45 +169,45 @@ No authorization required
 
 This will associate a website with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#websiteassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.websiteAssociateWorkstreamSummary(website, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteAssociateWorkstreamSummary")
+    println("4xx response calling Website API#websiteAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteAssociateWorkstreamSummary")
+    println("5xx response calling Website API#websiteAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#websiteassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteDisassociateAsset** {#websitedisassociateasset}
 > websiteDisassociateAsset(website, asset)
@@ -212,45 +216,45 @@ No authorization required
 
 This will enable us to dissassociate a website from a asset.
 
-### Example
+### Example {#websitedisassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.websiteDisassociateAsset(website, asset)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteDisassociateAsset")
+    println("4xx response calling Website API#websiteDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteDisassociateAsset")
+    println("5xx response calling Website API#websiteDisassociateAsset")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#websitedisassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteDisassociateConversation** {#websitedisassociateconversation}
 > websiteDisassociateConversation(website, conversation)
@@ -259,45 +263,45 @@ No authorization required
 
 This will enable us to dissassociate a website from a conversation.
 
-### Example
+### Example {#websitedisassociateconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.websiteDisassociateConversation(website, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteDisassociateConversation")
+    println("4xx response calling Website API#websiteDisassociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteDisassociateConversation")
+    println("5xx response calling Website API#websiteDisassociateConversation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#websitedisassociateconversation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteDisassociatePerson** {#websitedisassociateperson}
 > websiteDisassociatePerson(website, person)
@@ -306,45 +310,45 @@ No authorization required
 
 This will enable us to dissassociate a website from a person.
 
-### Example
+### Example {#websitedisassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.websiteDisassociatePerson(website, person)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteDisassociatePerson")
+    println("4xx response calling Website API#websiteDisassociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteDisassociatePerson")
+    println("5xx response calling Website API#websiteDisassociatePerson")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#websitedisassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteDisassociateWorkstreamSummary** {#websitedisassociateworkstreamsummary}
 > websiteDisassociateWorkstreamSummary(website, workstreamSummary)
@@ -353,45 +357,45 @@ No authorization required
 
 This will enable us to disassociate a website from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#websitedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.websiteDisassociateWorkstreamSummary(website, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteDisassociateWorkstreamSummary")
+    println("4xx response calling Website API#websiteDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteDisassociateWorkstreamSummary")
+    println("5xx response calling Website API#websiteDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#websitedisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteScoresIncrement** {#websitescoresincrement}
 > websiteScoresIncrement(website, seededScoreIncrement)
@@ -400,45 +404,45 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#websitescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.websiteScoresIncrement(website, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteScoresIncrement")
+    println("4xx response calling Website API#websiteScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteScoresIncrement")
+    println("5xx response calling Website API#websiteScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#websitescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#websitescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **websiteUpdate** {#websiteupdate}
 > Website websiteUpdate(transferables, website)
@@ -447,43 +451,43 @@ No authorization required
 
 This will update a specific website.
 
-### Example
+### Example {#websiteupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val website : Website =  // Website | 
 try {
     val result : Website = apiInstance.websiteUpdate(transferables, website)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websiteUpdate")
+    println("4xx response calling Website API#websiteUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websiteUpdate")
+    println("5xx response calling Website API#websiteUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websiteupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **website** | [**Website**](../models/Website)|  | [optional]
 
-### Return type
+### Return type {#websiteupdate-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websiteupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -495,43 +499,43 @@ No authorization required
 
 This will get a snapshot of a single website.
 
-### Example
+### Example {#websitesspecificwebsitesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WebsiteApi()
+val apiInstance = Website API()
 val website : kotlin.String = website_example // kotlin.String | website id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Website = apiInstance.websitesSpecificWebsiteSnapshot(website, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WebsiteApi#websitesSpecificWebsiteSnapshot")
+    println("4xx response calling Website API#websitesSpecificWebsiteSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WebsiteApi#websitesSpecificWebsiteSnapshot")
+    println("5xx response calling Website API#websitesSpecificWebsiteSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#websitesspecificwebsitesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#websitesspecificwebsitesnapshot-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websitesspecificwebsitesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesspecificwebsitesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

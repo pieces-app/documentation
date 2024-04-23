@@ -1,16 +1,13 @@
-# QGPTConversation
+---
+title: QGPTConversation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTConversation
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **iterable** | [**List\<QGPTConversationMessage\>**](QGPTConversationMessage) |  | [optional] [default to const []]
-
-
 
 

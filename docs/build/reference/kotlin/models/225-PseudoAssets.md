@@ -1,3 +1,8 @@
+---
+title: PseudoAssets | Kotlin SDK
+---
+
+
 
 # PseudoAssets
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **identifiers** | [**FlattenedAssets**](FlattenedAssets) |  |  [optional]
+
 
 
 

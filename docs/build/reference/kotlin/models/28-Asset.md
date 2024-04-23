@@ -1,3 +1,8 @@
+---
+title: Asset | Kotlin SDK
+---
+
+
 
 # Asset
 
@@ -34,6 +39,7 @@ Name | Type | Description | Notes
 **conversations** | [**Conversations**](Conversations) |  |  [optional]
 **summaries** | [**WorkstreamSummaries**](WorkstreamSummaries) |  |  [optional]
 **demo** | **kotlin.Boolean** | This will let us know if this asset was generated as a &#39;demo&#39; snippet |  [optional]
+
 
 
 

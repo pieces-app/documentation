@@ -1,3 +1,8 @@
+---
+title: TLPCodeFragmentReclassificationUpdates | Kotlin SDK
+---
+
+
 
 # TLPCodeFragmentReclassificationUpdates
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **previous** | [**Classification**](Classification) |  | 
 **current** | [**Classification**](Classification) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

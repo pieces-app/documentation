@@ -1,6 +1,10 @@
+---
+title: User API | Dart SDK
+---
+
 # User API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +26,7 @@ Method | HTTP request | Description
 
 An endpoint to clear the current user. 
 
-### Example
+### Example {#clearuser-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,23 +39,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#clearuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#clearuser-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#clearuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#clearuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
-
-
 
 ## **refreshUser** {#refreshuser}
 > UserProfile refreshUser()
@@ -60,7 +62,7 @@ No authorization required
 
 This will refresh a user.
 
-### Example
+### Example {#refreshuser-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -74,23 +76,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#refreshuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#refreshuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#refreshuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#refreshuser-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **selectUser** {#selectuser}
 > UserProfile selectUser(auth0User)
@@ -99,7 +99,7 @@ No authorization required
 
 This will select the current user.
 
-### Example
+### Example {#selectuser-example}
 ```dart
 import 'package:core_openapi/api.dart';
 // TODO Configure OAuth2 access token for authorization: auth0
@@ -120,26 +120,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#selectuser-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **auth0User** | [**Auth0User**](../models/Auth0User)|  | [optional] 
+ **auth0User** | [**Auth0User**](../models/Auth0User) |  | [optional] 
 
-### Return type
+### Return type {#selectuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#selectuser-authorization}
 
 
 
-### HTTP request headers
+### HTTP request headers {#selectuser-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **streamUser** {#streamuser}
 > UserProfile streamUser()
@@ -148,7 +146,7 @@ Name | Type | Description  | Notes
 
 Provides a WebSocket connection that streams user data.
 
-### Example
+### Example {#streamuser-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -162,23 +160,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#streamuser-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#streamuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#streamuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#streamuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **updateUser** {#updateuser}
 > UserProfile updateUser(userProfile)
@@ -187,7 +183,7 @@ No authorization required
 
 This will update a specific user in the database.
 
-### Example
+### Example {#updateuser-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -202,26 +198,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#updateuser-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
+ **userProfile** | [**UserProfile**](../models/UserProfile) |  | [optional] 
 
-### Return type
+### Return type {#updateuser-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#updateuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#updateuser-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 
 ## **userBetaStatus** {#userbetastatus}
 > UserBetaStatus userBetaStatus(userBetaStatus)
@@ -230,7 +224,7 @@ No authorization required
 
 This will be an endpoint to give access or remove access immediately from a given user.(isomorphic from the given provider)
 
-### Example
+### Example {#userbetastatus-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -245,26 +239,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#userbetastatus-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus)|  | [optional] 
+ **userBetaStatus** | [**UserBetaStatus**](../models/UserBetaStatus) |  | [optional] 
 
-### Return type
+### Return type {#userbetastatus-return-type}
 
 [**UserBetaStatus**](../models/UserBetaStatus)
 
-### Authorization
+### Authorization {#userbetastatus-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userbetastatus-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **userProviders** {#userproviders}
 > ReturnedUserProfile userProviders()
@@ -273,7 +265,7 @@ Your GET endpoint
 
 This will retrieve all the users Providers that are connected to this account.  If called locally. we will 501 - because it is not implemented locally yet.  If called in the cloud, we will refresh && get your access tokens to access these providers.
 
-### Example
+### Example {#userproviders-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -287,23 +279,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#userproviders-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#userproviders-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#userproviders-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userproviders-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **userSnapshot** {#usersnapshot}
 > ReturnedUserProfile userSnapshot()
@@ -312,7 +302,7 @@ No authorization required
 
 This will return a snapshot of the current user. This will return our ReturnUserProfile and the user on that object is just a UserProfile and can potentially be null.
 
-### Example
+### Example {#usersnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -326,23 +316,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#usersnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#usersnapshot-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### Authorization
+### Authorization {#usersnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#usersnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **userUpdateVanity** {#userupdatevanity}
 > UserProfile userUpdateVanity(userProfile)
@@ -351,7 +339,7 @@ No authorization required
 
 This is a local route to update your vanityname. ie mark.pieces.cloud, where \"mark\" is the vanityname.
 
-### Example
+### Example {#userupdatevanity-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -366,24 +354,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#userupdatevanity-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userProfile** | [**UserProfile**](../models/UserProfile)| This will take an update userProfile, with the updated vanity name! | [optional] 
+ **userProfile** | [**UserProfile**](../models/UserProfile) | This will take an update userProfile, with the updated vanity name! | [optional] 
 
-### Return type
+### Return type {#userupdatevanity-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#userupdatevanity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userupdatevanity-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

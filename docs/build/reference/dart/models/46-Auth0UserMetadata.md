@@ -1,9 +1,8 @@
-# Auth0UserMetadata
+---
+title: Auth0UserMetadata | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Auth0UserMetadata
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata) |  | [optional] 
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  | [optional] 
 **beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
-
-
 
 

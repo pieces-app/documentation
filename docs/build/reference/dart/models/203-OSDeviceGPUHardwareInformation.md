@@ -1,9 +1,8 @@
-# OSDeviceGPUHardwareInformation
+---
+title: OSDeviceGPUHardwareInformation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# OSDeviceGPUHardwareInformation
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **memory** | **num** |  | [optional] 
 **capabilities** | [**OSDeviceGPUHardwareCapabilitiesInformation**](OSDeviceGPUHardwareCapabilitiesInformation) |  | [optional] 
-
-
 
 

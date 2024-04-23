@@ -1,3 +1,8 @@
+---
+title: SeededScore | Kotlin SDK
+---
+
+
 
 # SeededScore
 
@@ -9,6 +14,7 @@ Name | Type | Description | Notes
 **update** | **kotlin.Boolean** |  |  [optional]
 **reference** | **kotlin.Boolean** |  |  [optional]
 **priority** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

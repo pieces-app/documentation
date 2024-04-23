@@ -1,3 +1,8 @@
+---
+title: GraphicalOCRStatistics | Kotlin SDK
+---
+
+
 
 # GraphicalOCRStatistics
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **descriptive** | [**GraphicalOCRDescriptiveStatistics**](GraphicalOCRDescriptiveStatistics) |  |  [optional]
+
 
 
 

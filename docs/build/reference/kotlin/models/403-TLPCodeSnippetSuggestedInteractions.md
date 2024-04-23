@@ -1,3 +1,8 @@
+---
+title: TLPCodeSnippetSuggestedInteractions | Kotlin SDK
+---
+
+
 
 # TLPCodeSnippetSuggestedInteractions
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **save** | [**TLPCodeFragmentSuggestedSave**](TLPCodeFragmentSuggestedSave) |  |  [optional]
 **reuse** | [**TLPCodeFragmentSuggestedReuse**](TLPCodeFragmentSuggestedReuse) |  |  [optional]
+
 
 
 

@@ -1,6 +1,10 @@
+---
+title: Metrics API | Python SDK
+---
+
 # Metrics API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 This is going to get a snapshot of our FormatsMetrics
 
-### Example
+### Example {#get_metrics_formats-example}
 
 
 ```python
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MetricsApi(api_client)
+    api_instance = Metrics API(api_client)
 
     try:
         # /metrics/formats [GET]
@@ -47,30 +51,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_metrics_formats-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_metrics_formats-return-type}
 
 [**FormatsMetrics**](../models/FormatsMetrics)
 
-### Authorization
+### Authorization {#get_metrics_formats-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#get_metrics_formats-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#get_metrics_formats-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **metrics_formats_ordered** {#metrics_formats_ordered}
 > OrderedMetrics metrics_formats_ordered()
@@ -79,7 +82,7 @@ No authorization required
 
 This will return a list of code formats in desc order from most to least formats uploaded.
 
-### Example
+### Example {#metrics_formats_ordered-example}
 
 
 ```python
@@ -98,7 +101,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.MetricsApi(api_client)
+    api_instance = Metrics API(api_client)
 
     try:
         # /metrics/formats/ordered [GET]
@@ -111,28 +114,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#metrics_formats_ordered-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#metrics_formats_ordered-return-type}
 
 [**OrderedMetrics**](../models/OrderedMetrics)
 
-### Authorization
+### Authorization {#metrics_formats_ordered-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#metrics_formats_ordered-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#metrics_formats_ordered-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

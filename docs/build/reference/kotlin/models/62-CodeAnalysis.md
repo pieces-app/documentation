@@ -1,3 +1,8 @@
+---
+title: CodeAnalysis | Kotlin SDK
+---
+
+
 
 # CodeAnalysis
 
@@ -15,6 +20,7 @@ Name | Type | Description | Notes
 **similarity** | **kotlin.collections.Map&lt;kotlin.String, java.math.BigDecimal&gt;** |  |  [optional]
 **top5Colors** | **kotlin.collections.List&lt;kotlin.Int&gt;** |  |  [optional]
 **top5Sorted** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional]
+
 
 
 

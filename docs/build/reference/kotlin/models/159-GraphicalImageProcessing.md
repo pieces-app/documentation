@@ -1,3 +1,8 @@
+---
+title: GraphicalImageProcessing | Kotlin SDK
+---
+
+
 
 # GraphicalImageProcessing
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **statistics** | [**GraphicalImageStatistics**](GraphicalImageStatistics) |  |  [optional]
+
 
 
 

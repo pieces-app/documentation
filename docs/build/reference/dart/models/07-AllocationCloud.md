@@ -1,9 +1,8 @@
-# AllocationCloud
+---
+title: AllocationCloud | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AllocationCloud
 
 ## Properties
 Name | Type | Description | Notes
@@ -17,7 +16,5 @@ Name | Type | Description | Notes
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **version** | **String** | this is the current version of the server. | [optional] 
 **region** | **String** | this is the region where the project is defined. | [optional] 
-
-
 
 

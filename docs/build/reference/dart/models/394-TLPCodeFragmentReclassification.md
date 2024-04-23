@@ -1,9 +1,8 @@
-# TLPCodeFragmentReclassification
+---
+title: TLPCodeFragmentReclassification | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# TLPCodeFragmentReclassification
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +14,5 @@ Name | Type | Description | Notes
 **updates** | [**TLPCodeFragmentReclassificationUpdates**](TLPCodeFragmentReclassificationUpdates) |  | 
 **user** | **String** | this is the user that is reclassifying | 
 **context** | **String** | this is the application is which this is from. | 
-
-
 
 

@@ -1,3 +1,7 @@
+---
+title: CapabilitiesEnum | Python SDK
+---
+
 # CapabilitiesEnum
 
 This lets us know what capabilites in relation to ml/ cloud infrastructure you are opting into.
@@ -6,6 +10,5 @@ This lets us know what capabilites in relation to ml/ cloud infrastructure you a
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

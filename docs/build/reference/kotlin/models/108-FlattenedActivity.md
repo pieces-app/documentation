@@ -1,3 +1,8 @@
+---
+title: FlattenedActivity | Kotlin SDK
+---
+
+
 
 # FlattenedActivity
 
@@ -16,6 +21,7 @@ Name | Type | Description | Notes
 **format** | [**ReferencedFormat**](ReferencedFormat) |  |  [optional]
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  |  [optional]
 **rank** | **kotlin.Int** |  |  [optional]
+
 
 
 

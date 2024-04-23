@@ -1,3 +1,8 @@
+---
+title: TrackedAssetEventCreationMetadata | Kotlin SDK
+---
+
+
 
 # TrackedAssetEventCreationMetadata
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **clipboard** | [**TrackedAssetEventCreationMetadataClipboard**](TrackedAssetEventCreationMetadataClipboard) |  |  [optional]
 **file** | [**TrackedAssetEventCreationMetadataFile**](TrackedAssetEventCreationMetadataFile) |  |  [optional]
+
 
 
 

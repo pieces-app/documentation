@@ -1,6 +1,10 @@
+---
+title: OpenAI API | Dart SDK
+---
+
 # OpenAI API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.apiKey.  if the user is unauthenticated or if the openAI key doesnt exist or if it is invalid we will return a 401.  Requires internet as this will ping out to OpenAI's server to get the models.
 
-### Example
+### Example {#openaimodelslist-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -29,24 +33,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#openaimodelslist-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **openAIModelsListInput** | [**OpenAIModelsListInput**](../models/OpenAIModelsListInput)|  | [optional] 
+ **openAIModelsListInput** | [**OpenAIModelsListInput**](../models/OpenAIModelsListInput) |  | [optional] 
 
-### Return type
+### Return type {#openaimodelslist-return-type}
 
 [**OpenAIModelsListOutput**](../models/OpenAIModelsListOutput)
 
-### Authorization
+### Authorization {#openaimodelslist-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#openaimodelslist-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

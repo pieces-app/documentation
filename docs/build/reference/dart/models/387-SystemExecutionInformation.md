@@ -1,9 +1,8 @@
-# SystemExecutionInformation
+---
+title: SystemExecutionInformation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SystemExecutionInformation
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **os** | **String** |  | 
 **kernel** | **String** |  | 
 **cpu** | [**SystemExecutionCpuInformation**](SystemExecutionCpuInformation) |  | 
-
-
 
 

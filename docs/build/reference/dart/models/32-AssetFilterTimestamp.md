@@ -1,9 +1,8 @@
-# AssetFilterTimestamp
+---
+title: AssetFilterTimestamp | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AssetFilterTimestamp
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **from** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **to** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **between** | **bool** |  | [optional] 
-
-
 
 

@@ -1,3 +1,8 @@
+---
+title: WorkstreamPatternEngineVisionStatus | Kotlin SDK
+---
+
+
 
 # WorkstreamPatternEngineVisionStatus
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **activation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  |  [optional]
 **deactivation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  |  [optional]
+
 
 
 

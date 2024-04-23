@@ -1,3 +1,8 @@
+---
+title: CheckedOSUpdate | Kotlin SDK
+---
+
+
 
 # CheckedOSUpdate
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **status** | [**UpdatingStatusEnum**](UpdatingStatusEnum) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

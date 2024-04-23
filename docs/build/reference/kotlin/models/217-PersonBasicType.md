@@ -1,3 +1,8 @@
+---
+title: PersonBasicType | Kotlin SDK
+---
+
+
 
 # PersonBasicType
 
@@ -12,6 +17,7 @@ Name | Type | Description | Notes
 **sourced** | [**ExternallySourcedEnum**](ExternallySourcedEnum) |  |  [optional]
 **url** | **kotlin.String** | This is a specific url that this basic user came from. |  [optional]
 **mailgun** | [**MailgunMetadata**](MailgunMetadata) |  |  [optional]
+
 
 
 

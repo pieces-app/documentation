@@ -1,9 +1,8 @@
-# SeededConversation
+---
+title: SeededConversation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededConversation
 
 ## Properties
 Name | Type | Description | Notes
@@ -21,7 +20,5 @@ Name | Type | Description | Notes
 **type** | [**ConversationTypeEnum**](ConversationTypeEnum) |  | 
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] 
 **demo** | **bool** | This will let us know if this conversation was generated as a 'demo' conversation | [optional] 
-
-
 
 

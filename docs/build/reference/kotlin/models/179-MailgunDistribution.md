@@ -1,3 +1,8 @@
+---
+title: MailgunDistribution | Kotlin SDK
+---
+
+
 
 # MailgunDistribution
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **recipients** | [**Recipients**](Recipients) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

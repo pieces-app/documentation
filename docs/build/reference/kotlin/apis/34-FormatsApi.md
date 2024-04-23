@@ -1,6 +1,10 @@
+---
+title: Formats API | Kotlin SDK
+---
+
 # Formats API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,41 +19,41 @@ Method | HTTP request | Description
 
 Get all of your formats for a given user.
 
-### Example
+### Example {#formatssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatsApi()
+val apiInstance = Formats API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Formats = apiInstance.formatsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatsApi#formatsSnapshot")
+    println("4xx response calling Formats API#formatsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatsApi#formatsSnapshot")
+    println("5xx response calling Formats API#formatsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#formatssnapshot-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#formatssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -61,43 +65,43 @@ No authorization required
 
 Request a specific format when given a id (uuid in path params)
 
-### Example
+### Example {#formatsspecificformatsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = FormatsApi()
+val apiInstance = Formats API()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Format = apiInstance.formatsSpecificFormatSnapshot(format, transferable)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FormatsApi#formatsSpecificFormatSnapshot")
+    println("4xx response calling Formats API#formatsSpecificFormatSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FormatsApi#formatsSpecificFormatSnapshot")
+    println("5xx response calling Formats API#formatsSpecificFormatSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#formatsspecificformatsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **java.util.UUID**| The id (uuid) for a specific format. |
  **transferable** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#formatsspecificformatsnapshot-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formatsspecificformatsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatsspecificformatsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

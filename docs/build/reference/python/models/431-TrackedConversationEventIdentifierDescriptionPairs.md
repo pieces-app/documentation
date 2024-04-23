@@ -1,3 +1,7 @@
+---
+title: TrackedConversationEventIdentifierDescriptionPairs | Python SDK
+---
+
 # TrackedConversationEventIdentifierDescriptionPairs
 
 These are all of the available event types that are permitted in an object pair notation.
@@ -14,23 +18,5 @@ Name | Type | Description | Notes
 **conversation_name_updated_by_the_system** | **str** | A conversation was renamed by the system | [optional] 
 **conversation_name_updated_by_the_user** | **str** | A conversation was renamed by the user | [optional] 
 **conversation_summary_annotation_generated_by_the_system** | **str** | A conversation summary was generated | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.tracked_conversation_event_identifier_description_pairs import TrackedConversationEventIdentifierDescriptionPairs
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TrackedConversationEventIdentifierDescriptionPairs from a JSON string
-tracked_conversation_event_identifier_description_pairs_instance = TrackedConversationEventIdentifierDescriptionPairs.from_json(json)
-# print the JSON string representation of the object
-print(TrackedConversationEventIdentifierDescriptionPairs.to_json())
-
-# convert the object into a dict
-tracked_conversation_event_identifier_description_pairs_dict = tracked_conversation_event_identifier_description_pairs_instance.to_dict()
-# create an instance of TrackedConversationEventIdentifierDescriptionPairs from a dict
-tracked_conversation_event_identifier_description_pairs_form_dict = tracked_conversation_event_identifier_description_pairs.from_dict(tracked_conversation_event_identifier_description_pairs_dict)
-```
 
 

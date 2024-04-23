@@ -1,6 +1,10 @@
+---
+title: Backups API | Python SDK
+---
+
 # Backups API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This take a local database and ensure that it is backed up to the cloud.
 
-### Example
+### Example {#backups_create_new_backup-example}
 
 
 ```python
@@ -37,7 +41,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -51,27 +55,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backups_create_new_backup-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_backup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
 
-### Return type
+### Return type {#backups_create_new_backup-return-type}
 
 [**Backup**](../models/Backup)
 
-### Authorization
+### Authorization {#backups_create_new_backup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backups_create_new_backup-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backups_create_new_backup-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -80,8 +85,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
 
-
-
 ## **backups_create_new_backup_streamed** {#backups_create_new_backup_streamed}
 > BackupStreamedProgress backups_create_new_backup_streamed(seeded_backup=seeded_backup)
 
@@ -89,7 +92,7 @@ No authorization required
 
 This take a local database and ensure that it is backed up to the cloud.  NOTE: This is a streamed version of the /backups/create. and Since the Generator is unable to generate a streamed endpoint. this is a place holder, and will need to be implemented isolated from the code generator.
 
-### Example
+### Example {#backups_create_new_backup_streamed-example}
 
 
 ```python
@@ -109,7 +112,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -123,27 +126,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backups_create_new_backup_streamed-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_backup** | [**SeededBackup**](../models/SeededBackup)|  | [optional] 
 
-### Return type
+### Return type {#backups_create_new_backup_streamed-return-type}
 
 [**BackupStreamedProgress**](../models/BackupStreamedProgress)
 
-### Authorization
+### Authorization {#backups_create_new_backup_streamed-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backups_create_new_backup_streamed-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backups_create_new_backup_streamed-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -152,8 +156,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
-
-
 ## **backups_delete_specific_backup** {#backups_delete_specific_backup}
 > backups_delete_specific_backup(backup, backup2=backup2)
 
@@ -161,7 +163,7 @@ No authorization required
 
 This will delete a specific backup from the cloud.
 
-### Example
+### Example {#backups_delete_specific_backup-example}
 
 
 ```python
@@ -180,7 +182,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
     backup = 'backup_example' # str | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
@@ -193,7 +195,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backups_delete_specific_backup-parameters}
 
 
 Name | Type | Description  | Notes
@@ -201,20 +203,21 @@ Name | Type | Description  | Notes
  **backup** | **str**| This is a identifier that is used to identify a specific backup.(version_timestamp) | 
  **backup2** | [**Backup**](../models/Backup)|  | [optional] 
 
-### Return type
+### Return type {#backups_delete_specific_backup-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#backups_delete_specific_backup-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backups_delete_specific_backup-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#backups_delete_specific_backup-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -223,8 +226,6 @@ No authorization required
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operation with the cloud |  -  |
 
-
-
 ## **backups_snapshot** {#backups_snapshot}
 > Backups backups_snapshot()
 
@@ -232,7 +233,7 @@ No authorization required
 
 This will get a snapshot of Backsup within the cloud.  This endpoint requires our user to be authenticated and connected to the cloud.
 
-### Example
+### Example {#backups_snapshot-example}
 
 
 ```python
@@ -251,7 +252,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.BackupsApi(api_client)
+    api_instance = Backups API(api_client)
 
     try:
         # /backups [GET]
@@ -264,24 +265,25 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#backups_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#backups_snapshot-return-type}
 
 [**Backups**](../models/Backups)
 
-### Authorization
+### Authorization {#backups_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#backups_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#backups_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -289,6 +291,4 @@ No authorization required
 **500** | Internal Server Error |  -  |
 **511** | Authentication Required, This means that you user needs to be authenticated with OS in order to perform this action |  -  |
 **505** | HTTP Version Not Supported, This means that your user needs to update their local os, or they cannot perform backup operations with the cloud |  -  |
-
-
 

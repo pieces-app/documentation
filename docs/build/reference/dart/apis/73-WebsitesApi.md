@@ -1,6 +1,10 @@
+---
+title: Websites API | Dart SDK
+---
+
 # Websites API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +21,7 @@ Method | HTTP request | Description
 
 This will create a website and attach it to a specific asset.
 
-### Example
+### Example {#websitescreatenewwebsite-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,27 +37,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitescreatenewwebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **seededWebsite** | [**SeededWebsite**](../models/SeededWebsite)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **seededWebsite** | [**SeededWebsite**](../models/SeededWebsite) |  | [optional] 
 
-### Return type
+### Return type {#websitescreatenewwebsite-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websitescreatenewwebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitescreatenewwebsite-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **websitesDeleteSpecificWebsite** {#websitesdeletespecificwebsite}
 > websitesDeleteSpecificWebsite(website)
@@ -62,7 +64,7 @@ No authorization required
 
 This will delete a specific website!
 
-### Example
+### Example {#websitesdeletespecificwebsite-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -76,26 +78,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitesdeletespecificwebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
+ **website** | **String** | website id | 
 
-### Return type
+### Return type {#websitesdeletespecificwebsite-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitesdeletespecificwebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesdeletespecificwebsite-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **websitesExists** {#websitesexists}
 > ExistingMetadata websitesExists(existentMetadata)
@@ -104,7 +104,7 @@ No authorization required
 
 This will check all of the websites in our database to see if this specific provided website actually exists, if not we will just return a null website in the output.
 
-### Example
+### Example {#websitesexists-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,26 +119,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitesexists-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
+ **existentMetadata** | [**ExistentMetadata**](../models/ExistentMetadata) |  | [optional] 
 
-### Return type
+### Return type {#websitesexists-return-type}
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### Authorization
+### Authorization {#websitesexists-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesexists-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **websitesSnapshot** {#websitessnapshot}
 > Websites websitesSnapshot(transferables)
@@ -147,7 +145,7 @@ No authorization required
 
 This will get a snapshot of all your websites.
 
-### Example
+### Example {#websitessnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -162,24 +160,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#websitessnapshot-return-type}
 
 [**Websites**](../models/Websites)
 
-### Authorization
+### Authorization {#websitessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

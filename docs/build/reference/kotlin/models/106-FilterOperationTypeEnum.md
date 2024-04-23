@@ -1,3 +1,8 @@
+---
+title: FilterOperationTypeEnum | Kotlin SDK
+---
+
+
 
 # FilterOperationTypeEnum
 
@@ -7,6 +12,7 @@
     * `AND` (value: `"AND"`)
 
     * `OR` (value: `"OR"`)
+
 
 
 

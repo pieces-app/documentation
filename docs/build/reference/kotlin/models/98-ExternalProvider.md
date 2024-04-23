@@ -1,3 +1,8 @@
+---
+title: ExternalProvider | Kotlin SDK
+---
+
+
 
 # ExternalProvider
 
@@ -14,6 +19,7 @@ Name | Type | Description | Notes
 **profileData** | [**ExternalProviderProfileData**](ExternalProviderProfileData) |  |  [optional]
 **connection** | **kotlin.String** | This is an optional field that will be provided onentreprise connections. ie is type &#x3D;&#x3D; waad then connection might be PiecesApp. However is other cases,you my find your provider and connection is the exact same string. To decifer between the two, you can use the isSocial bool. |  [optional]
 **isSocial** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

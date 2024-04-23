@@ -1,3 +1,8 @@
+---
+title: SeededAccessor | Kotlin SDK
+---
+
+
 
 # SeededAccessor
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **share** | **kotlin.String** | this is the share that the asset is apart of. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **user** | [**FlattenedUserProfile**](FlattenedUserProfile) |  |  [optional]
+
 
 
 

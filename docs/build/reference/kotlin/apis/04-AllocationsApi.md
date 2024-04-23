@@ -1,6 +1,10 @@
+---
+title: Allocations API | Kotlin SDK
+---
+
 # Allocations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,41 +23,41 @@ Method | HTTP request | Description
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
 
-### Example
+### Example {#allocationsconnectnewcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 val userProfile : UserProfile =  // UserProfile | 
 try {
     val result : AllocationCloud = apiInstance.allocationsConnectNewCloud(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsConnectNewCloud")
+    println("4xx response calling Allocations API#allocationsConnectNewCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsConnectNewCloud")
+    println("5xx response calling Allocations API#allocationsConnectNewCloud")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationsconnectnewcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userProfile** | [**UserProfile**](../models/UserProfile)|  | [optional]
 
-### Return type
+### Return type {#allocationsconnectnewcloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationsconnectnewcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsconnectnewcloud-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -65,41 +69,41 @@ No authorization required
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocationscreatenewallocation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : AllocationCloud = apiInstance.allocationsCreateNewAllocation(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsCreateNewAllocation")
+    println("4xx response calling Allocations API#allocationsCreateNewAllocation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsCreateNewAllocation")
+    println("5xx response calling Allocations API#allocationsCreateNewAllocation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationscreatenewallocation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationscreatenewallocation-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationscreatenewallocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationscreatenewallocation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -111,44 +115,44 @@ No authorization required
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocationsdeleteallocation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : kotlin.String = apiInstance.allocationsDeleteAllocation(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsDeleteAllocation")
+    println("4xx response calling Allocations API#allocationsDeleteAllocation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsDeleteAllocation")
+    println("5xx response calling Allocations API#allocationsDeleteAllocation")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationsdeleteallocation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsdeleteallocation-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#allocationsdeleteallocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsdeleteallocation-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **allocationsDisconnectCloud** {#allocationsdisconnectcloud}
 > kotlin.String allocationsDisconnectCloud(allocationCloud)
@@ -157,44 +161,44 @@ No authorization required
 
 This will attempt to disconnect to a specific users cloud.
 
-### Example
+### Example {#allocationsdisconnectcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : kotlin.String = apiInstance.allocationsDisconnectCloud(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsDisconnectCloud")
+    println("4xx response calling Allocations API#allocationsDisconnectCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsDisconnectCloud")
+    println("5xx response calling Allocations API#allocationsDisconnectCloud")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationsdisconnectcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsdisconnectcloud-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#allocationsdisconnectcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsdisconnectcloud-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **allocationsReconnectCloud** {#allocationsreconnectcloud}
 > AllocationCloud allocationsReconnectCloud(allocationCloud)
@@ -203,41 +207,41 @@ No authorization required
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user&#39;s cloud is up-to-date.
 
-### Example
+### Example {#allocationsreconnectcloud-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : AllocationCloud = apiInstance.allocationsReconnectCloud(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsReconnectCloud")
+    println("4xx response calling Allocations API#allocationsReconnectCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsReconnectCloud")
+    println("5xx response calling Allocations API#allocationsReconnectCloud")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationsreconnectcloud-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocationCloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional]
 
-### Return type
+### Return type {#allocationsreconnectcloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocationsreconnectcloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationsreconnectcloud-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -249,37 +253,37 @@ No authorization required
 
 This is going to get a snapshot of all of the connected allocations.
 
-### Example
+### Example {#allocationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AllocationsApi()
+val apiInstance = Allocations API()
 try {
     val result : Allocations = apiInstance.allocationsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AllocationsApi#allocationsSnapshot")
+    println("4xx response calling Allocations API#allocationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AllocationsApi#allocationsSnapshot")
+    println("5xx response calling Allocations API#allocationsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#allocationssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#allocationssnapshot-return-type}
 
 [**Allocations**](../models/Allocations)
 
-### Authorization
+### Authorization {#allocationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

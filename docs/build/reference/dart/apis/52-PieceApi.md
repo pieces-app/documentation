@@ -1,6 +1,10 @@
+---
+title: Piece API | Dart SDK
+---
+
 # Piece API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.
 
-### Example
+### Example {#htmlshare-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -29,24 +33,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#htmlshare-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **p** | **String**| this is the a query param, that a shortened version of the share. | 
+ **p** | **String** | this is the a query param, that a shortened version of the share. | 
 
-### Return type
+### Return type {#htmlshare-return-type}
 
 **String**
 
-### Authorization
+### Authorization {#htmlshare-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#htmlshare-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/html
-
-
 

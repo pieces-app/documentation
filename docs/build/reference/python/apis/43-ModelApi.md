@@ -1,6 +1,10 @@
+---
+title: Model API | Python SDK
+---
+
 # Model API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +24,7 @@ Method | HTTP request | Description
 
 Downloads a specific model to your local machine.
 
-### Example
+### Example {#model_specific_model_download-example}
 
 
 ```python
@@ -39,7 +43,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -53,34 +57,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_specific_model_download-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#model_specific_model_download-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#model_specific_model_download-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_specific_model_download-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_specific_model_download-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **model_specific_model_download_cancel** {#model_specific_model_download_cancel}
 > Model model_specific_model_download_cancel(model)
@@ -89,7 +92,7 @@ No authorization required
 
 Cancels a specific model download that is currently in progress.
 
-### Example
+### Example {#model_specific_model_download_cancel-example}
 
 
 ```python
@@ -108,7 +111,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -122,34 +125,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_specific_model_download_cancel-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#model_specific_model_download_cancel-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#model_specific_model_download_cancel-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_specific_model_download_cancel-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_specific_model_download_cancel-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **model_specific_model_download_progress** {#model_specific_model_download_progress}
 > ModelDownloadProgress model_specific_model_download_progress(model)
@@ -158,7 +160,7 @@ No authorization required
 
 This is a WebSocket connection that provides real-time updates on the download progress of a specific model.
 
-### Example
+### Example {#model_specific_model_download_progress-example}
 
 
 ```python
@@ -177,7 +179,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -191,34 +193,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_specific_model_download_progress-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#model_specific_model_download_progress-return-type}
 
 [**ModelDownloadProgress**](../models/ModelDownloadProgress)
 
-### Authorization
+### Authorization {#model_specific_model_download_progress-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_specific_model_download_progress-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_specific_model_download_progress-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **model_specific_model_load** {#model_specific_model_load}
 > Model model_specific_model_load(model)
@@ -227,7 +228,7 @@ No authorization required
 
 Loads a previously downloaded model into memory. It differs from downloading, as downloading involves transferring the entire model to your machine, while loading simply loads the model into memory.
 
-### Example
+### Example {#model_specific_model_load-example}
 
 
 ```python
@@ -246,7 +247,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -260,34 +261,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_specific_model_load-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#model_specific_model_load-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#model_specific_model_load-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_specific_model_load-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_specific_model_load-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **model_specific_model_unload** {#model_specific_model_unload}
 > Model model_specific_model_unload(model)
@@ -296,7 +296,7 @@ No authorization required
 
 Unloads a previously loaded model from memory and effectively frees up the RAM consumed by the model.
 
-### Example
+### Example {#model_specific_model_unload-example}
 
 
 ```python
@@ -315,7 +315,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -329,34 +329,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_specific_model_unload-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#model_specific_model_unload-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#model_specific_model_unload-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_specific_model_unload-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_specific_model_unload-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **model_update** {#model_update}
 > Model model_update(model=model)
@@ -365,7 +364,7 @@ No authorization required
 
 Updates a machine learning model. This functionality is exclusively available for models with the 'custom:true' setting.
 
-### Example
+### Example {#model_update-example}
 
 
 ```python
@@ -384,7 +383,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = pieces_os_client.Model() # Model |  (optional)
 
     try:
@@ -398,34 +397,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#model_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**Model**](../models/Model)|  | [optional] 
 
-### Return type
+### Return type {#model_update-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#model_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#model_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#model_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **models_specific_model_snapshot** {#models_specific_model_snapshot}
 > Model models_specific_model_snapshot(model)
@@ -434,7 +432,7 @@ No authorization required
 
 Retrieves a specific ML model.
 
-### Example
+### Example {#models_specific_model_snapshot-example}
 
 
 ```python
@@ -453,7 +451,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ModelApi(api_client)
+    api_instance = Model API(api_client)
     model = 'model_example' # str | model id
 
     try:
@@ -467,32 +465,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#models_specific_model_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | **str**| model id | 
 
-### Return type
+### Return type {#models_specific_model_snapshot-return-type}
 
 [**Model**](../models/Model)
 
-### Authorization
+### Authorization {#models_specific_model_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#models_specific_model_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#models_specific_model_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | model was not found. |  -  |
-
-
 

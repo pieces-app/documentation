@@ -1,6 +1,10 @@
+---
+title: Activity API | TypeScript SDK
+---
+
 # Activity API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Method | HTTP request | Description
 
 This will attempt to get a specific activity.
 
-### Example
+### Example {#activitiesspecificactivitysnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -23,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivitiesSpecificActivitySnapshotRequest = {
-    // string | This is a specific activity uuid.
-    activity: activity_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is a specific activity uuid.
+activity: activity_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.activitiesSpecificActivitySnapshot(body).then((data: Activity) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#activitiesspecificactivitysnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -42,17 +47,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#activitiesspecificactivitysnapshot-return-type}
 
 [**Activity**](../models/Activity)
 
-### HTTP request headers
+### HTTP request headers {#activitiesspecificactivitysnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#activitiesspecificactivitysnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +69,7 @@ Name | Type | Description  | Notes
 
 This is going to return all the identifiers of the activity event in order of most recent -> oldest.
 
-### Example
+### Example {#activityidentifierssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -73,18 +78,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivityIdentifiersSnapshotRequest = {
-    // boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
-    pseudo: true,
-    // 'CREATED' | 'UPDATED' | 'DELETED' | 'REFERENCED' | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. (optional)
-    activityFilterEnum: activityFilterEnum_example,
+// boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
+pseudo: true,
+// 'CREATED' | 'UPDATED' | 'DELETED' | 'REFERENCED' | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. (optional)
+activityFilterEnum: activityFilterEnum_example,
 };
 
 apiInstance.activityIdentifiersSnapshot(body).then((data: FlattenedActivities) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#activityidentifierssnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -92,17 +98,17 @@ Name | Type | Description  | Notes
  **activityFilterEnum** | [**&#39;CREATED&#39; | &#39;UPDATED&#39; | &#39;DELETED&#39; | &#39;REFERENCED&#39;**]**Array\<&#39;CREATED&#39; &#124; &#39;UPDATED&#39; &#124; &#39;DELETED&#39; &#124; &#39;REFERENCED&#39;\>** | This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#activityidentifierssnapshot-return-type}
 
 [**FlattenedActivities**](../models/FlattenedActivities)
 
-### HTTP request headers
+### HTTP request headers {#activityidentifierssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#activityidentifierssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -113,7 +119,7 @@ Name | Type | Description  | Notes
 
 this will update a specific activity.
 
-### Example
+### Example {#activityupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -122,18 +128,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ActivityApi(configuration)
 
 const body: Pieces.ActivityUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Activity (optional)
-    activity: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Activity (optional)
+activity: ,
 };
 
 apiInstance.activityUpdate(body).then((data: Activity) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#activityupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -141,17 +148,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#activityupdate-return-type}
 
 [**Activity**](../models/Activity)
 
-### HTTP request headers
+### HTTP request headers {#activityupdate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#activityupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

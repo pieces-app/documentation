@@ -1,3 +1,8 @@
+---
+title: SeededFragment | Kotlin SDK
+---
+
+
 
 # SeededFragment
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **string** | [**TransferableString**](TransferableString) |  |  [optional]
 **bytes** | [**TransferableBytes**](TransferableBytes) |  |  [optional]
 **metadata** | [**FragmentMetadata**](FragmentMetadata) |  |  [optional]
+
 
 
 

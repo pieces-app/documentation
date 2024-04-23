@@ -1,3 +1,8 @@
+---
+title: SeededActivity | Kotlin SDK
+---
+
+
 
 # SeededActivity
 
@@ -11,6 +16,7 @@ Name | Type | Description | Notes
 **format** | [**ReferencedFormat**](ReferencedFormat) |  |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  |  [optional]
+
 
 
 

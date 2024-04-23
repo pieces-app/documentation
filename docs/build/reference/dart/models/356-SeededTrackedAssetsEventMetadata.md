@@ -1,15 +1,12 @@
-# SeededTrackedAssetsEventMetadata
+---
+title: SeededTrackedAssetsEventMetadata | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededTrackedAssetsEventMetadata
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **search** | [**TrackedAssetsEventSearchMetadata**](TrackedAssetsEventSearchMetadata) |  | [optional] 
-
-
 
 

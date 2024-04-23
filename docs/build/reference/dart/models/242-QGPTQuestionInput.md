@@ -1,9 +1,8 @@
-# QGPTQuestionInput
+---
+title: QGPTQuestionInput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTQuestionInput
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  | [optional] 
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] 
-
-
 
 

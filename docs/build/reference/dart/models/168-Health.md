@@ -1,16 +1,13 @@
-# Health
+---
+title: Health | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Health
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **os** | [**OSHealth**](OSHealth) |  | 
-
-
 
 

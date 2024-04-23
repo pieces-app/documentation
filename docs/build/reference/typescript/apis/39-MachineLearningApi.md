@@ -1,6 +1,10 @@
+---
+title: MachineLearning API | TypeScript SDK
+---
+
 # MachineLearning API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +17,7 @@ Method | HTTP request | Description
 
 This is going to take in some personification details ie languages & personas.  and will return generated Seeds that can be used as snippets post/pre onboarding.
 
-### Example
+### Example {#personificationtechnicallanguagegeneration-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -22,33 +26,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.MachineLearningApi(configuration)
 
 const body: Pieces.PersonificationTechnicalLanguageGenerationRequest = {
-    // PreonboardedPersonaDetails (optional)
-    preonboardedPersonaDetails: ,
+// PreonboardedPersonaDetails (optional)
+preonboardedPersonaDetails: ,
 };
 
 apiInstance.personificationTechnicalLanguageGeneration(body).then((data: OnboardedPersonaDetails) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#personificationtechnicallanguagegeneration-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preonboardedPersonaDetails** | **PreonboardedPersonaDetails**|  |
 
 
-### Return type
+### Return type {#personificationtechnicallanguagegeneration-return-type}
 
 [**OnboardedPersonaDetails**](../models/OnboardedPersonaDetails)
 
-### HTTP request headers
+### HTTP request headers {#personificationtechnicallanguagegeneration-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#personificationtechnicallanguagegeneration-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -59,7 +64,7 @@ Name | Type | Description  | Notes
 
 This is a functional endpoint that will parse a message or text in to text or code.  if the optional query param is passed along \'classify\' then we will optionally classify the just the code that is segmented.
 
-### Example
+### Example {#segmenttechnicallanguage-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -68,18 +73,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.MachineLearningApi(configuration)
 
 const body: Pieces.SegmentTechnicalLanguageRequest = {
-    // boolean | This will let us know if you want us to classifiy your code, this is default to false. (optional)
-    classify: true,
-    // UnsegmentedTechnicalLanguage (optional)
-    unsegmentedTechnicalLanguage: ,
+// boolean | This will let us know if you want us to classifiy your code, this is default to false. (optional)
+classify: true,
+// UnsegmentedTechnicalLanguage (optional)
+unsegmentedTechnicalLanguage: ,
 };
 
 apiInstance.segmentTechnicalLanguage(body).then((data: SegmentedTechnicalLanguage) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#segmenttechnicallanguage-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -87,17 +93,17 @@ Name | Type | Description  | Notes
  **classify** | [**boolean**] | This will let us know if you want us to classifiy your code, this is default to false. | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#segmenttechnicallanguage-return-type}
 
 [**SegmentedTechnicalLanguage**](../models/SegmentedTechnicalLanguage)
 
-### HTTP request headers
+### HTTP request headers {#segmenttechnicallanguage-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#segmenttechnicallanguage-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

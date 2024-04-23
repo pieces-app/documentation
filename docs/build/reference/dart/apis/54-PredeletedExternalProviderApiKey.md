@@ -1,9 +1,8 @@
-# PredeletedExternalProviderApiKey
+---
+title: PredeletedExternalProviderApiKey | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# PredeletedExternalProviderApiKey
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema) |  | [optional] 
 **user** | **String** |  | 
 **openAI** | **bool** |  | [optional] 
-
-
 
 

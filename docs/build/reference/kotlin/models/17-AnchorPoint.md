@@ -1,3 +1,8 @@
+---
+title: AnchorPoint | Kotlin SDK
+---
+
+
 
 # AnchorPoint
 
@@ -14,6 +19,7 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
 **platform** | [**PlatformEnum**](PlatformEnum) |  |  [optional]
 **score** | [**Score**](Score) |  |  [optional]
+
 
 
 

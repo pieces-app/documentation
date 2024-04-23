@@ -1,3 +1,8 @@
+---
+title: Analyses | Kotlin SDK
+---
+
+
 
 # Analyses
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Analysis&gt;**](Analysis) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

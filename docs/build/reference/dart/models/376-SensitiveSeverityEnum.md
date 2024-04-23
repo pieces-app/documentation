@@ -1,14 +1,11 @@
-# SensitiveSeverityEnum
+---
+title: SensitiveSeverityEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SensitiveSeverityEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

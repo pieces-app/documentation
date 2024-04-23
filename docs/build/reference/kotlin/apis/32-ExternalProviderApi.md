@@ -1,6 +1,10 @@
+---
+title: ExternalProvider API | Kotlin SDK
+---
+
 # ExternalProvider API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,139 +14,139 @@ Method | HTTP request | Description
 
 
 ## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
-> CreatedExternalProviderApiKey externalProviderApiKeyCreate(precreatedExternalProviderApiKey)
+> CreatedExternalProvider APIKey externalProvider APIKeyCreate(precreatedExternalProviderApiKey)
 
 /external_provider/api_key/create [POST]
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeycreate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ExternalProviderApi()
-val precreatedExternalProviderApiKey : PrecreatedExternalProviderApiKey =  // PrecreatedExternalProviderApiKey | 
+val apiInstance = ExternalProvider API()
+val precreatedExternalProvider APIKey : PrecreatedExternalProvider APIKey =  // PrecreatedExternalProvider APIKey | 
 try {
-    val result : CreatedExternalProviderApiKey = apiInstance.externalProviderApiKeyCreate(precreatedExternalProviderApiKey)
+    val result : CreatedExternalProvider APIKey = apiInstance.externalProviderApiKeyCreate(precreatedExternalProviderApiKey)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ExternalProviderApi#externalProviderApiKeyCreate")
+    println("4xx response calling ExternalProvider API#externalProviderApiKeyCreate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ExternalProviderApi#externalProviderApiKeyCreate")
+    println("5xx response calling ExternalProvider API#externalProviderApiKeyCreate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeycreate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | [**PrecreatedExternalProviderApiKey**](PrecreatedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeycreate-return-type}
 
 [**CreatedExternalProviderApiKey**](CreatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeycreate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeycreate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
 ## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
-> DeletedExternalProviderApiKey externalProviderApiKeyDelete(predeletedExternalProviderApiKey)
+> DeletedExternalProvider APIKey externalProvider APIKeyDelete(predeletedExternalProviderApiKey)
 
 /external_provider/api_key/delete [POST]
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeydelete-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ExternalProviderApi()
-val predeletedExternalProviderApiKey : PredeletedExternalProviderApiKey =  // PredeletedExternalProviderApiKey | 
+val apiInstance = ExternalProvider API()
+val predeletedExternalProvider APIKey : PredeletedExternalProvider APIKey =  // PredeletedExternalProvider APIKey | 
 try {
-    val result : DeletedExternalProviderApiKey = apiInstance.externalProviderApiKeyDelete(predeletedExternalProviderApiKey)
+    val result : DeletedExternalProvider APIKey = apiInstance.externalProviderApiKeyDelete(predeletedExternalProviderApiKey)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ExternalProviderApi#externalProviderApiKeyDelete")
+    println("4xx response calling ExternalProvider API#externalProviderApiKeyDelete")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ExternalProviderApi#externalProviderApiKeyDelete")
+    println("5xx response calling ExternalProvider API#externalProviderApiKeyDelete")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeydelete-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | [**PredeletedExternalProviderApiKey**](PredeletedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeydelete-return-type}
 
 [**DeletedExternalProviderApiKey**](DeletedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeydelete-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeydelete-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
 ## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
-> UpdatedExternalProviderApiKey externalProviderApiKeyUpdate(preupdatedExternalProviderApiKey)
+> UpdatedExternalProvider APIKey externalProvider APIKeyUpdate(preupdatedExternalProviderApiKey)
 
 /external_provider/api_key/update [POST]
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeyupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ExternalProviderApi()
-val preupdatedExternalProviderApiKey : PreupdatedExternalProviderApiKey =  // PreupdatedExternalProviderApiKey | 
+val apiInstance = ExternalProvider API()
+val preupdatedExternalProvider APIKey : PreupdatedExternalProvider APIKey =  // PreupdatedExternalProvider APIKey | 
 try {
-    val result : UpdatedExternalProviderApiKey = apiInstance.externalProviderApiKeyUpdate(preupdatedExternalProviderApiKey)
+    val result : UpdatedExternalProvider APIKey = apiInstance.externalProviderApiKeyUpdate(preupdatedExternalProviderApiKey)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ExternalProviderApi#externalProviderApiKeyUpdate")
+    println("4xx response calling ExternalProvider API#externalProviderApiKeyUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ExternalProviderApi#externalProviderApiKeyUpdate")
+    println("5xx response calling ExternalProvider API#externalProviderApiKeyUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeyupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | [**PreupdatedExternalProviderApiKey**](PreupdatedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeyupdate-return-type}
 
 [**UpdatedExternalProviderApiKey**](UpdatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeyupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeyupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

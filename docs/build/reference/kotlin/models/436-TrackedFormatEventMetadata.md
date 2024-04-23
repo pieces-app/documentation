@@ -1,3 +1,8 @@
+---
+title: TrackedFormatEventMetadata | Kotlin SDK
+---
+
+
 
 # TrackedFormatEventMetadata
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **reclassification** | [**TrackedAssetEventFormatReclassificationMetadata**](TrackedAssetEventFormatReclassificationMetadata) |  |  [optional]
+
 
 
 

@@ -1,3 +1,7 @@
+---
+title: TrackedSessionEventIdentifierDescriptionPairs | Python SDK
+---
+
 # TrackedSessionEventIdentifierDescriptionPairs
 
 These are all of the available event types that are permitted in an object pair notation.
@@ -19,23 +23,5 @@ Name | Type | Description | Notes
 **session_unauthenticated_with_remind** | **str** | A user did not sign into the session with a reminder | [optional] 
 **session_onboarding_initialized** | **str** | Onboarding has been initialized for this session | [optional] 
 **session_onboarding_completed** | **str** | Onboarding has been completed for this session | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.tracked_session_event_identifier_description_pairs import TrackedSessionEventIdentifierDescriptionPairs
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TrackedSessionEventIdentifierDescriptionPairs from a JSON string
-tracked_session_event_identifier_description_pairs_instance = TrackedSessionEventIdentifierDescriptionPairs.from_json(json)
-# print the JSON string representation of the object
-print(TrackedSessionEventIdentifierDescriptionPairs.to_json())
-
-# convert the object into a dict
-tracked_session_event_identifier_description_pairs_dict = tracked_session_event_identifier_description_pairs_instance.to_dict()
-# create an instance of TrackedSessionEventIdentifierDescriptionPairs from a dict
-tracked_session_event_identifier_description_pairs_form_dict = tracked_session_event_identifier_description_pairs.from_dict(tracked_session_event_identifier_description_pairs_dict)
-```
 
 

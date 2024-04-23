@@ -1,3 +1,7 @@
+---
+title: Auth0 | TypeScript SDK
+---
+
 
 # Auth0
 
@@ -16,34 +20,5 @@ Name | Type
 **redirects** | [**Auth0Redirects**](Auth0Redirects)
 **oAuth** | [**OAuthGroup**](OAuthGroup)
 **namespace** | **string**
-
-## Example
-
-```typescript
-import { Auth0 } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: Auth0 = {
-    "identity": null,
-    "user": null,
-    "metadata": null,
-    "domain": null,
-    "client": null,
-    "audience": null,
-    "redirects": null,
-    "oAuth": null,
-    "namespace": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as Auth0
-console.log(exampleParsed)
-```
 
 

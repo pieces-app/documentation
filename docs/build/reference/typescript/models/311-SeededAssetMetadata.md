@@ -1,3 +1,7 @@
+---
+title: SeededAssetMetadata | TypeScript SDK
+---
+
 
 # SeededAssetMetadata
 
@@ -17,35 +21,5 @@ Name | Type
 **annotations** | [**Array&lt;SeededAnnotation&gt;**](SeededAnnotation)
 **hints** | [**Array&lt;SeededHint&gt;**](SeededHint)
 **anchors** | [**Array&lt;SeededAnchor&gt;**](SeededAnchor)
-
-## Example
-
-```typescript
-import { SeededAssetMetadata } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededAssetMetadata = {
-    "schema": null,
-    "name": null,
-    "mechanism": null,
-    "tags": null,
-    "websites": null,
-    "sensitives": null,
-    "persons": null,
-    "annotations": null,
-    "hints": null,
-    "anchors": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededAssetMetadata
-console.log(exampleParsed)
-```
 
 

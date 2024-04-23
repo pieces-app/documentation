@@ -1,6 +1,10 @@
+---
+title: ImageAnalyses API | Dart SDK
+---
+
 # ImageAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Your GET endpoint
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an image analysis.
 
-### Example
+### Example {#imageanalysessnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -29,24 +33,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#imageanalysessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#imageanalysessnapshot-return-type}
 
 [**ImageAnalyses**](../models/ImageAnalyses)
 
-### Authorization
+### Authorization {#imageanalysessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#imageanalysessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 

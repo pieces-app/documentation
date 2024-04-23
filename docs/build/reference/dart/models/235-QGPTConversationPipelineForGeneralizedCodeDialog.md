@@ -1,15 +1,12 @@
-# QGPTConversationPipelineForGeneralizedCodeDialog
+---
+title: QGPTConversationPipelineForGeneralizedCodeDialog | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTConversationPipelineForGeneralizedCodeDialog
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
-
-
 
 

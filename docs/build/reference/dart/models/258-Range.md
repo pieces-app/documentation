@@ -1,9 +1,8 @@
-# Range
+---
+title: Range | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# Range
 
 ## Properties
 Name | Type | Description | Notes
@@ -18,7 +17,5 @@ Name | Type | Description | Notes
 **between** | **bool** |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  | [optional] 
-
-
 
 

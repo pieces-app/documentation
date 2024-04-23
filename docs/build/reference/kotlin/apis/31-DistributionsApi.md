@@ -1,6 +1,10 @@
+---
+title: Distributions API | Kotlin SDK
+---
+
 # Distributions API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,41 +20,41 @@ Method | HTTP request | Description
 
 This will create a new distribution.
 
-### Example
+### Example {#distributionscreatenewdistribution-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
 try {
     val result : Distribution = apiInstance.distributionsCreateNewDistribution(seededDistribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsCreateNewDistribution")
+    println("4xx response calling Distributions API#distributionsCreateNewDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsCreateNewDistribution")
+    println("5xx response calling Distributions API#distributionsCreateNewDistribution")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#distributionscreatenewdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional]
 
-### Return type
+### Return type {#distributionscreatenewdistribution-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionscreatenewdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionscreatenewdistribution-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -62,43 +66,43 @@ No authorization required
 
 This will delete a specific distribution.
 
-### Example
+### Example {#distributionsdeletespecificdistribution-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
 try {
     apiInstance.distributionsDeleteSpecificDistribution(distribution)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
+    println("4xx response calling Distributions API#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
+    println("5xx response calling Distributions API#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#distributionsdeletespecificdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **kotlin.String**| This is the uuid of a specific distribution. |
 
-### Return type
+### Return type {#distributionsdeletespecificdistribution-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#distributionsdeletespecificdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsdeletespecificdistribution-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
@@ -107,37 +111,37 @@ No authorization required
 
 This will get a specific snapshot of all our distributions.
 
-### Example
+### Example {#distributionssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionsApi()
+val apiInstance = Distributions API()
 try {
     val result : Distributions = apiInstance.distributionsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionsApi#distributionsSnapshot")
+    println("4xx response calling Distributions API#distributionsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionsApi#distributionsSnapshot")
+    println("5xx response calling Distributions API#distributionsSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#distributionssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#distributionssnapshot-return-type}
 
 [**Distributions**](../models/Distributions)
 
-### Authorization
+### Authorization {#distributionssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

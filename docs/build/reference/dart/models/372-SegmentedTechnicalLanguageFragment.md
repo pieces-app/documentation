@@ -1,9 +1,8 @@
-# SegmentedTechnicalLanguageFragment
+---
+title: SegmentedTechnicalLanguageFragment | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SegmentedTechnicalLanguageFragment
 
 ## Properties
 Name | Type | Description | Notes
@@ -12,7 +11,5 @@ Name | Type | Description | Notes
 **generic** | [**ClassificationGenericEnum**](ClassificationGenericEnum) |  | 
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] 
 **fragment** | [**FragmentFormat**](FragmentFormat) |  | 
-
-
 
 

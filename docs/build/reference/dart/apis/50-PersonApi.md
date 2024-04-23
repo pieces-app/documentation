@@ -1,6 +1,10 @@
+---
+title: Person API | Dart SDK
+---
+
 # Person API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a person with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#personassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,27 +37,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **person** | **String** | This is a uuid that represents a person. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#personassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#personassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **personDisassociateWorkstreamSummary** {#persondisassociateworkstreamsummary}
 > personDisassociateWorkstreamSummary(person, workstreamSummary)
@@ -62,7 +64,7 @@ No authorization required
 
 This will enable us to disassociate an person from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#persondisassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -77,27 +79,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#persondisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **person** | **String** | This is a uuid that represents a person. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#persondisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#persondisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#persondisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **personScoresIncrement** {#personscoresincrement}
 > personScoresIncrement(person, seededScoreIncrement)
@@ -106,7 +106,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#personscoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -121,27 +121,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **person** | **String** | This is a uuid that represents a person. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#personscoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#personscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
-
-
+ - **Accept**: text/plain
 
 ## **personSnapshot** {#personsnapshot}
 > Person personSnapshot(person, transferables)
@@ -150,7 +148,7 @@ No authorization required
 
 This will get a snapshot of a specific person
 
-### Example
+### Example {#personsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -166,27 +164,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#personsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **person** | **String**| This is a uuid that represents a person. | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **person** | **String** | This is a uuid that represents a person. | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#personsnapshot-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#personsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#personsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
-
-
+ - **Accept**: application/json, text/plain
 
 ## **updatePerson** {#updateperson}
 > Person updatePerson(transferables, person)
@@ -195,7 +191,7 @@ No authorization required
 
 This will update a specific person
 
-### Example
+### Example {#updateperson-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -211,25 +207,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#updateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **person** | [**Person**](../models/Person)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **person** | [**Person**](../models/Person) |  | [optional] 
 
-### Return type
+### Return type {#updateperson-return-type}
 
 [**Person**](../models/Person)
 
-### Authorization
+### Authorization {#updateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#updateperson-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 

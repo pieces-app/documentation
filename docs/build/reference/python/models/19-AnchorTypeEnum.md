@@ -1,3 +1,7 @@
+---
+title: AnchorTypeEnum | Python SDK
+---
+
 # AnchorTypeEnum
 
 This is an enum used to differentiate the different between different anchors. Used in the Anchor data model.
@@ -6,6 +10,5 @@ This is an enum used to differentiate the different between different anchors. U
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

@@ -1,3 +1,8 @@
+---
+title: Seed | Kotlin SDK
+---
+
+
 
 # Seed
 
@@ -9,11 +14,11 @@ Name | Type | Description | Notes
 **asset** | [**SeededAsset**](SeededAsset) |  |  [optional]
 
 
-<a id="Type"></a>
-## Enum: type
+## type
 Name | Value
 ---- | -----
 type | SEEDED_FORMAT, SEEDED_ASSET
+
 
 
 

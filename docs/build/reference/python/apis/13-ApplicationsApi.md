@@ -1,6 +1,10 @@
+---
+title: Applications API | Python SDK
+---
+
 # Applications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +29,7 @@ Method | HTTP request | Description
 
 Retrieves a list of external applications installed on the user's machine that have potential integrations with Pieces, including those not yet installed by the user and those anticipated to be supported in the future.
 
-### Example
+### Example {#applications_external_related-example}
 
 
 ```python
@@ -44,7 +48,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
 
     try:
         # /applications/external/related [GET]
@@ -57,31 +61,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_external_related-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#applications_external_related-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applications_external_related-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_external_related-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#applications_external_related-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **applications_external_snapshot** {#applications_external_snapshot}
 > DetectedExternalApplications applications_external_snapshot()
@@ -90,7 +93,7 @@ No authorization required
 
 Provides a snapshot of all external applications detected on the user's machine, such as Microsoft Teams classic, Google Chat, Obsidian, etc.
 
-### Example
+### Example {#applications_external_snapshot-example}
 
 
 ```python
@@ -109,7 +112,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
 
     try:
         # /applications/external [GET]
@@ -122,31 +125,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_external_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#applications_external_snapshot-return-type}
 
 [**DetectedExternalApplications**](../models/DetectedExternalApplications)
 
-### Authorization
+### Authorization {#applications_external_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_external_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#applications_external_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **applications_register** - (Deprecated) {#applications_register}
 > Application applications_register(application=application)
@@ -155,7 +157,7 @@ No authorization required
 
 Registers a new application within the Pieces ecosystem.
 
-### Example
+### Example {#applications_register-example}
 
 
 ```python
@@ -174,7 +176,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     application = pieces_os_client.Application() # Application | This will accept a application. (optional)
 
     try:
@@ -188,33 +190,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_register-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**Application**](../models/Application)| This will accept a application. | [optional] 
 
-### Return type
+### Return type {#applications_register-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applications_register-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_register-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_register-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_session_close** - (Deprecated) {#applications_session_close}
 > Session applications_session_close(body=body)
@@ -223,7 +224,7 @@ No authorization required
 
 Closes an active session, identified by a session UUID, marking the end of the user's current interaction with the Pieces application.
 
-### Example
+### Example {#applications_session_close-example}
 
 
 ```python
@@ -242,7 +243,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     body = 'body_example' # str | This will accept a required session uuid. (optional)
 
     try:
@@ -256,33 +257,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_session_close-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **body** | **str**| This will accept a required session uuid. | [optional] 
 
-### Return type
+### Return type {#applications_session_close-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applications_session_close-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_session_close-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_session_close-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_session_open** - (Deprecated) {#applications_session_open}
 > Session applications_session_open()
@@ -291,7 +291,7 @@ No authorization required
 
 Initiates a new session, marking the start of a user's interaction with the Pieces application.
 
-### Example
+### Example {#applications_session_open-example}
 
 
 ```python
@@ -310,7 +310,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
 
     try:
         # /applications/session/open [POST]
@@ -323,30 +323,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_session_open-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#applications_session_open-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applications_session_open-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_session_open-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_session_open-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_session_snapshot** - (Deprecated) {#applications_session_snapshot}
 > Session applications_session_snapshot(session)
@@ -355,7 +354,7 @@ No authorization required
 
 Fetches detailed information about a specific session, identified by a session UUID, including application usage and engagement data.
 
-### Example
+### Example {#applications_session_snapshot-example}
 
 
 ```python
@@ -374,7 +373,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     session = 'session_example' # str | This is a uuid that points to a session.
 
     try:
@@ -388,33 +387,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_session_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **session** | **str**| This is a uuid that points to a session. | 
 
-### Return type
+### Return type {#applications_session_snapshot-return-type}
 
 [**Session**](../models/Session)
 
-### Authorization
+### Authorization {#applications_session_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_session_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_session_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_snapshot** {#applications_snapshot}
 > Applications applications_snapshot()
@@ -423,7 +421,7 @@ No authorization required
 
 Retrieves a comprehensive overview of all applications tracked by the Pieces system, including status, version, and engagement metrics.
 
-### Example
+### Example {#applications_snapshot-example}
 
 
 ```python
@@ -442,7 +440,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
 
     try:
         # /applications [GET]
@@ -455,30 +453,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#applications_snapshot-return-type}
 
 [**Applications**](../models/Applications)
 
-### Authorization
+### Authorization {#applications_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_specific_application_snapshot** {#applications_specific_application_snapshot}
 > Application applications_specific_application_snapshot(application)
@@ -487,7 +484,7 @@ No authorization required
 
 Obtains a snapshot with information about a specific application, identified by its UUID.
 
-### Example
+### Example {#applications_specific_application_snapshot-example}
 
 
 ```python
@@ -506,7 +503,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     application = 'application_example' # str | This is a uuid that represents an application
 
     try:
@@ -520,33 +517,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_specific_application_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | **str**| This is a uuid that represents an application | 
 
-### Return type
+### Return type {#applications_specific_application_snapshot-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applications_specific_application_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_specific_application_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_specific_application_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_usage_engagement_interaction** - (Deprecated) {#applications_usage_engagement_interaction}
 > TrackedInteractionEvent applications_usage_engagement_interaction(seeded_tracked_interaction_event=seeded_tracked_interaction_event)
@@ -555,7 +551,7 @@ No authorization required
 
 Records user interaction events within applications, such as clicks or taps, to analyze engagement patterns and user behavior.
 
-### Example
+### Example {#applications_usage_engagement_interaction-example}
 
 
 ```python
@@ -575,7 +571,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     seeded_tracked_interaction_event = pieces_os_client.SeededTrackedInteractionEvent() # SeededTrackedInteractionEvent |  (optional)
 
     try:
@@ -589,33 +585,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_usage_engagement_interaction-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_tracked_interaction_event** | [**SeededTrackedInteractionEvent**](../models/SeededTrackedInteractionEvent)|  | [optional] 
 
-### Return type
+### Return type {#applications_usage_engagement_interaction-return-type}
 
 [**TrackedInteractionEvent**](../models/TrackedInteractionEvent)
 
-### Authorization
+### Authorization {#applications_usage_engagement_interaction-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_usage_engagement_interaction-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_usage_engagement_interaction-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_usage_engagement_keyboard** - (Deprecated) {#applications_usage_engagement_keyboard}
 > TrackedKeyboardEvent applications_usage_engagement_keyboard(seeded_tracked_keyboard_event=seeded_tracked_keyboard_event)
@@ -624,7 +619,7 @@ No authorization required
 
 Captures keyboard interaction events, including shortcuts, within applications to monitor user engagement and productivity enhancements.
 
-### Example
+### Example {#applications_usage_engagement_keyboard-example}
 
 
 ```python
@@ -644,7 +639,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     seeded_tracked_keyboard_event = pieces_os_client.SeededTrackedKeyboardEvent() # SeededTrackedKeyboardEvent |  (optional)
 
     try:
@@ -658,33 +653,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_usage_engagement_keyboard-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_tracked_keyboard_event** | [**SeededTrackedKeyboardEvent**](../models/SeededTrackedKeyboardEvent)|  | [optional] 
 
-### Return type
+### Return type {#applications_usage_engagement_keyboard-return-type}
 
 [**TrackedKeyboardEvent**](../models/TrackedKeyboardEvent)
 
-### Authorization
+### Authorization {#applications_usage_engagement_keyboard-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_usage_engagement_keyboard-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#applications_usage_engagement_keyboard-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **applications_usage_installation** - (Deprecated) {#applications_usage_installation}
 > applications_usage_installation(tracked_application_install=tracked_application_install)
@@ -693,7 +687,7 @@ No authorization required
 
 Logs the installation events of the Pieces application.
 
-### Example
+### Example {#applications_usage_installation-example}
 
 
 ```python
@@ -712,7 +706,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     tracked_application_install = pieces_os_client.TrackedApplicationInstall() # TrackedApplicationInstall |  (optional)
 
     try:
@@ -724,33 +718,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#applications_usage_installation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tracked_application_install** | [**TrackedApplicationInstall**](../models/TrackedApplicationInstall)|  | [optional] 
 
-### Return type
+### Return type {#applications_usage_installation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#applications_usage_installation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applications_usage_installation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-### HTTP response details
+
+### HTTP response details {#applications_usage_installation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **post_applications_usage_updated** - (Deprecated) {#post_applications_usage_updated}
 > post_applications_usage_updated(tracked_application_update=tracked_application_update)
@@ -759,7 +752,7 @@ No authorization required
 
 Tracks updates to the Pieces application, including version changes.
 
-### Example
+### Example {#post_applications_usage_updated-example}
 
 
 ```python
@@ -778,7 +771,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.ApplicationsApi(api_client)
+    api_instance = Applications API(api_client)
     tracked_application_update = pieces_os_client.TrackedApplicationUpdate() # TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user. (optional)
 
     try:
@@ -790,31 +783,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#post_applications_usage_updated-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tracked_application_update** | [**TrackedApplicationUpdate**](../models/TrackedApplicationUpdate)| Sending over the previous application version, the current version, and the user. | [optional] 
 
-### Return type
+### Return type {#post_applications_usage_updated-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#post_applications_usage_updated-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#post_applications_usage_updated-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-### HTTP response details
+
+### HTTP response details {#post_applications_usage_updated-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

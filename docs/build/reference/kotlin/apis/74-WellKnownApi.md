@@ -1,6 +1,10 @@
+---
+title: WellKnown API | Kotlin SDK
+---
+
 # WellKnown API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,40 +19,40 @@ Method | HTTP request | Description
 
 Retrieves the health status of the server.
 
-### Example
+### Example {#getwellknownhealth-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnownApi()
+val apiInstance = WellKnown API()
 try {
     val result : kotlin.String = apiInstance.getWellKnownHealth()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnownApi#getWellKnownHealth")
+    println("4xx response calling WellKnown API#getWellKnownHealth")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnownApi#getWellKnownHealth")
+    println("5xx response calling WellKnown API#getWellKnownHealth")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#getwellknownhealth-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getwellknownhealth-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#getwellknownhealth-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getwellknownhealth-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **getWellKnownVersion** {#getwellknownversion}
 > kotlin.String getWellKnownVersion()
@@ -57,38 +61,38 @@ No authorization required
 
 Retrieves the version of the server. It returns a string representing the current version.
 
-### Example
+### Example {#getwellknownversion-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnownApi()
+val apiInstance = WellKnown API()
 try {
     val result : kotlin.String = apiInstance.getWellKnownVersion()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnownApi#getWellKnownVersion")
+    println("4xx response calling WellKnown API#getWellKnownVersion")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnownApi#getWellKnownVersion")
+    println("5xx response calling WellKnown API#getWellKnownVersion")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#getwellknownversion-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getwellknownversion-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#getwellknownversion-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getwellknownversion-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 

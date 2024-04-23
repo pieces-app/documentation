@@ -1,9 +1,8 @@
-# SeededHint
+---
+title: SeededHint | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededHint
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **type** | [**HintTypeEnum**](HintTypeEnum) |  | 
 **text** | **String** | This is the text of the hint. | 
 **model** | **String** | this is a model id. that we are using to link this to a model. | [optional] 
-
-
 
 

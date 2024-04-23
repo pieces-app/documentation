@@ -1,3 +1,8 @@
+---
+title: OSPermissions | Kotlin SDK
+---
+
+
 
 # OSPermissions
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **processing** | [**OSProcessingPermissions**](OSProcessingPermissions) |  |  [optional]
+
 
 
 

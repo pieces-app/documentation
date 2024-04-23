@@ -1,14 +1,11 @@
-# ClassificationRenderingEnum
+---
+title: ClassificationRenderingEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ClassificationRenderingEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

@@ -1,6 +1,10 @@
+---
+title: ExternalProvider API | TypeScript SDK
+---
+
 # ExternalProvider API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,11 +14,11 @@ Method | HTTP request | Description
 
 
 ## **externalProviderApiKeyCreate** {#externalproviderapikeycreate}
-> CreatedExternalProviderApiKey externalProviderApiKeyCreate()
+> CreatedExternalProvider APIKey externalProvider APIKeyCreate()
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeycreate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -23,33 +27,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyCreateRequest = {
-    // PrecreatedExternalProviderApiKey (optional)
-    precreatedExternalProviderApiKey: ,
+// PrecreatedExternalProvider APIKey (optional)
+precreatedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data)
+apiInstance.externalProviderApiKeyCreate(body).then((data: CreatedExternalProvider APIKey) => {
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeycreate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | **PrecreatedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return type {#externalproviderapikeycreate-return-type}
 
 [**CreatedExternalProviderApiKey**](../models/CreatedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeycreate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#externalproviderapikeycreate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -57,11 +62,11 @@ Name | Type | Description  | Notes
 **500** | Internal Server Error |  -  |
 
 ## **externalProviderApiKeyDelete** {#externalproviderapikeydelete}
-> DeletedExternalProviderApiKey externalProviderApiKeyDelete()
+> DeletedExternalProvider APIKey externalProvider APIKeyDelete()
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeydelete-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -70,33 +75,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyDeleteRequest = {
-    // PredeletedExternalProviderApiKey (optional)
-    predeletedExternalProviderApiKey: ,
+// PredeletedExternalProvider APIKey (optional)
+predeletedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data)
+apiInstance.externalProviderApiKeyDelete(body).then((data: DeletedExternalProvider APIKey) => {
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeydelete-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | **PredeletedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return type {#externalproviderapikeydelete-return-type}
 
 [**DeletedExternalProviderApiKey**](../models/DeletedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeydelete-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#externalproviderapikeydelete-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -104,11 +110,11 @@ Name | Type | Description  | Notes
 **500** | Internal Server Error |  -  |
 
 ## **externalProviderApiKeyUpdate** {#externalproviderapikeyupdate}
-> UpdatedExternalProviderApiKey externalProviderApiKeyUpdate()
+> UpdatedExternalProvider APIKey externalProvider APIKeyUpdate()
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeyupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -117,33 +123,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ExternalProviderApi(configuration)
 
 const body: Pieces.ExternalProviderApiKeyUpdateRequest = {
-    // PreupdatedExternalProviderApiKey (optional)
-    preupdatedExternalProviderApiKey: ,
+// PreupdatedExternalProvider APIKey (optional)
+preupdatedExternalProviderApiKey: ,
 };
 
-apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProviderApiKey) => {
-    console.log('API called successfully. Returned data: ' + data)
+apiInstance.externalProviderApiKeyUpdate(body).then((data: UpdatedExternalProvider APIKey) => {
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeyupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | **PreupdatedExternalProviderApiKey**|  |
 
 
-### Return type
+### Return type {#externalproviderapikeyupdate-return-type}
 
 [**UpdatedExternalProviderApiKey**](../models/UpdatedExternalProviderApiKey)
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeyupdate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#externalproviderapikeyupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

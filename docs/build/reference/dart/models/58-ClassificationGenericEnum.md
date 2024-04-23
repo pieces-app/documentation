@@ -1,14 +1,11 @@
-# ClassificationGenericEnum
+---
+title: ClassificationGenericEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# ClassificationGenericEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

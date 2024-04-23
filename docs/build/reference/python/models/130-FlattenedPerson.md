@@ -1,3 +1,7 @@
+---
+title: FlattenedPerson | Python SDK
+---
+
 # FlattenedPerson
 
 if expiration is add then, after the alloted expiration date the user will only have view && comment only permissions. Only present in the case there is a scope such as a defined collection/asset...  if asset is passed then that means this person belongs to a scoped asset.
@@ -22,23 +26,5 @@ Name | Type | Description | Notes
 **annotations** | [**FlattenedAnnotations**](FlattenedAnnotations) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
-
-## Example
-
-```python
-from pieces_os_client.models.flattened_person import FlattenedPerson
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedPerson from a JSON string
-flattened_person_instance = FlattenedPerson.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedPerson.to_json())
-
-# convert the object into a dict
-flattened_person_dict = flattened_person_instance.to_dict()
-# create an instance of FlattenedPerson from a dict
-flattened_person_form_dict = flattened_person.from_dict(flattened_person_dict)
-```
 
 

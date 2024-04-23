@@ -1,3 +1,8 @@
+---
+title: SeededTrackedSessionEvent | Kotlin SDK
+---
+
+
 
 # SeededTrackedSessionEvent
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **identifierDescriptionPair** | [**TrackedSessionEventIdentifierDescriptionPairs**](TrackedSessionEventIdentifierDescriptionPairs) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

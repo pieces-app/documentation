@@ -1,9 +1,8 @@
-# SensitiveMetadata
+---
+title: SensitiveMetadata | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SensitiveMetadata
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **match** | [**TextMatch**](TextMatch) |  | [optional] 
 **entropy** | **num** | entropy of the sensitive | [optional] 
-
-
 
 

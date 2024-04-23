@@ -1,3 +1,8 @@
+---
+title: TLPDirectedDiscoveryFilter | Kotlin SDK
+---
+
+
 
 # TLPDirectedDiscoveryFilter
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | [**TLPDirectedDiscoveryFilterEnum**](TLPDirectedDiscoveryFilterEnum) |  | 
+
 
 
 

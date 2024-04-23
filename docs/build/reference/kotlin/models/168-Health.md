@@ -1,3 +1,8 @@
+---
+title: Health | Kotlin SDK
+---
+
+
 
 # Health
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **os** | [**OSHealth**](OSHealth) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

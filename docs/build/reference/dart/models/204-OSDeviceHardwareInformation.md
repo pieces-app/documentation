@@ -1,9 +1,8 @@
-# OSDeviceHardwareInformation
+---
+title: OSDeviceHardwareInformation | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# OSDeviceHardwareInformation
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **cpu** | [**OSDeviceCPUHardwareInformation**](OSDeviceCPUHardwareInformation) |  | [optional] 
 **gpu** | [**OSDeviceGPUHardwareInformation**](OSDeviceGPUHardwareInformation) |  | [optional] 
-
-
 
 

@@ -1,9 +1,8 @@
-# DiscoveredAsset
+---
+title: DiscoveredAsset | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# DiscoveredAsset
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **directory** | **String** |  | [optional] 
 **metadata** | [**SeededAssetMetadata**](SeededAssetMetadata) |  | [optional] 
 **filters** | [**TLPDirectedDiscoveryFilters**](TLPDirectedDiscoveryFilters) |  | [optional] 
-
-
 
 

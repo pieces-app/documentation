@@ -1,3 +1,8 @@
+---
+title: Embeddings | Kotlin SDK
+---
+
+
 
 # Embeddings
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Embedding&gt;**](Embedding) |  | 
+
 
 
 

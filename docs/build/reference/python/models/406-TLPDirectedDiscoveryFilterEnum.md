@@ -1,3 +1,7 @@
+---
+title: TLPDirectedDiscoveryFilterEnum | Python SDK
+---
+
 # TLPDirectedDiscoveryFilterEnum
 
 Code block type like function, class, abstract
@@ -6,6 +10,5 @@ Code block type like function, class, abstract
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

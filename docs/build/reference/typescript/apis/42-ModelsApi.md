@@ -1,6 +1,10 @@
+---
+title: Models API | TypeScript SDK
+---
+
 # Models API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 Creates a machine learning model. By default, all models created through this endpoint will have the \'custom\' attribute set to true. Additionally, the endpoint ensures that no duplicate models exist before creating a new one.
 
-### Example
+### Example {#modelscreatenewmodel-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,33 +29,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsCreateNewModelRequest = {
-    // SeededModel |  (optional)
-    seededModel: ,
+// SeededModel |  (optional)
+seededModel: ,
 };
 
 apiInstance.modelsCreateNewModel(body).then((data: Model) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#modelscreatenewmodel-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededModel** | **SeededModel**|  |
 
 
-### Return type
+### Return type {#modelscreatenewmodel-return-type}
 
 [**Model**](../models/Model)
 
-### HTTP request headers
+### HTTP request headers {#modelscreatenewmodel-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#modelscreatenewmodel-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -62,7 +67,7 @@ Name | Type | Description  | Notes
 
 Deletes a specific model. It is exclusively available for custom models with the \'custom: true\' attribute.
 
-### Example
+### Example {#modelsdeletespecificmodel-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -71,33 +76,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsDeleteSpecificModelRequest = {
-    // string | model id
-    model: model_example,
+// string | model id
+model: model_example,
 };
 
 apiInstance.modelsDeleteSpecificModel(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodel-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return type {#modelsdeletespecificmodel-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodel-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#modelsdeletespecificmodel-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -108,7 +114,7 @@ void (empty response body)
 
 Deletes the data associated with a specific model, such as assets or libraries downloaded specifically for this model.   Note: This functionality is currently only available for LLM models.
 
-### Example
+### Example {#modelsdeletespecificmodelcache-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -117,18 +123,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ModelsApi(configuration)
 
 const body: Pieces.ModelsDeleteSpecificModelCacheRequest = {
-    // string | model id
-    model: model_example,
-    // ModelDeleteCacheInput (optional)
-    modelDeleteCacheInput: ,
+// string | model id
+model: model_example,
+// ModelDeleteCacheInput (optional)
+modelDeleteCacheInput: ,
 };
 
 apiInstance.modelsDeleteSpecificModelCache(body).then((data: ModelDeleteCacheOutput) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#modelsdeletespecificmodelcache-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -136,17 +143,17 @@ Name | Type | Description  | Notes
  **model** | [**string**] | model id | defaults to undefined
 
 
-### Return type
+### Return type {#modelsdeletespecificmodelcache-return-type}
 
 [**ModelDeleteCacheOutput**](../models/ModelDeleteCacheOutput)
 
-### HTTP request headers
+### HTTP request headers {#modelsdeletespecificmodelcache-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#modelsdeletespecificmodelcache-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -157,7 +164,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of all of your models.
 
-### Example
+### Example {#modelssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -166,25 +173,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ModelsApi(configuration)
 
 apiInstance.modelsSnapshot().then((data: Models) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#modelssnapshot-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#modelssnapshot-return-type}
 
 [**Models**](../models/Models)
 
-### HTTP request headers
+### HTTP request headers {#modelssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#modelssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -195,7 +203,7 @@ This endpoint does not need any parameters.
 
 Unloads all available machine learning models that are unloadable.
 
-### Example
+### Example {#unloadmodels-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -204,25 +212,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ModelsApi(configuration)
 
 apiInstance.unloadModels().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#unloadmodels-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#unloadmodels-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#unloadmodels-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#unloadmodels-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |

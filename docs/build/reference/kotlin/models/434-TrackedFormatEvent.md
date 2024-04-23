@@ -1,3 +1,8 @@
+---
+title: TrackedFormatEvent | Kotlin SDK
+---
+
+
 
 # TrackedFormatEvent
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **identifierDescriptionPair** | [**TrackedFormatEventIdentifierDescriptionPairs**](TrackedFormatEventIdentifierDescriptionPairs) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **metadata** | [**TrackedFormatEventMetadata**](TrackedFormatEventMetadata) |  |  [optional]
+
 
 
 

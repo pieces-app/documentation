@@ -1,9 +1,8 @@
-# GraphicalImageDescriptiveStatistics
+---
+title: GraphicalImageDescriptiveStatistics | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# GraphicalImageDescriptiveStatistics
 
 ## Properties
 Name | Type | Description | Notes
@@ -16,7 +15,5 @@ Name | Type | Description | Notes
 **user** | **String** |  | [optional] 
 **created** | **String** |  | 
 **os** | **String** |  | 
-
-
 
 

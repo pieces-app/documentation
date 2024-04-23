@@ -1,6 +1,10 @@
+---
+title: Asset API | TypeScript SDK
+---
+
 # Asset API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -26,7 +30,7 @@ Method | HTTP request | Description
 
 Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
-### Example
+### Example {#assetassociatetag-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -35,18 +39,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateTagRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // string | tag id
-    tag: tag_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | tag id
+tag: tag_example,
 };
 
 apiInstance.assetAssociateTag(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetassociatetag-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -54,17 +59,17 @@ Name | Type | Description  | Notes
  **tag** | [**string**] | tag id | defaults to undefined
 
 
-### Return type
+### Return type {#assetassociatetag-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetassociatetag-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetassociatetag-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -75,7 +80,7 @@ void (empty response body)
 
 Associates a website with an asset. It performs the same action as its website equivalent.
 
-### Example
+### Example {#assetassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -84,18 +89,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateWebsiteRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // string | website id
-    website: website_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | website id
+website: website_example,
 };
 
 apiInstance.assetAssociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -103,17 +109,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return type
+### Return type {#assetassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -124,7 +130,7 @@ void (empty response body)
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#assetassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -133,18 +139,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetAssociateWorkstreamSummaryRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.assetAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -152,17 +159,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#assetassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -173,7 +180,7 @@ void (empty response body)
 
 Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
-### Example
+### Example {#assetdisassociatetag-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -182,18 +189,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateTagRequest = {
-    // string | tag id
-    tag: tag_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | tag id
+tag: tag_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.assetDisassociateTag(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetdisassociatetag-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -201,17 +209,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#assetdisassociatetag-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociatetag-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetdisassociatetag-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -222,7 +230,7 @@ void (empty response body)
 
 Disassociates a website from an asset. It performs the same action as the website equivalent.
 
-### Example
+### Example {#assetdisassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -231,18 +239,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateWebsiteRequest = {
-    // string | website id
-    website: website_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | website id
+website: website_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.assetDisassociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetdisassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -250,17 +259,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#assetdisassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetdisassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -271,7 +280,7 @@ void (empty response body)
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#assetdisassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -280,18 +289,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetDisassociateWorkstreamSummaryRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.assetDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetdisassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -299,17 +309,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#assetdisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetdisassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -320,7 +330,7 @@ void (empty response body)
 
 Retrieves the formats available for a specified asset.
 
-### Example
+### Example {#assetformats-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -329,18 +339,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetFormatsRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.assetFormats(body).then((data: Formats) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetformats-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -348,17 +359,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetformats-return-type}
 
 [**Formats**](../models/Formats)
 
-### HTTP request headers
+### HTTP request headers {#assetformats-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#assetformats-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -368,7 +379,7 @@ Name | Type | Description  | Notes
 
 Retrieves the formats available for a specified asset.
 
-### Example
+### Example {#assetreclassify-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -377,18 +388,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetReclassifyRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // AssetReclassification | This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. (optional)
-    assetReclassification: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// AssetReclassification | This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. (optional)
+assetReclassification: ,
 };
 
 apiInstance.assetReclassify(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetreclassify-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -396,17 +408,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetreclassify-return-type}
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP request headers {#assetreclassify-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#assetreclassify-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -416,7 +428,7 @@ Name | Type | Description  | Notes
 
 Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
-### Example
+### Example {#assetscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -425,18 +437,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetScoresIncrementRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.assetScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -444,17 +457,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#assetscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#assetscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -465,7 +478,7 @@ void (empty response body)
 
 Retrieves the snapshot of a specific asset
 
-### Example
+### Example {#assetsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -474,18 +487,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSnapshotRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.assetSnapshot(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -493,17 +507,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetsnapshot-return-type}
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP request headers {#assetsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -514,7 +528,7 @@ Name | Type | Description  | Notes
 
 Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
-### Example
+### Example {#assetsnapshotpost-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -523,20 +537,21 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSnapshotPostRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // SeededAccessor (optional)
-    seededAccessor: ,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// SeededAccessor (optional)
+seededAccessor: ,
 };
 
 apiInstance.assetSnapshotPost(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetsnapshotpost-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -545,17 +560,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetsnapshotpost-return-type}
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP request headers {#assetsnapshotpost-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#assetsnapshotpost-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -565,7 +580,7 @@ Name | Type | Description  | Notes
 
 Retrieves activity events specific to the given asset.
 
-### Example
+### Example {#assetspecificassetactivities-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -574,18 +589,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetActivitiesRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.assetSpecificAssetActivities(body).then((data: Activities) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetspecificassetactivities-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -593,17 +609,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetspecificassetactivities-return-type}
 
 [**Activities**](../models/Activities)
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetactivities-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetspecificassetactivities-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -614,7 +630,7 @@ Name | Type | Description  | Notes
 
 Retrieves conversations specific to the given asset.
 
-### Example
+### Example {#assetspecificassetconversations-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -623,18 +639,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetConversationsRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.assetSpecificAssetConversations(body).then((data: Conversations) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetspecificassetconversations-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -642,17 +659,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetspecificassetconversations-return-type}
 
 [**Conversations**](../models/Conversations)
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetconversations-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetspecificassetconversations-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -663,7 +680,7 @@ Name | Type | Description  | Notes
 
 Retrieves an export version of the specified asset.
 
-### Example
+### Example {#assetspecificassetexport-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -672,18 +689,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetSpecificAssetExportRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // 'HTML' | 'MD' | This specifies the type of export the user wants.
-    exportType: exportType_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// 'HTML' | 'MD' | This specifies the type of export the user wants.
+exportType: exportType_example,
 };
 
 apiInstance.assetSpecificAssetExport(body).then((data: ExportedAsset) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetspecificassetexport-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -691,17 +709,17 @@ Name | Type | Description  | Notes
  **exportType** | [**&#39;HTML&#39; | &#39;MD&#39;**]**Array\<&#39;HTML&#39; &#124; &#39;MD&#39;\>** | This specifies the type of export the user wants. | defaults to undefined
 
 
-### Return type
+### Return type {#assetspecificassetexport-return-type}
 
 [**ExportedAsset**](../models/ExportedAsset)
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetexport-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#assetspecificassetexport-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -712,7 +730,7 @@ Name | Type | Description  | Notes
 
 Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
-### Example
+### Example {#assetupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -721,18 +739,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AssetApi(configuration)
 
 const body: Pieces.AssetUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. (optional)
-    asset: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. (optional)
+asset: ,
 };
 
 apiInstance.assetUpdate(body).then((data: Asset) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#assetupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -740,17 +759,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#assetupdate-return-type}
 
 [**Asset**](../models/Asset)
 
-### HTTP request headers
+### HTTP request headers {#assetupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#assetupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

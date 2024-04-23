@@ -1,6 +1,10 @@
+---
+title: Distribution API | Kotlin SDK
+---
+
 # Distribution API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,41 +19,41 @@ Method | HTTP request | Description
 
 This will update a specific Distribution.
 
-### Example
+### Example {#distributionupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionApi()
+val apiInstance = Distribution API()
 val distribution : Distribution =  // Distribution | 
 try {
     val result : Distribution = apiInstance.distributionUpdate(distribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionApi#distributionUpdate")
+    println("4xx response calling Distribution API#distributionUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionApi#distributionUpdate")
+    println("5xx response calling Distribution API#distributionUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#distributionupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | [**Distribution**](../models/Distribution)|  | [optional]
 
-### Return type
+### Return type {#distributionupdate-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -61,41 +65,41 @@ No authorization required
 
 This will get a specific snapshot of a distribution.
 
-### Example
+### Example {#distributionsspecificdistributionsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = DistributionApi()
+val apiInstance = Distribution API()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
 try {
     val result : Distribution = apiInstance.distributionsSpecificDistributionSnapshot(distribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling DistributionApi#distributionsSpecificDistributionSnapshot")
+    println("4xx response calling Distribution API#distributionsSpecificDistributionSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling DistributionApi#distributionsSpecificDistributionSnapshot")
+    println("5xx response calling Distribution API#distributionsSpecificDistributionSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#distributionsspecificdistributionsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **kotlin.String**| This is the uuid of a specific distribution. |
 
-### Return type
+### Return type {#distributionsspecificdistributionsnapshot-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionsspecificdistributionsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsspecificdistributionsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

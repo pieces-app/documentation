@@ -1,3 +1,8 @@
+---
+title: AllocationCloudUrls | Kotlin SDK
+---
+
+
 
 # AllocationCloudUrls
 
@@ -8,6 +13,7 @@ Name | Type | Description | Notes
 **id** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **vanity** | [**AllocationCloudUrl**](AllocationCloudUrl) |  |  [optional]
+
 
 
 

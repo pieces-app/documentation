@@ -1,3 +1,8 @@
+---
+title: Activities | Kotlin SDK
+---
+
+
 
 # Activities
 
@@ -6,6 +11,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Activity&gt;**](Activity) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

@@ -1,3 +1,7 @@
+---
+title: QGPTConversationMessageRoleEnum | Python SDK
+---
+
 # QGPTConversationMessageRoleEnum
 
 This is the role enum used for a QGPT conversation
@@ -6,6 +10,5 @@ This is the role enum used for a QGPT conversation
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

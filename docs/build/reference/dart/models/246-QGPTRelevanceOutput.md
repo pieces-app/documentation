@@ -1,9 +1,8 @@
-# QGPTRelevanceOutput
+---
+title: QGPTRelevanceOutput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# QGPTRelevanceOutput
 
 ## Properties
 Name | Type | Description | Notes
@@ -11,7 +10,5 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **answer** | [**QGPTQuestionOutput**](QGPTQuestionOutput) |  | [optional] 
 **relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | 
-
-
 
 

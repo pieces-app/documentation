@@ -1,16 +1,13 @@
-# AssetsSearchWithFiltersOutput
+---
+title: AssetsSearchWithFiltersOutput | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# AssetsSearchWithFiltersOutput
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **results** | [**SearchedAssets**](SearchedAssets) |  | 
-
-
 
 

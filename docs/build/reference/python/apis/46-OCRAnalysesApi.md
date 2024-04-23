@@ -1,6 +1,10 @@
+---
+title: OCRAnalyses API | Python SDK
+---
+
 # OCRAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -14,7 +18,7 @@ Your GET endpoint
 
 This will get a snapshot of all of your ocr analyses, an ocr analysis is attached to an image analysis.
 
-### Example
+### Example {#ocr_analyses_snapshot-example}
 
 
 ```python
@@ -33,7 +37,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.OCRAnalysesApi(api_client)
+    api_instance = OCRAnalyses API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -47,32 +51,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#ocr_analyses_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#ocr_analyses_snapshot-return-type}
 
 [**OCRAnalyses**](../models/OCRAnalyses)
 
-### Authorization
+### Authorization {#ocr_analyses_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ocr_analyses_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#ocr_analyses_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

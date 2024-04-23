@@ -1,6 +1,10 @@
+---
+title: Formats API | Python SDK
+---
+
 # Formats API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Method | HTTP request | Description
 
 Get all of your formats for a given user.
 
-### Example
+### Example {#formats_snapshot-example}
 
 
 ```python
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatsApi(api_client)
+    api_instance = Formats API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
     try:
@@ -48,33 +52,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#formats_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#formats_snapshot-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#formats_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formats_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#formats_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **formats_specific_format_snapshot** {#formats_specific_format_snapshot}
 > Format formats_specific_format_snapshot(format, transferable=transferable)
@@ -83,7 +86,7 @@ No authorization required
 
 Request a specific format when given a id (uuid in path params)
 
-### Example
+### Example {#formats_specific_format_snapshot-example}
 
 
 ```python
@@ -102,7 +105,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.FormatsApi(api_client)
+    api_instance = Formats API(api_client)
     format = '102ff265-fdfb-4142-8d94-4932d400199c' # str | The id (uuid) for a specific format.
     transferable = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -117,7 +120,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#formats_specific_format_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -125,24 +128,23 @@ Name | Type | Description  | Notes
  **format** | **str**| The id (uuid) for a specific format. | 
  **transferable** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#formats_specific_format_snapshot-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formats_specific_format_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formats_specific_format_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#formats_specific_format_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

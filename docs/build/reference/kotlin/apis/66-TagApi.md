@@ -1,6 +1,10 @@
+---
+title: Tag API | Kotlin SDK
+---
+
 # Tag API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,45 +24,45 @@ Method | HTTP request | Description
 
 This will associate a tag with a asset.
 
-### Example
+### Example {#tagassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 try {
     apiInstance.tagAssociateAsset(asset, tag)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagAssociateAsset")
+    println("4xx response calling Tag API#tagAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagAssociateAsset")
+    println("5xx response calling Tag API#tagAssociateAsset")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **tag** | **kotlin.String**| tag id |
 
-### Return type
+### Return type {#tagassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **tagAssociatePerson** {#tagassociateperson}
 > tagAssociatePerson(tag, person)
@@ -67,45 +71,45 @@ No authorization required
 
 This will associate a tag with a person.
 
-### Example
+### Example {#tagassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.tagAssociatePerson(tag, person)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagAssociatePerson")
+    println("4xx response calling Tag API#tagAssociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagAssociatePerson")
+    println("5xx response calling Tag API#tagAssociatePerson")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#tagassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **tagDisassociateAsset** {#tagdisassociateasset}
 > tagDisassociateAsset(tag, asset)
@@ -114,45 +118,45 @@ No authorization required
 
 This will enable us to dissassociate a tag from a asset.
 
-### Example
+### Example {#tagdisassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.tagDisassociateAsset(tag, asset)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagDisassociateAsset")
+    println("4xx response calling Tag API#tagDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagDisassociateAsset")
+    println("5xx response calling Tag API#tagDisassociateAsset")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagdisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#tagdisassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagdisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **tagDisassociatePerson** {#tagdisassociateperson}
 > tagDisassociatePerson(tag, person)
@@ -161,45 +165,45 @@ No authorization required
 
 This will enable us to dissassociate a tag from a person.
 
-### Example
+### Example {#tagdisassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.tagDisassociatePerson(tag, person)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagDisassociatePerson")
+    println("4xx response calling Tag API#tagDisassociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagDisassociatePerson")
+    println("5xx response calling Tag API#tagDisassociatePerson")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagdisassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#tagdisassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagdisassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **tagScoresIncrement** {#tagscoresincrement}
 > tagScoresIncrement(tag, seededScoreIncrement)
@@ -208,45 +212,45 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#tagscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.tagScoresIncrement(tag, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagScoresIncrement")
+    println("4xx response calling Tag API#tagScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagScoresIncrement")
+    println("5xx response calling Tag API#tagScoresIncrement")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#tagscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 ## **tagUpdate** {#tagupdate}
 > Tag tagUpdate(transferables, tag)
@@ -255,43 +259,43 @@ No authorization required
 
 This will update a specific tag.
 
-### Example
+### Example {#tagupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val tag : Tag =  // Tag | 
 try {
     val result : Tag = apiInstance.tagUpdate(transferables, tag)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagUpdate")
+    println("4xx response calling Tag API#tagUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagUpdate")
+    println("5xx response calling Tag API#tagUpdate")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **tag** | [**Tag**](../models/Tag)|  | [optional]
 
-### Return type
+### Return type {#tagupdate-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tagupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -303,43 +307,43 @@ No authorization required
 
 This will get a specific tag.
 
-### Example
+### Example {#tagsspecifictagsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = TagApi()
+val apiInstance = Tag API()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Tag = apiInstance.tagsSpecificTagSnapshot(tag, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling TagApi#tagsSpecificTagSnapshot")
+    println("4xx response calling Tag API#tagsSpecificTagSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling TagApi#tagsSpecificTagSnapshot")
+    println("5xx response calling Tag API#tagsSpecificTagSnapshot")
     e.printStackTrace()
 }
 ```
 
-### Parameters
+### Parameters {#tagsspecifictagsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#tagsspecifictagsnapshot-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tagsspecifictagsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagsspecifictagsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

@@ -1,3 +1,8 @@
+---
+title: ReferencedFormat | Kotlin SDK
+---
+
+
 
 # ReferencedFormat
 
@@ -7,6 +12,7 @@ Name | Type | Description | Notes
 **id** | **kotlin.String** | The id of the Format | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reference** | [**FlattenedFormat**](FlattenedFormat) |  |  [optional]
+
 
 
 

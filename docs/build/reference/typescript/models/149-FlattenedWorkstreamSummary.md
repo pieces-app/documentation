@@ -1,3 +1,7 @@
+---
+title: FlattenedWorkstreamSummary | TypeScript SDK
+---
+
 
 # FlattenedWorkstreamSummary
 
@@ -23,41 +27,5 @@ Name | Type
 **conversations** | [**FlattenedConversations**](FlattenedConversations)
 **persons** | [**FlattenedPersons**](FlattenedPersons)
 **applications** | [**Applications**](Applications)
-
-## Example
-
-```typescript
-import { FlattenedWorkstreamSummary } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: FlattenedWorkstreamSummary = {
-    "schema": null,
-    "id": null,
-    "score": null,
-    "created": null,
-    "updated": null,
-    "events": null,
-    "name": null,
-    "annotations": null,
-    "ranges": null,
-    "model": null,
-    "websites": null,
-    "anchors": null,
-    "assets": null,
-    "conversations": null,
-    "persons": null,
-    "applications": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedWorkstreamSummary
-console.log(exampleParsed)
-```
 
 

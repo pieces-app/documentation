@@ -1,9 +1,8 @@
-# SeededAnchorPoint
+---
+title: SeededAnchorPoint | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededAnchorPoint
 
 ## Properties
 Name | Type | Description | Notes
@@ -14,7 +13,5 @@ Name | Type | Description | Notes
 **fullpath** | **String** |  | 
 **anchor** | **String** | Cannot create an AnchorPoint w/o a Anchor. | 
 **platform** | [**PlatformEnum**](PlatformEnum) |  | [optional] 
-
-
 
 

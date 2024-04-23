@@ -1,3 +1,7 @@
+---
+title: AccessEnum | Python SDK
+---
+
 # AccessEnum
 
 
@@ -5,6 +9,5 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
 
 

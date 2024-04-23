@@ -1,6 +1,10 @@
+---
+title: ImageAnalyses API | TypeScript SDK
+---
+
 # ImageAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +16,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an image analysis.
 
-### Example
+### Example {#imageanalysessnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -21,33 +25,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ImageAnalysesApi(configuration)
 
 const body: Pieces.ImageAnalysesSnapshotRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.imageAnalysesSnapshot(body).then((data: ImageAnalyses) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#imageanalysessnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#imageanalysessnapshot-return-type}
 
 [**ImageAnalyses**](../models/ImageAnalyses)
 
-### HTTP request headers
+### HTTP request headers {#imageanalysessnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#imageanalysessnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

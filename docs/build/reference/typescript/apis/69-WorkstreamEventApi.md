@@ -1,6 +1,10 @@
+---
+title: WorkstreamEvent API | TypeScript SDK
+---
+
 # WorkstreamEvent API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,18 +29,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventAssociateWorkstreamSummaryRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.workstreamEventAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreameventassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -44,17 +49,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreameventassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreameventassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreameventassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -65,7 +70,7 @@ void (empty response body)
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventdisassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -74,18 +79,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventDisassociateWorkstreamSummaryRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.workstreamEventDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreameventdisassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -93,17 +99,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreameventdisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreameventdisassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreameventdisassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -114,7 +120,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstreameventscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -123,18 +129,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventScoresIncrementRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.workstreamEventScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreameventscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -142,17 +149,17 @@ Name | Type | Description  | Notes
  **workstreamEvent** | [**string**] | This is a identifier that is used to identify a specific workstream_event. | defaults to undefined
 
 
-### Return type
+### Return type {#workstreameventscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#workstreameventscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreameventscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -163,7 +170,7 @@ void (empty response body)
 
 This will update a specific workstream_event.
 
-### Example
+### Example {#workstreameventupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -172,18 +179,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // WorkstreamEvent (optional)
-    workstreamEvent: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// WorkstreamEvent (optional)
+workstreamEvent: ,
 };
 
 apiInstance.workstreamEventUpdate(body).then((data: WorkstreamEvent) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreameventupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -191,17 +199,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#workstreameventupdate-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### HTTP request headers
+### HTTP request headers {#workstreameventupdate-http-request-headers}
 
 - **Content-Type**: application/json
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreameventupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -212,7 +220,7 @@ Name | Type | Description  | Notes
 
 This will get a snapshot of a single workstream_event.
 
-### Example
+### Example {#workstreameventsspecificworkstreameventsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -221,18 +229,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.WorkstreamEventApi(configuration)
 
 const body: Pieces.WorkstreamEventsSpecificWorkstreamEventSnapshotRequest = {
-    // string | This is a identifier that is used to identify a specific workstream_event.
-    workstreamEvent: workstreamEvent_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is a identifier that is used to identify a specific workstream_event.
+workstreamEvent: workstreamEvent_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.workstreamEventsSpecificWorkstreamEventSnapshot(body).then((data: WorkstreamEvent) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#workstreameventsspecificworkstreameventsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -240,17 +249,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#workstreameventsspecificworkstreameventsnapshot-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### HTTP request headers
+### HTTP request headers {#workstreameventsspecificworkstreameventsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
-- **Accept**: application/json
+- **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#workstreameventsspecificworkstreameventsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

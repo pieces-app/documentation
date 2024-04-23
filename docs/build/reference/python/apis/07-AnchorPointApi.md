@@ -1,6 +1,10 @@
+---
+title: AnchorPoint API | Python SDK
+---
+
 # AnchorPoint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchor_point_scores_increment-example}
 
 
 ```python
@@ -35,7 +39,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorPointApi(api_client)
+    api_instance = AnchorPoint API(api_client)
     anchor_point = 'anchor_point_example' # str | This is the specific uuid of an anchor_point.
     seeded_score_increment = pieces_os_client.SeededScoreIncrement() # SeededScoreIncrement |  (optional)
 
@@ -48,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_point_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -56,27 +60,26 @@ Name | Type | Description  | Notes
  **anchor_point** | **str**| This is the specific uuid of an anchor_point. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#anchor_point_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchor_point_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_point_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_point_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **anchor_point_specific_anchor_point_snapshot** {#anchor_point_specific_anchor_point_snapshot}
 > AnchorPoint anchor_point_specific_anchor_point_snapshot(anchor_point, transferables=transferables)
@@ -85,7 +88,7 @@ No authorization required
 
 This will get a snapshot of a single anchorPoint.
 
-### Example
+### Example {#anchor_point_specific_anchor_point_snapshot-example}
 
 
 ```python
@@ -104,7 +107,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorPointApi(api_client)
+    api_instance = AnchorPoint API(api_client)
     anchor_point = 'anchor_point_example' # str | This is the specific uuid of an anchor_point.
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -119,7 +122,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_point_specific_anchor_point_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -127,27 +130,26 @@ Name | Type | Description  | Notes
  **anchor_point** | **str**| This is the specific uuid of an anchor_point. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchor_point_specific_anchor_point_snapshot-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### Authorization
+### Authorization {#anchor_point_specific_anchor_point_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_point_specific_anchor_point_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_point_specific_anchor_point_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | AnchorPoint not found. |  -  |
-
-
 
 ## **anchor_point_update** {#anchor_point_update}
 > AnchorPoint anchor_point_update(transferables=transferables, anchor_point=anchor_point)
@@ -156,7 +158,7 @@ No authorization required
 
 This will update a specific anchorPoint.
 
-### Example
+### Example {#anchor_point_update-example}
 
 
 ```python
@@ -175,7 +177,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AnchorPointApi(api_client)
+    api_instance = AnchorPoint API(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     anchor_point = pieces_os_client.AnchorPoint() # AnchorPoint |  (optional)
 
@@ -190,7 +192,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#anchor_point_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -198,25 +200,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **anchor_point** | [**AnchorPoint**](../models/AnchorPoint)|  | [optional] 
 
-### Return type
+### Return type {#anchor_point_update-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### Authorization
+### Authorization {#anchor_point_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchor_point_update-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#anchor_point_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

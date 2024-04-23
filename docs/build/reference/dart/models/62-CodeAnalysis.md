@@ -1,9 +1,8 @@
-# CodeAnalysis
+---
+title: CodeAnalysis | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# CodeAnalysis
 
 ## Properties
 Name | Type | Description | Notes
@@ -19,7 +18,5 @@ Name | Type | Description | Notes
 **id** | **String** |  | 
 **analysis** | **String** | this is just a reference to the analysis parent object. | 
 **model** | [**Model**](Model) |  | 
-
-
 
 

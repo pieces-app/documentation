@@ -1,16 +1,13 @@
-# OnboardedPersonaDetails
+---
+title: OnboardedPersonaDetails | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# OnboardedPersonaDetails
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **seeds** | [**Seeds**](Seeds) |  | 
-
-
 
 

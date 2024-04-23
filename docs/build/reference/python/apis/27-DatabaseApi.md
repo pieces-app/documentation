@@ -1,6 +1,10 @@
+---
+title: Database API | Python SDK
+---
+
 # Database API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -15,7 +19,7 @@ Your GET endpoint
 
 This is going to export your current database.
 
-### Example
+### Example {#database_export-example}
 
 
 ```python
@@ -34,7 +38,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DatabaseApi(api_client)
+    api_instance = Database API(api_client)
 
     try:
         # Your GET endpoint
@@ -47,31 +51,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#database_export-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#database_export-return-type}
 
 [**ExportedDatabase**](../models/ExportedDatabase)
 
-### Authorization
+### Authorization {#database_export-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#database_export-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#database_export-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **database_import** {#database_import}
 > database_import(exported_database=exported_database)
@@ -80,7 +83,7 @@ No authorization required
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
 
-### Example
+### Example {#database_import-example}
 
 
 ```python
@@ -99,7 +102,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.DatabaseApi(api_client)
+    api_instance = Database API(api_client)
     exported_database = pieces_os_client.ExportedDatabase() # ExportedDatabase |  (optional)
 
     try:
@@ -111,33 +114,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#database_import-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **exported_database** | [**ExportedDatabase**](../models/ExportedDatabase)|  | [optional] 
 
-### Return type
+### Return type {#database_import-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#database_import-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#database_import-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#database_import-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
 **505** | HTTP Version Not Supported, This means that your user need to update their local os, and they cannot create a shareable link. |  -  |
-
-
 

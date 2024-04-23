@@ -1,9 +1,8 @@
-# SeededAnchor
+---
+title: SeededAnchor | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# SeededAnchor
 
 ## Properties
 Name | Type | Description | Notes
@@ -17,7 +16,5 @@ Name | Type | Description | Notes
 **name** | **String** |  | [optional] 
 **annotations** | [**List\<SeededAnnotation\>**](SeededAnnotation) |  | [optional] [default to const []]
 **conversation** | **String** |  | [optional] 
-
-
 
 

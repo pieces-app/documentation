@@ -1,14 +1,11 @@
-# FilterOperationTypeEnum
+---
+title: FilterOperationTypeEnum | Dart SDK
+---
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
+# FilterOperationTypeEnum
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-
-
 
 

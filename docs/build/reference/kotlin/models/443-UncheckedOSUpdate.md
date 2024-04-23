@@ -1,3 +1,8 @@
+---
+title: UncheckedOSUpdate | Kotlin SDK
+---
+
+
 
 # UncheckedOSUpdate
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

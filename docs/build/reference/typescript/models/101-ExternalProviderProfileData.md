@@ -1,3 +1,7 @@
+---
+title: ExternalProviderProfileData | TypeScript SDK
+---
+
 
 # ExternalProviderProfileData
 
@@ -45,63 +49,5 @@ Name | Type
 **diskUsage** | **number**
 **collaborators** | **number**
 **twoFactorAuthentication** | **boolean**
-
-## Example
-
-```typescript
-import { ExternalProviderProfileData } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: ExternalProviderProfileData = {
-    "name": null,
-    "picture": null,
-    "nickname": null,
-    "email": null,
-    "emailVerified": null,
-    "nodeId": null,
-    "gravatarId": null,
-    "url": null,
-    "htmlUrl": null,
-    "followersUrl": null,
-    "followingUrl": null,
-    "gistsUrl": null,
-    "starredUrl": null,
-    "subscriptionsUrl": null,
-    "organizationsUrl": null,
-    "reposUrl": null,
-    "eventsUrl": null,
-    "receivedEventsUrl": null,
-    "type": null,
-    "siteAdmin": null,
-    "company": null,
-    "blog": null,
-    "anchor": null,
-    "hireable": null,
-    "bio": null,
-    "twitterUsername": null,
-    "publicRepos": null,
-    "publicGists": null,
-    "followers": null,
-    "following": null,
-    "createdAt": null,
-    "updatedAt": null,
-    "privateGists": null,
-    "totalPrivateRepos": null,
-    "ownedPrivateRepos": null,
-    "diskUsage": null,
-    "collaborators": null,
-    "twoFactorAuthentication": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ExternalProviderProfileData
-console.log(exampleParsed)
-```
 
 

@@ -1,3 +1,8 @@
+---
+title: PersonAccessScopedEnum | Kotlin SDK
+---
+
+
 
 # PersonAccessScopedEnum
 
@@ -11,6 +16,7 @@
     * `COMMENTER` (value: `"COMMENTER"`)
 
     * `VIEWER` (value: `"VIEWER"`)
+
 
 
 

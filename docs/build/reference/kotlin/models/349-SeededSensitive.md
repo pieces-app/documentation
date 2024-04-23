@@ -1,3 +1,8 @@
+---
+title: SeededSensitive | Kotlin SDK
+---
+
+
 
 # SeededSensitive
 
@@ -13,6 +18,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  |  [optional]
+
 
 
 

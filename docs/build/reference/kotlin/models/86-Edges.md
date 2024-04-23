@@ -1,3 +1,8 @@
+---
+title: Edges | Kotlin SDK
+---
+
+
 
 # Edges
 
@@ -5,6 +10,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **iterable** | [**kotlin.collections.List&lt;Node&gt;**](Node) |  | 
+
 
 
 

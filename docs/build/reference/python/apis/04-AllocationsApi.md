@@ -1,6 +1,10 @@
+---
+title: Allocations API | Python SDK
+---
+
 # Allocations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +23,7 @@ Method | HTTP request | Description
 
 This will attempt to connect to a specific users cloud.(Required that the current user is logged in.)
 
-### Example
+### Example {#allocations_connect_new_cloud-example}
 
 
 ```python
@@ -39,7 +43,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
     user_profile = pieces_os_client.UserProfile() # UserProfile |  (optional)
 
     try:
@@ -53,35 +57,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_connect_new_cloud-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user_profile** | [**UserProfile**](../models/UserProfile)|  | [optional] 
 
-### Return type
+### Return type {#allocations_connect_new_cloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocations_connect_new_cloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_connect_new_cloud-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_connect_new_cloud-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
-
-
 
 ## **allocations_create_new_allocation** {#allocations_create_new_allocation}
 > AllocationCloud allocations_create_new_allocation(allocation_cloud=allocation_cloud)
@@ -90,7 +93,7 @@ No authorization required
 
 This is unimplemented locally. This will create an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocations_create_new_allocation-example}
 
 
 ```python
@@ -109,7 +112,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
     allocation_cloud = pieces_os_client.AllocationCloud() # AllocationCloud |  (optional)
 
     try:
@@ -123,34 +126,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_create_new_allocation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation_cloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
-### Return type
+### Return type {#allocations_create_new_allocation-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocations_create_new_allocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_create_new_allocation-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_create_new_allocation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **allocations_delete_allocation** {#allocations_delete_allocation}
 > str allocations_delete_allocation(allocation_cloud=allocation_cloud)
@@ -159,7 +161,7 @@ No authorization required
 
 This is unimplemented locally. This will delete an allocation. ONLY used within the cloud.
 
-### Example
+### Example {#allocations_delete_allocation-example}
 
 
 ```python
@@ -178,7 +180,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
     allocation_cloud = pieces_os_client.AllocationCloud() # AllocationCloud |  (optional)
 
     try:
@@ -192,34 +194,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_delete_allocation-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation_cloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
-### Return type
+### Return type {#allocations_delete_allocation-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#allocations_delete_allocation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_delete_allocation-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_delete_allocation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **allocations_disconnect_cloud** {#allocations_disconnect_cloud}
 > str allocations_disconnect_cloud(allocation_cloud=allocation_cloud)
@@ -228,7 +229,7 @@ No authorization required
 
 This will attempt to disconnect to a specific users cloud.
 
-### Example
+### Example {#allocations_disconnect_cloud-example}
 
 
 ```python
@@ -247,7 +248,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
     allocation_cloud = pieces_os_client.AllocationCloud() # AllocationCloud |  (optional)
 
     try:
@@ -261,34 +262,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_disconnect_cloud-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation_cloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
-### Return type
+### Return type {#allocations_disconnect_cloud-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#allocations_disconnect_cloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_disconnect_cloud-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_disconnect_cloud-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK, this will return the uuid of the cloud that was disconnected! |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **allocations_reconnect_cloud** {#allocations_reconnect_cloud}
 > AllocationCloud allocations_reconnect_cloud(allocation_cloud=allocation_cloud)
@@ -297,7 +297,7 @@ No authorization required
 
 This will attempt to reconnect to a users cloud. This will ensure that we are connected to a users cloud and will ensure that all the data associated with a user's cloud is up-to-date.
 
-### Example
+### Example {#allocations_reconnect_cloud-example}
 
 
 ```python
@@ -316,7 +316,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
     allocation_cloud = pieces_os_client.AllocationCloud() # AllocationCloud |  (optional)
 
     try:
@@ -330,35 +330,34 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_reconnect_cloud-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation_cloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
-### Return type
+### Return type {#allocations_reconnect_cloud-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocations_reconnect_cloud-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_reconnect_cloud-http-request-headers}
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_reconnect_cloud-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
-
-
 
 ## **allocations_snapshot** {#allocations_snapshot}
 > Allocations allocations_snapshot()
@@ -367,7 +366,7 @@ No authorization required
 
 This is going to get a snapshot of all of the connected allocations.
 
-### Example
+### Example {#allocations_snapshot-example}
 
 
 ```python
@@ -386,7 +385,7 @@ configuration = pieces_os_client.Configuration(
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = pieces_os_client.AllocationsApi(api_client)
+    api_instance = Allocations API(api_client)
 
     try:
         # /allocations [GET]
@@ -399,29 +398,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocations_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#allocations_snapshot-return-type}
 
 [**Allocations**](../models/Allocations)
 
-### Authorization
+### Authorization {#allocations_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocations_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
- - **Accept**: application/json
+ - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocations_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
