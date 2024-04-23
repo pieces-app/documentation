@@ -22,4 +22,4 @@ jsonData.terms = updatedTerms;
 
 fs.writeFileSync(definitionsPath, JSON.stringify(jsonData, null, 2));
 
-console.log('Updated definitions.json with reference paths.');
+console.log('Updated definitions-old.json with reference paths.');
