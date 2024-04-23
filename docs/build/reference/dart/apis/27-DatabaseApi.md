@@ -4,7 +4,7 @@ title: Database API | Dart SDK
 
 # Database API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Your GET endpoint
 
 This is going to export your current database.
 
-### Example
+### Example {#databaseexport-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,23 +33,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#databaseexport-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#databaseexport-return-type}
 
 [**ExportedDatabase**](../models/ExportedDatabase)
 
-### Authorization
+### Authorization {#databaseexport-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#databaseexport-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **databaseImport** {#databaseimport}
 > databaseImport(exportedDatabase)
@@ -58,7 +56,7 @@ No authorization required
 
 This is going to take in a database, and merge it with the current database. This will revert your database back to it original form if this request fails.
 
-### Example
+### Example {#databaseimport-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -72,24 +70,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#databaseimport-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **exportedDatabase** | [**ExportedDatabase**](../models/ExportedDatabase)|  | [optional] 
+ **exportedDatabase** | [**ExportedDatabase**](../models/ExportedDatabase) |  | [optional] 
 
-### Return type
+### Return type {#databaseimport-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#databaseimport-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#databaseimport-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 

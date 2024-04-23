@@ -17,22 +17,4 @@ Name | Type | Description | Notes
 **access_token** | **str** |  | [optional] 
 **expires_in** | **int** |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.auth0_identity import Auth0Identity
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Auth0Identity from a JSON string
-auth0_identity_instance = Auth0Identity.from_json(json)
-# print the JSON string representation of the object
-print(Auth0Identity.to_json())
-
-# convert the object into a dict
-auth0_identity_dict = auth0_identity_instance.to_dict()
-# create an instance of Auth0Identity from a dict
-auth0_identity_form_dict = auth0_identity.from_dict(auth0_identity_dict)
-```
-
 

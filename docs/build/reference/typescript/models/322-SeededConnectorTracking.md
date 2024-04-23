@@ -22,34 +22,4 @@ Name | Type
 **adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent)
 **conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent)
 
-## Example
-
-```typescript
-import { SeededConnectorTracking } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededConnectorTracking = {
-    "schema": null,
-    "format": null,
-    "asset": null,
-    "interaction": null,
-    "keyboard": null,
-    "session": null,
-    "assets": null,
-    "ml": null,
-    "adoption": null,
-    "conversation": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededConnectorTracking
-console.log(exampleParsed)
-```
-
 

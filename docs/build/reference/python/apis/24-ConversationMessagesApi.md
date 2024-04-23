@@ -4,7 +4,7 @@ title: ConversationMessages API | Python SDK
 
 # ConversationMessages API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a Message on a specific conversation.
 
-### Example
+### Example {#messages_create_specific_message-example}
 
 
 ```python
@@ -55,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#messages_create_specific_message-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +63,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_conversation_message** | [**SeededConversationMessage**](../models/SeededConversationMessage)|  | [optional] 
 
-### Return type
+### Return type {#messages_create_specific_message-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#messages_create_specific_message-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messages_create_specific_message-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#messages_create_specific_message-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **messages_delete_specific_message** {#messages_delete_specific_message}
 > messages_delete_specific_message(message)
@@ -92,7 +91,7 @@ No authorization required
 
 This will delete a specific message.
 
-### Example
+### Example {#messages_delete_specific_message-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#messages_delete_specific_message-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **message** | **str**| This is the uuid of a message. | 
 
-### Return type
+### Return type {#messages_delete_specific_message-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#messages_delete_specific_message-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messages_delete_specific_message-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#messages_delete_specific_message-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **messages_snapshot** {#messages_snapshot}
 > ConversationMessages messages_snapshot(transferables=transferables)
@@ -158,7 +156,7 @@ No authorization required
 
 This will get all the messages.
 
-### Example
+### Example {#messages_snapshot-example}
 
 
 ```python
@@ -191,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#messages_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#messages_snapshot-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### Authorization
+### Authorization {#messages_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messages_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#messages_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

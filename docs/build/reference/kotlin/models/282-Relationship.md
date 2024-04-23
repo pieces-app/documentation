@@ -3,6 +3,7 @@ title: Relationship | Kotlin SDK
 ---
 
 
+
 # Relationship
 
 ## Properties
@@ -15,6 +16,7 @@ Name | Type | Description | Notes
 **updated** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
+
 
 
 

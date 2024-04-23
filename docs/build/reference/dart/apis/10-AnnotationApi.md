@@ -4,7 +4,7 @@ title: Annotation API | Dart SDK
 
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#annotationscoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,27 +35,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **annotation** | **String**| This is a specific annotation uuid. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **annotation** | **String** | This is a specific annotation uuid. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#annotationscoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#annotationscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **annotationSpecificAnnotationSnapshot** {#annotationspecificannotationsnapshot}
 > Annotation annotationSpecificAnnotationSnapshot(annotation)
@@ -64,7 +62,7 @@ No authorization required
 
 This will get a snapshot of a specific annotation.
 
-### Example
+### Example {#annotationspecificannotationsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -79,26 +77,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationspecificannotationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **annotation** | **String**| This is a specific annotation uuid. | 
+ **annotation** | **String** | This is a specific annotation uuid. | 
 
-### Return type
+### Return type {#annotationspecificannotationsnapshot-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationspecificannotationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationspecificannotationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **annotationUpdate** {#annotationupdate}
 > Annotation annotationUpdate(annotation)
@@ -107,7 +103,7 @@ No authorization required
 
 This will update a specific annotation.
 
-### Example
+### Example {#annotationupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -122,24 +118,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **annotation** | [**Annotation**](../models/Annotation)|  | [optional] 
+ **annotation** | [**Annotation**](../models/Annotation) |  | [optional] 
 
-### Return type
+### Return type {#annotationupdate-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

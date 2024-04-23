@@ -4,11 +4,6 @@ title: SeededWorkstreamEvent | Dart SDK
 
 # SeededWorkstreamEvent
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **metadata** | [**WorkstreamEventTriggerMetadata**](WorkstreamEventTriggerMetadata) |  | [optional] 
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 **internalIdentifier** | **String** | This is used to override the event identifier, if this was an event that was originally in the internal events collection. | [optional] 
-
-
 
 

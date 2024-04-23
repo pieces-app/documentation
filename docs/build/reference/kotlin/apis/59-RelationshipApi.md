@@ -4,7 +4,7 @@ title: Relationship API | Kotlin SDK
 
 # Relationship API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will return a single relationship object.
 
-### Example
+### Example {#relationshipsspecificrelationshipsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -38,21 +38,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#relationshipsspecificrelationshipsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **relationship** | **kotlin.String**| this is a specific relationship uuid. |
 
-### Return type
+### Return type {#relationshipsspecificrelationshipsnapshot-return-type}
 
 [**Relationship**](../models/Relationship)
 
-### Authorization
+### Authorization {#relationshipsspecificrelationshipsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#relationshipsspecificrelationshipsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

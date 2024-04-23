@@ -4,7 +4,7 @@ title: Classification API | TypeScript SDK
 
 # Classification API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 
 
-### Example
+### Example {#convertgenericclassification-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,33 +25,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ClassificationApi(configuration)
 
 const body: Pieces.ConvertGenericClassificationRequest = {
-    // SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  (optional)
-    seededFormat: ,
+// SeededFormat | This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  (optional)
+seededFormat: ,
 };
 
 apiInstance.convertGenericClassification(body).then((data: SeededFormat) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#convertgenericclassification-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededFormat** | **SeededFormat**| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  |
 
 
-### Return type
+### Return type {#convertgenericclassification-return-type}
 
 [**SeededFormat**](../models/SeededFormat)
 
-### HTTP request headers
+### HTTP request headers {#convertgenericclassification-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#convertgenericclassification-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK - The SeededFormat that was successfully converted to the rendering format that was specified. |  -  |

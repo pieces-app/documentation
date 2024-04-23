@@ -15,27 +15,4 @@ Name | Type
 **assets** | [**DiscoveredAssets**](DiscoveredAssets)
 **url** | **string**
 
-## Example
-
-```typescript
-import { DiscoveredHtmlWebpage } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: DiscoveredHtmlWebpage = {
-    "schema": null,
-    "assets": null,
-    "url": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as DiscoveredHtmlWebpage
-console.log(exampleParsed)
-```
-
 

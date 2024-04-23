@@ -17,29 +17,4 @@ Name | Type
 **path** | **string**
 **asset** | [**ReferencedAsset**](ReferencedAsset)
 
-## Example
-
-```typescript
-import { RelevantQGPTSeed } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: RelevantQGPTSeed = {
-    "schema": null,
-    "id": null,
-    "seed": null,
-    "path": null,
-    "asset": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as RelevantQGPTSeed
-console.log(exampleParsed)
-```
-
 

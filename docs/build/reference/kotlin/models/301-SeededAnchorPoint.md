@@ -3,6 +3,7 @@ title: SeededAnchorPoint | Kotlin SDK
 ---
 
 
+
 # SeededAnchorPoint
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **watch** | **kotlin.Boolean** |  |  [optional]
 **platform** | [**PlatformEnum**](PlatformEnum) |  |  [optional]
+
 
 
 

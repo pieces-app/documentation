@@ -4,7 +4,7 @@ title: Conversation API | Python SDK
 
 # Conversation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,7 +35,7 @@ Method | HTTP request | Description
 
 Updates both the anchor and the conversation, associating them together.
 
-### Example
+### Example {#conversation_associate_anchor-example}
 
 
 ```python
@@ -66,7 +66,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_associate_anchor-parameters}
 
 
 Name | Type | Description  | Notes
@@ -74,27 +74,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **anchor** | **str**| This is the specific uuid of an anchor. | 
 
-### Return type
+### Return type {#conversation_associate_anchor-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_associate_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_associate_anchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_associate_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_associate_asset** {#conversation_associate_asset}
 > conversation_associate_asset(conversation, asset)
@@ -103,7 +102,7 @@ No authorization required
 
 Updates both the asset and the conversation, associating the two together.
 
-### Example
+### Example {#conversation_associate_asset-example}
 
 
 ```python
@@ -134,7 +133,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_associate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -142,27 +141,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#conversation_associate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_associate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_associate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_associate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_associate_grounding_temporal_range_workstream** {#conversation_associate_grounding_temporal_range_workstream}
 > conversation_associate_grounding_temporal_range_workstream(conversation, range)
@@ -171,7 +169,7 @@ No authorization required
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversation_associate_grounding_temporal_range_workstream-example}
 
 
 ```python
@@ -202,7 +200,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_associate_grounding_temporal_range_workstream-parameters}
 
 
 Name | Type | Description  | Notes
@@ -210,27 +208,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#conversation_associate_grounding_temporal_range_workstream-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_associate_grounding_temporal_range_workstream-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_associate_grounding_temporal_range_workstream-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_associate_grounding_temporal_range_workstream-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_associate_website** {#conversation_associate_website}
 > conversation_associate_website(conversation, website)
@@ -239,7 +236,7 @@ No authorization required
 
 Updates both the website and the conversation, and associate them together.
 
-### Example
+### Example {#conversation_associate_website-example}
 
 
 ```python
@@ -270,7 +267,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_associate_website-parameters}
 
 
 Name | Type | Description  | Notes
@@ -278,27 +275,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#conversation_associate_website-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_associate_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_associate_website-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_associate_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_associate_workstream_summary** {#conversation_associate_workstream_summary}
 > conversation_associate_workstream_summary(conversation, workstream_summary)
@@ -307,7 +303,7 @@ No authorization required
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversation_associate_workstream_summary-example}
 
 
 ```python
@@ -338,7 +334,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_associate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -346,27 +342,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#conversation_associate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_associate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_associate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_associate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_disassociate_anchor** {#conversation_disassociate_anchor}
 > conversation_disassociate_anchor(conversation, anchor)
@@ -375,7 +370,7 @@ No authorization required
 
 Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
-### Example
+### Example {#conversation_disassociate_anchor-example}
 
 
 ```python
@@ -406,7 +401,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_disassociate_anchor-parameters}
 
 
 Name | Type | Description  | Notes
@@ -414,27 +409,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **anchor** | **str**| This is the specific uuid of an anchor. | 
 
-### Return type
+### Return type {#conversation_disassociate_anchor-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_disassociate_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_disassociate_anchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_disassociate_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_disassociate_asset** {#conversation_disassociate_asset}
 > conversation_disassociate_asset(conversation, asset)
@@ -443,7 +437,7 @@ No authorization required
 
 Updates both the asset and the conversation, effectively disassociating them.
 
-### Example
+### Example {#conversation_disassociate_asset-example}
 
 
 ```python
@@ -474,7 +468,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -482,27 +476,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#conversation_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_disassociate_grounding_temporal_range_workstream** {#conversation_disassociate_grounding_temporal_range_workstream}
 > conversation_disassociate_grounding_temporal_range_workstream(conversation, range)
@@ -511,7 +504,7 @@ No authorization required
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversation_disassociate_grounding_temporal_range_workstream-example}
 
 
 ```python
@@ -542,7 +535,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_disassociate_grounding_temporal_range_workstream-parameters}
 
 
 Name | Type | Description  | Notes
@@ -550,27 +543,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#conversation_disassociate_grounding_temporal_range_workstream-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_disassociate_grounding_temporal_range_workstream-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_disassociate_grounding_temporal_range_workstream-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_disassociate_grounding_temporal_range_workstream-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_disassociate_website** {#conversation_disassociate_website}
 > conversation_disassociate_website(conversation, website)
@@ -579,7 +571,7 @@ No authorization required
 
 Allows us to disassociate a conversation from a specific website
 
-### Example
+### Example {#conversation_disassociate_website-example}
 
 
 ```python
@@ -610,7 +602,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_disassociate_website-parameters}
 
 
 Name | Type | Description  | Notes
@@ -618,27 +610,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#conversation_disassociate_website-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_disassociate_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_disassociate_website-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_disassociate_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_disassociate_workstream_summary** {#conversation_disassociate_workstream_summary}
 > conversation_disassociate_workstream_summary(conversation, workstream_summary)
@@ -647,7 +638,7 @@ No authorization required
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversation_disassociate_workstream_summary-example}
 
 
 ```python
@@ -678,7 +669,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_disassociate_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -686,27 +677,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#conversation_disassociate_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_disassociate_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_disassociate_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_disassociate_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_get_specific_conversation** {#conversation_get_specific_conversation}
 > Conversation conversation_get_specific_conversation(conversation, transferables=transferables)
@@ -715,7 +705,7 @@ No authorization required
 
 Retrieves a specific conversation.
 
-### Example
+### Example {#conversation_get_specific_conversation-example}
 
 
 ```python
@@ -749,7 +739,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_get_specific_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -757,27 +747,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#conversation_get_specific_conversation-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversation_get_specific_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_get_specific_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_get_specific_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Website not found. |  -  |
-
-
 
 ## **conversation_grounding_messages_associate_message** {#conversation_grounding_messages_associate_message}
 > conversation_grounding_messages_associate_message(conversation, message)
@@ -786,7 +775,7 @@ No authorization required
 
 Stores the grounding context for a conversation. It allows to associate a message with the conversation's grounding object, facilitating contextual understanding and management of the conversation.
 
-### Example
+### Example {#conversation_grounding_messages_associate_message-example}
 
 
 ```python
@@ -817,7 +806,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_grounding_messages_associate_message-parameters}
 
 
 Name | Type | Description  | Notes
@@ -825,27 +814,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **message** | **str**| This is the uuid of a message. | 
 
-### Return type
+### Return type {#conversation_grounding_messages_associate_message-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_grounding_messages_associate_message-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_grounding_messages_associate_message-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_grounding_messages_associate_message-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_grounding_messages_disassociate_message** {#conversation_grounding_messages_disassociate_message}
 > conversation_grounding_messages_disassociate_message(conversation, message)
@@ -854,7 +842,7 @@ No authorization required
 
 Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation's grounding object.
 
-### Example
+### Example {#conversation_grounding_messages_disassociate_message-example}
 
 
 ```python
@@ -885,7 +873,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_grounding_messages_disassociate_message-parameters}
 
 
 Name | Type | Description  | Notes
@@ -893,27 +881,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **message** | **str**| This is the uuid of a message. | 
 
-### Return type
+### Return type {#conversation_grounding_messages_disassociate_message-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_grounding_messages_disassociate_message-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_grounding_messages_disassociate_message-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_grounding_messages_disassociate_message-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_scores_increment** {#conversation_scores_increment}
 > conversation_scores_increment(conversation, seeded_score_increment=seeded_score_increment)
@@ -922,7 +909,7 @@ No authorization required
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
-### Example
+### Example {#conversation_scores_increment-example}
 
 
 ```python
@@ -954,7 +941,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -962,27 +949,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#conversation_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#conversation_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_specific_conversation_messages** {#conversation_specific_conversation_messages}
 > ConversationMessages conversation_specific_conversation_messages(conversation, transferables=transferables)
@@ -991,7 +977,7 @@ No authorization required
 
 Retrieves messages specific to a particular conversation.
 
-### Example
+### Example {#conversation_specific_conversation_messages-example}
 
 
 ```python
@@ -1025,7 +1011,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_specific_conversation_messages-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1033,27 +1019,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#conversation_specific_conversation_messages-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### Authorization
+### Authorization {#conversation_specific_conversation_messages-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_specific_conversation_messages-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_specific_conversation_messages-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_specific_conversation_rename** {#conversation_specific_conversation_rename}
 > Conversation conversation_specific_conversation_rename(conversation, transferables=transferables)
@@ -1062,7 +1047,7 @@ No authorization required
 
 Renames a specific conversation using machine learning (ML) techniques.
 
-### Example
+### Example {#conversation_specific_conversation_rename-example}
 
 
 ```python
@@ -1096,7 +1081,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_specific_conversation_rename-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1104,27 +1089,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#conversation_specific_conversation_rename-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversation_specific_conversation_rename-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_specific_conversation_rename-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_specific_conversation_rename-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_summarize** {#conversation_summarize}
 > ConversationSummarizeOutput conversation_summarize(conversation, conversation_summarize_input=conversation_summarize_input)
@@ -1133,7 +1117,7 @@ No authorization required
 
 Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
-### Example
+### Example {#conversation_summarize-example}
 
 
 ```python
@@ -1168,7 +1152,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_summarize-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1176,27 +1160,26 @@ Name | Type | Description  | Notes
  **conversation** | **str**| This is the uuid of a conversation. | 
  **conversation_summarize_input** | [**ConversationSummarizeInput**](../models/ConversationSummarizeInput)|  | [optional] 
 
-### Return type
+### Return type {#conversation_summarize-return-type}
 
 [**ConversationSummarizeOutput**](../models/ConversationSummarizeOutput)
 
-### Authorization
+### Authorization {#conversation_summarize-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_summarize-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_summarize-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **conversation_update** {#conversation_update}
 > Conversation conversation_update(transferables=transferables, conversation=conversation)
@@ -1205,7 +1188,7 @@ No authorization required
 
 Updates a specific conversation.
 
-### Example
+### Example {#conversation_update-example}
 
 
 ```python
@@ -1239,7 +1222,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#conversation_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1247,25 +1230,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **conversation** | [**Conversation**](../models/Conversation)|  | [optional] 
 
-### Return type
+### Return type {#conversation_update-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversation_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversation_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#conversation_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

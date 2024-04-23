@@ -4,7 +4,7 @@ title: ConversationMessage API | Kotlin SDK
 
 # ConversationMessage API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 This will associate a message with an annotation.
 
-### Example
+### Example {#messageassociateannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -43,22 +43,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messageassociateannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
  **message** | **kotlin.String**| This is the uuid of a message. |
 
-### Return type
+### Return type {#messageassociateannotation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#messageassociateannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messageassociateannotation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -70,7 +70,7 @@ No authorization required
 
 This will enable us to dissassociate a message from an annotation.
 
-### Example
+### Example {#messagedisassociateannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -90,22 +90,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagedisassociateannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
  **message** | **kotlin.String**| This is the uuid of a message. |
 
-### Return type
+### Return type {#messagedisassociateannotation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#messagedisassociateannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagedisassociateannotation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -117,7 +117,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#messagescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -137,22 +137,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **message** | **kotlin.String**| This is the uuid of a message. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#messagescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#messagescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -164,7 +164,7 @@ No authorization required
 
 This will get a specific snapshot of a message
 
-### Example
+### Example {#messagespecificmessagesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -185,22 +185,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagespecificmessagesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **message** | **kotlin.String**| This is the uuid of a message. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#messagespecificmessagesnapshot-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#messagespecificmessagesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagespecificmessagesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -212,7 +212,7 @@ No authorization required
 
 This will update a conversation message.
 
-### Example
+### Example {#messagespecificmessageupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -233,22 +233,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messagespecificmessageupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional]
 
-### Return type
+### Return type {#messagespecificmessageupdate-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#messagespecificmessageupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messagespecificmessageupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -260,7 +260,7 @@ No authorization required
 
 This will update the value of a conversation message.
 
-### Example
+### Example {#messageupdatevalue-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -281,22 +281,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#messageupdatevalue-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **conversationMessage** | [**ConversationMessage**](../models/ConversationMessage)|  | [optional]
 
-### Return type
+### Return type {#messageupdatevalue-return-type}
 
 [**ConversationMessage**](../models/ConversationMessage)
 
-### Authorization
+### Authorization {#messageupdatevalue-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#messageupdatevalue-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

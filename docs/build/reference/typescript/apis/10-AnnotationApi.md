@@ -4,7 +4,7 @@ title: Annotation API | TypeScript SDK
 
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#annotationscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationScoresIncrementRequest = {
-    // string | This is a specific annotation uuid.
-    annotation: annotation_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is a specific annotation uuid.
+annotation: annotation_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.annotationScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -46,17 +47,17 @@ Name | Type | Description  | Notes
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
-### Return type
+### Return type {#annotationscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#annotationscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -67,7 +68,7 @@ void (empty response body)
 
 This will get a snapshot of a specific annotation.
 
-### Example
+### Example {#annotationspecificannotationsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,33 +77,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationSpecificAnnotationSnapshotRequest = {
-    // string | This is a specific annotation uuid.
-    annotation: annotation_example,
+// string | This is a specific annotation uuid.
+annotation: annotation_example,
 };
 
 apiInstance.annotationSpecificAnnotationSnapshot(body).then((data: Annotation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationspecificannotationsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
-### Return type
+### Return type {#annotationspecificannotationsnapshot-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### HTTP request headers
+### HTTP request headers {#annotationspecificannotationsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationspecificannotationsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -113,7 +115,7 @@ Name | Type | Description  | Notes
 
 This will update a specific annotation.
 
-### Example
+### Example {#annotationupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -122,33 +124,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationApi(configuration)
 
 const body: Pieces.AnnotationUpdateRequest = {
-    // Annotation (optional)
-    annotation: ,
+// Annotation (optional)
+annotation: ,
 };
 
 apiInstance.annotationUpdate(body).then((data: Annotation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | **Annotation**|  |
 
 
-### Return type
+### Return type {#annotationupdate-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### HTTP request headers
+### HTTP request headers {#annotationupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -3,6 +3,7 @@ title: FlattenedAnalysis | Kotlin SDK
 ---
 
 
+
 # FlattenedAnalysis
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **code** | [**CodeAnalysis**](CodeAnalysis) |  |  [optional]
 **image** | [**FlattenedImageAnalysis**](FlattenedImageAnalysis) |  |  [optional]
+
 
 
 

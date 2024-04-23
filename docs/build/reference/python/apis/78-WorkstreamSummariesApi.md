@@ -4,7 +4,7 @@ title: WorkstreamSummaries API | Python SDK
 
 # WorkstreamSummaries API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new WorkstreamSummary in the database.
 
-### Example
+### Example {#workstream_summaries_create_new_workstream_summary-example}
 
 
 ```python
@@ -55,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summaries_create_new_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +63,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_workstream_summary** | [**SeededWorkstreamSummary**](../models/SeededWorkstreamSummary)|  | [optional] 
 
-### Return type
+### Return type {#workstream_summaries_create_new_workstream_summary-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstream_summaries_create_new_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summaries_create_new_workstream_summary-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summaries_create_new_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summaries_delete_specific_workstream_summary** {#workstream_summaries_delete_specific_workstream_summary}
 > workstream_summaries_delete_specific_workstream_summary(workstream_summary)
@@ -92,7 +91,7 @@ No authorization required
 
 This will delete a specific workstream_summary from the database!
 
-### Example
+### Example {#workstream_summaries_delete_specific_workstream_summary-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summaries_delete_specific_workstream_summary-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#workstream_summaries_delete_specific_workstream_summary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summaries_delete_specific_workstream_summary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summaries_delete_specific_workstream_summary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summaries_delete_specific_workstream_summary-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summaries_snapshot** {#workstream_summaries_snapshot}
 > WorkstreamSummaries workstream_summaries_snapshot(transferables=transferables)
@@ -158,7 +156,7 @@ No authorization required
 
 This will get a snapshot of all your workstream summaries.
 
-### Example
+### Example {#workstream_summaries_snapshot-example}
 
 
 ```python
@@ -191,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summaries_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#workstream_summaries_snapshot-return-type}
 
 [**WorkstreamSummaries**](../models/WorkstreamSummaries)
 
-### Authorization
+### Authorization {#workstream_summaries_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summaries_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summaries_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

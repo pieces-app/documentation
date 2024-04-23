@@ -17,29 +17,4 @@ Name | Type
 **between** | **boolean**
 **continuous** | **boolean**
 
-## Example
-
-```typescript
-import { AnonymousTemporalRange } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: AnonymousTemporalRange = {
-    "schema": null,
-    "from": null,
-    "to": null,
-    "between": null,
-    "continuous": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as AnonymousTemporalRange
-console.log(exampleParsed)
-```
-
 

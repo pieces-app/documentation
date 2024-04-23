@@ -17,22 +17,4 @@ Name | Type | Description | Notes
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] 
 **person** | **str** | uuid of the person, you want to add this tag too | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_tag import SeededTag
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededTag from a JSON string
-seeded_tag_instance = SeededTag.from_json(json)
-# print the JSON string representation of the object
-print(SeededTag.to_json())
-
-# convert the object into a dict
-seeded_tag_dict = seeded_tag_instance.to_dict()
-# create an instance of SeededTag from a dict
-seeded_tag_form_dict = seeded_tag.from_dict(seeded_tag_dict)
-```
-
 

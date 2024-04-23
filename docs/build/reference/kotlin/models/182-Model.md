@@ -3,6 +3,7 @@ title: Model | Kotlin SDK
 ---
 
 
+
 # Model
 
 ## Properties
@@ -30,6 +31,7 @@ Name | Type | Description | Notes
 **downloading** | **kotlin.Boolean** | This is a calculated property, that will say if this is currently downloading. |  [optional]
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens) |  |  [optional]
 **custom** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

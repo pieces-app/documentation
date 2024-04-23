@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **suggested** | **bool** | This is a boolean, that will say if you should or should not take action. | 
 **assets** | [**Assets**](Assets) |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.reuse_suggestion import ReuseSuggestion
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ReuseSuggestion from a JSON string
-reuse_suggestion_instance = ReuseSuggestion.from_json(json)
-# print the JSON string representation of the object
-print(ReuseSuggestion.to_json())
-
-# convert the object into a dict
-reuse_suggestion_dict = reuse_suggestion_instance.to_dict()
-# create an instance of ReuseSuggestion from a dict
-reuse_suggestion_form_dict = reuse_suggestion.from_dict(reuse_suggestion_dict)
-```
-
 

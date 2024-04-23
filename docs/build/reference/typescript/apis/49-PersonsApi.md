@@ -4,7 +4,7 @@ title: Persons API | TypeScript SDK
 
 # Persons API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This will update both the asset and the person reference, that will remove a person from an asset(only the references).  This will NOT remove the person. This will NOT remove the asset. This will only update the references so that they are disconnected from one another.
 
-### Example
+### Example {#persondisassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -28,18 +28,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonDisassociateAssetRequest = {
-    // string | This is a uuid that represents a person.
-    person: person_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is a uuid that represents a person.
+person: person_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.personDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#persondisassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -47,17 +48,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#persondisassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#persondisassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#persondisassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -68,7 +69,7 @@ void (empty response body)
 
 This will create a new person.
 
-### Example
+### Example {#personscreatenewperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -77,18 +78,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsCreateNewPersonRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // SeededPerson (optional)
-    seededPerson: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// SeededPerson (optional)
+seededPerson: ,
 };
 
 apiInstance.personsCreateNewPerson(body).then((data: Person) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#personscreatenewperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -96,17 +98,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#personscreatenewperson-return-type}
 
 [**Person**](../models/Person)
 
-### HTTP request headers
+### HTTP request headers {#personscreatenewperson-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#personscreatenewperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -117,7 +119,7 @@ Name | Type | Description  | Notes
 
 This will delete a specific person.
 
-### Example
+### Example {#personsdeleteperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -126,33 +128,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsDeletePersonRequest = {
-    // string | This is a uuid that represents a person.
-    person: person_example,
+// string | This is a uuid that represents a person.
+person: person_example,
 };
 
 apiInstance.personsDeletePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#personsdeleteperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return type {#personsdeleteperson-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#personsdeleteperson-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#personsdeleteperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -163,7 +166,7 @@ void (empty response body)
 
 This will get a snapshot of all of your people
 
-### Example
+### Example {#personssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -172,33 +175,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.PersonsApi(configuration)
 
 const body: Pieces.PersonsSnapshotRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.personsSnapshot(body).then((data: Persons) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#personssnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#personssnapshot-return-type}
 
 [**Persons**](../models/Persons)
 
-### HTTP request headers
+### HTTP request headers {#personssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#personssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

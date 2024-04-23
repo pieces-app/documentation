@@ -24,22 +24,4 @@ Name | Type | Description | Notes
 **distributions** | [**Distributions**](Distributions) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.share import Share
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Share from a JSON string
-share_instance = Share.from_json(json)
-# print the JSON string representation of the object
-print(Share.to_json())
-
-# convert the object into a dict
-share_dict = share_instance.to_dict()
-# create an instance of Share from a dict
-share_form_dict = share.from_dict(share_dict)
-```
-
 

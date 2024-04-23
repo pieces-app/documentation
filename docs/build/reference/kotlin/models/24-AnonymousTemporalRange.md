@@ -3,6 +3,7 @@ title: AnonymousTemporalRange | Kotlin SDK
 ---
 
 
+
 # AnonymousTemporalRange
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **to** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
 **between** | **kotlin.Boolean** |  |  [optional]
 **continuous** | **kotlin.Boolean** |  |  [optional]
+
 
 
 

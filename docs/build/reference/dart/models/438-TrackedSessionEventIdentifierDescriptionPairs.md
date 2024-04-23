@@ -4,11 +4,6 @@ title: TrackedSessionEventIdentifierDescriptionPairs | Dart SDK
 
 # TrackedSessionEventIdentifierDescriptionPairs
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -25,7 +20,5 @@ Name | Type | Description | Notes
 **sessionUnauthenticatedWithRemind** | **String** | A user did not sign into the session with a reminder | [optional] 
 **sessionOnboardingInitialized** | **String** | Onboarding has been initialized for this session | [optional] 
 **sessionOnboardingCompleted** | **String** | Onboarding has been completed for this session | [optional] 
-
-
 
 

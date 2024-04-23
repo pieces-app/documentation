@@ -4,11 +4,6 @@ title: OAuthToken | Dart SDK
 
 # OAuthToken
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **scope** | **String** |  | 
 **refreshToken** | **String** |  | [optional] 
 **idToken** | **String** |  | [optional] 
-
-
 
 

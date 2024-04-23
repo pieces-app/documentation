@@ -4,7 +4,7 @@ title: Users API | Kotlin SDK
 
 # Users API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 Creates a User From a oAuth Token
 
-### Example
+### Example {#authenticatefromoauthtoken-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,17 +41,17 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#authenticatefromoauthtoken-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oauthToken** | [**OAuthToken**](../models/OAuthToken)|  | [optional]
 
-### Return type
+### Return type {#authenticatefromoauthtoken-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#authenticatefromoauthtoken-authorization}
 
 
 Configure auth0:
@@ -61,7 +61,7 @@ Configure auth0:
 Configure auth0:
     ApiClient.accessToken = ""
 
-### HTTP request headers
+### HTTP request headers {#authenticatefromoauthtoken-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -73,7 +73,7 @@ Configure auth0:
 
 Locally Removing a user for the purpose of Signing Out
 
-### Example
+### Example {#usersdisconnectuser-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -93,21 +93,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#usersdisconnectuser-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | **kotlin.String**|  |
 
-### Return type
+### Return type {#usersdisconnectuser-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#usersdisconnectuser-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#usersdisconnectuser-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -119,7 +119,7 @@ No authorization required
 
 this will return a snapshot of all of the users that are in the users database. TODO might want to make this internal.
 
-### Example
+### Example {#userssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -138,18 +138,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#userssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#userssnapshot-return-type}
 
 [**Users**](../models/Users)
 
-### Authorization
+### Authorization {#userssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#userssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -161,7 +161,7 @@ No authorization required
 
 This enables the client to get the current user.  This endpoint will return a UserPRofile or will throw an error since you are sending user uid.
 
-### Example
+### Example {#usersspecificusersnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -181,21 +181,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#usersspecificusersnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **user** | **java.util.UUID**| The id (uuid) for a specific user. |
 
-### Return type
+### Return type {#usersspecificusersnapshot-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### Authorization
+### Authorization {#usersspecificusersnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#usersspecificusersnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

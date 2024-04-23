@@ -3,6 +3,7 @@ title: CapabilitiesEnum | Kotlin SDK
 ---
 
 
+
 # CapabilitiesEnum
 
 ## Enum
@@ -13,6 +14,7 @@ title: CapabilitiesEnum | Kotlin SDK
     * `CLOUD` (value: `"CLOUD"`)
 
     * `BLENDED` (value: `"BLENDED"`)
+
 
 
 

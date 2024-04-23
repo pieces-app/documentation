@@ -4,7 +4,7 @@ title: Shares API | TypeScript SDK
 
 # Shares API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This endpoint will accept an asset. Response here will be a Share that was created.
 
-### Example
+### Example {#sharescreatenewshare-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -28,18 +28,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesCreateNewShareRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // SeededShare (optional)
-    seededShare: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// SeededShare (optional)
+seededShare: ,
 };
 
 apiInstance.sharesCreateNewShare(body).then((data: Shares) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharescreatenewshare-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -47,17 +48,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#sharescreatenewshare-return-type}
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP request headers {#sharescreatenewshare-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#sharescreatenewshare-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -67,7 +68,7 @@ Name | Type | Description  | Notes
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
-### Example
+### Example {#sharesdeleteshare-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,33 +77,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesDeleteShareRequest = {
-    // string | Share id
-    share: share_example,
+// string | Share id
+share: share_example,
 };
 
 apiInstance.sharesDeleteShare(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharesdeleteshare-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] | Share id | defaults to undefined
 
 
-### Return type
+### Return type {#sharesdeleteshare-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#sharesdeleteshare-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#sharesdeleteshare-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -112,7 +114,7 @@ Name | Type | Description  | Notes
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
 
-### Example
+### Example {#sharessnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -121,33 +123,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesSnapshotRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.sharesSnapshot(body).then((data: Shares) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharessnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#sharessnapshot-return-type}
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP request headers {#sharessnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#sharessnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -157,7 +160,7 @@ Name | Type | Description  | Notes
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
-### Example
+### Example {#sharesspecificsharesnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -166,18 +169,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.SharesApi(configuration)
 
 const body: Pieces.SharesSpecificShareSnapshotRequest = {
-    // string | Share id
-    share: share_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | Share id
+share: share_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.sharesSpecificShareSnapshot(body).then((data: Share) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharesspecificsharesnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -185,17 +189,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#sharesspecificsharesnapshot-return-type}
 
 [**Share**](../models/Share)
 
-### HTTP request headers
+### HTTP request headers {#sharesspecificsharesnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#sharesspecificsharesnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | A specific share per the provided share id. |  -  |

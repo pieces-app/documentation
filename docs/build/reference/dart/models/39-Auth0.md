@@ -4,11 +4,6 @@ title: Auth0 | Dart SDK
 
 # Auth0
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -21,7 +16,5 @@ Name | Type | Description | Notes
 **redirects** | [**Auth0Redirects**](Auth0Redirects) |  | 
 **oAuth** | [**OAuthGroup**](OAuthGroup) |  | 
 **namespace** | **String** | An optional namespace parameter to add an additional namespace | [optional] 
-
-
 
 

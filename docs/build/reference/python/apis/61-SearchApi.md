@@ -4,7 +4,7 @@ title: Search API | Python SDK
 
 # Search API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will run FTS for exact search, and will NOT run fuzzy matching. This will only search the content within the 
 
-### Example
+### Example {#full_text_search-example}
 
 
 ```python
@@ -54,7 +54,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#full_text_search-parameters}
 
 
 Name | Type | Description  | Notes
@@ -62,27 +62,26 @@ Name | Type | Description  | Notes
  **query** | **str**| This is a string that you can use to search your assets. | [optional] 
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#full_text_search-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#full_text_search-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#full_text_search-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#full_text_search-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **neural_code_search** {#neural_code_search}
 > SearchedAssets neural_code_search(query=query, pseudo=pseudo)
@@ -91,7 +90,7 @@ No authorization required
 
 This will run ncs on your assets. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example {#neural_code_search-example}
 
 
 ```python
@@ -125,7 +124,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#neural_code_search-parameters}
 
 
 Name | Type | Description  | Notes
@@ -133,27 +132,26 @@ Name | Type | Description  | Notes
  **query** | **str**| This is a string that you can use to search your assets. | [optional] 
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#neural_code_search-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#neural_code_search-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#neural_code_search-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#neural_code_search-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_based_search** {#tag_based_search}
 > SearchedAssets tag_based_search(pseudo=pseudo, seeded_asset_tags=seeded_asset_tags)
@@ -162,7 +160,7 @@ No authorization required
 
 This will run our tag based search, and return the assets that best match your passed in tags. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example {#tag_based_search-example}
 
 
 ```python
@@ -197,7 +195,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_based_search-parameters}
 
 
 Name | Type | Description  | Notes
@@ -205,25 +203,24 @@ Name | Type | Description  | Notes
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
  **seeded_asset_tags** | [**SeededAssetTags**](../models/SeededAssetTags)|  | [optional] 
 
-### Return type
+### Return type {#tag_based_search-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#tag_based_search-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_based_search-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_based_search-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

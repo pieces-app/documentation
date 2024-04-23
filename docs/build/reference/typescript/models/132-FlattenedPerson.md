@@ -28,40 +28,4 @@ Name | Type
 **score** | [**Score**](Score)
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries)
 
-## Example
-
-```typescript
-import { FlattenedPerson } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: FlattenedPerson = {
-    "schema": null,
-    "id": null,
-    "created": null,
-    "updated": null,
-    "deleted": null,
-    "type": null,
-    "assets": null,
-    "mechanisms": null,
-    "interactions": null,
-    "access": null,
-    "tags": null,
-    "websites": null,
-    "models": null,
-    "annotations": null,
-    "score": null,
-    "summaries": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FlattenedPerson
-console.log(exampleParsed)
-```
-
 

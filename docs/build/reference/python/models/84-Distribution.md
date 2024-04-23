@@ -19,22 +19,4 @@ Name | Type | Description | Notes
 **mailgun** | [**MailgunDistribution**](MailgunDistribution) |  | [optional] 
 **github** | [**GitHubDistribution**](GitHubDistribution) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.distribution import Distribution
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Distribution from a JSON string
-distribution_instance = Distribution.from_json(json)
-# print the JSON string representation of the object
-print(Distribution.to_json())
-
-# convert the object into a dict
-distribution_dict = distribution_instance.to_dict()
-# create an instance of Distribution from a dict
-distribution_form_dict = distribution.from_dict(distribution_dict)
-```
-
 

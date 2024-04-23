@@ -4,7 +4,7 @@ title: Activities API | Python SDK
 
 # Activities API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new Activity.
 
-### Example
+### Example {#activities_create_new_activity-example}
 
 
 ```python
@@ -55,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#activities_create_new_activity-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +63,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_activity** | [**SeededActivity**](../models/SeededActivity)|  | [optional] 
 
-### Return type
+### Return type {#activities_create_new_activity-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activities_create_new_activity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activities_create_new_activity-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#activities_create_new_activity-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **activities_delete_specific_activity** {#activities_delete_specific_activity}
 > activities_delete_specific_activity(activity)
@@ -92,7 +91,7 @@ No authorization required
 
 This will delete a specific activity.  important note: if we delete an activity: that is going to be a generic or a specific/ we will also delete its counter part i.e the specific. and vise versa, this ensures that the references are always cleaned.
 
-### Example
+### Example {#activities_delete_specific_activity-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#activities_delete_specific_activity-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **activity** | **str**| This is a specific activity uuid. | 
 
-### Return type
+### Return type {#activities_delete_specific_activity-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#activities_delete_specific_activity-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activities_delete_specific_activity-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#activities_delete_specific_activity-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **activities_snapshot** {#activities_snapshot}
 > Activities activities_snapshot(transferables=transferables, pseudo=pseudo)
@@ -158,7 +156,7 @@ No authorization required
 
 This will get a snapshot of all of the activities
 
-### Example
+### Example {#activities_snapshot-example}
 
 
 ```python
@@ -192,7 +190,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#activities_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -200,25 +198,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#activities_snapshot-return-type}
 
 [**Activities**](../models/Activities)
 
-### Authorization
+### Authorization {#activities_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activities_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#activities_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

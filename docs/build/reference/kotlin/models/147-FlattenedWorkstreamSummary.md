@@ -3,6 +3,7 @@ title: FlattenedWorkstreamSummary | Kotlin SDK
 ---
 
 
+
 # FlattenedWorkstreamSummary
 
 ## Properties
@@ -24,6 +25,7 @@ Name | Type | Description | Notes
 **conversations** | [**FlattenedConversations**](FlattenedConversations) |  |  [optional]
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  |  [optional]
 **applications** | [**Applications**](Applications) |  |  [optional]
+
 
 
 

@@ -4,7 +4,7 @@ title: Notifications API | Python SDK
 
 # Notifications API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Send notification
 
 Retrieves a snapshot of all available models.
 
-### Example
+### Example {#send_local_notification-example}
 
 
 ```python
@@ -49,31 +49,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#send_local_notification-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **notification** | [**Notification**](../models/Notification)|  | [optional] 
 
-### Return type
+### Return type {#send_local_notification-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#send_local_notification-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#send_local_notification-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
 
-### HTTP response details
+
+### HTTP response details {#send_local_notification-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

@@ -4,11 +4,6 @@ title: FileMetadata | Dart SDK
 
 # FileMetadata
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **name** | **String** | This is the name of your file. | [optional] 
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | [optional] 
 **size** | **int** | This is the size(in bytes) | [optional] 
-
-
 
 

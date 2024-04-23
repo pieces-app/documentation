@@ -4,7 +4,7 @@ title: Linkify API | TypeScript SDK
 
 # Linkify API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 
-### Example
+### Example {#linkify-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,33 +27,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.LinkifyApi(configuration)
 
 const body: Pieces.LinkifyRequest = {
-    // Linkify (optional)
-    linkify: ,
+// Linkify (optional)
+linkify: ,
 };
 
 apiInstance.linkify(body).then((data: Shares) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#linkify-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **linkify** | **Linkify**|  |
 
 
-### Return type
+### Return type {#linkify-return-type}
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP request headers {#linkify-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#linkify-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -67,7 +68,7 @@ Name | Type | Description  | Notes
 
 - assumption that you have already backed up the asset\'s that you are sending to this endpoint.(b/c the assets are ids.)
 
-### Example
+### Example {#linkifymultiple-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,33 +77,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.LinkifyApi(configuration)
 
 const body: Pieces.LinkifyMultipleRequest = {
-    // LinkifyMultiple |  (optional)
-    linkifyMultiple: ,
+// LinkifyMultiple |  (optional)
+linkifyMultiple: ,
 };
 
 apiInstance.linkifyMultiple(body).then((data: Shares) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#linkifymultiple-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **linkifyMultiple** | **LinkifyMultiple**|  |
 
 
-### Return type
+### Return type {#linkifymultiple-return-type}
 
 [**Shares**](../models/Shares)
 
-### HTTP request headers
+### HTTP request headers {#linkifymultiple-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#linkifymultiple-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -117,7 +119,7 @@ Name | Type | Description  | Notes
 
 This will revoke a link.
 
-### Example
+### Example {#linkifysharerevoke-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -126,33 +128,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.LinkifyApi(configuration)
 
 const body: Pieces.LinkifyShareRevokeRequest = {
-    // string
-    share: share_example,
+// string
+share: share_example,
 };
 
 apiInstance.linkifyShareRevoke(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#linkifysharerevoke-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return type {#linkifysharerevoke-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#linkifysharerevoke-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#linkifysharerevoke-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK, this is the uuid of the share that was revoked. |  -  |

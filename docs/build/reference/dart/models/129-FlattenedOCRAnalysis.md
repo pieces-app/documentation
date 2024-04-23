@@ -4,11 +4,6 @@ title: FlattenedOCRAnalysis | Dart SDK
 
 # FlattenedOCRAnalysis
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **hocr** | [**ReferencedFormat**](ReferencedFormat) |  | 
 **model** | [**Model**](Model) |  | 
 **image** | **String** | this is a refernece to the image analysis. | 
-
-
 
 

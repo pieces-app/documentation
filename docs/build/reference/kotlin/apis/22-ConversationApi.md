@@ -4,7 +4,7 @@ title: Conversation API | Kotlin SDK
 
 # Conversation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -35,7 +35,7 @@ Method | HTTP request | Description
 
 Updates both the anchor and the conversation, associating them together.
 
-### Example
+### Example {#conversationassociateanchor-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -55,22 +55,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationassociateanchor-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
-### Return type
+### Return type {#conversationassociateanchor-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationassociateanchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateanchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -82,7 +82,7 @@ No authorization required
 
 Updates both the asset and the conversation, associating the two together.
 
-### Example
+### Example {#conversationassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -102,22 +102,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#conversationassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -129,7 +129,7 @@ No authorization required
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversationassociategroundingtemporalrangeworkstream-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -149,22 +149,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationassociategroundingtemporalrangeworkstream-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#conversationassociategroundingtemporalrangeworkstream-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationassociategroundingtemporalrangeworkstream-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationassociategroundingtemporalrangeworkstream-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -176,7 +176,7 @@ No authorization required
 
 Updates both the website and the conversation, and associate them together.
 
-### Example
+### Example {#conversationassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -196,22 +196,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#conversationassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -223,7 +223,7 @@ No authorization required
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversationassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -243,22 +243,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#conversationassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -270,7 +270,7 @@ No authorization required
 
 Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
-### Example
+### Example {#conversationdisassociateanchor-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -290,22 +290,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateanchor-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
-### Return type
+### Return type {#conversationdisassociateanchor-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationdisassociateanchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateanchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -317,7 +317,7 @@ No authorization required
 
 Updates both the asset and the conversation, effectively disassociating them.
 
-### Example
+### Example {#conversationdisassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -337,22 +337,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#conversationdisassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationdisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -364,7 +364,7 @@ No authorization required
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversationdisassociategroundingtemporalrangeworkstream-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -384,22 +384,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationdisassociategroundingtemporalrangeworkstream-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#conversationdisassociategroundingtemporalrangeworkstream-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationdisassociategroundingtemporalrangeworkstream-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociategroundingtemporalrangeworkstream-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -411,7 +411,7 @@ No authorization required
 
 Allows us to disassociate a conversation from a specific website
 
-### Example
+### Example {#conversationdisassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -431,22 +431,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationdisassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#conversationdisassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationdisassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -458,7 +458,7 @@ No authorization required
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversationdisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -478,22 +478,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#conversationdisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationdisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -505,7 +505,7 @@ No authorization required
 
 Retrieves a specific conversation.
 
-### Example
+### Example {#conversationgetspecificconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -526,22 +526,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationgetspecificconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#conversationgetspecificconversation-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversationgetspecificconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationgetspecificconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -553,7 +553,7 @@ No authorization required
 
 Stores the grounding context for a conversation. It allows to associate a message with the conversation&#39;s grounding object, facilitating contextual understanding and management of the conversation.
 
-### Example
+### Example {#conversationgroundingmessagesassociatemessage-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -573,22 +573,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationgroundingmessagesassociatemessage-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **message** | **kotlin.String**| This is the uuid of a message. |
 
-### Return type
+### Return type {#conversationgroundingmessagesassociatemessage-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationgroundingmessagesassociatemessage-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationgroundingmessagesassociatemessage-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -600,7 +600,7 @@ No authorization required
 
 Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation&#39;s grounding object.
 
-### Example
+### Example {#conversationgroundingmessagesdisassociatemessage-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -620,22 +620,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationgroundingmessagesdisassociatemessage-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **message** | **kotlin.String**| This is the uuid of a message. |
 
-### Return type
+### Return type {#conversationgroundingmessagesdisassociatemessage-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationgroundingmessagesdisassociatemessage-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationgroundingmessagesdisassociatemessage-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -647,7 +647,7 @@ No authorization required
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
-### Example
+### Example {#conversationscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -667,22 +667,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#conversationscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#conversationscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -694,7 +694,7 @@ No authorization required
 
 Retrieves messages specific to a particular conversation.
 
-### Example
+### Example {#conversationspecificconversationmessages-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -715,22 +715,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationspecificconversationmessages-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#conversationspecificconversationmessages-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### Authorization
+### Authorization {#conversationspecificconversationmessages-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationspecificconversationmessages-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -742,7 +742,7 @@ No authorization required
 
 Renames a specific conversation using machine learning (ML) techniques.
 
-### Example
+### Example {#conversationspecificconversationrename-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -763,22 +763,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationspecificconversationrename-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#conversationspecificconversationrename-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversationspecificconversationrename-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationspecificconversationrename-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -790,7 +790,7 @@ No authorization required
 
 Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
-### Example
+### Example {#conversationsummarize-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -811,22 +811,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationsummarize-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
  **conversationSummarizeInput** | [**ConversationSummarizeInput**](../models/ConversationSummarizeInput)|  | [optional]
 
-### Return type
+### Return type {#conversationsummarize-return-type}
 
 [**ConversationSummarizeOutput**](../models/ConversationSummarizeOutput)
 
-### Authorization
+### Authorization {#conversationsummarize-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationsummarize-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -838,7 +838,7 @@ No authorization required
 
 Updates a specific conversation.
 
-### Example
+### Example {#conversationupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -859,22 +859,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#conversationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **conversation** | [**Conversation**](../models/Conversation)|  | [optional]
 
-### Return type
+### Return type {#conversationupdate-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### Authorization
+### Authorization {#conversationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#conversationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

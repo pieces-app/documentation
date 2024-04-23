@@ -20,22 +20,4 @@ Name | Type | Description | Notes
 **picture** | **str** | A URI pointing to the user&#39;s picture. | 
 **nickname** | **str** | The user&#39;s nickname. | 
 
-## Example
-
-```python
-from pieces_os_client.models.o_auth_account import OAuthAccount
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of OAuthAccount from a JSON string
-o_auth_account_instance = OAuthAccount.from_json(json)
-# print the JSON string representation of the object
-print(OAuthAccount.to_json())
-
-# convert the object into a dict
-o_auth_account_dict = o_auth_account_instance.to_dict()
-# create an instance of OAuthAccount from a dict
-o_auth_account_form_dict = o_auth_account.from_dict(o_auth_account_dict)
-```
-
 

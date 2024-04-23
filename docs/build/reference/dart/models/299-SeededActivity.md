@@ -4,11 +4,6 @@ title: SeededActivity | Dart SDK
 
 # SeededActivity
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **format** | [**ReferencedFormat**](ReferencedFormat) |  | [optional] 
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **conversation** | [**ReferencedConversation**](ReferencedConversation) |  | [optional] 
-
-
 
 

@@ -4,7 +4,7 @@ title: Linkify API | Dart SDK
 
 # Linkify API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 
-### Example
+### Example {#linkify-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,26 +35,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#linkify-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **linkify** | [**Linkify**](../models/Linkify)|  | [optional] 
+ **linkify** | [**Linkify**](../models/Linkify) |  | [optional] 
 
-### Return type
+### Return type {#linkify-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#linkify-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#linkify-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **linkifyMultiple** {#linkifymultiple}
 > Shares linkifyMultiple(linkifyMultiple)
@@ -63,7 +61,7 @@ No authorization required
 
 - assumption that you have already backed up the asset's that you are sending to this endpoint.(b/c the assets are ids.)
 
-### Example
+### Example {#linkifymultiple-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -78,26 +76,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#linkifymultiple-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **linkifyMultiple** | [**LinkifyMultiple**](../models/LinkifyMultiple)|  | [optional] 
+ **linkifyMultiple** | [**LinkifyMultiple**](../models/LinkifyMultiple) |  | [optional] 
 
-### Return type
+### Return type {#linkifymultiple-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#linkifymultiple-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#linkifymultiple-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **linkifyShareRevoke** {#linkifysharerevoke}
 > String linkifyShareRevoke(share)
@@ -106,7 +102,7 @@ No authorization required
 
 This will revoke a link.
 
-### Example
+### Example {#linkifysharerevoke-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -121,24 +117,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#linkifysharerevoke-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **share** | **String**|  | 
+ **share** | **String** |  | 
 
-### Return type
+### Return type {#linkifysharerevoke-return-type}
 
 **String**
 
-### Authorization
+### Authorization {#linkifysharerevoke-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#linkifysharerevoke-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 

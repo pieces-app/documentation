@@ -29,22 +29,4 @@ Name | Type | Description | Notes
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.annotation import Annotation
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Annotation from a JSON string
-annotation_instance = Annotation.from_json(json)
-# print the JSON string representation of the object
-print(Annotation.to_json())
-
-# convert the object into a dict
-annotation_dict = annotation_instance.to_dict()
-# create an instance of Annotation from a dict
-annotation_form_dict = annotation.from_dict(annotation_dict)
-```
-
 

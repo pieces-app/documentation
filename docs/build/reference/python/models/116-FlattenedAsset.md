@@ -41,22 +41,4 @@ Name | Type | Description | Notes
 **demo** | **bool** | This will let us know if this asset was generated as a &#39;demo&#39; snippet | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.flattened_asset import FlattenedAsset
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedAsset from a JSON string
-flattened_asset_instance = FlattenedAsset.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedAsset.to_json())
-
-# convert the object into a dict
-flattened_asset_dict = flattened_asset_instance.to_dict()
-# create an instance of FlattenedAsset from a dict
-flattened_asset_form_dict = flattened_asset.from_dict(flattened_asset_dict)
-```
-
 

@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **answer** | [**QGPTQuestionOutput**](QGPTQuestionOutput) |  | [optional] 
 **relevant** | [**RelevantQGPTSeeds**](RelevantQGPTSeeds) |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_relevance_output import QGPTRelevanceOutput
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTRelevanceOutput from a JSON string
-qgpt_relevance_output_instance = QGPTRelevanceOutput.from_json(json)
-# print the JSON string representation of the object
-print(QGPTRelevanceOutput.to_json())
-
-# convert the object into a dict
-qgpt_relevance_output_dict = qgpt_relevance_output_instance.to_dict()
-# create an instance of QGPTRelevanceOutput from a dict
-qgpt_relevance_output_form_dict = qgpt_relevance_output.from_dict(qgpt_relevance_output_dict)
-```
-
 

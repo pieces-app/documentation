@@ -3,6 +3,7 @@ title: SeededConnectorTracking | Kotlin SDK
 ---
 
 
+
 # SeededConnectorTracking
 
 ## Properties
@@ -18,6 +19,7 @@ Name | Type | Description | Notes
 **ml** | [**SeededTrackedMachineLearningEvent**](SeededTrackedMachineLearningEvent) |  |  [optional]
 **adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent) |  |  [optional]
 **conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent) |  |  [optional]
+
 
 
 

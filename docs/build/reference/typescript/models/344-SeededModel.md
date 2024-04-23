@@ -31,43 +31,4 @@ Name | Type
 **maxTokens** | [**ModelMaxTokens**](ModelMaxTokens)
 **custom** | **boolean**
 
-## Example
-
-```typescript
-import { SeededModel } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededModel = {
-    "schema": null,
-    "version": null,
-    "created": null,
-    "name": null,
-    "description": null,
-    "cloud": null,
-    "type": null,
-    "usage": null,
-    "bytes": null,
-    "ram": null,
-    "quantization": null,
-    "foundation": null,
-    "downloaded": null,
-    "unique": null,
-    "parameters": null,
-    "provider": null,
-    "cpu": null,
-    "maxTokens": null,
-    "custom": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededModel
-console.log(exampleParsed)
-```
-
 

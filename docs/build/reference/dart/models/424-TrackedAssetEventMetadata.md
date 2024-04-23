@@ -4,11 +4,6 @@ title: TrackedAssetEventMetadata | Dart SDK
 
 # TrackedAssetEventMetadata
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -24,7 +19,5 @@ Name | Type | Description | Notes
 **annotation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | [optional] 
 **hint** | [**ReferencedHint**](ReferencedHint) |  | [optional] 
 **anchor** | [**ReferencedAnchor**](ReferencedAnchor) |  | [optional] 
-
-
 
 

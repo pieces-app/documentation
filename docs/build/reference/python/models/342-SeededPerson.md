@@ -18,22 +18,4 @@ Name | Type | Description | Notes
 **model** | [**PersonModel**](PersonModel) |  | [optional] 
 **annotations** | [**List[SeededAnnotation]**](SeededAnnotation) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_person import SeededPerson
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededPerson from a JSON string
-seeded_person_instance = SeededPerson.from_json(json)
-# print the JSON string representation of the object
-print(SeededPerson.to_json())
-
-# convert the object into a dict
-seeded_person_dict = seeded_person_instance.to_dict()
-# create an instance of SeededPerson from a dict
-seeded_person_form_dict = seeded_person.from_dict(seeded_person_dict)
-```
-
 

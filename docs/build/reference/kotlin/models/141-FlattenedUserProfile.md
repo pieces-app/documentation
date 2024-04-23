@@ -3,6 +3,7 @@ title: FlattenedUserProfile | Kotlin SDK
 ---
 
 
+
 # FlattenedUserProfile
 
 ## Properties
@@ -15,6 +16,7 @@ Name | Type | Description | Notes
 **username** | **kotlin.String** |  |  [optional]
 **picture** | **kotlin.String** |  |  [optional]
 **vanityname** | **kotlin.String** |  |  [optional]
+
 
 
 

@@ -4,7 +4,7 @@ title: AnchorPoints API | Kotlin SDK
 
 # AnchorPoints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a anchorPoint.
 
-### Example
+### Example {#anchorpointscreatenewanchorpoint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointscreatenewanchorpoint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededAnchorPoint** | [**SeededAnchorPoint**](../models/SeededAnchorPoint)|  | [optional]
 
-### Return type
+### Return type {#anchorpointscreatenewanchorpoint-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### Authorization
+### Authorization {#anchorpointscreatenewanchorpoint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointscreatenewanchorpoint-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This will delete a specific anchorPoint!
 
-### Example
+### Example {#anchorpointsdeletespecificanchorpoint-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointsdeletespecificanchorpoint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
 
-### Return type
+### Return type {#anchorpointsdeletespecificanchorpoint-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#anchorpointsdeletespecificanchorpoint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointsdeletespecificanchorpoint-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -113,7 +113,7 @@ No authorization required
 
 This will get a snapshot of all your anchorPoints.
 
-### Example
+### Example {#anchorpointssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -133,21 +133,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#anchorpointssnapshot-return-type}
 
 [**AnchorPoints**](../models/AnchorPoints)
 
-### Authorization
+### Authorization {#anchorpointssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

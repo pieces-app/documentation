@@ -4,7 +4,7 @@ title: WorkstreamEvents API | Kotlin SDK
 
 # WorkstreamEvents API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new WorkstreamEvent in the database.
 
-### Example
+### Example {#workstreameventscreatenewworkstreamevent-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventscreatenewworkstreamevent-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededWorkstreamEvent** | [**SeededWorkstreamEvent**](../models/SeededWorkstreamEvent)|  | [optional]
 
-### Return type
+### Return type {#workstreameventscreatenewworkstreamevent-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstreameventscreatenewworkstreamevent-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventscreatenewworkstreamevent-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This will delete a specific workstream_event from the database!
 
-### Example
+### Example {#workstreameventsdeletespecificworkstreamevent-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventsdeletespecificworkstreamevent-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
 
-### Return type
+### Return type {#workstreameventsdeletespecificworkstreamevent-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreameventsdeletespecificworkstreamevent-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventsdeletespecificworkstreamevent-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -113,7 +113,7 @@ No authorization required
 
 This will get a snapshot of all your workstream events.
 
-### Example
+### Example {#workstreameventssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -133,21 +133,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#workstreameventssnapshot-return-type}
 
 [**WorkstreamEvents**](../models/WorkstreamEvents)
 
-### Authorization
+### Authorization {#workstreameventssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

@@ -17,22 +17,4 @@ Name | Type | Description | Notes
 **code_modification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification) |  | [optional] 
 **code_completion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_task_pipeline import QGPTTaskPipeline
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTTaskPipeline from a JSON string
-qgpt_task_pipeline_instance = QGPTTaskPipeline.from_json(json)
-# print the JSON string representation of the object
-print(QGPTTaskPipeline.to_json())
-
-# convert the object into a dict
-qgpt_task_pipeline_dict = qgpt_task_pipeline_instance.to_dict()
-# create an instance of QGPTTaskPipeline from a dict
-qgpt_task_pipeline_form_dict = qgpt_task_pipeline.from_dict(qgpt_task_pipeline_dict)
-```
-
 

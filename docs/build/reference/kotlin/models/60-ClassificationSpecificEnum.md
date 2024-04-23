@@ -3,6 +3,7 @@ title: ClassificationSpecificEnum | Kotlin SDK
 ---
 
 
+
 # ClassificationSpecificEnum
 
 ## Enum
@@ -1007,6 +1008,7 @@ title: ClassificationSpecificEnum | Kotlin SDK
     * `ini` (value: `"ini"`)
 
     * `ftl` (value: `"ftl"`)
+
 
 
 

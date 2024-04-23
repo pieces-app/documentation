@@ -4,11 +4,6 @@ title: QGPTStreamInput | Dart SDK
 
 # QGPTStreamInput
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **stop** | **bool** | This will stop the output of the current LLM | [optional] 
 **reset** | **bool** | This will fully reset all current Activity within the QGPT stream Flows. | [optional] 
 **agent** | **bool** | This will let us know if we want to run the agent routing as well, this is default to true. However if set to false you will save on processing and you will recieve null for the agentRoutes class on the QGPTStreamOutput. | [optional] 
-
-
 
 

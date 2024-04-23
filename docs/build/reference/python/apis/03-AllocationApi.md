@@ -4,7 +4,7 @@ title: Allocation API | Python SDK
 
 # Allocation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a specific allocation.
 
-### Example
+### Example {#allocation_snapshot-example}
 
 
 ```python
@@ -52,34 +52,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocation_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation** | **str**|  | 
 
-### Return type
+### Return type {#allocation_snapshot-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocation_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocation_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocation_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Cloud not found. |  -  |
-
-
 
 ## **allocation_update** {#allocation_update}
 > AllocationCloud allocation_update(allocation_cloud=allocation_cloud)
@@ -88,7 +87,7 @@ No authorization required
 
 This will update a specific allocation.
 
-### Example
+### Example {#allocation_update-example}
 
 
 ```python
@@ -121,33 +120,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#allocation_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **allocation_cloud** | [**AllocationCloud**](../models/AllocationCloud)|  | [optional] 
 
-### Return type
+### Return type {#allocation_update-return-type}
 
 [**AllocationCloud**](../models/AllocationCloud)
 
-### Authorization
+### Authorization {#allocation_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#allocation_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#allocation_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
 **504** | Gateway Timeout, request timed out. |  -  |
-
-
 

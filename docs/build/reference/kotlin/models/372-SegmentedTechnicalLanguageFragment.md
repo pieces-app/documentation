@@ -3,6 +3,7 @@ title: SegmentedTechnicalLanguageFragment | Kotlin SDK
 ---
 
 
+
 # SegmentedTechnicalLanguageFragment
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **fragment** | [**FragmentFormat**](FragmentFormat) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **specific** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
+
 
 
 

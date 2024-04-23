@@ -4,7 +4,7 @@ title: ExternalProvider API | Kotlin SDK
 
 # ExternalProvider API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeycreate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,21 +40,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeycreate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **precreatedExternalProviderApiKey** | [**PrecreatedExternalProviderApiKey**](PrecreatedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeycreate-return-type}
 
 [**CreatedExternalProviderApiKey**](CreatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeycreate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeycreate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -66,7 +66,7 @@ No authorization required
 
 This will remove a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeydelete-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -86,21 +86,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeydelete-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **predeletedExternalProviderApiKey** | [**PredeletedExternalProviderApiKey**](PredeletedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeydelete-return-type}
 
 [**DeletedExternalProviderApiKey**](DeletedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeydelete-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeydelete-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -112,7 +112,7 @@ No authorization required
 
 This will update a specific external_provider api_key from a specific user Auth0UserMetadata
 
-### Example
+### Example {#externalproviderapikeyupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -132,21 +132,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#externalproviderapikeyupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **preupdatedExternalProviderApiKey** | [**PreupdatedExternalProviderApiKey**](PreupdatedExternalProviderApiKey)|  | [optional]
 
-### Return type
+### Return type {#externalproviderapikeyupdate-return-type}
 
 [**UpdatedExternalProviderApiKey**](UpdatedExternalProviderApiKey)
 
-### Authorization
+### Authorization {#externalproviderapikeyupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#externalproviderapikeyupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

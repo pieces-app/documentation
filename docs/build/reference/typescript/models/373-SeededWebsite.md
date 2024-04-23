@@ -19,31 +19,4 @@ Name | Type
 **mechanism** | [**MechanismEnum**](MechanismEnum)
 **person** | **string**
 
-## Example
-
-```typescript
-import { SeededWebsite } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededWebsite = {
-    "schema": null,
-    "asset": null,
-    "conversation": null,
-    "url": null,
-    "name": null,
-    "mechanism": null,
-    "person": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededWebsite
-console.log(exampleParsed)
-```
-
 

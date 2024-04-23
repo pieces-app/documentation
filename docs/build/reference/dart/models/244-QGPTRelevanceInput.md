@@ -4,11 +4,6 @@ title: QGPTRelevanceInput | Dart SDK
 
 # QGPTRelevanceInput
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -22,7 +17,5 @@ Name | Type | Description | Notes
 **application** | **String** | optional application id | [optional] 
 **model** | **String** | optional model id | [optional] 
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  | [optional] 
-
-
 
 

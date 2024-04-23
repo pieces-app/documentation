@@ -16,28 +16,4 @@ Name | Type
 **bytes** | [**TransferableBytes**](TransferableBytes)
 **metadata** | [**FragmentMetadata**](FragmentMetadata)
 
-## Example
-
-```typescript
-import { FragmentFormat } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: FragmentFormat = {
-    "schema": null,
-    "string": null,
-    "bytes": null,
-    "metadata": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as FragmentFormat
-console.log(exampleParsed)
-```
-
 

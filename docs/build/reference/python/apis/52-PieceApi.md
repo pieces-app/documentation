@@ -4,7 +4,7 @@ title: Piece API | Python SDK
 
 # Piece API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This is a cloud only Api. This will get a preview of your publically accessble Piece.
 
-### Example
+### Example {#html_share-example}
 
 
 ```python
@@ -50,31 +50,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#html_share-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **p** | **str**| this is the a query param, that a shortened version of the share. | 
 
-### Return type
+### Return type {#html_share-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#html_share-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#html_share-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/html
 
-### HTTP response details
+
+### HTTP response details {#html_share-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

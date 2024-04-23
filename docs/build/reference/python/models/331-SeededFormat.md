@@ -15,22 +15,4 @@ Name | Type | Description | Notes
 **fragment** | [**SeededFragment**](SeededFragment) |  | [optional] 
 **classification** | [**SeededClassification**](SeededClassification) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_format import SeededFormat
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededFormat from a JSON string
-seeded_format_instance = SeededFormat.from_json(json)
-# print the JSON string representation of the object
-print(SeededFormat.to_json())
-
-# convert the object into a dict
-seeded_format_dict = seeded_format_instance.to_dict()
-# create an instance of SeededFormat from a dict
-seeded_format_form_dict = seeded_format.from_dict(seeded_format_dict)
-```
-
 

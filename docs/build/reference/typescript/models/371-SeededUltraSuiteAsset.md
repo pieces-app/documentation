@@ -17,29 +17,4 @@ Name | Type
 **format** | [**SeededFormat**](SeededFormat)
 **description** | **string**
 
-## Example
-
-```typescript
-import { SeededUltraSuiteAsset } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededUltraSuiteAsset = {
-    "schema": null,
-    "name": null,
-    "ext": null,
-    "format": null,
-    "description": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededUltraSuiteAsset
-console.log(exampleParsed)
-```
-
 

@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **persons** | [**Persons**](Persons) |  | 
 **explanations** | **Dict[str, str]** | This is a Map&lt;String, String&gt; where the the key is a person id. and the value is the explanation. | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_persons_related_output import QGPTPersonsRelatedOutput
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTPersonsRelatedOutput from a JSON string
-qgpt_persons_related_output_instance = QGPTPersonsRelatedOutput.from_json(json)
-# print the JSON string representation of the object
-print(QGPTPersonsRelatedOutput.to_json())
-
-# convert the object into a dict
-qgpt_persons_related_output_dict = qgpt_persons_related_output_instance.to_dict()
-# create an instance of QGPTPersonsRelatedOutput from a dict
-qgpt_persons_related_output_form_dict = qgpt_persons_related_output.from_dict(qgpt_persons_related_output_dict)
-```
-
 

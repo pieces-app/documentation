@@ -22,22 +22,4 @@ Name | Type | Description | Notes
 **model** | [**ReferencedModel**](ReferencedModel) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.hint import Hint
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of Hint from a JSON string
-hint_instance = Hint.from_json(json)
-# print the JSON string representation of the object
-print(Hint.to_json())
-
-# convert the object into a dict
-hint_dict = hint_instance.to_dict()
-# create an instance of Hint from a dict
-hint_form_dict = hint.from_dict(hint_dict)
-```
-
 

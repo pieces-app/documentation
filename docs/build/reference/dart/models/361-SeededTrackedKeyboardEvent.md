@@ -4,11 +4,6 @@ title: SeededTrackedKeyboardEvent | Dart SDK
 
 # SeededTrackedKeyboardEvent
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **description** | **String** | This also needs structure such as key vals or enums | 
 **shortcut** | **List\<int\>** |  | [default to const []]
 **identifierDescriptionPair** | [**SeededTrackedKeyboardEventIdentifierDescriptionPairs**](SeededTrackedKeyboardEventIdentifierDescriptionPairs) |  | [optional] 
-
-
 
 

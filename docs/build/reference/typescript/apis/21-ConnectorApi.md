@@ -4,7 +4,7 @@ title: Connector API | TypeScript SDK
 
 # Connector API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 Abstracts a bootup/connection for a specific context.
 
-### Example
+### Example {#connect-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -30,33 +30,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.ConnectRequest = {
-    // SeededConnectorConnection |  (optional)
-    seededConnectorConnection: ,
+// SeededConnectorConnection |  (optional)
+seededConnectorConnection: ,
 };
 
 apiInstance.connect(body).then((data: Context) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#connect-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededConnectorConnection** | **SeededConnectorConnection**|  |
 
 
-### Return type
+### Return type {#connect-return-type}
 
 [**Context**](../models/Context)
 
-### HTTP request headers
+### HTTP request headers {#connect-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#connect-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -67,7 +68,7 @@ Name | Type | Description  | Notes
 
 Allows you to send a SeededAsset for future comparison.
 
-### Example
+### Example {#intention-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,18 +77,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.IntentionRequest = {
-    // string
-    application: application_example,
-    // SeededConnectorAsset (optional)
-    seededConnectorAsset: ,
+// string
+application: application_example,
+// SeededConnectorAsset (optional)
+seededConnectorAsset: ,
 };
 
 apiInstance.intention(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#intention-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -95,17 +97,17 @@ Name | Type | Description  | Notes
  **application** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return type {#intention-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#intention-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#intention-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -118,7 +120,7 @@ Name | Type | Description  | Notes
 
 A central endpoint to manage updates to the onboarding process.
 
-### Example
+### Example {#onboarded-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -127,18 +129,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.OnboardedRequest = {
-    // string | This is a uuid that represents an application
-    application: application_example,
-    // boolean | Whether or not that application has been onboarded. (optional)
-    body: true,
+// string | This is a uuid that represents an application
+application: application_example,
+// boolean | Whether or not that application has been onboarded. (optional)
+body: true,
 };
 
 apiInstance.onboarded(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#onboarded-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -146,17 +149,17 @@ Name | Type | Description  | Notes
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
-### Return type
+### Return type {#onboarded-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#onboarded-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#onboarded-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK, This will just return a string of \&quot;OK\&quot;. |  -  |
@@ -168,7 +171,7 @@ Name | Type | Description  | Notes
 
 This will respond to the output generated by the /suggest endpoint.
 
-### Example
+### Example {#react-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -177,18 +180,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.ReactRequest = {
-    // string
-    application: application_example,
-    // Reaction | ** This body will need to be modified. (optional)
-    reaction: ,
+// string
+application: application_example,
+// Reaction | ** This body will need to be modified. (optional)
+reaction: ,
 };
 
 apiInstance.react(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#react-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -196,17 +200,17 @@ Name | Type | Description  | Notes
  **application** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return type {#react-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#react-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#react-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | This string will either (1) be a string of the AssetUid or (2) will be a generic string of \&#39;OK\&#39; if the asset was not saved and \&#39;OK\&#39; if the result was just used to send information about the a suggested reuse. |  -  |
@@ -218,7 +222,7 @@ Name | Type | Description  | Notes
 
 Invoked whenever a code snippet is copied from an integration. For instance, if a JetBrains user copies code, this endpoint can be called to assess whether to suggest reusing a piece (if reuse is true, the endpoint provides assets that the user may consider using), saving the code snippet, or taking no action.   **Note: This endpoint could potentially accept a SeededFormat for the request body if required.
 
-### Example
+### Example {#suggest-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -227,18 +231,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.SuggestRequest = {
-    // string
-    application: application_example,
-    // SeededConnectorCreation | This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! (optional)
-    seededConnectorCreation: ,
+// string
+application: application_example,
+// SeededConnectorCreation | This is the Snippet that we will compare to all the saved assets to determine what we want to do with it! (optional)
+seededConnectorCreation: ,
 };
 
 apiInstance.suggest(body).then((data: Suggestion) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#suggest-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -246,17 +251,17 @@ Name | Type | Description  | Notes
  **application** | [**string**] |  | defaults to undefined
 
 
-### Return type
+### Return type {#suggest-return-type}
 
 [**Suggestion**](../models/Suggestion)
 
-### HTTP request headers
+### HTTP request headers {#suggest-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#suggest-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -268,7 +273,7 @@ Name | Type | Description  | Notes
 
 Abstracts the process of packaging segments on a per-context basis.
 
-### Example
+### Example {#track-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -277,18 +282,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConnectorApi(configuration)
 
 const body: Pieces.TrackRequest = {
-    // string | This is a uuid that represents an application
-    application: application_example,
-    // SeededConnectorTracking | The body is able to take in several properties  (optional)
-    seededConnectorTracking: ,
+// string | This is a uuid that represents an application
+application: application_example,
+// SeededConnectorTracking | The body is able to take in several properties  (optional)
+seededConnectorTracking: ,
 };
 
 apiInstance.track(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#track-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -296,17 +302,17 @@ Name | Type | Description  | Notes
  **application** | [**string**] | This is a uuid that represents an application | defaults to undefined
 
 
-### Return type
+### Return type {#track-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#track-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#track-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK, This will jsut return a string of \&quot;OK\&quot;. |  -  |

@@ -4,11 +4,6 @@ title: TrackedFormat | Dart SDK
 
 # TrackedFormat
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **asset** | **String** | The UUID of the asset associated | 
 **fragment** | **bool** |  | 
 **file** | **bool** |  | 
-
-
 
 

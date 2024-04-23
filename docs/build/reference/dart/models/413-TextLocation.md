@@ -4,11 +4,6 @@ title: TextLocation | Dart SDK
 
 # TextLocation
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **text** | **String** | this is the value that was found. | 
 **start** | **int** | this is the start index within the original string. | 
 **end** | **int** | this is the end index within the original string. | 
-
-
 
 

@@ -4,18 +4,11 @@ title: AssetReclassification | Dart SDK
 
 # AssetReclassification
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  | 
 **asset** | [**Asset**](Asset) |  | 
-
-
 
 

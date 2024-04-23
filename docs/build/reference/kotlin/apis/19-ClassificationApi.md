@@ -4,7 +4,7 @@ title: Classification API | Kotlin SDK
 
 # Classification API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Convert Generic Classification
 
 This endpoint converts on a best effort basis from one generic format to another, i.e. from Code to HLJS 
 
-### Example
+### Example {#convertgenericclassification-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -38,21 +38,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#convertgenericclassification-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededFormat** | [**SeededFormat**](../models/SeededFormat)| This is a seededFormat that we want to turn into a specific rendering SeededFormat.  Ensure that you pass through a fragment.string.raw  Ensure that you pass through a classification with the generic/specific/rendering all specified  | [optional]
 
-### Return type
+### Return type {#convertgenericclassification-return-type}
 
 [**SeededFormat**](../models/SeededFormat)
 
-### Authorization
+### Authorization {#convertgenericclassification-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#convertgenericclassification-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

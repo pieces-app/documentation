@@ -4,7 +4,7 @@ title: Assets API | Python SDK
 
 # Assets API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 Accepts a seeded (a structure that comes before an asset, and will be used in creation) asset and uploads it to Pieces. The response will be the newly created Asset object.
 
-### Example
+### Example {#assets_create_new_asset-example}
 
 
 ```python
@@ -67,7 +67,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_create_new_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -75,26 +75,25 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seed** | [**Seed**](../models/Seed)|  | [optional] 
 
-### Return type
+### Return type {#assets_create_new_asset-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assets_create_new_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_create_new_asset-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_create_new_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_delete_asset** {#assets_delete_asset}
 > str assets_delete_asset(asset)
@@ -103,7 +102,7 @@ No authorization required
 
 Deletes a specific asset from the system by providing its unique identifier (UID). Upon successful deletion, it returns the UID of the deleted asset.
 
-### Example
+### Example {#assets_delete_asset-example}
 
 
 ```python
@@ -135,33 +134,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_delete_asset-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#assets_delete_asset-return-type}
 
 **str**
 
-### Authorization
+### Authorization {#assets_delete_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_delete_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_delete_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_draft** {#assets_draft}
 > Seed assets_draft(transferables=transferables, seed=seed)
@@ -170,7 +168,7 @@ No authorization required
 
 Allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
 
-### Example
+### Example {#assets_draft-example}
 
 
 ```python
@@ -204,7 +202,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_draft-parameters}
 
 
 Name | Type | Description  | Notes
@@ -212,27 +210,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seed** | [**Seed**](../models/Seed)|  | [optional] 
 
-### Return type
+### Return type {#assets_draft-return-type}
 
 [**Seed**](../models/Seed)
 
-### Authorization
+### Authorization {#assets_draft-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_draft-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_draft-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **assets_get_recommended_assets** {#assets_get_recommended_assets}
 > Assets assets_get_recommended_assets(seeded_assets_recommendation=seeded_assets_recommendation)
@@ -241,7 +238,7 @@ Your GET endpoint
 
 Expects a SeededAssetsRecommendation Model in the request body, containing assets and interactions. Returns an Assets Model suitable for UI.
 
-### Example
+### Example {#assets_get_recommended_assets-example}
 
 
 ```python
@@ -275,33 +272,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_get_recommended_assets-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_assets_recommendation** | [**SeededAssetsRecommendation**](../models/SeededAssetsRecommendation)| The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. | [optional] 
 
-### Return type
+### Return type {#assets_get_recommended_assets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assets_get_recommended_assets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_get_recommended_assets-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_get_recommended_assets-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_get_related_assets** {#assets_get_related_assets}
 > Assets assets_get_related_assets(assets=assets)
@@ -310,7 +306,7 @@ No authorization required
 
 Retrieves one or more related assets when provided with one or more input assets.
 
-### Example
+### Example {#assets_get_related_assets-example}
 
 
 ```python
@@ -343,33 +339,32 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_get_related_assets-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assets** | [**Assets**](../models/Assets)| The body of the request is an object (Assets Model) with iterable internally. | [optional] 
 
-### Return type
+### Return type {#assets_get_related_assets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assets_get_related_assets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_get_related_assets-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_get_related_assets-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_identifiers_snapshot** {#assets_identifiers_snapshot}
 > FlattenedAssets assets_identifiers_snapshot(pseudo=pseudo)
@@ -378,7 +373,7 @@ No authorization required
 
 Retrieves all asset IDs associated with your account.
 
-### Example
+### Example {#assets_identifiers_snapshot-example}
 
 
 ```python
@@ -411,34 +406,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_identifiers_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#assets_identifiers_snapshot-return-type}
 
 [**FlattenedAssets**](../models/FlattenedAssets)
 
-### Authorization
+### Authorization {#assets_identifiers_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_identifiers_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_identifiers_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **assets_pseudo_snapshot** {#assets_pseudo_snapshot}
 > PseudoAssets assets_pseudo_snapshot()
@@ -447,7 +441,7 @@ No authorization required
 
 Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive.
 
-### Example
+### Example {#assets_pseudo_snapshot-example}
 
 
 ```python
@@ -479,31 +473,30 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_pseudo_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#assets_pseudo_snapshot-return-type}
 
 [**PseudoAssets**](../models/PseudoAssets)
 
-### Authorization
+### Authorization {#assets_pseudo_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_pseudo_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_pseudo_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **assets_search_assets** {#assets_search_assets}
 > SearchedAssets assets_search_assets(query=query, transferables=transferables, searchable_tags=searchable_tags, pseudo=pseudo)
@@ -512,7 +505,7 @@ No authorization required
 
 Performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
 
-### Example
+### Example {#assets_search_assets-example}
 
 
 ```python
@@ -548,7 +541,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_search_assets-parameters}
 
 
 Name | Type | Description  | Notes
@@ -558,27 +551,26 @@ Name | Type | Description  | Notes
  **searchable_tags** | **str**| This is a comma separated value of tags used for search. | [optional] 
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#assets_search_assets-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#assets_search_assets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_search_assets-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_search_assets-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **assets_search_with_filters** {#assets_search_with_filters}
 > AssetsSearchWithFiltersOutput assets_search_with_filters(transferables=transferables, pseudo=pseudo, assets_search_with_filters_input=assets_search_with_filters_input)
@@ -587,7 +579,7 @@ No authorization required
 
 Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
 
-### Example
+### Example {#assets_search_with_filters-example}
 
 
 ```python
@@ -623,7 +615,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_search_with_filters-parameters}
 
 
 Name | Type | Description  | Notes
@@ -632,27 +624,26 @@ Name | Type | Description  | Notes
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
  **assets_search_with_filters_input** | [**AssetsSearchWithFiltersInput**](../models/AssetsSearchWithFiltersInput)|  | [optional] 
 
-### Return type
+### Return type {#assets_search_with_filters-return-type}
 
 [**AssetsSearchWithFiltersOutput**](../models/AssetsSearchWithFiltersOutput)
 
-### Authorization
+### Authorization {#assets_search_with_filters-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_search_with_filters-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_search_with_filters-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **assets_snapshot** {#assets_snapshot}
 > Assets assets_snapshot(transferables=transferables, suggested=suggested, pseudo=pseudo)
@@ -661,7 +652,7 @@ No authorization required
 
 Get all of the users Assets.
 
-### Example
+### Example {#assets_snapshot-example}
 
 
 ```python
@@ -696,7 +687,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -705,26 +696,25 @@ Name | Type | Description  | Notes
  **suggested** | **bool**| This will let us know if a developer, wants a snapshot related to suggested content or normal content | [optional] 
  **pseudo** | **bool**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional] 
 
-### Return type
+### Return type {#assets_snapshot-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assets_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_specific_asset_formats_snapshot** {#assets_specific_asset_formats_snapshot}
 > Formats assets_specific_asset_formats_snapshot(asset, transferables=transferables)
@@ -733,7 +723,7 @@ No authorization required
 
 Retrieves the available formats for a specific asset identified by its ID
 
-### Example
+### Example {#assets_specific_asset_formats_snapshot-example}
 
 
 ```python
@@ -767,7 +757,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_specific_asset_formats_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -775,26 +765,25 @@ Name | Type | Description  | Notes
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#assets_specific_asset_formats_snapshot-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#assets_specific_asset_formats_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_specific_asset_formats_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_specific_asset_formats_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **assets_specific_asset_snapshot** {#assets_specific_asset_snapshot}
 > Asset assets_specific_asset_snapshot(asset, transferables=transferables)
@@ -803,7 +792,7 @@ No authorization required
 
 Allows clients to retrieve details of a specific asset by providing its UUID in the path.
 
-### Example
+### Example {#assets_specific_asset_snapshot-example}
 
 
 ```python
@@ -837,7 +826,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_specific_asset_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -845,27 +834,26 @@ Name | Type | Description  | Notes
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#assets_specific_asset_snapshot-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assets_specific_asset_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_specific_asset_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#assets_specific_asset_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | A specific asset per the provided asset id. |  -  |
 **410** | Asset no longer exists and is Gone. |  -  |
-
-
 
 ## **assets_stream_identifiers** {#assets_stream_identifiers}
 > StreamedIdentifiers assets_stream_identifiers()
@@ -874,7 +862,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your asset's identifiers (UUIDs).
 
-### Example
+### Example {#assets_stream_identifiers-example}
 
 
 ```python
@@ -906,30 +894,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#assets_stream_identifiers-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#assets_stream_identifiers-return-type}
 
 [**StreamedIdentifiers**](../models/StreamedIdentifiers)
 
-### Authorization
+### Authorization {#assets_stream_identifiers-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assets_stream_identifiers-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#assets_stream_identifiers-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **get_assets_stream_transferables** {#get_assets_stream_transferables}
 > Assets get_assets_stream_transferables()
@@ -938,7 +925,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
-### Example
+### Example {#get_assets_stream_transferables-example}
 
 
 ```python
@@ -970,30 +957,29 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#get_assets_stream_transferables-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#get_assets_stream_transferables-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#get_assets_stream_transferables-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#get_assets_stream_transferables-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#get_assets_stream_transferables-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 
 ## **stream_assets** {#stream_assets}
 > Assets stream_assets()
@@ -1002,7 +988,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your assets.
 
-### Example
+### Example {#stream_assets-example}
 
 
 ```python
@@ -1034,28 +1020,27 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#stream_assets-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#stream_assets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#stream_assets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#stream_assets-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-### HTTP response details
+
+### HTTP response details {#stream_assets-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
-
-
 

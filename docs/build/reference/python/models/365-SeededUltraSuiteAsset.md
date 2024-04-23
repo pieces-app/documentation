@@ -16,22 +16,4 @@ Name | Type | Description | Notes
 **format** | [**SeededFormat**](SeededFormat) |  | 
 **description** | **str** |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_ultra_suite_asset import SeededUltraSuiteAsset
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededUltraSuiteAsset from a JSON string
-seeded_ultra_suite_asset_instance = SeededUltraSuiteAsset.from_json(json)
-# print the JSON string representation of the object
-print(SeededUltraSuiteAsset.to_json())
-
-# convert the object into a dict
-seeded_ultra_suite_asset_dict = seeded_ultra_suite_asset_instance.to_dict()
-# create an instance of SeededUltraSuiteAsset from a dict
-seeded_ultra_suite_asset_form_dict = seeded_ultra_suite_asset.from_dict(seeded_ultra_suite_asset_dict)
-```
-
 

@@ -3,6 +3,7 @@ title: NodeTypeEnum | Kotlin SDK
 ---
 
 
+
 # NodeTypeEnum
 
 ## Enum
@@ -15,6 +16,7 @@ title: NodeTypeEnum | Kotlin SDK
     * `FORMAT` (value: `"FORMAT"`)
 
     * `ASSET` (value: `"ASSET"`)
+
 
 
 

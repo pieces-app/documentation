@@ -4,7 +4,7 @@ title: AnchorPoint API | TypeScript SDK
 
 # AnchorPoint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchorpointscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointScoresIncrementRequest = {
-    // string | This is the specific uuid of an anchor_point.
-    anchorPoint: anchorPoint_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is the specific uuid of an anchor_point.
+anchorPoint: anchorPoint_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.anchorPointScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -46,17 +47,17 @@ Name | Type | Description  | Notes
  **anchorPoint** | [**string**] | This is the specific uuid of an anchor_point. | defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -67,7 +68,7 @@ void (empty response body)
 
 This will get a snapshot of a single anchorPoint.
 
-### Example
+### Example {#anchorpointspecificanchorpointsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,18 +77,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointSpecificAnchorPointSnapshotRequest = {
-    // string | This is the specific uuid of an anchor_point.
-    anchorPoint: anchorPoint_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the specific uuid of an anchor_point.
+anchorPoint: anchorPoint_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.anchorPointSpecificAnchorPointSnapshot(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointspecificanchorpointsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -95,17 +97,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointspecificanchorpointsnapshot-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointspecificanchorpointsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointspecificanchorpointsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -116,7 +118,7 @@ Name | Type | Description  | Notes
 
 This will update a specific anchorPoint.
 
-### Example
+### Example {#anchorpointupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -125,18 +127,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnchorPointApi(configuration)
 
 const body: Pieces.AnchorPointUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // AnchorPoint (optional)
-    anchorPoint: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// AnchorPoint (optional)
+anchorPoint: ,
 };
 
 apiInstance.anchorPointUpdate(body).then((data: AnchorPoint) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#anchorpointupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -144,17 +147,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#anchorpointupdate-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### HTTP request headers
+### HTTP request headers {#anchorpointupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#anchorpointupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

@@ -4,7 +4,7 @@ title: Hints API | Dart SDK
 
 # Hints API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a hint.
 
-### Example
+### Example {#hintscreatenewhint-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,26 +35,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintscreatenewhint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededHint** | [**SeededHint**](../models/SeededHint)|  | [optional] 
+ **seededHint** | [**SeededHint**](../models/SeededHint) |  | [optional] 
 
-### Return type
+### Return type {#hintscreatenewhint-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintscreatenewhint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintscreatenewhint-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **hintsDeleteSpecificHint** {#hintsdeletespecifichint}
 > hintsDeleteSpecificHint(hint)
@@ -63,7 +61,7 @@ No authorization required
 
 This will delete a specific hint.
 
-### Example
+### Example {#hintsdeletespecifichint-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -77,26 +75,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintsdeletespecifichint-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | **String**| This is a specific hint uuid | 
+ **hint** | **String** | This is a specific hint uuid | 
 
-### Return type
+### Return type {#hintsdeletespecifichint-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#hintsdeletespecifichint-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintsdeletespecifichint-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **hintsSnapshot** {#hintssnapshot}
 > Hints hintsSnapshot()
@@ -105,7 +101,7 @@ No authorization required
 
 This will get a snapshot of all of the hints.
 
-### Example
+### Example {#hintssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,21 +115,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#hintssnapshot-return-type}
 
 [**Hints**](../models/Hints)
 
-### Authorization
+### Authorization {#hintssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 

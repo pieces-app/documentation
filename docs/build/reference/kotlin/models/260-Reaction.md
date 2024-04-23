@@ -3,6 +3,7 @@ title: Reaction | Kotlin SDK
 ---
 
 
+
 # Reaction
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **seed** | [**SeededConnectorCreation**](SeededConnectorCreation) |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **reuse** | [**ReuseReaction**](ReuseReaction) |  |  [optional]
+
 
 
 

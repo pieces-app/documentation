@@ -4,7 +4,7 @@ title: OCRAnalyses API | Kotlin SDK
 
 # OCRAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Your GET endpoint
 
 This will get a snapshot of all of your ocr analyses, an ocr analysis is attached to an image analysis.
 
-### Example
+### Example {#ocranalysessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -38,21 +38,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#ocranalysessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#ocranalysessnapshot-return-type}
 
 [**OCRAnalyses**](../models/OCRAnalyses)
 
-### Authorization
+### Authorization {#ocranalysessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#ocranalysessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

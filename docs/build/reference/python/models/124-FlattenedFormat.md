@@ -30,22 +30,4 @@ Name | Type | Description | Notes
 **relationship** | [**Relationship**](Relationship) |  | [optional] 
 **activities** | [**FlattenedActivities**](FlattenedActivities) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.flattened_format import FlattenedFormat
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedFormat from a JSON string
-flattened_format_instance = FlattenedFormat.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedFormat.to_json())
-
-# convert the object into a dict
-flattened_format_dict = flattened_format_instance.to_dict()
-# create an instance of FlattenedFormat from a dict
-flattened_format_form_dict = flattened_format.from_dict(flattened_format_dict)
-```
-
 

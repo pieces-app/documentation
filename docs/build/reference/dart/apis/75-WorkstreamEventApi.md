@@ -4,7 +4,7 @@ title: WorkstreamEvent API | Dart SDK
 
 # WorkstreamEvent API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a workstream_event with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -37,27 +37,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **String**| This is a identifier that is used to identify a specific workstream_event. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **workstreamEvent** | **String** | This is a identifier that is used to identify a specific workstream_event. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#workstreameventassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstreameventassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **workstreamEventDisassociateWorkstreamSummary** {#workstreameventdisassociateworkstreamsummary}
 > workstreamEventDisassociateWorkstreamSummary(workstreamEvent, workstreamSummary)
@@ -66,7 +64,7 @@ No authorization required
 
 This will enable us to disassociate a workstream_event from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#workstreameventdisassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -81,27 +79,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventdisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **String**| This is a identifier that is used to identify a specific workstream_event. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **workstreamEvent** | **String** | This is a identifier that is used to identify a specific workstream_event. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#workstreameventdisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstreameventdisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventdisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **workstreamEventScoresIncrement** {#workstreameventscoresincrement}
 > workstreamEventScoresIncrement(workstreamEvent, seededScoreIncrement)
@@ -110,7 +106,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstreameventscoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -125,27 +121,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **String**| This is a identifier that is used to identify a specific workstream_event. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **workstreamEvent** | **String** | This is a identifier that is used to identify a specific workstream_event. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#workstreameventscoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstreameventscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **workstreamEventUpdate** {#workstreameventupdate}
 > WorkstreamEvent workstreamEventUpdate(transferables, workstreamEvent)
@@ -154,7 +148,7 @@ No authorization required
 
 This will update a specific workstream_event.
 
-### Example
+### Example {#workstreameventupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -170,27 +164,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **workstreamEvent** | [**WorkstreamEvent**](../models/WorkstreamEvent)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **workstreamEvent** | [**WorkstreamEvent**](../models/WorkstreamEvent) |  | [optional] 
 
-### Return type
+### Return type {#workstreameventupdate-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstreameventupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **workstreamEventsSpecificWorkstreamEventSnapshot** {#workstreameventsspecificworkstreameventsnapshot}
 > WorkstreamEvent workstreamEventsSpecificWorkstreamEventSnapshot(workstreamEvent, transferables)
@@ -199,7 +191,7 @@ No authorization required
 
 This will get a snapshot of a single workstream_event.
 
-### Example
+### Example {#workstreameventsspecificworkstreameventsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -215,25 +207,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreameventsspecificworkstreameventsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **workstreamEvent** | **String**| This is a identifier that is used to identify a specific workstream_event. | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **workstreamEvent** | **String** | This is a identifier that is used to identify a specific workstream_event. | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#workstreameventsspecificworkstreameventsnapshot-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstreameventsspecificworkstreameventsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreameventsspecificworkstreameventsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 

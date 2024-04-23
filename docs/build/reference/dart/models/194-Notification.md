@@ -4,11 +4,6 @@ title: Notification | Dart SDK
 
 # Notification
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **title** | **String** |  | [optional] 
 **message** | **String** |  | [optional] 
 **payload** | **String** |  | [optional] 
-
-
 
 

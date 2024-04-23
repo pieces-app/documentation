@@ -4,7 +4,7 @@ title: Sensitive API | Kotlin SDK
 
 # Sensitive API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sensitivescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,22 +40,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#sensitivescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#sensitivescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -67,7 +67,7 @@ No authorization required
 
 This will get a specific sensitive via the sensitive uuid.
 
-### Example
+### Example {#sensitivesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **kotlin.String**|  |
 
-### Return type
+### Return type {#sensitivesnapshot-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#sensitivesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -113,7 +113,7 @@ No authorization required
 
 This will update a specific sensitive
 
-### Example
+### Example {#updatesensitive-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -133,21 +133,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#updatesensitive-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | [**Sensitive**](../models/Sensitive)|  | [optional]
 
-### Return type
+### Return type {#updatesensitive-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#updatesensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#updatesensitive-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

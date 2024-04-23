@@ -4,7 +4,7 @@ title: Application API | Kotlin SDK
 
 # Application API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This is an endpoint for updating an application.
 
-### Example
+### Example {#applicationupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -38,21 +38,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#applicationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **application** | [**Application**](../models/Application)|  | [optional]
 
-### Return type
+### Return type {#applicationupdate-return-type}
 
 [**Application**](../models/Application)
 
-### Authorization
+### Authorization {#applicationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#applicationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

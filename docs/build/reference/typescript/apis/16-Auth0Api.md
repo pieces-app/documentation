@@ -4,12 +4,12 @@ title: Auth0 API | TypeScript SDK
 
 # Auth0 API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**auth0Logout**](Auth0Api#auth0logout) | **GET** /v2/logout | https://auth.pieces.services/v2/logout [GET]
-[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | https://auth.pieces.services/authorize [GET]
+[**authorizeAuth0**](Auth0Api#authorizeauth0) | **GET** /authorize | `https://auth.pieces.services/authorize` [GET]
 [**exchangeForAuth0Token**](Auth0Api#exchangeforauth0token) | **POST** /oauth/token | https://auth.pieces.services/oauth/token [POST]
 [**getAuth0UserInfo**](Auth0Api#getauth0userinfo) | **GET** /userinfo | https://auth.pieces.services/userinfo [GET]
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 https://auth0.com/docs/api/authentication#logout
 
-### Example
+### Example {#auth0logout-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -28,18 +28,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.Auth0LogoutRequest = {
-    // string | The client ID of the Auth0 Instance (optional)
-    clientId: clientId_example,
-    // string | The URL that the logout endpoint will return to (optional)
-    returnTo: returnTo_example,
+// string | The client ID of the Auth0 Instance (optional)
+clientId: clientId_example,
+// string | The URL that the logout endpoint will return to (optional)
+returnTo: returnTo_example,
 };
 
 apiInstance.auth0Logout(body).then((data: string) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#auth0logout-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -47,17 +48,17 @@ Name | Type | Description  | Notes
  **returnTo** | [**string**] | The URL that the logout endpoint will return to | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#auth0logout-return-type}
 
 **string**
 
-### HTTP request headers
+### HTTP request headers {#auth0logout-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/html
 
 
-### HTTP response details
+### HTTP response details {#auth0logout-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -67,7 +68,7 @@ Name | Type | Description  | Notes
 
 An endpoint that is used locally authenticate via a PKCE Flow.  Example https://auth.pieces.services /authorize?audience=https%3A%2F%2Fpieces.us.auth0.com%2Fapi%2Fv2%2F&scope=email+profile+offline_access+openid&response_type=code&client_id=9sW4Pa1LEjX67l6VO14u0207NLYeXnu1&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fpkce%2Fresponse%2Fcode&code_challenge_method=S256&code_challenge=yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk&response_mode=form_post&state=4bd0b9a389b4b229602346c33913b4c3c199628a90011ab3a901302ab62b3832
 
-### Example
+### Example {#authorizeauth0-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,36 +77,37 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.AuthorizeAuth0Request = {
-    // string |  The unique identifier of the target API you want to access.
-    audience: https://pieces.us.auth0.com/api/v2/,
-    // Array\<'openid' | 'email' | 'profile' | 'offline_access'\> | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
-    scope: ,
-    // 'code' | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
-    responseType: code,
-    // string | Your application\'s Client ID.
-    clientId: 9sW4Pa1LEjX67l6VO14u0207NLYeXnu1,
-    // 'S256' | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged.
-    codeChallengeMethod: S256,
-    // string | Generated challenge from the code_verifier.
-    codeChallenge: yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk,
-    // 'form_post' | 'fragment' | 'query' | 'web_message'
-    responseMode: responseMode_example,
-    // string | An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. (optional)
-    state: state_example,
-    // string | The URL to which Auth0 will redirect the browser after authorization has been granted by the user. (optional)
-    redirectUri: redirectUri_example,
-    // string | The name of the connection configured to your application. (optional)
-    connection: connection_example,
-    // string | To initiate a silent authentication request, use prompt=none (see Remarks for more info). (optional)
-    prompt: prompt_example,
+// string |  The unique identifier of the target API you want to access.
+audience: `https://pieces.us.auth0.com`/api/v2/,
+// Array\<'openid' | 'email' | 'profile' | 'offline_access'\> | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
+scope: ,
+// 'code' | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
+responseType: code,
+// string | Your application\'s Client ID.
+clientId: 9sW4Pa1LEjX67l6VO14u0207NLYeXnu1,
+// 'S256' | Method used to generate the challenge. The PKCE spec defines two methods, S256 and plain, however, Auth0 supports only S256 since the latter is discouraged.
+codeChallengeMethod: S256,
+// string | Generated challenge from the code_verifier.
+codeChallenge: yxRssZxdfBpMigRmDxAety1QU72Bd5WnDUbtlsCZOnk,
+// 'form_post' | 'fragment' | 'query' | 'web_message'
+responseMode: responseMode_example,
+// string | An opaque value the clients adds to the initial request that Auth0 includes when redirecting the back to the client. This value must be used by the client to prevent CSRF attacks. (optional)
+state: state_example,
+// string | The URL to which Auth0 will redirect the browser after authorization has been granted by the user. (optional)
+redirectUri: redirectUri_example,
+// string | The name of the connection configured to your application. (optional)
+connection: connection_example,
+// string | To initiate a silent authentication request, use prompt=none (see Remarks for more info). (optional)
+prompt: prompt_example,
 };
 
 apiInstance.authorizeAuth0(body).then((data: ResultedPKCE) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#authorizeauth0-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -122,17 +124,17 @@ Name | Type | Description  | Notes
  **prompt** | [**string**] | To initiate a silent authentication request, use prompt&#x3D;none (see Remarks for more info). | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#authorizeauth0-return-type}
 
 [**ResultedPKCE**](../models/ResultedPKCE)
 
-### HTTP request headers
+### HTTP request headers {#authorizeauth0-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/x-www-form-urlencoded
 
 
-### HTTP response details
+### HTTP response details {#authorizeauth0-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -142,7 +144,7 @@ Name | Type | Description  | Notes
 
 An endpoint to generate a OAuth Token for an authentication flow. 
 
-### Example
+### Example {#exchangeforauth0token-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -151,28 +153,29 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.Auth0Api(configuration)
 
 const body: Pieces.ExchangeForAuth0TokenRequest = {
-    // string | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
-    grantType: grantType_example,
-    // string | Your application\\\'s Client ID.
-    clientId: clientId_example,
-    // string | The Authorization Code received from the initial /authorize call.
-    code: code_example,
-    // string | This is required only if it was set at the GET /authorize endpoint. The values must match.
-    redirectUri: redirectUri_example,
-    // string | Cryptographically random key that was used to generate the code_challenge passed to /authorize.
-    codeVerifier: codeVerifier_example,
-    // EmbeddedModelSchema (optional)
-    schema: ,
-    // string | The audience domain: i.e. https://pieces.us.auth0.com (optional)
-    audience: audience_example,
+// string | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
+grantType: grantType_example,
+// string | Your application\\\'s Client ID.
+clientId: clientId_example,
+// string | The Authorization Code received from the initial /authorize call.
+code: code_example,
+// string | This is required only if it was set at the GET /authorize endpoint. The values must match.
+redirectUri: redirectUri_example,
+// string | Cryptographically random key that was used to generate the code_challenge passed to /authorize.
+codeVerifier: codeVerifier_example,
+// EmbeddedModelSchema (optional)
+schema: ,
+// string | The audience domain: i.e. `https://pieces.us.auth0.com` (optional)
+audience: audience_example,
 };
 
 apiInstance.exchangeForAuth0Token(body).then((data: OAuthToken) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#exchangeforauth0token-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -182,20 +185,20 @@ Name | Type | Description  | Notes
  **redirectUri** | [**string**] | This is required only if it was set at the GET /authorize endpoint. The values must match. | defaults to undefined
  **codeVerifier** | [**string**] | Cryptographically random key that was used to generate the code_challenge passed to /authorize. | defaults to undefined
  **schema** | **EmbeddedModelSchema** |  | (optional) defaults to undefined
- **audience** | [**string**] | The audience domain: i.e. https://pieces.us.auth0.com | (optional) defaults to undefined
+ **audience** | [**string**] | The audience domain: i.e. `https://pieces.us.auth0.com` | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#exchangeforauth0token-return-type}
 
 [**OAuthToken**](../models/OAuthToken)
 
-### HTTP request headers
+### HTTP request headers {#exchangeforauth0token-http-request-headers}
 
 - **Content-Type**: application/x-www-form-urlencoded
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#exchangeforauth0token-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -205,7 +208,7 @@ Name | Type | Description  | Notes
 
 Get the users info from the Auth0 API
 
-### Example
+### Example {#getauth0userinfo-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -214,25 +217,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.Auth0Api(configuration)
 
 apiInstance.getAuth0UserInfo().then((data: Auth0User) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#getauth0userinfo-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#getauth0userinfo-return-type}
 
 [**Auth0User**](../models/Auth0User)
 
-### HTTP request headers
+### HTTP request headers {#getauth0userinfo-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#getauth0userinfo-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

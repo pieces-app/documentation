@@ -12,24 +12,4 @@ This will let us know how an asset was uploaded.  MANUAL: this is an event such 
 Name | Type
 ------------ | -------------
 
-## Example
-
-```typescript
-import { MechanismEnum } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: MechanismEnum = {
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as MechanismEnum
-console.log(exampleParsed)
-```
-
 

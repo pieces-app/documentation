@@ -4,7 +4,7 @@ title: Tags API | Python SDK
 
 # Tags API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This will create a new tag.
 
-### Example
+### Example {#tags_create_new_tag-example}
 
 
 ```python
@@ -56,7 +56,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tags_create_new_tag-parameters}
 
 
 Name | Type | Description  | Notes
@@ -64,27 +64,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_tag** | [**SeededTag**](../models/SeededTag)|  | [optional] 
 
-### Return type
+### Return type {#tags_create_new_tag-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tags_create_new_tag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tags_create_new_tag-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tags_create_new_tag-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tags_delete_specific_tag** {#tags_delete_specific_tag}
 > tags_delete_specific_tag(tag)
@@ -93,7 +92,7 @@ No authorization required
 
 This will delete a specific tag.
 
-### Example
+### Example {#tags_delete_specific_tag-example}
 
 
 ```python
@@ -123,34 +122,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tags_delete_specific_tag-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **str**| tag id | 
 
-### Return type
+### Return type {#tags_delete_specific_tag-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tags_delete_specific_tag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tags_delete_specific_tag-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tags_delete_specific_tag-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tags_exists** {#tags_exists}
 > ExistingMetadata tags_exists(existent_metadata=existent_metadata)
@@ -159,7 +157,7 @@ No authorization required
 
 This will check all of the tags in our database to see if this specific provided tag actually exists, if not we will just return a null tag in the output.
 
-### Example
+### Example {#tags_exists-example}
 
 
 ```python
@@ -193,34 +191,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tags_exists-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **existent_metadata** | [**ExistentMetadata**](../models/ExistentMetadata)|  | [optional] 
 
-### Return type
+### Return type {#tags_exists-return-type}
 
 [**ExistingMetadata**](../models/ExistingMetadata)
 
-### Authorization
+### Authorization {#tags_exists-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tags_exists-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tags_exists-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tags_snapshot** {#tags_snapshot}
 > Tags tags_snapshot(transferables=transferables)
@@ -229,7 +226,7 @@ No authorization required
 
 This will get a snapshot of all of your tags.
 
-### Example
+### Example {#tags_snapshot-example}
 
 
 ```python
@@ -262,32 +259,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tags_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#tags_snapshot-return-type}
 
 [**Tags**](../models/Tags)
 
-### Authorization
+### Authorization {#tags_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tags_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tags_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

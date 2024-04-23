@@ -4,11 +4,6 @@ title: SeededAssetMetadata | Dart SDK
 
 # SeededAssetMetadata
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -22,7 +17,5 @@ Name | Type | Description | Notes
 **annotations** | [**List\<SeededAnnotation\>**](SeededAnnotation) |  | [optional] [default to const []]
 **hints** | [**List\<SeededHint\>**](SeededHint) |  | [optional] [default to const []]
 **anchors** | [**List\<SeededAnchor\>**](SeededAnchor) |  | [optional] [default to const []]
-
-
 
 

@@ -4,7 +4,7 @@ title: Share API | TypeScript SDK
 
 # Share API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sharescoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,18 +27,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ShareApi(configuration)
 
 const body: Pieces.ShareScoresIncrementRequest = {
-    // string | Share id
-    share: share_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | Share id
+share: share_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.shareScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharescoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -46,17 +47,17 @@ Name | Type | Description  | Notes
  **share** | [**string**] | Share id | defaults to undefined
 
 
-### Return type
+### Return type {#sharescoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#sharescoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#sharescoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -67,7 +68,7 @@ void (empty response body)
 
 Get the snapshot of a specific share.
 
-### Example
+### Example {#sharesnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -76,18 +77,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ShareApi(configuration)
 
 const body: Pieces.ShareSnapshotRequest = {
-    // string | Share id
-    share: share_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | Share id
+share: share_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.shareSnapshot(body).then((data: Share) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#sharesnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -95,17 +97,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#sharesnapshot-return-type}
 
 [**Share**](../models/Share)
 
-### HTTP request headers
+### HTTP request headers {#sharesnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#sharesnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -115,7 +117,7 @@ Name | Type | Description  | Notes
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
 
-### Example
+### Example {#shareupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -124,18 +126,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ShareApi(configuration)
 
 const body: Pieces.ShareUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Share | This is the Share that needs to be updated. (optional)
-    share: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Share | This is the Share that needs to be updated. (optional)
+share: ,
 };
 
 apiInstance.shareUpdate(body).then((data: Share) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#shareupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -143,17 +146,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#shareupdate-return-type}
 
 [**Share**](../models/Share)
 
-### HTTP request headers
+### HTTP request headers {#shareupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#shareupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

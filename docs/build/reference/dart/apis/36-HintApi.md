@@ -4,7 +4,7 @@ title: Hint API | Dart SDK
 
 # Hint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#hintscoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,27 +35,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | **String**| This is a specific hint uuid | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **hint** | **String** | This is a specific hint uuid | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#hintscoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#hintscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **hintSpecificHintSnapshot** {#hintspecifichintsnapshot}
 > Hint hintSpecificHintSnapshot(hint)
@@ -64,7 +62,7 @@ No authorization required
 
 This will get a snapshot of a specific hint.
 
-### Example
+### Example {#hintspecifichintsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -79,26 +77,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintspecifichintsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | **String**| This is a specific hint uuid | 
+ **hint** | **String** | This is a specific hint uuid | 
 
-### Return type
+### Return type {#hintspecifichintsnapshot-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintspecifichintsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintspecifichintsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **hintUpdate** {#hintupdate}
 > Hint hintUpdate(hint)
@@ -107,7 +103,7 @@ No authorization required
 
 This will update a specific hint.
 
-### Example
+### Example {#hintupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -122,24 +118,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#hintupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **hint** | [**Hint**](../models/Hint)|  | [optional] 
+ **hint** | [**Hint**](../models/Hint) |  | [optional] 
 
-### Return type
+### Return type {#hintupdate-return-type}
 
 [**Hint**](../models/Hint)
 
-### Authorization
+### Authorization {#hintupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#hintupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

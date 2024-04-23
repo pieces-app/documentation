@@ -16,22 +16,4 @@ Name | Type | Description | Notes
 **contextualized_code_dialog** | [**QGPTConversationPipelineForContextualizedCodeDialog**](QGPTConversationPipelineForContextualizedCodeDialog) |  | [optional] 
 **contextualized_code_workstream_dialog** | [**QGPTConversationPipelineForContextualizedCodeWorkstreamDialog**](QGPTConversationPipelineForContextualizedCodeWorkstreamDialog) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_conversation_pipeline import QGPTConversationPipeline
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTConversationPipeline from a JSON string
-qgpt_conversation_pipeline_instance = QGPTConversationPipeline.from_json(json)
-# print the JSON string representation of the object
-print(QGPTConversationPipeline.to_json())
-
-# convert the object into a dict
-qgpt_conversation_pipeline_dict = qgpt_conversation_pipeline_instance.to_dict()
-# create an instance of QGPTConversationPipeline from a dict
-qgpt_conversation_pipeline_form_dict = qgpt_conversation_pipeline.from_dict(qgpt_conversation_pipeline_dict)
-```
-
 

@@ -15,27 +15,4 @@ Name | Type
 **seed** | [**SeededSensitive**](SeededSensitive)
 **text** | **string**
 
-## Example
-
-```typescript
-import { DiscoveredSensitive } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: DiscoveredSensitive = {
-    "schema": null,
-    "seed": null,
-    "text": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as DiscoveredSensitive
-console.log(exampleParsed)
-```
-
 

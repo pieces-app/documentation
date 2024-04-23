@@ -19,22 +19,4 @@ Name | Type | Description | Notes
 **description** | **str** |  | 
 **metadata** | [**SensitiveMetadata**](SensitiveMetadata) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_asset_sensitive import SeededAssetSensitive
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededAssetSensitive from a JSON string
-seeded_asset_sensitive_instance = SeededAssetSensitive.from_json(json)
-# print the JSON string representation of the object
-print(SeededAssetSensitive.to_json())
-
-# convert the object into a dict
-seeded_asset_sensitive_dict = seeded_asset_sensitive_instance.to_dict()
-# create an instance of SeededAssetSensitive from a dict
-seeded_asset_sensitive_form_dict = seeded_asset_sensitive.from_dict(seeded_asset_sensitive_dict)
-```
-
 

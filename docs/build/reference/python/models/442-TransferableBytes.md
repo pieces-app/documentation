@@ -16,22 +16,4 @@ Name | Type | Description | Notes
 **base64_url** | **List[int]** | NOT IMPLEMENTED | [optional] 
 **data_url** | **List[int]** | NOT IMPLEMENTED | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.transferable_bytes import TransferableBytes
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TransferableBytes from a JSON string
-transferable_bytes_instance = TransferableBytes.from_json(json)
-# print the JSON string representation of the object
-print(TransferableBytes.to_json())
-
-# convert the object into a dict
-transferable_bytes_dict = transferable_bytes_instance.to_dict()
-# create an instance of TransferableBytes from a dict
-transferable_bytes_form_dict = transferable_bytes.from_dict(transferable_bytes_dict)
-```
-
 

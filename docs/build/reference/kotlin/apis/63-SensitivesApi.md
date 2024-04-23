@@ -4,7 +4,7 @@ title: Sensitives API | Kotlin SDK
 
 # Sensitives API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new sensitive model.
 
-### Example
+### Example {#sensitivescreatenewsensitive-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,21 +40,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivescreatenewsensitive-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededSensitive** | [**SeededSensitive**](../models/SeededSensitive)|  | [optional]
 
-### Return type
+### Return type {#sensitivescreatenewsensitive-return-type}
 
 [**Sensitive**](../models/Sensitive)
 
-### Authorization
+### Authorization {#sensitivescreatenewsensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivescreatenewsensitive-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -66,7 +66,7 @@ No authorization required
 
 This will delete a sensitive based on the sensitive uuid.
 
-### Example
+### Example {#sensitivesdeletesensitive-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -85,21 +85,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivesdeletesensitive-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sensitive** | **kotlin.String**| This is a uuid that represents a sensitive. |
 
-### Return type
+### Return type {#sensitivesdeletesensitive-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#sensitivesdeletesensitive-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivesdeletesensitive-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -111,7 +111,7 @@ No authorization required
 
 This will get a snapshot of all of the sensitives.
 
-### Example
+### Example {#sensitivessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -130,18 +130,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sensitivessnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#sensitivessnapshot-return-type}
 
 [**Sensitives**](../models/Sensitives)
 
-### Authorization
+### Authorization {#sensitivessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sensitivessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

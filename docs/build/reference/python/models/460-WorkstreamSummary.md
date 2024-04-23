@@ -27,22 +27,4 @@ Name | Type | Description | Notes
 **persons** | [**FlattenedPersons**](FlattenedPersons) |  | [optional] 
 **applications** | [**Applications**](Applications) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.workstream_summary import WorkstreamSummary
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkstreamSummary from a JSON string
-workstream_summary_instance = WorkstreamSummary.from_json(json)
-# print the JSON string representation of the object
-print(WorkstreamSummary.to_json())
-
-# convert the object into a dict
-workstream_summary_dict = workstream_summary_instance.to_dict()
-# create an instance of WorkstreamSummary from a dict
-workstream_summary_form_dict = workstream_summary.from_dict(workstream_summary_dict)
-```
-
 

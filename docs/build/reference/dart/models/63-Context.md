@@ -4,11 +4,6 @@ title: Context | Dart SDK
 
 # Context
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **application** | [**Application**](Application) |  | 
 **health** | [**Health**](Health) |  | 
 **user** | [**UserProfile**](UserProfile) |  | [optional] 
-
-
 
 

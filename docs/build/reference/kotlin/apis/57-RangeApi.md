@@ -4,7 +4,7 @@ title: Range API | Kotlin SDK
 
 # Range API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangeassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -44,22 +44,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#rangeassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -71,7 +71,7 @@ No authorization required
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangeassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -91,22 +91,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#rangeassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -118,7 +118,7 @@ No authorization required
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangedisassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -138,22 +138,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#rangedisassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -165,7 +165,7 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -185,22 +185,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#rangedisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -212,7 +212,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#rangescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -232,22 +232,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#rangescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#rangescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -259,7 +259,7 @@ No authorization required
 
 This will update a specific range.
 
-### Example
+### Example {#rangeupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -279,21 +279,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | [**Range**](../models/Range)|  | [optional]
 
-### Return type
+### Return type {#rangeupdate-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangeupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -305,7 +305,7 @@ No authorization required
 
 This will get a snapshot of a single range.
 
-### Example
+### Example {#rangesspecificrangesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -325,21 +325,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangesspecificrangesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#rangesspecificrangesnapshot-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangesspecificrangesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangesspecificrangesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

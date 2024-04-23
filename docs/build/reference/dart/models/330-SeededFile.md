@@ -4,11 +4,6 @@ title: SeededFile | Dart SDK
 
 # SeededFile
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] 
 **string** | [**TransferableString**](TransferableString) |  | [optional] 
 **metadata** | [**FileMetadata**](FileMetadata) |  | [optional] 
-
-
 
 

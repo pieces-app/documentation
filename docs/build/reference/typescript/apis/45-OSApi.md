@@ -4,7 +4,7 @@ title: OS API | TypeScript SDK
 
 # OS API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 This will link an external provider to your current auth0 account.  Will throw errors if your user is not signed in.
 
-### Example
+### Example {#linkprovider-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -34,33 +34,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.LinkProviderRequest = {
-    // SeededExternalProvider (optional)
-    seededExternalProvider: ,
+// SeededExternalProvider (optional)
+seededExternalProvider: ,
 };
 
 apiInstance.linkProvider(body).then((data: ReturnedUserProfile) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#linkprovider-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededExternalProvider** | **SeededExternalProvider**|  |
 
 
-### Return type
+### Return type {#linkprovider-return-type}
 
 [**ReturnedUserProfile**](../models/ReturnedUserProfile)
 
-### HTTP request headers
+### HTTP request headers {#linkprovider-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#linkprovider-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -72,7 +73,7 @@ Name | Type | Description  | Notes
 
 This will get information related to your specific device.
 
-### Example
+### Example {#osdeviceinformation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -81,25 +82,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osDeviceInformation().then((data: OSDeviceInformationReturnable) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#osdeviceinformation-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#osdeviceinformation-return-type}
 
 [**OSDeviceInformationReturnable**](../models/OSDeviceInformationReturnable)
 
-### HTTP request headers
+### HTTP request headers {#osdeviceinformation-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#osdeviceinformation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -110,7 +112,7 @@ This endpoint does not need any parameters.
 
 This will only work on Macos and Windows.  And will get the permissions of the user\'s local machine w/ regard to anything needed to effectively run PiecesOS.  Note: this will let us know if we need to tell them to take action to enable any given permissions
 
-### Example
+### Example {#ospermissions-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,25 +121,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osPermissions().then((data: OSPermissions) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#ospermissions-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#ospermissions-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### HTTP request headers
+### HTTP request headers {#ospermissions-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#ospermissions-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -148,7 +151,7 @@ This endpoint does not need any parameters.
 
 This will only work on Macos and Windows.  This will request permissions for the given inputs
 
-### Example
+### Example {#ospermissionsrequest-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -157,33 +160,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.OsPermissionsRequestRequest = {
-    // OSPermissions (optional)
-    oSPermissions: ,
+// OSPermissions (optional)
+oSPermissions: ,
 };
 
 apiInstance.osPermissionsRequest(body).then((data: OSPermissions) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#ospermissionsrequest-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **oSPermissions** | **OSPermissions**|  |
 
 
-### Return type
+### Return type {#ospermissionsrequest-return-type}
 
 [**OSPermissions**](../models/OSPermissions)
 
-### HTTP request headers
+### HTTP request headers {#ospermissionsrequest-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#ospermissionsrequest-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -194,7 +198,7 @@ Name | Type | Description  | Notes
 
 This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS Only Endpoint.
 
-### Example
+### Example {#osrestart-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -203,25 +207,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.osRestart().then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#osrestart-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#osrestart-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#osrestart-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#osrestart-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -232,7 +237,7 @@ void (empty response body)
 
 This is a helper endpoint that will check the status of an update for PiecesOS. IE if there is an update downloading, if there is one available, but the downloading has not started... etc
 
-### Example
+### Example {#osupdatecheck-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -241,33 +246,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.OsUpdateCheckRequest = {
-    // UncheckedOSUpdate (optional)
-    uncheckedOSUpdate: ,
+// UncheckedOSUpdate (optional)
+uncheckedOSUpdate: ,
 };
 
 apiInstance.osUpdateCheck(body).then((data: CheckedOSUpdate) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#osupdatecheck-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uncheckedOSUpdate** | **UncheckedOSUpdate**|  |
 
 
-### Return type
+### Return type {#osupdatecheck-return-type}
 
 [**CheckedOSUpdate**](../models/CheckedOSUpdate)
 
-### HTTP request headers
+### HTTP request headers {#osupdatecheck-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#osupdatecheck-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -278,7 +284,7 @@ Name | Type | Description  | Notes
 
 This will trigger a filer picker and return the string paths of the files that were selected.
 
-### Example
+### Example {#pickfiles-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -287,33 +293,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 const body: Pieces.PickFilesRequest = {
-    // FilePickerInput (optional)
-    filePickerInput: ,
+// FilePickerInput (optional)
+filePickerInput: ,
 };
 
 apiInstance.pickFiles(body).then((data: Array\<string\>) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#pickfiles-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **filePickerInput** | **FilePickerInput**|  |
 
 
-### Return type
+### Return type {#pickfiles-return-type}
 
 **Array\<string\>**
 
-### HTTP request headers
+### HTTP request headers {#pickfiles-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#pickfiles-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -324,7 +331,7 @@ Name | Type | Description  | Notes
 
 This will trigger a folder picker and return the string paths of the folders that were selected.
 
-### Example
+### Example {#pickfolders-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -333,25 +340,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.pickFolders().then((data: Array\<string\>) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#pickfolders-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#pickfolders-return-type}
 
 **Array\<string\>**
 
-### HTTP request headers
+### HTTP request headers {#pickfolders-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#pickfolders-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -362,7 +370,7 @@ This endpoint does not need any parameters.
 
 A trigger that launches a Sign into OS Server
 
-### Example
+### Example {#signintoos-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -371,25 +379,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.signIntoOS().then((data: UserProfile) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#signintoos-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#signintoos-return-type}
 
 [**UserProfile**](../models/UserProfile)
 
-### HTTP request headers
+### HTTP request headers {#signintoos-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#signintoos-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -399,7 +408,7 @@ This endpoint does not need any parameters.
 
 A trigger that signs out a user from the OS
 
-### Example
+### Example {#signoutofos-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -408,25 +417,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.OSApi(configuration)
 
 apiInstance.signOutOfOS().then((data: Users) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#signoutofos-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#signoutofos-return-type}
 
 [**Users**](../models/Users)
 
-### HTTP request headers
+### HTTP request headers {#signoutofos-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#signoutofos-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

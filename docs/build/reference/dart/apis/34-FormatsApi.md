@@ -4,7 +4,7 @@ title: Formats API | Dart SDK
 
 # Formats API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 Get all of your formats for a given user.
 
-### Example
+### Example {#formatssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -34,26 +34,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#formatssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#formatssnapshot-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#formatssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 
 ## **formatsSpecificFormatSnapshot** {#formatsspecificformatsnapshot}
 > Format formatsSpecificFormatSnapshot(format, transferable)
@@ -62,7 +60,7 @@ No authorization required
 
 Request a specific format when given a id (uuid in path params)
 
-### Example
+### Example {#formatsspecificformatsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -78,25 +76,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#formatsspecificformatsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **String**| The id (uuid) for a specific format. | 
- **transferable** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **format** | **String** | The id (uuid) for a specific format. | 
+ **transferable** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#formatsspecificformatsnapshot-return-type}
 
 [**Format**](../models/Format)
 
-### Authorization
+### Authorization {#formatsspecificformatsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#formatsspecificformatsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
-
-
 

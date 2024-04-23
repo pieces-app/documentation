@@ -4,7 +4,7 @@ title: Tag API | Python SDK
 
 # Tag API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 This will associate a tag with a asset.
 
-### Example
+### Example {#tag_associate_asset-example}
 
 
 ```python
@@ -55,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_associate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +63,26 @@ Name | Type | Description  | Notes
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
  **tag** | **str**| tag id | 
 
-### Return type
+### Return type {#tag_associate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tag_associate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_associate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_associate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_associate_person** {#tag_associate_person}
 > tag_associate_person(tag, person)
@@ -92,7 +91,7 @@ No authorization required
 
 This will associate a tag with a person.
 
-### Example
+### Example {#tag_associate_person-example}
 
 
 ```python
@@ -123,7 +122,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_associate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -131,27 +130,26 @@ Name | Type | Description  | Notes
  **tag** | **str**| tag id | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#tag_associate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tag_associate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_associate_person-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_associate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_disassociate_asset** {#tag_disassociate_asset}
 > tag_disassociate_asset(tag, asset)
@@ -160,7 +158,7 @@ No authorization required
 
 This will enable us to dissassociate a tag from a asset.
 
-### Example
+### Example {#tag_disassociate_asset-example}
 
 
 ```python
@@ -191,7 +189,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -199,27 +197,26 @@ Name | Type | Description  | Notes
  **tag** | **str**| tag id | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#tag_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tag_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_disassociate_person** {#tag_disassociate_person}
 > tag_disassociate_person(tag, person)
@@ -228,7 +225,7 @@ No authorization required
 
 This will enable us to dissassociate a tag from a person.
 
-### Example
+### Example {#tag_disassociate_person-example}
 
 
 ```python
@@ -259,7 +256,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_disassociate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -267,27 +264,26 @@ Name | Type | Description  | Notes
  **tag** | **str**| tag id | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#tag_disassociate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tag_disassociate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_disassociate_person-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_disassociate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_scores_increment** {#tag_scores_increment}
 > tag_scores_increment(tag, seeded_score_increment=seeded_score_increment)
@@ -296,7 +292,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#tag_scores_increment-example}
 
 
 ```python
@@ -328,7 +324,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -336,27 +332,26 @@ Name | Type | Description  | Notes
  **tag** | **str**| tag id | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#tag_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#tag_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tag_update** {#tag_update}
 > Tag tag_update(transferables=transferables, tag=tag)
@@ -365,7 +360,7 @@ No authorization required
 
 This will update a specific tag.
 
-### Example
+### Example {#tag_update-example}
 
 
 ```python
@@ -399,7 +394,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tag_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -407,27 +402,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **tag** | [**Tag**](../models/Tag)|  | [optional] 
 
-### Return type
+### Return type {#tag_update-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tag_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tag_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tag_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **tags_specific_tag_snapshot** {#tags_specific_tag_snapshot}
 > Tag tags_specific_tag_snapshot(tag, transferables=transferables)
@@ -436,7 +430,7 @@ No authorization required
 
 This will get a specific tag.
 
-### Example
+### Example {#tags_specific_tag_snapshot-example}
 
 
 ```python
@@ -470,7 +464,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#tags_specific_tag_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -478,25 +472,24 @@ Name | Type | Description  | Notes
  **tag** | **str**| tag id | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#tags_specific_tag_snapshot-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tags_specific_tag_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tags_specific_tag_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#tags_specific_tag_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | Tag was not found. |  -  |
-
-
 

@@ -4,7 +4,7 @@ title: Search API | Kotlin SDK
 
 # Search API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will run FTS for exact search, and will NOT run fuzzy matching. This will only search the content within the 
 
-### Example
+### Example {#fulltextsearch-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#fulltextsearch-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional]
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#fulltextsearch-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#fulltextsearch-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#fulltextsearch-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This will run ncs on your assets. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example {#neuralcodesearch-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -89,22 +89,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#neuralcodesearch-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **kotlin.String**| This is a string that you can use to search your assets. | [optional]
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#neuralcodesearch-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#neuralcodesearch-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#neuralcodesearch-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -116,7 +116,7 @@ No authorization required
 
 This will run our tag based search, and return the assets that best match your passed in tags. This will simply return FlattenedAssets, but will just be the assetuuids that match.
 
-### Example
+### Example {#tagbasedsearch-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -137,22 +137,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagbasedsearch-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
  **seededAssetTags** | [**SeededAssetTags**](../models/SeededAssetTags)|  | [optional]
 
-### Return type
+### Return type {#tagbasedsearch-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#tagbasedsearch-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagbasedsearch-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

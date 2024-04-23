@@ -13,22 +13,4 @@ Name | Type | Description | Notes
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **id** | **str** |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.referenced_model import ReferencedModel
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ReferencedModel from a JSON string
-referenced_model_instance = ReferencedModel.from_json(json)
-# print the JSON string representation of the object
-print(ReferencedModel.to_json())
-
-# convert the object into a dict
-referenced_model_dict = referenced_model_instance.to_dict()
-# create an instance of ReferencedModel from a dict
-referenced_model_form_dict = referenced_model.from_dict(referenced_model_dict)
-```
-
 

@@ -4,7 +4,7 @@ title: WorkstreamSummary API | Python SDK
 
 # WorkstreamSummary API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -34,7 +34,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a single workstream_summary.
 
-### Example
+### Example {#workstream_summaries_specific_workstream_summary_snapshot-example}
 
 
 ```python
@@ -68,7 +68,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summaries_specific_workstream_summary_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
@@ -76,27 +76,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#workstream_summaries_specific_workstream_summary_snapshot-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstream_summaries_specific_workstream_summary_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summaries_specific_workstream_summary_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summaries_specific_workstream_summary_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **410** | WorkstreamSummary not found. |  -  |
-
-
 
 ## **workstream_summary_associate_anchor** {#workstream_summary_associate_anchor}
 > workstream_summary_associate_anchor(workstream_summary, anchor)
@@ -105,7 +104,7 @@ No authorization required
 
 This will associate a anchor with a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstream_summary_associate_anchor-example}
 
 
 ```python
@@ -136,7 +135,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_anchor-parameters}
 
 
 Name | Type | Description  | Notes
@@ -144,27 +143,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **anchor** | **str**| This is the specific uuid of an anchor. | 
 
-### Return type
+### Return type {#workstream_summary_associate_anchor-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_anchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_asset** {#workstream_summary_associate_asset}
 > workstream_summary_associate_asset(workstream_summary, asset)
@@ -173,7 +171,7 @@ No authorization required
 
 This will associate an asset with a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstream_summary_associate_asset-example}
 
 
 ```python
@@ -204,7 +202,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -212,27 +210,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#workstream_summary_associate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_conversation** {#workstream_summary_associate_conversation}
 > workstream_summary_associate_conversation(workstream_summary, conversation)
@@ -241,7 +238,7 @@ No authorization required
 
 This will associate an conversation with a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstream_summary_associate_conversation-example}
 
 
 ```python
@@ -272,7 +269,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -280,27 +277,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#workstream_summary_associate_conversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_person** {#workstream_summary_associate_person}
 > workstream_summary_associate_person(workstream_summary, person)
@@ -309,7 +305,7 @@ No authorization required
 
 This will associate an person with a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstream_summary_associate_person-example}
 
 
 ```python
@@ -340,7 +336,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -348,27 +344,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#workstream_summary_associate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_person-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_range** {#workstream_summary_associate_range}
 > workstream_summary_associate_range(workstream_summary, range)
@@ -377,7 +372,7 @@ No authorization required
 
 This will associate a range with a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstream_summary_associate_range-example}
 
 
 ```python
@@ -408,7 +403,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_range-parameters}
 
 
 Name | Type | Description  | Notes
@@ -416,27 +411,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#workstream_summary_associate_range-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_range-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_range-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_range-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_website** {#workstream_summary_associate_website}
 > workstream_summary_associate_website(workstream_summary, website)
@@ -445,7 +439,7 @@ No authorization required
 
 This will associate a website with a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstream_summary_associate_website-example}
 
 
 ```python
@@ -476,7 +470,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_website-parameters}
 
 
 Name | Type | Description  | Notes
@@ -484,27 +478,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#workstream_summary_associate_website-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_website-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_associate_workstream_event** {#workstream_summary_associate_workstream_event}
 > workstream_summary_associate_workstream_event(workstream_summary, workstream_event)
@@ -513,7 +506,7 @@ No authorization required
 
 This will associate a workstream_summary with a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstream_summary_associate_workstream_event-example}
 
 
 ```python
@@ -544,7 +537,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_associate_workstream_event-parameters}
 
 
 Name | Type | Description  | Notes
@@ -552,27 +545,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
 
-### Return type
+### Return type {#workstream_summary_associate_workstream_event-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_associate_workstream_event-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_associate_workstream_event-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_associate_workstream_event-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_anchor** {#workstream_summary_disassociate_anchor}
 > workstream_summary_disassociate_anchor(workstream_summary, anchor)
@@ -581,7 +573,7 @@ No authorization required
 
 This will enable us to disassociate a anchor from a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_anchor-example}
 
 
 ```python
@@ -612,7 +604,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_anchor-parameters}
 
 
 Name | Type | Description  | Notes
@@ -620,27 +612,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **anchor** | **str**| This is the specific uuid of an anchor. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_anchor-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_anchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_anchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_anchor-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_asset** {#workstream_summary_disassociate_asset}
 > workstream_summary_disassociate_asset(workstream_summary, asset)
@@ -649,7 +640,7 @@ No authorization required
 
 This will enable us to disassociate a asset from a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_asset-example}
 
 
 ```python
@@ -680,7 +671,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_asset-parameters}
 
 
 Name | Type | Description  | Notes
@@ -688,27 +679,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **asset** | **str**| The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_asset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_asset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_asset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_asset-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_conversation** {#workstream_summary_disassociate_conversation}
 > workstream_summary_disassociate_conversation(workstream_summary, conversation)
@@ -717,7 +707,7 @@ No authorization required
 
 This will enable us to disassociate a conversation from a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_conversation-example}
 
 
 ```python
@@ -748,7 +738,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_conversation-parameters}
 
 
 Name | Type | Description  | Notes
@@ -756,27 +746,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **conversation** | **str**| This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_conversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_conversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_conversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_conversation-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_person** {#workstream_summary_disassociate_person}
 > workstream_summary_disassociate_person(workstream_summary, person)
@@ -785,7 +774,7 @@ No authorization required
 
 This will enable us to disassociate a person from a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_person-example}
 
 
 ```python
@@ -816,7 +805,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_person-parameters}
 
 
 Name | Type | Description  | Notes
@@ -824,27 +813,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **person** | **str**| This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_person-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_person-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_person-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_person-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_range** {#workstream_summary_disassociate_range}
 > workstream_summary_disassociate_range(workstream_summary, range)
@@ -853,7 +841,7 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_range-example}
 
 
 ```python
@@ -884,7 +872,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_range-parameters}
 
 
 Name | Type | Description  | Notes
@@ -892,27 +880,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **range** | **str**| This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_range-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_range-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_range-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_range-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_website** {#workstream_summary_disassociate_website}
 > workstream_summary_disassociate_website(workstream_summary, website)
@@ -921,7 +908,7 @@ No authorization required
 
 This will enable us to disassociate a website from a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_website-example}
 
 
 ```python
@@ -952,7 +939,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_website-parameters}
 
 
 Name | Type | Description  | Notes
@@ -960,27 +947,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **website** | **str**| website id | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_website-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_website-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_website-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_website-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_disassociate_workstream_event** {#workstream_summary_disassociate_workstream_event}
 > workstream_summary_disassociate_workstream_event(workstream_summary, workstream_event)
@@ -989,7 +975,7 @@ No authorization required
 
 This will enable us to disassociate a workstream_summary from a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstream_summary_disassociate_workstream_event-example}
 
 
 ```python
@@ -1020,7 +1006,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_disassociate_workstream_event-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1028,27 +1014,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
 
-### Return type
+### Return type {#workstream_summary_disassociate_workstream_event-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_disassociate_workstream_event-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_disassociate_workstream_event-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_disassociate_workstream_event-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_scores_increment** {#workstream_summary_scores_increment}
 > workstream_summary_scores_increment(workstream_summary, seeded_score_increment=seeded_score_increment)
@@ -1057,7 +1042,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstream_summary_scores_increment-example}
 
 
 ```python
@@ -1089,7 +1074,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1097,27 +1082,26 @@ Name | Type | Description  | Notes
  **workstream_summary** | **str**| This is a identifier that is used to identify a specific workstream_summary. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#workstream_summary_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_summary_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_summary_update** {#workstream_summary_update}
 > WorkstreamSummary workstream_summary_update(transferables=transferables, workstream_summary=workstream_summary)
@@ -1126,7 +1110,7 @@ No authorization required
 
 This will update a specific workstream_summary.
 
-### Example
+### Example {#workstream_summary_update-example}
 
 
 ```python
@@ -1160,7 +1144,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_summary_update-parameters}
 
 
 Name | Type | Description  | Notes
@@ -1168,25 +1152,24 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **workstream_summary** | [**WorkstreamSummary**](../models/WorkstreamSummary)|  | [optional] 
 
-### Return type
+### Return type {#workstream_summary_update-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstream_summary_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_summary_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_summary_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

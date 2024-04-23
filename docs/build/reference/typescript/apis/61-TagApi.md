@@ -4,7 +4,7 @@ title: Tag API | TypeScript SDK
 
 # Tag API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This will associate a tag with a asset.
 
-### Example
+### Example {#tagassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -31,18 +31,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociateAssetRequest = {
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
-    // string | tag id
-    tag: tag_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | tag id
+tag: tag_example,
 };
 
 apiInstance.tagAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -50,17 +51,17 @@ Name | Type | Description  | Notes
  **tag** | [**string**] | tag id | defaults to undefined
 
 
-### Return type
+### Return type {#tagassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#tagassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -71,7 +72,7 @@ void (empty response body)
 
 This will associate a tag with a person.
 
-### Example
+### Example {#tagassociateperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -80,18 +81,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagAssociatePersonRequest = {
-    // string | tag id
-    tag: tag_example,
-    // string | This is a uuid that represents a person.
-    person: person_example,
+// string | tag id
+tag: tag_example,
+// string | This is a uuid that represents a person.
+person: person_example,
 };
 
 apiInstance.tagAssociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagassociateperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -99,17 +101,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return type {#tagassociateperson-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#tagassociateperson-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagassociateperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -120,7 +122,7 @@ void (empty response body)
 
 This will enable us to dissassociate a tag from a asset.
 
-### Example
+### Example {#tagdisassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -129,18 +131,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociateAssetRequest = {
-    // string | tag id
-    tag: tag_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | tag id
+tag: tag_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.tagDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagdisassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -148,17 +151,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#tagdisassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagdisassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -169,7 +172,7 @@ void (empty response body)
 
 This will enable us to dissassociate a tag from a person.
 
-### Example
+### Example {#tagdisassociateperson-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -178,18 +181,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagDisassociatePersonRequest = {
-    // string | tag id
-    tag: tag_example,
-    // string | This is a uuid that represents a person.
-    person: person_example,
+// string | tag id
+tag: tag_example,
+// string | This is a uuid that represents a person.
+person: person_example,
 };
 
 apiInstance.tagDisassociatePerson(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagdisassociateperson-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -197,17 +201,17 @@ Name | Type | Description  | Notes
  **person** | [**string**] | This is a uuid that represents a person. | defaults to undefined
 
 
-### Return type
+### Return type {#tagdisassociateperson-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateperson-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagdisassociateperson-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -218,7 +222,7 @@ void (empty response body)
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#tagscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -227,18 +231,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagScoresIncrementRequest = {
-    // string | tag id
-    tag: tag_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | tag id
+tag: tag_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.tagScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -246,17 +251,17 @@ Name | Type | Description  | Notes
  **tag** | [**string**] | tag id | defaults to undefined
 
 
-### Return type
+### Return type {#tagscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#tagscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -267,7 +272,7 @@ void (empty response body)
 
 This will update a specific tag.
 
-### Example
+### Example {#tagupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -276,18 +281,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Tag (optional)
-    tag: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Tag (optional)
+tag: ,
 };
 
 apiInstance.tagUpdate(body).then((data: Tag) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -295,17 +301,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#tagupdate-return-type}
 
 [**Tag**](../models/Tag)
 
-### HTTP request headers
+### HTTP request headers {#tagupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -316,7 +322,7 @@ Name | Type | Description  | Notes
 
 This will get a specific tag.
 
-### Example
+### Example {#tagsspecifictagsnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -325,18 +331,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.TagApi(configuration)
 
 const body: Pieces.TagsSpecificTagSnapshotRequest = {
-    // string | tag id
-    tag: tag_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | tag id
+tag: tag_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.tagsSpecificTagSnapshot(body).then((data: Tag) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#tagsspecifictagsnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -344,17 +351,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#tagsspecifictagsnapshot-return-type}
 
 [**Tag**](../models/Tag)
 
-### HTTP request headers
+### HTTP request headers {#tagsspecifictagsnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#tagsspecifictagsnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
