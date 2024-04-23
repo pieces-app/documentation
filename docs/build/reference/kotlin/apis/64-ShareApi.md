@@ -4,7 +4,7 @@ title: Share API | Kotlin SDK
 
 # Share API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#sharescoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,22 +40,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#sharescoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#sharescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -67,7 +67,7 @@ No authorization required
 
 Get the snapshot of a specific share.
 
-### Example
+### Example {#sharesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -88,22 +88,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#sharesnapshot-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#sharesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -115,7 +115,7 @@ No authorization required
 
 This endpoint will accept a Share that the user wants to update, and will return a full Share that was updated!
 
-### Example
+### Example {#shareupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -136,22 +136,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#shareupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **share** | [**Share**](../models/Share)| This is the Share that needs to be updated. | [optional]
 
-### Return type
+### Return type {#shareupdate-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#shareupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#shareupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

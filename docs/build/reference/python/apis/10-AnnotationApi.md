@@ -4,7 +4,7 @@ title: Annotation API | Python SDK
 
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#annotation_scores_increment-example}
 
 
 ```python
@@ -52,7 +52,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotation_scores_increment-parameters}
 
 
 Name | Type | Description  | Notes
@@ -60,27 +60,26 @@ Name | Type | Description  | Notes
  **annotation** | **str**| This is a specific annotation uuid. | 
  **seeded_score_increment** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
 
-### Return type
+### Return type {#annotation_scores_increment-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#annotation_scores_increment-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotation_scores_increment-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotation_scores_increment-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **annotation_specific_annotation_snapshot** {#annotation_specific_annotation_snapshot}
 > Annotation annotation_specific_annotation_snapshot(annotation)
@@ -89,7 +88,7 @@ No authorization required
 
 This will get a snapshot of a specific annotation.
 
-### Example
+### Example {#annotation_specific_annotation_snapshot-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotation_specific_annotation_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | **str**| This is a specific annotation uuid. | 
 
-### Return type
+### Return type {#annotation_specific_annotation_snapshot-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotation_specific_annotation_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotation_specific_annotation_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotation_specific_annotation_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **annotation_update** {#annotation_update}
 > Annotation annotation_update(annotation=annotation)
@@ -158,7 +156,7 @@ No authorization required
 
 This will update a specific annotation.
 
-### Example
+### Example {#annotation_update-example}
 
 
 ```python
@@ -191,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#annotation_update-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**Annotation**](../models/Annotation)|  | [optional] 
 
-### Return type
+### Return type {#annotation_update-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotation_update-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotation_update-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#annotation_update-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

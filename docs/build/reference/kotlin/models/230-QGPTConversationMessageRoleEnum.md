@@ -3,6 +3,7 @@ title: QGPTConversationMessageRoleEnum | Kotlin SDK
 ---
 
 
+
 # QGPTConversationMessageRoleEnum
 
 ## Enum
@@ -13,6 +14,7 @@ title: QGPTConversationMessageRoleEnum | Kotlin SDK
     * `SYSTEM` (value: `"SYSTEM"`)
 
     * `ASSISTANT` (value: `"ASSISTANT"`)
+
 
 
 

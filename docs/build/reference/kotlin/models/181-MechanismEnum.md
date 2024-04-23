@@ -3,6 +3,7 @@ title: MechanismEnum | Kotlin SDK
 ---
 
 
+
 # MechanismEnum
 
 ## Enum
@@ -17,6 +18,7 @@ title: MechanismEnum | Kotlin SDK
     * `INTERNAL` (value: `"INTERNAL"`)
 
     * `DELETED` (value: `"DELETED"`)
+
 
 
 

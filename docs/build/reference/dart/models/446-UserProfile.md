@@ -4,11 +4,6 @@ title: UserProfile | Dart SDK
 
 # UserProfile
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -25,7 +20,5 @@ Name | Type | Description | Notes
 **allocation** | [**AllocationCloud**](AllocationCloud) |  | [optional] 
 **providers** | [**ExternalProviders**](ExternalProviders) |  | [optional] 
 **auth0** | [**Auth0UserMetadata**](Auth0UserMetadata) |  | [optional] 
-
-
 
 

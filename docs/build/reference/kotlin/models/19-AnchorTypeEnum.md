@@ -3,6 +3,7 @@ title: AnchorTypeEnum | Kotlin SDK
 ---
 
 
+
 # AnchorTypeEnum
 
 ## Enum
@@ -11,6 +12,7 @@ title: AnchorTypeEnum | Kotlin SDK
     * `FILE` (value: `"FILE"`)
 
     * `DIRECTORY` (value: `"DIRECTORY"`)
+
 
 
 

@@ -4,7 +4,7 @@ title: Annotations API | Kotlin SDK
 
 # Annotations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create an annotation.
 
-### Example
+### Example {#annotationscreatenewannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,21 +40,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationscreatenewannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAnnotation** | [**SeededAnnotation**](../models/SeededAnnotation)|  | [optional]
 
-### Return type
+### Return type {#annotationscreatenewannotation-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationscreatenewannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationscreatenewannotation-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -66,7 +66,7 @@ No authorization required
 
 this will delete a specific annotation
 
-### Example
+### Example {#annotationsdeletespecificannotation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -85,21 +85,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationsdeletespecificannotation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
-### Return type
+### Return type {#annotationsdeletespecificannotation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#annotationsdeletespecificannotation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationsdeletespecificannotation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -111,7 +111,7 @@ No authorization required
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.
 
-### Example
+### Example {#annotationssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -131,21 +131,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotationTypeFilter** | **kotlin.String**| This is an AnnotationTypeEnum as a optional filter. | [optional] [enum: DESCRIPTION, COMMENT, COMMENTATION, DOCUMENTATION, SUMMARIZATION, SUMMARY, EXPLANATION, GIT_COMMIT]
 
-### Return type
+### Return type {#annotationssnapshot-return-type}
 
 [**Annotations**](../models/Annotations)
 
-### Authorization
+### Authorization {#annotationssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

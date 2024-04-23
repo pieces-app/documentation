@@ -3,6 +3,7 @@ title: Connecting to a Remote Pieces OS Instance
 description: Utilize the Pieces for Developers VS Code extension in a remote development environment
 ---
 
+import {pieces_app} from "../../src/lib/const";
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import Video from "/src/components/Video";
@@ -70,7 +71,7 @@ For Dev Container users, if the connection does not work automatically, there ar
 ## Prerequisites
 
 - 1 machine with [Pieces OS](/installation-getting-started/what-am-i-installing) installed
-- 1 machine with the [Pieces for Developers VS Code extension](https://marketplace.visualstudio.com/items?itemName=piecesapp.pieces) installed
+- 1 machine with the [Pieces for Developers VS Code extension](/extensions-plugins/vscode) installed
 
 ## Getting Started
 
@@ -78,7 +79,7 @@ For Dev Container users, if the connection does not work automatically, there ar
 
 > - In the case that Pieces OS shares the same LAN with your remote VS Code instance, you should use the LAN IP address of your machine that is running Pieces OS.
 > - In the case that Pieces OS is not on the same LAN as your development environment [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
-> - The custom URL feature has no connection to your custom Pieces Cloud domain, attempting to use your custom Pieces Cloud domain i.e: https://caleb.pieces.cloud will result in the VS Code extension ceasing to function properly.
+> - The custom URL feature has no connection to your custom Pieces Cloud domain, attempting to use your custom Pieces Cloud domain i.e: `https://caleb.pieces.cloud` will result in the VS Code extension ceasing to function properly.
 
 <Tabs
   defaultValue={"lan-ip-address"}

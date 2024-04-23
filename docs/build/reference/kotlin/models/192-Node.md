@@ -3,6 +3,7 @@ title: Node | Kotlin SDK
 ---
 
 
+
 # Node
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **type** | [**NodeTypeEnum**](NodeTypeEnum) |  | 
 **root** | **kotlin.Boolean** | This is a boolean to let us know if this node is the root or origin of the relationship graph. | 
 **created** | [**GroupedTimestamp**](GroupedTimestamp) |  | 
+
 
 
 

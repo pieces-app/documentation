@@ -4,7 +4,7 @@ title: Conversation API | TypeScript SDK
 
 # Conversation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -33,7 +33,7 @@ Method | HTTP request | Description
 
 Updates both the anchor and the conversation, associating them together.
 
-### Example
+### Example {#conversationassociateanchor-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -42,18 +42,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAnchorRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
 };
 
 apiInstance.conversationAssociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationassociateanchor-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -61,17 +62,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationassociateanchor-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateanchor-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationassociateanchor-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -82,7 +83,7 @@ void (empty response body)
 
 Updates both the asset and the conversation, associating the two together.
 
-### Example
+### Example {#conversationassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -91,18 +92,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateAssetRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.conversationAssociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -110,17 +112,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -131,7 +133,7 @@ void (empty response body)
 
 This will associate a workstream(range) with a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversationassociategroundingtemporalrangeworkstream-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -140,18 +142,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateGroundingTemporalRangeWorkstreamRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is a identifier that is used to identify a specific range.
-    range: range_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific range.
+range: range_example,
 };
 
 apiInstance.conversationAssociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationassociategroundingtemporalrangeworkstream-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -159,17 +162,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationassociategroundingtemporalrangeworkstream-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationassociategroundingtemporalrangeworkstream-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationassociategroundingtemporalrangeworkstream-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -180,7 +183,7 @@ void (empty response body)
 
 Updates both the website and the conversation, and associate them together.
 
-### Example
+### Example {#conversationassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -189,18 +192,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWebsiteRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | website id
-    website: website_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | website id
+website: website_example,
 };
 
 apiInstance.conversationAssociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -208,17 +212,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return type
+### Return type {#conversationassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -229,7 +233,7 @@ void (empty response body)
 
 This will associate a conversation with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversationassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -238,18 +242,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationAssociateWorkstreamSummaryRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.conversationAssociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -257,17 +262,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -278,7 +283,7 @@ void (empty response body)
 
 Updates both the anchor and the conversation, deleting (disassociating) them simultaneously.
 
-### Example
+### Example {#conversationdisassociateanchor-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -287,18 +292,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAnchorRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is the specific uuid of an anchor.
-    anchor: anchor_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is the specific uuid of an anchor.
+anchor: anchor_example,
 };
 
 apiInstance.conversationDisassociateAnchor(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateanchor-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -306,17 +312,17 @@ Name | Type | Description  | Notes
  **anchor** | [**string**] | This is the specific uuid of an anchor. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationdisassociateanchor-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateanchor-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationdisassociateanchor-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -327,7 +333,7 @@ void (empty response body)
 
 Updates both the asset and the conversation, effectively disassociating them.
 
-### Example
+### Example {#conversationdisassociateasset-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -336,18 +342,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateAssetRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | The id (uuid) of the asset that you are trying to access.
-    asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | The id (uuid) of the asset that you are trying to access.
+asset: 2254f2c8-5797-40e8-ac56-41166dc0e159,
 };
 
 apiInstance.conversationDisassociateAsset(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateasset-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -355,17 +362,17 @@ Name | Type | Description  | Notes
  **asset** | [**string**] | The id (uuid) of the asset that you are trying to access. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationdisassociateasset-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateasset-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationdisassociateasset-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -376,7 +383,7 @@ void (empty response body)
 
 This will enable us to disassociate a workstream(range) from a conversation. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#conversationdisassociategroundingtemporalrangeworkstream-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -385,18 +392,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateGroundingTemporalRangeWorkstreamRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is a identifier that is used to identify a specific range.
-    range: range_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific range.
+range: range_example,
 };
 
 apiInstance.conversationDisassociateGroundingTemporalRangeWorkstream(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationdisassociategroundingtemporalrangeworkstream-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -404,17 +412,17 @@ Name | Type | Description  | Notes
  **range** | [**string**] | This is a identifier that is used to identify a specific range. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationdisassociategroundingtemporalrangeworkstream-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociategroundingtemporalrangeworkstream-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationdisassociategroundingtemporalrangeworkstream-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -425,7 +433,7 @@ void (empty response body)
 
 Allows us to disassociate a conversation from a specific website
 
-### Example
+### Example {#conversationdisassociatewebsite-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -434,18 +442,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWebsiteRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | website id
-    website: website_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | website id
+website: website_example,
 };
 
 apiInstance.conversationDisassociateWebsite(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationdisassociatewebsite-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -453,17 +462,17 @@ Name | Type | Description  | Notes
  **website** | [**string**] | website id | defaults to undefined
 
 
-### Return type
+### Return type {#conversationdisassociatewebsite-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociatewebsite-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationdisassociatewebsite-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -474,7 +483,7 @@ void (empty response body)
 
 This will enable us to disassociate an conversation from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#conversationdisassociateworkstreamsummary-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -483,18 +492,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationDisassociateWorkstreamSummaryRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is a identifier that is used to identify a specific workstream_summary.
-    workstreamSummary: workstreamSummary_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is a identifier that is used to identify a specific workstream_summary.
+workstreamSummary: workstreamSummary_example,
 };
 
 apiInstance.conversationDisassociateWorkstreamSummary(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationdisassociateworkstreamsummary-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -502,17 +512,17 @@ Name | Type | Description  | Notes
  **workstreamSummary** | [**string**] | This is a identifier that is used to identify a specific workstream_summary. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationdisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationdisassociateworkstreamsummary-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationdisassociateworkstreamsummary-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -523,7 +533,7 @@ void (empty response body)
 
 Retrieves a specific conversation.
 
-### Example
+### Example {#conversationgetspecificconversation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -532,18 +542,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGetSpecificConversationRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.conversationGetSpecificConversation(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationgetspecificconversation-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -551,17 +562,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#conversationgetspecificconversation-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### HTTP request headers
+### HTTP request headers {#conversationgetspecificconversation-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationgetspecificconversation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -572,7 +583,7 @@ Name | Type | Description  | Notes
 
 Stores the grounding context for a conversation. It allows to associate a message with the conversation\'s grounding object, facilitating contextual understanding and management of the conversation.
 
-### Example
+### Example {#conversationgroundingmessagesassociatemessage-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -581,18 +592,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesAssociateMessageRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is the uuid of a message.
-    message: message_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is the uuid of a message.
+message: message_example,
 };
 
 apiInstance.conversationGroundingMessagesAssociateMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationgroundingmessagesassociatemessage-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -600,17 +612,17 @@ Name | Type | Description  | Notes
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationgroundingmessagesassociatemessage-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationgroundingmessagesassociatemessage-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationgroundingmessagesassociatemessage-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -621,7 +633,7 @@ void (empty response body)
 
 Removes a specific grounding context for a conversation, and allows us to disassociate a message from the conversation\'s grounding object.
 
-### Example
+### Example {#conversationgroundingmessagesdisassociatemessage-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -630,18 +642,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationGroundingMessagesDisassociateMessageRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // string | This is the uuid of a message.
-    message: message_example,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// string | This is the uuid of a message.
+message: message_example,
 };
 
 apiInstance.conversationGroundingMessagesDisassociateMessage(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationgroundingmessagesdisassociatemessage-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -649,17 +662,17 @@ Name | Type | Description  | Notes
  **message** | [**string**] | This is the uuid of a message. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationgroundingmessagesdisassociatemessage-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationgroundingmessagesdisassociatemessage-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationgroundingmessagesdisassociatemessage-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -670,7 +683,7 @@ void (empty response body)
 
 Increment scores associated with a conversation. It accepts a SeededScoreIncrement object as input to adjust the scores accordingly based on the provided data.
 
-### Example
+### Example {#conversationscoresincrement-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -679,18 +692,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationScoresIncrementRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // SeededScoreIncrement (optional)
-    seededScoreIncrement: ,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// SeededScoreIncrement (optional)
+seededScoreIncrement: ,
 };
 
 apiInstance.conversationScoresIncrement(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationscoresincrement-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -698,17 +712,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationscoresincrement-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#conversationscoresincrement-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationscoresincrement-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -719,7 +733,7 @@ void (empty response body)
 
 Retrieves messages specific to a particular conversation.
 
-### Example
+### Example {#conversationspecificconversationmessages-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -728,18 +742,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationMessagesRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.conversationSpecificConversationMessages(body).then((data: ConversationMessages) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationspecificconversationmessages-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -747,17 +762,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#conversationspecificconversationmessages-return-type}
 
 [**ConversationMessages**](../models/ConversationMessages)
 
-### HTTP request headers
+### HTTP request headers {#conversationspecificconversationmessages-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationspecificconversationmessages-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -768,7 +783,7 @@ Name | Type | Description  | Notes
 
 Renames a specific conversation using machine learning (ML) techniques.
 
-### Example
+### Example {#conversationspecificconversationrename-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -777,18 +792,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSpecificConversationRenameRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
 };
 
 apiInstance.conversationSpecificConversationRename(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationspecificconversationrename-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -796,17 +812,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#conversationspecificconversationrename-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### HTTP request headers
+### HTTP request headers {#conversationspecificconversationrename-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationspecificconversationrename-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -817,7 +833,7 @@ Name | Type | Description  | Notes
 
 Generates a summary of a given conversation and saves it as an annotation associated with the conversation. It returns a reference to the annotation, which serves as the summary.
 
-### Example
+### Example {#conversationsummarize-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -826,18 +842,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationSummarizeRequest = {
-    // string | This is the uuid of a conversation.
-    conversation: conversation_example,
-    // ConversationSummarizeInput (optional)
-    conversationSummarizeInput: ,
+// string | This is the uuid of a conversation.
+conversation: conversation_example,
+// ConversationSummarizeInput (optional)
+conversationSummarizeInput: ,
 };
 
 apiInstance.conversationSummarize(body).then((data: ConversationSummarizeOutput) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationsummarize-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -845,17 +862,17 @@ Name | Type | Description  | Notes
  **conversation** | [**string**] | This is the uuid of a conversation. | defaults to undefined
 
 
-### Return type
+### Return type {#conversationsummarize-return-type}
 
 [**ConversationSummarizeOutput**](../models/ConversationSummarizeOutput)
 
-### HTTP request headers
+### HTTP request headers {#conversationsummarize-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationsummarize-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -866,7 +883,7 @@ Name | Type | Description  | Notes
 
 Updates a specific conversation.
 
-### Example
+### Example {#conversationupdate-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -875,18 +892,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.ConversationApi(configuration)
 
 const body: Pieces.ConversationUpdateRequest = {
-    // boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
-    transferables: true,
-    // Conversation (optional)
-    conversation: ,
+// boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
+transferables: true,
+// Conversation (optional)
+conversation: ,
 };
 
 apiInstance.conversationUpdate(body).then((data: Conversation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#conversationupdate-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -894,17 +912,17 @@ Name | Type | Description  | Notes
  **transferables** | [**boolean**] | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#conversationupdate-return-type}
 
 [**Conversation**](../models/Conversation)
 
-### HTTP request headers
+### HTTP request headers {#conversationupdate-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#conversationupdate-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

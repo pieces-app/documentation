@@ -4,7 +4,7 @@ title: CodeAnalyses API | Python SDK
 
 # CodeAnalyses API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Your GET endpoint
 
 This will get a snapshot of all of your code analyses, a code analysis is attached to an analysis.
 
-### Example
+### Example {#code_analyses_snapshot-example}
 
 
 ```python
@@ -50,29 +50,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#code_analyses_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#code_analyses_snapshot-return-type}
 
 [**CodeAnalyses**](../models/CodeAnalyses)
 
-### Authorization
+### Authorization {#code_analyses_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#code_analyses_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#code_analyses_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

@@ -3,6 +3,7 @@ title: SeededHint | Kotlin SDK
 ---
 
 
+
 # SeededHint
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **asset** | **kotlin.String** | This is an asset id that we are using to link this to an asset. |  [optional]
 **model** | **kotlin.String** | this is a model id. that we are using to link this to a model. |  [optional]
+
 
 
 

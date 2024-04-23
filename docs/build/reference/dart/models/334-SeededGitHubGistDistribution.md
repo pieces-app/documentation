@@ -4,11 +4,6 @@ title: SeededGitHubGistDistribution | Dart SDK
 
 # SeededGitHubGistDistribution
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **public** | **bool** | we will default to true | [optional] 
 **description** | **String** | This is the description of the Gist Distribution | [optional] 
 **name** | **String** | This is the name of the gist you will add. | 
-
-
 
 

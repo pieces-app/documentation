@@ -3,6 +3,7 @@ title: Auth0UserMetadata | Kotlin SDK
 ---
 
 
+
 # Auth0UserMetadata
 
 ## Properties
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **allocation** | [**Auth0UserAllocationMetadata**](Auth0UserAllocationMetadata) |  |  [optional]
 **openAI** | [**Auth0OpenAIUserMetadata**](Auth0OpenAIUserMetadata) |  |  [optional]
 **beta** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  |  [optional]
+
 
 
 

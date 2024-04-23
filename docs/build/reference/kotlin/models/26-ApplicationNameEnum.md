@@ -3,6 +3,7 @@ title: ApplicationNameEnum | Kotlin SDK
 ---
 
 
+
 # ApplicationNameEnum
 
 ## Enum
@@ -83,6 +84,7 @@ title: ApplicationNameEnum | Kotlin SDK
     * `NOTEPAD_PLUS_PLUS` (value: `"NOTEPAD_PLUS_PLUS"`)
 
     * `UNKNOWN` (value: `"UNKNOWN"`)
+
 
 
 

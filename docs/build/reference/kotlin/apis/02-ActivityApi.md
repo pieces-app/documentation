@@ -4,7 +4,7 @@ title: Activity API | Kotlin SDK
 
 # Activity API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will attempt to get a specific activity.
 
-### Example
+### Example {#activitiesspecificactivitysnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activitiesspecificactivitysnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **activity** | **kotlin.String**| This is a specific activity uuid. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#activitiesspecificactivitysnapshot-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activitiesspecificactivitysnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activitiesspecificactivitysnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This is going to return all the identifiers of the activity event in order of most recent -&gt; oldest.
 
-### Example
+### Example {#activityidentifierssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -89,22 +89,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activityidentifierssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
  **activityFilterEnum** | **kotlin.String**| This is an ActivityFilterEnum as a optional filter. Ensure you update ActivityFilterEnum if this is updated. | [optional] [enum: CREATED, UPDATED, DELETED, REFERENCED]
 
-### Return type
+### Return type {#activityidentifierssnapshot-return-type}
 
 [**FlattenedActivities**](../models/FlattenedActivities)
 
-### Authorization
+### Authorization {#activityidentifierssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activityidentifierssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -116,7 +116,7 @@ No authorization required
 
 this will update a specific activity.
 
-### Example
+### Example {#activityupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -137,22 +137,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#activityupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **activity** | [**Activity**](../models/Activity)|  | [optional]
 
-### Return type
+### Return type {#activityupdate-return-type}
 
 [**Activity**](../models/Activity)
 
-### Authorization
+### Authorization {#activityupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#activityupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

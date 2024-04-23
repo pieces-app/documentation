@@ -4,11 +4,6 @@ title: TrackedConversationEventIdentifierDescriptionPairs | Dart SDK
 
 # TrackedConversationEventIdentifierDescriptionPairs
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -20,7 +15,5 @@ Name | Type | Description | Notes
 **conversationNameUpdatedByTheSystem** | **String** | A conversation was renamed by the system | [optional] 
 **conversationNameUpdatedByTheUser** | **String** | A conversation was renamed by the user | [optional] 
 **conversationSummaryAnnotationGeneratedByTheSystem** | **String** | A conversation summary was generated | [optional] 
-
-
 
 

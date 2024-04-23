@@ -3,6 +3,7 @@ title: QGPTQuestionInput | Kotlin SDK
 ---
 
 
+
 # QGPTQuestionInput
 
 ## Properties
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  |  [optional]
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline) |  |  [optional]
 **temporal** | [**TemporalRangeGrounding**](TemporalRangeGrounding) |  |  [optional]
+
 
 
 

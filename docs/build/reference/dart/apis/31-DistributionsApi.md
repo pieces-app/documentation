@@ -4,7 +4,7 @@ title: Distributions API | Dart SDK
 
 # Distributions API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new distribution.
 
-### Example
+### Example {#distributionscreatenewdistribution-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -35,26 +35,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionscreatenewdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional] 
+ **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution) |  | [optional] 
 
-### Return type
+### Return type {#distributionscreatenewdistribution-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionscreatenewdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionscreatenewdistribution-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **distributionsDeleteSpecificDistribution** {#distributionsdeletespecificdistribution}
 > distributionsDeleteSpecificDistribution(distribution)
@@ -63,7 +61,7 @@ No authorization required
 
 This will delete a specific distribution.
 
-### Example
+### Example {#distributionsdeletespecificdistribution-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -77,26 +75,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionsdeletespecificdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **distribution** | **String**| This is the uuid of a specific distribution. | 
+ **distribution** | **String** | This is the uuid of a specific distribution. | 
 
-### Return type
+### Return type {#distributionsdeletespecificdistribution-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#distributionsdeletespecificdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsdeletespecificdistribution-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **distributionsSnapshot** {#distributionssnapshot}
 > Distributions distributionsSnapshot()
@@ -105,7 +101,7 @@ No authorization required
 
 This will get a specific snapshot of all our distributions.
 
-### Example
+### Example {#distributionssnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -119,21 +115,19 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#distributionssnapshot-return-type}
 
 [**Distributions**](../models/Distributions)
 
-### Authorization
+### Authorization {#distributionssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 

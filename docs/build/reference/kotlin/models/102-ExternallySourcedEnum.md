@@ -3,6 +3,7 @@ title: ExternallySourcedEnum | Kotlin SDK
 ---
 
 
+
 # ExternallySourcedEnum
 
 ## Enum
@@ -31,6 +32,7 @@ title: ExternallySourcedEnum | Kotlin SDK
     * `SLACK` (value: `"SLACK"`)
 
     * `MAILGUN` (value: `"MAILGUN"`)
+
 
 
 

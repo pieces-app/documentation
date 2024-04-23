@@ -30,22 +30,4 @@ Name | Type | Description | Notes
 **max_tokens** | [**ModelMaxTokens**](ModelMaxTokens) |  | [optional] 
 **custom** | **bool** | This is reserved to custommly registed models. | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_model import SeededModel
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededModel from a JSON string
-seeded_model_instance = SeededModel.from_json(json)
-# print the JSON string representation of the object
-print(SeededModel.to_json())
-
-# convert the object into a dict
-seeded_model_dict = seeded_model_instance.to_dict()
-# create an instance of SeededModel from a dict
-seeded_model_form_dict = seeded_model.from_dict(seeded_model_dict)
-```
-
 

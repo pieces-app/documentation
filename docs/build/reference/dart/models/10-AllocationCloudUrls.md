@@ -4,11 +4,6 @@ title: AllocationCloudUrls | Dart SDK
 
 # AllocationCloudUrls
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -16,7 +11,5 @@ Name | Type | Description | Notes
 **base** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | 
 **id** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | 
 **vanity** | [**AllocationCloudUrl**](AllocationCloudUrl) |  | [optional] 
-
-
 
 

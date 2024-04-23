@@ -3,6 +3,7 @@ title: SeededAssetTag | Kotlin SDK
 ---
 
 
+
 # SeededAssetTag
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  |  [optional]
+
 
 
 

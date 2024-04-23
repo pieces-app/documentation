@@ -3,6 +3,7 @@ title: Role | Kotlin SDK
 ---
 
 
+
 # Role
 
 ## Enum
@@ -15,6 +16,7 @@ title: Role | Kotlin SDK
     * `BOTH` (value: `"BOTH"`)
 
     * `PREVIEW` (value: `"PREVIEW"`)
+
 
 
 

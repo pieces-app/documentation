@@ -3,6 +3,7 @@ title: TLPCodeSnippetTagifyCode | Kotlin SDK
 ---
 
 
+
 # TLPCodeSnippetTagifyCode
 
 ## Properties
@@ -19,6 +20,7 @@ Name | Type | Description | Notes
 **context** | **kotlin.String** | this is the origin in which this asset was created, application(string representation) | 
 **asset** | **kotlin.String** | This is the asset id. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
+
 
 
 

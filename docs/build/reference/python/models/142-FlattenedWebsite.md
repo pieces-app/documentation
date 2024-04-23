@@ -25,22 +25,4 @@ Name | Type | Description | Notes
 **score** | [**Score**](Score) |  | [optional] 
 **summaries** | [**FlattenedWorkstreamSummaries**](FlattenedWorkstreamSummaries) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.flattened_website import FlattenedWebsite
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedWebsite from a JSON string
-flattened_website_instance = FlattenedWebsite.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedWebsite.to_json())
-
-# convert the object into a dict
-flattened_website_dict = flattened_website_instance.to_dict()
-# create an instance of FlattenedWebsite from a dict
-flattened_website_form_dict = flattened_website.from_dict(flattened_website_dict)
-```
-
 

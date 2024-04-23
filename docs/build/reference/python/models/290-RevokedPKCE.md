@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **client_id** | **str** | Your application&#39;s Client ID. The application should match the one the Refresh Token was issued for. | 
 **token** | **str** | The Refresh Token you want to revoke. | 
 
-## Example
-
-```python
-from pieces_os_client.models.revoked_pkce import RevokedPKCE
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of RevokedPKCE from a JSON string
-revoked_pkce_instance = RevokedPKCE.from_json(json)
-# print the JSON string representation of the object
-print(RevokedPKCE.to_json())
-
-# convert the object into a dict
-revoked_pkce_dict = revoked_pkce_instance.to_dict()
-# create an instance of RevokedPKCE from a dict
-revoked_pkce_form_dict = revoked_pkce.from_dict(revoked_pkce_dict)
-```
-
 

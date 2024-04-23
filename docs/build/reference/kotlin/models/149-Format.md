@@ -3,6 +3,7 @@ title: Format | Kotlin SDK
 ---
 
 
+
 # Format
 
 ## Properties
@@ -27,6 +28,7 @@ Name | Type | Description | Notes
 **analysis** | [**Analysis**](Analysis) |  |  [optional]
 **relationship** | [**Relationship**](Relationship) |  |  [optional]
 **activities** | [**Activities**](Activities) |  |  [optional]
+
 
 
 

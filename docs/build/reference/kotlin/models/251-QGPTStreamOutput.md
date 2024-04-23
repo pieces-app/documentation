@@ -3,6 +3,7 @@ title: QGPTStreamOutput | Kotlin SDK
 ---
 
 
+
 # QGPTStreamOutput
 
 ## Properties
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **statusCode** | **java.math.BigDecimal** | This will be provided |  [optional]
 **errorMessage** | **kotlin.String** | optional error message is the status code is NOT 200 |  [optional]
 **agentRoutes** | [**QGPTAgentRoutes**](QGPTAgentRoutes) |  |  [optional]
+
 
 
 

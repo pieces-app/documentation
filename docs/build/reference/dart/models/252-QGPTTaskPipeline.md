@@ -4,11 +4,6 @@ title: QGPTTaskPipeline | Dart SDK
 
 # QGPTTaskPipeline
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **codeFix** | [**QGPTTaskPipelineForCodeFix**](QGPTTaskPipelineForCodeFix) |  | [optional] 
 **codeModification** | [**QGPTTaskPipelineForCodeModification**](QGPTTaskPipelineForCodeModification) |  | [optional] 
 **codeCompletion** | [**QGPTTaskPipelineForCodeCompletion**](QGPTTaskPipelineForCodeCompletion) |  | [optional] 
-
-
 
 

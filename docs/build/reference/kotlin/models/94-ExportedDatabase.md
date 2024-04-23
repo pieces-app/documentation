@@ -3,6 +3,7 @@ title: ExportedDatabase | Kotlin SDK
 ---
 
 
+
 # ExportedDatabase
 
 ## Properties
@@ -39,6 +40,7 @@ Name | Type | Description | Notes
 **workstreamSummaries** | **kotlin.collections.List&lt;kotlin.Int&gt;** |  |  [optional]
 **messageValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  |  [optional]
 **workstreamEventValues** | [**ExportedDatabaseFormats**](ExportedDatabaseFormats) |  |  [optional]
+
 
 
 

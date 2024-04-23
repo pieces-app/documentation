@@ -4,7 +4,7 @@ title: Distributions API | Python SDK
 
 # Distributions API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new distribution.
 
-### Example
+### Example {#distributions_create_new_distribution-example}
 
 
 ```python
@@ -54,34 +54,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#distributions_create_new_distribution-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seeded_distribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional] 
 
-### Return type
+### Return type {#distributions_create_new_distribution-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributions_create_new_distribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributions_create_new_distribution-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#distributions_create_new_distribution-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **distributions_delete_specific_distribution** {#distributions_delete_specific_distribution}
 > distributions_delete_specific_distribution(distribution)
@@ -90,7 +89,7 @@ No authorization required
 
 This will delete a specific distribution.
 
-### Example
+### Example {#distributions_delete_specific_distribution-example}
 
 
 ```python
@@ -120,34 +119,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#distributions_delete_specific_distribution-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **str**| This is the uuid of a specific distribution. | 
 
-### Return type
+### Return type {#distributions_delete_specific_distribution-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#distributions_delete_specific_distribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributions_delete_specific_distribution-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#distributions_delete_specific_distribution-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **distributions_snapshot** {#distributions_snapshot}
 > Distributions distributions_snapshot()
@@ -156,7 +154,7 @@ No authorization required
 
 This will get a specific snapshot of all our distributions.
 
-### Example
+### Example {#distributions_snapshot-example}
 
 
 ```python
@@ -188,29 +186,28 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#distributions_snapshot-parameters}
 
 This endpoint does not need any parameters.
 
-### Return type
+### Return type {#distributions_snapshot-return-type}
 
 [**Distributions**](../models/Distributions)
 
-### Authorization
+### Authorization {#distributions_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributions_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#distributions_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

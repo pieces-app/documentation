@@ -4,11 +4,6 @@ title: SearchedAsset | Dart SDK
 
 # SearchedAsset
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **match** | [**SearchedMatchEnum**](SearchedMatchEnum) |  | 
 **identifier** | **String** | This is the uuid of the asset. | 
 **pseudo** | **bool** | If this is a pseudo asset that was also returned. | [optional] 
-
-
 
 

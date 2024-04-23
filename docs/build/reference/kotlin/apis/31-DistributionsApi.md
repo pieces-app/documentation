@@ -4,7 +4,7 @@ title: Distributions API | Kotlin SDK
 
 # Distributions API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new distribution.
 
-### Example
+### Example {#distributionscreatenewdistribution-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,21 +40,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionscreatenewdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededDistribution** | [**SeededDistribution**](../models/SeededDistribution)|  | [optional]
 
-### Return type
+### Return type {#distributionscreatenewdistribution-return-type}
 
 [**Distribution**](../models/Distribution)
 
-### Authorization
+### Authorization {#distributionscreatenewdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionscreatenewdistribution-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -66,7 +66,7 @@ No authorization required
 
 This will delete a specific distribution.
 
-### Example
+### Example {#distributionsdeletespecificdistribution-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -85,21 +85,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionsdeletespecificdistribution-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **distribution** | **kotlin.String**| This is the uuid of a specific distribution. |
 
-### Return type
+### Return type {#distributionsdeletespecificdistribution-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#distributionsdeletespecificdistribution-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionsdeletespecificdistribution-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -111,7 +111,7 @@ No authorization required
 
 This will get a specific snapshot of all our distributions.
 
-### Example
+### Example {#distributionssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -130,18 +130,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#distributionssnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#distributionssnapshot-return-type}
 
 [**Distributions**](../models/Distributions)
 
-### Authorization
+### Authorization {#distributionssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#distributionssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

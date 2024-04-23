@@ -21,22 +21,4 @@ Name | Type | Description | Notes
 **adoption** | [**SeededTrackedAdoptionEvent**](SeededTrackedAdoptionEvent) |  | [optional] 
 **conversation** | [**SeededTrackedConversationEvent**](SeededTrackedConversationEvent) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_connector_tracking import SeededConnectorTracking
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededConnectorTracking from a JSON string
-seeded_connector_tracking_instance = SeededConnectorTracking.from_json(json)
-# print the JSON string representation of the object
-print(SeededConnectorTracking.to_json())
-
-# convert the object into a dict
-seeded_connector_tracking_dict = seeded_connector_tracking_instance.to_dict()
-# create an instance of SeededConnectorTracking from a dict
-seeded_connector_tracking_form_dict = seeded_connector_tracking.from_dict(seeded_connector_tracking_dict)
-```
-
 

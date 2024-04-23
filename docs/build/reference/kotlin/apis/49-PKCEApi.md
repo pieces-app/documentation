@@ -4,7 +4,7 @@ title: PKCE API | Kotlin SDK
 
 # PKCE API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 This is a function to Clear a PKCE Authentication Flow
 
-### Example
+### Example {#clearpkce-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,18 +40,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#clearpkce-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#clearpkce-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#clearpkce-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#clearpkce-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -63,7 +63,7 @@ No authorization required
 
 An endpoint to get the PKCE Code - this endpoint proxies the call out to Authorize within Auth0
 
-### Example
+### Example {#generatecode-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -83,21 +83,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#generatecode-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededPKCE** | [**SeededPKCE**](../models/SeededPKCE)| All of the properties that the client might want to send over to authorize a PKCE Code Flow | [optional]
 
-### Return type
+### Return type {#generatecode-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#generatecode-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#generatecode-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -109,7 +109,7 @@ No authorization required
 
 A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 
-### Example
+### Example {#generatetoken-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -129,21 +129,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#generatetoken-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tokenizedPKCE** | [**TokenizedPKCE**](../models/TokenizedPKCE)| The needed properties to exchange a PKCE Code for an OAuth Token | [optional]
 
-### Return type
+### Return type {#generatetoken-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#generatetoken-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#generatetoken-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -155,7 +155,7 @@ Your GET endpoint
 
 An endpoint that returns a PKCE Challenge
 
-### Example
+### Example {#getchallenge-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -174,18 +174,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getchallenge-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getchallenge-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#getchallenge-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getchallenge-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -197,7 +197,7 @@ No authorization required
 
 This is a callback function hosted to help pass along the ResultedPKCE code from authorize through to the callback.
 
-### Example
+### Example {#respondwithcode-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -219,7 +219,7 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#respondwithcode-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -227,15 +227,15 @@ Name | Type | Description  | Notes
  **state** | **kotlin.String**| Likely the state that will be returned which should match the requested state as well as the nonce |
  **schema** | [**EmbeddedModelSchema**](../models/EmbeddedModelSchema)|  | [optional]
 
-### Return type
+### Return type {#respondwithcode-return-type}
 
 [**PKCE**](../models/PKCE)
 
-### Authorization
+### Authorization {#respondwithcode-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#respondwithcode-http-request-headers}
 
  - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json

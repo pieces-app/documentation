@@ -22,22 +22,4 @@ Name | Type | Description | Notes
 **analysis** | **str** | this is just a reference to the analysis parent object. | 
 **model** | [**Model**](Model) |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.code_analysis import CodeAnalysis
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of CodeAnalysis from a JSON string
-code_analysis_instance = CodeAnalysis.from_json(json)
-# print the JSON string representation of the object
-print(CodeAnalysis.to_json())
-
-# convert the object into a dict
-code_analysis_dict = code_analysis_instance.to_dict()
-# create an instance of CodeAnalysis from a dict
-code_analysis_form_dict = code_analysis.from_dict(code_analysis_dict)
-```
-
 

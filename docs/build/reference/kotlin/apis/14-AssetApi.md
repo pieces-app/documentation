@@ -4,7 +4,7 @@ title: Asset API | Kotlin SDK
 
 # Asset API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 Associates a tag with a specified asset. It performs the same action as the tag equivalent.
 
-### Example
+### Example {#assetassociatetag-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -52,22 +52,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetassociatetag-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **tag** | **kotlin.String**| tag id |
 
-### Return type
+### Return type {#assetassociatetag-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetassociatetag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetassociatetag-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -79,7 +79,7 @@ No authorization required
 
 Associates a website with an asset. It performs the same action as its website equivalent.
 
-### Example
+### Example {#assetassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -99,22 +99,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#assetassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -126,7 +126,7 @@ No authorization required
 
 This will associate a asset with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#assetassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -146,22 +146,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#assetassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -173,7 +173,7 @@ No authorization required
 
 Disassociates a tag from an asset. It performs the same action as the tag equivalent.
 
-### Example
+### Example {#assetdisassociatetag-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -193,22 +193,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetdisassociatetag-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#assetdisassociatetag-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetdisassociatetag-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociatetag-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -220,7 +220,7 @@ No authorization required
 
 Disassociates a website from an asset. It performs the same action as the website equivalent.
 
-### Example
+### Example {#assetdisassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -240,22 +240,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetdisassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **website** | **kotlin.String**| website id |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#assetdisassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetdisassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -267,7 +267,7 @@ No authorization required
 
 This will enable us to disassociate an asset from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#assetdisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -287,22 +287,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetdisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#assetdisassociateworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetdisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetdisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -314,7 +314,7 @@ No authorization required
 
 Retrieves the formats available for a specified asset.
 
-### Example
+### Example {#assetformats-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -335,22 +335,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetformats-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetformats-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#assetformats-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetformats-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -362,7 +362,7 @@ No authorization required
 
 Retrieves the formats available for a specified asset.
 
-### Example
+### Example {#assetreclassify-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -383,22 +383,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetreclassify-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **assetReclassification** | [**AssetReclassification**](../models/AssetReclassification)| This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified. | [optional]
 
-### Return type
+### Return type {#assetreclassify-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetreclassify-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetreclassify-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -410,7 +410,7 @@ No authorization required
 
 Increments the scores associated with the specified asset based on the provided SeededScoreIncrement data in the request body.
 
-### Example
+### Example {#assetscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -430,22 +430,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#assetscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#assetscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -457,7 +457,7 @@ No authorization required
 
 Retrieves the snapshot of a specific asset
 
-### Example
+### Example {#assetsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -478,22 +478,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetsnapshot-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -505,7 +505,7 @@ No authorization required
 
 Retrieves a snapshot of a specific asset, along with the user requesting the snapshot.
 
-### Example
+### Example {#assetsnapshotpost-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -527,7 +527,7 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsnapshotpost-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -535,15 +535,15 @@ Name | Type | Description  | Notes
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededAccessor** | [**SeededAccessor**](../models/SeededAccessor)|  | [optional]
 
-### Return type
+### Return type {#assetsnapshotpost-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetsnapshotpost-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsnapshotpost-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -555,7 +555,7 @@ No authorization required
 
 Retrieves activity events specific to the given asset.
 
-### Example
+### Example {#assetspecificassetactivities-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -576,22 +576,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetspecificassetactivities-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetspecificassetactivities-return-type}
 
 [**Activities**](../models/Activities)
 
-### Authorization
+### Authorization {#assetspecificassetactivities-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetactivities-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -603,7 +603,7 @@ No authorization required
 
 Retrieves conversations specific to the given asset.
 
-### Example
+### Example {#assetspecificassetconversations-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -624,22 +624,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetspecificassetconversations-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetspecificassetconversations-return-type}
 
 [**Conversations**](../models/Conversations)
 
-### Authorization
+### Authorization {#assetspecificassetconversations-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetconversations-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -651,7 +651,7 @@ No authorization required
 
 Retrieves an export version of the specified asset.
 
-### Example
+### Example {#assetspecificassetexport-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -672,22 +672,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetspecificassetexport-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **exportType** | **kotlin.String**| This specifies the type of export the user wants. | [enum: HTML, MD]
 
-### Return type
+### Return type {#assetspecificassetexport-return-type}
 
 [**ExportedAsset**](../models/ExportedAsset)
 
-### Authorization
+### Authorization {#assetspecificassetexport-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetspecificassetexport-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -699,7 +699,7 @@ No authorization required
 
 Allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 
-### Example
+### Example {#assetupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -720,22 +720,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **asset** | [**Asset**](../models/Asset)| This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset. | [optional]
 
-### Return type
+### Return type {#assetupdate-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

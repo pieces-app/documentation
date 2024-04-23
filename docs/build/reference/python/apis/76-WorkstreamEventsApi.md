@@ -4,7 +4,7 @@ title: WorkstreamEvents API | Python SDK
 
 # WorkstreamEvents API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new WorkstreamEvent in the database.
 
-### Example
+### Example {#workstream_events_create_new_workstream_event-example}
 
 
 ```python
@@ -55,7 +55,7 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_events_create_new_workstream_event-parameters}
 
 
 Name | Type | Description  | Notes
@@ -63,27 +63,26 @@ Name | Type | Description  | Notes
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
  **seeded_workstream_event** | [**SeededWorkstreamEvent**](../models/SeededWorkstreamEvent)|  | [optional] 
 
-### Return type
+### Return type {#workstream_events_create_new_workstream_event-return-type}
 
 [**WorkstreamEvent**](../models/WorkstreamEvent)
 
-### Authorization
+### Authorization {#workstream_events_create_new_workstream_event-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_events_create_new_workstream_event-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_events_create_new_workstream_event-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_events_delete_specific_workstream_event** {#workstream_events_delete_specific_workstream_event}
 > workstream_events_delete_specific_workstream_event(workstream_event)
@@ -92,7 +91,7 @@ No authorization required
 
 This will delete a specific workstream_event from the database!
 
-### Example
+### Example {#workstream_events_delete_specific_workstream_event-example}
 
 
 ```python
@@ -122,34 +121,33 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_events_delete_specific_workstream_event-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstream_event** | **str**| This is a identifier that is used to identify a specific workstream_event. | 
 
-### Return type
+### Return type {#workstream_events_delete_specific_workstream_event-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#workstream_events_delete_specific_workstream_event-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_events_delete_specific_workstream_event-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_events_delete_specific_workstream_event-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **204** | No Content |  -  |
 **500** | Internal Server Error |  -  |
-
-
 
 ## **workstream_events_snapshot** {#workstream_events_snapshot}
 > WorkstreamEvents workstream_events_snapshot(transferables=transferables)
@@ -158,7 +156,7 @@ No authorization required
 
 This will get a snapshot of all your workstream events.
 
-### Example
+### Example {#workstream_events_snapshot-example}
 
 
 ```python
@@ -191,32 +189,31 @@ with pieces_os_client.ApiClient(configuration) as api_client:
 
 
 
-### Parameters
+### Parameters {#workstream_events_snapshot-parameters}
 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#workstream_events_snapshot-return-type}
 
 [**WorkstreamEvents**](../models/WorkstreamEvents)
 
-### Authorization
+### Authorization {#workstream_events_snapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstream_events_snapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
 
-### HTTP response details
+
+### HTTP response details {#workstream_events_snapshot-http-response-details}
 
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | OK |  -  |
 **500** | Internal Server Error |  -  |
-
-
 

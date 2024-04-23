@@ -3,6 +3,7 @@ title: ModelUsageEnum | Kotlin SDK
 ---
 
 
+
 # ModelUsageEnum
 
 ## Enum
@@ -49,6 +50,7 @@ title: ModelUsageEnum | Kotlin SDK
     * `TEXT_VS_CODE_SEGMENTATION` (value: `"TEXT_VS_CODE_SEGMENTATION"`)
 
     * `TEXT_EMBEDDING` (value: `"TEXT_EMBEDDING"`)
+
 
 
 

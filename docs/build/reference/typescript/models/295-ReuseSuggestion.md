@@ -15,27 +15,4 @@ Name | Type
 **suggested** | **boolean**
 **assets** | [**Assets**](Assets)
 
-## Example
-
-```typescript
-import { ReuseSuggestion } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: ReuseSuggestion = {
-    "schema": null,
-    "suggested": null,
-    "assets": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as ReuseSuggestion
-console.log(exampleParsed)
-```
-
 

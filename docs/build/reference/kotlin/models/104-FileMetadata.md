@@ -3,6 +3,7 @@ title: FileMetadata | Kotlin SDK
 ---
 
 
+
 # FileMetadata
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** | This is the name of your file. |  [optional]
 **ext** | [**ClassificationSpecificEnum**](ClassificationSpecificEnum) |  |  [optional]
 **propertySize** | **kotlin.Int** | This is the size(in bytes) |  [optional]
+
 
 
 

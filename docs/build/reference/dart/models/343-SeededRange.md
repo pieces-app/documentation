@@ -4,11 +4,6 @@ title: SeededRange | Dart SDK
 
 # SeededRange
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **between** | **bool** |  | [optional] 
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
 **conversation** | [**SeededRangeConversationAssociation**](SeededRangeConversationAssociation) |  | [optional] 
-
-
 
 

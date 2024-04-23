@@ -4,7 +4,7 @@ title: AnchorPoint API | Kotlin SDK
 
 # AnchorPoint API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchorpointscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,22 +40,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#anchorpointscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#anchorpointscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -67,7 +67,7 @@ No authorization required
 
 This will get a snapshot of a single anchorPoint.
 
-### Example
+### Example {#anchorpointspecificanchorpointsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -88,22 +88,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointspecificanchorpointsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **anchorPoint** | **kotlin.String**| This is the specific uuid of an anchor_point. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#anchorpointspecificanchorpointsnapshot-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### Authorization
+### Authorization {#anchorpointspecificanchorpointsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointspecificanchorpointsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -115,7 +115,7 @@ No authorization required
 
 This will update a specific anchorPoint.
 
-### Example
+### Example {#anchorpointupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -136,22 +136,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorpointupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **anchorPoint** | [**AnchorPoint**](../models/AnchorPoint)|  | [optional]
 
-### Return type
+### Return type {#anchorpointupdate-return-type}
 
 [**AnchorPoint**](../models/AnchorPoint)
 
-### Authorization
+### Authorization {#anchorpointupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorpointupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

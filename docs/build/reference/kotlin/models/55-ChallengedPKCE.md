@@ -3,6 +3,7 @@ title: ChallengedPKCE | Kotlin SDK
 ---
 
 
+
 # ChallengedPKCE
 
 ## Properties
@@ -16,11 +17,11 @@ Name | Type | Description | Notes
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 
 
-<a id="Method"></a>
-## Enum: method
+## method
 Name | Value
 ---- | -----
 method | S256
+
 
 
 

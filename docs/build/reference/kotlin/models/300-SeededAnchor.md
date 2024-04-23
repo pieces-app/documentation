@@ -3,6 +3,7 @@ title: SeededAnchor | Kotlin SDK
 ---
 
 
+
 # SeededAnchor
 
 ## Properties
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 **name** | **kotlin.String** |  |  [optional]
 **annotations** | [**kotlin.collections.List&lt;SeededAnnotation&gt;**](SeededAnnotation) |  |  [optional]
 **conversation** | **kotlin.String** |  |  [optional]
+
 
 
 

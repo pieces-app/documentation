@@ -3,6 +3,7 @@ title: TLPCodeProcessing | Kotlin SDK
 ---
 
 
+
 # TLPCodeProcessing
 
 ## Properties
@@ -13,6 +14,7 @@ Name | Type | Description | Notes
 **file** | [**TLPCodeFileAnalytics**](TLPCodeFileAnalytics) |  |  [optional]
 **directory** | [**TLPCodeDirectoryAnalytics**](TLPCodeDirectoryAnalytics) |  |  [optional]
 **repository** | [**TLPCodeRepositoryAnalytics**](TLPCodeRepositoryAnalytics) |  |  [optional]
+
 
 
 

@@ -4,7 +4,7 @@ title: Assets API | Kotlin SDK
 
 # Assets API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 Accepts a seeded (a structure that comes before an asset, and will be used in creation) asset and uploads it to Pieces. The response will be the newly created Asset object.
 
-### Example
+### Example {#assetscreatenewasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -53,22 +53,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetscreatenewasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seed** | [**Seed**](../models/Seed)|  | [optional]
 
-### Return type
+### Return type {#assetscreatenewasset-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetscreatenewasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetscreatenewasset-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -80,7 +80,7 @@ No authorization required
 
 Deletes a specific asset from the system by providing its unique identifier (UID). Upon successful deletion, it returns the UID of the deleted asset.
 
-### Example
+### Example {#assetsdeleteasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -100,21 +100,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsdeleteasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#assetsdeleteasset-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#assetsdeleteasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsdeleteasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -126,7 +126,7 @@ No authorization required
 
 Allows developers to input a Seed and receive a drafted asset with preprocessed information. No data is persisted; this is solely an input/output endpoint.  For images, it returns the original Seed.
 
-### Example
+### Example {#assetsdraft-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -147,22 +147,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsdraft-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seed** | [**Seed**](../models/Seed)|  | [optional]
 
-### Return type
+### Return type {#assetsdraft-return-type}
 
 [**Seed**](../models/Seed)
 
-### Authorization
+### Authorization {#assetsdraft-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsdraft-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -174,7 +174,7 @@ Your GET endpoint
 
 Expects a SeededAssetsRecommendation Model in the request body, containing assets and interactions. Returns an Assets Model suitable for UI.
 
-### Example
+### Example {#assetsgetrecommendedassets-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -194,21 +194,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsgetrecommendedassets-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAssetsRecommendation** | [**SeededAssetsRecommendation**](../models/SeededAssetsRecommendation)| The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. | [optional]
 
-### Return type
+### Return type {#assetsgetrecommendedassets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assetsgetrecommendedassets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsgetrecommendedassets-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -220,7 +220,7 @@ No authorization required
 
 Retrieves one or more related assets when provided with one or more input assets.
 
-### Example
+### Example {#assetsgetrelatedassets-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -240,21 +240,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsgetrelatedassets-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **assets** | [**Assets**](../models/Assets)| The body of the request is an object (Assets Model) with iterable internally. | [optional]
 
-### Return type
+### Return type {#assetsgetrelatedassets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assetsgetrelatedassets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsgetrelatedassets-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -266,7 +266,7 @@ No authorization required
 
 Retrieves all asset IDs associated with your account.
 
-### Example
+### Example {#assetsidentifierssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -286,21 +286,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsidentifierssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#assetsidentifierssnapshot-return-type}
 
 [**FlattenedAssets**](../models/FlattenedAssets)
 
-### Authorization
+### Authorization {#assetsidentifierssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsidentifierssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -312,7 +312,7 @@ No authorization required
 
 Retrieves a snapshot exclusively containing pseudo Assets from your Pieces drive.
 
-### Example
+### Example {#assetspseudosnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -331,18 +331,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetspseudosnapshot-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#assetspseudosnapshot-return-type}
 
 [**PseudoAssets**](../models/PseudoAssets)
 
-### Authorization
+### Authorization {#assetspseudosnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetspseudosnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -354,7 +354,7 @@ No authorization required
 
 Performs a search across your pieces and returns Assets (the results) based on your query. Presently, it only requires your query to be sent in the body. It is mandatory to include searchable_tags (comma-separated values of tags) or a query string.  If a query is provided, a fuzzy search will be conducted. If searchable tags are provided, a tag-based search will be executed.  If neither are included, a 500 error will be returned.
 
-### Example
+### Example {#assetssearchassets-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -377,7 +377,7 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetssearchassets-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -386,15 +386,15 @@ Name | Type | Description  | Notes
  **searchableTags** | **kotlin.String**| This is a comma separated value of tags used for search. | [optional]
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#assetssearchassets-return-type}
 
 [**SearchedAssets**](../models/SearchedAssets)
 
-### Authorization
+### Authorization {#assetssearchassets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetssearchassets-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -406,7 +406,7 @@ No authorization required
 
 Enables searching through your pieces and returns Assets (the results) based on your query.  When sending a query in the request body, fuzzy search is applied.  Additionally, the request body can include a search space, currently as a list of UUIDs (and potentially Seeds in the future). Optional filters can also be included in the request body, represented as an iterable of filters, all of which are combined using AND operations.
 
-### Example
+### Example {#assetssearchwithfilters-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -428,7 +428,7 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetssearchwithfilters-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -436,15 +436,15 @@ Name | Type | Description  | Notes
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
  **assetsSearchWithFiltersInput** | [**AssetsSearchWithFiltersInput**](../models/AssetsSearchWithFiltersInput)|  | [optional]
 
-### Return type
+### Return type {#assetssearchwithfilters-return-type}
 
 [**AssetsSearchWithFiltersOutput**](../models/AssetsSearchWithFiltersOutput)
 
-### Authorization
+### Authorization {#assetssearchwithfilters-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetssearchwithfilters-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -456,7 +456,7 @@ No authorization required
 
 Get all of the users Assets.
 
-### Example
+### Example {#assetssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -478,7 +478,7 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -486,15 +486,15 @@ Name | Type | Description  | Notes
  **suggested** | **kotlin.Boolean**| This will let us know if a developer, wants a snapshot related to suggested content or normal content | [optional]
  **pseudo** | **kotlin.Boolean**| This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. | [optional]
 
-### Return type
+### Return type {#assetssnapshot-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#assetssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -506,7 +506,7 @@ No authorization required
 
 Retrieves the available formats for a specific asset identified by its ID
 
-### Example
+### Example {#assetsspecificassetformatssnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -527,22 +527,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsspecificassetformatssnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetsspecificassetformatssnapshot-return-type}
 
 [**Formats**](../models/Formats)
 
-### Authorization
+### Authorization {#assetsspecificassetformatssnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsspecificassetformatssnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -554,7 +554,7 @@ No authorization required
 
 Allows clients to retrieve details of a specific asset by providing its UUID in the path.
 
-### Example
+### Example {#assetsspecificassetsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -575,22 +575,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsspecificassetsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#assetsspecificassetsnapshot-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetsspecificassetsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsspecificassetsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -602,7 +602,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your asset&#39;s identifiers (UUIDs).
 
-### Example
+### Example {#assetsstreamidentifiers-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -621,18 +621,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetsstreamidentifiers-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#assetsstreamidentifiers-return-type}
 
 [**StreamedIdentifiers**](../models/StreamedIdentifiers)
 
-### Authorization
+### Authorization {#assetsstreamidentifiers-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetsstreamidentifiers-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -644,7 +644,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your assets, including their transferable.
 
-### Example
+### Example {#getassetsstreamtransferables-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -663,18 +663,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#getassetsstreamtransferables-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#getassetsstreamtransferables-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#getassetsstreamtransferables-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#getassetsstreamtransferables-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -686,7 +686,7 @@ No authorization required
 
 Provides a WebSocket connection that emits changes to your assets.
 
-### Example
+### Example {#streamassets-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -705,18 +705,18 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#streamassets-parameters}
 This endpoint does not need any parameter.
 
-### Return type
+### Return type {#streamassets-return-type}
 
 [**Assets**](../models/Assets)
 
-### Authorization
+### Authorization {#streamassets-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#streamassets-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

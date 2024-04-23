@@ -4,11 +4,6 @@ title: TransferableBytes | Dart SDK
 
 # TransferableBytes
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **base64** | **List\<int\>** | NOT IMPLEMENTED | [optional] [default to const []]
 **base64Url** | **List\<int\>** | NOT IMPLEMENTED | [optional] [default to const []]
 **dataUrl** | **List\<int\>** | NOT IMPLEMENTED | [optional] [default to const []]
-
-
 
 

@@ -15,22 +15,4 @@ Name | Type | Description | Notes
 **bytes** | [**TransferableBytes**](TransferableBytes) |  | [optional] 
 **metadata** | [**FragmentMetadata**](FragmentMetadata) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.seeded_fragment import SeededFragment
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of SeededFragment from a JSON string
-seeded_fragment_instance = SeededFragment.from_json(json)
-# print the JSON string representation of the object
-print(SeededFragment.to_json())
-
-# convert the object into a dict
-seeded_fragment_dict = seeded_fragment_instance.to_dict()
-# create an instance of SeededFragment from a dict
-seeded_fragment_form_dict = seeded_fragment.from_dict(seeded_fragment_dict)
-```
-
 

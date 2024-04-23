@@ -3,6 +3,7 @@ title: Score | Kotlin SDK
 ---
 
 
+
 # Score
 
 ## Properties
@@ -15,6 +16,7 @@ Name | Type | Description | Notes
 **reuse** | **kotlin.Int** |  |  [optional]
 **update** | **kotlin.Int** |  |  [optional]
 **reference** | **kotlin.Int** |  |  [optional]
+
 
 
 

@@ -3,6 +3,7 @@ title: FlattenedDistribution | Kotlin SDK
 ---
 
 
+
 # FlattenedDistribution
 
 ## Properties
@@ -16,6 +17,7 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  |  [optional]
 **mailgun** | [**MailgunDistribution**](MailgunDistribution) |  |  [optional]
 **github** | [**GitHubDistribution**](GitHubDistribution) |  |  [optional]
+
 
 
 

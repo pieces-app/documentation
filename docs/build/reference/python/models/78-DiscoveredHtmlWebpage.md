@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **assets** | [**DiscoveredAssets**](DiscoveredAssets) |  | 
 **url** | **str** |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.discovered_html_webpage import DiscoveredHtmlWebpage
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of DiscoveredHtmlWebpage from a JSON string
-discovered_html_webpage_instance = DiscoveredHtmlWebpage.from_json(json)
-# print the JSON string representation of the object
-print(DiscoveredHtmlWebpage.to_json())
-
-# convert the object into a dict
-discovered_html_webpage_dict = discovered_html_webpage_instance.to_dict()
-# create an instance of DiscoveredHtmlWebpage from a dict
-discovered_html_webpage_form_dict = discovered_html_webpage.from_dict(discovered_html_webpage_dict)
-```
-
 

@@ -24,22 +24,4 @@ Name | Type | Description | Notes
 **distributions** | [**FlattenedDistributions**](FlattenedDistributions) |  | [optional] 
 **score** | [**Score**](Score) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.flattened_share import FlattenedShare
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of FlattenedShare from a JSON string
-flattened_share_instance = FlattenedShare.from_json(json)
-# print the JSON string representation of the object
-print(FlattenedShare.to_json())
-
-# convert the object into a dict
-flattened_share_dict = flattened_share_instance.to_dict()
-# create an instance of FlattenedShare from a dict
-flattened_share_form_dict = flattened_share.from_dict(flattened_share_dict)
-```
-
 

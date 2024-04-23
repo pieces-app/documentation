@@ -4,11 +4,6 @@ title: PKCE | Dart SDK
 
 # PKCE
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -19,7 +14,5 @@ Name | Type | Description | Notes
 **seed** | [**SeededPKCE**](SeededPKCE) |  | [optional] 
 **token** | [**TokenizedPKCE**](TokenizedPKCE) |  | [optional] 
 **auth0** | [**Auth0**](Auth0) |  | [optional] 
-
-
 
 

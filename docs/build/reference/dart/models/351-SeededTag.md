@@ -4,11 +4,6 @@ title: SeededTag | Dart SDK
 
 # SeededTag
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  | [optional] 
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  | [optional] 
 **person** | **String** | uuid of the person, you want to add this tag too | [optional] 
-
-
 
 

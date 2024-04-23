@@ -4,11 +4,6 @@ title: OAuthAccount | Dart SDK
 
 # OAuthAccount
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -21,7 +16,5 @@ Name | Type | Description | Notes
 **name** | **String** | The user's full name. | 
 **picture** | **String** | A URI pointing to the user's picture. | 
 **nickname** | **String** | The user's nickname. | 
-
-
 
 

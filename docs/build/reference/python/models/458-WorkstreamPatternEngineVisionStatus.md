@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **activation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
 **deactivation** | [**AnonymousTemporalRange**](AnonymousTemporalRange) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.workstream_pattern_engine_vision_status import WorkstreamPatternEngineVisionStatus
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of WorkstreamPatternEngineVisionStatus from a JSON string
-workstream_pattern_engine_vision_status_instance = WorkstreamPatternEngineVisionStatus.from_json(json)
-# print the JSON string representation of the object
-print(WorkstreamPatternEngineVisionStatus.to_json())
-
-# convert the object into a dict
-workstream_pattern_engine_vision_status_dict = workstream_pattern_engine_vision_status_instance.to_dict()
-# create an instance of WorkstreamPatternEngineVisionStatus from a dict
-workstream_pattern_engine_vision_status_form_dict = workstream_pattern_engine_vision_status.from_dict(workstream_pattern_engine_vision_status_dict)
-```
-
 

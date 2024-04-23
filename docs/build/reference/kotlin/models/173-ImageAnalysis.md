@@ -3,6 +3,7 @@ title: ImageAnalysis | Kotlin SDK
 ---
 
 
+
 # ImageAnalysis
 
 ## Properties
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **analysis** | **kotlin.String** | this is a reference to the analysis. | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
 **ocr** | [**OCRAnalysis**](OCRAnalysis) |  |  [optional]
+
 
 
 

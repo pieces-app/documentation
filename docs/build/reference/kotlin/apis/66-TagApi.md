@@ -4,7 +4,7 @@ title: Tag API | Kotlin SDK
 
 # Tag API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 This will associate a tag with a asset.
 
-### Example
+### Example {#tagassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -44,22 +44,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
  **tag** | **kotlin.String**| tag id |
 
-### Return type
+### Return type {#tagassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -71,7 +71,7 @@ No authorization required
 
 This will associate a tag with a person.
 
-### Example
+### Example {#tagassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -91,22 +91,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#tagassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -118,7 +118,7 @@ No authorization required
 
 This will enable us to dissassociate a tag from a asset.
 
-### Example
+### Example {#tagdisassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -138,22 +138,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagdisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#tagdisassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagdisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -165,7 +165,7 @@ No authorization required
 
 This will enable us to dissassociate a tag from a person.
 
-### Example
+### Example {#tagdisassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -185,22 +185,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagdisassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#tagdisassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagdisassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagdisassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -212,7 +212,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#tagscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -232,22 +232,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#tagscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#tagscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -259,7 +259,7 @@ No authorization required
 
 This will update a specific tag.
 
-### Example
+### Example {#tagupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -280,22 +280,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **tag** | [**Tag**](../models/Tag)|  | [optional]
 
-### Return type
+### Return type {#tagupdate-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tagupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -307,7 +307,7 @@ No authorization required
 
 This will get a specific tag.
 
-### Example
+### Example {#tagsspecifictagsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -328,22 +328,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#tagsspecifictagsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag** | **kotlin.String**| tag id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#tagsspecifictagsnapshot-return-type}
 
 [**Tag**](../models/Tag)
 
-### Authorization
+### Authorization {#tagsspecifictagsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#tagsspecifictagsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

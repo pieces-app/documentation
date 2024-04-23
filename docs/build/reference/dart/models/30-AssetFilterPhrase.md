@@ -4,11 +4,6 @@ title: AssetFilterPhrase | Dart SDK
 
 # AssetFilterPhrase
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **title** | **bool** |  | [optional] 
 **content** | **bool** |  | [optional] 
 **options** | [**AssetFilterPhraseOptions**](AssetFilterPhraseOptions) |  | [optional] 
-
-
 
 

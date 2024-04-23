@@ -4,7 +4,7 @@ title: Shares API | Kotlin SDK
 
 # Shares API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 This endpoint will accept an asset. Response here will be a Share that was created.
 
-### Example
+### Example {#sharescreatenewshare-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -42,22 +42,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharescreatenewshare-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededShare** | [**SeededShare**](../models/SeededShare)|  | [optional]
 
-### Return type
+### Return type {#sharescreatenewshare-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#sharescreatenewshare-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharescreatenewshare-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -69,7 +69,7 @@ No authorization required
 
 This endpoint will just take a share id(as a url param) to delete out of the shares table, will return the share id that was deleted.
 
-### Example
+### Example {#sharesdeleteshare-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -89,21 +89,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharesdeleteshare-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
 
-### Return type
+### Return type {#sharesdeleteshare-return-type}
 
 **kotlin.String**
 
-### Authorization
+### Authorization {#sharesdeleteshare-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharesdeleteshare-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -115,7 +115,7 @@ No authorization required
 
 This will return all of your shares. A Share is an asset that you as a user decided to share with another user via link.
 
-### Example
+### Example {#sharessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -135,21 +135,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#sharessnapshot-return-type}
 
 [**Shares**](../models/Shares)
 
-### Authorization
+### Authorization {#sharessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -161,7 +161,7 @@ No authorization required
 
 This is an endpoint to enable a client to access a specific share through a provided share id.
 
-### Example
+### Example {#sharesspecificsharesnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -182,22 +182,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#sharesspecificsharesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **share** | **kotlin.String**| Share id |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#sharesspecificsharesnapshot-return-type}
 
 [**Share**](../models/Share)
 
-### Authorization
+### Authorization {#sharesspecificsharesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#sharesspecificsharesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

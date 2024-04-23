@@ -4,7 +4,7 @@ title: Anchor API | Dart SDK
 
 # Anchor API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 This will associate a anchor with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchorassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -38,27 +38,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **String**| This is the specific uuid of an anchor. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **anchor** | **String** | This is the specific uuid of an anchor. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#anchorassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchorassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **anchorDisassociateWorkstreamSummary** {#anchordisassociateworkstreamsummary}
 > anchorDisassociateWorkstreamSummary(anchor, workstreamSummary)
@@ -67,7 +65,7 @@ No authorization required
 
 This will enable us to disassociate a anchor from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#anchordisassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -82,27 +80,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchordisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **String**| This is the specific uuid of an anchor. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **anchor** | **String** | This is the specific uuid of an anchor. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#anchordisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchordisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchordisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **anchorRename** {#anchorrename}
 > Anchor anchorRename(anchor, transferables)
@@ -111,7 +107,7 @@ No authorization required
 
 This will rename a specific anchor.
 
-### Example
+### Example {#anchorrename-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -127,27 +123,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorrename-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **String**| This is the specific uuid of an anchor. | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchor** | **String** | This is the specific uuid of an anchor. | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchorrename-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchorrename-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorrename-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **anchorScoresIncrement** {#anchorscoresincrement}
 > anchorScoresIncrement(anchor, seededScoreIncrement)
@@ -156,7 +150,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#anchorscoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -171,27 +165,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **String**| This is the specific uuid of an anchor. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **anchor** | **String** | This is the specific uuid of an anchor. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#anchorscoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#anchorscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **anchorSpecificAnchorSnapshot** {#anchorspecificanchorsnapshot}
 > Anchor anchorSpecificAnchorSnapshot(anchor, transferables)
@@ -200,7 +192,7 @@ No authorization required
 
 This will get a snapshot of a single anchor.
 
-### Example
+### Example {#anchorspecificanchorsnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -216,27 +208,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorspecificanchorsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **anchor** | **String**| This is the specific uuid of an anchor. | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchor** | **String** | This is the specific uuid of an anchor. | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#anchorspecificanchorsnapshot-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchorspecificanchorsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorspecificanchorsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 
 ## **anchorUpdate** {#anchorupdate}
 > Anchor anchorUpdate(transferables, anchor)
@@ -245,7 +235,7 @@ No authorization required
 
 This will update a specific anchor.
 
-### Example
+### Example {#anchorupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -261,25 +251,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#anchorupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **anchor** | [**Anchor**](../models/Anchor)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **anchor** | [**Anchor**](../models/Anchor) |  | [optional] 
 
-### Return type
+### Return type {#anchorupdate-return-type}
 
 [**Anchor**](../models/Anchor)
 
-### Authorization
+### Authorization {#anchorupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#anchorupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 

@@ -3,6 +3,7 @@ title: AnnotationTypeEnum | Kotlin SDK
 ---
 
 
+
 # AnnotationTypeEnum
 
 ## Enum
@@ -19,6 +20,7 @@ title: AnnotationTypeEnum | Kotlin SDK
     * `EXPLANATION` (value: `"EXPLANATION"`)
 
     * `GIT_COMMIT` (value: `"GIT_COMMIT"`)
+
 
 
 

@@ -4,11 +4,6 @@ title: SeededAnnotation | Dart SDK
 
 # SeededAnnotation
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -24,7 +19,5 @@ Name | Type | Description | Notes
 **anchor** | **String** |  | [optional] 
 **conversation** | **String** |  | [optional] 
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
-
-
 
 

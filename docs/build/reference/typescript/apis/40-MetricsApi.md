@@ -4,7 +4,7 @@ title: Metrics API | TypeScript SDK
 
 # Metrics API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 This is going to get a snapshot of our FormatsMetrics
 
-### Example
+### Example {#getmetricsformats-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -26,25 +26,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.MetricsApi(configuration)
 
 apiInstance.getMetricsFormats().then((data: FormatsMetrics) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#getmetricsformats-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#getmetricsformats-return-type}
 
 [**FormatsMetrics**](../models/FormatsMetrics)
 
-### HTTP request headers
+### HTTP request headers {#getmetricsformats-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#getmetricsformats-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -54,7 +55,7 @@ This endpoint does not need any parameters.
 
 This will return a list of code formats in desc order from most to least formats uploaded.
 
-### Example
+### Example {#metricsformatsordered-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -63,25 +64,26 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.MetricsApi(configuration)
 
 apiInstance.metricsFormatsOrdered().then((data: OrderedMetrics) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#metricsformatsordered-parameters}
+
 This endpoint does not need any parameters.
 
 
-### Return type
+### Return type {#metricsformatsordered-return-type}
 
 [**OrderedMetrics**](../models/OrderedMetrics)
 
-### HTTP request headers
+### HTTP request headers {#metricsformatsordered-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
 
-### HTTP response details
+### HTTP response details {#metricsformatsordered-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

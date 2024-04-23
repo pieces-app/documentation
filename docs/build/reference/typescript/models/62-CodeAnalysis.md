@@ -23,35 +23,4 @@ Name | Type
 **analysis** | **string**
 **model** | [**Model**](Model)
 
-## Example
-
-```typescript
-import { CodeAnalysis } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: CodeAnalysis = {
-    "schema": null,
-    "tokenized": null,
-    "language": null,
-    "type": null,
-    "prediction": null,
-    "similarity": null,
-    "top5Colors": null,
-    "top5Sorted": null,
-    "id": null,
-    "analysis": null,
-    "model": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as CodeAnalysis
-console.log(exampleParsed)
-```
-
 

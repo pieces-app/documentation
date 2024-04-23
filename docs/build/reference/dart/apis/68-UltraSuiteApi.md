@@ -4,7 +4,7 @@ title: UltraSuite API | Dart SDK
 
 # UltraSuite API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This Endpoint will create an Asset that is sent from UltraSuite.
 
-### Example
+### Example {#assetscreateultrasuiteasset-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -33,24 +33,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#assetscreateultrasuiteasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **seededUltraSuiteAsset** | [**SeededUltraSuiteAsset**](../models/SeededUltraSuiteAsset)|  | [optional] 
+ **seededUltraSuiteAsset** | [**SeededUltraSuiteAsset**](../models/SeededUltraSuiteAsset) |  | [optional] 
 
-### Return type
+### Return type {#assetscreateultrasuiteasset-return-type}
 
 [**Asset**](../models/Asset)
 
-### Authorization
+### Authorization {#assetscreateultrasuiteasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#assetscreateultrasuiteasset-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
-
 

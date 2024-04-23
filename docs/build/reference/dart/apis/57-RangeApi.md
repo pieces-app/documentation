@@ -4,7 +4,7 @@ title: Range API | Dart SDK
 
 # Range API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 This will associate a range with a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangeassociateconversationgroundingtemporalrangeworkstreams-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -39,27 +39,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
- **conversation** | **String**| This is the uuid of a conversation. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
+ **conversation** | **String** | This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#rangeassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **rangeAssociateWorkstreamSummary** {#rangeassociateworkstreamsummary}
 > rangeAssociateWorkstreamSummary(range, workstreamSummary)
@@ -68,7 +66,7 @@ No authorization required
 
 This will associate a range with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangeassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -83,27 +81,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#rangeassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangeassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **rangeDisassociateConversationGroundingTemporalRangeWorkstreams** {#rangedisassociateconversationgroundingtemporalrangeworkstreams}
 > rangeDisassociateConversationGroundingTemporalRangeWorkstreams(range, conversation)
@@ -112,7 +108,7 @@ No authorization required
 
 This will enable us to disassociate a range from a conversation(grounding.temporal.workstreams). This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#rangedisassociateconversationgroundingtemporalrangeworkstreams-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -127,27 +123,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateconversationgroundingtemporalrangeworkstreams-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
- **conversation** | **String**| This is the uuid of a conversation. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
+ **conversation** | **String** | This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#rangedisassociateconversationgroundingtemporalrangeworkstreams-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateconversationgroundingtemporalrangeworkstreams-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateconversationgroundingtemporalrangeworkstreams-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **rangeDisassociateWorkstreamSummary** {#rangedisassociateworkstreamsummary}
 > rangeDisassociateWorkstreamSummary(range, workstreamSummary)
@@ -156,7 +150,7 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#rangedisassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -171,27 +165,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangedisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#rangedisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangedisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangedisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **rangeScoresIncrement** {#rangescoresincrement}
 > rangeScoresIncrement(range, seededScoreIncrement)
@@ -200,7 +192,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#rangescoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -215,27 +207,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#rangescoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#rangescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **rangeUpdate** {#rangeupdate}
 > Range rangeUpdate(range)
@@ -244,7 +234,7 @@ No authorization required
 
 This will update a specific range.
 
-### Example
+### Example {#rangeupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -259,26 +249,24 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangeupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | [**Range**](../models/Range)|  | [optional] 
+ **range** | [**Range**](../models/Range) |  | [optional] 
 
-### Return type
+### Return type {#rangeupdate-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangeupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangeupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **rangesSpecificRangeSnapshot** {#rangesspecificrangesnapshot}
 > Range rangesSpecificRangeSnapshot(range)
@@ -287,7 +275,7 @@ No authorization required
 
 This will get a snapshot of a single range.
 
-### Example
+### Example {#rangesspecificrangesnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -302,24 +290,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#rangesspecificrangesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **range** | **String**| This is a identifier that is used to identify a specific range. | 
+ **range** | **String** | This is a identifier that is used to identify a specific range. | 
 
-### Return type
+### Return type {#rangesspecificrangesnapshot-return-type}
 
 [**Range**](../models/Range)
 
-### Authorization
+### Authorization {#rangesspecificrangesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#rangesspecificrangesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 

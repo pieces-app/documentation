@@ -3,6 +3,7 @@ title: SeededScoreIncrement | Kotlin SDK
 ---
 
 
+
 # SeededScoreIncrement
 
 ## Properties
@@ -39,6 +40,7 @@ Name | Type | Description | Notes
 **workstreamEvent** | [**SeededScore**](SeededScore) |  |  [optional]
 **ranges** | [**SeededScore**](SeededScore) |  |  [optional]
 **range** | [**SeededScore**](SeededScore) |  |  [optional]
+
 
 
 

@@ -4,11 +4,6 @@ title: FlattenedAnnotation | Dart SDK
 
 # FlattenedAnnotation
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -30,7 +25,5 @@ Name | Type | Description | Notes
 **score** | [**Score**](Score) |  | [optional] 
 **messages** | [**FlattenedConversationMessages**](FlattenedConversationMessages) |  | [optional] 
 **summary** | [**ReferencedWorkstreamSummary**](ReferencedWorkstreamSummary) |  | [optional] 
-
-
 
 

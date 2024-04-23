@@ -4,7 +4,7 @@ title: Annotations API | TypeScript SDK
 
 # Annotations API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 This will create an annotation.
 
-### Example
+### Example {#annotationscreatenewannotation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -27,33 +27,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsCreateNewAnnotationRequest = {
-    // SeededAnnotation (optional)
-    seededAnnotation: ,
+// SeededAnnotation (optional)
+seededAnnotation: ,
 };
 
 apiInstance.annotationsCreateNewAnnotation(body).then((data: Annotation) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationscreatenewannotation-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **seededAnnotation** | **SeededAnnotation**|  |
 
 
-### Return type
+### Return type {#annotationscreatenewannotation-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### HTTP request headers
+### HTTP request headers {#annotationscreatenewannotation-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationscreatenewannotation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |
@@ -64,7 +65,7 @@ Name | Type | Description  | Notes
 
 this will delete a specific annotation
 
-### Example
+### Example {#annotationsdeletespecificannotation-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -73,33 +74,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsDeleteSpecificAnnotationRequest = {
-    // string | This is a specific annotation uuid.
-    annotation: annotation_example,
+// string | This is a specific annotation uuid.
+annotation: annotation_example,
 };
 
 apiInstance.annotationsDeleteSpecificAnnotation(body).then((data: void (empty response body)) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationsdeletespecificannotation-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotation** | [**string**] | This is a specific annotation uuid. | defaults to undefined
 
 
-### Return type
+### Return type {#annotationsdeletespecificannotation-return-type}
 
 void (empty response body)
 
-### HTTP request headers
+### HTTP request headers {#annotationsdeletespecificannotation-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationsdeletespecificannotation-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **204** | No Content |  -  |
@@ -110,7 +112,7 @@ void (empty response body)
 
 This will get a snapshot of all the annotations.  This will take an optional filter as a query param.
 
-### Example
+### Example {#annotationssnapshot-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -119,33 +121,34 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.AnnotationsApi(configuration)
 
 const body: Pieces.AnnotationsSnapshotRequest = {
-    // 'DESCRIPTION' | 'COMMENT' | 'COMMENTATION' | 'DOCUMENTATION' | 'SUMMARIZATION' | 'SUMMARY' | 'EXPLANATION' | 'GIT_COMMIT' | This is an AnnotationTypeEnum as a optional filter. (optional)
-    annotationTypeFilter: annotationTypeFilter_example,
+// 'DESCRIPTION' | 'COMMENT' | 'COMMENTATION' | 'DOCUMENTATION' | 'SUMMARIZATION' | 'SUMMARY' | 'EXPLANATION' | 'GIT_COMMIT' | This is an AnnotationTypeEnum as a optional filter. (optional)
+annotationTypeFilter: annotationTypeFilter_example,
 };
 
 apiInstance.annotationsSnapshot(body).then((data: Annotations) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#annotationssnapshot-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **annotationTypeFilter** | [**&#39;DESCRIPTION&#39; | &#39;COMMENT&#39; | &#39;COMMENTATION&#39; | &#39;DOCUMENTATION&#39; | &#39;SUMMARIZATION&#39; | &#39;SUMMARY&#39; | &#39;EXPLANATION&#39; | &#39;GIT_COMMIT&#39;**]**Array\<&#39;DESCRIPTION&#39; &#124; &#39;COMMENT&#39; &#124; &#39;COMMENTATION&#39; &#124; &#39;DOCUMENTATION&#39; &#124; &#39;SUMMARIZATION&#39; &#124; &#39;SUMMARY&#39; &#124; &#39;EXPLANATION&#39; &#124; &#39;GIT_COMMIT&#39;\>** | This is an AnnotationTypeEnum as a optional filter. | (optional) defaults to undefined
 
 
-### Return type
+### Return type {#annotationssnapshot-return-type}
 
 [**Annotations**](../models/Annotations)
 
-### HTTP request headers
+### HTTP request headers {#annotationssnapshot-http-request-headers}
 
 - **Content-Type**: Not defined
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#annotationssnapshot-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

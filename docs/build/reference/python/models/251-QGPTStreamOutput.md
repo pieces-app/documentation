@@ -19,22 +19,4 @@ Name | Type | Description | Notes
 **error_message** | **str** | optional error message is the status code is NOT 200 | [optional] 
 **agent_routes** | [**QGPTAgentRoutes**](QGPTAgentRoutes) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.qgpt_stream_output import QGPTStreamOutput
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of QGPTStreamOutput from a JSON string
-qgpt_stream_output_instance = QGPTStreamOutput.from_json(json)
-# print the JSON string representation of the object
-print(QGPTStreamOutput.to_json())
-
-# convert the object into a dict
-qgpt_stream_output_dict = qgpt_stream_output_instance.to_dict()
-# create an instance of QGPTStreamOutput from a dict
-qgpt_stream_output_form_dict = qgpt_stream_output.from_dict(qgpt_stream_output_dict)
-```
-
 

@@ -13,22 +13,4 @@ Name | Type | Description | Notes
 **var_schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  | [optional] 
 **iterable** | [**List[DetectedExternalApplication]**](DetectedExternalApplication) |  | 
 
-## Example
-
-```python
-from pieces_os_client.models.detected_external_applications import DetectedExternalApplications
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of DetectedExternalApplications from a JSON string
-detected_external_applications_instance = DetectedExternalApplications.from_json(json)
-# print the JSON string representation of the object
-print(DetectedExternalApplications.to_json())
-
-# convert the object into a dict
-detected_external_applications_dict = detected_external_applications_instance.to_dict()
-# create an instance of DetectedExternalApplications from a dict
-detected_external_applications_form_dict = detected_external_applications.from_dict(detected_external_applications_dict)
-```
-
 

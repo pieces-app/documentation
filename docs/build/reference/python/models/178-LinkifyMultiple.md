@@ -16,22 +16,4 @@ Name | Type | Description | Notes
 **access** | [**AccessEnum**](AccessEnum) |  | 
 **name** | **str** | optionally can give the collection a name if you want. | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.linkify_multiple import LinkifyMultiple
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of LinkifyMultiple from a JSON string
-linkify_multiple_instance = LinkifyMultiple.from_json(json)
-# print the JSON string representation of the object
-print(LinkifyMultiple.to_json())
-
-# convert the object into a dict
-linkify_multiple_dict = linkify_multiple_instance.to_dict()
-# create an instance of LinkifyMultiple from a dict
-linkify_multiple_form_dict = linkify_multiple.from_dict(linkify_multiple_dict)
-```
-
 

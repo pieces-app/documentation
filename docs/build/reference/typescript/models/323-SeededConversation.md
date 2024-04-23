@@ -25,37 +25,4 @@ Name | Type
 **pipeline** | [**QGPTPromptPipeline**](QGPTPromptPipeline)
 **demo** | **boolean**
 
-## Example
-
-```typescript
-import { SeededConversation } from '@pieces.app/pieces-os-client'
-
-// TODO: Update the object below with actual values
-const example: SeededConversation = {
-    "schema": null,
-    "name": null,
-    "favorited": null,
-    "application": null,
-    "annotations": null,
-    "messages": null,
-    "model": null,
-    "assets": null,
-    "websites": null,
-    "anchors": null,
-    "type": null,
-    "pipeline": null,
-    "demo": null,
-}
-
-console.log(example)
-
-// Convert the instance to a JSON string
-const exampleJSON: string = JSON.stringify(example)
-console.log(exampleJSON)
-
-// Parse the JSON string back to an object
-const exampleParsed = JSON.parse(exampleJSON) as SeededConversation
-console.log(exampleParsed)
-```
-
 

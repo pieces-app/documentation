@@ -4,7 +4,7 @@ title: WorkstreamSummaries API | Kotlin SDK
 
 # WorkstreamSummaries API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will create a new WorkstreamSummary in the database.
 
-### Example
+### Example {#workstreamsummariescreatenewworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -41,22 +41,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummariescreatenewworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **seededWorkstreamSummary** | [**SeededWorkstreamSummary**](../models/SeededWorkstreamSummary)|  | [optional]
 
-### Return type
+### Return type {#workstreamsummariescreatenewworkstreamsummary-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstreamsummariescreatenewworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummariescreatenewworkstreamsummary-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json
@@ -68,7 +68,7 @@ No authorization required
 
 This will delete a specific workstream_summary from the database!
 
-### Example
+### Example {#workstreamsummariesdeletespecificworkstreamsummary-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummariesdeletespecificworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
 
-### Return type
+### Return type {#workstreamsummariesdeletespecificworkstreamsummary-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummariesdeletespecificworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummariesdeletespecificworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -113,7 +113,7 @@ No authorization required
 
 This will get a snapshot of all your workstream summaries.
 
-### Example
+### Example {#workstreamsummariessnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -133,21 +133,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummariessnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#workstreamsummariessnapshot-return-type}
 
 [**WorkstreamSummaries**](../models/WorkstreamSummaries)
 
-### Authorization
+### Authorization {#workstreamsummariessnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummariessnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json

@@ -240,7 +240,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'build/examples/index',
-      label: '⚡️ Examples',
+      label: '📚 Examples',
     },
     // {
     //   type: 'doc',

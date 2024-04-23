@@ -3,13 +3,14 @@ title: OAuthToken | Kotlin SDK
 ---
 
 
+
 # OAuthToken
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **accessToken** | **kotlin.String** | The Access Token | 
-**tokenType** | [**inline**](#tokentype) |  | 
+**tokenType** | [**inline**](#token_type) |  | 
 **expiresIn** | **kotlin.Int** |  | 
 **scope** | **kotlin.String** |  | 
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
@@ -17,11 +18,11 @@ Name | Type | Description | Notes
 **idToken** | **kotlin.String** |  |  [optional]
 
 
-<a id="TokenType"></a>
-## Enum: token_type
+## token_type
 Name | Value
 ---- | -----
 tokenType | Bearer
+
 
 
 

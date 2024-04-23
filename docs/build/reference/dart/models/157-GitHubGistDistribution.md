@@ -4,11 +4,6 @@ title: GitHubGistDistribution | Dart SDK
 
 # GitHubGistDistribution
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -22,7 +17,5 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **githubId** | **String** | This is the id that github uses to represent the gist. | 
 **url** | **String** | This is the url where the gist is. | 
-
-
 
 

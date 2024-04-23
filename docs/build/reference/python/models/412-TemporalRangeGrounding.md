@@ -12,22 +12,4 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **workstreams** | [**FlattenedRanges**](FlattenedRanges) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.temporal_range_grounding import TemporalRangeGrounding
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TemporalRangeGrounding from a JSON string
-temporal_range_grounding_instance = TemporalRangeGrounding.from_json(json)
-# print the JSON string representation of the object
-print(TemporalRangeGrounding.to_json())
-
-# convert the object into a dict
-temporal_range_grounding_dict = temporal_range_grounding_instance.to_dict()
-# create an instance of TemporalRangeGrounding from a dict
-temporal_range_grounding_form_dict = temporal_range_grounding.from_dict(temporal_range_grounding_dict)
-```
-
 

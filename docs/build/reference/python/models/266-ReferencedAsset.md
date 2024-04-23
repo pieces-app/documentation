@@ -14,22 +14,4 @@ Name | Type | Description | Notes
 **id** | **str** |  | 
 **reference** | [**FlattenedAsset**](FlattenedAsset) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.referenced_asset import ReferencedAsset
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of ReferencedAsset from a JSON string
-referenced_asset_instance = ReferencedAsset.from_json(json)
-# print the JSON string representation of the object
-print(ReferencedAsset.to_json())
-
-# convert the object into a dict
-referenced_asset_dict = referenced_asset_instance.to_dict()
-# create an instance of ReferencedAsset from a dict
-referenced_asset_form_dict = referenced_asset.from_dict(referenced_asset_dict)
-```
-
 

@@ -3,6 +3,7 @@ title: SeededDiscoverableRelatedTag | Kotlin SDK
 ---
 
 
+
 # SeededDiscoverableRelatedTag
 
 ## Properties
@@ -14,6 +15,7 @@ Name | Type | Description | Notes
 **mechanism** | [**MechanismEnum**](MechanismEnum) |  |  [optional]
 **format** | **kotlin.String** | (optionally) you can attach a tag to a format. so when you delete a format this tag will get removed from the asset as well. |  [optional]
 **category** | [**TagCategoryEnum**](TagCategoryEnum) |  |  [optional]
+
 
 
 

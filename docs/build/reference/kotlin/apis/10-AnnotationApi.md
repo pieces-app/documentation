@@ -4,7 +4,7 @@ title: Annotation API | Kotlin SDK
 
 # Annotation API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#annotationscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -40,22 +40,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#annotationscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#annotationscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -67,7 +67,7 @@ No authorization required
 
 This will get a snapshot of a specific annotation.
 
-### Example
+### Example {#annotationspecificannotationsnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -87,21 +87,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationspecificannotationsnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | **kotlin.String**| This is a specific annotation uuid. |
 
-### Return type
+### Return type {#annotationspecificannotationsnapshot-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationspecificannotationsnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationspecificannotationsnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -113,7 +113,7 @@ No authorization required
 
 This will update a specific annotation.
 
-### Example
+### Example {#annotationupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -133,21 +133,21 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#annotationupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **&#x60;annotation&#x60;** | [**Annotation**](../models/Annotation)|  | [optional]
 
-### Return type
+### Return type {#annotationupdate-return-type}
 
 [**Annotation**](../models/Annotation)
 
-### Authorization
+### Authorization {#annotationupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#annotationupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

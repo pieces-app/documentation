@@ -22,22 +22,4 @@ Name | Type | Description | Notes
 **context** | **str** | this is the origin in which this asset was created, application(string representation) | 
 **asset** | **str** | This is the asset id. | 
 
-## Example
-
-```python
-from pieces_os_client.models.tlp_code_snippet_tagify_code import TLPCodeSnippetTagifyCode
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TLPCodeSnippetTagifyCode from a JSON string
-tlp_code_snippet_tagify_code_instance = TLPCodeSnippetTagifyCode.from_json(json)
-# print the JSON string representation of the object
-print(TLPCodeSnippetTagifyCode.to_json())
-
-# convert the object into a dict
-tlp_code_snippet_tagify_code_dict = tlp_code_snippet_tagify_code_instance.to_dict()
-# create an instance of TLPCodeSnippetTagifyCode from a dict
-tlp_code_snippet_tagify_code_form_dict = tlp_code_snippet_tagify_code.from_dict(tlp_code_snippet_tagify_code_dict)
-```
-
 

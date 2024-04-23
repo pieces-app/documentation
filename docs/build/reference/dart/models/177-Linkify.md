@@ -4,11 +4,6 @@ title: Linkify | Dart SDK
 
 # Linkify
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -18,7 +13,5 @@ Name | Type | Description | Notes
 **users** | [**List\<SeededUser\>**](SeededUser) | this is an array of users. | [optional] [default to const []]
 **access** | [**AccessEnum**](AccessEnum) |  | 
 **distributions** | [**SeededDistributions**](SeededDistributions) |  | [optional] 
-
-
 
 

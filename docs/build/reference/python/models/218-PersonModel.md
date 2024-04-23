@@ -15,22 +15,4 @@ Name | Type | Description | Notes
 **deleted** | [**GroupedTimestamp**](GroupedTimestamp) |  | [optional] 
 **explanation** | [**ReferencedAnnotation**](ReferencedAnnotation) |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.person_model import PersonModel
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of PersonModel from a JSON string
-person_model_instance = PersonModel.from_json(json)
-# print the JSON string representation of the object
-print(PersonModel.to_json())
-
-# convert the object into a dict
-person_model_dict = person_model_instance.to_dict()
-# create an instance of PersonModel from a dict
-person_model_form_dict = person_model.from_dict(person_model_dict)
-```
-
 

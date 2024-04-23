@@ -4,7 +4,7 @@ title: WorkstreamSummary API | Kotlin SDK
 
 # WorkstreamSummary API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -34,7 +34,7 @@ Method | HTTP request | Description
 
 This will get a snapshot of a single workstream_summary.
 
-### Example
+### Example {#workstreamsummariesspecificworkstreamsummarysnapshot-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -55,22 +55,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummariesspecificworkstreamsummarysnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
 
-### Return type
+### Return type {#workstreamsummariesspecificworkstreamsummarysnapshot-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstreamsummariesspecificworkstreamsummarysnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummariesspecificworkstreamsummarysnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json
@@ -82,7 +82,7 @@ No authorization required
 
 This will associate a anchor with a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateanchor-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -102,22 +102,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateanchor-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
-### Return type
+### Return type {#workstreamsummaryassociateanchor-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociateanchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateanchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -129,7 +129,7 @@ No authorization required
 
 This will associate an asset with a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -149,22 +149,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#workstreamsummaryassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -176,7 +176,7 @@ No authorization required
 
 This will associate an conversation with a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -196,22 +196,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#workstreamsummaryassociateconversation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -223,7 +223,7 @@ No authorization required
 
 This will associate an person with a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -243,22 +243,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#workstreamsummaryassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -270,7 +270,7 @@ No authorization required
 
 This will associate a range with a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstreamsummaryassociaterange-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -290,22 +290,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociaterange-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#workstreamsummaryassociaterange-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociaterange-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociaterange-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -317,7 +317,7 @@ No authorization required
 
 This will associate a website with a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstreamsummaryassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -337,22 +337,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#workstreamsummaryassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -364,7 +364,7 @@ No authorization required
 
 This will associate a workstream_summary with a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstreamsummaryassociateworkstreamevent-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -384,22 +384,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryassociateworkstreamevent-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
 
-### Return type
+### Return type {#workstreamsummaryassociateworkstreamevent-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryassociateworkstreamevent-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryassociateworkstreamevent-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -411,7 +411,7 @@ No authorization required
 
 This will enable us to disassociate a anchor from a workstream_summary. This will do the same thing as the anchor equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateanchor-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -431,22 +431,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateanchor-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **anchor** | **kotlin.String**| This is the specific uuid of an anchor. |
 
-### Return type
+### Return type {#workstreamsummarydisassociateanchor-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociateanchor-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateanchor-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -458,7 +458,7 @@ No authorization required
 
 This will enable us to disassociate a asset from a workstream_summary. This will do the same thing as the asset equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateasset-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -478,22 +478,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **asset** | **java.util.UUID**| The id (uuid) of the asset that you are trying to access. |
 
-### Return type
+### Return type {#workstreamsummarydisassociateasset-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -505,7 +505,7 @@ No authorization required
 
 This will enable us to disassociate a conversation from a workstream_summary. This will do the same thing as the conversation equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateconversation-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -525,22 +525,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **conversation** | **kotlin.String**| This is the uuid of a conversation. |
 
-### Return type
+### Return type {#workstreamsummarydisassociateconversation-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -552,7 +552,7 @@ No authorization required
 
 This will enable us to disassociate a person from a workstream_summary. This will do the same thing as the person equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateperson-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -572,22 +572,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **person** | **kotlin.String**| This is a uuid that represents a person. |
 
-### Return type
+### Return type {#workstreamsummarydisassociateperson-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -599,7 +599,7 @@ No authorization required
 
 This will enable us to disassociate a range from a workstream_summary. This will do the same thing as the range equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociaterange-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -619,22 +619,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociaterange-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **range** | **kotlin.String**| This is a identifier that is used to identify a specific range. |
 
-### Return type
+### Return type {#workstreamsummarydisassociaterange-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociaterange-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociaterange-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -646,7 +646,7 @@ No authorization required
 
 This will enable us to disassociate a website from a workstream_summary. This will do the same thing as the website equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociatewebsite-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -666,22 +666,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociatewebsite-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **website** | **kotlin.String**| website id |
 
-### Return type
+### Return type {#workstreamsummarydisassociatewebsite-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociatewebsite-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociatewebsite-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -693,7 +693,7 @@ No authorization required
 
 This will enable us to disassociate a workstream_summary from a workstream_event. This will do the same thing as the workstream_event equivalent.
 
-### Example
+### Example {#workstreamsummarydisassociateworkstreamevent-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -713,22 +713,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummarydisassociateworkstreamevent-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **workstreamEvent** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_event. |
 
-### Return type
+### Return type {#workstreamsummarydisassociateworkstreamevent-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummarydisassociateworkstreamevent-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummarydisassociateworkstreamevent-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: Not defined
@@ -740,7 +740,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#workstreamsummaryscoresincrement-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -760,22 +760,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryscoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **workstreamSummary** | **kotlin.String**| This is a identifier that is used to identify a specific workstream_summary. |
  **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional]
 
-### Return type
+### Return type {#workstreamsummaryscoresincrement-return-type}
 
 null (empty response body)
 
-### Authorization
+### Authorization {#workstreamsummaryscoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryscoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: Not defined
@@ -787,7 +787,7 @@ No authorization required
 
 This will update a specific workstream_summary.
 
-### Example
+### Example {#workstreamsummaryupdate-example}
 ```kotlin
 // Import classes:
 //import app.pieces.pieces-os-client.infrastructure.*
@@ -808,22 +808,22 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#workstreamsummaryupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transferables** | **kotlin.Boolean**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional]
  **workstreamSummary** | [**WorkstreamSummary**](../models/WorkstreamSummary)|  | [optional]
 
-### Return type
+### Return type {#workstreamsummaryupdate-return-type}
 
 [**WorkstreamSummary**](../models/WorkstreamSummary)
 
-### Authorization
+### Authorization {#workstreamsummaryupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#workstreamsummaryupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json

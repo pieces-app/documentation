@@ -4,7 +4,7 @@ title: Website API | Dart SDK
 
 # Website API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -28,7 +28,7 @@ Method | HTTP request | Description
 
 This will associate a website with a asset.
 
-### Example
+### Example {#websiteassociateasset-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -43,27 +43,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **asset** | **String**| The id (uuid) of the asset that you are trying to access. | 
- **website** | **String**| website id | 
+ **asset** | **String** | The id (uuid) of the asset that you are trying to access. | 
+ **website** | **String** | website id | 
 
-### Return type
+### Return type {#websiteassociateasset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteAssociateConversation** {#websiteassociateconversation}
 > websiteAssociateConversation(website, conversation)
@@ -72,7 +70,7 @@ No authorization required
 
 This will associate a website with a conversation.
 
-### Example
+### Example {#websiteassociateconversation-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -87,27 +85,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **conversation** | **String**| This is the uuid of a conversation. | 
+ **website** | **String** | website id | 
+ **conversation** | **String** | This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#websiteassociateconversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteAssociatePerson** {#websiteassociateperson}
 > websiteAssociatePerson(website, person)
@@ -116,7 +112,7 @@ No authorization required
 
 This will associate a website with a person.
 
-### Example
+### Example {#websiteassociateperson-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -131,27 +127,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **person** | **String**| This is a uuid that represents a person. | 
+ **website** | **String** | website id | 
+ **person** | **String** | This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#websiteassociateperson-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteAssociateWorkstreamSummary** {#websiteassociateworkstreamsummary}
 > websiteAssociateWorkstreamSummary(website, workstreamSummary)
@@ -160,7 +154,7 @@ No authorization required
 
 This will associate a website with a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#websiteassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -175,27 +169,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websiteassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **website** | **String** | website id | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#websiteassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websiteassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteDisassociateAsset** {#websitedisassociateasset}
 > websiteDisassociateAsset(website, asset)
@@ -204,7 +196,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a asset.
 
-### Example
+### Example {#websitedisassociateasset-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -219,27 +211,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateasset-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **asset** | **String**| The id (uuid) of the asset that you are trying to access. | 
+ **website** | **String** | website id | 
+ **asset** | **String** | The id (uuid) of the asset that you are trying to access. | 
 
-### Return type
+### Return type {#websitedisassociateasset-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateasset-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateasset-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteDisassociateConversation** {#websitedisassociateconversation}
 > websiteDisassociateConversation(website, conversation)
@@ -248,7 +238,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a conversation.
 
-### Example
+### Example {#websitedisassociateconversation-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -263,27 +253,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateconversation-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **conversation** | **String**| This is the uuid of a conversation. | 
+ **website** | **String** | website id | 
+ **conversation** | **String** | This is the uuid of a conversation. | 
 
-### Return type
+### Return type {#websitedisassociateconversation-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateconversation-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateconversation-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteDisassociatePerson** {#websitedisassociateperson}
 > websiteDisassociatePerson(website, person)
@@ -292,7 +280,7 @@ No authorization required
 
 This will enable us to dissassociate a website from a person.
 
-### Example
+### Example {#websitedisassociateperson-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -307,27 +295,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateperson-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **person** | **String**| This is a uuid that represents a person. | 
+ **website** | **String** | website id | 
+ **person** | **String** | This is a uuid that represents a person. | 
 
-### Return type
+### Return type {#websitedisassociateperson-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateperson-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateperson-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteDisassociateWorkstreamSummary** {#websitedisassociateworkstreamsummary}
 > websiteDisassociateWorkstreamSummary(website, workstreamSummary)
@@ -336,7 +322,7 @@ No authorization required
 
 This will enable us to disassociate a website from a workstream summary. This will do the same thing as the workstreamSummary equivalent.
 
-### Example
+### Example {#websitedisassociateworkstreamsummary-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -351,27 +337,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitedisassociateworkstreamsummary-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **workstreamSummary** | **String**| This is a identifier that is used to identify a specific workstream_summary. | 
+ **website** | **String** | website id | 
+ **workstreamSummary** | **String** | This is a identifier that is used to identify a specific workstream_summary. | 
 
-### Return type
+### Return type {#websitedisassociateworkstreamsummary-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitedisassociateworkstreamsummary-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitedisassociateworkstreamsummary-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain
-
-
 
 ## **websiteScoresIncrement** {#websitescoresincrement}
 > websiteScoresIncrement(website, seededScoreIncrement)
@@ -380,7 +364,7 @@ No authorization required
 
 This will take in a SeededScoreIncrement and will increment the material relative to the incoming body.
 
-### Example
+### Example {#websitescoresincrement-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -395,27 +379,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitescoresincrement-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement)|  | [optional] 
+ **website** | **String** | website id | 
+ **seededScoreIncrement** | [**SeededScoreIncrement**](../models/SeededScoreIncrement) |  | [optional] 
 
-### Return type
+### Return type {#websitescoresincrement-return-type}
 
 void (empty response body)
 
-### Authorization
+### Authorization {#websitescoresincrement-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitescoresincrement-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: text/plain
-
-
 
 ## **websiteUpdate** {#websiteupdate}
 > Website websiteUpdate(transferables, website)
@@ -424,7 +406,7 @@ No authorization required
 
 This will update a specific website.
 
-### Example
+### Example {#websiteupdate-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -440,27 +422,25 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websiteupdate-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
- **website** | [**Website**](../models/Website)|  | [optional] 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **website** | [**Website**](../models/Website) |  | [optional] 
 
-### Return type
+### Return type {#websiteupdate-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websiteupdate-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websiteupdate-http-request-headers}
 
  - **Content-Type**: application/json
  - **Accept**: application/json, text/plain
-
-
 
 ## **websitesSpecificWebsiteSnapshot** {#websitesspecificwebsitesnapshot}
 > Website websitesSpecificWebsiteSnapshot(website, transferables)
@@ -469,7 +449,7 @@ No authorization required
 
 This will get a snapshot of a single website.
 
-### Example
+### Example {#websitesspecificwebsitesnapshot-example}
 ```dart
 import 'package:core_openapi/api.dart';
 
@@ -485,25 +465,23 @@ try {
 }
 ```
 
-### Parameters
+### Parameters {#websitesspecificwebsitesnapshot-parameters}
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **website** | **String**| website id | 
- **transferables** | **bool**| This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
+ **website** | **String** | website id | 
+ **transferables** | **bool** | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) | [optional] 
 
-### Return type
+### Return type {#websitesspecificwebsitesnapshot-return-type}
 
 [**Website**](../models/Website)
 
-### Authorization
+### Authorization {#websitesspecificwebsitesnapshot-authorization}
 
 No authorization required
 
-### HTTP request headers
+### HTTP request headers {#websitesspecificwebsitesnapshot-http-request-headers}
 
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/plain
-
-
 

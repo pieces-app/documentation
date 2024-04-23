@@ -48,22 +48,4 @@ Name | Type | Description | Notes
 **asset_anchor_deleted** | **str** |  | [optional] 
 **asset_anchor_updated** | **str** |  | [optional] 
 
-## Example
-
-```python
-from pieces_os_client.models.tracked_asset_event_identifier_description_pairs import TrackedAssetEventIdentifierDescriptionPairs
-
-# TODO update the JSON string below
-json = "{}"
-# create an instance of TrackedAssetEventIdentifierDescriptionPairs from a JSON string
-tracked_asset_event_identifier_description_pairs_instance = TrackedAssetEventIdentifierDescriptionPairs.from_json(json)
-# print the JSON string representation of the object
-print(TrackedAssetEventIdentifierDescriptionPairs.to_json())
-
-# convert the object into a dict
-tracked_asset_event_identifier_description_pairs_dict = tracked_asset_event_identifier_description_pairs_instance.to_dict()
-# create an instance of TrackedAssetEventIdentifierDescriptionPairs from a dict
-tracked_asset_event_identifier_description_pairs_form_dict = tracked_asset_event_identifier_description_pairs.from_dict(tracked_asset_event_identifier_description_pairs_dict)
-```
-
 

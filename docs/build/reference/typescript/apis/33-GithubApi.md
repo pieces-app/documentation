@@ -4,7 +4,7 @@ title: Github API | TypeScript SDK
 
 # Github API
 
-All URIs are relative to *http://localhost:1000*
+All URIs are relative to `http://localhost:1000`
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 This will attempt to get all the gist availble and return them to the user as a DiscoveredAssets.  if automatic is true we will automatically create the asset.  v1. will just get all the users\' gists. implemented. v2. can get specific a public gist.
 
-### Example
+### Example {#importgithubgists-example}
 
 ```typescript
 import * as Pieces from '@pieces.app/pieces-os-client'
@@ -25,18 +25,19 @@ const configuration = Pieces.Configuration()
 const apiInstance = new Pieces.GithubApi(configuration)
 
 const body: Pieces.ImportGithubGistsRequest = {
-    // boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
-    automatic: true,
-    // SeededGithubGistsImport |  (optional)
-    seededGithubGistsImport: ,
+// boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional)
+automatic: true,
+// SeededGithubGistsImport |  (optional)
+seededGithubGistsImport: ,
 };
 
 apiInstance.importGithubGists(body).then((data: Seeds) => {
-    console.log('API called successfully. Returned data: ' + data)
+console.log('API called successfully. Returned data: ' + data)
 }).catch((error: unknown) => console.error(error))
 ```
 
-### Parameters
+### Parameters {#importgithubgists-parameters}
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -44,17 +45,17 @@ Name | Type | Description  | Notes
  **automatic** | [**boolean**] | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. | (optional) defaults to true
 
 
-### Return type
+### Return type {#importgithubgists-return-type}
 
 [**Seeds**](../models/Seeds)
 
-### HTTP request headers
+### HTTP request headers {#importgithubgists-http-request-headers}
 
 - **Content-Type**: application/json
 - **Accept**: application/json, text/plain
 
 
-### HTTP response details
+### HTTP response details {#importgithubgists-http-response-details}
 | Status code | Description | Response headers
 |-------------|-------------|------------------
 **200** | OK |  -  |

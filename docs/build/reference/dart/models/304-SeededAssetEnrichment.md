@@ -4,11 +4,6 @@ title: SeededAssetEnrichment | Dart SDK
 
 # SeededAssetEnrichment
 
-## Load the model package
-```dart
-import 'package:core_openapi/api.dart';
-```
-
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
@@ -17,7 +12,5 @@ Name | Type | Description | Notes
 **websites** | **int** |  | [optional] 
 **persons** | **int** |  | [optional] 
 **hints** | **int** |  | [optional] 
-
-
 
 
