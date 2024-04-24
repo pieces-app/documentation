@@ -21,8 +21,8 @@ This is a cloud only Api. This will get a preview of your publically accessble P
 ### Example {#htmlshare-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PieceApi()
 val p : kotlin.String = p_example // kotlin.String | this is the a query param, that a shortened version of the share.

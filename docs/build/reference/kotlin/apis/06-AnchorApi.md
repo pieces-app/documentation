@@ -26,8 +26,8 @@ This will associate a anchor with a workstream summary. This will do the same th
 ### Example {#anchorassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -73,8 +73,8 @@ This will enable us to disassociate a anchor from a workstream summary. This wil
 ### Example {#anchordisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -120,8 +120,8 @@ This will rename a specific anchor.
 ### Example {#anchorrename-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -168,8 +168,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#anchorscoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -215,8 +215,8 @@ This will get a snapshot of a single anchor.
 ### Example {#anchorspecificanchorsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
@@ -263,8 +263,8 @@ This will update a specific anchor.
 ### Example {#anchorupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AnchorApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

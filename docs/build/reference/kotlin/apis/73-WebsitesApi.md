@@ -24,8 +24,8 @@ This will create a website and attach it to a specific asset.
 ### Example {#websitescreatenewwebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -72,8 +72,8 @@ This will delete a specific website!
 ### Example {#websitesdeletespecificwebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -117,8 +117,8 @@ This will check all of the websites in our database to see if this specific prov
 ### Example {#websitesexists-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
@@ -163,8 +163,8 @@ This will get a snapshot of all your websites.
 ### Example {#websitessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

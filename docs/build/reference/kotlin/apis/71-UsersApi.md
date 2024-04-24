@@ -24,8 +24,8 @@ Creates a User From a oAuth Token
 ### Example {#authenticatefromoauthtoken-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val oauthToken : OAuthToken =  // OAuthToken | 
@@ -76,8 +76,8 @@ Locally Removing a user for the purpose of Signing Out
 ### Example {#usersdisconnectuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val user : kotlin.String = user_example // kotlin.String | 
@@ -122,8 +122,8 @@ this will return a snapshot of all of the users that are in the users database. 
 ### Example {#userssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 try {
@@ -164,8 +164,8 @@ This enables the client to get the current user.  This endpoint will return a Us
 ### Example {#usersspecificusersnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UsersApi()
 val user : java.util.UUID = 497f6eca-6276-4993-bfeb-53cbbbba6f08 // java.util.UUID | The id (uuid) for a specific user.

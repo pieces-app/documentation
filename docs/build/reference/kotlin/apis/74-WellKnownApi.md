@@ -22,8 +22,8 @@ Retrieves the health status of the server.
 ### Example {#getwellknownhealth-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {
@@ -64,8 +64,8 @@ Retrieves the version of the server. It returns a string representing the curren
 ### Example {#getwellknownversion-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WellKnownApi()
 try {

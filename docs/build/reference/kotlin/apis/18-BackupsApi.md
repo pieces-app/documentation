@@ -24,8 +24,8 @@ This take a local database and ensure that it is backed up to the cloud.
 ### Example {#backupscreatenewbackup-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -70,8 +70,8 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example {#backupscreatenewbackupstreamed-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val seededBackup : SeededBackup =  // SeededBackup | 
@@ -116,8 +116,8 @@ This will delete a specific backup from the cloud.
 ### Example {#backupsdeletespecificbackup-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
@@ -163,8 +163,8 @@ This will get a snapshot of Backsup within the cloud.  This endpoint requires ou
 ### Example {#backupssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = BackupsApi()
 try {

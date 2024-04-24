@@ -23,8 +23,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#sensitivescoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
@@ -70,8 +70,8 @@ This will get a specific sensitive via the sensitive uuid.
 ### Example {#sensitivesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | 
@@ -116,8 +116,8 @@ This will update a specific sensitive
 ### Example {#updatesensitive-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitiveApi()
 val sensitive : Sensitive =  // Sensitive | 

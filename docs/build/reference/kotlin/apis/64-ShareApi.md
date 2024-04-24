@@ -23,8 +23,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#sharescoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -70,8 +70,8 @@ Get the snapshot of a specific share.
 ### Example {#sharesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -118,8 +118,8 @@ This endpoint will accept a Share that the user wants to update, and will return
 ### Example {#shareupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ShareApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

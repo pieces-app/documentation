@@ -30,8 +30,8 @@ This will link an external provider to your current auth0 account.  Will throw e
 ### Example {#linkprovider-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val seededExternalProvider : SeededExternalProvider =  // SeededExternalProvider | 
@@ -76,8 +76,8 @@ This will get information related to your specific device.
 ### Example {#osdeviceinformation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -118,8 +118,8 @@ This will only work on Macos and Windows.  And will get the permissions of the u
 ### Example {#ospermissions-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -160,8 +160,8 @@ This will only work on Macos and Windows.  This will request permissions for the
 ### Example {#ospermissionsrequest-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val osPermissions : OSPermissions =  // OSPermissions | 
@@ -206,8 +206,8 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 ### Example {#osrestart-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -247,8 +247,8 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 ### Example {#osupdatecheck-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val uncheckedOSUpdate : UncheckedOSUpdate =  // UncheckedOSUpdate | 
@@ -293,8 +293,8 @@ This will trigger a filer picker and return the string paths of the files that w
 ### Example {#pickfiles-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 val filePickerInput : FilePickerInput =  // FilePickerInput | 
@@ -339,8 +339,8 @@ This will trigger a folder picker and return the string paths of the folders tha
 ### Example {#pickfolders-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -381,8 +381,8 @@ A trigger that launches a Sign into OS Server
 ### Example {#signintoos-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {
@@ -423,8 +423,8 @@ A trigger that signs out a user from the OS
 ### Example {#signoutofos-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OSApi()
 try {

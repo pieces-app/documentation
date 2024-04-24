@@ -22,8 +22,8 @@ This is going to get a snapshot of our FormatsMetrics
 ### Example {#getmetricsformats-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {
@@ -64,8 +64,8 @@ This will return a list of code formats in desc order from most to least formats
 ### Example {#metricsformatsordered-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MetricsApi()
 try {

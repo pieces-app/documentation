@@ -26,8 +26,8 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example {#allocationsconnectnewcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -72,8 +72,8 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example {#allocationscreatenewallocation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -118,8 +118,8 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example {#allocationsdeleteallocation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -164,8 +164,8 @@ This will attempt to disconnect to a specific users cloud.
 ### Example {#allocationsdisconnectcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -210,8 +210,8 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example {#allocationsreconnectcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
@@ -256,8 +256,8 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example {#allocationssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = AllocationsApi()
 try {

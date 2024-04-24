@@ -26,8 +26,8 @@ Generates suggested questions that users can ask. It accepts the answer displaye
 ### Example {#hints-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTHintsInput : QGPTHintsInput =  // QGPTHintsInput | 
@@ -72,8 +72,8 @@ Utilize this endpoint for Who Support, identifying individuals who can provide a
 ### Example {#personsrelated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -120,8 +120,8 @@ Provides a WebSocket connection that streams inputs to the qGPT model. It handle
 ### Example {#qgptstream-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTStreamInput : QGPTStreamInput =  // QGPTStreamInput | 
@@ -166,8 +166,8 @@ Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endp
 ### Example {#question-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTQuestionInput : QGPTQuestionInput =  // QGPTQuestionInput | 
@@ -212,8 +212,8 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 ### Example {#relevance-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTRelevanceInput : QGPTRelevanceInput =  // QGPTRelevanceInput | 
@@ -258,8 +258,8 @@ This will take in a followup question and the history of the conversation, and e
 ### Example {#reprompt-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = QGPTApi()
 val qgPTRepromptInput : QGPTRepromptInput =  // QGPTRepromptInput | 

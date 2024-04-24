@@ -21,8 +21,8 @@ This will return all of the relationships that exists within your pieces db.
 ### Example {#relationshipssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RelationshipsApi()
 try {

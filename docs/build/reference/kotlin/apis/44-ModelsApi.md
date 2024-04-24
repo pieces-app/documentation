@@ -25,8 +25,8 @@ Creates a machine learning model. By default, all models created through this en
 ### Example {#modelscreatenewmodel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val seededModel : SeededModel =  // SeededModel | 
@@ -71,8 +71,8 @@ Deletes a specific model. It is exclusively available for custom models with the
 ### Example {#modelsdeletespecificmodel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -116,8 +116,8 @@ Deletes the data associated with a specific model, such as assets or libraries d
 ### Example {#modelsdeletespecificmodelcache-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -164,8 +164,8 @@ This will get a snapshot of all of your models.
 ### Example {#modelssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 try {
@@ -206,8 +206,8 @@ Unloads all available machine learning models that are unloadable.
 ### Example {#unloadmodels-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelsApi()
 try {

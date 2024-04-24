@@ -23,8 +23,8 @@ This will create a new Range in the database.
 ### Example {#rangescreatenewrange-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val seededRange : SeededRange =  // SeededRange | 
@@ -69,8 +69,8 @@ This will delete a specific range from the database!
 ### Example {#rangesdeletespecificrange-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -114,8 +114,8 @@ This will get a snapshot of all your ranges.
 ### Example {#rangessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangesApi()
 try {

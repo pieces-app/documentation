@@ -21,8 +21,8 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 ### Example {#assetscreateultrasuiteasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UltraSuiteApi()
 val seededUltraSuiteAsset : SeededUltraSuiteAsset =  // SeededUltraSuiteAsset | 

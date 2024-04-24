@@ -23,8 +23,8 @@ This will create a new distribution.
 ### Example {#distributionscreatenewdistribution-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
@@ -69,8 +69,8 @@ This will delete a specific distribution.
 ### Example {#distributionsdeletespecificdistribution-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
@@ -114,8 +114,8 @@ This will get a specific snapshot of all our distributions.
 ### Example {#distributionssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = DistributionsApi()
 try {

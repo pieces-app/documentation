@@ -21,8 +21,8 @@ This is an endpoint for updating an application.
 ### Example {#applicationupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationApi()
 val application : Application =  // Application | 

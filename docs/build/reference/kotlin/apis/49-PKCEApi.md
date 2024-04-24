@@ -25,8 +25,8 @@ This is a function to Clear a PKCE Authentication Flow
 ### Example {#clearpkce-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 try {
@@ -66,8 +66,8 @@ An endpoint to get the PKCE Code - this endpoint proxies the call out to Authori
 ### Example {#generatecode-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val seededPKCE : SeededPKCE =  // SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow
@@ -112,8 +112,8 @@ A proxy endpoint for PKCE token generation, internally calls Auth0 /oauth/token
 ### Example {#generatetoken-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val tokenizedPKCE : TokenizedPKCE =  // TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token
@@ -158,8 +158,8 @@ An endpoint that returns a PKCE Challenge
 ### Example {#getchallenge-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 try {
@@ -200,8 +200,8 @@ This is a callback function hosted to help pass along the ResultedPKCE code from
 ### Example {#respondwithcode-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PKCEApi()
 val code : kotlin.String = code_example // kotlin.String | The PKCE Code to be used to access a Token.

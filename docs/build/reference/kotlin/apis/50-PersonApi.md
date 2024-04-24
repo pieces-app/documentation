@@ -25,8 +25,8 @@ This will associate a person with a workstream summary. This will do the same th
 ### Example {#personassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -72,8 +72,8 @@ This will enable us to disassociate an person from a workstream summary. This wi
 ### Example {#persondisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -119,8 +119,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#personscoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -166,8 +166,8 @@ This will get a snapshot of a specific person
 ### Example {#personsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
@@ -214,8 +214,8 @@ This will update a specific person
 ### Example {#updateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = PersonApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

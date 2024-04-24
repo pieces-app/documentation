@@ -38,8 +38,8 @@ Updates both the anchor and the conversation, associating them together.
 ### Example {#conversationassociateanchor-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -85,8 +85,8 @@ Updates both the asset and the conversation, associating the two together.
 ### Example {#conversationassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -132,8 +132,8 @@ This will associate a workstream(range) with a conversation. This will do the sa
 ### Example {#conversationassociategroundingtemporalrangeworkstream-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -179,8 +179,8 @@ Updates both the website and the conversation, and associate them together.
 ### Example {#conversationassociatewebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -226,8 +226,8 @@ This will associate a conversation with a workstream summary. This will do the s
 ### Example {#conversationassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -273,8 +273,8 @@ Updates both the anchor and the conversation, deleting (disassociating) them sim
 ### Example {#conversationdisassociateanchor-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -320,8 +320,8 @@ Updates both the asset and the conversation, effectively disassociating them.
 ### Example {#conversationdisassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -367,8 +367,8 @@ This will enable us to disassociate a workstream(range) from a conversation. Thi
 ### Example {#conversationdisassociategroundingtemporalrangeworkstream-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -414,8 +414,8 @@ Allows us to disassociate a conversation from a specific website
 ### Example {#conversationdisassociatewebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -461,8 +461,8 @@ This will enable us to disassociate an conversation from a workstream summary. T
 ### Example {#conversationdisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -508,8 +508,8 @@ Retrieves a specific conversation.
 ### Example {#conversationgetspecificconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -556,8 +556,8 @@ Stores the grounding context for a conversation. It allows to associate a messag
 ### Example {#conversationgroundingmessagesassociatemessage-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -603,8 +603,8 @@ Removes a specific grounding context for a conversation, and allows us to disass
 ### Example {#conversationgroundingmessagesdisassociatemessage-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -650,8 +650,8 @@ Increment scores associated with a conversation. It accepts a SeededScoreIncreme
 ### Example {#conversationscoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -697,8 +697,8 @@ Retrieves messages specific to a particular conversation.
 ### Example {#conversationspecificconversationmessages-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -745,8 +745,8 @@ Renames a specific conversation using machine learning (ML) techniques.
 ### Example {#conversationspecificconversationrename-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -793,8 +793,8 @@ Generates a summary of a given conversation and saves it as an annotation associ
 ### Example {#conversationsummarize-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
@@ -841,8 +841,8 @@ Updates a specific conversation.
 ### Example {#conversationupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ConversationApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)

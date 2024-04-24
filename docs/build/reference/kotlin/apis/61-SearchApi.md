@@ -23,8 +23,8 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 ### Example {#fulltextsearch-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
@@ -71,8 +71,8 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 ### Example {#neuralcodesearch-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
@@ -119,8 +119,8 @@ This will run our tag based search, and return the assets that best match your p
 ### Example {#tagbasedsearch-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SearchApi()
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.

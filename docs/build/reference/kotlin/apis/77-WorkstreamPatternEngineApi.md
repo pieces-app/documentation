@@ -24,8 +24,8 @@ This will activate your Workstream Pattern Engine. This is used to aggregate inf
 ### Example {#workstreampatternengineprocessorsvisionactivate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
@@ -70,8 +70,8 @@ This will clear the data for the Workstream Pattern Engine, specifically for our
 ### Example {#workstreampatternengineprocessorsvisiondataclear-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineDataCleanupRequest : WorkstreamPatternEngineDataCleanupRequest =  // WorkstreamPatternEngineDataCleanupRequest | 
@@ -115,8 +115,8 @@ This will deactivate your Workstream Pattern Engine. This is used to aggregate i
 ### Example {#workstreampatternengineprocessorsvisiondeactivate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
@@ -161,8 +161,8 @@ This will get a snapshot of the status your Workstream Pattern Engine. This is u
 ### Example {#workstreampatternengineprocessorsvisionstatus-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WorkstreamPatternEngineApi()
 try {

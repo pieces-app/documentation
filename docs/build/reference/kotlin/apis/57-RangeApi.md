@@ -27,8 +27,8 @@ This will associate a range with a conversation(grounding.temporal.workstreams).
 ### Example {#rangeassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -74,8 +74,8 @@ This will associate a range with a workstream summary. This will do the same thi
 ### Example {#rangeassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -121,8 +121,8 @@ This will enable us to disassociate a range from a conversation(grounding.tempor
 ### Example {#rangedisassociateconversationgroundingtemporalrangeworkstreams-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -168,8 +168,8 @@ This will enable us to disassociate a range from a workstream summary. This will
 ### Example {#rangedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -215,8 +215,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#rangescoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
@@ -262,8 +262,8 @@ This will update a specific range.
 ### Example {#rangeupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : Range =  // Range | 
@@ -308,8 +308,8 @@ This will get a snapshot of a single range.
 ### Example {#rangesspecificrangesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RangeApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.

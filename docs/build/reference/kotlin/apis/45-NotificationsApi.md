@@ -21,8 +21,8 @@ Retrieves a snapshot of all available models.
 ### Example {#sendlocalnotification-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = NotificationsApi()
 val notification : Notification =  // Notification | 

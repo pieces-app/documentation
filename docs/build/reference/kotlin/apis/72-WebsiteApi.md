@@ -31,8 +31,8 @@ This will associate a website with a asset.
 ### Example {#websiteassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -78,8 +78,8 @@ This will associate a website with a conversation.
 ### Example {#websiteassociateconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -125,8 +125,8 @@ This will associate a website with a person.
 ### Example {#websiteassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -172,8 +172,8 @@ This will associate a website with a workstream summary. This will do the same t
 ### Example {#websiteassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -219,8 +219,8 @@ This will enable us to dissassociate a website from a asset.
 ### Example {#websitedisassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -266,8 +266,8 @@ This will enable us to dissassociate a website from a conversation.
 ### Example {#websitedisassociateconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -313,8 +313,8 @@ This will enable us to dissassociate a website from a person.
 ### Example {#websitedisassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -360,8 +360,8 @@ This will enable us to disassociate a website from a workstream summary. This wi
 ### Example {#websitedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -407,8 +407,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#websitescoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
@@ -454,8 +454,8 @@ This will update a specific website.
 ### Example {#websiteupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -502,8 +502,8 @@ This will get a snapshot of a single website.
 ### Example {#websitesspecificwebsitesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id

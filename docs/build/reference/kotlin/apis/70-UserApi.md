@@ -29,8 +29,8 @@ An endpoint to clear the current user.
 ### Example {#clearuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -70,8 +70,8 @@ This will refresh a user.
 ### Example {#refreshuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -112,8 +112,8 @@ This will select the current user.
 ### Example {#selectuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val auth0User : Auth0User =  // Auth0User | 
@@ -164,8 +164,8 @@ Provides a WebSocket connection that streams user data.
 ### Example {#streamuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -206,8 +206,8 @@ This will update a specific user in the database.
 ### Example {#updateuser-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | 
@@ -252,8 +252,8 @@ This will be an endpoint to give access or remove access immediately from a give
 ### Example {#userbetastatus-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userBetaStatus : UserBetaStatus =  // UserBetaStatus | 
@@ -298,8 +298,8 @@ This will retrieve all the users Providers that are connected to this account.  
 ### Example {#userproviders-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -340,8 +340,8 @@ This will return a snapshot of the current user. This will return our ReturnUser
 ### Example {#usersnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 try {
@@ -382,8 +382,8 @@ This is a local route to update your vanityname. ie mark.pieces.cloud, where \&q
 ### Example {#userupdatevanity-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = UserApi()
 val userProfile : UserProfile =  // UserProfile | This will take an update userProfile, with the updated vanity name!

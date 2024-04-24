@@ -27,8 +27,8 @@ This will associate a tag with a asset.
 ### Example {#tagassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
@@ -74,8 +74,8 @@ This will associate a tag with a person.
 ### Example {#tagassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -121,8 +121,8 @@ This will enable us to dissassociate a tag from a asset.
 ### Example {#tagdisassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -168,8 +168,8 @@ This will enable us to dissassociate a tag from a person.
 ### Example {#tagdisassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -215,8 +215,8 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#tagscoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
@@ -262,8 +262,8 @@ This will update a specific tag.
 ### Example {#tagupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -310,8 +310,8 @@ This will get a specific tag.
 ### Example {#tagsspecifictagsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id

@@ -21,8 +21,8 @@ This will return a single relationship object.
 ### Example {#relationshipsspecificrelationshipsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = RelationshipApi()
 val relationship : kotlin.String = relationship_example // kotlin.String | this is a specific relationship uuid.

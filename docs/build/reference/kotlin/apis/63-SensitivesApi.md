@@ -23,8 +23,8 @@ This will create a new sensitive model.
 ### Example {#sensitivescreatenewsensitive-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val seededSensitive : SeededSensitive =  // SeededSensitive | 
@@ -69,8 +69,8 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example {#sensitivesdeletesensitive-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
@@ -114,8 +114,8 @@ This will get a snapshot of all of the sensitives.
 ### Example {#sensitivessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SensitivesApi()
 try {

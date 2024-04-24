@@ -10,7 +10,7 @@ title: WorkstreamEventTrigger | Kotlin SDK
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **schema** | [**EmbeddedModelSchema**](EmbeddedModelSchema) |  |  [optional]
-**checkIn** | **kotlin.Boolean** | this is a sort of check-in event(ie when ever your application is in the forground on there is an interaction) |  [optional]
+**checkIn** | **kotlin.Boolean** | this is a sort of check-in event(ie when ever your application is in the foreground on there is an interaction) |  [optional]
 **copy** | **kotlin.Boolean** |  |  [optional]
 **paste** | **kotlin.Boolean** |  |  [optional]
 **fileOpen** | **kotlin.Boolean** |  |  [optional]

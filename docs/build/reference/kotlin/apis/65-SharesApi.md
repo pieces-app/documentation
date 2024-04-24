@@ -24,8 +24,8 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 ### Example {#sharescreatenewshare-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -72,8 +72,8 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 ### Example {#sharesdeleteshare-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
@@ -118,8 +118,8 @@ This will return all of your shares. A Share is an asset that you as a user deci
 ### Example {#sharessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
@@ -164,8 +164,8 @@ This is an endpoint to enable a client to access a specific share through a prov
 ### Example {#sharesspecificsharesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id

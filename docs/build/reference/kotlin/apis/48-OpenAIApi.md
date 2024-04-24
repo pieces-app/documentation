@@ -21,8 +21,8 @@ This will get a list of all of your Models from OpenAI w/ you user.auth0.openAI.
 ### Example {#openaimodelslist-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = OpenAIApi()
 val openAIModelsListInput : OpenAIModelsListInput =  // OpenAIModelsListInput | 

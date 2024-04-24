@@ -23,8 +23,8 @@ This will create a hint.
 ### Example {#hintscreatenewhint-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val seededHint : SeededHint =  // SeededHint | 
@@ -69,8 +69,8 @@ This will delete a specific hint.
 ### Example {#hintsdeletespecifichint-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
@@ -114,8 +114,8 @@ This will get a snapshot of all of the hints.
 ### Example {#hintssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = HintsApi()
 try {

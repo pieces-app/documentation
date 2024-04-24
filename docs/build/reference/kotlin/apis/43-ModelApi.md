@@ -27,8 +27,8 @@ Downloads a specific model to your local machine.
 ### Example {#modelspecificmodeldownload-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -73,8 +73,8 @@ Cancels a specific model download that is currently in progress.
 ### Example {#modelspecificmodeldownloadcancel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -119,8 +119,8 @@ This is a WebSocket connection that provides real-time updates on the download p
 ### Example {#modelspecificmodeldownloadprogress-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -165,8 +165,8 @@ Loads a previously downloaded model into memory. It differs from downloading, as
 ### Example {#modelspecificmodelload-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -211,8 +211,8 @@ Unloads a previously loaded model from memory and effectively frees up the RAM c
 ### Example {#modelspecificmodelunload-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id
@@ -257,8 +257,8 @@ Updates a machine learning model. This functionality is exclusively available fo
 ### Example {#modelupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : Model =  // Model | 
@@ -303,8 +303,8 @@ Retrieves a specific ML model.
 ### Example {#modelsspecificmodelsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ModelApi()
 val model : kotlin.String = model_example // kotlin.String | model id

@@ -21,8 +21,8 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 ### Example {#assetscreatenewassetfrommacos-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = MacOSApi()
 val seededMacOSAsset : SeededMacOSAsset =  // SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance

@@ -32,8 +32,8 @@ Retrieves a list of external applications installed on the user&#39;s machine th
 ### Example {#applicationsexternalrelated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -74,8 +74,8 @@ Provides a snapshot of all external applications detected on the user&#39;s mach
 ### Example {#applicationsexternalsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -116,8 +116,8 @@ Registers a new application within the Pieces ecosystem.
 ### Example {#applicationsregister-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val application : Application =  // Application | This will accept a application.
@@ -162,8 +162,8 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ### Example {#applicationssessionclose-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val body : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | This will accept a required session uuid.
@@ -208,8 +208,8 @@ Initiates a new session, marking the start of a user&#39;s interaction with the 
 ### Example {#applicationssessionopen-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -250,8 +250,8 @@ Fetches detailed information about a specific session, identified by a session U
 ### Example {#applicationssessionsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val session : kotlin.String = session_example // kotlin.String | This is a uuid that points to a session.
@@ -296,8 +296,8 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ### Example {#applicationssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 try {
@@ -338,8 +338,8 @@ Obtains a snapshot with information about a specific application, identified by 
 ### Example {#applicationsspecificapplicationsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
@@ -384,8 +384,8 @@ Records user interaction events within applications, such as clicks or taps, to 
 ### Example {#applicationsusageengagementinteraction-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val seededTrackedInteractionEvent : SeededTrackedInteractionEvent =  // SeededTrackedInteractionEvent | 
@@ -430,8 +430,8 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ### Example {#applicationsusageengagementkeyboard-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val seededTrackedKeyboardEvent : SeededTrackedKeyboardEvent =  // SeededTrackedKeyboardEvent | 
@@ -476,8 +476,8 @@ Logs the installation events of the Pieces application.
 ### Example {#applicationsusageinstallation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val trackedApplicationInstall : TrackedApplicationInstall =  // TrackedApplicationInstall | 
@@ -521,8 +521,8 @@ Tracks updates to the Pieces application, including version changes.
 ### Example {#postapplicationsusageupdated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
 val apiInstance = ApplicationsApi()
 val trackedApplicationUpdate : TrackedApplicationUpdate =  // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.
