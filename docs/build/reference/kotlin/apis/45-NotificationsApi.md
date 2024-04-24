@@ -24,15 +24,15 @@ Retrieves a snapshot of all available models.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Notifications API()
+val apiInstance = NotificationsApi()
 val notification : Notification =  // Notification | 
 try {
     apiInstance.sendLocalNotification(notification)
 } catch (e: ClientException) {
-    println("4xx response calling Notifications API#sendLocalNotification")
+    println("4xx response calling NotificationsApi#sendLocalNotification")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Notifications API#sendLocalNotification")
+    println("5xx response calling NotificationsApi#sendLocalNotification")
     e.printStackTrace()
 }
 ```

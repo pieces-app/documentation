@@ -24,15 +24,15 @@ This will get a snapshot of all of your code analyses, a code analysis is attach
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = CodeAnalyses API()
+val apiInstance = CodeAnalysesApi()
 try {
     val result : CodeAnalyses = apiInstance.codeAnalysesSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CodeAnalyses API#codeAnalysesSnapshot")
+    println("4xx response calling CodeAnalysesApi#codeAnalysesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CodeAnalyses API#codeAnalysesSnapshot")
+    println("5xx response calling CodeAnalysesApi#codeAnalysesSnapshot")
     e.printStackTrace()
 }
 ```

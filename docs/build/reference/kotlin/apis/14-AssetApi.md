@@ -38,16 +38,16 @@ Associates a tag with a specified asset. It performs the same action as the tag 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 try {
     apiInstance.assetAssociateTag(asset, tag)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetAssociateTag")
+    println("4xx response calling AssetApi#assetAssociateTag")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetAssociateTag")
+    println("5xx response calling AssetApi#assetAssociateTag")
     e.printStackTrace()
 }
 ```
@@ -85,16 +85,16 @@ Associates a website with an asset. It performs the same action as its website e
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.assetAssociateWebsite(asset, website)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetAssociateWebsite")
+    println("4xx response calling AssetApi#assetAssociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetAssociateWebsite")
+    println("5xx response calling AssetApi#assetAssociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -132,16 +132,16 @@ This will associate a asset with a workstream summary. This will do the same thi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.assetAssociateWorkstreamSummary(asset, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetAssociateWorkstreamSummary")
+    println("4xx response calling AssetApi#assetAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetAssociateWorkstreamSummary")
+    println("5xx response calling AssetApi#assetAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -179,16 +179,16 @@ Disassociates a tag from an asset. It performs the same action as the tag equiva
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.assetDisassociateTag(tag, asset)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetDisassociateTag")
+    println("4xx response calling AssetApi#assetDisassociateTag")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetDisassociateTag")
+    println("5xx response calling AssetApi#assetDisassociateTag")
     e.printStackTrace()
 }
 ```
@@ -226,16 +226,16 @@ Disassociates a website from an asset. It performs the same action as the websit
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.assetDisassociateWebsite(website, asset)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetDisassociateWebsite")
+    println("4xx response calling AssetApi#assetDisassociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetDisassociateWebsite")
+    println("5xx response calling AssetApi#assetDisassociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -273,16 +273,16 @@ This will enable us to disassociate an asset from a workstream summary. This wil
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.assetDisassociateWorkstreamSummary(asset, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetDisassociateWorkstreamSummary")
+    println("4xx response calling AssetApi#assetDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetDisassociateWorkstreamSummary")
+    println("5xx response calling AssetApi#assetDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -320,17 +320,17 @@ Retrieves the formats available for a specified asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Formats = apiInstance.assetFormats(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetFormats")
+    println("4xx response calling AssetApi#assetFormats")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetFormats")
+    println("5xx response calling AssetApi#assetFormats")
     e.printStackTrace()
 }
 ```
@@ -368,17 +368,17 @@ Retrieves the formats available for a specified asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val assetReclassification : AssetReclassification =  // AssetReclassification | This will accept a Reclassification that includeds and assetand a language that this assets needs to be reclassified to. We will just return an Asset that has been reclassified.
 try {
     val result : Asset = apiInstance.assetReclassify(transferables, assetReclassification)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetReclassify")
+    println("4xx response calling AssetApi#assetReclassify")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetReclassify")
+    println("5xx response calling AssetApi#assetReclassify")
     e.printStackTrace()
 }
 ```
@@ -416,16 +416,16 @@ Increments the scores associated with the specified asset based on the provided 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.assetScoresIncrement(asset, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetScoresIncrement")
+    println("4xx response calling AssetApi#assetScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetScoresIncrement")
+    println("5xx response calling AssetApi#assetScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -463,17 +463,17 @@ Retrieves the snapshot of a specific asset
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Asset = apiInstance.assetSnapshot(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetSnapshot")
+    println("4xx response calling AssetApi#assetSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetSnapshot")
+    println("5xx response calling AssetApi#assetSnapshot")
     e.printStackTrace()
 }
 ```
@@ -511,7 +511,7 @@ Retrieves a snapshot of a specific asset, along with the user requesting the sna
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededAccessor : SeededAccessor =  // SeededAccessor | 
@@ -519,10 +519,10 @@ try {
     val result : Asset = apiInstance.assetSnapshotPost(asset, transferables, seededAccessor)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetSnapshotPost")
+    println("4xx response calling AssetApi#assetSnapshotPost")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetSnapshotPost")
+    println("5xx response calling AssetApi#assetSnapshotPost")
     e.printStackTrace()
 }
 ```
@@ -561,17 +561,17 @@ Retrieves activity events specific to the given asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Activities = apiInstance.assetSpecificAssetActivities(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetSpecificAssetActivities")
+    println("4xx response calling AssetApi#assetSpecificAssetActivities")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetSpecificAssetActivities")
+    println("5xx response calling AssetApi#assetSpecificAssetActivities")
     e.printStackTrace()
 }
 ```
@@ -609,17 +609,17 @@ Retrieves conversations specific to the given asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Conversations = apiInstance.assetSpecificAssetConversations(asset, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetSpecificAssetConversations")
+    println("4xx response calling AssetApi#assetSpecificAssetConversations")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetSpecificAssetConversations")
+    println("5xx response calling AssetApi#assetSpecificAssetConversations")
     e.printStackTrace()
 }
 ```
@@ -657,17 +657,17 @@ Retrieves an export version of the specified asset.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val exportType : kotlin.String = exportType_example // kotlin.String | This specifies the type of export the user wants.
 try {
     val result : ExportedAsset = apiInstance.assetSpecificAssetExport(asset, exportType)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetSpecificAssetExport")
+    println("4xx response calling AssetApi#assetSpecificAssetExport")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetSpecificAssetExport")
+    println("5xx response calling AssetApi#assetSpecificAssetExport")
     e.printStackTrace()
 }
 ```
@@ -705,17 +705,17 @@ Allows the user to update an existing Asset. It accepts the Asset object that ne
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Asset API()
+val apiInstance = AssetApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val asset : Asset =  // Asset | This endpoint allows the user to update an existing Asset. It accepts the Asset object that needs updating and returns the fully updated Asset.
 try {
     val result : Asset = apiInstance.assetUpdate(transferables, asset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Asset API#assetUpdate")
+    println("4xx response calling AssetApi#assetUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Asset API#assetUpdate")
+    println("5xx response calling AssetApi#assetUpdate")
     e.printStackTrace()
 }
 ```

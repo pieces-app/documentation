@@ -26,17 +26,17 @@ This will create a new WorkstreamSummary in the database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummaries API()
+val apiInstance = WorkstreamSummariesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededWorkstreamSummary : SeededWorkstreamSummary =  // SeededWorkstreamSummary | 
 try {
     val result : WorkstreamSummary = apiInstance.workstreamSummariesCreateNewWorkstreamSummary(transferables, seededWorkstreamSummary)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummaries API#workstreamSummariesCreateNewWorkstreamSummary")
+    println("4xx response calling WorkstreamSummariesApi#workstreamSummariesCreateNewWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummaries API#workstreamSummariesCreateNewWorkstreamSummary")
+    println("5xx response calling WorkstreamSummariesApi#workstreamSummariesCreateNewWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -74,15 +74,15 @@ This will delete a specific workstream_summary from the database!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummaries API()
+val apiInstance = WorkstreamSummariesApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.workstreamSummariesDeleteSpecificWorkstreamSummary(workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummaries API#workstreamSummariesDeleteSpecificWorkstreamSummary")
+    println("4xx response calling WorkstreamSummariesApi#workstreamSummariesDeleteSpecificWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummaries API#workstreamSummariesDeleteSpecificWorkstreamSummary")
+    println("5xx response calling WorkstreamSummariesApi#workstreamSummariesDeleteSpecificWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -119,16 +119,16 @@ This will get a snapshot of all your workstream summaries.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummaries API()
+val apiInstance = WorkstreamSummariesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : WorkstreamSummaries = apiInstance.workstreamSummariesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummaries API#workstreamSummariesSnapshot")
+    println("4xx response calling WorkstreamSummariesApi#workstreamSummariesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummaries API#workstreamSummariesSnapshot")
+    println("5xx response calling WorkstreamSummariesApi#workstreamSummariesSnapshot")
     e.printStackTrace()
 }
 ```

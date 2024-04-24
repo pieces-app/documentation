@@ -25,15 +25,15 @@ This is going to export your current database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Database API()
+val apiInstance = DatabaseApi()
 try {
     val result : ExportedDatabase = apiInstance.databaseExport()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Database API#databaseExport")
+    println("4xx response calling DatabaseApi#databaseExport")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Database API#databaseExport")
+    println("5xx response calling DatabaseApi#databaseExport")
     e.printStackTrace()
 }
 ```
@@ -67,15 +67,15 @@ This is going to take in a database, and merge it with the current database. Thi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Database API()
+val apiInstance = DatabaseApi()
 val exportedDatabase : ExportedDatabase =  // ExportedDatabase | 
 try {
     apiInstance.databaseImport(exportedDatabase)
 } catch (e: ClientException) {
-    println("4xx response calling Database API#databaseImport")
+    println("4xx response calling DatabaseApi#databaseImport")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Database API#databaseImport")
+    println("5xx response calling DatabaseApi#databaseImport")
     e.printStackTrace()
 }
 ```

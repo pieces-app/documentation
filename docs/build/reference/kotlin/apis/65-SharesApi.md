@@ -27,17 +27,17 @@ This endpoint will accept an asset. Response here will be a Share that was creat
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Shares API()
+val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededShare : SeededShare =  // SeededShare | 
 try {
     val result : Shares = apiInstance.sharesCreateNewShare(transferables, seededShare)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Shares API#sharesCreateNewShare")
+    println("4xx response calling SharesApi#sharesCreateNewShare")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Shares API#sharesCreateNewShare")
+    println("5xx response calling SharesApi#sharesCreateNewShare")
     e.printStackTrace()
 }
 ```
@@ -75,16 +75,16 @@ This endpoint will just take a share id(as a url param) to delete out of the sha
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Shares API()
+val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
 try {
     val result : kotlin.String = apiInstance.sharesDeleteShare(share)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Shares API#sharesDeleteShare")
+    println("4xx response calling SharesApi#sharesDeleteShare")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Shares API#sharesDeleteShare")
+    println("5xx response calling SharesApi#sharesDeleteShare")
     e.printStackTrace()
 }
 ```
@@ -121,16 +121,16 @@ This will return all of your shares. A Share is an asset that you as a user deci
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Shares API()
+val apiInstance = SharesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Shares = apiInstance.sharesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Shares API#sharesSnapshot")
+    println("4xx response calling SharesApi#sharesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Shares API#sharesSnapshot")
+    println("5xx response calling SharesApi#sharesSnapshot")
     e.printStackTrace()
 }
 ```
@@ -167,17 +167,17 @@ This is an endpoint to enable a client to access a specific share through a prov
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Shares API()
+val apiInstance = SharesApi()
 val share : kotlin.String = share_example // kotlin.String | Share id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Share = apiInstance.sharesSpecificShareSnapshot(share, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Shares API#sharesSpecificShareSnapshot")
+    println("4xx response calling SharesApi#sharesSpecificShareSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Shares API#sharesSpecificShareSnapshot")
+    println("5xx response calling SharesApi#sharesSpecificShareSnapshot")
     e.printStackTrace()
 }
 ```

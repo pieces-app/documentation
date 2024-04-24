@@ -26,16 +26,16 @@ This will create a new distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Distributions API()
+val apiInstance = DistributionsApi()
 val seededDistribution : SeededDistribution =  // SeededDistribution | 
 try {
     val result : Distribution = apiInstance.distributionsCreateNewDistribution(seededDistribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Distributions API#distributionsCreateNewDistribution")
+    println("4xx response calling DistributionsApi#distributionsCreateNewDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Distributions API#distributionsCreateNewDistribution")
+    println("5xx response calling DistributionsApi#distributionsCreateNewDistribution")
     e.printStackTrace()
 }
 ```
@@ -72,15 +72,15 @@ This will delete a specific distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Distributions API()
+val apiInstance = DistributionsApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
 try {
     apiInstance.distributionsDeleteSpecificDistribution(distribution)
 } catch (e: ClientException) {
-    println("4xx response calling Distributions API#distributionsDeleteSpecificDistribution")
+    println("4xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Distributions API#distributionsDeleteSpecificDistribution")
+    println("5xx response calling DistributionsApi#distributionsDeleteSpecificDistribution")
     e.printStackTrace()
 }
 ```
@@ -117,15 +117,15 @@ This will get a specific snapshot of all our distributions.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Distributions API()
+val apiInstance = DistributionsApi()
 try {
     val result : Distributions = apiInstance.distributionsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Distributions API#distributionsSnapshot")
+    println("4xx response calling DistributionsApi#distributionsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Distributions API#distributionsSnapshot")
+    println("5xx response calling DistributionsApi#distributionsSnapshot")
     e.printStackTrace()
 }
 ```

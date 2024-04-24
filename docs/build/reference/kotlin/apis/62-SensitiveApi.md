@@ -26,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitive API()
+val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.sensitiveScoresIncrement(sensitive, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitive API#sensitiveScoresIncrement")
+    println("4xx response calling SensitiveApi#sensitiveScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitive API#sensitiveScoresIncrement")
+    println("5xx response calling SensitiveApi#sensitiveScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -73,16 +73,16 @@ This will get a specific sensitive via the sensitive uuid.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitive API()
+val apiInstance = SensitiveApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | 
 try {
     val result : Sensitive = apiInstance.sensitiveSnapshot(sensitive)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitive API#sensitiveSnapshot")
+    println("4xx response calling SensitiveApi#sensitiveSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitive API#sensitiveSnapshot")
+    println("5xx response calling SensitiveApi#sensitiveSnapshot")
     e.printStackTrace()
 }
 ```
@@ -119,16 +119,16 @@ This will update a specific sensitive
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitive API()
+val apiInstance = SensitiveApi()
 val sensitive : Sensitive =  // Sensitive | 
 try {
     val result : Sensitive = apiInstance.updateSensitive(sensitive)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitive API#updateSensitive")
+    println("4xx response calling SensitiveApi#updateSensitive")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitive API#updateSensitive")
+    println("5xx response calling SensitiveApi#updateSensitive")
     e.printStackTrace()
 }
 ```

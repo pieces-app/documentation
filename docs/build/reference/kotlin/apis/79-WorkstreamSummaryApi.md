@@ -40,17 +40,17 @@ This will get a snapshot of a single workstream_summary.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : WorkstreamSummary = apiInstance.workstreamSummariesSpecificWorkstreamSummarySnapshot(workstreamSummary, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummariesSpecificWorkstreamSummarySnapshot")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummariesSpecificWorkstreamSummarySnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummariesSpecificWorkstreamSummarySnapshot")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummariesSpecificWorkstreamSummarySnapshot")
     e.printStackTrace()
 }
 ```
@@ -88,16 +88,16 @@ This will associate a anchor with a workstream_summary. This will do the same th
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 try {
     apiInstance.workstreamSummaryAssociateAnchor(workstreamSummary, anchor)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateAnchor")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateAnchor")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateAnchor")
     e.printStackTrace()
 }
 ```
@@ -135,16 +135,16 @@ This will associate an asset with a workstream_summary. This will do the same th
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.workstreamSummaryAssociateAsset(workstreamSummary, asset)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateAsset")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateAsset")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateAsset")
     e.printStackTrace()
 }
 ```
@@ -182,16 +182,16 @@ This will associate an conversation with a workstream_summary. This will do the 
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.workstreamSummaryAssociateConversation(workstreamSummary, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateConversation")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateConversation")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateConversation")
     e.printStackTrace()
 }
 ```
@@ -229,16 +229,16 @@ This will associate an person with a workstream_summary. This will do the same t
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.workstreamSummaryAssociatePerson(workstreamSummary, person)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociatePerson")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociatePerson")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociatePerson")
     e.printStackTrace()
 }
 ```
@@ -276,16 +276,16 @@ This will associate a range with a workstream_summary. This will do the same thi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.workstreamSummaryAssociateRange(workstreamSummary, range)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateRange")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateRange")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateRange")
     e.printStackTrace()
 }
 ```
@@ -323,16 +323,16 @@ This will associate a website with a workstream_summary. This will do the same t
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.workstreamSummaryAssociateWebsite(workstreamSummary, website)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateWebsite")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateWebsite")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -370,16 +370,16 @@ This will associate a workstream_summary with a workstream_event. This will do t
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 try {
     apiInstance.workstreamSummaryAssociateWorkstreamEvent(workstreamSummary, workstreamEvent)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryAssociateWorkstreamEvent")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateWorkstreamEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryAssociateWorkstreamEvent")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryAssociateWorkstreamEvent")
     e.printStackTrace()
 }
 ```
@@ -417,16 +417,16 @@ This will enable us to disassociate a anchor from a workstream_summary. This wil
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val anchor : kotlin.String = anchor_example // kotlin.String | This is the specific uuid of an anchor.
 try {
     apiInstance.workstreamSummaryDisassociateAnchor(workstreamSummary, anchor)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateAnchor")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateAnchor")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateAnchor")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateAnchor")
     e.printStackTrace()
 }
 ```
@@ -464,16 +464,16 @@ This will enable us to disassociate a asset from a workstream_summary. This will
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.workstreamSummaryDisassociateAsset(workstreamSummary, asset)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateAsset")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateAsset")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -511,16 +511,16 @@ This will enable us to disassociate a conversation from a workstream_summary. Th
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.workstreamSummaryDisassociateConversation(workstreamSummary, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateConversation")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateConversation")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateConversation")
     e.printStackTrace()
 }
 ```
@@ -558,16 +558,16 @@ This will enable us to disassociate a person from a workstream_summary. This wil
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.workstreamSummaryDisassociatePerson(workstreamSummary, person)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociatePerson")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociatePerson")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociatePerson")
     e.printStackTrace()
 }
 ```
@@ -605,16 +605,16 @@ This will enable us to disassociate a range from a workstream_summary. This will
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.workstreamSummaryDisassociateRange(workstreamSummary, range)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateRange")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateRange")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateRange")
     e.printStackTrace()
 }
 ```
@@ -652,16 +652,16 @@ This will enable us to disassociate a website from a workstream_summary. This wi
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.workstreamSummaryDisassociateWebsite(workstreamSummary, website)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateWebsite")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateWebsite")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateWebsite")
     e.printStackTrace()
 }
 ```
@@ -699,16 +699,16 @@ This will enable us to disassociate a workstream_summary from a workstream_event
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val workstreamEvent : kotlin.String = workstreamEvent_example // kotlin.String | This is a identifier that is used to identify a specific workstream_event.
 try {
     apiInstance.workstreamSummaryDisassociateWorkstreamEvent(workstreamSummary, workstreamEvent)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryDisassociateWorkstreamEvent")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateWorkstreamEvent")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryDisassociateWorkstreamEvent")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryDisassociateWorkstreamEvent")
     e.printStackTrace()
 }
 ```
@@ -746,16 +746,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.workstreamSummaryScoresIncrement(workstreamSummary, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryScoresIncrement")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryScoresIncrement")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -793,17 +793,17 @@ This will update a specific workstream_summary.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamSummary API()
+val apiInstance = WorkstreamSummaryApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val workstreamSummary : WorkstreamSummary =  // WorkstreamSummary | 
 try {
     val result : WorkstreamSummary = apiInstance.workstreamSummaryUpdate(transferables, workstreamSummary)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamSummary API#workstreamSummaryUpdate")
+    println("4xx response calling WorkstreamSummaryApi#workstreamSummaryUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamSummary API#workstreamSummaryUpdate")
+    println("5xx response calling WorkstreamSummaryApi#workstreamSummaryUpdate")
     e.printStackTrace()
 }
 ```

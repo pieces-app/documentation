@@ -25,16 +25,16 @@ This will get a snapshot of a specific allocation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocation API()
+val apiInstance = AllocationApi()
 val allocation : kotlin.String = allocation_example // kotlin.String | 
 try {
     val result : AllocationCloud = apiInstance.allocationSnapshot(allocation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocation API#allocationSnapshot")
+    println("4xx response calling AllocationApi#allocationSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocation API#allocationSnapshot")
+    println("5xx response calling AllocationApi#allocationSnapshot")
     e.printStackTrace()
 }
 ```
@@ -71,16 +71,16 @@ This will update a specific allocation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocation API()
+val apiInstance = AllocationApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : AllocationCloud = apiInstance.allocationUpdate(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocation API#allocationUpdate")
+    println("4xx response calling AllocationApi#allocationUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocation API#allocationUpdate")
+    println("5xx response calling AllocationApi#allocationUpdate")
     e.printStackTrace()
 }
 ```

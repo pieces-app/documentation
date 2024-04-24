@@ -34,14 +34,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Discovery API(api_client)
+    api_instance = pieces_os_client.DiscoveryApi(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_assets = pieces_os_client.SeededDiscoverableAssets() # SeededDiscoverableAssets | The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files. (optional)
 
@@ -105,14 +105,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Discovery API(api_client)
+    api_instance = pieces_os_client.DiscoveryApi(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_html_webpages = pieces_os_client.SeededDiscoverableHtmlWebpages() # SeededDiscoverableHtmlWebpages |  (optional)
 
@@ -176,14 +176,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Discovery API(api_client)
+    api_instance = pieces_os_client.DiscoveryApi(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_sensitives = pieces_os_client.SeededDiscoverableSensitives() # SeededDiscoverableSensitives |  (optional)
 
@@ -246,14 +246,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Discovery API(api_client)
+    api_instance = pieces_os_client.DiscoveryApi(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_discoverable_related_tags = pieces_os_client.SeededDiscoverableRelatedTags() # SeededDiscoverableRelatedTags |  (optional)
 

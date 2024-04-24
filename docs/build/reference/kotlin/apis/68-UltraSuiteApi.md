@@ -24,16 +24,16 @@ This Endpoint will create an Asset that is sent from UltraSuite.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = UltraSuite API()
+val apiInstance = UltraSuiteApi()
 val seededUltraSuiteAsset : SeededUltraSuiteAsset =  // SeededUltraSuiteAsset | 
 try {
     val result : Asset = apiInstance.assetsCreateUltraSuiteAsset(seededUltraSuiteAsset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling UltraSuite API#assetsCreateUltraSuiteAsset")
+    println("4xx response calling UltraSuiteApi#assetsCreateUltraSuiteAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling UltraSuite API#assetsCreateUltraSuiteAsset")
+    println("5xx response calling UltraSuiteApi#assetsCreateUltraSuiteAsset")
     e.printStackTrace()
 }
 ```

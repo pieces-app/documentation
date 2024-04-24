@@ -26,16 +26,16 @@ This will create a new Range in the database.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Ranges API()
+val apiInstance = RangesApi()
 val seededRange : SeededRange =  // SeededRange | 
 try {
     val result : Range = apiInstance.rangesCreateNewRange(seededRange)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Ranges API#rangesCreateNewRange")
+    println("4xx response calling RangesApi#rangesCreateNewRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Ranges API#rangesCreateNewRange")
+    println("5xx response calling RangesApi#rangesCreateNewRange")
     e.printStackTrace()
 }
 ```
@@ -72,15 +72,15 @@ This will delete a specific range from the database!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Ranges API()
+val apiInstance = RangesApi()
 val range : kotlin.String = range_example // kotlin.String | This is a identifier that is used to identify a specific range.
 try {
     apiInstance.rangesDeleteSpecificRange(range)
 } catch (e: ClientException) {
-    println("4xx response calling Ranges API#rangesDeleteSpecificRange")
+    println("4xx response calling RangesApi#rangesDeleteSpecificRange")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Ranges API#rangesDeleteSpecificRange")
+    println("5xx response calling RangesApi#rangesDeleteSpecificRange")
     e.printStackTrace()
 }
 ```
@@ -117,15 +117,15 @@ This will get a snapshot of all your ranges.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Ranges API()
+val apiInstance = RangesApi()
 try {
     val result : Ranges = apiInstance.rangesSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Ranges API#rangesSnapshot")
+    println("4xx response calling RangesApi#rangesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Ranges API#rangesSnapshot")
+    println("5xx response calling RangesApi#rangesSnapshot")
     e.printStackTrace()
 }
 ```

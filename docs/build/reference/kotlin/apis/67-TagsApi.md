@@ -27,17 +27,17 @@ This will create a new tag.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tags API()
+val apiInstance = TagsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededTag : SeededTag =  // SeededTag | 
 try {
     val result : Tag = apiInstance.tagsCreateNewTag(transferables, seededTag)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Tags API#tagsCreateNewTag")
+    println("4xx response calling TagsApi#tagsCreateNewTag")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tags API#tagsCreateNewTag")
+    println("5xx response calling TagsApi#tagsCreateNewTag")
     e.printStackTrace()
 }
 ```
@@ -75,15 +75,15 @@ This will delete a specific tag.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tags API()
+val apiInstance = TagsApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 try {
     apiInstance.tagsDeleteSpecificTag(tag)
 } catch (e: ClientException) {
-    println("4xx response calling Tags API#tagsDeleteSpecificTag")
+    println("4xx response calling TagsApi#tagsDeleteSpecificTag")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tags API#tagsDeleteSpecificTag")
+    println("5xx response calling TagsApi#tagsDeleteSpecificTag")
     e.printStackTrace()
 }
 ```
@@ -120,16 +120,16 @@ This will check all of the tags in our database to see if this specific provided
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tags API()
+val apiInstance = TagsApi()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
 try {
     val result : ExistingMetadata = apiInstance.tagsExists(existentMetadata)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Tags API#tagsExists")
+    println("4xx response calling TagsApi#tagsExists")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tags API#tagsExists")
+    println("5xx response calling TagsApi#tagsExists")
     e.printStackTrace()
 }
 ```
@@ -166,16 +166,16 @@ This will get a snapshot of all of your tags.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tags API()
+val apiInstance = TagsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Tags = apiInstance.tagsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Tags API#tagsSnapshot")
+    println("4xx response calling TagsApi#tagsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tags API#tagsSnapshot")
+    println("5xx response calling TagsApi#tagsSnapshot")
     e.printStackTrace()
 }
 ```

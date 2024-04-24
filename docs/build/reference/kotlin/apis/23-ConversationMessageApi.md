@@ -29,16 +29,16 @@ This will associate a message with an annotation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 try {
     apiInstance.messageAssociateAnnotation(`annotation`, message)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageAssociateAnnotation")
+    println("4xx response calling ConversationMessageApi#messageAssociateAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageAssociateAnnotation")
+    println("5xx response calling ConversationMessageApi#messageAssociateAnnotation")
     e.printStackTrace()
 }
 ```
@@ -76,16 +76,16 @@ This will enable us to dissassociate a message from an annotation.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val `annotation` : kotlin.String = `annotation`_example // kotlin.String | This is a specific annotation uuid.
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 try {
     apiInstance.messageDisassociateAnnotation(`annotation`, message)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageDisassociateAnnotation")
+    println("4xx response calling ConversationMessageApi#messageDisassociateAnnotation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageDisassociateAnnotation")
+    println("5xx response calling ConversationMessageApi#messageDisassociateAnnotation")
     e.printStackTrace()
 }
 ```
@@ -123,16 +123,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.messageScoresIncrement(message, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageScoresIncrement")
+    println("4xx response calling ConversationMessageApi#messageScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageScoresIncrement")
+    println("5xx response calling ConversationMessageApi#messageScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -170,17 +170,17 @@ This will get a specific snapshot of a message
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val message : kotlin.String = message_example // kotlin.String | This is the uuid of a message.
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : ConversationMessage = apiInstance.messageSpecificMessageSnapshot(message, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageSpecificMessageSnapshot")
+    println("4xx response calling ConversationMessageApi#messageSpecificMessageSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageSpecificMessageSnapshot")
+    println("5xx response calling ConversationMessageApi#messageSpecificMessageSnapshot")
     e.printStackTrace()
 }
 ```
@@ -218,17 +218,17 @@ This will update a conversation message.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val conversationMessage : ConversationMessage =  // ConversationMessage | 
 try {
     val result : ConversationMessage = apiInstance.messageSpecificMessageUpdate(transferables, conversationMessage)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageSpecificMessageUpdate")
+    println("4xx response calling ConversationMessageApi#messageSpecificMessageUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageSpecificMessageUpdate")
+    println("5xx response calling ConversationMessageApi#messageSpecificMessageUpdate")
     e.printStackTrace()
 }
 ```
@@ -266,17 +266,17 @@ This will update the value of a conversation message.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = ConversationMessage API()
+val apiInstance = ConversationMessageApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val conversationMessage : ConversationMessage =  // ConversationMessage | 
 try {
     val result : ConversationMessage = apiInstance.messageUpdateValue(transferables, conversationMessage)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling ConversationMessage API#messageUpdateValue")
+    println("4xx response calling ConversationMessageApi#messageUpdateValue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling ConversationMessage API#messageUpdateValue")
+    println("5xx response calling ConversationMessageApi#messageUpdateValue")
     e.printStackTrace()
 }
 ```

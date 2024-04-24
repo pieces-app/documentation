@@ -31,14 +31,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Github API(api_client)
+    api_instance = pieces_os_client.GithubApi(api_client)
     automatic = True # bool | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior. (optional) (default to True)
     seeded_github_gists_import = pieces_os_client.SeededGithubGistsImport() # SeededGithubGistsImport |  (optional)
 

@@ -27,17 +27,17 @@ https://auth0.com/docs/api/authentication#logout
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0 API()
+val apiInstance = Auth0Api()
 val clientId : kotlin.String = clientId_example // kotlin.String | The client ID of the Auth0 Instance
 val returnTo : kotlin.String = returnTo_example // kotlin.String | The URL that the logout endpoint will return to
 try {
     val result : kotlin.String = apiInstance.auth0Logout(clientId, returnTo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0 API#auth0Logout")
+    println("4xx response calling Auth0Api#auth0Logout")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0 API#auth0Logout")
+    println("5xx response calling Auth0Api#auth0Logout")
     e.printStackTrace()
 }
 ```
@@ -75,7 +75,7 @@ An endpoint that is used locally authenticate via a PKCE Flow.  Example https://
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0 API()
+val apiInstance = Auth0Api()
 val audience : kotlin.String = `https://pieces.us.auth0.com`/api/v2/ // kotlin.String |  The unique identifier of the target API you want to access.
 val scope : kotlin.collections.List<kotlin.String> =  // kotlin.collections.List<kotlin.String> | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
 val responseType : kotlin.String = code // kotlin.String | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
@@ -91,10 +91,10 @@ try {
     val result : ResultedPKCE = apiInstance.authorizeAuth0(audience, scope, responseType, clientId, codeChallengeMethod, codeChallenge, responseMode, state, redirectUri, connection, prompt)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0 API#authorizeAuth0")
+    println("4xx response calling Auth0Api#authorizeAuth0")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0 API#authorizeAuth0")
+    println("5xx response calling Auth0Api#authorizeAuth0")
     e.printStackTrace()
 }
 ```
@@ -141,7 +141,7 @@ An endpoint to generate a OAuth Token for an authentication flow.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0 API()
+val apiInstance = Auth0Api()
 val grantType : kotlin.String = grantType_example // kotlin.String | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
 val clientId : kotlin.String = clientId_example // kotlin.String | Your application's Client ID.
 val code : kotlin.String = code_example // kotlin.String | The Authorization Code received from the initial /authorize call.
@@ -153,10 +153,10 @@ try {
     val result : OAuthToken = apiInstance.exchangeForAuth0Token(grantType, clientId, code, redirectUri, codeVerifier, schema, audience)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0 API#exchangeForAuth0Token")
+    println("4xx response calling Auth0Api#exchangeForAuth0Token")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0 API#exchangeForAuth0Token")
+    println("5xx response calling Auth0Api#exchangeForAuth0Token")
     e.printStackTrace()
 }
 ```
@@ -199,15 +199,15 @@ Get the users info from the Auth0 API
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Auth0 API()
+val apiInstance = Auth0Api()
 try {
     val result : Auth0User = apiInstance.getAuth0UserInfo()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Auth0 API#getAuth0UserInfo")
+    println("4xx response calling Auth0Api#getAuth0UserInfo")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Auth0 API#getAuth0UserInfo")
+    println("5xx response calling Auth0Api#getAuth0UserInfo")
     e.printStackTrace()
 }
 ```

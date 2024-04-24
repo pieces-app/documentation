@@ -25,16 +25,16 @@ This will update a specific Distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Distribution API()
+val apiInstance = DistributionApi()
 val distribution : Distribution =  // Distribution | 
 try {
     val result : Distribution = apiInstance.distributionUpdate(distribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Distribution API#distributionUpdate")
+    println("4xx response calling DistributionApi#distributionUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Distribution API#distributionUpdate")
+    println("5xx response calling DistributionApi#distributionUpdate")
     e.printStackTrace()
 }
 ```
@@ -71,16 +71,16 @@ This will get a specific snapshot of a distribution.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Distribution API()
+val apiInstance = DistributionApi()
 val distribution : kotlin.String = distribution_example // kotlin.String | This is the uuid of a specific distribution.
 try {
     val result : Distribution = apiInstance.distributionsSpecificDistributionSnapshot(distribution)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Distribution API#distributionsSpecificDistributionSnapshot")
+    println("4xx response calling DistributionApi#distributionsSpecificDistributionSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Distribution API#distributionsSpecificDistributionSnapshot")
+    println("5xx response calling DistributionApi#distributionsSpecificDistributionSnapshot")
     e.printStackTrace()
 }
 ```

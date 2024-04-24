@@ -26,16 +26,16 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hint API()
+val apiInstance = HintApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.hintScoresIncrement(hint, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling Hint API#hintScoresIncrement")
+    println("4xx response calling HintApi#hintScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hint API#hintScoresIncrement")
+    println("5xx response calling HintApi#hintScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -73,16 +73,16 @@ This will get a snapshot of a specific hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hint API()
+val apiInstance = HintApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     val result : Hint = apiInstance.hintSpecificHintSnapshot(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Hint API#hintSpecificHintSnapshot")
+    println("4xx response calling HintApi#hintSpecificHintSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hint API#hintSpecificHintSnapshot")
+    println("5xx response calling HintApi#hintSpecificHintSnapshot")
     e.printStackTrace()
 }
 ```
@@ -119,16 +119,16 @@ This will update a specific hint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hint API()
+val apiInstance = HintApi()
 val hint : Hint =  // Hint | 
 try {
     val result : Hint = apiInstance.hintUpdate(hint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Hint API#hintUpdate")
+    println("4xx response calling HintApi#hintUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hint API#hintUpdate")
+    println("5xx response calling HintApi#hintUpdate")
     e.printStackTrace()
 }
 ```

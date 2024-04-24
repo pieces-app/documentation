@@ -24,16 +24,16 @@ Exposes an endpoint for the MacOS Services plugin to send over MacOS Specific Da
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = MacOS API()
+val apiInstance = MacOSApi()
 val seededMacOSAsset : SeededMacOSAsset =  // SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance
 try {
     val result : Asset = apiInstance.assetsCreateNewAssetFromMacos(seededMacOSAsset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling MacOS API#assetsCreateNewAssetFromMacos")
+    println("4xx response calling MacOSApi#assetsCreateNewAssetFromMacos")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling MacOS API#assetsCreateNewAssetFromMacos")
+    println("5xx response calling MacOSApi#assetsCreateNewAssetFromMacos")
     e.printStackTrace()
 }
 ```

@@ -26,17 +26,17 @@ This will create a anchorPoint.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPoints API()
+val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededAnchorPoint : SeededAnchorPoint =  // SeededAnchorPoint | 
 try {
     val result : AnchorPoint = apiInstance.anchorPointsCreateNewAnchorPoint(transferables, seededAnchorPoint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPoints API#anchorPointsCreateNewAnchorPoint")
+    println("4xx response calling AnchorPointsApi#anchorPointsCreateNewAnchorPoint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPoints API#anchorPointsCreateNewAnchorPoint")
+    println("5xx response calling AnchorPointsApi#anchorPointsCreateNewAnchorPoint")
     e.printStackTrace()
 }
 ```
@@ -74,15 +74,15 @@ This will delete a specific anchorPoint!
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPoints API()
+val apiInstance = AnchorPointsApi()
 val anchorPoint : kotlin.String = anchorPoint_example // kotlin.String | This is the specific uuid of an anchor_point.
 try {
     apiInstance.anchorPointsDeleteSpecificAnchorPoint(anchorPoint)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPoints API#anchorPointsDeleteSpecificAnchorPoint")
+    println("4xx response calling AnchorPointsApi#anchorPointsDeleteSpecificAnchorPoint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPoints API#anchorPointsDeleteSpecificAnchorPoint")
+    println("5xx response calling AnchorPointsApi#anchorPointsDeleteSpecificAnchorPoint")
     e.printStackTrace()
 }
 ```
@@ -119,16 +119,16 @@ This will get a snapshot of all your anchorPoints.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = AnchorPoints API()
+val apiInstance = AnchorPointsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : AnchorPoints = apiInstance.anchorPointsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AnchorPoints API#anchorPointsSnapshot")
+    println("4xx response calling AnchorPointsApi#anchorPointsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AnchorPoints API#anchorPointsSnapshot")
+    println("5xx response calling AnchorPointsApi#anchorPointsSnapshot")
     e.printStackTrace()
 }
 ```

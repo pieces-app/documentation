@@ -26,16 +26,16 @@ Method | HTTP request | Description
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Linkify API()
+val apiInstance = LinkifyApi()
 val linkify : Linkify =  // Linkify | 
 try {
     val result : Shares = apiInstance.linkify(linkify)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Linkify API#linkify")
+    println("4xx response calling LinkifyApi#linkify")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Linkify API#linkify")
+    println("5xx response calling LinkifyApi#linkify")
     e.printStackTrace()
 }
 ```
@@ -72,16 +72,16 @@ No authorization required
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Linkify API()
+val apiInstance = LinkifyApi()
 val linkifyMultiple : LinkifyMultiple =  // LinkifyMultiple | 
 try {
     val result : Shares = apiInstance.linkifyMultiple(linkifyMultiple)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Linkify API#linkifyMultiple")
+    println("4xx response calling LinkifyApi#linkifyMultiple")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Linkify API#linkifyMultiple")
+    println("5xx response calling LinkifyApi#linkifyMultiple")
     e.printStackTrace()
 }
 ```
@@ -118,16 +118,16 @@ This will revoke a link.
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Linkify API()
+val apiInstance = LinkifyApi()
 val share : kotlin.String = share_example // kotlin.String | 
 try {
     val result : kotlin.String = apiInstance.linkifyShareRevoke(share)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Linkify API#linkifyShareRevoke")
+    println("4xx response calling LinkifyApi#linkifyShareRevoke")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Linkify API#linkifyShareRevoke")
+    println("5xx response calling LinkifyApi#linkifyShareRevoke")
     e.printStackTrace()
 }
 ```

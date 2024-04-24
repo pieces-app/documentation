@@ -26,17 +26,17 @@ This will run FTS for exact search, and will NOT run fuzzy matching. This will o
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Search API()
+val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
 try {
     val result : SearchedAssets = apiInstance.fullTextSearch(query, pseudo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Search API#fullTextSearch")
+    println("4xx response calling SearchApi#fullTextSearch")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Search API#fullTextSearch")
+    println("5xx response calling SearchApi#fullTextSearch")
     e.printStackTrace()
 }
 ```
@@ -74,17 +74,17 @@ This will run ncs on your assets. This will simply return FlattenedAssets, but w
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Search API()
+val apiInstance = SearchApi()
 val query : kotlin.String = query_example // kotlin.String | This is a string that you can use to search your assets.
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
 try {
     val result : SearchedAssets = apiInstance.neuralCodeSearch(query, pseudo)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Search API#neuralCodeSearch")
+    println("4xx response calling SearchApi#neuralCodeSearch")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Search API#neuralCodeSearch")
+    println("5xx response calling SearchApi#neuralCodeSearch")
     e.printStackTrace()
 }
 ```
@@ -122,17 +122,17 @@ This will run our tag based search, and return the assets that best match your p
 //import app.pieces.pieces-os-client.infrastructure.*
 //import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Search API()
+val apiInstance = SearchApi()
 val pseudo : kotlin.Boolean = true // kotlin.Boolean | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false.
 val seededAssetTags : SeededAssetTags =  // SeededAssetTags | 
 try {
     val result : SearchedAssets = apiInstance.tagBasedSearch(pseudo, seededAssetTags)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Search API#tagBasedSearch")
+    println("4xx response calling SearchApi#tagBasedSearch")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Search API#tagBasedSearch")
+    println("5xx response calling SearchApi#tagBasedSearch")
     e.printStackTrace()
 }
 ```
