@@ -31,19 +31,19 @@ This will associate a website with a asset.
 ### Example {#websiteassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.websiteAssociateAsset(asset, website)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteAssociateAsset")
+    println("4xx response calling WebsiteApi#websiteAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteAssociateAsset")
+    println("5xx response calling WebsiteApi#websiteAssociateAsset")
     e.printStackTrace()
 }
 ```
@@ -78,19 +78,19 @@ This will associate a website with a conversation.
 ### Example {#websiteassociateconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.websiteAssociateConversation(website, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteAssociateConversation")
+    println("4xx response calling WebsiteApi#websiteAssociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteAssociateConversation")
+    println("5xx response calling WebsiteApi#websiteAssociateConversation")
     e.printStackTrace()
 }
 ```
@@ -125,19 +125,19 @@ This will associate a website with a person.
 ### Example {#websiteassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.websiteAssociatePerson(website, person)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteAssociatePerson")
+    println("4xx response calling WebsiteApi#websiteAssociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteAssociatePerson")
+    println("5xx response calling WebsiteApi#websiteAssociatePerson")
     e.printStackTrace()
 }
 ```
@@ -172,19 +172,19 @@ This will associate a website with a workstream summary. This will do the same t
 ### Example {#websiteassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.websiteAssociateWorkstreamSummary(website, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteAssociateWorkstreamSummary")
+    println("4xx response calling WebsiteApi#websiteAssociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteAssociateWorkstreamSummary")
+    println("5xx response calling WebsiteApi#websiteAssociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -219,19 +219,19 @@ This will enable us to dissassociate a website from a asset.
 ### Example {#websitedisassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.websiteDisassociateAsset(website, asset)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteDisassociateAsset")
+    println("4xx response calling WebsiteApi#websiteDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteDisassociateAsset")
+    println("5xx response calling WebsiteApi#websiteDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -266,19 +266,19 @@ This will enable us to dissassociate a website from a conversation.
 ### Example {#websitedisassociateconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.websiteDisassociateConversation(website, conversation)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteDisassociateConversation")
+    println("4xx response calling WebsiteApi#websiteDisassociateConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteDisassociateConversation")
+    println("5xx response calling WebsiteApi#websiteDisassociateConversation")
     e.printStackTrace()
 }
 ```
@@ -313,19 +313,19 @@ This will enable us to dissassociate a website from a person.
 ### Example {#websitedisassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.websiteDisassociatePerson(website, person)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteDisassociatePerson")
+    println("4xx response calling WebsiteApi#websiteDisassociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteDisassociatePerson")
+    println("5xx response calling WebsiteApi#websiteDisassociatePerson")
     e.printStackTrace()
 }
 ```
@@ -360,19 +360,19 @@ This will enable us to disassociate a website from a workstream summary. This wi
 ### Example {#websitedisassociateworkstreamsummary-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val workstreamSummary : kotlin.String = workstreamSummary_example // kotlin.String | This is a identifier that is used to identify a specific workstream_summary.
 try {
     apiInstance.websiteDisassociateWorkstreamSummary(website, workstreamSummary)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteDisassociateWorkstreamSummary")
+    println("4xx response calling WebsiteApi#websiteDisassociateWorkstreamSummary")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteDisassociateWorkstreamSummary")
+    println("5xx response calling WebsiteApi#websiteDisassociateWorkstreamSummary")
     e.printStackTrace()
 }
 ```
@@ -407,19 +407,19 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#websitescoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.websiteScoresIncrement(website, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteScoresIncrement")
+    println("4xx response calling WebsiteApi#websiteScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteScoresIncrement")
+    println("5xx response calling WebsiteApi#websiteScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -454,20 +454,20 @@ This will update a specific website.
 ### Example {#websiteupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val website : Website =  // Website | 
 try {
     val result : Website = apiInstance.websiteUpdate(transferables, website)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websiteUpdate")
+    println("4xx response calling WebsiteApi#websiteUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websiteUpdate")
+    println("5xx response calling WebsiteApi#websiteUpdate")
     e.printStackTrace()
 }
 ```
@@ -502,20 +502,20 @@ This will get a snapshot of a single website.
 ### Example {#websitesspecificwebsitesnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Website API()
+val apiInstance = WebsiteApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Website = apiInstance.websitesSpecificWebsiteSnapshot(website, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Website API#websitesSpecificWebsiteSnapshot")
+    println("4xx response calling WebsiteApi#websitesSpecificWebsiteSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Website API#websitesSpecificWebsiteSnapshot")
+    println("5xx response calling WebsiteApi#websitesSpecificWebsiteSnapshot")
     e.printStackTrace()
 }
 ```

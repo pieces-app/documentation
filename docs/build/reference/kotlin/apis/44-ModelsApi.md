@@ -25,19 +25,19 @@ Creates a machine learning model. By default, all models created through this en
 ### Example {#modelscreatenewmodel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Models API()
+val apiInstance = ModelsApi()
 val seededModel : SeededModel =  // SeededModel | 
 try {
     val result : Model = apiInstance.modelsCreateNewModel(seededModel)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Models API#modelsCreateNewModel")
+    println("4xx response calling ModelsApi#modelsCreateNewModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Models API#modelsCreateNewModel")
+    println("5xx response calling ModelsApi#modelsCreateNewModel")
     e.printStackTrace()
 }
 ```
@@ -71,18 +71,18 @@ Deletes a specific model. It is exclusively available for custom models with the
 ### Example {#modelsdeletespecificmodel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Models API()
+val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
 try {
     apiInstance.modelsDeleteSpecificModel(model)
 } catch (e: ClientException) {
-    println("4xx response calling Models API#modelsDeleteSpecificModel")
+    println("4xx response calling ModelsApi#modelsDeleteSpecificModel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Models API#modelsDeleteSpecificModel")
+    println("5xx response calling ModelsApi#modelsDeleteSpecificModel")
     e.printStackTrace()
 }
 ```
@@ -116,20 +116,20 @@ Deletes the data associated with a specific model, such as assets or libraries d
 ### Example {#modelsdeletespecificmodelcache-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Models API()
+val apiInstance = ModelsApi()
 val model : kotlin.String = model_example // kotlin.String | model id
 val modelDeleteCacheInput : ModelDeleteCacheInput =  // ModelDeleteCacheInput | 
 try {
     val result : ModelDeleteCacheOutput = apiInstance.modelsDeleteSpecificModelCache(model, modelDeleteCacheInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Models API#modelsDeleteSpecificModelCache")
+    println("4xx response calling ModelsApi#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Models API#modelsDeleteSpecificModelCache")
+    println("5xx response calling ModelsApi#modelsDeleteSpecificModelCache")
     e.printStackTrace()
 }
 ```
@@ -164,18 +164,18 @@ This will get a snapshot of all of your models.
 ### Example {#modelssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Models API()
+val apiInstance = ModelsApi()
 try {
     val result : Models = apiInstance.modelsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Models API#modelsSnapshot")
+    println("4xx response calling ModelsApi#modelsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Models API#modelsSnapshot")
+    println("5xx response calling ModelsApi#modelsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -206,17 +206,17 @@ Unloads all available machine learning models that are unloadable.
 ### Example {#unloadmodels-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Models API()
+val apiInstance = ModelsApi()
 try {
     apiInstance.unloadModels()
 } catch (e: ClientException) {
-    println("4xx response calling Models API#unloadModels")
+    println("4xx response calling ModelsApi#unloadModels")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Models API#unloadModels")
+    println("5xx response calling ModelsApi#unloadModels")
     e.printStackTrace()
 }
 ```

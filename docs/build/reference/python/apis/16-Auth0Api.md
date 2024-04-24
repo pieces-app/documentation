@@ -32,14 +32,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Auth0 API(api_client)
+    api_instance = pieces_os_client.Auth0Api(api_client)
     client_id = 'client_id_example' # str | The client ID of the Auth0 Instance (optional)
     return_to = 'return_to_example' # str | The URL that the logout endpoint will return to (optional)
 
@@ -101,14 +101,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Auth0 API(api_client)
+    api_instance = pieces_os_client.Auth0Api(api_client)
     audience = '`https://pieces.us.auth0.com`/api/v2/' # str |  The unique identifier of the target API you want to access.
     scope = ['scope_example'] # List[str] | The scopes which you want to request authorization for. These must be separated by a space. You can request any of the standard OpenID Connect (OIDC) scopes about users, such as profile and email, custom claims that must conform to a namespaced format, or any scopes supported by the target API (for example, read:contacts). Include offline_access to get a Refresh Token.
     response_type = 'code' # str | Indicates to Auth0 which OAuth 2.0 Flow you want to perform. Use code for Authorization Code Grant (PKCE) Flow.
@@ -189,14 +189,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Auth0 API(api_client)
+    api_instance = pieces_os_client.Auth0Api(api_client)
     grant_type = 'grant_type_example' # str | Denotes the flow you are using. For Authorization Code, use authorization_code or refresh_token.
     client_id = 'client_id_example' # str | Your application's Client ID.
     code = 'code_example' # str | The Authorization Code received from the initial /authorize call.
@@ -271,7 +271,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -288,7 +288,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Auth0 API(api_client)
+    api_instance = pieces_os_client.Auth0Api(api_client)
 
     try:
         # https://auth.pieces.services/userinfo [GET]

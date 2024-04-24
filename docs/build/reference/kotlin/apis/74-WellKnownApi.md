@@ -22,18 +22,18 @@ Retrieves the health status of the server.
 ### Example {#getwellknownhealth-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnown API()
+val apiInstance = WellKnownApi()
 try {
     val result : kotlin.String = apiInstance.getWellKnownHealth()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnown API#getWellKnownHealth")
+    println("4xx response calling WellKnownApi#getWellKnownHealth")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnown API#getWellKnownHealth")
+    println("5xx response calling WellKnownApi#getWellKnownHealth")
     e.printStackTrace()
 }
 ```
@@ -64,18 +64,18 @@ Retrieves the version of the server. It returns a string representing the curren
 ### Example {#getwellknownversion-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WellKnown API()
+val apiInstance = WellKnownApi()
 try {
     val result : kotlin.String = apiInstance.getWellKnownVersion()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WellKnown API#getWellKnownVersion")
+    println("4xx response calling WellKnownApi#getWellKnownVersion")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WellKnown API#getWellKnownVersion")
+    println("5xx response calling WellKnownApi#getWellKnownVersion")
     e.printStackTrace()
 }
 ```

@@ -32,14 +32,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = MachineLearning API(api_client)
+    api_instance = pieces_os_client.MachineLearningApi(api_client)
     preonboarded_persona_details = pieces_os_client.PreonboardedPersonaDetails() # PreonboardedPersonaDetails |  (optional)
 
     try:
@@ -101,14 +101,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = MachineLearning API(api_client)
+    api_instance = pieces_os_client.MachineLearningApi(api_client)
     classify = True # bool | This will let us know if you want us to classifiy your code, this is default to false. (optional)
     unsegmented_technical_language = pieces_os_client.UnsegmentedTechnicalLanguage() # UnsegmentedTechnicalLanguage |  (optional)
 

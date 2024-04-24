@@ -31,14 +31,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = MacOS API(api_client)
+    api_instance = pieces_os_client.MacOSApi(api_client)
     seeded_mac_os_asset = pieces_os_client.SeededMacOSAsset() # SeededMacOSAsset | A SeededMacosApplication which contains the value and an Application Instance (optional)
 
     try:

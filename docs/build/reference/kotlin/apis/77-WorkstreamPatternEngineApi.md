@@ -24,19 +24,19 @@ This will activate your Workstream Pattern Engine. This is used to aggregate inf
 ### Example {#workstreampatternengineprocessorsvisionactivate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngine API()
+val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionActivate(workstreamPatternEngineStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionActivate")
+    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionActivate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionActivate")
+    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionActivate")
     e.printStackTrace()
 }
 ```
@@ -70,18 +70,18 @@ This will clear the data for the Workstream Pattern Engine, specifically for our
 ### Example {#workstreampatternengineprocessorsvisiondataclear-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngine API()
+val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineDataCleanupRequest : WorkstreamPatternEngineDataCleanupRequest =  // WorkstreamPatternEngineDataCleanupRequest | 
 try {
     apiInstance.workstreamPatternEngineProcessorsVisionDataClear(workstreamPatternEngineDataCleanupRequest)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDataClear")
+    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDataClear")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDataClear")
+    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDataClear")
     e.printStackTrace()
 }
 ```
@@ -115,19 +115,19 @@ This will deactivate your Workstream Pattern Engine. This is used to aggregate i
 ### Example {#workstreampatternengineprocessorsvisiondeactivate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngine API()
+val apiInstance = WorkstreamPatternEngineApi()
 val workstreamPatternEngineStatus : WorkstreamPatternEngineStatus =  // WorkstreamPatternEngineStatus | 
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionDeactivate(workstreamPatternEngineStatus)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDeactivate")
+    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDeactivate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionDeactivate")
+    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionDeactivate")
     e.printStackTrace()
 }
 ```
@@ -161,18 +161,18 @@ This will get a snapshot of the status your Workstream Pattern Engine. This is u
 ### Example {#workstreampatternengineprocessorsvisionstatus-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = WorkstreamPatternEngine API()
+val apiInstance = WorkstreamPatternEngineApi()
 try {
     val result : WorkstreamPatternEngineStatus = apiInstance.workstreamPatternEngineProcessorsVisionStatus()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionStatus")
+    println("4xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling WorkstreamPatternEngine API#workstreamPatternEngineProcessorsVisionStatus")
+    println("5xx response calling WorkstreamPatternEngineApi#workstreamPatternEngineProcessorsVisionStatus")
     e.printStackTrace()
 }
 ```

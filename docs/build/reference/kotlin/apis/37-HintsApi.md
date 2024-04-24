@@ -23,19 +23,19 @@ This will create a hint.
 ### Example {#hintscreatenewhint-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hints API()
+val apiInstance = HintsApi()
 val seededHint : SeededHint =  // SeededHint | 
 try {
     val result : Hint = apiInstance.hintsCreateNewHint(seededHint)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Hints API#hintsCreateNewHint")
+    println("4xx response calling HintsApi#hintsCreateNewHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hints API#hintsCreateNewHint")
+    println("5xx response calling HintsApi#hintsCreateNewHint")
     e.printStackTrace()
 }
 ```
@@ -69,18 +69,18 @@ This will delete a specific hint.
 ### Example {#hintsdeletespecifichint-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hints API()
+val apiInstance = HintsApi()
 val hint : kotlin.String = hint_example // kotlin.String | This is a specific hint uuid
 try {
     apiInstance.hintsDeleteSpecificHint(hint)
 } catch (e: ClientException) {
-    println("4xx response calling Hints API#hintsDeleteSpecificHint")
+    println("4xx response calling HintsApi#hintsDeleteSpecificHint")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hints API#hintsDeleteSpecificHint")
+    println("5xx response calling HintsApi#hintsDeleteSpecificHint")
     e.printStackTrace()
 }
 ```
@@ -114,18 +114,18 @@ This will get a snapshot of all of the hints.
 ### Example {#hintssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Hints API()
+val apiInstance = HintsApi()
 try {
     val result : Hints = apiInstance.hintsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Hints API#hintsSnapshot")
+    println("4xx response calling HintsApi#hintsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Hints API#hintsSnapshot")
+    println("5xx response calling HintsApi#hintsSnapshot")
     e.printStackTrace()
 }
 ```
