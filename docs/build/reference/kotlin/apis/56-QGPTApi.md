@@ -26,19 +26,19 @@ Generates suggested questions that users can ask. It accepts the answer displaye
 ### Example {#hints-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val qgPTHintsInput : QGPTHintsInput =  // QGPTHintsInput | 
 try {
     val result : QGPTQuestionOutput = apiInstance.hints(qgPTHintsInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#hints")
+    println("4xx response calling QGPTApi#hints")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#hints")
+    println("5xx response calling QGPTApi#hints")
     e.printStackTrace()
 }
 ```
@@ -72,20 +72,20 @@ Utilize this endpoint for Who Support, identifying individuals who can provide a
 ### Example {#personsrelated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val qgPTPersonsRelatedInput : QGPTPersonsRelatedInput =  // QGPTPersonsRelatedInput | 
 try {
     val result : QGPTPersonsRelatedOutput = apiInstance.personsRelated(transferables, qgPTPersonsRelatedInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#personsRelated")
+    println("4xx response calling QGPTApi#personsRelated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#personsRelated")
+    println("5xx response calling QGPTApi#personsRelated")
     e.printStackTrace()
 }
 ```
@@ -120,19 +120,19 @@ Provides a WebSocket connection that streams inputs to the qGPT model. It handle
 ### Example {#qgptstream-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val qgPTStreamInput : QGPTStreamInput =  // QGPTStreamInput | 
 try {
     val result : QGPTStreamOutput = apiInstance.qgptStream(qgPTStreamInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#qgptStream")
+    println("4xx response calling QGPTApi#qgptStream")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#qgptStream")
+    println("5xx response calling QGPTApi#qgptStream")
     e.printStackTrace()
 }
 ```
@@ -166,19 +166,19 @@ Processes relevant code snippets or UUIDs returned from the /qgpt/relevance endp
 ### Example {#question-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val qgPTQuestionInput : QGPTQuestionInput =  // QGPTQuestionInput | 
 try {
     val result : QGPTQuestionOutput = apiInstance.question(qgPTQuestionInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#question")
+    println("4xx response calling QGPTApi#question")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#question")
+    println("5xx response calling QGPTApi#question")
     e.printStackTrace()
 }
 ```
@@ -212,19 +212,19 @@ This is the first phase to the QGPT flow.  Please one of the following. 1. provi
 ### Example {#relevance-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val qgPTRelevanceInput : QGPTRelevanceInput =  // QGPTRelevanceInput | 
 try {
     val result : QGPTRelevanceOutput = apiInstance.relevance(qgPTRelevanceInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#relevance")
+    println("4xx response calling QGPTApi#relevance")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#relevance")
+    println("5xx response calling QGPTApi#relevance")
     e.printStackTrace()
 }
 ```
@@ -258,19 +258,19 @@ This will take in a followup question and the history of the conversation, and e
 ### Example {#reprompt-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = QGPT API()
+val apiInstance = QGPTApi()
 val qgPTRepromptInput : QGPTRepromptInput =  // QGPTRepromptInput | 
 try {
     val result : QGPTRepromptOutput = apiInstance.reprompt(qgPTRepromptInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling QGPT API#reprompt")
+    println("4xx response calling QGPTApi#reprompt")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling QGPT API#reprompt")
+    println("5xx response calling QGPTApi#reprompt")
     e.printStackTrace()
 }
 ```

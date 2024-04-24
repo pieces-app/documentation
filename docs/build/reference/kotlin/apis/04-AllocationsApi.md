@@ -26,19 +26,19 @@ This will attempt to connect to a specific users cloud.(Required that the curren
 ### Example {#allocationsconnectnewcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 val userProfile : UserProfile =  // UserProfile | 
 try {
     val result : AllocationCloud = apiInstance.allocationsConnectNewCloud(userProfile)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsConnectNewCloud")
+    println("4xx response calling AllocationsApi#allocationsConnectNewCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsConnectNewCloud")
+    println("5xx response calling AllocationsApi#allocationsConnectNewCloud")
     e.printStackTrace()
 }
 ```
@@ -72,19 +72,19 @@ This is unimplemented locally. This will create an allocation. ONLY used within 
 ### Example {#allocationscreatenewallocation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : AllocationCloud = apiInstance.allocationsCreateNewAllocation(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsCreateNewAllocation")
+    println("4xx response calling AllocationsApi#allocationsCreateNewAllocation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsCreateNewAllocation")
+    println("5xx response calling AllocationsApi#allocationsCreateNewAllocation")
     e.printStackTrace()
 }
 ```
@@ -118,19 +118,19 @@ This is unimplemented locally. This will delete an allocation. ONLY used within 
 ### Example {#allocationsdeleteallocation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : kotlin.String = apiInstance.allocationsDeleteAllocation(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsDeleteAllocation")
+    println("4xx response calling AllocationsApi#allocationsDeleteAllocation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsDeleteAllocation")
+    println("5xx response calling AllocationsApi#allocationsDeleteAllocation")
     e.printStackTrace()
 }
 ```
@@ -164,19 +164,19 @@ This will attempt to disconnect to a specific users cloud.
 ### Example {#allocationsdisconnectcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : kotlin.String = apiInstance.allocationsDisconnectCloud(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsDisconnectCloud")
+    println("4xx response calling AllocationsApi#allocationsDisconnectCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsDisconnectCloud")
+    println("5xx response calling AllocationsApi#allocationsDisconnectCloud")
     e.printStackTrace()
 }
 ```
@@ -210,19 +210,19 @@ This will attempt to reconnect to a users cloud. This will ensure that we are co
 ### Example {#allocationsreconnectcloud-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 val allocationCloud : AllocationCloud =  // AllocationCloud | 
 try {
     val result : AllocationCloud = apiInstance.allocationsReconnectCloud(allocationCloud)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsReconnectCloud")
+    println("4xx response calling AllocationsApi#allocationsReconnectCloud")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsReconnectCloud")
+    println("5xx response calling AllocationsApi#allocationsReconnectCloud")
     e.printStackTrace()
 }
 ```
@@ -256,18 +256,18 @@ This is going to get a snapshot of all of the connected allocations.
 ### Example {#allocationssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Allocations API()
+val apiInstance = AllocationsApi()
 try {
     val result : Allocations = apiInstance.allocationsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Allocations API#allocationsSnapshot")
+    println("4xx response calling AllocationsApi#allocationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Allocations API#allocationsSnapshot")
+    println("5xx response calling AllocationsApi#allocationsSnapshot")
     e.printStackTrace()
 }
 ```

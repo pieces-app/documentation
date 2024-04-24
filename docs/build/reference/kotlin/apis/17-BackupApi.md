@@ -29,18 +29,18 @@ Method | HTTP request | Description
 ### Example {#backup-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val assets : Assets =  // Assets | 
 try {
     apiInstance.backup(assets)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backup")
+    println("4xx response calling BackupApi#backup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backup")
+    println("5xx response calling BackupApi#backup")
     e.printStackTrace()
 }
 ```
@@ -72,18 +72,18 @@ No authorization required
 ### Example {#backupasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val asset : Asset =  // Asset | 
 try {
     apiInstance.backupAsset(asset)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupAsset")
+    println("4xx response calling BackupApi#backupAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupAsset")
+    println("5xx response calling BackupApi#backupAsset")
     e.printStackTrace()
 }
 ```
@@ -117,20 +117,20 @@ Given a backup identifier version_timestamp.  we will restore a given backup fro
 ### Example {#backuprestorespecificbackup-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 val backup2 : Backup =  // Backup | 
 try {
     val result : Backup = apiInstance.backupRestoreSpecificBackup(backup, backup2)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupRestoreSpecificBackup")
+    println("4xx response calling BackupApi#backupRestoreSpecificBackup")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupRestoreSpecificBackup")
+    println("5xx response calling BackupApi#backupRestoreSpecificBackup")
     e.printStackTrace()
 }
 ```
@@ -165,20 +165,20 @@ This take a local database and ensure that it is backed up to the cloud.  NOTE: 
 ### Example {#backuprestorespecificbackupstreamed-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 val backup2 : Backup =  // Backup | 
 try {
     val result : BackupStreamedProgress = apiInstance.backupRestoreSpecificBackupStreamed(backup, backup2)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupRestoreSpecificBackupStreamed")
+    println("4xx response calling BackupApi#backupRestoreSpecificBackupStreamed")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupRestoreSpecificBackupStreamed")
+    println("5xx response calling BackupApi#backupRestoreSpecificBackupStreamed")
     e.printStackTrace()
 }
 ```
@@ -213,19 +213,19 @@ This will just get the metadata associated with a specific backup.
 ### Example {#backupspecificbackupsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 try {
     val result : Backup = apiInstance.backupSpecificBackupSnapshot(backup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupSpecificBackupSnapshot")
+    println("4xx response calling BackupApi#backupSpecificBackupSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupSpecificBackupSnapshot")
+    println("5xx response calling BackupApi#backupSpecificBackupSnapshot")
     e.printStackTrace()
 }
 ```
@@ -259,18 +259,18 @@ This is Going to cancel a create backup (streamed) or not streamed that is curre
 ### Example {#backupspecificcreationcancel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 try {
     apiInstance.backupSpecificCreationCancel(backup)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupSpecificCreationCancel")
+    println("4xx response calling BackupApi#backupSpecificCreationCancel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupSpecificCreationCancel")
+    println("5xx response calling BackupApi#backupSpecificCreationCancel")
     e.printStackTrace()
 }
 ```
@@ -304,19 +304,19 @@ TODO add a description:
 ### Example {#backupspecificcreationstatus-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 try {
     val result : BackupStatus = apiInstance.backupSpecificCreationStatus(backup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupSpecificCreationStatus")
+    println("4xx response calling BackupApi#backupSpecificCreationStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupSpecificCreationStatus")
+    println("5xx response calling BackupApi#backupSpecificCreationStatus")
     e.printStackTrace()
 }
 ```
@@ -350,19 +350,19 @@ This will cancel a Restoration that is in progress and restore to the original d
 ### Example {#backupspecificrestorationcancel-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 val backup2 : Backup =  // Backup | 
 try {
     apiInstance.backupSpecificRestorationCancel(backup, backup2)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupSpecificRestorationCancel")
+    println("4xx response calling BackupApi#backupSpecificRestorationCancel")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupSpecificRestorationCancel")
+    println("5xx response calling BackupApi#backupSpecificRestorationCancel")
     e.printStackTrace()
 }
 ```
@@ -397,19 +397,19 @@ TODO add a description:
 ### Example {#backupspecificrestorationstatus-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Backup API()
+val apiInstance = BackupApi()
 val backup : kotlin.String = backup_example // kotlin.String | This is a identifier that is used to identify a specific backup.(version_timestamp)
 try {
     val result : BackupStatus = apiInstance.backupSpecificRestorationStatus(backup)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Backup API#backupSpecificRestorationStatus")
+    println("4xx response calling BackupApi#backupSpecificRestorationStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Backup API#backupSpecificRestorationStatus")
+    println("5xx response calling BackupApi#backupSpecificRestorationStatus")
     e.printStackTrace()
 }
 ```

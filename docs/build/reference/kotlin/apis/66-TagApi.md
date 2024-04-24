@@ -27,19 +27,19 @@ This will associate a tag with a asset.
 ### Example {#tagassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 try {
     apiInstance.tagAssociateAsset(asset, tag)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagAssociateAsset")
+    println("4xx response calling TagApi#tagAssociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagAssociateAsset")
+    println("5xx response calling TagApi#tagAssociateAsset")
     e.printStackTrace()
 }
 ```
@@ -74,19 +74,19 @@ This will associate a tag with a person.
 ### Example {#tagassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.tagAssociatePerson(tag, person)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagAssociatePerson")
+    println("4xx response calling TagApi#tagAssociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagAssociatePerson")
+    println("5xx response calling TagApi#tagAssociatePerson")
     e.printStackTrace()
 }
 ```
@@ -121,19 +121,19 @@ This will enable us to dissassociate a tag from a asset.
 ### Example {#tagdisassociateasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     apiInstance.tagDisassociateAsset(tag, asset)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagDisassociateAsset")
+    println("4xx response calling TagApi#tagDisassociateAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagDisassociateAsset")
+    println("5xx response calling TagApi#tagDisassociateAsset")
     e.printStackTrace()
 }
 ```
@@ -168,19 +168,19 @@ This will enable us to dissassociate a tag from a person.
 ### Example {#tagdisassociateperson-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val person : kotlin.String = person_example // kotlin.String | This is a uuid that represents a person.
 try {
     apiInstance.tagDisassociatePerson(tag, person)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagDisassociatePerson")
+    println("4xx response calling TagApi#tagDisassociatePerson")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagDisassociatePerson")
+    println("5xx response calling TagApi#tagDisassociatePerson")
     e.printStackTrace()
 }
 ```
@@ -215,19 +215,19 @@ This will take in a SeededScoreIncrement and will increment the material relativ
 ### Example {#tagscoresincrement-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val seededScoreIncrement : SeededScoreIncrement =  // SeededScoreIncrement | 
 try {
     apiInstance.tagScoresIncrement(tag, seededScoreIncrement)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagScoresIncrement")
+    println("4xx response calling TagApi#tagScoresIncrement")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagScoresIncrement")
+    println("5xx response calling TagApi#tagScoresIncrement")
     e.printStackTrace()
 }
 ```
@@ -262,20 +262,20 @@ This will update a specific tag.
 ### Example {#tagupdate-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val tag : Tag =  // Tag | 
 try {
     val result : Tag = apiInstance.tagUpdate(transferables, tag)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagUpdate")
+    println("4xx response calling TagApi#tagUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagUpdate")
+    println("5xx response calling TagApi#tagUpdate")
     e.printStackTrace()
 }
 ```
@@ -310,20 +310,20 @@ This will get a specific tag.
 ### Example {#tagsspecifictagsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Tag API()
+val apiInstance = TagApi()
 val tag : kotlin.String = tag_example // kotlin.String | tag id
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Tag = apiInstance.tagsSpecificTagSnapshot(tag, transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Tag API#tagsSpecificTagSnapshot")
+    println("4xx response calling TagApi#tagsSpecificTagSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Tag API#tagsSpecificTagSnapshot")
+    println("5xx response calling TagApi#tagsSpecificTagSnapshot")
     e.printStackTrace()
 }
 ```

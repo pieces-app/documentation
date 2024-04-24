@@ -33,14 +33,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Distributions API(api_client)
+    api_instance = pieces_os_client.DistributionsApi(api_client)
     seeded_distribution = pieces_os_client.SeededDistribution() # SeededDistribution |  (optional)
 
     try:
@@ -100,14 +100,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Distributions API(api_client)
+    api_instance = pieces_os_client.DistributionsApi(api_client)
     distribution = 'distribution_example' # str | This is the uuid of a specific distribution.
 
     try:
@@ -166,14 +166,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Distributions API(api_client)
+    api_instance = pieces_os_client.DistributionsApi(api_client)
 
     try:
         # /distributions [GET]

@@ -32,18 +32,18 @@ Retrieves a list of external applications installed on the user&#39;s machine th
 ### Example {#applicationsexternalrelated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 try {
     val result : DetectedExternalApplications = apiInstance.applicationsExternalRelated()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsExternalRelated")
+    println("4xx response calling ApplicationsApi#applicationsExternalRelated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsExternalRelated")
+    println("5xx response calling ApplicationsApi#applicationsExternalRelated")
     e.printStackTrace()
 }
 ```
@@ -74,18 +74,18 @@ Provides a snapshot of all external applications detected on the user&#39;s mach
 ### Example {#applicationsexternalsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 try {
     val result : DetectedExternalApplications = apiInstance.applicationsExternalSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsExternalSnapshot")
+    println("4xx response calling ApplicationsApi#applicationsExternalSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsExternalSnapshot")
+    println("5xx response calling ApplicationsApi#applicationsExternalSnapshot")
     e.printStackTrace()
 }
 ```
@@ -116,19 +116,19 @@ Registers a new application within the Pieces ecosystem.
 ### Example {#applicationsregister-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val application : Application =  // Application | This will accept a application.
 try {
     val result : Application = apiInstance.applicationsRegister(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsRegister")
+    println("4xx response calling ApplicationsApi#applicationsRegister")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsRegister")
+    println("5xx response calling ApplicationsApi#applicationsRegister")
     e.printStackTrace()
 }
 ```
@@ -162,19 +162,19 @@ Closes an active session, identified by a session UUID, marking the end of the u
 ### Example {#applicationssessionclose-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val body : java.util.UUID = 38400000-8cf0-11bd-b23e-10b96e4ef00d // java.util.UUID | This will accept a required session uuid.
 try {
     val result : Session = apiInstance.applicationsSessionClose(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsSessionClose")
+    println("4xx response calling ApplicationsApi#applicationsSessionClose")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsSessionClose")
+    println("5xx response calling ApplicationsApi#applicationsSessionClose")
     e.printStackTrace()
 }
 ```
@@ -208,18 +208,18 @@ Initiates a new session, marking the start of a user&#39;s interaction with the 
 ### Example {#applicationssessionopen-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 try {
     val result : Session = apiInstance.applicationsSessionOpen()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsSessionOpen")
+    println("4xx response calling ApplicationsApi#applicationsSessionOpen")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsSessionOpen")
+    println("5xx response calling ApplicationsApi#applicationsSessionOpen")
     e.printStackTrace()
 }
 ```
@@ -250,19 +250,19 @@ Fetches detailed information about a specific session, identified by a session U
 ### Example {#applicationssessionsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val session : kotlin.String = session_example // kotlin.String | This is a uuid that points to a session.
 try {
     val result : Session = apiInstance.applicationsSessionSnapshot(session)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsSessionSnapshot")
+    println("4xx response calling ApplicationsApi#applicationsSessionSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsSessionSnapshot")
+    println("5xx response calling ApplicationsApi#applicationsSessionSnapshot")
     e.printStackTrace()
 }
 ```
@@ -296,18 +296,18 @@ Retrieves a comprehensive overview of all applications tracked by the Pieces sys
 ### Example {#applicationssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 try {
     val result : Applications = apiInstance.applicationsSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsSnapshot")
+    println("4xx response calling ApplicationsApi#applicationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsSnapshot")
+    println("5xx response calling ApplicationsApi#applicationsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -338,19 +338,19 @@ Obtains a snapshot with information about a specific application, identified by 
 ### Example {#applicationsspecificapplicationsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val application : kotlin.String = application_example // kotlin.String | This is a uuid that represents an application
 try {
     val result : Application = apiInstance.applicationsSpecificApplicationSnapshot(application)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsSpecificApplicationSnapshot")
+    println("4xx response calling ApplicationsApi#applicationsSpecificApplicationSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsSpecificApplicationSnapshot")
+    println("5xx response calling ApplicationsApi#applicationsSpecificApplicationSnapshot")
     e.printStackTrace()
 }
 ```
@@ -384,19 +384,19 @@ Records user interaction events within applications, such as clicks or taps, to 
 ### Example {#applicationsusageengagementinteraction-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val seededTrackedInteractionEvent : SeededTrackedInteractionEvent =  // SeededTrackedInteractionEvent | 
 try {
     val result : TrackedInteractionEvent = apiInstance.applicationsUsageEngagementInteraction(seededTrackedInteractionEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsUsageEngagementInteraction")
+    println("4xx response calling ApplicationsApi#applicationsUsageEngagementInteraction")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsUsageEngagementInteraction")
+    println("5xx response calling ApplicationsApi#applicationsUsageEngagementInteraction")
     e.printStackTrace()
 }
 ```
@@ -430,19 +430,19 @@ Captures keyboard interaction events, including shortcuts, within applications t
 ### Example {#applicationsusageengagementkeyboard-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val seededTrackedKeyboardEvent : SeededTrackedKeyboardEvent =  // SeededTrackedKeyboardEvent | 
 try {
     val result : TrackedKeyboardEvent = apiInstance.applicationsUsageEngagementKeyboard(seededTrackedKeyboardEvent)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsUsageEngagementKeyboard")
+    println("4xx response calling ApplicationsApi#applicationsUsageEngagementKeyboard")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsUsageEngagementKeyboard")
+    println("5xx response calling ApplicationsApi#applicationsUsageEngagementKeyboard")
     e.printStackTrace()
 }
 ```
@@ -476,18 +476,18 @@ Logs the installation events of the Pieces application.
 ### Example {#applicationsusageinstallation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val trackedApplicationInstall : TrackedApplicationInstall =  // TrackedApplicationInstall | 
 try {
     apiInstance.applicationsUsageInstallation(trackedApplicationInstall)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#applicationsUsageInstallation")
+    println("4xx response calling ApplicationsApi#applicationsUsageInstallation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#applicationsUsageInstallation")
+    println("5xx response calling ApplicationsApi#applicationsUsageInstallation")
     e.printStackTrace()
 }
 ```
@@ -521,18 +521,18 @@ Tracks updates to the Pieces application, including version changes.
 ### Example {#postapplicationsusageupdated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Applications API()
+val apiInstance = ApplicationsApi()
 val trackedApplicationUpdate : TrackedApplicationUpdate =  // TrackedApplicationUpdate | Sending over the previous application version, the current version, and the user.
 try {
     apiInstance.postApplicationsUsageUpdated(trackedApplicationUpdate)
 } catch (e: ClientException) {
-    println("4xx response calling Applications API#postApplicationsUsageUpdated")
+    println("4xx response calling ApplicationsApi#postApplicationsUsageUpdated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Applications API#postApplicationsUsageUpdated")
+    println("5xx response calling ApplicationsApi#postApplicationsUsageUpdated")
     e.printStackTrace()
 }
 ```

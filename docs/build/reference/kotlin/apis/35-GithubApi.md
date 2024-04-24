@@ -21,20 +21,20 @@ This will attempt to get all the gist availble and return them to the user as a 
 ### Example {#importgithubgists-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Github API()
+val apiInstance = GithubApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
 val seededGithubGistsImport : SeededGithubGistsImport =  // SeededGithubGistsImport | 
 try {
     val result : Seeds = apiInstance.importGithubGists(automatic, seededGithubGistsImport)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Github API#importGithubGists")
+    println("4xx response calling GithubApi#importGithubGists")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Github API#importGithubGists")
+    println("5xx response calling GithubApi#importGithubGists")
     e.printStackTrace()
 }
 ```

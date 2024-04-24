@@ -15,9 +15,13 @@ def remove_md_links(text):
 
 
 def fix_h1_headers(text):
-    pattern = r' (\w+?)Api'
-    replacement = r' \1 API'
+    pattern = r'# (\w+?)Api'
+    replacement = r'# \1 API'
     result = re.sub(pattern, replacement, text)
+
+    pattern = r'title: (\w+?)Api'
+    replacement = r'title: \1 API'
+    result = re.sub(pattern, replacement, result)
     return result
 
 

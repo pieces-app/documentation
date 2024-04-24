@@ -45,14 +45,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seed = pieces_os_client.Seed() # Seed |  (optional)
 
@@ -113,14 +113,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
 
     try:
@@ -180,14 +180,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     seed = pieces_os_client.Seed() # Seed |  (optional)
 
@@ -251,14 +251,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     seeded_assets_recommendation = pieces_os_client.SeededAssetsRecommendation() # SeededAssetsRecommendation | The body of the request will be an SeededAssetsRecommendation Model with interaction meta data included at body.interactions.iterable and then the corrresponding index-paired body.assets.iterable with a fully populated assets array with fully sub-populated formats. (optional)
 
     try:
@@ -318,14 +318,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     assets = pieces_os_client.Assets() # Assets | The body of the request is an object (Assets Model) with iterable internally. (optional)
 
     try:
@@ -385,14 +385,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
 
     try:
@@ -453,14 +453,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
         # /assets/pseudo [GET]
@@ -517,14 +517,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     query = 'query_example' # str | This is a string that you can use to search your assets. (optional)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     searchable_tags = 'searchable_tags_example' # str | This is a comma separated value of tags used for search. (optional)
@@ -592,14 +592,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
     assets_search_with_filters_input = pieces_os_client.AssetsSearchWithFiltersInput() # AssetsSearchWithFiltersInput |  (optional)
@@ -664,14 +664,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
     suggested = True # bool | This will let us know if a developer, wants a snapshot related to suggested content or normal content (optional)
     pseudo = True # bool | This is helper boolean that will give you the ability to also include your pseudo assets, we will always default to false. (optional)
@@ -735,14 +735,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -804,14 +804,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
     asset = '2254f2c8-5797-40e8-ac56-41166dc0e159' # str | The id (uuid) of the asset that you are trying to access.
     transferables = True # bool | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement) (optional)
 
@@ -874,14 +874,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
         # /assets/stream/identifiers [WS]
@@ -937,14 +937,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
         # /assets/stream/transferables [WS]
@@ -1000,14 +1000,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Assets API(api_client)
+    api_instance = pieces_os_client.AssetsApi(api_client)
 
     try:
         # /assets/stream [WS]

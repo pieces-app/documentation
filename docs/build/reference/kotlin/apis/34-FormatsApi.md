@@ -22,19 +22,19 @@ Get all of your formats for a given user.
 ### Example {#formatssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Formats API()
+val apiInstance = FormatsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Formats = apiInstance.formatsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Formats API#formatsSnapshot")
+    println("4xx response calling FormatsApi#formatsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Formats API#formatsSnapshot")
+    println("5xx response calling FormatsApi#formatsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -68,20 +68,20 @@ Request a specific format when given a id (uuid in path params)
 ### Example {#formatsspecificformatsnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Formats API()
+val apiInstance = FormatsApi()
 val format : java.util.UUID = 102ff265-fdfb-4142-8d94-4932d400199c // java.util.UUID | The id (uuid) for a specific format.
 val transferable : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Format = apiInstance.formatsSpecificFormatSnapshot(format, transferable)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Formats API#formatsSpecificFormatSnapshot")
+    println("4xx response calling FormatsApi#formatsSpecificFormatSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Formats API#formatsSpecificFormatSnapshot")
+    println("5xx response calling FormatsApi#formatsSpecificFormatSnapshot")
     e.printStackTrace()
 }
 ```

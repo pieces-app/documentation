@@ -30,19 +30,19 @@ This will link an external provider to your current auth0 account.  Will throw e
 ### Example {#linkprovider-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 val seededExternalProvider : SeededExternalProvider =  // SeededExternalProvider | 
 try {
     val result : ReturnedUserProfile = apiInstance.linkProvider(seededExternalProvider)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#linkProvider")
+    println("4xx response calling OSApi#linkProvider")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#linkProvider")
+    println("5xx response calling OSApi#linkProvider")
     e.printStackTrace()
 }
 ```
@@ -76,18 +76,18 @@ This will get information related to your specific device.
 ### Example {#osdeviceinformation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     val result : OSDeviceInformationReturnable = apiInstance.osDeviceInformation()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#osDeviceInformation")
+    println("4xx response calling OSApi#osDeviceInformation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#osDeviceInformation")
+    println("5xx response calling OSApi#osDeviceInformation")
     e.printStackTrace()
 }
 ```
@@ -118,18 +118,18 @@ This will only work on Macos and Windows.  And will get the permissions of the u
 ### Example {#ospermissions-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     val result : OSPermissions = apiInstance.osPermissions()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#osPermissions")
+    println("4xx response calling OSApi#osPermissions")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#osPermissions")
+    println("5xx response calling OSApi#osPermissions")
     e.printStackTrace()
 }
 ```
@@ -160,19 +160,19 @@ This will only work on Macos and Windows.  This will request permissions for the
 ### Example {#ospermissionsrequest-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 val osPermissions : OSPermissions =  // OSPermissions | 
 try {
     val result : OSPermissions = apiInstance.osPermissionsRequest(osPermissions)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#osPermissionsRequest")
+    println("4xx response calling OSApi#osPermissionsRequest")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#osPermissionsRequest")
+    println("5xx response calling OSApi#osPermissionsRequest")
     e.printStackTrace()
 }
 ```
@@ -206,17 +206,17 @@ This will restart PiecesOS, if successfull with return a 204. This is a LOCALOS 
 ### Example {#osrestart-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     apiInstance.osRestart()
 } catch (e: ClientException) {
-    println("4xx response calling OS API#osRestart")
+    println("4xx response calling OSApi#osRestart")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#osRestart")
+    println("5xx response calling OSApi#osRestart")
     e.printStackTrace()
 }
 ```
@@ -247,19 +247,19 @@ This is a helper endpoint that will check the status of an update for PiecesOS. 
 ### Example {#osupdatecheck-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 val uncheckedOSUpdate : UncheckedOSUpdate =  // UncheckedOSUpdate | 
 try {
     val result : CheckedOSUpdate = apiInstance.osUpdateCheck(uncheckedOSUpdate)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#osUpdateCheck")
+    println("4xx response calling OSApi#osUpdateCheck")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#osUpdateCheck")
+    println("5xx response calling OSApi#osUpdateCheck")
     e.printStackTrace()
 }
 ```
@@ -293,19 +293,19 @@ This will trigger a filer picker and return the string paths of the files that w
 ### Example {#pickfiles-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 val filePickerInput : FilePickerInput =  // FilePickerInput | 
 try {
     val result : kotlin.collections.List<kotlin.String> = apiInstance.pickFiles(filePickerInput)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#pickFiles")
+    println("4xx response calling OSApi#pickFiles")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#pickFiles")
+    println("5xx response calling OSApi#pickFiles")
     e.printStackTrace()
 }
 ```
@@ -339,18 +339,18 @@ This will trigger a folder picker and return the string paths of the folders tha
 ### Example {#pickfolders-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     val result : kotlin.collections.List<kotlin.String> = apiInstance.pickFolders()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#pickFolders")
+    println("4xx response calling OSApi#pickFolders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#pickFolders")
+    println("5xx response calling OSApi#pickFolders")
     e.printStackTrace()
 }
 ```
@@ -381,18 +381,18 @@ A trigger that launches a Sign into OS Server
 ### Example {#signintoos-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     val result : UserProfile = apiInstance.signIntoOS()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#signIntoOS")
+    println("4xx response calling OSApi#signIntoOS")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#signIntoOS")
+    println("5xx response calling OSApi#signIntoOS")
     e.printStackTrace()
 }
 ```
@@ -423,18 +423,18 @@ A trigger that signs out a user from the OS
 ### Example {#signoutofos-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OS API()
+val apiInstance = OSApi()
 try {
     val result : Users = apiInstance.signOutOfOS()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OS API#signOutOfOS")
+    println("4xx response calling OSApi#signOutOfOS")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OS API#signOutOfOS")
+    println("5xx response calling OSApi#signOutOfOS")
     e.printStackTrace()
 }
 ```

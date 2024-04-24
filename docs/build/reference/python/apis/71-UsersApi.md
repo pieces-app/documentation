@@ -37,7 +37,7 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 # The client must configure the authentication and authorization parameters
@@ -54,7 +54,7 @@ configuration.access_token = os.environ["ACCESS_TOKEN"]
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Users API(api_client)
+    api_instance = pieces_os_client.UsersApi(api_client)
     o_auth_token = pieces_os_client.OAuthToken() # OAuthToken |  (optional)
 
     try:
@@ -114,14 +114,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Users API(api_client)
+    api_instance = pieces_os_client.UsersApi(api_client)
     user = 'user_example' # str | 
 
     try:
@@ -181,14 +181,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Users API(api_client)
+    api_instance = pieces_os_client.UsersApi(api_client)
 
     try:
         # /users [GET]
@@ -244,14 +244,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Users API(api_client)
+    api_instance = pieces_os_client.UsersApi(api_client)
     user = '497f6eca-6276-4993-bfeb-53cbbbba6f08' # str | The id (uuid) for a specific user.
 
     try:

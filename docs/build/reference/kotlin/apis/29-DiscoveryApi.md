@@ -24,20 +24,20 @@ This is the endpoint used for bulk import. In both cases of the bulk import flow
 ### Example {#discoverydiscoverassets-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Discovery API()
+val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
 val seededDiscoverableAssets : SeededDiscoverableAssets =  // SeededDiscoverableAssets | The discovery/discover/assets endpoint will accept seededDiscoverableAssets, that represetns an iterable of multiple fragments or files.
 try {
     val result : DiscoveredAssets = apiInstance.discoveryDiscoverAssets(automatic, seededDiscoverableAssets)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Discovery API#discoveryDiscoverAssets")
+    println("4xx response calling DiscoveryApi#discoveryDiscoverAssets")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Discovery API#discoveryDiscoverAssets")
+    println("5xx response calling DiscoveryApi#discoveryDiscoverAssets")
     e.printStackTrace()
 }
 ```
@@ -72,20 +72,20 @@ This is the discover discover assets html endpoint. The goal of this endpoint is
 ### Example {#discoverydiscoverassetshtml-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Discovery API()
+val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
 val seededDiscoverableHtmlWebpages : SeededDiscoverableHtmlWebpages =  // SeededDiscoverableHtmlWebpages | 
 try {
     val result : DiscoveredHtmlWebpages = apiInstance.discoveryDiscoverAssetsHtml(automatic, seededDiscoverableHtmlWebpages)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Discovery API#discoveryDiscoverAssetsHtml")
+    println("4xx response calling DiscoveryApi#discoveryDiscoverAssetsHtml")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Discovery API#discoveryDiscoverAssetsHtml")
+    println("5xx response calling DiscoveryApi#discoveryDiscoverAssetsHtml")
     e.printStackTrace()
 }
 ```
@@ -120,20 +120,20 @@ This endpoint will accept an array of text values, and attampt to extract sensit
 ### Example {#discoverydiscoversensitives-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Discovery API()
+val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
 val seededDiscoverableSensitives : SeededDiscoverableSensitives =  // SeededDiscoverableSensitives | 
 try {
     val result : DiscoveredSensitives = apiInstance.discoveryDiscoverSensitives(automatic, seededDiscoverableSensitives)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Discovery API#discoveryDiscoverSensitives")
+    println("4xx response calling DiscoveryApi#discoveryDiscoverSensitives")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Discovery API#discoveryDiscoverSensitives")
+    println("5xx response calling DiscoveryApi#discoveryDiscoverSensitives")
     e.printStackTrace()
 }
 ```
@@ -168,20 +168,20 @@ This will take in a tag or multiple tags and return all the tags that are relate
 ### Example {#discoverydiscovertagsrelated-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Discovery API()
+val apiInstance = DiscoveryApi()
 val automatic : kotlin.Boolean = true // kotlin.Boolean | For most cases set to true. If this is set to true we will handle the behavior automically or else we will not proactively handle specific behavior but we will let the developer decide the behavior.
 val seededDiscoverableRelatedTags : SeededDiscoverableRelatedTags =  // SeededDiscoverableRelatedTags | 
 try {
     val result : DiscoveredRelatedTags = apiInstance.discoveryDiscoverTagsRelated(automatic, seededDiscoverableRelatedTags)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Discovery API#discoveryDiscoverTagsRelated")
+    println("4xx response calling DiscoveryApi#discoveryDiscoverTagsRelated")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Discovery API#discoveryDiscoverTagsRelated")
+    println("5xx response calling DiscoveryApi#discoveryDiscoverTagsRelated")
     e.printStackTrace()
 }
 ```

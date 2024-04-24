@@ -26,19 +26,19 @@ Creates a conversation based on an asset. It initiates a conversation and genera
 ### Example {#conversationscreatefromasset-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 val asset : java.util.UUID = 2254f2c8-5797-40e8-ac56-41166dc0e159 // java.util.UUID | The id (uuid) of the asset that you are trying to access.
 try {
     val result : ConversationsCreateFromAssetOutput = apiInstance.conversationsCreateFromAsset(asset)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsCreateFromAsset")
+    println("4xx response calling ConversationsApi#conversationsCreateFromAsset")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsCreateFromAsset")
+    println("5xx response calling ConversationsApi#conversationsCreateFromAsset")
     e.printStackTrace()
 }
 ```
@@ -72,20 +72,20 @@ Creates a specific conversation.
 ### Example {#conversationscreatespecificconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededConversation : SeededConversation =  // SeededConversation | 
 try {
     val result : Conversation = apiInstance.conversationsCreateSpecificConversation(transferables, seededConversation)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsCreateSpecificConversation")
+    println("4xx response calling ConversationsApi#conversationsCreateSpecificConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsCreateSpecificConversation")
+    println("5xx response calling ConversationsApi#conversationsCreateSpecificConversation")
     e.printStackTrace()
 }
 ```
@@ -120,18 +120,18 @@ Deletes a specific conversation.
 ### Example {#conversationsdeletespecificconversation-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 val conversation : kotlin.String = conversation_example // kotlin.String | This is the uuid of a conversation.
 try {
     apiInstance.conversationsDeleteSpecificConversation(conversation)
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsDeleteSpecificConversation")
+    println("4xx response calling ConversationsApi#conversationsDeleteSpecificConversation")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsDeleteSpecificConversation")
+    println("5xx response calling ConversationsApi#conversationsDeleteSpecificConversation")
     e.printStackTrace()
 }
 ```
@@ -165,18 +165,18 @@ Retrieves all the UUIDs associated with a Conversation.
 ### Example {#conversationsidentifierssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 try {
     val result : FlattenedConversations = apiInstance.conversationsIdentifiersSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsIdentifiersSnapshot")
+    println("4xx response calling ConversationsApi#conversationsIdentifiersSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsIdentifiersSnapshot")
+    println("5xx response calling ConversationsApi#conversationsIdentifiersSnapshot")
     e.printStackTrace()
 }
 ```
@@ -207,19 +207,19 @@ Retrieves a snapshot of a specific conversation.
 ### Example {#conversationssnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Conversations = apiInstance.conversationsSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsSnapshot")
+    println("4xx response calling ConversationsApi#conversationsSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsSnapshot")
+    println("5xx response calling ConversationsApi#conversationsSnapshot")
     e.printStackTrace()
 }
 ```
@@ -253,17 +253,17 @@ Provides a WebSocket connection that emits changes to your conversation identifi
 ### Example {#conversationsstreamidentifiers-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Conversations API()
+val apiInstance = ConversationsApi()
 try {
     apiInstance.conversationsStreamIdentifiers()
 } catch (e: ClientException) {
-    println("4xx response calling Conversations API#conversationsStreamIdentifiers")
+    println("4xx response calling ConversationsApi#conversationsStreamIdentifiers")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Conversations API#conversationsStreamIdentifiers")
+    println("5xx response calling ConversationsApi#conversationsStreamIdentifiers")
     e.printStackTrace()
 }
 ```
