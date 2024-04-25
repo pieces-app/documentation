@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self';"
+          "value": "default-src 'self'; img-src 'self' https://storage.googleapis.com;"
         }
       ]
     }
