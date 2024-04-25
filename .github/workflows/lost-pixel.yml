@@ -21,6 +21,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Cache Docusaurus build
+        uses: actions/cache@v3
+        with:
+          path: |
+            .docusaurus
+            node_modules
+          key: ${{ runner.os }}-docusaurus-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-docusaurus-
+
       - name: Build Docusaurus
         run: pnpm run build
 
