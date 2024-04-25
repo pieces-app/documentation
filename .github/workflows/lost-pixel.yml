@@ -35,7 +35,7 @@ jobs:
         run: pnpm run build
 
       - name: Start Server
-        run: pnpm run start &
+        run: pnpm run serve &
 
       - name: Wait for Server
         run: sleep 15
