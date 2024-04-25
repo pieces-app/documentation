@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: 'pnpm'
+          cache: 'npm'
           cache-dependency-path: '**/pnpm-lock.yaml'
 
       - name: Install pnpm
@@ -34,14 +34,11 @@ jobs:
       - name: Build Docusaurus
         run: pnpm run build
 
-      - name: Install wait-on
-        run: npm install -g wait-on
-
       - name: Start Server
         run: pnpm run start &
 
       - name: Wait for Server
-        run: wait-on http://172.17.0.1:3000
+        run: sleep 15
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel@v3.8.0
