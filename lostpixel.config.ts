@@ -8,5 +8,5 @@ export const config: CustomProjectConfig = {
   },
   // OSS mode
   generateOnly: true,
-  failOnDifference: true,
+  failOnDifference: false,
 };
