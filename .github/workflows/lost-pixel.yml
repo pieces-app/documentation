@@ -34,11 +34,14 @@ jobs:
       - name: Build Docusaurus
         run: pnpm run build
 
+      - name: Install wait-on
+        run: npm install -g wait-on
+
       - name: Start Server
         run: pnpm run serve &
 
       - name: Wait for Server
-        run: sleep 15
+        run: wait-on http://localhost:3000
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel@v3.8.0
