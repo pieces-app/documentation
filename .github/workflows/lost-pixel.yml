@@ -41,7 +41,7 @@ jobs:
         run: pnpm run start &
 
       - name: Wait for Server
-        run: wait-on http://localhost:3000
+        run: wait-on http://172.17.0.1:3000
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel@v3.8.0
