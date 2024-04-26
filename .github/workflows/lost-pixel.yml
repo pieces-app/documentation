@@ -48,5 +48,14 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          name: lost-pixel-artefacts
+          name: lost-pixel-artifacts
           path: .lostpixel
+
+      # New steps to commit and push changes
+      - name: Commit and Push lost-pixel artifacts
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .lost-pixel
+          git commit -m "Upload lost pixel artifacts to .lost-pixel directory" || echo "No changes to commit"
+          git push
