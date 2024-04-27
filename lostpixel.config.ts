@@ -7,6 +7,8 @@ export const config: CustomProjectConfig = {
     baseUrl: 'http://172.17.0.1:3000',
   },
 
+  shotConcurrency: 15,
+
   generateOnly: true,
   failOnDifference: false,
 };
