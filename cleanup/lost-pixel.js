@@ -17,10 +17,12 @@ const getFiles = function(dirPath) {
         // Adjust the path format to match your requirements
         let formattedPath = filePath.replace(directoryPath, '').replace('.mdx', '').replace('.md', '');
         console.log('formattedPath', formattedPath)
-        pages.push({
+        const page = {
           path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
           name:  formattedPath.slice(1).replace('/', '-')
-        });
+        }
+        console.log('page', page)
+        pages.push(page);
       }
     }
   });
