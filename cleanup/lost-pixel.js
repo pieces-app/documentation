@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const directoryPath = path.join(__dirname, '../docs/build/glossary');
+const directoryPath = path.join(__dirname, '../docs');
 let pages = [];
 
 const getFiles = function(dirPath) {

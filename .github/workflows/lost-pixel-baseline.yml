@@ -1,4 +1,5 @@
 on: [push]
+name: Lost Pixel Baseline Update
 
 jobs:
   lost-pixel-update:
