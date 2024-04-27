@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js",
+    "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js && node cleanup/lost-pixel.js",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
