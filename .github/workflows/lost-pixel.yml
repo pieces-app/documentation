@@ -56,6 +56,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .lost-pixel
-          git commit -m "Upload lost pixel artifacts to .lost-pixel directory" || echo "No changes to commit"
+          git add .lostpixel
+          git commit -m "Upload lost pixel artifacts to .lostpixel directory" || echo "No changes to commit"
           git push
