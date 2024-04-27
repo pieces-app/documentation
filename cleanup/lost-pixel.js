@@ -17,7 +17,7 @@ const getFiles = function(dirPath) {
         let formattedPath = filePath.replace(directoryPath, '').replace('.html', '');
         pages.push({
           path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
-          name: formattedPath.replace('/', '').replace('.mdx', '').replace('md', '')
+          name: formattedPath.replace('/', '').replace('.mdx', '').replace('.md', '')
         });
       }
     }
