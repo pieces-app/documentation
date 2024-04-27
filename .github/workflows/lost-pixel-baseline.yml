@@ -1,8 +1,7 @@
 on: [push]
-name: Lost Pixel
 
 jobs:
-  build:
+  lost-pixel-update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,20 +43,18 @@ jobs:
         run: wait-on http://localhost:3000
 
       - name: Lost Pixel
+        id: lp
         uses: lost-pixel/lost-pixel@v3.8.0
+        env:
+          LOST_PIXEL_MODE: update
 
-      - uses: actions/upload-artifact@v3
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        if: ${{ failure() && steps.lp.conclusion == 'failure' }}
         with:
-          name: lost-pixel-artifacts
-          path: .lostpixel
-
-      # New steps to commit and push changes
-      - name: Commit and Push lost-pixel artifacts
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          cd .lostpixel
-          git pull
-          git add -f current difference
-          git commit -m "Upload lost pixel artifacts to .lostpixel directory" || echo "No changes to commit"
-          git push
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: update lost-pixel baselines
+          delete-branch: true
+          branch: 'lost-pixel-update/${{ github.ref_name }}'
+          title: 'Lost Pixel update - ${{ github.ref_name }}'
+          body: Automated baseline update PR created by Lost Pixel
