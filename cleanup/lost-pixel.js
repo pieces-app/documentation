@@ -13,12 +13,19 @@ const getFiles = function(dirPath) {
     } else {
       // Assuming you want to include all HTML files, adjust the condition as needed
       if (path.extname(file) === '.md' || path.extname(file) === '.mdx') {
+        console.log('filePath', filePath)
         // Adjust the path format to match your requirements
-        let formattedPath = filePath.replace(directoryPath, '').replace('.html', '');
+        let formattedPath = filePath.replace(directoryPath, '').replace('.mdx', '').replace('.md', '');
+        console.log('formattedPath', formattedPath)
         pages.push({
           path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
-          name: formattedPath.replace('/', '').replace('.mdx', '').replace('.md', '')
+          name: formattedPath
         });
+
+        console.log({
+          path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
+          name: formattedPath.slice(1).replace('/', '-')
+        })
       }
     }
   });
