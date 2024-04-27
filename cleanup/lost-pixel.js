@@ -15,11 +15,11 @@ const getFiles = function(dirPath) {
       if (path.extname(file) === '.md' || path.extname(file) === '.mdx') {
         console.log('filePath', filePath)
         // Adjust the path format to match your requirements
-        let formattedPath = filePath.replace(directoryPath, '').replace('.mdx', '').replace('.md', '');
+        let formattedPath = filePath.replace(directoryPath, '').slice(1).replace('/', '-').replace('.mdx', '').replace('.md', '')
         console.log('formattedPath', formattedPath)
         const page = {
-          path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
-          name:  formattedPath.slice(1).replace('/', '-')
+          path: formattedPath,
+          name:  formattedPath
         }
         console.log('page', page)
         pages.push(page);

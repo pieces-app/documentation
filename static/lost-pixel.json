@@ -1,254 +1,254 @@
 [
   {
-    "path": "/index",
-    "name": "/index"
+    "path": "index",
+    "name": "index"
   },
   {
-    "path": "/terms/accessor",
-    "name": "/terms/accessor"
+    "path": "terms-accessor",
+    "name": "terms-accessor"
   },
   {
-    "path": "/terms/activities",
-    "name": "/terms/activities"
+    "path": "terms-activities",
+    "name": "terms-activities"
   },
   {
-    "path": "/terms/aesthetics",
-    "name": "/terms/aesthetics"
+    "path": "terms-aesthetics",
+    "name": "terms-aesthetics"
   },
   {
-    "path": "/terms/analysis",
-    "name": "/terms/analysis"
+    "path": "terms-analysis",
+    "name": "terms-analysis"
   },
   {
-    "path": "/terms/anchor",
-    "name": "/terms/anchor"
+    "path": "terms-anchor",
+    "name": "terms-anchor"
   },
   {
-    "path": "/terms/annotation",
-    "name": "/terms/annotation"
+    "path": "terms-annotation",
+    "name": "terms-annotation"
   },
   {
-    "path": "/terms/application",
-    "name": "/terms/application"
+    "path": "terms-application",
+    "name": "terms-application"
   },
   {
-    "path": "/terms/asset",
-    "name": "/terms/asset"
+    "path": "terms-asset",
+    "name": "terms-asset"
   },
   {
-    "path": "/terms/associate",
-    "name": "/terms/associate"
+    "path": "terms-associate",
+    "name": "terms-associate"
   },
   {
-    "path": "/terms/auth0-user",
-    "name": "/terms/auth0-user"
+    "path": "terms-auth0-user",
+    "name": "terms-auth0-user"
   },
   {
-    "path": "/terms/backtracking",
-    "name": "/terms/backtracking"
+    "path": "terms-backtracking",
+    "name": "terms-backtracking"
   },
   {
-    "path": "/terms/classification",
-    "name": "/terms/classification"
+    "path": "terms-classification",
+    "name": "terms-classification"
   },
   {
-    "path": "/terms/context-awareness",
-    "name": "/terms/context-awareness"
+    "path": "terms-context-awareness",
+    "name": "terms-context-awareness"
   },
   {
-    "path": "/terms/context",
-    "name": "/terms/context"
+    "path": "terms-context",
+    "name": "terms-context"
   },
   {
-    "path": "/terms/copilot",
-    "name": "/terms/copilot"
+    "path": "terms-copilot",
+    "name": "terms-copilot"
   },
   {
-    "path": "/terms/disassociate",
-    "name": "/terms/disassociate"
+    "path": "terms-disassociate",
+    "name": "terms-disassociate"
   },
   {
-    "path": "/terms/discovered-assets",
-    "name": "/terms/discovered-assets"
+    "path": "terms-discovered-assets",
+    "name": "terms-discovered-assets"
   },
   {
-    "path": "/terms/discovery-api",
-    "name": "/terms/discovery-api"
+    "path": "terms-discovery-api",
+    "name": "terms-discovery-api"
   },
   {
-    "path": "/terms/distribution",
-    "name": "/terms/distribution"
+    "path": "terms-distribution",
+    "name": "terms-distribution"
   },
   {
-    "path": "/terms/edges",
-    "name": "/terms/edges"
+    "path": "terms-edges",
+    "name": "terms-edges"
   },
   {
-    "path": "/terms/embedding",
-    "name": "/terms/embedding"
+    "path": "terms-embedding",
+    "name": "terms-embedding"
   },
   {
-    "path": "/terms/enrich",
-    "name": "/terms/enrich"
+    "path": "terms-enrich",
+    "name": "terms-enrich"
   },
   {
-    "path": "/terms/formats",
-    "name": "/terms/formats"
+    "path": "terms-formats",
+    "name": "terms-formats"
   },
   {
-    "path": "/terms/fts",
-    "name": "/terms/fts"
+    "path": "terms-fts",
+    "name": "terms-fts"
   },
   {
-    "path": "/terms/ghost-assets",
-    "name": "/terms/ghost-assets"
+    "path": "terms-ghost-assets",
+    "name": "terms-ghost-assets"
   },
   {
-    "path": "/terms/global-search",
-    "name": "/terms/global-search"
+    "path": "terms-global-search",
+    "name": "terms-global-search"
   },
   {
-    "path": "/terms/health",
-    "name": "/terms/health"
+    "path": "terms-health",
+    "name": "terms-health"
   },
   {
-    "path": "/terms/hint",
-    "name": "/terms/hint"
+    "path": "terms-hint",
+    "name": "terms-hint"
   },
   {
-    "path": "/terms/indices",
-    "name": "/terms/indices"
+    "path": "terms-indices",
+    "name": "terms-indices"
   },
   {
-    "path": "/terms/interactedassets",
-    "name": "/terms/interactedassets"
+    "path": "terms-interactedassets",
+    "name": "terms-interactedassets"
   },
   {
-    "path": "/terms/iterable",
-    "name": "/terms/iterable"
+    "path": "terms-iterable",
+    "name": "terms-iterable"
   },
   {
-    "path": "/terms/language-server-protocol",
-    "name": "/terms/language-server-protocol"
+    "path": "terms-language-server-protocol",
+    "name": "terms-language-server-protocol"
   },
   {
-    "path": "/terms/large-language-models",
-    "name": "/terms/large-language-models"
+    "path": "terms-large-language-models",
+    "name": "terms-large-language-models"
   },
   {
-    "path": "/terms/linkify",
-    "name": "/terms/linkify"
+    "path": "terms-linkify",
+    "name": "terms-linkify"
   },
   {
-    "path": "/terms/neural-code-search",
-    "name": "/terms/neural-code-search"
+    "path": "terms-neural-code-search",
+    "name": "terms-neural-code-search"
   },
   {
-    "path": "/terms/ocr",
-    "name": "/terms/ocr"
+    "path": "terms-ocr",
+    "name": "terms-ocr"
   },
   {
-    "path": "/terms/os-instance",
-    "name": "/terms/os-instance"
+    "path": "terms-os-instance",
+    "name": "terms-os-instance"
   },
   {
-    "path": "/terms/patterns-engine",
-    "name": "/terms/patterns-engine"
+    "path": "terms-patterns-engine",
+    "name": "terms-patterns-engine"
   },
   {
-    "path": "/terms/pkce-flow",
-    "name": "/terms/pkce-flow"
+    "path": "terms-pkce-flow",
+    "name": "terms-pkce-flow"
   },
   {
-    "path": "/terms/plural-api-versus-singular-api",
-    "name": "/terms/plural-api-versus-singular-api"
+    "path": "terms-plural-api-versus-singular-api",
+    "name": "terms-plural-api-versus-singular-api"
   },
   {
-    "path": "/terms/qgptseeds",
-    "name": "/terms/qgptseeds"
+    "path": "terms-qgptseeds",
+    "name": "terms-qgptseeds"
   },
   {
-    "path": "/terms/quantized-generative-pre-trained-transformer",
-    "name": "/terms/quantized-generative-pre-trained-transformer"
+    "path": "terms-quantized-generative-pre-trained-transformer",
+    "name": "terms-quantized-generative-pre-trained-transformer"
   },
   {
-    "path": "/terms/reaction",
-    "name": "/terms/reaction"
+    "path": "terms-reaction",
+    "name": "terms-reaction"
   },
   {
-    "path": "/terms/recipients",
-    "name": "/terms/recipients"
+    "path": "terms-recipients",
+    "name": "terms-recipients"
   },
   {
-    "path": "/terms/related-people",
-    "name": "/terms/related-people"
+    "path": "terms-related-people",
+    "name": "terms-related-people"
   },
   {
-    "path": "/terms/relationship",
-    "name": "/terms/relationship"
+    "path": "terms-relationship",
+    "name": "terms-relationship"
   },
   {
-    "path": "/terms/relevance",
-    "name": "/terms/relevance"
+    "path": "terms-relevance",
+    "name": "terms-relevance"
   },
   {
-    "path": "/terms/retrieval-augmented-generation",
-    "name": "/terms/retrieval-augmented-generation"
+    "path": "terms-retrieval-augmented-generation",
+    "name": "terms-retrieval-augmented-generation"
   },
   {
-    "path": "/terms/reverse-proxy-tunnel",
-    "name": "/terms/reverse-proxy-tunnel"
+    "path": "terms-reverse-proxy-tunnel",
+    "name": "terms-reverse-proxy-tunnel"
   },
   {
-    "path": "/terms/role",
-    "name": "/terms/role"
+    "path": "terms-role",
+    "name": "terms-role"
   },
   {
-    "path": "/terms/score",
-    "name": "/terms/score"
+    "path": "terms-score",
+    "name": "terms-score"
   },
   {
-    "path": "/terms/seed",
-    "name": "/terms/seed"
+    "path": "terms-seed",
+    "name": "terms-seed"
   },
   {
-    "path": "/terms/seededtag",
-    "name": "/terms/seededtag"
+    "path": "terms-seededtag",
+    "name": "terms-seededtag"
   },
   {
-    "path": "/terms/sensitives",
-    "name": "/terms/sensitives"
+    "path": "terms-sensitives",
+    "name": "terms-sensitives"
   },
   {
-    "path": "/terms/small-language-models",
-    "name": "/terms/small-language-models"
+    "path": "terms-small-language-models",
+    "name": "terms-small-language-models"
   },
   {
-    "path": "/terms/smart-transforms",
-    "name": "/terms/smart-transforms"
+    "path": "terms-smart-transforms",
+    "name": "terms-smart-transforms"
   },
   {
-    "path": "/terms/snapshot",
-    "name": "/terms/snapshot"
+    "path": "terms-snapshot",
+    "name": "terms-snapshot"
   },
   {
-    "path": "/terms/snippet",
-    "name": "/terms/snippet"
+    "path": "terms-snippet",
+    "name": "terms-snippet"
   },
   {
-    "path": "/terms/tag",
-    "name": "/terms/tag"
+    "path": "terms-tag",
+    "name": "terms-tag"
   },
   {
-    "path": "/terms/telemetry",
-    "name": "/terms/telemetry"
+    "path": "terms-telemetry",
+    "name": "terms-telemetry"
   },
   {
-    "path": "/terms/tlp-code-processing",
-    "name": "/terms/tlp-code-processing"
+    "path": "terms-tlp-code-processing",
+    "name": "terms-tlp-code-processing"
   },
   {
-    "path": "/terms/wsl",
-    "name": "/terms/wsl"
+    "path": "terms-wsl",
+    "name": "terms-wsl"
   }
 ]
