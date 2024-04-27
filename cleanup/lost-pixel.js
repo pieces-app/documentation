@@ -19,13 +19,8 @@ const getFiles = function(dirPath) {
         console.log('formattedPath', formattedPath)
         pages.push({
           path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
-          name: formattedPath
+          name:  formattedPath.slice(1).replace('/', '-')
         });
-
-        console.log({
-          path: formattedPath.startsWith('/') ? formattedPath : '/' + formattedPath, // Ensure the path starts with '/'
-          name: formattedPath.slice(1).replace('/', '-')
-        })
       }
     }
   });
