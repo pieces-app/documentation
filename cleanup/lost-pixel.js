@@ -26,8 +26,5 @@ const getFiles = function(dirPath) {
 
 getFiles(directoryPath);
 
-// Wrap the pages array in an object with a "pages" key
-const pagesObject = { pages: pages };
-
 // Convert the pagesObject to JSON and save it
-fs.writeFileSync('static/lost-pixel.json', JSON.stringify(pagesObject, null, 2), 'utf8');
+fs.writeFileSync('static/lost-pixel.json', JSON.stringify(pages, null, 2), 'utf8');
