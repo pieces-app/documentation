@@ -214,6 +214,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'early-access-program',
+          label: 'Early Access Program',
+        },
+        {
+          type: 'doc',
           id: 'support',
           label: 'Support',
         },

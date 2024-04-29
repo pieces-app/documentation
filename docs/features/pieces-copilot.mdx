@@ -56,20 +56,42 @@ When the Pieces Copilot returns code, you will see a few quick actions at the bo
 | Show Related Tags          | Shows tags that are relevant to the snippet.                                                                                                                  |
 
 ## Set Your Own Copilot Context
-It's often helpful to ask questions specific to your own code, so you may want to give additional information to the Copilot before asking a question. With Pieces Copilot, you can set your context based on a specific set of files or a directory.
 
-To set your context, follow these steps:
+### File Context
+File context is crucial for enhancing the assistance provided by Pieces Copilot, allowing it to better understand the specific coding environment of the file you are currently working on.
 
-1. Open the **Global Search & Copilot view** from the dropdown next to your search bar.
-2. At the bottom of the Copilot chat, click "Set your Context" below the chat input.
-3. Select how you want to set your context:
-    - **Directories**: Select a single or multiple directories from the filepicker. Pieces recursively uses the files in these folders to answer your questions.
-    - **Files**: Add individual code files to reference when asking your Copilot questions.
-    - **Code Snippets**: Use code snippets that you have already created and saved to Pieces to assist you when asking questions later.
+By integrating the Copilot with your IDE, such as [VS Code](/extensions-plugins/vscode) or [JetBrains](/extensions-plugins/jetbrains), and activating it, the system automatically detects and adapts to the file you have open. This automatic detection improves the relevance of the Copilot’s suggestions, streamlining your workflow and reducing the need for manual descriptions of your codebase.
+
+### Project Context
+Project context enables the Copilot to consider all aspects of your project, including files, dependencies, and overall architecture. By enabling the Copilot at the project level within your IDE, it gains the ability to index and understand the entire project structure, which enhances its capability to offer comprehensive and relevant coding solutions and suggestions.
+
+#### Holistic Assistance
+With a full understanding of the project’s scope, the Copilot can provide solutions that take into account the interactions between various components and dependencies. This not only helps in maintaining consistency across files but also assists in identifying potential improvements or conflicts within the project.
+
+### Code Snippets
+Providing code snippets directly to the Copilot sharpens its focus and enhances the specificity of the assistance offered. This can be done by using context menu options in your plugin to add specific code snippets to the Copilot.
+
+These snippets help the Copilot understand the precise syntax and functionality you are dealing with, allowing it to offer targeted solutions and suggestions.
 
 ![Setting Context for the Pieces Copilot](/assets/contextual_copilot.png)
 
-The more context you add, the better your Copilot will understand your questions and provide specific responses.
+### Workstream Context
+The [Workstream Pattern Engine](/product-highlights-and-benefits/workstream-context) introduces a temporally grounded aspect to the Copilot, making it aware of your recent activities and discussions. This dynamic understanding allows the Copilot to provide contextually aware interactions and suggestions based on your latest workstream.
+
+By enabling the Workstream Pattern Engine in the Pieces settings, the Copilot can reference your recent activities, discussions, and code changes, enhancing its responses and interactions.
+
+#### Temporal and Conversational Awareness
+This feature allows for a more intuitive and seamless interaction with the Copilot, as it can recall and reference recent work contexts and discussions. Whether you're asking about a recent error or a discussion point with a colleague, the Copilot uses its temporally grounded knowledge to provide relevant and timely assistance.
+
+### Website Context
+Website Context allows the Copilot to understand the content of websites. By using the [Pieces Web Extension](/extensions-plugins/web-extension) to add a website to your Copilot context, the system automatically extracts relevant content and integrates this information into the Copilot’s knowledge base.
+
+This capability is particularly beneficial when you are researching or gathering information as part of your development process.
+
+### Message Context
+Adding copilot messages to context means that the Copilot puts more importance on those messages than others when using context to generate a response.
+
+This feature is instrumental in ensuring that the Copilot’s assistance is aligned with your current priorities.
 
 ## Snippet Specific Copilot
 When viewing a snippet in Gallery or List View, you can launch copilot on a snippet that you have saved to Pieces for Developers. To do this, use the Quick Action labeled `Launch Copilot` above the snippet in List View.
