@@ -1,0 +1,78 @@
+---
+title: Workstream Context
+description: Powered by Workstream Pattern Engine, Workstream Context can now understand recent workstream contexts, eliminating the need for manual grounding.
+---
+
+import Video from "/src/components/Video";
+
+# The Next Phase of Pieces for Developers
+Pieces for Developers has thus far been a productivity tool that is integrated into all of your tools using plugins and extensions, and allows users to have deep contextual conversations when they manually add context from folders, files, snippets, etc. While this is useful and the users love it, we want to go one step further.
+
+We would like to introduce the Pieces for Developers **Workstream Pattern Engine**, which powers the world’s first **Temporally Grounded Copilot**. Our goal is to push the limits of intelligent Copilot interactions through truly horizontal context awareness across the operating system, enabling your copilot to understand what you've been working on and keep up with the productivity demands that developers deal with every day. Together with your help, the Pieces Copilot will become the first that can understand recent workstream contexts, eliminating the need for manual grounding.
+
+## The Workstream Pattern Engine
+The workflow context you will interact with will come from the Workstream Pattern Engine, an "intelligently on" system that shadows your day-to-day work in progress journey to capture relevant workflow materials and temporally ground your Pieces Copilot Chats with relevant and recent context. Practically, this enables natural questions such as "What was I talking to Mack about this morning?" or "Explain that error I just saw," allowing your Pieces Copilot to truly extend your train of thought and let you spend less time trying to track things down or capture context and more time doing the things you love, like building amazing software.
+
+## Getting Started with your Temporally Grounded Copilot
+
+### Enabling/Disabling the WPE
+
+In order to use workstream context in your conversations with Pieces Copilot, you will need to enable the Workstream Pattern Engine. You can disable it at any time, but remember that the Copilot will not be able to use workstream context from when you had it disabled.
+
+![EAP Menu](/eap/menu.png)
+
+### Using Workstream Context
+To engage with workstream context, use the "Generally discuss recent work" pipeline in the Pieces Copilot view.
+
+![WPE Pipeline](/wpe/pipeline.png)
+
+You can add additional context to further tailor the conversation if you’d like.
+
+### Permissions
+If you’re a Mac user, you will need to update Pieces’ permissions in order to use workstream context. Windows users may disregard this step.
+
+<Video
+  type={'local'}
+  src={'/wpe/permissions-macos'}
+/>
+
+You can also manually update this by adding and enabling Pieces OS in the following settings:
+
+#### Privacy & Security > Accessibility
+
+![Accessibility Permissions](/wpe/accessibility-permissions.png)
+
+#### Privacy & Security > Screen and System Audio Recording
+
+![Screen and System Audio Recording Permissions](/wpe/screen-and-system-audio-permissions.png)
+
+## Recommendations and Best Practices
+
+### LLM
+At this moment, we recommend using OpenAI’s cloud models as your Pieces Copilot runtime for the best experience. Due to the context length required to add workstream context, local LLMs may not allow you to have the best experience with this feature. You are of course welcome to try using local models, and other cloud models— please let us know how it goes for you!
+
+### Prompting
+As with any interaction with an LLM, good prompting practices will improve your experience greatly. Through the Workstream Pattern Engine, the Pieces Copilot is able to understand what you’re working on, including files, websites, folders, etc and with whom. Therefore, you are now able to ask even more natural questions that feel like extensions of thought. Here are some examples of what's now possible:
+- "Can you summarize the readme file from the pieces_for_x repo?"
+- "What did Sam have to say about the All Hands meeting in the GChat MLChat channel?"
+- "Generate a script in python using the function I saw on W3Schools to create a variable named xyz"
+- "Take the function from example_function.dart and add it as a method to the class in example_class.dart"
+- "What did Mark say about requests to the xyz api in slack?"
+
+### Use Cases and Tutorials
+1. Exception/error handling
+2. Getting started solving a problem
+3. PR review
+4. Summarize unread GChats when I log in
+
+## Data and Privacy
+
+**Your workstream data is captured and stored locally on-device.** At no point will anyone, including the Pieces team, have access to this data unless you choose to share it with us.
+
+The Workstream Pattern Engine triangulates and leverages on-task and technical context across developer-specific tools you're actively using. The bulk of the processing that occurs within the Workstream Pattern Engine is filtering, which utilizes our on-device machine learning engines to ignore sensitive information and secrets. This enables the highest levels of performance, security, and privacy.
+
+Lastly, for some advanced components within the Workstream Pattern Engine, blended processing is required to be set via user preferences, and you will need to leverage a cloud-powered Large Language Model as your copilot’s runtime.
+
+That said, you can leverage Local Large Language Models, but this may reduce the fidelity of output and requires a fairly new machine (2021 and newer) and ideally a dedicated GPU for this. You can read [this blog](https://code.pieces.app/blog/how-to-run-an-llm-locally-with-pieces) for more information about running local models on your machine.
+
+As always, we've built Pieces from the ground up to put you in control. With that, **the Workstream Pattern Engine may be paused and resumed at any time**.
