@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https:; frame-src 'self' https:;"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/additional-features-and-settings",
@@ -123,6 +134,46 @@
     {
       "source": "/beta-user-group",
       "destination": "/early-access-program",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/CS%20Fundamentals/backtracking",
+      "destination": "/build/glossary/terms/backtracking",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/CS%20Fundamentals/plural-api-versus-singular-api",
+      "destination": "/build/glossary/terms/plural-api-versus-singular-api",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/CS%20Fundamentals/reverse-proxy-tunnel",
+      "destination": "/build/glossary/terms/reverse-proxy-tunnel",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/CS%20Fundamentals/tlp-code-processing",
+      "destination": "/build/glossary/terms/tlp-code-processing",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/CS%20Fundamentals/wsl",
+      "destination": "/build/glossary/terms/wsl",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/Pieces%20Specific/aesthetics",
+      "destination": "/build/glossary/terms/aesthetics",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/Pieces%20Specific/analysis",
+      "destination": "/build/glossary/terms/analysis",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/glossary/terms/Pieces%20Specific/reaction",
+      "destination": "/build/glossary/terms/reaction",
       "statusCode": 301
     }
   ]
