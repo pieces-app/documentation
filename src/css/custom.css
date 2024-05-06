@@ -307,13 +307,20 @@ html[data-theme='dark'] .header-github-link:before {
 
 /* Carousel Component Styles */
 .carousel-container {
-  display: flex;
+  display: flex; /* Display items in a row */
   gap: 0 20px;
-  /*align-items: start;*/
-  /*justify-content: center;*/
+  overflow-x: auto; /* Allow horizontal scrolling */
+  /*scrollbar-width: none; !* Optional: hides the scrollbar in Firefox *!*/
+  -ms-overflow-style: none; /* Optional: hides the scrollbar in IE and Edge */
 }
 
+/*.carousel-container::-webkit-scrollbar {*/
+/*  display: none; !* Optional: hides the scrollbar in WebKit browsers like Chrome and Safari *!*/
+/*}*/
+
 .event-card {
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  margin-right: 16px; /* Add some space between cards */
   border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
   width: 350px;
