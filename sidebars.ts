@@ -209,12 +209,12 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'community',
+          id: 'community/index',
           label: 'Community',
         },
         {
           type: 'doc',
-          id: 'events/index',
+          id: 'community/events/index',
           label: 'Events',
         },
         {
