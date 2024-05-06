@@ -51,7 +51,7 @@ const Carousel = () => {
         .then(text => {
           const rows = text.split('\n');
           // Remove quotes from headers
-          const headers = rows[0].split(',').map(header => header.replace(/^"|"$/g, ''));
+          const headers = rows[0].split(',').map(header => header.replace(/^"|"$/g, '')).map(header => header.toLowerCase().replace(/\s/g, '_'));
           const now = new Date(); // Get the current date and time
           const data = rows.slice(1).map(row => {
             const values = row.split('","').map(value => value.replace(/^"|"$/g, ''));
