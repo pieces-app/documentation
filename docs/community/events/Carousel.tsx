@@ -112,7 +112,7 @@ const Carousel = () => {
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
         {upcomingEvents.length > 0 ? upcomingEvents.map((event: Event, index: number) => (
-          <div key={`${event.title}_${index}`} className={'event-card'}>
+          <div key={`${event.title}_${index}`} className={'carousel-card'}>
             <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
               width: '100%',
               height: '175px',
@@ -121,7 +121,7 @@ const Carousel = () => {
             }}/>
 
             <div style={{
-              padding: '0 12px',
+              padding: '8px 12px',
             }}>
               <div style={{
                 display: 'flex',
@@ -145,15 +145,20 @@ const Carousel = () => {
                 fontSize: '0.8rem',
                 flexGrow: 1,
               }}>{event.description}</p>
-              {event.link ? (
-                <CTAButton
-                  label={'View Event'}
-                  href={event.link}
-                  type={'secondary'}
-                />
-              ) : (
-                <span>Coming Soon</span>
-              )}
+              <div className={'cta'}>
+                {event.link ? (
+                  <CTAButton
+                    label={'View Event'}
+                    href={event.link}
+                    type={'secondary'}
+                  />
+                ) : (
+                  <CTAButton
+                    label={'Coming soon'}
+                    type={'secondary'}
+                  />
+                )}
+              </div>
             </div>
           </div>
         )) : (
@@ -167,7 +172,7 @@ const Carousel = () => {
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
         {pastEvents.length > 0 ? pastEvents.map((event: Event, index: number) => (
-          <div key={`${event.title}_${index}`} className={'event-card'}>
+          <div key={`${event.title}_${index}`} className={'carousel-card'}>
             <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
               width: '100%',
               height: '175px',
@@ -176,7 +181,7 @@ const Carousel = () => {
             }}/>
 
             <div style={{
-              padding: '0 12px',
+              padding: '8px 12px',
             }}>
               <div style={{
                 display: 'flex',
@@ -200,15 +205,20 @@ const Carousel = () => {
                 fontSize: '0.8rem',
                 flexGrow: 1,
               }}>{event.description}</p>
-              {event.link ? (
-                <CTAButton
-                  label={'View Event'}
-                  href={event.link}
-                  type={'secondary'}
-                />
-              ) : (
-                <span>Coming Soon</span>
-              )}
+              <div className={'cta'}>
+                {event.link ? (
+                  <CTAButton
+                    label={'View Event'}
+                    href={event.link}
+                    type={'secondary'}
+                  />
+                ) : (
+                  <CTAButton
+                    label={'Coming soon'}
+                    type={'secondary'}
+                  />
+                )}
+              </div>
             </div>
           </div>
         )) : (
