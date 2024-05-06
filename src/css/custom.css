@@ -277,18 +277,18 @@ html[data-theme='dark'] .header-github-link:before {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: var(--ifm-color-secondary); 
+  background-color: var(--ifm-color-secondary);
   transition: background-color 0.3s ease;
   color: var(--ifm-color-primary);
 }
 
 .category:hover {
-  background-color: var(--ifm-color-secondary-dark); 
+  background-color: var(--ifm-color-secondary-dark);
 }
 
 .category.active {
   font-weight: bold;
-  background-color: var(--ifm-color-secondary-darker); 
+  background-color: var(--ifm-color-secondary-darker);
 }
 
 @media (max-width: 768px) {
@@ -303,4 +303,31 @@ html[data-theme='dark'] .header-github-link:before {
     margin: 5px;
     padding: 8px 12px;
   }
+}
+
+/* Carousel Component Styles */
+.carousel-container {
+  display: flex;
+  gap: 0 20px;
+  /*align-items: start;*/
+  /*justify-content: center;*/
+}
+
+.event-card {
+  border: 1px solid var(--grid-card-border-color);
+  border-radius: 8px;
+  width: 350px;
+  height: 400px;
+}
+
+.carousel-content {
+  text-align: center;
+}
+
+.event img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }

@@ -214,6 +214,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'events/index',
+          label: 'Events',
+        },
+        {
+          type: 'doc',
           id: 'support',
           label: 'Support',
         },

@@ -12,8 +12,9 @@ const Hero = ({
   image: {
     src: string,
     alt: string
+    width?: number
   }
-  cta: {
+  cta?: {
     label: string,
     href: string
   }
@@ -34,13 +35,15 @@ const Hero = ({
         <p style={{color: 'var(--ifm-color-primary-darkest)', fontSize: '1rem', textAlign: 'center'}}>
           {subtitle}
         </p>
-        <CTAButton
-          href={cta.href}
-          label={cta.label}
-        />
+        {cta && (
+          <CTAButton
+            href={cta.href}
+            label={cta.label}
+          />
+        )}
       </div>
 
-      <Image alt={image.alt} src={image.src} width={500} />
+      <Image alt={image.alt} src={image.src} width={image.width ?? 500} />
     </div>
   );
 }
