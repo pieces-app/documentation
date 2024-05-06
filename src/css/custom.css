@@ -337,9 +337,32 @@ html[data-theme='dark'] .header-github-link:before {
   width: 100%; /* Stretch across the card */
 }
 
+.ghost-card {
+  width: 350px;
+  height: 400px;
+  margin-right: 16px; /* Keep consistent spacing */
+  background-color: var(--ifm-color-secondary);
+  border-radius: 8px; /* Optional: if your cards have rounded corners */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 820px) {
   .carousel-card {
     width: 300px;
     height: 425px;
+  }
+
+  .ghost-card {
+    width: 300px; /* Adjusted width for smaller screens to match carousel card */
+    height: 425px; /* Adjusted height for smaller screens to match carousel card */
   }
 }

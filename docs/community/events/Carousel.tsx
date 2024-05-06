@@ -11,6 +11,7 @@ type Event = {
 }
 
 const Carousel = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [upcomingEvents, setUpcomingEvents] = useState<Event[]>([]);
   const [pastEvents, setPastEvents] = useState<Event[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -76,7 +77,6 @@ const Carousel = () => {
             return dateA - dateB; // Sort events in ascending order by date
           });
 
-          setUpcomingEvents(upcomingEvents);
 
           const pastEvents = data.filter(event => {
             const eventDate = new Date(event.date);
@@ -87,10 +87,15 @@ const Carousel = () => {
             return dateB - dateA; // Sort events in descending order by date
           })
 
+          setUpcomingEvents(upcomingEvents);
           setPastEvents(pastEvents);
+
+          setIsLoading(false);
         })
         .catch(error => {
           console.error('Error fetching events:', error)
+
+          setIsLoading(false);
         })
     }
 
@@ -111,7 +116,8 @@ const Carousel = () => {
 
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
-        {upcomingEvents.length > 0 ? upcomingEvents.map((event: Event, index: number) => (
+        {!isLoading ? (
+          upcomingEvents.length > 0 ? upcomingEvents.map((event: Event, index: number) => (
           <div key={`${event.title}_${index}`} className={'carousel-card'}>
             <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
               width: '100%',
@@ -163,68 +169,76 @@ const Carousel = () => {
           </div>
         )) : (
           <span>No upcoming events found...</span>
+        )) : (
+          // <div className="spinner"></div>
+          <div className="carousel-container">
+            <div className="ghost-card"></div>
+          </div>
         )}
-        {/*<button onClick={goToNext}>Next</button>*/}
       </div>
 
       <h2>Past Events</h2>
 
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
-        {pastEvents.length > 0 ? pastEvents.map((event: Event, index: number) => (
-          <div key={`${event.title}_${index}`} className={'carousel-card'}>
-            <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
-              width: '100%',
-              height: '175px',
-              objectFit: 'cover',
-              borderRadius: '6px 6px 0 0'
-            }}/>
+        {!isLoading ? (
+          pastEvents.length > 0 ? pastEvents.map((event: Event, index: number) => (
+            <div key={`${event.title}_${index}`} className={'carousel-card'}>
+              <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
+                width: '100%',
+                height: '175px',
+                objectFit: 'cover',
+                borderRadius: '6px 6px 0 0'
+              }}/>
 
-            <div style={{
-              padding: '8px 12px',
-            }}>
               <div style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
+                padding: '8px 12px',
               }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}>
+                  <span style={{
+                    fontSize: '0.8rem',
+                  }}>{event.date}</span>
+                  <span style={{
+                    fontSize: '0.8rem',
+                    padding: '2px 4px',
+                    borderRadius: '4px',
+                    backgroundColor: 'var(--ifm-color-secondary)'
+                  }}>{event.type}</span>
+                </div>
                 <span style={{
+                  fontWeight: 'bold'
+                }}>{event.title}</span>
+                <p style={{
                   fontSize: '0.8rem',
-                }}>{event.date}</span>
-                <span style={{
-                  fontSize: '0.8rem',
-                  padding: '2px 4px',
-                  borderRadius: '4px',
-                  backgroundColor: 'var(--ifm-color-secondary)'
-                }}>{event.type}</span>
-              </div>
-              <span style={{
-                fontWeight: 'bold'
-              }}>{event.title}</span>
-              <p style={{
-                fontSize: '0.8rem',
-                flexGrow: 1,
-              }}>{event.description}</p>
-              <div className={'cta'}>
-                {event.link ? (
-                  <CTAButton
-                    label={'View Event'}
-                    href={event.link}
-                    type={'secondary'}
-                  />
-                ) : (
-                  <CTAButton
-                    label={'Coming soon'}
-                    type={'secondary'}
-                  />
-                )}
+                  flexGrow: 1,
+                }}>{event.description}</p>
+                <div className={'cta'}>
+                  {event.link ? (
+                    <CTAButton
+                      label={'View Event'}
+                      href={event.link}
+                      type={'secondary'}
+                    />
+                  ) : (
+                    <CTAButton
+                      label={'Coming soon'}
+                      type={'secondary'}
+                    />
+                  )}
+                </div>
               </div>
             </div>
+          )) : (
+            <span>No past events found...</span>
+          )) : (
+          <div className="carousel-container">
+            <div className="ghost-card"></div>
           </div>
-        )) : (
-          <span>No previous events found...</span>
         )}
-        {/*<button onClick={goToNext}>Next</button>*/}
       </div>
     </>
   );
