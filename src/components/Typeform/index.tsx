@@ -5,12 +5,8 @@ type TypeformProps = {
 }
 
 const Typeform = ({ formId }: TypeformProps) => {
-
-
   return (
-    <Widget id={formId} height={500} hidden={{
-
-    }} />
+    <Widget id={formId} height={500} />
   );
 }
 
