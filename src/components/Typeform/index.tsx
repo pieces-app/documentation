@@ -1,12 +1,9 @@
-import {Widget} from "@typeform/embed-react";
+import {Widget, WidgetProps} from "@typeform/embed-react";
 
-type TypeformProps = {
-  formId: string;
-}
 
-const Typeform = ({ formId }: TypeformProps) => {
+const Typeform = (props: WidgetProps) => {
   return (
-    <Widget id={formId} height={500} />
+    <Widget {...props} />
   );
 }
 
