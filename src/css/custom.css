@@ -277,18 +277,18 @@ html[data-theme='dark'] .header-github-link:before {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: var(--ifm-color-secondary); 
+  background-color: var(--ifm-color-secondary);
   transition: background-color 0.3s ease;
   color: var(--ifm-color-primary);
 }
 
 .category:hover {
-  background-color: var(--ifm-color-secondary-dark); 
+  background-color: var(--ifm-color-secondary-dark);
 }
 
 .category.active {
   font-weight: bold;
-  background-color: var(--ifm-color-secondary-darker); 
+  background-color: var(--ifm-color-secondary-darker);
 }
 
 @media (max-width: 768px) {
@@ -302,5 +302,67 @@ html[data-theme='dark'] .header-github-link:before {
   .category {
     margin: 5px;
     padding: 8px 12px;
+  }
+}
+
+/* Carousel Component Styles */
+.carousel-container {
+  display: flex; /* Display items in a row */
+  gap: 0 20px;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  /*scrollbar-width: none; !* Optional: hides the scrollbar in Firefox *!*/
+  -ms-overflow-style: none; /* Optional: hides the scrollbar in IE and Edge */
+  align-items: stretch;
+}
+
+/*.carousel-container::-webkit-scrollbar {*/
+/*  display: none; !* Optional: hides the scrollbar in WebKit browsers like Chrome and Safari *!*/
+/*}*/
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  border: 1px solid var(--grid-card-border-color);
+  border-radius: 8px;
+  width: 350px;
+  height: 400px;
+  position: relative;
+}
+
+.carousel-card .cta {
+  position: absolute; /* Position it absolutely within the card */
+  bottom: 12px; /* Stick to the bottom */
+  left: 12px; /* Align to the left */
+  width: 100%; /* Stretch across the card */
+}
+
+.ghost-card {
+  width: 350px;
+  height: 400px;
+  margin-right: 16px; /* Keep consistent spacing */
+  background-color: var(--ifm-color-secondary);
+  border-radius: 8px; /* Optional: if your cards have rounded corners */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 820px) {
+  .carousel-card {
+    width: 300px;
+    height: 425px;
+  }
+
+  .ghost-card {
+    width: 300px; /* Adjusted width for smaller screens to match carousel card */
+    height: 425px; /* Adjusted height for smaller screens to match carousel card */
   }
 }

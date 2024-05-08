@@ -214,8 +214,13 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'community',
+          id: 'community/index',
           label: 'Community',
+        },
+        {
+          type: 'doc',
+          id: 'community/events/index',
+          label: 'Events',
         },
         {
           type: 'doc',
@@ -232,11 +237,11 @@ const sidebars: SidebarsConfig = {
           id: 'faq',
           label: 'FAQs',
         },
-        {
-          type: 'doc',
-          id: 'ama/building-a-more-extensible-development-environment',
-          label: 'Livestream AMA',
-        }
+        // {
+        //   type: 'doc',
+        //   id: 'ama/building-a-more-extensible-development-environment',
+        //   label: 'Livestream AMA',
+        // }
       ]
     }
   ],
