@@ -180,6 +180,11 @@ const sidebars: SidebarsConfig = {
           id: 'product-highlights-and-benefits/saving-screenshots',
           label: 'Save Screenshots & Extract Code',
         },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/workstream-context',
+          label: 'Workstream Context',
+        }
       ]
     },
     {
@@ -216,6 +221,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'community/events/index',
           label: 'Events',
+        },
+        {
+          type: 'doc',
+          id: 'early-access-program',
+          label: 'Early Access Program',
         },
         {
           type: 'doc',
