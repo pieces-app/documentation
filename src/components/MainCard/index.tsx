@@ -1,16 +1,16 @@
 import CTAButton from "@site/src/components/CTAButton";
 
-const MainCard = (
-  {
-    icon,
-    title,
-    link: {
-      href,
-      text,
-    },
-    children
-  }
-) => {
+type MainCardProps = {
+  icon: React.ReactElement,
+  title: string,
+  link: {
+    href: string,
+    text: string,
+  },
+  children: React.ReactNode
+}
+
+const MainCard = ({ icon, title, link: { href, text }, children }: MainCardProps) => {
   return (
     <div className={'main-card'}>
       <div className={'main-card-header'}>

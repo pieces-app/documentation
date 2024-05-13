@@ -18,18 +18,21 @@
     "@docusaurus/theme-classic": "^3.2.1",
     "@docusaurus/theme-common": "^3.2.1",
     "@mdx-js/react": "^3.0.0",
+    "@typeform/embed-react": "^3.17.0",
     "clsx": "^2.0.0",
     "docusaurus-lunr-search": "^3.3.2",
     "lunr": "^2.3.9",
     "prism-react-renderer": "^2.3.0",
-    "react": "^18.0.0",
+    "react": "^18.2.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@docusaurus/eslint-plugin": "^3.3.2",
     "@docusaurus/module-type-aliases": "3.2.1",
     "@docusaurus/tsconfig": "3.2.1",
     "@docusaurus/types": "3.2.1",
     "@types/node": "^20.11.26",
+    "@types/react": "^18.3.2",
     "sitemap": "^7.1.1",
     "typescript": "~5.2.2"
   },

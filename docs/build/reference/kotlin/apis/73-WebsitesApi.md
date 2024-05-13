@@ -24,20 +24,20 @@ This will create a website and attach it to a specific asset.
 ### Example {#websitescreatenewwebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Websites API()
+val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 val seededWebsite : SeededWebsite =  // SeededWebsite | 
 try {
     val result : Website = apiInstance.websitesCreateNewWebsite(transferables, seededWebsite)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Websites API#websitesCreateNewWebsite")
+    println("4xx response calling WebsitesApi#websitesCreateNewWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Websites API#websitesCreateNewWebsite")
+    println("5xx response calling WebsitesApi#websitesCreateNewWebsite")
     e.printStackTrace()
 }
 ```
@@ -72,18 +72,18 @@ This will delete a specific website!
 ### Example {#websitesdeletespecificwebsite-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Websites API()
+val apiInstance = WebsitesApi()
 val website : kotlin.String = website_example // kotlin.String | website id
 try {
     apiInstance.websitesDeleteSpecificWebsite(website)
 } catch (e: ClientException) {
-    println("4xx response calling Websites API#websitesDeleteSpecificWebsite")
+    println("4xx response calling WebsitesApi#websitesDeleteSpecificWebsite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Websites API#websitesDeleteSpecificWebsite")
+    println("5xx response calling WebsitesApi#websitesDeleteSpecificWebsite")
     e.printStackTrace()
 }
 ```
@@ -117,19 +117,19 @@ This will check all of the websites in our database to see if this specific prov
 ### Example {#websitesexists-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Websites API()
+val apiInstance = WebsitesApi()
 val existentMetadata : ExistentMetadata =  // ExistentMetadata | 
 try {
     val result : ExistingMetadata = apiInstance.websitesExists(existentMetadata)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Websites API#websitesExists")
+    println("4xx response calling WebsitesApi#websitesExists")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Websites API#websitesExists")
+    println("5xx response calling WebsitesApi#websitesExists")
     e.printStackTrace()
 }
 ```
@@ -163,19 +163,19 @@ This will get a snapshot of all your websites.
 ### Example {#websitessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Websites API()
+val apiInstance = WebsitesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : Websites = apiInstance.websitesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Websites API#websitesSnapshot")
+    println("4xx response calling WebsitesApi#websitesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Websites API#websitesSnapshot")
+    println("5xx response calling WebsitesApi#websitesSnapshot")
     e.printStackTrace()
 }
 ```

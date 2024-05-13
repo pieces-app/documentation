@@ -21,19 +21,19 @@ This will get a snapshot of all of your ocr analyses, an ocr analysis is attache
 ### Example {#ocranalysessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = OCRAnalyses API()
+val apiInstance = OCRAnalysesApi()
 val transferables : kotlin.Boolean = true // kotlin.Boolean | This is a boolean that will decided if we are want to return the transferable data (default) or not(performance enhancement)
 try {
     val result : OCRAnalyses = apiInstance.ocrAnalysesSnapshot(transferables)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling OCRAnalyses API#ocrAnalysesSnapshot")
+    println("4xx response calling OCRAnalysesApi#ocrAnalysesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling OCRAnalyses API#ocrAnalysesSnapshot")
+    println("5xx response calling OCRAnalysesApi#ocrAnalysesSnapshot")
     e.printStackTrace()
 }
 ```

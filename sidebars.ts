@@ -175,6 +175,11 @@ const sidebars: SidebarsConfig = {
           id: 'product-highlights-and-benefits/saving-screenshots',
           label: 'Save Screenshots & Extract Code',
         },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/workstream-context',
+          label: 'Workstream Context',
+        }
       ]
     },
     {
@@ -204,8 +209,18 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
-          id: 'community',
+          id: 'community/index',
           label: 'Community',
+        },
+        {
+          type: 'doc',
+          id: 'community/events/index',
+          label: 'Events',
+        },
+        {
+          type: 'doc',
+          id: 'early-access-program',
+          label: 'Early Access Program',
         },
         {
           type: 'doc',
@@ -222,11 +237,11 @@ const sidebars: SidebarsConfig = {
           id: 'faq',
           label: 'FAQs',
         },
-        {
-          type: 'doc',
-          id: 'ama/building-a-more-extensible-development-environment',
-          label: 'Livestream AMA',
-        }
+        // {
+        //   type: 'doc',
+        //   id: 'ama/building-a-more-extensible-development-environment',
+        //   label: 'Livestream AMA',
+        // }
       ]
     }
   ],

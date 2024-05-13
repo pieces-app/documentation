@@ -34,14 +34,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Backups API(api_client)
+    api_instance = pieces_os_client.BackupsApi(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -105,14 +105,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Backups API(api_client)
+    api_instance = pieces_os_client.BackupsApi(api_client)
     seeded_backup = pieces_os_client.SeededBackup() # SeededBackup |  (optional)
 
     try:
@@ -175,14 +175,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Backups API(api_client)
+    api_instance = pieces_os_client.BackupsApi(api_client)
     backup = 'backup_example' # str | This is a identifier that is used to identify a specific backup.(version_timestamp)
     backup2 = pieces_os_client.Backup() # Backup |  (optional)
 
@@ -245,14 +245,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = Backups API(api_client)
+    api_instance = pieces_os_client.BackupsApi(api_client)
 
     try:
         # /backups [GET]

@@ -46,6 +46,8 @@ Our <a target="_blank" href="https://pieces.app">Flagship Desktop App</a> provid
 
 ## How to Contribute
 
+Ensure that the issue you'd like to help with is open to [Community Contribution](https://github.com/pieces-app/documentation/labels/community%20contribution). These issues are labels with the `community contribution` label.
+
 ### Prerequisites
 
 You will need `pnpm` installed on your machine. You can install it using npm:

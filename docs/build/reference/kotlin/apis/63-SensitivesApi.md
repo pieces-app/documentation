@@ -23,19 +23,19 @@ This will create a new sensitive model.
 ### Example {#sensitivescreatenewsensitive-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitives API()
+val apiInstance = SensitivesApi()
 val seededSensitive : SeededSensitive =  // SeededSensitive | 
 try {
     val result : Sensitive = apiInstance.sensitivesCreateNewSensitive(seededSensitive)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitives API#sensitivesCreateNewSensitive")
+    println("4xx response calling SensitivesApi#sensitivesCreateNewSensitive")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitives API#sensitivesCreateNewSensitive")
+    println("5xx response calling SensitivesApi#sensitivesCreateNewSensitive")
     e.printStackTrace()
 }
 ```
@@ -69,18 +69,18 @@ This will delete a sensitive based on the sensitive uuid.
 ### Example {#sensitivesdeletesensitive-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitives API()
+val apiInstance = SensitivesApi()
 val sensitive : kotlin.String = sensitive_example // kotlin.String | This is a uuid that represents a sensitive.
 try {
     apiInstance.sensitivesDeleteSensitive(sensitive)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitives API#sensitivesDeleteSensitive")
+    println("4xx response calling SensitivesApi#sensitivesDeleteSensitive")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitives API#sensitivesDeleteSensitive")
+    println("5xx response calling SensitivesApi#sensitivesDeleteSensitive")
     e.printStackTrace()
 }
 ```
@@ -114,18 +114,18 @@ This will get a snapshot of all of the sensitives.
 ### Example {#sensitivessnapshot-example}
 ```kotlin
 // Import classes:
-//import app.pieces.pieces-os-client.infrastructure.*
-//import app.pieces.pieces-os-client.models.*
+import app.pieces.pieces-os-client.infrastructure.*
+import app.pieces.pieces-os-client.models.*
 
-val apiInstance = Sensitives API()
+val apiInstance = SensitivesApi()
 try {
     val result : Sensitives = apiInstance.sensitivesSnapshot()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling Sensitives API#sensitivesSnapshot")
+    println("4xx response calling SensitivesApi#sensitivesSnapshot")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling Sensitives API#sensitivesSnapshot")
+    println("5xx response calling SensitivesApi#sensitivesSnapshot")
     e.printStackTrace()
 }
 ```

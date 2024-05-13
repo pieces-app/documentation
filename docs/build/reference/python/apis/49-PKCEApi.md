@@ -33,14 +33,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = PKCE API(api_client)
+    api_instance = pieces_os_client.PKCEApi(api_client)
 
     try:
         # /pkce/clear [POST]
@@ -95,14 +95,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = PKCE API(api_client)
+    api_instance = pieces_os_client.PKCEApi(api_client)
     seeded_pkce = pieces_os_client.SeededPKCE() # SeededPKCE | All of the properties that the client might want to send over to authorize a PKCE Code Flow (optional)
 
     try:
@@ -163,14 +163,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = PKCE API(api_client)
+    api_instance = pieces_os_client.PKCEApi(api_client)
     tokenized_pkce = pieces_os_client.TokenizedPKCE() # TokenizedPKCE | The needed properties to exchange a PKCE Code for an OAuth Token (optional)
 
     try:
@@ -230,14 +230,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = PKCE API(api_client)
+    api_instance = pieces_os_client.PKCEApi(api_client)
 
     try:
         # Your GET endpoint
@@ -294,14 +294,14 @@ from pprint import pprint
 # Defining the host is optional and defaults to http://localhost:1000
 # See configuration.py for a list of all supported configuration parameters.
 configuration = pieces_os_client.Configuration(
-    host = "http://localhost:1000"
+    host="http://localhost:1000"
 )
 
 
 # Enter a context with an instance of the API client
 with pieces_os_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = PKCE API(api_client)
+    api_instance = pieces_os_client.PKCEApi(api_client)
     code = 'code_example' # str | The PKCE Code to be used to access a Token.
     state = 'state_example' # str | Likely the state that will be returned which should match the requested state as well as the nonce
     var_schema = pieces_os_client.EmbeddedModelSchema() # EmbeddedModelSchema |  (optional)
