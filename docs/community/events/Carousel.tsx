@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import CTAButton from "@site/src/components/CTAButton";
 
 type Event = {
-  type: 'Podcast' | 'Twitter Space' | 'Livestream' | 'Meetup'
+  type: 'All' | 'Podcast' | 'Twitter Space' | 'Livestream' | 'Meetup'
   title: string;
   description: string;
   date: string;
@@ -12,11 +12,11 @@ type Event = {
 
 const Carousel = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [eventTypeFilter, setEventTypeFilter] = useState<'all' | 'podcast' | 'twitter' | 'livestream' | 'meetup'>('all');
+  const [eventTypeFilter, setEventTypeFilter] = useState<Event['type']>('All');
   const [events, setEvents] = useState<Event[]>([]);
   const [filteredEvents, setFilteredEvents] = useState<Event[]>([]);
 
-  const categories = ['All', 'Podcast', 'Twitter Space', 'Livestream', 'Meetup', 'Conference'];
+  const categories = ['All', 'Podcast', 'Twitter Space', 'Livestream', 'Meetup', 'Conference'] as Event['type'][];
 
   useEffect(() => {
     const getEventsCSV = () => {
@@ -37,10 +37,12 @@ const Carousel = () => {
             const values = row.split('","').map(value => value.replace(/^"|"$/g, ''));
             const entry = headers.reduce((object, header, index) => {
               if (values[index] === '') {
+                // @ts-ignore
                 object[header] = null;
                 return object;
               }
 
+              // @ts-ignore
               object[header] = values[index];
               return object;
             }, {});
@@ -62,7 +64,7 @@ const Carousel = () => {
 
   useEffect(() => {
     const filteredEvents = events.filter(event => {
-      if (eventTypeFilter === 'all') {
+      if (eventTypeFilter.toLowerCase() === 'all') {
         return true;
       }
 
@@ -100,7 +102,7 @@ const Carousel = () => {
           <span
             key={index}
             className={`category ${eventTypeFilter === category.toLowerCase() ? 'active' : ''}`}
-            onClick={() => setEventTypeFilter(category.toLowerCase())}
+            onClick={() => setEventTypeFilter(category.toLowerCase() as Event['type'])}
           >
             {category}
           </span>

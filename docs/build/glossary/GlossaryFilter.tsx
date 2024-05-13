@@ -1,34 +1,32 @@
-import React, { useState, useEffect } from 'react';
 import definitions from './definitions.json';
+import {useEffect, useState} from "react";
+
+type Term = {
+  term: string
+  definition: string
+  category: 'AIML' | 'Assets' | 'CS Fundamentals' | 'Pieces Specific' | 'Search'
+  referencePath: string
+}
 
 const GlossaryComponent = () => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [terms, setTerms] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [selectedCategories, setSelectedCategories] = useState<Term['category'][]>([]);
+  const [terms, setTerms] = useState<Term[]>([]);
+  const [categories, setCategories] = useState<Term['category'][]>([]);
 
   useEffect(() => {
-    setCategories(definitions.categories);
-    setTerms(definitions.terms);
+    setCategories(definitions.categories as Term['category'][]);
+    setTerms(definitions.terms as Term[]);
     setSelectedCategories(["AIML"]);
   }, []);
 
-  const toggleCategory = (category) => {
+  const toggleCategory = (category: Term['category']) => {
     setSelectedCategories([category]);
   };
 
-  const filteredTerms = selectedCategories.length === 0 ? terms : terms.filter(term => selectedCategories.includes(term.category));
+  const filteredTerms: Term[] = selectedCategories.length === 0 ? terms : terms.filter((term: Term) => selectedCategories.includes(term.category));
 
-  const slugify = (text) => {
-    if (typeof text !== 'string') {
-      console.warn('slugify was called with a non-string argument', text);
-      return '';
-    }
+  const slugify = (text: string) => {
     return text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
-  };
-
-
-  const getFirstLine = (text) => {
-    return text.split('.', 1)[0];
   };
 
   return (
@@ -47,13 +45,12 @@ const GlossaryComponent = () => {
       <ul className="term-list">
       {filteredTerms.map((term, index) => (
         <li key={index} className="term">
-            {/* Updated to navigate on the same page */}
             <h3>
-                <a id={slugify(term.term)} href={term.referencePath} rel="noopener noreferrer" className="term-anchor">
-            <strong>{term.term}</strong>
-            </a>
+              <a id={slugify(term.term)} href={term.referencePath} rel="noopener noreferrer" className="term-anchor">
+                <strong>{term.term}</strong>
+              </a>
             </h3>
-            {getFirstLine(term.definition)}
+            {term.definition}
         </li>
         ))}
       </ul>

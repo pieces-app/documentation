@@ -30,7 +30,7 @@ def parse_markdown_files(directory):
                 categories.add(post['category'])
                 terms.append({
                     'term': post['title'],
-                    'definition': body,  # Use the entire body as the definition
+                    'definition': post['description'],
                     'category': post['category'],
                     'referencePath': f"terms/{os.path.basename(filepath).replace('.md', '')}"
                 })
