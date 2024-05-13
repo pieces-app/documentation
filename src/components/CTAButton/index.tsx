@@ -36,7 +36,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
           ) : (
             colorMode === 'dark' && props.iconDark ? (
               <Image width={20} src={props.iconDark} />
-            ) : (
+            ) : props.icon && (
               <Image width={20} src={props.icon} />
             )
           )

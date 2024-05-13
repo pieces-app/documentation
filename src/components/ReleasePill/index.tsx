@@ -1,4 +1,8 @@
-const ReleasePill = props => {
+type ReleasePillProps = {
+  children: React.ReactNode;
+}
+
+const ReleasePill = (props: ReleasePillProps) => {
   return <div style={{maxWidth: "fit-content", minWidth: "fit-content"}}>
     <p style={{
       padding: "2px 20px",
