@@ -7,6 +7,7 @@ import { pieces_app } from "/src/lib/const";
 import { MiniSpacer } from "/src/components/Spacers";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
+import Video from "/src/components/Video";
 
 <CTAButton
   href={pieces_app.links.extensions.jetbrains}
@@ -31,6 +32,21 @@ You can install the JetBrains plugin through the <a target="blank" href={pieces_
 
 Once you've installed the plugin, you can begin using Pieces without restarting your IDE.
 
+## Pieces Copilot
+Utilize a powerful Copilot integrated into your IDE, bringing your development to the next level.
+
+1. **Ask Copilot**
+     - Ask the Copilot about a file, folder, snippet, code fragment, or terminal output. All available by right-clicking, and then selecting 'Ask Copilot'.
+    <Video type={'local'} src={'/jetbrains/pieces-copilot'} alt={'Ask Copilot'} />
+2. **Pieces: Fix**
+    - Integrated into the VS Code quick fix menu, when you have an error in your code, simply open the quick fix menu and select 'Pieces: Fix' to have the Copilot resolve your issue for you.
+
+3. **Pieces: Comment & Pieces: Explain**
+    - Each method in your code has a code lens (like git lens) that allows you to explain, or comment your code.
+
+4. [A familiar chat experience spread across all your favorite text editing softwares](/features/pieces-copilot#plugin-integrations)
+    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
+
 ## Save Snippets to Pieces for JetBrains
 To save code to Pieces from your JetBrains IDE, simply highlight the snippet or file and save with:
 1. Keyboard Shortcut
@@ -41,7 +57,7 @@ To save code to Pieces from your JetBrains IDE, simply highlight the snippet or 
 
 ## View Saved Snippets
 
-![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/TREE_VIEW_JETBRAINS.gif)
+<Video type={'local'} src={'/jetbrains/view-saved-snippets'} alt={'View Saved Snippets'}/>
 
 There are a few ways to view your full list of code snippets in your IDE.
 
@@ -57,7 +73,7 @@ There are a few ways to view your full list of code snippets in your IDE.
 The Sidebar Menu automatically expands the folder of language snippets that match the file where you're currently working.
 
 ### Preview Saved Snippets in Markdown
-![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/SMARTDESCRIPTIONS_JETBRAINS.gif)
+<Video type={'local'} src={'/jetbrains/snippets-in-markdown'} alt={'Preview Saved Snippets in Markdown'} />
 
 If you'd like to get a closer look at a snippet before adding it to your project, double-click on the snippet in the list view, and it will open in a Markdown preview. You'll be able to see the snippet and its context, including any tags, descriptions, titles, related links, and related people.
 
@@ -73,12 +89,6 @@ or
 - Click the refresh button at the top of the sidebar view
 
 Sometimes, when saving new snippets from other plugins and extensions, you'll have to refresh your list to get a fully updated snippet list.
-
-
-## Pieces Copilot in Jetbrains
-Utilize the Pieces Copilot from Pieces for Jetbrains— no need to leave your IDE. You will not have to change your settings in the Pieces Desktop App.
-[A familiar chat experience spread across all your favorite text editing softwares](/features/pieces-copilot#plugin-integrations)
-    - The Copilot chat window has the same familiar features integrated into multiple text editing softwares: VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab.
 
 ### Select your Copilot Runtime
 With the Pieces for Jetbrains plugin, there are multiple LLMs that you can utilize depending on the model you prefer for your specific environment. You can read more about the different copilot models that you can choose from on [this page](/features/pieces-copilot).
@@ -101,7 +111,7 @@ If your snippets are not updating right away, try pressing the refresh button at
 You can also find saved snippets while searching in the 'All' tab, as results come from anywhere in your IDE.
 
 ## Edit Snippets with the JetBrains Plugin
-![](https://storage.googleapis.com/pieces_static_resources/jetbrains_marketplace/gifs/EDIT_SNIPPET_JETBRAINS.gif)
+<Video type={'local'} src={'/jetbrains/edit-snippets'} alt={'Edit Snippets with the JetBrains Plugin'} />
 
 Editing a snippet is super easy and can be done within your IDE without opening a separate window. When you edit, a new tab will open so that you can adjust the contents of your code snippet.
 

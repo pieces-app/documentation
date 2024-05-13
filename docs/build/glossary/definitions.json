@@ -15,25 +15,25 @@
     },
     {
       "term": "Formats",
-      "definition": "Formats refer to the specific structures or representations used to encode, store, and transmit data. These include file formats (e.g., JPEG, PDF), database formats (e.g., JSON, XML), and communication protocols (e.g., HTTP, TCP). Formats provide a standardized way of exchanging and processing data across different systems and applications.",
+      "definition": "Formats refer to the specific structures or representations used to encode, store, and transmit data.",
       "category": "CS Fundamentals",
       "referencePath": "terms/formats"
     },
     {
       "term": "Indices",
-      "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these). A uuid will map to an int, which is its place in the iterable (array) on the plural models. This will also let us know what was previously referenced but removed, signaled with a -1, and will get fully cleared on shut down and boot up.",
+      "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these).",
       "category": "Search",
       "referencePath": "terms/indices"
     },
     {
       "term": "Application",
-      "definition": "An application is used to identify the source of a format/analytics event. It provides information such as the application name, version number, platform, onboarding status, privacy settings, capabilities, mechanism, and automatic unload flag.",
+      "definition": "An application is used to identify the source of a format/analytics event.",
       "category": "Pieces Specific",
       "referencePath": "terms/application"
     },
     {
       "term": "Optical Character Recognition (OCR)",
-      "definition": "Optical Character Recognition (OCR) is a technology that converts scanned or printed images into machine-readable text. It analyzes the image, identifies characters and symbols, and transforms them into digital text that can be stored, edited, and searched. OCR has applications in various industries, including document digitization, data entry automation, and image analysis.",
+      "definition": "Optical Character Recognition (OCR) is a technology that converts scanned or printed images into machine-readable text.",
       "category": "CS Fundamentals",
       "referencePath": "terms/ocr"
     },
@@ -45,7 +45,7 @@
     },
     {
       "term": "Seed",
-      "definition": "Seeds are typically used in Pieces SDKs and require a minimum amount of information to create different materials. These will come into the API with an identifier (ID) and can be used to create a fully referenced asset with generated metadata. All assets have a seeded version of it that is always its starting place. For example, a Tag will first start as a SeededTag and will become a Tag after it is created in the Pieces database. Similarly, an Asset originally starts from a seed, SeededAsset, and then goes through its specific create pipeline and eventually becomes a fully referenced Asset.",
+      "definition": "A seed is a starting point for creating different materials in Pieces SDKs.",
       "category": "Assets",
       "referencePath": "terms/seed"
     },
@@ -62,6 +62,12 @@
       "referencePath": "terms/smart-transforms"
     },
     {
+      "term": "Debugging AI",
+      "definition": "Debugging AI refers to the use of artificial intelligence (AI) tools to enhance the process of identifying and fixing bugs in software code. These tools leverage AI technologies to automate and optimize the debugging process, making it more efficient and less prone to human error.",
+      "category": "AIML",
+      "referencePath": "terms/debugging-ai"
+    },
+    {
       "term": "Sensitives",
       "definition": "A 'sensitive' is defined as a piece of information that may be of a sensitive nature, such as an API key or service account, automatically extracted and linked into the assets creation.",
       "category": "Pieces Specific",
@@ -69,9 +75,15 @@
     },
     {
       "term": "Global Search",
-      "definition": "Global Search is a feature that allows users to search across all of their assets, regardless of where they are stored or what type of asset they are. With Global Search, users can search across all of their assets, including files, notes, code snippets, and more. They can also search within specific folders or projects, and filter their results by type, date, or other criteria. Global Search is a great way to save time and stay organized, and it can help users to be more productive in their work.",
+      "definition": "Global Search is a feature that allows users to search across all of their assets, regardless of where they are stored or what type of asset they are.",
       "category": "Search",
       "referencePath": "terms/global-search"
+    },
+    {
+      "term": "AI Code Review",
+      "definition": "AI Code Review refers to the use of artificial intelligence technologies to analyze and improve code quality in software development.",
+      "category": "AIML",
+      "referencePath": "terms/ai-code-review"
     },
     {
       "term": "Reaction",
@@ -87,7 +99,7 @@
     },
     {
       "term": "Backtracking",
-      "definition": "Backtracking is an algorithmic technique used to solve problems by systematically exploring all possible solutions. It involves recursively testing each option and backtracking if the current path leads to a dead end. Backtracking algorithms are employed in various scenarios, including game-solving, optimization problems, and graph traversal.",
+      "definition": "Backtracking is an algorithmic technique used to solve problems by systematically exploring all possible solutions.",
       "category": "CS Fundamentals",
       "referencePath": "terms/backtracking"
     },
@@ -105,13 +117,13 @@
     },
     {
       "term": "Snapshot",
-      "definition": "This refers to some sort of GET request to the API. For example, there is a /tags snapshot that will fetch all of your tags. There is also a /tag/\\{tag_uuid\\} snapshot that we refer to as a specific snapshot. This says we are going to give you the data for this specific thing, singular or plural, as it exists in the database.",
+      "definition": "A snapshot is a GET request to the API that fetches data for a specific thing, singular or plural, as it exists in the database.",
       "category": "Assets",
       "referencePath": "terms/snapshot"
     },
     {
       "term": "Discovered Assets",
-      "definition": "A collection of discovered assets is used in the bulk upload flow for clustering and uploading snippets. DiscoveredAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of discovered assets, which are snippets of code that have been identified as potential candidates for upload. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The DiscoveredAssets model contains properties such as the application ID, an iterable of discovered assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.",
+      "definition": "A collection of discovered assets is used in the bulk upload flow for clustering and uploading snippets.",
       "category": "Assets",
       "referencePath": "terms/discovered-assets"
     },
@@ -135,31 +147,31 @@
     },
     {
       "term": "Large Language Models (LLMs)",
-      "definition": "LLMs are a type of neural network that has been trained on diverse datasets, including vast amounts of text and, increasingly, multimodal data such as images, audio, and video. These models can learn to understand and generate human-like text, and they have been used for a variety of tasks, such as language translation, text summarization, and question-answering.",
+      "definition": "Large Language Models (LLMs) are a type of neural network that has been trained on diverse datasets, including vast amounts of text and, increasingly, multimodal data such as images, audio, and video.",
       "category": "AIML",
       "referencePath": "terms/large-language-models"
     },
     {
       "term": "Analysis",
-      "definition": "Analysis is an object used for storing various analysis models like image analysis and code analysis.",
+      "definition": "An object used for storing various analysis models like image analysis and code analysis.",
       "category": "Pieces Specific",
       "referencePath": "terms/analysis"
     },
     {
       "term": "Small Language Models",
-      "definition": "Small language models are a type of AI that can understand and generate human language. They are typically trained on a large dataset of text, and they learn to identify patterns in the language. This allows them to generate new text that is both coherent and grammatically correct.",
+      "definition": "Small language models are a type of AI that can understand and generate human language.",
       "category": "AIML",
       "referencePath": "terms/small-language-models"
     },
     {
       "term": "Classification",
-      "definition": "Classification is a machine-learning task that involves assigning a label to an input data point. For example, a classification model could be used to classify emails as spam or not spam or to classify images as cats or dogs.",
+      "definition": "Classification is a machine-learning task that involves assigning a label to an input data point.",
       "category": "AIML",
       "referencePath": "terms/classification"
     },
     {
       "term": "Embedding",
-      "definition": "Embedding is a technique that converts discrete data into a continuous vector space. This allows the data to be processed by machine learning models, which typically require continuous input data. For example, word embeddings can be used to represent the meaning of words in a text document.",
+      "definition": "Embedding is a technique that converts discrete data into a continuous vector space.",
       "category": "AIML",
       "referencePath": "terms/embedding"
     },
@@ -177,43 +189,43 @@
     },
     {
       "term": "Asset",
-      "definition": "An asset model represents data extracted from an application connecting a group of data containing one or more formats. It includes properties such as the asset's unique identifier, name, creator, creation and update timestamps, formats, preview, original format, shares, mechanism, websites, interaction timestamp, tags, sensitive information, persons, curated flags, discovered flags, activities, scores, favorited flags, pseudo flags, annotations, hints, anchors, conversations, and demo flags.",
+      "definition": "An asset model represents data extracted from an application connecting a group of data containing one or more formats.",
       "category": "Assets",
       "referencePath": "terms/asset"
     },
     {
       "term": "Relationship",
-      "definition": "A relationship expresses a graph of like types to build a relationship graph,to build a relationship graph, requiring iteration through edges to get the root or simply getting the first edge's type as a relationship can only be expressed through the same type.",
+      "definition": "A relationship expresses a graph of like types to build a relationship graph, requiring iteration through edges to get the root or simply getting the first edge's type as a relationship can only be expressed through the same type.",
       "category": "Pieces Specific",
       "referencePath": "terms/relationship"
     },
     {
       "term": "Anchor",
-      "definition": "An anchor is a reference to a specific file or folder location on a machine. It is used for conversations, referencing the origin of the code snippet.",
+      "definition": "A reference to a specific file or folder location on a machine.",
       "category": "Pieces Specific",
       "referencePath": "terms/anchor"
     },
     {
       "term": "Reverse Proxy Tunnel",
-      "definition": "A reverse proxy tunnel acts as an intermediary server that forwards requests from clients to a target server at a different location. It allows applications or services running on internal networks to be securely accessed from external sources by creating a tunnel that masks the actual network topology and provides additional layers of protection.",
+      "definition": "A reverse proxy tunnel acts as an intermediary server that forwards requests from clients to a target server at a different location.",
       "category": "CS Fundamentals",
       "referencePath": "terms/reverse-proxy-tunnel"
     },
     {
       "term": "Neural Code Search (NCS)",
-      "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries. It converts the code into a vector of numbers, and then uses those numbers to compare to other vectors to find similar code. This allows NCS to find similar code even if it is written in different languages or has different variable names.",
+      "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries.",
       "category": "Search",
       "referencePath": "terms/neural-code-search"
     },
     {
       "term": "Accessor",
-      "definition": "An **Accessor** is a feature that tracks who has accessed a shared snippet and how many times they have accessed it. It keeps a record of the user who accessed the shared snippet (if they were logged in) and the number of times they accessed it.",
+      "definition": "An accessor is a feature that tracks who has accessed a shared snippet and how many times they have accessed it.",
       "category": "Pieces Specific",
       "referencePath": "terms/accessor"
     },
     {
       "term": "Full-text search (FTS)",
-      "definition": "Full-text search (FTS) is a search method that allows users to find assets by searching for specific words or phrases within the content of those assets. Unlike fuzzy matching, FTS doesn't understand different spellings or sentence structures. So, the search terms must match the exact text in the assets to be found.",
+      "definition": "Full-text search (FTS) is a search method that allows users to find assets by searching for specific words or phrases within the content of those assets.",
       "category": "Search",
       "referencePath": "terms/fts"
     },
@@ -225,7 +237,7 @@
     },
     {
       "term": "Activities",
-      "definition": "Activities are a way to track and manage the progress of tasks and projects within Pieces OS. They enable users to create, assign, and track the progress of tasks, as well as manage dependencies and resources. Activities can be linked to specific projects, allowing for efficient project management and collaboration.",
+      "definition": "A way to track and manage the progress of tasks and projects within Pieces OS.",
       "category": "Pieces Specific",
       "referencePath": "terms/activities"
     },
@@ -237,25 +249,25 @@
     },
     {
       "term": "Iterable",
-      "definition": "Iterable refers to an array-like data structure that represents a sequence of elements. It allows for efficient traversal through each element, one at a time. In the Pieces SDK, we specifically use the term Iterable to denote arrays.",
+      "definition": "An Iterable refers to an array-like data structure that represents a sequence of elements.",
       "category": "CS Fundamentals",
       "referencePath": "terms/iterable"
     },
     {
       "term": "qGPTseeds",
-      "definition": "qGPTseeds are a set of pre-trained models for the qGPT language model. These models can be used for a variety of tasks, such as text generation, language translation, and question-answering.",
+      "definition": "qGPTseeds are a set of pre-trained models for the qGPT language model.",
       "category": "AIML",
       "referencePath": "terms/qgptseeds"
     },
     {
       "term": "Language Server Protocol",
-      "definition": "Language Server Protocol (LSP) is an open, JSON-RPC-based protocol for use between source code editors or integrated development environments (IDEs) and servers that provide language intelligence tools",
+      "definition": "Language Server Protocol (LSP) is an open, JSON-RPC-based protocol for use between source code editors or integrated development environments (IDEs) and servers that provide language intelligence tools.",
       "category": "CS Fundamentals",
       "referencePath": "terms/language-server-protocol"
     },
     {
       "term": "Annotation",
-      "definition": "An annotation is a versatile tool that facilitates the addition of comments, summaries, and various other types of annotations to enhance understanding and provide additional context.",
+      "definition": "A versatile tool that facilitates the addition of comments, summaries, and various other types of annotations to enhance understanding and provide additional context.",
       "category": "Pieces Specific",
       "referencePath": "terms/annotation"
     },
@@ -267,7 +279,7 @@
     },
     {
       "term": "Aesthetics",
-      "definition": "Aesthetics are a set of properties that control the visual appearance of an object, such as its color, size, and shape.",
+      "definition": "A set of properties that control the visual appearance of an object, such as its color, size, and shape.",
       "category": "Pieces Specific",
       "referencePath": "terms/aesthetics"
     },
@@ -279,15 +291,21 @@
     },
     {
       "term": "Plural vs Singular API",
-      "definition": "In API design, we utilize both plural and singular APIs based on the operation's nature. Plural APIs are used to handle multiple resources (such as create, delete, and full snapshots with many materials) at once. Singular APIs are used to handle single resources, like updates and specific snapshots.",
+      "definition": "Plural APIs are used to handle multiple resources at once, while singular APIs are used to handle single resources.",
       "category": "CS Fundamentals",
       "referencePath": "terms/plural-api-versus-singular-api"
     },
     {
       "term": "Telemetry",
-      "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices. It provides valuable insights into how systems are behaving, enabling troubleshooting, performance monitoring, and optimization. Telemetry is commonly used in industries such as manufacturing, healthcare, and IT operations.",
+      "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices.",
       "category": "CS Fundamentals",
       "referencePath": "terms/telemetry"
+    },
+    {
+      "term": "AI Code Refactoring",
+      "definition": "AI Code Refactoring refers to the systematic modification of software code to enhance its design, readability, and maintainability without altering its external behavior \u2014 just with the added ingredient of AI code.",
+      "category": "AIML",
+      "referencePath": "terms/ai-code-refactoring"
     },
     {
       "term": "Distribution",
@@ -309,9 +327,15 @@
     },
     {
       "term": "Snippet",
-      "definition": "A snippet typically refers to small bits/chunks/fragments of code that are highly reusable, complex, hard to remember, etc. In the Pieces API, snippets are rarely used. A snippet is basically an asset, where that snippet value is held by the format itself that is attached to a single asset (many snippet values may be assigned to one asset, as an asset can have many formats that are different representations of the same snippet, i.e., syntax highlight, Markdown export, PNG format).",
+      "definition": "A snippet is a small bit/fragment of code that is highly reusable, complex, hard to remember, etc.",
       "category": "Assets",
       "referencePath": "terms/snippet"
+    },
+    {
+      "term": "Ahead of Time Compilation",
+      "definition": "Ahead of time compilation (AOT compilation) is a process in software development where programs are compiled into native machine code before runtime.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/aot-compilation"
     },
     {
       "term": "Recipients",
@@ -321,7 +345,7 @@
     },
     {
       "term": "SeededTag",
-      "definition": "A SeededTag represents the minimum information needed when creating a Tag. A SeededTag is a data structure that contains the basic information required to create a Tag. It includes fields such as the tag's name, description, and the asset, format, or person that the tag is associated with. SeededTags can be created from JSON strings or dictionaries and can be converted back into these formats as well.",
+      "definition": "A SeededTag represents the minimum information needed when creating a Tag.",
       "category": "Assets",
       "referencePath": "terms/seededtag"
     },
@@ -339,7 +363,7 @@
     },
     {
       "term": "PKCE Flow",
-      "definition": "# PKCE Flow\n\nProof Key for Code Exchange (PKCE) is an extension of the OAuth 2.0 authorization code flow that enhances security by eliminating the need to securely store and manage client secrets. It uses a randomly generated code verifier and code challenge pair that is exchanged for an access token, ensuring that the authorization code cannot be intercepted and reused maliciously.",
+      "definition": "Proof Key for Code Exchange (PKCE) is an extension of the OAuth 2.0 authorization code flow that enhances security by eliminating the need to securely store and manage client secrets.",
       "category": "CS Fundamentals",
       "referencePath": "terms/pkce-flow"
     },
@@ -351,25 +375,25 @@
     },
     {
       "term": "Copilot",
-      "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code. Copilots can suggest code completions, generate entire functions, and even help to debug code.",
+      "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code.",
       "category": "AIML",
       "referencePath": "terms/copilot"
     },
     {
       "term": "Interacted Assets",
-      "definition": "A collection of interacted assets, used in the bulk upload flow for clustering and uploading snippets. InteractedAssets is a plural model used in the bulk upload flow of Pieces OS. It represents a collection of interacted assets, which are snippets of code that have been interacted with by the user. These assets can be either already snippetized and clustered, or they may need to undergo snippetization and clustering before they can be uploaded. The InteractedAssets model contains properties such as the application ID, an iterable of interacted assets, and a schema for the assets. It also provides methods for converting the model to and from JSON and a dictionary, allowing for easy serialization and deserialization.",
+      "definition": "A collection of interacted assets, used in the bulk upload flow for clustering and uploading snippets.",
       "category": "Assets",
       "referencePath": "terms/interactedassets"
     },
     {
       "term": "Retrieval-Augmented Generation (RAG)",
-      "definition": "Combines retrieval-based and generative-based approaches to generate responses by retrieving relevant information from a large corpus. RAG is a text generation technique that combines retrieval-based and generative-based approaches. It involves retrieving relevant information from a large corpus of text and then using that information to generate new text. RAG can be used for a variety of tasks, such as question-answering, summarization, and translation.",
+      "definition": "Retrieval-Augmented Generation (RAG) combines retrieval-based and generative-based approaches to generate responses by retrieving relevant information from a large corpus.",
       "category": "AIML",
       "referencePath": "terms/retrieval-augmented-generation"
     },
     {
       "term": "Quantized Generative Pre-trained Transformer (qGPT)",
-      "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model. Quantization is a technique that reduces the size and computational cost of a neural network model by reducing the precision of its weights. qGPT can be used for a variety of tasks, such as text generation, language translation, and question answering.",
+      "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model.",
       "category": "AIML",
       "referencePath": "terms/quantized-generative-pre-trained-transformer"
     }

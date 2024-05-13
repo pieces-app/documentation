@@ -114,6 +114,7 @@ export const generatedSDKSidebars = activeSDKs.reduce((acc, sdkName) => {
     }
   });
 
+  // @ts-ignore
   acc[`${sdkNameLowerCase}SDKSidebar`] = itemsWithPrefixedId;
   return acc;
 }, {});
