@@ -45,8 +45,11 @@ const GlossaryComponent = () => {
       <div>
       {filteredTerms.map((term, index) => (
         <div key={index}>
-            <h3>
-              <a id={slugify(term.term)} href={`/build/glossary/${term.referencePath}`} rel="noopener noreferrer" className="term-anchor">
+            <h3 style={{
+              marginTop: '16px',
+              marginBottom: '8px'
+            }}>
+              <a id={slugify(term.term)} href={`/build/glossary/${term.referencePath}`}>
                 <strong>{term.term}</strong>
               </a>
             </h3>
