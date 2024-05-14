@@ -22,36 +22,6 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
-  plugins: [
-    () => ({
-      name: "inject-tag",
-      injectHtmlTags() {
-        return {
-          headTags: [
-            {
-              tagName: "script",
-              innerHTML: `
-                window.difyChatbotConfig = {
-                  token: 'affl50L4gqJVcm7q',
-                  baseUrl: 'http://localhost'
-                }
-              `,
-            },
-            {
-              tagName: "script",
-              attributes: {
-                src: "http://localhost/embed.min.js",
-                id: "affl50L4gqJVcm7q",
-                defer: true,
-              },
-            },
-          ],
-        };
-      },
-    }),
-  ],
-
   presets: [
     [
       'classic',
