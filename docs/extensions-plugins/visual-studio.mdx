@@ -29,6 +29,7 @@ Compatible with Visual Studio 2022 and versions 17.9.0 and higher
 Using the Pieces for Developers Visual Studio Extension in combination with the Pieces Desktop App makes saving and reusing code simple within your IDE.
 
 ## Installing the Pieces for Developers Visual Studio Extension
+
 :::info
 
 In order to use the Pieces Visual Studio Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We recommend also using the Pieces for Developers desktop app.
@@ -38,6 +39,9 @@ In order to use the Pieces Visual Studio Extension, you must have <a target="bla
 You can install the Visual Studio Extension through the <a target="blank" href={pieces_app.links.extensions.visual_studio}>Visual Studio Marketplace</a> or by searching for Pieces in the plugins search of your IDE.
 
 Once you've installed the extension, you'll have to restart Visual Studio before using Pieces.
+
+### Showing Pieces Tool Windows
+If the Pieces Tool Windows are not present in your IDE, you can enable them by going to View > Tool Windows and selecting the Pieces windows you need.
 
 ## [Pieces Copilot](/features/pieces-copilot#plugin-integrations)
 Utilize a powerful Copilot integrated into your IDE, bringing your development to the next level.
@@ -64,6 +68,30 @@ You can generate a shareable link for a code snippet by selecting the code you w
   src={'/assets/visual_studio/RightClickShareableLink'}
 />
 
+### CodeLens - Explain & Comment
+The CodeLens feature allows you to explain and comment on code snippets directly within the IDE. To disable Pieces CodeLens, navigate to the settings and turn off the CodeLens option.
+
+### Quick Action - Fix (red squiggles)
+The Quick Action feature enables you to fix issues marked by red squiggles in your code.
+
+### Asset Explorer Filtering by Tags or Language (Classification)
+The asset explorer now supports filtering by tags or language, making it easier to find the specific assets you need.
+
+### Copilot ThemePicker
+Use the ThemePicker to change the message background color in Copilot.
+
+### Pieces Explorer Feature
+The Pieces Explorer feature allows you to browse, manage, and organize your code snippets and assets within the IDE.
+
+#### Asset Preview
+Preview assets directly within the Pieces Explorer without opening them in the editor.
+
+#### Copy to Clipboard
+Quickly copy code snippets or asset details to your clipboard for easy sharing and use.
+
+#### Modifying or Deleting Assets
+Easily modify tags, links, content, or delete assets directly within the Pieces Explorer.
+
 ## Settings
 
 ### Automatically Copy Link
@@ -80,6 +108,9 @@ If you're using a [custom Pieces OS URL](/product-highlights-and-benefits/connec
   src={'/assets/visual_studio/UpdateAPIPath'}
 />
 
+### Default Action
+To change the default action for Pieces, navigate to the settings and update the default action preference.
+
 ### Share Feedback
 You can share bug reports or other feedback by selecting the Share Feedback link in this section.
 
@@ -87,7 +118,7 @@ You can share bug reports or other feedback by selecting the Share Feedback link
 If the Visual Studio extension isn't working for you, please make sure you have the following:
 
 - The latest version of Pieces for Visual Studio
-- Pieces OS version 8.0.0 or higher
+- Pieces OS version {pieces_app.versions.pos.major} or higher
 
 :::info
 

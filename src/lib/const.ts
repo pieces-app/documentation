@@ -1,17 +1,9 @@
 // This file contains links, versions, and other constants that are used throughout the docs
 export const pieces_app = {
   versions: {
-    pfd: "v2.9.3",
-    chrome: "v2.8.7",
-    jetbrains: "v7.0.0",
-    vscode: "v1.11.3",
-    obsidian: "v1.10.1",
-    jupyterlab: "v1.10.1",
-    pieces_os: "v7.2.7",
-    edge: "v2.8.7",
-    teams: "v1.1.0",
-    firefox: "v2.8.7",
-    azure_data_studio: "v1.0.0"
+    pos: {
+      major: '9.0.0'
+    }
   },
   links: {
     website: {
