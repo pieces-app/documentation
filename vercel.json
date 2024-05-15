@@ -102,6 +102,11 @@
       "statusCode": 301
     },
     {
+      "source": "/product-highlights-and-benefits/workstream-context",
+      "destination": "/product-highlights-and-benefits/live-context",
+      "statusCode": 301
+    },
+    {
       "source": "/frequently-asked-questions",
       "destination": "/faq",
       "statusCode": 301
