@@ -57,7 +57,7 @@ The Insert At Cursor feature allows you to insert code snippets at the cursor lo
 
 <Video
   type={'local'}
-  src={'/assets/visual_studio/InsertAtCursor'}
+  src={'/visual_studio/InsertAtCursor'}
 />
 
 ### Generate Shareable Link
@@ -65,11 +65,16 @@ You can generate a shareable link for a code snippet by selecting the code you w
 
 <Video
   type={'local'}
-  src={'/assets/visual_studio/RightClickShareableLink'}
+  src={'/visual_studio/RightClickShareableLink'}
 />
 
 ### CodeLens - Explain & Comment
 The CodeLens feature allows you to explain and comment on code snippets directly within the IDE. To disable Pieces CodeLens, navigate to the settings and turn off the CodeLens option.
+
+<Video
+  type={'gif'}
+  src={'/visual_studio/explain_window.gif'}
+/>
 
 ### Quick Action - Fix
 The Quick Action feature enables you to fix issues marked by red squiggles in your code.
@@ -83,8 +88,17 @@ Use the Copilot Theme selector to change the message background color in Copilot
 ### Pieces Explorer Feature
 The Pieces Explorer feature allows you to browse, manage, and organize your code snippets and assets within the IDE.
 
+#### Default Action
+The action taken when double-clicking on an asset item or when pressing enter with one highlighted and in focus.
+
 #### Asset Preview
 Preview assets directly within the Pieces Explorer without opening them in the editor.
+
+
+<Video
+  type={'gif'}
+  src={'/visual_studio/asset_preview.gif'}
+/>
 
 #### Copy to Clipboard
 Quickly copy code snippets or asset details to your clipboard for easy sharing and use.
@@ -101,20 +115,22 @@ This setting enables automatic copying for generated Pieces links. If enabled, y
 Here you can choose which type of ML models you'd like to use in Pieces for Visual Studio: Cloud, Local, or Blended. To learn more about the types of ML models and their privacy implications, [visit this section of our documentation](/product-highlights-and-benefits/privacy-security-data#our-machine-learning-models).
 
 ### CodeLens
-The CodeLens feature allows you to explain and comment on code snippets directly within the IDE. To disable Pieces CodeLens, navigate to the settings and turn off the CodeLens option.
+To enable or disable Pieces CodeLens, go to `Tools > Options > Pieces > User Preferences` and check the `Enabled` option for CodeLens.
+
+You can also enable or disable CodeLens options by navigating to `Tools > Options > Text Editor > All Languages > CodeLens` and unchecking the `Show Pieces For Visual Studio` checkbox.
 
 ### Custom Pieces OS URL
 If you're using a [custom Pieces OS URL](/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance), you can update it here. This is useful if you're using a self-hosted version of Pieces OS.
 
 <Video
   type={'local'}
-  src={'/assets/visual_studio/UpdateAPIPath'}
+  src={'/visual_studio/UpdateAPIPath'}
 />
 
 ### Default Action
-To change the default action for Pieces, navigate to the settings and update the default action preference.
 
-### Share Feedback
+
+## Share Feedback
 You can share bug reports or other feedback by selecting the Share Feedback link in this section.
 
 ## Having Trouble with Pieces for Visual Studio?
