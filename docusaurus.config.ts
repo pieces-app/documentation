@@ -145,6 +145,14 @@ const config: Config = {
             {
               label: 'Instagram',
               href: 'https://www.instagram.com/getpieces',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/getpieces',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/orgs/pieces-app',
             }
           ],
         },
