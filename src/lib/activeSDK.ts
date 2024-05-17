@@ -1,13 +1,17 @@
 // This script generates the sidebar items for each SDK based on the activeSDK array.
 
 // List of SDKs to display on the docs
-export const activeSDKs = [
+const activeSDKs = [
   'TypeScript',
   'Python',
 ];
+const inactiveSDKs = [
+  'Dart',
+  'Kotlin',
+]
+export const allSDKs = [...activeSDKs, ...inactiveSDKs];
 
 // Template for the sidebar items for each SDK
-// TODO: This type could be improved
 const baseSidebarItems: {
   type: 'doc' | 'ref' | 'category',
   id?: string,
