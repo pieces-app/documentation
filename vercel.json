@@ -175,6 +175,26 @@
       "source": "/build/glossary/terms/Pieces%20Specific/reaction",
       "destination": "/build/glossary/terms/reaction",
       "statusCode": 301
+    },
+    {
+      "source": "/build/reference/dart/apis/(.*)",
+      "destination": "/build/reference/dart",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/reference/dart/models/(.*)",
+      "destination": "/build/reference/dart",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/reference/kotlin/apis/(.*)",
+      "destination": "/build/reference/kotlin",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/reference/kotlin/models/(.*)",
+      "destination": "/build/reference/kotlin",
+      "statusCode": 301
     }
   ]
 }
