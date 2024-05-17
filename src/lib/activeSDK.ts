@@ -4,8 +4,8 @@
 export const activeSDKs = [
   'TypeScript',
   'Python',
-  'Dart',
-  'Kotlin'
+  // 'Dart',
+  // 'Kotlin'
 ];
 
 // Template for the sidebar items for each SDK
