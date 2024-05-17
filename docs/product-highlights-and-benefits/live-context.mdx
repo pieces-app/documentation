@@ -1,6 +1,6 @@
 ---
 title: Live Context
-description: Powered by Workstream Pattern Engine, Live Context can now understand recent workstream contexts, eliminating the need for manual grounding.
+description: Powered by Workstream Pattern Engine, Live Context is the world’s first Temporally Grounded Copilot that understands your workflow.
 ---
 
 import {MiniSpacer} from "/src/components/Spacers";
@@ -27,11 +27,11 @@ The workflow context you will interact with will come from the Workstream Patter
 
 ### Enabling/Disabling the WPE
 
-In order to use workstream context in your conversations with Pieces Copilot, you will need to enable the Workstream Pattern Engine. You can disable it at any time, but remember that the Copilot will not be able to use workstream context from when you had it disabled.
+In order to use live context in your conversations with Pieces Copilot, you will need to enable the Workstream Pattern Engine. You can disable it at any time, but remember that the Copilot will not be able to use workstream context from when you had it disabled.
 
 ![WPE Menu](/wpe/enable-disable.gif)
 
-### Using Workstream Context
+### Using Live Context
 
 To engage Live Context, head to the Copilot Chats view in the Pieces for Developers Desktop App and select “New Chat.” In the “Set Context” section, tap the option labeled “Live Context”.
 
@@ -47,7 +47,7 @@ You can add additional context to further tailor the conversation if you’d lik
 
 ### Permissions
 
-If you’re a Mac user, you will need to update Pieces’ permissions in order to use workstream context. Windows users may disregard this step.
+If you’re a Mac user, you will need to update Pieces’ permissions in order to use live context. Windows users may disregard this step.
 
 <Video type={'local'}  src={'/wpe/permissions-macos'}/>
 
@@ -69,8 +69,6 @@ We recommend clicking around your workflow between chats, websites, emails, code
 
 - **Cloud LLM:** If you are using a cloud-based LLM, the data identified as relevant is sent to the cloud LLM for processing.
 - **Local LLM:** If you are using a local LLM, the data remains on your device, ensuring that all processing happens locally without any data leaving your device.
-
-At this moment, we recommend using OpenAI’s cloud models as your Pieces Copilot runtime for the best experience. Due to the context length required to add workstream context, local LLMs may not allow you to have the best experience with this feature. You are of course welcome to try using local models, and other cloud models— please let us know how it goes for you!
 
 ### Prompting
 
