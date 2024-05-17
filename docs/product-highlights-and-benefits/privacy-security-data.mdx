@@ -64,7 +64,7 @@ Our ML models are not trained continuously. They do not train on your data as yo
 
 ## Live Context
 
-The Live Context feature in Pieces enhances the functionality of the Pieces Copilot by utilizing our proprietary Workstream Pattern Engine (WPE) algorithms. This feature is designed with privacy and efficiency in mind, ensuring that all data processing and storage occur locally on your device.
+The Live Context feature in Pieces enhances the functionality of the Pieces Copilot by utilizing our proprietary Workstream Pattern Engine (WPE). This feature is designed with privacy and efficiency in mind, ensuring that all data processing and storage occur locally on your device.
 
 ### How Live Context Works
 
@@ -82,15 +82,6 @@ For users concerned about privacy, we strongly recommend using a Local LLM with 
 ### Performance Note
 
 Please note that results may vary depending on the selected LLM. Each model has its strengths and capabilities, which can influence the effectiveness of the Live Context feature.
-
-### Real-Time Context Gathering
-
-The WPE continuously operates in the background, capturing and analyzing user interactions such as clicks and navigation on the desktop. It performs OCR on screenshots to extract textual data, all of which is stored locally. When you navigate to the desktop copilot and engage with it:
-
-- **Local:** If you have a local LLM like Mistral selected, all relevant data queried by the WPE is processed by Mistral entirely on your device.
-- **Cloud:** If a cloud-based LLM like GPT-4 is selected, relevant data is sent to GPT-4 for processing.
-
-This system ensures that you can gather real-time context without compromising data privacy, as all context is stored and processed on-device, with additional filtering for secrets, passwords, and other sensitive data.
 
 ## Saving Code Snippets in the Cloud
 The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (now owned by Okta).
