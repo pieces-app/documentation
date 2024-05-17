@@ -178,22 +178,22 @@
     },
     {
       "source": "/build/reference/dart/apis/(.*)",
-      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-kotlin/blob/main/docs/$1",
+      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-dart/blob/main/doc/$1.md",
       "statusCode": 301
     },
     {
       "source": "/build/reference/dart/models/(.*)",
-      "destination": "/build/reference/dart",
+      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-dart/blob/main/doc/$1.md",
       "statusCode": 301
     },
     {
       "source": "/build/reference/kotlin/apis/(.*)",
-      "destination": "/build/reference/kotlin",
+      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-kotlin/blob/main/docs/$1.md",
       "statusCode": 301
     },
     {
       "source": "/build/reference/kotlin/models/(.*)",
-      "destination": "/build/reference/kotlin",
+      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-kotlin/blob/main/docs/$1.md",
       "statusCode": 301
     }
   ]
