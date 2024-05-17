@@ -9,15 +9,16 @@ import Video from "/src/components/Video";
 
 :::info
 
-This feature is currently in `Alpha` and only available to users enrolled in the Early Access Program. If you would like to be a part of this program, please take a look at our [Early Access Program documentation](/early-access-program).
+This feature is currently in `Alpha` and now available to all macOS & Windows users, with support for Linux coming ASAP.
 
 :::
 
 Pieces for Developers has thus far been a productivity tool that is integrated into all of your tools using plugins and extensions, and allows users to have deep contextual conversations when they manually add context from folders, files, snippets, etc. While this is useful and the users love it, we want to go one step further.
 
-We would like to introduce the Pieces for Developers **Workstream Pattern Engine**, which powers the world’s first **Temporally Grounded Copilot**. Our goal is to push the limits of intelligent Copilot interactions through truly horizontal context awareness across the operating system, enabling your copilot to understand what you've been working on and keep up with the productivity demands that developers deal with every day. Together with your help, the Pieces Copilot will become the first that can understand recent workstream contexts, eliminating the need for manual grounding.
+We would like to introduce the Pieces for Developers **Workstream Pattern Engine (WPE)**, which powers the world’s first **Temporally Grounded Copilot**. Our goal is to push the limits of intelligent Copilot interactions through truly horizontal context awareness across the operating system, enabling your copilot to understand what you've been working on and keep up with the productivity demands that developers deal with every day. Together with your help, the Pieces Copilot will become the first that can understand recent workstream contexts, eliminating the need for manual grounding.
 
 ## The Workstream Pattern Engine
+
 The workflow context you will interact with will come from the Workstream Pattern Engine, an "intelligently on" system that shadows your day-to-day work in progress journey to capture relevant workflow materials and temporally ground your Pieces Copilot Chats with relevant and recent context. Practically, this enables natural questions such as "What was I talking to Mack about this morning?" or "Explain that error I just saw," allowing your Pieces Copilot to truly extend your train of thought and let you spend less time trying to track things down or capture context and more time doing the things you love, like building amazing software.
 
 ## Getting Started with your Temporally Grounded Copilot
@@ -26,47 +27,54 @@ The workflow context you will interact with will come from the Workstream Patter
 
 In order to use workstream context in your conversations with Pieces Copilot, you will need to enable the Workstream Pattern Engine. You can disable it at any time, but remember that the Copilot will not be able to use workstream context from when you had it disabled.
 
+To engage with workstream context, turn on Live Context by clicking the button in the "Set Context" region of the new chat, or via the "Context" button to the left of the Copilot Input.
+
 ![WPE Menu](/wpe/enable-disable.gif)
 
 ### Using Workstream Context
-To engage with workstream context, use the "Generally discuss recent work" pipeline in the Pieces Copilot view.
 
 ![WPE Pipeline](/wpe/pipeline.png)
 
 You can add additional context to further tailor the conversation if you’d like.
 
 ### Permissions
+
 If you’re a Mac user, you will need to update Pieces’ permissions in order to use workstream context. Windows users may disregard this step.
 
-<Video
-  type={'local'}
-  src={'/wpe/permissions-macos'}
-/>
+<Video  type={'local'}  src={'/wpe/permissions-macos'}/>
 
 You can also manually update this by adding and enabling Pieces OS in the following settings:
 
 #### Privacy & Security > Accessibility
-
 ![Accessibility Permissions](/wpe/accessibility-permissions.png)
 
 #### Privacy & Security > Screen and System Audio Recording
-
 ![Screen and System Audio Recording Permissions](/wpe/screen-and-system-audio-permissions.png)
 
 ## Recommendations and Best Practices
 
+:::tip
+
+We recommend clicking around your workflow between chats, websites, emails, code, etc., while the WPE is running before asking a question to get the most value out of it (i.e., data capture).
+
+:::
+
 ### LLM
+
 At this moment, we recommend using OpenAI’s cloud models as your Pieces Copilot runtime for the best experience. Due to the context length required to add workstream context, local LLMs may not allow you to have the best experience with this feature. You are of course welcome to try using local models, and other cloud models— please let us know how it goes for you!
 
 ### Prompting
+
 As with any interaction with an LLM, good prompting practices will improve your experience greatly. Through the Workstream Pattern Engine, the Pieces Copilot is able to understand what you’re working on, including files, websites, folders, etc and with whom. Therefore, you are now able to ask even more natural questions that feel like extensions of thought. Here are some examples of what's now possible:
+
 - "Can you summarize the readme file from the pieces_for_x repo?"
 - "What did Sam have to say about the All Hands meeting in the GChat MLChat channel?"
 - "Generate a script in python using the function I saw on W3Schools to create a variable named xyz"
 - "Take the function from example_function.dart and add it as a method to the class in example_class.dart"
 - "What did Mark say about requests to the xyz api in slack?"
 
-### Use Cases and Tutorials
+## Use Cases and Tutorials
+
 1. Exception/error handling
 2. Getting started solving a problem
 3. PR review
