@@ -178,7 +178,7 @@
     },
     {
       "source": "/build/reference/dart/apis/(.*)",
-      "destination": "/build/reference/dart",
+      "destination": "https://github.com/pieces-app/pieces-os-client-sdk-for-kotlin/blob/main/docs/$1",
       "statusCode": 301
     },
     {
