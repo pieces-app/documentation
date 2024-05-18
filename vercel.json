@@ -185,6 +185,6 @@
       "source": "/build/reference/kotlin/(.*)",
       "destination": "/build/reference/dart",
       "statusCode": 301
-    },
+    }
   ]
 }
