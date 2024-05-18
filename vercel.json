@@ -177,24 +177,14 @@
       "statusCode": 301
     },
     {
-      "source": "/build/reference/dart/apis/(.*)",
+      "source": "/build/reference/dart/(.*)",
       "destination": "/build/reference/dart",
       "statusCode": 301
     },
     {
-      "source": "/build/reference/dart/models/(.*)",
+      "source": "/build/reference/kotlin/(.*)",
       "destination": "/build/reference/dart",
       "statusCode": 301
     },
-    {
-      "source": "/build/reference/kotlin/apis/(.*)",
-      "destination": "/build/reference/dart",
-      "statusCode": 301
-    },
-    {
-      "source": "/build/reference/kotlin/models/(.*)",
-      "destination": "/build/reference/dart",
-      "statusCode": 301
-    }
   ]
 }
