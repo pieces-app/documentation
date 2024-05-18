@@ -42,18 +42,21 @@ const GlossaryComponent = () => {
           </span>
         ))}
       </div>
-      <ul className="term-list">
+      <div>
       {filteredTerms.map((term, index) => (
-        <li key={index} className="term">
-            <h3>
-              <a id={slugify(term.term)} href={`/build/glossary/${term.referencePath}`} rel="noopener noreferrer" className="term-anchor">
+        <div key={index}>
+            <h3 style={{
+              marginTop: '16px',
+              marginBottom: '8px'
+            }}>
+              <a id={slugify(term.term)} href={`/build/glossary/${term.referencePath}`}>
                 <strong>{term.term}</strong>
               </a>
             </h3>
             {term.definition}
-        </li>
+        </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

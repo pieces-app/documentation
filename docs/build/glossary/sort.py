@@ -37,7 +37,7 @@ def parse_markdown_files(directory):
 
     return {
         'categories': sorted(list(categories)),
-        'terms': terms
+        'terms': sorted(terms, key=lambda x: x['term'])
     }
 
 

@@ -23,35 +23,6 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
-    () => ({
-      name: "inject-tag",
-      injectHtmlTags() {
-        return {
-          headTags: [
-            {
-              tagName: "script",
-              innerHTML: `
-                window.difyChatbotConfig = {
-                  token: 'affl50L4gqJVcm7q',
-                  baseUrl: 'http://localhost'
-                }
-              `,
-            },
-            {
-              tagName: "script",
-              attributes: {
-                src: "http://localhost/embed.min.js",
-                id: "affl50L4gqJVcm7q",
-                defer: true,
-              },
-            },
-          ],
-        };
-      },
-    }),
-  ],
-
   presets: [
     [
       'classic',
@@ -174,6 +145,14 @@ const config: Config = {
             {
               label: 'Instagram',
               href: 'https://www.instagram.com/getpieces',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://www.facebook.com/getpieces',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/orgs/pieces-app',
             }
           ],
         },
