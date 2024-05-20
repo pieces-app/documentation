@@ -86,7 +86,7 @@ Live Context allows for a more intuitive and seamless interaction with the copil
 ### Website Context
 Website Context allows the Copilot to understand the content of websites. By using the [Pieces Web Extension](/extensions-plugins/web-extension) to add a website to your Copilot context, the system automatically extracts relevant content and integrates this information into the Copilot’s knowledge base.
 
-This capability is particularly beneficial when you are researching or gathering information as part of your development process.
+This capability is particularly beneficial when you are researching or capturing information as part of your development process.
 
 ### Message Context
 Adding copilot messages to context means that the Copilot puts more importance on those messages than others when using context to generate a response.
@@ -129,7 +129,9 @@ Our Copilot also comes with multiple different LLM runtimes, cloud and local in 
 #### OpenAI
 - GPT 3.5 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
 - GPT 3.5 Turbo 16k, a highly optimized LLM utilizing a larger set of parameters for more accurate responses.
-- GPT 4, OpenAI's most recent LLM containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
+- GPT 4, containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
+- GPT 4 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
+- GPT 4o, OpenAI's new flagship model that can reason across audio, vision, and text in real time.
 
 #### Gemini
 - Gemini Pro, Google's most capable AI model, built to be multimodal and able to complete a wide variety of tasks.
@@ -139,9 +141,14 @@ Our Copilot also comes with multiple different LLM runtimes, cloud and local in 
 - Code Chat Bison, a model fine-tuned to generate code based on a natural language description
 
 ### Local Runtimes
+
 :::info
 
-*Local LLMs come with some hefty hardware requirements, please make sure your system can fulfill them before attempting to load one of these models.*
+Disclaimer: Running Large Language Models locally on-device is typically resource intensive. As of right now a majority of our Local LLMs leverage roughly 7 billion parameters and to ensure optimal performance, we recommend the following minimum specifications:
+- **CPU:** A modern, multi-core processor with at least 4 cores.
+- **RAM:** At least 8GB of system memory.
+- **GPU (Optional):** A dedicated GPU with at least 4 GB of VRAM (NVIDIA RTX 20 series or newer recommended).
+- **System Age:** A machine from 2021 or newer.
 
 :::
 
