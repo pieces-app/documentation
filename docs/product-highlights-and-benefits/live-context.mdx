@@ -12,16 +12,20 @@ import Video from "/src/components/Video";
 This feature is currently in Alpha and is now generally available to all users. It is only available to macOS & Windows users, with Linux support coming ASAP 🙏🏼.
 :::
 
-Pieces for Developers has thus far been a productivity tool that is integrated into all of your tools using plugins and extensions, and allows users to have deep contextual conversations when they manually add context from folders, files, snippets, etc. While this is useful and the users love it, we want to go one step further.
+Since the original launch of Pieces for Developers, we’ve been laser-focused on developer productivity. We started by giving devs a place to store their most valuable snippets of code, then moved on to proactively saving and contextualizing them. Next, we built one of the first on-device LLM-powered AI copilots in the Pieces Copilot. Now, we’re taking our obsession with contextual developer productivity to the next level with the launch of Live Context within our copilot, making it the world’s first temporally grounded copilot. 
 
 <Video type={'youtube'} src={'https://www.youtube.com/embed/aP8u95RTCGE?si=y4bhrmzG9KWsD1AS'}/>
 <MiniSpacer />
 
-We would like to introduce the Pieces for Developers **Workstream Pattern Engine (WPE)**, which powers the world’s first **Temporally Grounded Copilot**. Our goal is to push the limits of intelligent Copilot interactions through truly horizontal context awareness across the operating system, enabling your copilot to understand what you've been working on and keep up with the productivity demands that developers deal with every day. Together with your help, the Pieces Copilot will become the first that can understand recent context, eliminating the need for manual grounding.
+Live Context elevates the Pieces Copilot and allows it to understand your workflow and discuss how, where, and when you work. As with everything we do here at Pieces, this all happens entirely on-device and is available on macOS, Windows, and Linux. We truly believe the Pieces Copilot+ will revolutionize how you cross off your to-dos.
+
+By using context gathered throughout your workflow, Pieces Copilot+ can provide hyper-aware assistance to guide you right back to where you left off. Ask it, “What was I working on an hour ago?” and let it help you get back into flow. Ask it, “How can I resolve the issue I got with Cocoa Pods in the terminal in IntelliJ?” or “What did Mack say I should test in the latest release?” and let Pieces Copilot surface the information that you know you have, but you can’t remember where.
+
+Pieces Copilot+ is now temporally grounded in exactly what you have been working on, which reduces the need for manual context input, enhances continuity in developer tasks, reduces context switching, and enables more natural, intuitive interactions with the Pieces Copilot.
 
 ## The Workstream Pattern Engine
 
-The workflow context you will interact with will come from the Workstream Pattern Engine, an "intelligently on" system that shadows your day-to-day work in progress journey to capture relevant workflow materials and temporally ground your Pieces Copilot Chats with relevant and recent context. Practically, this enables natural questions such as "What was I talking to Mack about this morning?" or "Explain that error I just saw," allowing your Pieces Copilot to truly extend your train of thought and let you spend less time trying to track things down or capture context and more time doing the things you love, like building amazing software.
+The live context in the Pieces Copilot comes from the Workstream Pattern Engine, which shadows your workflow on an operating system level. Whether you're on macOS, Windows, or Linux, your workflow will be captured, processed, and stored on-device for access at a later date. The Workstream Pattern Engine applies several on-device and real-time algorithms to this data to proactively capture the most important information as you go about your workday, wherever you are— your browser, your IDE, or your collaboration tools. Over time, the Workstream Pattern Engine learns more and more about your work and becomes increasingly helpful. It even takes context from your previous copilot chats to build on the knowledge you are gathering.
 
 ## Getting Started with your Temporally Grounded Copilot
 
@@ -29,11 +33,13 @@ The workflow context you will interact with will come from the Workstream Patter
 
 In order to use live context in your conversations with Pieces Copilot, you will need to enable the Workstream Pattern Engine. You can disable it at any time, but remember that the Copilot will not be able to use live context from when you had it disabled.
 
+To enable or disable the engine, head to the Machine Learning section of the Settings page of the Pieces Desktop App. You’ll see a button to enable the Workstream Pattern Engine— hit it, and you’re good to go!
+
 ![WPE Menu](/wpe/enable-disable.gif)
 
 ### Using Live Context
 
-To engage Live Context, head to the Copilot Chats view in the Pieces for Developers Desktop App and select “New Chat.” In the “Set Context” section, tap the option labeled “Live Context”.
+Once you've enabled the Workstream Pattern Engine, go about your usual work for a few minutes, and then head to the Copilot Chats view in the Pieces for Developers Desktop App and select “New Chat.” In the “Set Context” section, tap the option labeled “Live Context." Like before, you can leverage any of our available models, on-device or cloud, to engage with live context in the Pieces Copilot, and you can use it across your toolchain to carry on conversations in your favorite IDE and browser.
 
 ![WPE Pipeline](/copilot/live-context/using-live-context.png)
 
@@ -59,33 +65,42 @@ You can also manually update this by adding and enabling Pieces OS in the follow
 #### Privacy & Security > Screen and System Audio Recording
 ![Screen and System Audio Recording Permissions](/wpe/screen-and-system-audio-permissions.png)
 
-## Recommendations and Best Practices
+## Live Context Use Cases
 
 :::tip
 We recommend clicking around your workflow between chats, websites, emails, code, etc., while the WPE is running before asking a question to get the most value out of it (i.e., data capture).
 :::
 
+## Example Prompts
+
+Here are a few real prompts and use cases gathered from the Pieces Team and Early Access users:
+
+**Workflow Assistance**
+- "What task should I do next?"
+- "What did Mark say about requests to the xyz api in slack?"
+- "Based on the given workflow context, have I performed all the necessary release chores in order to release our plugins for VS Code, JetBrains, Obsidian, and JupyterLab? In general, I need to bump their versions, update the changelogs, and make sure to support the latest version of the copilot package."
+
+**Research**
+- Review a new package or new API and ask, "How can I use the Lua SDK to call the version endpoint?"
+- Review a support forum that had a specific solution to a difficult problem and ask the Pieces Copilot to apply it to the problem I am trying to solve.
+- Review a research paper and have the Pieces Copilot summarize it for me.
+- "Can you summarize the readme file from the pieces_for_x repo?"
+
+**"Coding"**
+- “How can I resolve the issue I'm experiencing in the handleQGPTStreamEvent function in IntelliJ?”
+- “Implement the handleQGPTStreamEvent function according to the comment about the function definition.”
+- “How should I adjust the initCopilot function given the global state implementation details outlined in Obsidian?”
+- “How can I adjust the incrementalRender function to perform better when the difference between original and updated is very large?”
+- "Generate a script in python using the function I saw on W3Schools to create a variable named xyz"
+
+### Prompting Best Practices
+
+As with any interaction with an LLM, good prompting practices will improve your experience greatly. Use specifics like application and file names whenever possible, and if you aren't getting the answer you are looking for, try rephrasing or switching to a different LLM model. If the Pieces Copilot tells you it does not have workstream context related to your prompt, try flipping back to the source of that context on your screen, wait for a few seconds to allow for processing, and then ask again. 
+
 ### Interaction with Language Models (LLM)
 
 - **Cloud LLM:** If you are using a cloud-based LLM, the data identified as relevant is sent to the cloud LLM for processing.
 - **Local LLM:** If you are using a local LLM, the data remains on your device, ensuring that all processing happens locally without any data leaving your device.
-
-### Prompting
-
-As with any interaction with an LLM, good prompting practices will improve your experience greatly. Through the Workstream Pattern Engine, the Pieces Copilot is able to understand what you’re working on, including files, websites, folders, etc and with whom. Therefore, you are now able to ask even more natural questions that feel like extensions of thought. Here are some examples of what's now possible:
-
-- "Can you summarize the readme file from the pieces_for_x repo?"
-- "What did Sam have to say about the All Hands meeting in the GChat MLChat channel?"
-- "Generate a script in python using the function I saw on W3Schools to create a variable named xyz"
-- "Take the function from example_function.dart and add it as a method to the class in example_class.dart"
-- "What did Mark say about requests to the xyz api in slack?"
-
-## Use Cases and Tutorials
-
-1. Exception/error handling
-2. Getting started solving a problem
-3. PR review
-4. Summarize unread GChats when I log in
 
 ## Data and Privacy
 
