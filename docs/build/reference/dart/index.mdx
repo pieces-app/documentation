@@ -13,7 +13,7 @@ The Pieces SDK is a powerful code engine package designed for writing applicatio
 
 :::info
 
-The Pieces Dart SDK is not yet available on pub.dev. To use the SDK, you must use the [Pieces Dart SDK GitHub repository](https://github.com/pieces-app/pieces-os-client-sdk-for-dart) when adding the dependency to your project.
+The Pieces Dart SDK is not available on pub.dev. To use the SDK, you must use the [Pieces Dart SDK GitHub repository](https://github.com/pieces-app/pieces-os-client-sdk-for-dart) when adding the dependency to your project.
 
 :::
 
@@ -28,48 +28,26 @@ To get started with the Pieces SDK, follow these steps:
 1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
 
     <GridFlexRow type={'start'}>
-      <CTAButton
-      href="/installation-getting-started/windows"
-      label={"Get Pieces for Windows"}
-      icon={'/assets/windows_logo_old.png'}
-      type={'secondary'}
-      />
-      <CTAButton
-      href="/installation-getting-started/macos"
-      label={"Get Pieces for macOS"}
-      icon={'/assets/mac_os.png'}
-      iconDark={'/assets/mac_os_dark.png'}
-      type={'secondary'}
-      />
-      <CTAButton
-      href="/installation-getting-started/linux"
-      label={"Get Pieces for Linux"}
-      icon={'/assets/linux_logo.png'}
-      type={'secondary'}
-      />
+      <CTAButton href={'/installation-getting-started/windows'} label={"Get Pieces for Windows"} icon={'/assets/windows_logo_old.png'} type={'secondary'} />
+      <CTAButton href={'/installation-getting-started/macos'} label={"Get Pieces for macOS"} icon={'/assets/mac_os.png'} iconDark={'/assets/mac_os_dark.png'} type={'secondary'} />
+      <CTAButton href={'/installation-getting-started/linux'} label={"Get Pieces for Linux"} icon={'/assets/linux_logo.png'} type={'secondary'} />
     </GridFlexRow>
 
 2. **Add the SDK dependency**: Add the SDK dependency to your Dart project by adding the following to your `pubspec.yaml` file:
-    <Tabs
-      defaultValue="github"
-      values={[
-        { label: 'GitHub', value: 'github', },
-        { label: 'Local', value: 'local', },
-      ]
-    }>
+    <Tabs defaultValue="github" values={[ { label: 'GitHub', value: 'github', }, { label: 'Local', value: 'local', }]}>
       <TabItem value="github">
-        ```dart
-        dependencies:
-          pieces_os_client:
-            git: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
-        ```
-      </TabItem>
-      <TabItem value="local">
-        ```dart
+        ```yaml
         dependencies:
           pieces_os_client:
             git:
               url: https://github.com/pieces-app/pieces-os-client-sdk-for-dart.git
+        ```
+      </TabItem>
+      <TabItem value="local">
+        ```yaml
+        dependencies:
+          pieces_os_client:
+            path: /path/to/pieces-os-client-sdk-for-dart
         ```
       </TabItem>
     </Tabs>
@@ -128,4 +106,4 @@ dart main.dart
 
 If you've made it this far, that means you've successfully connected to your local Pieces OS server using our Dart SDK! You can now explore the various endpoints available in the SDK to build your application on top of Pieces OS.
 
-Click the `Next →` button below to dive deeper into the Dart SDK documentation.
+For more information on the Dart SDK, refer to the [Dart SDK Repo](https://github.com/pieces-app/pieces-os-client-sdk-for-dart/tree/main/doc) for detailed documentation.
