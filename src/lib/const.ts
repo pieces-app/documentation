@@ -1,7 +1,7 @@
 // This file contains links, versions, and other constants that are used throughout the docs
 export const pieces_app = {
   versions: {
-    pos: {
+    pieces_os: {
       major: '9.0.0'
     }
   },
