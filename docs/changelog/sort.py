@@ -19,8 +19,6 @@ def parse_markdown_files(directory):
     terms = []
 
     for filepath in glob.glob(os.path.join(directory, '*.md')):
-        print(f"Processing file: {filepath}")
-
         with open(filepath, 'r', encoding='utf-8') as file:
             file_content = file.read()
             parts = file_content.split('---', 2)
