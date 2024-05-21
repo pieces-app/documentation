@@ -15,10 +15,12 @@ def parse_front_matter(file_content):
 
 
 def parse_markdown_files(directory):
-    categories = set()
+    products = set()
     terms = []
 
     for filepath in glob.glob(os.path.join(directory, '*.md')):
+        print(f"Processing file: {filepath}")
+
         with open(filepath, 'r', encoding='utf-8') as file:
             file_content = file.read()
             parts = file_content.split('---', 2)
@@ -26,18 +28,21 @@ def parse_markdown_files(directory):
             post = parse_front_matter(parts[1])
             body = parts[2].strip()
 
-            if 'category' in post and 'title' in post and 'description' in post:
-                categories.add(post['category'])
+            if 'products' in post and 'title' in post and 'description' in post:
+                # Split products string by comma
+                post['products'] = [product.strip() for product in post['products'].split(',')]
+                products.update(post['products'])
                 terms.append({
-                    'term': post['title'],
-                    'definition': post['description'],
-                    'category': post['category'],
-                    'referencePath': f"terms/{os.path.basename(filepath).replace('.md', '')}"
+                    'title': post['title'],
+                    'description': post['description'],
+                    'products': post['products'],
+                    'body': body,
+                    'referencePath': f"releases/{os.path.basename(filepath).replace('.md', '')}"
                 })
 
     return {
-        'categories': sorted(list(categories)),
-        'terms': sorted(terms, key=lambda x: x['term'])
+        'products': sorted(list(products)),
+        'releases': sorted(terms, key=lambda x: x['title'])
     }
 
 
@@ -46,11 +51,11 @@ def generate_json_file(data, output_file):
         json.dump(data, file, indent=2)
 
 
-directory = 'docs/build/glossary/terms'
-output_file = 'docs/build/glossary/releases.json'
+directory = 'docs/changelog/releases'
+output_file = 'docs/changelog/changelog.json'
 
 data = parse_markdown_files(directory)
-print(f"Found {len(data['terms'])} terms in {len(data['categories'])} categories.")
+print(f"Found {len(data['releases'])} releases in {len(data['products'])} products.")
 
 generate_json_file(data, output_file)
 

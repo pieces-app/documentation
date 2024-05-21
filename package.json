@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js",
+    "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js && python3 docs/changelog/sort.py",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
@@ -24,7 +24,8 @@
     "lunr": "^2.3.9",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@docusaurus/eslint-plugin": "^3.3.2",

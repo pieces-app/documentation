@@ -224,6 +224,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'changelog/index',
+          label: 'Changelog',
+        },
+        {
+          type: 'doc',
           id: 'early-access-program',
           label: 'Early Access Program',
         },
