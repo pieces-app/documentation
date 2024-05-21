@@ -47,7 +47,7 @@ def generate_json_file(data, output_file):
 
 
 directory = 'docs/build/glossary/terms'
-output_file = 'docs/build/glossary/releases.json'
+output_file = 'docs/build/glossary/definitions.json'
 
 data = parse_markdown_files(directory)
 print(f"Found {len(data['terms'])} terms in {len(data['categories'])} categories.")

@@ -56,7 +56,7 @@ const ChangelogFilter = () => {
       <div>
       {filteredReleases.map((release, index) => (
         <div key={index}>
-            <h3 style={{
+            <h2 style={{
               marginTop: '16px',
               marginBottom: '8px'
             }}>
@@ -64,7 +64,7 @@ const ChangelogFilter = () => {
                 <strong>{release.title}</strong>
               </a>
               <p>{release.description}</p>
-            </h3>
+            </h2>
             <ReactMarkdown>
               {release.body}
             </ReactMarkdown>

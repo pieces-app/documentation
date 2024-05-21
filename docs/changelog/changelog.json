@@ -1,27 +1,34 @@
 {
   "products": [
-    "Desktop App",
-    "Pieces OS"
+    "Desktop App"
   ],
   "releases": [
     {
-      "title": "Testing",
-      "description": "Pieces Copilot+ offers intelligent, context-aware responses to all of your coding and workstream-based questions, creating a transformative coding experience.",
+      "title": "Desktop App - v2.12.2",
+      "description": "Release notes for Desktop App version 2.12.2",
       "products": [
-        "Pieces OS"
-      ],
-      "body": "![](https://assets-global.website-files.com/6143afec68f555387049efb3/664790cd2f8264c02f04e41a_image3_98906e1f90484190fb01e7d124cf53e6_2000.jpeg)\n\n## Main Highlights\n\n- Feature 1: Brief description of the first main feature.\n- Feature 2: Brief description of the second main feature.\n- Feature 3: Brief description of the third main feature.\n- Bug Fix 1: Description of an important bug fix.\n\nFor a detailed list of all changes, please visit the [full release notes](https://code.pieces.app/updates/welcome-to-the-future-of-ai-copilots-introducing-live-context-the-workstream-pattern-engine-and-support-for-gpt-4o-pieces-for-developers-2122-pieces-os-903).\n\nRepeat the template above for each of the last three updates.",
-      "referencePath": "releases/v9.0.1"
-    },
-    {
-      "title": "Welcome to the Future of AI Copilots \ud83e\uddbe Introducing Live Context, the Workstream Pattern Engine, and Support for GPT-4o",
-      "description": "Pieces Copilot+ offers intelligent, context-aware responses to all of your coding and workstream-based questions, creating a transformative coding experience.",
-      "products": [
-        "Pieces OS",
         "Desktop App"
       ],
-      "body": "![](https://assets-global.website-files.com/6143afec68f555387049efb3/664790cd2f8264c02f04e41a_image3_98906e1f90484190fb01e7d124cf53e6_2000.jpeg)\n\n## Main Highlights\n\n- Feature 1: Brief description of the first main feature.\n- Feature 2: Brief description of the second main feature.\n- Feature 3: Brief description of the third main feature.\n- Bug Fix 1: Description of an important bug fix.\n\nFor a detailed list of all changes, please visit the [full release notes](https://code.pieces.app/updates/welcome-to-the-future-of-ai-copilots-introducing-live-context-the-workstream-pattern-engine-and-support-for-gpt-4o-pieces-for-developers-2122-pieces-os-903).\n\nRepeat the template above for each of the last three updates.",
-      "referencePath": "releases/v9.0.0"
+      "body": "## **Version 2.12.2 Changelog**\n\n### **New Features**\n\n### **Enhancements**\n\n### **Fixes**\n\n### **Known Issues**",
+      "referencePath": "releases/releases/template"
+    },
+    {
+      "title": "Desktop App - v2.12.2",
+      "description": "Release notes for Desktop App version 2.12.2",
+      "products": [
+        "Desktop App"
+      ],
+      "body": "## **Version 2.12.2 Changelog**\n\n### **New Features**\n- **Fullscreen Copilot**: Enhanced user experience with the introduction of a fullscreen mode for the Copilot feature.\n- **Pieces OS Update Support**: Added functionality to check for and support updates to Pieces OS.\n- **Time-Based Context Options**: Introduced options that adjust the context based on the time of day.\n- **Pause WPE**: Added functionality to pause the WPE process with updated icons and user interface.\n- **Updated Focus Mode**: Enhanced focus mode with new features and improved usability.\n\n### **Enhancements**\n- **Windows Optimizations**: Improved performance and compatibility on Windows operating systems.\n- **Mobile and Fullscreen Polish**: Various aesthetic and functional enhancements to improve user experience on mobile devices and in fullscreen mode.\n- **Settings Order**: Reorganized settings menu for better navigation and user experience.\n- **Polish Strokes for Live Context & More**: Improved visual elements and interactions in live context views.\n- **Tracking & Power Menu Support**: Enhanced tracking features and added power menu options for improved control.\n\n### **Fixes**\n- **Fixes Account Photo Layout Shift**: Addressed an issue causing layout shifts when updating account photos.\n- **Clear WPE Data Menu**: Fixed issues in the WPE data clearing options.\n- **Copilot Language Classification Debugging**: Resolved bugs affecting language classification in Copilot.\n- **Patches & Enhancements**: Various patches and minor enhancements to improve stability and performance.\n- **Linux Patches**: Specific fixes to enhance compatibility and performance on Linux platforms.",
+      "referencePath": "releases/desktop-app/12.2.2"
+    },
+    {
+      "title": "Desktop App - v2.12.2",
+      "description": "Release notes for Desktop App version 2.12.2",
+      "products": [
+        "Desktop App"
+      ],
+      "body": "## **Version 2.12.1 Changelog**\n\n### **Fixes**\n- **General Bug Fixes**: Addressed various bugs to enhance system stability and performance. Specific issues resolved include:\n  - **Bug #590**: Resolved an issue affecting system operations.\n  - **Bug #589**: Fixed a problem impacting user interactions.\n  - **Bug #587**: Corrected a fault that was causing unexpected behavior in the application.\n\n### **Updates**\n- **Post-Install Script Update**: Improved the post-installation script for better system configuration and setup.\n- **Copilot Chat Interface**: Updated the Copilot chat message interface to enhance user interaction and experience.",
+      "referencePath": "releases/desktop-app/12.2.1"
     }
   ]
 }
