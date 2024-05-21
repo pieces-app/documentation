@@ -162,6 +162,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'product-highlights-and-benefits/live-context',
+          label: 'Live Context',
+        },
+        {
+          type: 'doc',
           id: 'product-highlights-and-benefits/privacy-security-data',
           label: 'Privacy & Security',
         },
@@ -179,11 +184,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'product-highlights-and-benefits/saving-screenshots',
           label: 'Save Screenshots & Extract Code',
-        },
-        {
-          type: 'doc',
-          id: 'product-highlights-and-benefits/live-context',
-          label: 'Live Context',
         }
       ]
     },
