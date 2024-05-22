@@ -5,195 +5,398 @@ description: Learn how to back up and restore your Pieces Database without losin
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
-import Admonition from '@theme/Admonition';
+import Video from "/src/components/Video";
 
 # Backup your Pieces Database
 
-:::info
+Backing up your Pieces Database is a crucial step to ensure you don’t lose any of your code snippets. This guide will walk you through how to easily back up and restore your Pieces Database within the Pieces Desktop App.
 
-Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.
+## Creating a Backup
 
-:::
+<Tabs values={ [{label: 'Using the Settings Menu', value: 'settings-menu'}, {label: 'Using the Power Menu', value: 'power-menu'}] }>
+  <TabItem value="settings-menu">
+    1. Open the Pieces Desktop App.
+    2. Click on your profile icon in the top-right corner of the app.
+    3. Select `Backup & Restore Database`.
+    4. In the pop-up window, click on the `Create Backup` button.
 
-_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
-
-## Creating the backup
-
-### Step 1
-
-Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
-
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'},
-  ]}
->
-  <TabItem value="macOS">
-    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select `Quit`
-    2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`
+    <Video type={'local'} src={'/pfd/backup-and-restore/CreateBackupViaSettingsMenu'} alt={'Create Backup via Settings Menu'} />
   </TabItem>
-  <TabItem value="windows-linux">
-    1. To quit Pieces OS, right-click the Pieces OS taskbar app and select `Quit`
-    2. To quit Pieces Desktop, click the `X` in the top-right corner of the Pieces Desktop window
+  <TabItem value="power-menu">
+    1. Open the Pieces Desktop App.
+    2. Use `CMD/CTRL + SHFT + P` or `CMD/CTRL + Enter` to open the `Power Menu`.
+    3. Search for `Backup & Restore Database` and select it.
+    4. In the pop-up window, click on the `Create Backup` button.
+
+    <Video type={'local'} src={'/pfd/backup-and-restore/CreateBackupViaPowerMenu'} alt={'Create Backup via Power Menu'} />
   </TabItem>
 </Tabs>
 
-### Step 2
+## Restoring a Backup
 
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows', value: 'windows'},
-    {label: 'Linux', value: 'linux'},
-  ]}
->
-  <TabItem value="macOS">
-    Open your Finder and navigate to your `Home` folder.
+<Tabs values={ [{label: 'Using the Settings Menu', value: 'settings-menu'}, {label: 'Using the Power Menu', value: 'power-menu'}] }>
+  <TabItem value="settings-menu">
+    1. Open the Pieces Desktop App.
+    2. Click on your profile icon in the top-right corner of the app.
+    3. Select `Backup & Restore Database`.
+    4. In the pop-up window, find the backup you want to restore and click on the `Restore` button.
 
-    _If you cannot see your Home folder on the left-hand side of your Finder, simply tap `Shift+Cmd+H` to open it_
-
-    ![Navigating to home folder](/assets/backup_database/navigate_to_home.png)
+    <Video type={'local'} src={'/pfd/backup-and-restore/RestoreBackupViaSettingsMenu'} alt={'Restore Backup via Settings Menu'} />
   </TabItem>
-  <TabItem value="windows">
-    Open your File Explorer and navigate to the following location: `C:/Users/{username}`
-  </TabItem>
-  <TabItem value="linux">
-    Open your File Explorer and navigate to the following location: `~/Users/{username}`
+  <TabItem value="power-menu">
+    1. Open the Pieces Desktop App.
+    2. Use `CMD/CTRL + SHFT + P` or `CMD/CTRL + Enter` to open the `Power Menu`.
+    3. Search for `Backup & Restore Database` and select it.
+    4. In the pop-up window, find the backup you want to restore and click on the `Restore` button.
+
+    <Video type={'local'} src={'/pfd/backup-and-restore/RestoreBackupViaPowerMenu'} alt={'Restore Backup via Power Menu'} />
   </TabItem>
 </Tabs>
 
-### Step 3
+## Deleting a Backup
 
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows', value: 'windows'},
-    {label: 'Linux', value: 'linux'},
-  ]}
->
-  <TabItem value="macOS">
-    Once in your Home folder, you’ll need to click `Shift+Cmd+.` (shift, command, period) to show your hidden files & folders. Once they are visible, find your `Library` folder and click it.
+<Tabs values={ [{label: 'Using the Settings Menu', value: 'settings-menu'}, {label: 'Using the Power Menu', value: 'power-menu'}] }>
+  <TabItem value="settings-menu">
+    1. Open the Pieces Desktop App.
+    2. Click on your profile icon in the top-right corner of the app.
+    3. Select `Backup & Restore Database`.
+    4. In the pop-up window, find the backup you want to delete and click on the `Delete` button.
 
-    ![Selecting your Library Folder](/assets/backup_database/selecting_library_folder.png)
+    <Video type={'local'} src={'/pfd/backup-and-restore/DeleteBackupViaSettingsMenu'} alt={'Delete Backup via Settings Menu'} />
   </TabItem>
-  <TabItem value="windows">
-    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.
+  <TabItem value="power-menu">
+    1. Open the Pieces Desktop App.
+    2. Use `CMD/CTRL + SHFT + P` or `CMD/CTRL + Enter` to open the `Power Menu`.
+    3. Search for `Backup & Restore Database` and select it.
+    4. In the pop-up window, find the backup you want to delete and click on the `Delete` button.
 
-    <Admonition type="info">
-      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.
-    </Admonition>
-
-    You should now be at the following location: `C:/Users/{username}/Documents`
-  </TabItem>
-  <TabItem value="linux">
-    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.
-
-    <Admonition type="info">
-      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.
-    </Admonition>
-
-    You should now be at the following location: `~/Users/{username}/Documents`
+    <Video type={'local'} src={'/pfd/backup-and-restore/DeleteBackupViaPowerMenu'} alt={'Delete Backup via Power Menu'} />
   </TabItem>
 </Tabs>
 
-### Step 4
 
-Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These folders represent your Pieces OS & Pieces Desktop databases.
+[//]: # (## External Backup)
 
-### Step 5
+[//]: # ()
+[//]: # (:::info)
 
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows', value: 'windows'},
-    {label: 'Linux', value: 'linux'},
-  ]}
->
-  <TabItem value="macOS">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select `Compress`.
-  </TabItem>
-  <TabItem value="windows">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, select `Send to`, and then select `Compressed (zipped) Folder`.
-  </TabItem>
-  <TabItem value="linux">
-    Select both folders (`com.pieces.os` and `com.pieces.pfd`), right-click, and select `Compress`.
-  </TabItem>
-</Tabs>
+[//]: # ()
+[//]: # (Manual backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.)
 
-:::info
+[//]: # ()
+[//]: # (:::)
 
-This may take some time, especially if you have any local LLMs downloaded. If you do have any local LLMs downloaded, you may cancel the compression, open Pieces Desktop App, and delete the local LLMs you have downloaded. However, you **MUST** restart the guide from `Step 1` if you choose to do this.
+[//]: # ()
+[//]: # (_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._)
 
-:::
+[//]: # ()
+[//]: # (### Creating an External Backup)
 
-### Step 6
+[//]: # ()
+[//]: # (#### Step 1: Quit Pieces OS and Pieces Desktop)
 
-This will create a new Zip file titled, `Archive`. From here, you can enter a new name. We recommend naming this, `pieces_backup_(month)_(day)_(year)`.
+[//]: # ()
+[//]: # (Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.)
 
-From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.
+[//]: # ()
+[//]: # (<Tabs)
 
-:::info
+[//]: # (  defaultValue={"macOS"})
 
-Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.
+[//]: # (  values={[)
 
-:::
+[//]: # (    {label: 'macOS', value: 'macOS'},)
 
-_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._
+[//]: # (    {label: 'Windows/Linux', value: 'windows-linux'},)
 
-## Restoring the Backup
+[//]: # (  ]})
 
-### Step 1
+[//]: # (>)
 
-Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.
+[//]: # (  <TabItem value="macOS">)
 
-1. To quit Pieces OS, open your system tray in the bottom-right corner of your Desktop, then right-click the Pieces OS icon, and select `Quit`.
-2. To quit Pieces Desktop, right-click the app icon in your system toolbar and select `Quit`.
+[//]: # (    1. To quit Pieces OS, open the Pieces OS toolbar app towards the top of your Desktop and select `Quit`)
 
-### Step 2
+[//]: # (    2. To quit Pieces Desktop, select `Pieces` in the top-left of your macOS toolbar and select `Quit`)
 
-Locate the compressed Zip folder containing both your `com.pieces.os` and `com.pieces.pfd` backups.
+[//]: # (  </TabItem>)
 
-### Step 3
+[//]: # (  <TabItem value="windows-linux">)
 
-<Tabs
-  defaultValue={"macOS"}
-  values={[
-    {label: 'macOS', value: 'macOS'},
-    {label: 'Windows/Linux', value: 'windows-linux'},
-  ]}
->
-  <TabItem value="macOS">
-    Navigate back to the `Library` folder either on the same or your different machine.
-  </TabItem>
-  <TabItem value="windows-linux">
-    Navigate back to the `Documents` folder either on the same or your different machine.
-  </TabItem>
-</Tabs>
+[//]: # (    1. To quit Pieces OS, right-click the Pieces OS taskbar app and select `Quit`)
 
-### Step 4
+[//]: # (    2. To quit Pieces Desktop, click the `X` in the top-right corner of the Pieces Desktop window)
 
-Unzip the compressed backup file.
+[//]: # (  </TabItem>)
 
-### Step 5
+[//]: # (</Tabs>)
 
-This next step is critical. If you have an existing Pieces database already located in your current folder on your device, you will see a window similar to what’s shown below.
+[//]: # ()
+[//]: # (#### Step 2: Locate your Pieces Database)
 
-![Replace dialog popup](/assets/backup_database/replace_message.png)
+[//]: # ()
+[//]: # (<Tabs)
 
-This step is asking if you’d like to override the existing database with your backup.
+[//]: # (  defaultValue={"macOS"})
 
-- If you’d like to override, select `Replace the files in the destination`
-- If you don’t want to override, abandon the process by pressing `Stop`
+[//]: # (  values={[)
 
-### Step 6
+[//]: # (    {label: 'macOS', value: 'macOS'},)
 
-Lastly, if you chose to proceed with restoring the backup, you will need to restart both Pieces OS and Pieces Desktop for the changes to take effect.
+[//]: # (    {label: 'Windows', value: 'windows'},)
 
-### Support
+[//]: # (    {label: 'Linux', value: 'linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    Open your Finder and navigate to your `Home` folder.)
+
+[//]: # ()
+[//]: # (    _If you cannot see your Home folder on the left-hand side of your Finder, simply tap `Shift+Cmd+H` to open it_)
+
+[//]: # ()
+[//]: # (    ![Navigating to home folder]&#40;/assets/backup_database/navigate_to_home.png&#41;)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows">)
+
+[//]: # (    Open your File Explorer and navigate to the following location: `C:/Users/{username}`)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="linux">)
+
+[//]: # (    Open your File Explorer and navigate to the following location: `~/Users/{username}`)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
+
+[//]: # ()
+[//]: # (#### Step 3: Locate your Pieces Database)
+
+[//]: # ()
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"macOS"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macOS'},)
+
+[//]: # (    {label: 'Windows', value: 'windows'},)
+
+[//]: # (    {label: 'Linux', value: 'linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    Once in your Home folder, you’ll need to click `Shift+Cmd+.` &#40;shift, command, period&#41; to show your hidden files & folders. Once they are visible, find your `Library` folder and click it.)
+
+[//]: # ()
+[//]: # (    ![Selecting your Library Folder]&#40;/assets/backup_database/selecting_library_folder.png&#41;)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows">)
+
+[//]: # (    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.)
+
+[//]: # ()
+[//]: # (    <Admonition type="info">)
+
+[//]: # (      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, click on the `View` tab, and check the box next to `Hidden items`.)
+
+[//]: # (    </Admonition>)
+
+[//]: # ()
+[//]: # (    You should now be at the following location: `C:/Users/{username}/Documents`)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="linux">)
+
+[//]: # (    Once in your `{username}` folder, you'll need to find your `Documents` folder and click it.)
+
+[//]: # ()
+[//]: # (    <Admonition type="info">)
+
+[//]: # (      You may need to enable the option to show hidden files and folders. To do this, open File Explorer, and tap `Ctrl+H`.)
+
+[//]: # (    </Admonition>)
+
+[//]: # ()
+[//]: # (    You should now be at the following location: `~/Users/{username}/Documents`)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
+
+[//]: # ()
+[//]: # (#### Step 4: Locate your Pieces Database)
+
+[//]: # ()
+[//]: # (Next, locate the folders titled `com.pieces.os` and `com.pieces.pfd`. These folders represent your Pieces OS & Pieces Desktop databases.)
+
+[//]: # ()
+[//]: # (#### Step 5: Compress the folders)
+
+[//]: # ()
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"macOS"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macOS'},)
+
+[//]: # (    {label: 'Windows', value: 'windows'},)
+
+[//]: # (    {label: 'Linux', value: 'linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    Select both folders &#40;`com.pieces.os` and `com.pieces.pfd`&#41;, right-click, and select `Compress`.)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows">)
+
+[//]: # (    Select both folders &#40;`com.pieces.os` and `com.pieces.pfd`&#41;, right-click, select `Send to`, and then select `Compressed &#40;zipped&#41; Folder`.)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="linux">)
+
+[//]: # (    Select both folders &#40;`com.pieces.os` and `com.pieces.pfd`&#41;, right-click, and select `Compress`.)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
+
+[//]: # ()
+[//]: # (:::info)
+
+[//]: # ()
+[//]: # (This may take some time, especially if you have any local LLMs downloaded. If you do have any local LLMs downloaded, you may cancel the compression, open Pieces Desktop App, and delete the local LLMs you have downloaded. However, you **MUST** restart the guide from `Step 1` if you choose to do this.)
+
+[//]: # ()
+[//]: # (:::)
+
+[//]: # ()
+[//]: # (#### Step 6: Rename the Zip file)
+
+[//]: # ()
+[//]: # (This will create a new Zip file titled, `Archive`. From here, you can enter a new name. We recommend naming this, `pieces_backup_&#40;month&#41;_&#40;day&#41;_&#40;year&#41;`.)
+
+[//]: # ()
+[//]: # (From here, you can place this Zip file anywhere you desire, whether it be another folder on your machine or in cloud storage such as Google Drive, Dropbox, or OneDrive.)
+
+[//]: # ()
+[//]: # (:::info)
+
+[//]: # ()
+[//]: # (Backups are ONLY compatible with the same and future versions of Pieces OS and Pieces Desktop as when it was created. If it was created with Pieces OS 1.9.1 and Pieces Desktop 1.9.2, then it is compliant with those same versions and all future versions when restoring the backup.)
+
+[//]: # ()
+[//]: # (:::)
+
+[//]: # ()
+[//]: # (_Please note that you **CANNOT go backward in versions.** For example: on one computer you have Pieces OS 1.9.3 and Pieces Desktop 1.9.4, and you attempt to restore this database on Pieces OS 1.9.0 and Pieces Desktop 1.9.1, this will fail and your Pieces OS will NOT function properly. To resolve this please first update your version to the latest on Pieces Desktop and Pieces OS and then repeat the restoration process._)
+
+[//]: # ()
+[//]: # (### Restoring the External Backup)
+
+[//]: # ()
+[//]: # (#### Step 1: Quit Pieces OS and Pieces Desktop)
+
+[//]: # ()
+[//]: # (Please quit Pieces OS and Pieces Desktop and make sure neither are actively running.)
+
+[//]: # ()
+[//]: # (1. To quit Pieces OS, open your system tray in the bottom-right corner of your Desktop, then right-click the Pieces OS icon, and select `Quit`.)
+
+[//]: # (2. To quit Pieces Desktop, right-click the app icon in your system toolbar and select `Quit`.)
+
+[//]: # ()
+[//]: # (#### Step 2: Locate the compressed backup file)
+
+[//]: # ()
+[//]: # (Locate the compressed Zip folder containing both your `com.pieces.os` and `com.pieces.pfd` backups.)
+
+[//]: # ()
+[//]: # (#### Step 3: Navigate to your Pieces Database)
+
+[//]: # ()
+[//]: # (<Tabs)
+
+[//]: # (  defaultValue={"macOS"})
+
+[//]: # (  values={[)
+
+[//]: # (    {label: 'macOS', value: 'macOS'},)
+
+[//]: # (    {label: 'Windows/Linux', value: 'windows-linux'},)
+
+[//]: # (  ]})
+
+[//]: # (>)
+
+[//]: # (  <TabItem value="macOS">)
+
+[//]: # (    Navigate back to the `Library` folder either on the same or your different machine.)
+
+[//]: # (  </TabItem>)
+
+[//]: # (  <TabItem value="windows-linux">)
+
+[//]: # (    Navigate back to the `Documents` folder either on the same or your different machine.)
+
+[//]: # (  </TabItem>)
+
+[//]: # (</Tabs>)
+
+[//]: # ()
+[//]: # (#### Step 4: Unzip the compressed backup file)
+
+[//]: # ()
+[//]: # (Unzip the compressed backup file.)
+
+[//]: # ()
+[//]: # (#### Step 5: Replace the existing database)
+
+[//]: # ()
+[//]: # (This next step is critical. If you have an existing Pieces database already located in your current folder on your device, you will see a window similar to what’s shown below.)
+
+[//]: # ()
+[//]: # (![Replace dialog popup]&#40;/assets/backup_database/replace_message.png&#41;)
+
+[//]: # ()
+[//]: # (This step is asking if you’d like to override the existing database with your backup.)
+
+[//]: # ()
+[//]: # (- If you’d like to override, select `Replace the files in the destination`)
+
+[//]: # (- If you don’t want to override, abandon the process by pressing `Stop`)
+
+[//]: # ()
+[//]: # (#### Step 6: Restart Pieces OS and Pieces Desktop)
+
+[//]: # ()
+[//]: # (Lastly, if you chose to proceed with restoring the backup, you will need to restart both Pieces OS and Pieces Desktop for the changes to take effect.)
+
+## Support
 
 As always, if you run into issues or have feedback, please fill out [this quick form](https://getpieces.typeform.com/to/mCjBSIjF) or email us at [support@pieces.app](mailto:support@pieces.app), and we’ll be in touch as soon as possible!
