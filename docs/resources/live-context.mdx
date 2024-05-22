@@ -1,0 +1,123 @@
+---
+title: Live Context Reference
+description: Learn how to use Live Context in Pieces for Developers to enhance your workflow and productivity.
+---
+
+Pieces for Developers: Helping you remember anything and interact with everything!
+
+## Live Context Messaging:
+We would like to introduce Live Context in Pieces for Developers, powered by our Workstream Pattern Engine (WPE), which enables the world’s first Temporally Grounded Copilot.
+Live Context elevates the Pieces Copilot, allowing it to understand your workflow and discuss how, where, and when you work. As with everything we do here at Pieces, this all happens entirely on-device and is available on macOS, Windows, and Linux (coming soon). We truly believe the Pieces Copilot with Live Context will 10x your productivity. .
+
+## Core Benefits
+1. Reduce context switching and remove the need to search around your desktop to find a piece of information
+2. Reduce the need to add manual context to your copilot as it captures context behind the scenes as you work
+3. Enables natural and intuitive interactions with the Pieces Copilot, allowing you to use it as an assistant that truly understands what you have been working on (prompts below)
+
+## Materials to Review and Share
+- [Introducing the Copilot+ Blog](https://code.pieces.app/blog/introducing-pieces-copilot-now-with-live-context)
+- [Introducing the Copilot+ Video](https://www.youtube.com/watch?v=aP8u95RTCGE)
+- [Live Context Documentation Page](https://docs.pieces.app/product-highlights-and-benefits/live-context)
+- [Tsavo's Excellent Demo and Discussion](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data#live-context)
+  - Demo Timestamps: 10:18-18:43
+- [Live Context Privacy and Security Documentation](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data#live-context)
+- [The Pieces Team Magic Moments](https://www.youtube.com/watch?v=pEHdZyR83BU)
+
+## Privacy and Security
+The Live Context feature in Pieces enhances the functionality of the Pieces Copilot by utilizing our proprietary Workstream Pattern Engine (WPE). This feature is designed with privacy and efficiency in mind, ensuring that all data processing and storage occur locally on your device.
+
+### How Live Context Works
+1. On-Device Processing and Storage: **All WPE algorithms, processing, and storage take place directly on your device. This ensures that your data remains secure and private, without being transmitted over the internet**.
+2. Querying Local Data: When Live Context is enabled, and you ask a question to the Copilot, the system queries data aggregated from the WPE. This data is processed entirely on your device to find content that is relevant to your query.
+3. Utilizing Retrieval-Augmented Generation (RAG) for Contextual Relevance: The relevant content identified by the WPE is then used as context for the Copilot prompt.
+4. Interaction with Language Models (LLM):
+    - Cloud LLM: If you are using a cloud-based LLM, the data identified as relevant is sent to the cloud LLM for processing.
+    - Local LLM: If you are using a local LLM, the data remains on your device, ensuring that all processing happens locally without any data leaving your device.
+
+### Privacy Recommendations
+For users concerned about privacy, we strongly recommend using a Local LLM with the Pieces Copilot. Options include Mistral, Phi-2, and Llama2, among others. Using a local LLM ensures that all data and processing remain on your device, providing an additional layer of security and privacy.
+
+### Performance Note
+Please note that results may vary depending on the selected LLM. Each model has its strengths and capabilities, which can influence the effectiveness of the Live Context feature.
+
+## Use Cases
+
+### Coding
+
+#### Debugging and Error Resolution:
+1. Error Resolution in Specific Functions: Provide specific debugging advice based on the context of the current code and error messages.
+    - Prompt: "How can I resolve the issue I'm experiencing in the `fetchDataFromAPI` function in VS Code?"
+2. Fixing Build Errors:
+    - Prompt: "Why is my build failing in the `compileProject` task in Gradle?"
+3. Error Explanation:
+    - Prompt: Explain the error message 'TypeError: undefined is not a function' in my code.
+
+#### Code Implementation and Enhancement:
+1. Feature Implementation:
+    - Prompt: "Implement the `userAuthentication` function according to the requirements specified in the Jira ticket."
+2. Refactoring for Maintainability:
+    - Prompt: "Refactor the `processUserInput` function to improve readability and maintainability."
+
+#### Performance Optimization:
+1. Optimizing Database Queries:
+    - Prompt: "How can I optimize the SQL query in the `getUserData` function for better performance?"
+
+#### Code Documentation and Testing
+1. Generating Documentation: automatically generate documentation comments for functions and classes
+    - Prompt: "Generate documentation comments for the `calculateMetrics` function."
+2. Unit Test Creation: Create unit tests for existing functions
+    - Prompt: "Generate unit tests for the `validateUserInput` function."
+
+#### Code Comparison and Merging
+1. Branch Comparison to generate a detailed comparison between two branches in Git:
+    - Prompt: "Compare the `featureBranch` with `main` and highlight the differences."
+2. Merge Conflict Resolution: Provide guidance on resolving merge conflicts based on the context of the conflicting changes.
+     - Prompt: "How should I Resolve merge conflicts between `featureBranch` and `main`."
+
+#### Code Review:
+1. Generate a summary of changes in a pull request, highlighting key changes and potential issues captured from the pull request.
+    - Prompt: Review the pull request number 42 and summarize the changes.
+
+### Research
+1. Automatically summarize key findings from research papers/websites
+    - Prompt: "Summarize the key findings from the research paper and Arxiv on neural network optimization."
+    - Prompt: “Extract all the statistical data from this research paper on data mining techniques."
+    - Prompt: “Compare the findings of these two research papers on blockchain technology.”
+    - Prompt: “Find other research papers that cite this study on machine learning model accuracy.”
+2. Refer to multiple resources to help with validation
+
+### Workflow assistance
+
+#### Information Retrieval
+1. Quickly recall any information you've seen, whether it was part of an email, message, or website. This helps you find specific pieces of information without needing to remember where you saw them.
+    - Prompt: “What were the specifics of the growth team meeting location in my email?”
+    - Prompt: “What were the contact details/email address of the blogger mentioned in the AI blog post on vector search?”
+    - Prompt: “Who made that tweet about the Apple Vision Pro review?”
+2. Review multiple resources to help with problem-solving:
+    - Prompt: “What is the solution to the problem shared in the support channel around the Pieces OS version upgrade in Windows?”
+    - Prompt: “What tasks did I assign to the team in the ClickUp project 'Website Redesign'?”
+    - Prompt: “What are the upcoming deadlines for my projects this week?”
+
+#### Calendar and scheduling
+1. What are the important meetings in my calendar today?
+
+#### Conversations/Discussions
+1. Ask for help related to previous conversations in your workspace: GChat/Slack/Clickup etc.
+    - Prompt: What was I talking to Mark about earlier in Google Chat?
+    - Prompt: What action items were discussed in the VS Code Channel?
+    - Prompt: Based on the given workflow context, have I performed all the necessary release chores in order to release our plugins for VS Code, JetBrains, Obsidian, and JupyterLab?
+    - Prompt: “Draft an email to the team summarizing the discussions on the next release in the Slack.”
+
+#### Team Updates
+1. Use-Case: Summarize recent updates, commits, and communications from team members related to the current sprint
+    - Prompt: "What are the latest updates from my team on the current sprint?"
+
+#### Meeting Preparation:
+1. Use-Case: Summarize relevant notes, emails, and documents to prepare for upcoming meetings.
+    - Prompt: "What are the key points I need to discuss in my meeting with the marketing team?"
+
+#### Project Collaboration:
+1. Use-Case: Automatically draft and send a project update to the team based on recent activities and progress.
+    - Prompt: "Share the latest project update with the team."
+
+
