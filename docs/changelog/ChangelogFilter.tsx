@@ -2,7 +2,7 @@ import changelog from './changelog.json';
 import {useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 
-type Product = 'All' | 'Desktop App' | 'Pieces OS';
+type Product = typeof changelog.products[number];
 
 type Release = {
   title: string
