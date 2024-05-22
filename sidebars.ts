@@ -67,8 +67,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      collapsed: false,
-      label: '⚙️ Product Features',
+      label: '✨ Features',
       items: [
         {
           type: 'category',
@@ -183,6 +182,27 @@ const sidebars: SidebarsConfig = {
       label: '🌱 Resources',
       items: [
         {
+          type: 'category',
+          label: '📚 Use Cases',
+          items: [
+            {
+              type: 'doc',
+              id: 'use-cases/countless-google-searches',
+              label: 'Reduce Endless Google Searching',
+            },
+            {
+              type: 'doc',
+              id: 'use-cases/onboard-new-developers',
+              label: 'Onboard New Developers',
+            },
+            {
+              type: 'doc',
+              id: 'use-cases/resurfacing-additional-context',
+              label: 'Resurface Additional Context',
+            },
+          ]
+        },
+        {
           type: 'doc',
           id: 'community/index',
           label: 'Community',
@@ -201,7 +221,7 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'features/keyboard-shortcuts',
           label: 'Keyboard Shortcuts',
-        }
+        },
       ]
     }
     // {
