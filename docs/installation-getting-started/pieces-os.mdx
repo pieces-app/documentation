@@ -1,11 +1,4 @@
----
-title: Understanding Pieces OS
-description: Delve into the engine that powers Pieces for Developers - Pieces OS. Explore how it manages data processing and machine learning models to enhance your development workflow.
-next: /extensions-plugins/web-extension
-nextTitle: Check Out Our Chrome Plugin
----
-
-import Tabs from '@theme/Tabs';
+import GridFlexRow from "/src/components/GridFlexRow";import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import { MiniSpacer } from '/src/components/Spacers';
 import CTAButton from "/src/components/CTAButton";
@@ -14,7 +7,9 @@ import CTAButton from "/src/components/CTAButton";
 
 Pieces OS operates as a background service that functions both offline and on-device to facilitate communication among individual products within the Pieces for Developers Suite. Its core functions include the management of local, private, and secure machine learning models used for the [Pieces Copilot](/features/pieces-copilot), as well as [real-time search](/features/search-modes) and suggestions.
 
-![Pieces Ecosystem](https://storage.googleapis.com/pieces_multimedia/ILLUSTRATIONS/PIECES_FOR_DEVELOPERS/ANY_INTEGRATION/ANY_THEME/PLUGINS/1X1/PIECES_FOR_DEVELOPERS-ANY_INTEGRATION-PLUGINS-ANY_THEME-1X1-10_16_2023.PNG)
+<GridFlexRow type={'evenly'}>
+  ![Pieces Ecosystem](https://storage.googleapis.com/pieces_multimedia/ILLUSTRATIONS/PIECES_FOR_DEVELOPERS/ANY_INTEGRATION/ANY_THEME/PLUGINS/1X1/PIECES_FOR_DEVELOPERS-ANY_INTEGRATION-PLUGINS-ANY_THEME-1X1-10_16_2023.PNG)
+</GridFlexRow>
 
 Pieces OS enables Pieces products to operate 100% locally on your machine, with an option to connect to the cloud for [backup](/features/back-up-and-restore), [sharing](/features/one-click-snippet-sharing), and some cloud-only ML models.
 
