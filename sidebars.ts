@@ -181,27 +181,27 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '🌱 Resources',
       items: [
-        {
-          type: 'category',
-          label: '📚 Use Cases',
-          items: [
-            {
-              type: 'doc',
-              id: 'use-cases/countless-google-searches',
-              label: 'Reduce Endless Google Searching',
-            },
-            {
-              type: 'doc',
-              id: 'use-cases/onboard-new-developers',
-              label: 'Onboard New Developers',
-            },
-            {
-              type: 'doc',
-              id: 'use-cases/resurfacing-additional-context',
-              label: 'Resurface Additional Context',
-            },
-          ]
-        },
+        // {
+        //   type: 'category',
+        //   label: '📚 Use Cases',
+        //   items: [
+        //     {
+        //       type: 'doc',
+        //       id: 'use-cases/countless-google-searches',
+        //       label: 'Reduce Endless Google Searching',
+        //     },
+        //     {
+        //       type: 'doc',
+        //       id: 'use-cases/onboard-new-developers',
+        //       label: 'Onboard New Developers',
+        //     },
+        //     {
+        //       type: 'doc',
+        //       id: 'use-cases/resurfacing-additional-context',
+        //       label: 'Resurface Additional Context',
+        //     },
+        //   ]
+        // },
         {
           type: 'doc',
           id: 'community/index',
@@ -221,6 +221,11 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'features/keyboard-shortcuts',
           label: 'Keyboard Shortcuts',
+        },
+        {
+          type: 'link',
+          label: 'YoutTube',
+          href: 'https://www.youtube.com/@getpieces',
         },
       ]
     }
