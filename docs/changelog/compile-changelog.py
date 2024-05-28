@@ -1,6 +1,7 @@
 import os
 import glob
 import json
+from datetime import datetime
 
 def parse_front_matter(file_content):
     lines = file_content.split('\n')
@@ -20,6 +21,10 @@ def parse_markdown_files(directory):
     # Update the glob pattern to include '**' for recursive search and '*.md' for Markdown files
     pattern = os.path.join(directory, '**', '*.md')
     for filepath in glob.glob(pattern, recursive=True):
+        # Skip files named 'template.md'
+        if os.path.basename(filepath).lower() == 'template.md':
+            continue
+
         with open(filepath, 'r', encoding='utf-8') as file:
             file_content = file.read()
             parts = file_content.split('---', 2)
@@ -38,13 +43,14 @@ def parse_markdown_files(directory):
                     'title': post['title'],
                     'description': post['description'],
                     'products': post['products'],
+                    'date': post['date'],
                     'body': body,
                     'referencePath': f"releases/{product_directory}/{os.path.basename(filepath).replace('.md', '')}"
                 })
 
     return {
         'products': sorted(list(products)),
-        'releases': sorted(terms, key=lambda x: x['title'])
+        'releases': sorted(terms, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%d'), reverse=True)
     }
 
 

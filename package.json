@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "start": "docusaurus start",
-    "prebuild": "python3 docs/build/glossary/sort.py && python3 docs/changelog/sort.py",
+    "prebuild": "python3 docs/build/glossary/compile-glossary.py && python3 docs/changelog/compile-changelog.py",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "build-changelog": "python3 docs/changelog/compile-changelog.py"
   },
   "dependencies": {
     "@docusaurus/core": "^3.3.2",
