@@ -109,16 +109,16 @@ const sidebars: SidebarsConfig = {
               id: 'features/transforming-snippets',
               label: 'Transformations',
             },
-            {
-              type: 'doc',
-              id: 'features/code-completion',
-              label: 'Code Completion',
-            },
-            {
-              type: 'doc',
-              id: 'features/creation-and-generation',
-              label: 'Creating & Generating Code',
-            },
+            // {
+            //   type: 'doc',
+            //   id: 'features/code-completion',
+            //   label: 'Code Completion',
+            // },
+            // {
+            //   type: 'doc',
+            //   id: 'features/creation-and-generation',
+            //   label: 'Creating & Generating Code',
+            // },
           ]
         },
         {
