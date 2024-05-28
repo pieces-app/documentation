@@ -26,7 +26,7 @@ const Video = (props: VideoProps) => {
           aspectRatio: '16 / 9',
           maxWidth: maxWidth || '100%',
         }}
-        src={`${src}?rel=0`}
+        src={`${src}&rel=0`}
         title={alt}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen={true}>
