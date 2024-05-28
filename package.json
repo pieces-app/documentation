@@ -10,7 +10,7 @@
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
     "typecheck": "tsc",
-    "build-changelog": "python3 docs/changelog/compile-changelog.py"
+    "compile-changelog": "python3 docs/changelog/compile-changelog.py"
   },
   "dependencies": {
     "@docusaurus/core": "^3.3.2",
