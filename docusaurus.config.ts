@@ -98,6 +98,11 @@ const config: Config = {
           position: 'right',
         },
         {
+          to: '/changelog',
+          label: 'Changelog',
+          position: 'right',
+        },
+        {
           to: '/community',
           label: 'Community',
           position: 'right',
