@@ -3,10 +3,11 @@ type VideoProps = {
   type: 'gif' | 'youtube' | 'local';
   maxWidth?: string;
   alt?: string;
+  aspectRatio?: string;
 }
 
 const Video = (props: VideoProps) => {
-  const { src, type, maxWidth, alt } = props;
+  const { src, type, maxWidth, alt, aspectRatio } = props;
 
   return (
     type === 'gif' ? (
@@ -16,6 +17,7 @@ const Video = (props: VideoProps) => {
         style={{
           borderRadius: '8px',
           maxWidth: maxWidth || '100%',
+          aspectRatio,
         }}
       />
     ) :
@@ -26,7 +28,7 @@ const Video = (props: VideoProps) => {
           aspectRatio: '16 / 9',
           maxWidth: maxWidth || '100%',
         }}
-        src={src}
+        src={`${src}&rel=0`}
         title={alt}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen={true}>
@@ -41,6 +43,7 @@ const Video = (props: VideoProps) => {
         style={{
           borderRadius: '8px',
           maxWidth: maxWidth || '100%',
+          aspectRatio,
         }}
       >
         <source src={`${src}.webm`} title={alt} type="video/webm"/>
