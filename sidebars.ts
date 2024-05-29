@@ -224,14 +224,20 @@ const sidebars: SidebarsConfig = {
         //   ]
         // },
         {
-          type: 'doc',
-          id: 'community/index',
+          type: 'category',
           label: 'Community',
-        },
-        {
-          type: 'doc',
-          id: 'community/events/index',
-          label: 'Events',
+          items: [
+            {
+              type: 'doc',
+              id: 'community/index',
+              label: 'Overview',
+            },
+            {
+              type: 'doc',
+              id: 'community/events/index',
+              label: 'Events',
+            },
+          ]
         },
         {
           type: 'doc',
