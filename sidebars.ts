@@ -8,49 +8,70 @@ const sidebars: SidebarsConfig = {
       label: '🚀 Getting Started',
       items: [
         {
-          type: 'doc',
-          id: 'installation-getting-started/what-am-i-installing',
-          label: ' Desktop App',
+          type: 'category',
+          label: 'Desktop App',
+          items: [
+            {
+              type: 'doc',
+              id: 'installation-getting-started/what-am-i-installing',
+              label: 'Overview',
+            },
+            {
+              type: 'doc',
+              id: 'installation-getting-started/macos',
+              label: 'macOS',
+            },
+            {
+              type: 'doc',
+              id: 'installation-getting-started/windows',
+              label: 'Windows',
+            },
+            {
+              type: 'doc',
+              id: 'installation-getting-started/linux',
+              label: 'Linux',
+            }
+          ]
         },
         {
           type: 'doc',
           id: 'extensions-plugins/vscode',
-          label: ' VS Code Extension',
+          label: 'VS Code Extension',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/web-extension',
-          label: ' Web Extension',
+          label: 'Web Extension',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/jetbrains',
-          label: ' JetBrains Plugin',
+          label: 'JetBrains Plugin',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/obsidian',
-          label: ' Obsidian Plugin',
+          label: 'Obsidian Plugin',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/visual-studio',
-          label: ' Visual Studio Extension',
+          label: 'Visual Studio Extension',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
-          label: ' Azure Data Studio',
+          label: 'Azure Data Studio',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/jupyterlab',
-          label: ' JupyterLab Extension',
+          label: 'JupyterLab Extension',
         },
         {
           type: 'doc',
           id: 'extensions-plugins/teams',
-          label: ' Microsoft Teams App',
+          label: 'Microsoft Teams App',
         },
       ]
     },
@@ -153,17 +174,17 @@ const sidebars: SidebarsConfig = {
             },
           ]
         },
-        {
-          type: 'category',
-          label: '👤 Account & Identity',
-          items: [
-            {
-              type: 'doc',
-              id: 'features/user-settings',
-              label: 'User Settings',
-            },
-          ]
-        },
+        // {
+        //   type: 'category',
+        //   label: '👤 Account & Identity',
+        //   items: [
+        //     {
+        //       type: 'doc',
+        //       id: 'features/user-settings',
+        //       label: 'User Settings',
+        //     },
+        //   ]
+        // },
         {
           type: 'category',
           label: '🔧 Settings',
