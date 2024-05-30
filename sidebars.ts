@@ -118,7 +118,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'doc',
               id: 'features/managing-saved-materials',
-              label: 'Management (Editing, Renaming, Clasifying)',
+              label: 'Management (Editing, Renaming, Classifying)',
             },
             {
               type: 'doc',
