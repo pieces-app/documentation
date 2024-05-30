@@ -87,7 +87,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'features/back-up-and-restore',
-          label: 'Back Up & Restore',
+          label: 'Backup & Restore',
         },
         {
           type: 'doc',

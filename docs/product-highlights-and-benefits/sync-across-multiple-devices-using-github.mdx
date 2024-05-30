@@ -1,19 +1,21 @@
 ---
 title: Sync Across Multiple Devices using GitHub
-description: Follow this guide to get started with manually syncing your code snippets on multiple devices, so you always have them.
+description: Follow this guide to get started with manually syncing your code snippets on multiple devices without authenticating with Pieces.
 ---
 
 # Sync Across Multiple Devices using GitHub
 
 :::info
 
-This is a manual process and is still in early beta. If you have any issues with the process below, please do not hesitate to [contact us](https://getpieces.typeform.com/to/mCjBSIjF#page=docs-syncing-across-devices).
+**You can now easily backup, restore, and sync your snippets across multiple devices using our new [Backup & Restore feature](/features/back-up-and-restore).**
+
+If you are looking to sync your snippets across multiple devices without authenticating with Pieces, you can follow the guide below.
 
 :::
 
-This guide uses VS Code, since it is free and the steps for configuration are not too advanced. This can be replicated using any version control flow that you use.
+In this guide we will use VS Code only because it is free and the steps for configuration are not too advanced. This can be replicated using any version control flow that you use.
 
-This guide can, in theory, also be used on an unlimited number of computers. It is recommended to sync computers for which you are the only user to ensure there are no syncing issues.
+This guide can, in theory, be used on an unlimited number of computers. It is recommended to sync computers for which you are the only user to ensure there are no syncing issues.
 
 **Follow this entire guide in order**. Going out of order or not completing the entire guide may result in a failure to sync your snippets or other unforeseen consequences.
 
@@ -28,9 +30,9 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 **You should start this guide on the computer that has your snippets saved on it.**
 
 ## Setup Steps (15-20 minutes)
-1. [Backup your current Pieces Database](/features/back-up-and-restore#creating-the-backup) **(Computer #1)**
+1. [Backup your current Pieces Database](/features/back-up-and-restore#creating-an-offline-backup) **(Computer #1)**
     - This is very important to ensure you do not lose any snippets or files during the syncing process in case something goes wrong
-2. [Quit/Turn off Pieces OS](/features/back-up-and-restore#step-1) on both computers
+2. [Quit/Turn off Pieces OS](/features/back-up-and-restore#step-1-quit-pieces-os-and-pieces-desktop) on both computers
     - Ensure it is off until the guide specifically tells you to turn it back on
 3. Ensure that you are on the computer where your snippets are the most up to date (Computer #1)
 4. Open the following folder in your IDE or terminal:
@@ -95,7 +97,7 @@ This guide can, in theory, also be used on an unlimited number of computers. It 
 Now let’s test that snippets sync between your computers.
 
 1. Create a new snippet on Computer #2
-2. [Turn Pieces OS off](/features/back-up-and-restore#step-1)
+2. [Turn Pieces OS off](/features/back-up-and-restore#step-1-quit-pieces-os-and-pieces-desktop)
 3. Go to the folder of your repository:
     - macOS: `~/Users/user/Library/com.pieces.os/production/Pieces`
     - Windows: `C:/Users/user/Documents/com.pieces.os/production/Pieces`
@@ -120,18 +122,18 @@ In order to keep your snippets in sync between your computers, follow these step
 - Computer #2: Out of date computer
 
 **On Computer #1:**
-1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1)
+1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1-quit-pieces-os-and-pieces-desktop)
 2. Commit and push changes to your remote repository
 
 **On Computer #2:**
-1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1)
+1. [Turn Pieces OS Off](/features/back-up-and-restore#step-1-quit-pieces-os-and-pieces-desktop)
 2. Discard any pending changes
     - **do not attempt any merges. If computer #2 has any changes at all, you must discard them.**
 3. Pull the latest changes from the remote repository
 
 
 ## Important Notes
-- [Pieces OS should be completely turned off](/features/back-up-and-restore#step-1) during the entire syncing process
+- [Pieces OS should be completely turned off](/features/back-up-and-restore#step-1-quit-pieces-os-and-pieces-desktop) during the entire syncing process
 - Both Pieces OS instances need to be on the same version for syncing to work properly
 - Local LLM models are not synced between computers, so you will have to install them on your other computer
 - If you are syncing Computer #1 to Computer #2 and there are any uncommitted changes on Computer #2, you must discard those changes.
