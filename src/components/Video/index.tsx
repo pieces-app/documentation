@@ -25,6 +25,7 @@ const Video = (props: VideoProps) => {
       <iframe
         width="100%"
         style={{
+          borderRadius: '8px',
           aspectRatio: aspectRatio || '16 / 9',
           maxWidth: maxWidth || '100%',
         }}
