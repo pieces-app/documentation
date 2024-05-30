@@ -177,11 +177,6 @@ const sidebars: SidebarsConfig = {
               id: 'features/search-modes',
               label: 'Search Modes',
             },
-            {
-              type: 'doc',
-              id: 'features/power-menu',
-              label: 'Power Menu',
-            }
           ]
         },
         {
