@@ -83,7 +83,7 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'installation-getting-started/pieces-os',
           label: 'What is Pieces OS?',
-        }
+        },
       ]
     },
     {
@@ -107,7 +107,7 @@ const sidebars: SidebarsConfig = {
                   type: 'doc',
                   id: 'product-highlights-and-benefits/saving-screenshots',
                   label: 'Save Screenshots & Extract Code',
-                }
+                },
               ]
             },
             {
@@ -159,6 +159,11 @@ const sidebars: SidebarsConfig = {
           ]
         },
         {
+          type: 'doc',
+          id: 'features/workflow-activity',
+          label: '📈 Workflow Activity',
+        },
+        {
           type: 'category',
           label: '🔍 Search',
           items: [
@@ -174,6 +179,11 @@ const sidebars: SidebarsConfig = {
             },
           ]
         },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/in-project-snippet-discovery',
+          label: '💡 Snippet Discovery',
+        },
         // {
         //   type: 'category',
         //   label: '👤 Account & Identity',
@@ -186,16 +196,27 @@ const sidebars: SidebarsConfig = {
         //   ]
         // },
         {
-          type: 'category',
+          type: 'doc',
+          id: 'features/user-settings',
           label: '🔧 Settings',
-          items: [
-            {
-              type: 'doc',
-              id: 'features/user-settings',
-              label: 'User Settings',
-            },
-          ]
         }
+      ]
+    },
+    {
+      // Guides
+      type: 'category',
+      label: '📚 Guides',
+      items: [
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
+          label: 'Connecting to a Remote Pieces OS Instance',
+        },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
+          label: 'Sync Data Across Devices with GitHub',
+        },
       ]
     },
     {
@@ -251,8 +272,13 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'link',
-          label: 'YoutTube',
+          label: 'YouTube',
           href: 'https://www.youtube.com/@getpieces',
+        },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/privacy-security-data',
+          label: 'Privacy & Security',
         },
       ]
     }
