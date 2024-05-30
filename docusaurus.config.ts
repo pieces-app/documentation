@@ -98,9 +98,19 @@ const config: Config = {
           position: 'right',
         },
         {
-          to: '/community',
+          type: 'dropdown',
           label: 'Community',
           position: 'right',
+          items: [
+            {
+              to: '/community',
+              label: 'Overview',
+            },
+            {
+              to: '/community/events',
+              label: 'Events',
+            },
+          ],
         },
         {
           to: '/support',

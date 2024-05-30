@@ -90,12 +90,12 @@ summary > h2 {
 
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item) {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link) {
   /*  add underline*/
   text-decoration: underline;
 }
 
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item):hover {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link):hover {
   text-decoration-thickness: 2px;
 }
 
