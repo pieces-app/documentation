@@ -106,7 +106,7 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'doc',
                   id: 'product-highlights-and-benefits/saving-screenshots',
-                  label: 'Save Screenshots & Extract Code',
+                  label: 'Save from Screenshots',
                 },
               ]
             },
@@ -245,6 +245,11 @@ const sidebars: SidebarsConfig = {
         //   ]
         // },
         {
+          type: 'doc',
+          id: 'features/keyboard-shortcuts',
+          label: 'Keyboard Shortcuts',
+        },
+        {
           type: 'category',
           label: 'Community',
           items: [
@@ -264,11 +269,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'early-access-program',
           label: 'Early Access Program',
-        },
-        {
-          type: 'doc',
-          id: 'features/keyboard-shortcuts',
-          label: 'Keyboard Shortcuts',
         },
         {
           type: 'link',
