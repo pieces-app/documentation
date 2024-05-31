@@ -31,7 +31,7 @@
         "Desktop App"
       ],
       "date": "2024-05-03",
-      "body": "### **Fixes**\n- **General Bug Fixes**: Addressed various bugs to enhance system stability and performance. Specific issues resolved include:\n  - **Bug #590**: Resolved an issue affecting system operations.\n  - **Bug #589**: Fixed a problem impacting user interactions.\n  - **Bug #587**: Corrected a fault that was causing unexpected behavior in the application.\n\n- **Post-Install Script Update**: Improved the post-installation script for better system configuration and setup.\n- **Copilot Chat Interface**: Updated the Copilot chat message interface to enhance user interaction and experience.",
+      "body": "### **Fixes**\n- Resolved an issue affecting system operations.\n- Fixed a problem impacting user interactions.\n- Corrected a fault that was causing unexpected behavior in the application.\n- Improved the post-installation script for better system configuration and setup.\n- Updated the Copilot chat message interface to enhance user interaction and experience.",
       "referencePath": "releases/desktop-app/12.2.1"
     },
     {
