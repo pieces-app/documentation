@@ -1,12 +1,13 @@
 {
   "products": [
     "Desktop App",
-    "Pieces OS"
+    "Pieces OS",
+    "VS Code"
   ],
   "releases": [
     {
       "title": "Desktop App - v2.12.3",
-      "description": "Release notes for Pieces for Xcode version 2.12.3",
+      "description": "Explore what's new in version 2.12.3 of our Desktop App!",
       "products": [
         "Desktop App"
       ],
@@ -25,13 +26,23 @@
       "referencePath": "releases/pos/9.0.4"
     },
     {
+      "title": "VS Code Extension - v1.16.0",
+      "description": "Release notes for VS Code Extension version 1.16.0",
+      "products": [
+        "VS Code"
+      ],
+      "date": "2024-05-16",
+      "body": "### **New Features**\n- **Notification on First Code Lens Click:** Users will now receive a notification the first time they click on a code lens, enhancing the interactive experience.\n- **Status Bar Updates:** New items have been added to the status bar to improve visibility and access, including settings and code lens indicators.\n- **Remote Connection Notification:** A notification will now alert users when the plugin cannot establish a remote connection, ensuring better communication of connection issues.\n- **IPython Notebook Recognition:** IPython notebooks are now recognized as Python files, streamlining the workflow for Python developers.\n- **Shareable Link Enhancements:** Users can now more easily create and revoke shareable links, with added notifications for better feedback on sharing status.\n\n### **Enhancements**\n- **UI Improvements:** We've removed borders from form inputs for a cleaner and more modern look.\n- **Analytics Enhancements:** Analytics have been consolidated, improving performance and data management.\n\n### **Fixes**\n- **Method Call Fix:** We've corrected an issue to ensure essential methods are called correctly, preventing potential failures.\n- **Grammar and Spelling Corrections:** Minor text errors have been fixed across various modules to improve clarity.\n- **Image Handling:** Enhanced the handling of image files within the plugin, ensuring smoother operations when saving images.\n- **Error Handling Enhancements:** Error messages and handling have been enhanced, particularly for failed connections and incompatible versions.\n- **Cache Optimization:** Caching behavior has been optimized to reduce unnecessary network calls during startup.\n\n### **Known Issues**\n- **Workspace Filter Limitations:** Some users may experience issues with workspace folder filtering not applying correctly.\n- **Sentry Integration:** There are ongoing issues with sending data to Sentry when the plugin version is incompatible.",
+      "referencePath": "releases/vs-code/v1.16.0"
+    },
+    {
       "title": "Desktop App - v2.12.1",
-      "description": "Release notes for Desktop App version 2.12.1",
+      "description": "Discover the latest updates in version 2.12.1 of our Desktop App!",
       "products": [
         "Desktop App"
       ],
       "date": "2024-05-03",
-      "body": "### **Fixes**\n- Resolved an issue affecting system operations.\n- Fixed a problem impacting user interactions.\n- Corrected a fault that was causing unexpected behavior in the application.\n- Improved the post-installation script for better system configuration and setup.\n- Updated the Copilot chat message interface to enhance user interaction and experience.",
+      "body": "### **Fixes**\n- **System Operations Stability:** Resolved an issue affecting system operations to ensure smoother performance.\n- **User Interaction Enhancements:** Fixed a problem impacting user interactions for a more intuitive experience.\n- **Unexpected Behavior Correction:** Corrected a fault that was causing unexpected behavior, enhancing reliability.\n- **Improved Installation Process:** Enhanced the post-installation script for better system configuration and setup.\n- **Updated Copilot Interface:** Updated the Copilot chat message interface to enhance user interaction and experience.",
       "referencePath": "releases/desktop-app/12.2.1"
     },
     {

@@ -8,6 +8,7 @@ type Release = {
   title: string
   description: string
   products: Product[]
+  date: string
   body: string
   referencePath: string
 }
@@ -65,17 +66,29 @@ const ChangelogFilter = () => {
             key={index}
             className="changelog-item"
           >
+            <div
+              style={{
+                marginBottom: '16px'
+              }}
+            >
               <h2 style={{
                 marginTop: '16px',
-                marginBottom: '8px'
+                marginBottom: '0px',
               }}>
                 <a id={slugify(release.title)} href={`/changelog/${release.referencePath}`}>
                   <strong>{release.title}</strong>
                 </a>
               </h2>
-              <ReactMarkdown>
-                {release.body}
-              </ReactMarkdown>
+
+              {/*Release Date*/}
+              <span>
+                <strong>Release Date:</strong> {(new Date(release.date)).toLocaleDateString()}
+              </span>
+            </div>
+
+            <ReactMarkdown>
+              {release.body}
+            </ReactMarkdown>
           </div>
           ))}
       </div>
