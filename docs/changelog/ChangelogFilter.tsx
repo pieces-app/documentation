@@ -15,7 +15,8 @@ type Release = {
 
 const ChangelogFilter = () => {
   const [productTypeFilter, setProductTypeFilter] = useState<Product>(
-    localStorage.getItem('changelog_product_filter') || 'All'
+    // localStorage.getItem('changelog_product_filter') ||
+    'All'
   )
   const [products, setProducts] = useState<Product[]>(['All', ...changelog.products] as Product[]);
   const [releases, setReleases] = useState<Release[]>(changelog.releases as Release[]);
@@ -27,9 +28,9 @@ const ChangelogFilter = () => {
     setFilteredReleases(changelog.releases as Release[]);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('changelog_product_filter', productTypeFilter);
-  }, [productTypeFilter]);
+  // useEffect(() => {
+  //   localStorage.setItem('changelog_product_filter', productTypeFilter);
+  // }, [productTypeFilter]);
 
   const slugify = (text: string) => {
     return text.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
