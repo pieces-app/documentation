@@ -6,12 +6,10 @@ date: YYYY-MM-DD
 draft: true
 ---
 
-## **Version X.X.X Changelog**
+## **New Features**
 
-### **New Features**
+## **Enhancements**
 
-### **Enhancements**
+## **Fixes**
 
-### **Fixes**
-
-### **Known Issues**
+## **Known Issues**

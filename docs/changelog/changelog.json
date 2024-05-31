@@ -5,6 +5,16 @@
   ],
   "releases": [
     {
+      "title": "Desktop App - v2.12.3",
+      "description": "Release notes for Pieces for Xcode version 2.12.3",
+      "products": [
+        "Desktop App"
+      ],
+      "date": "2024-05-30",
+      "body": "### **New Features**\n- **Live Context Settings**: Commented out Live Context by default for performance reasons.\n\n### **Enhancements**\n- **UI Polishing**: Small adjustments to improve user interface.\n- **Copy Adjustments**: Minor text updates for clarity and consistency.\n\n### **Fixes**\n- **Permissions Flow**: Resolved issues with WPE Permissions Flow.\n- **Infinite Loop**: Fixed an infinite loop issue with the WPE Enable button.\n- **Deprecation**: Deprecated Copilot Settings Dialog to streamline user settings management.\n- **Markdown Styling**: Enhanced markdown styling for better readability and consistency.\n\n### **Known Issues**\n- **Live Context Performance**: Ongoing performance issues with the Live Context feature when enabled by default. Temporarily commented out for further optimization.",
+      "referencePath": "releases/desktop-app/12.2.3"
+    },
+    {
       "title": "Desktop App - v2.12.2",
       "description": "Release notes for Desktop App version 2.12.2",
       "products": [
