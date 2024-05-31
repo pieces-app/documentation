@@ -34,10 +34,6 @@ def parse_markdown_files(directory):
     # Update the glob pattern to include '**' for recursive search and '*.md' for Markdown files
     pattern = os.path.join(directory, '**', '*.md')
     for filepath in glob.glob(pattern, recursive=True):
-        # Skip files named 'template.md'
-        if os.path.basename(filepath).lower() == 'template.md':
-            continue
-
         with open(filepath, 'r', encoding='utf-8') as file:
             file_content = file.read()
             parts = file_content.split('---', 2)
@@ -45,6 +41,11 @@ def parse_markdown_files(directory):
                 continue  # Skip files that do not have the expected format
 
             post = parse_front_matter(parts[1])
+
+            # If post is a draft, skip it
+            if 'draft' in post and post['draft'].lower() == 'true':
+                continue
+
             body = parts[2].strip()
             body = adjust_headers(body)
             product_directory = os.path.basename(os.path.dirname(filepath))
