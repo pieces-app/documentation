@@ -11,7 +11,7 @@
         "Desktop App"
       ],
       "date": "2024-05-16",
-      "body": "## **Version 2.12.2 Changelog**\n\n### **New Features**\n- **Fullscreen Copilot**: Enhanced user experience with the introduction of a fullscreen mode for the Copilot feature.\n- **Pieces OS Update Support**: Added functionality to check for and support updates to Pieces OS.\n- **Time-Based Context Options**: Introduced options that adjust the context based on the time of day.\n- **Pause WPE**: Added functionality to pause the WPE process with updated icons and user interface.\n- **Updated Focus Mode**: Enhanced focus mode with new features and improved usability.\n\n### **Enhancements**\n- **Windows Optimizations**: Improved performance and compatibility on Windows operating systems.\n- **Mobile and Fullscreen Polish**: Various aesthetic and functional enhancements to improve user experience on mobile devices and in fullscreen mode.\n- **Settings Order**: Reorganized settings menu for better navigation and user experience.\n- **Polish Strokes for Live Context & More**: Improved visual elements and interactions in live context views.\n- **Tracking & Power Menu Support**: Enhanced tracking features and added power menu options for improved control.\n\n### **Fixes**\n- **Fixes Account Photo Layout Shift**: Addressed an issue causing layout shifts when updating account photos.\n- **Clear WPE Data Menu**: Fixed issues in the WPE data clearing options.\n- **Copilot Language Classification Debugging**: Resolved bugs affecting language classification in Copilot.\n- **Patches & Enhancements**: Various patches and minor enhancements to improve stability and performance.\n- **Linux Patches**: Specific fixes to enhance compatibility and performance on Linux platforms.",
+      "body": "### **New Features**\n- **Focus Mode**: Enhanced user experience with the introduction of a fullscreen mode for the Copilot feature.\n- **Pieces OS Update Support**: Added functionality to check for and support updates to Pieces OS.\n- **Time-Based Context Options**: Introduced options that adjust the context based on the time of day.\n- **Pause WPE**: Added functionality to pause the WPE process with updated icons and user interface.\n- **Updated Focus Mode**: Enhanced focus mode with new features and improved usability.\n\n### **Enhancements**\n- **Windows Optimizations**: Improved performance and compatibility on Windows operating systems.\n- **Mobile and Fullscreen Polish**: Various aesthetic and functional enhancements to improve user experience on mobile devices and in fullscreen mode.\n- **Settings Order**: Reorganized settings menu for better navigation and user experience.\n- **Polish Strokes for Live Context & More**: Improved visual elements and interactions in live context views.\n- **Tracking & Power Menu Support**: Enhanced tracking features and added power menu options for improved control.\n\n### **Fixes**\n- **Fixes Account Photo Layout Shift**: Addressed an issue causing layout shifts when updating account photos.\n- **Clear WPE Data Menu**: Fixed issues in the WPE data clearing options.\n- **Copilot Language Classification Debugging**: Resolved bugs affecting language classification in Copilot.\n- **Patches & Enhancements**: Various patches and minor enhancements to improve stability and performance.\n- **Linux Patches**: Specific fixes to enhance compatibility and performance on Linux platforms.",
       "referencePath": "releases/desktop-app/12.2.2"
     },
     {
@@ -21,7 +21,7 @@
         "Pieces OS"
       ],
       "date": "2024-05-16",
-      "body": "## **Version 9.0.4 Changelog**\n\n### **Enhancements**\n- Improved handling of conversation ranges\n\n### **Fixes**\n- Enhanced stability by ensuring proper order of database re-open\n- Resolved issues with data clearing and ML model registration\n- Addressed minor bugs and added necessary checks",
+      "body": "### **Enhancements**\n- Improved handling of conversation ranges\n\n### **Fixes**\n- Enhanced stability by ensuring proper order of database re-open\n- Resolved issues with data clearing and ML model registration\n- Addressed minor bugs and added necessary checks",
       "referencePath": "releases/pos/9.0.4"
     },
     {
@@ -31,7 +31,7 @@
         "Desktop App"
       ],
       "date": "2024-05-03",
-      "body": "## **Version 2.12.1 Changelog**\n\n### **Fixes**\n- **General Bug Fixes**: Addressed various bugs to enhance system stability and performance. Specific issues resolved include:\n  - **Bug #590**: Resolved an issue affecting system operations.\n  - **Bug #589**: Fixed a problem impacting user interactions.\n  - **Bug #587**: Corrected a fault that was causing unexpected behavior in the application.\n\n### **Updates**\n- **Post-Install Script Update**: Improved the post-installation script for better system configuration and setup.\n- **Copilot Chat Interface**: Updated the Copilot chat message interface to enhance user interaction and experience.",
+      "body": "### **Fixes**\n- **General Bug Fixes**: Addressed various bugs to enhance system stability and performance. Specific issues resolved include:\n  - **Bug #590**: Resolved an issue affecting system operations.\n  - **Bug #589**: Fixed a problem impacting user interactions.\n  - **Bug #587**: Corrected a fault that was causing unexpected behavior in the application.\n\n- **Post-Install Script Update**: Improved the post-installation script for better system configuration and setup.\n- **Copilot Chat Interface**: Updated the Copilot chat message interface to enhance user interaction and experience.",
       "referencePath": "releases/desktop-app/12.2.1"
     },
     {
@@ -41,7 +41,7 @@
         "Desktop App"
       ],
       "date": "2024-05-03",
-      "body": "## **Version 2.12.0 Changelog**\n\n### **New Features**\n- Introduced Early Access Program Self Serve\n- Added Actions Engine & Actions Modal\n\n### **Enhancements**\n- Upgraded reconnection with Core Connector\n- Improved updating and error handling\n- Enabled MSIX periodic checks on boot\n\n### **Fixes**\n- Adjusted function names for AnchorsApi and PersonsApi\n- Fixed backup/restore ports for Linux\n- Addressed various bugs and improved tracking",
+      "body": "### **New Features**\n- Introduced Early Access Program Self Serve\n- Added Actions Engine & Actions Modal\n\n### **Enhancements**\n- Upgraded reconnection with Core Connector\n- Improved updating and error handling\n- Enabled MSIX periodic checks on boot\n\n### **Fixes**\n- Adjusted function names for AnchorsApi and PersonsApi\n- Fixed backup/restore ports for Linux\n- Addressed various bugs and improved tracking",
       "referencePath": "releases/desktop-app/12.2.0"
     }
   ]

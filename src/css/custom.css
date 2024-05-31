@@ -261,7 +261,7 @@ html[data-theme='dark'] .header-github-link:before {
 
 /* Glossary Component Styles */
 .glossary-container {
-  font-family: Arial, sans-serif;
+  /*font-family: Arial, sans-serif;*/
 }
 
 .glossary-header {
@@ -365,4 +365,10 @@ html[data-theme='dark'] .header-github-link:before {
     width: 300px; /* Adjusted width for smaller screens to match carousel card */
     height: 425px; /* Adjusted height for smaller screens to match carousel card */
   }
+}
+
+.changelog-item {
+  border-radius: 4px;
+  padding: 2px 16px;
+  background-color: var(--ifm-color-secondary-light);
 }

@@ -1,6 +1,7 @@
 import os
 import glob
 import json
+import re
 from datetime import datetime
 
 def parse_front_matter(file_content):
@@ -12,6 +13,18 @@ def parse_front_matter(file_content):
         key, value = line.split(':', 1)
         front_matter[key.strip()] = value.strip()
     return front_matter
+
+
+def adjust_headers(body):
+    # Increment Markdown header levels for h2 and lower
+    def replace_header(match):
+        header_level = len(match.group(1)) + 1  # Increment the header level
+        if header_level > 1:  # Only adjust h2 and lower
+            return '#' * header_level + ' '  # Return the adjusted header
+        return match.group(0)  # Return the original header for h1
+
+    # Regex to find Markdown headers
+    return re.sub(r'^(#+)\s', replace_header, body, flags=re.MULTILINE)
 
 
 def parse_markdown_files(directory):
@@ -33,6 +46,7 @@ def parse_markdown_files(directory):
 
             post = parse_front_matter(parts[1])
             body = parts[2].strip()
+            body = adjust_headers(body)
             product_directory = os.path.basename(os.path.dirname(filepath))
 
             if 'products' in post and 'title' in post and 'description' in post:

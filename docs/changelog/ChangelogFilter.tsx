@@ -41,7 +41,7 @@ const ChangelogFilter = () => {
   }, [productTypeFilter])
 
   return (
-    <div className="glossary-container">
+    <div>
       <div className="category-filters">
         {products.map((product, index) => (
           <span
@@ -53,23 +53,31 @@ const ChangelogFilter = () => {
           </span>
         ))}
       </div>
-      <div>
-      {filteredReleases.map((release, index) => (
-        <div key={index}>
-            <h2 style={{
-              marginTop: '16px',
-              marginBottom: '8px'
-            }}>
-              <a id={slugify(release.title)} href={`/changelog/${release.referencePath}`}>
-                <strong>{release.title}</strong>
-              </a>
-              <p>{release.description}</p>
-            </h2>
-            <ReactMarkdown>
-              {release.body}
-            </ReactMarkdown>
-        </div>
-        ))}
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '16px',
+        }}
+      >
+        {filteredReleases.map((release, index) => (
+          <div
+            key={index}
+            className="changelog-item"
+          >
+              <h2 style={{
+                marginTop: '16px',
+                marginBottom: '8px'
+              }}>
+                <a id={slugify(release.title)} href={`/changelog/${release.referencePath}`}>
+                  <strong>{release.title}</strong>
+                </a>
+              </h2>
+              <ReactMarkdown>
+                {release.body}
+              </ReactMarkdown>
+          </div>
+          ))}
       </div>
     </div>
   );
