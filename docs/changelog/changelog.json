@@ -15,16 +15,6 @@
       "referencePath": "releases/desktop-app/12.2.3"
     },
     {
-      "title": "Desktop App - v2.12.2",
-      "description": "Release notes for Desktop App version 2.12.2",
-      "products": [
-        "Desktop App"
-      ],
-      "date": "2024-05-16",
-      "body": "### **New Features**\n- **Focus Mode**: Enhanced user experience with the introduction of a fullscreen mode for the Copilot feature.\n- **Pieces OS Update Support**: Added functionality to check for and support updates to Pieces OS.\n- **Time-Based Context Options**: Introduced options that adjust the context based on the time of day.\n- **Pause WPE**: Added functionality to pause the WPE process with updated icons and user interface.\n\n### **Enhancements**\n- Improved performance and compatibility on Windows operating systems.\n- Various aesthetic and functional enhancements to improve user experience on mobile devices and in fullscreen mode.\n- Reorganized settings menu for better navigation and user experience.\n- Improved visual elements and interactions in live context views.\n- Enhanced tracking features and added power menu options for improved control.\n\n### **Fixes**\n- Addressed an issue causing layout shifts when updating account photos.\n- Fixed issues in the WPE data clearing options.\n- Resolved bugs affecting language classification in Copilot.\n- Various patches and minor enhancements to improve stability and performance.\n- Specific fixes to enhance compatibility and performance on Linux platforms.",
-      "referencePath": "releases/desktop-app/12.2.2"
-    },
-    {
       "title": "Pieces OS - v9.0.4",
       "description": "Release notes for Pieces OS version 9.0.4",
       "products": [
@@ -46,12 +36,12 @@
     },
     {
       "title": "Desktop App - v2.12.0",
-      "description": "Release notes for Desktop App version 2.12.0",
+      "description": "Explore what's new in version 2.12.0 of our Desktop App!",
       "products": [
         "Desktop App"
       ],
-      "date": "2024-05-03",
-      "body": "### **New Features**\n- Introduced Early Access Program Self Serve\n- Added Actions Engine & Actions Modal\n\n### **Enhancements**\n- Upgraded reconnection with Core Connector\n- Improved updating and error handling\n- Enabled MSIX periodic checks on boot\n\n### **Fixes**\n- Adjusted function names for AnchorsApi and PersonsApi\n- Fixed backup/restore ports for Linux\n- Addressed various bugs and improved tracking",
+      "date": "2024-04-20",
+      "body": "### **New Features**\n- **Enhanced Command Center:** Dive into a streamlined experience with our revamped command input modal.\n- **Revamped Power Menu:** Enjoy a more intuitive and visually appealing power menu.\n- **Action Scoring System:** Track and rank your actions with our new scoring system, helping you prioritize as you work.\n- **Expanded Actions & Updated Icons:** Discover additional actions and fresh icons, enhancing your workflow.\n- **Improved Reconnection Logic:** Experience fewer disruptions with our enhanced reconnection capabilities.\n- **Major Interface Upgrades:** Enjoy a smoother interaction with our updated dialog windows, menus, and tracking features.\n- **Customizable Toolbar:** Tailor your toolbar with custom and suggested tools to fit your needs.\n\n### **Enhancements**\n- **Optimized Menus:** We've cleaned up our menus to give you a smoother navigation experience.\n- **Enhanced Visibility:** Improved checks ensure that all UI elements are more visible and accessible.\n- **Connector Improvements:** Enjoy better integration and performance with updated connector properties.\n- **Streamlined Connection Checks:** Connecting to services is now faster and more reliable.\n- **Focus Management:** We've refined how focus is managed within the app to enhance usability.\n\n### **Fixes**\n- **Bug Fixes:** We've squashed various bugs to improve your experience.\n- **Seamless Backup & Restore:** You can now backup and restore your settings without restarting the app.\n- **Cleaner Codebase:** We've removed unnecessary code for a lighter, faster app.\n- **Stability Enhancements:** Fixed an issue with unmodifiable lists to ensure smoother operation.\n\n### **Known Issues**\n- **Intermittent Connectivity:** Some users might encounter occasional connectivity drops.\n- **Minor UI Glitches:** We're currently smoothing out some minor glitches in our newest features.",
       "referencePath": "releases/desktop-app/12.2.0"
     }
   ]
