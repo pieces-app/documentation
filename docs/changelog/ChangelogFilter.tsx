@@ -14,7 +14,9 @@ type Release = {
 }
 
 const ChangelogFilter = () => {
-  const [productTypeFilter, setProductTypeFilter] = useState<Product>(localStorage.getItem('changelog_product_filter') || 'All')
+  const [productTypeFilter, setProductTypeFilter] = useState<Product>(
+    localStorage.getItem('changelog_product_filter') || 'All'
+  )
   const [products, setProducts] = useState<Product[]>(['All', ...changelog.products] as Product[]);
   const [releases, setReleases] = useState<Release[]>(changelog.releases as Release[]);
   const [filteredReleases, setFilteredReleases] = useState<Release[]>(changelog.releases as Release[]);
