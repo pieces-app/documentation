@@ -3,6 +3,7 @@
     "AIML",
     "Assets",
     "CS Fundamentals",
+    "Frontend",
     "Pieces Specific",
     "Search"
   ],
@@ -110,6 +111,12 @@
       "referencePath": "terms/context-awareness"
     },
     {
+      "term": "Context Window",
+      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "category": "AIML",
+      "referencePath": "terms/context-window"
+    },
+    {
       "term": "Copilot",
       "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code.",
       "category": "AIML",
@@ -194,6 +201,12 @@
       "referencePath": "terms/hint"
     },
     {
+      "term": "Hyper Parameter Tuning",
+      "definition": "Hyperparameter tuning is the process of optimizing the hyperparameters of a machine learning model to improve its performance.",
+      "category": "AIML",
+      "referencePath": "terms/hyper-parameter-tuning"
+    },
+    {
       "term": "Indices",
       "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these).",
       "category": "Search",
@@ -210,6 +223,18 @@
       "definition": "An Iterable refers to an array-like data structure that represents a sequence of elements.",
       "category": "CS Fundamentals",
       "referencePath": "terms/iterable"
+    },
+    {
+      "term": "LLM Fine-Tuning",
+      "definition": "Fine-tuning a pre-trained language model (LLM) on a specific dataset or task to improve its performance.",
+      "category": "AIML",
+      "referencePath": "terms/llm-fine-tuning"
+    },
+    {
+      "term": "LangChain",
+      "definition": "LangChain is an innovative, open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
+      "category": "AIML",
+      "referencePath": "terms/langchain"
     },
     {
       "term": "Language Server Protocol",
@@ -230,10 +255,22 @@
       "referencePath": "terms/linkify"
     },
     {
+      "term": "Masked Language Modeling",
+      "definition": "Masked Language Modeling is a language modeling task where some tokens in the input are masked and the model is trained to predict the masked tokens.",
+      "category": "AIML",
+      "referencePath": "terms/masked-language-modeling"
+    },
+    {
       "term": "Neural Code Search (NCS)",
       "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries.",
       "category": "Search",
       "referencePath": "terms/neural-code-search"
+    },
+    {
+      "term": "Neural Machine Translation",
+      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "category": "AIML",
+      "referencePath": "terms/neural-machine-translation"
     },
     {
       "term": "OS Instance",
@@ -264,6 +301,12 @@
       "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model.",
       "category": "AIML",
       "referencePath": "terms/quantized-generative-pre-trained-transformer"
+    },
+    {
+      "term": "React Server Components",
+      "definition": "React Server Components are a new addition to the React framework, designed to enable developers to build more efficient, performant applications. Learn how they work, how to create them, and their benefits and limitations.",
+      "category": "Frontend",
+      "referencePath": "terms/react-server-components"
     },
     {
       "term": "Reaction",
@@ -378,6 +421,12 @@
       "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices.",
       "category": "CS Fundamentals",
       "referencePath": "terms/telemetry"
+    },
+    {
+      "term": "Vector Search",
+      "definition": "Vector Search is a search technique that uses vector representations of documents and queries to find relevant documents.",
+      "category": "AIML",
+      "referencePath": "terms/vector-search"
     },
     {
       "term": "Well-Known Health",

@@ -18,7 +18,7 @@ def parse_markdown_files(directory):
     categories = set()
     terms = []
 
-    for filepath in glob.glob(os.path.join(directory, '*.md')):
+    for filepath in glob.glob(os.path.join(directory, '*.md*')):
         with open(filepath, 'r', encoding='utf-8') as file:
             file_content = file.read()
             parts = file_content.split('---', 2)
@@ -32,7 +32,7 @@ def parse_markdown_files(directory):
                     'term': post['title'],
                     'definition': post['description'],
                     'category': post['category'],
-                    'referencePath': f"terms/{os.path.basename(filepath).replace('.md', '')}"
+                    'referencePath': f"terms/{os.path.basename(filepath).replace('.mdx', '').replace('.md', '')}",
                 })
 
     return {
