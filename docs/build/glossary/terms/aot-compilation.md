@@ -13,14 +13,14 @@ AOT compilation translates program code into a lower-level code that the system'
 ## Benefits of AOT Compilation
 
 * **Reduced startup time** - Using AOT compile significantly reduces the time it takes for applications to start up by eliminating the need for runtime compilation, which is particularly beneficial for mobile and embedded devices where quick startup is crucial.
-* **Optimized performance** - Compiling to native code ahead of time means AOT compilers can apply more aggressive optimization techniques that might be too costly to perform at runtime with JIT compilers​.
+* **Optimized performance** - Compiling to native code ahead of time means AOT compilers can apply more aggressive optimization techniques that might be too costly to perform at runtime with JIT compilers.
 * **Consistent execution** - Without the need to compile code on the fly, AOT-compiled applications can offer more predictable performance, which is advantageous in environments where stability and reliability are paramount.
 
 ## Drawbacks of AOT Compilation
 
-* **Limited flexibility** - AOT compilers make optimization decisions at compile time, lacking the ability to adapt to runtime conditions. This can sometimes result in less efficient execution when comparing AOT vs JIT compilers that optimize based on actual usage patterns​.
-* **Compatibility issues** - AOT compilation can lead to compatibility issues across different operating systems or environments if the application is not meticulously targeted and tested. This is because the compiled code is tightly coupled with the system's architecture​.
-* **Complexity in development** - Using AOT compilation can complicate the development process, as it requires more detailed management of dependencies and environment configurations. Additionally, some dynamic features like reflection and late binding might be restricted or require additional handling​
+* **Limited flexibility** - AOT compilers make optimization decisions at compile time, lacking the ability to adapt to runtime conditions. This can sometimes result in less efficient execution when comparing AOT vs JIT compilers that optimize based on actual usage patterns.
+* **Compatibility issues** - AOT compilation can lead to compatibility issues across different operating systems or environments if the application is not meticulously targeted and tested. This is because the compiled code is tightly coupled with the system's architecture.
+* **Complexity in development** - Using AOT compilation can complicate the development process, as it requires more detailed management of dependencies and environment configurations. Additionally, some dynamic features like reflection and late binding might be restricted or require additional handling
 
 ## Key Takeaways
 

@@ -1,0 +1,173 @@
+---
+title: React Server Components
+description: React Server Components are a new addition to the React framework, designed to enable developers to build more efficient, performant applications. Learn how they work, how to create them, and their benefits and limitations.
+category: Frontend
+---
+
+import CTAButton from "/src/components/CTAButton";
+import {MiniSpacer} from "/src/components/Spacers";
+
+In late 2020, the React team unveiled Zero-Bundle-Size React Server Components. React Server Side Components are a new addition to the React framework, designed to enable developers to build more efficient, performant applications.
+
+With React Server Components (RSC), you can move your data fetching logic to the server (so that your component fetches the data without a network call) and get it ready on the server itself. The data that comes back to the client is a well-constructed component and all of its data. Thus, this innovation seeks to address the limitations of traditional client-side rendering.
+
+Server components run ahead of time and are excluded from your JavaScript bundle. They can run during the build, letting you read from the file system or fetch static content. They can also run on the server, letting you access your data layer without building an API. You can pass data by props from Server Components to the interactive Client Components in the browser.
+
+RSCs have been shipped in the Next.js App Router.
+
+## What are React Server Components?
+In this new paradigm, the “standard” React components are rebranded as Client Components.
+
+This new paradigm introduces a new type of component, Server Components. These new components render exclusively on the server. Their code isn't included in the JS bundle, so they never hydrate or re-render.
+
+The frequent high volume of network requests performed while users wait for a dialog to load is one of the major issues with React applications. Server side components are rendered by React's new Server Components, which allow rendering into a middle abstraction format without adding to the JavaScript bundle. This enables scaling up to more components as well as integrating the server tree with the client-side tree without losing the state.
+
+## Creating a React Server Component
+Creating a React Server Component is similar to creating a regular React component. The main difference is that server components are denoted by a .server.js extension and they can't [use state](https://code.pieces.app/blog/you-dont-need-a-state-management-library-for-react-use-usestate-context) or effects. When creating a server component, you’ll need to import React and export your component using the standard React component syntax.
+
+Here's an example of a simple server component:
+
+```js
+import React from 'react';
+
+function MyServerComponent() {
+  // Your server component logic here
+}
+
+export default MyServerComponent;
+```
+<CTAButton type={'secondary'} label={'Save this Code'} href={'https://shivaylamba.pieces.cloud/?p=37164fa7ec'} icon={'/assets/pieces_logos/white_circle.png'} />
+
+1. Fetching Data:
+    Server components can directly access server-side data sources such as file systems or databases. This simplifies data fetching and allows you to render components with dynamic data. Here’s an example of fetching data from a database in a server component:
+    ```js
+    import React from 'react';
+    import { getProducts } from './database';
+
+    function ProductList() {
+      const products = getProducts();
+
+      return (
+        <ul>
+          {products.map(product => (
+            <li key={product.id}>{product.name}</li>
+          ))}
+        </ul>
+      )
+    }
+
+    export default ProductList;
+    ```
+    <CTAButton type={'secondary'} label={'Save this Code'} href={'https://shivaylamba.pieces.cloud/?p=91764b972e'} icon={'/assets/pieces_logos/white_circle.png'} />
+
+2. Integrating with Client Components
+    RSCs can be seamlessly integrated with client components as well. To use a server component within a client component, you import it as you would with any other component:
+    ```js
+    import React from 'react';
+    import ProductList from './ProductList.server';
+
+    function App() {
+      return (
+        <div>
+          <h1>Our Amazing Products</h1>
+          <ProductList />
+        </div>
+      );
+    }
+
+    export default App;
+    ```
+    <CTAButton type={'secondary'} label={'Save this Code'} href={'https://shivaylamba.pieces.cloud/?p=b1ad479a73'} icon={'/assets/pieces_logos/white_circle.png'} />
+
+## Key Points
+Let’s dive deeper into understanding how RSCs work and how they differ from other rendering techniques like client-side and  React component server side rendering.
+
+### How do React Server Components Work?
+Since the server components are rendered on the server, the entire process of rendering the application starts at the server. Regardless of whether it renders other components, the "root" component is always a server component. Initially, the server will receive a request to render. Based on the data in the request, the server will decide which server component and what properties to utilize.
+
+The next steps consist of serializing the root component and transforming it into a tree of placeholder client component placeholders where the required [HTML](https://code.pieces.app/blog/introduction-to-html) elements are based. The browser then handles the process of deserializing the created tree, replacing the placeholders for the client with the actual client components, and rendering the finished layout. The tree can then be serialized and sent to the browser.
+
+One extremely important aspect to remember is that the props must be serializable, which means functions or event handlers cannot be passed as props from server components.
+
+Finally, the server sends the output to the browser, and the browser reconstructs the React tree that is to be rendered.
+
+The React Server Components can use the Suspense component, which displays until its children are fully loaded.
+
+RSCs are fully integrated with client-side code, meaning that Client Components and Server Components can render in the same React tree. By moving the majority of the application code to the server, RSCs help to prevent client-side data fetching waterfalls, quickly resolving data dependencies server-side. With RSCs, both data fetching and rendering occur on the server, so Suspense manages the waiting period server-side, too. This shortens the total roundtrip to speed up rendering the fallback and completed page.
+
+### Can React Server Components be Converted to Client-side Components?
+It's important to note that RSCs are not intended to replace client components. A good application utilizes both RSCs for dynamic data fetching and client components for rich interactivity.
+
+A server component can render both client and server components. With Next.js App Router, all components are server components by default. If you want to create a client component, you have to explicitly make one using the directive use client at the top of the component (even before any import statements).
+```js
+'use client'
+
+import { useState } from 'react'
+
+function Counter() {
+  const [count, setCount] = useState(0)
+  const increment = () => setCount(count + 1)
+
+  return (
+    <button onClick={increment}>
+      The count is {count}
+    </button>
+  )
+}
+```
+<CTAButton type={'secondary'} label={'Save this Code'} href={'https://shivaylamba.pieces.cloud/?p=2ba94aae63'} icon={'/assets/pieces_logos/white_circle.png'} />
+<MiniSpacer />
+
+That standalone string at the top, use client, is how we signal to React that the component(s) in this file are client components and that they should be included in our JS bundles so that they can re-render on the client.
+
+### React Server Components vs Server-Side Rendering
+Both RSC and server-side rendering (SSR) have the word "server" in their names, but the similarity ends there.
+
+In typical [server-side rendering](https://code.pieces.app/blog/comparing-ssr-and-ssg-in-nextjs-applications), we send the raw HTML from the server to the client, then all the client-side JavaScript is downloaded. React starts the hydration process to transform the HTML into an interactive React component. In SSR, the actual component doesn't stay on the server.
+
+There are a few other common issues with using SSR and the React Suspense. With SSR alone, the user gets HTML more quickly but must wait on an "all-or-nothing" waterfall before interacting with JavaScript. That is, all of the data must be fetched from the server before any of it can be shown. All JavaScript must be downloaded from the server before the client can be hydrated.
+
+To solve these issues, React introduced Suspense, which allows for server-side HTML streaming and selective hydration on the client. This vastly improves the situation, but there are still some issues. The entire page's data must still be fetched from the server before any components can be shown. Moreover, all the page’s JavaScript is eventually downloaded, even if it's streamed to the browser asynchronously. As app complexity increases, so does the amount of code the user downloads. The majority of JavaScript’s compute weight still ends up on the client, which could be running on various devices.
+
+RSCs individually fetch data and render entirely on the server. The resulting HTML is streamed into the client-side React component tree, interleaving with other server and client components as necessary. This process eliminates the need for client-side re-rendering, thereby improving performance.
+
+With React Server Components, the components stay on the server and have access to the server infrastructure without making any network requests from the client.
+
+But, as SSR is quite useful for faster loading of the initial page of your application, you can use SSR and RSCs together in your application without any problems.
+
+## The Benefits of React Server Components
+React Server Components is the first “official” way to run server-exclusive code in React.
+
+The big difference is that we've never before had a way to run server-exclusive code inside our components.
+
+The most obvious benefit is performance. Server Components don't get included in our JS bundles, which reduces the amount of JavaScript that needs to be downloaded and the number of components that need to be hydrated.
+
+There are a lot of benefits to doing the rendering work on the server, including:
+- **Faster data retrieval:** By moving data fetching to the server, you can reduce the time it takes to retrieve data needed for rendering, which can improve performance.
+- **Better security:** By keeping sensitive data and logic on the server, such as tokens and API keys, you can reduce the risk of exposing them to the client. React Server Components can utilize server-only data sources, such as file systems, databases, and internal services. This data can then be sent to the client at the initial render, thus eliminating API calls and improving performance.
+- **Improved caching:** When you render on the server, the result can be cached and reused on subsequent requests and across users, which can improve performance and reduce costs by reducing the amount of rendering and data fetching needed on each request.
+- **Smaller client bundles:** By rendering on the server, you can keep large dependencies that previously impacted the client JavaScript bundle size on the server, which can be beneficial for users with slower internet or less powerful devices, as the client doesn't have to download, parse, and execute any JavaScript for Server Components.
+
+## React Server Component Examples
+Let’s consider an e-commerce site that displays a list of products. Each product has a long and complex description involving markdown, emojis, and other rich text features. Rendering this on the client could be slow and could increase the bundle size due to the libraries needed. With React Server Components, the product descriptions can be rendered on the server using a text library. The resulting HTML can then be sent to the client, resulting in a faster and smoother experience.
+
+Another example is that of a social media site. Let’s consider a social media platform that displays a feed of posts. Each post may include likes, comments, and other features. With React Server Components, the feed can be rendered on the server, including fetching the posts from a database. Interactive parts like the “like” button can be client components, allowing them to be interactive while keeping the initial render fast and the bundle size small.
+
+Third, let’s consider a course listing page. An “add course” component needs a user interaction. This can’t be a server component, so this will be a client component. But, a course listing component doesn't need any event handlers, so we can keep it a server component.
+
+## React Server Components Limitations:
+Like any new technology, React Server Components does come with some limitations. Here are a few common issues you might encounter and some solutions:
+1. RSCs stay on the server and get rendered on the server. They don't have anything that is related to the client-side. This means that you can't add any user interactivity to the server components. All code written for these components must be serializable, which means you can’t use lifecycle hooks, such as useEffect() or state. Moreover, you can't use any event handlers.
+    However, you can still interact with the server from the client through Server Actions, or If you need to use state or effects, consider moving that logic to a client component.
+2. If your application requires continuous updates, then RSC falls behind because it doesn’t support them. In these cases, a client-side fetching or polling approach would be necessary.
+3. You can’t use Browser Web APIs like localstorage, bluetooth, web USB, and so on in server components. For everything that's related to client interactions, you must continue to use client components.
+4. Server components can access server-side resources directly, but you need to make sure those resources are available when the component is rendered. If a resource isn't available, the component won't render correctly.
+5. Errors in server components can cause the entire render to fail. Make sure to handle errors properly to prevent this.
+
+## Conclusion
+React Server Components offer a native way to interact with the server right within the component, lightening both the code and cognitive load of interacting with dynamic data. Client Components remain fully functional and fully usable, just as before. Your new job is to choose when to use each one.
+The React Server Components provide a lot of benefits, such as directly accessing the server, sending pre-rendered components to the client, thus increasing the performance of the application, reducing bundle size to be imported by the browser, and automatic code splitting, among others.
+
+### Future of React Server Components
+As of the time of writing, the only production-ready implementation of React Server Components is Next.js 13’s new app directory. They are still considered in Alpha in React 18. You can read the Next.js docs for more info on server components in NextJS. If you don’t use Next.js, you could try out your own RSC framework to test their capabilities.
+React Server Components show promise for improving performance and developer experience for server-side rendering use cases. However the ecosystem is still new and faces challenges like documentation and tooling support. As React continues to mature RSCs, they have the potential to become a popular way to build server-rendered React applications.

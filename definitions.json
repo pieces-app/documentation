@@ -110,6 +110,12 @@
       "referencePath": "terms/Pieces Specific/context-awareness"
     },
     {
+      "term": "Context Window",
+      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/context-window"
+    },
+    {
       "term": "Copilot",
       "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code.",
       "category": "AIML",
@@ -194,6 +200,12 @@
       "referencePath": "terms/Pieces Specific/hint"
     },
     {
+      "term": "Hyper Parameter Tuning",
+      "definition": "Hyperparameter tuning is the process of optimizing the hyperparameters of a machine learning model to improve its performance.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/hyper-parameter-tuning"
+    },
+    {
       "term": "Indices",
       "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these).",
       "category": "Search",
@@ -234,6 +246,12 @@
       "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries.",
       "category": "Search",
       "referencePath": "terms/Search/neural-code-search"
+    },
+    {
+      "term": "Neural Machine Translation",
+      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/neural-machine-translation"
     },
     {
       "term": "OS Instance",
