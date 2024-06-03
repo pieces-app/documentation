@@ -202,7 +202,7 @@
     },
     {
       "term": "Hyper Parameter Tuning",
-      "definition": "Hyperparameter tuning is the process of optimizing the hyperparameters of a machine learning model to improve its performance.",
+      "definition": "Hyperparameter tuning is a crucial step in the process of building and optimizing machine learning models. Hyperparameters are the configuration variables that govern the training process and structure of a machine-learning model. These could include the learning rate in a neural network, depth in a decision tree, or number of clusters in K-means clustering.",
       "category": "AIML",
       "referencePath": "terms/hyper-parameter-tuning"
     },
@@ -226,13 +226,13 @@
     },
     {
       "term": "LLM Fine-Tuning",
-      "definition": "Fine-tuning a pre-trained language model (LLM) on a specific dataset or task to improve its performance.",
+      "definition": "The process of adjusting a pre-trained AI model's parameters so it can perform better on specific tasks or datasets. Fine-tuning large language models is particularly beneficial when the model needs to adapt to specific or niche tasks where general models might not perform well without adjustments.",
       "category": "AIML",
       "referencePath": "terms/llm-fine-tuning"
     },
     {
       "term": "LangChain",
-      "definition": "LangChain is an innovative, open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
+      "definition": "An open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
       "category": "AIML",
       "referencePath": "terms/langchain"
     },
@@ -256,7 +256,7 @@
     },
     {
       "term": "Masked Language Modeling",
-      "definition": "Masked Language Modeling is a language modeling task where some tokens in the input are masked and the model is trained to predict the masked tokens.",
+      "definition": "Masked Language Modeling (MLM) is a pre-training technique in natural language processing (NLP) that enables AI models to predict masked tokens within an input sequence, enhancing their understanding of language context and structure.",
       "category": "AIML",
       "referencePath": "terms/masked-language-modeling"
     },
@@ -268,7 +268,7 @@
     },
     {
       "term": "Neural Machine Translation",
-      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "definition": "Neural Machine Translation (NMT) is an innovative technology that allows computers to translate languages with human-level fluency. Unlike previous approaches, NMT uses artificial intelligence to analyze and create translations that match the natural flow of language. It analyzes context, idioms, and subtleties to provide more accurate and contextually appropriate translations. This transformational technology uses neural networks to comprehend complicated linguistic patterns, allowing seamless communication across several languages. NMT's capacity to adapt and learn from varied linguistic data sets is a huge step forward in breaking down language barriers, boosting global connectedness, and improving cross-cultural communication.",
       "category": "AIML",
       "referencePath": "terms/neural-machine-translation"
     },
@@ -289,6 +289,12 @@
       "definition": "Proof Key for Code Exchange (PKCE) is an extension of the OAuth 2.0 authorization code flow that enhances security by eliminating the need to securely store and manage client secrets.",
       "category": "CS Fundamentals",
       "referencePath": "terms/pkce-flow"
+    },
+    {
+      "term": "Patterns Engine",
+      "definition": "A software tool that can be used to identify and extract patterns from data.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/patterns-engine"
     },
     {
       "term": "Plural vs Singular API",
@@ -424,7 +430,7 @@
     },
     {
       "term": "Vector Search",
-      "definition": "Vector Search is a search technique that uses vector representations of documents and queries to find relevant documents.",
+      "definition": "Vector search is a sophisticated data retrieval method that utilizes mathematical vectors to analyze and process complex, unstructured data. Learn more about vector search, its benefits, drawbacks, and key takeaways.",
       "category": "AIML",
       "referencePath": "terms/vector-search"
     },
