@@ -78,7 +78,7 @@ For Dev Container users, if the connection does not work automatically, there ar
 ### Using the Custom URL Feature to Access a Remote Pieces OS Instance
 
 > - In the case that Pieces OS shares the same LAN with your remote VS Code instance, you should use the LAN IP address of your machine that is running Pieces OS.
-> - In the case that Pieces OS is not on the same LAN as your development environment [ngrok](https://ngrok.com/download), or a similar alternative, must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
+> - In the case that Pieces OS is not on the same LAN as your development environment [ngrok](https://ngrok.com/download), or a similar alternative like [Tailscale](https://tailscale.com/), must be installed on the machine with Pieces OS. It must be known that doing this will expose your Pieces OS endpoints to the public and this should only be done as a last resort.
 > - The custom URL feature has no connection to your custom Pieces Cloud domain, attempting to use your custom Pieces Cloud domain i.e: `https://caleb.pieces.cloud` will result in the VS Code extension ceasing to function properly.
 
 <Tabs
@@ -120,7 +120,7 @@ For Dev Container users, if the connection does not work automatically, there ar
 Now we will set up your Pieces VS Code extension to connect to your machine with Pieces OS.
 
 1. Open VS Code on your machine
-2. Go to VS Code Settings `CMD/CTRL + ,`
+2. Go to VS Code Settings `⌘/CTRL + ,`
 3. Ensure that you have the `Workspace` tab selected
 4. Search `pieces custom url`
 5. Paste your new forwarding URL in the input for `Pieces: Custom Url`
@@ -131,7 +131,7 @@ Now we will set up your Pieces VS Code extension to connect to your machine with
 
 Now we will reload your VS Code window to ensure that your Pieces VS Code extension is using your ngrok forwarding URL.
 
-1. Open up the Command Palette `CMD/CTRL + Shift + P`
+1. Open up the Command Palette `⌘/CTRL + Shift + P`
 2. Search `Reload Window`
 3. Select `Developer: Reload Window`
 
