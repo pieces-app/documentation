@@ -10,6 +10,7 @@ const GridFlexRow = (props: GridFlexRowProps) => {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: props.type === 'start' ? 'start' : 'space-evenly',
+        alignItems: 'center',
         flexWrap: "wrap",
         gap: "1rem",
       }}
