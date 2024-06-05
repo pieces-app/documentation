@@ -19,7 +19,7 @@ const SocialIcons = () => {
         {/*<img width={50} src="/social/twitter.webp" alt="Twitter" />*/}
       </a>
       <a href="https://www.linkedin.com/company/getpieces" target="_blank" rel="noreferrer">
-        <img width={50} src="/social/linkedin.webp" alt="LinkedIn"/>
+        <img width={50} src="/social/linkedin.png" alt="LinkedIn"/>
       </a>
       <a href="https://www.youtube.com/@getpieces" target="_blank" rel="noreferrer">
         <img width={50} src="/social/youtube.webp" alt="YouTube"/>
