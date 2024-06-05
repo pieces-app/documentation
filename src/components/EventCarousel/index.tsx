@@ -10,7 +10,7 @@ type Event = {
   link?: string;
 }
 
-const Carousel = () => {
+const EventCarousel = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [eventTypeFilter, setEventTypeFilter] = useState<Event['type']>('All');
   const [events, setEvents] = useState<Event[]>([]);
@@ -241,4 +241,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default EventCarousel;
