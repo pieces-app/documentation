@@ -77,7 +77,7 @@ const EventCarousel = () => {
   const today = new Date();
   today.setHours(0, 0, 0, 0)
 
-  const ongoingEvents = filteredEvents.filter(event => {
+  const todaysEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
     return eventDate.getDay() === today.getDay();
   });
@@ -123,7 +123,7 @@ const EventCarousel = () => {
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
         {!isLoading ? (
-          ongoingEvents.length > 0 ? ongoingEvents.map((event: Event, index: number) => (
+          todaysEvents.length > 0 ? todaysEvents.map((event: Event, index: number) => (
             <div key={`${event.title}_${index}`} className={'carousel-card'}>
               <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
                 width: '100%',
