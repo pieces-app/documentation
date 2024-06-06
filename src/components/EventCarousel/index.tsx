@@ -74,6 +74,12 @@ const EventCarousel = () => {
     setFilteredEvents(filteredEvents);
   }, [eventTypeFilter])
 
+  const ongoingEvents = filteredEvents.filter(event => {
+    const eventDate = new Date(event.date);
+    const today = new Date();
+    return eventDate.getDay() === today.getDay();
+  });
+
   const upcomingEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
     return eventDate >= new Date(); // Keep only events that are in the future
@@ -107,6 +113,70 @@ const EventCarousel = () => {
             {category}
           </span>
         ))}
+      </div>
+
+      <h2>Ongoing Events</h2>
+
+      <div className="carousel-container">
+        {/*<button onClick={goToPrevious}>Previous</button>*/}
+        {!isLoading ? (
+          ongoingEvents.length > 0 ? ongoingEvents.map((event: Event, index: number) => (
+            <div key={`${event.title}_${index}`} className={'carousel-card'}>
+              <img src={event.thumbnail ?? '/assets/pfd_preview.png'} alt={event.title} style={{
+                width: '100%',
+                height: '175px',
+                objectFit: 'cover',
+                borderRadius: '6px 6px 0 0'
+              }}/>
+
+              <div style={{
+                padding: '8px 12px',
+              }}>
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}>
+                  <span style={{
+                    fontSize: '0.8rem',
+                  }}>{event.date}</span>
+                  <span style={{
+                    fontSize: '0.8rem',
+                    padding: '2px 4px',
+                    borderRadius: '4px',
+                    backgroundColor: 'var(--ifm-color-secondary)'
+                  }}>{event.type}</span>
+                </div>
+                <span style={{
+                  fontWeight: 'bold'
+                }}>{event.title}</span>
+                <p style={{
+                  fontSize: '0.8rem',
+                  flexGrow: 1,
+                }}>{event.description}</p>
+                <div className={'cta'}>
+                  {event.link ? (
+                    <CTAButton
+                      label={'View Event'}
+                      href={event.link}
+                      type={'secondary'}
+                    />
+                  ) : (
+                    <CTAButton
+                      label={'Coming soon'}
+                      type={'secondary'}
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+          )) : (
+            <span>No ongoing events found...</span>
+          )) : (
+          <div className="carousel-container">
+            <div className="ghost-card"></div>
+          </div>
+        )}
       </div>
 
       <h2>Upcoming Events</h2>
