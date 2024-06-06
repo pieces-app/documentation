@@ -366,3 +366,29 @@ html[data-theme='dark'] .header-github-link:before {
     height: 425px; /* Adjusted height for smaller screens to match carousel card */
   }
 }
+
+/*For Red Pulsing Dot*/
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+}
+
+.pulsing-dot {
+  height: 14px;
+  width: 14px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}

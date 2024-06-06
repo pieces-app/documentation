@@ -110,7 +110,15 @@ const EventCarousel = () => {
         ))}
       </div>
 
-      <h2>Ongoing Events</h2>
+      <h2
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+        }}
+      >
+        Today's Events
+      </h2>
 
       <div className="carousel-container">
         {/*<button onClick={goToPrevious}>Previous</button>*/}
