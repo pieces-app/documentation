@@ -54,6 +54,27 @@ This table shows which models are available locally and which will use cloud com
 
 Our ML models are not trained continuously. **They do not train on your data** as you use the product.
 
+## Live Context
+
+The Live Context feature in Pieces enhances the functionality of the Pieces Copilot by utilizing our proprietary Workstream Pattern Engine (WPE). This feature is designed with privacy and efficiency in mind, ensuring that all data processing and storage occur locally on your device.
+
+### How Live Context Works
+
+1. **On-Device Processing and Storage:** All WPE algorithms, processing, and storage take place directly on your device. This ensures that your data remains secure and private, without being transmitted over the internet unless necessary.
+2. **Querying Local Data:** When Live Context is enabled, and you ask a question to the Copilot, the system queries data aggregated from the WPE. This data is processed entirely on your device to find content that is relevant to your query.
+3. **Utilizing [Retrieval-Augmented Generation (RAG)](/build/glossary/terms/retrieval-augmented-generation) for Contextual Relevance:** The relevant content identified by the WPE is then used as context for the Copilot prompt.
+4. **Interaction with Language Models (LLM):**
+    - **Cloud LLM:** If you are using a cloud-based LLM, the data identified as relevant is sent to the cloud LLM for processing.
+    - **Local LLM:** If you are using a local LLM, the data remains on your device, ensuring that all processing happens locally without any data leaving your device.
+
+### Privacy Recommendations
+
+For users concerned about privacy, we strongly recommend using a Local LLM with the Pieces Copilot. Options include Mistral, Phi-2, Llama2, among others. Using a local LLM ensures that all data and processing remain on your device, providing an additional layer of security and privacy.
+
+### Performance Note
+
+Please note that results may vary depending on the selected LLM. Each model has its strengths and capabilities, which can influence the effectiveness of the Live Context feature.
+
 ## Saving Code Snippets in the Cloud
 The Pieces cloud is entirely opt-in. Authentication is managed by our enterprise-ready authentication partners at Auth0 (now owned by Okta).
 

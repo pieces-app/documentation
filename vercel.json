@@ -102,8 +102,8 @@
       "statusCode": 301
     },
     {
-      "source": "/product-highlights-and-benefits/privacy-security-data",
-      "destination": "/security-and-privacy",
+      "source": "/product-highlights-and-benefits/workstream-context",
+      "destination": "/product-highlights-and-benefits/live-context",
       "statusCode": 301
     },
     {
@@ -179,6 +179,21 @@
     {
       "source": "/build/glossary/terms/Pieces%20Specific/reaction",
       "destination": "/build/glossary/terms/reaction",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/reference/dart/(.*)",
+      "destination": "/build/reference/dart",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/reference/kotlin/(.*)",
+      "destination": "/build/reference/dart",
+      "statusCode": 301
+    },
+    {
+      "source": "/ama/building-a-more-extensible-development-environment",
+      "destination": "/community/events/ama/building-a-more-extensible-development-environment",
       "statusCode": 301
     }
   ]

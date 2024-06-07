@@ -3,6 +3,7 @@
     "AIML",
     "Assets",
     "CS Fundamentals",
+    "Frontend",
     "Pieces Specific",
     "Search"
   ],
@@ -110,6 +111,12 @@
       "referencePath": "terms/context-awareness"
     },
     {
+      "term": "Context Window",
+      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "category": "AIML",
+      "referencePath": "terms/context-window"
+    },
+    {
       "term": "Copilot",
       "definition": "An AI copilot is a development assistant that can help generate, answer questions about, troubleshoot, and debug code.",
       "category": "AIML",
@@ -194,6 +201,12 @@
       "referencePath": "terms/hint"
     },
     {
+      "term": "Hyper Parameter Tuning",
+      "definition": "Hyperparameter tuning is a crucial step in the process of building and optimizing machine learning models. Hyperparameters are the configuration variables that govern the training process and structure of a machine-learning model. These could include the learning rate in a neural network, depth in a decision tree, or number of clusters in K-means clustering.",
+      "category": "AIML",
+      "referencePath": "terms/hyper-parameter-tuning"
+    },
+    {
       "term": "Indices",
       "definition": "This is a map of IDs or identifiers that map to a value which is an integer from -1 -> infinity. These index Maps are only on plural Models, such as Asset.websites, Asset.tags, or Assets, ...XYZ (in these cases Tags/Websites/Assets, but not limited to just these).",
       "category": "Search",
@@ -210,6 +223,18 @@
       "definition": "An Iterable refers to an array-like data structure that represents a sequence of elements.",
       "category": "CS Fundamentals",
       "referencePath": "terms/iterable"
+    },
+    {
+      "term": "LLM Fine-Tuning",
+      "definition": "The process of adjusting a pre-trained AI model's parameters so it can perform better on specific tasks or datasets. Fine-tuning large language models is particularly beneficial when the model needs to adapt to specific or niche tasks where general models might not perform well without adjustments.",
+      "category": "AIML",
+      "referencePath": "terms/llm-fine-tuning"
+    },
+    {
+      "term": "LangChain",
+      "definition": "An open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
+      "category": "AIML",
+      "referencePath": "terms/langchain"
     },
     {
       "term": "Language Server Protocol",
@@ -230,10 +255,22 @@
       "referencePath": "terms/linkify"
     },
     {
+      "term": "Masked Language Modeling",
+      "definition": "Masked Language Modeling (MLM) is a pre-training technique in natural language processing (NLP) that enables AI models to predict masked tokens within an input sequence, enhancing their understanding of language context and structure.",
+      "category": "AIML",
+      "referencePath": "terms/masked-language-modeling"
+    },
+    {
       "term": "Neural Code Search (NCS)",
       "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries.",
       "category": "Search",
       "referencePath": "terms/neural-code-search"
+    },
+    {
+      "term": "Neural Machine Translation",
+      "definition": "Neural Machine Translation (NMT) is an innovative technology that allows computers to translate languages with human-level fluency. Unlike previous approaches, NMT uses artificial intelligence to analyze and create translations that match the natural flow of language. It analyzes context, idioms, and subtleties to provide more accurate and contextually appropriate translations. This transformational technology uses neural networks to comprehend complicated linguistic patterns, allowing seamless communication across several languages. NMT's capacity to adapt and learn from varied linguistic data sets is a huge step forward in breaking down language barriers, boosting global connectedness, and improving cross-cultural communication.",
+      "category": "AIML",
+      "referencePath": "terms/neural-machine-translation"
     },
     {
       "term": "OS Instance",
@@ -254,6 +291,12 @@
       "referencePath": "terms/pkce-flow"
     },
     {
+      "term": "Patterns Engine",
+      "definition": "A software tool that can be used to identify and extract patterns from data.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/patterns-engine"
+    },
+    {
       "term": "Plural vs Singular API",
       "definition": "Plural APIs are used to handle multiple resources at once, while singular APIs are used to handle single resources.",
       "category": "CS Fundamentals",
@@ -264,6 +307,12 @@
       "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model.",
       "category": "AIML",
       "referencePath": "terms/quantized-generative-pre-trained-transformer"
+    },
+    {
+      "term": "React Server Components",
+      "definition": "React Server Components are a new addition to the React framework, designed to enable developers to build more efficient, performant applications. Learn how they work, how to create them, and their benefits and limitations.",
+      "category": "Frontend",
+      "referencePath": "terms/react-server-components"
     },
     {
       "term": "Reaction",
@@ -378,6 +427,12 @@
       "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices.",
       "category": "CS Fundamentals",
       "referencePath": "terms/telemetry"
+    },
+    {
+      "term": "Vector Search",
+      "definition": "Vector search is a sophisticated data retrieval method that utilizes mathematical vectors to analyze and process complex, unstructured data. Learn more about vector search, its benefits, drawbacks, and key takeaways.",
+      "category": "AIML",
+      "referencePath": "terms/vector-search"
     },
     {
       "term": "Well-Known Health",

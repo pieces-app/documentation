@@ -75,17 +75,18 @@ These snippets help the Copilot understand the precise syntax and functionality 
 
 ![Setting Context for the Pieces Copilot](/assets/contextual_copilot.png)
 
-### Workstream Context
-The [Workstream Pattern Engine](/product-highlights-and-benefits/workstream-context)  enables the copilot to gather deep context from any application on your desktop, making it aware of your recent activities and work-in-progress journey. This dynamic understanding allows the copilot to provide hyper-personalized responses and suggestions based on your recent workflow.
+### Live Context
+[Live Context](/product-highlights-and-benefits/live-context) comes from the [Workstream Pattern Engine](/product-highlights-and-benefits/live-context#the-workstream-pattern-engine) and enables the copilot to capture real-time context from any application on your desktop, making it aware of your recent activities and work-in-progress journey. This dynamic understanding allows the copilot to provide hyper-personalized responses and suggestions based on your recent workflow.
+
 By enabling the Workstream Pattern Engine in the Pieces settings, the copilot can reference your recent activities, discussions, and code changes, tailoring its responses and interactions to your unique project.
 
 #### Temporal and Conversational Awareness
-This feature allows for a more intuitive and seamless interaction with the copilot, as it can recall and reference recent work contexts and discussions on a time-basis. Whether you're asking about a recent error, a discussion point with a colleague, or to summarize your workflow yesterday, the copilot uses its temporally grounded knowledge to provide relevant and timely assistance.
+Live Context allows for a more intuitive and seamless interaction with the copilot, as it can recall and reference recent work contexts and discussions on a time-basis. Whether you're asking about a recent error, a discussion point with a colleague, or to summarize your workflow yesterday, the copilot uses its temporally grounded knowledge to provide relevant and timely assistance.
 
 ### Website Context
 Website Context allows the Copilot to understand the content of websites. By using the [Pieces Web Extension](/extensions-plugins/web-extension) to add a website to your Copilot context, the system automatically extracts relevant content and integrates this information into the Copilot’s knowledge base.
 
-This capability is particularly beneficial when you are researching or gathering information as part of your development process.
+This capability is particularly beneficial when you are researching or capturing information as part of your development process.
 
 ### Message Context
 Adding copilot messages to context means that the Copilot puts more importance on those messages than others when using context to generate a response.
@@ -128,7 +129,9 @@ Our Copilot also comes with multiple different LLM runtimes, cloud and local in 
 #### OpenAI
 - GPT 3.5 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
 - GPT 3.5 Turbo 16k, a highly optimized LLM utilizing a larger set of parameters for more accurate responses.
-- GPT 4, OpenAI's most recent LLM containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
+- GPT 4, containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
+- GPT 4 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
+- GPT 4o, OpenAI's new flagship model that can reason across audio, vision, and text in real time.
 
 #### Gemini
 - Gemini Pro, Google's most capable AI model, built to be multimodal and able to complete a wide variety of tasks.
@@ -138,9 +141,16 @@ Our Copilot also comes with multiple different LLM runtimes, cloud and local in 
 - Code Chat Bison, a model fine-tuned to generate code based on a natural language description
 
 ### Local Runtimes
+
 :::info
 
-*Local LLMs come with some hefty hardware requirements, please make sure your system can fulfill them before attempting to load one of these models.*
+**Disclaimer:** Running Large Language Models locally on-device is typically resource intensive. As of right now, a majority of our Local LLMs leverage roughly 7 billion parameters. To ensure optimal performance, we recommend the following minimum specifications:
+- **CPU:** A modern, multi-core processor with at least 4 cores.
+- **RAM:** At least 8GB of system memory.
+- **GPU (Optional):** A dedicated GPU with at least 4 GB of VRAM is recommended for optimal performance.
+    - **NVIDIA:** GeForce RTX 2000 series or newer.
+    - **AMD:** Radeon RX 5000 series or newer.
+- **System Age:** A machine from 2021 or newer.
 
 :::
 
@@ -180,6 +190,11 @@ Our VS Code, Jetbrains, Visual Studio, Web Extension, Obsidian, and JupyterLab i
 8. **Quickly link back to relevant files**
     - If the copilot used a file as relevant context, it will show it in the chat window, and you can click on it to view it.
     ![Linking to Relevant Files in VS Code Copilot](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/VS_CODE/MACOS/COPILOT_CONTEXT_FILES/16X9/PIECES_FOR_DEVELOPERS-VS_CODE-RELATED_FILES-MACOS-16X9-1_31_2024.GIF.gif)
+9. **Support for Latex Formatted Responses**
+    - Any Latex included in generated responses from the copilot will be correctly formatted right in the chat window.
+10. **Theme Customization**
+    - Customize the look and feel of the Copilot chat window to match your preferred theme.
+    <Video src={'/copilot/plugin/theme-customization'} type={'local'} />
 
 ## Resetting the Copilot Runtime
 
