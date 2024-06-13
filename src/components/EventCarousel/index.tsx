@@ -146,7 +146,7 @@ const EventCarousel = () => {
                 }}>
                   <span style={{
                     fontSize: '0.8rem',
-                  }}>{event.start_date}</span>
+                  }}>{event.end_date ? `${event.start_date} - ${event.end_date}` : event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
@@ -210,7 +210,7 @@ const EventCarousel = () => {
                 }}>
                 <span style={{
                   fontSize: '0.8rem',
-                }}>{event.start_date}</span>
+                }}>{event.end_date ? `${event.start_date} - ${event.end_date}` : event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
@@ -275,7 +275,7 @@ const EventCarousel = () => {
                 }}>
                   <span style={{
                     fontSize: '0.8rem',
-                  }}>{event.start_date}</span>
+                  }}>{event.end_date ? `${event.start_date} - ${event.end_date}` : event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
