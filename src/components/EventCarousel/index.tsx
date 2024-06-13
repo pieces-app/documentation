@@ -75,12 +75,12 @@ const EventCarousel = () => {
   }, [eventTypeFilter])
 
   const today = new Date();
-  today.setHours(0, 0, 0, 0)
 
   const todaysEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
-    return eventDate.getDay() === today.getDay();
-  });
+    eventDate.setHours(0, 0, 0, 0); // Set event date to the start of the day
+    return eventDate.getDay() === today.getDay()
+  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   const upcomingEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
