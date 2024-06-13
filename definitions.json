@@ -3,6 +3,7 @@
     "AIML",
     "Assets",
     "CS Fundamentals",
+    "Frontend",
     "Pieces Specific",
     "Search"
   ],
@@ -201,7 +202,7 @@
     },
     {
       "term": "Hyper Parameter Tuning",
-      "definition": "Hyperparameter tuning is the process of optimizing the hyperparameters of a machine learning model to improve its performance.",
+      "definition": "Hyperparameter tuning is a crucial step in the process of building and optimizing machine learning models. Hyperparameters are the configuration variables that govern the training process and structure of a machine-learning model. These could include the learning rate in a neural network, depth in a decision tree, or number of clusters in K-means clustering.",
       "category": "AIML",
       "referencePath": "terms/AIML/hyper-parameter-tuning"
     },
@@ -224,6 +225,18 @@
       "referencePath": "terms/CS Fundamentals/iterable"
     },
     {
+      "term": "LLM Fine-Tuning",
+      "definition": "The process of adjusting a pre-trained AI model's parameters so it can perform better on specific tasks or datasets. Fine-tuning large language models is particularly beneficial when the model needs to adapt to specific or niche tasks where general models might not perform well without adjustments.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/llm-fine-tuning"
+    },
+    {
+      "term": "LangChain",
+      "definition": "An open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
+      "category": "AIML",
+      "referencePath": "terms/AIML/langchain"
+    },
+    {
       "term": "Language Server Protocol",
       "definition": "Language Server Protocol (LSP) is an open, JSON-RPC-based protocol for use between source code editors or integrated development environments (IDEs) and servers that provide language intelligence tools.",
       "category": "CS Fundamentals",
@@ -242,6 +255,12 @@
       "referencePath": "terms/Pieces Specific/linkify"
     },
     {
+      "term": "Masked Language Modeling",
+      "definition": "Masked Language Modeling (MLM) is a pre-training technique in natural language processing (NLP) that enables AI models to predict masked tokens within an input sequence, enhancing their understanding of language context and structure.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/masked-language-modeling"
+    },
+    {
       "term": "Neural Code Search (NCS)",
       "definition": "Neural Code Search (NCS) is a method that leverages neural networks to find similar code snippets within a codebase based on natural language queries.",
       "category": "Search",
@@ -249,7 +268,7 @@
     },
     {
       "term": "Neural Machine Translation",
-      "definition": "The frame of reference that a language model uses to understand or generate language based on a fixed span of words or tokens surrounding a specific point.",
+      "definition": "Neural Machine Translation (NMT) is an innovative technology that allows computers to translate languages with human-level fluency. Unlike previous approaches, NMT uses artificial intelligence to analyze and create translations that match the natural flow of language. It analyzes context, idioms, and subtleties to provide more accurate and contextually appropriate translations. This transformational technology uses neural networks to comprehend complicated linguistic patterns, allowing seamless communication across several languages. NMT's capacity to adapt and learn from varied linguistic data sets is a huge step forward in breaking down language barriers, boosting global connectedness, and improving cross-cultural communication.",
       "category": "AIML",
       "referencePath": "terms/AIML/neural-machine-translation"
     },
@@ -272,6 +291,12 @@
       "referencePath": "terms/CS Fundamentals/pkce-flow"
     },
     {
+      "term": "Patterns Engine",
+      "definition": "A software tool that can be used to identify and extract patterns from data.",
+      "category": "Pieces Specific",
+      "referencePath": "terms/Pieces Specific/patterns-engine"
+    },
+    {
       "term": "Plural vs Singular API",
       "definition": "Plural APIs are used to handle multiple resources at once, while singular APIs are used to handle single resources.",
       "category": "CS Fundamentals",
@@ -282,6 +307,12 @@
       "definition": "qGPT is a quantized version of the Generative Pre-trained Transformer (GPT) language model.",
       "category": "AIML",
       "referencePath": "terms/AIML/quantized-generative-pre-trained-transformer"
+    },
+    {
+      "term": "React Server Components",
+      "definition": "React Server Components are a new addition to the React framework, designed to enable developers to build more efficient, performant applications. Learn how they work, how to create them, and their benefits and limitations.",
+      "category": "Frontend",
+      "referencePath": "terms/Frontend/react-server-components"
     },
     {
       "term": "Reaction",
@@ -396,6 +427,12 @@
       "definition": "Telemetry is the collection, transmission, and analysis of data related to the performance, usage, and health of systems or devices.",
       "category": "CS Fundamentals",
       "referencePath": "terms/CS Fundamentals/telemetry"
+    },
+    {
+      "term": "Vector Search",
+      "definition": "Vector search is a sophisticated data retrieval method that utilizes mathematical vectors to analyze and process complex, unstructured data. Learn more about vector search, its benefits, drawbacks, and key takeaways.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/vector-search"
     },
     {
       "term": "Well-Known Health",

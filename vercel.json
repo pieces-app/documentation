@@ -190,6 +190,11 @@
       "source": "/build/reference/kotlin/(.*)",
       "destination": "/build/reference/dart",
       "statusCode": 301
+    },
+    {
+      "source": "/ama/building-a-more-extensible-development-environment",
+      "destination": "/community/events/ama/building-a-more-extensible-development-environment",
+      "statusCode": 301
     }
   ]
 }

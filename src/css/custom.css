@@ -37,7 +37,7 @@
   --docsearch-key-shadow: null !important;
   --docsearch-key-gradient: linear-gradient(90deg, var(--ifm-color-primary-lightest), var(--ifm-color-primary)) !important;
   --docsearch-muted-color: #969696 !important;
-  --docsearch-searchbox-background: var(--ifm-color-secondary-darker) !important;
+  --docsearch-searchbox-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-searchbox-focus-background: var(--ifm-color-secondary-dark) !important;
   --docsearch-text-color: var(--ifm-color-primary-dark) !important;
 
@@ -365,4 +365,30 @@ html[data-theme='dark'] .header-github-link:before {
     width: 300px; /* Adjusted width for smaller screens to match carousel card */
     height: 425px; /* Adjusted height for smaller screens to match carousel card */
   }
+}
+
+/*For Red Pulsing Dot*/
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+}
+
+.pulsing-dot {
+  height: 14px;
+  width: 14px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
 }
