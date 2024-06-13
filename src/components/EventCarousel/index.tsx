@@ -5,7 +5,8 @@ type Event = {
   type: 'All' | 'Podcast' | 'Twitter Space' | 'Livestream' | 'Meetup'
   title: string;
   description: string;
-  date: string;
+  start_date: string;
+  end_date?: string;
   thumbnail?: string;
   link?: string;
 }
@@ -78,22 +79,24 @@ const EventCarousel = () => {
   today.setHours(0, 0, 0, 0);
 
   const todaysEvents = filteredEvents.filter(event => {
-    const eventDate = new Date(event.date);
-    eventDate.setHours(0, 0, 0, 0);
-    return eventDate.getTime() === today.getTime();
-  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    const eventStart = new Date(event.start_date);
+    const eventEnd = new Date(event.end_date ?? event.start_date);
+    eventStart.setHours(0, 0, 0, 0);
+    eventEnd.setHours(0, 0, 0, 0);
+    return eventStart <= today && eventEnd >= today;
+  }).sort((a, b) => new Date(a.start_date).getTime() - new Date(b.start_date).getTime());
 
   const upcomingEvents = filteredEvents.filter(event => {
-    const eventDate = new Date(event.date);
+    const eventDate = new Date(event.start_date);
     eventDate.setHours(0, 0, 0, 0);
     return eventDate > today;
-  }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  }).sort((a, b) => new Date(a.start_date).getTime() - new Date(b.start_date).getTime());
 
   const pastEvents = filteredEvents.filter(event => {
-    const eventDate = new Date(event.date);
-    eventDate.setHours(0, 0, 0, 0);
-    return eventDate < today;
-  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    const eventEndDate = new Date(event.end_date ?? event.start_date);
+    eventEndDate.setHours(0, 0, 0, 0);
+    return eventEndDate < today;
+  }).sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime());
 
   return (
     <>
@@ -143,7 +146,7 @@ const EventCarousel = () => {
                 }}>
                   <span style={{
                     fontSize: '0.8rem',
-                  }}>{event.date}</span>
+                  }}>{event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
@@ -207,7 +210,7 @@ const EventCarousel = () => {
                 }}>
                 <span style={{
                   fontSize: '0.8rem',
-                }}>{event.date}</span>
+                }}>{event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
@@ -272,7 +275,7 @@ const EventCarousel = () => {
                 }}>
                   <span style={{
                     fontSize: '0.8rem',
-                  }}>{event.date}</span>
+                  }}>{event.start_date}</span>
                   <span style={{
                     fontSize: '0.8rem',
                     padding: '2px 4px',
