@@ -75,23 +75,24 @@ const EventCarousel = () => {
   }, [eventTypeFilter])
 
   const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
   const todaysEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
-    eventDate.setHours(0, 0, 0, 0); // Set event date to the start of the day
-    return eventDate.getDay() === today.getDay()
+    eventDate.setHours(0, 0, 0, 0);
+    return eventDate.getTime() === today.getTime();
   }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   const upcomingEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
-    eventDate.setHours(0, 0, 0, 0); // Set event date to the start of the day
+    eventDate.setHours(0, 0, 0, 0);
     return eventDate > today;
   }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   const pastEvents = filteredEvents.filter(event => {
     const eventDate = new Date(event.date);
-    eventDate.setHours(0, 0, 0, 0); // Set event date to the start of the day
-    return eventDate < today; // Compare dates
+    eventDate.setHours(0, 0, 0, 0);
+    return eventDate < today;
   }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
