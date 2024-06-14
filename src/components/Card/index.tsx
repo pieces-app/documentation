@@ -31,13 +31,13 @@ const Card = ({
           }}>{title}</span>
         </div>
         <MiniSpacer/>
-        <p>{description}</p>
       </div>
 
       <CTAButton
         label={'Get Started'}
         href={href}
         type={'secondary'}
+        fullWidth={true}
       />
     </div>
   );
