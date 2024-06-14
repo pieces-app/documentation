@@ -192,9 +192,17 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .grid-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure the card takes the full height */
   padding: 20px;
   border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
+}
+
+.card-content {
+  flex-grow: 1;
 }
 
 /*CTAButton Classes*/
