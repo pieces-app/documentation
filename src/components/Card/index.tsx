@@ -31,6 +31,7 @@ const Card = ({
           }}>{title}</span>
         </div>
         <MiniSpacer/>
+        <p>{description}</p>
       </div>
 
       <CTAButton
