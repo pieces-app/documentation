@@ -3,18 +3,22 @@ import CTAButton from "@site/src/components/CTAButton";
 
 const Card = ({
   title,
-  description,
   href,
-  icon
+  icon,
+  description
 }: {
   title: string,
-  description: string,
   href: string,
   icon: string
+  description?: string,
 }) => {
   return (
-    <div className={'grid-card'}>
-      <div className="card-content">
+    <a className={`grid-card` + (description ? '' : ' grid-card-hover')} href={href}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+      }}>
         <div style={{
           display: 'flex',
           alignItems: 'center',
@@ -26,21 +30,31 @@ const Card = ({
             width={40}
           />
           <span style={{
-            fontSize: '1.5rem',
+            fontSize: '1.25rem',
             fontWeight: 'bold'
           }}>{title}</span>
         </div>
-        <MiniSpacer/>
-        <p>{description}</p>
-      </div>
+        {description ? (
+          <>
+            <MiniSpacer/>
+            <p>{description}</p>
+          </>
+        ) : (
+          <svg className="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/>
+          </svg>
+        )}
+        </div>
 
-      <CTAButton
-        label={'Get Started'}
+        {description ? (
+          <CTAButton
+          label={'Get Started'}
         href={href}
         type={'secondary'}
         fullWidth={true}
       />
-    </div>
+      ) : null}
+    </a>
   );
 }
 

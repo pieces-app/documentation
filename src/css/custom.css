@@ -185,20 +185,44 @@ html[data-theme='dark'] .header-github-link:before {
 .grid-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%; /* Ensure the card takes the full height */
-  padding: 20px;
+  padding: 12px;
   border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
+  text-decoration: none!important;
+  transition: border-color 0.3s ease;
 }
 
-.card-content {
-  flex-grow: 1;
+.arrow {
+  margin-left: 5px;
 }
 
-@media (max-width: 1000px) {
+.grid-card-hover {
+  &:hover {
+    border-color: var(--ifm-color-primary-lightest);
+
+    .arrow {
+      transform: translateX(5px);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:not(:hover) {
+    .arrow {
+      transform: translateX(0);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 996px) {
   .grid-4xN {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-3xN {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
