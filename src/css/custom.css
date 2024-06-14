@@ -143,22 +143,6 @@ html[data-theme='dark'] .header-github-link:before {
   gap: 20px;
 }
 
-@media (max-width: 820px) {
-  .grid-3xN {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-2xN, .grid-3xN {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image-2x1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 @media (max-width: 1000px) {
   .hero-container {
     flex-direction: column;
@@ -175,6 +159,13 @@ html[data-theme='dark'] .header-github-link:before {
   .error-footer {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.grid-4xN {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
 }
 
 .grid-3xN {
@@ -203,6 +194,28 @@ html[data-theme='dark'] .header-github-link:before {
 
 .card-content {
   flex-grow: 1;
+}
+
+@media (max-width: 1000px) {
+  .grid-4xN {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .grid-3xN, .grid-4xN {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2xN, .grid-3xN, .grid-4xN {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-2x1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*CTAButton Classes*/
