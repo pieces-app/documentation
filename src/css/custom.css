@@ -212,24 +212,6 @@ html[data-theme='dark'] .header-github-link:before {
   transition: transform 0.3s ease !important;
 }
 
-/*.grid-card-hover {*/
-/*  &:hover {*/
-/*    border-color: var(--ifm-color-primary-lightest) !important;*/
-
-/*    .arrow {*/
-/*      transform: translateX(5px) !important;*/
-/*      transition: transform 0.3s ease !important;*/
-/*    }*/
-/*  }*/
-
-/*  &:not(:hover) {*/
-/*    .arrow {*/
-/*      transform: translateX(0) !important;*/
-/*      transition: transform 0.3s ease !important;*/
-/*    }*/
-/*  }*/
-/*}*/
-
 @media (max-width: 996px) {
   .grid-4xN {
     grid-template-columns: repeat(3, 1fr);
