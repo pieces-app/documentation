@@ -13,7 +13,7 @@ const Card = ({
   description?: string,
 }) => {
   return (
-    <a className={`grid-card` + (description ? '' : ' grid-card-hover')} href={href}>
+    <a className={'grid-card'} href={href}>
       <div style={{
         display: 'flex',
         justifyContent: 'space-between',
