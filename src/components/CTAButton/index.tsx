@@ -9,6 +9,7 @@ type CTAButtonProps = {
   icon?: string | React.ReactElement
   iconDark?: string
   disabled?: boolean
+  fullWidth?: boolean
 }
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
@@ -23,6 +24,10 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       className={'cta-button'}
       style={{
         fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: props.fullWidth ? '100%' : undefined
       }}
       aria-disabled={props.disabled}
       target={newTab ? '_blank' : '_self'}

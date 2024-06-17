@@ -1,5 +1,5 @@
 type GridProps = {
-  cols: number;
+  cols: 1 | 2 | 3 | 4
   children: React.ReactNode;
 }
 
