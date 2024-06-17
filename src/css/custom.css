@@ -90,12 +90,12 @@ summary > h2 {
 
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link) {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card-link) {
   /*  add underline*/
   text-decoration: underline;
 }
 
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link):hover {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card-link):hover {
   text-decoration-thickness: 2px;
 }
 
@@ -143,23 +143,7 @@ html[data-theme='dark'] .header-github-link:before {
   gap: 20px;
 }
 
-@media (max-width: 820px) {
-  .grid-3xN {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-2xN, .grid-3xN {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image-2x1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 996px) {
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -177,6 +161,13 @@ html[data-theme='dark'] .header-github-link:before {
   }
 }
 
+.grid-4xN {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
 .grid-3xN {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -192,9 +183,70 @@ html[data-theme='dark'] .header-github-link:before {
 }
 
 .grid-card {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
   border: 1px solid var(--grid-card-border-color);
   border-radius: 8px;
+  text-decoration: none!important;
+  transition: border-color 0.3s ease !important;
+}
+
+.grid-card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure the card takes the full height */
+  padding: 12px;
+  border: 1px solid var(--grid-card-border-color);
+  border-radius: 8px;
+  text-decoration: none!important;
+  transition: border-color 0.3s ease !important;
+}
+
+.arrow {
+  margin-right: 10px;
+}
+
+.grid-card-link:hover {
+  border-color: var(--ifm-color-primary-lightest) !important;
+}
+
+.grid-card-link:hover .arrow {
+  transform: translateX(5px) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.grid-card-link:not(:hover) .arrow {
+  transform: translateX(0) !important;
+  transition: transform 0.3s ease !important;
+}
+
+@media (max-width: 996px) {
+  .grid-4xN {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-3xN {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .grid-3xN, .grid-4xN {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2xN, .grid-3xN, .grid-4xN {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image-2x1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*CTAButton Classes*/
@@ -204,8 +256,8 @@ html[data-theme='dark'] .header-github-link:before {
   align-items: center;
   gap: 10px;
   padding: 8px 18px;
-  background-color: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-secondary-lightest);
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-secondary);
   font-weight: bold;
   border-radius: 5px;
   /*Had to do it this way because the default Infima button styles were not being overridden on the `:hover` event*/
