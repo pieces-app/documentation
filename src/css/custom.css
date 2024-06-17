@@ -245,8 +245,8 @@ html[data-theme='dark'] .header-github-link:before {
   align-items: center;
   gap: 10px;
   padding: 8px 18px;
-  background-color: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-secondary-lightest);
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-secondary);
   font-weight: bold;
   border-radius: 5px;
   /*Had to do it this way because the default Infima button styles were not being overridden on the `:hover` event*/
