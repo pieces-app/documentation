@@ -1,17 +1,22 @@
 import {MiniSpacer} from "@site/src/components/Spacers";
 import CTAButton from "@site/src/components/CTAButton";
+import {useColorMode} from "@docusaurus/theme-common";
 
 const Card = ({
   title,
   href,
   icon,
+  darkIcon,
   description
 }: {
   title: string,
   href: string,
   icon: string
+  darkIcon?: string
   description?: string,
 }) => {
+  const { colorMode } = useColorMode()
+
   return (
     <a className={'grid-card'} href={href}>
       <div style={{
@@ -26,7 +31,7 @@ const Card = ({
           gap: '10px'
         }}>
           <img
-            src={icon}
+            src={darkIcon && colorMode === 'dark' ? darkIcon : icon}
             alt={title}
             width={40}
           />
