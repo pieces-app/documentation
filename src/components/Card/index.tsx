@@ -17,7 +17,8 @@ const Card = ({
       <div style={{
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
+        alignItems: description ? 'flex-start' : 'center',
+        flexDirection: description ? 'column' : 'row',
       }}>
         <div style={{
           display: 'flex',
@@ -44,15 +45,15 @@ const Card = ({
             <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/>
           </svg>
         )}
-        </div>
+      </div>
 
-        {description ? (
-          <CTAButton
+      {description ? (
+        <CTAButton
           label={'Get Started'}
-        href={href}
-        type={'secondary'}
-        fullWidth={true}
-      />
+          href={href}
+          type={'secondary'}
+          fullWidth={true}
+        />
       ) : null}
     </a>
   );
