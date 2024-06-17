@@ -5,41 +5,41 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
+import {CardWithCTA, CardWithoutCTA} from "../src/components/Card";
 import Grid from "/src/components/Grid";
-import Card from "/src/components/Card";
 
 # Welcome to Pieces for Developers
 
 Get started with the Pieces for Developers platform and show you how to best use and optimize your workflow by selecting your favorite IDE, editor, or productivity tool!
 
 <Grid cols={2}>
-  <Card icon={'/assets/pieces_logos/black_circle.png'} darkIcon={'/assets/pieces_logos/white_circle.png'} title={'Desktop App'} description={'The Flagship Desktop App for Pieces for Developers'} href={'/installation-getting-started/what-am-i-installing'} />
-  <Card icon={'/assets/pieces_os_light_logo.svg'} darkIcon={'/assets/pieces_os_dark_logo.svg'} title={'Pieces OS'} description={'The OS-level application that powers Pieces for Developers'} href={'/installation-getting-started/pieces-os'} />
+  <CardWithCTA icon={'/assets/pieces_logos/black_circle.png'} darkIcon={'/assets/pieces_logos/white_circle.png'} title={'Desktop App'} description={'The Flagship Desktop App for Pieces for Developers'} href={'/installation-getting-started/what-am-i-installing'} />
+  <CardWithCTA icon={'/assets/pieces_os_light_logo.svg'} darkIcon={'/assets/pieces_os_dark_logo.svg'} title={'Pieces OS'} description={'The OS-level application that powers Pieces for Developers'} href={'/installation-getting-started/pieces-os'} />
 </Grid>
 
 ## IDEs & Editors {#ides-and-editors}
 
 <Grid cols={3}>
-  <Card icon={'/assets/vscode_logo.png'} title={'VS Code'} href={'/extensions-plugins/vscode'} />
-  <Card icon={'/assets/jetbrains_logo.png'} title={'JetBrains'} href={'/extensions-plugins/jetbrains'} />
-  <Card icon={'/assets/visual_studio_logo.png'} title={'Visual Studio'} href={'/extensions-plugins/visual-studio'} />
-  <Card icon={'/assets/jupyterlab_logo.png'} title={'JupyterLab'} href={'/extensions-plugins/jupyterlab'} />
-  <Card icon={'/assets/ads_logo.png'} title={'Azure Data Studio'} href={'/extensions-plugins/azure-data-studio'} />
+  <CardWithoutCTA icon={'/assets/vscode_logo.png'} title={'VS Code'} href={'/extensions-plugins/vscode'} />
+  <CardWithoutCTA icon={'/assets/jetbrains_logo.png'} title={'JetBrains'} href={'/extensions-plugins/jetbrains'} />
+  <CardWithoutCTA icon={'/assets/visual_studio_logo.png'} title={'Visual Studio'} href={'/extensions-plugins/visual-studio'} />
+  <CardWithoutCTA icon={'/assets/jupyterlab_logo.png'} title={'JupyterLab'} href={'/extensions-plugins/jupyterlab'} />
+  <CardWithoutCTA icon={'/assets/ads_logo.png'} title={'Azure Data Studio'} href={'/extensions-plugins/azure-data-studio'} />
 </Grid>
 
 ## Web Browsers
 
 <Grid cols={3}>
-  <Card icon={'/assets/chrome_logo.png'} title={'Google Chrome'} href={'/extensions-plugins/web-extension'} />
-  <Card icon={'/assets/firefox_logo.png'} title={'Mozilla Firefox'} href={'/extensions-plugins/web-extension'} />
-  <Card icon={'/assets/brave_logo.png'} title={'Brave'} href={'/extensions-plugins/web-extension'} />
-  <Card icon={'/assets/opera_logo.png'} title={'Opera'} href={'/extensions-plugins/web-extension'} />
-  <Card icon={'/assets/edge_logo.png'} title={'Microsoft Edge'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/chrome_logo.png'} title={'Google Chrome'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/firefox_logo.png'} title={'Mozilla Firefox'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/brave_logo.png'} title={'Brave'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/opera_logo.png'} title={'Opera'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/edge_logo.png'} title={'Microsoft Edge'} href={'/extensions-plugins/web-extension'} />
 </Grid>
 
 ## Productivity & Communication {#productivity-and-communication}
 
 <Grid cols={3}>
-  <Card icon={'/assets/obsidian_logo.png'} title={'Obsidian'} href={'/extensions-plugins/obsidian'} />
-  <Card icon={'/assets/teams_logo.png'} title={'Microsoft Teams'} href={'/extensions-plugins/teams'} />
+  <CardWithoutCTA icon={'/assets/obsidian_logo.png'} title={'Obsidian'} href={'/extensions-plugins/obsidian'} />
+  <CardWithoutCTA icon={'/assets/teams_logo.png'} title={'Microsoft Teams'} href={'/extensions-plugins/teams'} />
 </Grid>

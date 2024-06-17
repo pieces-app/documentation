@@ -90,12 +90,12 @@ summary > h2 {
 
 /*Styles for links in paragraphs*/
 /*Without this, links look the same as text as default*/
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card) {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card-link) {
   /*  add underline*/
   text-decoration: underline;
 }
 
-a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card):hover {
+a:not(.table-of-contents__link, .menu__link, .navbar__link, .pagination-nav__link, .theme-edit-this-page, .footer__link-item, .dropdown__link, .grid-card-link):hover {
   text-decoration-thickness: 2px;
 }
 
@@ -185,6 +185,17 @@ html[data-theme='dark'] .header-github-link:before {
 .grid-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--grid-card-border-color);
+  border-radius: 8px;
+  text-decoration: none!important;
+  transition: border-color 0.3s ease !important;
+}
+
+.grid-card-link {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100%; /* Ensure the card takes the full height */
   padding: 12px;
@@ -198,16 +209,16 @@ html[data-theme='dark'] .header-github-link:before {
   margin-right: 10px;
 }
 
-.grid-card:hover {
+.grid-card-link:hover {
   border-color: var(--ifm-color-primary-lightest) !important;
 }
 
-.grid-card:hover .arrow {
+.grid-card-link:hover .arrow {
   transform: translateX(5px) !important;
   transition: transform 0.3s ease !important;
 }
 
-.grid-card:not(:hover) .arrow {
+.grid-card-link:not(:hover) .arrow {
   transform: translateX(0) !important;
   transition: transform 0.3s ease !important;
 }
