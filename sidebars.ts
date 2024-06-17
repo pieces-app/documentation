@@ -50,6 +50,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/raycast',
+          label: 'Raycast Extension',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/obsidian',
           label: 'Obsidian Plugin',
         },
