@@ -5,55 +5,41 @@ hide_title: true
 hide_table_of_contents: true
 ---
 
-import CTAButton from "/src/components/CTAButton";
-import Video from "/src/components/Video";
+import {CardWithCTA, CardWithoutCTA} from "../src/components/Card";
 import Grid from "/src/components/Grid";
 
-<div className={'hero-container'}>
-  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: '20px 0'}}>
-    <h1 style={{color: 'var(--ifm-color-primary-darkest)', fontSize: '2.5rem', textAlign: 'center', marginBottom: 0}}>
-      Welcome to Pieces for Developers
-    </h1>
-    <p style={{color: 'var(--ifm-color-primary-darkest)', fontSize: '1rem', textAlign: 'center'}}>
-      A contextual AI copilot that learns from your entire developer workflow, leveling up your productivity and collaboration.
-    </p>
-    <CTAButton
-      href={"/installation-getting-started/what-am-i-installing"}
-      label={'Get Started'}
-    />
-  </div>
+# Welcome to Pieces for Developers
 
-  <Video
-    src={'/assets/hero-video'}
-    type={'local'}
-    maxWidth={'600px'}
-    aspectRatio={'1.28'}
-  />
-</div>
+Get started with the Pieces for Developers platform and show you how to best use and optimize your workflow by selecting your favorite IDE, editor, or productivity tool!
+
+<Grid cols={2}>
+  <CardWithCTA icon={'/assets/pieces_logos/black_circle.png'} darkIcon={'/assets/pieces_logos/white_circle.png'} title={'Desktop App'} description={'The Flagship Desktop App for Pieces for Developers'} href={'/installation-getting-started/what-am-i-installing'} />
+  <CardWithCTA icon={'/assets/pieces_os_light_logo.png'} darkIcon={'/assets/pieces_os_dark_logo.png'} title={'Pieces OS'} description={'The OS-level application that powers Pieces for Developers'} href={'/installation-getting-started/pieces-os'} />
+</Grid>
+
+## IDEs & Editors {#ides-and-editors}
 
 <Grid cols={3}>
-  <div className={'grid-card'}>
-    <h2>🤖 Contextual AI Copilot</h2>
-    <p>The Pieces Copilot runs at the operating system-level, using the power of retrieval augmented generation to learn from your entire workflow and make contextualized suggestions.</p>
-  </div>
-  <div className={'grid-card'}>
-    <h2>🧠 Automatic Enrichment</h2>
-    <p>Our intelligent storage agent automatically attaches useful context and metadata to the code snippets and screenshots you save, enabling better organization, searchability, and reusability.</p>
-  </div>
-  <div className={'grid-card'}>
-    <h2>🌐 LLM Utilization</h2>
-    <p>Pieces is one of the first to offer fully functional LLM integrations across macOS, Linux, and Windows, giving users the option to leverage their choice of cloud, local, or custom LLMs.</p>
-  </div>
-  <div className={'grid-card'}>
-    <h2>📊 Workflow Activity Tracking</h2>
-    <p>Pick up where you left off and identify helpful insights about your workflow with a continuous log of activity across your development environment.</p>
-  </div>
-  <div className={'grid-card'}>
-    <h2>🔗 Embedded Across your Workflow</h2>
-    <p>Pieces is a tool-between-tools connecting the three main pillars of a developers’ workflow: Researching and problem solving in the browser, coding in the IDE, and collaborating with teammates.</p>
-  </div>
-  <div className={'grid-card'}>
-    <h2>🔒 Security & Privacy</h2>
-    <p>Pieces processes data on-device for air-gapped security and privacy. All AI capabilities can run entirely local or in the cloud, depending on operational constraints.</p>
-  </div>
+  <CardWithoutCTA icon={'/assets/vscode_logo.png'} title={'VS Code'} href={'/extensions-plugins/vscode'} />
+  <CardWithoutCTA icon={'/assets/jetbrains_logo.png'} title={'JetBrains'} href={'/extensions-plugins/jetbrains'} />
+  <CardWithoutCTA icon={'/assets/visual_studio_logo.png'} title={'Visual Studio'} href={'/extensions-plugins/visual-studio'} />
+  <CardWithoutCTA icon={'/assets/jupyterlab_logo.png'} title={'JupyterLab'} href={'/extensions-plugins/jupyterlab'} />
+  <CardWithoutCTA icon={'/assets/ads_logo.png'} title={'Azure Data Studio'} href={'/extensions-plugins/azure-data-studio'} />
+</Grid>
+
+## Web Browsers
+
+<Grid cols={3}>
+  <CardWithoutCTA icon={'/assets/chrome_logo.png'} title={'Google Chrome'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/firefox_logo.png'} title={'Mozilla Firefox'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/brave_logo.png'} title={'Brave'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/opera_logo.png'} title={'Opera'} href={'/extensions-plugins/web-extension'} />
+  <CardWithoutCTA icon={'/assets/edge_logo.png'} title={'Microsoft Edge'} href={'/extensions-plugins/web-extension'} />
+</Grid>
+
+## Productivity & Communication {#productivity-and-communication}
+
+<Grid cols={3}>
+  <CardWithoutCTA icon={'/assets/obsidian_logo.png'} title={'Obsidian'} href={'/extensions-plugins/obsidian'} />
+  <CardWithoutCTA icon={'/assets/teams_logo.png'} title={'Microsoft Teams'} href={'/extensions-plugins/teams'} />
 </Grid>
