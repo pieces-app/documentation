@@ -7,12 +7,12 @@ import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import { MiniSpacer } from "/src/components/Spacers";
 import CTAButton from "/src/components/CTAButton";
-import Image from "/src/components/Image";
 import GridFlexRow from "/src/components/GridFlexRow";
+import ProductIcons from "/src/components/ProductIcons";
 
 # Getting Started
 
-![Pieces for Developers and Pieces OS application windows.](/assets/getting_started.png)
+[//]: # (![Pieces for Developers and Pieces OS application windows.]&#40;/assets/getting_started.png&#41;)
 
 ## Pieces Desktop App & Pieces OS
 
@@ -52,30 +52,22 @@ When you download Pieces for Developers, you'll get two applications: **[Pieces 
 
 :::
 
-<MiniSpacer />
+## What am I installing?
 
-<details>
-  <summary>Pieces for Developers | Pieces OS</summary>
+### Desktop App
+**Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:
+- Navigate snippets visually through the Gallery or List Views
+- Transform snippets from one language to another
+- Sort Snippets by AI-suggested usefulness
+- Describe a snippet to get a solution to an answer
+- Manage your custom cloud domain
+- and so much more!
 
-    **[Pieces OS](/installation-getting-started/pieces-os)** is our background service that runs offline and on-device. It's **required** to enable:
-    - Individual products in the Pieces for Developers Suite to communicate
-    - Local, Private, and Secure Machine Learning Models
-    - Real-Time Search and Suggestions
-</details>
-
-<MiniSpacer />
-
-<details>
-  <summary>Pieces for Developers | Desktop App</summary>
-
-    **Pieces Desktop** is our flagship desktop application. It's a visual GUI that gives you the best experience with your snippets by allowing you to:
-    - Navigate snippets visually through the Gallery or List Views
-    - Transform snippets from one language to another
-    - Sort Snippets by AI-suggested usefulness
-    - Describe a snippet to get a solution to an answer
-    - Manage your custom cloud domain
-    - and so much more!
-</details>
+### Pieces OS
+**[Pieces OS](/installation-getting-started/pieces-os)** is our background service that runs offline and on-device. It's **required** to enable:
+- Individual products in the Pieces for Developers Suite to communicate
+- Local, Private, and Secure Machine Learning Models
+- Real-Time Search and Suggestions
 
 ---
 
@@ -126,17 +118,4 @@ Whether you are on macOS, Windows, or Linux, find tailored instructions to get P
 
 Once you have Pieces OS installed, incorporate the key capabilities of Pieces into your browser, IDE, and collaboration tools by downloading one or more of our integrations:
 
-<GridFlexRow type={'evenly'}>
-    <a href="/extensions-plugins/web-extension"><Image width={70} src="/assets/chrome_logo.png" /></a>
-    <a href="/extensions-plugins/jetbrains"><Image width={70} src="/assets/jetbrains_logo.png" /></a>
-    <a href="/extensions-plugins/vscode"><Image width={70} src="/assets/vscode_logo.png" /></a>
-    <a href="/extensions-plugins/web-extension"><Image width={70} src="/assets/edge_logo.png" /></a>
-</GridFlexRow>
-
-<MiniSpacer />
-
-<GridFlexRow type={'evenly'}>
-    <a href="/extensions-plugins/teams"><Image width={70} src="/assets/teams_logo.png" /></a>
-    <a href="/extensions-plugins/obsidian"><Image width={70} src="/assets/obsidian_logo.png" /></a>
-    <a href="/extensions-plugins/jupyterlab"><Image width={70} src="/assets/jupyterlab_logo.png" /></a>
-</GridFlexRow>
+<ProductIcons />
