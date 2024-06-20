@@ -191,6 +191,10 @@ const config: Config = {
           title: 'Terms & Policies',
           items: [
             {
+              label: 'Privacy & Security',
+              href: '/privacy-and-security',
+            },
+            {
               label: 'Privacy Policy',
               href: '/privacy-policy',
             },

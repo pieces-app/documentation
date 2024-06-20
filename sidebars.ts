@@ -282,7 +282,7 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'product-highlights-and-benefits/privacy-security-data',
+          id: 'privacy-and-security',
           label: 'Privacy & Security',
         },
       ]

@@ -195,6 +195,11 @@
       "source": "/ama/building-a-more-extensible-development-environment",
       "destination": "/community/events/ama/building-a-more-extensible-development-environment",
       "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/privacy-security-data",
+      "destination": "privacy-and-security",
+      "statusCode": 301
     }
   ]
 }
