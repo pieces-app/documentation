@@ -23,6 +23,10 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // plugins: [
+  //   'pieces-docs-webpack'
+  // ],
+
   presets: [
     [
       'classic',
