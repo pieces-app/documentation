@@ -41,8 +41,25 @@ As of the 1.12.0 release of the extension, Dev Container environments should als
 
 ### Pieces OS is not connecting on WSL
 
-For WSL users, if the connection does not work automatically, you might have to set up an inbound firewall rule to allow the connection.
+For WSL users, if the connection does not work automatically, you can either enable 'mirrored' networking or set up an inbound firewall rule to allow the connection.
 
+Mirrored networking is the simplest way to resolve WSL connection issues, it requires WSL >= 2.0.0 and Windows 11.
+
+How to set up mirrored networking (recommended):
+(source)[https://superuser.com/questions/1732399/cannot-communicate-with-windows-localhost-from-wsl2]
+1. Locate your .wslconfig file located at (windows_user_profile)/.wslconfig i.e: 'C:\\Users\\caleb\\.wslconfig'
+2. If the .wslconfig file is not present, then create it at the specified path
+3. If there is not a section labeled '[wsl2]', create one.
+4. Add a line under the [wsl2] section that says: 'networkingMode=mirrored'
+5. By the end of these steps your .wslconfig file should look something like:
+```
+[wsl2]
+networkingMode=mirrored
+```
+6. Restart WSL by running `wsl --shutdown` and `wsl` in a Windows command prompt
+
+
+How to set up the firewall rule:
 1. Open Windows Firewall: Press `Win + R`, search `firewall.cpl`, and press Enter.
 2. In the left pane, click on `Advanced settings` to open the Windows Firewall with Advanced Security.
 3. In the left pane, click on `Inbound Rules`.
