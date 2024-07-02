@@ -214,6 +214,11 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
+          id: 'how-to-guides/save-a-snippet/save-a-snippet',
+          label: 'Save a code snippet',
+        },
+        {
+          type: 'doc',
           id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
           label: 'Connecting to a Remote Pieces OS Instance',
         },

@@ -46,7 +46,13 @@ Our <a target="_blank" href="https://pieces.app">Flagship Desktop App</a> provid
 
 ## How to Contribute
 
-Ensure that the issue you'd like to help with is open to [Community Contribution](https://github.com/pieces-app/documentation/labels/community%20contribution). These issues are labels with the `community contribution` label.
+> At the moment, we are not accepting unsolicited contributions.
+>
+> Ensure that the issue you'd like to help with is open to [Community Contribution](https://github.com/pieces-app/documentation/labels/community%20contribution). These issues are labels with the `community contribution` label.
+
+You can find guidance on how to contribute to the Pieces for Developers documentation in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+## Run the Documentation Locally
 
 ### Prerequisites
 
