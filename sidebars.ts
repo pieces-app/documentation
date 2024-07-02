@@ -215,7 +215,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'doc',
           id: 'how-to-guides/save-a-snippet/save-a-snippet',
-          label: 'Save a code snippet',
+          label: 'Save a code snippet using the Pieces Desktop app',
         },
         {
           type: 'doc',
