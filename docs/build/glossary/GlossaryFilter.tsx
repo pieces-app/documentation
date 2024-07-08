@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 type Term = {
   term: string
   definition: string
-  category: 'AIML' | 'Assets' | 'CS Fundamentals' | 'Pieces Specific' | 'Search'
+  category: 'AIML' | 'Assets' | 'CS Fundamentals' | 'Frontend' | 'Pieces Specific' | 'Search'
   referencePath: string
 }
 
