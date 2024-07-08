@@ -249,10 +249,22 @@
       "referencePath": "terms/AIML/large-language-models"
     },
     {
+      "term": "Link Time Optimization (LTO)",
+      "definition": "Link Time Optimization (LTO) is a program optimization technique executed by compilers during the linking stage. It aims to improve runtime performance and reduce the final size of executable programs.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/CS Fundamentals/link-time-optimization"
+    },
+    {
       "term": "Linkify",
       "definition": "The Linkify API generates a publicly sharable link for a code snippet, expecting an asset for the snippet and generating the link once the asset is passed into the API.",
       "category": "Pieces Specific",
       "referencePath": "terms/Pieces Specific/linkify"
+    },
+    {
+      "term": "LoRA (Low-Rank Adaptation)",
+      "definition": "LoRA (Low-Rank Adaptation) is a method of fine-tuning large language models (LLMs) efficiently by adapting only a small subset of model parameters, specifically within the Transformer's attention mechanism",
+      "category": "AIML",
+      "referencePath": "terms/AIML/lora"
     },
     {
       "term": "Masked Language Modeling",
@@ -435,6 +447,12 @@
       "referencePath": "terms/AIML/vector-search"
     },
     {
+      "term": "Vector Store",
+      "definition": "A vector store, also known as a vector database, is a type of database designed to handle high-dimensional vector data. Vectors are mathematical representations of data, each dimension representing different features of the data.",
+      "category": "AIML",
+      "referencePath": "terms/AIML/vector-store"
+    },
+    {
       "term": "Well-Known Health",
       "definition": "The Well-Known Health model is a read-only model that provides information about the health of the OS server, including properties such as the OS health and the schema version.",
       "category": "Pieces Specific",
@@ -445,6 +463,12 @@
       "definition": "Windows Subsystem for Linux (WSL) enables the running of a Linux environment directly on Windows 10 or 11 systems. It allows developers and users to access and work with Linux tools, applications, and shell commands within the Windows operating system, simplifying cross-platform development and application deployment.",
       "category": "CS Fundamentals",
       "referencePath": "terms/CS Fundamentals/windows-subsystem-for-linux"
+    },
+    {
+      "term": "Zero-Shot Learning",
+      "definition": "Zero-shot learning (ZSL) is a machine learning paradigm that addresses the challenge of classifying objects from unseen classes—those for which no training data is available",
+      "category": "AIML",
+      "referencePath": "terms/AIML/zero-shot-learning"
     },
     {
       "term": "qGPTseeds",
