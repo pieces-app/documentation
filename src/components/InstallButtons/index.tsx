@@ -1,9 +1,9 @@
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import CTAButton from "@site/src/components/CTAButton";
-
 import React, { useEffect, useState } from "react";
 import GridFlexRow from "@site/src/components/GridFlexRow";
+import Admonition from "@theme/Admonition";
 
 // Helper function to detect the OS
 function detectOS() {
@@ -82,12 +82,18 @@ export const PiecesInstallOSBasedButtons: React.FC = () => {
   return (
     <>
       {os === "Mobile" ? (
-        <CTAButton
-          href="https://getpieces.typeform.com/to/aVQFTvpE?typeform-source=pieces.app"
-          label={"Get Pieces Install Link"}
-          icon={<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>}
-          type={'secondary'}
-        />
+        <>
+          <Admonition type="info">
+            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop compute
+          </Admonition>
+
+          <CTAButton
+            href="https://getpieces.typeform.com/to/aVQFTvpE?typeform-source=pieces.app"
+            label={"Get Pieces Install Link"}
+            icon={<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>}
+            type={'secondary'}
+          />
+        </>
       ) : (
         <DesktopButtons />
       )}
@@ -102,7 +108,9 @@ export const PiecesOSInstallOSBasedButtons: React.FC = () => {
     <>
       {os === "Mobile" ? (
         <>
-          <p>Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop compute</p>
+          <Admonition type="info">
+            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop compute
+          </Admonition>
 
           <CTAButton
             href="https://getpieces.typeform.com/to/aVQFTvpE?typeform-source=pieces.app"
