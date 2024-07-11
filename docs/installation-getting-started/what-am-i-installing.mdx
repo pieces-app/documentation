@@ -3,6 +3,8 @@ title: Getting Started
 description: Learn what is included in the installation files and find the right set of instructions for your operating system.
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
 import { MiniSpacer } from "/src/components/Spacers";
 import CTAButton from "/src/components/CTAButton";
 import Image from "/src/components/Image";
@@ -21,27 +23,7 @@ Our centralized storage agent (Pieces OS) works on-device, unifying various deve
 
 **Download the Pieces for Developers Desktop App and Pieces OS here:**
 
-<GridFlexRow type={'start'}>
-  <CTAButton
-    href="/installation-getting-started/windows"
-    label={"Get Pieces for Windows"}
-    icon={'/assets/windows_logo_old.png'}
-    type={'secondary'}
-  />
-  <CTAButton
-    href="/installation-getting-started/macos"
-    label={"Get Pieces for macOS"}
-    icon={'/assets/mac_os.png'}
-    iconDark={'/assets/mac_os_dark.png'}
-    type={'secondary'}
-  />
-  <CTAButton
-    href="/installation-getting-started/linux"
-    label={"Get Pieces for Linux"}
-    icon={'/assets/linux_logo.png'}
-    type={'secondary'}
-  />
-</GridFlexRow>
+<InstallButtons />
 
 <MiniSpacer />
 
@@ -88,7 +70,40 @@ Pieces OS enables Pieces products and local LLMs to operate 100% locally on your
 
 Whether you are on macOS, Windows, or Linux, find tailored instructions to get Pieces OS up and running on your machine.
 
-<InstallButtons />
+<Tabs defaultValue={"macos"} values={[{label: 'macOS', value: 'macos'}, {label: 'Windows', value: 'windows'}, {label: 'Linux', value: 'linux'}]}>
+  <TabItem value="macos">
+    <p>Compatible with macOS 11.0 (Big Sur) and higher</p>
+    <CTAButton
+      href="/installation-getting-started/macos"
+      label={"Get Pieces for macOS"}
+      icon={'/assets/mac_os.png'}
+      iconDark={'/assets/mac_os_dark.png'}
+      type={'secondary'}
+    />
+  </TabItem>
+
+  <TabItem value="windows">
+    <p>Compatible with Windows 10 version 1809 and higher</p>
+    <CTAButton
+      href="/installation-getting-started/windows"
+      label={"Get Pieces for Windows"}
+      icon={'/assets/windows_logo_old.png'}
+      type={'secondary'}
+    />
+  </TabItem>
+
+  <TabItem value="linux">
+    <p>Compatible with Ubuntu 18 or higher (Currently in Beta)</p>
+    <CTAButton
+      href="/installation-getting-started/linux"
+      label={"Get Pieces for Linux"}
+      icon={'/assets/linux_logo.png'}
+      type={'secondary'}
+    />
+  </TabItem>
+</Tabs>
+
+[//]: # (<InstallButtons />)
 
 ## Leverage the power of Pieces in your favorite tools
 
