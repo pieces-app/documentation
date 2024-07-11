@@ -92,7 +92,12 @@ const OSBasedButtons: React.FC = () => {
   return (
     <div>
       {os === "Mobile" ? (
-        <button>Mobile Button</button>
+        <CTAButton
+          href="https://getpieces.typeform.com/to/aVQFTvpE?typeform-source=pieces.app"
+          label={"Get Pieces for Mobile"}
+          icon={'/assets/mobile_os.png'}
+          type={'secondary'}
+        />
       ) : (
         <DesktopButtons />
       )}
