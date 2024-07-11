@@ -84,7 +84,7 @@ export const PiecesInstallOSBasedButtons: React.FC = () => {
       {os === "Mobile" ? (
         <>
           <Admonition type="info">
-            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop compute
+            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop computer.
           </Admonition>
 
           <CTAButton
@@ -109,7 +109,7 @@ export const PiecesOSInstallOSBasedButtons: React.FC = () => {
       {os === "Mobile" ? (
         <>
           <Admonition type="info">
-            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop compute
+            Pieces is only available on desktop. Please click below to request an email with download instructions for when you're back on a desktop computer.
           </Admonition>
 
           <CTAButton
