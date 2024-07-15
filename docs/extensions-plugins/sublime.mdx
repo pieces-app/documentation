@@ -2,19 +2,15 @@
 title: Pieces for Developers Sublime Plugin
 description: Learn about the Pieces Sublime Extension, how it functions, and all you can do with the Sublime Plugin.
 ---
+
 import { pieces_app } from "/src/lib/const";
 import CTAButton from "/src/components/CTAButton";
 import GridFlexRow from "/src/components/GridFlexRow";
+import Video from "../../src/components/Video";
 
 # [Pieces for Developers](https://pieces.app) | Sublime Plugin
 
 ![Pieces Sublime Plugin](https://github.com/Bishoy-at-pieces/plugin_sublime/assets/167128903/272cf4cc-60ff-4bd4-8701-3e3feb38a8b1)
-
-
-##### <p align="center"> [Website](https://pieces.app/) • [Pieces OS Documentation](https://docs.pieces.app/) • [Pieces Sublime github repository](https://github.com/pieces-app/plugin_sublime)
-</p>
-
-# Important
 
 Please make sure you have [**Pieces OS**](https://docs.pieces.app/installation-getting-started/what-am-i-installing) installed to run the Package.
 
@@ -35,19 +31,19 @@ You can also open the settings from the command palette `Pieces: Open Settings`.
 
 Saving a new snippet in Pieces is a breeze! Just select the code you want to save, right-click to open the context menu, and choose `Pieces > Save to Pieces`. Your code is now safely stored!
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/create.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/create.gif'} alt={'Save to Pieces in Sublime'} />
 
 ### Engage with the Pieces Copilot
 
 Ever wished for a personal coding assistant? Look no further! With Pieces Copilot, you can have an AI-powered assistant right at your fingertips. Simply open the command palette and select `Pieces: Copilot`. From there, you can ask anything whether it's for coding help, debugging, or even generating snippets to save to Pieces with some clicks.
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/ask%20stream.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/copilot.gif'} alt={'Copilot in Sublime'} />
 
 ### Copilot Ask
 
 Need some help from the Pieces Copilot? Whether it's commenting, fixing a bug, or adding a docstring, just select the code, right-click to open the context menu, and choose `Pieces > Ask Copilot`. Let Copilot do the heavy lifting for you!
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/ask.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/ask.gif'} alt={'Ask Copilot in Sublime'} />
 
 ### Open Saved Materials
 
@@ -57,19 +53,19 @@ Ready to access your saved materials? It's super easy! Just follow these steps:
 2. Run the command: `Pieces: Open Saved Material`.
 3. Select the asset you wish to open from the list.
 
-Your material is now open and ready for you to use. Happy coding! 
+Your material is now open and ready for you to use. Happy coding!
 
 ### Edit Saved Materials
 
 Want to make changes to your saved materials? Switch to editor mode by clicking the **Edit** button on your saved snippet. Modify the content as needed and save your changes with a simple `command/ctrl + s`. It's that easy!
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/open-edit_snippet.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/open-edit_snippet.gif'} alt={'Edit Saved Materials in Sublime'} />
 
 ### Shareable Link
 
 Ever wanted to share a code snippet effortlessly? Select the code, right-click to open the context menu, and choose `Pieces > Generate shareable link`. You can also share a saved material by opening it and clicking the **Share** button. Sharing has never been simpler!
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/share.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/share.gif'} alt={'Shareable Link in Sublime'} />
 
 ### Change the LLM Model
 
@@ -79,7 +75,7 @@ Want to customize your Copilot experience? You can easily switch the LLM model t
 
 You can log in and out of your Pieces account using the `Pieces: Login` or `Pieces: Logout` command in your command palette. An output panel is available to check your cloud status and login status.
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/auth.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/auth.gif'} alt={'Login/Logout in Sublime'} />
 
 ### Connect or Disconnect your Personal Pieces Cloud
 
@@ -98,7 +94,7 @@ There are three main types of seaching:
 
 - **Neural Code Search**: Neural Code Search is a technique that leverages neural networks and machine learning to improve the search and retrieval of code snippets. It allows you to use natural language to describe what you are looking for, capturing the semantics and context of the code to provide more accurate and relevant results.
 
-![](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/search.gif)
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/search.gif'} alt={'Search Saved Materials in Sublime'} />
 
 ### Reload the Plugin
 
@@ -114,7 +110,7 @@ Experiencing an issue or have feedback for the Pieces team? No worries, we've go
 
 - Download the [package control](https://packagecontrol.io/installation)
 - Open your command palette. You can use the shortcut key combination `Ctrl+Shift+P` on Windows and `Cmd+Shift+P` on MacOS.
-- Search for `Package Control: Install Package`  
+- Search for `Package Control: Install Package`
 - Search for Pieces and select it.
 > IMPORTANT: When you first download the package, it will download and install some required dependencies. As a result, you might need to restart Sublime after installing.
 
@@ -123,7 +119,7 @@ Experiencing an issue or have feedback for the Pieces team? No worries, we've go
 You can download and checkout some new beta features before releasing.
 
 - Make sure you have downloaded the [package control](https://packagecontrol.io/installation)
-- Download the `Pieces.sublime-package` from [releases](https://github.com/pieces-app/plugin_sublime/releases) on GitHub 
+- Download the `Pieces.sublime-package` from [releases](https://github.com/pieces-app/plugin_sublime/releases) on GitHub
 - Add `Pieces.sublime-package` to the Installed Packages directory.
   - **Windows**: %APPDATA%\Sublime Text\Installed Packages
   - **MacOS**: ~/Library/Application Support/Sublime Text 3/Installed Packages
