@@ -8,15 +8,27 @@ import CTAButton from "/src/components/CTAButton";
 import GridFlexRow from "/src/components/GridFlexRow";
 import Video from "../../src/components/Video";
 
-# [Pieces for Developers](https://pieces.app) | Sublime Plugin
+<CTAButton
+  href={pieces_app.links.extensions.sublime}
+  label={'Get the Sublime Plugin'}
+  icon={'/assets/sublime_logo.png'}
+  type={'secondary'}
+/>
 
-![Pieces Sublime Plugin](https://github.com/Bishoy-at-pieces/plugin_sublime/assets/167128903/272cf4cc-60ff-4bd4-8701-3e3feb38a8b1)
+<MiniSpacer />
 
+# Pieces for Developers Sublime Text Plugin
+
+:::info
 Please make sure you have [**Pieces OS**](https://docs.pieces.app/installation-getting-started/what-am-i-installing) installed to run the Package.
+:::
+
 
 ## Getting Started with the Pieces Sublime Plugin
 
 Welcome to the **Pieces Sublime Plugin**!
+
+![Pieces Sublime Plugin](https://github.com/Bishoy-at-pieces/plugin_sublime/assets/167128903/272cf4cc-60ff-4bd4-8701-3e3feb38a8b1)
 
 The Pieces Sublime plugin is your gateway to managing your saved materials in Pieces directly from within Sublime Text. Seamlessly interact with Pieces OS and enhance your workflow like never before.
 
@@ -43,6 +55,14 @@ Need some help from the Pieces Copilot? Whether it's commenting, fixing a bug, o
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/ask.gif'} alt={'Ask Copilot in Sublime'} />
 
+### Ask about the current Project/File
+
+- **Ask About the Current Project**: Use the command `Pieces: Ask about the current project` to get to be able to ask the Copilot on your Project.
+- **Ask About the Current File**: Use the command `Pieces: Ask about the current file` to get the current file that is in focus assistance.
+
+### Sublime Snippet Managment
+- **Import Sublime Snippet**: Use the command `Pieces: Import Sublime Snippet` to import a Sublime snippet into Pieces.
+- **Export Pieces Material**: Use the command `Pieces: Export Pieces Material` to export a Pieces snippet back to Sublime.
 ### Open Saved Materials
 
 Ready to access your saved materials? It's super easy! Just follow these steps:
@@ -64,6 +84,13 @@ Want to make changes to your saved materials? Switch to editor mode by clicking 
 Ever wanted to share a code snippet effortlessly? Select the code, right-click to open the context menu, and choose `Pieces > Generate shareable link`. You can also share a saved material by opening it and clicking the **Share** button. Sharing has never been simpler!
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/share.gif'} alt={'Shareable Link in Sublime'} />
+
+### [Auto Complete](https://docs.pieces.app/features/code-completion)
+
+Auto-completion of code via snippets to speed up your coding process.If you have saved Pieces Snippets you get automatic completion via Pieces Snippets for specific language. 
+
+You can turn this settings on/off from your settings.
+> Open your settings from `Pieces: Open Pieces Settings` and overwrite the `snippet.autocomplete` to false to turn the auto-completion off
 
 ### Change the LLM Model
 
