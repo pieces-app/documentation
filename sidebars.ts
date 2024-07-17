@@ -60,6 +60,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/raycast',
+          label: 'Raycast Extension',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
         },
