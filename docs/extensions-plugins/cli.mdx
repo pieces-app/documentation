@@ -114,7 +114,7 @@ pieces open [ITEM_INDEX]
 ```
 ##### Save, Create, Edit, and Delete Assets
 
-The save create edit and delete commands currrently work on the current asset which is by defualt set to the most recent one and you can change the current asset to anything using the open command above.
+The save create edit and delete commands currently work on the current asset which is by defualt set to the most recent one and you can change the current asset to anything using the open command above.
 
 
 ##### Save the current asset:
@@ -202,7 +202,7 @@ Change the model in the ask command.
 pieces change_model [MODEL_INDEX]
 ```
 ##### Conversations command
-###### Coversations
+###### Conversations
 
 List all conversations that you have. The green conversation is the one that is currently being used in the ask command
 
@@ -227,7 +227,7 @@ pieces conversation -n
 Rename a conversation
 
 ```bash
-pieces conversation -r My awsome name
+pieces conversation -r My awesome name
 ```
 
 Or you can make the model rename it for you
@@ -264,9 +264,10 @@ pieces ask "your question" -f /file1 /file2 folder -s 1 2 3
 
 
 
-##### Commiting to github
+##### Auto Commit to Github
 
-Auto commit the code to github and generate a commit message you can use the `-p` or `--push` flags to push the code to the repo too.
+Auto commit the code to github and generate a commit message based on the changes in your staged area.
+you can use the `-p` or `--push` flags to push the code to the repo too.
 
 ```bash
 pieces commit -p
