@@ -73,6 +73,11 @@ const sidebars: SidebarsConfig = {
           id: 'extensions-plugins/teams',
           label: 'Microsoft Teams App',
         },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/cli',
+          label: 'Pieces CLI',
+        },
       ]
     },
     {
