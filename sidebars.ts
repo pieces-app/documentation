@@ -60,7 +60,7 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
-          id: 'extensions-plugins/raycast-extension',
+          id: 'extensions-plugins/raycast',
           label: 'Raycast Extension',
         },
         {
