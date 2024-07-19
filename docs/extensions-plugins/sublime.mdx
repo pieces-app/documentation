@@ -5,11 +5,8 @@ description: Learn about the Pieces Sublime Extension, how it functions, and all
 
 import { pieces_app } from "/src/lib/const";
 import CTAButton from "/src/components/CTAButton";
-import GridFlexRow from "/src/components/GridFlexRow";
 import Video from "../../src/components/Video";
 import { MiniSpacer } from "/src/components/Spacers";
-
-
 
 # Pieces for Developers Sublime Text Plugin
 
@@ -22,30 +19,32 @@ import { MiniSpacer } from "/src/components/Spacers";
 
 <MiniSpacer />
 
-:::info
-Please make sure you have [**Pieces OS**](https://docs.pieces.app/installation-getting-started/what-am-i-installing) installed to run the Package.
-:::
-
-
-## Getting Started with the Pieces Sublime Plugin
-
-Welcome to the **Pieces Sublime Plugin**!
-
-![Pieces Sublime Plugin](https://github.com/Bishoy-at-pieces/plugin_sublime/assets/167128903/272cf4cc-60ff-4bd4-8701-3e3feb38a8b1)
-
 The Pieces Sublime plugin is your gateway to managing your saved materials in Pieces directly from within Sublime Text. Seamlessly interact with Pieces OS and enhance your workflow like never before.
 
-## How to install?
+## Getting Started
 
-### Stable build (Recommended):
+### Installation
+
+:::info
+
+In order to use the Pieces Sublime Plugin, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We also recommend downloading the Pieces for Developers Desktop App.
+
+:::
+
+#### Stable Build (Recommended)
 
 - Download the [package control](https://packagecontrol.io/installation)
-- Open your command palette. You can use the shortcut key combination `Ctrl+Shift+P` on Windows and `Cmd+Shift+P` on MacOS.
+- Open your command palette. You can use the shortcut key combination `Ctrl+Shift+P` on Windows and `Cmd+Shift+P` on macOS.
 - Search for `Package Control: Install Package`
-- Search for Pieces and select it.
-> IMPORTANT: When you first download the package, it will download and install some required dependencies. As a result, you might need to restart Sublime after installing.
+- Search for `Pieces` and select it.
 
-### Pre-releases:
+:::tip
+
+When you first download the package, it will download and install some required dependencies. As a result, you may need to restart Sublime for Pieces to load in.
+
+:::
+
+#### Pre-releases
 
 You can download and checkout some new beta features before releasing.
 
@@ -57,86 +56,71 @@ You can download and checkout some new beta features before releasing.
   - **Linux**: ~/.config/sublime-text/Installed Packages
 - Open Sublime and enjoy the package
 
-## Features
-### Configuration
+### Initial Setup
 
-Before diving in, let's ensure everything is set up to your liking. You can customize the LLM model or the host by navigating to:
-`Preferences > Package Settings > Pieces > Settings`.
-You can also open the settings from the command palette `Pieces: Open Settings`.
+#### Login/Logout
 
-### Right Click to Save to Pieces
+You can log in and out of your Pieces account using the Pieces: Login or Pieces: Logout command in your command palette. However, logging in is completely optional, and you can use our product without authentication.
 
-Saving a new snippet in Pieces is a breeze! Just select the code you want to save, right-click to open the context menu, and choose `Pieces > Save to Pieces`. Your code is now safely stored!
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/auth.gif'} alt={'Login/Logout in Sublime'} />
 
-<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/create.gif'} alt={'Save to Pieces in Sublime'} />
+#### Connect or Disconnect your Personal Pieces Cloud
 
-### Engage with the Pieces Copilot
+You can connect and disconnect from your personal cloud using `Pieces: Connect Personal Cloud` or `Pieces: Disconnect Personal Cloud` command in your command palette.
 
-Ever wished for a personal coding assistant? Look no further! With Pieces Copilot, you can have an AI-powered assistant right at your fingertips. Simply open the command palette and select `Pieces: Copilot`. From there, you can ask anything whether it's for coding help, debugging, or even generating snippets to save to Pieces with some clicks.
+:::tip
 
-### Copilot Ask
+While connecting to your personal cloud provides additional features like generating shareable links and backing up your data, it is not required to use Pieces. You can enjoy the core functionalities anonymously without an account.
 
-Need some help from the Pieces Copilot? Whether it's commenting, fixing a bug, or adding a docstring, just select the code, right-click to open the context menu, and choose `Pieces > Ask Copilot`. Let Copilot do the heavy lifting for you!
+:::
+
+## Core Features
+
+### Pieces Copilot
+
+Get coding assistance from the Pieces Copilot. Ask for help with commenting, debugging, or generating snippets to save to Pieces with just a few clicks.
+
+Open the command palette and select `Pieces: Copilot` to get started.
+
+#### Ask Copilot in Sublime
+
+You can ask Copilot in Sublime by using the command `Pieces: Copilot`. You can ask for help with commenting, debugging, or generating snippets to save to Pieces with just a few clicks.
+
+#### Use Code Context with Copilot
+
+You can also ask Copilot about the current project or file by using the commands:
+- `Pieces: Ask about the current project`
+- `Pieces: Ask about the current file`
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/ask.gif'} alt={'Ask Copilot in Sublime'} />
 
-### Ask about the current Project/File
+### Code Snippet Management
 
-- **Ask About the Current Project**: Use the command `Pieces: Ask about the current project` to get to be able to ask the Copilot on your Project.
-- **Ask About the Current File**: Use the command `Pieces: Ask about the current file` to get the current file that is in focus assistance.
+Manage your saved materials with ease. Save, open, edit, and share your snippets directly from Sublime. You can also search for saved materials using fuzzy search, full-text search, or neural code search.
 
-### Sublime Snippet Managment
-- **Import Sublime Snippet**: Use the command `Pieces: Import Sublime Snippet` to import a Sublime snippet into Pieces.
-- **Export Pieces Material**: Use the command `Pieces: Export Pieces Material` to export a Pieces snippet back to Sublime.
-### Open Saved Materials
+#### Save to Pieces
 
-Ready to access your saved materials? It's super easy! Just follow these steps:
+Save your code snippets to Pieces with a simple right-click. Select the code you want to save, right-click to open the context menu, and choose `Pieces > Save to Pieces`. Your code is now safely stored!
 
-1. Open your command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
-2. Run the command: `Pieces: Open Saved Material`.
-3. Select the asset you wish to open from the list.
+<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/create.gif'} alt={'Save to Pieces in Sublime'} />
 
-Your material is now open and ready for you to use. Happy coding!
-
-### Edit Saved Materials
+#### Edit Saved Materials
 
 Want to make changes to your saved materials? Switch to editor mode by clicking the **Edit** button on your saved snippet. Modify the content as needed and save your changes with a simple `command/ctrl + s`. It's that easy!
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/open-edit_snippet.gif'} alt={'Edit Saved Materials in Sublime'} />
 
-### Shareable Link
+#### Share Your Code
 
 Ever wanted to share a code snippet effortlessly? Select the code, right-click to open the context menu, and choose `Pieces > Generate shareable link`. You can also share a saved material by opening it and clicking the **Share** button. Sharing has never been simpler!
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/share.gif'} alt={'Shareable Link in Sublime'} />
 
-### [Auto Complete](https://docs.pieces.app/features/code-completion)
-
-Auto-completion of code via snippets to speed up your coding process.If you have saved Pieces Snippets you get automatic completion via Pieces Snippets for specific language. 
-
-You can turn this settings on/off from your settings.
-> Open your settings from `Pieces: Open Pieces Settings` and overwrite the `snippet.autocomplete` to false to turn the auto-completion off
-
-### Change the LLM Model
-
-Want to customize your Copilot experience? You can easily switch the LLM model to better suit your needs. Open the settings from your command palette by selecting `Pieces: Open Settings`. You can change some configuration and choose the model that works best for you. Tailor your Copilot to be the perfect coding companion!
-
-### Login/Logout
-
-You can log in and out of your Pieces account using the `Pieces: Login` or `Pieces: Logout` command in your command palette. An output panel is available to check your cloud status and login status.
-
-<Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/auth.gif'} alt={'Login/Logout in Sublime'} />
-
-### Connect or Disconnect your Personal Pieces Cloud
-
-You can connect and disconnect from your cloud using `Pieces: Connect Personal Cloud` or `Pieces: Disconnect Personal Cloud` command in your command palette.
-Note: In order you use these commands, you must have an account connected to Pieces.
-
-### Find your Saved Materials
+#### Search Your Saved Materials
 
 You can search a saved material using `Pieces: Search`.
 
-There are three main types of seaching:
+There are three main types of searching:
 
 - **Fuzzy Search**: Fuzzy Search is a technique used to find matches that are likely to be relevant, even if they are not exact matches. It is particularly useful for handling typos, misspellings, and variations in data.
 
@@ -146,6 +130,37 @@ There are three main types of seaching:
 
 <Video type={'gif'} src={'https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/SUBLIME/search.gif'} alt={'Search Saved Materials in Sublime'} />
 
+#### Open Your Saved Materials
+
+Ready to access your saved materials? It's super easy! Just follow these steps:
+
+1. Open your command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Run the command: `Pieces: Open Saved Material`.
+3. Select the asset you wish to open from the list.
+
+Your material is now open and ready for you to use. Happy coding!
+
+#### Sublime Snippet Management
+
+You can import and export Sublime snippets to and from Pieces. Here's how you can do it:
+
+- **Import Sublime Snippet**: Use the command `Pieces: Import Sublime Snippet` to import a Sublime snippet into Pieces.
+- **Export Pieces Material**: Use the command `Pieces: Export Pieces Material` to export a Pieces snippet into Sublime.
+
+## Configuration
+
+Before diving in, let's ensure everything is set up to your liking. You can customize settings like your active LLM model and many others by navigating to:
+`Preferences > Package Settings > Pieces > Settings`.
+
+> You can also open the settings from the command palette `Pieces: Open Settings`.
+
+### Change Your LLM Model
+
+Want to customize your Copilot experience? You can easily switch the LLM model to better suit your needs. Open the settings from your command palette by selecting `Pieces: Open Settings`. You can change some configuration and choose the model that works best for you. Tailor your Copilot to be the perfect coding companion!
+
+
+## Troubleshooting
+
 ### Reload the Plugin
 
 If you're experiencing an issue or something isn't working properly, try reloading the plugin using the command `Pieces: Reload Plugin` in your command palette. Don't forget to make sure Pieces OS is running.
@@ -154,11 +169,11 @@ If you're experiencing an issue or something isn't working properly, try reloadi
 
 Experiencing an issue or have feedback for the Pieces team? No worries, we've got you covered. Simply open the command palette and run `Pieces: Get Support`. From here, you will find resources where you can connect with the Pieces team.
 
-### Privacy and Data Collection
+## Privacy and Data Collection
 
 We take your privacy seriously. We are committed to ensuring that your data remains private and secure. To that end, we want to make it clear that:
 
 **We do not collect any client side telemetry.**
 
-[Read more about data collection and privacy](https://docs.pieces.app/product-highlights-and-benefits/privacy-security-data)
+[Read more about data collection and privacy](/product-highlights-and-benefits/privacy-security-data)
 
