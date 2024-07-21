@@ -60,7 +60,7 @@ const config: Config = {
         route: '/test/build/reference/apis',
         configuration: {
           spec: {
-            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/modules/core/isomorphic.openapi.yaml?token=GHSAT0AAAAAACMNQGHS7AYFOYJTPFVITWUCZU5J7GA',
+            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/modules/core/isomorphic.openapi.yaml',
           },
           hideDownloadButton: true,
         },
@@ -74,7 +74,7 @@ const config: Config = {
         route: '/test/build/reference/models',
         configuration: {
           spec: {
-            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/common/runtime_common_library.yaml?token=GHSAT0AAAAAACMNQGHSXVYAAIS6JVETVYY4ZU5J7BA',
+            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/common/runtime_common_library.yaml',
           },
           hideDownloadButton: true,
         },
