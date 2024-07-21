@@ -2,6 +2,7 @@ import {themes as prismThemes} from'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import {EnumChangefreq} from "sitemap";
+import {ScalarOptions} from "@scalar/docusaurus";
 
 const config: Config = {
   title: 'Pieces for Developers',
@@ -48,6 +49,37 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
+    [
+      '@scalar/docusaurus',
+      {
+        id: 'scalar-apis',
+        label: 'APIs',
+        route: '/test/build/reference/apis',
+        configuration: {
+          spec: {
+            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/modules/core/isomorphic.openapi.yaml?token=GHSAT0AAAAAACMNQGHS7AYFOYJTPFVITWUCZU5J7GA',
+          },
+          hideDownloadButton: true,
+        },
+      } as ScalarOptions,
+    ],
+    [
+      '@scalar/docusaurus',
+      {
+        id: 'scalar-models',
+        label: 'Models',
+        route: '/test/build/reference/models',
+        configuration: {
+          spec: {
+            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/main/spec/common/runtime_common_library.yaml?token=GHSAT0AAAAAACMNQGHSXVYAAIS6JVETVYY4ZU5J7BA',
+          },
+          hideDownloadButton: true,
+        },
+      } as ScalarOptions,
+    ]
   ],
 
   themeConfig: {
