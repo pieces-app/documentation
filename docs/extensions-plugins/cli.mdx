@@ -9,6 +9,8 @@ import Video from "/src/components/Video";
 import GridFlexRow from "/src/components/GridFlexRow";
 import CTAButton from "/src/components/CTAButton";
 
+# Pieces CLI
+
 <CTAButton
   href={pieces_app.links.extensions.cli}
   label={'Get the Pieces CLI'}
@@ -16,7 +18,7 @@ import CTAButton from "/src/components/CTAButton";
   iconDark={'/assets/pieces_logos/black_circle.png'} 
   type={'secondary'}
 />
-# Pieces CLI
+
 <MiniSpacer />
 :::info
 
@@ -107,12 +109,12 @@ pieces open [ITEM_INDEX]
 ```
 ### Save, Create, Edit, and Delete Assets
 
-The save create edit and delete commands currently work on the current asset which is by defualt set to the most recent one and you can change the current asset to anything using the open command above.
+The save create edit and delete commands currently work on the current asset which is by default set to the most recent one and you can change the current asset to anything using the open command above.
 
 
-### Save the current asset:
+#### Save the current asset:
 
-You need to edit the snippet code that was opened via the open command `pieces open` then save the changes to using the save command
+You need to edit the snippet code that was opened via the open command `pieces open` and then save the changes using the save command
 
 ```bash
 pieces save
@@ -120,7 +122,7 @@ pieces save
 
 #### Create a new asset:
 
-Will take whatever text is copied to your clipboard and create an asset. The asset will automatically be scanned and recognized for it's file type. 
+Will take whatever text is copied to your clipboard and create an asset. The asset will automatically be scanned and recognized for its file type. 
 
 ```bash
 pieces create
@@ -198,7 +200,7 @@ pieces conversations
 
 #### Conversation
 
-List the messages in the currently using conversation in the ask command. 
+List the messages in the currently used conversation in the ask command. 
 
 ```bash
 pieces conversation
@@ -238,7 +240,7 @@ pieces conversation x
 ### Ask a question to a model:
 **Requires quotes around question**
 
-Ask the Pieces Copilot a question. You can add a relevant file, you can also add relevant snippets based on their index shown in the assets list command. In order to change models from the default (GPT3.5), use the `change_model` command You can add a relevance file or snippet index check the `list assets` command.
+Ask the Pieces Copilot a question. You can add a relevant file, you can also add relevant snippets based on their index shown in the assets list command. In order to change models from the default (GPT3.5), use the `change_model` command You can add a relevant file or snippet index by checking the `list assets` command.
 You can use `.` or `/` to refer to the current directory 
 
 ```bash
