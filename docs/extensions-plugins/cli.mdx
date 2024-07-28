@@ -16,7 +16,7 @@ import CTAButton from "/src/components/CTAButton";
   iconDark={'/assets/pieces_logos/black_circle.png'} 
   type={'secondary'}
 />
-
+# Pieces CLI
 <MiniSpacer />
 :::info
 
@@ -44,20 +44,20 @@ To get started with the Pieces Python CLI, you need to:
    conda install pieces-cli
    ```
 
-# Getting Started
+## Getting Started
 After installing the CLI, you can access its functionalities through the terminal. The tool is initialized with the command `pieces` followed by various subcommands and options.
 
 
-# Some important terminologies
+## Some important terminologies
 
 - `x` -> The index
 - `current asset` -> The asset that you are currently using can be changed by the open command 
 - `current conversation` -> The conversation that you currently using in the ask command
 
 
-# Usage
+## Usage
 
-## Run
+### Run
 The run command starts the CLI in a loop. While you can use each command without running the CLI in a loop you'll get much faster results and a better experience using run. 
 
 Once the CLI is running in a loop you can simply type the command.
@@ -74,38 +74,38 @@ If you have a numbered list or search open you can just type the number and it w
 pieces run
 ```
 
-## List command
+### List command
 To list assets applications or models, use the command:
 
-### Default of 10 assets
+#### Default of 10 assets
   ```bash
   pieces list
   ```
 
-### Lists your x most recent assets
+#### Lists your x most recent assets
   ```bash
   pieces list assets x
   ```
 
-### Lists all registered applications
+#### Lists all registered applications
   ```bash
   pieces list apps
   ```
 
-### Lists all accessible AI models 
+#### Lists all accessible AI models 
   ```bash
   pieces list models
   ```
 
 
-## Open an asset:
+### Open an asset:
 
 Opens an asset from a list or search. If only "open" is used then it will open your most recent asset. This also creates a link to the asset's code.
 
 ```bash
 pieces open [ITEM_INDEX]
 ```
-## Save, Create, Edit, and Delete Assets
+### Save, Create, Edit, and Delete Assets
 
 The save create edit and delete commands currently work on the current asset which is by defualt set to the most recent one and you can change the current asset to anything using the open command above.
 
@@ -118,7 +118,7 @@ You need to edit the snippet code that was opened via the open command `pieces o
 pieces save
 ```
 
-### Create a new asset:
+#### Create a new asset:
 
 Will take whatever text is copied to your clipboard and create an asset. The asset will automatically be scanned and recognized for it's file type. 
 
@@ -126,7 +126,7 @@ Will take whatever text is copied to your clipboard and create an asset. The ass
 pieces create
 ```
 
-### Edit an existing asset:
+#### Edit an existing asset:
 
 This will edit the name and reclassify the current asset.
 
@@ -149,7 +149,7 @@ to edit the classification
 
 You can you -n or -c to change the name and classification respectively with the edit command.
 
-### Delete an asset:
+#### Delete an asset:
 
 This will delete an opened asset by using a list or search first. If you do not have an opened asset it will open your most recent asset and ask if you'd like to delete it. 
 
@@ -157,9 +157,8 @@ This will delete an opened asset by using a list or search first. If you do not 
 pieces delete
 ```
 
-
-## Search and Query
-### Perform a fuzzy search:
+### Search and Query
+#### Perform a fuzzy search:
 
 ```bash
 pieces search [your query]
@@ -167,29 +166,29 @@ pieces search [your query]
 
 Finds strings that approximately match patterns. Normal search.
 
-### Perform a Neural Code Search:
+#### Perform a Neural Code Search:
 ```bash
 pieces search query --mode ncs
 ```
 
 Uses machine learning, deep neural networks, and natural language processing. It can understand the intent of a user's search query and match it with the most relevant results.
 
-### Perform a Full Text Search:
+#### Perform a Full-Text Search:
 ```bash
 pieces search query --mode fts
 ```
 
 Examines all words in a document to find matches to search criteria.
 
-## change the llm model you are using:
+### Change the llm model you are using:
 
 Change the model in the ask command.
 
 ```bash
 pieces change_model [MODEL_INDEX]
 ```
-## Conversations command
-### Conversations
+### Conversations command
+#### Conversations
 
 List all conversations that you have. The green conversation is the one that is currently being used in the ask command
 
@@ -236,7 +235,7 @@ pieces conversation x
 ```
 
 
-## Ask a question to a model:
+### Ask a question to a model:
 **Requires quotes around question**
 
 Ask the Pieces Copilot a question. You can add a relevant file, you can also add relevant snippets based on their index shown in the assets list command. In order to change models from the default (GPT3.5), use the `change_model` command You can add a relevance file or snippet index check the `list assets` command.
@@ -246,9 +245,9 @@ You can use `.` or `/` to refer to the current directory
 pieces ask "your question" -f /file1 /file2 folder -s 1 2 3
 ```
 
-## Auto Commit to Github
+### Auto-Commit to Github
 
-Auto commit the code to github and generate a commit message based on the changes in your staged area.
+Auto-commit your GitHub code and generate a commit message based on the changes in your staged area.
 you can use the `-p` or `--push` flags to push the code to the repo too.
 
 ```bash
@@ -262,7 +261,7 @@ pieces commit -i
 ```
 You can use the `-a` flag to stage all of your changes and then generate the committing messages
 
-## Login and logout 
+### Login and logout 
 Login to pieces 
 
 ```bash
@@ -275,19 +274,19 @@ Logout from pieces
 pieces logout
 ```
 
-## Additional Commands
-### Retrieve the version of Pieces OS and the CLI:
+### Additional Commands
+#### Retrieve the version of Pieces OS and the CLI:
 
 ```bash
 pieces version
 ```
 
-### For a detailed help menu:
+#### For a detailed help menu:
 
 ```bash
 pieces help
 ```
-### clear:
+#### clear:
 
 It only works in the loop to clear the terminal.
 
