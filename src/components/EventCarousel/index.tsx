@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import CTAButton from "@site/src/components/CTAButton";
+import { log } from 'console';
 
 type Event = {
   type: 'All' | 'Podcast' | 'Twitter Space' | 'Livestream' | 'Meetup'
@@ -106,7 +107,7 @@ const EventCarousel = () => {
         {categories.map((category, index) => (
           <span
             key={index}
-            className={`category ${eventTypeFilter === category.toLowerCase() ? 'active' : ''}`}
+            className={`category ${eventTypeFilter.toLowerCase() === category.toLowerCase() ? 'active' : ''}`}
             onClick={() => setEventTypeFilter(category.toLowerCase() as Event['type'])}
           >
             {category}
