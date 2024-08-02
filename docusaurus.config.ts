@@ -57,7 +57,7 @@ const config: Config = {
       {
         id: 'scalar-apis',
         label: 'APIs',
-        route: '/test/build/reference/apis',
+        route: '/build/reference/apis',
         configuration: {
           spec: {
             url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/modules/core/public_isomorphic.openapi.yaml?token=GHSAT0AAAAAACMNQGHSMVOS2IAXRRELITX6ZVNMFCA',
@@ -71,7 +71,7 @@ const config: Config = {
       {
         id: 'scalar-models',
         label: 'Models',
-        route: '/test/build/reference/models',
+        route: '/build/reference/models',
         configuration: {
           spec: {
             url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/common/public_runtime_common_library.yaml?token=GHSAT0AAAAAACMNQGHSMFL4GEX3RIF3GF2KZVNMFKQ',
