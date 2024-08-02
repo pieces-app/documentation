@@ -51,36 +51,36 @@ const config: Config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     '@scalar/docusaurus',
-  //     {
-  //       id: 'scalar-apis',
-  //       label: 'APIs',
-  //       route: '/test/build/reference/apis',
-  //       configuration: {
-  //         spec: {
-  //           url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/modules/core/public_isomorphic.openapi.yaml?token=GHSAT0AAAAAACMNQGHSMVOS2IAXRRELITX6ZVNMFCA',
-  //         },
-  //         hideDownloadButton: true,
-  //       },
-  //     } as ScalarOptions,
-  //   ],
-  //   [
-  //     '@scalar/docusaurus',
-  //     {
-  //       id: 'scalar-models',
-  //       label: 'Models',
-  //       route: '/test/build/reference/models',
-  //       configuration: {
-  //         spec: {
-  //           url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/common/public_runtime_common_library.yaml?token=GHSAT0AAAAAACMNQGHSMFL4GEX3RIF3GF2KZVNMFKQ',
-  //         },
-  //         hideDownloadButton: true,
-  //       },
-  //     } as ScalarOptions,
-  //   ]
-  // ],
+  plugins: [
+    [
+      '@scalar/docusaurus',
+      {
+        id: 'scalar-apis',
+        label: 'APIs',
+        route: '/test/build/reference/apis',
+        configuration: {
+          spec: {
+            url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/modules/core/public_isomorphic.openapi.yaml?token=GHSAT0AAAAAACMNQGHSMVOS2IAXRRELITX6ZVNMFCA',
+          },
+          hideDownloadButton: true,
+        },
+      } as ScalarOptions,
+    ],
+    // [
+    //   '@scalar/docusaurus',
+    //   {
+    //     id: 'scalar-models',
+    //     label: 'Models',
+    //     route: '/test/build/reference/models',
+    //     configuration: {
+    //       spec: {
+    //         url: 'https://raw.githubusercontent.com/open-runtime/generated_runtime/oss-spec-files/public/spec/common/public_runtime_common_library.yaml?token=GHSAT0AAAAAACMNQGHSMFL4GEX3RIF3GF2KZVNMFKQ',
+    //       },
+    //       hideDownloadButton: true,
+    //     },
+    //   } as ScalarOptions,
+    // ]
+  ],
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
