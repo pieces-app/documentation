@@ -1,11 +1,11 @@
 {
   "name": "documentation",
   "version": "2.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "docusaurus start",
     "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js",
-    "build": "docusaurus build --no-minify",
+    "build": "docusaurus build",
     "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
     "clear": "docusaurus clear",
