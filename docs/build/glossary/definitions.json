@@ -93,10 +93,22 @@
       "referencePath": "terms/backtracking"
     },
     {
+      "term": "Causal Language Model",
+      "definition": "A Causal Language Model (CLM) is a type of language model designed to predict the next token in a sequence based on the previous tokens, without access to future context.",
+      "category": "AIML",
+      "referencePath": "terms/casual-language-model"
+    },
+    {
       "term": "Classification",
       "definition": "Classification is a machine-learning task that involves assigning a label to an input data point.",
       "category": "AIML",
       "referencePath": "terms/classification"
+    },
+    {
+      "term": "Conditional Variational Autoencoder",
+      "definition": "A Conditional Variational Autoencoder (CVAE) is an extension of the Variational Autoencoder (VAE), a type of neural network that aims to generate data similar to its training set.",
+      "category": "AIML",
+      "referencePath": "terms/conditional-variation-autoencoder"
     },
     {
       "term": "Context",
@@ -123,10 +135,22 @@
       "referencePath": "terms/copilot"
     },
     {
+      "term": "Data Tokenization",
+      "definition": "Data tokenization in the context of Artificial Intelligence (AI), specifically in Natural Language Processing (NLP), refers to the process of breaking down text into smaller units called tokens.",
+      "category": "AIML",
+      "referencePath": "terms/data-tokenization"
+    },
+    {
       "term": "Debugging AI",
       "definition": "Debugging AI refers to the use of artificial intelligence (AI) tools to enhance the process of identifying and fixing bugs in software code. These tools leverage AI technologies to automate and optimize the debugging process, making it more efficient and less prone to human error.",
       "category": "AIML",
       "referencePath": "terms/debugging-ai"
+    },
+    {
+      "term": "Diffusion Models",
+      "definition": "Diffusion models are a class of generative models that have significantly impacted fields such as image generation, audio synthesis, and more, by effectively learning to reverse a process that gradually adds noise to data.",
+      "category": "AIML",
+      "referencePath": "terms/diffusion-models"
     },
     {
       "term": "Disassociate",
@@ -183,6 +207,12 @@
       "referencePath": "terms/fts"
     },
     {
+      "term": "GRPC Streaming",
+      "definition": "gRPC streaming refers to a communication pattern enabled by the gRPC framework, which utilizes HTTP/2's advanced features to transmit multiple messages between client and server over a single established connection.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/grpc-streaming"
+    },
+    {
       "term": "Ghost Assets",
       "definition": "Ghost assets enable assets that are added to Pieces but not included in typical snapshots, allowing for internal addition of assets without returning them to a user unless explicitly stated.",
       "category": "Pieces Specific",
@@ -235,6 +265,12 @@
       "definition": "An open-source framework designed to streamline the development of applications powered by large language models (LLMs).",
       "category": "AIML",
       "referencePath": "terms/langchain"
+    },
+    {
+      "term": "Language Model Hallucination",
+      "definition": "Language model hallucination occurs when a large language model (LLM) generates text that is not supported by its input data or training content. This phenomenon can manifest as minor inaccuracies or complete fabrications, affecting the reliability and trustworthiness of the model's outputs.",
+      "category": "AIML",
+      "referencePath": "terms/language-model-hallucination"
     },
     {
       "term": "Language Server Protocol",
@@ -441,6 +477,24 @@
       "referencePath": "terms/telemetry"
     },
     {
+      "term": "Transformers",
+      "definition": "A transformer is an advanced model architecture in machine learning that uses an attention mechanism to dynamically weigh the significance of different words in a sentence.",
+      "category": "AIML",
+      "referencePath": "terms/transformers"
+    },
+    {
+      "term": "Transitive Dependencies",
+      "definition": "Transitive dependencies in software development refer to an indirect dependency relationship within a project's library or framework. Specifically, if a software module (Module A) depends on another module (Module B), which in turn relies on a third module (Module C), Module C is a transitive dependency for Module A.",
+      "category": "CS Fundamentals",
+      "referencePath": "terms/transitive-dependencies"
+    },
+    {
+      "term": "Vector Quantization",
+      "definition": "Vector Quantization (VQ) is a pivotal data compression technique predominantly utilized in digital signal processing.",
+      "category": "AIML",
+      "referencePath": "terms/vector-quantization"
+    },
+    {
       "term": "Vector Search",
       "definition": "Vector search is a sophisticated data retrieval method that utilizes mathematical vectors to analyze and process complex, unstructured data. Learn more about vector search, its benefits, drawbacks, and key takeaways.",
       "category": "AIML",
@@ -451,6 +505,12 @@
       "definition": "A vector store, also known as a vector database, is a type of database designed to handle high-dimensional vector data. Vectors are mathematical representations of data, each dimension representing different features of the data.",
       "category": "AIML",
       "referencePath": "terms/vector-store"
+    },
+    {
+      "term": "Vision Transformers",
+      "definition": "Vision Transformers (ViT) are a type of neural network architecture primarily used for image recognition tasks.",
+      "category": "AIML",
+      "referencePath": "terms/vision-transformers"
     },
     {
       "term": "Well-Known Health",

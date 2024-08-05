@@ -65,6 +65,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/sublime',
+          label: 'Sublime Plugin',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
         },
