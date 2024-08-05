@@ -34,49 +34,67 @@ const sidebars: SidebarsConfig = {
           ]
         },
         {
-          type: 'doc',
-          id: 'extensions-plugins/vscode',
-          label: 'VS Code Extension',
+          type: 'category',
+          label: 'Development',
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions-plugins/jetbrains',
+              label: 'JetBrains Plugin',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/sublime',
+              label: 'Sublime Plugin',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/visual-studio',
+              label: 'Visual Studio Extension',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/vscode',
+              label: 'VS Code Extension',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/web-extension',
+              label: 'Web Extension',
+            },
+          ]
         },
         {
-          type: 'doc',
-          id: 'extensions-plugins/web-extension',
-          label: 'Web Extension',
+          type: 'category',
+          label: 'Productivity',
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions-plugins/azure-data-studio',
+              label: 'Azure Data Studio',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/jupyterlab',
+              label: 'JupyterLab Extension',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/obsidian',
+              label: 'Obsidian Plugin',
+            },
+          ],
         },
         {
-          type: 'doc',
-          id: 'extensions-plugins/jetbrains',
-          label: 'JetBrains Plugin',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/obsidian',
-          label: 'Obsidian Plugin',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/visual-studio',
-          label: 'Visual Studio Extension',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/sublime',
-          label: 'Sublime Plugin',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/azure-data-studio',
-          label: 'Azure Data Studio',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/jupyterlab',
-          label: 'JupyterLab Extension',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/teams',
-          label: 'Microsoft Teams App',
+          type: 'category',
+          label: 'Communication',
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions-plugins/teams',
+              label: 'Microsoft Teams App',
+            },
+          ]
         },
       ]
     },
