@@ -59,25 +59,9 @@ const sidebars: SidebarsConfig = {
           label: 'Visual Studio Extension',
         },
         {
-          type: 'category',
-          label: 'Raycast Extension',
-          items: [
-            {
-              type: 'doc',
-              id: 'extensions-plugins/raycast/index',
-              label: 'Overview',
-            },
-            {
-              type: 'doc',
-              id: 'extensions-plugins/raycast/quickstart',
-              label: 'Quickstart',
-            },
-            {
-              type: 'doc',
-              id: 'extensions-plugins/raycast/commands',
-              label: 'Commands',
-            }
-          ]
+          type: 'doc',
+          id: 'extensions-plugins/raycast/index',
+          label: 'Raycast Plugin',
         },
         {
           type: 'doc',
@@ -616,6 +600,31 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
+
+  // Raycast Sidebar
+  raycastSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/commands',
+      label: 'Commands',
+    }
+  ],
+
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars,
 };
