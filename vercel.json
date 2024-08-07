@@ -197,13 +197,13 @@
       "statusCode": 301
     },
     {
-      "destination": "/terms",
-      "source": "https://pieces.app/legal/terms",
+      "source": "/terms",
+      "destination": "https://pieces.app/legal/terms",
       "statusCode": 301
     },
     {
-      "destination": "/privacy-policy",
-      "source": "https://pieces.app/legal/privacy-policy",
+      "source": "/privacy-policy",
+      "destination": "https://pieces.app/legal/privacy-policy",
       "statusCode": 301
     }
   ]
