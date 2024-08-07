@@ -626,7 +626,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'extensions-plugins/cli/commands',
-      label: 'Coomands',
+      label: 'Commands',
     },
   ],
   
