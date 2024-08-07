@@ -22,7 +22,6 @@ yarn-error.log*
 # Default ignored files
 /shelf/
 /workspace.xml
-/.vscode/
 .idea
 # Editor-based HTTP Client requests
 /httpRequests/
