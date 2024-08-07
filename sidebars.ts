@@ -59,9 +59,25 @@ const sidebars: SidebarsConfig = {
           label: 'Visual Studio Extension',
         },
         {
-          type: 'doc',
-          id: 'extensions-plugins/raycast',
+          type: 'category',
           label: 'Raycast Extension',
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions-plugins/raycast/index',
+              label: 'Overview',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/raycast/quickstart',
+              label: 'Quickstart',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/raycast/commands',
+              label: 'Commands',
+            }
+          ]
         },
         {
           type: 'doc',
