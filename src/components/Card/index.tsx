@@ -98,11 +98,13 @@ const CardWithCTA = ({
           alignItems: 'center',
           gap: '10px'
         }}>
-          <img
-            src={darkIcon && colorMode === 'dark' ? darkIcon : icon}
-            alt={title}
-            width={40}
-          />
+          {icon && (
+            <img
+              src={darkIcon && colorMode === 'dark' ? darkIcon : icon}
+              alt={title}
+              width={40}
+            />
+          )}
           <span style={{
             fontSize: '1.25rem',
             fontWeight: 'bold'
@@ -147,11 +149,13 @@ const CardWithoutCTA = ({
           alignItems: 'center',
           gap: '10px'
         }}>
-          <img
-            src={darkIcon && colorMode === 'dark' ? darkIcon : icon}
-            alt={title}
-            width={40}
-          />
+          {icon && (
+            <img
+              src={darkIcon && colorMode === 'dark' ? darkIcon : icon}
+              alt={title}
+              width={40}
+            />
+          )}
           <span style={{
             fontSize: '1.25rem',
             fontWeight: 'bold'
