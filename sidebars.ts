@@ -60,6 +60,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/cli/index',
+          label: 'Pieces CLI',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/sublime',
           label: 'Sublime Plugin',
         },
@@ -77,11 +82,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'extensions-plugins/teams',
           label: 'Microsoft Teams App',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/cli/index',
-          label: 'Pieces CLI',
         },
       ]
     },
