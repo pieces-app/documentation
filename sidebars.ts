@@ -78,32 +78,11 @@ const sidebars: SidebarsConfig = {
           id: 'extensions-plugins/teams',
           label: 'Microsoft Teams App',
         },
-        // {
-        //   type: 'doc',
-        //   id: 'extensions-plugins/cli',
-        //   label: 'Pieces CLI',
-        // },
         {
-          type: 'category',
+          type: 'doc',
+          id: 'extensions-plugins/cli/index',
           label: 'Pieces CLI',
-          items: [
-            {
-              type: 'doc',
-              id: 'extensions-plugins/cli/index',
-              label: 'Overview',
-            },
-            {
-              type: 'doc',
-              id: 'extensions-plugins/cli/quickstart',
-              label: 'Quickstart',
-            },
-            {
-              type: 'doc',
-              id: 'extensions-plugins/cli/commands',
-              label: 'Commands',
-            },
-          ]
-        }
+        },
       ]
     },
     {
@@ -621,6 +600,31 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
+
+  // Pieces CLI Sidebar
+  cliSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/commands',
+      label: 'Commands',
+    },
+  ],
+
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars,
 };
