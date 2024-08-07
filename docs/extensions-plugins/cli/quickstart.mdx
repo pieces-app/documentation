@@ -1,0 +1,59 @@
+---
+title: Pieces for Developers CLI Quickstart
+description: Learn how to set up and start using the Pieces CLI.
+---
+
+import CTAButton from "/src/components/CTAButton";
+import { pieces_app } from "/src/lib/const";
+
+# Quickstart
+
+In this tutorial, you'll learn how to set up and start using the Pieces CLI. We'll cover the installation process and basic usage to help you get up and running quickly.
+
+<CTAButton
+  href={pieces_app.links.extensions.cli}
+  label={'Pieces CLI'}
+  icon={'/assets/pieces_logos/white_circle.png'} 
+  iconDark={'/assets/pieces_logos/black_circle.png'} 
+  type={'secondary'}
+/>
+
+## Prerequisites
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) installed on your machine.
+
+## Steps
+
+### Step 1: Install the Pieces CLI
+1. Ensure Pieces OS is installed and running on your system
+2. Install the Python package:
+   ```bash
+   pip install pieces-cli
+   ```
+   Or via Homebrew:
+   ```bash
+   brew install pieces-cli
+   ```
+   Or via Conda:
+   ```bash
+   conda install pieces-cli
+   ```
+
+### Step 2: Verify Installation
+1. Open your terminal
+2. Run the following command to verify the installation:
+   ```bash
+   pieces version
+   ```
+   If the installation was successful, you should see the version of the Pieces CLI.
+
+### Step 3: Explore Basic Commands
+Run the following command to see the available commands:
+  ```bash
+  pieces help
+  ```
+
+Congratulations! You have successfully set up and started using the Pieces CLI.
+
+## Next Steps
+Explore more features and commands to streamline your workflow and boost productivity. Visit the [Commands](/cli/commands) section for detailed information.

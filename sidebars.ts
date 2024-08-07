@@ -78,11 +78,32 @@ const sidebars: SidebarsConfig = {
           id: 'extensions-plugins/teams',
           label: 'Microsoft Teams App',
         },
+        // {
+        //   type: 'doc',
+        //   id: 'extensions-plugins/cli',
+        //   label: 'Pieces CLI',
+        // },
         {
-          type: 'doc',
-          id: 'extensions-plugins/cli',
+          type: 'category',
           label: 'Pieces CLI',
-        },
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions-plugins/cli/index',
+              label: 'Overview',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/cli/quickstart',
+              label: 'Quickstart',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/cli/commands',
+              label: 'Commands',
+            },
+          ]
+        }
       ]
     },
     {
