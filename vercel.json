@@ -195,6 +195,16 @@
       "source": "/ama/building-a-more-extensible-development-environment",
       "destination": "/community/events/ama/building-a-more-extensible-development-environment",
       "statusCode": 301
+    },
+    {
+      "destination": "/terms",
+      "source": "https://pieces.app/legal/terms",
+      "statusCode": 301
+    },
+    {
+      "destination": "/privacy-policy",
+      "source": "https://pieces.app/legal/privacy-policy",
+      "statusCode": 301
     }
   ]
 }
