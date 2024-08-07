@@ -24,6 +24,7 @@
   --ifm-color-secondary-lightest: #ffffff;
 
   --ifm-code-font-size: 95%;
+  --ifm-footer-background-color: var(--ifm-color-secondary-light);
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 
