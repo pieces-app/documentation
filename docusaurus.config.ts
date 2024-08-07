@@ -138,32 +138,32 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/getpieces',
+              href: 'https://pieces.app/discord',
             },
             {
               label: 'Twitter',
               href: 'https://twitter.com/getpieces',
             },
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/getpieces',
-            },
-            {
               label: 'YouTube',
-              href: 'https://www.youtube.com/@getpieces',
+              href: 'https://youtube.com/@getpieces',
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/getpieces',
-            },
-            {
-              label: 'Facebook',
-              href: 'https://www.facebook.com/getpieces',
+              href: 'https://instagram.com/getpieces',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/orgs/pieces-app',
-            }
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/company/getpieces',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://facebook.com/getpieces',
+            },
           ],
         },
         {
@@ -179,7 +179,7 @@ const config: Config = {
             },
             {
               label: 'Press',
-              href: 'https://news.pieces.app',
+              href: 'https://pieces.app/news',
             },
             {
               label: 'Newsletter',
