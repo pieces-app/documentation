@@ -83,9 +83,8 @@ export default function NotFoundContent({className}) {
         <div>
           <h2>Need more help?</h2>
           <ul>
-            <li>
-              <a href={'/support'}>Contact Support</a>
-            </li>
+            <li><a href={'/support'}>Contact Support</a></li>
+            <li><a href={'https://pieces.app/discord'}>Join our Discord</a></li>
           </ul>
         </div>
       </div>

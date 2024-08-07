@@ -51,38 +51,38 @@ const config: Config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     '@scalar/docusaurus',
-  //     {
-  //       id: 'scalar-apis',
-  //       label: 'APIs',
-  //       route: '/build/reference/apis',
-  //       showNavLink: false,
-  //       configuration: {
-  //         spec: {
-  //           url: '',
-  //         },
-  //         hideDownloadButton: true,
-  //       },
-  //     } as ScalarOptions,
-  //   ],
-  //   [
-  //     '@scalar/docusaurus',
-  //     {
-  //       id: 'scalar-models',
-  //       label: 'Models',
-  //       route: '/build/reference/models',
-  //       showNavLink: false,
-  //       configuration: {
-  //         spec: {
-  //           url: '',
-  //         },
-  //         hideDownloadButton: true,
-  //       },
-  //     } as ScalarOptions,
-  //   ]
-  // ],
+  plugins: [
+    [
+      '@scalar/docusaurus',
+      {
+        id: 'scalar-apis',
+        label: 'APIs',
+        route: '/build/reference/apis',
+        showNavLink: false,
+        configuration: {
+          spec: {
+            url: 'https://raw.githubusercontent.com/pieces-app/pieces-os-client-openapi-spec/main/spec/modules/core/isomorphic.openapi.yaml',
+          },
+          hideDownloadButton: true,
+        },
+      } as ScalarOptions,
+    ],
+    [
+      '@scalar/docusaurus',
+      {
+        id: 'scalar-models',
+        label: 'Models',
+        route: '/build/reference/models',
+        showNavLink: false,
+        configuration: {
+          spec: {
+            url: 'https://raw.githubusercontent.com/pieces-app/pieces-os-client-openapi-spec/main/spec/common/runtime_common_library.yaml',
+          },
+          hideDownloadButton: true,
+        },
+      } as ScalarOptions,
+    ]
+  ],
 
   themeConfig: {
     image: 'assets/pfd_preview.png',
@@ -172,32 +172,32 @@ const config: Config = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/getpieces',
+              href: 'https://pieces.app/discord',
             },
             {
               label: 'Twitter',
               href: 'https://twitter.com/getpieces',
             },
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/getpieces',
-            },
-            {
               label: 'YouTube',
-              href: 'https://www.youtube.com/@getpieces',
+              href: 'https://youtube.com/@getpieces',
             },
             {
               label: 'Instagram',
-              href: 'https://www.instagram.com/getpieces',
-            },
-            {
-              label: 'Facebook',
-              href: 'https://www.facebook.com/getpieces',
+              href: 'https://instagram.com/getpieces',
             },
             {
               label: 'GitHub',
               href: 'https://github.com/orgs/pieces-app',
-            }
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/company/getpieces',
+            },
+            {
+              label: 'Facebook',
+              href: 'https://facebook.com/getpieces',
+            },
           ],
         },
         {
@@ -213,7 +213,7 @@ const config: Config = {
             },
             {
               label: 'Press',
-              href: 'https://news.pieces.app',
+              href: 'https://pieces.app/news',
             },
             {
               label: 'Newsletter',
@@ -226,11 +226,11 @@ const config: Config = {
           items: [
             {
               label: 'Privacy Policy',
-              href: '/privacy-policy',
+              href: 'https://pieces.app/legal/privacy-policy',
             },
             {
               label: 'Terms of Service',
-              href: '/terms',
+              href: 'https://pieces.app/legal/terms',
             },
           ],
         }
