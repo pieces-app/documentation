@@ -60,6 +60,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/cli/index',
+          label: 'Pieces CLI',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/raycast/index',
           label: 'Raycast Plugin',
         },
@@ -601,6 +606,30 @@ const sidebars: SidebarsConfig = {
     },
   ],
 
+  // Pieces CLI Sidebar
+  cliSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/commands',
+      label: 'Commands',
+    },
+  ],
+  
   // Raycast Sidebar
   raycastSidebar: [
     {
