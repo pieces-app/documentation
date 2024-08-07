@@ -19,9 +19,13 @@ body:
         - JetBrains
         - Obsidian
         - Visual Studio
+        - Raycast
         - JupyterLab
+        - Pieces CLI
         - Microsoft Teams
         - Sharing Web App
+        - Sublime Text
+        - Azure Data Studio
         - Marketing Site (pieces.app)
         - Blog (code.pieces.app/blog)
         - Release Notes (code.pieces.app/updates)
