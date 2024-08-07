@@ -229,6 +229,11 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'doc',
+          id: 'how-to-guides/save-a-snippet/index',
+          label: 'Save a Code Snippet Using Pieces Desktop App'
+        },
+        {
+          type: 'doc',
           id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
           label: 'Connecting to a Remote Pieces OS Instance',
         },
