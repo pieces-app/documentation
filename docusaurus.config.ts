@@ -187,19 +187,6 @@ const config: Config = {
             }
           ],
         },
-        {
-          title: 'Terms & Policies',
-          items: [
-            {
-              label: 'Privacy Policy',
-              href: '/privacy-policy',
-            },
-            {
-              label: 'Terms of Service',
-              href: '/terms',
-            },
-          ],
-        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Mesh Intelligent Technologies, Inc. All rights reserved.`,
     },
