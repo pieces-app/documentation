@@ -35,7 +35,7 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'category',
-          label: 'Development',
+          label: 'IDEs & Editors',
           items: [
             {
               type: 'doc',
@@ -59,8 +59,13 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: 'doc',
-              id: 'extensions-plugins/web-extension',
-              label: 'Web Extension',
+              id: 'extensions-plugins/jupyterlab',
+              label: 'JupyterLab Extension',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/azure-data-studio',
+              label: 'Azure Data Studio',
             },
           ]
         },
@@ -70,29 +75,24 @@ const sidebars: SidebarsConfig = {
           items: [
             {
               type: 'doc',
-              id: 'extensions-plugins/azure-data-studio',
-              label: 'Azure Data Studio',
-            },
-            {
-              type: 'doc',
-              id: 'extensions-plugins/jupyterlab',
-              label: 'JupyterLab Extension',
-            },
-            {
-              type: 'doc',
               id: 'extensions-plugins/obsidian',
               label: 'Obsidian Plugin',
+            },
+            {
+              type: 'doc',
+              id: 'extensions-plugins/teams',
+              label: 'Microsoft Teams App',
             },
           ],
         },
         {
           type: 'category',
-          label: 'Communication',
+          label: 'Web Browsers',
           items: [
             {
               type: 'doc',
-              id: 'extensions-plugins/teams',
-              label: 'Microsoft Teams App',
+              id: 'extensions-plugins/web-extension',
+              label: 'Web Extension',
             },
           ]
         },
