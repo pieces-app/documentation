@@ -179,7 +179,7 @@ const config: Config = {
             },
             {
               label: 'Press',
-              href: 'https://news.pieces.app',
+              href: ' https://pieces.app/news',
             },
             {
               label: 'Newsletter',
