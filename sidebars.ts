@@ -656,6 +656,11 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       id: 'extensions-plugins/raycast/commands',
       label: 'Commands',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/troubleshooting',
+      label: 'Troubleshooting',
     }
   ],
 
