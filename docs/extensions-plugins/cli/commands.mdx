@@ -58,6 +58,15 @@ Displays your `x` most recent assets.
 pieces list assets x
 ```
 
+#### List Editor Opening 
+Opens the Assets in the configured editor of choice.
+
+```bash 
+list assets -e
+ ```
+
+ ```-e``` is a flag that opens the asset in the configured external editor. Editor of choice can be configured using config command.
+
 #### List Applications
 Lists all registered applications.
 
@@ -76,10 +85,8 @@ pieces list models
 Opens an asset from a list or search. If only "open" is used, it opens the most recent asset. This also creates a link to the asset's code.
 
 ```bash
-pieces open [ITEM_INDEX] [-e]
+pieces open [ITEM_INDEX]
 ```
-
-```-e``` is an optional flag . It Opens the asset in the configured external editor. Editor of choice can be configured using config command.
 
  ##### Editor Configuration:
 
