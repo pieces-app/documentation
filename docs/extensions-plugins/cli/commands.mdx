@@ -73,11 +73,21 @@ pieces list models
 ```
 
 ### `open`
-Opens an asset from a list or search. If only "open" is used, it opens the most recent asset.
+Opens an asset from a list or search. If only "open" is used, it opens the most recent asset. This also creates a link to the asset's code.
 
 ```bash
-pieces open [ITEM_INDEX]
+pieces open [ITEM_INDEX] [-e]
 ```
+
+```-e``` is an optional flag . It Opens the asset in the configured external editor. Editor of choice can be configured using config command.
+
+ ##### Editor Configuration:
+
+ You can configure an external editor to open assets for editing. Use the following command to set your preferred editor:
+
+ ```pieces config editor <editor_command>```
+
+#### NOTE : previous implementations of the open command are now deprecated. 
 
 ### `save`
 Saves changes to the current asset. You need to edit the snippet code that was opened via the `open` command and then save the changes using the save command.
