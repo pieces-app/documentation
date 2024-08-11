@@ -58,6 +58,15 @@ Displays your `x` most recent assets.
 pieces list assets x
 ```
 
+#### List Editor Opening 
+Opens the Assets in the configured editor of choice.
+
+```bash 
+list assets -e
+ ```
+
+ ```-e``` is a flag that opens the asset in the configured external editor. Editor of choice can be configured using config command.
+
 #### List Applications
 Lists all registered applications.
 
@@ -72,12 +81,32 @@ Lists all accessible AI models.
 pieces list models
 ```
 
-### `open`
-Opens an asset from a list or search. If only "open" is used, it opens the most recent asset.
+### `open` (deprecated)
+Opens an asset from a list or search. If only "open" is used, it opens the most recent asset. This also creates a link to the asset's code.
 
 ```bash
 pieces open [ITEM_INDEX]
 ```
+
+ #### Editor Configuration:
+
+ You can configure an external editor to open assets for editing. Use the following command to set your preferred editor:
+
+ ```pieces config editor <editor_command>```
+
+The editor_command refers to the command used to launch your preferred text editor from the command line. Here are some examples:
+
+- For Visual Studio Code: Use ```code```
+- For Sublime Text: Use ```subl```
+- For Vim: Use ```vim```
+- For Emacs: Use ```emacs```
+- For Nano: Use ```nano```
+
+For instance, to set Visual Studio Code as your editor, you would run:
+
+``` pieces config editor code ```
+
+> Previous implementations of the open command are now deprecated. 
 
 ### `save`
 Saves changes to the current asset. You need to edit the snippet code that was opened via the `open` command and then save the changes using the save command.
