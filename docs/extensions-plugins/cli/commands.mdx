@@ -75,7 +75,7 @@ pieces list apps
 ```
 
 #### List AI Models
-Lists all accessible AI models, and open the list to change the model from in the `ask`
+Lists all accessible AI models and opens the list to change the model to be used in the ask command.
 
 ```bash
 pieces list models
@@ -226,7 +226,7 @@ pieces conversation x
 ### `Ask`
 
 The ask command allows you to ask the Pieces Copilot a question. By default, it uses the GPT-3.5 model, but you can change the model using the `list models` command. You can also add relevant files and snippets to provide more context for your question. 
-The question that is asked in a new conversation to change the current conversation use the `conversation` command
+The question that is asked, will generate a new conversation. To change the current conversation use the `conversation` command
 
 ```shell
 pieces ask "your question" -f /file1 /file2 folder -s 1 2 3
