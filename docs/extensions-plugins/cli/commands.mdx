@@ -75,7 +75,7 @@ pieces list apps
 ```
 
 #### List AI Models
-Lists all accessible AI models.
+Lists all accessible AI models and opens the list to change the model to be used in the ask command.
 
 ```bash
 pieces list models
@@ -223,6 +223,26 @@ Switches the conversation and lists its messages. Check the `conversations` comm
 pieces conversation x
 ```
 
+### `Ask`
+
+The ask command allows you to ask the Pieces Copilot a question. By default, it uses the GPT-3.5 model, but you can change the model using the `list models` command. You can also add relevant files and snippets to provide more context for your question. 
+The question that is asked, will generate a new conversation. To change the current conversation use the `conversation` command
+
+```shell
+pieces ask "your question" -f /file1 /file2 folder -s 1 2 3
+```
+
+- **"your question":** The question you want to ask the Pieces Copilot. It must be enclosed in quotes.
+- **f /file1 /file2 folder: (Optional)** Paths to files or folders that are relevant to your question. You can specify multiple files or folders.
+- **s 1 2 3: (Optional)** Indices of snippets that are relevant to your question. You can specify multiple snippet indices
+
+### `change_model` (deprecated)
+Change the model used in the ask command.
+
+```bash
+pieces change_model [MODEL_INDEX]
+```
+
 ## Integration
 
 ### `commit`
@@ -236,6 +256,12 @@ You can also add the `-i` or `--issues` flags so the commit message will include
 
 ```bash
 pieces commit -i
+```
+
+By adding the `-a` or the `--all` flags, All changes will be staged first, before generating the commiting messages
+
+```shell
+pieces commit -a
 ```
 
 ### `login`
