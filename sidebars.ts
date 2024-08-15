@@ -561,12 +561,14 @@ const sidebars: SidebarsConfig = {
     // },
     {
       type: 'category',
-      label: '🔍 API Reference',
-      items: allSDKs.map(sdk => ({
-          type: 'doc' as const,
-          id: `build/reference/${sdk.toLowerCase()}/index`,
-          label: `${sdk} SDK`
-        }))
+      label: '📚 Copilot',
+      items:[
+        {
+          type: 'doc',
+          id: 'build/copilot/python/index',
+          label: 'Python',
+        },
+      ]
     },
     // {
     //   type: 'doc',
