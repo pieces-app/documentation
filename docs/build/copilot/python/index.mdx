@@ -11,13 +11,17 @@ Follow these steps to use the Pieces Python SDK.
 
 ## Download Pieces OS
 
-Download the appropriate version for your operating system:
+:::info
+
+You must either have Pieces OS installed on your local machine or have access to a remote instance of Pieces OS to use this SDK.
+
+:::
+
+Download [**Pieces OS**](/installation-getting-started/pieces-os) for your operating system:
 
 - [**macOS**](/installation-getting-started/macos)
 - [**Windows**](/installation-getting-started/windows)
 - [**Linux**](/installation-getting-started/linux)
-
-[**Pieces OS**](/installation-getting-started/pieces-os) is the primary backend service, providing essential SDK functionality.
 
 ## Install Python SDK
 
@@ -27,27 +31,303 @@ Use pip to install the Pieces Python SDK using the following command:
 pip install pieces_os_client
 ```
 
-## Usage
+## Initialize SDK
 
-After installing the SDK, you can import the library into your project and start utilizing its features:
+After installing the SDK, you must initialize the SDK with your base URL. The base URL will depend on your setup.
 
-```sh
-import pieces_os_client as pos_client
+If you are using a local instance of Pieces OS:
+- On macOS/Windows, use http://localhost:1000
+- On Linux, use http://localhost:5323
+
+If you are using a remote instance of Pieces OS, use the URL you have set up for that.
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
 ```
 
 ## Features
 
-1. Copilot Chats
-    - Communicate seamlessly with the functionalities of the copilot chats.
+Feature | Description
+------------- | -------------
+Simplified Interaction | The Pieces Copilot SDK simplifies the interaction with the Pieces OS Client SDK by providing easy-to-use methods for various operations.
+Manage Conversations | The SDK provides various methods to manage conversations such as fetching a specific conversation, updating conversation name, and more.
+Get User Profile Picture | Retrieve the user's profile picture using the `get_user_profile_picture()` method.
 
-2. Asset Management
-    - Save and manage assets and formats them efficiently.
+## ask_question()
 
-3. Local Server Interaction
-    - Interact with a locally hosted server for various functionalities.
+```python
+ask_question()
+```
 
-4. Multi LLMs support
-    - Use any Pieces supported LLMs to power apps.
+Allows users to ask a question and receive a response.
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **question** | **string**| This is the question representing the query that will be used to generate the answer outputted by the Pieces OS Copilot. | [required]
+ 
+### Return type
+
+string (response body)
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+response = pieces_client.ask_question('What is Pieces for Developers?')
+
+print(response)
+```
+
+## create_conversation()
+
+```python
+create_conversation(name=None, first_message=None)
+```
+
+Creates a new conversation.
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**name** | **string** | This is the name of the new conversation | [optional]
+**first message** | **string** | This is the first message that will be used to generate an answer to the message |[optional]
+
+### Return type
+
+A dictionary containing many key-value pairs, including the conversation name and the answer to the first message if either are provided.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+new_conversation = pieces_client.create_conversation(
+    props={
+        'name': 'Test Conversation',
+        'firstMessage': 'Hello, how can I use the API?'
+    }
+)
+
+print(new_conversation)
+```
+
+## prompt_conversation()
+
+This method prompts a conversation with a message.
+
+```python
+prompt_conversation(question, conversation_id, regenerate_conversation_name=False)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**question** | **string** | This is the question that will be used to generate an answer in the message | [required]
+**conversation_id** | **string** | ID of a conversation that was created | [required]
+**regenerate_conversation_name** | **boolean** | Regenerate the conversation name of the provided conversation id. Default is set to `False`. | [required]
+
+### Return type
+
+A dictionary containing the text of the answer, the ID of the user query message, and the ID of the bot response message.
+
+If there are previous messages in the conversation, they will be used as context for the new message. If there is an error, it will return a dictionary containing only the text of the error message
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+answer = pieces_client.prompt_conversation(
+    message='Hello, world!',
+    conversation_id='conversationId',
+    regenerate_conversation_name=False,
+)
+
+print(answer)
+```
+
+## get_conversation()
+
+This method retrieves a conversation by its ID.
+
+```python
+get_conversation(conversation_id, include_raw_messages=False)
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**conversation_id** | **string** | ID of a conversation that was created | [required]
+**include_raw_messages** | **boolean** | Includes the raw messages | [optional]
+
+### Return type
+
+A dictionary representing the `Conversation` object or `None`.
+
+### Example
+
+```pieces
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+conversation = pieces_client.get_conversation(
+    conversation_id='conversationId',
+    include_raw_messages=False
+)
+
+print(conversation)
+```
+
+## update_conversation_name()
+
+This method generates a new name for a specific conversation based on the messages that have been sent.
+
+```python
+update_conversation_name(conversation_id)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+**conversation_id** | **string** | ID of a conversation that was created | [required]
+
+### Return type
+
+It returns a string representing the updated conversation name or `None`.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+updated_name = pieces_client.update_conversation_name(
+    conversation_id='conversationId')
+
+print(updated_name)
+```
+
+## get_conversations()
+
+```python
+get_conversations()
+```
+
+This method retrieves all conversations.
+
+### Return type
+
+It returns a list of `Conversation` objects or `None`.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+conversations = pieces_client.get_conversations()
+
+print(conversations)
+```
+
+## get_user_profile_picture()
+
+```python
+get_user_profile_picture()
+```
+
+### Return type
+
+It returns a string representing the URL of the profile picture or `None`.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+profile_picture_url = pieces_client.get_user_profile_picture()
+
+print(profile_picture_url)
+```
+
+## Full Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Create an instance of PiecesClient
+pieces_client = PiecesClient(
+    config={
+        'baseUrl': 'your_base_url'
+    }
+)
+
+# 1. Create a new conversation
+conversation_response = pieces_client.create_conversation(
+    props={
+        "name": "Test Conversation",
+        "firstMessage": "Hello, how can I use the API?"
+    }
+)
+
+# Check if the conversation was created successfully
+if conversation_response:
+    print("Conversation Created:", conversation_response['conversation'].id)
+    print("First Message Response:", conversation_response['answer']['text'])
+
+    # 2. Get the created conversation details
+    conversation_id = conversation_response['conversation'].id
+    conversation_details = pieces_client.get_conversation(
+        conversation_id=conversation_id,
+        include_raw_messages=True
+    )
+
+    # Access the conversation name using the key
+    print("Conversation Name:", conversation_details.get('name'))
+
+    # 3. Ask a question within the created conversation
+    question_response = pieces_client.prompt_conversation(
+        message="Can you give me an example code snippet?",
+        conversation_id=conversation_id
+    )
+    print("Question Response:", question_response['text'])
+
+# 4. Retrieve all conversations and print their names
+all_conversations = pieces_client.get_conversations()
+for conversation in all_conversations:
+    print("Conversation Name:", conversation.name)
+
+# 5. Get user profile picture
+profile_picture = pieces_client.get_user_profile_picture()
+print("User Profile Picture URL:", profile_picture)
+
+# 6. Ask a question
+question = "What is Pieces for Developer?"
+response = pieces_client.ask_question(question)
+print("Question Response:", response)
+```
 
 ## Community
 If you have created your own SDK or any other technology specific integration and would like us to list it here under community maintained SDKs/integrations please [contact us](https://github.com/pieces-app/opensource/discussions).
