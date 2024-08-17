@@ -1,0 +1,279 @@
+---
+title: Pieces CLI Commands
+description: Learn how to use the Pieces CLI commands to streamline your workflow and boost productivity.
+---
+
+import Video from "/src/components/Video";
+
+# Commands
+
+Use the following commands to streamline your workflow and boost productivity with the Pieces CLI.
+
+## General Commands
+
+### `run`
+Starts the CLI in a loop for continuous interaction.
+
+```bash
+pieces run
+```
+
+### `clear`
+Clears the terminal screen while staying in the command loop.
+
+```bash
+pieces clear
+```
+
+### `version`
+Displays the version of Pieces OS and the CLI.
+
+```bash
+pieces version
+```
+
+### `help`
+Displays a detailed help menu.
+
+```bash
+pieces help
+```
+
+## Asset Management
+
+### `list`
+Lists assets, applications, or models.
+
+#### List Assets
+Lists your most recent assets. Default is 10 assets.
+
+```bash
+pieces list
+```
+
+#### List Recent Assets
+Displays your `x` most recent assets.
+
+```bash
+pieces list assets x
+```
+
+#### List Editor Opening 
+Opens the Assets in the configured editor of choice.
+
+```bash 
+list assets -e
+ ```
+
+ ```-e``` is a flag that opens the asset in the configured external editor. Editor of choice can be configured using config command.
+
+#### List Applications
+Lists all registered applications.
+
+```bash
+pieces list apps
+```
+
+#### List AI Models
+Lists all accessible AI models and opens the list to change the model to be used in the ask command.
+
+```bash
+pieces list models
+```
+
+### `open` (deprecated)
+Opens an asset from a list or search. If only "open" is used, it opens the most recent asset. This also creates a link to the asset's code.
+
+```bash
+pieces open [ITEM_INDEX]
+```
+
+ #### Editor Configuration:
+
+ You can configure an external editor to open assets for editing. Use the following command to set your preferred editor:
+
+ ```pieces config editor <editor_command>```
+
+The editor_command refers to the command used to launch your preferred text editor from the command line. Here are some examples:
+
+- For Visual Studio Code: Use ```code```
+- For Sublime Text: Use ```subl```
+- For Vim: Use ```vim```
+- For Emacs: Use ```emacs```
+- For Nano: Use ```nano```
+
+For instance, to set Visual Studio Code as your editor, you would run:
+
+``` pieces config editor code ```
+
+> Previous implementations of the open command are now deprecated. 
+
+### `save`
+Saves changes to the current asset. You need to edit the snippet code that was opened via the `open` command and then save the changes using the save command.
+
+```bash
+pieces save
+```
+
+### `create`
+Creates a new asset from the clipboard content. The asset will automatically be scanned and recognized for its file type.
+
+```bash
+pieces create
+```
+
+### `edit`
+Edits the name and classification of the current asset.
+
+#### Edit Name
+```bash
+pieces edit --name "new name"
+```
+
+#### Edit Classification
+```bash
+pieces edit --classification python
+```
+
+You can also use `-n` or `-c` to change the name and classification respectively with the edit command.
+
+### `delete`
+Deletes the current or specified asset. If no asset is specified, it will prompt to delete the most recent asset.
+
+```bash
+pieces delete
+```
+
+## Search and Query
+
+### `search`
+Performs a search for assets.
+
+#### Perform a Fuzzy Search
+Finds strings that approximately match patterns. Normal search.
+
+```bash
+pieces search [your query]
+```
+
+#### Perform a Neural Code Search
+Uses machine learning to understand the intent of a user's search query and match it with the most relevant results.
+
+```bash
+pieces search query --mode ncs
+```
+
+#### Perform a Full Text Search
+Examines all words in a document to find matches to search criteria.
+
+```bash
+pieces search query --mode fts
+```
+
+## Conversation Management
+
+### `conversations`
+Lists all conversations. The green conversation is the one currently in use in the `ask` command.
+
+```bash
+pieces conversations
+```
+
+### `conversation`
+Manages individual conversations.
+
+#### List Messages in Current Conversation
+Lists the messages in the conversation currently being used in the `ask` command.
+
+```bash
+pieces conversation
+```
+
+#### Create a New Conversation
+Creates a new conversation.
+
+```bash
+pieces conversation -n
+```
+
+#### Rename a Conversation
+Renames the current conversation.
+
+```bash
+pieces conversation -r "new name"
+```
+
+Or you can make the model rename it for you.
+
+```bash
+pieces conversation -r
+```
+
+#### Delete a Conversation
+Deletes the current conversation.
+
+```bash
+pieces conversation -d
+```
+
+#### Switch Conversation
+Switches the conversation and lists its messages. Check the `conversations` command to get the index.
+
+```bash
+pieces conversation x
+```
+
+### `Ask`
+
+The ask command allows you to ask the Pieces Copilot a question. By default, it uses the GPT-3.5 model, but you can change the model using the `list models` command. You can also add relevant files and snippets to provide more context for your question. 
+The question that is asked, will generate a new conversation. To change the current conversation use the `conversation` command
+
+```shell
+pieces ask "your question" -f /file1 /file2 folder -s 1 2 3
+```
+
+- **"your question":** The question you want to ask the Pieces Copilot. It must be enclosed in quotes.
+- **f /file1 /file2 folder: (Optional)** Paths to files or folders that are relevant to your question. You can specify multiple files or folders.
+- **s 1 2 3: (Optional)** Indices of snippets that are relevant to your question. You can specify multiple snippet indices
+
+### `change_model` (deprecated)
+Change the model used in the ask command.
+
+```bash
+pieces change_model [MODEL_INDEX]
+```
+
+## Integration
+
+### `commit`
+Auto-commits code to GitHub with a generated commit message. Use the `-p` or `--push` flags to push the code to the repository as well.
+
+```bash
+pieces commit -p
+```
+
+You can also add the `-i` or `--issues` flags so the commit message will include the issue numbers in the commit if found, or it will list all issues to choose from.
+
+```bash
+pieces commit -i
+```
+
+By adding the `-a` or the `--all` flags, All changes will be staged first, before generating the commiting messages
+
+```shell
+pieces commit -a
+```
+
+### `login`
+Logs in to your Pieces account.
+
+```bash
+pieces login
+```
+
+### `logout`
+Logs out from your Pieces account.
+
+```bash
+pieces logout
+```
