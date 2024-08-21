@@ -658,9 +658,25 @@ const sidebars: SidebarsConfig = {
       label: 'Features',
     },
     {
-      type: 'doc',
-      id: 'extensions-plugins/jupyterlab/how-to-guides',
+      type: 'category',
       label: 'How To Guides',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'extensions-plugins/jupyterlab/how-to-guides',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'extensions-plugins/jupyterlab/how-to-guides/save-a-snippet',
+          label: 'Save a snippet',
+        },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/jupyterlab/how-to-guides/share-a-snippet',
+          label: 'Share a snippet',
+        },
+      ]
     },
     {
       type: 'doc',
