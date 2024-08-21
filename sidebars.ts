@@ -70,6 +70,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/neovim/index',
+          label: 'Neovim Plugin',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/sublime',
           label: 'Sublime Plugin',
         },
@@ -660,6 +665,35 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'extensions-plugins/raycast/troubleshooting',
+      label: 'Troubleshooting',
+    }
+  ],
+
+   // Raycast Sidebar
+    neovimSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/neovim/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/neovim/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/neovim/commands',
+      label: 'Commands',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/neovim/troubleshooting',
       label: 'Troubleshooting',
     }
   ],

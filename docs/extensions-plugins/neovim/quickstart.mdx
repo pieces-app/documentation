@@ -1,0 +1,108 @@
+---
+title: Pieces Neovim Plugin Quickstart
+description: Learn how to set up and start using the Pieces Neovim Plugin.
+---
+
+import CTAButton from "/src/components/CTAButton";
+import { pieces_app } from "/src/lib/const";
+
+# Quickstart
+
+In this tutorial, we'll walk you through the process of setting up and using the Pieces Neovim Plugin. We'll cover the installation process and basic usage to help you get up and running quickly.
+
+<CTAButton
+  href={pieces_app.links.extensions.neovim}
+  label={'Install via GitHub'}
+  icon={'/assets/pieces_logos/white_circle.png'} 
+  iconDark={'/assets/pieces_logos/black_circle.png'} 
+  type={'secondary'}
+/>
+
+## Prerequisites
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) installed on your machine.
+- [Neovim](https://neovim.io/) installed on your machine.
+- [Python](https://www.python.org/downloads/) installed on your machine because Python is required to run Python based Neovim plugins.
+
+A few things to note before you start installing the Pieces Neovim Plugin:
+
+- The Python based Neovim plugins requires the `pynvim` Python package, which is not included in the default Neovim installation. You can install it by running the following command:
+
+```bash
+pip install pynvim
+```
+- Ensure that you have atleast one Neovim package managers installed. For instance you can install `vim-plug`. 
+In order to install `vim-plug`, run the following command in your terminal:
+```bash
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+```
+
+- Create A Neovim configuration file if you haven't already done that. It's usually located at ~/.config/nvim/init.vim. If it doesn't exist, create it using:
+```bash
+mkdir -p ~/.config/nvim
+touch ~/.config/nvim/init.vim
+```
+Note: Your Neovim confifugation file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
+```lua
+vim.cmd [[packadd pieces.nvim]]
+```
+
+## Steps
+
+### Step 1: Install the Pieces Neovim Plugin
+1. Ensure Pieces OS is installed and running on your system
+2. Open the `init.vim` file with a text editor (you can use Neovim itself):
+```shell
+nvim ~/.config/nvim/init.vim
+```
+3. Add the following lines to the `init.vim` file:
+```vim
+" init.vim
+call plug#begin('~/.vim/plugged')
+
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'pieces-app/plugin_neo_vim'
+
+call plug#end()
+```
+If you're using Neovim to edit, press Esc, then type :wq and press Enter to save and quit.
+
+4. Install the plugins:
+Open Neovim again and run the following command:
+```vim
+:PlugInstall
+```
+This will install all the plugins specified.
+
+5. After the installation is complete, add the Pieces configuration to your `init.vim`:
+```vim
+lua << EOF
+require("pieces_config").host = "http://localhost:1000"
+EOF
+```
+6. Save and exit (`:wq` in Neovim). Now run the following command inside Neovim to update the remote plugins: 
+```vim
+:UpdateRemotePlugins
+```
+
+### Step 2: Use the Neovim Plugin
+1. Open Neovim using the `nvim` command in your terminal. 
+2. Run the following command to verify the installation:
+   ```nvim
+   :PiecesOSVersion
+   ```
+   If the installation was successful, you should see the version of the Pieces OS. 
+
+Congratulations! You have successfully set up and started using the Pieces Neovim Plugin.
+
+## Next Steps
+Now that you have setup the Pieces Neovim Plugin, you can explore more features and commands to streamline your workflow and boost productivity.
+
+- [Commands](/extensions-plugins/neovim/commands)
+- [Pieces Neovim Plugin GitHub Repository](https://github.com/pieces-app/plugin_neo_vim)
+
+
