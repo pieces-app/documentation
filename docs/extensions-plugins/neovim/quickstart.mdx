@@ -53,45 +53,44 @@ vim.cmd [[packadd pieces.nvim]]
 
 ### Step 1: Install the Pieces Neovim Plugin
 1. Ensure Pieces OS is installed and running on your system
-2. Open the `init.vim` file with a text editor (you can use Neovim itself):
-```shell
-nvim ~/.config/nvim/init.vim
-```
-3. Add the following lines to the `init.vim` file:
-```vim
-" init.vim
-call plug#begin('~/.vim/plugged')
+1. Open the `init.vim` file with a text editor (you can use Neovim itself):
+    ```shell
+    nvim ~/.config/nvim/init.vim
+    ```
+1. Add the following lines to the `init.vim` file:
+    ```vim
+    " init.vim
+    call plug#begin('~/.vim/plugged')
 
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'MunifTanjim/nui.nvim'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'pieces-app/plugin_neo_vim'
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'MunifTanjim/nui.nvim'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'pieces-app/plugin_neo_vim'
 
-call plug#end()
-```
-If you're using Neovim to edit, press `<Esc>`, then type `:wq` and press `<Enter>` to save and quit.
+    call plug#end()
+    ```
+    If you're using Neovim to edit, press `<Esc>`, then type `:wq` and press `<Enter>` to save and quit.
 
-4. Install the plugins:
-Open Neovim again and run the following command:
-```vim
-:PlugInstall
-```
-This will install all the plugins specified.
+1. Install the plugins: Open Neovim again and run the following command:
+    ```vim
+    :PlugInstall
+    ```
+    This will install all the plugins specified.
 
-5. After the installation is complete, add the Pieces configuration to your `init.vim`:
-```vim
-lua << EOF
-require("pieces_config").host = "http://localhost:1000"
-EOF
-```
-6. Save and exit (`:wq` in Neovim). Now run the following command inside Neovim to update the remote plugins: 
-```vim
-:UpdateRemotePlugins
-```
+1. After the installation is complete, add the Pieces configuration to your `init.vim`:
+    ```vim
+    lua << EOF
+    require("pieces_config").host = "http://localhost:1000"
+    EOF
+    ```
+1. Save and exit (`:wq` in Neovim). Now run the following command inside Neovim to update the remote plugins: 
+    ```vim
+    :UpdateRemotePlugins
+    ```
 
 ### Step 2: Use the Neovim Plugin
 1. Open Neovim using the `nvim` command in your terminal. 
-2. Run the following command to verify the installation:
+1. Run the following command to verify the installation:
    ```nvim
    :PiecesOSVersion
    ```
