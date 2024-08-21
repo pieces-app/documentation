@@ -44,7 +44,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.vim
 ```
-Note: Your Neovim confifugation file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
+Note: Your Neovim configuration file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
 ```lua
 vim.cmd [[packadd pieces.nvim]]
 ```
@@ -98,6 +98,15 @@ EOF
    If the installation was successful, you should see the version of the Pieces OS. 
 
 Congratulations! You have successfully set up and started using the Pieces Neovim Plugin.
+
+:::info
+
+Whenever there's an update available for the Pieces Neovim Plugin, you can run the following command in your terminal:
+
+```bash
+nvim +UpdateRemotePlugins
+```
+:::
 
 ## Next Steps
 Now that you have setup the Pieces Neovim Plugin, you can explore more features and commands to streamline your workflow and boost productivity.
