@@ -65,6 +65,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/jupyterlab/index',
+          label: 'JupyterLab Extension',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/raycast/index',
           label: 'Raycast Plugin',
         },
@@ -77,11 +82,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/jupyterlab',
-          label: 'JupyterLab Extension',
         },
         {
           type: 'doc',
@@ -632,6 +632,40 @@ const sidebars: SidebarsConfig = {
       type: 'doc',
       id: 'extensions-plugins/cli/commands',
       label: 'Commands',
+    },
+  ],
+
+  // Jupyterlab Sidebar
+  jupyterLabSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/features',
+      label: 'Features',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/how-to-guides',
+      label: 'How To Guides',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/troubleshooting',
+      label: 'Troubleshooting',
     },
   ],
   

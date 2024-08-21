@@ -1,0 +1,78 @@
+---
+title: Quickstart
+description: Learn how to set up and start using the Pieces CLI.
+---
+
+import CTAButton from "/src/components/CTAButton";
+import { pieces_app } from "/src/lib/const";
+
+# Quickstart
+
+In this tutorial, you'll learn how to set up and start using the Pieces for Developers JupyterLab Extension. We'll cover the installation process and basic usage to help you get up and running quickly.
+
+<CTAButton
+  href={pieces_app.links.extensions.jupyter_lab}
+  label={'Install from PyPI'}
+  icon={'/assets/pieces_logos/white_circle.png'} 
+  iconDark={'/assets/pieces_logos/black_circle.png'} 
+  type={'secondary'}
+/>
+
+## Prerequisites
+
+:::info
+
+In order to use the Pieces JupyterLab Extension, you must have <a target="blank" href="/installation-getting-started/what-am-i-installing">Pieces OS.</a> We also recommend downloading the Pieces for Developers Desktop App.
+
+:::
+
+- [Pieces OS](/installation-getting-started/what-am-i-installing) installed on your machine.
+- [Python](https://www.python.org/downloads/) installed on your machine.
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html) installed on your machine.
+
+## Steps
+
+### Step 1: Install the Pieces JupyterLab Extension in your current environment
+
+1. Make sure JupyterLab is running:
+
+    ```bash
+    jupyter lab
+    ```
+
+1. Install the extension:
+
+    1. If you want to use the JupyterLab UI to install, select the __Extension Manager__, search for `Pieces`, then select __Install__ for the `jupyter-pieces` extension.
+
+    1. You can also run the following command from a console or a notebook:
+
+        ```bash
+        pip install jupyter-pieces
+        ```
+
+1. Once installed, refresh the page in your browser.
+
+### Step 2: Use the Pieces JupyterLab Extension
+
+1. Either create a new notebook and add code to a cell, or open an existing notebook that contains code cells.
+
+1. Use the embedded Pieces button to save the contents of this cell to Pieces.
+
+    ![Example of saving an active cell using the embedded buttons](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/EMBEDDED_BUTTON_SAVE_ACTIVE_CELL/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-EMBEDDED_BUTTON_SAVE_ACTIVE_CELL-16X9-MACOS-6_22_2023.gif)
+
+1. View the saved snippet by selecting the Pieces View from the Ribbon Menu.
+
+    ![Example of searching for and inserting snippets](https://storage.googleapis.com/pieces_multimedia/PROMOTIONAL/PIECES_FOR_DEVELOPERS/JUPYTER/MACOS/SEARCH_AND_INSERT/16X9/PIECES_FOR_DEVELOPERS-JUPYTER-SEARCH_AND_INSERT-16X9-MACOS-6_22_2023.gif)
+
+1. From your code cell, select all the code, right click and select _Ask Pieces about your selection_.
+
+1. Ask Pieces to `explain this code`. You will see an explanation of your code in the Copilot chat pane of the Pieces View.
+
+Congratulations! You have successfully set up and started using the Pieces for Developers JupyterLab Extension.
+
+## Next Steps
+
+Explore more features to streamline your workflow and boost productivity.
+
+- [Features](/extensions-plugins/jupyterlab/features)
+- [How-to guides](/extensions-plugins/jupyterlab/how-to-guides)
