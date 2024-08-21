@@ -28,26 +28,30 @@ A few things to note before you start installing the Pieces Neovim Plugin:
 
 - The Python based Neovim plugins requires the `pynvim` Python package, which is not included in the default Neovim installation. You can install it by running the following command:
 
-```bash
-pip install pynvim
-```
-- Ensure that you have atleast one Neovim package managers installed. For instance you can install `vim-plug`. 
-In order to install `vim-plug`, run the following command in your terminal:
-```bash
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    ```bash
+    pip install pynvim
+    ```
 
-```
+- Ensure that you have at least one Neovim package manager installed. For instance, you can install `vim-plug`. 
+  In order to install `vim-plug`, run the following command in your terminal:
+  
+    ```bash
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    ```
 
-- Create A Neovim configuration file if you haven't already done that. It's usually located at `~/.config/nvim/init.vim`. If it doesn't exist, create it using:
-```bash
-mkdir -p ~/.config/nvim
-touch ~/.config/nvim/init.vim
-```
-Note: Your Neovim configuration file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
-```lua
-vim.cmd [[packadd pieces.nvim]]
-```
+- Create a Neovim configuration file if you haven't already done that. It's usually located at `~/.config/nvim/init.vim`. If it doesn't exist, create it using:
+  
+    ```bash
+    mkdir -p ~/.config/nvim
+    touch ~/.config/nvim/init.vim
+    ```
+
+    Note: Your Neovim configuration file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
+  
+    ```lua
+    vim.cmd [[packadd pieces.nvim]]
+    ```
 
 ## Steps
 
