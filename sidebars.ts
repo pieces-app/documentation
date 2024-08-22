@@ -569,22 +569,16 @@ const sidebars: SidebarsConfig = {
       id: 'build/examples/index',
       label: '📚 Examples',
     },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/index',
+      label: '📚 Python',
+    },
     // {
     //   type: 'doc',
     //   id: 'build/tutorials/index',
     //   label: '📚 Tutorials',
     // },
-    {
-      type: 'category',
-      label: '📚 Copilot',
-      items:[
-        {
-          type: 'doc',
-          id: 'build/copilot/python/index',
-          label: 'Python',
-        },
-      ]
-    },
     // {
     //   type: 'doc',
     //   id: 'build/concepts/index',
@@ -612,6 +606,7 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
+<<<<<<< Updated upstream
 
   // Pieces CLI Sidebar
   cliSidebar: [
@@ -669,5 +664,39 @@ const sidebars: SidebarsConfig = {
   // Generates sidebar for each active SDK
   ...generatedSDKSidebars,
 };
+=======
+    // Generates sidebar for each active SDK
+    ...generatedSDKSidebars,
+
+    // Python SDK WrapperSidebar
+    pythonSDKWrapperSidebar: [
+      {
+        type: 'ref',
+        id: 'build/index',
+        label: '← Back to Build',
+      },
+      {
+        type: 'doc',
+        id: 'build/sdks/python/index',
+        label: 'Overview',
+      },
+      {
+        type: 'doc',
+        id: 'build/sdks/python/quickstart',
+        label: 'Quickstart',
+      },
+      {
+        type: 'doc',
+        id: 'build/sdks/python/assets',
+        label: 'Assets',
+      },
+      {
+        type: 'doc',
+        id: 'build/sdks/python/copilot',
+        label: 'Copilot',
+      },
+    ],
+  };
+>>>>>>> Stashed changes
 
 export default sidebars;

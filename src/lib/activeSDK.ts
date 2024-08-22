@@ -2,14 +2,10 @@
 
 // List of SDKs to display on the docs
 const activeSDKs = [
-  'TypeScript',
   'Python',
 ];
-const inactiveSDKs = [
-  'Dart',
-  'Kotlin',
-]
-export const allSDKs = [...activeSDKs, ...inactiveSDKs];
+
+export const allSDKs = [...activeSDKs];
 
 // Template for the sidebar items for each SDK
 const baseSidebarItems: {

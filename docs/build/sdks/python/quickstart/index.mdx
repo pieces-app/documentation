@@ -1,0 +1,91 @@
+---
+title: Pieces OS Python SDK
+description: Learn how to set up and use the Pieces OS Python SDK.
+---
+
+Follow these steps to use the Pieces Python SDK.
+
+## Download Pieces OS
+
+:::info
+
+You must either have Pieces OS installed on your local machine or have access to a remote instance of Pieces OS to use this SDK.
+
+:::
+
+Download [**Pieces OS**](/installation-getting-started/pieces-os) for your operating system:
+
+- [**macOS**](/installation-getting-started/macos)
+- [**Windows**](/installation-getting-started/windows)
+- [**Linux**](/installation-getting-started/linux)
+
+## Install Python SDK
+
+Use pip to install the Pieces Python SDK using the following command:
+
+```sh
+pip install pieces_os_client
+```
+
+## Initialize SDK
+
+After installing the SDK, you must initialize the SDK with your base URL. The base URL will depend on your setup.
+
+If you are using a local instance of Pieces OS:
+- On macOS/Windows, use http://localhost:1000
+- On Linux, use http://localhost:5323
+
+If you are using a remote instance of Pieces OS, use the URL you have set up for that.
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+```
+
+## Getting started
+
+First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a config.py file to store your configuration info and a wellknown.py file to test the connection.
+
+```python
+import pieces_os_client
+import platform
+
+# Defining the port based on the operating system. For Linux, the port is 5323, and for macOS/Windows, the port is 1000.
+platform_info = platform.platform()
+if 'Linux' in platform_info:
+    port = 5323
+else:
+    port = 1000
+
+# The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
+configuration = pieces_os_client.Configuration(host=f"http://localhost:{port}")
+
+# Initialize the Pieces ApiClient
+api_client = pieces_os_client.ApiClient(configuration)
+
+# Enter a context with an instance of the ApiClient
+with pieces_os_client.ApiClient(configuration) as api_client:
+    # Create an instance of the WellKnownApi class
+    api_instance = pieces_os_client.WellKnownApi(api_client)
+
+    try:
+        # Retrieve the (wellknown) health of the Pieces OS
+        api_response = api_instance.get_well_known_health()
+        print("The response of WellKnownApi().get_well_known_health:")
+        print(api_response) # Response: ok
+    except Exception as e:
+        print("Exception when calling WellKnownApi->get_well_known_health: %s\n" % e)
+```
+
+Run the following command to execute the script:
+
+```sh
+python3 main.py
+```
+
+## Community
+If you have created your own SDK or any other technology specific integration and would like us to list it here under community maintained SDKs/integrations please [contact us](https://github.com/pieces-app/opensource/discussions).
+
+If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our [Open Source Discussions](https://github.com/pieces-app/opensource/discussions) and you can also join our [Discord](https://discord.gg/getpieces).
