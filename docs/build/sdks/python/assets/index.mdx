@@ -27,7 +27,7 @@ from pieces_os_client.wrapper import PiecesClient
 from pieces_os_client import FragmentMetadata
 
 # Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 # Set the content and metadata for the new asset
 content = "print('Hello, World!')"
@@ -53,7 +53,7 @@ Gets all your assets.
 from pieces_os_client.wrapper import PiecesClient
 
 # Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 # Get all assets and print their names
 assets = pieces_client.assets()
@@ -165,7 +165,7 @@ from pieces_copilot_sdk.basic_identifier import BasicAsset
 from pieces_os_client import ClassificationSpecificEnum
 
 # Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 asset = pieces_client.assets()[0]
 

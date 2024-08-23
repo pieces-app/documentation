@@ -24,7 +24,7 @@ Param Name | Param Type | Param Notes
 ```python
 from pieces_os_client.wrapper import PiecesClient
 
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 # Set the question you want to ask
 question = "What is Object-Oriented Programming?"
@@ -116,7 +116,7 @@ Deletes the conversation.
 from pieces_copilot_sdk import PiecesClient
 
 # Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 # Initialize a BasicChat instance
 chat = pieces_client.copilot.chats()[0]
@@ -193,7 +193,7 @@ Deletes the message.
 from pieces_copilot_sdk import PiecesClient
 
 # Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 # Initialize a BasicChat instance
 chat = pieces_client.copilot.chats()[0]
@@ -245,7 +245,7 @@ Asks a question to the QGPT model and streams the responses. By default, it will
 from pieces_copilot_sdk import PiecesClient
 
 # Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 for response in pieces_client.copilot.stream_question("Your question"):
     if response.question:
@@ -287,7 +287,7 @@ The question is not a part of any conversation.
 from pieces_copilot_sdk import PiecesClient
 
 # Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+pieces_client = PiecesClient(config={'host': 'your_base_url'})
 
 text = pieces_client.copilot.question("Your question").answers.iterable[0].text
 print(text)

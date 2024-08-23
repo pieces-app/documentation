@@ -54,7 +54,7 @@ if 'Linux' in platform_info:
 else:
    port = 1000
 
-pieces_client = PiecesClient(config={'baseUrl': f'http://localhost:{port}'})
+pieces_client = PiecesClient(config={'host': f'http://localhost:{port}'})
 ```
 
 In the code snippet above, we use the platform package to determine the base URL based on the operating system.
