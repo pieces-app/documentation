@@ -606,65 +606,6 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
-<<<<<<< Updated upstream
-
-  // Pieces CLI Sidebar
-  cliSidebar: [
-    {
-      type: 'ref',
-      id: 'installation-getting-started/what-am-i-installing',
-      label: '← Back to Learn',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/cli/index',
-      label: 'Overview',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/cli/quickstart',
-      label: 'Quickstart',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/cli/commands',
-      label: 'Commands',
-    },
-  ],
-  
-  // Raycast Sidebar
-  raycastSidebar: [
-    {
-      type: 'ref',
-      id: 'installation-getting-started/what-am-i-installing',
-      label: '← Back to Learn',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/raycast/index',
-      label: 'Overview',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/raycast/quickstart',
-      label: 'Quickstart',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/raycast/commands',
-      label: 'Commands',
-    },
-    {
-      type: 'doc',
-      id: 'extensions-plugins/raycast/troubleshooting',
-      label: 'Troubleshooting',
-    }
-  ],
-
-  // Generates sidebar for each active SDK
-  ...generatedSDKSidebars,
-};
-=======
     // Generates sidebar for each active SDK
     ...generatedSDKSidebars,
 
@@ -682,21 +623,20 @@ const sidebars: SidebarsConfig = {
       },
       {
         type: 'doc',
-        id: 'build/sdks/python/quickstart',
+        id: 'build/sdks/python/quickstart/index',
         label: 'Quickstart',
       },
       {
         type: 'doc',
-        id: 'build/sdks/python/assets',
+        id: 'build/sdks/python/assets/index',
         label: 'Assets',
       },
       {
         type: 'doc',
-        id: 'build/sdks/python/copilot',
+        id: 'build/sdks/python/copilot/index',
         label: 'Copilot',
       },
     ],
   };
->>>>>>> Stashed changes
 
 export default sidebars;

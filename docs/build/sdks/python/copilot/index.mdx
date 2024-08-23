@@ -1,10 +1,383 @@
 ---
-title: Pieces OS Python SDK
-description: Learn how to set up and use the Pieces OS Python SDK.
+title: Pieces Wrapper Python SDK Copilot
+description: Learn how to set up and use the Pieces Wrapper Python SDK Copilot methods
 ---
 
+# Pieces wrapper python SDK copilot methods
+
+## stream_question()
+
+```python
+stream_question(question)
+```
+
+Ask Pieces Copilot a question and stream the response.
+
+### Parameters
+
+Name | Type | Notes
+------------- | ------------ | -------------
+ **question** | **string**| [required]
+
+### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+# Set the question you want to ask
+question = "What is Object-Oriented Programming?"
+
+# Ask the question and stream the response
+for response in pieces_client.copilot.stream_question(question):
+   if response.question:
+         # Each answer is a chunk of the entire response to the question
+         answers = response.question.answers.iterable
+         for answer in answers:
+            print(answer.text,end="")
+```
+
+## BasicChat
+
+```python
+BasicChat(id)
+```
+
+### Parameters
+
+| Name | Description | Type | Notes |
+|------------- | ------------ | -------------| -------------|
+| **id** | Your conversation id. | **string** | [required] |
+
+### Methods
+
+####id
+Gets the ID of the conversation.
+
+##### On return
+
+| Type | Description | 
+| ------------- | ------------ | 
+| string | The ID of the conversation.|
+
+#### name
+Gets the name of the conversation.
+
+##### Returns:
+
+| Type | Description | 
+| ------------- | ------------ | 
+| string | The name of the conversation, or "New Conversation" if the name is not set.|
+
+name = name: str
+Sets the name of the conversation.
+
+##### Arguments
+
+| Name | Description |
+| ------------- | ------------ |
+| str | The new name of the conversation. |
 
 
-# Pieces OS Python SDK
+#### messages()
+Retrieves the messages in the conversation.
 
-The Pieces SDK is a powerful code engine package designed for writing applications on top of Pieces OS. It facilitates communication with a locally hosted server to enable features such as copilot chats, asset saving, and more.
+##### Returns:
+
+| Type | Description | 
+| ------------- | ------------ | 
+| list | A list of BasicMessage instances representing the messages in the conversation.
+annotations |
+
+#### annotations
+Gets the annotations of the conversation.
+
+Returns:
+
+##### Returns:
+
+| Type | Description | 
+| ------------- | ------------ | 
+| dict/None | The annotations of the conversation, or None if not available. | 
+
+#### description
+Gets the conversation description.
+
+##### Returns:
+
+| Type | Description | 
+| ------------- | ------------ | 
+| string | The description of the conversation. |
+
+#### delete()
+Deletes the conversation.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+# Initialize a BasicChat instance
+chat = pieces_client.copilot.chats()[0]
+
+# Get the ID of the conversation
+conversation_id = chat.id
+print(f"Conversation ID: {conversation_id}")
+
+# Get the name of the conversation
+conversation_name = chat.name
+print(f"Conversation Name: {conversation_name}")
+
+# Set a new name for the conversation
+chat.name = "Project Discussion"
+print(f"Updated Conversation Name: {chat.name}")
+
+# Retrieve the messages in the conversation
+messages = chat.messages()
+for message in messages:
+    print(f"Message: {message.raw_content}")
+    print(f"Message Role: {message.role}")
+
+# Get the annotations of the conversation
+annotations = chat.annotations
+if annotations:
+    print(f"Annotations: {annotations}")
+else:
+    print("No annotations available.")
+
+# Get the description of the conversation
+description = chat.description
+print(f"Description: {description}")
+
+# Delete the conversation
+chat.delete()
+print("Conversation deleted.")
+
+pieces_client.close()
+```
+
+## BasicMessage
+
+This represents a Copilot chat message to opentain that model you should be using pieces_client.copilot.chat.messages() to opentain the messages of the current chat.
+
+### Properties
+
+#### raw_content
+Sets the raw content of the message and updates it in the API.
+
+#### role
+Gets the role of the message.
+
+##### Returns:
+
+| Type | Description | 
+| ------------- | ------------ | 
+| Literal["USER", "SYSTEM", "ASSISTANT"] | The role of the message. |
+
+#### id
+Gets the ID of the message.
+
+| Type | Description | 
+| ------------- | ------------ | 
+| string | The ID of the message. |
+
+#### delete
+Deletes the message.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+# Initialize a BasicChat instance
+chat = pieces_client.copilot.chats()[0]
+messages = chat.messages()
+
+# Set the raw content of the message
+message.raw_content = "This is the updated raw content of the message."
+print("Raw content updated.")
+
+# Get the role of the message
+role = message.role
+print(f"Role: {role}")
+
+# Get the ID of the message
+message_id = message.id
+print(f"Message ID: {message_id}")
+
+# Delete the message
+message.delete()
+print("Message deleted.")
+
+pieces_client.close()
+```
+
+## stream_question()
+
+```python
+stream_question(query, pipeline)
+```
+
+Asks a question to the QGPT model and streams the responses. by default it will create a new conversation and always use it in the ask. You can always change the conversation in copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")
+
+### Parameters
+
+| Name | Description | Note |
+|------------- | ------------ |------------ |
+| query |  The question to ask. | [required] |
+| pipeline | pipeline to follow. | [optional] |
+
+### Returns
+
+| Type | Description | 
+| ------------- | ------------ | 
+| QGPTStreamOutput | The streamed output from the QGPT model.|
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+for response in pieces_client.copilot.stream_question("Your question"):
+    if response.question:
+        answers = response.question.answers.iterable
+        for answer in answers:
+            print(answer.text,end="")
+```
+
+## question()
+
+```python
+question(query, pipeline)
+```
+
+Asks a question to the QGPT model and return the responses Note: the question is not a part of any conversation.
+
+### Parameters
+
+| Name | Description | Note |
+|------------- | ------------ |------------ |
+| query |  The question to ask. | [required] |
+| pipeline | pipeline to follow. | [optional] |
+
+### Returns
+
+| Type | Description | 
+| ------------- | ------------ | 
+| QGPTStreamOutput | The streamed output from the QGPT model.|
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+text = pieces_client.copilot.question("Your question").answers.iterable[0].text
+print(text)
+```
+
+## context
+
+```python
+copilot.context
+```
+
+Returns a context model to interact with the conversation context.
+
+```python
+context = copilot.context
+context.paths.append("/path/to/folder/or/file")
+context.message.append(BasicMessage("my_message_id"))
+context.assets.append(BasicAsset("my_message_id"))
+context.raw_assets.append("import sublime") # snippet content
+context.clear() # clear all the context
+```
+
+Note if you setted the context of the copilot you will get a value error in the ask_stream method if you added an invalid type
+
+### chats()
+
+```python
+chats()
+```
+
+Retrieves a list of all chat identifiers.
+
+### Returns
+
+| Type | Description |
+| ------------- | ------------ |
+| **list[BasicChat]** |  A list of BasicChat instances representing the chat identifiers. |
+
+### Example
+
+```python
+chat_list = copilot.chats()
+for chat in chat_list:
+    print(f"Chat ID: {chat.id}, Chat Name: {chat.name}")
+```
+
+## chat (getter)
+
+```python
+copilot.chat
+```
+
+Gets the current conversation being used in the copilot.
+
+### Returns
+
+| Type | Description |
+| ------------- | ------------ |
+| **BasicChat/None** |  The current BasicChat instance or None if no chat is set. |
+
+### Example
+
+```python
+current_chat = copilot.chat
+if current_chat:
+    print(f"Current Chat ID: {current_chat.id}")
+else:
+    print("No chat is currently set.")
+```
+
+## chat (setter)
+
+```python
+copilot.chat = your_value_here
+```
+
+Sets the current conversation to be used in the copilot.
+
+### Arguments
+
+| Type | Description |
+| ------------- | ------------ |
+| **BasicChat/None** | The BasicChat instance is set. |
+
+### Raises
+
+| Type | Description |
+| ------------- | ------------ |
+| **ValueError** | If the provided chat is not a valid BasicChat` instance. |
+
+```python
+new_chat = copilot.chats[0]
+try:
+    copilot.chat = new_chat
+    print("Chat set successfully.")
+except ValueError as e:
+    print(f"Failed to set chat: {e}")
+```

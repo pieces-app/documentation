@@ -1,6 +1,215 @@
 ---
-title: Pieces OS Python SDK
-description: Learn how to set up and use the Pieces OS Python SDK.
+title: Pieces Wrapper Python SDK Assets
+description: Learn how to set up and use the Pieces Wrapper Python SDK Asset methods
 ---
 
+# Pieces wrapper python SDK asset methods
 
+## create_asset()
+
+```python
+create_asset(content, metadata)
+```
+
+Creates a new asset.
+
+### Parameters
+
+Name | Type | Notes
+------------- | ------------ | -------------
+ **content** | **string**| [required]
+ **metadata** | **FragmentMetadata**| [optional]
+
+### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import FragmentMetadata
+
+# Replace 'your_base_url' with the base URL of your Pieces OS server
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+# Set the content and metadata for the new asset
+content = "print('Hello, World!')"
+metadata = FragmentMetadata(ext=ClassificationSpecificEnum.PY) # optional metadata
+
+# Create the new asset using the content and metadata
+new_asset_id = pieces_client.create_asset(content, metadata)
+
+print(f"Created asset with ID: {new_asset_id}")
+```
+
+## assets()
+
+```python
+assets()
+```
+
+Gets all your assets.
+
+### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Replace 'your_base_url' with the base URL of your Pieces OS server
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+# Get all assets and print their names
+assets = pieces_client.assets()
+for asset in assets:
+   logger.info(f"Asset Name: {asset.name}")
+```
+
+## BasicAsset
+
+The BasicAsset class provides a way to manage assets with various properties and methods. This document outlines the properties and methods available in the BasicAsset class.
+
+```python
+BasicAsset(id)
+```
+
+### Parameters
+
+| Name | Description | Type | Notes |
+|------------- | ------------ | -------------| -------------|
+| **id** | Your asset id. Raises: ValueError if the provided ID is invalid. | **string** | [required] |
+
+### Properties
+
+#### id
+Returns the asset ID.
+
+#### raw_content
+Edit the original format of the asset.
+
+##### Arguments:
+
+| Name | Description |
+| ------------- | ------------ |
+| data | The new data to be set. |
+
+##### Raises:
+
+| Name | Description |
+| ------------- | ------------ | 
+| NotImplementedError | If the asset is an image.|
+
+#### is_image
+Check if the asset is an image.
+
+##### On return
+
+| Type | Description | 
+| ------------- | ------------ | 
+|  bool |  True if the asset is an image, otherwise False. |
+
+#### classification
+Get the specific classification of the asset (e.g., py).
+
+##### On return
+
+| Type | Description | 
+| ------------- | ------------ | 
+| classification value/None | The classification value of the asset, or None if not available. |
+
+#### classification setter
+Reclassify an asset
+
+#### name setter
+Edit the name of the asset.
+
+- name: The new name to be set for the asset.
+
+#### description
+Retrieve the description of the asset.
+
+##### On return
+
+| Type | Description | 
+| ------------- | ------------ | 
+| string/None | The description text of the asset, or None if not available. |
+
+#### annotations
+Get all annotations of the asset.
+
+| Type | Description | 
+| ------------- | ------------ | 
+|Optional[Annotations]/None|The annotations if available, otherwise None.|
+
+### Methods
+
+#### `delete()`
+Delete the asset.
+
+#### `create()`
+Create a new asset.
+
+Args:
+
+raw_content (str): The raw content of the asset.
+metadata (Optional[FragmentMetadata]): The metadata of the asset.
+Returns: str - The ID of the created asset.
+
+### Example
+
+```python
+from pieces_copilot_sdk import PiecesClient
+from pieces_copilot_sdk.basic_identifier import BasicAsset
+from pieces_os_client import ClassificationSpecificEnum
+
+# Replace 'your_base_url' with your actual base URL
+pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
+
+asset = pieces_client.assets()[0]
+
+# Get the asset ID
+asset_id = asset.id
+print(f"Asset ID: {asset_id}")
+
+# Check if the asset is an image
+if asset.is_image:
+    print("The asset is an image.")
+else:
+    print("The asset is not an image.")
+
+# Get and set the asset name
+print(f"Current Asset Name: {asset.name}")
+asset.name = "Updated Asset Name"
+print(f"Updated Asset Name: {asset.name}")
+
+# Retrieve and modify the asset content
+content = asset.raw_content
+print(f"Original Content: {content}")
+asset.raw_content = content + "\n# This is a comment"
+print(f"Updated Content: {asset.raw_content}")
+
+# Get the asset classification
+classification = asset.classification.value if asset.classification else "None"
+print(f"Asset Classification: {classification}")
+
+asset.classification = ClassificationSpecificEnum.SH # Reclassify to shell
+print(f"New Classification: {classification}")
+
+# Get the asset description
+description = asset.description if asset.description else "No description available."
+print(f"Asset Description: {description}")
+
+# Get the asset annotations
+annotations = asset.annotations if asset.annotations else "No annotations available."
+print(f"Asset Annotations: {annotations}")
+
+# Delete the asset
+asset.delete()
+print("Asset deleted.")
+
+# Create a new asset
+new_asset_id = BasicAsset.create("New Asset content")
+print(f"New Asset ID: {new_asset_id}")
+pieces_client.close()
+```
+
+## Community
+If you have created your own SDK or any other technology specific integration and would like us to list it here under community maintained SDKs/integrations please [contact us](https://github.com/pieces-app/opensource/discussions).
+
+If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our [Open Source Discussions](https://github.com/pieces-app/opensource/discussions) and you can also join our [Discord](https://discord.gg/getpieces).
