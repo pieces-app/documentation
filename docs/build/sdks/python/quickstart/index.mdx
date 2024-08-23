@@ -37,16 +37,9 @@ If you are using a local instance of Pieces OS:
 
 If you are using a remote instance of Pieces OS, use the URL you have set up for that.
 
-```python
-from pieces_copilot_sdk import PiecesClient
-
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'baseUrl': 'your_base_url'})
-```
-
 ## Getting started
 
-First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a config.py file to store your configuration info and a wellknown.py file to test the connection.
+First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a `config.py` file to store your configuration info and a `wellknown.py` file to test the connection.
 
 ```python
 from pieces_os_client.wrapper import PiecesClient

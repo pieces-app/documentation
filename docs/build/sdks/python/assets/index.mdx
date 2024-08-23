@@ -63,7 +63,7 @@ for asset in assets:
 
 ## BasicAsset
 
-The BasicAsset class provides a way to manage assets with various properties and methods. This document outlines the properties and methods available in the BasicAsset class.
+The `BasicAsset` class provides a way to manage assets with various properties and methods.
 
 ```python
 BasicAsset(id)
@@ -145,11 +145,18 @@ Delete the asset.
 #### `create()`
 Create a new asset.
 
-Args:
+##### Arguments
 
-raw_content (str): The raw content of the asset.
-metadata (Optional[FragmentMetadata]): The metadata of the asset.
-Returns: str - The ID of the created asset.
+| Name | Type| Description |
+| ------------- | ------------ |  ------------ |
+| **raw_content** | **string** | The raw content of the asset. |
+| **metadata** | **(Optional[FragmentMetadata])**|  The metadata of the asset. |
+
+##### Returns
+
+| Type | Description | 
+| ------------- | ------------ | 
+| **string** | The ID of the created asset. |
 
 ### Example
 

@@ -52,7 +52,7 @@ BasicChat(id)
 
 ### Methods
 
-####id
+#### id
 Gets the ID of the conversation.
 
 ##### On return
@@ -70,7 +70,7 @@ Gets the name of the conversation.
 | ------------- | ------------ | 
 | **string** | The name of the conversation, or "New Conversation" if the name is not set.|
 
-name = name: str
+#### name = name: str
 Sets the name of the conversation.
 
 ##### Arguments
@@ -92,8 +92,6 @@ annotations |
 
 #### annotations
 Gets the annotations of the conversation.
-
-Returns:
 
 ##### Returns:
 
@@ -162,7 +160,7 @@ pieces_client.close()
 
 ## BasicMessage
 
-This represents a Copilot chat message to opentain that model you should be using pieces_client.copilot.chat.messages() to opentain the messages of the current chat.
+This represents a Copilot chat message to opentain that model you should be using `pieces_client.copilot.chat.messages()` to open and maintain the messages of the current chat.
 
 ### Properties
 
@@ -225,7 +223,7 @@ pieces_client.close()
 stream_question(query, pipeline)
 ```
 
-Asks a question to the QGPT model and streams the responses. by default it will create a new conversation and always use it in the ask. You can always change the conversation in copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")
+Asks a question to the QGPT model and streams the responses. By default it will create a new conversation and it always use it in the ask. You can always change the conversation in `copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")`
 
 ### Parameters
 
@@ -313,7 +311,7 @@ context.clear() # clear all the context
 
 :::info
 
-If you setted the context of the copilot you will get a value error in the ask_stream method if you added an invalid type
+If you setted the context of the copilot you will get a value error in the `ask_stream` method if you added an invalid type
 
 :::
 
@@ -329,7 +327,7 @@ Retrieves a list of all chat identifiers.
 
 | Type | Description |
 | ------------- | ------------ |
-| **list[BasicChat]** |  A list of BasicChat instances representing the chat identifiers. |
+| **list[BasicChat]** |  A list of `BasicChat` instances representing the chat identifiers. |
 
 ### Example
 
@@ -351,7 +349,7 @@ Gets the current conversation being used in the copilot.
 
 | Type | Description |
 | ------------- | ------------ |
-| **BasicChat**/**None** |  The current BasicChat instance or None if no chat is set. |
+| **BasicChat**/**None** |  The current `BasicChat` instance or `None` if no chat is set. |
 
 ### Example
 
@@ -375,13 +373,13 @@ Sets the current conversation to be used in the copilot.
 
 | Type | Description |
 | ------------- | ------------ |
-| **BasicChat/None** | The BasicChat instance is set. |
+| **BasicChat/None** | The `BasicChat` instance is set. |
 
 ### Raises
 
 | Type | Description |
 | ------------- | ------------ |
-| **ValueError** | If the provided chat is not a valid BasicChat` instance. |
+| **ValueError** | If the provided chat is not a valid `BasicChat` instance. |
 
 ```python
 new_chat = copilot.chats[0]
