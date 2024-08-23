@@ -564,15 +564,21 @@ const sidebars: SidebarsConfig = {
       id: 'build/index',
       label: 'Overview',
     },
+    // {
+    //   type: 'doc',
+    //   id: 'build/examples/index',
+    //   label: '📚 Examples',
+    // },
     {
-      type: 'doc',
-      id: 'build/examples/index',
-      label: '📚 Examples',
-    },
-    {
-      type: 'doc',
-      id: 'build/sdks/python/index',
-      label: '📚 Python',
+      type: 'category',
+      label: '🔧 SDKs',
+      items: [
+        {
+          type: 'doc',
+          id: 'build/sdks/python/index',
+          label: 'Python SDK',
+        },
+      ],
     },
     // {
     //   type: 'doc',
@@ -606,37 +612,91 @@ const sidebars: SidebarsConfig = {
       ]
     },
   ],
-    // Generates sidebar for each active SDK
-    ...generatedSDKSidebars,
 
-    // Python SDK WrapperSidebar
-    pythonSDKWrapperSidebar: [
-      {
-        type: 'ref',
-        id: 'build/index',
-        label: '← Back to Build',
-      },
-      {
-        type: 'doc',
-        id: 'build/sdks/python/index',
-        label: 'Overview',
-      },
-      {
-        type: 'doc',
-        id: 'build/sdks/python/quickstart/index',
-        label: 'Quickstart',
-      },
-      {
-        type: 'doc',
-        id: 'build/sdks/python/assets/index',
-        label: 'Assets',
-      },
-      {
-        type: 'doc',
-        id: 'build/sdks/python/copilot/index',
-        label: 'Copilot',
-      },
-    ],
-  };
+  // Pieces CLI Sidebar
+  cliSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/cli/commands',
+      label: 'Commands',
+    },
+  ],
+
+  // Raycast Sidebar
+  raycastSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/commands',
+      label: 'Commands',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/raycast/troubleshooting',
+      label: 'Troubleshooting',
+    }
+  ],
+
+  // Python SDK WrapperSidebar
+  pythonSDKWrapperSidebar: [
+    {
+      type: 'ref',
+      id: 'build/index',
+      label: '← Back to Build',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/quickstart/index',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/assets/index',
+      label: 'Assets',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/copilot/index',
+      label: 'Copilot',
+    },
+  ],
+
+  // Generates sidebar for each active SDK
+  ...generatedSDKSidebars,
+};
 
 export default sidebars;

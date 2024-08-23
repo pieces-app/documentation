@@ -1,32 +1,37 @@
 ---
-title: Pieces Wrapper Python SDK
-description: Learn about the Pieces Wrapper Python SDK.
+title: Pieces OS Client Python SDK
+description: The Pieces OS Client SDK is a powerful code engine package designed for writing applications on top of Pieces OS.
 ---
 
-# Python SDK
+import Grid from "/src/components/Grid";
+import {CardWithoutCTA} from "/src/components/Card";
+import CTAButton from "/src/components/CTAButton";
 
-The Pieces SDK is a powerful code engine package designed for writing applications on top of Pieces OS. It facilitates communication with a locally hosted server, enabling features such as copilot chats, asset saving, and more.
+The Pieces OS Client Python SDK is a powerful code engine package designed for writing applications on top of Pieces OS. The SDK provides easy-to-use methods for various operations such as managing conversations, copilot chats, asset management, local server interaction, and more.
 
-## Requirements
-
-The Pieces Python SDK has the following system requirements:
-
-- Pieces OS running as a backend service.
-- Python environment with `pip` for installing the SDK package.
+<CTAButton icon={'/assets/languages/python_logo.png'} label={'Get Started'} href={'/build/sdks/python/quickstart'} type={'primary'} />
 
 ## Features
 
-Feature | Description
-------------- | -------------
-Simplified Interaction | The Pieces Copilot SDK simplifies the interaction with the Pieces OS Client SDK by providing easy-to-use methods for various operations.
-Manage Conversations | The SDK provides various methods to manage conversations such as fetching a specific conversation, updating conversation name, and more.
-Copilot Chats | Communicate seamlessly with copilot chats functionality.
-Asset Management | Save and manage assets and formats efficiently.
-Local Server Interaction | Interact with a locally hosted server for various functionalities.
-Multi LLMs support | Use any Pieces supported LLMs to power apps.
+<Grid cols={2}>
+  <div className={'grid-card'}>
+    <h2>🤖 Copilot Chats</h2>
+    <p>Communicate seamlessly with our copilot functionality.</p>
+  </div>
+  <div className={'grid-card'}>
+    <h2>📁 Asset Management</h2>
+    <p>Save and manage assets and formats efficiently.</p>
+  </div>
+  <div className={'grid-card'}>
+    <h2>🖥 Local Server Interaction</h2>
+    <p>Interact with a locally hosted server for various functionalities.</p>
+  </div>
+  <div className={'grid-card'}>
+    <h2>🧠 Cloud & Local LLM Support</h2>
+    <p>Tap into your favorite cloud or local LLM with ease.</p>
+  </div>
+</Grid>
 
+## Want to Contribute?
 
-## Community
-If you have created your own SDK or any other technology-specific integration and would like us to list it here under community-maintained SDKs/integrations, please [contact us](https://github.com/pieces-app/opensource/discussions).
-
-If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our [Open Source Discussions](https://github.com/pieces-app/opensource/discussions), and you can also join our [Discord](https://discord.gg/getpieces).
+Don't see a feature you need? We welcome contributions to the Pieces OS Client Python SDK. Check out the [GitHub repository](https://github.com/pieces-app/pieces-os-client-sdk-for-python) to get started.
