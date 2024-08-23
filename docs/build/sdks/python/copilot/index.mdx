@@ -3,7 +3,7 @@ title: Pieces Wrapper Python SDK Copilot
 description: Learn how to set up and use the Pieces Wrapper Python SDK Copilot methods
 ---
 
-# Pieces wrapper python SDK copilot methods
+# Python Copilot
 
 ## stream_question()
 
@@ -15,7 +15,7 @@ Ask Pieces Copilot a question and stream the response.
 
 ### Parameters
 
-Name | Type | Notes
+Param Name | Param Type | Param Notes
 ------------- | ------------ | -------------
  **question** | **string**| [required]
 
@@ -46,7 +46,7 @@ BasicChat(id)
 
 ### Parameters
 
-| Name | Description | Type | Notes |
+| Param Name | Param Description | Param Type | Param Notes |
 |------------- | ------------ | -------------| -------------|
 | **id** | Your conversation id. | **string** | [required] |
 
@@ -55,56 +55,55 @@ BasicChat(id)
 #### id
 Gets the ID of the conversation.
 
-##### On return
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **string** | The ID of the conversation.|
 
 #### name
 Gets the name of the conversation.
 
-##### Returns:
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
-| **string** | The name of the conversation, or "New Conversation" if the name is not set.|
+| **string** | Name of the conversation, or "New Conversation" if name is not set.|
 
 #### name = name: str
 Sets the name of the conversation.
 
-##### Arguments
+##### Parameters
 
-| Name | Description |
-| ------------- | ------------ |
-| **str** | The new name of the conversation. |
+| Param Name | Param Type | Param Description |
+| ------------- | ------------ | ------------ |
+| **name** | **string** | The new name of the conversation. |
 
 
 #### messages()
 Retrieves the messages in the conversation.
 
-##### Returns:
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
-| **list** | A list of BasicMessage instances representing the messages in the conversation.
-annotations |
+| **list** | A list of `BasicMessage` instances representing the messages in the conversation. |
 
 #### annotations
 Gets the annotations of the conversation.
 
-##### Returns:
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
-| **dict**/**None** | The annotations of the conversation, or None if not available. | 
+| **dict**/**None** | The annotations of the conversation, or `None` if not available. | 
 
 #### description
 Gets the conversation description.
 
-##### Returns:
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **string** | The description of the conversation. |
 
@@ -160,7 +159,7 @@ pieces_client.close()
 
 ## BasicMessage
 
-This represents a Copilot chat message to opentain that model you should be using `pieces_client.copilot.chat.messages()` to open and maintain the messages of the current chat.
+The BasicMessage class represents a Copilot chat message. To open and maintain the model, you should be using `pieces_client.copilot.chat.messages()` to open and maintain the messages of the current chat.
 
 ### Properties
 
@@ -170,16 +169,18 @@ Sets the raw content of the message and updates it in the API.
 #### role
 Gets the role of the message.
 
-##### Returns:
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **Literal["USER", "SYSTEM", "ASSISTANT"]** | The role of the message. |
 
 #### id
 Gets the ID of the message.
 
-| Type | Description | 
+##### Returns
+
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **string** | The ID of the message. |
 
@@ -223,20 +224,20 @@ pieces_client.close()
 stream_question(query, pipeline)
 ```
 
-Asks a question to the QGPT model and streams the responses. By default it will create a new conversation and it always use it in the ask. You can always change the conversation in `copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")`
+Asks a question to the QGPT model and streams the responses. By default, it will create a new conversation, and it always uses it in the ask. You can always change the conversation in `copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")`.
 
 ### Parameters
 
-| Name | Description | Note |
+| Param Name | Param Description | Param Note |
 |------------- | ------------ |------------ |
 | **query** |  The question to ask. | [required] |
-| **pipeline** | pipeline to follow. | [optional] |
+| **pipeline** | The pipeline to follow. | [optional] |
 
 ### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
-| **QGPTStreamOutput** | The streamed output from the QGPT model.|
+| **QGPTStreamOutput** | The streamed output from the `QGPT` model.|
 
 ### Example
 
@@ -259,7 +260,7 @@ for response in pieces_client.copilot.stream_question("Your question"):
 question(query, pipeline)
 ```
 
-Asks a question to the QGPT model and return the responses
+Asks a question to the `QGPT` model and return the responses.
 
 :::info
 
@@ -269,16 +270,16 @@ The question is not a part of any conversation.
 
 ### Parameters
 
-| Name | Description | Note |
+| Param Name | Param Description | Param Note |
 |------------- | ------------ |------------ |
 | **query** |  The question to ask. | [required] |
-| **pipeline** | pipeline to follow. | [optional] |
+| **pipeline** | The pipeline to follow. | [optional] |
 
 ### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
-| **QGPTStreamOutput** | The streamed output from the QGPT model.|
+| **QGPTStreamOutput** | The streamed output from the `QGPT` model.|
 
 ### Example
 
@@ -300,6 +301,16 @@ copilot.context
 
 Returns a context model to interact with the conversation context.
 
+
+:::info
+
+If you set the context of the copilot, you will get a value error in the `ask_stream` method if you add an invalid type
+
+:::
+
+
+### Example
+
 ```python
 context = copilot.context
 context.paths.append("/path/to/folder/or/file")
@@ -309,23 +320,13 @@ context.raw_assets.append("import sublime") # snippet content
 context.clear() # clear all the context
 ```
 
-:::info
-
-If you setted the context of the copilot you will get a value error in the `ask_stream` method if you added an invalid type
-
-:::
-
 ### chats()
-
-```python
-chats()
-```
 
 Retrieves a list of all chat identifiers.
 
 ### Returns
 
-| Type | Description |
+| Return Type | Return Description |
 | ------------- | ------------ |
 | **list[BasicChat]** |  A list of `BasicChat` instances representing the chat identifiers. |
 
@@ -347,7 +348,7 @@ Gets the current conversation being used in the copilot.
 
 ### Returns
 
-| Type | Description |
+| Return Type | Return Description |
 | ------------- | ------------ |
 | **BasicChat**/**None** |  The current `BasicChat` instance or `None` if no chat is set. |
 
@@ -369,15 +370,15 @@ copilot.chat = your_value_here
 
 Sets the current conversation to be used in the copilot.
 
-### Arguments
+### Parameters
 
-| Type | Description |
+| Param Type | Param Description |
 | ------------- | ------------ |
 | **BasicChat/None** | The `BasicChat` instance is set. |
 
 ### Raises
 
-| Type | Description |
+| Raise Type | Raise Description |
 | ------------- | ------------ |
 | **ValueError** | If the provided chat is not a valid `BasicChat` instance. |
 

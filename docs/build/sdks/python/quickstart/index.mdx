@@ -1,7 +1,9 @@
 ---
-title: Pieces OS Python SDK
-description: Learn how to set up and use the Pieces OS Python SDK.
+title: Pieces Wrapper Python SDK Quick Start
+description: Quickly set up the Pieces Wrapper Python SDK
 ---
+
+# Python QuickStart
 
 Follow these steps to use the Pieces Python SDK.
 
@@ -39,7 +41,7 @@ If you are using a remote instance of Pieces OS, use the URL you have set up for
 
 ## Getting started
 
-First, we will create a Python script to test the connection to the Pieces OS server. This involves creating a `config.py` file to store your configuration info and a `wellknown.py` file to test the connection.
+Create a Python script to test the connection to the Pieces OS server. Create a `main.py` file to test the connection.
 
 ```python
 from pieces_os_client.wrapper import PiecesClient
@@ -55,8 +57,6 @@ else:
 pieces_client = PiecesClient(config={'baseUrl': f'http://localhost:{port}'})
 ```
 
-## Determining Your Base URL
-
 In the code snippet above, we use the platform package to determine the base URL based on the operating system.
 
 Run the following command to execute the script:
@@ -66,6 +66,6 @@ python3 main.py
 ```
 
 ## Community
-If you have created your own SDK or any other technology specific integration and would like us to list it here under community maintained SDKs/integrations please [contact us](https://github.com/pieces-app/opensource/discussions).
+If you have created your own SDK or any other technology-specific integration and would like us to list it here under community-maintained SDKs/integrations, please [contact us](https://github.com/pieces-app/opensource/discussions).
 
-If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our [Open Source Discussions](https://github.com/pieces-app/opensource/discussions) and you can also join our [Discord](https://discord.gg/getpieces).
+If you would like to help us expand Pieces' list of SDKs, you can start a new discussion on our [Open Source Discussions](https://github.com/pieces-app/opensource/discussions), and you can also join our [Discord](https://discord.gg/getpieces).

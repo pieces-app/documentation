@@ -3,7 +3,7 @@ title: Pieces Wrapper Python SDK Assets
 description: Learn how to set up and use the Pieces Wrapper Python SDK Asset methods
 ---
 
-# Pieces wrapper python SDK asset methods
+# Python Assets
 
 ## create_asset()
 
@@ -15,7 +15,7 @@ Creates a new asset.
 
 ### Parameters
 
-Name | Type | Notes
+Param Name | Param Type | Param Notes
 ------------- | ------------ | -------------
  **content** | **string**| [required]
  **metadata** | **FragmentMetadata**| [optional]
@@ -65,56 +65,53 @@ for asset in assets:
 
 The `BasicAsset` class provides a way to manage assets with various properties and methods.
 
-```python
-BasicAsset(id)
-```
-
 ### Parameters
 
-| Name | Description | Type | Notes |
+| Param Name | Param Description | Param Type | Param Notes |
 |------------- | ------------ | -------------| -------------|
-| **id** | Your asset id. Raises: ValueError if the provided ID is invalid. | **string** | [required] |
+| **id** | Your asset id. `Raises: ValueError` if the provided ID is invalid. | **string** | [required] |
 
 ### Properties
 
 #### id
+
 Returns the asset ID.
 
 #### raw_content
 Edit the original format of the asset.
 
-##### Arguments:
+##### Parameters
 
-| Name | Description |
+| Param Name | Param Description |
 | ------------- | ------------ |
 | **data** | The new data to be set. |
 
-##### Raises:
+##### Raises
 
-| Name | Description |
+| Raise Name | Raise Description |
 | ------------- | ------------ | 
 | **NotImplementedError** | If the asset is an image.|
 
 #### is_image
 Check if the asset is an image.
 
-##### On return
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 |  **bool** |  `True` if the asset is an image, otherwise `False`. |
 
 #### classification
-Get the specific classification of the asset (e.g., py).
+Get the specific classification of the asset (ie. py).
 
-##### On return
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **classification value**/**None** | The classification value of the asset, or `None` if not available. |
 
 #### classification setter
-Reclassify an asset
+Reclassify an asset.
 
 #### name setter
 Edit the name of the asset.
@@ -124,16 +121,18 @@ Edit the name of the asset.
 #### description
 Retrieve the description of the asset.
 
-##### On return
+##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **string/None** | The description text of the asset, or `None` if not available. |
 
 #### annotations
 Get all annotations of the asset.
 
-| Type | Description | 
+##### Parameters
+
+| Param Type | Param Description | 
 | ------------- | ------------ | 
 |**Optional[Annotations]/None** |The annotations if available, otherwise `None`.|
 
@@ -145,16 +144,16 @@ Delete the asset.
 #### `create()`
 Create a new asset.
 
-##### Arguments
+##### Parameters
 
-| Name | Type| Description |
+| Param Name | Param Type| Param Description |
 | ------------- | ------------ |  ------------ |
 | **raw_content** | **string** | The raw content of the asset. |
-| **metadata** | **(Optional[FragmentMetadata])**|  The metadata of the asset. |
+| **metadata** | **Optional[FragmentMetadata]**|  The metadata of the asset. |
 
 ##### Returns
 
-| Type | Description | 
+| Return Type | Return Description | 
 | ------------- | ------------ | 
 | **string** | The ID of the created asset. |
 
