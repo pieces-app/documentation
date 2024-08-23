@@ -93,14 +93,61 @@ Navigation and actions:
 Create a snippet from the selected text in the visual mode.
 
 ```vim
-PiecesCreateSnippet
+:PiecesCreateSnippet
 ```
 
 1. Enter visual mode by pressing `v` in normal mode.
 2. Select the desired text using arrow keys or Vim motions.
 3. Type `:PiecesCreateSnippet` and press `<Enter>`.
 
+## Auth Commands
 
+### `:PiecesAccount`
+
+Shows your Pieces account information such as Username, Email, Personal Cloud Status and Personal Domain in a new window.  
+
+```vim
+:PiecesAccount
+```
+You can also logout from your account by going to the `Logout` option in the Auth status menu and then press `enter`. You will be logged out of your Pieces account.
+
+### `:PiecesLogin`
+
+Login to your Pieces account.
+
+```vim
+:PiecesLogin
+```
+
+### `:PiecesLogout`
+
+Logout of your Pieces account.
+
+```vim
+:PiecesLogout
+```
+
+### `:PiecesConnectCloud`
+
+Connect to your Personal Pieces Cloud. 
+
+```vim
+:PiecesConnectCloud
+```
+
+### `:PiecesDisconnectCloud`
+
+Disconnect from your Personal Pieces Cloud.
+
+```vim
+:PiecesDisconnectCloud
+```
+
+:::info
+
+ Note: In order to use the Personal Pieces Cloud commands, you must have an account connected to Pieces OS.
+
+:::
 ## Tips
 
 - When editing a snippet opened with `:PiecesSnippets`, remember to save your changes using the `:w` command.
