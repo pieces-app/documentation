@@ -87,13 +87,13 @@ Edit the original format of the asset.
 
 | Name | Description |
 | ------------- | ------------ |
-| data | The new data to be set. |
+| **data** | The new data to be set. |
 
 ##### Raises:
 
 | Name | Description |
 | ------------- | ------------ | 
-| NotImplementedError | If the asset is an image.|
+| **NotImplementedError** | If the asset is an image.|
 
 #### is_image
 Check if the asset is an image.
@@ -102,7 +102,7 @@ Check if the asset is an image.
 
 | Type | Description | 
 | ------------- | ------------ | 
-|  bool |  True if the asset is an image, otherwise False. |
+|  **bool** |  `True` if the asset is an image, otherwise `False`. |
 
 #### classification
 Get the specific classification of the asset (e.g., py).
@@ -111,7 +111,7 @@ Get the specific classification of the asset (e.g., py).
 
 | Type | Description | 
 | ------------- | ------------ | 
-| classification value/None | The classification value of the asset, or None if not available. |
+| **classification value**/**None** | The classification value of the asset, or `None` if not available. |
 
 #### classification setter
 Reclassify an asset
@@ -119,7 +119,7 @@ Reclassify an asset
 #### name setter
 Edit the name of the asset.
 
-- name: The new name to be set for the asset.
+- `name`: The new name to be set for the asset.
 
 #### description
 Retrieve the description of the asset.
@@ -128,14 +128,14 @@ Retrieve the description of the asset.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| string/None | The description text of the asset, or None if not available. |
+| **string/None** | The description text of the asset, or `None` if not available. |
 
 #### annotations
 Get all annotations of the asset.
 
 | Type | Description | 
 | ------------- | ------------ | 
-|Optional[Annotations]/None|The annotations if available, otherwise None.|
+|**Optional[Annotations]/None** |The annotations if available, otherwise `None`.|
 
 ### Methods
 

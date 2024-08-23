@@ -59,7 +59,7 @@ Gets the ID of the conversation.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| string | The ID of the conversation.|
+| **string** | The ID of the conversation.|
 
 #### name
 Gets the name of the conversation.
@@ -68,7 +68,7 @@ Gets the name of the conversation.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| string | The name of the conversation, or "New Conversation" if the name is not set.|
+| **string** | The name of the conversation, or "New Conversation" if the name is not set.|
 
 name = name: str
 Sets the name of the conversation.
@@ -77,7 +77,7 @@ Sets the name of the conversation.
 
 | Name | Description |
 | ------------- | ------------ |
-| str | The new name of the conversation. |
+| **str** | The new name of the conversation. |
 
 
 #### messages()
@@ -87,7 +87,7 @@ Retrieves the messages in the conversation.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| list | A list of BasicMessage instances representing the messages in the conversation.
+| **list** | A list of BasicMessage instances representing the messages in the conversation.
 annotations |
 
 #### annotations
@@ -99,7 +99,7 @@ Returns:
 
 | Type | Description | 
 | ------------- | ------------ | 
-| dict/None | The annotations of the conversation, or None if not available. | 
+| **dict**/**None** | The annotations of the conversation, or None if not available. | 
 
 #### description
 Gets the conversation description.
@@ -108,7 +108,7 @@ Gets the conversation description.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| string | The description of the conversation. |
+| **string** | The description of the conversation. |
 
 #### delete()
 Deletes the conversation.
@@ -176,14 +176,14 @@ Gets the role of the message.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| Literal["USER", "SYSTEM", "ASSISTANT"] | The role of the message. |
+| **Literal["USER", "SYSTEM", "ASSISTANT"]** | The role of the message. |
 
 #### id
 Gets the ID of the message.
 
 | Type | Description | 
 | ------------- | ------------ | 
-| string | The ID of the message. |
+| **string** | The ID of the message. |
 
 #### delete
 Deletes the message.
@@ -231,14 +231,14 @@ Asks a question to the QGPT model and streams the responses. by default it will 
 
 | Name | Description | Note |
 |------------- | ------------ |------------ |
-| query |  The question to ask. | [required] |
-| pipeline | pipeline to follow. | [optional] |
+| **query** |  The question to ask. | [required] |
+| **pipeline** | pipeline to follow. | [optional] |
 
 ### Returns
 
 | Type | Description | 
 | ------------- | ------------ | 
-| QGPTStreamOutput | The streamed output from the QGPT model.|
+| **QGPTStreamOutput** | The streamed output from the QGPT model.|
 
 ### Example
 
@@ -261,20 +261,26 @@ for response in pieces_client.copilot.stream_question("Your question"):
 question(query, pipeline)
 ```
 
-Asks a question to the QGPT model and return the responses Note: the question is not a part of any conversation.
+Asks a question to the QGPT model and return the responses
+
+:::info
+
+The question is not a part of any conversation.
+
+:::
 
 ### Parameters
 
 | Name | Description | Note |
 |------------- | ------------ |------------ |
-| query |  The question to ask. | [required] |
-| pipeline | pipeline to follow. | [optional] |
+| **query** |  The question to ask. | [required] |
+| **pipeline** | pipeline to follow. | [optional] |
 
 ### Returns
 
 | Type | Description | 
 | ------------- | ------------ | 
-| QGPTStreamOutput | The streamed output from the QGPT model.|
+| **QGPTStreamOutput** | The streamed output from the QGPT model.|
 
 ### Example
 
@@ -305,7 +311,11 @@ context.raw_assets.append("import sublime") # snippet content
 context.clear() # clear all the context
 ```
 
-Note if you setted the context of the copilot you will get a value error in the ask_stream method if you added an invalid type
+:::info
+
+If you setted the context of the copilot you will get a value error in the ask_stream method if you added an invalid type
+
+:::
 
 ### chats()
 
@@ -341,7 +351,7 @@ Gets the current conversation being used in the copilot.
 
 | Type | Description |
 | ------------- | ------------ |
-| **BasicChat/None** |  The current BasicChat instance or None if no chat is set. |
+| **BasicChat**/**None** |  The current BasicChat instance or None if no chat is set. |
 
 ### Example
 
