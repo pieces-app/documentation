@@ -1,30 +1,29 @@
 ---
-title: Pieces Wrapper Python SDK Copilot
-description: Learn how to set up and use the Pieces Wrapper Python SDK Copilot methods
+title: Pieces OS Client Python SDK Copilot
+description: Learn how to set up and use the Pieces OS Client Python SDK to communicate Pieces Copilot.
 ---
 
-# Python Copilot
+Use the following methods to communicate with Pieces Copilot using the Pieces OS Client Python SDK.
 
-## stream_question()
+## Copilot Management
 
-```python
-stream_question(question)
-```
+### Ask a Question to Pieces Copilot
 
-Ask Pieces Copilot a question and stream the response.
+The `stream_question()` method of the `Copilot` class allows you to ask a question to Pieces Copilot and stream the response.
 
-### Parameters
+#### Parameters
 
-Param Name | Param Type | Param Notes
-------------- | ------------ | -------------
- **question** | **string**| [required]
+| Param Name | Param Type | Param Notes |
+|------------- |------------ |-------------|
+| **question** | **string** | [required]  |
 
-### Example
+#### Example
 
 ```python
 from pieces_os_client.wrapper import PiecesClient
 
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 # Set the question you want to ask
 question = "What is Object-Oriented Programming?"
@@ -36,357 +35,76 @@ for response in pieces_client.copilot.stream_question(question):
          answers = response.question.answers.iterable
          for answer in answers:
             print(answer.text,end="")
+
+# Close the client
+pieces_client.close()
 ```
 
-## BasicChat
+### Get Availiable LLMs
+
+The `get_models()` method returns a list of available LLMs as a dictionary.
+
+#### Example
 
 ```python
-BasicChat(id)
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get all models and print their names
+models = pieces_client.get_models()
+for model_name, model_id in models.items():
+    print(model_name)
+
+# Close the client
+pieces_client.close()
 ```
 
-### Parameters
+### Copilot Class
 
-| Param Name | Param Description | Param Type | Param Notes |
-|------------- | ------------ | -------------| -------------|
-| **id** | Your conversation id. | **string** | [required] |
+The `Copilot` class provides a way to manage copilot functionality with various properties and methods.
+
+#### Properties
+
+| Property Name | Property Description |
+|--------------- |----------------------|
+| **chat**      | The chat object. |
+
+### BasicChat Class
+
+The `BasicChat` class provides a way to manage chat with various properties and methods.
+
+#### Properties
+
+| Property Name | Property Description |
+|--------------- |----------------------|
+| **conversation** | The conversation object. |
+| **id** | The ID of the chat. |
+| **name** | The name of the chat. |
+| **annotations** | The annotations of the chat. |
 
 ### Methods
 
-#### id
-Gets the ID of the conversation.
+#### `delete()`
 
-##### Returns
+The `delete()` method deletes the chat.
 
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **string** | The ID of the conversation.|
-
-#### name
-Gets the name of the conversation.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **string** | Name of the conversation, or "New Conversation" if name is not set.|
-
-#### name = name: str
-Sets the name of the conversation.
-
-##### Parameters
-
-| Param Name | Param Type | Param Description |
-| ------------- | ------------ | ------------ |
-| **name** | **string** | The new name of the conversation. |
-
-
-#### messages()
-Retrieves the messages in the conversation.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **list** | A list of `BasicMessage` instances representing the messages in the conversation. |
-
-#### annotations
-Gets the annotations of the conversation.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **dict**/**None** | The annotations of the conversation, or `None` if not available. | 
-
-#### description
-Gets the conversation description.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **string** | The description of the conversation. |
-
-#### delete()
-Deletes the conversation.
-
-### Example
+#### Example
 
 ```python
-from pieces_copilot_sdk import PiecesClient
+from pieces_os_client.wrapper import PiecesClient
 
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
-# Initialize a BasicChat instance
-chat = pieces_client.copilot.chats()[0]
+# Get the chat ID
+chat_id = "your_chat_id"
 
-# Get the ID of the conversation
-conversation_id = chat.id
-print(f"Conversation ID: {conversation_id}")
+# Delete the chat
+pieces_client.copilot.chat(chat_id).delete()
 
-# Get the name of the conversation
-conversation_name = chat.name
-print(f"Conversation Name: {conversation_name}")
-
-# Set a new name for the conversation
-chat.name = "Project Discussion"
-print(f"Updated Conversation Name: {chat.name}")
-
-# Retrieve the messages in the conversation
-messages = chat.messages()
-for message in messages:
-    print(f"Message: {message.raw_content}")
-    print(f"Message Role: {message.role}")
-
-# Get the annotations of the conversation
-annotations = chat.annotations
-if annotations:
-    print(f"Annotations: {annotations}")
-else:
-    print("No annotations available.")
-
-# Get the description of the conversation
-description = chat.description
-print(f"Description: {description}")
-
-# Delete the conversation
-chat.delete()
-print("Conversation deleted.")
-
+# Close the client
 pieces_client.close()
-```
-
-## BasicMessage
-
-The BasicMessage class represents a Copilot chat message. To open and maintain the model, you should be using `pieces_client.copilot.chat.messages()` to open and maintain the messages of the current chat.
-
-### Properties
-
-#### raw_content
-Sets the raw content of the message and updates it in the API.
-
-#### role
-Gets the role of the message.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **Literal["USER", "SYSTEM", "ASSISTANT"]** | The role of the message. |
-
-#### id
-Gets the ID of the message.
-
-##### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **string** | The ID of the message. |
-
-#### delete
-Deletes the message.
-
-### Example
-
-```python
-from pieces_copilot_sdk import PiecesClient
-
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
-
-# Initialize a BasicChat instance
-chat = pieces_client.copilot.chats()[0]
-messages = chat.messages()
-
-# Set the raw content of the message
-message.raw_content = "This is the updated raw content of the message."
-print("Raw content updated.")
-
-# Get the role of the message
-role = message.role
-print(f"Role: {role}")
-
-# Get the ID of the message
-message_id = message.id
-print(f"Message ID: {message_id}")
-
-# Delete the message
-message.delete()
-print("Message deleted.")
-
-pieces_client.close()
-```
-
-## stream_question()
-
-```python
-stream_question(query, pipeline)
-```
-
-Asks a question to the QGPT model and streams the responses. By default, it will create a new conversation, and it always uses it in the ask. You can always change the conversation in `copilot.chat = BasicChat(chat_id="YOU ID GOES HERE")`.
-
-### Parameters
-
-| Param Name | Param Description | Param Note |
-|------------- | ------------ |------------ |
-| **query** |  The question to ask. | [required] |
-| **pipeline** | The pipeline to follow. | [optional] |
-
-### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **QGPTStreamOutput** | The streamed output from the `QGPT` model.|
-
-### Example
-
-```python
-from pieces_copilot_sdk import PiecesClient
-
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
-
-for response in pieces_client.copilot.stream_question("Your question"):
-    if response.question:
-        answers = response.question.answers.iterable
-        for answer in answers:
-            print(answer.text,end="")
-```
-
-## question()
-
-```python
-question(query, pipeline)
-```
-
-Asks a question to the `QGPT` model and return the responses.
-
-:::info
-
-The question is not a part of any conversation.
-
-:::
-
-### Parameters
-
-| Param Name | Param Description | Param Note |
-|------------- | ------------ |------------ |
-| **query** |  The question to ask. | [required] |
-| **pipeline** | The pipeline to follow. | [optional] |
-
-### Returns
-
-| Return Type | Return Description | 
-| ------------- | ------------ | 
-| **QGPTStreamOutput** | The streamed output from the `QGPT` model.|
-
-### Example
-
-```python
-from pieces_copilot_sdk import PiecesClient
-
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
-
-text = pieces_client.copilot.question("Your question").answers.iterable[0].text
-print(text)
-```
-
-## context
-
-```python
-copilot.context
-```
-
-Returns a context model to interact with the conversation context.
-
-
-:::info
-
-If you set the context of the copilot, you will get a value error in the `ask_stream` method if you add an invalid type
-
-:::
-
-
-### Example
-
-```python
-context = copilot.context
-context.paths.append("/path/to/folder/or/file")
-context.message.append(BasicMessage("my_message_id"))
-context.assets.append(BasicAsset("my_message_id"))
-context.raw_assets.append("import sublime") # snippet content
-context.clear() # clear all the context
-```
-
-### chats()
-
-Retrieves a list of all chat identifiers.
-
-### Returns
-
-| Return Type | Return Description |
-| ------------- | ------------ |
-| **list[BasicChat]** |  A list of `BasicChat` instances representing the chat identifiers. |
-
-### Example
-
-```python
-chat_list = copilot.chats()
-for chat in chat_list:
-    print(f"Chat ID: {chat.id}, Chat Name: {chat.name}")
-```
-
-## chat (getter)
-
-```python
-copilot.chat
-```
-
-Gets the current conversation being used in the copilot.
-
-### Returns
-
-| Return Type | Return Description |
-| ------------- | ------------ |
-| **BasicChat**/**None** |  The current `BasicChat` instance or `None` if no chat is set. |
-
-### Example
-
-```python
-current_chat = copilot.chat
-if current_chat:
-    print(f"Current Chat ID: {current_chat.id}")
-else:
-    print("No chat is currently set.")
-```
-
-## chat (setter)
-
-```python
-copilot.chat = your_value_here
-```
-
-Sets the current conversation to be used in the copilot.
-
-### Parameters
-
-| Param Type | Param Description |
-| ------------- | ------------ |
-| **BasicChat/None** | The `BasicChat` instance is set. |
-
-### Raises
-
-| Raise Type | Raise Description |
-| ------------- | ------------ |
-| **ValueError** | If the provided chat is not a valid `BasicChat` instance. |
-
-```python
-new_chat = copilot.chats[0]
-try:
-    copilot.chat = new_chat
-    print("Chat set successfully.")
-except ValueError as e:
-    print(f"Failed to set chat: {e}")
 ```

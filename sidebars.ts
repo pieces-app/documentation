@@ -564,11 +564,11 @@ const sidebars: SidebarsConfig = {
       id: 'build/index',
       label: 'Overview',
     },
-    // {
-    //   type: 'doc',
-    //   id: 'build/examples/index',
-    //   label: '📚 Examples',
-    // },
+    {
+      type: 'doc',
+      id: 'build/examples/index',
+      label: '📚 Examples',
+    },
     {
       type: 'category',
       label: '🔧 SDKs',
@@ -579,6 +579,15 @@ const sidebars: SidebarsConfig = {
           label: 'Python SDK',
         },
       ],
+    },
+    {
+      type: 'category',
+      label: '🔍 API Reference',
+      items: allSDKs.map(sdk => ({
+          type: 'doc' as const,
+          id: `build/reference/${sdk.toLowerCase()}/index`,
+          label: `${sdk}`
+        }))
     },
     // {
     //   type: 'doc',
@@ -680,12 +689,12 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
-      id: 'build/sdks/python/quickstart/index',
+      id: 'build/sdks/python/quickstart',
       label: 'Quickstart',
     },
     {
       type: 'doc',
-      id: 'build/sdks/python/assets/index',
+      id: 'build/sdks/python/assets',
       label: 'Assets',
     },
     {

@@ -3,15 +3,13 @@ title: Pieces OS Client Python SDK Assets
 description: Learn how to set up and use the Pieces OS Client Python SDK to manage assets.
 ---
 
-import Video from "/src/components/Video";
-
 Use the following methods to manage your assets with the Pieces OS Client Python SDK.
 
 ## Asset Management
 
-### `create_asset()`
+### Create a New Asset
 
-Creates a new asset.
+The `create_asset()` method requires the content of the asset and optional metadata. The method returns the ID of the created asset.
 
 ```python
 create_asset(content, metadata)
@@ -30,8 +28,8 @@ create_asset(content, metadata)
 from pieces_os_client.wrapper import PiecesClient
 from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
 
-# Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 # Set the content and metadata for the new asset
 content = "print('Hello, World!')"
@@ -46,9 +44,9 @@ print(f"Created asset with ID: {new_asset_id}")
 pieces_client.close()
 ```
 
-### `asset()`
+### Get a Specific Asset
 
-Gets a specific asset.
+The `asset()` method requires the asset ID and returns the asset as a [BasicAsset](#basicasset-class) object.
 
 ```python
 asset(asset_id)
@@ -65,8 +63,8 @@ asset(asset_id)
 ```python
 from pieces_os_client.wrapper import PiecesClient
 
-# Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 # Get the asset ID
 asset_id = "your_asset_id"
@@ -78,9 +76,9 @@ asset = pieces_client.asset(asset_id)
 pieces_client.close()
 ```
 
-### `assets()`
+### Get All Assets
 
-Gets all your assets.
+The `assets()` method returns a list of all assets with `id` and `name` properties.
 
 ```python
 assets()
@@ -91,8 +89,8 @@ assets()
 ```python
 from pieces_os_client.wrapper import PiecesClient
 
-# Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 # Get all assets and print their names
 assets = pieces_client.assets()
@@ -146,8 +144,8 @@ from pieces_os_client.wrapper import PiecesClient
 from pieces_os_client.wrapper.basic_identifier.asset import BasicAsset
 from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
 
-# Replace 'your_base_url' with the base URL of your Pieces OS server
-pieces_client = PiecesClient(config={'host': 'http://localhost:1000'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 # Create a new asset
 content = "print('Hello, World!')"
@@ -248,8 +246,8 @@ from pieces_os_client.wrapper import PiecesClient
 from pieces_os_client.basic_asset import BasicAsset
 from pieces_os_client import ClassificationSpecificEnum
 
-# Replace 'your_base_url' with your actual base URL
-pieces_client = PiecesClient(config={'host': 'your_base_url'})
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
 
 asset = pieces_client.assets()[0]
 
