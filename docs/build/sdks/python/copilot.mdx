@@ -156,6 +156,7 @@ Changing the current chat will clear all context added to the chat.
 
 ```python
 from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client.wrapper.basic_identifier.chat import BasicChat
 
 # Initialize the PiecesClient
 pieces_client = PiecesClient()
@@ -164,7 +165,7 @@ pieces_client = PiecesClient()
 chat_id = "your_chat_id"
 
 # Set the current chat
-pieces_client.copilot.chat = chat_id
+pieces_client.copilot.chat = BasicChat(chat_id)
 
 # Close the client
 pieces_client.close()
