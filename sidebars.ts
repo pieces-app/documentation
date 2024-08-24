@@ -699,7 +699,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
-      id: 'build/sdks/python/copilot/index',
+      id: 'build/sdks/python/copilot',
       label: 'Copilot',
     },
   ],

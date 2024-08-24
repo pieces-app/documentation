@@ -61,8 +61,10 @@ metadata = FragmentMetadata(ext=ClassificationSpecificEnum.PY) # optional metada
 
 # Create the new asset using the content and metadata
 new_asset_id = pieces_client.create_asset(content, metadata)
-
 print(f"Created asset with ID: {new_asset_id}")
+
+# Close the client
+pieces_client.close()
 ```
 
 ### Get All Assets
@@ -80,6 +82,8 @@ assets = pieces_client.assets()
 for asset in assets:
    logger.info(f"Asset Name: {asset.name}")
 
+# Close the client
+pieces_client.close()
 ```
 
 ### Ask a Question to Pieces Copilot
@@ -102,6 +106,9 @@ for response in pieces_client.copilot.stream_question(question):
          answers = response.question.answers.iterable
          for answer in answers:
             print(answer.text,end="")
+
+# Close the client
+pieces_client.close()
 ```
 
 ## Next Steps
