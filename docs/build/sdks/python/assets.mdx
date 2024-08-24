@@ -107,16 +107,16 @@ The `BasicAsset` class provides a way to manage assets with various properties a
 
 ### Properties
 
-| Property Name | Property Description |
-|--------------- |----------------------|
-| **id**        | The ID of the asset. |
-| **asset**    | The full [Asset](/build/reference/python/models/Asset) object. Should **only** be used for properties not available in the `BasicAsset` class. |
-| **raw_content** | The content of the asset. |
-| **is_image**   | Boolean indicating if the asset is an image. |
-| **classification** | The specific classification of the asset (e.g., `py`). |
-| **name**       | The name of the asset. |
-| **description** | The description of the asset. |
-| **annotations** | The annotations of the asset. |
+| Property Name | Property Description | Return Type |
+|--------------- |---------------------- |------------|
+| **id**        | The ID of the asset. | **string** |
+| **asset**    | Should **only** be used for properties not available in the `BasicAsset` class. | [**Asset**](/build/reference/python/models/Asset) |
+| **raw_content** | The content of the asset. | **string** |
+| **is_image**   | Boolean indicating if the asset is an image. | **bool** |
+| **classification** | The specific classification of the asset (e.g., `py`). | [**ClassificationSpecificEnum**](/build/reference/python/models/ClassificationSpecificEnum) |
+| **name**       | The name of the asset. | **string** | 
+| **description** | The description of the asset. | **string** |
+| **annotations** | The annotations of the asset. | [**Annotations**](/build/reference/python/models/Annotations) |
 
 ### Methods
 
