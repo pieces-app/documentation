@@ -574,20 +574,31 @@ const sidebars: SidebarsConfig = {
       id: 'build/examples/index',
       label: '📚 Examples',
     },
-    // {
-    //   type: 'doc',
-    //   id: 'build/tutorials/index',
-    //   label: '📚 Tutorials',
-    // },
+    {
+      type: 'category',
+      label: '🔧 SDKs',
+      items: [
+        {
+          type: 'doc',
+          id: 'build/sdks/python/index',
+          label: 'Python SDK',
+        },
+      ],
+    },
     {
       type: 'category',
       label: '🔍 API Reference',
       items: allSDKs.map(sdk => ({
           type: 'doc' as const,
           id: `build/reference/${sdk.toLowerCase()}/index`,
-          label: `${sdk} SDK`
+          label: `${sdk}`
         }))
     },
+    // {
+    //   type: 'doc',
+    //   id: 'build/tutorials/index',
+    //   label: '📚 Tutorials',
+    // },
     // {
     //   type: 'doc',
     //   id: 'build/concepts/index',
@@ -639,7 +650,7 @@ const sidebars: SidebarsConfig = {
       label: 'Commands',
     },
   ],
-  
+
   // Raycast Sidebar
   raycastSidebar: [
     {
@@ -669,8 +680,37 @@ const sidebars: SidebarsConfig = {
     }
   ],
 
-   // Raycast Sidebar
-    neovimSidebar: [
+  // Python SDK WrapperSidebar
+  pythonSDKWrapperSidebar: [
+    {
+      type: 'ref',
+      id: 'build/index',
+      label: '← Back to Build',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/assets',
+      label: 'Assets',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/copilot',
+      label: 'Copilot',
+    },
+  ],
+
+  // Neovim Sidebar
+  neovimSidebar: [
     {
       type: 'ref',
       id: 'installation-getting-started/what-am-i-installing',
