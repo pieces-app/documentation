@@ -30,15 +30,18 @@ from pieces_os_client.wrapper import PiecesClient
 pieces_client = PiecesClient()
 ```
 
-### Determining Your Base URL
+### Custom Host URL
 
-In the code snippet above, we use the `platform` package to determine the base URL based on the operating system. However, you can also set the base URL manually if you know your application will only run on a specific operating system.
+When we initialize the Pieces Client, it defaults to `http://localhost:1000` for macOS/Windows and `http://localhost:5323` for Linux. If you have a remote instance of Pieces OS running, you can specify the host URL when initializing the Pieces Client:
 
-- **Local Instance of Pieces OS:**
-  - On macOS/Windows, use `http://localhost:1000`
-  - On Linux, use `http://localhost:5323`
-- **Remote Instance of Pieces OS:**
-  - Use the URL you have set up for your remote instance
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Specify the host URL
+host_url = "http://your-host-url:your-port"
+
+pieces_client = PiecesClient(host=host_url)
+```
 
 ## Examples
 
