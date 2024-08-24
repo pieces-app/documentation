@@ -43,6 +43,14 @@ host_url = "http://your-host-url:your-port"
 pieces_client = PiecesClient(host=host_url)
 ```
 
+### Closing the Client
+
+After you have finished using the Pieces Client, you should always close the client to free up resources:
+
+```python
+pieces_client.close()
+```
+
 ## Examples
 
 Here are some examples of how you can use to get familiar with the Pieces OS Client SDK.
