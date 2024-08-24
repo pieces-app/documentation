@@ -1,0 +1,257 @@
+---
+title: Pieces OS Client Python SDK Copilot
+description: Learn how to set up and use the Pieces OS Client Python SDK to communicate Pieces Copilot.
+---
+
+Use the following methods to communicate with Pieces Copilot using the Pieces OS Client Python SDK.
+
+## Copilot Management
+
+### Ask a Question to Pieces Copilot
+
+The `stream_question()` requires a question as a parameter and will stream the response.
+
+#### Parameters
+
+| Name | Type | Notes |
+|------------- |------------ |-------------|
+| **question** | **string** | [required]  |
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the question you want to ask
+question = "What is Object-Oriented Programming?"
+
+# Ask the question and stream the response
+for response in pieces_client.copilot.stream_question(question):
+   if response.question:
+         # Each answer is a chunk of the entire response to the question
+         answers = response.question.answers.iterable
+         for answer in answers:
+            print(answer.text,end="")
+
+# Close the client
+pieces_client.close()
+```
+
+If you do not want to stream the response, you can use the `quesiton()` method instead.
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the question you want to ask
+question = "What is Object-Oriented Programming?"
+
+# Ask the question and get the response
+response = pieces_client.copilot.question(question)
+
+# Print the response message
+message = response.answers.iterable[0].text
+print(message)
+
+# Close the client
+pieces_client.close()
+```
+
+### Get All Chats
+
+The `chats()` method returns a list of all chats.
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get all chats and print their names
+chats = pieces_client.copilot.chats()
+for chat in chats:
+    print(chat.name)
+
+# Close the client
+pieces_client.close()
+```
+
+{/* need section on selecting an llm */}
+
+## LLM Management
+
+### Set the Current LLM
+
+The `model_name` setter method allows you to set the current LLM.
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the current LLM
+pieces_client.model_name = "your_model_name"
+
+# Close the client
+pieces_client.close()
+```
+
+### Get Availiable LLMs
+
+The `get_models()` method returns a list of available LLMs as a dictionary.
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import ClassificationSpecificEnum, FragmentMetadata
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get all models and print their names
+models = pieces_client.get_models()
+for model_name, model_id in models.items():
+    print(model_name)
+
+# Close the client
+pieces_client.close()
+```
+
+### Copilot Class
+
+The `Copilot` class provides a way to manage copilot functionality with various properties and methods.
+
+#### Properties
+
+| Name | Notes |
+|--------------- |----------------------|
+| **chat**      | The chat object. |
+
+#### Methods
+
+##### Set the Current Chat
+
+The `chat` setter method allows you to set the current chat.
+
+:::info
+
+Changing the current chat will clear all context added to the chat.
+
+:::
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client.wrapper.basic_identifier.chat import BasicChat
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get the chat ID
+chat_id = "your_chat_id"
+
+# Set the current chat
+pieces_client.copilot.chat = BasicChat(chat_id)
+
+# Close the client
+pieces_client.close()
+```
+
+## Chat Management
+
+### BasicChat Class
+
+The `BasicChat` class provides a way to manage chat with various properties and methods.
+
+#### Properties
+
+| Name | Notes |
+|--------------- |----------------------|
+| **id** | The ID of the chat. |
+| **conversation** | The [Conversation](/build/reference/python/models/Conversation) object. Should **only** be used for properties not available in the `BasicChat` class. |
+| **name** | The name of the chat. |
+| **annotations** | The annotations of the chat. |
+
+#### Methods
+
+##### Get Chat Messages
+
+The `messages()` method returns a list of all messages in the chat.
+
+#### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get the chat ID
+chat_id = "your_chat_id"
+
+# Get all messages in the chat
+messages = pieces_client.copilot.chat(chat_id).messages()
+for message in messages:
+    print(message.text)
+
+# Close the client
+pieces_client.close()
+```
+
+##### Set the Chat Name
+
+The `name` setter method allows you to set the chat name.
+
+###### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get the chat ID
+chat_id = "your_chat_id"
+
+# Set the chat name
+pieces_client.copilot.chat(chat_id).name = "New Chat Name"
+
+# Close the client
+pieces_client.close()
+```
+
+##### Delete a Chat
+
+The `delete()` method of allows you to delete a chat.
+
+###### Example
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get the chat ID
+chat_id = "your_chat_id"
+
+# Delete the chat
+pieces_client.copilot.chat(chat_id).delete()
+
+# Close the client
+pieces_client.close()
+```

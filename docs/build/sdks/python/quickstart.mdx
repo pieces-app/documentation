@@ -1,0 +1,130 @@
+---
+title: Pieces Wrapper Python SDK Quickstart
+description: Quickly set up the Pieces Wrapper Python SDK
+---
+
+# Quickstart with Pieces OS Client Python SDK
+
+The Pieces OS Client SDK has a built-in wrapper that simplifies the process of interacting with the Pieces OS server. Here's how you can get started with the wrapper.
+
+## Installation
+
+To get started with the Pieces OS Client SDK, follow these steps:
+
+1. **Download Pieces OS**: Pieces OS serves as the primary backend service, providing essential functionality for the SDK. Download the appropriate version for your operating system:
+   - [macOS](https://docs.pieces.app/installation-getting-started/macos) 
+   - [Windows](https://docs.pieces.app/installation-getting-started/windows) 
+   - [Linux](https://docs.pieces.app/installation-getting-started/linux)
+
+2. **Install the SDK**: Use pip to install the Pieces OS Client SDK package:
+   ```shell
+   pip install pieces_os_client
+   ```
+
+## Initialize the Pieces Client
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+```
+
+### Custom Host URL
+
+When we initialize the Pieces Client, it defaults to `http://localhost:1000` for macOS/Windows and `http://localhost:5323` for Linux. If you have a remote instance of Pieces OS running, you can specify the host URL when initializing the Pieces Client:
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Specify the host URL
+host_url = "http://your-host-url:your-port"
+
+pieces_client = PiecesClient(host=host_url)
+```
+
+### Closing the Client
+
+After you have finished using the Pieces Client, you should always close the client to free up resources:
+
+```python
+pieces_client.close()
+```
+
+## Examples
+
+Here are some examples of how you can use to get familiar with the Pieces OS Client SDK.
+
+### Create a New Asset
+
+To create a new asset, you can use the `create_asset` method of the Pieces Client. Here's an example of how to create a new asset:
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+from pieces_os_client import FragmentMetadata
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the content and metadata for the new asset
+content = "print('Hello, World!')"
+metadata = FragmentMetadata(ext=ClassificationSpecificEnum.PY) # optional metadata
+
+# Create the new asset using the content and metadata
+new_asset_id = pieces_client.create_asset(content, metadata)
+print(f"Created asset with ID: {new_asset_id}")
+
+# Close the client
+pieces_client.close()
+```
+
+### Get All Assets
+
+To get all your assets, you can use the `assets` method of the Pieces Client. Here's an example of how to get all your assets and print their names:
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Get all assets and print their names
+assets = pieces_client.assets()
+for asset in assets:
+   logger.info(f"Asset Name: {asset.name}")
+
+# Close the client
+pieces_client.close()
+```
+
+### Ask a Question to Pieces Copilot
+
+To ask a question to Pieces Copilot and stream the response, you can use the `stream_question` method of the Pieces Client. Here's an example of how to ask a question and stream the response:
+
+```python
+from pieces_os_client.wrapper import PiecesClient
+
+# Initialize the PiecesClient
+pieces_client = PiecesClient()
+
+# Set the question you want to ask
+question = "What is Object-Oriented Programming?"
+
+# Ask the question and stream the response
+for response in pieces_client.copilot.stream_question(question):
+   if response.question:
+         # Each answer is a chunk of the entire response to the question
+         answers = response.question.answers.iterable
+         for answer in answers:
+            print(answer.text,end="")
+
+# Close the client
+pieces_client.close()
+```
+
+## Next Steps
+
+You can explore more features and functionalities of the built-in wrapper.
+
+- [Assets SDK](/build/sdks/python/assets)
+- [Copilot SDK](/build/sdks/python/copilot)
