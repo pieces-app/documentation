@@ -91,7 +91,7 @@ pieces_client = PiecesClient()
 # Get all assets and print their names
 assets = pieces_client.assets()
 for asset in assets:
-   logger.info(f"Asset Name: {asset.name}")
+   print(f"Asset Name: {asset.name}")
 
 # Close the client
 pieces_client.close()
