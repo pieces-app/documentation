@@ -61,7 +61,7 @@ To create a new asset, you can use the `create_asset` method of the Pieces Clien
 
 ```python
 from pieces_os_client.wrapper import PiecesClient
-from pieces_os_client import FragmentMetadata
+from pieces_os_client import FragmentMetadata, ClassificationSpecificEnum
 
 # Initialize the PiecesClient
 pieces_client = PiecesClient()
@@ -91,7 +91,7 @@ pieces_client = PiecesClient()
 # Get all assets and print their names
 assets = pieces_client.assets()
 for asset in assets:
-   logger.info(f"Asset Name: {asset.name}")
+   print(f"Asset Name: {asset.name}")
 
 # Close the client
 pieces_client.close()
