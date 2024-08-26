@@ -569,20 +569,31 @@ const sidebars: SidebarsConfig = {
       id: 'build/examples/index',
       label: '📚 Examples',
     },
-    // {
-    //   type: 'doc',
-    //   id: 'build/tutorials/index',
-    //   label: '📚 Tutorials',
-    // },
+    {
+      type: 'category',
+      label: '🔧 SDKs',
+      items: [
+        {
+          type: 'doc',
+          id: 'build/sdks/python/index',
+          label: 'Python SDK',
+        },
+      ],
+    },
     {
       type: 'category',
       label: '🔍 API Reference',
       items: allSDKs.map(sdk => ({
           type: 'doc' as const,
           id: `build/reference/${sdk.toLowerCase()}/index`,
-          label: `${sdk} SDK`
+          label: `${sdk}`
         }))
     },
+    // {
+    //   type: 'doc',
+    //   id: 'build/tutorials/index',
+    //   label: '📚 Tutorials',
+    // },
     // {
     //   type: 'doc',
     //   id: 'build/concepts/index',
@@ -712,6 +723,35 @@ const sidebars: SidebarsConfig = {
       id: 'extensions-plugins/raycast/troubleshooting',
       label: 'Troubleshooting',
     }
+  ],
+
+  // Python SDK WrapperSidebar
+  pythonSDKWrapperSidebar: [
+    {
+      type: 'ref',
+      id: 'build/index',
+      label: '← Back to Build',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/assets',
+      label: 'Assets',
+    },
+    {
+      type: 'doc',
+      id: 'build/sdks/python/copilot',
+      label: 'Copilot',
+    },
   ],
 
   // Generates sidebar for each active SDK
