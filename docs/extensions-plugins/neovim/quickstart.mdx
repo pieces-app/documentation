@@ -84,7 +84,7 @@ A few things to note before you start installing the Pieces Neovim Plugin:
 1. After the installation is complete, add the Pieces configuration to your `init.vim`:
     ```vim
     lua << EOF
-    require("pieces_config").host = "http://localhost:1000"
+    require("pieces.config").host = "http://localhost:1000"
     EOF
     ```
 1. Save and exit (`:wq` in Neovim). Now run the following command inside Neovim to update the remote plugins: 
