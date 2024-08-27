@@ -99,7 +99,7 @@ if (platform === 'linux') {
 }
 
 // The `basePath` defaults to http://localhost:1000, however we need to change it to the correct port based on the operating system.
-const configuration = Pieces.Configuration({
+const configuration = new Pieces.Configuration({
   basePath: `http://localhost:${port}`
 })
 // Create an instance of the WellKnownApi class
