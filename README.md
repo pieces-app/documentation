@@ -1,3 +1,4 @@
+#sudo su 
 # Pieces for Developers Documentation Center
 
 Learn how to best use and optimize your workflow with Pieces for Developers! Read the sections in sequential order or click the links in the navigation on the right to get directly to the topic you need.
