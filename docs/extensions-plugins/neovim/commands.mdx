@@ -1,0 +1,157 @@
+---
+title: Pieces Neovim Plugin Commands
+description: Learn how to use the Pieces Neovim Plugin commands to streamline your workflow and boost productivity.
+---
+
+# Commands
+
+The Pieces Neovim plugin provides several commands to interact with Pieces OS. Here's a list of available commands:
+
+## General Commands
+
+### `:PiecesHealth`
+
+Check the health of Pieces OS.
+
+```vim
+:PiecesHealth
+```
+
+### `:PiecesOSVersion`
+
+Display the version of Pieces OS.
+
+```vim
+:PiecesOSVersion
+```
+### `:PiecesPluginVersion`
+
+Display the current version of the Pieces Neovim plugin.
+
+```vim
+:PiecesPluginVersion
+```
+
+## Copilot Commands 
+
+### `:PiecesCopilot`
+
+Open the Pieces Copilot window in a split view. 
+
+```vim
+:PiecesCopilot
+```
+
+#### Using the Copilot Chat
+
+1. Press `i` to enter insert mode and type your message.
+2. Press `<Esc>` to exit insert mode.
+3. Press `<Enter>` to send the message to Pieces Copilot and see the response.
+
+#### Copilot Chat Commands
+
+In the Copilot chat input, you can use slash commands to perform specific actions:
+
+####  `/change_model`
+
+Change the current LLM model.
+
+### `:PiecesConversations`
+
+Open a list of Pieces Copilot conversations to choose from.
+
+```vim
+:PiecesConversations
+```
+Navigation and actions:
+- Press `<Del>` on the selected conversation to delete it
+- Use `<Up>` and `<Down>` arrow keys to navigate the conversation list
+- Press `<Enter>` to open the selected conversation in the Copilot
+
+## Asset Management Commands
+
+### `:PiecesSnippets`
+
+List all of the saved snippets.
+
+```vim
+:PiecesSnippets
+```
+Navigation and actions:
+- Use `<Up>` and `<Down>` arrow keys to navigate the snippet list.
+- Press `<Enter>` to open the selected snippet for editing.
+- Press `<Del>` on the selected snippet to delete it.
+- When editing a snippet:
+  1. Press `i` to enter insert mode and make changes.
+  2. Press `<Esc>` to exit insert mode.
+  3. Type `:w` and press `<Enter>` to save the edited snippet.
+  4. Type `:q` and press `<Enter>` to exit the snippet editor.
+
+
+### `:PiecesCreateSnippet`
+
+Create a snippet from the selected text in the visual mode.
+
+```vim
+:PiecesCreateSnippet
+```
+
+1. Enter visual mode by pressing `v` in normal mode.
+2. Select the desired text using arrow keys or Vim motions.
+3. Type `:PiecesCreateSnippet` and press `<Enter>`.
+
+## Auth Commands
+
+### `:PiecesAccount`
+
+Shows your Pieces account information such as Username, Email, Personal Cloud Status and Personal Domain in a new window.  
+
+```vim
+:PiecesAccount
+```
+You can also logout from your account by going to the `Logout` option in the Auth status menu and then press `enter`. You will be logged out of your Pieces account.
+
+### `:PiecesLogin`
+
+Login to your Pieces account.
+
+```vim
+:PiecesLogin
+```
+
+### `:PiecesLogout`
+
+Logout of your Pieces account.
+
+```vim
+:PiecesLogout
+```
+
+### `:PiecesConnectCloud`
+
+Connect to your Personal Pieces Cloud. 
+
+```vim
+:PiecesConnectCloud
+```
+
+### `:PiecesDisconnectCloud`
+
+Disconnect from your Personal Pieces Cloud.
+
+```vim
+:PiecesDisconnectCloud
+```
+
+:::info
+
+ Note: In order to use the Personal Pieces Cloud commands, you must have an account connected to Pieces OS.
+
+:::
+## Tips
+
+- When editing a snippet opened with `:PiecesSnippets`, remember to save your changes using the `:w` command.
+- Use visual mode to select text before running `:PiecesCreateSnippet` to create a new snippet.
+
+
+
