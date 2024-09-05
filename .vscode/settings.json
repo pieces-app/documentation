@@ -5,5 +5,7 @@
     ],
     "cSpell.words": [
         "webp"
-    ]
+    ],
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }

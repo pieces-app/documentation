@@ -69,10 +69,9 @@ Next, paste the following command into your terminal to clone the repository int
 ```
 git clone https://github.com/pieces-app/documentation.git
 ```
-:::info 
-
-Cloning may take upwards of 15 seconds due to the presence of media files. 
-:::
+> **Note:**
+> 
+> Cloning may take upwards of 15 seconds due to the presence of media files. 
 
 Alternatively, if using VS Code or another IDE, use the built-in repository cloning feature to clone the repository using the following URL:
 
@@ -90,10 +89,9 @@ Once you have `npm`, you can install it using the following command:
 npm install -g pnpm
 ```
 
-:::info
-
-If you run into any permissions issues trying to install PNPM, you need to `sudo` the command to elevate the command status and bypass the EACCESS issue. 
-:::
+>**Note:**
+>
+> If you run into any permissions issues trying to install PNPM, you need to `sudo` the command to elevate the command status and bypass the EACCESS issue. 
 
 ```
 sudo npm install -g pnpm
@@ -107,10 +105,9 @@ Once you’ve installed `pnpm` via `npm`, run the following command from the roo
 pnpm install
 ```
 
-:::info
-
-If you do not already have the latest version of Node installed, or a version higher than 18.12, you can update Node with elevated permissions using the following commands:
-:::
+>**Note:**
+>
+> If you do not already have the latest version of Node installed, or a version higher than 18.12, you can update Node with elevated permissions using the following commands:
 
 ``` 
 sudo npm install -g n 
@@ -128,10 +125,9 @@ This command starts a local development server and opens a browser window to you
 
 ![Image that demos the live view and an example IDE](https://drive.google.com/uc?export=view&id=1nfg6ISD_P5qO6IqC3HmSxyjzS-3D5YEF)
 
-:::info
-
-It may take a few seconds for the server to launch.
-:::
+>**Note:**
+>
+>It may take a few seconds for the server to launch.
 
 ### Testing Compilation for Production
 
