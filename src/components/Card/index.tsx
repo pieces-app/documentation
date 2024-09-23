@@ -75,13 +75,15 @@ const CardWithCTA = ({
   href,
   icon,
   darkIcon,
-  description
+  description,
+  ctaLabel
 }: {
   title: string,
   href: string,
   icon: string,
   darkIcon?: string,
   description: string,
+  ctaLabel: string,
 }) => {
   const { colorMode } = useColorMode()
 
@@ -114,7 +116,7 @@ const CardWithCTA = ({
         <p>{description}</p>
       </div>
       <CTAButton
-        label={'Get Started'}
+        label={ctaLabel ?? 'Get Started'}
         href={href}
         type={'secondary'}
         fullWidth={true}

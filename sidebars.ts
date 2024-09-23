@@ -65,6 +65,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: 'doc',
+          id: 'extensions-plugins/jupyterlab/index',
+          label: 'JupyterLab Extension',
+        },
+        {
+          type: 'doc',
           id: 'extensions-plugins/raycast/index',
           label: 'Raycast Plugin',
         },
@@ -82,11 +87,6 @@ const sidebars: SidebarsConfig = {
           type: 'doc',
           id: 'extensions-plugins/azure-data-studio',
           label: 'Azure Data Studio',
-        },
-        {
-          type: 'doc',
-          id: 'extensions-plugins/jupyterlab',
-          label: 'JupyterLab Extension',
         },
         {
           type: 'doc',
@@ -651,6 +651,56 @@ const sidebars: SidebarsConfig = {
     },
   ],
 
+  // Jupyterlab Sidebar
+  jupyterLabSidebar: [
+    {
+      type: 'ref',
+      id: 'installation-getting-started/what-am-i-installing',
+      label: '← Back to Learn',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/index',
+      label: 'Overview',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/quickstart',
+      label: 'Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/features',
+      label: 'Features',
+    },
+    {
+      type: 'category',
+      label: 'How To Guides',
+      collapsed: false,
+      link: {
+        type: 'doc',
+        id: 'extensions-plugins/jupyterlab/how-to-guides',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'extensions-plugins/jupyterlab/how-to-guides/save-a-snippet',
+          label: 'Save a snippet',
+        },
+        {
+          type: 'doc',
+          id: 'extensions-plugins/jupyterlab/how-to-guides/share-a-snippet',
+          label: 'Share a snippet',
+        },
+      ]
+    },
+    {
+      type: 'doc',
+      id: 'extensions-plugins/jupyterlab/troubleshooting',
+      label: 'Troubleshooting',
+    },
+  ],
+  
   // Raycast Sidebar
   raycastSidebar: [
     {
