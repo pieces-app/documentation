@@ -6,7 +6,7 @@ category: AIML
 
 Masked Language Modeling, or “MLM,” is a pre-training technique used in natural language processing (NLP) to enable a model to predict masked tokens within an input sequence. It is an approach that helps AI models learn a deep understanding of language context and structure without requiring labeled data, making MLM NLP an unsupervised learning method.
 
-Unlike traditional language models that predict the next token in a sequence, MLM can utilize both the previous and subsequent tokens to predict a masked token. As a result, the model is able to better understand the [context](https://docs.pieces.app/build/glossary/terms/Pieces%20Specific/context) surrounding each word.
+Unlike traditional language models that predict the next token in a sequence, MLM can utilize both the previous and subsequent tokens to predict a masked token. As a result, the model is able to better understand the [context](https://docs.pieces.app/build/glossary/terms/context) surrounding each word.
 
 ## Benefits of Masked Language Modeling
 - **Deep contextual understanding** - MLM trains using both left and right contexts of a word, leading to a nuanced understanding of language structure and usage, superior to traditional unidirectional models.
