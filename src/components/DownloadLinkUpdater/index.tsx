@@ -24,7 +24,7 @@ const DownloadLinkUpdater: React.FC = () => {
 
         if (currentHref) {
           // Construct the new href with the required query parameters
-          const newHref = `${currentHref}?download=true&product=DOCUMENTATION_WEBSITE${vid ? `&visitor=${vid}` : ''}`;
+          const newHref = `${currentHref}?download=true&product=DOCUMENTATION_WEBSITE${vid && `&visitor=${vid}`}`;
 
           // Update the href attribute on the link
           link.setAttribute('href', newHref);
