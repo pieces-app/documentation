@@ -1,5 +1,6 @@
 import {useColorMode} from '@docusaurus/theme-common';
-import Image from "../Image";
+import React, { useState, useEffect } from 'react';
+import Image from '@site/src/components/Image';
 
 type CTAButtonProps = {
   label?: string
@@ -12,15 +13,37 @@ type CTAButtonProps = {
   fullWidth?: boolean
 }
 
+// Define the type for gaGlobal
+interface GaGlobal {
+  vid: string;
+  from_cookie: boolean;
+}
+
+// Check if gaGlobal exists in the global scope
+declare const gaGlobal: GaGlobal | undefined;
+
 const CTAButton = ({ ...props }: CTAButtonProps) => {
-  const {colorMode} = useColorMode();
+  const { colorMode } = useColorMode();
+  const [href, setHref] = useState(props.href);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof gaGlobal !== 'undefined') {
+      const vid = gaGlobal.vid;
+
+      if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
+        // Need to ensure that vid is defined before appending it to the query string
+        const updatedHref = `${props.href}?download=true&product=DOCUMENTATION_WEBSITE${vid && `&visitor=${vid}`}`;
+        setHref(updatedHref);
+      }
+    }
+  }, []);
 
   // If the href starts with http, open in a new tab
-  const newTab = props.href?.startsWith('http');
+  const newTab = href?.startsWith('http');
 
   return (
     <a
-      href={props.href}
+      href={href} // Use the state variable here instead of props.href
       className={'cta-button'}
       style={{
         fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
@@ -47,7 +70,6 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
           )
         ) : null
       }
-
       {props.label}
     </a>
   )
