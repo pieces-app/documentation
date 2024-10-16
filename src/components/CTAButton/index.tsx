@@ -24,20 +24,14 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
   const [href, setHref] = useState(props.href);
 
   useEffect(() => {
-    // This effect runs after the component mounts
     if (typeof window !== 'undefined' && typeof gaGlobal !== 'undefined') {
-      console.log(gaGlobal);
       const vid = gaGlobal.vid;
-      const fromCookie = gaGlobal.from_cookie;
-      console.log(`VID: ${vid}, From Cookie: ${fromCookie}`);
 
       if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
-        console.log('Link is a download link: ', props.href);
-        const updatedHref = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATION_WEBSITE`;
+        // Need to ensure that vid is defined before appending it to the query string
+        const updatedHref = `${props.href}?download=true&product=DOCUMENTATION_WEBSITE${vid && `&visitor=${vid}`}`;
         setHref(updatedHref);
       }
-    } else {
-      console.log('gaGlobal is not available.');
     }
   }, []);
 
