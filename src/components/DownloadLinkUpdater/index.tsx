@@ -26,12 +26,14 @@ const DownloadLinkUpdater: React.FC = () => {
           // Construct the new href with the required query parameters
           const newHref = `${currentHref}?download=true&product=DOCUMENTATION_WEBSITE${vid ? `&visitor=${vid}` : ''}`;
 
-          console.log('Updated href from updater:', newHref);
-
           // Update the href attribute on the link
           link.setAttribute('href', newHref);
         }
       });
+    } else {
+      if (typeof window && typeof gaGlobal === 'undefined') {
+        console.warn('gaGlobal is not defined in local development');
+      }
     }
   }, []); // Empty dependency array means this effect runs only once after the component mounts
 
