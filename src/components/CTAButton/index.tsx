@@ -12,11 +12,35 @@ type CTAButtonProps = {
   fullWidth?: boolean
 }
 
+// Define the type for gaGlobal
+interface GaGlobal {
+  vid: string;
+  from_cookie: boolean;
+}
+
+// Check if gaGlobal exists in the global scope
+declare const gaGlobal: GaGlobal | undefined;
+
 const CTAButton = ({ ...props }: CTAButtonProps) => {
   const {colorMode} = useColorMode();
 
   // If the href starts with http, open in a new tab
   const newTab = props.href?.startsWith('http');
+
+  if (typeof gaGlobal !== 'undefined') {
+    console.log(gaGlobal);
+    const vid = gaGlobal.vid;
+    const fromCookie = gaGlobal.from_cookie;
+    console.log(`VID: ${vid}, From Cookie: ${fromCookie}`);
+
+    if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
+      console.log('Link is a download link: ', props.href);
+  
+      props.href = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATOIN_WEBSITE`;
+    }
+  } else {
+    console.log('gaGlobal is not available.');
+  }
 
   return (
     <a
