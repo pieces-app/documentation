@@ -34,6 +34,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
         // Need to ensure that vid is defined before appending it to the query string
         const updatedHref = `${props.href}?download=true&product=DOCUMENTATION_WEBSITE${vid && `&visitor=${vid}`}`;
         setHref(updatedHref);
+        console.log('Updated href:', updatedHref);
       }
     }
   }, []);
