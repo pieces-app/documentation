@@ -1,4 +1,6 @@
+import {useColorMode} from '@docusaurus/theme-common';
 import React, { useState, useEffect } from 'react';
+import Image from '@site/src/components/Image';
 
 type CTAButtonProps = {
   label?: string
@@ -21,6 +23,7 @@ interface GaGlobal {
 declare const gaGlobal: GaGlobal | undefined;
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
+  const { colorMode } = useColorMode();
   const [href, setHref] = useState(props.href);
 
   useEffect(() => {
@@ -53,7 +56,20 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       target={newTab ? '_blank' : '_self'}
       rel={newTab ? 'noopener noreferrer' : undefined}
     >
-      {/* ... (keep your existing icon rendering logic) */}
+      {
+        props.icon || props.iconDark ? (
+          // If the icon is a React element (object) and not a string, render it directly
+          typeof props.icon === 'object' ? (
+            props.icon
+          ) : (
+            colorMode === 'dark' && props.iconDark ? (
+              <Image width={20} src={props.iconDark} alt={props.label} />
+            ) : props.icon && (
+              <Image width={20} src={props.icon} alt={props.label} />
+            )
+          )
+        ) : null
+      }
       {props.label}
     </a>
   )
