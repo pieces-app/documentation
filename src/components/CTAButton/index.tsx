@@ -27,16 +27,18 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
   // If the href starts with http, open in a new tab
   const newTab = props.href?.startsWith('http');
 
+  // Check if gaGlobal is available in the global scope
   if (typeof gaGlobal !== 'undefined') {
     console.log(gaGlobal);
     const vid = gaGlobal.vid;
     const fromCookie = gaGlobal.from_cookie;
     console.log(`VID: ${vid}, From Cookie: ${fromCookie}`);
 
+    // If the href is a download link, append the visitor ID, download=true, and product=DOCUMENTATION_WEBSITE to the URL
     if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
       console.log('Link is a download link: ', props.href);
   
-      props.href = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATOIN_WEBSITE`;
+      props.href = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATION_WEBSITE`;
     }
   } else {
     console.log('gaGlobal is not available.');
