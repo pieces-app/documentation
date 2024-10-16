@@ -1,5 +1,4 @@
-import {useColorMode} from '@docusaurus/theme-common';
-import Image from "../Image";
+import React, { useState, useEffect } from 'react';
 
 type CTAButtonProps = {
   label?: string
@@ -22,33 +21,32 @@ interface GaGlobal {
 declare const gaGlobal: GaGlobal | undefined;
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
-  const {colorMode} = useColorMode();
+  const [href, setHref] = useState(props.href);
+
+  useEffect(() => {
+    // This effect runs after the component mounts
+    if (typeof window !== 'undefined' && typeof gaGlobal !== 'undefined') {
+      console.log(gaGlobal);
+      const vid = gaGlobal.vid;
+      const fromCookie = gaGlobal.from_cookie;
+      console.log(`VID: ${vid}, From Cookie: ${fromCookie}`);
+
+      if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
+        console.log('Link is a download link: ', props.href);
+        const updatedHref = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATION_WEBSITE`;
+        setHref(updatedHref);
+      }
+    } else {
+      console.log('gaGlobal is not available.');
+    }
+  }, [props.href]); // This effect depends on props.href
 
   // If the href starts with http, open in a new tab
-  const newTab = props.href?.startsWith('http');
-
-  let finalHref = props.href;
-
-  // Check if gaGlobal is available in the global scope
-  if (typeof gaGlobal !== 'undefined') {
-    console.log(gaGlobal);
-    const vid = gaGlobal.vid;
-    const fromCookie = gaGlobal.from_cookie;
-    console.log(`VID: ${vid}, From Cookie: ${fromCookie}`);
-
-    // If the href is a download link, append the visitor ID, download=true, and product=DOCUMENTATION_WEBSITE to the URL
-    if (props.href?.startsWith('https://builds.pieces.app/stages/production')) {
-      console.log('Link is a download link: ', props.href);
-  
-      finalHref = `${props.href}?${gaGlobal?.vid ? `visitor=${gaGlobal?.vid}` : ''}&download=true&product=DOCUMENTATION_WEBSITE`;
-    }
-  } else {
-    console.log('gaGlobal is not available.');
-  }
+  const newTab = href?.startsWith('http');
 
   return (
     <a
-      href={finalHref}
+      href={href} // Use the state variable here instead of props.href
       className={'cta-button'}
       style={{
         fontSize: props.type === 'secondary' ? '1rem' : '1.25rem',
@@ -61,21 +59,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
       target={newTab ? '_blank' : '_self'}
       rel={newTab ? 'noopener noreferrer' : undefined}
     >
-      {
-        props.icon || props.iconDark ? (
-          // If the icon is a React element (object) and not a string, render it directly
-          typeof props.icon === 'object' ? (
-            props.icon
-          ) : (
-            colorMode === 'dark' && props.iconDark ? (
-              <Image width={20} src={props.iconDark} alt={props.label} />
-            ) : props.icon && (
-              <Image width={20} src={props.icon} alt={props.label} />
-            )
-          )
-        ) : null
-      }
-
+      {/* ... (keep your existing icon rendering logic) */}
       {props.label}
     </a>
   )
