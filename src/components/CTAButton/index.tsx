@@ -39,7 +39,7 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
     } else {
       console.log('gaGlobal is not available.');
     }
-  }, [props.href]); // This effect depends on props.href
+  }, []);
 
   // If the href starts with http, open in a new tab
   const newTab = href?.startsWith('http');
