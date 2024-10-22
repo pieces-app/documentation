@@ -1,5 +1,6 @@
 import {useColorMode} from '@docusaurus/theme-common';
-import Image from "../Image";
+import React, { useState, useEffect } from 'react';
+import Image from '@site/src/components/Image';
 
 type CTAButtonProps = {
   label?: string
@@ -13,7 +14,7 @@ type CTAButtonProps = {
 }
 
 const CTAButton = ({ ...props }: CTAButtonProps) => {
-  const {colorMode} = useColorMode();
+  const { colorMode } = useColorMode();
 
   // If the href starts with http, open in a new tab
   const newTab = props.href?.startsWith('http');
@@ -47,7 +48,6 @@ const CTAButton = ({ ...props }: CTAButtonProps) => {
           )
         ) : null
       }
-
       {props.label}
     </a>
   )
