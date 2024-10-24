@@ -96,6 +96,28 @@ const sidebars: SidebarsConfig = {
       ]
     },
     {
+      // Guides
+      type: 'category',
+      label: '📚 How-To Guides',
+      items: [
+        {
+          type: 'doc',
+          id: 'how-to-guides/save-a-snippet/index',
+          label: 'Save a Code Snippet Using Pieces'
+        },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
+          label: 'Connecting VS Code to a Remote Pieces OS Instance',
+        },
+        {
+          type: 'doc',
+          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
+          label: 'Sync Data Across Devices with GitHub',
+        },
+      ]
+    },
+    {
       type: 'category',
       label: '💾 Pieces OS',
       items: [
@@ -225,28 +247,6 @@ const sidebars: SidebarsConfig = {
           id: 'features/user-settings',
           label: '🔧 Settings',
         }
-      ]
-    },
-    {
-      // Guides
-      type: 'category',
-      label: '📚 Guides',
-      items: [
-        {
-          type: 'doc',
-          id: 'how-to-guides/save-a-snippet/index',
-          label: 'Save a Code Snippet Using Pieces Desktop App'
-        },
-        {
-          type: 'doc',
-          id: 'product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance',
-          label: 'Connecting to a Remote Pieces OS Instance',
-        },
-        {
-          type: 'doc',
-          id: 'product-highlights-and-benefits/sync-across-multiple-devices-using-github',
-          label: 'Sync Data Across Devices with GitHub',
-        },
       ]
     },
     {
