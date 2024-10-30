@@ -1,71 +1,412 @@
 ---
-title: Save a Code Snippet with AI Context Using Pieces Desktop
+title: Save a Code Snippet and Have It Augmented With AI
 description: Learn how to save a code snippet in Pieces for Developers and add additional context using AI.
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 Pieces allows you to save code snippets and automatically add context using AI. This helps you keep track of important code, make it easily searchable, and provide additional information like tags and relevant documentation links.
 
+The generated context includes:
+
+- The programming language
+- A title for the code snippet
+- A set of generated tags
+- A description for what the code is doing
+- Suggestions for searches to learn more about the concepts in the snippet
+- Any people related to this snippet. This is found from the Git history if the file is in a Git repository
+
 ## Prerequisites
+
+<Tabs groupId="pieces-component" queryString>
+<TabItem value="visual-studio-code" label="VS Code">
 
 Before you begin, ensure you have:
 
-- [Pieces installed](/installation-getting-started/what-am-i-installing) on your machine.
-- A code snippet to save. This can be a code file, clipboard content, or an image of code.
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- The [Visual Studio Code Pieces Extension](vscode:extension/MeshIntelligentTechnologiesInc.pieces-vscode) installed
+- A code file, folder of code, or project open in VS Code
 
-Example code snippet:
+</TabItem>
+<TabItem value="desktop" label="Pieces Desktop">
 
-```python
-name = input("What is your name? ")
-print("Hello, " + name + "!")
-```
+Before you begin, ensure you have:
 
-Or download as a Python file [here](./resources/helloworld.py).
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- A code snippet to save. This can be a code file, code on your clipboard, or a screenshot of code.
+
+    Example code snippet:
+
+    ```python
+    def say_hello():
+        name = input("What is your name? ")
+        print("Hello, " + name + "!")
+
+    say_hello()
+    ```
+
+    Or download as [a Python file](./resources/helloworld.py).
+
+    If you want to try out an image, [download](./media/images/python-code.webp) this one:
+
+<div class="container">
+  <div class="row">
+    <div class="col col--1"></div>
+    <div class="col col--6">
+    ![A python code snippet](./media/images/python-code.webp)
+    </div>
+  </div>
+</div>
+</TabItem>
+<TabItem value="web" label="Pieces Web Extension">
+
+Before you begin, ensure you have:
+
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- A supported browser. Currently the Pieces Web Extension is available for Chrome, Edge, Firefox, Brave, and Opera.
+- The relevant Pieces Extension installed
+    - For Chrome, Brave, and Opera use the [Pieces Chrome Extension](https://chrome.google.com/webstore/detail/pieces-save-code-snippets/igbgibhbfonhmjlechmeefimncpekepm)
+    - For Edge use the [Pieces Edge Add-On](https://microsoftedge.microsoft.com/addons/detail/pieces-save-code-snippet/hglfimcdgonaeeobjckfdabcldfidmim)
+    - For Firefox use the [Pieces FireFox Add-On](https://addons.mozilla.org/en-US/firefox/addon/pieces-save-code-from-the-web/).
+- A web page with code snippet to save. For example:
+
+    ```python
+    def say_hello():
+        name = input("What is your name? ")
+        print("Hello, " + name + "!")
+
+    say_hello()
+    ```
+</TabItem>
+<TabItem value="jetbrains" label="JetBrains">
+
+Before you begin, ensure you have:
+
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- The [Pieces JetBrains Plugin](https://plugins.jetbrains.com/plugin/17328-pieces) installed in your JetBrains IDE of choice
+- A code file, folder of code, or project open in your JetBrains IDE
+
+</TabItem>
+<TabItem value="obsidian" label="Obsidian">
+
+Before you begin, ensure you have:
+
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- The [Pieces Obsidian Plugin](https://obsidian.md/plugins?id=pieces-for-developers) installed
+- A note in Obsidian with a code block
+
+</TabItem>
+<TabItem value="visual-studio" label="Visual Studio">
+
+Before you begin, ensure you have:
+
+- [Pieces installed](/installation-getting-started/what-am-i-installing) and running on your machine
+- The [Visual Studio Pieces Extension](https://marketplace.visualstudio.com/items?itemName=MeshIntelligentTechnologiesInc.PiecesVisualStudio) installed
+- A code file, folder of code, or project open in Visual Studio
+
+</TabItem>
+</Tabs>
 
 ## Steps
 
-### 1. Open Pieces Desktop
+### 1. Find the code to save
 
-Launch Pieces Desktop using one of the following methods:
-- Click on Pieces OS in your menu bar or system tray, and select **Launch Pieces for Developers**.
-- Run Pieces from your Windows Start menu, macOS Applications folder, or Linux Applications menu.
+<Tabs groupId="pieces-component" queryString>
+<TabItem value="visual-studio-code" label="VS Code">
 
-Once open, select the **Saved Materials** tab from the left-hand menu.
+Inside an open file in Visual Studio Code, select the code block you want to save as a snippet.
 
-![Saved Materials Tab](./media/images/saved-materials-tab.webp)
+![A screenshot of VS Code with a Python function selected](./media/images/vscode-select-code-dark.webp#gh-dark-mode-only)
+![A screenshot of VS Code with a Python function selected](./media/images/vscode-select-code-light.webp#gh-light-mode-only)
 
-### 2. Add the Code Snippet
+</TabItem>
+<TabItem value="desktop" label="Pieces Desktop">
 
-Add your code snippet to Pieces in one of the following ways:
-- **From a code file**: Drag and drop the file into the Pieces app.
-- **From an image file**: Drag and drop the file into the Pieces app. Pieces will convert the text in the image to a code snippet.
-- **From your clipboard**: Copy the code snippet and paste it into the Pieces app using _Ctrl+V_ (Windows/Linux) or _Cmd+V_ (macOS).
+Locate the code you want to save as a snippet.
 
-Pieces will automatically add context such as tags, links to documentation, and other relevant information.
+- If you want to save a snippet from your clipboard, copy the code
+- If you want to save a snippet from a code or image file, locate the relevant file
 
-### 3. Review the Context
+</TabItem>
+<TabItem value="web" label="Pieces Web Extension">
 
-After processing, review the snippet and the added context:
+In your browser, locate the code block on a web page that you want to save as a snippet.
 
-- Select the snippet in the list of saved materials if it is not already selected.
-- The top panel shows the code snippet, and the bottom panel shows a preview of the added context.
+When you hover your mouse over it, you should see Pieces options below the code block.
 
-![Saved Snippet Panel](./media/images/saved-snippet-panel.webp)
+![A screenshot of a web browser showing some Python code with the Pieces options below the code](./media/images/web-find-code-dark.webp#gh-dark-mode-only)
+![A screenshot of a web browser showing some Python code with the Pieces options below the code](./media/images/web-find-code-light.webp#gh-light-mode-only)
 
-In the _Context Preview_ pane, review the metadata automatically added by Pieces, including:
-- A description of the code snippet
-- Suggested searches for similar snippets
-- Suggested links for more information
-- Tags
-- Related files and folders
-- Relate people
+</TabItem>
+<TabItem value="jetbrains" label="JetBrains">
 
-Use the **View all context** button to expand the _Context Preview_ to see more details.
+Inside an open file in your JetBrains IDE, select the code block you want to save as a snippet.
 
-![View All Context Button](./media/images/view-all-context.webp)
+![A screenshot of PyCharm with a Python function selected](./media/images/pycharm-select-code-dark.webp#gh-dark-mode-only)
+![A screenshot of PyCharm with a Python function selected](./media/images/pycharm-select-code-light.webp#gh-light-mode-only)
 
-This will open the _All Context_ pane, displaying more detailed information.
+</TabItem>
+<TabItem value="obsidian" label="Obsidian">
 
-![All Context Pane](./media/images/all-context.webp)
+In Obsidian, locate the code block in a note that you want to save as a snippet.
+
+When you hover your mouse over it, you should a Pieces button on the bottom of the code block.
+
+![A screenshot of obsidian showing some Python code with the Pieces options below the code](./media/images/obsidian-find-code-dark.webp#gh-dark-mode-only)
+![A screenshot of obsidian showing some Python code with the Pieces options below the code](./media/images/obsidian-find-code-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="visual-studio" label="Visual Studio">
+
+Inside an open file in Visual Studio, select the code block you want to save as a snippet.
+
+![A screenshot of Visual Studio with a Python function selected](./media/images/vs-select-code-dark.webp#gh-dark-mode-only)
+![A screenshot of Visual Studio with a Python function selected](./media/images/vs-select-code-light.webp#gh-light-mode-only)
+
+</TabItem>
+</Tabs>
+
+### 2. Save the Code Snippet
+
+<Tabs groupId="pieces-component" queryString>
+<TabItem value="visual-studio-code" label="VS Code">
+
+Right-click on the selected code, and select _Pieces -> Save Current Selection to Pieces_.
+
+![A screenshot of VS Code with a Python function selected and the Pieces context menu showing](./media/images/vscode-context-menu-dark.webp#gh-dark-mode-only)
+![A screenshot of VS Code with a Python function selected and the Pieces context menu showing](./media/images/vscode-context-menu-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="desktop" label="Pieces Desktop">
+
+In Pieces Desktop, ensure the _Saved Materials_ tab is visible.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--4">
+![The saved materials tab in Pieces Desktop](./media/images/saved-materials-menu-dark.webp#gh-dark-mode-only)
+![The saved materials tab in Pieces Desktop](./media/images/saved-materials-menu-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+- If you have copied code to the clipboard, use the _Save Clipboard Contents_ button on the bottom left to save the contents of your clipboard as a snippet.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--1"></div>
+    <div class="col col--2">
+![The save clipboard contents button in Pieces Desktop](./media/images/save-from-clipboard-dark.webp#gh-dark-mode-only)
+![The save clipboard contents button in Pieces Desktop](./media/images/save-from-clipboard-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+- If you have a code file, or a screenshot of code, drag and drop this into Pieces Desktop.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--1"></div>
+    <div class="col col--6">
+![A code file dragged into Pieces Desktop](./media/images/drag-file-to-desktop-dark.webp#gh-dark-mode-only)
+![A code file dragged into in Pieces Desktop](./media/images/drag-file-to-desktop-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="web" label="Pieces Web Extension">
+
+Hover your mouse over the code snippet, and select the _Copy and Save_ button that will appear.
+
+![The copy and save button in the Pieces web extension](./media/images/web-save-button-dark.webp#gh-dark-mode-only)
+![The copy and save button in the Pieces web extension](./media/images/web-save-button-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="jetbrains" label="JetBrains">
+
+Right-click on the selected code, and select _Save to Pieces_.
+
+![A screenshot of PyCharm with a Python function selected and the Pieces context menu showing](./media/images/pycharm-context-menu-dark.webp#gh-dark-mode-only)
+![A screenshot of PyCharm with a Python function selected and the Pieces context menu showing](./media/images/pycharm-context-menu-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="obsidian" label="Obsidian">
+
+Select the Pieces button on the bottom of the code block to see the various Pieces Options. Select _Save code to Pieces_.
+
+![A screenshot of Obsidian with the save code to pieces button showing on the bottom of a code block](./media/images/obsidian-save-button-dark.webp#gh-dark-mode-only)
+![A screenshot of Obsidian with the save code to pieces button showing on the bottom of a code block](./media/images/obsidian-save-button-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="visual-studio" label="Visual Studio">
+
+Right-click on the selected code, and select _Pieces -> Save to Pieces_.
+
+![A screenshot of visual studio with a Python function selected and the Pieces context menu showing](./media/images/vs-context-menu-dark.webp#gh-dark-mode-only)
+![A screenshot of visual studio with a Python function selected and the Pieces context menu showing](./media/images/vs-context-menu-light.webp#gh-light-mode-only)
+
+</TabItem>
+</Tabs>
+
+The snippet will be saved to Pieces. Pieces will automatically add context such as tags, links to documentation, information extracted from any Git history, and other relevant information.
+
+### 3. Review the Enriched Snippet
+
+After Pieces has had a few seconds to process the snippet, review the snippet and the added context.
+
+<Tabs groupId="pieces-component" queryString>
+<TabItem value="visual-studio-code" label="VS Code">
+
+Select the _Pieces Explorer_ from the Activity Bar. This will then show all the saved snippets, grouped by programming language.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--6">
+![A screenshot of the Pieces explorer in VS Code showing a python snippet](./media/images/vscode-pieces-explorer-dark.webp#gh-dark-mode-only)
+![A screenshot of the Pieces explorer in VS Code showing a python snippet](./media/images/vscode-pieces-explorer-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+Select the new snippet to see the generated annotations.
+
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/vscode-saved-snippet-dark.webp#gh-dark-mode-only)
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/vscode-saved-snippet-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="desktop" label="Pieces Desktop">
+
+From the _Saved Materials_ tab, there is a list of the saved snippets on the left-hand side. When you select a snippet, the code and annotations are shown in the main pane.
+
+![Pieces desktop showing a list of snippets and the code of a snippet in the saved materials tab](./media/images/desktop-snippet-list-dark.webp#gh-dark-mode-only)
+![Pieces desktop showing a list of snippets and the code of a snippet in the saved materials tab](./media/images/desktop-snippet-list-light.webp#gh-light-mode-only)
+
+To view all the annotations, select the _View All Context_ button.
+
+![The view all context button in Pieces desktop](./media/images/desktop-captured-context-button-dark.webp#gh-dark-mode-only)
+![The view all context button in Pieces desktop](./media/images/desktop-captured-context-button-light.webp#gh-light-mode-only)
+
+This will expand a pane allowing you to see all the captured context.
+
+![The expanded context view in Pieces desktop](./media/images/desktop-captured-context-dark.webp#gh-dark-mode-only)
+![The expanded context view in Pieces desktop](./media/images/desktop-captured-context-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="web" label="Pieces Web Extension">
+
+Select the _Pieces Web Extension_ from the browser toolbar.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+![A screenshot of the Pieces explorer in the browser toolbar](./media/images/web-pieces-extension-dark.webp#gh-dark-mode-only)
+![A screenshot of the Pieces explorer in the browser toolbar](./media/images/web-pieces-extension-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+This will bring up the Pieces Web Extension pane. Select _Saved Snippets_ to show a list of all the saved snippets.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+![A snippet in the Pieces web extension](./media/images/web-snippet-list-dark.webp#gh-dark-mode-only)
+![A snippet in the Pieces web extension](./media/images/web-snippet-list-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+Select the new snippet to see the generated annotations.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--8">
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/web-saved-snippet-dark.webp#gh-dark-mode-only)
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/web-saved-snippet-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="jetbrains" label="JetBrains">
+
+Select _Pieces_ from the Tool Bar. This will then show all the saved snippets, grouped by programming language.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--6">
+![A screenshot of the Pieces explorer in PyCharm a python snippet](./media/images/pycharm-pieces-explorer-dark.webp#gh-dark-mode-only)
+![A screenshot of the Pieces explorer in PyCharm showing a python snippet](./media/images/pycharm-pieces-explorer-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+Double-click the new snippet to see the generated annotations.
+
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/pycharm-saved-snippet-dark.webp#gh-dark-mode-only)
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/pycharm-saved-snippet-light.webp#gh-light-mode-only)
+
+</TabItem>
+<TabItem value="obsidian" label="Obsidian">
+
+Select _Pieces For Developers_ from the Ribbon.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--6">
+![A screenshot of the Pieces explorer in Obsidian](./media/images/obsidian-pieces-explorer-dark.webp#gh-dark-mode-only)
+![A screenshot of the Pieces explorer in Obsidian](./media/images/obsidian-pieces-explorer-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+From the pane that appears, make sure _Saved Materials_ is selected. This will then show all the saved snippets. Select the newly added snippet to see the code.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--6">
+![A saved python snippet in the Obsidian snippets pane](./media/images/obsidian-saved-snippet-dark.webp#gh-dark-mode-only)
+![A saved python snippet in the Obsidian snippets pane](./media/images/obsidian-saved-snippet-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+</TabItem>
+<TabItem value="visual-studio" label="Visual Studio">
+
+Open the Pieces Explorer by selecting _View -> Other Windows -> Pieces -> Pieces Explorer_.
+
+![The Pieces Explorer menu option in the Visual Studio View Pieces menu](./media/images/vs-view-pieces-explorer-dark.webp#gh-dark-mode-only)
+![The Pieces Explorer menu option in the Visual Studio View Pieces menu](./media/images/vs-view-pieces-explorer-light.webp#gh-light-mode-only)
+
+Now that the Pieces Explorer is open, it will then show all the saved snippets, grouped by programming language.
+
+<div class="container">
+  <div class="row">
+    <div class="col col--7">
+![The Pieces Explorer in Visual Studio](./media/images/vs-pieces-explorer-dark.webp#gh-dark-mode-only)
+![The Pieces Explorer in Visual Studio](./media/images/vs-pieces-explorer-light.webp#gh-light-mode-only)
+    </div>
+  </div>
+</div>
+
+Double-click the new snippet to see the generated annotations.
+
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/vs-saved-snippet-dark.webp#gh-dark-mode-only)
+![A screenshot of a saved Python snippet with the code and associated context such as tags and a smart description](./media/images/vs-saved-snippet-dark.webp#gh-light-mode-only)
+
+</TabItem>
+</Tabs>
+
+The generated enrichments include:
+
+- The programming language
+- A title for the code snippet
+- A set of generated tags
+- A description for what the code is doing
+- Suggestions for searches to learn more about the concepts in the snippet
+- Any people related to this snippet. This is found from the Git history if the file is in a Git repository
 
 ## Next Steps
 
