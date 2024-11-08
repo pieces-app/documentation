@@ -17,7 +17,7 @@ Method | HTTP request | Description
 ## **workstreamPatternEngineProcessorsVisionActivate** {#workstreampatternengineprocessorsvisionactivate}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionActivate()
 
-This will activate your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
+This will activate your Long-Term Memory Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
 ### Example {#workstreampatternengineprocessorsvisionactivate-example}
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 ## **workstreamPatternEngineProcessorsVisionDataClear** {#workstreampatternengineprocessorsvisiondataclear}
 > workstreamPatternEngineProcessorsVisionDataClear()
 
-This will clear the data for the Workstream Pattern Engine, specifically for our vision data.  This boy will accept ranges of time that the user wants to remove the processing from.
+This will clear the data for the Long-Term Memory Engine, specifically for our vision data.  This boy will accept ranges of time that the user wants to remove the processing from.
 
 ### Example {#workstreampatternengineprocessorsvisiondataclear-example}
 
@@ -113,7 +113,7 @@ void (empty response body)
 ## **workstreamPatternEngineProcessorsVisionDeactivate** {#workstreampatternengineprocessorsvisiondeactivate}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionDeactivate()
 
-This will deactivate your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
+This will deactivate your Long-Term Memory Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
 ### Example {#workstreampatternengineprocessorsvisiondeactivate-example}
 
@@ -161,7 +161,7 @@ Name | Type | Description  | Notes
 ## **workstreamPatternEngineProcessorsVisionStatus** {#workstreampatternengineprocessorsvisionstatus}
 > WorkstreamPatternEngineStatus workstreamPatternEngineProcessorsVisionStatus()
 
-This will get a snapshot of the status your Workstream Pattern Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
+This will get a snapshot of the status your Long-Term Memory Engine. This is used to aggregate information on your user\'s desktop, specifically recording the application in focus and aggregating relevant context that will then be used to ground the copilot conversations, as well as the feed.  Note: required to be a beta user to use this feature until this is live(roughly mid to late April)
 
 ### Example {#workstreampatternengineprocessorsvisionstatus-example}
 

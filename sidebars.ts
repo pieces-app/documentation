@@ -196,7 +196,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'doc',
               id: 'product-highlights-and-benefits/live-context',
-              label: 'Live Context',
+              label: 'Long-Term Memory',
             },
           ]
         },
