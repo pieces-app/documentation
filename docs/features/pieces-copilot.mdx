@@ -122,44 +122,37 @@ When you "Launch Copilot" on a snippet, you will get a list of suggested questio
 If you are in the midst of a conversation with Pieces Copilot and need to navigate to a different view, reference a separate snippet, or move to another location, **don't worry**. Conversations with Copilot are saved with the snippet that you had the individual conversation about so that you can get back to where you were when jumping around. You'll notice that once you start a conversation, the `Launch Copilot` Quick Action pill will change to `Resume Copilot`.
 
 ## Available Copilot Runtimes
+
 Our Copilot also comes with multiple different LLM runtimes, cloud and local in order fulfill whatever requirements your workflow entails.
 
 ### Cloud Runtimes
 
-#### OpenAI
-- GPT 3.5 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
-- GPT 3.5 Turbo 16k, a highly optimized LLM utilizing a larger set of parameters for more accurate responses.
-- GPT 4, containing even more context than the previous models, capable of completing more complex tasks than its predecessors.
-- GPT 4 Turbo, a highly optimized LLM created by OpenAI designed for quick and accurate responses.
-- GPT 4o, OpenAI's new flagship model that can reason across audio, vision, and text in real time.
-
-#### Gemini
-- Gemini Pro, Google's most capable AI model, built to be multimodal and able to complete a wide variety of tasks.
-
-#### PaLM 2
-- Chat Bison, a Developer model optimized around key use cases for understanding multi term conversations
-- Code Chat Bison, a model fine-tuned to generate code based on a natural language description
+| Anthropic         | OpenAI        | Google           |
+| ----------------- | ------------- | ---------------- |
+| Claude 3.5 Sonnet | GPT-4o mini   | Gemini 1.5 Pro   |
+| Claude 3 Sonnet   | GPT-4o        | Gemini Pro Chat  |
+| Claude 3 Opus     | GPT-4 Turbo   | Gemini 1.5 Flash |
+| Claude 3 Haiku    | GPT-4         |                  |
+|                   | GPT-3.5 Turbo |                  |
 
 ### Local Runtimes
 
-:::info
+| Mistral    | Microsoft       | Meta       | Google            | IBM        |
+| ---------- | --------------- | ---------- | ----------------- | ---------- |
+| Mistral 7B | Phi-3 Mini 4K   | LLaMA 3 8B | Gemma 1.1 7B      | Granite 8B |
+|            | Phi-3 Mini 128K | LLaMA 2 7B | Gemma 1.1 2B      | Granite 3B |
+|            | Phi-2           |            | Code Gemma 1.1 7B |            |
 
+:::info
 **Disclaimer:** Running Large Language Models locally on-device is typically resource intensive. As of right now, a majority of our Local LLMs leverage roughly 7 billion parameters. To ensure optimal performance, we recommend the following minimum specifications:
 - **CPU:** A modern, multi-core processor with at least 4 cores.
 - **RAM:** At least 8GB of system memory.
 - **GPU (Optional):** A dedicated GPU with at least 4 GB of VRAM is recommended for optimal performance.
     - **NVIDIA:** GeForce RTX 2000 series or newer.
     - **AMD:** Radeon RX 5000 series or newer.
+    - **Apple Silicon**
 - **System Age:** A machine from 2021 or newer.
-
 :::
-
-- Llama2 7B, a model trained by Meta AI optimized for completing general tasks, also available in a CPU and GPU runtime.
-    - *Requires a minimum of 5.6GB RAM for the CPU model and 5.6GB of VRAM for the GPU-accelerated model.*
-- Mistral 7B, a dense Transformer, fast-deployed and fine-tuned on code datasets. Small, yet powerful for a variety of use cases. Outperforms Llama 2 13B and 34B on most benchmarks.
-    - *Requires a minimum of 6GB RAM for the CPU model and 6GB of VRAM for the GPU-accelerated model.*
-- Phi-2 2.7B, a small language model that demonstrates outstanding reasoning and language understanding capabilities.
-    - *Requires a minimum of 3.1GB RAM for the CPU model and 3.1GB of VRAM for the GPU-accelerated model.*
 
 ## Plugin Integrations
 
