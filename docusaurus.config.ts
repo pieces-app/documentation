@@ -81,6 +81,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/installation-getting-started/what-am-i-installing',
+          label: 'Get Pieces',
+          position: 'right',
+        },
+        {
           to: '/',
           label: 'Home',
           position: 'right',
