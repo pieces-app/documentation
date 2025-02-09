@@ -23,6 +23,18 @@ Ensure that you have installed the `pynvim` package. You can do this by running 
 pip install pynvim
 ```
 
+### Issue with support for Python Version 3.12
+
+#### Problem
+
+When attempting to run the Neovim plugin with Python version 3.12 you may encounter the following error: `TypeError: ForwardRef._evaluate() missing 1 required keyword-only argument: 'recursive_guard'`. 
+
+This is a known issue in Python 3.12 and this error occurs due to changes in the Python 3.12 implementation that affect how forward references are evaluated, causing compatibility issues with the plugin's code.
+
+#### Solution
+
+The most straightforward solution for now is to use Python 3.11 or earlier. You can switch to an earlier version using a version manager like pyenv. We recommend to regularly check the Pieces Neovim Plugin repository for updates that may address this compatibility issue.
+
 ## Contact Support
 
 If you continue to experience issues after trying our solutions, please to [reach out to our support team](/support) for further assistance.
