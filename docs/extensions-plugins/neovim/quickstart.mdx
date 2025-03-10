@@ -30,7 +30,7 @@ A few things to note before you start installing the Pieces Neovim Plugin:
   You can install it in MacOS/Windows by running the following command:
 
     ```bash
-    pip install pynvim
+    pip3 install pynvim
     ```
    
   If you use Ubuntu 22+ or an Ubuntu-based-distro -
@@ -54,11 +54,14 @@ A few things to note before you start installing the Pieces Neovim Plugin:
     touch ~/.config/nvim/init.vim
     ```
 
-    Note: Your Neovim configuration file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
+:::info
+
+Note: Your Neovim configuration file can either be `init.vim` or `init.lua`. If you are using `init.lua`, you will need to add the following line to your configuration file:
   
-    ```lua
-    vim.cmd [[packadd pieces.nvim]]
-    ```
+```lua
+vim.cmd [[packadd pieces.nvim]]
+```
+:::
 
 ## Steps
 
