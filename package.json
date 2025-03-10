@@ -1,7 +1,7 @@
 {
   "name": "documentation",
   "version": "2.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "docusaurus start",
     "prebuild": "python3 docs/build/glossary/sort.py && node docs/build/glossary/compile-glossary.js",
@@ -12,12 +12,13 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.3.2",
-    "@docusaurus/plugin-google-tag-manager": "^3.3.2",
-    "@docusaurus/preset-classic": "^3.3.2",
-    "@docusaurus/theme-classic": "^3.3.2",
-    "@docusaurus/theme-common": "^3.3.2",
+    "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-google-tag-manager": "^3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
+    "@docusaurus/theme-classic": "^3.4.0",
+    "@docusaurus/theme-common": "^3.4.0",
     "@mdx-js/react": "^3.0.0",
+    "@scalar/docusaurus": "^0.4.84",
     "@typeform/embed-react": "^3.17.0",
     "clsx": "^2.0.0",
     "docusaurus-lunr-search": "^3.3.2",
@@ -27,10 +28,10 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@docusaurus/eslint-plugin": "^3.3.2",
-    "@docusaurus/module-type-aliases": "^3.3.2",
-    "@docusaurus/tsconfig": "^3.3.2",
-    "@docusaurus/types": "^3.3.2",
+    "@docusaurus/eslint-plugin": "^3.4.0",
+    "@docusaurus/module-type-aliases": "^3.4.0",
+    "@docusaurus/tsconfig": "^3.4.0",
+    "@docusaurus/types": "^3.4.0",
     "@types/node": "^20.11.26",
     "@types/react": "^18.3.2",
     "sitemap": "^7.1.1",
