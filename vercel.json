@@ -13,117 +13,117 @@
   "redirects": [
     {
       "source": "/additional-features-and-settings",
-      "destination": "/features/one-click-snippet-sharing#connecting-a-custom-cloud-domain",
-        "statusCode": 301
+      "destination": "https://pieces.app/features",
+      "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/ai-generated-labels",
-      "destination": "/features/auto-enrichment",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/ai-smart-descriptions",
-      "destination": "/features/auto-enrichment",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/origin-details",
-      "destination": "/features/auto-enrichment",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/related-links-external-resources",
-      "destination": "/features/auto-enrichment#related-links",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/related-people",
-      "destination": "/features/auto-enrichment",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/context-awareness-engine/smart-warnings",
-      "destination": "/features/auto-enrichment#smart-warnings-and-sensitive-information-detection",
+      "destination": "https://pieces.app/features/copilot/context-awareness",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins/chrome",
-      "destination": "/extensions-plugins/web-extension",
+      "destination": "https://pieces.app/plugins/web-extension",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins/edge",
-      "destination": "/extensions-plugins/web-extension",
+      "destination": "https://pieces.app/plugins/web-extension",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins/firefox",
-      "destination": "/extensions-plugins/web-extension",
+      "destination": "https://pieces.app/plugins/web-extension",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins/azuredatastudio",
-      "destination": "/extensions-plugins/azure-data-studio",
-        "statusCode": 301
+      "destination": "https://pieces.app/plugins/web-extension",
+      "statusCode": 301
     },
     {
       "source": "/extensions-plugins/jupyter",
-      "destination": "/extensions-plugins/jupyterlab",
+      "destination": "https://pieces.app/plugins/jupyterlab",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins-support/troubleshooting-chrome",
-      "destination": "/extensions-plugins/chrome",
+      "destination": "https://docs.pieces.app/products/support",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins-support/troubleshooting-edge",
-      "destination": "/extensions-plugins/edge",
+      "destination": "https://docs.pieces.app/products/support",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins-support/troubleshooting-jetbrains",
-      "destination": "/extensions-plugins/jetbrains",
+      "destination": "https://docs.pieces.app/products/support",
       "statusCode": 301
     },
     {
       "source": "/extensions-plugins-support/troubleshooting-vscode",
-      "destination": "/extensions-plugins/vscode",
+      "destination": "https://docs.pieces.app/products/support",
       "statusCode": 301
     },
     {
       "source": "/features/copilot-plugin",
-      "destination": "/features/pieces-copilot#plugin-integrations",
+      "destination": "https://docs.pieces.app/products/desktop/copilot/configuration",
       "statusCode": 301
     },
     {
       "source": "/product-highlights-and-benefits/import-gists-from-github",
-      "destination": "/product-highlights-and-benefits/saving-to-and-from-github-gists",
+      "destination": "https://docs.pieces.app/products/desktop/copilot/configuration",
       "statusCode": 301
     },
     {
       "source": "/product-highlights-and-benefits/workstream-context",
-      "destination": "/product-highlights-and-benefits/live-context",
+      "destination": "https://docs.pieces.app/products/desktop/copilot/configuration",
       "statusCode": 301
     },
     {
       "source": "/frequently-asked-questions",
-      "destination": "/faq",
+      "destination": "https://docs.pieces.app/products/support",
       "statusCode": 301
     },
     {
       "source": "/one-click-snippet-sharing",
-      "destination": "/features/one-click-snippet-sharing",
+      "destination": "https://beta.docs.pieces.app/products/desktop-application/pieces-drive/sharing",
       "statusCode": 301
     },
     {
       "source": "/our-community",
-      "destination": "/community",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/overview",
-      "destination": "/installation-getting-started/what-am-i-installing",
+      "destination": "https://docs.pieces.app/products/meet-pieces/fundamentals",
       "statusCode": 301
     },
     {
@@ -133,67 +133,67 @@
     },
     {
       "source": "/use-cases/take-back-your-time",
-      "destination": "/use-cases/countless-google-searches",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/beta-user-group",
-      "destination": "/early-access-program",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/CS%20Fundamentals/backtracking",
-      "destination": "/build/glossary/terms/backtracking",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/CS%20Fundamentals/plural-api-versus-singular-api",
-      "destination": "/build/glossary/terms/plural-api-versus-singular-api",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/CS%20Fundamentals/reverse-proxy-tunnel",
-      "destination": "/build/glossary/terms/reverse-proxy-tunnel",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/CS%20Fundamentals/tlp-code-processing",
-      "destination": "/build/glossary/terms/tlp-code-processing",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/CS%20Fundamentals/wsl",
-      "destination": "/build/glossary/terms/wsl",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/Pieces%20Specific/aesthetics",
-      "destination": "/build/glossary/terms/aesthetics",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/Pieces%20Specific/analysis",
-      "destination": "/build/glossary/terms/analysis",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/glossary/terms/Pieces%20Specific/reaction",
-      "destination": "/build/glossary/terms/reaction",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/build/reference/dart/(.*)",
-      "destination": "/build/reference/dart",
+      "destination": "https://pieces.app/collections/dart",
       "statusCode": 301
     },
     {
       "source": "/build/reference/kotlin/(.*)",
-      "destination": "/build/reference/dart",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
       "source": "/ama/building-a-more-extensible-development-environment",
-      "destination": "/community/events/ama/building-a-more-extensible-development-environment",
+      "destination": "https://docs.pieces.app/products/meet-pieces",
       "statusCode": 301
     },
     {
@@ -204,6 +204,161 @@
     {
       "source": "/privacy-policy",
       "destination": "https://pieces.app/legal/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/installation-getting-started/what-am-i-installing",
+      "destination": "https://docs.pieces.app/products/meet-pieces/fundamentals",
+      "statusCode": 301
+    },
+    {
+      "source": "/installation-getting-started/windows",
+      "destination": "https://docs.pieces.app/products/meet-pieces/windows-installation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/installation-getting-started/macos",
+      "destination": "https://docs.pieces.app/products/meet-pieces/macos-installation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/installation-getting-started/linux",
+      "destination": "https://docs.pieces.app/products/meet-pieces/linux-installation-guide",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/live-context",
+      "destination": "https://docs.pieces.app/products/guides/copliot-with-context",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/connecting-to-a-remote-pieces-os-instance",
+      "destination": "https://docs.pieces.app/products/desktop/copilot/configuration",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/sync-across-multiple-devices-using-github",
+      "destination": "https://docs.pieces.app/products/desktop/copilot/multiple-environments",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/back-up-and-restore",
+      "destination": "https://docs.pieces.app/products/desktop/drive",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-to-guides/save-a-snippet/",
+      "destination": "https://docs.pieces.app/products/desktop/drive/save-and-organize",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/search-modes",
+      "destination": "https://docs.pieces.app/products/desktop/drive/search-and-filter",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/auto-enrichment",
+      "destination": "https://docs.pieces.app/products/desktop/drive/enrichment-and-metadata",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/transforming-snippets",
+      "destination": "https://docs.pieces.app/products/desktop/drive/transforming-code",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/one-click-snippet-sharing",
+      "destination": "https://docs.pieces.app/products/desktop/drive/sharing",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/user-settings",
+      "destination": "https://docs.pieces.app/products/desktop/navigation/settings",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/in-project-snippet-discovery",
+      "destination": "https://docs.pieces.app/products/desktop/navigation/snippet-discovery",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/workflow-activity",
+      "destination": "https://docs.pieces.app/products/desktop/navigation/workflow-activity",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/global-search",
+      "destination": "https://docs.pieces.app/products/desktop/navigation/global-search",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/power-menu",
+      "destination": "https://docs.pieces.app/products/desktop/actions/power-menu",
+      "statusCode": 301
+    },
+    {
+      "source": "/features/keyboard-shortcuts",
+      "destination": "https://docs.pieces.app/products/desktop/actions/keyboard-shortcuts",
+      "statusCode": 301
+    },
+    {
+      "source": "/installation-getting-started/pieces-os",
+      "destination": "https://docs.pieces.app/products/core-dependencies/pieces-os",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/vscode",
+      "destination": "https://docs.pieces.app/products/extensions-plugins/visual-studio-code/copilot",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/jetbrains",
+      "destination": "https://docs.pieces.app/products/extensions-plugins/jetbrains/copilot",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/visual-studio",
+      "destination": "https://docs.pieces.app/products/extensions-plugins/visual-studio/copilot",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/sublime",
+      "destination": "https://docs.pieces.app/products/extensions-plugins/sublime/copilot",
+      "statusCode": 301
+    },
+    {
+      "source": "/extensions-plugins/obsidian",
+      "destination": "https://docs.pieces.app/products/obsidian/copilot",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-highlights-and-benefits/privacy-security-data",
+      "destination": "https://docs.pieces.app/products/privacy-and-security",
+      "statusCode": 301
+    },
+    {
+      "source": "/support",
+      "destination": "https://docs.pieces.app/products/support",
+      "statusCode": 301
+    },
+    {
+      "source": "/community/",
+      "destination": "https://docs.pieces.app/",
+      "statusCode": 301
+    },
+    {
+      "source": "/community/events/",
+      "destination": "https://docs.pieces.app/",
+      "statusCode": 301
+    },
+    {
+      "source": "/early-access-program",
+      "destination": "https://docs.pieces.app/",
+      "statusCode": 301
+    },
+    {
+      "source": "/build/",
+      "destination": "https://docs.pieces.app/",
       "statusCode": 301
     }
   ]
