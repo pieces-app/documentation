@@ -63,39 +63,39 @@ export const pieces_app = {
     },
     internal: {
       installation_getting_started: {
-        macos: "https://docs.pieces.app/i3nstallation-getting-started/macos",
-        windows: "https://docs.pieces.app/installation-getting-started/windows",
-        linux: "https://docs.pieces.app/installation-getting-started/linux",
-        what: "https://docs.pieces.app/installation-getting-started/what-am-i-installing"
+        macos: "https://old.docs.pieces.app/i3nstallation-getting-started/macos",
+        windows: "https://old.docs.pieces.app/installation-getting-started/windows",
+        linux: "https://old.docs.pieces.app/installation-getting-started/linux",
+        what: "https://old.docs.pieces.app/installation-getting-started/what-am-i-installing"
       },
       product_highlights: {
-        save_materials: "https://docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials",
-        save_screenshots: "https://docs.pieces.app/product-highlights-and-benefits/saving-screenshots",
-        in_project_snippet_discovery: "https://docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery",
-        import_gists: "https://docs.pieces.app/product-highlights-and-benefits/saving-to-and-from-github-gists"
+        save_materials: "https://old.docs.pieces.app/product-highlights-and-benefits/saving-useful-developer-materials",
+        save_screenshots: "https://old.docs.pieces.app/product-highlights-and-benefits/saving-screenshots",
+        in_project_snippet_discovery: "https://old.docs.pieces.app/product-highlights-and-benefits/in-project-snippet-discovery",
+        import_gists: "https://old.docs.pieces.app/product-highlights-and-benefits/saving-to-and-from-github-gists"
       },
       context_awareness_engine: {
-        origin_details: "https://docs.pieces.app/features/auto-enrichment#origin-details",
-        ai_smart_descriptions: "https://docs.pieces.app/features/auto-enrichment#ai-smart-descriptions",
-        related_links_resources: "https://docs.pieces.app/features/auto-enrichment#related-links-external-resources--reference-materials",
-        ai_generated_labels: "https://docs.pieces.app/features/auto-enrichment#ai-generated-smart-labels",
-        related_people: "https://docs.pieces.app/features/auto-enrichment#related-people",
-        smart_warnings: "https://docs.pieces.apps/features/auto-enrichment#smart-warnings"
+        origin_details: "https://old.docs.pieces.app/features/auto-enrichment#origin-details",
+        ai_smart_descriptions: "https://old.docs.pieces.app/features/auto-enrichment#ai-smart-descriptions",
+        related_links_resources: "https://old.docs.pieces.app/features/auto-enrichment#related-links-external-resources--reference-materials",
+        ai_generated_labels: "https://old.docs.pieces.app/features/auto-enrichment#ai-generated-smart-labels",
+        related_people: "https://old.docs.pieces.app/features/auto-enrichment#related-people",
+        smart_warnings: "https://old.docs.pieces.apps/features/auto-enrichment#smart-warnings"
       },
       global_search_suggestion_reuse: {
-        global_search: "https://docs.pieces.app/features/global_search",
-        search_settings: "https://docs.pieces.app/features/global-search#adjusting-settings-for-optimal-search-results",
-        sort_scope_relevant: "https://docs.pieces.app/features/global-search#sorting-by-realtime-or-scope-relevant-suggestions",
-        workflow_activity_stream: "https://docs.pieces.app/features/workflow-activity"
+        global_search: "https://old.docs.pieces.app/features/global_search",
+        search_settings: "https://old.docs.pieces.app/features/global-search#adjusting-settings-for-optimal-search-results",
+        sort_scope_relevant: "https://old.docs.pieces.app/features/global-search#sorting-by-realtime-or-scope-relevant-suggestions",
+        workflow_activity_stream: "https://old.docs.pieces.app/features/workflow-activity"
       },
       personalized_link_sharing: {
-        single_click_snippet_sharing: "https://docs.pieces.app/features/one-click-snippet-sharing",
-        save_for_offline: "https://docs.pieces.app/features/one-click-snippet-sharing#saving-a-shared-material",
-        share_via_github_gist: "https://docs.pieces.app/one-click-snippet-sharing#share-via-github-gist"
+        single_click_snippet_sharing: "https://old.docs.pieces.app/features/one-click-snippet-sharing",
+        save_for_offline: "https://old.docs.pieces.app/features/one-click-snippet-sharing#saving-a-shared-material",
+        share_via_github_gist: "https://old.docs.pieces.app/one-click-snippet-sharing#share-via-github-gist"
       },
-      additional_features_and_settings: "https://docs.pieces.app/one-click-snippet-sharing",
-      join_our_community: "https://docs.pieces.app/join-our-community",
-      faqs: "https://docs.pieces.app/frequently-asked-questions"
+      additional_features_and_settings: "https://old.docs.pieces.app/one-click-snippet-sharing",
+      join_our_community: "https://old.docs.pieces.app/join-our-community",
+      faqs: "https://old.docs.pieces.app/frequently-asked-questions"
     }
   }
 };
