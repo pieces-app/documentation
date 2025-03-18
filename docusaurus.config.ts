@@ -1,14 +1,14 @@
-import {themes as prismThemes} from'prism-react-renderer';
+import {EnumChangefreq} from "sitemap";
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import {EnumChangefreq} from "sitemap";
+import {themes as prismThemes} from 'prism-react-renderer';
 
 const config: Config = {
   title: 'Pieces for Developers',
   tagline: 'Learn how to best use and optimize your workflow with Pieces for Developers!',
   favicon: 'assets/pieces_logos/white_circle.png',
 
-  url: 'https://docs.pieces.app',
+  url: 'https://old.docs.pieces.app',
   baseUrl: '/',
 
   organizationName: 'pieces-app',
